@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-monitor.what-is-azure-monitor
-title: What is Azure Monitor?
+title: Monitoring and Azure Monitor
 metadata:
   unitType: learning-content
-  title: What is Azure Monitor?
+  title: Monitoring and Azure Monitor
   description: Learn what Azure Monitor is.
   ms.prod: learning-azure-monitor
   ms.date: 4/15/2021

@@ -1,60 +1,61 @@
-Use Azure Monitor when you need to collect, analyze, and act on availability, health, and performance telemetry for your applications and infrastructure resources. IT Ops, DevOps, and developer teams can use Azure Monitor for day-to-day operations, continuous monitoring, pre-production, and development phases of the app lifecycle.
+## Insights, visualizations, and reports
 
-Users can take advantage of **Azure Monitor Insights** for at-scale monitoring views to track performance across multiple resources and start investigations by drilling into the details of a single resource.
-
-Users can share reports with **Azure Monitor** workbooks and maintain operational awareness with dashboards.
-
-Users can investigate and perform triage using custom charts in Metrics Explorer and analyze logs with queries in **Azure Monitor Logs**.
-
-Users can be notified, take action, and scale their workloads in response to user-defined performance criteria or machine learning based thresholds.
-
-Here, we'll discuss some examples of when you might want to use Azure Monitor to:
-
-* View data in Azure Monitor Metrics.
-* Analyze logs in Azure Monitor Logs.
-
-## Decision criteria
-
-Azure Monitor Metrics allows you to view time-series data in near real time and retains data for up to three months. If you want to store data for long-term evaluation up to two years and perform more complex analysis, you can use a Log Analytics Workspace to store the recorded data.
-
-Let's look at some of the different mechanisms for monitoring and viewing your Azure resources.
-
-| Monitoring Option | Usage |
-| --- | --- |
-| Metrics | Numerical values that describe some aspect of a system at a particular point in time. |
-| Logs | Log data collected by Azure Monitor for analysis. |
-| Visualizations | Azure Monitor has its own features for visualizing monitoring data and uses other Azure services for publishing it to different audiences. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal. Workbooks provide a flexible canvas for data analysis and creating rich visual reports in the Azure portal. |
-
-### Metrics
-
-Metrics are numerical values that describe some aspect of a system at a particular point in time. They are lightweight and capable of supporting near-real-time scenarios. The metrics explorer is built into the Azure portal, allowing you to focus on a specific resource to monitor. Data is presented in a chart or graph format.
+[Please base this section on the Insights and Visualize sections of the Azure Monitor overview article]
 
 :::image type="content" source="../media/metrics.png" alt-text="Depiction of a metrics data element feeding values into a chart available in the Azure portal under the Monitoring category for many resources.":::
 
-### Logs
+## Insights
 
-You can analyze log data collected by Azure Monitor with queries to quickly retrieve, consolidate, and analyze collected data. You can create and test queries using Log Analytics in the Azure portal. You can then either directly analyze the data using different tools or save queries for use with visualizations or alert rules.
+Some Azure resource providers have curated visualizations that provide a customized monitoring experience and require minimal configuration. Insights are large, scalable, curated visualizations.
 
-Azure Monitor uses a version of the Kusto query language that's suitable for simple log queries, but also includes advanced functionality such as aggregations, joins, and smart analytics.
+:::image type="content" source="media/overview/insights-box-opt.svg"  alt-text="Diagram that shows the Insights part of the Consumption section of the Azure Monitor system." border="false" lightbox="media/overview/insights-blowup-type-2-opt.svg":::
 
-:::image type="content" source="../media/logs.png" alt-text="Depiction of log data feeding into a table display in Log Analytics.":::
+The following table describes some of the larger insights:
 
-### Visualizations
+|Insight  |Description  |
+|---------|---------|
+|[Application Insights](app/app-insights-overview.md)|Application Insights monitors the availability, performance, and usage of your web applications.|
+|[Container Insights](containers/container-insights-overview.md)|Container Insights gives you performance visibility into container workloads that are deployed to managed Kubernetes clusters hosted on Azure Kubernetes Service. Container Insights collects container logs and metrics from controllers, nodes, and containers that are available in Kubernetes through the Metrics API. After you enable monitoring from Kubernetes clusters, these metrics and logs are automatically collected for you through a containerized version of the Log Analytics agent for Linux.|
+|[VM Insights](vm/vminsights-overview.md)|VM Insights monitors your Azure VMs. It analyzes the performance and health of your Windows and Linux VMs and identifies their different processes and interconnected dependencies on external processes. The solution includes support for monitoring performance and application dependencies for VMs hosted on-premises or another cloud provider.|
+|[Network Insights](../network-watcher/network-insights-overview.md)|Network Insights provides a comprehensive and visual representation through topologies, of health and metrics for all deployed network resources, without requiring any configuration. It also provides access to network monitoring capabilities like Connection Monitor, flow logging for network security groups (NSGs), and Traffic Analytics as well as other diagnostic features. |
 
-Many times, you might find the need to report on the specific metrics that are measured. Azure Monitor provides two main visualizations in the form of Azure dashboards and workbooks. You can make use of these two features to present a visual report to management or other interested parties for ease of consuming the monitored data.
+For more information, see the [list of insights and curated visualizations in the Azure Monitor Insights overview](insights/insights-overview.md).
 
-## Apply the criteria
+## Visualizations
 
-### Should you use metrics explorer for monitoring?
+:::image type="content" source="media/overview/visualize-box-opt.svg" alt-text="Diagram that shows the Visualize part of the Consumption section of the Azure Monitor system." border="false" lightbox="media/overview/visualize-blowup-type-2-opt.svg":::
 
-Recall that Azure Metrics uses numerical data to display information about your monitored resource. You can select the **Metrics** option under the **Monitoring** category for a resource. This option presents a chart that allows you to select a parameter to track. You'll also notice various charts displayed on the **Overview** page. Selecting a chart opens it in the Metrics Explorer.
+Visualizations such as charts and tables are effective tools for summarizing monitoring data and presenting it to different audiences. Azure Monitor has its own features for visualizing monitoring data and uses other Azure services for publishing it to different audiences. Power BI and Grafana are not officially part of the Azure Monitor product, but they're a core integration and part of the Azure Monitor story.
 
-:::image type="content" source="../media/metrics-explorer.png" alt-text="Screenshot of the Metrics Explorer window showing the Data Out values in the sum aggregation.":::
+|Visualization|Description  |
+|---------|---------|
+|[Dashboards](visualize/tutorial-logs-dashboards.md)|Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal. You can optionally share the dashboard with other Azure users. You can add the output of any log query or metrics chart to an Azure dashboard. For example, you could create a dashboard that combines tiles that show a graph of metrics, a table of activity logs, a usage chart from Application Insights, and the output of a log query.|
+|[Workbooks](visualize/workbooks-overview.md)|Workbooks provide a flexible canvas for data analysis and the creation of rich visual reports in the Azure portal. You can use them to query data from multiple data sources. Workbooks can combine and correlate data from multiple data sets in one visualization giving you easy visual representation of your system. Workbooks are interactive and can be shared across teams with data updating in real time. Use workbooks provided with Insights, utilize the library of templates, or create your own.|
+|[Power BI](logs/log-powerbi.md)|Power BI is a business analytics service that provides interactive visualizations across various data sources. It's an effective means of making data available to others within and outside your organization. You can configure Power BI to automatically import log data from Azure Monitor to take advantage of these visualizations. |
+|[Grafana](visualize/grafana-plugin.md)|Grafana is an open platform that excels in operational dashboards. All versions of Grafana include the Azure Monitor data source plug-in to visualize your Azure Monitor metrics and logs. Azure Managed Grafana also optimizes this experience for Azure-native data stores such as Azure Monitor and Azure Data Explorer. In this way, you can easily connect to any resource in your subscription and view all resulting monitoring data in a familiar Grafana dashboard. It also supports pinning charts from Azure Monitor metrics and logs to Grafana dashboards. <br/><br/> Grafana has popular plug-ins and dashboard templates for non-Microsoft APM tools such as Dynatrace, New Relic, and AppDynamics as well. You can use these resources to visualize Azure platform data alongside other metrics from higher in the stack collected by these other tools. It also has AWS CloudWatch and GCP BigQuery plug-ins for multicloud monitoring in a single pane of glass.|
 
-### Should you use logging with your monitoring tasks?
+## Automated actions
 
-Recall that you can analyze log data collected by Azure Monitor with queries to quickly retrieve, consolidate, and analyze collected data. While you'll need to have a Log Analytics workspace to store the log data, the ability to query this data for insights can be a great way to perform more complex and detailed analysis. It can help identify trends or to review when an event happened, and perhaps identify the root cause.
+An effective monitoring solution proactively responds to critical events, without the need for an individual or team to notice the issue. The response could be a text or email to an administrator, or an automated process that attempts to correct an error condition.
 
-### Should you use visualizations in monitoring your resources?
+:::image type="content" source="media/overview/respond-box-opt.svg" alt-text="Diagram that shows the Respond part of the Consumption section of the Azure Monitor system." border="false" lightbox="media/overview/respond-blowup-type-2-opt.svg":::
 
-The dashboards and workbooks are a great way to present the monitored data to various users in ways that are appropriate for the audience. Visualizations are also a great way to aggregate various monitored data points into a single dashboard for ease of use and comparisons.
+[**Artificial Intelligence for IT Operations (AIOps)**](logs/aiops-machine-learning.md) can improve service quality and reliability by using machine learning to process and automatically act on data you collect from applications, services, and IT resources into Azure Monitor. It automates data-driven tasks, predicts capacity usage, identifies performance issues, and detects anomalies across applications, services, and IT resources. These features simplify IT monitoring and operations without requiring machine learning expertise. 
+
+**[Azure Monitor Alerts](alerts/alerts-overview.md)** notify you of critical conditions and can take corrective action. Alert rules can be based on metric or log data.
+ 
+- Metric alert rules provide near-real-time alerts based on collected metrics. 
+- Log alerts rules based on logs allow for complex logic across data from multiple sources.
+
+Alert rules use [action groups](alerts/action-groups.md), which can perform actions such as sending email or SMS notifications. Action groups can send notifications using webhooks to trigger external processes or to integrate with your IT service management tools. Action groups, actions, and sets of recipients can be shared across multiple rules.
+
+:::image type="content" source="media/overview/alerts.png" alt-text="Screenshot that shows the Azure Monitor alerts UI in the Azure portal." lightbox="media/overview/alerts.png":::
+
+SCOM MI currently uses it's own separate traditional SCOM alerting mechanism in the Ops Console. 
+
+**[Autoscale](autoscale/autoscale-overview.md)** allows you to dynamically control the number of resources running to handle the load on your application. You can create rules that use Azure Monitor metrics to determine when to automatically add resources when the load increases or remove resources that are sitting idle. You can specify a minimum and maximum number of instances, and the logic for when to increase or decrease resources to save money and to increase performance.
+
+:::image type="content" source="media/overview/autoscale.png" border="false" alt-text="Conceptual diagram showing how autoscale grows" :::
+
+**[Azure Logic Apps](../logic-apps/logic-apps-overview.md)** is also an option. For more information, see the [Integrate](#integrate) section below. 
+

@@ -1,29 +1,26 @@
-Performance might be one of the many reasons you host your infrastructure or applications on Azure. The deployment of resources shouldn't be the end of your interaction. How do you know if you're gaining benefits with Azure hosting? How can you prove your return on investment? Are there aspects to your applications that are not giving the performance you or your users expect?
+Monitoring provides insights into many aspects of resource performance, security, and health. Azure Monitor is the Azure platform service that provides a single source for monitoring all your Azure resources.
 
-Monitoring your Azure resources provides insights into many aspects of performance, security, and health.
+:::image type="content" source="../media/monitoring-panel-options.png" alt-text="Screenshot of monitoring options in the Azure portal.":::
 
-:::image type="content" source="../media/monitoring-panel-options.png" alt-text="Screenshot of monitoring options for a web app on Azure portal showing options of metrics, logs, health check, etc.":::
+Consider a web application that you host on Azure. You decided to move your application from your on-premises infrastructure due to performance issues. During annual back-to-school sales campaigns, your website was being overloaded, and increased response times were causing users to leave. You didn't want to spend more money on new server hardware just to support those limited engagement peak loads.
 
-## Example scenario
+Azure offers the ability to scale up or scale out your application when needed, then automatically scale it back when resource needs drop off. But initially, you might not know where the capacity issues are. You can use Azure Monitor to collect metrics and logs to determine where your needs are, and base your scaling strategy decisions on concrete data.
 
-Consider a web application that you're hosting on Azure. You decided to move the application from your on-premises infrastructure due to performance issues. During back-to-school campaigns, your web site is being overloaded and response times are causing users to leave. You don't want to spend more money on new server hardware just to support these limited engagements where load peaks.
+Scalability might be only one of the reasons you host your application on Azure, and deploying the resources isn't the end of your involvement. Other aspects of your application might not be providing the performance you or your users expect. You need to know whether you're gaining benefits from Azure hosting to prove your return on investment.
 
-Azure offers the ability to scale up or scale out your applications when needed. Azure can then automatically scale them back when resource needs drop off. Initially, you may not know where the capacity issues are. Using the Azure Monitor capabilities, you can determine where your application-scaling needs are and adjust those parameters in your scaling strategy. You can base these decisions on concrete metrics and log data.
+This module explains the basics of monitoring and Azure Monitor, describes key Azure Management components, and helps you implement Azure Monitor for your web application.
 
-:::image type="content" source="../media/monitor-web.png" alt-text="Screenshot of graphs depicting data in/out, request, and response time for monitoring a web app":::
+## Learning objectives
 
-## What will we be doing?
+- Understand the uses and importance of monitoring.
+- Know the basics of how Azure Monitor works to monitor your Azure applications and infrastructure.
+- Describe the functions of Azure Monitor Logs, Metrics, and Insights.
+- Determine how Azure Monitor can support your Azure application and resource monitoring needs.
 
-We'll take a look at the importance of monitoring your Azure applications and infrastructure by:
+## Prerequisites
 
-* Learning the role of Azure Monitor.
-* Discovering how Azure Monitor works at a high level.
-* Determine if Azure Monitor is appropriate for your needs.
+Basic knowledge and understanding of the following concepts:
 
-## What is the main goal?
-
-By the end of this session, you'll be able to:
-
-* Explain what Azure Monitor is.
-* Briefly describe how Azure Monitor works.
-* Explain sample scenarios where Azure Monitor is useful.
+- Azure portal navigation and resource management
+- Azure web application deployment
+- Application and resource scaling and performance

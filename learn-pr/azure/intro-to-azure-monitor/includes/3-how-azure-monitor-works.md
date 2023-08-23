@@ -1,55 +1,61 @@
-Let's take a peek under the hood of Azure Monitor. You'll learn a bit about how Azure Monitor provides insights into the performance of your hosted services.
+Your application might use several resources and services, like virtual machines (VMs), databases, web hosting services, and a payment gateway. In this unit, you learn about three key Azure Monitor features that are essential for understanding the health, behavior, and performance of all your Azure applications, resources, networks, and infrastructure.
 
-You can monitor and start investigations in Azure Monitor directly in the Azure portal or access Azure Monitor capabilities in the Monitoring section of your Azure resource blade.
+Azure Monitor Metrics and Azure Monitor Logs provide two types of data that are essential for understanding all application and resource behavior and performance. Application Insights provides application performance monitoring (APM).
 
-You can enable additional Azure Monitor features for your resources at scale programmatically with Azure CLI, Azure Resource Manager (ARM) templates, and PowerShell. You can ingest and export data via APIs and you can use Azure Event Hubs to stream data out in near real time.
+## Azure Monitor Metrics
 
-You'll learn how:
+Metrics are quantitative measurements that provide snapshots of application or resource performance. Metrics are typically numeric values that you can measure over time.
 
-* Azure Monitor can display metrics for your services.
-* Azure Monitor agents are used with compute resources.
-* Azure Monitor makes use of logs for data storage.
+Metrics can monitor various aspects of an application or resource, such as resource utilization, response times, error rates, and throughput. Common examples of metrics include CPU usage, memory usage, network latency, and transaction rates.
 
-## Azure Monitor metrics
+Metrics are well-suited for real-time monitoring, and you can use metrics to trigger alerts when defined thresholds are reached.
 
-Azure Monitor Metrics is a feature of Azure Monitor that collects numeric data from monitored resources into a time series database. You can use this information to evaluate the performance of your hosted services. You can view the metrics in graphs on the Azure portal, and you can evaluate the metrics data by understanding its data structure. Each set of recorded values contains the following set of properties:
+Azure Monitor Metrics collects multiple types of metrics, including:
 
-* A time stamp from when the value was collected
-* The associated resource for the value
-* A namespace, which acts as a category for the metric
-* A metric name
-* The actual value that was recorded
-* Multi-dimensional metrics for supported recorded values
+- Metrics from Azure resources.
+- Custom metrics from various sources, including applications and agents running on VMs.
+- Prometheus metrics collected from Kubernetes clusters, such as Azure Kubernetes Service (AKS) clusters. These metrics use industry standard tools, such as PromQL and Grafana, for analyzing and alerting.
 
-As soon as you create a resource in Azure, the Azure Monitor begins collecting data. You choose the values to display in the metrics graph for that resource. You can find **Metrics** under the **Monitoring** category of the resource pane in the Azure portal. Once you select **Metrics**, you can select the **Metric Namespace**, **Metric** category, and **Aggregation** from the drop-down menu choices above the graph.
+Give examples of resources [maybe even just screenshots of the three types of metrics above]
 
-:::image type="content" source="../media/azure-metrics.png" alt-text="Screenshot of metrics graph selected for a web app depicting average memory working set in a line graph format.":::
+You can use Metrics Explorer to interactively analyze the data in your metric database and chart the values of multiple metrics over time. Pin the charts to a dashboard to view them with other visualizations.
+ 
+[See Get started with Azure Monitor metrics explorer - Azure Monitor | Microsoft Learn]
 
-## Azure Monitor agents
+## Azure Monitor Logs
 
-Virtual machines and other compute resources require an agent to collect the monitoring data required to measure the performance and availability of their guest operating system and workloads. The Azure Monitor agent (AMA) collects monitoring data from the guest operating system of virtual machines and delivers it to Azure Monitor.
+Logs are textual records of events, actions, and messages that occur in a resource or application. While metrics are numeric, logs can include the following data:
 
-The Azure Monitor agent has replaced the Log Analytics agent, the diagnostic extension, and the Telegraf agent. By using the Azure Monitor Agent, you can:
+- **Text:** Human-readable text entries that provide context, details, and descriptions of events.
+- **Unstructured data:** Log entries in various formats that don't fit neatly into predefined numerical values.
+- **Contextual information:** Insights into the context surrounding an event, which is invaluable for root cause analysis.
 
-* Centrally configure data collection for different data from different sets of virtual machines.
-* Send data from Linux virtual machines to multiple workspaces.
-* Use XPATH queries to filter Windows events for collection.
+Logs can capture information about errors, warnings, user actions, and application state changes. Logs provide detailed narratives of events in a given context, making them crucial for troubleshooting, debugging, and understanding event sequences that lead to issues. Logs are essential for retrospective analysis of issues, helping to reconstruct the chain of events that led up to a problem.
 
-## Azure Monitor logs
+You can use Azure Monitor Logs to collect and organize the log and performance data from all the resources that Azure Monitor monitors. To collect and analyze all your data, you set up a workspace called a Log Analytics workspace, and configure your resources to send their data to that workspace.
 
-Azure Monitor Logs is a feature of Azure Monitor that collects and organizes log and performance data from monitored resources. Data can come from various sources such as:
+Once you configure the workspace and start logging data, you can use Azure Monitor Logs to explore and analyze the data. You can work with log queries and their results interactively by using the Log Analytics user interface.
 
-* Platform logs for Azure services
-* Virtual machine agents
-* Application performance and usage data from Azure Monitor application insights
+You can use Azure Monitor Log queries in the following scenarios:
 
-You can consolidate all of this data into a workspace for analysis. This workspace is a Log Analytics workspace. You must configure this workspace initially, then configure the different sources to send their data to the workspace. Unlike metrics, this data is not automatically collected.
+- Use a simple query to answer a common question.
+- Do complex data analysis to identify critical patterns in your monitoring data.
+- Use queries in alert rules to be proactively notified of issues.
+- Visualize query results in a workbook or dashboard.
 
-Once you've configured the workspace and data is being logged, you can analyze it together using a sophisticated query language that's capable of quickly analyzing millions of records. You might start with a simple sample query that answers a common question, or perform sophisticated data analysis to identify critical patterns in your monitoring data. You can work with log queries and their results interactively using Log Analytics, use them in an alert rule to be proactively notified of issues, or visualize their results in a workbook or dashboard.
+## Application Insights
 
-In the following log overview image, data sources on the left indicate Azure resources, applications, virtual machine agents, and the data collector API feeding into the log database in the middle. Using a log query, you can output to the sources on the right which indicate Insights, Dashboards, workbooks, log analytics, alerts, and other services.
+The Application Insights feature of Azure Monitor can provide application performance monitoring (APM) from app development, through test, and into production. You can *proactively* monitor to see how well an application is performing, and *reactively* review application execution data to find the cause of an incident.
 
-:::image type="content" source="../media/logs-overview.png" alt-text="Graphic depicting an overview of logging, showing the ability to query the log files to create dashboards, or alerts.":::
+Along with collecting metrics and telemetry data that describe application activities and health, you can use Application Insights to collect and store application *trace logging* data. The log trace is associated with other telemetry to give a detailed view of activity. To add trace logging to existing applications, you only need to provide a destination for the logs. You seldom need to change the logging framework.
 
-> [!NOTE]
-> The log query is read-only.
+Application Insights supports distributed tracing, which is also known as distributed component correlation. This feature allows searching for and visualizing the end-to-end flow of a specific execution or transaction. The ability to trace activity from end to end is important for applications built as distributed components or microservices.
+
+Application Insights also has the following features and abilities:
+
+- **Live metrics** observe activity from your deployed application in real time with no effect on the host environment.
+- **Availability monitoring**, also known as *synthetic transaction monitoring*, probes the external endpoints of your applications to test overall availability and responsiveness over time.
+- **Usage monitoring** helps you understand which features are popular with users and how users interact and use your application.
+- **Smart detection** detects failures and anomalies automatically through proactive telemetry analysis.
+- **Application Map** is a high-level, top-down view of your application architecture with at-a-glance visual references to component health and responsiveness.
+

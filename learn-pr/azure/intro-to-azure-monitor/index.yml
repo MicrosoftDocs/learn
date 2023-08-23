@@ -3,8 +3,8 @@ uid: learn.azure.intro-to-azure-monitor # Do not edit: uid must be globally uniq
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure Monitor          # Do not edit: title must be "Introduction to <product>"
-  description: "Learn what Azure Monitor is and where you would use it."                 # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 03/27/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  description: "Learn how to use Azure Monitor to provide insights into your Azure resource performance and operations."                 # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 08/22/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: gerryaobrien     # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: gerryo          # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
@@ -37,7 +37,7 @@ title: Introduction to Azure Monitor
 ###
 ### Detailed guidance: https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
 ###
-summary: "Learn about Azure Monitor and how provides insights into your Azure resource performance and operations."
+summary: "Learn how to use Azure Monitor to provide insights into your Azure resource performance and operations."
 ###########################################################################
 ###
 ### Learning Objectives
@@ -88,9 +88,8 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - Basic knowledge of Azure portal navigation
-  - Basic knowledge of Azure resources
-  - Basic knowledge of application and resource scaling considerations and performance considerations
+  - Basic knowledge of Azure portal navigation and Azure resources
+  - Basic understanding of application and resource scaling and performance considerations
 ###########################################################################
 iconUrl: /training/achievements/intro-to-azure-monitor.svg
 ###########################################################################
