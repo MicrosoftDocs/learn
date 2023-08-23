@@ -4,11 +4,11 @@ title: Exercise assign Azure resource roles in Privileged Identity Management
 metadata:
   title: Exercise assign Azure resource roles in Privileged Identity Management
   description: "Exercise assign Azure resource roles in Privileged Identity Management"
-  ms.date: 02/07/2023
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

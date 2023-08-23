@@ -19,9 +19,9 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to the function app that you created by selecting the name of the function app in the breadcrumb path at the top of the **HttpTrigger2** function page.
 
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears, listing the HTTP trigger functions that you created.
+1. In the **Functions** tab on the **Overview** page, you should have the HTTP trigger functions that you created.
 
-1. In the command bar, select **Create**. The **Create function** pane appears.
+1. Select **Create** on the **Functions** tab. The **Create function** pane appears.
 
 1. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The Overview pane for the **HttpTrigger3** function appears.
 

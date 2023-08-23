@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-cognitive-services.exercise-cognitive-services
-title: Exercise - Use cognitive services
+title: Exercise - Use Azure AI Services
 metadata:
-  title: Exercise - Use cognitive services
-  description: "Exercise - Use cognitive services"
+  title: Exercise - Use Azure AI Services
+  description: "Exercise - Use Azure AI Services"
   ms.date: 12/07/2021
   author: wwlpublish
   ms.author: gmalc

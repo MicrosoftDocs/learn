@@ -14,4 +14,4 @@ After completing this module, you'll be able to:
 ## Prerequisites
 
 - Intermediate understanding of Microsoft 365 Defender services
-- Hands on experience with Microsoft Azure
+- Fundamental understanding of Microsoft Azure operations
