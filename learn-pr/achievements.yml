@@ -2132,3 +2132,8 @@ achievements:
   title: Analyze and optimize data warehouse storage in Azure Synapse Analytics
   summary: In this module, you'll learn to analyze information used to optimize a data warehouse in Azure Synapse Analytics.
   iconUrl: /training/achievements/azure-synaps-analytics-optimize-data-warehouse.svg
+- uid: learn.azure.plan-manage-azure-costs.badge
+  type: badge
+  title: Plan and manage your Azure costs
+  summary: Learn about the factors that influence cost and tools you can use to help estimate and manage your cloud spend.
+  iconUrl: /training/achievements/review-planning-managing-costs.svg
