@@ -1,10 +1,10 @@
-Azure OpenAI Service provides REST API access to OpenAI's powerful language models including the GPT-3, GPT-4, and ChatGPT model series. These models can be easily adapted to your specific task including but not limited to content generation, summarization, semantic search, and natural language to code translation.
+Azure OpenAI Service provides REST API access to OpenAI's powerful language models including the GPT-3.5 and GPT-4 model series. These models can be easily adapted to your specific task including but not limited to content generation, summarization, semantic search, and natural language to code translation.
 
-In addition to the REST API access, a .NET SDK exists to access Azure OpenAI Service. And that's what we will use to build our application. But before building the application, let's learn a bit more about what Azure OpenAI is and text completions are. Knowing that give us the foundation we need to build amazing applications with AI.
+In addition to the REST API access, a .NET SDK exists to access Azure OpenAI Service. And that's what we will use to build our application. But before building the application, let's learn a bit more about what Azure OpenAI is and what text completions are. Knowing that give us the foundation we need to build amazing applications with AI.
 
 ## Azure OpenAI overview
 
-Azure OpenAI Service gives customers advanced language AI with OpenAI GPT-4, GPT-3, Codex, and DALL-E models with the security and enterprise promise of Azure. Azure OpenAI codevelops the APIs with OpenAI, ensuring compatibility and a smooth transition from one to the other.
+Azure OpenAI Service gives customers advanced language AI with OpenAI GPT-3.5, GPT-4, Codex, and DALL-E models with the security and enterprise promise of Azure. Azure OpenAI codevelops the APIs with OpenAI, ensuring compatibility and a smooth transition from one to the other.
 
 With Azure OpenAI, customers get the security capabilities of Microsoft Azure while running the same models as OpenAI. Azure OpenAI offers private networking, regional availability, and responsible AI content filtering.
 
@@ -14,7 +14,7 @@ The completions endpoint is the core component of the API service. This API prov
 
 The completions endpoint can be used for a wide variety of tasks. It provides a simple but powerful text-in, text-out interface to any of the Azure OpenAI models. You input some text as a prompt, and the model generates a text completion that attempts to match whatever context or pattern you gave it. For example, if you give the API the prompt, "As Descartes said, I think, therefore", it returns the completion " I am" with high probability.
 
-The actual completion results you see may differ because the API is stochastic by default. In other words, you might get a slightly different completion every time you call it, even if your prompt stays the same.
+The actual completion results you see may differ because the AI is stochastic by default. In other words, you might get a slightly different completion every time you call it, even if your prompt stays the same.
 
 This simple, "text in, text out" interface means you can "program" the model by providing instructions or just a few examples of what you'd like it to do. Its success generally depends on the complexity of the task and quality of your prompt. A general rule is to think about how you would write a word problem for a middle school student to solve. A well-written prompt provides enough information for the model to know what you want and how it should respond.
 
@@ -152,7 +152,7 @@ A: George Lucas is American film director and producer famous for creating Star 
 
 ## Summary
 
-Azure OpenAI Service provides REST API access to OpenAI's powerful language models including the GPT-3, GPT-4, and ChatGPT model series. It also gives you the security and enterprise features you've come to rely from the Azure cloud.
+Azure OpenAI Service provides REST API access to OpenAI's powerful language models including the GPT-3.5 and GPT-4 model series. It also gives you the security and enterprise features you've come to rely from the Azure cloud.
 
 One of the most useful features from the OpenAI language models is text completion. You pass in a **prompt** or a plain language description of what you want the model to do, and it can perform tasks such as text classification, text generation, or text summarization.
 

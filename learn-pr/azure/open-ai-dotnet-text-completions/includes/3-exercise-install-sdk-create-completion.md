@@ -102,8 +102,8 @@ Next up we want to create a bare bones .NET Console application and add the Azur
 
     ```csharp
     string openAIEndpoint = "<YOUR ENDPOINT URL VALUE>";
-    readonly string openAIAPIKey = "<YOUR PRIMARY API KEY VALUE>";
-    readonly string openAIDeploymentName = "PetStoreCurieDeploy";
+    string openAIAPIKey = "<YOUR PRIMARY API KEY VALUE>";
+    string openAIDeploymentName = "PetStoreCurieDeploy";
     ```
 
     In the steps above, we named the deployment **PetStoreCurieDeploy**, if you used a different value make sure you use that instead.
@@ -182,8 +182,8 @@ Ok, our proof-of-concept application is now successfully classifying product rev
 
     ```csharp
     string promptForTranslation = $"""
-    Translate the following sentence into Spanish: {exampleReview}
-    """;
+        Translate the following sentence into Spanish: {exampleReview}
+        """;
     ```
 
 1. Then we need to create a `CompletionsOptions` object, call the same `GetCompletionsAsync` function as before, and then read the result.
@@ -193,10 +193,9 @@ Ok, our proof-of-concept application is now successfully classifying product rev
         Prompts = { promptForTranslation },
         MaxTokens = 64,
         Temperature = 0f,
-        FrequencyPenalty=0.0f,
+        FrequencyPenalty = 0.0f,
         PresencePenalty = 0.0f,
         NucleusSamplingFactor = 1
-    
     };
 
     Completions translatedResponse = await openAIClient.GetCompletionsAsync(openAIDeploymentName, translationCompletionOptions);

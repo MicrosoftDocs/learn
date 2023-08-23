@@ -14,8 +14,11 @@ When classifying a product review, we only want the model to tell us if the revi
 
     ```csharp
     string prompt = $"""
-    Product reviews are a key component in how our online business decides whether to include stock products in the future. You will help us make those decisions by classifying a product review as positive, neutral, or negative.
-    """;
+        Product reviews are a key component in how our online business decides 
+        whether to include stock products in the future. You will help us make 
+        those decisions by classifying a product review as positive, neutral, 
+        or negative.
+        """;
     ```
 
     _We haven't included the `exampleReview` variable yet, we'll still build upon this prompt in the next section._
@@ -28,20 +31,22 @@ Next add some examples to help the model give us the output we want to see in a 
 
     ```csharp
     string prompt = $"""
-    Product reviews are a key component in how our online business decides whether to include stock products in the future. You will help us make those decisions by classifying a product review as positive, neutral, or negative.
-
-    Here are a few examples you can use:
-
-    Review: My dog absolutely loved this food. He eats every last crumb and can't wait for dinner time.
-    Sentiment: Positive
-
-    Review: This aquarium is does the job but it is not anything special. Sometimes algae forms on the sides, but sometimes not. I would probably buy again but would first do some more research.
-    Sentiment: Neutral
-
-    Review: I seriously cannot believe this store stocks this doggy bed. My dog ripped it up and there was stuffing all over the place. I think there's stuffing stuck to my ceiling.
-    Sentiment: Negative
-
-    """;
+      Product reviews are a key component in how our online business decides 
+      whether to include stock products in the future. You will help us make 
+      those decisions by classifying a product review as positive, neutral, 
+      or negative.
+  
+      Here are a few examples you can use:
+  
+      Review: My dog absolutely loved this food. He eats every last crumb and can't wait for dinner time.
+      Sentiment: Positive
+  
+      Review: This aquarium is does the job but it is not anything special. Sometimes algae forms on the sides, but sometimes not. I would probably buy again but would first do some more research.
+      Sentiment: Neutral
+  
+      Review: I seriously cannot believe this store stocks this doggy bed. My dog ripped it up and there was stuffing all over the place. I think there's stuffing stuck to my ceiling.
+      Sentiment: Negative
+      """;
     ```
 
 1. Now finally at the very end of the `prompt` string, add the `exampleReview` variable in as the last review and put a placeholder in for the **Sentiment:**. This lets the model know you want it to complete with what it thinks should come next.
@@ -71,12 +76,12 @@ In the case, there isn't a direct translation of _catio-tent_ from English to Sp
 
     ```csharp
     string promptForTranslation = $"""
-    You are going to translate a product review from English into Spanish.
-    If the review is not a well-formed English sentence respond with the text in Spanish: 'Not a well-formed sentence'. Otherwise, respond with the translation.
-    The review to translate is: {exampleReview}
-    """;
+      You are going to translate a product review from English into Spanish.
+      If the review is not a well-formed English sentence respond with the text in Spanish: 'Not a well-formed sentence'. Otherwise, respond with the translation.
+      The review to translate is: {exampleReview}
+      """;
     ```
 
 1. Run the application. It should give you a translation.
-1. Change `exampleReview` to be `"The tent ate the cat`.
+1. Change `exampleReview` to be `"The tent ate the cat"`.
 1. Run the application again, and it should output: `No es una buena forma de hablar español.`.
