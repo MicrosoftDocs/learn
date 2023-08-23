@@ -164,7 +164,7 @@ In this exercise, you'll create a text file that you'll use to create an audio f
 
 ## Optional: Change the voice
 
-The `SpeechConfig` class has a `SpeechSynthesisVoiceName` property you can use to specify a voice other than the default. You can find a list of voices you can use in the **Text to speech** section of the [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support#text-to-speech) article.
+The `SpeechConfig` class has a `SpeechSynthesisVoiceName` property you can use to specify a voice other than the default. You can find a list of voices you can use in the **Text to speech** section of the [Language and voice support for the Speech service](/azure/ai-services/speech-service/language-support#text-to-speech) article.
 
 To specify the voice, use the following steps.
 

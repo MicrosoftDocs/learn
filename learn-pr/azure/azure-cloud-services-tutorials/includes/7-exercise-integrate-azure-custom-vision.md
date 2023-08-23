@@ -4,13 +4,13 @@ In this module, you'll learn how to use **Azure Custom Vision**. You'll upload a
 
 **Azure Custom Vision** is part of the **Cognitive Services** family, and is used to train image classifiers. The image classifier is an AI service that uses the trained model to apply matching tags. Our application will use this classification feature to detect *Tracked Objects*.
 
-Learn more about [Azure Custom Vision](/azure/cognitive-services/custom-vision-service/home).
+Learn more about [Azure Custom Vision](/azure/ai-services/custom-vision-service/home).
 
 ## Prepare Azure Custom Vision
 
 Before you can start, you need to create a custom vision project. The fastest way to create your custom project is using the web portal.
 
-Follow this [quickstart tutorial](/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier) to set up your account and project. Follow the steps up to the *Upload and tag images* section.
+Follow this [quickstart tutorial](/azure/ai-services/custom-vision-service/getting-started-build-a-classifier) to set up your account and project. Follow the steps up to the *Upload and tag images* section.
 
 > [!WARNING]
 > To train a model, you need to have at least two tags and five images per tag. To use this application, you should at least create one tag with five images so that the training process won't fail later.

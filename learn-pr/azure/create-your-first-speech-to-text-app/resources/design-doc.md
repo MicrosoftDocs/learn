@@ -162,6 +162,6 @@ Identify the subtasks of *Create your first Azure Cognitive Services speech to t
 
 - [Quickstart: Create a Azure AI services resource using the Azure CLI](https://learn.microsoft.com/cognitive-services/cognitive-services-apis-create-account-cli)
 
-- [Language and voice support for the Speech service](https://learn.microsoft.com/azure/cognitive-services/speech-service/language-support)
+- [Language and voice support for the Speech service](/azure/ai-services/speech-service/language-support)
 
-- [Get started with speech to text](https://learn.microsoft.com/azure/cognitive-services/speech-service/get-started-speech-to-text)
+- [Get started with speech to text](/azure/ai-services/speech-service/get-started-speech-to-text)

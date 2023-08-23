@@ -10,6 +10,6 @@ Now that you've reviewed this module, you should be able to:
 
 [!INCLUDE[](../../../includes/open-link-in-new-tab-note.md)]
 
-- [Batch Transcription documentation](/azure/cognitive-services/speech-service/batch-transcription)
-- [Custom speech documentation](/azure/cognitive-services/speech-service/custom-speech-overview)
+- [Batch Transcription documentation](/azure/ai-services/speech-service/batch-transcription)
+- [Custom speech documentation](/azure/ai-services/speech-service/custom-speech-overview)
 - [Azure Speech Studio portal](https://speech.microsoft.com/portal?projecttype=customspeech)

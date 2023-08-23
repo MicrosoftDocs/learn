@@ -10,8 +10,8 @@ You also learned how you can improve your recognition results by providing a lis
 
 ## Learn more
 
-- [Quickstart: Create a Azure AI services resource using the Azure CLI](/azure/cognitive-services/cognitive-services-apis-create-account-cli)
+- [Quickstart: Create a Azure AI services resource using the Azure CLI](/azure/ai-services/cognitive-services-apis-create-account-cli)
 
-- [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support)
+- [Language and voice support for the Speech service](/azure/ai-services/speech-service/language-support)
 
-- [Get started with speech to text](/azure/cognitive-services/speech-service/get-started-speech-to-text)
+- [Get started with speech to text](/azure/ai-services/speech-service/get-started-speech-to-text)

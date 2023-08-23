@@ -8,14 +8,14 @@ You created an Azure AI services account, which you used to create two text to s
 
 ## Learn more
 
-- [Quickstart: Convert text to speech](/azure/cognitive-services/speech-service/get-started-text-to-speech)
+- [Quickstart: Convert text to speech](/azure/ai-services/speech-service/get-started-text-to-speech)
 
-- [Quickstart: Create an Azure AI services resource using the Azure CLI](/azure/cognitive-services/cognitive-services-apis-create-account-cli)
+- [Quickstart: Create an Azure AI services resource using the Azure CLI](/azure/ai-services/cognitive-services-apis-create-account-cli)
 
-- [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support)
+- [Language and voice support for the Speech service](/azure/ai-services/speech-service/language-support)
 
-- [Improve synthesis with Speech Synthesis Markup Language (SSML)](/azure/cognitive-services/speech-service/speech-synthesis-markup)
+- [Improve synthesis with Speech Synthesis Markup Language (SSML)](/azure/ai-services/speech-service/speech-synthesis-markup)
 
-- [Speech service phonetic sets](/azure/cognitive-services/speech-service/speech-ssml-phonetic-sets)
+- [Speech service phonetic sets](/azure/ai-services/speech-service/speech-ssml-phonetic-sets)
 
 - [az cognitiveservices account](/cli/azure/cognitiveservices/account)

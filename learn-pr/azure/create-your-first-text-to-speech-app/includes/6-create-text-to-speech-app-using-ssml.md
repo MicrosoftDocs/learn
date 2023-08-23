@@ -2,7 +2,7 @@ In the previous exercise, you learned how to create an application that read a t
 
 Fortunately for you, Azure AI services' text to speech features work with Speech Synthesis Markup Language (SSML), which you can use to customize the speech your application creates.
 
-There's a wealth of information about SSML in the [Improve synthesis with Speech Synthesis Markup Language (SSML)](/azure/cognitive-services/speech-service/speech-synthesis-markup) article, and far too much information to include in this unit. With that in mind, this unit contains a brief overview of SSML to help you get started.
+There's a wealth of information about SSML in the [Improve synthesis with Speech Synthesis Markup Language (SSML)](/azure/ai-services/speech-service/speech-synthesis-markup) article, and far too much information to include in this unit. With that in mind, this unit contains a brief overview of SSML to help you get started.
 
 ## Creating SSML files
 
@@ -42,7 +42,7 @@ To specify different voices, you'd wrap text within different `<voice>` elements
 ```
 
 > [!NOTE]
-> For a list of voices you can use, see the **Text to speech** section of [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support?tabs=tts#prebuilt-neural-voices).
+> For a list of voices you can use, see the **Text to speech** section of [Language and voice support for the Speech service](/azure/ai-services/speech-service/language-support?tabs=tts#prebuilt-neural-voices).
 
 ### Adjusting the speaking rate and pitch
 
@@ -121,7 +121,7 @@ If your application requires words that Azure AI text to speech features have a 
 ```
 
 > [!NOTE]
-> For more information about working with phonetic alphabets, see [Speech service phonetic sets](/azure/cognitive-services/speech-service/speech-ssml-phonetic-sets).
+> For more information about working with phonetic alphabets, see [Speech service phonetic sets](/azure/ai-services/speech-service/speech-ssml-phonetic-sets).
 
 ## Creating a text to speech application for SSML files
 

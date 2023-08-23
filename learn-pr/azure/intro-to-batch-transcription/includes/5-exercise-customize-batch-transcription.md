@@ -1,6 +1,6 @@
 In the previous exercise, we used the standard en-us model. For the customer service scenario, you need to investigate if it's possible to create a custom model from existing call center data. To create this model, use the Custom Speech portal.
 
-The first step to train a model is to upload training data. For more information, see [Prepare and test your data](/azure/cognitive-services/speech-service/how-to-custom-speech-test-and-train) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
+The first step to train a model is to upload training data. For more information, see [Prepare and test your data](/azure/ai-services/speech-service/how-to-custom-speech-test-and-train) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
 
 ## Train and evaluate a model
 
