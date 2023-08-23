@@ -34,7 +34,6 @@ products:
 subjects:
 - finance-accounting
 units:
-- learn.azure.plan-manage-azure-costs.7-knowledge-check
 - learn.azure.plan-manage-azure-costs.8-summary
 badge:
   uid: learn.azure.plan-manage-azure-costs.badge
