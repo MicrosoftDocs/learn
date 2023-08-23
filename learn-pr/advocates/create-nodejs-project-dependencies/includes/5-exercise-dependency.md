@@ -4,14 +4,18 @@ The developers at Tailwind Traders realize that they're about to put extensive r
 
 You're given some code that parses an address from a string. Your task should be fairly straightforward. It involves installing the test framework, writing a couple tests, and running them.
 
-> [!Note]
-> If you closed your terminal window after the previous exercise, you might need to set up your environment again. Open a terminal window, and clone the exercise repo by running the command `git clone https://github.com/MicrosoftDocs/node-essentials/`. You can ignore warning messages about the cloned folder already existing or the directory not being empty.
 
-1. In your terminal window, change to the folder that has the cloned files for this exercise:
+1. In a new terminal window (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>), change to the folder that has the cloned files for this exercise:
 
    ```bash
-   cd node-essentials/node-dependencies/5-exercise-dependency
+   cd node-dependencies/5-exercise-dependency
    ```
+
+1. View the contents of the folder:
+
+    ```bash
+    ls -R
+    ```
 
    In this folder, you should see two JavaScript files:
 
@@ -43,7 +47,7 @@ You're given some code that parses an address from a string. Your task should be
 
    ```json
    "devDependencies": {
-      "jest": "^28.0.0"
+      "jest": "^29.6.3"
     }
    ```
 
@@ -58,6 +62,11 @@ You're given some code that parses an address from a string. Your task should be
    Save your changes and close the package.json file.
 
 1. In the terminal, create a new folder named **\_\_tests\_\_**.
+
+   ```bash
+   mkdir __tests__
+   ```
+
     > [!NOTE]
     > Make sure that you use double underscores when you create the *\_\_tests\_\_* folder.
 
@@ -103,14 +112,15 @@ You're given some code that parses an address from a string. Your task should be
    You should get the following output:
 
    ```output
-   Address parser
-    ✓ should parse correctly (2 ms)
-
-   Test Suites: 1 passed, 1 total
-   Tests:       1 passed, 1 total
-   Snapshots:   0 total
-   Time:        1.216 s
-   Ran all test suites.
+     PASS  __tests__/address-parser.js
+      Address parser
+        ✓ should parse correctly (2 ms)
+    
+    Test Suites: 1 passed, 1 total
+    Tests:       1 passed, 1 total
+    Snapshots:   0 total
+    Time:        0.4 s
+    Ran all test suites.
    ```
 
    Success! Your test passes, and you added testing by installing a dependency.

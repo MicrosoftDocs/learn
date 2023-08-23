@@ -2,13 +2,10 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
 
 ## Upgrade app dependencies
 
-> [!NOTE]
-> If you closed your terminal window after the previous exercise, you might need to set up your environment again. Open a terminal window, and clone the exercise repo by running the command `git clone https://github.com/MicrosoftDocs/node-essentials/`. You can ignore warning messages about the cloned folder already existing or the directory not being empty.
-
-1. In your terminal window, change to the folder that has the cloned files for this exercise:
+1. 1. In a new terminal window (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>), change to the folder that has the cloned files for this exercise:
 
    ```bash
-   cd node-essentials/node-dependencies/7-exercise-dependency-management
+   cd node-dependencies/7-exercise-dependency-management
    ```
 
 1. Install the dependencies by running this command:
@@ -62,7 +59,7 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
    
    Notice the patterns specify the insert (^) character, which indicates updates to the minor version to support dependencies.
    
-   Close the file.
+   Close the file. 
 
 1. In the terminal, run this command to check for outdated dependencies:
 

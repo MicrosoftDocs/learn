@@ -62,35 +62,33 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     ```bash
     node --version
     ```
-1. Close the terminal.
+
 1. The remaining exercises in this project take place in the context of this development container.
 
 ---
 
 ## Set up a new Node.js project
 
-1. Open a terminal window.
-
-2. Clone the `https://github.com/MicrosoftDocs/node-essentials/` repo by running this command:
+1. In the terminal, change to the folder that has the cloned files for this exercise:
 
    ```bash
-   git clone https://github.com/MicrosoftDocs/node-essentials/
+   cd node-dependencies/3-exercise-package-json
    ```
 
-3. Change to the folder that has the cloned files for this exercise:
+1. View the contents of the folder:
 
-   ```bash
-   cd node-essentials/node-dependencies/3-exercise-package-json
-   ```
+    ```bash
+    ls -R
+    ```
 
    In this folder, you should see a **src** subfolder with an **index.js** file:
 
    ```output
-   -| src/
-   ---| index.js
+    ./src:
+    index.js
    ```
 
-4. Run the following command to initialize a Node.js project:
+1. Run the following command to initialize a Node.js project:
 
     ```bash
     npm init -y
@@ -103,7 +101,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
       "name": "<your project>",
       "version": "1.0.0",
       "description": "",
-      "main": "script.js",
+      "main": "index.js",
       "dependencies": {},
       "devDependencies": {},
       "scripts": {
@@ -115,7 +113,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     }
     ```
 
-5. Edit the package.json file and modify these property values:
+1. Edit the package.json file and modify these property values:
 
     - `name`: "tailwind-trader-api"
     - `description`: "HTTP API to manage items from the Tailwind Traders database"
@@ -142,7 +140,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     }
     ```
 
-6. In the `scripts` section, add this definition for the `start` action before the definition for the `test` action:
+1. In the `scripts` section, add this definition for the `start` action before the definition for the `test` action:
 
    ```json
    "start": "node ./src/index.js",
@@ -150,7 +148,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
 
    Save your changes and close the package.json file.
 
-7. Start your project with the `start` action by entering this command:
+1. Start your project with the `start` action by entering this command:
 
    ```bash
    npm start
@@ -162,4 +160,4 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
    Welcome to this application
    ```
 
-You now have a good file structure that you can build upon as your project grows.
+You now have a good file structure that you can build upon as your project grows. 
