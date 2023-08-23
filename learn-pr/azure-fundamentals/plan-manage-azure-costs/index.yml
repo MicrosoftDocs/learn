@@ -34,7 +34,6 @@ products:
 subjects:
 - finance-accounting
 units:
-- learn.azure.plan-manage-azure-costs.5-estimate-workload-cost-pricing-calculator
 - learn.azure.plan-manage-azure-costs.6-manage-minimize-total-cost
 - learn.azure.plan-manage-azure-costs.7-knowledge-check
 - learn.azure.plan-manage-azure-costs.8-summary
