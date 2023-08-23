@@ -1,11 +1,11 @@
 
 
 
-With Codespaces configured and GitHub Copilot installed, your goal is to develop the Python console minigame. You need to create the game logic following the specifications and use GitHub Copilot to help create the methods.
+With Codespaces configured, your goal is to develop the Python console minigame. You need to create the game logic following the specifications and use GitHub Copilot to help create the methods.
 
 ## Specification
 
-In this challenge exercise, you need to define the elements that will be used in the minigame, create the repetition structure to allow the user to play several times, create the decision logic to determine the winner, and display the result.
+In this challenge exercise, you need to define the elements of the minigame, create the repetition structure to allow the user to play several times, create the decision logic to determine the winner, and display the result.
 
 ### Game rules
 
@@ -21,7 +21,7 @@ The console is used to interact with the player. The player can choose one of th
 
 ### Definitions for the game
 
-- Import the random module to use the `choice` function, which will play the role of our opponent.
+- Import the random module to use the `choice` function, which play the role of our opponent.
 - Create a list called `options` with the game options: `rock`, `paper` and `scissors`
 - Create the variables:
     - `rounds_played` to store the number of rounds
