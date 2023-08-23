@@ -20,7 +20,7 @@ Azure storage includes four types of data:
 - **Queues**: A messaging store for reliable messaging between application components.
 - **Table Storage**: A NoSQL store for schema-less storage of structured data. Table Storage isn't covered in this module.
 
-All of these data types in Azure Storage are accessible from anywhere in the world over HTTP or HTTPS. Microsoft provides SDKs for Azure Storage services in various programming languages, and in a [REST API](https://learn.microsoft.com/rest/api/storageservices/). You can also visually explore your data right in the Azure portal.
+All of these data types in Azure Storage are accessible from anywhere in the world over HTTP or HTTPS. Microsoft provides SDKs for Azure Storage services in various programming languages, and in a [REST API](/rest/api/storageservices/). You can also visually explore your data right in the Azure portal.
 
 ### Blobs
 

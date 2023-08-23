@@ -10,7 +10,7 @@ You created an Azure AI services account, which you used to create two text to s
 
 - [Quickstart: Convert text to speech](/azure/ai-services/speech-service/get-started-text-to-speech)
 
-- [Quickstart: Create an Azure AI services resource using the Azure CLI](/azure/ai-services/cognitive-services-apis-create-account-cli)
+- [Quickstart: Create an Azure AI services resource](/azure/ai-services/multi-service-resource)
 
 - [Language and voice support for the Speech service](/azure/ai-services/speech-service/language-support)
 
