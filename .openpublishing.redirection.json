@@ -26530,6 +26530,146 @@
       "source_path": "learn-pr/paths/deploy-azure-iot-edge-devices-modules/index.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-edge-module-development/index.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-edge-module-development/1-introduction.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-edge-module-development/2-introduction-module-development.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-edge-module-development/3-azure-iot-edge-supported-systems.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-edge-module-development/4-module-development-test-tools.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-edge-module-development/5-configure-visual-studio-code-development-environment.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-edge-module-development/6-develop-custom-modules-visual-studio-code.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-edge-module-development/7-debug-edge-modules.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-edge-module-development/8-knowledge-check.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-edge-module-development/9-summary.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-offline-local-storage-capabilities/index.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-offline-local-storage-capabilities/1-introduction.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-offline-local-storage-capabilities/2-extended-offline-capabilities.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-offline-local-storage-capabilities/3-azure-blob-storage-iot-edge.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-offline-local-storage-capabilities/4-module-access-local-storage.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-offline-local-storage-capabilities/5-knowledge-check.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-offline-local-storage-capabilities/6-summary.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-custom-module-development-iot-edge/index.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-custom-module-development-iot-edge/1-introduction.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-custom-module-development-iot-edge/2-develop-deploy-custom-iot-edge-module.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-custom-module-development-iot-edge/3-knowledge-check.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-custom-module-development-iot-edge/4-summary.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-edge-offline-support/index.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-edge-offline-support/1-introduction.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-edge-offline-support/2-configure-iot-edge-gateway-for-offline-support.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-edge-offline-support/3-knowledge-check.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-edge-offline-support/4-summary.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-deploy-custom-iot-edge-modules/index.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
     }
   ]
 }

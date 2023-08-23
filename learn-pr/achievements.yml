@@ -2232,3 +2232,28 @@ achievements:
   title: Deploy Azure IoT Edge devices and modules
   summary:   You will learn about the benefits provided by Azure IoT Edge, the IoT Edge runtime environment, IoT Edge device deployments, and IoT Edge gateway device patterns and capabilities.
   iconUrl: /training/achievements/iot-edge-deploy-devices-modules.svg
+- uid: learn.wwl.examine-iot-edge-module-development.badge
+  type: badge
+  title: Examine IoT Edge module development
+  summary: This module introduces you to IoT Edge runtime environment configuration and programming tasks, and the tools and processes that are used to develop custom IoT Edge modules.
+  iconUrl: /training/achievements/iot-edge-module-development.svg
+- uid: learn.wwl.examine-offline-local-storage-capabilities.badge
+  type: badge
+  title: Examine offline and local storage capabilities
+  summary: This module introduces you to IoT Edge support for extend offline scenarios, local storage on IoT Edge devices, and the process for configuring an IoT device to access to local storage.
+  iconUrl: /training/achievements/storage-capabilities-offline-local.svg
+- uid: learn.wwl.explore-custom-module-development-for-iot-edge.badge
+  type: badge
+  title: Explore custom module development for IoT Edge
+  summary: This module provides you with experience configuring the IoT Edge runtime environment and container registry, developing and debugging a custom IoT Edge module, and publishing a module to the Azure Container Registry.
+  iconUrl: /training/achievements/iot-edge-custom-module-development.svg
+- uid: learn.wwl.explore-iot-edge-offline-support.badge
+  type: badge
+  title: Explore IoT Edge offline support
+  summary: This module provides you with experience implementing an extended offline scenario for IoT Edge devices that includes local storage, and using a gateway device to retain child device messages until the devices are back online.
+  iconUrl: /training/achievements/iot-edge-offline-support.svg
+- uid: learn.wwl.develop-deploy-custom-iot-edge-modules.trophy
+  type: trophy
+  title: Develop and deploy custom IoT Edge modules
+  summary: You will learn about programming for the IoT Edge runtime environment, the tools and processes that are used to develop custom IoT Edge modules, and the support that IoT Edge provides for extended offline scenarios.
+  iconUrl: /training/achievements/iot-edge-deploy-custom-modules.svg
