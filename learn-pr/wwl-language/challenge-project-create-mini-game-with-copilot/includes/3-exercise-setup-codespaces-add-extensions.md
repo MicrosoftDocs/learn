@@ -1,10 +1,12 @@
 
 
 
-Your goal is to develop a Python console minigame application using GitHub Copilot. As you're working in a Codespace, you'll need to install the GitHub Copilot extension by updating the dev container configuration file.
+Your goal is to develop a Python console minigame application using GitHub Copilot. As you're working in a Codespace, you need to install the GitHub Copilot extension by updating the dev container configuration file.
 
 ## What is a Dev Container?
-Development containers, or dev containers, are Docker containers that are specifically configured to provide a fully featured development environment. Whenever you work in a codespace, you are using a dev container on a virtual machine.
+
+Development containers, or dev containers, are Docker containers that are configured to provide a fully featured development environment.
+Whenever you work in a codespace, you are using a dev container on a virtual machine.
 
 You can configure the dev container for a repository so that codespaces created for that repository give you a tailored development environment, complete with all the tools and runtimes you need to work on a specific project.
 
@@ -13,7 +15,8 @@ The diagram below, taken directly from the official [Visual Studio Code docs](ht
 ![Dev Container Diagram](./media/dev-container.png)
 
 ## Specification
-In this challenge exercise, you'll need to open the `devcontainer` folder and update the `devcontainer.json` JSON file to add the GitHub Copilot extension.
+
+In this challenge exercise, you need to open the `devcontainer` folder and update the `devcontainer.json` JSON file to add the GitHub Copilot extension.
 
 - Codespaces identify the extensions that should be installed by the Visual Studio Code marketplace `id`.
 - The GitHub Copilot extension identification is `GitHub.copilot`.
