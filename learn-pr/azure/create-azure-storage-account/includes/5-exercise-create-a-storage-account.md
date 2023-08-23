@@ -33,12 +33,9 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
 
     | Setting | Value |
     |---|---|
-    | **Security** | 
+    | **Security** |
     | Require secure transfer for REST API operations | *Check*. This setting controls whether **HTTP** can be used for the REST APIs that access data in the storage account. Setting this option to *enable* forces all clients to use **HTTPS**. Most of the time, you want to set secure transfer to *enable*; using HTTPS over the network is considered a best practice. |
-
-    | Allow enabling anonymous access on individual containers | *Uncheck*. Blob containers, by default, don't permit anonymous access to their content. This setting allows authorized users to selectively enable anonymous access on specific containers. |
-    | Enable blob public access | *Check*. We want to allow clients to read data in that container without authorizing the request. |
-
+    | Allow enabling anonymous access on individual containers | *Check*. Blob containers, by default, don't permit anonymous access to their content. This setting allows authorized users to selectively enable anonymous access on specific containers. |
     | Enable storage account key access | *Check*. We want to allow clients to access data via SAS. |
     | Default to Azure Active Directory authorization in the Azure portal | *Uncheck*. Clients are public, not part of an Active Directory. |
     | Minimum TLS version | Select *Version 1.2* from dropdown list. TLS 1.2 is a secure version of TLS, and Azure Storage uses it on public HTTPS endpoints. TLS 1.1 and 1.0 are supported for backwards compatibility. See *Warning* at end of table. |
