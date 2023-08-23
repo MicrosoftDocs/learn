@@ -27,7 +27,7 @@ table_name = "nyctaxi_raw"
 filtered_df.write.mode("overwrite").format("delta").save(f"Tables/{table_name}")
 
 # Confirm load as Delta table
-print(f"Spark data frame saved to Delta table: {table_name}")
+print(f"Spark DataFrame saved to Delta table: {table_name}")
 ```
 
 ## Optimize Delta table writes
@@ -47,4 +47,4 @@ spark.conf.set("spark.microsoft.delta.optimizeWrite.enabled", "true")
 ```
 
 > [!TIP]
-> Learn more about [Delta Lake table optimization and V-Order](fabric/data-engineering/delta-optimization-and-v-order?tabs=sparksql).
+> Learn more about [Delta Lake table optimization and V-Order](/fabric/data-engineering/delta-optimization-and-v-order?tabs=sparksql).

@@ -25,7 +25,6 @@ blob_sas_token = "CountingCrows"
 
 # Construct the path for connection
 wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}?{blob_sas_token}'
-print('Blob Storage connection path:', wasbs_path)
 
 # Read parquet data from Azure Blob Storage path
 blob_df = spark.read.parquet(wasbs_path)
@@ -34,32 +33,39 @@ blob_df = spark.read.parquet(wasbs_path)
 blob_df.show()
 ```
 
-`Blob Storage connection path: wasbs://nyctlc@azureopendatastorage.blob.core.windows.net/yellow?CountingCrows`
+The previous PySpark code defines the parameters and constructs the connection path, then reads the data into a DataFrame and shows the data in the DataFrame.
 
 ## Configure alternate authentication
 
-The previous example connects to the source and reads the data into a data frame. Depending on your source, you may need a different authentication type, such as Service Principal, OAuth, etc. Here's an example connecting to an Azure SQL Database with a Service Principal:
+The previous example connects to the source and reads the data into a DataFrame. Depending on your source, you may need a different authentication type, such as Service Principal, OAuth, etc. Here's an example connecting to an Azure SQL Database with a Service Principal:
 
 ```Python
-# Azure SQL Database JDBC URL with Service Principal (Active Directory Integrated)
-jdbc_url = "jdbc:sqlserver://wisteria.database.windows.net:1433;database=ADW2016;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;Authentication=ActiveDirectoryIntegrated"
-client_id = "YOUR_CLIENT_ID"
-client_secret = "YOUR_CLIENT_SECRET"
-tenant_id = "YOUR_TENANT_ID"
+# Placeholders for Azure SQL Database connection info
+server_name = "your_server_name.database.windows.net"
+port_number = 1433  # Default port number for SQL Server
+database_name = "your_database_name"
+table_name = "YourTableName" # Database table
+client_id = "YOUR_CLIENT_ID"  # Service principal client ID
+client_secret = "YOUR_CLIENT_SECRET"  # Service principal client secret
+tenant_id = "YOUR_TENANT_ID"  # Azure Active Directory tenant ID
 
+
+# Build the Azure SQL Database JDBC URL with Service Principal (Active Directory Integrated)
+jdbc_url = f"jdbc:sqlserver://{server_name}:{port_number};database={database_name};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;Authentication=ActiveDirectoryIntegrated"
+
+# Properties for the JDBC connection
 properties = {
-    "user": client_id,
-    "password": client_secret,
+    "user": client_id, 
+    "password": client_secret,  
     "driver": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
-    "tenantId": tenant_id
+    "tenantId": tenant_id  
 }
 
-# Read entire table from Azure SQL Database
-table_name = "YourTableName"
+# Read entire table from Azure SQL Database using AAD Integrated authentication
 sql_df = spark.read.jdbc(url=jdbc_url, table=table_name, properties=properties)
 
 # Show the Azure SQL DataFrame
 sql_df.show()
 ```
 
-We have now successfully connected to external data with Spark and read it into a data frame in a Fabric notebook. We discuss how to load the data into a file or table next.
+We have now successfully connected to external data with Spark and read it into a DataFrame in a Fabric notebook. We discuss how to load the data into a file or table next.
