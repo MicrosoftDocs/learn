@@ -1,11 +1,8 @@
-
-
-
 The Visual Studio Code IDE provides tools for developers who are just starting out, but is also extensible and advanced enough for professional developers.
 
 In this exercise, you open Visual Studio Code and complete a quick tour of the IDE.
 
-## Open Visual Studio Code and examine the Get Started page
+## Open Visual Studio Code and examine the Welcome page
 
 1. Use the Windows Start menu to open Visual Studio Code.
 
@@ -17,13 +14,9 @@ In this exercise, you open Visual Studio Code and complete a quick tour of the I
 
     The first time that you open Visual Studio Code, the Welcome page displays some helpful walkthroughs, like the **Get Started with VS Code** content. You can examine this information at your leisure another time.
 
-1. Notice that **Show welcome page on startup** is selected (checked) at the bottom of the page.
+1. To close the Welcome page, select the Close button (shown as an **X** in the interface).
 
-    Leave the checkbox selected for now so that you see this information each time Visual Studio Code opens.
-
-1. To close the Welcome page, select **X**.
-
-    The Close button is the "X" located to the right of **Welcome**. If you hover the mouse pointer over the X, the word **Close** appears.
+    Each page that's open in the Editor includes a Close button (**X**) located to the right of page title. The *Welcome* page tab is shown in the upper-left portion of the Visual Studio Code window, below the Main Menu. If you hover the mouse pointer over the **X**, the word **Close** appears.
 
 ## Examine the Activity bar and Side bar
 
@@ -33,36 +26,29 @@ In this exercise, you open Visual Studio Code and complete a quick tour of the I
 
 1. Position your mouse pointer over the **Activity bar**, and then hover the mouse pointer over each of the icons to display labels.
 
-    You should see that the two Activity bar buttons at the bottom left are as follows (from top to bottom):
+    A label appears when you hover over the icons. You should see the Activity bar buttons shown in the following image:
 
-    - Accounts
-    - Manage
+    ![Screenshot showing Visual Studio Code Activity bar with labeled icons.](../media/visual-studio-code-activity-bar-icons.png)
 
-    ![Screenshot showing Visual Studio Code Activity bar.](../media/visual-studio-code-activity-bar.png)
-
-    And you should see that the five Activity bar buttons at the top left are as follows (from top to bottom):
-
-    The Explorer and Extensions buttons are your focus on for now.
+    From top to bottom, the Activity bar icons are: **Explorer**, **Search**, **Source Control**, **Run and Debug**, **Extensions**, **Accounts**, and **Manage**.
 
 1. On the **Activity bar**, select **Explorer**.
 
-    The Side bar should open and show contextual information.
+    The Side bar should open and display contextual information.
 
 1. Notice that the **Side bar** is now labeled **EXPLORER**.
 
-1. Take a moment to examine the information displayed in the **EXPLORER** Side bar.
+    The **EXPLORER** view is used to access/explore project folders and code files.
 
-1. Notice that **EXPLORER** is used to access/explore project folders and code files.
-
-    Since this is the first time that you've opened Visual Studio Code, you don't have a project folder open. As you begin working on code projects, Visual Studio Code remembers what you were working on and open your project files when it opens.
+    Visual Studio Code will remember your work history and open the most recent project files when it opens. Since this is the first time that you've opened Visual Studio Code, no project folder is opened.
 
 1. On the **Activity bar**, select **Extensions**.
 
 1. Notice that the **Side bar** is now labeled **EXTENSIONS**.
 
-1. Take a moment to examine the information displayed in the **EXTENSIONS** Side bar.
+1. Take a moment to examine the information displayed in the **EXTENSIONS** view.
 
-    Visual Studio Code extensions let you add languages, debuggers, and tools to your installation to support your development workflow. You'll be installing a C# extension later in this module.
+    Visual Studio Code extensions enable you to add coding languages, debuggers, and other tools to the environment in support of your development workflow. You'll be installing a C# extension later in this module.
 
 1. On the **Activity bar**, to close the **EXTENSIONS** Side bar, select **Extensions**.
 
@@ -90,7 +76,7 @@ In this exercise, you open Visual Studio Code and complete a quick tour of the I
 
 1. Notice that the Terminal panel includes a command prompt.
 
-    The Terminal panel can be used to run command line interface (CLI) commands. You'll be using CLI commands later in this module.
+    The Terminal panel can be used to run command line interface (CLI) commands. You'll be using .NET CLI commands later in this module.
 
 1. In the upper-right corner of the Terminal panel, select **X** (Close Panel).
 
@@ -100,20 +86,20 @@ In this exercise, you open Visual Studio Code and complete a quick tour of the I
 
 1. At the command palette prompt, type **extensions**
 
-    Notice that the list of commands is filtered based on your entry. 
+    Notice that the list of commands is filtered based on your entry.
 
-1. To update the filtered list of commands, change **extensions** to **help** 
+1. To update the filtered list of commands, change **extensions** to **help**
 
 1. From the list of command options, select **Help: Interactive Editor Playground**.
 
     The Editor Playground document that opens in the Editor includes a list of interactive activities.
- 
+
 1. From the bulleted list of interactive activities, select **Formatting**.
 
 1. Take a minute to read about the formatting options.
 
     You'll be using code formatting commands during hands-on activities as you learn more about C# programming.
- 
+
 1. Close the Editor Playground document.
 
 That completes your tour of the Visual Studio Code user interface. Once you begin coding, the training materials continue to point out ways that Visual Studio Code can help boost your productivity.

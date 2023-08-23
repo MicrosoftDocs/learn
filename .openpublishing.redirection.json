@@ -25944,6 +25944,71 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/2-understand-skewed-data-space-usage.md",
       "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/2-compare-costs-tco-calculator.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/3-compare-workload-costs-tco-calculator.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/4-purchase-azure-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/5-estimate-workload-cost-pricing-calculator.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/6-manage-minimize-total-cost.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/3-examine-visual-studio-code-user-interface.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/4-examine-visual-studio-code-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/4-exercise-explore-visual-studio-code-user-interface.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/5-exercise-explore-visual-studio-code-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/5-exercise-configure-visual-studio-code.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/6-exercise-configure-visual-studio-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/6-exercise-install-dotnet.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/3-exercise-install-dotnet",
+      "redirect_document_id": false
     }
   ]
 }
