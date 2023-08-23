@@ -44,7 +44,7 @@ There are two types of authentication available for service principals:
 - Certificate-based authentication, which relies on certificates that you upload to Azure AD.
 
 > [!NOTE]
-> If your application will be hosted by an Azure compute resource, such as an Azure Virtual Machine (VM), Azure App Service web app, or an AKS cluster, instead of using service principals, consider using managed identities for your application identity. This eliminates the need to manage passwords or certificates for authentication.
+> If your application will be hosted by an Azure compute resource, such as an Azure Virtual Machine (VM), Azure App Service web app, or an AKS cluster, rather than using service principals, consider using managed identities for your application identity. This eliminates the need to manage passwords or certificates for authentication.
 
 ## What are different types of application authentication scenarios?
 
