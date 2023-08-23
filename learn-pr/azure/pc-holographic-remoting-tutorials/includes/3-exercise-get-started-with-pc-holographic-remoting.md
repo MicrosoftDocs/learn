@@ -38,22 +38,11 @@ Select import.
 
 Select close.
 
-2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** folder. While holding down the CTRL button, select the following six prefabs.
-
-    * ButtonParent
-    * ClippingObjects
-    * HandSpatialMapButton
-    * Instructions
-    * ModelParent
-    * Platform
-
-    :::image type="content" source="../media/add-prefab-1.png" alt-text="Screenshot of Adding prefabs 1." lightbox="../media/add-prefab-1.png":::
-
-3. Drag these models from the prefabs folder into the **Hierarchy** window.
+2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** folder. Select the 'SceneContent' prefab and drag it to the bottom of the **Hierarchy** window.
 
     :::image type="content" source="../media/add-prefab-2.png" alt-text="Screenshot of Adding prefabs 2." lightbox="../media/add-prefab-2.png":::
 
-    To focus on the objects in the scene, you can double-click the ModelParent object and then zoom in:
+    To view the scene from the camera's point of view, right-click the Main Camera object in the **Hierarchy** window, and select 'Align view to selected'.
 
     :::image type="content" source="../media/focus-objects-scene.png" alt-text="Screenshot of Focus objects on scene." lightbox="../media/focus-objects-scene.png":::
 
@@ -64,9 +53,9 @@ Select close.
 
 In this section, you'll add scripts to the scene and create button events that demonstrate the fundamentals of model switching and clipping functionality.
 
-### Configure the interactable (script) component
+### Configure the Pressable Button (script) component
 
-1. In the Hierarchy window, expand the **ButtonParent** object and select the next button. In the Inspector window, locate the **Pressable Button** component and select the plus sign icon ("+") under **OnClick ()** event.
+1. In the Hierarchy window, expand the **SceneContent** and **ButtonParent** objects and select the next button. In the Inspector window, locate the **Pressable Button** component and select the plus sign icon ("+") under **OnClick ()** event.
 
     :::image type="content" source="../media/add-interactable.png" alt-text="Screenshot of expanding the Interactable script." lightbox="../media/add-interactable.png":::
 
