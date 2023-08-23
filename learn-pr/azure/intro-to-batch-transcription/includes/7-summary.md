@@ -2,14 +2,14 @@ In this module, you learned about Batch Transcription, a cognitive service avail
 
 Now that you've reviewed this module, you should be able to:
 
-* Assess the benefits of Batch Transcription.
-* Transcribe a batch of audio files.
-* Create a specialized customer service model to transcribe call center recordings.
+- Assess the benefits of Batch Transcription.
+- Transcribe a batch of audio files.
+- Create a specialized customer service model to transcribe call center recordings.
 
 ## Use these resources to discover more
 
-[!include[](../../../includes/open-link-in-new-tab-note.md)]
+[!INCLUDE[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Batch Transcription documentation](/azure/cognitive-services/speech-service/batch-transcription)
-* [Custom speech documentation](/azure/cognitive-services/speech-service/custom-speech-overview)
-* [Azure Speech Studio portal](https://speech.microsoft.com/portal?projecttype=customspeech)
+- [Batch Transcription documentation](/azure/cognitive-services/speech-service/batch-transcription)
+- [Custom speech documentation](/azure/cognitive-services/speech-service/custom-speech-overview)
+- [Azure Speech Studio portal](https://speech.microsoft.com/portal?projecttype=customspeech)
