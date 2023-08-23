@@ -20,7 +20,7 @@ When you're finished, close the **Project Settings** window and continue on with
 
 1. Verify that AR Foundation version 5.0.3 or latest version is installed.
 
-    :::image type="content" source="../media/006-install-package.png" alt-text="Screenshot of selections for verifying the A R Foundation version for Package Manager." :::
+    :::image type="content" source="../media/ar-foundation-package-manager.png" alt-text="Screenshot of selections for verifying the A R Foundation version for Package Manager." :::
 
 ## Import the tutorial assets
 
