@@ -9,7 +9,7 @@ In this challenge exercise, you need to define the elements of the minigame, cre
 
 ### Game rules
 
-The winner of the game is determined by a simple set of rules:
+The winner of the game is determined based in three simple rules:
 
 - Rock beats scissors (breaking it).
 - Scissors beat paper (cutting it).
@@ -21,7 +21,7 @@ The console is used to interact with the player. The player can choose one of th
 
 ### Definitions for the game
 
-- Import the random module to use the `choice` function, which play the role of our opponent.
+- Import the random module to use the `choice` function, which plays the role of our opponent.
 - Create a list called `options` with the game options: `rock`, `paper` and `scissors`
 - Create the variables:
     - `rounds_played` to store the number of rounds
