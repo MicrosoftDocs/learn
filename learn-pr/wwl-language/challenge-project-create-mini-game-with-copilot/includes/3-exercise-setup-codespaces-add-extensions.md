@@ -10,7 +10,7 @@ Whenever you work in a codespace, you are using a dev container on a virtual mac
 
 You can configure the dev container for a repository so that codespaces created for that repository give you a tailored development environment, complete with all the tools and runtimes you need to work on a specific project.
 
-The diagram below, taken directly from the official [Visual Studio Code docs](https://code.visualstudio.com/docs/remote/containers), illustrates this:
+The diagram taken directly from the official [Visual Studio Code docs](https://code.visualstudio.com/docs/remote/containers), illustrates this.
 
 ![Dev Container Diagram](./media/dev-container.png)
 
@@ -32,7 +32,7 @@ By adding the GitHub Copilot extension to this file, you're ensuring that it is 
     # write 'hello world' to the console
     ```
 
-3. GitHub Copilot should complete the code for you. The result should be similar to the following:
+3. GitHub Copilot should complete the code for you. The result should be similar to the following message:
 
     ```python
     # write 'hello world' to the console
