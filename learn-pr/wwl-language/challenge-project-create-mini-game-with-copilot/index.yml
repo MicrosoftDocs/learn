@@ -1,25 +1,25 @@
 ### YamlMime:Module
-uid: learn.wwl.challenge-project-create-mini-game
+uid: learn.wwl.challenge-project-create-mini-game-with-copilot
 metadata:
-  title: Challenge project - Create a mini-game
-  description: "Use methods with parameters and return values to develop the features of a console mini-game."
+  title: Challenge project - Build a minigame console app with GitHub Copilot
+  description: "Demonstrate your ability to analyze, create, and use different methods to develop a console minigame in Python with GitHub Codespaces and GitHub Copilot."
   ms.date: 08/22/2023
   author: wwlpublish
   ms.author: cyzanon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Challenge project - Create a mini-game
-summary: Demonstrate your ability to create and use different methods to develop features for a console mini-game.
+title: Challenge project - Build a minigame console app with GitHub Copilot
+summary: Demonstrate your ability to analyze, create, and use different methods to develop a console minigame in Python with GitHub Codespaces and GitHub Copilot.
 abstract: |
-  - Use Visual Studio Code to develop a C# console application that uses methods to implement logical workflows.
-  - Understand existing code and make informed changes to design.
-  - Create return values as well as required and optional parameters in methods.
+  - Experience GitHub Codespaces as a development environment.
+  - Develop input and output routines in a Python console application.
+  - Use GitHub Copilot as an assistant.
 prerequisites: |
-  - Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
-  - Experience using C# data types including `int`, `string`, and arrays
-  - Experience using `switch` statements, if-else statements, and `for` loops
-  - Experience using the `Random` class to generate a random number.
-  - Basic understanding of C# methods
+  - Apply iteration statements using data inputs.
+  - Process data.
+  - Format data output.
+  - Basic knowledge of methods in Python.
+  - A GitHub account.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
@@ -32,12 +32,11 @@ products:
 - dotnet
 - vs-code
 units:
-- learn.wwl.challenge-project-create-mini-game.introduction
-- learn.wwl.challenge-project-create-mini-game.prepare
-- learn.wwl.challenge-project-create-mini-game.exercise-add-code-to-end-game
-- learn.wwl.challenge-project-create-mini-game.exercise-make-player-consume-food
-- learn.wwl.challenge-project-create-mini-game.exercise-add-code-modify-movement
-- learn.wwl.challenge-project-create-mini-game.knowledge-check
-- learn.wwl.challenge-project-create-mini-game.summary
+- learn.wwl.challenge-project-create-mini-game-with-copilot.introduction
+- learn.wwl.challenge-project-create-mini-game-with-copilot.prepare
+- learn.wwl.challenge-project-create-mini-game-with-copilot.exercise-setup-codespaces-add-extensions
+- learn.wwl.challenge-project-create-mini-game-with-copilot.exercise-create-the-game-logic
+- learn.wwl.challenge-project-create-mini-game-with-copilot.knowledge-check
+- learn.wwl.challenge-project-create-mini-game-with-copilot.summary
 badge:
-  uid: learn.wwl.challenge-project-create-mini-game.badge
+  uid: learn.wwl.challenge-project-create-mini-game-with-copilot.badge
