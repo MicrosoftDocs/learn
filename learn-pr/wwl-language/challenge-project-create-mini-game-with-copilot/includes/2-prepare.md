@@ -10,7 +10,7 @@ You use GitHub Codespaces to develop the minigame application. GitHub Codespaces
 
 2. Enable the [GitHub Codespaces](https://docs.github.com/en/codespaces) service in your GitHub account. Codespaces offers 60 hours of free use per month.
 
-3. You need to make a copy of the template repository in your GitHub account. To do this, you'll need to access the [repository](https://github.com/microsoft/vscode-remote-try-python) and `Fork`. At the end of the repository fork, you have a copy of the template repository in your GitHub account. You use this repository to develop the minigame application.
+3. You need to make a copy of the [template repository](https://github.com/microsoft/vscode-remote-try-python) in your GitHub account using the `Fork` function. At the end of the repository fork, you have a copy of the template repository in your GitHub account. You use this repository to develop the minigame application.
 
 4. On the repository page that was created, click the `Code` button and, in the Codespaces tab, click `Create codespace on main`. In a few moments, Codespaces  create a development environment for you.
 
