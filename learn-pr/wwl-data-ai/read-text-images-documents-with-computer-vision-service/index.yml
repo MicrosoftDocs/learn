@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: computer-vision
 title: Read Text in Images and Documents with the Computer Vision Service
 summary: Azure's Computer Vision service uses algorithms to process images and return information. This module teaches you how to use the Read API for optical character recognition (OCR).
 abstract: |
@@ -28,8 +29,8 @@ roles:
 - developer
 products:
 - azure
-- azure-cognitive-services
-- azure-form-recognizer
+- ai-services
+- document-intelligence
 subjects:
 - classification-analysis
 units:

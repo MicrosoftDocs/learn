@@ -1,5 +1,6 @@
 
 
+
 Integrating SAP Fiori with Azure AD gives you the following benefits:
 
 - You can use Azure AD to control who has access to SAP Fiori.
@@ -36,7 +37,7 @@ For single sign-on to work, you must establish a linked relationship between an 
      - **/sap/bc/webdynpro/sap/saml2**
      - **/sap/bc/webdynpro/sap/sec\_diag\_tool** (This is only to enable / disable trace)
 4. Go to transaction code SAML2 in Business Client for SAP system \[T01/122\]. The configuration UI opens in a new browser window. Enter your username and password, and then select **Log on**.
-5. In the **Provider Name** box, replace **T01122** with **<http://T01122>**, and then select **Save**.
+5. In the **Provider Name** box, replace **T01122** with ``` <http://T01122> ```, and then select **Save**.
 
     > [!NOTE]
     > By default, the provider name is in the format **\_sid-client\_**. Azure AD expects the name in the format **protocol://name**. We recommend that you maintain the provider name as **https:// \_sid-client\_** so you can configure multiple SAP Fiori ABAP engines in Azure AD.
@@ -82,6 +83,7 @@ For single sign-on to work, you must establish a linked relationship between an 
 1. In the Azure portal, select **Enterprise Applications**, select **All applications**, then select **SAP Fiori**.
 2. In the applications list, select **SAP Fiori**.
 3. To verify the outcome, after the identity provider Azure AD is activated in SAP Fiori, try to access one of the following URLs to test single sign-on as an assigned user (you shouldn't be prompted for a username and password):
-
+```
      - **<https://sapurl/sap/bc/bsp/sap/it00/default.htm>**
      - **<https://sapurl/sap/bc/bsp/sap/it00/default.htm>**
+```

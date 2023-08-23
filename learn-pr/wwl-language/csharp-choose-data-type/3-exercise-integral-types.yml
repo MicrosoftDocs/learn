@@ -4,11 +4,10 @@ title: Exercise - Discover integral types
 metadata:
   title: Exercise - Discover integral types
   description: "Exercise - Discover integral types"
-  ms.date: 02/25/2023
+  ms.date: 08/15/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-integral-types.md)]
@@ -19,10 +18,10 @@ quiz:
     choices:
     - content: "sbyte"
       isCorrect: false
-      explanation: "That’s incorrect. ushort represents values 0 to 65535."
+      explanation: "That’s incorrect. The sbyte value type represents integers with values ranging from -128 to 127."
     - content: "ushort"
       isCorrect: true
-      explanation: "Correct. ushort represents values 0 to 65535."
-    - content: "ubyte"
+      explanation: "Correct, ushort represents values 0 to 65535."
+    - content: "byte"
       isCorrect: false
-      explanation: "Incorrect. ushort represents values 0 to 65535."
+      explanation: "Incorrect. The unsigned byte, referred to as \"byte\", only has values 0 to 255."

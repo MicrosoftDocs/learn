@@ -9,7 +9,10 @@ metadata:
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
+    - devx-track-python
 durationInMinutes: 02
 content: |
   [!include[](includes/1-introduction.md)]

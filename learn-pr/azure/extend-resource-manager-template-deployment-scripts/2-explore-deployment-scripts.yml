@@ -10,7 +10,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: arm-template-language-azure-shell-interface
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-arm-template
+    - devx-track-bicep
   ms.contributors: stmuraws-05172021
 durationInMinutes: 5
 content: |

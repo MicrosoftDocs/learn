@@ -5,7 +5,7 @@ In this module, you’ve learned about some of the essential requirements for bu
 - The importance of HTML5 and ARIA for web development.
 - How to design accessible apps and websites for people who use assistive technology.
 - Critical concepts for web and app development, such as page structure, color contrast, data tables, keyboard navigation, links, and images.
-- Additional resources for accessible web and app design.
+- More resources for accessible web and app design.
 
 ## Learn more
 

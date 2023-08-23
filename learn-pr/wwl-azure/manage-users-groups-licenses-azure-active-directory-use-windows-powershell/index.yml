@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
 title: Manage users, groups, and licenses in Azure AD by using Windows PowerShell
 summary: This module covers how to give access to the services in Microsoft 365, so that you can create user accounts and then assign licenses that provide access to the services.
 abstract: |

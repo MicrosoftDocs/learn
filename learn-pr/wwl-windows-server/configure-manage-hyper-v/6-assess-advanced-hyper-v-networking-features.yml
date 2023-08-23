@@ -4,12 +4,12 @@ title: Assess advanced Hyper-V networking features
 metadata:
   title: Assess advanced Hyper-V networking features
   description: "Assess advanced Hyper-V networking features"
-  ms.date: 02/26/2021
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/6-assess-advanced-hyper-v-networking-features.md)]

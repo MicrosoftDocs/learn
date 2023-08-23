@@ -4,13 +4,11 @@ title: Introduction to AI
 metadata:
   title: Introduction to AI
   description: "Introduction to AI"
-  ms.date: 04/03/2023
+  ms.date: 08/14/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

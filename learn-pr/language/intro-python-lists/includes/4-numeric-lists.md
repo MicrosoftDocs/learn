@@ -28,14 +28,16 @@ On Earth, a double-decker bus weighs 12,650 kilograms (kg), which is 12.65 tonne
 In the following example, you can work out the weight of a double-decker bus on different planets by getting the value from the list:
 
 ```python
+gravity_on_planets = [0.378, 0.907, 1, 0.377, 2.36, 0.916, 0.889, 1.12]
 bus_weight = 12650 # in kilograms, on Earth
 
 print("On Earth, a double-decker bus weighs", bus_weight, "kg")
 print("On Mercury, a double-decker bus weighs", bus_weight * gravity_on_planets[0], "kg")
+```
 
-# Output
-# On Earth, a double-decker bus weighs 12650 kg
-# On Mercury, a double-decker bus weighs 4781.7 kg
+```Output
+On Earth, a double-decker bus weighs 12650 kg
+On Mercury, a double-decker bus weighs 4781.7 kg
 ```
 
 ## Use `min()` and `max()` with lists
@@ -45,14 +47,16 @@ Python has built-in functions for calculating the biggest and smallest numbers i
 The following code calculates the minimum and maximum weights in the solar system by using those functions:
 
 ```python
+gravity_on_planets = [0.378, 0.907, 1, 0.377, 2.36, 0.916, 0.889, 1.12]
 bus_weight = 12650 # in kilograms, on Earth
 
 print("On Earth, a double-decker bus weighs", bus_weight, "kg")
 print("The lightest a bus would be in the solar system is", bus_weight * min(gravity_on_planets), "kg")
 print("The heaviest a bus would be in the solar system is", bus_weight * max(gravity_on_planets), "kg")
+```
 
-# Output
-# On Earth, a double-decker bus weighs 12650 kg
-# The lightest a bus would be in the solar system is 4769.05 kg
-# The heaviest a bus would be in the solar system is 29854 kg
+```Output
+On Earth, a double-decker bus weighs 12650 kg
+The lightest a bus would be in the solar system is 4769.05 kg
+The heaviest a bus would be in the solar system is 29854 kg
 ```

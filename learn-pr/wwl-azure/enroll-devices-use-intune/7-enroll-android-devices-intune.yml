@@ -4,11 +4,10 @@ title: Enroll Android devices in Intune
 metadata:
   title: Enroll Android devices in Intune
   description: "Enroll Android devices in Intune"
-  ms.date: 03/14/2023
+  ms.date: 07/24/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/7-enroll-android-devices-intune.md)]

@@ -4,11 +4,10 @@ title: Exercise - Format the decimal output
 metadata:
   title: Exercise - Format the decimal output
   description: "Exercise - Format the decimal output"
-  ms.date: 04/13/2023
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-format-decimal-output.md)]

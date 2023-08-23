@@ -1,4 +1,5 @@
 
+
 SAP instances running in Azure need to be accessible from SAProuter as well. A SAProuter enables the TCP/IP communication between participating systems if there is no direct IP connection. This provides the advantage that no end-to-end connection between the communication partners is necessary on the network level. The SAProuter is listening on port 3299 by default. To connect SAP instances through a SAProuter, you need to give the SAProuter string and host name.
 
 SAProuter should be configured for remote SAP support. If you have a site-to-site connection between your on-premises locations and Azure, and you're running SAP components, then it's likely that are already running SAProuter. In this case, implement the following steps for SAP remote support:

@@ -4,13 +4,11 @@ title: Design for Azure Files
 metadata:
   title: Design for Azure Files
   description: "Design for Azure Files"
-  ms.date: 03/13/2023
+  ms.date: 07/21/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 5
 content: |
   [!include[](includes/6-design-for-azure-files.md)]

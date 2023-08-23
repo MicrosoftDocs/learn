@@ -8,6 +8,9 @@ metadata:
   author: cherylmc
   ms.author: cherylmc
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

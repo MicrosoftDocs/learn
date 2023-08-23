@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.embrace-responsible-ai-principles-practices.prepare-implications-responsible-ai
+title: Prepare for the implications of responsible AI
+metadata:
+  title: Prepare for the implications of responsible AI
+  description: "Prepare for the implications of responsible AI"
+  ms.date: 06/29/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-prepare-implications-responsible-ai.md)]

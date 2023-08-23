@@ -5,9 +5,8 @@ metadata:
   description: In this module, you'll learn about running your Java applications on Azure. You'll also choose the best service option among virtual machines (VMs), Azure App Service, serverless functions, Azure Kubernetes Service (AKS), and Azure Spring Apps.
   author: judubois
   ms.author: judubois
-  ms.date: 11/16/2020
+  ms.date: 05/02/2023
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03032021
 title: Choose the right Azure service for deploying your Java application

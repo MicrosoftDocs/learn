@@ -1,10 +1,10 @@
 Like most application frameworks, you can run your MEAN stack application in many different environments. You can run your application on a physical computer in your server room, on a virtual machine, or in containers.
 
-Here you'll run your application on a VM running on Azure. MEAN supports many different operating systems. For learning purposes, here you'll use Ubuntu Linux.
+Here you'll run your application on a VM running on Azure. MEAN supports many different operating systems. For learning purposes, you'll use Ubuntu Linux here.
 
 ## Create an Ubuntu Linux VM
 
-Normally, you create a _resource group_ before you create other resources on Azure. A resource group is a container that holds the resources that are related for an Azure solution. For this exercise, the Azure sandbox provides a resource group for you. However, when working in your own Azure subscription, you would run the following command to create a resource group in a location near you.
+Normally, you create a _resource group_ before you create other resources on Azure. A resource group is a container that holds the resources that are related for an Azure solution. For this exercise, the Azure sandbox provides a resource group for you. However, when working in your own Azure subscription, you'd run the following command to create a resource group in a location near you.
 
 > [!NOTE]
 > The following `az group create` code sample is for you to run with your own account, not this sandbox!
@@ -15,7 +15,7 @@ az group create \
   --location <resource-group-location>
 ```
 
-1. From Cloud Shell, run the `az vm create` command to create an Ubuntu VM.
+1. From Cloud Shell, run the `az vm create` command to create an Ubuntu VM:
 
     ```azurecli
     az vm create \
@@ -26,7 +26,7 @@ az group create \
       --generate-ssh-keys
     ```
 
-    The command takes about two minutes to complete. When the command finishes, you'll see output similar to this.
+    The command takes about two minutes to complete. When the command finishes, you'll see output similar to this:
 
     ```json
     (Output Example)
@@ -75,7 +75,7 @@ az group create \
     ssh azureuser@$ipaddress
     ```
 
-    When prompted, enter *yes* to save the VM's identity locally so future connections are trusted.
+    When prompted, enter **yes** to save the VM's identity locally so future connections are trusted.
 
     You'll use the SSH connection to configure software on the virtual machine in the next parts.
 

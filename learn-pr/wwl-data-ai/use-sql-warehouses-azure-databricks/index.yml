@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-databricks
 title: Use SQL Warehouses in Azure Databricks
 summary: Azure Databricks provides SQL Warehouses that enable data analysts to work with data using familiar relational SQL queries.
 abstract: |

@@ -1,6 +1,7 @@
 
 
 
+
 C# developers are responsible for code debugging and exception handling in their applications. The C# language supports exception handling patters such as the `try-catch` and `try-catch-finally` patterns. Visual Studio Code uses extensions to support code debugging. You can find debugger extensions in the Visual Studio Code Marketplace.
 
 Suppose you're part of a team that's developing retail-support applications. The team is working on a cash register application that manages retail transactions. You're developing the `MakeChange` method that manages the money till and calculates the amount of change returned to the customer. The `MakeChange` method tracks the number of bills of each denomination (1, 5, 10, and 20) that are available in the till. The team is planning to add exception handling to the application during the code verification process.

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: hdinsight
 title: Choose the correct HDInsight Configuration to build open source analytics solutions
 summary: In this module, you will learn the different configurations for ensuring optimal use of HDInsight from both a performance and cost perspective.
 abstract: |

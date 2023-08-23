@@ -73,7 +73,7 @@ Traffic Manager uses DNS to direct clients to specific service endpoints based o
 
 ### Traffic Manager example deployment
 
-Contoso Corp have developed a new partner portal. The URL for this portal is https://partners.contoso.com/login.aspx.
+Contoso Corp have developed a new partner portal. The URL for this portal is `https://partners.contoso.com/login.aspx`.
 
 The application is hosted in three regions of Azure. To improve availability and maximize global performance, they use Traffic Manager to distribute client traffic to the closest available endpoint.
 
@@ -381,7 +381,7 @@ You then enter the required information on the **Add endpoint** page.
 :::row-end:::
 :::row:::
   :::column:::
-    Fully-qualified domain name (FQDN) or IP **(for External endpoints only)**
+    fully qualified domain name (FQDN) or IP **(for External endpoints only)**
   :::column-end:::
   :::column:::
     Specify the FQDN or IP address for the external endpoint.

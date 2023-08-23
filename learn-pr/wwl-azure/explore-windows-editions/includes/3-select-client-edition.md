@@ -1,5 +1,3 @@
-
-
 Windows 11 and previous editions run on several devices or form factors. However, not all editions of Windows can run on all device types. This discussion will help you decide which form factor and edition of Windows to choose in different scenarios.
 
 ### Form factors
@@ -30,10 +28,10 @@ Whether you use Windows 10 or 11, install or upgrade to the 64-bit version of Wi
 
  -  **Scenario 1**. Contoso Pharmaceuticals is considering purchasing new computers to control and supervise its production lines. The production lines require special hardware with sensors in the computers that employees will use to perform the supervision. The production line software is sensitive to significant changes in the operating system. Which edition of Windows would you recommend for purchase by Contoso Pharmaceuticals to supervise its production lines?
  -  **Scenario 2**. Samuel is an independent contractor. He often travels with his laptop, which contains sensitive customer financial data. He’s concerned about the impact on his business if his laptop is lost or stolen. Which edition of Windows would be best suited to protect his data?
- -  **Scenario 3**. Contoso Pharmaceuticals is trying to secure its information technology (IT) infrastructure by limiting the apps that users can run. Some employees install unauthorized apps on their devices. Contoso wants to restrict users to apps on the company’s list of approved apps. Which edition of Windows would you recommend that Contoso Pharmaceuticals use?
+ -  **Scenario 3**. Contoso Pharmaceuticals is expanding its remote workforce and wants to ensure that remote connections to the company's network are secure and managed efficiently. They are looking for advanced security features and management tools to handle remote desktop services. Which edition of Windows would you recommend for Contoso Pharmaceuticals?
 
 #### Scenario Answers
 
  -  ***Scenario 1.** Enterprise LTSC - As it doesn't receive feature updates, this minimizes changes to the OS that may affect the sensitive application.*
  -  ***Scenario 2.** Pro - While Samuael can use any edition of Windows to take advantage of features such as OneDrive to minimize losing data, or Windows Hello for authentication, the extra benefits of Pro like BitLocker can protect his data from being accessed in the event his device is stolen.*
- -  ***Scenario 3.** Enterprise - With Enterprise edition, AppLocker can be used to limit users to run only authorized apps.*
+ -  ***Scenario 3.** Enterprise - The Windows Enterprise edition offers advanced security features such as DirectAccess, Windows Defender Credential Guard, and Windows Defender Application Guard. Additionally, it provides comprehensive management tools for remote desktop services, making it ideal for businesses with a growing remote workforce.*

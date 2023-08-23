@@ -14,4 +14,4 @@ You also learned how you can improve your recognition results by providing a lis
 
 - [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support)
 
-- [Get started with speech-to-text](/azure/cognitive-services/speech-service/get-started-speech-to-text)
+- [Get started with speech to text](/azure/cognitive-services/speech-service/get-started-speech-to-text)

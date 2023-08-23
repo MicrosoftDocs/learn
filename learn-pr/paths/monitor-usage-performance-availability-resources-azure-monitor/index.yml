@@ -1,17 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.monitor-usage-performance-availability-resources-azure-monitor
 metadata:
-  title: Monitor the usage, performance, and availability of resources with Azure Monitor
+  title: Azure Monitor fundamentals
   description: Learn how to monitor the usage, performance, and availability of resources using Azure Monitor.
   brand: azure
   ms.date: 06/18/2021
-  author: cwatson-cat
-  ms.author: cwatson
+  author: guywi-ms
+  ms.author: guywild
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Monitor the usage, performance, and availability of resources with Azure Monitor
+title: Azure Monitor fundamentals
 summary:  |
-  Learn how to monitor the usage, performance, and availability of resources using Azure Monitor
+  Learn how to monitor the usage, performance, and availability of resources using Azure Monitor.
 prerequisites: |
   - Basic knowledge of Azure services
   - Basic knowledge of monitoring concepts, such as using metrics, logging, and alerting
@@ -29,10 +29,10 @@ subjects:
 modules:
 - learn.azure.intro-to-azure-monitor
 - learn.design-monitoring-strategy-on-azure
-- learn.azure.monitor-azure-vm-using-diagnostic-data
-- learn.capture-page-load-times-application-insights
-- learn.monitor-vm-performance-using-azure-monitor-for-vms
+- learn.wwl.monitor-app-performance
 - learn.analyze-infrastructure-with-azure-monitor-logs
+- learn.visualize-data-workbooks
 - learn.incident-response-with-alerting-on-azure
+
 trophy:
   uid: learn.monitor-resources-with-azure-monitor.trophy

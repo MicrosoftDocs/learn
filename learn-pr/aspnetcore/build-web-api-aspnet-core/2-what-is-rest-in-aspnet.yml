@@ -7,6 +7,8 @@ metadata:
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: aspnet-core
 title: REST in ASP.NET Core
 durationInMinutes: 3

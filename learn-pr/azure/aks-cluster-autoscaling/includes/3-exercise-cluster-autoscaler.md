@@ -23,7 +23,7 @@ Also, to enable the cluster autoscaler on a new cluster, just add `--enable-clus
 > [!NOTE]
 > It's important to notice that the autoscaler will not enforce the configurations once set. For example, if your node count is 3 and the minimum amount set is 5, the autoscaler won't immediately scale the cluster to 5 nodes.
 
-After a few minutes you'll see the number of nodes in your cluster grow, and the number of pods in the **Pending** state decrease as more resources get allocated to them.
+After a few minutes the number of nodes in your cluster grows, and the number of pods in the **Pending** state decreases as more resources get allocated to them.
 
 ```
 NAME                                      READY   STATUS    RESTARTS   AGE
@@ -45,7 +45,7 @@ contoso-website-wb45271o4-30u0y           0/1     Pending   0          5m12s
 
 ## Tweak the cluster autoscaler profiles
 
-It's possible to fine-tune the autoscaler profiles by setting a series of flags in its configuration. All the available flags can be found in [this Microsoft documentation](/azure/aks/cluster-autoscaler#using-the-autoscaler-profile). For now, you'll only fine-tune the autoscaler to be faster when scaling and polling the API, and decreasing the time for it to decrease the node count.
+It's possible to fine-tune the autoscaler profiles by setting a series of flags in its configuration. All the available flags can be found in [this Microsoft documentation](/azure/aks/cluster-autoscaler#using-the-autoscaler-profile). For now, let's fine-tune the autoscaler to be faster when scaling and polling the API, and decreasing the time for it to decrease the node count.
 
 ```azurecli-interactive
 az aks update \
@@ -96,4 +96,4 @@ Cluster-wide:
                LastTransitionTime: 2021-03-29 23:27:27.349763602 +0000 UTC m=+1718.924760896
 ```
 
-If you get the list of nodes, with `kubectl get nodes`, you'll see there's only one node available.
+If you get the list of nodes, with `kubectl get nodes`, you see there's only one node available.

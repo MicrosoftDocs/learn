@@ -8,7 +8,7 @@ metadata:
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cyclecloud
 title: Customize high-performance computing clusters deployed with Azure CycleCloud
 summary: "Azure CycleCloud templates offer a declarative provisioning model that helps you minimize administrative overhead associated with deploying and maintaining custom HCP environments in Azure."
 abstract: |

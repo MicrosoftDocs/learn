@@ -1,6 +1,6 @@
 The *fs* module in Node.js lets you create new files and directories programmatically.
 
-So far, you've created a robust command-line application in Node.js that can read any folder structure to find files with a .json extension. You need to read those files to summarize the data in them. and then write the totals to a new file in a new directory called *salesTotals*.
+So far, you've created a robust command-line application in Node.js that can read any folder structure to find files with a .json extension. You need to read those files to summarize the data in them and then write the totals to a new file in a new directory called *salesTotals*.
 
 In this exercise, you create the *salesTotals* directory and *totals.txt* file where we can eventually write the sales totals.
 

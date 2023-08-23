@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: A knowledge check for the Design cloud solutions for the public sector module.
   ms.date: 02/08/2021
-  author: Adriamen
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "The multi-tenant cloud allows customers to access each other’s applications."
       isCorrect: false
-      explanation: "Incorrect: Azure uses logical isolation to segregate each customer's applications and data from those of others. This approach provides the scale and economic benefits of multi-tenant cloud services while preventing customers from accessing one another's data or applications."
+      explanation: "Incorrect: Azure uses logical isolation to segregate each customer's applications and data. This approach provides the scale and economic benefits of multi-tenant cloud services while preventing customers from accessing one another's data or applications."
     - content: "Hyperscale public cloud also offers many features that incorporate the latest cloud innovations."
       isCorrect: true
       explanation: "Correct: Features, such as artificial intelligence, machine learning, IoT services, and intelligent edge, help government customers increase efficiency and unlock insights into their operations and performance."

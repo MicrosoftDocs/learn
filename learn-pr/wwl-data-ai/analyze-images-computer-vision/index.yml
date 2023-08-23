@@ -1,17 +1,18 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-images-computer-vision
 metadata:
-  title: Analyze images with the Computer Vision service
-  description: "Analyze images with the Computer Vision service"
-  ms.date: 01/25/2023
+  title: Analyze images with Azure AI Vision
+  description: "Analyze images with the Computer Vision service."
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Analyze images with the Computer Vision service
-summary: The Computer Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
+  ms.service: artificial-intelligence
+  ms.subservice: vision
+title: Analyze images with Azure AI Vision
+summary: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
 abstract: |
-  Learn how to use the Computer Vision cognitive service to analyze images.
+  Learn how to use the Azure AI Vision service to analyze images.
 prerequisites: |
   Ability to navigate the Azure portal
 iconUrl: /training/achievements/analyze-images-computer-vision.svg
@@ -24,7 +25,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - classification-analysis
 units:

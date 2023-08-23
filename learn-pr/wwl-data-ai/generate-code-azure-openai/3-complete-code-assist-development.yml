@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-code-azure-openai.complete-code-assist-development
+title: Complete code and assist the development process
+metadata:
+  zone_pivot_groups: dev-lang-csharp-python
+  title: Complete code and assist the development process
+  description: "Learn how to use the Azure OpenAI Service to complete code and assist the development process. This includes writing unit tests and completing partial code."
+  ms.date: 6/20/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+  ms.custom: devx-track-python
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-complete-code-assist-development.md)]

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 title: Deploy and manage DHCP
 summary: Learn to implement automatic IP configuration with Dynamic Host Configuration Protocol (DHCP) in Windows Server 2019.
 abstract: |

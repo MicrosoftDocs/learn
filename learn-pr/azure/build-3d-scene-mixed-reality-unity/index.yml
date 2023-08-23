@@ -7,7 +7,6 @@ metadata:
   author: JBrentJ
   ms.author: jejacks
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Build a 3D Scene for mixed reality in Unity 
 summary: Create a 3D Scene in Unity using the Microsoft Maps SDK or static terrain. Your workflow will include designing a scene, building a windfarm, and deploying to a mixed reality device.
 abstract: |
@@ -24,7 +23,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 - azure-digital-twins
 - azure-iot
 - azure-iot-hub

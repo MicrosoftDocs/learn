@@ -3,11 +3,10 @@ uid: learn.intro-to-pybryt
 metadata:
   title: Introduction to PyBryt for Classroom Auto-assessment
   description: Learn how to use PyBryt to create an assignment with auto-assessment.
-  ms.date: 10/27/2021
+  ms.date: 05/06/2023
   author: chrispyles
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to PyBryt for Classroom Auto-assessment
 summary: Learn how to use PyBryt, an open-source auto-assessment tool, to create assignments with targeted feedback and generalizable grading.
 abstract: |

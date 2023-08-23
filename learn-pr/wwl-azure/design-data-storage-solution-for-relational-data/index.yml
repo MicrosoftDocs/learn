@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Design a data storage solution for relational data
 summary: Azure Architects design and recommend relational data storage solutions.
 abstract: |

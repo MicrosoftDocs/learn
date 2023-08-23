@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-db-mi
 title: Automate deployment of database resources
 summary: Explore multiple deployment models available on Azure. Use Azure Resource Manager (ARM) templates and Bicep files for deploying Azure SQL resources. Understand how to use PowerShell and Azure CLI for automation purposes.
 abstract: |

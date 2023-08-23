@@ -3,10 +3,12 @@ uid: learn.control-network-traffic-flow-with-routes.5-exercise-create-nva-vm
 metadata:
   title: Exercise - Create an NVA and virtual machines
   description: Exercise - Create an NVA and virtual machines
-  ms.date: 03/02/2022
-  author: KumudD
-  ms.author: kumud
+  ms.date: 08/17/2023
+  author: mbender-ms
+  ms.author: mbender
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Exercise - Create an NVA and virtual machines
 durationInMinutes: 10

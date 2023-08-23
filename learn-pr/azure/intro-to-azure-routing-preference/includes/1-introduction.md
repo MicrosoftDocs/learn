@@ -2,7 +2,7 @@ Routing preference in Azure controls how traffic flows from Azure to the public 
 
 ## Example scenario
 
-You're a network engineer for a multi-national car manufacturer. The factory application developers have deployed an application in the Central US Azure region. This application is used by one of the company's factories in Singapore. Recently, the cost of traffic from the Singapore factory to the Central US region across the Microsoft backbone network has increased. You've been tasked with creating a plan to alleviate some of the cost of the network traffic from Singapore to the application in Azure.
+You're a network engineer for a multinational car manufacturer. The factory application developers have deployed an application in the Central US Azure region. This application is used by one of the company's factories in Singapore. Recently, the cost of traffic from the Singapore factory to the Central US region across the Microsoft backbone network has increased. You've been tasked with creating a plan to alleviate some of the cost of the network traffic from Singapore to the application in Azure.
 
 After completing this module, you'll know more about routing preference and how determining the routing will affect the data transfer costs in your Azure subscription.
 

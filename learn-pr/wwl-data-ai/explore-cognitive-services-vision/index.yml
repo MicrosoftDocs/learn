@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.explore-cognitive-services-vision
+metadata:
+  title: Explore Azure AI services for Vision (preview)
+  description: "Azure AI services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities."
+  ms.date: 08/22/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.service: artificial-intelligence
+title: Explore Azure AI services for Vision (preview)
+summary: Azure AI services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities.
+abstract: |
+  After completing this module, you'll be able to:
+  *   Describe the capabilities available in Azure AI services for Vision.
+  *   Understand the benefits provided by Microsoft's Florence foundation model.
+  *   Analyze images using Image Analysis 4.0\.
+  *   Use Vision Studio to create a custom object detection model.
+prerequisites: |
+  Before starting this module, you should have:
+  - Ability to navigate the Azure portal
+  - Experience using Visual Studio Code at an intermediate level
+iconUrl: /training/achievements/explore-cognitive-services-for-vision-preview.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+products:
+- azure-cognitive-services
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.explore-cognitive-services-vision.introduction
+- learn.wwl.explore-cognitive-services-vision.explain-florence-model
+- learn.wwl.explore-cognitive-services-vision.analyze-images
+- learn.wwl.explore-cognitive-services-vision.explore-vision-studio
+- learn.wwl.explore-cognitive-services-vision.exercise-explore-image-analysis
+- learn.wwl.explore-cognitive-services-vision.train-custom-models
+- learn.wwl.explore-cognitive-services-vision.exercise-train-custom-object-detection-model
+- learn.wwl.explore-cognitive-services-vision.knowledge-check
+- learn.wwl.explore-cognitive-services-vision.summary
+badge:
+  uid: learn.wwl.explore-cognitive-services-vision.badge

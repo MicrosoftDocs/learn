@@ -4,8 +4,8 @@ title: Exercise - Create an Azure Communication Services account
 metadata:
   title: Exercise - Create an Azure Communication Services account
   description: Use the Azure portal to create a Communication Services account
-  author: ProbablePrime
-  ms.author: rifox
+  author: rmcmurray
+  ms.author: robmcm
   ms.date: 04/20/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

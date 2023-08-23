@@ -8,7 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 30

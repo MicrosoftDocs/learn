@@ -5,9 +5,11 @@ metadata:
   title: Exercise - Add interactivity with JavaScript
   description: Learn how to use JavaScript to add interactivity to your web page.
   ms.date: 2/8/2023
-  author: mmpadget
-  ms.author: quradic
+  author: kjo-msft
+  ms.author: karinjohnson
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-windows
 durationInMinutes: 10
 content: |

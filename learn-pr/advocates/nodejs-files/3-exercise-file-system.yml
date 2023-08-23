@@ -6,10 +6,12 @@ metadata:
   description: Use the "fs" module to read files and folders on the file system.
   author: burkeholland
   ms.author: buhollan
-  ms.date: 04/20/2020
+  ms.date: 06/05/2023
   ms.topic: interactive-tutorial
   ms.prod: vs
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-js
   ms.contributors: buhollan-09022020
 interactive: bash
 azureSandbox: true

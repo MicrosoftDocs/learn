@@ -1,6 +1,7 @@
 
 
 
+
 Your goal was to use several different techniques to change the data type of a given value.
 
 You used *implicit conversion*, relying on the C# compiler to perform *widening conversions*. When the compiler was unable to perform an implicit conversion, you used *explicit conversions*. You used the `ToString()` method to explicitly convert a numeric data type into a `string`.

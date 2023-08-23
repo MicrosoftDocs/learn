@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.learn-windows-on-arm.troubleshoot-common-arm-support-issues
+title: Troubleshoot common Arm support issues
+metadata:
+  title: Troubleshoot common Arm support issues
+  description: "Guidance on how to rectify common issues that may arise when porting a Windows application to Arm."
+  ms.date: 5/6/2023
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: module-standard-task-based
+  ms.prod: windows
+  ms.technology: arm
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-troubleshoot-common-arm-support-issues.md)]

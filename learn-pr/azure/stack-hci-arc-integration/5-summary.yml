@@ -4,8 +4,8 @@ metadata:
   title: Summary
   description: Over the course of this module, you have explored features of Azure Arc and benefits it brings to customers like Contoso when combined with Azure Stack HCI and its virtualized and containerized workloads. You reviewed the primary use cases of Azure Arc and verified that it will allow you to integrate with Azure all of the Contoso's remaining on-premises resources. You also identified the future operating model, which will combine the modern technological capabilities of Azure Stack HCI and its workloads with the management methodology that leverages the existing IT skills but promotes transition to the way workloads running in Azure are administered.
   ms.date: 12/09/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

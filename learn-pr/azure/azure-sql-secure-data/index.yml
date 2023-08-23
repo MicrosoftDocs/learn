@@ -8,7 +8,8 @@ metadata:
   ms.author: vanto
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-db-mi
+  ms.subservice: security
 title: Secure your data with Azure SQL
 summary: Ensuring the security and compliance of data is always a top priority. In this module, you learn how to use Azure SQL to secure your data, configure logins and users, use tools and techniques for monitoring security, ensure that your data meets industry and regulatory compliance standards, and take advantage of the extra benefits and intelligence that Azure provides. We also cover some of the networking considerations for securing SQL.
 abstract: | 

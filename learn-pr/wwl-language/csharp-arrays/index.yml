@@ -3,11 +3,11 @@ uid: learn.languages.csharp-arrays
 metadata:
   title: Store and iterate through sequences of data using Arrays and the foreach statement in C#
   description: "Store and iterate through sequences of data using Arrays and the foreach statement in C#"
-  ms.date: 02/24/2023
+  ms.date: 07/28/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Store and iterate through sequences of data using Arrays and the foreach statement in C#
 summary: Work with sequences of related data in data structures known as arrays. Then, learn to iterate through each item in the sequence.
 abstract: |
@@ -25,6 +25,8 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
 - student
 products:
 - dotnet

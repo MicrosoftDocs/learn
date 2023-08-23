@@ -1,5 +1,6 @@
 
 
+
 IT departments must be able to meet user requirements. The technologies must be flexible and able to support an environment where work styles change rapidly across different devices and locations. Additionally, companies often expect IT departments to do more to improve business efficiency with fewer resources. An established device life cycle ensures organizations have the right technologies in place for users to remain productive. The life-cycle also ensures that when devices have reached end-of-life, they don't become a liability. In today's environment, where users frequently use personal devices, they also become part of that life cycle.
 
 Organizations constantly manage the different phases of the enterprise desktop life cycle. These phases include:

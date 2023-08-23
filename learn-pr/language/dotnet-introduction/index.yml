@@ -6,8 +6,9 @@ metadata:
   ms.date: 03/28/2022
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: .net
 title: Introduction to .NET
 summary: Start learning about .NET. Understand what .NET is and how it works, and quickly build a small app in a web-based .NET environment.
 abstract: |

@@ -5,10 +5,12 @@ metadata:
   unitType: summary
   title: Summary
   description: In this module, we covered how functions work in Python and some flexible input types that you can use when calling a function.
-  ms.date: 12/07/2021
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

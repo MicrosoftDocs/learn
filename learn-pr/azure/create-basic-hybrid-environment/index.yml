@@ -8,7 +8,6 @@ metadata:
   author: billmath
   ms.author: billmath
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Create a basic hybrid environment
 summary: |
   Create an on-premises Active Directory environment and an Azure AD tenant.  This environment will be the basis for more guided projects that will demonstrate how to deploy hybrid environments and use the cloud.

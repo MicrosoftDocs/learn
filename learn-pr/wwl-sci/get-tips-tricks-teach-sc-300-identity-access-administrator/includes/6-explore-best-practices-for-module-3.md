@@ -1,5 +1,6 @@
 
 
+
 SC-300: Module 3 Implement an authentication and access management solution
 
 Module 3 Overview

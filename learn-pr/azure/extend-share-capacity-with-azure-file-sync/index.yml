@@ -7,7 +7,7 @@ metadata:
   author: khdownie
   ms.author: kendownie
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-file-storage
 title: Extend your on-premises file share capacity using Azure File Sync
 summary: Evaluate the requirements for Azure File Sync. Deploy the Storage Sync Service to replicate files from Windows Server to the Azure file share. Test and troubleshoot file sync between the file shares.
 abstract:  | 

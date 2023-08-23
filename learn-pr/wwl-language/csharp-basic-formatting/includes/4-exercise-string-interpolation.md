@@ -71,13 +71,13 @@ Just as you did in the previous exercise, you can eliminate the temporary variab
     ```c#
     int version = 11;
     string updateText = "Update to Windows";
-    Console.WriteLine($"{updateText} {version}");
+    Console.WriteLine($"{updateText} {version}!");
     ```
 
 1. Now, run the code. The result in the output console should be the same even if you simplified the code:
 
     ```Output
-    Update to Windows 11
+    Update to Windows 11!
     ```
 
 ### Combine verbatim literals and string interpolation

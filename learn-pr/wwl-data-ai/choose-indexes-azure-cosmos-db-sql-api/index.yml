@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
+  ms.subservice: nosql
 title: Customize an indexing policy in Azure Cosmos DB for NoSQL
 summary: Tune the indexing policy based on your SQL queries in Azure Cosmos DB for NoSQL.
 abstract: |

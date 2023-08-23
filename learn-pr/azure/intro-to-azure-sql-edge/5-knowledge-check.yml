@@ -23,7 +23,7 @@ quiz:
       explanation: "Incorrect. RBAC manages access to specific resources based on permissions assigned to the user requesting access."
     - content: "Classification."
       isCorrect: false
-      explanation: "Incorrect. Classification helps you comply with security regulations by allowing data to be categorized by sensitivity and business impact."
+      explanation: "Incorrect. Classification helps you comply with security regulations by allowing you to categorize data by sensitivity and business impact."
     - content: "Always Encrypted."
       isCorrect: true
       explanation: "Correct. Always Encrypted provides a separation between people who own the data and people who manage it."
@@ -40,34 +40,34 @@ quiz:
       explanation: "Incorrect. Connectivity relates to how well apps work when connected and disconnected from the internet."
   - content: "Which of the following statements about Azure SQL Edge is true?"
     choices:
-    - content: "SQL Edge implements a proprietary query language."
+    - content: "Azure SQL Edge implements a proprietary query language."
       isCorrect: false
-      explanation: "Incorrect. SQL Edge supports a large subset of the T-SQL surface area with which developers are familiar."
+      explanation: "Incorrect. Azure SQL Edge supports a large subset of the T-SQL surface area with which developers are familiar."
     - content: "You can work with your Azure SQL Edge data by using familiar BI tools such as Microsoft Power BI and Tableau software."
       isCorrect: true
       explanation: "Correct. You can use these and other Microsoft tools."
-    - content: "SQL Edge is based on a standalone codebase."
+    - content: "Azure SQL Edge is based on a standalone codebase."
       isCorrect: false
-      explanation: "Incorrect. SQL Edge is built on the same codebase as SQL Server and SQL Database."
-  - content: "Which of the following can be used to orchestrate Azure SQL Edge device infrastructure?"
+      explanation: "Incorrect. Azure SQL Edge is built on the same codebase as SQL Server and SQL Database."
+  - content: "Which of these choices can be used to orchestrate Azure SQL Edge device infrastructure?"
     choices:
     - content: "Kubernetes containers."
       isCorrect: true
       explanation: "Correct. You can choose either Kubernetes or Linux Docker containers to orchestrate your device infrastructure."
     - content: "The Windows OS."
       isCorrect: false
-      explanation: "Incorrect. This doesn't enable you to orchestrate your devices. However, you can choose Windows as the host for your container."
+      explanation: "Incorrect. The Windows OS doesn't enable you to orchestrate your devices. However, you can choose Windows as the host for your container."
     - content: "A Linux OS."
       isCorrect: false
-      explanation: "Incorrect. This doesn't enable you to orchestrate your devices. However, you can choose Linux as the host for your container."
+      explanation: "Incorrect. A Linux OS doesn't enable you to orchestrate your devices. However, you can choose Linux as the host for your container."
   - content: "A developer in an automotive company is designing an application that works with IoT sensors in a company's vehicles. It's important that the app can make decisions quickly, based on sensor data, without needing to connect to the internet. How could Azure SQL Edge help this developer address this requirement?"
     choices:
     - content: "Azure SQL Edge provides a local database, minimizing latency."
       isCorrect: false
-      explanation: "Incorrect. This is a feature of SQL Edge, but isn't relevant to this problem."
+      explanation: "Incorrect. Using a local database to eliminate latency is a feature of SQL Edge, but it isn't relevant to this problem."
     - content: "Azure SQL Edge provides a local database that meets legal and governmental compliance standards."
       isCorrect: false
-      explanation: "Incorrect. This is a feature of SQL Edge, but isn't relevant to this problem."
+      explanation: "Incorrect. Meeting compliance standards is a feature of SQL Edge, but it isn't relevant to this problem."
     - content: "Azure SQL Edge provides a local database and can function both online and offline."
       isCorrect: true
       explanation: "Correct. Azure SQL Edge supports solutions that work with or without network connectivity."

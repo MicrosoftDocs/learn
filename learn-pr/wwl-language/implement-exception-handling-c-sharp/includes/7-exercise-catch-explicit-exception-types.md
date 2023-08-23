@@ -2,6 +2,7 @@
 
 
 
+
 Earlier in this module, you learned that the exception objects caught by your C# application are instances of an exception class. Generally speaking, your code will `catch` one of the following:
 
 - An exception object that's an instance of the `System.Exception` base class.

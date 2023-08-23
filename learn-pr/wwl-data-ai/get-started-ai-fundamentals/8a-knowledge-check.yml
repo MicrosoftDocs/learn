@@ -4,25 +4,24 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/03/2023
+  ms.date: 08/14/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: azure
 durationInMinutes: 2
 quiz:
+  title: ""
   questions:
   - content: "You want to create a model to predict sales of ice cream based on historic data that includes daily ice cream sales totals and weather measurements. Which Azure service should you use?"
     choices:
     - content: "Azure Machine Learning"
       isCorrect: true
       explanation: "That is correct. Azure Machine Learning enables you to train a predictive model from the existing data."
-    - content: "Azure Bot"
+    - content: "Azure AI Bot Service"
       isCorrect: false
-      explanation: "That is incorrect. The Azure Bot Service provides a platform for conversational AI."
-    - content: "Language"
+      explanation: "That is incorrect. The Azure AI Bot Service provides a platform for conversational AI."
+    - content: "Azure AI Language"
       isCorrect: false
       explanation: "That is incorrect. The Language Service is used for understanding and analyzing text, and creating intelligent applications."
   - content: "You are designing an AI application that uses images to detect cracks in car windshields and warn drivers when a windshield should be repaired or replaced. What AI workload is described? ​​"
