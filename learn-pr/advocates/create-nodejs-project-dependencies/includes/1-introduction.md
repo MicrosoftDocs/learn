@@ -15,6 +15,6 @@ After you complete this module, you'll be able to:
 
 ## Prerequisites
 
-- Git and Node.js installed on your computer
 - Familiarity with editing text and code files in a text editor
 - Experience with using the command line, including using it for Git operations
+
