@@ -1,11 +1,11 @@
 
 
 
-With Codespaces configured and GitHub Copilot installed, your goal is to develop the Python console minigame. You'll need to create the game logic following the specifications and use GitHub Copilot to help create the methods.
+With Codespaces configured and GitHub Copilot installed, your goal is to develop the Python console minigame. You need to create the game logic following the specifications and use GitHub Copilot to help create the methods.
 
 ## Specification
 
-In this challenge exercise, you'll need to define the elements that will be used in the minigame, create the repetition structure to allow the user to play several times, create the decision logic to determine the winner, and display the result.
+In this challenge exercise, you need to define the elements that will be used in the minigame, create the repetition structure to allow the user to play several times, create the decision logic to determine the winner, and display the result.
 
 ### Game rules
 
@@ -17,7 +17,7 @@ The winner of the game is determined by a simple set of rules:
 
 ### Interaction with the player
 
-The console will be used to interact with the player. The player can choose one of the three options: `rock`, `paper, or `scissors`. The player can also choose whether to play again or not, be warned if they enter an invalid option, and know their score at the end of the game.
+The console is used to interact with the player. The player can choose one of the three options: `rock`, `paper, or `scissors`. The player can also choose whether to play again or not, be warned if they enter an invalid option, and know their score at the end of the game.
 
 ### Definitions for the game
 
@@ -44,7 +44,7 @@ The console will be used to interact with the player. The player can choose one 
 5. At the prompt, type `screen.
 5. The minigame should inform the player if the option entered by the player is invalid.
 6. Repeat steps 2 and 4 to play a few rounds and choose not to continue playing.
-7. Check if the minigame is terminated and if it will display your score, informing you of the number of wins and rounds.
+7. Check if the minigame is terminated and if it displays your score, informing you of the number of wins and rounds.
 
 Congratulations if you did well in this challenge exercise! You've created a Python console minigame using GitHub Copilot.
 
