@@ -8,7 +8,7 @@ Your goal is to develop a Python console minigame application using GitHub Copil
 Development containers, or dev containers, are Docker containers that are configured to provide a fully featured development environment.
 Whenever you work in a codespace, you're using a dev container on a virtual machine.
 
-You can configure the dev container for a repository so that Codespaces created for that repository give you a tailored development environment, complete with all the tools and runtimes you need to work on a specific project.
+You can configure the dev container for a repository and Codespaces can create a tailored development environment, having all the tools and runtimes you need to work on a specific project.
 
 The diagram taken directly from the official [Visual Studio Code docs](https://code.visualstudio.com/docs/remote/containers), illustrates this functionality.
 
