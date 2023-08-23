@@ -14,8 +14,7 @@ metadata:
     - team=cloud_advocates
     - devx-track-js
   ms.contributors: wachegha-11052021
-  zone_pivot_groups: os
+  zone_pivot_groups: None
 durationInMinutes: 5
-interactive: "bash"
 content: |
   [!include[](includes/5-try.md)]
