@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "learn-pr/github/github-introduction-products/5-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/github-introduction-products/4-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/github-introduction-products/3-how-licensing-works.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/3-mobile-versus-desktop",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/achievements/learn.secure-app-with-oidc-and-azure-ad.badge.yml",
       "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
       "redirect_document_id": false
@@ -25884,21 +25899,7 @@
       "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/github/github-introduction-products/5-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/6-summary",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/github/github-introduction-products/4-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/5-knowledge-check",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/github/github-introduction-products/3-how-licensing-works.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/3-mobile-versus-desktop",
-      "redirect_document_id": false
     }
+   
   ]
 }
