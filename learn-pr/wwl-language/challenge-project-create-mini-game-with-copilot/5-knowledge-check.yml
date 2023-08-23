@@ -39,10 +39,10 @@ quiz:
     choices:
     - content: "Put the user's option in lowercase."
       isCorrect: false
-      explanation: "Incorrect. The input method is not used to format the user's choices or calculate the score of the game."
+      explanation: "Incorrect. The input method isn't used to format the user's choices or calculate the score of the game."
     - content: "Calculate the score of the game."
       isCorrect: false
-      explanation: "Incorrect. The input method is not used to format the user's choices or calculate the score of the game."
+      explanation: "Incorrect. The input method isn't used to format the user's choices or calculate the score of the game."
     - content: "Get a user input."
       isCorrect: true
       explanation: "Correct! The input method is used to get a user input, in this case, the user's option."
@@ -50,10 +50,10 @@ quiz:
     choices:
     - content: "Create a repetition structure."
       isCorrect: false
-      explanation: "Incorrect. The break method is not used to create a repetition structure or calculate the score of the game."
+      explanation: "Incorrect. The break method isn't used to create a repetition structure or calculate the score of the game."
     - content: "Calculate the score of the game."
       isCorrect: false
-      explanation: "Incorrect. The break method is not used to create a repetition structure or calculate the score of the game."
+      explanation: "Incorrect. The break method isn't used to create a repetition structure or calculate the score of the game."
     - content: "End a repetition structure."
       isCorrect: true
       explanation: "Correct! The break method is used to end a repetition structure, in this case, the while loop."
