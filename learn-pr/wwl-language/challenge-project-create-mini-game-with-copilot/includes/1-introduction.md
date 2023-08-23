@@ -27,7 +27,7 @@ By the end of this module, you'll have created a playable mini-game application!
 
 ## Learning objectives
 
-In this module, you will demonstrate your ability to:
+In this module, you demonstrate your ability to:
 
 - Experience GitHub Codespaces as a development environment.
 - Develop input and output routines in a Python console application.
