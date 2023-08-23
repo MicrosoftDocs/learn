@@ -10,9 +10,10 @@ In the next unit, you'll complete an exercise that uses the Azure CLI to create 
 
 ## Create an Azure AI services account using the Azure portal
 
+The multi-service resource is listed under **Azure AI services** > **Azure AI services multi-service account** in the portal. To create a multi-service resource follow these instructions:
+
 1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-The multi-service resource is listed under **Azure AI services** > **Azure AI services multi-service account** in the portal. To create a multi-service resource follow these instructions:
 1. Select this link to create a multi-service resource: [https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne](https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne)
 
 1. On the **Create** page, provide the following information:
