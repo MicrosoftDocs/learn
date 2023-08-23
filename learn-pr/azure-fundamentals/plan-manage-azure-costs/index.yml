@@ -34,7 +34,6 @@ products:
 subjects:
 - finance-accounting
 units:
-- learn.azure.plan-manage-azure-costs.2-compare-costs-tco-calculator
 - learn.azure.plan-manage-azure-costs.3-compare-workload-costs-tco-calculator
 - learn.azure.plan-manage-azure-costs.4-purchase-azure-services
 - learn.azure.plan-manage-azure-costs.5-estimate-workload-cost-pricing-calculator
