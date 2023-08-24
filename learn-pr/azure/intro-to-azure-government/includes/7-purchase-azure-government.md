@@ -26,7 +26,7 @@ Many large organizations have multiple cloud licenses with multiple providers, a
 
 ### Pay-As-You-Go subscriptions
 
-With a Pay-As-You-Go subscription, you pay only for what you use with no minimums - scaling up or down on-the-fly. Pay with a credit card with easy monthly billing or invoicing, and cancel anytime. To get started, request a trial. When you're ready, you can add a credit card to your account. Customers who choose a Pay-As-You-Go subscription for Azure Government gain the benefits of immediate and direct billing with no monetary commitment. Pay-As-You-Go subscriptions receive the same service level agreement (SLA) as other license types, but do not include the benefits of the Azure Enterprise Portal or the value-added services that partners can provide. You can set up multiple billing containers/separate accounts to help your agency manage spending across cost centers.
+With a Pay-As-You-Go subscription, you pay only for what you use with no minimums - scaling up or down on the fly. Pay with a credit card with easy monthly billing or invoicing, and cancel anytime. To get started, request a trial. When you're ready, you can add a credit card to your account. Customers who choose a Pay-As-You-Go subscription for Azure Government gain the benefits of immediate and direct billing with no monetary commitment. Pay-As-You-Go subscriptions receive the same service level agreement (SLA) as other license types, but do not include the benefits of the Azure Enterprise Portal or the value-added services that partners can provide. You can set up multiple billing containers/separate accounts to help your agency manage spending across cost centers.
 
 ### Purchasing through a Cloud Solution Provider (CSP)
 
