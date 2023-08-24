@@ -50,9 +50,9 @@ By default, only alerts with the severity level of `Error` or security severity 
 
     :::image type="content" source="../media/3-severities-3-security-analysis-screenshot.png" alt-text="screenshot of the Code security and analysis button."::: 
   
-3. In the "Code scanning" section, use the drop-down menu to select the severity level you would like to trigger a pull request check failure.
+3. In the **Code scanning** section under **Protection rules**, use the drop-down menu to select the severity level you would like to trigger a pull request check failure.
 
-    :::image type="content" source="../media/3-severities-4-level-severity-screenshot.png" alt-text="screenshot of the Level of Severity drop down"::: 
+    :::image type="content" source="../media/3-severities-4-level-severity-screenshot.png" alt-text="screenshot of the code scanning alert severity drop down menu.":::
 
 ### Avoid unnecessary scans of pull requests
 
