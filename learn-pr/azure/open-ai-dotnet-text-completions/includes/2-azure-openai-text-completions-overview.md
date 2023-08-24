@@ -16,7 +16,7 @@ In this unit we'll learn about text completions. The completions endpoint can be
 
 The actual completion results you see may differ because the AI is stochastic by default. In other words, you might get a slightly different completion every time you call it, even if your prompt stays the same.
 
-This simple, "text in, text out" interface means you can "program" the model by providing instructions or just a few examples of what you'd like it to do. Its success generally depends on the complexity of the task and quality of your prompt. A general rule is to think about how you would write a word problem for a middle school student to solve. A well-written prompt provides enough information for the model to know what you want and how it should respond.
+This simple, "text in, text out" interface means you can "program" the model by providing instructions or just a few examples of what you'd like it to do. Its success generally depends on the complexity of the task and quality of your prompt. A general rule is to think about how you would write a word problem for a young student to solve. A well-written prompt provides enough information for the model to know what you want and how it should respond.
 
 We'll take a look at how to write a good prompt a bit later, but for now let's look at the different types of completions.
 
