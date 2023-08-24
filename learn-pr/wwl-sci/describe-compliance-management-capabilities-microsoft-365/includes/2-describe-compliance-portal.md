@@ -14,9 +14,9 @@ The default compliance portal home page contains several cards including:
 
 - The **Compliance Manager** card. This card leads you to the Microsoft Purview Compliance Manager solution. Compliance Manager helps simplify the way you manage compliance. It calculates a risk-based compliance score that measures progress toward completing recommended actions to reduce risks associated with data protection and regulatory standards. The Compliance Manager solution also provides workflow capabilities and built-in control mapping to help you efficiently carry out improvement actions.
 
-  :::image type="content" source="../media/compliance-manager-card-inline.png" lightbox="../media/compliance-manager-card-expanded.png" alt-text="The compliance manager card shows your compliance score.":::
+  :::image type="content" source="../media/compliance-manager-card-inline.png" lightbox="../media/compliance-manager-card-expanded.png" alt-text="The Compliance Manager card shows your compliance score.":::
 
-- The **Solution catalog** card, links to collections of integrated solutions to help you manage end-to-end compliance scenarios. Solutions areas included:
+- The **Solution catalog** card links to collections of integrated solutions to help you manage end-to-end compliance scenarios. Solutions areas included:
   - **Information protection & governance**.  These solutions help organizations classify, protect, and retain your data where it lives and wherever it goes. Included are data lifecycle management, data loss prevention, information protection, and records management.
   - **Privacy**.  Build a more privacy-resilient workplace.  Privacy management gives actionable insights on your organization's personal data to help you spot issues and reduce risks.
   - **Insider risk management**. These solutions help organizations identify, analyze, and remediate internal risks before they cause harm. Included are communication compliance, information barriers, and insider risk management.
@@ -36,7 +36,7 @@ In addition to the cards on the home page, there’s a navigation pane on the le
 
 ## Interactive guide
 
-In this interactive guide, you'll explore some of the capabilities of the Microsoft Purview compliance portal, your home for managing compliance needs using integrated solutions for information protection, information governance, insider risk management, discovery, and more. Select the image below to get started and follow the prompts on the screen.
+In this interactive guide, you'll explore some of the capabilities of the Microsoft Purview compliance portal, your home for managing compliance needs using integrated solutions for information protection, data lifecycle management, insider risk management, discovery, and more. Select the image that follows to get started and follow the prompts on the screen.
 
 > [!NOTE]
 > The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the interactive guide may not reflect the most recent updates.

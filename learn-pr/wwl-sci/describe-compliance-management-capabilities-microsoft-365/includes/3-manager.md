@@ -51,6 +51,6 @@ Compliance Manager provides many benefits, including:
 
 ### Interactive guide
 
-In this interactive guide, you’ll explore Compliance Manager. Select the image below to get started and follow the prompts on the screen.
+In this interactive guide, you’ll explore Compliance Manager. Select the image that follows to get started and follow the prompts on the screen.
 
 [![Interactive guide - Explore Compliance Manager](../media/5-compliance-manager-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/explore-compliance-manager/index.html?azure-portal=true)
