@@ -11,7 +11,7 @@ This functionality helps organizations address the Zero Trust principle of least
 Permissions Management detects, automatically right-sizes (remediates), and continuously monitors unused and excessive permissions.  
 Permissions Management helps organizations address requirements for least access privilege through discovery of the entire infrastructure, remediation that automatically rightsizes for least privilege access, and continuously monitoring the entire infrastructure for unused and excessive permissions.
 
-:::image type="content" source="../media/discover-remediate-monitor.png" alt-text="Screenshot showing the three steps of permissions management: Discover, remediate, and monitor.":::
+:::image type="content" source="../media/discover-remediate-monitor.png" alt-text="Screen capture showing the three steps of permissions management: Discover, remediate, and monitor.":::
 
 ### Discover
 Customers can assess permission risks by evaluating the gap between permissions granted and permissions used.

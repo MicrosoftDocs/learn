@@ -20,7 +20,7 @@ Microsoft Entra Access Reviews support up to three review stages, in which multi
 
 Multi-stage access reviews allow you and your organization to enable complex workflows to meet recertification and audit requirements calling for multiple reviewers to attest to access for users in a particular sequence. It also helps you design more efficient reviews for your resource owners and auditors by reducing the number of decisions each reviewer is accountable for.
 
-:::image type="content" source="../media/3-access-reviews-invite-users-to-review-access-rights.png" alt-text="Access reviews invite users to review access rights":::
+:::image type="content" source="../media/3-access-reviews-invite-users-to-review-access-rights.png" alt-text="Screen capture of an access review notification that invites users to review access rights.":::
 
 Admins who create access reviews can track progress as the reviewers complete their process. No access rights are changed until the review is finished. You can, however, stop a review before it reaches its scheduled end.  
 
