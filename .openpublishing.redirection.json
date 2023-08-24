@@ -26019,6 +26019,16 @@
       "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/6-exercise-install-dotnet.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/3-exercise-install-dotnet",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/10-integrate-azure-bot-service.yml",
+      "redirect_url": "/training/modules/learn-mrtk-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/11-exercise-integrate-azure-bot-service.yml",
+      "redirect_url": "/training/modules/learn-mrtk-tutorials/",
+      "redirect_document_id": false
     }
   ]
 }
