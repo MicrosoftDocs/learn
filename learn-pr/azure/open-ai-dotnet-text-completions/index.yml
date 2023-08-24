@@ -7,6 +7,7 @@ metadata:
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.date: 08/24/2023
 title: Generate text and conversations with .NET and Azure OpenAI Completions
 summary: Learn how to use the .NET SDK with the Azure OpenAI service to have your applications carry on conversations with users in natural language.
 abstract: |
