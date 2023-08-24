@@ -1,7 +1,7 @@
-In this unit, you'll use Azure Cloud Shell as a Linux terminal. You also can access Cloud Shell through the Azure portal or at [Cloud Shell sign-in](https://shell.azure.com). You don't need to install anything on your PC or laptop to use Cloud Shell. 
+In this unit, you use Azure Cloud Shell as a Linux terminal. You also can access Cloud Shell through the Azure portal or at [Cloud Shell sign-in](https://shell.azure.com). You don't need to install anything on your PC or laptop to use Cloud Shell. 
 
 > [!NOTE]
-> You'll be using the Cloud Shell to the right in this module, but in real-world situations, you can also use the integrated Terminal in Visual Studio Code by selecting **Terminal** > **New Terminal**, then selecting **Powershell** in the drop-down in the top-left of the Terminal window.
+> You're using the Cloud Shell to the right in this module, but in real-world situations, you can also use the integrated Terminal in Visual Studio Code by selecting **Terminal** > **New Terminal**, then selecting **Powershell** in the drop-down in the top-left of the Terminal window.
 
 Before beginning this exercise, be sure to activate the sandbox.
 
@@ -27,7 +27,7 @@ Before beginning this exercise, be sure to activate the sandbox.
     WSManStackVersion              3.0
    ```
 
-   The output provides information about your PowerShell version, as well as your platform and edition.
+   The output provides information about your PowerShell version, and your platform and edition.
 
    For information limited to your version of PowerShell, you can run a modified version of `$PSVersionTable`.
 
