@@ -54,7 +54,7 @@ A storage account represents a collection of settings like location, replication
 
 ![Illustration showing two storage accounts with different settings.](../media/2-multiple-storage-accounts.png)
 
-Typically, your data diversity, cost sensitivity, and tolerance for management overhead, determines the number of storage accounts you need.
+Typically, your data diversity, cost sensitivity, and tolerance for management overhead determine the number of storage accounts you need.
 
 ### Data diversity
 
