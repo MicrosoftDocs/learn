@@ -11,4 +11,4 @@ In this exercise, you will:
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-databricks-mlflow?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/advanced-gen-ai/Instructions/01-foundation-model.html)

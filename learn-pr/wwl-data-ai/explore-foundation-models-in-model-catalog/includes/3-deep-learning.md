@@ -1,4 +1,8 @@
-A recent technique that has had advanced the field of **Natural Language Processing** (**NLP**) is **deep learning**. Deep learning models have introduced concepts that resulted in the creation of Large Language Models (LLMs).
+Statistical techniques were relatively good at **Natural Language Processing** (**NLP**) tasks like text classification. For tasks like translation, there was still much room for improvement.
+
+A recent technique that has had advanced the field of **Natural Language Processing** (**NLP**) for tasks like translation is **deep learning**.
+
+When you want to translate text, you shouldn't just translate each word to another language. You may remember translation services from years ago that translated sentences too literally, often resulting in interesting results. Instead, you want a language model to *understand* the meaning (or *semantics*) of a text, and use that information to create a grammatically correct sentence in the target language.
 
 ## Understand word embeddings
 
@@ -35,26 +39,32 @@ To understand text isn't just to understand individual words, presented in isola
 
 Before deep learning, including the context of a word was a task too complex and costly. One of the first breakthroughs in including the context were **Recurrent Neural Networks** (**RNNs**).
 
-RNNs consist of multiple steps. Each step takes an **input** and a **hidden state**. Imagine the input at each step to be a new word. Each step also produces an **output**. The hidden state can serve as a memory of the network, storing the output of the previous step and passing it as input to the next step.
+RNNs consist of multiple sequential steps. Each step takes an **input** and a **hidden state**. Imagine the input at each step to be a new word. Each step also produces an **output**. The hidden state can serve as a memory of the network, storing the output of the previous step and passing it as input to the next step.
 
 Imagine a sentence like:
 
 ```Vincent Van Gogh was a painter most known for creating stunning and emotionally expressive artworks, including ...```
 
-To know what word comes next, you need to remember the name of the painter. The sentence needs to be completed, as the last word is still **masked**:
+To know what word comes next, you need to remember the name of the painter. The sentence needs to be completed, as the last word is still *missing*. A missing or **masked** word in NLP tasks is often represented with `[MASK]`. By using the special `[MASK]` token in a sentence, you can let a language model know it needs to predict what the missing token or value is.
+
+Simplifying the example sentence, you can provide the following input to an RNN: `Vincent was a painter known for [MASK]`:
 
 :::image type="content" source="../media/vincent-tokenized.png" alt-text="Diagram the sentence tokenized to present the most important words in a sentence as individual tokens.":::
 
 The RNN takes each token as an input, process it, and update the hidden state with a memory of that token. When the next token is processed as new input, the hidden state from the previous step is updated.
 
+Finally, the last token is presented as input to the model, namely the `[MASK]` token. Indicating that there's information missing and the model needs to predict its value. The RNN then uses the hidden state to predict that the output should be something like `Starry Night`
+
 :::image type="content" source="../media/recurrent-network.gif" alt-text="Diagram showing a recurrent network with multiple steps, each step takes an input and hidden state as input and produces an output.":::
 
-RNNs allow for context to be included when deciphering the meaning of a word in relation to the complete sentence. However, as the hidden state of a RNN is updated with each token, the actual relevant information, or **signal**, may be lost.
+In the example, the hidden state contains the information `Vincent`, `is`, `painter`, and `know`. With RNNs, each of these tokens are equally important in the hidden state, and therefore equally considered when predicting the output.
 
-In the example provided, Vincent van Gogh's name is at the start of the sentence, while the mask is at the end. At the step when the mask is processed, the hidden state might not include the name of the painter anymore. Another problem that may occur is that the painter's name is now a weak signal because of all other tokens stored in the hidden state. The latter especially happens as RNNs deem every token processed equally important.
+RNNs allow for context to be included when deciphering the meaning of a word in relation to the complete sentence. However, as the hidden state of an RNN is updated with each token, the actual relevant information, or **signal**, may be lost.
+
+In the example provided, Vincent Van Gogh's name is at the start of the sentence, while the mask is at the end. At the final step, when the mask is presented as input, the hidden state may contain a large amount of information that is irrelevant for predicting the mask's output. Since the hidden state has a limited size, the relevant information may even be deleted to make room for new and more recent information.
+
+When we read this sentence, we know that only certain words are essential to predict the last word. An RNN however, includes all (relevant and irrelevant) information in a hidden state. As a result, the relevant information may become a *weak signal* in the hidden state, meaning that it can be overlooked because there's too much other irrelevant information influencing the model.
 
 ### Improving RNNs with Long Short-Term Memory
 
-A newer type of RNN is **Long Short-Term Memory** (**LSTM**) and is able to process sequential data by maintaining a hidden state that is updated at each step. With LSTM, the model can decide what to remember and what to forget. By doing so, context that isn't relevant or doesn't provide valuable information can be skipped, and important signals can be persisted longer.
-
-Unlike RNNs, the next advancements in NLP were able to parallelize models in order to process larger amounts of data.
+One solution to the weak signal problem with RNNs is a newer type of RNN: **Long Short-Term Memory** (**LSTM**). LSTM is able to process sequential data by maintaining a hidden state that is updated at each step. With LSTM, the model can decide what to remember and what to forget. By doing so, context that isn't relevant or doesn't provide valuable information can be skipped, and important signals can be persisted longer.

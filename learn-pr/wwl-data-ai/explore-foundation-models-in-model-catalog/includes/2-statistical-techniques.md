@@ -12,7 +12,9 @@ Instead of hard-coding rules, researchers in the 1990s began to utilize statisti
 
 ## Understanding tokenization
 
-One of the most important developments in NLP research has been tokenization. **Tokens** are strings with a known meaning, usually representing a word. **Tokenization** is turning words into tokens, usually numbers. A statistical approach to tokenization is by using a pipeline:
+As you may expect, machines have a hard time deciphering text as they mostly rely on numbers. To *read* text, we therefore need to convert the presented text to numbers.
+
+One important development to allow machines to more easily work with text has been tokenization. **Tokens** are strings with a known meaning, usually representing a word. **Tokenization** is turning words into tokens, which are then converted to numbers. A statistical approach to tokenization is by using a pipeline:
 
 :::image type="content" source="../media/tokenization-pipeline.gif" alt-text="Animation showing the pipeline of tokenization of a sentence.":::
 
