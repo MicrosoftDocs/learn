@@ -2,14 +2,14 @@ Microsoft Azure AI Language service provides several NLP capabilities, including
 
 To test the custom text classification of the Azure AI Language service, we'll configure the model using Azure AI Language Studio then use a small command-line application that runs in the Cloud Shell to test it. The same pattern and functionality used here can be followed for real-world applications.
 
-## Create a *Azure AI Language service* resource
+## Create an *Azure AI Language service* resource
 
 To use custom text classification, you'll need to create an Azure AI Language service resource and select **Custom text classification & extraction** custom feature.
 
-If you haven't already done so, create a **Azure AI Language service** resource in your Azure subscription.
+If you haven't already done so, create an **Azure AI Language service** resource in your Azure subscription.
 
 1. In a browser, open the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in with your Microsoft account.
-2. Select the **Create a resource** button, search for *Language*, and create a **Azure AI Language service** resource. When asked about *Additional features*, select **Custom text classification & extraction**. Create the resource with the following settings:
+2. Select the **Create a resource** button, search for *Language*, and create an **Azure AI Language service** resource. When asked about *Additional features*, select **Custom text classification & extraction**. Create the resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
     - **Region**: *Choose any available region*:

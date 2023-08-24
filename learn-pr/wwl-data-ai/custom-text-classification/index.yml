@@ -9,7 +9,7 @@ metadata:
   ms.author: berryivor
   ms.topic: interactive-tutorial
 title: Create custom text classification solutions
-summary: The Language service within Azure AI Services enables processing of natural language to use in your own app. Learn how to build a custom text classification project.
+summary: The Azure AI Language Service enables processing of natural language to use in your own app. Learn how to build a custom text classification project.
 abstract: |
   After completing this module, you'll be able to:
   - Understand types of classification projects
