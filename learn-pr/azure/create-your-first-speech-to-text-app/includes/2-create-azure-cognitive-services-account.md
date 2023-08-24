@@ -26,7 +26,7 @@ The multi-service resource is listed under **Azure AI services** > **Azure AI se
     | **Name** | A descriptive name for your Azure AI services resource. For example, *MyAzureAIServicesResource*. |
     | **Pricing tier** | The cost of your Azure AI services account depends on the options you choose and your usage. For more information, see the API [pricing details](https://azure.microsoft.com/pricing/details/cognitive-services/).
 
-    :::image type="content" source="../media/2-resource-create-screen-multi.png" alt-text="Screenshot of creating a multi-service resource":::
+    :::image type="content" source="../media/2-resource-create-screen-multi.png" alt-text="Screenshot of creating a multi-service resource.":::
 
 1. Configure other settings for your resource as needed, read and accept the conditions (as applicable), and then select **Review + create**.
 
