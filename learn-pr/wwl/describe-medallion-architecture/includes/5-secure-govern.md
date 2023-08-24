@@ -21,7 +21,7 @@ Designing a Continuous Integration/Continuous Deployment (CI/CD) process for a l
 
 *Git integration* in Microsoft Fabric enables you to integrate development processes, tools, and best practices straight into the Fabric platform. Fabric's Git integration enables data teams to back up and version work, revert to previous stages as needed, collaborate with others or work alone using Git branches, and leverage the capabilities of familiar source control tools to manage Fabric items.
 
-> [!Note]
+> [!NOTE]
 > Learn more about Git integration in Fabric in [Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration).
 
 CI/CD is crucial at the gold layer of a lakehouse because it ensures that high-quality, validated, and reliable data is available for consumption. Automated processes enable continuous integration of new data, data transformations, and updates, reducing manual errors and providing consistent and up-to-date insights to downstream users and applications. This enhances data accuracy, accelerates decision-making, and supports data-driven initiatives effectively.

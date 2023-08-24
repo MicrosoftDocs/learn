@@ -8,7 +8,7 @@ The SQL endpoint in Fabric enables you to write queries,  manage the data model,
 
 ![Screenshot of the SQL endpoint in the Fabric user interface.](../media/sql-endpoint-silver.png)
 
-> [!Note]
+> [!NOTE]
 > The SQL endpoint operates in **read-only** mode over lakehouse delta tables. To modify data in your lakehouse you can use dataflows, notebooks, or pipelines.
 
 In addition to using the SQL endpoint for data exploration, you can also create a Power BI dataset in Direct Lake mode to query data in your lakehouse. When you create a lakehouse, the system also provisions an associated default dataset. The default dataset is a semantic model with metrics on top of lakehouse data.
