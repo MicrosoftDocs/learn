@@ -3,7 +3,7 @@ uid: learn.azure.open-ai-dotnet-text-completions
 metadata:
   title: Enable users to ask questions of their data with Azure OpenAI Completions
   description: Learn how to use the .NET SDK with the Azure OpenAI service to gain insights into your data by asking questions in regular, everyday language.
-  ms.date: 05/18/2023
+  ms.date: 08/24/2023
   author: codemillmatt
   ms.author: chrisrt
   ms.topic: interactive-tutorial
