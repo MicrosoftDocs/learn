@@ -19,4 +19,4 @@ Ultimately, you'll be able to find bugs effectively in your Node.js programs, an
 
 ## Prerequisites
 
-Local installations of [Node.js](https://nodejs.org) and [Visual Studio Code](https://code.visualstudio.com)
+A GitHub account to use the browser-based developer container in CodeSpaces. You need Visual Studio Code and Docker (Community edition) installed locally if you want to want to use the development container locally.
