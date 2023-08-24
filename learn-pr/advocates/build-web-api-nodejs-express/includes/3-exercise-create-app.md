@@ -78,6 +78,8 @@ Create a basic application that handles requests.
 1. Create a new folder named `my-express-app`, and enter the following commands:
 
    ```bash
+   mkdir my-express-app
+   cd my-express-app
    npm init -y
    npm install express
 
@@ -95,10 +97,8 @@ Create a basic application that handles requests.
    ```
   
    This entry indicates the Express framework is installed.
-   
-   - Close the file.
 
-1. In a code editor, create a file named **app.js**, and add the following code:
+1. In a code editor in the `my-express-app` folder, create a file named **app.js**, and add the following code:
 
    ```javascript
    const express = require('express');
@@ -107,12 +107,12 @@ Create a basic application that handles requests.
 
    app.get('/', (req, res) => res.send('Hello World!'));
 
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+   app.listen(port, () => console.log(`Example app listening on port ${port}! http://localhost:${port}/`));
    ```
 
    The code creates an instance of an Express application by invoking the `express()` method.
   
-   Notice how the code sets up a route to slash `/` with the syntax:
+   Notice how the code sets up a route to slash `/`, the root, with the syntax:
    
    > `app.get('/', (req, res) => res.send('Hello World!'));`
 
@@ -120,8 +120,9 @@ Create a basic application that handles requests.
 
    > `app.listen(port, () => console.log(`Example app listening on port ${port}!`));`
 
-1. Save your changes to the app.js file and close the file.
+1. Save your changes to the app.js file.
 
+1. Open a terminal for this subfolder by right-clicking the subfolder name and selecting **Open in integrated terminal**.
 1. In the terminal, run the following command to start the Express web application:
 
    ```bash
@@ -131,12 +132,12 @@ Create a basic application that handles requests.
    You should see the following output:
 
    ```output
-   Example app listening on port 3000!
+   Example app listening at http://localhost:3000
    ```
 
    This output means your app is up and running and ready to receive requests.
 
-1. In a browser, go to `http://localhost:3000`. You should see the following output:
+1. You can right-click and select the URL in the terminal or you can open the browser when Visual Studio Code pops up a notification asking if you want to **Open in browser**. You should see the following output:
    
    ```output
    Hello World!
@@ -149,7 +150,7 @@ Create a basic application that handles requests.
 
 Use the same app.js file to add a new route.
 
-1. In a code editor, open the app.js file. Add the following code after the existing `app.get` syntax:
+1. In a code editor, open the app.js file. Add the following code after the existing `app.get` syntax after the code for the first route, `/`:
 
    ```javascript
    app.get("/products", (req,res) => {
@@ -170,7 +171,6 @@ Use the same app.js file to add a new route.
 
     res.json(products);
    });
-
    ```
 
 1. Make sure your app.js file looks like this example:
@@ -216,10 +216,10 @@ Use the same app.js file to add a new route.
    You should see the following output:
 
    ```output
-   Example app listening on port 3000!
+   Example app listening at http://localhost:3000
    ```
 
-1. In a browser, go to `http://localhost:3000/products`. You should see the following output:
+1. In a browser, return to the tab from the previous step and add the new route, `/products`, to the end of the URL. You should see the following output:
 
    ```output
    [{"id":1,"name":"hammer"},{"id":2,"name":"screwdriver"},{"id":3,"name":"wrench"}]
@@ -227,4 +227,4 @@ Use the same app.js file to add a new route.
 
 1. In the terminal, press Ctrl + C to stop the web Express program.
 
-Congratulations! You implemented a second route that can serve up static content.
+Congratulations! You implemented a second route that can serve up static JSON data.

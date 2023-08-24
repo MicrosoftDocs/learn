@@ -47,7 +47,7 @@ This example configures the application with the following steps:
 
 ## Streams
 
-*Streams* aren't a Node.js concept, but rather an operating system concept. Streams define the way data is transported back and forth. Data is sent, chunk by chunk, from client to server and from server to client. Streams make the server capable of handling many concurrent requests.
+*Streams* aren't a Node.js concept, but rather an operating system concept. Streams define the way data is transported back and forth. Data is sent, chunk by chunk, from client to server and from server to client. Streams make the server capable of handling many concurrent requests or large files.
 
 A stream is a fundamental data structure in Node.js that can read and write data, and send and receive messages, or *events*. Streaming is implemented in the HTTP module by having classes that are streams.
 
