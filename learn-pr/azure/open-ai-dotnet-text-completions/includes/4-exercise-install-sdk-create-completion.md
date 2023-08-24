@@ -1,12 +1,12 @@
-Now that we have an understanding of the different type of text completions, let's create a basic application that uses them.
+Now that we have an understanding of text and chat completions, let's create a basic application that uses them.
 
-You're working for an e-commerce company that sells pet products. Each product could have many reviews and you need to create an application that extracts insights from and localizes the reviews into different languages.
+You work for an organization that helps hikers explore the outdoors by recommending trails. You're considering adding a conversational AI to the recommendation functionality and would like to create a prototype.
 
-You decide you need to use classification and translation completions of the Azure OpenAI service to do so. Let's prototype things out using a .NET console application.
+You decide you need to use the Chat Completion API provided by the GPT-35-Turbo model.
 
 ## Create the Azure OpenAI resource
 
-The first step is to create the Azure OpenAI resource and deploy the model. Let's use the [GPT-3 Curie model](/azure/cognitive-services/openai/concepts/models#curie) in this exercise. As the documentation notes, Curie works great for text sentiment and language translation that is what our application needs.
+The first step is to create the Azure OpenAI resource and deploy the model. Let's use the [GPT-3 Turbo model](/azure/cognitive-services/openai/concepts/models#gpt-35) in this exercise. As the documentation notes, GPT-3.5 Turbo uses the Chat Completions API and is great for our use case.
 
 ### Prerequisites
 
@@ -21,34 +21,34 @@ The first step is to create the Azure OpenAI resource and deploy the model. Let'
 Creating the resource and deploying the model is a multi-step process. Use the Azure CLI as it can be quicker than using the Azure portal. But note you can use the [Azure portal if you wish](/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal).
 
 1. Run the `az login` command to sign-in if you haven't already.
-1. When you create a new Azure resource, you can create a new resource group or use an existing one. This command shows you how to create a new resource group. Use the name **LearnPetStore** but you can substitute the name of your choice, or use an existing group's name.
+1. When you create a new Azure resource, you can create a new resource group or use an existing one. This command shows you how to create a new resource group. Use the name **HikingConversations-RG** but you can substitute the name of your choice, or use an existing group's name.
 
     ```azurecli
     az group create \
-    --name LearnPetStore
+    --name HikingConversations-RG
     --location eastus
     ```
 
-1. Run the following command to create an OpenAI resource in the **LearnPetStore** resource group. Name the OpenAI resource **PetStoreOpenAI**.
+1. Run the following command to create an OpenAI resource in the **HikingConversations-RG** resource group. Name the OpenAI resource **HikingConversationsAI**.
 
     ```azurecli
     az cognitiveserices account create \
-    -n PetStoreOpenAI
-    -g LearnPetStore
+    -n HikingConversationsAI
+    -g HikingConversations-RG
     -l eastus
     --kind OpenAI \
     --sku s0
     ```
 
-1. Next we want to deploy the Curie model to the OpenAI resource we created. Call the model deployment **PetStoreCurieDeploy**. Note we're using **LearnPetStore** as the resource group name, **PetStoreOpenAI** as the OpenAI resource name, if you used different values make sure you substitute those values.
+1. Next we want to deploy the GPT-35-Turble model to the OpenAI resource we created. Call the model deployment **HikingRecommendationTurbo**. Note we're using **HikingConversations-RG** as the resource group name, **HikingConversationsAI** as the OpenAI resource name, if you used different values make sure you substitute those values.
 
     ```azurecli
     az cognitiveservices account deployment create \
-    -g LearnPetStore \
-    -n PetStoreOpenAI \
-    --deployment-name PetStoreCurieDeploy \
-    --model-name text-curie-001 \
-    --model-version "1"
+    -g HikingConversations-RG \
+    -n HikingConversationsAI \
+    --deployment-name HikingRecommendationTurbo \
+    --model-name gpt-35-turbo \
+    --model-version "0301"
     --model-format OpenAI \
     --scale-settings-scale-type "Standard"
     ```
@@ -59,8 +59,8 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
     ```azure cli
     az cognitiveservices account show \
-    -g LearnPetStore \
-    -n PetStoreOpenAI \
+    -g HikingConversations-RG \
+    -n HikingConversationsAI \
     --query ".properties.endpoint"
     ```
 
@@ -68,8 +68,8 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
     ```azurecli
     az cognitiveservices account keys list \
-    -g LearnPetStore \
-    -n PetStoreOpenAI \
+    -g HikingConversations-RG \
+    -n HikingConversationsAI \
     --query "key1"
     ```
 
@@ -77,16 +77,16 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
 Next up we want to create a bare bones .NET Console application and add the Azure OpenAI SDK.
 
-1. Run the following to create a new .NET application named **PetReviewAI**.
+1. Run the following to create a new .NET application named **HikingConversationsAI**.
 
     ```dotnetcli
-    dotnet new console -n PetReviewAI
+    dotnet new console -n HikingConversationsAI
     ```
 
-1. Switch to the newly created **PetReviewAI** directory.
+1. Switch to the newly created **HikingConversationsAI** directory.
 
     ```powershell
-    cd PetReviewAI
+    cd HikingConversationsAI
     ```
 
 1. Then add the Azure Open AI SDK.
@@ -104,10 +104,10 @@ Next up we want to create a bare bones .NET Console application and add the Azur
     ```csharp
     string openAIEndpoint = "<YOUR ENDPOINT URL VALUE>";
     string openAIAPIKey = "<YOUR PRIMARY API KEY VALUE>";
-    string openAIDeploymentName = "PetStoreCurieDeploy";
+    string openAIDeploymentName = "HikingRecommendationTurbo";
     ```
 
-    In the steps above, we named the deployment **PetStoreCurieDeploy**, if you used a different value make sure you use that instead.
+    In the steps above, we named the deployment **HikingRecommendationTurbo**, if you used a different value make sure you use that instead.
 1. Finally, instantiate the class needed to communicate with the Azure OpenAI resource.
 
     ```csharp
@@ -116,102 +116,116 @@ Next up we want to create a bare bones .NET Console application and add the Azur
     var openAIClient = new OpenAIClient(endpoint, credentials);
     ```
 
-## Create the prompt
+## Create the system prompt
 
-Let's create a prompt for the model that shows it how to classify product reviews.
+Let's create the initial system role prompt that will provide the initial instructions to the model.
 
-1. The first step is to create a prompt that instructs the model that you'd like to classify the sentiment of a product review.
-
-    ```csharp
-    string exampleReview = "The cat never got into the catio-tent.";
-
-    string prompt = $"""
-    What is the sentiment of the following review? {exampleReview}
-    """;
-    ```
-
-## Generate classification completions
-
-Now let's have the model generate a sentiment.
-
-1. To use the Azure OpenAI SDK, we first must define a `CompletionOptions` object that defines how we want the model to react. The exact meanings of the values of `CompletionOptions` are a bit out of scope for the module, but you can [learn more about them](/dotnet/api/azure.ai.openai.completionsoptions).
+1. First create a `ChatCompletionsOptions` object which will define the parameters of how we want the model to react during the conversation and hold all of the messages in the conversation.
 
     ```csharp
-    var completionOptions = new CompletionsOptions
+    var completionOptions = new ChatCompletionsOptions
     {
-        Prompts={prompt},
-        MaxTokens=64,
-        Temperature=0f,
+        MaxTokens=400,
+        Temperature=1f,
         FrequencyPenalty=0.0f,
         PresencePenalty=0.0f,
-        NucleusSamplingFactor=1 // Top P
+        NucleusSamplingFactor = 0.95f // Top P
     };
     ```
 
-1. Next call the `GetCompletionsAsync` function of the `OpenAIClient` class. You pass in the deployment name of the model you wish to use along with the `CompletionOptions`.
+1. Create the prompt that instructs the model how you'd like it to act during the conversation when recommending hikes.
 
     ```csharp
-    Completions response = await openAIClient.GetCompletionsAsync(openAIDeploymentName, completionOptions);
+    var systemPrompt = 
+    """
+    You are a hiking enthusiast who helps people discover fun hikes in their area. You are upbeat and friendly. You introduce yourself when first saying hello. When helping people out, you always ask them for this information to inform the hiking recommendation you provide:
+
+    1. Where they are located
+    2. What hiking intensity they are looking for
+
+    You will then provide three suggestions for nearby hikes that vary in length after you get that information. You will also share an interesting fact about the local nature on the hikes when making a recommendation.
+    """;
+    ```
+
+1. Then create a new `ChatMessage` object and add it to the `ChatCompletionOptions.Messages` list. We'll be setting the `ChatMessage` to be coming from the System role.
+
+    ```csharp
+    ChatMessage systemMessage = new(ChatRole.System, systemPrompt);
+
+    completionOptions.Messages.Add(systemMessage);
+    ```
+
+## Initiate the conversation
+
+Next we'll send the first message to the model, initiating the conversation.
+
+1. Create a prompt for the user and add it to the `ChatCompletionOptions.Messages` as a user message.
+
+    ```csharp
+    string userGreeting = """
+    Hi there hiking recommendation bot! 
+    Can't wait to hear what you have in store for me!
+    """;
+
+    ChatMessage userGreetingMessage = new (ChatRole.User, userGreeting);
+    completionOptions.Messages.Add(userGreetingMessage);
+    ```
+
+1. Next call the `GetChatCompletionsAsync` function of the `OpenAIClient` class. You pass in the deployment name of the model you wish to use along with the `ChatCompletionOptions`.
+
+    ```csharp
+    ChatCompletions response = await openAIClient.GetChatCompletionsAsync(openAIDeploymentName, completionOptions);
     ```
 
 1. Then finally, read out the value the model has returned.
 
     ```csharp
-    string sentiment = response.Choices[0].Text;
+    ChatMessage assistantResponse = response.Choices[0].Message;
 
-    Console.WriteLine(sentiment);
+    Console.WriteLine(assistantResponse.Content);
     ```
 
-1. You can run the application by entering `dotnet run` into the terminal.
-1. Experiment by changing the `exampleReview`'s value to see how the review may be classified differently.
+1. Let's see what we have so far, you can run the application by entering `dotnet run` into the terminal.
+1. Experiment by changing the `userGreetingMessage`'s value to see how the model may respond differently.
 
 In one example run, we received the following:
 
 ```console
-The reviewer is not happy with the product.
-
-The sentiment of this review is negative.
+Hello there! My name is HikeFinder, and I'm here to help you find the perfect hike in your area. Before we get started, could you tell me where you're located and what hiking intensity you're looking for today? 
 ```
 
 You may receive something different as the model is nondeterministic, or may produce a different output even with the same input.
 
-## Generate translation completions
+## Continuing the conversation
 
-Ok, our proof-of-concept application is now successfully classifying product review sentiment. Let's translate the review into Spanish while we're at it.
+Let's continue on by responding to the conversation and then outputting the response.
 
-1. We're using the same example review as before, but this time constructing the prompt to tell the model to translate it into Spanish.
-
-    ```csharp
-    string promptForTranslation = $"""
-        Translate the following sentence into Spanish: {exampleReview}
-        """;
-    ```
-
-1. Then we need to create a `CompletionsOptions` object, call the same `GetCompletionsAsync` function as before, and then read the result.
+1. Make sure that we retain context of the conversation, so add the response that came back directly to the `completionOptions.Messages` list.
 
     ```csharp
-    var translationCompletionOptions = new CompletionsOptions {
-        Prompts = { promptForTranslation },
-        MaxTokens = 64,
-        Temperature = 0f,
-        FrequencyPenalty = 0.0f,
-        PresencePenalty = 0.0f,
-        NucleusSamplingFactor = 1
-    };
-
-    Completions translatedResponse = await openAIClient.GetCompletionsAsync(openAIDeploymentName, translationCompletionOptions);
-
-    string translation = translatedResponse.Choices[0].Text;
-    
-    Console.WriteLine(translation);
+    completionOptions.Messages.Add(assistantResponse);
     ```
 
-The output we received this time (and yours may vary):
+1. Next create another user role prompt and send it to the model.
 
-```console
-El gato nunca entró en el catio-tent.
-```
+    ```csharp
+    var hikeRequest = 
+    """
+    I live near Seattle and would like a strenous hike near Snoqualmie that ends with
+    a view that is amazing.
+    """;
+
+    ChatMessage hikeMessage = new (ChatRole.User, hikeRequest);
+
+    completionOptions.Messages.Add(hikeMessage);
+
+    response = await openAIClient.GetChatCompletionsAsync(openAIDeploymentName, completionOptions); 
+
+    assistantResponse = response.Choices[0].Message;
+
+    Console.WriteLine(assistantResponse.Content);
+    ```
 
 ## Summary
 
-We're now able to use the Azure OpenAI SDK along with the `text-curie-001` model to create completions that classify sentiment and translate languages of product reviews. Next up, let's see how we can improve the prompts that we send to the model.
+We're now able to use the Azure OpenAI SDK along with the `gpt-35-turbo` model to create conversations that help provide hiking recommendations. Next up, let's see how we can improve the prompts that we send to the model.
