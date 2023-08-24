@@ -1,4 +1,4 @@
-In this module, you'll explore the Azure Speech Service's intent recognition. The intent recognition allows you to equip your application with AI-powered speech commands, where users can say non-specific speech commands and still have their intent understood by the system.
+In this module, you explore the Azure Speech Service's intent recognition. The intent recognition allows you to equip your application with AI-powered speech commands, where users can say non-specific speech commands and still have their intent understood by the system.
 
 ## Prepare the scene
 
@@ -45,7 +45,7 @@ In this section, you'll create an Azure prediction resource for the Language Und
 
     * For **Name**, enter a suitable name for the service, for example: *MRTK-Tutorials-AzureSpeechServices*
     * For **Prediction location**, choose a location close to your app users' physical location, for example: *(US) West US*
-    * For **Prediction pricing tier**, for the purpose of this tutorial, select **F0 (5 Calls per second, 10K Calls per month)**
+    * For **Prediction pricing tier**, in this tutorial, select **F0 (5 Calls per second, 10K Calls per month)**
 
     :::image type="content" source="../media/create-page.png" alt-text="Screenshot of Configure the create page." lightbox="../media/create-page.png":::
 
@@ -56,19 +56,19 @@ In this section, you'll create an Azure prediction resource for the Language Und
     > [!NOTE]
     > Creating your new resources might take a few minutes.
 
-6. Once the resource creation process is completed, you will see the message **Your deployment is complete**:
+6. Once the resource creation process is completed, you'll see the message **Your deployment is complete**:
 
     :::image type="content" source="../media/message-display.png" alt-text="Screenshot of Message display." lightbox="../media/message-display.png":::
 
 ## Create the language understanding intelligent service (LUIS)
 
-In this section, you'll create a LUIS app, configure and train its prediction model, and connect it to the Azure prediction resource you created in the previous step.
+In this section, you create a LUIS app, configure and train its prediction model, and connect it to the Azure prediction resource you created in the previous step.
 
-Specifically, you'll create an intent that if the user says an action should be taken, the app will trigger the `Interactable. OnClick()` event on one of the three red buttons in the scene, depending on which button the user references.
+Specifically, you create an intent that if the user says an action should be taken, the app triggers the `Interactable. OnClick()` event on one of the three red buttons in the scene, depending on which button the user references.
 
-For example, if the user says **go ahead and launch the rocket**, the app will predict that **go ahead** means some **action** should be taken, and that the `Interactable. OnClick()` event to **target** is on the **launch** button.
+For example, if the user says **go ahead and launch the rocket**, the app predicts that **go ahead** means some **action** should be taken, and that the `Interactable. OnClick()` event to **target** is on the **launch** button.
 
-The main steps you will take to achieve this are:
+The main steps you'll take to achieve this are:
 
 1. Create a LUIS app
 2. Create intents
@@ -96,7 +96,7 @@ Using the same user account you used when creating the Azure resource in the pre
 
     :::image type="content" source="../media/done-button.png" alt-text="Screenshot representing Select the done button." lightbox="../media/done-button.png":::
 
-3. When the new app has been created, you will be taken to that app's **Dashboard** page:
+3. When the new app has been created, you are taken to that app's **Dashboard** page:
 
     :::image type="content" source="../media/apps-dashboard-page.png" alt-text="Screenshot of App's dashboard page." lightbox="../media/apps-dashboard-page.png":::
 
@@ -113,7 +113,7 @@ Using the same user account you used when creating the Azure resource in the pre
     > [!CAUTION]
     > For the purpose of this tutorial, your Unity project will reference this intent by its name (`PressButton`). It is extremely important that you name your intent exactly the same.
 
-3. When the new intent has been created, you'll be taken to that intent's page:
+3. When the new intent has been created, you are taken to that intent's page:
 
     :::image type="content" source="../media/intent-page.png" alt-text="Screenshot of Intent's page." lightbox="../media/intent-page.png":::
 
@@ -161,11 +161,11 @@ Using the same user account you used when creating the Azure resource in the pre
 
 From the Entities page, navigate back to the **PressButton** intent page.
 
-1. Once back on the the PressButton intent page, select the word **go** and then on the word **ahead**, then select **Action (Simple)** from the contextual popup menu to label **go ahead** as an **Action** entity value:
+1. Once back on the PressButton intent page, select the word **go** and then on the word **ahead**, then select **Action (Simple)** from the contextual popup menu to label **go ahead** as an **Action** entity value:
 
     :::image type="content" source="../media/label-action.png" alt-text="Screenshot of Label go ahead as an action entity value." lightbox="../media/label-action.png":::
 
-2. The **go ahead** phrase is now defined as an **Action** entity value. There is now an action entity value under the words "go ahead":
+2. The **go ahead** phrase is now defined as an **Action** entity value. There's now an action entity value under the words "go ahead":
 
     :::image type="content" source="../media/notice-action.png" alt-text="Screenshot of Notice the action entity value." lightbox="../media/notice-action.png":::
 
@@ -176,7 +176,7 @@ From the Entities page, navigate back to the **PressButton** intent page.
 
     :::image type="content" source="../media/word-launch.png" alt-text="Screenshot of select the word launch." lightbox="../media/word-launch.png":::
 
-4. The **launch** word is now defined as a **Target** entity value. There is now a Target entity value under the word "launch":
+4. The **launch** word is now defined as a **Target** entity value. There's now a Target entity value under the word "launch":
 
     :::image type="content" source="../media/notice-target.png" alt-text="Screenshot of Notice the Target entity value under the word launch." lightbox="../media/notice-target.png":::
 
@@ -248,11 +248,11 @@ From the Entities page, navigate back to the **PressButton** intent page.
 
     :::image type="content" source="../media/intent-recognition.png" alt-text="Screenshot of Testing the intent recognition." lightbox="../media/intent-recognition.png":::
 
-2. If you enter Game mode, you can test the intent recognition by first pressing the rocket button. Then, assuming your computer has a microphone, when you say the first example utterance, **go ahead and launch the rocket**, you will see the LunarModule launch into space:
+2. If you enter Game mode, you can test the intent recognition by first pressing the rocket button. Then, assuming your computer has a microphone, when you say the first example utterance, **go ahead and launch the rocket**, you'll see the LunarModule launch into space:
 
     :::image type="content" source="../media/press-rocket-button.png" alt-text="Screenshot of Enter the game mode." lightbox="../media/press-rocket-button.png":::
 
-3. Try all the example utterances, then some variation of the example utterances, as well as a few random utterances.
+3. Try all the example utterances, then some variation of the example utterances, and a few random utterances.
 
 4. Next, return to [LUIS](https://www.luis.ai) and navigate to Build > Improve app performance > **Review endpoint utterances** page. Use the **toggle** button to switch from the default Entities View to **Tokens View**, and then review the utterances:
 

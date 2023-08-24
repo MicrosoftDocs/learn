@@ -2,7 +2,7 @@ In the previous exercise, you learned how to create an Azure AI services account
 
 Now that you have an Azure AI services account with which to work, you can begin working on your text to speech application.
 
-In this module, we're going to focus on two ways to pass text to Azure AI services's text to speech engine:
+In this module, we're going to focus on two ways to pass text to Azure AI services' text to speech engine:
 
 | Text Format | Description |
 |---|---|

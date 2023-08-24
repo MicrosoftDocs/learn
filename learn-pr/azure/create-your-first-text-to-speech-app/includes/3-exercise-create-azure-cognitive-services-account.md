@@ -4,7 +4,7 @@ In this exercise, you'll create an Azure AI services account using the Azure CLI
 
 The applications that you'll create in the upcoming exercises use this account to perform the text to speech operations.
 
-<a name='create-an-azure-cognitive-services-account'></a>
+<a name='create-an-azure-ai-services-account'></a>
 
 ## Create an Azure AI services account
 
