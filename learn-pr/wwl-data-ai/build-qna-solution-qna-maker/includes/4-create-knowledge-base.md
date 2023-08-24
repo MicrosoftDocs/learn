@@ -1,5 +1,5 @@
 
-To create a question answering solution, you can use the REST API or SDK to write code that defines, trains, and publishes the knowledge base. However, it is more common to use the [Language Studio](https://language.azure.com) web interface to define and manage a knowledge base.
+To create a question answering solution, you can use the REST API or SDK to write code that defines, trains, and publishes the knowledge base. However, it is more common to use the [Azure AI Language Studio](https://language.azure.com) web interface to define and manage a knowledge base.
 
 To create a knowledge base:
 
@@ -7,7 +7,7 @@ To create a knowledge base:
     - Enable the *question answering* feature.
 	- Create or select an **Azure Cognitive Search** resource to host the knowledge base index.
 
-2. In Language Studio, select the Language resource and create a **Custom question answering** project.
+2. In Azure AI Language Studio, select the Language resource and create a **Custom question answering** project.
 3. Name the knowledge base.
 4. Add one or more data sources to populate the knowledge base:
    - URLs for web pages containing FAQs.
