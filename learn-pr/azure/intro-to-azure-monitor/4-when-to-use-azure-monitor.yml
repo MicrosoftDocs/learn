@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-monitor.when-to-use-azure-monitor
-title: Insights, visualizations, and automated actions
+title: Azure Monitor Insights, visualizations, and actions
 metadata:
   unitType: learning-content
-  title: Insights, visualizations, and automated actions
-  description: Discover scenarios where Azure Monitor is beneficial.
+  title: Azure Monitor Insights, visualizations, and actions
+  description: Learn how Azure Monitor Insights and visualizations can consume and transmit monitoring data, and automated actions can proactively respond to issues.
   ms.prod: learning-azure-monitor
   ms.date: 4/15/2021
   author: gerryaobrien

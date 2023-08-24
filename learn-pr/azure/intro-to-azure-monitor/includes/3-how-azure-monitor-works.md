@@ -1,4 +1,4 @@
-Your application might use several resources and services, like virtual machines (VMs), databases, web hosting services, and a payment gateway. In this unit, you learn about three key Azure Monitor features that monitor the health, behavior, and performance of all your Azure applications, resources, networks, and infrastructure.
+Your application might use several resources and services, like virtual machines (VMs), databases, web hosting services, and a payment gateway. In this unit, you learn about three key Azure Monitor features that monitor the health, behavior, and performance of your Azure applications, resources, networks, and infrastructure.
 
 Azure Monitor Metrics and Azure Monitor Logs provide two types of data that are essential for understanding application and resource behavior and performance. Application Insights provides application performance monitoring (APM).
 
@@ -8,19 +8,15 @@ Metrics are quantitative measurements that show snapshots of application or reso
 
 Metrics can monitor various aspects of an application or resource, such as resource utilization, response times, error rates, and throughput. Common examples of metrics include CPU usage, memory usage, network latency, and transaction rates.
 
-Metrics are well-suited for real-time monitoring, and you can use metrics to trigger alerts when defined thresholds are reached.
+Metrics are well-suited for real-time monitoring. You can use metrics to trigger alerts when defined thresholds are reached.
 
-Azure Monitor Metrics collects multiple types of metrics, including:
+Azure Monitor Metrics can collect several types of metrics, including:
 
-- Metrics from Azure resources.
-- Custom metrics from various sources, including applications and agents running on VMs.
-- Prometheus metrics collected from Azure Kubernetes Service (AKS) or other Kubernetes clusters. These metrics use industry standard tools, such as PromQL and Grafana, for analyzing and alerting.
+- **Azure platform metrics.** Azure Monitor starts collecting metrics data from Azure resources as soon as they're added to a subscription. A list of resource-specific metrics is automatically available for each Azure resource type.
+- **Custom metrics**. Azure Monitor can also collect metrics from other sources, including applications and agents running on VMs. You can send custom metrics to Azure Monitor via the Azure Monitor Agent, other agents and extensions, or directly to the Azure Monitor REST API.
+- **Prometheus metrics**. Azure Monitor managed service for Prometheus collects metrics from Azure Kubernetes Service (AKS) or other Kubernetes clusters. Prometheus metrics share some features with platform and custom metrics, but use different features to better support open source industry tools like PromQL and Grafana for analyzing and alerting.
 
-Give examples of resources [maybe even just screenshots of the three types of metrics above]
-
-You can use Metrics Explorer to interactively analyze the data in your metric database and chart the values of multiple metrics over time. Pin the charts to a dashboard to view them with other visualizations.
- 
-[See Get started with Azure Monitor metrics explorer - Azure Monitor | Microsoft Learn]
+You can use the Azure Monitor Metrics explorer to interactively analyze the data in your metrics database and chart the values of multiple metrics over time. To see the metrics for your application or any other resource in the Azure portal, select **Metrics** under **Monitoring** in the left navigation on that resource's page. Then select the metric you need from the **Metric** dropdown. You can pin the charts to a dashboard to view them with other visualizations.
 
 ## Azure Monitor Logs
 
@@ -34,7 +30,7 @@ Logs can capture information about errors, warnings, user actions, and applicati
 
 You can use Azure Monitor Logs to collect and organize the log and performance data from all the resources that Azure Monitor monitors. To collect and analyze all your data, you set up a workspace called a Log Analytics workspace, and configure your resources to send their data to that workspace.
 
-Once you configure the workspace and start logging data, you can use Azure Monitor Logs to explore and analyze the data. You can work with log queries and their results interactively by using the Log Analytics user interface.
+Once you configure the workspace and start logging data, you can use Azure Monitor Logs to explore and analyze the data. You can work with log queries and their results interactively in the Log Analytics user interface.
 
 You can use Azure Monitor Log queries in the following scenarios:
 
@@ -59,4 +55,4 @@ Application Insights also includes the following features and abilities:
 - **Smart detection** detects failures and anomalies automatically through proactive telemetry analysis.
 - **Application Map** is a high-level, top-down view of your application architecture with at-a-glance visual references to component health and responsiveness.
 
-The next unit has information about more types of Azure Monitor Insights.
+The next unit has information about other Azure Monitor Insights.

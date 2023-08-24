@@ -1,14 +1,12 @@
-The goal of this module was to help you decide if Azure Monitor is a tool you want to use with your Azure resources. We explored some of the options available with Azure Monitor, and discussed the following aspects:
+This module presented an overview of monitoring, Azure Monitor, and Azure Monitor capabilities that are important to the success of your Azure web application. You learned about Azure Monitor Metrics, Azure Monitor Logs, and Application Insights, three key ways to monitor the health, behavior, and performance of Azure applications and infrastructure.
 
-* Azure Monitor
-* Azure Monitor Metrics
-* Azure Monitor Logs
+You also saw how you can consume and transmit monitoring information with Azure Monitor Insights, visualizations, and dashboards. You learned about alerts and automated actions that can proactively respond to and sometimes correct application issues.
 
-We showed examples of how the features of Azure Monitor can provide insights into the performance of your Azure resources. Reviewing the Azure monitoring metrics showed how near-real-time monitoring is possible. The Log options showed how you might want to consider logging data for trending and analysis. By looking at visualizations, you got an idea of the different display and presentation options available.
-
-Azure Monitor helps you maximize the availability and performance of your applications and services. It delivers a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. This information helps you understand how your applications are performing and proactively identify issues affecting them and the resources on which they depend.
+Azure Monitor is a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. Azure Monitor helps you evaluate application performance and proactively identify issues to maximize the availability and performance of your applications.
 
 ## Learn more
+
+Learn more about the Azure Monitor concepts and processes this overview introduced.
 
 Azure Monitor:
 
