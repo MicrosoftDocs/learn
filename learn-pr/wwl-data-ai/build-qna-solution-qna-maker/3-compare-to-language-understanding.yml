@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-qna-solution-qna-maker.compare-to-language-understanding
-title: Compare question answering to language understanding
+title: Compare question answering to Azure AI Language understanding
 metadata:
-  title: Compare question answering to language understanding
-  description: "Compare question answering to language understanding"
+  title: Compare question answering to Azure AI Language understanding
+  description: "Compare question answering to Azure AI Language understanding"
   ms.date: 07/19/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
   ms.subservice: qna-maker
