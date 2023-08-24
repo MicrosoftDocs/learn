@@ -1,9 +1,5 @@
 Microsoft Purview Compliance Manager is a feature in the Microsoft Purview compliance portal that helps admins to manage an organization’s compliance requirements with greater ease and convenience. Compliance Manager can help organizations throughout their compliance journey, from taking inventory of data protection risks, to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
-The following video provides a quick overview of Compliance Manager.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
-
 Compliance Manager helps simplify compliance and reduce risk by providing:
 
 - Prebuilt assessments based on common regional and industry regulations and standards.  Admins can also use custom assessment to help with compliance needs unique to the organization.
@@ -13,7 +9,7 @@ Compliance Manager helps simplify compliance and reduce risk by providing:
 
 The Compliance Manager dashboard shows the current compliance score, helps admins to see what needs attention, and guides them to key improvement actions.
 
-:::image type="content" source="../media/4-overview-pane-v2-inline.png" lightbox="../media/4-overview-pane-v2-expanded.png" alt-text="Compliance manager overview pane":::
+:::image type="content" source="../media/compliance-manager-inline.png" lightbox="../media/compliance-manager-expanded.png" alt-text="Screen shot of teh Compliance Manager overview pane.":::
 
 Compliance Manager uses several data elements to help manage compliance activities. As admins use Compliance Manager to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key elements: controls, assessments, templates, and improvement actions.
 
@@ -33,7 +29,7 @@ Compliance Manager continuously assesses controls by scanning through your Micro
 
 An assessment is a grouping of controls from a specific regulation, standard, or policy. Completing the actions within an assessment helps to meet the requirements of a standard, regulation, or law. For example, an organization may have an assessment that, when completed, helps to bring the organization’s Microsoft 365 settings in line with ISO 27001 requirements.
 
-An assessment consists of several components including the services that are in-scope, the controls, and an assessment score that shows progress towards completing the actions needed for compliance.
+An assessment consists of several components including the services that are in-scope, the Microsoft managed controls, your controls, shared controls, and an assessment score that shows progress towards completing the actions needed for compliance.
 
 ### Templates
 
@@ -55,6 +51,6 @@ Compliance Manager provides many benefits, including:
 
 ### Interactive guide
 
-In this interactive guide, you’ll explore Compliance Manager. Select the image below to get started and follow the prompts on the screen.
+In this interactive guide, you’ll explore Compliance Manager. Select the image that follows to get started and follow the prompts on the screen.
 
 [![Interactive guide - Explore Compliance Manager](../media/5-compliance-manager-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/explore-compliance-manager/index.html?azure-portal=true)
