@@ -2,10 +2,10 @@ Microsoft Entra Verified ID is a managed verifiable credentials service based on
 
 #### Why do we need it?
 
-In the digital world, transactions are increasingly done over the web and often require individuals to make claims or assertions that organizations can digitally verify. The current process of obtaining and presenting a digital credential that can make the minimum required claims and that can be verified can be difficult and cumbersome.  Also, that digital credential serves as a digital identity.  Once you use that online digital identity to access the desired service or make an online transaction, it’s common you begin to get targeted advertisements and emails for services for which you never signed up. That’s because it’s hard to retain control of your identity once you've shared it in exchange for access to a service.
+In the digital world, transactions are increasingly done over the web and often require individuals to make claims or assertions that organizations can digitally verify. The current process of obtaining and presenting a digital credential that can make the minimum required claims and that can be verified can be difficult and cumbersome.  A digital credential serves as a digital identity.  Once you use that online digital identity to access the desired service or make an online transaction, it’s common you begin to get targeted advertisements and emails for services for which you never signed up. That’s because it’s hard to retain control of your identity once you've shared it in exchange for access to a service.
 Individuals and businesses need a way to express their qualifications and/or personal information, that is, our digital identities, over the web in a manner that is cryptographically secure, compliant to privacy requirements, and machine readable for verification. Additionally, individuals and organizations want to be able to control how and when their digital identities are used and shared. Verifiable credentials help address these challenges.
 
-#### How it works?
+#### How it works
 
 This diagram illustrates the participation of three parties in a verifiable credential’s interaction. This solution automates verification of identity credentials and claims.
 
