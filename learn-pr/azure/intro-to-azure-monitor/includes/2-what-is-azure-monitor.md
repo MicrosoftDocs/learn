@@ -62,7 +62,7 @@ To evaluate the performance of your web application, you need monitoring where a
 
 As soon as you start adding resources such as web apps to an Azure subscription, Azure Monitor starts collecting data. Azure activity logs record when resources are created or modified. You can use the activity log information to trace the history of the resource creation and modifications.
 
-### Azure Monitor Metrics
+### Performance metrics
 
 Azure Monitor Metrics tell you how your application is performing, and any other resources that it's consuming. A list of resource-specific metrics is automatically available for each resource type in your subscription. To see resource metrics in the Azure portal, select **Metrics** under **Monitoring** in the left navigation for your application or other resource, and then select the metric you need from the **Metric** dropdown.
 
@@ -70,11 +70,13 @@ The following metrics chart shows the **Requests** metric for a web application.
 
 :::image type="content" source="../media/web-app-metrics.png" alt-text="Screenshot of the Monitoring option selected in the Azure portal for a web app, showing chart of requests for the web app.":::
 
+The next unit tells you more about Azure Monitor Metrics.
+
 ### Other monitoring options
 
 Interactive monitoring is one way to monitor your application. Another option is to configure alerts to send a text message or email to a person or team for further investigation. You can also configure the alert to trigger an action in response to certain situations.
 
-Azure Monitor workbooks provide a flexible canvas for analyzing data and creating rich visual reports in the Azure portal. Workbooks allow you to tap into multiple Azure data sources and combine them into unified interactive experiences. You can use the workbooks that Azure provides, or create your own workbooks from predefined templates.
+Azure Monitor workbooks provide a flexible canvas for analyzing data and creating rich visual reports in the Azure portal. Workbooks let you tap into multiple Azure data sources and combine them into unified interactive experiences. You can use the workbooks that Azure provides, or create your own workbooks from predefined templates.
 
 The following image shows three types of workbooks that display logged data in different chart and table formats.
 
@@ -84,3 +86,4 @@ You can add visualizations you create in Azure Monitor to Azure dashboards, whic
 
 :::image type="content" source="../media/dashboard.png" alt-text="Screenshot of an Azure dashboard displaying metrics in graph format for application performance metrics on the left and security incidents on the right.":::
 
+Unit 4 has more information about Azure Monitor Insights, workbooks, visualizations, and automated actions.

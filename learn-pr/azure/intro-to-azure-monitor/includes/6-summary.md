@@ -40,7 +40,10 @@ Insights and visualizations:
 
 - [Azure Monitor Insights overview](/azure-monitor/insights/insights-overview)
 - [Application Insights overview](/azure/azure-monitor/app/app-insights-overview)
-- [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-overview)
+- [Container Insights](/azure/azure-monitor/containers/container-insights-overview)
+- [VM Insights](/azure/azure-monitor/vm/vminsights-overview)
+- [Network Insights](/azure/network-watcher/network-insights-overview)
+- [Azure Monitor Workbooks](/azure/azure-monitor/visualize/workbooks-overview)
 
 Automated actions:
 

@@ -1,10 +1,10 @@
-Your application might use several resources and services, like virtual machines (VMs), databases, web hosting services, and a payment gateway. In this unit, you learn about three key Azure Monitor features that are essential for understanding the health, behavior, and performance of all your Azure applications, resources, networks, and infrastructure.
+Your application might use several resources and services, like virtual machines (VMs), databases, web hosting services, and a payment gateway. In this unit, you learn about three key Azure Monitor features that monitor the health, behavior, and performance of all your Azure applications, resources, networks, and infrastructure.
 
-Azure Monitor Metrics and Azure Monitor Logs provide two types of data that are essential for understanding all application and resource behavior and performance. Application Insights provides application performance monitoring (APM).
+Azure Monitor Metrics and Azure Monitor Logs provide two types of data that are essential for understanding application and resource behavior and performance. Application Insights provides application performance monitoring (APM).
 
 ## Azure Monitor Metrics
 
-Metrics are quantitative measurements that provide snapshots of application or resource performance. Metrics are typically numeric values that you can measure over time.
+Metrics are quantitative measurements that show snapshots of application or resource performance. Metrics are typically numeric values that you can measure over time.
 
 Metrics can monitor various aspects of an application or resource, such as resource utilization, response times, error rates, and throughput. Common examples of metrics include CPU usage, memory usage, network latency, and transaction rates.
 
@@ -14,7 +14,7 @@ Azure Monitor Metrics collects multiple types of metrics, including:
 
 - Metrics from Azure resources.
 - Custom metrics from various sources, including applications and agents running on VMs.
-- Prometheus metrics collected from Kubernetes clusters, such as Azure Kubernetes Service (AKS) clusters. These metrics use industry standard tools, such as PromQL and Grafana, for analyzing and alerting.
+- Prometheus metrics collected from Azure Kubernetes Service (AKS) or other Kubernetes clusters. These metrics use industry standard tools, such as PromQL and Grafana, for analyzing and alerting.
 
 Give examples of resources [maybe even just screenshots of the three types of metrics above]
 
@@ -45,13 +45,13 @@ You can use Azure Monitor Log queries in the following scenarios:
 
 ## Application Insights
 
-The Application Insights feature of Azure Monitor can provide application performance monitoring (APM) from app development, through test, and into production. You can *proactively* monitor to see how well an application is performing, and *reactively* review application execution data to find the cause of an incident.
+The Application Insights feature of Azure Monitor provides application performance monitoring (APM) from app development, through test, and into production. You can *proactively* monitor to see how well an application is performing, and *reactively* review application execution data to find the cause of an incident.
 
 Along with collecting metrics and telemetry data that describe application activities and health, you can use Application Insights to collect and store application *trace logging* data. The log trace is associated with other telemetry to give a detailed view of activity. To add trace logging to existing applications, you only need to provide a destination for the logs. You seldom need to change the logging framework.
 
 Application Insights supports distributed tracing, which is also known as distributed component correlation. This feature allows searching for and visualizing the end-to-end flow of a specific execution or transaction. The ability to trace activity from end to end is important for applications built as distributed components or microservices.
 
-Application Insights also has the following features and abilities:
+Application Insights also includes the following features and abilities:
 
 - **Live metrics** observe activity from your deployed application in real time with no effect on the host environment.
 - **Availability monitoring**, also known as *synthetic transaction monitoring*, probes the external endpoints of your applications to test overall availability and responsiveness over time.
@@ -59,3 +59,4 @@ Application Insights also has the following features and abilities:
 - **Smart detection** detects failures and anomalies automatically through proactive telemetry analysis.
 - **Application Map** is a high-level, top-down view of your application architecture with at-a-glance visual references to component health and responsiveness.
 
+The next unit has information about more types of Azure Monitor Insights.
