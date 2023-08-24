@@ -6,9 +6,9 @@ Teams can use SQL to explore and query data in the gold layer. You can analyze d
 
 The SQL endpoint in Fabric enables you to write queries,  manage the data model, and query data using the new visual query experience.
 
-![Screenshot of the SQL endpoint ](../media/sql-endpoint-silver.png)
+![Screenshot of the SQL endpoint in the Fabric user interface.](../media/sql-endpoint-silver.png)
 
-> ![Note]
+> [!Note]
 > The SQL endpoint operates in **read-only** mode over lakehouse delta tables. To modify data in your lakehouse you can use dataflows, notebooks, or pipelines.
 
 In addition to using the SQL endpoint for data exploration, you can also create a Power BI dataset in Direct Lake mode to query data in your lakehouse. When you create a lakehouse, the system also provisions an associated default dataset. The default dataset is a semantic model with metrics on top of lakehouse data.

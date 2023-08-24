@@ -5,4 +5,4 @@ Now it's your turn to create a lakehouse in Fabric and move data through the med
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-fabric-warehouse)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-fabric-medallion)

@@ -3,7 +3,7 @@ Now that you have a solid understanding of the medallion architecture, let's exp
 - **Set up the foundation**: [Create your Fabric lakehouse](/fabric/onelake/create-lakehouse-onelake). You can use the same lakehouse for multiple medallion architectures, or alternatively, you can use different lakehouses and even different lakehouses in different workspaces, depending on your use case. We'll dive more into this in unit 5.
 - **Design your architecture**: Create your architecture layout, define your layers, and determine how data will flow between them. The most straightforward implementation is to use Bronze as the raw layer, Silver as the curated layer, and gold as the presentation layer. Your gold layer should be modeled in a star schema and optimized for reporting.
 
-    |  | Bronze | Silver | Gold |
+    |  Question  | Bronze | Silver | Gold |
     | --- | --- | --- | --- |
     | What happens in that layer? | Ingest raw data | Cleanse and validate data | Additional transformations and modeling |
     | What tool is used? | Pipelines, dataflows, notebooks | Dataflows or notebooks | SQL Endpoint or dataset |

@@ -4,7 +4,7 @@ This architecture ensures that data is reliable and consistent as it goes throug
 
 The medallion architecture complements other data organization methods,  rather than replacing them. You can think of the medallion architecture as the framework for data cleaning, rather than a data architecture or model. It ensures compatibility and flexibility for businesses to adopt its benefits alongside existing data models, allowing you to customize data solutions and preserve expertise while remaining adaptable in the ever-changing data landscape.
 
-![Diagram of a medallion architecture.](../media/lakehouse-medallion.png)
+![Diagram of a medallion architecture where data flows from the source to the bronze, silver, and gold layers.](../media/lakehouse-medallion.png)
 
 ## Understand the medallion architecture format
 

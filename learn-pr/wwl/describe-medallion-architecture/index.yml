@@ -2,8 +2,8 @@
 uid: learn.wwl.describe-medallion-architecture
 metadata:
   title: Organize a Fabric lakehouse using medallion architecture design
-  description: "Organize a Fabric lakehouse using medallion architecture design"
-  ms.date: 08/23/2023
+  description: "Explore the potential of the medallion architecture design in Microsoft Fabric. Organize and transform your data across Bronze, Silver, and Gold layers of a lakehouse for optimized analytics."
+  ms.date: 08/24/2023
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
