@@ -1,7 +1,7 @@
 
 The Azure AI Speech service provides robust, machine learning and artificial intelligence-based speech translation services, enabling developers to add end-to-end, real-time, speech translations to their applications or services.
 
-Before you can use the Azure AI Speech service, you need to create a Azure AI Speech resource in your Azure subscription. You can use either a dedicated **Speech** resource or a multi-service **Azure AI Services** resource.
+Before you can use the Azure AI Speech service, you need to create an Azure AI Speech resource in your Azure subscription. You can use either a dedicated **Speech** resource or a multi-service **Azure AI Services** resource.
 
 After creating your Azure resource, you will need the following information to use it from a client application through one of the supported SDKs:
 
