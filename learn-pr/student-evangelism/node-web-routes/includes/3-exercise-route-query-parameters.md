@@ -77,19 +77,16 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
 ## Set up files for project
 
 
-1. To inspect the repo, run the following command:
+1. To inspect the project for this module, open the `./nodejs-http/exercise-express-routing/parameters` folder in the code editor.
 
-   ```bash
-   cd node-essentials/nodejs-http/exercise-express-routing/parameters
-   ```
+    The *parameters* directory should contain these files:
 
-  The *parameters* directory should contain these files:
+    - app.js - This file contains the Express application.
+    - package.json - This file contains the dependencies for the project.
+    - package-lock.json - This file contains the exact versions of the dependencies.
 
-  - app.js
-  - package.json
-  - package-lock.json
-
-1. The *package.json* file contains the dependency `express`. In the terminal, run the following command to install it:
+1. Right-click on the folder name in the file explorer, `/nodejs-http/exercise-express-routing/parameters` and select **Open in integrated terminal**. 
+1. In the terminal, run the following command to install the project's dependencies:
 
     ```bash
     npm install
@@ -131,7 +128,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
 
    app.get('/products', (req, res) => {});
 
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+   app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
    ```
 
    The *app.js* file shows a skeleton of a program. Your next job is to implement the routes.
@@ -163,7 +160,14 @@ The code contains an Express application. The next step is to implement two rout
    node app.js
    ```
 
-1. Open a browser and go to `http://localhost:3000/products/1`. You should see the following output:
+1. When the Visual Studio Code pops up the notification of opening the browser, select **Open in browser**. 
+1. Add the following to the end of the URL:
+
+    ```text
+    products/1
+    ``` 
+
+    The output is:
 
    ```bash
    {
@@ -173,7 +177,11 @@ The code contains an Express application. The next step is to implement two rout
    }
    ```
 
+
    Congratulations! You implemented the route correctly. The app uses the route parameter `id` to find a specific product.
+
+1. In the terminal, and select Ctrl+C to stop the application.
+
 
 1. To implement the route `/products`, locate the following code:
 
@@ -204,7 +212,15 @@ The code contains an Express application. The next step is to implement two rout
    node app.js
    ```
 
-1. Open a browser and go to `http://localhost:3000/products?page=1&pageSize=2`. You should see the following output in the browser:
+1. When the Visual Studio Code pops up the notification of opening the browser, select **Open in browser**. 
+1. Add the following to the end of the URL:
+
+    ```text
+    page=1&pageSize=2
+    ``` 
+
+
+    The output is:
 
    ```output
    [{
@@ -219,9 +235,9 @@ The code contains an Express application. The next step is to implement two rout
    }]
    ```
 
-   The response shows the first two of three records. This response means that the query parameters, `page` and `pageSize`, filtered down the response size.
+   The response shows the first two of three records. This response means that the query parameters, `page` and `pageSize`, filtered down the response size from the complete list to two items.
 
-1. Change the URL to `http://localhost:3000/products?page=2&pageSize=2` to change the number of pages from one to two. The response should look like this:
+1. Change the URL to use the following route, `products?page=2&pageSize=2` to change the number of pages from one to two. The response is:
 
    ```output
    [{
@@ -231,6 +247,8 @@ The code contains an Express application. The next step is to implement two rout
    }]
    ```
 
-   Because the code contains only three records, the second page should contain only one record. 
+1. In the terminal, and select Ctrl+C to stop the application.
+
+Because the code contains only three records, the second page should contain only one record. 
    
-   You've now successfully applied query parameters to limit the response.
+You've now successfully applied query parameters to limit the response.

@@ -15,7 +15,6 @@ By the end of this module, you can:
 
 ## Prerequisites
 
-- [Git](https://git-scm.com/?azure-portal=true) and [Node.js](https://nodejs.org/en/?azure-portal=true) installed on your computer
 - Familiarity with editing text and code files in any text editor
 - Basic familiarity with HTTP
 - Experience using the command line, including Git operations
