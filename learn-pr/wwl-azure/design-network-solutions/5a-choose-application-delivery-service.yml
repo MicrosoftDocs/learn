@@ -4,11 +4,12 @@ title: Choose an application delivery service
 metadata:
   title: Choose an application delivery service
   description: "Choose an application delivery service"
-  ms.date: 08/15/2023
+  ms.date: 08/24/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5a-choose-application-delivery-service.md)]

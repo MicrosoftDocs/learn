@@ -4,11 +4,12 @@ title: Design for application protection services
 metadata:
   title: Design for application protection services
   description: "Design for application protection services"
-  ms.date: 08/15/2023
+  ms.date: 08/24/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/6-design-for-application-protection-services.md)]
