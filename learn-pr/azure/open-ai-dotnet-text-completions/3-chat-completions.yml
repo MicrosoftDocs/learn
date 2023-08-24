@@ -12,3 +12,17 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/3-chat-completions.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is the importance of the system role?
+    choices:
+    - content: Allows the user to communicate with the model.
+      isCorrect: false
+      explanation: The user communicates to the model through the user role.
+    - content: Allows the model to communicate with the user.
+      isCorrect: false
+      explanation: The model communicates to the user with the assistant role.
+    - content: Sets the context, personality, and rules of the conversation.
+      isCorrect: true
+      explanation: The system role is the basic instructions for the model and the following conversation to follow.

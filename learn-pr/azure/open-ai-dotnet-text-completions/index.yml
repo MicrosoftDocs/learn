@@ -1,15 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.open-ai-dotnet-text-completions
 metadata:
-  title: Enable users to ask questions of their data with Azure OpenAI Completions
-  description: Learn how to use the .NET SDK with the Azure OpenAI service to gain insights into your data by asking questions in regular, everyday language.
-  ms.date: 08/24/2023
+  title: Generate text and conversations with .NET and Azure OpenAI Completions
+  description: Learn how to use the .NET SDK with the Azure OpenAI service to have your applications carry on conversations with users in natural language.
   author: codemillmatt
-  ms.author: chrisrt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Enable users to ask questions of their data with Azure OpenAI Completions
-summary: Learn how to use the .NET SDK with the Azure OpenAI service to gain insights into your data by asking questions in regular, everyday language.
+title: Generate text and conversations with .NET and Azure OpenAI Completions
+summary: Learn how to use the .NET SDK with the Azure OpenAI service to have your applications carry on conversations with users in natural language.
 abstract: |
   In this module, you will:
   - Learn how to use the Azure OpenAI .NET SDK
