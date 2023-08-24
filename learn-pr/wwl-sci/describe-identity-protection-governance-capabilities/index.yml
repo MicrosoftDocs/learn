@@ -39,6 +39,7 @@ units:
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-privileged-identity-management
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-azure
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-permissions-management
+- learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-verified-id
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.knowledge-check
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.summary-resources
 badge:

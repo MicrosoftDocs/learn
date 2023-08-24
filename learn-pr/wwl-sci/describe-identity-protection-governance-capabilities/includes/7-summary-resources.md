@@ -19,3 +19,4 @@ For more information about the topics raised in this module, see:
 - [Microsoft Entra Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)
 - [What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)
 - [What's Permissions Management?](/azure/active-directory/cloud-infrastructure-entitlement-management/overview)
+- [Describe the concepts behind Microsoft Entra Verified ID](/training/modules/describe-verified-id-concepts/)
