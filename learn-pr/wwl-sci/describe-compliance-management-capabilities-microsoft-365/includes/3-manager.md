@@ -9,7 +9,7 @@ Compliance Manager helps simplify compliance and reduce risk by providing:
 
 The Compliance Manager dashboard shows the current compliance score, helps admins to see what needs attention, and guides them to key improvement actions.
 
-:::image type="content" source="../media/compliance-manager-inline.png" lightbox="../media/compliance-manager-expanded.png" alt-text="Compliance manager overview pane":::
+:::image type="content" source="../media/compliance-manager-inline.png" lightbox="../media/compliance-manager-expanded.png" alt-text="Screen shot of teh Compliance Manager overview pane.":::
 
 Compliance Manager uses several data elements to help manage compliance activities. As admins use Compliance Manager to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key elements: controls, assessments, templates, and improvement actions.
 

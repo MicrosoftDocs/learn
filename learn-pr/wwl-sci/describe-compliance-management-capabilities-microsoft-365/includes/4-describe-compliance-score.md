@@ -2,7 +2,7 @@ Compliance score measures progress in completing recommended improvement actions
 
 Admins can get a breakdown of the compliance score in the Compliance Manager overview pane.
 
-:::image type="content" source="../media/compliance-score-breakdown-inline.png" lightbox="../media/compliance-score-breakdown-expanded.png" alt-text="A breakdown of compliance score":::
+:::image type="content" source="../media/compliance-score-breakdown-inline.png" lightbox="../media/compliance-score-breakdown-expanded.png" alt-text="Screen shot of the breakdown of the organization's compliance score.":::
 
 ### How to understand the compliance score
 
@@ -24,7 +24,7 @@ The following are subcategories of actions that can be classified as mandatory o
 
 Organizations accumulate points for every action completed. And the compliance score is shown as a percentage representing all the actions completed, compared with the ones outstanding.
 
-:::image type="content" source="../media/compliance-score-details-inline.png" lightbox="../media/compliance-score-details-expanded.png" alt-text="Example of a compliance score":::
+:::image type="content" source="../media/compliance-score-details-inline.png" lightbox="../media/compliance-score-details-expanded.png" alt-text="Screen shot of an organization's compliance score, including the impact that improvement actions have on the compliance score.":::
 
 ### What is the difference between Compliance Manager and compliance score?
 
