@@ -23,7 +23,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 1. Run the `az login` command to sign-in if you haven't already.
 1. When you create a new Azure resource, you can create a new resource group or use an existing one. This command shows you how to create a new resource group. Use the name **HikingConversations-RG** but you can substitute the name of your choice, or use an existing group's name.
 
-    ```azurecli-interactive
+    ```azurecli
     az group create \
     --name HikingConversations-RG
     --location eastus
@@ -31,7 +31,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
 1. Run the following command to create an OpenAI resource in the **HikingConversations-RG** resource group. Name the OpenAI resource **HikingConversationsAI**.
 
-    ```azurecli-interactive
+    ```azurecli
     az cognitiveserices account create \
     -n HikingConversationsAI
     -g HikingConversations-RG
@@ -42,7 +42,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
 1. Next we want to deploy the GPT-35-Turble model to the OpenAI resource we created. Call the model deployment **HikingRecommendationTurbo**. Note we're using **HikingConversations-RG** as the resource group name, **HikingConversationsAI** as the OpenAI resource name, if you used different values make sure you substitute those values.
 
-    ```azurecli-interactive
+    ```azurecli
     az cognitiveservices account deployment create \
     -g HikingConversations-RG \
     -n HikingConversationsAI \
@@ -57,7 +57,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
     **The endpoint**
 
-    ```azurecli-interactive
+    ```azurecli
     az cognitiveservices account show \
     -g HikingConversations-RG \
     -n HikingConversationsAI \
@@ -66,7 +66,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
     **The primary API key**
 
-    ```azurecli-interactive
+    ```azurecli
     az cognitiveservices account keys list \
     -g HikingConversations-RG \
     -n HikingConversationsAI \
