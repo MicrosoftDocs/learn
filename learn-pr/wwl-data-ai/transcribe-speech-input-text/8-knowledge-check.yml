@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What information do you need from your Azure AI Speech service Azure resource to consume it using the Azure AI Speech SDK?"
+  - content: "What information do you need from your Azure AI Speech service resource to consume it using the Azure AI Speech SDK?"
     choices:
     - content: "The location and one of the keys"
       isCorrect: true
