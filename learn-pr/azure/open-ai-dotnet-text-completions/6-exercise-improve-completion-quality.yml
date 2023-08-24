@@ -9,6 +9,6 @@ metadata:
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-improve-completion-quality.md)]
