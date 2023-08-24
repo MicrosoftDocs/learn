@@ -12,7 +12,7 @@ The completions endpoint is the core component of the API service. This API prov
 
 ## Text completions
 
-The completions endpoint can be used for a wide variety of tasks. It provides a simple but powerful text-in, text-out interface to any of the Azure OpenAI models. You input some text as a prompt, and the model generates a text completion that attempts to match whatever context or pattern you gave it. For example, if you give the API the prompt, "As Descartes said, I think, therefore", it returns the completion " I am" with high probability.
+In this unit we'll learn about text completions. The completions endpoint can be used for a wide variety of tasks. It provides a simple but powerful text-in, text-out interface to any of the Azure OpenAI models. You input some text as a prompt, and the model generates a text completion that attempts to match whatever context or pattern you gave it. For example, if you give the API the prompt, "As Descartes said, I think, therefore", it returns the completion " I am" with high probability.
 
 The actual completion results you see may differ because the AI is stochastic by default. In other words, you might get a slightly different completion every time you call it, even if your prompt stays the same.
 

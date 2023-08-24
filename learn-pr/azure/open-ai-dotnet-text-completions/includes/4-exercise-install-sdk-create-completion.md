@@ -138,12 +138,8 @@ Let's create the initial system role prompt that will provide the initial instru
     ```csharp
     var systemPrompt = 
     """
-    You are a hiking enthusiast who helps people discover fun hikes in their area. You are upbeat and friendly. You introduce yourself when first saying hello. When helping people out, you always ask them for this information to inform the hiking recommendation you provide:
-
-    1. Where they are located
-    2. What hiking intensity they are looking for
-
-    You will then provide three suggestions for nearby hikes that vary in length after you get that information. You will also share an interesting fact about the local nature on the hikes when making a recommendation.
+    You are a hiking enthusiast who helps people discover fun hikes. You are upbeat and friendly. 
+    You ask people what type of hikes they like to take and then suggest some.
     """;
     ```
 
@@ -169,6 +165,8 @@ Next we'll send the first message to the model, initiating the conversation.
 
     ChatMessage userGreetingMessage = new (ChatRole.User, userGreeting);
     completionOptions.Messages.Add(userGreetingMessage);
+
+    Console.WriteLine($"User >>> {userGreeting}");
     ```
 
 1. Next call the `GetChatCompletionsAsync` function of the `OpenAIClient` class. You pass in the deployment name of the model you wish to use along with the `ChatCompletionOptions`.
@@ -182,7 +180,7 @@ Next we'll send the first message to the model, initiating the conversation.
     ```csharp
     ChatMessage assistantResponse = response.Choices[0].Message;
 
-    Console.WriteLine(assistantResponse.Content);
+    Console.WriteLine($"AI >>> {assistantResponse.Content}");
     ```
 
 1. Let's see what we have so far, you can run the application by entering `dotnet run` into the terminal.
@@ -191,7 +189,7 @@ Next we'll send the first message to the model, initiating the conversation.
 In one example run, we received the following:
 
 ```console
-Hello there! My name is HikeFinder, and I'm here to help you find the perfect hike in your area. Before we get started, could you tell me where you're located and what hiking intensity you're looking for today? 
+Hello! Great to hear from you. What type of hikes are you interested in? Do you enjoy easy scenic walks, challenging trails, or something in between? Do you prefer hikes with waterfalls, mountain views, or unique geological formations?
 ```
 
 You may receive something different as the model is nondeterministic, or may produce a different output even with the same input.
@@ -211,9 +209,11 @@ Let's continue on by responding to the conversation and then outputting the resp
     ```csharp
     var hikeRequest = 
     """
-    I live near Seattle and would like a strenous hike near Snoqualmie that ends with
+    I would like a strenous hike near where I live that ends with
     a view that is amazing.
     """;
+
+    Console.WriteLine($"User >>> {hikeRequest}");
 
     ChatMessage hikeMessage = new (ChatRole.User, hikeRequest);
 
@@ -223,7 +223,13 @@ Let's continue on by responding to the conversation and then outputting the resp
 
     assistantResponse = response.Choices[0].Message;
 
-    Console.WriteLine(assistantResponse.Content);
+    Console.WriteLine($"AI >>> {assistantResponse.Content}");
+    ```
+
+1. You can experiment by changing the `hikeRequest` variable to request different types of hikes. In one example run we received:
+
+    ```console
+    Great choice! If you're up for a challenge, I recommend checking out the hike to Poo Poo Point in Issaquah, Washington. The hike is 7.2 miles roundtrip, with an elevation gain of 1,858 feet, so it's definitely a workout. But the stunning views of Mount Rainier and the Cascade Mountains make it all worthwhile. Plus, you'll get to see paragliders taking off from Poo Poo Point. It's a popular hike, so I recommend going early to avoid crowds. Let me know if you need more information!
     ```
 
 ## Summary

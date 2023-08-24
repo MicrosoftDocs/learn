@@ -2,6 +2,8 @@ Prompt construction can be difficult. In practice, the prompt acts to configure 
 
 When you send well-constructed prompts to the model, the model returns better completions.
 
+In our hiking recommendation bot, a great system prompt helps the model get ready to recommend appropriate hikes. And good user prompts further refine the recommendations the model will return.
+
 In this unit, we'll talk about the general concepts and patterns that can be used to construct prompts and look at some techniques that can be used to improve the quality of the completions.
 
 ## Basics
@@ -16,11 +18,11 @@ When using the Completion API there's no differentiation between different parts
 
 ### Instructions
 
-Instructions are likely the most commonly used prompt component. They're the part of the prompt that tells the model what to do and can range from simple to complex. For example, _Write an introduction for a weekly newsletter_ or _Write an introduction for a weekly newsletter to my company named Constoso. It should mention the great all hands meeting we had last week and thank the team for all their hard work over the past few months._.
+Instructions are likely the most commonly used prompt component. They're the part of the prompt that tells the model what to do and can range from simple to complex. For example, _Recommend hikes_ or _You are a hiking enthusiast who helps people discover fun hikes in their area. You are upbeat and friendly. You introduce yourself when first saying hello. When helping people out, you always ask them where they are located and the hiking intensity desired to inform the hiking recommendation you provide_.
 
 ### Primary content
 
-Primary content refers to some sort of text that is being processed or transformed by the model. It's typically used in conjunction with instructions. For example, _Can you please tell me how to get to the museum? Translate to French:_.
+Primary content refers to some sort of text that is being processed or transformed by the model. It's typically used in conjunction with instructions. For example, _You will then provide three suggestions for nearby hikes that vary in length after you get that information._.
 
 Primary content can be much longer, such as asking the model to summarize a Wikipedia article.
 
@@ -31,25 +33,25 @@ Successful prompts often rely on the practice of "one-shot" or "few-shot" learni
 The use of prompts with no examples is sometimes referred to as "zero-shot" learning.
 
 ```text
-Example: This product worked well for my needs and my cat loved it.
-Sentiment: Positive.
+Hike request: I live near Seattle and would like an easy hike.
+Recommendation: That's great to hear, the Seattle area has some of the best hikes in the nation! You should try Little Si, you'll love it.
 
-Example: My dog would not play with this toy.
-Sentiment: Negative.
+Hike request: I want to go on a hike in the North Cascades that will blow my mind.
+Recommendation: You won't find a bad hike in the North Cascades. However, I hear the Sahale Arm stops people in their tracks with its beauty.
 
-Example: My hamster ate the food but that's about it.
-Sentiment:
+Hike request: I'd like to find a strenuous hike that's just like the Enchantments, but without as many people.
+Recommendation:
 ```
 
 ### Cue
 
 Cues act as the “jumpstart” for the output of the model, helping to direct the model to the desired output. It's often a prefix that the model can build onto. A cue can direct the completion to include key elements. They're often used along with instructions.
 
-The following example shows a single cue to summarize an email message.
+The following example shows a single cue to summarize many trail reviews.
 
 | Prompt | Completion |
 | --- | --- |
-| Performance reviews are a core component of our Performance & Development approach at Contoso.<br/>[...]<br/>Summarize the above email message:<br/>The key take away of the email message is: | that Contoso is improving the performance review experience by making it more focused on core priorities, expectations and impact. Additionally, they're upgrading the in-tool user experience with tips, resources and guidance. Finally, they're adding guidance on how to activate company-wide core priorities. |
+| Trail reviews are an important consideration on whether hikers go on a hike because the review lists the current conditions of the trail.<br/>[...]<br/>Summarize the above trails review:<br/>The key take away of the trail reviews are: | that the Mailbox Peak trail is muddy right now and the mosquitos are bad once you get above the tree line. There are also a lot of people on the trail starting mid-morning. |
 
 ### Supporting content
 
