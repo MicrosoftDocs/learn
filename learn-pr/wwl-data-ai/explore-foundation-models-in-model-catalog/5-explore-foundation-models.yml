@@ -11,6 +11,6 @@ metadata:
   ms.author: madiepev
   ms.topic: interactive-tutorial
   ms.service: machine-learning
-durationInMinutes: 6
+durationInMinutes: 7
 content: |
   [!include[](includes/5-explore-foundation-models.md)]

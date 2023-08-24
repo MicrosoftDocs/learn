@@ -11,6 +11,6 @@ metadata:
   ms.author: madiepev
   ms.topic: interactive-tutorial
   ms.service: machine-learning
-durationInMinutes: 7
+durationInMinutes: 10
 content: |
   [!include[](includes/4-transformers.md)]
