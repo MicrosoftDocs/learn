@@ -14,7 +14,7 @@ The dashboard provides you with an overview of your compliance status and the se
 
 **Example: Microsoft Defender for Cloud - Regulatory compliance dashboard** 
 
-:::image type="content" source="../media/regulatory-compliance-dashboard-drilldown-18dadd8b.png" alt-text="Screenshot showing an example of the regulatory compliance controls in the Azure dashboard with descriptions of feature functionality.":::
+:::image type="content" source="../media/regulatory-compliance-dashboard-drilldown-effbf75f.jpg" alt-text="Screenshot showing an example of the regulatory compliance controls.":::
 
 
 The following list has a numbered item that matches each location in the image above, and describes what is in the image:

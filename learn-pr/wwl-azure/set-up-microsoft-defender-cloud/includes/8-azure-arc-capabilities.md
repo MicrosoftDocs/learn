@@ -6,7 +6,7 @@ Currently, Azure Arc allows you to manage the following resource types hosted ou
  -  **SQL Server**: Extend Azure services to SQL Server instances hosted outside of Azure.
  -  **Virtual machines (preview)**: Provision, resize, delete, and manage virtual machines based on VMware vSphere or Azure Stack **hyper-converged infrastructure (HCI)** and enable VM self-service through role-based access
 
-:::image type="content" source="../media/azure-arc-features-capabilities-b6d7e2fd.png" alt-text="Diagram showing Azure Arc features and capabilities.":::
+:::image type="content" source="../media/azure-arc-features-capabilities-ba7744ce.jpg" alt-text="Diagram showing Azure Arc features and capabilities.":::
 
 
 ## Key features and benefits

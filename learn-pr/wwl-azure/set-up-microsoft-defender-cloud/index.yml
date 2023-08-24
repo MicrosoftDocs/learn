@@ -3,7 +3,7 @@ uid: learn.wwl.set-up-microsoft-defender-cloud
 metadata:
   title: Set up Microsoft Defender for Cloud
   description: "Discover how to leverage Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
-  ms.date: 08/23/2023
+  ms.date: 08/24/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -53,7 +53,7 @@ units:
 - learn.wwl.set-up-microsoft-defender-cloud.security-posture
 - learn.wwl.set-up-microsoft-defender-cloud.workload-protections
 - learn.wwl.set-up-microsoft-defender-cloud.deploy-microsoft-defender-for-cloud
-- learn.wwl.set-up-microsoft-defender-cloud.exercise-02a---enable-defender-for-cloud-on-your-azure-subscription
+- learn.wwl.set-up-microsoft-defender-cloud.exercise-03a-enable-defender-for-cloud-on-your-azure-subscription
 - learn.wwl.set-up-microsoft-defender-cloud.azure-arc
 - learn.wwl.set-up-microsoft-defender-cloud.azure-arc-capabilities
 - learn.wwl.set-up-microsoft-defender-cloud.microsoft-cloud-security-benchmark
@@ -66,7 +66,7 @@ units:
 - learn.wwl.set-up-microsoft-defender-cloud.define-brute-force-attacks
 - learn.wwl.set-up-microsoft-defender-cloud.understand-just-in-time-vm-access
 - learn.wwl.set-up-microsoft-defender-cloud.implement-just-in-time-vm-access
-- learn.wwl.set-up-microsoft-defender-cloud.exercise-02b---enable-just-in-time-access-on-vms
+- learn.wwl.set-up-microsoft-defender-cloud.exercise-03b-enable-just-in-time-access-on-vms
 - learn.wwl.set-up-microsoft-defender-cloud.knowledge-check
 - learn.wwl.set-up-microsoft-defender-cloud.summary
 badge:

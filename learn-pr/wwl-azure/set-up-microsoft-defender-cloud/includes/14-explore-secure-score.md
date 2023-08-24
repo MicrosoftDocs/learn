@@ -23,7 +23,7 @@ To increase your security, review Defender for Cloud's **recommendations page** 
 
 ## How your secure score is calculated
 
-## :::image type="content" source="../media/security-controls-large-2c356a99.png" alt-text="Screenshot showing Microsoft Defender for Cloud recommendations page."::: 
+## :::image type="content" source="../media/security-controls-large-4b9bbd29.jpg" alt-text="Screenshot showing an example of the Microsoft Defender for Cloud secure score recommendations security controls page."::: 
 
 To get all the possible points for security control, all of your **resources must comply with all of the security recommendations within the security control**. **For example**, Defender for Cloud has multiple recommendations regarding how to secure your management ports. You'll need to remediate them all to make a difference to your secure score.
 
