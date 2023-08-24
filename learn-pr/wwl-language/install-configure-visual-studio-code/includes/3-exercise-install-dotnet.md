@@ -1,21 +1,16 @@
-
-
-
 .NET is a cross-platform, open-source developer platform that can be used to develop different types of applications. It includes the software languages and code libraries used to develop .NET applications. You can write .NET applications in C#, F#, or Visual Basic.
 
 The .NET runtime is the code library that's required to run your C# applications. You may also see the .NET runtime referred to as the Common Language Runtime, or CLR. The .NET runtime isn't required to *write* your code, but it's required to actually *run* your applications.
 
 ## Check to see if .NET is already installed
 
-1. Ensure that you have Visual Studio Code open.
+1. Open the Windows **Command Prompt** app or another application that displays a terminal command prompt.
 
-    You can use the Windows Start menu to locate and open Visual Studio Code.
+    The Command Prompt and Windows PowerShell apps can be found on the Windows Start menu. You can also open either of these apps from the Windows Taskbar by entering either **cmd** or **powershell** respectively.
 
-1. On the **Terminal** menu, select **New Terminal**.
+    A command prompt, such as `C:\Users\AccountName>`, should be displayed.
 
-    You use the Terminal panel to enter a .NET CLI command.
-
-1. At the Terminal command prompt, type: `dotnet --version` and then press the Enter key.
+1. At the command prompt, type: `dotnet --version` and then press the Enter key.
 
     This command displays the version number if .NET is installed on your PC.
 
@@ -25,13 +20,13 @@ The .NET runtime is the code library that's required to run your C# applications
 
     If a version of .NET is installed, you should see a response message listing the version number similar to the following:
 
-    `7.0.201`
+    `7.0.306`
 
-1. Close Visual Studio Code.
+1. Close the command prompt window.
 
 ## Install the .NET 7 Software Development Kit
 
-Having the latest supported version of the .NET platform installed is recommended. Although .NET 6 is also supported, .NET 7 includes improvements that you may find helpful.
+If the .NET 7 Software Development Kit isn't already installed, install it now. Having the latest supported version of the .NET platform installed is recommended. Although .NET 6 is also supported, .NET 7 includes improvements that you may find helpful.
 
 > [!NOTE]
 > The C# training series that's available on Microsoft Learn uses .NET 7. Ensure that you have .NET 7 installed if you plan on completing this training.
@@ -46,6 +41,8 @@ Having the latest supported version of the .NET platform installed is recommende
 
     Your browser downloads the .NET SDK installer file.
 
+1. Wait for the installer file to finish downloading.
+
 1. Run the .NET SDK installer file.
 
     On a Windows PC, you can find your Downloads folder using File Explorer. Double-click the installation file to begin the installation process.
@@ -54,25 +51,22 @@ Having the latest supported version of the .NET platform installed is recommende
 
 1. Wait for the installation to complete.
 
-    Installation should take about less than a minute. Once installation is complete, a message displays confirming the installation was successful.
+    Installation should take about a minute. Once installation is complete, a message displays confirming the installation was successful.
 
 1. To close the installer window, select **Close**.
 
 ## Verify your installation
 
-1. Open Visual Studio Code.
+1. Open an application that displays a terminal command prompt.
 
-    > [!IMPORTANT]
-    > Visual Studio Code checks to see whether .NET is installed when it starts up. If you had Visual Studio Code open when you installed .NET, you will need to close it and then open a new instance to ensure that it recognizes that .NET is installed.
+1. At the command prompt, type: `dotnet --version` and then press the Enter key.
 
-1. On the **Terminal** menu, select **New Terminal**.
+    You need to open a new command prompt window after installing the .NET SDK to ensure that it's detected.
 
-1. At the Terminal command prompt, type: `dotnet --version` and then press the Enter key.
+1. Verify that a .NET 7 version number is listed.
 
-1. Ensure that a .NET version number is listed.
-
-    The version number is similar to: `7.0.201`
+    The version number displayed should be similar to: `7.0.306`
 
     You're likely to see a more recent version number. But it should begin with `7.` if you installed the .NET 7 SDK.
 
-Congratulations, you did it! You're now ready to begin coding C# in Visual Studio Code.
+Congratulations on getting .NET installed. You're now ready to start working in Visual Studio Code.

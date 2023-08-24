@@ -1,4 +1,4 @@
-In this unit, you'll use the Azure portal to create a storage account for a fictitious southern California surf report web app. The surf report site lets users upload photos and videos of local beach conditions. Viewers will use the content to help them choose the beach with the best surfing conditions. 
+In this unit, you use the Azure portal to create a storage account for a fictitious southern California surf report web app. The surf report site lets users upload photos and videos of local beach conditions. Viewers of the site use the content to help them choose the beach with the best surfing conditions. 
 
 Your list of design and feature goals is:
 
@@ -24,29 +24,29 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
     | Subscription | Concierge Subscription |
     | Resource group | <rgn>[sandbox resource group name]</rgn> from the dropdown list. |
     | **Instance details**| |
-    | Storage account name | Enter a unique name. This name will be used to generate the public URL to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must have 3 to 24 characters and can contain only lowercase letters and numbers. |
+    | Storage account name | Enter a unique name. This name is used to generate the public URL to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must have 3 to 24 characters and can contain only lowercase letters and numbers. |
     | Region | Select a location near to you from the dropdown list. |
     | Performance | *Standard*. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
-    | Redundancy | Select *Locally redundant storage (LRS)* from the dropdown list. In our case, the images and videos quickly become out-of-date and are removed from the site. As a result, there's little value to paying extra for global redundancy. If a catastrophic event results in data loss, you can restart the site with fresh content from your users. |
+    | Redundancy | Select *Locally redundant storage (LRS)* from the dropdown list. In our case, the images and videos quickly become out-of-date and are removed from the site. As a result, there's little value to paying extra for *Geo-redundant storage (GRS)*. If a catastrophic event results in data loss, you can restart the site with fresh content from your users. |
 
 1. Select **Next : Advanced**. On the **Advanced** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
-    | **Security** | 
-    | Require secure transfer for REST API operations | *Check*. This setting controls whether **HTTP** can be used for the REST APIs that access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set secure transfer to *enable*; using HTTPS over the network is considered a best practice. |
-    | Enable blob public access | *Check*. We'll allow clients to read data in that container without authorizing the request. |
-    | Enable storage account key access | *Check*. We'll allow clients to access data via SAS. |
+    | **Security** |
+    | Require secure transfer for REST API operations | *Check*. This setting controls whether **HTTP** can be used for the REST APIs that access data in the storage account. Setting this option to *enable* forces all clients to use **HTTPS**. Most of the time, you want to set secure transfer to *enable*; using HTTPS over the network is considered a best practice. |
+    | Allow enabling anonymous access on individual containers | *Check*. Blob containers, by default, don't permit anonymous access to their content. This setting allows authorized users to selectively enable anonymous access on specific containers. |
+    | Enable storage account key access | *Check*. We want to allow clients to access data via SAS. |
     | Default to Azure Active Directory authorization in the Azure portal | *Uncheck*. Clients are public, not part of an Active Directory. |
     | Minimum TLS version | Select *Version 1.2* from dropdown list. TLS 1.2 is a secure version of TLS, and Azure Storage uses it on public HTTPS endpoints. TLS 1.1 and 1.0 are supported for backwards compatibility. See *Warning* at end of table. |
     | Permitted scope for copy operations | Accept default |
-    | **Data Lake Storage Gen2** |
+    | **Hierarchical Namespace** |
     | Enable hierarchical namespace | *Uncheck*. Data Lake hierarchical namespace is for big-data applications that aren't relevant to this module. |
+    | **Access protocols** |
+    | Enable hierarchical namespace | Accept default. Blob and Data Lake Gen2 endpoints are provisioned by default. |
     | **Blob storage** |
-    | Enable SFTP| *Uncheck*. SFTP is disabled by default and isn't relevant to this module. |
-    | Enable network file system v3 | *Uncheck* (default). |
-    | Allow cross-tenant replication | *Uncheck*. Active Directory is not being used for this exercise. |
-    | Access tier | *Hot*. This setting is only used for Blob storage. The *Hot* access tier is ideal for frequently accessed data; the *Cool* access tier is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we'll use the high-performance option for our blobs. |
+    | Allow cross-tenant replication | *Uncheck*. Active Directory isn't being used for this exercise. |
+    | Access tier | *Hot*. This setting is only used for Blob storage. The *Hot* access tier is ideal for frequently accessed data; the *Cool* access tier is better for infrequently accessed data. This setting only sets the *default* value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we use the high-performance option for our blobs. |
     | **Azure Files**| |
     | Enable large file shares | *Uncheck*. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent. |
 
@@ -58,7 +58,7 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
     | Setting | Value |
     |---|---|
     | **Network connectivity**|
-    | Connectivity method | *Enable public access from all networks*. We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
+    | Network access | *Enable public access from all networks*. We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
     | **Network routing**|
     | Routing preference | *Microsoft network routing*. We want to make use of the Microsoft global network that is optimized for low-latency path selection. |
 
@@ -81,7 +81,7 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
 
 1. Select **Next : Tags**. Here, you can associate key/value pairs with the account for your categorization to determine if a feature is available to selected Azure resources.
 
-1. Select **Review + create** to validate your options and to ensure all the required fields are selected. If there are issues, this tab will identify them so you can correct them.
+1. Select **Next : Review** to validate your options and to ensure all the required fields are selected. If there are issues, this tab identifies them so you can correct them.
 
 1. When validation passes successfully, select **Create** to deploy the storage account.
 
