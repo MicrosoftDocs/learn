@@ -5,7 +5,7 @@ metadata:
   description: "Create speech-enabled apps with the Azure AI Speech service"
   ms.date: 03/02/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
   ms.subservice: speech-service

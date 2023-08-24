@@ -6,7 +6,7 @@ metadata:
   description: "Use the Azure AI Speech to text API"
   ms.date: 03/02/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: false
