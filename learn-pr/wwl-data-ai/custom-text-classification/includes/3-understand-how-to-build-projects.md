@@ -1,6 +1,6 @@
-Custom text classification projects are your workspace to build, train, improve, and deploy your classification model. You can work with your project in two ways: through *Language Studio* and via the REST API. Language Studio is the GUI that will be used in the lab, but the REST API has the same functionality. Regardless of which method you prefer, the steps for developing your model are the same.
+Custom text classification projects are your workspace to build, train, improve, and deploy your classification model. You can work with your project in two ways: through *Azure AI Language Studio* and via the REST API. Azure AI Language Studio is the GUI that will be used in the lab, but the REST API has the same functionality. Regardless of which method you prefer, the steps for developing your model are the same.
 
-## Language service project life cycle
+## Azure AI Language service project life cycle
 
 [![Diagram that shows a life cycle with steps to define labels, tag data, train model, view model, improve model, deploy model, and classify text.](../media/classify-development-lifecycle.png)](../media/classify-development-lifecycle.png#lightbox)
 
@@ -22,13 +22,13 @@ When labeling your data, you can specify which dataset you want each file to be:
 During the **Train model** step, there are two options for how to train your model.
 
 * **Automatic split** - Azure takes all of your data, splits it into the specified percentages randomly, and applies them in training the model. This option is best when you have a larger dataset, data is naturally more consistent, or the distribution of your data extensively covers your classes.
-* **Manual split** - Manually specify which files should be in each dataset. When you submit the training job, the Language service will tell you the split of the dataset and the distribution. This split is best used with smaller datasets to ensure the correct distribution of classes and variation in data are present to correctly train your model.
+* **Manual split** - Manually specify which files should be in each dataset. When you submit the training job, the Azure AI Language service will tell you the split of the dataset and the distribution. This split is best used with smaller datasets to ensure the correct distribution of classes and variation in data are present to correctly train your model.
 
 To use the automatic split, put all files into the *training* dataset when labeling your data (this option is the default). To use the manual split, specify which files should be in testing versus training during the labeling of your data.
 
 ## Deployment options
 
-The Language service allows each project to create both multiple models and multiple deployments, each with their own unique name. Benefits include ability to:
+The Azure AI Language service allows each project to create both multiple models and multiple deployments, each with their own unique name. Benefits include ability to:
 
 * Test two models side by side
 * Compare how the split of datasets impact performance
@@ -54,21 +54,21 @@ During deployment you can choose the name for the deployed model, which can then
 
 ## Using the REST API
 
-The REST API available for the Language service allows for CLI development of Language service projects in the same way that Language Studio provides a user interface for building projects. Language Studio is explored further in this module's lab.
+The REST API available for the Azure AI Language service allows for CLI development of Azure AI Language service projects in the same way that Azure AI Language Studio provides a user interface for building projects. Azure AI Language Studio is explored further in this module's lab.
 
 ### Pattern of using the API
 
-The API for the Language service operates asynchronously for most calls. In each step we submit a request to the service first, then check back with the service via a subsequent call to get the status or result.
+The API for the Azure AI Language service operates asynchronously for most calls. In each step we submit a request to the service first, then check back with the service via a subsequent call to get the status or result.
 
 With each request, a header is required to authenticate your request:
 
 |Key|Value|
 |--|--|
-|`Ocp-Apim-Subscription-Key`| The key to your Language resource |
+|`Ocp-Apim-Subscription-Key`| The key to your Azure AI Language resource |
 
 #### Submit initial request
 
-The URL to submit the request to varies on which step you are on, but all are prefixed with the endpoint provided by your Language resource.
+The URL to submit the request to varies on which step you are on, but all are prefixed with the endpoint provided by your Azure AI Language resource.
 
 For example, to train a model, you would create a **POST** to the URL that would look something like the following:
 
@@ -119,7 +119,7 @@ This URL is used in the next step to get the training status.
 
 #### Get training status
 
-To get the training status, use the URL from the header of the request response to submit a **GET** request, with same header that provides our Language service key for authentication. The response body will be similar to the following JSON:
+To get the training status, use the URL from the header of the request response to submit a **GET** request, with same header that provides our Azure AI Language service key for authentication. The response body will be similar to the following JSON:
 
 ```json
 {
