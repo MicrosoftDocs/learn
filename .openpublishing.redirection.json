@@ -26670,6 +26670,206 @@
       "source_path": "learn-pr/paths/develop-deploy-custom-iot-edge-modules/index.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-components-azure-digital-twins-solution/index.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-components-azure-digital-twins-solution/1-introduction.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-components-azure-digital-twins-solution/2-get-started-with-azure-digital-twins.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-components-azure-digital-twins-solution/3-examine-azure-digital-twins-solution.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-components-azure-digital-twins-solution/4-get-started-with-azure-digital-twins-models.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-components-azure-digital-twins-solution/5-examine-digital-twins-definition-language.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-components-azure-digital-twins-solution/6-examine-digital-twins-graph-construction.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-components-azure-digital-twins-solution/7-knowledge-check.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-components-azure-digital-twins-solution/8-summary.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/index.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/1-introduction.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/2-get-started-with-azure-digital-twins-service-tools.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/3-examine-azure-digital-twins-service-configuration.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/4-get-started-with-model-management.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/5-explore-azure-digital-twins-postman.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/6-get-started-with-azure-cli-for-azure-digital-twins.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/7-examine-azure-digital-twins-sdks.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/8-manage-digital-twins-graph.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/9-manage-digital-twin-relationships-graph.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/10-get-started-with-azure-digital-twins-queries.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/11-get-started-with-azure-functions-for-azure-digital-twins.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/12-examine-azure-digital-twins-event-data.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/13-examine-data-ingress-egress-processes.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/14-knowledge-check.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-digital-twins-solution-development-tools-processes/15-summary.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-troubleshoot-adt/index.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-troubleshoot-adt/1-introduction.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-troubleshoot-adt/2-examine-azure-digital-twins-metrics.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-troubleshoot-adt/3-examine-azure-digital-twins-diagnostic-settings.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-troubleshoot-adt/4-view-query-logs.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-troubleshoot-adt/5-enable-alerts.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-troubleshoot-adt/6-understand-azure-digital-twins-resource-health.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-troubleshoot-adt/7-knowledge-check.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/monitor-troubleshoot-adt/8-summary.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-digital-twins-implementation/index.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-digital-twins-implementation/1-introduction.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-digital-twins-implementation/2-implement-azure-digital-twins.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-digital-twins-implementation/3-knowledge-check.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-digital-twins-implementation/4-summary.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/extend-iot-solutions-by-using-azure-digital-twins/index.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
     }
   ]
 }
