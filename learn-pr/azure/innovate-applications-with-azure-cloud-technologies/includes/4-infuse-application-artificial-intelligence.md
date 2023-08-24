@@ -21,7 +21,7 @@ Azure offers tools and services that can help organizations build machine learni
 
 ### Azure Cognitive Services
 
-[Azure Cognitive Services](/azure/cognitive-services/what-are-cognitive-services?azure-portal=true) contains prebuilt models that don't require machine-learning expertise to introduce AI functionality to an application. Azure Cognitive Services encompasses many areas, such as vision, speech, language, decision, and search. It's easy to use, so organizations can use the power of AI without extensive machine-learning skills.
+[Azure Cognitive Services](/azure/ai-services/what-are-ai-services) contains prebuilt models that don't require machine-learning expertise to introduce AI functionality to an application. Azure Cognitive Services encompasses many areas, such as vision, speech, language, decision, and search. It's easy to use, so organizations can use the power of AI without extensive machine-learning skills.
 
 Tailwind Traders sees a high potential in Azure Cognitive Services, because its data-science department isn't fully operational. The company is evaluating these features to innovate the e-commerce application:
 
