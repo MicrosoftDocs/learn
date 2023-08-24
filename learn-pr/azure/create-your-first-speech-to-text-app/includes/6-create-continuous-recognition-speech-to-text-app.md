@@ -4,11 +4,11 @@ With that in mind, in the next exercise, you'll modify your existing application
 
 ## Creating an application using continuous recognition to transcribe audio files
 
-To create an application that will convert speech to text using Azure Cognitive Services' continuous recognition, your application will have to accomplish all of the following tasks:
+To create an application that will convert speech to text using Azure AI Speech continuous recognition, your application will have to accomplish all of the following tasks:
 
 - Include the `Microsoft.CognitiveServices.Speech` package.
 
-- Create a `SpeechConfig` class using the API key from your Azure Cognitive Services account.
+- Create a `SpeechConfig` class using the API key from your Azure AI services account.
 
 - Create a `AudioConfig` class using a WAVE file as the source.
 
