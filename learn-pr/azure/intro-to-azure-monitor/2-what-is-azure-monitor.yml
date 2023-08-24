@@ -7,8 +7,8 @@ metadata:
   description: Learn about monitoring and its benefits, Azure Monitor capabilities, and ways to monitor web applications.
   ms.prod: learning-azure-monitor
   ms.date: 4/15/2021
-  author: gerryaobrien
-  ms.author: gerryo
+  author: guywi-ms
+  ms.author: guywild
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 10
 content: |

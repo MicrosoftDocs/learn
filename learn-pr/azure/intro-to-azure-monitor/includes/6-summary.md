@@ -12,7 +12,7 @@ Azure Monitor:
 
 - [Azure Monitor documentation](/azure/azure-monitor/)
 - [Azure Monitor overview](/azure/azure-monitor/overview)
-- [Monitor Azure resources with Azure Monitor](/azure-monitor/essentials/monitor-azure-resource)
+- [Monitor Azure resources with Azure Monitor](/azure/azure-monitor/essentials/monitor-azure-resource)
 
 Data collection:
 
@@ -36,7 +36,7 @@ Azure Monitor Logs:
 
 Insights and visualizations:
 
-- [Azure Monitor Insights overview](/azure-monitor/insights/insights-overview)
+- [Azure Monitor Insights overview](/azure/azure-monitor/insights/insights-overview)
 - [Application Insights overview](/azure/azure-monitor/app/app-insights-overview)
 - [Container Insights](/azure/azure-monitor/containers/container-insights-overview)
 - [VM Insights](/azure/azure-monitor/vm/vminsights-overview)
@@ -47,4 +47,4 @@ Automated actions:
 
 - [What are Azure Monitor alerts?](/azure/azure-monitor/alerts/alerts-overview)
 - [Overview of autoscale in Azure](/azure/azure-monitor/autoscale/autoscale-overview)
-- [Detect and mitigate potential issues using AIOps and machine learning in Azure Monitor](/azure/azure-monitor/logs/aiops-machine-learning.md)
+- [Detect and mitigate potential issues using AIOps and machine learning in Azure Monitor](/azure/azure-monitor/logs/aiops-machine-learning)

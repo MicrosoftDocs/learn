@@ -2,7 +2,7 @@ This unit provides an overview of monitoring, Azure Monitor, and how Azure Monit
 
 ## Introduction to monitoring
 
-Besides web applications, your IT environment contains other resources and services, networks, and infrastructure. Monitoring tracks the state, health, behavior, and performance of your applications and IT environment. The goals of monitoring are to ensure that your applications and environment operate optimally, securely, and reliably, and to detect and address any issues that arise.
+Besides web applications, your IT environment contains other resources and services, networks, and infrastructure. Monitoring tracks the state, health, behavior, and performance of your applications and IT environment. The goals of monitoring are to ensure that your applications and environment operate optimally, securely, and reliably, and to detect and address any issues.
 
 Monitoring includes the following key activities:
 
@@ -23,11 +23,11 @@ Monitoring provides the following important benefits:
 
 ## Overview of Azure Monitor
 
-When you run an application built on various services and resources, a key element of monitoring is the ability to relate your application's performance and health to the services and resources it's built on. This ability, called *observability*, lets you analyze and troubleshoot application issues effectively. Azure Monitor provides features and tools for collecting, managing, and analyzing IT data from all of your Azure, other cloud, and on-premises resources.
+When you run an application built on various services and resources, a key element of monitoring is the ability to relate your application's performance and health to the components it's built on. This *observability* lets you analyze and troubleshoot application issues effectively. Azure Monitor provides features and tools for collecting, managing, and analyzing IT data from all of your Azure, other cloud, and on-premises resources.
 
 The following diagram shows a high-level architectural view of Azure Monitor.
 
-:::image type="content" source="media/overview-simple.svg" alt-text="Diagram that shows an overview of Azure Monitor with data sources on the left sending data to a central data platform and features of Azure Monitor on the right that use the collected data." border="false" lightbox="media/overview-blowout.svg":::
+:::image type="content" source="../media/overview-simple.svg" alt-text="Diagram that shows an overview of Azure Monitor with data sources on the left and features that use the collected data at right." border="false" lightbox="../media/overview-blowout.svg":::
 
 ### Data collection and storage
 
@@ -83,7 +83,7 @@ Azure Monitor Application Insights provides application performance monitoring (
 
 Interactive monitoring is one way to monitor your application. Another option is to configure alerts to send text messages or email to a person or team for further investigation, or to trigger response actions in certain situations.
 
-Azure Monitor Workbooks provide a flexible canvas for analyzing data and creating rich visual reports in the Azure portal. Workbooks can tap into multiple Azure data sources and combine them into unified interactive experiences. You can use the readymade workbooks that Azure Monitor provides, or create your own workbooks from predefined templates.
+Azure Monitor Workbooks provide a flexible canvas for analyzing data and creating rich visual reports in the Azure portal. Workbooks can tap into multiple Azure data sources and combine them into unified interactive experiences. You can use the ready-made workbooks that Azure Monitor provides, or create your own workbooks from predefined templates.
 
 The following image shows three types of workbooks that display logged data in different chart and table formats.
 
@@ -91,5 +91,5 @@ The following image shows three types of workbooks that display logged data in d
 
 You can add the visualizations you create in Azure Monitor to Azure dashboards, which let you combine different kinds of data into a single pane in the Azure portal.
 
-:::image type="content" source="../media/dashboard.png" alt-text="Screenshot of an Azure dashboard displaying metrics in graph format for application performance metrics on the left and security incidents on the right.":::
+:::image type="content" source="../media/dashboard.png" alt-text="Screenshot of an Azure dashboard that displays metrics in graph format for application performance metrics at left and security incidents at right.":::
 
