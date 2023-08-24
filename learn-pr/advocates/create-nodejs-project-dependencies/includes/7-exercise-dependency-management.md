@@ -2,10 +2,10 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
 
 ## Upgrade app dependencies
 
-1. 1. In a new terminal window (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>), change to the folder that has the cloned files for this exercise:
+1. In a new terminal window (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>), change to the folder that has the files for this exercise:
 
    ```bash
-   cd node-dependencies/7-exercise-dependency-management
+   cd ../7-exercise-dependency-management
    ```
 
 1. Install the dependencies by running this command:

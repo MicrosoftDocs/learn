@@ -61,7 +61,7 @@ You're given some code that parses an address from a string. Your task should be
 
    Save your changes and close the package.json file.
 
-1. In the terminal, create a new folder named **\_\_tests\_\_**.
+1. In the terminal, create a new subfolder named **\_\_tests\_\_**.
 
    ```bash
    mkdir __tests__
