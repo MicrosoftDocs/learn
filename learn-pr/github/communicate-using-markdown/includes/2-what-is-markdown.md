@@ -3,7 +3,7 @@ Markdown is a markup language that offers a lean approach to content editing by 
 In this unit, we'll discuss the structure and syntax of Markdown. We'll also cover features of GitHub-Flavored Markdown (GFM), which are syntax extensions that allow you to integrate GitHub features into content.
 
 > [!NOTE]
-> This unit is intended to give you a taste of what Markdown is about. For a more in-depth review, reference [Markdown syntax description](https://daringfireball.net/projects/markdown/syntax?azure-portal=true) or [GitHub-Flavored Markdown Spec](https://github.github.com/gfm/?azure-portal=true).
+> This unit is intended to give you a taste of what Markdown is about. For a more in-depth review, reference the "Markdown syntax description" and "GitHub-Flavored Markdown Spec" articles in the Summary section at the end of this module.
 
 ## Emphasize text
 
@@ -194,7 +194,7 @@ GFM supports various shortcode formats to make it easy to link to issues and pul
 | `GH-` and issue or pull request number | GH-3602 | [GH-3602](https://github.com/desktop/desktop/pull/3602) |
 | `Username/Repository#` and issue or pull request number | desktop/desktop#3602 | [desktop/desktop#3602](https://github.com/desktop/desktop/pull/3602) |
 
-For more information, see [Autolinked references and URLs](https://help.github.com/articles/autolinked-references-and-urls/).
+For more information, refer to the "Autolinked references and URLs" article in the Summary section at the end of this module.
 
 ## Link specific commits
 
@@ -217,8 +217,6 @@ Typing an `@` symbol followed by a GitHub username sends a notification to that 
 ```
 
 [@githubteacher](https://github.com/githubteacher)
-
-For more information, see [Receiving notifications about activity on GitHub](https://help.github.com/categories/receiving-notifications-about-activity-on-github/).
 
 ## Track task lists
 
