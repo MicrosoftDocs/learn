@@ -196,6 +196,7 @@ async function main() {
 main();
 ```
 
+Congratulations! You've read the files, parsed the JSON, and written the total to a file. You've completed the project!
 
 ## Cleanup development container
 

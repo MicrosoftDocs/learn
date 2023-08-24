@@ -74,24 +74,23 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
 
 ## Find the sales.json files
 
-You need to find all the files in only the topmost location: the *stores* folder.
+Your task is to find all the files in the *stores* folder.
 
 Expand the *stores* folder and each of the numbered folders inside.
 
 :::image type="content" source="../media/folder-structure.png" alt-text="Screenshot that shows the project folder structure.":::
 
-
 ### Include the fs module
 
-1. Select the *index.js* file to open it in the editor.
+1. In the `./nodejs-files` subfolder, create a *index.js* file to open it in the editor.
 
-1. Include the *fs* module at the top of the file.
+1. At the top of the file, add the following code in include the *fs* module is available to the code in the file.
 
    ```javascript
    const fs = require("fs").promises;
    ```
 
-1. Create a `main` method. This method is the entry point for your code. The last line of code in this file invokes the `main` method.
+1. Next, create tnode he `main` method is the entry point for your code. The last line of code in this file invokes the `main` method.
 
    ```javascript
    const fs = require("fs").promises;
