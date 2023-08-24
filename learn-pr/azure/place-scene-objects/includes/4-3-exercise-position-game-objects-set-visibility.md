@@ -2,8 +2,7 @@ Now let's learn how to create parent objects, add prefabs to the scene, and use 
 
 ## Import the tutorial assets
 
-To get started, first download the following Unity custom package:
-[MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage).
+To get started, first download the following Unity custom package: [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0-pre.18.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v3.0.0-pre.18/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0-pre.18.unitypackage)
 
 1. In the Unity menu, select **Assets** > **Import Package** > **Custom Package...**.
 

@@ -28,8 +28,8 @@ When you're finished, close the **Project Settings** window and continue on with
 
 2. Download and import the following Unity custom packages in this order:
 
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/tag/getting-started-v2.7.2)
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.12.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/tag/azure-spatial-anchors-v2.12.0)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0-pre.18.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v3.0.0-pre.18/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0-pre.18.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.3.0.0-pre.18.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v3.0.0-pre.18/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.3.0.0-pre.1)
 
     > [!Note]
     > Importing both MRTK3 and ASA may cause errors when the ARFoundation package version doesn't match the imported ARSubsystems version. Until this is fixed, you can manually add com.unity.xr.arsubsystems version 5.0.2 to the project's Package Manager as a [workaround](/windows/mixed-reality/develop/unity/known-issues). 

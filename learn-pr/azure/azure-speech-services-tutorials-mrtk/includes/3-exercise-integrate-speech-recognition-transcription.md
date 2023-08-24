@@ -31,8 +31,8 @@ As a prerequisite, make sure you've completed the steps below to initialize your
 1. Download and **import** the following Unity custom packages **in the order they are listed**:
 
     * [Microsoft.CognitiveServices.Speech.N.N.N.unitypackage](https://aka.ms/csspeech/unitypackage) (latest version)
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.3/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage)
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/2.5.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0-pre.18.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v3.0.0-pre.18/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0-pre.18.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.3.0.0-pre.18.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/Azure Speech Services v3.0.0-pre.18/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.3.0.0-pre.18.unitypackage)
 
 2. Once you import the tutorial assets your Project window should look like this:
 
