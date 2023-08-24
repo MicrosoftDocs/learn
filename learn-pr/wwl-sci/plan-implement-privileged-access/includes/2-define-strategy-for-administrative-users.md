@@ -65,13 +65,13 @@ For Azure AD roles, it's common for organizations to assign the Global Administr
 
 Follow these steps to implement the principle of least privilege for your Azure AD roles.
 
-1. Understand the granularity of the roles by reading and understanding the available Azure AD administrator roles. You and your team should also reference administrator roles by identity task in Azure AD, which explains the least privileged role for specific tasks.
-1. List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.
+1.  Understand the granularity of the roles by reading and understanding the available Azure AD administrator roles. You and your team should also reference administrator roles by identity task in Azure AD, which explains the least privileged role for specific tasks.
+2.  List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.
     
     :::image type="content" source="../media/new-preview-page-6eed0acb.png" alt-text="Screenshot of the Discovery and insights page to reduce exposure via privileged roles.":::
     
-1. For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Azure AD. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
-1. For all other Azure AD roles, review the list of assignments, identify administrators who no longer need the role, and remove them from their assignments.
+3.  For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Azure AD. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
+4.  For all other Azure AD roles, review the list of assignments, identify administrators who no longer need the role, and remove them from their assignments.
 
 To automate the last two steps, you can use access reviews in PIM. Following the steps in "Start an access review for Azure AD roles in Privileged Identity Management," you can set up an access review for every Azure AD role that has one or more members.
 

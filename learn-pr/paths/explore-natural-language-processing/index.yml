@@ -3,20 +3,17 @@ uid: learn.wwl.explore-natural-language-processing
 metadata:
   title: 'Microsoft Azure AI Fundamentals: Explore natural language processing'
   description: 'Microsoft Azure AI Fundamentals: Explore natural language processing'
-  ms.date: 03/24/2022
+  ms.date: 08/16/2023
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'Microsoft Azure AI Fundamentals: Explore natural language processing'
 prerequisites: |
   Ability to navigate the Azure portal.
-video:
-  title: "Explore natural language processing"
-  url: https://www.microsoft.com/videoplayer/embed/RWxEO0
 summary: |
   Natural language processing supports applications that can see, hear, speak with, and understand users.  Using text analytics, translation, and language understanding services, Microsoft Azure makes it easy to build applications that support natural language.
-iconUrl: /training/achievements/explore-natural-language-processing.svg
+iconUrl: /learn/achievements/explore-natural-language-processing.svg
 levels:
 - beginner
 roles:
@@ -26,8 +23,6 @@ roles:
 - solution-architect
 - student
 products:
-- ai-services
-- azure-language-understanding
 - azure-portal
 subjects:
 - natural-language-processing
