@@ -2,7 +2,7 @@ This module presented an overview of monitoring, Azure Monitor, and Azure Monito
 
 You also saw how you can consume and transmit monitoring information with Azure Monitor Insights, visualizations, and dashboards. You learned about alerts and automated actions that can proactively respond to and sometimes correct application issues.
 
-Azure Monitor is a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. Azure Monitor helps you evaluate application performance and proactively identify issues to maximize the availability and performance of your applications.
+Azure Monitor is a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. Azure Monitor helps you evaluate application performance and proactively identify issues to maximize the availability and performance of your application.
 
 ## Learn more
 

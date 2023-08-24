@@ -64,9 +64,9 @@ summary: "Learn how to use Azure Monitor to provide insights into your Azure res
 ###
 abstract: |
   - Understand the uses and importance of monitoring.
-  - Know the basics of how Azure Monitor works to monitor Azure applications and infrastructure.
+  - Learn the basics of how Azure Monitor works to monitor Azure applications and infrastructure.
   - Describe the functions of Azure Monitor Logs, Metrics, and Insights.
-  - Determine how Azure Monitor can support your Azure application and resource monitoring needs.
+  - Know how Azure Monitor can support your Azure resource monitoring needs.
 ###########################################################################
 ###
 ### Prerequisites
@@ -89,8 +89,10 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - Basic knowledge of Azure portal navigation and Azure resources
-  - Basic understanding of application and resource scaling and performance considerations
+  Basic knowledge and understanding of the following concepts:
+    - Azure portal navigation and resource management
+    - Azure web application deployment
+    - Application and resource scaling and performance
 ###########################################################################
 iconUrl: /training/achievements/intro-to-azure-monitor.svg
 ###########################################################################

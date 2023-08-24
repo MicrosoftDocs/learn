@@ -37,7 +37,7 @@ durationInMinutes: 10
 content: |
 quiz:
   questions:
-  - content: "What action do you need to take to have Azure Monitor start recording metrics on your resources?"
+  - content: "What action do you need to take for Azure Monitor to start recording metrics on your resources?"
     choices:
     - content: "None. Azure Monitor begins recording as soon as you create resources."
       isCorrect: true
@@ -63,10 +63,10 @@ quiz:
     choices:
     - content: "Azure Event Hubs."
       isCorrect: false
-      explanation: "Incorrect. You can use Event Hubs to stream monitoring data to external tools, but it isn't the optimal tool for combining metrics into a single view."
+      explanation: "Incorrect. You can use Event Hubs to stream monitoring data to external tools, but it isn't an optimal tool for combining metrics into a single view."
     - content: "Log Analytics workspace."
       isCorrect: false
-      explanation: "Incorrect. A Log Analytics workspace is required for the Azure Monitor logging and lets you query the data, but isn't the optimal tool for combining metrics into a single view."
+      explanation: "Incorrect. A Log Analytics workspace is required for the Azure Monitor logging and lets you query data, but isn't an optimal tool for combining metrics into a single view."
     - content: "Azure Dashboards."
       isCorrect: true
       explanation: "Correct. Dashboards can combine different kinds of data into a single pane in the Azure portal."

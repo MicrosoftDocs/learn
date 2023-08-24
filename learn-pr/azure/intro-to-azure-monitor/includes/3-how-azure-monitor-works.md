@@ -14,7 +14,7 @@ Azure Monitor Metrics can collect several types of metrics, including:
 
 - **Azure platform metrics.** Azure Monitor starts collecting metrics data from Azure resources as soon as they're added to a subscription. A list of resource-specific metrics is automatically available for each Azure resource type.
 - **Custom metrics**. Azure Monitor can also collect metrics from other sources, including applications and agents running on VMs. You can send custom metrics to Azure Monitor via the Azure Monitor Agent, other agents and extensions, or directly to the Azure Monitor REST API.
-- **Prometheus metrics**. Azure Monitor managed service for Prometheus collects metrics from Azure Kubernetes Service (AKS) or other Kubernetes clusters. Prometheus metrics share some features with platform and custom metrics, but use different features to support open-source industry tools like PromQL and Grafana for analyzing and alerting.
+- **Prometheus metrics**. Azure Monitor managed service for Prometheus collects metrics from Azure Kubernetes Service (AKS) or other Kubernetes clusters. Prometheus metrics share some characteristics with platform and custom metrics, but have different features to support open-source analysis and alerting tools like PromQL and Grafana.
 
 You can use the Azure Monitor Metrics explorer to interactively analyze the data in your metrics database and chart the values of multiple metrics over time. To see the metrics for your application or any other resource in the Azure portal, select **Metrics** under **Monitoring** in the left navigation on that resource's page. Then select the metric you need from the **Metric** dropdown. You can pin the charts to a dashboard to view them with other visualizations.
 
@@ -55,4 +55,3 @@ Application Insights also includes the following features and abilities:
 - **Smart detection** detects failures and anomalies automatically through proactive telemetry analysis.
 - **Application Map** is a high-level, top-down view of your application architecture with at-a-glance visual references to component health and responsiveness.
 
-The next unit has information about other Azure Monitor Insights.
