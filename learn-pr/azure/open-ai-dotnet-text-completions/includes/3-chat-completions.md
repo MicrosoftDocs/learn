@@ -17,7 +17,7 @@ OpenAI trained the GPT-35-Turbo and GPT-4 models to accept input formatted as a 
 
 The Chat Completion API refers to the incoming prompts and outgoing responses as messages.
 
-The model accepts an array of message objects with a conversation organized by roles. There are 3 types of roles: System, User, and Assistant.
+The model accepts an array of message objects with a conversation organized by roles. There are three types of roles: System, User, and Assistant.
 
 ### The System role
 
@@ -32,13 +32,13 @@ You can customize the system role for your use case or just include basic instru
 
 ### The user and assistant roles
 
-The conversation happens between a user and the assistant. The user is the person entering prompts and interacting with the model. The responses from the model is represented by the system role.
+The conversation happens between a user and the assistant. The user is the person entering prompts and interacting with the model. The responses from the model are represented by the system role.
 
 The message the user sends to the model should follow best practices for designing prompts in order to get the highest quality responses.
 
 ## Message prompt examples
 
-Here are a few examples of different styles of prompts that you could use with the GPT-35-Turbo and GPT-4 models. These are just a starting point and you can experiment with different prompts to customize the behavior.
+Here are a few examples of different styles of prompts that you could use with the GPT-35-Turbo and GPT-4 models. The examples are just a starting point and you can experiment with different prompts to customize the behavior.
 
 ### Basic example
 
@@ -76,7 +76,7 @@ This means you will need to send the entire, updated conversation to the model e
 
 The token limit for `gpt-35-turbo` is 4096 tokens, whereas the token limits for `gpt-4` and `gpt-4-32k` are 8192 and 32768 respectively. You must stay under those limits otherwise you'll receive an error.
 
-You can keep track of the token count and remove the oldest messages from the array sent to the model. It is best to always keep the system message and only remove assistant or user messages. However over time this method of managing the conversation can cause the conversation quality to degrade as context of earlier parts of the conversation are lost.
+You can keep track of the token count and remove the oldest messages from the array sent to the model. It's best to always keep the system message and only remove assistant or user messages. However over time this method of managing the conversation can cause the conversation quality to degrade as context of earlier parts of the conversation are lost.
 
 Alternatively, once the token limit is reached, you can prompt the user to start a new conversation.
 

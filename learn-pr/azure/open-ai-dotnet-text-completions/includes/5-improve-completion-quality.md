@@ -2,9 +2,9 @@ Prompt construction can be difficult. In practice, the prompt acts to configure 
 
 When you send well-constructed prompts to the model, the model returns better completions.
 
-In our hiking recommendation bot, a great system prompt helps the model get ready to recommend appropriate hikes. And good user prompts further refine the recommendations the model will return.
+In our hiking recommendation bot, a great system prompt helps the model get ready to recommend appropriate hikes. And good user prompts further refines the recommendations the model returns.
 
-In this unit, we'll talk about the general concepts and patterns that can be used to construct prompts and look at some techniques that can be used to improve the quality of the completions.
+In this unit, we talk about the general concepts and patterns that can be used to construct prompts and look at some techniques that can be used to improve the quality of the completions.
 
 ## Basics
 
@@ -18,11 +18,11 @@ When using the Completion API there's no differentiation between different parts
 
 ### Instructions
 
-Instructions are likely the most commonly used prompt component. They're the part of the prompt that tells the model what to do and can range from simple to complex. For example, _Recommend hikes_ or _You are a hiking enthusiast who helps people discover fun hikes in their area. You are upbeat and friendly. You introduce yourself when first saying hello. When helping people out, you always ask them where they are located and the hiking intensity desired to inform the hiking recommendation you provide_.
+Instructions are likely the most commonly used prompt component. They're the part of the prompt that tells the model what to do and can range from simple to complex. For example, _Recommend hikes_ to _You're a hiking enthusiast who helps people discover fun hikes in their area. You're upbeat and friendly. You introduce yourself when first saying hello. When helping people out, you always ask them where they're located and the hiking intensity desired to inform the hiking recommendation you provide_.
 
 ### Primary content
 
-Primary content refers to some sort of text that is being processed or transformed by the model. It's typically used in conjunction with instructions. For example, _You will then provide three suggestions for nearby hikes that vary in length after you get that information._.
+Primary content refers to some sort of text being processed or transformed by the model. It's typically used in conjunction with instructions. For example, _You'll then provide three suggestions for nearby hikes that vary in length after you get that information._.
 
 Primary content can be much longer, such as asking the model to summarize a Wikipedia article.
 
