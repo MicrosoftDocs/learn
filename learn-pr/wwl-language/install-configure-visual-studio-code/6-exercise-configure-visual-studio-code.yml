@@ -4,11 +4,11 @@ title: Exercise - Configure Visual Studio Code Extensions
 metadata:
   title: Exercise - Configure Visual Studio Code Extensions
   description: "Exercise - Configure Visual Studio Code Extensions"
-  ms.date: 06/16/2023
+  ms.date: 08/23/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: vs-code
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-exercise-configure-visual-studio-code.md)]
+  [!include[](includes/6-exercise-configure-visual-studio-code.md)]
