@@ -42,7 +42,7 @@ public async Task<TranslationResult> Translate(string text, IList<string> target
         request.Method = HttpMethod.Post;
 
         // For a complete list of options, see API reference.
-        // https://learn.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate
+        // https://learn.microsoft.com/azure/ai-services/translator/reference/v3-0-translate
         request.RequestUri = new Uri(_options.Endpoint + Route + $"&to={languages}");
         request.Content = new StringContent(requestBody, Encoding.UTF8, "application/json");
         request.Headers.Add("Ocp-Apim-Subscription-Key", _options.ApiKey);
