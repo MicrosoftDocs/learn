@@ -30,7 +30,7 @@ By the end of this module, you have created a playable mini-game application wit
 
 In this module, you demonstrate your ability to:
 
-- Experience GitHub Codespaces as a development environment.
+- Use GitHub Codespaces as a development environment.
 - Develop input and output routines in a Python console application.
 - Use GitHub Copilot as an assistant.
 
@@ -39,5 +39,5 @@ In this module, you demonstrate your ability to:
 - Apply iteration statements using data inputs.
 - Process data.
 - Format data output.
-- Basic knowledge of methods in Python.
+- Basic knowledge of methods in Python, such as variables, lists and loops
 - A GitHub account.
