@@ -16,34 +16,34 @@ quiz:
   questions:
   - content: "What is the benefit of using Fabric notebooks over manual uploads for data ingestion?"
     choices:
-    - content: "Notebooks provide automation, ensuring a smooth and systematic approach to ingestion and transformation"
+    - content: "Notebooks provide an automated approach to ingestion and transformation."
       isCorrect: true
       explanation: "Correct. Fabric notebooks provide automation for ingestion and transformation, ensuring a smooth and systematic approach."
-    - content: "Pipelines allow you to orchestrate the Copy Data and transformations"
+    - content: "Notebooks can orchestrate the Copy Data activity and transformations."
       isCorrect: false
-      explanation: "Incorrect. Pipelines may require dataflows or notebooks for transformations, but they do not provide automation for ingestion like notebooks do."
-    - content: "Fabric notebooks offer a UI experience for large datasets"
+      explanation: "Incorrect. Pipelines use the Copy Data activity, but don't support transformations without a notebook or dataflow."
+    - content: "Notebooks offer a user-friendly, low-code experience for large datasets."
       isCorrect: false
-      explanation: "Incorrect. Dataflows offer a UI experience, but they are not as performant with large datasets."
+      explanation: "Incorrect. Dataflows offer a UI experience, but they are not as performant as notebooks with large datasets."
   - content: "What is the purpose of V-Order and Optimize Write in Delta tables?"
     choices:
-    - content: "To enable faster and more efficient writes by various compute engines."
+    - content: "V-Order and Optimize Write sorts the Delta table when queried with PySpark in a Fabric Notebook."
       isCorrect: false
-      explanation: "Incorrect. V-Order enables faster and more efficient reads, not writes."
-    - content: "To improve the performance and reliability of Delta tables by applying special sorting, distribution, encoding, and compression on parquet files at write-time, and reducing the number of files written and increasing their size."
+      explanation: "Incorrect. V-Order and Optimize Write sort the order and optimizing file size and count when writing to a Delta table."
+    - content: "V-Order and Optimize Write enhance Delta tables by sorting data and creating fewer, larger Parquet files."
       isCorrect: true
-      explanation: "Correct. V-Order and Optimize Write are used to improve the performance and reliability of Delta tables by applying special sorting, distribution, encoding, and compression on parquet files at write-time, and reducing the number of files written and increasing their size."
-    - content: "To reduce the size of Delta tables and increase their number of files."
+      explanation: "Correct. V-Order allows data sorting and Optimize Write creates more efficient file sizes."
+    - content: "V-Order and Optimize Write create many small csv files."
       isCorrect: false
-      explanation: "Incorrect. Optimize Write reduces the number of files written and increases their size, but it's not used to reduce the size of Delta tables."
-  - content: "What is the purpose of doing basic cleaning when loading data into Fabric lakehouse?"
+      explanation: "Incorrect. Fewer, larger Parquet files are created."
+  - content: "Why should you consider basic data cleansing when loading data into Fabric lakehouse?"
     choices:
-    - content: "To remove all null values and empty entries from the data"
+    - content: "To reduce data load size and processing time."
       isCorrect: false
-      explanation: "Incorrect. Basic cleaning involves removing duplicates, handling errors, and converting null values, but not necessarily getting rid of empty entries."
-    - content: "To ensure data quality and consistency"
+      explanation: "Incorrect. While the data size and processing time may be reduced, that's not the goal."
+    - content: "To ensure data quality and consistency."
       isCorrect: true
       explanation: "Correct. Basic cleaning is done to ensure data quality and consistency before moving on to transformation and modelling steps."
-    - content: "To make the data more complex for data scientists to explore"
+    - content: "To enforce data privacy and security measures."
       isCorrect: false
-      explanation: "Incorrect. Basic cleaning is done to ensure data quality and consistency."
+      explanation: "Incorrect. Basic cleaning has no direct impact on data security or privacy."

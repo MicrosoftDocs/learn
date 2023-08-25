@@ -9,8 +9,4 @@ Data scientists usually prefer fewer changes so they can explore wide tables. Th
 
 Whereas Power BI data analysts may require more transformation and modeling before they can use the data. While Power BI can transform data, starting with well-prepared data allows analysts to develop reports and insights more efficiently.
 
-*Optional Image: [Insert Image of Data Transformation Workflow]*
-
-*Optional Image: [Insert Image of Data Analyst Creating Power BI Report]*
-
 The [Use Apache Spark in Microsoft Fabric](/training/modules/use-apache-spark-work-files-lakehouse/) module teaches how to use Fabric notebooks to display, aggregate, and transform data with Spark.
