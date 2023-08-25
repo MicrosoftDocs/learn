@@ -1,8 +1,8 @@
-Azure Cognitive Services is a suite of more than 20 services and APIs that are backed by machine learning. Developers can use the APIs to incorporate intelligent features like facial recognition and sentiment analysis into their applications. Custom Vision is just one member of the Azure Cognitive Services family. Its purpose is to create image classification models that "learn" from labeled images you provide. Want to know whether a photo contains a picture of a flower? Train Custom Vision by using a collection of flower images. Then, it can tell you whether the next image includes a flower, or even what type of flower appears in an image.
+Azure AI services is a suite of more than 20 services and APIs that are backed by machine learning. Developers can use the APIs to incorporate intelligent features like facial recognition and sentiment analysis into their applications. Azure AI Custom Vision is just one member of the Azure AI services family. Its purpose is to create image classification models that "learn" from labeled images you provide. Want to know whether a photo contains a picture of a flower? Train Custom Vision by using a collection of flower images. Then, it can tell you whether the next image includes a flower, or even what type of flower appears in an image.
 
-:::image type="content" source="../media/custom-vision.jpg" alt-text="Screenshot that shows an example of results when using the Azure Cognitive Services Custom Vision service.":::
+:::image type="content" source="../media/custom-vision.jpg" alt-text="Screenshot that shows an example of results when using the Azure AI Custom Vision service.":::
 
-The Custom Vision service exposes two APIs: the [Custom Vision Training API](https://southcentralus.dev.cognitive.microsoft.com/docs/services/d9a10a4a5f8549599f1ecafc435119fa/operations/58d5835bc8cb231380095be3?azure-portal=true) and the [Custom Vision Prediction API](https://southcentralus.dev.cognitive.microsoft.com/docs/services/eb68250e4e954d9bae0c2650db79c653/operations/58acd3c1ef062f0344a42814?azure-portal=true). You can build, train, and test image classification models by using the [Custom Vision portal](https://www.customvision.ai/?azure-portal=true), or you can build, train, and test the models by using the Custom Vision Training API.  After a model is trained, you can use the Custom Vision Prediction API to build apps that use the model. Both APIs are REST APIs that can be called from various programming languages.
+The Custom Vision service exposes two APIs: the [Custom Vision Training API](https://southcentralus.dev.cognitive.microsoft.com/docs/services/d9a10a4a5f8549599f1ecafc435119fa/operations/58d5835bc8cb231380095be3?azure-portal=true) and the [Custom Vision Prediction API](https://southcentralus.dev.cognitive.microsoft.com/docs/services/eb68250e4e954d9bae0c2650db79c653/operations/58acd3c1ef062f0344a42814?azure-portal=true). You can build, train, and test image classification models by using the [Custom Vision portal](https://www.customvision.ai/?azure-portal=true), or you can build, train, and test the models by using the Custom Vision Training API. After a model is trained, you can use the Custom Vision Prediction API to build apps that use the model. Both APIs are REST APIs that can be called from various programming languages.
 
 In this unit, you'll create a Custom Vision model and train it to differentiate between various types of Arctic wildlife.
 
@@ -17,20 +17,20 @@ You'll begin by creating a new Custom Vision project. Then, you'll upload images
 1. Select **New Project**.
 1. In **Create new project**:
    1. Enter a project name and description.
-   1. Next to **Resource**, select **create new** to create a new Cognitive Services resource.
+   1. Next to **Resource**, select **create new** to create a new Azure AI services resource.
 
    :::image type="content" source="../media/create-new-project-1.png" alt-text="Screenshot that shows a new project name and description, and the create new link option selected.":::
 
-   _Create a new Cognitive Services project_
-   
+   *Create a new Cognitive Services project*
+
 1. In **Create New Resource**:
    1. For the resource name, enter *polar-bear-vision*.
    1. Select your subscription.
-   1. Next to **Resource Group**, select **create new** to create a new Cognitive Services resource group.
+   1. Next to **Resource Group**, select **create new** to create a new Azure AI services resource group.
 
    :::image type="content" source="../media/create-resource-1.png" alt-text="Screenshot that shows values to select or enter to create a new resource, with the create new link selected.":::
 
-   _Create a new Cognitive Services resource_
+   *Create a new Cognitive Services resource*
 
 1. In **Create New Resource Group**:
 
@@ -39,29 +39,29 @@ You'll begin by creating a new Custom Vision project. Then, you'll upload images
 
    :::image type="content" source="../media/create-resource-group.png" alt-text="Screenshot that shows the name and location for a new resource group, with the Create resource group button selected.":::
 
-   _Create a new Cognitive Services resource group_
+   *Create a new Cognitive Services resource group*
 
    The new resource group information is added in **Create New Resource**.
 
 1. In **Create New Resource**, select **Create resource**.
 
-   :::image type="content" source="../media/create-resource-2.png" alt-text="Screenshot that shows the complete settings for a Cognitive Services resource, with the Create resource button selected.":::
+   :::image type="content" source="../media/create-resource-2.png" alt-text="Screenshot that shows the complete settings for a Azure AI services resource, with the Create resource button selected.":::
 
-    _Create the Cognitive Services resource_
+    *Create the Cognitive Services resource*
 
 1. In **Create new project**, make sure you have the following settings:
 
-    - **Resource**: *polar-bear-vision*
-    - **Project Types**: *Classification*
-    - **Classification Types**: *Multiclass (Single tab per image)*
-    - **Domains**: *General*
+    - **Resource:** *polar-bear-vision*
+    - **Project Types:** *Classification*
+    - **Classification Types:** *Multiclass (Single tab per image)*
+    - **Domains:** *General*
 
     > [!NOTE]
     > A domain optimizes a model for specific types of images. For example, if your goal is to classify food images by the types of food they contain or by the ethnicity of the dishes, it's helpful to select the **Food** domain. For scenarios that don't match any of the offered domains, or if you're unsure which domain to choose, select the **General** domain.
 
     :::image type="content" source="../media/create-new-project-2.png" alt-text="Screenshot that shows settings in the Create new project dialog box.":::
 
-    _Verify your settings_
+    *Verify your settings*
 
     When all settings are correct, select **Create project**. Your project opens.
 
@@ -75,19 +75,19 @@ Now, you're ready to get the images to use in your project.
 
    :::image type="content" source="../media/add-images-to-project.png" alt-text="Screenshot that shows adding images to the Custom Vision project.":::
 
-   _Add images to the Custom Vision project_
+   *Add images to the Custom Vision project*
 
 1. In **Open**, select all the images of Arctic foxes found in the unzipped file folder. To choose the images, select **Open**.
 
    :::image type="content" source="../media/open-images.png" alt-text="Screenshot that shows all images selected and ready to open.":::
 
-   _Open the images to use in the project_
+   *Open the images to use in the project*
 
 1. For the **My Tags** setting for the images, enter *arctic-fox*. Then, select **Upload 130 files**. Wait for the upload to finish.
 
    :::image type="content" source="../media/add-tag-and-upload-images.png" alt-text="Screenshot that shows the tag setting and the images ready to upload.":::
 
-   _Add the image tag and upload the images to the project_
+   *Add the image tag and upload the images to the project*
 
    When the images are successfully uploaded, a summary is shown. Select **Done**.
 
@@ -113,7 +113,7 @@ Now it's time to train the model by using the images that you tagged and uploade
 
    :::image type="content" source="../media/train-model.png" alt-text="Screenshot that shows the Train button highlighted on the toolbar.":::
 
-   _Train the model_
+   *Train the model*
 
 1. Wait for the training process to finish. (The process might take a few minutes.) Then, review the training statistics that are shown for iteration 1.
 
@@ -122,7 +122,7 @@ Now it's time to train the model by using the images that you tagged and uploade
 
    :::image type="content" source="../media/training-results.png" alt-text="Screenshot that shows the results of training the model in iteration 1.":::
 
-   _Results of training the model_
+   *Results of training the model*
 
    *Precision* and *recall* are two separate but related measures of the model's accuracy. Suppose the model is presented with three polar bear images and three walrus images. It correctly identifies two of the images that contain polar bears as polar bear images, but it incorrectly identifies two of the walrus images as polar bear images. In this case, precision would be 50 percent (two of the four images it classified as polar bear images actually are polar bear images). Its recall would be 67 percent (it correctly identified two of the three polar bear images as polar bear images). Learn more about precision and recall in [Precision and recall](https://en.wikipedia.org/wiki/Precision_and_recall?azure-portal=true).
 
@@ -133,7 +133,7 @@ Now it's time to train the model by using the images that you tagged and uploade
 1. Download the [.zip file of test images](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/testing-images/testing-images.zip?azure-portal=true). Unzip the file locally on your computer.
 
 1. Select **Quick Test**.
- 
+
 1. Select **Browse local files**, and then go to the *testing-images/polar-bear* directory. Select any of the test images in that directory.
 
 1. In **Quick Test**, examine the results of the test. What's the probability that the image contains a polar bear? What's the probability that the image contains an Arctic fox or a walrus?
@@ -148,18 +148,18 @@ Now it's time to train the model by using the images that you tagged and uploade
 
    :::image type="content" source="../media/publish-model.png" alt-text="Screenshot that shows the Publish Model pane with the Publish button highlighted.":::
 
-   _Publish the model_
+   *Publish the model*
 
 1. Select **Prediction URL**.
 1. In **How to use the Prediction API**, copy the following values and save them to use later:
 
    1. Under **If you have an image URL**, copy and then save the URL in your favorite text editor, so you can get it later.
    1. For **Set Prediction-Key Header to**, copy and then save the key value. This value must be passed in each call to the prediction URL.
-   
+
    :::image type="content" source="../media/copy-prediction-url.png" alt-text="Screenshot that shows the How to use the Prediction A P I pane.":::
 
-   _Copy the Prediction API URL_
- 
+   *Copy the Prediction API URL*
+
 1. To finish, select **Got it!**.
 
 Now, you have a machine learning model that can discern whether an image contains a polar bear, and you have a URL and API key to invoke the model. The next step is to invoke the model each time an image is uploaded to Blob Storage. Azure Functions is the perfect tool for this job.
