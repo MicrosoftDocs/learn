@@ -10,7 +10,7 @@ Happy bird watching!
 
 Here are some helpful articles that offer more detailed information about some of the concepts we covered:
 
-[Quickstart: Create an image classification project by using the Custom Vision](/azure/ai-services/custom-vision-service/quickstarts)
+[Quickstart: Create an image classification project by using the Custom Vision](/azure/ai-services/custom-vision-service/quickstarts/image-classification)
 
 [Azure AI Custom Vision documentation](/azure/ai-services/custom-vision-service/overview)
 
