@@ -20,4 +20,4 @@ In this project, you can use GitHub Codespaces to develop the minigame applicati
 
 5. When Codespaces finishes creating the development environment, you see a Visual Studio Code window in the browser. You can use Visual Studio Code in the browser to develop the minigame application.
 
-![Codespaces](./media/quick-view.jpg)
+![Codespaces](./media/quick-view.png)
