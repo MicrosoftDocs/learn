@@ -1,7 +1,7 @@
 
 
 
-In this project, you'll use GitHub Codepaces to develop the minigame application. GitHub Codespaces is a hosted development environment that allows you to quickly create a complete development environment for your project. You can use Codespaces to develop console applications in Python without having to install Python or any other tools on your local computer.
+In this project, you can use GitHub Codepaces to develop the minigame application. GitHub Codespaces is a hosted development environment that allows you to quickly create a complete development environment for your project. You can use Codespaces to develop console applications in Python without having to install Python or any other tools on your local computer.
 
 1. To get started, you need a GitHub account. If you don't have an account, create one for free at [github.com](https://github.com/).
 
