@@ -75,7 +75,7 @@ Before we go further, let's highlight the key benefits of using Azure Government
    :::column span="3":::
      Supports the **broadest selection of services**, tools, and languages.
 
-     Azure Government is the only offering to span Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS). Services are offered in compute, networking, storage, web + mobile, databases, data + analytics, AI & cognitive services, Internet of Things (IoT), enterprise integration, security + identity, monitoring + management, and developer tools.
+     Azure Government is the only offering to span Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS). Services are offered in compute, networking, storage, web + mobile, databases, data + analytics, Azure AI services, Internet of Things (IoT), enterprise integration, security + identity, monitoring + management, and developer tools.
 
      Over 38 services are included in the Azure Government FedRAMP High compliance program.
      While not all Microsoft Azure services are available in Azure Government, the list is continually growing. For the most current list of services, see the [Products available by region tool](https://azure.microsoft.com/global-infrastructure/services/) (select Azure Government in the **Regions** dropdown). The services available in Azure Government are listed by category, as well as whether they are Generally Available or available through preview. 
