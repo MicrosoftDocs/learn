@@ -64,9 +64,9 @@ fetch("http://localhost:5100/pizza")
   .then(data => console.log(data)) // outputs mocked data 
 ```
 
-### Use a proxy
+### Talk to API with proxy
 
-Use a proxy to make requests toward the mocked API. 
+A proxy is a server that sits between the front-end app and the back-end API. The front-end app makes requests toward the proxy, and the proxy forwards the request toward the back-end API. The proxy can also forward the response back to the front-end app. Use a proxy to make requests toward the mocked API. 
 
 The **Vite** framework provides `vite.config.js` which allows you to configure how the app is run including the proxy. 
 

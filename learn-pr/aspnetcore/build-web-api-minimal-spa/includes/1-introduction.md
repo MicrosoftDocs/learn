@@ -6,11 +6,15 @@ In this module, you'll build one layer (sometimes referred to as a *front-end* a
 
 ## Scenario: Let's build a full stack app
 
-You are a developer on a team. You have taken your first steps with the minimal API, and you love how easy it is to get started with just four lines of code. Now, you've been asked to add a front-end app to an existing API, so that end users on the web can use it.
+You're a developer on a team. You have taken your first steps with the minimal API, and you love how easy it's to get started with just four lines of code. Now, you've been asked to add a front-end app to an existing API, so that end users on the web can use it.
 
 ## What will you learn?
 
-You will learn how to create a front-end app for your minimal API app. You'll also look into how these two layers can be made to interact by using cross-origin resource sharing (CORS).
+You'll learn how to create a front-end app for your minimal API app. This includes: 
+
+* Building a front-end app by using React.
+* Using the React app to call the minimal API app. Configure the minimal API app to accept calls from the React app with CORS.
+* Add a design system to the React app to improve usability.
 
 ## What is the main goal?
 

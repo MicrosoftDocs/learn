@@ -29,10 +29,11 @@ GitHub Codespaces runs a development container managed by GitHub with **Visual S
     >
     > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
 
-1. Validate that .NET 6 is installed in your environment:
+1. Validate that .NET 6 and Node.js are installed in your environment:
 
     ```bash
     dotnet --list-sdks
+    node --version
     ```
 
 1. Close the terminal.
@@ -70,10 +71,11 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     >
     > :::image type="content" source="../media/reopen-container-toast.png" alt-text="Screenshot of a toast notification to reopen the current folder within the context of a development container.":::
 
-1. Validate that .NET 6 is installed in your environment:
+1. Validate that .NET 6 and Node.js are installed in your environment:
 
     ```bash
     dotnet --list-sdks
+    node --version
     ```
 
 1. Close the terminal.
@@ -86,7 +88,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
 
 To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call the scaffolder and have it create a working React app in a matter of seconds.
 
-1. In a command terminal (with all the prerequisites installed) of the development environment, create the app by using `npx create vite@latest PizzaClient --template react`:
+1. Open an integrated terminal, <kbd>Ctrl</kbd> + <kbd>\`</kbd> to create the app by using `npx create vite@latest PizzaClient --template react`:
 
     ```bash
     npm create vite@latest PizzaClient --template react
@@ -101,12 +103,6 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
 
     What you get is a directory, _PizzaClient_, that contains your scaffolded React app.
 
-1. Open the app directory in Visual Studio Code.
-
-   ```bash
-   code .
-   ```
-
 1. Install dependencies by calling `npm install`:
 
    ```bash
@@ -117,7 +113,7 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
 
     :::code language="javascript" source="../code/with-components-and-static-data/vite.config.js" :::
 
-    * **PORT**: The port is set to 3000, a common port number used for front-end apps..
+    * **PORT**: The port is set to 3000, a common port number used for front-end apps.
 
 
 1. Start the app by calling `npm run dev`:
@@ -126,13 +122,13 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
    npm run dev
    ```
 
-1. In your browser, go to `http://localhost:3000`.
+1. When you see the notification to **Open in browser**, select that.
 
    You should see the page render like this example:
 
    :::image type="content" source="../media/vite-orginal.png" alt-text="Screenshot that shows a rendered SPA app.":::
 
-   Press **Ctrl+C** to end execution.
+1. Press **Ctrl+C** to stop the app.
 
 ## Build the Pizza component
 
@@ -142,7 +138,7 @@ Build the parent component that manages state for the pizza list. The initial da
 
     :::code language="javascript" source="../code/with-components-and-static-data/Pizza.jsx":::
 
-    This component is responsible for managing the data and passing it to the `PizzaList` component. It also handles the `create`, `update`, and `delete` operations. This component has no visible UI. The `PizzaList` component renders the UI.
+    This component is responsible for managing the data and passing it to the `PizzaList` child component. It also handles the `create`, `update`, and `delete` data operations. This component has no visible UI. That functionality is handled by the `PizzaList` component.
 
     The `Pizza` component uses the `useState` and `useEffect` hooks to create data state. The `useState` hook is used to manage the `data` and `maxId`. The `useEffect` hook is used to set the data on the initial page request. The `Pizza` component passes the `data` to the `PizzaList` component.
 
@@ -152,9 +148,9 @@ Create a file in the _src_ subdirectory named  _PizzaList.jsx_ and give it the f
 
 :::code language="javascript" source="../code/with-components-and-static-data/PizzaList.jsx" :::
 
-This is a React component called `PizzaList` that renders a form to create and edit pizza items. The component receives props and uses the useState and useEffect hooks to manage the form data and the editing state.
+The `PizzaList` React component renders a form to create and edit pizza items. The component receives props from the parent `Pizza.jsx` and uses the `useState` and `useEffect` hooks to manage the form data and the editing state.
 
-The PizzaList component renders a form with two input fields for the pizza `name` and `description`, and two buttons for creating or updating a pizza item. 
+The PizzaList component renders a form with two input fields for the pizza `name` and `description`, and two buttons to create or update a pizza. 
 
 ## Add Pizza to your app
 
@@ -170,6 +166,7 @@ Open the `main.jsx` and replace the code with the following so the **Pizza** com
    npm run dev
    ```
 
-1. Open a browser and navigate to `http://localhost:3000`.
+1. When you see the notification to **Open in browser**, select that.
 
     :::image type="content" source="../media/form-without-design-system.png" alt-text="Screenshoot of Pizza form without styled components.":::
+
