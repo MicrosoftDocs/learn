@@ -12,7 +12,7 @@ You can configure the dev container for a repository and Codespaces can create a
 
 The diagram taken directly from the official [Visual Studio Code docs](https://code.visualstudio.com/docs/remote/containers), illustrates this functionality.
 
-![Dev Container Diagram](./media/dev-container.png)
+![A diagram showing a development environment in a local computer and comparing with a development environment in the cloud (Dev Container).](./media/dev-container.png)
 
 ## Specification
 
