@@ -29,6 +29,7 @@ roles:
 products:
 - azure
 - azure-bot-service
+- ai-services
 - azure-sdks
 subjects:
 - natural-language-processing
