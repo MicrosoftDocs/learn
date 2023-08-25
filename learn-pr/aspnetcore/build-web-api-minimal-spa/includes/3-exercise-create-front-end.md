@@ -128,7 +128,9 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
 
    :::image type="content" source="../media/vite-orginal.png" alt-text="Screenshot that shows a rendered SPA app.":::
 
-1. Press **Ctrl+C** to stop the app.
+1. Leave the browser open, you will return to it several times in the training module.
+1. When you are done in the browser and need to return to the development environment, you don't need to stop the app in the terminal. Vite will restart the app when it detects changes. 
+
 
 ## Build the Pizza component
 
@@ -160,13 +162,8 @@ Open the `main.jsx` and replace the code with the following so the **Pizza** com
 
 ## Test the app
 
-1. Start the app by calling `npm run dev`:
+Return to the browser and reload the app.
 
-   ```bash
-   npm run dev
-   ```
+:::image type="content" source="../media/form-without-design-system.png" alt-text="Screenshoot of Pizza form without styled components.":::
 
-1. When you see the notification to **Open in browser**, select that.
-
-    :::image type="content" source="../media/form-without-design-system.png" alt-text="Screenshoot of Pizza form without styled components.":::
-
+The app displays the form with the hard-coded data provided.
