@@ -11,40 +11,40 @@ metadata:
   ms.service: azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!INCLUDE[](includes/6-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Why is Batch Transcription especially useful for call-centers and similar scenarios?'
+  - content: Why is Batch Transcription especially useful for call-centers and similar scenarios?
     choices:
-    - content: "It can transcribe audio recordings live"
+    - content: It can transcribe audio recordings live
       isCorrect: false
-      explanation: "Incorrect. Live transcription is available through Azure service."
-    - content: "It can process large numbers of audio recordings and is robust to background noise and poor audio quality."
+      explanation: Incorrect. Live transcription is available through Azure service.
+    - content: It can process large numbers of audio recordings and is robust to background noise and poor audio quality.
       isCorrect: true
-      explanation: "Correct. Batch Transcription is ideal for call centers and similar scenarios."
-    - content: "It runs on powerful in-house servers, which only large commercial operations have access to."
+      explanation: Correct. Batch Transcription is ideal for call centers and similar scenarios.
+    - content: It runs on powerful in-house servers, which only large commercial operations have access to.
       isCorrect: false
-      explanation: "Incorrect. Batch Transcription runs on Azure, which is accessible to small and large operations alike."
-  - content: 'What data format does the Batch Transcription return?'
+      explanation: Incorrect. Batch Transcription runs on Azure, which is accessible to small and large operations alike.
+  - content: What data format does the Batch Transcription return?
     choices:
-    - content: "CSV data, with the extracted information separated by commas."
+    - content: CSV data, with the extracted information separated by commas.
       isCorrect: false
-      explanation: "Incorrect. Batch Transcription uses standard JSON formatting that programming languages can readily use."
-    - content: "Audio data in any major format"
+      explanation: Incorrect. Batch Transcription uses standard JSON formatting that programming languages can readily use.
+    - content: Audio data in any major format
       isCorrect: false
-      explanation: "Incorrect. Batch transcription can read several audio formats but outputs text."
-    - content: "JSON formatting"
+      explanation: Incorrect. Batch transcription can read several audio formats but outputs text.
+    - content: JSON formatting
       isCorrect: true
-      explanation: "Correct. As programming languages can readily use JSON formatting, Batch Transcription returns the extracted information in standard JSON formatting so the data is easier to work with."
-  - content: 'What is a benefit of creating a Custom Speech model?'
+      explanation: Correct. As programming languages can readily use JSON formatting, Batch Transcription returns the extracted information in standard JSON formatting so the data is easier to work with.
+  - content: What is a benefit of creating a Custom Speech model?
     choices:
-    - content: "Custom Speech models can be useful when large numbers of unique phrases are needed."
+    - content: Custom Speech models can be useful when large numbers of unique phrases are needed.
       isCorrect: true
-      explanation: "Correct. Custom models can be trained to your industry-specific terminology and unique names."
-    - content: "Custom models are the minimum requirement to have Batch Transcription working."
+      explanation: Correct. Custom models can be trained to your industry-specific terminology and unique names.
+    - content: Custom models are the minimum requirement to have Batch Transcription working.
       isCorrect: false
-      explanation: "Incorrect. Custom Speech models are an advanced customization that is entirely optional."
-    - content: "Custom Speech is required to use languages other than US English."
+      explanation: Incorrect. Custom Speech models are an advanced customization that is entirely optional.
+    - content: Custom Speech is required to use languages other than US English.
       isCorrect: false
-      explanation: "Incorrect. Batch Transcription supports numerous languages ‘out of the box’ and Custom Speech doesn't allow you to add more languages."
+      explanation: Incorrect. Batch Transcription supports numerous languages 'out of the box' and Custom Speech doesn't allow you to add more languages.

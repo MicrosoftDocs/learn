@@ -10,7 +10,7 @@ Learn more about [Azure Custom Vision](/azure/cognitive-services/custom-vision-s
 
 Before you can start, you need to create a custom vision project. The fastest way to create your custom project is using the web portal.
 
-Follow this [quickstart tutorial](/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier) to set up your account and project. Follow the steps up to the *Upload and tag images* section. You should create one tag with five images.
+Follow this [quickstart tutorial](/azure/ai-services/custom-vision-service/getting-started-build-a-classifier) to set up your account and project. Follow the steps up to the *Upload and tag images* section. You should create one tag with five images.
 
 > [!WARNING]
 > To train a model, you need to have at least two tags and five images per tag. Later we will add more images via the application. However to use this application, you must at least create one tag with five images at this point so that the training process won't fail later.

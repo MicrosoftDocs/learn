@@ -4,11 +4,11 @@ title: Introduction
 metadata:
   title: Introduction
   description: "This unit introduces you to Image Analysis in Azure Computer Vision and explains what you will learn in this module."
-  ms.date: 08/10/2023
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
+  ms.service: artificial-intelligence
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

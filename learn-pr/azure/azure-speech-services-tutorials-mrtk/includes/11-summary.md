@@ -11,5 +11,5 @@ Explore CLU and integrate it in your own application. Consider trying following 
 
 ## Further reading
 
-* Learn more about [Speech service](/azure/cognitive-services/speech-service/overview)
-* Learn more about [CLU](/azure/cognitive-services/language-service/conversational-language-understanding/overview)
+* Learn more about [Speech service](/azure/ai-services/speech-service/overview)
+* Learn more about [CLU](/azure/ai-services/language-service/conversational-language-understanding/overview)

@@ -1,4 +1,4 @@
-In this module, you'll explore the Azure Speech Service's intent recognition. The intent recognition allows you to equip your application with AI-powered speech commands, where users can say nonspecific speech commands and still have their intent understood by the system.
+In this module, you explore the Azure Speech Service's intent recognition. The intent recognition allows you to equip your application with AI-powered speech commands, where users can say nonspecific speech commands and still have their intent understood by the system.
 
 ## Prepare the scene
 
@@ -43,7 +43,7 @@ In this section, you'll create an Azure language service resource for the Conver
 
     * For **Name**, enter a suitable name for the service, for example: *MRTK-Tutorials-AzureSpeechServices*
     * For **Region**, choose a location close to your app users' physical location, for example: *East US*
-    * For **Pricing tier**, for the purpose of this tutorial, select **F0 (5k transactions per 30 days)**
+    * For **Pricing tier**, in this tutorial, select **F0 (5k transactions per 30 days)**
 
     :::image type="content" source="../media/create-page.png" alt-text="Screenshot of the configured Create Language form." lightbox="../media/create-page.png":::
 
@@ -57,11 +57,11 @@ In this section, you'll create an Azure language service resource for the Conver
 
 ## Create the Conversational language understanding app (CLU)
 
-In this section, you'll create a CLU app, configure and train its prediction model, and connect it to the Azure language resource you created in the previous step.
+In this section, you create a CLU app, configure and train its prediction model, and connect it to the Azure language resource you created in the previous step.
 
-Specifically, you'll create an intent that if the user says an action should be taken, the app will trigger the `PressableButton.OnClicked()` event on one of the three blue buttons in the scene, depending on which button the user references.
+Specifically, you'll create an intent that if the user says an action should be taken, the app triggers the `PressableButton.OnClicked()` event on one of the three blue buttons in the scene, depending on which button the user references.
 
-For example, if the user says **go ahead and launch the rocket**, the app will predict that **go ahead** means some **action** should be taken, and that the `PressableButton.OnClicked()` event to **target** is on the **launch** button.
+For example, if the user says **go ahead and launch the rocket**, the app predicts that **go ahead** means some **action** should be taken, and that the `PressableButton.OnClicked()` event to **target** is on the **launch** button.
 
 The main steps you'll take to achieve this are:
 
@@ -92,7 +92,7 @@ Using the same user account you used when creating the Azure resource in the pre
 
     :::image type="content" source="../media/review-clu-app.png" alt-text="Screenshot of Review and finish screen." lightbox="../media/review-clu-app.png":::
 
-4. When the new app has been created, you'll be taken to that app's **Schema definition** page:
+4. When the new app has been created, you are taken to that app's **Schema definition** page:
 
     :::image type="content" source="../media/apps-dashboard-page.png" alt-text="Screenshot of App's dashboard page." lightbox="../media/apps-dashboard-page.png":::
 
@@ -161,7 +161,7 @@ Using the same user account you used when creating the Azure resource in the pre
 
     :::image type="content" source="../media/label-action.png" alt-text="Screenshot of Label go ahead as an action entity value." lightbox="../media/label-action.png":::
 
-2. The **go ahead** phrase is now defined as an **Action** entity value. There is now an action entity value under the words "go ahead":
+2. The **go ahead** phrase is now defined as an **Action** entity value. There's now an action entity value under the words "go ahead":
 
     :::image type="content" source="../media/notice-action.png" alt-text="Screenshot of Notice the action entity value." lightbox="../media/notice-action.png":::
 
@@ -172,7 +172,7 @@ Using the same user account you used when creating the Azure resource in the pre
 
     :::image type="content" source="../media/word-launch.png" alt-text="Screenshot of select the word launch." lightbox="../media/word-launch.png":::
 
-4. The **launch** word is now defined as a **Target** entity value. There is now a Target entity value under the word "launch":
+4. The **launch** word is now defined as a **Target** entity value. There's now a Target entity value under the word "launch":
 
     :::image type="content" source="../media/notice-target.png" alt-text="Screenshot of Notice the Target entity value under the word launch." lightbox="../media/notice-target.png":::
 
@@ -249,8 +249,8 @@ Using the same user account you used when creating the Azure resource in the pre
 
     :::image type="content" source="../media/intent-recognition.png" alt-text="Screenshot of Testing the intent recognition." lightbox="../media/intent-recognition.png":::
 
-2. If you enter Game mode, you can test the intent recognition by first pressing the rocket button. Then, when you say the first example utterance, **go ahead and launch the rocket**, you will see the LunarModule launch into space:
+2. If you enter Game mode, you can test the intent recognition by first pressing the rocket button. Then, when you say the first example utterance, **go ahead and launch the rocket**, you'll see the LunarModule launch into space:
 
     :::image type="content" source="../media/press-rocket-button.png" alt-text="Screenshot of Enter the game mode." lightbox="../media/press-rocket-button.png":::
 
-3. Try all the example utterances, then some variation of the example utterances, as well as a few random utterances.
+3. Try all the example utterances, then some variation of the example utterances, and a few random utterances.
