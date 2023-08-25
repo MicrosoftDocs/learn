@@ -1,64 +1,51 @@
-Before you can get started creating an immersive experience for Windows Mixed Reality, you must configure your Unity Project for Windows Mixed Reality development. Unity offers some behaviors specific to mixed reality that can be modified through project settings. Here you'll create a new Unity project and configure it for Windows Mixed Reality development.
+We'll start by creating a new Unity project and configuring it for Windows Mixed Reality development. Unity offers some behaviors that are specific to mixed reality and can be modified through project settings.
 
 ## Create a new Unity project
 
-1. Launch the **Unity Hub**, select the **Projects** tab, and click the **down arrow** next to the **New** button.
+1. Launch the **Unity Hub**.
+1. In the **Projects** tab,  click **New Project**.
 
-    :::image type="content" source="../media/unity-hub-new.png" alt-text="Screenshot of Unity Hub with Projects and drop-down arrow for New highlighted.":::
+   :::image type="content" source="../media/001-new-project.png" alt-text="Screenshot of Unity Hub in Projects tab with the New Project button highlighted.":::
 
-1. Select the Unity version specified in the module Prerequisites.
+1. Click the drop-down underneath **New project** and then select the Editor version you want.
 
-    :::image type="content" source="../media/select-unity-version.png" alt-text="Screenshot of Unity Hub with Unity version 2019 dot 3 dot 14 f 1 highlighted.":::
+    :::image type="content" source="../media/002-editor-version.png" alt-text="Screenshot of Unity Hub with the Editor version drop-down displayed.":::
 
-1. In the **Create a new project** window:
-    - Ensure **Templates** is set to **3D**
-    - Enter a suitable **Project Name**, for example, *MRTK Tutorials*
-    - Choose a suitable **Location** to store your project, for example, *D:\MixedRealityLearning*
-    - Click the **Create** button to create and launch your new Unity project
+2. Ensure the chosen template is **3D Core**.
+3. In the **Project name** box, enter a name for your project--for example, "MRTK Tutorial."
+4. In the **Location** box, click the folder icon, and then navigate to the folder where you want to save your project and select it. You can also create a new folder.
 
-    :::image type="content" source="../media/create-new-project.png" alt-text="Screenshot of Unity Hub with 3D, Project Name, Location, and Create highlighted. Project name field is M R T K Tutorials. Location field is D colon backlash Mixed Reality Learning.":::
+    :::image type="content" source="../media/003-name-and-location.png" alt-text="Screenshot of Unity Hub with 3D, Project Name, Location, and Create highlighted.":::
+
+5. Click **Create Project**. This opens your project in Unity.
+
+    :::image type="content" source="../media/004-project-open-in-unity.png" alt-text="Screenshot of your project open in Unity.":::
 
 > [!CAUTION]
-> When working on Windows, there is a MAX_PATH limit of 255 characters. Unity is affected by these limits and may fail to compile if any file path is longer than 255 characters. Therefore, it is strongly recommended to store your Unity project as close to the root of the drive as possible.
+> When working on Windows, there is a MAX_PATH limit of 255 characters. Unity is affected by these limits and may fail to compile if any file path is longer than 255 characters. Therefore, we recommend that you store your Unity project as close to the root of the drive as possible.
 
-## Configure Unity Project for Windows Mixed Reality
+## Switch Build Platform
 
-**Switch Build Platform**
+To target Windows Mixed Reality, your Unity project must be set to export as a Universal Windows Platform app. By default, the build settings for the Universal Windows Platform target any device, including immersive headsets. However, you can select a specific device using the **Target Device** drop down.
 
-1. In the Unity menu, select **File** > **Build Settings...** to open the **Build Settings window**.
+1. In the menu bar, select **File** > **Build Settings...**.
+1. In the **Build Settings** window, select **Universal Windows Platform**.
+1. Make sure the following settings are active:
 
-    :::image type="content" source="../media/build-settings.png" alt-text="Screenshot of Unity editor with File menu expanded and Build Settings highlighted.":::
+    **Architecture**: ARM 64-bit
 
-1. In the **Build Settings** window, select **Universal Windows Platform** and click the **Switch Platform** button. Unity will begin the process to switch the platform.
+    **Build Type**: D3D Project
 
-    :::image type="content" source="../media/switch-platform.png" alt-text="Screenshot of Build Settings with Universal Windows Platform and Switch Platform highlighted.":::
+    **Target SDK Version**: Latest Installed
 
-1. Close the **Build Settings** window once Unity has finished switching the platform.
+    **Minimum Platform Version**: 10.0.10240.0
 
-    :::image type="content" source="../media/exit-build-settings.png" alt-text="Screenshot of Build Settings with X symbol highlighted to close the window.":::
+    **Visual Studio Version**: Latest installed
 
-**Enable Virtual Reality**
+    **Build and Run on**: Local Machine
 
-1. In the Unity menu, select **Edit** > **Project Settings...** to open the **Project Settings** window.
+    **Build configuration**: Release (there are known performance issues with Debug)
 
-    :::image type="content" source="../media/project-settings.png" alt-text="Screenshot of Unity editor with Edit menu expanded and Project Settings highlighted.":::
+1. Click the **Switch Platform** button. Unity displays a progress bar while it switches platforms.
+1. After the switch platform process is finished, close the **Build Settings** window.
 
-1. In the Project Settings window, select **Player** > **XR Settings** to expand the **XR Settings**.
-
-    :::image type="content" source="../media/xr-settings.png" alt-text="Screenshot of Project Settings window with Player and X R Settings highlighted.":::
-
-1. In the XR Settings, check the **Virtual Reality Supported** checkbox to enable virtual reality.
-
-    :::image type="content" source="../media/virtual-reality-supported.png" alt-text="Screenshot of Project Settings with Player selected and Virtual Reality Supported checked.":::
-
-1. Next, click the **+** icon and select **Windows Mixed Reality** to add the Windows Mixed Reality SDK. Unity will begin the process to add the SDK.
-
-    :::image type="content" source="../media/add-wmr-sdk.png" alt-text="Screenshot of Project Settings with Player selected. The plus icon for Virtual Reality S D Ks is highlighted. The Windows Mixed Reality option is highlighted in drop-down to add a Virtual Reality S D K.":::
-
-1. After the SDK is added, optimize the **XR Settings** as follows:
-
-    - Set Windows Mixed Reality **Depth Format** to **16-bit depth**
-    - Check the Windows Mixed Reality **Enable Depth Sharing** checkbox
-    - Set **Stereo Rendering Mode** to **Single Pass Instanced**.
-
-    :::image type="content" source="../media/optimize-xr-settings.png" alt-text="Screenshot of Project Settings with Player selected. Within Virtual Realty S D Ks, the Depth Format and Enable Depth Buffer Sharing fields are highlighted. Depth Format is set to 16-bit depth. Enabled Depth Buffer Sharing is checked. The Stereo Rendering Mode field is highlighted with Single Pass Instanced selected.":::
