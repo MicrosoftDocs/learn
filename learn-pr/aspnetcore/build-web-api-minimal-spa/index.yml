@@ -29,8 +29,8 @@ products:
   - aspnet-core
 prerequisites: |
   - Fundamental understanding of JavaScript.
-  - Node.js installed.
-  - Yarn installed.
+  - GitHub account for development in browser.
+  - Visual Studio Code for local development.
   - Working knowledge of the web, especially on request and responses in HTTP.
 subjects:
 - development-tools
