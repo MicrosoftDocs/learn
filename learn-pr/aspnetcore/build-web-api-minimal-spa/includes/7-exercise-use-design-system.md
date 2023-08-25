@@ -2,11 +2,12 @@ Use a design system to improve the appearance of your app.
 
 ## Install Material UI
 
-To install Material UI, run the following command:
+1. Right-click the **PizzaClient** subfolder and select **Open in integrated terminal**.
+1. Run the following command to install the Material UI components:
 
-```bash
-npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
-```
+    ```bash
+    npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
+    ```
 
 ## Import Material UI
 
@@ -39,12 +40,8 @@ In the `PizzaList` component, the Material UI components TextField, Button, Box,
 
 ## Test the new design
 
-1. If you stopped your front-end app, run the following command to start the app:
+1. Wait for Vite to reload the front-end React app.
 
-    ```bash
-    npm run dev
-    ```
-
-1. Open a browser and navigate to `http://localhost:3000`.
+1. Return to the browser and test the app.
 
     :::image type="content" source="../media/design-system-form.png" alt-text="Screenshoot of Pizza form with styled components.":::

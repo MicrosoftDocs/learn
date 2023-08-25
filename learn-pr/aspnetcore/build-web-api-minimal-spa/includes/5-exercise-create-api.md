@@ -96,6 +96,7 @@ Suppose the back-end team has now finished building the server. To use the serve
     dotnet run
     ```
 
-1. In the open browser, use the app, it displays one item with the title, _Pepperoni_.
+1. In the open browser, use the app, it displays one item with the title, _Pepperoni_. 
+1. When you are done testing the app, leave the browser open and let the front-end React app run in the terminal. You can also let the .NET Core API server run in the terminal. You'll use them again in the next exercise.
 
 Congratulations, you've created a full stack application! The React front-end app is reading data from a back-end database via a minimal API.
