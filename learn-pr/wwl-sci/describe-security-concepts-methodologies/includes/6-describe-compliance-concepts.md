@@ -1,7 +1,7 @@
 
 Organizations face increasing complexity and change in regulatory environments, calling for a more structured approach for managing Governance, Risk, and Compliance (GRC).
 
-:::image type="content" source="../media/grc-framework-inline.png" lightbox="../media/grc-framework-expanded.png" alt-text="A graphic showing a GRC framework":::
+:::image type="content" source="../media/grc-framework-inline.png" lightbox="../media/grc-framework-expanded.png" alt-text="Diagram showing a GRC framework.":::
 
 As organizations establish GRC competency they can establish a framework that includes implementing specific policies, operational processes. A structured approach for managing GRC helps organizations reduce risk and improve compliance effectiveness.
 
