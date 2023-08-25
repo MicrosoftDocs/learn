@@ -1,7 +1,7 @@
 In this unit, you use Azure Cloud Shell as a Linux terminal. You also can access Cloud Shell through the Azure portal or at [Cloud Shell sign-in](https://shell.azure.com). You don't need to install anything on your PC or laptop to use Cloud Shell. 
 
 > [!NOTE]
-> You're using the Cloud Shell to the right in this module, but in real-world situations, you can also use the integrated Terminal in Visual Studio Code by selecting **Terminal** > **New Terminal**, then selecting **Powershell** in the drop-down in the top-left of the Terminal window.
+> In this module, you're using the Azure Cloud Shell on the right-hand side of the screen, but in real-world situations, you can also use the integrated Terminal in Visual Studio Code by selecting **Terminal** > **New Terminal**, then selecting **Powershell** in the drop-down in the top-left of the Terminal window.
 
 Before beginning this exercise, be sure to activate the sandbox.
 
@@ -16,9 +16,9 @@ Before beginning this exercise, be sure to activate the sandbox.
    ```output
     Name                           Value
     ----                           -----
-    PSVersion                      7.1.4
+    PSVersion                      7.3.6
     PSEdition                      Core
-    GitCommitId                    7.1.4
+    GitCommitId                    7.3.6
     OS                             Linux 5.4.0-1058-azure #60~18.04.1-Ubuntu SMP Tue Aug 31 20:34:4…
     Platform                       Unix
     PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0…}
@@ -42,7 +42,7 @@ Before beginning this exercise, be sure to activate the sandbox.
     ```output
     Major  Minor  Patch  PreReleaseLabel BuildLabel
     -----  -----  -----  --------------- ----------
-    7      1      4  
+    7      3      6  
     ```
 
     This output gives you more details about your version of PowerShell.
