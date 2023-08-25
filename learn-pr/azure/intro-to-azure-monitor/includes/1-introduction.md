@@ -1,6 +1,6 @@
 Monitoring provides insights into many aspects of IT performance, security, and health. Azure Monitor provides a single source for monitoring all your Azure platform services and resources.
 
-:::image type="content" source="../media/monitoring-panel-options-small.png" alt-text="Screenshot of monitoring options in the Azure portal." lightbox="../media/monitoring-panel-options.png:::
+:::image type="content" source="../media/monitoring-panel-options-small.png" alt-text="Screenshot of monitoring options in the Azure portal." lightbox="../media/monitoring-panel-options.png":::
 
 Suppose you host a web application on Azure. You decided to move your application from your on-premises infrastructure due to performance issues. During annual back-to-school sales campaigns, your website was being overloaded, and increased response times were causing users to leave. You didn't want to spend money on new server hardware just to support those limited engagement peak loads.
 

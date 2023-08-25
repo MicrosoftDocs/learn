@@ -4,7 +4,7 @@ This unit describes how Azure Monitor Insights, visualizations, and dashboards c
 
 Some Azure resource providers have created visualizations that provide a customized monitoring experience and require minimal configuration. Insights are large, scalable, curated visualizations.
 
-:::image type="content" source="../media/insights-blowup.svg"  alt-text="Diagram that shows the Insights part of Azure Monitor." border="false" lightbox="../media/insights-blowup.svg":::
+:::image type="content" source="../media/insights-box.svg"  alt-text="Diagram that shows the Insights part of Azure Monitor." border="false" lightbox="../media/insights-blowup.svg":::
 
 Azure Monitor includes many types of Insights. In the Azure portal, select **Insights Hub** in the Azure Monitor left navigation to list and access all the available types of Insights.
 
@@ -20,7 +20,7 @@ The previous units described Application Insights for monitoring the availabilit
 
 Visualizations such as charts and tables are effective tools for summarizing monitoring data and presenting it to audiences. Azure Monitor has its own features for visualizing monitoring data, and uses other Azure services for publishing data to different audiences. Power BI and Grafana aren't officially part of Azure Monitor, but are core integrations to tell the monitoring story.
 
-:::image type="content" source="../media/visualize-blowup.svg" alt-text="Diagram that shows the Visualize part of Azure Monitor." border="false" lightbox="../media/visualize-blowup.svg":::
+:::image type="content" source="../media/visualize-box.svg" alt-text="Diagram that shows the Visualize part of Azure Monitor." border="false" lightbox="../media/visualize-blowup.svg":::
 
 The following list describes some Azure Monitor and external tools for visualizing and presenting monitoring data:
 
@@ -42,7 +42,7 @@ The following list describes some Azure Monitor and external tools for visualizi
 
 An effective monitoring solution proactively responds to critical events without the need for an individual or team to notice the issue. The response could be a text or email to an administrator, or an automated process that attempts to correct an error condition.
 
-:::image type="content" source="../media/respond-blowup.svg" alt-text="Diagram that shows the Respond part of the Consumption section of the Azure Monitor system." border="false" lightbox="../media/respond-blowup.svg":::
+:::image type="content" source="../media/respond-box.svg" alt-text="Diagram that shows the Respond part of the Consumption section of the Azure Monitor system." border="false" lightbox="../media/respond-blowup.svg":::
 
 Azure Monitor works with the following types of automated alerting and responses.
 
