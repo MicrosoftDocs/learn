@@ -17,16 +17,16 @@ quiz:
   questions:
   - content: Which of the following Azure CLI commands creates an Azure Storage account?
     choices:
-    - content: `az group create`
+    - content: az group create
       isCorrect: false
       explanation: Incorrect. Actually, this Azure CLI command creates an Azure resource group.
-    - content: `az account create`
+    - content: az account create
       isCorrect: false
       explanation: Incorrect. This command isn't a real Azure CLI command.
-    - content: `az storage account create`
+    - content: az storage account create
       isCorrect: true
       explanation: Correct! This command creates a new storage account.
-    - content: `az storage create`
+    - content: az storage create
       isCorrect: false
       explanation: Incorrect. This command isn't a real Azure CLI command.
   - content: What is the difference between precision and recall when measuring the accuracy of a machine learning model?
