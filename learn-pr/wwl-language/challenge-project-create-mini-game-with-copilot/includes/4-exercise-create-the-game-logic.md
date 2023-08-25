@@ -24,12 +24,12 @@ With Codespaces configured, your goal is to develop the Python console minigame.
 ## Check your work
 
 1. Run the minigame on the console with the `python app.py` command.
-2. At the prompt, type one of the game options: `rock`, `paper, or `scissors`.
-3. The minigame should inform the player whether the player won, lost, or tied with the opponent.
-4. Choose to continue playing.
-5. At the prompt, type `screen.
-5. The minigame should inform the player if the option entered by the player is invalid.
-6. Repeat steps 2 and 4 to play a few rounds and choose not to continue playing.
-7. Check if the minigame is terminated and if it displays your score, informing you of the number of wins and rounds.
+1. At the prompt, type one of the game options: `rock`, `paper, or `scissors`.
+1. The minigame should inform the player whether the player won, lost, or tied with the opponent.
+1. Choose to continue playing.
+1. At the prompt, type `screen.
+1. The minigame should inform the player if the option entered by the player is invalid.
+1. Repeat steps 2 and 4 to play a few rounds and choose not to continue playing.
+1. Check if the minigame is terminated and if it displays your score, informing you of the number of wins and rounds.
 
 Congratulations if you did well in this challenge exercise! You've created a Python console minigame using GitHub Copilot.
