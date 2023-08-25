@@ -26870,6 +26870,31 @@
       "source_path": "learn-pr/paths/extend-iot-solutions-by-using-azure-digital-twins/index.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-individual-enrollment-tasks/index.md",
+      "redirect_url": "/training/modules/explore-group-enrollment-tasks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-individual-enrollment-tasks/1-introduction.md",
+      "redirect_url": "/training/modules/explore-group-enrollment-tasks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-individual-enrollment-tasks/2-provision-deprovision-devices-using-individual-enrollments.md",
+      "redirect_url": "/training/modules/explore-group-enrollment-tasks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-individual-enrollment-tasks/3-knowledge-check.md",
+      "redirect_url": "/training/modules/explore-group-enrollment-tasks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-individual-enrollment-tasks/4-summary.md",
+      "redirect_url": "/training/modules/explore-group-enrollment-tasks/",
+      "redirect_document_id": false
     }
   ]
 }

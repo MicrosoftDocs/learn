@@ -2282,3 +2282,8 @@ achievements:
   title: Extend IoT solutions by using Azure Digital Twins
   summary: You will learn about the features and capabilities of Azure Digital Twins service, how to configure, build, and manage an Azure Digital Twins environment, and how to integrate IoT and Azure Digital Twins solutions.
   iconUrl: /training/achievements/iot-solutions-digital-twins.svg
+- uid: learn.wwl.explore-individual-enrollment-tasks.badge
+  type: badge
+  title: Explore individual enrollment tasks
+  summary: Experience implementing an individual enrollment using symmetric keys, using code that accesses device twin properties to initialize a device, and a deprovisioning process that disenrolls and deregisters a device.
+  iconUrl: /training/achievements/enrollment-individual-task.svg
