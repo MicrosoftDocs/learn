@@ -14,7 +14,7 @@ In this project, you can use GitHub Codespaces to develop the minigame applicati
    
 ![Codespaces Python Template](./media/vs-template.png)
 
-4. On the repository page that was created, click the `Code` button and, in the Codespaces tab, click `Create codespace on main`. In a few moments, Codespaces  create a development environment for you.
+4. On the repository page that was created, select the `Code` button and, in the Codespaces tab, select `Create codespace on main`. In a few moments, Codespaces creates a development environment for you.
 
 ![Open Codespaces](./media/open-codespaces.png)
 
