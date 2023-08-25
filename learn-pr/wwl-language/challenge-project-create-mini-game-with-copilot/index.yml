@@ -15,11 +15,8 @@ abstract: |
   - Develop input and output routines in a Python console application.
   - Use GitHub Copilot as an assistant.
 prerequisites: |
-  - Apply iteration statements using data inputs.
-  - Process data.
-  - Format data output.
-  - Basic knowledge of methods in Python.
-  - A GitHub account.
+  - A GitHub account and basic knowledge of Git commands to execute the routines (`add, commit and push`).
+  - Basic of Python to work with variables, lists, loops, conditionals and print messages on the console.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
