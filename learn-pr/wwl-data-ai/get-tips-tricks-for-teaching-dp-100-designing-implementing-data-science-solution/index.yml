@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution
 metadata:
-  title: '6-Get tips and tricks for teaching DP-100: Designing and Implementing a Data Science Solution on Azure'
+  title: '6-Get tips and tricks for teaching DP-100: Designing and implementing a data science solution on Azure'
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
-  ms.date: 08/10/2023
+  ms.date: 08/25/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
   ms.prod: azure
-title: 'Get tips and tricks for teaching DP-100: Designing and Implementing a Data Science Solution on Azure'
+title: 'Get tips and tricks for teaching DP-100: Designing and implementing a data science solution on Azure'
 summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
 abstract: |
   After completing this module, you will be able to:
