@@ -4,11 +4,10 @@ title: Exercise - Create do and while iteration loops
 metadata:
   title: Exercise - Create do and while iteration loops
   description: "Exercise - Create do and while iteration loops"
-  ms.date: 05/02/2023
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-do-while-continue.md)]
@@ -17,12 +16,12 @@ quiz:
   questions:
   - content: "Which of the **following** correctly describes a difference between the `do-while` and the `while` iterative statements?"
     choices:
-    - content: "Application code exits a `while` statement when an expression evaluates to false."
+    - content: "A `do-while` statement executes a code block zero or more times."
       isCorrect: false
-      explanation: "Incorrect. Both the `do-while` statement and the `while` statement evaluate an expression to determine when to stop iterating."
+      explanation: "Incorrect. A `do-while` statement iterates through a code block at least once because the expression is evaluated at the end of the code block."
     - content: "A `while` statement executes a code block at least once."
       isCorrect: false
-      explanation: "Incorrect. A `do-while` statement iterates through a code block at least once because the expression is evaluated at the end of the code block. The expression for a `while` statement is evaluated before the code block and therefore the code block may not be executed even once."
+      explanation: "Incorrect. The expression for a `while` statement is evaluated before the code block and therefore the code block may not be executed even once."
     - content: "A `do-while` statement iterates through a code block until a condition is met."
       isCorrect: true
       explanation: "Correct! The `do-while` will iterate through a code block at least once."
