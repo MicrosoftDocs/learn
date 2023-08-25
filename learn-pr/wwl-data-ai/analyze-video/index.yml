@@ -6,15 +6,15 @@ metadata:
   ms.service: cognitive-services
   ms.date: 07/14/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
 title: Analyze video
-summary: Azure Video Analyzer for Media is a service to extract insights from video, including face identification, text recognition, object labels, scene segmentations, and more.
+summary: Azure Video Indexer is a service to extract insights from video, including face identification, text recognition, object labels, scene segmentations, and more.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe Video Analyzer for Media capabilities
+  - Describe Azure Video Indexer capabilities
   - Extract custom insights
-  - Use Video Analyzer for Media widgets and APIs
+  - Use Azure Video Indexer widgets and APIs
 prerequisites: |
   Before starting this module, you should already have:
   - Familiarity with Azure and the Azure portal.

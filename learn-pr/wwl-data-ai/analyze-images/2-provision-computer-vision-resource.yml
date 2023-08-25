@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-images.provision-computer-vision-resource
-title: Provision a Computer Vision resource
+title: Provision an Azure AI Vision resource
 metadata:
-  title: Provision a Computer Vision resource
-  description: "Provision a Computer Vision resource"
+  title: Provision an Azure AI Vision resource
+  description: "Provision an Azure AI Vision resource"
   ms.date: 07/13/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: false

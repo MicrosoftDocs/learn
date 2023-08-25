@@ -1,15 +1,15 @@
-Microsoft Azure Language service provides several NLP capabilities, including the key phrase identification, text summarization, and sentiment analysis. The Language service also provides custom features like custom question answering and custom text classification.
+Microsoft Azure AI Language service provides several NLP capabilities, including the key phrase identification, text summarization, and sentiment analysis. The Azure AI Language service also provides custom features like custom question answering and custom text classification.
 
-To test the custom text classification of the Language service, we'll configure the model using Language Studio then use a small command-line application that runs in the Cloud Shell to test it. The same pattern and functionality used here can be followed for real-world applications.
+To test the custom text classification of the Azure AI Language service, we'll configure the model using Azure AI Language Studio then use a small command-line application that runs in the Cloud Shell to test it. The same pattern and functionality used here can be followed for real-world applications.
 
-## Create a *Language service* resource
+## Create an *Azure AI Language service* resource
 
-To use custom text classification, you'll need to create an Azure Language service resource and select **Custom text classification & extraction** custom feature.
+To use custom text classification, you'll need to create an Azure AI Language service resource and select **Custom text classification & extraction** custom feature.
 
-If you haven't already done so, create a **Language service** resource in your Azure subscription.
+If you haven't already done so, create an **Azure AI Language service** resource in your Azure subscription.
 
 1. In a browser, open the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in with your Microsoft account.
-2. Select the **Create a resource** button, search for *Language*, and create a **Language service** resource. When asked about *Additional features*, select **Custom text classification & extraction**. Create the resource with the following settings:
+2. Select the **Create a resource** button, search for *Language*, and create an **Azure AI Language service** resource. When asked about *Additional features*, select **Custom text classification & extraction**. Create the resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
     - **Region**: *Choose any available region*:
@@ -28,14 +28,14 @@ If you haven't already done so, create a **Language service** resource in your A
 
 3. Review and create the resource.
 
-### Get Language resource key and endpoint
+### Get Azure AI Language resource key and endpoint
 
-1. Go to the resource group in the [Azure portal](https://portal.azure.com?azure-portal=true), and select the Language resource
+1. Go to the resource group in the [Azure portal](https://portal.azure.com?azure-portal=true), and select the Azure AI Language resource
 2. Select **Keys and Endpoint** from the menu on the left side, located under **Resource Management**. You can copy it to your clipboard with the icon next to the key. We'll need one of the keys and the endpoint later, so either paste these values into Notepad for now or we'll come back to this page at that time.
 
 ## Upload sample articles
 
-Once you've created the language service and storage account, you'll need to upload example articles to train your model later.
+Once you've created the Azure AI Language service and storage account, you'll need to upload example articles to train your model later.
 
 1. [Download sample articles](https://aka.ms/classification-articles) from this repository on GitHub. Extract the files in the `.zip` provided.
 
@@ -53,9 +53,9 @@ Once you've created the language service and storage account, you'll need to upl
 After configuration is complete, create a custom text classification project. This project provides a working place to build, train, and deploy your model.
 
 > [!NOTE]
-> This lab utilizes **Language Studio**, but you can also create, build, train, and deploy your model through the REST API.
+> This lab utilizes **Azure AI Language Studio**, but you can also create, build, train, and deploy your model through the REST API.
 
-1. Log into the [Language Studio](https://aka.ms/languageStudio) with your Azure account, and select the Azure subscription that you created your Language resource in, and select your Language resource
+1. Log into the [Azure AI Language Studio](https://aka.ms/languageStudio) with your Azure account, and select the Azure subscription that you created your Azure AI Language resource in, and select your Azure AI Language resource
 2. Under the **Classify text** section, select **Custom text classification**
 3. Select **Create new project**
 4. In the **Create a project** pop out, choose the following and create your project:
@@ -96,7 +96,7 @@ Now that your project is created, you need to label, or tag, your data to train 
     | Article 9 | Entertainment | Training |
 
     > [!NOTE]
-    > Files in Language Studio are listed alphabetically, which is why the above list is not in sequential order. Make sure you visit both pages of documents when label your articles.
+    > Files in Azure AI Language Studio are listed alphabetically, which is why the above list is not in sequential order. Make sure you visit both pages of documents when labeling your articles.
 
 5. Click **Save labels**
 
@@ -110,7 +110,7 @@ Once you've labeled your data, you need to train your model.
 4. Choose **Use a manual split of training and testing data**
 
     > [!TIP]
-    > In your own classification projects, the Language service will automatically split the testing set by percentage which is useful with a large dataset. With smaller datasets, it's important to train with the right class distribution.
+    > In your own classification projects, the Azure AI Language service will automatically split the testing set by percentage which is useful with a large dataset. With smaller datasets, it's important to train with the right class distribution.
 
 5. Click **Train**
 
@@ -135,7 +135,7 @@ Once you're satisfied with the training of your model, it's time to deploy it, w
 
 ## Send text classification to your model
 
-To test the text analytics capabilities of the Language service, we'll use a small command-line application that runs in the Cloud Shell on Azure.
+To test the text analytics capabilities of the Azure AI Language service, we'll use a small command-line application that runs in the Cloud Shell on Azure.
 
 ### Run Cloud Shell
 
@@ -155,7 +155,7 @@ To test the text analytics capabilities of the Language service, we'll use a sma
 
 ### Configure and run PowerShell
 
-Now that you have a custom model, you can run a client application that uses the Language service.
+Now that you have a custom model, you can run a client application that uses the Azure AI Language service.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-language.
 
@@ -176,10 +176,10 @@ Now that you have a custom model, you can run a client application that uses the
     code classify-text.ps1
     ```
 
-3. In `classify-text.ps1`, note the top two lines of the script with places for your Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key` and `$endpoint` with your resource values (`$projectName`, and `$modelName` should match what you entered above), and save the file.
+3. In `classify-text.ps1`, note the top two lines of the script with places for your Azure AI Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key` and `$endpoint` with your resource values (`$projectName`, and `$modelName` should match what you entered above), and save the file.
 
     > [!TIP]
-    > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true), find the Language resource you created earlier, and select the **Keys and endpoint** page on the left
+    > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true), find the Azure AI Language resource you created earlier, and select the **Keys and endpoint** page on the left
 
 4. Run the following command to call your model and classify the text provided. The script won't output the whole file it's classifying for the sake of space, but you can view the contents [here on GitHub](https://aka.ms/text-classification-repo). Review the output.
 
@@ -198,4 +198,4 @@ Now that you have a custom model, you can run a client application that uses the
 
 ## Clean up
 
-When you don't need your project anymore, you can delete if from your **Projects** page in Language Studio. You can also remove the Language service and associated storage account in the [Azure portal](https://portal.azure.com?azure-portal=true).
+When you don't need your project anymore, you can delete if from your **Projects** page in Azure AI Language Studio. You can also remove the Azure AI Language service and associated storage account in the [Azure portal](https://portal.azure.com?azure-portal=true).

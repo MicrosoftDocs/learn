@@ -13,11 +13,11 @@ In this design pattern:
 
 In Microsoft Azure, the **Language Understanding** service enables developers to build apps based on language models that can be trained with a relatively small number of samples to discern a user's intended meaning.
 
-In this module, you'll learn how to use the Language Understanding service to create a language understanding app.
+In this module, you'll learn how to use the Azure AI Language Understanding service to create a language understanding app.
 
 After completing this module, you’ll be able to:
 
-- Provision Azure resources for the Language Understanding service
+- Provision Azure resources for the Azure AI Language Understanding service
 - Define intents, entities, and utterances
 - Use patterns to differentiate similar utterances
 - Use pre-built entity components

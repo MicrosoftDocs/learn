@@ -7,4 +7,4 @@ Now that you've completed this module, you can:
 - Label data, train, and deploy a model
 - Submit classification tasks from your own app
 
-To learn more about the Language service, see the [Language service documentation](/azure/cognitive-services/language-service/?azure-portal=true)
+To learn more about the Azure AI Language service, see the [Azure AI Language service documentation](/azure/cognitive-services/language-service/?azure-portal=true)

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-language-understanding-model.train-test-publish-review
-title: Train, test, publish, and review a Language Understanding model
+title: Train, test, publish, and review an Azure AI Language Understanding model
 metadata:
-  title: Train, test, publish, and review a Language Understanding model
-  description: "Train, test, publish, and review a Language Understanding model"
+  title: Train, test, publish, and review an Azure AI Language Understanding model
+  description: "Train, test, publish, and review an Azure AI Language Understanding model"
   ms.date: 07/20/2023
   author: wwlpublish
   ms.author: berryivor
