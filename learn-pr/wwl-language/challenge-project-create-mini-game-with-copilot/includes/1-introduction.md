@@ -36,8 +36,5 @@ In this module, you demonstrate your ability to:
 
 ## Prerequisites
 
-- Apply iteration statements using data inputs.
-- Process data.
-- Format data output.
-- Basic knowledge of methods in Python, such as variables, lists and loops
-- A GitHub account.
+- A GitHub account and basic knowledge of Git commands to execute the routines (`add, commit and push`).
+- Basic of Python to work with variables, lists, loops, conditionals and print messages on the console.
