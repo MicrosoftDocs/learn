@@ -30,7 +30,6 @@ roles:
 - developer
 products:
 - ai-services
-- azure-language-understanding
 subjects:
 - artificial-intelligence
 - cloud-computing
