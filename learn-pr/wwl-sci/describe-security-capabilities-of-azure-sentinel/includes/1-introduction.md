@@ -8,4 +8,3 @@ After completing this module, you’ll be able to:
 - Describe the security concepts for SIEM and SOAR.
 - Describe how Microsoft Sentinel provides threat detection and mitigation.
 - Describe Microsoft Security Copilot.
-
