@@ -10,9 +10,9 @@ metadata:
   ms.service: sql
   ms.subservice: t-sql
 title: Implement transactions with Transact-SQL
-summary: Learn how to construct transactions to control the behavior of multiple Transact-SQL statements. You will learn how to determine whether an error has occurred, and when to roll back statements.
+summary: Learn how to construct transactions to control the behavior of multiple Transact-SQL statements. You'll learn how to determine whether an error has occurred, and when to roll back statements.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   * Describe transactions.
   * Compare transactions and batches.
   * Create and manage transactions.
