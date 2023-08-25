@@ -8,7 +8,7 @@ Organizations need to act quickly to address all the security challenges they fa
 
 Microsoft Security Copilot is the first and only generative AI security product to help defend organizations at machine speed and scale.  It's an AI-powered security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk exposure in minutes.
 
-:::image type="content" source="../media/security-copilot.png" alt-text="A graphic representing key attributes of Microsoft Security Copilot, including hyperscale AI infrastructure, cyber-trained model with security skills, threat intelligence from 65 trillion signals and end-to-end security tooling.":::
+:::image type="content" source="../media/security-copilot.png" alt-text="Diagram showing key attributes of Microsoft Security Copilot, including hyperscale AI infrastructure, cyber-trained model with security skills, threat intelligence from 65 trillion signals and end-to-end security tooling.":::
 
 The center of Microsoft Security Copilot is the prompt bar that allows security analysts to ask questions in natural language.  You use the prompt bar to tell copilot what insights you want from your security data.
 
