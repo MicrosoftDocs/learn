@@ -4,25 +4,24 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Answer three multiple-choice questions.
-  ms.date: 11/09/2022
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
-content: Choose the best response for the question below. Then select **Check your answers**.
+content: Choose the best response for the question. Then select **Check your answers**.
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What should the MRTK configuration profile for a scene be set to?"
+    - content: "What Unity packages are required to enable Azure Spatial Anchors on HoloLens 2?"
       choices:
-        - content: "DefaultHoloLens1ConfigurationProfile"
+        - content: "com.microsoft.mrtk.core"
           isCorrect: false
-          explanation: This is a default profile that's optimized for deployment and testing on HoloLens 1.
-        - content: "DefaultHoloLens2ConfigurationProfile"
+          explanation: This is Mixed Reality Toolkit package and isn't required for ASA.
+        - content: "com.microsoft.azure.spatial-anchors-sdk.core"
           isCorrect: true
-          explanation: You set the MRTK configuration profile to this default profile that's optimized for deployment and testing on HoloLens 2.
-        - content: "DefaultMixedRealityToolkitConfigurationProfile"
+          explanation:  With this package and com.microsoft.azure.spatial-anchors-sdk.windows, Azure Spatial Anchors can be added to a HoloLens 2 application.
+        - content: "com.microsoft.azure.spatial-anchors-sdk.android"
           isCorrect: false
-          explanation: When you use this profile, you'll be able to try out scenarios on virtual reality (OpenVR, Windows Mixed Reality) and HoloLens (1 and 2).
-   
+          explanation: This package is only required for enabling Azure Spatial Anchors on Android, not HoloLens 2.
