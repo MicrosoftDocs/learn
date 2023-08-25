@@ -33,10 +33,3 @@ With Codespaces configured, your goal is to develop the Python console minigame.
 7. Check if the minigame is terminated and if it displays your score, informing you of the number of wins and rounds.
 
 Congratulations if you did well in this challenge exercise! You've created a Python console minigame using GitHub Copilot.
-
-## Next steps
-
-To continue learning, you can explore new Python learning resources on Microsoft Learn:
-
-- [Build real world applications with Python](/learn/paths/python-language/?WT.mc_id=academic-105496-cyzanon)
-- [Host a web application with Azure App Service](/training/modules/host-a-web-app-with-azure-app-service/?WT.mc_id=academic-105496-cyzanon)
