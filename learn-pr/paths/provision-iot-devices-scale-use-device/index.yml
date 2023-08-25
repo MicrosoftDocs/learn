@@ -34,7 +34,6 @@ modules:
 - learn.wwl.examine-device-provisioning-service-terms-concepts
 - learn.wwl.examine-device-provisioning-service-coding-tools-access
 - learn.wwl.examine-device-provisioning-lifecycle-tasks
-- learn.wwl.explore-individual-enrollment-tasks
 - learn.wwl.explore-group-enrollment-tasks
 trophy:
   uid: learn.wwl.provision-iot-devices-at-scale-by-using-device.trophy
