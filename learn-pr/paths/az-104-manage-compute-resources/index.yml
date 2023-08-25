@@ -3,57 +3,40 @@ uid: learn.az-104-manage-compute-resources
 metadata:
   title: 'AZ-104: Deploy and manage Azure compute resources'
   description: 'AZ-104: Deploy and manage Azure compute resources'
-  ms.date: 10/12/2022
+  ms.date: 08/21/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'AZ-104: Deploy and manage Azure compute resources'
 prerequisites: |
-  - [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
-  - [Azure Fundamentals: Describe Azure architecture and services](/training/paths/azure-fundamentals-describe-azure-architecture-services/)
-  - [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
-  - [AZ-104: Prerequisites for Azure administrators](/training/paths/az-104-administrator-prerequisites/)
+  *   [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
+  *   [Azure Fundamentals: Describe Azure architecture and services](/training/paths/azure-fundamentals-describe-azure-architecture-services/)
+  *   [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
+  *   [AZ-104: Prerequisites for Azure administrators](/training/paths/az-104-administrator-prerequisites/)
 summary: |
-  Learn how to deploy and configure virtual machines, containers, and Web Apps in Azure. 
-  
+  Learn how to deploy and configure virtual machines, containers, and Web Apps in Azure.
   Here are the learning paths in the AZ-104 Azure Administrator series:
-
   :::row:::
   :::column:::
-    <img src="/training/achievements/az-104-administrator-prerequisites.svg" width="84" height="70" alt="The trophy for the AZ-104 Prerequisites for Azure administrators learning path." role="presentation"></img>
-
-    [AZ-104: Prerequisites for Azure administrators](/training/paths/az-104-administrator-prerequisites/)
+    [AZ-104: Prerequisites for Azure administrators](/learn/paths/az-104-administrator-prerequisites/)
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/az-104-manage-identities-governance.svg" width="101" height="84" alt="The trophy for the AZ-104 Manage identities and governance in Azure learning path." role="presentation"></img>
-
-    [AZ-104: Manage identities and governance in Azure](/training/paths/az-104-manage-identities-governance/)
+    [AZ-104: Manage identities and governance in Azure](/learn/paths/az-104-manage-identities-governance/)
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/az-104-manage-storage.svg" width="113" height="84" alt="The trophy for the AZ-104 Implement and manage storage in Azure learning path." role="presentation"></img>
-
-    [AZ-104: Implement and manage storage in Azure](/training/paths/az-104-manage-storage/)
+    [AZ-104: Implement and manage storage in Azure](/learn/paths/az-104-manage-storage/)
   :::column-end:::
   :::row-end:::
-
-
   :::row:::
   :::column:::
-    <img src="/training/achievements/az-104-manage-compute-resources.svg" width="101" height="84" alt="The trophy for the AZ-104 Deploy and manage Azure compute resources learning path." role="presentation"></img>
-
     AZ-104: Deploy and manage Azure compute resources
-
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/az-104-manage-virtual-networks.svg" width="101" height="84" alt="The trophy for the AZ-104 Configure and manage virtual networks for Azure administrators learning path." role="presentation"></img>
-
-    [AZ-104: Configure and manage virtual networks for Azure administrators](/training/paths/az-104-manage-virtual-networks/)
+    [AZ-104: Configure and manage virtual networks for Azure administrators](/learn/paths/az-104-manage-virtual-networks/)
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/az-104-monitor-backup-resources.svg" width="101" height="84" alt="The trophy for the AZ-104 Monitor and back up Azure resources learning path." role="presentation"></img>
-
-    [AZ-104: Monitor and back up Azure resources](/training/paths/az-104-monitor-backup-resources/)
+    [AZ-104: Monitor and back up Azure resources](/learn/paths/az-104-monitor-backup-resources/)
   :::column-end:::
   :::row-end:::
 iconUrl: /training/achievements/az-104-manage-compute-resources.svg
@@ -74,14 +57,11 @@ subjects:
 modules:
 - learn.wwl.configure-virtual-machines
 - learn.wwl.configure-virtual-machine-availability
-- learn.wwl.configure-virtual-machine-extensions
 - learn.wwl.configure-app-service-plans
 - learn.wwl.configure-azure-app-services
 - learn.wwl.configure-azure-container-instances
-- learn.wwl.configure-azure-kubernetes-service
 - learn.manage-vms-with-azure-cli
 - learn.create-a-windows-vm-in-azure
 - learn.host-a-web-application-with-azure-web-apps
-- learn.azure.protect-vm-settings-with-dsc
 trophy:
   uid: learn.az-104-manage-compute-resources.trophy

@@ -3,7 +3,7 @@ uid: learn.intro-to-kubernetes
 metadata:
   title: Introduction to Kubernetes
   description: Get acquainted with the Kubernetes open-source container-orchestration system for automating application deployment, scaling, and management.
-  ms.date: 4/01/2020
+  ms.date: 08/16/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
@@ -12,9 +12,9 @@ title: Introduction to Kubernetes
 summary: Determine the types of business problems that you can solve by using Kubernetes. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing.
 abstract: |
   In this module, you will:
-  - Describe how Kubernetes supports container orchestration
-  - Describe the difference between control planes and nodes
-  - Evaluate whether Kubernetes is an appropriate orchestration platform for a given workload
+  - Describe how Kubernetes supports container orchestration.
+  - Describe the difference between control planes and nodes.
+  - Evaluate whether Kubernetes is an appropriate orchestration platform for a given workload.
 prerequisites: |
   - Basic concepts of microservice architectures
   - Basic understanding of how Docker containers work

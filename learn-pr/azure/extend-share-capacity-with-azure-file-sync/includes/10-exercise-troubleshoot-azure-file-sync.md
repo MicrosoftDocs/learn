@@ -10,9 +10,9 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Go to the storage account. Select **All resources** > **extendcadfiles**. Your **Storage account** pane appears.
+1. Go to the storage account by selecting **Storage accounts** > **extendcadfilesXXXX**. Your **Storage account** pane appears.
 
-1. In the middle menu pane, under **Security + networking**, select **Access keys**. The **Access keys** pane appears for your storage account.
+1. In the left menu pane, under **Security + networking**, select **Access keys**. The **Access keys** pane appears for your storage account.
 
    ![Screenshot of the Access keys option under Security + settings.](../media/10-access-keys-option.png)
 
@@ -23,7 +23,8 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 1. If you closed your Remote Desktop connection, use these steps to connect to the VM:
     1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
     1. Go to **Virtual machines** > **FileServerLocal**.
-    1. Select **Connect** > **Download RDP File**, and then open the RDP file.
+    1. Select **Connect** and then select **Native RDP**.
+    1. Select **Download RDP File**, and then open the RDP file.
     1. In the **Windows Security** window, select **More choices** > **Use a different account**.
     1. Enter the user name **learnadmin** and the password you used when you created the VM.
 
@@ -31,13 +32,13 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 
 1. In the menu at the top of the window, select **Computer** > **Map network drive**.
 
-1. In the **Folder** box, enter **\\\extendcadfiles.file.core.windows.net\cadfileshare**.
+1. In the **Folder** box, enter **\\\extendcadfilesXXXX.file.core.windows.net\cadfileshare**. Replace the XXXX to match your storage account name.
 
 1. Select **Connect using different credentials**.
 
 1. Select **Finish**.
 
-1. For the user name, enter **AZURE\extendcadfiles**.
+1. For the user name, enter **AZURE\extendcadfilesXXXX**. Replace the XXXX to match your storage account name. You might need to select **More choices** > **Use a different account**.
 
 1. For the password, paste in the key you copied in the previous section.
 

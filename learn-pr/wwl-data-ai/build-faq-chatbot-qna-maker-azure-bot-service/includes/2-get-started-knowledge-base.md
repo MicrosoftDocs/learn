@@ -1,24 +1,24 @@
 You can easily create a user support bot solution on Microsoft Azure using a combination of two core services:
 
-- **Language service**. The Language service includes a custom question answering feature that enables you to create a knowledge base of question and answer pairs that can be queried using natural language input. 
+- **Azure AI Language**: includes a custom question answering feature that enables you to create a knowledge base of question and answer pairs that can be queried using natural language input. 
     > [!NOTE]
-    > The question answering capability in the Language service is a newer version of the QnA Maker service - which is still available as a separate service.
-- **Azure Bot service**. This service provides a framework for developing, publishing, and managing bots on Azure.
+    > The question answering capability in Azure AI Language is a newer version of the QnA Maker service - which is still available as a separate service.
+- **Azure AI Bot Service**: provides a framework for developing, publishing, and managing bots on Azure.
 
 ## Creating a custom question answering knowledge base
 
-The first challenge in creating a user support bot is to use the Language service to create a knowledge base. You can use the *Language Studio*'s custom question answering feature to create, train, publish, and manage knowledge bases.
+The first challenge in creating a user support bot is to use Azure AI Language to create a knowledge base. You can use the *Language Studio*'s custom question answering feature to create, train, publish, and manage knowledge bases.
 
 > [!NOTE]
-> You can write code to create and manage knowledge bases using the Language service REST API or SDK. However, in most scenarios it is easier to use the Language Studio.
+> You can write code to create and manage knowledge bases using the Azure AI Language REST API or SDK. However, in most scenarios it is easier to use the Language Studio.
 
-### Provision a Language service Azure resource
+### Provision a Language resource
 
-To create a knowledge base, you must first provision a **Language service** resource in your Azure subscription. 
+To create a knowledge base, you must first provision a **Language** resource in your Azure subscription. 
 
 ### Define questions and answers
 
-After provisioning a Language service resource, you can use the Language Studio's custom question answering feature to create a knowledge base that consists of question-and-answer pairs. These questions and answers can be:
+After provisioning a Language resource, you can use the Language Studio's custom question answering feature to create a knowledge base that consists of question-and-answer pairs. These questions and answers can be:
 
 - Generated from an existing FAQ document or web page.
 - Entered and edited manually.
@@ -45,13 +45,13 @@ When you're satisfied with your knowledge base, deploy it. Then you can use it o
 - The knowledge base endpoint
 - The knowledge base authorization key
 
-## Build a bot with the Azure Bot Service
+## Build a bot with Azure AI Bot Service
 
 After you've created and deployed a knowledge base, you can deliver it to users through a bot.
 
 ### Create a bot for your knowledge base
 
-You can create a custom bot by using the Microsoft Bot Framework SDK to write code that controls conversation flow and integrates with your knowledge base. However, an easier approach is to use the automatic bot creation functionality, which enables you to create a bot for your deployed knowledge base and publish it as an Azure Bot Service application with just a few clicks.
+You can create a custom bot by using the Microsoft Bot Framework SDK to write code that controls conversation flow and integrates with your knowledge base. However, an easier approach is to use the automatic bot creation functionality, which enables you to create a bot for your deployed knowledge base and publish it as an Azure AI Bot Service application with just a few clicks.
 
 ### Extend and configure the bot
 
