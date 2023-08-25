@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.build-form-recognizer-custom-skill
-title: Build a Form Recognizer custom skill
+title: Build an Azure AI Document Intelligence custom skill
 metadata:
-  title: Build a Form Recognizer custom skill
-  description: "Build a Form Recognizer custom skill"
+  title: Build an Azure AI Document Intelligence custom skill
+  description: "Build an Azure AI Document Intelligence custom skill"
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: rcaper

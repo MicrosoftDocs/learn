@@ -6,7 +6,7 @@ metadata:
   description: "Exercise - Create a bot with the Bot Framework Composer"
   ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: false
