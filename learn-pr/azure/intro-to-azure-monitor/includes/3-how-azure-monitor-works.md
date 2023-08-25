@@ -47,7 +47,7 @@ Along with collecting metrics and telemetry data that describe application activ
 
 Application Insights supports distributed tracing, which is also known as distributed component correlation. This feature allows searching for and visualizing the end-to-end flow of a specific execution or transaction. The ability to trace activity from end to end is important for applications built as distributed components or microservices.
 
-Application Insights also includes the following features and abilities:
+Application Insights also includes the following features:
 
 - **Live metrics** observe activity from your deployed application in real time with no effect on the host environment.
 - **Availability monitoring**, also known as *synthetic transaction monitoring*, probes the external endpoints of your applications to test overall availability and responsiveness over time.

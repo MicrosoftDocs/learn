@@ -15,11 +15,11 @@ This module gives you an overview of Azure Monitor, describes key Azure Monitor 
 - Understand the uses and importance of monitoring.
 - Learn the basics of how Azure Monitor works to monitor Azure applications and infrastructure.
 - Describe the functions of Azure Monitor Logs, Metrics, and Insights.
-- Know how Azure Monitor can support your Azure resource monitoring needs.
+- Know how Azure Monitor can support your Azure app and resource monitoring needs.
 
 ## Prerequisites
 
-Basic knowledge and understanding of the following concepts:
+Basic knowledge and understanding of the following processes:
 
 - Azure portal navigation and resource management
 - Azure web application deployment

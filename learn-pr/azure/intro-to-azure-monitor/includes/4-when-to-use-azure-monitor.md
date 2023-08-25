@@ -28,8 +28,6 @@ The following list describes some Azure Monitor and external tools for visualizi
 
   You can use the workbooks that Azure Monitor Insights provide, use the workbook template library, or create your own workbooks. In the Azure portal, select **Workbooks** in the Azure Monitor left navigation to see and access the available workbooks and templates.
 
-  :::image type="content" source="../media/workbooks-gallery.png" alt-text="Screenshot of the Workbooks Gallery showing the workbooks available for Azure Monitor." lightbox="../media/workbooks-gallery.png":::
-
 - **Azure Dashboards** let you combine different kinds of data into a single pane in the Azure portal. You can add the output of any log query or metrics chart to an Azure dashboard, and optionally share the dashboard with other Azure users. For example, you could create a dashboard that shows a graph of metrics, a table of activity logs, and a usage chart from Application Insights.
 
 - **Power BI** is a business analytics service that provides interactive visualizations across various data sources. You can configure Power BI to automatically import log data from Azure Monitor to take advantage of these visualizations. Power BI is an effective way to make data available to other people within and outside your organization.

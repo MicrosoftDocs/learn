@@ -71,9 +71,9 @@ As soon as you start adding resources such as web apps to an Azure subscription,
 
 Azure Monitor Metrics can monitor various aspects of your application to tell you how the app and any resources it uses are performing. A list of resource-specific metrics is automatically available for each resource type in your subscription.
 
-For example, the following **Requests** metric line chart shows the sum aggregation of requests for a web application.
+For example, the following **Requests** metric line chart shows the sum aggregation of requests for the **Contoso-web-sales** application.
 
-:::image type="content" source="../media/web-app-metrics.png" alt-text="Screenshot of the Monitoring option selected in the Azure portal for a web app, showing chart of requests for the web app.":::
+:::image type="content" source="../media/web-app-metrics.png" alt-text="Screenshot of the Monitoring option selected in the Azure portal for a web app, showing chart of requests for the web app." lightbox="../media/web-app-metrics.png":::
 
 ### Application Insights
 
@@ -87,7 +87,7 @@ Azure Monitor Workbooks provide a flexible canvas for analyzing data and creatin
 
 The following image shows three types of workbooks that display logged data in different chart and table formats.
 
-:::image type="content" source="../media/workbooks.png" alt-text="Screenshots of three workbooks displaying logged data in various chart and table formats.":::
+:::image type="content" source="../media/workbooks.png" alt-text="Screenshots of three workbooks displaying logged data in various chart and table formats." border="false":::
 
 You can add the visualizations you create in Azure Monitor to Azure dashboards, which let you combine different kinds of data into a single pane in the Azure portal.
 
