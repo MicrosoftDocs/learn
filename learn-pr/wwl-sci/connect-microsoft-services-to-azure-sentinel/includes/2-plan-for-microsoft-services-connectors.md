@@ -1,4 +1,4 @@
-You can connect Microsoft and Azure-related services in the Data Connector page configuration section in just a few mouse clicks.  It's easy to overlook specific considerations for each connector.  This module will demonstrate the connecting of three services. Each service sends data to different Data Types (tables).
+Once you've installed the Content Hub solutions, you can connect Microsoft and Azure-related services in the Data Connector page configuration section in just a few mouse clicks.  It's easy to overlook specific considerations for each connector.  This module will demonstrate the connecting of three services. Each service sends data to different Data Types (tables).
 
 First, is the Office 365 connector.  The Configuration option allows for the sending of Exchange, SharePoint, and Teams data.  Based on your organization's specific needs, you can decide which data to ingest.  The Data types show that all the data will reside in the OfficeActivity table.
 
