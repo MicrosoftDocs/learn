@@ -15,8 +15,6 @@ Microsoft cloud security benchmark is the successor of **Azure Security Benchmar
  -  Providing consistent user experience for monitoring and enforcing the multi-cloud security benchmark in Defender for Cloud
  -  Staying aligned with Industry Standards (e.g., CIS, NIST, PCI)
 
-:::image type="content" source="../media/mcsb-versus-other-frameworks-example-092e1696.jpg":::
-:::image type="content" source="../media/mcsb-vs-other-frameworks-example-19b57e81.jpg":::
 :::image type="content" source="../media/mcsb-vs-other-framework-example-f9cfed4d.jpg" alt-text="Diagram showing an example of the Multicloud security framework and Automated control monitoring standards matrix.":::
 
 

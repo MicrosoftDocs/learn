@@ -3,7 +3,7 @@ uid: learn.wwl.set-up-microsoft-defender-cloud
 metadata:
   title: Set up Microsoft Defender for Cloud
   description: "Discover how to leverage Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
-  ms.date: 08/24/2023
+  ms.date: 08/25/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
