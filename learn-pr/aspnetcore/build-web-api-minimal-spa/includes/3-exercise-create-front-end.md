@@ -4,14 +4,14 @@ In this exercise, you build the front-end app. You start with a scaffold, and th
 
 A [development container](https://containers.dev/) environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
 
-#### [GitHub Codespaces](#tab/github-codespaces)
+#### [Develop in browser](#tab/github-codespaces)
 
-[GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
+GitHub Codespaces runs a development container managed by GitHub with **Visual Studio Code for the Web** as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
 
 > [!IMPORTANT]
 > All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
 
-1. Start the process to create a new GitHub Codespace on the `main` branch of the [`MicrosoftDocs/minimal-api-work-with-databases`](https://github.com/MicrosoftDocs/minimal-api-work-with-databases) GitHub repository.
+1. Start the process to create a new GitHub Codespace on the `main` branch of the `MicrosoftDocs/minimal-api-work-with-databases` GitHub repository.
 
     > [!div class="nextstepaction"]
     > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=422316964)
@@ -39,9 +39,9 @@ A [development container](https://containers.dev/) environment is available with
 
 1. The remaining exercises in this project take place in the context of this development container.
 
-#### [Visual Studio Code](#tab/visual-studio-code)
+#### [Develop locally](#tab/visual-studio-code)
 
-The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
+The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for [Visual Studio Code](https://code.visualstudio.com/) requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
 
 1. Open **Visual Studio Code** in the context of an empty directory.
 
