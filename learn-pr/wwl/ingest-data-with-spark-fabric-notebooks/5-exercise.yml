@@ -4,12 +4,12 @@ title: Exercise - Ingest data with Spark and Microsoft Fabric notebooks
 metadata:
   title: Exercise - Ingest data with Spark and Microsoft Fabric notebooks
   description: "Exercise - Ingest data with Spark and Microsoft Fabric notebooks"
-  ms.date: 08/23/2023
+  ms.date: 08/25/2023
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.service: fabric
-durationInMinutes: 20
+durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise.md)]

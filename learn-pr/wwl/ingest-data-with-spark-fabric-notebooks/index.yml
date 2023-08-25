@@ -3,7 +3,7 @@ uid: learn.wwl.ingest-data-with-spark-fabric-notebooks
 metadata:
   title: Ingest data with Spark and Microsoft Fabric notebooks
   description: "Ingest data with Spark and Microsoft Fabric notebooks"
-  ms.date: 08/23/2023
+  ms.date: 08/25/2023
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
