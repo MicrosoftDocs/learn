@@ -3,7 +3,7 @@ In this unit, you'll explore the steps required to:
 - Start and stop an Azure Spatial Anchors session.
 - Create, upload, and download spatial anchors on a single device.
 
-As a result of completing the prerequisites for this learn module, you should already have a Unity project that's set up and configured for OpenXR and MRTK2. Open that project and then check to ensure that you have the proper capabilities selected:
+As a result of completing the prerequisites for this learn module, you should already have a Unity project that's set up and configured for OpenXR and MRTK3. Open that project and then check to ensure that you have the proper capabilities selected:
 
 1. Navigate to **Edit > Project Settings > Player > Publishing Settings**.
 1. Scroll down to the **Capabilities** section and select the following if they're not already selected:
@@ -12,67 +12,29 @@ As a result of completing the prerequisites for this learn module, you should al
 - **InternetClient**
 - **PrivateNetworkClientServer**
 
-When you're finished, close the **Project Settings** window and continue on with the steps below.
+When you're finished, close the **Project Settings** window and continue on with the next steps.
 
-## Choose configuration options
-
-There's one configuration option that we need to change: occlusion. MRTK2 bases its various configurations on a series of default profiles that can't be altered. In order to change an option, you must clone an existing default profile and change the option in the clone. We'll do that next.
-
-1. In the **Hierarchy**, select the **Mixed Reality Toolkit** object. This causes the Mixed Reality Toolkit (MRTK) profile to appear in the **Inspector.**
-1. In the **Inspector**, at the top of the **MixedReality Toolkit** component, click the drop-down that displays **DefaultMixedRealityToolkitConfigurationProfile** and change that setting to **DefaultHoloLens2ConfigurationProfile**.
-1. In the vertical column of subsystems along the left side of the **Inspector**, select **Spatial Awareness**.
-
-    We need to change an option in the Spatial Awareness subsystem, but it's currently grayed out.
-
-    :::image type="content" source="../media/005-spatial-awareness-grayed-out.png" alt-text="Screenshot that shows the MRTK Spatial Awareness subsystem selected but grayed out.":::
-
-    To make it available, you must clone the default profile.
-
-1. Click the **Clone** button.
-1. In the **Clone Profile** window, note that in the **Profile Name** field, Unity provides a default name of **New MixedRealityToolkitconfigurationProfile**. You can change the name to anything you want, but for this learn module we'll stay with the name provided by Unity.
-
-    :::image type="content" source="../media/001-clone-profile-window.png" alt-text="Screenshot that shows the Clone Profile window and default clone name provided by Unity.":::
-
-1. Click the **Clone** button in the **Clone Profile** window. 
-1. Note that the **Enable Spatial Awareness System** option is now available. 
-
-    :::image type="content" source="../media/002-enable-spatial-awareness.png" alt-text="Screenshot that shows the Enable Spatial Awareness System option now being available.":::
-
-    Select this option.
-
-2. The Spatial Awareness system has its own default profile (see "1" in the image below). Like the earlier default profile, it can't be altered, so the **Add Spatial Observer** section is grayed out (see "2" in the image below).
-
-    :::image type="content" source="../media/003-spatial-awareness-profile.png" alt-text="Screenshot that shows the default Spatial profile and its options grayed out.":::
-
-    You must clone this profile, too.
-
-3. Click the **Clone** button to the right of the default profile name.
-4. In the **Clone Profile** window, click the **Clone** button to accept the clone name provided by Unity.
-5. There are now three Spatial Observers available as drop-downs. Click the first one, **XR SDK Windows Mixed Reality Spatial Mesh Observer**, to reveal its contents.
-6. This spatial observer also has its own default profile that must be cloned. Click the **Clone** button, and then in the **Clone Profile** window, click **Clone** to accept the name provided by Unity and clone the default profile.
-7. Scroll down to the last section in the profile, **Display Settings**, then click the **Display Option** drop-down, and then select **Occlusion**.
-
-    :::image type="content" source="../media/004-display-options-occlusion.png" alt-text="Screenshot that shows the Spatial Observer section Display Settings with Occlusion selected.":::
-
-## Install in-built Unity packages and import the tutorial assets
+## Install built-in Unity packages and import the tutorial assets
 
 1. On the menu bar, select **Window** > **Package Manager**. 
 
-1. Verify that AR Foundation version 4.1.7 is installed.
+1. Verify that AR Foundation version 5.0.3 or latest version is installed.
 
-    :::image type="content" source="../media/006-install-package.png" alt-text="Screenshot of selections for verifying the A R Foundation version for Package Manager." :::
+    :::image type="content" source="../media/ar-foundation-package-manager.png" alt-text="Screenshot of selections for verifying the A R Foundation version for Package Manager." :::
 
 ## Import the tutorial assets
 
-1. Add AzurespatialAnchors SDK V2.12, or the latest version, to your project by following [this tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
+1. Add Azure Spatial Anchors SDK V2.12, or the latest version, to your project by following [this tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
 2. Download and import the following Unity custom packages in this order:
 
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/tag/getting-started-v2.7.2)
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.12.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/tag/azure-spatial-anchors-v2.12.0)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0-pre.18.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v3.0.0-pre.18/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0-pre.18.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.3.0.0-pre.18.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v3.0.0-pre.18/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.3.0.0-pre.1)
 
     > [!Note]
-    > If you see any CS0618 warnings that say "WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)" is obsolete, you can ignore them.
+    > Importing both MRTK3 and ASA may cause errors when the ARFoundation package version doesn't match the imported ARSubsystems version. Until this is fixed, you can manually add com.unity.xr.arsubsystems version 5.0.2 to the project's Package Manager as a [workaround](/windows/mixed-reality/develop/unity/known-issues). 
+    >
+    > You'll get a warning that ARSubsystems has been deprecated, but it can be ignored. If you see any CS0618 warnings that say "WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)" is obsolete, you can also ignore these.
 
 ## Prepare the scene
 
@@ -81,69 +43,75 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 1. On the **Project** pane, go to the **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder. Then drag the following prefabs to the **Hierarchy** pane to add them to your scene:
 
     * **ButtonParent** prefabs
-    * **DebugWindow** prefabs
     * **Instructions** prefabs
     * **ParentAnchor** prefabs
-
+    * Change ButtonParent's  **Tranform/Position** values to the following: X = 0.0, Y = 1.6, Z = 0.6
+    * Change Instructions's  **Tranform/Position** values to the following: X = -0.8, Y = 2.0, Z = 2.0
+    * Change ParentAnchor's  **Tranform/Position** values to the following: X = -0.3, Y = 1.5, Z = 0.6
     :::image type="content" source="../media/007-prefabs.png" alt-text="Screenshot of prefabs added to the Hierarchy pane." :::
 
     > [!Tip]
     > If you find the large icons in your scene (for example, the large framed "T" icons) distracting, you can hide them by [opening the Gizmos drop-down](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) and turning off the display of icons for individual objects.
 
-1. In the **Hierarchy** pane, select the **MixedRealityToolkit** object.
+1. In the **Hierarchy** window, select **MRTK XR Rig** > **Camera Offset** 
 1. In the **Inspector** pane, use the **Add Component** button to add the following components:
 
     * **AR Anchor Manager (Script)**
     * **DisableDiagnosticsSystem (Script)**
 
     > [!Note]
-    > When you add the **AR Anchor Manager (Script)** component, the **AR Session Origin (Script)** component is automatically added, because the **AR Anchor Manager (Script)** component requires it.
+    > When you add the **AR Anchor Manager (Script)** component, the **XR Origin** component is automatically added, because the **AR Anchor Manager (Script)** component requires it.
+
+    :::image type="content" source="../media/ar-manager-gameobject.png" alt-text="Screenshot of adding AR Anchor Manager." :::
 
 ## Configure the buttons to operate the scene
 
 In this section, you'll add scripts to the scene to create a series of button events that demonstrate the fundamentals of how both local anchors and spatial anchors behave in an app.
 
 1. In the **Hierarchy** pane, expand the **ButtonParent** object and then select the first child object, **StartAzureSession**. 
-1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component. Note that it has an **On Click ()** event.
-1. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
-1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **StartAzureSession ()**. This function will be executed when the event is triggered.
+1. In the **Inspector** pane, navigate to the **Pressable Button** component. It has an **On Clicked ()** event.
+1. In the **Hierarchy**, select the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
+1. Select the **No Function** drop-down and then select **AnchorModuleScript** > **StartAzureSession ()**. This function will be executed when the event is triggered.
 
     :::image type="content" source="../media/008-a-start-azure-session.png" alt-text="Screenshot that shows Unity with the StartAzureSession button's OnClick event configured." :::
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **StopAzureSession**
-1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
-2. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
-3. Click the **No Function** drop-down and then select **AnchorModuleScript** > **StopAzureSession ()**.
+1. In the **Inspector** pane, navigate to the **Pressable Button** component.
+2. In the **Hierarchy**, select the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
+3. Select the **No Function** drop-down and then select **AnchorModuleScript** > **StopAzureSession ()**.
 
 
     :::image type="content" source="../media/009-stop-azure-session.png" alt-text="Screenshot of Unity with the StopAzureSession button's OnClick event configured." :::
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **CreateAzureAnchor**.
-1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
-2. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
-3. Click the **No Function** drop-down and then select **AnchorModuleScript** > **CreateAzureAnchor (GameObject)**.
+1. In the **Inspector** pane, navigate to the **Pressable Button** component.
+2. In the **Hierarchy**, select the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
+3. Select the **No Function** drop-down and then select **AnchorModuleScript** > **CreateAzureAnchor**.
+4. Select the **ParentAnchor** object again, and then drag it to the **Inspector** and drop it in the parameter of **AnchorModuleScript.CreateAzureAnchor**.
 
     :::image type="content" source="../media/010-create-azure-anchor.png" alt-text="Screenshot of Unity with the CreateAzureAnchor button's OnClick event configured." :::
 
 4. In the **Hierarchy** pane in the **ButtonParent** child list, select **RemoveLocalAnchor**.
-5. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
-6. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
-7. Click the **No Function** drop-down and then select **AnchorModuleScript** > **RemoveLocalAnchor (GameObject)**.
+5. In the **Inspector** pane, navigate to the **Pressable Button** component.
+6. In the **Hierarchy**, select the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
+7. Select the **No Function** drop-down and then select **AnchorModuleScript** > **RemoveLocalAnchor**.
+8. Select the **ParentAnchor** object again, and then drag it to the **Inspector** and drop it in the parameter of **AnchorModuleScript.RemoveLocalAnchor**.
+
 
     :::image type="content" source="../media/011-remove-local-anchor.png" alt-text="Screenshot of Unity with the RemoveLocalAnchor button's OnClick event configured." :::
 
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **FindAzureAnchor**.
-1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
-2. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
-3. Click the **No Function** drop-down and then select **AnchorModuleScript** > **FindAzureAnchor (GameObject)**.
+1. In the **Inspector** pane, navigate to the **Pressable Button** component.
+2. In the **Hierarchy**, select the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
+3. Select the **No Function** drop-down and then select **AnchorModuleScript** > **FindAzureAnchor**.
 
      :::image type="content" source="../media/012-find-azure-anchor.png" alt-text="Screenshot of Unity with the FindAzureAnchor button's OnClick event configured." :::
 
 4. In the **Hierarchy** pane in the **ButtonParent** child list, select **DeleteAzureAnchor**.
-5. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
-6. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
-7. Click the **No Function** drop-down and then select **AnchorModuleScript** > **DeleteAzureAnchor (GameObject)**.
+5. In the **Inspector** pane, navigate to the **Pressable Button** component.
+6. In the **Hierarchy**, select the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
+7. Select the **No Function** drop-down and then select **AnchorModuleScript** > **DeleteAzureAnchor**.
 
     :::image type="content" source="../media/013-delete-azure-anchor.png" alt-text="Screenshot of Unity with the DeleteAzureAnchor button's OnClick event configured." :::
 
