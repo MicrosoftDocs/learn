@@ -1,6 +1,46 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.secure-app-with-oidc-and-azure-ad.badge.yml",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/index.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/1-introduction.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/2-modern-auth-for-your-app.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/3-create-aad-register-app.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/4-exercise-create-aad-register-app.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/5-exercise-deploy-app-with-oidc-auth.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/6-summary.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/partner-center/introduction-to-partner-center/index.yml",
       "redirect_url": "/training/modules/partner-center/introduction-to-partner-center/",
       "redirect_document_id": true
@@ -25651,6 +25691,333 @@
     {
       "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/6-use-azure-service-health.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/2-what-is-azure-iot-central.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/3-azure-iot-central-architecture.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/4-introduction-to-application-templates.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/5-connecting-devices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/build-low-touch-iot-solutions-by-using-azure-iot-central/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evaluate-iot-scenario-with-iot-central/",
+      "redirect_document_id": false
+    },
+
+
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/2-choose-secure-consent-setting.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/3-exercise-enable-admin-consent-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/4-manage-evaluate-consent-requests.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/review-admin-consent-requests/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/5-exercise-review-admin-consent-requests.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/review-admin-consent-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-of-azure-blueprints.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/8-govern-subscriptions-azure-blueprints.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/9-accelerate-cloud-adoption-framework.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/10-create-subscription-governance-strategy.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/2-control-access-azure-rbac.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/3-prevent-changes-resource-locks.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/4-protect-storage-account-resource-lock.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/5-organize-resource-tags.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/6-control-audit-resources-azure-policy.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/7-restrict-location-azure-policy.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/2-compare-authentication-authorization.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/3-what-is-azure-active-directory.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/4-what-are-mfa-conditional-access.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/index.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/8-describe-impact-of-materialized-views.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/3-exercise-check-for-skewed-data-space-usage.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/7-exercise-compare-storage-requirements.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/9-exercise-improve-execution-plan-of-query-materialized-view.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/11-exercise-optimize-delete-operation.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/5-exercise-view-column-store-storage-details.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/12-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/13-summary.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/4-understand-column-store-storage-details.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/6-understand-impact-of-wrong-choices-for-column-data-types.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/10-understand-rules-for-minimally-logged-operations.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/2-understand-skewed-data-space-usage.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/2-compare-costs-tco-calculator.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/3-compare-workload-costs-tco-calculator.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/4-purchase-azure-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/5-estimate-workload-cost-pricing-calculator.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/6-manage-minimize-total-cost.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/3-examine-visual-studio-code-user-interface.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/4-examine-visual-studio-code-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/4-exercise-explore-visual-studio-code-user-interface.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/5-exercise-explore-visual-studio-code-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/5-exercise-configure-visual-studio-code.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/6-exercise-configure-visual-studio-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/6-exercise-install-dotnet.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/3-exercise-install-dotnet",
       "redirect_document_id": false
     }
   ]

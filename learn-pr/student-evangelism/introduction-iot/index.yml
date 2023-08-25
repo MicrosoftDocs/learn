@@ -17,7 +17,7 @@ abstract: |
   -  Evaluate whether Azure IoT can address the problems associated with large-scale IoT deployment
   -  Describe how the components of Azure IoT work together to build a cloud-based IoT solution
      
-  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 
 prerequisites: |
     None
