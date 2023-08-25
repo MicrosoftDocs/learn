@@ -10,7 +10,7 @@ Whenever you work in a codespace, you're using a dev container on a virtual mach
 
 You can configure the dev container for a repository and Codespaces can create a tailored development environment, having all the tools and runtimes you need to work on a specific project.
 
-The diagram taken directly from the official [Visual Studio Code docs](https://code.visualstudio.com/docs/remote/containers), illustrates this functionality.
+This diagram from the official [Visual Studio Code docs](https://code.visualstudio.com/docs/remote/containers) illustrates this functionality.
 
 ![A diagram showing a development environment in a local computer and comparing with a development environment in the cloud (Dev Container).](./media/dev-container.png)
 
@@ -18,7 +18,7 @@ The diagram taken directly from the official [Visual Studio Code docs](https://c
 
 In this challenge exercise, you need to open the `devcontainer` folder and update the `devcontainer.json` JSON file to add the GitHub Copilot extension.
 
-- Codespaces identify the extensions required using their Visual Studio Code marketplace `id`.
+- Codespaces identifies the extensions required using their Visual Studio Code marketplace `id`.
 - The GitHub Copilot extension identification is `GitHub.copilot`.
 
 By adding the GitHub Copilot extension to this file, you're ensuring that it's installed in the development container and available for use in the Codespace.
