@@ -1,4 +1,4 @@
-Azure Forms Recognizer uses Azure AI cognitive services to analyze the content of scanned forms and convert them into data. It can recognize text values in both common forms and forms that are unique to your business.
+Azure Forms Recognizer uses Azure AI Services to analyze the content of scanned forms and convert them into data. It can recognize text values in both common forms and forms that are unique to your business.
 
 In this module, we'll consider this scenario: You work for a company that conducts polls for private companies and political parties. Participants submit their responses as paper forms or as online PDFs. You currently spend a lot of time and money entering these responses into databases. You want to assess Azure Form Recognizer to find out if you can use it to streamline this process.
 
