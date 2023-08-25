@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-government
 metadata:
   title: Introduction to Azure Government
   description: Learn how to use Azure Update Management to update virtual machines, verify agent connectivity, and use Azure log analytics in your cloud environment.
-  ms.date: 10/11/2018
+  ms.date: 08/23/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial

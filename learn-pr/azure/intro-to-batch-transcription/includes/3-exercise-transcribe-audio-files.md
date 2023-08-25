@@ -2,10 +2,10 @@
 Batch Transcription can transcribe entire storage containers with a single POST request. You can use the SDK to integrate transcription into your existing applications. However, in this exercise we use a POST request so that we can closely examine the entire end-to-end process.
 
 First, we prepare an environment, then submit our jobs, check the job status, and view the results. Though we're using Bash in our Cloud Shell session, most commands can be executed through languages such as C# and Python. If you want to dive deeper, we have a [GitHub repository](https://github.com/MicrosoftDocs/mslearn-batch-stt) available.
-​
+
 ## Preparing the environment
 
-Let's start by preparing our environment. The following script creates our cognitive services account and storage container.
+Let's start by preparing our environment. The following script creates our Azure AI services account and storage container.
 
 1. Select **Copy**
 
@@ -13,7 +13,7 @@ Let's start by preparing our environment. The following script creates our cogni
     # Get and set the subscription and Resource Group
     subscription=$(az account list --query [0].id -o tsv)
     resourceGroupName=$(az group list --query "[0] | name" -o tsv)
-    ​
+
     # Create the cognitive services account
     az cognitiveservices account create \
         --name cognitive-services-account-resource-speech \
@@ -23,7 +23,7 @@ Let's start by preparing our environment. The following script creates our cogni
         --location westus2 \
         --subscription $subscription \
         --yes
-    
+
     # Create a blob and container to hold our audio files
     # Create blob
     lastchars=${resourceGroupName: -10}
@@ -33,7 +33,7 @@ Let's start by preparing our environment. The following script creates our cogni
         --resource-group $resourceGroupName \
         --location westus2 \
         --sku Standard_ZRS
-    
+
     # Create container
     blobContainerName=container$lastchars
     blobConnectionString=$(az storage account show-connection-string -g $resourceGroupName -n $blobName --query "connectionString" -o tsv)
@@ -96,7 +96,7 @@ Now all the services are set up, you're going to submit the transcription job. W
 First, the command creates the secure URL for the container where the audio files are kept. It creates the command by using the names of the blob and container, and appending the SAS token you generated to the end of the URL. Then, the command creates a JSON object that contains the optional settings and locale for the transcription, along with the secure URL for the audio files.
 
 > [!TIP]
->  
+>
 > You can also include the URL of a container to save the transcription results directly by using `"destinationContainerUrl": "<URL for destination container>"`.
 > When not specified, Microsoft stores the results in a storage container managed by Microsoft.
 
@@ -143,7 +143,7 @@ First, the command creates the secure URL for the container where the audio file
     ```bash
     # Find the URI that will tell us the status. This is found in the original submission response
     info_uri=$(echo "$response" | grep -oP -m 1 "(\s*\"self\":\s*\"\K)([^\"]*)")
-    
+
     # Check the status with a simple GET request
     job_information=$(curl -X GET $info_uri -H "Ocp-Apim-Subscription-Key:$apiKeySpeech")
     echo "$job_information"
@@ -166,7 +166,6 @@ To view our results, we need to see where they're saved to. We can extract this 
     ```
 
     > [!TIP]
-    >  
     > You can select any of the contentUrl's to view the raw output of each transcription.
 
 1. Let's now loop through these files, download them, and view the first transcript. Run the following command to extract the URLs with Regex, and download each transcript.

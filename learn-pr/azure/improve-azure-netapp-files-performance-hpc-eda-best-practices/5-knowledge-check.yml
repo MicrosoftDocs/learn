@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check 
-  description: In this unit, you'll answer questions based on a scenario. 
+  description: In this unit, you answer questions based on a scenario. 
   ms.date: 05/07/2021
   author: mengruts  
   ms.author: mengtsai  
@@ -25,7 +25,7 @@ quiz:
     - content: "`nocto` and `actimeo`"
       isCorrect: true
       explanation: "We recommend using `nocto` and `actimeo` on static data volumes with massive read operations."
-  - content: "You want to increase the number of TCP network connections of NFS client VMs. Which mount option will you use?"
+  - content: "You want to increase the number of TCP network connections of NFS client VMs. Which mount option should you use?"
     choices:
     - content: "`nconnect`"
       isCorrect: true

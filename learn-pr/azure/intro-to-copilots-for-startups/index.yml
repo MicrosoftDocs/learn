@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.intro-build-copilots-for-startups
+title: Introduction to building copilots for startups
+metadata:
+  title: Introduction to building copilots for startups
+  description: In the rapidly advancing landscape of generative AI, the technology behind copilots continues to evolve. Understanding their potential and harnessing their capabilities is essential for any forward-looking entrepreneur. Whether you're a technologist, writer, entrepreneur, or innovator, we invite you to embark on an enlightening exploration of copilots and their potential to reshape the future of startups in the realm of generative AI. This module offers a comprehensive exploration of the transformational concept of copilots for startups. Discover how these applications, empowered by modern AI and expansive language models, can revolutionize complex cognitive tasks. Learn how startups can strategically use the Azure OpenAI Service to construct and deploy their own copilot to re-imagine user experiences, elevate content development, and harness the power of generative AI to drive innovation and growth.  Explore the foundational aspects of copilots, their flexible and customizable platforms, and high-quality text and image generation.
+  ms.date: 08/03/2023
+  author: amit7200
+  ms.author: amsvarze
+  ms.topic: module-intro-to-product
+  ms.prod: azure
+summary: >
+  Get to know the concept of copilots in the ever evolving generative AI domain. Define how startups can use Azure Copilot Stack and apply best practices to deliver value to their customers.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain the concept of a copilot and the Azure Copilot Stack.
+  - List how copilots are already being used and deployed today.
+  - Apply best practices when building a copilot for your startup.
+prerequisites: |
+  - Basic understanding of OpenAI's language, code, and image capabilities at the beginner level. 
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels: 
+  - beginner
+roles: 
+  - ai-engineer
+  - data-scientist
+  - student
+products:
+  - azure-bot-service  
+  - ai-services  
+  - azure-machine-learning
+units:
+  - learn.azure.intro-build-copilots-for-startups.introduction
+  - learn.azure.intro-build-copilots-for-startups.overview-copilot-for-startups
+  - learn.azure.intro-build-copilots-for-startups.azure-copilot-stack
+  - learn.azure.intro-build-copilots-for-startups.copilot-stack-use-cases-microsoft
+  - learn.azure.intro-build-copilots-for-startups.best-practices-build-future-copilot
+  - learn.azure.intro-build-copilots-for-startups.knowledge-check
+  - learn.azure.intro-build-copilots-for-startups.summary
+badge:
+  uid: learn.azure.intro-build-copilots-for-startups.badge

@@ -178,5 +178,5 @@ Now that you've seen how composed models work, let's remove the resources you cr
 
 ## Learn more
 
-- [Compose custom models v3.0](/azure/applied-ai-services/form-recognizer/compose-custom-models-preview)
+- [Compose custom models v3.1](/azure/ai-services/document-intelligence/how-to-guides/compose-custom-models?view=doc-intel-3.1.0&tabs=studio)
 - [Build your training dataset for a custom model](/azure/applied-ai-services/form-recognizer/how-to-guides/build-custom-model-v3)
