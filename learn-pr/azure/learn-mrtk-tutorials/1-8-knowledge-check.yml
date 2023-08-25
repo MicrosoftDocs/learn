@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Three multiple-choice questions
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -27,24 +27,21 @@ quiz:
           explanation: With the Universal Windows Platform (UWP), developers can target Windows 10 tablets and PCs, Windows 10 mobile devices (that is, phones), Xbox One and HoloLens with a single code base.
     - content: "Which Mixed Reality Toolkit package is the only one you're required to import and configure in order to use the Mixed Reality Toolkit?"
       choices:
-        - content: "Microsoft.MixedRealityToolkit.Unity.Extensions.unitypackage"
-          isCorrect: false
-          explanation: The extensions package provides a set of useful optional components for the Mixed Reality Toolkit. 
-        - content: "Microsoft.MixedRealityToolkit.Unity.Foundation.unitypackage"
+        - content: "com.microsoft.mrtk.core"
           isCorrect: true
-          explanation: The foundation package is the only required package and includes the core components required to create a mixed reality application.
-        - content: "Microsoft.MixedRealityToolkit.Unity.Examples.unitypackage"
+          explanation: The core package is the only required package and includes the core components required to create a mixed reality application.
+        - content: "com.microsoft.mrtk.spatialmanipulation"
           isCorrect: false
-          explanation: The examples package is optional and contains useful demonstration scenes for current Mixed Reality Toolkit features.
-    - content: "After the Mixed Reality Toolkit is added to a Unity scene, what happens to the Main Camera object?"
+          explanation: The spatial manipulation package is optional. It includes implementations of common spatial manipulation components, including BoundsControl, ObjectManipulator, and Solvers.
+        - content: "com.microsoft.mrtk.extendedassets"
+          isCorrect: false
+          explanation: The extended assets package is optional and contains additional materials, fonts, audio files and other assets that are used by the MRTK example scenes. These assets can be freely used in your projects as temporary or final art.
+    - content: "After the Mixed Reality Toolkit is added to a Unity scene, what should you do with the Main Camera object?"
       choices:
-        - content: "The Main Camera object becomes a child to the MixedRealityToolkit object."
+        - content: "The Main Camera object should be left in the scene."
           isCorrect: false
-          explanation: The MixedRealityToolkit object contains the Toolkit itself.
-        - content: "The Main Camera object becomes a child to the MixedRealityPlayspace object."
+          explanation: "The 'MRTK XR Rig' object already has its own camera."
+        - content: "The Main Camera object should be deleted."
           isCorrect: true
-          explanation: This allows the play space to manage the camera simultaneously with the SDKs.
-        - content: " The Main Camera object is deleted because it's not needed for mixed reality development."
-          isCorrect: false
-          explanation: The Main Camera object is needed to capture and display the world to the user.
+          explanation: "The Main Camera object should be deleted because the 'MRTK XR Rig' prefab that was added to the scene contains a camera in its child objects."
     
