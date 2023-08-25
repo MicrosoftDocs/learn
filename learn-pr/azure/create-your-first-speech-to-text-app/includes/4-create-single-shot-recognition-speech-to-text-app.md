@@ -1,6 +1,6 @@
-In the previous exercise, you learned how to create an Azure Cognitive Services account using the Azure Command Line Interface (CLI). Now that you have an Azure Cognitive Services account with which to work, you can begin working on your speech-to-text application.
+In the previous exercise, you learned how to create an Azure AI services account using the Azure CLI. Now that you have an Azure AI services account with which to work, you can begin working on your speech to text application.
 
-Your first challenge is to create an application that your company can use to transcribe the brief memos from your medical clients. Azure Cognitive Services provides two different types of speech recognition that you can use for your development:
+Your first challenge is to create an application that your company can use to transcribe the brief memos from your medical clients. Azure AI services provides two different types of speech recognition that you can use for your development:
 
 - **Single-shot recognition**
 
@@ -22,11 +22,11 @@ In the next exercise, you'll use single-shot recognition to create an applicatio
 
 ## Creating an application using single-shot recognition to transcribe audio files
 
-To create an application that will convert speech to text using Azure Cognitive Services' single-shot recognition, your application will have to accomplish all of the following tasks:
+To create an application that will convert speech to text using Azure AI Speech single-shot recognition, your application will have to accomplish all of the following tasks:
 
 - Include the `Microsoft.CognitiveServices.Speech` package.
 
-- Create a `SpeechConfig` class using the API key from your Azure Cognitive Services account.
+- Create a `SpeechConfig` class using the API key from your Azure AI services account.
 
 - Create an `AudioConfig` class using a WAVE file as the source.
 
