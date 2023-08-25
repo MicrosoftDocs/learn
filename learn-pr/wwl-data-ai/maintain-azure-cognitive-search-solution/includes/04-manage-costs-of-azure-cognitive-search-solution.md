@@ -44,7 +44,7 @@ The other premium features are billed as you use them.
 |---------|---------|
 |Indexer usage     | Per 1000 API calls        |
 |Image extraction (AI enrichment)     | Per 1000 text records       |
-|Built-in skills (AI enrichment)     | Number of transactions, billed at the same rate as if you had performed the task by calling Cognitive Services directly. You can process 20 documents per indexer per day for free. Larger or more frequent workloads require a multi-resource Cognitive Services key.        |
+|Built-in skills (AI enrichment)     | Number of transactions, billed at the same rate as if you had performed the task by calling Azure AI Services directly. You can process 20 documents per indexer per day for free. Larger or more frequent workloads require a multi-resource Azure AI Services key.        |
 |Custom Entity Lookup skill (AI enrichment)     |Per 1000 text records         |
 |Semantic Search     | Number of queries of "queryType=semantic", billed at a progressive rate        |
 |Private Endpoints     | Billed as long as the endpoint exists, and billed for bandwidth        |

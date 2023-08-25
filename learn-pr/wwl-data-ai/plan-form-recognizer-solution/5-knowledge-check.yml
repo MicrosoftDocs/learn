@@ -57,10 +57,10 @@ quiz:
       explanation: "Incorrect. The Free tier supports 1 request at a time."
     - content: "A Standard tier Forms Recognizer resource."
       isCorrect: true
-      explanation: "Correct. The Standard tier supports up to 15 concurrent requests and you don't need other cognitive services."
-    - content: "A Cognitive Services multi-service resource."
+      explanation: "Correct. The Standard tier supports up to 15 concurrent requests and you don't need other Azure AI Services."
+    - content: "A Azure AI Services multi-service resource."
       isCorrect: false
-      explanation: "Incorrect. You can't add Forms Recognizer to a cognitive services multi-service resource."
+      explanation: "Incorrect. You can't add Forms Recognizer to a Azure AI Services multi-service resource."
   - content: "Which of the following values is required to connect to an Azure Forms Recognizer service?"
     choices:
     - content: "The name of your Azure subscription."

@@ -13,7 +13,7 @@ Here, you'll see what you need to consider to enrich a search index using a cust
 
 ### Store your data
 
-Azure Blob storage can be accessed from both Language Studio and Cognitive Services. The container needs to be accessible, so the simplest option is to choose Container, but it's also possible to use private containers with some additional configuration.
+Azure Blob storage can be accessed from both Language Studio and Azure AI Services. The container needs to be accessible, so the simplest option is to choose Container, but it's also possible to use private containers with some additional configuration.
 
 Along with your data, you also need a way to assign classifications for each document. Language Studio provides a graphical tool that you can use to classify each document one at a time manually.
 
