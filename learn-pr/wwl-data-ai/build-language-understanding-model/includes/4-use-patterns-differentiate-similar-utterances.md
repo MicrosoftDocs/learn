@@ -21,4 +21,4 @@ To correctly train your model, provide a handful of examples of each intent that
     - "Switch the {DeviceName} off"
     - "Turn off the {DeviceName}"
 
-When you teach your model with each different type of utterance, the Language service can learn how to categorize intents correctly based off format and punctuation.
+When you teach your model with each different type of utterance, the Azure AI Language service can learn how to categorize intents correctly based off format and punctuation.
