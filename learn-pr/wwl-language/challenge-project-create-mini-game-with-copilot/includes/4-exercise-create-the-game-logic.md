@@ -9,7 +9,7 @@ With Codespaces configured, your goal is to develop the Python console minigame.
     - Rock beats scissors (breaking it).
     - Scissors beat paper (cutting it).
     - Paper beat rock (wrapping it).
-    - This minigame is designed for two players, so the computer play the role of your opponent and it will choose a random element from the list of elements
+    - The minigame is multiplayer and the computer plays the role of your opponent and chooses a random element from the list of elements
 
 - **Interaction with the player:**
     - The console is used to interact with the player. 
