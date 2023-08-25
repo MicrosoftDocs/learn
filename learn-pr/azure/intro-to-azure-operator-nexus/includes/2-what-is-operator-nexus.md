@@ -16,7 +16,7 @@ Azure provides a robust platform for developers to build modern applications. Ho
 
 - **Access to key Azure services:** Since Operator Nexus is connected to Azure, operators can seamlessly access most Azure services through the same connection as the on-premises network. Operators can monitor logs and metrics via Azure Monitor, and analyze telemetry data using Log Analytics or Azure AI/Machine Learning framework.
 
-- **Unified governance and compliance:** Operator Nexus extends Azure management and services to the operator's premises. Operators can unify data governance and enforce security and compliance policies using [Azure Role-based Access Control](https://learn.microsoft.com/azure/role-based-access-control/overview) and [Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview).
+- **Unified governance and compliance:** Operator Nexus extends Azure management and services to the operator's premises. Operators can unify data governance and enforce security and compliance policies using [Azure Role-based Access Control](/azure/role-based-access-control/overview) and [Azure Policy](/azure/governance/policy/overview).
 
 Operator Nexus utilizes a subset of IaaS and PaaS services available in the Azure public cloud to manage the lifecycle of infrastructure deployed in a Telco operator's datacenter and workloads hosted on the infrastructure. This Microsoft-curated infrastructure is referred to as the Operator Nexus on-premises infrastructure. By using Azure services, Operator Nexus effectively creates an on-premises private cloud.
 
