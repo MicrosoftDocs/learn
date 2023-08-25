@@ -22580,6 +22580,16 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/6b-knowledge-check.yml",
+    "redirect_url": "/training/modules/build-ml-model-with-azure-stream-analytics/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/7-summary.yml",
+    "redirect_url": "/training/modules/build-ml-model-with-azure-stream-analytics/",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "learn-pr/achievements/learn.oxford.introduction-5g-services-on-azure.badge.yml",
     "redirect_url": "learn-pr/paths/get-started-with-azure-private-5g-core/",
     "redirect_document_id": false
