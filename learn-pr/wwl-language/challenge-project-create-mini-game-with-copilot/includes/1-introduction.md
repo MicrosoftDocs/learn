@@ -5,13 +5,6 @@ Creating a minigame can help you practice your programming skills and improve yo
 
 In this module, you develop the classic rock, paper, scissors minigame, with the help of GitHub Codespaces and GitHub Copilot. That is, you don't need to worry about configuring the development environment, so you can focus on application development while relying on a code assistant.
 
-## Learn before you code
-
-If you're new to GitHub platforms, we have some resources to help you get started:
-
-- [Introduction to GitHub Copilot](/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105496-cyzanon).
-- [Introduction To Codespaces](https://aka.ms/CodespacesVideoTutorial).
-
 ## About the challenge
 The rock, paper, scissors game is a hand game in which each player chooses one of the three tools. From a programming point of view, this challenge is a nice exercise to practice conditional decisions, iterations, and the use of Python modules.
 
@@ -38,3 +31,5 @@ In this module, you demonstrate your ability to:
 
 - A GitHub account and basic knowledge of Git commands to execute the routines (`add, commit and push`).
 - Basic of Python to work with variables, lists, loops, conditionals and print messages on the console.
+- Awareness of GitHub Copilot at the beginner level, including how to install the extension and how to use it in your editor.
+- Awareness of Codespaces at the beginner level, including its main features and benefits to application development.
