@@ -2,7 +2,7 @@
 uid: learn.oxford.deploy-cognitive-service-iot-edge-azure-func
 metadata:
   title: "Connecting IoT devices to Azure AI services using Azure Functions"
-  description: "University of Oxford"
+  description: Create and deploy an Azure function to make a language translation IoT device
   ms.date: 03/31/2020
   author: leestott
   ms.author: chnoring
