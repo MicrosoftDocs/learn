@@ -14,7 +14,7 @@ The winner of the game is based in three simple rules:
 - Scissors beat paper.
 - Paper beats rock.
 
-By the end of this module, you will create a playable mini-game application with GitHub Copilot!
+By the end of this module, you have a playable mini-game application with GitHub Copilot!
 
 > [!NOTE]
 > This is a **_challenge project_** module where you will complete a project end-to-end based on a specification. This module is designed to be a test of your skills: there are few guidelines and no step-by-step instructions.
