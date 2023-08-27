@@ -19,17 +19,19 @@ Tailwind Traders needs to evaluate which Azure technologies can help the company
 
 Azure offers tools and services that can help organizations build machine learning and AI functionality in applications quicker and at a lower cost.
 
-### Azure Cognitive Services
+<a name='azure-ai-services'></a>
 
-[Azure Cognitive Services](/azure/ai-services/what-are-ai-services) contains prebuilt models that don't require machine-learning expertise to introduce AI functionality to an application. Azure Cognitive Services encompasses many areas, such as vision, speech, language, decision, and search. It's easy to use, so organizations can use the power of AI without extensive machine-learning skills.
+### Azure AI services
 
-Tailwind Traders sees a high potential in Azure Cognitive Services, because its data-science department isn't fully operational. The company is evaluating these features to innovate the e-commerce application:
+[Azure AI services](/azure/ai-services/what-are-ai-services) contains prebuilt models that don't require machine-learning expertise to introduce AI functionality to an application. Azure AI services encompasses many areas, such as vision, speech, language, decision, and search. It's easy to use, so organizations can use the power of AI without extensive machine-learning skills.
+
+Tailwind Traders sees a high potential in Azure AI services, because its data-science department isn't fully operational. The company is evaluating these features to innovate the e-commerce application:
 
 - **Personalizer**: Organizations can use this feature to learn which users prefer which products, and to make fine-tuned, individual recommendations. Some customers prefer products with quick delivery, whereas other customers prefer products on sale. Personalizer uses a type of machine-learning algorithm called *reinforcement learning*, which doesn't require huge amounts of data to be trained. Tailwind Traders is interested in Personalizer, because it doesn't have this type of data yet.
 - **Text Analytics**: Many users write product reviews. Organizations can analyze reviews to find customers who express negative sentiments. Focusing on these customers can reduce customer churn and increase loyalty.
 - **Translator**: Product reviews can be an effective sales tool, but they're useful only to customers who understand the language they're written in. Using real-time translation services would allow Tailwind Traders to show product reviews to any user regardless of their native language.
 
-Other Azure Cognitive Services features have potential for Tailwind Traders, but the company decided to start with the previous three. The reason is the positive ratio between the potential increase in business impact and the low effort that their introduction would require.
+Other Azure AI services features have potential for Tailwind Traders, but the company decided to start with the previous three. The reason is the positive ratio between the potential increase in business impact and the low effort that their introduction would require.
 
 ### Knowledge mining and Azure Cognitive Search
 
@@ -53,12 +55,12 @@ Azure Bot Service can be implemented in various channels, but the company is mos
 
 Azure Machine Learning makes the job of data scientists easier by helping them to share experiment results and manage different models at scale. It can refine models with hyperparameter tuning, and even create new ones with automated learning. It can then deploy the selected models to Kubernetes clusters to offer highly scalable, enterprise-grade APIs that can run the organization's machine-learning models in production.
 
-Tailwind Traders is considering using custom models for a next-generation product recommender that would be more sophisticated than the Recommender feature in Azure Cognitive Services. However, this improvement is possible only when data-science expertise exists in the organization.
+Tailwind Traders is considering using custom models for a next-generation product recommender that would be more sophisticated than the Recommender feature in Azure AI services. However, this improvement is possible only when data-science expertise exists in the organization.
 
 ## Tailwind Traders analysis
 
 Tailwind Traders formulates the hypothesis that "A recommendation engine would increase cross-sales." Ideally, Tailwind Traders would use the Azure Machine Learning service to build a recommendation engine that's tailored to the organization's needs. However, the company has no data-science expertise at the moment.
 
-For now, the company decides to use the Personalizer feature in Azure Cognitive Services to enrich the application without the need for data scientists. If the hypothesis is validated, the data science team that's eventually hired can evolve the prototype with custom machine-learning models built with Azure. An example is in the article [Build a real-time Recommendation API on Azure](/azure/architecture/reference-architectures/ai/real-time-recommendation?azure-portal=true).
+For now, the company decides to use the Personalizer feature in Azure AI services to enrich the application without the need for data scientists. If the hypothesis is validated, the data science team that's eventually hired can evolve the prototype with custom machine-learning models built with Azure. An example is in the article [Build a real-time Recommendation API on Azure](/azure/architecture/reference-architectures/ai/real-time-recommendation?azure-portal=true).
 
 Additionally, the company decides to validate the existing hypothesis around building a support chat with Azure Bot Service and improving the e-commerce site with Azure Cognitive Search. Both prototypes can be built with relatively low effort, so Tailwind Traders can start its foray into machine learning and AI at full speed.
