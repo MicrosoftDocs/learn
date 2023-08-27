@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.explore-event-streams-microsoft-fabric
+metadata:
+  title: Use real time event streams in Microsoft Fabric
+  description: "Use real time event streams in Microsoft Fabric"
+  ms.date: 08/27/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+title: Use real time event streams in Microsoft Fabric
+summary: This is an introduction to the Microsoft Fabric Evenstream within Real-Time Analytics (RTA)
+abstract: |
+  - Establish source and destinations in Eventstream
+  - View the data in-flight in Evenstream
+  - Capture, transform, and route data using Eventstream
+prerequisites: |
+  Introduction to Microsoft Fabric
+  Introduction to Real-Time Analytics (RTA)
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-ai
+- data-engineering
+- data-integration
+units:
+- learn.wwl.explore-event-streams-microsoft-fabric.introduction
+- learn.wwl.explore-event-streams-microsoft-fabric.eventstream-and-componentns
+- learn.wwl.explore-event-streams-microsoft-fabric.setting-up-eventstreams
+- learn.wwl.explore-event-streams-microsoft-fabric.routing-event-data-to-destinations
+- learn.wwl.explore-event-streams-microsoft-fabric.Exercise
+- learn.wwl.explore-event-streams-microsoft-fabric.knowledge-check
+- learn.wwl.explore-event-streams-microsoft-fabric.summary
+- learn.wwl.explore-event-streams-microsoft-fabric.transforming-and-processing-event-data
+badge:
+  uid: learn.wwl.explore-event-streams-microsoft-fabric.badge

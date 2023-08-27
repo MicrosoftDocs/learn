@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-event-streams-microsoft-fabric.setting-up-eventstreams
+title: Setting up Eventstream
+metadata:
+  title: Setting up Eventstream
+  description: "Setting up Eventstream"
+  ms.date: 08/27/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-setting-up-eventstreams.md)]
