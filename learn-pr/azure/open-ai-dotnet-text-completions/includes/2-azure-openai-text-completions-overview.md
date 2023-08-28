@@ -128,11 +128,11 @@ Vertical farming provides a novel solution for producing food locally, reducing 
 
 ### Factual responses
 
-Large language models (LLMs) have a lot of knowledge that they've learned from the data they trained on. They also has the ability to provide responses that sound real but are in fact made up. There are two ways to limit the likelihood of LLMs making up an answer.
+Large language models (LLMs) have a lot of knowledge that they've learned from the data they trained on. They also have the ability to provide responses that sound real but are in fact made up. There are two ways to limit the likelihood of LLMs making up an answer.
 
-**1. Provide a ground truth for the API** If you provide the model with a body of text to answer questions about (like a Wikipedia entry) it is less likely to confabulate a response.
+* **1. Provide a ground truth for the API** If you provide the model with a body of text to answer questions about (like a Wikipedia entry) it is less likely to confabulate a response.
 
-**2. Use a low probability and show the API how to say "I don't know"** If the model understands that in cases where it's less certain about a response that saying "I don't know" or some variation is appropriate, it is less inclined to make up answers.
+* **2. Use a low probability and show the API how to say "I don't know"** If the model understands that in cases where it's less certain about a response that saying "I don't know" or some variation is appropriate, it is less inclined to make up answers.
 
 In this example, we give the model examples of questions and answers it knows and then examples of things it wouldn't know and provide question marks. We also set the probability to zero so the model is more likely to respond with a "?" if there's any doubt.
 
