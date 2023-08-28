@@ -4,9 +4,9 @@ metadata:
   title: Deploy and maintain cloud-native apps with GitHub actions and Azure Pipelines
   description: Implement DevOps in cloud-native application scenarios. Use GitHub actions and Azure Pipelines to build and deploy infrastructure and applications.
   ms.date: 05/31/2021
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial
+  author: juliakm
+  ms.author: jukullam
+  ms.topic: module-standard-task-based
   ms.service: azure-devops-pipelines
   ms.subservice: azure-devops-pipelines-apps
 title: Deploy and maintain cloud-native apps with GitHub actions and Azure Pipelines

@@ -20,27 +20,27 @@ quiz:
 
   - content: 'An actionable alert will always...'
     choices:
-    - content: 'be comprehensive and complex'
+    - content: 'Be comprehensive and complex'
       isCorrect: false
       explanation: 'Complex alerts are harder to think about and triage, especially when you are woken up in the middle of the night by them.'
-    - content: 'include information about where the alert is coming from'
+    - content: 'Include information about where the alert is coming from'
       isCorrect: true
       explanation: 'Correct. This makes it much easier to determine where to look for more information.'
-    - content: 'serve as a record of an event'
+    - content: 'Serve as a record of an event'
       isCorrect: false
       explanation: 'Log entries are much better at serving as a record of an event, an alert should not be used for this purpose.'
 
   - content: 'Which of these options might be the best text to including in an actionable alert?'
     choices:
-    - content: 'the database server has a high error rate'
+    - content: 'The database server has a high error rate'
       isCorrect: false
       explanation: 'This text leaves out important details like the actual error rate metric, expectation that was violated and time period.'
-    - content: 'the database server is reporting an error rate of 20%'
+    - content: 'The database server is reporting an error rate of 20%'
       isCorrect: false
       explanation: 'This text leaves out important details like expectation that was violated and time period.'
-    - content: 'the database server has been reporting an error rate of 20% for the last 18 minutes'
+    - content: 'The database server has been reporting an error rate of 20% for the last 18 minutes'
       isCorrect: false
       explanation: 'This text leaves out the expectation that was violated.'
-    - content: 'the database server has been reporting an error rate of 20% (expected rate: < 1%) for the last 18 minutes'
+    - content: 'The database server has been reporting an error rate of 20% (expected rate: < 1%) for the last 18 minutes'
       isCorrect: true
       explanation: 'Correct. This text includes important details that can help us triage the situation better.'

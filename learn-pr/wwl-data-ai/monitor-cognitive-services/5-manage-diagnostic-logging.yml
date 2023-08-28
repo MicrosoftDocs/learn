@@ -2,11 +2,11 @@
 uid: learn.monitor-cognitive-services.diagnostic-logging
 title: Manage diagnostic logging
 metadata:
-  title: Demo-Introduction
+  title: Manage diagnostic logging
   description: "Manage diagnostic logging"
   ms.date: 05/29/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: false

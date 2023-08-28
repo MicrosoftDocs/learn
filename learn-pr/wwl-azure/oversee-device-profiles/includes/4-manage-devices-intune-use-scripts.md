@@ -34,7 +34,7 @@ Adding a script for the macOS uses the same steps creating a PowerShell script p
 
 1.  In **Script settings**, enter the following properties:
     
-     -  **Upload script**: Browse to the PowerShell script. The script must be less than 200 KB (ASCII).
+     -  **Upload script**: Browse to the Shell script. The script must be less than 200 KB (ASCII).
      -  **Run script as signed-in user**: Select **Yes** to run the script with the user's credentials on the device. Choose **No** (default) to run the script as the root user.
      -  **Hide script notifications on devices**: By default, script notifications are shown for each script that is run. End users see an IT is configuring your computer notification from Intune on macOS devices.
      -  **Script frequency**: Select how often the script is to be run. Choose **Not configured** (default) to run a script only once.
