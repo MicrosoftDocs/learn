@@ -30,7 +30,7 @@ In the **Audio Mixer** window you'll define destinations called **Mixer Groups**
 
 3. Open the mixer and right-click, then select **Add effect at bottom > Microsoft Spatializer Mixer.**
 
-    :::image type="content" source="../media/add-effect.png" alt-text="Mixer panel with first mixer." lightbox="../media/first-mixer.png":::
+    :::image type="content" source="../media/add-effect.png" alt-text="Mixer panel adding effect to first mixer." lightbox="../media/first-mixer.png":::
 
 4. In the Hierarchy window, select the **PressableButton_32x32mm_IconAndTextUnder** then in the Inspector window
   find the **Audio Source** component and Configure the Audio Source component as follows:

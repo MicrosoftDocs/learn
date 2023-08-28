@@ -68,11 +68,11 @@ Some warnings may remain.  Ignore them for now.
 
 1. Select OpenXR under XR Plug-in Management.
 1. Under Interaction Profiles, add Microsoft Hand Interaction and Eye Gaze Interaction Profile if not been added.
-:::image type="content" source="../media/unity-add-interaction-profile.png" alt-text="Screenshot of Add Interaction Profiles." lightbox="../../media/unity-add-interaction-profile.png":::
+:::image type="content" source="../media/unity-add-interaction-profile.png" alt-text="Screenshot of Add Interaction Profiles." lightbox="../media/unity-add-interaction-profile.png":::
 1. Make sure **Microsoft Hololens** on the left is selected and **Hand Tracking**, **Mixed Reality Features** and **Motion Controller Model** on the right are selected.
-1. Select on the warning sign next to "Eye Gaze Interaction Profile" to bring back the Project Validation window. Make sure you're on the UWP platform tab (the tab displays the Windows logo), and then select Fix all to resolve the validation issues. Note that there may be issues that remain after you select Fix All. In that case, select Fix All again, ignore any issues that are marked Scene specific, and then read the recommendations for the remaining issues (if any) and make any changes you want.
+2. Select on the warning sign next to "Eye Gaze Interaction Profile" to bring back the Project Validation window. Make sure you're on the UWP platform tab (the tab displays the Windows logo), and then select Fix all to resolve the validation issues. Note that there may be issues that remain after you select Fix All. In that case, select Fix All again, ignore any issues that are marked Scene specific, and then read the recommendations for the remaining issues (if any) and make any changes you want.
     
-1. Under Project Settings, Select MRTK3, check if there is a valid Profile. If there is none, search for MRTKProfile in Packages (Packages/com.microsoft.mrtk.core/Configuration/Default Profiles/MRTKProfile.asset) of the project, and assign it to the Profile.
+3. Under Project Settings, Select MRTK3, check if there is a valid Profile. If there is none, search for MRTKProfile in Packages (Packages/com.microsoft.mrtk.core/Configuration/Default Profiles/MRTKProfile.asset) of the project, and assign it to the Profile.
 :::image type="content" source="../media/unity-mrtk-profile.png" alt-text="Screenshot of MRTK profile.":::
 
 

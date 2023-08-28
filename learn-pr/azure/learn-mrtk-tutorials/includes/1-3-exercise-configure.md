@@ -19,7 +19,7 @@ We'll start by creating a new Unity project and configuring it for Windows Mixed
 
 5. Click **Create Project**. This opens your project in Unity.
 
-    :::image type="content" source="../media/004-project-open-in-unity.png" alt-text="Screenshot of your project open in Unity." lightbox=../media/004-project-open-in-unity.png:::
+    :::image type="content" source="../media/004-project-open-in-unity.png" alt-text="Screenshot of your project open in Unity." lightbox="../media/004-project-open-in-unity.png":::
 
 > [!CAUTION]
 > When working on Windows, there is a MAX_PATH limit of 255 characters. Unity is affected by these limits and may fail to compile if any file path is longer than 255 characters. Therefore, we recommend that you store your Unity project as close to the root of the drive as possible.
