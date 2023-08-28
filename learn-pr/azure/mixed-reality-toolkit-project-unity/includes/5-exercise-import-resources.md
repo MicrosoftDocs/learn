@@ -62,7 +62,7 @@ To import the Mixed Reality Toolkit into your project we'll use the Mixed Realit
 
     :::image type="content" source="../media/unity-openxr-option.png" alt-text="Screenshot of Open XR option.":::
 
-1. An then select Fix All
+1. And then select Fix All.
  :::image type="content" source="../media/unity-validation-fix-all.png" alt-text="Screenshot of Fix All.":::
 Some warnings may remain.  Ignore them for now.
 
