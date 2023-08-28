@@ -22,7 +22,7 @@ Instructions are likely the most commonly used prompt component. They're the par
 
 ### Primary content
 
-Primary content refers to some sort of text being processed or transformed by the model. It's typically used in conjunction with instructions. For example, _You'll then provide three suggestions for nearby hikes that vary in length after you get that information._.
+Primary content refers to some sort of text being processed or transformed by the model. It's typically used in conjunction with instructions. For example, _You'll then provide three suggestions for nearby hikes that vary in length after you get that information._
 
 Primary content can be much longer, such as asking the model to summarize a Wikipedia article.
 
