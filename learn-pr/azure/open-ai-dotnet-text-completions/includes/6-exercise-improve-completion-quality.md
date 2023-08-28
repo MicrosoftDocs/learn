@@ -48,14 +48,14 @@ Now that the model has better information on how it should act and the rules it 
 
 ### Be specific
 
-The previous request only said the hike should be strenous with a great view. Let's tell the model exactly what we're looking for.
+The previous request only said the hike should be strenuous with a great view. Let's tell the model exactly what we're looking for.
 
 1. Find the `hikeRequest` variable and update it to have the following specific request information.
 
     ```csharp
     var hikeRequest = 
     """
-    I live near Seattle and would like a strenous hike around the I-90 corridor that ends with
+    I live near Seattle and would like a strenuous hike around the I-90 corridor that ends with
     a view that is amazing. I don't mind driving for a long time, even if it's over the pass.
     I've heard the Enchantments are nice.
     I don't want the hike to be over 10 miles round trip. I'd consider a point-to-point hike.
@@ -80,7 +80,7 @@ The previous request only said the hike should be strenous with a great view. Le
 
 This is much better! The response is following the rules of the system prompt and providing detailed information of the hike description requested.
 
-If you look closely, hike recommendation number 3 says it is both a point-to-point and a round trip hike. Let's change recommendation request prompt to see if we can avoid that hallucination.
+If you look closely, hike recommendation number 3 says it is both a point-to-point and a round trip hike. Let's change recommendation request prompt to see if we can avoid that mis-information.
 
 ### Chain-of-thought
 
