@@ -4,9 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/27/2023
+  ms.date: 08/28/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.service: fabric
 durationInMinutes: 6
+content: |
+  [!include[](includes/6-knowledge-check.md)]

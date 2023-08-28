@@ -45,4 +45,4 @@ Some of the main benefits of Microsoft Fabric Eventstream are:
 * Eventstream gives you various source connectors to get event data from different sources, such as Azure Event Hubs, sample data, or custom app. You can also choose the data format and the consumer group of your source.
 * Eventstream supports sending data to different destinations, such as lakehouse, KQL database, or custom app. You can also attach multiple destinations in an eventstream to get data from your eventstreams at the same time without interfering with each other.
 * Eventstream uses a scalable infrastructure that manages scaling and resourcing automatically. This helps you capture your real-time events easily, making streaming ETL (Extract, Transform, Load) operations possible.
-* Eventstream connects your eventstreams smoothly with Azure services like Event Hubs, KQL databases, and lakehouses. This gives you more options and flexibility to work with your event data.
+* Eventstream connects your eventstreams have full interoperability with Azure services like Event Hubs, KQL databases, and lakehouses. This gives you more options and flexibility to work with your event data.
