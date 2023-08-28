@@ -1,4 +1,4 @@
-If you've created multiple custom models in Forms Recognizer, it can be difficult to determine the best model to use when you submit a form or document for analysis. Forms Recognizer can help with this if you create a **composed model** from two or mode of the custom models. When you submit a form to a composed model, Forms Analyzer automatically classifies it and determines the best custom model to use for the analysis. 
+If you've created multiple custom models in Azure AI Document Intelligence, it can be difficult to determine the best model to use when you submit a form or document for analysis. Azure AI Document Intelligence can help with this if you create a **composed model** from two or mode of the custom models. When you submit a form to a composed model, Forms Analyzer automatically classifies it and determines the best custom model to use for the analysis. 
 
 Now that you've completed this module, you can:
 

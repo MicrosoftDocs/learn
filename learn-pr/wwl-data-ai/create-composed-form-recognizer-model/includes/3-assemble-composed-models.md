@@ -1,4 +1,4 @@
-You can create a composed model by assembling custom models in Forms Recognizer or in your own code.
+You can create a composed model by assembling custom models in Azure AI Document Intelligence or in your own code.
 
 In your polling company, you want to create a composed model that will categorize and correctly analyze all the versions of your main political polling form. You need to know how to compose models.
 
@@ -8,22 +8,22 @@ Here, you'll learn how to create composed models.
 
 Before you start creating a composed model, you'll need:
 
-- A Forms Recognizer resource in your Azure subscription.
+- An Azure AI Document Intelligence resource in your Azure subscription.
 - A set of custom models, trained and labeled, that you want to add to the composed model.
 
-If you prefer to use a Graphical User Interface (GUI), you can create a composed model in the Forms Recognizer Studio:
+If you prefer to use a Graphical User Interface (GUI), you can create a composed model in the Azure AI Document Intelligence Studio:
 
-1. In [Forms Recognizer Studio](https://formrecognizer.appliedai.azure.com/studio), on the home page, select **Custom model**.
+1. In [Azure AI Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio), on the home page, select **Custom model**.
 1. Under **My Projects** select one of the custom models and then in the left navigation, select **Models**.
 1. In the **Models** list, select all the models that you want to include in the new composed model, and then select **Compose**.
 
-    :::image type="content" source="../media/3-create-composed-model.png" alt-text="Screenshot showing how to compose a model in Forms Recognizer Studio." lightbox="../media/3-create-composed-model.png":::
+    :::image type="content" source="../media/3-create-composed-model.png" alt-text="Screenshot showing how to compose a model in Azure AI Document Intelligence Studio." lightbox="../media/3-create-composed-model.png":::
 
 1. In the **Compose a new model** dialog, enter a **Model ID** and a **Description** for the composed model and then select **Compose**.
 
 ## Create a composed model in code
 
-If you're using one of the Forms Recognizer SDKs to create a composed model by executing code, you have to start by creating an instance of the `DocumentModelAdministrationClient` object, and connecting it to Forms Recognizer with its endpoint and API key:
+If you're using one of the Azure AI Document Intelligence SDKs to create a composed model by executing code, you have to start by creating an instance of the `DocumentModelAdministrationClient` object, and connecting it to Azure AI Document Intelligence with its endpoint and API key:
 
 ``` csharp
 string endpoint = "<endpoint>";
