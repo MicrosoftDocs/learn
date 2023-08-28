@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     port: 3000,  // Client port
     proxy: {
-      '/pizza': {
+      '/pizzas': {
         target: 'http://localhost:5100', // Mock server port
         changeOrigin: true,
         secure: false,

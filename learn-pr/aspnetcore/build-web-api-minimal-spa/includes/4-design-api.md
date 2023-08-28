@@ -21,7 +21,7 @@ The `json-server` library creates a RESTful API for you, from a static JSON file
 
 ```json
 {
-  "pizza": [
+  "pizzas": [
       { "id": 1, "name": "Margherita", "description": "Tomato sauce, mozzarella, and basil" },
       { "id": 2, "name": "Pepperoni", "description": "Tomato sauce, mozzarella, and pepperoni" },
       { "id": 3, "name": "Hawaiian", "description": "Tomato sauce, mozzarella, ham, and pineapple" }
@@ -44,12 +44,12 @@ npx json-server --watch db.json --port 5100
 At this point, your mocked API starts to be served on a certain port (for example, "5100"). Furthermore, you can interact with it as though it were a real API. It supports requests like the following:
 
 ```output
-GET    /pizza
-GET    /pizza/1
-POST   /pizza
-PUT    /pizza/1
-PATCH  /pizza/1
-DELETE /pizza/1
+GET    /pizzas
+GET    /pizzas/1
+POST   /pizzas
+PUT    /pizzas/1
+PATCH  /pizzas/1
+DELETE /pizzas/1
 ```
 
 If you make any requests toward this mocked API and change data, the static file _db.json_ would change.
@@ -59,7 +59,7 @@ If you make any requests toward this mocked API and change data, the static file
 Because this mocked API works exactly like a real API, you can make requests to it in your front-end code with a browser-native request object, **fetch**. For example:
 
 ```javascript
-fetch("http://localhost:5100/pizza")
+fetch("http://localhost:5100/pizzas")
   .then(response => response.json())
   .then(data => console.log(data)) // outputs mocked data 
 ```
@@ -78,7 +78,7 @@ If your front-end framework doesn't provide a proxy mechanism with its local ser
 "proxy": "http://localhost:5100"
 ```
 
-Instead of making requests toward `http://localhost:5100/pizza`, you can now make them toward `/pizza`, which resolves to `http://localhost:5100/pizza` when you make requests. 
+Instead of making requests toward `http://localhost:5100/pizzas`, you can now make them toward `/pizzas`, which resolves to `http://localhost:5100/pizzas` when you make requests. 
 
 ## Talk to a real API
 
@@ -99,16 +99,16 @@ CORS is a protocol that allows a back-end API to accept requests from domains (a
 Suppose the calling client makes a request toward a back-end API, and starts by sending a preflight request by using the `OPTIONS` verb. Essentially, the calling client is asking the back-end API what it can perform toward a resource. The back-end API can approve or deny the request, at which point the actual request (such as `GET` or `POST`) goes through. Imagine the following flow below:
 
 ```output
-client> OPTIONS, can I do POST on /pizza?
-server> you can do GET on /pizza
+client> OPTIONS, can I do POST on /pizzas?
+server> you can do GET on /pizzas
 client> receives a deny response at this point
 ```
 
 Another more successful attempt might look like the following:
 
 ```output
-client> OPTIONS, can I do GET on /pizza
-server> you can do GET on /pizza
+client> OPTIONS, can I do GET on /pizzas
+server> you can do GET on /pizzas
 client> receives data from back end
 ```
 

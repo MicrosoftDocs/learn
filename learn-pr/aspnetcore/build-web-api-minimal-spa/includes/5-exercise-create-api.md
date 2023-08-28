@@ -8,7 +8,7 @@ At this point, you have a front-end app with static data inside of the app. You 
 
     :::code language="javascript" source="../code/with-components-and-fetch/Pizza.jsx":::
 
-    The data is fetched with a call to a mocked API instead of a front-end app's in-memory array. Notice that the URL used is `/pizza` without the reference to the back-end server. This is because a proxy makes the requests toward the mocked API.
+    The data is fetched with a call to a mocked API instead of a front-end app's in-memory array. Notice that the URL used is `/pizzas` without the reference to the back-end server. This is because a proxy makes the requests toward the mocked API.
 
 1. Create a file named _db.json_ in the _PizzaClient_ directory. Insert the following content:
 
@@ -47,7 +47,7 @@ At this point, you have a front-end app with static data inside of the app. You 
    Done
     
    Resources
-   http://localhost:5100/pizza
+   http://localhost:5100/pizzas
     
    Home
    http://localhost:5100
