@@ -16,11 +16,11 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
 
 1. In the Hierarchy window, expand **RoverExplorer** > **Buttons** > **Hints**. Right click on the **Hints** gameobject, and then select **3D Object** > **Text - TextMeshpro**. Rename the newly created gameobject to **ButtonText**.
 
-:::image type="content" source="../media/create-buttontext-object.png" alt-text="Screenshot of Unity with Hints Button text object selected and EyeTrackingTarget component configured." lightbox="../media/create-buttontext-object.png":::
+    :::image type="content" source="../media/create-buttontext-object.png" alt-text="Screenshot of Unity with Hints Button text object selected and EyeTrackingTarget component configured." lightbox="../media/create-buttontext-object.png":::
 
 2. In the Hierarchy window, select **RoverExplorer** > **Buttons** > **Hints** > **ButtonText**. Change its text to "Hints", font size to 2, Pos X to 9.75, Pos Y to -1.50 and Pos Z to -0.3
 
-:::image type="content" source="../media/configure-buttontext-object.png" alt-text="Screenshot of Unity with Hints Button text object configuration and EyeTrackingTarget component configured." lightbox="../media/configure-buttontext-object.png":::
+    :::image type="content" source="../media/configure-buttontext-object.png" alt-text="Screenshot of Unity with Hints Button text object configuration and EyeTrackingTarget component configured." lightbox="../media/configure-buttontext-object.png":::
 
 3. In the Hierarchy window, expand **RoverExplorer** > **Buttons** > **Hints** > **ButtonText**. Then in the Hierarchy window, select the **Hints** button object, and configure the **PressableButton** component as follows:
 
@@ -40,4 +40,4 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
 
 4. Repeat the above steps for the **Explode** and **Reset** button objects to configure eye tracking for remaining buttons. If you now enter Game mode and then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the buttons, you'll see the text font size increase and reset back to its original size when looking away.
 
-  :::image type="content" source="../media/all-buttontext-object.png" alt-text="Screenshot of Unity with all button text and EyeTrackingTarget component configured." lightbox="../media/all-buttontext-object.png":::
+    :::image type="content" source="../media/all-buttontext-object.png" alt-text="Screenshot of Unity with all button text and EyeTrackingTarget component configured." lightbox="../media/all-buttontext-object.png":::

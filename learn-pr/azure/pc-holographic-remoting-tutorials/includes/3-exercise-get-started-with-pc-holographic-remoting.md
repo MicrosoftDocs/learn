@@ -27,16 +27,16 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 1. First, since some of the models are in glTF format that is not natively supported by Unity, we need to install a
 package that allows them to be imported.
 
-To install the open source glTFast library, download and run this file:
-https://package-installer.glitch.me/v1/installer/OpenUPM/com.atteneder.gltfast?registry=https%3A%2F%2Fpackage.openupm.com&scope=com.atteneder
+    To install the open source glTFast library, download and run this file:
+    https://package-installer.glitch.me/v1/installer/OpenUPM/com.atteneder.gltfast?registry=https%3A%2F%2Fpackage.openupm.com&scope=com.atteneder
 
-:::image type="content" source="../media/import-gltfast.png" alt-text="Screenshot of importing glTFast." lightbox="../media/import-gltfast.png":::
+    :::image type="content" source="../media/import-gltfast.png" alt-text="Screenshot of importing glTFast." lightbox="../media/import-gltfast.png":::
 
-Select import.
+    Select import.
 
-:::image type="content" source="../media/new-scoped-registry.png" alt-text="Screenshot of new scope registry imported." lightbox="../media/new-scoped-registry.png":::
+    :::image type="content" source="../media/new-scoped-registry.png" alt-text="Screenshot of new scope registry imported." lightbox="../media/new-scoped-registry.png":::
 
-Select close.
+    Select close.
 
 2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** folder. Select the 'SceneContent' prefab and drag it to the bottom of the **Hierarchy** window.
 
