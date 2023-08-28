@@ -20,7 +20,7 @@ For this, first follow the [this tutorial](/training/modules/mixed-reality-toolk
 
 2. Select the Microsoft Spatializer component from the Spatial Audio group and integrate the plugin into your project using the Get Features button.
 
-    :::image type="content" source="../media/MRFeatureTool.png" alt-text="Screenshot of Mixed Reality Feature Tool." lightbox="../media/MRFeatureTool.png":::
+    :::image type="content" source="../media/mr-feature-tool.png" alt-text="Screenshot of Mixed Reality Feature Tool." lightbox="../media/mr-feature-tool.png":::
  
 
 ## Enable the Microsoft Spatializer plugin

@@ -62,7 +62,7 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 
 2. In the Project window, navigate to the **Packages** > **MRTK Spatial Manipulation** > **BoundsControl** > **Prefabs** folder, click-and-drag the **BoundingBoxWithHandles** prefab the **Bounds Visuals Prefab** field of the **Bounds Control** component.
 
-:::image type="content" source="../media/bounding-box-prefab.png" alt-text="Screenshot of Unity with RoverExplorer object selected and the Bounds Visuals Prefab field configured." lightbox="../media/bounding-box-prefab.png":::
+    :::image type="content" source="../media/bounding-box-prefab.png" alt-text="Screenshot of Unity with RoverExplorer object selected and the Bounds Visuals Prefab field configured." lightbox="../media/bounding-box-prefab.png":::
 
 3. In the Hierarchy pane, expand the Menu > **Buttons-GridLayout (Buttons)** object to reveal the three buttons, rename the third button to **BoundsControl_Enable**, and then in the Hierarchy window, configure the **BoundsControl_Enable** game object as follows:
     * Select the **Frontplate > AnimatedContent > Icon > Label** object and change the TextMeshPro component to **Enable**. Make sure the Label object is activated in the hierarchy
