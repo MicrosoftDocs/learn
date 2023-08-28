@@ -2,7 +2,7 @@
 uid: learn.wwl.configure-subscriptions
 metadata:
   title: Configure subscriptions
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|<span style=\"display:inline !important;\"|Learn how to configure Azure subscriptions, including how to obtain a subscription, implement cost management, and apply Azure resource tags.</span|</span|  </div|<div| </div|<div| </div|"
+  description: "Learn how to configure Azure subscriptions, including how to obtain a subscription, implement cost management, and apply Azure resource tags."
   ms.date: 08/28/2023
   author: wwlpublish
   ms.author: cynthist
