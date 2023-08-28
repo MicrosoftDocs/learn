@@ -2,8 +2,7 @@ Now let's learn how to create parent objects, add prefabs to the scene, and use 
 
 ## Import the tutorial assets
 
-To get started, first download the following Unity custom package:
-[MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage).
+To get started, first download the following Unity custom package: [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0-pre.18.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v3.0.0-pre.18/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0-pre.18.unitypackage)
 
 1. In the Unity menu, select **Assets** > **Import Package** > **Custom Package...**.
 
@@ -29,7 +28,7 @@ To get started, first download the following Unity custom package:
 
 3. With the **RoverExplorer** object still selected, in the **Inspector** window, configure the **Transform** component as follows:
 
-    * **Position**: X = 0, Y = -0.6, Z = 2
+    * **Position**: X = 0, Y = 0.9, Z = 2
     * **Rotation**: X = 0, Y = 0, Z = 0
     * **Scale**: X = 1, Y = 1, Z = 1
 
