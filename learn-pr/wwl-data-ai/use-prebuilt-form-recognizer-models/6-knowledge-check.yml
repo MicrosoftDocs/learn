@@ -39,7 +39,7 @@ quiz:
     - content: "Confidence indicators."
       isCorrect: false
       explanation: "Incorrect. Confidence indicators show how reliable an extracted value is."
-  - content: "You submit a Word document to the Forms Recognizer general document model for analysis but you receive an error. The file is A4 size, contains 1 MB of data, and is not password-protected. How should you resolve the error?"
+  - content: "You submit a Word document to the Azure AI Document Intelligence general document model for analysis but you receive an error. The file is A4 size, contains 1 MB of data, and is not password-protected. How should you resolve the error?"
     choices:
     - content: "Change from the free tier to the standard tier."
       isCorrect: false
@@ -49,4 +49,4 @@ quiz:
       explanation: "Incorrect. It's possible but not necessary to submit multipage documents one page at a time. This change would not resolve the error."
     - content: "Convert the document to PDF format."
       isCorrect: true
-      explanation: "Correct. Word documents are not supported by Forms Recognizer but PDF documents are supported. Forms Recognizer is designed to analyze scanned and photographed paper documents, not documents that are already in a digital format so you should consider using another technology to extract the data in Word documents."
+      explanation: "Correct. Word documents are not supported by Azure AI Document Intelligence but PDF documents are supported. Azure AI Document Intelligence is designed to analyze scanned and photographed paper documents, not documents that are already in a digital format so you should consider using another technology to extract the data in Word documents."

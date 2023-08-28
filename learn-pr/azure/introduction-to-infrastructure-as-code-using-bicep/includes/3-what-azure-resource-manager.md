@@ -56,7 +56,7 @@ The control plane understands which resources need to be created and which resou
 
 #### Data plane
 
-When a data plane operation starts, the requests are sent to a specific endpoint in your Azure subscription. For example, the Detect Language operation in Cognitive Services is a data plane operation because the request URL is:
+When a data plane operation starts, the requests are sent to a specific endpoint in your Azure subscription. For example, the Detect Language operation in Azure AI services is a data plane operation because the request URL is:
 
 ```http
 POST https://eastus.api.cognitive.microsoft.com/text/analytics/v2.0/languages
