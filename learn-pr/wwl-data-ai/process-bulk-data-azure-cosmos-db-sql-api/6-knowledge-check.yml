@@ -17,7 +17,7 @@ quiz:
     choices:
     - content: "AllowBulkExecution"
       isCorrect: true
-      explanation: "That's correct. This property enables optimistic batching of requests for non-latency sensitive scenarios."
+      explanation: "That's correct. This property enables optimistic batching of requests for nonlatency sensitive scenarios."
     - content: "ConnectionMode"
       isCorrect: false
       explanation: "That's incorrect. This property configures the current connection mode of the client."
@@ -26,10 +26,10 @@ quiz:
       explanation: "That's incorrect. This property limits the ability of the client to discover new read and write endpoints."
   - content: "Which one of these statements is considered a best practice when working with the bulk features of the SDK?"
     choices:
-    - content: "Stream APIs are not compatible with the bulk features of the SDK."
+    - content: "Stream APIs aren't compatible with the bulk features of the SDK."
       isCorrect: false
       explanation: "That's incorrect. The Stream features of the Azure Cosmos DB for NoSQL SDK are compatible the bulk feature of the SDK."
-    - content: "Assume that bulk will save you on actual throughput costs versus individual operations."
+    - content: "Assume that bulk saves you on actual throughput costs versus individual operations."
       isCorrect: false
       explanation: "That's incorrect. Bulk operations actually will typically use more throughput than the typical individual operation counterparts."
     - content: "Configure the partition key for each operation configured in a set of tasks."
