@@ -25,7 +25,7 @@ products:
 - azure-active-directory
 - azure-active-directory-b2c
 - azure-active-directory-domain
-- azure-active-directory-connect
+- entra
 - entra-workload-identities
 subjects:
 - identity-access

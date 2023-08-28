@@ -3,11 +3,10 @@ uid: learn.wwl.explore-windows-editions
 metadata:
   title: MD-102 Explore Windows Editions
   description: "This module explains Windows editions' features, reasons to choose them, and installation methods. Learners will understand various Windows versions and their installation processes. MD-102"
-  ms.date: 05/25/2023
+  ms.date: 08/21/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore Windows Editions
 summary: This module covers Windows OS editions, features, and installation methods. Learners gain a deeper understanding of the available editions and corresponding installation processes.
 abstract: |

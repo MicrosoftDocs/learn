@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
   -   Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/case-study-design-security-operations-identity-compliance-capabilities.svg
 levels: 
   - advanced
 roles:
@@ -27,9 +27,7 @@ roles:
 products: 
   - entra
   - azure-active-directory
-  - azure-active-directory-connect
   - azure-active-directory-domain
-  - azure-active-directory-pass-through-authentication
 subjects: 
   - security
   - cloud-security

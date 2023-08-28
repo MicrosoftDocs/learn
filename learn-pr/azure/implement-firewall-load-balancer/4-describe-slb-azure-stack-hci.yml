@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.implement-firewall-load-balancer.4-describe-slb-azure-stack-hci
-title: Describe Software Load Balancer on Azure Stack HCI
+title: Software Load Balancer on Azure Stack HCI
 metadata:
   unitType: learning-content
-  title: Describe Software Load Balancer on Azure Stack HCI
+  title: Software Load Balancer on Azure Stack HCI
   description: This unit describes the purpose of Software Load Balancer on Azure Stack HCI.
   ms.date: 5/6/2021
   author: rmcmurray

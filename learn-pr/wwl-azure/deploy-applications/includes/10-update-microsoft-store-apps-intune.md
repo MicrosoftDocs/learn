@@ -1,5 +1,3 @@
-
-
 The importance of keeping apps updated can't be overstated, as it plays a crucial role in maintaining digital products' security, stability, and overall user experience. Regular updates ensure that users enjoy the most current and optimized version of the app and protect them from potential cyber threats, as updates often include critical security patches that safeguard user data and privacy. Moreover, outdated apps may become incompatible with evolving operating systems or other software components, which could lead to performance issues or even application crashes. Users can benefit from an optimal digital experience while safeguarding their devices and personal information by prioritizing app updates.
 
 The information below will teach you to efficiently update Microsoft Store Apps using Intune, ensuring your team stays productive and secure with the latest features and enhancements.
@@ -30,13 +28,13 @@ Some **Store Group Policies** may affect app deployments from the Microsoft Stor
 
 The following table provides details about how app deployment may be affected by **Store Group Policies**:
 
-|Store Group Policies|Desired setting|
-|-----|-----|
-|Store\Disable all apps from the Microsoft Store|Not configured or Enabled. Set to Enabled if wish to prevent end users from blocking the scenario.|
-|Not configured or Enabled. Set to Enabled if wish to prevent end users from blocking the scenario.|Not configured or Disabled. Set to Disabled if you need to prevent end users from blocking the scenario.|
-|Desktop App Installer\Enable App Installer Microsoft Store Source|Not configured or Enabled. Set to Enabled if you need to prevent end users from blocking the scenario.|
-|Desktop App Installer\Enable App Installer|Not configured or Enabled. Set to Enabled if you need to prevent end users from blocking the scenario.|
-|Store\Turn off the Store application|Not configured or Disabled. Set to Disabled if you need to prevent end users from blocking the scenario.|
+|Store Group Policies|Desired setting| Impact | Notes |
+|-----|-----|----|----|
+|Store\Disable all apps from the Microsoft Store|    Not configured or Enabled. | Set to Enabled if wish to prevent end users from blocking the scenario.| Settings this policy to Disabled will disable the launch of all Microsoft Store apps.|
+|Turn off Automatic Download and Install of updates|Not configured or Disabled. |If you disable this setting, the automatic download and installation of app updates is enabled.| |Not configured or Disabled. |Set to Disabled if you need to prevent end users from blocking the scenario.| |
+|Desktop App Installer\Enable App Installer Microsoft Store Source | Not configured or Enabled. | Set to Enabled if you need to prevent end users from blocking the scenario.| |
+|Desktop App Installer\Enable App Installer|Not configured or Enabled. | Set to Enabled if you need to prevent end users from blocking the scenario.|
+|Store\Turn off the Store application|Not configured or Disabled. | Set to Disabled if you need to prevent end users from blocking the scenario.| Enabling this setting will block the Microsoft Store entirely. This will also stop the Microsoft Store from applying security related updates to built-in Windows Apps.|
 
 > [!NOTE]
 > If you would like to block installation of arbitrary applications from the Store application by the end user without blocking the Intune and Windows Package Manager store integration, set Store\Only display the private store within the Microsoft Store to Enabled.

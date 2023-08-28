@@ -1,4 +1,4 @@
-While the Speech SDK enables you to submit plain text to be synthesized into speech (for example, by using the **SpeakTextAsync()** method), the service also supports an XML-based syntax for describing characteristics of the speech you want to generate. This **Speech Synthesis Markup Language** (SSML) syntax offers greater control over how the spoken output sounds, enabling you to:
+While the Azure AI Speech SDK enables you to submit plain text to be synthesized into speech (for example, by using the **SpeakTextAsync()** method), the service also supports an XML-based syntax for describing characteristics of the speech you want to generate. This **Speech Synthesis Markup Language** (SSML) syntax offers greater control over how the spoken output sounds, enabling you to:
 
 - Specify a speaking style, such as "excited" or "cheerful" when using a neural voice.
 - Insert pauses or silence.
@@ -29,10 +29,10 @@ This SSML specifies a spoken dialog between two different neural voices, like th
 - **Ariana** (*cheerfully*): "I say tomato:
 - **Guy**: "I say tomato (pronounced *tom-ah-toe*) ... Let's call the whole thing off!"
 
-To submit an SSML description to the Speech service, you can use the **SpeakSsmlAsync()** method, like this:
+To submit an SSML description to the Azure AI Speech service, you can use the **SpeakSsmlAsync()** method, like this:
 
 ```
 speechSynthesizer.SpeakSsmlAsync(ssml_string);
 ```
 
-For more information about SSML, see the [Speech SDK documentation](/azure/cognitive-services/speech-service/speech-synthesis-markup).
+For more information about SSML, see the [Azure AI Speech SDK documentation](/azure/cognitive-services/speech-service/speech-synthesis-markup).

@@ -6,9 +6,9 @@ In this exercise, you will:
 - Evaluate the model by reviewing the logged metrics.
 - Deploy and test the model in the Azure Machine Learning studio.
 
-## Instructions
+> [!NOTE]
+> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
 
-Follow these instructions to complete the exercise:
+Launch the exercise and follow the instructions.
 
-1. View the exercise repo at [https://microsoftlearning.github.io/advanced-gen-ai/](https://microsoftlearning.github.io/advanced-gen-ai/?azure-portal=true).
-1. Complete the **Fine-tune a foundation model in the Azure Machine Learning studio** exercise.
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/advanced-gen-ai/Instructions/04-finetune-model.html?azure-portal=true)
