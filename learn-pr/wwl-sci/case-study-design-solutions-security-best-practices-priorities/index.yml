@@ -27,9 +27,7 @@ roles:
 products: 
   - entra
   - azure-active-directory
-  - azure-active-directory-connect
   - azure-active-directory-domain
-  - azure-active-directory-pass-through-authentication
 subjects: 
   - security
   - cloud-security
