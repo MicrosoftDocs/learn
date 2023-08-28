@@ -1,6 +1,6 @@
 In this module, you learned the importance of pipeline security and how to secure pipeline resources using Azure DevOps. The module covered fundamental concepts and best practices for secure agent pools, secret variables, service connections, environments, and repositories.
 
-You learned how to describe the benefits and usage of:
+You learned how to:
 
 - Configure pipeline access to specific agent pools.
 - Configure agents for projects and agent identities.

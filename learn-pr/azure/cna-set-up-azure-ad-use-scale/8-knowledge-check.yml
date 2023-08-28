@@ -37,7 +37,7 @@ quiz:
     - content: "Configuring delegated permissions of the application."
       isCorrect: true
       explanation: "Correct. Delegated permissions are used by interactive apps with a signed-in user. As a result, the app acts on behalf of a signed-in user when it accesses the target resource."
-  - content: 'Suppose a developer is creating a multitenant application for which the home tenant will be the Azure AD tenant with the verified domain name of contoso.com. What should they configure as the sign-in requests endpoint for the app?'
+  - content: 'Suppose a developer is creating a multitenant application for which the home tenant will be the Azure AD tenant with the verified domain name of contoso.com. What should they configure as the sign-in request endpoint for the app?'
     choices:
     - content: 'login.microsoftonline.com/contoso.com'
       isCorrect: false

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-medallion-architecture.describe-medallion-architecture
+title: Describe medallion architecture
+metadata:
+  title: Describe medallion architecture
+  description: "Describe medallion architecture"
+  ms.date: 08/24/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-describe-medallion-architecture.md)]

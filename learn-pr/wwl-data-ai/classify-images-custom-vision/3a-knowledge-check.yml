@@ -4,27 +4,27 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/27/2023
+  ms.date: 08/22/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: artificial-intelligence
+  ms.subservice: custom-vision
 durationInMinutes: 2
 quiz:
+  title: ""
   questions:
-  - content: "You plan to use the Custom Vision service to train an image classification model. You want to create a resource that can only be used for model training, and not for prediction. Which kind of resource should you create in your Azure subscription?"
+  - content: "You plan to use Azure AI Custom Vision to train an image classification model. You want to create a resource that can only be used for model training, and not for prediction. Which kind of resource should you create in your Azure subscription?"
     choices:
     - content: "Custom Vision"
       isCorrect: true
       explanation: "Correct: When you create a Custom Vision resource, you can specify whether it is to be used for training, prediction, or both."
-    - content: "Cognitive Services"
+    - content: "Azure AI services"
       isCorrect: false
-      explanation: "Incorrect: A Cognitive Services resource can be used by the Custom Vision service for both training and prediction."
+      explanation: "Incorrect: An Azure AI services resource must be used by the Custom Vision service for both training and prediction."
     - content: "Computer Vision"
       isCorrect: false
-      explanation: "Incorrect: The Computer Vision service does not support the training of a custom image classification model."
+      explanation: "Incorrect: A Computer Vision resource does not support the training of a custom image classification model."
   - content: "You train an image classification model that achieves less than satisfactory evaluation metrics. How might you improve it?"
     choices:
     - content: "Reduce the size of the images used to train the model."

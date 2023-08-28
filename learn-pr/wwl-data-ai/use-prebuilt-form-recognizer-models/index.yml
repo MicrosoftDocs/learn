@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.use-prebuilt-form-recognizer-models
 metadata:
-  title: Use prebuilt Form Recognizer models
-  description: "Learn what data you can analyze by choosing prebuilt Forms Analyzer models and how to deploy these models in a Form Analyzer solution."
+  title: Use prebuilt Azure AI Document Intelligence models
+  description: "Learn what data you can analyze by choosing prebuilt Azure AI Document Intelligence models and how to deploy these models in a Form Analyzer solution."
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.service: applied-ai-services
   ms.subservice: forms-recognizer 
-title: Use prebuilt Form Recognizer models
-summary: Learn what data you can analyze by choosing prebuilt Forms Analyzer models and how to deploy these models in a Form Analyzer solution.
+title: Use prebuilt Azure AI Document Intelligence models
+summary: Learn what data you can analyze by choosing prebuilt Azure AI Document Intelligence models and how to deploy these models in a Form Analyzer solution.
 abstract: |
   In this module, you will learn to:
-  -	Identify business problems that you can solve by using prebuilt models in Forms Analyzer.
+  -	Identify business problems that you can solve by using prebuilt models in Azure AI Document Intelligence.
   -	Analyze forms by using the General Document, Read, and Layout models.
   -	Analyze forms by using financial, ID, and tax prebuilt models
 prerequisites: |
-  - Basic understanding of Form Recognizer
+  - Basic understanding of Azure AI Document Intelligence
 iconUrl: /training/achievements/use-prebuilt-form-recognizer-models.svg
 levels:
 - intermediate

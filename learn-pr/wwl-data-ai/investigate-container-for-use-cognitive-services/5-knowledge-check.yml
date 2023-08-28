@@ -6,25 +6,25 @@ metadata:
   description: "Knowledge check"
   ms.date: 07/21/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
 durationInMinutes: 5
 quiz:
   title: ""
   questions:
-  - content: "You plan to use a cognitive services container in a local Docker host. Which of the following statements is true?"
+  - content: "You plan to use an Azure AI services container in a local Docker host. Which of the following statements is true?"
     choices:
     - content: "Client applications must pass a subscription key to the Azure resource endpoint before using the container."
       isCorrect: false
       explanation: "Incorrect. The container does not require client applications to authenticate with a subscription key."
     - content: "The container must be able to connect to the Azure resource endpoint to send usage data for billing."
       isCorrect: true
-      explanation: "Correct. container usage metrics are sent to the Cognitive Services resource in Azure to calculate billing."
+      explanation: "Correct. container usage metrics are sent to the Azure AI Services resource in Azure to calculate billing."
     - content: "All data passed from the client application to the container is forwarded to the Azure resource endpoint."
       isCorrect: false
       explanation: "Incorrect. The data submitted in a request is processed by the containerized service, and not forwarded to Azure."
-  - content: "Which of the following parameters must you specify when deploying a Cognitive Services container image?"
+  - content: "Which of the following parameters must you specify when deploying an Azure AI Services container image?"
     choices:
     - content: "EULA"
       isCorrect: true
@@ -35,7 +35,7 @@ quiz:
     - content: "SubscriptionName"
       isCorrect: false
       explanation: "Incorrect. You do not need to specify the Azure subscription name."
-  - content: "You plan to use the language detection functionality of the Language cognitive service in a container. Which container image should you deploy?"
+  - content: "You plan to use the language detection functionality of Azure AI Language in a container. Which container image should you deploy?"
     choices:
     - content: "mcr.microsoft.com/azure-cognitive-services/textanalytics"
       isCorrect: false

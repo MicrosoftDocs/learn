@@ -10,6 +10,6 @@ In this module, you learned how to:
 ## Learn more
 
 - [Azure free account](https://azure.microsoft.com/free/) | [Azure free account FAQ](https://azure.microsoft.com/free/free-account-faq/)
-- [Free account for Students](https://azure.microsoft.com/free/students/) | [Azure for students FAQ](https://learn.microsoft.com/azure/education-hub/azure-dev-tools-teaching/program-faq#azure-for-students/?azure-)
-- [Create an Azure account module on Learn.](https://learn.microsoft.com/training/modules/create-an-azure-account/)
-- [Operator Nexus Documentation](https://learn.microsoft.com/azure/operator-nexus/overview)
+- [Free account for Students](https://azure.microsoft.com/free/students/) | [Azure for students FAQ](/azure/education-hub/azure-dev-tools-teaching/program-faq#azure-for-students/?azure-)
+- [Create an Azure account module on Learn.](/training/modules/create-an-azure-account/)
+- [Operator Nexus Documentation](/azure/operator-nexus/overview)

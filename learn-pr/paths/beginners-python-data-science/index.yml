@@ -16,7 +16,7 @@ summary: |
   
   In this learning path, you'll:
     - Learn about machine learning models for data science operations.
-    - Use Azure Cognitive Services APIs to test data.
+    - Use Azure AI Services APIs to test data.
     - Clean and manipulate data to prepare for analysis.
     - Work with your data in Visual Studio Code with Jupyter Notebooks.
     

@@ -4,11 +4,10 @@ title: Join devices to Azure AD
 metadata:
   title: Join devices to Azure AD
   description: "This unit covers joining devices to Azure AD."
-  ms.date: 05/09/2023
+  ms.date: 08/21/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/4-join-devices-azure-active-directory.md)]
