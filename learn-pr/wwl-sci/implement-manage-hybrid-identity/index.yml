@@ -32,7 +32,6 @@ products:
 - azure
 - azure-active-directory
 - azure-active-directory-b2c
-- azure-active-directory-domain
 - entra
 - entra-workload-identities
 subjects:
