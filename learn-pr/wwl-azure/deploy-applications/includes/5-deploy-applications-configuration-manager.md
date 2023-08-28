@@ -1,5 +1,3 @@
-
-
 With the Configuration Manager client deployed on a device, instead of using Group Policy, you can use the inbuilt functionality of Configuration Manager to manage application deployment. This will provide you with more flexibility and control for managing the application estate. Both approaches follow the same workflow, and, like Group Policy, Configuration Manager doesn't manage preparation; however, Configuration Manager can manage the other elements of the lifecycle.
 
 ### Application deployment in Configuration Manager

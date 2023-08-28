@@ -1,16 +1,15 @@
-
 These are a few try-this exercise to configure Privileged Identity Management (PIM)
 
 ## Task 1: Azure AD PIM for roles
 
-In this task, we will configure PIM activation settings, add the Billing Administrator as a PIM role, activate the role, and test activation.
+In this task, we'll configure PIM activation settings, add the Billing Administrator as a PIM role, activate the role, and test activation.
 
 ### Configure PIM settings
 
 > [!NOTE]
 > This task requires a **AZ500User1** account with no assigned roles.
 
-In this task, we will review and configure the basic PIM settings.
+In this task, we'll review and configure the basic PIM settings.
 
 1.  In the **Portal**, search for and select **Azure AD Privileged Identity Management**.
 2.  Under **Manage** select **Azure AD Roles**.
@@ -29,7 +28,7 @@ In this task, we will review and configure the basic PIM settings.
 
 ### Configure PIM for Roles
 
-In this task, we will add the Billing Administrator role to PIM.
+In this task, we'll add the Billing Administrator role to PIM.
 
 1.  In the **Portal**, search for and select **Azure AD Privileged Identity Management**.
 2.  Under **Manage** select **Azure AD Roles**.
@@ -47,7 +46,7 @@ In this task, we will add the Billing Administrator role to PIM.
 
 ### Activate a role
 
-In this task, we will activate the Billing Administrator role.
+In this task, we'll activate the Billing Administrator role.
 
 1.  In the **Portal**, search for and select **Azure Active Directory**.
 2.  Under **Manage** click **Users**.
@@ -80,11 +79,11 @@ In this task, test the Billing Administrator role.
 
 ## Task 2: Azure AD PIM for resources
 
-In this task, we will configure PIM for Azure resources, activate the Virtual Machine Contributor role, and test the role access.
+In this task, we'll configure PIM for Azure resources, activate the Virtual Machine Contributor role, and test the role access.
 
 ### Configure PIM for Azure resources
 
-In this task, we will add the subscription to PIM, then add the Virtual Machine Contributor role as an Active role.
+In this task, we'll add the subscription to PIM, then add the Virtual Machine Contributor role as an Active role.
 
 1.  In the **Portal**, search for and select **Azure AD Privileged Identity Management**.
 2.  Under **Manage** select **Azure Resources**.
@@ -104,7 +103,7 @@ In this task, we will add the subscription to PIM, then add the Virtual Machine 
 
 ### Activate the role
 
-In this task, we will sign-in as a user and activate the role.
+In this task, we'll sign-in as a user and activate the role.
 
 1.  Sign in to the **Portal** and **AZ500User1**.
 2.  Search for and select **Azure AD Privileged Identity Management**.
@@ -121,7 +120,7 @@ In this task, we will sign-in as a user and activate the role.
 
 ### Test the role access
 
-In this task, we will check to ensure the role has been assigned.
+In this task, we'll check to ensure the role has been assigned.
 
 1.  Sign in to the Portal as **AZ500User1**.
 2.  Search for and select **Azure AD Privileged Identity Management**.

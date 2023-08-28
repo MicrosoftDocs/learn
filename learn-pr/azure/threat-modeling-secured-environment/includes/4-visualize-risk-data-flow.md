@@ -20,4 +20,4 @@ Data-flow refers to data movement between processes, data stores, and external e
 
 #### Woodgrove data-flow elements
 
-- Request and responses between element connections
+- Requests and responses between element connections
