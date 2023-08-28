@@ -10,7 +10,7 @@ The Microsoft 365 Defender portal allows admins to tailor the navigation pane to
 > [!NOTE]
 > You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Microsoft Entra ID to access the Microsoft 365 Defender portal.
 
-The left navigation pane provides security professionals easy access to the suite of Microsoft 365 Defender services, including Defender for Identity, Defender for Collaboration, Defender for Endpoints, and Defender for Cloud Apps, which were described in the previous units.  Listed below we describe a few of the other capabilities accessible from the left navigation bar in the Microsoft 365 Defender portal.
+The left navigation pane provides security professionals easy access to the suite of Microsoft 365 Defender services, including Defender for Identity, Defender for Office 365, Defender for Endpoints, and Defender for Cloud Apps, which were described in the previous units.  Listed below we describe a few of the other capabilities accessible from the left navigation bar in the Microsoft 365 Defender portal.
 
 ### Incidents and alerts
 Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. These alerts are automatically aggregated by Microsoft 365 Defender. It's the grouping of these related alerts that form an incident. An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack. Selecting an incident name displays a summary of the incident and provides access to tabs with additional information, including:

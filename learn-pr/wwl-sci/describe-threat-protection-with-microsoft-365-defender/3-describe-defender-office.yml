@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-for-office-365-formerly-office-365-atp
-title: Describe Microsoft Defender for Collaboration
+title: Describe Microsoft Defender for Office 365
 metadata:
-  title: Describe Microsoft Defender for Collaboration
-  description: "Describe Microsoft Defender for Collaboration"
+  title: Describe Microsoft Defender for Office 365
+  description: "Describe Microsoft Defender for Office 365"
   ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
