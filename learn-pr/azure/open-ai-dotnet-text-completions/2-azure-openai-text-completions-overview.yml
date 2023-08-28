@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.open-ai-dotnet-text-completions.2-azure-openai-text-completions-overview
-title: Overview Azure OpenAI and Text Completions
+title: Overview Azure OpenAI and text completions
 metadata:
-  title: Overview Azure OpenAI and Text Completions
+  title: Overview Azure OpenAI and Text completions
   description: An overview of what Azure OpenAI is and the benefits of using text completions to query your data
   ms.date: 08/24/2023
   author: codemillmatt

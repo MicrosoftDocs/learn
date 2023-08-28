@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.open-ai-dotnet-text-completions.3-chat-completions
-title: Work with Text Completions in Azure OpenAI
+title: Work with text completions in Azure OpenAI
 metadata:
-  title: Work with Text Completions in Azure OpenAI
-  description: Add conversation-in and message-out capabilities to your applications with Azure OpenAI Text Completions
+  title: Work with text completions in Azure OpenAI
+  description: Add conversation-in and message-out capabilities to your applications with Azure OpenAI text completions
   ms.date: 08/23/2023
   author: codemillmatt
   ms.author: masoucou
