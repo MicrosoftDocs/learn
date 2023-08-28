@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "A Read model."
       isCorrect: false
-      explanation: "Incorrect. A Read model will obtain text and key-value pairs from the legal documents but will not categorize them."
+      explanation: "Incorrect. A Read model obtains text and key-value pairs from the legal documents but won't categorize them."
     - content: "A Layout model."
       isCorrect: false
-      explanation: "Incorrect. A Layout model will obtain structure information, select marks, and other information from the legal forms, but will not categorize them"
+      explanation: "Incorrect. A Layout model obtains structure information, select marks, and other information from the legal forms, but won't categorize them"
     - content: "A Composed model."
       isCorrect: true
       explanation: "Correct. A Composed model consists of multiple custom models. Each submitted form is categorized as one of the custom form types and analyzed using the corresponding custom model."
@@ -50,11 +50,11 @@ quiz:
     - content: "R"
       isCorrect: false
       explanation: "Incorrect. There's no Azure AI Document Intelligence API for R, but you can submit requests through the RESTful web service."
-  - content: "You are building a solution that will analyze sales invoices. You expect to receive up to ten concurrent requests at busy times and you want your solution to be as simple as possible. What kind of resource should you create?"
+  - content: "You're building a solution that analyzes sales invoices. You expect to receive up to 10 concurrent requests at busy times and you want your solution to be as simple as possible. What kind of resource should you create?"
     choices:
     - content: "A Free tier Azure AI Document Intelligence resource."
       isCorrect: false
-      explanation: "Incorrect. The Free tier supports 1 request at a time."
+      explanation: "Incorrect. The Free tier supports one request at a time."
     - content: "A Standard tier Azure AI Document Intelligence resource."
       isCorrect: true
       explanation: "Correct. The Standard tier supports up to 15 concurrent requests and you don't need other Azure AI Services."
@@ -76,10 +76,10 @@ quiz:
     choices:
     - content: "Employment record"
       isCorrect: false
-      explanation: "Incorrect. There is no employment record prebuilt model in Azure AI Document Intelligence although you can analyze scanned employment records and extract text, key/values pairs, and other information"
+      explanation: "Incorrect. There's no employment record prebuilt model in Azure AI Document Intelligence although you can analyze scanned employment records and extract text, key/values pairs, and other information"
     - content: "Resume"
       isCorrect: false
-      explanation: "Incorrect. There is no resume prebuilt model in Azure AI Document Intelligence although you can analyze scanned resumes and extract text, key/values pairs, and other information."
+      explanation: "Incorrect. There's no resume prebuilt model in Azure AI Document Intelligence although you can analyze scanned resumes and extract text, key/values pairs, and other information."
     - content: "Receipt"
       isCorrect: true
       explanation: "Correct. The receipt model can identify commonly used fields and their values in scanned or photographed receipt documents."
