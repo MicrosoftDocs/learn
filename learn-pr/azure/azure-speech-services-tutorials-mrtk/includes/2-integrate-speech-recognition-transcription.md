@@ -1,4 +1,4 @@
-The Speech service is the unification of speech to text, text to speech and speech translation into a single Azure subscription. It's easy to speech enable your applications, tools and devices with the Speech CLI, Speech SDK, Speech Devices SDK, Speech Studio, or REST APIs.
+The Speech service is the unification of speech-to-text, text-to-speech and speech translation into a single Azure subscription. It's easy to speech enable your applications, tools and devices with the Speech CLI, Speech SDK, Speech Devices SDK, Speech Studio, or REST APIs.
 
 ## Speech recognition
 
@@ -22,7 +22,7 @@ The Speech software development kit (SDK) exposes many speech service capabiliti
 
 ## Spatial perception
 
-Spatial perception provides programmatic access to spatial mapping data, giving mixed-reality apps information about surfaces in application-specified regions of space near the user. Declare the spatial perception capability only when your app will explicitly use these surface meshes. The capability is not required for mixed reality apps to perform holographic rendering based on the user’s head pose.
+Spatial perception provides programmatic access to spatial mapping data, giving mixed-reality apps information about surfaces in application-specified regions of space near the user. Declare the spatial perception capability only when your app will explicitly use these surface meshes. The capability isn't required for mixed reality apps to perform holographic rendering based on the user’s head pose.
 
 ## Internet client server
 
