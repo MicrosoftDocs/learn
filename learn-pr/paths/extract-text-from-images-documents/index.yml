@@ -14,7 +14,7 @@ prerequisites: |
   - Knowledge of Azure portal navigation
   - Knowledge of at least one programming language (C#, Python)
 summary: |
-  Learn how to implement text extraction solutions with images and documents using form recognizer service's OCR Test Tool, pre-built models, and custom models.
+  Learn how to implement text extraction solutions with images and documents using Azure AI Document Intelligence service's OCR Test Tool, pre-built models, and custom models.
 iconUrl: /training/achievements/extract-text-documents.svg
 levels:
 - intermediate

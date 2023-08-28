@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check"
   ms.date: 07/14/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: false
@@ -15,18 +15,18 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You want Video Analyzer for Media to analyze a video. What must you do first?"
+  - content: "You want Azure Video Indexer to analyze a video. What must you do first?"
     choices:
-    - content: "Use the Computer Vision service to extract key frames from the video."
+    - content: "Use the Azure AI Vision service to extract key frames from the video."
       isCorrect: false
       explanation: "That's incorrect. You don't need to extract frames from the video before analyzing it."
-    - content: "Upload the video to Video Analyzer for Media and index it."
+    - content: "Upload the video to Azure Video Indexer and index it."
       isCorrect: true
       explanation: "That's correct. You need to index a video before analyzing it."
     - content: "Store the video file in an Azure blob store container."
       isCorrect: false
       explanation: "That's incorrect. You can upload the video file directly to the Video Analyzer portal."
-  - content: "You want Video Analyzer for Media to recognize brands in videos recorded from conference calls. What should you do?"
+  - content: "You want Azure Video Indexer to recognize brands in videos recorded from conference calls. What should you do?"
     choices:
     - content: "Edit the Brands model to show brands suggested by Bing, and add any new brands you want to detect."
       isCorrect: true
@@ -34,6 +34,6 @@ quiz:
     - content: "Edit the conference call videos to include a caption of each brand seen on their first appearance."
       isCorrect: false
       explanation: "That's incorrect. You can both detect known brands, and well as include new brands you want to detect by providing information about it."
-    - content: "Embed the Video Analyzer for Media widgets in a custom web site that has all the brand images stored for reference."
+    - content: "Embed the Azure Video Indexer widgets in a custom web site that has all the brand images stored for reference."
       isCorrect: false
       explanation: "That's incorrect. You can both detect known brands, and well as include new brands you want to detect by providing information about it."

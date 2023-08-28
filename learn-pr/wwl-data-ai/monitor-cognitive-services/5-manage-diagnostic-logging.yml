@@ -6,7 +6,7 @@ metadata:
   description: "Manage diagnostic logging"
   ms.date: 05/29/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: false
