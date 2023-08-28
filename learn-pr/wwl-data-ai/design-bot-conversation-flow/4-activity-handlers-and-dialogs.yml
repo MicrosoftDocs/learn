@@ -6,7 +6,7 @@ metadata:
   description: "Implement activity handlers and dialogs"
   ms.date: 05/25/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: false

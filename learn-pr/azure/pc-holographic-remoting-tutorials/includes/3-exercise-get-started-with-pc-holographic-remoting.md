@@ -2,9 +2,6 @@ Welcome to the HoloLens 2 tutorials. In this tutorial, you'll learn how to creat
 
 To complete this tutorial successfully, you should've some basic knowledge of Unity and MRTK. If you don't, we recommend that you complete the Getting started tutorials before continuing.
 
->[!Important]
->This tutorial series supports Unity 2020 LTS (currently 2020.3.x) if you're using Open XR and Unity 2019 LTS (currently 2019.4.x) if you're using Legacy WSA. This supersedes any Unity version requirements stated in the prerequisites linked above.
-
 ## Create and prepare the Unity project
 
 In this section, you'll create a new Unity project and get it ready for MRTK development.
@@ -27,22 +24,25 @@ Go to the Configuring the MRTK profiles article and follow the instructions in t
 
 In this section, you'll prepare the scene by adding some of the tutorial prefabs.
 
-1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** folder. While holding down the CTRL button, select the following six prefabs.
+1. First, since some of the models are in glTF format that is not natively supported by Unity, we need to install a
+package that allows them to be imported.
 
-    * ButtonParent
-    * ClippingObjects
-    * HandSpatialMapButton
-    * Instructions
-    * ModelParent
-    * Platform
+    To install the open source glTFast library, download and run this file:
+    https://package-installer.glitch.me/v1/installer/OpenUPM/com.atteneder.gltfast?registry=https%3A%2F%2Fpackage.openupm.com&scope=com.atteneder
 
-    :::image type="content" source="../media/add-prefab-1.png" alt-text="Screenshot of Adding prefabs 1." lightbox="../media/add-prefab-1.png":::
+    :::image type="content" source="../media/import-gltfast.png" alt-text="Screenshot of importing glTFast." lightbox="../media/import-gltfast.png":::
 
-2. Drag these models from the prefabs folder into the **Hierarchy** window.
+    Select import.
+
+    :::image type="content" source="../media/new-scoped-registry.png" alt-text="Screenshot of new scope registry imported." lightbox="../media/new-scoped-registry.png":::
+
+    Select close.
+
+2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** folder. Select the 'SceneContent' prefab and drag it to the bottom of the **Hierarchy** window.
 
     :::image type="content" source="../media/add-prefab-2.png" alt-text="Screenshot of Adding prefabs 2." lightbox="../media/add-prefab-2.png":::
 
-    To focus on the objects in the scene, you can double-click the ModelParent object and then zoom in:
+    To view the scene from the camera's point of view, right-click the Main Camera object in the **Hierarchy** window, and select 'Align view to selected'.
 
     :::image type="content" source="../media/focus-objects-scene.png" alt-text="Screenshot of Focus objects on scene." lightbox="../media/focus-objects-scene.png":::
 
@@ -53,9 +53,9 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 
 In this section, you'll add scripts to the scene and create button events that demonstrate the fundamentals of model switching and clipping functionality.
 
-### Configure the interactable (script) component
+### Configure the Pressable Button (script) component
 
-1. In the Hierarchy window, expand the **ButtonParent** object and select the next button. In the Inspector window, locate the **Interactable (Script)** component and click on plus sign icon ("+") under **OnClick ()** event.
+1. In the Hierarchy window, expand the **SceneContent** and **ButtonParent** objects and select the next button. In the Inspector window, locate the **Pressable Button** component and select the plus sign icon ("+") under **OnClick ()** event.
 
     :::image type="content" source="../media/add-interactable.png" alt-text="Screenshot of expanding the Interactable script." lightbox="../media/add-interactable.png":::
 
@@ -63,7 +63,7 @@ In this section, you'll add scripts to the scene and create button events that d
 
     :::image type="content" source="../media/add-button-parent.png" alt-text="Screenshot of Adding ButtonParent to the None Object." lightbox="../media/add-button-parent.png":::
 
-3. Click the **No Function**  dropdown of the same event and then select ViewButtonControl > NextModel () to set the NextModel () function as the action that is triggered when the button is pressed:
+3. Click the **No Function** dropdown of the same event and then select ViewButtonControl > NextModel () to set the NextModel () function as the action that is triggered when the button is pressed:
 
     :::image type="content" source="../media/event-to-next-model.png" alt-text="Screenshot of SelectingViewButtonControl and NextModel." lightbox="../media/event-to-next-model.png":::
 
@@ -78,7 +78,7 @@ In this section, you'll add scripts to the scene and create button events that d
 
 At this point, your buttons are configured to demonstrate the model switching and clipping functionality. Next, you'll add 3D models to the scene and the clipping objects to the script.
 
-We've provided six different 3D models for demonstration. Expand the **ModelParentobject** to expose these models.
+We've provided six different 3D models for demonstration. Expand the **ModelParent** object to expose these models.
 
 1. With the ButtonParent object still selected in the Hierarchy window, in the Inspector window, locate the **View Button Control (Script)** component and expand the **Models** variable.
 
@@ -86,7 +86,7 @@ We've provided six different 3D models for demonstration. Expand the **ModelPare
 
     :::image type="content" source="../media/3d-models.png" alt-text="Screenshot of Enter the number of 3D models." lightbox="../media/3d-models.png":::
 
-2. Drag each child object of ModelParent Object into these fields.
+2. Drag each child object of ModelParent object into these fields.
 
     :::image type="content" source="../media/child-object.png" alt-text="Screenshot of Drag and drop each child object." lightbox="../media/child-object.png":::
 
@@ -105,35 +105,8 @@ In this section, you'll add MarsCuriosityRover object's child objects renderer i
 
 In the Hierarchy window, expand the **ClippingObjects** object to expose the three different clipping objects you'll use in this project.
 
-1. To configure the **ClippingSphere** object, select it, and then in the Inspector window, locate the **Clipping Sphere (Script)** component. Next, enter the number of renderers in the **size** field that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create fields for adding renderers. Next, drag the MarsCuriosityRover object's child model objects into these fields.
+1. To configure the **ClippingSphere** object, select it, and then in the Inspector window, add a **Clipping Sphere** component. Next, enter the number of renderers in the **size** field that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create fields for adding renderers. Next, drag the MarsCuriosityRover object's child model objects into these fields.
 
     :::image type="content" source="../media/enable-clip-feature.png" alt-text="Screenshot of Configure Clipping Objects to enable clipping feature." lightbox="../media/enable-clip-feature.png":::
 
 2. Make sure the Clipping objects are turned on by enabling the ClippingObjects prefab in the Hierarchy window.
-
-## Configure eye-tracking to highlight tooltips
-
-In this section, you'll explore how to enable eye tracking in your project. For example, you'll implement the functionality to highlight tooltips attached to MarsCuriosityRover's parts while you're looking at them and hide them while you're looking away from them.
-
-### Identify target objects and associated tooltips
-
-In the Hierarchy window, select the ModelParent object. Next, expand the **MarsCuriosity** -> **Rover** to find five main parts of the MarsCuriosityRover: **POI-Camera, POI-Wheels, POI-Antena, POI-Spectrometer, POI-RUHF Antenna**.
-
-* Observe five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window.
-
-    :::image type="content" source="../media/target-objects.png" alt-text="Screenshot of Target Objects." lightbox="../media/target-objects.png":::
-
-### Implement while looking at target() & on look away() events
-
-In the Hierarchy window, select the **POI-Camera** object. Then, in the Inspector window, locate the Eye Tracking Target (Script) component and configure the **While Looking At Target() & On Look Away()** events as follows:
-
-1. In the **None (Object)** field, assign the **POI-Camera ToolTip** object.
-2. In the**No Function** dropdown of the **While Looking At Target ()** event, select **GameObject > SetActive (bool)**. Select the check box under it to highlight the tooltip as the triggered action when looking at the target object.
-
-    :::image type="content" source="../media/looking-at-target.png" alt-text="Screenshot of Configure While Looking At Target ()." lightbox="../media/looking-at-target.png":::
-
-3. Click the **No Function** dropdown of the **On Look Away ()** event listener. Next, select **GameObject > SetActive (bool)** and leave the check box empty so that hiding the tooltip is the action triggered when you look away from the target object.
-
-    :::image type="content" source="../media/looking-at-away.png" alt-text="Screenshot of Configure On Look Away ()." lightbox="../media/looking-at-away.png":::
-
-Follow the same process and assign respective tooltip objects to their same MarsCuriosityRover parts' While Looking At Target() & On Look Away() events.

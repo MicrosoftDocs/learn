@@ -1,8 +1,8 @@
-If you integrate Cognitive Search with a Form Recognizer solution, you can enrich your index with fields that your Form Recognizer models are trained to extract.
+If you integrate Cognitive Search with an Azure AI Document Intelligence solution, you can enrich your index with fields that your Azure AI Document Intelligence models are trained to extract.
 
-In your polling company, users can submit queries to your search service, which is built on Azure Cognitive Services. However, users need to be able to locate a completed polling form by searching for a voter ID. You've already trained a Form Recognizer model to extract the voter ID from various polling forms. Now you want to ensure that the voter ID is included in your Cognitive Search index so users can locate the forms they need.
+In your polling company, users can submit queries to your search service, which is built on Azure AI Services. However, users need to be able to locate a completed polling form by searching for a voter ID. You've already trained an Azure AI Document Intelligence model to extract the voter ID from various polling forms. Now you want to ensure that the voter ID is included in your Cognitive Search index so users can locate the forms they need.
 
-In this unit, you'll learn how to integrate a Form Recognizer model by calling it from a Cognitive Search custom skill.
+In this unit, you'll learn how to integrate an Azure AI Document Intelligence model by calling it from a Cognitive Search custom skill.
 
 ## Indexing content in Cognitive Search
 
@@ -73,7 +73,7 @@ The JSON code that defines the skillset looks like this:
 
 In the above JSON code;
 
-- **cognitiveservices** is required if you're using billable Cognitive Services APIs in your skillset. Provide the API key for your Cognitive Services multiservice resource.
+- **cognitiveservices** is required if you're using billable Azure AI Services APIs in your skillset. Provide the API key for your Azure AI Services multiservice resource.
 - **knowledgeStore** specifies an Azure Storage Account where the output from skills can be stored
 - **encryptionKey** specifies keys from the Azure Key Vault that will be used to encrypt sensitive content in the pipeline.
 
@@ -132,7 +132,7 @@ Custom skills can be used for two reasons:
 There are two types of custom skill that you can create:
 
 - **Azure Machine Learning (AML) custom skills.** You can use this custom skill type to enrich your index by calling an AML model.
-- **Custom Web API skills.** You can use this custom skill type to enrich your index by calling a web service. Such web services can include Azure applied AI services, such as Form Recognizer.
+- **Custom Web API skills.** You can use this custom skill type to enrich your index by calling a web service. Such web services can include Azure applied AI services, such as Azure AI Document Intelligence.
 
 If you're writing a web service to integrate into a Cognitive Search indexing pipeline, you must conform to certain requirements. For example:
 
@@ -141,17 +141,17 @@ If you're writing a web service to integrate into a Cognitive Search indexing pi
 - The number of objects sent to the service should match the number of objects in the **values** entity.
 - Each object in **values** should include a unique **recordId** property, a **data** property with the returned information, a warnings property, and an errors property.
 
-## Integrate Cognitive Search and Form Recognizer
+## Integrate Cognitive Search and Azure AI Document Intelligence
 
-If you've developed a Form Recognizer solution, you may be using it to accept scanned or photographed forms or documents from users, perhaps from an app on their mobile device. Form Recognizer can use either a built-in model or a custom model to analyze the content of these images and return text, structural information, languages used, key-value pairs, and other data.
+If you've developed an Azure AI Document Intelligence solution, you may be using it to accept scanned or photographed forms or documents from users, perhaps from an app on their mobile device. Azure AI Document Intelligence can use either a built-in model or a custom model to analyze the content of these images and return text, structural information, languages used, key-value pairs, and other data.
 
-That's the kind of data that may be useful in a Cognitive Search index. For example, if the content that you index includes scanned sales invoices, Form Recognizer can identify field such as currency amounts, retailer names, and tax information by using its prebuilt **Invoice** model. When users search for a retailer, you'd like them to receive a link to invoices from that retailer in their results.
+That's the kind of data that may be useful in a Cognitive Search index. For example, if the content that you index includes scanned sales invoices, Azure AI Document Intelligence can identify field such as currency amounts, retailer names, and tax information by using its prebuilt **Invoice** model. When users search for a retailer, you'd like them to receive a link to invoices from that retailer in their results.
 
-To integrate Form Recognizer into the Cognitive Search indexing pipeline, you must:
+To integrate Azure AI Document Intelligence into the Cognitive Search indexing pipeline, you must:
 
-- Create a Form Recognizer resource in your Azure subscription.
-- Configure one or more models in Form Recognizer. You can either select prebuilt models, such as **Invoice** or **Business Card** or train your own model for unusual or unique form types.
-- Develop and deploy a web service that can call your Form Recognizer resource. In this module, you'll use an Azure Function to host this service.
+- Create an Azure AI Document Intelligence resource in your Azure subscription.
+- Configure one or more models in Azure AI Document Intelligence. You can either select prebuilt models, such as **Invoice** or **Business Card** or train your own model for unusual or unique form types.
+- Develop and deploy a web service that can call your Azure AI Document Intelligence resource. In this module, you'll use an Azure Function to host this service.
 - Add a custom web API skill, with the correct configuration to the Cognitive Search skillset. This skill should be configured to send requests to the web service.
 
 In the next units, you'll learn how to complete this integration.
@@ -159,7 +159,7 @@ In the next units, you'll learn how to complete this integration.
 ## Learn more
 
 - [What is Azure Cognitive Search?](/azure/search/search-what-is-azure-search)
-- [Attach a Cognitive Services resource to a skillset in Azure Cognitive Search](/azure/search/cognitive-search-attach-cognitive-services)
+- [Attach an Azure AI Services resource to a skillset in Azure Cognitive Search](/azure/search/cognitive-search-attach-cognitive-services)
 - [Built-in skills for text and image processing during indexing (Azure Cognitive Search)](/azure/search/cognitive-search-predefined-skills)
 - [Custom Web API skill in an Azure Cognitive Search enrichment pipeline](/azure/search/cognitive-search-custom-skill-web-api)
-- [Example: Create a Form Recognizer custom skill](/azure/search/cognitive-search-custom-skill-form)
+- [Example: Create an Azure AI Document Intelligence custom skill](/azure/search/cognitive-search-custom-skill-form)

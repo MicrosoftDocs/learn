@@ -11,40 +11,40 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!INCLUDE[](includes/6-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Does Immersive Reader work with phone pictures?'
+  - content: Does Immersive Reader work with phone pictures?
     choices:
-    - content: "No, it can only be embedded into an application."
+    - content: No, it can only be embedded into an application.
       isCorrect: false
-      explanation: "Incorrect. Immersive Reader works on your phone through Microsoft Lens—an iOS and Android app that makes pictures of whiteboards and documents readable by allowing the user to use read aloud, text spacing, and color changing functions."
-    - content: "Yes, using Microsoft Lens."
+      explanation: Incorrect. Immersive Reader works on your phone through Microsoft Lens—an iOS and Android app that makes pictures of whiteboards and documents readable by allowing the user to use read aloud, text spacing, and color changing functions.
+    - content: Yes, using Microsoft Lens.
       isCorrect: true
-      explanation: "Correct. Microsoft Lens is an iOS and Android app that makes pictures of whiteboards and documents readable by allowing the user to use read aloud, text spacing, and color changing functions."
-    - content: "Yes, you just have to upload it to your computer."
+      explanation: Correct. Microsoft Lens is an iOS and Android app that makes pictures of whiteboards and documents readable by allowing the user to use read aloud, text spacing, and color changing functions.
+    - content: Yes, you just have to upload it to your computer.
       isCorrect: false
-      explanation: "Incorrect. Through the Microsoft Lens app—available for iOS and Android—you can make pictures of whiteboards and documents readable by allowing the user to use read aloud, text spacing, and color changing functions right on your phone."
-  - content: 'How many languages can Immersive Reader automatically translate?'
+      explanation: Incorrect. Through the Microsoft Lens app—available for iOS and Android—you can make pictures of whiteboards and documents readable by allowing the user to use read aloud, text spacing, and color changing functions right on your phone.
+  - content: How many languages can Immersive Reader automatically translate?
     choices:
-    - content: "None."
+    - content: None.
       isCorrect: false
-      explanation: "Incorrect. Immersive Readers built-in translation is available in 80 languages."
-    - content: "All known languages."
+      explanation: Incorrect. Immersive Readers built-in translation is available in 80 languages.
+    - content: All known languages.
       isCorrect: false
-      explanation: "Incorrect. While Immersive Readers built-in translation is available in 80 languages, it doesn't cover the entire known 6000+ languages."
-    - content: "80 languages."
+      explanation: Incorrect. While Immersive Readers built-in translation is available in 80 languages, it doesn't cover the entire known 6,000+ languages.
+    - content: 80 languages.
       isCorrect: true
-      explanation: "Correct. Immersive Readers built-in translation is available in 80 languages, and users can translate specific words and phrases, or the entire document."
-  - content: 'What is a benefit of using the Parts of Speech function?'
+      explanation: Correct. Immersive Readers built-in translation is available in 80 languages, and users can translate specific words and phrases, or the entire document.
+  - content: What is a benefit of using the Parts of Speech function?
     choices:
-    - content: "Parts of speech, like nouns and verbs, are labeled and can be highlighted with different colors."
+    - content: Parts of speech, like nouns and verbs, are labeled and can be highlighted with different colors.
       isCorrect: true
-      explanation: "Correct. Parts of Speech can help users learn grammar, while increasing learning comprehension and attention by using different colors to highlight words."
-    - content: "It breaks down the words into syllables."
+      explanation: Correct. Parts of Speech can help users learn grammar, while increasing learning comprehension and attention by using different colors to highlight words.
+    - content: It breaks down the words into syllables.
       isCorrect: false
-      explanation: "Incorrect. However, syllables is a function of Immersive Reader, which can make reading easier for people with learning differences, and help early readers sound out words."
-    - content: "It explains what the parts of speech are."
+      explanation: Incorrect. However, syllables is a function of Immersive Reader, which can make reading easier for people with learning differences, and help early readers sound out words.
+    - content: It explains what the parts of speech are.
       isCorrect: false
-      explanation: "Incorrect. Immersive Reader can isolate and highlight what different parts of speech are. However, it doesn't, for example, teach you what a noun is."
+      explanation: Incorrect. Immersive Reader can isolate and highlight what different parts of speech are. However, it doesn't, for example, teach you what a noun is.

@@ -9,8 +9,9 @@ metadata:
   ms.topic: module-standard-task-based
   ms.prod: windows
   ms.technology: arm
+  manager: jken
 title: Introduction to Windows on Arm - Port a .NET application to natively support Arm-based processors
-summary: "This module describes how Windows operating system supports devices powered by Arm processors and how to add a build configuration for Arm64 architecture to improve the experience of using your Windows application on Arm-based devices. This guidance will also cover testing, debugging, and troubleshooting the new Arm-based version of your Windows app."
+summary: "This module describes how Windows operating system supports devices powered by Arm processors and how to add a build configuration for Arm64 architecture to improve the experience of using your Windows application on Arm-based devices. This training will also cover testing, debugging, and troubleshooting the new Arm-based version of your Windows app."
 abstract: |
   By the end of this module, you'll be able to:
     - Describe Windows on Arm.
@@ -21,7 +22,7 @@ abstract: |
     - Troubleshoot common issues experienced with Arm builds.
 
 prerequisites: |
-  Before completing this module, you should have the following prerequisite tooling, knowledge and experience:
+  Before starting this module, you should have the following prerequisite tooling, knowledge and experience:
     - Familiarity with Visual Studio and compiling source code at a beginner level.
     - Visual Studio 2022 installed with the .NET desktop development workload and .NET 6.0 SDK. 
     - Familiarity with processor architectures such as Intel-based x86, x64 as well as Arm32 and Arm64 at a beginner level.
