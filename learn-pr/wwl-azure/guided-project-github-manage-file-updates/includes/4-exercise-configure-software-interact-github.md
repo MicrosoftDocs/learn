@@ -1,4 +1,3 @@
-
 Now that you have a GitHub account and the learn-git repo created, it's time to install software that will make interacting with your GitHub repository simpler. You'll need to install Visual Studio Code first, then install Git, and then configure Visual Studio Code.
 
 ## Install Visual Studio Code
