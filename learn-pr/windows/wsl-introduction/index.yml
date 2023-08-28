@@ -3,8 +3,8 @@ uid: learn.wsl-introduction
 metadata:
   moduleType: standard
   title: Training – Introduction to Windows Subsystem for Linux (WSL)
-  description: An overview of Windows Subsystem for Linux (WSL) ability to install Linux distributions on your Windows computer, instructions to install and set up, a high-level look at a typical WSL developer workflow, and an exercise to run some basic BASH and PowerShell commands.
-  ms.date: 01/09/2023
+  description: A 7-part training on Windows Subsystem for Linux (WSL).
+  ms.date: 08/28/2023
   author: mattwojo
   ms.author: mattwoj
   ms.topic: interactive-tutorial
@@ -13,18 +13,18 @@ metadata:
   manager: jken
 title: Training – Introduction to Windows Subsystem for Linux (WSL)
 summary: |
-  This 7 unit training module provides an introduction to WSL. Learn the basic concepts that combine Windows and Linux operating systems, including how to install one or more Linux distributions on your Windows machine.
+  This 7-part training provides an introduction to WSL. Learn the basic concepts that combine Windows and Linux operating systems, including how to install one or more Linux distributions on your Windows machine.
   > [!NOTE]
-  > If you are only looking for guidance on how to install WSL or other reference documentation, rather than an entire training module, see [How to install Linux on Windows with WSL](/windows/wsl/install).
+  > If you're only looking for guidance on how to install WSL or other reference documentation, rather than an entire training module, see [How to install Linux on Windows with WSL](/windows/wsl/install).
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe Windows + Linux integration enabled by WSL, as well as the advantages over a traditional VM or dual-booting. 
+    - Describe Windows + Linux integration enabled by WSL and the advantages over a traditional VM or dual-booting. 
     - Set up a basic development environment with WSL.
     - Explain a typical workflow that utilizes WSL with recommended IDE and tools.
     - Install and run a Linux distribution or multiple distributions running side-by-side.
     - Describe the features WSL offers for utilizing both Windows and Linux command line tools and GUI applications.
     - Run basic WSL, BASH, and PowerShell commands.
-    - Explain what WSL can and can't do, with the ability to assess whether it is the right fit for your needs.
+    - Explain what WSL can and can't do, with the ability to assess whether it's the right fit for your needs.
 prerequisites: |
   - A computer running Windows 11 or Windows 10.
   - Ability to run PowerShell or Windows Command Prompt as an Administrator.
