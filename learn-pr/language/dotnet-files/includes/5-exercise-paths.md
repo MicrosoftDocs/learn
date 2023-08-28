@@ -20,7 +20,7 @@ In the current Program.cs code, you're passing the static location of the *store
     var storesDirectory = Path.Combine(currentDirectory, "stores");
     ```
 
-1. Replace the variable `stores` in the `FindFiles` function with the new variable `storesDirectory`:
+1. Replace the string `stores` in the `FindFiles` function call with the new variable `storesDirectory`:
 
      ```csharp
      var salesFiles = FindFiles(storesDirectory);
@@ -63,7 +63,7 @@ In the current Program.cs code, you're passing the static location of the *store
 
 Instead of looking for only *sales.json* files, the program needs to search for any file with a .json extension. To do that, you can use the `Path.GetExtension` method to check the extension for each file.
 
-1. In the `foreach` loop in `foundFiles`, insert the following line of code above the `if` statement to define a new variable `extension`. This code uses the `Path.GetExtension` method to get the extension of each file.
+1. In the `foreach` loop that iterates through `foundFiles`, insert the following line of code above the `if` statement to define a new variable `extension`. This code uses the `Path.GetExtension` method to get the extension of each file.
 
     ```csharp
         var extension = Path.GetExtension(file);

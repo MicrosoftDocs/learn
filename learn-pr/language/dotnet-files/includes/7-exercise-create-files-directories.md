@@ -2,7 +2,7 @@ The `File` and `Directory` classes in .NET let you create new files and director
 
 So far, you've created a robust command-line application in .NET that can read any folder structure to find files with a .json extension. You'll need to read those files to summarize the data in them. You'll then write the totals to a new file in a new directory called *salesTotals*.
 
-In this exercise, you'll create the *salesTotalDir* directory and *totals.txt* file where the sales totals will eventually go.
+In this exercise, you'll create the *salesTotalDir* directory and the *totals.txt* file where the sales totals will eventually go.
 
 ## Create the SalesTotals directory
 
