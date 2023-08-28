@@ -12,7 +12,7 @@ metadata:
   ms.technology: windows-subsystem-for-linux
   manager: jken
 title: Training – Introduction to Windows Subsystem for Linux (WSL)
-summary:
+summary: |
   This 7 unit training module provides an introduction to WSL. Learn the basic concepts that combine Windows and Linux operating systems, including how to install one or more Linux distributions on your Windows machine.
   > [!NOTE]
   > If you are only looking for guidance on how to install WSL or other reference documentation, rather than an entire training module, see [How to install Linux on Windows with WSL](/windows/wsl/install).
