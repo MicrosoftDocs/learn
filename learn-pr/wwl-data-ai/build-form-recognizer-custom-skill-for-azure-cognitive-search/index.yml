@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search
 metadata:
-  title: Build a Form Recognizer custom skill for Azure Cognitive Search
-  description: "Learn how to use an Azure Form Recognizer solution as a custom skill to enrich content in an Azure Cognitive Search pipeline."
+  title: Build an Azure AI Document Intelligence custom skill for Azure Cognitive Search
+  description: "Learn how to use an Azure AI Document Intelligence solution as a custom skill to enrich content in an Azure Cognitive Search pipeline."
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.service: applied-ai-services
   ms.subservice: forms-recognizer
-title: Build a Form Recognizer custom skill for Azure Cognitive Search
-summary: Learn how to use an Azure Form Recognizer solution as a custom skill to enrich content in an Azure Cognitive Search pipeline.
+title: Build an Azure AI Document Intelligence custom skill for Azure Cognitive Search
+summary: Learn how to use an Azure AI Document Intelligence solution as a custom skill to enrich content in an Azure Cognitive Search pipeline.
 abstract: |
   In this module, you'll learn to:
   -	Describe how a custom skill can enrich content passed through an Azure Cognitive Search pipeline.

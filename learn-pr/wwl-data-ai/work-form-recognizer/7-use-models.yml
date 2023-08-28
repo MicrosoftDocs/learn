@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.work-with-form-recognizer.use-models
-title: Use Form Recognizer models
+title: Use Azure Document Intelligence models
 metadata:
-  title: Use Form Recognizer models
-  description: "Use Form Recognizer models"
+  title: Use Azure Document Intelligence models
+  description: "Use Azure Document Intelligence models"
   ms.date: 05/17/2022
   author: wwlpublish
   ms.author: sheryang

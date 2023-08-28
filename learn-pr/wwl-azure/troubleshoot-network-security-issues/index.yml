@@ -33,7 +33,7 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-domain
+- entra
 - azure-cdn
 - azure-firewall
 - azure-firewall-manager

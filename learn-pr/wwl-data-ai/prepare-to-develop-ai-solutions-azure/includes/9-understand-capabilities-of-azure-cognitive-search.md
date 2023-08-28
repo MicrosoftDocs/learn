@@ -1,6 +1,6 @@
 Searching for information is a common requirement in many applications, from dedicated *search engine* web sites to mobile apps that can find context-appropriate information based on where you are and what you want to accomplish.
 
-![A search solution uses Cognitive services to extract insights from data and create an index for search](../media/cognitive-search.png)
+![Diagram of a search solution using AI services to extract insights from data and create an index for search.](../media/cognitive-search.png)
 
 **Azure Cognitive Search** is an Applied AI Service that enables you to ingest and index data from various sources, and search the index to find, filter, and sort information extracted from the source data.
 
