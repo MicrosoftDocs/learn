@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Azure Functions
   description: Learn how to
   ms.date: 06/04/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: module-intro-to-product
   ms.service: azure-functions
   manager: mijacobs
