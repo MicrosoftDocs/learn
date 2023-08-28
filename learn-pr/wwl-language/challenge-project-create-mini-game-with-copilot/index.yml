@@ -26,7 +26,7 @@ roles:
 - k-12-educator
 - student
 products:
-- python
+- github
 - vs-code
 units:
 - learn.wwl.challenge-project-create-mini-game-with-copilot.introduction
