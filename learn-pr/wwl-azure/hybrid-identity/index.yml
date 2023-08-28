@@ -27,8 +27,6 @@ products:
 - azure-active-directory
 - active-directory-federation-services
 - entra
-- azure-active-directory-priviledged-identity-management
-- entra
 subjects:
 - identity-access
 units:
