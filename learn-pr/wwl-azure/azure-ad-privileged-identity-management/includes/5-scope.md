@@ -4,7 +4,7 @@ The Privileged Identity Management (PIM) role assignments give you a secure way 
 
 PIM keeps you informed by sending you and other participants email notifications. These emails might also include links to relevant tasks, such as activating, approving, or denying a request.
 
-The following Privileged Identity Management . The email below informs Patti that Alex updated a role assignment for Emily.
+The following Privileged Identity Management. The email below informs Patti that Alex updated a role assignment for Emily.
 
 ## :::image type="content" source="../media/pim-email-3e57c23c.png" alt-text="Screenshot showing email with updated a role assignment."::: 
 
