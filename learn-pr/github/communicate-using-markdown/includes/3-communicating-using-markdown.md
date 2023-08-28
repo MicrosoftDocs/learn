@@ -1,4 +1,4 @@
-This exercise allows you to practice the content covered in this module - using Markdown to collaborate more expressively throughout GitHub.
+This exercise allows you to practice the content covered in this module: use Markdown to communicate effectively on GitHub.
 
 ## Get started
 
