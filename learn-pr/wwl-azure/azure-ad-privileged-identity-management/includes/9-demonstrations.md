@@ -1,4 +1,3 @@
-
 These are a few try-this exercise to configure Privileged Identity Management (PIM)
 
 ## Task 1: Azure AD PIM for roles
@@ -84,7 +83,7 @@ In this task, we will configure PIM for Azure resources, activate the Virtual Ma
 
 ### Configure PIM for Azure resources
 
-In this task, we will add the subscription to PIM, then add the Virtual Machine Contributor role as an Active role.
+In this task, we will add the subscription to PIM, then add the Virtual Machine Contributor role as a Active role.
 
 1.  In the **Portal**, search for and select **Azure AD Privileged Identity Management**.
 2.  Under **Manage** select **Azure Resources**.
