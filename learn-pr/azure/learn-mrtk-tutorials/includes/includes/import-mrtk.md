@@ -16,7 +16,7 @@
 
 1. On the **Discover Features** page, note that there is a list of available package groups.
 
-    :::image type="content" source="../../media/003-mrft-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
+    :::image type="content" source="../../media/003-mixed-reality-feature-tool-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
 
 1. Select the "+" button to the left of **Platform Support (0 of 5)** and then select the latest version of **Mixed Reality OpenXR Plugin**.
  
