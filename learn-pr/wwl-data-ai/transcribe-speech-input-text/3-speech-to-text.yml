@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.transcribe-speech-input-text.speech-to-text
-title: Use the Speech to text API
+title: Use the Azure AI Speech to text API
 metadata:
-  title: Use the Speech to text API
-  description: "Use the Speech to text API"
+  title: Use the Azure AI Speech to text API
+  description: "Use the Azure AI Speech to text API"
   ms.date: 03/02/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: false

@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.work-with-form-recognizer
 metadata:
-  title: Extract data from forms with Form Recognizer
-  description: "Form Recognizer extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Form Recognizer vision API."
+  title: Extract data from forms with Azure Document Intelligence
+  description: "Azure Document Intelligence extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Document Intelligence vision API."
   ms.date: 05/17/2022
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.service: applied-ai-services
   ms.subservice: forms-recognizer
-title: Extract data from forms with Form Recognizer
-summary: Form Recognizer uses machine learning technology to identify and extract key-value pairs and table data from form documents with accuracy, at scale. This module teaches you how to use the *Azure Form Recognizer* cognitive service.
+title: Extract data from forms with Azure Document Intelligence
+summary: Azure Document Intelligence uses machine learning technology to identify and extract key-value pairs and table data from form documents with accuracy, at scale. This module teaches you how to use the *Azure Document Intelligence* Azure AI service.
 abstract: |
   In this module, you'll learn how to:
-  - Identify how Form Recognizer's layout service, prebuilt models, and custom service can automate processes
-  - Use Form Recognizer's Optical Character Recognition (OCR) capabilities with SDKs, REST API, and Form Recognizer Studio
+  - Identify how Azure Document Intelligence's layout service, prebuilt models, and custom service can automate processes
+  - Use Azure Document Intelligence's Optical Character Recognition (OCR) capabilities with SDKs, REST API, and Azure Document Intelligence Studio
   - Develop and test custom models
 prerequisites: |
   To complete this module, you will need:

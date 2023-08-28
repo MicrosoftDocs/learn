@@ -1,4 +1,4 @@
-Tailwind Manufacturing is interested in setting up a system of alerts to respond to operational and connectivity signals from its Azure Arc-enabled servers. In this unit, you’ll learn how Azure Monitor supports smart and scalable alerting through rules. Additionally, you’ll walk through the creation of an Azure Monitor Alert Rule for Azure Arc-enabled servers. 
+Tailwind Manufacturing is interested in setting up a system of alerts to respond to operational and connectivity signals from its Azure Arc-enabled servers. In this unit, you learn how Azure Monitor supports smart and scalable alerting through rules. Then, you walk through the creation of an Azure Monitor Alert Rule for Azure Arc-enabled servers. 
 
 ## Overview of Azure Monitor alerts and alert rules
 
@@ -7,12 +7,12 @@ Alerts proactively notify you when issues are found with your infrastructure or 
 Alert rules are separated from alerts and the actions taken when an alert fires. The alert rule captures the target and criteria for alerting. Key attributes of an alert include:
 
 - **Target resource** defines the scope and signals available for alerting. A target can be any Azure resource. Azure Arc-enabled servers can be targets for Azure Monitor Alerts.
-- **Signal** includes the metric, activity log, Application Insights, and log emitted by the target resource. An example could be the heartbeats emitted by or the CPU Utilization threshold of an Azure Arc-enabled server.
-- **Criteria** specifies the combination of signal and logic applied on a target resource. An example could be CPU utilization threshold passing 70%.  
-- **Alert name, Alert description,** and **Severity** are configured by the user. Severity ranges from 0 to 4, where Sev 0 is Critical, Sev 1 is Error, Sev 2 is Warning, Sev 3 is Informational, and Sev 4 is Verbose.
+- **Signal** includes the metric, activity log, Application Insights, and log emitted by the target resource. For example, the heartbeats emitted by an Azure Arc-enabled server, or the CPU Utilization threshold of that server.
+- **Criteria** specifies the combination of signal and logic applied on a target resource. For example, if the CPU utilization threshold passes 70%.  
+- **Alert name, Alert description,** and **Severity** are configured by the user. Severity ranges from 0 to 4, where Severity 0 is *Critical*, Severity 1 is *Error*, Severity 2 is *Warning*, Severity 3 is *Informational*, and Severity 4 is *Verbose*.
 - **Action** specifies the corresponding action group to be notified and respond. Main action types include Automation Runbook, Azure Function, ITSM, Logic App, Secure Webhook, and Webhook.
 
-The default **Alerts** page provides a summary of alerts that are created within a particular time range. You can also manage the state of an alert to specify where it is in the resolution process. When the criteria specified in the alert rule is met, an alert is created or fired, and it has a status of *New*. You can change the status when you acknowledge an alert and when you close it. All state changes are stored in the history of the alert.
+The default **Alerts** page provides a summary of alerts that are created within a particular time range. You can also manage the state of an alert to specify where it is in the resolution process. When all of criteria specified in the alert rule are met, an alert is created or fired, and it has a status of *New*. You can change the status when you acknowledge an alert and when you close it. All state changes are stored in the history of the alert.
 
 You might want to query programmatically for alerts generated against your subscription. Through Azure Resource Graph, you can programmatically manage your alert instances. Additionally, you can use smart groups to reduce noise and improve troubleshooting. Smart groups are aggregations of alerts based on machine learning algorithms.
 
@@ -31,7 +31,7 @@ Follow these steps to define a new alert rule for Azure Arc-enabled servers. We 
 
    ![Screenshot of creating an alert rule.](../media/image-9.png)
   
-1. Enter the **Threshold Value** of 0.5, above which the alert rule will be triggered, and select **Done**.
+1. Enter the **Threshold value** of 0.5 and select **Done**.
   
    ![Screenshot of creating signal logic.](../media/image-10.png)
 

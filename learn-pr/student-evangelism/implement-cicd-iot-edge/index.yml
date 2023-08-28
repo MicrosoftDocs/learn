@@ -15,7 +15,7 @@ abstract: |
     In this module, you will:
     - Create a pipeline that deploys a smoke test using virtual IoT Edge devices
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 prerequisites: |
     - Basic knowledge of Azure DevOps
     - Basic knowledge of CI/CD

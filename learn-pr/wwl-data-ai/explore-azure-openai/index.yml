@@ -7,7 +7,7 @@ metadata:
   author: sherzyang      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: sheryang           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
-  ms.service: cognitive-services
+  ms.service: ai-services
   ms.subservice: openai
   ms.custom:
     - build-2023
