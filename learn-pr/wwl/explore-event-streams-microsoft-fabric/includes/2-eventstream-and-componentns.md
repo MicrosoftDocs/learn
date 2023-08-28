@@ -25,7 +25,7 @@ The main components of Microsoft Fabric Eventstream are:
 
 ## Main Editor components
 
-Before we dive deeper into eventstream, it's important to understand the design canvas known as Main Editor. Understanding this will assist you in your nocode development and designing eventstreams in an efficient and approach that allows for re-use.
+Before we dive deeper into eventstream, it's important to understand the design canvas known as Main Editor. Understanding this assists you in your no code development and designing eventstreams in an efficient and approach that allows for reuse.
 
 ![Main Editor elements](../media/elements-of-main-editor.png)
 
