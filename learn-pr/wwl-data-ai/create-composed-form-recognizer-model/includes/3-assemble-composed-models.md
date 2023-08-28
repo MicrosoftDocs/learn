@@ -52,5 +52,4 @@ In the results, use the `docType` property to determine the constituent custom m
 
 ## Learn more
 
-- [Compose custom models v3.1](/azure/ai-services/document-intelligence/how-to-guides/compose-custom-models?view=doc-intel-3.1.0&tabs=studio)
-- [Build your training dataset for a custom model](/azure/applied-ai-services/form-recognizer/how-to-guides/build-custom-model-v3)
+- [Compose custom models](/azure/ai-services/document-intelligence/concept-composed-models)

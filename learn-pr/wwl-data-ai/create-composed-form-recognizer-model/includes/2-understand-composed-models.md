@@ -67,6 +67,5 @@ There are some restrictions on the models that can be added to the same composed
 
 ## Learn more
 
-- [Composed custom models](/azure/applied-ai-services/form-recognizer/concept-composed-models)
-- [Compose custom models v3.1](/azure/ai-services/document-intelligence/how-to-guides/compose-custom-models?view=doc-intel-3.1.0&tabs=studio)
+- [Composed custom models](/azure/ai-services/document-intelligence/concept-composed-models)
 - [Code sample - Model compose](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_ModelCompose.md)

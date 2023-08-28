@@ -7,7 +7,6 @@ Now that you've completed this module, you can:
 
 ## Learn more
 
-- [Composed custom models](/azure/applied-ai-services/form-recognizer/concept-composed-models)
-- [Compose custom models v3.0](/azure/applied-ai-services/form-recognizer/compose-custom-models-preview)
+- [Composed custom models](/azure/ai-services/document-intelligence/concept-composed-models)
 - [Code samples](/samples/azure/azure-sdk-for-net/azure-form-recognizer-client-sdk-samples)
-- [Build your training dataset for a custom model](/azure/applied-ai-services/form-recognizer/how-to-guides/build-custom-model-v3)
+- [Build your training dataset for a custom model](/azure/ai-services/document-intelligence/how-to-guides/build-a-custom-model)
