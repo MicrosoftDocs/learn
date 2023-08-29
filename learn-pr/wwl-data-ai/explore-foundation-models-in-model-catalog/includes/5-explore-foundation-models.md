@@ -17,7 +17,7 @@ The Azure Machine Learning model catalog integrates with models from Hugging Fac
 
 ### Explore foundation models
 
-When you select a model from the Azure Machine Learning catalog, you can experiment with it to explore whether it meets your requirements. A foundation model is already pre-trained and you can deploy a foundation model to an endpoint without any extra training. You can also choose to fine-tune a foundation model when you need the model to perform a specific task well, or when you want it to perform better on domain-specific knowledge.
+When you select a model from the Azure Machine Learning catalog, you can experiment with it to explore whether it meets your requirements. A foundation model is already pretrained and you can deploy a foundation model to an endpoint without any extra training. If you want the model to be specialized in a task, or perform better on domain-specific knowledge, you can also choose to fine-tune a foundation model.
 
 Foundation models can be used for various tasks, including:
 
@@ -34,6 +34,6 @@ Some foundation models that are commonly used are:
 |Model|Description|
 |---|---|
 |[**BERT**](https://huggingface.co/docs/transformers/main/model_doc/bert?azure-portal=true) (Bidirectional Encoder Representations from Transformers)| Focused on encoding information by using context from before and after a token (bidirectional). Commonly used when you want to fine-tune a model to perform a specific task like *text classification* and *question answering*.|
-|[**GPT**](https://huggingface.co/docs/transformers/main/model_doc/openai-gpt?azure-portal=true) (Generative Pre-trained Transformer)|Trained to create coherent and contextually relevant text, and is most commonly used for tasks like *text generation* and *chat completions*.|
+|[**GPT**](https://huggingface.co/docs/transformers/main/model_doc/openai-gpt?azure-portal=true) (Generative Pretrained Transformer)|Trained to create coherent and contextually relevant text, and is most commonly used for tasks like *text generation* and *chat completions*.|
 |[**LLaMA**](https://huggingface.co/docs/transformers/main/model_doc/llama?azure-portal=true) (Large Language Model Meta AI)|A family of models created by Meta. When training LLaMA models, the focus has been on providing more training data than increasing the complexity of the models. You can use LLaMA models for *text generation* and *chat completions*.|
 |[**T5**](https://huggingface.co/docs/transformers/main/model_doc/t5?azure-portal=true) (Text-to-Text Transfer Transformer)| An encoder-decoder model that uses a text-to-text approach. By focusing on converting text-to-text, these types of models are ideal for *translation*.|
