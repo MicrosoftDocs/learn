@@ -31,6 +31,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+- entra
+- entra-identity-governance
 subjects:
 - identity-access
 units:
