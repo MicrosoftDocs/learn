@@ -4996,6 +4996,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/10-exercise-troubleshoot-azure-file-sync.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/extend-share-capacity-with-azure-file-sync/10-exercise-check-file-sync",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/wwl-azure/distinguish-types-cloud-models/2-define-public-cloud.md",
       "redirect_url": "/training/paths/az-900-describe-cloud-concepts",
       "redirect_document_id": false
