@@ -3,7 +3,7 @@ uid: learn.azure.access-blob-storage-metrics-from-code
 metadata:
   title: Access metrics from your Azure Blob Storage Containers Programmatically
   description: Discover how to use Azure Monitor to gather performance metrics and then configure and access those metrics from .NET application code.
-  ms.date: 04/12/2019
+  ms.date: 08/29/2023
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
