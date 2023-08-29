@@ -5881,6 +5881,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/github/github-introduction-products/5-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/github-introduction-products/4-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/github-introduction-products/3-how-licensing-works.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/3-mobile-versus-desktop",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/ai-business-school/implement-ai-organization/4-ai-economics.md",
       "redirect_url": "/training/modules/implement-ai-organization/6-ai-economics",
       "redirect_document_id": true

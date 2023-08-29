@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.github-introduction-products.introduction
-title: Introduction
+uid: learn.github.github-introduction-products.github-billing
+title: GitHub billing
 metadata:
-  title: Introduction
+  title: GitHub billing
   description: This content is part of the "Introduction to GitHub's products" module.
   ms.date: 08/21/2023
   author: rmcmurray
   ms.author: robmcm
   ms.topic: training-unit
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/4-github-billing.md)]
