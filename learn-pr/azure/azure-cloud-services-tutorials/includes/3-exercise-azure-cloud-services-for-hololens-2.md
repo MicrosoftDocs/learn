@@ -133,7 +133,7 @@ Before we finish the scene, let's prepare the project to be built for **HoloLens
 
 3. In  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities (which you enabled when you created the project at the beginning of the tutorial) are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, and **Webcam** capabilities:
 
-    :::image type="content" source="../media/capabilty.png" alt-text="Screenshot of Unity Capabilities" lightbox="../media/capabilty.png":::
+    :::image type="content" source="../media/capability.png" alt-text="Screenshot of Unity Capabilities" lightbox="../media/capability.png":::
 
 ### 2. Deploy the app to your HoloLens 2
 

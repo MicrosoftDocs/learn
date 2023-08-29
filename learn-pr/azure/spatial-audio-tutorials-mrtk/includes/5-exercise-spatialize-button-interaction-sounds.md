@@ -57,7 +57,7 @@ To disable this attenuation, you need to adjust the **Volume** curve In the **Au
   2) Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'
   3) To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis
 
-  :::image type="content" source="../media/3d-sound-settings.png" alt-text="Screenshot of Button 3D sound settings." lightbox="../media/3d-sound-settings.png":::
+  :::image type="content" source="../media/3-d-sound-settings.png" alt-text="Screenshot of Button 3D sound settings." lightbox="../media/3-d-sound-settings.png":::
 
 ## Test the spatialize audio
 

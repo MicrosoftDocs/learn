@@ -84,7 +84,7 @@ We've provided six different 3D models for demonstration. Expand the **ModelPare
 
     In the **Size** field, enter the number of 3D models you would like to have in your scene--in this case, six. This creates fields for adding new 3D models.
 
-    :::image type="content" source="../media/3d-models.png" alt-text="Screenshot of Enter the number of 3D models." lightbox="../media/3d-models.png":::
+    :::image type="content" source="../media/3-d-models.png" alt-text="Screenshot of Enter the number of 3D models." lightbox="../media/3-d-models.png":::
 
 2. Drag each child object of ModelParent object into these fields.
 

@@ -8,7 +8,7 @@ In the previous exercise, you added spatialization for the sounds to give them a
 
 2. Each **Group** has its own set of effects. Add a reverb effect to the new group by clicking **Add...** on the new group, and choosing **SFX Reverb**:
 
-    :::image type="content" source="../media/add-sfx-reverb.png" alt-text="Screenshot of Add SFX Reverb." lightbox="../media/add-sfx-reverb.png":::
+    :::image type="content" source="../media/add-sound-effects-reverb.png" alt-text="Screenshot of Add SFX Reverb." lightbox="../media/add-sound-effects-reverb.png":::
 
     In audio terminology, the original, unreverberated audio is called the _dry path_, and the audio after filtering with the reverb filter is called the _wet path_. Both paths are sent to the audio output, and their relative strengths in this mixture is called the _wet/dry mix_. The wet/dry mix strongly affects the sense of distance.
 
@@ -17,7 +17,7 @@ In the previous exercise, you added spatialization for the sounds to give them a
     1) Set the **Dry Level** property to the lowest setting (-10000 mB)
     2) Set the **Room property** to the highest setting (0 mB)
 
-    :::image type="content" source="../media/sfx-reverb-properties.png" alt-text="Screenshot of SFX Reverb properties." lightbox="../media/sfx-reverb-properties.png":::
+    :::image type="content" source="../media/sound-effects-reverb-properties.png" alt-text="Screenshot of SFX Reverb properties." lightbox="../media/sound-effects-reverb-properties.png":::
 
     The other settings control the feel of the simulated room. In particular, **Decay Time** is related to perceived room size.
 
