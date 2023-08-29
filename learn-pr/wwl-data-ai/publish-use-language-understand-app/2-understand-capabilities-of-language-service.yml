@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.publish-use-language-understand-app.understand-capabilities-of-language-service
-title: Understand capabilities of the Language service
+title: Understand capabilities of the Azure AI Language service
 metadata:
-  title: Understand capabilities of the Language service
-  description: "Understand capabilities of the Language service"
+  title: Understand capabilities of the Azure AI Language service
+  description: "Understand capabilities of the Azure AI Language service"
   ms.date: 10/12/2022
   author: wwlpublish
   ms.author: berryivor

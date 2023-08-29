@@ -59,4 +59,4 @@ For example, translating the English (**en**) text "JSON is &#x2587;&#x2587;&#x2
 ```
 
 > [!NOTE]
-> To learn more about the translation options, including some not described here, see the [Translator service documentation](/azure/cognitive-services/translator/reference/v3-0-translate).
+> To learn more about the translation options, including some not described here, see the [Azure AI Translator service documentation](/azure/cognitive-services/translator/reference/v3-0-translate).

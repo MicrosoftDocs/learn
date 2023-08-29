@@ -1,6 +1,6 @@
 You have an existing search service that a holiday booking app uses. You've seen that the relevance of search results is impacting the number of bookings you're getting. You've also recently added hotels in Portugal so would like to offer Portuguese as a supported language.
 
-In this exercise, you'll add a scoring profile to improve the relevance of search results. Then you'll use Cognitive Services to add Portuguese descriptions for all your hotels.
+In this exercise, you'll add a scoring profile to improve the relevance of search results. Then you'll use Azure AI Services to add Portuguese descriptions for all your hotels.
 
 > [!NOTE]
 >To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
@@ -32,9 +32,9 @@ Import the sample data.
 1. On the **Import data** pane, in **Data source**, select **Samples**. 
 1. Select **hotels-sample**.
 
-    :::image type="content" source="../media/add-cognitive-services.png" alt-text="A screenshot showing selecting adding Cognitive Services.":::
+    :::image type="content" source="../media/add-cognitive-services.png" alt-text="A screenshot showing selecting adding Azure AI Services.":::
 
-1. On the **Add cognitive skills (Optional)** tab, expand **Attach Cognitive Services**, then select **Create new Cognitive Services resource**.
+1. On the **Add cognitive skills (Optional)** tab, expand **Attach Azure AI Services**, then select **Create new Azure AI Services resource**.
 
 #### Create a Cognitive Service to support translations
 
