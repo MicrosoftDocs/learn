@@ -1,7 +1,7 @@
 After designing the workspace architecture, log in to the Azure portal. At the search bar, search for Sentinel, then select **Microsoft Sentinel**.  The Microsoft Sentinel Workspaces shows a list of the current workspaces.  Select the **+ add** button to start the creation process.
 
 > [!NOTE]
-> If you choose to perform the this exercise, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Microsoft Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/). We have also included an interactive lab simulation after the exercise.
+> If you choose to perform this exercise, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Microsoft Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/). We have also included an interactive lab simulation after the exercise.
 
 ## Microsoft Sentinel installation prerequisites
 
