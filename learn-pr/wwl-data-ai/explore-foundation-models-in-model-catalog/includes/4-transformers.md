@@ -54,7 +54,7 @@ To calculate the attention function, the query, keys, and values are all encoded
 
 :::image type="content" source="../media/attention-function.png" alt-text="Screenshot of the attention function.":::
 
-The **dot-product** calculates the angle between vectors, with the product being larger when the vectors are more aligned.
+The **dot-product** calculates the angle between vectors representing tokens, with the product being larger when the vectors are more aligned.
 
 The **softmax** function is used within the attention function, over the scaled dot-product of the vectors, to create a probability distribution with possible outcomes. In other words, the softmax function's output includes which keys are closest to the query. The key with the highest probability is then selected, and the associated value is the output of the attention function.
 
@@ -75,7 +75,7 @@ The most important innovations presented in the Transformer architecture were *p
 
 :::image type="content" source="../media/simplified-transformer-architecture.png" alt-text="Diagram the sentence tokenized to present the most important words in a sentence as individual tokens.":::
 
-- In the encoder layer, an input sequence is encoded with positional encoding, after which multi-head attention is used to create a representation of the text.
-- In the decoder layer, an (incomplete) output sequence is encoded in a similar way, by first using positional encoding and then multi-head attention. Then, the multi-head attention mechanism is used a second time within the decoder to combine the output of the encoder and the output of the encoded output sequence that was passed as input to the decoder part. As a result, the output can be generated.
+- In the **encoder** layer, an input sequence is encoded with positional encoding, after which multi-head attention is used to create a representation of the text.
+- In the **decoder** layer, an (incomplete) output sequence is encoded in a similar way, by first using positional encoding and then multi-head attention. Then, the multi-head attention mechanism is used a second time within the decoder to combine the output of the encoder and the output of the encoded output sequence that was passed as input to the decoder part. As a result, the output can be generated.
 
 The Transformer architecture introduced concepts that drastically improved a model's ability to understand and generate text. Different models have been trained using adaptations of the Transformer architecture to optimize for specific NLP tasks.
