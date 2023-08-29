@@ -26019,6 +26019,11 @@
       "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/6-exercise-install-dotnet.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/3-exercise-install-dotnet",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/10-exercise-troubleshoot-azure-file-sync.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/extend-share-capacity-with-azure-file-sync/10-exercise-check-file-sync",
+      "redirect_document_id": true
+    }    
   ]
 }
