@@ -9,6 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: azure-devops-pipelines
   ms.subservice: azure-devops-pipelines-apps
+  manager: mijacobs
 title: Deploy and maintain cloud-native apps with GitHub actions and Azure Pipelines
 summary: Implement DevOps in cloud-native application scenarios. Use GitHub actions and Azure Pipelines to build and deploy infrastructure and applications.
 abstract: |
