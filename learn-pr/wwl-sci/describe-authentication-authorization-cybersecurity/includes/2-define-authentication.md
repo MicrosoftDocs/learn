@@ -33,7 +33,7 @@ Biometric identification is comprised of physical characteristics that uniquely 
 
 Single-factor authentication is a system where only one authentication type is used, making it the least secure but simplest method.
 
-An example of a this system is when the user provides something they know, such as a password, to authenticate. Simple passwords are straightforward to remember but easy for criminals to hack. Complex passwords might seem more secure, but they'll be impossible to remember. It's more likely that someone will write down this type of password, making it much less secure.
+An example of this system is when the user provides something they know, such as a password, to authenticate. Simple passwords are straightforward to remember but easy for criminals to hack. Complex passwords might seem more secure, but they'll be impossible to remember. It's more likely that someone will write down this type of password, making it much less secure.
 
 Another single-factor authentication method is to use something you have. For example, using your cell phone to pay for an item. A tap-to-pay service authenticates the user through something that they have but doesn't require another verification method.
 
