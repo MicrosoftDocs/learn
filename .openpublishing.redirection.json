@@ -635,7 +635,7 @@
       "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/azure/organize-blobs-properties-metadata/1-introduction.md",
       "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
       "redirect_document_id": false
@@ -24864,7 +24864,7 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/2-exercise-change-user-license-assignments",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/11-create-custom-security-attributes.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/3-create-custom-security-attributes",
       "redirect_document_id": false
@@ -24879,7 +24879,7 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/5-knowledge-check",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/14-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/6-summary-resources",
       "redirect_document_id": false
@@ -25739,8 +25739,6 @@
       "redirect_url": "https://learn.microsoft.com/training/paths/evaluate-iot-scenario-with-iot-central/",
       "redirect_document_id": false
     },
-
-
     {
       "source_path": "learn-pr/azure/configure-admin-consent-workflow/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow/",
