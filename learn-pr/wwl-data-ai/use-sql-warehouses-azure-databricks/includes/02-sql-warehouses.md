@@ -16,7 +16,7 @@ When you create or configure a SQL Warehouse, you can specify the following sett
 - **Cluster size**: Choose from a range of standard sizes to control the number and size of compute resources used to support the SQL Warehouse. Available sizes range from *2X-Small* (a single worker node) to *4X-Large* (256 worker nodes). For more information, see [Cluster size](/azure/databricks/sql/admin/sql-endpoints#cluster-size) in the Azure Databricks documentation.
 - **Auto Stop**: The amount of time the cluster will remain running when idle before being stopped. Idle clusters continue to incur charges when running.
 - **Scaling**: The minimum and maximum number of clusters used to distribute query processing.
-- **Type**: You can create a SQL Warehouse that uses *serverless* compute for fast, cost-effective on-demand provisioning. Alternatively, you can create a *Pro* or *Classic* SQL warehouse
+- **Type**: You can create a SQL Warehouse that uses *serverless* compute for fast, cost-effective on-demand provisioning. Alternatively, you can create a *Pro* or *Classic* SQL warehouse.
 
 > [!NOTE]
 > You can create a SQL Warehouse with any available size, but if you have insufficient quota for the number of cores required to support your choice in the region where Azure Databricks is provisioned, the SQL Warehouse will fail to start.
