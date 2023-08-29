@@ -1,12 +1,12 @@
 The `File` and `Directory` classes in .NET let you create new files and directories programmatically.
 
-So far, you've created a robust command-line application in .NET that can read any folder structure to find files with a .json extension. You'll need to read those files to summarize the data in them. You'll then write the totals to a new file in a new directory called *salesTotals*.
+So far, you've created a robust command-line application in .NET that can read any folder structure to find files with a .json extension. Now, you need to read those files to summarize the data in them. Then, write the totals to a new file in a new directory called *salesTotals*.
 
-In this exercise, you'll create the *salesTotalDir* directory and the *totals.txt* file where the sales totals will eventually go.
+In this exercise, you create the *salesTotalDir* directory and the *totals.txt* file where the sales totals are collated.
 
 ## Create the SalesTotals directory
 
-1. In the `Program.cs` file, remove the `foreach` loop that iterates and writes each filename returned from the `FindFiles` function to the *Console* output. This will result in the `salesFiles` variable going unused. We'll leave it in here for now because it will be used again in a future lesson.
+1. In the `Program.cs` file, remove the `foreach` loop that iterates and writes each filename returned from the `FindFiles` function to the *Console* output. This change results in the `salesFiles` variable going unused. However, we'll leave it in here for now because it will be used again in a future lesson.
 
 1. In the `Program.cs` file, create a variable called `salesTotalDir`, which holds the path to the *salesTotalDir* directory:
 
@@ -59,7 +59,7 @@ In this exercise, you'll create the *salesTotalDir* directory and the *totals.tx
 
     :::image type="content" source="../media/refresh-file-explorer.png" alt-text="Screenshot of the Refresh icon in the Files explorer of the Cloud Shell editor.":::
 
-You're almost finished. The last step is to read the sales files, add up the totals, and write the grand total to the new *totals.txt* file. Next, you'll learn how to read and parse data inside files.
+You're almost finished. The last step is to read the sales files, add up the totals, and write the grand total to the new *totals.txt* file. Next, you learn how to read and parse data inside files.
 
 ## Got stuck?
 

@@ -2,11 +2,11 @@ The .NET `Path` class and `Directory.GetCurrentDirectory` are two ways to define
 
 In the previous exercise, you wrote a program that iterates through a folder to find any of the *sales.json* files in it or any subfolders.
 
-In this exercise, you'll use the `Path` class and `Directory.GetCurrentDirectory` to improve the program so it will find *any* file with a .json extension.
+In this exercise, you use the `Path` class and `Directory.GetCurrentDirectory` to improve the program so it finds *any* file with a .json extension.
 
 ## Use the current directory and combine paths
 
-In the current Program.cs code, you're passing the static location of the *stores* folder. We'll change that code to use the `Directory.GetCurrentDirectory` value instead of passing a static folder name.
+In the current Program.cs code, you're passing the static location of the *stores* folder. Now, we change that code to use the `Directory.GetCurrentDirectory` value instead of passing a static folder name.
 
 1. In the editor, insert the following code above the first line of `Program.cs` file. This code uses the `Directory.GetCurrentDirectory` method to obtain the path for the current directory and store it in a new variable `currentDirectory`:
 
@@ -75,7 +75,7 @@ Instead of looking for only *sales.json* files, the program needs to search for 
            if (extension == ".json")
     ```
 
-    The `foreach` loop should look similar to the following:
+    The `foreach` loop should look similar to the following code:
   
     ```csharp
     foreach (var file in foundFiles)
