@@ -1,4 +1,4 @@
-You want to start writing code that retrieves metrics about your video app storage account from Azure Monitor. To do this, you must create a service principal for your app in the Azure Active Directory. You'll then configure the correct security information in the app, and write the code that lists metric definitions.
+You want to start writing code that retrieves metrics about your video app storage account from Azure Monitor. First, you must create a service principal for your app in the Azure Active Directory. Then, you configure the correct security information in the app, and write the code that lists metric definitions.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use the Azure Storage .NET API to create applications that can retrieve metrics.
@@ -10,7 +10,7 @@ To begin creating your application, use git to clone the sample application code
 
 1. In the Azure portal, select **Cloud Shell (&gt;_)** on the toolbar at the top of the window, and, if prompted, select the **Bash** shell option.
 
-1. Run the following command to create a folder for the new console application in the root of your cloud shell.
+1. Run the following command to create a folder for the new console application in the root of your Cloud Shell.
 
     ```bash
     mkdir ~/metricapp
@@ -30,47 +30,49 @@ To begin creating your application, use git to clone the sample application code
 
 ## Create a service principal and access key for the new app
 
-To grant your app permission to access Azure Monitor metrics, you must create a service principal in the Azure Active Directory. When your app identifies itself to Azure, it will use an access key. To create a service principal and access key, follow these steps:
+To grant your app permission to access Azure Monitor metrics, you must create a service principal in the Azure Active Directory. When your app identifies itself to Azure, it uses an access key. To create a service principal and access key, follow these steps:
 
 1. Go to the [Azure portal](https://portal.azure.com/), and in the left nav bar, select **Azure Active Directory.**
 
-1. In the **Azure Active Directory** pane, under **Manage**, select **App registrations**.
+1. In the left nav bar, under the **Manage** section, select **App registrations**
 
-    ![Screenshot of the Azure Active Directory navigation options with the app registrations option highlighted.](../media/5-access-app-registrations.png)
+    :::image type="content" source="../media/5-access-app-registrations.png" alt-text="Screenshot of the Azure Active Directory navigation options with the app registrations option highlighted.":::
 
-1. Select  **New application registration**.
+1. Select **+ New registration**. The **Register an application** window appears.
 
 1. In the **Name** textbox, enter **metricapp**.
 
-1. In the **Application type** dropdown, select **Web app/API**.
+1. For **Supported account types**, select **Accounts in this organizational directory only (Microsoft only - Single tenant)**.
 
-1. In the **Sign-on URL**, enter **https://contoso.org/metricapp**, and then select **Create**.
+1. For **Redirect URI**, select **Web** in the dropdown, and enter **https://contoso.org/metricapp** for the redirect URI. 
 
-    ![Screenshot of the create pane with the create button highlighted.](../media/5-create-app-registration.png)
+1. Select **Register**.
 
-1. On the **metricapp** registration page, make a note of the **Application ID**, and then select **Settings**.
+    :::image type="content" source="../media/5-create-app-registration.png" alt-text="Screenshot of the Register an application with the Register button highlighted.":::
 
-1. Under **API Access**, select **Keys**.
+1. On the **metricapp** registration page, make a note of the **Directory (tenant) ID**. This GUID uniquely identifies the Active Directory that contains the service principal and is also referred to as the **Tenant ID**.
 
-1. In the **Passwords** section, enter **metricskey** in the **Key description** textbox.
+1. Under **Manage**, select **Certificates & secrets**.
 
-1. In the **Expires** dropdown, select **In 1 Year**.
+1. Select **+ New client secret**. In the **Add a client secret** pane, enter **metricskey** in the **Description** textbox.
 
-1. Select **Save**.
+1. In the **Expires** dropdown, select **180 days (6 months)**.
 
-    ![Screenshot of the keys pane with the save button highlighted.](../media/5-configure-access-key.png)
+1. Select **Add**.
 
-    Make a note of the key in the **VALUE** column.
+    :::image type="content" source="../media/5-configure-access-key.png" alt-text="Screenshot of the Add a client secret pane with the Add button highlighted.":::
+
+1. On the **Certificates & secrets** screen, be sure and save the **Value** of the client secret.
 
 ## Determine the tenant ID for your app
 
-When your app identifies itself to Azure, it will also need to provide a tenant ID, which is also called a directory ID. To determine your tenant ID, follow these steps:
+When your app identifies itself to Azure, it also needs to provide a tenant ID, which is also called a directory ID. To determine your tenant ID, follow these steps:
 
 1. Go to the [Azure portal](https://portal.azure.com/), and in the left nav bar, select **Azure Active Directory**.
 
 1. Under **Manage**, select **Properties**.
 
-    Make a note of the **Directory ID** value; this is the tenant ID for your app.
+    Make a note of the **Tenant ID** value; this value is the tenant ID for your app.
 
 ## Determine your resource group and subscription IDs and assign the app to a role
 
@@ -80,9 +82,9 @@ You must now add the app service principal to a role, so that the app has permis
 
 1. On the resource group page, select **Overview**.
 
-1. Copy the name of your resource group and your **Subscription ID**; you will use these values when you modify your application code.
+1. Copy the name of your resource group and your **Subscription ID**; you use these values when you modify your application code.
 
-1. Select **Access control (IAM)** in the menu.
+1. In the left nav bar, select **Access control (IAM)**.
 
 1. Select **+ Add**, and then select **Add a role assignment**.
 
@@ -100,7 +102,7 @@ You must now add the app service principal to a role, so that the app has permis
 
 Now that the app service principal has been created and configured, you can complete the app's code:
 
-1. In the Cloud Shell on the right, to ensure you are in the correct folder, run the following command, and then press <kbd>Enter</kbd>.
+1. In the Cloud Shell, to ensure you are in the correct folder, run the following command, and then press <kbd>Enter</kbd>.
 
     ```bash
     cd ~/metricapp/starter
@@ -159,7 +161,7 @@ Now, you must ensure that the app uses the security details you configured and n
     string applicationID = "";
     ```
 
-1. Locate the following line of code, and add the access key you determined earlier within the quotes.
+1. Locate the following line of code, and add the client secret value you determined earlier within the quotes.
 
     ```c#
     string accessKey = "";
@@ -191,12 +193,12 @@ You can now write the code that retrieves a list of metric definitions for the s
     }
     ```
 
-1. To close the code editor, select **...** on the right, and then select **Close code editor**.
+1. To save your changes close the code editor, select **...** on the right, select **Save** and then select **Close Editor**.
 
-1. To run your application, run the follow command, and then press <kbd>Enter</kbd>.
+1. To run your application, run the following command, and then press <kbd>Enter</kbd>.
 
     ```bash
     dotnet run
     ```
 
-    Your application will compile and execute, and a list of metric definitions in the console window will appear.
+    Your application compiles and executes, and a list of metric definitions in the console window appears.
