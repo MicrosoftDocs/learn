@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.render-api-responses-razor-pages.explore-asp-core-razor-pages
+title: Explore Razor Pages project structure
+metadata:
+  title: Explore Razor Pages project structure
+  description: "Explore Razor Pages project structure"
+  ms.date: 08/29/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-explore-asp-core-razor-pages.md)]
