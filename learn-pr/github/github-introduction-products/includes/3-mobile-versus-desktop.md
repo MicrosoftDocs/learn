@@ -26,5 +26,5 @@ Here are a few of the many things you can do with GitHub Desktop:
 - Add and clone repositories.
 - Add changes to your commit interactively.
 - Quickly add co-authors to your commit.
-- Checkout branches with pull requests and view CI statuses.
+- Check out branches with pull requests and view CI statuses.
 - Compare changed images.
