@@ -10,8 +10,8 @@ Now that you have finished this module, you should be able to:
 
 To avoid consuming all your monthly GitHub Codespaces time, it's important to delete all your resources after you've uploaded your changes to your repository. Therefore, we'll guide you in removing your resources as follows:
 
-1. Go to this link https://github.com/codespaces 
-1. Find your Codespace instance from the list and select on the three dots menu to display your options. 
+1. Go to this link https://github.com/codespaces
+1. Find your Codespace instance from the list and select on the three dots menu to display your options.
 1. Select “delete” to remove your Codespace instance.
 
 >[!Note]
@@ -19,6 +19,7 @@ To avoid consuming all your monthly GitHub Codespaces time, it's important to de
 
 ## References
 
-* Introduction to GitHub Copilot - Training | Microsoft Learn 
-* Code with GitHub Codespaces - Training | Microsoft Learn 
-* Python for beginners - Training | Microsoft Learn 
+* [What is GitHub Copilot?](https://learn.microsoft.com/shows/introduction-to-github-copilot/what-is-github-copilot-1-of-6?WT.mc_id=academic-105743-bethanycheum )
+* [Introduction to GitHub Copilot](https://learn.microsoft.com/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105778-alfredodeza)
+* [Code with GitHub Codespaces](https://learn.microsoft.com/training/modules/code-with-github-codespaces/?WT.mc_id=academic-105779-alfredodeza)
+* [Python for beginners](https://learn.microsoft.com/training/paths/beginner-python/?WT.mc_id=academic-105781-alfredodeza)
