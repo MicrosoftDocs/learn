@@ -35,7 +35,8 @@ Before we dive deeper into eventstream, it's important to understand the design 
 4. **Configuration and modification pane**: This pane allows you to configure or modify a specific source or destination.
 5. **Bottom pane for information, data preview, data insights, and runtime logs**: For each tile or node, the data preview shows you data inside the selected tile or node.
 
-> [NOTE] This bottom pane also summarizes runtime logs where the runtime logs exist in certain sources or destinations. It also provides metrics for you to monitor the data insights for certain sources or destinations, such as input events, output events, incoming messages, outgoing messages, etc.
+> [!NOTE]
+> This bottom pane also summarizes runtime logs where the runtime logs exist in certain sources or destinations It also provides metrics for you to monitor the data insights for certain sources or destinations, such as input events, output events, incoming messages, outgoing messages, etc.
 
 ## The benefits of eventstream
 

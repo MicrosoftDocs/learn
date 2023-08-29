@@ -4,11 +4,67 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/28/2023
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.service: fabric
 durationInMinutes: 6
-content: |
-  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are the three types of event sources available in EventStream?"
+    choices:
+    - content: "Azure Functions, Azure Stream Analytics, Apache Spark"
+      isCorrect: false
+      explanation: "Incorrect. These are services that can use Azure Event Hubs as an event source."
+    - content: "Azure Event Hubs, Sample data, Custom app"
+      isCorrect: true
+      explanation: "Correct. These are the three types of event sources available in EventStream."
+    - content: "IoT, Retail, Finance"
+      isCorrect: false
+      explanation: "Incorrect. These are sample data sets that can be used as an event source."
+  - content: "What is the first step to create an event source in EventStream?"
+    choices:
+    - content: "Select a consumer group for your source"
+      isCorrect: false
+      explanation: "Incorrect. This is done after you select your source type."
+    - content: "Choose a data format for your event data"
+      isCorrect: false
+      explanation: "Incorrect. This is done after you select your source type and cloud connection."
+    - content: "Change your Fabric experience to Real-time Analytics and select Eventstream to create a new eventstream"
+      isCorrect: true
+      explanation: "Correct. This is the first step to create an event source in EventStream."
+  - content: "What is Microsoft Fabric Eventstream?"
+    choices:
+    - content: "A feature that lets you capture and send real-time events to different places without writing any code."
+      isCorrect: true
+      explanation: "Correct. Microsoft Fabric Eventstream is a no-code feature that lets you work with real-time events in a simple way."
+    - content: "A feature that lets you work with real-time events in a complex way."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Fabric Eventstream is designed to be simple and no-code."
+    - content: "A feature that lets you work with batch data in a simple way."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Fabric Eventstream is designed to work with real-time data."
+  - content: "What are the main components of Microsoft Fabric Eventstream?"
+    choices:
+    - content: "Eventstream, Source, Destination, and Main Editor."
+      isCorrect: true
+      explanation: "Correct. The main components of Microsoft Fabric Eventstream are Eventstream, Source, Destination, and Main Editor."
+    - content: "Eventstream, Source, Destination, and Pipeline."
+      isCorrect: false
+      explanation: "Incorrect. There is no component called Pipeline in Microsoft Fabric Eventstream."
+    - content: "Eventstream, Source, Destination, and Editor."
+      isCorrect: false
+      explanation: "Incorrect. The editor is not a component of Microsoft Fabric Eventstream, but rather a tool to design your pipeline."
+  - content: "What are some benefits of using Microsoft Fabric Eventstream?"
+    choices:
+    - content: "Microsoft Fabric Eventstream only supports sending data to one destination."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Fabric Eventstream supports sending data to multiple destinations."
+    - content: "Microsoft Fabric Eventstream is a complex feature that requires coding skills."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Fabric Eventstream is designed to be simple and no-code."
+    - content: "Microsoft Fabric Eventstream lets you capture, transform, and route real-time events to various destinations with a no-code experience."
+      isCorrect: true
+      explanation: "Correct. Microsoft Fabric Eventstream is designed to be simple and no-code. It gives you various source connectors to get event data from different sources, such as Azure Event Hubs, sample data, or custom app. It supports sending data to different destinations, such as lakehouse, KQL database, or custom app. It uses a scalable infrastructure that manages scaling and resourcing automatically. It connects your eventstreams have full interoperability with Azure services like Event Hubs, KQL databases, and lakehouses."

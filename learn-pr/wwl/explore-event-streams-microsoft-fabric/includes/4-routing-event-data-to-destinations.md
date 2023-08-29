@@ -5,7 +5,8 @@ To add an eventstream destination in Microsoft Fabric, you need to follow these 
 - Select New destination on the ribbon or ![new button in main editor](../media/new-button-main-editor.png) in the main editor canvas and then select the type of destination you want to add. The types of destinations that you can add to your eventstream are KQL Database, Lakehouse, Custom App, and Reflex. See the Supported destinations section for details.
 - Enter a destination name, select a workspace, and choose a destination from the selected workspace. Then select Add and configure.
 
-> ![NOTE: Make sure to read any notes that might appear on the configuration panel that appears after selecting your destination type]
+> [!NOTE]
+> Make sure to read any notes that might appear on the configuration panel that appears after selecting your destination type.
 
 - On the Ingest data page, navigate through the four tabs, which include:
   - Destination: Use an existing table of your KQL database or create a new one to route and ingest your real-time data.
