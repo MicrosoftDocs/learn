@@ -16,7 +16,7 @@ abstract: |
   *   Describe authorization security techniques
 prerequisites: |
   None
-iconUrl: /learn/achievements/cybersecurity-authentication-authorization.svg
+iconUrl: /training/achievements/cybersecurity-authentication-authorization.svg
 levels:
 - beginner
 roles:

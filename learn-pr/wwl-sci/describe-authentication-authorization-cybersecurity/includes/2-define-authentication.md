@@ -4,7 +4,7 @@ When you want to access a computer or device, you'll encounter the same type of 
 
 Strong authentication methods are essential to maintaining good cybersecurity and ensure that only authorized users can gain access to confidential data and resources.
 
-While authentication will verifying the user, it doesn't govern what a user can do once they've been authenticated. Control over what a user can do is called authorization and we'll cover that later in this module.
+While authentication will verify the user, it doesn't govern what a user can do once they've been authenticated. Control over what a user can do is called authorization and we'll cover that later in this module.
 
 ## Authentication methods
 
