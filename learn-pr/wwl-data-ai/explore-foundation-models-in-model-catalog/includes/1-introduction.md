@@ -2,7 +2,7 @@
 
 ## Understand artificial intelligence
 
-:::image type="content" source="../media/overview-deep-learning.png" alt-text="Diagram visualizing the relationship between artificial intelligence, machine learning, and deep learning.":::
+:::image type="content" source="../media/overview-hierarchy.png" alt-text="Diagram visualizing the relationship between artificial intelligence, machine learning, and deep learning.":::
 
 1. The purpose of **artificial intelligence** (**AI**)is for computers or machines to perform tasks with human-like intelligence.
 1. A popular approach nowadays to approach artificial intelligence is through **machine learning**, a subfield that gives computers the ability to learn without being explicitly programmed.
