@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-http-operations-asp-razor.explore-http-clients
+title: 'Explore HTTP clients in .NET Core '
+metadata:
+  title: Explore HTTP clients in .NET Core
+  description: "Explore HTTP clients in .NET Core"
+  ms.date: 08/29/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-http-clients.md)]

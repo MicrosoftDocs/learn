@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.implement-http-operations-asp-razor
+metadata:
+  title: Implement HTTP operations in ASP.NET Razor Pages
+  description: "Learn how to implement HTTP clients and perform HTTP operations in ASP.NET Core Razor Pages."
+  ms.date: 08/29/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+title: Implement HTTP operations in ASP.NET Razor Pages
+summary: |
+  Learn how to implement HTTP clients and perform HTTP operations in ASP.NET Core Razor Pages.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+abstract: |
+  After completing this module, you'll be able to:
+  * Implement HTTP clients in .NET Core
+  * Use HTTP clients to perform safe and unsafe operations
+  * Add code to support HTTP operations in an ASP.NET Core Razor Pages app
+prerequisites: |
+  *   Experience writing C# at an intermediate level
+  *   Knowledge of RESTful services and HTTP action verbs
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- aspnet-core
+- dotnet
+subjects:
+- development-tools
+units:
+- learn.wwl.implement-http-operations-asp-razor.introduction
+- learn.wwl.implement-http-operations-asp-razor.explore-http-clients
+- learn.wwl.implement-http-operations-asp-razor.make-http-requests
+- learn.wwl.implement-http-operations-asp-razor.exercise-implement-http-requests-asp-razor
+- learn.wwl.implement-http-operations-asp-razor.knowledge-check
+- learn.wwl.implement-http-operations-asp-razor.summary
+badge:
+  uid: learn.wwl.implement-http-operations-asp-razor.badge
