@@ -4,16 +4,15 @@ title: Understand KQL database and tables
 metadata:
   title: Understand KQL database and tables
   description: "Understand KQL database and tables"
-  ms.date: 05/10/2023
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: powerbi
+  ms.service: fabric
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
 durationInMinutes: 5
 content: |
   [!include[](includes/3-describe-kusto-databases-tables.md)]

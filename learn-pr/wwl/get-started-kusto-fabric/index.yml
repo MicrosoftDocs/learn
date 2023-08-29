@@ -3,16 +3,15 @@ uid: learn.wwl.get-started-kusto-fabric
 metadata:
   title: Get started with Real-Time Analytics in Microsoft Fabric
   description: "Get started with Real-Time Analytics in Microsoft Fabric"
-  ms.date: 05/10/2023
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: fabric
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+  ms.service: fabric
 title: Get started with Real-Time Analytics in Microsoft Fabric
 summary: Analysis of real-time data streams is a critical capability for any modern data analytics solution. You can use the Real-Time Analytics capabilities of Microsoft Fabric to ingest, query, and process streams of data.
 abstract: |
