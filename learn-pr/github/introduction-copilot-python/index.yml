@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: |
+  learn.github-copilot-with-python
+metadata:
+  title: |
+    Using GitHub Copilot with Python
+  description: "TODO"               # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 8/23/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: bethanyjep
+  ms.author: bethanycheum
+  ms.topic: interactive-tutorial
+  ms.prod: github
+title: |
+  Using GitHub Copilot with Python
+summary: "Use GitHub Copilot, an AI pair programmer that offers autocomplete-style suggestions as you code, to work with Python"
+abstract: |
+  By the end of this module, you'll be able to:
+    - Enable the GitHub Copilot extension in Visual Studio Code.
+    - Craft prompts that can generate useful suggestions from GitHub Copilot.
+    - Use GitHub Copilot to improve a Python project.
+prerequisites: |
+  - Basic understanding of Python, like variables and conditionals
+  - Ability to use Git and GitHub for version control
+  - Access to the GitHub Copilot service
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
+products:
+  - github
+subjects:
+  - devops
+  - development-tools
+units:
+- learn.github-copilot-with-python.introduction
+- learn.github-copilot-with-python.what-is-github-copilot
+- learn.github-copilot-with-python.exercise-setup
+- learn.github-copilot-with-python.use-copilot-with-python
+- learn.github-copilot-with-python.exercise-web-api
+- learn.github-copilot-with-python.knowledge-check
+- learn.github-copilot-with-python.summary
+
+badge:
+  uid: |
+    learn.github-copilot-with-python.badge

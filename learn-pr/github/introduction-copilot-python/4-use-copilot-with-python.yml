@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github-copilot-with-python.use-copilot-with-python
+title: use-copilot-with-python
+metadata:
+  title: use-copilot-with-python
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 8/23/2023
+  author: bethanyjep
+  ms.author: bethanycheum
+  ms.topic: interactive-tutorial
+  ms.prod: github
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-use-copilot-with-python.md)]
