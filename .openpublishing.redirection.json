@@ -25738,8 +25738,6 @@
       "redirect_url": "https://learn.microsoft.com/training/paths/evaluate-iot-scenario-with-iot-central/",
       "redirect_document_id": false
     },
-
-
     {
       "source_path": "learn-pr/azure/configure-admin-consent-workflow/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow/",
@@ -26018,6 +26016,61 @@
     {
       "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/6-exercise-install-dotnet.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/3-exercise-install-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/2-identify-sso-support.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/3-exercise-add-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/4-sso-configuration-idp.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/5-exercise-configure-sso-idp.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/6-sso-configuration-sp.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/7-exercise-configure-sso-sp.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/8-verify-sso-configuration.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
       "redirect_document_id": false
     }
   ]
