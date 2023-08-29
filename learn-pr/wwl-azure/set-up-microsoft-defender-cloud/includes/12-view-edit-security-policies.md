@@ -5,7 +5,7 @@ There are two specific roles for Defender for Cloud:
  -  **Security Administrator**: Has the same view rights as security reader. Can also update the security policy and dismiss alerts.
  -  **Security reader**: Has rights to view Defender for Cloud items such as recommendations, alerts, policy, and health. Can't make changes.
 
-:::image type="content" source="../media/security-roles-view-edit-security-policies-fe222b50.png" alt-text="Diagram showing which security role can view, update, and dismiss alerts.":::
+:::image type="content" source="../media/security-roles-view-and-edit-security-policies-4ad099ce.jpg" alt-text="Diagram showing which security role can view, update, and dismiss alerts.":::
 
 
 You can edit security policies through the **Azure Policy portal** via **Representational State Transfer Application Programming Interface (REST API)** or using **Windows PowerShell**.

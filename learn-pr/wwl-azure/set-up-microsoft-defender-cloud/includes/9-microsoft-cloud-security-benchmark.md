@@ -15,9 +15,6 @@ Microsoft cloud security benchmark is the successor of **Azure Security Benchmar
  -  Providing consistent user experience for monitoring and enforcing the multi-cloud security benchmark in Defender for Cloud
  -  Staying aligned with Industry Standards (e.g., CIS, NIST, PCI)
 
-:::image type="content" source="../media/mcsb-vs-other-framework-example-f9cfed4d.jpg" alt-text="Diagram showing an example of the Multicloud security framework and Automated control monitoring standards matrix.":::
-
-
 **Automated control monitoring for AWS in Microsoft Defender for Cloud**: You can use Microsoft Defender for Cloud Regulatory Compliance Dashboard to monitor your AWS environment against MCSB just like how you monitor your Azure environment. We developed approximately 180 AWS checks for the new AWS security guidance in MCSB, allowing you to monitor your AWS environment and resources in Microsoft Defender for Cloud.
 
 **Example: Microsoft Defender for Cloud - Regulatory compliance dashboard**
