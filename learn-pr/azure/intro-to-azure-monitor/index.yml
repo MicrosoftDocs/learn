@@ -90,7 +90,7 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  Basic knowledge and understanding of the following processes:
+  Basic knowledge and understanding of the following concepts:
     - Azure portal navigation and resource management
     - Application and resource scaling and performance
 ###########################################################################

@@ -1,4 +1,4 @@
-Monitoring provides data and insights about many aspects of IT performance, security, and health. Azure Monitor provides a single source for monitoring all your Azure platform services and resources. This learning module gives you an overview of Azure Monitor, describes key Azure Monitor components, and helps you understand how to implement Azure Monitor for your Azure applications and infrastructure.
+Monitoring provides data and insights about many aspects of IT performance, security, and health. Azure Monitor provides a single source for monitoring all your Azure platform services and resources. This learning module gives you an overview of Azure Monitor, describes key Azure Monitor components, and helps you understand how to implement Azure Monitor for all your Azure applications and infrastructure.
 
 :::image type="content" source="../media/monitoring-panel-options-small.png" alt-text="Screenshot of monitoring options in the Azure portal." lightbox="../media/monitoring-panel-options.png":::
 
@@ -15,7 +15,7 @@ Scalability isn't the only reason to host workloads on Azure, and deploying reso
 
 ## Prerequisites
 
-Basic knowledge and understanding of the following processes:
+Basic knowledge and understanding of the following concepts:
 
 - Azure portal navigation and resource management
 - Application and resource scaling and performance

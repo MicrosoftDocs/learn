@@ -1,4 +1,4 @@
-Your Azure applications and infrastructure might use several resources and services, like virtual machines (VMs), databases, web hosting services, and payment gateways. In this unit, you learn about the key Azure Monitor features that monitor the health, behavior, and performance of your Azure applications, resources, networks, and infrastructure.
+Your Azure applications and infrastructure might use several resources and services, like virtual machines (VMs), databases, web hosting services, and payment gateways. In this unit, you learn about the key Azure Monitor features that monitor the health, behavior, and performance of your Azure applications, networks, and infrastructure.
 
 Azure Monitor provides two types of data that are essential for understanding application and resource behavior and performance: Azure Monitor Metrics and Azure Monitor Logs.
 

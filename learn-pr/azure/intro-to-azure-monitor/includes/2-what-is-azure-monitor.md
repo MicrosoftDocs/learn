@@ -1,4 +1,4 @@
-This unit gives you an overview of monitoring and Azure Monitor. You learn about Azure Monitor capabilities that are important for the success of your Azure applications and resources.
+This unit gives you an overview of monitoring and Azure Monitor. You learn about Azure Monitor capabilities that are important for the successful operation of your Azure applications and resources.
 
 ## Introduction to monitoring
 

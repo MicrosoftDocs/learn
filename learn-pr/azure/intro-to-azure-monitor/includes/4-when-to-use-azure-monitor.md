@@ -10,7 +10,7 @@ Azure Monitor includes many types of Insights. In the Azure portal, select **Ins
 
 The following sections describe some of the largest, most common Azure Monitor Insights.
 
-## Application Insights
+### Application Insights
 
 The Application Insights feature of Azure Monitor provides application performance monitoring (APM) from app development, through test, and into production. You can *proactively* monitor to see how well an application is performing, and *reactively* review application execution data to find the cause of an incident.
 
@@ -46,13 +46,13 @@ Visualizations such as charts and tables are effective tools for summarizing mon
 
 The following sections describe some Azure Monitor and external tools for visualizing and presenting monitoring data.
 
-### Azure Monitor Workbooks
+### Workbooks
 
 Workbooks provide a flexible canvas for analyzing data and creating rich visual reports in the Azure portal. Workbooks can query data from multiple data sources and combine and correlate data from multiple data sets in one visualization, giving you easy visual representation of your system. Workbooks are interactive, with data updating in real time, and can be shared across teams.
 
 You can use the workbooks that Azure Monitor Insights provide, use the workbook template library, or create your own workbooks. In the Azure portal, select **Workbooks** in the Azure Monitor left navigation to see and access the available workbooks and templates.
 
-### Azure Dashboards
+### Dashboards
 
 Dashboards let you combine different kinds of data into a single pane in the Azure portal. You can add the output of any log query or metrics chart to an Azure dashboard, and optionally share the dashboard with other Azure users. For example, you could create a dashboard that shows a graph of metrics, a table of activity logs, and a usage chart from Application Insights.
 
