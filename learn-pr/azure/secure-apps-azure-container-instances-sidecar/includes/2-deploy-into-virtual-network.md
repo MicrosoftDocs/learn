@@ -1,4 +1,6 @@
-In this unit, you create an Azure Container Instances container inside of a virtual network, so the containerized application is accessible only to a customer with virtual network access. The application consists of an API that accesses an external database, which you deploy as an Azure SQL database. Because the application is reachable only from inside the virtual network, you create a test virtual machine (VM) as a jump host to simulate customer access and verify that the application is working.
+In this unit, you create an example application in an Azure Container Instances container to represent the customer's API. The application consists of an API that accesses an external database, which you deploy as an Azure SQL database.
+
+You create the containerized application inside of a virtual network, so the app is accessible only to a customer with virtual network access. Because the application is reachable only from inside the virtual network, you create a test virtual machine (VM) as a jump host to simulate customer access and verify that the application is working.
 
 Virtual networks are isolated networking segments where you can deploy workloads so they're only accessible privately, or optionally also over the public internet. Virtual networks typically host VMs, but you can also deploy other Azure resources like container instances to virtual networks.
 
@@ -18,7 +20,7 @@ The following diagram shows the topology you deploy in this unit:
 
    :::image type="content" source="../media/2-portal-cloudshell-access.png" alt-text="Screenshot of the Azure portal header with the Cloud Shell icon highlighted.":::
 
-1. Enter the following code in the Cloud Shell to define variables for this unit. You can replace the `location` value with an Azure region nearer you.
+1. Enter the following code in the Cloud Shell to define variables for this unit. You can optionally replace the `location` value with an Azure region nearer you.
 
     ```bash
     # Variables
@@ -54,6 +56,13 @@ The following diagram shows the topology you deploy in this unit:
     exit
     ```
 
+   >[!IMPORTANT]
+   >You must install Azure CLI on the remote VM. To do that, run the following command on the VM after you connect:
+   >
+   >```bash
+   >curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+   >```
+
 1. Run the following Azure CLI commands to create the database that the application connects to. In this example, you use the smallest Azure SQL Database SKU (Basic) to reduce costs. This size isn't recommended for production environments.
 
     ```azurecli
@@ -74,7 +83,7 @@ Now that you have all the required components, you can deploy the Azure containe
 1. Run the following Azure CLI command to deploy the Azure container instance. Retry the command if you get an error on the first attempt.
 
     ```azurecli
-    # Create ACI in a new subnet
+    # Create container instance in a new subnet
     az network vnet subnet create -g $rg --vnet-name $vnet_name -n $aci_subnet_name --address-prefix $aci_subnet_prefix
     vnet_id=$(az network vnet show -n $vnet_name -g $rg --query id -o tsv)
     aci_subnet_id=$(az network vnet subnet show -n $aci_subnet_name --vnet-name $vnet_name -g $rg --query id -o tsv)

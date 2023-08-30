@@ -3,7 +3,7 @@ uid: learn.azure.azure-container-instances-sidecar
 metadata:
   title: Use Azure Container Instances sidecar containers and private addressing
   description: Learn to use YAML to define container instances, add functionality with sidecar and initialization containers, and use Azure Private Link for greater security.
-  ms.date: 08/22/2023
+  ms.date: 08/28/2023
   author: erjosito
   ms.author: jomore
   ms.topic: interactive-tutorial

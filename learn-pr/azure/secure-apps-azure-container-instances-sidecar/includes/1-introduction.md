@@ -32,4 +32,4 @@ In this module, you implement the following Container Instances capabilities:
 Access to an Azure subscription with permission to create resources and assign roles. If you don't already have an Azure subscription, you can [create a free account](https://azure.microsoft.com/free/).
 
 - If you use an existing Azure subscription, you might incur charges.
-- To create the service principal in Unit 6, you must have at least **User Access Administrator** role in the Azure subscription. Subscription ownership or **Owner** role includes this role.
+- To create the service principal in Unit 6, you must have at least **User Access Administrator** role in the Azure subscription. Subscription ownership includes this role.
