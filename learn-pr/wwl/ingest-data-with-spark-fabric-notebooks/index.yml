@@ -2,7 +2,7 @@
 uid: learn.wwl.ingest-data-with-spark-fabric-notebooks
 metadata:
   title: Ingest data with Spark and Microsoft Fabric notebooks
-  description: "Ingest data with Spark and Microsoft Fabric notebooks"
+  description: "Discover how to use Apache Spark and Python for data ingestion into a Microsoft Fabric lakehouse. Fabric notebooks provide a scalable and systematic solution."
   ms.date: 08/30/2023
   author: wwlpublish
   ms.author: anrudduc
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ms.service: fabric
 title: Ingest data with Spark and Microsoft Fabric notebooks
-summary: Discover how to use Spark and Fabric notebooks to ingest external data to a Microsoft Fabric lakehouse.
+summary: Discover how to use Apache Spark and Python for data ingestion into a Microsoft Fabric lakehouse. Fabric notebooks provide a scalable and systematic solution.
 abstract: |
   By the end of this module, you’ll be able to:
   *   Ingest external data to Fabric lakehouses using Spark

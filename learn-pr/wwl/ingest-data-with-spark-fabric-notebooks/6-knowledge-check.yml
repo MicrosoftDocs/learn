@@ -36,7 +36,7 @@ quiz:
     - content: "V-Order and Optimize Write create many small csv files."
       isCorrect: false
       explanation: "Incorrect. Fewer, larger Parquet files are created."
-  - content: "Why should you consider basic data cleansing when loading data into Fabric lakehouse?"
+  - content: "Why consider basic data cleansing when loading data into Fabric lakehouse?"
     choices:
     - content: "To reduce data load size and processing time."
       isCorrect: false
