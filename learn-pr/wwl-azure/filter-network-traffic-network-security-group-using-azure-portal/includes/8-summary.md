@@ -1,4 +1,3 @@
-
 In completing this module, you'll gain the expertise needed to effectively filter network traffic with a network security group using the Azure portal, an essential task for maintaining secure and efficient network operations.
 
 Upon completion of this module, you should be able to:
