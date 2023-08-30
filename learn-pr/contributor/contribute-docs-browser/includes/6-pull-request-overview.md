@@ -53,3 +53,9 @@ Remember, your PR must be merged by a PR reviewer before the changes can be incl
 After your contributions are approved and merged, the publishing process picks them up. Depending on the team that manages the repository you’re contributing to, publishing times can vary, but they typically occur at least once every weekday. It can take up to 45 minutes for articles to appear online after publishing. 
 
 Once your changes are published, they go live on Microsoft Learn for others to start learning from! 
+
+## Scenario: Publish changes to Azure App Service 
+
+Using your past experience, you spotted an opportunity to add some helpful information to an App Service documentation page and created a PR to add your changes. You're now ready to review and sign off on your PR to publish your edits. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=040d0125-a713-456b-a0d4-8df4de39dc66]
