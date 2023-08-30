@@ -1767,8 +1767,378 @@ achievements:
   title: Create a Linux virtual machine in Azure
   summary: In this module, we discuss how to create a Linux virtual machine using the Azure portal.
   iconUrl: /training/achievements/create-linux-virtual-machine-in-azure.svg
+- uid: learn.wwl.sc-100-recommend security best practices.trophy
+  type: trophy
+  title: 'SC-100: Recommend Security Best Practices'
+  summary: You'll learn how to use critical Microsoft security best practices to improve an organizations security posture, apply zero trust principles and minimize risk from emerging attacks.
+  iconUrl: /training/achievements/sc-100-recommend-security-best-practices.svg
+- uid: learn.wwl.sc-100-evaluate-governance-risk-compliance.trophy
+  type: trophy
+  title: 'SC-100: Evaluate Governance Risk Compliance (GRC) technical strategies and security operations strategies'
+  summary: Learn how to evaluate cybersecurity strategies for Governance and Risk Compliance as well as security operations (SecOps).
+  iconUrl: /training/achievements/sc-100-evaluate-governance-risk-compliance.svg
+- uid: learn.wwl.sc-100-design-zero-trust-strategy-architecture.trophy
+  type: trophy
+  title: 'SC-100: Design a Zero Trust strategy and architecture'
+  summary: Learn how to design an organizations security strategy, including security operations and identity based on the principles of Zero Trust.
+  iconUrl: /training/achievements/sc-100-design-zero-trust-strategy-architecture.svg
+- uid: learn.wwl.sc-100-design-strategy-for-data-applications.trophy
+  type: trophy
+  title: 'SC-100: Design a strategy for data and applications'
+  summary: Learn how to design a cybersecurity strategy for data and applications.
+  iconUrl: /training/achievements/sc-100-design-a-strategy-for-data-and-applications.svg
+- uid: learn.wwl.sc-100-design-security-for-infrastructure.trophy
+  type: trophy
+  title: 'SC-100: Design security for infrastructure'
+  summary: Learn how to design for infrastructure security, including architecture best practices, endpoint security and cloud security for different service models (SaaS, PaaS and IaaS).
+  iconUrl: /training/achievements/sc-100-design-security-for-infrastructure.svg
 - uid: learn.work-with-mutable-and-partial-data-in-a-redis-cache.badge
   type: badge
   title: Work with mutable and partial data in Azure Cache for Redis
   summary: Learn how to create transactions, manage memory, and use the cache-aside pattern with Azure Cache for Redis
   iconUrl: /training/achievements/work-with-mutable-and-partial-data-in-a-redis-cache.svg
+- uid: learn.quantum.solve-job-shop-optimization-azure-quantum.badge
+  type: badge
+  title: Solve a job shop scheduling optimization problem by using Azure Quantum
+  summary: Learn how to use the Azure Quantum optimization service to solve a job shop scheduling problem.
+  iconUrl: /training/achievements/quantum/solve-job-shop-optimization-azure-quantum.svg
+- uid: learn.quantum.solve-quantum-inspired-optimization-problems.badge
+  type: badge
+  title: Solve optimization problems by using quantum-inspired optimization
+  summary: Learn how quantum-inspired algorithms mimic quantum physics to solve difficult optimization problems.
+  iconUrl: /training/achievements/quantum/solve-quantum-inspired-optimization-problems.svg
+- uid: learn-wwl.ai-strategy-in-education.badge
+  type: badge
+  title: Define an AI strategy to create value in education
+  summary: In education, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI. Educational institutions and organizations need to think strategically about AI—and they need to start today. To create real value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-education.svg
+- uid: learn-wwl.ai-strategy-in-financial-services.badge
+  type: badge
+  title: Define an AI strategy to create business value in financial services
+  summary: To realize the true transformational impact of AI in financial services, decision-makers must consider the special factors that apply only to their industry. To create real business value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-financial-services.svg
+- uid: learn-wwl.ai-strategy-in-government.badge
+  type: badge
+  title: Define an AI strategy to create value in government
+  summary: In government, decision-makers must take into account specific public sector considerations before they can realize the true transformational power of AI. Government agencies need to think strategically about AI – and they need to start today. To create real value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-government.svg
+- uid: learn-wwl.ai-strategy-in-healthcare.badge
+  type: badge
+  title: Define an AI strategy to create business value in healthcare
+  summary: To realize the true transformational impact of AI in the healthcare sector, decision-makers must consider the special factors that apply only to their industry. To create real business value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-healthcare.svg
+- uid: learn-wwl.ai-strategy-in-manufacturing.badge
+  type: badge
+  title: Define an AI strategy to create business value in manufacturing
+  summary: In manufacturing, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI in the enterprise. To create real business value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-manufacturing.svg
+- uid: learn.azure.azure-architecture-fundamentals.badge
+  type: badge
+  title: Describe core Azure architectural components
+  summary: In this module, you'll examine the various concepts, resources, and terminology that are necessary to work with Azure architecture. For example, you'll learn about Azure subscriptions and management groups, resource groups and Azure Resource Manager, as well as Azure regions and availability zones.
+  iconUrl: /training/achievements/azure-architecture-fundamentals.svg
+- uid: learn.azure.fundamental-azure-concepts.badge
+  type: badge
+  title: Discuss Azure fundamental concepts
+  summary: Are you interested in the cloud, but aren't sure what it can do for you? In this module, you'll learn about the advantages of using cloud computing services, and you'll learn to differentiate between the categories and types of cloud computing.
+  iconUrl: /training/achievements/fundamental-azure-concepts.svg
+- uid: learn.azure.intro-to-azure-fundamentals.badge
+  type: badge
+  title: Introduction to Azure fundamentals
+  summary: This module introduces you to the basics of cloud computing and Azure, and how to get started with Azure's subscriptions and accounts.
+  iconUrl: /training/achievements/intro-to-azure-fundamentals.svg
+- uid: learn-wwl.ai-strategy-to-create-business-value.badge
+  type: badge
+  title: Define an AI strategy to create business value
+  summary: AI has the capacity to empower the whole world to achieve more. From empowering technical development teams to mobilizing an entire organization to unlock the true potential of AI, enterprises need to think strategically about AI – and they need to start today.
+  iconUrl: /training/achievements/ai-strategy-to-create-business-value.svg
+- uid: learn-wwl.build-an-ai-ready-culture.badge
+  type: badge
+  title: Understand the importance of building an AI-ready culture
+  summary: A successful AI strategy must consider cultural issues as well as business issues. Becoming an AI-ready organization requires a fundamental transformation in how you do things, how employees relate to each other, what skills they have, and what processes and principles guide your behaviors. This unit is designed to help you understand which are the key elements that make a culture AI-ready and proposes a framework to drive that change in your organization.
+  iconUrl: /training/achievements/build-an-ai-ready-culture.svg
+- uid: learn-wwl.coinnovate-for-broader-impact.badge
+  type: badge
+  title: Coinnovate for a broader impact
+  summary: While it's essential to have alignment on the inside, businesses can't exist without connecting to what's outside. External points of view play a key role in understanding how innovation efforts impact people and communities beyond your organization. Collaborating with external partners and even customers can help you go beyond innovation for innovation's sake and provide meaningful solutions to your customers, communities, and even society.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-wwl.cultivate-innovative-mindset.badge
+  type: badge
+  title: Cultivate an innovative mindset
+  summary: Success is defined in many ways, by numerous variables. But one common thread among 'successful' organizations is that they're creating the right culture that helps innovation thrive. To stay competitive in the market, organizations need to think strategically about enhancing and scaling employee creativity to create a culture that cultivates an innovative mindset.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-wwl.foster-ai-culture-customer-service.badge
+  type: badge
+  title: Discover how to foster an AI-ready culture in customer service
+  summary: A successful AI strategy in customer service must consider cultural issues, as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+  iconUrl: /training/achievements/foster-ai-ready-culture-customer-service.svg
+- uid: learn-wwl.foster-ai-culture-marketing.badge
+  type: badge
+  title: Discover how to foster an AI-ready culture in marketing
+  summary: A successful AI strategy in marketing must consider cultural issues as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+  iconUrl: /training/achievements/foster-ai-ready-culture-marketing.svg
+- uid: learn-wwl.foster-ai-culture-sales.badge
+  type: badge
+  title: Discover how to foster an AI-ready culture in sales
+  summary: A successful AI strategy in sales must consider cultural issues, as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+  iconUrl: /training/achievements/foster-ai-ready-culture-sales.svg
+- uid: learn-wwl.implement-ai-organization.badge
+  type: badge
+  title: Implement AI in your organization
+  summary: Everyone in an organization has a role to play in AI transformation. At the highest levels, leaders need to prioritize AI use cases strategically and create an environment where innovative ideas can flourish. Then, those ideas come to life and succeed long-term thanks to collaboration across lines of business and technical teams. This module provides insight into managing AI-related processes and responsibilities in an organization.
+  iconUrl: /training/achievements/implement-ai-organization.svg
+- uid: learn-wwl.intro-to-ai-technology.badge
+  type: badge
+  title: Introduction to AI technology
+  summary: This module provides a high-level overview of the primary concepts of AI and the technologies behind it. We then dive into how Microsoft is turning the latest advancements in AI into tools, products, and services that can be used by organizations.
+  iconUrl: /training/achievements/introduction-to-ai-technology.svg
+- uid: learn-wwl.microsoft-responsible-ai-practices.badge
+  type: badge
+  title: Discuss practices for responsible AI at Microsoft
+  summary: At Microsoft, we have established our own governing practices for responsible AI. While every organization will have its own approach and we don’t have all the answers, we’d like to share what we’ve learned so far.
+  iconUrl: /training/achievements/microsoft-responsible-ai-practices.svg
+- uid: learn-wwl.responsible-ai-governing-practices-government.badge
+  type: badge
+  title: Identify governing practices for responsible AI in government
+  summary: As AI becomes more prevalent, it’s imperative that governments have practices in place to ensure that it’s used responsibly. This starts with governments establishing their own guiding principles, then choosing and operationalizing a system of governance. We recognize that every government has their own perspective on responsible AI, but we’re hopeful that our perspective is a helpful starting point as they embark on their own AI journey.
+  iconUrl: /training/achievements/responsible-ai-governing-practices-government.svg
+- uid: learn-wwl.responsible-ai-governing-practices.badge
+  type: badge
+  title: Identify governing practices for responsible AI
+  summary: As AI becomes more prevalent, it’s imperative that organizations have governing practices in place to ensure that it’s used responsibly. Responsible use of AI starts with organizations establishing their own guiding principles, then choosing and operationalizing a system of governance. We recognize that every organization will have their own perspective on responsible AI, but we’re hopeful that our perspective will serve as a helpful starting point as others embark on their own AI journey.
+  iconUrl: /training/achievements/responsible-ai-governing-practices.svg
+- uid: learn.ai-business-school-education.trophy
+  type: trophy
+  title: AI business school for education
+  summary: Decision-makers in education have considerations that are particular to their sector to help them realize the true transformational impact of AI in education. It is critical to understand the components of a strategy that will help the education sector create value with AI. This learning path is designed for education decision-makers to illustrate the true transformational impact of AI in education.
+  iconUrl: /training/achievements/ai-business-school-education.svg
+- uid: learn.ai-business-school-financial-services.trophy
+  type: trophy
+  title: AI business school for financial services
+  summary: Decision-makers in financial services have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise. It is critical to understand the components of a strategy that will help the financial services sector create business value with AI.
+  iconUrl: /training/achievements/ai-business-school-financial-services.svg
+- uid: learn.ai-business-school-government.trophy
+  type: trophy
+  title: AI business school for government
+  summary: In government, decision-makers must take into account specific public sector considerations before they can realize the true transformational power of AI. It's critical to understand the components of a strategy that will help the public sector create value with AI. This learning path is designed for government decision-makers to illustrate the true transformational impact of AI in the public sector.
+  iconUrl: /training/achievements/ai-business-school-government.svg
+- uid: learn.ai-business-school-healthcare.trophy
+  type: trophy
+  title: AI business school for healthcare
+  summary: Decision-makers in healthcare have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise. This learning path is designed for healthcare industry decision-makers to illustrate the true transformational impact of AI in the enterprise.
+  iconUrl: /training/achievements/ai-business-school-healthcare.svg
+- uid: learn.ai-business-school-manufacturing.trophy
+  type: trophy
+  title: AI business school for manufacturing
+  summary: In manufacturing, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI in the enterprise. This learning path is designed for manufacturing industry decision-makers to illustrate the true transformational impact of AI in the enterprise.
+  iconUrl: /training/achievements/ai-business-school-manufacturing.svg
+- uid: learn.ai-business-school-retail.trophy
+  type: trophy
+  title: AI business school for retail
+  summary: Retail industry decision-makers have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise.
+  iconUrl: /training/achievements/ai-business-school-retail.svg
+- uid: learn.ai-strategy-for-business-value.trophy
+  type: trophy
+  title: Define an AI strategy to create business value across industries
+  summary: In this learning path, you will hear from Peter Zemsky, INSEAD's Eli Lilly Chaired Professor of Strategy and Innovation, about how AI is driving business value across industries and companies as well as Microsoft customers and partners. You will be able to discuss how technical teams are bringing AI into business applications and how business leaders of different industries are thinking about AI for their own businesses.
+  iconUrl: /training/achievements/ai-strategy-for-business-value.svg
+- uid: learn.become-innovative-organization.trophy
+  type: trophy
+  title: Become an innovative organization
+  summary: In this learning path, you'll discover why innovation is critical to achieving a competitive advantage. You’ll be able to use the frameworks and guidance provided to help organize your business for adaptability, establish an innovative mindset, and coinnovate with external partners. Achieving these three milestones will help foster the knowledge, skills, and cultural mindset needed to infuse innovation into the core of your business. You’ll learn how the speed at which an organization can influence technology and its people to experiment, reinvent, and grow is what will set them apart in a competitive landscape.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.responsible-ai-business-principles-government.trophy
+  type: trophy
+  title: Identify guiding principles for responsible AI in government
+  summary: It is imperative to reflect on the implications of AI in government. In this learning path, you will be provided with guidelines to assist in setting up principles and a governance model in your government organization. You will also be provided with resources, best practices, and tools.
+  iconUrl: /training/achievements/responsible-ai-business-principles.svg
+- uid: learn.responsible-ai-business-principles.trophy
+  type: trophy
+  title: Identify principles and practices for responsible AI
+  summary: It is imperative to reflect on the implications of AI in business. In this learning path, you will be provided with guidelines to assist in setting up principles and a governance model in your organization. You will also be provided with resources, best practices, and tools.
+  iconUrl: /training/achievements/responsible-ai-business-principles.svg
+- uid: learn.scale-ai-organizations.trophy
+  type: trophy
+  title: Scale AI in your organization
+  summary: In this learning path, you’ll get a high-level overview of how to manage an AI organization, team, department, or center of excellence. You’ll learn about fueling innovation at all levels, evaluating and prioritizing AI investments, establishing technical processes for AI, and distributing AI-related responsibilities across the organization.
+  iconUrl: /training/achievements/scale-ai-organizations.svg
+- uid: learn.wwl.configure-azure-firewall.badge
+  type: badge
+  title: Configure Azure Firewall
+  summary: Learn how to configure Azure Firewall including firewall rules.
+  iconUrl: /training/achievements/azure-firewall-configure.svg
+- uid: learn.wwl.configure-expressroute-virtual-wan.badge
+  type: badge
+  title: Configure Azure ExpressRoute and Azure Virtual WAN
+  summary: Learn how to configure Azure ExpressRoute and Virtual WAN to provide connection services.
+  iconUrl: /training/achievements/express-route-virtual-wan-configure.svg
+- uid: learn.wwl.configure-vpn-gateway.badge
+  type: badge
+  title: Configure Azure VPN Gateway
+  summary: Learn how to create VPN gateways and securely connect your company sites to Azure.
+  iconUrl: /training/achievements/vpn-gateway-configure.svg
+- uid: learn.ai-technology-for-business-leaders.trophy
+  type: trophy
+  title: Introduction to AI technology for business leaders
+  summary: In this learning path, you will be provided with a high-level overview of the primary concepts of AI. You will be able to describe what AI happens to be and the technologies that underpin it. You will be able to share  how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations.
+  iconUrl: /training/achievements/ai-technology-for-business-leaders.svg
+- uid: learn.foster-an-ai-ready-culture-in-business.trophy
+  type: trophy
+  title: Discover ways to foster an AI-ready culture in your business
+  summary: In this learning path, you will hear from top Microsoft executives about a framework to drive the key changes that are necessary to become an AI -ready organization. You will be able to identify the successful implementations of AI and articulate relevant scenarios. You will be able to discuss a line of business specific and relevant uses cases in finance, marketing, sales, and customer service. And finally, you will be able to identify  AI solutions to implement in your organization based upon its maturity.
+  iconUrl: /training/achievements/foster-ai-ready-culture.svg
+- uid: learn-wwl.ai-strategy-in-retail.badge
+  type: badge
+  title: Define an AI strategy to create business value in retail
+  summary: In retail, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI in the enterprise. To create real business value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-retail.svg
+- uid: learn-wwl.foster-ai-culture-finance.badge
+  type: badge
+  title: Discover how to foster an AI-ready culture in finance
+  summary: This module is designed for finance and affiliated business decision-makers to illustrate the impact of making strategic decisions with AI. The goal is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+  iconUrl: /training/achievements/foster-ai-ready-culture-finance.svg
+- uid: learn-wwl.microsoft-approach-to-ai.badge
+  type: badge
+  title: Examine the Microsoft approach to artificial intelligence
+  summary: This module is a starting point for business decision makers who want to understand how Microsoft is creating products, services, and solutions to help organizations leverage Artificial Intelligence (AI). We’ll also help you understand how these technologies relate to business problems.
+  iconUrl: /training/achievements/microsoft-approach-to-ai.svg
+- uid: learn-wwl.organize-for-adaptability.badge
+  type: badge
+  title: Organize for adaptability
+  summary: Staying ahead of the competition comes down to finding new ways of thinking, communicating, and working when the old ways no longer cut it. It’s about being adaptable and displaying the leadership necessary to guide people through disruption. But what does that mean in practice? And what roles do innovation and technology play in getting there? In this module, we’ll examine how to evaluate and redefine the relationships between your organization’s people, practices, and outcomes. Only by transforming these structural systems can technology help build the capacity needed to adapt and remain competitive.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-wwl.responsible-ai-guiding-principles.badge
+  type: badge
+  title: Identify guiding principles for responsible AI
+  summary: At Microsoft, we’ve recognized six principles that we believe should guide AI development and use — fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For us, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more prevalent in the products and services we use every day. We recognize that every individual, company, and region will have their own beliefs and standards that should be reflected in their AI journey. We want to share our perspective as you consider developing your own guiding principles.
+  iconUrl: /training/achievements/responsible-ai-principles.svg
+- uid: learn-wwl.start-ml-lifecycle-mlops.badge
+  type: badge
+  title: Start the machine learning lifecycle with MLOps
+  summary: In this module, we discuss best practices for creating and managing machine learning (ML) models using MLOps processes. MLOps is the practice of collaboration between data scientists, ML engineers, software developers, and other IT teams to manage the end-to-end ML lifecycle.
+  iconUrl: /training/achievements/start-ml-lifecycle-mlops.svg
+- uid: learn.capture-page-load-times-application-insights.badge
+  type: badge
+  title: Capture and view page load times in your Azure web app with Application Insights
+  summary: Application Insights is an Azure service that you can use to monitor the behavior and performance of a web application. If you run a web app in Azure, you can take advantage of several benefits provided by Application Insights simply by enabling it, without changing any of your code. When you complete this module, you'll know how to enable Application Insights and client-side monitoring and view metrics in the portal.
+  iconUrl: /training/achievements/capture-page-load-times-application-insights.svg
+- uid: learn.azure.aspnet-logging.badge
+  type: badge
+  title: Implement logging in a .NET Framework ASP.NET web application
+  summary: Learn how to implement logging in an ASP.NET web application so you can store log data in Azure Blob storage and incorporate log information into Azure Application Insights performance data.
+  iconUrl: /training/achievements/aspnet-logging.svg
+- uid: learn.instrument-web-app-code-with-application-insights.badge
+  type: badge
+  title: Instrument server-side web application code with Application Insights
+  summary: Obtain comprehensive diagnostic information from a web app by adding the Application Insights SDK to your server-side code.
+  iconUrl: /training/achievements/instrument-web-app-code-with-application-insights.svg
+- uid: learn.azure.azure-compute-fundamentals.badge
+  type: badge
+  title: Explore Azure compute services
+  summary: In this module, you'll learn how to take advantage of several virtualization services in Azure compute, which can help your applications scale out quickly and efficiently to meet increasing demands.
+  iconUrl: /training/achievements/azure-compute-fundamentals.svg
+- uid: learn.azure.azure-database-fundamentals.badge
+  type: badge
+  title: Explore Azure database and analytics services
+  summary: In this module, you'll learn about several of the database services that are available on Microsoft Azure, such as Azure Cosmos DB, Azure SQL Database, Azure SQL Managed Instance, Azure Database for MySQL, and Azure Database for PostgreSQL. In addition, you'll learn about several of the big data and analysis services in Azure.
+  iconUrl: /training/achievements/azure-database-fundamentals.svg
+- uid: learn.azure.azure-networking-fundamentals.badge
+  type: badge
+  title: Explore Azure networking services
+  summary: In this module, you take a look at several of the core networking resources that are available in Azure. You learn about Azure Virtual Network, which you can configure into a customized network environment that meets your company's needs. You also learn how you can use Azure VPN Gateway and Azure ExpressRoute to create secure communication tunnels between your company's different locations.
+  iconUrl: /training/achievements/azure-networking-fundamentals.svg
+- uid: learn.azure.azure-storage-fundamentals.badge
+  type: badge
+  title: Explore Azure Storage services
+  summary: In this module, you'll learn about some of the different storage options that are available in Azure Storage services, and the scenarios in which each storage option is appropriate. As you complete the individual units in this module, you'll learn about Azure Blob Storage, Azure Disk Storage, Azure Files, and Blob access tiers.
+  iconUrl: /training/achievements/azure-storage-fundamentals.svg
+- uid: learn.azure.choose-azure-services-sla-lifecycle.badge
+  type: badge
+  title: Choose the right Azure services by examining SLAs and service lifecycle
+  summary: Learn about service-level agreements (SLAs) in Azure, and how they can affect your application design decisions. See how to access preview services and learn how they affect your planning.
+  iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.azure.protect-against-security-threats-azure.badge
+  type: badge
+  title: Protect against security threats on Azure
+  summary: Learn how Azure can help you protect the workloads that you run both in the cloud and in your on-premises datacenter.
+  iconUrl: /training/achievements/review-security-tools-features.svg
+- uid: learn.azure.secure-network-connectivity-azure.badge
+  type: badge
+  title: Secure network connectivity on Azure
+  summary: Learn about the Azure services you can use to help ensure that your network is safe, secure, and trusted.
+  iconUrl: /training/achievements/secure-network-connectivity.svg
+- uid: learn.azure.iot-fundamentals.badge
+  type: badge
+  title: Choose the best Azure IoT service for your application
+  summary: Examine Azure IoT services, and choose the right service for your scenario.
+  iconUrl: /training/achievements/iot-fundamentals.svg
+- uid: learn.azure.ai-machine-learning-fundamentals.badge
+  type: badge
+  title: Choose the best AI service for your needs
+  summary: Examine Azure's AI services, and choose the right one for your company.
+  iconUrl: /training/achievements/ai-machine-learning-fundamentals.svg
+- uid: learn.azure.azure-devops-devtest-labs.badge
+  type: badge
+  title: Choose the best tools to help organizations build better solutions
+  summary: Learn about Microsoft tools and services that help developers and operations engineers build modern solutions for the cloud and on-premises.
+  iconUrl: /training/achievements/azure-devops-devtest-labs.svg
+- uid: learn.azure.serverless-fundamentals.badge
+  type: badge
+  title: Choose the best Azure serverless technology for your business scenario
+  summary: Examine Azure serverless technologies, and choose the right service for your business scenario.
+  iconUrl: /training/achievements/serverless-fundamentals.svg
+- uid: learn.azure.examine-privacy-compliance-data-protection-standards.badge
+  type: badge
+  title: Examine privacy, compliance, and data protection standards on Azure
+  summary: Learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
+  iconUrl: /training/achievements/examine-privacy-compliance-data-protection-standards.svg
+- uid: learn.azure.management-fundamentals.badge
+  type: badge
+  title: Choose the best tools for managing and configuring your Azure environment
+  summary: Explore the Azure management, administration, and reporting tools, and choose the ones that best meet your organization's needs.
+  iconUrl: /training/achievements/management-fundamentals.svg
+- uid: learn.azure.monitoring-fundamentals.badge
+  type: badge
+  title: Choose the best monitoring service for visibility, insight, and outage mitigation
+  summary: Learn about solutions that can give your IT organization insight into the health and performance of its cloud-based applications.
+  iconUrl: /training/achievements/monitoring-fundamentals.svg
+- uid: learn.wwl.intro-to-iot-central.badge
+  type: badge
+  title: Intro to IoT Central
+  summary: This module introduces you to the features, capabilities, and UI components presented by the Azure IoT Central application platform, the underlying architecture built on Azure IoT services, and other support considerations.
+  iconUrl: /training/achievements/iot-central-introduction.svg
+- uid: learn.wwl.build-low-touch-iot-solutions-by-using-azure-iot-central.trophy
+  type: trophy
+  title: Build low touch IoT solutions by using Azure IoT Central
+  summary: You will learn about the Azure IoT Central application platform and the support that it provides to companies with limited budgets and technical resources who are interested in developing, managing, and maintaining IoT solutions.
+  iconUrl: /training/achievements/iot-low-touch-iot-central.svg
+- uid: learn.configure-admin-consent-workflow.badge
+  type: badge
+  title: Manage consent requests to apps through admin consent workflow in Azure Active Directory
+  summary: "Admin consent workflow streamlines the process by which admins evaluate and respond to consent requests in Azure Active directory (Azure AD). Learn how to configure admin consent workflow to enable users of applications to request admin consent from the consent prompt. Learn how to properly evaluate consent requests and respond to them through the Azure portal."
+  iconUrl: /training/achievements/configure-admin-consent-workflow.svg
+- uid: learn.azure.build-cloud-governance-strategy-azure.badge
+  type: badge
+  title: Build a cloud governance strategy on Azure
+  summary: Learn how access policies, resource locks, and tags, as well as Azure services such as Azure Policy and Azure Blueprints, can help you build a comprehensive cloud governance strategy.
+  iconUrl: /training/achievements/describe-azure-governance-methodologies.svg
+- uid: learn.azure.secure-access-azure-identity-services.badge
+  type: badge
+  title: Secure access to your applications by using Azure identity services
+  summary: Learn how Azure Active Directory helps you manage and secure identities. Also see how single sign-on, multifactor authentication, and Conditional Access enable your users to securely access resources and applications from your intranet and from public networks.
+  iconUrl: /training/achievements/examine-core-identity-services.svg
+- uid: learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.badge
+  type: badge
+  title: Analyze and optimize data warehouse storage in Azure Synapse Analytics
+  summary: In this module, you'll learn to analyze information used to optimize a data warehouse in Azure Synapse Analytics.
+  iconUrl: /training/achievements/azure-synaps-analytics-optimize-data-warehouse.svg
+- uid: learn.azure.plan-manage-azure-costs.badge
+  type: badge
+  title: Plan and manage your Azure costs
+  summary: Learn about the factors that influence cost and tools you can use to help estimate and manage your cloud spend.
+  iconUrl: /training/achievements/review-planning-managing-costs.svg
+- uid: learn.enable-single-sign-on.badge
+  type: badge
+  title: Enable single sign-on for applications by using Azure Active Directory
+  summary: "To enable single sign-on, you add an application from the Azure Active Directory(Azure AD) application gallery. You create a test user account in Azure AD  and assign it to the Azure AD application. You then configure single sign-on both at the identity provider and the service provider and test the single sign-on configuration by signing in to the application using the test user account."
+  iconUrl: /training/achievements/enable-single-sign-on.svg

@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.detect-analyze-recognize-faces.detect-faces-computer-vision-service
-title: Detect faces with the computer vision service
+title: Detect faces with the Azure AI Vision service
 metadata:
-  title: Detect faces with the computer vision service
-  description: "Detect faces with the computer vision service"
+  title: Detect faces with the Azure AI Vision service
+  description: "Detect faces with the Azure AI Vision service"
   ms.date: 07/13/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: false

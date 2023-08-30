@@ -4,11 +4,10 @@ title: Explore SAP Cloud Platform Identity authentication
 metadata:
   title: Explore SAP Cloud Platform Identity authentication
   description: "Explore SAP Cloud Platform Identity authentication"
-  ms.date: 04/21/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/4-explore-sap-cloud-platform-identity-authentication.md)]

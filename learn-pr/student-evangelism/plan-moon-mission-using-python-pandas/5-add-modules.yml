@@ -8,7 +8,9 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
 title: Exercise - Add rocket weight data to the mission analysis
 durationInMinutes: 6
 content: |

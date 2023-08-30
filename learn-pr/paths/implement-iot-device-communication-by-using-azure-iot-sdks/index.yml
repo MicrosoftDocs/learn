@@ -35,3 +35,4 @@ modules:
 - learn.wwl.explore-device-configuration-communication
 trophy:
   uid: learn.wwl.implement-iot-device-communication-by-using-azure-iot-sdks.trophy
+hidden: true

@@ -14,7 +14,7 @@ The focus here is more on guidelines that will make the use of Personalizer effe
 - Clearly defined business goals are critical to ensuring Personalizer is a valid choice for the intended purpose.
 - Use Personalizer for content that lends itself to contextual decision making for the user.
 - Use aggregate data to collect the user behaviors and to evaluate the reward scores for model improvement.
-- Follow proper ethics to ensure any learning from the model follows the [guidance for integration and responsible use of Personalizer](/azure/cognitive-services/personalizer/responsible-guidance-integration?azure-portal=true).
+- Follow proper ethics to ensure any learning from the model follows the [guidance for integration and responsible use of Personalizer](/azure/ai-services/personalizer/responsible-guidance-integration?azure-portal=true).
 
 ## Use Personalizer with a recommendation solution
 

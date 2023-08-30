@@ -9,7 +9,10 @@ metadata:
   ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.service: azure
-  ms.custom: devdivchpfy22, engagement-fy23
+  ms.custom:
+    - devdivchpfy22
+    - engagement-fy23
+    - devx-track-js
 durationInMinutes: 15
 content: |
   [!include[](includes/3-get-sample-application.md)]

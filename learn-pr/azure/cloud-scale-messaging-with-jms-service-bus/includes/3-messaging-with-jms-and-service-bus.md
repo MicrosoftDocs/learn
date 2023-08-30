@@ -13,10 +13,10 @@ JMS API enables applications to interface with enterprise messaging brokers, muc
 
 Let's focus on utilizing the super-popular JMS 2.0 API to communicate with Service Bus.
 
-Using Spring Boot, typically with [Spring Initializr](https://start.spring.io/), you'll have three main tasks to achieve:
+Using Spring Boot, typically with [Spring Initializr](https://start.spring.io/), you have three main tasks to achieve:
 
-* Add Service Bus dependencies to your application
-* Send messages to a Service Bus queue
-* Receive messages from the Service Bus queue
+* Add Service Bus dependencies to your application.
+* Send messages to a Service Bus queue.
+* Receive messages from the Service Bus queue.
 
-This setup will use two Spring Boot applications: one sender and one receiver.
+This setup uses two Spring Boot applications: one sender and one receiver.

@@ -2,16 +2,16 @@
 uid: learn.introduction-to-azure-iot-central.introduction
 title: Introduction
 metadata:
-  unitType: introduction
   title: Introduction
-  description: Learn about the scenario and main goal of this module.
-  ms.date: 07/21/2021
+  description: This content is a part of Introduction to Azure IoT Central.
+  ms.date: 05/28/2023
   author: asergaz
   ms.author: sergaz
   ms.reviewer: adchukwu
   manager: lizross
-  ms.topic: interactive-tutorial
+  ms.custom: engagement-fy23
+  ms.topic: module-intro-to-product
   ms.prod: azure-iot-central
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

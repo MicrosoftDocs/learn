@@ -7,8 +7,10 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+    - devx-track-dotnet
   description: |
     Check your knowledge on creating, managing, and querying items and resources in an Azure Cosmos DB for NoSQL account using the .NET SDK library from NuGet.
+
   author: seesharprun
   ms.author: sidandrews
   ms.topic: interactive-tutorial

@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: 'in-memory caching'
       isCorrect: false
-      explanation: 'In-memory caching can improve performance, but it will not increase your database resources.'
+      explanation: "In-memory caching can improve performance, but it doesn't increase your database resources."
     - content: 'decoupling'
       isCorrect: false
       explanation: 'Decoupling is a change that can help with differing resource needs between different dependent services.'
@@ -37,4 +37,4 @@ quiz:
       explanation: 'Correct.'
     - content: 'eventual consistency'
       isCorrect: false
-      explanation: 'Eventual consistency does not offer this guarantee.'
+      explanation: "Eventual consistency doesn't offer this guarantee."

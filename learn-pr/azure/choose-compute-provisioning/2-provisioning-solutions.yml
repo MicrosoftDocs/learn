@@ -7,6 +7,9 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-arm-template
+    - devx-track-terraform
   ms.prod: learning-azure
 title: Identify the provisioning solutions for Azure compute infrastructure
 durationInMinutes: 10

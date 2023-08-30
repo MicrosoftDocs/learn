@@ -8,6 +8,8 @@ metadata:
   author: fabianomira
   ms.author: famira
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

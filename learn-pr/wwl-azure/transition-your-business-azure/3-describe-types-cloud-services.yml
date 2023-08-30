@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transition-your-business-azure.describe-types-cloud-services
+title: Describe types of cloud services
+metadata:
+  title: Describe types of cloud services
+  description: "Describe types of cloud services"
+  ms.date: 07/18/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-describe-types-cloud-services.md)]
+interactive: bash

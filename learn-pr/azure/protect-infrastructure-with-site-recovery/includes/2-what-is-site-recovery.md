@@ -18,7 +18,7 @@ Site Recovery protects your VM instances in Azure automatically. Site Recovery m
 
 Site Recovery has customizable replication policies that allow you to define the retention history of recovery points and the frequency of snapshots. You create a recovery point from a snapshot of a VM's disk. The two types of snapshots available are **App-consistent** and **Crash-consistent**.
 
-- **App-consistent** recovery captures the same data as crash-consistent but they also include all in-memory data and in-process transactions. Including the in-memory data means that Site Recovery can restore a VM and any running apps without any data loss. The default frequency for capturing snapshots is every 60 minutes.
+- **App-consistent** recovery captures the same data as crash-consistent but also includes all in-memory data and in-process transactions. Including the in-memory data means that Site Recovery can restore a VM and any running apps without any data loss. The default frequency for capturing snapshots is every 60 minutes.
 
 - **Crash-consistent** recovery represents the data on disk at the time the snapshot is taken. The default frequency for capturing snapshots is every five minutes.
 

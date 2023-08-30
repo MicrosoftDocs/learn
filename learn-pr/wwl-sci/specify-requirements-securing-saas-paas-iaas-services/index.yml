@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   - Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/specify-requirements-secure-saas-paas-iaas-services.svg
 levels:
 - advanced
 roles:

@@ -9,6 +9,6 @@ metadata:
   ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.service: azure
-durationInMinutes: 10
+durationInMinutes: 30
 content: |
   [!include[](includes/6-exercise-create-playbook.md)]

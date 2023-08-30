@@ -4,11 +4,10 @@ title: Exercise - Combine strings using character escape sequences
 metadata:
   title: Exercise - Combine strings using character escape sequences
   description: "Exercise - Combine strings using character escape sequences"
-  ms.date: 05/22/2023
+  ms.date: 07/20/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-character-escape-sequences.md)]

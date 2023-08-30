@@ -5,12 +5,11 @@ metadata:
   title: Introduction
   description: Introduction to Azure RTOS NetX Duo.
   ms.date: 09/30/2022
-  author: edlamie80
-  ms.author: liydu
-  ms.reviewer: liydu
+  author: timlt
+  ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 10
 content: |
   [!include[](includes/1-introduction.md)]

@@ -6,6 +6,7 @@ metadata:
   ms.date: 05/27/2020
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Exercise - Build and deploy the changes

@@ -1,3 +1,4 @@
+
 **Estimated time:** 45 minutes.
 
 **Lab files:** none.
@@ -30,4 +31,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 2: Configure CI Pipeline as Code with YAML.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M03_L04_Enabling_Continuous_Integration_with_Azure_Pipelines.html)
+](https://aka.ms/az-400-enable-continuous-integration-with-azure-pipelines)

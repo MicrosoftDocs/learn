@@ -16,7 +16,7 @@ durationInMinutes: 5
 quiz:
   title: Answer the following questions to see what you've learned
   questions:
-  - content: To generate an OpenAPI documentation for your ASP.NET Core Web API, which NuGet package is the most popular?
+  - content: To generate OpenAPI documentation for your ASP.NET Core Web API, which NuGet package is the most popular?
     choices:
     - content: OpenAPI.NET
       isCorrect: false
@@ -30,7 +30,7 @@ quiz:
 
   - content: What could be the simplest way to publish your ASP.NET Core Web API app to Azure App Service?
     choices:
-    - content: Right-click on Visual Studio and publish the application.
+    - content: Right-click on the project in Visual Studio and publish the application.
       isCorrect: true
       explanation: Visual Studio provides the capability to publish a Web API project directly to Azure App Service instance.
     - content: Use Azure portal to publish the application.
@@ -43,7 +43,7 @@ quiz:
       isCorrect: false
       explanation: Visual Studio provides the capability to publish a Web API project directly to Azure App Service instance.
 
-  - content: While publishing your ASP.NET Core Web API app within Visual Studio, which is incorrect?
+  - content: While you're publishing an ASP.NET Core Web API app within Visual Studio, which is incorrect?
     choices:
     - content: You can create a new Azure App Service instance to publish the Web API app to Azure.
       isCorrect: false

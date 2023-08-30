@@ -1,3 +1,4 @@
+
 **Estimated time:** 60 minutes.
 
 **Lab files:** none.
@@ -29,4 +30,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 3: Remove the Azure lab resources.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M05_L08_Configuring_Pipelines_as_Code_with_YAML.html)
+](https://aka.ms/az-400-configure-pipelines-as-code-with-yaml)

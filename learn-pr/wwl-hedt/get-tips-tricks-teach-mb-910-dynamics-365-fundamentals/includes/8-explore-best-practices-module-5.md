@@ -27,5 +27,4 @@ Module 5 Demo
 
 Module 5 Labs
 
-- Lab 5.1: [Creating work orders](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M05_Lab1_Creating_Work_Orders.md)
-- Lab 5.2: [Schedule items](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M05_Lab2_Schedule_Items.md)
+- [Schedule items](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M05_Lab2_Schedule_Items.md)

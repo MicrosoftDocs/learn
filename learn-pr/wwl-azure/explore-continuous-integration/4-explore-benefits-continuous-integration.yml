@@ -4,13 +4,11 @@ title: Explore benefits of continuous integration
 metadata:
   title: Explore benefits of continuous integration
   description: "Explore benefits of continuous integration"
-  ms.date: 06/06/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+durationInMinutes: 3
 content: |
   [!include[](includes/4-explore-benefits-continuous-integration.md)]

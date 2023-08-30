@@ -10,7 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors:
   - judubois-12292021
 durationInMinutes: 6

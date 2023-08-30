@@ -27,7 +27,6 @@ subjects:
 - infrastructure
 modules:
 - learn.control-and-organize-with-resource-manager
-- learn.azure.build-cloud-governance-strategy-azure
 - learn.design-monitoring-strategy-on-azure
 - learn.incident-response-with-alerting-on-azure
 - learn.analyze-infrastructure-with-azure-monitor-logs

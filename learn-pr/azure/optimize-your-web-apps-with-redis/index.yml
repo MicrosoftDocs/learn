@@ -11,7 +11,7 @@ metadata:
   manager: mcleans
 title: Optimize your web applications by caching read-only data with Redis
 summary: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
-abstract:  | 
+abstract:  |
   In this module, you will:
   - Describe what a Redis cache is and how you can use it for your business needs
   - Create a design and plan to use a Redis cache
@@ -28,9 +28,7 @@ roles:
 products:
 - azure
 - azure-cache-redis
-- dotnet
 - aspnet-core
-- dotnet-core
 subjects:
 - cache
 units:

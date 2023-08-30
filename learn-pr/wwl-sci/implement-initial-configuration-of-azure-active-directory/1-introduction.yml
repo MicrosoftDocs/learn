@@ -4,11 +4,11 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 02/03/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: identity-and-access
 azureSandbox: false
 labModal: false
 durationInMinutes: 1

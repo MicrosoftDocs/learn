@@ -1,3 +1,4 @@
+
 This module detailed target environment provisioning, service connections creation process, and test infrastructure setup. You learned how to configure functional test automation and run availability tests.
 
 You learned how to describe the benefits and usage of:
@@ -5,7 +6,7 @@ You learned how to describe the benefits and usage of:
  -  Provision and configure target environment.
  -  Deploy to an environment securely using a service connection.
  -  Configure functional test automation and run availability tests.
- -  Setup test infrastructure.
+ -  Set up test infrastructure.
 
 ## Learn more
 

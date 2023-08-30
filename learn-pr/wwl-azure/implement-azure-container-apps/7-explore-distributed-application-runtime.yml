@@ -4,11 +4,11 @@ title: Explore Dapr integration with Azure Container Apps
 metadata:
   title: Explore Dapr integration with Azure Container Apps
   description: "Explore Dapr integration with Azure Container Apps"
-  ms.date: 06/02/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 5
 content: |
   [!include[](includes/7-explore-distributed-application-runtime.md)]

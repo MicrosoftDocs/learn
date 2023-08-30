@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-business-value.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/28/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which key factor in the AI-ready culture of an organization helps with the successful implementation of AI?"
+    choices:
+    - content: "Delegates AI responsibility."
+      isCorrect: false
+      explanation: "Incorrect. All team members should participate in AI, not just those to whom it's delegated."
+    - content: "Utilizes generative AI."
+      isCorrect: false
+      explanation: "Incorrect. Generative AI may be one of the AI technologies used to implement AI in an organization, but it isn't a factor in building an AI-ready culture."
+    - content: "Provides access to data."
+      isCorrect: true
+      explanation: "Correct. Different factions in an organization tend to protect and defend their data. Successful AI at an organization level requires that everyone share their data."
+  - content: "The leaders of a national/regional corporation saw how another business created an AI-ready culture and readily implemented Microsoft AI solutions. To encourage an AI-ready culture in their own corporation, the leaders published a recording of a speech on the benefits of AI and how it would require a change to the culture of the organization. Then, they sent out memos with instructions to all of the company’s vice presidents. One year later, only the finance division had implemented any AI technology in their operations. There was no visible change in company culture toward adopting AI. What critical factor in an AI-ready culture did leadership lack in their attempt to foster an AI-ready culture in their company?"
+    choices:
+    - content: "Communication"
+      isCorrect: false
+      explanation: "Incorrect. They did communicate the benefits of AI and their desire for implementation. But they needed to ensure access to data, empower their employees, and foster a responsible approach. Just communication was not enough to change the culture of the company."
+    - content: "Empowerment"
+      isCorrect: true
+      explanation: "Correct. Fostering an AI-ready culture means empowering people to be part of the AI transformation. Give people the space, resources, security, and support to improve what they do with AI. They sent out the memo but made no other changes that supported a change in the way people did things."
+    - content: "Innovation"
+      isCorrect: false
+      explanation: "Incorrect. Encouraging innovation in using AI at the company could only come after a fundamental change in AI-ready culture."
+  - content: "The leaders of a regional law firm have been studying AI. The CEO is impressed that many companies have integrated it into their products, customer service, and their day-to-day work activities. One month ago, the CEO actually presented the basic concepts to top-level management. Since then, the CEO has received some good feedback from several vice presidents on its potential benefits. According to the maturity assessment seen in this module, which answer describes the level of AI maturity that this company has reached, and what will they move onto next?"
+    choices:
+    - content: "First level, next employees will begin experimenting with pretrained models."
+      isCorrect: true
+      explanation: "Correct. The company is currently on the first level where they're just thinking about using AI in their business. The next level is where employees are experimenting with it."
+    - content: "Second level, employees will next start using AI for innovation and transformation."
+      isCorrect: false
+      explanation: "Incorrect. Using AI for innovation and transformation is the third level of AI maturity. The company is currently on the first level."
+    - content: "Third level, next the company will create a strategy for using AI in their business."
+      isCorrect: false
+      explanation: "Incorrect. Creating an AI strategy is the top level (fourth level) of AI maturity. The company is currently on the first level."

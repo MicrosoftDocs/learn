@@ -1,6 +1,6 @@
-In order to listen to the WAVE file that your application created, you'll first need to download it. To do so, use the following steps.
+In order to listen to the WAV file that your application created, you'll first need to download it. To do so, use the following steps.
 
-1. In the Cloud Shell on the right, use the following command to copy the WAVE file to your temporary cloud drive.
+1. In the Cloud Shell on the right, use the following command to copy the WAV file to your temporary cloud drive:
 
     ```bash
     cp Shakespeare.wav ~/clouddrive
@@ -10,11 +10,11 @@ In order to listen to the WAVE file that your application created, you'll first 
 
 1. Select **All resources** on the Azure portal home page.
 
-1. When the **All resources** page is displayed, select on your **cloudshellNNNNN** storage account, then select on **File shares**, and then select your **cloudshellfilesNNNNN** file share.
+1. When the **All resources** page is displayed, select your **cloudshellNNNNN** storage account, then select **File shares**, then select your **cloudshellfilesNNNNN** file share.
 
-    [![Screenshot showing the cloud shell file shares.](../media/5-cloud-shell-file-shares-small.png)](../media/5-cloud-shell-file-shares.png#lightbox)
+    [![Screenshot showing the Cloud Shell file shares.](../media/5-cloud-shell-file-shares-small.png)](../media/5-cloud-shell-file-shares.png#lightbox)
 
-1. When your **cloudshellfilesNNNNN** file shares page is displayed, select on the **Shakespeare.wav** file, and then select the **Download** icon.
+1. When your **cloudshellfilesNNNNN** file shares page is displayed, select **Browse**, then select the **Shakespeare.wav** file, then select the **Download** icon.
 
     [![Screenshot showing the file download link.](../media/5-cloud-shell-file-download-small.png)](../media/5-cloud-shell-file-download.png#lightbox)
 

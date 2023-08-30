@@ -30,7 +30,7 @@ roles:
 - developer
 products:
 - azure
-- azure-defender-iot
+- defender-for-iot
 - azure-iot-edge
 - azure-iot-hub
 - azure-iot-sdk

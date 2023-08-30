@@ -12,6 +12,6 @@ metadata:
   ms.custom: engagement-fy23
   ms.topic: module-build-your-first
   ms.prod: azure-iot-central
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]

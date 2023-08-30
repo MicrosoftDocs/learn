@@ -4,10 +4,11 @@ title: Configure the Windows PowerShell console
 metadata:
   title: Configure the Windows PowerShell console
   description: "Configure the Windows PowerShell console"
-  ms.date: 11/10/2022
+  ms.date: 07/04/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
+  ms.custom:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

@@ -8,6 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-ansible
   ms.prod: learning-azure
 durationInMinutes: 9
 content: |

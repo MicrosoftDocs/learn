@@ -4,13 +4,11 @@ title: Describe continuous integration with actions
 metadata:
   title: Describe continuous integration with actions
   description: "Describe continuous integration with actions"
-  ms.date: 05/17/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.prod: azure
+durationInMinutes: 3
 content: |
   [!include[](includes/2-describe-continuous-integration-with-actions.md)]

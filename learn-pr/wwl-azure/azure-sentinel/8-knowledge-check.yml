@@ -4,70 +4,68 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2023
+  ms.date: 06/23/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 5
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Where can custom security alerts be created and managed?"
+  - content: "What is the primary benefit of security automation and orchestration in Microsoft Sentinel?"
     choices:
-    - content: "Azure Security Center"
+    - content: "Integration with Azure services and existing tools"
       isCorrect: false
-      explanation: "Security Center lets provides the ability to monitor how your systems are doing in Azure."
-    - content: "Azure Sentinel"
+      explanation: "While security automation and orchestration do integrate with Azure services and existing tools, this is not its primary benefit."
+    - content: "Simplification of security orchestration and task automation."
       isCorrect: true
-      explanation: "Azure Sentinel. Custom alert rules were retired from Azure Security Center on June 30, 2019 because its underlying infrastructure was retired. We recommend that enabling Azure Sentinel and re-creating your custom alerts there. Alternatively, alerts can be created with Azure Monitor log alerts."
-    - content: "Azure Storage"
+      explanation: "The primary benefit of security automation and orchestration in Microsoft Sentinel is the simplification of security orchestration and the automation of common security tasks. This streamlines security operations, reduces manual effort, and improves overall efficiency."
+    - content: "Availability of a growing gallery of built-in playbooks."
       isCorrect: false
-      explanation: "Azure Storage is for storing data."
-  - content: "Which of the items below would exceed the capabilities of an Azure Sentinel playbook?"
+      explanation: "The growing gallery of built-in playbooks is a feature of Azure Logic Apps, which is the foundation for building playbooks in Microsoft Sentinel. However, it is not the primary benefit of security automation and orchestration."
+  - content: "What is the primary purpose of Microsoft Sentinel?"
     choices:
-    - content: "A Sentinel playbook can help automate and orchestrate an incident response."
-      isCorrect: false
-      explanation: "Sentinel provides the ability to automate and orchestrate responses."
-    - content: "A Sentinel playbook be run manually or set to run automatically when specific alerts are triggered."
-      isCorrect: false
-      explanation: "The fact that Sentinel runs when a trigger is fired is a good topic to share."
-    - content: "A Sentinel playbook be created to handle several subscriptions at once."
+    - content: "To provide threat intelligence and analytics for security operations teams."
       isCorrect: true
-      explanation: "A security playbook is a collection of procedures that can be run from Azure Sentinel in response to an alert. A security playbook can help automate and orchestrate your response and can be run manually or set to run automatically when specific alerts are triggered. Each playbook is created for a specific subscription."
-  - content: "Sentinel is being used to investigate an incident. When viewing the incident detailed information, which value has to be assigned, instead of being included in the data?"
+      explanation: "Microsoft Sentinel is a security information event management (SIEM) and security orchestration automated response (SOAR) solution. Its primary purpose is to deliver intelligent security analytics and threat intelligence to security operations teams. It helps in alert detection, threat visibility, proactive hunting, and threat response, allowing teams to efficiently identify and respond to cyber threats."
+    - content: "To offer infrastructure setup and maintenance for SecOps teams."
+      isCorrect: false
+      explanation: "While Microsoft Sentinel does assist in collecting and analyzing security-related data, it is not focused on infrastructure setup and maintenance tasks."
+    - content: "To deliver proactive hunting and threat response capabilities."
+      isCorrect: false
+      explanation: "While Microsoft Sentinel does provide proactive hunting and threat response capabilities, it is not the primary purpose of the solution."
+  - content: "What benefit does Microsoft Sentinel offer to security operations teams?"
     choices:
-    - content: "Incident ID"
+    - content: "Integration with various Microsoft products and external threat intelligence streams."
       isCorrect: false
-      explanation: "All incidents have an Incident ID."
-    - content: "Incident owner"
+      explanation: "Integrates with various Microsoft products, such as Azure Identity Protection and Microsoft Cloud App Security, and correlates millions of signals. I"
+    - content: "Provides advanced threat detection and minimized false positives using analytics."
+      isCorrect: false
+      explanation: "Provides advanced threat detection and analytics capabilities, helping to minimize false positives and improve threat detection."
+    - content: "All of the above."
       isCorrect: true
-      explanation: "Incident owner. The incident detailed information includes its severity, summary of the number of entities involved, the raw events that triggered this incident, and the incident’s unique ID. All incidents start as unassigned. Each incident can be assigned to an owner, by setting the Incident owner field. Comments can also be added so that other analysts will be able to understand what was investigated and what your concerns are around the incident."
-    - content: "Number of entities involved"
-      isCorrect: false
-      explanation: "The number of entities involved are listed in the incident."
-  - content: "When creating roles within a security operations team to grant appropriate access to Azure Sentinel. Which role below would have to be created versus being built-in?"
+      explanation: "Microsoft Sentinel offers multiple benefits to security operations teams. It integrates with various Microsoft products, such as Azure Identity Protection and Microsoft Cloud App Security, and correlates millions of signals. It also incorporates external threat intelligence streams. Additionally, it provides cloud-native scalability and speed, enabling efficient security operations. Furthermore, it offers advanced threat detection and analytics capabilities, helping to minimize false positives and improve threat detection."
+  - content: "What is a key feature of Microsoft Sentinel's incident response capabilities?"
     choices:
-    - content: "Azure Sentinel reader"
-      isCorrect: false
-      explanation: "Reader is a valid role in Sentinel."
-    - content: "Azure Sentinel responder"
-      isCorrect: false
-      explanation: "Responder is a valid role in Sentinel."
-    - content: "Azure Sentinel owner"
+    - content: "AI-powered investigation and threat hunting."
       isCorrect: true
-      explanation: "The Sentinel built-in roles are reader, responder, and contributor."
-  - content: "An investigator wants to be proactive about looking for security threats. The security officer has read about Sentinel’s hunting capabilities and notebooks. What is an Azure Sentinel notebook?"
+      explanation: "A key feature of Microsoft Sentinel's incident response capabilities is AI-powered investigation and threat hunting. It leverages artificial intelligence to enhance the efficiency and effectiveness of incident response activities. By leveraging years of real-world cyber security experience, Microsoft Sentinel enables security teams to investigate threats at scale and proactively hunt for suspicious activities."
+    - content: "Infrastructure setup and maintenance automation."
+      isCorrect: false
+      explanation: "Infrastructure setup and maintenance automation: While Microsoft Sentinel may assist in automating common tasks, its incident response capabilities are primarily focused on investigation and threat hunting."
+    - content: "Native integration with Azure services like Log Analytics and Logic Apps."
+      isCorrect: false
+      explanation: "Native integration with Azure services like Log Analytics and Logic Apps."
+  - content: "How does Microsoft Sentinel leverage Azure services like Log Analytics and Logic Apps?"
     choices:
-    - content: "A step-by-step playbook that provides the ability to walk through the steps of an investigation and hunt."
+    - content: "It natively incorporates Log Analytics and Logic Apps as foundational components."
       isCorrect: true
-      explanation: "A step-by-step playbook. A notebook is a step-by-step playbook that enables the ability to walk through the steps of an investigation and hunt. Other hunting techniques are described by the other choices: built-in query, bookmarks, and event tables."
-    - content: "A table to query and locate actions like DNS events."
+      explanation: "Microsoft Sentinel leverages Azure services like Log Analytics and Logic Apps by natively incorporating them as foundational components. Log Analytics provides data collection and storage capabilities, while Logic Apps enables the automation and orchestration of workflows within Microsoft Sentinel."
+    - content: "It enables the collection of data at cloud scale from Azure services."
       isCorrect: false
-      explanation: "This is an event storage location."
-    - content: "A saved item for the creation of an incident for investigation."
+      explanation: "While Microsoft Sentinel does collect data at cloud scale, this option does not specifically highlight the role of Log Analytics and Logic Apps in leveraging Azure services."
+    - content: "It enhances investigation and detection with AI capabilities."
       isCorrect: false
-      explanation: "A playbook is more than a single saved item."
+      explanation: "While Microsoft Sentinel does enhance investigation and detection with AI capabilities, this option does not specifically address the role of Log Analytics and Logic Apps."

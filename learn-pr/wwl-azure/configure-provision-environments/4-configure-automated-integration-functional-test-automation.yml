@@ -4,13 +4,12 @@ title: Configure automated integration and functional test automation
 metadata:
   title: Configure automated integration and functional test automation
   description: "Configure automated integration and functional test automation"
-  ms.date: 05/17/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.prod: azure
+  ms.service: azure-devops
+durationInMinutes: 6
 content: |
   [!include[](includes/4-configure-automated-integration-functional-test-automation.md)]

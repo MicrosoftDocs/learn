@@ -10,7 +10,7 @@ metadata:
 title: Improve the developer experience of an API with Swagger documentation
 summary: Learn how to document an existing API, written in C#/ASP.NET Core, using Swashbuckle, Swagger/OpenAPI, and Swagger UI.
 abstract: |
-  In this module, you will:  
+  In this module, you will:
   - Learn about Swashbuckle, OpenAPI, Swagger UI
   - Enable OpenAPI for an C#/ASP.NET Core API
   - Use Swashbuckle in an C#/ASP.NET Core API
@@ -30,8 +30,6 @@ products:
 - azure
 - azure-clis
 - aspnet-core
-- dotnet
-- dotnet-core
 subjects:
 - development-tools
 units:

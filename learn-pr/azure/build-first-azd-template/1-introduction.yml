@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-first-azure-developer-cli-template.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Introductory unit of the Build Your First Azure Developer CLI Template module
+  ms.date: 07/17/2023
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: engagement-fy23
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

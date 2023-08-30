@@ -1,5 +1,4 @@
 
-
 Welcome to this interactive skills validation experience. Completing this module helps prepare you for the ***Implement storage for Azure Files and Azure Blob Storage*** assessment.
 
 In this module, you practice storing business data securely by using Azure Blob Storage and Azure Files. This module combines both learning and hands-on practice. The skills validated include creating storage accounts, storage containers, and file shares. Also, configuring encryption and networking to improve the security posture.

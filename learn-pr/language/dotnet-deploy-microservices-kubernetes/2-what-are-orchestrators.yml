@@ -7,10 +7,12 @@ metadata:
   ms.date: 08/03/2021
   author: codemillmatt
   ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.service: azure
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-dotnet
   ms.contributors:
   - masoucou-09032021
 durationInMinutes: 5

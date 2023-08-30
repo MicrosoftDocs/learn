@@ -3,11 +3,11 @@ uid: learn.azure-introduction-to-azure-search
 metadata:
   title: Introduction to Azure Cognitive Search
   description: "Explore Azure Cognitive Search to discover how to create an index, import data, and query the index for better search results."
-  ms.date: 09/02/2022
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: cognitive-search
+  ms.prod: azure
 title: Introduction to Azure Cognitive Search
 summary: Use Azure Cognitive Search to make your data searchable.
 abstract: |

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-interactive-components-blazor-web-apps.exercise-reuse-components-creating-templates
-title: Exercise - Reuse components by creating templates
+title: Exercise - Reuse components by creating a template
 metadata:
   unitType: learning-content 
-  title: "Exercise - Reuse components by creating templates"
-  description: "Create a template and use it to build a new order history page"
+  title: "Exercise - Reuse components by creating a template"
+  description: "Create a template and use it to build a new order history page."
   ms.date: 02/02/2023
   author: IEvangelist
   ms.author: dapine

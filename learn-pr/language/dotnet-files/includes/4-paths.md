@@ -2,11 +2,11 @@
 
 In the previous exercise, we didn't have many folders to parse. If you have a file system with many files and folders, manually building paths can be tedious. Thankfully, .NET provides some built-in constants and utility functions to make it easier to handle file paths.
 
-Here, you'll learn about some of the constants and utility functions in the `System.IO` namespace and the `System.Environment` type so that you can make your program smarter and more resilient.
+Here, you learn about some of the constants and utility functions in the `System.IO` namespace and the `System.Environment` type so that you can make your program smarter and more resilient.
 
 ## Determine the current directory
 
-Sometimes, you don't know in which directory or path your program should run. Let's say you want your program to use the current directory, but you don't know the path.
+Sometimes, you don't know which directory or path your program should run in. Let's say you want your program to use the current directory, but you don't know the path.
 
 .NET exposes the full path to the current directory via the `Directory.GetCurrentDirectory` method.
 
@@ -23,7 +23,7 @@ If you run the above code from the *201* folder in the following structure, `Dir
 
 ## Work with special directories
 
-.NET runs everywhere: on Windows, macOS, Linux, and even on mobile operating systems like iOS and Android. Each operating system may or may not have the concept of special system folders like a home directory, which is dedicated for user-specific files, or a desktop directory, or a directory for storing temporary files.
+.NET runs everywhere: on Windows, macOS, Linux, and even on mobile operating systems like iOS and Android. Each operating system may or may not have the concept of special system folders. Such as, a home directory, which is dedicated for user-specific files, or a desktop directory, or a directory for storing temporary files.
 
 Those types of special directories differ for each operating system. It would be cumbersome to try to remember each operating system's directory structure and perform switches based on the current OS.
 
@@ -70,7 +70,7 @@ For instance, if you want to get the path to the *stores/201* folder, you can us
 Console.WriteLine(Path.Combine("stores","201")); // outputs: stores/201
 ```
 
-Remember, you'd use the `Path.Combine` or `Path.DirectorySeparatorChar` class instead of hard-coding strings, because your program might be running on many different operating systems. The `Path` class will always format the paths correctly for whatever operating system it's running on.
+Remember, you should use the `Path.Combine` or `Path.DirectorySeparatorChar` class instead of hard-coding strings, because your program might be running on many different operating systems. The `Path` class always formats the paths correctly for the operating system it's running on.
 
 > [!TIP]
 > The `Path` class doesn't care whether things actually exist. Paths are conceptual, not physical, and the class is building and parsing strings for you.
@@ -95,4 +95,4 @@ FileInfo info = new FileInfo(fileName);
 Console.WriteLine($"Full Name: {info.FullName}{Environment.NewLine}Directory: {info.Directory}{Environment.NewLine}Extension: {info.Extension}{Environment.NewLine}Create Date: {info.CreationTime}"); // And many more
 ```
 
-There are many more useful properties and utility methods on the `Path`, `DirectoryInfo`, and `FileInfo` classes, but these are the core concepts that you'll likely use most often. In the next exercise, you'll compose paths and identify .json files.
+There are many more useful properties and utility methods on the `Path`, `DirectoryInfo`, and `FileInfo` classes, but these core concepts are the ones that you're likely to use most often. In the next exercise, you'll compose paths and identify .json files.

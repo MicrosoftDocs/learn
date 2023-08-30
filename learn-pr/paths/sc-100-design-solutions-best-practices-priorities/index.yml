@@ -14,7 +14,7 @@ prerequisites: |
   -   Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
 summary: |
   You learn how to use critical Microsoft security best practices such as the Cloud Adoption Framework (CAF), Well-Architected Framework (WAF), Microsoft Cybersecurity Reference Architecture (MCRA) to improve an organizations security posture, apply zero trust principles and minimize risk from emerging attacks.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/sc-100-design-solutions-that-align-security-best-practices-priorities.svg
 levels:
 - advanced
 roles:

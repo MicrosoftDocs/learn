@@ -394,7 +394,7 @@ $ curl https://${WEBAPP_NAME}.azurewebsites.net/area
 ["North America","Asia","Africa","Europe","South America","Oceania","Antarctica"]$ 
 ```
 
-If you specify the continent in the URL, you can get all the countries in the specified continent.
+If you specify the continent in the URL, you can get all the countries/regions in the specified continent.
 
 :::image type="content" source="../media/rest-endpoint-continent.png" alt-text="Screenshot that shows continent as the REST endpoint.":::
 
@@ -429,7 +429,7 @@ $ curl https://${WEBAPP_NAME}.azurewebsites.net/area/Asia | jq '.[] | { name: .n
 ....
 ```
 
-Finally, if you specify a country code after `/countries`, you can get all the cities that have population greater than 1 million within the country/region.
+Finally, if you specify a country/region code after `/countries`, you can get all the cities that have population greater than 1 million within the country/region.
 
 :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot that shows cities as the REST endpoint.":::
 

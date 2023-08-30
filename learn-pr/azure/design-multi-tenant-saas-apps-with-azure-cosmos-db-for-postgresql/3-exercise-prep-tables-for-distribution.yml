@@ -3,7 +3,7 @@ uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.exe
 title: Exercise - Prepare tables for distribution
 metadata:
   title: Exercise - Prepare tables for distribution
-  description: "Before migrating a multi-tenant SaaS database to a multi-node cluster, you must prepare the tables in the database for distribution. In this exercise, you execute the steps required to prepare tables to be distributed in a multi-node Azure Cosmos DB for PostgreSQL cluster."
+  description: "Prepare tables to be distributed in a multi-node Azure Cosmos DB for PostgreSQL cluster."
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
@@ -11,7 +11,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-prep-tables-for-distribution.md)]

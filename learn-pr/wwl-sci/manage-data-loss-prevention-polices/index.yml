@@ -3,7 +3,7 @@ uid: learn.wwl.manage-data-loss-prevention-polices
 metadata:
   title: Manage data loss prevention policies and reports in Microsoft 365
   description: "Manage data loss prevention policies and reports in Microsoft 365"
-  ms.date: 06/01/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: riswinto
   ms.topic: interactive-tutorial
@@ -34,7 +34,6 @@ units:
 - learn.wwl.manage-data-loss-prevention-polices.configure-data-loss-prevention-for-policy-precedence
 - learn.wwl.manage-data-loss-prevention-polices.implement-data-loss-prevention-policies-test-mode
 - learn.wwl.manage-data-loss-prevention-polices.use-data-loss-prevention-reports
-- learn.wwl.manage-data-loss-prevention-polices.review-analyze-data-loss-prevention-reports
 - learn.wwl.manage-data-loss-prevention-polices.manage-permissions-for-data-loss-prevention-reports
 - learn.wwl.manage-data-loss-prevention-polices.manage-respond-data-loss-prevention-policy-violations
 - learn.wwl.manage-data-loss-prevention-polices.knowledge-check

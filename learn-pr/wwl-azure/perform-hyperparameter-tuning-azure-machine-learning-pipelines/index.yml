@@ -29,6 +29,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.introduction
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.video
 - learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.define-search-space
 - learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.configure-sampling-method
 - learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.configure-early-termination

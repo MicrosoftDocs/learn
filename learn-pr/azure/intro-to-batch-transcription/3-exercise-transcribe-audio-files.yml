@@ -9,8 +9,10 @@ metadata:
   ms.author: eur
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 5
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/3-exercise-transcribe-audio-files.md)]
+  [!INCLUDE[](includes/3-exercise-transcribe-audio-files.md)]

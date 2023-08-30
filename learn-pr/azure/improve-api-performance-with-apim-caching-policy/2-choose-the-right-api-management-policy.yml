@@ -3,8 +3,8 @@ uid: learn.azure.improve-api-performance-with-apim-caching-policy.2-choose-the-r
 title: Choose the right API Management policy
 metadata:
   title: Choose the right API Management policy
-  description: In this unit, you will learn about API Management policies and how to execute on API requests.
-  ms.date: 05/15/2022
+  description: In this unit, you learn about API Management policies and how to execute the on API requests.
+  ms.date: 07/11/2023
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial

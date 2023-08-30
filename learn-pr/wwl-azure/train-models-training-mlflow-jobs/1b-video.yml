@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-models-training-mlflow-jobs.video
+title: Video - Track model training with MLFlow in jobs
+metadata:
+  title: Video - Track model training with MLFlow in jobs
+  description: "Optional video about tracking model training with MLFlow in jobs"
+  ms.date: 07/10/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+durationInMinutes: 20
+content: |
+  [!include[](includes/1b-video.md)]

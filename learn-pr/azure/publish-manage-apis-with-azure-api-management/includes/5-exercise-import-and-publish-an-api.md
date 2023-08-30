@@ -1,8 +1,6 @@
- Now that you've set up a gateway, we can share the API by importing it into API Management, and then make it available by publishing it.
+ Now that you've set up a gateway, you're ready to import and publish an API so that partners can access inventory and product information.
 
-You're now ready to import and publish an API so that partners can access inventory and product information.
-
-Here, you'll import an API that exposes an OpenAPI endpoint. You'll test the imported API using visualization, and then publish the API.
+Here, you'll import your web API that exposes an OpenAPI endpoint. You'll test the imported API using visualization, and then publish the API.
 
  > [!NOTE]
  > This exercise uses the resources that you set up in the previous exercise.

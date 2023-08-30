@@ -8,6 +8,7 @@ metadata:
   ms.date: 08/31/2021
   author: csharpfritz
   ms.author: jefritz
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.service: azure
 durationInMinutes: 1

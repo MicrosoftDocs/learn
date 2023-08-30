@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.configure-azure-key-vault-networking-settings
+metadata:
+  title: Configure Azure Key Vault networking settings
+  description: "Learn to configure Azure Key Vault networking settings via the Azure portal, enabling secure access control to your vault, protecting sensitive keys and secrets."
+  ms.date: 08/02/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Configure Azure Key Vault networking settings
+summary: In this module, you'll learn to configure Azure Key Vault networking settings via the Azure portal, ensuring secure and controlled access to your stored secrets.
+abstract: |
+  By the end of this training module, participants will:
+  - Understand the importance of configuring networking settings for Azure Key Vault in ensuring secure access and communication.
+  - Learn how to configure network access control for Azure Key Vault using virtual network service endpoints and private endpoints.
+  - Gain insights into configuring firewall rules and virtual network service endpoints to restrict access to Key Vault.
+  - Understand the process of configuring private endpoints to securely access Key Vault from virtual networks.
+  - Recognize the benefits of properly configuring networking settings for Azure Key Vault in enhancing overall security.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-key-vault
+- azure-portal
+- azure-private-link
+- azure-virtual-network
+- defender-for-cloud
+units:
+- learn.wwl.configure-azure-key-vault-networking-settings.introduction
+- learn.wwl.configure-azure-key-vault-networking-settings.azure-key-vault-basic-concepts
+- learn.wwl.configure-azure-key-vault-networking-settings.best-practices-for-azure-key-vault
+- learn.wwl.configure-azure-key-vault-networking-settings.azure-key-vault-security
+- learn.wwl.configure-azure-key-vault-networking-settings.review-azure-key-vault-network-security
+- learn.wwl.configure-azure-key-vault-networking-settings.azure-key-vault-soft-delete-overview
+- learn.wwl.configure-azure-key-vault-networking-settings.add-virtual-network-rules
+- learn.wwl.configure-azure-key-vault-networking-settings.knowledge-check
+- learn.wwl.configure-azure-key-vault-networking-settings.summary
+badge:
+  uid: learn.wwl.configure-azure-key-vault-networking-settings.badge

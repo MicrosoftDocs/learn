@@ -9,7 +9,9 @@ metadata:
   ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.service: azure
-  ms.custom: devdivchpfy22
+  ms.custom:
+    - devdivchpfy22
+    - devx-track-js
 durationInMinutes: 1
 content: |
 

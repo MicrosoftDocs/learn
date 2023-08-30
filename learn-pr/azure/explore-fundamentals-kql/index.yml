@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.azure.explore-fundamentals-kql
+metadata:
+  title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
+  description: "Learn about the basics of Kusto Query Language (KQL), and the various Microsoft products that use it."
+  ms.date: 06/07/2023
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
+summary: "Learn about the basics of Kusto Query Language (KQL), and the various Microsoft products that use it."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Identify common elements of a query
+    - Describe key features of a Kusto Query Language (KQL) query
+    - Describe the different environments in which you can use KQL
+prerequisites: |
+  -  Conceptual understanding of data structures such as tables, columns, and rows
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - data-scientist 
+  - data-analyst 
+  - data-engineer 
+  - technology-manager 
+products: 
+  - azure-data-explorer
+  - azure-monitor
+  - azure-sentinel
+  - azure-log-analytics
+  - azure-resource-graph
+  - microsoft-defender
+  - configuration-manager
+  - fabric
+subjects:
+  - data-science
+  - data-visualization
+  - big-data
+units:
+- learn.azure.explore-fundamentals-kql.introduction
+- learn.azure.explore-fundamentals-kql.query-basics
+- learn.azure.explore-fundamentals-kql.kql-query-environments
+- learn.azure.explore-fundamentals-kql.kql-query-structure
+- learn.azure.explore-fundamentals-kql.exercise-1
+- learn.azure.explore-fundamentals-kql.query-types
+- learn.azure.explore-fundamentals-kql.exercise-2
+- learn.azure.explore-fundamentals-kql.knowledge-check
+- learn.azure.explore-fundamentals-kql.summary
+badge:
+  uid: learn.azure.explore-fundamentals-kql.badge

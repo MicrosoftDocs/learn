@@ -5,8 +5,9 @@ metadata:
   title: Exercise - Visualize inputs and outputs
   description: Exercise unit about visualizing machine learning inputs and outputs
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.service: machine-learning
+  author: msakande
+  ms.author: mopeakande
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

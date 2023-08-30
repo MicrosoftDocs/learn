@@ -14,16 +14,16 @@ After completing this module, students and professionals can:
 
 ## Prerequisites
 
-For some exercises, you must create an Azure DevOps Organization and a Team Project. If you don't have it yet, see the following:
+For some exercises, you must create an Azure DevOps Organization and a Team Project. If you don't have them yet, see the following:
 
-- [Create an organization - Azure DevOps.](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization)
+- [Create an organization - Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization)
 - [Create a project in Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/projects/create-project)
 
 We recommend you understand Azure DevOps and pipeline management to get the most out of this course.
 
 For study recommendations, see:
 
-- [Configure secure access to pipeline resources - Introduction.](/training/modules/configure-secure-access-pipeline-resources/1-introduction)
+- [Configure a project and repository structure to support secure pipelines - Introduction.](/training/modules/configure-project-repository-structure-support-secure-pipelines/includes/1-introduction)
 
 Ensure you have all the necessary resources and access to Azure DevOps before starting the course.
 

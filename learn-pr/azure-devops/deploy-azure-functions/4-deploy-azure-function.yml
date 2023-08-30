@@ -9,6 +9,7 @@ metadata:
   ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
 durationInMinutes: 15
 content: |
   [!include[](includes/4-deploy-azure-functions.md)]

@@ -25,8 +25,6 @@ roles:
 products:
 - defender-for-cloud-apps
 - m365
-- m365-information-protection
-- m365-compliance-center
 - microsoft-purview
 subjects:
 - compliance

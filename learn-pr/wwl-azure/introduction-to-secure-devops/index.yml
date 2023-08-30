@@ -3,11 +3,10 @@ uid: learn.wwl.introduction-to-secure-devops
 metadata:
   title: Introduction to Secure DevOps
   description: "Introduction to Secure DevOps"
-  ms.date: 02/10/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.service: azure-devops
 title: Introduction to Secure DevOps
 summary: This module introduces DevSecOps concepts, SQL injection attacks, threat modeling, and security for continuous integration.
 abstract: |

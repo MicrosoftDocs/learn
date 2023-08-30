@@ -20,6 +20,7 @@ prerequisites: |
   - Familiarity with building and deploying Xamarin.Forms apps
   - Familiarity with the concepts of accessibility, disability, and inclusion
 iconUrl: /training/achievements/xamarin-forms-accessibility.svg
+hidden: true
 levels:
 - intermediate
 roles:
