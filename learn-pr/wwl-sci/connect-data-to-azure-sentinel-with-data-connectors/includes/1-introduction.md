@@ -14,3 +14,10 @@ After completing this module, you'll be able to:
 ## Prerequisites
 
 Basic experience with Microsoft Azure operations.
+
+## Interactive Lab Simulation
+
+> [!NOTE]
+> Select the thumbnail image to start the lab simulation. You may find slight differences between this interactive simulation and this modules content, but the core concepts and ideas being demonstrated are the same. When you're done, be sure to return to this page so you can continue learning.
+
+[![Screenshot of the lab simulation page.](../media/sc-200-lab-simulation-connect-data-to-microsoft-sentinel-using-data-connectors.png)](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Connect%20data%20to%20Microsoft%20Sentinel%20using%20data%20connectors)
