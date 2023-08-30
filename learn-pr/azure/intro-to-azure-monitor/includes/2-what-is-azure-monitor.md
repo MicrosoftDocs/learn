@@ -23,19 +23,19 @@ Monitoring provides the following important benefits:
 
 ## Overview of Azure Monitor
 
-When you run applications built on various services and resources, a key element of monitoring is the ability to relate your applications' performance and health to the components they're built on. This *observability* lets you analyze and troubleshoot application issues effectively. Azure Monitor provides features and tools for collecting, managing, and analyzing IT data from all of your Azure, other cloud, and on-premises resources.
+When you run applications built on various services and resources, a key element of monitoring is the ability to relate your applications' performance and health to the components they're built on. This *observability* lets you analyze and troubleshoot application issues effectively.
 
 To evaluate the performance of your applications, you need monitoring where and when application experiences demand it. You can customize Azure Monitor monitoring and responses to your needs.
 
-The following diagram shows a high-level architectural view of Azure Monitor.
+Azure Monitor provides features and tools for collecting, managing, and analyzing IT data from all of your Azure, other cloud, and on-premises resources. The following diagram shows a high-level architectural view of Azure Monitor.
 
 :::image type="content" source="../media/overview-simple.png" alt-text="Diagram that shows an overview of Azure Monitor with data sources on the left and features that use the collected data at right." border="false" lightbox="../media/overview-blowout.svg":::
 
 ### Data collection and storage
 
-As soon as you start adding resources to an Azure subscription, Azure Monitor starts collecting data about the resources. Azure *activity logs* record when resources are created or modified. You can use activity log information to trace resource creation and modification history.
+Azure *activity logs* record when Azure resources are created or modified. You can use activity log information to trace resource creation and modification history.
 
-Azure Monitor provides the following capabilities for collecting, storing, and managing monitoring data:
+As soon as you add resources to an Azure subscription, Azure Monitor starts collecting data about the resources. Azure Monitor provides the following capabilities for collecting, storing, and managing monitoring data:
 
 - Native monitoring of your entire Azure deployment.
 - Native integration with the Azure Event Hubs data streaming service.
@@ -65,7 +65,7 @@ Azure Monitor offers a broad set of tools and capabilities to help you analyze a
 
 Interactive monitoring is one way to monitor your application. Another option is to configure alerts to send text messages or email to a person or team for further investigation, or to trigger response actions in certain situations.
 
-Azure Monitor Workbooks provide a flexible canvas for analyzing data and creating rich visual reports in the Azure portal. Workbooks can tap into multiple Azure data sources and combine them into unified interactive experiences. You can use the ready-made workbooks that Azure Monitor provides, or create your own workbooks from predefined templates.
+Azure Monitor workbooks provide a flexible canvas for analyzing data and creating rich visual reports in the Azure portal. Workbooks can tap into multiple Azure data sources and combine them into unified interactive experiences. You can use the ready-made workbooks that Azure Monitor provides, or create your own workbooks from predefined templates.
 
 The following image shows three types of workbooks that display logged data in different chart and table formats.
 

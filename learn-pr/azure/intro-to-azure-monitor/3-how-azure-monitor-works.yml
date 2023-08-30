@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-monitor.how-azure-monitor-works
-title: Azure Monitor Metrics, Logs, and Application Insights
+title: Azure Monitor Metrics and Logs
 metadata:
   unitType: learning-content
-  title: Azure Monitor Metrics, Logs, and Application Insights
-  description: Learn about Azure Monitor Metrics for quantitative data, Azure Monitor Logs for textual data, and Application Insights for application performance monitoring.
+  title: Azure Monitor Metrics and Logs
+  description: Learn about Azure Monitor Metrics for collecting and analyzing quantitative data, and Azure Monitor Logs for textual and unstructured data.
   ms.prod: learning-azure-monitor
   ms.date: 4/15/2021
   author: guywi-ms

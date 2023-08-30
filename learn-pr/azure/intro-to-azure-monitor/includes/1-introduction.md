@@ -2,9 +2,9 @@ Monitoring provides data and insights about many aspects of IT performance, secu
 
 :::image type="content" source="../media/monitoring-panel-options-small.png" alt-text="Screenshot of monitoring options in the Azure portal." lightbox="../media/monitoring-panel-options.png":::
 
-For example, one reason for hosting web applications on Azure is the ability to scale up or scale out resources when needed, then automatically scale them back when resource needs drop off. But initially, you don't always know exactly where the capacity issues are. You can use Azure Monitor to collect metrics and logs to determine where your needs are, so you can base your scaling strategy on concrete data.
+One reason for hosting workloads on Azure is the ability to scale up or scale out resources when needed, then automatically scale them back when resource needs drop off. But initially, you don't always know exactly where the capacity issues are. You can use Azure Monitor to collect metrics and logs to determine where your needs are, so you can base your scaling strategy on concrete data.
 
-Scalability isn't the only reason to host applications on Azure, and deploying resources isn't the end of your involvement. To prove your return on investment, you need to know whether you're gaining benefits from Azure hosting. Azure Monitor can help you understand and provide the reliability, security, and performance you expect.
+Scalability isn't the only reason to host workloads on Azure, and deploying resources isn't the end of your involvement. To prove your return on investment, you need to know whether you're gaining benefits from Azure hosting. Azure Monitor can help you understand and provide the reliability, security, and performance you expect for your users and stakeholders.
 
 ## Learning objectives
 

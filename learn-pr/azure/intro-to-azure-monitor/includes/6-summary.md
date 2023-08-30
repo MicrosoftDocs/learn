@@ -1,8 +1,8 @@
-This module presented an overview of monitoring, Azure Monitor, and Azure Monitor capabilities that are important to the success of your Azure web application. You learned about Azure Monitor Metrics, Azure Monitor Logs, and Application Insights, three key ways to monitor the health, behavior, and performance of Azure applications and infrastructure.
+This module presented an overview of monitoring, Azure Monitor, and Azure Monitor capabilities that are important to the success of your Azure deployments. You learned about Azure Monitor Metrics and Azure Monitor Logs, two key ways to monitor the health, behavior, and performance of Azure applications and infrastructure.
 
 You also saw how you can consume and transmit monitoring information with Azure Monitor Insights, visualizations, and dashboards. You learned about alerts and automated actions that can proactively respond to and sometimes correct application issues.
 
-Azure Monitor is a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. Azure Monitor helps you evaluate application performance and proactively identify issues to maximize the availability and performance of your applications.
+Azure Monitor is a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. Azure Monitor helps you evaluate performance and proactively identify issues to maximize the availability and performance of your Azure resources.
 
 ## Learn more
 
