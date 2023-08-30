@@ -14,7 +14,7 @@ In this exercise, you'll create a virtual machine and generalize it. You'll then
 
 ## Create a virtual machine
 
-In this task, you'll quickly create a virtual machine that runs a simple web app. The web app displays the the host machine's name. You'll use this virtual machine as the basis for the rest of the exercise.
+In this task, you'll quickly create a virtual machine that runs a simple web app. The web app displays the host machine's name. You'll use this virtual machine as the basis for the rest of the exercise.
 
 ::: zone pivot="windows-cloud"
 
