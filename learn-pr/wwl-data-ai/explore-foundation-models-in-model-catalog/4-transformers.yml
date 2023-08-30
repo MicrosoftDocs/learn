@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.explore-foundation-models-in-model-catalog.transformers
 title: |
-  Understand the transformer architecture used for NLP
+  Understand the transformer architecture used for Natural Language Processing (NLP)
 metadata:
   title: |
     Understand the transformer architecture used for natural language processing
