@@ -56,4 +56,4 @@ Now we'll use a combination of batch commands and Git commands to create a Git r
 :::image type="content" source="../media/vscode-git-configuration-commands-1dafe3b1.png" alt-text="Screenshot of VS Code with the configuration commands run.":::
 
 
-Congratulations! You've sucesfully installed Git and Visual Studio Code. You've also configured Visual Studio Code to start working with your Git repository.
+Congratulations! You've successfully installed Git and Visual Studio Code. You've also configured Visual Studio Code to start working with your Git repository.
