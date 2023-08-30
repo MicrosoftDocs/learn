@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Synchronize data on Azure SQL Database with SQL Data Sync
   description: "Learning how SQL Data Sync works and how to use it in order to synchronize databases tables either automatically or manually."
-  ms.date: 06/12/2023
+  ms.date: 09/01/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: interactive-tutorial

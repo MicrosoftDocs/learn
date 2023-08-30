@@ -36,12 +36,9 @@ You can use CDC by running T-SQL commands.
 
 ### Enabling CDC on your database
 
-In order to enable CDC on Azure SQL Database, run the following:
+In order to enable CDC on your Azure SQL Database, run the following:
 
 ```sql
-USE MyDB  
-GO
-
 EXEC sys.sp_cdc_enable_db
 GO
 ```
@@ -66,7 +63,7 @@ EXEC sys.sp_cdc_enable_table
 
 **You can specify the following options when creating a capture instance:**
 
-By default, the change table is located in the database's default filegroup. Database owners who want to control the placement of individual change tables can use the **@filegroup_name** parameter to specify a particular filegroup for the change table associated with the capture instance. The named filegroup must already exist. Generally, we recommend that change tables be placed in a filegroup separate from source tables.
+By default, the change table is located in the database's default filegroup. Database owners who want to control the placement of individual change tables can use the **@filegroup_name** parameter to specify a particular filegroup for the change table associated with the capture instance. The named filegroup must already exist. Generally, we recommend that change tables be placed in a filegroup separate from source tables. In Azure SQL Database, users can't create their own filegroups, but since the Azure service adds and manages filegroups automatically as needed, it's possible to place individual change tables into different filegroups, if they exist. 
 
 If the parameter **@supports_net_changes** is set to **1**, a net changes function is also generated for the capture instance. This function returns only one change for each distinct row changed in the interval specified in the call. To support net changes queries, the source table must have a primary key or unique index to uniquely identify rows. If a unique index is used, the name of the index must be specified using the @index_name parameter. The columns defined in the primary key or unique index must be included in the list of source columns to be captured.
 
@@ -86,10 +83,9 @@ If a change data capture-enabled table is dropped, change data capture metadata 
 The following example shows how you can disable CDC on a table:
 
 ```sql
+-- Connect to your target Azure SQL Database
 EXEC sys.sp_cdc_disable_table 
-@source_schema = N'dbo', 
-@source_name   = N'MyTable',
-@capture_instance = N'dbo_MyTable'
+GO
 ```
 
 > [!NOTE]

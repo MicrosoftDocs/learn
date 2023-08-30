@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Data tracking and synchronization with Azure SQL Database
   description: "Azure SQL data tracking module that covers database synchronization, data changes tracking and recording. The module explores tools such as change data capture (CDC), SQL Data Sync, and change tracking."
-  ms.date: 06/12/2023
+  ms.date: 09/01/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth

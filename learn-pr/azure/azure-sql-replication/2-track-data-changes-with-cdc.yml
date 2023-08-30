@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Track data changes on your Azure SQL Databases with change data capture (CDC)
   description: "Introducing change data capture (CDC) for Azure SQL Databases - the technical architecture of the product and the procedures to enable and disable it."
-  ms.date: 06/12/2023
+  ms.date: 09/01/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: interactive-tutorial

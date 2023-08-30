@@ -111,12 +111,10 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ### Enable CDC on your database
 
-In SQL Server Management Studio (SSMS), open a new query window and enable CDC on the `AdventureWorksLT` database by running the following query:
+In SQL Server Management Studio (SSMS), open a new query window and enable CDC on the `AdventureWorksLT` database by running the following T-SQL:
 
 ```sql
-USE AdventureWorksLT
-GO
-
+-- Connect to your AdventureWorksLT  Azure SQL Database, enable CDC
 EXEC sys.sp_cdc_enable_db
 GO
 ```
@@ -125,7 +123,7 @@ GO
 
 Once you enable CDC on the database, you'll notice the CDC artifacts being created in the same source database (five system tables under the CDC schema).
 
-1. Enable CDC on table `SalesLT.Customer`:
+1. Enable CDC for table `SalesLT.Customer` on the `AdventureWorksLT` database by running the following T-SQL:
 
     ```sql
     EXEC sys.sp_cdc_enable_table
@@ -162,7 +160,7 @@ Once you enable CDC on the database, you'll notice the CDC artifacts being creat
 
     ```sql
     UPDATE [SalesLT].[Customer]
-    SET FirstName = 'Abhiman', MiddleName = 'K.' 
+    SET FirstName = 'Bob', MiddleName = 'M.' 
     WHERE CustomerID = 1;
     ```
 
