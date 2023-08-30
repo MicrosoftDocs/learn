@@ -1,6 +1,6 @@
 Statistical techniques were relatively good at **Natural Language Processing** (**NLP**) tasks like text classification. For tasks like translation, there was still much room for improvement.
 
-A recent technique that has had advanced the field of **Natural Language Processing** (**NLP**) for tasks like translation is **deep learning**.
+A recent technique that has advanced the field of **Natural Language Processing** (**NLP**) for tasks like translation is **deep learning**.
 
 When you want to translate text, you shouldn't just translate each word to another language. You may remember translation services from years ago that translated sentences too literally, often resulting in interesting results. Instead, you want a language model to *understand* the meaning (or *semantics*) of a text, and use that information to create a grammatically correct sentence in the target language.
 
