@@ -12,7 +12,7 @@ In other words, machine learning and deep learning techniques can be used to rea
 
 ## Understand natural language processing
 
-**Natural Language Processing** (**NLP**) is a type of AI that focuses on understanding, interpreting, and generating human language. Some common NLP use cases are:
+**Natural language processing** (**NLP**) is a type of AI that focuses on understanding, interpreting, and generating human language. Some common NLP use cases are:
 
 :::image type="content" source="../media/natural-language-processing.png" alt-text="Diagram visualizing six common use cases for natural language processing tasks.":::
 
