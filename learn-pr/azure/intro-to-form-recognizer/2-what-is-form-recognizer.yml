@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-form-recognizer.what-is-form-recognizer
-title: What is Form Recognizer?
+title: What is Azure AI Document Intelligence?
 metadata:
-  title: What is Form Recognizer?
-  description: What is Form Recognizer?
+  title: What is Azure AI Document Intelligence?
+  description: What is Azure AI Document Intelligence?
   ms.date: 03/14/2021
   author: laujan
   ms.author: lajanuar
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-what-is-form-recognizer.md)]
+  [!INCLUDE[](includes/2-what-is-form-recognizer.md)]

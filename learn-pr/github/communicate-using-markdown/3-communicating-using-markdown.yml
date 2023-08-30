@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.communicate-using-markdown.3-communicating-using-markdown
-title:  Exercise - Communicate using Markdown
+title: Exercise - Communicate using Markdown
 metadata:
-  title:  Exercise - Communicate using Markdown
-  description: Learn to use Markdown to communicate your ideas through web site content, issue discussions, and pull requests.
+  title: Exercise - Communicate using Markdown
+  description: This content is part of the "Communicate effectively on GitHub using Markdown" module.
   ms.date: 06/26/2020
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: training-unit
 durationInMinutes: 48
 content: |
   [!include[](includes/3-communicating-using-markdown.md)]

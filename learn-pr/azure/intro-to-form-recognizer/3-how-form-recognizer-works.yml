@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-form-recognizer.how-form-recognizer-works
-title: How Form Recognizer works
+title: How Azure AI Document Intelligence works
 metadata:
-  title: How Form Recognizer works
-  description: How Form Recognizer works
+  title: How Azure AI Document Intelligence works
+  description: How Azure AI Document Intelligence works
   ms.date: 03/14/2021
   author: laujan
   ms.author: lajanuar
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-how-form-recognizer-works.md)]
+  [!INCLUDE[](includes/3-how-form-recognizer-works.md)]
