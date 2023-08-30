@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure Monitor          # Do not edit: title must be "Introduction to <product>"
   description: "Learn how to use Azure Monitor to provide insights into your Azure resource performance and operations."                 # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 08/22/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 08/30/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: guywi-ms     # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: guywild          # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"

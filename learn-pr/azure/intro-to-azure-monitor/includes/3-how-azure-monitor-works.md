@@ -1,6 +1,4 @@
-Your application might use several resources and services, like virtual machines (VMs), databases, web hosting services, and a payment gateway. In this unit, you learn about three key Azure Monitor features that monitor the health, behavior, and performance of your Azure applications, resources, networks, and infrastructure.
-
-Azure Monitor Metrics and Azure Monitor Logs provide two types of data that are essential for understanding application and resource behavior and performance. Application Insights provides application performance monitoring (APM).
+Your Azure applications and infrastructure might use several resources and services, like virtual machines (VMs), databases, web hosting services, and payment gateways. In this unit, you learn about the key Azure Monitor features that monitor the health, behavior, and performance of your Azure applications, resources, networks, and infrastructure. Azure Monitor Metrics and Azure Monitor Logs provide two types of data that are essential for understanding application and resource behavior and performance.
 
 ## Azure Monitor Metrics
 
@@ -8,7 +6,13 @@ Metrics are quantitative measurements that show snapshots of application or reso
 
 Metrics can monitor various aspects of an application or resource, such as resource utilization, response times, error rates, and throughput. Common examples of metrics include CPU usage, memory usage, network latency, and transaction rates.
 
-Metrics are well-suited for real-time monitoring. You can use metrics to trigger alerts when defined thresholds are reached.
+A list of resource-specific metrics is automatically available for each resource type in your Azure subscription. You can use the Azure Monitor Metrics Explorer to interactively analyze the data in your metrics database and chart the values of multiple metrics over time.
+
+To see the metrics for any resource in the Azure portal, select **Metrics** under **Monitoring** in the left navigation on that resource's page. Then select the metric you need from the **Metric** dropdown. You can pin the charts to a dashboard to view them with other visualizations.
+
+For example, the following **Requests** metric line chart shows the sum aggregation of requests for the **Contoso-web-sales** application.
+
+:::image type="content" source="../media/web-app-metrics.png" alt-text="Screenshot of the Monitoring option selected in the Azure portal for a web app, showing chart of requests for the web app." lightbox="../media/web-app-metrics.png":::
 
 Azure Monitor Metrics can collect several types of metrics, including:
 
@@ -16,7 +20,7 @@ Azure Monitor Metrics can collect several types of metrics, including:
 - **Custom metrics**. Azure Monitor can also collect metrics from other sources, including applications and agents running on VMs. You can send custom metrics to Azure Monitor via the Azure Monitor Agent, other agents and extensions, or directly to the Azure Monitor REST API.
 - **Prometheus metrics**. Azure Monitor managed service for Prometheus collects metrics from Azure Kubernetes Service (AKS) or other Kubernetes clusters. Prometheus metrics share some characteristics with platform and custom metrics, but have different features to support open-source analysis and alerting tools like PromQL and Grafana.
 
-You can use the Azure Monitor Metrics explorer to interactively analyze the data in your metrics database and chart the values of multiple metrics over time. To see the metrics for your application or any other resource in the Azure portal, select **Metrics** under **Monitoring** in the left navigation on that resource's page. Then select the metric you need from the **Metric** dropdown. You can pin the charts to a dashboard to view them with other visualizations.
+Metrics are well-suited for real-time monitoring. You can use metrics to trigger alerts when defined thresholds are reached.
 
 ## Azure Monitor Logs
 
@@ -38,20 +42,4 @@ You can use Azure Monitor Log queries in the following scenarios:
 - Do complex data analysis to identify critical patterns in your monitoring data.
 - Use queries in alert rules to be proactively notified of issues.
 - Visualize query results in a workbook or dashboard.
-
-## Application Insights
-
-The Application Insights feature of Azure Monitor provides application performance monitoring (APM) from app development, through test, and into production. You can *proactively* monitor to see how well an application is performing, and *reactively* review application execution data to find the cause of an incident.
-
-Along with collecting metrics and telemetry data that describe application activities and health, you can use Application Insights to collect and store application *trace logging* data. The log trace is associated with other telemetry to give a detailed view of activity. To add trace logging to existing applications, you only need to provide a destination for the logs. You seldom need to change the logging framework.
-
-Application Insights supports distributed tracing, which is also known as distributed component correlation. This feature allows searching for and visualizing the end-to-end flow of a specific execution or transaction. The ability to trace activity from end to end is important for applications built as distributed components or microservices.
-
-Application Insights also includes the following features:
-
-- **Live metrics** observe activity from your deployed application in real time with no effect on the host environment.
-- **Availability monitoring**, also known as *synthetic transaction monitoring*, probes the external endpoints of your applications to test overall availability and responsiveness over time.
-- **Usage monitoring** helps you understand which features are popular with users and how users interact and use your application.
-- **Smart detection** detects failures and anomalies automatically through proactive telemetry analysis.
-- **Application Map** is a high-level, top-down view of your application architecture with at-a-glance visual references to component health and responsiveness.
 

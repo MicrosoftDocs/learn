@@ -1,8 +1,8 @@
-This unit gives you an overview of monitoring and Azure Monitor. You learn about Azure Monitor capabilities that are important for the success of your Azure web application.
+This unit gives you an overview of monitoring and Azure Monitor. You learn about Azure Monitor capabilities that are important for the success of your Azure applications and resources.
 
 ## Introduction to monitoring
 
-Besides your web app, your IT environment contains other resources and services, networks, and infrastructure. Monitoring tracks the state, health, behavior, and performance of your Azure applications and IT environment. One goal of monitoring is to ensure that your applications and environment are operating optimally, securely, and reliably. Another goal is to detect and help address any issues.
+Your IT environment might contain many resources, services, networks, and other infrastructure. Monitoring tracks the state, health, behavior, and performance of your applications and IT environment. One goal of monitoring is to ensure that your applications and environment are operating optimally, securely, and reliably. Another goal is to detect and help address any issues.
 
 Monitoring includes the following key activities:
 
@@ -23,13 +23,17 @@ Monitoring provides the following important benefits:
 
 ## Overview of Azure Monitor
 
-When you run an application built on various services and resources, a key element of monitoring is the ability to relate your application's performance and health to the components it's built on. This *observability* lets you analyze and troubleshoot application issues effectively. Azure Monitor provides features and tools for collecting, managing, and analyzing IT data from all of your Azure, other cloud, and on-premises resources.
+When you run applications built on various services and resources, a key element of monitoring is the ability to relate your applications' performance and health to the components they're built on. This *observability* lets you analyze and troubleshoot application issues effectively. Azure Monitor provides features and tools for collecting, managing, and analyzing IT data from all of your Azure, other cloud, and on-premises resources.
+
+To evaluate the performance of your applications, you need monitoring where and when application experiences demand it. You can customize Azure Monitor monitoring and responses to your needs.
 
 The following diagram shows a high-level architectural view of Azure Monitor.
 
-:::image type="content" source="../media/overview-simple.svg" alt-text="Diagram that shows an overview of Azure Monitor with data sources on the left and features that use the collected data at right." border="false" lightbox="../media/overview-blowout.svg":::
+:::image type="content" source="../media/overview-simple.png" alt-text="Diagram that shows an overview of Azure Monitor with data sources on the left and features that use the collected data at right." border="false" lightbox="../media/overview-blowout.svg":::
 
 ### Data collection and storage
+
+As soon as you start adding resources to an Azure subscription, Azure Monitor starts collecting data about the resources. Azure *activity logs* record when resources are created or modified. You can use activity log information to trace resource creation and modification history.
 
 Azure Monitor provides the following capabilities for collecting, storing, and managing monitoring data:
 
@@ -47,9 +51,7 @@ Azure Monitor offers the following features for flexible data collection, ingest
 
 ### Data analysis and response
 
-Azure Monitor offers a broad set of tools and capabilities to help you analyze and gain insights into your monitoring data. You can customize monitoring and responses to your needs.
-
-Azure Monitor includes the following features to support data analysis and response:
+Azure Monitor offers a broad set of tools and capabilities to help you analyze and gain insights into your monitoring data. Azure Monitor includes the following features to support data analysis and response:
 
 - An easy-to-use portal UI that lets you view, filter, and manipulate monitoring data.
 - Kusto Query Language (KQL), a powerful query language that's optimized for ad-hoc queries, data exploration, and near-real time analysis of large volumes of data streamed from multiple sources.
@@ -58,26 +60,6 @@ Azure Monitor includes the following features to support data analysis and respo
 - Ready-to-use monitoring experiences with advanced, built-in analysis and visualizations of your deployment.
 - Autoscale to automatically add and remove resources according to the load on your application.
 - Native machine learning and artificial intelligence capabilities that help you detect and respond to anomalies.
-
-## Web application monitoring
-
-To evaluate the performance of your web application, you need monitoring where and when application experiences demand it. For the annual back-to-school campaign, you want to evaluate the impact of user demand on your application performance. Azure Monitor can help you evaluate this aspect of your web app performance.
-
-### Activity logs
-
-As soon as you start adding resources such as web apps to an Azure subscription, Azure Monitor starts collecting data. Azure activity logs record when resources are created or modified. You can use activity log information to trace resource creation and modification history.
-
-### Performance metrics
-
-Azure Monitor Metrics can monitor various aspects of your application to tell you how the app and any resources it uses are performing. A list of resource-specific metrics is automatically available for each resource type in your subscription.
-
-For example, the following **Requests** metric line chart shows the sum aggregation of requests for the **Contoso-web-sales** application.
-
-:::image type="content" source="../media/web-app-metrics.png" alt-text="Screenshot of the Monitoring option selected in the Azure portal for a web app, showing chart of requests for the web app." lightbox="../media/web-app-metrics.png":::
-
-### Application Insights
-
-Azure Monitor Application Insights provides application performance monitoring (APM) from app development, through test, and into production. You can *proactively* monitor to see how well your application is performing, and *reactively* review application execution data to find the causes of issues.
 
 ### Alerts, workbooks, and visualizations
 
