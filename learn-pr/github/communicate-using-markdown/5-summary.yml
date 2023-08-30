@@ -3,12 +3,11 @@ uid: learn.github.communicate-using-markdown.5-summary
 title: Summary
 metadata:
   title: Summary
-  description: Review what you've learned.
+  description: This content is part of the "Communicate effectively on GitHub using Markdown" module.
   ms.date: 06/26/2020
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: training-unit
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]
