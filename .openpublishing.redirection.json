@@ -4996,6 +4996,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/10-exercise-troubleshoot-azure-file-sync.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/extend-share-capacity-with-azure-file-sync/10-exercise-check-file-sync",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/wwl-azure/distinguish-types-cloud-models/2-define-public-cloud.md",
       "redirect_url": "/training/paths/az-900-describe-cloud-concepts",
       "redirect_document_id": false
@@ -5873,6 +5878,21 @@
     {
       "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/index.md",
       "redirect_url": "/training/modules/intro-to-postgres/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/github-introduction-products/5-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/github-introduction-products/4-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/github-introduction-products/3-how-licensing-works.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/3-mobile-versus-desktop",
       "redirect_document_id": false
     },
     {
@@ -25738,8 +25758,6 @@
       "redirect_url": "https://learn.microsoft.com/training/paths/evaluate-iot-scenario-with-iot-central/",
       "redirect_document_id": false
     },
-
-
     {
       "source_path": "learn-pr/azure/configure-admin-consent-workflow/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow/",
@@ -25953,6 +25971,126 @@
     {
       "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/2-understand-skewed-data-space-usage.md",
       "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/2-compare-costs-tco-calculator.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/3-compare-workload-costs-tco-calculator.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/4-purchase-azure-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/5-estimate-workload-cost-pricing-calculator.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/6-manage-minimize-total-cost.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/plan-manage-azure-costs/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/3-examine-visual-studio-code-user-interface.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/4-examine-visual-studio-code-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/4-exercise-explore-visual-studio-code-user-interface.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/5-exercise-explore-visual-studio-code-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/5-exercise-configure-visual-studio-code.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/6-exercise-configure-visual-studio-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/6-exercise-install-dotnet.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/3-exercise-install-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/2-identify-sso-support.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/3-exercise-add-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/4-sso-configuration-idp.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/5-exercise-configure-sso-idp.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/6-sso-configuration-sp.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/7-exercise-configure-sso-sp.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/8-verify-sso-configuration.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-single-sign-on/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
       "redirect_document_id": false
     }
   ]

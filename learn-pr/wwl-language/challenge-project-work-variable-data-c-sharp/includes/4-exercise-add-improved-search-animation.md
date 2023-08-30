@@ -1,7 +1,3 @@
-
-
-
-
 The Contoso Pets app helps find new homes for abandoned pets. Part of the request for search feature improvement is to update the animated simulation indicating search progress.
 
 ## Search animation specification

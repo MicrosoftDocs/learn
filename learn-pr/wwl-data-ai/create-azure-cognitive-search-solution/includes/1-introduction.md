@@ -14,4 +14,4 @@ Azure Cognitive Search provides a cloud-based solution for indexing and querying
 - Use cognitive skills to enrich index data.
 - Store extracted insights in a knowledge store for analysis and integration.
 
-![Azure cognitive search integrating with Cognitive Services and Azure storage, and presenting a search interface.](../media/azure-cognitive-search.png)
+![Azure cognitive search integrating with Azure AI Services and Azure storage, and presenting a search interface.](../media/azure-cognitive-search.png)
