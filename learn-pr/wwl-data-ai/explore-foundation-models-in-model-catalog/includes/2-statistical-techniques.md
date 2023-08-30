@@ -1,8 +1,8 @@
-Over the last decades, multiple developments in the field of **natural language processing** (**NLP**) have resulted in achieving **Large Language Models** (**LLMs**).
+Over the last decades, multiple developments in the field of **natural language processing** (**NLP**) have resulted in achieving **large language models** (**LLMs**).
 
 To understand LLMs, let's first explore the statistical techniques for NLP that over time have contributed to the current techniques.
 
-## The beginnings of Natural Language Processing (NLP)
+## The beginnings of natural language processing (NLP)
 
 As NLP is focused on understanding and generating text, most first attempts at accomplishing NLP were based on using the rules and structure inherent to languages. Especially before machine learning techniques became prevalent, structural models and formal grammar were the primary methods employed.
 
