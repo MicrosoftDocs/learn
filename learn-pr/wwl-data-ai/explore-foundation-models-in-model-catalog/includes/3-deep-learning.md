@@ -55,7 +55,7 @@ The RNN takes each token as an input, process it, and update the hidden state wi
 
 Finally, the last token is presented as input to the model, namely the `[MASK]` token. Indicating that there's information missing and the model needs to predict its value. The RNN then uses the hidden state to predict that the output should be something like `Starry Night`
 
-:::image type="content" source="../media/recurrent-network.gif" alt-text="Diagram showing a recurrent network with multiple steps, each step takes an input and hidden state as input and produces an output.":::
+:::image type="content" source="../media/recurrent-network.gif" alt-text="Diagram showing a recurrent network with multiple steps. Each step takes an input and hidden state as input and produces an output.":::
 
 In the example, the hidden state contains the information `Vincent`, `is`, `painter`, and `know`. With RNNs, each of these tokens are equally important in the hidden state, and therefore equally considered when predicting the output.
 
