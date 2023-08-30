@@ -11,5 +11,5 @@ Explore LUIS and integrate it in your own application. Consider trying following
 
 ## Further reading
 
-* Learn more about [Speech service](/azure/cognitive-services/speech-service/overview)
-* Learn more about [LUIS](/azure/cognitive-services/luis/what-is-luis)
+* Learn more about [Speech service](/azure/ai-services/speech-service/overview)
+* Learn more about [LUIS](/azure/ai-services/luis/what-is-luis)

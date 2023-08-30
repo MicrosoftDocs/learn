@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You need to regenerate the primary subscription key for a Cognitive Services resource that an app uses. What should you do first to minimize service interruption for the app?"
+  - content: "You need to regenerate the primary subscription key for an Azure AI Services resource that an app uses. What should you do first to minimize service interruption for the app?"
     choices:
     - content: "Switch the app to use the secondary key"
       isCorrect: true
@@ -25,7 +25,7 @@ quiz:
     - content: "Enable a firewall"
       isCorrect: false
       explanation: "Incorrect. Enabling a firewall would not minimize service interruption."
-  - content: "You want to store the subscription keys for a Cognitive Services resource securely, so that authorized apps can retrieve them when needed. What kind of Azure resource should you provision."
+  - content: "You want to store the subscription keys for an Azure AI Services resource securely, so that authorized apps can retrieve them when needed. What kind of Azure resource should you provision."
     choices:
     - content: "Azure Storage"
       isCorrect: false
@@ -36,7 +36,7 @@ quiz:
     - content: "Azure App Service"
       isCorrect: false
       explanation: "Incorrect. Azure App Service is used to host cloud apps, not to store sensitive data."
-  - content: "When running code on your computer that connects to Cognitive Services, you receive an error that access is denied due to Virtual Network/Firewall rules. What configuration do you need to set in the Cognitive Services instance?"
+  - content: "When running code on your computer that connects to Azure AI Services, you receive an error that access is denied due to Virtual Network/Firewall rules. What configuration do you need to set in the Azure AI Services instance?"
     choices:
     - content: "In the Networking properties, configure Selected Networks and Private Endpoints."
       isCorrect: false

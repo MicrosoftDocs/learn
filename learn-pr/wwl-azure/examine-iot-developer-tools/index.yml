@@ -44,3 +44,4 @@ units:
 - learn.wwl.examine-iot-developer-tools.summary
 badge:
   uid: learn.wwl.examine-iot-developer-tools.badge
+hidden: true

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.open-ai-dotnet-text-completions.1-introduction
+title: Introduction
+metadata:
+  title: Introduction to text completions with .NET and Azure OpenAI
+  description: An introduction to text completions using the .NET SDK to access the Azure OpenAI service
+  ms.date: 08/24/2023
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

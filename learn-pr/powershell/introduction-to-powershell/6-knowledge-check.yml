@@ -9,9 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom:
-    - team=nextgen
-    - devx-track-azurepowershell
+  ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -20,7 +18,7 @@ quiz:
     - content: What's a correct way to locate a command in PowerShell?
       choices:
         - content: "Call `Get-Command 'name of command'`"
-          explanation: Correct. That's the correct way to locate a command.
+          explanation: Correct. Using the `Get-Copmmand` cmdlet is the correct way to locate a command.
           isCorrect: true
         - content: "Call `Find 'name of command'`"
           explanation: Incorrect. There's no `Find` command in PowerShell.
@@ -35,7 +33,7 @@ quiz:
           explanation: Incorrect. The word `file` is a noun, so you need to search by using the parameter `-Noun`.
         - content: "Call `Get-Command -Noun File`"
           isCorrect: false
-          explanation: Incorrect. Although this command searches for commands in which the noun part is `file`, it's using an exact match, so you risk not seeing a command like `Get-FileHash` in the output. 
+          explanation: Incorrect. This command searches for commands in which the noun part is `file` but it's using an exact match. So, you risk not seeing a command like `Get-FileHash` in the output. 
         - content: "Call `Get-Command -Noun File*`"
           isCorrect: true
           explanation: Correct. This command correctly searches by using the `-Noun` parameter because `file` is a noun. It uses an asterisk (`*`) to ensure it finds all commands that have the word `file` in them.

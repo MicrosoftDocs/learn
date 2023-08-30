@@ -16,6 +16,7 @@ prerequisites: |
 summary: |
   Get started with Microsoft Sentinel security operations by configuring the Microsoft Sentinel workspace, connecting Microsoft services and Windows security events to Microsoft Sentinel, configuring Microsoft Sentinel analytics rules, and responding to threats with automated responses.
 iconUrl: /training/achievements/configure-your-azure-sentinel-environment.svg
+hidden: true
 levels:
 - intermediate
 roles:

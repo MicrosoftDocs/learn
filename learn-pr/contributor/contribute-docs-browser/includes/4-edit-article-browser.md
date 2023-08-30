@@ -23,6 +23,8 @@ Remember, not all Microsoft Learn content is stored in a public repository. Befo
     You need to be signed into your GitHub account at this point to select this **Edit** icon. If you’re not signed in, this option won’t be available. 
 
     :::image type="content" source="../media/pencil-edit-github.png" alt-text="Screenshot of the GitHub source file for a documentation article. The Edit file pencil icon is highlighted.":::
+
+   At the top of the article, you’ll notice the article’s metadata. Metadata is applied to articles for reporting, discoverability via search, and driving aspects of the site experience. If you’re making minor updates to a published article, you probably won’t need to change the metadata. 
 1. If this is your first time working in this repository, you're prompted to fork the repo before you propose changes. If so, select **Fork this repository**. 
 1. You’ll see the editing interface, or the **Edit** pane, in your browser. You can see the article written in Markdown, a formatting syntax. Make your changes in the pane. 
 
