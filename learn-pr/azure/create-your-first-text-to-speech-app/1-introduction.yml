@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!INCLUDE[](includes/1-introduction.md)]

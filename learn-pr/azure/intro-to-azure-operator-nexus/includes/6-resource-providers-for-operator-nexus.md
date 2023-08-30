@@ -46,4 +46,4 @@ Networks have a many-to-one relationship with the [NetworkFabric RoutingDomain].
 - **Trunked Network Resource**
   - A Trunked Network represents trunking of VLANs across multiple L3IsolationDomain and L2IsolationDomains and doesn't support IPAM.
 
-Azure Resource providers list: [Resource providers by Azure services - Azure Resource Manager](https://learn.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers)
+Azure Resource providers list: [Resource providers by Azure services - Azure Resource Manager](/azure/azure-resource-manager/management/azure-services-resource-providers)

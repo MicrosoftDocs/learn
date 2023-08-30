@@ -1,4 +1,4 @@
-The **Computer Vision** service offers two APIs that you can use to read text.
+The **Azure AI Vision** service offers two APIs that you can use to read text.
 
 - The **Read** API:
     - Use this API to read small to large volumes of text from images and PDF documents.
