@@ -19,7 +19,7 @@ To avoid consuming all your monthly GitHub Codespaces time, it's important to de
 
 ## References
 
-* [What is GitHub Copilot?](https://learn.microsoft.com/shows/introduction-to-github-copilot/what-is-github-copilot-1-of-6?WT.mc_id=academic-105743-bethanycheum )
-* [Introduction to GitHub Copilot](https://learn.microsoft.com/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105778-alfredodeza)
-* [Code with GitHub Codespaces](https://learn.microsoft.com/training/modules/code-with-github-codespaces/?WT.mc_id=academic-105779-alfredodeza)
-* [Python for beginners](https://learn.microsoft.com/training/paths/beginner-python/?WT.mc_id=academic-105781-alfredodeza)
+* [What is GitHub Copilot?](/shows/introduction-to-github-copilot/what-is-github-copilot-1-of-6?WT.mc_id=academic-105743-bethanycheum )
+* [Introduction to GitHub Copilot](/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105778-alfredodeza)
+* [Code with GitHub Codespaces](/training/modules/code-with-github-codespaces/?WT.mc_id=academic-105779-alfredodeza)
+* [Python for beginners](/training/paths/beginner-python/?WT.mc_id=academic-105781-alfredodeza)
