@@ -3,8 +3,8 @@ uid: |
   learn.explore-foundation-models-in-model-catalog
 metadata:
   title: |
-    Explore foundation models in the model catalog
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+    Explore large language models as foundation models in Azure Machine Learning's model catalog
+  description: "Explore the history of natural language processing. Learn about how the Transformer architecture is used for large language models. Use foundation models in the Azure Machine Learning model catalog."
   ms.date: 7/24/2023
   author: madiepev
   ms.author: madiepev
@@ -21,13 +21,13 @@ metadata:
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.service: machine-learning
 title: |
-  Explore Large Language Models as foundation models in Azure Machine Learning's model catalog
-summary: "Learn about the history of Natural Language Processing (NLP), including how the Transformer architecture revolutionized the field and helped us create Large Language Models (LLMs). Work with LLMs in Azure Machine Learning through the foundation models in the model catalog."
+  Explore large language models as foundation models in Azure Machine Learning's model catalog
+summary: "Learn about the history of natural language processing (NLP), including how the Transformer architecture revolutionized the field and helped us create large language models (LLMs). Work with LLMs in Azure Machine Learning through the foundation models in the model catalog."
 abstract: |
   By the end of this module, you'll be able to:
     - Understand the developments that have led to foundation models.
     - Explore the different types of foundation models available in the model catalog.
-    - Use a foundation model.
+    - Deploy and test a foundation model.
 prerequisites: |
   - Familiarity with Azure and the Azure portal.
 iconUrl: /learn/achievements/generic-badge.svg
