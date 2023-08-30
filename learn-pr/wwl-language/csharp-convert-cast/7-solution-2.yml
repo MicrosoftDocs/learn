@@ -4,11 +4,10 @@ title: Review a solution for the output math operations as specific number types
 metadata:
   title: Review a solution for the output math operations as specific number types challenge
   description: "Review a solution for the output math operations as specific number types challenge"
-  ms.date: 05/02/2023
+  ms.date: 08/30/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/7-solution-2.md)]
