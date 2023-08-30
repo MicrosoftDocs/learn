@@ -49,7 +49,7 @@ To know what word comes next, you need to remember the name of the painter. The 
 
 Simplifying the example sentence, you can provide the following input to an RNN: `Vincent was a painter known for [MASK]`:
 
-:::image type="content" source="../media/vincent-tokenized.png" alt-text="Diagram the sentence tokenized to present the most important words in a sentence as individual tokens.":::
+:::image type="content" source="../media/vincent-tokenized.png" alt-text="Diagram showing the sentence tokenized to present the most important words in a sentence as individual tokens.":::
 
 The RNN takes each token as an input, process it, and update the hidden state with a memory of that token. When the next token is processed as new input, the hidden state from the previous step is updated.
 
