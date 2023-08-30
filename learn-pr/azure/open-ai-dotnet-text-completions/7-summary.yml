@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.open-ai-dotnet-text-completions.7-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of using text completions, chat completions, and prompt engineering with .NET and Azure OpenAI
+  ms.date: 08/24/2023
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]
