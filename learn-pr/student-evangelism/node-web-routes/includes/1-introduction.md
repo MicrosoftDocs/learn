@@ -10,6 +10,7 @@ In this module, learn how to create API routes with Node.js and Express by using
 
 By the end of this module, you can:
 
+- Use a dev container for your development environment
 - Understand API route management
 - Implement route handling in a Node.js application with JavaScript
 
