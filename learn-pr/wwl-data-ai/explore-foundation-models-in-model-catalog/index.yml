@@ -3,7 +3,7 @@ uid: |
   learn.explore-foundation-models-in-model-catalog
 metadata:
   title: |
-    Explore large language models as foundation models in Azure Machine Learning's model catalog
+    Explore large language models as foundation models in the Azure Machine Learning model catalog
   description: "Explore the history of natural language processing. Learn about how the Transformer architecture is used for large language models. Use foundation models in the Azure Machine Learning model catalog."
   ms.date: 7/24/2023
   author: madiepev
@@ -21,11 +21,11 @@ metadata:
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.service: machine-learning
 title: |
-  Explore large language models as foundation models in Azure Machine Learning's model catalog
+  Understand the transformer architecture and explore large language models in Azure Machine Learning
 summary: "Learn about the history of natural language processing (NLP), including how the Transformer architecture revolutionized the field and helped us create large language models (LLMs). Work with LLMs in Azure Machine Learning through the foundation models in the model catalog."
 abstract: |
   By the end of this module, you'll be able to:
-    - Understand the developments that have led to foundation models.
+    - Understand the developments that have led to large language models.
     - Explore the different types of foundation models available in the model catalog.
     - Deploy and test a foundation model.
 prerequisites: |
