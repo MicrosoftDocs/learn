@@ -73,7 +73,7 @@ There are two main components in the original Transformer architecture:
 
 The most important innovations presented in the Transformer architecture were *positional encoding* and *multi-head attention*. A simplified representation of the architecture, focusing on these two components may look like:
 
-:::image type="content" source="../media/simplified-transformer-architecture.png" alt-text="Diagram the sentence tokenized to present the most important words in a sentence as individual tokens.":::
+:::image type="content" source="../media/simplified-transformer-architecture.png" alt-text="Diagram of a simplified version of the Transformer architecture.":::
 
 - In the **encoder** layer, an input sequence is encoded with positional encoding, after which multi-head attention is used to create a representation of the text.
 - In the **decoder** layer, an (incomplete) output sequence is encoded in a similar way, by first using positional encoding and then multi-head attention. Then, the multi-head attention mechanism is used a second time within the decoder to combine the output of the encoder and the output of the encoded output sequence that was passed as input to the decoder part. As a result, the output can be generated.
