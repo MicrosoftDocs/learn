@@ -7,8 +7,7 @@ mental mapping required to operate Windows and the number of keystrokes necessar
 or who are blind and use a screen reader.
 
 For example, to copy and paste a selection of text, simply highlight the text and press <kbd>Ctrl+C</kbd> to copy, and then <kbd>Ctrl+V</kbd> to paste it somewhere else. Because keyboard shortcuts are consistent, this
-shortcut works whether you're copying and pasting text from a website into an Outlook message, or from a Word document into a PowerPoint presentation, regardless of whether your device is running Windows 10 or
-a different version of Windows.
+shortcut works whether you're copying and pasting text from a website into an Outlook message, or from a Word document into a PowerPoint presentation. These shortcuts are available in Windows 10 and other versions of Windows.
 
 Common keyboard shortcuts include:
 
@@ -29,24 +28,24 @@ like a broken arm.
 To set up Dictation and get started using it:
 
 1. Press Windows logo key <kbd>![Windows logo key.](../media/windows-logo.png)+H</kbd> together.
-2. To stop dictating, simply say "Stop dictation."
-3. If you're using a tablet or a touchscreen, tap the microphone button on the touch keyboard to start dictating. Tap the button again to stop dictation, or say "Stop dictation."
+2. To stop dictating, simply say "Stop dictation".
+3. If you're using a tablet or a touchscreen, tap the microphone button on the touch keyboard to start dictating. Tap the button again to stop dictation, or say "Stop dictation".
 
 :::image type="content" source="../media/dictation-toolbar.png" alt-text="Dictation toolbar showing the Listening prompt.":::
 
 Here are a few commands you can speak as well:
-- **New line:** Takes cursor to new line
+- **New line:** Takes cursor to a new line
 - **Delete:** Removes the last line you dictated
-- **Full stop** or **period:** Types period character (.)
-- **Question mark:** Types (?)
+- **Full stop** or **period:** Types a period character (.)
+- **Question mark:** Types a question mark (?)
 
 For more information, learn how to [use dictation to talk instead of type on your PC](https://support.microsoft.com/en-us/help/4042244/windows-10-use-dictation).
 
-A similar speech to text tool called Dictate is built into Microsoft 365 apps such as Word and Outlook. With a microphone and reliable internet connection, Dictate lets you compose and edit content with your voice. This tool is designed to be a quick and easy way for people who are unable to enter characters on a keyboard or who prefer to dictate content to get their thoughts out, create drafts or outlines, and capture notes.
+A similar speech to text tool called Dictate is built into Microsoft 365 apps such as Word and Outlook. With a microphone and a reliable internet connection, Dictate lets you compose and edit content with your voice. This tool is designed to be a quick and easy way for people who are unable to enter characters on a keyboard or who prefer to dictate content. Dictate helps to get their thoughts out, create drafts or outlines, and capture notes.
 
 To learn more about using speech to text to author content in Microsoft 365, see [Dictate in Microsoft 365](https://support.office.com/en-us/article/dictate-in-microsoft-365-eab203e1-d030-43c1-84ef-999b0b9675fe).
 
-Dictate is part of Microsoft Learning Tools - free tools that implement proven techniques to improve reading and writing for learners regardless of their age or ability. Dictate and Read Aloud provide the option to compose and edit text verbally, and Immersive Reader offers text decoding solutions, all of which can be helpful for people with learning disabilities such as dyslexia. Learning Tools are available in the Microsoft Edge browser and Microsoft 365 desktop and web-based apps.
+Dictate is part of Microsoft Learning Tools - free tools that implement proven techniques to improve reading and writing for learners regardless of their age or ability. Dictate and Read Aloud provide options to compose and edit text verbally, and Immersive Reader offers text decoding solutions These options can be helpful for people with learning disabilities such as dyslexia. Learning Tools are available in the Microsoft Edge browser and Microsoft 365 desktop and web-based apps.
 
 Visit the Microsoft Education website to learn more about [Learning Tools](https://www.microsoft.com/en-us/education/products/learning-tools).
 
@@ -63,7 +62,7 @@ There are three ways to start and stop Narrator:
 2. Press Windows logo key <kbd>![Windows logo key.](../media/windows-logo.png)+Ctrl+N</kbd> together to open Narrator settings, and then turn on the toggle under **Use Narrator**.
 3. Press <kbd>Ctrl+Alt+Del</kbd> together to go to your sign-in screen, select **Ease of access** in the lower-right corner, then turn on the toggle under **Narrator**.
 
-Every time you turn on Narrator, you'll go to Narrator Home, which gives you one place where you can open everything you need, whether you want to change your Narrator settings or learn basics with QuickStart.
+Every time you turn on Narrator, you go to Narrator Home, which gives you one place where you can open everything you need, whether you want to change your Narrator settings or learn basics with QuickStart.
 
 :::image type="content" source="../media/narrator-home-menu.png" alt-text="Screenshot of the Narrator Home menu.":::
 
@@ -84,9 +83,9 @@ For more information, learn how to [use color filters in Windows 10.](https://su
 
 Focus assist allows you to turn off notifications in Windows anytime you need to focus. When enabled, this feature blocks alerts and notifications from any of your installed apps.
 
-People with mental health disabilities such as anxiety may benefit from the enhanced ability to get things done without distractions that Focus assist provides. By eliminating moving objects like pop-up notifications, the setting may also reduce stress and help people focus on the task at hand.
+People with mental health disabilities such as anxiety may benefit from the enhanced ability that Focus assist provides to get things done without distractions. By eliminating moving objects like pop-up notifications, the setting may also reduce stress and help people focus on the task at hand.
 
-To use Focus assist, press **Start** (Windows logo key) ![Windows logo key.](../media/windows-logo.png), and enter **Focus assist settings** in the search box. You can then choose if you want to receive all notifications, priority notifications only, or just alarms. In Windows 10, you can also access Focus assist settings by selecting **Notifications & actions**.
+To use Focus assist, press **Start** (Windows logo key) ![Windows logo key.](../media/windows-logo.png), and enter **Focus assist settings** in the search box. You can then choose whether you want to receive all notifications, priority notifications only, or just alarms. In Windows 10, you can also access Focus assist settings by selecting **Notifications & actions**.
 
 :::image type="content" source="../media/action-center.png" alt-text="Action center in Windows 10 with Focus assist highlighted.":::
 
