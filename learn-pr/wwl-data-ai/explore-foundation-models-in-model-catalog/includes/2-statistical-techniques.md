@@ -32,7 +32,7 @@ Two important advancements to achieve NLP used statistical techniques: **Naïve 
 
 ### Understanding Naïve Bayes
 
-**Naïve Bayes** is a statistic technique that was first used for email filtering. To learn the difference between spam and not spam, two documents are compared. Naïve Bayes classifiers identify which tokens are correlated with emails labeled as spam. In other words, the technique finds which group of words only occurs in one type of document and not in the other. The group of words is often referred to as **bag-of-words** features.
+**Naïve Bayes** is a statistical technique that was first used for email filtering. To learn the difference between spam and not spam, two documents are compared. Naïve Bayes classifiers identify which tokens are correlated with emails labeled as spam. In other words, the technique finds which group of words only occurs in one type of document and not in the other. The group of words is often referred to as **bag-of-words** features.
 
 For example, the words `miracle cure`, `lose weight fast`, and `anti-aging` may appear more frequently in spam emails about dubious health products than your regular emails.
 
