@@ -2,25 +2,25 @@ An Azure virtual machine runs in the cloud, in an Azure datacenter. When you cre
 
 Azure uses this image to create a new virtual hard disk (VHD) from which it can start your virtual machine. You can then customize the virtual machine by configuring and installing additional applications, according to your requirements.
 
-In the sample scenario, your organization is considering creating and configuring customized images that they can use to deploy servers. You want to know what customized images are, and how they can benefit the company.
+In the sample scenario, your organization is considering creating and configuring customized images that they can use to deploy servers. You want to know what customized images are and how they can benefit the company.
 
-In this unit, you'll learn how you can use VHDs to create standard customized disks for building virtual machines for your organization.
+In this unit, you'll learn how you can use VHDs to create standard customized disks to build virtual machines for your organization.
 
 ## What is an Azure virtual hard disk?
 
 A virtual hard disk is conceptually similar to a physical hard disk. You can use a VHD to host the operating system and run a virtual machine. A VHD can also hold databases and other user-defined folders, files, and data. A VHD can hold anything that you can store on a physical hard disk.
 
-A virtual machine can contain multiple VHDs. Typically, a virtual machine has an *operating system VHD* on which the operating system is installed. It also has one or more *data VHDs* that contain the applications and other user-specific data used by the virtual machine.
+A virtual machine can contain multiple VHDs. Typically, a virtual machine has an *operating system VHD* on which the operating system is installed. It also has one or more *data VHDs* that contain the applications and other user-specific data the virtual machine uses.
 
 The difference between a VHD and a physical hard disk is that a VHD is stored as a virtual file in Azure. It isn't a piece of physical hardware.
 
 Compared to physical disks, VHDs have several advantages, including:
 
-- **High availability:** Managed disks are designed for 99.999% availability. Managed disks achieve this by providing you with three replicas of your data, allowing for high durability. If one or even two replicas experience issues, the remaining replicas help ensure persistence of your data and high tolerance against failures.
-- **Physical security:** A VHD is stored in the cloud rather than as a device held on-premises. You can control who has access to a VHD by using Azure security features, and you can audit the changes made to a VHD. Managed VHDs are also encrypted. These features make it more difficult for a disk to be stolen or misplaced. It's also easier to track the provenance of a VHD, so you can be sure that it contains the correct software of a specific version.
-- **Durability:** Because a VHD isn't a physical piece of hardware, it won't wear out or suffer from some form of media failure.
-- **Scalability:** You can create many virtual machines from the same VHDs simultaneously with minimal contention. Contrast this with trying to set up 100 machines from the same DVD mounted as a shared device on your on-premises network.
-- **Cost and performance:** Azure provides several different types of VHDs. They range from those stored on high-performance, dedicated SSDs, to lower-performance, lower-cost VHDs stored on shared hard disk drives. You can select the type of VHD that meets your throughput and cost requirements.
+- **High availability**: Managed disks are designed for 99.999% availability. Managed disks achieve this availability by providing you with three replicas of your data, which allows for high durability. If one or even two replicas experience issues, the remaining replicas help ensure your data persistence and high tolerance against failures.
+- **Physical security**: A VHD is stored in the cloud rather than as a device held on-premises. You can control who has access to a VHD by using Azure security features, and you can audit the changes made to a VHD. Managed VHDs are also encrypted. These features make it more difficult for a disk to be stolen or misplaced. It's also easier to track the provenance of a VHD, so you can be sure that it contains the correct software of a specific version.
+- **Durability**: Because a VHD isn't a physical piece of hardware, it won't wear out or suffer from some form of media failure.
+- **Scalability**: You can create many virtual machines from the same VHDs simultaneously with minimal contention. Contrast this with trying to set up 100 machines from the same DVD mounted as a shared device on your on-premises network.
+- **Cost and performance**: Azure provides several different types of VHDs. They range from those stored on high-performance, dedicated SSDs, to lower-performance, lower-cost VHDs stored on shared hard disk drives. You can select the type of VHD that meets your throughput and cost requirements.
 
 ## What is a virtual machine image?
 
@@ -53,7 +53,7 @@ After you build and customize a virtual machine, you can save the new image as a
 
 You must reset these items back to a default state before you use the image to create more virtual machines. Otherwise, you might end up with multiple virtual machines that have the same identities. The process of resetting this data is called *generalization*, and the result is a *generalized image*.
 
-The tools for preparing a virtual machine for generalization vary according to the operating system that's being installed and configured. For Windows, use the Microsoft System Preparation (Sysprep) tool. For Linux, use the Microsoft Azure Linux Agent (waagent) tool.
+The tools for preparing a virtual machine for generalization vary according to the operating system that's being installed and configured. For Windows, use the Microsoft System Preparation (Sysprep) tool. For Linux, use the Microsoft Azure Linux VM Agent (waagent) tool.
 
 When you create a new virtual machine by using a generalized image, you have to supply items such as the host name, user account details, and other information that the generalization process removed.
 
