@@ -37,7 +37,7 @@ units:
 - learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.create-virtual-networking-infrastructure
 - learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.create-network-security-group
 - learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.application-security-groups
-- learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.exercise-01-create-a-virtual-network-infrastructure-md-
+- learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.exercise-01-create-a-virtual-network-infrastructure
 - learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.knowledge-check
 - learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.summary
 badge:
