@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-integrate-analytics-agent-defender-cloud.exercise-04-collect-data-from-your-workloads-with-the-log-analytics-agent
+title: Exercise 04 - Collect data from your workloads with the Log Analytics agent
+metadata:
+  title: Exercise 04 - Collect data from your workloads with the Log Analytics agent
+  description: "Exercise 04 - Collect data from your workloads with the Log Analytics agent"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-04-collect-data-from-your-workloads-with-the-log-analytics-agent.md)]
