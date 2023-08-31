@@ -1,4 +1,3 @@
-
 In completing this module, you've acquired the skills to connect an Azure SQL server using an Azure Private Endpoint through the Azure portal, enabling you to enhance the security of your database communication.
 
 Upon completing this module, you should be able to:

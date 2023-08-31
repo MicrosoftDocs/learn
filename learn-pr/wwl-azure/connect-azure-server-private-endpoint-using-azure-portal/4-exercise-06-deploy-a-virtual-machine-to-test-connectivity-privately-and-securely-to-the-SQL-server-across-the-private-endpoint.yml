@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.exercise-06-deploy-a-virtual-machine-to-test-connectivity-privately-and-securely-to-the-SQL-server-across-the-private-endpoint
+title: Exercise 06 - Deploy a virtual machine to test connectivity privately and securely to the SQL server across the private endpoint
+metadata:
+  title: Exercise 06 - Deploy a virtual machine to test connectivity privately and securely to the SQL server across the private endpoint
+  description: "Exercise 06 - Deploy a virtual machine to test connectivity privately and securely to the SQL server across the private endpoint"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-06-deploy-a-virtual-machine-to-test-connectivity-privately-and-securely-to-the-SQL-server-across-the-private-endpoint.md)]
