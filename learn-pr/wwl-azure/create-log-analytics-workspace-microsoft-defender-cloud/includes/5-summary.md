@@ -1,4 +1,3 @@
-
 In completing this module, you'll acquire the skills necessary to create a Log Analytics workspace for Microsoft Defender for Cloud via the Azure portal, a crucial component for threat detection and monitoring in Azure environments.
 
 Upon completion of this module, you should be able to:
