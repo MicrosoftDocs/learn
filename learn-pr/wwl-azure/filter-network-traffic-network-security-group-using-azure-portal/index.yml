@@ -3,7 +3,7 @@ uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal
 metadata:
   title: Filter network traffic with a network security group using the Azure portal
   description: "Learn to regulate network traffic to your Azure resources by configuring and applying network security groups in the Azure portal, improving your network's security posture."
-  ms.date: 08/30/2023
+  ms.date: 08/31/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
