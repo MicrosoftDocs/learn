@@ -19,7 +19,7 @@ print(f"DataFrame has been written to Delta table: {delta_table_name}")
 
 OneLake supports a wide variety of file formats, including many formats that are commonly used in Spark code - such as delimited text, JSON, Parquet, Avro, ORC, and others. In most cases, Parquet is the preferred format because of its optimized columnar storage structure and efficient compression capabilities. Parquet is also the base format on which Delta tables in a lakehouse are based.
 
-> Tip:
+> [!TIP]
 > Learn more about common file formats in the [Explore core data concepts](/training/modules/explore-core-data-concepts/) module.
 
 ## Write to a Delta table
