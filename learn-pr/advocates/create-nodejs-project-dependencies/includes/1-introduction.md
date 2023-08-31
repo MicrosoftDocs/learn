@@ -8,6 +8,7 @@ In this module, you'll use the npm command-line tool and the npm global registry
 
 After you complete this module, you'll be able to:
 
+- Use a dev container for your development environment 
 - Initialize Node.js projects
 - Understand what the manifest file package.json consists of and use it to your advantage
 - Add packages to and remove packages from your Node.js project
