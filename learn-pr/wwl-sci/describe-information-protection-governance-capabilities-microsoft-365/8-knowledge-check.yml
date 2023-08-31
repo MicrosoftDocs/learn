@@ -16,35 +16,35 @@ quiz:
   questions:
   - content: "Which part of the concept of know your data, protect your data, prevent data loss, and govern your data addresses the need for organizations to automatically retain, delete, store data and records in a compliant manner?"
     choices:
-    - content: "Know your data"
+    - content: "Know your data."
       isCorrect: false
       explanation: "Incorrect. This component helps to address the need for organizations to understand their data landscape and identify important data across on-premises, cloud, and hybrid environments. Instead, govern your data to address the need to automatically retain, delete, store data, and records in a compliant manner.​​​​​​​"
-    - content: "Prevent data loss"
+    - content: "Prevent data loss."
       isCorrect: false
       explanation: "Incorrect. This component helps to address the need for organizations to detect risky behavior and prevent accidental oversharing of sensitive information. Instead, govern your data to address the need to automatically retain, delete, store data, and records in a compliant manner.​​​​​​​​​"
-    - content: "Govern your data"
+    - content: "Govern your data."
       isCorrect: true
       explanation: "Correct. Capabilities like retention policies, retention labels, and records management enable organizations to govern their data.​​​​​​"
   - content: "As part of a new data loss prevention policy, the compliance admin needs to be able to identify important information such as credit card numbers, across the organization's data. How can the admin address this requirement?"
     choices:
-    - content: "Use activity explorer"
+    - content: "Use activity explorer."
       isCorrect: false
       explanation: "Incorrect. ​​​Activity explorer provides visibility into what content has been discovered and labeled, and where that content is. Instead, use sensitive information types to identify sensitive information like credit card numbers.​​​"
-    - content: "Use sensitivity labels"
+    - content: "Use sensitivity labels."
       isCorrect: false
       explanation: "Incorrect. Sensitivity labels enable you to apply to content like emails and documents, much like different stamps can be applied to physical documents. Instead, use sensitive information types to identify specific types of information such as credit card numbers.​​​​​​"
-    - content: "Use sensitive information types"
+    - content: "Use sensitive information types."
       isCorrect: true
       explanation: "​​​Correct. Microsoft provides built-in sensitive information types that you can use to identify data such as credit card numbers.​​"
   - content: "Within the organization, some emails are confidential and should be encrypted so that only authorized users can read them. How can this requirement be implemented?"
     choices:
-    - content: "Use the content explorer"
+    - content: "Use the content explorer."
       isCorrect: false
       explanation: "Incorrect. Content explorer enables admins to get a current snapshot of individual items that have been classified across the organization. Instead, use sensitivity labels to help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.​​​"
-    - content: "Use sensitivity labels"
+    - content: "Use sensitivity labels."
       isCorrect: true
       explanation: "​​​Correct. Sensitivity labels help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.​​​"
-    - content: "Use records management"
+    - content: "Use records management."
       isCorrect: false
       explanation: "​​​Incorrect. You don't use record management to encrypt emails. Instead, use sensitivity labels to help ensure that emails can only be decrypted by users authorized by the label's encryption settings.​​​"
   - content: "Your organization uses Microsoft Teams to collaborate on all projects. The compliance admin wants to prevent users from accidentally sharing sensitive information in a Microsoft Teams chat session. What capability can address this requirement?"
@@ -60,23 +60,23 @@ quiz:
       explanation: "​​​Incorrect. Retention policies won't let you do this. Instead, use data loss prevention policies.​​​"
   - content: "Due to a certain regulation, your organization must now keep hold of all documents in a specific SharePoint site that contains customer information for five years. How can this requirement be implemented?"
     choices:
-    - content: "Use sensitivity labels"
+    - content: "Use sensitivity labels."
       isCorrect: false
       explanation: "​​​Incorrect. You don't use sensitivity labels to define data retention. Instead, use retention policies.​​​​​​"
-    - content: "Use the content explorer"
+    - content: "Use the content explorer."
       isCorrect: false
       explanation: "Incorrect. Content explorer won't let you define data retention. Instead, use retention policies.​​​​​​​​​"
-    - content: "Use retention policies"
+    - content: "Use retention policies."
       isCorrect: true
       explanation: "Correct. You can use retention policies to define data retention for all documents in a SharePoint site.​​​​​​"
   - content: "Which application in the Microsoft Purview governance portal is used to capture metadata about enterprise data, to identify and classify sensitive data?"
     choices:
-    - content: "Data Catalog."
+    - content: "Data Catalog"
       isCorrect: false
       explanation: "Incorrect. Microsoft Purview Data Catalog enables business and technical users to quickly and easily find relevant data."
-    - content: "Data Map."
+    - content: "Data Map"
       isCorrect: true
       explanation: "Correct. Microsoft Purview Data Map is able to capture metadata about enterprise data, to identify and classify sensitive data."
-    - content: "Data Estate Insights."
+    - content: "Data Estate Insights"
       isCorrect: false
       explanation: "Incorrect. Microsoft Purview Data Estate Insights provides a bird’s eye view of what data is actively scanned, where sensitive data is, and how it moves."
