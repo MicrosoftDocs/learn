@@ -17,24 +17,24 @@ quiz:
   questions:
   - content: "Microsoft Defender for Cloud covers three pillars of cloud security.  Which pillar provides visibility to help you understand your current security situation and provides hardening recommendations?"
     choices:
-    - content: "Cloud security posture management (CSPM)."
+    - content: "Cloud security posture management (CSPM)"
       isCorrect: true
       explanation: "Correct. The CSPM pillar of Microsoft Defender for Cloud provides visibility and to help you understand your current security situation and provides hardening recommendations."
     - content: "Cloud workload protection (CWP)"
       isCorrect: false
       explanation: "Incorrect.  Although CWP is an important pillar of cloud security for Microsoft Defender for Cloud, it's focused on detecting and resolving threats for resources, workload, and services.  It works with the CSPM pillar."
-    - content: "Microsoft Cloud security benchmark."
+    - content: "Microsoft Cloud security benchmark"
       isCorrect: false
       explanation: "Incorrect. The Microsoft cloud security benchmark (MCSB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure and your multicloud environment."
   - content: "An organization wants to add vulnerability scanning for its Azure resources to view, investigate, and remediate the findings directly within Microsoft Defender for Cloud. What functionality of Microsoft Defender for Cloud would they need to consider?"
     choices:
-    - content: "Secure score and recommendations functionality that is part of the CSPM pillar of Microsoft Defender for Cloud."
+    - content: "Secure score and recommendations functionality that are part of the CSPM pillar of Microsoft Defender for Cloud."
       isCorrect: false
       explanation: "Incorrect. Secure score and recommendations functionality doesn't include vulnerability scanning."
     - content: "The enhanced functionality that is provided through the Microsoft Defender plans and is part of the CWP pillar of Microsoft Defender for Cloud."
       isCorrect: true
       explanation: "Correct. Microsoft Defender plans provide enhanced security features for your workloads, including vulnerability scanning."
-    - content: "Security Benchmarks."
+    - content: "Security Benchmarks"
       isCorrect: false
       explanation: "Incorrect. The Microsoft cloud security benchmark (MCSB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure, it doesn't provide vulnerability scanning."
   - content: "Which framework does Microsoft Defender for Cloud apply as a default initiative for security and compliance and provides best practices and recommendations to help improve the security of workloads, data, and services on Azure and your multicloud environment?"
