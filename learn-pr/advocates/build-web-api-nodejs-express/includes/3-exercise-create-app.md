@@ -4,14 +4,7 @@ You've been tasked with creating a simple API using the framework Express. The o
 
 ## Open project in development container
 
-A [development container](https://containers.dev/) environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
-
-#### [GitHub Codespaces](#tab/github-codespaces)
-
-[GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
-
-> [!IMPORTANT]
-> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+#### [Remote development (browser)](#tab/github-codespaces)
 
 1. Start the process to create a new GitHub Codespace on the `main` branch of the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
 
@@ -29,18 +22,21 @@ A [development container](https://containers.dev/) environment is available with
     > [!TIP]
     > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
     >
-    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
+    > :::image type="content" source="../media/codespaces/open-terminal-option.png" lightbox="../media/codespaces/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
 
 1. Validate that Node.js is installed in your environment:
 
     ```bash
     node --version
     ```
-1. Close the terminal.
+
+    The dev container uses a Node.js LTS version such as `v20.5.1`. The exact version might be different.
+
 1. The remaining exercises in this project take place in the context of this development container.
 
-#### [Visual Studio Code](#tab/visual-studio-code)
-The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
+#### [Local development (Docker)](#tab/visual-studio-code)
+
+
 1. Open **Visual Studio Code** in the context of an empty directory.
 1. Ensure that you have the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) installed in Visual Studio Code.
 1. Open a new terminal in the editor.
@@ -49,10 +45,18 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     >
     > :::image type="content" source="../media/codespaces/open-terminal-option.png" lightbox="../media/codespaces/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
 1. Clone the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository into the current directory.
+
     ```bash
-    git clone https://github.com/MicrosoftDocs/node-essentials.git .
+    git clone https://github.com/MicrosoftDocs/node-essentials.git
     ```
-1. Open the folder into which you cloned the GitHub repository.
+
+1. Open the repository in code with the following commands in the terminal.
+
+    ```bash
+    cd node-essentials
+    code .
+    ```
+
 1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen in Container**.
     :::image type="content" source="../media/codespaces/reopen-container-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within the context of a development container.":::
     > [!TIP]
@@ -64,7 +68,9 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     ```bash
     node --version
     ```
-1. Close the terminal.
+
+    The dev container uses a Node.js LTS version such as `v20.5.1`. The exact version might be different.
+
 1. The remaining exercises in this project take place in the context of this development container.
 
 ---

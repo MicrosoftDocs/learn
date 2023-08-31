@@ -14,6 +14,7 @@ In this module, you'll learn how to handle HTTP requests with Node.js. You'll al
 
 By the end of this module, you'll be able to:
 
+- Use a dev container for your development environment
 - Describe the core concepts of the web framework Express.
 - Configure middleware to control how a request is handled.
 
