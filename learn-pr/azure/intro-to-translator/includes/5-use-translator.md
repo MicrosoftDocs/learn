@@ -24,7 +24,7 @@ After you run the code, you can play around with Translator at your own pace.
 
 The source code for this entire demo is fully available. Browse it, use it to debug the demo app, or ignore it entirely. If you fork it and do something cool, let us know on Twitter @MicrosoftLearn.
 
-You can [visit the GitHub repository here.](https://github.com/MicrosoftDocs/mslearn-immersive-reader-stt)
+You can [visit the GitHub repository here](https://github.com/MicrosoftDocs/mslearn-immersive-reader-stt).
 
 An example of a good place to start browsing is [where we use the service via REST](https://github.com/MicrosoftDocs/mslearn-intro-translator-text-to-speech/blob/main/src/Services/TranslatorService.cs?azure-portal=true#L28-L56):
 
@@ -66,7 +66,7 @@ Notice that we specify the languages on the end of the `request.RequestUri` and 
 
 You can look at the resource created in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true#blade/HubsExtension/BrowseAll).
 
-Or if you prefer a command-line experience, you can use the Cloud Shell again to browse. You could start by listing the Cognitive Services resources:
+Or if you prefer a command-line experience, you can use the Cloud Shell again to browse. You could start by listing the Azure AI services resources:
 
 ```azurecli
 az cognitiveservices account list
