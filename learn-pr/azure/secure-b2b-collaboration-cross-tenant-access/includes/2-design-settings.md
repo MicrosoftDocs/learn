@@ -46,16 +46,16 @@ The same B2B collaboration settings that are available at the default level are 
 
 In our financial institution scenario, the main branch's internal applications contain highly sensitive data, so the IT admin blocked inbound B2B collaboration with other Azure AD organizations by default. However, the firm acquired a branch, which is managed in a separate Azure AD tenant. Because the branch employees needed access to the main applications, the IT admin wants to create an exception to allow inbound B2B collaboration for users in the branch.
 
-## Trust multi-factor authentication from another organization
+## Trust multifactor authentication from another organization
 
-One of the features of cross-tenant access settings is the ability to trust an external Azure AD organization's multi-factor authentication claims. When an external user has already completed multi-factor authentication in their home Azure AD tenant, not having to complete it again in your tenant makes for more a more streamlined sign-in experience.
+One of the features of cross-tenant access settings is the ability to trust an external Azure AD organization's multifactor authentication claims. When an external user has already completed multifactor authentication in their home Azure AD tenant, not having to complete it again in your tenant makes for more a more streamlined sign-in experience.
 
-This trust setting is available at both the default level and at the organizational level. This means you can choose to always trust multi-factor authentication claims from all external Azure AD organizations, and you can trust these claims for individual organizations.
+This trust setting is available at both the default level and at the organizational level. This means you can choose to always trust multifactor authentication claims from all external Azure AD organizations, and you can trust these claims for individual organizations.
 
-This feature is especially useful in our example scenario. Users in the newly acquired branch are considered part of the larger organization. Ideally they wouldn't be asked to perform multi-factor authentication more than once while signing into their applications. To accomplish this, the IT admin can configure their branch-specific organizational settings to trust multi-factor authentication claims from the branch.
+This feature is especially useful in our example scenario. Users in the newly acquired branch are considered part of the larger organization. Ideally they wouldn't be asked to perform multifactor authentication more than once while signing into their applications. To accomplish this, the IT admin can configure their branch-specific organizational settings to trust multifactor authentication claims from the branch.
 
-![Screenshot showing the Trust multi-factor authentication setting.](../media/4-multi-factor-authentication-settings.png)
+![Screenshot showing the Trust multifactor authentication setting.](../media/4-multi-factor-authentication-settings.png)
 
-Along with multi-factor authentication trust settings, cross-tenant access settings also provide options for trusting device claims (compliant claims and hybrid Azure AD joined claims) from other Azure AD organizations.
+Along with multifactor authentication trust settings, cross-tenant access settings also provide options for trusting device claims (compliant claims and hybrid Azure AD joined claims) from other Azure AD organizations.
 
 
