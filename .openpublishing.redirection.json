@@ -76,6 +76,26 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/4-create-organizational-settings.yml",
+      "redirect_url": "/training/modules/secure-b2b-collaboration-cross-tenant-access/2-design-settings",
+      "redirect_document_id": true
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/5-exercise-configure-organizational-settings.yml",
+      "redirect_url": "/training/modules/secure-b2b-collaboration-cross-tenant-access/4-exercise-configure-organizational-settings",
+      "redirect_document_id": true
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/secure-b2b-collaboration-cross-tenant-access/5-knowledge-check",
+      "redirect_document_id": true
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/7-summary.yml",
+      "redirect_url": "/training/modules/secure-b2b-collaboration-cross-tenant-access/6-summary",
+      "redirect_document_id": true
+    },   
+    {
       "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/4-multilayer-dense-neural-networks.md",
       "redirect_url": "/training/modules/intro-computer-vision-pytorch/3-train-dense-neural-networks",
       "redirect_document_id": false

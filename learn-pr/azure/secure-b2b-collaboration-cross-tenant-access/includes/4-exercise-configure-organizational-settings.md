@@ -1,6 +1,6 @@
 In this exercise, we'll configure cross-tenant access settings for a specific organization. These settings will take precedence over the default cross-tenant access settings for this organization only.
 
-Recall that in the financial institution example, your default cross-tenant access settings allow outbound B2B collaboration and block inbound B2B collaboration for all external Azure AD organizations. Now that your financial institution has acquired a branch, you want to allow users in the branch to access your internal accounting applications using B2B collaboration. You also want to make sure that if a user has completed multi-factor authentication in the branch tenant, they won't be asked to do so again.
+Recall that in the financial institution example, your default cross-tenant access settings allow outbound B2B collaboration and block inbound B2B collaboration for all external Azure AD organizations. Now that your financial institution has acquired a branch, you want to allow users in the branch to access your internal accounting applications using B2B collaboration. You also want to make sure that if a user has completed multifactor authentication in the branch tenant, they won't be asked to do so again.
 
 ![Diagram of the full financial institution example, with just the organizational settings highlighted.](../media/5-scenario-organizational.png)
 
@@ -52,16 +52,16 @@ Now the organization appears in the **Organizational settings** list. You'll not
 
     ![Screenshot showing the External Identities breadcrumb after configuring inbound access.](../media/5-breadcrumb.png)
 
-## Trust multi-factor authentication from the organization
+## Trust multifactor authentication from the organization
 
-When you choose to trust multi-factor authentication, your Conditional Access policies will trust claims from the external organization about whether their user has completed multi-factor authentication in their home tenant. During authentication, Azure AD will check a user's credentials, and if a claim exists indicating that the user has completed multi-factor authentication, they won't be asked to do so again.
+When you choose to trust multifactor authentication, your Conditional Access policies will trust claims from the external organization about whether their user has completed multifactor authentication in their home tenant. During authentication, Azure AD will check a user's credentials, and if a claim exists indicating that the user has completed multifactor authentication, they won't be asked to do so again.
 
 1. In the **Organizational settings** list, find the organization in the list and select the link in the **Inbound access** column.
 1. Select the **Trust settings** tab.
 1. Select **Customize settings**.
-1. Select **Trust multi-factor authentication from Azure AD tenants**.
+1. Select **Trust multifactor authentication from Azure AD tenants**.
 
-   ![Screenshot of the Trust settings page with the multi-factor authentication trust option selected.](../media/5-organizational-multi-factor-authentication-trust.png)
+   ![Screenshot of the Trust settings page with the multifactor authentication trust option selected.](../media/5-organizational-multi-factor-authentication-trust.png)
 
 1. Select **Save**. Select **External Identities** in the breadcrumbs at the top of the page to return to the main **Cross-tenant access settings** page. Then go on to the next section.
 
