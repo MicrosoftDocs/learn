@@ -1,12 +1,12 @@
-Your Azure applications and infrastructure might use several resources and services, like virtual machines (VMs), databases, web hosting services, and payment gateways. In this unit, you learn about the key Azure Monitor features that monitor the health, behavior, and performance of your Azure applications, networks, and infrastructure.
+Your IT environment might include various resources and services, like virtual machines (VMs), databases, web hosting services, and gateways. In this unit, you learn about metrics and logs, and how collecting these two types of data with Azure Monitor lets you monitor the health, behavior, and performance of your Azure applications, networks, and infrastructure.
 
 Azure Monitor provides two types of data that are essential for understanding application and resource behavior and performance: Azure Monitor Metrics and Azure Monitor Logs.
 
-## Azure Monitor Metrics
+## Metrics
 
 Metrics are quantitative measurements that show snapshots of application or resource performance. Metrics are typically numeric values that you can measure over time.
 
-Metrics can monitor various aspects of an application or resource, such as resource utilization, response times, error rates, and throughput. Common examples of metrics include CPU usage, memory usage, network latency, and transaction rates.
+Metrics can provide you with an understanding of various aspects of an application or resource, such as resource utilization, response times, error rates, and throughput. Common examples of metrics include CPU usage, memory usage, network latency, and transaction rates.
 
 A list of resource-specific metrics is automatically available for each resource type in your Azure subscription. You can use the Azure Monitor Metrics Explorer to interactively analyze the data in your metrics database and chart the values of multiple metrics over time.
 
@@ -24,7 +24,7 @@ Azure Monitor Metrics can collect several types of metrics, including:
 
 Metrics are well-suited for real-time monitoring. You can use metrics to trigger alerts when defined thresholds are reached.
 
-## Azure Monitor Logs
+## Logs
 
 Logs are textual records of events, actions, and messages that occur in a resource or application. While metrics are numeric, logs can include the following data:
 
@@ -34,11 +34,11 @@ Logs are textual records of events, actions, and messages that occur in a resour
 
 Logs can capture information about errors, warnings, user actions, and application state changes. Logs provide detailed narratives of events in a given context, making them crucial for troubleshooting, debugging, and understanding event sequences that lead to issues. Logs are essential for retrospective analysis of issues, helping to reconstruct the chain of events that led up to a problem.
 
-You can use Azure Monitor Logs to collect and organize the log and performance data from all the resources that Azure Monitor monitors. To collect and analyze all your data, you set up a workspace called a Log Analytics workspace. You configure your resources to send their data to that workspace.
+Azure Monitor Logs is a feature of Azure Monitor that lets you store, manage, and analyze log and performance data from monitored resources. To collect and analyze all your data, you set up a common workspace called a Log Analytics workspace. You configure your resources to send their data to that workspace.
 
 Once you configure the workspace and start logging data, you can use Azure Monitor Logs to explore and analyze the data. You can work with log queries and their results interactively in the Log Analytics user interface.
 
-You can use Azure Monitor Log queries in the following scenarios:
+You can use log queries in the following scenarios:
 
 - Use a basic query to answer a common question.
 - Do complex data analysis to identify critical patterns in your monitoring data.

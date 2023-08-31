@@ -1,4 +1,4 @@
-This unit gives you an overview of monitoring and Azure Monitor. You learn about Azure Monitor capabilities that are important for the successful operation of your Azure applications and resources.
+This unit gives you an overview of monitoring and Azure Monitor. You learn about Azure Monitor capabilities that are important for the successful operation of your Azure and hybrid resources and applications.
 
 ## Introduction to monitoring
 
@@ -25,25 +25,17 @@ Monitoring provides the following important benefits:
 
 When you run applications built on various services and resources, a key element of monitoring is the ability to relate your applications' performance and health to the components they're built on. This *observability* lets you analyze and troubleshoot application issues effectively.
 
-To evaluate the performance of your applications, you need monitoring where and when application experiences demand it. You can customize Azure Monitor monitoring and responses to your needs.
-
 Azure Monitor provides features and tools for collecting, managing, and analyzing IT data from all of your Azure, other cloud, and on-premises resources. The following diagram shows a high-level architectural view of Azure Monitor.
 
 :::image type="content" source="../media/overview-simple.png" alt-text="Diagram that shows an overview of Azure Monitor with data sources on the left and features that use the collected data at right." border="false" lightbox="../media/overview-blowout.svg":::
 
 ### Data collection and storage
 
-Azure *activity logs* record when Azure resources are created or modified. You can use activity log information to trace resource creation and modification history.
-
 As soon as you add resources to an Azure subscription, Azure Monitor starts collecting data about the resources. Azure Monitor provides the following capabilities for collecting, storing, and managing monitoring data:
 
 - Native monitoring of your entire Azure deployment.
-- Native integration with the Azure Event Hubs data streaming service.
-- Tools for monitoring all layers in your stack, including applications and infrastructure, in and outside of Azure.
-
-Azure Monitor offers the following features for flexible data collection, ingestion, and storage:
-
-- Data collection agents and APIs.
+- Tools such as data collection agents and APIs for monitoring all layers in your stack, including applications and infrastructure.
+- Integration with the Azure Event Hubs data streaming service.
 - Data transformations during ingestion to let you filter out data you don't need.
 - Configurable data retention periods, archiving, and restore options.
 - Pricing tier discounts based on data volume.
@@ -51,7 +43,7 @@ Azure Monitor offers the following features for flexible data collection, ingest
 
 ### Data analysis and response
 
-Azure Monitor offers a broad set of tools and capabilities to help you analyze and gain insights into your monitoring data. Azure Monitor includes the following features to support data analysis and response:
+Azure Monitor offers a broad set of tools and capabilities to help you analyze and gain insights from your monitoring data. Azure Monitor includes the following features to support data analysis and response:
 
 - An easy-to-use portal UI that lets you view, filter, and manipulate monitoring data.
 - Kusto Query Language (KQL), a powerful query language that's optimized for ad-hoc queries, data exploration, and near-real time analysis of large volumes of data streamed from multiple sources.

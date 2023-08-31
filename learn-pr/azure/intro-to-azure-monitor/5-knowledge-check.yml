@@ -59,7 +59,7 @@ quiz:
     - content: "Textual records of events that occur in a resource or application."
       isCorrect: false
       explanation: "Incorrect. Logs are textual records of events, actions, and messages that occur in a resource or application."
-  - content: "What's a good way to combine metrics data into a single view for reporting?"
+  - content: "What's a good way to combine metrics and other types of data into a single view for reporting?"
     choices:
     - content: "Azure Event Hubs."
       isCorrect: false
