@@ -1,7 +1,5 @@
 Your IT environment might include various resources and services, like virtual machines (VMs), databases, web hosting services, and gateways. In this unit, you learn about metrics and logs, and how collecting these two types of data with Azure Monitor lets you monitor the health, behavior, and performance of your Azure applications, networks, and infrastructure.
 
-Azure Monitor provides two types of data that are essential for understanding application and resource behavior and performance: Azure Monitor Metrics and Azure Monitor Logs.
-
 ## Metrics
 
 Metrics are quantitative measurements that show snapshots of application or resource performance. Metrics are typically numeric values that you can measure over time.
@@ -16,7 +14,7 @@ For example, the following **Requests** metric line chart shows the sum aggregat
 
 :::image type="content" source="../media/web-app-metrics.png" alt-text="Screenshot of the Monitoring option selected in the Azure portal for a web app, showing chart of requests for the web app." lightbox="../media/web-app-metrics.png":::
 
-Azure Monitor Metrics can collect several types of metrics, including:
+Azure Monitor can collect several types of metrics, including:
 
 - **Azure platform metrics.** Azure Monitor starts collecting metrics data from Azure resources as soon as they're added to a subscription. A list of resource-specific metrics is automatically available for each Azure resource type.
 - **Custom metrics**. Azure Monitor can also collect metrics from other sources, including applications and agents running on VMs. You can send custom metrics to Azure Monitor via the Azure Monitor Agent, other agents and extensions, or directly to the Azure Monitor REST API.
