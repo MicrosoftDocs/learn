@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
-uid: learn.wwl.apl-5001-configure-siem--security-operations-using-microsoft-sentinel
+uid: learn.wwl.configure-siem--security-operations-using-microsoft-sentinel
 metadata:
-  title: 'APL-5001: Configure SIEM security operations using Microsoft Sentinel'
+  title: 'Configure SIEM security operations using Microsoft Sentinel'
   description: 'Configure SIEM security operations using Microsoft Sentinel'
   ms.date: 8/01/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.service: Microsoft Sentinel
-title: 'APL-5001: Configure SIEM security operations using Microsoft Sentinel'
+title: 'Configure SIEM security operations using Microsoft Sentinel'
 prerequisites: |
   - Fundamental understanding of Microsoft Azure
   - Basic understanding of Microsoft Sentinel
