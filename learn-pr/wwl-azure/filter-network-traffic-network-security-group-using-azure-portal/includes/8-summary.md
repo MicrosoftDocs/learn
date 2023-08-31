@@ -7,3 +7,4 @@ Upon completion of this module, you should be able to:
  -  Apply network security groups to filter incoming and outgoing traffic to resources in Azure.
  -  Maintain and troubleshoot your network security group configuration as necessary.
  -  Understand best practices for implementing network security groups to ensure secure and optimized network performance.
+
