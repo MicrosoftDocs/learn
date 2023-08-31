@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: fabric
 durationInMinutes: 3
 quiz:
@@ -43,7 +42,7 @@ quiz:
       explanation: "Incorrect. While the data size and processing time may be reduced, that's not the goal."
     - content: "To ensure data quality and consistency."
       isCorrect: true
-      explanation: "Correct. Basic cleaning is done to ensure data quality and consistency before moving on to transformation and modelling steps."
+      explanation: "Correct. Basic cleaning is done to ensure data quality and consistency before moving on to transformation and modeling steps."
     - content: "To enforce data privacy and security measures."
       isCorrect: false
       explanation: "Incorrect. Basic cleaning has no direct impact on data security or privacy."
