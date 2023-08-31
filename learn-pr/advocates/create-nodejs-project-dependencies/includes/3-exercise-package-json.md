@@ -27,7 +27,9 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
     ```bash
     node --version
     ```
-1. Close the terminal.
+
+    The dev container uses a Node.js LTS version such as `v20.5.1`. The exact version might be different.
+
 1. The remaining exercises in this project take place in the context of this development container.
 
 #### [Local development (Docker)](#tab/visual-studio-code)
@@ -41,10 +43,18 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
     >
     > :::image type="content" source="../media/codespaces/open-terminal-option.png" lightbox="../media/codespaces/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
 1. Clone the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository into the current directory.
+
     ```bash
-    git clone https://github.com/MicrosoftDocs/node-essentials.git .
+    git clone https://github.com/MicrosoftDocs/node-essentials.git
     ```
-1. Open the folder into which you cloned the GitHub repository.
+
+1. Open the repository in code with the following commands in the terminal.
+
+    ```bash
+    cd node-essentials
+    code .
+    ```
+
 1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen in Container**.
     :::image type="content" source="../media/codespaces/reopen-container-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within the context of a development container.":::
     > [!TIP]
@@ -56,14 +66,16 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
     ```bash
     node --version
     ```
-1. Close the terminal.
+
+    The dev container uses a Node.js LTS version such as `v20.5.1`. The exact version might be different.
+
 1. The remaining exercises in this project take place in the context of this development container.
 
 ---
 
 ## Set up a new Node.js project
 
-1. In the terminal, change to the folder that has the cloned files for this exercise:
+1. In the terminal, change to the folder that has the files for this exercise:
 
    ```bash
    cd node-dependencies/3-exercise-package-json
