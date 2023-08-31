@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following Markdown snippets would produce this text: *Hello, **world**!*?"
+  - content: "Which of the following Markdown snippets would produce the text *Hello, **world**!* in bold italics?"
     choices:
     - content: "`*Hello, *world*!*`"
       isCorrect: false
