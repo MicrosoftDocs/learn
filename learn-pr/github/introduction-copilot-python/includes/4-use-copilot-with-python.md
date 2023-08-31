@@ -17,7 +17,7 @@ The quality of output from Copilot is dependent on how well you craft your promp
 # Create an API endpoint
 ```
 
-Since the prompt is ambiguous and vague, the result from GitHub Copilot might not be what you need. For example, it could use a framework that you don't  know, or an endpoint that requires data that you don't recognize.. However, if you have the following prompt:
+Since the prompt is ambiguous and vague, the result from GitHub Copilot might not be what you need. For example, it could use a framework that you don't know, or an endpoint that requires data that you don't recognize. However, if you have the following prompt:
 
 ```python
 # Create an API endpoint using the FastAPI framework that accepts a JSON payload in a POST request
