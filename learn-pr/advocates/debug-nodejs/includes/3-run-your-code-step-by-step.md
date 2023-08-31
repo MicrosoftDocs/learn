@@ -83,3 +83,23 @@ To get information about the current execution point, run these commands:
 - `exec <EXPR>`: Evaluate an expression within the current execution context. This command is useful to help you get information about the current state. For example, you can get the value of a variable named `i` by using `exec i`.
 
 Those are quite a few commands to remember. Thankfully, you can also use the `help` command to show the complete list of available commands. To exit the debugger at any time, press <kbd>Ctrl+D</kbd>, or select the command `.exit`.
+
+## Use Development container for consistent development environment
+
+A development container is a configured environment, which includes all tools and applications needed to complete a development task. This allows development teams to focus on writing code instead of chasing issues stemming from working in an environment (perhaps multiple environments) different than the production environment. 
+
+A development container can run:
+
+* **Remotely**: In the browser, you can use GitHub Codespaces and Visual Studio Code for the Web, using free compute time available with your GitHub account.
+*  **Locally**: On your local computer, you can use Visual Studio Code [] with a configured container environment or you can start with the default environment. Docker Community edition is required.
+
+### Remote development
+
+[GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
+
+> [!IMPORTANT]
+> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+
+### Local development
+
+The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.

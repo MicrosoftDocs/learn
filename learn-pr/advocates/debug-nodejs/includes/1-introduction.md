@@ -10,6 +10,7 @@ In this module, you'll learn how to effectively debug Node.js programs. The fast
 
 By the end of this module, you'll be able to:
 
+* Use a dev container for your development environment 
 * Use the Visual Studio Code debugger with a Node.js program.
 * Create breakpoints and run your code step by step to find issues.
 * Inspect your program state at any execution step.

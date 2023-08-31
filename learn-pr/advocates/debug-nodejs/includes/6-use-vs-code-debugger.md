@@ -388,7 +388,7 @@ That's it. You fixed the code. You can now efficiently debug code you didn't eve
 
 After completing the project, you may wish to clean up your development environment or return it to its typical state.
 
-### [GitHub Codespaces](#tab/github-codespaces)
+### [Remote development (browser)](#tab/github-codespaces)
 
 Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free per-core hours entitlement you get for your account.
 
@@ -405,7 +405,7 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
     :::image type="content" source="../media/codespaces/codespace-delete.png" alt-text="Screenshot of the context menu for a single codespace with the delete option highlighted.":::
 
-### [Visual Studio Code](#tab/visual-studio-code)
+### [Local development (Docker)](#tab/visual-studio-code)
 
 You aren't necessarily required to clean up your local environment, but you can stop the running development container and return to running Visual Studio Code in the context of a local workspace.
 
