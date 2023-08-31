@@ -34,7 +34,7 @@ Azure Monitor provides features and tools for collecting, managing, and analyzin
 As soon as you add resources to an Azure subscription, Azure Monitor starts collecting data about the resources. Azure Monitor provides the following capabilities for collecting, storing, and managing monitoring data:
 
 - Native monitoring of your entire Azure deployment.
-- Tools such as data collection agents and APIs for monitoring all layers in your stack, including applications and infrastructure.
+- Tools such as data collection agents and APIs for monitoring all layers in your stack, including applications and infrastructure, in and outside of Azure.
 - Integration with the Azure Event Hubs data streaming service.
 - Data transformations during ingestion to let you filter out data you don't need.
 - Configurable data retention periods, archiving, and restore options.
