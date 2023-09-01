@@ -3,17 +3,15 @@ uid: learn.wwl.get-started-lakehouses
 metadata:
   title: Get started with lakehouses in Microsoft Fabric
   description: "Get started with lakehouses in Microsoft Fabric"
-  ms.date: 05/10/2023
+  ms.date: 09/01/2023
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: fabric
-  ms.subservice: onelake
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+  ms.service: fabric
 title: Get started with lakehouses in Microsoft Fabric
 summary: Lakehouses merge data lake storage flexibility with data warehouse analytics. Microsoft Fabric offers a lakehouse solution for comprehensive analytics on a single SaaS platform.
 abstract: |
@@ -44,6 +42,7 @@ units:
 - learn.wwl.get-started-lakehouses.introduction
 - learn.wwl.get-started-lakehouses.fabric-lakehouse
 - learn.wwl.get-started-lakehouses.work-lakehouse
+- learn.wwl.get-started-lakehouses.explore-data-lakehouse
 - learn.wwl.get-started-lakehouses.exercise-lakehouse
 - learn.wwl.get-started-lakehouses.knowledge-check
 - learn.wwl.get-started-lakehouses.summary

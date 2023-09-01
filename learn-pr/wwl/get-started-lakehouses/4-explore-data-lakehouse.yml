@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-lakehouses.explore-data-lakehouse
+title: Explore and transform data in a lakehouse
+metadata:
+  title: Explore and transform data in a lakehouse
+  description: "Explore and transform data in a lakehouse"
+  ms.date: 09/01/2023
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+  ms.custom:
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-explore-data-lakehouse.md)]
