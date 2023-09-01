@@ -1,4 +1,4 @@
-We've detected the language type by using the Azure Cognitive Services Text Analytics API and the sentiment by using the Sentiment Analysis API. What if we want to detect key phrases in the text? We can use the Key Phrases API.
+We've detected the language type by using the Azure AI services Text Analytics API and the sentiment by using the Sentiment Analysis API. What if we want to detect key phrases in the text? We can use the Key Phrases API.
 
 ```python
 # As with the other services, set up the Key Phrases API with the following parameters
@@ -8,7 +8,7 @@ print(key_phrase_api_url)
 
 The output is:
 
-```Output
+```output
 https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/keyPhrases
 ```
 
@@ -34,7 +34,7 @@ pprint(key_phrases)
 
 The output is:
 
-```Output
+```output
 {'documents': [{'id': '1',
                 'keyPhrases': ['wonderful experience', 'staff', 'rooms']},
                {'id': '2',
@@ -57,7 +57,7 @@ HTML("<table><tr><th>Text</th><th>Key phrases</th></tr>{0}</table>".format("\n".
 
 Here's the output:
 
-```Output
+```output
 | Text                                                                              | Key phrases                      |
 | I had a wonderful experience! The rooms were wonderful and the staff was helpful. | wonderful experience,staff,rooms |
 | I had a terrible time at the hotel. The staff was rude and the food was awful.    | food,terrible time,hotel,staff   |
@@ -73,7 +73,7 @@ What other key phrases can you come up with for analysis?
 
 <br />
 
-<details> 
+<details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -97,8 +97,8 @@ What other key phrases can you come up with for analysis?
   ```
 
   The output is:
-  
-  ```Output
+
+  ```output
   {'documents': [{'id': '1', 'keyPhrases': ['great experience', 'demos']},
                {'id': '2', 'keyPhrases': ['audio']}],
   'errors': []}
@@ -107,7 +107,7 @@ What other key phrases can you come up with for analysis?
   | This was a great experience overall. I particularly loved the demos. | great experience,demos |
   | I never want to come back here. The audio was horrendous. | audio |
   ```
-  
+
 </details>
 
 <br /><br />
