@@ -23,7 +23,7 @@ Each breakthrough in AI technologies brings a new reminder of our shared respons
 Novel threats require a constant evolution in our approach to responsible AI. For example, because generative AI enables people to create or edit videos, images, or audio files so credibly that they look real, media authenticity is harder to verify. In response, Microsoft is teaming with other technology and news stakeholders to develop technical standards to address deepfake-related manipulation.  
 
 >[!NOTE]
-> To prepare for new types of attacks that could influence learning datasets, Microsoft developed technology such as advanced content filters and introduced supervisors for AI systems with automatic learning capabilities. Current generative AI models, such as those provided in Azure Cognitive Services or Bing Chat, are built upon these insights.
+> To prepare for new types of attacks that could influence learning datasets, Microsoft developed technology such as advanced content filters and introduced supervisors for AI systems with automatic learning capabilities. Current generative AI models, such as those provided in Azure AI Services or Bing Chat, are built upon these insights.
 
 ### Biased outcomes
 

@@ -1,4 +1,4 @@
-The Language service's custom question answering feature enables you to define and publish a knowledge base of questions and answers with support for natural language querying. When combined with Azure Bot Service, you can use a knowledge base to deliver a bot that responds intelligently to user questions over multiple communication channels.
+Azure AI Language's custom question answering feature enables you to define and publish a knowledge base of questions and answers with support for natural language querying. When combined with Azure AI Bot Service, you can use a knowledge base to deliver a bot that responds intelligently to user questions over multiple communication channels.
 
 The ability to create conversational AI solutions with these services makes it possible for AI agents to reduce the support workload for human personnel; enabling organizations to provide user support at global scale.
 

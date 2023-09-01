@@ -4,11 +4,10 @@ title: Exercise - Complete the challenge to add methods to make the game playabl
 metadata:
   title: Exercise - Complete the challenge to add methods to make the game playable
   description: "Exercise - Complete the challenge to add methods to make the game playable"
-  ms.date: 05/04/2023
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-challenge-dice-game.md)]

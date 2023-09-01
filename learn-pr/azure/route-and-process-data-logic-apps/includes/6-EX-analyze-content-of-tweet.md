@@ -2,15 +2,17 @@ In this exercise, we're going to continue work on our social media monitoring ap
 
 ![Diagram showing the triggers and actions in the workflow for the social media monitoring logic app. The second step is the "Sentiment" action and is highlighted to show the part we'll complete in this exercise.](../media/exercise-detect-sentiment.png)
 
-## Get key and endpoint for Cognitive Services
+<a name='get-key-and-endpoint-for-azure-ai-services'></a>
 
-The Azure Cognitive Services for Language API provides natural language processing for text and includes capabilities such as sentiment analysis, key phrase extraction, language detection, and entity linking. We'll use this API for sentiment analysis and run a script to programmatically complete the following tasks:
+## Get key and endpoint for Azure AI services
 
-- Set up an Azure Cognitive Services account in the sandbox environment, making the account free for use in this module.
+The Azure AI Language API provides natural language processing for text and includes capabilities such as sentiment analysis, key phrase extraction, language detection, and entity linking. We'll use this API for sentiment analysis and run a script to programmatically complete the following tasks:
+
+- Set up an Azure AI services account in the sandbox environment, making the account free for use in this module.
 
 - Register the Text Analytics service.
 
-- Return an account key and an endpoint URL for the Cognitive Services. For this exercise, we need these values to make calls and get back sentiment scores.
+- Return an account key and an endpoint URL for the Azure AI services. For this exercise, we need these values to make calls and get back sentiment scores.
 
 1. In Azure Cloud Shell to the right, run the following `curl` command to copy the **setup-textanalytics.sh** script from GitHub:
 
@@ -46,16 +48,16 @@ Now, we'll add the **Sentiment** action to our workflow using the Azure portal.
 
 1. In the **Actions** section, select **Sentiment**.
 
-   The connection profile box appears so that you can provide informtion for your connection to your Cognitive Services account.
+   The connection profile box appears so that you can provide informtion for your connection to your Azure AI services account.
 
 1. Provide the following connection information:
 
    | Property | Required | Value | Description |
    |----------|----------|-------|-------------|
    | **Connection name** | Yes | CognitiveServicesConnection | The name to provide your connection |
-   | **Authentication Type** | Yes | Api Key | The authentication to use for access to your Cognitive Services account |
-   | **Account Key** | Yes | <*your-previously-saved-API-key*> | The key to use for accessing your Cognitive Services account |
-   | **Site URL** | No | <*your-saved-endpoint-address*> | The URL address for your Cognitive Services account endpoint |
+   | **Authentication Type** | Yes | Api Key | The authentication to use for access to your Azure AI services account |
+   | **Account Key** | Yes | <*your-previously-saved-API-key*> | The key to use for accessing your Azure AI services account |
+   | **Site URL** | No | <*your-saved-endpoint-address*> | The URL address for your Azure AI services account endpoint |
    |||||
    
 1. When you're done, select **Create**.
@@ -78,7 +80,7 @@ Next, we'll set up the **Sentiment** action's properties to pass in the tweet te
 
 1. Save your workflow.
 
-   This step pushes your changes to your deployed logic app. Tweets containing your product name will be processed by Cognitive Services and will be given a numeric score. Recall that a score close to 1 is positive sentiment, while a score near 0 is negative. 
+   This step pushes your changes to your deployed logic app. Tweets containing your product name will be processed by Azure AI services and will be given a numeric score. Recall that a score close to 1 is positive sentiment, while a score near 0 is negative. 
 
 ## Review the results
 
@@ -100,4 +102,4 @@ In this section, you'll learn how to monitor your logic app workflow's execution
 
     The action shape expands to show the **INPUTS** and **OUTPUTS** sections.
 
-1. In the **OUTPUTS** section, find the tweet text and the score, which is assigned by the Azure Cognitive Services engine.
+1. In the **OUTPUTS** section, find the tweet text and the score, which is assigned by the Azure AI services engine.
