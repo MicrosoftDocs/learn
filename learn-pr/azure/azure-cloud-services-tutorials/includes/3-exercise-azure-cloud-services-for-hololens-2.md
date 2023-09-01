@@ -26,7 +26,7 @@ You will use [Azure Storage](https://azure.microsoft.com/services/storage/) to p
 
 ### Azure Custom Vision
 
-With [Azure Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (part of the [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/)) you can associate a set of images to *Tracked Objects*, train a machine learning model on the set you created, and detect the *Tracked Objects*.
+With [Azure AI Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (part of the [Azure AI services](https://azure.microsoft.com/services/cognitive-services/)) you can associate a set of images to *Tracked Objects*, train a machine learning model on the set you created, and detect the *Tracked Objects*.
 
 ### Azure Spatial Anchors
 
