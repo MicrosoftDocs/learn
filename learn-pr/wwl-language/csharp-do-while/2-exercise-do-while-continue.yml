@@ -4,7 +4,7 @@ title: Exercise - Create do and while iteration loops
 metadata:
   title: Exercise - Create do and while iteration loops
   description: "Exercise - Create do and while iteration loops"
-  ms.date: 08/17/2023
+  ms.date: 08/31/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Knowledge check"
   questions:
-  - content: "Which of the **following** correctly describes a difference between the `do-while` and the `while` iterative statements?"
+  - content: "Which of the **following** correctly describes a behavior of either a `do-while` or `while` iterative statement?"
     choices:
     - content: "A `do-while` statement executes a code block zero or more times."
       isCorrect: false
@@ -22,9 +22,9 @@ quiz:
     - content: "A `while` statement executes a code block at least once."
       isCorrect: false
       explanation: "Incorrect. The expression for a `while` statement is evaluated before the code block and therefore the code block may not be executed even once."
-    - content: "A `do-while` statement iterates through a code block until a condition is met."
+    - content: "A `do-while` statement executes a code block at least once."
       isCorrect: true
-      explanation: "Correct! The `do-while` will iterate through a code block at least once."
+      explanation: "Correct! The `do-while` will iterate through a code block at least one time. Code execution will exit the iteration loop once the `while` expression at the end of the code block evaluates to `true`."
   - content: "A developer needs to capture user input inside a loop. The user enters the keyboard combination `ctrl + Esc` to exit the iteration when they're done entering information. Which is the best iteration statement for this purpose?"
     choices:
     - content: "while"
