@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.use-a-network-security-group-to-filter-inbound-and-outbound-network-traffic-to-and-from-azure-resources-in-an-azure-virtual-network
+title: Exercise 01 - Create a virtual network infrastructure
+metadata:
+  title: Exercise 01 - Create a virtual network infrastructure
+  description: "Exercise 01 - Create a virtual network infrastructure"
+  ms.date: 09/01/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-use-a-network-security-group-to-filter-inbound-and-outbound-network-traffic-to-and-from-azure-resources-in-an-azure-virtual-network.md)]
