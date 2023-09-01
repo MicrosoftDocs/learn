@@ -37,7 +37,6 @@ products:
 - github
 - azure-pipelines
 - azure-monitor
-- azure-application-insights
 subjects:
 - custom-app-development
 - cloud-computing

@@ -101,4 +101,4 @@ When moving to the cloud, many customers migrate from physical or virtualized on
 
 The lift-and-shift strategy provides immediate benefits. These benefits include higher availability, lower operational costs, and the ability to transfer workloads from one datacenter to another. The disadvantage is that the application can't take advantage of the many features available within Azure.
 
-Consider using the migration as an opportunity to transform your business practices by creating new versions of your applications and databases. Your rearchitected application can take advantage of Azure offerings such as Cognitive Services, Bot Service, and machine learning capabilities.
+Consider using the migration as an opportunity to transform your business practices by creating new versions of your applications and databases. Your rearchitected application can take advantage of Azure offerings such as Azure AI services and machine learning capabilities.
