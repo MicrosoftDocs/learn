@@ -28,7 +28,6 @@ products:
 - azure-monitor
 - microsoft-sentinel
 - azure-security-center
-- azure-application-insights
 subjects:
 - it-management-monitoring
 units:
