@@ -20,7 +20,10 @@ The ObjectManipulator script supports the "direct manipulation" modality of the 
 
     :::image type="content" source="../media/028-cube-transform.png" alt-text="Screenshot of the cube's transform component after updates.":::
 
-    We want to be able to see three sides of the cube, so we'll change the cube's rotation, too. 
+    We want to be able to see three sides of the cube, so we'll change the cube's rotation, too.
+ 
+   > [!NOTE]
+   > The height of the cube is set to 1.6 to match the height of the **MRTK XR Rig**, placing it roughly at eye level.
 
 1. In the **Inspector**, change the cube's **Tranform/Rotation** values to the following:
    

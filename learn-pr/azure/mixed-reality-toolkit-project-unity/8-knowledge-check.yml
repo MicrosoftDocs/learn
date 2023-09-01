@@ -32,13 +32,13 @@ quiz:
           explanation: With the Universal Windows Platform (UWP), developers can target Windows 10 tablets and PCs, Windows 10 mobile devices (that is, phones), Xbox One and HoloLens with a single code base.
     - content: "Which Mixed Reality Toolkit package is the only one you're required to import and configure in order to use the Mixed Reality Toolkit?"
       choices:
-        - content: "com.microsoft.mrtk.core"
+        - content: "org.mixedrealitytoolkit.core"
           isCorrect: true
           explanation: The core package is the only required package and includes the core components required to create a mixed reality application.
-        - content: "com.microsoft.mrtk.spatialmanipulation"
+        - content: "org.mixedrealitytoolkit.spatialmanipulation"
           isCorrect: false
           explanation: The spatial manipulation package is optional. It includes implementations of common spatial manipulation components, including BoundsControl, ObjectManipulator, and Solvers.
-        - content: "com.microsoft.mrtk.extendedassets"
+        - content: "org.mixedrealitytoolkit.extendedassets"
           isCorrect: false
           explanation: The extended assets package is optional and contains additional materials, fonts, audio files and other assets that are used by the MRTK example scenes. These assets can be freely used in your projects as temporary or final art.
     - content: "After the Mixed Reality Toolkit is added to a Unity scene, what should you do with the Main Camera object?"

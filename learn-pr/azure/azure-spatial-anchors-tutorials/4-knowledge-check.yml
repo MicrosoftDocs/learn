@@ -16,7 +16,7 @@ quiz:
   questions:
     - content: "What Unity packages are required to enable Azure Spatial Anchors on HoloLens 2?"
       choices:
-        - content: "com.microsoft.mrtk.core"
+        - content: "org.mixedrealitytoolkit.core"
           isCorrect: false
           explanation: This is Mixed Reality Toolkit package and isn't required for ASA.
         - content: "com.microsoft.azure.spatial-anchors-sdk.core"
