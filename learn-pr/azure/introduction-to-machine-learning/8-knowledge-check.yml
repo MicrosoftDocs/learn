@@ -43,7 +43,7 @@ quiz:
       explanation: "Correct."
     - content: "The training data is used to make changes to the objective. These changes help the objective be more like the model."
       isCorrect: false
-      explanation: "Incorrect. The training data and objective normally are not changed during training."
+      explanation: "Incorrect. The training data and objective normally aren't changed during training."
     - content: "The model is used to make changes to the training data. These changes help the training data get better at achieving the objective."
       isCorrect: false
-      explanation: "Incorrect. The training data and objective normally are not changed during training."
+      explanation: "Incorrect. The training data and objective normally aren't changed during training."
