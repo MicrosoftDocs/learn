@@ -46,7 +46,7 @@ units:
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.4-azure-functions
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.5-azure-sql-database
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.6-power-bi
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.7-knowledge-check
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.8-summary
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.6b-knowledge-check
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.7-summary
 badge:
   uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge
