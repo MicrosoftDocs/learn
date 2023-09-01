@@ -26102,6 +26102,26 @@
       "source_path": "learn-pr/azure/enable-single-sign-on/10-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-sso/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/filter-network-traffic-network-security-group-using-azure-portal/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/filter-network-traffic-network-security-group-using-azure-portal/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/filter-network-traffic-network-security-group-using-azure-portal/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/filter-network-traffic-network-security-group-using-azure-portal/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-log-analytics-workspace-microsoft-defender-cloud/3-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-log-analytics-workspace-microsoft-defender-cloud/4-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-log-analytics-workspace-microsoft-defender-cloud/4-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-log-analytics-workspace-microsoft-defender-cloud/5-summary",
+      "redirect_document_id": false
     }
   ]
 }
