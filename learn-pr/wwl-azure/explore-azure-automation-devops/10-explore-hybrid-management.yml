@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-automation-devops.explore-hybrid-management
+title: Explore hybrid management
+metadata:
+  title: Explore hybrid management
+  description: "Explore hybrid management"
+  ms.date: 09/01/2023
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-explore-hybrid-management.md)]

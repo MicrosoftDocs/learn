@@ -4,13 +4,11 @@ title: Create automation accounts
 metadata:
   title: Create automation accounts
   description: "Create automation accounts"
-  ms.date: 03/18/2022
+  ms.date: 09/01/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/2-create-automation-accounts.md)]

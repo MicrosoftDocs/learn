@@ -4,13 +4,11 @@ title: Explore source control integration
 metadata:
   title: Explore source control integration
   description: "Explore source control integration"
-  ms.date: 03/18/2022
+  ms.date: 09/01/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/7-explore-source-control-integration.md)]
