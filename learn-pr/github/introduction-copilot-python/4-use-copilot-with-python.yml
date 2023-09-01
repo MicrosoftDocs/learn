@@ -2,8 +2,8 @@
 uid: learn.github-copilot-with-python.use-copilot-with-python
 title: use-copilot-with-python
 metadata:
-  title: use-copilot-with-python
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Use GitHub Copilot with Python
+  description: "Use GitHub Copilot to update a Python project. Update the Python API and use GitHub Copilot to suggest additions for new endpoints."
   ms.date: 8/23/2023
   author: bethanyjep
   ms.author: bethanycheum

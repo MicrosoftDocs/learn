@@ -1,13 +1,9 @@
 
 Often, when you write code, you need to consult official documentation, or other web pages, to remember syntax or how to solve a problem. You can also spend hours trying to resolve a problem when the code isn't working. Additionally, you also spend time writing tests and documentation. All these tasks are time consuming and to be more efficient you could use code snippets or rely on tooling in your IDE, integrated development environment, but is there a better way?
 
-## What is GitHub Copilot?
-
-GitHub Copilot is an AI assistant that you use from within your IDE that’s capable of generating code and much more.  
-
 ## How does it work?
 
-GitHub Copilot uses prompts, natural language text, that you type, and it provides suggestions based on what you type. A prompt can, for example, look like so:
+GitHub Copilot is an AI assistant that you use from within your IDE that’s capable of generating code and much more. GitHub Copilot uses prompts, natural language text, that you type, and it provides suggestions based on what you type. A prompt can, for example, look like so:
 
 ```python
 # Create a web API using FastAPI with a route to products.
@@ -26,17 +22,17 @@ def read_products():
 
 ## How it recognizes prompts
 
-Copilot can tell that something is a prompt, an instruction if you: 
+Copilot can tell that something is a prompt, an instruction if you:
 
-Type it as a comment in a code file with a file ending like .py or .js for example. 
+Type it as a comment in a code file with a file ending like .py or .js for example.
 
-Type text in a markdown file and wait for Copilot to return a response within a few second. 
+Type text in a markdown file and wait for Copilot to return a response within a few second.
 
 ## Accepting suggestions
 
-What’s you’re getting back from Copilot is a suggestion, text that shows itself as grey code, if you use black as your text color. To accept the suggestion, you need to press the “Tab” key.  
+What’s you’re getting back from Copilot is a suggestion, text that shows itself as grey code, if you use black as your text color. To accept the suggestion, you need to press the “Tab” key.
 
-Copilot might suggest more than one thing and it’s possible to cycle between suggestion using “ctrl + enter” key and select the most appropriate one.  
+Copilot might suggest more than one thing and it’s possible to cycle between suggestion using “ctrl + enter” key and select the most appropriate one.
 
 
 ## How to set up GitHub Copilot

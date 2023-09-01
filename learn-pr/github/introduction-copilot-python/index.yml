@@ -4,8 +4,8 @@ uid: |
 metadata:
   title: |
     Using GitHub Copilot with Python
-  description: "TODO"               # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 8/23/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  description: "Use GitHub Copilot with Visual Studio Code to make changes and updates to a Python application."
+  ms.date: 8/23/2023
   author: bethanyjep
   ms.author: bethanycheum
   ms.topic: interactive-tutorial
