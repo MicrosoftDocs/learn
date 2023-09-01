@@ -78,7 +78,7 @@ The process of creating a virtual environment may take a few seconds. Wait for t
 # macOS or Linux
 # Activate the environment
 source ./venv/bin/activate
-``````
+```
 
 ## Install Flask and other libraries
 
