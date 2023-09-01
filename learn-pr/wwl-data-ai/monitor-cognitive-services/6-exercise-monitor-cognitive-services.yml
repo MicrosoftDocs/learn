@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-cognitive-services.exercise-monitor
-title: Exercise - Monitor Cognitive Services
+title: Exercise - Monitor Azure AI Services
 metadata:
   title: Demo-Introduction
-  description: "Exercise - Monitor Cognitive Services"
+  description: "Exercise - Monitor Azure AI Services"
   ms.date: 05/29/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: false

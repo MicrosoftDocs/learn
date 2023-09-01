@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.contribute-docs-browser.summary
+title: Summary
+metadata:
+  title: Summary
+  description: The unit summarizes Contribute to Microsoft Learn documentation in your module.
+  ms.date: 8/1/2023
+  author: sgaspari815
+  ms.author: v-sgaspari
+  ms.topic: interactive-tutorial
+  ms.service: learn
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

@@ -1,4 +1,4 @@
-In this exercise, you'll create and deploy a web service that acts as a custom skill in a Cognitive Search pipeline. The web skill calls Form Recognizer to extract invoice fields, such as customer names, so that they can be included in the index.
+In this exercise, you'll create and deploy a web service that acts as a custom skill in a Cognitive Search pipeline. The web skill calls Azure AI Document Intelligence to extract invoice fields, such as customer names, so that they can be included in the index.
 
 ## Run Cloud Shell
 
@@ -52,7 +52,7 @@ You'll host your custom skill in an Azure Function App. Let's create that Functi
 
 ## Configure the deployed Function
 
-The Python code that you'll deploy needs to know the endpoint and API key for your Form Recognizer resource. We'll obtain those values from the Azure portal and use the Function Apps application settings to configure them:
+The Python code that you'll deploy needs to know the endpoint and API key for your Azure AI Document Intelligence resource. We'll obtain those values from the Azure portal and use the Function Apps application settings to configure them:
 
 1. In the Azure portal, select **All resources** and then select **FormsRecognizer**.
 1. Select **Keys and Enpoint** tab. To the right of the **Endpoint** textbox, select the **Copy to clipboard** button.
@@ -123,7 +123,7 @@ https://raw.githubusercontent.com/MicrosoftLearning/mslearn-formrecognizer/maste
 
 ## Add the Function to the Cognitive Search skillset
 
-To configure Cognitive Services to use the new Azure Function that calls Form Recognizer, you must add a skillset:
+To configure Azure AI Services to use the new Azure Function that calls Azure AI Document Intelligence, you must add a skillset:
 
 1. In the Azure portal, select **All resources** and then select the Azure Function App you created above.
 1. Next to the **URL** field, select the **Copy to clipboard** button.
@@ -138,7 +138,7 @@ To configure Cognitive Services to use the new Azure Function that calls Form Re
     ```json
     { 
         "name": "[SkillsetName]",
-        "description":"Skillset that calls a Form Recognizer custom skill",
+        "description":"Skillset that calls an Azure AI Document Intelligence custom skill",
         "skills":[ 
             { 
                 "@odata.type":"#Microsoft.Skills.Custom.WebApiSkill",
@@ -188,10 +188,10 @@ Let's remove the exercise resources from your Azure subscription:
 
 1. In Azure portal, select **Resource groups**.
 1. Select **FormsRecognizerResources** and then select **Delete resource group**.
-1. In the **TYPE RESOURCE GROUP NAME** textbox, type **FormsRecognizerResources** and then select **Delete**. Azure removes the resource group, the Form Recognizer resource, the Cognitive Search resource, and their associated resources.
+1. In the **TYPE RESOURCE GROUP NAME** textbox, type **FormsRecognizerResources** and then select **Delete**. Azure removes the resource group, the Azure AI Document Intelligence resource, the Cognitive Search resource, and their associated resources.
 
 ## Learn more
 
-- [Example: Create a Form Recognizer custom skill](/azure/search/cognitive-search-custom-skill-form)
+- [Example: Create an Azure AI Document Intelligence custom skill](/azure/search/cognitive-search-custom-skill-form)
 - [Create a skillset in Azure Cognitive Search](/azure/search/cognitive-search-defining-skillset)
 - [Form Analyzer custom skill sample code](https://github.com/Azure-Samples/azure-search-power-skills/tree/main/Vision/AnalyzeFormV2)

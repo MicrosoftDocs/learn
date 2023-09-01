@@ -29,7 +29,7 @@ The session host negotiates multi-transport capabilities:
 5.  After establishing the Shortpath transport, RDP moves all Dynamic Virtual Channels (DVCs), including remote graphics, input, and device redirection, to the new transport.
 6.  If a firewall or network topology prevents the client from establishing direct UDP connectivity, RDP continues with a reverse connect transport.
 
-The diagram below is an overview of the RDP Shortpath network connection. :::image type="content" source="../media/shortpath-network-c76fde4f.png" alt-text="Diagram showing the flow for Remote Desktop Protocol shortpath." lightbox="../media/shortpath-network-c76fde4f.png":::
+The diagram below is an overview of the RDP Shortpath network connection. :::image type="content" source="../media/shortpath-network-c76fde4f.png" alt-text="Diagram showing the flow for Remote Desktop Protocol shortpath.":::
 
 
 The Azure Virtual Desktop client needs a direct line of sight to the session host. You can get a direct line of sight by using one of these methods:

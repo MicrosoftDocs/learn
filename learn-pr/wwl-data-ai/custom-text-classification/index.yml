@@ -2,14 +2,14 @@
 uid: learn.wwl.custom-text-classification
 metadata:
   title: Create custom text classification solutions
-  description: "The Language service within Azure Cognitive Services enables processing of natural language to use in your own app. Learn how to build a custom text classification project."
+  description: "The Azure AI Language Service enables processing of natural language to use in your own app. Learn how to build a custom text classification project."
   ms.service: cognitive-services
   ms.date: 09/01/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
 title: Create custom text classification solutions
-summary: The Language service within Azure Cognitive Services enables processing of natural language to use in your own app. Learn how to build a custom text classification project.
+summary: The Azure AI Language Service enables processing of natural language to use in your own app. Learn how to build a custom text classification project.
 abstract: |
   After completing this module, you'll be able to:
   - Understand types of classification projects
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should be familiar with:
   - The Azure portal
-  - Familiarity with Cognitive Services
+  - Familiarity with Azure AI Services
   - General programming techniques
 iconUrl: /training/achievements/1-create-custom-text-classification-solutions.svg
 levels:
@@ -28,7 +28,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 - classification-analysis

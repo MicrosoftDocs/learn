@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.wwl.build-language-understanding-model
 metadata:
-  title: Build a Language Understanding model
-  description: "The Language Understanding service enables you to train a language model that apps can use to extract meaning from natural language."
+  title: Build an Azure AI Language Understanding model
+  description: "The Azure AI Language Understanding service enables you to train an Azure AI Language model that apps can use to extract meaning from natural language."
   ms.date: 07/20/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-title: Build a Language Understanding model
-summary: The Language Understanding service enables you to train a language model that apps can use to extract meaning from natural language.
+title: Build an Azure AI Language Understanding model
+summary: The Azure AI Language Understanding service enables you to train an Azure AI Language model that apps can use to extract meaning from natural language.
 abstract: |
   After completing this module, you'll be able to:
-  - Provision Azure resources for Language Understanding
+  - Provision Azure resources for Azure AI Language Understanding
   - Define intents, utterances, and entities
   - Use patterns to differentiate similar utterances
   - Use pre-built entity components
-  - Train, test, publish, and review a Language Understanding model
+  - Train, test, publish, and review an Azure AI Language Understanding model
 prerequisites: |
   Before starting this module, you should already have:
   *   Familiarity with Azure and the Azure portal.
@@ -28,8 +28,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
-- azure-language-understanding
+- ai-services
 subjects:
 - artificial-intelligence
 - cloud-computing

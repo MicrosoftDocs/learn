@@ -57,7 +57,7 @@ To learn more about GitHub branches, see [About branches](https://docs.github.co
 
 ## Commits
 
-A **commit** is a change to one or more files on a branch. Every time a commit is created, it's assigned a unique ID and tracked, along with the time and contributor. This provides a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
+A **commit** is a snapshot of a change or changes to one or more files on a branch. Every time a commit is created, it's assigned a unique ID and tracked, along with the time and contributor. This provides a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
 
 :::image type="content" source="../media/2-commits.png" alt-text="A list of GitHub commits to a main branch." border="false":::
 

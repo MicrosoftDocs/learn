@@ -1,6 +1,3 @@
-
-
-
 Methods can provide return values after performing their tasks. By using parameters and return types together, you can create streamlined methods that receive input, perform a task, and provide output. This format allows you to efficiently build functionality into your programs while maintaining clean, readable code.
 
 Suppose you need to create an application that uses many methods to perform calculations on input values. You need a way to retrieve the results of the calculations, and use those results throughout your program. You can do this by creating methods with return values. 

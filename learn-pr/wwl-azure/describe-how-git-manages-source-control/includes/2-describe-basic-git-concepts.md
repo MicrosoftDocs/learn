@@ -1,4 +1,3 @@
-
 Git, as a version and source control technology, functions on a few basic concepts that are important to understand.
 
 Some of the key Git concepts you should know about are:

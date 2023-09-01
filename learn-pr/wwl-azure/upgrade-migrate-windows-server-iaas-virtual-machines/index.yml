@@ -2,14 +2,15 @@
 uid: learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines
 metadata:
   title: Upgrade and migrate Windows Server IaaS virtual machines
-  description: "Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server 2019 by using Windows Server migration tools or the Storage Migration Service."
-  ms.date: 10/21/2020
+  description: "Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server 2022 by using Windows Server migration tools or the Storage Migration Service."
+  ms.date: 08/15/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: windows-server
+  ms.contributors: orthomas-08152023
 title: Upgrade and migrate Windows Server IaaS virtual machines
-summary: Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server 2019 by using Windows Server migration tools or the Storage Migration Service.
+summary: Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server 2022 by using Windows Server migration tools or the Storage Migration Service.
 abstract: |
   After completing this module, you will be able to:
   - Describe Windows Server IaaS migration.

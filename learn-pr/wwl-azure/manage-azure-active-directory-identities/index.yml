@@ -31,7 +31,7 @@ products:
 - azure-powershell
 - mem
 - active-directory
-- azure-active-directory-connect
+- entra
 units:
 - learn.wwl.manage-azure-active-directory-identities.introduction
 - learn.wwl.manage-azure-active-directory-identities.examine-role-based-access-control-user-roles-azure-active-directory
