@@ -72,7 +72,7 @@ Color filters can also be found in the Ease of Access menu. This setting can mak
 elements on the screen. There are also specific filters to make colors more distinct for people with color blindness.
 
 To turn on color filters:
-1. Go to **Settings** > **Ease of Access** > **Color filters** and toggle **Turn on color filters** to **On**. Or press the keyboard shortcut keys (Windows logo key) <kbd>![Windows logo key.](../media/windows-logo.png)+Ctrl+C</kbd>.
+1. Go to **Settings** > **Ease of Access** > **Color filters** and toggle **Turn on color filters** to **On**. 
 2. Select the color filter you prefer.
 
 :::image type="content" source="../media/color-filters.png" alt-text="Screenshot of the Windows 10 Color Filters menu.":::
