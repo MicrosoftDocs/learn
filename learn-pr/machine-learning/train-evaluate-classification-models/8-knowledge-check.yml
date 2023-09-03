@@ -41,7 +41,7 @@ quiz:
     choices:
     - content: "The model correctly predicted 81% of the test cases"
       isCorrect: false
-      explanation: "That is incorrect. This information would be found using the Accuracy metric"
+      explanation: "That is incorrect. This information would be found using the Accuracy metric."
     - content: "81% of the cases predicted as positive by the model were actually positive"
       isCorrect: false
       explanation: "That is incorrect. This information would be found using the Precision metric."
