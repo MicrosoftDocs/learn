@@ -32,12 +32,12 @@ quiz:
       explanation: "Incorrect. It's not possible to provide a comprehensive list of all phrases. You do need to provide a set of phrases, but they don't have to match the user's input text exactly."
     - content: "Provide a list of some phrases for each possible intent, and use an AI model to match the user's input to one of the intents."
       isCorrect: true
-      explanation: "Correct! This process is automatically handled by Azure Cognitive Services like LUIS."
+      explanation: "Correct! This process is automatically handled by Azure AI services like LUIS."
     - content: "Program different regular expressions to match the phrase to the best intent."
       isCorrect: false
       explanation: "Incorrect. An attempt to match all phrases by providing individual regular expressions would be a complex task. Even so, the results would likely be poor."
       
-  - content: "You decide to use Cognitive Services QnA Maker to implement chit-chat functionality in your bot. You'd like your bot to support different conversation styles like formal and colloquial. And you want the bot to switch between the styles according to the user's age. How do you achieve this functionality?"
+  - content: "You decide to use Azure AI QnA Maker to implement chit-chat functionality in your bot. You'd like your bot to support different conversation styles like formal and colloquial. And you want the bot to switch between the styles according to the user's age. How do you achieve this functionality?"
     choices:
     - content: "QnA Maker automatically supports different communication styles. You can select any one of them at runtime."
       isCorrect: false
@@ -75,5 +75,3 @@ quiz:
     - content: "All of the above."
       isCorrect: true
       explanation: "Correct! The best way to build a more responsible UI is to implement a combination of design practices that work together to create a positive user experience."
-
-
