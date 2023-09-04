@@ -8,24 +8,38 @@ In the first exercise, you have already installed the Azure IoT Edge runtime on 
    - [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) for Visual Studio Code
    - [JSON Tools](https://marketplace.visualstudio.com/items?itemName=eriklynd.json-tools) useful for changing the "Create Options" for a module.
 
-## Create Azure Cognitive Services
+<a name='create-azure-ai-services'></a>
 
-In this module, you use Azure Custom Vision and Azure Speech services.
+## Create Azure AI services
 
-1. [Azure Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) service is used to create a machine learning model with fruit images provided. Then the model is exported and added to the project folder.
+In this module, you use Azure AI Custom Vision and Azure AI Speech services.
 
-2. [Azure Speech Services](https://azure.microsoft.com/services/cognitive-services/speech-to-text/) is used to generate speech from label of the item. You will add the speech key in deployment template. To create Azure Speech Services:
-    1. Go to the Azure portal and search for Cognitive Services.    
+- [Azure AI Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) service is used to create a machine learning model with fruit images provided. Then the model is exported and added to the project folder.
 
-    2. Search for speech service and select Microsoft Speech Service.
+- [Azure AI Speech](https://azure.microsoft.com/services/cognitive-services/speech-to-text/) is used to generate speech from label of the item. You will add the speech key in deployment template. 
 
-    3. Select **Create**.
-   
-        ![[The illustration shows Azure Speech service.](../media/create-speech.png)](../media/create-speech.png#lightbox)
+The multi-service resource is listed under **Azure AI services** > **Azure AI services multi-service account** in the portal. To create a multi-service resource follow these instructions:
 
-   4. Create cognitive services and enter the information.
+1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-      ![[The illustration shows how to create a speech service.](../media/enter-details.png)](../media/enter-details.png#lightbox)
+1. Select this link to create a multi-service resource: [https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne](https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne)
+
+1. On the **Create** page, provide the following information:
+
+    |Project details| Description   |
+    |--|--|
+    | **Subscription** | Select one of your available Azure subscriptions. |
+    | **Resource group** | The Azure resource group that will contain your Azure AI services resource. You can create a new group or add it to a pre-existing group. |
+    | **Region** | The location of your Azure AI service instance. Different locations may introduce latency, but have no impact on the runtime availability of your resource. |
+    | **Name** | A descriptive name for your Azure AI services resource. For example, *MyAzureAIServicesResource*. |
+    | **Pricing tier** | The cost of your Azure AI services account depends on the options you choose and your usage. For more information, see the API [pricing details](https://azure.microsoft.com/pricing/details/cognitive-services/).
+
+    :::image type="content" source="../media/2-resource-create-screen-multi.png" alt-text="Screenshot of creating a multi-service resource.":::
+
+1. Configure other settings for your resource as needed, read and accept the conditions (as applicable), and then select **Review + create**.
+
+> [!Tip]
+> If your subscription doesn't allow you to create an Azure AI services resource, you may need to enable the privilege of that [Azure resource provider](/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider) using the [Azure portal](/azure/azure-resource-manager/management/resource-providers-and-types#azure-portal), [PowerShell command](/azure/azure-resource-manager/management/resource-providers-and-types#azure-powershell) or an [Azure CLI command](/azure/azure-resource-manager/management/resource-providers-and-types#azure-cli). If you are not the subscription owner, ask the *Subscription Owner* or someone with a role of *admin* to complete the registration for you or ask for the **/register/action** privileges to be granted to your account.
 
 ## Install the Docker Registry on the Linux computer
 
@@ -49,7 +63,7 @@ docker run -d -p 5000:5000 --restart=always --name registry registry:2
 
 2. Open the solution from the Visual Studio Code menu.
 
-## Update the Azure Speech key
+## Update the Azure AI Speech key
 
 Open the deployment.template.json file and update the **azureSpeechServicesKey** with the key you copied from the Azure Speech service.
 

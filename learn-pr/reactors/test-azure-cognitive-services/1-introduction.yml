@@ -3,7 +3,7 @@ uid: learn.reactors.test-azure-cognitive-services.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to testing Azure Cognitive Services for data science operations.
+  description: Introduction to testing Azure AI services for data science operations.
   ms.date: 06/23/2022
   author: aahill
   ms.author: aahi
@@ -12,4 +12,4 @@ metadata:
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |
-  [!include[](includes/1-introduction.md)] 
+  [!INCLUDE[](includes/1-introduction.md)]

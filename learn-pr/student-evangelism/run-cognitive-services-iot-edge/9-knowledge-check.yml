@@ -16,7 +16,7 @@ quiz:
   questions:
   - content: "The ability to deploy a cognitive service as an IoT Edge device in a container provides which advantage?"
     choices:
-    - content: "Cognitive services can run faster"
+    - content: "Azure AI services can run faster"
       isCorrect: false
       explanation: "Deploying as a container on an edge device doesn't necessarily imply faster processing"
     - content: "Ability to run online"

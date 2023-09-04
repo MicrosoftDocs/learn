@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-speech-services-tutorials-mrtk.6-add-cognitive-services-speech-translation
-title: Add the Azure Cognitive Services speech translation component
+title: Add the Azure AI Speech translation component
 metadata:
-  title: Add the Azure Cognitive Services speech translation component
-  description: Description to Add the Azure Cognitive Services speech translation component
+  title: Add the Azure AI Speech translation component
+  description: Description to Add the Azure AI Speech translation component
   ms.date: 09/13/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
