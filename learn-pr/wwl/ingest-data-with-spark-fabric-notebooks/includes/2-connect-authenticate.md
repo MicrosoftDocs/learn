@@ -8,7 +8,7 @@ Fabric notebooks can be easily created in many parts of the Fabric service. Note
 
 Similar to other notebooks, Fabric notebooks allow you to have multiple code or Markdown cells. Notebooks are excellent for initial testing, as you can see the code output directly in-line with the code and make quick changes. You can also run individual cells, freeze cells, or run all cells in a notebook.
 
-![Screenshot of a Fabric notebook with code and Markdown cells](../media/2-notebook-overview.png)
+![Screenshot of a Fabric notebook with code and Markdown cells.](../media/2-notebook-overview.png)
 
 By default, Fabric notebooks use PySpark, which uses the Spark engine to allow a multi-threaded, distributed transaction for speedy processes. You can use Html, Spark (Scala), Spark SQL, and SparkR (R) as well, however they may not have the full benefit of the distributed system.
 
