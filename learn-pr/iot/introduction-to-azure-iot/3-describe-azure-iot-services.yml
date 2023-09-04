@@ -2,11 +2,11 @@
 uid: |
   learn.introduction-to-azure-iot.describe-azure-iot-services
 title: |
-  What is Azure IoT
+  Describe the Azure IoT services and SDKs
 metadata:
   title: |
-    What is Azure IoT
-  description: "A typical IoT solution consists of on-premises devices and gateways, IoT specific cloud services to ingest IoT data into the cloud, and generic cloud services to provide capabilities such as storage and visualizations."
+    Describe the Azure IoT services and SDKs
+  description: "A typical Azure IoT solution uses services such as IoT Hub, IoT Central, and the Device Provisioning Service. In an IoT solution, you use the device SDKs to implement logic on your devices."
   ms.date: 8/14/2023
   author: dominicbetts
   ms.author: dobett

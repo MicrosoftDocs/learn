@@ -46,9 +46,7 @@ Here you'll learn about the core components and capabilities of Azure IoT and se
 <!-- Pattern for simple topic -->
 ## Device development
 
-This section introduces the key concepts around developing devices that connect to a typical Azure IoT solution. The following diagram highlights these elements in the solution:
-
-:::image type="content" source="../media/iot-architecture-developer.svg" alt-text="Diagram that shows the high-level IoT solution architecture highlighting device connectivity areas." border="false":::
+:::image type="content" source="../media/iot-architecture-developer.svg" alt-text="Diagram that shows the high-level IoT solution architecture highlighting device development areas." border="false":::
 
 In Azure IoT, a device developer writes the code to run on the devices in the solution. This code typically:
 
@@ -71,12 +69,12 @@ IoT devices can be separated into two broad categories, microcontrollers (MCUs) 
 
 An Azure IoT device can use the following primitives to interact with the cloud:
 
-* *Device-to-cloud* messages to send time series telemetry to the cloud. For example, temperature data collected from a sensor attached to the device.
+* *Device-to-cloud* messages to send time series telemetry to the cloud. For example, temperature data collected from a sensor attached to the connected coffee machine.
 * *File uploads* for media files such as captured images and video. Intermittently connected devices can send telemetry batches. Devices can compress uploads to save bandwidth.
 * *Device twins* to share and synchronize state data with the cloud. For example, a device can use the device twin to report the current state of a valve it controls to the cloud and to receive a desired target temperature from the cloud.
 * *Digital twins* to represent a device in the digital world. For example, a digital twin can represent a device's physical location, its capabilities, and its relationships with other devices.
-* *Direct methods* to receive commands from the cloud. A direct method can have parameters and return a response. For example, the cloud can call a direct method to request the device to reboot in 30 seconds.
-* *Cloud-to-device* messages to receive one-way notifications from the cloud. For example, a notification that an update is ready to download.
+* *Direct methods* to receive commands from the cloud. A direct method can have parameters and return a response. For example, the cloud can call a direct method to request the connected coffee machine to reset in 30 seconds.
+* *Cloud-to-device* messages to receive one-way notifications from the cloud. For example, a notification that an update for the connected coffee machine is ready to download.
 
 ### Azure IoT device SDKs
 
@@ -92,8 +90,6 @@ Azure IoT Edge runs device code in containers. You can use Azure IoT Edge to dep
 
 ## Device connectivity
 
-This section introduces the key concepts around how devices connect to the cloud in a typical Azure IoT solution. The following diagram highlights these elements in the solution:
-
 :::image type="content" source="../media/iot-architecture-connectivity.svg" alt-text="Diagram that shows the high-level IoT solution architecture highlighting device connectivity areas." border="false":::
 
 A device can establish a secure connection to an IoT hub in the cloud:
@@ -102,14 +98,6 @@ A device can establish a secure connection to an IoT hub in the cloud:
 * Indirectly by using the Device Provisioning Service (DPS), in which case the device connects to a well-known DPS endpoint to retrieve the connection string for the IoT hub it's assigned to.
 
 The advantage of using DPS is that you don't need to configure all of your devices with connection-strings that are specific to your IoT hub. Instead, you configure your devices to connect to a well-known, common DPS endpoint where they discover their connection details.
-
-### Device connection strings
-
-A device connection string provides a device with the information it needs to connect securely to an IoT hub. The connection string includes the following information:
-
-* The hostname of the IoT hub.
-* The device ID that's registered with the IoT hub.
-* The security information the device needs to establish a secure connection to the IoT hub.
 
 ### Authentication and authorization
 
@@ -154,55 +142,22 @@ A device bridge enables devices that are connected to a third-party cloud to con
 
 ## Device management and control
 
-This section introduces the key concepts around managing and controlling devices in a typical Azure IoT solution. The following diagram highlights these elements in the solution:
-
 :::image type="content" source="../media/iot-architecture-device-management.svg" alt-text="Diagram that shows the high-level IoT solution architecture highlighting device management areas." border="false":::
-
-In Azure IoT, *device management* includes the following tasks:
-
-* Device registration
-* Device provisioning
-* Device deployment
-* Device updates
-* Device key management and rotation
-* Device monitoring
-* Enabling and disabling devices
 
 In Azure IoT, *command and control* refers to the processes that let you send commands to devices and receive responses from them. For example, you can send a command to a coffee machine device to:
 
 * Request maximum and minimum temperature values for the last two hours.
 * Set the telemetry interval to 10 seconds.
 
-### Device registration
+In Azure IoT, *device management* includes tasks such as:
 
-Before a device can connect to an IoT hub, it must be registered. Device registration is the process of creating a device identity in the cloud. Each IoT hub has its own internal device registry. The device identity is used to authenticate the device when it connects to Azure IoT.
-
-### Device provisioning
-
-You must configure each device in your solution with the details of the IoT hub it should connect to. You can manually configure each device in your solution, but this may not be practical for a large number of devices. To get around this problem, you can use the Device Provisioning Service (DPS) to automatically register each device with an IoT hub, and then provision each device with the required connection information. If your IoT solution uses multiple IoT hubs, you can use DPS to provision devices to a hub based on criteria such as which is the closest hub to the device. 
-
-### Device deployment
-
-In Azure IoT, device deployment typically refers to the process of installing software on an IoT Edge device. When an IoT Edge device connects to an IoT hub, it receives a *deployment manifest* that contains details of the modules to run on the device. The deployment manifest also contains configuration information for the modules. There are a number of standard modules available for IoT Edge devices. You can also create your own custom modules.
-
-### Device updates
-
-Typically, your IoT solution must include a way to update device software. For an IoT Edge device, you can update the modules that run on the device by updating the deployment manifest.
-
-For a non-IoT Edge device, you need to have a way to update the device firmware. This update process could use a cloud-to-device message to notify the device that a firmware update is available. Then the device runs custom code to download and install the update.
-
-The Device Update for IoT Hub service provides a managed solution for updating devices.
-
-### Device monitoring
-
-As part of overall solution monitoring, you may want to monitor the health of your devices. For example, you may want to monitor the health of your devices or detect when a device is no longer connected to the cloud. Options for monitoring devices include:
-
-* Devices use the device twin to report its current state to the cloud. For example, a device can report its current internal temperature or its current battery level.
-* Devices can raise alerts by sending telemetry messages to the cloud.
+* *Device registration*: Before a device can connect to an IoT hub, it must be registered. Device registration is the process of creating a device identity in the cloud. Each IoT hub has its own internal device registry. The device identity is used to authenticate the device when it connects to Azure IoT.
+* *Device provisioning*: You must configure each device in your solution with the details of the IoT hub it should connect to. You can manually configure each device in your solution, but this may not be practical for a large number of devices. To get around this problem, you can use the Device Provisioning Service (DPS) to automatically register each device with an IoT hub, and then provision each device with the required connection information.
+* *Device deployment*: In Azure IoT, device deployment typically refers to the process of installing software on an IoT Edge device. When an IoT Edge device connects to an IoT hub, it receives a *deployment manifest* that contains details of the modules to run on the device. The deployment manifest also contains configuration information for the modules. There are a number of standard modules available for IoT Edge devices. You can also create your own custom modules.
+* *Device updates*: Typically, your IoT solution must include a way to update device software. For an IoT Edge device, you can update the modules that run on the device by updating the deployment manifest. The *Device Update for IoT Hub* service provides a managed solution for updating non-IoT Edge devices.
+* *Device monitoring*: As part of overall solution monitoring, you may want to monitor the health of your devices. For example, you may want to monitor the health of your devices or detect when a device is no longer connected to the cloud.
 
 ## Process and route messages
-
-This section introduces the key concepts around processing messages sent from your devices in a typical Azure IoT solution.  The following diagram highlights these elements in the solution:
 
 :::image type="content" source="../media/iot-architecture-processing.svg" alt-text="Diagram that shows the high-level IoT solution architecture highlighting message processing areas." border="false":::
 
@@ -210,7 +165,7 @@ In Azure IoT, message processing refers to processes such as routing and enrichi
 
 ### Route messages
 
-An IoT hub provides a cloud entry point for the telemetry messages that your devices send. In a typical IoT solution, these messages are delivered to other downstream services for storage or analysis.
+An IoT hub provides a cloud entry point for the telemetry messages that your devices send. In a typical IoT solution, these messages are delivered to other downstream services for storage or analysis. Both IoT Hub and IoT Central provide mechanisms for routing messages to other services.
 
 ### Enrich or transform messages
 
@@ -241,8 +196,6 @@ You can use other Azure services to process telemetry messages from your devices
 
 ## Extend your IoT solution
 
-This section introduces the key concepts around the options to extend an Azure IoT solution. The following diagram highlights these elements in the solution:
-
 :::image type="content" source="../media/iot-architecture-extensibility.svg" alt-text="Diagram that shows the high-level IoT solution architecture highlighting solution extensibility areas." border="false":::
 
 In Azure IoT, solution extensibility refers to the ways you can add to the built-in functionality of the IoT cloud services and build integrations with other services. For example:
@@ -256,8 +209,6 @@ Mechanisms available to extend your IoT solution include:
 * Routing, rules, and data export that let you send data to other services for analysis or processing.
 
 ## Analyze and visualize your IoT data
-
-This section introduces the key options to analyze and visualize your data in an Azure IoT solution. The following diagram highlights these elements in the solution:
 
 :::image type="content" source="../media/iot-architecture-visualize.svg" alt-text="Diagram that shows the high-level IoT solution architecture highlighting analysis and visualization areas." border="false":::
 
@@ -281,8 +232,6 @@ Analysis and visualization services and tools you can incorporate into your IoT 
 
 ## Manage your solution
 
-This section introduces the key concepts around managing an Azure IoT solution. The following diagram highlights these elements in the solution:
-
 :::image type="content" source="../media/iot-architecture-solution-management.svg" alt-text="Diagram that shows the high-level IoT solution architecture highlighting solution management areas." border="false":::
 
 There are many options for managing your IoT solution including the Azure portal, PowerShell, and ARM templates:
@@ -295,23 +244,19 @@ There are many options for managing your IoT solution including the Azure portal
 
 ## Secure your solution
 
-This section introduces the key concepts around securing an Azure IoT solution. The following diagram highlights these elements in the solution:
-
 :::image type="content" source="../media/iot-architecture-security.svg" alt-text="Diagram that shows the high-level IoT solution architecture highlighting security." border="false":::
 
 You can divide security in an IoT solution into the following three areas:
 
-* **Device security**: Secure the IoT device while it's deployed in the wild.
+* Device security: Secure the IoT device while it's deployed in the wild.
 
-* **Connection security**: Ensure all data transmitted between the IoT device and the IoT cloud services is confidential and tamper-proof.
+* Connection security: Ensure all data transmitted between the IoT device and the IoT cloud services is confidential and tamper-proof.
 
-* **Cloud security**: Secure your data while it moves through, and is stored in the cloud.
+* Cloud security: Secure your data while it moves through, and is stored in the cloud.
 
 *Microsoft Defender for IoT* can automatically monitor some key security recommendations. Microsoft Defender for IoT should be the first line of defense to protect your resources in Azure. Microsoft Defender for IoT periodically analyzes the security state of your Azure resources to identify potential security vulnerabilities. It then provides you with recommendations on how to address them.
 
 ## Scalability
-
-This section introduces the key concepts around scalability in an Azure IoT solution. The following diagram highlights these elements in the solution:
 
 :::image type="content" source="../media/iot-architecture-scalability.svg" alt-text="Diagram that shows the high-level IoT solution architecture highlighting solution scalability." border="false":::
 

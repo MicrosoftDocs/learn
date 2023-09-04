@@ -47,58 +47,58 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What functionality do the Azure IoT device SDKs enable you to implement?"
     choices:
-    - content: ""
+    - content: "Device-to-device communication"
+      isCorrect: false
+      explanation: "The device SDKs don't support the device-to-device communication pattern."
+    - content: "Support for the AMQP protocol"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "The SDKs support the MQTT, AMQP, and HTTP protocols."
+    - content: "Aggregation and filtering of telemetry data"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Although you can aggregate and filter telemetry data on a device, the SDKs themselves don't provide this functionality."
+  - content: "What is device registration in Azure IoT Hub?"
     choices:
-    - content: ""
+    - content: "The process of creating a device identity in the cloud"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Before a device can connect to an IoT hub, it must be registered. The registered device identity is used to authenticate the device when it connects to Azure IoT."
+    - content: "The process of configuring a device with the required connection information"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "You must configure each device in your solution with the details of the IoT hub it should connect to. You can manually configure each device in your solution, but this may not be practical for a large number of devices. To get around this problem, you can use the Device Provisioning Service."
+    - content: "The process of installing software on an IoT Edge device that connects to an IoT hub"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "In Azure IoT, device deployment typically refers to the process of installing software on an IoT Edge device."
+  - content: "The proximity sensors in your retail management solution only support the Bluetooth protocol for connectivity. How can you build an Azure IoT solution for these sensors?"
     choices:
-    - content: ""
+    - content: "Use an IoT Edge gateway to connect the sensors to the cloud"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "You can use an IoT Edge gateway to connect devices that don't support the required connectivity protocols to the cloud. The gateway acts as a protocol translator to enable devices to connect to the cloud."
+    - content: "Use IoT Hub rather than IoT Central to connect the sensors to the cloud"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Both IoT Hub and IoT Central support the MQTT, AMQP, and HTTP communication protocols. Neither service supports the Bluetooth protocol."
+    - content: "Use the Azure Digital Twins service to bridge the gap between the physical sensors and their digital representation in the cloud"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Azure Digital Twins lets you model a physical environment but it relies on IoT Hub to connect to the physical devices."
+  - content: "You have a large number of environmental monitoring devices to configure with the details of the IoT hub they should connect to. What is the best way to do this?"
     choices:
-    - content: ""
+    - content: "Use the Device Provisioning Service"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "The Device Provisioning Service is a helper service for IoT Hub. The service provides zero-touch, just-in-time provisioning of devices to the right IoT hub without requiring human intervention. These capabilities enable customers to provision millions of devices in a secure and scalable manner."
+    - content: "Use the Device Update Service"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "The Device Update for IoT Hub helper service lets you manage over-the-air updates to your devices at scale."
+    - content: "Use the IoT Edge service"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "IoT Edge lets you move cloud analytics and custom business logic from the cloud to your devices. You can use IoT Edge to build gateways to let devices connect to your IoT hub."
+  - content: "Which of the following indicates that you may need to implement an IoT solution?"
     choices:
-    - content: ""
+    - content: "The devices in the solution have limited power and processing resources"
+      isCorrect: false
+      explanation: "Just because a device has limited power and processing resources doesn't mean that you need to implement an IoT solution. The device may be able to function without connecting to IoT cloud services."
+    - content: "The devices you're using are capable of connecting to the internet"
+      isCorrect: false
+      explanation: "Many types of devices can connect to the internet, but this doesn't mean that you need to implement an IoT solution."
+    - content: "The devices in solution are deployed in remote locations, where physical access is expensive"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "This characteristic is a good indicator that you may need to implement an IoT solution. IoT solutions are often used to monitor, manage, and control devices that are deployed in remote locations."

@@ -13,8 +13,13 @@
     * Connectors"
 
 -->
-TODO: 1-2 sentences restating the module's "evaluate" goal
-TODO: bulleted list of the decision criteria
+Now that you've completed this module, you can decide whether the Azure IoT services are appropriate to your specific IoT scenario:
+
+- Do the Azure IoT services provide the capabilities you need to implement your solution?
+- Do you understand the architecture of a typical IoT solution?
+- Do you have the skills to implement your solution using the Azure IoT services?
+
+
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
@@ -25,7 +30,7 @@ TODO: bulleted list of the decision criteria
     Example: "We applied these criteria to our fictional shoe company. The analysis helped us see how difficult it would be to use Logic Apps for each process. Both the social-media monitor and the video archive utility used only the built-in connectors. This characteristic made them perfect for Logic Apps. The online sales portal required more work because it had complex conditionals and needed custom connectors."
  -->
 
-TODO: add your discussion of applying the criteria
+You could use either IoT Central or a custom solution that uses IoT Hub to create a connected coffee machine solution. Using IoT Central would let you build the solution quickly, a custom solution would let you tailor the solution to your exact requirements. In both scenarios you need to implement the device code for your connected coffee machine.
 
 <!-- 3. Describe the business impact ----------------------------------------------------
 
@@ -35,7 +40,12 @@ TODO: add your discussion of applying the criteria
 
     Example: "The criteria help you evaluate whether your business processes are a good match for Logic Apps. First, they let you assess how well Logic Apps will solve your problem. Second, they give you an idea of the amount of customization effort involved in using them for your task. This process should give you enough information to choose the right product for your work."
  -->
-TODO: describe the business impact
+
+Building an IoT solution for your connected coffee machine will help you to:
+
+- Manage your coffee machines remotely.
+- Monitor the status of your coffee machines.
+- Automate business processes such as notifying the maintenance department when a coffee machine needs servicing.
 
 <!-- 4. References (optional) ----------------------------------------------------
 

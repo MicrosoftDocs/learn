@@ -3,7 +3,7 @@ uid: |
   learn.introduction-to-azure-iot
 metadata:
   title: |
-    Introduction to Azure IoT            # Do not edit: title must be "Introduction to (product)"
+    Introduction to Azure IoT
   description: "Evaluate whether the Azure IoT services are appropriate to your IoT scenario."               # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 8/14/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: dominicbetts        # GitHub ID of the Microsoft employee either authoring or project-managing this content
@@ -90,17 +90,17 @@ prerequisites: |
   - Familiarity with Azure cloud concepts such as services,security, and communications protocols
 iconUrl: /learn/achievements/introduction-to-azure-iot.svg
 levels:
-  - beginner
+- beginner
 ###########################################################################
 ###
 roles:
-  - administrator
-  - developer
-  - business-owner
+- administrator
+- developer
+- business-owner
 products:
 - azure-iot
 subjects:
-  - digital-application-innovation
+- digital-application-innovation
 units:
 - learn.introduction-to-azure-iot.introduction
 - learn.introduction-to-azure-iot.what-is-azure-iot

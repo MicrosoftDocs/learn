@@ -32,7 +32,7 @@ This overview should help you to understand how the Azure IoT services and SDKs 
 
 Azure IoT includes a set of managed cloud services that you can use to connect, monitor, and manage your IoT devices. The Azure IoT device SDKs let you build devices that connect securely to your cloud services. The Azure IoT gateways enable you to run some services at the edge and enable more connectivity scenarios for your devices.
 
-The following diagram shows a high-level view of the components in a typical IoT solution. This article focuses on the key groups of components: devices, IoT cloud services, other cloud services, and solution-wide concerns. Other articles in this section provide more detail on each of these components.
+The following diagram shows a high-level view of the components in a typical IoT solution. This module focuses on the key groups of components: devices, IoT cloud services, other cloud services, and solution-wide concerns.
 
 :::image type="content" source="../media/iot-architecture.svg" alt-text="Diagram that shows the high-level IoT solution architecture.":::
 
@@ -109,6 +109,17 @@ An IoT device is typically made up of a circuit board with sensors attached that
 
 There's a wide variety of devices available from different manufacturers to build your solution. For a list of devices certified to work with Azure IoT Hub, see the [Azure Certified for IoT device catalog](https://devicecatalog.azure.com). For prototyping a microprocessor device, you can use a device such as a [Raspberry Pi](https://www.raspberrypi.org/). The Raspberry Pi lets you attach many different types of sensor.
 
+IoT devices have different characteristics when compared to other clients such as browsers and mobile apps. Specifically, IoT devices:
+
+* Are often embedded systems with no human operator.
+* Can be deployed in remote locations, where physical access is expensive.
+* May only be reachable through the solution back end.
+* May have limited power and processing resources.
+* May have intermittent, slow, or expensive network connectivity.
+* May need to use proprietary, custom, or industry-specific application protocols.
+
+The device SDKs help you address the challenges of connecting devices securely and reliably to your cloud services.
+
 <!-- Pattern for complex chunks (repeat as needed) -->
 ## Connectivity
 
@@ -126,17 +137,6 @@ Typically, IoT devices send telemetry from their attached sensors to cloud servi
 
 The IoT Device SDKs and IoT Hub support common communication protocols such as HTTP, MQTT, and AMQP for device-to-cloud and cloud-to-device communication. In some scenarios, you may need a gateway to connect your IoT devices to your cloud services.
 
-IoT devices have different characteristics when compared to other clients such as browsers and mobile apps. Specifically, IoT devices:
-
-* Are often embedded systems with no human operator.
-* Can be deployed in remote locations, where physical access is expensive.
-* May only be reachable through the solution back end.
-* May have limited power and processing resources.
-* May have intermittent, slow, or expensive network connectivity.
-* May need to use proprietary, custom, or industry-specific application protocols.
-
-The device SDKs help you address the challenges of connecting devices securely and reliably to your cloud services.
-
 ### Cloud services
 
 In an IoT solution, the cloud services typically:
@@ -148,7 +148,7 @@ In an IoT solution, the cloud services typically:
 * Control the state of your devices and monitor their activities.
 * Manage the firmware installed on your devices.
 
-For example, in a remote monitoring solution for an oil pumping station, the services use telemetry from the pumps to identify anomalous behavior. When a cloud service identifies an anomaly, it can automatically send a command to the device to take a corrective action. This process implements an automated feedback loop between the device and the cloud that greatly increases the solution efficiency.
+For example, in a remote monitoring solution for connected coffee machines, the services use telemetry from the coffee machines to identify anomalous behavior. When a cloud service identifies an anomaly, it can automatically send a notification to the maintenance department
 
 Some cloud services, such as IoT Hub and the Device Provisioning Service, are IoT specific. Other cloud services, such as storage and visualization, provide generic services to your solution.
 
