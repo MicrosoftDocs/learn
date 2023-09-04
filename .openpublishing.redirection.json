@@ -26132,6 +26132,36 @@
       "source_path": "learn-pr/wwl-azure/create-log-analytics-workspace-microsoft-defender-cloud/4-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-log-analytics-workspace-microsoft-defender-cloud/5-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/4-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-integrate-analytics-agent-defender-cloud/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/5-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-integrate-analytics-agent-defender-cloud/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-key-vault-networking-settings/6-azure-key-vault-soft-delete-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-key-vault-networking-settings/7-azure-key-vault-soft-delete-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-key-vault-networking-settings/7-add-virtual-network-rules.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-key-vault-networking-settings/8-add-virtual-network-rules",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/configure-azure-key-vault-networking-settings/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-key-vault-networking-settings/10-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-key-vault-networking-settings/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-key-vault-networking-settings/11-summary",
+      "redirect_document_id": false
     }
   ]
 }
