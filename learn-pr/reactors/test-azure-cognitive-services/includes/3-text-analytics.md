@@ -1,6 +1,6 @@
-Another area where cloud-based AI shines is text analytics. Like computer vision, identifying and pulling meaning from natural human languages is at the intersection of many specialized disciplines. Using cloud services provides an economical means of tapping a great amount of cognitive horsepower.
+Another area where cloud-based AI shines is Text Analytics. Like computer vision, identifying and pulling meaning from natural human languages is at the intersection of many specialized disciplines. Using cloud services provides an economical means of tapping a great amount of cognitive horsepower.
 
-To prepare to use the Azure Cognitive Services Text Analytics API, the requests library must be imported. You also need the capability to print out JSON formats.
+To prepare to use the Azure AI services Text Analytics API, the requests library must be imported. You also need the capability to print out JSON formats.
 
 ```python
 import requests

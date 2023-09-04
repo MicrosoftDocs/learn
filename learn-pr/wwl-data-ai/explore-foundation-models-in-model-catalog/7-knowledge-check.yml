@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-foundation-models-in-model-catalog.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check to test your knowledge on the history of natural language processing models."
+  ms.date: 7/24/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 3
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "Which of the following techniques is used to determine the importance of words in a document within the context of a larger collection of documents?"
+    choices:
+    - content: "Naïve Bayes"
+      isCorrect: false
+      explanation: "Incorrect. Naïve Bayes calculates the probability of a document belonging to a particular class based on the probabilities of individual words given that class."
+    - content: "TF-IDF (Term Frequency-Inverse Document Frequency)"
+      isCorrect: true
+      explanation: "Correct. TF-IDF is a technique used to determine the importance of words in a document within the context of a larger collection of documents."
+    - content: " Word2Vec"
+      isCorrect: false
+      explanation: "Incorrect. Word2Vec is a technique for generating word embeddings, which are dense vector representations of words that capture semantic relationships between words. "
+  - content: "What type of neural network architecture is widely used for natural language processing tasks and has been instrumental in achieving state-of-the-art results in various language-related tasks?"
+    choices:
+    - content: "Recurrent Neural Network (RNN)"
+      isCorrect: false
+      explanation: "Incorrect. While RNNs have been historically used for sequence data like text, they suffer from issues like vanishing gradients and struggle to capture long-range dependencies in text. However, Transformers have shown to be more efficient at processing large amounts of text compared to RNNs."
+    - content: "Long Short-Term Memory (LSTM)"
+      isCorrect: false
+      explanation: "Incorrect. LSTMs are a type of recurrent neural network designed to handle sequences by effectively capturing long-range dependencies. However, Transformers have shown to be more efficient at processing large amounts of text compared to RNNs."
+    - content: "Transformer"
+      isCorrect: true
+      explanation: "Correct. Transformers are a neural network architecture specifically designed for processing sequential data, like text. The introduction of positional encoding together with attention, instead of using recurrence, has resulted in a massive advancement in NLP."
+  - content: "Which of the following foundation models, available through the model catalog in Azure Machine Learning, is likely most suitable for text classification?"
+    choices:
+    - content: "BERT"
+      isCorrect: true
+      explanation: "Correct. BERT is commonly used for text classification and question answering."
+    - content: "GPT"
+      isCorrect: false
+      explanation: "Incorrect. GPT is commonly used for tasks like text generation and chat completions."
+    - content: "LLaMA"
+      isCorrect: false
+      explanation: "Incorrect. LLaMA is commonly used for tasks like text generation and chat completions."
