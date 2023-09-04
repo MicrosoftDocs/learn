@@ -15,11 +15,11 @@ Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud
 
    :::image type="content" source="../media/cloud-shell.png" alt-text="Screenshot that shows the Azure Cloud Shell icon highlighted in the Azure portal global controls.":::
 
-    _Open Azure Cloud Shell_
+    *Open Azure Cloud Shell*
 
-   If you're prompted to choose a programming language, select **Bash**. If you’re prompted to allow Cloud Shell to create a storage account (no storage is mounted), choose the option to create new storage. Cloud Shell will mount new storage for you and then open the Command Prompt window. You’ll see a welcome message and then the command prompt.
+   If you're prompted to choose a programming language, select **Bash**. If you're prompted to allow Cloud Shell to create a storage account (no storage is mounted), choose the option to create new storage. Cloud Shell will mount new storage for you and then open the Command Prompt window. You'll see a welcome message and then the command prompt.
 
-   You also can open Cloud Shell by going to [https://shell.azure.com](https://shell.azure.com?azure-portal=true) in a separate browser window.
+   You also can open Cloud Shell by going to [https://shell.Azure.com](https://shell.azure.com?azure-portal=true) in a separate browser window.
 
 1. The next task is to create a resource group to hold the storage account and other Azure resources that make up the solution. Make sure that the language selected in Cloud Shell is Bash. Then, create a resource group named `polar-bear-rg` in the Azure South Central US region:
 
@@ -59,7 +59,7 @@ Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud
    ```
 
 1. The primary access key is the `key1` property value, which contains a long series of letters and numbers. Copy the primary access key from the output and paste it in a text file so that you can retrieve the key later.
-  
+
    Remember that you can select Ctrl+Insert to copy text from Cloud Shell to the clipboard.
 
 Now, you have a storage account for storing photos and a container to store them in. Next, let's deploy some cameras to capture photos of wildlife and upload them to Blob Storage.
@@ -68,7 +68,7 @@ Now, you have a storage account for storing photos and a container to store them
 
 The next task is to create a Node.js app that simulates an array of motion-activated cameras. The cameras upload photos that are taken in the wild to the storage account's `photos` container.
 
-1. If Node.js isn't installed on your computer, go to [https://nodejs.org/](https://nodejs.org/?azure-portal=true) and install it now. To check whether Node.js is installed and the version that's installed, in a Command Prompt or terminal window, run this command:
+1. If Node.js isn't installed on your computer, go to [https://node.js.org/](https://nodejs.org/?azure-portal=true) and install it now. To check whether Node.js is installed and the version that's installed, in a Command Prompt or terminal window, run this command:
 
    ```console
    node -v
@@ -87,7 +87,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
     The [azure-storage](https://www.npmjs.com/package/azure-storage?azure-portal=true) package provides a programmatic interface to Azure Storage, including Blob Storage, for Node.js apps.
 
-1. When the installation finishes, in the project directory, create a subdirectory named *photos*. Download a [.zip file of camera images](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/camera-images.zip?azure-portal=true). Unzip the file, and then copy the 30 .jpg files that are in the .zip file to the *photos* subdirectory.  The simulated cameras upload these images to Blob Storage.
+1. When the installation finishes, in the project directory, create a subdirectory named *photos*. Download a [.zip file of camera images](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/camera-images.zip?azure-portal=true). Unzip the file, and then copy the 30 .JPG files that are in the .zip file to the *photos* subdirectory. The simulated cameras upload these images to Blob Storage.
 
    The following images are a sample of the images that are in the dataset. Wildlife shown in the images includes Arctic foxes, polar bears, and walruses.
 
@@ -282,19 +282,19 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. Let *run.js* run until three or more blobs have been uploaded. Then, return to the Command Prompt or terminal window in which *run.js* is running, and select Ctrl+C to stop *run.js*.
 
-1. In your browser, go to the Azure portal. Open the storage account that you created earlier, and then open the `photos` container. Confirm that the container has several .jpg images as shown in this example:
+1. In your browser, go to the Azure portal. Open the storage account that you created earlier, and then open the `photos` container. Confirm that the container has several .JPG images as shown in this example:
 
     :::image type="content" source="../media/uploaded-images.png" alt-text="Screenshot that shows images uploaded to the photos container.":::
 
-    _Images uploaded to the photos container_
+    *Images uploaded to the photos container*
 
 1. Select one of the blobs to show a blob detail and examine the blob's metadata. Confirm that the blob metadata contains properties named `latitude`, `longitude`, and `id`:
 
     :::image type="content" source="../media/blob-metadata.png" alt-text="Screenshot that shows blob metadata fields in the Metadata pane.":::
 
-    _View blob metadata_
+    *View blob metadata*
 
 1. Open a blob to view the actual image:
-   - Select the ellipsis (**…**), and then select **View** > **Edit**. Repeat this action to view the images for several blobs.
+   - Select the ellipsis (**...**), and then select **View** > **Edit**. Repeat this action to view the images for several blobs.
 
    Which images contain polar bears, and which don't?
