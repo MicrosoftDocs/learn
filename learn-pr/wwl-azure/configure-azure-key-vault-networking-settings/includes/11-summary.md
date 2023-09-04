@@ -1,4 +1,3 @@
-
 In completing this module, you've gained practical experience configuring Azure Key Vault networking settings via the Azure portal, enhancing your cloud security skillset.
 
 After completion, you should be able to:
