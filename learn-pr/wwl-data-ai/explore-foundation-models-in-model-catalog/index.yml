@@ -3,25 +3,15 @@ uid: |
   learn.explore-foundation-models-in-model-catalog
 metadata:
   title: |
-    Explore large language models as foundation models in the Azure Machine Learning model catalog
-  description: "Explore the history of natural language processing. Learn about how the Transformer architecture is used for large language models. Use foundation models in the Azure Machine Learning model catalog."
+    Understand the Transformer architecture and explore large language models in Azure Machine Learning
+  description: "Learn about the history of natural language processing (NLP), including how the Transformer architecture revolutionized the field and helped us create large language models (LLMs). Work with LLMs in Azure Machine Learning through the foundation models in the model catalog."
   ms.date: 7/24/2023
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
-### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
-###
-### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
-###
-### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.service: machine-learning
 title: |
-  Understand the transformer architecture and explore large language models in Azure Machine Learning
+  Understand the Transformer architecture and explore large language models in Azure Machine Learning
 summary: "Learn about the history of natural language processing (NLP), including how the Transformer architecture revolutionized the field and helped us create large language models (LLMs). Work with LLMs in Azure Machine Learning through the foundation models in the model catalog."
 abstract: |
   By the end of this module, you'll be able to:
