@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-compare-models-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/04/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "You want to investigate for which subgroups the model has relatively more false predictions, which Responsible AI component should be added to the pipeline to create the Responsible AI dashboard?"
+    choices:
+    - content: "Explanations."
+      isCorrect: false
+      explanation: "Incorrect. Explanations provide insights into which features influence the model's predictions."
+    - content: "Counterfactuals."
+      isCorrect: false
+      explanation: "Incorrect. Counterfactuals allow you to explore how changing the input influences the model's predictions."
+    - content: "Error analysis."
+      isCorrect: true
+      explanation: "Correct. Error analysis provides an overview of the amount of false predictions for specific subgroups in your dataset."
+  - content: "What should be the first component in a pipeline to create a Responsible AI Dashboard?"
+    choices:
+    - content: "`RAI Insights dashboard constructor`"
+      isCorrect: true
+      explanation: "Correct. The dashboard constructor should be the first component in the pipeline."
+    - content: "`Gather RAI Insights dashboard`"
+      isCorrect: false
+      explanation: "Incorrect. The gather insights component comes at the end of the pipeline."
+    - content: "`Gather RAI Insights score card`"
+      isCorrect: false
+      explanation: "Incorrect. The gather insights component comes at the end of the pipeline."
+  - content: "You have trained a model, and you want to quantify the influence of each feature on a specific individual prediction. What kind of feature importance should you examine?"
+    choices:
+    - content: "Aggregate feature importance."
+      isCorrect: true
+      explanation: "Incorrect. The environment includes the necessary packages for the model to run."
+    - content: "Local feature importance."
+      isCorrect: false
+      explanation: "Incorrect. The flavor specifies the machine learning framework of the model."
+    - content: "Individual feature importance."
+      isCorrect: false
+      explanation: "Correct. The model's signature defines the schemas of the inputs and outputs."
