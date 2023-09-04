@@ -4,13 +4,9 @@ title: Explore authentication options
 metadata:
   title: Explore authentication options
   description: "Explore authentication options"
-  ms.date: 02/02/2023
+  ms.date: 09/04/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
 content: |
   [!include[](includes/3-authentication-options.md)]

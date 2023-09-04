@@ -4,16 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/02/2023
+  ms.date: 09/04/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
 content: |
-  [!include[](includes/9-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -39,13 +35,13 @@ quiz:
     - content: "Password writeback"
       isCorrect: false
       explanation: "This service is used after the synchronization is complete to maintain your passwords."
-  - content: "Azure AD supports which of the following security protocols?"
+  - content: "Which of the following security protocols are not supported by Azure AD?"
     choices:
-    - content: "Kerberos"
-      isCorrect: false
-      explanation: "Kerberos. Because Azure AD is HTTP/HTTPS based, it does not use Kerberos authentication. Instead, it uses HTTP and HTTPS protocols such as SAML, WS-Federation, and OpenID Connect for authentication (and OAuth for authorization)."
-    - content: "OAuth"
+    - content: "LDAP"
       isCorrect: true
+      explanation: "Azure AD does not fully support the LDAP protocol due to its cloud-centric design; it emphasizes modern authentication methods (OAuth 2.0, SAML, OpenID Connect) over traditional on-premises protocols."
+    - content: "OAuth"
+      isCorrect: false
       explanation: "OAuth is used for authorization."
     - content: "OpenID Connect"
       isCorrect: false

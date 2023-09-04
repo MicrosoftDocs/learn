@@ -7,9 +7,3 @@ You should now be able to:
  -  Implement pass-through authentication.
  -  Select and configure the optimal authentication method based on your security posture.
  -  Deploy password writeback.
-
-## Learn more
-
-You can learn more by reviewing the following:
-
- -  [Understand hybrid connectivity](/training/modules/m365-teams-upgrade-hybrid/)
