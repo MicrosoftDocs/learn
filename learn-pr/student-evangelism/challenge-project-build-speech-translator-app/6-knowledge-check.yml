@@ -1,0 +1,96 @@
+### YamlMime:ModuleUnit
+uid: |
+  learn.challenge-project-build-speech-translator-app.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 9/4/2023
+  author: theoyinbooke
+  ms.author: ooyinbooke
+  ms.topic: interactive-tutorial
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+  ms.prod: TODO
+  ms.service: TODO
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
