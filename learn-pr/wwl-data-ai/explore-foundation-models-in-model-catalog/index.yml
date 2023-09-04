@@ -4,7 +4,7 @@ uid: |
 metadata:
   title: |
     Understand the Transformer architecture and explore large language models in Azure Machine Learning
-  description: "Learn about the history of natural language processing (NLP), including how the Transformer architecture revolutionized the field and helped us create large language models (LLMs). Work with LLMs in Azure Machine Learning through the foundation models in the model catalog."
+  description: Learn about the history of natural language processing (NLP), including how the Transformer architecture revolutionized the field and helped us create large language models (LLMs). Work with LLMs in Azure Machine Learning through the foundation models in the model catalog.
   ms.date: 7/24/2023
   author: madiepev
   ms.author: madiepev
@@ -12,7 +12,7 @@ metadata:
   ms.service: machine-learning
 title: |
   Understand the Transformer architecture and explore large language models in Azure Machine Learning
-summary: "Learn about the history of natural language processing (NLP), including how the Transformer architecture revolutionized the field and helped us create large language models (LLMs). Work with LLMs in Azure Machine Learning through the foundation models in the model catalog."
+summary: Learn about the history of natural language processing (NLP), including how the Transformer architecture revolutionized the field and helped us create large language models (LLMs). Work with LLMs in Azure Machine Learning through the foundation models in the model catalog.
 abstract: |
   By the end of this module, you'll be able to:
     - Understand the developments that have led to large language models.
