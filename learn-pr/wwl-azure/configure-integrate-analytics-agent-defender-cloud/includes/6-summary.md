@@ -1,4 +1,3 @@
-
 In completing this module, you'll gain valuable knowledge on configuring and integrating a Log Analytics agent and workspace in Microsoft's Defender for Cloud, enhancing security monitoring and data management capabilities.
 
 After completing this module, you should be able to:
