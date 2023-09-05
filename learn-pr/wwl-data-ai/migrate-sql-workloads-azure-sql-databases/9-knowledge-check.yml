@@ -1,0 +1,65 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is the purpose of entering credentials in the self-hosted integration runtime?
+    choices:
+    - content: To connect to the source and migrate data to the target
+      isCorrect: true
+      explanation: Correct. The credentials are used to establish a connection with the source and migrate data to the target.
+    - content: To delete the source data
+      isCorrect: false
+      explanation: Incorrect. The credentials aren't used for deleting the source data.
+    - content: To create a backup of the source data
+      isCorrect: false
+      explanation: Incorrect. The credentials aren't used for creating backups.
+  - content: What is the role of self-hosted integration runtime in data migration?
+    choices:
+    - content: To connect to the source and target and facilitate data migration
+      isCorrect: true
+      explanation: Correct. The self-hosted integration runtime is used to connect to the source and target and facilitate data migration.
+    - content: To store the migrated data
+      isCorrect: false
+      explanation: Incorrect. The self-hosted integration runtime isn't used for storing the migrated data.
+    - content: To analyze the migrated data
+      isCorrect: false
+      explanation: Incorrect. The self-hosted integration runtime isn't used for analyzing the migrated data.
+  - content: What is the significance of selecting tables during data migration?
+    choices:
+    - content: It helps in migrating only the required data from the source to the target
+      isCorrect: true
+      explanation: Correct. Selecting tables helps in migrating only the required data from the source to the target.
+    - content: It helps in creating a backup of the source data
+      isCorrect: false
+      explanation: Incorrect. Selecting tables doesn't help in creating a backup of the source data.
+    - content: It helps in analyzing the migrated data
+      isCorrect: false
+      explanation: Incorrect. Selecting tables doesn't help in analyzing the migrated data.
+  - content: Can transactional replication be configured from the Azure portal?
+    choices:
+    - content: No, transactional replication can only be configured through SQL Server Management Studio.
+      isCorrect: false
+      explanation: Incorrect. Transactional replication can also be configured by executing Transact-SQL statements on the publisher.
+    - content: Yes, transactional replication can be configured from the Azure portal.
+      isCorrect: false
+      explanation: Incorrect. Transactional replication can't be configured from the Azure portal.
+    - content: No, transactional replication can't be configured from the Azure portal.
+      isCorrect: true
+      explanation: Correct. Transactional replication can't be configured from the Azure portal.
+
+
+
+
+
+

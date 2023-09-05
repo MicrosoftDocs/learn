@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.choose-right-sql-server-instance-option-azure
-title: Choose the right SQL Server Instance option in Azure
+uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.choose-right-sql-database-option-azure
+title: Choose the right Azure SQL Database feature
 metadata:
-  title: Choose the right SQL Server Instance option in Azure
-  description: "Choose the right SQL Server Instance option in Azure"
-  ms.date: 02/27/2023
+  title: Choose the right Azure SQL Database option
+  description: "Learn the essentials of Azure SQL Database deployment planning and migration. Explore its benefits, exclusive features, and migration options while optimizing performance and application connections for a smooth transition to the cloud."
+  ms.date: 09/08/2023
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-considerations-of-sql-server-to-azure-db-migrations.md)]
+  [!include[](includes/2-choose-right-sql-database-option-azure.md)]
