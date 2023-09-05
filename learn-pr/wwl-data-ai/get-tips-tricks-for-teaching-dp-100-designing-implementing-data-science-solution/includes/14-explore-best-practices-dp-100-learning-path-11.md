@@ -1,10 +1,10 @@
 
 
-DP-100: Learning path 11 Deploy and consume models with Azure machine learning
+DP-100: Learning path 11 Deploy and consume models with Azure Machine Learning
 
 Learning path 11 overview
 
-As you begin to teach this learning path, get familiar with what the students learn during the learning path. In this learning path students build on their learning about how models are designed to help decision-making through predictions and learn how to deploy the models both in real time inferencing and batch inferencing.
+As you begin to teach this learning path, get familiar with what the students learn during the learning path. In this learning path, students build on their learning about how models are designed to help decision-making through predictions and learn how to deploy the models both in real time inferencing and batch inferencing.
 
 This learning path consists of two modules:
 
