@@ -4,11 +4,11 @@ In some cases, when a request reaches a web application, you might need to verif
 
 Think of handling a request as a series of steps. If the user needs to be logged in to handle a resource, the steps might look like this:
 
-1. **Pre request**: Investigate whether the user sent the proper credentials through a request header. If the credentials are verified, send the request to the next step.
-1. **Construct the response**: Talk to some kind of data source, like a database or an endpoint. This step returns the resource, as long as the request asks for the resource correctly.
-1. **Post request**: An optional step to run a piece of code after the request is handled. You might run this step for logging purposes.
+1. **Preprocessing**: An optional step to run code before the request is processed. An example is to determine that the user sent the proper credentials through a request header. If the credentials are verified, send the request to the next step. If the logging fails, the server returns a 401 HTTP response.
+1. **Processing**: Process the request such as talk to some kind of data source, like a database or an API endpoint. This step returns the resource, as long as the request asks for the resource correctly.
+1. **Postprocessing**: An optional step to run code after the request is complete. An example is logging the results for monitoring purposes.
 
-The Express framework has built-in support for handling a request in this way. To run a pre or post request, implement the `use()` method on your Express instantiated object. A pre or post request in Express is known as a *middleware*, and has the following syntax form:
+The Express framework has built-in support for handling a request in this way. To run a preprocessing or post processing for a request, implement the `use()` method on your Express instantiated object. A pre or post processing in Express is known as a *middleware*, and has the following syntax form:
 
 ```javascript
 app.use((req, res, next) => {})
@@ -22,10 +22,10 @@ The method passed into the `use()` method has three parameters, `req`, `res`, an
 
 ## Request pipeline
 
-If you have routes that could benefit from having middleware run pre or post a request, set it up so that:
+If you have routes that benefit from having middleware (programmatic functionality), run before or after a request, set it up so that:
 
-- Middleware that needs to run before the request (pre request) is defined before the actual request.
-- Middleware that needs to run after the request (post request) is defined after the actual request.
+- Middleware that needs to run before the request (preprocessing) is defined before the actual request.
+- Middleware that needs to run after the request (postprocessing) is defined after the actual request.
 
 Take a look at this example:
 
@@ -43,7 +43,7 @@ app.use((req, res, next) => {
 app.get('/login', () => {})
 ```
 
-You can also run pre request middleware code as an argument to the request handling, like this:
+You can also run preprocessing middleware as an argument to the request handler:
 
 ```javascript
 app.get(
