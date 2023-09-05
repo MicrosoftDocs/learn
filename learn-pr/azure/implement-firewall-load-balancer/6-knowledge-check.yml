@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: This is a knowledge check unit.
+  description: Check your knowledge of Azure Stack HCI Datacenter Firewall and Software Load Balancer.
   ms.date: 5/6/2021
   author: rmcmurray
   ms.author: robmcm
@@ -18,62 +18,62 @@ quiz:
     choices:
     - content: "Five"
       isCorrect: true
-      explanation: "Correct. Datacenter Firewall is a network layer, stateful, multitenant firewall. It supports five parameters: source and destination port numbers, source and destination IP addresses, and a protocol."
+      explanation: "Correct. Datacenter Firewall can support five parameters: source and destination port numbers, source and destination IP addresses, and a protocol."
     - content: "Four"
       isCorrect: false
-      explanation: "Incorrect. Datacenter Firewall doesn’t use four parameters for defining its rules."
+      explanation: "Incorrect. Datacenter Firewall can use more than four parameters for defining its rules."
     - content: "Three"
       isCorrect: false
-      explanation: "Incorrect. Datacenter Firewall doesn’t use three parameters for defining its rules."
-  - content: "To which two types of objects can an administrator assign an ACL of Datacenter Firewall?"
+      explanation: "Incorrect. Datacenter Firewall can use more than three parameters for defining its rules."
+  - content: "Which type of object can you assign an access control list (ACL) in Datacenter Firewall?"
     choices:
     - content: "Logical network"
       isCorrect: false
-      explanation: "Incorrect. You cannot assign an ACL to a logical network."
-    - content: "VM"
+      explanation: "Incorrect. You can't assign an ACL to a logical network."
+    - content: "Virtual machine (VM)"
       isCorrect: false
-      explanation: "Incorrect. You cannot assign an ACL to a VM."
+      explanation: "Incorrect. You can assign an ACL to a VM network interface but not a VM."
     - content: "Network subnet"
       isCorrect: true
-      explanation: "Correct. You can assign an ACL to a VM network interface, logical network subnet, or virtual network subnet."
-  - content: "What’s the most granular level at which an administrator can assign logging of Datacenter Firewall auditing?"
+      explanation: "Correct. You can assign an ACL to a logical network subnet or a virtual network subnet."
+  - content: "What's the most granular level to which you can assign Datacenter Firewall logging?"
     choices:
     - content: "An ACL rule"
       isCorrect: true
       explanation: "Correct. You can enable logging on individual ACL rules."
     - content: "An ACL"
       isCorrect: false
-      explanation: "Incorrect. You can enable logging on individual ACL rules, not an ACL."
+      explanation: "Incorrect. You can enable logging on individual ACL rules, but not an entire ACL."
     - content: "A network subnet"
       isCorrect: false
       explanation: "Incorrect. You can enable logging on individual ACL rules, not a network subnet."
-  - content: "Which mechanism does Network Controller use to advertise VIPs assigned to SLB multiplexer VMs to datacenter routers?"
+  - content: "Which mechanism does Network Controller use to advertise virtual IPs (VIPs) assigned to Software Load Balancing Multiplexer VMs to datacenter routers?"
     choices:
     - content: "Border Gateway Protocol"
       isCorrect: true
-      explanation: "Correct. Network Controller assigns VIPs to SLB multiplexer VMs, which, in turn, rely on Border Gateway Protocol to advertise VIPs to datacenter routers as individual /32 routes."
+      explanation: "Correct. Network Controller assigns VIPs to Software Load Balancing Multiplexer VMs, which use Border Gateway Protocol to advertise VIPs to datacenter routers as individual /32 routes."
     - content: "Open Shortest Path First"
       isCorrect: false
-      explanation: "Incorrect. Azure Stack HCI SDN doesn’t rely on Open Shortest Path First."
+      explanation: "Incorrect. Azure Stack HCI software defined networking doesn't rely on Open Shortest Path First."
     - content: "Routing Information Protocol"
       isCorrect: false
-      explanation: "Incorrect. Azure Stack HCI SDN doesn’t rely on Routing Information Protocol."
-  - content: "On which layer of the Open Systems Interconnection (OSI) model does SDN SLB operate?"
+      explanation: "Incorrect. Azure Stack HCI software defined networking doesn't rely on Routing Information Protocol."
+  - content: "Which layer of the Open Systems Interconnection (OSI) model does software defined networking Software Load Balancing operate on?"
     choices:
-    - content: "3"
+    - content: "Layer 3"
       isCorrect: false
-      explanation: "Incorrect. SDN SLB doesn’t provide Layer 3 load balancing for North-South and East-West TCP/UDP traffic."
-    - content: "4"
+      explanation: "Incorrect. Software defined networking Software Load Balancing doesn't provide Layer 3 load balancing."
+    - content: "Layer 4"
       isCorrect: true
-      explanation: "Correct. SDN SLB provides Layer 4 load balancing for North-South and East-West TCP/UDP traffic."
-    - content: "7"
+      explanation: "Correct. Software defined networking Software Load Balancing provides Layer 4 load balancing for North-South and East-West TCP/UDP traffic."
+    - content: "Layer 7"
       isCorrect: false
-      explanation: "Incorrect. SDN SLB doesn’t provide Layer 7 load balancing for North-South and East-West TCP/UDP traffic."
-  - content: "Which of the following tasks doesn’t require creating a health probe object?"
+      explanation: "Incorrect. Software defined networking Software Load Balancing doesn't provide Layer 7 load balancing."
+  - content: "Which of the following tasks doesn't require creating a health probe object?"
     choices:
-    - content: "Implementing inbound NAT"
+    - content: "Implementing inbound network address translation (NAT)"
       isCorrect: true
-      explanation: "Correct. NAT doesn’t rely on health probes, because it doesn’t distribute traffic based on the operational status of a target VM."
+      explanation: "Correct. NAT doesn't rely on health probes because it doesn't distribute traffic based on the operational status of a target VM."
     - content: "Implementing internal load balancing"
       isCorrect: false
       explanation: "Incorrect. Load balancing rules require the use of a health probe."

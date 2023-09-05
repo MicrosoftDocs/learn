@@ -4,28 +4,27 @@ title: Exercise - Create do and while iteration loops
 metadata:
   title: Exercise - Create do and while iteration loops
   description: "Exercise - Create do and while iteration loops"
-  ms.date: 05/02/2023
+  ms.date: 09/01/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-do-while-continue.md)]
 quiz:
   title: "Knowledge check"
   questions:
-  - content: "Which of the **following** correctly describes a difference between the `do-while` and the `while` iterative statements?"
+  - content: "Which of the **following** correctly describes a behavior of either a `do-while` or `while` iterative statement?"
     choices:
-    - content: "Application code exits a `while` statement when an expression evaluates to false."
+    - content: "A `do-while` statement executes a code block zero or more times."
       isCorrect: false
-      explanation: "Incorrect. Both the `do-while` statement and the `while` statement evaluate an expression to determine when to stop iterating."
+      explanation: "Incorrect. A `do-while` statement iterates through a code block at least once because the expression is evaluated at the end of the code block."
     - content: "A `while` statement executes a code block at least once."
       isCorrect: false
-      explanation: "Incorrect. A `do-while` statement iterates through a code block at least once because the expression is evaluated at the end of the code block. The expression for a `while` statement is evaluated before the code block and therefore the code block may not be executed even once."
-    - content: "A `do-while` statement iterates through a code block until a condition is met."
+      explanation: "Incorrect. The expression for a `while` statement is evaluated before the code block and therefore the code block may not be executed even once."
+    - content: "A `do-while` statement executes a code block at least once."
       isCorrect: true
-      explanation: "Correct! The `do-while` will iterate through a code block at least once."
+      explanation: "Correct! The `do-while` will iterate through a code block at least one time. Code execution will exit the iteration loop once the `while` expression at the end of the code block evaluates to `true`."
   - content: "A developer needs to capture user input inside a loop. The user enters the keyboard combination `ctrl + Esc` to exit the iteration when they're done entering information. Which is the best iteration statement for this purpose?"
     choices:
     - content: "while"

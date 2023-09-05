@@ -55,7 +55,7 @@ from azure.ai.ml import command
 # configure command job as base
 job = command(
     code="./src",
-    command="python train.py --regularization ${{inputs.regularization}}",
+    command="python train.py --regularization ${{inputs.reg_rate}}",
     inputs={
         "reg_rate": 0.01,
     },

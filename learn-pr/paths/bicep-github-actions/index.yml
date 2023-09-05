@@ -25,6 +25,9 @@ summary: |
   * Build workflows that publish reusable Bicep files to template specs and modules.
   * Secure your workflows, and ensure all of your Azure deployments follow your organization's standards.
 
+  > [!TIP]
+  > Want to learn about using Bicep with GitHub Actions live from subject matter experts? [Follow on-demand Learn Live sessions with our experts.](/events/learn-events/learnlive-automate-azure-deployments-bicep-github-actions/)
+
   [!include[](../../includes/bicep-paths.md)]
 prerequisites: |
   This learning path assumes you have familiarity with deploying infrastructure using Bicep.

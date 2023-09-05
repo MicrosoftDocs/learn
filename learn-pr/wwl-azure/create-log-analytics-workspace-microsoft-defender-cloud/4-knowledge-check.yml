@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/01/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of creating a Log Analytics workspace for Microsoft Defender for Cloud?"
+    choices:
+    - content: "To store and analyze security logs and telemetry data"
+      isCorrect: true
+      explanation: "Correct. Creating a Log Analytics workspace for Microsoft Defender for Cloud allows organizations to store and analyze security logs and telemetry data. It provides a centralized location to collect and analyze data for threat detection, incident response, and compliance reporting."
+    - content: "To manage virtual machine resources in Azure"
+      isCorrect: false
+      explanation: "Incorrect. Virtual machine management is not the primary function of Log Analytics."
+    - content: "To deploy and manage virtual networks in Azure"
+      isCorrect: false
+      explanation: "Incorrect. Virtual network management is not the primary function of Log Analytics."
+  - content: "Which service is used to create a Log Analytics workspace in Azure?"
+    choices:
+    - content: "Defender for Cloud"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud focuses on security posture management and recommendations, not creating Log Analytics workspaces."
+    - content: "Azure Log Analytics"
+      isCorrect: true
+      explanation: "Correct. Azure Log Analytics is the service used to create a Log Analytics workspace in Azure. It provides the infrastructure and tools for storing, querying, and analyzing log data."
+    - content: "Azure Monitor"
+      isCorrect: false
+      explanation: "Incorrect. While Azure Monitor can collect and analyze telemetry data, it is not used to create a Log Analytics workspace specifically."
+  - content: "What type of data can be collected and analyzed in a Log Analytics workspace?"
+    choices:
+    - content: "Virtual machine performance metrics"
+      isCorrect: false
+      explanation: "Incorrect. Performance metrics of virtual machines are collected and analyzed by Azure Monitor, not in a Log Analytics workspace."
+    - content: "Security event logs"
+      isCorrect: true
+      explanation: "Correct. A Log Analytics workspace is primarily used for collecting and analyzing security event logs. This includes logs related to security events, threat intelligence, and other security-related telemetry."
+    - content: "Application code repositories"
+      isCorrect: false
+      explanation: "Incorrect. Application code repositories are typically managed and versioned in source code management tools like Azure DevOps or GitHub, not in a Log Analytics workspace."
+  - content: "How can organizations access and query data stored in a Log Analytics workspace?"
+    choices:
+    - content: "Through the Azure portal only"
+      isCorrect: false
+      explanation: "Incorrect. Data can be accessed and queried using various methods, including the Azure portal, API, PowerShell, and other Azure services."
+    - content: "Using the Log Analytics Query Language (KQL)"
+      isCorrect: true
+      explanation: "Correct. Organizations can access and query data stored in a Log Analytics workspace using the Log Analytics Query Language (KQL). KQL is a query language designed for searching, analyzing, and visualizing data in Log Analytics workspaces."
+    - content: "By exporting data to external storage"
+      isCorrect: false
+      explanation: "Incorrect. While data can be exported from a Log Analytics workspace, it is not the primary method for accessing and querying data within the workspace."

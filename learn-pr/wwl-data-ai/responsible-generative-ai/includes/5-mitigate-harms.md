@@ -16,13 +16,13 @@ The model layer consists of the generative AI model(s) at the heart of your solu
 Mitigations you can apply at the model layer include:
 
 - Selecting a model that is appropriate for the intended solution use. For example, while GPT-4 may be a powerful and versatile model, in a solution that is required only to classify small, specific text inputs, a simpler model might provide the required functionality with lower risk of harmful content generation.
-- *Fine-tuning* a foundational model with your own training data so that the responses it generates it makes are more likely to be relevant and scoped to your solution scenario.
+- *Fine-tuning* a foundational model with your own training data so that the responses it generates are more likely to be relevant and scoped to your solution scenario.
 
 ## 2: The *safety system* layer
 
 The safety system layer includes platform-level configurations and capabilities that help mitigate harm. For example, Azure OpenAI Service includes support for *content filters* that apply criteria to suppress prompts and responses based on classification of content into four severity levels (*safe*, *low*, *medium*, and *high*) for four categories of potential harm (*hate*, *sexual*, *violence*, and *self-harm*).
 
-Other safety system layer mitigations can include abuse detection algorithms to determine of the solution is being systematically abused (for example through high volumes of automated requests from a bot) and alert notifications that enable a fast response to potential system abuse or harmful behavior.
+Other safety system layer mitigations can include abuse detection algorithms to determine if the solution is being systematically abused (for example through high volumes of automated requests from a bot) and alert notifications that enable a fast response to potential system abuse or harmful behavior.
 
 ## 3: The *application* layer
 

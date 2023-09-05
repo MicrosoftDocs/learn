@@ -117,7 +117,7 @@ The cloud presents new opportunities for innovation:
 Application modernization can help you develop and bring applications to market much faster. By using Azure, developers aren't constrained by the lead time to procure and build on-premises systems and databases. These extended lead times for infrastructure slowed down your development efforts in the past. 
 
 - You can stand up Azure App Service in a matter of minutes to start developing a website. Previously you might have had to create a new server, patch the servers, install Internet Information Services (IIS), and make any necessary configuration changes. Now you can start developing your application immediately rather than waiting for days to start.
-- Modernizing applications using serverless in Azure once again provides the ability to bring solutions and updates to the market with even less infrastructure. Leveraging services like Azure Kubernetes Services, Azure Functions, Azure Logic Apps, Azure Cognitive Services, developers have many options for building applications. 
+- Modernizing applications using serverless in Azure once again provides the ability to bring solutions and updates to the market with even less infrastructure. Leveraging services like Azure Kubernetes Services, Azure Functions, Azure Logic Apps, and Azure AI services, developers have many options for building applications. 
 - Azure supports the use of DevOps tools, including GitHub, to build and deploy modern applications. Using GitHub actions, you build and release applications and updates faster to get ahead of the competition and keep your customers happy.
 
 ### Cost-optimizing applications

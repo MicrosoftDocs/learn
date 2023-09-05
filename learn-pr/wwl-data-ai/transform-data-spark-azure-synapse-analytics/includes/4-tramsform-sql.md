@@ -1,5 +1,3 @@
-
-
 The SparkSQL library, which provides the dataframe structure also enables you to use SQL as a way of working with data. With this approach, You can query and transform data in dataframes by using SQL queries, and persist the results as tables.
 
 > [!NOTE]

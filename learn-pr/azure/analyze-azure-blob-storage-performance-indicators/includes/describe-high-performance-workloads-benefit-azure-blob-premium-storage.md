@@ -30,4 +30,4 @@ In an IoT scenario, it's common to expect a high volume of small-size write oper
 
 ## AI and ML scenarios
 
-AI and ML inferencing and cognitive services rely on the ability to consume and process visuals, speech, and text in near-real time. Minimized latency of storage access is essential in such cases to provide a rapid response by reducing the time it takes to ingest and analyze data.
+AI and ML inferencing and Azure AI services rely on the ability to consume and process visuals, speech, and text in near-real time. Minimized latency of storage access is essential in such cases to provide a rapid response by reducing the time it takes to ingest and analyze data.

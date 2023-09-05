@@ -25,6 +25,6 @@ The World Wide Web Consortium (W3C) [guidelines for web accessibility testing](h
 
 You can implement traceability using [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview "Azure Application Insights").
 
-Azure Cognitive Services like [Text Analytics](/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0 "Text Analytics") and [Content Moderator](https://azure.microsoft.com/services/cognitive-services/content-moderator/ "Content Moderator") can help gauge a user’s sentiment, feedback, and identify human handoff points.
+Azure AI services like [Text Analytics](/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0 "Text Analytics") and [Content Moderator](https://azure.microsoft.com/services/cognitive-services/content-moderator/ "Content Moderator") can help gauge a user’s sentiment, feedback, and identify human handoff points.
 
 Learn more about [Microsoft’s approach to AI](https://www.microsoft.com/ai/our-approach-to-ai) and take a look at our book, [The Future Computed](https://news.microsoft.com/futurecomputed/).

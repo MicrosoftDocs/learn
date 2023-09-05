@@ -47,7 +47,7 @@ quiz:
     - content: "A cloud-native approach allows rapid incorporation of user feedback."
       isCorrect: false
       explanation: "Incorrect. While a cloud-native approach can provide rapid incorporation of user feedback, there are other ways cloud-native apps help to create business value."
-    - content: "Cloud services have built in tools and integrations for automation, such as constant integration (CI) and constant deployment (CD) pipelines. Therefore, cloud-native apps are more likely to have robust DevOps procedures, which can decrease costs and increase reliability."
+    - content: "Cloud services have built in tools and integrations for automation, such as continuous integration (CI) and continuous deployment (CD) pipelines. Therefore, cloud-native apps are more likely to have robust DevOps procedures, which can decrease costs and increase reliability."
       isCorrect: false
       explanation: "Incorrect. While automation is a benefit of cloud native processes, there are other ways cloud-native apps help to create business value"
     - content: "A Cloud Native architecture allows individual services to be updated and deployed without downtime for other services."

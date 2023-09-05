@@ -1,6 +1,6 @@
-While the Computer Vision and Video Indexer services offer face detection features, the Face service and associated APIs provide more capabilities. Which you should choose will ultimately depend on the insights you want to gain from facial detection. If you want to look for data around facial landmarks,  Face is the proper choice.
+While Azure AI Computer Vision and Azure AI Video Indexer offer face detection features, Azure AI Face and associated APIs provide more capabilities. Which you should choose will ultimately depend on the insights you want to gain from facial detection. If you want to look for data around facial landmarks, Azure AI Face is the proper choice.
 
-You can find out more about Face in the [service documentation](/azure/cognitive-services/face/?azure-portal=true).
+You can find out more about Azure AI Face in the [service documentation](/azure/ai-services/computer-vision/overview-identity?azure-portal=true).
 
 ## Clean-up
 
