@@ -2,7 +2,7 @@ You can choose whether to let Azure manage the storage infrastructure for your v
 
 Suppose you have a variety of virtual machines running healthcare workloads in your on-premises network that you want to migrate to Azure. You want to maximize performance while minimizing administrative effort.
 
-In this unit, you'll learn about disk roles and ephemeral disks. You'll also learn about the differences between managed and unmanaged disks.
+In this unit, you'll learn about disk roles, ephemeral OS disks, and managed disks.
 
 ## Disk roles
 
