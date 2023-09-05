@@ -139,4 +139,4 @@ New-AzDataMigrationToSqlDb `
 -MigrationService "/subscriptions/MySubscriptionID/resourceGroups/MyGroup/providers/Microsoft.DataMigration/SqlMigrationServices/MyService"
 ```
 
-To learn more about the Azure migration extension PowerShell and Azure CLI commands available, refer to the following links: [PowerShell module for data migration extension](https://learn.microsoft.com/powershell/module/az.datamigration) and [Azure CLI for data migration extension](https://learn.microsoft.com/cli/azure/datamigration).
+To learn more about the Azure migration extension PowerShell and Azure CLI commands available, refer to the following links: [PowerShell module for data migration extension](/powershell/module/az.datamigration) and [Azure CLI for data migration extension](/cli/azure/datamigration).

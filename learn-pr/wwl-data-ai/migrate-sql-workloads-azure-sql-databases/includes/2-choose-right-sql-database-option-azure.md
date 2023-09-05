@@ -30,7 +30,7 @@ The following summarize the benefits of deploying single and elastic pool databa
 |  | Combine the vCore purchasing model with Azure Hybrid Benefit for SQL Server to realize cost savings of up to 30 percent |
 
 > [!TIP]
-> To review the benefits of migrating to Azure SQL Database and the features available, please refer to [Deploy PaaS solutions with Azure SQL](training/modules/deploy-paas-solutions-with-azure-sql/) module.
+> To review the benefits of migrating to Azure SQL Database and the features available, please refer to [Deploy PaaS solutions with Azure SQL](/training/modules/deploy-paas-solutions-with-azure-sql/) module.
 
 ### Exclusive features of Azure SQL Database
 
@@ -40,7 +40,7 @@ Some features are supported in Azure SQL Database that aren't available in other
 | --- | --- |
 | [**Hyperscale**](/azure/azure-sql/database/service-tier-hyperscale) | Cloud-native architecture that allows for independently scalable compute and storage, providing greater flexibility and resources than other tiers. |
 | [**Auto-scale**](/azure/azure-sql/database/serverless-tier-overview?tabs=general-purpose#autoscaling) | With serverless compute tier |
-| [**Automatic tuning (indexes)**](/azure/azure-sql/database/automatic-tuning-overview?view=azuresql#automatic-tuning-options) | This built-in feature automatically identifies and creates indexes that can improve the performance of your workload. It also verifies that query performance has improved and removes unused or duplicate indexes. |
+| [**Automatic tuning (indexes)**](/azure/azure-sql/database/automatic-tuning-overview) | This built-in feature automatically identifies and creates indexes that can improve the performance of your workload. It also verifies that query performance has improved and removes unused or duplicate indexes. |
 | [**Elastic query**](/azure/azure-sql/database/elastic-query-overview) | Allows you to run T-SQL queries that bridge multiple databases in SQL Database. This feature is useful for applications using three- and four-part names that can't be changed. |
 | [**Elastic jobs**](/azure/azure-sql/database/job-automation-overview) | The elastic job feature is the SQL Server Agent replacement for Azure SQL Database. To some extent, elastic job is equivalent to the Multi Server Administration feature available on SQL Server instance. |
 | [**SQL Data Sync**](/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database) | It allows you to incrementally synchronize data across multiple databases running on SQL Database or SQL Server. |
