@@ -4,7 +4,7 @@ DP-100: Learning Path 8 Train models with scripts in Azure Machine Learning
 
 Learning Path 8 Overview
 
-As you begin to teach this learning path, get familiar with what the students learn during the learning path. In this learning path students learn how to run the training script as a command job to help prepare production-ready script. Students also learn about common terminologies like the code, command, environment, and compute.
+As you begin to teach this learning path, get familiar with what the students learn during the learning path. In this learning path, students learn how to run the training script as a command job to help prepare production-ready script. Students also learn about common terminologies like the code, command, environment, and compute.
 
 This learning path consists of two modules:
 
