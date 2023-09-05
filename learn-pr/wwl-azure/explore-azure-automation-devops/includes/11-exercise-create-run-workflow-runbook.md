@@ -1,4 +1,4 @@
-> [!WARNING]
+> [!NOTE]
 > You require an Azure subscription to do the following steps. If you don't have one, you can create one by following the steps outlined on the [Create your Azure free account today](https://azure.microsoft.com/free) webpage.
 
 ## Steps
