@@ -25819,37 +25819,37 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "learn-pr/student-evangelism/introduction-iot/index.yml",
+      "source_path": "learn-pr/student-evangelism/introduction-iot/index.yml",
       "redirect_url": "/training/modules/introduction-to-azure-iot/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "learn-pr/student-evangelism/introduction-iot/1-introduction.yml",
+      "source_path": "learn-pr/student-evangelism/introduction-iot/1-introduction.yml",
       "redirect_url": "/training/modules/introduction-to-azure-iot/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "learn-pr/student-evangelism/introduction-iot/2-iot-overview.yml",
+      "source_path": "learn-pr/student-evangelism/introduction-iot/2-iot-overview.yml",
       "redirect_url": "/training/modules/introduction-to-azure-iot/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "learn-pr/student-evangelism/introduction-iot/3-how-iot-works.yml",
+      "source_path": "learn-pr/student-evangelism/introduction-iot/3-how-iot-works.yml",
       "redirect_url": "/training/modules/introduction-to-azure-iot/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "learn-pr/student-evangelism/introduction-iot/4-use-criteria-iot.yml",
+      "source_path": "learn-pr/student-evangelism/introduction-iot/4-use-criteria-iot.yml",
       "redirect_url": "/training/modules/introduction-to-azure-iot/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "learn-pr/student-evangelism/introduction-iot/5-knowledge-check.yml",
+      "source_path": "learn-pr/student-evangelism/introduction-iot/5-knowledge-check.yml",
       "redirect_url": "/training/modules/introduction-to-azure-iot/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "learn-pr/student-evangelism/introduction-iot/6-summary.yml",
+      "source_path": "learn-pr/student-evangelism/introduction-iot/6-summary.yml",
       "redirect_url": "/training/modules/introduction-to-azure-iot/",
       "redirect_document_id": false
     },
