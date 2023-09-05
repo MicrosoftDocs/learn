@@ -2,13 +2,10 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
 
 ## Upgrade app dependencies
 
-> [!NOTE]
-> If you closed your terminal window after the previous exercise, you might need to set up your environment again. Open a terminal window, and clone the exercise repo by running the command `git clone https://github.com/MicrosoftDocs/node-essentials/`. You can ignore warning messages about the cloned folder already existing or the directory not being empty.
-
-1. In your terminal window, change to the folder that has the cloned files for this exercise:
+1. In a new terminal window (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>), change to the folder that has the files for this exercise:
 
    ```bash
-   cd node-essentials/node-dependencies/7-exercise-dependency-management
+   cd ../7-exercise-dependency-management
    ```
 
 1. Install the dependencies by running this command:
@@ -62,7 +59,7 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
    
    Notice the patterns specify the insert (^) character, which indicates updates to the minor version to support dependencies.
    
-   Close the file.
+   Close the file. 
 
 1. In the terminal, run this command to check for outdated dependencies:
 
@@ -121,3 +118,37 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
    Your results might be slightly different. The versions listed should correspond to the latest available versions of the packages.
 
 Congratulations. You've upgraded the two dependencies in your app. Well done!
+
+## Cleanup development container
+
+After completing the project, you may wish to clean up your development environment or return it to its typical state.
+
+#### [Remote development (browser)](#tab/github-codespaces)
+
+Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free per-core hours entitlement you get for your account.
+
+> [!IMPORTANT]
+> For more information about your GitHub account's entitlements, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+
+1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
+
+1. Locate your currently running codespaces sourced from the [`azure-samples/node-essentials`](https://github.com/azure-samples/node-essentials) GitHub repository.
+
+    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
+
+1. Open the context menu for the codespace and select **Delete**.
+
+    :::image type="content" source="../media/codespaces/codespace-delete.png" alt-text="Screenshot of the context menu for a single codespace with the delete option highlighted.":::
+
+#### [Local development (Docker)](#tab/visual-studio-code)
+
+You aren't necessarily required to clean up your local environment, but you can stop the running development container and return to running Visual Studio Code in the context of a local workspace.
+
+1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen Folder Locally**.
+
+    :::image type="content" source="../media/codespaces/reopen-local-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within your local environment.":::
+
+> [!TIP]
+> Visual Studio Code will stop the running development container, but the container still exists in Docker in a stopped state. You always have the option to deleting the container instance, container image, and volumes from Docker to free up more space on your local machine.
+
+---
