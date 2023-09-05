@@ -58,7 +58,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
     ::: zone-end
 
-    ::: zone pivot="powershell
+    ::: zone pivot="powershell"
 
     ```powershell
     az cognitiveserices account create `
