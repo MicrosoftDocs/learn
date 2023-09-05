@@ -2,7 +2,7 @@ The functionality of the front-end app is complete but it isn't engaging visuall
 
 ## Design systems for front-end apps
 
-A design system is a collection of reusable components, guided by clear standards, that can be assembled together to build any number of applications. Design systems are used to create consistent, high-quality user experiences. 
+A design system is a collection of reusable components, guided by clear standards that can be assembled together to build any number of applications. Design systems are used to create consistent, high-quality user experiences. 
 
 A design system specifies the look and feel of an application, and the way that users interact with it. They also provide a common language for designers and developers to communicate with each other.
 
@@ -14,7 +14,7 @@ Design systems are made up of many parts, some of which are:
 * **Content Guidelines**: Rules and guidelines for writing content for the site.
 * **Accessibility Guidelines**: Rules and guidelines for making the site accessible to all users.
 * **Component Library**: A collection of reusable components for building applications.
-* **Pattern Library**: A collection of components organized in specific ways such as the navigation bars, foover, and forms.
+* **Pattern Library**: A collection of components organized in specific ways such as the navigation bars, footer, and forms.
 * **Icon Library**: A collection of icons for use in the site.
 * **Design Tokens**: Names that represent hard-coded values for visual elements like spacing, color, and typography.
 
@@ -23,9 +23,37 @@ Design systems are made up of many parts, some of which are:
 There are many front-end design systems available. Here are some of the most popular:
 
 * [Material Design](https://material.io/)
+* [Fluent UI](https://developer.microsoft.com/fluentui/)
 * [Bootstrap](https://getbootstrap.com/)
-* [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/)
 * [Chakra UI](https://chakra-ui.com/)
+
+Headless design systems are design systems that don't have a framework. 
+
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Ant Design](https://ant.design/)
+* [Bulma](https://bulma.io/)
+* [Foundation](https://get.foundation/)
+
+## Select a design system
+
+When selecting a design system, consider the following:
+
+* **Features**: What features does the design system provide? Does it provide the features you need?
+* **Customization**: How customizable is the design system? Can you change the look and feel of the site?
+* **Accessibility**: How accessible is the design system? Does it provide accessibility features?
+* **Community**: How large is the community around the design system? How active is the community?
+* **Support**: How much support is available for the design system? Is there a support team? Is there a paid support option?
+* **Cost**: How much does the design system cost? Is it free? Is it a one-time cost? Is it a subscription?
+
+Technical considerations include:
+
+* **Framework**: What framework does the design system support? Does it support the framework you're using?
+* **Modular**: How modular is the design system? Can you use only the features you need? Can it be optimized for treeshaking (including only used components in built artifacts) so you don't import unnecessary code?
+* **Browser Support**: What browsers does the design system support? Does it support the browsers you need to support?
+* **Performance**: How does the design system affect the performance of the site? Does it affect the performance of the site?
+* **Size**: How large is the design system? Does it add a lot of size to the site? 
+* **Dependencies**: What dependencies does the design system have? Does it have dependencies that you don't want to use?
+
 
 ## Using a design system
 
@@ -50,6 +78,41 @@ A style is defined with CSS syntax. It can appear in a *.css file, be transpiled
 | `max-height: 100px;` | JavaScript file inline|
 | `maxHeight: '100px'` | JavaScript file styled-components |
 
+Modern CSS includes pre and post processors to make CSS easier to write and maintain. 
+
+* **Preprocessors** add syntax and tools to make CSS more efficient and concise, powerful, and dynamic. 
+* **Postprocessors** apply automation and repetition to optimize the final css output. 
+
+### Using CSS in JavaScript
+
+Historically CSS (.css) and JavaScript (.js) were separated. CSS was applied to HTML and JavaScript operated on the HTML using a name or ID or other query selector. Modern changes to front-end development moved CSS closer with new front-end frameworks, or even into the same file (.jsx). This change comes with pros and cons to consider for your own team and projects.
+
+Pros of CSS in JavaScript: 
+
+* **Management and maintainability**: The two main elements of the visual presentation are in the same folder or file. This works well for teams where the design and code of the project are intertwined with either close collaboration of roles, or roles that function in both design and code.
+* **Theme and Style consistency**: Managing the design elements within the source code and framework structure allow you to use the design elements consistently. 
+* **Dynamic styling**: By moving the design into the code, the design can depend on the result of the code. This allows for more concise code but may be more challenging for junior developers to onboard to the team. 
+
+Cons of CSS in JavaScript:
+
+* **Onboarding and migration**: Learning how to properly use CSS in JavaScript, not only for development, but also building the project takes time and may require tooling not yet provided by the design system itself.
+* **Delivery**: The final compiled artifacts are larger than just their equivalent .css files and JavaScript served separately. The use of CSS in JavaScript and generation of the final website must both be completed with an understanding of how to provided for tree-shaking. 
+* **Performance**: Frameworks which allow you to use CSS in JavaScript have to manage the DOM in order to apply, update, or remove styles. Using the DOM comes at a cost to the client rendering speed. 
+
+### Component composibility
+
+Design system components usually include a few categories of components which allow you to compose your own reusable components or component families:
+
+* **Organization** components used to layout components such as container, box, grid.
+* **Presentation** components include: 
+    * **Input** such as button, text box, and sliders
+    * **Data** such as table, list
+    * **Feedback** such as alert, notification, progress
+    * **Surfaces** such as Card, Accordion
+    * **Navigation** such as breadcrumbs, menu, pagination, tabs
+
+Use these components to build site-wide headers, footers, navigation, and forms.
+
 ### Prebuilt Components 
 
 A component is a reusable piece of code that can be used to build elements sharing functionality and styling. Components can be used to build other components, and they can be used to build entire applications. Common components are buttons, forms, and navigation bars.
@@ -65,6 +128,13 @@ Typography is the style and appearance of text. It includes font size, font weig
 * **Display Fonts**: These fonts are typically used for headlines or titles and are often more decorative or stylized than serif or sans-serif fonts. Examples of display fonts include Brush Script, Lobster, and Impact.
 
 :::image type="content" source="../media/common-typography-fonts.png" alt-text="Image shows three examples of the fonts, one with flourishs, one without flourishs, and one with every bold text. ":::
+
+Because typography impacts both the size of the downloads in the client application, and the load time of the application, you should consider how to optimize the application:
+
+* **Flash of Invisible Text** (FOIT) where the text is hidden until the font is loaded. If a font has not been loaded (FOIT), browsers can delay text rendering. 
+* **Flash of Unstyled Text** (FOUT) uses the fallback system font initially and then upgrades to the web font when it loads.
+
+
 
 ### Icons
 

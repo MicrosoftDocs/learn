@@ -29,15 +29,18 @@ Material UI provides a lot of functionality. For this unit, change the Pizza Lis
 
 In the `PizzaList` component, the Material UI components TextField, Button, Box, List, ListItem, ListItemText, ListItemSecondaryAction, and IconButton are imported and used to create a list of pizza items. 
 
+* **Organization** components: 
 * The **Box** component is used to wrap the form elements and add spacing between them. 
-* The **List** component is used to display the list of pizza items. 
-* The **ListItem** component is used to display each pizza item in the list. 
-* The **ListItemText** component is used to display the name and description of each pizza item. 
-* The **ListItemSecondaryAction** component is used to display the edit and delete buttons for each pizza item. 
-* The **IconButton** component is used to create the edit and delete buttons. 
-* The **TextField** component is used to create the input fields for the name and description of each pizza item. 
-* The **Button** component is used to create the create, update, and cancel buttons.
 
+* **Presentation** components: 
+    * The **List** component is used to display the list of pizza items. 
+    * The **ListItem** component is used to display each pizza item in the list. 
+    * The **ListItemText** component is used to display the name and description of each pizza item. 
+    * The **ListItemSecondaryAction** component is used to display the edit and delete buttons for each pizza item. 
+    * The **IconButton** component is used to create the edit and delete buttons. 
+    * The **TextField** component is used to create the input fields for the name and description of each pizza item. 
+    * The **Button** component is used to create the create, update, and cancel buttons.
+    
 ## Test the new design
 
 1. Wait for Vite to reload the front-end React app.
