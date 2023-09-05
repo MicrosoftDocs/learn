@@ -20,7 +20,7 @@ Your changes are ready. Sign off on the PR to send it to the destination reposit
 
 :::image type="content" source="../media/exercise-sign-off-step.png" alt-text="Screenshot of the comment field with #sign-off and the Comment button highlighted.":::
 
-Congratulations, you’ve contributed to Microsoft Learn documentation! Now you’re ready for future contributions to public repositories on the site. 
+Congratulations, you’ve contributed to Microsoft Learn documentation! Now you’re ready for future contributions to public repositories on the site.
 
 > [!NOTE]
 > Because this is a practice exercise, your changes won’t be merged to the live site. A PR reviewer will close your PR without merging so that other contributors can practice the same workflow with these instructions.
