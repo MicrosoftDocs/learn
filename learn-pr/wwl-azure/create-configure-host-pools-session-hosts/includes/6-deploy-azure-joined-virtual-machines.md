@@ -11,12 +11,10 @@ The configurations listed below are supported with Azure AD-joined virtual machi
 
 Access to your on-premises or Active Directory domain-joined resources and should be considered when deciding whether Azure AD-joined virtual machines suits your environment. Microsoft recommends Azure AD-joined virtual machines for scenarios where users only need access to cloud-based resources or Azure AD-based authentication.
 
- -  Azure Virtual Desktop (classic) doesn't support Azure AD-joined virtual machines.
- -  Azure AD-joined virtual machines don't currently support external users.
- -  Azure AD-joined virtual machines only supports local user profiles at this time.
- -  Azure AD-joined virtual machines can't access Azure Files file shares for FSLogix or MSIX app attach. You'll need Kerberos authentication to access either of these features.
- -  The Windows Store client doesn't currently support Azure AD-joined virtual machines.
- -  Azure Virtual Desktop doesn't currently support single sign-on for Azure AD-joined virtual machines.
+ -  Azure Virtual Desktop (classic) doesn't support Azure AD-joined VMs.
+ -  Azure AD-joined VMs don't currently support external identities, such as Azure AD Business-to-Business (B2B) and Azure AD Business-to-Consumer (B2C).
+ -  Azure AD-joined VMs can only access [Azure Files shares](/azure/virtual-desktop/create-profile-container-azure-ad) for hybrid users using Azure AD Kerberos for FSLogix user profiles.
+ -  The [Remote Desktop app for Windows](/azure/virtual-desktop/users/connect-microsoft-store) doesn't support Azure AD-joined VMs.
 
 ## Deploy Azure AD-joined virtual machines
 

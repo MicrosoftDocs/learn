@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-configure-host-pools-session-hosts.customize-remote-desktop-protocol-rdp-properties-for-host-pool
-title: Customize Remote Desktop Protocol (RDP) properties for a host pool
+uid: learn.wwl.create-configure-host-pools-session-hosts.customize-remote-desktop-properties-for-host-pool
+title: Customize Remote Desktop Protocol properties for a host pool
 metadata:
-  title: Customize Remote Desktop Protocol (RDP) properties for a host pool
-  description: "Customize Remote Desktop Protocol (RDP) properties for a host pool"
-  ms.date: 08/01/2022
+  title: Customize Remote Desktop Protocol properties for a host pool
+  description: "Customize Remote Desktop Protocol properties for a host pool"
+  ms.date: 09/05/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 10
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/4-customize-remote-desktop-properties-for-host-pool.md)]
+interactive: bash

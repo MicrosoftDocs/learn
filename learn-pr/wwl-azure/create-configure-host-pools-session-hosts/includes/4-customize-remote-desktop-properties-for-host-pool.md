@@ -4,51 +4,11 @@ Customizing a host pool's Remote Desktop Protocol (RDP) properties, such as mult
 
 RDP files have the following properties by default:
 
-:::row:::
-  :::column:::
-    **RDP properties**
-  :::column-end:::
-  :::column:::
-    **Desktops**
-  :::column-end:::
-  :::column:::
-    **RemoteApps**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Multi-monitor mode
-  :::column-end:::
-  :::column:::
-    Enabled
-  :::column-end:::
-  :::column:::
-    N/A
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Drive redirections enabled
-  :::column-end:::
-  :::column:::
-    Drives, clipboard, printers, COM ports, USB devices, and smartcards
-  :::column-end:::
-  :::column:::
-    Drives, clipboard, and printers
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Remote audio mode
-  :::column-end:::
-  :::column:::
-    Play locally.
-  :::column-end:::
-  :::column:::
-    Play locally.
-  :::column-end:::
-:::row-end:::
-
+| **RDP properties**         | **Desktops**                                                        | **RemoteApps**                  |
+| -------------------------- | ------------------------------------------------------------------- | ------------------------------- |
+| Multi-monitor mode         | Enabled                                                             | N/A                             |
+| Drive redirections enabled | Drives, clipboard, printers, COM ports, USB devices, and smartcards | Drives, clipboard, and printers |
+| Remote audio mode          | Play locally.                                                       | Play locally.                   |
 
 ## Add or edit a single custom Remote Desktop Protocol property
 
