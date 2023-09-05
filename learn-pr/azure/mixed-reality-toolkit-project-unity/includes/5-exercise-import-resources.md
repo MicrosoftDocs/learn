@@ -31,10 +31,11 @@ To import the Mixed Reality Toolkit into your project we'll use the Mixed Realit
 
     :::image type="content" source="../media/003-mixed-reality-feature-tool-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
 
-1. Select the "+" button to the left of **Platform Support (0 of 5)** and then select the latest version of **Mixed Reality OpenXR Plugin**.
+1. Select the "+" button to the left of **Platform Support** and then select the latest version of **Mixed Reality OpenXR Plugin**.
  
-     :::image type="content" source="../media/008-package-selections.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool.":::
-1. Select "Select All" button to the right of **MRTK3** so that all features are selected.
+     :::image type="content" source="../../media/008-package-selections.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool.":::
+
+1. Select the "+" button to the left of **MRTK3** and then manually select all of the packages that are not marked as deprecated.
  
      :::image type="content" source="../media/009-package-selections_mrtk.png" alt-text="Screenshot of selecting all feature of MRTK3.":::
 
@@ -76,7 +77,7 @@ Some warnings may remain.  Ignore them for now.
 :::image type="content" source="../media/unity-mrtk-profile.png" alt-text="Screenshot of MRTK profile.":::
 
 
-## Configure project settings for OpenXR
+## Configure project settings 
 
 1. In the menu bar, select **Edit** > **Project Settings...**.
 1. In the **Project Settings** window's left-side column, select **Player**.
