@@ -1,11 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.introduction-to-azure-iot.summary
-title: |
-  Summary
+uid: learn.introduction-to-azure-iot.summary
+title: Summary
 metadata:
-  title: |
-    Summary
+  title: Summary
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 8/14/2023
   author: dominicbetts

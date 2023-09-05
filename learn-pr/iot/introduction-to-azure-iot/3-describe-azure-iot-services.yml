@@ -1,11 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.introduction-to-azure-iot.describe-azure-iot-services
-title: |
-  Describe the Azure IoT services and SDKs
+uid: learn.introduction-to-azure-iot.describe-azure-iot-services
+title: Describe the Azure IoT services and SDKs
 metadata:
-  title: |
-    Describe the Azure IoT services and SDKs
+  title: Describe the Azure IoT services and SDKs
   description: "A typical Azure IoT solution uses services such as IoT Hub, IoT Central, and the Device Provisioning Service. In an IoT solution, you use the device SDKs to implement logic on your devices."
   ms.date: 8/14/2023
   author: dominicbetts

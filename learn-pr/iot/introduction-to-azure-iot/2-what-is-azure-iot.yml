@@ -1,11 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.introduction-to-azure-iot.what-is-azure-iot
-title: |
-  What is Azure IoT?
+uid: learn.introduction-to-azure-iot.what-is-azure-iot
+title: What is Azure IoT?
 metadata:
-  title: |
-    What is Azure IoT?
+  title: What is Azure IoT?
   description: "A typical IoT solution consists of on-premises devices and gateways, IoT specific cloud services to ingest IoT data into the cloud, and generic cloud services to provide capabilities such as storage and visualizations."
   ms.date: 8/14/2023
   author: dominicbetts

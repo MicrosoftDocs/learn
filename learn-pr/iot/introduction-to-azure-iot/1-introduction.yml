@@ -1,11 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.introduction-to-azure-iot.introduction
-title: |
-  Introduction
+uid: learn.introduction-to-azure-iot.introduction
+title: Introduction
 metadata:
-  title: |
-    Introduction
+  title: Introduction
   description: "An Azure IoT solution typically uses multiple services such as as IoT Hub, IoT Central, and the Device Provisioning service. Device clients are implemented by using one of the Azure IoT device SDKs."
   ms.date: 8/14/2023
   author: dominicbetts

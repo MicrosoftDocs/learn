@@ -1,17 +1,14 @@
 ### YamlMime:Module
-uid: |
-  learn.introduction-to-azure-iot
+uid: learn.introduction-to-azure-iot
 metadata:
-  title: |
-    Introduction to Azure IoT
+  title: Introduction to Azure IoT
   description: "Evaluate whether the Azure IoT services are appropriate to your IoT scenario."               # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 8/14/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: dominicbetts        # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: dobett             # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: module-intro-to-product # Please don't edit, used for our analytics
   ms.service: iot
-title: |
-  Introduction to Azure IoT
+title: Introduction to Azure IoT
 ###########################################################################
 ###
 ### Summary
@@ -113,5 +110,4 @@ units:
 ### TODO verify your badge
 ###
 badge:
-  uid: |
-    learn.introduction-to-azure-iot.badge
+  uid: learn.introduction-to-azure-iot.badge

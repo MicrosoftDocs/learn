@@ -1,11 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.introduction-to-azure-iot.how-azure-iot-works
-title: |
-  How Azure IoT works
+uid: learn.introduction-to-azure-iot.how-azure-iot-works
+title: How Azure IoT works
 metadata:
-  title: |
-    How Azure IoT works
+  title: How Azure IoT works
   description: "A typical IoT solution has capabilities and components such as devices, gateways, message processing and routing, analysis, visualization, security, and scalability."
   ms.date: 8/14/2023
   author: dominicbetts
