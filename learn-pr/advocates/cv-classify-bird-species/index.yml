@@ -2,7 +2,7 @@
 uid: learn.advocates.cv-classify-bird-species
 metadata:
   title: Classify endangered bird species with Custom Vision
-  description: Learn how to use Azure Cognitive Services Custom Vision to build a machine learning model that identifies the species of a bird in an image, to help with gathering data.
+  description: Learn how to use Azure AI Custom Vision to build a machine learning model that identifies the species of a bird in an image, to help with gathering data.
   ms.date: 12/22/2022
   author: cassiebreviu
   ms.author: chnoring
@@ -11,11 +11,11 @@ metadata:
   ms.service: cognitive-services
   ms.subservice: custom-vision
 title:  Classify endangered bird species with Custom Vision
-summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure Cognitive Services Custom Vision to create a model to identify species of birds!
+summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure AI Custom Vision to create a model to identify species of birds!
 abstract: |
   In this module, you will:
   - Get an introduction to machine learning
-  - Learn how to use pretrained machine learning models in Azure Cognitive Services
+  - Learn how to use pretrained machine learning models in Azure AI services
   - Learn how to use the Custom Vision service in Azure
   - Build a custom machine learning model
   - Deploy the model created by using Custom Vision
