@@ -20,7 +20,7 @@
 
 1. Select the "+" button to the left of **Platform Support** and then select the latest version of **Mixed Reality OpenXR Plugin**.
  
-     :::image type="content" source="../../media/008-package-selections.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool."::
+     :::image type="content" source="../../media/008-package-selections.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool.":::
 
 1. Select the "+" button to the left of **MRTK3** and then manually select all of the packages that are not marked as deprecated.
  
