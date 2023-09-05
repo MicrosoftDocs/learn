@@ -27,13 +27,6 @@ There are many front-end design systems available. Here are some of the most pop
 * [Bootstrap](https://getbootstrap.com/)
 * [Chakra UI](https://chakra-ui.com/)
 
-Headless design systems are design systems that don't have a framework. 
-
-* [Tailwind CSS](https://tailwindcss.com/)
-* [Ant Design](https://ant.design/)
-* [Bulma](https://bulma.io/)
-* [Foundation](https://get.foundation/)
-
 ## Select a design system
 
 When selecting a design system, consider the following:
@@ -48,40 +41,40 @@ When selecting a design system, consider the following:
 Technical considerations include:
 
 * **Framework**: What framework does the design system support? Does it support the framework you're using?
-* **Modular**: How modular is the design system? Can you use only the features you need? Can it be optimized for treeshaking (including only used components in built artifacts) so you don't import unnecessary code?
+* **Modular**: How modular is the design system? Can you use only the features you need? Can it be optimized for treeshaking (including only used components in generated artifacts) so you don't import unnecessary code?
 * **Browser Support**: What browsers does the design system support? Does it support the browsers you need to support?
-* **Performance**: How does the design system affect the performance of the site? Does it affect the performance of the site?
-* **Size**: How large is the design system? Does it add a lot of size to the site? 
+* **Performance**: How does the design system affect the performance of the site? 
+* **Size**: Does the system add a lot of size to the downloads required for the site? 
 * **Dependencies**: What dependencies does the design system have? Does it have dependencies that you don't want to use?
-
 
 ## Using a design system
 
-A design system is specified in the application with a combination of features, which interact together to create the look and feel of the site. Some of the common features are Cascading Style Sheets (CSS) along with prebuilt components and topography.  
+A design system is specified in the application as a combination of features, which interact together to create the look and feel of the site. Once you select your design system, add the required npm packages. Many design systems have a default style, so you can add the packages and see the changes immediately. You can change the style by selecting different preconfigured styles or providing your own.
 
-Once you select your design system, add the required npm packages. Many design systems have a default style, so you can add the packages and see the changes immediately. You can change the style by adding your own CSS at any time. 
+**Common features** includes:
 
-This typically means adding class names to your HTML elements and/or renaming the HTML elements to use the system's components. 
-
-| Element | Origin|
-|--|--|
-| `<button>` | HTML |
-| `<Button>`<br>`<PrimaryButton>` | Design system |
+* Default or Theme styles including color maps, font selections with color, weight, and spacing.
+* Prebuilt and composable components.
 
 ### CSS Styles
 
-A style is defined with CSS syntax. It can appear in a *.css file, be transpiled into a *.css file (such as with SASS), or be defined in a JavaScript file (such as with styled-components). Styled components are a way to use CSS in JavaScript and are a popular way to use CSS in React.
+A style is defined with CSS syntax. It can appear in a *.css file, be transpiled into a *.css file (such as with SASS), or be defined in a JavaScript file *.jsx. 
 
-| Style syntax| Location|
+| CSS style syntax| Location|
 |--|--|
 | `max-height: 100px;` | CSS file |
 | `max-height: 100px;` | JavaScript file inline|
 | `maxHeight: '100px'` | JavaScript file styled-components |
 
+| JSX style syntax | Origin|
+|--|--|
+| `<button class='primary'>`|Design system as style|
+| `<Button>` or `<Button primary>` or `<PrimaryButton>` | Design system as component|
+
 Modern CSS includes pre and post processors to make CSS easier to write and maintain. 
 
-* **Preprocessors** add syntax and tools to make CSS more efficient and concise, powerful, and dynamic. 
-* **Postprocessors** apply automation and repetition to optimize the final css output. 
+* **Preprocessors** add syntax and tools to make CSS more efficient and concise, powerful, and dynamic. They include SASS, LESS, and Stylus.
+* **Postprocessors** apply automation and repetition to optimize the final css output. They include Autoprefixer, PostCSS, and CSSNano.
 
 ### Using CSS in JavaScript
 
@@ -89,62 +82,51 @@ Historically CSS (.css) and JavaScript (.js) were separated. CSS was applied to 
 
 Pros of CSS in JavaScript: 
 
-* **Management and maintainability**: The two main elements of the visual presentation are in the same folder or file. This works well for teams where the design and code of the project are intertwined with either close collaboration of roles, or roles that function in both design and code.
-* **Theme and Style consistency**: Managing the design elements within the source code and framework structure allow you to use the design elements consistently. 
-* **Dynamic styling**: By moving the design into the code, the design can depend on the result of the code. This allows for more concise code but may be more challenging for junior developers to onboard to the team. 
+* **Management and maintainability**: When the visual elements and code are in the same place, it's great for teams that collaborate closely on design and development. It keeps things organized.
+* **Theme and Style consistency**: Storing design elements within the source code and framework helps maintain a consistent look and feel throughout the project.
+* **Dynamic styling**: Putting design aspects in the code means that the design can adapt based on the code's output. While this leads to more concise code, it might be a bit challenging for junior developers joining the team. 
 
 Cons of CSS in JavaScript:
 
-* **Onboarding and migration**: Learning how to properly use CSS in JavaScript, not only for development, but also building the project takes time and may require tooling not yet provided by the design system itself.
-* **Delivery**: The final compiled artifacts are larger than just their equivalent .css files and JavaScript served separately. The use of CSS in JavaScript and generation of the final website must both be completed with an understanding of how to provided for tree-shaking. 
-* **Performance**: Frameworks which allow you to use CSS in JavaScript have to manage the DOM in order to apply, update, or remove styles. Using the DOM comes at a cost to the client rendering speed. 
+* **Onboarding and migration**: It takes time to learn how to use CSS in JavaScript properly, not just for development but also for building the project. Sometimes, you might need additional tools that the design system doesn't provide yet.
+* **Delivery**:  When using CSS in JavaScript, the final compiled project is larger compared to serving CSS and JavaScript separately. To manage this, you need to understand how to optimize for tree-shaking during both the CSS-in-JavaScript process and website generation. 
+* **Performance**: Frameworks that enable CSS in JavaScript have to handle the Document Object Model (DOM) to apply, update, or remove styles. This can impact the speed at which the client's browser renders the content.
 
 ### Component composibility
+
+A component is a reusable piece of code that can be used to build elements sharing functionality and styling. Components can be used to build other components, and they can be used to build entire applications. 
 
 Design system components usually include a few categories of components which allow you to compose your own reusable components or component families:
 
 * **Organization** components used to layout components such as container, box, grid.
-* **Presentation** components include: 
-    * **Input** such as button, text box, and sliders
-    * **Data** such as table, list
-    * **Feedback** such as alert, notification, progress
-    * **Surfaces** such as Card, Accordion
-    * **Navigation** such as breadcrumbs, menu, pagination, tabs
-
-Use these components to build site-wide headers, footers, navigation, and forms.
-
-### Prebuilt Components 
-
-A component is a reusable piece of code that can be used to build elements sharing functionality and styling. Components can be used to build other components, and they can be used to build entire applications. Common components are buttons, forms, and navigation bars.
+* **Presentation** components cover a wide range of elements, including buttons, text boxes, sliders, tables, alerts, cards, and more. They're crucial for creating a polished user interface.
 
 :::image type="content" source="../media/material-ui-buttons.png" alt-text="Image shows nine different buttons in sets of three with different design elements.":::
 
 ### Typography
 
-Typography is the style and appearance of text. It includes font size, font weight, font color, and font family. Three common web types of typographies are: 
+Typography is all about the style and look of text. It includes things like font size, font weight, font color, and font family. There are three common types:
 
-* **Serif Fonts**: These fonts have small lines or flourishes at the ends of each letter stroke. Examples of serif fonts include Times New Roman, Georgia, and Baskerville.
-* **Sans-serif Fonts**: These fonts do not have any small lines or flourishes at the ends of each letter stroke. Examples of sans-serif fonts include Arial, Helvetica, and Verdana.
-* **Display Fonts**: These fonts are typically used for headlines or titles and are often more decorative or stylized than serif or sans-serif fonts. Examples of display fonts include Brush Script, Lobster, and Impact.
+* **Serif Fonts**: These fonts have little lines or decorations at the ends of letters, like Times New Roman or Georgia.
+* **Sans-serif Fonts**:  These fonts are plain without those decorative lines, like Arial or Helvetica.
+* **Display Fonts**: These fonts are fancier and are usually used for titles or headings, like Brush Script or Lobster.
 
 :::image type="content" source="../media/common-typography-fonts.png" alt-text="Image shows three examples of the fonts, one with flourishs, one without flourishs, and one with every bold text. ":::
 
-Because typography impacts both the size of the downloads in the client application, and the load time of the application, you should consider how to optimize the application:
+Optimizing typography is important because it affects the size of downloads and the speed of your application. Two things to consider are:
 
-* **Flash of Invisible Text** (FOIT) where the text is hidden until the font is loaded. If a font has not been loaded (FOIT), browsers can delay text rendering. 
-* **Flash of Unstyled Text** (FOUT) uses the fallback system font initially and then upgrades to the web font when it loads.
-
-
+* **Flash of Invisible Text** (FOIT): This is when text is hidden until the font is fully loaded, potentially delaying text display. 
+* **Flash of Unstyled Text** (FOUT): In this case, the browser initially shows text in a basic system font and then switches to the web font once it's ready.
 
 ### Icons
 
-Icons are images that represent an object or action. They're used to communicate information quickly and clearly. Icons are often used in navigation bars and buttons. Icons from design systems allow you to quickly select from a series of icons that are consistent with the design system. 
+Icons are small images used to convey information fast and clearly, often in navigation bars and buttons. Design system icons let you pick from a set of consistent icons that match the design style.
 
 :::image type="content" source="../media/material-ui-help-icon.png" alt-text="Image shows eight different icons with a question. ":::
 
 ## Apply a design system to your React app
 
-Design systems can provide either default themes or custom themes. Because a theme is meant to apply to the entire site, you add it at the top HTML element. In Reacht, this is typically in main.jsx or index.jsx. The following example uses Material UI to add a default theme to the app.
+Design systems provide either default themes meant to apply to the entire site. In React, this is typically in main.jsx or index.jsx. The following example uses Material UI to add a default theme to the app.
 
 :::code language="javascript" source="../code/with-components-with-style/main.jsx" highlight="4-6, 12,13,15":::
 
@@ -152,24 +134,23 @@ Design systems can provide either default themes or custom themes. Because a the
 
 Let's apply a design system component to an HTML button. Replace the `button` element with the design system `Button`.
 
-Include the component in your component's page: 
+1. Include the component in your component's page: 
 
-```javascript
-import Button from '@mui/material/Button';
-```
+    ```javascript
+    import Button from '@mui/material/Button';
+    ```
+    
+2. Replace HTML with the design system component:
 
-**Find your HTML button**:
-
-```jsx
-<button onClick={incrementCounter}>Increment</button>
-```
-
-**Replace with the design system `Button`**:
-
-```jsx
-<Button onClick={incrementCounter}>Increment</Button>
-```
+    ```jsx
+    /* remove this */
+    <button onClick={incrementCounter}>Increment</button>
+    
+    /* replace with this */
+    <Button onClick={incrementCounter}>Increment</Button>
+    ```
+    
+:::image type="content" source="../media/button-comparison.png" alt-text="The left button is a default styled button with a design system, showing a blue background, shading, and default topography. The button on the right is the standard HTML button with black text and a grey background. ":::
 
 The `Button`, with default styling, is on the left and the `button` is on the right:
 
-:::image type="content" source="../media/button-comparison.png" alt-text="The left button is a default styled button with a design system, showing a blue background, shading, and default topography. The button on the right is the standard HTML button with black text and a grey background. ":::
