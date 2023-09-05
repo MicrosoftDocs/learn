@@ -25,9 +25,9 @@ Recall that a dataset is a collection of information about objects or things. Fo
 |   2   |     25 |   10  |  White   |  Labrador   |
 |   3   |    29  |   14  |  Black   |  Black Shepherd |
 
-When we use our model, we only need the column(s) of data that the model accepts as input. These columns are called **features**. In our scenario, if our model accepts harness size and estimates boot size, then our **feature** is **harness size**.
+When we use our model, we only need the column(s) of data that the model accepts as input. These columns are called **features**. In our scenario, if our model accepts harness size and estimates boot size, then our **feature is harness size**.
 
-During training, the objective function usually needs to know both the model’s output and what the correct answer is. These values are called **labels**. In our scenario, if our model predicts boot size, then **boot size** is our **label**.
+During training, the objective function usually needs to know both the model’s output and what the correct answer is. These values are called **labels**. In our scenario, if our model predicts boot size, then **boot size is our label**.
 
 So, to use a model, we only ever need features, while during training we usually need both features and labels. During training in our scenario, we need both our harness-size feature and our boot-size label. When we use our model in our website, we only need to know the harness-size feature; our model then estimates the boot size for us to use.
 

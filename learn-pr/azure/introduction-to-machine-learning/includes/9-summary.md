@@ -7,7 +7,7 @@ We covered some significant new jargon in this module. Let’s recap what we've 
   * **Data**, information we want to learn from.
   * A **model**, which makes estimates about the data.
   * An **objective** the model is trying to achieve.
-  * An **optimizer**, the extra code that changes the model depending on its performance.
+  * An **optimizer**, extra code that changes the model depending on its performance.
 
 * Data can be thought of as features, and labels. Features correspond to potential model inputs, while labels correspond to model outputs, or desired model outputs.
 * Pandas and Plotly are powerful tools to explore datasets in Python.
