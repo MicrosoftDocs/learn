@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.ingest-data-with-microsoft-fabric
+metadata:
+  title: Ingest data with Microsoft Fabric
+  description: Ingest data with Microsoft Fabric
+  ms.date: 09/05/2023
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+title: Ingest data with Microsoft Fabric
+prerequisites: |
+  Familiarity with Microsoft Fabric:
+  https://learn.microsoft.com/training/paths/get-started-fabric/
+summary: |
+  Learn how to ingest and orchestrate data in Microsoft Fabric using dataflows, notebooks, and pipelines.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- fabric
+subjects:
+- big-data
+- data-analytics
+- data-engineering
+- data-integration
+- data-science
+modules:
+- learn.wwl.ingest-dataflows-gen2-fabric
+- learn.wwl.ingest-data-with-spark-fabric-notebooks
+- learn.wwl.use-data-factory-pipelines-fabric
+trophy:
+  uid: learn.wwl.ingest-data-with-microsoft-fabric.trophy
