@@ -1,4 +1,4 @@
-In this exercise, you will use the Form Recognizer service to train and test a custom model using the Python or .NET SDK.
+In this exercise, you will use the Azure Document Intelligence service to train and test a custom model using the Python or .NET SDK.
 
 [!INCLUDE [Lab note](../../../includes/wwl/lab-note.md)]
 

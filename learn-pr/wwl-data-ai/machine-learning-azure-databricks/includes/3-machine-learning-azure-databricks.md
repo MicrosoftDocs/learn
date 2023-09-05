@@ -1,12 +1,7 @@
 
 
-Azure Databricks provides a comprehensive, cloud-based environment for machine learning model development. Machine Learning is a discipline that involves collaboration between *data scientists*, who analyze and model the data, and *machine learning engineers* who deploy and manage models. Azure Databricks provides specific user interfaces for each of these personas, enabling professionals involved in machine learning projects to focus on their particular tasks.
 
-The portal for data scientists focuses on data ingestion, exploration, and preparation tasks.
-
-[![Screenshot of the Azure Databricks portal for the Data Science and Engineering persona.](../media/data-engineering.png)](../media/data-engineering.png#lightbox)
-
-The portal for machine learning engineers focuses on model training, evaluation, and management tasks.
+Azure Databricks provides a comprehensive, cloud-based environment for machine learning model development. Machine Learning is a discipline that involves collaboration between *data scientists*, who analyze and model the data, and *machine learning engineers* who deploy and manage models. Azure Databricks enables data scientists to perform data ingestion, exploration, and preparation tasks as well as model training, evaluation, and management tasks.
 
 [![Screenshot of the Azure Databricks portal for the Machine Learning persona.](../media/machine-learning.png)](../media/machine-learning.png#lightbox)
 

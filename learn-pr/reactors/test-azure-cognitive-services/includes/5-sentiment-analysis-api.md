@@ -1,4 +1,4 @@
-You just learned how to use the Azure Cognitive Services Text Analytics API to detect language. Now let's use it for sentiment analysis. The computers at the other end of the API connection will judge the sentiments of written phrases based solely on the context clues provided by the text. Sentiments will be ranked on the spectrum of positive to negative.
+You just learned how to use the Azure AI services Text Analytics API to detect language. Now let's use it for sentiment analysis. The computers at the other end of the API connection will judge the sentiments of written phrases based solely on the context clues provided by the text. Sentiments will be ranked on the spectrum of positive to negative.
 
 ```python
 # Verify the API URL source for the Sentiment Analysis API
@@ -8,11 +8,11 @@ print(sentiment_api_url)
 
 The output is:
 
-```Output
+```output
 https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/sentiment
 ```
 
-As shown, the Azure Cognitive Services Sentiment Analysis API requires the language to be passed in as documents with `id` and `text` attributes.
+As shown, the Azure AI services Sentiment Analysis API requires the language to be passed in as documents with `id` and `text` attributes.
 
 ```python
 documents = {'documents' : [
@@ -34,7 +34,7 @@ pprint(sentiments)
 
 The output is:
 
-```Output
+```output
 {'documents': [{'id': '1', 'score': 0.9708490371704102},
                {'id': '2', 'score': 0.0019068121910095215},
                {'id': '3', 'score': 0.7456425428390503},
@@ -48,12 +48,12 @@ Create another document set with varying degrees of sentiment. Use the Sentiment
 
 <br />
 
-<details> 
+<details>
 
   <summary>Hint - TBD <i>(expand to reveal)</i></summary>
 
   Here's the input:
-  
+
   ```python
   documents = {'documents' : [
   {'id': '1', 'language': 'en', 'text': 'I think this is amazingly horrible.'},
@@ -68,15 +68,15 @@ Create another document set with varying degrees of sentiment. Use the Sentiment
   ```
 
   The output is:
-  
-  ```Output
+
+  ```output
   {'documents': [{'id': '1', 'score': 0.09269934892654419},
                {'id': '2', 'score': 0.9604779481887817},
                {'id': '3', 'score': 0.1336020827293396},
                {'id': '4', 'score': 0.5463340282440186}],
   'errors': []}
   ```
-  
+
 </details>
 
 <br /><br />

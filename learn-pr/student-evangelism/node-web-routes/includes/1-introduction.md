@@ -10,12 +10,12 @@ In this module, learn how to create API routes with Node.js and Express by using
 
 By the end of this module, you can:
 
+- Use a dev container for your development environment
 - Understand API route management
 - Implement route handling in a Node.js application with JavaScript
 
 ## Prerequisites
 
-- [Git](https://git-scm.com/?azure-portal=true) and [Node.js](https://nodejs.org/en/?azure-portal=true) installed on your computer
 - Familiarity with editing text and code files in any text editor
 - Basic familiarity with HTTP
 - Experience using the command line, including Git operations
