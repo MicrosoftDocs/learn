@@ -83,8 +83,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
     --model-name gpt-35-turbo \
     --model-version "0301" \
     --model-format OpenAI \
-    --sku "Standard" \
-    --capacity 120
+    --scale-settings-scale-type "Standard"
     ```
 
     ::: zone-end
@@ -99,8 +98,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
     --model-name gpt-35-turbo `
     --model-version "0301" `
     --model-format OpenAI `
-    --sku "Standard" `
-    --capacity 120
+    --scale-settings-scale-type "Standard"
     ```
 
     ::: zone-end
