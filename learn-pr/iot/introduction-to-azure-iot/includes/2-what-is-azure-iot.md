@@ -34,7 +34,7 @@ Azure IoT includes a set of managed cloud services that you can use to connect, 
 
 The following diagram shows a high-level view of the components in a typical IoT solution. This module focuses on the key groups of components: devices, IoT cloud services, other cloud services, and solution-wide concerns.
 
-:::image type="content" source="../media/iot-architecture.svg" alt-text="Diagram that shows the high-level IoT solution architecture.":::
+:::image type="content" source="../media/iot-architecture.svg" alt-text="Diagram that shows the high-level IoT solution architecture." border="false":::
 
 <!-- 3. Define the product -------------------------------------------------------------
 
@@ -156,7 +156,7 @@ Some cloud services, such as IoT Hub and the Device Provisioning Service, are Io
 
 Any IoT solution must address the following solution-wide concerns:
 
-* Security including physical security, authentication, authorization, and encryption
+* Security including physical security, authentication, authorization, and encryption.
 * Solution management including deployment and monitoring.
 * High availability and disaster recovery for all the components in your solution.
 * Scalability for all the services in your solution.

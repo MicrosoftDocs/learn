@@ -35,7 +35,7 @@ A typical Azure IoT solution uses either Azure IoT Hub or Azure IoT Central for 
 
 ## Devices and device SDKs
 
-You can implement your own embedded code using the open-source device SDKs. The device SDKs support multiple operating systems, such as Linux, Windows, and real-time operating systems. There are SDKs for multiple programming languages, such as C, Node.js, Java, .NET, and Python. Choose the SDK that best fits development for your connected coffee machine
+You can implement your own embedded device code using the open-source device SDKs. The device SDKs support multiple operating systems, such as Linux, Windows, and real-time operating systems. There are SDKs for multiple programming languages, such as C, Node.js, Java, .NET, and Python. Choose the SDK that best fits development for your connected coffee machine
 
 You can further simplify how you create the embedded code for your devices by following the *IoT Plug and Play* conventions. At the core of IoT Plug and Play, is a *device capability model* schema that describes device capabilities. Use the device capability model to configure a cloud-based solution such as an IoT Central application.
 
@@ -74,7 +74,7 @@ To build an IoT solution from scratch, use one or more of the following Azure Io
 
 * *Azure Maps* is a collection of geospatial services that use fresh mapping data to provide accurate geographic context to web and mobile applications. You can use a REST API, a web-based JavaScript control, or an Android SDK to build your applications. You can use Azure Maps to build a visualization of your connected coffee machines.
 
-* Use *Azure Functions* to automated actions and notifications based on device data. For example, you may want to send an email or text message when a connected coffee machine reports a critical condition.
+* Use *Azure Functions* to automate actions and notifications based on device data. For example, you may want to send an email or text message when a connected coffee machine reports a critical condition.
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
