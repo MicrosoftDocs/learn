@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-the-azure-portal
+uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-azure-portal
 title: Exercise - Deploy a virtual machine to test connectivity privately and securely to the SQL server across the private endpoint
 metadata:
   title: Exercise - Deploy a virtual machine to test connectivity privately and securely to the SQL server across the private endpoint
@@ -11,4 +11,4 @@ metadata:
   ms.prod: azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-the-azure-portal.md)]
+  [!include[](includes/4-connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-azure-portal.md)]

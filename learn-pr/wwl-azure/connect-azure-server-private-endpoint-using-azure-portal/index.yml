@@ -42,7 +42,7 @@ units:
 - learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.introduction
 - learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.azure-private-endpoint
 - learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.azure-private-link
-- learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-the-azure-portal
+- learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-azure-portal
 - learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.knowledge-check
 - learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.summary
 badge:
