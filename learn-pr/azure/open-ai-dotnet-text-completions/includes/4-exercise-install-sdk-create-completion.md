@@ -48,7 +48,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
     ::: zone pivot="cli"
 
     ```azurecli
-    az cognitiveserices account create \
+    az cognitiveservices account create \
     -n HikingConversationsAI \
     -g HikingConversations-RG \
     -l eastus \
@@ -61,7 +61,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
     ::: zone pivot="powershell"
 
     ```powershell
-    az cognitiveserices account create `
+    az cognitiveservices account create `
     -n HikingConversationsAI `
     -g HikingConversations-RG `
     -l eastus `
