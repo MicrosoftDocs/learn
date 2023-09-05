@@ -4,7 +4,7 @@ Like the Windows 10 operating system, Microsoft apps offer features and tools to
 
 Microsoft Teams is a messaging app for virtual conversations, meetings, and collaboration. Accessibility tools are built in to make communication and teamwork more inclusive.
 
-With live captions, Teams can detect what's said in a meeting and present real-time captions for anyone who wants them. Live captions can make your meeting more inclusive to participants who are deaf or hard-of-hearing, people with different levels of language proficiency, and participants in loud places, by giving them another way to follow along.
+With live captions, Teams can detect what's said in a meeting and present real-time captions for anyone who wants them. Live captions can make your meeting more inclusive to participants who are deaf or hard of hearing, people with different levels of language proficiency, and participants in loud places, by giving them another way to follow along.
 
 :::image type="content" source="../media/teams-meeting.png" alt-text="Five people in a Microsoft Teams meeting using live captions.":::
 

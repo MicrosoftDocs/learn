@@ -28,8 +28,8 @@ like a broken arm.
 To set up Dictation and get started using it:
 
 1. Press Windows logo key <kbd>![Windows logo key.](../media/windows-logo.png)+H</kbd> together.
-2. To stop dictating, simply say "Stop dictation".
-3. If you're using a tablet or a touchscreen, tap the microphone button on the touch keyboard to start dictating. Tap the button again to stop dictation, or say "Stop dictation".
+2. To stop dictating, simply say "Stop dictation."
+3. If you're using a tablet or a touchscreen, tap the microphone button on the touch keyboard to start dictating. Tap the button again to stop dictation, or say "Stop dictation."
 
 :::image type="content" source="../media/dictation-toolbar.png" alt-text="Dictation toolbar showing the Listening prompt.":::
 
@@ -83,7 +83,7 @@ For more information, learn how to [use color filters in Windows 10.](https://su
 
 Focus assist allows you to turn off notifications in Windows anytime you need to focus. When enabled, this feature blocks alerts and notifications from any of your installed apps.
 
-People with mental health disabilities such as anxiety may benefit from the enhanced ability that Focus assist provides to get things done without distractions. By eliminating moving objects like pop-up notifications, the setting may also reduce stress and help people focus on the task at hand.
+People with mental-health disabilities such as anxiety may benefit from the enhanced ability that Focus assist provides to get things done without distractions. By eliminating moving objects like pop-up notifications, the setting may also reduce stress and help people focus on the task at hand.
 
 To use Focus assist, press **Start** (Windows logo key) ![Windows logo key.](../media/windows-logo.png), and enter **Focus assist settings** in the search box. You can then choose whether you want to receive all notifications, priority notifications only, or just alarms. In Windows 10, you can also access Focus assist settings by selecting **Notifications & actions**.
 

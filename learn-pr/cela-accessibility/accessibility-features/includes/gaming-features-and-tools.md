@@ -10,7 +10,7 @@ There are several ways to take advantage of Copilot mode:
 
 To turn on Copilot for Xbox One:
 
-1. Connect a second controller to the Xbox for the copilot. The copilot can sign in or not - achievements and gamer scores don't go to this player.
+1. Connect a second controller to the Xbox for the copilot. The copilot can sign in or not - achievements and gamerscores don't go to this player.
 2. Using the pilot\'s controller, press the **Xbox** button to open the guide, and then select **System** \> **Settings** \> **Ease of Access** \> **Controller**.
 3. Choose **Copilot settings**, and then select **Turn on Copilot**.
 4. Select the copilot controller.
