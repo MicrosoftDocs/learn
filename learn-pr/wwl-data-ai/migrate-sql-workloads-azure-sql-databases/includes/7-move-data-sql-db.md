@@ -8,7 +8,7 @@ The Data Sync feature allows you to incrementally synchronize data across multip
 
 Due to its ability to synchronize data in both directions, this feature is a great choice for hybrid applications. It's particularly appealing to customers  considering moving to the cloud, as it allows them to transition some of their applications to Azure quickly.
 
-:::image type="content" source="../media/7-data-sync-architecture.png" alt-text="Screenshot showing the new sync group page from Azure portal.":::
+:::image type="content" source="../media/7-data-sync-architecture.png" alt-text="Diagram showing the SQL Data Sync architecture.":::
 
 Data Sync is based on a hub topology, where you define one of the databases in the sync group to work as a hub database. The sync group can have multiple members, and you can only synchronize changes between the hub database and individual databases. Data Sync tracks changes using `INSERT`, `UPDATE`, and `DELETE` triggers through a historical table created on the user database.
 

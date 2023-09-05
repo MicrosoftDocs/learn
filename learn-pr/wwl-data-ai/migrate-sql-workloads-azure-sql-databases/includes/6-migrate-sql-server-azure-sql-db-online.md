@@ -242,21 +242,21 @@ Replication management and monitoring are not supported from Azure SQL Database.
 
 You can monitor the **Snapshot Agent** and **Log Reader Agent** by right-clicking on the publication and selecting the appropriate option. If the agents are not running, start them.
 
-:::image type="content" source="../media/6-replication-view-snapshot.png" alt-text="Diagram showing the key components in a transactional replication.":::
+:::image type="content" source="../media/6-replication-view-snapshot.png" alt-text="Screenshot showing how to launch the snapshot agent.":::
 
 To view the synchronization status, right-click on the subscription, select **View Synchronization Status**, and then start the agent. If you encounter any error messages, check the agent jobs history on the SQL Server Agent. If the agents are running as expected, you should see the following results.
 
 **Snapshot Agent:**
 
-:::image type="content" source="../media/6-replication-snapshot.png" alt-text="Diagram showing the key components in a transactional replication.":::
+:::image type="content" source="../media/6-replication-snapshot.png" alt-text="Screenshot showing the snapshot agent status in a transactional replication.":::
 
 **Log Reader Agent:**
 
-:::image type="content" source="../media/6-replication-log-reader.png" alt-text="Diagram showing the key components in a transactional replication.":::
+:::image type="content" source="../media/6-replication-log-reader.png" alt-text="Screenshot showing the log reader status in a transactional replication.":::
 
 **Synchronization Status:**
 
-:::image type="content" source="../media/6-replication-sync-status.png" alt-text="Diagram showing the key components in a transactional replication.":::
+:::image type="content" source="../media/6-replication-sync-status.png" alt-text="Diagram showing the synchronization status in a transactional replication.":::
 
 After the data is fully replicated to Azure SQL Database, you can direct the connections to the subscriber database, and then stop and remove the replication.
 

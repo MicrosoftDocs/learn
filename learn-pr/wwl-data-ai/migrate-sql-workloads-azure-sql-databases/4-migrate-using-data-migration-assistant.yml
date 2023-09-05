@@ -4,12 +4,12 @@ title: Explore Data Migration Assistant to migrate to Azure SQL Database
 metadata:
   title: Explore Data Migration Assistant to migrate to Azure SQL Database
   description: "Learn how to use Data Migration Assistant to migrate to Azure SQL Database."
-  ms.date: 09/08/2023
+  ms.date: 09/04/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 5
+durationInMinutes: 9
 content: |
   [!include[](includes/4-migrate-using-data-migration-assistant.md)]

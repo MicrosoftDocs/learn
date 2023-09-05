@@ -4,12 +4,12 @@ title: Use Azure SQL migration extension to migrate to Azure SQL Database
 metadata:
   title: Use Azure SQL migration extension to migrate to Azure SQL Database
   description: "Learn how to use Azure SQL migration extension for Azure Data Studio to migrate to Azure SQL Database."
-  ms.date: 09/08/2023
+  ms.date: 09/04/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
-  [!include[](includes/3-migrate-using-azure-migration-extension)]
+  [!include[](includes/3-migrate-using-azure-migration-extension.md)]

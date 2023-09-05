@@ -3,7 +3,7 @@ uid: learn-wwl.migrate-sql-workloads-azure-sql-databases
 metadata:
   title: Migrate SQL Server workloads to Azure SQL Database
   description: Learn the essentials of Azure SQL Database deployment and migration. Explore its benefits, exclusive features, and migration options while optimizing performance and application connections for a smooth transition to the cloud.
-  ms.date: 09/08/2023
+  ms.date: 09/04/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
