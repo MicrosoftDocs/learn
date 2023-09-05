@@ -28,7 +28,9 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - azure-machine-learning
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-computing
-  - data-privacy
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
 units:
 - learn.finetune-foundation-model-with-azure-machine-learning.introduction
 - learn.finetune-foundation-model-with-azure-machine-learning.understand-finetune
