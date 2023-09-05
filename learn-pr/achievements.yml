@@ -837,6 +837,11 @@ achievements:
   title: Introduction to Azure IoT
   summary: Introduction to Azure IoT
   iconUrl: /training/achievements/introduction-to-azure-iot.svg
+- uid: learn.introduction-to-azure-iot.badge
+  type: badge
+  title: Introduction to Azure IoT
+  summary: Introduction to Azure IoT
+  iconUrl: /training/achievements/student-evangelism/introduction-to-iot.svg
 - uid: learn.iot.explore-and-analyze-time-series-insights.badge
   type: badge
   title: Explore and analyze time-stamped data with Time Series Insights
