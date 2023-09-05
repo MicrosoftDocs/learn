@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-key-vault-networking-settings
 metadata:
   title: Configure Azure Key Vault networking settings
   description: "Learn to configure Azure Key Vault networking settings via the Azure portal, enabling secure access control to your vault, protecting sensitive keys and secrets."
-  ms.date: 08/02/2023
+  ms.date: 09/04/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -38,8 +38,10 @@ units:
 - learn.wwl.configure-azure-key-vault-networking-settings.best-practices-for-azure-key-vault
 - learn.wwl.configure-azure-key-vault-networking-settings.azure-key-vault-security
 - learn.wwl.configure-azure-key-vault-networking-settings.review-azure-key-vault-network-security
+- learn.wwl.configure-azure-key-vault-networking-settings.use-azure-portal-to-create-azure-key-vault
 - learn.wwl.configure-azure-key-vault-networking-settings.azure-key-vault-soft-delete-overview
 - learn.wwl.configure-azure-key-vault-networking-settings.add-virtual-network-rules
+- learn.wwl.configure-azure-key-vault-networking-settings.use-purge-protection-to-prevent-deletion-of-your-key-vault-keys-secrets-certificates-by-malicious-insider
 - learn.wwl.configure-azure-key-vault-networking-settings.knowledge-check
 - learn.wwl.configure-azure-key-vault-networking-settings.summary
 badge:

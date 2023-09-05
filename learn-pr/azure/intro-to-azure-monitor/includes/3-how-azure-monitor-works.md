@@ -1,4 +1,4 @@
-Your IT environment might include various resources and services, like virtual machines (VMs), databases, web hosting services, and gateways. In this unit, you learn about metrics and logs, and how collecting these two types of data with Azure Monitor lets you monitor the health, behavior, and performance of your Azure applications, networks, and infrastructure.
+In this unit, you learn about metrics and logs, and how collecting these two types of data with Azure Monitor lets you monitor the health, behavior, and performance of your Azure applications, networks, and infrastructure.
 
 ## Metrics
 
