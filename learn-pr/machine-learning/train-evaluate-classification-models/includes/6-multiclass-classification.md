@@ -25,4 +25,4 @@ Multiclass classification can be thought of as a combination of multiple binary 
 
 In both approaches, the overall model must take into account all of these predictions to determine which single category the item belongs to.
 
-Fortunately, in most machine learning frameworks, including Scikit-Learn, implementing a multiclass classification model is not significantly more complex than binary classification - and in most cases, the estimators used for binary classification implicitly support multiclass classification by abstracting an OVR algorithm, an OVO algorithm, or by allowing a choice of either.
+Fortunately, in most machine learning frameworks, including Scikit-Learn, implementing a multiclass classification model isn't significantly more complex than binary classification - and in most cases, the estimators used for binary classification implicitly support multiclass classification by abstracting an OVR algorithm, an OVO algorithm, or by allowing a choice of either.

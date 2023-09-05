@@ -1,16 +1,16 @@
 *Binary* classification is classification with two categories. For example, we could label patients as non-diabetic or diabetic.
 
-The class prediction is made by determining the *probability* for each possible class as a value between 0 (impossible) and 1 (certain). The total probability for all classes is always 1, as the patient is definitely either diabetic or non-diabetic. So, if the predicted probability of a patient being diabetic is 0.3, then there is a corresponding probability of 0.7 that the patient is non-diabetic.
+The class prediction is made by determining the *probability* for each possible class as a value between 0 (impossible) and 1 (certain). The total probability for all classes is always 1, as the patient is definitely either diabetic or non-diabetic. So, if the predicted probability of a patient being diabetic is 0.3, then there's a corresponding probability of 0.7 that the patient is non-diabetic.
 
 A threshold value, often 0.5, is used to determine the predicted class. If the *positive* class (in this case, diabetic) has a predicted probability greater than the threshold, then a classification of diabetic is predicted.
 
 ## Training and evaluating a classification model
 
-Classification is an example of a *supervised* machine learning technique, which means it relies on data that includes known *feature* values (for example, diagnostic measurements for patients) as well as known *label* values (for example, a classification of non-diabetic or diabetic). A classification algorithm is used to fit a subset of the data into a function that can calculate the probability for each class label from the feature values. The remaining data is used to evaluate the model by comparing the predictions it generates from the features to the known class labels.
+Classification is an example of a *supervised* machine learning technique, which means it relies on data that includes known *feature* values and known *label* values. In this example, the feature values are diagnostic measurements for patients, and the label values are a classification of non-diabetic or diabetic. A classification algorithm is used to fit a subset of the data into a function that can calculate the probability for each class label from the feature values. The remaining data is used to evaluate the model by comparing the predictions it generates from the features to the known class labels.
 
 ### A simple example
 
-Let's explore a simple example to help explain the key principles. Suppose we have the following patient data, which consists of a single feature (blood glucose level) and a class label 0 for non-diabetic, 1 for diabetic.
+Let's explore an example to help explain the key principles. Suppose we have the following patient data, which consists of a single feature (blood glucose level) and a class label 0 for non-diabetic, 1 for diabetic.
 
 | Blood-Glucose | Diabetic |
 | ----------- | ------- |
@@ -29,7 +29,7 @@ Let's explore a simple example to help explain the key principles. Suppose we ha
 | 86 | 0 |
 | 109 | 1 |
 
-We'll use the first eight observations to train a classification model, and we'll start by plotting the blood glucose feature (which we'll call ***x***) and the predicted diabetic label (which we'll call ***y***).
+We use the first eight observations to train a classification model, and we start by plotting the blood glucose feature (***x***) and the predicted diabetic label (***y***).
 
 ![Blood glucose plotted against diabetic (0 or 1) with no trend line.](../media/training-plot.png)
 
@@ -45,9 +45,9 @@ Let's test it with the two data values we held back.
 
 ![Blood glucose plotted against diabetic (0 or 1) with sigmoidal trend line and threshold value set at 0.5.](../media/class-predictions.png)
 
-Points plotted below the threshold line will yield a predicted class of 0 - non-diabetic - and points above the line will be predicted as 1 - diabetic.
+Points plotted below the threshold line yield a predicted class of 0 (non-diabetic) and points above the line are predicted as 1 (diabetic).
 
-Now we can compare the label predictions (which we'll call ***y&#770;***, or "y-hat"), based on the logistic function encapsulated in the model, to the actual class labels (***y***).
+Now we can compare the label predictions (***y&#770;***, or "y-hat"), based on the logistic function encapsulated in the model, to the actual class labels (***y***).
 
 | x | y | y&#770; |
 | - | - | ------------- |
