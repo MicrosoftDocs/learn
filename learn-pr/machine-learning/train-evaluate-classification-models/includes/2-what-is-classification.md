@@ -31,19 +31,19 @@ Let's explore an example to help explain the key principles. Suppose we have the
 
 We use the first eight observations to train a classification model, and we start by plotting the blood glucose feature (***x***) and the predicted diabetic label (***y***).
 
-![Blood glucose plotted against diabetic (0 or 1) with no trend line.](../media/training-plot.png)
+![Graph of blood glucose plotted against diabetic (0 or 1) with no trend line.](../media/training-plot.png)
 
 What we need is a function that calculates a probability value for ***y*** based on ***x*** (in other words, we need the function ***f(x) = y***). You can see from the chart that patients with a low blood-glucose level are all non-diabetic, while patients with a higher blood-glucose level are diabetic. It seems like the higher the blood-glucose level, the more probable it is that a patient is diabetic, with the inflection point being somewhere between 100 and 110. We need to fit a function that calculates a value between 0 and 1 for ***y*** to these values.
 
 One such function is a *logistic* function, which forms a sigmoidal (S-shaped) curve.
 
-![Blood glucose plotted against diabetic (0 or 1) with sigmoidal trend line.](../media/logistic-function.png)
+![Graph of blood glucose plotted against diabetic (0 or 1) with sigmoidal trend line.](../media/logistic-function.png)
 
 Now we can use the function to calculate a probability value that ***y*** is positive, meaning the patient is diabetic, from any value of ***x*** by finding the point on the function line for ***x***. We can set a threshold value of 0.5 as the cut-off point for the class label prediction.
 
 Let's test it with the two data values we held back.
 
-![Blood glucose plotted against diabetic (0 or 1) with sigmoidal trend line and threshold value set at 0.5.](../media/class-predictions.png)
+![Graph of blood glucose plotted against diabetic (0 or 1) with sigmoidal trend line and threshold value set at 0.5.](../media/class-predictions.png)
 
 Points plotted below the threshold line yield a predicted class of 0 (non-diabetic) and points above the line are predicted as 1 (diabetic).
 
