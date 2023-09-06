@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.github-copilot-with-python.introduction
+title: |
+  Introduction
+metadata:
+  title: |
+    introduction
+  description: "GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code in Python. You can receive suggestions from GitHub Copilot in Python either by starting to write the code you want to use, or by writing a natural language comment describing what you want the code to do."
+  ms.date: 8/23/2023
+  author: bethanyjep
+  ms.author: bethanycheum
+  ms.topic: interactive-tutorial
+  ms.prod: github
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
