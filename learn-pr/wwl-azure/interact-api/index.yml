@@ -3,7 +3,7 @@ uid: learn.wwl.interact-api
 metadata:
   title: Interact with an ASP.NET Core minimal API
   description: "Learn how APIs are implemented in ASP.NET Core, and how to use API documentation to learn the APIs requirements."
-  ms.date: 08/29/2023
+  ms.date: 09/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -21,6 +21,7 @@ prerequisites: |
   * Knowledge of RESTful services and HTTP action verbs
   * Experience with JSON at a beginner level
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - intermediate
 roles:
