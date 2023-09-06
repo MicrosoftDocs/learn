@@ -57,7 +57,7 @@ There are two modes of migration to Azure SQL Database: **Online** and **Offline
 | --- | --- |
 | [Azure SQL Migration extension for Azure Data Studio](/sql/azure-data-studio/extensions/azure-sql-migration-extension) | **Offline** |
 | [Data Migration Assistant (DMA)](/sql/dma/dma-overview) | **Offline** |
-| Transactional replication | **Online** |
+| [Transactional replication](/sql/relational-databases/replication/transactional/transactional-replication) | **Online** |
 | [Azure Migrate](/azure/migrate/migrate-services-overview) | **Offline** |
 | [SQL Data Sync](/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database) | **\* Offline** |
 | [Import Export Wizard/BACPAC](/azure/azure-sql/database/database-export) | **Offline** |
