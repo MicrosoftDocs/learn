@@ -2,17 +2,17 @@
 uid: learn.wwl.train-evaluate-cluster-models
 metadata:
   title: Train and evaluate clustering models
-  description: "Clustering is a kind of machine learning that is used to group similar items into clusters."
-  ms.date: 01/04/2021
+  description: "Clustering is a type of machine learning that is used to group similar items into clusters."
+  ms.date: 09/08/2023
   author: s-polly
   ms.author: scottpolly
   ms.topic: interactive-tutorial
 title: Train and evaluate clustering models
-summary: Clustering is a kind of machine learning that is used to group similar items into clusters.
+summary: Clustering is a type of machine learning that is used to group similar items into clusters.
 abstract: |
   In this module, you'll learn:
   - When to use clustering
-  - How to train and evaluate a clustering model using the scikit-learn framework
+  - How to train and evaluate a clustering model using the Scikit-Learn framework
 prerequisites: |
   - Basic mathematical concepts
   - Programming with Python
