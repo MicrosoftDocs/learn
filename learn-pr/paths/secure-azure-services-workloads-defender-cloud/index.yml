@@ -23,7 +23,6 @@ roles:
 products:
 - azure
 - azure-key-vault
-- azure-linux-vm
 - azure-log-analytics
 - azure-portal
 - azure-private-link
