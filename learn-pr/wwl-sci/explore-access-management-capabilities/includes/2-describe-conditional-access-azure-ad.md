@@ -1,7 +1,7 @@
 
 Conditional Access is a feature of Microsoft Entra that provides an extra layer of security before allowing authenticated users to access data or other assets. Conditional Access is implemented through policies that are created and managed in Microsoft Entra ID. A Conditional Access policy analyses signals including user, location, device, application, and risk to automate decisions for authorizing access to  resources (apps and data).
 
-:::image type="content" source="../media/2-conditional-access-policies.png" alt-text="Conditional Access policies use signals to decide whether to allow or block access":::
+:::image type="content" source="../media/2-conditional-access-policies.png" alt-text="Image showing Conditional Access policy flow.  Signals are used to decide whether to allow or block access to apps and data.":::
 
 Conditional Access policies at their simplest are if-then statements.  For example, a Conditional Access policy might state that *if* a user belongs to a certain group, then they're required to provide multi-factor authentication to sign in to an application.
 
@@ -17,7 +17,7 @@ Watch the video to see how Conditional Access policies work.
 
 A conditional access policy in Microsoft Entra ID consists of two components, assignments and access controls.
 
-:::image type="content" source="../media/conditional-access-policy-components-v2.png" alt-text="The image shows the two components of a conditional access policy, the assignments and the access controls":::
+:::image type="content" source="../media/conditional-access-policy-components-v2.png" alt-text="Screen capture showing the two components of a conditional access policy, the assignments and the access controls.":::
 
 #### Assignments
 
