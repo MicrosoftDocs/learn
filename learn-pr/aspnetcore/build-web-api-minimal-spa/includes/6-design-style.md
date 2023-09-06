@@ -103,7 +103,7 @@ Design system components usually include the following categories, which allow y
 * **Organization** components used to layout components such as container, box, grid.
 * **Presentation** components cover a wide range of elements, including buttons, text boxes, sliders, tables, alerts, cards, and more. They're crucial for creating a polished user interface.
 
-:::image type="content" source="../media/material-ui-buttons.png" alt-text="Image shows nine different buttons in sets of three with different design elements.":::
+:::image type="content" source="../media/material-ui-buttons.png" alt-text="Screenshot of shows nine different buttons in sets of three with different design elements.":::
 
 ### Typography
 
@@ -113,7 +113,7 @@ Typography is all about the style and look of text. It includes things like font
 * **Sans-serif Fonts**:  These fonts are plain without those decorative lines, like Arial or Helvetica.
 * **Display Fonts**: These fonts are fancier and are usually used for titles or headings, like Brush Script or Lobster.
 
-:::image type="content" source="../media/common-typography-fonts.png" alt-text="Image shows three examples of the fonts, one with flourishes, one without flourishes, and one with every bold text. ":::
+:::image type="content" source="../media/common-typography-fonts.png" alt-text="Screenshot of shows three examples of the fonts, one with flourishes, one without flourishes, and one with every bold text. ":::
 
 Optimizing typography is important because it affects the size of downloads and the speed of your application. Two things to consider are:
 
@@ -124,7 +124,7 @@ Optimizing typography is important because it affects the size of downloads and 
 
 Icons are small images used to convey information fast and clearly, often in navigation bars and buttons. Design system icons let you pick from a set of consistent icons that match the design style.
 
-:::image type="content" source="../media/material-ui-help-icon.png" alt-text="Image shows eight different icons with a question. ":::
+:::image type="content" source="../media/material-ui-help-icon.png" alt-text="Screenshot of shows eight different icons with a question. ":::
 
 ## Apply a design system theme to your React app
 
@@ -152,7 +152,7 @@ Let's apply a design system component to an HTML button. Replace the `button` el
     <Button onClick={incrementCounter}>Increment</Button>
     ```
     
-    :::image type="content" source="../media/button-comparison.png" alt-text="The left button is a default styled button with a design system, showing a blue background, shading, and default topography. The button on the right is the standard HTML button with black text and a grey background. ":::
+    :::image type="content" source="../media/button-comparison.png" alt-text="Screenshot of image with two buttons. The left button is a default styled button with a design system, showing a blue background, shading, and default topography. The button on the right is the standard HTML button with black text and a grey background. ":::
     
 The `Button`, with default styling, is on the left and the `button` is on the right:
 
