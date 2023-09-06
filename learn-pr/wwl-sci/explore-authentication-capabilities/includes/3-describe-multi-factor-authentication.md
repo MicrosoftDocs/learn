@@ -22,7 +22,7 @@ The following additional forms of verification, described in the previous unit, 
 - SMS
 - Voice call
 
-:::image type="content" source="../media/2-microsoft-authenticator-app.png" alt-text="Microsoft authenticator app":::
+:::image type="content" source="../media/2-microsoft-authenticator-app.png" alt-text="Screen capture from the Microsoft authenticator app showing ways to verify your identity.":::
 
 ### Security defaults and multifactor authentication
 

@@ -6,7 +6,7 @@ Passwords are the most common form of authentication, but they have many problem
 
 The use of passwords should be supplemented or replaced with more secure authentication methods available in Microsoft Entra ID.
 
-:::image type="content" source="../media/authentication-methods-inline.png" lightbox="../media/authentication-methods-expanded.png" alt-text="Passwords should be supplemented or replaced.  The best approach is Passwordless.":::
+:::image type="content" source="../media/authentication-methods-inline.png" lightbox="../media/authentication-methods-expanded.png" alt-text="Diagram showing how passwords should be supplemented or replaced.  The best approach is Passwordless.":::
 
 ### Phone
 
@@ -61,11 +61,11 @@ To use Microsoft Authenticator, a user must download the phone app from the Micr
 
 With Passwordless sign-in, the Authenticator App turns any iOS or Android phone into a strong, passwordless credential. To sign in to their Microsoft Entra ID account, a user enters their username, matches a number displayed on the screen to the one on their phone, then uses their biometric or PIN to confirm.
 
-:::image type="content" source="../media/phone-sign-in-microsoft-authenticator-app.png" alt-text="Microsoft authenticator sign-in request":::
+:::image type="content" source="../media/phone-sign-in-microsoft-authenticator-app.png" alt-text="Screen capture of Microsoft authenticator sign-in request":::
 
 When a user chooses Authenticator as secondary form of authentication, to verify their identity, a notification is pushed to the phone or tablet. If the notification is legitimate, the user selects **Approve**, otherwise, they select **Deny**.
 
-:::image type="content" source="../media/3-microsoft-authenticator-app-approval-request.png" alt-text="Microsoft authenticator app approval request":::
+:::image type="content" source="../media/3-microsoft-authenticator-app-approval-request.png" alt-text="Screen Capture of Microsoft authenticator app approval request":::
 
 The Authenticator app can also be used as a software token to generate an OATH verification code. After entering your username and password, you enter the code provided by the Authenticator app into the sign-in interface. The OATH verification code provides a second form of authentication for SSPR or MFA.
 
@@ -77,4 +77,4 @@ X.509 certificates, which are part of the public key infrastructure (PKI), are d
 ### Primary and secondary authentication
 Some authentication methods can be used as the primary factor when you sign in to an application or device.  Other authentication methods are only available as a secondary factor when you use Microsoft Entra Multifactor Authentication or SSPR.  While that information is called-out in the text that describes each authentication method, the following table summarizes when an authentication method can be used during a sign-in event.
 
-:::image type="content" source="../media/primary-secondary-authentication-v2-inline.png" lightbox="../media/primary-secondary-authentication-v2-extended.png" alt-text="Table that summarizes if authentication method is used for primary and/or secondary authentications.":::
+:::image type="content" source="../media/primary-secondary-authentication-v2-inline.png" lightbox="../media/primary-secondary-authentication-v2-extended.png" alt-text="Screen capture of a table that summarizes if authentication method is used for primary and/or secondary authentications.":::
