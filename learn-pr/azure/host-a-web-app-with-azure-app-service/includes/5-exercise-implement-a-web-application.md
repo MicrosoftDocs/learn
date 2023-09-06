@@ -211,7 +211,7 @@ While you're running the helloworld web app, you can verify it's running locally
 
 To create a starter web application, we'll use the web application framework Flask.
 
-1. Run the following commands to set up a virtual environment and install Flask in your profile:
+1. Run the following commands in Azure Cloud Shell to set up a virtual environment and install Flask in your profile:
 
     ```bash
     python3 -m venv venv
@@ -219,7 +219,7 @@ To create a starter web application, we'll use the web application framework Fla
     pip install flask
     ```
 
-1. Run these commands in Azure Cloud Shell to create the directory for your new web app:
+1. Run these commands to create the directory for your new web app:
 
     ```bash
     mkdir ~/BestBikeApp

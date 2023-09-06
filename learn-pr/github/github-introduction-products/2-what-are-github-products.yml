@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.github-introduction-products.what-are-github-products
-title: What are GitHub's products?
+title: GitHub accounts and plans
 metadata:
-  title: What are GitHub's products?
-  description: An overview of each GitHub product including a look at the pricing options of each plan and paid features.
-  ms.date: 02/09/2023
+  title: GitHub accounts and plans
+  description: This content is part of the "Introduction to GitHub's products" module.
+  ms.date: 08/21/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: training-unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-are-github-products.md)]

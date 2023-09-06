@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-key-vault-networking-settings.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/04/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of configuring networking settings for Azure Key Vault?"
+    choices:
+    - content: "To control access to the Azure Key Vault instance"
+      isCorrect: true
+      explanation: "Correct. Configuring networking settings for Azure Key Vault allows you to control access to the Key Vault instance by specifying the networks or IP ranges that are allowed or denied access. This helps enhance the security of sensitive data stored in the Key Vault."
+    - content: "To optimize network performance for Azure Key Vault operations"
+      isCorrect: false
+      explanation: "Incorrect. Networking settings for Azure Key Vault don't directly impact network performance but focus on access control."
+    - content: "To enable network traffic monitoring for Azure Key Vault"
+      isCorrect: false
+      explanation: "Incorrect. Network traffic monitoring for Azure Key Vault isn't a primary function of configuring networking settings."
+  - content: "Which of the following networking settings is used to restrict access to Azure Key Vault based on IP addresses or ranges?"
+    choices:
+    - content: "Private Endpoint"
+      isCorrect: false
+      explanation: "Incorrect. Private Endpoint provides a private IP address in your virtual network for accessing Azure Key Vault but does not restrict access based on IP addresses or ranges. d) Virtual Network Service Endpoint Policies - Virtual Network Service Endpoint Policies are used to control access to specific Azure services, but they are not used to restrict access to Azure Key Vault based on IP addresses or ranges."
+    - content: "Virtual Network Service Endpoint"
+      isCorrect: true
+      explanation: "Correct. Configuring a Virtual Network Service Endpoint for Azure Key Vault allows you to restrict access to the Key Vault based on IP addresses or ranges specified in the virtual network subnet. This ensures that only resources within the specified virtual network can access the Key Vault."
+    - content: "Virtual Network Service Endpoint Policies"
+      isCorrect: false
+      explanation: "Incorrect. Virtual Network Service Endpoint Policies are used to control access to specific Azure services, but they aren't used to restrict access to Azure Key Vault based on IP addresses or ranges."
+  - content: "What is the benefit of using Azure Private Link with Azure Key Vault?"
+    choices:
+    - content: "It enables direct connectivity to Azure Key Vault from on-premises networks."
+      isCorrect: false
+      explanation: "Incorrect. While Private Link provides connectivity options, it does not specifically enable direct connectivity from on-premises networks."
+    - content: "It allows access to Azure Key Vault using private IP addresses."
+      isCorrect: true
+      explanation: "Correct. Azure Private Link enables access to Azure Key Vault over a private network connection using private IP addresses. This ensures that data exchanged between the client and Key Vault remains within the Microsoft Azure backbone network, enhancing security and eliminating exposure over the internet."
+    - content: "It improves the performance of Azure Key Vault operations."
+      isCorrect: false
+      explanation: "Incorrect. While Azure Private Link can enhance security and reliability, it doesn't directly impact the performance of Azure Key Vault operations."
+  - content: "What happens when firewall rules are enabled for Azure Key Vault?"
+    choices:
+    - content: "Only outgoing network traffic is allowed."
+      isCorrect: false
+      explanation: "Incorrect. Firewall rules for Azure Key Vault do not restrict outgoing network traffic."
+    - content: "Only incoming network traffic is allowed."
+      isCorrect: false
+      explanation: "Incorrect. Firewall rules for Azure Key Vault don't restrict access to only incoming network traffic."
+    - content: "Network traffic is allowed based on specified IP rules."
+      isCorrect: true
+      explanation: "Correct. When you enable firewall rules for Azure Key Vault, you can control network traffic by specifying IP rules that allow or deny access to the Key Vault. This allows you to define granular access restrictions based on specific IP addresses or ranges."

@@ -1,6 +1,5 @@
 
 
-
 The final basic operations you'll learn about in this module is how to increment and decrement values using special operators that are combinations of symbols.
 
 ## Increment and decrement
