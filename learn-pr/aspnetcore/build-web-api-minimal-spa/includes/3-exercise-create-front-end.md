@@ -97,7 +97,7 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
 
     Answer the CLI prompts as follows:
 
-    * **Package name**: `pizzaclient` - The folder created by Vite uses Camel case.
+    * **Package name**: `pizzaclient` - The folder created by Vite uses Camel case, `PizzaClient`.
     * **Select a framework**: `React`
     * **Select a variant**: `Javascript`
 
