@@ -148,11 +148,11 @@ Let's apply a design system component to an HTML button. Replace the `button` el
     /* remove this HTML element */
     <button onClick={incrementCounter}>Increment</button>
     
-    /* replace with this Design System component*/
+    /* replace with this Design System component */
     <Button onClick={incrementCounter}>Increment</Button>
     ```
     
-:::image type="content" source="../media/button-comparison.png" alt-text="The left button is a default styled button with a design system, showing a blue background, shading, and default topography. The button on the right is the standard HTML button with black text and a grey background. ":::
-
+    :::image type="content" source="../media/button-comparison.png" alt-text="The left button is a default styled button with a design system, showing a blue background, shading, and default topography. The button on the right is the standard HTML button with black text and a grey background. ":::
+    
 The `Button`, with default styling, is on the left and the `button` is on the right:
 
