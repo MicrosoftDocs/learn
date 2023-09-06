@@ -58,6 +58,8 @@ A design system is specified in the application as a combination of features, wh
 
 ### CSS Styles
 
+Design systems rely on styling to control the look and feel of the site. Cascading Style Sheet (CSS) is the most common styling syntax language to describe the style of an HTML document and how the document's elements should be displayed.
+
 A style is defined with CSS syntax. It can appear in a *.css file, be transpiled into a *.css file (such as with SASS), or be defined in a JavaScript file *.jsx. 
 
 | CSS style syntax| Location|
@@ -71,7 +73,7 @@ A style is defined with CSS syntax. It can appear in a *.css file, be transpiled
 | `<button class='primary'>`|Design system as style|
 | `<Button>` or `<Button primary>` or `<PrimaryButton>` | Design system as component|
 
-Modern CSS includes pre and post processors to make CSS easier to write and maintain. 
+Modern CSS includes preprocessors and postprocessors to make CSS easier to write and maintain. 
 
 * **Preprocessors** add syntax and tools to make CSS more efficient and concise, powerful, and dynamic. They include SASS, LESS, and Stylus.
 * **Postprocessors** apply automation and repetition to optimize the final css output. They include Autoprefixer, PostCSS, and CSSNano.
@@ -94,9 +96,9 @@ Cons of CSS in JavaScript:
 
 ### Component composibility
 
-A component is a reusable piece of code that can be used to build elements sharing functionality and styling. Components can be used to build other components, and they can be used to build entire applications. 
+A component is a reusable piece of code (HTML, JavaScript, and CSS) used to build elements sharing functionality and styling. Components can be used to build other components, and they can be used to build entire applications. 
 
-Design system components usually include a few categories of components which allow you to compose your own reusable components or component families:
+Design system components usually include the following categories, which allow you to compose your own reusable components or component families:
 
 * **Organization** components used to layout components such as container, box, grid.
 * **Presentation** components cover a wide range of elements, including buttons, text boxes, sliders, tables, alerts, cards, and more. They're crucial for creating a polished user interface.
@@ -124,13 +126,13 @@ Icons are small images used to convey information fast and clearly, often in nav
 
 :::image type="content" source="../media/material-ui-help-icon.png" alt-text="Image shows eight different icons with a question. ":::
 
-## Apply a design system to your React app
+## Apply a design system theme to your React app
 
 Design systems provide either default themes meant to apply to the entire site. In React, this is typically in main.jsx or index.jsx. The following example uses Material UI to add a default theme to the app.
 
 :::code language="javascript" source="../code/with-components-with-style/main.jsx" highlight="4-6, 12,13,15":::
 
-## Apply a design system to your React component
+## Apply a design system component to your React app
 
 Let's apply a design system component to an HTML button. Replace the `button` element with the design system `Button`.
 
@@ -143,10 +145,10 @@ Let's apply a design system component to an HTML button. Replace the `button` el
 2. Replace HTML with the design system component:
 
     ```jsx
-    /* remove this */
+    /* remove this HTML element */
     <button onClick={incrementCounter}>Increment</button>
     
-    /* replace with this */
+    /* replace with this Design System component*/
     <Button onClick={incrementCounter}>Increment</Button>
     ```
     
