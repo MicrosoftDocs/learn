@@ -94,7 +94,7 @@ Cons of CSS in JavaScript:
 * **Delivery**:  When using CSS in JavaScript, the final compiled project is larger compared to serving CSS and JavaScript separately. To manage this, you need to understand how to optimize for tree-shaking during both the CSS-in-JavaScript process and website generation. 
 * **Performance**: Frameworks that enable CSS in JavaScript have to handle the Document Object Model (DOM) to apply, update, or remove styles. This can impact the speed at which the client's browser renders the content.
 
-### Component composibility
+### Component composability
 
 A component is a reusable piece of code (HTML, JavaScript, and CSS) used to build elements sharing functionality and styling. Components can be used to build other components, and they can be used to build entire applications. 
 
@@ -113,7 +113,7 @@ Typography is all about the style and look of text. It includes things like font
 * **Sans-serif Fonts**:  These fonts are plain without those decorative lines, like Arial or Helvetica.
 * **Display Fonts**: These fonts are fancier and are usually used for titles or headings, like Brush Script or Lobster.
 
-:::image type="content" source="../media/common-typography-fonts.png" alt-text="Image shows three examples of the fonts, one with flourishs, one without flourishs, and one with every bold text. ":::
+:::image type="content" source="../media/common-typography-fonts.png" alt-text="Image shows three examples of the fonts, one with flourishes, one without flourishes, and one with every bold text. ":::
 
 Optimizing typography is important because it affects the size of downloads and the speed of your application. Two things to consider are:
 
