@@ -4,7 +4,7 @@ title: Summary
 metadata:
   title: Summary
   description: Summary.
-  ms.date: 11/04/2021
+  ms.date: 08/11/2023
   author: softchris
   ms.author: chnoring
   ms.manager: markl
@@ -15,5 +15,5 @@ metadata:
   ms.prod: aspnet-core
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/10-summary.md)]
   
