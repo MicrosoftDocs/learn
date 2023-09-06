@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.github-copilot-with-python.use-copilot-with-python
-title: use-copilot-with-python
+title: Use GitHub Copilot with Python
 metadata:
   title: Use GitHub Copilot with Python
   description: "Use GitHub Copilot to update a Python project. Update the Python API and use GitHub Copilot to suggest additions for new endpoints."
