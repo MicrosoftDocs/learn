@@ -19,7 +19,7 @@ To learn more, check out the following articles:
 - [Understand the structure and syntax of ARM templates](/azure/azure-resource-manager/templates/template-syntax?azure-portal=true)
 - [Azure Resource Manager overview](/azure/azure-resource-manager/management/overview?azure-portal=true)
 - [How to install the Azure CLI](/cli/azure/install-azure-cli?azure-portal=true)
-- [How to install Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.2.0)
+- [How to install Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true)
 - [Resource providers for Azure services](/azure/azure-resource-manager/management/azure-services-resource-providers?azure-portal=true)
 - [Define resources in Azure Resource Manager templates](/azure/templates?azure-portal=true)
 - [Outputs in Azure Resource Manager templates](/azure/azure-resource-manager/templates/template-outputs?tabs=azure-powershell)
