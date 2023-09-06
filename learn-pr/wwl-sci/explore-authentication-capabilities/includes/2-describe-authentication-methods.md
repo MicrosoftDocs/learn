@@ -65,7 +65,7 @@ With Passwordless sign-in, the Authenticator App turns any iOS or Android phone 
 
 When a user chooses Authenticator as secondary form of authentication, to verify their identity, a notification is pushed to the phone or tablet. If the notification is legitimate, the user selects **Approve**, otherwise, they select **Deny**.
 
-:::image type="content" source="../media/3-microsoft-authenticator-app-approval-request.png" alt-text="Screen Capture of Microsoft authenticator app approval request":::
+:::image type="content" source="../media/3-microsoft-authenticator-app-approval-request.png" alt-text="Screen capture of Microsoft authenticator app approval request.":::
 
 The Authenticator app can also be used as a software token to generate an OATH verification code. After entering your username and password, you enter the code provided by the Authenticator app into the sign-in interface. The OATH verification code provides a second form of authentication for SSPR or MFA.
 
