@@ -2,7 +2,7 @@ Multifactor authentication is a process in which users are prompted during the s
 
 Multifactor authentication dramatically improves the security of an identity, while still being simple for users. The extra authentication factor must be something that's difficult for an attacker to obtain or duplicate.
 
-Microsoft Entra ID multifactor Authentication works by requiring:
+Microsoft Entra multifactor Authentication works by requiring:
 
 - **Something you know** – typically a password or PIN **and**
 - **Something you have** – such as a trusted device that's not easily duplicated, like a phone or hardware key **or**

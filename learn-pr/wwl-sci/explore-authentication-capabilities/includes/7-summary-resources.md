@@ -1,7 +1,7 @@
 
 In this module, you've seen why passwords are a problematic form of authentication. You've learned about the different types of authentication that can be used with Microsoft Entra ID, including passwordless authentication with Windows Hello for Business and the Microsoft Authenticator app. You've learned about multifactor authentication.
 
-You've learned about the benefits of allowing users to reset their own passwords with self-service password reset and how Microsoft Entra ID Password Protection mitigates against the inherent risks associated with passwords.
+You've learned about the benefits of allowing users to reset their own passwords with self-service password reset and how Microsoft Entra Password Protection mitigates against the inherent risks associated with passwords.
 
 Now that you've completed this module, you can:
 
