@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-compare-models-azure-machine-learning.exercise-explore-responsible-dashboard
+title: Exercise - Explore the Responsible AI dashboard
+metadata:
+  title: Exercise - Explore the Responsible AI dashboard
+  description: "Learn how to create and explore the Responsible AI dashboard in Azure Machine Learning."
+  ms.date: 09/06/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-explore-responsible-dashboard.md)]
