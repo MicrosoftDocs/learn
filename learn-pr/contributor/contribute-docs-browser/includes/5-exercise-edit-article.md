@@ -29,7 +29,7 @@ Let’s practice the contribution workflow. In this exercise, you’ll make a sm
 1. Select **Propose changes**. 
 1. On the **Comparing changes** page, verify that the **base** says `main`. This means that your changes will be pulled into the main branch in the live repository. 
 
-    :::image type="content" source="../media/exercise-comparing-changes-patch.png" alt-text="Screenshot of the page to verify that the Base is Main, meaning that changes will be merged to the main branch. ":::
+    :::image type="content" source="../media/exercise-compare-changes-patch.png" alt-text="Screenshot of the page to verify that the Base is Main, meaning that changes will be merged to the main branch. ":::
 
     > [!NOTE]
     > If you don't see the `base repository` and `head repository` options on this page, select **compare across forks**. This will display the comparison options needed for this step.
