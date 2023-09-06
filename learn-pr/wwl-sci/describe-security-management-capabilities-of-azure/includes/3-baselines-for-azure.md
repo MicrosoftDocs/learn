@@ -1,5 +1,5 @@
 
-Microsoft Defender for Cloud enables organizations to manage the security of their resources and workloads in the cloud and on-premises and improve their overall security posture. It does this through the use of policy definitions and security initiatives, so its important to understand these terms.
+Microsoft Defender for Cloud enables organizations to manage the security of their resources and workloads in the cloud and on-premises and improve their overall security posture. It does this by using policy definitions and security initiatives, so it's important to understand these terms.
 
 - An Azure Policy definition, created in Azure policy, is a rule about specific security conditions that you want controlled. Azure policy supports built-in definitions but you can also create your own custom policy definitions.
 
@@ -9,7 +9,7 @@ Microsoft Defender for Cloud enables organizations to manage the security of the
 
 Microsoft Defender for Cloud applies security initiatives to your subscriptions. These initiatives contain one or more security policies. Each of those policies results in a security recommendation for improving your security posture.
 
-Security administrators can build their own custom security initiatives in Microsoft Defender for Cloud, but there is also a default, built-in security initiative named 'Microsoft cloud security benchmark' that is automatically assigned when you enable Microsoft Defender for Cloud on your subscription.
+Security administrators can build their own custom security initiatives in Microsoft Defender for Cloud, but there's also a default, built-in security initiative named 'Microsoft cloud security benchmark' that is automatically assigned when you enable Microsoft Defender for Cloud on your subscription.
 
 ### Microsoft cloud security benchmark
 
@@ -20,7 +20,7 @@ The best way to understand the Microsoft cloud security benchmark is to view it 
 - Control domain - A control is a high-level description of a feature or activity that needs to be addressed and isn't specific to a technology or implementation. MCSB control domains include network security, data protection, identity management, privileged access, incident response, endpoint security to name just a few.
 - Mapping to industry frameworks - The recommendations included in the MCSB map to existing industry frameworks, such as the Center for Internet Security (CIS), the National Institute of Standards and Technology (NIST), and the Payment Card Industry Data Security Standards (PCI DSS) frameworks. This makes security and compliance easier for customer applications running on Azure services.
 - Recommendation - For each control domain area there can be many distinct recommendations. For example, the "Network Security" control domain in MCSB v1 has 10 distinct recommendations identified as NS-1 through NS-10; in which the first recommendation identified as NS-1 is to establish network segmentation boundaries.
-- Azure Guidance - Azure Guidance is focused on the "how" and it elaborates on the relevant technical features and ways to implement the controls in Azure.  In the example of NS-1, the Azure guidance includes information regarding creating a virtual network (VNet), using network security groups (NSG), and using an application security group (ASG).
+- Azure Guidance - Azure Guidance is focused on the "how" and it elaborates on the relevant technical features and ways to implement the controls in Azure.  In the example of NS-1, the Azure guidance includes information regarding creating a virtual network, using network security groups (NSG), and using an application security group (ASG).
 - AWS Guidance - The AWS guidance is  focused on the "how" specific to AWS, explaining the AWS technical features and implementation basics.
 
 The MCSB also includes links to information on implementation that relate to the Azure and AWS guidance, information about security functions at the customer organization who may be accountable, responsible, or consulted for the respective control, and more.  An excerpt from the Microsoft cloud security benchmark version 1 (MCSB v1) and is shown as an example of the type of the content that is included in the MCSB. The image isn't intended to show the complete text for any of the line items.
