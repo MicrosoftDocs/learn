@@ -10,7 +10,7 @@ In this module, we'll introduce you to ARM template structure. You'll also pract
 
 In this module, you will:
 
-- Implement an JSON ARM template by using Visual Studio Code.
+- Implement a JSON ARM template by using Visual Studio Code.
 - Declare resources and add flexibility to your template by adding parameters and outputs.
 
 ## Prerequisites
