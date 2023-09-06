@@ -77,4 +77,4 @@ X.509 certificates, which are part of the public key infrastructure (PKI), are d
 ### Primary and secondary authentication
 Some authentication methods can be used as the primary factor when you sign in to an application or device.  Other authentication methods are only available as a secondary factor when you use Microsoft Entra Multifactor Authentication or SSPR.  While that information is called-out in the text that describes each authentication method, the following table summarizes when an authentication method can be used during a sign-in event.
 
-:::image type="content" source="../media/primary-secondary-authentication-v2-inline.png" lightbox="../media/primary-secondary-authentication-v2-extended.png" alt-text="Screen capture of a table that summarizes if authentication method is used for primary and/or secondary authentications.":::
+:::image type="content" source="../media/primary-secondary-authentication-v2-inline.png" lightbox="../media/primary-secondary-authentication-v2-expanded.png" alt-text="Screen capture of a table that summarizes if authentication method is used for primary and/or secondary authentications.":::
