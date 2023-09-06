@@ -1,3 +1,3 @@
 When you train a machine learning model, you may experiment with multiple models to find the one that best fits your data. To compare and evaluate models, you can review relevant performance metrics. Next to the performance metrics, you should also review whether your models conform to **responsible Artificial Intelligence (AI)** principles. Responsible AI is an approach to developing, assessing, and deploying models in a safe, trustworthy, and ethical way.
 
-To help you with implementing responsible AI, Azure Machine Learning offers the **Responsible AI dashboard.** You can create and customize the Responsible AI dashboard to explore your data and model.
+To help you with implementing responsible AI, Azure Machine Learning offers the **Responsible AI dashboard**. You can create and customize the Responsible AI dashboard to explore your data and model.

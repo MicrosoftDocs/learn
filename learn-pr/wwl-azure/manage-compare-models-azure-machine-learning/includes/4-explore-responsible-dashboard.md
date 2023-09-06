@@ -47,7 +47,7 @@ You can choose to explore counterfactuals *what-if* examples by selecting a data
 
 ### Explore causal analysis
 
-Explanations and counterfactuals help you to understand the model's predictions and the affects of features on the predictions. Though model interpretability may already be a goal by itself, you may also need more information to help you improve decision-making.
+Explanations and counterfactuals help you to understand the model's predictions and the effects of features on the predictions. Though model interpretability may already be a goal by itself, you may also need more information to help you improve decision-making.
 
 **Causal analysis** uses statistical techniques to estimate the average effect of a feature on a desired prediction. It analyzes how certain interventions or treatments may result in a better outcome, across a population or for a specific individual.
 

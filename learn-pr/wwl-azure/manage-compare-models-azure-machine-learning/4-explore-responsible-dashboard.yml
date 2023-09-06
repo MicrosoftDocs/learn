@@ -3,8 +3,8 @@ uid: learn.wwl.manage-compare-models-azure-machine-learning.explore-responsible-
 title: Evaluate the Responsible AI dashboard
 metadata:
   title: Evaluate the Responsible AI dashboard
-  description: "Evaluate the Responsible AI dashboard"
-  ms.date: 09/05/2023
+  description: "Explore error analysis, explanations, counterfactuals, and causal analysis in the Responsible AI dashboard."
+  ms.date: 09/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial

@@ -18,7 +18,7 @@ To create a Responsible AI (RAI) dashboard, you need to create a **pipeline** by
 The available tool components and the insights you can use are:
 
 - `Add Explanation to RAI Insights dashboard`: Interpret models by generating explanations. Explanations show how much features influence the prediction.
-- `Add Causal to RAI Insights dashboard`": Use historical data to view the causal effects of features on outcomes.
+- `Add Causal to RAI Insights dashboard`: Use historical data to view the causal effects of features on outcomes.
 - `Add Counterfactuals to RAI Insights dashboard`: Explore how a change in input would change the model's output.
 - `Add Error Analysis to RAI Insights dashboard`: Explore the distribution of your data and identify erroneous subgroups of data.
 

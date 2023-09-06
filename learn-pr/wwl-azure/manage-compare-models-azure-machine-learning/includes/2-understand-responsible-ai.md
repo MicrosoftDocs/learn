@@ -2,7 +2,7 @@ As a data scientist, you may train a machine learning model to predict whether s
 
 Whatever you use a model for, you should consider the **Responsible Artificial Intelligence** (**Responsible AI**) principles. Depending on the use case, you may focus on specific principles. Nevertheless, it's a best practice to consider all principles to ensure you're addressing any issues the model may have.
 
-Microsoft has listed six Responsible AI principles:
+Microsoft has listed five Responsible AI principles:
 
 - **Fairness and inclusiveness**: Models should treat everyone fairly and avoid different treatment for similar groups.
 - **Reliability and safety**: Models should be reliable, safe, and consistent. You want a model to operate as intended, handle unexpected situations well, and resist harmful manipulation.
