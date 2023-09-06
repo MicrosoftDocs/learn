@@ -3,7 +3,7 @@ uid: learn.wwl.implement-http-operations-asp-razor
 metadata:
   title: Implement HTTP operations in ASP.NET Razor Pages
   description: "Learn how to implement HTTP clients and perform HTTP operations in ASP.NET Core Razor Pages."
-  ms.date: 08/29/2023
+  ms.date: 09/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -21,6 +21,7 @@ prerequisites: |
   *   Experience writing C# at an intermediate level
   *   Knowledge of RESTful services and HTTP action verbs
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - intermediate
 roles:
