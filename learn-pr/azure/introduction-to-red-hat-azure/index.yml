@@ -27,7 +27,7 @@ roles:
   - developer
 products:
   - azure
-  - azure-linux-vm
+  - azure-virtual-machines
   - azure-redhat-openshift
 subjects:
 - cloud-computing
