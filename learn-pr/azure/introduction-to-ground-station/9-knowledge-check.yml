@@ -15,10 +15,10 @@ quiz:
   questions:
   - content: Which of the following is **not** a key benefit of Azure Orbital Ground Station?
     choices:
-    - content: Azure Orbital Ground Station allows satellite operators to move away from the traditional CAPEX (capital expense) model and adopt an OPEX (operating expense) model. So satellite operators only pay for what they use when downlinking data from satellites to the Microsoft ground station network and storing earth observation data in Azure.
+    - content: Azure Orbital Ground Station allows satellite operators to move away from the traditional CAPEX (capital expense) model and adopt an OPEX (operating expense) model, so satellite operators only pay for what they use when downlinking data from satellites to the Microsoft ground-station network and storing earth observation data in Azure.
       isCorrect: false
       explanation: "**Incorrect**: The OPEX model is a key benefit of AO Ground Station."
-    - content: Microsoft has a partner-centric approach. When satellite operators use Azure Orbital Ground Station, they gain access to a global network of ground stations owned by Microsoft and industry leaders KSAT, USEI, and Viasat RTE. In addition to ground station partners, there's a broader community of Microsoft space partners bringing their expertise and solutions to Azure Space.
+    - content: Microsoft has a partner-centric approach. When satellite operators use Azure Orbital Ground Station, they gain access to a global network of ground stations owned by Microsoft and industry leaders KSAT, USEI, and Viasat RTE. In addition to ground-station partners, there's a broader community of Microsoft space partners bringing their expertise and solutions to Azure Space.
       isCorrect: false
       explanation: "**Incorrect**: The partnership approach is a key benefit of AO Ground Station."
     - content: Azure Orbital Ground Station allows satellite operators to use powerful AI and ML tools in Azure to apply to earth observation data for data-driven decision making.
@@ -29,16 +29,16 @@ quiz:
       explanation: "**Correct**: While AO Ground Station makes a wide variety of use cases possible, Microsoft and the Azure Space Community aren't incubating or funding these applications."
   - content: What tools would a satellite operator use to downlink data then store and process it in Azure?
     choices:
-    - content: Microsoft’s satellite, the satellite operator’s data-processing tools, the satellite operator’s ground station network, Microsoft’s Azure Orbital portal
+    - content: Microsoft’s satellite, the satellite operator’s data-processing tools, the satellite operator’s ground-station network, Microsoft’s Azure Orbital portal
       isCorrect: false
-      explanation: "**Incorrect**: Satellite operators use their own satellites and Microsoft provides access to Azure Orbital’s ground station network."
-    - content: The satellite operator’s satellite, the satellite operator’s data-processing tools, Microsoft’s ground station network, Microsoft’s Azure Orbital portal
+      explanation: "**Incorrect**: Satellite operators use their own satellites and Microsoft provides access to Azure Orbital’s ground-station network."
+    - content: The satellite operator’s satellite, the satellite operator’s data-processing tools, Microsoft’s ground-station network, Microsoft’s Azure Orbital portal
       isCorrect: true
-      explanation: "**Correct**: Satellite operators bring their own constellations and data-processing tools. Microsoft provides the ground station infrastructure and portal for downlinking and storing data."
-    - content: The satellite operator’s satellite, the satellite operator’s data-processing tools, the satellite operator’s ground station network, Microsoft’s Azure Orbital portal
+      explanation: "**Correct**: Satellite operators bring their own constellations and data-processing tools. Microsoft provides the ground-station infrastructure and portal for downlinking and storing data."
+    - content: The satellite operator’s satellite, the satellite operator’s data-processing tools, the satellite operator’s ground-station network, Microsoft’s Azure Orbital portal
       isCorrect: false
-      explanation: "**Incorrect**: Microsoft provides the global ground station network, not the satellite operator."
-    - content: The satellite operator’s satellite, Microsoft’s data-processing tools, Microsoft’s ground station network, Microsoft’s Azure Orbital portal
+      explanation: "**Incorrect**: Microsoft provides the global ground-station network, not the satellite operator."
+    - content: The satellite operator’s satellite, Microsoft’s data-processing tools, Microsoft’s ground-station network, Microsoft’s Azure Orbital portal
       isCorrect: false
       explanation: "**Incorrect**: Every satellite operator has unique data-processing tools; therefore, Microsoft doesn't provide the processing tools."
   - content: What is the best definition for processing data?
@@ -54,7 +54,7 @@ quiz:
       explanation: "**Incorrect**: This is the definition for Level 3 data, not for processing data."
     - content: Transforming data from unusable, demodulated data into an analysis-ready data set
       isCorrect: true
-      explanation: "**Correct**: The above accurately describes processing data."
+      explanation: "**Correct**: The preceding accurately describes processing data."
   - content: What industries can unlock insights from earth observation data once it has been processed and analyzed?
     choices:
     - content: Satellite operators

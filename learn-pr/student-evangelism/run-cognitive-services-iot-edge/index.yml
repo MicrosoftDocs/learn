@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.oxford.run-cognitive-services-iot-edge
 metadata:
-  title: "Run Cognitive Services on IoT Edge"
-  description: "University of Oxford"
+  title: "Run Azure AI services on IoT Edge"
+  description: Implement a cognitive service for performing language detection on an IoT Edge device.
   ms.date: 6/12/2020
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
   ms.service: iot-edge
-title: "Run Cognitive Services on IoT Edge"
+title: "Run Azure AI services on IoT Edge"
 summary: "Implement a cognitive service for performing language detection on an IoT Edge device. Describe the components and steps for implementing a cognitive service on an IoT Edge device."
 abstract: |
     In this module, you will:
