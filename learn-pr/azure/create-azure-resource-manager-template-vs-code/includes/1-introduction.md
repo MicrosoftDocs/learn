@@ -20,5 +20,5 @@ In this module, you will:
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
 - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally
 - Either:
-  - The latest [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest) tools installed locally
-  - The latest [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0) installed locally
+  - The latest [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools installed locally
+  - The latest [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true) installed locally
