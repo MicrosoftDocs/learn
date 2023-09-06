@@ -27,7 +27,7 @@ Validation processes vary depending on the scope of proposed changes and the rul
 - **Staging**: The article pages affected by your changes are automatically deployed to a staging environment for review upon successful validation and build. Preview URLs appear in a PR comment.
 - **Auto-merge**: The PR might be automatically merged if it passes validation testing and certain criteria. In this case, you don't need to do anything else.
 
-## Review and sign-off
+## Review and sign off
 
 You’re almost there! After all PR processing is completed, it’s best practice to review the results (for example, PR comments, preview URLs) to determine if more changes are required before you sign off for merging. If a PR reviewer has reviewed your PR, they can also provide feedback via comments if there are outstanding issues or questions preventing the merge.
 
