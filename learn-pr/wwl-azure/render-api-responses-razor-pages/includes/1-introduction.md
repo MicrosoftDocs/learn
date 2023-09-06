@@ -2,5 +2,6 @@ Razor Pages is a page-based programming model that makes it easy to build dynami
 
 After completing this module, you'll be able to:
 
+* Combine HTML and C# to define dynamic page rendering logic 
 * Render API responses in Razor Pages
 * Create pages that perform HTTP operations
