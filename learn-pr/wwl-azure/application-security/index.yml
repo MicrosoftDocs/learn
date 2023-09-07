@@ -30,7 +30,6 @@ products:
 - azure-web-apps
 - ms-graph
 - microsoft-graph-permissions-api
-- microsoft-identity-platform
 subjects:
 - cloud-security
 units:
