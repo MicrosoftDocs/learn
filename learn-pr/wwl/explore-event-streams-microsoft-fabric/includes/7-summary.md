@@ -1,7 +1,7 @@
 
 
 
-This Microsoft training module explores the use of eventstreams in Azure Service Fabric. It covers the basics of eventstreams, how to create and use them, and how to handle errors. The module also includes a hands-on lab where learners can practice creating and using eventstreams in a sample application.
+This Microsoft training module explores the use of eventstreams in Microsoft Fabric. It covers the basics of eventstreams, how to create and use them, and how to handle errors. The module also includes a hands-on lab where learners can practice creating and using eventstreams in a sample application.
 
 Key points:
 
