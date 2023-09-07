@@ -13668,12 +13668,12 @@
     {
       "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/2-describe-what-azure-active-directory.md",
       "redirect_url": "/training/modules/explore-basic-services-identity-types/2-describe-azure-active-directory",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/6-describe-concept-of-hybrid-identities.md",
       "redirect_url": "/training/modules/explore-basic-services-identity-types/6-describe-concept-of-hybrid-identity",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-sci/explore-access-management-capabilities/2-describe-conditional-access-its-benefits.md",
@@ -26207,6 +26207,31 @@
       "source_path": "learn-pr/wwl/get-started-lakehouses/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-lakehouses/7-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/3-describe-available-editions.md",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/4-describe-identity-types.md",
+      "redirect_url": "/training/modules/explore-basic-services-identity-types/3-describe-identity-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/6-describe-concept-of-hybrid-identity.md",
+      "redirect_url": "/training/modules/explore-basic-services-identity-types/4-describe-concept-of-hybrid-identity",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/7-knowledge-check.md",
+      "redirect_url": "/training/modules/explore-basic-services-identity-types/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/8-summary-resources.md",
+      "redirect_url": "/training/modules/explore-basic-services-identity-types/7-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
