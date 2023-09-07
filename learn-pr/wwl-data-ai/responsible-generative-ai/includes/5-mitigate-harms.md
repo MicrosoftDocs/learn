@@ -6,8 +6,8 @@ Mitigation of potential harms in a generative AI solution involves a layered app
 
 1. **Model**
 1. **Safety System**
-1. **Application**
-1. **Positioning**
+1. **Metaprompt and grounding**
+1. **User experience**
 
 ## 1: The *model* layer
 
