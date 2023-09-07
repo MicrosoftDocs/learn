@@ -50,8 +50,8 @@ First, follow the steps in [Initializing your project and first application](/tr
 
 2) Download and **import** the following Unity custom packages **in the order they are listed**:
 
-    * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v3.0.0-pre.18/AzureStorageForUnity.unitypackage)
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureCloudServices.3.0.0-pre.18](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v3.0.0-pre.18/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureCloudServices.3.0.0-pre.18.unitypackage)
+    * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v3.0.0/AzureStorageForUnity.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureCloudServices.3.0.0](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureCloudServices.3.0.0.unitypackage)
 
     After you have imported the tutorial assets your Project window should look similar to this:
 

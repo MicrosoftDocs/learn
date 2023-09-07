@@ -1,5 +1,5 @@
-Download and import the [MRTK.HoloLens2.Unity.Tutorials.Assets.PCHolographicRemoting.3.0.0-pre.18.unitypackage
-](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.PCHolographicRemoting.3.0.0-pre.18.unitypackage
+Download and import the [MRTK.HoloLens2.Unity.Tutorials.Assets.PCHolographicRemoting.3.0.0.unitypackage
+](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.PCHolographicRemoting.3.0.0.unitypackage
 ).
 
 >[!Tip]

@@ -12,8 +12,8 @@
 
 2. Download and import the following Unity custom packages in this order:
 
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0-pre.18.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v3.0.0-pre.18/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0-pre.18.unitypackage)
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.3.0.0-pre.18.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v3.0.0-pre.18/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.3.0.0-pre.18.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.3.0.0.unitypackage)
 
     After you've imported the tutorial assets, your **Project** pane should look similar to this image:
 
