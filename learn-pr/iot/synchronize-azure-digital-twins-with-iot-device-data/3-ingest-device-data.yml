@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.synchronize-azure-digital-twins-with-iot-device-data.ingest-device-data
+title: Ingest device data with an Azure function
+sandbox: true
+interactive: bash
+metadata:
+  unitType: exercise
+  title: Ingest device data with an Azure function
+  description: Create an Azure function to read data from an IoT hub device and update the corresponding twins in Azure Digital Twins.
+  ms.date: 09/07/2023
+  author: baanders
+  ms.author: baanders
+  ms.reviewer: taanderson
+  manager: lizross
+  ms.topic: module-standard-task-based
+  ms.prod: learning-azure
+durationInMinutes: 30
+content: |
+  [!include[](includes/3-ingest-device-data.md)]

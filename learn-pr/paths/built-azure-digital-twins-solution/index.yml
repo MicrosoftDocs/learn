@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.iot.build-azure-digital-twins-solution
+title: Build out an Azure Digital Twins solution
+metadata:
+  title: Build out an Azure Digital Twins solution
+  description: Learn how to build an IoT solution with Azure Digital Twins, a platform for digitally representing physical connected environments.
+  ms.date: 09/07/2023
+  author: baanders
+  ms.author: baanders
+  ms.topic: training-path
+  ms.prod: azure-digital-twins
+summary: >
+  Discover how PWABuilder can streamline Progressive Web App (PWA) creation and deployment to save both time and resources for your organization.  Learn how to efficiently integrate PWA features like push notifications and background sync into projects, enhance your PWA testing skills, gain insights into compliance, and become an expert in packaging and submitting your app to the Microsoft Store using Microsoft Partner Center.
+prerequisites: None
+iconUrl: /training/achievements/built-out-an-azure-digital-twins-solution.svg
+levels:
+  - beginner
+  - intermediate
+roles:
+- service-adoption-specialist
+- administrator
+- data-engineer
+- developer
+- solution-architect
+products: 
+  - azure
+  - azure-digital-twins
+modules:
+  - learn.introduction-to-azure-digital-twins
+  - learn.explore-azure-digital-twins-api-for-creating-a-graph
+  - learn.synchronize-azure-digital-twins-with-iot-device-data
+trophy:
+  uid: learn.iot.build-azure-digital-twins-solution.trophy

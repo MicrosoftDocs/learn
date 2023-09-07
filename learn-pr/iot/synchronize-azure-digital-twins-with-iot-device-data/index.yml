@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.synchronize-azure-digital-twins-with-iot-device-data
+metadata:
+  title: Synchronize Azure Digital Twins with IoT device data
+  description: Set up data flow from a simulated IoT device into Azure Digital Twins. 
+  ms.date: 09/07/2023
+  author: baanders
+  ms.author: baanders
+  ms.reviewer: taanderson
+  manager: lizross
+  ms.topic: module-standard-task-based
+  ms.service: digital-twins
+title: Synchronize Azure Digital Twins with IoT device data
+summary: >
+  Set up an automatic data flow from a simulated IoT Hub device into Azure Digital Twins. Combine this data with business logic to update digital twin properties.
+abstract: | 
+  By the end of this module, you'll be able to...
+  - Identify which Azure services are used to carry IoT data to Azure Digital Twins
+  - Describe the flow of data from a connected IoT device through supportive Azure services into Azure Digital Twins
+  - Create Azure functions to define how twins should be updated, based on device data and business logic.
+prerequisites: |
+  - Understanding of how models, twins, and relationships are used in an Azure Digital Twins solution
+  - Experience with programming concepts at the intermediate level
+  - [.NET Core](https://dotnet.microsoft.com/download/dotnet)
+iconUrl: /training/achievements/synchronize-azure-digital-twins-with-iot-device-data.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles: 
+- service-adoption-specialist
+- administrator
+- data-engineer
+- developer
+- solution-architect
+products:
+  - azure
+  - azure-digital-twins
+subjects:
+  - iot
+  - cloud-computing
+units:
+- learn.synchronize-azure-digital-twins-with-iot-device-data.introduction
+- learn.synchronize-azure-digital-twins-with-iot-device-data.understand-data-flow-and-required-resources
+- learn.synchronize-azure-digital-twins-with-iot-device-data.ingest-device-data
+- learn.synchronize-azure-digital-twins-with-iot-device-data.propagate-data-through-digital-twin-graph
+- learn.synchronize-azure-digital-twins-with-iot-device-data.summary
+badge:
+  uid: learn.synchronize-azure-digital-twins-with-iot-device-data.badge

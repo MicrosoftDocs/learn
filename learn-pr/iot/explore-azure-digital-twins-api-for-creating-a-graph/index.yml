@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.explore-azure-digital-twins-api-for-creating-a-graph
+metadata:
+  title: Explore the Azure Digital Twins API for creating a graph
+  description: Try out the Azure Digital Twins APIs and use them to create a graph.
+  ms.date: 09/07/2023
+  author: baanders
+  ms.author: baanders
+  ms.reviewer: taanderson
+  manager: lizross
+  ms.topic: module-standard-task-based
+  ms.service: digital-twins
+title: Explore the Azure Digital Twins API for creating a graph
+summary: >
+  Use the Azure Digital Twins APIs to create models, twins, and relationships, gather information about the elements you've created, query the graph, and add endpoints and event routes.
+abstract: | 
+  By the end of this module, you'll be able to...
+  - Set up Postman structure and permissions to manage Azure Digital Twins API requests.
+  - Identify key Azure Digital Twins actions that can be performed with the APIs.
+  - Construct Azure Digital Twins API requests for import jobs, models, twins, queries, endpoints, and event routes.
+prerequisites: |
+  - Understanding of how models, twins, and relationships are used in an Azure Digital Twins solution
+  - Knowledge of HTTP, REST services, and APIs at the beginner level
+  - Access to the [Postman REST client](https://www.postman.com/) (either in the browser or downloaded to your local machine)
+iconUrl: /training/achievements/explore-azure-digital-twins-api-for-creating-a-graph.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles: 
+- service-adoption-specialist
+- administrator
+- data-engineer
+- developer
+- solution-architect
+products:
+  - azure
+  - azure-digital-twins
+subjects:
+  - iot
+  - cloud-computing
+units:
+- learn.explore-azure-digital-twins-api-for-creating-a-graph.introduction
+- learn.explore-azure-digital-twins-api-for-creating-a-graph.configure-postman-and-api-collections
+- learn.explore-azure-digital-twins-api-for-creating-a-graph.upload-models-twins-and-graph-in-bulk
+- learn.explore-azure-digital-twins-api-for-creating-a-graph.update-graph-elements
+- learn.explore-azure-digital-twins-api-for-creating-a-graph.create-endpoints 
+- learn.explore-azure-digital-twins-api-for-creating-a-graph.create-event-routes
+- learn.explore-azure-digital-twins-api-for-creating-a-graph.query-graph
+- learn.explore-azure-digital-twins-api-for-creating-a-graph.summary
+badge:
+  uid: learn.explore-azure-digital-twins-api-for-creating-a-graph.badge

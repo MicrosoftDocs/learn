@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-digital-twins-api-for-creating-a-graph.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Learn about the scenario and main goal of this module.
+  ms.date: 09/07/2023
+  author: baanders
+  ms.author: baanders
+  ms.reviewer: taanderson
+  manager: lizross
+  ms.topic: module-standard-task-based
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
