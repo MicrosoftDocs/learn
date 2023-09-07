@@ -26,7 +26,7 @@ The certification, regulations, and standards section of the STP provides a weal
 
 :::image type="content" source="../media/stp-certifications-standards.png" alt-text="Screen shot of the tiles available in the certifications, regulations, and standards section of the Service Trust Portal home page.":::
 
-Selecting a tile will provide a list of available documents, including a description and when it was last updated. The image below shows some of the documents available by selecting the ISO/IEC tile.
+Selecting a tile will provide a list of available documents, including a description and when it was last updated. The screen shot that follows shows some of the documents available by selecting the ISO/IEC tile.
 
 :::image type="content" source="../media/stp-iso-iec.png" alt-text="Screen shot of the list of documents available by selecting the ISO/IEC tile.":::
 
@@ -68,7 +68,7 @@ If a document is part of a series, you'll be subscribed to the series, and will 
 :::image type="content" source="../media/stp-my-library.png" alt-text="Screen shot of the documents listed in the My Library page.":::
 
 ### Interactive Guide
-In this interactive guide, you'll explore a few of the menu options available on the Service Trust Portal. Select the image below to get started and follow the prompts on the screen.
+In this interactive guide, you'll explore a few of the menu options available on the Service Trust Portal. Select the image that follows to get started then follow the prompts on the screen.
 
 > [!NOTE]
 > The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the interactive guide may not reflect the most recent updates.
