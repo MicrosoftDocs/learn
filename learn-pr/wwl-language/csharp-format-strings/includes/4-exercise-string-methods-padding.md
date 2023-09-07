@@ -35,13 +35,9 @@ The `PadLeft()` method adds blank spaces to the left-hand side of the string so 
    A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your TestProject folder location.
 
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
-
-   > [!NOTE]   > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
-
+   > [!NOTE]      > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
    When you run the code, you observe four characters prefixed to the left of the string bring the length to 12 characters long.
-
    ```Output       Pad this   ```
-
 
 1. To add space or characters to the right side of your string, use the `PadRight()` method instead. 1. Update your code in the Visual Studio Code Editor as follows:
    ```csharp   Console.WriteLine(input.PadRight(12));   ```
