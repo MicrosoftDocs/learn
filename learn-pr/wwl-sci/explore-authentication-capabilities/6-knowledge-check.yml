@@ -17,23 +17,23 @@ quiz:
   questions:
   - content: "After hearing of a breach at a competitor, the security team wants to improve identity security within their organization. What should they implement to provide the greatest protection to user identities?"
     choices:
-    - content: "Multi-factor authentication."
+    - content: "Multifactor authentication."
       isCorrect: true
-      explanation: "Correct. Multi-factor authentication dramatically improves the security of an identity."
+      explanation: "Correct. Multifactor authentication dramatically improves the security of an identity."
     - content: "Require security questions for all sign-ins."
       isCorrect: false
       explanation: "Incorrect. Security questions can only be used during the self-service password reset (SSPR) process to confirm who you are. Security questions aren't used as an authentication method during a sign-in event."
     - content: "Require strong passwords for all identities."
       isCorrect: false
-      explanation: "Incorrect. Although strong passwords improve security, they're not as secure multi-factor authentication."
-  - content: "Which of the following additional forms of verification can be used with Azure AD Multi-Factor Authentication?"
+      explanation: "Incorrect. Although strong passwords improve security, they're not as secure multifactor authentication."
+  - content: "Which of the following additional forms of verification can be used with Microsoft Entra Multifactor Authentication?"
     choices:
     - content: "Microsoft Authenticator app, SMS, Voice call, FIDO2, and Windows Hello for Business"
       isCorrect: true
-      explanation: "Correct.  These are all valid forms of verification with multi-factor authentication."
+      explanation: "Correct.  These are all valid forms of verification with multifactor authentication."
     - content: "Security questions, SMS, Voice call, FIDO2, and Windows Hello for Business"
       isCorrect: false
-      explanation: "Incorrect.  Security questions aren't a valid form of verification with multi-factor authentication."
+      explanation: "Incorrect.  Security questions aren't a valid form of verification with multifactor authentication."
     - content: "Password spray, SMS, Voice call, FIDO2, and Windows Hello for Business"
       isCorrect: false
       explanation: "Correct.  Password spray isn't a form of verification, it's an identity based attack."
