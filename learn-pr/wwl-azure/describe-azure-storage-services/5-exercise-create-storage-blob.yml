@@ -8,9 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
 azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-create-storage-blob.md)]
-interactive: bash
