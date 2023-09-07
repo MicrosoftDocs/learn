@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/07/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/17-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How often should content from the [Learning Download Center](https://aka.ms/ldc) (LDC) be downloaded to ensure the most up-to-date-course materials are obtained?"
+    choices:
+    - content: "Every three years"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+    - content: "Quarterly"
+      isCorrect: true
+      explanation: "Feedback: Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course you know you have the most up-to-date materials."
+    - content: "Once a year"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+  - content: "What are the four types of compute targets that Azure Machine Learning supports?"
+    choices:
+    - content: "Common instance, compute cluster, Kubernetes cluster, and abstract compute"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. The four types of compute targets that Azure Machine Learning supports are compute instance, compute cluster, Kubernetes cluster, and attached compute."
+    - content: "Data instance, log cluster, Kubernetes cluster, and attached compute"
+      isCorrect: false
+      explanation: "Feedback: Incorrect: The four types of compute targets that Azure Machine Learning supports are compute instance, compute cluster, Kubernetes cluster, and attached compute."
+    - content: "Compute instance, compute cluster, Kubernetes cluster, and attached compute"
+      isCorrect: true
+      explanation: "Feedback: Correct. The four types of compute targets that Azure Machine Learning supports are compute instance, compute cluster, Kubernetes cluster, and attached compute."
