@@ -1,4 +1,4 @@
-In this module, you've gained an insight into the core functionality of Microsoft Enta ID and the identity types supported. You also learned about the concept of a hybrid identity model, where all user identities are managed in your on-premises Active Directory Domain Services (AD DS) directory, and changes are synchronized to your Azure AD.
+In this module, you've gained an insight into the core functionality of Microsoft Entra ID and the identity types supported. You also learned about the concept of a hybrid identity model, where all user identities are managed in your on-premises Active Directory Domain Services (AD DS) directory, and changes are synchronized to your Azure AD.
 
 Now that you've completed this module, you'll be able to:
 

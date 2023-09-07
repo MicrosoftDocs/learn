@@ -6,7 +6,7 @@ When you ask the question, to what can I assign an identity in Microsoft Entra I
 - You can assign identities to physical devices, such as mobile phones, desktop computers, and IoT devices.
 - Lastly, you can assign identities to software-based objects, such as applications, virtual machines, services, and containers. These identities are referred to as workload identities.
 
-:::image type="content" source="../media/identity-types-inline.png" lightbox="../media/identity-types-expanded.png" alt-text="An image showing the categories of identity types. They consist of Workload identities, device identities, and human identities. Workload and device identities are grouped under machine identities.":::
+:::image type="content" source="../media/identity-types-inline.png" lightbox="../media/identity-types-expanded.png" alt-text="A block diagram showing the categories of identity types. The categories consist of Workload identities, device identities, and human identities. Workload and device identities are grouped under machine identities.":::
 
 In this unit, we consider each type of Microsoft Entra ID identity.
 
@@ -18,7 +18,7 @@ How the user authenticates is asked relative to the host organization’s Micros
 
 The user type property describes the user’s relationship to the organization or more specifically, the host organization’s tenancy. The user can be a guest or a member of the organization’s Microsoft Entra ID tenant. By default, guests of the organization have limited privileges in the organization’s directory, relative to members of the organization.
 
-:::image type="content" source="../media/entra-id-user-properties-v3-inline.png" lightbox="../media/entra-id-user-properties-v2-expanded.png" alt-text="An image of a four by four matrix showing the types of user identities supported based on whether they're a guest or member user.  The matrix also shows type of user based on whether they use internal or external authentication.":::
+:::image type="content" source="../media/entra-id-user-properties-v3-inline.png" lightbox="../media/entra-id-user-properties-v2-expanded.png" alt-text="A four by four matrix showing the types of user identities supported based on whether they're a guest or member user. The matrix also shows type of user based on whether they use internal or external authentication.":::
 
 - Internal member: These users are typically considered employees of your organization. The user authenticates internally via their organization’s Microsoft Entra ID, and the user object created in the resource Microsoft Entra ID directory has a UserType of Member.
 - External guest: External users or guests, including consultants, vendors, and partners, typically fall into this category. The user authenticates using an external Microsoft Entra ID account or an external identity provider (such as a social identity). The user object created in the resource Microsoft Entra ID directory has a UserType of Guest, giving them limited, guest-level permissions.
@@ -29,18 +29,20 @@ External guests and external members are business-to-business (B2B) collaboratio
 
 In the following interactive guide, you'll add a new user to Microsoft Entra ID. Select the image that follows to get started and follow the prompts on the screen.
 
-[![Interactive guide](../media/entra-id-create-user.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/entra-id-add-user-v3/index.html?azure-portal=true)
+[![Select to launch the interactive guide to create a user in Microsoft Entra ID.](../media/entra-id-create-user.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/entra-id-add-user-v3/index.html?azure-portal=true)
 
 ### Workload identities
 
 A workload identity is an identity you assign to a software workload.  This enables the software workload to authenticate to and access other services and resources. This helps secure your workload. In Microsoft Entra, workload identities are applications, service principals, and managed identities.
 
 #### Applications and service principals
+
 A service principal is essentially, an identity for an application. For an application to delegate its identity and access functions to Microsoft Entra ID, the application must first be registered with Microsoft Entra ID to enable its integration.  Once an application is registered, a service principal is created in each Microsoft Entra ID tenant where the application is used. The service principal enables core features such as authentication and authorization of the application to resources that are secured by the Microsoft Entra ID tenant.
 
 For the service principals to be able to access resources secured by the Microsoft Entra ID tenant, application developers must manage and protect the credentials. If not done correctly, this can introduce security vulnerabilities. Managed identities help offload that responsibility from the developer.
 
 #### Managed identities
+
 Managed identities are a type of service principal that are automatically managed in Microsoft Entra ID and eliminate the need for developers to manage credentials. Managed identities provide an identity for applications to use when connecting to Azure resources that support Microsoft Entra ID authentication and can be used without any extra cost.
 
 :::image type="content" source="../media/managed-identities-inline.png" lightbox="../media/managed-identities-expanded.png" alt-text="A Diagram that shows how a developer may use managed identities to get access to resources from their code without managing credentials.":::
@@ -66,6 +68,7 @@ Registering and joining devices to Microsoft Entra ID gives users Single Sign-on
 IT admins can use tools like Microsoft Intune, a cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM), to control how an organization’s devices are used. For more information, see [Microsoft Intune](/mem/intune/fundamentals/what-is-intune).
 
 ### Groups
+
 In Microsoft Entra ID, if you have several identities with the same access needs, you can create a group. You use groups to give access permissions to all members of the group, instead of having to assign access rights individually. Limiting access to Microsoft Entra ID resources to only those identities who need access is one of the core security principles of Zero Trust.
 
 There are two group types:
