@@ -4,11 +4,10 @@ title: Explore and use curated environments
 metadata:
   title: Explore and use curated environments
   description: "Learn about curated environments in Azure Machine Learning and how to use them."
-  ms.date: 02/28/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/3-explore-use-curated-environments.md)]

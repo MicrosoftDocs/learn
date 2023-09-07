@@ -2,12 +2,11 @@
 uid: learn.wwl.work-environments-azure-machine-learning
 metadata:
   title: Work with environments in Azure Machine Learning
-  description: "Azure Machine Learning environments Python SDK v2"
-  ms.date: 02/28/2023
+  description: "Use Azure Machine Learning Python SDK v2 to work with environments"
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.service: machine-learning
 title: Work with environments in Azure Machine Learning
 summary: Learn how to use environments in Azure Machine Learning to run scripts on any compute target.
 abstract: |
@@ -16,7 +15,7 @@ abstract: |
   - Explore and use curated environments.
   - Create and use custom environments.
 prerequisites: ""
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/work-with-environments-in-azure-machine-learning.svg
 levels:
 - beginner
 roles:
