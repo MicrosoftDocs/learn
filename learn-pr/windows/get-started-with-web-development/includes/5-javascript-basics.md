@@ -2,19 +2,25 @@ JavaScript (or *ECMAScript*) is a programming language that helps you add intera
 
 For example, you can use JavaScript to define the behavior that will happen when a user selects a button; for example, open a pop-up window. Using JavaScript, you can add or remove content from a web page without reloading it.
 
-In this unit, you'll set up an example JavaScript file for your web page. You'll create a button to switch between light and dark themes. Then you'll attach the button to JavaScript code that performs the actual theme switching. Finally, you'll check the finished project using your browser's developer tools.
+In this unit, you set up an example JavaScript file for your web page. In it, you create a button to switch between light and dark themes. Then, you attach the button to JavaScript code that performs the actual theme switching. Finally, you check the finished project using your browser's developer tools.
 
 ## Link to JavaScript
 
-Like CSS, you could add JavaScript directly to the HTML file, but a recommended best practice is to save your JavaScript in a separate file. Adding your JavaScript code to a separate file makes it easier to reuse it across several web pages. For example, you could create a pop-up alert by adding `<script>alert('Hello World')</script>` anywhere within the body of your web pages; however, it's better to add your JavaScript code to a separate file that can be linked to every file that needs your custom functionality.
+Like CSS, you could add JavaScript directly to the HTML file, but a recommended best practice is to save your JavaScript in a separate file. Adding your JavaScript code to a separate file makes it easier to reuse it across several web pages. For example, you could create a pop-up alert by adding the following code anywhere within the body of your web pages:
 
-The HTML script tag `<script>` will let us link to an external JavaScript file, which is how you'll configure your web app in this exercise.
+```html
+<script>alert('Hello World')</script>
+ ```
+
+However, it's better to add your JavaScript code to a separate file that can be linked to every file that needs your custom functionality.
+
+The HTML script tag `<script>` lets us link to an external JavaScript file, which is how you configure your web app in this exercise.
 
 1. In **VS Code**, open your `index.html` file.
 
-1. On a new line before the closing `</body>` element, enter `script:src`, and then select <kbd>Enter</kbd>. The opening and closing tags for a script are added to your code.
+1. On a new line before the closing `</body>` element, enter `script:src`, and then select <kbd>Enter</kbd>. The opening and closing tags for a script element are added to your code.
 
-1. Modify the `<script>` element to load your `app.js` file as shown in the following example, and ensure that it's located after the closing `</ul>` element for the list.
+1. Modify the `<script>` element to load your `app.js` file as shown in the following example. Ensure that it's located after the closing `</ul>` element for the list.
 
     ```html
     ...
@@ -27,7 +33,7 @@ The HTML script tag `<script>` will let us link to an external JavaScript file, 
     ...
     ```
 
-The `<script>` element could be placed in the `<head>` or elsewhere in the `<body>`. However, putting `<script>` element at the end of the `<body>` section enables all the page content to display on the screen first, and then load the script.
+The `<script>` element could be placed in the `<head>` or elsewhere in the `<body>`. However, putting the `<script>` element at the end of the `<body>` section enables all the page content to display on the screen first, before the script is loaded.
 
 ## Add fault tolerance
 
@@ -38,13 +44,13 @@ The `<script>` element could be placed in the `<head>` or elsewhere in the `<bod
     <noscript>You need to enable JavaScript to view the full site.</noscript>
     ```
 
-   Adding the `<noscript>` element is an example of *fault tolerance* or *graceful degradation*. By using the `<noscript>` element, your code can detect and plan for when a feature isn't supported or available.
+   Adding the `<noscript>` element is an example of *fault tolerance* or *graceful degradation*. When you use the `<noscript>` element, your code can detect and plan for when a feature isn't supported or available.
 
 1. Save your changes with the keyboard shortcut <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
 
 ## Set strict mode
 
-JavaScript was designed to be easy to learn and allows certain mistakes to be made by the developer. For example, JavaScript does not throw an error when you use a misspelled variable, and instead creates a new global one. While having fewer errors is tempting when you start learning JavaScript, it can lead to writing code that is harder for browsers to optimize and harder for you to debug.
+JavaScript was designed to be easy to learn and allows certain mistakes to be made by the developer. For example, JavaScript doesn't throw an error when you use a misspelled variable, and instead creates a new global one. While having fewer errors is tempting when you start learning JavaScript, it can lead to writing code that is harder for browsers to optimize and harder for you to debug.
 
 Switch to strict mode to get more useful errors when you make mistakes.
 
@@ -56,7 +62,7 @@ Switch to strict mode to get more useful errors when you make mistakes.
 
 ## Add a button
 
-You need a way to let your users switch between the light and dark themes in your web page. In this exercise, you'll implement that functionality with an HTML `<button>` element.
+You need a way to let your users switch between the light and dark themes in your web page. In this exercise, you implement that functionality with an HTML `<button>` element.
 
 1. In your HTML file, add a `<button>` element. Put the button at the end of the list inside of a `<div>` element.
 
@@ -121,7 +127,7 @@ You need a way to let your users switch between the light and dark themes in you
 
 ## Add an event handler
 
-To make the button do something when you select it, you need an event handler in your JavaScript file. An event handler is a way to run a JavaScript function when an event happened on the page. For the button, let's add an event handler for the `click` event; the event handler function runs when the `click` event occurs.
+To make the button do something when you select it, you need an event handler in your JavaScript file. An event handler is a way to run a JavaScript function when an event happens on the page. For the button, let's add an event handler for the `click` event; the event handler function runs when the `click` event occurs.
 
 Before you can add the event handler, you need a reference to the button element.
 
@@ -133,7 +139,7 @@ Before you can add the event handler, you need a reference to the button element
 
     The `document.querySelector` function uses CSS selectors, just like the ones you used in your CSS file. `switcher` is now a reference to the button in the page.
 
-1. Next, add the event handler for the `click` event. In the following code, you add a listener for the `click` event and define an event handler function to be executed by the browser when the `click` event occurs.
+1. Next, add the event handler for the `click` event. In the following code, you add a listener for the `click` event and define an event handler function that's executed by the browser when the `click` event occurs.
 
     ```js
     switcher.addEventListener('click', function() {

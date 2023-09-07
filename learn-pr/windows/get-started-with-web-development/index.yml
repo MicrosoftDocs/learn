@@ -14,7 +14,7 @@ title: Get started with web development using Visual Studio Code
 summary: Practice the beginning steps of web development by creating a simple web project in Visual Studio Code that contains a web page, a CSS file, and a JavaScript file. Learn how to use developer tools in your browser to check your work.
 
 abstract: |
-  In this module, you'll practice how to:
+  In this module, you practice how to:
   - Create a basic web page using HTML
   - Apply styles to page elements using CSS
   - Create themes using CSS

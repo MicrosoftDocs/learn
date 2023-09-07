@@ -32,9 +32,9 @@ Visual Studio Code provides basic support for HTML programming out of the box. T
 
 There have been different versions of HTML. The *doctype* `<!DOCTYPE html>` indicates this HTML document contains HTML5 code.
 
-While we aren't going to delve deeply into the meaning of all the HTML elements, we'll point out a few important items. The `meta` tag indicates *metadata* information that won't typically be visible to the viewer unless they view the source code in their browser. Meta elements or tags provide descriptive information about the webpage. For example, they help search engines process which information in your webpages to return in search results.
+While we aren't going to delve deeply into the meaning of all the HTML elements, we'll point out a few important items. The `meta` tag indicates *metadata* information that isn't typically visible to the viewer unless they view the source code in their browser. Meta elements or tags provide descriptive information about the webpage. For example, they help search engines process which information in your webpages to return in search results.
 
-The *character set* (`charset`) for UTF-8 may seem insignificant, but is crucial for establishing how computers interpret characters. If the metadata for the character set is missing, that can lead to compromised security. There's quite a bit of history and technical information behind the charset attribute, but important takeaway from this exercise is that the **VS Code** boilerplate provides some sensible defaults.
+The *character set* (`charset`) for UTF-8 may seem insignificant, but is crucial for establishing how computers interpret characters. If the metadata for the character set is missing, that can lead to compromised security. There's quite a bit of history and technical information behind the charset attribute, but the important takeaway from this exercise is that the **VS Code** boilerplate provides some sensible defaults.
 
 ## Edit the head
 
