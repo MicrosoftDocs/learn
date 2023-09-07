@@ -26,6 +26,8 @@ Azure storage caching provides cache services for Azure Blob storage, Azure File
 
 Azure virtual machine disk caching is about optimizing read and write access to the virtual hard disk (VHD) files attached to Azure VMs. We'll focus on disk caching in this module.
 
+Disk caching isn't supported for Ultra Disks or Premium SSD v2, however they benefit from significantly lower latency, which addresses some of the same core problems as disk caching.
+
 ### Azure virtual machine disk types
 
 There are three types of disks used with Azure VMs:
