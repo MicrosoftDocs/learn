@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-permissions-management
+title: Describe Microsoft Entra Permissions Management
+metadata:
+  title: Describe Microsoft Entra Permissions Management
+  description: "Describe Microsoft Entra Permissions Management"
+  ms.date: 07/28/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 3
+content: |
+  [!include[](includes/5a-describe-entra-permissions-management.md)]
