@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-identity-types
-title: Describe Azure AD identity types
+title: Describe types of identities
 metadata:
-  title: Describe Azure AD identity types
-  description: "Describe Azure AD identity types"
-  ms.date: 08/03/2023
+  title: Describe types of identities
+  description: "Describe types of identities"
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-describe-identity-types.md)]
+  [!include[](includes/3-describe-identity-types.md)]
