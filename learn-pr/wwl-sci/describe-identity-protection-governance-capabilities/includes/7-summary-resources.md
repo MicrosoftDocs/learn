@@ -5,7 +5,7 @@ Now that you've completed this module, you'll be able to:
 
 - Describe the identity governance capabilities of Microsoft Entra.
 - Describe Privileged Identity Management (PIM).
-- Describe the capabilities of Microsoft Entra Identity Protection.
+- Describe the capabilities of Microsoft Entra ID Protection.
 - Describe permissions management.
 
 ### Learn more
