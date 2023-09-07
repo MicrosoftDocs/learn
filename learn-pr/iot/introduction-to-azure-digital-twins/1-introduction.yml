@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-azure-digital-twins.introduction
+uid: learn.iot.introduction-to-azure-digital-twins.introduction
 title: Introduction
 metadata:
   unitType: introduction
@@ -8,10 +8,7 @@ metadata:
   ms.date: 06/22/2023
   author: baanders
   ms.author: baanders
-  ms.reviewer: taanderson
-  manager: lizross
-  ms.topic: module-intro-to-product
-  ms.prod: learning-azure
+  ms.topic: training-unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

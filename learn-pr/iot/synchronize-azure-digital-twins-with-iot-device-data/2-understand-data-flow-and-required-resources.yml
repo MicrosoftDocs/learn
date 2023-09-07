@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.synchronize-azure-digital-twins-with-iot-device-data.understand-data-flow-and-required-resources
+uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data.understand-data-flow-and-required-resources
 title:  Understand data flow and required resources
 metadata:
   unitType: learning-content
@@ -8,10 +8,7 @@ metadata:
   ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
-  ms.reviewer: taanderson
-  manager: lizross
-  ms.topic: module-standard-task-based
-  ms.prod: learning-azure
+  ms.topic: training-unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-understand-data-flow-and-required-resources.md)]

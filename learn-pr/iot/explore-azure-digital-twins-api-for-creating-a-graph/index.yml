@@ -1,13 +1,11 @@
 ### YamlMime:Module
-uid: learn.explore-azure-digital-twins-api-for-creating-a-graph
+uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph
 metadata:
   title: Explore the Azure Digital Twins API for creating a graph
   description: Try out the Azure Digital Twins APIs and use them to create a graph.
   ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
-  ms.reviewer: taanderson
-  manager: lizross
   ms.topic: module-standard-task-based
   ms.service: digital-twins
 title: Explore the Azure Digital Twins API for creating a graph
@@ -39,13 +37,13 @@ subjects:
   - iot
   - cloud-computing
 units:
-- learn.explore-azure-digital-twins-api-for-creating-a-graph.introduction
-- learn.explore-azure-digital-twins-api-for-creating-a-graph.configure-postman-and-api-collections
-- learn.explore-azure-digital-twins-api-for-creating-a-graph.upload-models-twins-and-graph-in-bulk
-- learn.explore-azure-digital-twins-api-for-creating-a-graph.update-graph-elements
-- learn.explore-azure-digital-twins-api-for-creating-a-graph.create-endpoints 
-- learn.explore-azure-digital-twins-api-for-creating-a-graph.create-event-routes
-- learn.explore-azure-digital-twins-api-for-creating-a-graph.query-graph
-- learn.explore-azure-digital-twins-api-for-creating-a-graph.summary
+- learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.introduction
+- learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.configure-postman-and-api-collections
+- learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.upload-models-twins-and-graph-in-bulk
+- learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.update-graph-elements
+- learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.create-endpoints 
+- learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.create-event-routes
+- learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.query-graph
+- learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.summary
 badge:
-  uid: learn.explore-azure-digital-twins-api-for-creating-a-graph.badge
+  uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.badge

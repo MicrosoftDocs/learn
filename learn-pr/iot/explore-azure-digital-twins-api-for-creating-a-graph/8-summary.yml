@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.explore-azure-digital-twins-api-for-creating-a-graph.summary
+uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.summary
 title: Summary
 metadata:
   unitType: summary
@@ -8,10 +8,7 @@ metadata:
   ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
-  ms.reviewer: taanderson
-  manager: lizross
-  ms.topic: module-standard-task-based
-  ms.prod: learning-azure
+  ms.topic: training-unit
 durationInMinutes: 5
 content: |
   [!include[](includes/8-summary.md)]

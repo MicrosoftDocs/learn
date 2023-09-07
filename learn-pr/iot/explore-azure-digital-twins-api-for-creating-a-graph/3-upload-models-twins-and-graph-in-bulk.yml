@@ -1,19 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.explore-azure-digital-twins-api-for-creating-a-graph.upload-models-twins-and-graph-in-bulk
+uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.upload-models-twins-and-graph-in-bulk
 title: Upload models, twins, and graph in bulk
 sandbox: true
 interactive: bash
 metadata:
-  unitType: exercise
   title: Upload models, twins, and graph in bulk
   description: Use the Azure Digital Twins APIs to upload models, twins, and relationships, and check the status of the new graph.
   ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
-  ms.reviewer: taanderson
-  manager: lizross
-  ms.topic: module-standard-task-based
-  ms.prod: learning-azure
+  ms.topic: training-unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-upload-models-twins-and-graph-in-bulk.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.explore-azure-digital-twins-api-for-creating-a-graph.update-graph-elements
+uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.update-graph-elements
 title: Update graph 
 sandbox: true
 interactive: bash
@@ -10,10 +10,7 @@ metadata:
   ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
-  ms.reviewer: taanderson
-  manager: lizross
-  ms.topic: module-standard-task-based
-  ms.prod: learning-azure
+  ms.topic: training-unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-update-graph-elements.md)]
