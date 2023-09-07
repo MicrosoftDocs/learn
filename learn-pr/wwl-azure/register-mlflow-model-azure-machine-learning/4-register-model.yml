@@ -4,11 +4,10 @@ title: Register an MLflow model
 metadata:
   title: Register an MLflow model
   description: "Learn how to register an MLflow model in Azure Machine Learning."
-  ms.date: 02/17/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/4-register-model.md)]
