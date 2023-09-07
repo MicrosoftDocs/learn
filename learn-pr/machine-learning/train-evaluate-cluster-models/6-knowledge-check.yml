@@ -26,7 +26,7 @@ quiz:
     - content: "Reinforcement learning"
       isCorrect: false
       explanation: "Incorrect. Reinforcement learning is an advanced for of machine learning in which models learn to apply actions based on rewards."
-  - content: "You're using Scikit-Learn to train a K-Means clustering model that groups observations into three clusters. How should you create the KMeans object to accomplish this goal?"
+  - content: "You're using scikit-learn to train a K-Means clustering model that groups observations into three clusters. How should you create the KMeans object to accomplish this goal?"
     choices:
     - content: "model = KMeans(n_clusters=3)"
       isCorrect: true

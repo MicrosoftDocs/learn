@@ -12,7 +12,7 @@ summary: Clustering is a type of machine learning that is used to group similar 
 abstract: |
   In this module, you'll learn:
   - When to use clustering
-  - How to train and evaluate a clustering model using the Scikit-Learn framework
+  - How to train and evaluate a clustering model using the scikit-learn framework
 prerequisites: |
   - Basic mathematical concepts
   - Programming with Python
