@@ -11,7 +11,7 @@ There are multiple algorithms you can use for clustering. One of the most common
 
 The following animation shows this process:
 
-![A collection of flowers with different numbers of petals and leaves.](../media/k-means.gif)
+![Illustration showing a collection of flowers with different numbers of petals and leaves.](../media/k-means.gif)
 
 ## Hierarchical Clustering
 
@@ -19,6 +19,6 @@ Hierarchical clustering is another type of clustering algorithm in which cluster
 
 For example, if we apply clustering to the meanings of words, we may get a group containing adjectives specific to emotions ('angry,' 'happy,' and so on). This group belongs to a group containing all human-related adjectives ('happy,' 'handsome,' 'young'), which belongs to an even higher group containing all adjectives ('happy,' 'green,' 'handsome,' 'hard,' and so on).
 
-![Hierarchical clustering.](../media/4-hierarchical-clustering.png)
+![Illustration showing hierarchical clustering.](../media/4-hierarchical-clustering.png)
 
 Hierarchical clustering is useful for not only breaking data into groups, but understanding the relationships between these groups. A major advantage of hierarchical clustering is that it doesn't require the number of clusters to be defined in advance. And, it can sometimes provide more interpretable results than nonhierarchical approaches. The major drawbacks are that these approaches can take longer to compute than simpler approaches, and sometimes they aren't suitable for large datasets.
