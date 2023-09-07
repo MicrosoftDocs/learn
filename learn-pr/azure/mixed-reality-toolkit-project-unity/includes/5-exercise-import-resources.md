@@ -31,13 +31,16 @@ To import the Mixed Reality Toolkit into your project we'll use the Mixed Realit
 
     :::image type="content" source="../media/003-mixed-reality-feature-tool-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
 
-1. Select the "+" button to the left of **Platform Support** and then select the latest version of **Mixed Reality OpenXR Plugin**.
+1. Select the "+" button to the left of **Platform Support (0 of 5)** and then select the latest version of **Mixed Reality OpenXR Plugin**.
  
-     :::image type="content" source="../media/008-package-selections.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool.":::
+    :::image type="content" source="../media/008-package-selections.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool.":::
 
-1. Select the "+" button to the left of **MRTK3** and then manually select all of the packages that are not marked as deprecated.
- 
-     :::image type="content" source="../media/009-package-selections_mrtk.png" alt-text="Screenshot of selecting all feature of MRTK3.":::
+1. Select "Select All" button to the right of **MRTK3** so that all features are selected. 
+
+    :::image type="content" source="../media/009-package-selections_mrtk.png" alt-text="Screenshot of selecting all feature of MRTK3.":::
+
+    > [!NOTE]
+    > If you see any packages that are marked as deprecated you should remove them and make sure that **Settings > Feature > Show deprecated packages** is deselected.
 
 1. After you've made your selection(s), select **Get Features**.
 1. Select **Validate** to validate the packages you selected. You should see a dialog that says **No validation issues were detected**. When you do, select **OK**.
