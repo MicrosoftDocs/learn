@@ -1,8 +1,8 @@
-In this unit, you learn about using Azure Resource Manager templates (ARM templates) to implement infrastructure as code. You survey the sections of an ARM template, learn how to deploy your ARM template to Azure, and delve into detail on the *resources* section of the ARM template.
+In this unit, you'll learn about using Azure Resource Manager templates (ARM templates) to implement infrastructure as code. You'll survey the sections of an ARM template, learn how to deploy your ARM template to Azure, and delve into detail on the *resources* section of the ARM template.
 
 ## What is infrastructure as code?
 
-*Infrastructure as code* enables you to describe, through code, the infrastructure that you need for your application.
+*Infrastructure as code* allows you to describe, through code, the infrastructure that you need for your application.
 
 With infrastructure as code, you can maintain both your application code and everything you need to deploy your application in a central code repository. The advantages to infrastructure as code are:
 
@@ -11,13 +11,15 @@ With infrastructure as code, you can maintain both your application code and eve
 - Faster deployments
 - Better traceability
 
+This video explains infrastructure as code:
+
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Infrastructure-as-Code--One-Dev-Question/player?format=ny]
 
 ## What is an ARM template?
 
-ARM templates are JavaScript Object Notation (JSON) files that define the infrastructure and configuration for your deployment. The template uses a *declarative syntax*. The declarative syntax is a way of building the structure and elements that outline what resources will look like without describing its control flow. Declarative syntax is different than *imperative syntax*, which uses commands for the computer to perform. Imperative scripting focuses on specifying each step in deploying the resources.
+ARM templates are JavaScript Object Notation (JSON) files that define the infrastructure and configuration for your deployment. The template uses a *declarative syntax*. The declarative syntax is a way of building the structure and elements that outline what resources will look like without describing the control flow. Declarative syntax is different than *imperative syntax*, which uses commands for the computer to perform. Imperative scripting focuses on specifying each step in deploying the resources.
 
-ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it. In an ARM template, you specify the resources and the properties for those resources. Then [Azure Resource Manager](/azure/azure-resource-manager/management/overview?azure-portal=true) uses that information to deploy the resources in an organized and consistent manner.
+ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it. In an ARM template, you specify the resources and the properties for those resources. [Azure Resource Manager](/azure/azure-resource-manager/management/overview?azure-portal=true) then uses that information to deploy the resources in an organized and consistent manner.
 
 ### Benefits of using ARM templates
 
@@ -25,9 +27,9 @@ ARM templates allow you to automate deployments and use the practice of infrastr
 
 ARM templates are *idempotent*, which means you can deploy the same template many times and get the same resource types in the same state.
 
-Resource Manager orchestrates the deployment of the resources so they're created in the correct order. When possible, resources will also be created in parallel, so ARM template deployments finish faster than scripted deployments.
+Resource Manager orchestrates deploying the resources so they're created in the correct order. When possible, resources will also be created in parallel, so ARM template deployments finish faster than scripted deployments.
 
-  :::image type="content" source="../media/2-template-processing.png" alt-text="A mapping of the template processing procedure showing that there's only one call to process a template as opposed to several calls to process scripts." border="false":::
+  :::image type="content" source="../media/2-template-processing.png" alt-text="Diagram showing a mapping of the template processing procedure. There's only one call to process a template as opposed to several calls to process scripts." border="false":::
 
 Resource Manager also has built-in validation. It checks the template before starting the deployment to make sure the deployment will succeed.
 
@@ -39,7 +41,7 @@ You can also integrate your ARM templates into continuous integration and contin
 
 ### ARM template file structure
 
-When writing an ARM template, you need to understand all the parts that make up the template and what they do. ARM template files are made up of the following elements:
+When you're writing an ARM template, you need to understand all the parts that make up the template and what they do. ARM template files are made up of the following elements:
 
 | Element        | Description |
 | -------------- | --- |
@@ -56,9 +58,9 @@ When writing an ARM template, you need to understand all the parts that make up 
 
 You can deploy an ARM template to Azure in one of the following ways:
 
-- Deploy a local template.
-- Deploy a linked template.
-- Deploy in a continuous deployment pipeline.
+- Deploy a local template
+- Deploy a linked template
+- Deploy in a continuous deployment pipeline
 
 This module focuses on deploying a local ARM template. In future Learn modules, you'll learn how to deploy more complicated infrastructure and how to integrate with Azure Pipelines.
 
@@ -103,9 +105,9 @@ New-AzResourceGroup `
 To start a template deployment at the resource group, use either the Azure CLI command [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create) or the Azure PowerShell command [New-AzResourceGroupDeployment](/powershell/module/az.resources/new-azresourcegroupdeployment).
 
 > [!TIP]
-> The difference between az deployment group create and az group deployment create is that az group deployment create is an old command to be deprecated and will be replaced by az deployment group create. Therefore, it is recommended to use az deployment group create to deploy resources under the resource group scope.
+> The difference between `az deployment group create` and `az group deployment create` is that `az group deployment create` is an old command to be deprecated and will be replaced by `az deployment group create`. Therefore, we recommend using `az deployment group create` to deploy resources under the resource group scope.
 
-Both commands require the resource group, the region, and the name for the deployment so you can easily identify it in the deployment history. For convenience, the exercises create a variable that stores the path to the template file. This variable makes it easier for you to run deployment commands because you don't have to retype the path every time you deploy. Here's an example:
+Both commands require the resource group, the region, and the name for the deployment so you can easily identify it in the deployment history. For convenience, the exercises create a variable that stores the path to the template file. This variable makes it easier for you to run deployment commands, because you don't have to retype the path every time you deploy. Here's an example:
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -131,7 +133,7 @@ New-AzResourceGroupDeployment `
 
 ---
 
-Use linked templates to deploy complex solutions. You can break a template into many templates and deploy these templates through a main template. When you deploy the main template, it triggers the deployment of the linked template. You can store and secure the linked template by using a SAS token.
+Use linked templates to deploy complex solutions. You can break a template into many templates and deploy these templates through a main template. When you deploy the main template, it triggers the linked template's deployment. You can store and secure the linked template by using a SAS token.
 
 A CI/CD pipeline automates the creation and deployment of development projects, which includes ARM template projects. The two most common pipelines used for template deployment are [Azure Pipelines](/training/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](/training/paths/automate-workflow-github-actions/?azure-portal=true).
 
@@ -143,11 +145,11 @@ To add a resource to your template, you'll need to know the resource provider an
 
 After you've defined the provider and resource type, you need to understand the properties for each resource type you want to use. For details, see [Define resources in Azure Resource Manager templates](/azure/templates?azure-portal=true). View the list in the left column to find the resource. Notice that the properties are sorted by API version.
 
-![Microsoft documentation page showing the storage account documentation selected.](../media/2-resource-type-properties.png)
+![Screenshot of a Microsoft documentation page showing the storage account documentation selected.](../media/2-resource-type-properties.png)
 
 Here's an example of some of the listed properties from the Storage Accounts page:
 
-![Microsoft documentation page showing some of the storage account properties.](../media/2-storage-account-properties.png)
+![Screenshot of a Microsoft documentation page showing some of the storage account properties.](../media/2-storage-account-properties.png)
 
 For our storage example, your template might look like this:
 

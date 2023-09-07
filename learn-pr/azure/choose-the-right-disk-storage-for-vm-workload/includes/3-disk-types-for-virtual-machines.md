@@ -1,4 +1,4 @@
-After you've chosen whether to use managed or unmanaged disks, you'll next need to pick the best disk type for your virtual machines.
+You need to pick the best disk type for your needs.
 
 Here, you'll learn about the performance and behavior of each disk type so that you can make the right choice.
 
@@ -11,9 +11,9 @@ To choose the right disk type, it's critical to understand a disk's performance.
 
 For physical disks, solid-state disks (SSDs) usually realize higher IOPS and throughput than hard disk drives (HDDs). Virtual disks that you can choose for an Azure virtual machine are based on SSDs of several types or HDDs. Their performance varies widely based on the disk type that you choose. Let's examine the types that are available.
 
-## Ultra disks
+## Ultra Disks
 
-Ultra disks provide the highest disk performance available in Azure. Choose them when you need the fastest storage performance, which includes high throughput, high IOPS, and low latency.
+Ultra Disks provide the highest disk performance available in Azure. Choose them when you need the fastest storage performance, which includes high throughput, high IOPS, and low latency.
 
 The maximum performance of an Ultra disk depends on the size you select, as shown in the examples in this table:
 
@@ -29,15 +29,15 @@ The maximum performance of an Ultra disk depends on the size you select, as show
 | 512 | 153,600 | 4,000 |
 | 1,024 - 65,536 (sizes in this range increase in 1 TiB increments) | 160,000 | 2,000 |
 
-Ultra disks can have capacities from 4 GB up to 64 TB. A unique feature of Ultra disks is that you can adjust the IOPS and throughput values while they're running and without detaching them from the host virtual machine. Performance adjustments can take up to an hour to take effect.
+Ultra Disks can have capacities from 4 GB up to 64 TB. A unique feature of Ultra Disks is that you can adjust the IOPS and throughput values while they're running and without detaching them from the host virtual machine. Performance adjustments can take up to an hour to take effect.
 
-Ultra disks have some limitations. For a complete list, see [Ultra disk limitations](/azure/virtual-machines/disks-types#ultra-disk-limitations).
+Ultra Disks have some limitations. For a complete list, see [Ultra disk limitations](/azure/virtual-machines/disks-types#ultra-disk-limitations).
 
-Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA are transaction heavy and need fast performance. If you have such a workload, and if Premium SSD managed disks have caused performance bottlenecks, consider using Ultra disks.
+Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA are transaction heavy and need fast performance. If you have such a workload, and if Premium SSD managed disks have caused performance bottlenecks, consider using Ultra Disks.
 
 ## Premium SSD v2
 
-Premium SSD managed disks are the next tier down from Ultra disks in terms of performance, but they still provide extremely high throughput and IOPS with low latency. Like Ultra disks, the performance (capacity, throughput, and IOPS) of Premium SSD v2 managed disks can be independently configured at any time, making it easier for more scenarios to be cost efficient while meeting performance needs.
+Premium SSD managed disks are the next tier down from Ultra Disks in terms of performance, but they still provide extremely high throughput and IOPS with low latency. Like Ultra Disks, the performance (capacity, throughput, and IOPS) of Premium SSD v2 managed disks can be independently configured at any time, making it easier for more scenarios to be cost efficient while meeting performance needs.
 
 The following table provides an example of disk capacities and performance maximums.
 
@@ -68,7 +68,7 @@ This table has examples that illustrate the high performance of premium SSD mana
 
 With Premium SSD, these performance figures are guaranteed. There's no such guarantee for standard tier disks, which can be impacted occasionally by high demand.
 
-If you need higher performance than standard disks provide, or if you can't sustain occasional drops in performance, use Premium SSD. Also use Premium SSD managed disks when you want the highest performance but can't use Ultra disks or Premium SSD v2 because of their current limitations. Premium SSD managed disks are a good fit for mission-critical workloads in medium and large organizations.
+If you need higher performance than standard disks provide, or if you can't sustain occasional drops in performance, use Premium SSD. Also use Premium SSD managed disks when you want the highest performance but can't use Ultra Disks or Premium SSD v2 because of their current limitations. Premium SSD managed disks are a good fit for mission-critical workloads in medium and large organizations.
 
 You can migrate a disk to a Premium SSD managed disk at any time, if you've found that its performance isn't good enough.
 

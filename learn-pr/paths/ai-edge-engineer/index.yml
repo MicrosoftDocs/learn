@@ -51,7 +51,6 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-notebooks
 - azure-cloud-shell
 - azure-container-instances
 - azure-container-registry
