@@ -37,7 +37,7 @@ quiz:
     - content: "The probability that the user is authorized to view data from a particular application."
       isCorrect: false
       explanation: "Incorrect. Sign-in risk doesn't calculate the probability that a user is authorized to view data."
-  - content: "IT admins have been asked to review Azure AD roles assigned to users, to improve organizational security. Which of the following should they implement?"
+  - content: "IT admins have been asked to review Microsoft Entra roles assigned to users, to improve organizational security. Which of the following should they implement?"
     choices:
     - content: "Remove all global admin roles assigned to users."
       isCorrect: false
@@ -45,6 +45,6 @@ quiz:
     - content: "Create custom roles."
       isCorrect: false
       explanation: "That's incorrect. Custom roles give flexibility when granting access but aren't necessarily more secure than built-in roles."
-    - content: "Replace global admin roles with specific Azure AD roles."
+    - content: "Replace global admin roles with specific Microsoft Entra roles."
       isCorrect: true
       explanation: "That's correct. By following the least privilege security model and assigning specific admin roles, such as billing administrator or user administrator, to more users, instead of global admin roles, organizational security is improved."
