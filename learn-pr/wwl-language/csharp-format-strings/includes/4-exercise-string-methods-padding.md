@@ -190,7 +190,11 @@ Console.WriteLine("1234567890123456789012345678901234567890");
 	```
 
 1. Save your code file, and then use Visual Studio Code to run your code. You should see the following output, that you can send off to the maintainers of the legacy system to confirm the new integration works correctly:
-   ```Output   1234567890123456789012345678901234567890   769C  Mr. Stephen Ortega       $5,000.00   ```
+
+	```Output
+	1234567890123456789012345678901234567890
+	769C  Mr. Stephen Ortega       $5,000.00
+	```
 
 Success!
 
