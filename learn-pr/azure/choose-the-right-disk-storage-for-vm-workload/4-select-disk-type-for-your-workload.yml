@@ -36,6 +36,3 @@ quiz:
     - content: "Use Standard HDDs instead of Standard SSDs."
       isCorrect: false
       explanation: "Standard SSDs and standard HDDs don't guarantee an IOPS value."
-    - content: "Use unmanaged disks instead of managed disks."
-      isCorrect: false
-      explanation: "Managed disks and unmanaged disks don't guarantee an IOPS value."
