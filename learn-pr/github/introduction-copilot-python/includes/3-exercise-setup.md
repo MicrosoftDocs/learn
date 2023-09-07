@@ -1,5 +1,5 @@
 
-In this exercise, we create a new repository using the GitHub template for the JavaScript personal portfolio frontend web application.  
+In this exercise, we create a new repository using the GitHub template for the JavaScript personal portfolio frontend web application.
 
 ## Sign up for GitHub Copilot
 
@@ -10,9 +10,9 @@ Before you install and use the extension, you need to register by setting up [a 
 
 ## Environment setup
 
-First you need to launch the Codespaces environment, which comes preconfigured with the GitHub Copilot extension.  
+First you need to launch the Codespaces environment, which comes preconfigured with the GitHub Copilot extension.
 
-1. Open the [Codespace with the preconfigured environment](https://codespaces.new/MicrosoftDocs/mslearn-copilot-codespaces-pythonnew?azure-portal=true) in your browser.
+1. Open the [Codespace with the preconfigured environment](https://codespaces.new/MicrosoftDocs/mslearn-copilot-codespaces-python?azure-portal=true) in your browser.
 1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
 1. Wait for the codespace to start. This startup process can take a few minutes.
 1. The remaining exercises in this project take place in the context of this development container.

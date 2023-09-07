@@ -26204,6 +26204,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl/get-started-lakehouses/4-exercise-lakehouse.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-lakehouses/5-exercise-lakehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-lakehouses/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-lakehouses/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-lakehouses/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-lakehouses/7-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/3-describe-available-editions.md",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses",
       "redirect_document_id": false
