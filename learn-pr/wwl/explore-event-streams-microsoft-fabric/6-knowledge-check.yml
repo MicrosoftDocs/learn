@@ -32,7 +32,7 @@ quiz:
     - content: "Choose a data format for your event data"
       isCorrect: false
       explanation: "Incorrect. This is done after you select your source type and cloud connection."
-    - content: "Change your Fabric experience to Real-time Analytics and select Eventstream to create a new eventstream"
+    - content: "Change your Fabric experience to Real-time Analytics and select EventStream to create a new eventstream item"
       isCorrect: true
       explanation: "Correct. This is the first step to create an event source in EventStream."
   - content: "What is Microsoft Fabric Eventstream?"
