@@ -4,7 +4,7 @@ In the last exercise, you opened and edited a source file in the GitHub public r
 
 Validation processes run automatically and can take several minutes to complete. In this repository, you see that the PR was checked for mergeability and that all CLA requirements were met. You also see that labels were added and that your changes were validated with no warnings or issues.
 
-:::image type="content" source="../media/exercise-validation-checks.png" alt-text="Screenshot of the PR created during the exercise showing two validation checks passing.":::
+:::image type="content" source="../media/exercise-checks-passed.png" alt-text="Screenshot of the PR created during the exercise showing two validation checks passing.":::
 
 ## Review
 
@@ -18,10 +18,9 @@ Your changes are ready. Sign off on the PR to send it to the destination reposit
 2.	Type “#sign-off” in the comment field. 
 3.	Select **Comment**. 
 
-:::image type="content" source="../media/type-sign-off-exercise.png" alt-text="Screenshot of the comment field with #sign-off and the Comment button highlighted.":::
- 
+:::image type="content" source="../media/exercise-sign-off-step.png" alt-text="Screenshot of the comment field with #sign-off and the Comment button highlighted.":::
 
-Congratulations, you’ve contributed to Microsoft Learn documentation! Now you’re ready for future contributions to public repositories on the site. 
+Congratulations, you’ve contributed to Microsoft Learn documentation! Now you’re ready for future contributions to public repositories on the site.
 
 > [!NOTE]
-> Because this is a practice exercise, your changes won’t be merged to the live site. A PR reviewer will close your PR without merging so that other contributors can practice the same workflow with these instructions.  
+> Because this is a practice exercise, your changes won’t be merged to the live site. A PR reviewer will close your PR without merging so that other contributors can practice the same workflow with these instructions.
