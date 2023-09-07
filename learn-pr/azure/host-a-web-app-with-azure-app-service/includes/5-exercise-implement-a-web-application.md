@@ -26,7 +26,7 @@ The command will create a new folder named "BestBikeApp" to hold your project.
 
 ### Optionally test your web app
 
-Open a second command shell session, for example by browsing to <https://shell.azure.com/>. You can test your application locally on Azure. To do so, use the following steps:
+Open a second command shell session by browsing to <https://shell.azure.com/> in a new tab. You can test your application locally on Azure. To do so, use the following steps:
 
 1. From your primary command shell session, run the following commands to build and run your web application:
 
@@ -59,8 +59,7 @@ Open a second command shell session, for example by browsing to <https://shell.a
     ```
 
     You should see some HTML appear, ending in the following lines:
-    
-   
+
             <div class="text-center">
             <h1 class="display-4">Welcome</h1>
             <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -80,15 +79,14 @@ Open a second command shell session, for example by browsing to <https://shell.a
 
         </body>
         </html>
-  
-  
+
 1. From your primary command shell session, press <kbd>Ctrl+C</kbd> to quit your web app.
 
 ::: zone-end
 
 ::: zone pivot="java"
 
-To create a starter web application, we'll use Maven, a commonly used project management and build tool for Java apps. We'll use the `maven-archetype-webapp` template to generate the code for our web application.
+To create a starter web application, we'll use Maven, a commonly used project-management and build tool for Java apps. We'll use the `maven-archetype-webapp` template to generate the code for our web application.
 
 1. Run the following commands in Azure Cloud Shell now to create a new web app:
 
@@ -104,7 +102,7 @@ To create a starter web application, we'll use Maven, a commonly used project ma
     mvn package
     ```
 
-1. When the command finishes running, run these commands to open the "target" directory and list its content:
+1. When the command finishes running, run these commands to open the *target* directory and list its content:
 
     ```bash
     cd target
@@ -128,7 +126,7 @@ To create a starter Node.js web application, we'll use Node Package Manager (`np
     npm init -y
     ```
 
-This will create a new `package.json` file in the current folder. You should see it in the current folder if you enter `ls` in the terminal window. We'll need a JavaScript file to run our website logic. Because this is just a basic example, we'll only need one file `index.js`.
+This creates a new `package.json` file in the current folder. You should find it in the current folder if you enter `ls` in the terminal window. We'll need a JavaScript file to run our website logic. Because this is just a basic example, we'll only need one file: `index.js`.
 
 1. Run the following command in the terminal to create the file:
 
@@ -157,8 +155,8 @@ This will create a new `package.json` file in the current folder. You should see
 
 1. Save the file by selecting the **...** menu, or press <kbd>Ctrl+S</kbd> on Windows and Linux or <kbd>Command+S</kbd> on macOS.
 
-> [!IMPORTANT]
-> Whenever you edit a file in the editor, make sure to save afterwards by selecting the **...** menu in the top right corner of the editor, or by pressing <kbd>Ctrl+S</kbd> on Windows and Linux or <kbd>Command+S</kbd> on macOS. To exit the editor, press <kbd>Ctrl+Q</kbd> on Windows and Linux or click the top-right corner of the editor and select **Quit** on MacOS.
+    > [!IMPORTANT]
+    > Whenever you edit a file in the editor, make sure to save afterwards by selecting the **...** menu in the top right corner of the editor, or by pressing <kbd>Ctrl+S</kbd> on Windows and Linux or <kbd>Command+S</kbd> on macOS. To exit the editor, press <kbd>Ctrl+Q</kbd> on Windows and Linux or click the top-right corner of the editor and select **Quit** on MacOS.
 
 1. Switch to the `index.js` file, and add the following contents to it. This is a small Node.js program that always responds with "Hello World!" when any GET request is made to the server.
 
@@ -176,7 +174,7 @@ This will create a new `package.json` file in the current folder. You should see
     console.log(`Server running at http://localhost:${port}`);
     ```
 
-1. Save your file and exit the editor by selecting the **&#9776;** icon on the top right and selecting **Save** > **Close Editor** from the context menu, or by using the accelerator keys <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd> on Windows and Linux.
+1. Save your file and exit the editor by selecting the **...** icon on the top right and selecting **Save** and **Close Editor** from the context menu, or by using the accelerator keys <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd> on Windows and Linux.
 
 ### Optionally test your web app
 
@@ -209,7 +207,7 @@ While you're running the helloworld web app, you can verify it's running locally
 
 ::: zone pivot="python"
 
-To create a starter web application, we'll use the web application framework Flask.
+To create a starter web application, we'll use the Flask web-application framework.
 
 1. Run the following commands in Azure Cloud Shell to set up a virtual environment and install Flask in your profile:
 
@@ -219,7 +217,7 @@ To create a starter web application, we'll use the web application framework Fla
     pip install flask
     ```
 
-1. Run these commands to create the directory for your new web app:
+1. Run these commands to create and switch to your new web app directory:
 
     ```bash
     mkdir ~/BestBikeApp
