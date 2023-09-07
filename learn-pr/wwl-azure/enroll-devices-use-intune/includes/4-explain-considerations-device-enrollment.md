@@ -27,7 +27,7 @@ Intune supports devices running the following operating systems through device e
  -  Surface Hub
  -  Windows 10 Teams (Surface Hub)
  -  Apple iOS/iPadOS 14.0 and later
- -  macOS 11.0 and late
+ -  macOS 11.0 and later
  -  Android 8.0 and later, including Samsung KNOX Standard 3.0 and higher
  -  Linux Ubuntu Desktop (20.04 or 22.04 LTS on x86/64)
  -  Chrome OS
