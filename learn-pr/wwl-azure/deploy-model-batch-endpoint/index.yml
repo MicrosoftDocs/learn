@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-model-batch-endpoint
 metadata:
   title: Deploy a model to a batch endpoint
   description: "Deploy a model to a batch endpoint"
-  ms.date: 04/25/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Deploy a custom model to a batch endpoint.
   - Invoke batch endpoints.
 prerequisites: ""
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/deploy-a-model-to-a-batch-endpoint.svg
 levels:
 - beginner
 roles:
@@ -27,7 +27,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.deploy-model-batch-endpoint.introduction
-- learn.wwl.deploy-model-batch-endpoint.video
 - learn.wwl.deploy-model-batch-endpoint.explore-batch-endpoints
 - learn.wwl.deploy-model-batch-endpoint.deploy-your-mlflow-model-batch-endpoint
 - learn.wwl.deploy-model-batch-endpoint.deploy-custom-model-batch-endpoint

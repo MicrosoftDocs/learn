@@ -4,11 +4,10 @@ title: Deploy your MLflow model to a batch endpoint
 metadata:
   title: Deploy your MLflow model to a batch endpoint
   description: "Deploy your MLflow model to a batch endpoint"
-  ms.date: 04/25/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/3-deploy-your-mlflow-model-batch-endpoint.md)]

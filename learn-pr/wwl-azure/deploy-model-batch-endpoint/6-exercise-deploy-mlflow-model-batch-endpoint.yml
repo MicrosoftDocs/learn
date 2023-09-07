@@ -4,11 +4,10 @@ title: Exercise - Deploy an MLflow model to a batch endpoint
 metadata:
   title: Exercise - Deploy an MLflow model to a batch endpoint
   description: "Exercise - Deploy an MLflow model to a batch endpoint"
-  ms.date: 04/25/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-deploy-mlflow-model-batch-endpoint.md)]

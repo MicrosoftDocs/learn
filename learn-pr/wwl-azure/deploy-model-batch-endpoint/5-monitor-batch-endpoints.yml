@@ -4,11 +4,10 @@ title: Invoke and troubleshoot batch endpoints
 metadata:
   title: Invoke and troubleshoot batch endpoints
   description: "Invoke and troubleshoot batch endpoints"
-  ms.date: 04/25/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/5-monitor-batch-endpoints.md)]
