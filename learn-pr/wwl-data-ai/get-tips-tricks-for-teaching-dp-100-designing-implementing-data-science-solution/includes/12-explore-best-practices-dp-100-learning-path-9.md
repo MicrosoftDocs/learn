@@ -12,7 +12,7 @@ This learning path consists of two modules:
 - Module 2 – Perform hyperparameter tuning with Azure Machine Learning
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14NOV]
- 
+
 Learning Path 9 Tips and Tricks
 
 - Emphasize the importance of workflow in Machine Learning

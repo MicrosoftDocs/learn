@@ -10,7 +10,7 @@ This learning path consists of two modules:
 
 - Module 1 – Work with compute targets in Azure Machine Learning
 - Module 2 – Work with environments in Azure Machine Learning
- 
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14Dux]
 
 Learning Path 4 Tips and Tricks

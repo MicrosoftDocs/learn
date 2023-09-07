@@ -10,7 +10,7 @@ This learning path consists of two modules:
 
 - Module 1 – Register an MLflow model in Azure Machine Learning
 - Module 2 – Manage and compare models in Azure Machine Learning
- 
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14QwY]
 
 Learning Path 10 Tips and Tricks

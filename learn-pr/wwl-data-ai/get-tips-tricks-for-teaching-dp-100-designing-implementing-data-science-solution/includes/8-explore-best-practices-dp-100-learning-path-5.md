@@ -10,7 +10,7 @@ This learning path consists of two modules:
 
 - Module 1 – Explore data with the Azure Machine Learning designer
 - Module 2 – Train and compare models with the Azure Machine Learning designer
- 
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14vIj]
 
 Learning Path 5 Tips and Tricks

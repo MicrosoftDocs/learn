@@ -10,7 +10,7 @@ This learning path consists of two modules:
 
 - Module 1 – Run a training script as a command job in Azure Machine Learning
 - Module 2 – Track model training with MLflow in jobs
- 
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14vI6]
 
 Learning Path 8 Tips and Tricks

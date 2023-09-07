@@ -10,7 +10,7 @@ This learning path consists of two modules:
 
 - Module 1 – Explore Automate Machine Learning
 - Module 2 – Find the best classification model with Automated Machine Learning
- 
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14Duy]
 
 Learning Path 6 Tips and Tricks

@@ -13,7 +13,7 @@ This Learning Path consists of three modules:
 - Module 3 – Design a model deployment solution
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14QwW]
- 
+
 Learning Path 1 Tips and Tricks
 
 - Be concise for each area, they will be discussed more in later learning paths

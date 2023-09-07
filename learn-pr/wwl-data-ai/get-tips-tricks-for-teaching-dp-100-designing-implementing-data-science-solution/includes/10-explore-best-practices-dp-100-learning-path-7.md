@@ -9,7 +9,7 @@ As you begin to teach this learning path, get familiar with what the students wi
 This learning path consists of one module:
 
 - Module 1 – Track model training in notebooks with MLflow
- 
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14DuH]
 
 Learning Path 7 Tips and Tricks

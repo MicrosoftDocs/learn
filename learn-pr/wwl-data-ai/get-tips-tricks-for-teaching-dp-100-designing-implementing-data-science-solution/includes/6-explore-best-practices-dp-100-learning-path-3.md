@@ -9,7 +9,7 @@ As you begin to teach this learning path, get familiar with what the students wi
 This learning path consists of one module:
 
 - Module 1 – Make data available in Azure Machine Learning
- 
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14Lk3]
 
 Learning Path 3 Tips and Tricks
