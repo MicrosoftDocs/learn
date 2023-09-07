@@ -6,7 +6,7 @@ Let’s practice the contribution workflow. In this exercise, you’ll make a sm
 1. In a browser tab, navigate to learn.microsoft.com/contribute. 
 1. At the top of the article, select the **Edit** pencil icon. 
 
-    :::image type="content" source="../media/exercise-edit-published-page.png" alt-text="Screenshot of the Contribute article open and the pencil Edit icon highlighted.":::
+    :::image type="content" source="../media/exercise-edit-published.png" alt-text="Screenshot of the Contribute article open and the pencil Edit icon highlighted.":::
 
 1. Select the pencil icon to **Fork this repository and edit in your fork** or **Edit this file in your fork of this project**.
 
