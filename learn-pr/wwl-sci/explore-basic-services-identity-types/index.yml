@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad
 metadata:
-  title: Describe the services and identity types of Azure AD
-  description: "Describe the services and identity types of Azure AD"
-  ms.date: 08/03/2023
+  title: Describe the function and identity types of Microsoft Entra ID
+  description: "Describe the function and identity types of Microsoft Entra ID"
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-title: Describe the services and identity types of Azure AD
-summary: Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service. Learn about Azure AD, its services and the types of identities it supports.
+  ms.service: active-directory
+title: Describe the function and identity types of Microsoft Entra ID
+summary: Microsoft Entra ID is Microsoft’s cloud-based identity and access management solution that connects people to their apps, devices, and data. Learn about the functions and identity types supported by Microsoft Entra ID.
 abstract: |
-  After completing this module, you will be able to:
-  - Describe what Azure AD does.
-  - Describe the types of identities Azure AD supports.
+  By the end of this module, you'll be able to:
+    - Describe the function of Microsoft Entra ID.
+    - Describe the types of identities Microsoft Entra ID supports.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -25,16 +25,17 @@ roles:
 - business-user
 - student
 products:
+- azure
 - azure-active-directory
+- entra
 subjects:
 - identity-access
 units:
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.introduction
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-what-is
-- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-available-editions
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-identity-types
-- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-external-identities
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-concept-of-hybrid-identities
+- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-external-identities
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.knowledge-check
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.summary-resources
 badge:
