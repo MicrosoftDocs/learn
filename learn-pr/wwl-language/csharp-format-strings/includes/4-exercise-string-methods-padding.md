@@ -26,7 +26,9 @@ The `PadLeft()` method adds blank spaces to the left-hand side of the string so 
 1. Delete or use the line comment operator `//` to comment out all of the code from the previous exercises.
 
 1. Update your code in the Visual Studio Code Editor as follows:
-   ```csharp   string input = "Pad this";   Console.WriteLine(input.PadLeft(12));   ```
+   ```csharp
+	string input = "Pad this";
+	Console.WriteLine(input.PadLeft(12));   ```
 
 1. On the Visual Studio Code **File** menu, select **Save**.
    Save the Program.cs file before building or running the code.
@@ -37,10 +39,16 @@ The `PadLeft()` method adds blank spaces to the left-hand side of the string so 
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
    > [!NOTE]   > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
    When you run the code, you observe four characters prefixed to the left of the string bring the length to 12 characters long.
-   ```Output       Pad this   ```
+
+	```Output
+		Pad this
+	```
 
 1. To add space or characters to the right side of your string, use the `PadRight()` method instead. 1. Update your code in the Visual Studio Code Editor as follows:
-   ```csharp   Console.WriteLine(input.PadRight(12));   ```
+
+	```csharp
+	Console.WriteLine(input.PadRight(12));
+	```
 
 1. Save your code file, and then use Visual Studio Code to run your code. You won't observe any characters added to the end of the string, but they're there.
 
