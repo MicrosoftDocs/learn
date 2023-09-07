@@ -26,9 +26,7 @@ The `PadLeft()` method adds blank spaces to the left-hand side of the string so 
 1. Delete or use the line comment operator `//` to comment out all of the code from the previous exercises.
 
 1. Update your code in the Visual Studio Code Editor as follows:
-   ```csharp
-	string input = "Pad this";
-	Console.WriteLine(input.PadLeft(12));   ```
+   ```csharp   string input = "Pad this";   Console.WriteLine(input.PadLeft(12));   ```
 
 1. On the Visual Studio Code **File** menu, select **Save**.
    Save the Program.cs file before building or running the code.
