@@ -18,7 +18,7 @@ ORDER BY dates.CalendarYear, dates.CalendarQuarter;
 
 The results from this query would look similar to the following table:
 
-| CalendarYear | CalendarMonth | TotalSales |
+| CalendarYear | CalendarQuarter | TotalSales |
 |--|--|--|
 | 2020 | 1 | 25980.16 |
 | 2020 | 2 | 27453.87 |
@@ -44,7 +44,7 @@ ORDER BY dates.CalendarYear, dates.CalendarQuarter, custs.City;
 
 This time, the results include a quarterly sales total for each city:
 
-| CalendarYear | CalendarMonth | City | TotalSales |
+| CalendarYear | CalendarQuarter | City | TotalSales |
 |--|--|--|--|
 | 2020 | 1 | Amsterdam | 5982.53 |
 | 2020 | 1 | Berlin | 2826.98 |

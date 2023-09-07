@@ -4,11 +4,10 @@ title: Design a data warehouse schema
 metadata:
   title: Design a data warehouse schema
   description: "Design a data warehouse schema"
-  ms.date: 02/08/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 7
