@@ -28,7 +28,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- microsoft-identity-platform
 - windows-hello
 - windows-hello-for-business
 - entra
