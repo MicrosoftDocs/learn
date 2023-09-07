@@ -31,9 +31,6 @@ quiz:
     - content: "An ephemeral disk"
       isCorrect: false
       explanation: "Ephemeral disks don't support 99.999% availability because data is stored in local virtual machine storage and not replicated."
-    - content: "An unmanaged disk"
-      isCorrect: false
-      explanation: "Unmanaged disks don't guarantee 99.999% availability, although it might be possible to achieve this availability if you choose a highly available storage account."
     - content: "A managed disk"
       isCorrect: true
       explanation: "Managed disks guarantee 99.999% availability because data is automatically replicated."
