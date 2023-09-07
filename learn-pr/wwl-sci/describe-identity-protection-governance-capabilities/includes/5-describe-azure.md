@@ -53,7 +53,8 @@ When automated remediation isn't enabled, an administrator must manually review 
 Data from Identity Protection can be exported to other tools for archive, further investigation, and correlation. The Microsoft Graph based APIs allow organizations to collect this data for further processing in tools such as a SIEM.  The data can also be sent to a Log Analytics workspace, archived data to a storage account, streamed to Event Hubs, or solutions.
 
 ### Workload identity
-Microsoft Entra Identity Protection has historically protected users in detecting, investigating, and remediating identity-based risks. We're now extending these capabilities to workload identities to protect applications and service principals.  This requires Workload identities Premium licensing.
+
+Microsoft Entra Identity Protection has historically protected users in detecting, investigating, and remediating identity-based risks. We're now extending these capabilities to workload identities to protect applications and service principals.
 
 A workload identity is an identity that allows an application or service principal access to resources. These workload identities differ from traditional user accounts as they:
 

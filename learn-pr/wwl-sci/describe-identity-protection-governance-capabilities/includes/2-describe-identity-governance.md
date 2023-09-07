@@ -1,7 +1,7 @@
 
-Microsoft Entra Identity Governance allows you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right people have the right access to the right resources.
+Microsoft Entra ID Governance allows you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right people have the right access to the right resources.
 
-Identity Governance gives organizations the ability to do the following tasks:
+ID Governance gives organizations the ability to do the following tasks:
 
 - Govern the identity lifecycle.
 - Govern access lifecycle.
@@ -45,6 +45,6 @@ When any attributes of a user or device change, the system evaluates all dynamic
 
 Monitoring privileged access is a key part of identity governance. When employees, vendors, and contractors are assigned administrative rights, there should be a governance process because of the potential for misuse.
 
-Microsoft Entra Privileged Identity Management (PIM) provides extra controls tailored to securing access rights. PIM helps you minimize the number of people who have access to resources across Microsoft Entra ID, Azure, and other Microsoft online services. PIM provides a comprehensive set of governance controls to help secure your company's resources.  PIM is a feature of Microsoft Entra Premium licensing.
+Microsoft Entra Privileged Identity Management (PIM) provides extra controls tailored to securing access rights. PIM helps you minimize the number of people who have access to resources across Microsoft Entra ID, Azure, and other Microsoft online services. PIM provides a comprehensive set of governance controls to help secure your company's resources.
 
 :::image type="content" source="../media/privileged-access-lifecycle.png" alt-text="Diagram showing the identity access rights lifecycle. The lifecycle is represented as a circle that starts with no admin followed a first admin role then a second admin role then leaving IT.":::

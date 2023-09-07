@@ -9,8 +9,6 @@ PIM is:
 - Visible, sending notifications when privileged roles are activated.
 - Auditable, allowing a full access history to be downloaded.
 
-Privileged Identity Management is a feature of Microsoft Entra Premium licensing.
-
 ### Why use PIM?
 
 PIM reduces the chance of a malicious actor getting access by minimizing the number of people who have access to secure information or resources. By time-limiting authorized users, it reduces the risk of an authorized user inadvertently affecting sensitive resources. PIM also provides oversight for what users are doing with their administrator privileges.

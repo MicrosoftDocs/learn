@@ -3,7 +3,7 @@ Microsoft Entra access reviews enable organizations to efficiently manage group 
 
 Microsoft Entra enables you to collaborate with users from inside your organization and with external users. Users can join groups, invite guests, connect to cloud apps, and work remotely from their work or personal devices. This convenience has led to a need for better access management capabilities.  
 
-There are many use cases in which Access reviews should be used, here are just a few examples.
+There are many use cases in which access reviews should be used, here are just a few examples.
 
 - **Too many users in privileged roles**: It's a good idea to check how many users have administrative access and if there are any invited guests or partners that haven't been removed after being assigned to do an administrative task. You can recertify the role assignment of users in Microsoft Entra roles such as Global Administrators, or Azure resources roles such as User Access Administrator in the Microsoft Entra Privileged Identity Management (PIM) experience.
 - **Business critical data access**: For certain resources, such as business critical applications, it might be required as part of compliance processes to ask people to regularly reconfirm and give a justification on why they need continued access.
@@ -25,5 +25,3 @@ Multi-stage access reviews allow you and your organization to enable complex wor
 Admins who create access reviews can track progress as the reviewers complete their process. No access rights are changed until the review is finished. You can, however, stop a review before it reaches its scheduled end.  
 
 When the review is complete, it can be set to manually or auto-apply changes to remove access from a group membership or application assignment, except for a dynamic group or a group that originates on-premises.  In those cases, the changes must be applied directly to the group.
-
-Access reviews are a feature of Microsoft Entra Premium licensing.
