@@ -6,14 +6,16 @@
 - Register the device with the IoT hub.
 - Configure the IoT Edge device to connect to the IoT hub.
 
-### Setup Azure Cognitive Services
+<a name='setup-azure-ai-services'></a>
 
-Create an Azure Cognitive Services resource that will consume the Text Analytics API.
+### Setup Azure AI services
+
+Create an Azure AI services resource that will consume the Text Analytics API.
 
 ### Deploy a module to the edge device
 
 - Select the Language Detection module from Azure Marketplace and set your target IoT Edge device to receive the module.
-- Configure Cognitive Services endpoint and API key for billing information.
+- Configure Azure AI services endpoint and API key for billing information.
 - Specify the route for how messages are passed between modules and to Azure IoT Hub. In this case, we specify that all messages from all modules to go directly to the IoT hub.
 
 ## Components used for this stage

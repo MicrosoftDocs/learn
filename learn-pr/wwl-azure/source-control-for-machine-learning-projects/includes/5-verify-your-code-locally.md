@@ -111,7 +111,7 @@ def train_model(data, ridge_args):
     return reg_model
 ```
 
-Assume you stored the training script in the directory `src/model/train.py` within your repo. To test the `train_model` function, you must import the function from `code.model.train`.
+Assume you stored the training script in the directory `src/model/train.py` within your repo. To test the `train_model` function, you must import the function from `src.model.train`.
 
 You create the `test_train.py` file in the `tests` folder. One way to test Python code is to use `numpy`. Numpy offers several `assert` functions to compare arrays, strings, objects, or items. 
 

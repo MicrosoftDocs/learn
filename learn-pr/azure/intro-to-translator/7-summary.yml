@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!INCLUDE[](includes/7-summary.md)]

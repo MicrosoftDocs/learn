@@ -5,21 +5,11 @@ The online retailer needs their application to have some basic security. The web
 Most applications have parts that anyone can access. But, some parts need to be protected. There are different ways to protect an application. In this exercise, you'll implement a simple protection system to understand how the mechanism of *middleware* works in the Express framework.
 
 
-## Clone the project repo
+## Use the dev container sample project
 
 In this exercise, you'll use an example project that has product files and starter application code. You'll fill in the missing parts of the project to complete the app updates for the customer.
 
-1. In a terminal, clone the sample repo for this example by running the following command:
-
-   ```bash
-   git clone https://github.com/MicrosoftDocs/node-essentials
-   ```
-
-1. Inspect the cloned repo by changing to the **exercise-express-middleware** folder of the project:
-
-   ```bash
-   cd node-essentials/nodejs-http/exercise-express-middleware
-   ```
+1. Open the **node-essentials/nodejs-http/exercise-express-middleware** folder in a terminal by right-clicking the folder name and selecting **Open in integrated terminal**.:
 
    This folder has three files: **app.js**, **client.js**, and **package.json**.
 
@@ -31,7 +21,7 @@ In this exercise, you'll use an example project that has product files and start
 
    `npm` reads from the `dependencies` section in the package.json file and installs the required packages.
 
-1. In a code editor, open the app.js file and inspect the contents:
+1. In a code editor, open the **app.js** file and inspect the contents:
 
    ```javascript
    const express = require("express");
@@ -63,9 +53,7 @@ In this exercise, you'll use an example project that has product files and start
 
    The code contains a functioning Express application with three routes: slash `/`, `/users`, and `/products`.
 
-   - Close the app.js file.
-
-1. In a code editor, open the client.js application file and inspect the contents:
+1. In a code editor, open the **client.js** application file and inspect the contents:
 
    ```javascript
    const http = require("http");
@@ -101,26 +89,16 @@ In this exercise, you'll use an example project that has product files and start
 
 Now you're ready to try the Express program with a client application.
 
-1. In the terminal, run the Express program by entering this command:
+1. In the terminal, start the Express server program by entering this command:
 
    ```bash
    node app.js
    ```
 
    > [!Note]
-   > Make sure you're running the app.js file located in the cloned repo folder, node-essentials/nodejs-http/exercise-express-middleware.
-
-1. In a **second** terminal, run the client application:
-
-   1. Go to the location where you cloned the project repo. You should be in the **node-essentials** folder.
-
-   1. Change to the folder that has the client.js file:
-
-      ```bash
-      cd node-essentials/nodejs-http/exercise-express-middleware
-      ```
-
-    1. Start the client application:
+   > Make sure you're running the app.js file located at `/nodejs-http/exercise-express-middleware`.
+  
+1. Open a second terminal and start the client application:
 
        ```bash
        node client.js
@@ -139,14 +117,14 @@ Now you're ready to try the Express program with a client application.
 
    The client program ends after it displays the output.
    
-1. In the first terminal, press Ctrl + C to stop the program.
+1. In the first terminal (the Express server), press Ctrl + C to stop the program.
 
 
 ## Protect the route
 
 To protect this route, we'll add some code to the Express application.
 
-1. In a code editor, open the node-essentials/nodejs-http/exercise-express-middleware/app.js file. Locate the `const app = express()` statement. After this statement, add the following code:
+1. In a code editor, open the **/nodejs-http/exercise-express-middleware/app.js** file. Locate the `const app = express()` statement. After this statement, add the following code:
 
    ```javascript
    function isAuthorized(req, res, next) {
@@ -188,9 +166,6 @@ To protect this route, we'll add some code to the Express application.
 
    In the updated code, the `isAuthorized` middleware is added as the second argument.
 
-1. Save and close the app.js file.
-
-
 ## Run the Express program and invoke the middleware 
 
 Try the client again with the updated server program.
@@ -225,7 +200,7 @@ Try the client again with the updated server program.
    
 You need to add an `authorization` header for a specific value.
 
-1. In a code editor, open the node-essentials/nodejs-http/exercise-express-middleware/client.js file again. Locate the following statement:
+1. In a code editor, open the **nodejs-http/exercise-express-middleware/client.js** file again. Locate the following statement:
 
    ```javascript
    headers: {},
@@ -238,9 +213,6 @@ You need to add an `authorization` header for a specific value.
      authorization: 'secretpassword'
    },
    ```
-
-1. Save and close the client.js file.
-
 
 ## Run the Express program with client authorization
 
@@ -271,7 +243,41 @@ Try the client again with an `authorization` header.
 
 1. In the first terminal, press Ctrl + C to stop the program.
 
-Congratulations! You learned how to use the middleware construct in Express to add some basic authorization to your Express program.
+Congratulations! You learned how to use middleware in Express to add preprocessing, basic authorization, to your Express program.
 
 > [!CAUTION]
-> Be aware that an authentication/authorization meant for real world use needs to be a bit more robust than our example. It's worth looking up concepts such as OAuth, JSON Web Tokens, JWT and the library **bcrypt** to make sure your app has a decent level of protection.
+> Be aware that an authentication/authorization meant for real world use needs to be a more robust than this example. It's worth looking up concepts such as OAuth, JSON Web Tokens, JWT and the library **bcrypt** to make sure your app has protection from unauthorized users.
+
+## Cleanup development container
+
+After completing the project, you may wish to clean up your development environment or return it to its typical state.
+
+#### [Remote development (browser)](#tab/github-codespaces)
+
+Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free per-core hours entitlement you get for your account.
+
+> [!IMPORTANT]
+> For more information about your GitHub account's entitlements, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+
+1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
+
+1. Locate your currently running codespaces sourced from the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
+
+    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
+
+1. Open the context menu for the codespace and select **Delete**.
+
+    :::image type="content" source="../media/codespaces/codespace-delete.png" alt-text="Screenshot of the context menu for a single codespace with the delete option highlighted.":::
+
+#### [Local development (Docker)](#tab/visual-studio-code)
+
+You aren't necessarily required to clean up your local environment, but you can stop the running development container and return to running Visual Studio Code in the context of a local workspace.
+
+1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen Folder Locally**.
+
+    :::image type="content" source="../media/codespaces/reopen-local-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within your local environment.":::
+
+> [!TIP]
+> Visual Studio Code will stop the running development container, but the container still exists in Docker in a stopped state. You always have the option to deleting the container instance, container image, and volumes from Docker to free up more space on your local machine.
+
+---

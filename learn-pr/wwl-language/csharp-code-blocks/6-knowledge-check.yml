@@ -4,26 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/04/2023
+  ms.date: 09/01/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following describes the affect of a `using` statement?"
-    choices:
-    - content: "Affects only the first code block in the code file."
-      isCorrect: false
-      explanation: "Incorrect. The `using` statement applies to more than just the first code block in the code file."
-    - content: "Affects only the current code block in the code file."
-      isCorrect: false
-      explanation: "Incorrect. The `using` statement applies to more than just the current code block in the code file."
-    - content: "Affects all of the code in the code file."
-      isCorrect: true
-      explanation: "Correct! The `using` statement applies to all of the code in a code file."
   - content: "Which of the following statements is true about showing/removing the curly braces for code blocks associated with an `if` statement?"
     choices:
     - content: "The curly braces can't be removed from the code block for `else if` and `else` statements."

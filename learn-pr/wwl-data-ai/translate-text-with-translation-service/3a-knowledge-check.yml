@@ -4,35 +4,34 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/27/2023
+  ms.date: 08/22/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 2
 quiz:
+  title: ""
   questions:
-  - content: "You are developing an application that must take English input from a microphone and generate a real-time text-based transcription in Hindi. Which service should you use?"
+  - content: "You're developing an application that must take English input from a microphone and generate a real-time text-based transcription in Hindi. Which service should you use?"
     choices:
-    - content: "Translator"
+    - content: "Azure AI Translator"
       isCorrect: false
-      explanation: "Incorrect. The Translator service can translate from a text source, but not from an audio source."
-    - content: "Speech"
+      explanation: "Incorrect. Azure AI Translator can translate from a text source, but not from an audio source."
+    - content: "Azure AI Speech"
       isCorrect: true
-      explanation: "Correct. The Speech service can translate from audio sources to text."
-    - content: "Language"
+      explanation: "Correct. Azure AI Speech can translate from audio sources to text."
+    - content: "Azure AI Language"
       isCorrect: false
-      explanation: "Incorrect. The Language service does not support translation or speech input."
-  - content: "You need to use the Translator service to translate email messages from Spanish into both English and French. What is the most efficient way to accomplish this goal?"
+      explanation: "Incorrect. Azure AI Language doesn't support translation or speech input."
+  - content: "You need to use Azure AI Translator to translate email messages from Spanish into both English and French. What is the most efficient way to accomplish this goal?"
     choices:
-    - content: "Make a single call to the service; specifying a \"from\" language of \"es\", a \"to\" language of \"en\", and another \"to\" language of \"fr\"."
+    - content: "Make a single call to the service; specifying a \"from\" language of \"es,\" a \"to\" language of \"en,\" and another \"to\" language of \"fr.\""
       isCorrect: true
       explanation: "Correct. You can specify a single \"from\" language and multiple \"to\" languages."
-    - content: "Make a single call to the service; specifying a \"from\" language of \"es\", and a \"to\" language of \"en-fr\"."
+    - content: "Make a single call to the service; specifying a \"from\" language of \"es,\" and a \"to\" language of \"en-fr.\""
       isCorrect: false
       explanation: "Incorrect. You can't combine languages in a single \"to\" parameter."
-    - content: "Make two calls to the service; one with a \"from\" language of \"es\" and a \"to\" language of \"en\", and another with a \"from\" language of \"es\" and a \"to\" language of \"fr\""
+    - content: "Make two calls to the service; one with a \"from\" language of \"es\" and a \"to\" language of \"en,\" and another with a \"from\" language of \"es\" and a \"to\" language of \"fr.\""
       isCorrect: false
-      explanation: "Incorrect. While this approach would work, it requires multiple calls to the service. It is not the most efficient option."
+      explanation: "Incorrect. While this approach would work, it requires multiple calls to the service. Isn't the most efficient option."

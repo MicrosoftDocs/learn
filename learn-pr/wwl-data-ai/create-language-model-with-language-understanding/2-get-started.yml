@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-language-model-with-luis.get-started
-title: Getting started with Conversational Language Understanding
+title: Get started with conversational language understanding
 metadata:
-  title: Getting started with Conversational Language Understanding
-  description: "Getting started with Conversational Language Understanding"
-  ms.date: 03/06/2023
+  title: Get started with conversational language understanding
+  description: "Get started with conversational language understanding"
+  ms.date: 08/16/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: artificial-intelligence
+  ms.subservice: language-understanding
 durationInMinutes: 3
 content: |
   [!include[](includes/2-get-started.md)]

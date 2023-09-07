@@ -15,4 +15,4 @@ durationInMinutes: 5
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/3-exercise-transcribe-audio-files.md)]
+  [!INCLUDE[](includes/3-exercise-transcribe-audio-files.md)]

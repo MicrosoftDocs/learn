@@ -15,70 +15,70 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following Azure Cloud Shell/Azure CLI commands creates an Azure Storage account?"
+  - content: Which of the following Azure CLI commands creates an Azure Storage account?
     choices:
-    - content: "`az group create`"
+    - content: az group create
       isCorrect: false
-      explanation: "Incorrect. Actually, this Azure CLI command creates an Azure resource group."
-    - content: "`az account create`"
+      explanation: Incorrect. Actually, this Azure CLI command creates an Azure resource group.
+    - content: az account create
       isCorrect: false
-      explanation: "Incorrect. This command isn't a real Azure CLI command."
-    - content: "`az storage account create`"
+      explanation: Incorrect. This command isn't a real Azure CLI command.
+    - content: az storage account create
       isCorrect: true
-      explanation: "Correct! This command creates a new storage account."
-    - content: "`az storage create`"
+      explanation: Correct! This command creates a new storage account.
+    - content: az storage create
       isCorrect: false
-      explanation: "Incorrect. This command isn't a real Azure CLI command."
-  - content: "What is the difference between precision and recall when measuring the accuracy of a machine learning model?"
+      explanation: Incorrect. This command isn't a real Azure CLI command.
+  - content: What is the difference between precision and recall when measuring the accuracy of a machine learning model?
     choices:
-    - content: "Precision roughly measures false positives. Recall roughly measures false negatives."
+    - content: Precision roughly measures false positives. Recall roughly measures false negatives.
       isCorrect: true
-      explanation: "Correct! Technically, precision is (# true positive) / (# true positives + # false positives), and recall is (# true positives) / (# true positives + # false negatives)."
-    - content: "Precision roughly measures false negatives. Recall roughly measures false positives."
+      explanation: Correct! Technically, precision is (# true positive) / (# true positives + # false positives), and recall is (# true positives) / (# true positives + # false negatives).
+    - content: Precision roughly measures false negatives. Recall roughly measures false positives.
       isCorrect: false
-      explanation: "Incorrect. Precision and recall are slightly different."
-    - content: "Precision is a mean of false-positive rates computed across a range of thresholds."
+      explanation: Incorrect. Precision and recall are slightly different.
+    - content: Precision is a mean of false-positive rates computed across a range of thresholds.
       isCorrect: false
-      explanation: "Incorrect. Precision and recall both are slightly simpler than this answer."
-    - content: "Recall is a mean of false-positive rates computed across a range of thresholds."
+      explanation: Incorrect. Precision and recall both are slightly simpler than this answer.
+    - content: Recall is a mean of false-positive rates computed across a range of thresholds.
       isCorrect: false
-      explanation: "Incorrect. Precision and recall both are slightly simpler than this answer."
-  - content: "When you deploy a function app in Azure Functions, what's one reason to choose App Service Plan over Consumption Plan?"
+      explanation: Incorrect. Precision and recall both are slightly simpler than this answer.
+  - content: When you deploy a function app in Azure Functions, what's one reason to choose App Service Plan over Consumption Plan?
     choices:
-    - content: "Function apps that are hosted in an App Service Plan support parallel execution. Function apps that are hosted under the Consumption Plan, don't support parallel execution."
+    - content: Function apps that are hosted in an App Service Plan support parallel execution. Function apps that are hosted under the Consumption Plan, don't support parallel execution.
       isCorrect: false
-      explanation: "Incorrect. All function types in Azure Functions support parallel execution."
-    - content: "App Service Plans that host function apps in Azure Functions don't incur charges."
+      explanation: Incorrect. All function types in Azure Functions support parallel execution.
+    - content: App Service Plans that host function apps in Azure Functions don't incur charges.
       isCorrect: false
-      explanation: "Incorrect. All function types in Azure Functions have a charge model, but how does it differ?"
-    - content: "Functions that are hosted in an App Service Plan incur charges only when they execute."
+      explanation: Incorrect. All function types in Azure Functions have a charge model, but how does it differ?
+    - content: Functions that are hosted in an App Service Plan incur charges only when they execute.
       isCorrect: false
-      explanation: "Incorrect. Actually, this statement is true of the Consumption model. The App Service model continually runs a compute instance to support your function apps."
-    - content: "Function apps that are hosted in an App Service Plan execute immediately when triggered."
+      explanation: Incorrect. Actually, this statement is true of the Consumption model. The App Service model continually runs a compute instance to support your function apps.
+    - content: Function apps that are hosted in an App Service Plan execute immediately when triggered.
       isCorrect: true
-      explanation: "Correct. When you use the Consumption model, it might take a few minutes for a machine to run your function app when it's fired. With the App Service plan, the function app runs immediately."
-  - content: "When you deploy a SQL database in Azure SQL Database, what's the purpose of adding a client IP address to the security policy?"
+      explanation: Correct. When you use the Consumption model, it might take a few minutes for a machine to run your function app when it's fired. With the App Service plan, the function app runs immediately.
+  - content: When you deploy a SQL database in Azure SQL Database, what's the purpose of adding a client IP address to the security policy?
     choices:
-    - content: "To allow other Azure services to connect to the SQL database."
+    - content: To allow other Azure services to connect to the SQL Database.
       isCorrect: false
-      explanation: "Incorrect. We did allow Azure services to connect to the database in this module, but that's not why we added the client IP address."
-    - content: "To allow applications running on your computer to connect to the database."
+      explanation: Incorrect. We did allow Azure services to connect to the database in this module, but that's not why we added the client IP address.
+    - content: To allow applications running on your computer to connect to the database.
       isCorrect: true
-      explanation: "Correct! Your client IP is the IP address of your own computer. Adding it to the database security rules allows your computer to connect to it."
-    - content: "To make Microsoft aware of your computer's IP address for Windows updates."
+      explanation: Correct! Your client IP is the IP address of your own computer. Adding it to the database security rules allows your computer to connect to it.
+    - content: To make Microsoft aware of your computer's IP address for Windows updates.
       isCorrect: false
-      explanation: "Incorrect. It does make the database (not Microsoft) aware of your computer's IP address, but not for updates."
-  - content: "Power BI Desktop runs on which of the following operating systems?"
+      explanation: Incorrect. It does make the database (not Microsoft) aware of your computer's IP address, but not for updates.
+  - content: Power BI Desktop runs on which of the following operating systems?
     choices:
-    - content: "Windows only"
+    - content: Windows only
       isCorrect: true
-      explanation: "Correct! Power BI Desktop runs only on Windows, but you can view Power BI reports on any platform."
-    - content: "Windows and macOS"
+      explanation: Correct! Power BI Desktop runs only on Windows, but you can view Power BI reports on any platform.
+    - content: Windows and macOS
       isCorrect: false
-      explanation: "Incorrect. Power BI Desktop runs only on Windows, but you can view Power BI reports on any platform."
-    - content: "Windows, macOS, and Linux"
+      explanation: Incorrect. Power BI Desktop runs only on Windows, but you can view Power BI reports on any platform.
+    - content: Windows, macOS, and Linux
       isCorrect: false
-      explanation: "Incorrect. Power BI Desktop runs only on Windows, but you can view Power BI reports on any platform."
-    - content: "macOS and Linux"
+      explanation: Incorrect. Power BI Desktop runs only on Windows, but you can view Power BI reports on any platform.
+    - content: macOS and Linux
       isCorrect: false
-      explanation: "Incorrect. Power BI Desktop runs only on Windows, but you can view Power BI reports on any platform."
+      explanation: Incorrect. Power BI Desktop runs only on Windows, but you can view Power BI reports on any platform.

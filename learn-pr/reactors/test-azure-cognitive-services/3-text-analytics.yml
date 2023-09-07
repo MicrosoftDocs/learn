@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.test-azure-cognitive-services.3-text-analytics
-title: 'Azure Cognitive Services: Text Analytics'
+title: 'Azure AI services: Text Analytics'
 metadata:
-  title: 'Azure Cognitive Services: Text Analytics'
-  description: Learn about Azure Cognitive Services Text Analytics for data science operations.
+  title: 'Azure AI services: Text Analytics'
+  description: Learn about Azure AI services Text Analytics for data science operations.
   ms.date: 06/23/2022
   author: aahill
   ms.author: aahi
@@ -12,4 +12,4 @@ metadata:
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-text-analytics.md)] 
+  [!INCLUDE[](includes/3-text-analytics.md)]

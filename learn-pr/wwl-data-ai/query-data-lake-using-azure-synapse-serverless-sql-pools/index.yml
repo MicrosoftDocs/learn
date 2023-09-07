@@ -3,11 +3,10 @@ uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
 metadata:
   title: Use Azure Synapse serverless SQL pool to query files in a data lake
   description: "Use Azure Synapse serverless SQL pool to query files in a data lake"
-  ms.date: 05/26/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Use Azure Synapse serverless SQL pool to query files in a data lake
 summary: With Azure Synapse serverless SQL pool, you can leverage your SQL skills to explore and analyze data in files, without the need to load the data into a relational database.
 abstract: |
