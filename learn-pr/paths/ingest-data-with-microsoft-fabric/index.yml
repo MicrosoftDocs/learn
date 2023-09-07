@@ -2,8 +2,8 @@
 uid: learn.wwl.ingest-data-with-microsoft-fabric
 metadata:
   title: Ingest data with Microsoft Fabric
-  description: Ingest data with Microsoft Fabric
-  ms.date: 09/05/2023
+  description: Explore how Microsoft Fabric enables you to ingest and orchestrate data from various sources (such as files, databases, or web services) through dataflows, notebooks, and pipelines.
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   Familiarity with Microsoft Fabric:
   https://learn.microsoft.com/training/paths/get-started-fabric/
 summary: |
-  Learn how to ingest and orchestrate data in Microsoft Fabric using dataflows, notebooks, and pipelines.
+  Explore how Microsoft Fabric enables you to ingest and orchestrate data from various sources (such as files, databases, or web services) through dataflows, notebooks, and pipelines.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
