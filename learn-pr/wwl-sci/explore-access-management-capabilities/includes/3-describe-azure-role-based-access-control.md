@@ -43,7 +43,7 @@ To make it convenient to manage identity across Microsoft 365 services, Microsof
 
 - Cross-service roles: There are some roles within Microsoft Entra that span services. For example, Microsoft Entra has security-related roles, like Security Administrator, that grant access across multiple security services within Microsoft 365.  Similarly, the Compliance Administrator role grants access to manage Compliance-related settings in Microsoft 365 Compliance Center, Exchange, and so on.
 
-:::image type="content" source="../media/role-overlap-diagram-v4-inline.png" lightbox="../media/role-overlap-diagram-v4-expanded.png" alt-text="Diagram of Microsoft Entra role categories.":::
+:::image type="content" source="../media/role-overlap-diagram-v5-inline.png" lightbox="../media/role-overlap-diagram-v5-expanded.png" alt-text="Diagram of Microsoft Entra role categories.":::
 
 ### Difference between Microsoft Entra RBAC and Azure RBAC
 As described above, Microsoft Entra built-in and custom roles are a form of RBAC in that they control access to Microsoft Entra resources.  This is referred to as Microsoft Entra RBAC.  In the same way that Microsoft Entra roles can control access to Microsoft Entra resources, so too can Azure roles control access to Azure resources.  This is referred to as Azure RBAC.  Although the concept of RBAC applies to both Microsoft Entra RBAC and Azure RBAC, what they control are different.
