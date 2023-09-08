@@ -4,7 +4,7 @@ Microsoft Defender for Cloud is a cloud-native application protection platform (
 - A cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches.
 - A cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads.
 
-:::image type="content" source="../media/defender-for-cloud-pillars-inline.png" lightbox="../media/defender-for-cloud-pillars-expanded.png" alt-text="A graphical representation of the three pillars fo Microsoft Defender for Cloud:  DevOps security management, cloud security posture management, and cloud workload protection platform.":::
+:::image type="content" source="../media/defender-for-cloud-pillars-inline.png" lightbox="../media/defender-for-cloud-pillars-expanded.png" alt-text="A s=diagram showing the three pillars fo Microsoft Defender for Cloud:  DevOps security management, cloud security posture management, and cloud workload protection platform.":::
 
 **DevSecOps**. Defender for Cloud helps you to incorporate good security practices early during the software development process, or DevSecOps. You can protect your code management environments and your code pipelines, and get insights into your development environment security posture from a single location. Defender for DevOps, a service available in Defender for Cloud, empowers security teams to manage DevOps security across multi-pipeline environments.
 

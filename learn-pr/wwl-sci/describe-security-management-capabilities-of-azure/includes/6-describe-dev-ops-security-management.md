@@ -11,6 +11,6 @@ Defender for DevOps uses a central console to empower security teams with the ab
 
 Defender for DevOps allows you to manage your connected DevOps environments and provides your security teams with a high level overview of discovered issues that may exist within them, through the Defender for DevOps console.
 
-:::image type="content" source="../media/devops-metrics-inline.png" lightbox="../media/devops-metrics-expanded.png" alt-text="A snapshot of the Defender for DevOps console, showing the number of vulnerabilities found by Defender for DevOps.":::
+:::image type="content" source="../media/devops-metrics-inline.png" lightbox="../media/devops-metrics-expanded.png" alt-text="A screenshot of the Defender for DevOps console, showing the number of vulnerabilities found by Defender for DevOps.":::
 
 Defender for DevOps helps unify, strengthen and manage multi-pipeline DevOps security.

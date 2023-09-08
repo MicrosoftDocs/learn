@@ -25,7 +25,7 @@ The best way to understand the Microsoft cloud security benchmark is to view it 
 
 The MCSB also includes links to information on implementation that relate to the Azure and AWS guidance, information about security functions at the customer organization who may be accountable, responsible, or consulted for the respective control, and more.  An excerpt from the Microsoft cloud security benchmark version 1 (MCSB v1) and is shown as an example of the type of the content that is included in the MCSB. The image isn't intended to show the complete text for any of the line items.
 
-:::image type="content" source="../media/microsoft-cloud-security-benchmark-v1-inline.png" lightbox="../media/microsoft-cloud-security-benchmark-v1-expanded.png" alt-text="A subset of information from the Microsoft cloud security benchmark v1.":::
+:::image type="content" source="../media/microsoft-cloud-security-benchmark-v1-inline.png" lightbox="../media/microsoft-cloud-security-benchmark-v1-expanded.png" alt-text="A screenshot of a subset of information from the Microsoft cloud security benchmark v1.":::
 
 ### Microsoft cloud security benchmark in Defender for Cloud
 

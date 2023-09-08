@@ -11528,17 +11528,17 @@
     {
       "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/3-describe-explore-azure-security-center.md",
       "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/3-describe-defender-cloud",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/5-describe-benefit-use-cases-defender.md",
       "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/5-describe-enhanced-security-defender-cloud",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/7-describe-different-pricing-tiers.md",
       "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/path/sample-module/index.md",
@@ -13598,22 +13598,22 @@
     {
       "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/5-describe-enhanced-security-defender-cloud.md",
       "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/4-describe-enhanced-security-defender-cloud",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/6-baselines-for-azure.md",
       "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/5-baselines-for-azure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/8-knowledge-check.md",
       "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/6-knowledge-check",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/9-summary-resources.md",
       "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/7-summary-resources",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-sci/describe-security-capabilities-of-azure-sentinel/2-define-concepts-of-siem-soar-xdr.md",
