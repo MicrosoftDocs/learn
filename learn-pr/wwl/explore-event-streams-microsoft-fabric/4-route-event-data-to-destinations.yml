@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-event-streams-microsoft-fabric.routing-event-data-to-destinations
+uid: learn.wwl.explore-event-streams-microsoft-fabric.route-event-data-to-destinations
 title: Routing eventstream data
 metadata:
   title: Routing eventstream data
@@ -11,4 +11,4 @@ metadata:
   ms.service: fabric
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-routing-event-data-to-destinations.md)]
+  [!include[](includes/4-route-event-data-to-destinations.md)]

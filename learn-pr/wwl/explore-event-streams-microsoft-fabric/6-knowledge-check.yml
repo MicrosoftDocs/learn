@@ -53,10 +53,10 @@ quiz:
       explanation: "Correct. The main components of Microsoft Fabric Eventstream are Eventstream, Source, Destination, and Main Editor."
     - content: "Eventstream, Source, Destination, and Pipeline."
       isCorrect: false
-      explanation: "Incorrect. There is no component called Pipeline in Microsoft Fabric Eventstream."
+      explanation: "Incorrect. There's no component called Pipeline in Microsoft Fabric Eventstream."
     - content: "Eventstream, Source, Destination, and Editor."
       isCorrect: false
-      explanation: "Incorrect. The editor is not a component of Microsoft Fabric Eventstream, but rather a tool to design your pipeline."
+      explanation: "Incorrect. The editor isn'tt a component of Microsoft Fabric Eventstream, but rather a tool to design your pipeline."
   - content: "What are some benefits of using Microsoft Fabric Eventstream?"
     choices:
     - content: "Microsoft Fabric Eventstream only supports sending data to one destination."

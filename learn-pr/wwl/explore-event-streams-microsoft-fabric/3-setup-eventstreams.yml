@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-event-streams-microsoft-fabric.setting-up-eventstreams
+uid: learn.wwl.explore-event-streams-microsoft-fabric.setup-eventstreams
 title: Setting up Eventstream
 metadata:
   title: Setting up Eventstream
@@ -11,4 +11,4 @@ metadata:
   ms.service: fabric
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-setting-up-eventstreams.md)]
+  [!include[](includes/3-setup-eventstreams.md)]

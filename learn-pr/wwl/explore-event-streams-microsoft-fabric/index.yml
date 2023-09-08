@@ -31,9 +31,9 @@ subjects:
 - data-integration
 units:
 - learn.wwl.explore-event-streams-microsoft-fabric.introduction
-- learn.wwl.explore-event-streams-microsoft-fabric.eventstream-and-componentns
-- learn.wwl.explore-event-streams-microsoft-fabric.setting-up-eventstreams
-- learn.wwl.explore-event-streams-microsoft-fabric.routing-event-data-to-destinations
+- learn.wwl.explore-event-streams-microsoft-fabric.eventstream-components
+- learn.wwl.explore-event-streams-microsoft-fabric.setup-eventstreams
+- learn.wwl.explore-event-streams-microsoft-fabric.route-event-data-to-destinations
 - learn.wwl.explore-event-streams-microsoft-fabric.exercise
 - learn.wwl.explore-event-streams-microsoft-fabric.knowledge-check
 - learn.wwl.explore-event-streams-microsoft-fabric.summary

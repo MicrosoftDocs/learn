@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-event-streams-microsoft-fabric.eventstream-and-componentns
+uid: learn.wwl.explore-event-streams-microsoft-fabric.eventstream-components
 title: Main components of eventstream
 metadata:
   title: Main components of eventstream
@@ -11,4 +11,4 @@ metadata:
   ms.service: fabric
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-eventstream-and-componentns.md)]
+  [!include[](includes/2-eventstream-components.md)]

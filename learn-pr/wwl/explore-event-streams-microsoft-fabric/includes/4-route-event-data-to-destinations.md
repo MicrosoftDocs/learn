@@ -41,7 +41,8 @@ In eventstream there are currently four current destination types supported incl
 On the Ingest data page, navigate through the tabs to complete the configuration for your destination. You can specify the destination table, source connection, schema, compression type, data format, and preview how the data is sent to your lakehouse. You can also define real-time events processing logic with event processor. See this article for more details.
 Review the status of your data ingestion and select Done. A lakehouse destination tile appears on the canvas, connected to your eventstream. Real-time events are converted into Delta Lake format and then stored in the designated lakehouse tables
 
-> !NOTE: The other destination types, including KQL Database, Custom App, and Reflex can be used in combination with your source or as a stand-alone event stream.
+> [!NOTE] 
+> The other destination types, including KQL Database, Custom App, and Reflex can be used in combination with your source or as a stand-alone event stream.
 
 ## Add event processor operators
 
