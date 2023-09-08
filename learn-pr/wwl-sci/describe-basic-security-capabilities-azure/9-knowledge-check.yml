@@ -53,7 +53,7 @@ quiz:
     - content: "To test and debug their application code."
       isCorrect: false
       explanation: "Incorrect. Application developers can use Azure Key Vault to securely store and retrieve application secrets, such as database connection strings, without having to include it in the application code."
-    - content: "To test register their application code with Azure"
+    - content: "To register their application with Azure"
       isCorrect: false
       explanation: "Incorrect. Application developers can use Azure Key Vault to securely store and retrieve application secrets, such as database connection strings, without having to include it in the application code."
     - content: "To securely store and retrieve application secrets"
