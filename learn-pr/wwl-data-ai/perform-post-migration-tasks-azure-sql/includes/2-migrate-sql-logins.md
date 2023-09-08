@@ -1,16 +1,16 @@
 For a seamless and secure transition of your SQL resources to Azure, understanding and effectively managing the migration of security information is essential.
 
-## SQL logins and groups
-
-While there are various tools and methods available to facilitate this process, one tool to consider is provided by Microsoft, accessible through this [link](https://www.microsoft.com/en-us/download/details.aspx?id=103111). This tool assists in transferring login information from on-premises SQL Servers to Azure SQL Database or other PaaS offerings.
-
-Migrating logins at the end of a database migration project can streamline testing, especially in complex scenarios. Consider an organization with diverse permissions for different business units. If logins are migrated upfront, it can lead to testing delays due to evolving database schemas. Waiting to migrate logins allows security configurations to align with the final structure, simplifying the testing phase, especially when table-dependent security is crucial for data protection.
-
-### Considerations
+## Decide when to migrate SQL logins and groups
 
 Imagine a large organization with a substantial on-premises SQL Server infrastructure that serves various business units. Each business unit has its own set of SQL logins, user roles, and permissions customized to their specific needs. The organization decides to migrate these databases to Azure SQL Database to leverage the cloud's scalability and efficiency benefits.
 
-In this scenario, migrating the logins upfront, before the database migration, could introduce unnecessary complexity to the testing phase. Here's why:
+In this scenario, migrating the logins upfront, before the database migration, could introduce unnecessary complexity to the testing phase.
+
+Migrating logins at the end of a database migration project can facilitate testing, especially in complex scenarios. Consider an organization with diverse permissions for different business units. If logins are migrated upfront, it can lead to testing delays due to evolving database schemas. Waiting to migrate logins allows security configurations to align with the final structure, simplifying the migration process, especially when table-dependent security is crucial for data protection.
+
+### Considerations
+
+ Here's why:
 
 Certainly, here are shorter explanations:
 
@@ -60,6 +60,8 @@ You can use the Azure SQL Migration extension for Azure Data Studio, PowerShell 
 
 
 ### Tool XPTO
+
+This tool assists in transferring login information from on-premises SQL Servers to Azure SQL Database or other PaaS offerings.
 
 The migration of SQL logins and groups are very important, given the complexity of permissions within SQL Server environments. While tools like the Data Migration Assistant (DMA) has the ability to transfer security information and does a full dependency graph to ensure permissions are transferred properly, the script offered here provides an additional option. It enables an Active Directory lookup for users, allowing you to obtain their User Principal Name (UPN), a feature currently not supported by DMA.
 
