@@ -59,3 +59,14 @@ quiz:
     - content: "Policies."
       isCorrect: false
       explanation: "That's incorrect. A snapshot of an organization's current security posture can't be found in the Policies option."
+  - content: "Your security and IT teams want to implement a solution that helps address critical vulnerabilities and misconfigurations across your organization. Which solution in the Microsoft 365 Defender suite can help address these requirements?"
+    choices:
+    - content: "Microsoft Defender for Office 365."
+      isCorrect: false
+      explanation: "That's incorrect. Microsoft Defender for Office 365 is a cloud-based email-filtering service that helps protect your organization against unknown malware and viruses."
+    - content: "Microsoft Defender for Identity."
+      isCorrect: false
+      explanation: "That's incorrect. Microsoft Defender for Identity is a cloud-based security solution that identifies, detects, and helps you investigate advanced threats, compromised identities, and malicious insider actions directed at your organization."
+    - content: "Microsoft Defender Vulnerability Management."
+      isCorrect: true
+      explanation: "That's correct. With Defender Vulnerability Management, you can empower your security and IT teams to prioritize and address critical vulnerabilities and misconfigurations across your organization."
