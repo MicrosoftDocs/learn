@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: microsoft-sentinel
 title: Describe security capabilities of Microsoft Sentinel
-summary: Learn about Microsoft Sentinel a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution.  In this module, you’ll also be introduced to Microsoft Security Copliot.
+summary: Learn about Microsoft Sentinel a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution.  In this module, you’ll also be introduced to Microsoft Security Copilot.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the security concepts for SIEM and SOAR.
