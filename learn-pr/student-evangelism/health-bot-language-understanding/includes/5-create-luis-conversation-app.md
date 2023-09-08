@@ -10,13 +10,13 @@ Creating a LUIS app with Language Understanding consists of two main tasks:
 For each of the authoring and prediction tasks, you need a resource in your Azure subscription. You can use the following types of resources:
 
 - **Language Understanding**: A dedicated resource for Language Understanding, which can be either an *authoring* or a *prediction* resource.
-- **Azure Cognitive Services**: A general Cognitive Services resource that includes Language Understanding along with many other Cognitive Services. You can only use this type of resource for prediction.
+- **Azure AI services**: A general Azure AI services resource that includes Language Understanding along with many other Azure AI services. You can only use this type of resource for prediction.
 
 The separation of resources is useful to track resource utilization for language model training separately from client applications that use the model to generate predictions.
 
 If you choose to create a Language Understanding resource, you're prompted to choose authoring, prediction, or both. If you choose both, *two* resources are created, one for authoring and one for prediction.
 
-Alternatively, you can use a dedicated Language Understanding resource for authoring, but deploy your model to a generic Cognitive Services resource for prediction. When your client application uses other Cognitive Services in addition to Language Understanding, you can manage access to all the Cognitive Services being used through a single endpoint and key.
+Alternatively, you can use a dedicated Language Understanding resource for authoring, but deploy your model to a generic Azure AI services resource for prediction. When your client application uses other Azure AI services in addition to Language Understanding, you can manage access to all the Azure AI services being used through a single endpoint and key.
 
 In this module, you're using the Language Understanding resource.
 

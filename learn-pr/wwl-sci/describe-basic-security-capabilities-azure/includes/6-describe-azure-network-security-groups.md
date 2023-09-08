@@ -1,7 +1,7 @@
 
 Network security groups (NSGs) let you filter network traffic to and from Azure resources in an Azure virtual network; for example, a virtual machine. An NSG consists of rules that define how the traffic is filtered. You can associate only one network security group to each virtual network subnet and network interface in a virtual machine. The same network security group, however, can be associated to as many different subnets and network interfaces as you choose. 
 
-In the highly simplified diagram, shown below, you can see an Azure virtual network with two subnets that are connected to the internet, and each subnet has a virtual machine.  Subnet 1 has an NSG assigned to it that's filtering inbound and outbound access to VM1, which needs a higher level of access. In contrast, VM2 could represent a public-facing machine that doesn't require an NSG.
+In the highly simplified diagram that follows, you can see an Azure virtual network with two subnets that are connected to the internet, and each subnet has a virtual machine.  Subnet 1 has an NSG assigned to it that's filtering inbound and outbound access to VM1, which needs a higher level of access. In contrast, VM2 could represent a public-facing machine that doesn't require an NSG.
 
 :::image type="content" source="../media/2-virtual-network.png" alt-text="Diagram showing a simplified virtual network with two subnets each with a dedicated virtual machine resource, the first subnet has a network security group and the second subnet doesn't.":::
 
@@ -19,7 +19,7 @@ Each rule specifies one or more of the following properties:
 - **Port range**: You can specify an individual or range of ports. Specifying ranges enables you to be more efficient when creating security rules. 
 - **Action**: Finally, you need to decide what will happen when this rule is triggered.
 
-As an example, the table below shows the default inbound rules, which are included in all NSGs. For this example, assume no other inbound rules have been defined for this NSG.
+As an example, the table that follows shows the default inbound rules, which are included in all NSGs. For this example, assume no other inbound rules have been defined for this NSG.
 
 |Name|Priority|Source|Source ports|Destination|Destination ports|Protocol|Access|
 |---------|---------|---------|---------|---------|---------|---------|---------|

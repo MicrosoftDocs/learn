@@ -1,4 +1,3 @@
-
 Good job! So far you’ve created a new GitHub repository using the GitHub web interface, set up software to help you work with that repository locally, and then made changes and handled conflicts. Now, you’re going to get all of your changes into one place, the **main** branch.
 
 Visual Studio Code should already be open, with your repository in the explorer pane. Recall that when merging branches in Git, you always merge the branch with updates into the branch you want to update. For this to work, you have to be working in the branch you want to update.
