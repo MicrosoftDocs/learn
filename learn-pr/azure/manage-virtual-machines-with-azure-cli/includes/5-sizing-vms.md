@@ -1,6 +1,6 @@
 Virtual machines must be sized appropriately for the expected work. A VM without the correct amount of memory or CPU will fail under load or run too slowly to be effective.
 
-## Pre-defined VM sizes
+## Predefined VM sizes
 
 When you create a virtual machine, you can supply a _VM size_ value that determines the amount of compute resources devoted to the VM. This includes CPU, GPU, and memory made available to the virtual machine from Azure.
 
@@ -64,7 +64,7 @@ az vm create \
 ```
 
 > [!WARNING]
-> Your subscription tier [enforces limits](/azure/azure-subscription-service-limits) on how many resources you can create, as well as the total size of those resources. Quota limits depend upon your subscription type and region. The Azure CLI will let you know when you exceed this limit with a **Quota Exceeded** error. If you hit this error in your own paid subscription, you can request to raise the limits associated with your paid subscription (up to 10,000 vCPUs) through a [free online request](/azure/azure-resource-manager/resource-manager-quota-errors).
+> Your subscription tier [enforces limits](/azure/azure-subscription-service-limits) on how many resources you can create, as well as the total size of those resources. Quota limits depend upon your subscription type and region. The Azure CLI lets you know when you exceed this limit with a **Quota Exceeded** error. If you hit this error in your own paid subscription, you can request to raise the limits associated with your paid subscription (up to 10,000 vCPUs) through a [free online request](/azure/azure-resource-manager/resource-manager-quota-errors).
 
 ## Resize an existing VM
 
@@ -77,7 +77,7 @@ az vm list-vm-resize-options \
     --output table
 ```
 
-This will return a list of all the possible size configurations available in the resource group. If the size we want isn't available in our cluster but _is_ available in the region, we can [deallocate the VM](/cli/azure/vm#az-vm-deallocate). This command will stop the running VM and remove it from the current cluster without losing any resources. We can then resize it, which will re-create the VM in a new cluster where the size configuration is available.
+This returns a list of all the possible size configurations available in the resource group. If the size we want isn't available in our cluster but _is_ available in the region, we can [deallocate the VM](/cli/azure/vm#az-vm-deallocate). This command stops the running VM and remove it from the current cluster without losing any resources. We can then resize it, which re-creates the VM in a new cluster where the size configuration is available.
 
 > [!NOTE]
 > The Microsoft Learn sandbox is limited to a few VM sizes.
@@ -91,4 +91,4 @@ az vm resize \
     --size Standard_D2s_v3
 ```
 
-This command will take a few minutes to reduce the resources of the VM, and once it's done, it will return a new JSON configuration.
+This command takes a few minutes to reduce the resources of the VM, and once it's done, it'll return a new JSON configuration.
