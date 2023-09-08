@@ -1,8 +1,8 @@
 You can use Azure Monitor to view metrics on all of your Azure resources. 
 
-Your band is going on tour next month, so you need to identify which metrics you want to use to monitor the health of your virtual machines (VMs).
+Your band is going on tour next month, so you need to identify which metrics you want to use to monitor the health of the virtual machines (VMs) that host your band's website.
 
-In this unit, you'll look at how to use Azure metrics to monitor the health of a VM. You'll explore the metrics available in Azure.
+In this unit, you explore the metrics available in Azure and look at how to use Azure metrics to monitor the health of a VM.
 
 ## Basic metrics for Azure VMs
 
@@ -31,19 +31,19 @@ By using Virtual Machine host metrics, you can:
 
 ## Get more metrics
 
-To collect Guest OS metrics, you need to install the Azure Monitor Agent, and select the metrics to be collected by using Data Collection Rules. The Azure Monitor Agent  is available for Windows and Linux.
+To collect Guest OS metrics, you need to install the Azure Monitor Agent, and select the metrics to be collected by using Data Collection Rules. The Azure Monitor Agent is available for Windows and Linux.
 
 After you've installed the Azure Monitor Agent, you can:
 
-- Collect guest OS metrics
-- Create and access near real-time metric alerts
+- Collect guest OS metrics.
+- Create and access near real-time metric alerts.
 - Collect and archive logs in Azure Monitor logs for further analysis.
 
 You can install the Azure Monitor Agent by using the Azure portal, or programmatically with the Azure CLI, or PowerShell.
 
 ## Get boot diagnostics
 
-In addition to the metrics discussed above, you can also enable boot diagnostics to troubleshoot VMs in Azure. Boot diagnostics help you identify issues with your VMs during the boot process. The boot diagnostics feature needs a storage account to save the data that it collects.
+In addition to the metrics discussed in this unit, you can also enable boot diagnostics to troubleshoot VMs in Azure. Boot diagnostics help you identify issues with your VMs during the boot process. The boot diagnostics feature needs a storage account to save the data that it collects.
 
 Once boot diagnostics is enabled, you can:
 

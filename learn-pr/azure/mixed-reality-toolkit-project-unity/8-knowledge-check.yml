@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Five multiple-choice questions
-  ms.date: 08/11/2020
-  author: aprilspeight
-  ms.author: apspeigh
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom:
@@ -19,58 +19,33 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "In the Unity Build Settings, which platform should be selected to target Windows Mixed Reality?"
+    - content: " In the Unity **Build Settings** window, which platform should be selected to target Windows Mixed Reality?"
       choices:
-        - content: "WebGL"
+        - content: " WebGL"
           isCorrect: false
-          explanation: "The WebGL platform is used to publish an application to a web browser."
+          explanation: WebGL is a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins. 
         - content: "PC, Mac & Linux Standalone"
           isCorrect: false
-          explanation: "The PC, Mac and Linux Standalone platform is used to build standalone applications for most desktop platforms."
+          explanation: The PC, Mac & Linux Standalone build settings contain options you can use to set up and begin the build process for your application on these platforms.
         - content: "Universal Windows Platform"
           isCorrect: true
-          explanation: "To target Windows Mixed Reality, your Unity project must be set to export as a Universal Windows Platform app."
-    - content: "Which Mixed Reality Toolkit package is the only package required to be imported and configured to use the Mixed Reality Toolkit?"
+          explanation: With the Universal Windows Platform (UWP), developers can target Windows 10 tablets and PCs, Windows 10 mobile devices (that is, phones), Xbox One and HoloLens with a single code base.
+    - content: "Which Mixed Reality Toolkit package is the only one you're required to import and configure in order to use the Mixed Reality Toolkit?"
       choices:
-        - content: "Microsoft.MixedRealityToolkit.Unity.Extensions.unitypackage"
-          isCorrect: false
-          explanation: "The extensions package provides a set of useful optional components for the Mixed Reality Toolkit."
-        - content: "Microsoft.MixedRealityToolkit.Unity.Foundation.unitypackage"
+        - content: "org.mixedrealitytoolkit.core"
           isCorrect: true
-          explanation: "The foundation package is the only required package and includes the core components required to create a mixed reality application."
-        - content: "Microsoft.MixedRealityToolkit.Unity.Examples.unitypackage"
+          explanation: The core package is the only required package and includes the core components required to create a mixed reality application.
+        - content: "org.mixedrealitytoolkit.spatialmanipulation"
           isCorrect: false
-          explanation: "The examples package is optional and contains useful demonstration scenes for current Mixed Reality Toolkit features."
-    - content: "After the Mixed Reality Toolkit is added to a Unity scene, what happens to the Main Camera object?"
+          explanation: The spatial manipulation package is optional. It includes implementations of common spatial manipulation components, including BoundsControl, ObjectManipulator, and Solvers.
+        - content: "org.mixedrealitytoolkit.extendedassets"
+          isCorrect: false
+          explanation: The extended assets package is optional and contains additional materials, fonts, audio files and other assets that are used by the MRTK example scenes. These assets can be freely used in your projects as temporary or final art.
+    - content: "After the Mixed Reality Toolkit is added to a Unity scene, what should you do with the Main Camera object?"
       choices:
-        - content: "The Main Camera object is moved as a child to the MixedRealityToolkit object."
+        - content: "The Main Camera object should be left in the scene."
           isCorrect: false
-          explanation: "The MixedRealityToolkit object contains the toolkit itself."
-        - content: "The Main Camera object is moved as a child to the MixedRealityPlayspace object."
+          explanation: "The 'MRTK XR Rig' object already has its own camera."
+        - content: "The Main Camera object should be deleted."
           isCorrect: true
-          explanation: "This allows the playspace to manage the camera simultaneously with the SDKs."
-        - content: "The Main Camera object is deleted as it is not needed for mixed reality development."
-          isCorrect: false
-          explanation: "The Main Camera object is needed to capture and display the world to the user."
-    - content: "A mixed reality experience guides construction workers through a task that requires the use of two hands for the real world task. Which modality would be best suited so that the worker can interact with the experience?"
-      choices:
-        - content: "Voice input"
-          isCorrect: true
-          explanation: "The use of voice input would eliminate the need of the user to use their hands to interact with the experience."
-        - content: "Gaze and commit with hand gestures"
-          isCorrect: false
-          explanation: "Although the user could use their head or eyes to gaze, the user would be required to use their hands to interact with the mixed reality experience."
-        - content: "Motion controllers"
-          isCorrect: false
-          explanation: "The use of a motion controller would require the user to hold a device with their hands to interact with the experience."
-    - content: "What is the purpose of the ObjectManipulator script?"
-      choices:
-        - content: "This script makes an object movable, scalable and rotatable using one or two hands."
-          isCorrect: true
-          explanation: "The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands."
-        - content: "This script makes an object grabbable from a close distance."
-          isCorrect: false
-          explanation: "The NearInteractionGrabbable script enables the user to grab an object from a close distance."
-        - content: "This script makes an object change color when a user gazes at the object."
-          isCorrect: false
-          explanation: "A configuration which involves gaze and commit would be required for this type of interaction."
+          explanation: "The Main Camera object should be deleted because the 'MRTK XR Rig' prefab that was added to the scene contains a camera in its child objects."

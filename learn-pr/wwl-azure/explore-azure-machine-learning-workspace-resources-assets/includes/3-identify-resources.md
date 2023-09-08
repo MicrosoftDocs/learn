@@ -10,9 +10,9 @@ The resources in Azure Machine Learning include:
 
 ## Create and manage the workspace
 
-The **workspace** is the top-level resource for Azure Machine Learning. Data scientists will need access to the workspace to train and track models, and to deploy the models to endpoints. 
+The **workspace** is the top-level resource for Azure Machine Learning. Data scientists will need access to the workspace to train and track models, and to deploy the models to endpoints.
 
-However, you want to be careful with who has *full* access to the workspace. Next to references to compute resources and datastores, the workspace stores all logs, metrics, outputs, models, and snapshots of your code. 
+However, you want to be careful with who has *full* access to the workspace. Next to references to compute resources and datastores, you can find all logs, metrics, outputs, models, and snapshots of your code in the workspace.
 
 ## Create and manage compute resources
 

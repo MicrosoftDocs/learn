@@ -1,4 +1,4 @@
-Prebuilt models in Azure Forms Recognizer enable you to extract data from common forms and documents without training your own models.
+Prebuilt models in Azure AI Document Intelligence enable you to extract data from common forms and documents without training your own models.
 
 In your polling company, polling forms are unique to each survey project, but you also use invoices and receipts to record financial transactions and you have many unstructured documents. You want to know how much work is required to extract names, addresses, amounts, and other information from these documents.
 
@@ -56,7 +56,7 @@ PDF and TIFF files can have any number of pages but, in the standard tier, only 
 
 ## Compare prebuilt models
 
-Use this table to select the best prebuilt model to support your business requirements. In the following units you'll learn further details about each model and how to set them up in Forms Recognizer. 
+Use this table to select the best prebuilt model to support your business requirements. In the following units you'll learn further details about each model and how to set them up in Azure AI Document Intelligence. 
 
 | Model            | Text extraction | Key-value pairs | Entities | Selection marks | Tables | Fields |
 | ---              | ---             | ---             | ---      | ---             | ---    | ---    |
@@ -72,17 +72,17 @@ Use this table to select the best prebuilt model to support your business requir
 
 Also consider that prebuilt models are designed for and trained on generic document and form types. If you have an industry-specific or unique form type that you use often, you might be able to obtain more reliable and predictable results by using a custom model. However, custom models take time to develop because you must invest the time and resources to train them on example forms before you can use it. The larger the number of example forms you provide for training, the better the model will be at prediction form content accurately.
 
-## Try out prebuilt models with Forms Recognizer Studio
+## Try out prebuilt models with Azure AI Document Intelligence Studio
 
-Forms Recognizer is designed as a web service you can call using code in your custom applications. However, it's often helpful to explore the models and how they behavior with your forms in a Graphical User Interface (GUI). You can perform such experiments by using [Forms Recognizer Studio](https://formrecognizer.appliedai.azure.com/studio) and use the experience to help design and write your code.
+Azure AI Document Intelligence is designed as a web service you can call using code in your custom applications. However, it's often helpful to explore the models and how they behavior with your forms in a Graphical User Interface (GUI). You can perform such experiments by using [Azure AI Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio) and use the experience to help design and write your code.
 
-You can choose any of the prebuilt models in Forms Recognizer Studio. Microsoft provides some sample documents for use with each model or you can add your own documents and analyze them.
+You can choose any of the prebuilt models in Azure AI Document Intelligence Studio. Microsoft provides some sample documents for use with each model or you can add your own documents and analyze them.
 
-:::image type="content" source="../media/2-studio-business-card-example.png" alt-text="Screenshot showing how to use Forms Recognizer Studio to explore the business card prebuilt model." lightbox="../media/2-studio-business-card-example.png":::
+:::image type="content" source="../media/2-studio-business-card-example.png" alt-text="Screenshot showing how to use Azure AI Document Intelligence Studio to explore the business card prebuilt model." lightbox="../media/2-studio-business-card-example.png":::
 
 ## Calling prebuilt models by using APIs
 
-Because Forms Recognizer implements RESTful web services, you can use web service calls from any language that supports them. However, when you use Microsoft's Form Recognizer APIs, security and session management is simplified and you have to write less code.
+Because Azure AI Document Intelligence implements RESTful web services, you can use web service calls from any language that supports them. However, when you use Microsoft's Azure AI Document Intelligence APIs, security and session management is simplified and you have to write less code.
 
 APIs are available for:
 
@@ -91,7 +91,7 @@ APIs are available for:
 - Python.
 - JavaScript.
 
-Whenever you want to call Forms Analyzer, you must start by connecting and authenticating with the service in your Azure subscription. To make that connection, you need:
+Whenever you want to call Azure AI Document Intelligence, you must start by connecting and authenticating with the service in your Azure subscription. To make that connection, you need:
 
 - **The service endpoint.** This value is the URL where the service is published.
 - **The API key.** This value is a unique key that grants access.
@@ -124,5 +124,5 @@ The details you can extract from these results depend on the model you used.
 
 ## Learn more
 
-- [What is Azure Form Recognizer?](/azure/applied-ai-services/form-recognizer/overview)
-- [Form Recognizer models](/azure/applied-ai-services/form-recognizer/concept-model-overview)
+- [What is Azure AI Document Intelligence?](/azure/applied-ai-services/form-recognizer/overview)
+- [Azure AI Document Intelligence models](/azure/applied-ai-services/form-recognizer/concept-model-overview)

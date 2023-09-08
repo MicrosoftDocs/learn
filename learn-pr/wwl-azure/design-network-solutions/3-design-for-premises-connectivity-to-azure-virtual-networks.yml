@@ -4,11 +4,10 @@ title: Design for on-premises connectivity to Azure Virtual Network
 metadata:
   title: Design for on-premises connectivity to Azure Virtual Network
   description: "Design for on-premises connectivity to Azure Virtual Network"
-  ms.date: 03/17/2023
+  ms.date: 08/24/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

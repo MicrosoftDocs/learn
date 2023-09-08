@@ -4,7 +4,7 @@ title: Exercise - Discover floating-point types
 metadata:
   title: Exercise - Discover floating-point types
   description: "Exercise - Discover floating-point types"
-  ms.date: 06/07/2023
+  ms.date: 08/30/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "decimal"
       isCorrect: true
-      explanation: "Correct. Decimal has the precision required for many financial applications."
+      explanation: "Correct. Decimal, with ~28-29 digits of precision, has the precision required for many financial applications."
     - content: "float"
       isCorrect: false
-      explanation: "That’s incorrect. Decimal has the precision required for many financial applications."
+      explanation: "That’s incorrect. Float, with ~6-9 digits of precision, doesn't have the precision required for many financial applications."
     - content: "double"
       isCorrect: false
-      explanation: "That’s incorrect. Decimal has the precision required for many financial applications."
+      explanation: "That’s incorrect. Double, with ~15-17 digits of precision, doesn't have the precision required for many financial applications."

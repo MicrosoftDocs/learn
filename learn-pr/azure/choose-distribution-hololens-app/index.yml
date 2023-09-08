@@ -18,7 +18,7 @@ abstract: |
     -	Gain insights into managing updates for HoloLens 2 apps
 
 prerequisites: "Although this module has no requirements, you’re encouraged to have a HoloLens 2 application complete and ready for distribution."
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/choose-distribution-hololens-app.svg
 levels:
   - beginner
 roles:

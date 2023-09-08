@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.work-with-form-recognizer.form-recognizer-studio
-title: Use the Form Recognizer Studio
+title: Use the Azure Document Intelligence Studio
 metadata:
-  title: Use the Form Recognizer Studio
-  description: "Use the Form Recognizer Studio"
+  title: Use the Azure Document Intelligence Studio
+  description: "Use the Azure Document Intelligence Studio"
   ms.date: 05/17/2022
   author: wwlpublish
   ms.author: sheryang

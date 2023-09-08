@@ -6,7 +6,7 @@ metadata:
   description: "Implement multi-turn conversation"
   ms.date: 07/19/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
   ms.subservice: qna-maker

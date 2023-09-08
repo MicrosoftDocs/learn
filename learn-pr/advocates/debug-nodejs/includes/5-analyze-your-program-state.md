@@ -8,7 +8,7 @@ In Visual Studio Code, select the **Run** tab to access the debugger tool.
 
 :::image source="../media/run-tab.png" alt-text="Screenshot of Visual Studio Code debug tab.":::
 
-If you have a Node.js project open, you have three different ways to activate the debugger:
+You have three different ways to activate the debugger:
 
 - If you have a `.js` file open in the editor window, select **Run and Debug**. Then, select **Node.js** to directly debug this JavaScript file.
 

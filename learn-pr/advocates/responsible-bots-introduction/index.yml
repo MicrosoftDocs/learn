@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
 title: Introduction to responsible bots
-summary: Find out how to make a bot responsible. Learn about responsible conversational AI. Discover Azure Cognitive Services tools that help make bots engaging and trustworthy.
+summary: Find out how to make a bot responsible. Learn about responsible conversational AI. Discover Azure AI services tools that help make bots engaging and trustworthy.
 abstract: |
   In this module, you'll:
   - Understand the principles of developing responsible bots.
@@ -24,7 +24,7 @@ roles:
 - student
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 prerequisites: |
   - None
 subjects:
