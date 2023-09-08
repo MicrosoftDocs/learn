@@ -17,14 +17,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You want to create a Forms Recognizer model where the documents are in one of three formats: wills, probate declarations, and affidavits. Each has their own specific layout. What type of model should you use that will understand the format of the three document categories?"
+  - content: "You want to create an Azure AI Document Intelligence model where the documents are in one of three formats: wills, probate declarations, and affidavits. Each has their own specific layout. What type of model should you use that will understand the format of the three document categories?"
     choices:
     - content: "A Read model."
       isCorrect: false
-      explanation: "Incorrect. A Read model will obtain text and key-value pairs from the legal documents but will not categorize them."
+      explanation: "Incorrect. A Read model obtains text and key-value pairs from the legal documents but won't categorize them."
     - content: "A Layout model."
       isCorrect: false
-      explanation: "Incorrect. A Layout model will obtain structure information, select marks, and other information from the legal forms, but will not categorize them"
+      explanation: "Incorrect. A Layout model obtains structure information, select marks, and other information from the legal forms, but won't categorize them"
     - content: "A Composed model."
       isCorrect: true
       explanation: "Correct. A Composed model consists of multiple custom models. Each submitted form is categorized as one of the custom form types and analyzed using the corresponding custom model."
@@ -38,48 +38,48 @@ quiz:
       explanation: "Incorrect. The general document model won't help to improve field value extraction for specific document types."
     - content: "Change from the free tier to the standard tier."
       isCorrect: false
-      explanation: "Incorrect. The tier you use for your Forms Recognizer resource doesn't affect the accuracy of field value extraction."
-  - content: "You want to call your Forms Recognizer solution from a mobile app by using an API. Which of the following programming languages is natively supported as a Forms Recognizer SDK?"
+      explanation: "Incorrect. The tier you use for your Azure AI Document Intelligence resource doesn't affect the accuracy of field value extraction."
+  - content: "You want to call your Azure AI Document Intelligence solution from a mobile app by using an API. Which of the following programming languages is natively supported as an Azure AI Document Intelligence SDK?"
     choices:
     - content: "Python"
       isCorrect: true
-      explanation: "Correct. Microsoft publishes a Python API you can use to call Forms Recognizer services."
+      explanation: "Correct. Microsoft publishes a Python API you can use to call Azure AI Document Intelligence services."
     - content: "Go"
       isCorrect: false
-      explanation: "Incorrect. There's no Forms Recognizer API for Go, but you can submit requests through the RESTful web service."
+      explanation: "Incorrect. There's no Azure AI Document Intelligence API for Go, but you can submit requests through the RESTful web service."
     - content: "R"
       isCorrect: false
-      explanation: "Incorrect. There's no Forms Recognizer API for R, but you can submit requests through the RESTful web service."
-  - content: "You are building a solution that will analyze sales invoices. You expect to receive up to ten concurrent requests at busy times and you want your solution to be as simple as possible. What kind of resource should you create?"
+      explanation: "Incorrect. There's no Azure AI Document Intelligence API for R, but you can submit requests through the RESTful web service."
+  - content: "You're building a solution that analyzes sales invoices. You expect to receive up to 10 concurrent requests at busy times and you want your solution to be as simple as possible. What kind of resource should you create?"
     choices:
-    - content: "A Free tier Forms Recognizer resource."
+    - content: "A Free tier Azure AI Document Intelligence resource."
       isCorrect: false
-      explanation: "Incorrect. The Free tier supports 1 request at a time."
-    - content: "A Standard tier Forms Recognizer resource."
+      explanation: "Incorrect. The Free tier supports one request at a time."
+    - content: "A Standard tier Azure AI Document Intelligence resource."
       isCorrect: true
-      explanation: "Correct. The Standard tier supports up to 15 concurrent requests and you don't need other cognitive services."
-    - content: "A Cognitive Services multi-service resource."
+      explanation: "Correct. The Standard tier supports up to 15 concurrent requests and you don't need other Azure AI Services."
+    - content: "An Azure AI Services multi-service resource."
       isCorrect: false
-      explanation: "Incorrect. You can't add Forms Recognizer to a cognitive services multi-service resource."
-  - content: "Which of the following values is required to connect to an Azure Forms Recognizer service?"
+      explanation: "Incorrect. You can't add Azure AI Document Intelligence to an Azure AI Services multi-service resource."
+  - content: "Which of the following values is required to connect to an Azure AI Document Intelligence service?"
     choices:
     - content: "The name of your Azure subscription."
       isCorrect: false
-      explanation: "Incorrect. The name of the Azure subscription isn't required to connect to Forms Recognizer."
+      explanation: "Incorrect. The name of the Azure subscription isn't required to connect to Azure AI Document Intelligence."
     - content: "The endpoint and API key for the Azure resource."
       isCorrect: true
-      explanation: "Correct. You must supply the endpoint and an access key to authenticate when you use a Forms Recognizer service to analyze forms."
-    - content: "The name of the Azure region where your Forms Recognizer service runs."
+      explanation: "Correct. You must supply the endpoint and an access key to authenticate when you use an Azure AI Document Intelligence service to analyze forms."
+    - content: "The name of the Azure region where your Azure AI Document Intelligence service runs."
       isCorrect: false
-      explanation: "Incorrect. You don't need to specify an Azure region to connect to Forms Recognizer."
-  - content: "Which of the following is an Azure Forms Recognizer prebuilt model?"
+      explanation: "Incorrect. You don't need to specify an Azure region to connect to Azure AI Document Intelligence."
+  - content: "Which of the following is an Azure AI Document Intelligence prebuilt model?"
     choices:
     - content: "Employment record"
       isCorrect: false
-      explanation: "Incorrect. There is no employment record prebuilt model in Forms Recognizer although you can analyze scanned employment records and extract text, key/values pairs, and other information"
+      explanation: "Incorrect. There's no employment record prebuilt model in Azure AI Document Intelligence although you can analyze scanned employment records and extract text, key/values pairs, and other information"
     - content: "Resume"
       isCorrect: false
-      explanation: "Incorrect. There is no resume prebuilt model in Forms Recognizer although you can analyze scanned resumes and extract text, key/values pairs, and other information."
+      explanation: "Incorrect. There's no resume prebuilt model in Azure AI Document Intelligence although you can analyze scanned resumes and extract text, key/values pairs, and other information."
     - content: "Receipt"
       isCorrect: true
       explanation: "Correct. The receipt model can identify commonly used fields and their values in scanned or photographed receipt documents."

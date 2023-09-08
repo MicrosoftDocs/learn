@@ -3,7 +3,7 @@ uid: learn.oxford.run-cognitive-services-iot-edge.exercise-deploy-cognitive-serv
 title: Exercise - Deploying a cognitive service to IoT Edge as a container
 metadata:
   title: Exercise - Deploying a pre-built module to IoT Edge as a container
-  description: In this section, the exercise guides the learners in how to deploy a Cognitive Services container from Azure Marketplace to the edge device
+  description: In this section, the exercise guides the learners in how to deploy a Azure AI services container from Azure Marketplace to the edge device
   ms.date: 6/12/2020
   author: leestott
   ms.author: leestott

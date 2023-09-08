@@ -1,26 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.publish-use-language-understand-app
 metadata:
-  title: Publish and use a Language Understanding app
-  description: "After creating a Language Understanding app, you can publish it and consume it from client applications."
+  title: Publish and use an Azure AI Language Understanding app
+  description: "After creating an Azure AI Language Understanding app, you can publish it and consume it from client applications."
   ms.date: 10/12/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
   ms.subservice: language-understanding 
-title: Publish and use a Language Understanding app
-summary: After creating a Language Understanding app, you can publish it and consume it from client applications.
+title: Publish and use an Azure AI Language Understanding app
+summary: After creating an Azure AI Language Understanding app, you can publish it and consume it from client applications.
 abstract: |
   After completing this module, you'll be able to:
-  - Understand capabilities of a Language Understanding app
-  - Process predictions from a Language Understanding app
-  - Deploy a language understanding app in a container
+  - Understand capabilities of an Azure AI Language Understanding app
+  - Process predictions from an Azure AI Language Understanding app
+  - Deploy an Azure AI Language understanding app in a container
 prerequisites: |
   Before starting this module, you should already have:
   *   Familiarity with Azure and the Azure portal.
   *   Experience programming with C# or Python.
-  *   Experience creating a Language Understanding app
+  *   Experience creating an Azure AI Language Understanding app
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path first.
 iconUrl: /training/achievements/publish-use-language-understand-app.svg
 levels:

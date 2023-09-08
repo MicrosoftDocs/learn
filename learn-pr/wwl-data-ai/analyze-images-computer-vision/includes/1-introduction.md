@@ -12,10 +12,10 @@ To an AI application, an image is just an array of pixel values. These numeric v
 
 ![an example of the pixel values that represent an image](../media/computer-vision-pixels.png)
 
-Training machine learning models from scratch can be very time intensive and require a large amount of data. Microsoft's Computer Vision service gives you access to pre-trained computer vision capabilities.  
+Training machine learning models from scratch can be very time intensive and require a large amount of data. Microsoft's Azure AI Vision service gives you access to pre-trained computer vision capabilities.  
 
 ## Learning objectives 
 In this module you will: 
-- Identify image analysis tasks that can be performed with the Computer Vision service.
+- Identify image analysis tasks that can be performed with the Azure AI Vision service.
 - Provision a Computer Vision resource.
 - Use a Computer Vision resource to analyze an image.
