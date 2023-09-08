@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-log-analytics-workspace.configure-log-analytics-health-status-alerts
+title: Configure Log Analytics health status alerts
+metadata:
+  title: Configure Log Analytics health status alerts
+  description: "Configure Log Analytics health status alerts"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-configure-log-analytics-health-status-alerts.md)]

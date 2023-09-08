@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-log-analytics-workspace.configure-log-analytics-data-retention
+title: Configure Log Analytics data retention
+metadata:
+  title: Configure Log Analytics data retention
+  description: "Configure Log Analytics data retention"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-configure-log-analytics-data-retention.md)]

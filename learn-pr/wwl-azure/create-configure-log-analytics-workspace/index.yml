@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.create-configure-log-analytics-workspace
+metadata:
+  title: Create and configure a Log Analytics workspace
+  description: "Create and configure a Log Analytics workspace"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+title: Create and configure a Log Analytics workspace
+summary: Understand how to create and configure a Log Analytics workspace.
+abstract: |
+  - Create a Log Analytics workspace
+  - Configure access to a Log Analytics Workspace
+  - Configure data retention for a Log Analytics workspace
+  - Configure Health Status Alerts for a Log Analytics workspace
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure-log-analytics
+- azure-monitor
+units:
+- learn.wwl.create-configure-log-analytics-workspace.introduction
+- learn.wwl.create-configure-log-analytics-workspace.create-log-analytics-workspace
+- learn.wwl.create-configure-log-analytics-workspace.configure-access-log-analytics-workspace
+- learn.wwl.create-configure-log-analytics-workspace.configure-log-analytics-data-retention
+- learn.wwl.create-configure-log-analytics-workspace.configure-log-analytics-health-status-alerts
+- learn.wwl.create-configure-log-analytics-workspace.guided-project-deploy-configure-azure-monitor
+- learn.wwl.create-configure-log-analytics-workspace.knowledge-check
+- learn.wwl.create-configure-log-analytics-workspace.summary
+badge:
+  uid: learn.wwl.create-configure-log-analytics-workspace.badge

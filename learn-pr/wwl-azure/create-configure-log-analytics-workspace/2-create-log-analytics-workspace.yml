@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-log-analytics-workspace.create-log-analytics-workspace
+title: Create a Log Analytics workspace
+metadata:
+  title: Create a Log Analytics workspace
+  description: "Create a Log Analytics workspace"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-create-log-analytics-workspace.md)]

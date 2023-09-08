@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-log-analytics-workspace.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which Log Analytics workspace mode should you choose if you want to allow security principals to only view logs in the workspace to which they have permission irrespective of whether that log belongs to an IaaS Virtual Machine, Azure Web App, or Azure Storage?"
+    choices:
+    - content: "Workspace context"
+      isCorrect: true
+      explanation: "Correct. You set the workspace context when you want to configure permissions to allow access to multiple different resource types."
+    - content: "Resource context"
+      isCorrect: false
+      explanation: "Incorrect. The resource context only allows access to data based on a specific resource."
+    - content: "Access control mode"
+      isCorrect: false
+      explanation: "Incorrect. The access control mode is a setting on each workspace that defines how permissions are determined for the workspace."
+  - content: "You have multiple Log Analytics workspaces in a resource group named LogStores in your Azure subscription. Which Log Analytics RBAC role should you assign if you want to a security principal to be able to restore archived Log Analytics Workspace logs?"
+    choices:
+    - content: "Backup Operator"
+      isCorrect: false
+      explanation: "Incorrect. The Backup Operator role allows you to manage backup services. It is not necessary for the restoration of archived Log Analytics logs."
+    - content: "Log Analytics Reader"
+      isCorrect: false
+      explanation: "Incorrect. The Log Analytics Reader role does not have the necessary permissions to restore archived log analytics workspace logs."
+    - content: "Log Analytics Contributor"
+      isCorrect: true
+      explanation: "Correct. The Log Analytics Contributor RBAC role allows you to restore archived log Analytics Workspace logs."
+  - content: "What is the maximum value that you can configure for a default Log Analytics Workspace retention policy?"
+    choices:
+    - content: "550 Days"
+      isCorrect: false
+      explanation: "Incorrect. The maximum value you can configure for a default Log Analytics Workspace retention policy is 730 days."
+    - content: "730 Days"
+      isCorrect: true
+      explanation: "Correct. The maximum value you can configure for a default Log Analytics Workspace retention policy is 730 days."
+    - content: "900 Days"
+      isCorrect: false
+      explanation: "Incorrect. The maximum value you can configure for a default Log Analytics Workspace retention policy is 730 days."
