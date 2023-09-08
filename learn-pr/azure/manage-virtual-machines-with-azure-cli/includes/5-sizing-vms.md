@@ -2,9 +2,9 @@ Virtual machines must be sized appropriately for the expected work. A VM without
 
 ## Pre-defined VM sizes
 
-When you create a virtual machine, you can supply a _VM size_ value that will determine the amount of compute resources devoted to the VM. This includes CPU, GPU, and memory made available to the virtual machine from Azure.
+When you create a virtual machine, you can supply a _VM size_ value that determines the amount of compute resources devoted to the VM. This includes CPU, GPU, and memory made available to the virtual machine from Azure.
 
-Azure defines a set of predefined VM sizes for Linux and Windows to choose from based on the expected usage. 
+Azure defines a set of predefined VM sizes for Linux and Windows from which to choose based on the expected usage.
 
 | Type | Sizes | Description |
 |------|-------|-------------|
@@ -23,7 +23,7 @@ az vm list-sizes --location eastus --output table
 
 Here's an abbreviated response for `eastus`:
 
-```
+```output
   MaxDataDiskCount    MemoryInMb  Name                      NumberOfCores    OsDiskSizeInMb    ResourceDiskSizeInMb
 ------------------  ------------  ----------------------  ---------------  ----------------  ----------------------
                  2          2048  Standard_B1ms                         1           1047552                    4096
@@ -50,7 +50,7 @@ Here's an abbreviated response for `eastus`:
 
 ## Specify a size during VM creation
 
-We didn't specify a size when we created our VM, so Azure selected a default general-purpose size for us. However, we can specify the size as part of the `vm create` command using the `--size` parameter. For example, you could use the following command to create a 2-core virtual machine:
+We didn't specify a size when we created our VM, so Azure selected a default general-purpose size for us. However, we can specify the size as part of the `vm create` command using the `--size` parameter. For example, you could use the following command to create a two-core virtual machine:
 
 ```azurecli
 az vm create \
@@ -77,12 +77,12 @@ az vm list-vm-resize-options \
     --output table
 ```
 
-This will return a list of all the possible size configurations available in the resource group. If the size we want isn't available in our cluster, but _is_ available in the region, we can [deallocate the VM](/cli/azure/vm#az-vm-deallocate). This command will stop the running VM and remove it from the current cluster without losing any resources. Then we can resize it, which will re-create the VM in a new cluster where the size configuration is available.
+This will return a list of all the possible size configurations available in the resource group. If the size we want isn't available in our cluster but _is_ available in the region, we can [deallocate the VM](/cli/azure/vm#az-vm-deallocate). This command will stop the running VM and remove it from the current cluster without losing any resources. We can then resize it, which will re-create the VM in a new cluster where the size configuration is available.
 
 > [!NOTE]
 > The Microsoft Learn sandbox is limited to a few VM sizes.
 
-To resize a VM, we use the `vm resize` command. For example, perhaps we find our VM is underpowered for the task we want it to perform. We could bump it up to a D2s_v3, where it has 2 vCores and 8 GB of memory. Type this command in Cloud Shell:
+To resize a VM, we'll use the `vm resize` command. For example, perhaps we find our VM is underpowered for the task we want it to perform. We could bump it up to a D2s_v3, where it has 2 vCores and 8 GB of memory. Type this command in Cloud Shell:
 
 ```azurecli
 az vm resize \

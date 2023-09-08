@@ -40,7 +40,7 @@ quiz:
       isCorrect: true
       explanation: "Adding '--no-wait' will cause 'azure VM create' to return immediately without waiting for the VM to actually be created."
  
-  - content: "Most Azure commands return JSON by default. Sometimes this data set can be very large which makes it difficult to read and tricky to use the result of one command as input to another command. What can you use with Azure CLI to filter the results to get only the data that you need?"
+  - content: "Most Azure commands return JSON by default. Sometimes this dataset can be very large, which makes it difficult to read and tricky to use the result of one command as input to another command. What can you use with Azure CLI to filter the results to get only the data that you need?"
     choices:
     - content: "You can use the '--query' argument."
       isCorrect: true
@@ -50,4 +50,4 @@ quiz:
       explanation: "Azure CLI does not have a '--filter' argument."
     - content: "You can pipe the results to a JSON parsing utility and use filtering capability there."
       isCorrect: false
-      explanation: "This may work but is more complex than using the built-in query support of the Azure CLI."
+      explanation: "This might work, but is more complex than using Azure CLI's built-in query support."
