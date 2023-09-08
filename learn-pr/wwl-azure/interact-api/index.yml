@@ -34,7 +34,7 @@ subjects:
 - development-tools
 units:
 - learn.wwl.interact-api.introduction
-- learn.wwl.interact-api.explore-asp-core-api
+- learn.wwl.interact-api.explore-asp-net-core-api
 - learn.wwl.interact-api.document-api-swashbuckle
 - learn.wwl.interact-api.exercise-explore-api-documentation
 - learn.wwl.interact-api.knowledge-check
