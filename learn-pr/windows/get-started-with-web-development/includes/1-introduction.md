@@ -1,7 +1,7 @@
 
 It's impressive what you can do on the web today. You can build web experiences that run on all devices, include all sorts of media content, and perform complicated computation. You can even create apps that look and feel like native applications.
 
-If you're interested in starting web development today, you may be faced with a dizzying array of options. In this module, you learn the basic components of a website and some tools you can use to start web development. You'll use HTML, CSS, and JavaScript together to build a website. You'll also use developer tools in the browser to understand what's happening.
+If you're interested in starting web development today, you may be faced with a dizzying array of options. In this module, you learn the basic components of a website and some tools you can use to start web development. You'll use HTML, CSS, and JavaScript together to build a website and then use developer tools in the browser to understand what's happening.
 
 With this fundamental knowledge in place, you'll have a better context to make decisions in the future when building websites. For example, whether you should choose JavaScript frameworks or create your own JavaScript functions to build your website.
 

@@ -13,7 +13,7 @@ Visual Studio Code provides basic support for HTML programming out of the box. T
     > [!NOTE]
     > If the HTML5 template code is not added to the `index.html` file, try closing and reopening the file.
 
-1. Edit your code so that it resembles the following. Then save the file by selecting <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
+1. Edit the template code so that it resembles the following. Then save the file by selecting <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
 
    ```html
    <!DOCTYPE html>

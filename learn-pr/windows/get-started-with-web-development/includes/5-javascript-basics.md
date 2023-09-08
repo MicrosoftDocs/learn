@@ -1,6 +1,6 @@
 JavaScript (or *ECMAScript*) is a programming language that helps you add interactivity to your web pages.
 
-For example, you can use JavaScript to define the behavior that will happen when a user selects a button; for example, open a pop-up window. Using JavaScript, you can add or remove content from a web page without reloading it.
+For example, you can use JavaScript to define the behavior that happens when a user selects a button; for example, open a pop-up window. Using JavaScript, you can add or remove content from a web page without reloading it.
 
 In this unit, you set up an example JavaScript file for your web page. In it, you create a button to switch between light and dark themes. Then, you attach the button to JavaScript code that performs the actual theme switching. Finally, you check the finished project using your browser's developer tools.
 
@@ -50,7 +50,7 @@ The `<script>` element could be placed in the `<head>` or elsewhere in the `<bod
 
 ## Set strict mode
 
-JavaScript was designed to be easy to learn and allows certain mistakes to be made by the developer. For example, JavaScript doesn't throw an error when you use a misspelled variable, and instead creates a new global one. While having fewer errors is tempting when you start learning JavaScript, it can lead to writing code that is harder for browsers to optimize and harder for you to debug.
+JavaScript was designed to be easy to learn and allows certain mistakes to be made by the developer. For example, JavaScript doesn't throw an error when you use a misspelled variable, and instead creates a new global one. When you start learning JavaScript, having fewer errors is convenient. However, it can lead to writing code that is harder for browsers to optimize and harder for you to debug.
 
 Switch to strict mode to get more useful errors when you make mistakes.
 
@@ -64,7 +64,7 @@ Switch to strict mode to get more useful errors when you make mistakes.
 
 You need a way to let your users switch between the light and dark themes in your web page. In this exercise, you implement that functionality with an HTML `<button>` element.
 
-1. In your HTML file, add a `<button>` element. Put the button at the end of the list inside of a `<div>` element.
+1. In your HTML file (`index.html`), add a `<button>` element. Put the button inside of a `<div>` element and add it just after the end of the list (`</ul>`).
 
     ```html
     ...
@@ -80,9 +80,9 @@ You need a way to let your users switch between the light and dark themes in you
     ...
     ```
 
-    Notice that the `<button>` element in this example has a *class* attribute that you'll use to apply CSS styles.
+    Notice that the `<button>` element in this example has a *class* attribute that you can use to apply CSS styles.
 
-1. In your CSS file, add a new rule with a `.btn` class selector for your HTML button. To make the button colors different from the general light or dark theme colors, set the `color` and `background-color` properties in this rule. They'll override the default ones set in the `body` rule of your CSS file.
+1. In your CSS file (`main.css`), add a new rule with a `.btn` class selector for your HTML button. To make the button colors different from the general light or dark theme colors, set the `color` and `background-color` properties in this rule. When your page displays, these `.btn` properties override the default properties set in the `body` rule of your CSS file.
 
     ```css
     .btn {
@@ -131,7 +131,7 @@ To make the button do something when you select it, you need an event handler in
 
 Before you can add the event handler, you need a reference to the button element.
 
-1. In your JavaScript file, use `document.querySelector` to get the button reference.
+1. In your JavaScript file (`app.js`), use `document.querySelector` to get the button reference.
 
     ```js
     const switcher = document.querySelector('.btn');
@@ -139,7 +139,7 @@ Before you can add the event handler, you need a reference to the button element
 
     The `document.querySelector` function uses CSS selectors, just like the ones you used in your CSS file. `switcher` is now a reference to the button in the page.
 
-1. Next, add the event handler for the `click` event. In the following code, you add a listener for the `click` event and define an event handler function that's executed by the browser when the `click` event occurs.
+1. Next, add the event handler for the `click` event. In the following code, you add a listener for the `click` event and define an event handler function that the browser executes when the `click` event occurs.
 
     ```js
     switcher.addEventListener('click', function() {
@@ -176,9 +176,9 @@ It's a JavaScript convention to use *camel case* for variable names with more th
 
 ## Console message
 
-As a web developer, you can create hidden messages that won't appear on your webpage, but that you can read in the Developer Tools, in the **Console** tab. Using *console messages* is helpful for seeing the result of your code.
+As a web developer, you can create hidden messages that aren't visible on your webpage, but that you can read in the Developer Tools, in the **Console** tab. Using *console messages* is helpful for seeing the result of your code.
 
-- Add a call to `console.log` after the `if` statement, but inside the event listener.
+- In your JavaScript file, add a call to `console.log` after the `if` statement, but inside the event listener.
 
     ```javascript
     switcher.addEventListener('click', function() {

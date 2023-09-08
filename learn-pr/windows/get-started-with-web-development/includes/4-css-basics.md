@@ -195,7 +195,7 @@ To add support for a dark theme to your CSS, use the following steps.
 
 1. Remember to save your file by selecting <kbd>Control+S</kbd> or <kbd>Command+S</kbd>.
 
-You're CSS file should now look like this:
+You're CSS file should now look like this example:
 
 ```css
 :root {
