@@ -2,7 +2,7 @@
 uid: learn.wwl.register-mlflow-model-azure-machine-learning
 metadata:
   title: Register an MLflow model in Azure Machine Learning
-  description: "Register an MLflow model in Azure Machine Learning"
+  description: "Azure Machine Learning Python SDK v2."
   ms.date: 09/08/2023
   author: wwlpublish
   ms.author: madiepev
