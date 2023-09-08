@@ -11096,6 +11096,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/10-integrate-azure-bot-service.yml",
+      "redirect_url": "/training/modules/learn-mrtk-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/11-exercise-integrate-azure-bot-service.yml",
+      "redirect_url": "/training/modules/learn-mrtk-tutorials/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/language/rust-understand-common-concepts/7a-loops.md",
       "redirect_url": "/training/modules/rust-loop-expressions/3-for-while-loop",
       "redirect_document_id": false
@@ -26232,6 +26242,11 @@
       "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/8-summary-resources.md",
       "redirect_url": "/training/modules/explore-basic-services-identity-types/7-summary-resources",
       "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-capabilities-of-azure-sentinel/4-understand-sentinel-costs.md",
+      "redirect_url": "https://learn.microsoft.com/azure/sentinel/billing",
+      "redirect_document_id": false
+    } 
   ]
 }
