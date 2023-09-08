@@ -44,7 +44,7 @@ quiz:
     choices:
     - content: "You can use the '--query' argument."
       isCorrect: true
-      explanation: "All Azure commands support the '--query' argument which lets you select the useful data in any Azure command response."
+      explanation: "All Azure commands support the '--query' argument, which lets you select the useful data in any Azure command response."
     - content: "You can use the '--filter' argument."
       isCorrect: false
       explanation: "Azure CLI doesn't have a '--filter' argument."
