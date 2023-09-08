@@ -2,6 +2,6 @@ Hypertext Transfer Protocol (HTTP) requests are a way of asking a web server to 
 
 After completing this module, you'll be able to:
 
-* Implement HTTP clients in .NET Core
-* Use HTTP clients to perform safe and unsafe operations
-* Add code to support HTTP operations in an ASP.NET Core Razor Pages app
+* Implement HTTP clients in .NET Core.
+* Use HTTP clients to perform safe and unsafe operations.
+* Add code to support HTTP operations in an ASP.NET Core Razor Pages app.
