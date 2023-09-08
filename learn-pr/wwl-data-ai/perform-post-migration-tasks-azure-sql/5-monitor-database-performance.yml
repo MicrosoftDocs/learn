@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-to-maintain-sql-databases-azure.understand-sql-server-azure-virtual-machine
+title: Understand SQL Server in an Azure virtual machine
+metadata:
+  title: Understand SQL Server in an Azure virtual machine
+  description: "Understand SQL Server in an Azure virtual machine"
+  ms.date: 03/06/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-understand-sql-server-azure-virtual-machine.md)]

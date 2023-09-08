@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-to-maintain-sql-databases-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/06/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What Azure storage is recommended for production data files that requires maximum throughput?"
+    choices:
+    - content: "Premium SSD"
+      isCorrect: false
+      explanation: "Incorrect. Premium SSD doesn't offer the lowest latency of the three storage types."
+    - content: "Ultra disks"
+      isCorrect: true
+      explanation: "Correct. Ultra Disk offers the lowest latency of the three storage types."
+    - content: "Standard SSD"
+      isCorrect: false
+      explanation: "Incorrect. Standard SSD doesn't offer the lowest latency of the three storage types."
+  - content: "What option should you select to change the auto-pause setting of a serverless SQL Database?"
+    choices:
+    - content: "The auto-pause setting can't be changed, and it's fixed at one hour"
+      isCorrect: false
+      explanation: "Incorrect. You can adjust the auto-pause setting through the Azure portal."
+    - content: "Ensure that there are no active transactions in the database, as the auto-pause change will result in a disconnection"
+      isCorrect: false
+      explanation: "Incorrect. Changes to auto-pause setting don't cause disruption."
+    - content: "The Azure portal allows you to change the auto-pause setting at any time"
+      isCorrect: true
+      explanation: "Correct. You can change the auto-pause setting at any time through the Azure portal."
+  - content: "Which SQL Server PaaS offering should you choose if you want to restore an on-premises database backup to Azure?"
+    choices:
+    - content: "Azure SQL Managed Instance"
+      isCorrect: true
+      explanation: "That's correct. Azure SQL Managed Instance is the only SQL Server PaaS option that supports database restore from an on-premises database backup."
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "That's incorrect. You can't restore an on-premises database backup to Azure SQL Database."
+    - content: "You can use both Azure SQL Database and Azure SQL Managed Instance."
+      isCorrect: false
+      explanation: "That's incorrect. You can't restore an on-premises database backup to Azure SQL Database."
