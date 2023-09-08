@@ -49,7 +49,7 @@ The following steps explain how to migrate your database to Azure SQL Database.
 
 The final step shows you the overall status of the migration. Also, you can filter the results by selecting different migration statuses at the top of the screen
 
-:::image type="content" source="../media/3-data-migration-assistant-monitor.png" alt-text="Screenshot showing the migration results on Data Migration Assistant.":::
+:::image type="content" source="../media/3-data-migration-assistant-migration-monitor.png" alt-text="Screenshot showing the migration results on Data Migration Assistant.":::
 
 ### Fine-tune settings
 
