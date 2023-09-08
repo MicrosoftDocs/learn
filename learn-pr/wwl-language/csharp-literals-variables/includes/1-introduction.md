@@ -1,6 +1,5 @@
 
 
-
 Many of the applications that you'll build in C# will require you to work with data. Sometimes that data will be hard-coded in your application. Hard-coded values are values that are constant and unchanged throughout the execution of the program. For example, you may need to print a message to the user when some operation succeeds. A "success" message would likely be the same every time the application is executed. This hard-coded value can also be called a constant, or a literal value.
 
 Suppose you want to display a formatted message to the end user containing different types of data. The message would include hard-coded strings combined with information your app collects from the user. To display a formatted message, you'll need to create both hard-coded values and define variables that can store data of a certain type, whether numeric, alphanumeric, and so on.
