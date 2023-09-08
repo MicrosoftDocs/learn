@@ -6,8 +6,8 @@ Mitigation of potential harms in a generative AI solution involves a layered app
 
 1. **Model**
 1. **Safety System**
-1. **Application**
-1. **Positioning**
+1. **Metaprompt and grounding**
+1. **User experience**
 
 ## 1: The *model* layer
 
@@ -24,17 +24,18 @@ The safety system layer includes platform-level configurations and capabilities 
 
 Other safety system layer mitigations can include abuse detection algorithms to determine if the solution is being systematically abused (for example through high volumes of automated requests from a bot) and alert notifications that enable a fast response to potential system abuse or harmful behavior.
 
-## 3: The *application* layer
+## 3: The *metaprompt and grounding* layer
 
-The application layer is the software application through which users interact with the generative AI model. Harm mitigation techniques at this layer include:
+The metaprompt and grounding layer focuses on the construction of prompts that are submitted to the model. Harm mitigation techniques that you can apply at this layer include:
 
-- Designing the application user experience (UX) to constrain inputs to specific subjects or types, or applying input and output validation.
 - Specifying *metaprompts* or system inputs that define behavioral parameters for the model.
-- Applying prompt engineering techniques to add context to input prompts, maximizing the likelihood of a relevant, nonharmful output.
-- Citing sources of information in the generated output (or explicitly noting that no citation has been provided).
+- Applying prompt engineering to add grounding data to input prompts, maximizing the likelihood of a relevant, nonharmful output.
+- Using a *retrieval augmented generation* (RAG) approach to retrieve contextual data from trusted data sources and include it in prompts.
 
-## 4: The *positioning* layer
+## 4: The *user experience* layer
 
-The positioning layer includes any documentation or other user collateral that describes the use of the solution to its users and stakeholders.
+The user experience layer includes the software application through which users interact with the generative AI model as well as documentation or other user collateral that describes the use of the solution to its users and stakeholders.
+
+Designing the application user interface to constrain inputs to specific subjects or types, or applying input and output validation can mitigate the risk of potentially harmful responses.
 
 Documentation and other descriptions of a generative AI solution should be appropriately transparent about the capabilities and limitations of the system, the models on which it's based, and any potential harms that may not always be addressed by the mitigation measures you have put in place.
