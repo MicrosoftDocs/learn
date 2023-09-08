@@ -27,7 +27,7 @@ Validation processes vary depending on the scope of proposed changes and the rul
 - **Staging**: The article pages affected by your changes are automatically deployed to a staging environment for review upon successful validation and build. Preview URLs appear in a PR comment.
 - **Auto-merge**: The PR might be automatically merged if it passes validation testing and certain criteria. In this case, you don't need to do anything else.
 
-## Review and sign-off
+## Review and sign off
 
 You’re almost there! After all PR processing is completed, it’s best practice to review the results (for example, PR comments, preview URLs) to determine if more changes are required before you sign off for merging. If a PR reviewer has reviewed your PR, they can also provide feedback via comments if there are outstanding issues or questions preventing the merge.
 
@@ -53,3 +53,9 @@ Remember, your PR must be merged by a PR reviewer before the changes can be incl
 After your contributions are approved and merged, the publishing process picks them up. Depending on the team that manages the repository you’re contributing to, publishing times can vary, but they typically occur at least once every weekday. It can take up to 45 minutes for articles to appear online after publishing. 
 
 Once your changes are published, they go live on Microsoft Learn for others to start learning from! 
+
+## Scenario: Publish changes to Azure App Service 
+
+Using your past experience, you spotted an opportunity to add some helpful information to an App Service documentation page and created a PR to add your changes. You're now ready to review and sign off on your PR to publish your edits. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=040d0125-a713-456b-a0d4-8df4de39dc66]
