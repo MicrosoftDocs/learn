@@ -4,7 +4,7 @@ title: Log models with MLflow
 metadata:
   title: Log models with MLflow
   description: "Learn how to log models with MLflow for easy deployment in Azure Machine Learning."
-  ms.date: 09/07/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial

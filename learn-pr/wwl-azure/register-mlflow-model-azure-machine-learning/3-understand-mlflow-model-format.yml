@@ -4,7 +4,7 @@ title: Understand the MLflow model format
 metadata:
   title: Understand the MLflow model format
   description: "Understand how the MLmodel format works when registering a model with MLflow."
-  ms.date: 09/07/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
