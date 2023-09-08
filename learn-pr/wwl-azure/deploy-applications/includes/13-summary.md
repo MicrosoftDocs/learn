@@ -9,4 +9,3 @@ This module explored the diverse approaches for deploying and updating organizat
  -  [Add built-in apps to Microsoft Intune](/intune/apps-add-built-in)
  -  [Intune Standalone - Win32 app management](/intune/apps-win32-app-management)
  -  [Using group policy to remotely install software in Windows server](/troubleshoot/windows-server/group-policy/use-group-policy-to-install-software)
-
