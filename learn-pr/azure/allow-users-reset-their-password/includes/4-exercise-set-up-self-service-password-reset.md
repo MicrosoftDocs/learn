@@ -103,7 +103,7 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 
     ![Screenshot that shows mobile phone registration form for SSPR.](../media/4-register-mobile-phone.png)
 
-1. Select teh **Text me a code** radio button, then select **Next**.
+1. Select the **Text me a code** radio button, then select **Next**.
 1. When you receive the code on your mobile phone, enter the code in the text box and select **Next**.
 1. Select **Done**.
 
