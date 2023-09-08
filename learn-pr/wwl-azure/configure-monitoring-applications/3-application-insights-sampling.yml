@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-monitoring-applications.application-insights-sampling
+title: Application Insights sampling
+metadata:
+  title: Application Insights sampling
+  description: "Application Insights sampling"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-application-insights-sampling.md)]

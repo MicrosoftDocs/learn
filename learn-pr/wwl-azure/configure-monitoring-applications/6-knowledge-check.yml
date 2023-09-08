@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-monitoring-applications.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which of the following types of platform log would store an event related to a secret key being retrieved from Azure Key Vault by an application?"
+    choices:
+    - content: "Resource Logs"
+      isCorrect: true
+      explanation: "Correct. Resource logs provide an insight into operations that were performed within an Azure resource. This is known as the data plane. Examples include getting a secret from a key vault, or making a request to a database."
+    - content: "Activity logs"
+      isCorrect: false
+      explanation: "Incorrect. Activity logs provide an insight into the operations performed on each Azure resource in the subscription from the outside, known as the management plane. As this activity occurs with the subscription, it would be recorded in a resource log."
+    - content: "Microsoft Entra ID logs"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra ID logs contain the history of sign-in activity and an audit trail of changes made in Entra ID for a particular tenant."
+  - content: "Which of the following Application Insights log-based metrics should you choose if you want to have the best performance at query time?"
+    choices:
+    - content: "Log-based metrics"
+      isCorrect: false
+      explanation: "Incorrect. Log-based metrics have more dimensions, which makes them the superior option for data analysis and ad-hoc diagnostics but also means that they don't have the performance of standard metrics."
+    - content: "Standard metrics"
+      isCorrect: true
+      explanation: "Correct. Standard metrics are stored as pre-aggregated time series and therefore have better performance at query time."
+    - content: "Platform metrics"
+      isCorrect: false
+      explanation: "Incorrect. Platform metrics are not part of Application Insights. Platform metrics are collected from Azure resources and require no configuration. They are not log-based."
+  - content: "Which of the following Application Insights sampling methods reduces the volume of telemetry sent from the server and user's browsers?"
+    choices:
+    - content: "Adaptive sampling"
+      isCorrect: false
+      explanation: "Incorrect. daptive sampling automatically adjusts the volume of telemetry sent from the SDK in your ASP.NET/ASP.NET Core app, and from Azure Functions. It does not minimize the amount of telemetry sent."
+    - content: "Ingestion sampling"
+      isCorrect: false
+      explanation: "Incorrect. Ingestion sampling happens at the Application Insights service endpoint. It discards some of the telemetry that arrives from your app, at a sampling rate that you set. It doesn't reduce telemetry traffic sent from your app, but helps you keep within your monthly quota."
+    - content: "Fixed-rate sampling"
+      isCorrect: true
+      explanation: "Correct. Fixed-rate sampling reduces the volume of telemetry sent from both your ASP.NET or ASP.NET Core or Java server and from your users' browsers. You set the rate. The client and server will synchronize their sampling."

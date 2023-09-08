@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.configure-monitoring-applications
+metadata:
+  title: Configure monitoring for applications
+  description: "Configure monitoring for applications"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Configure monitoring for applications
+summary: Understand how to monitor the performance of your applications and how to collect and analyze the appropriate telemetry to improve application performance.
+abstract: |
+  - Describe how Application Insights is used to monitor application performance
+  - Distinguish between the different Application Insights sampling rates
+  - Describe Azure diagnostic settings and resource logs
+  - Leverage Azure SQL Insights to improve performance of Azure SQL database applications
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.configure-monitoring-applications.introduction
+- learn.wwl.configure-monitoring-applications.understand-application-insights
+- learn.wwl.configure-monitoring-applications.application-insights-sampling
+- learn.wwl.configure-monitoring-applications.diagnostic-settings-resource-logs
+- learn.wwl.configure-monitoring-applications.azure-sql-insights
+- learn.wwl.configure-monitoring-applications.knowledge-check
+- learn.wwl.configure-monitoring-applications.summary
+badge:
+  uid: learn.wwl.configure-monitoring-applications.badge

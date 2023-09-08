@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-monitoring-applications.azure-sql-insights
+title: Azure SQL Insights
+metadata:
+  title: Azure SQL Insights
+  description: "Azure SQL Insights"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-azure-sql-insights.md)]

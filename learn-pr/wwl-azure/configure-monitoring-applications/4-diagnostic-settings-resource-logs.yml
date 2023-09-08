@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-monitoring-applications.diagnostic-settings-resource-logs
+title: Diagnostic settings and resource logs
+metadata:
+  title: Diagnostic settings and resource logs
+  description: "Diagnostic settings and resource logs"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-diagnostic-settings-resource-logs.md)]
