@@ -1,10 +1,10 @@
-The IoT extension for Azure CLI gives developers multi-platform (Windows, macOS and Linux) command-line access to IoT Hub, IoT Edge, IoT Device Provisioning, IoT Central, Digital Twins, and Device Update for IoT Hub capabilities. The interface is run outside of the Azure portal.
+The IoT extension for Azure CLI gives developers command-line access to IoT device maintenance capabilities. The interface is run outside of the Azure portal.
 
 An organization may decide to use Azure CLI for IoT device management in situations where scripting is required for repeatable or scriptable tasks such as with periodic device updates that a run on a timer. CLI scripting retains the flexibility and power of a coding environment vs. using the Azure IoT Hub portal interface or Visual Studio Code and Azure IoT Hub extension menu-based interface.
 
-Imagine you work for a large product distribution company. Your company needs to update 1000s of warehouse IoT devices on a regular basis. You write a script that runs within the IoT extension for Azure CLI that updates IoT device configuration and firmware information as required through a wireless network. The script runs monthly using a software timer.
+Imagine that you work for a large product distribution company. Your company needs to update 1000s of warehouse IoT devices regularly. You write a script that runs within the IoT extension for Azure CLI that updates IoT device configuration and firmware information as required through a wireless network. The script runs monthly using a software timer.
 
-Here, you will learn about Azure CLI scripting capabilities that you can use to manage IoT devices.
+Here, you learn about Azure CLI scripting capabilities that you can use to manage IoT devices.
 
 :::row:::
   :::column:::

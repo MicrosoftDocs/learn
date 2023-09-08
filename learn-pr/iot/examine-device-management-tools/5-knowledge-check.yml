@@ -24,7 +24,7 @@ quiz:
       explanation: "Incorrect. This command parameter would be used to update a device twin, which may not result in the device taking an action."
     - content: "device-twin show"
       isCorrect: false
-      explanation: "Incorrect. This command parameter would be used to display device twin properties and tags, and would not affect the device."
+      explanation: "Incorrect. This command parameter would be used to display device twin properties and tags, and wouldn't affect the device."
     - content: "invoke-device-method"
       isCorrect: true
       explanation: "Correct. This command parameter would be used to invoke a direct method, which instructs the device to complete some type of action."
