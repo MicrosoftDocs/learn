@@ -16,13 +16,13 @@ In this task, you'll create a new storage account.
     | Region               | Leave default                                        |
     | Performance          | Standard                                             |
     | Redundancy           | Locally redundant storage (LRS)                      |
-6.  On the **Advanced** tab of the create a storage account blade, fill in the following information. Leave the defaults for everything else.
+6.  On the **Advanced** tab of the Create a storage account blade, fill in the following information. Leave the defaults for everything else.
     
     | **Setting**                                              | **Value** |
     | -------------------------------------------------------- | --------- |
     | Allow enabling anonymous access on individual containers | Checked   |
     
-    :::image type="content" source="../media/storage_account_anonymous_containers-667c763e.png" alt-text="Screenshot showing how to enable anonymous-access containers on a storage account.":::
+    :::image type="content" source="../media/storage-account-anonymous-containers-5e5f584a.png" alt-text="Screenshot showing how to enable anonymous-access containers on a storage account.":::
     
 7.  Select **Review** to review your storage account settings and allow Azure to validate the configuration.
 8.  Once validated, select **Create**. Wait for the notification that the account was successfully created.
