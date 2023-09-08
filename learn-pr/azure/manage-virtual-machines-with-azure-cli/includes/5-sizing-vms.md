@@ -77,7 +77,7 @@ az vm list-vm-resize-options \
     --output table
 ```
 
-This command returns a list of all the possible size configurations available in the resource group. If the size we want isn't available in our cluster but _is_ available in the region, we can [deallocate the VM](/cli/azure/vm#az-vm-deallocate). This command stops the running VM and remove it from the current cluster without losing any resources. We can then resize it, which re-creates the VM in a new cluster where the size configuration is available.
+This command returns a list of all the possible size configurations available in the resource group. If the size we want isn't available in our cluster but _is_ available in the region, we can [deallocate the VM](/cli/azure/vm#az-vm-deallocate). This command stops the running VM and removes it from the current cluster without losing any resources. We can then resize it, which re-creates the VM in a new cluster where the size configuration is available.
 
 > [!NOTE]
 > The Microsoft Learn sandbox is limited to a few VM sizes.
