@@ -58,5 +58,5 @@ The following code sample shows how to use a combination of .NET code and HTML t
 
 To learn more about Razor syntax, visit the following pages:
 
-* [Razor syntax reference for ASP.NET Core](/aspnet/core/mvc/views/razor?view=aspnetcore-7.0)
+* [Razor syntax reference for ASP.NET Core](/aspnet/core/mvc/views/razor?view=aspnetcore-7.0&preserve-view=true)
 * [Introduction to ASP.NET Web Programming Using the Razor Syntax (C#)](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c#the-top-8-programming-tips)
