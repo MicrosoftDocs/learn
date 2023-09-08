@@ -2,7 +2,7 @@
 uid: learn.wwl.deploy-model-batch-endpoint
 metadata:
   title: Deploy a model to a batch endpoint
-  description: "Deploy a model to a batch endpoint"
+  description: "Azure Machine Learning Python SDK v2."
   ms.date: 09/08/2023
   author: wwlpublish
   ms.author: madiepev
