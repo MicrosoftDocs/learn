@@ -1,5 +1,3 @@
-
-
 Now, it's your chance to explore how to log models with MLflow in Azure Machine Learning.
 
 In this exercise, you will:
