@@ -19,9 +19,9 @@ The following table describes the project structure that is generated when creat
 
 Following is more information on the project structure, request routing, and shared resources:
 
-*   **Razor page files and their paired `PageModel` class file:** Razor pages are stored in the *Pages* directory. Each Razor page has a *.cshtml* file and a *.cshtml.cs* `PageModel` class file. The `PageModel` class allows separation of a Razor page's logic and presentation, defines page handlers for requests, and encapsulates data properties and logic scoped to its Razor page.
+*   **Razor page files and their paired `PageModel` class file**: Razor pages are stored in the *Pages* directory. Each Razor page has a *.cshtml* file and a *.cshtml.cs* `PageModel` class file. The `PageModel` class allows separation of a Razor page's logic and presentation, defines page handlers for requests, and encapsulates data properties and logic scoped to its Razor page.
 
-*   **The *Pages* directory structure:** Razor Pages uses the *Pages* directory structure as the convention for routing requests. The following table shows how URLs map to filenames:
+*   **The *Pages* directory structure**: Razor Pages uses the *Pages* directory structure as the convention for routing requests. The following table shows how URLs map to filenames:
 
     | URL | Maps to Razor page |
     | --- | --- |
@@ -30,7 +30,7 @@ Following is more information on the project structure, request routing, and sha
     | `www.example.com/Privacy` | *Pages/Privacy.cshtml* |
     | `www.example.com/Error` | *Pages/Error.cshtml* |
 
-* **Layout and other shared files:** There are several files that are shared across multiple pages. These files determine common layout elements and page imports. The following table describes the purpose of each file.
+* **Layout and other shared files**: There are several files that are shared across multiple pages. These files determine common layout elements and page imports. The following table describes the purpose of each file.
 
     | File | Description |
     | --- | --- |
