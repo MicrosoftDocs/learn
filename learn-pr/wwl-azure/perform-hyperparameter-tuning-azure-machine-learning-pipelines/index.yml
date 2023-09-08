@@ -3,7 +3,7 @@ uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
 metadata:
   title: Perform hyperparameter tuning with Azure Machine Learning
   description: "Perform hyperparameter tuning with Azure Machine Learning"
-  ms.date: 09/07/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
