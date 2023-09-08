@@ -4,7 +4,7 @@ Your project can now successfully translate the words you speak into several dif
 
 ## Next steps
 
-Explore LUIS and integrate it in your own application. Consider trying following interactions:
+Explore CLU and integrate it in your own application. Consider trying following interactions:
 
 * Connect multiple devices or clients in a conversation.
 * Create custom voice fonts unique to your brand or product.
@@ -12,4 +12,4 @@ Explore LUIS and integrate it in your own application. Consider trying following
 ## Further reading
 
 * Learn more about [Speech service](/azure/ai-services/speech-service/overview)
-* Learn more about [LUIS](/azure/ai-services/luis/what-is-luis)
+* Learn more about [CLU](/azure/ai-services/language-service/conversational-language-understanding/overview)
