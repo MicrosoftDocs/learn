@@ -4,11 +4,10 @@ title: Exercise - Create arrays and foreach loops
 metadata:
   title: Exercise - Create arrays and foreach loops
   description: "Exercise - Create arrays and foreach loops"
-  ms.date: 06/02/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 25
 content: |
   [!include[](includes/3-exercise-create-arrays-foreach-loops.md)]

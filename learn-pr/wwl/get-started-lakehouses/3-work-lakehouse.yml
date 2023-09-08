@@ -4,16 +4,15 @@ title: Work with Microsoft Fabric Lakehouses
 metadata:
   title: Work with Microsoft Fabric Lakehouses
   description: "Work with Microsoft Fabric Lakehouses"
-  ms.date: 05/10/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: powerbi
+  ms.service: fabric
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
 durationInMinutes: 6
 content: |
   [!include[](includes/3-work-lakehouse.md)]
