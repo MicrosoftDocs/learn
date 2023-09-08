@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.examine-device-management-tools
+metadata:
+  title: Evaluate device management tools for Azure IoT
+  description: Evaluate the service and coding tools that are used to implement device management tasks in Azure IoT, and when the various approaches to device management should be applied.
+  ms.date: 09/06/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.prod: azure-iot
+title: Evaluate device management tools for Azure IoT
+summary: Evaluate service and coding tools in Azure IoT that are used to implement device management tasks, and when the various approaches to device management should be applied.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the device management tools and approaches for Azure IoT.
+  - Describe device management using the IoT extension for Azure CLI.
+  - Describe device management using the Azure IoT Hub extension for Visual Studio Code.
+prerequisites: |
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Ability to describe the device management patterns and device configuration options using device twins and direct methods in IoT Hub.
+iconUrl: /training/achievements/device-management-tools.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-iot
+- azure-iot-hub
+- azure-iot-sdk
+- azure-portal
+- azure-clis
+subjects:
+- device-management
+units:
+- learn.wwl.examine-device-management-tools.introduction
+- learn.wwl.examine-device-management-tools.review-approaches
+- learn.wwl.examine-device-management-tools.using-iot-extension-for-azure-cli
+- learn.wwl.examine-device-management-tools.using-azure-iot-tools-for-vs-code
+- learn.wwl.examine-device-management-tools.knowledge-check
+- learn.wwl.examine-device-management-tools.summary
+badge:
+  uid: learn.wwl.examine-device-management-tools.badge

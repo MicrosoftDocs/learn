@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-management-tools.using-iot-extension-for-azure-cli
+title: Examine device management using the Azure IoT extension for Azure CLI
+metadata:
+  title: Examine device management using the Azure IoT extension for Azure CLI
+  description: This content is part of Evaluate device management tools for Azure IoT.
+  ms.date: 09/06/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: training-unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-device-management-using-azure-command-line-interface.md)]

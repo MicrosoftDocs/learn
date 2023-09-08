@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-management-tools.using-azure-iot-tools-for-vs-code
+title: Examine device management using the Azure IoT Hub extension for Visual Studio code
+metadata:
+  title: Examine device management using the Azure IoT Hub extension for Visual Studio code
+  description: This content is part of Evaluate device management tools for Azure IoT.
+  ms.date: 09/06/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: training-unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-device-management-using-azure-iot-tools-visual-studio-code.md)]

@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-management-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of Evaluate device management tools for Azure IoT.
+  ms.date: 09/06/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.topic: training-unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When using Azure CLI for device management, which of the following command parameters would a developer use to instruct a device to take an action?"
+    choices:
+    - content: "device-twin update"
+      isCorrect: false
+      explanation: "Incorrect. This command parameter would be used to update a device twin, which may not result in the device taking an action."
+    - content: "device-twin show"
+      isCorrect: false
+      explanation: "Incorrect. This command parameter would be used to display device twin properties and tags, and would not affect the device."
+    - content: "invoke-device-method"
+      isCorrect: true
+      explanation: "Correct. This command parameter would be used to invoke a direct method, which instructs the device to complete some type of action."
+  - content: "Which of the following tasks can be accomplished using the Azure portal (IoT Hub resource), Azure CLI extension for IoT, and Visual Studio Code with the Azure IoT Hub extension?"
+    choices:
+    - content: "Automatic device management."
+      isCorrect: false
+      explanation: "Incorrect. Automatic device management can be done through the Azure portal or Azure CLI, but not Visual Studio Code with the Azure IoT Hub extension."
+    - content: "Update a device twin property."
+      isCorrect: true
+      explanation: "Correct. Updating a property of a device twin can be done using each of the three tools."
+    - content: "Update a device twin desired property."
+      isCorrect: false
+      explanation: "Incorrect. The desired properties of a device twin can be set from the service side using the Azure portal or Azure CLI, but not using Visual Studio Code with the Azure IoT Hub extension."
+      
