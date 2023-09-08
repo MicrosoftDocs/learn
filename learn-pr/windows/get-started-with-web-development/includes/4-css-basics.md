@@ -84,7 +84,7 @@ As you see next, you can define your own custom names for elements.
 
 ## View in browser
 
-1. To preview using **VS Code**, right-click the file name `index.html`, and then select **Open In Default Browser**.
+1. To preview using **Visual Studio Code**, right-click the file name `index.html`, and then select **Open In Default Browser**.
 
    > [!IMPORTANT]
    > Even though you were just editing the `main.css` file, to preview the changes, you should select the `index.html` file.
@@ -95,7 +95,7 @@ As you see next, you can define your own custom names for elements.
 
 Are the font styles what you expected to see? It's interesting how styles applied to the `<body>` are inherited on the `<h1>` element. We didn't define anything for `<h1>`, but it still got the font that was defined on `<body>`. This inheritance mechanism from parent elements to their descendants is one of the key aspects of CSS. However, the `<li>` elements have a different font. The style for the `<li>` elements overrides the style set for `<body>` because the `<li>` element is a descendant of the `<ul>` element, which you defined a style for.
 
-When you use **Open In Default Browser** in **VS Code**, it opens a new tab in the browser every time. To avoid opening a new tab, you can reload the tab that already contains your website instead.
+When you use **Open In Default Browser** in **Visual Studio Code**, it opens a new tab in the browser every time. To avoid opening a new tab, you can reload the tab that already contains your website instead.
 
 To reload the tab press <kbd>F5</kbd>, which is the refresh keyboard shortcut, or press <kbd>Ctrl+R</kbd> on Windows or Linux, and <kbd>Command+R</kbd> on a Mac.
 
@@ -103,7 +103,7 @@ To reload the tab press <kbd>F5</kbd>, which is the refresh keyboard shortcut, o
 
 Next, add support for a color theme for your website. Begin by defining a light-colored theme using hex color codes.
 
-1. In your CSS file, add the following code at the end of the file.
+1. In your CSS file (`main.css`), add the following code at the end of the file.
 
     ```css
     .light-theme {
@@ -114,7 +114,7 @@ Next, add support for a color theme for your website. Begin by defining a light-
 
    In this example, `#000000` specifies black for the font color, and `#00FF00` specifies green for the background color.
 
-1. In your HTML file, update the `<body>` element with the class name `light-theme`. Now, the class selector for light theme applies the styles correctly.
+1. In your HTML file (`index.html`), update the `<body>` element with the class name `light-theme`. Now, the class selector for light theme applies the styles correctly.
 
     ```html
     <body class="light-theme">
@@ -152,7 +152,7 @@ For the dark theme, you'll set up the infrastructure in preparation for the next
 
 To add support for a dark theme to your CSS, use the following steps.
 
-1. Add some constants to the page root at the top of your CSS file.
+1. In your CSS file (`main.css`), add some constants to the page root at the beginning of the file.
 
     ```css
     :root {
@@ -195,7 +195,7 @@ To add support for a dark theme to your CSS, use the following steps.
 
 1. Remember to save your file by selecting <kbd>Control+S</kbd> or <kbd>Command+S</kbd>.
 
-You're CSS file should now look like this example:
+You're CSS file (`main.css`) should now look like this example:
 
 ```css
 :root {

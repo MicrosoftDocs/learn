@@ -16,7 +16,7 @@ However, it's better to add your JavaScript code to a separate file that can be 
 
 The HTML script tag `<script>` lets us link to an external JavaScript file, which is how you configure your web app in this exercise.
 
-1. In **VS Code**, open your `index.html` file.
+1. In **Visual Studio Code**, open your `index.html` file.
 
 1. On a new line before the closing `</body>` element, enter `script:src`, and then select <kbd>Enter</kbd>. The opening and closing tags for a script element are added to your code.
 
@@ -46,15 +46,13 @@ The `<script>` element could be placed in the `<head>` or elsewhere in the `<bod
 
    Adding the `<noscript>` element is an example of *fault tolerance* or *graceful degradation*. When you use the `<noscript>` element, your code can detect and plan for when a feature isn't supported or available.
 
-1. Save your changes with the keyboard shortcut <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
-
 ## Set strict mode
 
 JavaScript was designed to be easy to learn and allows certain mistakes to be made by the developer. For example, JavaScript doesn't throw an error when you use a misspelled variable, and instead creates a new global one. When you start learning JavaScript, having fewer errors is convenient. However, it can lead to writing code that is harder for browsers to optimize and harder for you to debug.
 
 Switch to strict mode to get more useful errors when you make mistakes.
 
-- In **VS Code**, open the `app.js` file, and enter the following.
+- In **Visual Studio Code**, open the `app.js` file, and enter the following.
 
     ```javascript
     'use strict';
@@ -81,6 +79,8 @@ You need a way to let your users switch between the light and dark themes in you
     ```
 
     Notice that the `<button>` element in this example has a *class* attribute that you can use to apply CSS styles.
+
+1. Save the changes to your HTML file with the keyboard shortcut <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
 
 1. In your CSS file (`main.css`), add a new rule with a `.btn` class selector for your HTML button. To make the button colors different from the general light or dark theme colors, set the `color` and `background-color` properties in this rule. When your page displays, these `.btn` properties override the default properties set in the `body` rule of your CSS file.
 
@@ -125,6 +125,8 @@ You need a way to let your users switch between the light and dark themes in you
     }
     ```
 
+1. Save the changes to your CSS file with the keyboard shortcut <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
+
 ## Add an event handler
 
 To make the button do something when you select it, you need an event handler in your JavaScript file. An event handler is a way to run a JavaScript function when an event happens on the page. For the button, let's add an event handler for the `click` event; the event handler function runs when the `click` event occurs.
@@ -133,7 +135,7 @@ Before you can add the event handler, you need a reference to the button element
 
 1. In your JavaScript file (`app.js`), use `document.querySelector` to get the button reference.
 
-    ```js
+    ```javascript
     const switcher = document.querySelector('.btn');
     ```
 
@@ -141,7 +143,7 @@ Before you can add the event handler, you need a reference to the button element
 
 1. Next, add the event handler for the `click` event. In the following code, you add a listener for the `click` event and define an event handler function that the browser executes when the `click` event occurs.
 
-    ```js
+    ```javascript
     switcher.addEventListener('click', function() {
         document.body.classList.toggle('light-theme');
         document.body.classList.toggle('dark-theme');
@@ -152,9 +154,9 @@ In the preceding code, you used the `toggle` method to modify the `<body>` eleme
 
 However, the label for the button also needs to be updated to show the correct theme, so you need to add an `if` statement to determine the current theme, and update the button label.
 
-Here's what the complete JavaScript code should look like.
+Here's what your JavaScript code should look like with the event handler added.
 
-```js
+```javascript
 'use strict';
 
 const switcher = document.querySelector('.btn');
@@ -178,25 +180,31 @@ It's a JavaScript convention to use *camel case* for variable names with more th
 
 As a web developer, you can create hidden messages that aren't visible on your webpage, but that you can read in the Developer Tools, in the **Console** tab. Using *console messages* is helpful for seeing the result of your code.
 
-- In your JavaScript file, add a call to `console.log` after the `if` statement, but inside the event listener.
+In your JavaScript file, add a call to `console.log` after the `if` statement, but inside the event listener. 
 
-    ```javascript
-    switcher.addEventListener('click', function() {
-        document.body.classList.toggle('light-theme');
-        document.body.classList.toggle('dark-theme');
+After you make this change, your complete JavaScript code should look like this.
 
-        const className = document.body.className;
-        if(className == "light-theme") {
-            this.textContent = "Dark";
-        } else {
-            this.textContent = "Light";
-        }
+```javascript
+'use strict';
 
-        console.log('current class name: ' + className);
-    });
-    ```
+const switcher = document.querySelector('.btn');
 
-In **VS Code**, when in a JavaScript file, you can use autocomplete for `console.log` by entering `log`, and then pressing <kbd>Enter</kbd>.
+switcher.addEventListener('click', function() {
+    document.body.classList.toggle('light-theme');
+    document.body.classList.toggle('dark-theme');
+
+    const className = document.body.className;
+    if(className == "light-theme") {
+        this.textContent = "Dark";
+    } else {
+        this.textContent = "Light";
+    }
+
+    console.log('current class name: ' + className);
+});
+```
+
+When you are in a JavaScript file in **Visual Studio Code**, you can use autocomplete for `console.log` by entering `log`, and then pressing <kbd>Enter</kbd>.
 
 You can define a text *string* with single or double quotes around the text.
 

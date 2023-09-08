@@ -32,9 +32,9 @@ Visual Studio Code provides basic support for HTML programming out of the box. T
 
 There have been different versions of HTML. The *doctype* `<!DOCTYPE html>` indicates this HTML document contains HTML5 code.
 
-While we aren't going to delve deeply into the meaning of all the HTML elements, we'll point out a few important items. The `meta` tag indicates *metadata* information that isn't typically visible to the viewer unless they view the source code in their browser. Meta elements or tags provide descriptive information about the webpage. For example, they help search engines process which information in your webpages to return in search results.
+While we aren't going to delve deeply into the meaning of all the HTML elements, we want to point out a few important items. The `meta` tag indicates *metadata* information that isn't typically visible to the viewer unless they view the source code in their browser. Meta elements or tags provide descriptive information about the webpage. For example, they help search engines process which information in your webpages to return in search results.
 
-The *character set* (`charset`) for UTF-8 may seem insignificant, but is crucial for establishing how computers interpret characters. If the metadata for the character set is missing, that can lead to compromised security. There's quite a bit of history and technical information behind the charset attribute, but the important takeaway from this exercise is that the **VS Code** boilerplate provides some sensible defaults.
+The *character set* (`charset`) for UTF-8 may seem insignificant, but is crucial for establishing how computers interpret characters. If the metadata for the character set is missing, that can lead to compromised security. There's quite a bit of history and technical information behind the charset attribute, but the important takeaway from this exercise is that the **Visual Studio Code** boilerplate provides some sensible defaults.
 
 ## Edit the head
 
@@ -55,13 +55,13 @@ The *title* of a webpage appears at the top of a browser window, and is signific
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple website</title>
+     <title>Simple website</title>
    ...
    ```
 
-To apply styles to the HTML elements on the webpage, you could write the CSS code directly in the head of the webpage. Writing CSS in the HTML page is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with replicated CSS code, you can make changes to a single CSS file, and have those updates applied to all of the dependent web pages. Let's link to an external stylesheet.
+To apply styles to the HTML elements on the webpage, you could write the CSS code directly in the head of the webpage. Writing CSS in the HTML page is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with replicated CSS code, you can make changes to a single CSS file, and have those updates applied to all of the dependent web pages. Let's link to an external CSS file.
 
-1. In the **VS Code** editor, add a blank line after the `<title>` element, type `link`, and then select <kbd>Enter</kbd>. **VS Code** should add the following line to your `index.html` file.
+1. In the **Visual Studio Code** editor, add a blank line after the `<title>` element, type `link`, and then select <kbd>Enter</kbd>. **Visual Studio Code** should add the following line to your `index.html` file.
 
    ```html
    <link rel="stylesheet" href="">
@@ -75,7 +75,7 @@ To apply styles to the HTML elements on the webpage, you could write the CSS cod
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task List</title>
+     <title>Task List</title>
      <link rel="stylesheet" href="main.css">
    </head>
    ...
@@ -87,9 +87,9 @@ Let's start filling in the `<body>` element now.
 
 The `<body>` element contains the content of your website visible to your customers in their browsers.
 
-1. Add a *heading* `<h1>` element, followed by a *paragraph* `<p>` element, and then create an *unordered list* `<ul>` that contains several *list item* `<li>` elements.
+1. Inside the `<body>` element, add a *heading* `<h1>` element, followed by a *paragraph* `<p>` element, and then create an *unordered list* `<ul>` that contains several *list item* `<li>` elements.
 
-1. Edit your code, or copy and paste, so it looks like the following example.
+1. Edit your code, or copy and paste, so that it looks like the following example.
 
     ```html
     <!DOCTYPE html>
