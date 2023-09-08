@@ -39,8 +39,8 @@ units:
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-using-azure-migration-extension
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-using-data-migration-assistant
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-using-bacpac
-- learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-sql-server-azure-sql-db-online
-- learn-wwl.migrate-sql-workloads-azure-sql-databases.move-data-sql-db
+- learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-sql-server-azure-sql-database-online
+- learn-wwl.migrate-sql-workloads-azure-sql-databases.move-data-sql-database
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.exercise-migrate-sql-database
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.knowledge-check
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.summary

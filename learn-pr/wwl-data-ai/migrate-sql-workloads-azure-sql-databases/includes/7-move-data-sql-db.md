@@ -16,7 +16,7 @@ When compared to transactional replication, which has lower latency, one disadva
 
 When you create a sync group, it asks you to provide a database responsible to store the sync group metadata. The metadata location can be either a new database or an existing database as long it resides in the same region as your sync group.
 
-:::image type="content" source="../media/7-new sync group.png" alt-text="Screenshot showing the new sync group page from Azure portal.":::
+:::image type="content" source="../media/7-new-sync-group.png" alt-text="Screenshot showing the new sync group page from Azure portal.":::
 
 You can specify sync group properties like the schedule synchronization, the conflict resolution option, and the use of a private link if needed.
 

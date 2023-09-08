@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.move-data-sql-db
+uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.move-data-sql-database
 title: Move data to Azure SQL Database
 metadata:
   title: Move data to Azure SQL Database
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-move-data-sql-db.md)]
+  [!include[](includes/7-move-data-sql-database.md)]

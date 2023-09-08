@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-sql-server-azure-sql-db-online
+uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-sql-server-azure-sql-database-online
 title: Use an online method to migrate to Azure SQL Database
 metadata:
   title: Use an online method to migrate to Azure SQL Database
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/6-migrate-sql-server-azure-sql-db-online.md)]
+  [!include[](includes/6-migrate-sql-server-azure-sql-database-online.md)]

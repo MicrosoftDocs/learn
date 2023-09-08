@@ -14,7 +14,7 @@ Use the Data Migration Assistant to assess the database for compatibility issues
 
 You can review the compatibility report and apply the necessary fixes using a Transact-SQL script. Alternatively, you can upload the results to Azure Migrate.
 
-:::image type="content" source="../media/5-azure-migrate-dma.png" alt-text="Screenshot showing how to upload a Data Migration Assistant assessment to Azure Migrate.":::
+:::image type="content" source="../media/4-azure-migrate-data-migration-assistant.png" alt-text="Screenshot showing how to upload a Data Migration Assistant assessment to Azure Migrate.":::
 
 ### Migrate a SQL Server database
 
@@ -22,7 +22,7 @@ The following steps explain how to migrate your database to Azure SQL Database.
 
 1. Create a new migration project, and set the source type to **SQL Server** and the target server type to **Azure SQL Database**. Select **Create**.
 
-    :::image type="content" source="../media/3-dma-new-migration.png" alt-text="Screenshot showing how to initiate a new migration project on Data Migration Assistant.":::
+    :::image type="content" source="../media/3-data-migration-assistant-new-migration.png" alt-text="Screenshot showing how to initiate a new migration project on Data Migration Assistant.":::
 
 1. On the **Select source** tab, enter the name of the source SQL Server instance, and select the **Authentication type** supported by the source SQL Server instance. Select **Connect**.
 1. Select a database to migrate to Azure SQL Database, and then select **Next**.
@@ -30,25 +30,26 @@ The following steps explain how to migrate your database to Azure SQL Database.
 1. Select a target database, and then select **Next**.
 1. On the **Select objects** tab, select the schema objects from the source database that you want to migrate to Azure SQL Database.
 
-    :::image type="content" source="../media/3-dma-sql-database.png" alt-text="Screenshot showing the select objects tab on Data Migration Assistant.":::
+    :::image type="content" source="../media/3-data-migration-assistant-sql-database.png" alt-text="Screenshot showing the select objects tab on Data Migration Assistant.":::
 1. Review and apply any suggested fixes for objects that can't be converted as-is.
 1. Select **Generate SQL script**. 
 
-    :::image type="content" source="../media/3-dma-sql-database-script.png" alt-text="Screenshot showing the generated script on Data Migration Assistant.":::
+    :::image type="content" source="../media/3-data-migration-assistant-sql-database-script.png" alt-text="Screenshot showing the generated script on Data Migration Assistant.":::
 
 1. Review the generated script and select **Deploy schema**.
 1. Review the results of the schema deployment and select **Migrate data** to initiate the data migration process.
 1. On the **Select tables** tab, select the tables containing data you'd like to migrate, and then select **Start data migration**.
 
-    :::image type="content" source="../media/3-dma-sql-table.png" alt-text="Screenshot showing select tables tab on Data Migration Assistant.":::
+    :::image type="content" source="../media/3-data-migration-assistant-sql-table.png" alt-text="Screenshot showing select tables tab on Data Migration Assistant.":::
 
-    **Note:** We strongly recommend that you temporarily change your Azure SQL Database to performance level **P15** before initiating the migration process for the optimal migration experience. 
+    > [!NOTE]
+    > We strongly recommend that you temporarily change your Azure SQL Database to performance level **P15** before initiating the migration process for the optimal migration experience.
 
 ### Monitor migration
 
 The final step shows you the overall status of the migration. Also, you can filter the results by selecting different migration statuses at the top of the screen
 
-:::image type="content" source="../media/3-dma-migration-monitor.png" alt-text="Screenshot showing the migration results on Data Migration Assistant.":::
+:::image type="content" source="../media/3-data-migration-assistant-monitor.png" alt-text="Screenshot showing the migration results on Data Migration Assistant.":::
 
 ### Fine-tune settings
 

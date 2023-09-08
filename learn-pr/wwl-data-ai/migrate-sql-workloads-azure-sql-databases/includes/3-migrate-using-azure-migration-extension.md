@@ -83,7 +83,7 @@ Alternatively, you can also monitor the migration activity using Azure Database 
 
 To monitor your database migration, you would typically go to the Azure portal and find your instance of the Database Migration Service. Once you've located the service, you can view its instance overview. Select **Monitor migrations** to access detailed information about your ongoing database migration.
 
-:::image type="content" border="false" source="../media/3-dms-azure-portal.png" alt-text="Screenshot of the monitoring page in Azure Database Migration Services in Azure portal.":::
+:::image type="content" border="false" source="../media/3-database-migration-service-azure-portal.png" alt-text="Screenshot of the monitoring page in Azure Database Migration Services in Azure portal.":::
 
 After the migration status is **Succeeded**, navigate to the target server, and validate the target database. Check the database schema and data.
 

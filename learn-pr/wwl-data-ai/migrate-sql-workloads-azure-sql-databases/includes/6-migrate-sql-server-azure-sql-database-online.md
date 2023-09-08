@@ -260,4 +260,4 @@ To view the synchronization status, right-click on the subscription, select **Vi
 
 After the data is fully replicated to Azure SQL Database, you can direct the connections to the subscriber database, and then stop and remove the replication.
 
-To learn more about supported configurations, see [https://learn.microsoft.com/en-us/azure/azure-sql/database/replication-to-sql-database?view=azuresql](/azure/azure-sql/database/replication-to-sql-database).
+To learn more about supported configurations, see [Replication to Azure SQL Database](/azure/azure-sql/database/replication-to-sql-database).
