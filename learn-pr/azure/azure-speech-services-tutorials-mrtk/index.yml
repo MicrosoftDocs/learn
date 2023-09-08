@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.azure-speech-services-tutorials-mrtk
 metadata:
-  title: Add Azure Speech Services to your mixed reality project
+  title: Add Azure AI services to your mixed reality project
   description: This course explores the use of Azure speech services by integrating to a hololens2 application. You can also deploy your project to a HoloLens.
   ms.date: 06/26/2023
   author: marlenaklein-msft
   ms.author: marlenaklein
   ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
-title: Add Azure Speech Services to your mixed reality project
+  ms.service: cognitive-services
+title: Add Azure AI services to your mixed reality project
 summary: Import and learn about Azure Speech Services to enhance your learning experience.
 abstract: |
   By the end of this module you will be able to:

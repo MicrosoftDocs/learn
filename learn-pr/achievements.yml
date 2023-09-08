@@ -2137,3 +2137,8 @@ achievements:
   title: Plan and manage your Azure costs
   summary: Learn about the factors that influence cost and tools you can use to help estimate and manage your cloud spend.
   iconUrl: /training/achievements/review-planning-managing-costs.svg
+- uid: learn.enable-single-sign-on.badge
+  type: badge
+  title: Enable single sign-on for applications by using Azure Active Directory
+  summary: "To enable single sign-on, you add an application from the Azure Active Directory(Azure AD) application gallery. You create a test user account in Azure AD  and assign it to the Azure AD application. You then configure single sign-on both at the identity provider and the service provider and test the single sign-on configuration by signing in to the application using the test user account."
+  iconUrl: /training/achievements/enable-single-sign-on.svg

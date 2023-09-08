@@ -1,4 +1,3 @@
-
 This module details target environment provisioning, service connections creation process, and test infrastructure setup. Learn how to configure functional test automation and run availability tests.
 
 ## Learning objectives

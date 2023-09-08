@@ -71,7 +71,7 @@ The top-right value tells us how many times the model predicted false, but the a
 
 ### False Positives (FP)
 
-The bottom-right value holds false positives. This tells us how many times the model predicted true, but the actual label was false. We know now that this is 250, because there were 750 times that the correct answer was false. 500 of these times appear in the top-left cell (TN):
+The bottom-left value holds false positives. This tells us how many times the model predicted true, but the actual label was false. We know now that this is 250, because there were 750 times that the correct answer was false. 500 of these times appear in the top-left cell (TN):
 
 ![Diagram of the confusion matrix showing false positives also.](../media/8-2-d.jpg)
 
