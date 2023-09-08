@@ -8,7 +8,7 @@ There are three main components to Swashbuckle:
 
 * [Swashbuckle.AspNetCore.SwaggerUI](https://www.nuget.org/packages/Swashbuckle.AspNetCore.SwaggerUI/): an embedded version of the Swagger UI tool. It interprets Swagger JSON to build a rich, customizable experience for describing the web API functionality. It includes built-in test harnesses for the public methods.
 
-The following `dotnet run` comannd installs the Swashbuckle NuGet package:
+The following `dotnet run` command installs the Swashbuckle NuGet package:
 
 ```dotnetcli
 dotnet add <name>.csproj package Swashbuckle.AspNetCore -v 6.5.0
