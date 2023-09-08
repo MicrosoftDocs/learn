@@ -20,4 +20,4 @@ Azure VNet enables organizations to segment their network. Organizations can cre
 
 VNets provide network level containment of resources with no traffic allowed across VNets or inbound to the VNet, by default.   Communication needs to be explicitly provisioned. This enables more control over how Azure resources in a VNet communicate with other Azure resources, the internet, and on-premises networks.
 
-:::image type="content" source="../media/azure-virtual-networks.png" alt-text="Image depicting network segmentation using Azure Virtual Networks.":::
+:::image type="content" source="../media/azure-virtual-networks.png" alt-text="Diagram depicting network segmentation using Azure Virtual Networks.":::
