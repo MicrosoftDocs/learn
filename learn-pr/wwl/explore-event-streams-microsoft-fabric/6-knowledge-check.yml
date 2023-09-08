@@ -17,13 +17,13 @@ quiz:
     choices:
     - content: "Azure Functions, Azure Stream Analytics, Apache Spark"
       isCorrect: false
-      explanation: "Incorrect. These are services that can use Azure Event Hubs as an event source."
+      explanation: "Incorrect. Azure Functions, Azure Stream Analytics, and Apache Spark are services that can use Azure Event Hubs as an event source."
     - content: "Azure Event Hubs, Sample data, Custom app"
       isCorrect: true
-      explanation: "Correct. These are the three types of event sources available in EventStream."
+      explanation: "Correct. Azure Event Hubs, Sample data, and Custom app are the three types of event sources available in EventStream."
     - content: "IoT, Retail, Finance"
       isCorrect: false
-      explanation: "Incorrect. These are sample data sets that can be used as an event source."
+      explanation: "Incorrect. IoT, Retail, and Finance are sample data sets that can be used as an event source."
   - content: "What is the first step to create an event source in EventStream?"
     choices:
     - content: "Select a consumer group for your source"
