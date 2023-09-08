@@ -8,25 +8,25 @@ Commands in the CLI are structured in *groups* and *subgroups*. Each group repre
 
 So, how do you find the particular commands you need? One way is to use `az find`, the AI robot that uses the Azure documentation to tell you more about commands, the CLI, and more.
 
-**Example**: find the most popular commands related to the word **blob**.
+**Example**: find the most popular commands related to the word **blob**:
 
 ```azurecli
 az find blob
 ```
 
-**Example**: Show me the most popular commands for an Azure CLI command group, such as `az vm`.
+**Example**: Show me the most popular commands for an Azure CLI command group, such as `az vm`:
 
 ```azurecli
 az find "az vm"
 ```
 
-**Example**: Show me the most popular parameters and subcommands for an Azure CLI command.
+**Example**: Show me the most popular parameters and subcommands for an Azure CLI command:
 
 ```azurecli
 az find "az vm create"
 ```
 
-If you already know the name of the command you want, the `--help` argument for that command will get you more detailed information on the command, and a list of the available subcommands for a command group. So, with our storage example, here's how you can get a list of the subgroups and commands for managing blob storage:
+If you already know the name of the command you want, the `--help` argument for that command will get you more detailed information on the command and a list of the available subcommands for a command group. So, with our storage example, here's how you can get a list of the subgroups and commands for managing blob storage:
 
 ```azurecli
 az storage blob --help
@@ -42,7 +42,7 @@ Each step corresponds to a different Azure CLI command.
 
 ### Connect
 
-Since you're working with a local install of the Azure CLI, you'll need to authenticate before you can execute Azure commands by using the Azure CLI **login** command.
+Because you're working with a local install of the Azure CLI, you'll need to authenticate before you can execute Azure commands by using the Azure CLI **login** command.
 
 ```azurecli
 az login
@@ -50,13 +50,13 @@ az login
 
 The Azure CLI will typically launch your default browser to open the Azure sign-in page. If this doesn't work, follow the command-line instructions and enter an authorization code at [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
-After a successful sign-in, you'll be connected to your Azure subscription.
+After successfully signing in, you'll be connected to your Azure subscription.
 
 ### Create
 
 You'll often need to create a new resource group before you create a new Azure service, so we'll use resource groups as an example to show how to create Azure resources from the CLI.
 
-The Azure CLI **group create** command creates a resource group. You must specify a name and location. The name must be unique within your subscription. The location determines where the metadata for your resource group will be stored. You use strings like "West US", "North Europe", or "West India" to specify the location; alternatively, you can use single-word equivalents, such as westus, northeurope, or westindia. The core syntax is:
+The Azure CLI **group create** command creates a resource group. You must specify a name and location. The name must be unique within your subscription. The location determines where the metadata for your resource group will be stored. You can use strings like "West US," "North Europe," or "West India" to specify the location; alternatively, you can use single-word equivalents, such as westus, northeurope, or westindia. The core syntax is:
 
 ```azurecli
 az group create --name <name> --location <location>
