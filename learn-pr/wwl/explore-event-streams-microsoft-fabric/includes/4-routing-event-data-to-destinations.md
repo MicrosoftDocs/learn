@@ -2,7 +2,7 @@
 
 To add an eventstream destination in Microsoft Fabric, you need to follow these steps:
 
-- Select New destination on the ribbon or ![new button in main editor](../media/new-button-main-editor.png) in the main editor canvas and then select the type of destination you want to add. The types of destinations that you can add to your eventstream are KQL Database, Lakehouse, Custom App, and Reflex. See the Supported destinations section for details.
+- Select New destination on the ribbon or ![new button in main editor.](../media/new-button-main-editor.png) in the main editor canvas and then select the type of destination you want to add. The types of destinations that you can add to your eventstream are KQL Database, Lakehouse, Custom App, and Reflex. See the Supported destinations section for details.
 - Enter a destination name, select a workspace, and choose a destination from the selected workspace. Then select Add and configure.
 
 > [!NOTE]
@@ -25,18 +25,18 @@ In eventstream there are currently four current destination types supported incl
 - Custom App
 - Reflex
 
-![New eventstream destination](../media/create-new-eventstream-destination.png)
+![New eventstream destination.](../media/create-new-eventstream-destination.png)
 
 ## Store events in a delta table using Lakehouse as an event destination
 
 - Create a lakehouse and an eventstream in your workspace. You can refer to this article for detailed instructions.
-- Add a lakehouse destination to your eventstream by selecting New destination on the ribbon or ![new button in main editor](../media/new-button-main-editor.png) in the main editor canvas and then selecting **Lakehouse**.
+- Add a lakehouse destination to your eventstream by selecting New destination on the ribbon or ![new button in main editor.](../media/new-button-main-editor.png) in the main editor canvas and then selecting **Lakehouse**.
 
-![new lakehouse destination](../media/lakehouse-destination.png)
+![new lakehouse destination.](../media/lakehouse-destination.png)
 
 - Enter a destination name, select a workspace, and choose a lakehouse from the selected workspace. Then select Add and configure.
 
-![configure lakehouse destination](../media/lakehouse-configuration.png)
+![configure lakehouse destination.](../media/lakehouse-configuration.png)
 
 On the Ingest data page, navigate through the tabs to complete the configuration for your destination. You can specify the destination table, source connection, schema, compression type, data format, and preview how the data is sent to your lakehouse. You can also define real-time events processing logic with event processor. See this article for more details.
 Review the status of your data ingestion and select Done. A lakehouse destination tile appears on the canvas, connected to your eventstream. Real-time events are converted into Delta Lake format and then stored in the designated lakehouse tables
@@ -47,11 +47,11 @@ Review the status of your data ingestion and select Done. A lakehouse destinatio
 
 In several destinations, you'll see the button for event processing and once a destination connection is established you'll be able to add or edit new or existing processing operations prior to it reaching its destination.
 
-![Event procesing](../media/event-processing-editor.png)
+![Event procesing.](../media/event-processing-editor.png)
 
 Within the event processing editor, you'll have several operations available to you to refine the data for your target sources including:
 
-![Event processing operations](../media/event-processing-editor-operations.png)
+![Event processing operations.](../media/event-processing-editor-operations.png)
 
 These operations include:
 
@@ -74,4 +74,4 @@ These operations include:
 
 This processor operation is contained within the Event Task and you can edit it by the event task icon:
 
-![Even processing task](../media/event-processing-icon.png)
+![Even processing task.](../media/event-processing-icon.png)

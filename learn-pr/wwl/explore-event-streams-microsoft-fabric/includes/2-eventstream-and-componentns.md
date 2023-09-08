@@ -6,7 +6,7 @@ Microsoft Fabric Eventstream is a no-code feature that lets you capture and send
 
 Microsoft Fabric Eventstream works by creating a pipeline of events from multiple internal and external sources to different destinations. You can think of it as a conveyor belt that moves data from one place to another. You can also add some transformations to the data along the way, such as filtering, aggregating, or enriching.
 
-![Mulitple event stream sources and destrinations](../media/event-stream-multiple-sources-destinations.png)
+![Mulitple event stream sources and destrinations.](../media/event-stream-multiple-sources-destinations.png)
 
 Eventstream's main editor can be used to design your pipeline by dragging and dropping different nodes, such as sources, destinations, and transformations. You can also see the event data flowing through the pipeline in real-time. Microsoft Fabric Eventstream handles the scaling, reliability, and security of your eventstream automatically. You don’t need to write any code or manage any infrastructure to use Microsoft Fabric Eventstream.
 
@@ -21,13 +21,13 @@ The main components of Microsoft Fabric Eventstream are:
 * **Destination** : This is where your event data goes to. You can pick KQL database or lakehouse as your destination type. You can also give the table name and the schema mapping of your destination.
 * **Main editor** : This is the place where you can add and manage your sources and destinations. You can also see the event data, check the data insights, and view logs for each source or destination. Each source or destination shows up as a tile (node) in the place.
 
-  ![Main editor with components](../media/eventstream-components-from-main-editor.png)
+  ![Main editor with components.](../media/eventstream-components-from-main-editor.png)
 
 ## Main Editor components
 
 Before we dive deeper into eventstream, it's important to understand the design canvas known as Main Editor. Understanding this assists you in your no code development and designing eventstreams in an efficient and approach that allows for reuse.
 
-![Main Editor elements](../media/elements-of-main-editor.png)
+![Main Editor elements.](../media/elements-of-main-editor.png)
 
 1. **Ribbon**: The ribbon menu provides source and destination options.
 2. **Data navigation pane**: This pane allows you to navigate the sources and destinations.
