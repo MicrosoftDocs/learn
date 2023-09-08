@@ -2,7 +2,7 @@ Virtual machines must be sized appropriately for the expected work. A VM without
 
 ## Predefined VM sizes
 
-When you create a virtual machine, you can supply a _VM size_ value that determines the amount of compute resources devoted to the VM. This includes CPU, GPU, and memory made available to the virtual machine from Azure.
+When you create a virtual machine, you can supply a _VM size_ value that determines the amount of compute resources devoted to the VM, including CPU, GPU, and memory made available to the virtual machine from Azure.
 
 Azure defines a set of predefined VM sizes for Linux and Windows from which to choose based on the expected usage.
 
@@ -15,7 +15,7 @@ Azure defines a set of predefined VM sizes for Linux and Windows from which to c
 | GPU optimized | NV, NC | Specialized VMs targeted for heavy graphic rendering and video editing. |
 | High performance | H, A8-11 | Our most powerful CPU VMs with optional high-throughput network interfaces (RDMA). |
 
-The available sizes change based on the region in which you're creating the VM. You can get a list of the available sizes using the `vm list-sizes` command. Try typing the following into Azure Cloud Shell:
+The available sizes change based on the region in which you're creating the VM. You can get a list of the available sizes using the `vm list-sizes` command. Try typing the following command into Azure Cloud Shell:
 
 ```azurecli
 az vm list-sizes --location eastus --output table
@@ -68,7 +68,7 @@ az vm create \
 
 ## Resize an existing VM
 
-We can also resize an existing VM if the workload changes or if it was incorrectly sized at creation. Let's use the first VM we created, SampleVM. Before requesting a resize, we must check to see if the desired size is available in the cluster our VM is part of. We can do this with the `vm list-vm-resize-options` command:
+We can also resize an existing VM if the workload changes or if it was incorrectly sized at creation. Let's use the first VM we created, SampleVM. Before requesting a resize, we must check to see if the desired size is available in the cluster our VM is part of. We can use the `vm list-vm-resize-options` command:
 
 ```azurecli
 az vm list-vm-resize-options \
@@ -77,7 +77,7 @@ az vm list-vm-resize-options \
     --output table
 ```
 
-This returns a list of all the possible size configurations available in the resource group. If the size we want isn't available in our cluster but _is_ available in the region, we can [deallocate the VM](/cli/azure/vm#az-vm-deallocate). This command stops the running VM and remove it from the current cluster without losing any resources. We can then resize it, which re-creates the VM in a new cluster where the size configuration is available.
+This command returns a list of all the possible size configurations available in the resource group. If the size we want isn't available in our cluster but _is_ available in the region, we can [deallocate the VM](/cli/azure/vm#az-vm-deallocate). This command stops the running VM and remove it from the current cluster without losing any resources. We can then resize it, which re-creates the VM in a new cluster where the size configuration is available.
 
 > [!NOTE]
 > The Microsoft Learn sandbox is limited to a few VM sizes.
@@ -91,4 +91,4 @@ az vm resize \
     --size Standard_D2s_v3
 ```
 
-This command takes a few minutes to reduce the resources of the VM, and once it's done, it'll return a new JSON configuration.
+This command takes a few minutes to reduce the resources of the VM, and once it's done, it returns a new JSON configuration.
