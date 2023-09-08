@@ -3,7 +3,7 @@ uid: learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud
 metadata:
   title: Create a Log Analytics workspace for Microsoft Defender for Cloud
   description: "Learn to create a Log Analytics workspace within the Azure portal, enabling robust data collection and analysis for Microsoft Defender for Cloud to enhance your security posture."
-  ms.date: 07/28/2023
+  ms.date: 09/01/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -36,6 +36,7 @@ products:
 units:
 - learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.introduction
 - learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.enable-defender-cloud-azure-subscription
+- learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.use-the-log-analytics-workspaces-menu-to-create-a-workspace
 - learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.knowledge-check
 - learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.summary
 badge:

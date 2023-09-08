@@ -28,9 +28,9 @@ Help users build trust in your bot and your company by handling their personal i
 
 Add intelligence to your bot to make it more useful. Its responses then become more appropriate and responsible.
 
-Azure Cognitive Services provides services that support AI functionality. These services offer a set of pre-trained, neural network models for the cloud. Their REST APIs and client library SDKs can help you build cognitive intelligence into apps.
+Azure AI services provides services that support AI functionality. These services offer a set of pre-trained, neural network models for the cloud. Their REST APIs and client library SDKs can help you build cognitive intelligence into apps.
 
-Your bot can use the following services, which are part of Cognitive Services:
+Your bot can use the following services, which are part of Azure AI services:
 
 - The Language Understanding Intelligent Service (LUIS) enables your bot to understand simple natural language. With this service, your bot can figure out the overall meaning of phrases. It can also extract known entities from phrases, such as city names or dates.
 - QnA Maker can help your bot answer general questions about a specific subject. This service can also provide chit-chat functionality, which can boost your bot's general conversational skills. With this capability, your bot can recognize some traditional phrases for greetings and endings of a conversation.
@@ -45,12 +45,12 @@ Include *diversity* in all stages of bot development to help avoid bias. When yo
 
 ### Support language diversity
 
-Add language diversity to your bot to make its communication more welcoming, robust, and reliable. If your bot uses Cognitive Services to understand simple natural language, consider these options:
+Add language diversity to your bot to make its communication more welcoming, robust, and reliable. If your bot uses Azure AI services to understand simple natural language, consider these options:
 
 - Store multiple sets of output messages, so the bot can switch between different conversation styles.
 - Examine the emotional sentiment of the user's input to detect the appropriate style to use. Azure Text Analytics can detect user sentiment.
 - Design your bot to support multiple languages. This implementation is helpful for users, but it requires significant development effort. Switching between output languages can be as simple as selecting different sets of output messages, but support for language understanding requires separate LUIS models.
-- Support multiple languages by using **automatic translation** with Cognitive Services Translator Text API. This API offers automatic language detection of user input messages. The API also translates output messages to the user's language.
+- Support multiple languages by using **automatic translation** with Azure AI Translator Text API. This API offers automatic language detection of user input messages. The API also translates output messages to the user's language.
 
 To incorporate translation into a bot, use the concept of Bot Framework Middleware. You can add this component to pre-process and post-process all messages to and from the user. The Middleware component can:
 
@@ -99,7 +99,7 @@ Consider our earlier example of building a geography bot. Here are a few ideas f
 
 - Support language diversity by storing multiple sets of output messages. Then the bot can switch between different conversation styles. You can use Azure Text Analytics to determine the appropriate style to use.
 
-- Support multiple languages by using Cognitive Services Translator Text API for automatic translation.
+- Support multiple languages by using Azure AI Translator Text API for automatic translation.
 
 - Welcome diversity by adding a speech interface to your bot with the Azure Speech service.
 

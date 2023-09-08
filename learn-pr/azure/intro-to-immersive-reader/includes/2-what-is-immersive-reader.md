@@ -19,7 +19,7 @@ Dictation is built into Immersive Reader, which can help people who struggle wit
 :::row:::
 :::column span="1":::
 
-Immersive reader is also available for anyone who finds math difficult. When Immersive reader is combined with Math Assistant, learners can have problems, equations, and solutions read aloud to them step by step. **Immersive Reader’s other functions, like line focus, focus mode, and spacing, all work with Math Assistant** to make math more accessible.
+Immersive reader is also available for anyone who finds math difficult. When Immersive reader is combined with Math Assistant, learners can have problems, equations, and solutions read aloud to them step by step. **Immersive Reader's other functions, like line focus, focus mode, and spacing, all work with Math Assistant** to make math more accessible.
 
 :::column-end:::
 :::column span="1":::

@@ -23,6 +23,7 @@ roles:
 - solution-architect
 - student
 products:
+- ai-services
 - azure-portal
 subjects:
 - natural-language-processing
