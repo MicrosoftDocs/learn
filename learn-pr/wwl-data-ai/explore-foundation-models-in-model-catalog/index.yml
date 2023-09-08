@@ -1,9 +1,7 @@
 ### YamlMime:Module
-uid: |
-  learn.explore-foundation-models-in-model-catalog
+uid: learn.explore-foundation-models-in-model-catalog
 metadata:
-  title: |
-    Understand the Transformer architecture and explore large language models in Azure Machine Learning
+  title: Understand the Transformer architecture and explore large language models in Azure Machine Learning
   description: Learn about the history of natural language processing (NLP), including how the Transformer architecture revolutionized the field and helped us create large language models (LLMs). Work with LLMs in Azure Machine Learning through the foundation models in the model catalog.
   ms.date: 7/24/2023
   author: madiepev
