@@ -18,3 +18,4 @@ To find out more about any of the topics covered in this module, go to:
 - [Discover and manage Microsoft Sentinel out-of-the-box content](/azure/sentinel/sentinel-solutions-deploy)
 - [Microsoft Sentinel GitHub repository](https://github.com/Azure/Azure-Sentinel/tree/master/DataConnectors)
 - [Connect your data source](/azure/sentinel/data-connectors-reference),
+- [Introducing Microsoft Security Copilot](https://www.microsoft.com/security/business/ai-machine-learning/microsoft-security-copilot)
