@@ -23,7 +23,6 @@ products:
 subjects:
 - machine-learning
 modules:
-- learn.wwl.ingest-explore-data-jupyter-notebooks-workspace
 - learn.wwl.track-model-training-jupyter-notebooks-mlflow
 trophy:
   uid: learn.wwl.use-notebooks-for-experimentation-azure-machine-learning.trophy
