@@ -3,7 +3,7 @@ uid: learn.wwl.design-machine-learning-operations-solution
 metadata:
   title: Design a machine learning operations solution
   description: "Design machine learning operations MLOps solution with Azure Machine Learning Python SDK v2"
-  ms.date: 09/07/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
