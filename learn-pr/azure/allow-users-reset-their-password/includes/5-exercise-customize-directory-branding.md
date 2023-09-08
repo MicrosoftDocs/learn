@@ -16,7 +16,7 @@ Let's use Azure Active Directory (Azure AD) to set up the custom branding.
 1. Under **Manage**, select **Company branding** > **Customize**.
 1. Next to **Favicon**, select **Browse**. Select your logo image.
 1. Next to **Background image**, select **Browse**. Select your page background image.
-1. Select a Page Background color or accept the default.
+1. Select a **Page background color** or accept the default.
 
     ![Screenshot that shows the configure company branding form.](../media/5-customize-ui.png)
 1. Select **Review + Create**, then select **Create**.
