@@ -1,27 +1,20 @@
-For a seamless and secure transition of your SQL resources to Azure, understanding and effectively managing the migration of security information is essential.
+For a seamless and secure transition of your SQL Server databases to Azure SQL, understanding and effectively managing the migration of security information is essential.
 
 ## Decide when to migrate SQL logins and groups
 
-Imagine a large organization with a substantial on-premises SQL Server infrastructure that serves various business units. Each business unit has its own set of SQL logins, user roles, and permissions customized to their specific needs. The organization decides to migrate these databases to Azure SQL Database to leverage the cloud's scalability and efficiency benefits.
+Imagine a large organization with a substantial on-premises SQL Server infrastructure that serves various business units. Each business unit has its own set of SQL logins, user roles, and permissions customized to their specific needs. The organization decides to migrate these databases to Azure SQL Database to leverage the cloud's scalability benefits.
 
 In this scenario, migrating the logins upfront, before the database migration, could introduce unnecessary complexity to the testing phase.
 
-Migrating logins at the end of a database migration project can facilitate testing, especially in complex scenarios. Consider an organization with diverse permissions for different business units. If logins are migrated upfront, it can lead to testing delays due to evolving database schemas. Waiting to migrate logins allows security configurations to align with the final structure, simplifying the migration process, especially when table-dependent security is crucial for data protection.
+Migrating logins at the end of a database migration project can facilitate testing, especially in complex scenarios. If logins are migrated upfront, it can lead to testing delays due to evolving database schemas. Waiting to migrate logins allows security configurations to align with the final structure, simplifying the migration process, especially when table-dependent security is crucial for data protection.
 
-### Considerations
+| **Challenges**| **Explanation**|
+|----------------------------------|-------------------------------|
+| **Complex permissions structure**    | Migrating logins later allows for adapting permissions as the database structure evolves during migration. 
+| **Testing delays**                   | Migrating logins early may slow down testing, complicating security validation alongside schema changes.|
+| **Table-dependent security**         | Delaying login migration enables adjusting security configurations to match final database structures if they change during migration.|
 
- Here's why:
-
-Certainly, here are shorter explanations:
-
-| **Challenges**                   | **Explanation**                                                                                                                                                                                             |
-|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Diverse Permissions Structure    | Migrating logins later allows for adapting permissions as the database structure evolves during migration.                                                                                                  |
-| Testing Delays                   | Migrating logins early may slow down testing, complicating security validation alongside schema changes.                                                                                                  |
-| Table-Dependent Security         | Delaying login migration enables adjusting security configurations to match final database structures if they change during migration.                                                                        |
-| Data Sensitivity                 | Migrating logins after database creation aligns security with actual data and tables, reducing the risk of data breaches.                                                                                    |
-
-By postponing the migration of logins until after the database is created and the schema is stable, you can simplify the testing and validation phase. This approach allows you to focus on ensuring that security measures align perfectly with the finalized database structure, reducing potential complications and making the migration project more manageable.
+In our scenario, this approach allows you to focus on ensuring that security measures align perfectly with the finalized database structure, reducing potential complications and making the migration project more manageable.
 
 ### Using the migration extension
 
@@ -40,24 +33,31 @@ If you haven’t completed the database migration and the login migration proces
 
 You can use the Azure SQL Migration extension for Azure Data Studio, PowerShell or Azure CLI to start the login migration process. Here is a step-by-step guide on how to migrate logins using the migration extension in Azure Data Studio:
 
-1. Start the SQL Server login migration wizard.
+1. Launch Azure SQL Migration extension from Azure Data Studio, and start the SQL Server login migration wizard.
 
-<image>
+    :::image type="content" source="../media/2-login-migration.png" alt-text="Screenshot showing the new login migration option from Azure Data Studio. ":::
 
-1. Select your logins from the source SQL Server instance.
+1. On **Step 1: Azure SQL target**, connect to your Azure SQL target.
 
-<image>
+1. On **Step 2: Select login(s) to migrate**, select your logins from the source SQL Server instance.
 
-1. Select and connect to your Azure SQL target.
+1. In **Step 3: Migration Status**, monitor the login migration process. Once the login migration is successfully completed (or if it has failures), the page displays the relevant updates.
 
-<image>
-
-1. Start your SQL Server login migration and monitor progress to completion.
+    :::image type="content" source="../media/2-login-migration-status.png" alt-text="Screenshot showing the login migration status in Azure Data Studio.png.":::
 
 ### Using DMA
 
+ As part of login migration, Data Migration Assistant assigns the permissions to securables on the target SQL Server as they exist on the source SQL Server. If the login already exists on the target SQL Server, Data Migration Assistant migrates only the permissions assigned to securables and won’t re-create the whole login. Data Migration Assistant makes the best effort to map the login to database users if the login already exists on the target server.
 
+Data Migration Assistant currently doesn’t support:
 
+- Logins associated with a stand-alone security certificate (logins mapped to certificate)
+- A stand-alone asymmetric key (logins mapped to asymmetric key) 
+- Logins mapped to credentials. 
+-  By default, Data Migration Assistant selects all the qualified logins to migrate. Optionally, you can select specific logins to migrate1.
+
+> [!NOTE]
+> Server principles with names enclosed by double hash marks (##), which are for internal use only are not migrated.
 
 ### Tool XPTO
 
