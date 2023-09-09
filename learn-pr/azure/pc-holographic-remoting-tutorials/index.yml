@@ -3,11 +3,11 @@ uid: learn.azure.pc-holographic-remoting-tutorials-mrtk
 metadata:
   title: Create a Holographic Remoting app to visualize 3D content on HoloLens 2
   description: This course explores the use of PC holographic remoting by integrating to a HoloLens 2 application.
-  ms.date: 09/09/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
-  ms.prod: hololens
+  ms.prod: learning-mrtk
 title: Create a Holographic Remoting app to visualize 3D content on HoloLens 2
 summary: Learn about PC holographic remoting to enhance your learning experience.
 abstract: |
@@ -30,7 +30,7 @@ prerequisites: |
   - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/develop/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - (Optional) A HoloLens 2 device configured for development
-  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
+  - Unity Hub with Unity 2021.3 or later installed and the Universal Windows Platform Build Support module added
   - [Set up a mixed reality project in Unity module](/training/modules/mixed-reality-toolkit-project-unity)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity: interface, scene creation, package import, addition of GameObjects to a scene

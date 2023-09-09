@@ -1,6 +1,6 @@
 ## Reverberation
 
-Reverberation is the phenomenon of persistence of sound after it is stopped because of multiple reflections from surfaces such as furniture, people, air, etc. In a closed surface. These reflections build up with each reflection and decay gradually as they are absorbed by the surface of objects in the space enclosed.
+Reverberation is the phenomenon of persistence of sound after it is stopped because of multiple reflections from surfaces such as furniture, people, air, etc. in a closed surface. These reflections build up with each reflection and decay gradually as they are absorbed by the surface of objects in the space enclosed.
 
 It is the same as the echo, but the distance between the source of the sound and also the obstacle through which it gets reflected is less if there is this reverberation. The quantitative characterization of the reverberation is done by using the parameter called reverberation time.
 
