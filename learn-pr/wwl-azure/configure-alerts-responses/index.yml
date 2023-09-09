@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.configure-alerts-responses
+metadata:
+  title: Configure alerts and responses
+  description: "Configure alerts and responses"
+  ms.date: 09/09/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+title: Configure alerts and responses
+summary: Understand how to configure and manage alerts and responses in order to proactively manage notifications about potential issues.
+abstract: |
+  - Describe the purpose of and identify the different types of alerts
+  - Explain how action groups are used to notify users about alerts
+  - Configure and manage alert rules
+  - Configure alert processing rules to modify triggered alerts
+  - Describe how Change Analysis provides insight into changes made to Azure resources
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.configure-alerts-responses.introduction
+- learn.wwl.configure-alerts-responses.azure-monitor-alerts
+- learn.wwl.configure-alerts-responses.action-groups
+- learn.wwl.configure-alerts-responses.alert-rules
+- learn.wwl.configure-alerts-responses.alert-processing-rules
+- learn.wwl.configure-alerts-responses.azure-monitor-change-analysis
+- learn.wwl.configure-alerts-responses.knowledge-check
+- learn.wwl.configure-alerts-responses.summary
+badge:
+  uid: learn.wwl.configure-alerts-responses.badge

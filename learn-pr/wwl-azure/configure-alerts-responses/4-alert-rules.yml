@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-alerts-responses.alert-rules
+title: Alert rules
+metadata:
+  title: Alert rules
+  description: "Alert rules"
+  ms.date: 09/09/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-alert-rules.md)]

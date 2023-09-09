@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-alerts-responses.alert-processing-rules
+title: Alert processing rules
+metadata:
+  title: Alert processing rules
+  description: "Alert processing rules"
+  ms.date: 09/09/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-alert-processing-rules.md)]
