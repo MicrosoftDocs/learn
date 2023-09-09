@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-monitoring-virtual-machines.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 09/09/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which of the following role assignments includes the necessary permissions to install the Azure Monitor Agent?"
+    choices:
+    - content: "Virtual Machine Reader"
+      isCorrect: false
+      explanation: "Incorrect. The Virtual Machine Contributor role or Log Analytics Contributor role or higher is required to install the Azure Monitor Agent. The Reader level role does not have the required permissions."
+    - content: "Virtual Machine Contributor"
+      isCorrect: true
+      explanation: "Correct. the Virtual Machine Contributor role or Log Analytics Contributor role or higher is required to install the Azure Monitor Agent."
+    - content: "Log Analytics Reader"
+      isCorrect: false
+      explanation: "Incorrect. The Virtual Machine Contributor role or Log Analytics Contributor role or higher is required to install the Azure Monitor Agent. The Reader level role does not have the required permissions."
+  - content: "What is the maximum amount of time you can view performance data over in a VM Insights performance chart on IaaS VM CPU utilization?"
+    choices:
+    - content: "7 days"
+      isCorrect: false
+      explanation: "Incorrect. The maximum amount of time you can view performance data over in a VM Insights performance chart is 30 days. The default is to display data from the last 24 hours."
+    - content: "30 days"
+      isCorrect: true
+      explanation: "Correct. The maximum amount of time you can view performance data over in a VM Insights performance chart is 30 days. The default is to display data from the last 24 hours."
+    - content: "21 days"
+      isCorrect: false
+      explanation: "Incorrect. The maximum amount of time you can view performance data over in a VM Insights performance chart is 30 days. The default is to display data from the last 24 hours."
+  - content: "When configuring a data collection rules, which of the following can you send to both Azure Monitor Metrics and Azure Monitor Logs?"
+    choices:
+    - content: "Windows Event log data"
+      isCorrect: false
+      explanation: "Incorrect. You can send Windows event and Syslog data to Azure Monitor Logs only. You can send performance counters to both Azure Monitor Metrics and Azure Monitor Logs."
+    - content: "Syslog"
+      isCorrect: false
+      explanation: "Incorrect. You can send Windows event and Syslog data to Azure Monitor Logs only. You can send performance counters to both Azure Monitor Metrics and Azure Monitor Logs."
+    - content: "Performance counter data"
+      isCorrect: true
+      explanation: "Correct. You can send Windows event and Syslog data to Azure Monitor Logs only. You can send performance counters to both Azure Monitor Metrics and Azure Monitor Logs."

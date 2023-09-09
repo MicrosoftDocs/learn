@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-monitoring-virtual-machines.monitor-performance-with-vm-insights
+title: Monitor Performance with VM insights
+metadata:
+  title: Monitor Performance with VM insights
+  description: "Monitor Performance with VM insights"
+  ms.date: 09/09/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-monitor-performance-with-vm-insights.md)]

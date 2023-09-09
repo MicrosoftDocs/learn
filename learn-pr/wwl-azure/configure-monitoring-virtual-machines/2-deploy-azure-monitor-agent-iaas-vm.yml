@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-monitoring-virtual-machines.deploy-azure-monitor-agent-iaas-vm
+title: Deploy Azure Monitor Agent to IaaS Virtual Machines
+metadata:
+  title: Deploy Azure Monitor Agent to IaaS Virtual Machines
+  description: "Deploy Azure Monitor Agent to IaaS Virtual Machines"
+  ms.date: 09/09/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-deploy-azure-monitor-agent-iaas-vm.md)]
