@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-monitoring-virtual-networks.packet-capture
+title: Packet capture
+metadata:
+  title: Packet capture
+  description: "Packet capture"
+  ms.date: 09/09/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-packet-capture.md)]

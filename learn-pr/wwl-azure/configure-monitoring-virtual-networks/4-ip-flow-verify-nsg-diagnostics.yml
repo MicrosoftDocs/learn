@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-monitoring-virtual-networks.ip-flow-verify-nsg-diagnostics
+title: IP flow verify and NSG diagnostics
+metadata:
+  title: IP flow verify and NSG diagnostics
+  description: "IP flow verify and NSG diagnostics"
+  ms.date: 09/09/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-ip-flow-verify-nsg-diagnostics.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-monitoring-virtual-networks.connection-monitor
+title: Connection Monitor
+metadata:
+  title: Connection Monitor
+  description: "Connection Monitor"
+  ms.date: 09/09/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-connection-monitor.md)]

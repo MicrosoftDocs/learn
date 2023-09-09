@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-monitoring-virtual-networks.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 09/09/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which functionality in Topology should you use to determine the path that is being taken from the VM to the external data source?"
+    choices:
+    - content: "Next Hop"
+      isCorrect: true
+      explanation: "Correct. Next Hop informs you of the next host that the path will take from the VM to the external data source."
+    - content: "VNet Configuration"
+      isCorrect: false
+      explanation: "Incorrect. Configuration information about the VNet will not provide information about the next hop between the VM and the external data source."
+    - content: "DNS Settings"
+      isCorrect: false
+      explanation: "Incorrect. DNS settings information will not provide information about the next hop between the VM and the external data source."
+  - content: "What must you have installed on on-premises computers if you want to use Connection Monitor to diagnose latency between those computers and an Azure storage endpoint?"
+    choices:
+    - content: "Azure Network Adapter"
+      isCorrect: false
+      explanation: "Incorrect. Azure Network Adapter provides a point-to-site VPN connection from a Windows Server computer to an Azure VNet. It will not provide any diagnostic information about latency to an Azure storage endpoint."
+    - content: "SNMP Agent"
+      isCorrect: false
+      explanation: "Incorrect. Connection Monitor does not rely on SNMP to gather network performance data. Instead, it uses the Log Analytics agent to collect network performance data from the on-premises computers and send it to a Log Analytics workspace for analysis."
+    - content: "Log Analytics Agent"
+      isCorrect: true
+      explanation: "Correct. Connection Monitor leverages the Log Analytics Agent in managing connection tests between an on-premises computer an Azure storage endpoint."
+  - content: "You have created a Connection Monitor between an Azure Arc enabled server in your on-premises location and an Azure storage endpoint. You haven't specified a warning threshold so Connection Monitor will use default values for its tests. Which of the following results will trigger a warning result?"
+    choices:
+    - content: "10 percent of results over 500 milliseconds"
+      isCorrect: false
+      explanation: "Incorrect. The default warning threshold for Connection Monitor is 10 percent of result over 750 milliseconds."
+    - content: "5 percent of results over 750 milliseconds"
+      isCorrect: false
+      explanation: "Incorrect. The default warning threshold for Connection Monitor is 10 percent of result over 750 milliseconds."
+    - content: "10 percent of results over 750 milliseconds"
+      isCorrect: true
+      explanation: "Correct. The default warning threshold for Connection Monitor is 10 percent of result over 750 milliseconds."

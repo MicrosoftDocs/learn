@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-monitoring-virtual-networks.topology
+title: Topology
+metadata:
+  title: Topology
+  description: "Topology"
+  ms.date: 09/09/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-topology.md)]
