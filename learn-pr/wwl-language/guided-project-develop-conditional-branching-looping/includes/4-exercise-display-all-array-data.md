@@ -1,7 +1,3 @@
-
-
-
-
 In this exercise, you write the nested looping structure and selection code block that's used to display the ourAnimals array information. The detailed tasks that you complete during this exercise are:
 
 1. Outer loop: build the outer loop that iterates through the animals in the ourAnimals array.

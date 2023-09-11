@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal-spa.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 08/11/2023
+  author: softchris
+  ms.author: chnoring
+  ms.manager: markl
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What is the purpose of the React framework in a full stack app?
+      choices:
+        - content: React is used to build the back end of a full stack app.
+          isCorrect: false
+          explanation: Incorrect. React is a front end only framework.
+        - content: React is used to build the front end of a full stack app, while .NET 6 is used to build the back end.
+          isCorrect: true
+          explanation: React, as a front end framework, expediates the local development of a front end application. It provides tools, settings, functionality to help with that.
+        - content: React provides the programming language to develop the front end application.
+          isCorrect: false
+          explanation: Incorrect. React is built on top of the JavaScript programming language. It adds new functionality but doesn't create a new language.
+    - content: How would you as a front-end team tackle a project knowing that the back-end API isn't built yet?
+      choices:
+        - content: Wait for the back-end team to finish.
+          isCorrect: false
+          explanation: Incorrect. We recommend that you either work with the back-end team to build a vertical, or mock the response that you need.
+        - content: Negotiate a contract with the back-end team, and then mock the response.
+          isCorrect: true
+          explanation: Correct. Mocking the response can help you move faster as a front-end team. Don't forget to switch to the actual back-end API when it's available.
+        - content: Mock the response now, and you can sync with the back-end team later.
+          isCorrect: false
+          explanation: Incorrect. If you move ahead with mocking, without negotiating with the back-end team ahead of time, you might end up with mocked responses that don't quite match the reality of the back-end API when it's built.
+    - content: What CORS policy should I have if I want only `http://example.com` to be allowed?
+      choices:
+        - content: You should allow \*.
+          isCorrect: false
+          explanation: Incorrect. This policy would allow `http://example.com`, but it also allows all other domains.
+        - content: You should allow `http://example.com`.
+          isCorrect: true
+          explanation: Correct. This policy allows only `http://example.com`, and that is what you want.
+        - content: You should allow \* and `http://example.com`.
+          isCorrect: false
+          explanation: Incorrect. This policy allows too much. You want to allow only `http://example.com`.
+    - content: What benefit do you get in your full-stack application from using a design system such as Material UI?
+      choices:
+        - content: You can provide text translation so your app is available in many languages. 
+          isCorrect: false
+          explanation: Incorrect. Design systems don't provide text translation but could provide the elements that display text translation. 
+        - content: You can offer the backend application the same consistent look and feel. 
+          isCorrect: false 
+          explanation: Incorrect. The backend APIs only deal in data. There are no UI elements involved.
+        - content: A design system provides a cohesive design for your app including standards, components, and styles. 
+          isCorrect: true
+          explanation: Correct. These are just a few of the benefits of using a design system.
+          

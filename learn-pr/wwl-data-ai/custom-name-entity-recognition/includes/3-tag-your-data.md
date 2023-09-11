@@ -4,11 +4,11 @@ Labeling, or tagging, your data correctly is an important part of the process to
 - **Precision** - Label your entities consistently, without unnecessary extra words. Precision ensures only the correct data is included in your extracted entity.
 - **Completeness** - Label your data completely, and don't miss any entities. Completeness helps your model always recognize the entities present.
 
-![Screenshot of labeling an entity in Language Studio.](../media/ner-tag-entity-screenshot.png#lightbox)
+![Screenshot of labeling an entity in Azure AI Language Studio.](../media/ner-tag-entity-screenshot.png#lightbox)
 
 ## How to label your data
 
-Language Studio is the most straight forward method for labeling your data. Language Studio allows you to see the file, select the beginning and end of your entity, and specify which entity it is.
+Azure AI Language Studio is the most straight forward method for labeling your data. Azure AI Language Studio allows you to see the file, select the beginning and end of your entity, and specify which entity it is.
 
 Each label that you identify gets saved into a file that lives in your storage account with your dataset, in an auto-generated JSON file. This file then gets used by the model to learn how to extract custom entities. It's possible to provide this file when creating your project (if you're importing the same labels from a different project, for example) however it must be in the approved format.
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.work-with-form-recognizer.what-form-recognizer
-title: What is Form Recognizer?
+title: What is Azure Document Intelligence?
 metadata:
-  title: What is Form Recognizer?
-  description: "What is Form Recognizer?"
+  title: What is Azure Document Intelligence?
+  description: "What is Azure Document Intelligence?"
   ms.date: 05/17/2022
   author: wwlpublish
   ms.author: sheryang

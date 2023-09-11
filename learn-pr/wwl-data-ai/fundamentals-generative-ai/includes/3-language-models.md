@@ -57,7 +57,7 @@ While it may be convenient to represent tokens as simple IDs - essentially creat
 It can be useful to think of the elements in a token embedding vector as *coordinates* in multidimensional space, so that each token occupies a specific "location." The closer tokens are to one another along a particular dimension, the more semantically related they are. In other words, related words are grouped closer together. As a simple example, suppose the embeddings for our tokens consist of vectors with three elements, for example:
 
 - 4 ("dog"): [10.3.2]
-- 4 ("bark"): [10,2,2]
+- 5 ("bark"): [10,2,2]
 - 8 ("cat"): [10,3,1]
 - 9 ("meow"): [10,2,1]
 - 10 ("skateboard"): [3,3,1]

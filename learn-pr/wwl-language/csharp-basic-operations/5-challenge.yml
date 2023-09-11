@@ -4,11 +4,10 @@ title: Complete the challenge to convert Fahrenheit to Celsius
 metadata:
   title: Complete the challenge to convert Fahrenheit to Celsius
   description: "Complete the challenge to convert Fahrenheit to Celsius"
-  ms.date: 05/04/2023
+  ms.date: 09/01/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-challenge.md)]

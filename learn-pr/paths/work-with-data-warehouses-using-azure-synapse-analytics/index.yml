@@ -30,7 +30,6 @@ modules:
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads
 - learn.wwl.load-data-into-relational-data-warehouse
 - learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics
-- learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics
 trophy:
   uid: learn.wwl.work-with-data-warehouses-using-azure-synapse-analytics.trophy

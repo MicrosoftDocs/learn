@@ -1,4 +1,4 @@
-Form Recognizer includes prebuilt models that you can use for common form extraction tasks.
+Azure Document Intelligence includes prebuilt models that you can use for common form extraction tasks.
 
 ## W-2s (preview)
 
@@ -94,7 +94,7 @@ A few receipt model uses include:
 More info can be found about this model at the [receipts model page](/azure/applied-ai-services/form-recognizer/concept-receipt).
 
 >[!NOTE]
->You can learn more about the prebuilt receipt model with this separate <a href="/training/modules/analyze-receipts-form-recognizer/" target="_blank">Form Recognizer service module</a>.  
+>You can learn more about the prebuilt receipt model with this separate <a href="/training/modules/analyze-receipts-form-recognizer/" target="_blank">Azure Document Intelligence service module</a>.  
 
 ## ID documents
 

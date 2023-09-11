@@ -4,7 +4,7 @@ title: Exercise - Discover integral types
 metadata:
   title: Exercise - Discover integral types
   description: "Exercise - Discover integral types"
-  ms.date: 08/15/2023
+  ms.date: 08/30/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which data type has a range of whole numbers between 0 and 5000 in C# code?"
+  - content: "Which data type has a range of whole numbers between 0 and 65535 in C# code?"
     choices:
     - content: "sbyte"
       isCorrect: false
