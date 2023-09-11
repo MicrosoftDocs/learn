@@ -4,9 +4,10 @@ title: Implement Pass-through Authentication (PTA)
 metadata:
   title: Implement Pass-through Authentication (PTA)
   description: "Implement Pass-through Authentication (PTA)"
-  ms.date: 09/04/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
+durationInMinutes: 7
 content: |
   [!include[](includes/5-pass-through-authentication.md)]

@@ -4,9 +4,10 @@ title: Deploy Federation with Azure AD
 metadata:
   title: Deploy Federation with Azure AD
   description: "Deploy Federation with Azure AD"
-  ms.date: 09/04/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
+durationInMinutes: 7
 content: |
   [!include[](includes/6-federation-azure-active-directory.md)]

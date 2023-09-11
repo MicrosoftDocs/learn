@@ -2,10 +2,8 @@
 
 **Azure Active Directory (Azure AD) Pass-through Authentication** allows your users to sign in to both on-premises and cloud-based applications using the same passwords. This feature provides users with a better experience - one less password to remember and reduces IT helpdesk costs because users are less likely to forget how to sign in. When users sign in using Azure AD, this feature validates users' passwords directly against your on-premises Active Directory.
 
-This feature is an alternative to Azure AD Password Hash Synchronization, which provides the same benefit of cloud authentication to organizations. However, certain organizations wanting to enforce their on-premises Active Directory security and password policies can choose to use Pass-through Authentication instead.
+This feature is an alternative to Azure AD Password Hash Synchronization, which provides the same benefit of cloud authentication to organizations. However, certain organizations wanting to enforce their on-premises Active Directory security and password policies can choose to use Pass-through Authentication instead. :::image type="content" source="../media/how-pass-through-authentication-works-80d183c8.png" alt-text="Diagram showing how Azure Active Directory Authentication works.":::
 
-:::image type="content" source="../media/how-pass-through-authentication-works-80d183c8.png":::
-<br>
 
 You can combine Pass-through Authentication with the Seamless Single Sign-on feature. This way, when your users are accessing applications on their corporate machines inside your corporate network, they don't need to type in their passwords to sign in.
 

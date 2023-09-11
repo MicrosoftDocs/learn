@@ -4,9 +4,10 @@ title: Deploy Azure AD connect
 metadata:
   title: Deploy Azure AD connect
   description: "Deploy Azure AD connect"
-  ms.date: 09/04/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
+durationInMinutes: 7
 content: |
   [!include[](includes/2-azure-active-directory-connect.md)]

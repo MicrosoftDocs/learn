@@ -4,9 +4,10 @@ title: Explore authentication options
 metadata:
   title: Explore authentication options
   description: "Explore authentication options"
-  ms.date: 09/04/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
+durationInMinutes: 7
 content: |
   [!include[](includes/3-authentication-options.md)]
