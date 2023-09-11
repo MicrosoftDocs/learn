@@ -2312,3 +2312,8 @@ achievements:
   title: Explore individual enrollment tasks
   summary: Experience implementing an individual enrollment using symmetric keys, using code that accesses device twin properties to initialize a device, and a deprovisioning process that disenrolls and deregisters a device.
   iconUrl: /training/achievements/enrollment-individual-task.svg
+uid: learn.wwl.explore-iot-hub-automatic-device-management
+type: badge
+title: Explore IoT Hub automatic device management
+summary: This module provides you with experience using Azure IoT Hub automatic device management to target a set of devices based on their properties, define a desired configuration, and then update the devices.
+iconUrl: /training/achievements/iot-hub-automatic-device-management.svg
