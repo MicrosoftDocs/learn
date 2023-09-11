@@ -26,7 +26,7 @@ The Azure Internet of Things (IoT) is a collection of Microsoft-managed cloud se
  -->
 ## Example scenario
 
-Suppose you work at a coffee machine company as the IT expert. Your company plans to launch a range IoT enabled coffee machines. Your company wants to monitor these coffee machines and be able to manage issues remotely. For example, if a coffee machine is in warranty and the water temperature is outside the expected range then the maintenance department should be notified.
+Suppose you work at a coffee machine company as the IT expert. Your company plans to launch a range of IoT enabled coffee machines. Your company wants to monitor these coffee machines and be able to manage issues remotely. For example, if a coffee machine is in warranty and the water temperature is outside the expected range then the maintenance department should be notified.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -42,7 +42,7 @@ Suppose you work at a coffee machine company as the IT expert. Your company plan
  -->
 ## What will you be doing?
 
-You'll learn about the:
+You'll learn about:
 
 - The typical components and architecture of an IoT solution.
 - The capabilities of the various Azure IoT services and SDKs.
