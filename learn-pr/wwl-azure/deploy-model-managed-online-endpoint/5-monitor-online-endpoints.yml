@@ -4,12 +4,10 @@ title: Test managed online endpoints
 metadata:
   title: Test managed online endpoints
   description: "Test managed online endpoints"
-  ms.date: 06/07/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.custom:
-    - devx-track-python
 durationInMinutes: 5
 content: |
   [!include[](includes/5-monitor-online-endpoints.md)]
