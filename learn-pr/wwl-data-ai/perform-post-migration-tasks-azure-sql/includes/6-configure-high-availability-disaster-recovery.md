@@ -1,6 +1,6 @@
 HA/DR​ ()
 
-incliding LTR backups
+including LTR backups
 
 
 https://learn.microsoft.com/en-us/training/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/5-describe-active-geo-replication
