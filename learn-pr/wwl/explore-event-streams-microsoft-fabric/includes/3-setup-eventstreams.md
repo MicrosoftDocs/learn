@@ -6,7 +6,7 @@ To create an event source, you need to follow these steps:
 
 1. Change your Fabric experience to Real-time Analytics and select Eventstream to create a new eventstream in **workspace** or **homepage** or **create hub**.
 
-   ![Create new eventstream.](../media/create-new-evenstream.png)
+   ![Create new eventstream.](../media/create-new-eventstream.png)
 
 > [!Note] 
 > As you can see from the image, there are several methods. Anytime you're in the PowerBI Service and have access to Fabric you can click on the icon in the bottom-left portion in the image to switch between fabric sources

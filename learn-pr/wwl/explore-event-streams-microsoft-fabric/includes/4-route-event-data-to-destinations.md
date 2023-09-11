@@ -12,7 +12,7 @@ To add an eventstream destination in Microsoft Fabric, you need to follow these 
   - Destination: Use an existing table of your KQL database or create a new one to route and ingest your real-time data.
   - Source: Verify the real-time data source for creating a data connection to ingest data from your eventstream.
   - Schema: Select a compression type and data format, and preview how the data is sent to your selected destination. By performing this step, you can ensure you have properly formatted your data and it adheres to the expected schema, which helps prevent data loss or inaccuracies during ingestion.
-  - Summary: Review the status of your data ingestion, including the table created with the schema you defined, and connection between the eventstream and the selected destination
+  - Summary: Review the status of your data ingestion, including the table created with the schema you defined, and connection between the eventstream and the selected destination.
 - Review the status of your data ingestion and select Done. A destination tile appears on the canvas, connected to your eventstream.
   For more information, you can refer to [this](/fabric/real-time-analytics/event-streams/add-manage-eventstream-destinations) article that explains how to create and manage an eventstream in Microsoft Fabric.
 
@@ -39,7 +39,7 @@ In eventstream there are currently four current destination types supported incl
 ![configure lakehouse destination.](../media/lakehouse-configuration.png)
 
 On the Ingest data page, navigate through the tabs to complete the configuration for your destination. You can specify the destination table, source connection, schema, compression type, data format, and preview how the data is sent to your lakehouse. You can also define real-time events processing logic with event processor. See this article for more details.
-Review the status of your data ingestion and select Done. A lakehouse destination tile appears on the canvas, connected to your eventstream. Real-time events are converted into Delta Lake format and then stored in the designated lakehouse tables
+Review the status of your data ingestion and select Done. A lakehouse destination tile appears on the canvas, connected to your eventstream. Real-time events are converted into Delta Lake format and then stored in the designated lakehouse tables.
 
 > [!NOTE] 
 > The other destination types, including KQL Database, Custom App, and Reflex can be used in combination with your source or as a stand-alone event stream.
@@ -56,7 +56,7 @@ Within the event processing editor, you'll have several operations available to 
 
 These operations include:
 
-- **Aggregate**: This operation allows you to group the events by one or more fields and apply aggregation functions such as sum, count, average, min, max, etc. to the other fields
+- **Aggregate**: This operation allows you to group the events by one or more fields and apply aggregation functions such as sum, count, average, min, max, etc. to the other fields.
 - **Expand**: Use the Expand array transformation to create a new row for each value within an array.
 - **Filter**: This operation allows you to filter out the events that don't meet your criteria based on the field values.
 - **Group by**: Use the Group by transformation to calculate aggregations across all events within a certain time window. You can group by the values in one or more fields. It's like the Aggregate transformation but provides more options for aggregation and includes more complex options for time windows. Like Aggregate, you can add more than one aggregation per transformation.

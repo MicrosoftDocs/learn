@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/08/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -15,24 +15,24 @@ quiz:
   questions:
   - content: "What are the three types of event sources available in EventStream?"
     choices:
-    - content: "Azure Functions, Azure Stream Analytics, Apache Spark"
+    - content: "Azure Functions, Azure Stream Analytics, Apache Spark."
       isCorrect: false
       explanation: "Incorrect. Azure Functions, Azure Stream Analytics, and Apache Spark are services that can use Azure Event Hubs as an event source."
-    - content: "Azure Event Hubs, Sample data, Custom app"
+    - content: "Azure Event Hubs, Sample data, Custom app."
       isCorrect: true
       explanation: "Correct. Azure Event Hubs, Sample data, and Custom app are the three types of event sources available in EventStream."
-    - content: "IoT, Retail, Finance"
+    - content: "IoT, Retail, Finance."
       isCorrect: false
       explanation: "Incorrect. IoT, Retail, and Finance are sample data sets that can be used as an event source."
   - content: "What is the first step to create an event source in EventStream?"
     choices:
-    - content: "Select a consumer group for your source"
+    - content: "Select a consumer group for your source."
       isCorrect: false
       explanation: "Incorrect. This is done after you select your source type."
-    - content: "Choose a data format for your event data"
+    - content: "Choose a data format for your event data."
       isCorrect: false
       explanation: "Incorrect. This is done after you select your source type and cloud connection."
-    - content: "Change your Fabric experience to Real-time Analytics and select EventStream to create a new eventstream item"
+    - content: "Change your Fabric experience to Real-time Analytics and select EventStream to create a new eventstream item."
       isCorrect: true
       explanation: "Correct. This is the first step to create an event source in EventStream."
   - content: "What is Microsoft Fabric Eventstream?"
