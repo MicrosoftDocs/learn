@@ -11096,6 +11096,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/10-integrate-azure-bot-service.yml",
+      "redirect_url": "/training/modules/learn-mrtk-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/11-exercise-integrate-azure-bot-service.yml",
+      "redirect_url": "/training/modules/learn-mrtk-tutorials/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/language/rust-understand-common-concepts/7a-loops.md",
       "redirect_url": "/training/modules/rust-loop-expressions/3-for-while-loop",
       "redirect_document_id": false
@@ -25094,6 +25104,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/2-considerations-of-sql-server-to-azure-db-migrations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/3-migrate-sql-server-azure-sql-db-offline.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/4-migrate-sql-server-azure-sql-db-online.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/5-service-continuity-of-azure-sql-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
@@ -26242,6 +26277,16 @@
       "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/8-summary-resources.md",
       "redirect_url": "/training/modules/explore-basic-services-identity-types/7-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-capabilities-of-azure-sentinel/4-understand-sentinel-costs.md",
+      "redirect_url": "https://learn.microsoft.com/azure/sentinel/billing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-managed-online-endpoint/1b-video.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-model-managed-online-endpoint",
+      "redirect_document_id": false
     }
   ]
 }
