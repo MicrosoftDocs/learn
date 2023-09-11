@@ -1,4 +1,3 @@
-
 Add new users or delete existing users from your Azure Active Directory (**Azure AD**) tenant. To **add** or **delete** users, you must be a **User Administrator** or **Global Administrator**.
 
 > [!NOTE]
