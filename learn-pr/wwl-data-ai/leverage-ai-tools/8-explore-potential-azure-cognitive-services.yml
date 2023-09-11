@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.leverage-ai-tools.explore-potential-azure-cognitive-services
-title: Explore the potential of Azure Cognitive Services
+title: Explore the potential of Azure AI Services
 metadata:
-  title: Explore the potential of Azure Cognitive Services
-  description: "Explore the potential of Azure Cognitive Services"
-  ms.date: 07/27/2023
+  title: Explore the potential of Azure AI Services
+  description: "Explore the potential of Azure AI Services"
+  ms.date: 09/11/2023
   author: Adriamen
   ms.author: rcaper
   ms.topic: interactive-tutorial
