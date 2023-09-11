@@ -4,13 +4,11 @@ title: Understand the AutoML process
 metadata:
   title: Understand the AutoML process
   description: "Understand the AutoML process"
-  ms.date: 05/15/2023
+  ms.date: 09/11/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: machine-learning
 durationInMinutes: 5
 content: |
   [!include[](includes/5-machine-learning-steps.md)]

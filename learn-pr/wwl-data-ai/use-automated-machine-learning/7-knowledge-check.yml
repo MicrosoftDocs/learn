@@ -4,15 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/15/2023
+  ms.date: 09/11/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: machine-learning
 durationInMinutes: 4
 quiz:
+  title: ""
   questions:
   - content: "An automobile dealership wants to use historic car sales data to train a machine learning model. The model should predict the price of a pre-owned car based on its make, model, engine size, and mileage. What kind of machine learning model should the dealership use automated machine learning to create?"
     choices:

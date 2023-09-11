@@ -1,4 +1,3 @@
-
 In this exercise, you will use a dataset of historical bicycle rental details to train a model that predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features.
 
 > [!NOTE]
