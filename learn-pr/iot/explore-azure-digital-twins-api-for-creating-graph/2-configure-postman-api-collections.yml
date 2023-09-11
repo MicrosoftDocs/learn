@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.configure-postman-and-api-collections
+title:  Configure Postman and API collections
+sandbox: true
+interactive: bash
+metadata:
+  title:  Configure Postman and API collections
+  description: Deploy an Azure Digital Twins instance, configure Postman for Azure Digital Twins, and learn about the Azure Digital Twin API categories.
+  ms.date: 09/07/2023
+  author: baanders
+  ms.author: baanders
+  ms.topic: training-unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-configure-postman-api-collections.md)]

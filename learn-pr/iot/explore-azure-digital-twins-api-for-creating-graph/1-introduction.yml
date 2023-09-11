@@ -1,11 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.introduction-to-azure-digital-twins.introduction
+uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.introduction
 title: Introduction
 metadata:
-  unitType: introduction
   title: Introduction
   description: Learn about the scenario and main goal of this module.
-  ms.date: 06/22/2023
+  ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
   ms.topic: training-unit

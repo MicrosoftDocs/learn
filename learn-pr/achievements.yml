@@ -777,11 +777,6 @@ achievements:
   title: Ingest Data into Azure Digital Twins
   summary: Ingest Data into Azure Digital Twins
   iconUrl: /training/achievements/iot/connect-input-to-azure-digital-twins.svg
-- uid: learn.iot.introduction-to-azure-digital-twins.badge
-  type: badge
-  title: Introduction to Azure Digital Twins
-  summary: Introduction to Azure Digital Twins
-  iconUrl: /training/achievements/iot/introduction-to-azure-digital-twins.svg
 - uid: learn.iot.output-from-adt-to-downstream-services.badge
   type: badge
   title: Output from Azure Digital Twins to downstream services

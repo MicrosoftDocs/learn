@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.introduction-to-azure-digital-twins.summary
+uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.summary
 title: Summary
 metadata:
   unitType: summary
   title: Summary
   description: A summary review of what you've learned in this module.
-  ms.date: 06/22/2023
+  ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
   ms.topic: training-unit
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/8-summary.md)]

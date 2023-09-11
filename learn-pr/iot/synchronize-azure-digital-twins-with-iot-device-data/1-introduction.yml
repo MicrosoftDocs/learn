@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.introduction-to-azure-digital-twins.introduction
+uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data.introduction
 title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
   description: Learn about the scenario and main goal of this module.
-  ms.date: 06/22/2023
+  ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
   ms.topic: training-unit
