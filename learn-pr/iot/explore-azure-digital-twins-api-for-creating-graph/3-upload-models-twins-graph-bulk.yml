@@ -12,4 +12,4 @@ metadata:
   ms.topic: training-unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-upload-models-twins-and-graph-in-bulk.md)]
+  [!include[](includes/3-upload-models-twins-graph-bulk.md)]

@@ -12,4 +12,4 @@ metadata:
   ms.topic: training-unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/2-configure-postman-and-api-collections.md)]
+  [!include[](includes/2-configure-postman-api-collections.md)]

@@ -11,4 +11,4 @@ metadata:
   ms.topic: training-unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-understand-data-flow-and-required-resources.md)]
+  [!include[](includes/2-understand-data-flow-required-resources.md)]
