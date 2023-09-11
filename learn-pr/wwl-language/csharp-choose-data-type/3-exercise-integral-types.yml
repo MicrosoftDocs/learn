@@ -24,4 +24,4 @@ quiz:
       explanation: "Correct, ushort represents values 0 to 65535."
     - content: "byte"
       isCorrect: false
-      explanation: "Incorrect. The unsigned byte, referred to as \"byte\", only has values 0 to 255."
+      explanation: "Incorrect. The unsigned byte referred to as \"byte\", only has values 0 to 255."
