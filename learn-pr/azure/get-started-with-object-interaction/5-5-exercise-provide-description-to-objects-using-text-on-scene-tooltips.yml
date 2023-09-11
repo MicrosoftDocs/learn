@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-5-exercise-provide-description-to-objects-using-text-on-scene-tooltips
-title: Exercise - Provide description to objects using text on scene and tooltips
+title: Exercise - Provide description to objects using text on scene
 metadata:
-  title: Exercise - Provide description to objects using text on scene and tooltips
-  description: Introduction for Provide description to objects using text on scene and tooltips
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
+  title: Exercise - Provide description to objects using text on scene
+  description: Introduction for Provide description to objects using text on scene
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 10
