@@ -31,7 +31,7 @@ This limitation meant that DBAs had to find alternative solutions to handle thes
 
 [Elastic jobs](/azure/azure-sql/database/job-automation-overview) feature allows you to run a set of T-SQL scripts against a collection of servers or databases as a one-time job, or by using a defined schedule. Elastic jobs work similarly to SQL Server Agent jobs, except that they're limited to executing T-SQL. The jobs work across all tiers of Azure SQL Database.
 
-:::image type="content" source="../media/module-66-automation-final-28.png" alt-text="Screenshot of the elastic job architecture diagram.":::
+:::image type="content" source="../media/7-elastic-job-architecture.png" alt-text="Screenshot of the elastic job architecture diagram.":::
 
 To configure Elastic Jobs, you need a Job agent and database dedicated to managing your jobs. The recommended service tier for the job database is S1 or higher, and the optimum service tier will be dependent on the number of jobs you're executing and the frequency of those jobs.
 
