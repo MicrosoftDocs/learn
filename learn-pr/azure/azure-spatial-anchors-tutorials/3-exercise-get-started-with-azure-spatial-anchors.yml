@@ -4,9 +4,9 @@ title: Exercise - Get started with Azure Spatial Anchors
 metadata:
   title: Exercise - Get started with Azure Spatial Anchors
   description: Learn how to work with an Azure Spatial Anchors session on a device.
-  ms.date: 11/09/2022
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 9

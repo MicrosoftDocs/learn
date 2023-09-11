@@ -1,4 +1,3 @@
-
 **Azure Active Directory** (Azure AD) is a cloud-based identity and access management service. This service helps employees access external resources, such as Microsoft 365, the Azure portal, and thousands of other software-as-a-service (SaaS) applications. Azure Active Directory also helps them access internal resources like apps on your corporate intranet network, along with any cloud apps developed for your organization.
 
 ## :::image type="content" source="../media/azure-active-directory-features-2f5b251f.png" alt-text="Screenshot showing Azure Active Directory features implementation example."::: Who uses Azure AD?
