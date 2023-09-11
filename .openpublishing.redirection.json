@@ -25104,6 +25104,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/2-considerations-of-sql-server-to-azure-db-migrations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/3-migrate-sql-server-azure-sql-db-offline.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/4-migrate-sql-server-azure-sql-db-online.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/5-service-continuity-of-azure-sql-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false

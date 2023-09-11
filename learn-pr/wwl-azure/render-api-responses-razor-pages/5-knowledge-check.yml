@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.render-api-responses-razor-pages.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/11/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are Razor Pages?"
+    choices:
+    - content: "A client-side programming model for building web UI with ASP.NET Core."
+      isCorrect: false
+      explanation: "Incorrect. Razor Pages is a server-side programming model."
+    - content: "A replacement for HTML, CSS, and JavaScript."
+      isCorrect: false
+      explanation: "Incorrect. Razor Pages aren't a replacement for HTML, CSS, or JavaScript. They're a way to combine these technologies to create dynamic web content."
+    - content: "A server-side, page-centric programming model for building web UI with ASP.NET Core."
+      isCorrect: true
+      explanation: "Correct. Razor Pages is a server-side, page-centric programming model for building web UI with ASP.NET Core."
+  - content: "What is Razor syntax?"
+    choices:
+    - content: "A markup syntax for embedding .NET based code into webpages."
+      isCorrect: true
+      explanation: "Correct. Razor syntax consists of Razor markup, C#, and HTML. Razor syntax is similar to the templating engines of various JavaScript single-page application (SPA) frameworks, such as Angular, React, VueJs, and Svelte."
+    - content: "A templating engine for PHP single-page application frameworks."
+      isCorrect: false
+      explanation: "Incorrect. Razor syntax is a markup syntax for embedding .NET based code into webpages."
+    - content: "A markup syntax for embedding JavaScript code into webpages."
+      isCorrect: false
+      explanation: "Incorrect. Razor syntax is a markup syntax for embedding .NET based code into webpages."
