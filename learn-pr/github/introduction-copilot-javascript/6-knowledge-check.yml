@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.github-copilot-with-javascript.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Review the differences in GitHub Copilot and Prompt engineering"
+  ms.date: 8/23/2023
+  author: abrilurena
+  ms.author: abrilu
+  ms.topic: interactive-tutorial
+  ms.prod: github
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "How does GitHub Copilot work?"
+    choices:
+    - content: "GitHub Copilot uses prompts, natural language text, that you type, and it provides suggestions based on what you type."
+      isCorrect: true
+      explanation: "Correct! Trained on billions of lines of code, GitHub Copilot turns natural language prompts into coding suggestions across dozens of languages."
+    - content: "GitHub Copilot uses lights, that you type, and it provides suggestions based on what you type."
+      isCorrect: false
+      explanation: "GitHub Copilot uses prompts, natural language text, that you type, and it provides suggestions based on what you type."
+    - content: "GitHub Copilot uses radio language, that you type, and it provides suggestions based on what you type."
+      isCorrect: false
+      explanation: "GitHub Copilot doesn't use radio language."
+  - content: "Is GitHub Copilot Free?"
+    choices:
+    - content: "Yes, it's free for everyone."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot currently costs 10 dollars per month, except for certain users. "
+    - content: "No, it’s a service you can sign up for that’s free for students to use but currently costs 10 dollars per month."
+      isCorrect: true
+      explanation: "GitHub Copilot is free for verified students, teachers and maintainers of popular open-source projects."
+    - content: "It's not free, even if you're a student or a teacher."
+      isCorrect: false
+      explanation: "GitHub Copilot is free for verified students, teachers and maintainers of popular open-source projects."
+  - content: "How can you accept GitHub Copilot’s suggestions?"
+    choices:
+    - content: "Press the “Tab” key."
+      isCorrect: true
+      explanation: "Copilot offers you a suggestion, which appears as grey code if you use black as your text color. To accept the suggestion, you need to press the “Tab” key."
+    - content: "Press “F1” key."
+      isCorrect: false
+      explanation: "False. This option doesn't work to accept GitHub Copilot suggestions."
+    - content: "Press “F4” key."
+      isCorrect: false
+      explanation: "False. This option doesn't work to accept GitHub Copilot suggestions."
+  - content: "Identify which statement is valid and select the correct answer:"
+    choices:
+    - content: "A prompt, which is our output, is a collection of songs that tells our copilot what to generate."
+      isCorrect: false
+      explanation: "False. A prompt isn't a collection of songs."
+    - content: "A prompt, which is our input, is a collection of instructions or guidelines that tell our copilot what to generate."
+      isCorrect: true
+      explanation: "A prompt is crucial in eliciting specific responses from Copilot.  The prompt might be a comment that steers Copilot to generate code on your behalf or writing code that Copilot autocompletes."
+    - content: "A prompt, which is our document, is a collection of laptops that tells our Copilot what to generate."
+      isCorrect: false
+      explanation: "False. A prompt isn't our document nor a collection of laptops that tells our Copilot what to generate."
+  - content: "On what depends on the quality of the output from GitHub Copilot?"
+    choices:
+    - content: "Your code editor."
+      isCorrect: false
+      explanation: "Not correct. It depends on how well you detailed your prompt."
+    - content: "How well your extensions were installed."
+      isCorrect: false
+      explanation: "False. It doesn't depend on how well your extensions were installed."
+    - content: "how well you crafted your prompt."
+      isCorrect: true
+      explanation: "Designing an effective prompt is, therefore, crucial in ensuring we achieve our desired outcomes. You need to detail your prompt as much as possible."
