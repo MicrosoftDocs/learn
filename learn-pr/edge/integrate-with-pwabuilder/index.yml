@@ -21,7 +21,7 @@ prerequisites: |
   - Understanding of PWA at beginner level.
   - Basic familiarity with web apps at the beginner level.
   - Intermediate understanding of web development (HTML, CSS, JavaScript, and JSON).
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/integrate-with-pwabuilder.svg
 ratingEnabled: false
 levels:
 - beginner
