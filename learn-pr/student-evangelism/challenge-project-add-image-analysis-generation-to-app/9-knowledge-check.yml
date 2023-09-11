@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: |
+  learn.challenge-project-add-image-analysis-generation-to-app.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Answer the questions to check your knowledge of the concepts covered in this module."
+  ms.date: 9/5/2023
+  author: carlottac94
+  ms.author: cacaste
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "A developer wants to embed image analysis capabilities into a web application using Image Analysis 4.0 API based on Microsoft Large Foundation model Florence. Which of the following steps should the developer take to achieve this goal?"
+    choices:
+    - content: "Create a new Azure AI Vision Service resource in the Azure portal, using the 'Computer Vision' service."
+      isCorrect: true
+      explanation: "Correct. The Computer Vision service enables developers to embed image analysis capabilities to their apps."
+    - content: "Create a new Azure AI Vision Service resource in the Azure portal, using the 'Face' service."
+      isCorrect: false
+      explanation: "Incorrect. The Face service enables developers to embed face detection capabilities to their apps."
+    - content: Create a new Azure AI Vision Service resource in the Azure portal, using the 'Custom Vision' service."
+      isCorrect: false
+      explanation: "Incorrect. The Custom Vision service enables developers to build custom image classification models. However, to consume Image Analysis 4.0 API you need to provision a Computer Vision type of resource."
+  - content: "A developer needs to store Azure OpenAI service credentials used by the application to call the API in a secure way. Which of the following steps should the developer take to achieve this goal?"
+    choices:
+    - content: "Use hard-coded values in the application code."
+      isCorrect: false
+      explanation: "Incorrect. Hard-coded values are not secure and should be avoided."
+    - content: "Use environment variables to store the credentials."
+      isCorrect: true
+      explanation: "Correct. Environment variables are name-value pairs that are stored within a specific development environment. They are used to pass configuration information to applications that run in the environment."
+    - content: "The most secure option is avoiding storing credentials anywhere and instead authenticate through an access token."
+      isCorrect: false
+      explanation: "Incorrect. Some Azure AI services - like text translation and speech services - accept access tokens. Azure OpenAI service is not one of them."
+  - content: "A developer would like to integrate Azure AI services into a React static web app. Which of the following statements are true?"
+    choices:
+    - content: "Azure AI services can be integrated by creating a component handling Azure AI service authentication and calls, and then adding it to the 'App.js' file."
+      isCorrect: true
+      explanation: "Correct. Azure AI services can be integrated by creating a component handling Azure AI service authentication and calls and then adding it to the 'App.js' file."
+    - content: "It's not possible to integrate Azure AI services into a React static web app."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI services can be integrated into a React static web app using API or SDKs."
+    - content: "Azure AI services can be integrated by creating a component handling Azure AI service authentication and calls, and then adding it to the 'index.html' file."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI services can be integrated by creating a component handling Azure AI service authentication and calls and then adding it to the 'App.js' file."

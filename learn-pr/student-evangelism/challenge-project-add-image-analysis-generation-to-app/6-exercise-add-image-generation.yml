@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-project-add-image-analysis-generation-to-app.exercise-add-image-analysis
+title: Exercise - Add image generation capabilities to your React application
+metadata:
+  title: Exercise - Add image generation capabilities to your React application
+  description: "Add image generation capabilities to your React application"
+  ms.date: 9/5/2023
+  author: carlottac94
+  ms.author: cacaste
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: azure-ai-openai
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-add-image-generation.md)]
