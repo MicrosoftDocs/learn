@@ -18,7 +18,7 @@ In this challenge, we'll set the conditions for some coding projects. Each proje
 
 ## Manage user input during this challenge
 
-When using a `Console.ReadLine()` statement to obtain user input, it's common practice to use a nullable type string (designated `string?`) for the input variable and then evaluate the value entered by the user. The following code sample uses a nullable type string to capture user input and then ensures that the user-supplied value in not `null` before continuing:
+When using a `Console.ReadLine()` statement to obtain user input, it's common practice to use a nullable type string (designated `string?`) for the input variable and then evaluate the value entered by the user. The following code sample uses a nullable type string to capture user input and then ensures that the user-supplied value is not `null` before continuing:
 
 ```csharp
 string? readResult;
