@@ -27408,8 +27408,7 @@
       "source_path": "learn-pr/wwl-azure/perform-hyperparameter-tuning-azure-machine-learning-pipelines/1b-video.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/perform-hyperparameter-tuning-azure-machine-learning-pipelines",
       "redirect_document_id": false
-    }
-
+    },
     {
       "source_path": "learn-pr/wwl-azure/explore-iot-hub-automatic-device-management/index.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot",
