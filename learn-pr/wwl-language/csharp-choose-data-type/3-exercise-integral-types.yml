@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "sbyte"
       isCorrect: false
-      explanation: "That’s incorrect. The sbyte value type represents integers with values ranging from -128 to 127."
+      explanation: "Incorrect. The sbyte value type represents integers with values ranging from -128 to 127."
     - content: "ushort"
       isCorrect: true
       explanation: "Correct, ushort represents values 0 to 65535."
