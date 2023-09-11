@@ -1,4 +1,4 @@
-The ObjectManipulator and NearInteractionGrabbable scripts support the "direct manipulation" modality of the "hands and motion controllers" input model. When the scripts are attached to an object, the user can move, scale or rotate the object with their hands. In this exercise, you'll create two cubes, attach the necessary scripts to them, and then move the cubes around.
+The ObjectManipulator script supports the "direct manipulation" modality of the "hands and motion controllers" input model. When the script is attached to an object, the user can move, scale or rotate the object with their hands. In this exercise, you'll create two cubes, attach the necessary scripts to them, and then move the cubes around.
 
 ## Add and adjust the first cube
 
@@ -6,7 +6,7 @@ The ObjectManipulator and NearInteractionGrabbable scripts support the "direct m
 
     :::image type="content" source="../media/027-add-cube.png" alt-text="Screenshot of menu commands for adding the cube.":::
 
-    The cube's default size is one square meter--this is too big for our purposes. We'll scale the size down to 20x20x20 cm.
+    The cube's default size is one square meter--this is too large for our purposes. We'll scale the size down to 20x20x20 cm.
 
 1. Select the cube, and then in the **Inspector**, change the cube's **Tranform/Scale** values to the following:
    
@@ -16,11 +16,14 @@ The ObjectManipulator and NearInteractionGrabbable scripts support the "direct m
 
 1. In the **Inspector**, change the cube's **Tranform/Position** values to the following:
    
-   X = -0.2, Y = 0.1, Z = 0.5
+   X = -0.2, Y = 1.6, Z = 0.5
 
     :::image type="content" source="../media/028-cube-transform.png" alt-text="Screenshot of the cube's transform component after updates.":::
 
-    We want to be able to see three sides of the cube, so we'll change the cube's rotation, too. 
+    We want to be able to see three sides of the cube, so we'll change the cube's rotation, too.
+ 
+   > [!NOTE]
+   > The height of the cube is set to 1.6 to match the height of the **Camera Offset** on **MRTK XR Rig**, placing it roughly at eye level.
 
 1. In the **Inspector**, change the cube's **Tranform/Rotation** values to the following:
    
@@ -35,7 +38,6 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
 - A Collider component (You don't need to do anything here--Unity's cube already has a Box Collider attached by default)
 - Object Manipulator (Script) component
-- NearInteractionGrabbable (Script) component
 
 1. With the cube still selected, in the **Inspector** window, click the **Add Component** button, and then search for and select the **Object Manipulator** script.
 
@@ -45,9 +47,12 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
     :::image type="content" source="../media/030-constraint-manager.png" alt-text="Screenshot of the Constraint Manager script added to the cube.":::
 
-1. Repeat the same steps to add the **Near Interaction Grabbable script** to the cube.
+## Update the cube's material
 
-    The NearInteractionGrabbable script gives the user the ability reach out and grab nearby objects with a simulated hand.
+For performance purposes, it is recommended to use MRTK materials instead of the default Unity materials. 
+
+1. With the cube still selected, find the "Materials" section on the Mesh Renderer component.
+1. Replace the default material with the **MRTK_Standard_White** material, located under **MRTK Standard Assets** > **Materials**.
 
 ## Add a second cube
 
@@ -59,22 +64,26 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
 1. With Far Cube still selected, change its values in its **Transform** component to the following:
 
-    Position: X = 0.6, Y = 0.1, Z = 1.1
+    Position: X = 0.6, Y = 1.6, Z = 1.1
 
     Rotation: X = 27, Y = 0, Z = 0
 
-    Now the camera should see Near cube on the left and Far Cube a little further away on the right. To confirm this, in the **Hierarchy**, select **Main Camera** and then look at the **Main Camera** window in the **Scene** window.
+    Now the camera should see Near cube on the left and Far Cube a little further away on the right. To confirm this, in the **Hierarchy**, select **Main Camera** (under **MRTK XR Rig** > **Camera Offset**) and then look at the **Main Camera** window in the **Scene** window.
 
     :::image type="content" source="../media/040-main-camera-view.png" alt-text="Screenshot of the Main Camera view in the Scene window.":::
 
     > [!TIP]
-    > If you want the view in the **Scene** window to look more like what the camera sees, scroll around in the **Scene** window.
+    > If you want the view in the **Scene** window to look more like what the camera sees, scroll around in the **Scene** window. You might have to set the Clear Flags of the camera to Skybox if it is not by default.
+
 
 ## Grab and move the cubes in Play mode
 
 1. Click the Play button. When the project starts playing, the view switches to the **Game** window.
 
     :::image type="content" source="../media/031-game-window.png" alt-text="Screenshot of the Game window after entering Play mode.":::
+
+    > [!NOTE]
+    >  Before Playing, confirm that there is a valid Profile set under **Project Settings** > **MRTK3**.
 
 1. Click the three-dot button above the upper-right corner of the **Game** window and then select **Maximize**.
 
@@ -209,4 +218,4 @@ Your PC is now paired with your HoloLens and you can deploy apps automatically. 
 
 - You can also deploy to the [HoloLens Emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) or create an [App Package](/windows/uwp/packaging/packaging-uwp-apps) for sideloading.
 
-- You may notice the Diagnostics profiler in the app. You can toggle it on or off by using the speech command **"Toggle Diagnostics"**. We recommend that you keep the profiler visible most of the time during development so you can understand how changes to the app might impact performance. For example, you can monitor your app to ensure that [the frame rate is at least 60 FPS](/windows/mixed-reality/develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality).
+- You may notice the Diagnostics profiler in the app. You can toggle it on or off by using the speech command **"Toggle Diagnostics"**. We recommend that you keep the profiler visible most of the time during development so you can understand how changes to the app might affect performance. For example, you can monitor your app to ensure that [the frame rate is at least 60 FPS](/windows/mixed-reality/develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality).

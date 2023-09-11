@@ -11,7 +11,7 @@ In order to create a proper package of your PWA, you first need to reserve a nam
 1. Sign in to the **Partner Center Dashboard**.
 1. Navigate to the **Apps and Games** section.
 1. Select the **+ New Product** button and select **App**.
-1. A prompt to reserve a name for your application submission displays.  Enter your app name.  
+1. A prompt to reserve a name for your application submission displays.  Enter your app name.
 1. After you reserve your app name, you can access your package info. Navigate to the **Product Identity** section and note the three product identity values on the right side of the page.
 
     :::image type="content" source="../media/product-identity-values.png" alt-text="Screenshot of PWABuilder that shows the Product identity page.  Three unique product identity values for your product are listed on the right side of the page.":::

@@ -5356,6 +5356,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/6-knowledge-check.md",
+      "redirect_url": "/training/modules/build-web-api-minimal-spa/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/7-summary.md",
+      "redirect_url": "/training/modules/build-web-api-minimal-spa/10-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/aspnetcore/build-web-api-net-core/1-introduction.md",
       "redirect_url": "/training/modules/build-web-api-aspnet-core/1-introduction",
       "redirect_document_id": false
@@ -11086,6 +11096,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/10-integrate-azure-bot-service.yml",
+      "redirect_url": "/training/modules/learn-mrtk-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/11-exercise-integrate-azure-bot-service.yml",
+      "redirect_url": "/training/modules/learn-mrtk-tutorials/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/language/rust-understand-common-concepts/7a-loops.md",
       "redirect_url": "/training/modules/rust-loop-expressions/3-for-while-loop",
       "redirect_document_id": false
@@ -13668,12 +13688,12 @@
     {
       "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/2-describe-what-azure-active-directory.md",
       "redirect_url": "/training/modules/explore-basic-services-identity-types/2-describe-azure-active-directory",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/6-describe-concept-of-hybrid-identities.md",
       "redirect_url": "/training/modules/explore-basic-services-identity-types/6-describe-concept-of-hybrid-identity",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-sci/explore-access-management-capabilities/2-describe-conditional-access-its-benefits.md",
@@ -25084,6 +25104,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/2-considerations-of-sql-server-to-azure-db-migrations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/3-migrate-sql-server-azure-sql-db-offline.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/4-migrate-sql-server-azure-sql-db-online.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/5-service-continuity-of-azure-sql-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-sql-databases",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
@@ -26191,6 +26236,61 @@
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/13-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-automation-devops/14-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-lakehouses/4-exercise-lakehouse.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-lakehouses/5-exercise-lakehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-lakehouses/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-lakehouses/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-lakehouses/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-lakehouses/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/3-describe-available-editions.md",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/4-describe-identity-types.md",
+      "redirect_url": "/training/modules/explore-basic-services-identity-types/3-describe-identity-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/6-describe-concept-of-hybrid-identity.md",
+      "redirect_url": "/training/modules/explore-basic-services-identity-types/4-describe-concept-of-hybrid-identity",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/7-knowledge-check.md",
+      "redirect_url": "/training/modules/explore-basic-services-identity-types/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/8-summary-resources.md",
+      "redirect_url": "/training/modules/explore-basic-services-identity-types/7-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-capabilities-of-azure-sentinel/4-understand-sentinel-costs.md",
+      "redirect_url": "https://learn.microsoft.com/azure/sentinel/billing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-managed-online-endpoint/1b-video.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-model-managed-online-endpoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perform-hyperparameter-tuning-azure-machine-learning-pipelines/1b-video.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/perform-hyperparameter-tuning-azure-machine-learning-pipelines",
       "redirect_document_id": false
     }
   ]

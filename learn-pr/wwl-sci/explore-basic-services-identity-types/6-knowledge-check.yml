@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/07/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A project manager is setting up a new project that includes members from different departments.  The project manager wants to ensure that project team members can collaborate and have shared access to a mailbox, calendar, files, and the project’s SharePoint site.  Which Microsoft Entra feature can the project manager use to accommodate this requirement, without having to involve an administrator?"
+    choices:
+    - content: "A managed identity"
+      isCorrect: false
+      explanation: "Incorrect. Managed identities provide an identity for applications to use when connecting to Azure resources and are not designed for collaboration scenarios."
+    - content: "A Microsoft 365 group"
+      isCorrect: true
+      explanation: "Correct.  A Microsoft 365 group is used for grouping users according to collaboration needs. You can give members of the group access to a shared mailbox, calendar, files SharePoint sites, and more. Because Microsoft 365 groups are intended for collaboration, the default is to allow users to create Microsoft 365 groups, so you don’t need an administrator role."
+    - content: "A security group"
+      isCorrect: false
+      explanation: "Incorrect. Although a security group is the most common type of group and is used to manage user and device access to shared resources, it is best suited to create a security group for a security policy and requires an administrator role to configure."
+  - content: "An organization has completed a full migration to the cloud and has purchased devices for all its employees. All employees sign in to the device through an organizational account configured in Microsoft Entra ID.  Select the option that best describes how these devices are set up in Microsoft Entra ID."
+    choices:
+    - content: "These devices are set up as Microsoft Entra ID registered."
+      isCorrect: false
+      explanation: "Incorrect. This customer scenario explicitly states that all employees sign in to the device through an organization account and because devices are purchased by the organization, there's no requirement for bring your own device (BYOD). The goal of Microsoft Entra ID registered devices is to provide users with support for BYOD or mobile device scenarios. Microsoft Entra ID registered devices register to Microsoft Entra ID without requiring an organizational account to sign in to the device."
+    - content: "These devices are set up as Microsoft Entra ID joined."
+      isCorrect: true
+      explanation: "Correct. A Microsoft Entra ID joined device is a device joined to Microsoft Entra ID through an organizational account, which is then used to sign in to the device. Microsoft Entra ID joined devices are generally owned by the organization."
+    - content: "These devices are set up as Hybrid Microsoft Entra ID joined."
+      isCorrect: false
+      explanation: "Incorrect. This customer scenario has completed a full migration to the cloud and therefore has no on-premises Active Directory. There is no requirement for devices to be hybrid Microsoft Entra ID joined."
+  - content: "A developer wants an application to connect to Azure resources that support Microsoft Entra authentication, without having to manage any credentials and without incurring any extra cost.  Which option best describes the identity type of the application?"
+    choices:
+    - content: "Service principal"
+      isCorrect: false
+      explanation: "Incorrect. Service principals are used by applications or services to access Azure resources but application developers must manage and protect the credentials."
+    - content: "Managed identity"
+      isCorrect: true
+      explanation: "Correct. Managed identities are a type of service principal that are automatically managed in Microsoft Entra and eliminate the need for developers to manage credentials."
+    - content: "Hybrid identity"
+      isCorrect: false
+      explanation: "Incorrect. A hybrid identity refers to a common user identity for authentication and authorization to all resources, regardless of location."

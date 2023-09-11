@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 12
 sandbox: true
-notebook: notebooks/02-kmeans-and-hierachial.ipynb
+notebook: notebooks/02-kmeans-and-hierarchical.ipynb
