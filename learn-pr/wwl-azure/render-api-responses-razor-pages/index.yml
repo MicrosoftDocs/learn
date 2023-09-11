@@ -3,7 +3,7 @@ uid: learn.wwl.render-api-responses-razor-pages
 metadata:
   title: Render API responses in ASP.NET Core Razor Pages
   description: "Learn how to render API responses in ASP.NET Core Razor Pages and perform HTTP operations by using page handlers."
-  ms.date: 09/08/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
