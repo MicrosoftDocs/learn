@@ -4,9 +4,9 @@ title: Exercise - Execute commands using Azure speech recognition
 metadata:
   title: Exercise - Execute commands using Azure speech recognition
   description: Introduction to Execute commands using Azure speech recognition
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 2

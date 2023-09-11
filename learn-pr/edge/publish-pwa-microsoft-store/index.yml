@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Intermediate understanding of web development (HTML, CSS, JavaScript, and JSON).
   - Grasp the process of integrating and creating PWAs.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/publish-pwa-microsoft-store.svg
 ratingEnabled: false
 levels: 
   - intermediate
