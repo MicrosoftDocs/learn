@@ -34,6 +34,5 @@ modules:
 - learn.wwl.examine-device-management-concepts-methods
 - learn.wwl.examine-device-management-tools
 - learn.wwl.examine-approaches-to-device-management-at-scale
-- learn.wwl.explore-iot-hub-automatic-device-management
 trophy:
   uid: learn.wwl.manage-iot-devices-by-using-iot-hub-apps.trophy
