@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.choose-right-sql-database-option-azure
+title: Choose the right Azure SQL Database feature
+metadata:
+  title: Choose the right Azure SQL Database option
+  description: "Learn the essentials of Azure SQL Database deployment planning and migration. Explore its benefits, exclusive features, and migration options while optimizing performance and application connections for a smooth transition to the cloud."
+  ms.date: 09/04/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-choose-right-sql-database-option-azure.md)]
