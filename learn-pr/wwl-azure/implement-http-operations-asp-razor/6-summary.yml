@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.summary
+uid: learn.wwl.implement-http-operations-asp-razor.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 02/27/2023
+  ms.date: 09/11/2023
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-durationInMinutes: 3
+  ms.prod: aspnet-core
+durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
