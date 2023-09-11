@@ -137,7 +137,7 @@ The query partitions products into groupings based on their categories, and with
 > [!NOTE]
 > The sample results demonstrate the difference between `RANK` and `DENSE_RANK`. Note that in the *Accessories* category, the *Sprocket* and *Doodah* products have the same list price; and are both ranked as the 3rd highest priced product. The next highest priced product has a *RANK* of 5 (there are four products more expensive than it) and a *DENSE_RANK* of 4 (there are three higher prices).
 >
-> To learn more about ranking functions, see [Ranking Functions (Transact-SQL)](/sql/t-sql/functions/ranking-functions-transact-sql?view=azure-sqldw-latest) in the Azure Synapse Analytics documentation.
+> To learn more about ranking functions, see [Ranking Functions (Transact-SQL)](/sql/t-sql/functions/ranking-functions-transact-sql) in the Azure Synapse Analytics documentation.
 
 ## Retrieving an approximate count
 
@@ -186,4 +186,4 @@ The `APPROX_COUNT_DISTINCT` function uses a *HyperLogLog* algorithm to retrieve 
 The counts are less accurate, but still sufficient for an approximate comparison of yearly sales. With a large volume of data, the query using the `APPROX_COUNT_DISTINCT` function completes more quickly, and the reduced accuracy may be an acceptable trade-off during basic data exploration.
 
 > [!NOTE]
-> See the [APPROX_COUNT_DISTINCT](/sql/t-sql/functions/approx-count-distinct-transact-sql?view=azure-sqldw-latest) function documentation for more details.
+> See the [APPROX_COUNT_DISTINCT](/sql/t-sql/functions/approx-count-distinct-transact-sql) function documentation for more details.
