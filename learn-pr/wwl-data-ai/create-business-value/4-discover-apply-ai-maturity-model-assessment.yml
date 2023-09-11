@@ -4,10 +4,11 @@ title: Discover how to apply the AI Maturity Model Assessment to your business c
 metadata:
   title: Discover how to apply the AI Maturity Model Assessment to your business culture
   description: "Discover how to apply the AI Maturity Model Assessment to your business culture"
-  ms.date: 06/28/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
+  ms.service: microsoft-365
 durationInMinutes: 4
 content: |
   [!include[](includes/4-discover-apply-ai-maturity-model-assessment.md)]

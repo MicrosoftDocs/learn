@@ -4,10 +4,11 @@ title: Define an AI strategy to create business value
 metadata:
   title: Define an AI strategy to create business value
   description: "Define an AI strategy to create business value"
-  ms.date: 06/28/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
+  ms.service: microsoft-365
 durationInMinutes: 4
 content: |
   [!include[](includes/2-define-ai-strategy-create-business-value.md)]
