@@ -18,7 +18,7 @@ The HTML script tag `<script>` lets us link to an external JavaScript file, whic
 
 1. In **Visual Studio Code**, open your `index.html` file.
 
-1. On a new line before the closing `</body>` element, enter `script:src`, and then select <kbd>Enter</kbd>. The opening and closing tags for a script element are added to your code.
+1. Find the closing `</body>` element and place your cursor on a new line above it. Enter `script:src` and then select <kbd>Enter</kbd>. The opening and closing tags for a `<script>` element are added to your code.
 
 1. Modify the `<script>` element to load your `app.js` file as shown in the following example. Ensure that it's located after the closing `</ul>` element for the list.
 

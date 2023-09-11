@@ -195,39 +195,39 @@ To add support for a dark theme to your CSS, use the following steps.
 
 1. Remember to save your file by selecting <kbd>Control+S</kbd> or <kbd>Command+S</kbd>.
 
-You're CSS file (`main.css`) should now look like this example:
+    Your CSS file (`main.css`) should now look like this example:
 
-```css
-:root {
-  --green: #00FF00;
-  --white: #FFFFFF;
-  --black: #000000;
-}
-
-body {
-  background: var(--bg);
-  color: var(--fontColor);
-  font-family: helvetica;
-}
-
-li {
-  list-style: circle;
-}
-  
-.list {
-  list-style: square;
-}
-  
-.light-theme {
-  --bg: var(--green);
-  --fontColor: var(--black);
-}
-
-.dark-theme {
-  --bg: var(--black);
-  --fontColor: var(--green);
-}
-``````
+    ```css
+    :root {
+      --green: #00FF00;
+      --white: #FFFFFF;
+      --black: #000000;
+    }
+    
+    body {
+      background: var(--bg);
+      color: var(--fontColor);
+      font-family: helvetica;
+    }
+    
+    li {
+      list-style: circle;
+    }
+      
+    .list {
+      list-style: square;
+    }
+      
+    .light-theme {
+      --bg: var(--green);
+      --fontColor: var(--black);
+    }
+    
+    .dark-theme {
+      --bg: var(--black);
+      --fontColor: var(--green);
+    }
+    ``````
 
 1. To view the dark theme, open the file `index.html` and manually edit the default theme in the `<body>` class attribute to dark theme (`dark-theme`). Save the file and then reload the page in the browser.
 
