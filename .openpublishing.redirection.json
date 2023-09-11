@@ -27433,6 +27433,11 @@
       "source_path": "learn-pr/wwl-azure/explore-iot-hub-automatic-device-management/4-summary.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.wwl.explore-iot-hub-automatic-device-management.badge.yml",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
     }
   ]
 }
