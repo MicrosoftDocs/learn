@@ -2,7 +2,7 @@ The top security challenges organizations face include:
 
 - An increase in the number and sophistication of attacks.
 - A talent shortage that is driving the need for automation, integration, and consolidation of security tools.
-- Visibility into security, privacy, compliance, and governance
+- Visibility into security, privacy, compliance, and governance.
 
 Organizations need to act quickly to address all the security challenges they face, but working as human speed, even if there weren't a talent shortage, isn't enough.  Organizations need to work at machine speed.
 

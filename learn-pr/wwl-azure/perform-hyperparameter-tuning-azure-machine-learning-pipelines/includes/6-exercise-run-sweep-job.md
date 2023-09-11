@@ -1,5 +1,3 @@
-
-
 Now, it's your chance to explore how to tune hyperparameters with a sweep job.
 
 In this exercise, you will:
