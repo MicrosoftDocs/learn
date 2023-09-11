@@ -3,14 +3,14 @@ uid: learn.wwl.implement-http-operations-asp-razor
 metadata:
   title: Implement HTTP operations in ASP.NET Razor Pages
   description: "Learn how to implement HTTP clients and perform HTTP operations in ASP.NET Core Razor Pages."
-  ms.date: 09/08/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Implement HTTP operations in ASP.NET Razor Pages
 summary: |
-  Learn how to implement HTTP clients based on `HttpClient` and `IHttpClientFactory` . And how to implement code to perform HTTP operations in ASP.NET Core Razor Pages.
+  Learn how to implement HTTP clients based on `HttpClient` and `IHttpClientFactory`. And how to implement code to perform HTTP operations in [ASP.NET](http://ASP.NET) Core Razor Pages.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   After completing this module, you'll be able to:
