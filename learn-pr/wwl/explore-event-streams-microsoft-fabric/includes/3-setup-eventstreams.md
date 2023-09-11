@@ -9,7 +9,7 @@ To create an event source, you need to follow these steps:
    ![Create new eventstream.](../media/create-new-eventstream.png)
 
 > [!Note] 
-> As you can see from the image, there are several methods. Anytime you're in the PowerBI Service and have access to Fabric you can click on the icon in the bottom-left portion in the image to switch between fabric sources
+> As you can see from the image, there are several methods. Anytime you're in the PowerBI Service and have access to Fabric you can click on the icon in the bottom-left portion in the image to switch between fabric sources.
 
 2. Enter a name for the new eventstream and select Create. You'll see the main editor canvas where you can add sources and destinations to your eventstream.
 3. Select New source on the ribbon or ![new button in main editor.](../media/new-button-main-editor.png) in the main editor canvas and then choose your source type. You can pick Azure Event Hubs, sample data, or custom app.

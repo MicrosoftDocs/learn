@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: fabric
 title: Use real time event streams in Microsoft Fabric
-summary: This module is an introduction to the Microsoft Fabric Evenstream within Real-Time Analytics (RTA)
+summary: This module is an introduction to the Microsoft Fabric Eventstream within Real-Time Analytics (RTA)
 abstract: |
   *   Establish source and destinations in Eventstream
   *   View the data in-flight in eventstream items
