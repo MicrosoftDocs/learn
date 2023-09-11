@@ -12,7 +12,6 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure
 title: "Scale multiple Azure SQL Databases with SQL elastic pools"
 summary: "SQL elastic pools allow you to manage performance and cost for a collection of SQL databases."
 abstract: |
