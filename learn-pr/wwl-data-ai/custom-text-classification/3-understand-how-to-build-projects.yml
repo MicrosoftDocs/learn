@@ -4,11 +4,11 @@ title: Understand how to build text classification projects
 metadata:
   title: Understand how to build text classification projects
   description: "Understand how to build text classification projects"
-  ms.date: 09/01/2022
+  ms.date: 08/31/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.service: azure-ai-language
 azureSandbox: false
 labModal: false
 durationInMinutes: 12
