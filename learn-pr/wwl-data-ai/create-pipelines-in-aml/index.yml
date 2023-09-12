@@ -28,6 +28,5 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.wwl.create-pipelines-in-aml.summary
 badge:
   uid: learn.wwl.create-pipelines-in-aml.badge
