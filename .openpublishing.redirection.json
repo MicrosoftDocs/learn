@@ -26482,6 +26482,11 @@
       "source_path": "learn-pr/wwl-data-ai/use-compute-contexts-in-aml/6-working-with-compute.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/work-compute-resources-azure-machine-learning/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-with-data-in-aml/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/make-data-available-azure-machine-learning/",
+      "redirect_document_id": false
     }
   ]
 }
