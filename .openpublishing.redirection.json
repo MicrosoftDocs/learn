@@ -26512,6 +26512,11 @@
       "source_path": "learn-pr/wwl-data-ai/work-with-data-in-aml/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/make-data-available-azure-machine-learning/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-with-data-in-aml/5-using-datasets.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/make-data-available-azure-machine-learning/",
+      "redirect_document_id": false
     }
   ]
 }
