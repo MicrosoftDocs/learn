@@ -12,7 +12,7 @@ The simplest way to provide the same AD DS environment in Azure that an organiza
 1. Connect that virtual network to the on-premises network.
 1. Configure that subnet as a new AD DS site, as shown in the following image.
 
-   :::image type="content" source="../media/4-identity-replication-diagram.png" alt-text="Diagram that shows replication of an on-premises identity hosted in Active Directory Domain Services to Azure Active Directory." border="false" lightbox="../media/4-identity-replication-diagram.png":::
+   :::image type="content" source="../media/4-identity-replication-diagram.png" alt-text="Diagram that shows replication of an on-premises identity hosted in Active Directory Domain Services to Microsoft Entra ID." border="false" lightbox="../media/4-identity-replication-diagram.png":::
 
 Another option is to configure the cloud-hosted AD DS domain as a child domain of the on-premises domain's forest. An additional option is to configure the AD DS domain controllers running in the cloud as a separate forest that has a trust relationship with the on-premises forest. The following image shows this resource forest topology.
 
@@ -22,26 +22,18 @@ When organizations deploy domain controllers on virtual machines (VMs) in Azure,
 
 For Tailwind Traders, extending its on-premises Active Directory domain or forest into Azure might be sufficient, depending on application requirements. The drawback in deploying this option is that VMs that are running all the time, in the way that domain controllers must, have an associated ongoing expense.
 
-## What is Azure AD Connect?
+## What is Microsoft Entra Connect?
 
-Azure Active Directory (Azure AD) Connect allows organizations to synchronize the identities present in their on-premises Active Directory instance to Azure Active Directory. This allows you to use the same identity for cloud resources and on-premises resources. Azure AD Connect is most often used when organizations adopt Microsoft 365 to permit applications such as Microsoft SharePoint and Exchange running in the cloud to be accessed via on-premises applications. 
+Microsoft Entra Connect (formerly Azure AD Connect) allows organizations to synchronize the identities present in their on-premises Active Directory instance to Microsoft Entra ID (formerly Azure AD). This allows you to use the same identity for cloud resources and on-premises resources. Microsoft Entra Connect is most often used when organizations adopt Microsoft 365 to permit applications such as Microsoft SharePoint and Exchange running in the cloud to be accessed via on-premises applications. 
 
-The following image shows an on-premises AD DS instance synchronizing with an Azure AD instance.
+If Tailwind Traders plans to adopt Microsoft 365 technologies such as Exchange Online or Microsoft Teams, it will need to configure Microsoft Entra Connect to replicate identities from its on-premises AD DS environment to Azure. If the company also wants to use on-premises identities with applications in Azure, but doesn't want to deploy AD DS domain controllers on VMs, it will also need to deploy Microsoft Entra Connect.
 
-:::image type="content" source="../media/4-identity-synchronization-diagram.png" alt-text="Diagram that shows identity synchronization between on-premises Active Directory Domain Services instances and an Azure Active Directory tenant." border="false" lightbox="../media/4-identity-synchronization-diagram.png":::
+## What is Entra Domain Services?
 
-If Tailwind Traders plans to adopt Microsoft 365 technologies such as Exchange Online or Microsoft Teams, it will need to configure Azure AD Connect to replicate identities from its on-premises AD DS environment to Azure. If the company also wants to use on-premises identities with applications in Azure, but doesn't want to deploy AD DS domain controllers on VMs, it will also need to deploy Azure AD Connect.
+You can use Entra Domain Services to project an Azure AD domain onto an Azure virtual subnet. When you do this, services like domain join, Group Policy, Lightweight Directory Access Protocol (LDAP), and Kerberos and NTLM authentication become available to any VM deployed on the subnet. 
 
-## What is Azure AD DS?
+Entra Domain Services allows you to have a basic managed Active Directory environment available to VMs without worrying about managing, maintaining, and paying for the VMs that run as domain controllers. Entra Domain Services also allows you to use on-premises identities through Microsoft Entra Connect to interact with VMs running on a specially configured Azure Virtual Network subnet. 
 
-You can use Azure AD DS to project an Azure AD domain onto an Azure virtual subnet. When you do this, services like domain join, Group Policy, Lightweight Directory Access Protocol (LDAP), and Kerberos and NTLM authentication become available to any VM deployed on the subnet. 
+One drawback to Entra Domain Services is that the Group Policy implementation is basic. It includes a fixed set of policies and offers no ability to create Group Policy Objects (GPOs). Even though the identities used on-premises will be available in Azure, any policies configured on-premises won't be available.
 
-Azure AD DS allows you to have a basic managed Active Directory environment available to VMs without worrying about managing, maintaining, and paying for the VMs that run as domain controllers. Azure AD DS also allows you to use on-premises identities through Azure AD Connect to interact with VMs running on a specially configured Azure Virtual Network subnet. 
-
-The following image shows an Azure AD DS architecture.
-
-:::image type="content" source="../media/4-azure-active-directory-domain-services-architecture.png" alt-text="Diagram that shows how on-premises AD DS synchronizes with an Azure AD tenant that populates an Azure AD DS managed domain." border="false" lightbox="../media/4-azure-active-directory-domain-services-architecture.png":::
-
-One drawback to Azure AD DS is that the Group Policy implementation is basic. It includes a fixed set of policies and offers no ability to create Group Policy Objects (GPOs). Even though the identities used on-premises will be available in Azure, any policies configured on-premises won't be available.
-
-For Tailwind Traders, Azure AD DS provides a good middle ground for hybrid workloads. It enables domain-joined identity usage and a substantial amount of Group Policy configuration. But it won't support applications that require complex Active Directory functionality such as custom domain partitions and schema extensions.
+For Tailwind Traders, Entra Domain Services provides a good middle ground for hybrid workloads. It enables domain-joined identity usage and a substantial amount of Group Policy configuration. But it won't support applications that require complex Active Directory functionality such as custom domain partitions and schema extensions.

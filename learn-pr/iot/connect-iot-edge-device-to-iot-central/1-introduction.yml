@@ -3,14 +3,15 @@ uid: learn.iot.connect-iot-edge-device-to-iot-central.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 01/11/2023
+  description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
   ms.author: dobett
+  ms.date: 05/24/2023
   ms.reviewer: rangv
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.prod: azure-iot-central
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

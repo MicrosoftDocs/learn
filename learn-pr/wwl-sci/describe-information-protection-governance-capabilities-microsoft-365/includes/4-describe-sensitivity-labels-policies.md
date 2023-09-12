@@ -1,4 +1,5 @@
 
+
 Organizations must protect their data, to safeguard customers and business operations, and to meet compliance standards. Admins can enable their organization to protect its data, through capabilities and tools such as sensitivity labels and policies in the Microsoft Purview compliance portal.
 
 ## Sensitivity labels

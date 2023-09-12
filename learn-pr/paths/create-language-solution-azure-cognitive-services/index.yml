@@ -1,14 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-language-solution-azure-cognitive-services
 metadata:
-  title: Create a Language Understanding solution with Azure Cognitive Services
-  description: Create a Language Understanding solution with Azure Cognitive Services
+  title: Create a Language Understanding solution with Azure AI Language
+  description: Create a Language Understanding solution with Azure AI Language
   ms.date: 10/12/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Create a Language Understanding solution with Azure Cognitive Services
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+  ms.service: azure
+title: Create a Language Understanding solution with Azure AI Language
 prerequisites: |
   Before starting this learning path, you should already have:
   *   Familiarity with Azure and the Azure portal.
@@ -23,8 +26,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
-- azure-language-understanding
+- ai-services
 subjects:
 - natural-language-processing
 modules:

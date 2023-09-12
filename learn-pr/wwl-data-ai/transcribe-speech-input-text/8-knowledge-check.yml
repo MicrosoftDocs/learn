@@ -6,25 +6,25 @@ metadata:
   description: "Knowledge check"
   ms.date: 03/02/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What information do you need from your Speech service Azure resource to consume it using the Speech SDK?"
+  - content: "What information do you need from your Azure AI Speech service resource to consume it using the Azure AI Speech SDK?"
     choices:
     - content: "The location and one of the keys"
       isCorrect: true
-      explanation: "Correct. The Speech SDK requires the location and a key to connect to the Speech service."
+      explanation: "Correct. The Azure AI Speech SDK requires the location and a key to connect to the Azure AI Speech service."
     - content: "The primary and secondary keys"
       isCorrect: false
-      explanation: "Incorrect. The Speech SDK requires the location and a key to connect to the Speech service."
+      explanation: "Incorrect. The Azure AI Speech SDK requires the location and a key to connect to the Azure AI Speech service."
     - content: "The endpoint and one of the keys"
       isCorrect: false
-      explanation: "Incorrect. The Speech SDK requires the location and a key to connect to the Speech service."
+      explanation: "Incorrect. The Azure AI Speech SDK requires the location and a key to connect to the Azure AI Speech service."
   - content: "Which object should you use to specify that the speech input to be transcribed to text is in an audio file?"
     choices:
     - content: "SpeechConfig"

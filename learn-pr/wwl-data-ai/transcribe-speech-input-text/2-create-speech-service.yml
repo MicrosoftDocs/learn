@@ -6,9 +6,9 @@ metadata:
   description: "Provision an Azure resource for speech"
   ms.date: 03/02/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

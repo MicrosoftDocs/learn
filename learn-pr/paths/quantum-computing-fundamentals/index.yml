@@ -13,9 +13,9 @@ title: Quantum computing foundations
 summary: |
   Welcome to the world of quantum computing!
 
-  Whether you're a developer or simply someone who wants to get a feel for what quantum computing is all about, this learning path is a great place to start exploring quantum computing and optimization.
+  Whether you're a developer or simply someone who wants to get a feel for what quantum computing is all about, this learning path is a great place to start exploring quantum computing.
 
-  Imagine you're the new member of a space crew. The spaceship is equipped with a computer that has access to the Azure Quantum servers on Earth and you can use the power of quantum to complete different tasks. During your training as a new crew member, you'll learn about quantum computing and optimization and how to use the Microsoft Azure Quantum service.
+  Imagine you're the new member of a space crew. The spaceship is equipped with a computer that has access to the Azure Quantum servers on Earth and you can use the power of quantum to complete different tasks. During your training as a new crew member, you'll learn about quantum computing and how to use the Microsoft Azure Quantum service.
 
   Welcome aboard!
 
@@ -28,8 +28,6 @@ summary: |
   - Interact with the Azure Quantum cloud service.
   - Adapt and create Q# applications to run them on actual hardware.
   - Estimate physical resources for quantum algorithms using Azure Quantum 
-  - Apply quantum-inspired optimization to a combinatorial optimization problem.
-  - Solve a job shop scheduling optimization problem.
 
 prerequisites: None
 iconUrl: /training/achievements/quantum/quantum-computing-fundamentals.svg
@@ -51,7 +49,5 @@ modules:
 - learn.quantum.estimate-resources-quantum-algorithms
 - learn.quantum.use-qsharp-libraries
 - learn.quantum.run-quantum-algorithms-hardware
-- learn.quantum.solve-quantum-inspired-optimization-problems
-- learn.quantum.solve-job-shop-optimization-azure-quantum
 trophy:
   uid: learn.quantum-computing-fundamentals.trophy

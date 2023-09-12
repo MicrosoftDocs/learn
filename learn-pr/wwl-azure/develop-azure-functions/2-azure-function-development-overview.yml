@@ -4,11 +4,11 @@ title: Explore Azure Functions development
 metadata:
   title: Explore Azure Functions development
   description: "Explore Azure Functions development"
-  ms.date: 02/07/2023
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/2-azure-function-development-overview.md)]

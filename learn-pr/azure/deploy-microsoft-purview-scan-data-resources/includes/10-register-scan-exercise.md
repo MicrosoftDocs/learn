@@ -52,7 +52,7 @@ At this point, we've registered a data source. Assets aren't written to the cata
 
 1. Open Purview Governance Portal, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, select the **New Scan** button.
 
-    :::image type="content" source="../media/register-and-scan-exercise/scan-new.png" alt-text="Screenshot of the Microsoft Purview governance portal with the data map selected in the left menu, then sources. Sources is open to the map view, and the scan button is highlighted on the tile of the data source we registered in the above steps.":::
+    :::image type="content" source="../media/register-and-scan-exercise/scan-new.png" alt-text="Screenshot of the Microsoft Purview governance portal with the data map selected in the left menu, then sources. The sources page is open to the map view, and the scan button is highlighted on the tile of the data source we registered in the above steps.":::
 
 1. Select **Test connection** to ensure the Microsoft Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. When successful, select **Continue**.
 
@@ -78,7 +78,7 @@ At this point, we've registered a data source. Assets aren't written to the cata
 
 1. To monitor the progress of the scan run, select **View Details** under your data source in the data map.
 
-    :::image type="content" source="../media/register-and-scan-exercise/sources-details.png" alt-text="Screenshot of the Microsoft Purview governance portal with the data map selected in the left menu, then sources. Sources is open to the map view, and the View Details button is highlighted on the tile of the data source we registered and scanned in the previous steps.":::
+    :::image type="content" source="../media/register-and-scan-exercise/sources-details.png" alt-text="Screenshot of the Microsoft Purview governance portal with the data map selected in the left menu, then sources. The sources page is open to the map view, and the View Details button is highlighted on the tile of the data source we registered and scanned in the previous steps.":::
 
 1. Select **Refresh** to periodically update the status of the scan and wait until it says completed.
 

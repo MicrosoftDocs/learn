@@ -4,20 +4,19 @@ title: Design an ExpressRoute deployment
 metadata:
   title: Design an ExpressRoute deployment
   description: "Design an ExpressRoute deployment"
-  ms.date: 03/02/2023
+  ms.date: 07/11/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/3-design-expressroute-deployment.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following can be connected with ExpressRoute Premium?"
+  - content: "Which of the following scenarios can be connected with ExpressRoute Premium?"
     choices:
     - content: "Resources within local regions."
       isCorrect: false
@@ -27,7 +26,7 @@ quiz:
       explanation: "Incorrect. Azure Premium can connect more than resources within a single metropolitan area."
     - content: "Resources in different Geopolitical regions."
       isCorrect: true
-      explanation: "Correct. You can enable ExpressRoute Premium to extend connectivity across geopolitical boundaries. For example, if you connect to Microsoft in Amsterdam through ExpressRoute, you'll have access to all Microsoft cloud services hosted in all regions across the world."
+      explanation: "Correct. You can enable ExpressRoute Premium to extend connectivity across geopolitical boundaries."
   - content: "How can one provide a failover path for ExpressRoute?"
     choices:
     - content: "Configure a Point-to-Site VPN connection as a backup for ExpressRoute."
@@ -38,4 +37,4 @@ quiz:
       explanation: "Correct. You can configure a Site-to-Site VPN connection as a backup for ExpressRoute. This connection applies only to virtual networks linked to the Azure private peering path."
     - content: "You cannot configure a backup path for ExpressRoute."
       isCorrect: false
-      explanation: "Incorrect. It is possible to configure a backup path for ExpressRoute."
+      explanation: "Incorrect. It's possible to configure a backup path for ExpressRoute."

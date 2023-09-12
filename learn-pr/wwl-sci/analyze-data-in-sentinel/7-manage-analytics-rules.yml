@@ -4,11 +4,11 @@ title: Manage analytics rules
 metadata:
   title: Manage analytics rules
   description: "Describes how to manage and modify analytics rules."
-  ms.date: 01/27/2023
+  ms.date: 05/15/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/7-manage-analytics-rules.md)]

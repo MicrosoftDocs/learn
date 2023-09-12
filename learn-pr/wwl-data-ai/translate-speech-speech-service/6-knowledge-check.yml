@@ -4,15 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/09/2022
+  ms.date: 06/27/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: cognitive-services
+  ms.subservice: speech-service
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "Which SDK object should you use to specify the language(s) into which you want speech translated?"
     choices:
@@ -25,17 +25,17 @@ quiz:
     - content: "AudioConfig"
       isCorrect: false
       explanation: "Incorrect. Specify target languages in the SpeechTranslationConfig object."
-  - content: "Which SDK object should you use as a proxy for the Translation API of Speech service?"
+  - content: "Which SDK object should you use as a proxy for the Translation API of Azure AI Speech service?"
     choices:
     - content: "TranslationRecognizer"
       isCorrect: true
-      explanation: "Correct. Use a TranslationRecognizer to call the Translation API of the Speech service."
+      explanation: "Correct. Use a TranslationRecognizer to call the Translation API of the Azure AI Speech service."
     - content: "SpeechRecognizer"
       isCorrect: false
-      explanation: "Incorrect. Use a TranslationRecognizer to call the Translation API of the Speech service."
+      explanation: "Incorrect. Use a TranslationRecognizer to call the Translation API of the Azure AI Speech service."
     - content: "SpeechSynthesizer"
       isCorrect: false
-      explanation: "Incorrect. Use a TranslationRecognizer to call the Translation API of the Speech service."
+      explanation: "Incorrect. Use a TranslationRecognizer to call the Translation API of the Azure AI Speech service."
   - content: "When translating speech, in which cases can you use the Synthesizing event to synthesize the translations and speech?"
     choices:
     - content: "Only when translating to a single target language."

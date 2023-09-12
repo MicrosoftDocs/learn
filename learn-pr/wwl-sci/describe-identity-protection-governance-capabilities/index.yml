@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad
 metadata:
-  title: Describe the identity protection and governance capabilities of Azure AD
-  description: "Describe the identity protection and governance capabilities of Azure AD"
+  title: Describe the identity protection and governance capabilities of Microsoft Entra
+  description: "Describe the identity protection and governance capabilities of Microsoft Entra"
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-title: Describe the identity protection and governance capabilities of Azure AD
-summary: Azure AD provides identity protection and governance capabilities.  Learn about these capabilities, the use cases, and benefits.
+  ms.service: active-directory
+title: Describe the identity protection and governance capabilities of Microsoft Entra
+summary: "Learn about protecting and governing identities with Microsoft Entra ID. Learn about Permissions Management and how it enables organization to discover, remediate, and monitor permission risks across your multicloud infrastructure."
 abstract: |
-  After completing this module, you will be able to:
-  - Describe the capabilities of identity governance in Azure.
+  By the end of this module, you'll be able to:
+  - Describe the identity protection and governance capabilities of Microsoft Entra ID.
   - Describe Privileged Identity Management.
-  - Describe the capabilities of Azure Identity Protection.
+  - Describe Permissions Management.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -27,14 +27,19 @@ roles:
 - student
 products:
 - azure-active-directory
+- azure
+- entra
 subjects:
 - information-protection-governance
 units:
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.introduction
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-identity-governance
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-what-is-entitlement-management-access-reviews
+- learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entitlement-management-terms-use
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-privileged-identity-management
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-azure
+- learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-permissions-management
+- learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-verified-id
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.knowledge-check
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.summary-resources
 badge:

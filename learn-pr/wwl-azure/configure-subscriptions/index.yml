@@ -2,12 +2,11 @@
 uid: learn.wwl.configure-subscriptions
 metadata:
   title: Configure subscriptions
-  description: "Configure subscriptions"
-  ms.date: 11/21/2022
+  description: "Learn how to configure Azure subscriptions, including how to obtain a subscription, implement cost management, and apply Azure resource tags."
+  ms.date: 08/28/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure subscriptions
 summary: Learn how to configure Azure subscriptions, including how to obtain a subscription, implement cost management, and apply Azure resource tags.
 abstract: |

@@ -1,4 +1,3 @@
-
 Intune standalone now supports Win32 app management capabilities. While there are some limitations on what types of apps that can be deployed, customers now have a choice on whether to use Intune or Configuration Manager for Win32 app deployment. With the Intune Management Extension, deployment is no longer limited to a single MSI installation file.
 
 In order to deploy Win32 apps, the following criteria must be met:
@@ -44,7 +43,7 @@ Once the Intunewin file has been created, it can be added to Intune. The steps f
 
 5.  **Define the app requirements.** This might include if it’s x86/x64, minimum OS version, disk space required, minimum memory, etc.
 6.  **Add requirement rules.** These define a specific configuration to look for, such as an existing file or folder, a registry value, or a script to execute and compare against the results of the script.
-7.  **Configure app detection rules.** If the Win32 app has dependencies on other apps, this can bet set to check for information such as an MSI product code or the presence of a path/file, a registry key/value, or the results of a script.
+7.  **Configure app detection rules.** If the Win32 app has dependencies on other apps, the detection rule can bet set to check for information such as an MSI product code or the presence of a path/file, a registry key/value, or the results of a script.
 8.  **Configure App return codes.** This defines the result of the installation. Default values such as Success, Failure, Reboot required, and Retry are available. More codes can be created.
 
 Once the process of adding the app is complete, it can be assigned like any other app. Delivery optimization is supported and toast notifications can be suppressed as well.

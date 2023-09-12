@@ -1,17 +1,18 @@
 ### YamlMime:Module
 uid: learn.wwl.extract-insights-text-with-text-analytics-service
 metadata:
-  title: Extract insights from text with the Language service
-  description: "Extract insights from text with the Language service"
+  title: Extract insights from text with the Azure AI Language service
+  description: "Extract insights from text with the Azure AI Language service"
   ms.date: 04/21/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Extract insights from text with the Language service
-summary: The Language service enables you to create intelligent apps and services that extract semantic information from text.
+  ms.service: cognitive-services
+  ms.subservice: language-service
+title: Extract insights from text with the Azure AI Language service
+summary: The Azure AI Language service enables you to create intelligent apps and services that extract semantic information from text.
 abstract: |
-  In this module, you will learn how to use the Language service to:
+  In this module, you will learn how to use the Azure AI Language service to:
   - Detect language
   - Extract key phrases
   - Analyze sentiment
@@ -28,7 +29,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 units:

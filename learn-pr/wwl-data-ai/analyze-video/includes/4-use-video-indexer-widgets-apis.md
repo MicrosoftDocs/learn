@@ -1,14 +1,14 @@
-While you can perform all video analysis tasks in the Video Analyzer for Media portal, you may want to incorporate the service into custom applications. There are two ways you can accomplish this.
+While you can perform all video analysis tasks in the Azure Video Indexer portal, you may want to incorporate the service into custom applications. There are two ways you can accomplish this.
 
-## Video Analyzer for Media widgets
+## Azure Video Indexer widgets
 
-The widgets used in the Video Analyzer for Media portal to play, analyze, and edit videos can be embedded in your own custom HTML interfaces. You can use this technique to share insights from specific videos with others without giving them full access to your account in the Video Analyzer for Media portal.
+The widgets used in the Azure Video Indexer portal to play, analyze, and edit videos can be embedded in your own custom HTML interfaces. You can use this technique to share insights from specific videos with others without giving them full access to your account in the Azure Video Indexer portal.
 
 ![Video Analyzer widgets in a custom web page](../media/widgets.png)
 
-## Video Analyzer for Media API
+## Azure Video Indexer API
 
-Video Analyzer for Media provides a REST API that you can subscribe to in order to get a subscription key. You can then use your subscription key to consume the REST API and automate video indexing tasks, such as uploading and indexing videos, retrieving insights, and determining endpoints for Video Analyzer widgets.
+Azure Video Indexer provides a REST API that you can subscribe to in order to get a subscription key. You can then use your subscription key to consume the REST API and automate video indexing tasks, such as uploading and indexing videos, retrieving insights, and determining endpoints for Video Analyzer widgets.
 
 For example, a call to the `https://api.videoindexer.ai.your_endpoint/Videos` REST interface returns details of videos in your account, similar to the following JSON example:
 

@@ -1,10 +1,4 @@
-The most effective way to find security gaps in the enterprise is to create an infrastructure threat model.
-
-It begins with a set of assessment questions, which feed directly into the threat modeling creation process.
-
-An infrastructure threat model helps you visualize how the enterprise is accessed, connected, and protected.
-
-It makes it easier to identify which security controls to use to help reduce or eliminate risk.
+The most effective way to find security gaps in the enterprise is to create an infrastructure threat model. It begins with a set of assessment questions, which feed directly into the threat modeling creation process. An infrastructure threat model helps you visualize how the enterprise is accessed, connected, and protected. It makes it easier to identify which security controls to use to help reduce or eliminate risk.
 
 This list of assessment questions is a great starting point. You may add more questions depending on specific needs.
 

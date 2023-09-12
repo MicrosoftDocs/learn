@@ -8,7 +8,7 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-04282021
 durationInMinutes: 6
@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: 'less complex'
       isCorrect: false
-      explanation: 'With scaling, especially when scaling out, there is often an increase in complexity.'
+      explanation: "With scaling, especially when scaling out, there's often an increase in complexity."
     - content: 'more reliable'
       isCorrect: true
       explanation: 'Correct.'
@@ -34,7 +34,7 @@ quiz:
     choices:
     - content: 'less complex'
       isCorrect: false
-      explanation: 'With scaling, especially when scaling out, there is often an increase in complexity.'
+      explanation: "With scaling, especially when scaling out, there's often an increase in complexity."
     - content: 'more reliable'
       isCorrect: true
       explanation: 'Correct.'
@@ -52,8 +52,8 @@ quiz:
       explanation: 'Correct.'
     - content: 'inherently scalable'
       isCorrect: false
-      explanation: 'This is the definition for scaling out, inherently scalable means you do not have explicitly configure scaling.'
+      explanation: "This description is the definition of scaling out. Inherently scalable means you don't have to explicitly configure scaling."
     - content: 'autoscaling'
       isCorrect: false
-      explanation: 'This is the definition for scaling out. Autoscaling is an offering that enables you to configure specific scaling behavior.'
+      explanation: 'This description is the definition of scaling out. Autoscaling is an offering that enables you to configure specific scaling behavior.'
       

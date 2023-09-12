@@ -5,7 +5,7 @@ Before an application can access the organization's data, a user must grant the 
 By allowing users to grant apps access to data, users can easily acquire useful applications and be productive. However, in some situations this configuration can represent a risk if it isn't carefully monitored and controlled.
 
 > [!IMPORTANT]
-> To reduce the risk of malicious applications attempting to trick users into granting them access to your organization's data, it is recommended that you allow user consent only for applications that have been published by a [verified publisher](/content/dam/wwl/learn-paths/sc-300/azure/active-directory/develop/publisher-verification-overview).
+> To reduce the risk of malicious applications attempting to trick users into granting them access to your organization's data, it is recommended that you allow user consent only for applications that have been published by a verified publisher.
 
 ## User consent settings
 
@@ -14,9 +14,9 @@ App consent policies describe conditions that must be met before an app can be c
 By choosing which app consent policies apply for all users, you can set limits on when end users are allowed to grant consent to apps and when they'll be required to request administrator review and approval.
 
  -  **Disable user consent** – Users can't grant permissions to applications. Users can continue to sign into apps they had previously consented to or that are consented to by administrators on their behalf, but they'll not be allowed to consent to new permissions or to new apps on their own. Only users who have been granted a directory role that includes the permission to grant consent will be able to consent to new apps.
- -  **Users can consent to apps from [verified publisher](/azure/active-directory/develop/publisher-verification-overview)s or your organization, but only for permissions you choose**– All users can only consent to apps that were published by a verified publisher and apps that are registered in your tenant. Users can only consent to the permissions you have classified as `low impact`. You must [classify permissions](/content/dam/wwl/learn-paths/sc-300/azure/active-directory/manage-apps/configure-permission-classifications) to choose which permissions users are allowed to consent to.
+ -  **Users can consent to apps from [verified publisher](/azure/active-directory/develop/publisher-verification-overview)s or your organization, but only for permissions you choose**– All users can only consent to apps that were published by a verified publisher and apps that are registered in your tenant. Users can only consent to the permissions you have classified as `low impact`. You must classify permissions to choose which permissions users are allowed to consent to.
  -  **Users can consent to all apps** – This option allows all users to consent to any permission that doesn't require administrator consent for any application.
- -  **Custom app consent policy** – For even more options over the conditions governing when users consent, you can [create custom app consent policies](/content/dam/wwl/learn-paths/sc-300/azure/active-directory/manage-apps/manage-app-consent-policies) and configure those to apply for user consent.
+ -  **Custom app consent policy** – For even more options over the conditions governing when users consent, you can create custom app consent policies and configure those to apply for user consent.
     
     :::image type="content" source="../media/set-for-all-users-8eb060cf.png" alt-text="Screenshot of the User consent settings dialog in the enterprise apps registration process.":::
     

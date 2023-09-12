@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-prompt-engineering-azure-openai.introduction
+title: Introduction
+metadata:
+  title: introduction
+  description: "Introduction to Azure OpenAI prompt engineering."
+  ms.date: 5/2/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: cognitive-services
+  ms.subservice: openai 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

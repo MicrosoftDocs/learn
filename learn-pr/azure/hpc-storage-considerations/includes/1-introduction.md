@@ -1,8 +1,8 @@
 Azure has several file-system offerings to meet your high-performance computing (HPC) workload needs.
 
-Suppose you have a computationally intensive compute job that you want to run in Azure. Assume the simulation runs on an HPC cluster. The simulation code expects a local path (like /mnt/data/simdata). The data is common for each HPC cluster node. You want to replicate the run just as you would in your datacenter, with your own HPC cluster. You want to enable jobs like this to run at any time, at any scale, and maybe run multiple jobs simultaneously.
+Suppose you have a computationally intensive compute job that you want to run in Azure. Assume the job is a simulation that runs on an HPC cluster. The simulation code expects a local path (like /mnt/data/simdata). The data is common for each HPC cluster node. You want to replicate the run just as you would in your datacenter, with your own HPC cluster. You want to enable jobs like this to run at any time, at any scale, and maybe run multiple jobs simultaneously.
 
-You need a storage solution that can provide fast scale-out access to your files. The solution you choose will be driven by various considerations.
+You need an HPC storage solution that can provide fast scale-out access to your files.
 
 After you finish this module, you'll understand the major considerations for choosing an HPC storage solution and will be able to create a requirements spreadsheet based on these considerations.
 
@@ -10,9 +10,9 @@ After you finish this module, you'll understand the major considerations for cho
 
 In this module, you will:
 
-- Document the desired file-access architecture for your HPC use case
-- Consider the implications of your architecture requirements
-- Compare several file-access architectures
+- Document the desired file-access architecture for your HPC use case.
+- Consider the implications of your architecture requirements.
+- Compare several file-access architectures.
 
 ## Prerequisites  
 

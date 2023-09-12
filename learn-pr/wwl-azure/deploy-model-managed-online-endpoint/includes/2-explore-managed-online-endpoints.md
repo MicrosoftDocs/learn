@@ -1,5 +1,3 @@
-
-
 To make a machine learning model available for other applications, you can deploy the model to a managed online endpoint.
 
 You'll learn how to use managed online endpoints for real-time predictions.

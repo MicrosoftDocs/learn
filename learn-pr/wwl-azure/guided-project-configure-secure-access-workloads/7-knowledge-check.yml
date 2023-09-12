@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-configure-secure-access-workloads.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/13/2023
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Consider a Scenario where resources in two different Azure Virtual Networks need to communicate securely without going over the internet. The solution should be easy to implement and be cost effective. In this Scenario, what would you configure?"
+    choices:
+    - content: "Create a VPN connection between the two virtual Networks."
+      isCorrect: false
+      explanation: "Incorrect. VPN connection is not the easiest, most cost effective solution."
+    - content: "Create an ExpressRoute connection between the two virtual Networks."
+      isCorrect: false
+      explanation: "Incorrect. An ExpressRoute connection is not the easiest, most cost effective solution."
+    - content: "Create a virtual network peering connection."
+      isCorrect: true
+      explanation: "Correct. In general, virtual network peering is the easiest and most cost effective solution to connect resources in two different regions."
+  - content: "Consider a Scenario where an NSG has two rules for inbound traffic to the back-end web servers. There's an allow rule with a priority of 200, and a deny rule with a priority of 150. Which of the security rules takes precedence?"
+    choices:
+    - content: "The allow rule takes precedence."
+      isCorrect: false
+      explanation: "Incorrect. Rules are processed according to the specified priority."
+    - content: "The deny rule takes precedence."
+      isCorrect: true
+      explanation: "Correct. The deny rule takes precedence because it's processed first. The rule with priority 150 is processed before the rule with priority 200."
+    - content: "The rule that was created first takes precedence."
+      isCorrect: false
+      explanation: "Incorrect. Rules are processed according to the specified priority."
+  - content: "How would you describe the IP address for an Azure Firewall implementation?"
+    choices:
+    - content: "A firewall has a dynamically assigned public IP address."
+      isCorrect: false
+      explanation: "Incorrect. Azure Firewall doesn't use a dynamically assigned public IP address."
+    - content: "A firewall has a statically assigned public IP address."
+      isCorrect: true
+      explanation: "Correct. Azure Firewall uses a statically assigned public IP address."
+    - content: "A firewall has an IP address assigned from a pool of designated addresses."
+      isCorrect: false
+      explanation: "Incorrect. Azure Firewall doesn't use a pool of IP addresses."
+  - content: "What type of Azure Firewall rule can allow access to Azure SQL Database from an FQDN address?"
+    choices:
+    - content: "Network rule"
+      isCorrect: false
+      explanation: "Incorrect. A network rule can be used to filter traffic based on one or more of the following items: IP address, port, and protocol."
+    - content: "NAT rule"
+      isCorrect: false
+      explanation: "Incorrect. A NAT rule can be used to translate and filter inbound internet traffic based on your firewall's public IP address and a specified port number."
+    - content: "Application rule"
+      isCorrect: true
+      explanation: "Correct. You can use an application rule to filter traffic based on an FQDN address such as server1.database.windows.net."

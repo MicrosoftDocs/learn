@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: postgresql
 title: Optimize vacuum in Azure Database for PostgreSQL
 summary: Azure Database for PostgreSQL uses vacuum and autovacuum to remove rows that have been marked as soft-deleted after an update or deletion.
 abstract: |

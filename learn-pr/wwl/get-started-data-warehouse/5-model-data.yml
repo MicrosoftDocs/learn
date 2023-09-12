@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-warehouse.model-data
+title: Prepare data for analysis and reporting
+metadata:
+  title: Prepare data for analysis and reporting
+  description: "Prepare data for analysis and reporting"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-model-data.md)]

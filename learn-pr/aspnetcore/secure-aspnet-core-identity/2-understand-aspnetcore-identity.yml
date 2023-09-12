@@ -1,11 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-aspnet-core-identity.understand-aspnetcore-identity
+uid: learn.secure-aspnet-core-identity.2-understand-aspnetcore-identity
 metadata:
   title: Understand ASP.NET Core Identity
-  description: Understand the architecture of ASP.NET Core Identity.
-  ms.date: 03/16/2022
+  description: Understand the architecture of ASP.NET Core Identity to add user registration and login capabilities to an ASP.NET Core web UI.
+  ms.date: 05/19/2023
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Understand ASP.NET Core Identity

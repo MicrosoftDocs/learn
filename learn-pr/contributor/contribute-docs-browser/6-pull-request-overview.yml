@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.contribute-docs-browser.pull-request-overview
+title: Review and submit a pull request
+metadata:
+  title: Review and submit a pull request
+  description: In this unit, you understand what a pull request is and how to review and submit it to publish your changes.
+  ms.date: 8/2/2023
+  author: sgaspari815
+  ms.author: v-sgaspari
+  ms.topic: interactive-tutorial
+  ms.service: learn
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-pull-request-overview.md)]

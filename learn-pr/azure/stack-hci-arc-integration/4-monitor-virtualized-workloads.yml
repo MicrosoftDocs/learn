@@ -2,13 +2,15 @@
 uid: learn.azure.stack-hci-arc-integration.4-monitor-virtualized-workloads
 metadata:
   title: Monitor Azure Stack HCI clusters and their virtualized workloads with Azure Arc
-  description: Another important advantage of Azure Arc is its ability to centralize and standardize enterprise-wide management and monitoring of technology assets regardless of their location. In this unit, you will learn how this principle applies to Azure Stack HCI clusters.
+  description: Another important advantage of Azure Arc is its ability to centralize and standardize enterprise-wide management and monitoring of technology assets regardless of their location. In this unit, you'll learn how this principle applies to Azure Stack HCI clusters.
   ms.date: 12/09/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: e2e-hybrid
+  ms.custom:
+    - e2e-hybrid
+    - devx-track-arm-template
 title: Monitor Azure Stack HCI clusters and their virtualized workloads with Azure Arc
 durationInMinutes: 5
 content: |
@@ -20,10 +22,10 @@ quiz:
     choices:
     - content: "Integrate the Azure Stack HCI clusters with Azure Monitor and run a Kusto query."
       isCorrect: false
-      explanation: "That's incorrect. While it is possible to identify the required information, this would require extra administrative effort."
+      explanation: "That's incorrect. While it's possible to identify the required information, this would require extra administrative effort."
     - content: "Use Windows Admin Center to connect to each cluster."
       isCorrect: false
-      explanation: "That's incorrect. While it is possible to identify the required information, this would require extra administrative effort."
+      explanation: "That's incorrect. While it's possible to identify the required information, this would require extra administrative effort."
     - content: "Use the Azure Stack HCI home blade in the Azure portal."
       isCorrect: true
       explanation: "That's correct. The home page for the Azure Stack HCI resources lists all of your clusters, along with their resource group, location, and associated subscription. For each cluster, you can readily identify its name, OS version, OS build, model, total number of CPU cores, and its nodes. For each node, the portal displays its manufacturer, model, serial number, total number of CPU cores, the amount of memory, as well as OS version and OS build."
@@ -32,9 +34,9 @@ quiz:
     - content: "Activity log"
       isCorrect: false
       explanation: "That's incorrect. Activity log provides a list of recent operations and events on the cluster along with their status, time, associated subscription, and initiating user."
-    - content: "Access control."
+    - content: "Access control"
       isCorrect: false
       explanation: "That's incorrect. Access control settings allow an administrator to review and modify role assignments that grant permissions to the Azure resource."
-    - content: "Tags."
+    - content: "Tags"
       isCorrect: true
       explanation: "That's correct. Tags allow an administrator to categorize resources and facilitate consolidated billing."

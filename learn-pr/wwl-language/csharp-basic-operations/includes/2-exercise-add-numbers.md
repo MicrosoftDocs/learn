@@ -1,6 +1,5 @@
 
 
-
 Often, you'll want to perform mathematical operations on numeric data. You'll start with addition in this unit, and expand to other operations in the next unit because there's an important lesson to learn about how the C# compiler parses and interprets your code.
 
 ## Add two numeric values

@@ -4,11 +4,10 @@ title: Exercise - Use the Remove() and Replace() methods
 metadata:
   title: Exercise - Use the Remove() and Replace() methods
   description: "Exercise - Use the Remove() and Replace() methods"
-  ms.date: 04/25/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/4-exercise-remove-replace.md)]

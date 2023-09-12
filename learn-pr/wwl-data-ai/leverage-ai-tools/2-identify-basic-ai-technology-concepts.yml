@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.identify-basic-ai-technology-concepts
+title: Identify basic AI technology concepts
+metadata:
+  title: Identify basic AI technology concepts
+  description: "Identify basic AI technology concepts"
+  ms.date: 09/12/2023
+  author: Adriamen
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.service: microsoft-365
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-identify-basic-ai-technology-concepts.md)]

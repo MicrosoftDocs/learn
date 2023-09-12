@@ -8,7 +8,6 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Authenticate your Azure deployment pipeline by using service principals
 summary: |
   Service principals enable your deployment pipelines to authenticate securely with Azure.

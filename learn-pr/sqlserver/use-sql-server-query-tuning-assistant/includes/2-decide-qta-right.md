@@ -1,4 +1,4 @@
-Suppose you support database applications for a large grocery company and you need to upgrade some production databases to SQL Server 2019. These databases run on old hardware and support for SQL Server has expired, or will do soon. 
+Suppose you support database applications for a large grocery company and you need to upgrade some production databases to SQL Server 2019. These databases run on old hardware and support for SQL Server has expired, or will soon.
 
 System performance is crucial to the operation of the company's stores. Orders placed with suppliers for perishable goods must be in line with warehouse storage availability. There's limited space for storing fresh and frozen produce, so orders must be placed precisely.
 
@@ -6,7 +6,7 @@ To maintain performance after the upgrades, you want to find the best method for
 
 ## Get started with the Query Tuning Assistant
 
-The Query Tuning Assistant (QTA) depends on the data in the **Query Store** to find queries that have regressed since an upgrade. The Query Store was introduced in SQL Server 2016 and QTA in SQL Server 2017, so SQL Server 2019 uses both these features. These tools are integrated into SQL Server Management Studio, and operate at the database level.
+The Query Tuning Assistant (QTA) depends on the data in the **Query Store** to find queries that have regressed since an upgrade. The Query Store was introduced in SQL Server 2016, and QTA was introduced in SQL Server 2017, so SQL Server 2019 uses both these features. These tools are integrated into SQL Server Management Studio, and operate at the database level.
 
 The Query Store can gather data for any database version on an instance of SQL Server 2019, as can QTA. This feature enables you to collect metrics on older database versions before you upgrade. The compatibility level of the database on the instance determines the version. The version then determines which cardinality estimator is used. The cardinality estimator predicts how many rows a query is likely to return.
 
@@ -14,7 +14,7 @@ QTA uses the baseline and observed query performance data for a database measure
 
 ## QTA and Automatic Plan Correction (APC)
 
-When SQL Server runs a query, it analyzes possible plans that could be used to execute the Transact-SQL (T-SQL). Plans for queries that were successfully executed are cached for reuse when the query is executed again. SQL Server picks the optimal plan for the query and uses it until a circumstance forces it to pick a new one. For example, when the database engine recompiles the plan, an index is added or removed, or statistics are changed. It's not always the case that the new plan is an improvement on the old one. You can run the following command to look for queries that have a regressed plan:
+When SQL Server runs a query, it analyzes possible plans that could be used to execute the Transact-SQL (T-SQL). Plans for queries that were successfully executed are cached for reuse when the query is executed again. SQL Server picks the optimal plan for the query and uses it until a circumstance forces it to pick a new one; for example, when the database engine recompiles the plan, an index is added or removed, or statistics are changed. It's not always the case that the new plan is an improvement on the old one. You can run the following command to look for queries that have a regressed plan:
 
 ```sql
 SELECT * FROM sys.dm_db_tuning_recommendations

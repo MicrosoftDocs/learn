@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.challenge-project-building-augmented-reality-app-hololens-two
+metadata:
+  title: Challenge project - Building an Augmented Reality app for HoloLens 2
+  description: This module is a challenge project where you'll build an Augmented Reality app for HoloLens 2. It will guide a developer on how to build an app end-to-end with help from looking at an existing sample.
+  ms.date: 7/25/2023
+  author: tholewis
+  ms.author: tholewis
+  ms.topic: module-challenge-project # Please don't edit, used for our analytics
+  ms.prod: hololens
+title: Challenge project - Building an Augmented Reality app for HoloLens 2
+summary: Take a guided tour with the help of a sample app to build an app end-to-end.
+abstract: |
+  In this module, you'll demonstrate your ability to:
+    - Understand the fundamentals of mixed reality and its applications.
+    - Gain knowledge of HoloLens 2 hardware and software.
+    - Develop proficiency in 3D spatial mapping and tracking.
+    - Learn to implement gesture recognition and spatial sound.
+    - Acquire skills in designing user interfaces for MR applications.
+    - Apply advanced MR development techniques using HoloLens 2.
+    - Demonstrate the ability to develop a functional HoloLens 2 application through an end-to-end project.
+    - Understand the fundamentals needed for a project document for your prototype.
+prerequisites: |
+  - "[Introduction to Mixed Reality (optional)](/training/modules/intro-to-mixed-reality/)"
+iconUrl: /learn/achievements/challenge-project-building-augmented-reality-app-hololens-two.svg
+levels: 
+  - beginner
+roles: 
+  - developer
+  - higher-ed-educator
+  - student
+products: 
+  - hololens
+
+units:
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.introduction
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.application-description-and-storyboarding
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.design-and-environmental-considerations
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.accessibility-and-privacy-considerations
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.development-workflow-and-app-prototype
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.knowledge-check
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.summary
+
+badge:
+  uid: learn.challenge-project-building-augmented-reality-app-hololens-two.badge

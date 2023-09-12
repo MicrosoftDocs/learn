@@ -4,10 +4,9 @@ metadata:
   title: Introduction to Cloud for Everyone
   description: Introduction to Cloud for Everyone
   ms.date: 04/25/2023
-  author: PhilStollery
-  ms.author: tinaes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to Cloud for Everyone
 summary: Learn about Cloud for Everyone.
 abstract: | 

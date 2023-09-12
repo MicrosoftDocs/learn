@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: microsoft-365-security
+  ms.subservice: mde
 title: Configure and manage automation using Microsoft Defender for Endpoint
 summary: Learn how to configure automation in Microsoft Defender for Endpoint by managing environmental settings.
 abstract: |

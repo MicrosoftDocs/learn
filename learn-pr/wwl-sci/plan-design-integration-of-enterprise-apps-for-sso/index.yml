@@ -3,16 +3,15 @@ uid: learn.wwl.plan-design-integration-of-enterprise-apps-for-sso
 metadata:
   title: Plan and design the integration of enterprise apps for SSO
   description: "Enterprise app deployment enables control over which users can access the apps, easily log into apps with single-sign-on, and provide integrated usage reports."
-  ms.date: 02/07/2023
+  ms.date: 05/15/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Plan and design the integration of enterprise apps for SSO
 summary: Enterprise app deployment enables control over which users can access the apps, easily log into apps with single-sign-on, and provide integrated usage reports.
 abstract: |
-  By the end of this module, you will be able to:
-  - Discover apps by using Microsoft Defender for Cloud Apps or Active Directory Federation Services app report.
+  By the end of this module, you'll be able to:
+  - Discover apps by using MCAS or ADFS app report.
   - Design and implement access management for apps.
   - Design and implement app management roles.
   - Configure pre-integrated (gallery) SaaS apps.
@@ -28,7 +27,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-domain
 - azure-api-apps
 - defender-for-cloud-apps
 - entra

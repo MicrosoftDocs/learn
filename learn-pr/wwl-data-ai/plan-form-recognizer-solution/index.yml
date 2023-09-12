@@ -1,30 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-form-recognizer-solution
 metadata:
-  title: Plan a Form Recognizer solution
+  title: Plan an Azure AI Document Intelligence solution
   description: "Learn how to use Azure Forms Analyzer to build solutions that analyze forms and output data for storage or further processing."
   ms.date: 09/16/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Plan a Form Recognizer solution
+  ms.service: applied-ai-services 
+  ms.subservice: forms-recognizer 
+title: Plan an Azure AI Document Intelligence solution
 summary: Learn how to use Azure Forms Analyzer to build solutions that analyze forms and output data for storage or further processing.
 abstract: |
   In this module, you will learn to:
-  -	Describe the components of a Form Recognizer solution.
-  -	Create and connect to Form Recognizer resources in Azure.
+  -	Describe the components of an Azure AI Document Intelligence solution.
+  -	Create and connect to Azure AI Document Intelligence resources in Azure.
   -	Choose whether to use a prebuilt, custom, or composed model.
 prerequisites: |
-  - Basic understanding of Form Recognizer
+  - Basic understanding of Azure AI Document Intelligence
 iconUrl: /training/achievements/plan-form-recognizer-solution.svg
 levels:
 - intermediate
 roles:
 - ai-engineer
 products:
-- azure-cognitive-services
-- azure-form-recognizer
+- document-intelligence
+- ai-services
 subjects:
 - artificial-intelligence
 units:

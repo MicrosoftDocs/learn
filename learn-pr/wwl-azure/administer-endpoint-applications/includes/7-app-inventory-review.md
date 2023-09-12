@@ -1,5 +1,6 @@
 
-Intune provides several ways to monitor the compliance status of the apps that you've assigned to users or device in the **Apps** blade in the Endpoint Manager admin center. You can also find information about all assigned apps and determine which version of a given app that you've deployed. The following pages provide that information:
+
+Intune provides several ways to monitor the compliance status of the apps that you've assigned to users or device in the **Apps** blade in the Microsoft Intune admin center. You can also find information about all assigned apps and determine which version of a given app that you've deployed. The following pages provide that information:
 
  -  **Apps** > **Overview** page
     

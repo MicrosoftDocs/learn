@@ -4,8 +4,8 @@ metadata:
   title: Introduction
   description: In this unit, you'll learn about a business scenario that requires a robust, geographically distributed application architecture.
   ms.date: 11/07/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

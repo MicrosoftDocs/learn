@@ -4,64 +4,60 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/03/2023
+  ms.date: 06/09/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
-  - content: "What's the best replication option for Azure virtual machine backups?"
+  - content: "What replication option would be best for the Azure virtual machine backups?"
     choices:
+    - content: "Azure Site Recovery"
+      isCorrect: true
+      explanation: "Correct. Azure Site Recovery is designed to provide continuous replication to a secondary region."
     - content: "Azure Backup"
       isCorrect: false
       explanation: "Incorrect. Azure Backup is designed to provide scheduled backups to a storage vault."
-    - content: "Azure Site Recovery"
-      isCorrect: true
-      explanation: "Correct. Azure Site Recovery is designed to provide continuous replication to a secondary region."      
     - content: "Active geo-replication"
       isCorrect: false
-      explanation: "Incorrect. Active geo-replication refers to Azure SQL Database solutions."
-
-  - content: "Which backup solution is ideal for on-premises virtual machines?"
+      explanation: "Incorrect. Active geo-replication refers to database solutions."
+  - content: "What backup solution is best for the on-premises virtual machines?"
     choices:
     - content: "Azure Site Recovery"
       isCorrect: false
       explanation: "Incorrect. Azure Site Recovery is designed to provide replication to a secondary region."
-    - content: "Active geo-replication"
-      isCorrect: false
-      explanation: "Incorrect. Active geo-replication refers to Azure SQL Database solutions."
     - content: "Azure Backup"
       isCorrect: true
-      explanation: "Correct. Azure Backup can protect on-premises virtual machines."      
-
-  - content: "What solution can you implement to meet the Azure SQL Database requirement?"
-    choices:
+      explanation: "Correct. Azure Backup can protect on-premises virtual machines."
     - content: "Active geo-replication"
+      isCorrect: false
+      explanation: "Incorrect. Active geo-replication refers to database solutions."
+  - content: "What solution would be best for the Azure SQL database requirement?"
+    choices:
+    - content: "Azure Site Recovery"
+      isCorrect: false
+      explanation: "Incorrect. Azure Site Recovery is designed to provide replication to a secondary region."
+    - content: "Azure Backup"
+      isCorrect: false
+      explanation: "Incorrect. Azure Backup isn’t used for databases unless the databases are running on virtual machines."
+    - content: "Active geo-replication."
       isCorrect: true
       explanation: "Correct. Active geo-replication can fail over to a secondary database if your primary database fails or needs to be taken offline."
-    - content: "Azure Site Recovery"
-      isCorrect: false
-      explanation: "Incorrect. Azure Site Recovery is designed to provide replication to a secondary region."
-    - content: "Azure Backup"
-      isCorrect: false
-      explanation: "Incorrect. Azure Backup isn't used for databases unless the databases run on virtual machines."
-
-  - content: "How can you address the concern about accidental data deletion?"
+  - content: "‎To address the company’s concern with accidental data deletion, which of these solutions is best?"
     choices:
     - content: "Enable disk caching"
       isCorrect: false
       explanation: "Incorrect. Disk caching is about optimizing read and write access to the VHD files."
     - content: "Enable soft delete"
       isCorrect: true
-      explanation: "Correct. The soft delete feature lets you specify a retention period. The data is retained during the retention period and can be recovered."
+      explanation: "Correct. With soft delete you can specify a retention period. The data is retained during the retention period and can be recovered."
     - content: "Add a resource lock to the storage account"
       isCorrect: false
-      explanation: "Incorrect. Resource locks prevent resources from being accidentally deleted or changed. The lock doesn't help with restoring data."
+      explanation: "Incorrect. Resource locks prevent resources from being accidentally deleted or changed. The lock won't help with restoring data."

@@ -3,11 +3,11 @@ uid: learn.wwl.troubleshoot-network-security-issues
 metadata:
   title: Troubleshoot network security issues with Microsoft Azure
   description: "Troubleshoot network issues revolving around WAF, NSG, Azure Firewall, latency within a virtual network. AZ720 AZ-720 az-720 networking"
-  ms.date: 08/04/2022
-  author: wwlpublish
-  ms.author: lola
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Troubleshoot network security issues with Microsoft Azure
 summary: Troubleshoot network issues revolving around WAF, NSG, Azure Firewall, latency within a virtual network.
 abstract: |
@@ -33,7 +33,7 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-domain
+- entra
 - azure-cdn
 - azure-firewall
 - azure-firewall-manager

@@ -1,3 +1,4 @@
+
 How do you measure the quality of your release process? The quality of your release process can't be measured directly because it's a process. What you can measure is how well your process works.
 
 If your release process constantly changes, it might indicate something wrong with the process. If your releases continuously fail, and you regularly must update your release process to make it work, it might also suggest that something is wrong with your release process.

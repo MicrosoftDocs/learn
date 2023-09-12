@@ -7,6 +7,8 @@ metadata:
   author: tejaswikolli
   ms.author: tejaswikolli
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Exercise - Deploy images from Azure Container Registry
 durationInMinutes: 20

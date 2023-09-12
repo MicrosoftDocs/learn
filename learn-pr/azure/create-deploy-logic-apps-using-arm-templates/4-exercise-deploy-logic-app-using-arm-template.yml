@@ -8,7 +8,9 @@ metadata:
   author: ecfan
   ms.author: estfan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-arm-template
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 8
 interactive: bash

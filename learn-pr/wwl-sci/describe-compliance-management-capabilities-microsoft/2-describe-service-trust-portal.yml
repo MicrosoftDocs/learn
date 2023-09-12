@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-compliance-management-capabilities-microsoft.describe-offerings-of-service-trust-portal
-title: Describe the Service Trust Portal
+title: Describe the offerings of the Service Trust portal
 metadata:
-  title: Describe the Service Trust Portal
-  description: "Describe the Service Trust Portal"
-  ms.date: 02/09/2023
+  title: Describe the offerings of the Service Trust portal
+  description: "Describe the offerings of the Service Trust portal"
+  ms.date: 06/27/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial

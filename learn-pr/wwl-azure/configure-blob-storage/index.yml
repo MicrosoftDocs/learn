@@ -3,11 +3,11 @@ uid: learn.wwl.configure-blob-storage
 metadata:
   title: Configure Azure Blob Storage
   description: "Learn how to configure Azure Blob Storage, including tiers and object replication."
-  ms.date: 03/27/2023
+  ms.date: 05/09/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-blob-storage
 title: Configure Azure Blob Storage
 summary: Learn how to configure Configure Azure Blob Storage, including tiers and object replication.
 abstract: |

@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: content-moderator
 abstract: | 
   In this module, you'll:
   - Learn what text content moderation is.
@@ -26,7 +27,7 @@ roles:
 products: 
 - azure
 - azure-sdks
-- azure-cognitive-services
+- ai-services
 subjects:
 - classification-analysis
 units:

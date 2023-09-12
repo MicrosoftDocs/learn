@@ -8,7 +8,7 @@ metadata:
   author: pplavetzki
   ms.author: paplavet
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-kubernetes-service
 title: Scale container applications in Azure Kubernetes Services using KEDA
 summary: Scale a containerized application hosted on Azure Kubernetes Services (AKS) using event driven scaling using KEDA.
 abstract: | # user input: learning objectives (https://review.learn.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)

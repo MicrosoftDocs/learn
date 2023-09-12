@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-what-is
-title: Describe Azure Active Directory
+title: Describe Microsoft Entra ID
 metadata:
-  title: Describe Azure Active Directory
-  description: "Describe Azure Active Directory"
-  ms.date: 02/07/2023
+  title: Describe Microsoft Entra ID
+  description: "Describe Microsoft Entra ID"
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial

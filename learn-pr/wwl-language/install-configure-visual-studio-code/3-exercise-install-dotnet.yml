@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-visual-studio-code.exercise-install-dotnet
+title: Exercise - Install the .NET SDK
+metadata:
+  title: Exercise - Install the .NET SDK
+  description: "Exercise - Install the .NET SDK"
+  ms.date: 08/23/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
+  ms.prod: vs-code
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-install-dotnet.md)]

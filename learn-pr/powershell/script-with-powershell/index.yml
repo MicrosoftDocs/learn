@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Introduction to scripting in PowerShell
 summary: This module introduces you to scripting with PowerShell. It introduces various concepts to help you create script files and make them as robust as possible.

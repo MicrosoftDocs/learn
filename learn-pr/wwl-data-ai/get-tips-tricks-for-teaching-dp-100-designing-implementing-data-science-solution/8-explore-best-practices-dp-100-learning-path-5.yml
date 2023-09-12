@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-5
+title: 'Explore the best practices for DP-100: Designing and implementing a data science solution on Azure learning path 5'
+metadata:
+  title: 'Explore the best practices for DP-100: Designing and implementing a data science solution on Azure learning path 5'
+  description: "Explore the best practices for DP-100: Designing and implementing a data science solution on Azure learning path 5"
+  ms.date: 09/07/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-explore-best-practices-dp-100-learning-path-5.md)]

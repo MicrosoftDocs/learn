@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/06/2023
+  ms.date: 09/01/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -26,17 +25,6 @@ quiz:
     - content: "8 GB"
       isCorrect: false
       explanation: "Incorrect. This amount of RAM isn't the minimum needed to install or upgrade to Windows 11. Try again."
-  - content: "Which of the following versions of Windows 10 and later is designed to run a single app on fixed purpose devices, such as automated teller machines, point-of-sale terminals, and industrial and medical devices?"
-    choices:
-    - content: "IoT Core edition"
-      isCorrect: true
-      explanation: "Correct. The IoT Edition of Windows is designed for fixed purpose devices, such as automated teller machines, point-of-sale terminals, and industrial and medical devices. Windows 10 IoT Core is a smaller OS designed to run a single app, while Windows 10/11 IoT Enterprise is a full version of Windows Enterprise with specialized features."
-    - content: "Pro for Workstations"
-      isCorrect: false
-      explanation: "Incorrect. Pro for Workstations edition offers the same features as Pro edition. It includes additional features intended for workloads that require higher performance and resilience. It's not designed for fixed purpose devices running a single app. Try again."
-    - content: "IoT Enterprise edition"
-      isCorrect: false
-      explanation: "Incorrect. While the IoT Enterprise edition is designed for fixed purpose devices, it's a full version of Windows Enterprise with specialized features. Try again."
   - content: "Fabrikam is a large Microsoft Volume License customer with a complex IT infrastructure. From a device management perspective, its IT department wants to choose the pace at which it adopts new technology for user devices. It also requires a broad range of options for operating system deployment and device and app management. Which of the following Windows 10/11 editions allows Fabrikam to meet these IT requirements?"
     choices:
     - content: "Pro edition"
@@ -59,14 +47,14 @@ quiz:
     - content: "Windows 10 Enterprise only"
       isCorrect: false
       explanation: "Incorrect. Windows 10 Enterprise isn't the only version of Windows that supports the ability to join Azure Active Directory. Try again."
-  - content: "You're the IT Support professional for Contoso, a large enterprise organization that's a Microsoft Volume License customer. Contoso needs to deploy a set of Windows 11 computers for an isolated office that won't be managed for at least six months. Which of the following Windows 11 editions would be the best to deploy given Contoso's requirements?"
+  - content: "You're the IT Support professional for Contoso, a large enterprise organization that's a Microsoft Volume License customer. Contoso needs to deploy a set of Windows 11 computers for an isolated office that won't be managed for at least six months. Given Contoso's requirements, which of the following Windows 11 editions would be the most suitable for deployment?"
     choices:
     - content: "Pro edition"
       isCorrect: false
-      explanation: "Incorrect. The Pro edition is available to everyone and not just Volume License customers. It's also targeted to small and mid-sized businesses rather than large enterprises, such as Contoso. Try again."
-    - content: "Enterprise edition"
+      explanation: "incorrect choice"
+    - content: "Home edition"
       isCorrect: false
-      explanation: "Incorrect. While Enterprise edition is targeted too large enterprise organizations and is available to Volume License customers, it's not the recommended solution for organizations with restrictive change requirements such as Contoso. Try again."
-    - content: "Enterprise LTSC edition"
+      explanation: "incorrect choice"
+    - content: "Enterprise edition"
       isCorrect: true
-      explanation: "Correct. The Enterprise LTSC edition is available to Volume License customers. What differentiates it from the Enterprise edition is that Enterprise LTSC is designed not just for large enterprise organizations, but for organizations with restrictive change requirements. Since this version does not receive feature updates, it would be the best solution for Contoso's isolated office that won't be managed for at least six months."
+      explanation: "correct choice"

@@ -4,11 +4,11 @@ title: What is Anomaly Detector?
 metadata:
   title: What is Anomaly Detector?
   description: "Anomaly Detector is a part of the Decision Services category within Azure Cognitive Services. It is a cloud-based service that enables you to monitor time series data, and to detect anomalies in that data."
-  ms.date: 02/01/2023
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

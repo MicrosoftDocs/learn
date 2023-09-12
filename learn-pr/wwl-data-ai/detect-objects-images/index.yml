@@ -5,14 +5,15 @@ metadata:
   description: "Detect objects in images"
   ms.date: 09/17/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: custom-vision
 title: Detect objects in images
-summary: Object detection is used to locate and identify objects in images. You can use Custom Vision to train a model to detect specific classes of object in images.
+summary: Object detection is used to locate and identify objects in images. You can use Azure AI Custom Vision to train a model to detect specific classes of object in images.
 abstract: |
   After completing this module, you will be able to:
-  - Provision Azure resources for Custom Vision
+  - Provision Azure resources for Azure AI Custom Vision
   - Understand object detection
   - Train an object detector
   - Consider options for labeling images
@@ -28,7 +29,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
+- ai-services
 - azure-custom-vision
 subjects:
 - artificial-intelligence

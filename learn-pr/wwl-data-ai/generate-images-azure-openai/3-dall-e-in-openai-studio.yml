@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-images-azure-openai.dall-e-in-openai-studio
+title: Explore DALL-E in Azure OpenAI Studio
+metadata:
+  title: Explore DALL-E in Azure OpenAI Studio
+  description: "Use the playground in Azure OpenAi Studio to explore DALL-E image generation"
+  ms.date: 6/14/2023
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: openai
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-dall-e-in-openai-studio.md)]

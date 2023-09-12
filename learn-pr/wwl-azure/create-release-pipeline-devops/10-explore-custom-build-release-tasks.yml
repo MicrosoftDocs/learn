@@ -4,13 +4,13 @@ title: Explore custom build and release tasks
 metadata:
   title: Explore custom build and release tasks
   description: "Explore custom build and release tasks"
-  ms.date: 12/09/2022
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.prod: azure
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
+durationInMinutes: 3
 content: |
   [!include[](includes/10-explore-custom-build-release-tasks.md)]

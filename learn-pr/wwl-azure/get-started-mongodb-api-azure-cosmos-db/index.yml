@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
+  ms.subservice: mongodb
 title: Get started with the MongoDB API in Azure Cosmos DB
 summary: This Module will introduce Azure Cosmos DB for MongoDB accounts. It will help you get started, create your first objects and connect to your account.
 abstract: |

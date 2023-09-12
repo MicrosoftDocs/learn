@@ -1,7 +1,3 @@
-
-
-
-
 In this exercise, you'll develop the code that automatically assigns a student's letter grade based on their final numeric score and you'll update the application so that extra credit project scores are factored into the student's final grade. You will begin by writing an `if-elseif-else` construct that can be used to evaluate the student's numeric score and assign the letter grade. Next, you'll examine the application requirements related to extra credit work, and then work your way through the required code updates. The detailed tasks that you'll complete during this exercise are:
 
 1. Develop an `if-elseif-else` construct that evaluates the student's score to assign a letter grade. The expression that's evaluated compares the student's numeric score with a range of scores taken from a grading chart provided by the teacher.  
@@ -25,7 +21,7 @@ In this task, you'll develop an `if-elseif-else` structure that can be used to a
     string currentStudentLetterGrade = "";
     ```
 
-1. Scroll down to the bottom or the Program.cs file.
+1. Scroll down to the bottom of the Program.cs file.
 
 1. Add a blank code line below the line that assigns a calculated value to `currentStudentGrade`.
 
@@ -126,8 +122,6 @@ In this task, you'll develop an `if-elseif-else` structure that can be used to a
     Your Program.cs code should match the following code:
 
     ```csharp
-    Using System;
-    
     // initialize variables - graded assignments
     int currentAssignments = 5;
     
@@ -414,7 +408,7 @@ You will be using these extra credit scores and the application requirements pro
 
     ```csharp
     // add the extra credit points to the sum - bonus points equal to 10% of an exam score
-    sumAssignmentScores += (decimal)score / 10;    
+    sumAssignmentScores += score / 10;    
     ```
 
 1. On the Visual Studio Code **File** menu, click **Save**.
@@ -424,8 +418,6 @@ You will be using these extra credit scores and the application requirements pro
     Ensure that your updated application matches the following code:
 
     ```csharp
-    Using System;
-    
     // initialize variables - graded assignments
     int examAssignments = 5;
     
@@ -481,7 +473,7 @@ You will be using these extra credit scores and the application requirements pro
     
             else
                 // add the extra credit points to the sum - bonus points equal to 10% of an exam score
-                sumAssignmentScores += (decimal)score / 10;
+                sumAssignmentScores += score / 10;
         }
     
         currentStudentGrade = (decimal)(sumAssignmentScores) / examAssignments;
