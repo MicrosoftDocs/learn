@@ -1,6 +1,6 @@
 Instead of creating SASs individually, each with its own access permissions and expiration dates, you can associate them with a stored access policy. Changing the policy affects all the SASs associated with it.
 
-You now know there's a better way to create and manage your company's SASs. You can update your new test pages to use stored access policies.
+Now that you know there's a better way to create and manage your company's SASs. You can update your new test pages to use stored access policies.
 
 In this exercise, you update your web app to create SASs with stored access policies. Then you use Azure CLI commands to change the policies and test that access is revoked.
 

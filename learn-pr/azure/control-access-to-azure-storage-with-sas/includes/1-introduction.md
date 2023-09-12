@@ -4,7 +4,7 @@ You work for a healthcare organization that stores patient diagnostic images in 
 
 In this module, you explore the options available to authorize access to your Azure storage, focusing on SAS and its different variants. You deploy a web app that uses a storage account, and you enhance the web app to use a SAS.
 
-After you finish this module, you'll have a web app that uses multiple SASs that are associated with a stored access policy. You'll see how patient images are only accessible by using a SAS. Then you'll revoke access by updating the stored access policy.
+After you finish this module, you'll have a web app that uses multiple SASs that are associated with a stored access policy. The web app shows how patient images are only accessible by using a SAS, and how you can revoke access by updating the stored access policy.
 
 ## Learning objectives
 
