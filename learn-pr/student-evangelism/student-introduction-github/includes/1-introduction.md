@@ -2,7 +2,7 @@ In the present landscape of software development, version control plays a pivota
 
 ## What will I learn?
 
-By the conclusion of this module, you are able to:
+By the conclusion of this module, you'll be able to:
 
 - Grasp the purpose and significance of version control.
 - Comprehend the core principles of Git, a distributed version control system, encompassing vital concepts such as repositories, commits, branches, and merging within Git.

@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-intro-to-product
   ms.custom: team=nextgen
 title: Tooling, Git and GitHub products
-summary: "This module provides an overview of Git and GitHub, version control, and provides step-by-step guidance for performing basic tasks in GitHub."
+summary: "This module provides an overview of Git, GitHub, and version control. It provides step-by-step guidance for performing basic tasks in GitHub."
 abstract: |
   By the end of this module, you'll be able to:
   - Grasp the purpose and significance of version control.

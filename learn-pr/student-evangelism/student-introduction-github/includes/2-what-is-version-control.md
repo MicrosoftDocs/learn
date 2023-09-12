@@ -16,11 +16,11 @@ Before we explore what they learned, let's briefly define key terms in Git and G
 | **Commit**            | A commit is a snapshot of the changes you've made to your files in the repository at a specific point in time. Each commit has a unique identifier and a commit message explaining the changes.                          |
 | **Branch**            | A branch is a parallel version of the main project. It allows you to work on new features or bug fixes without affecting the main codebase. You can later merge the changes from the branch back into the main codebase. |
 | **Clone**             | To clone a repository means to make a copy of the entire repository on your local machine. Cloning enables you to work on the project and contribute to it without directly modifying the original repository.              |
-| **Pull/Pull Request** | A pull request is a request to merge the changes you made in your local branch to the main branch of the repository. It allows others to review your code before incorporating it into the main project.                 |
+| **Pull Request/PR** | A pull request is a request to merge the changes you made in your local branch to the main branch of the repository. It allows others to review your code before incorporating it into the main project.                 |
 | **Push**              | Pushing refers to sending your committed changes from your local repository to the remote repository in GitHub. Pushing to the remote repository makes your changes available to other team members.                                            |
 | **Merge**             | Merging is the process of combining the changes from one branch (for example, a feature branch) into another branch (for example, the main branch).                                                                                    |
 | **Conflict**          | A conflict occurs when Git is unable to automatically merge changes from different branches. Conflicts require manual intervention to resolve conflicting changes.                                                             |
-| **Fork**              | Forking is creating a copy of someone else's repository into your GitHub account. Forking a repository allows you to freely experiment with changes without affecting the original project.                                              |
+| **Fork**              | Forking is creating a copy of someone else's repository in your GitHub account. Forking a repository allows you to freely experiment with changes without affecting the original project.                                              |
 | **Pull/Fetch**        | Pulling or fetching means getting the latest changes from the remote repository to your local repository.                                                                                                                |
 
 Armed with these newfound concepts, our developer discovered a pathway to optimize their individual projects, fostering enhanced efficiency and productivity.
@@ -42,6 +42,6 @@ Armed with these newfound concepts, our developer discovered a pathway to optimi
 
 Embracing version control, especially utilizing the robust capabilities of GitHub, unlocks the potential to avoid the hurdles that come with individual project management. By embracing this streamlined solution, you can elevate your workflow, maintain a comprehensive record of changes, and significantly bolster your work efficiency.
 
-To learn more about GitHub, see the [Introduction to GitHub](../../../github/introduction-to-github/index.yml) Microsoft Learn module or the [Getting started with GitHub](https://docs.github.com/en/get-started) help documentation.
+To learn more about GitHub, see the [Introduction to GitHub](../../../github/introduction-to-github/index.yml) Microsoft Learn module or the [Getting started with GitHub](https://docs.github.com/en/get-started) documentation.
 
 The next step is to try out Git for yourself!
