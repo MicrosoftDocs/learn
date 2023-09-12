@@ -8,7 +8,7 @@ Models don’t train themselves. They're trained using data plus two pieces of c
 
 The objective is what we want the model to be able to do. For example, the objective of our scenario is to be able to estimate a dog’s boot size based on their harness size.
 
-So that a computer can understand our objective, we need to provide our goal as a code snippet called an objective function (also known as a cost function). Objective functions judge whether the model is doing a good job (estimating boot size well) or bad job (estimating boot size badly). We cover objective functions in more depth in later learning material.
+For a computer to understand our objective, we need to provide our goal as a code snippet called an *objective function* (also known as a *cost function*). Objective functions judge whether the model is doing a good job (estimating boot size well) or bad job (estimating boot size badly). We cover objective functions in more depth in later learning material.
 
 ## The data
 

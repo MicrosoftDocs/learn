@@ -8,11 +8,11 @@ Using a model means providing inputs and receiving an estimation or prediction. 
 
 ![Diagram showing a machine learning model with data going into the model, which then moves to an estimate.](../media/1-6-a.png)
 
-By contrast, training a model is the process of improving how well a model works. Training requires that we use the model, the objective function, and the optimizer, in a special loop. Training can take minutes or days to complete. Usually, we only train a model once. Once it's trained, we can use it as many times as we like without making further changes.
+In contrast, training a model is the process of improving how well a model works. Training requires that we use the model, the objective function, and the optimizer, in a special loop. Training can take minutes or days to complete. Usually, we only train a model once. Once it's trained, we can use it as many times as we like without making further changes.
 
-![Diagram showing the final training figure showing the machine learning model lifecycle.](../media/1-6-b.png)
+![Diagram of the final training, showing the machine learning model lifecycle.](../media/1-6-b.png)
 
-For example, in our avalanche-rescue dog store scenario, we want to train a model using a public dataset. The dataset changes the model so that it can predict a dog’s boot size based on its harness size. Once our model is trained, we use the model as part of our online store to make sure customers are buying doggy boots that fit their dogs.
+For example, in our avalanche-rescue dog store scenario, we want to train a model, using a public dataset. The dataset changes the model so that it can predict a dog’s boot size based on its harness size. Once our model is trained, we use the model as part of our online store to make sure customers are buying doggy boots that fit their dogs.
 
 ## Data for use, data for training
 
