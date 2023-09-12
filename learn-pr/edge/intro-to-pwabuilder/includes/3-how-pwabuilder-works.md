@@ -1,4 +1,4 @@
-﻿PWABuilder simplifies the PWA creation process with its step-by-step workflow:
+﻿[PWABuilder](https://aka.ms/pwa/mslearn/data) simplifies the PWA creation process with its step-by-step workflow:
 1. **Analyze:** Enter the URL of your website or web app, and PWABuilder will analyze it for PWA compatibility. It will generate a report with suggestions and best practices to improve your PWA readiness. For example, the report might recommend adding a high-resolution icon for your app or suggest implementing a caching strategy for offline functionality.
 1. **Generate:** PWABuilder will create the app manifest and service worker files tailored to your website. You can review and modify these files to ensure they meet your requirements.
 1. **Customize:** Use the PWABuilder interface to customize your PWA's appearance, behavior, and settings. You can modify icons, theme colors, display options, and more, ensuring your PWA aligns with your brand identity.

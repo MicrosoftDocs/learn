@@ -1,4 +1,4 @@
-﻿Before diving into [PWABuilder](https://www.pwabuilder.com/), let's look at what PWA is and its features and benefits. Progressive Web Apps (PWAs) are a hybrid between platform-specific apps and web apps. They leverage modern web technologies to deliver app-like experiences on various devices while retaining the accessibility and low friction of the web. PWAs aim to bridge the gap between web and native app experiences, combining the best of both worlds.
+﻿Before diving into [PWABuilder](https://aka.ms/pwa/mslearn/data), let's look at what PWA is and its features and benefits. Progressive Web Apps (PWAs) are a hybrid between platform-specific apps and web apps. They leverage modern web technologies to deliver app-like experiences on various devices while retaining the accessibility and low friction of the web. PWAs aim to bridge the gap between web and native app experiences, combining the best of both worlds.
 
 ## Benefits of PWAs
 
@@ -15,11 +15,11 @@ PWAs offer several advantages over traditional web apps and native mobile apps:
 
 Utilizing the advantages of PWAs, Contoso EcoEmporium, the eco-friendly e-commerce company, aims to enhance the online shopping experience for its customers. Through cross-platform compatibility, they can efficiently cater to Windows, Android, and iOS users with a single codebase, eliminating the need for multiple native apps. This streamlined approach allows the company to focus on updates, ensuring customers can always access the latest features for a smooth shopping experience. The company can allocate more resources to sourcing and offering high-quality, eco-friendly products by reducing development and maintenance costs. Furthermore, the PWA's discoverability through search engines and social media allows a broader audience to access and share the platform, ultimately promoting sustainable shopping choices across the digital landscape.
 
-So, what is [PWABuilder](https://www.pwabuilder.com/)?
+So, what is [PWABuilder](https://aka.ms/pwa/mslearn/data)?
 
 :::image type="content" source="../media/2-pwa-homepage.png" alt-text="Screenshot displaying PWABuilder homepage." lightbox="../media/2-pwa-homepage.png":::
 
-To allow users to take advantage of PWAs, [PWABuilder](https://www.pwabuilder.com/) was created. It is an open-source, community-driven project developed by Microsoft that helps streamline the process of deploying Progressive Web Apps (PWAs). It offers a user-friendly interface and tools for generating the essential components of a PWA, such as the app manifest and service worker files, while providing guidance and best practices throughout the development process.
+To allow users to take advantage of PWAs, [PWABuilder](https://aka.ms/pwa/mslearn/data) was created. It is an open-source, community-driven project developed by Microsoft that helps streamline the process of deploying Progressive Web Apps (PWAs). It offers a user-friendly interface and tools for generating the essential components of a PWA, such as the app manifest and service worker files, while providing guidance and best practices throughout the development process.
 
 ## PWABuilder's purpose in simplifying the PWA creation process
 
