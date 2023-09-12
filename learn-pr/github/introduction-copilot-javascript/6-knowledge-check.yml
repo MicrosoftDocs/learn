@@ -24,7 +24,7 @@ quiz:
     - content: "GitHub Copilot uses radio language, that you type, and it provides suggestions based on what you type."
       isCorrect: false
       explanation: "GitHub Copilot doesn't use radio language."
-  - content: "Is GitHub Copilot Free?"
+  - content: "Is GitHub Copilot free?"
     choices:
     - content: "Yes, it's free for everyone."
       isCorrect: false
@@ -65,6 +65,6 @@ quiz:
     - content: "How well your extensions were installed."
       isCorrect: false
       explanation: "False. It doesn't depend on how well your extensions were installed."
-    - content: "how well you crafted your prompt."
+    - content: "How well you crafted your prompt."
       isCorrect: true
       explanation: "Designing an effective prompt is, therefore, crucial in ensuring we achieve our desired outcomes. You need to detail your prompt as much as possible."

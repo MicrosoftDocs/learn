@@ -4,7 +4,7 @@ title: |
   Introduction
 metadata:
   title: |
-    introduction
+    Introduction
   description: "GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code in JavaScript. You can receive suggestions from GitHub Copilot in JavaScript either by starting to write the code you want to use, or by writing a natural language comment describing what you want the code to do."
   ms.date: 8/23/2023
   author: abrilurena

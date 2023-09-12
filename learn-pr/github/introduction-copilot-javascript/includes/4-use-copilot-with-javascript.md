@@ -29,7 +29,7 @@ This last prompt is specific, clear and allows GitHub Copilot to understand the 
 
 Copilot supercharges your productivity but requires some good practices to ensure quality. Some best practices when using Copilot are:
 
-1. Keep your prompts simple then add more elaborate components as you keep going for example:
+Keep your prompts simple then add more elaborate components as you keep going for example:
 :
 ```text
 create an HTML form with a text field and button
