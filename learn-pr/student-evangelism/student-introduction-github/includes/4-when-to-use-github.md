@@ -6,7 +6,7 @@ Having learned how to create repositories in GitHub and upload your own projects
 
 As you embark on collaborative endeavors with your team using GitHub, it's crucial to explore the advanced features that can significantly enhance your collaborative development process. GitHub introduces concepts such as branching, project forking, issue creation, pull request (PR) submission, change merging, and conflict resolution. These tools not only streamline teamwork but also ensure the integrity and quality of your collective project. Let's delve into each concept to understand their practical applications.
 
-To illustrate the effectiveness of these GitHub features, let's consider an example workflow. You are a software developer aiming to enhance a piece of software by adding a new function. Your objective is to implement the function, ensure its functionality, and share your code changes seamlessly with your team.
+To illustrate the effectiveness of these GitHub features, let's consider an example workflow. You're a software developer aiming to enhance a piece of software by adding a new function. Your objective is to implement the function, ensure its functionality, and share your code changes seamlessly with your team.
 
 1. **Forking and cloning**:
    - You begin by forking your team member's GitHub repository to your own account, creating a personal copy.
@@ -16,7 +16,7 @@ To illustrate the effectiveness of these GitHub features, let's consider an exam
    - You implement the new function in your local repository, carefully coding and testing to meet the desired requirements.
 
 1. **Creating an issue**:
-   - You identify a potential issue or enhancement in the code and creates an issue on GitHub's repository to document it.
+   - You identify a potential issue or enhancement in the code and create an issue on GitHub's repository to document it.
 
 1. **Branching**:
    - You create a new branch using the `git checkout -b <branch-name>` command, allowing you to work on your new feature without affecting the main codebase.
@@ -30,7 +30,7 @@ To illustrate the effectiveness of these GitHub features, let's consider an exam
 
 1. **Collaboration and review**:
    - Your team reviews the PR, providing feedback and suggestions for improvement.
-   - You iterates on the code based on the feedback until it's ready for merging.
+   - You iterate on the code based on the feedback until it's ready for merging.
 
 1. **Merging changes**:
    - Once approved, the changes are merged into the main project using the GitHub interface or the `git merge` command.
