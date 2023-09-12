@@ -1,15 +1,15 @@
-﻿Before diving into PWABuilder, let's look at what PWA is and its features and benefits. Progressive Web Apps (PWAs) are a hybrid between platform-specific apps and web apps. They leverage modern web technologies to deliver app-like experiences on various devices while retaining the accessibility and low friction of the web. PWAs aim to bridge the gap between web and native app experiences, combining the best of both worlds.
+﻿Before diving into [PWABuilder](https://www.pwabuilder.com/), let's look at what PWA is and its features and benefits. Progressive Web Apps (PWAs) are a hybrid between platform-specific apps and web apps. They leverage modern web technologies to deliver app-like experiences on various devices while retaining the accessibility and low friction of the web. PWAs aim to bridge the gap between web and native app experiences, combining the best of both worlds.
 
 ## Benefits of PWAs
 
 PWAs offer several advantages over traditional web apps and native mobile apps:
- - Push Notifications: PWAs can send push notifications, similar to native apps, which is impossible with traditional web apps. This feature enhances user engagement and keeps users informed about updates or promotions. 
- - Offline Functionality: PWAs offer offline functionality or support for poor network connectivity, thanks to service workers, caching, and local storage features. In contrast, traditional web apps typically lack this level of offline support.
- - Installability: PWAs can be installed on a user's device, providing a native app-like experience. Unlike traditional web apps, which are accessed through a browser and cannot be installed directly on a device, PWAs offer an enhanced user experience.
  - Cross-platform compatibility: PWAs are built using web technologies, making them compatible with any platform that supports modern web standards. This reduces the need for platform-specific development and maintenance.
  - Easier updates: Since PWAs are delivered through the web, updates can be deployed quickly and easily without requiring users to download and install updates through an app store.
  - Lower development and maintenance costs: PWAs leverage a single codebase, reducing the cost and complexity of developing and maintaining separate native apps for different platforms.
- - Enhanced discoverability: PWAs can be found and accessed through search engines, social media, and other online channels, making it easier for users to discover and share your app.
+ - Enhanced discoverability: Because PWAs are web apps, they can be found and accessed through search engines, social media, and other online channels, making it easier for users to discover and share your app. On top of the web, PWAs can be deployed to app stores for different operating systems helping developers to reach even more users.
+ - Push Notifications: PWAs can send push notifications, similar to native apps, which is impossible with traditional web apps. This feature enhances user engagement and keeps users informed about updates or promotions. 
+ - Offline Functionality: PWAs offer offline functionality or support for poor network connectivity, thanks to service workers, caching, and local storage features. In contrast, traditional web apps typically lack this level of offline support.
+ - Installability: PWAs can be installed on a user's device, providing a native app-like experience. Unlike traditional web apps, which are accessed through a browser and cannot be installed directly on a device, PWAs offer an enhanced user experience.
 
 ## Analyze Contoso EcoEmporium's app needs
 
