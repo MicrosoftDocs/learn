@@ -50,6 +50,4 @@ To start creating a repository and explore the options for public and private re
 
 1. Use the command `git clone <repository URL>` to clone the repository to your local machine. For example: `git clone https://github.com/your-username/repository-name.git`
 
-Congrats, you have now created your own repository.
-
-Congratulation! You created a GitHub account, set up your profile, created a repository, and cloned the new repository to your local machine. This workflow establishes a solid foundation for collaborating and sharing code effectively using Git and GitHub.
+Congratulations! You created a GitHub account, set up your profile, created a repository, and cloned the new repository to your local machine. This workflow establishes a solid foundation for collaborating and sharing code effectively using Git and GitHub.
