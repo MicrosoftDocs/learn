@@ -2172,3 +2172,28 @@ achievements:
   title: Work with Data in Azure Machine Learning
   summary: Data is the foundation of machine learning. In this module, you will learn how to work with datastores and datasets in Azure Machine Learning, enabling you to build scalable, cloud-based model training solutions.
   iconUrl: /training/achievements/work-with-data-in-aml-badge.svg
+- uid: learn.data-ai.automate-model-selection-with-azure-automl.badge
+  type: badge
+  title: Automate machine learning model selection with Azure Machine Learning
+  summary: Learn how to use automated machine learning in Azure Machine Learning to find the best model for your data.
+  iconUrl: /training/achievements/automate-model-selection-with-azure-automl-badge.svg
+- uid: learn.data-ai.register-and-deploy-model-with-amls.badge
+  type: badge
+  title: Deploy real-time machine learning services with Azure Machine Learning
+  summary: Learn how to register and deploy ML models with the Azure Machine Learning service.
+  iconUrl: /training/achievements/register-and-deploy-model-with-amls-badge.svg
+- uid: learn.wwl.deploy-batch-inference-pipelines-with-azure-machine-learning.badge
+  type: badge
+  title: Deploy batch inference pipelines with Azure Machine Learning
+  summary: Machine learning models are often used to generate predictions from large numbers of observations in a batch process. To accomplish this, you can use Azure Machine Learning to publish a batch inference pipeline.
+  iconUrl: /training/achievements/deploy-batch-inference-pipelines-with-azure-machine-learning.svg
+- uid: learn.wwl.explore-differential-privacy.badge
+  type: badge
+  title: Explore differential privacy
+  summary: Data scientists have an ethical (and often legal) responsibility to protect sensitive data. Differential privacy is a leading edge approach that enables useful analysis while protecting individually identifiable data values.
+  iconUrl: /training/achievements/explore-differential-privacy.svg
+- uid: learn.wwl.tune-hyperparameters-with-azure-machine-learning.badge
+  type: badge
+  title: Tune hyperparameters with Azure Machine Learning
+  summary: Choosing optimal hyperparameter values for model training can be difficult, and usually involved a great deal of trial and error. With Azure Machine Learning, you can leverage cloud-scale experiments to tune hyperparameters.
+  iconUrl: /training/achievements/tune-hyperparameters-with-azure-machine-learning.svg
