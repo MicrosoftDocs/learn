@@ -1,4 +1,4 @@
-Machine-learning models are computer algorithms that use data to make estimations (educated guesses) or decisions. Machine-learning models differ from traditional algorithms in how they're designed. When normal computer software needs to be improved, people edit it. By contrast, *a machine-learning algorithm uses data to get better at a specific task*.
+Machine-learning models are computer algorithms that use data to make estimations (educated guesses) or decisions. Machine-learning models differ from traditional algorithms in how they're designed. When traditional computer software needs to be improved, people edit it. In contrast, a *machine-learning algorithm* uses data to get better at a specific task.
 
 For example, spam filters use machine learning. Twenty years ago, spam filters didn't have many examples to learn from and weren't good at identifying what is and isn’t spam. As more spam has arrived and been labeled as junk by human users, the machine-learning algorithms have gained more experience and become better at their job.
 
