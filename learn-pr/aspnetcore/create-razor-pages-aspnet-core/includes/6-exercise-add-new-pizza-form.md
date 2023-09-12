@@ -16,7 +16,7 @@ Let's start by adding properties to the `PizzaListModel` class to represent the 
     - A property named `NewPizza` is added to the `PizzaListModel` class.
         - `NewPizza` is a `Pizza` object.
     - The `BindProperty` attribute is applied to the `NewPizza` property.
-        - The `BindProperty` attribute is used to bind the `NewPizza` property to the Razor Page. When an HTTP POST request is made, the `NewPizza` property will be populated with the user's input.
+        - The `BindProperty` attribute is used to bind the `NewPizza` property to the Razor page. When an HTTP POST request is made, the `NewPizza` property will be populated with the user's input.
     - The `NewPizza` property is initialized to `default!`.
         - The `default!` keyword is used to initialize the `NewPizza` property to `null`. This prevents the compiler from generating a warning about the `NewPizza` property being uninitialized.
 
@@ -39,7 +39,7 @@ Let's start by adding properties to the `PizzaListModel` class to represent the 
     In the preceding code:
 
     - The `ModelState.IsValid` property is used to determine if the user's input is valid.
-        - The validation rules are inferred from attributes (such as `Required` and `Range`) on the `Pizza` class in*Models\Pizza.cs*.
+        - The validation rules are inferred from attributes (such as `Required` and `Range`) on the `Pizza` class in *Models\Pizza.cs*.
         - If the user's input is invalid, the `Page` method is called to re-render the page.
     - The `NewPizza` property is used to add a new pizza to the `_service` object.
     - The `RedirectToAction` method is used to redirect the user to the `Get` page handler, which will re-render the page with the updated list of pizzas.
@@ -88,10 +88,10 @@ Now that there's a page handler to handle the form submission, let's add the for
     In the preceding code:
 
     - The `asp-validation-summary` attribute is used to display validation errors for the entire model.
-    - Each form field (`<input>` and `<select>` elements) and `<label>` is bound to the `NewPizza` property using the `asp-for` attribute.
-    - The `asp-validation-for` attribute is used to display validation errors for each form field.
+    - Each form field (`<input>` and `<select>` elements) and each `<label>` is bound to the corresponding `NewPizza` property using the `asp-for` attribute.
+    - The `asp-validation-for` attribute is used to display any validation errors for each form field.
     - The `@Html.DisplayNameFor` method is used to display the display name for the `IsGlutenFree` property. This is a Razor helper method that's used to display the display name for a property. Doing the label this way ensures that the checkbox is selected when the user clicks the label.
-    - A submit button is added to the form to post the form data to the server. At runtime, the browser will send the form as an HTTP POST request to the server when the user clicks the submit button.
+    - A submit button is added to the form to post the form data to the server. At runtime, when the user selects the submit button, the browser sends the form as an HTTP POST request to the server.
 
 1. At the bottom of the page, add the following code:
 
@@ -136,4 +136,4 @@ There's one last piece to add to the Pizza List page: a page handler to delete p
 1. Save the file. If you're using GitHub Codespaces, the file saves automatically.
 1. Test the **Delete** button for a pizza. The page should refresh and the selected pizza should be removed from the list.
 
-Congratulations! You've successfully created a Razor Page that displays a list of pizzas, allows the user to add new pizzas, and allows the user to delete pizzas.
+Congratulations! You've successfully created a Razor Page that displays a list of pizzas, allows the user to add new pizzas, and also allows the user to delete pizzas.

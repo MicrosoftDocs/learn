@@ -5,7 +5,7 @@ In the previous unit, you obtained the source code for the Contoso Pizza project
 To create a new Razor page, you'll use the .NET CLI.
 
 1. Since the terminal is blocked by the `dotnet watch` command, open another terminal by right-clicking on the *ContosoPizza* folder in the **Explorer** and select **Open in Integrated Terminal**.
-1. In the terminal window, enter the following command:
+1. In the new terminal window, enter the following command:
 
     ```dotnetcli
     dotnet new page --name PizzaList --namespace ContosoPizza.Pages --output Pages
@@ -13,9 +13,9 @@ To create a new Razor page, you'll use the .NET CLI.
 
     The preceding command:
 
-    - Creates the following files in the `ContosoPizza.Pages` namespace:
-        - *PizzaList.cshtml*&mdash;The Razor page
-        - *PizzaList.cshtml.cs*&mdash;The accompanying `PageModel` class
+    - Creates these two files in the `ContosoPizza.Pages` namespace:
+        - *PizzaList.cshtml* - the Razor page
+        - *PizzaList.cshtml.cs* - the accompanying `PageModel` class
     - Stores both files in the project's *Pages* subdirectory.
 
 1. In *Pages/PizzaList.cshtml*, add the following code inside the `@{ }` code block:
@@ -43,7 +43,7 @@ To create a new Razor page, you'll use the .NET CLI.
 
 ## Add the Pizza List page to the navigation menu
 
-This would be a good time to test the page, but you can't do that yet because the page isn't linked in the navigation menu. You'll do that now.
+This would be a good time to test the page, but the page can't be reached in the browser because isn't yet linked in the navigation menu. You'll link it now.
 
 1. Open *Pages/Shared/_Layout.cshtml*.
 1. In the `<ul>` element with the `navbar-nav` class (starts on line 21), note the `<li>` elements that contain the links to the *Home* and *Privacy* pages. Add the following code to the end of the list, after the `<li>` element containing the *Privacy* link:
@@ -61,7 +61,7 @@ This would be a good time to test the page, but you can't do that yet because th
 
 ## Register the PizzaService class with the dependency injection container
 
-The Pizza List page depends on the `PizzaService` object to retrieve the list of pizzas. You'll use dependency injection to provide the `PizzaService` object to the page. In order for that to happen, you must register the `PizzaService` class with the container.
+The Pizza List page depends on the `PizzaService` object to retrieve the list of pizzas. You'll use dependency injection to provide the `PizzaService` object to the page. First, register the `PizzaService` class with the container.
 
 1. Open *Program.cs*.
 1. In the section that adds services to the container, add the following code:
