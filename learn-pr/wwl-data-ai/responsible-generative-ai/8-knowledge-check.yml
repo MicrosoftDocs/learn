@@ -8,8 +8,7 @@ metadata:
   author: graememalcolm
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-  ms.subservice: openai
+  ms.service: azure-ai-openai
 durationInMinutes: 3
 content: |
 quiz:  
