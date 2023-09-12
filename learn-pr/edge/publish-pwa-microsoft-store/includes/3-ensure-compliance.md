@@ -4,7 +4,7 @@ Before you publish your PWA to the Microsoft Store, you need to ensure it aligns
 
 The web app manifest is a JSON file that provides crucial information about your app to the browser. It allows your PWA to behave more like a native app.
 
-Ensure that your web app manifest is correctly structured and includes all the necessary attributes. You can use PWABuilder site to correct any errors and warnings.
+Ensure that your web app manifest is correctly structured and includes all the necessary attributes. You can use [PWABuilder](https://aka.ms/pwa/mslearn/data) site to correct any errors and warnings.
 
 ## Confirm service worker API standards
 
