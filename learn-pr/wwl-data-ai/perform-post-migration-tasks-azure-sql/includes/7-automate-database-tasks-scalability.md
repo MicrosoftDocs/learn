@@ -10,7 +10,7 @@ Another common scenario is to use Azure Automation for periodic maintenance oper
 
 ### Components
 
-Azure Automation supports both automation and configuration management activities. We're going to focus on the automation components, but you can also use Azure Automation to manage server updates and configurations. 
+[Azure Automation](/azure/automation/overview) supports both automation and configuration management activities. We're going to focus on the automation components, but you can also use Azure Automation to manage server updates and configurations.
 
 | Component | Description |
 | ------------- | ------------------- |
@@ -19,7 +19,7 @@ Azure Automation supports both automation and configuration management activitie
 | **Credential** | Credentials store sensitive information that runbooks or configurations can use at runtime. |
 | **Schedule** | Schedules are linked to runbooks and trigger a runbook at a specific time. |
 
-TODO: Add links
+To learn more about Azure CLI and Powershell commands available for managing Azure SQL Database and Azure SQL Managed Instance resources, refer to the following links: [PowerShell module for Azure SQL](/powershell/module/az.sql) and [Azure CLI for Azure SQL](/cli/azure/sql).
 
 ## Elastic jobs
 
@@ -107,5 +107,3 @@ In our scenario, suppose we migrated our on-premises SQL Server to Azure SQL Man
 | **Schedule the job** | <ul><li>Set up the job schedule in Azure SQL MI using SQL Server Agent. You can create a new schedule and link it to the job.</li></ul> |
 | **Testing** | <ul><li>Test the SQL Agent job thoroughly in the Azure SQL MI environment to ensure it runs as expected. Check for any errors or issues that may arise due to differences between on-premises SQL Server and Azure SQL MI.</li></ul> |
 | **Monitoring and maintenance**  | <ul><li>Monitor the job's performance and ensure it continues to meet your requirements in the Azure SQL MI environment.</li><li>Adjust any configurations or schedules as needed.</li></ul> |
-
-
