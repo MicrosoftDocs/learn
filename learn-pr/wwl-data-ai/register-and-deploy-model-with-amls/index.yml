@@ -30,6 +30,5 @@ subjects:
 - machine-learning
 units:
 - learn.data-ai.register-and-deploy-model-with-amls.troubleshoot-deployment
-- learn.data-ai.register-and-deploy-model-with-amls.summary
 badge:
   uid: learn.data-ai.register-and-deploy-model-with-amls.badge
