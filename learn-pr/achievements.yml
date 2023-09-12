@@ -2147,3 +2147,28 @@ achievements:
   title: Build and operate machine learning solutions with Azure Machine Learning
   summary: Azure Machine Learning is a cloud platform for training, deploying, managing, and monitoring machine learning models. Learn how to use the Azure Machine Learning Python SDK to create and manage enterprise-ready ML solutions.
   iconUrl: /training/achievements/data-ai/build-ai-solutions-with-azure-ml-service-trophy.svg
+- uid: learn.data-ai.intro-to-azure-machine-learning-service.badge
+  type: badge
+  title: Introduction to the Azure Machine Learning SDK
+  summary: Azure Machine Learning provides a cloud-based platform for training, deploying, and managing machine learning models.
+  iconUrl: /training/achievements/intro-to-azure-machine-learning-service-badge.svg
+- uid: learn.data-ai.train-local-model-with-azure-mls.badge
+  type: badge
+  title: Train a machine learning model with Azure Machine Learning
+  summary: Learn how to use Azure Machine Learning to train a model and register it in a workspace.
+  iconUrl: /training/achievements/train-local-model-with-azure-mls-badge.svg
+- uid: learn.wwl.create-pipelines-in-aml.badge
+  type: badge
+  title: Orchestrate machine learning with pipelines
+  summary: Orchestrating machine learning training with pipelines is a key element of DevOps for machine learning. In this module, you'll learn how to create, publish, and run pipelines to train models in Azure Machine Learning.
+  iconUrl: /training/achievements/create-pipelines-in-aml-badge.svg
+- uid: learn.wwl.use-compute-contexts-in-aml.badge
+  type: badge
+  title: Work with Compute in Azure Machine Learning
+  summary: One of the key benefits of the cloud is the ability to use scalable, on-demand compute resources for cost-effective processing of large data. In this module, you'll learn how to use cloud compute in Azure Machine Learning to run training experiments at scale.
+  iconUrl: /training/achievements/use-compute-contexts-in-aml-badge.svg
+- uid: learn.wwl.work-with-data-in-aml.badge
+  type: badge
+  title: Work with Data in Azure Machine Learning
+  summary: Data is the foundation of machine learning. In this module, you will learn how to work with datastores and datasets in Azure Machine Learning, enabling you to build scalable, cloud-based model training solutions.
+  iconUrl: /training/achievements/work-with-data-in-aml-badge.svg
