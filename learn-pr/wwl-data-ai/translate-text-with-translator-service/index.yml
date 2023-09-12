@@ -5,7 +5,7 @@ metadata:
   description: "Translate text with the Azure AI Translator service"
   ms.date: 08/31/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure-ai-translator
 title: Translate text with the Azure AI Translator service
