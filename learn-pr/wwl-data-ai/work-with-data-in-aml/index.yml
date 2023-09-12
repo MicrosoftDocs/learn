@@ -30,7 +30,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.work-with-data-in-aml.using-datastores
-- learn.wwl.work-with-data-in-aml.using-datasets
 - learn.wwl.work-with-data-in-aml.working-with-data
 badge:
   uid: learn.wwl.work-with-data-in-aml.badge
