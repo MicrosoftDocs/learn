@@ -1,12 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-configure-host-pools-session-hosts.configure-host-pool-assignment-type
+uid: learn.wwl.create-configure-host-pools-session-hosts.pool-assignment-type
 title: Configure host pool assignment type
 metadata:
   title: Configure host pool assignment type
   description: "Configure host pool assignment type"
-  ms.date: 09/05/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
+  ms.service: virtual-desktop
+  ms.custom:
+  - N/A
+durationInMinutes: 9
 content: |
   [!include[](includes/3-configure-host-pool-assignment-type.md)]

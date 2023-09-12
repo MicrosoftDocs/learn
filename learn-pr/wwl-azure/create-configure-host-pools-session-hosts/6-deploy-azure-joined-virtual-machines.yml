@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-configure-host-pools-session-hosts.deploy-azure-joined-virtual-machines
+uid: learn.wwl.create-configure-host-pools-session-hosts.deploying-azure-ad-joined-virtual-machines-in-azure-virtual-desk
 title: Deploying Azure AD-joined virtual machines in Azure Virtual Desktop
 metadata:
   title: Deploying Azure AD-joined virtual machines in Azure Virtual Desktop
   description: "Deploying Azure AD-joined virtual machines in Azure Virtual Desktop"
-  ms.date: 09/05/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.service: virtual-desktop
+  ms.custom:
+  - N/A
+durationInMinutes: 9
 content: |
   [!include[](includes/6-deploy-azure-joined-virtual-machines.md)]
-interactive: bash

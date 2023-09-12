@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-configure-host-pools-session-hosts.manage-license-for-session-hosts-run-windows-client
+uid: learn.wwl.create-configure-host-pools-session-hosts.manage-licensing-for-that-run-windows-client
 title: Manage licensing for session hosts that run Windows client
 metadata:
   title: Manage licensing for session hosts that run Windows client
   description: "Manage licensing for session hosts that run Windows client"
-  ms.date: 09/05/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.service: virtual-desktop
+  ms.custom:
+  - N/A
+durationInMinutes: 8
 content: |
   [!include[](includes/5-manage-license-for-session-hosts-run-windows-client.md)]
-interactive: bash

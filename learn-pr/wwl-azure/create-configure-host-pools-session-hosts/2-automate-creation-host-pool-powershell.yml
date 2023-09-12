@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-configure-host-pools-session-hosts.automate-creation-host-pool-powershell
+uid: learn.wwl.create-configure-host-pools-session-hosts.automate-creation-of-azure-virtual-desktop-host-pool-using-powershell
 title: Automate creation of an Azure Virtual Desktop host pool using PowerShell
 metadata:
   title: Automate creation of an Azure Virtual Desktop host pool using PowerShell
   description: "Automate creation of an Azure Virtual Desktop host pool using PowerShell"
-  ms.date: 09/05/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.service: virtual-desktop
+  ms.custom:
+  - N/A
+durationInMinutes: 8
 content: |
   [!include[](includes/2-automate-creation-host-pool-powershell.md)]
-interactive: bash

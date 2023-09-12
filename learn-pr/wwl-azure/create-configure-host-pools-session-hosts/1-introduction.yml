@@ -4,9 +4,13 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 09/05/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
+  ms.service: virtual-desktop
+  ms.custom:
+  - N/A
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
