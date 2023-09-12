@@ -2192,3 +2192,8 @@ achievements:
   title: Explore differential privacy
   summary: Data scientists have an ethical (and often legal) responsibility to protect sensitive data. Differential privacy is a leading edge approach that enables useful analysis while protecting individually identifiable data values.
   iconUrl: /training/achievements/explore-differential-privacy.svg
+- uid: learn.wwl.tune-hyperparameters-with-azure-machine-learning.badge
+  type: badge
+  title: Tune hyperparameters with Azure Machine Learning
+  summary: Choosing optimal hyperparameter values for model training can be difficult, and usually involved a great deal of trial and error. With Azure Machine Learning, you can leverage cloud-scale experiments to tune hyperparameters.
+  iconUrl: /training/achievements/tune-hyperparameters-with-azure-machine-learning.svg
