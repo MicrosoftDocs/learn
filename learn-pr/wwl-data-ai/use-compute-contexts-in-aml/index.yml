@@ -31,7 +31,6 @@ subjects:
 units:
 - learn.wwl.use-compute-contexts-in-aml.introduction
 - learn.wwl.use-compute-contexts-in-aml.environments
-- learn.wwl.use-compute-contexts-in-aml.compute-targets
 - learn.wwl.use-compute-contexts-in-aml.creating-compute
 - learn.wwl.use-compute-contexts-in-aml.using-compute
 - learn.wwl.use-compute-contexts-in-aml.working-with-compute
