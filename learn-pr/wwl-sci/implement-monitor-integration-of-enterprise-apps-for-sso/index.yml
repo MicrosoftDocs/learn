@@ -29,7 +29,7 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-api-apps
+- azure-app-service
 - defender-for-cloud-apps
 - entra
 - entra-workload-identities

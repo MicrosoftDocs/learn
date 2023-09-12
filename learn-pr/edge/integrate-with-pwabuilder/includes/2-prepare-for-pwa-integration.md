@@ -1,6 +1,6 @@
 Before diving into the details of integrating Progressive Web Apps (PWAs) into your project, it's crucial to have a high-level understanding of the process. PWA integration involves enhancing your website with modern web technologies and best practices, allowing it to function like a native app. This transformation results in a superior user experience, increased performance, and offline capabilities.
 
-The integration process consists of evaluating your project's core PWA features, implementing best practices, and utilizing tools like PWABuilder to generate the necessary resources.
+The integration process consists of evaluating your project's core PWA features, implementing best practices, and utilizing tools like [PWABuilder](https://aka.ms/pwa/mslearn/data) to generate the necessary resources.
 
 ## Assess your project's core PWA features
 
