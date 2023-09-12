@@ -34,7 +34,6 @@ units:
 - learn.wwl.create-pipelines-in-aml.publishing-pipelines
 - learn.wwl.create-pipelines-in-aml.pipeline-parameters
 - learn.wwl.create-pipelines-in-aml.scheduling-pipelines
-- learn.wwl.create-pipelines-in-aml.knowledge-check
 - learn.wwl.create-pipelines-in-aml.summary
 badge:
   uid: learn.wwl.create-pipelines-in-aml.badge
