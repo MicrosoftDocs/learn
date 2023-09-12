@@ -30,6 +30,5 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.data-ai.train-local-model-with-azure-mls.training-model
 badge:
   uid: learn.data-ai.train-local-model-with-azure-mls.badge
