@@ -29,7 +29,6 @@ subjects:
 - security
 units:
 - learn.wwl.explore-differential-privacy.understand-differential-privacy
-- learn.wwl.explore-differential-privacy.knowledge-check
 - learn.wwl.explore-differential-privacy.summary
 badge:
   uid: learn.wwl.explore-differential-privacy.badge
