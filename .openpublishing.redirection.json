@@ -26317,6 +26317,11 @@
       "source_path": "learn-pr/wwl-data-ai/intro-to-azure-machine-learning-service/2-azure-ml-workspace.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-machine-learning-workspace-resources-assets/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/intro-to-azure-machine-learning-service/2a-create-workspace.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-machine-learning-workspace-resources-assets/",
+      "redirect_document_id": false
     }
   ]
 }
