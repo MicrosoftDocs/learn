@@ -1,6 +1,6 @@
 ### YamlMime:Module
 uid: |
-  learn.challenge-project-add-image-analysis-generation-to-app
+  learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app
 metadata:
   title: |
     Challenge project - Add image analysis and generation capabilities to your application
@@ -53,26 +53,17 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - data-ai
 units:
-- learn.challenge-project-add-image-analysis-generation-to-app.introduction
-
-- learn.challenge-project-add-image-analysis-generation-to-app.prepare
-
-- learn.challenge-project-add-image-analysis-generation-to-app.exercise-create-static-web-app
-
-- learn.challenge-project-add-image-analysis-generation-to-app.exercise-design-gui
-
-- learn.challenge-project-add-image-analysis-generation-to-app.exercise-add-image-analysis
-
-- learn.challenge-project-add-image-analysis-generation-to-app.exercise-add-image-generation
-
-- learn.challenge-project-add-image-analysis-generation-to-app.exercise-check-services-configuration
-
-- learn.challenge-project-add-image-analysis-generation-to-app.exercise-deploy-on-Azure
-
-- learn.challenge-project-add-image-analysis-generation-to-app.knowledge-check
-
-- learn.challenge-project-add-image-analysis-generation-to-app.summary
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.introduction
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.prepare
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-create-static-web-app
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-design-gui
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-add-image-analysis
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-add-image-generation
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-check-services-configuration
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-deploy-on-Azure
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.knowledge-check
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.summary
 
 badge:
   uid: |
-    learn.challenge-project-add-image-analysis-generation-to-app.badge
+    learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.badge

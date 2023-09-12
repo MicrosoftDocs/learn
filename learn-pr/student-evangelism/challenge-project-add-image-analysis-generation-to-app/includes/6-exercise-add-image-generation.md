@@ -14,7 +14,7 @@ Please note that, as part of Microsoft's commitment to responsible AI, access to
 
 > [!TIP]
 > Don't include the services key directly in your code, and never post it publicly. When running your app locally, you can store your credentials in environment variables. Environment variables are name-value pairs that are stored within a specific development environment.
-> See the [Azure AI services security article](https://learn.microsoft.com/en-us/azure/ai-services/security-features) for more authentication options.
+> See the [Azure AI services security article](https://learn.microsoft.com/azure/ai-services/security-features?WT.mc_id=academic-105496-cacaste) for more authentication options.
 
 ## Check your work
 
