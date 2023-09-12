@@ -8,8 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-  ms.subservice: speech-service
+  ms.service: azure-ai-speech
 labId: 96281
 labModal: true
 durationInMinutes: 30

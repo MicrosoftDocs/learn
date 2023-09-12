@@ -7,8 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-  ms.subservice: speech-service
+  ms.service: azure-ai-speech
 title: Translate speech with the Azure AI Speech service
 summary: Translation of speech builds on speech recognition by recognizing and transcribing spoken input in a specified language, and returning translations of the transcription in one or more other languages.
 abstract: |
