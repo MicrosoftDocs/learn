@@ -32,6 +32,5 @@ units:
 - learn.wwl.work-with-data-in-aml.using-datastores
 - learn.wwl.work-with-data-in-aml.using-datasets
 - learn.wwl.work-with-data-in-aml.working-with-data
-- learn.wwl.work-with-data-in-aml.summary
 badge:
   uid: learn.wwl.work-with-data-in-aml.badge
