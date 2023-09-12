@@ -1,4 +1,3 @@
-
 To truly realize the potential of AI, it’s essential to bring AI to every employee in ways that are relevant and meaningful to their work. Microsoft makes this possible by embedding AI in the applications people use in their everyday routine. No code or data science expertise is required because AI is delivered as just another feature of a SaaS product. The result is a wide range of intelligent applications for business users.
 
 In this unit, we'll discuss how these intelligent business applications weave relevant AI capabilities into their existing workflows. Dynamics 365 helps workers from specific business lines and functions automate and improve certain tasks. Microsoft 365 does the same by addressing a more general audience. Let’s take a look at some examples of these applications that can help anyone use AI to get more done.
