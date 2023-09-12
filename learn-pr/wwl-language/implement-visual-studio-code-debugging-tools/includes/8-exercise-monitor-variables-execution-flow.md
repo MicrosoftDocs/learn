@@ -1,9 +1,3 @@
-
-
-
-
-
-
 The RUN AND DEBUG view provides developers with an easy way to monitor variables and expressions, observe execution flow, and manage breakpoints during the debug process.  
 
 ## Examine the sections of the Run and Debug view
