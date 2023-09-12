@@ -26547,6 +26547,11 @@
       "source_path": "learn-pr/wwl-data-ai/automate-model-selection-with-azure-automl/3-automl-preprocessing.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/find-best-classification-model-automated-machine-learning/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/automate-model-selection-with-azure-automl/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/find-best-classification-model-automated-machine-learning/",
+      "redirect_document_id": false
     }
   ]
 }
