@@ -2167,3 +2167,8 @@ achievements:
   title: Work with Compute in Azure Machine Learning
   summary: One of the key benefits of the cloud is the ability to use scalable, on-demand compute resources for cost-effective processing of large data. In this module, you'll learn how to use cloud compute in Azure Machine Learning to run training experiments at scale.
   iconUrl: /training/achievements/use-compute-contexts-in-aml-badge.svg
+- uid: learn.wwl.work-with-data-in-aml.badge
+  type: badge
+  title: Work with Data in Azure Machine Learning
+  summary: Data is the foundation of machine learning. In this module, you will learn how to work with datastores and datasets in Azure Machine Learning, enabling you to build scalable, cloud-based model training solutions.
+  iconUrl: /training/achievements/work-with-data-in-aml-badge.svg
