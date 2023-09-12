@@ -2177,3 +2177,8 @@ achievements:
   title: Automate machine learning model selection with Azure Machine Learning
   summary: Learn how to use automated machine learning in Azure Machine Learning to find the best model for your data.
   iconUrl: /training/achievements/automate-model-selection-with-azure-automl-badge.svg
+- uid: learn.data-ai.register-and-deploy-model-with-amls.badge
+  type: badge
+  title: Deploy real-time machine learning services with Azure Machine Learning
+  summary: Learn how to register and deploy ML models with the Azure Machine Learning service.
+  iconUrl: /training/achievements/register-and-deploy-model-with-amls-badge.svg
