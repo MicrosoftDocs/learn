@@ -2142,3 +2142,8 @@ achievements:
   title: Enable single sign-on for applications by using Azure Active Directory
   summary: "To enable single sign-on, you add an application from the Azure Active Directory(Azure AD) application gallery. You create a test user account in Azure AD  and assign it to the Azure AD application. You then configure single sign-on both at the identity provider and the service provider and test the single sign-on configuration by signing in to the application using the test user account."
   iconUrl: /training/achievements/enable-single-sign-on.svg
+- uid: learn.data-ai.build-ai-solutions-with-azure-ml-service.trophy
+  type: trophy
+  title: Build and operate machine learning solutions with Azure Machine Learning
+  summary: Azure Machine Learning is a cloud platform for training, deploying, managing, and monitoring machine learning models. Learn how to use the Azure Machine Learning Python SDK to create and manage enterprise-ready ML solutions.
+  iconUrl: /training/achievements/data-ai/build-ai-solutions-with-azure-ml-service-trophy.svg
