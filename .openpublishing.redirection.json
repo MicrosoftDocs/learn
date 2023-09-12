@@ -26437,6 +26437,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-pipelines-in-aml/9-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/run-pipelines-azure-machine-learning/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-compute-contexts-in-aml/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/work-compute-resources-azure-machine-learning/",
+      "redirect_document_id": false
     }
   ]
 }
