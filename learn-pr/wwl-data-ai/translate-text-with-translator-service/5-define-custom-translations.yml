@@ -4,11 +4,11 @@ title: Define custom translations
 metadata:
   title: Define custom translations
   description: "Define custom translations"
-  ms.date: 05/11/2022
+  ms.date: 08/31/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.service: azure-ai-translator
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
