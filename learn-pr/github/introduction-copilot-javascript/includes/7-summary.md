@@ -22,4 +22,4 @@ To avoid consuming all your monthly GitHub Codespaces time, it's important to de
 * [What is GitHub Copilot?](/shows/introduction-to-github-copilot/what-is-github-copilot-1-of-6?WT.mc_id=academic-105743-bethanycheum )
 * [Introduction to GitHub Copilot](/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105774-abrilu)
 * [Code with GitHub Codespaces](/training/modules/code-with-github-codespaces/?WT.mc_id=academic-105774-abrilu)
-* [Get started with React](/training/paths/react-get-started?WT.mc_id=academic-105774-abrilu)
+* [Get started with React](/training/modules/react-get-started/?WT.mc_id=academic-105774-abrilu)
