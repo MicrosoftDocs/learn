@@ -31,6 +31,5 @@ subjects:
 - machine-learning
 units:
 - learn.data-ai.train-local-model-with-azure-mls.training-model
-- learn.data-ai.train-local-model-with-azure-mls.summary
 badge:
   uid: learn.data-ai.train-local-model-with-azure-mls.badge
