@@ -26422,6 +26422,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-pipelines-in-aml/5-publishing-pipelines.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/run-pipelines-azure-machine-learning/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-pipelines-in-aml/7-scheduling-pipelines.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/run-pipelines-azure-machine-learning/",
+      "redirect_document_id": false
     }
   ]
 }
