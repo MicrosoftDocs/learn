@@ -26302,6 +26302,11 @@
       "source_path": "learn-pr/wwl-data-ai/intro-to-azure-machine-learning-service/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-machine-learning-workspace-resources-assets/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/intro-to-azure-machine-learning-service/4-azure-ml-experiment.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-machine-learning-workspace-resources-assets/",
+      "redirect_document_id": false
     }
   ]
 }
