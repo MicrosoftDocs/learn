@@ -2152,3 +2152,8 @@ achievements:
   title: Introduction to the Azure Machine Learning SDK
   summary: Azure Machine Learning provides a cloud-based platform for training, deploying, and managing machine learning models.
   iconUrl: /training/achievements/intro-to-azure-machine-learning-service-badge.svg
+- uid: learn.data-ai.train-local-model-with-azure-mls.badge
+  type: badge
+  title: Train a machine learning model with Azure Machine Learning
+  summary: Learn how to use Azure Machine Learning to train a model and register it in a workspace.
+  iconUrl: /training/achievements/train-local-model-with-azure-mls-badge.svg
