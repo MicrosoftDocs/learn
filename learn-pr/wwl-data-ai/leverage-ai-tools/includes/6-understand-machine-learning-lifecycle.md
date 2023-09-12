@@ -1,11 +1,10 @@
-
 In this unit, we discuss the typical machine learning lifecycle and its common challenges. It provides an overview of the process if you're building a custom model, either from the ground up or using a pretrained model as a starting point. This knowledge should empower you to approach data science projects.
 
 ## Machine learning challenges and need of machine learning operations
 
 The recent boom of AI premade models, such as those offered by OpenAI, can help organizations reduce significantly the intimidating amount of resources a data science project can require. However, as more organizations experiment with AI, they find that the machine learning lifecycle is more complex than just creating an AI model or reusing a prebuilt one.
 
-Even if your organization is using premade AI models like those provided by Azure Cognitive Services, you probably still need to document and manage data, code, model environments, and the machine learning models themselves. You need to establish processes for developing, packaging, and deploying models, as well as monitoring their performance and occasionally retraining them. And most organizations are managing multiple models in production at the same time, adding to the complexity.
+Even if your organization is using premade AI models like those provided by Azure AI Services, you probably still need to document and manage data, code, model environments, and the machine learning models themselves. You need to establish processes for developing, packaging, and deploying models, as well as monitoring their performance and occasionally retraining them. And most organizations are managing multiple models in production at the same time, adding to the complexity.
 
 To cope effectively with this complexity, some best practices are required. They focus on cross-team collaboration, automating and standardizing processes, and ensuring models can be easily audited, explained, and reused. To get this done, data science teams rely on the **machine learning operations** approach. This methodology is inspired by DevOps (development and operations), the industry standard for managing operations for an application development cycle, since the struggles of developers and data scientists are similar.
 
