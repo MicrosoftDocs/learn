@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.enable-defender-cloud-azure-subscription
+title: Defender for Cloud monitoring components
+metadata:
+  title: Defender for Cloud monitoring components
+  description: "Defender for Cloud monitoring components"
+  ms.date: 09/01/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-enable-defender-cloud-azure-subscription.md)]

@@ -8,6 +8,8 @@ metadata:
   author: mikefrobbins
   ms.author: mirobb
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurepowershell
   ms.prod: learning-azure
   zone_pivot_groups: platform
 durationInMinutes: 10

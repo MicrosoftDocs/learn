@@ -1,4 +1,5 @@
 
+
 There's more to building a C# application than stringing together lines of code. You'll need the .NET Runtime, which hosts and manages your code as it executes on the end user's computer. You'll also rely on the .NET Class Library, a prewritten collection of coding resources that you can use in your applications. This unit explains what the .NET Class Library is and how it complements the C# programming language.
 
 ## What is the .NET Class Library?
@@ -27,7 +28,7 @@ C# data types (such as `string` and `int`) are actually made available through c
 
 With so many classes and methods, how can you find what you need for your application?
 
-First of all, remember that finding every class and method in the .NET Class Library is like finding every book in a large public library. You don't need every book in the library, and you won't be using every class and method in the .NET Class Library. Depending on the types of projects that you work on, you'll become more familiar with some parts of the .NET Class Library and less familiar with others. Again, it's like spending time in a section of the public library, over time you become familiar with what's available. No one knows all of the .NET CLass Library, not even people that work at Microsoft.
+First of all, remember that finding every class and method in the .NET Class Library is like finding every book in a large public library. You don't need every book in the library, and you won't be using every class and method in the .NET Class Library. Depending on the types of projects that you work on, you'll become more familiar with some parts of the .NET Class Library and less familiar with others. Again, it's like spending time in a section of the public library, over time you become familiar with what's available. No one knows all of the .NET Class Library, not even people that work at Microsoft.
 
 Second, necessity will drive you to what you need. Most people go to the library when they need to find a book, not to see how many different books they can find.You don't need to research classes and methods without a reason. When you have trouble figuring out a programming task, you can use your favorite search engine to find blog posts, articles, or forums where other developers have worked through similar issues. Third-party sources can give you clues about which .NET classes and methods you might want to use, and you may even find sample code that you can try.
 

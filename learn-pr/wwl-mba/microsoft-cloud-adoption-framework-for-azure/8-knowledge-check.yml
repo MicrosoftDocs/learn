@@ -4,23 +4,22 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/20/2020
+  ms.date: 08/23/2023
   author: wwlpublish
-  ms.author: rknapp
+  ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
 durationInMinutes: 7
 quiz:
+  title: ""
   questions:
   - content: "The Cloud Adoption Framework for Azure helps customers make their journey to the cloud. What are the three main stages of the framework?"
     choices:
     - content: "Plan, Business Justification, and Implementation."
       isCorrect: false
-      explanation: "That's incorrect. Business Justification and Implementation are not main stages of the Cloud Adoption Framework."
+      explanation: "That's incorrect. Business Justification and Implementation aren't main stages of the Cloud Adoption Framework."
     - content: "Migrate, Test, and Optimize."
       isCorrect: false
-      explanation: "That's incorrect. Migrate, Test, and Optimize are not main stages of the Cloud Adoption Framework."
+      explanation: "That's incorrect. Migrate, Test, and Optimize aren't main stages of the Cloud Adoption Framework."
     - content: "Plan, Ready, and Adopt."
       isCorrect: true
       explanation: "That's correct. The Cloud Adoption Framework describes how the organization must prepare its people with technical readiness, adjust business processes to drive business and technology changes, and enable business outcomes through implementation of the defined technology plan."
@@ -28,21 +27,21 @@ quiz:
     choices:
     - content: "Reduction in IT staff for on-premises hardware."
       isCorrect: false
-      explanation: "That's incorrect. Reduction in IT staff is not an innovation trigger, but optimization of internal operations can be a migration trigger."
+      explanation: "That's incorrect. Reduction in IT staff isn't an innovation trigger, but optimization of internal operations can be a migration trigger."
     - content: "Transform products or services."
       isCorrect: true
       explanation: "That's correct. The desire to transform products or services might be an innovation trigger which drives cloud adoption."
     - content: "Increase business agility."
       isCorrect: false
-      explanation: "That's incorrect. Increasing business agility is not an innovation trigger, but might be a migration trigger."
+      explanation: "That's incorrect. Increasing business agility isn't an innovation trigger, but might be a migration trigger."
   - content: "What are the five disciplines of cloud governance?"
     choices:
     - content: "Business risk, process, policy and compliance, resource consistency, and deployment acceleration."
       isCorrect: false
-      explanation: "That's incorrect. Business risk, process, and policy compliance are required for governance, but they are not one of the five disciplines."
+      explanation: "That's incorrect. Business risk, process, and policy compliance are required for governance, but they aren't one of the five disciplines."
     - content: "Business risk, policy and compliance, security baseline, process, and operations."
       isCorrect: false
-      explanation: "That's incorrect. These are important tasks in any cloud adoption but are not part of the five disciplines of cloud governance."
+      explanation: "That's incorrect. These are important tasks in any cloud adoption but aren't part of the five disciplines of cloud governance."
     - content: "Cost management, security baseline, resource consistency, identity baseline, and deployment acceleration."
       isCorrect: true
       explanation: "That's correct. When you build your cloud governance strategy, you need to think about cost management, setting a security baseline, working toward resource consistency through best practices, establishing the identity and access strategy, and accelerating deployment with consistent templates."

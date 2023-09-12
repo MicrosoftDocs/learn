@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-form-recognizer-solution.resources
-title: Plan Form Recognizer resources
+title: Plan Azure AI Document Intelligence resources
 metadata:
-  title: Plan Form Recognizer resources
-  description: "Plan Form Recognizer resources"
+  title: Plan Azure AI Document Intelligence resources
+  description: "Plan Azure AI Document Intelligence resources"
   ms.date: 09/16/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

@@ -3,11 +3,11 @@ uid: learn.wwl.explore-release-strategy-recommendations
 metadata:
   title: Explore release recommendations
   description: "Explore release recommendations"
-  ms.date: 12/09/2022
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 title: Explore release recommendations
 summary: This module explores the critical release strategy recommendations that organizations must consider when designing automated deployments and explains how to define components of a release pipeline and artifact sources, create approves, and configure release gates.
 abstract: |
@@ -16,7 +16,8 @@ abstract: |
   - Define the components of a release pipeline and use artifact sources
   - Create a release approval plan
   - Implement release gates
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/2-explore-release-strategy-recommendations.svg
 levels:
 - advanced

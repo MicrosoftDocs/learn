@@ -23,10 +23,9 @@ Customers manage these components of Azure Virtual Desktop solutions:
 
 
  -  **Azure AD**: Azure Virtual Desktop uses Azure AD for identity and access management. Azure AD integration applies Azure AD security features like conditional access, multifactor authentication, and the Intelligent Security Graph, and helps maintain app compatibility in domain-joined VMs.
- -  **AD DS**: Azure Virtual Desktop VMs must domain-join an AD DS service, and the AD DS must be in sync with Azure AD to associate users between the two services. You can use Azure AD Connect to associate AD DS with Azure AD.
+ -  **AD DS**: Azure Virtual Desktop VMs must domain-join an AD DS service. You can use Azure AD Connect to associate AD DS with Azure AD.
  -  **Azure Virtual Desktop session hosts**: A host pool can run the following operating systems:
-     -  Windows 7 Enterprise
-     -  Windows 10 Enterprise
+     -  Windows 10 Enterprise and Windows 11 Enterprise
      -  Windows 10 Enterprise Multi-session
      -  Windows Server 2012 R2 and above
      -  Custom Windows system images with pre-loaded apps, group policies, or other customizations

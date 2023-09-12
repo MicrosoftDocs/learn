@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Create a clustering model with Azure Machine Learning designer
 summary: Clustering is an unsupervised machine learning technique used to group similar entities based on their features. Learn how to create clustering models using Azure Machine Learning designer.
 abstract: |

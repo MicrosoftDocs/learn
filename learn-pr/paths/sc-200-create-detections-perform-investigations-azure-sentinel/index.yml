@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: 'SC-200: Create detections and perform investigations using Microsoft Sentinel'
 prerequisites: |
   - Understand how to use KQL in Microsoft Sentinel like you could learn from learning path SC-200: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
@@ -21,7 +21,7 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - threat-protection
 modules:

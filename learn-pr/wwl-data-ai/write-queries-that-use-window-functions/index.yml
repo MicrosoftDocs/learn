@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Write queries that use window functions
 summary: Learn how to use window functions in Transact-SQL.
 abstract: |

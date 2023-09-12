@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-azure-developer-cli.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of the Azure Developer CLI
+  ms.date: 11/01/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: engagement-fy23
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What technology does `azd` use to provision Azure resources?"
+    choices:
+    - content: "Azure PowerShell"
+      isCorrect: false
+      explanation: "Incorrect. The Azure Developer CLI does not use PowerShell to provision Azure resources."
+    - content: "Azure CLI"
+      isCorrect: false
+      explanation: "Incorrect. The Azure CLI is a separate administrative tool that is not used by the Azure Developer CLI."
+    - content: "The Azure SDK"
+      isCorrect: false
+      explanation: "Incorrect. The Azure SDK is a set of libraries that you can use to write code that interacts with Azure resources."
+    - content: "Infrastructure as Code (e.g. Bicep, Terraform)"
+      isCorrect: true
+      explanation: "Correct. `azd` relies on Bicep templates to create resources in Azure."
+  - content: "What is the purpose of the `azure.yaml` file?"
+    choices:
+    - content: "Defines the CI/CD pipeline for your `azd` template."
+      isCorrect: false
+      explanation: "Incorrect. The CI/CD pipeline is defined in the `azure-dev.yaml` file."
+    - content: "Defines and describes the apps that are included in your application and the Azure services they are deployed to."
+      isCorrect: true
+      explanation: "Correct. The `azure.yaml` file describes the services in your code, such as the language and corresponding Azure resources."
+    - content: "Defines a Dev Container environment for the project."
+      isCorrect: false
+      explanation: "Incorrect. The `.devcontainer.json` file is used to set up dev containers for `azd` templates."
+    - content: "Defines the infrastructure as code templates that will create resources in Azure."
+      isCorrect: false
+      explanation: "Incorrect. Infrastructure as code templates are defined in the template's Bicep files."
+  - content: "What happens when you run the `azd up` command?"
+    choices:
+    - content: "The application is packaged and the necessary resources are provisioned and deployed to Azure."
+      isCorrect: true
+      explanation: "Correct. The `azd up` command is the most common workflow for packaging, provisioning, and deploying resources to Azure."
+    - content: "The specified `azd` template is cloned from GitHub."
+      isCorrect: false
+      explanation: "Incorrect. The `azd init` command clones and initializes the specified template using the `-template` parameter."
+    - content: "The CI/CD pipeline of the specified `azd` template is executed."
+      isCorrect: false
+      explanation: "Incorrect. To execute the CI/CD pipeline, you must run the `azd pipeline` command."
+    - content: "Monitoring resources are configured to provide live metrics for the app."
+      isCorrect: false
+      explanation: "Incorrect. To configure monitoring, you must run the `azd monitor` command."
+  - content: "Which is the purpose of the `infra` folder in an `azd` template?"
+    choices:
+    - content: "It stores the CI/CD pipeline definitions for the template."
+      isCorrect: false
+      explanation: "Incorrect. CI/CD pipeline definitions are stored in the `.github` or `.azdo` folders."
+    - content: "It holds the source code for the deployed application."
+      isCorrect: false
+      explanation: "Incorrect. The application code in an `azd` template is stored in the `src` folder."
+    - content: "It contains the files necessary to set up a local dev container infrastructure."
+      isCorrect: false
+      explanation: "Incorrect. Dev container environments are configured in the `.devcontainer` folder."
+    - content: "It contains the Bicep or Terraform files that define the infrastructure as-code templates."
+      isCorrect: true
+      explanation: "Correct. The `infra` folder contains the Bicep or Terraform files that define the infrastructure as-code templates."

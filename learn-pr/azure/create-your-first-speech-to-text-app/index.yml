@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.azure.create-your-first-speech-to-text-app
 metadata:
-  title: Create your first Azure Cognitive Services Speech-to-Text application
-  description: In this module, you'll learn how to use Azure Cognitive Services to create a speech-to-text application.
-  ms.date: 12/28/2022
+  title: Create your first Azure AI speech to text application
+  description: In this module, you'll learn how to use Azure AI services to create a speech to text application.
+  ms.date: 06/19/2023
   author: eric-urban
   ms.author: eur
   manager: nitinme
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Create your first Azure Cognitive Services Speech-to-Text application
-summary: Microsoft's Azure Cognitive Services provide developers with APIs to create applications that take advantage of Azure's speech-to-text features. In this module, you'll learn how to use Azure Cognitive Services to create a speech-to-text application that converts a sample WAVE file into text.
+  ms.service: cognitive-services
+title: Create your first Azure AI speech to text application
+summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's speech to text features. In this module, you'll learn how to use Azure AI services to create a speech to text application that converts a sample WAVE file into text.
 abstract: |
   In this module, you will:
-  - Create an Azure Cognitive Services account
-  - Create a command-line application that uses single-shot recognition to convert speech to text
-  - Create a command-line application that uses continuous recognition to convert speech to text
+  - Create an Azure AI services account.
+  - Create a command-line application that uses single-shot recognition to convert speech to text.
+  - Create a command-line application that uses continuous recognition to convert speech to text.
 prerequisites: |
   - Basic familiarity with development tools
 iconUrl: /learn/achievements/generic-badge.svg
@@ -26,7 +26,7 @@ roles:
 - ai-engineer
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 - azure-speech-text
 - azure-clis
 units:

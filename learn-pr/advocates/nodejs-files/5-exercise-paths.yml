@@ -9,10 +9,11 @@ metadata:
   ms.author: buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-js
   ms.contributors: buhollan-09022020
 interactive: bash
-azureSandbox: true
 durationInMinutes: 5
 content: |
   [!include[](includes/5-exercise-paths.md)]

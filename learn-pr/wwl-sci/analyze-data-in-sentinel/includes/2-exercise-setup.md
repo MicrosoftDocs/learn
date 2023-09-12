@@ -1,4 +1,5 @@
 
+
 The Threat detection with Microsoft Sentinel Analytics exercise in this module is an optional unit. However, if you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 To deploy the prerequisites for the exercise, perform the following tasks.
@@ -59,7 +60,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 ## Task 3: Configure Microsoft Sentinel connectors
 
-In this task, you'll deploy a Microsoft Sentinel connector to Azure Activity.
+In this task, you deploy a Microsoft Sentinel connector to Azure Activity.
 
 1. In the Azure portal, select **Home**, and then search for and select **Microsoft Sentinel**.
 
@@ -69,16 +70,21 @@ In this task, you'll deploy a Microsoft Sentinel connector to Azure Activity.
 
 1. In the *Search by name or provider* search box, search for and select **Azure Activity**. The **Azure Activity** details pane appears.
 
-1. Select **Open connector page**. The **Azure Activity** pane reappears.
+1. Select **Open connector page**.
 
-1. Select the **Configure Azure Activity logs** link.
+1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
 
-1. Select your subscription, and then select **Connect**.
+1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure subscription" from the drop-down list and click **Select**.
 
-1. When you receive a status of **Connected**, close all open panels to return to **Microsoft Sentinel | Data connector**.
+1. Select the **Parameters** tab, choose your *yourName-sentinel* workspace from the **Primary Log Analytics workspace** drop-down list.
+
+1. Select the **Remediation** tab and select the **Create a remediation task** checkbox. This action applies the subscription configuration to send the information to the Log Analytics workspace.
+
+1. Select the **Review + Create** button to review the configuration.
+
+1. Select **Create** to finish.
 
 :::image type="content" source="../media/07-azure-sentinel-connector.png" alt-text="Screenshot of the Microsoft Sentinel connector." border="true":::
 
-> [!Note]
-> The connector for Azure Activity could take 20 minutes to send data in Microsoft Sentinel. You can proceed with rest of the steps and with other units of this module.
-
+> [!NOTE]
+> The connector for Azure Activity could take 15 minutes to show **Connected** in Microsoft Sentinel. You can proceed with rest of the steps and with other units of this module.

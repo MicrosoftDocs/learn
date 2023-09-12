@@ -8,6 +8,8 @@ metadata:
   author: cynthn
   ms.author: cynthn
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
   zone_pivot_groups: platform-cloud
 interactive: bash

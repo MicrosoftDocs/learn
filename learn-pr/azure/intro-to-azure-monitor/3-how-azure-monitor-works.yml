@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-monitor.how-azure-monitor-works
-title: How Azure Monitor works
+title: Metrics and Logs
 metadata:
   unitType: learning-content
-  title: How Azure Monitor works
-  description: Explore how Azure Monitor can provide insights into your applications and infrastructure.
+  title: Azure Monitor Metrics and Logs
+  description: Learn about using Azure Monitor Metrics for collecting and analyzing quantitative data, and Azure Monitor Logs for textual and unstructured data.
   ms.prod: learning-azure-monitor
   ms.date: 4/15/2021
-  author: gerryaobrien
-  ms.author: gerryo
+  author: guywi-ms
+  ms.author: guywild
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 15
 content: |

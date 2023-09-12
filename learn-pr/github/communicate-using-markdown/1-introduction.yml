@@ -3,12 +3,11 @@ uid: learn.github.communicate-using-markdown.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Learn to use Markdown to communicate with brevity, clarity, and expression.
+  description: This content is part of the "Communicate effectively on GitHub using Markdown" module.
   ms.date: 06/26/2020
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: training-unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

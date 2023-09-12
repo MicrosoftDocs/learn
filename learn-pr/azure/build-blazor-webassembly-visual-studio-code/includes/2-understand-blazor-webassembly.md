@@ -2,7 +2,7 @@ Companies that build web apps commonly hire developers for different roles. Some
 
 C# and Microsoft .NET are popular choices for building server-side logic. But client-side apps are often built with web UI frameworks, which commonly use JavaScript. The use of multiple languages and toolsets requires multiple sets of skills and often requires two separate teams. Also, code to transfer and represent data must be built in both languages and kept in sync.
 
-In this unit, you'll start with an introduction to Blazor and Razor Components.
+In this unit, you start with an introduction to Blazor and Razor Components.
 
 ## What is Blazor?
 
@@ -56,6 +56,6 @@ The connection Blazor Server uses to communicate with the browser is also used t
 
 ## Blazor development requirements
 
-You can build Blazor apps by using the latest version of Visual Studio 2022, Visual Studio for Mac, or Visual Studio Code. In this module, you'll use Visual Studio Code.
+You can build Blazor apps by using the latest version of Visual Studio 2022, Visual Studio for Mac, or Visual Studio Code. In this module, you use Visual Studio Code.
 
-Whatever your development environment, you'll need to install the **.NET 6.0 SDK**. If you'll be working with Visual Studio 2022, you'll need to include the "ASP.NET and web development" workload to ensure the .NET 6.0 SDK and tools are available in Visual Studio. After installation, you'll have everything you need to start building Blazor apps. In the next exercise, you'll build your first Blazor app with Visual Studio Code or Visual Studio 2022.
+Whatever your development environment, you need to install the **.NET 6.0 SDK**. If you work with Visual Studio 2022, you need to include the "ASP.NET and web development" workload to ensure the .NET 6.0 SDK and tools are available in Visual Studio. After installation, you have everything you need to start building Blazor apps. In the next exercise, you build your first Blazor app with Visual Studio Code or Visual Studio 2022.

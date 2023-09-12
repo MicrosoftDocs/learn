@@ -1,5 +1,6 @@
 
 
+
 ## Scenario
 
 In addition to your SAP architect responsibilities for your company's Azure IaaS solutions in compute, storage, and networking, there are other aspects of deploying SAP-based solutions in Azure. You are also responsible for identity services, remote management, and governance and manageability.
@@ -26,3 +27,4 @@ You will:
 - Explore primary scenarios using Active Directory Domain Services and Azure virtual machines.
 - Integrate Linux with Active Directory Domain Services.
 - Discover Azure Active Directory Domain Services.
+

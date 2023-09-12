@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-code-azure-openai.fix-bugs-improve-code
+title: Fix bugs and improve your code
+metadata:
+  zone_pivot_groups: dev-lang-csharp-python
+  title: Fix bugs and improve your code
+  description: "Learn how to use the Azure OpenAI Service to fix bugs and improve your code. This functionality includes fixing bugs and improving code quality."
+  ms.date: 6/20/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+  ms.custom: devx-track-python
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-fix-bugs-improve-code.md)]

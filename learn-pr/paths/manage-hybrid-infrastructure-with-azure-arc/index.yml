@@ -3,11 +3,11 @@ uid: learn.manage-hybrid-infrastructure-with-azure-arc
 metadata:
   title: Bring Azure innovation to your hybrid environments with Azure Arc
   description: Learn how to work with Azure Arc enabled servers, data services and Kubernetes.
-  ms.date: 12/14/2020
+  ms.date: 08/22/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: e2e-hybrid
 title: Bring Azure innovation to your hybrid environments with Azure Arc
 summary:  |
@@ -31,6 +31,7 @@ modules:
 - learn.azure.plan-deploy-azure-arc-enabled-servers
 - learn.azure.secure-azure-arc-enabled-servers
 - learn.azure.monitor-azure-arc-enabled-servers
+- learn.azure.govern-azure-arc-enabled-servers
 - learn.azure.intro-to-arc-enabled-kubernetes
 - learn.azure.intro-to-arc-enabled-data-services
 trophy:

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure SQL Server resources for optimal performance
 summary: Choose the appropriate size and storage options for your Azure SQL databases. Configure server resources such as tempdb. Understand the usage of Resource Governor.
 abstract: |

@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Three multiple-choice questions
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -14,7 +14,7 @@ content: Choose the best response for each question. Then select Check your answ
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which Azure Services are used for LUIS?"
+    - content: "Which Azure Services are used for CLU?"
       choices:
         - content: "Cognitive Service"
           isCorrect: false
@@ -22,7 +22,7 @@ quiz:
         - content: "Custom AI"
           isCorrect: false
           explanation: "This platform is used to provide computer vision to specific scenarios"
-        - content: "Language Understanding"
+        - content: "Language Service"
           isCorrect: true
           explanation: "A natural language understanding AI service to allow users to interact with applications."
     - content: "You are developing an application for tourists to use as a text based or audio based translator. Which Azure services can help?"
@@ -36,12 +36,12 @@ quiz:
         - content: "Text Translate"
           isCorrect: false
           explanation: "Translates text and document in real time"
-    - content: "You wish to develop an application which can take verbal commands. Which Azure services can help?"
+    - content: "You wish to develop an application that can take verbal commands. Which Azure services can help?"
       choices:
         - content: "Speech"
           isCorrect: true
           explanation: "The unification of speech-to-text, text-to-speech and speech-translation into a single Azure subscription."
-        - content: "LUIS"
+        - content: "CLU"
           isCorrect: false
           explanation: "A natural language understanding AI service to allow users to interact with applications."
         - content: "Azure Text Analytics"

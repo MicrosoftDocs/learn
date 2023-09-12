@@ -8,7 +8,7 @@ metadata:
   author: meaghanlewis
   ms.author: mosagie
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 9
 content: |
   [!include[](includes/5-exercise-register-spacecraft.md)]

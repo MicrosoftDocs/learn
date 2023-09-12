@@ -4,11 +4,11 @@ title: Discover event schemas
 metadata:
   title: Discover event schemas
   description: "Discover event schemas"
-  ms.date: 04/24/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: event-grid
 durationInMinutes: 3
 content: |
   [!include[](includes/3-event-grid-schema.md)]

@@ -6,8 +6,9 @@ metadata:
   ms.date: 7/21/2022
   author: alexwolfmsft
   ms.author: alexwolf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: module-intro-to-product
+  ms.prod: dotnet-orleans
+  manager: mcleans
 title: Introduction to Orleans
 summary: Learn what Orleans is and when you might want to use it.
 abstract: |

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.learn-microsoft-ai-approach
+title: Learn the Microsoft AI approach
+metadata:
+  title: Learn the Microsoft AI approach
+  description: "Learn the Microsoft AI approach"
+  ms.date: 09/12/2023
+  author: Adriamen
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.service: microsoft-365
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-learn-microsoft-ai-approach.md)]

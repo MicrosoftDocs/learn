@@ -108,7 +108,7 @@ The following image shows this idea:
 
 :::image type="content" source="../media/6-vm-resize.png" alt-text="An illustration showing 50 percent savings by reducing the size of an underutilized VM." border="false":::
 
-Keep in mind that resizing a VM requires it to be stopped, resized, and then restarted. This process might take a few minutes depending on how significant the size change is. Be sure to properly plan for an outage, or shift your traffic to another instance while you perform resize operations.
+Keep in mind that [resizing a VM](/azure/virtual-machines/resize-vm) requires it to be stopped, resized, and then restarted. This process might take a few minutes depending on how significant the size change is. Be sure to properly plan for an outage, or shift your traffic to another instance while you perform resize operations.
 
 ## Deallocate virtual machines during off hours
 

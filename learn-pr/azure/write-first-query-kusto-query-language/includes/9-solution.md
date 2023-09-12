@@ -1,6 +1,6 @@
 You've been asked to write a query that answers the following question: 
 
-> In the month of April 2007, what were the top five damage-causing storm types in the state of Virginia?
+> In the month of April 2007, what were the top five damage-causing storm events in the state of Virginia?
 
 This solution provides one possible way to construct a query that answers the question.
 
@@ -33,4 +33,4 @@ Your results should look something like the following image:
 
 ## Insights
 
-From the results of this solution, you can see that all the top five damage-causing events in the month of April and in the state of Virginia were frost or freeze events.
+From the results of this solution, you can see that all the top five damage-causing events in the month of April and in the state of Virginia were all frost or freeze events.

@@ -3,11 +3,11 @@ uid: learn.wwl.design-data-storage-solution-for-non-relational-data
 metadata:
   title: Design a data storage solution for non-relational data
   description: "Azure Architects design and recommend non-relational data storage solutions."
-  ms.date: 03/13/2023
+  ms.date: 07/21/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 title: Design a data storage solution for non-relational data
 summary: Azure Architects design and recommend non-relational data storage solutions.
 abstract: |

@@ -1,3 +1,4 @@
+
 Badges can be used to show the status of a workflow within a repository.
 
 They show if a workflow is currently passing or failing. While they can appear in several locations, they typically get added to the README.md file for the repository.

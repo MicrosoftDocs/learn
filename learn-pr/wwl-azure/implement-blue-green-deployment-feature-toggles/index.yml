@@ -3,11 +3,10 @@ uid: learn.wwl.implement-blue-green-deployment-feature-toggles
 metadata:
   title: Implement blue-green deployment and feature toggles
   description: "Implement blue-green deployment and feature toggles"
-  ms.date: 11/01/2022
+  ms.date: 06/08/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement blue-green deployment and feature toggles
 summary: This module describes the blue-green deployment process and introduces feature toggle techniques to implement in the development process.
 abstract: |
@@ -16,7 +15,8 @@ abstract: |
   - Implement blue green deployment
   - Understand deployment slots
   - Implement and manage feature toggles&quot;
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/5-implement-blue-green-deployment-and-feature-toggles.svg
 levels:
 - advanced

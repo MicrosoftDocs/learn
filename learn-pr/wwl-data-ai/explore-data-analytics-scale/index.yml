@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.explore-data-analytics-scale
+metadata:
+  title: Explore data analytics at scale
+  description: "Describe data analytics at scale and understand the roles of a data team. Learn about the responsibilities of an enterprise data analyst and what tools are available to build scalable solutions."
+  ms.date: 06/08/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+title: Explore data analytics at scale
+summary: Describe data analytics at scale and understand the roles of a data team. Learn about the responsibilities of an enterprise data analyst and what tools are available to build scalable solutions.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore data job roles in analytics
+  - Understand tools for scaling analytics solutions
+prerequisites: |
+  - You should be familiar with basic data concepts and terminology.
+iconUrl: /training/achievements/explore-data-analytics-at-scale.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+products:
+- azure
+- azure-synapse-analytics
+- power-bi
+subjects:
+- data-analytics
+units:
+- learn.wwl.explore-data-analytics-scale.introduction
+- learn.wwl.explore-data-analytics-scale.explore-data-team-roles-responsibilities
+- learn.wwl.explore-data-analytics-scale.review-tasks-tools-for-data-analysts
+- learn.wwl.explore-data-analytics-scale.scale-analytics-with-azure-synapse-analytics-power-bi
+- learn.wwl.explore-data-analytics-scale.scale-analytics-with-an-analytics-center-excellence
+- learn.wwl.explore-data-analytics-scale.knowledge-check
+- learn.wwl.explore-data-analytics-scale.summary
+badge:
+  uid: learn.wwl.explore-data-analytics-at-scale.badge

@@ -2,17 +2,18 @@
 uid: learn.microservices-resiliency-aspnet-core.7-knowledge-check
 metadata:
   title: Knowledge check
-  description: Check your knowledge.
+  description: Test your knowledge of what you learned in this tutorial about resiliency.
   author: scottaddie
   ms.author: scaddie
-  ms.date: 08/04/2020
+  ms.manager: markl
+  ms.date: 05/09/2023
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial
 title: Knowledge check
 durationInMinutes: 7
 content: |
 quiz:
-  title: Check your knowledge
+  title: Check what you learned
   questions:
     - content: What's the primary goal when implementing a resiliency solution for an app?
       choices:
@@ -28,7 +29,7 @@ quiz:
         - content: Handling major infrastructure failures.
           isCorrect: false
           explanation: "Major infrastructure failures generally aren't transient and require manual intervention."
-    - content: Which of the following sentences is correct?
+    - content: Which of the following statements is correct?
       choices:
         - content: Polly is the best option to handle failures, but it requires a significant amount of work.
           isCorrect: false
@@ -43,7 +44,7 @@ quiz:
       choices:
         - content: CI/CD pipelines.
           isCorrect: true
-          explanation: "Continuous Integration/Continuous Deployment pipelines aren't required for resiliency."
+          explanation: "Continuous integration/continuous deployment pipelines aren't required for resiliency."
         - content: Health check probes for services.
           isCorrect: false
           explanation: "Kubernetes clusters use health checks to determine a service's state."

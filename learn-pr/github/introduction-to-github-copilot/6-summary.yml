@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github-copilot.summary
+title: Summary
+metadata:
+  title: summary
+  description: Review what you've learned.
+  ms.date: 5/2/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: github
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

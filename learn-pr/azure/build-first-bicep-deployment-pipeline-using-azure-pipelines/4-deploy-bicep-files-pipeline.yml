@@ -9,6 +9,10 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
+    - devx-track-bicep
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |

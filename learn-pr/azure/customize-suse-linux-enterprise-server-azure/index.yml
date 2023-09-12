@@ -8,7 +8,6 @@ metadata:
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Customize a SUSE Linux Enterprise Server virtual machine on Azure
 summary: Prepare a SUSE Linux Enterprise Server virtual machine for hosting web applications by installing software packages with YaST and zypper. 
 abstract: |

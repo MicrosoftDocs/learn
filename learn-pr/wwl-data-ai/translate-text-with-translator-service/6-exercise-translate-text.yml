@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.translate-text-with-translator-service.exercise
-title: Exercise - Translate text with the Translator service
+title: Exercise - Translate text with the Azure AI Translator service
 metadata:
-  title: Exercise - Translate text with the Translator service
-  description: "Exercise - Translate text with the Translator service"
+  title: Exercise - Translate text with the Azure AI Translator service
+  description: "Exercise - Translate text with the Azure AI Translator service"
   ms.date: 05/11/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labId: 99992
 labModal: true

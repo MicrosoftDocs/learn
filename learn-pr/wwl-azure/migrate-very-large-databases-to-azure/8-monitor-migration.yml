@@ -4,13 +4,11 @@ title: Monitor the migration
 metadata:
   title: Monitor the migration
   description: "Monitor the migration"
-  ms.date: 01/26/2022
+  ms.date: 04/27/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/8-monitor-migration.md)]

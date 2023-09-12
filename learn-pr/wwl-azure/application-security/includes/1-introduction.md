@@ -13,16 +13,16 @@ A security engineer uses application security to protect the usage of your appli
 
 Locking down applications and data is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
 
-Configure application security features (20-25%)
+Manage identity and access (25-30%)
 
- -  Configure and manage Key Vault
-     -  Manage access to Key Vault
-     -  Manage permissions to secrets, certificates, and keys
-     -  Manage certificates
-     -  Manage secrets
-     -  Configure key rotation
-     -  Backup and restore of Key Vault items
-     -  Configure Microsoft Defender for Cloud for Key Vault
+ -  Manage application access in Azure AD
+     -  Manage access to enterprise applications in Azure AD, including OAuth permission grants.<br>
+     -  Manage app registrations in Azure AD
+     -  Configure app registration permission scopes
+     -  Manage app registration permission consent
+     -  Manage and use service principals
+     -  Manage managed identities for Azure resources
+     -  Recommend when to use and configure authentication for an Azure AD Application Proxy
 
 ## Learning objectives
 

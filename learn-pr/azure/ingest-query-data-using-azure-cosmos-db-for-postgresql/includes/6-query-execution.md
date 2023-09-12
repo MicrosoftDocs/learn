@@ -1,30 +1,36 @@
 Before optimizing query performance for Woodgrove Bank, you must understand how distributed queries are run in Azure Cosmos DB for PostgreSQL. You must also understand the server parameters you can use to tune query execution. Every cluster consists of a single coordinator node and multiple worker nodes. This architecture enables compute, memory, and storage to scale across numerous PostgreSQL servers in the cloud but also adds complexity to query execution.
 
-:::image type="content" source="../media/distributed-database.svg" alt-text="Diagram of an Azure Cosmos DB for PostgreSQL cluster, with multiple worker nodes and a single coordinator node. The diagram also features arrows on the right and left, showing how more nodes can be added to scale out.":::
+:::image type="complex" source="../media/distributed-database.svg" alt-text="Diagram of an Azure Cosmos DB for PostgreSQL cluster with multiple worker nodes and a single coordinator node.":::
+   The diagram also features arrows on the right and left, showing how you can add more nodes to scale out.
+:::image-end:::
 
-The coordinator uses a query processing pipeline consisting of a distributed query planner and a distributed query executor. For each query issued to the cluster, the coordinator consults the metadata tables to build an execution plan and then passes that plan to the executor for execution.
+The coordinator uses a query-processing pipeline consisting of a distributed query planner and a distributed query executor. For each query issued to the cluster, the coordinator consults the metadata tables to build an execution plan and then passes that plan to the executor for execution.
 
-## Understand distributed query execution planning
+## Understand distributed-query execution planning
 
-The distributed query planner on the coordinator takes every query issued to the cluster and generates the plan for distributed execution. This plan is then parallelized across worker nodes. Optimizations are applied to ensure queries are executed in a scalable manner and that network I/O is minimized.
+The distributed-query planner on the coordinator takes every query issued to the cluster and generates the plan for distributed execution. This plan is then parallelized across worker nodes. Optimizations are applied to ensure queries are executed in a scalable manner and that network I/O is minimized.
 
 For queries containing a `WHERE` clause filtering for a specific distribution column value, the coordinator uses metadata tables to determine which shard to route the query to by hashing the distribution column of the row or rows involved in the query. These queries will only hit one shard, so the planning process is slightly different.
 
 Once the execution planner has identified the correct shard or shards, it rewrites the query plan to reference shard tables instead of the original table. Shard tables combine the original table name with the `shardid.` For example, suppose you issue an `UPDATE` query against Woodgrove Bank's `payment_events` table, and it's determined that shard 102104 contains the row to update. In that case, the query against the `payment_events` table will be rewritten to target `payment_events_102027` instead of `payment_events`.
 
-The planner breaks the query into a coordinator query, which runs on the coordinator, and worker query fragments, which run on individual shards. Query fragments are assigned to workers to allow their resources to be used efficiently.
+The planner breaks the query into a coordinator query (which runs on the coordinator) and worker query fragments (which run on individual shards). Query fragments are assigned to workers to allow their resources to be used efficiently.
 
-:::image type="content" source="../media/query-fragments.svg" alt-text="Diagram of a query that is taken by the coordinator node and rewritten into query fragments, which modify the table name in the original query to add an underscore followed by the shard ID. The query fragments are then sent to the worker nodes for execution.":::
+:::image type="complex" source="../media/query-fragments.svg" alt-text="Diagram of a query that is taken by the coordinator node and rewritten into query fragments.":::
+   The query fragment modify the table name in the original query to add an underscore followed by the shard ID. The query fragments are then sent to the worker nodes for execution.
+:::image-end:::
 
 The final step is for the coordinator to pass the distributed query plan on to the distributed executor for execution.
 
 ## What is the distributed query executor?
 
-Azure Cosmos DB for PostgreSQL uses a distributed query executor to split up regular SQL queries and run them in parallel on worker nodes close to the data. The distributed query executor is responsible for running distributed query plans and handling any failures.
+Azure Cosmos DB for PostgreSQL uses a distributed-query executor to split up regular SQL queries and run them in parallel on worker nodes close to the data. The distributed-query executor is responsible for running distributed-query plans and handling any failures.
 
-The distributed query executor is optimized for getting fast responses to queries involving filters, aggregations, and colocated joins and running single-tenant queries with full SQL coverage. Executing multi-shard queries requires balancing the gains from parallelism with the overhead of managing database connections. The query executor creates a connection pool for each session, opens one connection per shard to the workers as needed, and sends all fragment queries to them. It then fetches the results from each fragment query, merges them, and sends the final results back to the user.
+The distributed-query executor is optimized for getting fast responses to queries involving filters, aggregations, and colocated joins and running single-tenant queries with full SQL coverage. Executing multi-shard queries requires balancing the gains from parallelism with the overhead of managing database connections. The query executor creates a connection pool for each session, opens one connection per shard to the workers as needed, and sends all fragment queries to them. It then fetches the results from each fragment query, merges them, and sends the final results back to the user.
 
-:::image type="content" source="../media/executor-overview.svg" alt-text="Diagram of the query execution flow in Azure Cosmos DB for PostgreSQL. Query sessions are fragmented by the coordinator node and added to a task queue. Query fragments are then sent to session connection pools for execution on worker nodes.":::
+:::image type="complex" source="../media/executor-overview.svg" alt-text="Diagram of the query execution flow in Azure Cosmos DB for PostgreSQL.":::
+   In the diagram, query sessions are fragmented by the coordinator node and added to a task queue. Query fragments are then sent to session connection pools for execution on worker nodes.
+:::image-end:::
 
 ## Use EXPLAIN to understand query execution
 
@@ -32,7 +38,7 @@ The coordinator partitions an incoming query into fragment queries and sends the
 
 `EXPLAIN` can help you gain insights into query performance and view information about query execution planning. The `EXPLAIN` output shows how each worker processes the query and provides some details about how the coordinator node combines their results.
 
-For their dashboard, Woodgrove Bank would like a query that allows them to view the number of events by type per user, which can also be filtered on the `event_type`. The following example explains the plan for the query you created. You can also see the actual queries sent to the worker nodes by including the `VERBOSE` flag.
+For their dashboard, Woodgrove Bank would like a query that allows them to view the number of events by type per user, which they can also filter on the `event_type`. The following example explains the plan for the query you created. You can also see the actual queries sent to the worker nodes by including the `VERBOSE` flag.
 
 ```sql
 EXPLAIN VERBOSE
@@ -83,7 +89,7 @@ type AS worker_column_3, e.event_id AS worker_column_4 FROM (public.payment_even
                                                          Output: u.login, u.user_id
 ```
 
-The output of the `EXPLAIN` statement reveals several things about the query execution plan. Starting with the custom scan line, you can see the planner chose the **Citus Adaptive** executor to run this query. The task count reveals that there are 32 shards, and you're viewing one of the 32 tasks in the output.
+The `EXPLAIN` statement's output reveals several things about the query execution plan. Starting with the custom scan line, you can see the planner chose the **Citus Adaptive** executor to run this query. The task count reveals that there are 32 shards, and you're viewing one of the 32 tasks in the output.
 
 ```output
 ->  Custom Scan (Citus Adaptive)  (cost=0.00..0.00 rows=100000 width=80)
@@ -138,16 +144,16 @@ Various server parameters affect the behavior of your database. You can use thes
 
 You can find detailed information about all the available server parameters in the [server parameters documentation](/azure/postgresql/hyperscale/reference-parameters). The [Azure Cosmos DB for PostgreSQL API documentation](/azure/postgresql/hyperscale/reference-overview#server-parameters) also provides logical groupings of server parameters by function.
 
-The first step in the tuning process is to run the `EXPLAIN` command from the coordinator node on representative queries to inspect their performance. The information you derive from `EXPLAIN` can help you understand what parameters to tune. Adjusting worker node parameters is usually the place to start when attempting to optimize query performance. Changing parameters values on worker nodes can be accomplished either by using the **Worker node parameters** page in the Azure portal or by connecting directly to the worker node using the worker's fully qualified domain name and port.
+The first step in the tuning process is to run the `EXPLAIN` command from the coordinator node on representative queries to inspect their performance. The information you derive from `EXPLAIN` can help you understand what parameters to tune. Adjusting worker node parameters is usually the place to start when attempting to optimize query performance. You can change parameter values on worker nodes either by using the **Worker node parameters** page in the Azure portal or by connecting directly to the worker node using the worker's fully qualified domain name and port.
 
 > [!NOTE]
-> To connect directly to worker nodes requires the **Enable access to the worker nodes** checkbox to be selected on the **Networking** page of your Azure Cosmos DB for PostgreSQL resource in the Azure portal.
+> Connecting directly to worker nodes requires you to select the **Enable access to the worker nodes** checkbox on the **Networking** page of your Azure Cosmos DB for PostgreSQL resource in the Azure portal.
 >
-> :::image type="content" source="../media/enable-access-worker-nodes.png" alt-text="Screenshot of the Enable access to the worker nodes option, and the setting is highlighted on the Networking page of the Azure Cosmos DB for PostgreSQL resource in the Azure portal. Networking is highlighted and selected in the left-hand navigation menu.":::
+>:::image type="content" source="../media/enable-access-worker-nodes.png" alt-text="Screenshot of the Enable access to the worker nodes option on the Networking page of the Azure Cosmos DB for PostgreSQL resource.":::
 
-Tuning server parameters requires experimentation and often requires multiple attempts to achieve acceptable performance. As you make changes, run `EXPLAIN` again from the coordinator, or directly on the worker to evaluate the effect of the modification. As a general recommendation, it's best to iteratively tune your database using only a tiny portion of your data. Once you've adjusted a worker to achieve the desired performance, you must manually apply those changes to the other workers in the cluster.
+Tuning server parameters requires experimentation and often requires multiple attempts to achieve acceptable performance. As you make changes, run `EXPLAIN` again from the coordinator or directly on the worker to evaluate the effect of the modification. As a general recommendation, it's best to iteratively tune your database using only a tiny portion of your data. Once you've adjusted a worker to achieve the desired performance, you must manually apply those changes to the other workers in the cluster.
 
-Clusters within Azure Cosmos DB for PostgreSQL are configured with conservative resource settings by default. Among these settings, `shared_buffers` and `work_mem` are probably the most critical parameters in optimizing read performance. These parameters are briefly discussed below. Apart from these settings, several other configuration parameters can affect query performance. These settings are covered in more detail in the [Microsoft documentation](/azure/postgresql/hyperscale/reference-overview#query-execution).
+Clusters within Azure Cosmos DB for PostgreSQL are configured with conservative resource settings by default. Among these settings, `shared_buffers` and `work_mem` are probably the most critical parameters in optimizing read performance. These parameters are briefly discussed below. Apart from these settings, several other configuration parameters can affect query performance. You can learn about these settings in more detail in the [Microsoft documentation](/azure/postgresql/hyperscale/reference-overview#query-execution).
 
 ### Optimize read performance
 
@@ -163,7 +169,7 @@ In addition to the `shared_buffers` and `work_mem` parameter settings, the query
 
 The number of simultaneous connections that can be opened by individual queries is restricted by the [`citus.max_adaptive_executor_pool_size (integer)`](/azure/postgresql/hyperscale/reference-parameters#citusmax_adaptive_executor_pool_size-integer) server parameter. The default value for that setting is 16, but it's configurable at the session level for priority management. You should set `citus.max_adaptive_executor_pool_size (integer)` to a low value, like 1 or 2, for transactional workloads with short-running queries (for example, < 20 ms of latency). Leave this setting at its default value for analytical workloads where parallelism is critical.
 
-It's faster to execute tasks sequentially over the same connection for short tasks rather than establishing new connections to run in parallel. Long-running tasks, on the other hand, benefit from more immediate parallelism. To balance the needs of both short and long-running tasks, Azure Cosmos DB for PostgreSQL uses the [`citus.executor_slow_start_interval (integer)`](/azure/postgresql/hyperscale/reference-parameters#citusexecutor_slow_start_interval-integer) parameter. That setting specifies a delay between connection attempts for the tasks in a multi-shard query. When a query first queues tasks, the tasks can acquire just one connection. At the end of each interval where there are pending connections, the coordinator increases the number of simultaneous open connections. You should set `citus.executor_slow_start_interval (integer)` to a high value like 100 ms for transactional workloads comprised of short queries bound on network latency rather than parallelism. For analytical workloads, leave this setting at its default value of 10 ms. It's also possible to disable the slow start behavior entirely by setting its value to 0.
+It's faster to execute tasks sequentially over the same connection for short tasks rather than establishing new connections to run in parallel. Long-running tasks, on the other hand, benefit from more immediate parallelism. To balance the needs of both short and long-running tasks, Azure Cosmos DB for PostgreSQL uses the [`citus.executor_slow_start_interval (integer)`](/azure/postgresql/hyperscale/reference-parameters#citusexecutor_slow_start_interval-integer) parameter. That setting specifies a delay between connection attempts for the tasks in a multi-shard query. When a query first queues tasks, the tasks can acquire just one connection. At the end of each interval where there are pending connections, the coordinator increases the number of simultaneous open connections. You should set `citus.executor_slow_start_interval (integer)` to a high value like 100 ms for transactional workloads comprised of short queries bound on network latency rather than parallelism. For analytical workloads, leave this setting at its default value of 10 ms. You can also disable the slow start behavior entirely by setting its value to 0.
 
 When a task finishes using a connection, the session pool keeps the connection open to speed up subsequent commands. Caching the connection avoids the overhead of connection reestablishment between coordinator and worker. However, each pool will hold no more than [`citus.max_cached_conns_per_worker (integer)`](/azure/postgresql/hyperscale/reference-parameters#citusmax_cached_conns_per_worker-integer) idle connections open at once, to limit idle connection resource usage in the worker. Increasing this value reduces the latency of multi-shard queries but will also increase overhead on the workers. The default value of 1 for `citus.max_cached_conns_per_worker (integer)` is reasonable. A larger value such as 2 might be helpful for clusters that use a few concurrent sessions, but it isn't recommended to go much further (for example, 16 would be too high). If set too high, sessions unnecessarily hold idle connections and use worker resources.
 

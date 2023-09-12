@@ -22,8 +22,7 @@ roles:
 - k-12-educator
 - student
 products:
-- return-to-school
-- return-to-workplace
+- industry-solutions
 subjects:
 - cloud-computing
 modules:

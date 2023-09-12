@@ -66,7 +66,7 @@ release "eshoplearn-nosqldata" uninstalled
 
 The coupon service's ConfigMap file needs to be updated with the connection string for the Azure-managed database.
 
-In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `ConnectionString` key's value from `mongodb://nosqldata` to the connection string displayed from the creation script, as found in the next YAML fragment:
+In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `ConnectionString` key's value from `mongodb://nosqldata` to the connection string displayed from the creation script, as displayed in the following YAML fragment:
 
 :::code language="yaml" source="../code/deploy/k8s/helm-simple/coupon/templates/configmap.yaml" highlight="10":::
 
@@ -86,9 +86,9 @@ coupon-7474cfc46f-bcz5f            0/1     ContainerCreating   0          2s
 coupon-86b5766658-qbb6h            0/1     Terminating         2          38m
 ```
 
-When all the health checks return to a healthy status, sign out of run the app, then refresh your browser. Test the application as before to validate your changes were successful. When checking out, apply a coupon code `DISC-15` and observe a $15 USD discount is applied, and then place the order.
+When all the health checks return to a healthy status, sign out of run the app, then refresh your browser. Test the application as before to validate that your changes were successful. When checking out, apply a coupon code `DISC-15` and observe a $15 USD discount is applied, then place the order.
 
-:::image type="content" source="../media/coupon.png" alt-text="Shopping basket with discount coupon DISC-15 entered." lightbox="../media/coupon.png" border="true":::
+:::image type="content" source="../media/coupon.png" alt-text="Screenshot of the shopping basket with discount coupon DISC-15 entered." lightbox="../media/coupon.png" border="true":::
 
 ## Use the Azure Cosmos DB Data Explorer from the Azure portal
 
@@ -97,13 +97,13 @@ Upon submitting the order, the *order* service updates the status of the order t
 Use the Azure portal's **Data Explorer** tab to inspect the stored documents using the following steps:
 
 1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Azure CLI.
-1. Use the search box to find and open the CosmosDB resource prefixed with *:::no-loc text="eshoplearn":::*.
-1. Select **Data explorer** from the table on the left.
+1. Use the search box to find and open the Cosmos DB resource prefixed with *:::no-loc text="eshoplearn":::*.
+1. Select **Data explorer** from the menu on the left.
 1. Expand **CouponDb**.
 1. Expand **Coupon Collection**.
 1. Select and review the individual coupon documents.
 
-    :::image type="content" source="../media/cosmos-db-data-explorer.png" alt-text="Data explorer screenshot showing the coupon is flagged as consumed." lightbox="../media/cosmos-db-data-explorer.png" border="true":::
+    :::image type="content" source="../media/cosmos-db-data-explorer.png" alt-text="Screenshot of the Data explorer showing the coupon is flagged as consumed." lightbox="../media/cosmos-db-data-explorer.png" border="true":::
 
     In the preceding image, you can see the document for coupon `DISC-15`, showing it's been used.
 

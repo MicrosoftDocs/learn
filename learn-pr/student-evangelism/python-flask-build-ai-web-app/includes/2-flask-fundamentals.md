@@ -1,4 +1,4 @@
-Flask is an open-source web "micro-framework". When the creators use the term "micro-framework", they mean that the framework will perform the required tasks of a web framework, but that it doesn't include advanced features, or other specific requirements that your application must follow to work correctly. This approach allows Flask to be extremely flexible, and perfect for use as a front end to existing back ends or APIs - like Cognitive Services!
+Flask is an open-source web "micro-framework". When the creators use the term "micro-framework", they mean that the framework will perform the required tasks of a web framework, but that it doesn't include advanced features, or other specific requirements that your application must follow to work correctly. This approach allows Flask to be extremely flexible, and perfect for use as a front end to existing back ends or APIs - like Azure AI services!
 
 When creating a web application with any framework, there are a couple of core concepts we need to understand - routing, methods, and templating. Let's explore these concepts before we write our code.
 

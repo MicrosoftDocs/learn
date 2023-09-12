@@ -1,23 +1,24 @@
 It's easy to install SQL Server on SUSE by using the `zypper` tool.
 
-You're a database administrator at the wholesale company Wide World Importers. You want to benefit from SQL Server without having to change the server operating systems. By deploying SQL Server on a SUSE server, you'll configure the SQL Server package, and install command-line tools. SQL Server will then be ready for use by your developers.
+You're a database administrator at the wholesale company Wide World Importers. You want to benefit from SQL Server without having to change the server operating systems. After you deploy SQL Server on a SUSE server, you can configure the SQL Server package and install command-line tools. SQL Server is then ready for use by your developers.
 
-In this exercise, you'll see how to deploy SQL Server on SUSE, install command-line tools, and create a database on SQL Server.
+In this exercise, you see how to deploy SQL Server on SUSE, install command-line tools, and create a database.
 
 ## Create a SUSE Virtual Machine
 
-1. Using the cloud shell on the right, and Azure CLI commands to create a SUSE Enterprise server. This can take a couple of minutes to complete.
+1. Use the Cloud Shell sandbox and Azure CLI commands to create a SUSE Enterprise server. The [az vm create](/cli/azure/vm#az-vm-create) command can take a couple of minutes to complete.
 
     ```azurecli
     export PASSWORD=$(openssl rand -base64 32)
     az vm create \
         --name SLESSQLServer \
-        --image "SUSE:sles-12-sp5:gen1:latest" \
-        --size Standard_D2s_v3 \
+        --resource-group  <rgn>[sandbox resource group name]</rgn> \
         --admin-username suseadmin \
         --admin-password $PASSWORD \
+        --image "SUSE:sles-12-sp5:gen1:latest" \
         --nsg-rule SSH \
-        --resource-group  <rgn>[sandbox resource group name]</rgn>
+        --public-ip-sku Standard \
+        --size Standard_D2s_v3
     ```
 
 1. Store the public IP address of your server, and display the password.
@@ -30,22 +31,22 @@ In this exercise, you'll see how to deploy SQL Server on SUSE, install command-l
     echo $PASSWORD
     ```
 
-## Connect to the SUSE VM
+## Connect to the SUSE virtual machine
 
-Now you have a SUSE VM that's ready to install SQL Server, you connect to it by using Secure Shell (SSH):
+Now you have a SUSE VM that's ready to install SQL Server. Connect to it by using Secure Shell (SSH):
 
-1. In the Cloud Shell on the right, enter this command.
+1. In the Cloud Shell, run this command.
 
     ```bash
     ssh suseadmin@$IPADDRESS
     ```
 
-1. When asked if you're sure, type **yes**, and then press Enter.
-1. For the password, use the password displayed above, and then press Enter. SSH connects to the VM and shows a bash shell.
+1. When asked if you're sure, type *yes*.
+1. For the password, enter the displayed password from the earlier command, and then press **Enter**. SSH connects to the VM and shows a bash shell.
 
 ## Install the SQL Server package
 
-Now you'll install and configure SQL Server. The first task is installation:
+Now install and configure SQL Server. The first task is installation:
 
 1. To download the Microsoft SLES repository configuration file, run this command:
 
@@ -53,15 +54,15 @@ Now you'll install and configure SQL Server. The first task is installation:
     sudo zypper addrepo -fc https://packages.microsoft.com/config/sles/12/mssql-server-2019.repo
     ```
 
-1. If you're asked for a password, use the random password, and then press Enter.
+1. If you're asked for a password, use the random password.
 1. To refresh your repositories, run this command:
 
     ```bash
     sudo zypper --gpg-auto-import-keys refresh
     ```
 
-1. If any of the SUSE repositories is unavailable, type **i**, and then press Enter. If you're warned about a repository signed with an unknown key, type **yes**, and then press Enter.
-1. To install SQL Server, run this command, and type **y** to confirm:
+1. If any of the SUSE repositories is unavailable, type *i*, and then press **Enter**. If you're warned about a repository signed with an unknown key, type *yes*, and then press **Enter**.
+1. To install SQL Server, run this command, and type *y* to confirm:
 
     ```bash
     sudo zypper --no-gpg-checks install -y mssql-server
@@ -69,20 +70,20 @@ Now you'll install and configure SQL Server. The first task is installation:
 
 ## Configure SQL Server
 
-Before you use SQL Server, you must specify the edition that you want and the system administrator password:
+Before you use SQL Server, you must specify the edition that you want and the system administrator password.
 
-1. Type the following command, and then press Enter:
+1. Run the following command:
 
     ```bash
     sudo /opt/mssql/bin/mssql-conf setup
     ```
 
-1. If prompted, type your password, and then press Enter.
-1. To select the Evaluation edition, press **1**, and then press Enter.
-1. Type **Yes**, and press Enter to accept the license terms.
-1. For the system administrator password, type **Pa$$w0rd**, and then press Enter.
-1. Confirm the password, and then press Enter.
-1. To confirm that SQL Server 2019 is running, type this command:
+1. If prompted, enter your password.
+1. To select the **Evaluation edition**, press *1*.
+1. Type *Yes* to accept the license terms.
+1. For the system administrator password, type *Pa$$w0rd*, and then press **Enter**.
+1. Confirm the password.
+1. To confirm that SQL Server 2019 is running, run this command:
 
     ```bash
     systemctl status mssql-server --no-pager
@@ -90,25 +91,25 @@ Before you use SQL Server, you must specify the edition that you want and the sy
 
 ## Install SQL Server tools
 
-SQL Server is installed. Now you install the administrative tools:
+SQL Server is installed. Now install the administrative tools:
 
-1. To add the Microsoft SQL Server tools repository to **zypper**, run these commands:
+1. To add the Microsoft SQL Server tools repository to `zypper`, run these commands:
 
     ```bash
     sudo zypper addrepo -fc https://packages.microsoft.com/config/sles/12/prod.repo
     sudo zypper --gpg-auto-import-keys refresh
     ```
 
-1. If any of the SUSE repositories is unavailable, type **i**, and then press Enter. If you're warned about a repository signed with an unknown key, type **yes**, and then press Enter.
+1. If any of the SUSE repositories is unavailable, type *i*, and then press **Enter**. If you're warned about a repository signed with an unknown key, type *yes*.
 1. To install SQL Server command-line tools, run this command:
 
     ```bash
     sudo zypper --no-gpg-checks install -y mssql-tools unixODBC-devel
     ```
 
-1. Type **YES**, and press Enter to accept the ODBC license terms.
-1. Type **YES**, and press Enter to accept the license terms.
-1. To add the tools to the **PATH** environment variable, run these commands:
+1. Type *YES* to accept the ODBC license terms.
+1. Type *YES* to accept the license terms.
+1. To add the tools to the `PATH` environment variable, run these commands:
 
     ```bash
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
@@ -118,7 +119,7 @@ SQL Server is installed. Now you install the administrative tools:
 
 ### Create a database
 
-Now you can use the newly installed **sqlcmd** tool to create a database. Follow these steps:
+Now you can use the newly installed `sqlcmd` tool to create a database.
 
 1. To check whether SQL Server is running, run this command:
 
@@ -132,7 +133,7 @@ Now you can use the newly installed **sqlcmd** tool to create a database. Follow
     sudo systemctl start mssql-server
     ```
 
-1. Type the following command, and press Enter to connect to SQL Server:
+1. Run the following command to connect to SQL Server:
 
     ```bash
     sqlcmd -S localhost -U sa -P 'Pa$$w0rd'
@@ -152,4 +153,4 @@ Now you can use the newly installed **sqlcmd** tool to create a database. Follow
     GO
     ```
 
-1. To exit the `sqlcmd` tool and SSH, run the command `exit` twice.
+1. To exit the `sqlcmd` tool and SSH, run the command *exit* twice.

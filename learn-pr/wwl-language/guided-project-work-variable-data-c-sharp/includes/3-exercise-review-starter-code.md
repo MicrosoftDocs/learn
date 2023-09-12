@@ -1,7 +1,3 @@
-
-
-
-
 In this first step of the development process, you review the code provided in the Starter project folder.
 
 ## Review the contents of the Program.cs file

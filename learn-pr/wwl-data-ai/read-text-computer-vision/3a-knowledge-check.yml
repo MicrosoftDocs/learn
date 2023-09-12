@@ -4,28 +4,28 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/27/2023
+  ms.date: 08/18/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: artificial-intelligence
+  ms.subservice: computer-vision
 durationInMinutes: 2
 quiz:
+  title: ""
   questions:
-  - content: "You want to extract text from images and then use the Language service to analyze the text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?"
+  - content: "You want to extract text from images and then use Azure AI Language to analyze the text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?"
     choices:
     - content: "Computer Vision"
       isCorrect: false
-      explanation: "Incorrect. This resource type only supports image analysis. A separate resource (with its own key and endpoint) would be required for text analytics with the Language service."
-    - content: "Cognitive Services"
+      explanation: "Incorrect. This resource type only supports image analysis. A separate resource (with its own key and endpoint) would be required for text analytics with Azure AI Language."
+    - content: "Azure AI services"
       isCorrect: true
-      explanation: "Correct. A Cognitive Services resource supports both Computer Vision for text extraction, and Language for text analytics."
+      explanation: "Correct. An Azure AI services resource supports both Azure AI Computer Vision for text extraction, and Azure AI Language for text analytics."
     - content: "Language"
       isCorrect: false
-      explanation: "Incorrect. The Language service provides text analytics capabilities, but cannot extract text from images. A separate resource (with its own key and endpoint) would be required for text extraction from images."
-  - content: "You plan to use the Computer Vision service's Read API. What results can the Read API provide?"
+      explanation: "Incorrect. The Language resource provides text analytics capabilities, but cannot extract text from images. A separate resource (with its own key and endpoint) would be required for text extraction from images."
+  - content: "You plan to use Azure AI Computer Vision's Read API. What results can the Read API provide?"
     choices:
     - content: "Results arranged in pages, lines, and words"
       isCorrect: true

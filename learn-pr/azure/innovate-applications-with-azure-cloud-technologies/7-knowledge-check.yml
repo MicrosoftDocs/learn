@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 04/14/2023
-  author: jomore
-  ms.author: jomore
+  author: ssalgadodev
+  ms.author: ssalgado
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
@@ -67,9 +67,9 @@ quiz:
     - content: "Yes, with Azure Kubernetes Service."
       isCorrect: false
       explanation: "Azure Kubernetes Service can help in the build process by running any containerized application, including machine learning and AI. However, it's not essential to enrich an application with AI."
-    - content: "Yes, with prebuilt models such as Azure Cognitive Services."
+    - content: "Yes, with prebuilt models such as Azure AI services."
       isCorrect: true
-      explanation: "Azure Cognitive Services has prebuilt APIs ready to be embedded into any application without requiring data science skills."
+      explanation: "Azure AI services have prebuilt APIs ready to be embedded into any application without requiring data science skills."
     - content: "No, a data science department is always required."
       isCorrect: false
       explanation: "It's true that data scientists can build powerful models adapted to each organization's needs. However, there are other options if no data science expertise is available."

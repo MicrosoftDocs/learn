@@ -4,25 +4,24 @@ title: Exercise - Investigate string formatting basics
 metadata:
   title: Exercise - Investigate string formatting basics
   description: "Exercise - Investigate string formatting basics"
-  ms.date: 04/25/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 20
 content: |
   [!include[](includes/2-string-formatting-basics.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which is the output of `Console.WriteLine($\"Tax rate: {tax:P1}\");`, where `tax` is defined by `decimal tax = .12051m;`?"
+  - content: "Which is the output of `Console.WriteLine($\"Tax rate: {tax:P1}\");`, where `tax` is defined by `decimal tax =.12051 m;`?"
     choices:
-    - content: "`Tax rate: 12.05 %`"
+    - content: "`Tax rate: 12.05%`"
       isCorrect: false
-      explanation: "Incorrect. `tax:P1` rounds the percentage to a single decimal place."
-    - content: "`Tax rate: 12.10 %`"
+      explanation: "Incorrect. `tax: P1` rounds the percentage to a single decimal place."
+    - content: "`Tax rate: 12.10%`"
       isCorrect: false
-      explanation: "Incorrect. `tax:P1` rounds the percentage to a single decimal place."
-    - content: "`Tax rate: 12.1 %`"
+      explanation: "Incorrect. `tax: P1` rounds the percentage to a single decimal place."
+    - content: "`Tax rate: 12.1%`"
       isCorrect: true
-      explanation: "Correct. `tax:P1` rounds the percentage to a single decimal place."
+      explanation: "Correct. `tax: P1` rounds the percentage to a single decimal place."

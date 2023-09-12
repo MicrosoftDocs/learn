@@ -4,11 +4,10 @@ title: 'Exercise - Set breakpoints '
 metadata:
   title: Exercise - Set breakpoints
   description: "Exercise - Set breakpoints"
-  ms.date: 03/24/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 6
 content: |
   [!include[](includes/5-exercise-set-breakpoints.md)]

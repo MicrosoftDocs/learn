@@ -1,36 +1,38 @@
-In the previous unit, you saw how to use the Azure portal to create an Azure Cognitive Services account.
+In the previous unit, you learned how to use the Azure portal to create an Azure AI services account.
 
-In this exercise, you'll create an Azure Cognitive Services account using the Azure Command Line Interface (CLI).
+In this exercise, you'll create an Azure AI services account using the Azure CLI.
 
-The applications that you'll create in the upcoming exercises will use this account to perform the speech-to-text operations.
+The applications that you'll create in the upcoming exercises use this account to perform the speech to text operations.
 
-## Create an Azure Cognitive Services account
+<a name='create-an-azure-ai-services-account'></a>
 
-1. In the Cloud Shell on the right, create a variable to hold the name of the resource group that was created for you when you activated the Learn sandbox.
+## Create an Azure AI services account
+
+1. In the Cloud Shell on the right, create a variable to hold the name of the resource group that was created for you when you activated the Learn sandbox:
 
     ```bash
     RESOURCEGROUP=<rgn>[sandbox resource group name]</rgn>
     ```
 
-1. Create another variable to hold the region where your resource group is located.
+1. Create another variable to hold the region where your resource group is located:
 
     ```bash
     LOCATION=$(az group show --name $RESOURCEGROUP | jq -r '.location')
     ```
 
-1. You'll need the location when you create your application, so use the following command to list the contents of the `$LOCATION` variable, then copy that value for later.
+1. You'll need the location when you create your application, so use the following command to list the contents of the `$LOCATION` variable, then copy that value for later:
 
     ```bash
     echo $LOCATION
     ```
 
-1. Create another variable that will contain your account name.
+1. Create another variable to contain your account name:
 
     ```bash
     ACCOUNT=learn-account-$RANDOM
     ```
 
-1. Create your Azure Cognitive Services account.
+1. Create your Azure AI services account:
 
     ```azurecli
     az cognitiveservices account create \
@@ -42,18 +44,18 @@ The applications that you'll create in the upcoming exercises will use this acco
         --yes
     ```
 
-    Where:
+    In the preceding code:
 
     | Value | Description |
     | --- | --- |
-    | **name** | Specifies the unique name for your Azure Cognitive Services account. |
+    | **name** | Specifies the unique name for your Azure AI services account. |
     | <nobr>**resource-group**</nobr> | Specifies the name of your resource group. |
-    | **kind** | Specifies the account type, which is _SpeechServices_ for this exercise since we'll be creating a speech-to-text application.<br /><br />See `az cognitiveservices account list-kinds` for a list of account types. |
-    | **sku** | Specifies the SKU for the account, which is the free _F0_ tier for this exercise.<br /><br />See `az cognitiveservices account list-skus` for a list of account SKUs.  |
+    | **kind** | Specifies the account type, which is *SpeechServices* for this exercise because we'll be creating a speech to text application.<br /><br />See `az cognitiveservices account list-kinds` for a list of account types. |
+    | **sku** | Specifies the SKU for the account, which is the free *F0* tier for this exercise.<br /><br />See `az cognitiveservices account list-skus` for a list of account SKUs.  |
     | **location** | Specifies the location for the account. |
     | **yes** | Suppresses the prompt for terms confirmation. |
 
-    This command should take a few seconds to complete, and you'll see a JSON response from Azure like the following example when the command has finished.
+    This command should take a few seconds to complete. You'll get a JSON response from Azure like the following example when the command finishes:
 
     ```json
     {
@@ -79,9 +81,11 @@ The applications that you'll create in the upcoming exercises will use this acco
     }
     ```
 
-## Retrieve the keys for your Azure Cognitive Services account
+<a name='retrieve-the-keys-for-your-azure-ai-services-account'></a>
 
-When your Azure Cognitive Services account has been created, use the following command to list the keys.
+## Retrieve the keys for your Azure AI services account
+
+When your Azure AI services account has been created, use the following command to list the keys:
 
 ```azurecli
 az cognitiveservices account keys list \
@@ -89,8 +93,8 @@ az cognitiveservices account keys list \
    --resource-group $RESOURCEGROUP
 ```
 
-You should see a JSON response like the following example.
-    
+You should see a JSON response like the following example:
+
 ```json
 {
    "key1": "0123456789abcdef0123456789abcdef",
@@ -98,4 +102,4 @@ You should see a JSON response like the following example.
 }
 ```
 
-Copy the value for either key, you'll use that key when you create your application in a later exercise.
+Copy the value for either key; you'll use that key when you create your application in a later exercise.

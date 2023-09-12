@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/14/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "A data scientist trains a regression model and wants to track the model's performance by storing the Root Mean Squared Error (RMSE) with the experiment run. Which method can be used to log the RMSE?"
     choices:

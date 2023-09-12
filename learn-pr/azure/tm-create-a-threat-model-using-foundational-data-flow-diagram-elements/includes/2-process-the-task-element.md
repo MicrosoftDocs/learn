@@ -1,19 +1,19 @@
 ![Rendering of a circle representing the Process Element.](../media/process.png)
 
-Depicted by a circle, this element represents activities that can modify or redirect received input to their proper outputs.
+The **process element** is depicted as a circle. It represents activities that can modify or redirect received input to their proper outputs.
 
 Examples include:
 
-- A microservice that receives an API call request and forwards it to an API handling service
-- Code that validates data input before it writes to a data store
+- A microservice that receives an API call request and forwards it to an API handling service.
+- Code that validates data input before it writes to a data store.
 
 ## When to use the process element
 
 Add a process element between:
 
-- **Data stores**: Processes handle all communication between data stores
-- **External entities with other elements**: Processes handle all tasks and communication
-- **Processes**: Processes handle all tasks
+- **Data stores**: Processes handle all communication between data stores.
+- **External entities with other elements**: Processes handle all tasks and communication.
+- **Processes**: Processes handle all tasks.
 
 Depending on the information-depth level required for a data-flow diagram, you may use the process element to represent a few distinct use cases:
 
@@ -24,7 +24,7 @@ Depending on the information-depth level required for a data-flow diagram, you m
 
 ## Include context
 
-Include the following context to each process element:
+Include the following context with each process element:
 
 |Context|Questions|
 |-------|---------|

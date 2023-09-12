@@ -4,12 +4,10 @@ title: Plan
 metadata:
   title: Plan
   description: "Plan"
-  ms.date: 09/20/2020
+  ms.date: 08/23/2023
   author: wwlpublish
-  ms.author: rknapp
+  ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/4-plan.md)]

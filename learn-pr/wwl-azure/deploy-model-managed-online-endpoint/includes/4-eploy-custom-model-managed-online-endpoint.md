@@ -1,5 +1,3 @@
-
-
 You can choose to deploy a model to a managed online endpoint without using the MLflow model format. To deploy a model, you'll need to create the scoring script and define the environment necessary during inferencing.
 
 To deploy a model, you need to have created an endpoint. Then you can deploy the model to the endpoint.
@@ -52,7 +50,7 @@ Your deployment requires an execution environment in which to run the scoring sc
 
 You can create an environment with a Docker image with Conda dependencies, or with a Dockerfile.
 
-To create an environment using a base Docker image, you can define the Conda dependencies in a `conda.yaml` file:
+To create an environment using a base Docker image, you can define the Conda dependencies in a `conda.yml` file:
 
 ```yml
 name: basic-env-cpu
@@ -73,7 +71,7 @@ from azure.ai.ml.entities import Environment
 
 env = Environment(
     image="mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04",
-    conda_file="./src/conda-env.yml",
+    conda_file="./src/conda.yml",
     name="deployment-environment",
     description="Environment created from a Docker image plus Conda environment.",
 )

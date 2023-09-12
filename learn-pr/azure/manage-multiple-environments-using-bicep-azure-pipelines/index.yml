@@ -8,8 +8,9 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: engagement-fy23
+  ms.service: azure-devops-pipelines
+  ms.devlang: bicep
 title: Manage multiple environments by using Bicep and Azure Pipelines
 summary: |
   Deploy your Bicep code to multiple environments to improve the quality of your deployments. Use pipeline templates to reduce code duplication, and set parameter values for each environment.

@@ -1,4 +1,4 @@
-Before you begin writing code that retrieves and displays metrics in an app, you want to connect to the REST API and observe data that is available. To do this, you'll use the **curl** command-line tool to send a request.
+Before you begin writing code that retrieves and displays metrics in an app, connect to the REST API and observe the data that is available. To make this connection, use the **curl** command-line tool to send a request.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use the REST API to retrieve metrics.
@@ -6,7 +6,7 @@ Before you begin writing code that retrieves and displays metrics in an app, you
 
 ## Create a storage account
 
-You must start by creating the Azure Storage account that will send data to Azure Monitor. Follow these steps:
+Start by creating the Azure Storage account that sends data to Azure Monitor. Follow these steps:
 
 1. Go to the [Azure portal](https://portal.azure.com/) and in the left nav bar, select **Create a resource**.
 
@@ -20,7 +20,7 @@ You must start by creating the Azure Storage account that will send data to Azur
     | Subscription | Select your subscription |
     | Resource group | Select **Create new**. Provide a name for the new resource group, and select **OK**. For example, you could use **videostorageresources**. |
     | Under **Instance details** section: |
-    | Storage account name | Enter a unique name. This must be all lower case and unique to Azure. For example, you could use **&lt;yourname&gt;videostorage**, if that is not already in use. Make a note of the name you use. |
+    | Storage account name | Enter a name that is all lower case and unique to Azure. For example, you could use **&lt;yourname&gt;videostorage**, if that isn't already in use. Make a note of the name you use. |
     | Location | Select a location near you. |
     | *Other settings* | Leave *default*. |
 
@@ -30,11 +30,11 @@ You must start by creating the Azure Storage account that will send data to Azur
 
 ## Obtain the required values
 
-In order to retrieve metrics from Azure Monitor that relate to your new storage account, you must identify that storage account uniquely in your request. You do this by including the storage account name, resource group name, and subscription ID in the request URL. You already know the name of the storage account but you must determine the resource group name and the subscription ID. Follow these steps:
+To retrieve metrics from Azure Monitor that relate to your new storage account, identify the storage account uniquely in your request by including the storage account name, resource group name, and subscription ID in the request URL. You already know the name of the storage account but you must determine the resource group name and the subscription ID. Follow these steps:
 
-1. When the storage account has been created, in the portal, select **All resources**, and then select the storage account you created.
+1. When the storage account has been created, select **Go to resource**. Or, select **All resources**, and then select the storage account you created.
 
-1. Carefully make a note of the following values, which are shown at the top of the **Overview** page:
+1. In the **Essentials** section of the **Overview** page, carefully make a note of the following values:
 
     - **Resource group**
     - **Subscription ID**
@@ -43,7 +43,7 @@ In order to retrieve metrics from Azure Monitor that relate to your new storage 
 
 ## Send queries to the REST API
 
-A REST API responds to requests sent through the HTTP protocol. For this reason, we can use the **curl** tool to send those requests and receive data in JSON format. To do this you need to pass an authentication token with your request and formulate the request URL carefully. Follow these steps:
+A REST API responds to requests sent through the HTTP protocol. Use the **curl** tool to send those requests and receive data in JSON format, by passing an authentication token with your request and formulating the request URL carefully. Follow these steps:
 
 1. In the Azure portal, select **Cloud Shell (&gt;_)** on the toolbar at the top of the window, and, if prompted, select the **Bash** shell option.
 

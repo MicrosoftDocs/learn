@@ -1,6 +1,7 @@
+
 Microsoft 365 Defender is an integrated threat protection suite with solutions that detect malicious activity across email, endpoints, applications, and identity. These solutions provide a complete attack chain compromise story that enables a complete understanding of the threat. And, enables you to remediate and protect your organization from future attacks.
 
-In the sample attack chain graphic below, see the attacker activity visible to each Microsoft 365 Defender product.
+In the sample attack chain graphic example, see the attacker activity visible to each Microsoft 365 Defender product.
 
 :::image type="content" source="../media/defend-across-attack-chains.png" alt-text="Diagram of Microsoft 365 Defender tools to Defend across attack chains.":::
 

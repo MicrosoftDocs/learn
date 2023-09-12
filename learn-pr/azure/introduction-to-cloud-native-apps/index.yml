@@ -7,7 +7,6 @@ metadata:
   author: tomreidnz
   ms.author: jasdeb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to cloud-native apps on Azure
 summary: This module teaches concepts and ideas associated with cloud-native apps. We cover selecting Open-Source Software (OSS) components like Kubernetes and PostgreSQL, as well as unique Azure tools like Cosmos DB. We’ll also identify situations that call for building cloud-native apps, and review selecting components in an example scenario.
 abstract: |

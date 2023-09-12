@@ -1,8 +1,8 @@
 Create an IoT Central application for your IoT Edge devices to connect to and be managed from.
 
-You want to create an IoT Central application to test integration with your store management application.
+Recall that you plan to deploy an IoT Edge device in each store to manage the local sensors and filter the data that's sent to IoT Central.
 
-In this unit, you'll use the Azure CLI to create an IoT Central application from the **Custom application** template. You'll run the CLI commands in the Azure sandbox and then navigate to the application's web UI. In the web UI, you complete the setup by adding a device template for your IoT Edge device.
+Here, you'll use the Azure CLI to create an IoT Central application from the **Custom application** template. You'll run the CLI commands in the Azure sandbox and then navigate to the application's web UI. In the web UI, you complete the setup by adding a device template for your IoT Edge device.
 
 ## Download the deployment manifest
 
@@ -128,13 +128,13 @@ You're now ready to publish the template and add a device:
 
 1. Select the **Environmental Sensor Edge** device template and then select **+ New**.
 
-1. In the **Create a new device** dialog, enter *store-001* as the device ID. Make sure that the device template is **Environmental Sensor Edge**. The **Azure IoT Edge device?** is already set to **Yes**. Then select the **Environmental Sensor** deployment manifest.
-
-1. Still in the **Create a new device** dialog, select the **Environmental Sensor Edge Device** device template. Select **Create**.
+1. In the **Create a new device** dialog, enter *store-001* as the device ID. Make sure that the device template is **Environmental Sensor Edge Device**. The **Azure IoT Edge device?** is already set to **Yes**. Then select **Environmental Sensor** as the edge manifest. Select **Create**.
 
 1. The **store-001** device appears in the list of devices with the status **Registered**.
 
     :::image type="content" source="../media/3-registered-device.png" alt-text="Screenshot that shows the registered device in the device list.":::
+
+## Check your work
 
 1. In the list of devices, click on the device name **Environmental Sensor Edge Device - store-001**. You can see the available views for the device, including **Store information** and **View IoT Edge device telemetry**.
 

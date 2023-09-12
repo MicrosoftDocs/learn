@@ -53,11 +53,11 @@ To learn more about GitHub notifications, see [Configuring notifications](https:
 
 :::image type="content" source="../media/2-branching.png" alt-text="GitHub flow with a feature branch. Changes made to a branch can be merged back into the main branch." border="false":::
 
-To learn more about GitHub branches, see [About branches](https://help.github.com/github/collaborating-with-issues-and-pull-requests/about-branches?azure-portal=true).
+To learn more about GitHub branches, see [About branches](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches).
 
 ## Commits
 
-A **commit** is a change to one or more files on a branch. Every time a commit is created, it's assigned a unique ID and tracked, along with the time and contributor. This provides a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
+A **commit** is a snapshot of a change or changes to one or more files on a branch. Every time a commit is created, it's assigned a unique ID and tracked, along with the time and contributor. This provides a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
 
 :::image type="content" source="../media/2-commits.png" alt-text="A list of GitHub commits to a main branch." border="false":::
 

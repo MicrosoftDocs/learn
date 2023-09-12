@@ -4,13 +4,10 @@ title: Identify Azure data migration options
 metadata:
   title: Identify Azure data migration options
   description: "Identify Azure data migration options"
-  ms.date: 11/29/2022
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/6-identify-azure-data-migration-options.md)]

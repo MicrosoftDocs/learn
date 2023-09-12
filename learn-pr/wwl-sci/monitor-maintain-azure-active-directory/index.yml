@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
 title: Monitor and maintain Azure Active Directory
 summary: Azure AD audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
 abstract: |
@@ -31,7 +31,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-domain
 - azure-log-analytics
 - azure-monitor
 - entra

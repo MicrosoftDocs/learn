@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-medallion-architecture.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/24/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following sets of layers are typically associated with the Medallion Architecture for data management?"
+    choices:
+    - content: "Raw, Polished, Refined"
+      isCorrect: false
+      explanation: "Incorrect. These terms don't align with the specific layers commonly used in the medallion architecture."
+    - content: "Bronze, Silver, Gold"
+      isCorrect: true
+      explanation: "Correct. Bronze, silver, gold is the correct sequence of layers typically used in the medallion architecture. Data flows from the raw and unrefined state (bronze) to a curated and validated state (silver), and finally to an enriched and well-structured presentation state (gold)."
+    - content: "Initial, Intermediate, Final"
+      isCorrect: false
+      explanation: "Incorrect. While these terms suggest a progression, they don't correspond to the widely recognized layers of the medallion architecture."
+  - content: "Which tool is best suited for data transformation in Fabric when dealing with large-scale data that will continue to grow?"
+    choices:
+    - content: "Dataflows (Gen2)"
+      isCorrect: false
+      explanation: "Incorrect. Dataflows (Gen2) are effective for smaller datasets."
+    - content: "Pipelines"
+      isCorrect: false
+      explanation: "Incorrect. Pipelines are primarily used for data orchestration, moving data between different layers and processes within the medallion architecture."
+    - content: "Notebooks"
+      isCorrect: true
+      explanation: "Correct. Notebooks are a more suitable tool for data transformation with big data in Fabric."
+  - content: "What is the benefit of storing different layers of your lakehouse in separate workspaces?"
+    choices:
+    - content: "It can enhance security, manage capacity use, and optimize cost-effectiveness."
+      isCorrect: true
+      explanation: "Correct. Storing different layers of your lakehouse in separate workspaces enhances security and optimizes cost-effectiveness."
+    - content: "It makes it easier to share data with colleagues."
+      isCorrect: false
+      explanation: "Incorrect. Storing different layers of your lakehouse in separate workspaces does not make it easier to share data with colleagues."
+    - content: "There's no benefit of storing different layers of your lakehouse in separate workspaces."
+      isCorrect: false
+      explanation: "Incorrect.  There is a benefit of storing different layers of your lakehouse in separate workspaces."

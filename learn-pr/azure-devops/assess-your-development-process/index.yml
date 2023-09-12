@@ -8,8 +8,8 @@ metadata:
   author: chcomley
   ms.author: chcomley
   ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
-  ms.prod: learning-azure
+  ms.service: azure-devops
+  manager: mijacobs
 title: Assess your existing software development process
 summary: Use a value stream map to help you examine your existing processes and technologies.
 abstract: |

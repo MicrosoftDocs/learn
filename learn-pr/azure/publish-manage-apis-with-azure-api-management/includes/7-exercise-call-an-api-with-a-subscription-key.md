@@ -1,20 +1,26 @@
-A subscription key is used to restrict access to an API.
+A subscription key is one way to restrict access to an API.
 
-In the shoe company example, NorthWind Shoes are working with a supplier and want them to directly access the Inventory API. Partner access must be secure, and use a subscription key for all calls to the API.
+In the shoe company example, NorthWind Shoes are working with a supplier and want them to directly access the Inventory API. Partner access must be restricted using a subscription key for all calls to the API.
 
-Here, you'll find the subscription key for your API. You'll then test access to the API with and without the subscription key.
+Here, you'll obtain a subscription key for your API. You'll then test access to the API with and without the subscription key.
 
 ## Obtain subscription key
 
-Partners are given their key as part of an onboarding process. In this exercise, you'll use the administrator key. Once you've got a key, you follow the same process for using the key in API calls.
+Partners are given their key as part of an onboarding process. In this exercise, you'll add a subscription specifically for the NorthWindShoes API. Once you've got a key, you follow a standard process for using the key in API calls.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-
-1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your API gateway.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your API Management instance.
 
 1. In the left menu pane, under **APIs**, select **Subscriptions**.
 
-1. Select the context menu (...) for the **Built-in all-access subscription**, and then select **Show/hide keys**.
+1. Select **+ Subscription**, and enter the following values for each setting. Then select **Create**.
+
+    | Setting | Value |
+    | --------- | --------- |
+    | Name | `NorthWind` |
+    | Display name | `NorthWind subscription`|
+    | Scope | Select **API**,  and then select **NorthWindShoes Products** from the dropdown list.
+
+1. Select the context menu (...) for the **Northwind subscription**, and then select **Show/hide keys**.
 
 1. Select the **Click to copy** button for the **PRIMARY KEY**.
 

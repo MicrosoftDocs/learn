@@ -5,8 +5,8 @@ metadata:
   title: Supporting color and high contrast
   description: Support default color and high contrast Windows settings in your app.
   ms.date: 5/24/2019
-  author: PeterTurcan
-  ms.author: v-pettur
+  author: Karl-Bridge-Microsoft
+  ms.author: kbridge
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
   

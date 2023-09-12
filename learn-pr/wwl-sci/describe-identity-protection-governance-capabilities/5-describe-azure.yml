@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-azure
-title: Describe Azure Identity Protection
+title: Describe Microsoft Entra ID Protection
 metadata:
-  title: Describe Azure Identity Protection
-  description: "Describe Azure Identity Protection"
+  title: Describe Microsoft Entra ID Protection
+  description: "Describe Microsoft Entra ID Protection"
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: ceperezb
