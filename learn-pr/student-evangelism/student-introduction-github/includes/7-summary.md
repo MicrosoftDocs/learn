@@ -1,0 +1,3 @@
+In this module, we have covered a range of topics related to Git and GitHub. We began by exploring the concept of version control and its significance in managing changes while working with a team of developers.
+
+ We then delved into the specifics of GitHub and how it facilitates collaborative work with Git. You have gained an understanding of when to use GitHub and how to set it up, as well as the importance of pull requests for reviewing changes before they are saved to the repository. Overall, Git and GitHub are a powerful combination for enabling team-based code authoring, whether it be among students or in a professional setting.

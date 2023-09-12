@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.student-introduction-github.knowledge-check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge."
+  ms.date: 9/7/2023
+  author: v-regandowner
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Knowledge check
+durationInMinutes: 10
+content: |
+quiz:
+  questions:
+  - content: "What is the purpose of version control in software development?"
+    choices:
+    - content: "Enhancing individual coding skills."
+      isCorrect: false
+      explanation: "Incorrect. Version control helps developers collaborate, track, and manage changes to code."
+    - content: "Tracking changes, managing collaboration, and ensuring project success."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Promoting healthy competition among developers."
+      isCorrect: false
+      explanation: "Incorrect. Version control helps developers collaborate, track, and manage changes to code."
+  - content: "What is the primary function of a repository in version control systems like Git?"
+    choices:
+    - content: "Storing all project files and their version history, serving as a central hub for collaboration."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Storing personal notes and ideas."
+      isCorrect: false
+      explanation: "Incorrect. A repository in version control assists in collaboration and versioning."
+    - content: "Organizing project files into different categories."
+      isCorrect: false
+      explanation: "Incorrect. A repository in version control assists in collaboration and versioning."
+  - content: "What is the purpose of a commit in Git?"
+    choices:
+    - content: "A commit is a request to merge changes into the main branch."
+      isCorrect: false
+      explanation: "Incorrect. A commit is a snapshot of changes made to files at a specific point in time, along with an explanation of the changes."
+    - content: "A commit is a snapshot of changes made to files at a specific point in time, along with an explanation of the changes."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "A commit is a unique identifier for a developer's profile."
+      isCorrect: false
+      explanation: "Incorrect. A commit is a snapshot of changes made to files at a specific point in time, along with an explanation of the changes."
+  - content: "How does GitHub aid collaborative development in software projects? "
+    choices:
+    - content: "By automatically fixing bugs in the code."
+      isCorrect: false
+      explanation: "Incorrect. GitHub doesn't automatically fix bugs, but it does help developers collaborate and manage changes to code."
+    - content: "By providing a platform for multiple developers to work simultaneously without any communication."
+      isCorrect: false
+      explanation: "Incorrect. GitHub helps developers collaborate and manage changes to code, but it doesn't replace communication."
+    - content: "By maintaining a history of changes, allowing code reviews, and facilitating task management."
+      isCorrect: true
+      explanation: "Correct!"
+  - content: "What is the purpose of a pull request in GitHub? "
+    choices:
+    - content: "A pull request is a way to request access to a private repository."
+      isCorrect: false
+      explanation: "Incorrect. A pull request is a request to merge the changes from one branch into another."
+    - content: "A pull request is a notification sent to team members about a new feature."
+      isCorrect: false
+      explanation: "Incorrect. A pull request is a request to merge the changes from one branch into another."
+    - content: "A pull request is a request to merge the changes from one branch into another, allowing for code review and discussion."
+      isCorrect: true
+      explanation: "Correct!"
