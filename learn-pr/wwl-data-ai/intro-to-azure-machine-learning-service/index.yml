@@ -30,6 +30,5 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.data-ai.intro-to-azure-machine-learning-service.using-azure-ml
 badge:
   uid: learn.data-ai.intro-to-azure-machine-learning-service.badge
