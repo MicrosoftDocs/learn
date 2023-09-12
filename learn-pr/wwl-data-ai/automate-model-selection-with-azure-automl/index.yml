@@ -31,7 +31,6 @@ subjects:
 - machine-learning
 units:
 - learn.data-ai.automate-model-selection-with-azure-automl.introduction
-- learn.data-ai.automate-model-selection-with-azure-automl.automl-algorithms
 - learn.data-ai.automate-model-selection-with-azure-automl.automl-preprocessing
 - learn.data-ai.automate-model-selection-with-azure-automl.automl-experiments
 - learn.data-ai.automate-model-selection-with-azure-automl.using-automl
