@@ -29,7 +29,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.create-pipelines-in-aml.step-reuse
-- learn.wwl.create-pipelines-in-aml.publishing-pipelines
 - learn.wwl.create-pipelines-in-aml.scheduling-pipelines
 - learn.wwl.create-pipelines-in-aml.summary
 badge:
