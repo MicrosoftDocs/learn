@@ -189,19 +189,13 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. In the **Sources** box, select **Add sources**. The **Add Sources** pane appears. 
  
-1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list. Note that it's associated with your resource group, and you have an error warning that the Network Watch extension isn't enabled for your VMs.
+1. On the **Azure endpoints** tab, select **Subnet**, ensure your subscription is selected, and then select **BackendSubnet** from the list.
 
-1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)** and note that your *BackendVM* and *FrontendVM* Azure endpoints are listed.
+    :::image type="content" source="../media/3-enable-network-watcher.png" alt-text="Screenshot that shows enabling of Network Watcher backend subnet.":::
 
-1. At the far right of each endpoint in the list, select the ellipsis, and then select **Enable Network Watcher Extension**. It may take some time for each endpoint to deploy. Watch for a Deployment succeeded notification. You could also select the Notifications icon in your global controls at the top right to read your recent notification events.
+1. Select **Add endpoints**. In the **Sources** box with the BackendSubnet identified as your source. Select this endpoint, select **Edit**, and rename it to **BackendSubnet**, then select **Save**.
 
-    :::image type="content" source="../media/3-enable-network-watcher.png" alt-text="Screenshot that shows enabling of Network Watcher.":::
-
-1. Select **BackendVM** from the expanded Azure endpoint list.
-
-1. Select **Add endpoints**. The **Add test group details** pane reappears with the BackendSubnet identified as your source. Select this endpoint, select **Edit**, and rename it to **BackendVM**. 
-
-1. Select **Save**. The **Add test group details** reappears with your BackendVM identified a source Azure endpoint.
+    :::image type="content" source="../media/3-update-endpoint-name-network-watcher.png" alt-text="Screenshot that shows editing endpoint name.":::
 
 1. In the **Test configurations** box, select **Add Test configuration**. The **Add Test configuration** pane appears.
 
@@ -217,13 +211,9 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. Select **Add Test configuration** to add this test configuration to your test group.  The **Add test group details** reappears with your test configuration identified.
 
-1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** pane appears. 
+1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** pane appears.
 
-1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
-
-1. At the bottom of the pane, expand **Selected destinations (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
-
-1. Select **FrontendVM** from the expanded Azure endpoint list.
+1. On the **Azure endpoints** tab, select **Subnet**, ensure your subscription is selected, and then select **FrontendSubnet** from the list.
 
 1. Select **Add endpoints**. The **Add test group details** reappears with the FrontendSubnet identified as your destination.  
 
@@ -233,7 +223,7 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. Select **Review + create** and **Create**.
 
-If your test does not appear on the **Connection Monitor** pane, select the **Refresh** button. The results of the Back-to-front-HTTP-test should show that, because the NSG is associated with the backend subnet, traffic flows without issues from the backend VM to the frontend VM.
+If your test doesn't appear on the **Connection Monitor** pane, select the **Refresh** button. The results of the Back-to-front-HTTP-test should show that, because the NSG is associated with the backend subnet, traffic flows without issues from the backend VM to the frontend VM.
 
 ## Use Connection Monitor to run tests from the frontend to the backend
 
@@ -251,13 +241,11 @@ Run the same test in the opposite direction. Let's set up another test in Connec
 
 1. Select **Next : Test groups**. The **Add test group details** pane appears.
 
-1. In **Test group name**, enter *Front-to-back-HTTP-test-group*, then select **Add sources** in the Sources box. The **Add Sources** pane appears. 
+1. In **Test group name**, enter *Front-to-back-HTTP-test-group*, then select **Add sources** in the Sources box. The **Add Sources** pane appears.
 
-1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and select **MyVNet1** from the list.
+1. On the **Azure endpoints** tab, select **Subnet**, ensure your subscription is selected, and then select **FrontSubnet** from the list.
 
-1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)**, and then select **FrontendVM** from the list.
-
-1. Select **Add endpoints**. The **Add test group details** pane reappears. Select **Edit** and change the source endpoint name to *FrontendSubnet*.
+1. Select **Add endpoints**. In the **Sources** box with the BackendSubnet identified as your source. Select this endpoint, select **Edit**, and rename it to **FrontendSubnet**, then select **Save**.
 
 1. In the **Test configurations** box, select **Add Test configuration**. The **Add Test configuration** pane appears.
 
@@ -273,13 +261,9 @@ Run the same test in the opposite direction. Let's set up another test in Connec
 
 1. Select **Add Test configuration**. The **Add test group details** reappears with your test configuration identified.
 
-1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** pane appears. 
+1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** pane appears.
 
-1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
-
-1. At the bottom of the pane, expand **Selected destinations (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
-
-1. Select **BackendVM** from the expanded Azure endpoint list.
+1. On the **Azure endpoints** tab, select **Subnet**, ensure your subscription is selected, and then select **BackendSubnet** from the list.
 
 1. Select **Add endpoints**. The **Add test group details** pane reappears with the BackendSubnet identified as your destination.
 
@@ -289,7 +273,7 @@ Run the same test in the opposite direction. Let's set up another test in Connec
 
 1. Select **Review + create** and **Create**.
 
-If your test does not appear on the **Connection Monitor** pane, select the **Refresh** button. The results of the Front-to-back-HTTP-test should show that, because the NSG is associated with the backend subnet, no traffic flows from the frontend VM to the backend VM.
+If your test doesn't appear on the **Connection Monitor** pane, select the **Refresh** button. The results of the Front-to-back-HTTP-test should show that, because the NSG is associated with the backend subnet, no traffic flows from the frontend VM to the backend VM.
 
 ## Use IP flow verify to test the connection
 
