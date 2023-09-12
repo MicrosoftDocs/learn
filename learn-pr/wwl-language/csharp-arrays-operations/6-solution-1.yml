@@ -4,11 +4,10 @@ title: Review a solution to the reverse words in a sentence challenge
 metadata:
   title: Review a solution to the reverse words in a sentence challenge
   description: "Review a solution to the reverse words in a sentence challenge"
-  ms.date: 05/02/2023
+  ms.date: 07/26/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/6-solution-1.md)]

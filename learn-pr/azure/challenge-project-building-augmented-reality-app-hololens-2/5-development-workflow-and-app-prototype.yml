@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-project-building-augmented-reality-app-hololens-two.development-workflow-and-app-prototype
+title: Development Workflow and App Prototype
+metadata:
+  title: Development workflow and app prototype
+  description: "This unit describes how to create a development workflow and app prototype for a HoloLens app."
+  ms.date: 7/25/2023
+  author: tholewis
+  ms.author: tholewis
+  ms.topic: interactive-tutorial
+  ms.prod: hololens
+durationInMinutes: 60
+content: |
+  [!include[](includes/5-development-workflow-and-app-prototype.md)]

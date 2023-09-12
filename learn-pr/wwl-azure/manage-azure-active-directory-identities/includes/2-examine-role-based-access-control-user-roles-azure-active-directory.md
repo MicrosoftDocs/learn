@@ -1,8 +1,8 @@
 
 
-Azure AD has a SaaS operational model and lacks support for computer objects and management capabilities via Group Policy settings. Therefore, the delegation model within Azure AD is considerably simpler than the same model in AD DS. There are several built-in roles in all three tiers, including Global Administrator, Billing Administrator, Service Administrator, User Administrator, and Password Administrator. Each role provides different levels of directory-wide permissions to its objects. By default, the Service Administrator of the subscription hosting the Azure AD instance is its Global Administrator, with full permissions to all objects in their directory instance.
+Azure AD has a SaaS operational model and lacks support for computer objects and management capabilities via Group Policy settings. Therefore, the delegation model within Azure AD is considerably simpler than the same model in AD DS. There are several built-in roles in all three tiers, including Global Administrator, Billing Administrator, Service Administrator, User Administrator, and Password Administrator. Each role provides different levels of directory-wide permissions to its objects. By default, the Account Administrator of the subscription hosting the Azure AD instance is assigned as the Global Administrator, with full permissions to all objects in their directory instance. The Service Administrator, however, has more limited permissions and isn't the same as the Global Administrator by default.
 
-Using the delegation model, you can grant permissions to applications registered in an Azure AD tenant to its users and groups and manage the delegation process. The specifics of these capabilities depend on the Azure AD edition (tier). For example, you can assign applications to individual users in Azure AD Free. With the Azure AD Premium P1 edition, you can create assignments based on group membership. The Premium P2 edition further extends this functionality by offering delegated and self-service group management, allowing users to create and manage their groups, request membership in groups created by others, and access additional Identity Governance features such as Privileged Identity Management (PIM).
+In Azure AD, using the delegation model, you can delegate permissions to applications, allowing them to act on behalf of users and groups. The depth and breadth of these delegation capabilities vary based on the Azure AD edition. With Azure AD Free, you can assign applications to both users and groups. The Azure AD Premium P1 edition enhances this by offering more advanced assignment capabilities, such as dynamic group membership based on user attributes. The Premium P2 edition builds upon this by introducing features like self-service group management, where users can create and manage their own groups, and Privileged Identity Management (PIM), which is part of the suite of Identity Governance tools, allowing users to elevate their privileges temporarily.
 
 Azure AD users can access Azure AD applications by using the web-based portal, referred to as My Apps, at *https://myapps.microsoft.com*. This portal automatically presents to the users all applications for which they have permissions. Another benefit of using this approach is the support for SSO. When starting an individual application from its interface, authentication happens automatically once users sign in to the portal.
 
@@ -32,20 +32,20 @@ Within Azure AD, you can configure users with the following roles:
  -  **Global Administrator**. This role has access to all administrative features and settings. When you sign up for the Azure subscription, you become a Global Administrator. Only this role can assign administrative roles to other accounts.
  -  **Limited administrator**. When you select the Limited administrator role for the user, you can then select one or more of the following administrative roles (the list can vary based on applications that are using your Azure AD):
     
-     -  Password administrator
-     -  Service administrator
-     -  Billing administrator
-     -  Exchange administrator
-     -  Skype for Business administrator
-     -  User administrator
-     -  SharePoint administrator
-     -  Compliance administrator
-     -  Security reader
-     -  Security administrator
-     -  Privileged role administrator
-     -  Intune Service administrator
-     -  Guest inviter
-     -  Conditional Access Administrator
+     -  **Password Administrator** can reset passwords for users and manage service requests.
+     -  **Service Administrator** can manage service requests.
+     -  **Billing Administrator** can manage billing information.
+     -  **Exchange Administrator** can manage Exchange Online settings.
+     -  **Skype for Business Administrator** can manage Skype for Business Online settings.
+     -  **User Administrator** can manage user accounts and groups.
+     -  **SharePoint Administrator** can manage SharePoint Online settings.
+     -  **Compliance administrator** can manage compliance settings.
+     -  **Security reader** can read security settings.
+     -  **Security Administrator** can manage security settings.
+     -  **Privileged role Administrator** can manage privileged roles.
+     -  **Intune Administrator** can manage Intune settings.
+     -  **Guest inviter** can invite guest users to the organization.
+     -  **Conditional Access Administrator** can manage conditional access settings.
  -  **User**. This is a default role that doesn't provide any administrative rights.
 
 These roles are applicable to management tools such as the Microsoft 365 and Intune portals, or the Azure AD module for Windows PowerShell cmdlets. When you’re using Privileged Identity Management, you can also configure the Security reader and Security administrator roles.

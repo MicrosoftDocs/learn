@@ -1,4 +1,3 @@
-
 Instead of managing each agent individually, you organize agents into agent pools. An agent pool defines the sharing boundary for all agents in that pool.
 
 In Azure Pipelines, pools are scoped to the entire organization so that you can share the agent machines across projects.

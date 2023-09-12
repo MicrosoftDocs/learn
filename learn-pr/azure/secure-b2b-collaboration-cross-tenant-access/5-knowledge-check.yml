@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-collaboration-cross-tenant-access.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 08/03/2023
+  manager: CelesteDG
+  author: msmimart
+  ms.author: mimart
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "How would you make sure that no one from any external Azure AD organization can use B2B collaboration to access your applications?"
+    choices:
+    - content: "Configure your organizational settings to block inbound B2B collaboration."
+      isCorrect: false
+      explanation: "Try again. Organizational settings apply to a specific Azure AD organization only. If you want to block access by all external organizations, you would configure your default inbound settings for B2B collaboration."
+    - content: "Configure your default cross-tenant access settings to block all outbound B2B collaboration."
+      isCorrect: false
+      explanation: "Try again. Outbound settings apply to cases where your users are invited to external organizations for B2B collaboration. In this case, you would want to block all inbound B2B collaboration so that external users can't access applications in your organization."
+    - content: "Configure your default cross-tenant access settings to block all inbound B2B collaboration."
+      isCorrect: true
+      explanation: "Correct."
+  - content: "In addition to cross-tenant access settings, what are some other settings that affect B2B collaboration with other organizations?"
+    choices:
+    - content: "Cross-tenant access settings are the only settings that affect B2B collaboration."
+      isCorrect: false
+      explanation: "Try again. Cross-tenant access settings let you apply access policies to your collaboration with other Azure AD organizations. External collaboration settings give you additional controls over collaboration with any organization."
+    - content: "External collaboration settings"
+      isCorrect: true
+      explanation: "Correct. External collaboration settings apply to collaboration with any organization (not just other Azure AD organizations). They let you determine who can invite external users, block individual domains, and define guest users' access to your directory."
+    - content: "Organizational sharing configuration"
+      isCorrect: false
+      explanation: "Try again. This isn't one of the settings available in Azure AD."
+  - content: "Where can you configure a setting to trust multi-factor authentication from all other Azure AD organizations?"
+    choices:
+    - content: "Cross-tenant access settings"
+      isCorrect: true
+      explanation: "Correct. In your default cross-tenant access settings, you can enable the **Trust setting** named **Trust multifactor authentication from Azure AD tenants**."
+    - content: "External collaboration settings"
+      isCorrect: false
+      explanation: "Try again. The **Trust multifactor authentication from Azure AD tenants** is one of the options available in cross-tenant access settings."
+    - content: "You can only trust multi-factor authentication from individual organizations"
+      isCorrect: false
+      explanation: "Try again. You can trust multi-factor authentication by default (for all external Azure AD organizations) or for individual Azure AD organizations."

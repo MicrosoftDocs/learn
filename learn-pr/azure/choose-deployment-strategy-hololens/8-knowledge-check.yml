@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-deployment-strategy-hololens.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This unit checks the user's understanding of deployment scenarios for a HoloLens."
+  ms.date: 7/12/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: hololens
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "In a bustling corporate headquarters, employees wearing HoloLens 2 devices connect to a secure internal Wi-Fi network, accessing corporate resources and applications. From immersive training programs to real-time data visualization during team meetings, the HoloLens devices seamlessly integrate with the company's network, enhancing productivity and fostering collaboration within the corporate environment. Which deployment scenario is best for the company?"
+    choices:
+    - content: "Corporate Connected Environment"
+      isCorrect: true
+      explanation: "In this scenario, devices are connected to a corporate wi-fi network. This scenario is most suitable for internal users or within the corporate environment."
+    - content: "Offline Secure Environment"
+      isCorrect: false
+      explanation: "In this scenario, devices are connected to a highly restrictive network or are purely offline devices. This scenario is most suitable for highly secure environments, or internet connectivity restrictions in remote areas."
+    - content: "Cloud Connected Environment"
+      isCorrect: false
+      explanation: "In this scenario, devices are connected to cloud services and public internet. This scenario is most suitable for customer use cases, field services, and proof of concept."
+  - content: "In a multinational manufacturing company, technicians wearing HoloLens 2 devices are seamlessly connected to cloud services and the public internet as they perform complex machinery repairs on customer sites worldwide. Using real-time data, remote assistance, and advanced AR applications, the technicians collaborate with experts and access vital information to ensure efficient and accurate maintenance, maximizing uptime and customer satisfaction. Which deployment scenario is best for the manufacturing company?"
+    choices:
+    - content: "Corporate Connected Environment"
+      isCorrect: false
+      explanation: "In this scenario, devices are connected to a corporate wi-fi network. This scenario is most suitable for internal users or within the corporate environment."
+    - content: "Offline Secure Environment"
+      isCorrect: false
+      explanation: "In this scenario, devices are connected to a highly restrictive network or are purely offline devices. This scenario is most suitable for highly secure environments, or internet connectivity restrictions in remote areas."
+    - content: "Cloud Connected Environment"
+      isCorrect: true
+      explanation: "In this scenario, devices are connected to cloud services and public internet. This scenario is most suitable for customer use cases, field services, and proof of concept."
+  - content: "In a remote research station nestled deep in the Arctic, scientists utilize HoloLens 2 devices to support their research. Despite limited connectivity to the outside world, the scientists use the devices to conduct groundbreaking experiments, collaborate on data analysis, and visualize complex scientific concepts, enabling them to push the boundaries of knowledge even in the harshest and most remote conditions. Which deployment scenario is best for the scientists?"
+    choices:
+    - content: "Corporate Connected Environment"
+      isCorrect: false
+      explanation: "In this scenario, devices are connected to a corporate wi-fi network. This scenario is most suitable for internal users or within the corporate environment."
+    - content: "Offline Secure Environment"
+      isCorrect: false
+      explanation: "In this scenario, devices are connected to a highly restrictive network or are purely offline devices. This scenario is most suitable for highly secure environments, or internet connectivity restrictions in remote areas."
+    - content: " Near-Offline or Isolated Environment"
+      isCorrect: true
+      explanation: "In this scenario, devices are connected via a restricted network then used on this network, or taken offline with periodic reconnects for management. This scenario is most suitable for restricted or offline scenarios where access to cloud or administrator tools are still desired."
+  - content: "In a high-security government facility, operatives equipped with HoloLens 2 devices perform critical missions in an isolated environment with no external network connectivity. Operatives access secure holographic data and specialized applications, enabling them to carry out covert operations and safeguard classified information without the risk of external network vulnerabilities. Which deployment scenario is best for the government facility?"
+    choices:
+    - content: "Corporate Connected Environment"
+      isCorrect: false
+      explanation: "In this scenario, devices are connected to a corporate wi-fi network. This scenario is most suitable for internal users or within the corporate environment."
+    - content: "Offline Secure Environment"
+      isCorrect: true
+      explanation: "In this scenario, devices are connected to a highly restrictive network or are purely offline devices. This scenario is most suitable for highly secure environments, or internet connectivity restrictions in remote areas."
+    - content: "Near-Offline or Isolated Environment"
+      isCorrect: false
+      explanation: "In this scenario, devices are connected via a restricted network then used on this network, or taken offline with periodic reconnects for management. This scenario is most suitable for restricted or offline scenarios where access to cloud or administrator tools are still desired."

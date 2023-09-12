@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/13/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -37,7 +36,7 @@ quiz:
     - content: "Delete"
       isCorrect: false
       explanation: "Incorrect. The four basic Terraform commands needed for creating and applying a Terraform execution plan are Init, Plan, Apply, and Destroy"
-  - content: "When running an Ansible playbook to configure a multiple server solution, such as with 5 VMs in a network, how many servers will need to install Ansible?"
+  - content: "When running an Ansible playbook to configure a multiple server solution, such as with 5 VMs in a network, how many servers need to install Ansible?"
     choices:
     - content: "One"
       isCorrect: true

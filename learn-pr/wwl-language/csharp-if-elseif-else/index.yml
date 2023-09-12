@@ -3,7 +3,7 @@ uid: learn.languages.csharp-if-elseif-else
 metadata:
   title: Add decision logic to your code using `if`, `else`, and `else if` statements in C#
   description: "Add decision logic to your code using `if`, `else`, and `else if` statements in C#"
-  ms.date: 06/14/2023
+  ms.date: 08/30/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

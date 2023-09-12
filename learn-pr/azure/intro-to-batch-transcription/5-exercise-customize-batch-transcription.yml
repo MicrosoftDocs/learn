@@ -13,4 +13,4 @@ durationInMinutes: 15
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/5-exercise-customize-batch-transcription.md)]
+  [!INCLUDE[](includes/5-exercise-customize-batch-transcription.md)]

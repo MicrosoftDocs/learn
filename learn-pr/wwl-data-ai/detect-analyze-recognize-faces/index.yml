@@ -3,9 +3,10 @@ uid: learn.wwl.detect-analyze-recognize-faces
 metadata:
   title: Detect, analyze, and recognize faces
   description: "Detect, analyze, and recognize faces"
+  ms.service: cognitive-services
   ms.date: 07/13/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
 title: Detect, analyze, and recognize faces
 summary: The ability for applications to detect human faces, analyze facial features and emotions, and identify individuals is a key artificial intelligence capability.
@@ -13,7 +14,7 @@ abstract: |
   After completing this module, you will be able to:
   - Identify options for face detection, analysis, and identification
   - Understand considerations for face analysis
-  - Detect faces with the Computer Vision service
+  - Detect faces with the Azure AI Vision service
   - Understand capabilities of the Face service
   - Compare and match detected faces
   - Implement facial recognition
@@ -29,7 +30,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
+- ai-services
 - azure-computer-vision
 - azure-face
 subjects:

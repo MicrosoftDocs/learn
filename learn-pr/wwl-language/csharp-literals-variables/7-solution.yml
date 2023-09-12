@@ -4,11 +4,10 @@ title: Review the solution
 metadata:
   title: Review the solution
   description: "Review the solution"
-  ms.date: 05/04/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/7-solution.md)]

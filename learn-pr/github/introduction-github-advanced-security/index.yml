@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to GitHub Advanced Security          # Do not edit: title must be "Introduction to (product)"
   description: "This module will help you become familiar with GitHub's Advanced Security features and best practices. As you learn about these features, you'll identify critical areas for eliminating security gaps."             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 09/15/2022             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 07/13/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
@@ -12,11 +12,11 @@ title: Introduction to GitHub Advanced Security
 summary: "This module will help you become familiar with GitHub's Advanced Security features and best practices. As you learn about these features, you'll identify critical areas for eliminating security gaps."
 abstract: |
   By the end of this module, you'll be able to:
-    - Define GitHub Advanced Security
-    - Identify the purpose of specific GitHub Advanced Security features
-    - Understand the value of a security-focused team culture
-    - Highlight the roles involved in securing your workflow
-    - Recognize best practices for identifying and responding to security vulnerabilities
+    - Define GitHub Advanced Security.
+    - Identify the purpose of specific GitHub Advanced Security features.
+    - Understand the value of a security-focused team culture.
+    - Highlight the roles involved in securing your workflow.
+    - Recognize best practices for identifying and responding to security vulnerabilities.
 prerequisites: |
   - A GitHub Enterprise Cloud or Enterprise Server account with GitHub Advanced Security
   - Working knowledge of GitHub Actions and workflows

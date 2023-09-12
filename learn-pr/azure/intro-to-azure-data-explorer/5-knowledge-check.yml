@@ -41,7 +41,7 @@ quiz:
     choices:
     - content: "Big data storage data optimized for batching non-interactive queries."
       isCorrect: false
-      explanation: "Azure Data Explorer is optimized for exploratory, interactive queries. It is suitable for both batching and streaming data."
+      explanation: "Azure Data Explorer is optimized for exploratory, interactive queries. It's suitable for both batching and streaming data."
     - content: "Big data solution for data transformations."
       isCorrect: false
       explanation: "Azure Data Explorer is designed for data queries, not data transformations"
@@ -52,29 +52,29 @@ quiz:
     choices:
     - content: "Control commands can be used for maintenance and policy tasks."
       isCorrect: true
-      explanation: "Control commands include the creation of new cluster or databases, data connections, auto scaling, cluster configurations, entities, metadata objects, and security policies."
+      explanation: "Control commands include: The creation of new clusters or databases, data connections, auto scaling, cluster configurations, entities, metadata objects, and security policies."
     - content: "A query."
       isCorrect: false
       explanation: "Queries are used for interactive data analytics."
     - content: "A way to visualize data."
       isCorrect: false
       explanation: "Data can be visualized with the native dashboard experience, or with connectors to external services such as Power BI and Grafana."
-  - content: "Which of the following is an appropriate use case for Azure Data Explorer?" 
+  - content: "Which of the following tasks is an appropriate use case for Azure Data Explorer?" 
     choices:
     - content: "Log and Text analytics"
       isCorrect: true
-      explanation: "This is an excellent use case for Azure Data Explorer."
+      explanation: "Log and Text analytics is an excellent use case for Azure Data Explorer."
     - content: "In-memory batching processing of petabytes of information."
       isCorrect: false
-      explanation: "Azure Data Explorer is optimized to leverage indexed data for fast analytics response."
+      explanation: "Azure Data Explorer is optimized to use indexed data for fast analytics response."
     - content: "Real-time analytics"
       isCorrect: false
-      explanation: "Azure Data Explorer should not be used for real-time analytics. It's used for NEAR real-time analytics."
+      explanation: "Azure Data Explorer shouldn't be used for real-time analytics. It's used for NEAR real-time analytics."
   - content: "Which aspect of an extract, transform, and load (ETL) process makes it unsuitable for Azure Data Explorer. "
     choices:
     - content: "Long running tasks."
       isCorrect: true
-      explanation: "Azure Data Explorer is not optimized for long running tasks. As such running massive nightly ETL jobs on Azure Data Explorer is not recommended."
+      explanation: "Azure Data Explorer isn't optimized for long running tasks. It isn't recommended that you run massive nightly ETL jobs on Azure Data Explorer."
     - content: "Large volumes of data for ingestion."
       isCorrect: false
       explanation: "Azure Data Explorer is built as a big data analytics platform."

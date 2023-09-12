@@ -4,13 +4,12 @@ title: Improve data path performance between networks with ExpressRoute FastPath
 metadata:
   title: Improve data path performance between networks with ExpressRoute FastPath
   description: "Improve data path performance between networks with ExpressRoute FastPath"
-  ms.date: 06/13/2023
+  ms.date: 07/11/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/9-improve-data-path-performance-between-networks-expressroute-fastpath.md)]

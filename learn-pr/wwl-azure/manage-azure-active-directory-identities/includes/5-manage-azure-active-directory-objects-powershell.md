@@ -40,8 +40,6 @@ You can then use Microsoft Azure Active Directory module for Windows PowerShell 
 ```
 $users = Import-Csv C:\Users.csv
 
-$users = Import-Csv C:\Users.csv
-
 $users | ForEach-Object {
 
 New-MsolUser -UserPrincipalName $_.UserName -FirstName $_.FirstName -LastName

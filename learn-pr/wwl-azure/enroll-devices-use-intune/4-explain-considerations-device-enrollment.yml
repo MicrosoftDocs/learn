@@ -4,11 +4,10 @@ title: Explain considerations for device enrollment
 metadata:
   title: Explain considerations for device enrollment
   description: "Explain considerations for device enrollment"
-  ms.date: 05/09/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/4-explain-considerations-device-enrollment.md)]

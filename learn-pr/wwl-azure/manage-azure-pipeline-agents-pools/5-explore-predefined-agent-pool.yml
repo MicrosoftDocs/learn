@@ -4,12 +4,13 @@ title: Explore predefined agent pool
 metadata:
   title: Explore predefined agent pool
   description: "Explore predefined agent pool"
-  ms.date: 06/29/2023
+  ms.date: 07/13/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: azure
-  ms.service: azure-devops
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/5-explore-predefined-agent-pool.md)]

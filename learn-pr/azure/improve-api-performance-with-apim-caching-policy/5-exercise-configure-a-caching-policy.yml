@@ -3,14 +3,14 @@ uid: learn.azure.improve-api-performance-with-apim-caching-policy.5-exercise-con
 title: Exercise - Configure a caching policy
 metadata:
   title: Exercise - Configure a caching policy
-  description: In this unit, you will create a new instance of API Management and use it to set up an API cache.
-  ms.date: 05/15/2022
+  description: In this unit, you create a new instance of API Management and configure it to use an external API cache.
+  ms.date: 07/12/2023
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 25
-azureSandbox: true
+azureSandbox: false
 interactive: bash
 content: |
   [!include[](includes/5-exercise-configure-a-caching-policy.md)]
