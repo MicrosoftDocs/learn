@@ -2,7 +2,7 @@ In this exercise, you'll construct the UI for the phone dialer app and implement
 
 You'll build a UI that takes advantage of the UI capabilities of .NET MAUI and the .NET MAUI Essentials package to dial the phone.
 
-The app will let the user type text into an input field, and will translate that text to numeric digits. It will use the letters that show up on a telephone keypad as the basis for translation. For example, the letters **cab** translate to **222** because the digit **2** has all three letters **abc**.
+The app will let the user type text into an input field, and will translate that text to numeric digits. It will use the letters that show up on a telephone keypad as the basis for translation. For example, the letters **cab** translate to **222** because the digit **2** has all three letters **a**, **b**, and **c**.
 
 You'll continue with the Phoneword solution you created in the previous exercise.
 
@@ -10,15 +10,15 @@ You'll continue with the Phoneword solution you created in the previous exercise
 
 1. Open the **Phoneword** solution in Visual Studio if you don't already have it open.
 
-1. In the Solution Explorer window, right-click the **Phoneword** project, select **Add**, and then select **Class**.
+1. In the Solution Explorer window, right-click the **Phoneword** project, select **Add**, and select **Class**.
 
-1. In the **Add New Item** dialog box, name the class file **PhonewordTranslator.cs**, and then select **Add**.
+1. In the **Add New Item** dialog box, name the class file **PhonewordTranslator.cs**, then select **Add**.
 
     :::image type="content" source="../media/6-add-new-item.png" alt-text="A screenshot of the Add new item dialog box. The user has named the class file PhonewordTranslator.cs":::
 
 ## Add the translation logic
 
-Replace the content of the class file with the following code. The static method `ToNumber` in the `PhonewordTranslator` class will translate the number from alphanumeric text into a regular numeric phone number.
+Replace the content of the class file with the following code and save the file. The static method `ToNumber` in the `PhonewordTranslator` class translates the number from alphanumeric text into a regular numeric phone number.
 
 ```csharp
 using System.Text;
@@ -87,7 +87,6 @@ public static class PhonewordTranslator
     </ContentPage>
     ```
 
-
 1. Add a `VerticalStackLayout` control with vertical orientation and a spacing of 15 units and padding of 20 units to the ContentPage:
 
     ```xml
@@ -141,7 +140,7 @@ public static class PhonewordTranslator
 
 ## Respond to the **TranslateButton** button tap
 
-1. In the Solution Explorer window, expand the **MainPage.xaml** file, and then open the **MainPage.xaml.cs** code-behind file.
+1. In the Solution Explorer window, expand the **MainPage.xaml** entry and open the **MainPage.xaml.cs** code-behind file.
 
 1. In the `MainPage` class, remove the `count` variable and the `OnCounterClicked` method. The class should look like this:
 
@@ -161,7 +160,7 @@ public static class PhonewordTranslator
 
 
     ```csharp
-    public class MainPage : ContentPage
+    public partial class MainPage : ContentPage
     {
         ...
         string translatedNumber;
@@ -212,7 +211,7 @@ public static class PhonewordTranslator
 1. Add the `OnCall` event handling method to the end of the `MainPage` class. This method will make use of asynchronous operations, so mark it as `async`:
 
     ```csharp
-    public class MainPage : ContentPage
+    public partial class MainPage : ContentPage
     {
     
         ...
@@ -290,7 +289,7 @@ public static class PhonewordTranslator
 
     The following steps show how to update the Android application manifest to enable Android to use the phone dialer. Windows, iOS, and MacCatalyst, applications follow the same general principle, except that you specify a different operating-system dependent capability in the manifest.
 
-1. In the Solution Explorer window, expand the **Platforms** folder, expand the **Android** folder, and open the **AndroidManifest.xml** file in this folder.
+1. In the Solution Explorer window, expand the **Platforms** folder, expand the **Android** folder, right-click the **AndroidManifest.xml** file, and select **Open with** > **Automatic Editor Selector (XML)**. Select **OK**.
 
 1. Add the following XML snippet inside the **manifest** node, after the existing content for this node.
 
@@ -311,7 +310,7 @@ public static class PhonewordTranslator
 
 1. In the Visual Studio toolbar, select the **Android Emulators/Pixel 3a - API 30** (or similar) profile and start debugging.
 
-1. When the app appears in the emulator, enter a phone number (or accept the default) tap **Translate**, and then tap **Call**.
+1. When the app appears in the emulator (this can take a few minutes), enter a phone number (or accept the default) select **Translate**, then select **Call**.
 
 1. In the **Dial a Number** alert, select **Yes**. Verify that the Android phone dialer appears with the number you provided in the app.
 
@@ -321,4 +320,4 @@ public static class PhonewordTranslator
 
 ## Summary
 
-In this exercise, you've added a custom UI to your application by using pages and views. You also added support for placing a call by using platform-specific APIs available in Android.
+In this exercise, you added a custom UI to your application by using pages and views. You also added support for placing a call by using platform-specific APIs available in Android.
