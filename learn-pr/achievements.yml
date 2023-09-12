@@ -2157,3 +2157,8 @@ achievements:
   title: Train a machine learning model with Azure Machine Learning
   summary: Learn how to use Azure Machine Learning to train a model and register it in a workspace.
   iconUrl: /training/achievements/train-local-model-with-azure-mls-badge.svg
+- uid: learn.wwl.create-pipelines-in-aml.badge
+  type: badge
+  title: Orchestrate machine learning with pipelines
+  summary: Orchestrating machine learning training with pipelines is a key element of DevOps for machine learning. In this module, you'll learn how to create, publish, and run pipelines to train models in Azure Machine Learning.
+  iconUrl: /training/achievements/create-pipelines-in-aml-badge.svg
