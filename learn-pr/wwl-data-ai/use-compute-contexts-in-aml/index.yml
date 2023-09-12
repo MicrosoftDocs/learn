@@ -29,7 +29,6 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.wwl.use-compute-contexts-in-aml.using-compute
 - learn.wwl.use-compute-contexts-in-aml.working-with-compute
 badge:
   uid: learn.wwl.use-compute-contexts-in-aml.badge
