@@ -34,7 +34,6 @@ units:
 - learn.data-ai.intro-to-azure-machine-learning-service.azure-ml-workspace
 - learn.data-ai.intro-to-azure-machine-learning-service.create-workspace
 - learn.data-ai.intro-to-azure-machine-learning-service.azure-ml-tools
-- learn.data-ai.intro-to-azure-machine-learning-service.azure-ml-experiment
 - learn.data-ai.intro-to-azure-machine-learning-service.using-azure-ml
 - learn.data-ai.intro-to-azure-machine-learning-service.knowledge-check
 - learn.data-ai.intro-to-azure-machine-learning-service.summary
