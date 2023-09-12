@@ -44,9 +44,9 @@ Here, you'll add a new stage to your pipeline that runs the what-if operation.
 
 ## Add an approval check to the environment
 
-1. Near the upper right of the page, select the button with three dots and select **Approvals and checks** from the pop-up menu.
+1. Select the **Approvals and checks** tab at the top-left of the screen.
 
-   :::image type="content" source="../media/7-add-check.png" alt-text="Screenshot of the Azure DevOps interface that shows the Website environment, with the three dots button highlighted.":::
+   :::image type="content" source="../media/7-add-check.png" alt-text="Screenshot of the Azure DevOps interface that shows the Website environment, with the Approvals and checks tab highlighted.":::
 
 1. Select **Approvals**.
 

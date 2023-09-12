@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.summary-resources
+title: Summary & resources
+metadata:
+  title: Summary & resources
+  description: "Summary & resources"
+  ms.date: 09/07/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary-resources.md)]

@@ -6,32 +6,32 @@ metadata:
   description: "Knowledge check"
   ms.date: 07/13/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following facial attributes can the Computer Vision service predict?"
+  - content: "Which of the following facial attributes can the Azure AI Vision service predict?"
     choices:
     - content: "Location."
       isCorrect: true
-      explanation: "That's correct. The Computer Vision service predicts location for a detected face."
+      explanation: "That's correct. The Azure AI Vision service predicts location for a detected face."
     - content: "Type of eye-glasses."
       isCorrect: false
-      explanation: "That's incorrect. The Computer Vision service predicts location for a detected face."
+      explanation: "That's incorrect. The Azure AI Vision service predicts location for a detected face."
     - content: "Occlusion."
       isCorrect: false
-      explanation: "That's incorrect. The Computer Vision service predicts location for a detected face."
+      explanation: "That's incorrect. The Azure AI Vision service predicts location for a detected face."
   - content: "You need to create a facial recognition solution to identify named employees. Which service should you use?"
     choices:
-    - content: "Computer Vision."
+    - content: "Azure AI Vision."
       isCorrect: false
       explanation: "That's incorrect. Use the Face service to create a facial recognition solution."
-    - content: "Custom Vision."
+    - content: "Azure AI Custom Vision."
       isCorrect: false
       explanation: "That's incorrect. Use the Face service to create a facial recognition solution."
     - content: "Face."

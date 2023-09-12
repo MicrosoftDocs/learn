@@ -7,7 +7,7 @@ metadata:
   author: MicrosoftGuyJFlo
   ms.author: joflore
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
 title: Secure your identities by using Azure Active Directory
 summary: Secure internal resources, external resources, SaaS applications, and more by using Azure Active Directory. Learn about the features and capabilities of Azure AD.
 abstract: | 
@@ -28,7 +28,7 @@ products:
 - azure
 - azure-active-directory
 - azure-active-directory-b2c
-- azure-active-directory-domain
+- entra
 subjects:
 - cloud-computing
 - identity-access

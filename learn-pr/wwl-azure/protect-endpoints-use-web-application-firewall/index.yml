@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: web-application-firewall
 title: Protect endpoints using Web Application Firewall
 summary: You have now set up your Spring Petclinic application in Azure and secured the secrets used by the microservices. In this module, you'll learn how to add a Web Application Firewall to your setup.
 abstract: |

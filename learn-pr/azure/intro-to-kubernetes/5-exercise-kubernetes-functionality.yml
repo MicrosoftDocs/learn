@@ -9,7 +9,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   zone_pivot_groups: platform
 
 durationInMinutes: 15

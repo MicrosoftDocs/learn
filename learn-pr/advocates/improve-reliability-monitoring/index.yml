@@ -4,22 +4,21 @@ title: "Improve your reliability with modern operations practices: Monitoring"
 metadata:
   title: "Improve your reliability with modern operations practices: Monitoring"
   description: Learn how to use monitoring to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
-  ms.date: 05/07/2020
+  ms.date: 08/18/2023
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 summary: Monitoring is the foundational practice you must tackle before you can make any headway with reliability. Learn what (and what not) to monitor to improve it using the tools available on Azure.
 abstract: |
   In this module you will:
-  - Learn how to increase your operational awareness as a precursor to reliability work
-  - Expand your understanding of reliability itself
-  - Change the way you frame your thinking about monitoring to make it more impactful
-  - Gain a basic understanding of the applicable monitoring platform and tools available on Azure
-  - Learn a practice from site reliability engineering that can immediately start to create an impact on reliability
-  - Learn to craft actionable alerts to make your operational practices sustainable
+  - Learn how to increase your operational awareness as a precursor to reliability work.
+  - Expand your understanding of reliability itself.
+  - Change the way you frame your thinking about monitoring to make it more impactful.
+  - Gain a basic understanding of the applicable monitoring platform and tools available on Azure.
+  - Learn a practice from site reliability engineering that can immediately start to create an impact on reliability.
+  - Learn to craft actionable alerts to make your operational practices sustainable.
 iconUrl: /training/achievements/improve-reliability-monitoring.svg
 levels:
 - beginner

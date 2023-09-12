@@ -5,8 +5,8 @@ metadata:
   title: Benefits and usage scenarios
   description: "Lists the key benefits of Azure Private 5G Core and describes the usage scenarios of the product."
   ms.date: 10/10/2022
-  author: michael-weizhong-shan
-  ms.author: michaelshan
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.service: learning-private-5g-core
 durationInMinutes: 9

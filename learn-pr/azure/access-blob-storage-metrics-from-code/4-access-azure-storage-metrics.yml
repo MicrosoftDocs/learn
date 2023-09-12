@@ -3,11 +3,13 @@ uid: learn.azure.access-blob-storage-metrics-from-code.4-access-azure-storage-me
 title: Access Azure Storage Metrics in Code
 metadata:
   title: Access Azure Storage Metrics in Code
-  description: In this unit, you will learn how to write code that uses the Azure Monitor .NET API to access Storage metrics.
+  description: In this unit, you learn how to write code that uses the Azure Monitor .NET API to access Storage metrics.
   ms.date: 04/12/2019
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
@@ -19,13 +21,13 @@ quiz:
     choices:
     - content: "Call the Metrics.ListAsync method instead of the MetricDefinitions.ListAsync method."
       isCorrect: false
-      explanation: "If you have been denied access to metric definitions, you will also be denied access to metric values. Instead, you must assign the service principal to a role in Azure with permissions to access Azure Monitor."
+      explanation: "If you're denied access to metric definitions, you're also denied access to metric values. You must assign the service principal to a role in Azure with permissions to access Azure Monitor."
     - content: "Assign the service principal to an appropriate role in Azure."
       isCorrect: true
-      explanation: "Even though you have created the service principal correctly, and you can authenticate without errors, you cannot access resources because you have not assigned the service principal to a role in Azure with permissions to access Azure Monitor."
+      explanation: "You have created the service principal correctly, and you can authenticate without errors. However, you can't access resources because you haven't assigned the service principal to a role in Azure with permissions to access Azure Monitor."
     - content: "Create an access key for the service principal in Azure."
       isCorrect: false
-      explanation: "Even though you have created the service principal correctly including the access key, and you can authenticate without errors, you cannot access resources because you have not assigned the service principal to a role in Azure with permissions to access Azure Monitor."
+      explanation: "You have created the service principal correctly, and you can authenticate without errors. However, you can't access resources because you haven't assigned the service principal to a role in Azure with permissions to access Azure Monitor."
   - content: "You have written code that successfully retrieves metric definitions for an Azure Storage account from Azure Monitor. Now you want to retrieve values of the UsedCapacity metric. Which method should you call?"
     choices:
     - content: "MetricDefinitions.ListAsync"

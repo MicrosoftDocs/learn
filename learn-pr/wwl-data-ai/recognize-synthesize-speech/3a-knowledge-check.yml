@@ -4,17 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/27/2023
+  ms.date: 08/18/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
+  ms.service: azure
 durationInMinutes: 2
 quiz:
+  title: ""
   questions:
-  - content: "You plan to build an application that uses the Speech service to transcribe audio recordings of phone calls into text, and then submits the transcribed text to the Language service to extract key phrases. You want to manage access and billing for the application services in a single Azure resource. Which type of Azure resource should you create?"
+  - content: "You plan to build an application that uses Azure AI Speech to transcribe audio recordings of phone calls into text, and then submits the transcribed text to Azure AI Language to extract key phrases. You want to manage access and billing for the application services in a single Azure resource. Which type of Azure resource should you create?"
     choices:
     - content: "Speech"
       isCorrect: false
@@ -22,17 +22,17 @@ quiz:
     - content: "Language"
       isCorrect: false
       explanation: "Incorrect. This resource would support key phrase extraction, but not speech transcription."
-    - content: "Cognitive Services"
+    - content: "Azure AI services"
       isCorrect: true
-      explanation: "Correct. This resource would support both the Speech and Language services."
-  - content: "You want to use the Speech service to build an application that reads incoming email message subjects aloud. Which API should you use?"
+      explanation: "Correct. This resource would support both the Azure AI Speech and Azure AI Language services."
+  - content: "You want to use Azure AI Speech service to build an application that reads incoming email message subjects aloud. Which API should you use?"
     choices:
-    - content: "Speech-to-Text"
+    - content: "Speech to text"
       isCorrect: false
-      explanation: "Incorrect. The Speech-to-Text API converts audible speech to text."
-    - content: "Text-to-Speech"
+      explanation: "Incorrect. The Speech to text API converts audible speech to text."
+    - content: "Text to speech"
       isCorrect: true
-      explanation: "Correct. The Text-to-Speech API converts text to audible speech."
-    - content: "Translate"
+      explanation: "Correct. The Text to speech API converts text to audible speech."
+    - content: "Translator"
       isCorrect: false
-      explanation: "Incorrect. The Translate API translates speech from one language to another."
+      explanation: "Incorrect. The Translator API translates speech from one language to another."

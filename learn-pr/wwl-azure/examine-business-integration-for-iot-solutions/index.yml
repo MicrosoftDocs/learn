@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Examine business integration for IoT solutions
 summary: This module introduces you to business integration goals for IoT solutions, the Azure services that are used to enable downstream message processing, and the configuration options for Azure Event Grid and Azure Logic Apps.
 abstract: |
@@ -47,3 +46,4 @@ units:
 - learn.wwl.examine-business-integration-for-iot-solutions.summary
 badge:
   uid: learn.wwl.examine-business-integration-for-iot-solutions.badge
+hidden: true

@@ -1,5 +1,3 @@
-
-
 Suppose you're a software developer on a team working on medical intake form automation. You're tasked with delivery of the application features for collecting the general data entered by a medical technician before the doctor examines the patient. The technician can use the application to record the date and time, patient age, height, weight, pulse, and blood pressure. The application also provides text fields for other information, such as the reason for the visit,
 current prescriptions, and other items. You work with a lot of data that is in a mix of data types. For the prototype, you'll build a console application and collect all of the input as `strings`.
 

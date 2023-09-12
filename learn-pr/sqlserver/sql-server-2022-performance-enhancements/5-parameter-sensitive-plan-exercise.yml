@@ -1,0 +1,33 @@
+### YamlMime:ModuleUnit
+uid: learn.sql-server-2022-performance-enhancements.parameter-sensitive-plan-exercise
+title: Exercise - Parameter Sensitive Plan
+metadata:
+  title: Exercise - Parameter Sensitive Plan
+  description: "Exercise utilizing Parameter Sensitive Plan and showing how SQL Server 2022 helps with query performance with compatibility mode 160."
+  ms.date: 05/23/2023
+  author: VanMSFT
+  ms.author: vanto
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-parameter-sensitive-plan-exercise.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Parameter Sensitive Plan (PSP) optimization can help which scenario:"
+    choices:
+    - content: "A. Data is skewed and you use ad-hoc queries with your application."
+      isCorrect: false
+      explanation: "Incorrect. PSP doesn't help with skewed data when using ad-hoc queries."
+    - content: "B. Scenarios where more than one plan in cache would help with stored procedure performance."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "C. Stored procedure performance using parameters in filters with the `>=` operators."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "D. All of the above."
+      isCorrect: false
+      explanation: "Incorrect."

@@ -24,7 +24,7 @@ The typical approach to machine learning is as follows:
 - Use that data to train a model.
 - Use the model to make predictions.
 
-The training of a model typically involves huge amounts of complex data, a ton of processing power, and a data science degree. [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) makes that training process much simpler. It offers APIs, SDKs, and services to help developers build machine learning models that power intelligent applications. You don't need direct AI or data science skills or knowledge. 
+The training of a model typically involves huge amounts of complex data, a ton of processing power, and a data science degree. [Azure AI services](https://azure.microsoft.com/services/cognitive-services/) makes that training process much simpler. It offers APIs, SDKs, and services to help developers build machine learning models that power intelligent applications. You don't need direct AI or data science skills or knowledge. 
 
 One type of machine learning model is an image classifier. You gather images and use those images to train the model to recognize objects like a numerical digit. Then you use the model to evaluate a new image and make a prediction, or infer, what number appears in the new image. 
 
@@ -41,7 +41,7 @@ Whether or not you use a machine learning model locally or in the cloud depends 
 | Cloud evaluation | Local evaluation |
 | :---- | :---- |
 |:::image type="content" source="../media/evaluating-cloud3.png" alt-text="Diagram depicting client computer sending image to the machine learning in the cloud with prediction results returned":::|:::image type="content" source="../media/evaluating-locally3.png" alt-text="Diagram depicting client computer sending image to the machine learning on a local server with prediction results returned":::|
-| Complex processing of large amounts of data. Services like Azure Cognitive Services offer a simple, user-friendly way to both train and evaluate models. | Windows ML is built into all Windows 10 devices. It offers APIs to evaluate models offline. And it's available to both Win32 and UWP apps: C#, C++, and JS. |
+| Complex processing of large amounts of data. Services like Azure AI services offer a simple, user-friendly way to both train and evaluate models. | Windows ML is built into all Windows 10 devices. It offers APIs to evaluate models offline. And it's available to both Win32 and UWP apps: C#, C++, and JS. |
 | Backup and restore can be initiated from anywhere by using any device. There's no risk of data loss from a damaged machine. | Increased flexibility by removing concerns of connectivity, bandwidth, and data privacy. |
 | Might require waiting for large amounts of data to make a roundtrip to the cloud and back. | Able to respond quickly, processing an evaluation directly on the device in real time. A DirectX 12 GPU can be used for hardware acceleration, making evaluation even faster. |
 | Continuous training of models, growing smarter over time. | Reduced operational costs. Not paying for internet bandwidth and cloud storage. |

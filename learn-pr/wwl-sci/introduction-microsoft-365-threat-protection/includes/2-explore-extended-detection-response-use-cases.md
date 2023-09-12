@@ -1,3 +1,4 @@
+
 The following are examples of detection and mitigation use cases. 
 
 ## Detection of Threat 
@@ -35,7 +36,7 @@ People will still be able to do general internet productivity and research (YouT
   
 ### Access Restored  
   
-Once the threat has been remediated and cleaned up, MDE triggers Intune to update Azure AD and Conditional Access restores the user’s access to corporate resources.   
+Once the threat has been remediated and cleaned up, MDE triggers Intune to update Azure AD, and Conditional Access restores the user’s access to corporate resources.
   
 This mitigates risk to the organization by ensuring attackers who may be in control of these devices can't access corporate resources, while minimizing the impact on user productivity to minimize disruption of business processes.  
   

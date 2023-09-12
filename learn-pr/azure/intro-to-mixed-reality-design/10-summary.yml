@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.design-considerations-mr-development.summary
+title: Summary
+metadata: 
+  title: Summary
+  description: Summary
+  ms.date: 6/29/2022
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-summary.md)]

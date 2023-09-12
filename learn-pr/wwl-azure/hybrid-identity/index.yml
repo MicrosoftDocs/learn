@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement Hybrid identity
 summary: Explore how to deploy and configure Azure AD Connect to create a hybrid identity solution for your company.
 abstract: |
@@ -27,9 +26,7 @@ products:
 - azure
 - azure-active-directory
 - active-directory-federation-services
-- azure-active-directory-connect
-- azure-active-directory-priviledged-identity-management
-- azure-active-directory-pass-through-authentication
+- entra
 subjects:
 - identity-access
 units:

@@ -8,7 +8,6 @@ metadata:
   author: alfredodeza
   ms.author: alfredodeza
   ms.topic: interactive-tutorial
-  ms.prod: learning-language
 title: Advanced testing with Pytest
 summary: Create custom Pytest fixtures for reusable code and improve multi-input tests with parametrize. 
 abstract: |

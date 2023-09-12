@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extend-pipeline-use-multiple-templates.identify-conditionally-remove-script-tasks
+title: Identify and conditionally remove script tasks
+metadata:
+  title: Identify and conditionally remove script tasks
+  description: "Identify and conditionally remove script tasks."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-identify-conditionally-remove-script-tasks.md)]

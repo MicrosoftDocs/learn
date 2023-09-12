@@ -3,13 +3,15 @@ uid: learn.student-evangelism.python-flask-build-ai-web-app.4-exercise-extract-t
 title: Translation
 metadata:
   title: Translation
-  description: Learn about Translator in Azure Cognitive Services.
+  description: Learn about Azure AI Translator.
   ms.date: 04/08/2022
   author: acomfort248
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
 durationInMinutes: 10
 content: |
   [!include[](includes/4-translation.md)]

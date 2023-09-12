@@ -3,11 +3,11 @@ uid: learn.languages.csharp-format-strings
 metadata:
   title: Format alphanumeric data for presentation in C#
   description: "Format alphanumeric data for presentation in C#"
-  ms.date: 04/25/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Format alphanumeric data for presentation in C#
 summary: Use C# to format strings with white space, special characters, padding, and alignment. Give context to numeric data like currency, percentages, and numbers with decimals.
 abstract: |
@@ -25,10 +25,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- dotnet-framework
+- dotnet
 - vs-code
 units:
 - learn.languages.csharp-format-strings.introduction

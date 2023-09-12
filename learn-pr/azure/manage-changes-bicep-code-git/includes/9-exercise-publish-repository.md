@@ -218,7 +218,7 @@ Now that your colleagues will use your repository, it's important to create a _R
 
    ## How to use
 
-   The Azure infrastructure is defined using [Bicep](https://learn.microsoft.com/azure/azure-resource-manager/bicep).
+   The Azure infrastructure is defined using [Bicep](/azure/azure-resource-manager/bicep).
 
    To deploy the website's Azure resources, use the _deploy/main.bicep_ file.
    ```

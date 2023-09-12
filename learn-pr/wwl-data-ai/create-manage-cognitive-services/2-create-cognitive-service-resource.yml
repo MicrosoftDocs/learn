@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-cognitive-services.create-an-account
-title: Provision a cognitive services resource
+title: Provision an Azure AI Services resource
 metadata:
-  title: Provision a cognitive services resource
-  description: "Provision a cognitive services resource"
+  title: Provision an Azure AI Services resource
+  description: "Provision an Azure AI Services resource"
   ms.date: 12/07/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 sandbox: false
 labModal: false

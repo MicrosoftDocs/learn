@@ -8,8 +8,11 @@ metadata:
   ms.date: 08/31/2021
   author: csharpfritz
   ms.author: jefritz
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-create-blazor-event-handler-onclick-events.md)]

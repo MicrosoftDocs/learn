@@ -1,3 +1,5 @@
+
+
 After you determine the data storage requirements for your organization, you need to create storage accounts for Tailwind Traders.
 
 An [Azure storage account](/azure/storage/common/storage-account-overview?azure-portal=true) groups together all of your Azure Storage services. The storage account provides a unique namespace that's accessible from anywhere (assuming you have the correct permissions) in the world over HTTPS. Data in your storage account is durable and highly available, secure, and massively scalable.

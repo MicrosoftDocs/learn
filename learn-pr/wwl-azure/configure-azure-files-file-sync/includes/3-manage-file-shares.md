@@ -1,3 +1,4 @@
+
 To access your files, you need an Azure storage account. After you have a storage account, you can create and configure a file share by using Azure Files in the Azure portal.
 
 :::image type="content" source="../media/create-file-shares-bf2e2f1d.png" alt-text="Screenshot that shows how to configure a new Azure Files share in the Azure portal.":::
@@ -14,7 +15,7 @@ There are two important settings for Azure Files that you need to be aware of wh
 
 You can connect your Azure Files share with Windows or Windows Server in the Azure portal. Specify the **Drive** where you want to map the share, and choose the **Authentication method**. The system supplies you with PowerShell commands to run when you're ready to work with the file share. This video shows how to mount an Azure file share in Windows.  
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/bmRZi9iGsK0" title="How to mount an Azure Files share in Windows | Azure Tips and Tricks" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/bmRZi9iGsK0]
 
 ## Mount Azure Files share on Linux
 

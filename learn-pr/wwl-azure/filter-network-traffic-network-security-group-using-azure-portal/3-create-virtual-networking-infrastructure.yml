@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.create-virtual-networking-infrastructure
+title: Azure Virtual Network
+metadata:
+  title: Azure Virtual Network
+  description: "Azure Virtual Network"
+  ms.date: 09/01/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-create-virtual-networking-infrastructure.md)]
+interactive: bash

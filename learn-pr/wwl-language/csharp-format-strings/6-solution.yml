@@ -4,11 +4,10 @@ title: Review a solution to string interpolation
 metadata:
   title: Review a solution to string interpolation
   description: "Review a solution to string interpolation"
-  ms.date: 04/25/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/6-solution.md)]

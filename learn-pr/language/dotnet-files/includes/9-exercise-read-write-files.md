@@ -2,7 +2,7 @@ You can also use the `File` class in .NET to write data to files and read data f
 
 You're almost finished creating a .NET masterpiece for Tailwind Traders. So far, your code reads any directory, finds all .json files, and creates a *totals.txt* file.
 
-In this exercise, you'll complete the project by reading the .json files, adding up the store totals, and writing the grand total to the *totals.txt* file.
+In this exercise, you complete the project by reading the .json files, adding up the store totals, and writing the grand total to the *totals.txt* file.
 
 ## Add Json.NET to the project
 
@@ -20,7 +20,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     using Newtonsoft.Json;
     ```
 
-1. In `Program.cs` directly under the `FindFiles` method, [add a new `record`](/dotnet/csharp/language-reference/builtin-types/record/) that will model the *sales.json* data:
+1. In `Program.cs` directly under the `FindFiles` method, [add a new `record`](/dotnet/csharp/language-reference/builtin-types/record/) that models the *sales.json* data:
 
     ```csharp
     record SalesData (double Total);
@@ -28,7 +28,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Create a method to calculate sales totals
 
-1. In `Program.cs`, just before the `record` line that you added in the previous step, create a new function that will calculate the sales total. This method should take an `IEnumerable<string>` of file paths that it can iterate over.
+1. In `Program.cs`, just before the `record` line that you added in the previous step, create a new function that calculates the sales total. This method should take an `IEnumerable<string>` of file paths that it can iterate over.
 
     ```csharp
     double CalculateSalesTotal(IEnumerable<string> salesFiles)
@@ -111,7 +111,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     dotnet run
     ```
 
-   There's no output from the program. If you look in the *salesTotalDir/totals.txt* file, you'll find the total of all the sales from the *sales.json* file.
+   There's no output from the program. If you look in the *salesTotalDir/totals.txt* file, you find the total of all the sales from the *sales.json* file.
 
 1. Run the program from the terminal again.
 

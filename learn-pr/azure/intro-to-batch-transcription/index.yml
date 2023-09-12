@@ -2,15 +2,14 @@
 uid: learn.azure.intro-to-batch-stt
 metadata:
   title: Transcribe large amounts of audio data with Batch Transcription
-  description: Batch Transcription is an Azure cognitive service that enables you to transcribe large amounts of pre-recorded audio data asynchronously. Batch Transcription’s high throughput makes it ideal for call centers that have to transcribe hundreds or thousands of calls every day to ensure they meet regulations and compliance standards. Batch Transcription also enables better data analyses, which can let call centers ensure that customer feedback is taken into account, staff are treated fairly, and to ensure problems are dealt with quickly and properly.
+  description: Batch Transcription is a feature of Azure AI Speech that enables you to transcribe large amounts of pre-recorded audio data asynchronously. Batch Transcription's high throughput makes it ideal for call centers that have to transcribe hundreds or thousands of calls every day to ensure they meet regulations and compliance standards. Batch Transcription also enables better data analyses, which can let call centers ensure that customer feedback is taken into account, staff are treated fairly, and to ensure problems are dealt with quickly and properly.
   ms.date: 03/09/2023
   author: eric-urban
   ms.author: eur
   manager: nitinme
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Transcribe large amounts of audio data with Batch Transcription
-summary: Batch Transcription is an Azure cognitive service that enables you to transcribe large amounts of pre-recorded audio data asynchronously. Batch Transcription’s high throughput makes it ideal for call centers that have to transcribe hundreds or thousands of calls every day to ensure they meet regulations and compliance standards. Batch Transcription also enables better data analyses, which can let call centers ensure that customer feedback is taken into account, staff are treated fairly, and to ensure problems are dealt with quickly and properly.
+summary: Batch Transcription is a feature of Azure AI Speech that enables you to transcribe large amounts of pre-recorded audio data asynchronously. Batch Transcription's high throughput makes it ideal for call centers that have to transcribe hundreds or thousands of calls every day to ensure they meet regulations and compliance standards. Batch Transcription also enables better data analyses, which can let call centers ensure that customer feedback is taken into account, staff are treated fairly, and to ensure problems are dealt with quickly and properly.
 abstract: |
   In this module, you will:
   - Assess the benefits of Batch Transcription
@@ -27,7 +26,7 @@ roles:
 - student
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 - azure-speech-text
 subjects:
 - natural-language-processing

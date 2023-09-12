@@ -1,126 +1,163 @@
-In this unit, you'll use the [HttpRepl](/aspnet/core/web-api/http-repl/) tool to test the API. The API will use your code to interact with the database.
+In the previous exercise, you wrote code for your team's API to implement database operations. In this exercise, you test the API now that it's connected to the database.
 
-## Run the app and connect
+## Run the API
 
-1. From the terminal, run the following command:
+1. In the terminal pane, run the app:
 
-    ```dotnet-cli
-    dotnet tool install -g Microsoft.dotnet-httprepl
-    ```
+   ```dotnetcli
+   dotnet run
+   ```
 
-    This command installs the HttpRepl tool.
+1. Inspect the output from running the app, and note the following information:
 
-1. Run the app with the following command:
-
-    ```dotnetcli
-    dotnet run --urls=https://localhost:5101
-    ```
-
-    This command launches the app and specifies the listening port to `5101`.
-
-1. Inspect the output from running the app.
-    - EF Core echoes SQL commands as `info` log events as they execute.
-    - If the database does not already exist, then the tables and indexes are defined with `CREATE` SQL commands.
-    - If the database has not yet been seeded, then `INSERT` commands are executed to add the seed data.
-    - For security, the parameter values are not echoed to the console. This can be changed using [EnableSensitiveDataLogging](/ef/core/logging-events-diagnostics/extensions-logging#sensitive-data)
+    - EF Core echoes SQL commands as `info` log events when they execute.
+    - If the database does not already exist, the tables and indexes are defined by using SQL `CREATE` commands.
+    - If the database has not yet been seeded, `INSERT` commands are executed to add the seed data.
+    - For security, the parameter values are not echoed to the console. You can change this setting by using [EnableSensitiveDataLogging](/ef/core/logging-events-diagnostics/extensions-logging#sensitive-data).
 
 1. Use SQLite Explorer to explore the seeded database. Each table has data.
-1. Since the terminal is blocked by the running app, open another terminal (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd>) to test the app.
-1. In the new terminal, run the following command:
 
-    ```dotnetcli
-    httprepl https://localhost:5101
+## Go to Swagger
+
+Now that the API is running, test the API to see if the operations work as expected. The API is configured to use [Swagger](https://swagger.io/) to provide a test UI. Swagger is a tool that helps you design, build, document, and consume RESTful web services.
+
+1. In the output that appears after you run the app, find the HTTP URL where the app listens. The output looks similar to the following example:
+
+    ```console
+    info: Microsoft.Hosting.Lifetime[14]
+          Now listening on: http://localhost:5200
     ```
 
-    HttpRepl connects to the running API and uses the OpenAPI specification to discover the available endpoints.
+1. To open the URL, select it while holding <kbd>Ctrl</kbd>. The browser opens to the `/` location for the API, which returns the text `Contoso Pizza management API. Go to /swagger to open the Swagger test UI.`
 
-## Test database operations
+1. In the browser's address bar, add `/swagger` to the end of the URL and select <kbd>Enter</kbd>.
 
-Now that you've connected with HttpRepl, let's try out our app. After each CRUD operation, inspect the database in SQLite Explorer to see the changes as they happen.
+## Test CRUD operations
 
-1. At the HttpRepl command prompt, run the following command to list the discovered endpoints.
+In the following steps, you use the Swagger UI to test each of the API's operations the way that a client application would. After each operation, inspect the database in SQLite Explorer to see the database changes as they happen.
 
-    ```dotnetcli
-    ls
+1. Request the full list of pizzas:
+
+    1. Under the **Pizza** heading, expand the **GET /Pizza** operation and select **Try it out**.
+    1. Select the **Execute** button.
+
+    The API returns the list of pizzas as JSON (under **Response body**).
+
+    ```json
+    [
+        {
+            "id": 1,
+            "name": "Meat Lovers",
+            "sauce": null,
+            "toppings": null
+        },
+        {
+            "id": 2,
+            "name": "Hawaiian",
+            "sauce": null,
+            "toppings": null
+        },
+        {
+            "id": 3,
+            "name": "Alfredo Chicken",
+            "sauce": null,
+            "toppings": null
+        }
+        ]
     ```
 
-1. Switch to the `Pizza` endpoint.
+   > [!TIP]
+   > *Why are the `sauce` and `toppings` properties null?* This result is expected because in the `PizzaService.GetAll` method, you didn't use the `Include` extension method to specify that the navigation properties should be loaded.
 
-    ```dotnetcli
-    cd Pizza
-    ```
+1. Request a single pizza:
 
-1. Run the following command to get the list of all pizzas:
-
-    ```dotnetcli
-    get
-    ```
-
-    The API returns the list of pizzas as JSON.
-
-    > [!NOTE]
-    > **Why are the `sauce` and `toppings` properties null?** Remember in the `PizzaService.GetAll` method, you didn't use the `Include` extension method to specify that the navigation properties should be loaded.
-
-1. Run the following command to get a single pizza:
-
-    ```dotnetcli
-    get 2
-    ```
+    1. Scroll down to the **GET /Pizza{id}** operation and expand it. Then select **Try it out**.
+    1. In the **id** field, enter `2` and select **Execute**.
 
     The API returns the "Hawaiian" pizza. Notice that the `sauce` and `toppings` properties are populated because the `PizzaService.GetById` method uses the `Include` extension method.
 
-1. Run the following command to add a new pizza:
+1. Add a new pizza:
 
-    ```dotnetcli
-    post
-    ```
+    1. Scroll up to the **POST /Pizza** operation (located between the **GET** operations you just used) and expand it. Then select **Try it out**.
+    1. In the **Request body** text box, paste the following JSON:
 
-    A temporary JSON file opens in your registered JSON editor or a new tab in VS Code. The file contains a template for posting a new pizza. Paste in the following JSON, save, and close the tab/editor.
+        ```json
+        {
+          "name": "BBQ Beef",
+          "sauce": {
+            "name": "BBQ",
+            "isVegan": false
+          },
+          "toppings": [
+            {
+              "name": "Smoked Beef Brisket",
+              "calories": 250
+            }
+          ]
+        }
+        ```
+
+    1. Select **Execute**.
+
+    The API returns the new pizza with the `id` property populated.
+
+1. Add another topping to the BBQ Beef pizza:
+
+    1. Scroll down to the **PUT /Pizza{id}/addtopping** operation and expand it. Select **Try it out**.
+    1. In the **id** field, enter **4**.
+    1. In the **toppingId** field, enter **5**.
+    1. Select **Execute**.
+
+    The API updates the pizza and returns a success code. In the database, a record is added to `PizzaTopping` to associate the pizza with the topping.
+
+1. Change the sauce on the BBQ Beef pizza:
+
+    1. Scroll down to the **PUT /Pizza{id}/updatesauce** operation and expand it. Select **Try it out**.
+    1. In the **id** field, enter **4**.
+    1. In the **sauceId** field, enter **2**.
+    1. Select **Execute**.
+
+    The API updates the pizza and returns a success code. In the database, the `Pizza` record is updated to associate the pizza with the new sauce.
+
+1. Return to the **GET /Pizza{id}** operation and request the BBQ Beef pizza by setting the **id** field to **4**. Then, select **Execute**. Notice that the `sauce` and `toppings` properties are populated.
 
     ```json
     {
-      "name": "BBQ Beef",
-      "sauce": {
-        "name": "BBQ",
-        "isVegan": false
-      },
-      "toppings": [
-        {
-          "name": "Smoked Beef Brisket",
-          "calories": 250
-        }
-      ]
+        "id": 4,
+        "name": "BBQ Beef",
+        "sauce": {
+            "id": 2,
+            "name": "Alfredo",
+            "isVegan": false
+        },
+        "toppings": [
+            {
+            "id": 5,
+            "name": "Pineapple",
+            "calories": 75
+            },
+            {
+            "id": 6,
+            "name": "Smoked Beef Brisket",
+            "calories": 250
+            }
+        ]
     }
     ```
 
-1. Run the following command to add another topping to the new BBQ Beef pizza:
+1. You've realized that a smoked brisket pizza with Alfredo sauce and pineapple is a terrible idea.
 
-    ```dotnetcli
-    put 4/addtopping?toppingId=5 --no-body
-    ```
+    Delete the pizza:
 
-1. Run the following command to change the sauce on the BBQ Beef pizza:
+    1. Find the **DELETE /Pizza{id}** operation and expand it. Select **Try it out**.
+    1. In the **id** field, enter **4**.
+    1. Select **Execute**.
 
-    ```dotnetcli
-    put 4/updatesauce?sauceId=2 --no-body
-    ```
+    The API deletes the pizza and returns a success code. In the database, the `Pizza` record and the associated records in `PizzaTopping` are deleted.
 
-1. Run the following command to view the current BBQ Beef pizza.
-
-    ```dotnetcli
-    get 4
-    ```
-
-1. You've realized a smoked brisket pizza with Alfredo sauce and pineapple is a terrible idea. Delete it with the following command:
-
-    ```dotnetcli
-    delete 4
-    ```
-
-1. Enter `exit` to leave HttpRepl.
-1. In the terminal with the running app, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the running app.
+1. In the terminal with the running app, select <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the running app.
 
 > [!TIP]
-> You may experiment with the app as you wish. Whenever you'd like to start with a fresh database, stop the app and delete the *ContosoPizza.db*, *.db-shm*, and *.db-wal* files, and then run the app again.
+> You can experiment with the app. Whenever you'd like to start with a fresh database, stop the app and delete the *ContosoPizza.db*, *.db-shm*, and *.db-wal* files. Then run the app again.
 
 Great work! The app is working with your database as expected! In the next unit, you'll scaffold entity models from an existing database.

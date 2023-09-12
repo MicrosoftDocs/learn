@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.finetune-foundation-model-with-azure-machine-learning.exercise
+title: |
+  Exercise - Fine-tune a foundation model
+metadata:
+  title: |
+    Exercise - Fine-tune a foundation model
+  description: "Exercise - Fine-tune a foundation model using the Azure Machine Learning studio."
+  ms.date: 7/18/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise.md)]

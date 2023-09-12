@@ -1,27 +1,22 @@
 ### YamlMime:Module
 uid: learn.azure.introduction-data-protection-privacy
 metadata:
-  title: Intro to data protection and privacy regulations
-  description: Learn and understand the key terms and concepts of data protection, privacy regulation, and data processing. Describe, at a high level, the key Azure technologies that pertain to data protection and compliance.
-  ms.date: 05/13/2021
+  title: Introduction to data protection and privacy
+  description: Learn about data protection and privacy, privacy laws and regulations, Microsoft data categories, and Microsoft data protection and compliance support.
+  ms.date: 07/27/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Intro to data protection and privacy regulations
-summary: Learn and understand the key terms and concepts of data protection, privacy regulation, and data processing. Describe, at a high level, the key Azure technologies that pertain to data protection and compliance.
+title: Introduction to data protection and privacy
+summary: Learn about data protection and privacy, privacy laws and regulations, Microsoft data categories, and Microsoft data protection and compliance support.
 abstract: |
-  After completing this module, you should understand more about:
-  - Data protection.
-  - Privacy regulations.
-  - Common data protection regulations and acts.
-  - Key data-processing concepts.
-  - How Microsoft helps support data protection and privacy.
-  - Security, privacy, and compliance options in Microsoft Azure.
+  Understand more about:
+  - Data protection and data privacy.
+  - Data protection and privacy regulations.
+  - Microsoft data categories and data protection principles.
+  - Microsoft and Azure data security, privacy, and compliance tools and options.
 prerequisites: |
-  - Basic experience of data protection
-  - Basic experience with security technologies
-  - Basic experience with Azure services
+  - Basic knowledge and experience with data protection, security technologies, and Azure services.
 iconUrl: /training/achievements/introduction-data-protection-privacy.svg
 levels:
 - beginner
@@ -33,7 +28,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- m365-information-protection
 subjects:
 - information-protection-governance
 units:

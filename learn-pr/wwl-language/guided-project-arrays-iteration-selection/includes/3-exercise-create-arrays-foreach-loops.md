@@ -1,7 +1,3 @@
-
-
-
-
 In this exercise, you'll review the Starter project code and then begin updating the application. Your first coding task will be creating the arrays that hold student exam scores. Once your application data is available in arrays, you'll begin working on a `foreach` loop that can be used to sum student grades. The detailed tasks that you'll complete during this exercise are:
 
 1. Code review: review the contents of the Program.cs file.
@@ -36,8 +32,6 @@ In this task, you'll review the code that's provided as a Starter project for th
 1. Notice that the top portion of your code begins with a `Using` statement and a list of variable declarations.  
 
     ```c#
-    using System;
-
     // initialize variables - graded assignments 
     int currentAssignments = 5;
     
@@ -143,7 +137,7 @@ In this task, you'll review the code that's provided as a Starter project for th
     ```txt
     Determining projects to restore...
     All projects are up-to-date for restore.
-    Starter -> C:\Users\someuser\Desktop\GuidedProject\Starter\bin\Debug\net6.0\Starter.dll
+    Starter -> C:\Users\someuser\Desktop\GuidedProject\Starter\bin\Debug\net7.0\Starter.dll
 
     Build succeeded.
         0 Warning(s)
@@ -157,7 +151,7 @@ In this task, you'll review the code that's provided as a Starter project for th
     The `dotnet run` command will instruct the compiler to build your application and then, as long as there were no build errors, it will run your compiled code.
 
     > [!IMPORTANT]
-    > The Starter project targets version 7.0 of the .NET Framework. If you don't have .NET 7 installed, the `dotnet run` command will generate an error. You can either install the .NET 7 SDK (recommended), or you can change the target framework in the Starter.csproj file to align with the version of .NET that you chave installed in your environment.
+    > The Starter project targets .NET 7 (in the Starter.csproj file). If you don't have .NET 7 installed, the `dotnet run` command will generate an error. You can either install the .NET 7 SDK (recommended), or you can change the target framework in the Starter.csproj file to align with the version of .NET that you chave installed in your environment.
 
 1. Verify that your application produced the following output:
 

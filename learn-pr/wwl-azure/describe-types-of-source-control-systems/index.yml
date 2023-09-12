@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Describe types of source control systems
 summary: This module describes different source control systems such Git and TFVC and helps with the initial steps for Git utilization.
 abstract: |

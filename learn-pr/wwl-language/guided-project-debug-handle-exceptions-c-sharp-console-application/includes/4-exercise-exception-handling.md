@@ -1,6 +1,7 @@
 
 
 
+
 In this exercise, you'll develop a `try` code block and `catch` clause in the top-level statements, create and throw exceptions in the `MakeChange` method, and then complete the `catch` code block using an exception object. You complete the following tasks during this exercise:
 
 1. Update top-level statements: Implement a `try-catch` pattern in the top-level statements. The `try` code block will contain the call to `MakeChange`.

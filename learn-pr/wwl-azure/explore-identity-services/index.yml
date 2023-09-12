@@ -3,11 +3,10 @@ uid: learn.wwl.explore-identity-services
 metadata:
   title: Explore identity services for SAP on Azure
   description: "This module explores using identity services to design multiple authentication and authorization scenarios Azure facilitates, that includes support for a range of identity providers. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 04/21/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore identity services for SAP on Azure
 summary: This module explores using identity services to design multiple authentication and authorization scenarios Azure facilitates, that includes support for a range of identity providers.
 abstract: |

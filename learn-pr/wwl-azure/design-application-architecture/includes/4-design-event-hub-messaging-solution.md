@@ -1,3 +1,4 @@
+
 Certain applications produce a massive number of events from almost as many sources. These application scenarios are often referred to as _Big Data_. Big Data can require extensive infrastructure.
 
 Suppose you're designing the architecture for a Tailwind Traders home security monitoring application. Each security system has a dozen or more cameras sensors. Before the house can be deemed secure, the sensors and cameras are connected to a test harness and put through their paces. Additionally, cached video camera footage data is streamed when the security system is connected to the datacenter monitoring headquarters.

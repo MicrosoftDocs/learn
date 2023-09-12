@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-fabric.manage-security
+title: Manage Fabric security
+metadata:
+  title: Manage Fabric security
+  description: "Manage Fabric security"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-manage-security.md)]

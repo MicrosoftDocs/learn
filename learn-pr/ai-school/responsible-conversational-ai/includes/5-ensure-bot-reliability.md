@@ -6,7 +6,7 @@ For a bot to be useful, it must actually work. Humans are quick to discount expe
 
 As part of the design process, you need to build an understanding of the actions that your bot will be able to perform. Consider the questions that your bot will need to answer - and plan for the different ways that your users might ask for questions. Because AI systems are generally probabilistic, they will not always provide the correct answer, so, as discussed in the previous unit, you should allow for the probability of incorrect answers and provide the user with options should they be unsatisfied with the information the bot conveys. And if your bot is intended for deployment in a sensitive area, you should consider consulting a subject matter expert.
 
-A sensitive area can be a number of things - it can include fraught or consequential applications like national security, healthcare, finances, but it can extend to personal beliefs or cultural values. Sensitive areas can be anything relating to gender, sexuality, religion, politics, race, or other topics that relate to or evoke strong feelings.
+A sensitive area can be a number of things - it can include fraught or consequential applications like national/regional security, healthcare, finances, but it can extend to personal beliefs or cultural values. Sensitive areas can be anything relating to gender, sexuality, religion, politics, race, or other topics that relate to or evoke strong feelings.
 
 ## Establish reliability metrics
 
@@ -22,7 +22,7 @@ Inevitably, some (if not quite a few!) problems can’t be solved through user-b
 
 This is especially important for bots that work in sensitive or critical areas. Human users need to be assured that the bot can call for help, and the call will be answered. Users will feel much more comfortable with bots, and will have a much higher level of trust, if they know a human is just around the corner.
 
-Being able to gauge a user’s sentiment from moment to moment is invaluable for good bot interaction. For sentiment analysis, feedback, and to identify human handoff points, you could integrate Azure Cognitive Services like [Text Analytics](/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0 "Text Analytics") or [Content Moderator](https://azure.microsoft.com/services/cognitive-services/content-moderator/ "Content Moderator").
+Being able to gauge a user’s sentiment from moment to moment is invaluable for good bot interaction. For sentiment analysis, feedback, and to identify human handoff points, you could integrate Azure AI services like [Text Analytics](/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0 "Text Analytics") or [Content Moderator](https://azure.microsoft.com/services/cognitive-services/content-moderator/ "Content Moderator").
 
 ## Build traceability into your bot
 

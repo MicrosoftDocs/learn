@@ -8,7 +8,7 @@ metadata:
   author: duongau
   ms.author: duau
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Introduction to Azure hybrid connectivity services
 summary: |
   In this learning path, you'll learn how to connect your on-premises and Azure networks together with Azure hybrid connectivity services.

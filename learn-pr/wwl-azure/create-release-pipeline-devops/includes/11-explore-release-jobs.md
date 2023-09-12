@@ -1,3 +1,4 @@
+
 You can organize your build or release pipeline into jobs. Every build or deployment pipeline has at least one job.
 
 A job is a series of tasks that run sequentially on the same target. It can be a Windows server, a Linux server, a container, or a deployment group.

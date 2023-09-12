@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/08/2022
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
@@ -43,7 +42,7 @@ quiz:
     choices:
     - content: "Verify explicitly, assume breach, and use least privileged access."
       isCorrect: true
-      explanation: "Correct. The three principles of Zero Trust are verify explicitly, assume breach, and use least privileged access."
+      explanation: "Correct. The three principles of Zero Trust are verified explicitly, assume breach, and use least privileged access."
     - content: "Spear-fishing, pretexting, and baiting."
       isCorrect: false
       explanation: "Incorrect. spear-fishing, pretexting, and baiting are forms of social engineering."

@@ -3,11 +3,11 @@ uid: learn.wwl.challenge-project-work-variable-data-c-sharp
 metadata:
   title: Challenge project - Work with variable data in C#
   description: "Challenge project - Work with variable data in C#"
-  ms.date: 04/25/2023
+  ms.date: 08/23/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Challenge project - Work with variable data in C#
 summary: Demonstrate your ability to develop a console app that implements data formatting and using arrays to deliver a multiple term search feature.
 abstract: |
@@ -24,13 +24,15 @@ prerequisites: |
   - Experience using foreach and for statements in C# to loop through a block of code and access elements of array variables
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- advanced
+- beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- ai-builder
+- dotnet
+- vs-code
 units:
 - learn.wwl.challenge-project-work-variable-data-c-sharp.introduction
 - learn.wwl.challenge-project-work-variable-data-c-sharp.prepare

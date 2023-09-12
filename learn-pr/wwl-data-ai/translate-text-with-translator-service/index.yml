@@ -1,18 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.translate-text-with-translator-service
 metadata:
-  title: Translate text with the Translator service
-  description: "Translate text with the Translator service"
+  title: Translate text with the Azure AI Translator service
+  description: "Translate text with the Azure AI Translator service"
   ms.date: 05/11/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Translate text with the Translator service
-summary: The Translator service enables you to create intelligent apps and services that can translate text between languages.
+  ms.service: cognitive-services
+  ms.subservice: translator-text
+title: Translate text with the Azure AI Translator service
+summary: The Azure AI Translator service enables you to create intelligent apps and services that can translate text between languages.
 abstract: |
   After completing this module, you will be able to:
-  - Provision a Translator resource
+  - Provision an Azure AI Translator resource
   - Understand language detection, translation, and transliteration
   - Specify translation options
   - Define custom translations
@@ -27,7 +28,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 units:

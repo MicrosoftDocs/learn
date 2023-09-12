@@ -7,7 +7,7 @@ metadata:
   author: danterasera
   ms.author: darasera
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: advisor
 title: Get started with Azure Advisor
 summary: Learn how to use Azure Advisor to optimize your Azure workload usage, lower costs, increase efficiency, and improve security.
 abstract: |

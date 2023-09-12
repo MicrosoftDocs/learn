@@ -9,7 +9,9 @@ metadata:
   author: henrymbuguakiarie
   ms.author: henrymbugua
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 3
 ###########################################################################
 ###

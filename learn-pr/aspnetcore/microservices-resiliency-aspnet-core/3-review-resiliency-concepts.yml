@@ -2,10 +2,11 @@
 uid: learn.microservices-resiliency-aspnet-core.3-review-resiliency-concepts
 metadata:
   title: Review resiliency concepts
-  description: Learn about resiliency in microservices apps.
+  description: Learn about approaches to resiliency for cloud-native microservices apps.
   author: scottaddie
   ms.author: scaddie
-  ms.date: 08/04/2020
+  ms.manager: markl
+  ms.date: 05/09/2023
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial
 title: Review resiliency concepts

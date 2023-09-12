@@ -3,12 +3,11 @@ uid: learn.github.github-introduction-products.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Quick overview of what you'll learn in this module.
-  ms.date: 02/09/2023
-  author: davenowell
-  ms.author: dapolite
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: This content is part of the "Introduction to GitHub's products" module.
+  ms.date: 08/21/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: training-unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

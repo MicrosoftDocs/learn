@@ -6,8 +6,8 @@ metadata:
   title: Manage Dependabot notifications and reports
   description: Properly managing Dependabot notifications help you better secure your repository. This practice also helps ensure that important issues are promptly noticed by the right people.
   ms.date: 1/5/2022
-  author: sterling463
-  ms.author: csterling 
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

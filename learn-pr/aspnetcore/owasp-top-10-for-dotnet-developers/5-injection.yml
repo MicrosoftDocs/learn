@@ -1,0 +1,33 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.injection
+title: Injection
+metadata:
+  title: injection
+  description: "OWASP Top 10 for .NET Developers. Injection."
+  ms.date: 06/12/2023
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-injection.md)]
+
+quiz:
+  title: Check your knowledge
+  questions: 
+  - content: "In modern day .NET, how can the code fragment `string sql='SELECT * FROM users WHERE name = '\" + username + \"'` be written more securely?"
+    choices:
+    - content: "Using an object relational mapper (ORM)."
+      isCorrect: false
+      explanation: "Entity Framework with LINQ is a powerful way of querying many relational database engines."
+    - content: "Using stored procedures."
+      isCorrect: false
+      explanation: "Stored procedures are the most effective way of countering the SQL Injection vulnerability."
+    - content: "Using parameterized queries."
+      isCorrect: false
+      explanation: "Use parameterized queries where a direct SQL query must be used."
+    - content: "At least one or combinations of few techniques should be used, including Entity Framework and input validation"
+      isCorrect: true
+      explanation: "With username validation as a minimum, any of the methods can be used."

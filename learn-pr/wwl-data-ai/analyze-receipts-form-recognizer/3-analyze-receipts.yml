@@ -4,11 +4,12 @@ title: Exercise - Explore form recognition
 metadata:
   title: Exercise - Explore form recognition
   description: "Exercise - Explore form recognition"
-  ms.date: 02/07/2023
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: artificial-intelligence
+  ms.subservice: document-intelligence
 durationInMinutes: 15
 content: |
   [!include[](includes/3-analyze-receipts.md)]

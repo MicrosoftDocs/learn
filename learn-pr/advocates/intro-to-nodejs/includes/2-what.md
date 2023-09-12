@@ -4,7 +4,7 @@ Node.js is a wrapper around a JavaScript engine called [V8](https://nodejs.dev/e
 
 Even if you've never used JavaScript as a primary programming language, it might be the right choice for writing robust, modular applications. JavaScript also offers some unique advantages. For example, because browsers use JavaScript, you can use Node.js to share logic like form-validation rules between the browser and the server.
 
-JavaScript has become more relevant with the rise of single-page applications and supports the widely used JavaScript Object Notation (JSON) data-exchange format. Many NoSQL database technologies like CouchDB and MongoDB also use JavaScript and JSON as a format for queries and schemas. Node.js uses the same language and technologies that many modern services and frameworks use.
+JavaScript has become more relevant with the rise of single-page applications (SPAs) and supports the widely used JavaScript Object Notation (JSON) data-exchange format. Many NoSQL database technologies like CouchDB and MongoDB also use JavaScript and JSON as a format for queries and schemas. Node.js uses the same language and technologies that many modern services and frameworks use.
 
 You can build the following types of applications by using Node.js:
 
@@ -20,7 +20,7 @@ You can build the following types of applications by using Node.js:
 
 :::image type="icon" source="../media/npm.png" alt-text="Image that shows the Node J S and N P M registry logos." border="false":::
 
-The Node.js environment also offers an npm registry that you can use to share your own Node.js library.
+The Node.js environment also offers an npm registry that you can use to find Open source Node.js packages to use, or share your own Node.js library.
 
 Node.js is fast, high-performing, and able to handle real-time applications and heavy data flows. An example use case might be building a device that can send control commands to your standing desk. You could install Node.js on your IoT board, or use a device that comes with Node.js preinstalled. You'd then write your application logic in JavaScript and deploy it on the device.
 

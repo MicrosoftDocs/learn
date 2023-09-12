@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.cryptographic-failures
+title: Cryptographic failures
+metadata:
+  title: cryptographic-failures
+  description: "OWASP Top 10 for .NET Developers. Cryptographic failures."
+  ms.date: 06/12/2023
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-cryptographic-failures.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:   
+  - content: "It's considered to be good practice to come up with your own, home-grown encryption algorithm?"  
+    choices:
+    - content: "Yes."
+      isCorrect: false
+      explanation: "Incorrect. Rely on industry standard encryption and hashing implementations. Review the documentation to ensure you're using strong algorithms."
+    - content: "No."
+      isCorrect: true
+      explanation: "Correct. Rely on industry standard encryption and hashing implementations. Review the documentation to ensure you're using strong algorithms."    
+
+
+  - content: "Process of converting data to a different format to protect the integrity of data for storage, transmission, compression or decompression best describes"  
+    choices:    
+    - content: "Encryption."
+      isCorrect: false
+      explanation: "Incorrect. Encryption deals with maintaining confidentiality and integrity of the data by converting the data into an unreadable format to protect it from unauthorized access."    
+    - content: "Hashing."
+      isCorrect: false
+      explanation: "Incorrect. Hashing is a one-way cryptographic function while encryption and encoding is designed to work both ways."
+    - content: "Encoding."
+      isCorrect: true
+      explanation: "Correct!"    

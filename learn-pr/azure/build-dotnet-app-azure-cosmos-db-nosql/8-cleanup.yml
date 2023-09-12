@@ -1,0 +1,21 @@
+### YamlMime:ModuleUnit
+uid: learn.build-dotnet-app-azure-cosmos-db-nosql.cleanup
+title: Clean up
+metadata:
+  unitType: learning-content
+  title: Clean up
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+  description: |
+    Clean up the project's Visual Studio Code environment after concluding the guided project steps.
+  sandbox: true
+  interactive: bash
+  author: seesharprun
+  ms.author: sidandrews
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.date: 6/5/2023
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-cleanup.md)]

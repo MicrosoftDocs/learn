@@ -6,9 +6,9 @@ metadata:
   description: "Exercise - Analyze text"
   ms.date: 04/21/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labId: 99990
 labModal: true

@@ -7,6 +7,8 @@ metadata:
   author: barclayn
   ms.author: barclayn
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Build applications by using Azure AD managed identities
 durationInMinutes: 10

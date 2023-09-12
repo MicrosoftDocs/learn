@@ -9,7 +9,7 @@ metadata:
   author: jonburchel
   ms.author: jburchel  
   ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-azure-data-factory.md)]

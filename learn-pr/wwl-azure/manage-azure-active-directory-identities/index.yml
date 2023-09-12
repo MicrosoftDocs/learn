@@ -3,11 +3,10 @@ uid: learn.wwl.manage-azure-active-directory-identities
 metadata:
   title: Manage Azure Active Directory identities
   description: "This module enables you to handle Azure AD tasks, including RBAC, user/group management, PowerShell cmdlets, and AD DS object synchronization. You'll effectively utilize and manage Azure AD in your organization after completing this module."
-  ms.date: 03/10/2023
+  ms.date: 09/01/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Manage Azure Active Directory identities
 summary: This module teaches how to use Azure AD effectively. You'll learn about RBAC, user roles, creating and managing users and groups, using PowerShell cmdlets, and synchronizing objects from AD DS to Azure AD.
 abstract: |
@@ -21,7 +20,7 @@ prerequisites: |
   - Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later.
   - Strong understanding of computer networking, client security, and application concepts.
   - Experience using Active Directory Domain Services.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-active-directory-manage-identities.svg
 levels:
 - intermediate
 roles:
@@ -31,10 +30,7 @@ roles:
 products:
 - azure-powershell
 - mem
-- mem-configuration-manager
-- mem-intune
 - active-directory
-- azure-active-directory-connect
 units:
 - learn.wwl.manage-azure-active-directory-identities.introduction
 - learn.wwl.manage-azure-active-directory-identities.examine-role-based-access-control-user-roles-azure-active-directory

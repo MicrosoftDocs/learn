@@ -1,4 +1,5 @@
 
+
 Windows Autopilot supports several deployment scenarios depending on the desired experience:
 
  -  Windows Autopilot user-driven mode
@@ -120,8 +121,8 @@ After enabling local Windows Autopilot Reset, you can start it by pressing *Ctrl
 
 #### Remote Windows Autopilot Reset
 
-Remote Windows Autopilot Reset uses Windows reset functionality. You can use local Windows Autopilot Reset regardless of how you're currently managing a device. You use Intune to initiate a remote Windows Autopilot Reset following these steps:
+To initiate a remote Windows Autopilot Reset, you can leverage an MDM service such as Microsoft Intune. This method eliminates the necessity for IT personnel to physically visit each individual machine in order to commence the reset procedure. By following these steps, you can use Intune to initiate the remote Windows Autopilot Reset process:
 
-1.  In Endpoint Manager admin center, navigate to **Devices** > **Windows**.
+1.  In Microsoft Intune admin center, navigate to **Devices** > **Windows**.
 2.  Select the device for which you want to initiate a remote Windows Autopilot Reset.
 3.  Select **More** (the ellipsis) and then select **Autopilot Reset** to start the reset.

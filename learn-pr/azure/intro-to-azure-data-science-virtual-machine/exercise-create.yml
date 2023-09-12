@@ -1,16 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-data-science-virtual-machine.exercise-create
 metadata:
-  title: "Exercise: Create a Data Science Virtual Machine"
-  description: Create an Ubuntu Data Science Virtual Machine.
-  ms.date: 08/28/2020
+  title: Exercise - Create a Data Science Virtual Machine
+  description: Follow these steps to create an Ubuntu Data Science Virtual Machine.
+  ms.date: 06/02/2023
   author: jesscioffi
   ms.author: jcioffi
+  ms.reviewer: franksolomon 
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.prod: learning-azure
 azureSandbox: true
-title: "Exercise: Create a Data Science Virtual Machine"
+title: Exercise - Create a Data Science Virtual Machine
 durationInMinutes: 10
 content: |
   [!include[](includes/exercise-create.md)]

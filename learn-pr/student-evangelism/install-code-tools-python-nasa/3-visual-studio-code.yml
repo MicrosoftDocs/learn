@@ -8,7 +8,10 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen, devdivchpfy22
+  ms.custom:
+    - team=nextgen
+    - devdivchpfy22
+    - devx-track-python
 title: Discover the power to solve problems using Visual Studio Code
 durationInMinutes: 3
 content: |

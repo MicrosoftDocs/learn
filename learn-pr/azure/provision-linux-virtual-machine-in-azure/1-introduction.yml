@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.provision-linux-virtual-machine-in-azure.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 05/01/2023
+  author: chasecrum
+  ms.author: chasecrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/1-introduction.md)]
