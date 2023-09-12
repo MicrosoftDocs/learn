@@ -26687,6 +26687,11 @@
       "source_path": "learn-pr/wwl-data-ai/tune-hyperparameters-with-azure-machine-learning/4-early-termination.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/perform-hyperparameter-tuning-azure-machine-learning-pipelines/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/tune-hyperparameters-with-azure-machine-learning/3-sampling.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/perform-hyperparameter-tuning-azure-machine-learning-pipelines/",
+      "redirect_document_id": false
     }
   ]
 }
