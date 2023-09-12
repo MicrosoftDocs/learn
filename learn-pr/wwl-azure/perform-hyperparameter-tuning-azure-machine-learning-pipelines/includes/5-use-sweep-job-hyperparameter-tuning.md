@@ -1,5 +1,3 @@
-
-
 In Azure Machine Learning, you can tune hyperparameters by running a **sweep job**.
 
 ## Create a training script for hyperparameter tuning
