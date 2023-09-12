@@ -16,22 +16,20 @@ Migrating logins at the end of a database migration project can facilitate testi
 
 In our scenario, this approach allows you to focus on ensuring that security measures align perfectly with the finalized database structure, reducing potential complications and making the migration project more manageable.
 
-### Using the migration extension
+### Using the Azure Migration extension
 
-[Azure migration extension in Azure Data Studio](/azure/dms/tutorial-login-migration-ads).
+As part of the post-migration tasks, you can use [Azure migration extension in Azure Data Studio](/azure/dms/tutorial-login-migration-ads) to migrate logins and server roles from your on-premises SQL Server to the Azure SQL target. This login migration experience automates manual tasks such as the synchronization of logins with their corresponding user mappings and replicating server permissions and server roles.
 
-As part of the post-migration tasks, we're introducing a new user experience with an independent workflow you can use to migrate logins (preview) and server roles from your on-premises source SQL Server to the Azure SQL target. This login migration experience automates manual tasks such as the synchronization of logins with their corresponding user mappings and replicating server/securable permissions and server roles.
+Currently the migration extension only supports an Azure SQL Managed Instance or SQL Server on Azure VM targets.
 
-Currently the migration extension only supports an Azure SQL Managed Instance or SQL Server on Azure VM targets. Futhermore
+- **Azure SQL Managed Instance -** both Windows accounts and SQL logins.
+- **SQL Server on Azure VM -** only SQL logins
 
-Azure SQL Managed Instance - both Windows accounts and SQL logins.
-SQL Server on Azure VM - only SQL logins
+If you haven’t completed the database migration and the login migration process is started, the migration of logins and server roles will still happen, but login/role mappings won’t be performed correctly. This login migration process automates manual tasks, including syncing logins with their associated user mappings and replicating server permissions and roles.
 
-Important - If you have also migrated Windows accounts, make sure to check the option of Azure Active Directory - Password while logging into the target managed instance using the same password that the Windows account had on the source SQL Server.
+You can use the Azure SQL Migration extension for Azure Data Studio, [PowerShell]((/powershell/module/az.datamigration)) or [Azure CLI](/cli/azure/datamigration) to start the login migration process. 
 
-If you haven’t completed the database migration and the login migration process is started, the migration of logins and server roles will still happen, but login/role mappings won’t be performed correctly. Nevertheless, the login migration process can be performed at any time, to update the user mapping synchronization for recently migrated databases.
-
-You can use the Azure SQL Migration extension for Azure Data Studio, PowerShell or Azure CLI to start the login migration process. Here is a step-by-step guide on how to migrate logins using the migration extension in Azure Data Studio:
+Follow these steps to migrate logins using the migration extension in Azure Data Studio:
 
 1. Launch Azure SQL Migration extension from Azure Data Studio, and start the SQL Server login migration wizard.
 
@@ -59,12 +57,15 @@ Data Migration Assistant currently doesn’t support:
 > [!NOTE]
 > Server principles with names enclosed by double hash marks (##), which are for internal use only are not migrated.
 
-### Tool XPTO
+### MoveLogins script
 
-This tool assists in transferring login information from on-premises SQL Servers to Azure SQL Database or other PaaS offerings.
+The [MoveLogins script](/download/details.aspx?id=103111) assists in transferring login information from on-premises SQL Servers to Azure SQL Database or other PaaS offerings.
 
-The migration of SQL logins and groups are very important, given the complexity of permissions within SQL Server environments. While tools like the Data Migration Assistant (DMA) has the ability to transfer security information and does a full dependency graph to ensure permissions are transferred properly, the script offered here provides an additional option. It enables an Active Directory lookup for users, allowing you to obtain their User Principal Name (UPN), a feature currently not supported by DMA.
+While tools like the Data Migration Assistant (DMA) has the ability to transfer security information and does a full dependency graph to ensure permissions are transferred properly, the *MoveLogins* script provides an additional option. It enables an Active Directory lookup for users, allowing you to obtain their User Principal Name (UPN), a feature currently not supported by DMA.
 
-Move Login information from SQL Servers on premises to SQL Server running as Platform as a Service (PaaS).
+The script, written in PowerShell, generates a T-SQL script that can be applied to the target SQL environment to transfer logins, database users, roles and permissions. It does not execute the commands on the target environment. You need to carefully review the generated script output before applying it to the target environment.
 
-https://www.microsoft.com/en-us/download/details.aspx?id=103111 
+The script generates different results depending on whether you're using Azure SQL Database, or Azure SQL Managed Instance. In Azure SQL Database, you can't create AAD logins and related database users; instead, AAD users are created at the database level. For Azure SQL Managed Instance, it's similar to on-premises SQL Server with server-level logins and database users.
+
+>[!NOTE]
+> We suggest starting with a dedicated migration tool like Azure Migration extension or DMA to transfer logins. If you encounter any issues with these recommended tools, you can consider alternative methods like using this script.
