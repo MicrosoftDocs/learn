@@ -57,7 +57,7 @@ Other page types are available, and are mostly used for enabling different navig
 
 ## Views
 
-A content page typically displays a view. A view enables you to retrieve and present data in a specific manner. The default view for a content page is a `ContentView`, which displays items as-is. If you shrink the view, items might disappear from the display until the you resize the view. A `ScrollView` enables you to display items in a scrolling window; if you shrink the window, you can scroll up and down to display items. A `CarouselView` is a scrollable view that enables the user to swipe through a collection of items. A `CollectionView` can retrieve data from a named data source and present each item using a template as a format. There are many other types of views available, as well.
+A content page typically displays a view. A view enables you to retrieve and present data in a specific manner. The default view for a content page is a `ContentView`, which displays items as-is. If you shrink the view, items might disappear from the display until you resize the view. A `ScrollView` enables you to display items in a scrolling window; if you shrink the window, you can scroll up and down to display items. A `CarouselView` is a scrollable view that enables the user to swipe through a collection of items. A `CollectionView` can retrieve data from a named data source and present each item using a template as a format. There are many other types of views available, as well.
 
 ## Controls and layouts
 
