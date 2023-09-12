@@ -246,7 +246,7 @@ public static class PhonewordTranslator
 
 1. Tap the **Translate** button to convert the default text to a valid phone number. The caption on the **Call** button should change to **Call 1-555-6386284**:
 
-    :::image type="content" source="../media/6-phoneword-ui.png" alt-text="A screenshot of the Phoneword U I. The user has translated the text to a valid phone number.":::
+    :::image type="content" source="../media/6-phoneword-ui.png" alt-text="A screenshot of the Phoneword UI. The user has translated the text to a valid phone number.":::
 
 1. Tap the **Call** button. Verify that a prompt appears asking you to confirm the operation. Select **No**.
 
