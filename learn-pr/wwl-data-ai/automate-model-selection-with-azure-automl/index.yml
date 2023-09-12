@@ -30,6 +30,5 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.data-ai.automate-model-selection-with-azure-automl.using-automl
 badge:
   uid: learn.data-ai.automate-model-selection-with-azure-automl.badge
