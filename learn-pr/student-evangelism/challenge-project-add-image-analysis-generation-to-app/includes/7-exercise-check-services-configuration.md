@@ -12,4 +12,4 @@ Then, import the two functions in your 'App.js' and call them before rendering t
 ## Check your work
 
 To validate your work, remove the environment variables you set in the previous exercises for the Azure AI services from your environment and run your React app locally (using 'npm start' command). You should see a warning message like the one below:
-![Warning message](../media/warning_message.png)
+![Warning message](../media/warning-message.png)

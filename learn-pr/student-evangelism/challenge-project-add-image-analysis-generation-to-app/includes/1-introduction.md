@@ -27,4 +27,4 @@ By completing this project you'll demonstrate your ability to:
 - Enrich your solution with generative AI capabilities, by applying the skills learnt in the [Develop Generative AI solutions with Azure OpenAI Service](https://learn.microsoft.com/training/paths/develop-ai-solutions-azure-openai/?WT.mc_id=academic-105496-cacaste) Microsoft Learn module.
 
 Overall, the tech stack of the final solution will look as follows:
-![Solution tech stack](../media/solution_tech_stack.png)
+![Solution tech stack](../media/solution-tech-stack.png)

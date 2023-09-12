@@ -19,6 +19,6 @@ In this exercise you will add image analysis capabilities to your React applicat
 To validate the work done in this exercise, run your React app locally (using `npm start` command) and open the URL <http://localhost:3000> in a browser.
 Ensure you set up your environment variables with the Azure AI Vision service key and endpoint URL beforehand.
 You should see the same GUI as in the previous exercise, but now when you enter the URL of an image and press the 'Analyze' button, you should see the results of the image analysis service displayed in the web page, like in the image below:
-![Image Analysis result](../media/image_analysis_result.png)
+![Image Analysis result](../media/image-analysis-result.png)
 The resulting json might change according to the visual features you have selected in the API call. Use the 'Caption' feature to get a single sentence description of the image.
 You can use this public URL to test your app: <https://moderatorsampleimages.blob.core.windows.net/samples/sample16.png>.

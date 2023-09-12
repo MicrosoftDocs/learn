@@ -10,7 +10,7 @@ Once you have the Azure AI services credentials added as secrets to your reposit
 ## Check your work
 
 Navigate to your GitHub repository and click on the 'Actions' tab. You should be able to see the GitHub workflow launched by your latest commit running. When the worflow execution is completed, double check that it ended with a successfull status and expand the 'Build and Deploy' job. You should see a log similar to the one below:
-![GitHub workflow log](../media/github_action_log.png)
+![GitHub workflow log](../media/github-action-log.png)
 Click on the site link and test your app on the Cloud!
 
 > [!TIP]
