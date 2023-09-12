@@ -33,7 +33,6 @@ units:
 - learn.data-ai.train-local-model-with-azure-mls.script-parameters
 - learn.data-ai.train-local-model-with-azure-mls.register-model
 - learn.data-ai.train-local-model-with-azure-mls.training-model
-- learn.data-ai.train-local-model-with-azure-mls.knowledge-check
 - learn.data-ai.train-local-model-with-azure-mls.summary
 badge:
   uid: learn.data-ai.train-local-model-with-azure-mls.badge
