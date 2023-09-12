@@ -26297,6 +26297,11 @@
       "source_path": "learn-pr/paths/build-ai-solutions-with-azure-ml-service/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/intro-to-azure-machine-learning-service/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-machine-learning-workspace-resources-assets/",
+      "redirect_document_id": false
     }
   ]
 }
