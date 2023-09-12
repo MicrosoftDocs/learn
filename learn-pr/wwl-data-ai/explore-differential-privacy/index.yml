@@ -30,7 +30,6 @@ subjects:
 units:
 - learn.wwl.explore-differential-privacy.introduction
 - learn.wwl.explore-differential-privacy.understand-differential-privacy
-- learn.wwl.explore-differential-privacy.exercise-use
 - learn.wwl.explore-differential-privacy.knowledge-check
 - learn.wwl.explore-differential-privacy.summary
 badge:
