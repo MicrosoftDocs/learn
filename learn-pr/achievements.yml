@@ -2162,3 +2162,8 @@ achievements:
   title: Orchestrate machine learning with pipelines
   summary: Orchestrating machine learning training with pipelines is a key element of DevOps for machine learning. In this module, you'll learn how to create, publish, and run pipelines to train models in Azure Machine Learning.
   iconUrl: /training/achievements/create-pipelines-in-aml-badge.svg
+- uid: learn.wwl.use-compute-contexts-in-aml.badge
+  type: badge
+  title: Work with Compute in Azure Machine Learning
+  summary: One of the key benefits of the cloud is the ability to use scalable, on-demand compute resources for cost-effective processing of large data. In this module, you'll learn how to use cloud compute in Azure Machine Learning to run training experiments at scale.
+  iconUrl: /training/achievements/use-compute-contexts-in-aml-badge.svg
