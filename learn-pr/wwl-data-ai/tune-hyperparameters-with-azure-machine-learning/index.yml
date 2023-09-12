@@ -27,7 +27,6 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.wwl.tune-hyperparameters-with-azure-machine-learning.running-hyperparameter-tuning-experiment
 - learn.wwl.tune-hyperparameters-with-azure-machine-learning.summary
 badge:
   uid: learn.wwl.tune-hyperparameters-with-azure-machine-learning.badge
