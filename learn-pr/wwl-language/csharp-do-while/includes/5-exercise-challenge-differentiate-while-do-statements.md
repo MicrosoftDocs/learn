@@ -18,7 +18,7 @@ In this challenge, we'll set the conditions for some coding projects. Each proje
 
 ## Manage user input during this challenge
 
-When using a `Console.ReadLine()` statement to obtain user input, it's common practice to use a nullable type string (designated `string?`) for the input variable and then evaluate the value entered by the user. The following code sample uses a nullable type string to capture user input and then ensures that the user-supplied value in not `null` before continuing:
+When using a `Console.ReadLine()` statement to obtain user input, it's common practice to use a nullable type string (designated `string?`) for the input variable and then evaluate the value entered by the user. The following code sample uses a nullable type string to capture user input and then ensures that the user-supplied value isn't `null` before continuing:
 
 ```csharp
 string? readResult;
@@ -48,7 +48,7 @@ bool validNumber = false;
 validNumber = int.TryParse(readResult, out numericValue);
 ```
 
-If the string value assigned to `readResult` represents a valid integer, the value will be assigned to the integer variable named `numericValue`, and `true` will be assigned to the Boolean variable named `validNumber`. If the value assigned to `readResult` does not represent a valid integer, `validNumber` will be assigned a value of `false`. For example, if `readResult` is equal to "7", the value `7` will be assigned to `numericValue`.
+If the string value assigned to `readResult` represents a valid integer, the value will be assigned to the integer variable named `numericValue`, and `true` will be assigned to the Boolean variable named `validNumber`. If the value assigned to `readResult` doesn't represent a valid integer, `validNumber` will be assigned a value of `false`. For example, if `readResult` is equal to "7", the value `7` will be assigned to `numericValue`.
 
 ## Code project 1 - write code that validates integer input
 
@@ -60,7 +60,7 @@ Here are the conditions that your first coding project must implement:
 
   - Your solution must use a `Console.ReadLine()` statement to obtain input from the user.
   - Your solution must ensure that the input is a valid representation of an integer.
-  - If the integer value is not between 5 and 10, your code must use a `Console.WriteLine()` statement to prompt the user for an integer value between 5 and 10.
+  - If the integer value isn't between 5 and 10, your code must use a `Console.WriteLine()` statement to prompt the user for an integer value between 5 and 10.
   - Your solution must ensure that the integer value is between 5 and 10 before exiting the iteration.
 
 - Below (after) the iteration code block: your solution must use a `Console.WriteLine()` statement to inform the user that their input value has been accepted.
@@ -107,7 +107,7 @@ Here are the conditions that your second coding project must implement:
   - Your solution must ensure that the value entered matches one of the three role options.
   - Your solution should use the `Trim()` method on the input value to ignore leading and training space characters.
   - Your solution should use the `ToLower()` method on the input value to ignore case.
-  - If the value entered is not a match for one of the role options, your code must use a `Console.WriteLine()` statement to prompt the user for a valid entry.
+  - If the value entered isn't a match for one of the role options, your code must use a `Console.WriteLine()` statement to prompt the user for a valid entry.
 
 - Below (after) the iteration code block: Your solution must use a `Console.WriteLine()` statement to inform the user that their input value has been accepted.
 
@@ -143,8 +143,8 @@ Here are the conditions that your third coding project must implement:
     ```
 
 - Your solution must declare an integer variable named `periodLocation` that can be used to hold the location of the period character within a string.
-- Your solution must include an outer `foreach` or `for` loop that can be used to process each string element in the array. The string variable that you will process inside the loops should be named `myString`.
-- In the outer loop, your solution must use the `IndexOf()` method of the `String` class to get the location of the first period character in the `myString` variable. The method call should be similar to: `myString.IndexOf(".")`. If there is no period character in the string, a value of -1 will be returned.  
+- Your solution must include an outer `foreach` or `for` loop that can be used to process each string element in the array. The string variable that you'll process inside the loops should be named `myString`.
+- In the outer loop, your solution must use the `IndexOf()` method of the `String` class to get the location of the first period character in the `myString` variable. The method call should be similar to: `myString.IndexOf(".")`. If there's no period character in the string, a value of -1 will be returned.  
 - Your solution must include an inner `do-while` or `while` loop that can be used to process the `myString` variable.
 - In the inner loop, your solution must extract and display (write to the console) each sentence that is contained in each of the strings that are processed.
 - In the inner loop, your solution must not display the period character.

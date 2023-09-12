@@ -4,11 +4,10 @@ title: Exercise - Complete the challenge to display email addresses
 metadata:
   title: Exercise - Complete the challenge to display email addresses
   description: "Exercise - Complete the challenge to display email addresses"
-  ms.date: 05/04/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-challenge-email-addresses.md)]
