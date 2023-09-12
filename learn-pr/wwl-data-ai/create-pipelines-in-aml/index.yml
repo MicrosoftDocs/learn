@@ -28,7 +28,6 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.wwl.create-pipelines-in-aml.introduction
 - learn.wwl.create-pipelines-in-aml.pipelines
 - learn.wwl.create-pipelines-in-aml.pipeline-data
 - learn.wwl.create-pipelines-in-aml.step-reuse
