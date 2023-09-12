@@ -7,8 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-  ms.subservice: language-service
+  ms.service: azure-ai-language
 title: Extract insights from text with the Azure AI Language service
 summary: The Azure AI Language service enables you to create intelligent apps and services that extract semantic information from text.
 abstract: |
