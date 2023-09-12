@@ -29,7 +29,6 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.data-ai.register-and-deploy-model-with-amls.introduction
 - learn.data-ai.register-and-deploy-model-with-amls.troubleshoot-deployment
 - learn.data-ai.register-and-deploy-model-with-amls.knowledge-check
 - learn.data-ai.register-and-deploy-model-with-amls.summary
