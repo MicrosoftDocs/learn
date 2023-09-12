@@ -1,6 +1,3 @@
-
-
-
 SAP HANA Dynamic Tiering 2.0 (DT 2.0) offers the ability to offload less frequently accessed data from memory into extended storage. SAP HANA Dynamic Tiering 2.0 isn't supported by SAP BW or S/4HANA. Its primary use cases consist of native HANA applications.
 
 There's a set of mandatory requirements that must be followed to ensure supportability for DT 2.0 on Azure VMs:

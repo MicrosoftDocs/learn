@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-images-azure-openai.what-is-dall-e
+title: What is DALL-E?
+metadata:
+  title: What is DALL-E?
+  description: "Explore image generation capabilities of DALL-E in Azure OpenAI service"
+  ms.date: 6/14/2023
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: openai
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-dall-e.md)]

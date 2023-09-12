@@ -7,7 +7,9 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-arm-template
 title: Exercise setup
 durationInMinutes: 20
 content: |

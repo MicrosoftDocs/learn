@@ -4,13 +4,12 @@ title: Provision and configure target environments
 metadata:
   title: Provision and configure target environments
   description: "Provision and configure target environments"
-  ms.date: 05/17/2023
+  ms.date: 09/04/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.prod: azure
+  ms.service: azure-devops
+durationInMinutes: 5
 content: |
   [!include[](includes/2-provision-configure-target-environments.md)]

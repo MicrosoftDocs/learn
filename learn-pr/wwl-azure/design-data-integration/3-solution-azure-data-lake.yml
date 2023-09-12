@@ -4,13 +4,10 @@ title: Design a data integration solution with Azure Data Lake
 metadata:
   title: Design a data integration solution with Azure Data Lake
   description: "Design a data integration solution with Azure Data Lake"
-  ms.date: 03/14/2023
+  ms.date: 06/12/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

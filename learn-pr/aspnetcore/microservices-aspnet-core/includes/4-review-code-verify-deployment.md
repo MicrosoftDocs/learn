@@ -5,12 +5,12 @@ In this unit, you verify that the :::no-loc text="eShopOnContainers"::: app depl
 After the app deploys to AKS, the terminal displays a variation of the following message that shows the URLs for the app UI, logging service, and web status pages. You can select the URLs to go to the pages.
 
 ```console
-The eShop-Learn application has been deployed to "http://000.0.000.00" (IP: 000.0.000.00).
+The eShop-Learn application has been deployed to "http://203.0.113.12" (IP: 203.0.113.12).
 
 You can begin exploring these services (when ready):
-- Centralized logging       : http://000.0.000.00/seq/#/events?autorefresh (See transient failures during startup)
-- General application status: http://000.0.000.00/webstatus/ (See overall service status)
-- Web SPA application       : http://000.0.000.00/
+- Centralized logging       : http://203.0.113.12/seq/#/events?autorefresh (See transient failures during startup)
+- General application status: http://203.0.113.12/webstatus/ (See overall service status)
+- Web SPA application       : http://203.0.113.12/
 ```
 
 > [!TIP]

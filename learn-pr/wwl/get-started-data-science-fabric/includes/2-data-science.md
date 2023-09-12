@@ -1,7 +1,5 @@
----
-ms.custom:
-  - build-2023
----
+
+
 Data science allows you to extract insights and knowledge from complex datasets. Most commonly, data scientists use these large datasets to train a machine learning model. A machine learning model allows you to generate predictions on new data. 
 
 Before learning how to train a model, explore the types of models you can train and how a typical data science process works.

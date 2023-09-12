@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.use-slurm-hpc-azure-cyclecloud.run-slurm-with-cyclecloud
+title: Describe how to run Slurm with Azure CycleCloud
+metadata: 
+  title: Describe how to run Slurm with Azure CycleCloud
+  description: This content is part of the "Use Slurm for HPC on Azure CycleCloud" module.
+  ms.date: 05/17/2023
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: azure-cyclecloud
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-run-slurm-with-cyclecloud.md)]

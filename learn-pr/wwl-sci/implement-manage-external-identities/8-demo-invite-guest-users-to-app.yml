@@ -4,11 +4,11 @@ title: Demo - manage guest users in Azure Active Directory
 metadata:
   title: Demo - manage guest users in Azure Active Directory
   description: "Demo - manage guest users in Azure Active Directory"
-  ms.date: 02/03/2023
+  ms.date: 07/10/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: identity-and-access
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

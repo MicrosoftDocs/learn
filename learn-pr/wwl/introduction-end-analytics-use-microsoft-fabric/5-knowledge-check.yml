@@ -4,15 +4,15 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: "Knowledge Check"
-  ms.date: 05/10/2023
+  ms.date: 07/20/2023
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
+  ms.service: fabric
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric
-  ms.prod: learning-azure
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
 durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
@@ -30,23 +30,23 @@ quiz:
       explanation: "Correct. Fabric's OneLake provides a single, integrated environment for data professionals and the business to collaborate on data projects."
   - content: "What is the default storage format for Fabric's OneLake?"
     choices:
-    - content: "Delta Parquet."
+    - content: "Delta"
       isCorrect: true
       explanation: "Correct. The default storage format for OneLake is Delta Parquet, an open-source storage layer that brings reliability to data lakes."
-    - content: "JSON."
+    - content: "JSON"
       isCorrect: false
       explanation: "Incorrect. JSON is not the default storage format for OneLake."
-    - content: "CSV."
+    - content: "CSV"
       isCorrect: false
       explanation: "Incorrect. CSV is not the default storage format for OneLake."
   - content: "Which of the following Fabric workloads is used to move and transform data?"
     choices:
-    - content: "Data Science."
+    - content: "Data Science"
       isCorrect: false
       explanation: "Incorrect. The Data Science workload enables data scientists to collaborate on data science projects."
-    - content: "Data Warehousing."
+    - content: "Data Warehousing"
       isCorrect: false
       explanation: "Incorrect. The Data Warehousing workload enables data professionals to build data warehouses."
-    - content: "Data Factory."
+    - content: "Data Factory"
       isCorrect: true
       explanation: "Correct. The Data Factory workload combines Power Query with the scale of Azure Data Factory to move and transform data."

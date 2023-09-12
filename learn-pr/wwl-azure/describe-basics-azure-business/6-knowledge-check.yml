@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-basics-azure-business.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/11/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What does it mean if a business recently started hosting all of its IT systems in Microsoft Azure?"
+    choices:
+    - content: "The business's IT services are delivered via Microsoft’s orbiting satellites."
+      isCorrect: false
+      explanation: "Incorrect. Azure services are hosted at datacenters across the globe – and on the ground."
+    - content: "The business’s IT services are based at its headquarters on Azure computers."
+      isCorrect: false
+      explanation: "Incorrect. A key benefit of using the cloud is that a business is no longer responsible for on-premises, physical maintenance of computer equipment."
+    - content: "The business’s IT services are delivered over the Internet from Azure datacenters around the world."
+      isCorrect: true
+      explanation: "Correct. When a business subscribes to Azure, its IT activities are hosted at Microsoft datacenters worldwide and the business accesses these services via the Internet."
+  - content: "In what terms do businesses think of costs when they use the cloud?"
+    choices:
+    - content: "Capital expenditures such as purchasing and maintaining IT equipment"
+      isCorrect: false
+      explanation: "Incorrect. A key benefit of using the cloud is that a business no longer needs to pay the capital expenditures of buying and maintaining its own IT equipment."
+    - content: "Operational expenditures of subscribing to cloud services"
+      isCorrect: true
+      explanation: "Correct. Cloud economics is all about planning for the operational expenditures of using the cloud for whatever you can imagine."
+    - content: "Financial expenditures such as interest on loans to purchase cloud technology."
+      isCorrect: false
+      explanation: "Incorrect. Subscribing to the cloud does not require a business to directly purchase any technology."
+  - content: "Which of these is a major benefit of cloud computing?"
+    choices:
+    - content: "It’s the only way to interface with other cloud-based businesses."
+      isCorrect: false
+      explanation: "Incorrect. Cloud computing is all about what your business can do. The cloud can interface with off-cloud customers and businesses without any issues."
+    - content: "It’s easy to scale up to new capacities, global customers, and larger projects."
+      isCorrect: true
+      explanation: "Correct. The cloud enables a business to quickly grow and innovate without new capital expenditures. New services and computing capacity are accessed over the Internet."
+    - content: "It is less regulated than off-cloud IT systems."
+      isCorrect: false
+      explanation: "Incorrect. Cloud computing is subject to the same regulations as off-cloud IT systems, though the cloud can help a business easily comply with various national and regional laws."
+interactive: bash

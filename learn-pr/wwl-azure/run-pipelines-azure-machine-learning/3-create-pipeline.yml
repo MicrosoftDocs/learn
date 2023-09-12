@@ -4,11 +4,12 @@ title: Create a pipeline
 metadata:
   title: Create a pipeline
   description: "Create a pipeline"
-  ms.date: 05/18/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning
+  ms.subservice: pipelines
 durationInMinutes: 6
 content: |
   [!include[](includes/3-create-pipeline.md)]

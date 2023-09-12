@@ -2,24 +2,25 @@
 uid: learn.azure-sql-replication
 metadata:
   moduleType: standard
-  title: Data replication on Azure SQL Databases
-  description: "Azure SQL data replication module that covers database synchronization and data changes tracking and recording. The module explores tools such as change data capture (CDC), SQL Data Sync, and change tracking."
-  ms.date: 11/10/2022
+  title: Data tracking and synchronization with Azure SQL Database
+  description: "Azure SQL data tracking module that covers database synchronization, data changes tracking and recording. The module explores tools such as change data capture (CDC), SQL Data Sync, and change tracking."
+  ms.date: 08/30/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
   ms.topic: interactive-tutorial
   ms.service: sql-database
-title: Data replication on Azure SQL Databases
-summary: "This module will introduce you to several data tracking, loading, replicating, and streaming tools that you can use to synchronize data changes from your Azure SQL Database to other destinations. More specifically, we will cover: change data capture (CDC), SQL Data Sync, and change tracking."
+title: Data tracking and synchronization with Azure SQL Database
+summary: "This module introduces you to several data tracking, loading, and streaming tools that you can use to track or synchronize data changes from your Azure SQL Database to other destinations. More specifically, we will cover: change data capture (CDC), SQL Data Sync, and change tracking."
 abstract: |
   By the end of this module, you'll be able to:
-    - Identify suitable Azure SQL Database data replication tools that fit your use case and business needs.
-    - Enable data replication tools on your Azure SQL Database.
-    - Monitor your deployments to ensure the data replication tools work successfully on your database.
+    - Identify suitable Azure SQL Database data tracking tools that fit your use case and business needs.
+    - Enable data tracking tools on Azure SQL Database.
+    - Monitor your deployments to ensure the data tracking tools work successfully on your database.
 prerequisites: |
-  - Experience working with, maintaining, and developing with SQL Server.
-  - Experience with Azure, such as deploying and managing resources.
+  - Experience working with, maintaining, and developing with SQL Server
+  - Experience with Azure, such as deploying and managing resources
+  - [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?azure-portal=true) with connectivity to Azure to complete the exercises
 iconUrl: /training/achievements/learn-azure-sql-replication.svg
 levels: 
   - beginner

@@ -6,7 +6,7 @@ In this unit, you'll learn how Azure Monitor receives resource data, what makes 
 
 ## Data types in Azure Monitor
 
-Azure Monitor receives data from target resources like applications, operating systems, Azure resources, Azure subscriptions, and Azure tenants. The nature of the resource defines which data types are available. A data type will be a *metric*, a *log*, or both a metric and a log:
+Azure Monitor receives data from target resources like applications, operating systems, Azure resources, Azure subscriptions, and Azure tenants. The nature of the resource defines which data types are available. A data type can be a *metric*, a *log*, or both a metric and a log:
 
 - The focus for *metric*-based data types is the numerical time-sensitive values that represent some aspect of the target resource.
 - The focus for *log*-based data types is the querying of content data held in structured, record-based log files that are relevant to the target resource.
@@ -24,15 +24,15 @@ You'll learn about the three signal types that you can use to monitor your envir
 Every alert or notification available in Azure Monitor is the product of a rule. Some of these rules are built into the Azure platform. You can use alert rules to create custom alerts and notifications. No matter which target resource or data source you use, the composition of an alert rule remains the same.
 
 - **RESOURCE**
-  - The *target resource* to be used for the alert rule. It's possible to assign multiple target resources to a single alert rule. The type of resource will define the available signal types.
+  - The *target resource* for the alert rule. You can assign multiple target resources to a single alert rule. The type of resource defines the available signal types.
 - **CONDITION**
-  - The *signal type* to be used to assess the rule. The signal type can be a metric, an activity log, or logs. There are others, but this module doesn't cover them.
-  - The *alert logic* applied to the data that's supplied via the signal type. The structure of the alert logic will change depending on the signal type.
+  - The *signal type* used to assess the rule. The signal type can be a metric, an activity log, or logs. There are others, but this module doesn't cover them.
+  - The *alert logic* applied to the data that's supplied via the signal type. The structure of the alert logic changes depending on the signal type.
 - **ACTIONS**
   - The *action*, like sending an email, sending an SMS message, or using a webhook.
   - An *action group*, which typically contains a unique set of recipients for the action.
 - **ALERT DETAILS**
-  - An *alert name* and an *alert description* that should specify the alert's purpose.
+  - An *alert name* and an *alert description* that specify the alert's purpose.
   - The *severity* of the alert if the criteria or logic test evaluates `true`. The five severity levels are:
     - **0**: Critical
     - **1**: Error
@@ -40,7 +40,7 @@ Every alert or notification available in Azure Monitor is the product of a rule.
     - **3**: Informational
     - **4**: Verbose
 
-![Screenshot of the "Create rule" page for Azure Monitor in the Azure portal.](../media/2-creating-an-alert.png)  
+:::image type="content" source="../media/2-creating-an-alert.png" alt-text="Screenshot of the Create rule page in the Azure Monitor portal.":::
 
 ## Scope of alert rules
 
@@ -52,10 +52,6 @@ You can get monitoring data from across most of the Azure services, and report o
 - Health of the underlying Azure platform
 - Tests for website availability
 
-The following alert capabilities aren't yet available for the generation of monitoring data:
-
-- Web availability tests through Application Insights
-
 ## Manage alert rules
 
 Not every alert rule that you create needs to run forever. With Azure Monitor, you can specify one or more alert rules and enable or disable them, as needed.
@@ -64,12 +60,13 @@ As an Azure solution architect, you'd use Azure Monitor to enable tightly focuse
 
 ## Alert summary view
 
-By default, the alert page shows a summary of all alerts. Note that the view doesn't show classic alerts. You can apply filters to the view by using one or more of the following categories: subscriptions, alert condition, severity, or time ranges. The view includes only alerts that match these criteria.
+The alert page shows a summary of all alerts. You can apply filters to the view by using one or more of the following categories: subscriptions, alert condition, severity, or time ranges. The view includes only alerts that match these criteria.
 
-### Understand the alert state in the resolution process
+:::image type="content" source="../media/2-alerts-page.png" alt-text="Screenshot of Azure Monitor alerts page in the Azure Monitor portal.":::
 
-You can control the alert state to manage and specify where you are in the alert resolution process. Currently, there are three states:
+### Alert condition
 
-- Every new alert has an alert state of **New**. This state means that the issue has been detected, but not yet reviewed.
-- After an admin has reviewed the alert and is working on it, the alert state changes to **Acknowledged**.
-- When the issue is resolved, the alert state is set to **Closed**.
+The alert condition is set by the system.
+
+- When an alert fires, the alert's monitor condition is set to **Fired**.
+- After the underlying condition that caused the alert to fire clears, the monitor condition is set to **Resolved**.

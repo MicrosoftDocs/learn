@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/23/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+quiz:
+  title: ""
+  questions:
+  - content: "What is the most important aspect of assessing databases for potential migration blockers before migrating to Azure SQL offerings?"
+    choices:
+    - content: "Determining the cost of migration."
+      isCorrect: false
+      explanation: "Incorrect. The main focus of the assessment is on identifying compatibility issues, deprecated features, and behavior changes that may affect the migration process. While considering the cost is important, it isn't the primary focus of assessing databases."
+    - content: "Identifying deprecated features and behavior changes."
+      isCorrect: true
+      explanation: "Correct. Assessments help identify compatibility issues, breaking changes, and deprecated features that may impact a successful migration. It allows you to address these issues beforehand and plan for any necessary changes."
+    - content: "Estimating the time required for migration."
+      isCorrect: false
+      explanation: "Incorrect. The main focus of the assessment is on identifying compatibility issues, deprecated features, and behavior changes that may affect the migration process. While estimating the time required for migration is important, it isn't the primary focus of assessing databases."
+  - content: "What are the options for running the assessment and Azure recommendation steps at scale?"
+    choices:
+    - content: "PowerShell and Azure CLI."
+      isCorrect: true
+      explanation: "Correct. The assessment and Azure recommendation steps can be run at scale using PowerShell or Azure CLI. These command-line interfaces allow for automation and performing these tasks on multiple databases or instances."
+    - content: "Azure Data Studio."
+      isCorrect: false
+      explanation: "Incorrect. Azure Data Studio isn't relevant tool for this specific task."
+    - content: "Azure portal and Azure Storage Explorer."
+      isCorrect: false
+      explanation: "Incorrect. Azure portal and Azure Storage Explorer aren't relevant tools for this specific task."
+  - content: "What factors are considered when calculating the estimated monthly cost for Azure SQL Database using the Azure SQL Assessment tool?"
+    choices:
+    - content: "Database size, compute size, and storage size."
+      isCorrect: false
+      explanation: "That's incorrect. While database size and compute size are part of the calculation, storage size isn't part of it."
+    - content: "Database size, compute size, and database activity."
+      isCorrect: true
+      explanation: "That's correct. When calculating the estimated monthly cost for Azure SQL Database using the Azure SQL Assessment tool, the factors considered are the database size, compute size, and database activity."
+    - content: "Compute size, storage size, and database activity."
+      isCorrect: false
+      explanation: "That's incorrect. While compute size and database activity are part of the calculation, storage size isn't part of it."

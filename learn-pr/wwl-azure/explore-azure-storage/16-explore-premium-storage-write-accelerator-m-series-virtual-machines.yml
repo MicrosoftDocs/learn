@@ -4,11 +4,11 @@ title: Explore solutions with Premium Storage and Azure Write Accelerator for Az
 metadata:
   title: Explore solutions with Premium Storage and Azure Write Accelerator for Azure M-Series virtual machines
   description: "Explore solutions with Premium Storage and Azure Write Accelerator for Azure M-Series virtual machines"
-  ms.date: 06/01/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/16-explore-premium-storage-write-accelerator-m-series-virtual-machines.md)]

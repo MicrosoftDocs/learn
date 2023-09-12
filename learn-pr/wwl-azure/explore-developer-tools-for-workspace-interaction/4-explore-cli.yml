@@ -4,11 +4,11 @@ title: Explore the CLI
 metadata:
   title: Explore the CLI
   description: "Explore the CLI"
-  ms.date: 05/18/2023
+  ms.date: 07/28/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom: devx-track-azurecli
 durationInMinutes: 8
 content: |
   [!include[](includes/4-explore-cli.md)]

@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What function of the Translator service should you use to convert the Chinese word \"你好\" to the English word \"Hello\"?"
+  - content: "What function of the Azure AI Translator service should you use to convert the Chinese word \"你好\" to the English word \"Hello\"?"
     choices:
     - content: "detect"
       isCorrect: false
@@ -25,7 +25,7 @@ quiz:
     - content: "transliterate"
       isCorrect: false
       explanation: "Incorrect. Transliteration converts text from one script to another."
-  - content: "What function of the Translator service should you use to convert the Russian word \"спасибо\" in Cyrillic characters to \"spasibo\" in Latin characters?"
+  - content: "What function of the Azure AI Translator service should you use to convert the Russian word \"спасибо\" in Cyrillic characters to \"spasibo\" in Latin characters?"
     choices:
     - content: "detect"
       isCorrect: false

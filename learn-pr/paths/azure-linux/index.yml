@@ -12,11 +12,13 @@ metadata:
 title: Linux on Azure
 summary: |
   This comprehensive learning path reviews deployment and management of Linux on Azure. Learn about cloud computing concepts, Linux IaaS and PaaS solutions and benefits and Azure cloud services. Discover how to migrate and extend your Linux-based workloads on Azure with improved scalability, security, and privacy.
-
-prerequisites: None
-video:
-  title: "Linux on Azure video"
-  url: https://www.microsoft.com/videoplayer/embed/RWK1dx
+prerequisites: |
+  - Ability to configure and administer a Linux server
+  - Access to a Microsoft Azure account
+  - Ability to navigate the Azure portal
+# video:
+#  title: "Linux on Azure video"
+#  url: https://www.microsoft.com/videoplayer/embed/RWK1dx
 iconUrl: /training/achievements/azure-linux.svg
 levels:
 - beginner
@@ -24,16 +26,22 @@ roles:
 - solution-architect
 - administrator
 - developer
+- solution-architect
 products:
 - azure
+- azure-linux-vm
+- azure-virtual-machines
 subjects:
 - cloud-computing
 modules:
-- learn.azure.intro-to-azure-linux
-- learn.create-linux-vm-in-azure
-- learn.optimize-operations-with-automanage
-- learn-sqlserver.introduction-sql-server-linux
-- learn.wwl.introduction-open-source-database-migration-azure
+- learn.introduction-to-linux-on-azure
+- learn.plan-your-linux-environment-in-azure
+- learn.provision-linux-virtual-machine-in-azure
+# - learn.azure.intro-to-azure-linux
+# - learn.create-linux-vm-in-azure
+# - learn.optimize-operations-with-automanage
+# - learn-sqlserver.introduction-sql-server-linux
+# - learn.wwl.introduction-open-source-database-migration-azure
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm
 trophy:
   uid: learn.azure-linux.trophy

@@ -1,6 +1,3 @@
-
-
-
 The operating system and data virtual disk .vhd files of Azure VMs reside in an Azure Storage account as blobs. Storage accounts provide the persistent store for virtual machine disks in Azure.
 
 These .vhd files in Azure Storage represent one of two object types—**images or disks**.

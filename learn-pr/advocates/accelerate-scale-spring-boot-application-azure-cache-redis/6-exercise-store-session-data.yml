@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.exercise-store-session-data
-title: Exercise - Store HTTP session data in Redis with Spring Session
+title: Exercise - Store HTTP session data in Redis
 metadata:
-  title: Configure Spring Session with Redis to store HTTP session data
-  description: In this exercise, we add Spring Session to our Spring Boot application and configure it to store HTTP session data in Azure Cache for Redis.
+  title: Exercise - Store HTTP session data in Redis
+  description: Complete this exercise to add Spring Session to your Spring Boot application and use it to store HTTP session data in Azure Cache for Redis.
   author: judubois
   ms.author: judubois
   ms.date: 01/20/2021

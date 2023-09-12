@@ -4,11 +4,10 @@ title: Prepare for guided project
 metadata:
   title: Prepare for guided project
   description: "Prepare for guided project"
-  ms.date: 05/04/2023
+  ms.date: 09/06/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/2-prepare.md)]

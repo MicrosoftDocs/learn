@@ -5,6 +5,7 @@ metadata:
   description: Use Linkerd to configure infrastructure-based resiliency in your microservices app.
   author: scottaddie
   ms.author: scaddie
+  ms.manager: markl
   ms.date: 05/09/2023
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial

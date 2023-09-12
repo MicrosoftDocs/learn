@@ -4,13 +4,11 @@ title: Understand external configuration store patterns
 metadata:
   title: Understand external configuration store patterns
   description: "Understand external configuration store patterns"
-  ms.date: 05/30/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+durationInMinutes: 3
 content: |
   [!include[](includes/4-understand-external-configuration-store-patterns.md)]

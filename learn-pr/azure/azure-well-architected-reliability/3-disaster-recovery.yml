@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-reliability.3-disaster-recovery
-title: Develop a disaster recovery strategy
+title: Disaster recovery
 metadata:
-  title: Develop a disaster recovery strategy
-  description: Develop a disaster recovery strategy
+  title: Disaster recovery
+  description: Learn about disaster recovery, including disaster recovery planning and testing, recovery objectives, data and process recovery, and replication.
   ms.date: 05/19/2020
   author: robbyatmicrosoft
   ms.author: martinek
@@ -15,27 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-
-  - content: 'Which of the following can be excluded from your recovery steps in your recovery plan?'
+  - content: "Which of the following choices don't need to be part of the recovery steps in your DR plan?"
     choices:
-    - content: 'How to restore backups'
+    - content: "How to restore backups."
       isCorrect: false
-      explanation: 'The steps needed to restore backups are a critical piece of a recovery plan.'
-    - content: 'How to fail over to replicated systems'
+      explanation: "The steps to restore backups are a critical piece of a recovery plan."
+    - content: "How to fail over to replicated systems."
       isCorrect: false
-      explanation: 'The process to fail over to replicated systems is a critical piece of a recovery plan.'
-    - content: 'How to reestablish network connectivity to on-premises or external networks'
+      explanation: "The process to fail over to replicated systems is a critical piece of a recovery plan."
+    - content: "How to reestablish network connectivity to on-premises or external networks."
       isCorrect: false
-      explanation: 'Network connectivity to on-premises or external networks are often critical pieces of infrastructure. The steps to reestablish after failure are critical pieces of a recovery plan.'
-    - content: 'None of the above should be excluded in a recovery plan.'
+      explanation: "The steps to reestablish network connectivity to on-premises or external networks are critical pieces of a recovery plan."
+    - content: "How to implement replication from scratch."
       isCorrect: true
-      explanation: 'All these procedures are necessary in a recovery plan.'
-
-  - content: "True or false: data replication and data backup are the same thing."
+      explanation: "You don't implement replication from scratch. Most fully featured database products and services include some kind of replication as a tightly integrated feature."
+  - content: "Are data replication and data backup the same thing?"
     choices:
-    - content: 'True'
+    - content: "Yes."
       isCorrect: false
-      explanation: "Data replication and data backup both makes copies of your data, but the frequency and usage of the copies is so different that these are considered different concepts."
-    - content: 'False'
+      explanation: "Both data replication and data backup copy your data, but the frequency and usage of the data are different."
+    - content: "No."
       isCorrect: true
-      explanation: "Replication creates real-time or near-real-time copies of live data for use in failover during execution. Backup creates long-lived, read-only snapshots of data for use in recovery,"
+      explanation: "Replication creates real-time or near-real-time copies of live data to use in failover, while backup creates long-lived, read-only snapshots of data to use in recovery."

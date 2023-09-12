@@ -7,7 +7,7 @@ metadata:
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
-  ms.service: storage
+  ms.service: azure-storage
 title: Monitor, diagnose, and troubleshoot your Azure Storage
 summary: Discover the tools available to detect and correct problems with your Azure Storage to enable your cloud storage infrastructure to operate at peak performance.
 abstract: | 

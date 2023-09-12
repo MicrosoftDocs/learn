@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Data normalization in Microsoft Sentinel
 summary: By the end of this module, you'll be able to use ASIM parsers to identify threats inside your organization.
 abstract: |

@@ -27,6 +27,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.make-data-available-azure-machine-learning.introduction
+- learn.wwl.make-data-available-azure-machine-learning.video
 - learn.wwl.make-data-available-azure-machine-learning.understand-uris
 - learn.wwl.make-data-available-azure-machine-learning.create-datastore
 - learn.wwl.make-data-available-azure-machine-learning.create-data-asset

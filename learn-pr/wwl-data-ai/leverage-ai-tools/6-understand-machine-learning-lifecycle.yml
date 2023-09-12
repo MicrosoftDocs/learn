@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.understand-machine-learning-lifecycle
+title: Understand the machine learning lifecycle
+metadata:
+  title: Understand the machine learning lifecycle
+  description: "Understand the machine learning lifecycle"
+  ms.date: 07/27/2023
+  author: Adriamen
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.service: microsoft-365
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-understand-machine-learning-lifecycle.md)]

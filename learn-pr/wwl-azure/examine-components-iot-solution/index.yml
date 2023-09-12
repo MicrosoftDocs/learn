@@ -24,7 +24,6 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-iot-dps
 - azure-iot-hub
 subjects:
 - iot
@@ -38,3 +37,4 @@ units:
 - learn.wwl.examine-components-iot-solution.summary
 badge:
   uid: learn.wwl.examine-components-of-iot-solution.badge
+hidden: true

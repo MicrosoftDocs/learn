@@ -3,19 +3,19 @@ uid: learn.azure.sustainable-software-engineering-overview
 metadata:
   title: The Principles of Sustainable Software Engineering
   description: Sustainable Software Engineering is an emerging discipline at the intersection of climate science, software, hardware, electricity markets, and data center design. The Principles of Sustainable Software Engineering are a core set of competencies needed to define, build, and run sustainable software applications.
-  ms.date: 01/09/2023
-  author: ashussai
-  ms.author: ashussai
+  ms.date: 06/13/2023
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
-  ms.custom:
-  - team=cloud_advocates
+  ms.prod: learning-azure
   ms.contributors:
-  - ashussai-12042020
+  - tozimmergren
+  - simont
 title: The Principles of Sustainable Software Engineering
 summary: Sustainable Software Engineering is an emerging discipline at the intersection of climate science, software, hardware, electricity markets, and data center design. The Principles of Sustainable Software Engineering are a core set of competencies needed to define, build, and run sustainable software applications.
 abstract: |
   In this module, you'll:
-  - Identify the eight principles of Sustainable Software Engineering.
+  - Identify the six principles of Sustainable Software Engineering.
   - Understand the two philosophies of Sustainable Software Engineering.
 prerequisites: |
   - Familiarization with general computing concepts
@@ -43,15 +43,13 @@ subjects:
 units:
 - learn.azure.sustainable-software-engineering-overview.1-introduction
 - learn.azure.sustainable-software-engineering-overview.2-overview
-- learn.azure.sustainable-software-engineering-overview.3-carbon
-- learn.azure.sustainable-software-engineering-overview.4-electricity
-- learn.azure.sustainable-software-engineering-overview.5-carbon-intensity
-- learn.azure.sustainable-software-engineering-overview.6-embodied-carbon
-- learn.azure.sustainable-software-engineering-overview.7-energy-proportionality
-- learn.azure.sustainable-software-engineering-overview.8-network-efficiency
-- learn.azure.sustainable-software-engineering-overview.9-demand-shaping
-- learn.azure.sustainable-software-engineering-overview.10-optimization
+- learn.azure.sustainable-software-engineering-overview.carbon-efficiency
+- learn.azure.sustainable-software-engineering-overview.energy-efficiency
+- learn.azure.sustainable-software-engineering-overview.carbon-awareness
+- learn.azure.sustainable-software-engineering-overview.hardware-efficiency
+- learn.azure.sustainable-software-engineering-overview.measurement
+- learn.azure.sustainable-software-engineering-overview.climate-commitments
 - learn.azure.sustainable-software-engineering-overview.11-knowledge-check
-- learn.azure.sustainable-software-engineering-overview.12-summary
+- learn.azure.sustainable-software-engineering-overview.summary
 badge:
   uid: learn.azure.sustainable-software-engineering-overview.badge

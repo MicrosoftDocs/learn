@@ -3,12 +3,12 @@ uid: learn.azure.threat-modeling-secured-environment
 metadata:
   title: Choose a client application to use in a Privileged Access Workstation (PAW) with threat modeling
   description: Learn how to threat model a client application for security risks and find ways to reduce or eliminate them before installing it into a secured environment.
-  ms.date: 05/27/2021
+  ms.date: 08/17/2023
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
 title: Choose a client application to use in a Privileged Access Workstation (PAW) with threat modeling
-summary: Learn how to use the foundation of threat modeling to assess a client application for security risks and find ways to reduce or eliminate them before installing it into a privileged environment.
+summary: Learn how to use the foundation of threat modeling to assess a client application for security risks. Find ways to reduce or eliminate risks before installing an application into a privileged environment.
 abstract: |
   In this module, you will:
   - Understand the importance of a well defined, open-ended questionnaire.
@@ -19,7 +19,6 @@ prerequisites: |
   - Threat modeling security fundamentals
 iconUrl: /training/achievements/threat-modeling-secured-environment.svg
 levels:
-- beginner
 - intermediate
 roles:
 - administrator
@@ -30,9 +29,9 @@ roles:
 products:
 - azure
 - azure-iot-security-center
-- azure-security-center
+- defender-for-cloud
 - m365-security-center
-- m365-ems-cloud-app-security
+- defender-for-cloud-apps
 subjects:
 - threat-protection
 - virtual-machine

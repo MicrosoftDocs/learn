@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.service: log-analytics
+  ms.service: azure-monitor
 title: Configure Log Analytics
 summary: You will learn how to configure Log Analytics including structuring queries.
 abstract: |

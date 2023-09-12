@@ -7,7 +7,7 @@ metadata:
   author: roygara
   ms.author: rogarana
   ms.topic: interactive-tutorial
-  ms.service: storage
+  ms.service: azure-storage
 title: Caching and performance in Azure storage disks
 summary: Moving data as fast as possible is good for business. Learn about disk performance in Azure, how caching can help optimize read and write access to storage, and how to enable caching to help optimize the performance of Azure VM disks.
 abstract: |

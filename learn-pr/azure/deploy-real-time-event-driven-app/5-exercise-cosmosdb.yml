@@ -9,7 +9,9 @@ metadata:
   ms.author: sakriema
   ms.topic: interactive-tutorial
   ms.service: azure
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-azurecli
   ms.contributors: sakriema-03012021
 durationInMinutes: 8
 content: |

@@ -4,11 +4,11 @@ title: Explore how to measure quality of your release process
 metadata:
   title: Explore how to measure quality of your release process
   description: "Explore how to measure quality of your release process"
-  ms.date: 04/28/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/8-explore-how-to-measure-quality-of-your-release-process.md)]

@@ -79,7 +79,7 @@ To add real-time HTTP health checking to the coupon service, apply the following
    - A *liveness* endpoint that AKS queries periodically to check for failures.
 
      AKS provides liveness probes to detect failing applications, and restarts the apps when they don't return success codes. When the coupon service starts up for the first time, there might be time-consuming tasks, like setting up seed data in the database or awaiting RabbitMQ startup. To avoid restarts during this time, the liveness check filters the checks with the `self` tag, which returns the HTTP status code 200 for every request.
-   
+
    - An `/hc` *readiness* endpoint that AKS queries to find out when a service is ready to start accepting traffic.
 
      The `/hc` endpoint returns the HTTP status code 200 when all registered checks are successful. External health monitoring systems like the *:::no-loc text="WebStatus":::* app query the same endpoint. *:::no-loc text="WebStatus":::* provides a dashboard to visualize the status of configured health checks. You use the [AspNetCore.HealthChecks.UI.Client](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI) NuGet package to generate the dashboard.

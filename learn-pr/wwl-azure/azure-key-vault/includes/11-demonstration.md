@@ -2,82 +2,155 @@ Use this Try-this exercises to get some hands-on experience with Azure.
 
 In this demonstration, we'll explore the Azure Key Vault.
 
-## Task 1: Create a key vault
+## Task 1: Create a virtual network
+
+1. In the portal, search for and select Virtual networks.
+
+2. On the Virtual networks page, select Create.<br>
+
+3. On the Basics tab of Create virtual network, enter or select the following information:
+
+| **Setting**      | **Value**                                                          |
+| ---------------- | ------------------------------------------------------------------ |
+| Project details  |                                                                    |
+| Subscription     | Select your subscription.                                          |
+| Resource group   | Select **Create new.**<br>Enter **test-rg** in Name.<br>Select OK. |
+| Instance details |                                                                    |
+| Name             | Enter **vnet-1.**                                                  |
+| Region           | Select **(US) East US**                                            |
+
+4. Select **Next: IP Addresses** at the bottom of the page.
+
+5. In the **IP Addresses** tab, under **IPv4 address space,** select the garbage deletion icon to remove any address space that already appears, and then enter **10.0.0.0/16.**<br>
+
+6. Select **+ Add subnet.**<br>
+
+7. Enter or select the following information in **Add subnet:**<br>
+
+| **Setting**          | **Value**              |
+| -------------------- | ---------------------- |
+| Subnet name          | Enter **subnet-1.**    |
+| Subnet address range | Enter **10.0.0.0/24.** |
+
+8. Select **Add.**
+
+## Task 2: Create a key vault<br>
 
 In this task, we'll create a key vault.
 
-1.  Sign in to the Azure portal and search for **Key Vaults**.
-2.  On the Key vaults page, click **+ Create**.
-3.  On the **Basics** tab, fill out the required information.
-     -  Discuss the **Pricing tier** selections, Standard and Premium. Premium supports HSM-backed keys.
-     -  Discuss **Soft delete** and **Retention period**.
-4.  Click **Review and Create** and then **Create**.
-5.  Wait for the new key vault to be created, or move to a key vault that has already been created.
+1. From the Azure portal menu, or from the **Home** page, select **Create a resource**.
 
-## Task 2: Review key vault settings
+2. In the Search box, enter **Key Vault.**
 
-In this task, we'll review key vault settings.
+3. From the results list, choose **Key Vault.**
 
-1.  In the Portal, navigate to the key vault.
-2.  Under the **Name** list, click the newly created **Key Vault**.
-3.  Under the **Objects**, click **Keys**.
-4.  Click **Generate/Import** and review the Keys configuration information.
-5.  Under **Settings**, click **Secrets**.
-6.  Click **Generate/Import**, review the Secrets configuration information, and click **Create**.
-7.  View the new Secret and note that keys support versioning.
-8.  Under **Settings**, click **Certificates**.
-9.  Click **Generate/Import** and review the Certificates configuration information.
+4. On the Key Vault section, choose **Create.**
 
-## Task 3: Configure access policies
+5. On the Create key vault section provide the following information:
+
+ -  **Name:** A unique name is required. For this example, we use **Contoso-vault2.**
+ -  **Subscription:** Choose a subscription.
+ -  Under **Resource Group,** choose **Create new** and enter a resource group name.
+ -  In the **Location** pull-down menu, choose a location.
+ -  Leave the other options to their defaults.
+
+6. Select **Create**.
+
+Take note of these two **example** properties:
+
+ -  Vault Name: In the **example,** this is **Contoso-Vault2.** You'll use this name for other steps.<br>
+ -  Vault URI: In the **example,** the Vault Uniform Resource Identifiers (URI) is **https://contoso-vault2.vault.azure.net/**. Applications that use your vault through its Representations State Transfer API must use this Uniform Resource Identifiers (URI).
 
 > [!NOTE]
-> To complete this demonstration you will need a non-privileged test user.
+> At this point, your Azure account is the only one authorized to perform operations on this new vault.
 
-In this task, we'll configure access policies and test access.
+## Task 3: Configure Azure Key Vault networking settings
 
-1.  Continue in the Portal with your key vault.
-2.  Under **Settings**, click **Access Policies**.
-3.  Review the **Enable access to** choices: Azure Virtual Machines for deployment, Azure Resource Manager for template deployment, and Azure Disk Encryption for volume encryption.
-4.  Review the creator account **Key Permissions**. Note the **Cryptographic operation** permissions aren't assigned.
-5.  Review the creator account **Secret Permissions**. Note the **Purge** permission.
-6.  Review the creator account **Certificate Permissions**.
-7.  Open the **Cloud Shell** with the **Bash** option. You should be signed in as a Global Administrator.
-8.  Use your key information to verify the secret you created in the previous task displays successfully for this role.
-    
-    ```CLI
-    az keyvault secret show --name <secret_name> --vault-name <keyvault_name>'
-    
-    ```
-9.  In another browser tab, open the portal, and sign-in as the test user.
-10. Open the **Cloud Shell** with the **Bash** option.
-11. Verify that the secret doesn't display for the test user. Access is denied.
-    
-    ```CLI
-    az keyvault secret show --name <secret_name> --vault-name <keyvault_name>
-    
-    ```
-12. Return to the Global Administrator account in the portal.
-13. Add the Key Vault Contributor role to your test user.
-14. Try the test user's access. Access is denied.
-    
-    ```CLI
-    az keyvault secret show --name <secret_name> --vault-name <keyvault_name>
-    
-    ```
-15. Explain that adding the RBAC role grants access to the Key Vault control plane. It doesn't grant access to the date in the Key Vault.
-16. Return to your Key Vault and create an access policy.
-17. Under **Settings**, select **Access policies** and then **Add Access Policy**.
-     -  Configure from the template (optional): **Key, Secret, & Certificate Management**
-     -  Key permissions: **none**
-     -  Secret permissions: **Get, List**
-     -  Certificate permissions: **none**
-     -  Select principal: **select your test user**
+1. Browse to the **previously created key vault** you want to secure.
 
-18. Be sure to **Add** your new access policy. And to **Save** your changes.
-19. Try the test user's access. The user should now have access and the key should display.
-    
-    ```CLI
-    az keyvault secret show --name <secret_name> --vault-name <keyvault_name>
-    
-    ```
-20. As you have time, return to the Secret configuration settings and change **Enabled** to **No**. Be sure to save your changes, then try access the key again.
+2. Select **Networking,** and then select the **Firewalls and virtual networks** tab.
+
+3. Under **Allow access from,** select **Allow public access from specific virtual networks and IP addresses**
+
+4. To add existing virtual networks to firewalls and virtual network rules, select + **Add a virtual networks,**  \+ **Add existing virtual networks.**
+
+5. In the new blade that opens, select the subscription, virtual networks, and subnets that you want to allow access to this key vault. If the virtual networks and subnets you select don't have service endpoints enabled, confirm that you want to enable service endpoints, and select **Enable.** It might take up to 15 minutes to take effect.
+
+6. Under **IP Networks,** add IPv4 address ranges by typing IPv4 address ranges in CIDR (Classless Inter-domain Routing) notation or individual IP addresses.
+
+7. If you want to allow Microsoft Trusted Services to bypass the Key Vault Firewall, select 'Yes'.
+
+8. Select **Save.**
+
+> [!NOTE]
+> You can also add new virtual networks and subnets, and then enable service endpoints for the newly created virtual networks and subnets, by selecting + **Add new virtual network.** Then follow the prompts.
+
+## Task 4: Verify if soft delete is enabled on a key vault and enable soft delete<br>
+
+1. Log in to the Azure portal.
+
+2. Select your key vault.
+
+3. Click on the "Properties" blade.
+
+4. Verify if the radio button next to soft-delete is set to "Enable Recovery".
+
+5. If soft-delete isn't enabled on the key vault, click the radio button to enable soft delete and click "Save".
+
+## Task 5: Grant access to a service principal to purge and recover deleted secrets
+
+1. Log in to the Azure portal.
+
+2. Select your key vault.
+
+3. Click on the "Access Policy" blade.
+
+4. In the table, find the row of the security principal you wish to grant access to (or add a new security principal).
+
+5. Click the drop-down for keys, certificates, and secrets.
+
+6. Scroll to the bottom of the drop-down and click "Recover" and "Purge"
+
+7. Security principals will also need get and list functionality to perform most operations.
+
+## Task 6: List, recover, or purge a soft-deleted key vault
+
+1. Log in to the Azure portal.
+
+2. Click on the search bar at the top of the page.
+
+3. Search for the "Key Vault" service. Don't click an individual key vault.
+
+4. At the top of the screen, click the option to "Manage deleted vaults"
+
+5. A context pane will open on the right side of your screen.
+
+6. Select your subscription.
+
+7. If your key vault has been soft deleted it will appear in the context pane on the right.
+
+8. If there are too many vaults, you can either click "Load More" at the bottom of the context pane or use CLI or PowerShell to get the results.
+
+9. Once you find the vault you wish to recover or purge, select the checkbox next to it.
+
+10. Select the recover option at the bottom of the context pane if you would like to recover the key vault.
+
+11. Select the purge option if you would like to permanently delete the key vault.
+
+## Task 7: List, recover or purge soft deleted secrets, keys, and certificates
+
+1. Log in to the Azure portal.
+
+2. Select your key vault.
+
+3. Select the blade corresponding to the secret type you want to manage (keys, secrets, or certificates).
+
+4. At the top of the screen, click on "Manage deleted (keys, secrets, or certificates)
+
+5. A context pane will appear on the right side of your screen.
+
+6. If your secret, key, or certificate doesn't appear in the list, it isn't in the soft-deleted state.
+
+7. Select the secret, key, or certificate you would like to manage.
+
+8. Select the option to recover **or** purge at the bottom of the context pane.

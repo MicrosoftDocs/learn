@@ -7,7 +7,9 @@ metadata:
   ms.date: 12/02/2021
   author: alfredodeza
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 durationInMinutes: 5

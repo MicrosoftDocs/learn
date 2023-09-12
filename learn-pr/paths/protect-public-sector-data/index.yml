@@ -28,13 +28,13 @@ products:
 - azure-farmbeats
 - azure-active-directory
 - azure-key-vault
-- azure-security-center
+- defender-for-cloud
 - azure-monitor
 - azure-policy
 - azure-firewall
 - azure-network-watcher
 - azure-ddos-protection
-- azure-sentinel
+- microsoft-sentinel
 - azure-advisor
 subjects:
 - security

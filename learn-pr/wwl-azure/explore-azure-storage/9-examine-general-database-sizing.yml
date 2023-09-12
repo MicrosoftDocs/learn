@@ -4,11 +4,11 @@ title: Examine general database sizing
 metadata:
   title: Examine general database sizing
   description: "Examine general database sizing"
-  ms.date: 06/01/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/9-examine-general-database-sizing.md)]

@@ -4,11 +4,11 @@ title: Exercise register an application
 metadata:
   title: Exercise register an application
   description: "Exercise register an application"
-  ms.date: 04/03/2023
+  ms.date: 06/20/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

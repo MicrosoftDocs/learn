@@ -9,6 +9,8 @@ metadata:
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise.md)]

@@ -1,4 +1,3 @@
-
 ## Categories of Azure AD roles
 
 Azure AD built-in roles differ in where they can be used, which fall into the following **three broad categories**.

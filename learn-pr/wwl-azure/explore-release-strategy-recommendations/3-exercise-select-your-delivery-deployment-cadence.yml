@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-release-strategy-recommendations.exercise-select-your-delivery-deployment-cadence
-title: Exercise - Select your delivery and deployment cadence
+title: Exercise - select your delivery and deployment cadence
 metadata:
-  title: Exercise - Select your delivery and deployment cadence
-  description: "Exercise - Select your delivery and deployment cadence"
-  ms.date: 05/31/2023
+  title: Exercise - select your delivery and deployment cadence
+  description: "Exercise - select your delivery and deployment cadence"
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-select-your-delivery-deployment-cadence.md)]

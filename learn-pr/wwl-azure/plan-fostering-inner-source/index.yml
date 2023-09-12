@@ -3,7 +3,7 @@ uid: learn.wwl.plan-foster-inner-source
 metadata:
   title: Plan foster inner source
   description: "Plan foster inner source"
-  ms.date: 11/01/2022
+  ms.date: 06/09/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -15,7 +15,8 @@ abstract: |
   - Implement fork workflow
   - Choose between branches and forks
   - Share code between forks
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/5-plan-fostering-inner-source.svg
 levels:
 - advanced

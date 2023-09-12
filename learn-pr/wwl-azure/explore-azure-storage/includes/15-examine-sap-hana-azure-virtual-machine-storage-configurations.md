@@ -1,6 +1,3 @@
-
-
-
 Azure provides different types of storage that are suitable for Azure VMs that are running SAP HANA. The **SAP HANA certified Azure storage types** that can be considered for SAP HANA deployments are:
 
 - Azure Premium SSD

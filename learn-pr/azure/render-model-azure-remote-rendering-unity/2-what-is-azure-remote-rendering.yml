@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.2-what-is-azure-remote-rendering
-title: What is Azure Remote Rendering?
+title: Azure Remote Rendering overview
 metadata:
-  title: What is Azure Remote Rendering?
-  description: Learn about Azure Remote Rendering on Azure and how it can benefit rendering 3D models
+  title: Azure Remote Rendering overview
+  description: Learn about Azure Remote Rendering and how it can help render complex 3D models for untethered devices.
   ms.date: 02/01/2021
   author: aprilspeight
   ms.author: apspeigh

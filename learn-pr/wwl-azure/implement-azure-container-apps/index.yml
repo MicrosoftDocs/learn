@@ -3,7 +3,7 @@ uid: learn.wwl.implement-azure-container-apps
 metadata:
   title: Implement Azure Container Apps
   description: "Run serverless containerized apps in Azure Container Apps service."
-  ms.date: 06/01/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   *   You should be familiar with container concepts and terminology.
   *   An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/implement-azure-container-apps.svg
 levels:
 - intermediate
 roles:

@@ -13,4 +13,4 @@ azureSandbox: true
 interactive: bash
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-create-single-shot-recognition-speech-to-text-app.md)]
+  [!INCLUDE[](includes/5-exercise-create-single-shot-recognition-speech-to-text-app.md)]

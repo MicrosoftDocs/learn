@@ -1,18 +1,18 @@
-To use the Language Understanding service to develop an NLP solution, you'll need to create a Language resource in Azure. That resource will be used for both authoring your model and processing prediction requests from client applications.
+To use the Azure AI Language Understanding service to develop an NLP solution, you'll need to create an Azure AI Language resource in Azure. That resource will be used for both authoring your model and processing prediction requests from client applications.
 
-The Language service has various features, including sentiment analysis, key phrase extraction, entity recognition, intent recognition, and text classification. Some of these features can be used without configuration of your Language resource, such as language detection or sentiment analysis. Other features, such as conversational language understanding and custom named entity recognition will require a model to be built for prediction.
+The Azure AI Language service has various features, including sentiment analysis, key phrase extraction, entity recognition, intent recognition, and text classification. Some of these features can be used without configuration of your Azure AI Language resource, such as language detection or sentiment analysis. Other features, such as conversational language understanding and custom named entity recognition will require a model to be built for prediction.
 
 > [!TIP]
 > This module's lab covers building a model for conversational language understanding. For more focused modules on custom text classification and custom named entity recognition, see the [Build custom text analytics](/training/paths/build-custom-text-analytics?azure-portal=true) learning path.
 
 ## Building your Language Understanding model
 
-For Language features that require a model for prediction, you'll need to build, train and deploy that model before using it to make a prediction. This building and training will teach the Language service what to look for.
+For Language features that require a model for prediction, you'll need to build, train and deploy that model before using it to make a prediction. This building and training will teach the Azure AI Language service what to look for.
 
-First, you'll need to create your Language resource in the [Azure portal](https://portal.azure.com/?azure-portal=true).
+First, you'll need to create your Azure AI Language resource in the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
 1. Click on **Create a new resource**
-2. Find and select **Language service**
+2. Find and select **Azure AI Language service**
 3. Click Create
 4. Fill out the necessary details, choosing the region closest to you geographically (for best performance) and giving it a unique name
 
@@ -28,7 +28,7 @@ For example, if you want to deploy a model for a conversational language underst
 
 #### Authentication
 
-For each call to your Language resource, you authenticate the request by providing the following header.
+For each call to your Azure AI Language resource, you authenticate the request by providing the following header.
 
 |Key|Value|
 |--|--|
@@ -44,7 +44,7 @@ Submit a **POST** request to the following endpoint.
 
 |Placeholder  |Value  | Example |
 |---------|---------|---------|
-|`{ENDPOINT}`     | The endpoint of your Language resource   | `https://<your-subdomain>.cognitiveservices.azure.com` |
+|`{ENDPOINT}`     | The endpoint of your Azure AI Language resource   | `https://<your-subdomain>.cognitiveservices.azure.com` |
 |`{PROJECT-NAME}`     | The name for your project. This value is case-sensitive   | `myProject` |
 |`{DEPLOYMENT-NAME}`     | The name for your deployment. This value is case-sensitive   | `staging` |
 |`{API-VERSION}`     | The version of the API you're calling | `2022-05-01` |
@@ -110,7 +110,7 @@ The lab in this module will walk through using Language Studio to build your mod
 To query your model for a prediction, create a **POST** request to the appropriate URL with the appropriate body specified. For built in features such as language detection or sentiment analysis, you'll query the `analyze-text` endpoint.
 
 > [!TIP]
-> Remember each request needs to be authenticated with your Language resource key in the `Ocp-Apim-Subscription-Key` header
+> Remember each request needs to be authenticated with your Azure AI Language resource key in the `Ocp-Apim-Subscription-Key` header
 
 ```rest
 {ENDPOINT}/language/:analyze-text?api-version={API-VERSION}
@@ -233,4 +233,4 @@ A sample response to your query would be similar to the following.
 }
 ```
 
-For full documentation on features, including examples and how-to guides, see the [Azure Cognitive Service for Language](/azure/cognitive-services/language-service/?azure-portal=true) documentation pages.
+For full documentation on features, including examples and how-to guides, see the [Azure AI Language Service](/azure/cognitive-services/language-service/?azure-portal=true) documentation pages.

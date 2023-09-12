@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-how-git-manages-source-control.identify-function-basic-git-commands
+title: Identify the function of basic Git commands
+metadata:
+  title: Identify the function of basic Git commands
+  description: "Identify the function of basic Git commands"
+  ms.date: 08/23/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-identify-function-basic-git-commands.md)]
+interactive: bash

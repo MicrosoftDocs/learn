@@ -4,13 +4,11 @@ title: Explore CodeQL in GitHub
 metadata:
   title: Explore CodeQL in GitHub
   description: "Explore CodeQL in GitHub"
-  ms.date: 05/17/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.service: azure-devops
+durationInMinutes: 2
 content: |
   [!include[](includes/3-explore-codeql-github.md)]

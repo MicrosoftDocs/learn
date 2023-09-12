@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.interact-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the difference between a controller-based API and a minimal API in ASP.NET Core?"
+    choices:
+    - content: "Minimal APIs require more code and configuration than Controller-based APIs."
+      isCorrect: false
+      explanation: "Incorrect. Minimal APIs are a simplified approach for building fast HTTP APIs with ASP.NET Core. You can build fully functioning REST endpoints with minimal code and configuration."
+    - content: "Minimal APIs are used for handling web pages, not web API requests."
+      isCorrect: false
+      explanation: "Incorrect. This statement is about Controller-based APIs, not Minimal APIs."
+    - content: "Controller-based APIs map each endpoint to a specific controller class, while Minimal APIs declare API routes and actions to build fully functioning REST endpoints with minimal code and configuration."
+      isCorrect: true
+      explanation: "Correct. Controller-based APIs are a traditional approach to building APIs in which each endpoint is mapped to a specific controller class, and minimal APIs declare routes and actions with minimal code."
+  - content: "What is Swashbuckle?"
+    choices:
+    - content: "A tool that helps developers design, build, document, and consume SOAP APIs."
+      isCorrect: false
+      explanation: "Incorrect. Swashbuckle is a tool that helps developers design, build, document, and consume RESTful APIs."
+    - content: "A NuGet package that provides a way to automatically generate XML documentation for ASP.NET Web API projects."
+      isCorrect: false
+      explanation: "Incorrect. Swashbuckle is a NuGet package that provides a way to automatically generate Swagger documentation for ASP.NET Web API projects."
+    - content: "A NuGet package that provides a way to automatically generate Swagger documentation for ASP.NET Web API projects."
+      isCorrect: true
+      explanation: "Correct. Swashbuckle is a NuGet package that provides a way to automatically generate Swagger documentation for ASP.NET Web API projects."

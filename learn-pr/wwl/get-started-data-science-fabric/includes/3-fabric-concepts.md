@@ -1,7 +1,5 @@
----
-ms.custom:
-  - build-2023
----
+
+
 When you perform data science in Microsoft Fabric, there are three key features to help you manage your work: **notebooks**, **experiments**, and **models**. 
 
 You use notebooks to write and run code. Within a notebook, you can run one or more experiments. An experiment allows you to track your workloads like training a machine learning model. Finally, you can save a machine learning model as a model in Fabric.

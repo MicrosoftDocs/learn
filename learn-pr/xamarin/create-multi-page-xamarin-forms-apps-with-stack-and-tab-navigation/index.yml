@@ -19,6 +19,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: 'SC-200: Connect logs to Microsoft Sentinel'
 prerequisites: |
   - Knowledge of using KQL in Microsoft Sentinel like you could learn from learning path SC-200: Create queries for Azure Sentinel using Kusto Query Language (KQL)
@@ -22,7 +22,7 @@ roles:
 products:
 - azure
 - azure-log-analytics
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - cloud-security
 modules:

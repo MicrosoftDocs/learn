@@ -1,4 +1,5 @@
 
+
 There are many technologies that you can use to implement a stream processing solution, but while specific implementation details may vary, there are common elements to most streaming architectures.
 
 ## A general architecture for stream processing

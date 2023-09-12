@@ -9,6 +9,8 @@ metadata:
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
 azureSandbox: true
 labModal: false
 durationInMinutes: 20

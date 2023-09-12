@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 20
 content: |
   [!include[](includes/6-exercise-investigate-incident.md)]

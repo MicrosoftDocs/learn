@@ -1,15 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.create-configure
-title: Create and configure a Spring Boot app to use Azure Cache for Redis
+title: Learn about Redis for Java and Spring Boot applications
 metadata:
-  title: Learn what Redis and Azure Cache for Redis are, and configure them with Spring Boot
-  description: In this unit, we learn about Redis and Azure Cache for Redis, and we discover their common usage scenarios.
+  title: Learn about Redis for Java and Spring Boot applications
+  description: Learn about Redis, Azure Cache for Redis, and Spring Data Redis, and how to use them with Java and Spring Boot applications.
   author: judubois
   ms.author: judubois
   ms.date: 01/20/2021
   ms.topic: interactive-tutorial
   ms.service: azure
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors: judubois-03112021
 durationInMinutes: 5
 content: |

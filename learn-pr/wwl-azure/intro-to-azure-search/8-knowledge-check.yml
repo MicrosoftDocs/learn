@@ -3,12 +3,12 @@ uid: learn.azure-introduction-to-azure-search.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Test your knowledge by answering questions about skills you learned in this module."
-  ms.date: 09/02/2022
+  description: "Knowledge check"
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

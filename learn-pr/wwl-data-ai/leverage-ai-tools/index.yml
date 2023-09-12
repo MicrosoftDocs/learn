@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.leverage-ai-tools
+metadata:
+  title: Leverage AI tools and resources for your business
+  description: "Learn the primary concepts and technologies of AI, and how Microsoft is turning the latest AI into tools, products, and services that organizations can use."
+  ms.date: 07/27/2023
+  author: Adriamen
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.service: microsoft-365
+title: Leverage AI tools and resources for your business
+summary: This module provides a high-level overview of the primary concepts of AI and the technologies behind it. You’ll learn how Microsoft is embedding AI into tools, products, and services that can be used by organizations.
+abstract: |
+  In this module, you will:
+  * Get familiar with available AI tools and approaches.
+  * Understand basic AI terminology and practices.
+  * Identify AI use cases.
+prerequisites: |
+  * Basic understanding of IT concepts.
+  * Basic understanding of business concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+products:
+- azure
+- dynamics-365
+- m365
+subjects:
+- artificial-intelligence
+- data-ai
+units:
+- learn.wwl.leverage-ai-tools.introduction
+- learn.wwl.leverage-ai-tools.identify-basic-ai-technology-concepts
+- learn.wwl.leverage-ai-tools.learn-microsoft-ai-approach
+- learn.wwl.leverage-ai-tools.use-ai-embedded-everyday-applications
+- learn.wwl.leverage-ai-tools.discover-how-microsoft-power-platform
+- learn.wwl.leverage-ai-tools.understand-machine-learning-lifecycle
+- learn.wwl.leverage-ai-tools.discover-business-value-applying-devops
+- learn.wwl.leverage-ai-tools.explore-potential-azure-cognitive-services
+- learn.wwl.leverage-ai-tools.discover-business-value-azure-open-ai-service
+- learn.wwl.leverage-ai-tools.knowledge-check
+- learn.wwl.leverage-ai-tools.summary
+badge:
+  uid: learn.wwl.leverage-ai-tools.badge

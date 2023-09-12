@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-reliability.2-high-availability
-title: Build a highly available architecture
+title: High availability
 metadata:
-  title: Build a highly available architecture
-  description: Build a highly available architecture
+  title: High availability
+  description: Learn about high availability, including SLAs, availability sets and zones, and other Azure high availability technologies and services.
   ms.date: 05/19/2020
   author: robbyatmicrosoft
   ms.author: martinek
@@ -15,33 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  
-  - content: 'An SLA is important to define for your service because:'
+  - content: "Why is it important to define an SLA for your application?"
     choices:
-    - content: 'It helps you determine your backup retention requirements.'
+    - content: "An SLA helps you determine your backup retention requirements."
       isCorrect: false
-      explanation: 'Backup retention is important to define, but it is not driven by SLA.'
-    - content: 'It helps you determine the availability of your service that you will commit to for your customers.'
+      explanation: "Backup retention is important to define, but SLA doesn't drive that definition."
+    - content: "An SLA helps you determine the availability level that you commit to for your customers."
       isCorrect: true
-      explanation: 'Service level agreement is a commitment you are making to your customers for the availability of your service.'
-    - content: 'You can use it to convince your manager to automate virtual-machine creation.'
+      explanation: "A service level agreement is a commitment you make to your customers for the availability of your service."
+    - content: "You can use an SLA as an argument for automating VM creation."
       isCorrect: false
-      explanation: 'While this is a good discussion to have, your SLA will likely not have any impact on the outcome.'
-    - content: 'You use it to define the access control settings for your resources.'
+      explanation: "There are good arguments for automating VM creation, but your SLA probably doesn't affect the outcome."
+    - content: "You use an SLA to define access control settings for your resources."
       isCorrect: false
-      explanation: 'Access control settings are important, but they are not related to the SLA of your application.'
- 
-  - content: 'Which of the following is not used in a highly available architecture?'
+      explanation: "Access control settings are important, but they aren't related to SLA."
+  - content: "Which of the following technologies isn't used to make an architecture more highly available?"
     choices:
-    - content: 'Load balancing'
+    - content: "Load balancing."
       isCorrect: false
-      explanation: 'Load balancing is typically used in a highly available architecture to distribute load to available systems and remove failed systems from load.'
-    - content: 'Availability zones'
+      explanation: "A highly available architecture uses load balancing to distribute load to available systems and remove failed systems from the load."
+    - content: "Availability zones."
       isCorrect: false
-      explanation: 'Availability zones are used in a highly available architecture to distribute systems across multiple datacenters within a region.'
-    - content: 'Availability sets'
+      explanation: "A highly available architecture uses availability zones to distribute systems across multiple datacenters within a region."
+    - content: "Availability sets."
       isCorrect: false
-      explanation: 'Availability sets are used in a highly available architecture to minimize the impact from localized failures and maintenance events.'
-    - content: 'A recovery service vault'
+      explanation: "A highly available architecture uses availability sets to minimize the impact from localized failures and maintenance events."
+    - content: "Recovery Services vaults."
       isCorrect: true
-      explanation: 'Recovery service vaults provide a destination for backups, but they are not part of a highly available architecture.'
+      explanation: "Recovery Services vaults provide a destination for backups, but they aren't part of a highly available architecture."

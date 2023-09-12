@@ -4,11 +4,11 @@ title: Explore Azure Ultra disk storage configuration for SAP HANA
 metadata:
   title: Explore Azure Ultra disk storage configuration for SAP HANA
   description: "Explore Azure Ultra disk storage configuration for SAP HANA"
-  ms.date: 06/01/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/17-explore-azure-ultra-disk-storage-configuration-sap-hana.md)]

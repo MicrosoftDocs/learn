@@ -1,13 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.aspnetcore.build-web-api-minimal-spa.exercise-create-front-end
-title: Exercise - Create a front end for your app
+title: Exercise - Create a front-end app 
 metadata:
-  title: Exercise - Create a front end for your app
-  description: Create and deploy a front end for your app.
-  ms.date: 11/04/2021
+  title: Exercise - Create a front-end app
+  description: Create and deploy a front end for your full-stack app.
+  ms.date: 09/06/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.manager: markl
+  ms.custom:
+    - team=nextgen
+    - devx-track-dotnet
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 durationInMinutes: 8

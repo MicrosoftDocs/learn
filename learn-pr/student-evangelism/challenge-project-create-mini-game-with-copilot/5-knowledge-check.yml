@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-create-mini-game-with-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/22/2023
+  author: wwlpublish
+  ms.author: cyzanon
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Python has several modules to create applications. What was the function of the `random` module in your minigame?"
+    choices:
+    - content: "Create a list of options for the user to choose from."
+      isCorrect: false
+      explanation: "Incorrect. The random module is used to generate random possibilities based in previous choices."
+    - content: "Be the user's opponent."
+      isCorrect: true
+      explanation: "Correct! The random module is used to generate random numbers, in this case, the random module is used to generate a random choice for the computer become the opponent of the user."
+    - content: "Calculate the score of the game."
+      isCorrect: false
+      explanation: "Incorrect. The random module is used to generate random possibilities based in previous choices."
+  - content: "What is the function of the `lower` method?"
+    choices:
+    - content: "Put the user's option in lowercase."
+      isCorrect: true
+      explanation: "Correct! The lower method is used to put the user's input in lowercase, so that the user can type the option in uppercase or lowercase."
+    - content: "Calculate the score of the game."
+      isCorrect: false
+      explanation: "Incorrect. The lower method is used to manipulate the user's input and not mathematical operations or list creation."
+    - content: "Create a list of options for the user to choose from."
+      isCorrect: false
+      explanation: "Incorrect. The lower method is used to manipulate the user's input and not mathematical operations or list creation."
+  - content: "What is the function of the `input` method?"
+    choices:
+    - content: "Put the user's option in lowercase."
+      isCorrect: false
+      explanation: "Incorrect. The input method isn't used to format the user's choices or calculate the score of the game."
+    - content: "Calculate the score of the game."
+      isCorrect: false
+      explanation: "Incorrect. The input method isn't used to format the user's choices or calculate the score of the game."
+    - content: "Get a user input."
+      isCorrect: true
+      explanation: "Correct! The input method is used to get a user input, in this case, the user's option."
+  - content: "What is the function of the `break` method?"
+    choices:
+    - content: "Create a repetition structure."
+      isCorrect: false
+      explanation: "Incorrect. The break method isn't used to create a repetition structure or calculate the score of the game."
+    - content: "Calculate the score of the game."
+      isCorrect: false
+      explanation: "Incorrect. The break method isn't used to create a repetition structure or calculate the score of the game."
+    - content: "End a repetition structure."
+      isCorrect: true
+      explanation: "Correct! The break method is used to end a repetition structure, in this case, the while loop."

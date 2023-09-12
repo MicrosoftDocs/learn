@@ -1,14 +1,13 @@
 
-Like using groups to simplify permissions management in AD DS, you can use groups in Azure AD to simplify management. If you implement directory synchronization, groups in your on-premises AD DS can synchronize with Azure AD. A synchronized group in Azure AD has the same membership as the group in AD DS, but the individual members are translated from on-premises user accounts to user accounts in Azure AD. Alternatively, if you don’t implement directory synchronization, then groups and their membership are managed entirely in the cloud.
+Just as groups in Active Directory Domain Services (AD DS) simplify permissions management, Azure AD groups streamline access management. When you enable directory synchronization, your on-premises AD DS groups can be synchronized to Azure AD. While the group membership remains consistent between AD DS and Azure AD, the individual members are mapped from on-premises user accounts to their corresponding Azure AD accounts. If directory synchronization isn't in place, group management is exclusively cloud-based.
 
-You can create four group types in Azure AD:
+In Azure AD, you can establish two primary types of groups:
 
- -  **Security**. You can use this type of group to assign permissions, but you can’t use it to send emails.
- -  **Mail-enabled security**. You can use this type of group to assign permissions, and you can send emails to members.
- -  **Distribution**. You can use this type of group to send emails to members, but you can’t assign permissions.
- -  **Office365 groups**. You can use this type of group to enable collaboration for members. You can email an office group, and it will store a copy of those emails. It also has storage space in SharePoint Online for files.
+ -  **Security**. A security group is designed to manage resource access. By assigning permissions to a security group, you can control access based on group membership. For instance, if you create a security group named **Sales**, you can grant this group access to a specific file share. Managing the **Sales** group membership then indirectly manages access to that file share. Contrary to some misconceptions, Azure AD security groups aren't mail-enabled.
+ 
+ - **Microsoft 365**. A Microsoft 365 group facilitates access management for Microsoft 365 services, including Microsoft Teams, SharePoint, and Outlook. For example, if you establish a Microsoft 365 group named **Sales**, you can delegate permissions for this group to access a SharePoint site. Managing the group's membership then determines access to that site. By design, Microsoft 365 groups are mail-enabled, serving dual purposes as collaboration groups and email distribution lists.
 
-On the Azure portal, you can only create security groups and office groups. Other group types display on the Azure portal and can be managed on the Azure portal, but can’t be created on the Azure portal. You can create mail-enabled security groups and distribution groups in the Microsoft 365 portal.
+To create a group in Azure, navigate to Azure Active Directory > Groups > New group on the Azure portal. Here, you can specify the group type, name, and description. You'll also choose whether it's a security group or a Microsoft 365 group. Remember, only Microsoft 365 groups are inherently mail-enabled.
 
 #### Assign Membership
 

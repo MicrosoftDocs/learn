@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-title: Exercise - Writing an app by using Windows Template Studio
+title: Exercise - Writing an app by using Template Studio
 uid: learn-windows.writing-windows-10-apps.4-writing-app-using-windows-template-studio
 metadata:
-  title: Writing an app by using Windows Template Studio
-  description: Learn how to install and use Windows Template Studio, a Visual Studio extension that helps you create a basic framework for complex UWP apps.
-  ms.date: 12/10/2018
+  title: Writing an app by using Template Studio
+  description: Learn how to install and use Template Studio, a Visual Studio extension that helps you create a basic framework for complex Windows apps.
+  ms.date: 05/22/2023
   author: alvinashcraft
   ms.author: aashcraft
   ms.topic: interactive-tutorial

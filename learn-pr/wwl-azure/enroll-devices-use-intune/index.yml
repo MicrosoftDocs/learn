@@ -3,11 +3,10 @@ uid: learn.wwl.enroll-devices-use-intune
 metadata:
   title: Understand Azure Active Directory
   description: "Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices."
-  ms.date: 05/09/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.service: active-directory
 title: Enroll devices using Microsoft Intune
 summary: Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices.
 abstract: |

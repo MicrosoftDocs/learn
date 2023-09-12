@@ -1,4 +1,3 @@
-
 **Azure Active Directory** (Azure AD) is a cloud-based identity and access management service. This service helps employees access external resources, such as Microsoft 365, the Azure portal, and thousands of other software-as-a-service (SaaS) applications. Azure Active Directory also helps them access internal resources like apps on your corporate intranet network, along with any cloud apps developed for your organization.
 
 ## :::image type="content" source="../media/azure-active-directory-features-2f5b251f.png" alt-text="Screenshot showing Azure Active Directory features implementation example."::: Who uses Azure AD?
@@ -30,7 +29,7 @@ After you choose your Azure AD license, you'll get access to some or all of the 
 |             Authentication             | Manage Azure Active Directory self-service password reset, Multi-Factor Authentication, custom banned password list, and smart lockout.                                                              |
 | Azure Active Directory for developers  | Build apps that sign in all Microsoft identities, and get tokens to call Microsoft Graph, other Microsoft APIs, or custom APIs.                                                                      |
 |       Business-to-Business (B2B)       | Manages your guest users and external partners while maintaining control over your own corporate data.                                                                                               |
-|       Business-to-Customer (B2C)       | Manages your guest users and external partners while maintaining control over your own corporate data.                                                                                               |
+|       Business-to-Customer (B2C)       | Customize and control how users sign up, sign in, and manage their profiles when using your apps.                                                                                                    |
 |           Conditional Access           | Manage access to your cloud apps.                                                                                                                                                                    |
 |           Device Management            | Manage how your cloud or on-premises devices access your corporate data.                                                                                                                             |
 |            Domain services             | Join Azure virtual machines to a domain without using domain controllers.                                                                                                                            |

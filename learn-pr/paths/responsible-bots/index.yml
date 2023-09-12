@@ -11,7 +11,7 @@ metadata:
   ms.custom: team=nextgen
 title: Responsible bots
 summary: |
-  Responsible chatbots imitate human behavior. They're also useful, reliable, and unbiased. In this path, you'll learn how to use Azure Cognitive Services to make bots that:
+  Responsible chatbots imitate human behavior. They're also useful, reliable, and unbiased. In this path, you'll learn how to use Azure AI Services to make bots that:
 
   - Are culturally aware.
   - Respect privacy.
@@ -26,7 +26,7 @@ roles:
 - student
 products:
 - azure-bot-service
-- azure-cognitive-services
+- ai-services
 subjects:
 - natural-language-processing
 - chatbot

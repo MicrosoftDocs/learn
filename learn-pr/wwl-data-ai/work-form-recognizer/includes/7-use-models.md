@@ -114,7 +114,7 @@ Depending on the use case, you may find that a confidence score of 80% or above 
 
 ## Using the SDK 
 
-You can also call Form Recognizer models by integrating our client library SDks into your workflows and applications. Supported SDK languages include: 
+You can also call Azure Document Intelligence models by integrating our client library SDks into your workflows and applications. Supported SDK languages include: 
 - [C Sharp](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-csharp-sdk)
 - [Java](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-java-sdk)
 - [JavaScript](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-javascript-sdk)

@@ -3,7 +3,7 @@ uid: learn.incident-response-with-alerting-on-azure
 metadata:
   title: Improve incident response with alerting on Azure
   description: Respond to incidents and activities in your infrastructure through alerting capabilities in Azure Monitor.
-  ms.date: 08/10/2022
+  ms.date: 03/28/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -12,8 +12,8 @@ title: Improve incident response with alerting on Azure
 summary: Respond to incidents and activities in your infrastructure through alerting capabilities in Azure Monitor.
 abstract: | 
   In this module, you'll:
-  - Configure alerts on events in your Azure resources based on metrics, log events, and Activity log events.
-  - Learn how to use smart groups to identify and group related alerts to reduce alert noise.
+  - Configure alerts on events in your Azure resources based on metrics, log events, and activity log events.
+  - Learn how to use action groups in response to an alert, and how to use alert processing rules to override action groups when necessary.
 prerequisites: | 
   - Basic knowledge of Azure Monitor
 iconUrl: /training/achievements/incident-response-with-alerting-on-azure.svg
@@ -35,6 +35,7 @@ units:
 - learn.incident-response-with-alerting-on-azure.4-exercise-metric-alerts
 - learn.incident-response-with-alerting-on-azure.5-log-alerts
 - learn.incident-response-with-alerting-on-azure.6-activity-log-alerts
+- learn.incident-response-with-alerting-on-azure.actions-and-alert-processing-rules
 - learn.incident-response-with-alerting-on-azure.7-exercise-activity-log-alerts
 - learn.incident-response-with-alerting-on-azure.9-summary
 badge:

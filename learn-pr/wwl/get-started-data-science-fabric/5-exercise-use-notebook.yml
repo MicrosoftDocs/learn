@@ -4,12 +4,11 @@ title: Exercise - Train and track a model in Microsoft Fabric
 metadata:
   title: Exercise - Train and track a model in Microsoft Fabric
   description: "Exercise - Train and track a model in Microsoft Fabric"
-  ms.date: 05/10/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: powerbi
+  ms.service: fabric
   ms.custom:
     - build-2023
     - build-2023-dataai

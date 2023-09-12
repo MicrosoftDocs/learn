@@ -1,6 +1,3 @@
-
-
-
 With many data types available in C#, choosing the right one to use means that you need to understand when you might choose one data type over another.
 
 Before discussing *why* you might choose one data type over another, you need to understand more about data types. You also need to know how data and data types work in C# and .NET.

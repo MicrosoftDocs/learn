@@ -31,7 +31,7 @@ roles:
   - technology-manager
 products:
 - azure
-- azure-defender-iot
+- defender-for-iot
 units:
 - learn.introduction-to-microsoft-defender-iot.introduction
 - learn.introduction-to-microsoft-defender-iot.what-is-microsoft-defender-iot

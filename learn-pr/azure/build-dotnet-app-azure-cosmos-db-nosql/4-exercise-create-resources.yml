@@ -7,14 +7,16 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+    - devx-track-dotnet
   description: |
     Create a new container and database using the methods available in the Microsoft.Azure.Cosmos .NET SDK library from NuGet.
+
   sandbox: true
   author: seesharprun
   ms.author: sidandrews
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 3/30/2023
+  ms.date: 6/5/2023
 durationInMinutes: 9
 content: |
   [!include[](includes/4-exercise-create-resources.md)]

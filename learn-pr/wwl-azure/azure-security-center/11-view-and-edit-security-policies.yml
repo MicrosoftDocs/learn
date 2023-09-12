@@ -4,12 +4,10 @@ title: View and edit security policies
 metadata:
   title: View and edit security policies
   description: "View and edit security policies"
-  ms.date: 04/19/2023
+  ms.date: 07/13/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/11-view-and-edit-security-policies.md)]

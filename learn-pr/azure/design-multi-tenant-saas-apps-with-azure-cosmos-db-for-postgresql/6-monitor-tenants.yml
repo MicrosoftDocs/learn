@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.monitor-tenants
-title: Monitor tenants in a multi-tenant database
+title: Monitor tenants in a multitenant database
 metadata:
-  title: Monitor tenants in a multi-tenant database
-  description: "Azure Cosmos DB for PostgreSQL makes it easy to view and understand what the tenants in your multi-tenant database are doing."
+  title: Monitor tenants in a multitenant database
+  description: "Use Azure Cosmos DB for PostgreSQL to view and understand what the tenants in your multitenant database are doing."
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
@@ -11,7 +11,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 6
 content: |
   [!include[](includes/6-monitor-tenants.md)]

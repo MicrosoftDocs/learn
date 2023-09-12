@@ -67,9 +67,9 @@ TODO: add your list of techniques used to solve the scenario problem -->
 
     Example:
         "## References
-          * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-          * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-          * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
+          * [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+          * [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)
+          * [Manage access to billing information for Azure](/azure/billing/billing-manage-access)"
  -->
 
 <!-- Do not include any other content -->
@@ -117,6 +117,6 @@ You can't delete an organization in Azure AD until it passes several checks.
    :::image type="content" source="../media/manage-tenants-command.png" alt-text="Screenshot that shows the button for managing tenants.":::
 
 1. Select the checkbox for the tenant that you want to delete, and then select **Delete**.
-  
+
    :::image type="content" source="../media/manage-tenants-delete-command.png" alt-text="Screenshot that shows the button for deleting an organization.":::
 1. If your organization doesn't pass one or more checks, you'll get a link to more information on how to pass. After you pass all checks, select **Delete** to complete the process.

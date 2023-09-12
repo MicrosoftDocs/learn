@@ -27,6 +27,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.deploy-model-batch-endpoint.introduction
+- learn.wwl.deploy-model-batch-endpoint.video
 - learn.wwl.deploy-model-batch-endpoint.explore-batch-endpoints
 - learn.wwl.deploy-model-batch-endpoint.deploy-your-mlflow-model-batch-endpoint
 - learn.wwl.deploy-model-batch-endpoint.deploy-custom-model-batch-endpoint

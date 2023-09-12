@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.translate-speech-speech-service
 metadata:
-  title: Translate speech with the speech service
-  description: "Translate speech with the speech service"
-  ms.date: 12/09/2022
+  title: Translate speech with the Azure AI Speech service
+  description: "Translate speech with the Azure AI Speech service"
+  ms.date: 06/27/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services 
+  ms.service: cognitive-services
   ms.subservice: speech-service
-title: Translate speech with the speech service
+title: Translate speech with the Azure AI Speech service
 summary: Translation of speech builds on speech recognition by recognizing and transcribing spoken input in a specified language, and returning translations of the transcription in one or more other languages.
 abstract: |
   In this module, you will learn how to:
@@ -20,7 +20,7 @@ prerequisites: |
   Before starting this module, you should:
   - Be familiar with Azure services and the Azure portal.
   - Have experience programming with C# or Python.
-  - Have experience of using the Speech service to transcribe speech to text.
+  - Have experience of using the Azure AI Speech service to transcribe speech to text.
 iconUrl: /training/achievements/translate-speech-speech-service.svg
 levels:
 - intermediate
@@ -30,7 +30,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 units:

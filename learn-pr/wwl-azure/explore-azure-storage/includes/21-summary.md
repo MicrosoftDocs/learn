@@ -1,6 +1,3 @@
-
-
-
 Now you have:
 
 - Explored Azure Storage types.
@@ -51,12 +48,11 @@ Now you have:
 - [Configure export policy for NFS or dual-protocol volumes](/azure/azure-netapp-files/azure-netapp-files-configure-export-policy)
 - [SAP HANA VM Pinning Requirements Form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxjSlHBUxkJBjmARn57skvdUQlJaV0ZBOE1PUkhOVk40WjZZQVJXRzI2RC4u)
 - [SAP HANA scale-out with standby node on Azure VMs with Azure NetApp Files on SUSE Linux Enterprise Server](/azure/virtual-machines/workloads/sap/sap-hana-scale-out-standby-netapp-files-suse)
-- [SAP Note \#1619720](https://launchpad.support.sap.com/#/notes/1619720)
-- [SAP Note \#1872170](https://launchpad.support.sap.com/#/notes/1872170)
-- [SAP Note \#1793345](https://launchpad.support.sap.com/#/notes/1793345)
-- [SAP Note \#1597355](https://launchpad.support.sap.com/#/notes/1597355)
+- [SAP Note \#1619720](https://aka.ms/az-120-sapnote-1619720)
+- [SAP Note \#1872170](https://aka.ms/az-120-sapnote-1872170)
+- [SAP Note \#1793345](https://aka.ms/az-120-sapnote-1793345)
+- [SAP Note \#1597355](https://aka.ms/az-120-sapnote-1597355)
 - [SAP Note \#1984798](https://launchpad.support.sap.com/#/notes/1984798)
-- [SAP Note \#2015553](https://launchpad.support.sap.com/#/notes/2015553)
-- [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533)
-- [SAP Note \#2367194](https://launchpad.support.sap.com/#/notes/2367194)
+- [SAP Note \#2015553](https://aka.ms/az-120-sapnote-2015553)
+- [SAP Note \#1928533](https://aka.ms/az-120-sapnote-1928533)
 - [SAP Note \#2367194](https://launchpad.support.sap.com/#/notes/2367194)

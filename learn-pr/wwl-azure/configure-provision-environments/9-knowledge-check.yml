@@ -4,14 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/17/2023
+  ms.date: 09/04/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.prod: azure
+  ms.service: azure-devops
+durationInMinutes: 5
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
@@ -32,21 +31,21 @@ quiz:
     choices:
     - content: "Service Hook."
       isCorrect: false
-      explanation: "Incorrect. When a pipeline needs access to resources, you will often need to provision service connections."
+      explanation: "Incorrect. When a pipeline needs access to resources, you need to provision service connections."
     - content: "Service Connection."
       isCorrect: true
-      explanation: "Correct. When a pipeline needs access to resources, you will often need to provision service connections."
+      explanation: "Correct. When a pipeline needs access to resources, you need to provision service connections."
     - content: "Agent Pool."
       isCorrect: false
-      explanation: "Incorrect. When a pipeline needs access to resources, you will often need to provision service connections."
+      explanation: "Incorrect. When a pipeline needs access to resources, you need to provision service connections."
   - content: "Which of the following choices is recommended to authenticate to Azure with Service Connections?"
     choices:
     - content: "User and Password."
       isCorrect: false
-      explanation: "Incorrect. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a very safe way to connect from the pipeline."
+      explanation: "Incorrect. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a safe way to connect from the pipeline."
     - content: "Personal Access Token."
       isCorrect: false
-      explanation: "Incorrect. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a very safe way to connect from the pipeline."
+      explanation: "Incorrect. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a safe way to connect from the pipeline."
     - content: "Service Principal."
       isCorrect: true
-      explanation: "Correct. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a very safe way to connect from the pipeline."
+      explanation: "Correct. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a safe way to connect from the pipeline."
