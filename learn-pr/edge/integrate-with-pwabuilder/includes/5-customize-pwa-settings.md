@@ -1,4 +1,4 @@
-As you develop your Progressive Web App (PWA), you might want to make it more engaging and personalized. This is where customizing your PWA becomes essential. You can modify your PWA's icons, theme colors, and display options to align them more closely with your brand, thereby enhancing your users' experience. In this unit, we'll explore the various options to achieve customization available through PWABuilder.
+As you develop your Progressive Web App (PWA), you might want to make it more engaging and personalized. This is where customizing your PWA becomes essential. You can modify your PWA's icons, theme colors, and display options to align them more closely with your brand, thereby enhancing your users' experience. In this unit, we'll explore the various options to achieve customization available through [PWABuilder](https://aka.ms/pwa/mslearn/data).
 
 ## Edit manifest in PWABuilder
 
