@@ -15,6 +15,7 @@ After you create a subscription for a user, they can sign in to the user portal 
 
 1.  In the administrator portal, go to **User subscriptions**.
 2.  Select **Add**. Under **New user subscription**, enter the following information:
+    
      -  **Display name** \- A friendly name for identifying the subscription that appears as the User subscription name.
      -  **User** \- Specify a user from an available directory tenant for this subscription. The user name appears as Owner. The format of the user name depends on your identity solution. For example:
      -  **Azure AD**: `<user1>@<contoso.onmicrosoft.com>`

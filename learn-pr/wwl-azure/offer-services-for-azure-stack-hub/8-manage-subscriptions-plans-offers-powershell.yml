@@ -4,14 +4,14 @@ title: Manage subscriptions, plans, and offers using PowerShell
 metadata:
   title: Manage subscriptions, plans, and offers using PowerShell
   description: "Manage subscriptions, plans, and offers using PowerShell"
-  ms.date: 06/02/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
   ms.custom:
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/8-manage-subscriptions-plans-offers-powershell.md)]

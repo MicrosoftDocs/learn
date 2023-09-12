@@ -3,11 +3,14 @@ uid: learn.wwl.offer-services-for-azure-stack-hub
 metadata:
   title: Offer services for Azure Stack Hub
   description: "Offer services for Azure Stack Hub"
-  ms.date: 06/02/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom:
+  - N/A
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
 title: Offer services for Azure Stack Hub
 summary: 'You configure and deliver offers, plans, and subscriptions as an Azure Stack Hub operator. This learning path helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
 abstract: |

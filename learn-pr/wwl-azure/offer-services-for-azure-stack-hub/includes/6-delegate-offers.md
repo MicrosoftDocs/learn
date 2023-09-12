@@ -41,20 +41,42 @@ The following sections describe the steps to set up a delegated provider, delega
 
 To use this walkthrough, you need two Azure AD accounts in addition to your Azure Stack Hub operator account. If you don't have these two accounts, you must create them. The accounts can belong to any Azure AD user and are referred to as the delegated provider and the user.
 
-| **Role**           | **Organizational rights** |
-| ------------------ | ------------------------- |
-| Delegated provider | User                      |
-| User               | User                      |
+:::row:::
+  :::column:::
+    **Role**
+  :::column-end:::
+  :::column:::
+    **Organizational rights**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Delegated provider
+  :::column-end:::
+  :::column:::
+    User
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    User
+  :::column-end:::
+  :::column:::
+    User
+  :::column-end:::
+:::row-end:::
+
 
 ### Identify the delegated provider
 
 1.  Sign in to the administrator portal as an Azure Stack Hub operator.
 2.  To create an offer that enables a user to become a delegated provider:
+    
      -  Create a plan. This plan should include only the subscription service. This unit uses a plan named **PlanForDelegation** as an example.
      -  Create an offer based on this plan. This unit uses an offer named **OfferToDP** as an example.
      -  Add the delegated provider as a subscriber to this offer by selecting **Subscriptions**, then **Add**, then **New Tenant Subscription**.
         
-        :::image type="content" source="../media/delegate-offers-image-3-022b95ad.png" alt-text="Add the delegated provider as a subscriber in Azure Stack Hub administrator portal.":::
+        :::image type="content" source="../media/delegate-offers-image-3-022b95ad.png" alt-text="Add the delegated provider as a subscriber in Azure Stack Hub administrator portal." lightbox="../media/delegate-offers-image-3-022b95ad.png":::
         
 
 As with all Azure Stack Hub offers, you have the option of making the offer public and letting users sign up for it, or keeping it private and letting the Azure Stack Hub operator manage the sign-up. Delegated providers are usually a small group. You want to control who is admitted to it, so keeping this offer private makes sense in most cases.
@@ -67,7 +89,7 @@ The next step is to create the plan and offer that you're going to delegate, and
 2.  Delegate the offer. Go to **DelegatedOffer**. Under **Settings**, select Delegated Providers, then select Add.
 3.  Select the subscription for the delegated provider from the drop-down list, and then select **Delegate**.
     
-    :::image type="content" source="../media/delegate-offers-image-4-521636c1.png" alt-text="Add a delegated provider in Azure Stack Hub administrator portal.":::
+    :::image type="content" source="../media/delegate-offers-image-4-521636c1.png" alt-text="Add a delegated provider in Azure Stack Hub administrator portal." lightbox="../media/delegate-offers-image-4-521636c1.png":::
     
 
 ### Delegated provider customizes the offer
@@ -88,10 +110,11 @@ It's important to understand that delegated providers can only choose offers tha
 
 3.  The delegated provider can make these offers public through their own portal URL. To make the offer public, select **Browse**, and then **Offers**. Select the offer, and then select **Change State**.
 4.  The public delegated offers are now visible only through the delegated portal. To find and change this URL:
+    
      -  Select **Browse**, then **All services**, and then under the **GENERAL** category, select **Subscriptions**. Select the delegated provider subscription then **Properties**.
      -  Copy the portal URL to a separate location, such as Notepad.
         
-        :::image type="content" source="../media/delegate-offers-image-7-2c9326c5.png" alt-text="Select the delegated provider subscription in Azure Stack Hub user portal.":::
+        :::image type="content" source="../media/delegate-offers-image-7-2c9326c5.png" alt-text="Select the delegated provider subscription in Azure Stack Hub user portal." lightbox="../media/delegate-offers-image-7-2c9326c5.png":::
         
 
 ## Sign up for the offer

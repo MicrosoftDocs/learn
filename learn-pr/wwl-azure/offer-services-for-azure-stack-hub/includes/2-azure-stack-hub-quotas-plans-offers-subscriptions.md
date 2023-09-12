@@ -7,6 +7,7 @@ As an Azure Stack Hub operator, you configure and deliver services by using offe
 To deliver a service, follow these high-level steps:
 
 1.  Plan your service offering, using:
+    
      -  Foundational services, like compute, storage, networking, or Key Vault.
      -  Value-add services, like Event Hubs, App Service, SQL Server, or MySQL Server.
 
