@@ -1,5 +1,4 @@
-
-Your team has split up the work for the pizza inventory management app. Your teammates have created the ASP.NET Core web app for you, and they've already built a service to read and write pizzas to a database. You've been assigned to work on the Pizza List page, which will display a list of pizzas and allow you to add new pizzas to the database. You'll start by taking a tour of the project to understand how it's organized.
+Your team has split up the work for the pizza inventory management app. Your teammates have created the ASP.NET Core web app for you, and they've already built a service to read and write pizza data to a database. You've been assigned to work on the Pizza List page, which will display a list of pizzas and allow you to add new pizzas to the database. We'll start by taking a tour of the project to understand how it's organized.
 
 ## Obtain the project files
 
@@ -33,7 +32,7 @@ Let's take a moment to get familiar with the existing code in the ContosoPizza f
 - A *Models* folder was added to the project.
   - The model folder contains a `Pizza` class that represents a pizza.
 - A *Data* folder was added to the project.
-  - The data folder contains a `PizzaContext` class that represents the database context. It inherits from the `DbContext` class from Entity Framework Core. Entity Framework Core is an object-relational mapper (ORM) that makes it easier to work with databases.
+  - The data folder contains a `PizzaContext` class that represents the database context. It inherits from the `DbContext` class in the Entity Framework Core. Entity Framework Core is an object-relational mapper (ORM) that makes it easier to work with databases.
 - A *Services* folder was added to the project.
   - The services folder contains a `PizzaService` class that exposes methods to list and add pizzas.
   - The `PizzaService` class uses the `PizzaContext` class to read and write pizzas to the database.
@@ -170,6 +169,6 @@ Let's make a few changes to the landing page to make it more relevant to the piz
 1. Save the file. The browser tab with the app automatically refreshes to display the changes. If you're using GitHub Codespaces, the file saves automatically, but you'll need to refresh the browser tab manually.
 
 > [!IMPORTANT]
-> Keep a close eye on the terminal window with `dotnet watch` every time you save your file. Sometimes your code might contain what it calls a *rude edit*. This means that the code you changed can't be recompiled without restarting the application. If prompted to restart the app, press `y` (yes) or `a` (always). If all else fails, stop the application by pressing **Ctrl+C** in the terminal window, and then restart it by running `dotnet watch` again.
+> Keep a close eye on the terminal window with `dotnet watch` every time you save your file. Sometimes your code might contain what it calls a *rude edit*. This means that the code you changed can't be recompiled without restarting the application. If prompted to restart the app, press `y` (yes) or `a` (always). You can always stop the application by pressing **Ctrl+C** twice in the terminal window, and then restart it by running `dotnet watch` again.
 
 You've made your first changes to a Razor page! In the next unit, you'll add a new page to the app to display a list of pizzas.

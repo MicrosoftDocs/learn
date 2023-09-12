@@ -16,14 +16,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which following statement is true for Razor Pages?"
+    - content: "Which one of the following statements is true for Razor Pages?"
       choices:
       - content: "Use Razor Pages for an ASP.NET Core app that isn't focused on generating HTML, such as a web API."
         isCorrect: false
-        explanation: "Incorrect. Use Razor Pages in any ASP.NET Core web apps where you need a page-centric approach for defining UI logic using a combination of HTML, CSS, and C#."
+        explanation: "Incorrect. Use Razor Pages in ASP.NET Core web apps where you need a page-centric approach for defining UI logic using a combination of HTML, CSS, and C#."
       - content: "Razor Pages can't coexist in an ASP.NET Core MVC app."
         isCorrect: false
         explanation: "Incorrect. Razor Pages support are built into ASP.NET Core MVC and can coexist within an MVC app."
-      - content: "A productivity advantage of Razor Pages is that it keeps together what tends to change together for views in your app."
+      - content: "A productivity advantage of Razor Pages is that it keeps changes for views in your app together."
         isCorrect: true
-        explanation: "Correct! Use Razor Pages to keep ASP.NET Core pages organized in a simpler way. All view (page) specific logic and page properties (view model) can be kept in the same proximity."
+        explanation: "Correct! Use Razor Pages to keep ASP.NET Core pages organized in a simpler way. All view (page) specific logic and page properties (view model) are kept in the same proximity."
