@@ -26292,6 +26292,11 @@
       "source_path": "learn-pr/wwl-azure/perform-hyperparameter-tuning-azure-machine-learning-pipelines/1b-video.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/perform-hyperparameter-tuning-azure-machine-learning-pipelines",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/build-ai-solutions-with-azure-ml-service/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
