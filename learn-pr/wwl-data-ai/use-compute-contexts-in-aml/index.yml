@@ -31,6 +31,5 @@ subjects:
 units:
 - learn.wwl.use-compute-contexts-in-aml.using-compute
 - learn.wwl.use-compute-contexts-in-aml.working-with-compute
-- learn.wwl.use-compute-contexts-in-aml.summary
 badge:
   uid: learn.wwl.use-compute-contexts-in-aml.badge
