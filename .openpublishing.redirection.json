@@ -26402,6 +26402,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-pipelines-in-aml/8a-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/run-pipelines-azure-machine-learning/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-pipelines-in-aml/3-pipeline-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/run-pipelines-azure-machine-learning/",
+      "redirect_document_id": false
     }
   ]
 }
