@@ -8,8 +8,7 @@ metadata:
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-  ms.subservice: openai 
+  ms.service: azure-ai-openai
   ms.custom:
     - build-2023
     - build-2023-dataai
