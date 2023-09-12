@@ -8,8 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
-  ms.service: cognitive-services
-  ms.subservice: custom-vision
+  ms.service: azure-ai-custom-vision
 title: Use AI to recognize objects in images by using the Custom Vision service
 summary: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
 abstract:  |
