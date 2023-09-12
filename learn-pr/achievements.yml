@@ -2172,3 +2172,8 @@ achievements:
   title: Work with Data in Azure Machine Learning
   summary: Data is the foundation of machine learning. In this module, you will learn how to work with datastores and datasets in Azure Machine Learning, enabling you to build scalable, cloud-based model training solutions.
   iconUrl: /training/achievements/work-with-data-in-aml-badge.svg
+- uid: learn.data-ai.automate-model-selection-with-azure-automl.badge
+  type: badge
+  title: Automate machine learning model selection with Azure Machine Learning
+  summary: Learn how to use automated machine learning in Azure Machine Learning to find the best model for your data.
+  iconUrl: /training/achievements/automate-model-selection-with-azure-automl-badge.svg
