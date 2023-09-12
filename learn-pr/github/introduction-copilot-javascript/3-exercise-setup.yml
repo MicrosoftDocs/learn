@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.github-copilot-with-javascript.exercise-setup
-title: Exercise - Set up GitHub Copilot to work with VS Code
+title: Exercise - Set up GitHub Copilot to work with Visual Studio Code
 metadata:
   title: |
-    Exercise - Use VS Code and GitHub Copilot suggestions to develop with JavaScript
+    Exercise - Use Visual Studio Code and GitHub Copilot suggestions to develop with JavaScript
   description: "Enable the GitHub Copilot service and install the extension in Visual Studio Code"
   ms.date: 8/23/2023
   author: abrilurena
