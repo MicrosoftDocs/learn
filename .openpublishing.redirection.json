@@ -26352,6 +26352,11 @@
       "source_path": "learn-pr/wwl-data-ai/train-local-model-with-azure-mls/2-training-scripts.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/track-model-training-jupyter-notebooks-mlflow/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-local-model-with-azure-mls/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/track-model-training-jupyter-notebooks-mlflow/",
+      "redirect_document_id": false
     }
   ]
 }
