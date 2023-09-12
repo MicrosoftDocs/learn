@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.student-introduction-to-azure.cloud-computing-and-azure
+title: |
+  Cloud computing and Azure
+metadata:
+  title: |
+    Cloud computing and Azure
+  description: "Introduction to the concept of cloud computing and its platform, Azure."
+  ms.date: 9/11/2023
+  author: v-regandowner
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.custom: team=nextgen
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-cloud-computing-and-azure.md)]
+quiz:
+  questions:
+  - content: "What is cloud computing?"
+    choices:
+    - content: "Delivery of computing services over the internet."
+      isCorrect: true
+      explanation: "Correct! Cloud computing is the delivery of computing services over the internet."
+    - content: "Delivery of storage services over the internet."
+      isCorrect: false
+      explanation: "Incorrect. Cloud computing is the delivery of computing services over the internet."
+    - content: "Delivery of websites accessible via the internet."
+      isCorrect: false
+      explanation: "Incorrect. Cloud computing is the delivery of computing services over the internet."
+  - content: "Which of the following statements best describes Azure?"
+    choices:
+    - content: "A superpower to share data over the internet."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "A superpower to manage your finance."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "A superpower to control and manage services and resources."
+      isCorrect: true
+      explanation: "Correct!"
+  - content: "Which of the following is an example of Azure being used in the real world?"
+    choices:
+    - content: "A multinational corporation using Azure to store and analyze massive amounts of customer data for personalized marketing campaigns."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "A local bakery using Azure to host a simple website for online ordering and payment processing."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "A university using Azure to run virtual classrooms and manage student enrollment and grades."
+      isCorrect: false
+      explanation: "Incorrect."
