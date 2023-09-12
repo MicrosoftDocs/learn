@@ -4,13 +4,11 @@ title: Implement an Azure application gateway
 metadata:
   title: Implement an Azure application gateway
   description: "Implement an Azure application gateway"
-  ms.date: 07/11/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/8-azure-application-gateway.md)]

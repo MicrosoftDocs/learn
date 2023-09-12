@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/11/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/13-knowledge-check.md)]
@@ -35,11 +33,11 @@ quiz:
       explanation: "An Azure Application Gateway doesn't authenticate traffic or users."
     - content: "Layer 7 load balancing"
       isCorrect: true
-      explanation: "Layer 7 load balancing, Offloading of CPUT intensive SSL termination, Round robin distribution of incoming traffic. Azure Application Gateway is a dedicated virtual offering various layer 7 load balancing capabilities for your application. It lets customers to optimize web farm productivity by offloading CPU intensive SSL termination to the application gateway, round robin distribution of incoming traffic, cookie-based session affinity, URL path-based routing, and the ability to host multiple websites behind a single Application Gateway."
+      explanation: "Layer 7 load balancing, Offloading of CPUT intensive SSL termination, Round robin distribution of incoming traffic. Azure Application Gateway is a dedicated virtual offering various layer 7 load balancing capabilities for your application. It lets customers optimize web farm productivity by offloading CPU intensive SSL termination to the application gateway, round robin distribution of incoming traffic, cookie-based session affinity, URL path-based routing, and the ability to host multiple websites behind a single Application Gateway."
     - content: "Vulnerability assessments"
       isCorrect: false
-      explanation: "There's no vulnerability checking in the application gateway."
-  - content: "A company is configuring a Network Security Group. To configure the group to allow traffic from public sources, what rule needs to be add to the default rules?"
+      explanation: "There is no vulnerability checking in the application gateway."
+  - content: "A company is configuring a Network Security Group. To configure the group to allow traffic from public sources, what rule needs to be added to the default rules?"
     choices:
     - content: "Allow all virtual networks inbound and outbound"
       isCorrect: false
@@ -49,12 +47,12 @@ quiz:
       explanation: "The load balancer is a default rule when building an NSG."
     - content: "Allow Internet inbound"
       isCorrect: true
-      explanation: "Allow Internet inbound. NSGs have default inbound and outbound rules. There's a default allow Internet outbound rule, but not an allow Internet inbound rule."
+      explanation: "Allow Internet inbound. NSGs have default inbound and outbound rules. There is a default allow Internet outbound rule, but not an allow Internet inbound rule."
   - content: "An organization has web servers in different regions and this organization wants to optimize the availability of the servers. Which of the network security is best suited for this purpose?"
     choices:
     - content: "Azure Application Gateway"
       isCorrect: false
-      explanation: "An application gateway isn't the best option for this business need."
+      explanation: "An application gateway is not the best option for this business need."
     - content: "Azure Front Door"
       isCorrect: true
       explanation: "Azure Front Door. Azure Front Door grants the ability to define, manage, and monitor the global routing for web traffic by optimizing for best performance and instant global failover for high availability."

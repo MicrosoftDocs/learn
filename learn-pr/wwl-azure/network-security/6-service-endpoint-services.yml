@@ -4,13 +4,11 @@ title: Configure service endpoint services
 metadata:
   title: Configure service endpoint services
   description: "Configure service endpoint services"
-  ms.date: 07/11/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/6-service-endpoint-services.md)]

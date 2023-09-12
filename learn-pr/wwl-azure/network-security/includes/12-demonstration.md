@@ -50,14 +50,14 @@ In this demonstration, we'll configure a network security group to filter inboun
 > [!NOTE]
 > Repeat the previous steps, specifying the following values:
 
-> | Setting          | Value                     |
-> | ---------------- | ------------------------- |
-> | Project details  |                           |
-> | Subscription     | Select your subscription. |
-> | Resource group   | Select myResourceGroup.   |
-> | Instance details |                           |
-> | Name             | Enter *myAsgMgmtServers*. |
-> | Region           | Select (US) East US.      |
+| Setting          | Value                     |
+| ---------------- | ------------------------- |
+| Project details  |                           |
+| Subscription     | Select your subscription. |
+| Resource group   | Select myResourceGroup.   |
+| Instance details |                           |
+| Name             | Enter *myAsgMgmtServers*. |
+| Region           | Select (US) East US.      |
 
 6. Select the Review + create tab, or select the blue Review + create button at the bottom of the page.
 
