@@ -28,7 +28,6 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.wwl.deploy-batch-inference-pipelines-with-azure-machine-learning.4-creating-batch-pipeline
 - learn.wwl.deploy-batch-inference-pipelines-with-azure-machine-learning.4a-knowledge-check
 - learn.wwl.deploy-batch-inference-pipelines-with-azure-machine-learning.5-summary
 badge:
