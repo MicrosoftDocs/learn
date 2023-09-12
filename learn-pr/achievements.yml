@@ -2187,3 +2187,8 @@ achievements:
   title: Deploy batch inference pipelines with Azure Machine Learning
   summary: Machine learning models are often used to generate predictions from large numbers of observations in a batch process. To accomplish this, you can use Azure Machine Learning to publish a batch inference pipeline.
   iconUrl: /training/achievements/deploy-batch-inference-pipelines-with-azure-machine-learning.svg
+- uid: learn.wwl.explore-differential-privacy.badge
+  type: badge
+  title: Explore differential privacy
+  summary: Data scientists have an ethical (and often legal) responsibility to protect sensitive data. Differential privacy is a leading edge approach that enables useful analysis while protecting individually identifiable data values.
+  iconUrl: /training/achievements/explore-differential-privacy.svg
