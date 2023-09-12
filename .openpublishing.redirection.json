@@ -26657,6 +26657,11 @@
       "source_path": "learn-pr/wwl-data-ai/explore-differential-privacy/4-exercise-data-privacy.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-differential-privacy/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/",
+      "redirect_document_id": false
     }
   ]
 }
