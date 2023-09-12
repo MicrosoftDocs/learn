@@ -1,6 +1,6 @@
-In this exercise, you'll create a GitHub account, create a repository, and create a local copy of said repository on your machine. This unit will set you up nicely for a future exercise where you'll modify your repository files. 
+In this exercise, you'll create a GitHub account, create a repository, and create a local copy of the repository on your machine. This unit will set you up nicely for a future exercise where you'll modify your repository files. 
 
-## Create a GitHub account and set up your profile
+## Create a GitHub account
 
 First, you need an account with GitHub. The following steps guide you in setting up an account.
 
@@ -13,7 +13,7 @@ Example of a GitHub profile:
 
 :::image type="content" source="../media/sample-profile.png" alt-text="Screenshot showing an example of a GitHub profile.":::
 
-### Create a repository and understand the options for public and private repositories
+## Create a repository
 
 To start creating a repository and explore the options for public and private repositories on GitHub:
 
@@ -38,9 +38,9 @@ To start creating a repository and explore the options for public and private re
 
     :::image type="content" source="../media/read-me-settings.png" alt-text="Screenshot showing additional setting options for a new repository in GitHub, including adding a README file.":::
 
-## Clone a repository to your local machine using Git
+## Clone a repository
 
-1. On the main page of your GitHub repository, locate the green "Code" button and click on it.
+1. On the main page of your GitHub repository, locate the green "Code" button and select it.
 
     :::image type="content" source="../media/fork-step-1.png" alt-text="Screenshot showing where to locate the code button on your new repository's homepage.":::
 
@@ -54,6 +54,4 @@ To start creating a repository and explore the options for public and private re
 
 Congrats, you have now created your own repository.
 
-By following these steps, created a GitHub account, set up your profile, created a repository, and cloned the new repository to your local machine. This workflow establishes a solid foundation for collaborating and sharing code effectively using Git and GitHub.
-
-Learn advanced formatting features by creating a README for your GitHub profile.
+Congratulation! You created a GitHub account, set up your profile, created a repository, and cloned the new repository to your local machine. This workflow establishes a solid foundation for collaborating and sharing code effectively using Git and GitHub.

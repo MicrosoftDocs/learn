@@ -9,10 +9,10 @@ metadata:
   ms.topic: module-intro-to-product
   ms.custom: team=nextgen
 title: Tooling, Git and GitHub products
-summary: "This module explores the purpose and significance of version control, offers an overview of Git and GitHub, and provides step-by-step guidance for performing basic tasks in GitHub."
+summary: "This module provides an overview of Git and GitHub, version control, and provides step-by-step guidance for performing basic tasks in GitHub."
 abstract: |
   By the end of this module, you'll be able to:
-  - Grasp the Purpose and Significance of Version Control.
+  - Grasp the purpose and significance of version control.
   - Comprehend the core principles of Git, a distributed version control system, encompassing vital concepts such as repositories, commits, branches, and merging within Git. 
   - Attain insights into the role of GitHub as a web-based platform for hosting Git repositories and fostering collaboration. 
   - Understand the essence of GitHub Codespaces and its substantial importance. 
