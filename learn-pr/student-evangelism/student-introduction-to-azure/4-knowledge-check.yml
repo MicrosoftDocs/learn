@@ -20,18 +20,18 @@ quiz:
       explanation: "Correct! Collaboration is easier than ever with GitHub."
     - content: "A social media platform where users can share and discover code snippets, tutorials, and open-source projects."
       isCorrect: false
-      explanation: "Incorrect. GitHub is not a social media platform."
+      explanation: "Incorrect. GitHub isn't a social media platform."
     - content: "An online marketplace for buying and selling software applications and tools."
       isCorrect: false
-      explanation: "Incorrect. Applications and tools cannot be bought or sold using GitHub."
-  - content: "Which of the following is not a feature of Visual Studio Code?"
+      explanation: "Incorrect. Applications and tools can't be bought or sold using GitHub."
+  - content: "Which of the following isn't a feature of Visual Studio Code?"
     choices:
     - content: "Built-in Git integration."
       isCorrect: false
-      explanation: "Incorrect. Git integration is a feature of Visual Studio Code but is not built-in."
+      explanation: "Incorrect. Git integration is a feature of Visual Studio Code."
     - content: "IntelliSense code completion."
       isCorrect: false
-      explanation: "Incorrect. This is a feature of GitHub Copilot."
+      explanation: "Incorrect. IntelliSense code completion is a feature of Visual Studio Code."
     - content: "Native support for Java development."
       isCorrect: true
-      explanation: "Correct! Visual Studio Code offers Native support for Java development."
+      explanation: "Correct! Visual Studio Code doesn't offer Native support for Java development."

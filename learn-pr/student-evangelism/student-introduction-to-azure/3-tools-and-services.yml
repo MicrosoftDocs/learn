@@ -11,6 +11,6 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
-  [!include[](includes/4-tools-and-services.md)]
+  [!include[](includes/3-tools-and-services.md)]

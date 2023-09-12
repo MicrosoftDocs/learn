@@ -10,3 +10,5 @@ We also looked at Microsoft Learn, a free platform containing more than 3000 mod
 
 See the following resources for more information about the topics covered in this module:
 
+- [Create your Azure free account today](https://azure.microsoft.com/students/)
+- Learn more about the [anatomy of a datacenter](https://azure.microsoft.com/blog/the-anatomy-of-a-datacenter-how-microsofts-datacenter-hardware-powers-the-microsoft-cloud/).
