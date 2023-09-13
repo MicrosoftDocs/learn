@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-machine-learning.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 09/13/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 1
+content: |
+  [!include[](includes/12-summary.md)]

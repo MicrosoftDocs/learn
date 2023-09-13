@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-machine-learning.binary-classification
+title: Binary classification
+metadata:
+  title: Binary classification
+  description: "Binary classification"
+  ms.date: 09/13/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-binary-classification.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-machine-learning.exercise-auto-ml
+title: Exercise - Use Azure Machine Learning to train a model
+metadata:
+  title: Exercise - Use Azure Machine Learning to train a model
+  description: "Exercise - Use Azure Machine Learning to train a model"
+  ms.date: 09/13/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 30
+content: |
+  [!include[](includes/10-exercise-auto-ml.md)]

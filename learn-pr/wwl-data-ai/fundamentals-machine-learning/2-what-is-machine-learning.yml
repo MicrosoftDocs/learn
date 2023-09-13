@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-machine-learning.what-is-machine-learning
+title: What is machine learning?
+metadata:
+  title: What is machine learning?
+  description: "What is machine learning?"
+  ms.date: 09/13/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-is-machine-learning.md)]

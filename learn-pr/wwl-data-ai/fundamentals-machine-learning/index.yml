@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.fundamentals-machine-learning
+metadata:
+  title: Fundamentals of machine learning
+  description: "Machine learning is the basis for most modern artificial intelligence solutions. A familiarity with the core concepts on which machine learning is based is an important foundation for understanding AI."
+  ms.date: 09/13/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+title: Fundamentals of machine learning
+summary: Machine learning is the basis for most modern artificial intelligence solutions. A familiarity with the core concepts on which machine learning is based is an important foundation for understanding AI.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe core concepts on machine learning
+  - Identify different types of machine learning
+  - Describe considerations for training and evaluating machine learning models
+  - Describe core concepts of deep learning
+  - Use automated machine learning in Azure Machine Learning service
+prerequisites: |
+  Before starting this module, you should have:
+  - A basic knowledge of mathematics
+  - Familiarity with Microsoft Azure and cloud computing
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+products:
+- azure-machine-learning
+units:
+- learn.wwl.fundamentals-machine-learning.introduction
+- learn.wwl.fundamentals-machine-learning.what-is-machine-learning
+- learn.wwl.fundamentals-machine-learning.types-of-machine-learning
+- learn.wwl.fundamentals-machine-learning.regression
+- learn.wwl.fundamentals-machine-learning.binary-classification
+- learn.wwl.fundamentals-machine-learning.multiclass-classification
+- learn.wwl.fundamentals-machine-learning.clustering
+- learn.wwl.fundamentals-machine-learning.deep-learning
+- learn.wwl.fundamentals-machine-learning.azure-machine-learning
+- learn.wwl.fundamentals-machine-learning.exercise-auto-ml
+- learn.wwl.fundamentals-machine-learning.knowledge-check
+- learn.wwl.fundamentals-machine-learning.summary
+badge:
+  uid: learn.wwl.fundamentals-machine-learning.badge

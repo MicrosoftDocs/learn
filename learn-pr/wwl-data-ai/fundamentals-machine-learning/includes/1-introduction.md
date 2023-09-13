@@ -1,0 +1,6 @@
+Machine learning is in many ways the intersection of two disciplines - data science and software engineering. The goal of machine learning is to use data to create a predictive model that can be incorporated into a software application or service. To achieve this goal requires collaboration between data scientists who explore and prepare the data before using it to *train* a machine learning model, and software developers who integrate the models into applications where they're used to predict new data values (a process known as *inferencing*).
+
+In this module, you'll explore some of the core concepts on which machine learning is based, learn how to identify different kinds of machine learning model, and examine the ways in which machine learning models are trained and evaluated. Finally, you'll learn how to use Microsoft Azure Machine Learning to train and deploy a machine learning model, without needing to write any code.
+
+> [!NOTE]
+> Machine learning is based on mathematical and statistical techniques, some of which are described at a high level in this module. Don't worry if you're not a mathematical expert though! The goal of the module is to help you gain an *intuition* of how machine learning works - we'll keep the mathematics to the minumum required to understand the core concepts.
