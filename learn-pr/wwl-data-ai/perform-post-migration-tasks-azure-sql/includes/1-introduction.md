@@ -1,6 +1,6 @@
 Migrating to Azure SQL allows you to modernize your data estate by taking advantage of its PaaS capabilities. Opting for Azure SQL Database, for example, allows you to eliminate dependencies on technical components that are specific to the instance level, such as SQL Agent jobs.
 
-As part of the migration process, transitioning to Azure SQL may require individuals, whether they are developers or experienced database administrators, to adapt to a different way of managing and deploying their applications and databases. Therefore, understanding the core capabilities of the PaaS platform is crucial to help ease this initial sense of challenge and ensure that applications continue to operate effectively and securely in Azure post-migration.
+As part of the post-migration process, transitioning to Azure SQL may require individuals, whether they are developers or experienced database administrators, to adapt to a different way of managing databases. Therefore, understanding the core capabilities of the PaaS platform is crucial to help ease this initial sense of challenge and ensure that applications continue to operate effectively and securely in Azure.
 
 ### Use case scenario
 

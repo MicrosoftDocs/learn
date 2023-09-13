@@ -1,6 +1,6 @@
 A major portion of the troubleshooting techniques you would use for troubleshooting database performance remains the same in Azure SQL.
 
-All the tools that are typically used for monitoring and troubleshooting SQL Server are also applicable to Azure SQL VM, including tools like Performance Monitor. However, due to the nature of Platform as a Service (PaaS), Azure SQL Database and Azure SQL Managed Instance provide a different set of tools. Next, we'll explore the specific tools for Azure's PaaS offerings and their functionalities.
+All the tools that are typically used for monitoring and troubleshooting SQL Server are also applicable to SQL Server running on Azure Virtual Machine, including tools like Performance Monitor. However, due to the nature of Platform as a Service (PaaS), Azure SQL Database and Azure SQL Managed Instance provide a different set of tools. Next, we'll explore the specific tools for Azure's PaaS offerings and their functionalities.
 
 ## Compare performance results with your baseline
 

@@ -1,4 +1,4 @@
-When working with automation from SQL Server, it's common to use SQL Agent to schedule jobs for automation purposes. Although SQL MI and SQL VM still have that option, SQL Database doesn't, so you'll need to use alternative automation methods to achieve similar results on SQL Server.
+When working with automation from SQL Server, it's common to use SQL Agent to schedule jobs for automation purposes. Although Azure SQL Managed Instance and SQL Server running on an Azure Virtual Machine still have that option, Azure SQL Database doesn't, so you may need to use alternative automation methods to achieve similar results.
 
 ## Azure Automation
 

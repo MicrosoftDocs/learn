@@ -1,6 +1,6 @@
-In our bike manufacturing scenario, you created and executed a plan to migrate your servers to Azure SQL Database using both offline and online methods. 
+In our bike manufacturing scenario, you learned the core capabilities of the PaaS platform and ensured that applications continue to operate effectively and securely in Azure.
 
-Now, with the migration complete, your users have the best availability and scalability for their data and you're confident that you can respond to future changes in demand quickly. The method chosen to migrate the database is typically dependent on how much time the SQL Server databases can be offline.
+Now, with the post-migration steps complete, your users have the best availability and scalability for their data and you're confident that you can respond to future changes in demand quickly. 
 
 For additional reading, you can refer to the following resources:
 
@@ -10,3 +10,4 @@ For additional reading, you can refer to the following resources:
 - [Data Migration Assistant](/sql/dma/dma-overview)
 - [Automatic tuning](/azure/azure-sql/database/automatic-tuning-overview)
 - [Active geo-replication](/azure/azure-sql/database/active-geo-replication-overview)
+- [Azure SQL Database high availability and disaster recovery checklist](/azure/azure-sql/database/high-availability-disaster-recovery-checklist)
