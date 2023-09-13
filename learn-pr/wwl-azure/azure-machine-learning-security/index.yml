@@ -34,6 +34,5 @@ subjects:
 - cloud-security
 - machine-learning
 units:
-- learn.azure.azure-machine-learning-security.what-is-role-based-access-control
 badge:
   uid: learn.azure.azure-machine-learning-security.badge
