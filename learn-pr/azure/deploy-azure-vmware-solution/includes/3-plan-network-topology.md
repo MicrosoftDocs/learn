@@ -1,4 +1,4 @@
-Azure VMware Solution provides a private-cloud environment that can be accessed from both on-premises and Azure-based environments or resources. The next step in Azure VMware Solution deployment involves a plan for network topology.
+Azure VMware Solution provides a private-cloud environment you can access from both on-premises and Azure-based environments or resources. The next step in Azure VMware Solution deployment involves a plan for network topology.
 
 The Azure VMware Solution environment in Azure needs to pass network traffic to Azure services and on-premises VMware environments. A dedicated Azure ExpressRoute circuit provides connectivity to Azure resources and services from Azure VMware Solution. A separate, customer-provided Azure ExpressRoute circuit provides connectivity to on-premises VMware environments. To accomplish network connectivity, specific IP address ranges and firewall ports must be enabled. When Azure VMware Solution is deployed, private networks are created for the following vSphere components:
 
@@ -36,7 +36,7 @@ The following table shows an example of how to carve up the /22 CIDR network add
 
 During Azure VMware Solution deployment, you can select an existing virtual network, create a new one, or leave the field blank.
 
-If you select an existing virtual network, you must designate a GatewaySubnet for the Azure VMware Solution ExpressRoute circuit. And if you create a brand-new virtual network, a GatewaySubnet must be created for the Azure VMware Solution ExpressRoute circuit. When you either select a virtual network or create a new one, all the ExpressRoute configurations to peer the circuit into Azure will be done for you while the environment is provisioned in Azure.
+If you select an existing virtual network, you must designate a GatewaySubnet for the Azure VMware Solution ExpressRoute circuit. If you create a brand-new virtual network, you must create a GatewaySubnet for the Azure VMware Solution ExpressRoute circuit. When you either select a virtual network or create a new one, all the ExpressRoute configurations to peer the circuit into Azure are done for you while the environment is provisioned in Azure.
 
 If you leave the virtual network blank, you'll have to create a virtual network gateway and peer the ExpressRoute circuit to Azure after Azure VMware Solution finishes deployment.
 
@@ -47,9 +47,9 @@ If you leave the virtual network blank, you'll have to create a virtual network 
 There are two types of interconnectivity for Azure VMware Solution:
 
 - **Basic interconnectivity**: Azure VMware Solution connects to an Azure virtual network by using an ExpressRoute connection that deploys with the resource. The Azure VMware Solution-provided ExpressRoute circuit establishes connectivity to and from the Azure VMware Solution private cloud for other Azure services, like Azure Monitor and Microsoft Defender for Cloud.
-- **Full interconnectivity**: This connectivity model extends the basic interconnectivity implementation to include interconnectivity between on-premises and Azure VMware Solution private clouds. This connection can be configured via a customer-provided ExpressRoute circuit, among other methods. You can use an existing circuit or purchase a new one.
+- **Full interconnectivity**: This connectivity model extends the basic interconnectivity implementation to include interconnectivity between on-premises and Azure VMware Solution private clouds. You can configure this connection via a customer-provided ExpressRoute circuit, among other methods. You can use an existing circuit or purchase a new one.
 
-ExpressRoute Global Reach must be enabled to route traffic to and from the on-premises environment to the Azure VMware Solution private cloud. The customer-provided ExpressRoute circuit is not a part of the Azure VMware Solution private-cloud deployment. 
+ExpressRoute Global Reach must be enabled to route traffic to and from the on-premises environment to the Azure VMware Solution private cloud. The customer-provided ExpressRoute circuit is not a part of the Azure VMware Solution private-cloud deployment.
 
 ## Prerequisites for ExpressRoute Global Reach
 
@@ -79,6 +79,6 @@ If on-premises network infrastructure is restrictive, the following ports must b
 
 ## DHCP and DNS resolution considerations
 
-VMs running in Azure VMware Solution require name resolution. VMs might also need DHCP services for lookup and IP-address assignments. An on-premises VM or an Azure VM can be configured to facilitate name resolution. You can use the DHCP service built in to NSX or you can choose to use a local DHCP server in the Azure VMware Solution private cloud. Configuring DHCP in Azure VMware Solution won't require routing broadcasts of DHCP traffic over the WAN back to the on-premises environment.
+VMs running in Azure VMware Solution require name resolution. VMs might also need DHCP services for lookup and IP-address assignments. You can configure an on-premises VM or an Azure VM to facilitate name resolution. You can use the DHCP service built in to NSX or you can choose to use a local DHCP server in the Azure VMware Solution private cloud. Configuring DHCP in Azure VMware Solution won't require routing broadcasts of DHCP traffic over the WAN back to the on-premises environment.
 
 In the next unit, we'll go through the deployment of Azure VMware Solution. We'll outline all the steps so you can deploy the service in your environment.

@@ -4,10 +4,10 @@ metadata:
   title: Containerize and migrate ASP.NET applications to Azure App Service
   description: Microsoft Learn module to learn Azure Migrate App Containerization with a hands-on lab using Azure App Service
   ms.date: 09/01/2021
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: app-service
 title: Containerize and migrate ASP.NET applications to Azure App Service
 summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate ASP.NET applications to Azure App Service.
 abstract: | 

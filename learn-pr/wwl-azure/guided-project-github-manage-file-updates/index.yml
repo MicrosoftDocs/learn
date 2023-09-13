@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-github-manage-file-updates
+metadata:
+  title: Guided Project –  Use GitHub to manage file updates
+  description: "Hands-on module focused on getting the learner comfortable with basic source control commands through an integrated development environment or web portal."
+  ms.date: 08/30/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+title: Guided Project –  Use GitHub to manage file updates
+summary: |
+  Guided Project – Use GitHub to manage file updates provides you with the opportunity to create your own GitHub repository and manage files within that repository, including updating files, handling conflicts, and updating the source repository.
+  [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
+abstract: |
+  In this module, you'll practice how to:
+  *   Create a GitHub account and an initial repository.
+  *   Configure software to interact with GitHub.
+  *   Use software to create a local version of your repository.
+  *   Update files locally, and then update the web-based repository.
+  *   Resolve conflicts in your repository.
+  *   Merge all updates to a single repository branch.
+prerequisites: |
+  A personal computer running Windows, macOS, or Linux.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+subjects:
+- development-tools
+units:
+- learn.wwl.guided-project-github-manage-file-updates.introduction
+- learn.wwl.guided-project-github-manage-file-updates.prepare
+- learn.wwl.guided-project-github-manage-file-updates.exercise-create-github-account-initial-repository
+- learn.wwl.guided-project-github-manage-file-updates.exercise-configure-software-interact-github
+- learn.wwl.guided-project-github-manage-file-updates.exercise-use-software-create-local-version-repository
+- learn.wwl.guided-project-github-manage-file-updates.exercise-update-files-locally-update-web-based-repository
+- learn.wwl.guided-project-github-manage-file-updates.exercise-resolve-conflicts-repository
+- learn.wwl.guided-project-github-manage-file-updates.exercise-merge-updates-single-repository-branch
+- learn.wwl.guided-project-github-manage-file-updates.knowledge-check
+- learn.wwl.guided-project-github-manage-file-updates.summary
+badge:
+  uid: learn.wwl.guided-project-github-manage-file-updates.badge

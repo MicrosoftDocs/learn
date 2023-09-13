@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/13/2023
+  ms.date: 08/23/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: vs-code
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -40,9 +40,9 @@ quiz:
     - content: "Visual Studio Code."
       isCorrect: false
       explanation: "Incorrect. The Visual Studio Code integrated Terminal panel does support running command line interface commands, but other command line tools could be used."
-    - content: "The OmniSharp extension for C#."
+    - content: "C# Dev Kit."
       isCorrect: false
-      explanation: "Incorrect. The OmniSharp extension for C# provides editing support (including Syntax Highlighting, IntelliSense), but doesn't help with the `dotnet` commands."
+      explanation: "Incorrect. The C# Dev Kit and associated extensions published by Microsoft provide support developing and debugging C# projects, but they don't enable running the `dotnet` CLI commands."
     - content: "The .NET SDK."
       isCorrect: true
       explanation: "Correct! The .NET SDK is required in order to run .NET command line interface commands such as `dotnet run`."

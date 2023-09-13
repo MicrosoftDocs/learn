@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hci
 title: Manage Azure Stack HCI clusters
 summary: This module covers the most common Microsoft Azure Stack HCI management and maintenance tasks that will help you improve the resiliency, stability, and performance of your existing IT infrastructure.
 abstract: |

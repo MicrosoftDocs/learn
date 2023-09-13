@@ -8,7 +8,7 @@ metadata:
   author: khdownie
   ms.author: kendownie
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 7
 content: |
   [!include[](includes/9-test-troubleshoot-azure-file-sync.md)]

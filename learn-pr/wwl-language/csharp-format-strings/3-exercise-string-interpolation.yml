@@ -4,11 +4,10 @@ title: Exercise - Explore string interpolation
 metadata:
   title: Exercise - Explore string interpolation
   description: "Exercise - Explore string interpolation"
-  ms.date: 04/25/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-string-interpolation.md)]

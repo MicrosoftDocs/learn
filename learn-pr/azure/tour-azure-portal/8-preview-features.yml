@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.tour-azure-portal-features.8-preview-features
-title: Access public and private preview features
+title: Access preview features
 metadata:
-  title: Access public and private preview features
-  description: Access public and private preview features
-  ms.date: 01/1/2019
+  title: Access preview features
+  description: Access preview features
+  ms.date: 08/18/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 # interactive: azure-portal
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/8-preview-features.md)]

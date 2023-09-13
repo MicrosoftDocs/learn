@@ -53,7 +53,6 @@ To create and provision an ExpressRoute circuit, perform the following high-leve
 
 ## Create a storage account
 
-You need a storage account in which to place the Azure virtual hard disk for the VM operating system and data disks. This data disk is for the Active Directory database, log files, and SYSVOL.
 
 Use the following procedure to create a storage account:
 

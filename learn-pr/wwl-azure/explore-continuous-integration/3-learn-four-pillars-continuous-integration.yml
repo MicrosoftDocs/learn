@@ -4,13 +4,11 @@ title: Learn the four pillars of continuous integration
 metadata:
   title: Learn the four pillars of continuous integration
   description: "Learn the four pillars of continuous integration"
-  ms.date: 06/13/2022
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/3-learn-four-pillars-continuous-integration.md)]

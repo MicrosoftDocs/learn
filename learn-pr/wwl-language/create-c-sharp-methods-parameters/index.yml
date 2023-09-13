@@ -3,11 +3,11 @@ uid: learn.wwl.create-c-sharp-methods-parameters
 metadata:
   title: Create C# methods with parameters
   description: "This module covers method parameters, including pass-by-reference and pass-by-value parameter types. This module also covers optional and named arguments."
-  ms.date: 04/25/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Create C# methods with parameters
 summary: Learn how to use different types of input parameters in methods
 abstract: |
@@ -25,10 +25,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- dotnet-framework
+- dotnet
 - vs-code
 units:
 - learn.wwl.create-c-sharp-methods-parameters.introduction

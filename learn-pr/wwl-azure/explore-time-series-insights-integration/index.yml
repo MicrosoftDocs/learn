@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: time-series-insights
 title: Explore Time Series Insights integration
 summary: This module provides you with experience configuring the IoT Hub built-in endpoint for use with Time Series Insights and using Time Series Insights to view and analyze time series data.
 abstract: |
@@ -41,3 +41,4 @@ units:
 - learn.wwl.explore-time-series-insights-integration.summary
 badge:
   uid: learn.wwl.explore-time-series-insights-integration.badge
+hidden: true

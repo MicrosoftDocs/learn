@@ -3,11 +3,10 @@ uid: learn.intro-to-hpc
 metadata:
   title: Introduction to high-performance computing (HPC) on Azure
   description: Discover the services available on Azure for your high-performance computing workloads.
-  ms.date: 10/27/2022
+  ms.date: 05/22/2023
   author: padmalathas
   ms.author: padmalathas
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to high-performance computing (HPC) on Azure
 summary: Discover the services available on Azure for your high-performance computing workloads.
 abstract: | 

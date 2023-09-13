@@ -7,9 +7,9 @@ metadata:
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: ropreddy-03032021
+  ms.service: app-service
 title: Deploy a Spring Boot app to Azure App Service
 summary: Create a Spring Boot application, connect it to a MySQL database, and then deploy to Azure App Service.
 abstract: |
@@ -28,7 +28,6 @@ roles:
 products:
 - azure
 - azure-app-service
-- azure-app-service-web
 - azure-database-mysql
 subjects:
 - custom-app-development

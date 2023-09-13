@@ -4,7 +4,7 @@ A *critical* part of data science is ensuring that the assumptions you make accu
 
 ## Revisiting the Apollo program
 
-The Apollo program focused on using the Saturn V rocket to send humans into space and onto the Moon. The [Saturn V](https://www.nasa.gov/centers/johnson/rocketpark/saturn_v.html?azure-portal=true) rocket that was used in the Apollo program is known as a three-stage rocket. *Three-stage* means that the rocket has three parts, each of which burns at a different time to achieve a different goal.
+The Apollo program focused on using the Saturn V rocket to send humans into space and onto the Moon. The [Saturn V](https://www.nasa.gov/centers/johnson/rocketpark/saturn_v.html) rocket that was used in the Apollo program is known as a three-stage rocket. *Three-stage* means that the rocket has three parts, each of which burns at a different time to achieve a different goal.
 
 The first stage is the main thrust portion that gets the rocket to about 68 kilometers into the sky and then falls back to Earth, making the rocket lighter.  Next, the second stage burns its engines until the rocket nearly reaches Earth's orbit and then also falls back to Earth. The final stage gets the spacecraft into Earth's orbit and thrusts it toward the Moon.
 
@@ -22,7 +22,7 @@ The modules are critical parts of the ship. NASA designed them precisely to ensu
 
 ## Add in command and lunar module data
 
-By using the [NASA Space Science Data Coordinated Archive](https://nssdc.gsfc.nasa.gov/nmc/SpacecraftQuery.jsp?azure-portal=true), we gathered information about each module used in each mission. As you did when you created the samples tables, create six new columns, three for the lunar modules and three for the command modules:
+By using the [NASA Space Science Data Coordinated Archive](https://nssdc.gsfc.nasa.gov/nmc/SpacecraftQuery.jsp), we gathered information about each module used in each mission. As you did when you created the samples tables, create six new columns, three for the lunar modules and three for the command modules:
 - Module name
 - Module mass 
 - Module mass diff

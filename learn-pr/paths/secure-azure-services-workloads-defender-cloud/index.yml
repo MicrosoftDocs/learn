@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.wwl.secure-azure-services-workloads-defender-cloud
+metadata:
+  title: Secure Azure services and workloads with Microsoft Defender for Cloud regulatory compliance controls
+  description: Explore network traffic filtering with Network Security Group, set up Microsoft Defender for Cloud, create a Log Analytics workspace, configure Log Analytics agent integration, Azure Key Vault networking, and connect an Azure SQL server using Azure Private Endpoint in the Azure portal. Enhance cloud security effectively.
+  ms.date: 08/30/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure Azure services and workloads with Microsoft Defender for Cloud regulatory compliance controls
+prerequisites: |
+  - None
+summary: |
+  This learning path guides you in securing Azure services and workloads using Microsoft Cloud Security Benchmark controls in Microsoft Defender for Cloud via the Azure portal.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-key-vault
+- azure-linux-vm
+- azure-log-analytics
+- azure-portal
+- azure-private-link
+- azure-sql-database
+- azure-sql-virtual-machines
+- azure-sqlserver-vm
+- azure-storage
+- azure-virtual-machines
+- azure-virtual-network
+- defender-for-cloud
+modules:
+- learn.wwl.filter-network-traffic-network-security-group-using-azure-portal
+- learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud
+- learn.wwl.set-up-microsoft-defender-cloud
+- learn.wwl.configure-integrate-analytics-agent-defender-cloud
+- learn.wwl.configure-azure-key-vault-networking-settings
+- learn.wwl.connect-azure-server-private-endpoint-using-azure-portal
+trophy:
+  uid: learn.wwl.secure-azure-services-workloads-defender-cloud.trophy

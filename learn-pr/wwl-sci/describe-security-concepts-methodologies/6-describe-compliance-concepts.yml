@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-security-concepts-methodologies.describe-compliance-concepts
-title: Describe compliance concepts
+title: Describe governance, risk, and compliance (GRC) concepts
 metadata:
-  title: Describe compliance concepts
-  description: "Describe compliance concepts"
+  title: Describe governance, risk, and compliance (GRC) concepts
+  description: "Describe governance, risk, and compliance (GRC) concepts"
   ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/6-describe-compliance-concepts.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-configure-secure-access-workloads.exercise3
+title: Exercise - Protect the web application from malicious traffic and block unauthorized access
+metadata:
+  title: Exercise - Protect the web application from malicious traffic and block unauthorized access
+  description: "Exercise - Protect the web application from malicious traffic and block unauthorized access"
+  ms.date: 06/13/2023
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise-firewall.md)]

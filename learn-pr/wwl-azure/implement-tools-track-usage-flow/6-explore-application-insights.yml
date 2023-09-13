@@ -4,13 +4,11 @@ title: Explore Application Insights
 metadata:
   title: Explore Application Insights
   description: "Explore Application Insights"
-  ms.date: 01/16/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.prod: azure
+durationInMinutes: 5
 content: |
   [!include[](includes/6-explore-application-insights.md)]

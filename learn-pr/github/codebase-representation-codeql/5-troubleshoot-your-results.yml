@@ -6,9 +6,11 @@ metadata:
   title:  Troubleshoot CodeQL results
   description: This unit provides common tips for troubleshooting your queries.
   ms.date: 02/10/2022
-  author: sterling463
-  ms.author: csterling
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-python
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

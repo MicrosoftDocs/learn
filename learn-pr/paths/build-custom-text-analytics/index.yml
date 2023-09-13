@@ -7,12 +7,15 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+  ms.service: azure
 title: Build custom text analytics solutions
 prerequisites: |
   Before starting this learning path, you should be familiar with:
   - The Azure portal
-  - Familiarity with Cognitive Services
+  - Familiarity with Azure AI Services
   - General programming techniques
 summary: |
   Build solutions with newer text analytics services such as custom text classification and custom name entity recognition. These services allow for customizing the built-in features available in the Language service for exactly what your application needs.
@@ -23,7 +26,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 modules:

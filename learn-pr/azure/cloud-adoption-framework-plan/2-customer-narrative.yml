@@ -5,8 +5,8 @@ metadata:
   title: Customer narrative
   description: Resume the story about Tailwind Traders to learn about their planning needs.
   ms.date: 02/22/2021
-  author: BrianBlanchard
-  ms.author: brblanch
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

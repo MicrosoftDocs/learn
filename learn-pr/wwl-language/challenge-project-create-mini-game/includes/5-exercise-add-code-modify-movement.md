@@ -1,5 +1,6 @@
 
 
+
 Your goal is to develop a mini-game application. Currently, your mini-game has some basic gameplay capabilities! It terminates correctly, detects when the player consumes food, changes the player appearance, and displays more food. Now you want the food the player consumes to affect the player's ability to move.
 
 ## Specification

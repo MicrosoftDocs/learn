@@ -7,8 +7,9 @@ metadata:
   ms.date: 01/06/2023
   author: aaronpowell
   ms.author: aapowell
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom:
   - team=cloud_advocates
   ms.contributors:

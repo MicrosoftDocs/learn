@@ -6,9 +6,10 @@ metadata:
   ms.date: 01/13/2023
   author: acomfort248
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
   ms.custom: team=nextgen
+  ms.service: static-web-apps
+  manager: mijacobs
 title: Create and publish a static web app with Gatsby and Azure Static Web Apps
 summary: Use Gatsby and React to develop a static web app, then deploy it to the web with Azure Static Web Apps.
 abstract: |
@@ -24,7 +25,7 @@ roles:
 products:
 - azure
 - azure-app-service
-- azure-app-service-static
+- static-web-apps
 prerequisites: |
   - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
   - [Visual Studio Code](https://code.visualstudio.com)

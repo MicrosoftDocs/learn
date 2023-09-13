@@ -2,12 +2,14 @@
 uid: learn.azure-cosmos-db-for-postgresql
 title: Azure Cosmos DB for PostgreSQL
 summary: |
-  Azure Cosmos DB for PostgreSQL provides a highly scalable distributed relational database solution, reliably and securely managed on Azure. In these modules, learn how to; effectively model data for distributed tables, efficiently ingest and query data with distributed tables, use extensions to bundle multiple related SQL objects together, and design for global scale and availability.
+  Azure Cosmos DB for PostgreSQL provides a highly scalable distributed relational database solution, reliably and securely managed on Azure. In these modules, learn how to effectively model data for distributed tables, efficiently ingest and query data by using distributed tables, use extensions to bundle multiple related SQL objects together, and design for a global scale and availability.
 metadata:
   title: Azure Cosmos DB for PostgreSQL learning path
   description: Azure Cosmos DB for PostgreSQL provides a highly scalable distributed relational database solution, reliably and securely managed on Azure.
   ms.custom:
     - ignite-2022
+    - build-2023
+    - build-2023-dataai
   ms.date: 02/22/2023
   author: seesharprun
   ms.author: sidandrews

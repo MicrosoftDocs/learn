@@ -3,15 +3,16 @@ uid: learn.wwl.hybrid-identity
 metadata:
   title: Implement Hybrid identity
   description: "Explore how to deploy and configure Azure AD Connect to create a hybrid identity solution for your company."
-  ms.date: 02/02/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom:
+  - N/A
 title: Implement Hybrid identity
 summary: Explore how to deploy and configure Azure AD Connect to create a hybrid identity solution for your company.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
   - Deploy Azure AD Connect
   - Pick and configure that best authentication option for your security needs
   - Configure password writeback
@@ -27,9 +28,7 @@ products:
 - azure
 - azure-active-directory
 - active-directory-federation-services
-- azure-active-directory-connect
-- azure-active-directory-priviledged-identity-management
-- azure-active-directory-pass-through-authentication
+- entra
 subjects:
 - identity-access
 units:

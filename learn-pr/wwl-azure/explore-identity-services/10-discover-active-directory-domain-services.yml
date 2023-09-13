@@ -4,11 +4,10 @@ title: Discover Active Directory Domain Services (AD DS)
 metadata:
   title: Discover Active Directory Domain Services (AD DS)
   description: "Discover Active Directory Domain Services (AD DS)"
-  ms.date: 04/21/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/10-discover-active-directory-domain-services.md)]

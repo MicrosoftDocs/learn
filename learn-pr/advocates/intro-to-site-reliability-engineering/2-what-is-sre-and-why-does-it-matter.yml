@@ -8,7 +8,7 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-01282021
 durationInMinutes: 10
@@ -18,29 +18,29 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which property of a service, system or product does SRE primarily focus on?'
+  - content: "Which property of a service, system or product does SRE primarily focus on?"
     choices:
-    - content: 'Security'
+    - content: "Security"
       isCorrect: false
-      explanation: 'Security is definitely important in SRE, but reliability is the primary focus of this engineering discipline.'
-    - content: 'Cost to run'
+      explanation: "Security is definitely important in SRE, but reliability is the primary focus of this engineering discipline."
+    - content: "Cost to run"
       isCorrect: false
-      explanation: 'Expenses and resource usage are definitely important in SRE, but reliability is the primary focus of this engineering discipline.'
-    - content: 'Reliability'
+      explanation: "Expenses and resource usage are definitely important in SRE, but reliability is the primary focus of this engineering discipline."
+    - content: "Reliability"
       isCorrect: true
-      explanation: 'SRE''s primary focus is indeed on reliability.'
-    - content: 'Maintainability'
+      explanation: "SRE's primary focus is indeed on reliability."
+    - content: "Maintainability"
       isCorrect: false
-      explanation: 'The creation of maintainable services, systems or products is definitely important in SRE, but reliability is the primary focus of this engineering discipline.'
+      explanation: "The creation of maintainable services, systems or products is definitely important in SRE, but reliability is the primary focus of this engineering discipline."
 
-  - content: 'For almost all services, systems and products, what level of reliability does an SRE strive for?'
+  - content: "For almost all services, systems and products, what level of reliability does an SRE strive for?"
     choices:
-    - content: '100% is the goal'
+    - content: "100% is the goal."
       isCorrect: false
-      explanation: 'For most contexts, it is not possible to hit 100% reliable. Even if it was, it would be cost and resource prohibitive (an as waste of both).'
-    - content: 'It should be as reliable as possible'
+      explanation: "For most contexts, it isn't possible to hit 100% reliable. Even if it was, it would be cost and resource prohibitive (an as waste of both)."
+    - content: "It should be as reliable as possible."
       isCorrect: false
-      explanation: 'It is important to find the appropriate level of reliability for a goal since efforts and resources beyond that are a waste. Plus "as possible" is too vague to be useful.'
-    - content: 'A specific level identified as appropriate by the key stakeholders'
+      explanation: "It's important to find the appropriate level of reliability for a goal since efforts and resources beyond that are a waste. Plus *as possible* is too vague to be useful."
+    - content: "A specific level identified as appropriate by the key stakeholders."
       isCorrect: true
-      explanation: 'Setting a goal for a service is a collaborative effort between SRE, development resources and the business decision makers.'
+      explanation: "Setting a goal for a service is a collaborative effort between SRE, development resources and the business decision makers."

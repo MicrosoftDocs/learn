@@ -1,4 +1,5 @@
 
+
 In this module, you'll learn about the seven steps to initiate the use of Microsoft Defender for Cloud Apps.
 
 Before proceeding with any other actions, it's essential to understand how to access the Microsoft Defender for Cloud Apps portal. Access to the portal is necessary for us to take advantage of the various features and functionalities offered by the tool. Therefore, it's imperative to follow the appropriate steps to access the portal before we can utilize Microsoft Defender for Cloud Apps to its fullest potential.
@@ -41,7 +42,7 @@ We recommend using Defender for Cloud Apps sensitive information protection in p
 > For third-party apps, verify that the current load does not exceed the app's maximum number of allowed API calls.
 
 ## Step 3. Control cloud apps with policies
-How to page: [Control cloud apps with policies](/defender-cloud-apps/policies-control-cloud-apps)
+How to page: [Control cloud apps with policies](/defender-cloud-apps/control-cloud-apps-with-policies)
 
 Required task: Create policies  
 
@@ -80,7 +81,7 @@ Go to **Discover** > **Create snapshot report** and follow the steps shown.
 Having visibility into shadow IT in your organization is critical. After your logs are analyzed, you can easily find which cloud apps are being used, by which people, and on which devices.
 
 ## Step 5. Deploy Conditional Access App Control for catalog apps
-How to page: [Deploy Conditional Access App Control for catalog apps](/defender-cloud-apps/conditional-access-app-control)
+How to page: [Deploy Conditional Access App Control for catalog apps](/defender-cloud-apps/proxy-deployment-aad)
 
 Recommended task: Deploy Conditional Access App Control for catalog apps.
 

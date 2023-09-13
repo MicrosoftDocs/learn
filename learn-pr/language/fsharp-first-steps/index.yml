@@ -7,8 +7,9 @@ metadata:
   ms.date: 02/22/2023
   author: luisquintanilla
   ms.author: luquinta
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.devlang: fsharp
 title: Write your first F# code
 summary: "Take your first steps with F# - Set up your development environment, write your first line of code, and build your first application"
 abstract: | 

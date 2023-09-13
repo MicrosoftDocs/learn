@@ -28,12 +28,12 @@ quiz:
       explanation: "This statement applies to a physical security control type"
   - content: "What does a corrective security control do?"
     choices:
-    - content: "It stops a malicious activity from occurring. Examples include firewalls, data classification, and locks"
+    - content: "It stops a malicious activity from occurring. Examples include firewalls, data classification, and locks."
       isCorrect: false
       explanation: "This statement applies to a preventative security control function"
-    - content: "It detects and alerts a malicious attack before it happens. Examples include honeypots and alarms"
+    - content: "It detects and alerts a malicious attack before it happens. Examples include honeypots and alarms."
       isCorrect: false
       explanation: "This statement applies to a detective security control function"
-    - content: "It repairs and restores your system after a malicious attack. Examples include patches and incident response plans"
+    - content: "It repairs and restores your system after a malicious attack. Examples include patches and incident response plans."
       isCorrect: true
       explanation: "This statement applies to a corrective security control functions"

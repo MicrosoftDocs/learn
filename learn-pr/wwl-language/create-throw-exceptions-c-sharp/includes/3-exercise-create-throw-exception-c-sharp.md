@@ -1,7 +1,5 @@
 
 
-
-
 Developers often need to create and throw exceptions from within a method, and then catch those exceptions further down the call stack where they can be handled. Exception handling helps you to ensure the stability of your applications.
 
 In this exercise, you'll start with a sample application that includes a potential error condition inside a called method. Your updated method will `throw` an exception when it detects the issue. The exception will be handled in a `catch` block of the code that calls the method. The result is an application that provides a better user experience.

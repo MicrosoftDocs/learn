@@ -50,7 +50,6 @@ products:
 - azure
 - azure-active-directory
 - azure-app-service
-- azure-app-service-web
 # - azure-application-insights
 #- azure-automation
 - azure-cache-redis

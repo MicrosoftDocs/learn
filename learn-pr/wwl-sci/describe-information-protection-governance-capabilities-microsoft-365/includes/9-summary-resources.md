@@ -1,4 +1,5 @@
 
+
 You’ve explored how Microsoft Purview capabilities like data classification, records management, and data loss prevention can help provide information protection and data lifecycle management across an organization.
 
 Without these capabilities, an organization's information could be at risk, and it might not be compliant with legal and regulatory standards. Microsoft Purview Information Protection and Microsoft Purview Data Lifecycle Management can help organizations address their compliance needs and mitigate risk.

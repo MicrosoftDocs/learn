@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad
 metadata:
-  title: Describe the access management capabilities of Azure AD
-  description: "Describe the access management capabilities of Azure AD"
+  title: Describe access management capabilities of Microsoft Entra ID
+  description: "Describe access management capabilities of Microsoft Entra ID"
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-title: Describe the access management capabilities of Azure AD
-summary: A key function of Azure AD is to manage access.  Learn about the access management capabilities, its use cases, and benefits.
+  ms.service: active-directory
+title: Describe access management capabilities of Microsoft Entra ID
+summary: A key function of Microsoft Entra ID is to manage access.  Learn about the conditional access and how Microsoft Entra roles and role-based access control (RBAC) helps organizations manage and control access.
 abstract: |
-  After completing this module, you will be able to:
-  - Describe Conditional Access in Azure AD.
-  - Describe the benefits of Azure AD roles and role-based access control.
+  By the end of this module, you'll be able to:
+  - Describe Conditional Access in Microsoft Entra ID.
+  - Describe Microsoft Entra roles and role-based access control.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -25,7 +25,9 @@ roles:
 - business-user
 - student
 products:
+- azure
 - azure-active-directory
+- entra
 subjects:
 - identity-access
 units:

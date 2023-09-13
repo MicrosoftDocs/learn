@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.embrace-responsible-ai-principles-practices.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/12/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An expert suggests using a pool of training data that has been gathered from observations of human workers performing tasks and making decisions. What is an unintended consequence that must be anticipated?"
+    choices:
+    - content: "The transparent nature of AI results in decreased intelligibility concerning performance-based decision making."
+      isCorrect: false
+      explanation: "Incorrect. One of the established guiding principles for AI is a commitment to transparency, which increases the intelligibility for stakeholders."
+    - content: "AI can replicate human biases and prejudices that result in the unfair treatment of people of a particular race or gender."
+      isCorrect: true
+      explanation: "Correct. This is a definite concern as this problem has already been encountered with AI simply replicating the biases exemplified by the human workers it was modeled to learn from."
+    - content: "AI has no level of accountability; thus, poor qualitative decisions can occur without any sense of recourse."
+      isCorrect: false
+      explanation: "Incorrect. Accountability is one of the six guiding principles set forth by Microsoft to guide AI deployment and use."
+  - content: "Why is explainability such an important aspect of responsible AI in the financial services industry?"
+    choices:
+    - content: "Explainability increases a customer's product usage."
+      isCorrect: false
+      explanation: "Incorrect. While this is true, the goal of explainable AI solutions is to mitigate customer uncertainty, not simply increase engagement with AI systems."
+    - content: "Financial service institutions are more likely to identify mistakes made by AI if they can articulate how it's operating."
+      isCorrect: false
+      explanation: "Incorrect. While this is true, the goal of explainable AI solutions is to mitigate customer uncertainty, not simply identify mistakes."
+    - content: "Many customers are concerned with the risks of AI or feel that it’s advancing too quickly, and they don’t understand the potential risks."
+      isCorrect: true
+      explanation: "Correct. Being able to explain how AI systems function can mitigate customer uncertainty and build trust."
+  - content: "An engineering team wants to develop a new tool that lets users convert their facial expressions into an animated creature. Before they launch their tool, they plan on testing it extensively with users from around the world. Which guiding principle(s) is/are most relevant?"
+    choices:
+    - content: "Fairness and inclusivity."
+      isCorrect: true
+      explanation: "Correct. The guiding principle of fairness dictates that AI systems should behave the same way for everyone. The guiding principle of inclusivity dictates that AI tools do not exclude people."
+    - content: "Reliability and safety."
+      isCorrect: false
+      explanation: "Incorrect. The guiding principles of reliability and safety are more relevant in scenarios where AI systems could cause harm."
+    - content: "Privacy and security."
+      isCorrect: false
+      explanation: "Incorrect. The guiding principles of privacy and security should definitely be considerations in this scenario, but testing the tool on a diverse group of users does not address privacy and security concerns."

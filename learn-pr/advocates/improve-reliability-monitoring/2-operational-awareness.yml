@@ -8,7 +8,7 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 9
@@ -20,34 +20,34 @@ quiz:
 
   - content: 'What is operational awareness?'
     choices:
-    - content: 'an understanding of the systems we have in production and how they are functioning'
+    - content: 'An understanding of the systems we have in production and how they are functioning'
       isCorrect: true
       explanation: "Correct, we can't begin to work on reliability if we don\\'t know what is actually running in production."
     - content: 'a comprehensive accounting for how much we are paying for our infrastructure'
       isCorrect: false
       explanation: 'Cost management is definitely important, but first we need to know what is running in production.'
-    - content: 'the process of training your staff to be able to operate your systems'
+    - content: 'The process of training your staff to be able to operate your systems'
       isCorrect: false
-      explanation: 'Staff definitely have to understand your systems, but awareness is not just about the training process.'
+      explanation: 'Your staff definitely needs to understand your systems, but awareness is not just about the training process.'
 
-  - content: 'When gaining operational awareness for an application, which of these questions do we need to ask?'
+  - content: 'When we are gaining operational awareness for an application, which of these questions do we need to ask?'
     choices:
-    - content: 'what are the component parts?'
+    - content: 'What are the component parts?'
       isCorrect: false
-      explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
-    - content: 'what are the dependencies?'
+      explanation: 'We definitely need to know this, but operational awareness requires more information.'
+    - content: 'What are the dependencies?'
       isCorrect: false
-      explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
-    - content: 'what was the past performance?'
+      explanation: 'We definitely need to know this, but operational awareness requires more information.'
+    - content: 'What was the past performance?'
       isCorrect: false
-      explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
-    - content: 'who are the stakeholders?'
+      explanation: 'We definitely need to know this, but operational awareness requires more information.'
+    - content: 'Who are the stakeholders?'
       isCorrect: false
-      explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
-    - content: 'how did it get to production?'
+      explanation: 'We definitely need to know this, but operational awareness requires more information.'
+    - content: 'How did it get to production?'
       isCorrect: false
-      explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
-    - content: 'all of the above'
+      explanation: 'We definitely need to know this, but operational awareness requires more information.'
+    - content: 'All of these'
       isCorrect: true
       explanation: 'Correct, operational awareness requires an understanding of all of the socio-technical aspects.'
 
@@ -59,9 +59,9 @@ quiz:
     - content: 'Dashboards'
       isCorrect: false
       explanation: 'Dashboards can help display information that assists with gaining operational awareness.'
-    - content: 'Azure CosmosDB'
+    - content: 'Azure Cosmos DB'
       isCorrect: true
-      explanation: 'Correct, CosmosDB is an excellent place to store data, but it is not directly useful for operational awareness.'
+      explanation: 'Correct, Cosmos DB is an excellent place to store data, but it is not directly useful for operational awareness.'
     - content: 'Azure Resource Graph Explorer'
       isCorrect: false
       explanation: 'Resource Graph Explorer provides a query environment that can show us exactly what resources we have in play.'

@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.get-started-with-azure-remote-rendering
+title: Get Started with Azure Remote Rendering
+summary: Learn the fundamentals of rendering 3D models with Azure Remote Rendering.
+metadata:
+  title: Get Started with Azure Remote Rendering
+  description: Learn the fundamentals of rendering 3D models with Azure Remote Rendering.
+  ms.date: 07/26/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  #ms.learn-contact: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+prerequisites: None
+iconUrl: /training/achievements/get-started-with-azure-remote-rendering.svg
+levels:
+- beginner
+- intermediate
+roles:
+- developer
+products: 
+- hololens
+subjects:
+- digital-application-innovation
+modules:
+- learn.intro-to-azure-remote-rendering
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity
+trophy:
+  uid: learn.get-started-with-azure-remote-rendering.trophy

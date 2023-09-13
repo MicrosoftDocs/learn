@@ -1,5 +1,3 @@
-
-
 After deploying a real-time service, you can consume it from client applications to predict labels for new data cases.
 
 ## Use the Azure Machine Learning studio
@@ -10,7 +8,7 @@ You can select an endpoint to review its details and deployment logs.
 
 Additionally, you can use the studio to test the endpoint.
 
-:::image type="content" source="../media/test-studio.png" alt-text="Diagram of different hyperparameter values resulting in different models by performing hyperparameter tuning.":::
+:::image type="content" source="../media/test-studio.png" alt-text="Diagram showing different hyperparameter values resulting in different models by performing hyperparameter tuning.":::
 
 ## Use the Azure Machine Learning Python SDK
 

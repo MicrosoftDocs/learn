@@ -4,13 +4,11 @@ title: Implement a change log
 metadata:
   title: Implement a change log
   description: "Implement a change log"
-  ms.date: 10/25/2022
+  ms.date: 08/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+durationInMinutes: 3
 content: |
   [!include[](includes/3-implement-change-log.md)]

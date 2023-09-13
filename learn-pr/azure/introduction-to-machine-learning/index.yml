@@ -2,14 +2,14 @@
 uid: learn.machinelearning.introduction-to-machine-learning
 metadata:
   title: Introduction to machine learning
-  description: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You’ll be introduced to some essential concepts, explore data, and interactively go through the machine learning life-cycle - using Python to train, save, and use a machine learning model like we would in the real world.
-  ms.date: 08/02/2022
-  author: TomReidNZ
-  ms.author: jasdeb
+  description: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You learn some essential concepts, explore data, and interactively go through the machine learning life-cycle - using Python to train, save, and use a machine learning model, just like in the real world.
+  ms.date: 09/05/2023
+  ms.service: machine-learning
+  author: msakande
+  ms.author: mopeakande
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to machine learning
-summary: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You’ll be introduced to some essential concepts, explore data, and interactively go through the machine learning life-cycle - using Python to train, save, and use a machine learning model like we would in the real world.
+summary: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You’re introduced to some essential concepts, explore data, and interactively go through the machine learning life-cycle - using Python to train, save, and use a machine learning model, just like in the real world.
 abstract: | 
   In this module, you will:
   - Explore how machine learning differs from traditional software

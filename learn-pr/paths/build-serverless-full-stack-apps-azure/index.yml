@@ -8,7 +8,10 @@ metadata:
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+  ms.service: azure
 title: Build serverless, full stack applications in Azure
 summary: Learn how to create, build, and deploy modern full stack applications in Azure by using the language of your choice (Python, Node.js, or .NET) and with a Vue.js frontend. Topics covered include modern database capabilities, CI/CD and DevOps, backend API development, REST, and more. Using a real-world scenario of trying to catch the bus, you will learn how to build a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
 prerequisites: | 
@@ -30,7 +33,7 @@ products:
 - azure-sql-database
 - github
 - azure-functions
-- azure-app-service-static
+- static-web-apps
 - azure-web-apps
 - azure-logic-apps
 - azure-devops

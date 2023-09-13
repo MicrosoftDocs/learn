@@ -1,5 +1,3 @@
-
-
 There are multiple techniques to perform a data type conversion. The technique you choose depends on your answer to two important questions:
 
 - Is it possible, depending on the value, that attempting to change the value's data type would throw an exception at run time?
@@ -217,7 +215,7 @@ The term **narrowing conversion** means that you're attempting to convert a valu
 
 When you know you're performing a narrowing conversion, you need to perform a **cast**. Casting is an instruction to the C# compiler that you know precision may be lost, but you're willing to accept it.
 
-If you're unsure weather you lose data in the conversion, write code to perform a conversion in two different ways and observe the changes. Developers frequently write small tests to better understand the behaviors, as illustrated with the next sample.
+If you're unsure whether you lose data in the conversion, write code to perform a conversion in two different ways and observe the changes. Developers frequently write small tests to better understand the behaviors, as illustrated with the next sample.
 
 1. Delete or use the line comment operator `//` to comment out the code from the previous exercise step, and add the following code:
 

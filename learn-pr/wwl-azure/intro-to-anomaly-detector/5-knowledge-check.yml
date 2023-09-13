@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/01/2023
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
@@ -38,7 +38,7 @@ quiz:
     - content: "It is used to indicate the range of acceptable values."
       isCorrect: false
       explanation: "Incorrect. Boundaries are used to set acceptable values that impact whether a point is an anomaly."
-  - content: "How does the Anomaly Detector service evaluate real-time data for anomalies?"
+  - content: "How does Azure AI Anomaly Detector evaluate real-time data for anomalies?"
     choices:
     - content: "It collects all the values in a window of time and evaluates them all at once."
       isCorrect: false

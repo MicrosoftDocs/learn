@@ -1,14 +1,12 @@
-
-
-In this exercise, you'll work with integral types. An **integral type** is a simple value type that represents whole numbers with no fraction (such as `-1`, `0`, `1`, `2`, `3`). The most popular in this category is the **`int`** data type.
+In this exercise, you work with integral types. An **integral type** is a simple value type that represents whole numbers with no fraction (such as `-1`, `0`, `1`, `2`, `3`). The most popular in this category is the **`int`** data type.
 
 There are two subcategories of integral types: **signed** and **unsigned** integral types.
 
-A *signed type* uses its bytes to represent an equal number of positive and negative numbers. The following exercise will give you exposure to the signed integral types in C#.
+A *signed type* uses its bytes to represent an equal number of positive and negative numbers. The following exercise gives you exposure to the signed integral types in C#.
 
 ## Prepare your coding environment
 
-This module includes hands-on activities that guide you through the process of building and running demonstration code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+This module includes hands-on activities that guide you through the process of building and running demonstration code. You're encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
 > [!NOTE]
 > If you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip  the following section of steps, and delete the code in the `Project.cs` file used for a previous exercise.
@@ -47,7 +45,7 @@ This module includes hands-on activities that guide you through the process of b
 
 1. Delete the existing code lines.
 
-    You'll be using this C# console project to create, build, and run code samples during this module.
+    You're using this C# console project to create, build, and run code samples during this module.
 
 1. Close the Terminal panel.
 
@@ -55,8 +53,7 @@ This module includes hands-on activities that guide you through the process of b
 
 1. Ensure that you have Visual Studio Code open and Program.cs displayed in the Editor panel.
 
-    > [!NOTE]
-    > Program.cs should be empty. If if isn't, select and delete all code lines.
+    **Program.cs should be empty.** If it isn't, select and delete all code lines.
 
 1. To see the value ranges for the various data types, type the following code into the Visual Studio Code Editor.
 
@@ -79,8 +76,7 @@ This module includes hands-on activities that guide you through the process of b
 
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
 
-    > [!NOTE]
-    > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
+    If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
 
     You should see the following output:
 
@@ -92,7 +88,7 @@ This module includes hands-on activities that guide you through the process of b
     long   : -9223372036854775808 to 9223372036854775807
     ```
 
-For most non-scientific applications, you'll likely only need to work with `int`. Most of the time, you won't need more than a positive to negative 2.14 billion whole numbers.
+For most non-scientific applications, you likely only need to work with `int`. Most of the time, you won't need more than a positive to negative 2.14 billion whole numbers.
 
 ## Unsigned integral types
 
@@ -130,7 +126,7 @@ You should see the following output:
     ulong  : 0 to 18446744073709551615
     ```
 
-While a given data type can be used for many cases, given the fact that the `byte` data type can represent a value from 0 to 255, it's obvious that this is intended to hold a value that represents a *byte* of data. Data stored in files or data transferred across the internet is often in a binary format. When working with data from these external sources, you'll need to receive data as an array of bytes, then convert them into strings. Many of the methods in the .NET Class Library that deal with encoding and decoding data will require you handle byte arrays.
+While a given data type can be used for many cases, given the fact that the `byte` data type can represent a value from 0 to 255, it's obvious that this is intended to hold a value that represents a *byte* of data. Data stored in files or data transferred across the internet is often in a binary format. When working with data from these external sources, you need to receive data as an array of bytes, then convert them into strings. Many of the methods in the .NET Class Library that deal with encoding and decoding data requires you handle byte arrays.
 
 ## Recap
 

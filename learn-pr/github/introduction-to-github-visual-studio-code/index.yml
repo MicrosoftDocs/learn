@@ -4,10 +4,11 @@ metadata:
   title: "Introduction to GitHub in Visual Studio Code"
   description: Learn to use the GitHub integration in Visual Studio Code, including authentication, publishing repos, and viewing your repo timeline.
   ms.date: 04/06/2022
-  author: burkeholland
-  ms.author: saajani
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: kjo-msft
+  ms.author: karinjohnson
+  ms.topic: module-intro-to-product
+  ms.prod: vs-code
+  manager: jmartens
 title: "Introduction to GitHub in Visual Studio Code"
 summary: Learn to use the GitHub integration in Visual Studio Code, including authentication, publishing repos, and viewing your repo timeline.
 abstract: |
@@ -19,7 +20,7 @@ abstract: |
   - View a timeline of activity on a GitHub repo.
 prerequisites: |
   - A GitHub account
-  - Basic knowledge of Git concepts such as repositories and cloning, as described in [Using Git version control tools in Visual Studio Code](/training/modules/use-git-from-vs-code/)
+  - Basic knowledge of Git concepts such as repositories and cloning
   - Visual Studio Code
 iconUrl: /training/achievements/github/introduction-to-github-using-visual-studio-code.svg
 ratingEnabled: true

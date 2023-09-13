@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 7
+  ms.service: azure
+durationInMinutes: 15
 content: |
   [!include[](includes/2-exercise-setup.md)]

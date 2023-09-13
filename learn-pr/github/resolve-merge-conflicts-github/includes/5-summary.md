@@ -12,7 +12,7 @@ Now that you've learned to settle merge conflicts, learn to [Automate DevOps pro
 
 Here are some links to more information on the topics we discussed in this module.
 
-- [Merging a pull request](https://help.github.com/github/collaborating-with-issues-and-pull-requests/merging-a-pull-request?azure-portal=true)
-- [About merge conflicts](https://help.github.com/github/collaborating-with-issues-and-pull-requests/about-merge-conflicts?azure-portal=true)
-- [Addressing merge conflicts](https://help.github.com/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts?azure-portal=true)
-- [About Git rebase](https://help.github.com/github/using-git/about-git-rebase?azure-portal=true)
+- [Merging a pull request](https://docs.github.com/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request)
+- [About merge conflicts](https://docs.github.com/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
+- [Addressing merge conflicts](https://docs.github.com/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts)
+- [About Git rebase](https://docs.github.com/get-started/using-git/about-git-rebase)

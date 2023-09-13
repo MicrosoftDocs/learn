@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.copy-blobs-using-azure-cli
 metadata:
-  title: Copy and move blobs from one container or storage account to another using the Azure CLI.
+  title: Copy and move blobs from one container or storage account to another using the Azure CLI
   description: Use the Azure CLI to migrate files between Azure storage accounts.
   ms.date: 3/17/2023
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Copy and move blobs from one container or storage account to another using the Azure CLI.
+title: Copy and move blobs from one container or storage account to another using the Azure CLI
 summary: Learn how to use the Azure CLI to copy and move blobs between contains and storage accounts both synchronously and asynchronously.
 abstract: |
   By the end of this module, you'll be able to:

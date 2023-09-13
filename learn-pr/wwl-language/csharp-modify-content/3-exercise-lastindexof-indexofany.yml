@@ -4,11 +4,10 @@ title: Exercise - Use the string's IndexOfAny() and LastIndexOf() helper methods
 metadata:
   title: Exercise - Use the string's IndexOfAny() and LastIndexOf() helper methods
   description: "Exercise - Use the string's IndexOfAny() and LastIndexOf() helper methods"
-  ms.date: 04/25/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 25
 content: |
   [!include[](includes/3-exercise-lastindexof-indexofany.md)]

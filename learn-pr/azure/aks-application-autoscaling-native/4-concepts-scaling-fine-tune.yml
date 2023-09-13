@@ -7,7 +7,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Understand scaler configurations
 durationInMinutes: 2
 content: |
@@ -17,15 +17,15 @@ quiz:
   questions:
     - content: "What does the stabilization window mean?"
       choices:
-        - content: "The amount of time the HPA will look back to the metrics API to get stable data."
+        - content: "The amount of time the HPA looks back to the metrics API to get stable data."
           isCorrect: true
           explanation: "Correct."
         - content: "The cooldown period before scaling up or down again."
           isCorrect: false
-          explanation: "Incorrect. The cooldown period is not defined by the stabilization window."
+          explanation: "Incorrect. The stabilization window doesn't define the cooldown period."
         - content: "The number of seconds to wait before the HPA can start working."
           isCorrect: false
-          explanation: "HPAs will start working as soon as they're created."
+          explanation: "HPAs start working as soon as they're created."
     - content: "What are the three values for selectPolicies?"
       choices:
         - content: "Average, Disabled, and Max"
@@ -39,10 +39,10 @@ quiz:
           explanation: "Correct."
     - content: "When should you define behavior to your HPA?"
       choices:
-        - content: "On every created HPA since the key is required."
+        - content: "On every created HPA, since the key is required."
           isCorrect: false
           explanation: "The behavior key isn't required."
-        - content: "When we want to fine-tune the HPA behavior."
+        - content: "When you want to fine-tune the HPA behavior."
           isCorrect: true
           explanation: "Correct."
         - content: "To fine-tune the deployment behavior when scaling."

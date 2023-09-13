@@ -3,11 +3,11 @@ uid: learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure
 metadata:
   title: Troubleshoot connectivity issues with virtual machines in Microsoft Azure
   description: "Troubleshoot deployment, connectivity, and authorization issues with Azure Bastion and just in time access to Virtual Machines. AZ720 AZ-720 az-720 networking"
-  ms.date: 07/19/2022
-  author: wwlpublish
-  ms.author: lola
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Troubleshoot connectivity issues with virtual machines in Microsoft Azure
 summary: Troubleshoot deployment, connectivity, and authorization issues with Azure Bastion and just in time access to Virtual Machines.
 abstract: |

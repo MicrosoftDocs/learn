@@ -22,11 +22,9 @@ This branch contains the _Space Game_ project you worked with in the previous mo
     git checkout -B models-package upstream/models-package
     ```
 
-    The format of these commands enables you to get starter code from the Microsoft repository on GitHub, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    The format of these commands allows you to get starter code from the Microsoft repository on GitHub, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
-1. As an optional step, verify that the **Models** directory no longer exists in the file explorer.
-
-    Instead, you see **Controllers**, **Views**, and other directories.
+1. As an optional step, verify that the **Models** directory no longer exists in the file explorer. Instead, you should have **Controllers**, **Views**, and other directories.
 
 ## Reference the Models package
 
@@ -69,7 +67,7 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
 ## Modify the pipeline configuration
 
-The `models-package` branch provides an initial *azure-pipelines.yml* file. Here, you modify the pipeline configuration to pull the **Tailspin.SpaceGame.Web.Models** package from Azure Artifacts.
+The `models-package` branch provides an initial *azure-pipelines.yml* file. Here, you'll modify the pipeline configuration to pull the **Tailspin.SpaceGame.Web.Models** package from Azure Artifacts.
 
 1. From Visual Studio Code, open *azure-pipelines.yml*.
 

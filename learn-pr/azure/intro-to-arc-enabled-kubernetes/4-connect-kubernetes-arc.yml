@@ -2,12 +2,12 @@
 uid: learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
 metadata:
   title: Connect Kubernetes clusters to Azure Arc
-  description: In this unit, you'll learn how to connect an Azure Arc-enabled Kubernetes cluster.
-  ms.date: 01/05/2023
+  description: Learn how to connect an Azure Arc-enabled Kubernetes cluster.
+  ms.date: 08/07/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom:
   - e2e-hybrid
   - event-tier1-build-2022
@@ -15,34 +15,3 @@ title: Connect Kubernetes clusters to Azure Arc
 durationInMinutes: 5
 content: |
   [!include[](includes/4-connect-kubernetes-arc.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "Which Azure RBAC built-in role allows you to connect a Kubernetes cluster to Azure Arc?"
-    choices:
-    - content: "Azure Arc Kubernetes Viewer"
-      isCorrect: false
-      explanation: "This role lets you view resources in a cluster/namespace, but doesn't allow you to connect a Kubernetes cluster to Azure Arc."
-    - content: "Azure Connected Machine Onboarding"
-      isCorrect: false
-      explanation: "This role lets you onboard a physical server or virtual machine to Azure Arc-enabled servers, but doesn't allow you to connect a Kubernetes cluster to Azure Arc."
-    - content: "Kubernetes Cluster - Azure Arc Onboarding"
-      isCorrect: true
-      explanation: "This role lets you connect a Kubernetes cluster to Azure Arc."
-    - content: "Azure Kubernetes Service Contributor Role"
-      isCorrect: false
-      explanation: "This role allows read and write access to Azure Kubernetes Service (AKS) clusters, but doesn't allow you to connect a Kubernetes cluster to Azure Arc."
-  - content: "Which of the following is NOT required to connect a Kubernetes cluster to Azure Arc?"
-    choices:
-    - content: "Multiple Azure subscriptions"
-      isCorrect: true
-      explanation: "You don't need more than one Azure subscription in order to connect a Kubernetes cluster to Azure Arc."
-    - content: "An existing Kubernetes cluster"
-      isCorrect: false
-      explanation: "The Kubernetes cluster must already exist before you connect it to Azure Arc."
-    - content: "Outbound connectivity from the Kubernetes cluster"
-      isCorrect: false
-      explanation: "To connect a Kubernetes cluster to Azure Arc, the cluster must be able to connect to Azure and to the Microsoft container registry."
-    - content: "Azure Command Line Interface (CLI) or Azure PowerShell"
-      isCorrect: false
-      explanation: "You need to use either Azure CLI or Azure PowerShell to connect a Kubernetes cluster to Azure Arc."

@@ -1,6 +1,7 @@
 
 
 
+
 Applications often use a combination of selection and iteration statements to establish code execution paths. In addition, user input and calculations influence the flow through an application. Creating a user interface that implements a design specification can be challenging.
 
 Suppose you're a developer working on the Contoso Pets application, an application that's used to find homes for stray or abandoned pets. Some of the development work has already been completed. For example, the application's main menu and the code used to store new pet information have been developed. However, certain information isn't always available when a pet is entered in your system. You need to develop the features that ensure a complete dataset exists for each animal in your care.

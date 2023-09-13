@@ -6,7 +6,7 @@ metadata:
   description: A discussion of the five performance factors that affect storage and how to determine which tools to use to determine your HPC workload's performance requirements.
   ms.date: 12/29/2020
   author: scjescho
-  ms.author: scjescho
+  ms.author: padmalathas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Small block sizes will reduce performance if your files are:"
+  - content: "Small block sizes reduce performance if your files are:"
     choices:
     - content: "Small"
       isCorrect: false
-      explanation: "Incorrect. Small block sizes combined with small files won't reduce performance."
+      explanation: "Incorrect. Small block sizes combined with small files don't reduce performance."
     - content: "Large"
       isCorrect: true
-      explanation: "Correct. Small block sizes combined with large files will reduce performance, because large files need to be broken down to fit the smaller block size."
+      explanation: "Correct. Small block sizes combined with large files reduce performance, because large files need to be broken down to fit the smaller block size."
   - content: "If you have a disk that supports 5,000 IOPS and your block size is 4K, your total possible throughput is:"
     choices:
     - content: "9 MBps"

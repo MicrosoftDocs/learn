@@ -186,8 +186,7 @@ You can get these values from the connection string.
         }
     }
     ```
-
-1. Save the *privatemessagesender/Program.cs* file using either the **...** icon or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. To save your changes, select <kbd>Ctrl+S</kbd>, and then select <kbd>Ctrl+Q</kbd> to close the editor.
 
 ## Send a message to the queue
 
@@ -417,7 +416,7 @@ You can get these values from the connection string.
     
     ```
 
-1. Save the file either through the **&#9776;** menu or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. To save your changes, select <kbd>Ctrl+S</kbd>, and then select <kbd>Ctrl+Q</kbd> to close the editor.
 
 ## Receive a message from the queue
 

@@ -8,9 +8,9 @@ In the retail company scenario, the various microservices must communicate with 
 
 An *event aggregator* is a middleware solution that aggregates events across the entire solution in a scalable and straightforward to manage way.
 
-Here, you will learn how the Pub/Sub feature of Azure Cache for Redis can serve as a middleware to simplify the communication between components of your application. Pub/Sub can help your application components subscribe to other’s events and publish their own events.
+Here, you learn how the Pub/Sub feature of Azure Cache for Redis can serve as a middleware to simplify the communication between components of your application. Pub/Sub can help your application components subscribe to other’s events and publish their own events.
 
-The **Pub/Sub** feature of Azure Cache for Redis routes messages between application components. Microservices can use this feature to subscribe to messages or publish messages. Azure Cache for Redis will handle the routing of messages to the appropriate destinations without each microservice knowing where each of their messages should go.
+The **Pub/Sub** feature of Azure Cache for Redis routes messages between application components. Microservices can use this feature to subscribe to messages or publish messages. Azure Cache for Redis handles the routing of messages to the appropriate destinations without each microservice knowing where each of their messages should go.
 
 This feature can significantly simplify the requirement of microservices reacting to events across the entire solution.
 
@@ -18,7 +18,7 @@ This feature can significantly simplify the requirement of microservices reactin
 
 Clients can subscribe to a topic or range of topics using a string value. In Redis nomenclature, topics are referred to as **channels**. For example, a client that wants to subscribe to the **staff.newhire** channel can use the appropriate command with the ``staff.newhire`` string value.
 
-Once the client is subscribed, all messages in the **staff.newhire** channel will be sent to that specific client.
+Once the client is subscribed, all messages in the **staff.newhire** channel are sent to that specific client.
 
 :::image type="complex" source="../media/2-subscribe.svg" alt-text="Diagram of subscribe in Azure Cache for Redis." border="false":::
 Diagram of a server application sending a message to Azure Cache for Redis and only the client subscribed to the staff.newhire channel receiving the message.
@@ -90,13 +90,13 @@ If the client wants to unsubscribe from all known subscriptions, the client can 
 
 :::code language="Redis" source="../code/2-redis.sh" range="15":::
 
-The ``UNSUBSCRIBE`` command will unsubscribe the client from all channels the client specifically subscribed to. The command will not unsubscribe the client from pattern-based subscriptions. The ``PUNSUBSCRIBE`` command is used to unsubscribe the client from pattern-based subscriptions. Invoke the ``PUNSUBSCRIBE`` command with no arguments to unsubscribe the client from all pattern-based subscriptions.
+The ``UNSUBSCRIBE`` command unsubscribes the client from all channels the client specifically subscribed to. The command doesn't unsubscribe the client from pattern-based subscriptions. The ``PUNSUBSCRIBE`` command is used to unsubscribe the client from pattern-based subscriptions. Invoke the ``PUNSUBSCRIBE`` command with no arguments to unsubscribe the client from all pattern-based subscriptions.
 
 :::code language="Redis" source="../code/2-redis.sh" range="21":::
 
 ## Publishing a message to a channel
 
-Any client can send messages by publishing the message to a channel. Azure Cache for Redis will automatically route the message to clients with matching subscriptions. For example, if a client publishes a message to the **orders.new** channel, Azure Cache for Redis will route the message to:
+Any client can send messages by publishing the message to a channel. Azure Cache for Redis automatically routes the message to clients with matching subscriptions. For example, if a client publishes a message to the **orders.new** channel, Azure Cache for Redis routes the message to:
 
 - Clients subscribed explicitly to the **orders.new** channel
 - Clients subscribed to a pattern that matches **orders.new** (Example: **orders.\***)
@@ -105,7 +105,7 @@ Any client can send messages by publishing the message to a channel. Azure Cache
 Diagram of a server application sending a message to Azure Cache for Redis on the orders.new channel and multiple clients receiving the message based on both direct and pattern-based subscriptions.
 :::image-end:::
 
-Redis includes a PUBLISH command that takes in two arguments. The first argument is the channel's name where the message will be published. The second argument is the string content of the message.
+Redis includes a PUBLISH command that takes in two arguments. The first argument is the channel's name where the message is published. The second argument is the string content of the message.
 
 Consider these two examples. The PUBLISH command is used to send a message with the string content **sad348957298s534gh** to the **orders.delete** channel. The PUBLISH command is also used to send a message with content **02a67b49-9da1-487e-8b49-d5aad3f514ae** to the **staff.newhire** channel.
 

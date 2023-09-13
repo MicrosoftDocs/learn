@@ -1,10 +1,14 @@
 Working with the Woodgrove Bank developers on getting their application's database scaffolded, this diagram illustrates what they loaded in the database:
 
-:::image type="content" source="../media/normalized-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.":::
+:::image type="complex" source="../media/normalized-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationships between users, events, merchants, and event types.":::
+   In the diagram, payment_events' event_type field is now event_type_id, with a foreign-key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign-key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.
+:::image-end:::
 
 In this exercise, you'll restructure their database to get to the following output:
 
-:::image type="content" source="../media/distributed-entity-relationship-diagram.svg" alt-text="Diagram of distributed relationships between users, events, event types, and merchants. payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign key relationship to the payment_events table.":::
+:::image type="complex" source="../media/distributed-entity-relationship-diagram.svg" alt-text="Diagram of distributed relationships between users, events, event types, and merchants.":::
+   In the diagram, payment_events has a column event_type_id, with a foreign-key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign-key relationship to the payment_events table.
+:::image-end:::
 
 ## Reset the exercise database
 
@@ -54,7 +58,7 @@ In this exercise, you'll restructure their database to get to the following outp
 
 ## Adjust the dependencies
 
-In order to get the relational database ready for distribution, some constraints need to be removed.
+In order to get the relational database ready for distribution, you need to remove some constraints.
 
 ```sql
 ALTER TABLE payment_events         
@@ -65,7 +69,7 @@ ALTER TABLE payment_events
 
 ## Distribute the non-events tables
 
-The non-events tables can be distributed or turned into reference tables. As the Woodgrove Bank developers wonder what happens if `payment_merchants` is distributed, these steps will take you down that path.
+You can distribute the non-events tables or turn them into reference tables. As the Woodgrove Bank developers wonder what happens if `payment_merchants` is distributed, these steps will take you down that path.
 
 1. Change `event_types` to a reference table with this query:
 
@@ -103,7 +107,7 @@ The non-events tables can be distributed or turned into reference tables. As the
 
 ## Update colocation settings
 
-The developers asked about updating colocation after a table is distributed, as `payment_merchants` shouldn't be colocated.
+The developers asked about updating colocation after a table is distributed, because `payment_merchants` shouldn't be colocated.
 
 1. Run the following query:
 
@@ -117,7 +121,7 @@ The developers asked about updating colocation after a table is distributed, as 
     SELECT table_name, citus_table_type, distribution_column, colocation_id FROM citus_tables;  
     ```
 
-    The users and merchants tables should have different `colocation_id` values. The output may look like this:
+    The users and merchants tables should have different `colocation_id` values. The output should look something like this:
 
     ```output
         table_name     | citus_table_type | distribution_column | colocation_id 
@@ -129,7 +133,7 @@ The developers asked about updating colocation after a table is distributed, as 
 
 ## Distribute the events table
 
-While you work through the design with the Woodgrove Bank developers, they asked why they shouldn't distribute the events on the `event_id` field.
+While you work through the design with the Woodgrove Bank developers, they ask why they shouldn't distribute the events on the `event_id` field.
 
 1. Distribute the `payment_events` table on `event_id`.
 
@@ -154,7 +158,7 @@ While you work through the design with the Woodgrove Bank developers, they asked
     payment_users     | distributed      | user_id             |             1
     ```
 
-    Observe that Azure Cosmos DB for PostgreSQL colocated `payment_events` with `payment_users` implicitly, based on datatypes of their distribution columns. The developers are starting to see that the fields don't match and that it doesn't seem like a good distribution column, as they want to join the `payment_events` and `payment_users` tables on `user_id`.
+    Observe that Azure Cosmos DB for PostgreSQL colocated `payment_events` with `payment_users` implicitly, based on datatypes of their distribution columns. The developers are starting to see that the fields don't match and that it doesn't seem like a good distribution column, because they want to join the `payment_events` and `payment_users` tables on `user_id`.
 
 ## Update the events table to distribute based on user_id
 
@@ -231,7 +235,7 @@ In a case where there are two colocated distributed tables with a foreign key re
         "payment_events_event_types_fk" FOREIGN KEY (event_type_id) REFERENCES event_types(event_type_id)
     ```
 
-    There should be two foreign keys on the `payment_events` table - one for the events and the other for the users.
+    There should be two foreign keys on the `payment_events` table; one for the events and the other for the users.
 
 ## Adding a foreign key without the distribution column
 
@@ -253,7 +257,7 @@ This foreign key is something that we'll have to sacrifice from the design when 
 
 ## Convert from a distributed table to a reference table
 
-The merchants table may not be as large as the developers suggested. Rather than having the foreign key relationship discarded, convert the merchant table to a reference table. Then, bring back the foreign key relationship from the distributed table to the reference table.
+The merchants table might not be as large as the developers suggested. Rather than having the foreign-key relationship discarded, convert the merchant table to a reference table. Then, bring back the foreign key relationship from the distributed table to the reference table.
 
 1. Convert the merchant table to a reference table with the following commands:
 
@@ -290,10 +294,10 @@ In the results from the query, the `citus_table_type` column will indicate wheth
 
 Notice that reference tables don't have distribution columns.
 
-## Clean-up
+## Clean up
 
 Once you're done in this module, clean up the resources created in order to minimize costs.
 
-1. Sign-in to the Azure portal.
+1. Sign in to the Azure portal.
 1. Navigate to the resource group created for this module.
 1. Delete the resource group.

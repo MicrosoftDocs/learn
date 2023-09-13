@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-operator-nexus.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 05/05/2023
+  author: lnyswonger
+  ms.author: lnyswonger
+  ms.topic: interactive-tutorial
+  ms.service: operator-nexus
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which resource provider delivers Software Defined Networking (SDN) and Network Function Virtualization (NFV) features for the private cloud on Operator Nexus?"
+    choices:
+    - content: "Network Cloud"
+      isCorrect: false
+      explanation: "Network Cloud is the primary Operator-facing component of Operator Nexus architecture that provides the API interface to lifecycle on-premises environments and higher-level resources like Kubernetes clusters, virtual machines, etc."
+    - content: "Managed Network Fabric"
+      isCorrect: true
+      explanation: "Managed Network Fabric delivers Software Defined Networking (SDN) and Network Function Virtualization (NFV) features for the private cloud on Operator Nexus. It models the physical network fabric with all the resources required for connectivity to and from the operator network into an Operator Nexus cluster."
+    - content: "Hybrid Container Service"
+      isCorrect: false
+      explanation: "Hybrid Container Service is a resource provider that delivers Kubernetes orchestration for the Azure Stack HCI platform."
+  - content: "What service helps you manage your Azure, on-premises, and multicloud environments?"
+    choices:
+      - content: "Azure Arc"
+        isCorrect: true
+        explanation: "Azure Arc is a service that helps you manage your Azure, on-premises, and multicloud environments. With Azure Arc, you can manage servers, Kubernetes clusters, and applications across your on-premises, multicloud, and edge environments, using a single control plane."
+      - content: "Azure Policy"
+        isCorrect: false
+        explanation: "Azure Policy is a service in Azure that enables you to create, assign, and manage policies to enforce compliance with your organizational standards and best practices. It isn't a service that helps you manage your Azure, on-premises, and multicloud environments."
+      - content: "Azure Cloud Manager"
+        isCorrect: false
+        explanation: "Azure Cloud Manager isn't a service offered by Azure."    
+  - content: "Where is the Operator Nexus on-premises cloud managed from?"
+    choices:
+    - content: "The Operator Nexus on-premises cloud is managed from the operator's premises."
+      isCorrect: false
+      explanation: "This answer is wrong because although the Operator Nexus cloud is located at the operator's place, it's controlled from Azure."
+    - content: "The Operator Nexus on-premises cloud is managed from Azure."
+      isCorrect: true
+      explanation: "The Operator Nexus infrastructure and tenants by operators from Azure, which means that the Operator Nexus on-premises cloud is managed from Azure."
+    - content: "The Operator Nexus on-premises cloud is managed from a third-party platform."
+      isCorrect: false
+      explanation: "This answer choice is incorrect because the Operator Nexus on-premises cloud is managed from Azure, not from a third-party platform." 
+  - content: "What is the function of the Network Packet Broker (NPB) in telecommunications services?"
+    choices:
+    - content: "The NPB sends out filtered traffic to the ToRs in each rack."
+      isCorrect: false
+      explanation: "This answer choice is incorrect because the NPB sends out filtered traffic to the CEs, to be routed to the probes, not to the ToRs in each rack."
+    - content: "The NPB creates dynamic packet filtering rules based on the operator's requirements."
+      isCorrect: true
+      explanation: "The Network Packet Broker (NPB) is a packet brokering solution that supports the needs of telco operators. The NPB is configured as part of the fabric configuration, and dynamic packet filtering rules are created based on operator's requirements."
+    - content: "The NPB is responsible for routing network packets to special probe applications."
+      isCorrect: false
+      explanation: "This answer choice is incorrect because the NPB is responsible for creating dynamic packet filtering rules based on the operator's requirements, not routing network packets to special probe applications."
+  - content: "What is the function of Resource Providers in Azure?"
+    choices:
+    - content: "Resource Providers help manage and configure virtual machines."
+      isCorrect: false
+      explanation: "Resource Providers are responsible for managing and provisioning resources in Azure. While Resource Providers help manage and provision virtual machines, this answer choice is too specific and doesn't capture the broader role of Resource Providers in Azure."
+    - content: "Resource Providers allow users to deploy and manage Azure resources."
+      isCorrect: true
+      explanation: "Resource Providers are responsible for managing and provisioning resources in Azure. They allow users to deploy and manage resources such as virtual machines, storage accounts, and databases."
+    - content: "Resource Providers enable secure communication between Azure resources."
+      isCorrect: false
+      explanation: "Resource Providers don't enable secure communication between Azure resources."

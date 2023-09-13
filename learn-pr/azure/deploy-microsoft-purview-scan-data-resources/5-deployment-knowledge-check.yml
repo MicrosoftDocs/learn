@@ -5,11 +5,11 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Knowledge check for deployment of a Microsoft Purview account in Azure. These questions cover basic information for Microsoft Purview accounts and how to deploy them in the Microsoft Purview governance portal."
-  ms.date: 6/21/2022
+  ms.date: 04/27/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
 durationInMinutes: 5
 ###########################################################################
 ###
@@ -39,7 +39,7 @@ quiz:
     - content: "Data Estate Insights"
       isCorrect: false
       explanation: "Microsoft Purview Data Estate Insights provide customers a summarized view of their data estate with several automatically generated reports."
-  - content: "Which of the following Microsoft Purview components is elastic, auto-scales, and always on?"
+  - content: "Which of the following Microsoft Purview components is elastic, autoscales, and always on?"
     choices:
     - content: "Data Map (Capacity Units)"
       isCorrect: true
@@ -61,3 +61,25 @@ quiz:
     - content: "Business Glossary"
       isCorrect: false
       explanation: "The glossary contains business terms that can be related to each other and mapped to data assets to provide customized business context for data."
+  - content: "At which point does Microsoft Purview begin to populate the data catalog with assets?"
+    choices:
+    - content: "After a Microsoft Purview account is created"
+      isCorrect: false
+      explanation: "Data sources need to be registered and scanned before any information is added to the data catalog."
+    - content: "After a Data Source has been registered"
+      isCorrect: false
+      explanation: "When a data source is registered, that source is added to the data map, but no assets in that source are added until the source has been scanned."
+    - content: "After a Data Source has been scanned"
+      isCorrect: true
+      explanation: "Microsoft Purview captures technical metadata information like names, file size, and schema during scanning, and adds data assets to the catalog once scanning is complete."
+  - content: "Which of the following attributes isn't automatically assigned to an asset as a result of the system-built scanning functionality?"
+    choices:
+    - content: "Technical Metadata (for example, Fully Qualified Name, Path, Schema, etc.)"
+      isCorrect: false
+      explanation: "Technical metadata is captured as part of the scanning process and is recorded for all assets. The kind of metadata recorded is dependent on the data type."
+    - content: "Glossary Terms (for example, column Sales Tax is tagged with the Sales Tax glossary term)"
+      isCorrect: true
+      explanation: "Business glossary terms define a business vocabulary for an organization to help bridge data gaps between departments. These are created by businesses and associated manually with data assets using tagging after an asset has been added to the catalog."
+    - content: "Classifications (for example, column ccnum is tagged with the Credit Card Number classification)"
+      isCorrect: false
+      explanation: "Classifications and sensitivity labels are automatically applied to data as it is scanned, to organize your data into logical categories, and identify sensitive data in your data assets."

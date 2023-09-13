@@ -1,4 +1,4 @@
-In this module, you'll learn how to use **Azure Custom Vision**. You'll upload a set of photos to associate it with a *Tracked Object*, upload them to the **Custom Vision** service, and start the training process. Then you'll use the service to detect the *Tracked Object* by capturing photos from the webcam feed.
+In this module, you'll learn how to use **Azure Custom Vision**. You'll take a set of photos of a *Tracked Object*, upload them to the **Custom Vision** service, and start the training process. Then you'll use the service to detect the *Tracked Object* by capturing photos from the webcam feed.
 
 ## Understand Azure Custom Vision
 
@@ -10,10 +10,10 @@ Learn more about [Azure Custom Vision](/azure/cognitive-services/custom-vision-s
 
 Before you can start, you need to create a custom vision project. The fastest way to create your custom project is using the web portal.
 
-Follow this [quickstart tutorial](/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier) to set up your account and project. Follow the steps up to the *Upload and tag images* section.
+Follow this [quickstart tutorial](/azure/ai-services/custom-vision-service/getting-started-build-a-classifier) to set up your account and project. Follow the steps up to the *Upload and tag images* section. You should create one tag with five images.
 
 > [!WARNING]
-> To train a model, you need to have at least two tags and five images per tag. To use this application, you should at least create one tag with five images so that the training process won't fail later.
+> To train a model, you need to have at least two tags and five images per tag. Later we will add more images via the application. However to use this application, you must at least create one tag with five images at this point so that the training process won't fail later.
 
 ## Prepare the scene
 
@@ -32,13 +32,25 @@ The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (scr
 
 You can retrieve the necessary credentials for the **ObjectDetectionManager (script)** settings from the Azure portal and the custom vision portal.
 
-## Retrieve Azure settings credentials
+### Retrieve Azure settings credentials
 
-Find and locate the custom vision resource of the **Cognitive Services** type you created in the *Preparing the scene* section of this tutorial (select custom vision resources name followed by *-Prediction*). There, select *Overview* or *Keys and Endpoint* to retrieve the necessary credentials.
+Find and locate the custom vision resource of the **Cognitive Services** type you created in the *Preparing the scene* section of this tutorial. There, select *Overview* or *Keys and Endpoint* to retrieve the necessary credentials.
 
-## Retrieve project settings credentials
+- **Azure Resource Subscription Id** : Use the **Subscription ID** from the *Overview* section
+- **Azure Resource Group Name**: Use the name of the *Resource group* from the *Overview* section
 
-In the [custom vision](https://www.customvision.ai/projects) dashboard, open the project you created for this tutorial, then select the gear icon on the top-right corner of the page to open the settings page. You will find the necessary credentials in the *Resources* section on the right-hand side.
+For **Cognitive Service Group Name**, use the custom vision resources name which is followed by *-Prediction*.
+
+- **Resource Base Prediction Endpoint**: Use the **Endpoint** from the *Keys and Endpoint* in the custom vision *-Prediction* resource.
+- **Api Prediction Key**: Use the **Key 1** from the *Keys and Endpoint* in the custom vision *-Prediction* resource.
+
+### Retrieve project settings credentials
+
+In the [custom vision](https://www.customvision.ai/projects) dashboard, open the project you created for this tutorial, then select the gear icon on the top-right corner of the page to open the settings page. You'll find the necessary credentials in the *Resources* section on the right-hand side and the *General* section on the left-hand side.
+
+- **Resource Base Endpoint** : Use the **Endpoint** from the *Resources* section. This should match the endpoint under *Keys and Endpoint* in the custom vision resource.
+- **Api Key**: Use the **Key** from the *Resources* section. This should match the key under *Keys and Endpoint* in the custom vision resource.
+- **Project id**: Use the **Project Id** from the *General* section.
 
 1. Now with the **ObjectDetectionManager (script)** set up correctly, find the **SceneController** object in your scene Hierarchy and select it.
 
@@ -52,20 +64,19 @@ In the [custom vision](https://www.customvision.ai/projects) dashboard, open the
 
 1. Run the scene and select **Set Object**. Enter the name for one of the **Tracked Objects** you created in the previous lesson. Select the **Computer Vision** button at the bottom of the **Object Card**.
 
-2. A new window will open. You will take six photos to train the model for image recognition. Select the **Camera** button and perform an AirTap see the object you like to track. Do this six times.
+2. A new window will open. You'll take six photos to train the model for image recognition. Select the **Camera** button and perform an AirTap see the object you like to track. Do this six times.
 
     > [!TIP]
     > To improve the model training try to take each image from different angles and lighting conditions.
 
-3. Once you have enough images, select the **Train** button to start the model-training process in the cloud. This will upload all images and then start the training. The process can take up to a minute or more. A message inside the menu indicates the current progress. Once it indicates the process is complete, you can stop the application.
+3. Once you have enough images, select the **Train** button to start the model-training process in the cloud. This will upload all images and then start the training. The process may take a few minutes. A message inside the menu indicates the current progress. Once it indicates the process is complete, you can stop the application.
 
     > [!TIP]
     > The **ObjectDetectionManager (script)** directly uploads taken images into the Custom Vision service. As an alternative the custom vision API accepts URLs to the images, as an exercise you can modify the **ObjectDetectionManager (script)** to upload the images to a Blob storage instead.
 
+> [!WARNING]
+> If the training fails, check your custom vision dashboard and ensure that you have at least two tags and that every tag has at least five images.
+
 ## Detect objects
 
-1. Before detecting the objects, you have to change the API-key present in  **ObjectDetectionManager (script)** in the Project Settings.
-
-2. Find and locate the custom vision resource in Azure portal. There, select *Keys and Endpoint* to retrieve the API key. Replace the old API key with the new one in the Project Settings.
-
-3. You can now put the trained model to the test. Run the application. From the *Main menu*, select **Search Object** and enter the name of the **Tracked Object** in question. The **Object Card** will appear. Next, select the **Custom Vision** button. The **ObjectDetectionManager** will start taking image captures in the background from the camera. The menu will indicate the application progress. Point the camera to the object you used to train the model. Soon, it should detect the object.
+You can now put the trained model to the test. Run the application. From the *Main menu*, select **Search Object** and enter the name of the **Tracked Object** in question. The **Object Card** will appear. Next, select the **Custom Vision** button. The **ObjectDetectionManager** will start taking image captures in the background from the camera. The menu will indicate the application progress. Point the camera to the object you used to train the model. Soon, it should detect the object.

@@ -4,13 +4,12 @@ title: Exercise - Explore Computer Vision
 metadata:
   title: Exercise - Explore Computer Vision
   description: "Exercise - Explore Computer Vision"
-  ms.date: 01/25/2023
+  ms.date: 08/22/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: artificial-intelligence
+  ms.subservice: vision
 durationInMinutes: 20
 content: |
   [!include[](includes/3-analyze-images.md)]

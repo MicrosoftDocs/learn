@@ -4,11 +4,10 @@ title: Review the solution to do versus while challenge activity
 metadata:
   title: Review the solution to do versus while challenge activity
   description: "Review the solution to do versus while challenge activity"
-  ms.date: 02/27/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/6-review-solution-differentiate-while-do-statements.md)]

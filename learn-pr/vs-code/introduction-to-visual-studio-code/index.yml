@@ -5,9 +5,10 @@ metadata:
   description: "In this module, you'll learn how to assess whether Visual Studio Code is the right source code editor for you. We'll explore how Visual Studio Code can be used in different development situations, for example, web, C++, and data science. We'll also examine Visual Studio Code's features such as the editor, debugger, and source control. Finally, we'll walk you through decision criteria you can use to choose a code editor."             
   ms.date: 10/20/2022            
   author: kjo-msft      
-  ms.author: karinjohnson          
+  ms.author: karinjohnson
+  manager: jmartens
   ms.topic: interactive-tutorial  
-  ms.prod: learning-vs-code         
+  ms.prod: vs-code
 
 title: Introduction to Visual Studio Code
 

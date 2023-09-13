@@ -4,14 +4,13 @@ metadata:
   title: Introduction to PowerShell
   description: This module introduces PowerShell, a cross-platform command-line shell and scripting language built for task automation and configuration
     management. 
-  ms.date: 03/29/2020
+  ms.date: 08/25/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Introduction to PowerShell
-summary: Learn about the basics of PowerShell. This cross-platform command-line shell and scripting language is built for task automation and configuration management. You'll learn basics like what PowerShell is, what it's used for, and how to use it.
+summary: Learn about the basics of PowerShell, a cross-platform command-line shell and scripting language that's built for task automation and configuration management. Learn what PowerShell is, what it's used for, and how to use it.
 abstract: |
   After completing this module, you'll be able to:
   - Understand what PowerShell is and what you can use it for.

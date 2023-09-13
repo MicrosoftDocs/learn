@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: A knowledge check for the Support data classification with private and hybrid clouds module.
   ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

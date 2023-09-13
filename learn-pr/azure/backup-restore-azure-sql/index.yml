@@ -3,18 +3,19 @@ uid: learn.backup-restore-azure-sql
 metadata:
   title: Back up and restore your Azure SQL database
   description: Protect the data in your Azure SQL database and recover from data loss or corruption with backup and restore.
-  ms.date: 02/23/2023
+  ms.date: 06/02/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-db-mi
+  ms.subservice: backup-restore
 title: Back up and restore your Azure SQL database
 summary: Protect the data in your Azure SQL database and recover from data loss or corruption with backup and restore.
 abstract: | 
   In this module, you will:
-  - Configure backup and retention of an Azure SQL database
-  - Restore an Azure SQL database
+  - Configure backup and retention of an Azure SQL database.
+  - Restore an Azure SQL database.
 prerequisites: | 
   - Basic knowledge of the Azure SQL Database service
   - Basic knowledge of Azure PowerShell

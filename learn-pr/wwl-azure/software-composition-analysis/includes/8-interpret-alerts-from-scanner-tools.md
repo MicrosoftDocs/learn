@@ -1,3 +1,4 @@
+
 To correctly interpret the results of scanning tools, you need to be aware of some aspects:
 
  -  **False positives** It's essential to verify the findings to be real positives in the scan results. The tooling is an automated way to scan and might be misinterpreting specific vulnerabilities. In the triaging of the finding in the scan results, you should be aware that some findings might not be correct. Such results are called `false positives`, established by human interpretation and expertise. One must not declare a result a false positive too quickly. On the other hand, scan results aren't guaranteed to be 100% accurate.

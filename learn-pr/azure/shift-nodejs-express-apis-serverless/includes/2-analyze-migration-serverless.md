@@ -1,21 +1,17 @@
-You're ready to shift your Express.js APIs to the serverless model. But first, consider why you might make these changes and what effort is required to update your app. Here are three things to consider:
+To use your current Express application and server, you must:
 
-- Configure and maintain the physical server for your Express app
-- Managing scaling for your app (up and down), as demand fluctuates
-- Manage the costs associated with deploying your server
+- Write code that includes the necessary middleware and logic to start and run the server.
+- Configure and maintain the physical server hardware and software.
+- Manage scaling your application up and down as demand fluctuates.
+- Manage the costs of deploying and running the server.
 
-Serverless architecture eases the server maintenance, scaling, and cost for you.
+Serverless architecture handles server maintenance, scaling, and cost management, and requires less middleware and other code. Overall, there's less to worry about when you build a serverless app. It's also easy to shift Express.js APIs to the serverless model without rewriting the code.
 
-Why would you make this shift? Overall there's less to think about when building a serverless app.
+To demonstrate shifting a Node.js Express API to Azure Functions, this learning module uses the [Refactor Node.js Express to Azure Functions](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless) sample project on GitHub. The client application is developed with Angular, but the same process works with Vue.js, React.js, or other frontend frameworks.
 
-## About the project
+The following screenshot shows the Angular Vacation Wishlist app with a list of vacations.
 
-You will be making use of a [starter project on GitHub](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless). The end goal is to migrate the project's API Express server to Azure Functions.
+![Screenshot of the Vacation Wish List sample application.](../media/vacation-wish-list-app.png)
 
-![Vacation Wish List sample application.](../media/vacation-wish-list-app.png)
+The sample project initially builds a TypeScript Node.js Express application that interacts with the vacation wishlist. The goal of the learning module is to shift the project APIs to a Functions app and migrate the Express server to a serverless model. The finished application and its API feature all the benefits of serverless technology.
 
-The app begins as a Node.js Express application in TypeScript that you'll shift to an Azure Functions app.
-
-The client application is developed with Angular, however you could use Vue.js, React.js, or any other frontend framework of choice.
-
-When you're done, your application and its API will feature all the benefits of serverless technology!

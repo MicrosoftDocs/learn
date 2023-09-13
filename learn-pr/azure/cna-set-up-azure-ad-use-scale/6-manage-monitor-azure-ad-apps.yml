@@ -5,8 +5,8 @@ metadata:
   title: Manage and monitor Azure AD apps
   description: Manage and monitor Azure AD apps
   ms.date: 05/19/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

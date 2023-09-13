@@ -1,0 +1,51 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.use-slurm-hpc-azure-cyclecloud.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Use Slurm for HPC on Azure CycleCloud" module.
+  ms.date: 05/17/2023
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: azure-cyclecloud
+durationInMinutes: 4
+quiz:
+  title: Knowledge Check
+  questions:
+    - content: "Which command can you use to display information on jobs, partitions, and nodes managed by Slurm?"
+      choices:
+        - content: "sstat"
+          isCorrect: false
+          explanation: Incorrect. View information about resources utilized by running jobs or job steps.
+        - content: "sview"
+          isCorrect: true
+          explanation: Correct. Sview allows you to view state information on jobs, partitions, and nodes managed by Slurm.
+        - content: "sinfo"
+          isCorrect: false
+          explanation: Incorrect. Displays information on partitions and nodes managed by Slurm.
+        - content: "sbatch"
+          isCorrect: false
+          explanation: Incorrect. Use this command to submit a job script for later execution. These scripts generally include one or more srun commands to initiate parallel tasks.
+    - content: "You have a job that has a large number of complex sequential steps with each new step depending on calculations performed in the previous step. Which type of Azure CycleCloud partition would be appropriate for this job?"
+      choices:
+        - content: "HTC partition"
+          isCorrect: false
+          explanation: Incorrect. HTC partitions are appropriate for workloads that are largely independent of one another and where similar tasks can be delegated across different cluster nodes.
+        - content: "HPC partition"
+          isCorrect: true
+          explanation: Correct. HPC partitions are appropriate for workloads that have dependencies on prior steps and where the job executes more quickly when greater resources are allocated to the job.
+    - content: "Which of the following tools do you run after changing the Slurm configuration to apply the changes to the Azure CycleCloud cluster?"
+      choices:
+        - content: "sinfo"
+          isCorrect: false
+          explanation: Incorrect. Displays information on partitions and nodes managed by Slurm.
+        - content: "cyclecloud_slurm.sh"
+          isCorrect: true
+          explanation: Correct. You use the cyclecloud_slurm.sh script to apply changes after you have modified the Slurm configuration.
+        - content: "srun"
+          isCorrect: false
+          explanation: Incorrect. Use this tool to run a job task.
+        - content: "sbatch"
+          isCorrect: false
+          explanation: Incorrect. Use this command to submit a job script for later execution. These scripts generally include one or more srun commands to initiate parallel tasks.

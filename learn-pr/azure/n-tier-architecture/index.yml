@@ -4,10 +4,9 @@ metadata:
   title: Tour the N-tier architecture style for your application
   description: Discover the benefits of a Resource Manager template to deploy an application in an N-tier architecture and review best practices for deployments of this style.
   ms.date: 02/17/2023
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Tour the N-tier architecture style for your application
 summary: Use a Resource Manager template to deploy an application styled in an N-tier architecture, identify key concepts of N-tier architectures, and review best practices for deployments of this style.
 abstract:  | 
