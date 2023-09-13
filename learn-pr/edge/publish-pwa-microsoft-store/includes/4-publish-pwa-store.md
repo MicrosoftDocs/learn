@@ -2,7 +2,7 @@ Publishing your PWA to the Microsoft Store extends its reach to millions of Wind
 
 ## Package PWA for Microsoft Store
 
-The PWABuilder website packages your PWA for the Microsoft Store. Packaging your PWA involves bundling the necessary files and metadata into a format that's recognized by the Store, enabling users to install and use your app seamlessly.
+The [PWABuilder](https://aka.ms/pwa/mslearn/data) website packages your PWA for the Microsoft Store. Packaging your PWA involves bundling the necessary files and metadata into a format that's recognized by the Store, enabling users to install and use your app seamlessly.
 
 ### Reserve app name
 
