@@ -26877,6 +26877,11 @@
       "source_path": "learn-pr/wwl-data-ai/monitor-data-drift-with-azure-machine-learning/4a-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-machine-learning-operations-solution/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-data-drift-with-azure-machine-learning/3-schedules-alerts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-machine-learning-operations-solution/",
+      "redirect_document_id": false
     }
   ]
 }
