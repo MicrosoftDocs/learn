@@ -43,9 +43,9 @@ Each algorithm produces a sigmoid function that calculates a probability value b
 
 #### Multinomial algorithms
 
-As an alternative approach is to use a multinomial algorithm, which creates a single function that returns a multi-valued output. The output is a *vector* (an array of values) that contains the *probability distribution* for all possible classes - with a probability score for each class which when totalled add up to 1.0:
+As an alternative approach is to use a multinomial algorithm, which creates a single function that returns a multi-valued output. The output is a *vector* (an array of values) that contains the *probability distribution* for all possible classes - with a probability score for each class which when totaled add up to 1.0:
 
-***f(x) =[P(y=0), P(y=1), P(y=2)] | x***
+***f(x) =[P(y=0|x), P(y=1|x), P(y=2|x)]***
 
 An example of this kind of function is a *softmax* function, which could produce an output like the following example:
 
@@ -57,7 +57,7 @@ Regardless of which type of algorithm is used, the model uses the resulting func
 
 ### Evaluating a multiclass classification model
 
-You can evaluate a multiclass classifier by calculating binay classification metrics for each individual class. Alternatively, you can calculate aggregate metrics that take all classes into account.
+You can evaluate a multiclass classifier by calculating binary classification metrics for each individual class. Alternatively, you can calculate aggregate metrics that take all classes into account.
 
 Let's assume that we've validated our multiclass classifier, and obtained the following results:
 
