@@ -4,7 +4,7 @@
 - One-to-many translation.
 - Script transliteration (converting text from its native script to an alternative script).
 
-:::image type="content" source="../media/translator-resource.png" alt-text="An Azure AI Translator resource performing language detection, one-to-many translation and transliteration.":::
+:::image type="content" source="../media/translator-resource.png" alt-text="Diagram showing an Azure AI Translator resource performing language detection, one-to-many translation and transliteration.":::
 
 ## Azure resource for Azure AI Translator
 

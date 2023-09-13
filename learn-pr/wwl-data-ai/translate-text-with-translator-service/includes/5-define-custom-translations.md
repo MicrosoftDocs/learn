@@ -9,7 +9,7 @@ To solve this problem, you can create a custom model that maps your own sets of 
 1. [Test your model](/azure/ai-services/translator/custom-translator/quickstart) and [publish your model](/azure/ai-services/translator/custom-translator/quickstart).
 1. Make translation calls to the API.
 
-:::image type="content" source="../media/custom-translator-new-small.png" alt-text="The Custom Translator portal." lightbox="../media/custom-translator-new.png":::
+:::image type="content" source="../media/custom-translator-new-small.png" alt-text="Screenshot showing the Custom Translator portal." lightbox="../media/custom-translator-new.png":::
 
 Your custom model is assigned a unique **category Id** (highlighted in the screenshot), which you can specify in **translate** calls to your Azure AI Translator resource by using the **category** parameter, causing translation to be performed by your custom model instead of the default model.
 
