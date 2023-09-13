@@ -27,7 +27,6 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning.mitigate-with-fairlearn
 - learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning.summary
 badge:
   uid: learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning.badge
