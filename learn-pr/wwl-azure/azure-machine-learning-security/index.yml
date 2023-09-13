@@ -37,7 +37,6 @@ units:
 - learn.azure.azure-machine-learning-security.introduction
 - learn.azure.azure-machine-learning-security.what-is-role-based-access-control
 - learn.azure.azure-machine-learning-security.exercise-setup-custom-roles
-- learn.azure.azure-machine-learning-security.azure-key-vault
 - learn.azure.azure-machine-learning-security.secure-your-network
 - learn.azure.azure-machine-learning-security.exercise-setup-secure-network
 - learn.azure.azure-machine-learning-security.knowledge-check
