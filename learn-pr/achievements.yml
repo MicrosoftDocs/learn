@@ -2202,3 +2202,8 @@ achievements:
   title: Explore security concepts in Azure Machine Learning
   summary: Explore and experiment with securing a machine learning environment to ensure data remains private and models are accurate.
   iconUrl: /training/achievements/15-explore-security-concepts-in-azure-machine-learning.svg
+- uid: learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning.badge
+  type: badge
+  title: Detect and mitigate unfairness in models with Azure Machine Learning
+  summary: Machine learning models can often encapsulate unintentional bias that results in unfairness. With Fairlearn and Azure Machine Learning, you can detect and mitigate unfairness in your models.
+  iconUrl: /training/achievements/detect-and-mitigate-unfairness-in-models-with-azure-machine-learning.svg
