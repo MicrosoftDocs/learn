@@ -26907,6 +26907,11 @@
       "source_path": "learn-pr/wwl-data-ai/monitor-models-with-azure-machine-learning/4-monitor-models.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-machine-learning-operations-solution/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-models-with-azure-machine-learning/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-machine-learning-operations-solution/",
+      "redirect_document_id": false
     }
   ]
 }
