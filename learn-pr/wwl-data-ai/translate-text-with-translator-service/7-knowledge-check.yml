@@ -11,7 +11,7 @@ metadata:
   ms.service: azure-ai-translator
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 quiz:
   questions:
   - content: "What function of the Azure AI Translator service should you use to convert the Chinese word \"你好\" to the English word \"Hello\"?"

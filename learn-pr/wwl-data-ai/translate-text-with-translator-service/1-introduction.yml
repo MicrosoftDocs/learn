@@ -6,11 +6,11 @@ metadata:
   description: "Introduction"
   ms.date: 08/31/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure-ai-translator
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

@@ -11,6 +11,6 @@ metadata:
   ms.service: azure-ai-translator
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/2-provision-translator-resource.md)]
