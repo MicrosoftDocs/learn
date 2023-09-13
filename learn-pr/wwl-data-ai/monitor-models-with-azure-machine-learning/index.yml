@@ -27,7 +27,6 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.wwl.monitor-models-with-azure-machine-learning.knowledge-check
 - learn.wwl.monitor-models-with-azure-machine-learning.summary
 badge:
   uid: learn.wwl.monitor-models-with-azure-machine-learning.badge
