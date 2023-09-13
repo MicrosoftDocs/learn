@@ -54,7 +54,7 @@ roles:
 products:
 - vs-code
 - azure
-- azure-app-service-static
+- static-web-apps
 - github
 subjects:
 - development-tools
