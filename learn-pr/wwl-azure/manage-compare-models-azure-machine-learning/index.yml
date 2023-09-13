@@ -3,7 +3,7 @@ uid: learn.wwl.manage-compare-models-azure-machine-learning
 metadata:
   title: Create and explore the Responsible AI dashboard for a model in Azure Machine Learning
   description: "Create and explore the Responsible AI dashboard for a model in Azure Machine Learning using the Python SDK v2."
-  ms.date: 09/06/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Create a Responsible AI dashboard.
   - Explore a Responsible AI dashboard.
 prerequisites: ""
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/manage-compare-models-in-azure-machine-learning.svg
 levels:
 - beginner
 roles:

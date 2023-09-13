@@ -25,7 +25,7 @@ roles:
 products:
 - azure
 - azure-app-service
-- azure-app-service-static
+- static-web-apps
 prerequisites: |
   - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
   - [Visual Studio Code](https://code.visualstudio.com)

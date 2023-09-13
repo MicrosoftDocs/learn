@@ -36,7 +36,7 @@ products:
 - azure
 - azure-iot-central
 - azure-sphere
-- azure-app-service-static
+- static-web-apps
 - azure-virtual-machines
 units:
 - learn.student-evangelism.altair-azure-sphere-program-emulator.introduction

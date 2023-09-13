@@ -21,7 +21,7 @@ roles:
 - developer
 - student
 products:
-- azure-app-service-static
+- static-web-apps
 subjects:
 - development-tools
 modules:
