@@ -8,8 +8,8 @@ However, as a student, you're trying to understand how you can get started with 
 
 In this module, you'll learn to:
 
-    - Distinguish core concepts of cloud computing. 
-    - Understand what Azure can be used for by exploring some common scenarios. 
-    - Identify some tools and services that can help you get started with Azure.
+- Distinguish core concepts of cloud computing.
+- Understand what Azure can be used for by exploring some common scenarios.
+- Identify some tools and services that can help you get started with Azure.
 
 This module helps you understand some core concepts of cloud computing, Azure and what to use it for.

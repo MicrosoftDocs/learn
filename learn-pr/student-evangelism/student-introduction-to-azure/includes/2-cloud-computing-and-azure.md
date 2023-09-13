@@ -6,15 +6,11 @@ What comes to your mind when you hear the term cloud computing? It sounds comple
 
 Let’s try to make it less complicated by looking at it from a high level and hopefully you'll learn that it's not as complex as you thought.
 
-Cloud computing is a technology that allows you to access and use computer resources (like software, storage, and processing power) over the internet without needing to own or physically manage those resources yourself.  
-
-### The cloud
-
 Think of the cloud as a library where you can borrow books whenever you need them, without buying or storing them in your own house. In the same way, with cloud computing, you can use the computing resources you need when you need them without having to own and maintain the hardware and software yourself. It makes computing easy, flexible, and often less expensive.
 
 So, what is the cloud? In short, it’s a collection of gigantic datacenters spread out across the globe. Each datacenter consists of thousands of connected servers that can run any kind of operating system and app you can think of.
 
-:::image type="icon" source="../media/azure-logo.png" border="false":::
+Cloud computing is a technology that allows you to access and use computer resources (like software, storage, and processing power) over the internet without needing to own or physically manage those resources yourself.  
 
 ## Azure
 
@@ -32,7 +28,7 @@ There are many benefits to using the cloud, and Azure in particular. For example
 
 In short, Azure offers multiple benefits that make it easy for you to invent with purpose.
 
-## Scenario: Build a college project
+### Scenario: Build a college project
 
 Now that you have gained a deeper understanding of cloud computing and Microsoft Azure, lets explore the ways in which Azure can be utilized in an academic setting.
 
@@ -48,8 +44,6 @@ Imagine you're developing a college project. With Azure, you have all the resour
 
 With its impressive computing power, expansive storage space, versatile development tools, and advanced machine learning capabilities, Azure empowers you to create innovative projects with purpose and impact.
 
-:::image type="icon" source="../media/microsoft-learn.png" border="false":::
-
 ## Microsoft Learn
 
 Microsoft Learn, aka.ms/learn, is a learning platform that’s free to use and consists of a wide variety of topics presented in training modules. Each module guides you through concepts, and in many cases exercises that allow you to practice the concepts you were taught. Microsoft Learn is an extensive library of interactive courses and hands-on learning experiences, empowering you to master new technical skills at your own pace.
@@ -64,11 +58,9 @@ You can also keep track of your progress via your profile. There you can find in
 
 ### Scenario: Learn Python
 
-:::image type="content" source="../media/python-module.png" alt-text="Screenshot of a module in the Python for beginners learning path.":::
+To be an app developer, you typically need skills in at least one programming language. Python is a great choice of language to learn as it can be used for many purposes including data science, app development, IoT and more.
 
-To be an app developer, you typically need skills in at least one programming language. Python is a great choice of language to learn as it can be used for many purposes including data science, app development, IoT and more. In this path, you’ll be taken through the fundamentals of the language as well as more advanced topics like working with Python in a Notebook, managing many files and dependencies as part of a project.
-
-[Python for beginners - Training | Microsoft Learn](../../../paths/beginner-python/index.yml)
+In the path [Python for beginners](../../../paths/beginner-python/index.yml) you’ll be taken through the fundamentals of the language as well as more advanced topics like working with Python in a Notebook, managing many files and dependencies as part of a project.
 
 ## Check your knowledge
 
