@@ -1,8 +1,3 @@
-
-
-
-
-
 The `Array` class contains methods that you can use to manipulate the content, arrangement, and size of an array. In this exercise, you'll write code that performs various operations on an array of pallet identifiers. Your code could be the start of an application to track and optimize the usage of pallets for the company.
 
 ### Prepare your coding environment
