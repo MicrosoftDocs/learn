@@ -3,7 +3,7 @@ uid: learn.languages.csharp-basic-operations
 metadata:
   title: Perform basic operations on numbers in C#
   description: "Learn the operators and techniques used to perform basic math operations on numeric data."
-  ms.date: 09/11/2023
+  ms.date: 09/13/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
