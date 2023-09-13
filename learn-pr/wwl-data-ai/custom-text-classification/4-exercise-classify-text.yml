@@ -4,11 +4,11 @@ title: Exercise - Classify text
 metadata:
   title: Exercise - Classify text
   description: "Exercise - Classify text"
-  ms.date: 09/01/2022
+  ms.date: 08/31/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.service: azure-ai-language
 azureSandbox: false
 labModal: false
 durationInMinutes: 35
