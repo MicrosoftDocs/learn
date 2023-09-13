@@ -28,6 +28,5 @@ subjects:
 - machine-learning
 - data-analytics
 units:
-- learn.wwl.monitor-data-drift-with-azure-machine-learning.summary
 badge:
   uid: learn.wwl.monitor-data-drift-with-azure-machine-learning.badge
