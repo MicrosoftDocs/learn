@@ -11,13 +11,13 @@ metadata:
 title: Translate text with the Azure AI Translator service
 summary: The Azure AI Translator service enables you to create intelligent apps and services that can translate text between languages.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Provision an Azure AI Translator resource
   - Understand language detection, translation, and transliteration
   - Specify translation options
   - Define custom translations
 prerequisites: |
-  Before starting this module, you will need
+  Before starting this module, you'll need
   - Familiarity with Microsoft Azure and the Azure portal.
   - Experience programming with C# or Python.
 iconUrl: /training/achievements/translate-text-with-the-translator-service.svg
