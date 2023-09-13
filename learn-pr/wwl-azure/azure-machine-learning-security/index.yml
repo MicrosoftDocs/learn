@@ -36,7 +36,6 @@ subjects:
 units:
 - learn.azure.azure-machine-learning-security.what-is-role-based-access-control
 - learn.azure.azure-machine-learning-security.secure-your-network
-- learn.azure.azure-machine-learning-security.knowledge-check
 - learn.azure.azure-machine-learning-security.summary
 badge:
   uid: learn.azure.azure-machine-learning-security.badge
