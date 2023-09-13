@@ -26777,6 +26777,11 @@
       "source_path": "learn-pr/wwl-data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/3-analyze-model-fairness-with-fairlearn.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/2-consider-model-fairness.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/",
+      "redirect_document_id": false
     }
   ]
 }
