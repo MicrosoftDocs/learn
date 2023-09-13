@@ -1,3 +1,7 @@
+This module covers best practices for cybersecurity capabilities and controls, which are essential to reduce the risk of attackers succeeding.
+
+## Learning objectives
+
 In this module, you learn how to:
 
 - Use Microsoft Cybersecurity Reference Architecture (MCRA) to design more secure solutions.

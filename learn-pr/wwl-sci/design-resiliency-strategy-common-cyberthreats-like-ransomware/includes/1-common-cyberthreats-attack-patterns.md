@@ -1,3 +1,11 @@
+This module covers common cyberthreats, business resiliency, secure backup and restore configurations, and security update management.
+
+Imagine that you work for a medium-sized company that has recently experienced a ransomware attack. The attack has caused significant damage to the company's systems and data, and the company is struggling to recover. As a cybersecurity architect, you have been tasked with designing a comprehensive backup and restore plan that will help the company recover from future attacks. In this module, you will learn how to design secure backup and restore configurations using Azure Backup, as well as how to integrate with Configuration Manager for on-premises resources. You will also learn how to manage security updates using Update Management and how to support business resiliency in the face of cyberthreats.
+
+The module is divided into four sections: Understanding Cyberthreats, Designing Secure Backup and Restore Configurations, Managing Security Updates, and Supporting Business Resiliency.
+
+## Learning objectives
+
 In this module, you learn how to:
 
 *   Understand common cyberthreats like ransomware.
