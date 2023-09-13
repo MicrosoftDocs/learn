@@ -26752,6 +26752,11 @@
       "source_path": "learn-pr/wwl-azure/azure-machine-learning-security/7-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-machine-learning-workspace-resources-assets/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-machine-learning-security/5-secure-your-network.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-machine-learning-workspace-resources-assets/",
+      "redirect_document_id": false
     }
   ]
 }
