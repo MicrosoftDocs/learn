@@ -91,7 +91,7 @@ Now that there's a page handler to handle the form submission, let's add the for
     - Each form field (`<input>` and `<select>` elements) and each `<label>` is bound to the corresponding `NewPizza` property using the `asp-for` attribute.
     - The `asp-validation-for` attribute is used to display any validation errors for each form field.
     - The `@Html.DisplayNameFor` method is used to display the display name for the `IsGlutenFree` property. This is a Razor helper method that's used to display the display name for a property. Doing the label this way ensures that the checkbox is selected when the user clicks the label.
-    - A submit button is added to the form to post the form data to the server. At runtime, when the user selects the submit button, the browser sends the form as an HTTP POST request to the server.
+    - A submit button labeled `Create` is added to the form to post the form data to the server. At runtime, when the user selects this **Create** button, the browser sends the form as an HTTP POST request to the server.
 
 1. At the bottom of the page, add the following code:
 
