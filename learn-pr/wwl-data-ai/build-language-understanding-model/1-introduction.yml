@@ -4,11 +4,13 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 07/20/2023
+  ms.date: 08/31/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure-ai-language
+  ms.subservice: azure-ai-clu
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

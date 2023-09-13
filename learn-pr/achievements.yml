@@ -2192,3 +2192,28 @@ achievements:
   title: Tune hyperparameters with Azure Machine Learning
   summary: Choosing optimal hyperparameter values for model training can be difficult, and usually involved a great deal of trial and error. With Azure Machine Learning, you can leverage cloud-scale experiments to tune hyperparameters.
   iconUrl: /training/achievements/tune-hyperparameters-with-azure-machine-learning.svg
+- uid: learn.azure.azure-machine-learning-security.badge
+  type: badge
+  title: Explore security concepts in Azure Machine Learning
+  summary: Explore and experiment with securing a machine learning environment to ensure data remains private and models are accurate.
+  iconUrl: /training/achievements/15-explore-security-concepts-in-azure-machine-learning.svg
+- uid: learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning.badge
+  type: badge
+  title: Detect and mitigate unfairness in models with Azure Machine Learning
+  summary: Machine learning models can often encapsulate unintentional bias that results in unfairness. With Fairlearn and Azure Machine Learning, you can detect and mitigate unfairness in your models.
+  iconUrl: /training/achievements/detect-and-mitigate-unfairness-in-models-with-azure-machine-learning.svg
+- uid: learn.wwl.explain-machine-learning-models-with-azure-machine-learning.badge
+  type: badge
+  title: Explain machine learning models with Azure Machine Learning
+  summary: Many decisions made by organizations and automated systems today are based on predictions made by machine learning models. It's increasingly important to be able to understand the factors that influence the predictions models make.
+  iconUrl: /training/achievements/explain-machine-learning-models-with-azure-machine-learning.svg
+- uid: learn.wwl.monitor-data-drift-with-azure-machine-learning.badge
+  type: badge
+  title: Monitor data drift with Azure Machine Learning
+  summary: Changing trends in data over time can reduce the accuracy of the predictions made by a model. Monitoring for this data drift is an important way to ensure your model continues to predict accurately.
+  iconUrl: /training/achievements/monitor-data-drift-with-azure-machine-learning.svg
+- uid: learn.wwl.monitor-models-with-azure-machine-learning.badge
+  type: badge
+  title: Monitor models with Azure Machine Learning
+  summary: After a machine learning model has been deployed into production, it's important to understand how it is being used by capturing and viewing telemetry.
+  iconUrl: /training/achievements/monitor-models-with-azure-machine-learning.svg
