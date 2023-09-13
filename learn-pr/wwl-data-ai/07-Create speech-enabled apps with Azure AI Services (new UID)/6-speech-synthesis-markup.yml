@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-speech-enabled-apps.speech-synthesis-markup
+title: Use Speech Synthesis Markup Language
+metadata:
+  title: Use Speech Synthesis Markup Language
+  description: "Use Speech Synthesis Markup Language"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-speech
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-speech-synthesis-markup.md)]

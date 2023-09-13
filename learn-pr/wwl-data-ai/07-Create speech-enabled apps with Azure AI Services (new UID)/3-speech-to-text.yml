@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-speech-enabled-apps.speech-to-text
+title: Use the Azure AI Speech to text API
+metadata:
+  title: Use the Azure AI Speech to text API
+  description: "Use the Azure AI Speech to text API"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-speech
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-speech-to-text.md)]
