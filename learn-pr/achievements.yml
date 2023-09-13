@@ -2217,3 +2217,8 @@ achievements:
   title: Monitor data drift with Azure Machine Learning
   summary: Changing trends in data over time can reduce the accuracy of the predictions made by a model. Monitoring for this data drift is an important way to ensure your model continues to predict accurately.
   iconUrl: /training/achievements/monitor-data-drift-with-azure-machine-learning.svg
+- uid: learn.wwl.monitor-models-with-azure-machine-learning.badge
+  type: badge
+  title: Monitor models with Azure Machine Learning
+  summary: After a machine learning model has been deployed into production, it's important to understand how it is being used by capturing and viewing telemetry.
+  iconUrl: /training/achievements/monitor-models-with-azure-machine-learning.svg
