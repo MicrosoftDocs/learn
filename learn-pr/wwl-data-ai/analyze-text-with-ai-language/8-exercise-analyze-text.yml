@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-text-ai-language.exercise
+title: Exercise - Analyze text
+metadata:
+  title: Exercise - Analyze text
+  description: "Exercise - Analyze text"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-language
+azureSandbox: false
+labId: 99990
+labModal: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/8-exercise-analyze-text.md)]
