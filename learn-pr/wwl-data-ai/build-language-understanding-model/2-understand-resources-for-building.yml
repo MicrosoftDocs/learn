@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-language-understanding-model.understand-resources-for-building
-title: Understand resources for building an Azure AI Language understanding model
+title: Understand resources for building a conversational language understanding model
 metadata:
-  title: Understand resources for building an Azure AI Language understanding model
-  description: "Understand resources for building an Azure AI Language understanding model"
-  ms.date: 07/20/2023
+  title: Understand resources for building a conversational language understanding model
+  description: "Understand resources for building a conversational language understanding model"
+  ms.date: 08/31/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure-ai-language
+  ms.subservice: azure-ai-clu
 azureSandbox: false
 labModal: false
 durationInMinutes: 9

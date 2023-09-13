@@ -1,4 +1,4 @@
-In this exercise, you'll have the opportunity to practice evaluating a website's PWA readiness using PWABuilder. 
+In this exercise, you'll have the opportunity to practice evaluating a website's PWA readiness using [PWABuilder](https://aka.ms/pwa/mslearn/data). 
 
 ## Evaluate a website's PWA readiness
 
