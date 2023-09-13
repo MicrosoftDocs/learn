@@ -26732,6 +26732,11 @@
       "source_path": "learn-pr/wwl-azure/azure-machine-learning-security/4-azure-key-vault.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-machine-learning-workspace-resources-assets/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-machine-learning-security/3-exercise-setup-custom-roles.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-machine-learning-workspace-resources-assets/",
+      "redirect_document_id": false
     }
   ]
 }
