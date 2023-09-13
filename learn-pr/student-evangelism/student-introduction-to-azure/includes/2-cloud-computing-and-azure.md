@@ -44,24 +44,6 @@ Imagine you're developing a college project. With Azure, you have all the resour
 
 With its impressive computing power, expansive storage space, versatile development tools, and advanced machine learning capabilities, Azure empowers you to create innovative projects with purpose and impact.
 
-## Microsoft Learn
-
-Microsoft Learn, aka.ms/learn, is a learning platform that’s free to use and consists of a wide variety of topics presented in training modules. Each module guides you through concepts, and in many cases exercises that allow you to practice the concepts you were taught. Microsoft Learn is an extensive library of interactive courses and hands-on learning experiences, empowering you to master new technical skills at your own pace.
-
-### Gamification
-
-To make your learning fun, Microsoft Learn has a gamification system, meaning that you get points for each completed module or completed path, which are groups of training modules on a specific topic.  
-
-You can also keep track of your progress via your profile. There you can find information on your module learning progress, achievements, cloud skill challenges you can participate in and much more.
-
-:::image type="content" source="../media/track-progress.png" alt-text="Screenshot showing a Microsoft Learn profile with progress tracked.":::
-
-### Scenario: Learn Python
-
-To be an app developer, you typically need skills in at least one programming language. Python is a great choice of language to learn as it can be used for many purposes including data science, app development, IoT and more.
-
-In the path [Python for beginners](../../../paths/beginner-python/index.yml) you’ll be taken through the fundamentals of the language as well as more advanced topics like working with Python in a Notebook, managing many files and dependencies as part of a project.
-
 ## Check your knowledge
 
 Choose the best response for each question. Then select **Check your answers**.
