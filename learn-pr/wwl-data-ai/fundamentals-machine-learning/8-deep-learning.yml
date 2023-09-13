@@ -9,6 +9,6 @@ metadata:
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.service: machine-learning
-durationInMinutes: 10
+durationInMinutes: 12
 content: |
   [!include[](includes/8-deep-learning.md)]

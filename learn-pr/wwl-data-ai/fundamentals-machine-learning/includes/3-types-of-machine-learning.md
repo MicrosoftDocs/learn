@@ -35,11 +35,11 @@ In all of these examples, the model predicts a binary *true*/*false* or *positiv
 - The species of a penguin (*Adelie*, *Gentoo*, or *Chinstrap*) based on its physical measurements.
 - The genre of a movie (*comedy*, *horror*, *romance*, *adventure*, or *science fiction*) based on its cast, director, and budget.
 
-In most scenarios that involve a know set of multiple classes, multiclass classification is used to predict mutually exclusive labels. For example, a penguin can't be both a *Gentoo* and an *Adelie*. However, there are also some algorithms that you can use to train *multilabel* classification models, in which there may be more than one valid label for a single observation. For example, a movie could potentially be categorized as both *science fiction* and *comedy*.
+In most scenarios that involve a known set of multiple classes, multiclass classification is used to predict mutually exclusive labels. For example, a penguin can't be both a *Gentoo* and an *Adelie*. However, there are also some algorithms that you can use to train *multilabel* classification models, in which there may be more than one valid label for a single observation. For example, a movie could potentially be categorized as both *science fiction* and *comedy*.
 
 ## Unsupervised machine learning
 
-*Unsupervised* machine learning involves training models using data that consists only of *feature* values, without any known labels. Unsupervised machine learning algorithms determine relationships between the features of the observations in the training data.
+*Unsupervised* machine learning involves training models using data that consists only of *feature* values without any known labels. Unsupervised machine learning algorithms determine relationships between the features of the observations in the training data.
 
 ### Clustering
 
@@ -50,4 +50,4 @@ The most common form of unsupervised machine learning is *clustering*. A cluster
 
 In some ways, clustering is similar to multiclass classification; in that it categorizes observations into discrete groups. The difference is that when using classification, you already know the classes to which the observations in the training data belong; so the algorithm works by determining the relationship between the features and the known classification label. In clustering, there's no previously known cluster label and the algorithm groups the data observations based purely on similarity of features.
 
-In some cases, clustering is used to determine the set of classes that exist before training a classification model. For example, you might use clustering to segment your customers into groups, and then analyze those groups to identify and categorize different classes of customer (*high value, low volume*, *frequent small purchaser*, and so on). You could then use your categorizations to label the observations in your clustering results and use the data to train a classification model that predicts to which customer category a new customer might belong.
+In some cases, clustering is used to determine the set of classes that exist before training a classification model. For example, you might use clustering to segment your customers into groups, and then analyze those groups to identify and categorize different classes of customer (*high value - low volume*, *frequent small purchaser*, and so on). You could then use your categorizations to label the observations in your clustering results and use the labeled data to train a classification model that predicts to which customer category a new customer might belong.

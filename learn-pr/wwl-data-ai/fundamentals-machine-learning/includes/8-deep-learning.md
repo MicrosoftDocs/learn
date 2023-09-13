@@ -42,12 +42,12 @@ The process for inferencing a predicted penguin class using this network is:
 
 ### How does a neural network learn?
 
-The *weights* in a neural network are central to how it calculates predicted values for labels. During the training process, the model *learns* the weights that will result in the most accurate predictions. Let's explore the training process in a little more detail to understand how this learning takes place.
+The weights in a neural network are central to how it calculates predicted values for labels. During the training process, the model *learns* the weights that will result in the most accurate predictions. Let's explore the training process in a little more detail to understand how this learning takes place.
 
 ![A diagram of a neural network being trained, evaluated, and optimized.](../media/neural-network-training.png)
 
 1. The training and validation datasets are defined, and the training features are fed into the input layer.
-1. The neurons in each layer of the network apply their weights (which are initially assigned randomly) to feed the data through the network.
+1. The neurons in each layer of the network apply their weights (which are initially assigned randomly) and feed the data through the network.
 1. The output layer produces a vector containing the calculated values for ***&#375;***. For example, an output for a penguin class prediction might be ***[0.3. 0.1. 0.6]***.
 1. A *loss function* is used to compare the predicted ***&#375;*** values to the known ***y*** values and aggregate the difference (which is known as the *loss*). For example, if the known class for the case that returned the output in the previous step is *Chinstrap*, then the ***y*** value should be ***[0.0, 0.0, 1.0]***. The absolute difference between this and the ***&#375;*** vector is ***[0.3, 0.1, 0.4]***. In reality, the loss function calculates the aggregate variance for multiple cases and summarizes it as a single *loss* value.
 1. Since the entire network is essentially one large nested function, an optimization function can use differential calculus to evaluate the influence of each weight in the network on the loss, and determine how they could be adjusted (up or down) to reduce the amount of overall loss. The specific optimization technique can vary, but usually involves a *gradient descent* approach in which each weight is increased or decreased to minimize the loss.

@@ -9,6 +9,6 @@ metadata:
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.service: machine-learning
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/9-azure-machine-learning.md)]

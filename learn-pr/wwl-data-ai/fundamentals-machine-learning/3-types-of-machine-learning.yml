@@ -9,6 +9,6 @@ metadata:
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.service: machine-learning
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/3-types-of-machine-learning.md)]

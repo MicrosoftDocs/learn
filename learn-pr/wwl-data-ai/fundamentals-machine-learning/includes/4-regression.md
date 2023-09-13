@@ -54,11 +54,11 @@ Now we're ready to apply an algorithm to our training data and fit it to a funct
 
 ![A diagram of the scatter plot with a regression line added.](../media/regression-line.png)
 
-The line is a visual representation of the function in which the slope of the line describes how to calculate the value of ***y*** for a given value of ***x***. The line intercepts the ***x*** axis at 50, so when ***x*** is 50, ***y*** is 0. As you can see from the axis markers in the plot, the line slopes so that for every increase of 5 along the ***x*** axis results in an increase of 5 up the ***y*** axis; so when ***x*** is 55, ***y*** is 5; when ***x*** is 60, ***y*** is 10, and so on. To calculate a value of ***y*** for a given value of ***x***, the function simply subtracts 50; in other words, the function can be expressed like this:
+The line is a visual representation of the function in which the slope of the line describes how to calculate the value of ***y*** for a given value of ***x***. The line intercepts the ***x*** axis at 50, so when ***x*** is 50, ***y*** is 0. As you can see from the axis markers in the plot, the line slopes so that every increase of 5 along the ***x*** axis results in an increase of 5 up the ***y*** axis; so when ***x*** is 55, ***y*** is 5; when ***x*** is 60, ***y*** is 10, and so on. To calculate a value of ***y*** for a given value of ***x***, the function simply subtracts 50; in other words, the function can be expressed like this:
 
 ***f*(x) = x-50**
 
-You can use this function to predict the number of ice creams sold on a day with any given temperature. For example, suppose the weather forecast tells us that tomorrow it will be 77 degrees. We can apply our model to calculate *(77-50)* and predict that we'll sell 27 ice creams tomorrow.
+You can use this function to predict the number of ice creams sold on a day with any given temperature. For example, suppose the weather forecast tells us that tomorrow it will be 77 degrees. We can apply our model to calculate *77-50* and predict that we'll sell 27 ice creams tomorrow.
 
 But just how accurate is our model?
 
