@@ -28,7 +28,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.explain-machine-learning-models-with-azure-machine-learning.introduction
-- learn.wwl.explain-machine-learning-models-with-azure-machine-learning.feature-importance
 - learn.wwl.explain-machine-learning-models-with-azure-machine-learning.using-explainers
 - learn.wwl.explain-machine-learning-models-with-azure-machine-learning.visualizing-explanations
 - learn.wwl.explain-machine-learning-models-with-azure-machine-learning.knowledge-check
