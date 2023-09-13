@@ -33,7 +33,6 @@ roles:
 products:
 - azure
 - azure-app-service
-- azure-app-service-web
 - azure-database-mysql
 - azure-pipelines
 subjects:

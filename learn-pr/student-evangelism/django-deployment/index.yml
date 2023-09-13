@@ -33,7 +33,7 @@ roles:
 - student
 - developer
 products:
-- azure-app-service-web
+- azure-app-service
 - vs-code
 subjects:
 - data-engineering
