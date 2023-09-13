@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: |
+  learn.github-copilot-with-javascript
+metadata:
+  title: |
+    Using GitHub Copilot with JavaScript
+  description: "Use GitHub Copilot with Visual Studio Code to make changes and updates to a JavaScript application."
+  ms.date: 8/23/2023
+  author: abrilurena
+  ms.author: abrilu
+  ms.topic: interactive-tutorial
+  ms.prod: github
+title: |
+  Using GitHub Copilot with JavaScript
+summary: "Use GitHub Copilot, an AI pair programmer that offers autocomplete-style suggestions as you code, to work with JavaScript"
+abstract: |
+  By the end of this module, you'll be able to:
+    - Enable the GitHub Copilot extension in Visual Studio Code.
+    - Craft prompts that can generate useful suggestions from GitHub Copilot.
+    - Use GitHub Copilot to improve a JavaScript project.
+prerequisites: |
+  - Basic understanding of JavaScript, like variables and conditionals
+  - Ability to use Git and GitHub for version control
+  - Access to the GitHub Copilot service
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
+products:
+  - github
+subjects:
+  - devops
+  - development-tools
+units:
+- learn.github-copilot-with-javascript.introduction
+- learn.github-copilot-with-javascript.what-is-github-copilot
+- learn.github-copilot-with-javascript.exercise-setup
+- learn.github-copilot-with-javascript.use-copilot-with-javascript
+- learn.github-copilot-with-javascript.exercise-portfolio
+- learn.github-copilot-with-javascript.knowledge-check
+- learn.github-copilot-with-javascript.summary
+
+badge:
+  uid: |
+    learn.github-copilot-with-javascript.badge
