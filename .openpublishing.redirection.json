@@ -1761,6 +1761,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/contributor/contribute-docs-browser/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/contribute-docs-browser/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributor/contribute-docs-browser/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/contribute-docs-browser/1-introduction",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/6-summary.md",
       "redirect_url": "/training/modules/protect-monitor-tuning-migrated-database",
       "redirect_document_id": false
