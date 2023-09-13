@@ -27,7 +27,6 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.wwl.explain-machine-learning-models-with-azure-machine-learning.using-explainers
 - learn.wwl.explain-machine-learning-models-with-azure-machine-learning.visualizing-explanations
 badge:
   uid: learn.wwl.explain-machine-learning-models-with-azure-machine-learning.badge
