@@ -1,4 +1,3 @@
-
 ## Task 1: Review Azure AD
 
 In this task, we'll review Azure Active Directory licensing and tenants.

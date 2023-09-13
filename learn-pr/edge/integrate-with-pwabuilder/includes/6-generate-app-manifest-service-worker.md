@@ -1,4 +1,4 @@
-In this exercise, you'll practice generating an app manifest and service worker for a demo website using PWABuilder. Follow the steps below:
+In this exercise, you'll practice generating an app manifest and service worker for a demo website using [PWABuilder](https://aka.ms/pwa/mslearn/data). Follow the steps below:
 
 ## Generate app manifest
 

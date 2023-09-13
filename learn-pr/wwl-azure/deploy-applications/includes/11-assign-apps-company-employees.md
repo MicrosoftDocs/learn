@@ -29,7 +29,6 @@ The following table lists the various options for assigning apps to users and de
 1. In the **Manage** section of the menu, select **Properties**.
 1. Scroll down to **Properties** and select **Assignments**.
 1. Select **Add Group** to open the **Add group** pane that is related to the app.
-1. Select Add Group to open the Add group pane that is related to the app.
     - Available for enrolled devices: Assign the app to groups of users who can install the app from the Company Portal app or website.
     - Available with or without enrollment: Assign this app to groups of users whose devices aren't enrolled with Intune. Users must be assigned an Intune license, see [Intune Licenses](/mem/intune/fundamentals/licenses).
     - Required: The app is installed on devices in the selected groups. Some platforms may have other prompts for the end user to acknowledge before app installation begins.

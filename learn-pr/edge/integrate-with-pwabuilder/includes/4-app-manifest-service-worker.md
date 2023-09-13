@@ -1,4 +1,4 @@
-After you analyze your project, PWABuilder provides options to generate the app manifest and service worker files if the app doesn't have them already. As a review, the app manifest is a JSON file that provides information about a web application. The service worker is a JavaScript file that is a virtual proxy between the browser and the network. It's very powerful and can do things like managing network requests, enabling offline usage, and handling push notifications.
+After you analyze your project, [PWABuilder](https://aka.ms/pwa/mslearn/data) provides options to generate the app manifest and service worker files if the app doesn't have them already. As a review, the app manifest is a JSON file that provides information about a web application. The service worker is a JavaScript file that is a virtual proxy between the browser and the network. It's very powerful and can do things like managing network requests, enabling offline usage, and handling push notifications.
 
 ## Generate app manifest and service worker files
 

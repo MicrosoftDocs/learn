@@ -1,5 +1,3 @@
-
-
 In this unit, we explore the potential of putting business users at the center of AI efforts.
 
 ## AI creates most value when business users participate
