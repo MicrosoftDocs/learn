@@ -1,9 +1,7 @@
 ### YamlMime:Module
-uid: |
-  learn.github-copilot-with-javascript
+uid: learn.github-copilot-with-javascript
 metadata:
-  title: |
-    Using GitHub Copilot with JavaScript
+  title: Using GitHub Copilot with JavaScript
   description: "Use GitHub Copilot with Visual Studio Code to make changes and updates to a JavaScript application."
   ms.date: 8/23/2023
   author: abrilurena
