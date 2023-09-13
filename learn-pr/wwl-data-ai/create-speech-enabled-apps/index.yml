@@ -2,7 +2,7 @@
 uid: learn.wwl.create-speech-enabled-apps
 metadata:
   title: Create speech-enabled apps with Azure AI services
-  description: "Create speech-enabled apps with Azure AI services"
+  description: "Create speech-enabled apps with Azure AI services."
   ms.date: 08/31/2023
   author: wwlpublish
   ms.author: berryivor
@@ -21,7 +21,7 @@ prerequisites: |
   Before starting this module, you should:
   - Be familiar with Azure services and the Azure portal
   - Have experience programming with C# or Python
-iconUrl: /training/achievements/create-speech-enabled-apps.svg
+iconUrl: /training/achievements/transcribe-speech-input-text.svg
 levels:
 - intermediate
 roles:
