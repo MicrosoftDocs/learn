@@ -3,7 +3,7 @@ uid: learn.student-introduction-to-azure
 metadata:
   title: |
     Introduction to Azure for students
-  description: "Learn about cloud computing and Azure, and explore some common scenarios for using Azure, GitHub, and Visual Studio Code." 
+  description: "Learn about cloud computing and explore some common scenarios for using Azure, GitHub, and Visual Studio Code." 
   ms.date: 9/11/2023  
   author: v-regandowner 
   ms.author: chnoring
@@ -11,34 +11,12 @@ metadata:
   ms.custom: team=nextgen
 title: |
   Introduction to Azure for students
-###########################################################################
-###
-### Summary
-###
-### Length:
-###   - Write 2 sentences.
-###   - Total length should be 20-25 words; up to 35 is acceptable.
-###   - To keep it brief, avoid teaching, omit motivation, and remove "learn", "in this module", and title words.
-###
-### Sentence 1:
-###   Goal: Describe how the module will achieve the 'evaluate' task.
-###   Pattern: "Characterize the types of (problem) that (product) can (solve)".
-###   Example 1: "Characterize the types of (business processes) that (Logic Apps) can (automate)."
-###   Example 2: "Determine the types of (software projects) for which (GitHub) is a (good development platform)."
-###
-### Sentence 2:
-###   Goal: List key features of the product covered here. Omit less-important parts or group low-level parts into one higher-level element.
-###   Pattern: "Describe the (list of covered features) that (perform the key product use-case)."
-###   Example 1: "Describe the function of (connectors, triggers, and actions) and show how you (combine them to create an app)."
-###   Example 2: "Survey GitHub (notifications, branches, commits, and pull requests) that help you (collaborate, build, and deploy software)."
-###
-### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
-###
-summary: ""
+summary: "In this module, you'll learn about cloud computing and how Microsoft Azure and other helpful tools and services can help you solve common problems as a student."
 abstract: |
   By the end of this module, you'll be able to:
     - Distinguish core concepts of cloud computing. 
     - Understand what Azure can be used for by exploring some common scenarios. 
+    - Identify some tools and services that can help you get started with Azure.
 prerequisites: |
   - None
 iconUrl: /learn/achievements/generic-badge.svg
