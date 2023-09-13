@@ -11,7 +11,7 @@ By first establishing the policy and then assigning users, your enterprise owner
 Follow these steps to enforce a policy to manage the use of GitHub Copilot for Business:
 
 1. In the enterprise sidebar, select **Policies**.
-1. Under **Policies**, sekect Copilot.
+1. Under **Policies**, select Copilot.
 1. Under **Manage organization access to GitHub Copilot**, configure the access for your GitHub Copilot subscription.
 
 ### Enabling access to GitHub Copilot for all current and future users in your organization
