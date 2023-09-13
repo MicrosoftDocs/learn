@@ -6,7 +6,7 @@ Most importantly, Azure Machine Learning helps data scientists increase their ef
 
 To use Azure Machine Learning, you first create a *workspace* resource in your Azure subscription. You can then use this workspace to manage data, code, models, and other artifacts related to your machine learning workloads.
 
-After you have created an Azure Machine Learning workspace, you can develop solutions with the Azure machine learning service either with developer tools or the Azure Machine Learning studio web portal.
+After you have created an Azure Machine Learning workspace, you can develop solutions with the Azure Machine Learning service either with developer tools or the Azure Machine Learning studio web portal.
 
 ## Azure Machine Learning studio 
 
