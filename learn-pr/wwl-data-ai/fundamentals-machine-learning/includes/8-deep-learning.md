@@ -30,7 +30,7 @@ The label we're trying to predict (***y***) is the species of the penguin, and t
 - Gentoo
 - Chinstrap
 
-This is an example of a classification problem, in which the machine learning model must predict the most probable class to which an observation belongs. A classification model accomplishes this by predicting a label that consists of the probability for each class. In other words, y is a vector of three probability values; one for each of the possible classes: ***[P(y=0)|x, P(y=1|x), P(y=2|x)]***.
+This is an example of a classification problem, in which the machine learning model must predict the most probable class to which an observation belongs. A classification model accomplishes this by predicting a label that consists of the probability for each class. In other words, y is a vector of three probability values; one for each of the possible classes: ***[P(y=0|x), P(y=1|x), P(y=2|x)]***.
 
 The process for inferencing a predicted penguin class using this network is:
 

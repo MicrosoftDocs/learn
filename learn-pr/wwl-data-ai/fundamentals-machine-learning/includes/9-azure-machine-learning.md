@@ -19,7 +19,7 @@ Azure Machine Learning  provides the following features and capabilities to supp
 
 ## Provisioning Azure Machine Learning resources
 
-The primary resource required for Azure Machine Learning is an *Azure Machine Learning workspace*, which you can provision in an Azure subscription. Other supporting resources, including storage accounts, container instances, virtual machines, and others are created automatically as needed.
+The primary resource required for Azure Machine Learning is an *Azure Machine Learning workspace*, which you can provision in an Azure subscription. Other supporting resources, including storage accounts, container registries, virtual machines, and others are created automatically as needed.
 
 To create an Azure Machine Learning workspace, you can use the Azure portal, as shown here:
 
