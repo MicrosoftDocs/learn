@@ -54,17 +54,6 @@ More details:
   - [GitHub](https://github.com/kovan-testnet/proposal/?azure-portal=true)
   - [Website](https://kovan-testnet.github.io/website/?azure-portal=true)
 
-### Rinkeby
-
-[Rinkeby](https://www.rinkeby.io/?azure-portal=true) is a PoA testnet started by the Ethereum team in April 2017. It's named after a metro station in Stockholm.
-
-More details:
-- Supported client: [Geth](https://geth.ethereum.org/?azure-portal=true)
-- Block time: 15 seconds
-- Rinkeby-specific links:
-  - [GitHub](https://github.com/ethereum/EIPs/issues/225/?azure-portal=true)
-  - [Website](https://www.rinkeby.io/?azure-portal=true)
-
 ### Goerli
 
 The PoA cross-client testnet [Goerli](https://goerli.net/?azure-portal=true) was named after a Berlin subway station. This testnet aims to be widely usable across various clients. It's robust enough to guarantee consistent availability. It began with the Goerli Initiative in 2018.
