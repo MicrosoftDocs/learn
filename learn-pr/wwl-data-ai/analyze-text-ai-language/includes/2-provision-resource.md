@@ -7,7 +7,7 @@ Azure AI Language is designed to help you extract information from text. It prov
 - *Named entity recognition* - detecting references to entities, including people, locations, time periods, organizations, and more.
 - *Entity linking* - identifying specific entities by providing reference links to Wikipedia articles.
 
-    :::image type="content" source="../media/text-analytics-resource.png" alt-text="An Azure AI Language resource performing language detection, key phrase extraction, sentiment analysis, named entity recognition, and entity linking.":::
+    :::image type="content" source="../media/text-analytics-resource.png" alt-text="Diagram showing an Azure AI Language resource performing language detection, key phrase extraction, sentiment analysis, named entity recognition, and entity linking.":::
 
 ## Azure resources for text analysis
 
