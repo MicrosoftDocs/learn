@@ -26,7 +26,7 @@ Console.WriteLine("Enter a string:");
 do
 {
     readResult = Console.ReadLine();
-} while (readResult != null) 
+} while (readResult != null);
 ```
 
 The Boolean expression evaluated by the `while` statement can be used to help validate user input. For example, if a prompt asks the user to enter a string that includes at least three characters, the following expression could be used:
