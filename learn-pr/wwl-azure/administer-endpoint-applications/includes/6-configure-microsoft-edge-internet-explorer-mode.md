@@ -14,7 +14,7 @@ To overcome the hurdle of supporting legacy web applications, Microsoft Edge int
 Only those sites that you specifically configure (via policy) will use IE mode, all other sites will be rendered as modern web sites. When a site loads in IE mode, the IE logo indicator displays on the left side of navigation bar. Alternatively, IE Mode can be configured to open with a standalone Internet Explorer 11 window. However, most users prefer when sites open directly within Microsoft Edge in IE mode.
 
 > [!NOTE]
-> Internet Explorer provided a feature called Enterprise Mode. This enabled Internet Explorer to runin a compatiblity mode for web apps that were designed for older versions of IE.
+> Internet Explorer provided a feature called Enterprise Mode. This enabled Internet Explorer to run in a compatibility mode for web apps that were designed for older versions of IE.
 
 ### IE mode supports the following Internet Explorer functionality
 - All document modes and enterprise modes
