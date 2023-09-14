@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Familiarity with Microsoft Learn documentation at the beginner level.
   - Awareness of contributions to open-source projects at the beginner level.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

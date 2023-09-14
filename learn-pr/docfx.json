@@ -149,8 +149,21 @@
                 ],
                 "dest": "modules"
             },
-             {
+            {
                 "src": "commercial-marketplace",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "contributors",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
