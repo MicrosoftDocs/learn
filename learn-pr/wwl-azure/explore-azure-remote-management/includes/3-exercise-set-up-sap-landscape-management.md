@@ -33,7 +33,7 @@ By default, the Service Principal doesn't have permissions to access your Azure 
      - **Label**: Choose a name for the connector instance
      - **User Name**: Service Principal Application ID
      - **Password**: Service Principal key/password
-     - **URL**: Keep default <https://management.azure.com/>
+     - **URL**: Keep default ```<https://management.azure.com/>```
      - **Monitoring Interval (Seconds)**: Should be at least 300
      - **Subscription ID**: Azure subscription ID
      - **Azure Active Directory Tenant ID**: ID of the Active Directory tenant
