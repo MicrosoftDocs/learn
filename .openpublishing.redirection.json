@@ -26527,6 +26527,17 @@
       "source_path": "learn-pr/wwl-data-ai/work-with-data-in-aml/6-working-with-data.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/make-data-available-azure-machine-learning/",
       "redirect_document_id": false
+    },
+
+    {
+      "source_path": "learn-pr/wwl/get-started-data-science-fabric/includes/3-explore-prepare-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/3-fabric-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-science-fabric/includes/4-train-deploy-model.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/4-mlflow",
+      "redirect_document_id": false
     }
   ]
 }
