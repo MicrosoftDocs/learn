@@ -24,7 +24,7 @@ roles:
 - student
 - developer
 products:
-- azure-app-service-static
+- static-web-apps
 subjects:
 - data-analytics
 units:

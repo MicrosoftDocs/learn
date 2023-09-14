@@ -1,5 +1,3 @@
-
-
 Now that you've learned about the basics of an AI-centric organization, it's important to understand the current maturity of your organization to determine where to start the transformation.
 
 For this purpose, you can leverage a **maturity assessment of AI customer adoption**. This four-tiered assessment is a tool to help organizations take AI to the next level.

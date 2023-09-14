@@ -13,7 +13,7 @@ As you see in the video, thanks to modern authentication, the client communicate
 
 The server validates the security token through its *trust relationship* with the identity provider. By using the security token and the information that's contained within it, the user or application accesses the required resources on the server. In this scenario, the token and the information it contains is stored and managed by the identity provider. The centralized identity provider is supplying the authentication service.
 
-Microsoft Azure Active Directory is an example of a cloud-based identity provider.  Other examples include Twitter, Google, Amazon, LinkedIn, and GitHub.
+Microsoft Entra ID is an example of a cloud-based identity provider.  Other examples include Google, Amazon, LinkedIn, and GitHub.
 
 ### Single sign-on
 

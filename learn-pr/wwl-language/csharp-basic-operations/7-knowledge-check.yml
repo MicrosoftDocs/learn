@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/01/2023
+  ms.date: 09/13/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -14,10 +14,10 @@ quiz:
   questions:
   - content: "Which of the following lines of code will fail to output the text `Windows 11`?"
     choices:
-    - content: "`Console.WriteLine(\"Windows \" + 7 + 4)`"
+    - content: "`Console.WriteLine(\"Windows \" + 7 + 4);`"
       isCorrect: true
       explanation: "Correct!"
-    - content: "`Console.WriteLine(\"Windows \" + 11)`"
+    - content: "`Console.WriteLine(\"Windows \" + 11);`"
       isCorrect: false
       explanation: "Incorrect. This line correctly concatenates 11 to the string"
     - content: "`Console.Write(\"Windows \" + 1 + 1);`"
