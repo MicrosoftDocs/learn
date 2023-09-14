@@ -2,13 +2,11 @@
 uid: learn.iot.introduction-to-azure-digital-twins.what-is-azure-digital-twins
 title: What is Azure Digital Twins?
 metadata:
-  unitType: learning-content
   title: What is Azure Digital Twins?
   description: An overview of Azure Digital Twins.
   ms.date: 06/22/2023
   author: baanders
   ms.author: baanders
-  ms.topic: training-unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-digital-twins.md)]

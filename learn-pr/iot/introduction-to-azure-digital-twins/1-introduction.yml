@@ -2,13 +2,11 @@
 uid: learn.iot.introduction-to-azure-digital-twins.introduction
 title: Introduction
 metadata:
-  unitType: introduction
   title: Introduction
   description: Learn about the scenario and main goal of this module.
   ms.date: 06/22/2023
   author: baanders
   ms.author: baanders
-  ms.topic: training-unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
