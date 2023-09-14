@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-data-science-fabric.fabric-concepts
-title: Explore data science in Microsoft Fabric
+title: Explore and process data with Microsoft Fabric
 metadata:
-  title: Explore data science in Microsoft Fabric
-  description: "Explore data science in Microsoft Fabric"
+  title: Explore and process data with Microsoft Fabric
+  description: "Explore and process data with Microsoft Fabric"
   ms.date: 06/07/2023
   author: wwlpublish
   ms.author: madiepev
@@ -13,6 +13,6 @@ metadata:
     - build-2023
     - build-2023-dataai
     - build-2023-fabric  
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
-  [!include[](includes/3-fabric-concepts.md)]
+  [!include[](includes/3-explore-prepare-data.md)]

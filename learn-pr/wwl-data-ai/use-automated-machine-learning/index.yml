@@ -2,12 +2,12 @@
 uid: learn.wwl.use-automated-machine-learning
 metadata:
   title: Use Automated Machine Learning in Azure Machine Learning
-  description: "Use Automated Machine Learning in Azure Machine Learning"
-  ms.date: 05/15/2023
+  description: "Learn the basics of machine learning using Azure Machine Learning's Automated Machine Learning."
+  ms.date: 09/14/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: machine-learning 
+  ms.service: machine-learning
 title: Use Automated Machine Learning in Azure Machine Learning
 summary: Training a machine learning model is an iterative process that requires time and compute resources. Automated machine learning can help make it easier.
 abstract: |

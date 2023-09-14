@@ -26912,6 +26912,26 @@
       "source_path": "learn-pr/wwl-data-ai/monitor-models-with-azure-machine-learning/5-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-machine-learning-operations-solution/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-science-fabric/includes/3-fabric-concepts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/3-explore-prepare-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-science-fabric/includes/4-mlflow.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/4-train-deploy-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-science-fabric/3-fabric-concepts.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/3-explore-prepare-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-science-fabric/4-mlflow.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/4-train-deploy-model",
+      "redirect_document_id": false
     }
   ]
 }
