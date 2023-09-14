@@ -19,9 +19,6 @@ Determining what information should be communicated depends on when in the endpo
 
 **Post enrollment phase**<br/> Communications targeting the organization's groups and users that have enrolled in Endpoint Manager. These should provide additional resources that might be helpful to the user, and collect feedback about their experience during and after enrollment.
 
-> [!TIP]
-> If you're rolling out Intune, you may find the [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) helpful. You can use it as-is or modify for your organization.
-
 ## Communication delivery methods
 
 There are several delivery methods you can use to communicate Endpoint Manager rollout information to your targeted organizational groups and users. The following list shows some examples and the phase with which you can use the method:
