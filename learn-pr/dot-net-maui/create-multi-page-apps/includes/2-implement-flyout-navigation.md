@@ -96,7 +96,7 @@ The flyout header is the content that optionally appears at the top of the flyou
 <Shell ...>
     <Shell.FlyoutHeader>
         <Grid>
-            <Image Source="header-image.png">
+            <Image Source="header-image.png" />
         </Grid>
     </Shell.FlyoutHeader>
 </Shell>
@@ -108,7 +108,7 @@ The flyout footer is the content that optionally appears at the bottom of the fl
 <Shell ...>
     <Shell.FlyoutFooter>
         <Grid>
-            <Image Source="footer-image.png">
+            <Image Source="footer-image.png" />
         </Grid>
     </Shell.FlyoutFooter>
 </Shell>
