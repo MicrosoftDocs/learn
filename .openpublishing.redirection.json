@@ -2196,6 +2196,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/contributor/contribute-docs-browser/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/contribute-to-docs-browser/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributor/contribute-docs-browser/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/contribute-to-docs-browser/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributor/contribute-docs-browser/2-what-is-docs-contributor.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/contribute-to-docs-browser/2-what-is-docs-contributor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributor/contribute-docs-browser/3-learn-contribution-fundamentals.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/contribute-to-docs-browser/3-learn-contribution-fundamentals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributor/contribute-docs-browser/4-edit-article-browser.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/contribute-to-docs-browser/4-edit-article-browser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributor/contribute-docs-browser/5-exercise-edit-article.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/contribute-to-docs-browser/5-exercise-edit-article",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributor/contribute-docs-browser/6-pull-request-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/contribute-to-docs-browser/6-pull-request-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributor/contribute-docs-browser/7-exercise-pull-request-sign-off.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/contribute-to-docs-browser/7-exercise-pull-request-sign-off",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributor/contribute-docs-browser/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/contribute-to-docs-browser/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributor/contribute-docs-browser/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/contribute-to-docs-browser/9-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/language/use-boolean-types/index.md",
       "redirect_url": "/training/modules/python-boolean-types",
       "redirect_document_id": false
