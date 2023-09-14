@@ -149,7 +149,7 @@
                 ],
                 "dest": "modules"
             },
-             {
+            {
                 "src": "commercial-marketplace",
                 "files": [
                     "**/*.yml",
@@ -163,7 +163,7 @@
                 "dest": "modules"
             },
             {
-                "src": "contributor",
+                "src": "contributors",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
