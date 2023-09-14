@@ -2,7 +2,7 @@
 uid: learn-wwl.perform-post-migration-tasks-azure-sql
 metadata:
   title: Perform post-migration tasks on Azure SQL
-  description: "Discover the tools and features available to migrate SQL workloads from on-premises to Azure Virtual Machines (VMs), including the Azure SQL Migration extension for Azure Data Studio and and Data Migration Assistant."
+  description: "Learn post-migration tasks and the tools available to configure automation, high availability and disaster recovery, and monitoring."
   ms.date: 09/14/2023
   author: wwlpublish
   ms.author: jupadrao
@@ -11,7 +11,7 @@ metadata:
 title: Perform post-migration tasks on Azure SQL
 summary: You'll explore different features and tools to help you maintain Azure SQL environments.
 abstract: |
-  At the end of this module, you will be able to:
+  At the end of this module, you'll be able to:
   *   Implement compliance controls for sensitive data.
   *   Monitor database performance in Azure SQL.
   *   Configure high availability and disaster recovery in Azure SQL.
