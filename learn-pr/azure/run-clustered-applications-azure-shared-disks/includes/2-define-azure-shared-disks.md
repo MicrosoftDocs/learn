@@ -17,12 +17,14 @@ An Azure shared disk is created as a *managed disk*. A managed disk is a virtual
 
 Azure shared disks are available on the following disk types: 
 
-- Premium SSDs (P15 and greater). Premium SSDs are backed by solid-state drives (SSDs). They deliver high-performance, low-latency disk support for VMs that are running I/O-intensive workloads.
 - Ultra Disks. These disks deliver high throughput, high I/O operations per second (IOPS), and consistent low latency disk storage for Azure infrastructure as a service (IaaS) VMs. By using Ultra Disks, you can dynamically change a disk's performance without restarting your VMs. Ultra Disks have the fastest performance on Azure along with low submillisecond latencies. They're scalable to 64 tebibytes (TiB).
+- Premium SSD v2 offers higher performance than Premium SSD while also generally being less costly. You can individually tweak the performance of Premium SSD v2 at any time, allowing your workloads to be more cost efficient.
+- Premium SSD (P15 and greater). Premium SSDs are backed by solid-state drives (SSDs). They deliver high-performance, low-latency disk support for VMs that are running I/O-intensive workloads.
+- Standard SSDs are optimized for workloads that need consistent performance at lower IOPS levels than Premium SSD or Premium SSD v2.
 
-For Premium SSDs, the disk size defines the number of maximum shares, which can't be more than 10. For each disk, a *maxShares* value represents the maximum number of nodes that can simultaneously share the disk.
+For Premium SSD and Standard SSD, the disk size defines the number of maximum shares, which can't be more than 10. For each disk, a *maxShares* value represents the maximum number of nodes that can simultaneously share the disk.
 
-Ultra Disks don't have size restrictions. The maximum value for the *maxShares* setting is 5.
+Ultra Disks and Premium SSD v2 don't have size restrictions. The maximum value for the *maxShares* setting is 5.
 
 > [!NOTE]
 > You can share Azure shared disks only as data disks and not as OS disks.

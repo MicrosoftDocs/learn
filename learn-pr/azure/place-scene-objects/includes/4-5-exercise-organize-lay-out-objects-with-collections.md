@@ -1,4 +1,4 @@
-The Mixed Reality Toolkit provides a set of tools and components to accelerate your Windows Mixed Reality app development. Grid Object Collection is one such component. Here are the steps to use Grid Object Collection to organize a set of game objects:
+The Mixed Reality Toolkit provides a set of tools and components to accelerate your Windows Mixed Reality app development. Object Bar is one such component. Here are the steps to use Object Bar to organize a set of game objects:
 
 1. In the **Hierarchy** window, right-click on the **RoverExplorer** object, and select **Create Empty** to add an empty object as a child of the **RoverExplorer** object. Name the object **RoverParts**, and configure the **Transform** component as follows:
 
@@ -24,17 +24,22 @@ The Mixed Reality Toolkit provides a set of tools and components to accelerate y
 
     :::image type="content" source="../media/name-clean-up.png" alt-text="Screenshot that shows how to clean up the duplicated names." lightbox="../media/name-clean-up.png":::
 
-1. In **Hierarchy**, select the **RoverParts** object. Then, in the **Inspector** window, select **Add Component**, and search for and select **GridObjectCollection**. This selection adds the **GridObjectCollection** component to the **RoverParts** object.
+1. In **Hierarchy**, select the **RoverParts** object. Then, in the **Inspector** window, select **Add Component**, and search for and select **ObjectBar**. This selection adds the **ObjectBar** component to the **RoverParts** object.
 
-    :::image type="content" source="../media/grid-object-collection-progress.png" alt-text="Screenshot that shows the RoverParts object with Add Component Grid Object Collection in progress." lightbox="../media/grid-object-collection-progress.png":::
+    :::image type="content" source="../media/object-bar-progress.png" alt-text="Screenshot that shows the RoverParts object with Add Component Object Bar in progress." lightbox="../media/object-bar-progress.png":::
 
-1. Configure the **GridObjectCollection** component values as follows:
+1. Next set the number of Object Bar Objects to 5 and drag in each of the child parts. Notice that they are automatically clumped on top of each other.
 
-    * **Sort Type**: Alphabetic
-    * **Layout**: Horizontal
-    * **Cell Width**: 0.25
-    * **Distance from parent**: 0.38
+    :::image type="content" source="../media/set-object-bar-parts.png" alt-text="Screenshot that shows the RoverParts added as Object Bar Objects." lightbox="../media/set-object-bar-parts.png":::
 
-    :::image type="content" source="../media/grid-object-collection-configure.png" alt-text="Screenshot that shows Unity Hub, with New button highlighted." lightbox="../media/grid-object-collection-configure.png":::
+1. Configure the **ObjectBar** component values as follows. The other fields can be left with their default values:
 
-    Then select **Update Collection** to update the position of the **RoverParts** child objects.
+    * **Object Bar Flow Direction**: Horizontal
+    * **Spacing Between X**: 0.25
+    * **Spacing Between Y**: 0
+    
+    You can also set the **Transform** of **RoverParts** to view it at a different angle. For instance:
+
+    * **Rotation**: Y = 0
+
+    :::image type="content" source="../media/object-bar-configure.png" alt-text="Screenshot that shows configuration of the Object Bar properties." lightbox="../media/object-bar-configure.png":::

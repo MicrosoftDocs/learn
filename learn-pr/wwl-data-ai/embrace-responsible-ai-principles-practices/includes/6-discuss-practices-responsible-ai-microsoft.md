@@ -1,5 +1,3 @@
-
-
 It can be challenging to design and implement an effective AI governance system. In this unit, we take Microsoft as the example and explain how Microsoft ensures responsible AI is followed across the company. Based on this use case, consider how you could apply these ideas in your own organization.
 
 Our governance structure uses a hub-and-spoke model to provide the accountability and authority to drive initiatives while also enabling responsible AI policies to be implemented at scale. That is, it combines the centralized and decentralized approaches discussed in the last unit.

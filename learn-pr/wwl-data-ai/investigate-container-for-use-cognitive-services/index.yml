@@ -5,7 +5,7 @@ metadata:
   description: "Deploy Azure AI services in containers"
   ms.date: 07/21/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
 title: Deploy Azure AI services in containers

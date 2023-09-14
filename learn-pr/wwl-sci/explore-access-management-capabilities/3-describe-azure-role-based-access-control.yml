@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-azure-role-based-access-control-rbac
-title: Describe the benefits of Azure AD roles and role-based access control
+title: Describe Microsoft Entra roles and role-based access control (RBAC)
 metadata:
-  title: Describe the benefits of Azure AD roles and role-based access control
-  description: "Describe the benefits of Azure AD roles and role-based access control"
-  ms.date: 02/07/2023
+  title: Describe Microsoft Entra roles and role-based access control (RBAC)
+  description: "Describe Microsoft Entra roles and role-based access control (RBAC)"
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial

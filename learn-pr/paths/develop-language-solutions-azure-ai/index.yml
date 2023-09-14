@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.develop-language-solutions-azure-ai
+metadata:
+  title: Develop natural language processing solutions with Azure AI Services
+  description: Develop natural language processing solutions with Azure AI Services
+  ms.date: 09/14/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-language
+title: Develop natural language processing solutions with Azure AI Services
+prerequisites: |
+  Before starting this learning path, you should already have:
+  *   Familiarity with Azure and the Azure portal.
+  *   Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
+summary: |
+  Natural language processing (NLP) solutions use language models to interpret the semantic meaning of written or spoken language. You can use the Language Understanding service to build language models for your applications.
+iconUrl: /training/achievements/create-language-solution-azure-cognitive-services.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- ai-services
+subjects:
+- natural-language-processing
+modules:
+- learn.wwl.build-language-understanding-model
+- learn.wwl.translate-text-with-translator-service
+- learn.wwl.transcribe-speech-input-text
+trophy:
+  uid: learn.wwl.develop-language-solutions-azure-ai.trophy

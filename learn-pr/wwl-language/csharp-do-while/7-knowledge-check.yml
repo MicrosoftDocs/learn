@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/17/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -12,17 +12,17 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A developer needs to iterate through an array of items to find one that matches a certain criteria.  Which is the best iteration statement for this purpose?"
+  - content: "A developer needs to iterate through an array of items.  The number of items in the array is unknown.  The code inside the iteration code block examines each item sequentially to select an item that matches specified criteria.  The index number of the selected array element is not important.  The selected item is referenced multiple times within the code block.  Which type of iteration statement is best suited for this scenario?"
     choices:
     - content: "`foreach`"
       isCorrect: true
-      explanation: "Correct! It's possible to perform this operation using any of these iteration statements, however the `foreach` is the best suited for cases like this process sequence."
+      explanation: "Correct! It's possible to use any of these iteration types for the conditions described, but a `foreach` is best suited for this scenario.  The `foreach` is easy to implement when the number of array elements is unknown.  The `foreach` is a good choice when the index number of the selected array element isn't important.  The `foreach` may run faster when the selected item is used muliple times within the code block."
     - content: "`for`"
       isCorrect: false
-      explanation: "Incorrect. It's possible to use the `for` statement, but the `foreach` statement was created for working with sequences."
+      explanation: "Incorrect. It's possible to use the `for` statement, but it isn't the best choice for this scenario."
     - content: "`while`"
       isCorrect: false
-      explanation: "Incorrect. It's possible to use the `while` statement, but the `foreach` statement was created for working with sequences."
+      explanation: "Incorrect. It's possible to use the `while` statement, but it isn't the best choice for this scenario."
   - content: "A developer needs to capture a list of items from the user.  The user will enter the keyboard combination `ctrl + Esc` to exit.  Which is the best iteration statement for this purpose?"
     choices:
     - content: "foreach"
