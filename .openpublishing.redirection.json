@@ -26924,23 +26924,23 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl/get-started-data-science-fabric/includes/3-explore-prepare-data.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/3-fabric-concepts",
+      "source_path": "learn-pr/wwl/get-started-data-science-fabric/includes/3-fabric-concepts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/3-explore-prepare-data",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl/get-started-data-science-fabric/includes/4-train-deploy-model.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/4-mlflow",
+      "source_path": "learn-pr/wwl/get-started-data-science-fabric/includes/4-mlflow.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/4-train-deploy-model",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl/get-started-data-science-fabric/includes/3-explore-prepare-data.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/3-fabric-concepts",
+      "source_path": "learn-pr/wwl/get-started-data-science-fabric/includes/3-fabric-concepts.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/3-explore-prepare-data",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl/get-started-data-science-fabric/includes/4-train-deploy-model.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/4-mlflow",
+      "source_path": "learn-pr/wwl/get-started-data-science-fabric/includes/4-mlflow.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/4-train-deploy-model",
       "redirect_document_id": false
     }
   ]
