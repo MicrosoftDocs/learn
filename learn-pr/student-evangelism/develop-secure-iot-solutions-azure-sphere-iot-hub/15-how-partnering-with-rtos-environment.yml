@@ -8,8 +8,8 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
   ms.custom: team=nextgen
+  ms.service: iot-hub
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/15-how-partnering-with-rtos-environment.md)]
