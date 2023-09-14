@@ -1,4 +1,4 @@
-In this exercise, you will use a dataset of historical bicycle rental details to train a model. The model predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features.
+In this exercise, use a dataset of historical bicycle rental details to train a model. The model predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features.
 
 > [!NOTE]
 > To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
