@@ -13,7 +13,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Which of the following is an example of GitHub?"
+  - content: "Which of the following is an example of a way to use GitHub?"
     choices:
     - content: "A group of students collaborating on a project, sharing and managing repositories, and tracking changes and issues."
       isCorrect: true
