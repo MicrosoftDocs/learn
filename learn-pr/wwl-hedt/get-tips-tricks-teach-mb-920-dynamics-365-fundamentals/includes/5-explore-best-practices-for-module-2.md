@@ -27,7 +27,3 @@ Module 2 Tips and Tricks
 Module 2 Demos
 
 - No demos for this module
-
-Module 2 Labs
- 
-- [Create a free text invoice](https://github.com/MicrosoftLearning/MB-920T00A-Microsoft-Dynamics-365-Fundamentals-Finance-and-Operations-Apps/blob/master/Instructions/Labs/LAB%5BMB920%5D_M02_Lab2_Create_a_free_text_invoice.md)
