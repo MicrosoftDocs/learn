@@ -9,6 +9,6 @@ metadata:
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.service: azure
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/3-baselines-for-azure.md)]
