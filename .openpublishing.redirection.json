@@ -26992,6 +26992,36 @@
       "source_path": "learn-pr/wwl/get-started-data-science-fabric/4-mlflow.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-data-science-fabric/4-train-deploy-model",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/2-describe-cloud-security-posture-management.md",
+      "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/4-describe-cloud-security-posture-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/3-describe-defender-cloud.md",
+      "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/2-describe-defender-cloud",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/4-describe-enhanced-security-defender-cloud.md",
+      "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/5a-describe-enhanced-security-defender-cloud",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/5-baselines-for-azure.md",
+      "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/3-baselines-for-azure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/6-knowledge-check.md",
+      "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/7-knowledge-check ",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/7-summary-resources.md",
+      "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/8-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
