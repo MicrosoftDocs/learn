@@ -12,14 +12,16 @@ title: Perform post-migration tasks on Azure SQL
 summary: You'll explore different features and tools to help you maintain Azure SQL environments.
 abstract: |
   At the end of this module, you will be able to:
-  *   Understand the role of Azure Database Administrator as it fits in with other data platform roles.
-  *   Describe the key differences between the SQL Server-based database options in Azure.
-  *   Describe other features for Azure SQL platforms available.
+  *   Implement compliance controls for sensitive data.
+  *   Monitor database performance in Azure SQL.
+  *   Configure high availability and disaster recovery in Azure SQL.
+  *   Automate database tasks for scalability.
 prerequisites: |
   *   Ability to navigate the Azure the portal.
   *   Understanding of the traditional Database Administration role.
   *   Experience with T-SQL programming language at a basic level.
-iconUrl: /training/achievements/1-perform-post-migration-tasks-azure-sql.svg
+  
+iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
 levels:
 - intermediate
 roles:

@@ -16,43 +16,43 @@ quiz:
     choices:
     - content: "To prevent database users from connecting directly to the database"
       isCorrect: false
-      explanation: "That's incorrect. Dynamic Data Masking doesn't aim to prevent database users from connecting directly to the database."
+      explanation: "Incorrect. Dynamic Data Masking doesn't aim to prevent database users from connecting directly to the database."
     - content: "To limit exposure of sensitive data, preventing users who shouldn't have access to the data from viewing it"
       isCorrect: true
-      explanation: "That's correct. The purpose of dynamic data masking is to limit exposure of sensitive data, preventing users who shouldn't have access to the data from viewing it."
+      explanation: "Correct. The purpose of dynamic data masking is to limit exposure of sensitive data, preventing users who shouldn't have access to the data from viewing it."
     - content: "To change the data in the database"
       isCorrect: false
-      explanation: "That's incorrect. With Dynamic Data Masking, the data in the database isn't changed."
+      explanation: "Incorrect. With Dynamic Data Masking, the data in the database isn't changed."
   - content: "What is the difference between server-level firewall rules and database-level firewall rules in Azure SQL Database?"
     choices:
     - content: "Server-level firewall rules apply to all databases within the same server."
       isCorrect: true
-      explanation: "That's correct. Server-level firewall rules apply to all databases within the same server."
+      explanation: "Correct. Server-level firewall rules apply to all databases within the same server."
     - content: "Database-level firewall rules apply to all databases within the same server."
       isCorrect: false
-      explanation: "That's incorrect. Database-level firewall rules apply only to the database for which they were defined."
-    - content: "There is no difference between server-level and database-level firewall rules."
+      explanation: "Incorrect. Database-level firewall rules apply only to the database for which they were defined."
+    - content: "There's no difference between server-level and database-level firewall rules."
       isCorrect: false
-      explanation: "That's incorrect. Server-level firewall rules apply to all databases within the same server, while Database-level firewall rules apply only to the database for which they were defined."
+      explanation: "Incorrect. Server-level firewall rules apply to all databases within the same server, while Database-level firewall rules apply only to the database for which they were defined."
   - content: "Can you perform read and write operations on a secondary database in Azure SQL Database using geo-replication?"
     choices:
     - content: "Yes"
       isCorrect: false
-      explanation: "That's incorrect. You can only perform read operations on a secondary database."
+      explanation: "Incorrect. You can only perform read operations on a secondary database."
     - content: "No"
       isCorrect: true
-      explanation: "That's correct. You can only perform read operations on a secondary database."
+      explanation: "Correct. You can only perform read operations on a secondary database."
     - content: "Only if the primary database is offline"
       isCorrect: false
-      explanation: "That's incorrect. Even if the primary database is offline, you cannot perform write operations on a secondary database."
+      explanation: "Incorrect. Even if the primary database is offline, you can't perform write operations on a secondary database."
   - content: "What happens to client connections during a failover in Azure SQL Managed Instance?"
     choices:
-    - content: "They are automatically redirected to the new primary"
+    - content: "They're automatically redirected to the new primary"
       isCorrect: true
-      explanation: "That's correct. During a failover, client connections that are using the read-write listener are automatically redirected to the new primary."
-    - content: "They are disconnected and must be manually reconnected"
+      explanation: "Correct. During a failover, client connections that are using the read-write listener are automatically redirected to the new primary."
+    - content: "They're disconnected and must be manually reconnected"
       isCorrect: false
-      explanation: "That's incorrect. Client connections are automatically redirected, not disconnected."
+      explanation: "Incorrect. Client connections are automatically redirected, not disconnected."
     - content: "They remain connected to the old primary"
       isCorrect: false
-      explanation: "That's incorrect. Connections do not remain connected to the old primary during a failover."
+      explanation: "Incorrect. Connections don't remain connected to the old primary during a failover."
