@@ -1,7 +1,7 @@
 
 The Microsoft 365 Defender portal combines protection, detection, investigation, and response to devices, identities, endpoints, email & collaboration, and cloud apps, in a central place. The Microsoft 365 Defender portal is designed to meet the needs of security teams and emphasizes quick access to information, simpler layouts. Through the Microsoft 365 Defender portal you can view the security health of your organization.
 
-:::image type="content" source="../media/m365-portal-inline.png" lightbox="../media/m365-portal-expanded.png" alt-text="A screenshot of the Microsoft 365 Defender portal home page.":::
+:::image type="content" source="../media/microsoft-365-portal-inline.png" lightbox="../media/microsoft-365-portal-expanded.png" alt-text="A screenshot of the Microsoft 365 Defender portal home page.":::
 
 The Microsoft 365 Defender portal home page shows many of the common cards that security teams need. The composition of cards and data depends on the user role. Because the Microsoft 365 Defender portal uses role-based access control, different roles see cards that are more meaningful to their day-to-day jobs.
 

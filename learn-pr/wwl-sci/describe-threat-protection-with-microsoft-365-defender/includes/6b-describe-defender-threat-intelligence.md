@@ -8,7 +8,7 @@ From Defender TI’s Threat Intelligence Home Page, analysts can quickly scan ne
 
 The featured article section of the Defender TI Threat Intelligence Home Page shows you the featured Microsoft content.
 
-:::image type="content" source="../media/defender-ti-home-page-inline.png" lightbox="../media/defender-ti-home-page-expanded.png" alt-text="A screenshot of the home page for Microsoft Defender Threat Intelligence.":::
+:::image type="content" source="../media/defender-threat-intelligence-home-page-inline.png" lightbox="../media/defender-threat-intelligence-home-page-expanded.png" alt-text="A screenshot of the home page for Microsoft Defender Threat Intelligence.":::
 
 ### Defender TI articles
 
@@ -16,7 +16,7 @@ Articles are narratives by Microsoft that provide insight into threat actors, to
 
 The description section of the article contains information about the attack or attacker profiled. The public indicators section of the screen shows the previously published indicators related to the article. The links in the public indicators take one to the underlying Defender TI data or relevant external sources. The Defender TI indicators section covers the indicators that Defender TI’s research team has found and added to the articles.
 
-:::image type="content" source="../media/defender-ti-article-inline.png" lightbox="../media/defender-ti-article-expanded.png" alt-text="A screenshot of a Defender TI article showing the tabs for description, public indicators, and Defender TI indicators.":::
+:::image type="content" source="../media/defender-threat-intelligence-article-inline.png" lightbox="../media/defender-threat-intelligence-article-expanded.png" alt-text="A screenshot of a Defender TI article showing the tabs for description, public indicators, and Defender TI indicators.":::
 
 ### Vulnerability articles
 
@@ -26,7 +26,7 @@ Vulnerability Articles provide key context behind CVEs of interest. Each article
 
 Vulnerability Articles also include a Defender TI Priority Score and severity indicator (high, medium, low). The Defender TI Priority Score is a unique algorithm that reflects the priority of a CVE based on the Common Vulnerability Scoring System (CVSS) score, exploits, chatter, and linkage to malware. Furthermore, the Defender TI Priority Score evaluates the recency of these components so users can understand which CVEs should be remediated first.
 
-:::image type="content" source="../media/defender-ti-vulnerability-article-inline.png" lightbox="../media/defender-ti-vulnerability-article-expanded.png" alt-text="A screenshot of a Defender TI vulnerability article showing the CVE-ID, priority score, and description.":::
+:::image type="content" source="../media/defender-threat-intelligence-vulnerability-article-inline.png" lightbox="../media/defender-threat-intelligence-article-expanded.png" alt-text="A screenshot of a Defender TI vulnerability article showing the CVE-ID, priority score, and description.":::
 
 ### Data sets
 
@@ -36,7 +36,7 @@ Microsoft collects, analyzes, and indexes internet data to assist users in detec
 
 This internet data is categorized into two distinct groups: traditional and advanced. Traditional data sets include Resolutions, WHOIS, SSL Certificates, Subdomains, DNS, Reverse DNS, and Services. Advanced data sets include Trackers, Components, Host Pairs, and Cookies. Trackers, Components, Host Pairs, and Cookies data sets are collected from observing the Document Object Model (DOM) of web pages crawled.
 
-:::image type="content" source="../media/defender-ti-data-v2-inline.png" lightbox="../media/defender-ti-data-v2-expanded.png" alt-text="A screenshot of an excerpt from a Defender TI article showing a reputation score, analyst insight, and tabs for traditional and advanced internet data.":::
+:::image type="content" source="../media/defender-threat-intelligence-data-v3-inline.png" lightbox="../media/defender-threat-intelligence-data-v3-expanded.png" alt-text="A screenshot of an excerpt from a Defender TI article showing a reputation score, analyst insight, and tabs for traditional and advanced internet data.":::
 
 #### Reputation scoring and analyst insights
 

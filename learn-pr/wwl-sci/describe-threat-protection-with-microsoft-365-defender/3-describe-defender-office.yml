@@ -8,7 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  # ms.prod: learning-m365
+  ms.service: microsoft-365-security
 durationInMinutes: 2
 content: |
   [!include[](includes/3-describe-defender-office.md)]

@@ -8,7 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  # ms.prod: learning-m365
+  ms.service: microsoft-365-security
 durationInMinutes: 11
 content: |
   [!include[](includes/5-describe-microsoft-cloud-app-security.md)]
