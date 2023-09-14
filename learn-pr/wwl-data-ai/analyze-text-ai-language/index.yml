@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.analyze-text-ai-language
+metadata:
+  title: Analyze text with Azure AI Language
+  description: "Analyze text with Azure AI Language"
+  ms.date: 04/21/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-language
+title: Analyze text with Azure AI Language
+summary: The Azure AI Language service enables you to create intelligent apps and services that extract semantic information from text.
+abstract: |
+  In this module, you'll learn how to use the Azure AI Language service to:
+  - Detect language from text
+  - Analyze text sentiment
+  - Extract key phrases, entities, and linked entities
+prerequisites: |
+  Before starting this module, you'll need
+  - Familiarity with Microsoft Azure and the Azure portal.
+  - Experience programming with C# or Python.
+iconUrl: /training/achievements/extract-insights-from-text-with-the-text-analytics-service.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- ai-services
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.analyze-text-ai-language.introduction
+- learn.wwl.analyze-text-ai-language.provision-resource
+- learn.wwl.analyze-text-ai-language.detect-language
+- learn.wwl.analyze-text-ai-language.extract-key-phrases
+- learn.wwl.analyze-text-ai-language.analyze-sentiment
+- learn.wwl.analyze-text-ai-language.extract-entitites
+- learn.wwl.analyze-text-ai-language.extract-linked-entitites
+- learn.wwl.analyze-text-ai-language.exercise
+- learn.wwl.analyze-text-ai-language.knowledge-check
+- learn.wwl.analyze-text-ai-language.summary
+badge:
+  uid: learn.wwl.analyze-text-ai-language.badge
