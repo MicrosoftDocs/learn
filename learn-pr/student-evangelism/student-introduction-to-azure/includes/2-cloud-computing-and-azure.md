@@ -2,7 +2,7 @@ In this unit, you are introduced to the concept of cloud computing and its platf
 
 ## Cloud computing
 
-What comes to your mind when you hear the term cloud computing? It sounds complex or complicated, right?
+What comes to your mind when you hear the term *cloud computing*? It sounds complex or complicated, right?
 
 Let’s try to make it less complicated by looking at it from a high level and hopefully you'll learn that it's not as complex as you thought.
 
@@ -14,9 +14,9 @@ Cloud computing is a technology that allows you to access and use computer resou
 
 ## Azure
 
-Azure is Microsoft's cloud platform consisting of more than 200 services and products. It covers a range of different topics from AI, app development, data science, machine learning, storage and much more.  
+Azure is a Microsoft cloud platform consisting of more than 200 services and products. It covers a range of different topics, including AI, app development, data science, machine learning, storage ,and much more.  
 
-With Azure, you can "save the day" for individuals and organizations all around the globe. For example, Azure can help businesses manage their finances, assist healthcare providers in delivering top-quality patient care, or power online gaming platforms. You can solve it all with Azure.
+With Azure, you can "save the day" for individuals and organizations all around the globe. For example, Azure can help businesses manage their finances, assist healthcare providers in delivering top-quality patient care, or power online gaming platforms. 
 
 ### Benefits of Azure
 
@@ -30,7 +30,7 @@ In short, Azure offers multiple benefits that make it easy for you to invent wit
 
 ### Scenario: Build a college project
 
-Now that you have gained a deeper understanding of cloud computing and Microsoft Azure, lets explore the ways in which Azure can be utilized in an academic setting.
+Now that you have gained a deeper understanding of cloud computing and Microsoft Azure, lets explore the ways in which Azure can be used in an academic setting.
 
 Imagine you're developing a college project. With Azure, you have all the resources you need to ensure your project is a success.
 

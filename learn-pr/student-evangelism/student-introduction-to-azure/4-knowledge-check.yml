@@ -34,4 +34,4 @@ quiz:
       explanation: "Incorrect. IntelliSense code completion is a feature of Visual Studio Code."
     - content: "Native support for Java development."
       isCorrect: true
-      explanation: "Correct! Visual Studio Code doesn't offer Native support for Java development."
+      explanation: "Correct! Visual Studio Code doesn't offer native support for Java development."
