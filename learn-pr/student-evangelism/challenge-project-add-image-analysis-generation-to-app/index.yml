@@ -1,0 +1,68 @@
+### YamlMime:Module
+uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app
+metadata:
+  title: |
+    Challenge project - Add image analysis and generation capabilities to your application
+  description: "Add image analysis and generation capabilities to your application"
+  ms.date: 9/5/2023
+  author: carlottac94
+  ms.author: cacaste
+  ms.custom: team=nextgen
+  ms.topic: module-challenge-project # Please don't edit, used for our analytics
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+  ms.prod: azure
+title: |
+  challenge-project-add-image-analysis-and-generation-to-your-app
+summary: |
+  Demonstrate your ability to develop a smart web application that integrates computer vision capabilities, leveraging Azure AI Vision and Azure OpenAI cognitive services.
+  > [!NOTE]
+  > This is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions.
+abstract: |
+  In this module, you'll demonstrate your ability to:
+    - Integrate the newest Image Analysis 4.0 capabilities - powered by Microsoft Florence large foundation model - into your application.
+    - Enrich your solution with generative AI capabilities.
+    - Build a CI/CD pipeline with GitHub actions to deploy your application to the Cloud as an Azure Static Web App.
+prerequisites: |
+  - Experience using JavaScript and React or similar frameworks.
+  - Experience using GitHub and Visual Studio Code.
+  - Familiarity with REST APIs.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - beginner
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - developer
+  - ai-engineer	
+  - startup-founder
+  - student
+  - higher-ed-educator
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - vs-code
+  - static-web-apps
+  - ai-services
+  - azure-openai
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - data-ai
+units:
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.introduction
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.prepare
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-create-static-web-app
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-design-gui
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-add-image-analysis
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-add-image-generation
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-check-services-configuration
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-deploy-on-Azure
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.knowledge-check
+- learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.summary
+
+badge:
+  uid: |
+    learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.badge
