@@ -332,6 +332,19 @@
                 "dest": "./modules/partner-center/"
             },
             {
+                "src": "pwa",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "pytorch",
                 "files": [
                     "**/*.yml",
