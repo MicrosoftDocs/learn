@@ -1,6 +1,6 @@
-You've built a search solution and now want to add cognitive services for language enrichments to your indexes.
+You've built a search solution and now want to add Azure AI Language enrichments to your indexes.
 
-:::image type="content" source="../media/exercise-overview.png" alt-text="A diagram showing the components of this exercise. Azure Cognitive Search, Cognitive services for Language, and a Function App." border="false":::
+:::image type="content" source="../media/exercise-overview.png" alt-text="A diagram showing the components of this exercise. Azure Cognitive Search, Azure AI Language, and a Function App." border="false":::
 
 In this exercise, you'll create an Azure Cognitive Search solution and enrich an index with the results from a Language Studio custom text classification project. You'll create a function app to connect search and your classification model together.
 
@@ -214,9 +214,9 @@ Create a search index that you can enrich with this model, you'll index all the 
 1. Select Choose an existing connection, then select the container you just created, **search-data**.
 1. Select **Add cognitive skills**.
 
-    :::image type="content" source="../media/attach-cognitive-services.png" alt-text="A screenshot showing attaching cognitive services.":::
+    :::image type="content" source="../media/attach-cognitive-services.png" alt-text="A screenshot showing attaching Azure AI services.":::
 
-1. Expand the **Attach Cognitive Services** section, then select the cognitive service below free, for example **acs13245-cognitive-services**.
+1. Expand the **Attach Azure AI Services** section, then select the cognitive service below free, for example **acs13245-ai-services**.
 1. Expand the **Add enrichments** section.
 
     :::image type="content" source="../media/add-enrichments.png" alt-text="A screenshot showing the limited enrichments selected.":::

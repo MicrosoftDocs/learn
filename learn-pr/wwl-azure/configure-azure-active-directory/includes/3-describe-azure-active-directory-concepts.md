@@ -1,6 +1,3 @@
-
-
-
 To implement Azure Active Directory in your corporate configuration, you need to understand the key components of the service. The following table describes the main components and concepts of Azure AD and explains how they work together to support service features. 
 
 | Azure&nbsp;AD&nbsp;concept | Description |

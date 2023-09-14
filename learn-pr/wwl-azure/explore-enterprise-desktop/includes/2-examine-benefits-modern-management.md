@@ -1,5 +1,4 @@
 
-
 Until recently, managing an organization’s technological infrastructure and PCs required IT professionals to do lots of hands-on, manual, and time-consuming tasks. New device form factors, new approaches in Windows client management, advancements in cloud technology, and bring-your-own-device (BYOD) trends have made modern endpoint management more interesting for many organizations - not only for mobile devices but also PCs.
 
 Modern endpoint management is a novel approach to managing Windows, similar to managing mobile devices using Enterprise Mobility Management (EMM) solutions. This approach allows you to simplify deployment and management, improve security, provide better end-user experiences, and lower costs for your Windows devices. With modern endpoint management, you can now manage devices of all kinds, desktop PCs, HoloLens, Surface Hubs, company-owned devices, employee-owned devices, and even mobile devices running iOS or Android, all while using one management platform. Let’s examine why you should implement a modern endpoint management approach for Windows devices within your organization.

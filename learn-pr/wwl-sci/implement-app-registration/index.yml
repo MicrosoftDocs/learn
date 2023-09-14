@@ -27,7 +27,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-domain
 - azure-api-apps
 - defender-for-cloud-apps
 - entra

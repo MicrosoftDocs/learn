@@ -1,7 +1,3 @@
-
-
-
-
 In this step of the development process, you update the code provided in the starter project folder, adding features for "suggested donation" to the application. The starter project.cs file should be open in Visual Studio Code. Return to the previous prepare unit if you need instructions for getting started.
 
 ## Create the "Suggested Donation" features

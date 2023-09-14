@@ -11,7 +11,7 @@ When you want to perform 1:1 translation (translating from one source language i
 2. Create an event handler for the **TranslationRecognizer** object's **Synthesizing** event.
 3. In the event handler, use the **GetAudio()** method of the **Result** parameter to retrieve the byte stream of translated audio.
 
-The specific code used to implement an event handler varies depending on the programming language you are using. See the [C#](/azure/cognitive-services/speech-service/get-started-speech-translation?pivots=programming-language-csharp#synthesize-translations) and [Python](/azure/cognitive-services/speech-service/get-started-speech-translation?pivots=programming-language-python#synthesize-translations) examples in the Speech SDK documentation.
+The specific code used to implement an event handler varies depending on the programming language you are using. See the [C#](/azure/cognitive-services/speech-service/get-started-speech-translation?pivots=programming-language-csharp#synthesize-translations) and [Python](/azure/cognitive-services/speech-service/get-started-speech-translation?pivots=programming-language-python#synthesize-translations) examples in the Azure AI Speech SDK documentation.
 
 ## Manual synthesis
 

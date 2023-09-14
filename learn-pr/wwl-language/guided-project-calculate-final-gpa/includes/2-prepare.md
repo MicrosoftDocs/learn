@@ -1,6 +1,5 @@
 
 
-
 You'll be using the .NET Editor as your code development environment. You'll be writing code that uses string and numeric variables, performs calculations, then formats and displays the results to a console.
 
 ## Project overview

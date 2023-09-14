@@ -17,7 +17,7 @@ PIM reduces the chance of a malicious actor getting access by minimizing the num
 
 Today, you can use PIM with:
 
-- Microsoft Entra roles – Sometimes referred to as directory roles, Microsoft Entra roles include built-in and custom roles to manage Microsfot Entra and other Microsoft 365 online services.
+- Microsoft Entra roles – Sometimes referred to as directory roles, Microsoft Entra roles include built-in and custom roles to manage Microsoft Entra and other Microsoft 365 online services.
 
 - Azure roles – The role-based access control (RBAC) roles in Azure that grants access to management groups, subscriptions, resource groups, and resources.
 

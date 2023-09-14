@@ -1,20 +1,21 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-authentication-capabilities-of-azure-ad
 metadata:
-  title: Describe the authentication capabilities of Azure AD
-  description: "Describe the authentication capabilities of Azure AD"
+  title: Describe the authentication capabilities of Microsoft Entra ID
+  description: "Describe the authentication capabilities of Microsoft Entra ID"
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.service: active-directory
-title: Describe the authentication capabilities of Azure AD
-summary: Learn about the authentication capabilities of Azure AD, multi-factor authentication, and how it improves security. You'll also learn about the password protection and management capabilities of Azure AD.
+title: Describe the authentication capabilities of Microsoft Entra ID
+summary: Learn about the authentication capabilities of Microsoft Entra ID, including multifactor authentication, and how they improve security. You'll also learn about self-service password reset (SSPR) and the password protection and management capabilities.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the authentication methods of Azure AD.
-  - Describe multi-factor authentication in Azure AD
-  - Describe the password protection and management capabilities of Azure AD.
+  - Describe the authentication methods of Entra ID.
+  - Describe multifactor authentication (MFA) in Entra ID.
+  - Describe self-service password reset (SSPR) in Entra ID.
+  - Describe the password protection and management capabilities of Entra ID.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -26,7 +27,9 @@ roles:
 - business-user
 - student
 products:
+- azure
 - azure-active-directory
+- entra
 subjects:
 - identity-access
 units:

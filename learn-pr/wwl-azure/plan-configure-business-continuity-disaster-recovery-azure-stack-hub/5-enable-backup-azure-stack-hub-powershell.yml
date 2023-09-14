@@ -9,7 +9,6 @@ metadata:
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.custom:
-    - devx-track-azurepowershell
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
