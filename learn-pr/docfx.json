@@ -228,19 +228,6 @@
                 "dest": "modules"
             },
             {
-                "src": "edge",
-                "files": [
-                    "**/*.yml",
-                    "**/*.md"
-                ],
-                "exclude": [
-                    "**/includes/**",
-                    "**/design/**",
-                    "**/resources/**"
-                ],
-                "dest": "modules"
-            },
-            {
                 "src": "educator",
                 "files": [
                     "**/*.yml",
