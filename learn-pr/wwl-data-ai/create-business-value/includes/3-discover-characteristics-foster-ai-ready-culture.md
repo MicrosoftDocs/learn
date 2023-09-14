@@ -1,5 +1,3 @@
-
-
 A successful AI strategy must consider cultural issues as well as business issues. Becoming an AI-ready organization requires a fundamental transformation in how you do things, how employees relate to each other, what skills they have, and what processes and principles guide your behaviors. This transformation goes to the core of an organization's culture, and it's vital for organizations to tackle such transformation with a holistic approach. Leaders should back this cultural change for everyone at the organization to embrace and adopt AI. 
 
 Fostering an AI-ready culture requires:

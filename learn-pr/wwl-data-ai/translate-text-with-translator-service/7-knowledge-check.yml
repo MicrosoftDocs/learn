@@ -4,14 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/11/2022
+  ms.date: 08/31/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.service: azure-ai-translator
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 quiz:
   questions:
   - content: "What function of the Azure AI Translator service should you use to convert the Chinese word \"你好\" to the English word \"Hello\"?"

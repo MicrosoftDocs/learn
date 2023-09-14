@@ -3,7 +3,7 @@ Let’s practice the contribution workflow. In this exercise, you’ll make a sm
 ## Edit the article
 
 1. Sign into your GitHub account. 
-1. In a browser tab, navigate to learn.microsoft.com/contribute. 
+1. In a browser tab, navigate to learn.microsoft.com/contribute/content. 
 1. At the top of the article, select the **Edit** pencil icon. 
 
     :::image type="content" source="../media/exercise-edit-published.png" alt-text="Screenshot of the Contribute article open and the pencil Edit icon highlighted.":::
