@@ -37,4 +37,4 @@ Use the Defender for Identity attack timeline view and the intelligence of smart
 
 Microsoft Defender for Identity protects your organization from compromised identities, advanced threats, and malicious insider actions.
 
-:::image type="content" source="../media/defender-identity-topology-inline.png" lightbox="../media/defender-identity-topology-expanded.png" alt-text="A topology diagram for Defender for Identity. It shows a domain controller and AD FS sending signals to Defender for Identity. Defender for Identity is sending and receiving signals from  Microsoft 365 Defender which gets signals from endpoints, Office 365, and cloud apps.":::
+:::image type="content" source="../media/defender-identity-topology-inline.png" lightbox="../media/defender-identity-topology-expanded.png" alt-text="A diagram of Defender for Identity. The diagram shows a domain controller and AD FS sending and signals to Defender for Identity. Defender for Identity is sending and receiving signals from  Microsoft 365 Defender which gets signals from endpoints, Office 365, and cloud apps.":::

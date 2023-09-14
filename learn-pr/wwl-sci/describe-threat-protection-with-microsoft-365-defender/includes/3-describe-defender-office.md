@@ -13,4 +13,4 @@ Microsoft Defender for Office 365 is available in two plans: Microsoft Defender 
 
 For a complete listing of the features in each plan, see the Microsoft Defender for Office 365 security product overview document that is linked in summary and resources unit of this module.
 
-:::image type="content" source="../media/office-365-security-inline.png" lightbox="../media/office-365-security-expanded.png" alt-text="Image shows layered approach for Office 365 security that starts with Exchange online protection. Defender for Office 365 Plan 1 includes EOP. Defender for Office 365 Plan 2 includes EOP and Plan 1.":::
+:::image type="content" source="../media/office-365-security-inline.png" lightbox="../media/office-365-security-expanded.png" alt-text="Diagram shows layered approach for Office 365 security that starts with Exchange online protection. Defender for Office 365 Plan 1 includes EOP. Defender for Office 365 Plan 2 includes EOP and Plan 1.":::
