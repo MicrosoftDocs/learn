@@ -5,8 +5,8 @@ metadata:
   title: Introduction to PWABuilder
   description: PWABuilder is an open-source tool developed by Microsoft that streamlines the process of deploying Progressive Web Apps (PWAs). It simplifies PWA development by automating the creation of essential components, providing a user-friendly interface for customization, and packaging PWAs for various platforms and app stores. PWABuilder is an ideal choice for projects that require a seamless app-like experience across different devices and network conditions. By using PWABuilder, organizations can save time and resources while delivering users a seamless, app-like experience.
   ms.date: 05/01/2023
-  author: zainalijp
-  ms.author: v-alizain
+  author: beth-panx
+  ms.author: xupa
   ms.topic: module-intro-to-product
   ms.prod: microsoft-edge
 summary: >
