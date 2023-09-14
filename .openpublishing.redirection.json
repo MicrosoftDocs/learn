@@ -1871,6 +1871,121 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/edge/integrate-with-pwabuilder/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-with-pwabuilder/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/integrate-with-pwabuilder/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-with-pwabuilder/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/integrate-with-pwabuilder/2-prepare-for-pwa-integration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-with-pwabuilder/2-prepare-for-pwa-integration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/integrate-with-pwabuilder/3-evaluate-website-pwa-readiness.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-with-pwabuilder/3-evaluate-website-pwa-readiness",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/integrate-with-pwabuilder/4-app-manifest-service-worker.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-with-pwabuilder/4-app-manifest-service-worker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/integrate-with-pwabuilder/5-customize-pwa-settings.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-with-pwabuilder/5-customize-pwa-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/integrate-with-pwabuilder/6-generate-app-manifest-service-worker.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-with-pwabuilder/6-generate-app-manifest-service-worker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/integrate-with-pwabuilder/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-with-pwabuilder/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/integrate-with-pwabuilder/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-with-pwabuilder/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/intro-to-pwabuilder/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-pwabuilder/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/intro-to-pwabuilder/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-pwabuilder/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/intro-to-pwabuilder/2-what-is-pwa-builder.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-pwabuilder/2-what-is-pwa-builder",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/intro-to-pwabuilder/3-how-pwa-builder-works.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-pwabuilder/3-how-pwa-builder-works",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/intro-to-pwabuilder/4-when-to-use-pwabuilder.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-pwabuilder/4-when-to-use-pwabuilder",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/intro-to-pwabuilder/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-pwabuilder/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/intro-to-pwabuilder/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-pwabuilder/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/publish-pwa-microsoft-store/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-pwa-microsoft-store/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/publish-pwa-microsoft-store/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-pwa-microsoft-store/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/publish-pwa-microsoft-store/2-test-pwa-devices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-pwa-microsoft-store/2-test-pwa-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/publish-pwa-microsoft-store/3-ensure-compliance.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-pwa-microsoft-store/3-ensure-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/publish-pwa-microsoft-store/4-publish-pwa-store.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-pwa-microsoft-store/4-publish-pwa-store",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/publish-pwa-microsoft-store/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-pwa-microsoft-store/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/edge/publish-pwa-microsoft-store/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-pwa-microsoft-store/6-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/store-and-share-with-azure-files/index.md",
       "redirect_url": "/training/modules/configure-azure-files-file-sync/",
       "redirect_document_id": false
