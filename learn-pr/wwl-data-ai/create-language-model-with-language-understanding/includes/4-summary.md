@@ -1,6 +1,6 @@
 You can use conversational language understanding to build a model that predicts intents and entities from natural language utterances. A client application can then use this trained model to respond to natural language user input.
 
-You can find out more about conversational language understanding in the [Azure AI Language documentation](/zure/ai-services/language-service/conversational-language-understanding/overview?azure-portal=true).
+You can find out more about conversational language understanding in the [Azure AI Language documentation](/azure/ai-services/language-service/conversational-language-understanding/overview?azure-portal=true).
 
 ## Clean-up
 
