@@ -4,7 +4,7 @@ Having learned how to create repositories in GitHub and upload your own projects
 
 ## Workflow example
 
-As you embark on collaborative endeavors with your team using GitHub, it's crucial to explore the advanced features that can significantly enhance your collaborative development process. GitHub introduces concepts such as branching, project forking, issue creation, pull request (PR) submission, change merging, and conflict resolution. These tools not only streamline teamwork but also ensure the integrity and quality of your collective project. Let's delve into each concept to understand their practical applications.
+As you and your team begin using GitHub, it's crucial to explore the advanced features that can significantly enhance your collaborative development process. GitHub introduces concepts such as branching, project forking, issue creation, pull request (PR) submission, change merging, and conflict resolution. These tools not only streamline teamwork but also ensure the integrity and quality of your collective project. Let's delve into each concept to understand their practical applications.
 
 To illustrate the effectiveness of these GitHub features, let's consider an example workflow. You're a software developer aiming to enhance a piece of software by adding a new function. Your objective is to implement the function, ensure its functionality, and share your code changes seamlessly with your team.
 

@@ -1,12 +1,13 @@
-Envision yourself as a committed student developer, dedicating numerous hours to meticulously sculpting impeccable code for your project. A challenge emerges as you search for an efficient method to seamlessly manage and share your work. Weary of the monotonous file exchanges, you yearn for a streamlined approach to collaborate and uphold code consistency. This is precisely where GitHub comes into play. GitHub is a transformative tool poised to reshape how you share code and track changes throughout your development odyssey. 
+Envision yourself as a committed student developer, dedicating numerous hours authoring code for your project. You want to seamlessly manage and share your work.  A solution to your problem should be a streamlined approach to collaborate and uphold code consistency. This is precisely where GitHub comes into play. GitHub is a transformative tool reshaping how you share code and track changes throughout your development odyssey. 
 
 ## Version control
 
-Version control, an essential tool for efficient code management, empowers solo developers to enhance their efficiency by providing a systematic approach to tracking changes and collaborating seamlessly on projects.
+Imagine the following scenario, you make changes to your code, it still works. What if you do a number of changes and suddenly it doesn't work, now you need to know what change caused your code to stop working. Here's where version control comes in. Version control allows you to save your code in different versions. By having several versions of your code, you can easily go back to a non-working version of your code. Also, if you build, for example, an API for a business, different versions of your code might serve different clientele based on what features those clients have paid for.
+Version control, is an essential tool for efficient code management that empowers solo developers to enhance their efficiency by providing a systematic approach to tracking changes and collaborating seamlessly on projects.
 
-Now, let's delve into an example scenario: a burgeoning individual developer embraced the opportunity to elevate their workflow using GitHub. As a newcomer, they sought a solution to streamline their work processes and maximize productivity. Instead of struggling with manual file exchanges, they harnessed the power of version control systems like Git and the functionalities offered by GitHub.
+Now, let's talk about another example scenario: a developer wants to improve their workflow using GitHub. When developers say *improve*, they mean they want to simplify things, spend less time on configuration and more time to actually write code. Streamlining their work processes will hopefully lead to maximizing productivity. Instead of struggling with manual file exchanges, this developer adopts Git, a version control system, and GitHub so they can now share their code and invite other developers to collaborate.
 
-Before we explore what they learned, let's briefly define key terms in Git and GitHub:
+Before we explore what they learned by adopting Git and GitHub, let's briefly define key terms in said products:
 
 | Term                  | Description                                                                                                                                                                                                              |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -23,27 +24,27 @@ Before we explore what they learned, let's briefly define key terms in Git and G
 | **Fork**              | Forking is creating a copy of someone else's repository in your GitHub account. Forking a repository allows you to freely experiment with changes without affecting the original project.                                              |
 | **Pull/Fetch**        | Pulling or fetching means getting the latest changes from the remote repository to your local repository.                                                                                                                |
 
-Armed with these newfound concepts, our developer discovered a pathway to optimize their individual projects, fostering enhanced efficiency and productivity.
+Having learned these concepts, our developer discovered a pathway to optimize their individual projects, making them more efficient and productive.
 
 ## Benefits of GitHub
 
 GitHub offers a multitude of benefits for individual developers, including:
 
 - **Collaborative development**:  
-  - GitHub provides a platform where multiple developers can work on the same project simultaneously, contributing to different features or fixes without conflicts.
+   GitHub provides a platform where multiple developers can work on the same project simultaneously, contributing to different features or fixes without conflicts.
 - **Version history and tracking**:  
-  - GitHub maintains a detailed history of every change made to the project, making it easy to track who made what changes and when. Tracked change also promotes accountability and transparency.
+   GitHub maintains a detailed history of every change made to the project, making it easy to track who made what changes and when. Tracked change also promotes accountability and transparency.
 - **Code review**:  
-  - Pull requests in GitHub allow team members to review each other's code before merging it into the main codebase. This ensures code quality and helps catch errors before they become significant issues.
+   Pull requests in GitHub allow team members to review each other's code before merging it into the main codebase. This ensures code quality and helps catch errors before they become significant issues.
 - **Issue tracking**:  
-  - GitHub's issue tracking system helps manage tasks, bugs, and enhancements.  
-  - Developers can create, assign, and track issues, providing a structured way to manage project progress and prioritize work.
+   GitHub's issue tracking system helps manage tasks, bugs, and enhancements.  
+   Developers can create, assign, and track issues, providing a structured way to manage project progress and prioritize work.
 - **Community engagement**:  
-  - GitHub offers a platform for open-source projects, allowing developers from around the world to contribute to projects they're interested in.
-  - Developers can contribute to projects, report issues, and engage with the community through discussions.
+   GitHub offers a platform for open-source projects, allowing developers from around the world to contribute to projects they're interested in.
+   Developers can contribute to projects, report issues, and engage with the community through discussions.
 
-Embracing version control, especially utilizing the robust capabilities of GitHub, unlocks the potential to avoid the hurdles that come with individual project management. By embracing this streamlined solution, you can elevate your workflow, maintain a comprehensive record of changes, and significantly bolster your work efficiency.
+Embracing version control, especially utilizing the robust capabilities of GitHub, unlocks the potential to avoid the hurdles that come with individual project management. By embracing this streamlined solution, you can improve your workflow, maintain a comprehensive record of changes (that allows you to track when things go wrong for example), and significantly improve your work efficiency.
 
-To learn more about GitHub, see the [Introduction to GitHub](../../../github/introduction-to-github/index.yml) Microsoft Learn module or the [Getting started with GitHub](https://docs.github.com/en/get-started) documentation.
+To learn more about GitHub, see the [Introduction to GitHub](../../../github/introduction-to-github/) Microsoft Learn module or the [Getting started with GitHub](https://docs.github.com/en/get-started) documentation.
 
 The next step is to try out Git for yourself!
