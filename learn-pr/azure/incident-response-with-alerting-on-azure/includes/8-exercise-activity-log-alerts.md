@@ -1,4 +1,4 @@
-The shipping company you work for wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you can activity log alerts.
+The shipping company for which you work wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you can activity log alerts.
 
 Your goal is to set up a Linux VM and create an activity log monitoring rule to detect when a VM is deleted. You'll then delete the VM to trigger this alert.
 
@@ -14,19 +14,19 @@ Your goal is to set up a Linux VM and create an activity log monitoring rule to 
 
 1. In the **Select a resource** pane, the **Filter by subscription** field should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, search for and select **Virtual machines**.
 
-1. You want an alert when any virtual machine in your resource group is deleted. Select the box for the **<rgn>[sandbox resource group name]</rgn>** resource group, then select **Done**.
+1. You want an alert when any virtual machine in your resource group is deleted. Select the box for the **<rgn>[sandbox resource group name]</rgn>** resource group, then select **Apply**.
 
-   :::image type="content" source="../media/7-alert-select-resource.png" alt-text="Screenshot that shows the 'Select a scope' pane, with the sandbox resource group selected.":::
+   :::image type="content" source="../media/7-alert-select-resource.png" alt-text="Screenshot that shows the Select a scope pane with the sandbox resource group selected.":::
 
 1. The **Create an alert rule** pane reappears with the Scope target resource showing **All Virtual machines**. Select the **Condition** tab. The **Select a signal** pane appears.
 
-1. In the **Search by signal name** box, enter **Delete**, and then select **Delete Virtual Machine (Microsoft.Compute/virtualMachines)**.
+1. Select the **See all signals** link, then search for and select **Delete Virtual Machine (Virtual Machines)**. Select **Apply**
 
 1. The **Create an alert rule** pane reappears. You want to receive alerts of all types, so leave **Alert logic** settings at their default of **All selected**. Leave the **Create an alert rule** pane open for the next section.
 
 ## Add an email alert action
 
-For the previous Azure Monitor alert, you didn't add any actions. You just viewed triggered alerts in the Azure portal. Actions let you send an email for notifications, to trigger an Azure function, or to call a webhook. In this exercise, we are adding an email alert when VMs are deleted.
+For the previous Azure Monitor alert, you didn't add any actions. You just viewed triggered alerts in the Azure portal. Actions let you send an email for notifications, to trigger an Azure function, or to call a webhook. In this exercise, we're adding an email alert when VMs are deleted.
 
 1. On the **Create an alert rule** pane, select the **Next: Actions** button, and select **Create action group**. The **Create an action group** pane appears.
 
@@ -36,13 +36,13 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
     |---------|---------|
     | **Project details** |
     | Subscription | **Concierge Subscription** |
-    | Resource group | From the dropdown list, name of your sandbox resource group |
+    | Resource group | From the dropdown list, select your sandbox resource group |
     | Region | **Global** (default) |
     | **Instance details** |
     | Action group name | **Alert the operations team** |
     | Display name | **AlertOpsTeam** |
 
-1. Select **Next : Notifications**, and enter the following values for each setting.
+1. Select **Next: Notifications**, and enter the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
@@ -64,7 +64,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
     | Alert rule name | **VM was deleted** |
     | Description | **A VM in your resource group was deleted** |
 
-1. Open the **Advanced options** section, and confirm that **Enable alert rule upon creation** is selected.
+1. Expand the **Advanced options** section and confirm that **Enable alert rule upon creation** is selected.
 
    :::image type="content" source="../media/7-all-vm-alert-details.png" alt-text="Screenshot that shows a completed alert details section.":::
 
@@ -76,15 +76,15 @@ Recipients added to the configured action group (operations team) receive a noti
 - When the alert is activated
 - When the alert is triggered
 
-It can take up to five minutes for an activity log alert rule to become active. In this exercise, if you delete the virtual machine before the rule has been deployed, the alert rule might not be triggered. Because of this delay, you might not see the same results in the following steps after you delete the VM.
+It can take up to five minutes for an activity log alert rule to become active. In this exercise, if you delete the virtual machine before the rule deploys, the alert rule might not be triggered. Because of this delay, you might not see the same results in the following steps after you delete the VM.
 
 ## Delete your virtual machine
 
-To trigger an alert, you need to delete the Linux VM machine that you created in the previous exercise.
+To trigger an alert, you need to delete the Linux VM that you created in the previous exercise.
 
 1. On the Azure portal menu or from the **Home** page, select **Virtual machines**.
 
-1. Select the **vm1** virtual machine.
+1. Check the box for the **vm1** virtual machine.
 
 1. Select **Delete** from the menu bar.
 
@@ -100,7 +100,7 @@ In the exercise, you set up an Ubuntu VM and created an activity log rule to det
 
     ![Screenshot of alert email.](../media/7-alert-email.png)
 
-1. On the Azure portal resource menu, select **Monitor**, and then in the **Monitor | Alerts** menu select **Alerts**.
+1. On the Azure portal resource menu, select **Monitor**, and then select **Alerts** in the menu on the left.
 
 1. You should have three verbose alerts that were generated by deleting **vm1**.
 
@@ -112,28 +112,28 @@ In the exercise, you set up an Ubuntu VM and created an activity log rule to det
 
 We're going to schedule a one-time, overnight, planned maintenance. It starts in the evening and continues until the next morning.
 
-1. In the Azure portal resource menu, select **Monitor**, and then in the **Monitor | Alerts** menu, select **Alert processing rules**.
+1. In the Azure portal resource menu, select **Monitor**, select **Alerts** in the menu on the left, and select **Alert processing rules** in the menu bar.
 1. Select **+ Create**.
-1. Select the name of your sandbox resource group as the scope of the alert processing rule, and then select **Apply**.
-1. Select **Next: Rule settings**, and then select **Suppress notifications**.
+1. Check the box for your sandbox resource group as the scope of the alert processing rule, then select **Apply**.
+1. Select **Next: Rule settings**, then select **Suppress notifications**.
 1. Select **Next: Scheduling**.
 1. By default, the rule works all the time, unless you disable it. We're going to define the rule to suppress notifications for a one-time overnight planned maintenance.
 Enter these settings for the scheduling of the alert processing rule:
 
     | Setting | Value |
     |---------|---------|
-    |Apply the rule |On a specific time|
+    |Apply the rule |At a specific time|
     |Start|Enter today's date at 10pm.|
     |End|Enter tomorrow's date at 7am.|
     |Time zone|Select the local timezone.|
 
     :::image type="content" source="../media/8-alert-processing-rule-schedule.png" alt-text="Screenshot of the scheduling section of an alert processing rule." lightbox="../media/8-alert-processing-rule-schedule.png":::
 
-1. Select **Next: Details**, and enter these settings:
+1. Select **Next: Details** and enter these settings:
 
     | Setting | Value |
     |---------|---------|
-    |Resource group |Select the name of your sandbox resource group. |
+    |Resource group |Select your sandbox resource group. |
     |Rule name|**Planned Maintenance**|
     |Description|**Suppress notifications during planned maintenance.**|
 

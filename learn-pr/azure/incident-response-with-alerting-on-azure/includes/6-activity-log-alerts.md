@@ -1,10 +1,10 @@
 Activity log alerts allow you to be notified when a specific event happens on some Azure resource. For example, you can be notified when someone creates a new VM in a subscription. 
 
-An activity log can also include alerts for Azure service health. A company can be notified when service issues or planned maintenance happens on the Azure platform.
+An activity log can also include alerts for Azure service health. A company can get notifications when service issues or planned maintenance happens on the Azure platform.
 
-As an Azure solution architect, you want to explore the capability to monitor selected Azure resources within your subscription. You'll understand how the resources can be used to improve your team's responsiveness and the stability of your systems.
+As an Azure solution architect, you want to explore the capability to monitor selected Azure resources within your subscription. You'll understand how you can use the resources to improve your team's responsiveness and the stability of your systems.
 
-In this unit, you'll explore the two different kinds of activity log alerts. Now that you've seen all the different kinds of alerts you can use in Azure Monitor, you'll see how you can trigger actions for your alerts. Actions might include sending an email, or creating an IT Service Management (ITSM) support ticket.
+In this unit, you'll explore the two different kinds of activity log alerts. Now that you've seen all the different kinds of alerts you can use in Azure Monitor, you'll see how you can trigger actions for your alerts. Actions might include sending an email or creating an IT Service Management (ITSM) support ticket.
 
 ## When to use activity log alerts
 
