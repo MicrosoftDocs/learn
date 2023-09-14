@@ -83,7 +83,7 @@ Elastic jobs can be used in the following scenarios:
 
 ## Migrate SQL Agent jobs to Elastic Jobs
 
-While it’s possible to create your own scripts for migrating your SQL Agent jobs to Elastic Jobs, there’s a more convenient option available. A downloadable script exists that facilitates the [copy existing SQL Agent jobs to Elastic Jobs](/download/details.aspx?id=103123). 
+While it’s possible to create your own scripts for migrating your SQL Agent jobs to Elastic Jobs, there’s a more convenient option available. A downloadable script exists that facilitates the [copy existing SQL Agent jobs to Elastic Jobs](https://www.microsoft.com/download/details.aspx?id=103123). 
 
 The script is a tool that automates the process of converting these jobs, saving you the time and effort of having to manually recreate them in the new environment.
 

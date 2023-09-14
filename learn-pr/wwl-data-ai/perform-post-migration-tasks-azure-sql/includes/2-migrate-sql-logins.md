@@ -27,7 +27,7 @@ Currently the migration extension only supports an Azure SQL Managed Instance or
 
 If you haven’t completed the database migration and the login migration process is started, the migration of logins and server roles will still happen, but login/role mappings won’t be performed correctly. This login migration process automates manual tasks, including syncing logins with their associated user mappings and replicating server permissions and roles.
 
-You can use the Azure SQL Migration extension for Azure Data Studio, [PowerShell]((/powershell/module/az.datamigration)) or [Azure CLI](/cli/azure/datamigration) to start the login migration process. 
+You can use the Azure SQL Migration extension for Azure Data Studio, [PowerShell](/powershell/module/az.datamigration) or [Azure CLI](/cli/azure/datamigration) to start the login migration process. 
 
 Follow these steps to migrate logins using the migration extension in Azure Data Studio:
 
@@ -59,7 +59,7 @@ Data Migration Assistant currently doesn’t support:
 
 ### MoveLogins script
 
-The [MoveLogins script](/download/details.aspx?id=103111) assists in transferring login information from on-premises SQL Servers to Azure SQL Database or other PaaS offerings.
+The [MoveLogins script](https://www.microsoft.com/download/details.aspx?id=103111) assists in transferring login information from on-premises SQL Servers to Azure SQL Database or other PaaS offerings.
 
 While Data Migration Assistant (DMA) has the ability to transfer security information and does a full dependency graph to ensure permissions are transferred properly, the *MoveLogins* script provides an extra option. It enables an Active Directory lookup for users, allowing you to obtain their User Principal Name (UPN), a feature currently not supported by DMA.
 

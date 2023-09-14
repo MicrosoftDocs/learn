@@ -48,7 +48,7 @@ All the databases involved in a geo-replication relationship are required to hav
 
 You can manually configure geo-replication for Azure SQL Database by accessing the blade for the database, in **Data management** section, selecting **Replicas**, and then **+ Create replica**. 
 
-:::image type="content" source="../media/6-forced-failover.png" alt-text="Screenshot of Force Failover option on Azure portal." lightbox="../media/module-77-high-availability-final-06.png":::
+:::image type="content" source="../media/6-forced-failover.png" alt-text="Screenshot of Force Failover option on Azure portal." lightbox="../media/6-forced-failover.png":::
 
 Once the secondary replica is established, you have the option to manually initiate a failover. In this process, the roles are reversed - the secondary replica assumes the role of the primary, while the original primary becomes the secondary.
 
@@ -56,7 +56,7 @@ Once the secondary replica is established, you have the option to manually initi
 
 In certain scenarios, you may need to configure a secondary replica on a different subscription than the primary database. This is where the feature of cross-subscription geo-replication comes into play. However, it's important to note that cross-subscription geo-replication is only available programmatically.
 
-To learn more about the steps required to configure a cross-subscription geo-replication, see [Cross-subscription geo-replication](/azure/azure-sql/database/active-geo-replication-overview?view=azuresql#cross-subscription-geo-replication).
+To learn more about the steps required to configure a cross-subscription geo-replication, see [Cross-subscription geo-replication](/azure/azure-sql/database/active-geo-replication-overview#cross-subscription-geo-replication).
 
 ## Auto failover groups
 

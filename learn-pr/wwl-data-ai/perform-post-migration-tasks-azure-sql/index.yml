@@ -46,4 +46,4 @@ units:
 - learn-wwl.perform-post-migration-tasks-azure-sql.knowledge-check
 - learn-wwl.perform-post-migration-tasks-azure-sql.summary
 badge:
-  uid: learn-wwl.perform-post-migration-tasks-azure-sql.badge
+  uid: learn-wwl.prepare-to-maintain-databases-on-azure.badge
