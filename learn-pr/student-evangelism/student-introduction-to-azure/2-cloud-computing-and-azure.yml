@@ -29,15 +29,15 @@ quiz:
       explanation: "Incorrect. Cloud computing is the delivery of computing services over the internet."
   - content: "Which of the following statements best describes Azure?"
     choices:
-    - content: "A superpower to share data over the internet."
+    - content: "A platform to share data over the internet."
       isCorrect: false
       explanation: "Incorrect. Azure is not used to share data over the internet."
-    - content: "A superpower to manage your finance."
+    - content: "A service to manage your finances."
       isCorrect: false
       explanation: "Incorrect. Azure does not provide financial services."
-    - content: "A superpower to control and manage services and resources."
+    - content: "A platform to control and manage services and resources."
       isCorrect: true
-      explanation: "Correct! Azure is a superpower to control and manage services and resources."
+      explanation: "Correct! Azure is a service that helps to control and manage services and resources."
   - content: "Which of the following is a realistic example of Azure being used in the real world?"
     choices:
     - content: "A multinational corporation using Azure to store and analyze massive amounts of customer data for personalized marketing campaigns."

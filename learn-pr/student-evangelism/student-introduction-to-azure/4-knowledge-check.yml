@@ -15,15 +15,15 @@ quiz:
   questions:
   - content: "Which of the following is an example of a way to use GitHub?"
     choices:
-    - content: "A group of students collaborating on a project, sharing and managing repositories, and tracking changes and issues."
+    - content: "For collaboration on a project, sharing and managing repositories, and tracking changes and issues."
       isCorrect: true
       explanation: "Correct! Collaboration is easier than ever with GitHub."
-    - content: "A social media platform where users can share and discover code snippets, tutorials, and open-source projects."
+    - content: "As a social media platform where users can share and discover code snippets, tutorials, and open-source projects."
       isCorrect: false
       explanation: "Incorrect. GitHub isn't a social media platform."
-    - content: "An online marketplace for buying and selling software applications and tools."
+    - content: "As an online marketplace for buying and selling software applications and tools."
       isCorrect: false
-      explanation: "Incorrect. Applications and tools can't be bought or sold using GitHub."
+      explanation: "Incorrect. Applications and tools can't be bought or sold by using GitHub."
   - content: "Which of the following isn't a feature of Visual Studio Code?"
     choices:
     - content: "Built-in Git integration."

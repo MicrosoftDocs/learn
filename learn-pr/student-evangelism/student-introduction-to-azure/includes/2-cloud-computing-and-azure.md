@@ -1,8 +1,8 @@
-In this unit, you are introduced to the concept of cloud computing and its platform, Azure. You'll also learn about the core services provided by Microsoft Azure.
+In this unit, you are introduced to the concept of cloud computing and the cloud platform Azure. You'll also learn about the core services provided by Microsoft Azure.
 
 ## Cloud computing
 
-What comes to your mind when you hear the term *cloud computing*? It sounds complex or complicated, right?
+What comes to your mind when you hear the term _cloud computing_? It sounds complex or complicated, right?
 
 Let’s try to make it less complicated by looking at it from a high level and hopefully you'll learn that it's not as complex as you thought.
 
@@ -14,17 +14,17 @@ Cloud computing is a technology that allows you to access and use computer resou
 
 ## Azure
 
-Azure is a Microsoft cloud platform consisting of more than 200 services and products. It covers a range of different topics, including AI, app development, data science, machine learning, storage ,and much more.  
+Azure is a Microsoft cloud platform consisting of more than 200 services and products. It covers a range of different topics, including AI, app development, data science, machine learning, storage, and much more.  
 
-With Azure, you can "save the day" for individuals and organizations all around the globe. For example, Azure can help businesses manage their finances, assist healthcare providers in delivering top-quality patient care, or power online gaming platforms. 
+With Azure, you can "save the day" for individuals and organizations all around the globe. For example, Azure can help businesses manage their finances, assist healthcare providers in delivering top-quality patient care, or power online gaming platforms.
 
 ### Benefits of Azure
 
-There are many benefits to using the cloud, and Azure in particular, including:
+Using the cloud, and Azure in particular, offers many benefits, including:
 
 - **Disaster recovery:** Natural disasters can halt operations for weeks. Think of [datacenters damaged as a result of hurricane Sandy in 2012](https://www.datacenterknowledge.com/archives/2012/11/01/ny-data-centers-battle-back-from-storm-damage). Storing your apps in the cloud means that they’re not tied to a specific datacenter and your app can exist as copies in different parts of the world.
-- **Security:** Security is something you likely don't want to write yourself and shouldn't as it's easy to miss specific use cases. To ensure the safety of your customers and their data, use best-in-class security services provided by a cloud operator like Azure.
-- **Scaling:** Imagine you’re running an e-commerce business on-premises. In such a business, you need to plan for holidays and other periods where you expect extra traffic to your site. You might have servers on standby or you might buy extra servers just for this period. When the busy period is over, you end up powering down servers and maybe put them in storage. With the cloud, you have seamless scaling without waste. The cloud can perform "horizontal scaling" to scale to the number of servers you need for your site at any given time. You can also configure your services so that your servers have more CPU and memory or other improved hardware specifications, this type of scaling is known as "vertical scaling".
+- **Security:** Security is difficult to write yourself because it's easy to miss specific use cases. To ensure the safety of your customers and their data, use best-in-class security services provided by a cloud operator like Azure.
+- **Scaling:** Imagine you’re running an e-commerce business on-premises. In such a business, you need to plan for holidays and other periods where you expect extra traffic to your site. You might have servers on standby or you might buy extra servers just for this period. When the busy period is over, you end up powering down servers and maybe put them in storage. With the cloud, you have seamless scaling without waste. The cloud can perform _horizontal scaling_ to scale to the number of servers you need for your site at any given time. You can also configure your services so that your servers have more CPU and memory or other improved hardware specifications, this type of scaling is known as _vertical scaling_.
 
 In short, Azure offers multiple benefits that make it easy for you to invent with purpose.
 
