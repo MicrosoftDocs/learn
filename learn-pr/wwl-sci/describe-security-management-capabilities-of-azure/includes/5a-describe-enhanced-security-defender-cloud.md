@@ -1,15 +1,9 @@
 
-
-
-Microsoft Defender for Cloud is offered in two modes:
-
-- Microsoft Defender for Cloud (Free) - Microsoft Defender for Cloud is enabled for free on all your Azure subscriptions. Using this free mode provides the secure score and its related features: security policy, continuous security assessment, and actionable security recommendations to help you protect your Azure resources.
-
-- Microsoft Defender for Cloud with enhanced security features - Enabling enhanced security extends the capabilities of the free mode to workloads running in Azure, hybrid, and other cloud platforms, providing unified security management and threat protection across your workloads. Cloud workload protections are delivered through integrated Microsoft Defender plans, specific to the types of resources in your subscriptions and provide enhanced security features for your workloads.
+A pillar of cloud security is cloud workload protection. Through cloud workload protection capabilities, Microsoft Defender for Cloud is able to detect and resolve threats to resources, workloads, and services. Cloud workload protections are delivered through integrated Microsoft Defender plans, specific to the types of resources in your subscriptions and provide enhanced security features for your workloads.  
 
 #### Defender plans
 
-Microsoft Defender for Cloud includes a range of advanced intelligent protections for your workloads. The workload protections are provided through Microsoft Defender plans specific to the types of resources in your subscriptions. The Microsoft Defender for Cloud plans you can select from are:
+Microsoft Defender for Cloud includes a range of advanced intelligent protections for your workloads. The workload protections are provided through Microsoft Defender plans specific to the types of resources in your subscriptions. Some of the Microsoft Defender for Cloud plans you can select from include:
 
 - **Microsoft Defender for servers** adds threat detection and advanced defenses for your Windows and Linux machines.
 - **Microsoft Defender for App Service** identifies attacks targeting applications running over App Service.
@@ -42,3 +36,5 @@ Microsoft Defender plans specific to the types of resources in your subscription
 - Access and application controls - Block malware and other unwanted applications by applying machine learning powered recommendations adapted to your specific workloads to create allowlists and blocklists. Reduce the network attack surface with just-in-time, controlled access to management ports on Azure VMs. Access and application controls drastically reduce exposure to brute force and other network attacks.
 
 Additional benefits include threat protection for the resources connected to the Azure environment and container security features, among others.  Some features may be associated with specific Defender plans for specific workloads.
+
+:::image type="content" source="../media/defender-for-cloud-enhanced-features-inline.png" lightbox="../media/defender-for-cloud-enhanced-features-expanded.png" alt-text="Screenshot showing feature set of Microsoft Defender for Cloud. The feature set without enhanced security consists of continuous assessments and secure score.  The enhanced security features that are part of Defender plans adds just-in-time access, threat protection, adaptive controls and more.":::

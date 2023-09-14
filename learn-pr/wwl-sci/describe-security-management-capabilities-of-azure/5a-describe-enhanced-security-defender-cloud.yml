@@ -4,11 +4,11 @@ title: Describe the enhanced security of Microsoft Defender for Cloud
 metadata:
   title: Describe the enhanced security of Microsoft Defender for Cloud
   description: "Describe the enhanced security of Microsoft Defender for Cloud"
-  ms.date: 04/24/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.service: azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-describe-enhanced-security-defender-cloud.md)]
+  [!include[](includes/5a-describe-enhanced-security-defender-cloud.md)]

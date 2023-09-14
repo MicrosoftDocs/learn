@@ -4,11 +4,11 @@ title: Describe Cloud security posture management
 metadata:
   title: Describe Cloud security posture management
   description: "Describe Cloud security posture management"
-  ms.date: 04/24/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.service: azure
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
-  [!include[](includes/2-describe-cloud-security-posture-management.md)]
+  [!include[](includes/4-describe-cloud-security-posture-management.md)]
