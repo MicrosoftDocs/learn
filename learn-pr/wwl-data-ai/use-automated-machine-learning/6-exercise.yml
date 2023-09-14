@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-automated-machine-learning.exercise
-title: Exercise - Explore Automated Machine Learning in Azure ML
+title: Exercise - Explore Automated Machine Learning in Azure Machine Learning
 metadata:
-  title: Exercise - Explore Automated Machine Learning in Azure ML
-  description: "Exercise - Explore Automated Machine Learning in Azure ML"
-  ms.date: 05/15/2023
+  title: Exercise - Explore Automated Machine Learning in Azure Machine Learning
+  description: "Exercise - Explore Automated Machine Learning in Azure Machine Learning"
+  ms.date: 09/14/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: machine-learning
 durationInMinutes: 50
 content: |
   [!include[](includes/6-exercise.md)]
