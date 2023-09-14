@@ -211,7 +211,7 @@ In certain cases, we want to short-circuit the remainder of the code in the code
     if (current >= 8) continue;
     ```
 
-    Since our code that writes the value of `current` to the console is located after the `if (current >= 8) continue;`, our code ensures that a value of `current` that is greater that or equal to `8` will never be written to the output window.
+    Since our code that writes the value of `current` to the console is located after the `if (current >= 8) continue;`, our code ensures that a value of `current` that is greater than or equal to `8` will never be written to the output window.
 
     Let's try it out.
 
