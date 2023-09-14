@@ -5,8 +5,6 @@ The Azure AI Language provides an API for common text analysis techniques that y
 
 In this module, you will learn how to use Azure AI Language to:
 
-- Detect language
-- Extract key phrases
-- Analyze sentiment
-- Extract entities
-- Extract linked entities
+- Detect language from text.
+- Analyze text sentiment.
+- Extract key phrases, entities, and linked entities.

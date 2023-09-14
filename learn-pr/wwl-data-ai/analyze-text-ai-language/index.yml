@@ -12,11 +12,9 @@ title: Analyze text with Azure AI Language
 summary: The Azure AI Language service enables you to create intelligent apps and services that extract semantic information from text.
 abstract: |
   In this module, you'll learn how to use the Azure AI Language service to:
-  - Detect language
-  - Extract key phrases
-  - Analyze sentiment
-  - Extract entities
-  - Extract linked entities
+  - Detect language from text
+  - Analyze text sentiment
+  - Extract key phrases, entities, and linked entities
 prerequisites: |
   Before starting this module, you'll need
   - Familiarity with Microsoft Azure and the Azure portal.
