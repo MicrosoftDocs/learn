@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.prepare-to-maintain-sql-databases-azure.summary
+uid: learn-wwl.perform-post-migration-tasks-azure-sql.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 03/06/2023
+  ms.date: 09/14/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial

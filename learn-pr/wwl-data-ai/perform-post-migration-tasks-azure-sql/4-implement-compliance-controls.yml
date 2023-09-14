@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.perform-post-migration-tasks-azure-sql.implement-compliance-controls
+title: Implement compliance controls for sensitive data
+metadata:
+  title: Implement compliance controls for sensitive data
+  description: "Implement compliance controls for sensitive data."
+  ms.date: 09/14/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-implement-compliance-controls.md)]

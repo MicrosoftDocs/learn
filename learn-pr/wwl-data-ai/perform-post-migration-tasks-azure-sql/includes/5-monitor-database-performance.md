@@ -4,7 +4,7 @@ All the tools that are typically used for monitoring and troubleshooting SQL Ser
 
 ## Compare performance results with your baseline
 
-The process of establishing a baseline typically begins well in advance of the actual database migration. This involves collecting a comprehensive set of data measurements that reflect the standard performance of the database in its original environment. These measurements may include, but are not limited to, CPU usage, response times, transaction rates, and error rates. 
+The process of establishing a baseline typically begins well in advance of the actual database migration. This involves collecting a comprehensive set of data measurements that reflect the standard performance of the database in its original environment. These measurements may include, but aren't limited to, CPU usage, response times, transaction rates, and error rates. 
 
 This baseline serves as a reference point against which the performance of the migrated database can be compared. However, the evaluation or comparison of this baseline data with the performance metrics of the migrated database only takes place after the migration has been completed.
 
@@ -62,15 +62,15 @@ FROM sys.database_automatic_tuning_options
 
 Index creation is resource intensive, and its successful creation is critical to ensure no negative effect on your workloads.
 
-Azure SQL Database will monitor the resources needed to implement new indexes automatically to prevent performance degradation. The tuning action is delayed until resources become available, for instance, when resources needed for existing workloads prevent index creation.
+Azure SQL Database monitors the resources needed to implement new indexes automatically to prevent performance degradation. The tuning action is delayed until resources become available, for instance, when resources needed for existing workloads prevent index creation.
 
 ## Explore Query Performance Insight
 
-The initial phase of any database performance optimization task involves pinpointing the queries that are the most resource-intensive. In previous SQL Server versions, this required extensive tracing and a set of intricate SQL scripts, making the data collection process quite laborious.
+The initial phase of any database performance optimization task involves pinpointing the queries that are the most resource-intensive. In previous SQL Server versions, this required extensive tracing and a set of intricate SQL scripts, making the data collection process laborious.
 
 ### Identify problematic queries
 
-Azure SQL Database offers a tool called [Query Performance Insight](/azure/azure-sql/database/query-performance-insight-use), that allows the administrator to quickly identity expensive queries. You’ll find it in your Azure SQL Database’s main blade, under the **Intelligent Performance** section.
+Azure SQL Database offers a tool called [Query Performance Insight](/azure/azure-sql/database/query-performance-insight-use) that allows the administrator to quickly identity expensive queries. You find it in your Azure SQL Database’s main blade, under the **Intelligent Performance** section.
 
 Query Performance Insight in Azure SQL Database provides three filtering options: for long-running queries, top resource-consuming queries (which is the default), or a custom filter. It displays the top five queries sorted by a chosen resource, such as CPU, Data IO, or Log IO. You can drill into individual queries by selecting the row within the lower grid. Each row is marked with a distinct color that matches the color in the bar graph.
 
@@ -80,7 +80,7 @@ The custom tab offers more flexibility than the other options. It allows for a m
 
 [![Screenshot of a custom Dashboard in Query Performance Insight.](../media/5-performance-monitor-dashboard.png)](../media/5-performance-monitor-dashboard.png#lightbox)
 
-If we drill into an individual query, we'll be able to see the query ID and the query itself, as well as the query aggregation type and associated time period. 
+If we drill into an individual query, we're able to see the query ID and the query itself, as well as the query aggregation type and associated time period. 
 
 :::image type="content" source="../media/5-performance-monitor-details.png" alt-text="Screenshot of the details of Query ID 3204 in Query Performance Insight.":::
 
@@ -90,7 +90,7 @@ While Query Performance Insight doesn't show the query’s execution plan, you c
 
 You can set up performance alerts for databases in Azure SQL Database using the Azure portal. These alerts can notify you via email or call a webhook when a certain metric (like database size or CPU usage) reaches a threshold. 
 
-The process for setting up alerts is similar between SQL Database and SQL Managed Instance. To set up performance alerts for Azure SQL Database, navigate to the **Monitoring** section and select **Alerts**. From there, you'll need to establish a new alert rule, define a condition, and create an action group.
+The process for setting up alerts is similar between SQL Database and SQL Managed Instance. To set up performance alerts for Azure SQL Database, navigate to the **Monitoring** section and select **Alerts**. From there, you need to establish a new alert rule, define a condition, and create an action group.
 
 For more information on alerts for Azure SQL Managed Instance, you can visit [Create alerts for Azure SQL Managed Instance using the Azure portal](/azure/azure-sql/managed-instance/alerts-create). If you're interested in Azure SQL Database, see [Create alerts for Azure SQL Database and Azure Synapse Analytics using the Azure portal](/azure/azure-sql/database/alerts-insights-configure-portal).
 
@@ -101,7 +101,7 @@ For more information on alerts for Azure SQL Managed Instance, you can visit [Cr
 > [!IMPORTANT]
 > We suggest setting up Azure SQL Insights only after the migrated database has been fully integrated into production. This prevents the tool from capturing noisy data during the migration and testing phase.
 
-To get started with SQL Insights, you need a dedicated virtual machine that will monitor and remotely collect data from your SQL servers. This dedicated virtual machine needs to have the following components installed:
+To get started with SQL Insights, you need a dedicated virtual machine that monitors and remotely collect data from your SQL servers. This dedicated virtual machine needs to have the following components installed:
 
 - Azure Monitor agent
 - Workload Insights extension
@@ -112,7 +112,7 @@ Additionally, the following components are required to set up SQL Insights.
 
 **Log Analytics workspace –** where to send the SQL monitoring data to.
 
-**Collection settings –** you can customize the data collection for your profile. The default settings cover the majority of monitoring scenarios and usually don't need to be changed.
+**Collection settings –** you can customize the data collection for your profile. The default settings cover most monitoring scenarios and usually don't need to be changed.
 
 ## Extended events
 
@@ -124,6 +124,6 @@ Here are some key differences when configuring extended events on Azure SQL Data
 
 1. **Transact-SQL**: When executing the `CREATE EVENT SESSION` command on SQL Server, you use the `ON SERVER` clause. But on Azure SQL Database, you use the `ON DATABASE` clause instead. The `ON DATABASE` clause also applies to the `ALTER EVENT SESSION` and `DROP EVENT SESSION` Transact-SQL commands. Azure SQL Database supports only database-scoped sessions.
 
-3. **Database-scoped sessions**: Extended events are founded on the single-tenant isolation model in Azure SQL Database. An event session in one database cannot access data or events from another database. You cannot issue a `CREATE EVENT SESSION` statement in the context of the master database¹.
+3. **Database-scoped sessions**: Extended events are founded on the single-tenant isolation model in Azure SQL Database. An event session in one database can't access data or events from another database. You can't issue a `CREATE EVENT SESSION` statement in the context of the master database¹.
 
 4. **Storage**: Since you don’t have access to the file system of the server where your database lives in Azure SQL Database, you can configure a storage account target to store your extended event sessions.

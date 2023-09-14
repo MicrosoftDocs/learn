@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.perform-post-migration-tasks-azure-sql.migrate-sql-logins
+title: Introduction
+metadata:
+  title: Migrate SQL logins and groups
+  description: "Learn how to migrate SQL logins and groups using the tools available."
+  ms.date: 09/14/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-migrate-sql-logins.md)]

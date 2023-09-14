@@ -21,9 +21,9 @@ You can configure server-level firewall rules through the Azure portal or by usi
 
 Database-level rules offer more specific control within individual databases. You can configure database-level firewall rules through T-SQL only using the `sp_set_database_firewall_rule` stored procedure from within the user database.
 
-When connecting, Azure SQL Database checks for a database-level firewall rule specific to the provided database name. If that rule is not found, it checks the server-level IP firewall rules, which apply to all databases on the server. If either rule exists, the connection is established.
+When connecting, Azure SQL Database checks for a database-level firewall rule specific to the provided database name. If that rule isn't found, it checks the server-level IP firewall rules, which apply to all databases on the server. If either rule exists, the connection is established.
 
-If neither rule exists, and the user is using SQL Server Management Studio or Azure Data Studio to connect, they will be prompted to create a firewall rule.
+If neither rule exists, and the user is using SQL Server Management Studio or Azure Data Studio to connect, they'll be prompted to create a firewall rule.
 
 :::image type="content" source="../media/3-database-firewall-rule.png" alt-text="Screenshot showing the new firewall rule dialog from SQL Server Management Studio.":::
 
@@ -48,7 +48,7 @@ There are two different ways you can enable Microsoft Defender for SQL.
 
 You have two configuration choices for SQL Vulnerability Assessment: 
 
-1. [**Express Configuration**](/azure/defender-for-cloud/sql-azure-vulnerability-assessment-enable#express-configuration): It is the default option and doesn't require external storage for baseline and scan results.
+1. [**Express Configuration**](/azure/defender-for-cloud/sql-azure-vulnerability-assessment-enable#express-configuration): It's the default option and doesn't require external storage for baseline and scan results.
 
 2. [**Classic Configuration**](/azure/defender-for-cloud/sql-azure-vulnerability-assessment-enable#classic-configuration): It needs you to manage an Azure storage account for storing baseline and scan result data.
 
@@ -58,7 +58,7 @@ You have two configuration choices for SQL Vulnerability Assessment:
 
 [Advanced Threat Protection](/azure/azure-sql/database/threat-detection-configure) enhances the security of Azure SQL by detecting and responding to unusual or potentially harmful database access attempts.
 
-It provides security alerts for suspicious database activities, potential vulnerabilities, SQL injection attacks, and abnormal access patterns, integrated with Microsoft Defender for Cloud. This integration offers insights and recommended actions for investigating and mitigating threats, making it accessible to non-security experts.
+It provides security alerts for suspicious database activities, potential vulnerabilities, SQL injection attacks, and abnormal access patterns, integrated with Microsoft Defender for Cloud. This integration offers insights and recommended actions for investigating and mitigating threats, making it accessible to nonsecurity experts.
 
 :::image type="content" source="../media/3-advanced-threat-protection.png" alt-text="Screenshot showing the advanced threat protection recommendation list on Azure portal.":::
 

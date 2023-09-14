@@ -1,6 +1,6 @@
-A major portion of configuring disaster recovery and high availability solutions in SQL Server remains the same in SQL Server running on Azure Virtual Machine. The high availability solution is designed to guarantee that no committed data is lost due to failures, that your workload remains unaffected by maintenance operations, and that the database does not become a single point of failure in your software architecture.
+A major portion of configuring disaster recovery and high availability solutions in SQL Server remains the same in SQL Server running on Azure Virtual Machine. The high availability solution is designed to guarantee that no committed data is lost due to failures, that your workload remains unaffected by maintenance operations, and that the database doesn't become a single point of failure in your software architecture.
 
-The majority of Azure SQL service tiers offer a range of [high availability options](/azure/azure-sql/database/high-availability-sla), from local redundancy to zone redundancy models.
+Most Azure SQL service tiers offer a range of [high availability options](/azure/azure-sql/database/high-availability-sla), from local redundancy to zone redundancy models.
 
 Next, we'll explore the specific solutions for disaster recovery and high availability for Azure's PaaS offerings.
 
@@ -12,7 +12,7 @@ Weekly full backups, differential backups every 12 to 24 hours, and transaction 
 
 ### Long-term retention (LTR)
 
-[Long-term retention](/azure/azure-sql/database/long-term-retention-overview) is useful for scenarios that require you to set the retention policy beyond what is offered by Azure. You can set a retention policy for up to 10 years, and this option is disabled by default.
+Azure offers a retention policy that you can set beyond the usual limits, which is useful for scenarios requiring [long-term retention](/azure/azure-sql/database/long-term-retention-overview). You can set a retention policy for up to 10 years, and this option is disabled by default.
 
 > [![Screenshot of how to configure the long-term retention properties from Azure portal.](../media/6-long-term-retention.png)](../media/../media/6-long-term-retention.png#lightbox)
 
@@ -22,7 +22,7 @@ For more information about long-term retention, see [Long-term retention - Azure
 
 ## Geo-restore
 
-Backups for SQL Database and SQL Managed Instance are geo-redundant by default. This allows you to easily restore databases to a different geographical region, a feature that is particularly useful for less stringent disaster recovery scenarios.
+Backups for SQL Database and SQL Managed Instance are geo-redundant by default. This allows you to easily restore databases to a different geographical region, a feature that is useful for less stringent disaster recovery scenarios.
 
 Backup storage is billed apart from regular database files storage. However, when provisioning a SQL Database, the backup storage is created with the maximum size of the data tier selected for your database at no extra cost.
 
@@ -30,7 +30,7 @@ The duration of a geo-restore operation can be affected by several underlying co
 
 ## Point-in-time restore (PITR)
 
-You can restore your databases to a specific point in time according to the retention defined, but PITR is only supported if you are restoring a database in the same server the backup was originated. You can use either Azure portal, Azure PowerShell, Azure CLI, or REST API to restore a SQL Database.
+You can restore your databases to a specific point in time according to the retention defined, but PITR is only supported if you're restoring a database in the same server the backup was originated. You can use either Azure portal, Azure PowerShell, Azure CLI, or REST API to restore a SQL Database.
 
 ## Active geo-replication
 
@@ -38,11 +38,11 @@ One method to increase availability for Azure SQL Database is to use [active geo
 
 This replica is readable, similar to an AlwaysOn availability group in SQL Server. Underneath the surface, Azure uses availability groups to maintain this functionality, which is why some of the terminologies are similar.
 
-Active geo-replication provides business continuity by allowing customers to programmatically or manually failover primary databases to secondary regions during major disaster. However, it’s important to note that Azure SQL Managed Instance does not support active geo-replication. Instead, you must use auto-failover groups, a topic we will explore later in this unit.
+Active geo-replication provides business continuity by allowing customers to programmatically or manually failover primary databases to secondary regions during major disaster. However, it’s important to note that Azure SQL Managed Instance doesn't support active geo-replication. Instead, you must use auto-failover groups, a topic we'll explore later in this unit.
 
 :::image type="content" source="../media/6-active-geo-replication.png" alt-text="Diagram of active geo-replication for Azure SQL Database.":::
 
-All the databases involved in a geo-replication relationship are required to have the same service tier. Additionally, to prevent replication performance issues due to a heavy write workload, we recommend to configure the secondary replica with the same compute size as the primary.
+All the databases involved in a geo-replication relationship are required to have the same service tier. Additionally, to prevent replication performance issues due to a heavy write workload, we recommend configuring the secondary replica with the same compute size as the primary.
 
 :::image type="content" source="../media/6-create-replica.png" alt-text="Screenshot of the replica page for Azure SQL Database.":::
 
@@ -66,7 +66,7 @@ An auto-failover group can include multiple databases. Both the primary and seco
 
 :::image type="content" source="../media/7-auto-failover-groups.png" alt-text="Auto-Failover Groups for Azure SQL Database and Azure SQL Managed Instance":::
 
-Auto-failover groups provide AG-like functionality called a listener, which allows both read-write and read-only activity. There are two different types of listeners: one for read-write and one for read-only traffic. Behind the scenes in a failover, DNS is updated so clients will be able to point to the abstracted listener name and not need to know anything else. The database server containing the read-write copies is the primary, and the server that is receiving the transactions from the primary is a secondary.
+Auto-failover groups provide AG-like functionality called a listener, which allows both read-write and read-only activity. There are two different types of listeners: one for read-write and one for read-only traffic. Behind the scenes in a failover, DNS is updated so clients are able to point to the abstracted listener name and not need to know anything else. The database server containing the read-write copies is the primary, and the server that is receiving the transactions from the primary is a secondary.
 
 There are two different policies for auto-failover groups.
 
@@ -77,7 +77,7 @@ There are two different policies for auto-failover groups.
 
 Failover is a process that can be manually initiated, even when automatic failover is enabled. However, the type of failover can influence whether data loss occurs. For instance, an unplanned failover might lead to data loss if it's forced and the secondary database hasn't fully synchronized with the primary.
 
-The `GracePeriodWithDataLossHours` determines the duration Azure waits before initiating a failover, with the default value set to one hour. If your Recovery Point Objective (RPO) is stringent and data loss is not an option, you can set this value higher. While this means Azure will wait longer before initiating a failover, it could potentially reduce data loss as it provides more time for the secondary database to synchronize fully with the primary.
+The `GracePeriodWithDataLossHours` determines the duration Azure waits before initiating a failover, with the default value set to one hour. If your Recovery Point Objective (RPO) is stringent and data loss isn't an option, you can set this value higher. While this means Azure waits longer before initiating a failover, it could potentially reduce data loss as it provides more time for the secondary database to synchronize fully with the primary.
 
 >[!NOTE]
 > The secondary database is created automatically through a process known as seeding, which can take time depending on the database size. So, it's important to plan ahead, considering factors like network speed.

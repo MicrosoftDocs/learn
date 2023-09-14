@@ -2,7 +2,7 @@ When working with automation from SQL Server, it's common to use SQL Agent to sc
 
 ## Azure Automation
 
-Azure Automation allows for process automation, configuration management, full integration with Azure platform options, such as role-based access control and Azure AD, and can manage Azure and on-premises resources.
+Azure Automation allows for process automation, configuration management, full integration with Azure platform options, such as role-based access control and Microsoft Entra ID, and can manage Azure and on-premises resources.
 
 With Azure Automation, you can easily control resources in both Azure and on-premises VMs. For example, you can use hybrid runbooks to automate tasks like starting a VM, running a SQL Server backup, and shutting down the VM, making it cost-effective and efficient.
 
@@ -19,7 +19,7 @@ Another common scenario is to use Azure Automation for periodic maintenance oper
 | **Credential** | Credentials store sensitive information that runbooks or configurations can use at runtime. |
 | **Schedule** | Schedules are linked to runbooks and trigger a runbook at a specific time. |
 
-To learn more about Azure CLI and Powershell commands available for managing Azure SQL Database and Azure SQL Managed Instance resources, refer to the following links: [PowerShell module for Azure SQL](/powershell/module/az.sql) and [Azure CLI for Azure SQL](/cli/azure/sql).
+To learn more about Azure CLI and PowerShell commands available for managing Azure SQL Database and Azure SQL Managed Instance resources, refer to the following links: [PowerShell module for Azure SQL](/powershell/module/az.sql) and [Azure CLI for Azure SQL](/cli/azure/sql).
 
 ## Elastic jobs
 
@@ -89,7 +89,7 @@ The script is a tool that automates the process of converting these jobs, saving
 
 The file is a zipped folder that contains the script and associated documentation. To use it, you'd download the file, and follow the instructions. 
 
-After you've entered all the parameters listed in the instructions, the job list will appear. The script will then create each job individually in a disabled state, assuming it doesn't already exist. Following the creation of a job, the steps are added with the same IDs, Command Text, Retry Attempts, and Initial Retry Interval Seconds. The database linked to the job step will be the target group. If the target group doesn't exist, it'll be created automatically. The copy won’t include schedules, alerts, and notifications.
+After you've entered all the parameters listed in the instructions, the job list will appear. The script will then create each job individually in a disabled state, assuming it doesn't already exist. Following the creation of a job, the steps are added with the same IDs, Command Text, Retry Attempts, and Initial Retry Interval Seconds. The database linked to the job step will be the target group. If the target group doesn't exist, it will be created automatically. The copy doesn’t include schedules, alerts, and notifications.
 
 ## Migrate SQL Agent jobs to SQL Agent on Azure
 

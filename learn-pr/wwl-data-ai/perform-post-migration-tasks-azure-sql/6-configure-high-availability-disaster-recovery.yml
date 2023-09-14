@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.prepare-to-maintain-sql-databases-azure.design-azure-sql-database-for-cloud-native-applications
-title: Design Azure SQL Database for cloud-native applications
+uid: learn-wwl.perform-post-migration-tasks-azure-sql.configure-high-availability-disaster-recovery
+title: Configure high availability and disaster recovery
 metadata:
-  title: Design Azure SQL Database for cloud-native applications
-  description: "Design Azure SQL Database for cloud-native applications"
-  ms.date: 03/06/2023
+  title: Configure high availability and disaster recovery
+  description: "Learn how to configure high availability and disaster recovery in Azure SQL."
+  ms.date: 09/14/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
-  [!include[](includes/4-design-azure-sql-database-for-cloud-native-applications.md)]
+  [!include[](includes/6-configure-high-availability-disaster-recovery.md)]

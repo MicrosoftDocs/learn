@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.prepare-to-maintain-sql-databases-azure.explore-azure-sql-database-managed-instance
-title: Explore Azure SQL Database Managed Instance
+uid: learn-wwl.perform-post-migration-tasks-azure-sql.automate-database-tasks-scalability
+title: Automate database tasks for scalability
 metadata:
-  title: Explore Azure SQL Database Managed Instance
-  description: "Explore Azure SQL Database Managed Instance"
-  ms.date: 03/06/2023
+  title: Automate database tasks for scalability
+  description: "Learn how to automate database tasks for scalability."
+  ms.date: 09/14/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
-  [!include[](includes/5-explore-azure-sql-database-managed-instance.md)]
+  [!include[](includes/7-automate-database-tasks-scalability.md)]

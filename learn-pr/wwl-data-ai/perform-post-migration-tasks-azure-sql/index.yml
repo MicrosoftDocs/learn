@@ -1,15 +1,15 @@
 ### YamlMime:Module
-uid: learn.wwl.prepare-to-maintain-sql-databases-azure
+uid: learn-wwl.perform-post-migration-tasks-azure-sql
 metadata:
-  title: Prepare to maintain SQL databases on Azure
-  description: "Prepare to maintain SQL databases on Azure"
-  ms.date: 03/06/2023
+  title: Perform post-migration tasks on Azure SQL
+  description: "Discover the tools and features available to migrate SQL workloads from on-premises to Azure Virtual Machines (VMs), including the Azure SQL Migration extension for Azure Data Studio and and Data Migration Assistant."
+  ms.date: 09/14/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.service: sql-database
-title: Prepare to maintain SQL databases on Azure
-summary: Explore the role of a database administrator on Azure. Describe SQL Server-based offerings on Azure.
+  ms.prod: learning-azure
+title: Perform post-migration tasks on Azure SQL
+summary: You'll explore different features and tools to help you maintain Azure SQL environments.
 abstract: |
   At the end of this module, you will be able to:
   *   Understand the role of Azure Database Administrator as it fits in with other data platform roles.
@@ -18,28 +18,30 @@ abstract: |
 prerequisites: |
   *   Ability to navigate the Azure the portal.
   *   Understanding of the traditional Database Administration role.
-  *   Experience with T-SQL programing language at a basic level.
-iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
+  *   Experience with T-SQL programming language at a basic level.
+iconUrl: /training/achievements/1-perform-post-migration-tasks-azure-sql.svg
 levels:
 - intermediate
 roles:
-- data-analyst
+- administrator
 - data-engineer
 - database-administrator
+- developer
+- solution-architect
 products:
 - azure-sql-database
-- azure-sql-managed-instance
-- azure-sql-virtual-machines
+- azure-virtual-machines
 - sql-server
-subjects:
-- database
 units:
-- learn.wwl.prepare-to-maintain-sql-databases-azure.introduction
-- learn.wwl.prepare-to-maintain-sql-databases-azure.describe-azure-data-platform-roles
-- learn.wwl.prepare-to-maintain-sql-databases-azure.understand-sql-server-azure-virtual-machine
-- learn.wwl.prepare-to-maintain-sql-databases-azure.design-azure-sql-database-for-cloud-native-applications
-- learn.wwl.prepare-to-maintain-sql-databases-azure.explore-azure-sql-database-managed-instance
-- learn.wwl.prepare-to-maintain-sql-databases-azure.knowledge-check
-- learn.wwl.prepare-to-maintain-sql-databases-azure.summary
+- learn-wwl.perform-post-migration-tasks-azure-sql.introduction
+- learn-wwl.perform-post-migration-tasks-azure-sql.migrate-sql-logins
+- learn-wwl.perform-post-migration-tasks-azure-sql.protect-azure-sql-security-features
+- learn-wwl.perform-post-migration-tasks-azure-sql.implement-compliance-controls
+- learn-wwl.perform-post-migration-tasks-azure-sql.monitor-database-performance
+- learn-wwl.perform-post-migration-tasks-azure-sql.configure-high-availability-disaster-recovery
+- learn-wwl.perform-post-migration-tasks-azure-sql.automate-database-tasks-scalability
+- learn-wwl.perform-post-migration-tasks-azure-sql.exercise-configure-geo-replication
+- learn-wwl.perform-post-migration-tasks-azure-sql.knowledge-check
+- learn-wwl.perform-post-migration-tasks-azure-sql.summary
 badge:
-  uid: learn.wwl.prepare-to-maintain-sql-databases-azure.badge
+  uid: learn-wwl.perform-post-migration-tasks-azure-sql.badge

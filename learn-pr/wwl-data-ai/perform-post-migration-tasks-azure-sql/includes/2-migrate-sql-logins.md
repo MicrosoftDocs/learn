@@ -2,7 +2,7 @@ For a seamless and secure transition of your SQL Server databases to Azure SQL, 
 
 ## Decide when to migrate SQL logins and groups
 
-Imagine a large organization with a substantial on-premises SQL Server infrastructure that serves various business units. Each business unit has its own set of SQL logins, user roles, and permissions customized to their specific needs. The organization decides to migrate these databases to Azure SQL Database to leverage the cloud's scalability benefits.
+Imagine a large organization with a substantial on-premises SQL Server infrastructure that serves various business units. Each business unit has its own set of SQL logins, user roles, and permissions customized to their specific needs. The organization decides to migrate these databases to Azure SQL Database to use the cloud's scalability benefits.
 
 In this scenario, migrating the logins upfront, before the database migration, could introduce unnecessary complexity to the testing phase.
 
@@ -45,7 +45,7 @@ Follow these steps to migrate logins using the migration extension in Azure Data
 
 ### Using DMA
 
- As part of login migration, Data Migration Assistant assigns the permissions to securables on the target SQL Server as they exist on the source SQL Server. If the login already exists on the target SQL Server, Data Migration Assistant migrates only the permissions assigned to securables and won’t re-create the whole login. Data Migration Assistant makes the best effort to map the login to database users if the login already exists on the target server.
+ As part of login migration, Data Migration Assistant assigns the permissions to securables on the target SQL Server as they exist on the source SQL Server. If the login already exists on the target SQL Server, Data Migration Assistant migrates only the permissions assigned to securables and don't re-create the whole login. Data Migration Assistant makes the best effort to map the login to database users if the login already exists on the target server.
 
 Data Migration Assistant currently doesn’t support:
 
@@ -61,11 +61,11 @@ Data Migration Assistant currently doesn’t support:
 
 The [MoveLogins script](/download/details.aspx?id=103111) assists in transferring login information from on-premises SQL Servers to Azure SQL Database or other PaaS offerings.
 
-While tools like the Data Migration Assistant (DMA) has the ability to transfer security information and does a full dependency graph to ensure permissions are transferred properly, the *MoveLogins* script provides an additional option. It enables an Active Directory lookup for users, allowing you to obtain their User Principal Name (UPN), a feature currently not supported by DMA.
+While Data Migration Assistant (DMA) has the ability to transfer security information and does a full dependency graph to ensure permissions are transferred properly, the *MoveLogins* script provides an extra option. It enables an Active Directory lookup for users, allowing you to obtain their User Principal Name (UPN), a feature currently not supported by DMA.
 
-The script, written in PowerShell, generates a T-SQL script that can be applied to the target SQL environment to transfer logins, database users, roles and permissions. It does not execute the commands on the target environment. You need to carefully review the generated script output before applying it to the target environment.
+The script, written in PowerShell, generates a T-SQL script that can be applied to the target SQL environment to transfer logins, database users, roles and permissions. It doesn't execute the commands on the target environment. You need to carefully review the generated script output before applying it to the target environment.
 
-The script generates different results depending on whether you're using Azure SQL Database, or Azure SQL Managed Instance. In Azure SQL Database, you can't create AAD logins and related database users; instead, AAD users are created at the database level. For Azure SQL Managed Instance, it's similar to on-premises SQL Server with server-level logins and database users.
+The script generates different results depending on whether you're using Azure SQL Database, or Azure SQL Managed Instance. In Azure SQL Database, you can't create Microsoft Entra logins and related database users; instead, Microsoft Entra users are created at the database level. For Azure SQL Managed Instance, it's similar to on-premises SQL Server with server-level logins and database users.
 
 >[!NOTE]
 > We suggest starting with a dedicated migration tool like Azure Migration extension or DMA to transfer logins. If you encounter any issues with these recommended tools, you can consider alternative methods like using this script.

@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.prepare-to-maintain-sql-databases-azure.describe-azure-data-platform-roles
-title: Describe Microsoft Intelligent Data Platform roles
+uid: learn-wwl.perform-post-migration-tasks-azure-sql.protect-azure-sql-security-features
+title: Implement security to protect Azure SQL
 metadata:
-  title: Describe Microsoft Intelligent Data Platform roles
-  description: "Describe Microsoft Intelligent Data Platform roles"
-  ms.date: 03/06/2023
+  title: Implement security to protect Azure SQL
+  description: "Learn how to implement security to protect Azure SQL."
+  ms.date: 09/14/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 9
 content: |
-  [!include[](includes/2-describe-azure-data-platform-roles.md)]
+  [!include[](includes/3-protect-azure-sql-security-features.md)]

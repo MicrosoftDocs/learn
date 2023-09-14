@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.perform-post-migration-tasks-azure-sql.exercise-configure-geo-replication
+title: 'Exercise: Configure geo-replication for Azure SQL Database'
+metadata:
+  title: 'Exercise: Configure geo-replication for Azure SQL Database'
+  description: "Learn how to configure geo-replication for Azure SQL Database."
+  ms.date: 09/14/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/8-exercise-configure-geo-replication.md)]

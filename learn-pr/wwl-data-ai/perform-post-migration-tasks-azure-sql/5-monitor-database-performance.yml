@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.prepare-to-maintain-sql-databases-azure.understand-sql-server-azure-virtual-machine
-title: Understand SQL Server in an Azure virtual machine
+uid: learn-wwl.perform-post-migration-tasks-azure-sql.monitor-database-performance
+title: Monitor database performance
 metadata:
-  title: Understand SQL Server in an Azure virtual machine
-  description: "Understand SQL Server in an Azure virtual machine"
-  ms.date: 03/06/2023
+  title: Monitor database performance
+  description: "Learn how to monitor database performance in Azure SQL."
+  ms.date: 09/14/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 4
+durationInMinutes: 7
 content: |
-  [!include[](includes/3-understand-sql-server-azure-virtual-machine.md)]
+  [!include[](includes/5-monitor-database-performance.md)]
