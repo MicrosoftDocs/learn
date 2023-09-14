@@ -45,6 +45,6 @@ GitHub offers a multitude of benefits for individual developers, including:
 
 Embracing version control, especially utilizing the robust capabilities of GitHub, unlocks the potential to avoid the hurdles that come with individual project management. By embracing this streamlined solution, you can improve your workflow, maintain a comprehensive record of changes (that allows you to track when things go wrong for example), and significantly improve your work efficiency.
 
-To learn more about GitHub, see the [Introduction to GitHub](../../../github/introduction-to-github/) Microsoft Learn module or the [Getting started with GitHub](https://docs.github.com/en/get-started) documentation.
+To learn more about GitHub, see the [Introduction to GitHub](../../../github/introduction-to-github/index.yml) Microsoft Learn module or the [Getting started with GitHub](https://docs.github.com/en/get-started) documentation.
 
 The next step is to try out Git for yourself!

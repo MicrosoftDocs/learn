@@ -38,6 +38,8 @@ To start creating a repository and explore the options for public and private re
 
 ## Clone a repository
 
+We'll need to clone the repository to make sure we can make changes to it using our local machine.
+
 1. On the main page of your GitHub repository, select the green **Code** button.
 
     :::image type="content" source="../media/fork-step-1.png" alt-text="Screenshot showing where to locate the code button on your new repository's homepage.":::
