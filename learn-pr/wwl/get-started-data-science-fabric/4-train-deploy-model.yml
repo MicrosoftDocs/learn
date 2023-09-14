@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-data-science-fabric.mlflow
-title: Use MLflow to track your experiments
+title: Train and score models with Microsoft Fabric
 metadata:
-  title: Use MLflow to track your experiments
-  description: "Use MLflow to track your experiments"
+  title: Train and score models with Microsoft Fabric
+  description: "Train and score models with Microsoft Fabric"
   ms.date: 06/07/2023
   author: wwlpublish
   ms.author: madiepev
@@ -13,6 +13,6 @@ metadata:
     - build-2023
     - build-2023-dataai
     - build-2023-fabric
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
-  [!include[](includes/4-mlflow.md)]
+  [!include[](includes/4-train-deploy-model.md)]
