@@ -21,7 +21,7 @@ Each rule specifies one or more of the following properties:
 
 The screenshot that follows shows the default inbound rules and outbound, which are included in all NSGs.
 
-:::image type="content" source="../media/network-security-group-rules-inline.png" lighbox="../media/network-security-group-rules-expanded.png" alt-text="Screenshot showing the default inbound and outbound rules for an Azure network security group.":::
+:::image type="content" source="../media/network-security-group-rules-inline.png" lightbox="../media/network-security-group-rules-expanded.png" alt-text="Screenshot showing the default inbound and outbound rules for an Azure network security group.":::
 
 Descriptions for the default inbound rules are as follows:.
 
