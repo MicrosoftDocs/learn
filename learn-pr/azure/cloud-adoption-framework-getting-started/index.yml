@@ -7,7 +7,7 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: interactive-tutorial
-  ms.service: cloud-adoption-framework
+  ms.service: caf
 title: Getting started with the Microsoft Cloud Adoption Framework for Azure
 summary: The Microsoft Cloud Adoption Framework for Azure is a guide to the full lifecycle of cloud adoption. Along your organization's journey to the cloud, you encounter roadblocks that can be easily removed through common approaches that thousands of customers share.
 abstract: |
