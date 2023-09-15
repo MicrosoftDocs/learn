@@ -7,13 +7,13 @@ With a central identity provider, organizations can establish authentication and
 
 Watch this video for more information about modern authentication and how it works with a central identity provider.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Kdt9 ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=24d9f006-33a7-4b37-9aba-d35f16ab372d]
 
 As you see in the video, thanks to modern authentication, the client communicates with the identity provider by giving an identity that can be authenticated. When the identity (which can be a user or an application)  has been verified, the identity provider issues a *security token* that the client sends to the server.
 
 The server validates the security token through its *trust relationship* with the identity provider. By using the security token and the information that's contained within it, the user or application accesses the required resources on the server. In this scenario, the token and the information it contains is stored and managed by the identity provider. The centralized identity provider is supplying the authentication service.
 
-Microsoft Azure Active Directory is an example of a cloud-based identity provider.  Other examples include Twitter, Google, Amazon, LinkedIn, and GitHub.
+Microsoft Entra ID is an example of a cloud-based identity provider.  Other examples include Google, Amazon, LinkedIn, and GitHub.
 
 ### Single sign-on
 

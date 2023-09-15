@@ -1,5 +1,3 @@
-
-
 Imagine you trained a model to recommend restaurants. The model has been trained and tracked in Azure Machine Learning. You want to use the model in your application where consumers can browse restaurants in their area. Each time a consumer selects a restaurant in the application, you want the model to recommend other restaurants that might also be of interest to the consumer to improve the user experience. 
 
 Whenever you train a model, you ultimately will want to consume the model. You want to use the trained model to predict labels for new data on which the model hasn't been trained.

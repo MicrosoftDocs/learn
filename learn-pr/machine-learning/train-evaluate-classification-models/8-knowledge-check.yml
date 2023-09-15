@@ -15,36 +15,36 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
-  - content: "You plan to use scikit-learn to train a model that predicts credit default risk. The model must predict a value of 0 for loan applications that should be automatically approved, and 1 for applications where there is a risk of default that requires human consideration. What kind of model is required?"
+  - content: "You plan to use Scikit-Learn to train a model that predicts credit default risk. The model must predict a value of 0 for loan applications that should be automatically approved, and 1 for applications where there's a risk of default that requires human consideration. What kind of model is required?"
     choices:
     - content: "A binary classification model"
       isCorrect: true
-      explanation: "That is correct. A binary classification model predicts probability for two classes."
+      explanation: "Correct. A binary classification model predicts probability for two classes."
     - content: "A multi-class classification model"
       isCorrect: false
-      explanation: "That is incorrect. A multi-class classification model predicts probability for multiple class values."
+      explanation: "Incorrect. A multi-class classification model predicts probability for multiple class values."
     - content: "A linear regression model"
       isCorrect: false
-      explanation: "That is incorrect. A linear regression model predicts a numeric value."
-  - content: "You have trained a classification model using the scikit-learn LogisticRegression class. You want to use the model to return labels for new data in the array x_new. Which code should you use?"
+      explanation: "Incorrect. A linear regression model predicts a numeric value."
+  - content: "You have trained a classification model using the Scikit-Learn LogisticRegression class. You want to use the model to return labels for new data in the array x_new. Which code should you use?"
     choices:
     - content: "model.predict(x_new)"
       isCorrect: true
-      explanation: "That is correct. Use the predict method for inferencing labels for new data."
+      explanation: "Correct. Use the predict method for inferencing labels for new data."
     - content: "model.fit(x_new)"
       isCorrect: false
-      explanation: "That is incorrect. The fit() method is used to train a model."
+      explanation: "Incorrect. The fit() method is used to train a model."
     - content: "model.score(x_new, y_new)"
       isCorrect: false
-      explanation: "That is incorrect. The score() function returns the the mean accuracy of the model."
-  - content: "You train a binary classification model using scikit-learn. When you evaluate it with test data, you determine that the model achieves an overall Recall metric of 0.81. What does this metric indicate?"
+      explanation: "Incorrect. The score() function returns the mean accuracy of the model."
+  - content: "You train a binary classification model using Scikit-Learn. When you evaluate it with test data, you determine that the model achieves an overall Recall metric of 0.81. What does this metric indicate?"
     choices:
     - content: "The model correctly predicted 81% of the test cases"
       isCorrect: false
-      explanation: "That is incorrect. This information would be found using the Accuracy metric"
-    - content: "81% of the cases predicted as positive by the model were actually positive"
+      explanation: "Incorrect. This information would be found using the Accuracy metric."
+    - content: "81% of the cases predicted as positive by the model were positive."
       isCorrect: false
-      explanation: "That is incorrect. This information would be found using the Precision metric."
-    - content: "The model correctly identified 81% of positive cases as positive"
+      explanation: "Incorrect. This information would be found using the Precision metric."
+    - content: "The model correctly identified 81% of positive cases as positive."
       isCorrect: true
-      explanation: "That is correct. Recall indicates the proportion of actual positive cases that the classifier correctly identified."
+      explanation: "Correct. Recall indicates the proportion of actual positive cases that the classifier correctly identified."

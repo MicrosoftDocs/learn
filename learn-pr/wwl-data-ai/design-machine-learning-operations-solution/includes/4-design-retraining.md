@@ -1,6 +1,5 @@
 
 
-
 When preparing your model for production in a machine learning operations (MLOps) solution, you need to design for retraining. 
 
 Generally, there are two approaches to when you want to retrain a model:

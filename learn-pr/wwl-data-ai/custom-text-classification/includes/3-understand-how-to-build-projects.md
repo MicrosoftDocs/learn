@@ -1,8 +1,8 @@
-Custom text classification projects are your workspace to build, train, improve, and deploy your classification model. You can work with your project in two ways: through *Azure AI Language Studio* and via the REST API. Azure AI Language Studio is the GUI that will be used in the lab, but the REST API has the same functionality. Regardless of which method you prefer, the steps for developing your model are the same.
+Custom text classification projects are your workspace to build, train, improve, and deploy your classification model. You can work with your project in two ways: through **Language Studio** and via the REST API. Language Studio is the GUI that will be used in the lab, but the REST API has the same functionality. Regardless of which method you prefer, the steps for developing your model are the same.
 
-## Azure AI Language service project life cycle
+## Azure AI Language project life cycle
 
-[![Diagram that shows a life cycle with steps to define labels, tag data, train model, view model, improve model, deploy model, and classify text.](../media/classify-development-lifecycle.png)](../media/classify-development-lifecycle.png#lightbox)
+:::image type="content" source="../media/classify-development-lifecycle-small.png" alt-text="Diagram that shows a life cycle with steps to define labels, tag data, train model, view model, improve model, deploy model, and classify text." lightbox="../media/classify-development-lifecycle.png":::
 
 * **Define labels**: Understanding the data you want to classify, identify the possible labels you want to categorize into. In our video game example, our labels would be "Action", "Adventure", "Strategy", and so on.
 * **Tag data**: Tag, or label, your existing data, specifying the label or labels each file falls under. Labeling data is important since it's how your model will learn how to classify future files. Best practice is to have clear differences between labels to avoid ambiguity, and provide good examples of each label for the model to learn from. For example, we'd label the game "Quest for the Mine Brush" as "Adventure", and "Flight Trainer" as "Action".
@@ -28,7 +28,7 @@ To use the automatic split, put all files into the *training* dataset when label
 
 ## Deployment options
 
-The Azure AI Language service allows each project to create both multiple models and multiple deployments, each with their own unique name. Benefits include ability to:
+Azure AI Language allows each project to create both multiple models and multiple deployments, each with their own unique name. Benefits include ability to:
 
 * Test two models side by side
 * Compare how the split of datasets impact performance
@@ -41,20 +41,22 @@ During deployment you can choose the name for the deployed model, which can then
 
 ```json
 <...>
-    "customClassificationTasks":[
-        {
-            "parameters": {
-                    "project-name": "<YOUR PROJECT>",
-                    "deployment-name": "<YOUR DEPLOYMENT>"
-            }
-        }
-    ]
+  "tasks": [
+    {
+      "kind": "CustomSingleLabelClassification",
+      "taskName": "MyTaskName",
+      "parameters": {
+        "projectName": "MyProject",
+        "deploymentName": "MyDeployment"
+      }
+    }
+  ]
 <...>
 ```
 
 ## Using the REST API
 
-The REST API available for the Azure AI Language service allows for CLI development of Azure AI Language service projects in the same way that Azure AI Language Studio provides a user interface for building projects. Azure AI Language Studio is explored further in this module's lab.
+The REST API available for the Azure AI Language service allows for CLI development of Azure AI Language projects in the same way that Language Studio provides a user interface for building projects. Language Studio is explored further in this module's lab.
 
 ### Pattern of using the API
 
@@ -73,7 +75,7 @@ The URL to submit the request to varies on which step you are on, but all are pr
 For example, to train a model, you would create a **POST** to the URL that would look something like the following:
 
 ```rest
-<YOUR-ENDPOINT>/language/analyze-text/projects/<PROJECT-NAME>/:train?api-version=2021-11-01-preview
+<YOUR-ENDPOINT>/language/analyze-text/projects/<PROJECT-NAME>/:train?api-version=<API-VERSION>
 ```
 
 |Placeholder  |Value  | Example |
@@ -84,31 +86,31 @@ For example, to train a model, you would create a **POST** to the URL that would
 The following body would be attached to the request:
 
 ```json
-{
-  "modelLabel": "<YOUR-MODEL>",
-  "runValidation": true,
-  "evaluationOptions":
     {
-        "type":"percentage",
-        "testingSplitPercentage":"30",
-        "trainingSplitPercentage":"70"
+        "modelLabel": "<MODEL-NAME>",
+        "trainingConfigVersion": "<CONFIG-VERSION>",
+        "evaluationOptions": {
+            "kind": "percentage",
+            "trainingSplitPercentage": 80,
+            "testingSplitPercentage": 20
+        }
     }
-}
 ```
 
 |Key  |Value  |
 |---------|---------|
 |`<YOUR-MODEL>`    | Your model name.   |
+|`trainingConfigVersion`  | The model version to use to train your model. |
 |`runValidation`     | Boolean value to run validation on the test set.  |
 |`evaluationOptions`     | Specifies evaluation options.   |
-|`type`     | Specifies data split type. Can be `percentage` if you're using an automatic split, or `set` if you manually split your dataset  |
+|`kind`     | Specifies data split type. Can be `percentage` if you're using an automatic split, or `set` if you manually split your dataset  |
 |`testingSplitPercentage`     | Required integer field only if `type` is *percentage*. Specifies testing split.   |
 |`trainingSplitPercentage`     | Required integer field only if `type`  is *percentage*. Specifies training split.   |
 
 The response to the above request will be a `202`, meaning the request was successful. Grab the `location` value from the response headers, which will look similar to the following URL:
 
 ```rest
-<YOUR-ENDPOINT>/language/analyze-text/projects/<PROJECT-NAME>/train/jobs/<JOB-ID>?api-version=2021-11-01-preview
+<ENDPOINT>/language/analyze-text/projects/<PROJECT-NAME>/train/jobs/<JOB-ID>?api-version=<API-VERSION>
 ```
 
 |Key|Value|
@@ -123,33 +125,25 @@ To get the training status, use the URL from the header of the request response 
 
 ```json
 {
-  "jobs": [
-    {
-      "result": {
-        "trainedModelLabel": "<YOUR-MODEL>",
-        "trainStatus": {
-          "percentComplete": 0,
-          "elapsedTime": "string"
-        },
-        "evaluationStatus": {
-          "percentComplete": 0,
-          "elapsedTime": "string"
-        }
-      },
-      "jobId": "string",
-      "createdDateTime": "string",
-      "lastUpdatedDateTime": "string",
-      "expirationDateTime": "string",
-      "status": "unknown",
-      "errors": [
-        {
-          "code": "unknown",
-          "message": "string"
-        }
-      ]
+  "result": {
+    "modelLabel": "<MODEL-NAME>",
+    "trainingConfigVersion": "<CONFIG-VERSION>",
+    "estimatedEndDateTime": "2023-05-18T15:47:58.8190649Z",
+    "trainingStatus": {
+      "percentComplete": 3,
+      "startDateTime": "2023-05-18T15:45:06.8190649Z",
+      "status": "running"
+    },
+    "evaluationStatus": {
+      "percentComplete": 0,
+      "status": "notStarted"
     }
-  ],
-  "nextLink": "string"
+  },
+  "jobId": "<JOB-ID>",
+  "createdDateTime": "2023-05-18T15:44:44Z",
+  "lastUpdatedDateTime": "2023-05-18T15:45:48Z",
+  "expirationDateTime": "2023-05-25T15:44:44Z",
+  "status": "running"
 }
 ```
 
@@ -164,7 +158,7 @@ Using the model to classify text follows the same pattern as outlined above, wit
 To use your model, submit a **POST** to the *analyze* endpoint at the following URL:
 
 ```rest
-{YOUR-ENDPOINT}/text/analytics/v3.2-preview.2/analyze
+<ENDPOINT>/language/analyze-text/jobs?api-version=<API-VERSION>
 ```
 
 |Placeholder  |Value  | Example |
@@ -178,43 +172,46 @@ The following JSON structure would be attached to the request:
 
 ```json
 {
-    "displayName": "myJob",
-    "analysisInput": {
-        "documents": [
-            {
-                "id": "doc1", 
-                "text": "Text for document 1"
-            },
-            {
-                "id": "doc2",
-                "text": "Text for document 2"
-            }
-        ]
-    },
-    "displayName": "myClassification",
-    "tasks": {
-        "<TASK-REQUIRED>": [      
-            {
-                "parameters": {
-                      "project-name": "<YOUR-PROJECT>",
-                      "deployment-name": "<YOUR-DEPLOYMENT>"
-                }
-            }
-        ]
+  "displayName": "Classifying documents",
+  "analysisInput": {
+    "documents": [
+      {
+        "id": "1",
+        "language": "<LANGUAGE-CODE>",
+        "text": "Text1"
+      },
+      {
+        "id": "2",
+        "language": "<LANGUAGE-CODE>",
+        "text": "Text2"
+      }
+    ]
+  },
+  "tasks": [
+     {
+      "kind": "<TASK-REQUIRED>",
+      "taskName": "<TASK-NAME>",
+      "parameters": {
+        "projectName": "<PROJECT-NAME>",
+        "deploymentName": "<DEPLOYMENT-NAME>"
+      }
     }
+  ]
 }
 ```
 
 |Key  |Value  |
 |---------|---------|
-|`<TASK-REQUIRED>`     | Which task you're requesting. The task is `customMultiClassificationTasks` for multiple label projects, or `customClassificationTasks` for single label projects  |
-|`<YOUR-PROJECT>`    | Your project name.   |
-|`<YOUR-DEPLOYMENT>`    | Your deployment name.   |
+|`<TASK-REQUIRED>`     | Which task you're requesting. The task is `CustomMultiLabelClassification` for multiple label projects, or `CustomSingleLabelClassification` for single label projects  |
+|`<LANGUAGE-CODE>`    | The language code such as `en-us`. |
+|`<TASK-NAME>`    | Your task name.   |
+|`<PROJECT-NAME>`    | Your project name.   |
+|`<DEPLOYMENT-NAME>`    | Your deployment name.   |
 
 The response to the above request will be a `202`, meaning the request was successful. Look for the `operation-location` value in the response headers, which will look something like the following URL:
 
 ```rest
-{YOUR-ENDPOINT}/text/analytics/v3.2-preview.2/analyze/jobs/<jobId>
+<ENDPOINT>/language/analyze-text/jobs/<JOB-ID>?api-version=<API-VERSION>
 ```
 
 |Key|Value|
@@ -230,49 +227,43 @@ Submit a **GET** request to the endpoint from the previous request, with the sam
 
 ```json
 {
-    "jobId": "string",
-    "lastUpdateDateTime": "string",
-    "createdDateTime": "string",
-    "expirationDateTime": "string",
-    "status": "succeeded",
-    "errors": [],
-    "displayName": "string",
-    "tasks": {
-        "completed": 1,
-        "failed": 0,
-        "inProgress": 0,
-        "total": 1,
-        "customSingleClassificationTasks": [
+  "createdDateTime": "2023-05-19T14:32:25.578Z",
+  "displayName": "MyJobName",
+  "expirationDateTime": "2023-05-19T14:32:25.578Z",
+  "jobId": "xxxx-xxxxxx-xxxxx-xxxx",
+  "lastUpdateDateTime": "2023-05-19T14:32:25.578Z",
+  "status": "succeeded",
+  "tasks": {
+    "completed": 1,
+    "failed": 0,
+    "inProgress": 0,
+    "total": 1,
+    "items": [
+      {
+        "kind": "customSingleClassificationTasks",
+        "taskName": "Classify documents",
+        "lastUpdateDateTime": "2022-10-01T15:01:03Z",
+        "status": "succeeded",
+        "results": {
+          "documents": [
             {
-                "lastUpdateDateTime": "string",
-                "state": "succeeded",
-                "results": {
-                    "documents": [
-                        {
-                            "id": "doc1",
-                            "classification": {
-                                "category": "Classification1",
-                                "confidenceScore": 0.4
-                            },
-                            "warnings": []
-                        },
-                        {
-                            "id": "doc2",
-                            "classification": {
-                                "category": "Classification2",
-                                "confidenceScore": 0.6
-                            },
-                            "warnings": []
-                        }
-                    ],
-                    "errors": [],
-                    "projectName": "myProject",
-                    "deploymentName": "myDeployment"
-                }
+              "id": "<DOC-ID>",
+              "class": [
+                  {
+                      "category": "Class_1",
+                      "confidenceScore": 0.0551877357
+                  }
+              ],
+              "warnings": []
             }
-        ]
-    }
+          ],
+          "errors": [],
+          "modelVersion": "2022-04-01"
+        }
+      }
+    ]
+  }
 }
 ```
 
-The classification result is within the task array `results` object, for each document submitted.
+The classification result is within the items array's `results` object, for each document submitted.

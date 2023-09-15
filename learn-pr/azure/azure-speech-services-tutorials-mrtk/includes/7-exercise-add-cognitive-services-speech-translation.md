@@ -6,7 +6,7 @@ In this module, you will add speech translation to your project, which will allo
 
     :::image type="content" source="../media/translation-recognizer.png" alt-text="Screenshot of Add the Lunarcom Translation Recognizer (Script)." lightbox="../media/translation-recognizer.png":::
 
-2. If you now enter Game mode, you can test the speech translation by pressing the satellite button. Then, assuming your computer has a microphone, when you say something, your speech will be translated into the chosen language and transcribed on the terminal panel:
+2. If you now enter Game mode, you can test the speech translation by pressing the satellite button. Then, when you say something, your speech will be translated into the chosen language and transcribed on the terminal panel:
 
     :::image type="content" source="../media/test-speech-translation.png" alt-text="Screenshot of Test the speech translation." lightbox="../media/test-speech-translation.png":::
 

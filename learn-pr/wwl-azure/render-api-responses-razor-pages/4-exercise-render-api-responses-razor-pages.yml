@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.render-api-responses-razor-pages.exercise-render-api-responses-razor-pages
+title: Exercise - Render API responses in Razor Pages
+metadata:
+  title: Exercise - Render API responses in Razor Pages
+  description: "Exercise - Render API responses in Razor Pages"
+  ms.date: 09/11/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise-render-api-responses-razor-pages.md)]
