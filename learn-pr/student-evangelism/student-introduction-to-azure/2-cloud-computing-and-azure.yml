@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "A platform to share data over the internet."
       isCorrect: false
-      explanation: "Incorrect. Azure is not used to share data over the internet."
+      explanation: "Incorrect. Azure isn't used to share data over the internet."
     - content: "A service to manage your finances."
       isCorrect: false
-      explanation: "Incorrect. Azure does not provide financial services."
+      explanation: "Incorrect. Azure doesn't provide financial services."
     - content: "A platform to control and manage services and resources."
       isCorrect: true
       explanation: "Correct! Azure is a service that helps to control and manage services and resources."
@@ -45,7 +45,7 @@ quiz:
       explanation: "Correct! Azure can be used to help you find patterns in your data for marketing campaigns."
     - content: "A local bakery using Azure to host a website for online ordering and payment processing."
       isCorrect: false
-      explanation: "Incorrect. Azure can be used to host a website, but it is not used for payment processing."
+      explanation: "Incorrect. Azure can be used to host a website, but it isn't used for payment processing."
     - content: "A university using Azure to run virtual classrooms and manage student enrollment and grades."
       isCorrect: false
       explanation: "Incorrect. Azure isn't used to manage student enrollment and grades."
