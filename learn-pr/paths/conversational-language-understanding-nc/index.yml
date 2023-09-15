@@ -2,25 +2,25 @@
 uid: learn.wwl.conversational-language-understanding
 hidden: true
 metadata:
-  title: Create a natural language processing solution with Azure Cognitive Services for Language 
-  description: Create a natural language processing solution with Azure Cognitive Services for Language
+  title: Create a natural language processing solution with Azure AI Language 
+  description: Create a natural language processing solution with Azure AI Language
   ms.date: 07/18/2023
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
   ms.subservice: cognitive-services
-title: Create a natural language processing solution with Azure Cognitive Services for Language
+title: Create a natural language processing solution with Azure AI Language
 prerequisites: |
   Before starting this learning path, you should already have:
   *   Familiarity with Azure and the Azure portal.
   *   Experience programming with C# or Python.
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
 summary: |
-  In this learning path, you'll learn how Azure Cognitive Services for Language can enable you to understand natural language in your applications. You'll learn how to:
+  In this learning path, you'll learn how Azure AI Language can enable you to understand natural language in your applications. You'll learn how to:
   * Train a language model that apps can use to extract meaning from natural language.
   * Create question answering solutions that enable users to ask questions using natural language, and receive appropriate answers. 
-  * Learn how to train custom models using Azure Cognitive Services for Language.
+  * Learn how to train custom models using Azure AI Language.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -29,7 +29,6 @@ roles:
 - developer
 products:
 - azure
-- azure-language-understanding
 - ai-services
 - azure-sdks
 subjects:

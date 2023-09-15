@@ -29,7 +29,7 @@ roles:
 - student
 - developer
 products:
-- azure-app-service-static
+- static-web-apps
 subjects:
 - development-tools
 units:

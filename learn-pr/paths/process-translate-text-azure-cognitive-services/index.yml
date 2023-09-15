@@ -1,20 +1,20 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.process-translate-text-azure-cognitive-services
 metadata:
-  title: Process and translate text with Azure Cognitive Services
-  description: Process and translate text with Azure Cognitive Services
+  title: Process and translate text with Azure AI Services
+  description: Process and translate text with Azure AI Services
   ms.date: 12/07/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
-title: Process and translate text with Azure Cognitive Services
+title: Process and translate text with Azure AI Services
 prerequisites: |
   Before starting this learning path, you'll need
   - Familiarity with Microsoft Azure and the Azure portal.
   - Experience programming with C# or Python. If you're new to programming, consider completing the [Take your first steps with C#](../get-started-c-sharp-part-1/index.yml) or [Python for beginners](../beginner-python/index.yml) learning path first.
 summary: |
-  A large volume of the data that applications need to process is in text format. Using Azure Cognitive Services, you can create apps that extract semantic meaning from text and translate it between languages.
+  A large volume of the data that applications need to process is in text format. Using Azure AI Services, you can create apps that extract semantic meaning from text and translate it between languages.
 iconUrl: /training/achievements/process-and-translate-text-with-azure-cognitive-services.svg
 levels:
 - intermediate

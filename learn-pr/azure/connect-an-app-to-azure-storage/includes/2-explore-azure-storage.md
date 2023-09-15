@@ -20,7 +20,7 @@ Azure storage includes four types of data:
 - **Queues**: A messaging store for reliable messaging between application components.
 - **Table Storage**: A NoSQL store for schema-less storage of structured data. Table Storage isn't covered in this module.
 
-All of these data types in Azure Storage are accessible from anywhere in the world over HTTP or HTTPS. Microsoft provides SDKs for Azure Storage services in various programming languages, and in a [REST API](https://learn.microsoft.com/rest/api/storageservices/). You can also visually explore your data right in the Azure portal.
+All of these data types in Azure Storage are accessible from anywhere in the world over HTTP or HTTPS. Microsoft provides SDKs for Azure Storage services in various programming languages, and in a [REST API](/rest/api/storageservices/). You can also visually explore your data right in the Azure portal.
 
 ### Blobs
 
@@ -72,4 +72,4 @@ You can create an Azure storage account using the Azure portal, Azure PowerShell
  | **General-purpose v1 (GPv1)** | General-purpose v1 (GPv1) accounts provide access to all Azure Storage services but may not have the latest features or the lowest per gigabyte pricing. For example, cool storage and archive storage aren't supported in GPv1. Pricing is lower for GPv1 transactions, so workloads with high churn or high read rates may benefit from this account type. |
  | **Blob storage accounts** | A legacy account type, blob storage accounts support all the same block blob features as GPv2, but they're limited to supporting only block and append blobs. Pricing is broadly similar to pricing for general-purpose v2 accounts. |
 
-If you're interested in learning more about creating storage accounts, make sure to go through the [**Create an Azure storage account**](https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal) module in the learning portal.
+If you're interested in learning more about creating storage accounts, make sure to go through the [**Create an Azure storage account**](/azure/storage/common/storage-account-create?tabs=azure-portal) module in the learning portal.

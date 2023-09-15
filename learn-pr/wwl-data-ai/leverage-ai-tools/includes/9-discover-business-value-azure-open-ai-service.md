@@ -1,12 +1,10 @@
-
-
-Azure OpenAI Service is the latest addition to Azure Cognitive Services. It's evidence of Microsoft commitment to offer state-of-the-art AI models in a way that's accessible to business users.
+Azure OpenAI Service is the latest addition to Azure AI Services. It's evidence of Microsoft commitment to offer state-of-the-art AI models in a way that's accessible to business users.
 
 ## What is Azure OpenAI Service?
 
 OpenAI is a successful AI company that has lately developed some of the most famous generative AI models. ChatGPT and DALL-E are some of their creations. These models are available via a public API. As all generative AI, OpenAI models receive prompts or instructions from the user and send back AI-generated content.
 
-Azure OpenAI Service is a Microsoft product that enables users to leverage OpenAI models via **Azure Cognitive Services**. In other words, it allows you to access OpenAI models directly from Azure, instead of the public API. Keep in mind that Azure OpenAI Service isn't the only Microsoft product delivering  this kind of models to users. In previous units, we've already discussed generative AI included in Microsoft 365 Copilot and Copilot in Power Platform. These copilot features are powered by GPT, the OpenAI model for text generation.
+Azure OpenAI Service is a Microsoft product that enables users to leverage OpenAI models via **Azure AI Services**. In other words, it allows you to access OpenAI models directly from Azure, instead of the public API. Keep in mind that Azure OpenAI Service isn't the only Microsoft product delivering  this kind of models to users. In previous units, we've already discussed generative AI included in Microsoft 365 Copilot and Copilot in Power Platform. These copilot features are powered by GPT, the OpenAI model for text generation.
 
 ## What can you do with Azure OpenAI Service?
 

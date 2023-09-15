@@ -1,4 +1,3 @@
-
 Connecting securely to Azure Structured Query Language (SQL) Server is crucial for protecting sensitive data and maintaining the integrity of your database. Azure offers the capability to establish a secure connection using Azure Private Endpoint, which allows you to access your Azure SQL Server securely within your virtual network. In this training module, we will explore how to connect an Azure SQL Server using an Azure Private Endpoint in the Azure portal, ensuring that your database connections are secure and isolated.
 
 ## Scenario

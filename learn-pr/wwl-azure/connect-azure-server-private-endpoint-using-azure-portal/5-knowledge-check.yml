@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/05/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of using an Azure Private Endpoint to connect to an Azure SQL server?"
+    choices:
+    - content: "To establish a secure, private connection between the client and the SQL server"
+      isCorrect: true
+      explanation: "Correct. By using an Azure Private Endpoint, you can establish a secure, private connection between the client (such as an application or virtual machine) and the Azure SQL server. This connection ensures that data exchanged between the client and the SQL server remains within the Azure backbone network, enhancing security and isolating it from public internet traffic."
+    - content: "To improve the performance of the SQL server by reducing network latency"
+      isCorrect: false
+      explanation: "Incorrect. While Private Endpoint can enhance network performance, its primary purpose is to establish a secure, private connection, not specifically to improve performance."
+    - content: "To enable direct connectivity to the SQL server from on-premises networks"
+      isCorrect: false
+      explanation: "Incorrect. Private Endpoint provides connectivity options, but it does not specifically enable direct connectivity from on-premises networks."
+  - content: "Which Azure service is used to create and manage an Azure Private Endpoint for an Azure?"
+    choices:
+    - content: "Azure Private Link"
+      isCorrect: true
+      explanation: "Correct. Azure Private Link is the Azure service used to create and manage Private Endpoints. It allows you to securely connect to Azure services, including Azure SQL server, over a private network connection."
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "Incorrect. Azure SQL Database is the database service itself, not the service used to create and manage Private Endpoints."
+    - content: "Azure Firewall"
+      isCorrect: false
+      explanation: "Incorrect. Azure Firewall is a different networking service that provides network security and protection, but it is not directly involved in creating and managing Private Endpoints."
+  - content: "What is the benefit of using an Azure Private Endpoint for connecting to an Azure SQL server?"
+    choices:
+    - content: "Direct public internet access to the SQL server"
+      isCorrect: false
+      explanation: "Incorrect. Private Endpoint is designed for private connections, and its purpose is to provide secure access without relying on public internet access."
+    - content: "Enhanced security by isolating the SQL server from the public internet"
+      isCorrect: true
+      explanation: "Correct. Using an Azure Private Endpoint helps enhance security by isolating the Azure SQL server from the public internet. By establishing a private connection, data exchanged between the client and the SQL server stays within the Microsoft Azure backbone network, reducing exposure to potential threats."
+    - content: "Simplified management of network routing for the SQL server"
+      isCorrect: false
+      explanation: "Incorrect. Network routing is managed through Azure networking features, but Private Endpoint does not specifically simplify network routing management."
+  - content: "Can multiple Azure SQL servers share the same Azure Private Endpoint?"
+    choices:
+    - content: "No, each SQL server requires its own Private Endpoint."
+      isCorrect: true
+      explanation: "Correct. Each Azure SQL server requires its own Azure Private Endpoint. Private Endpoints are specific to each resource and cannot be shared between multiple SQL servers. This ensures isolation and security between the SQL servers."
+    - content: "Yes, but only if the SQL servers are in the same Azure region."
+      isCorrect: false
+      explanation: "Incorrect. Azure Private Endpoints are not limited to a specific Azure region, but each SQL server requires its own Private Endpoint regardless of region."
+    - content: "No, Private Endpoints are limited to a single SQL server."
+      isCorrect: false
+      explanation: "Incorrect. Private Endpoints are not limited to a single SQL server, but each SQL server needs its own Private Endpoint for secure connectivity."

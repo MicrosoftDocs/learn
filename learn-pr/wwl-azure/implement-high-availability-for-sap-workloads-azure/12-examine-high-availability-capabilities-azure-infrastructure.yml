@@ -4,11 +4,11 @@ title: Examine high availability capabilities of Azure infrastructure
 metadata:
   title: Examine high availability capabilities of Azure infrastructure
   description: "Examine high availability capabilities of Azure infrastructure"
-  ms.date: 04/20/2023
+  ms.date: 08/11/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/12-examine-high-availability-capabilities-azure-infrastructure.md)]

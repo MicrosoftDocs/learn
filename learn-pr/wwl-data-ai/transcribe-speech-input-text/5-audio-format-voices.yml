@@ -4,11 +4,11 @@ title: Configure audio format and voices
 metadata:
   title: Configure audio format and voices
   description: "Configure audio format and voices"
-  ms.date: 03/02/2022
+  ms.date: 08/31/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.service: azure-ai-speech
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

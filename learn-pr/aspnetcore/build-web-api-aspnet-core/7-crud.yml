@@ -36,4 +36,4 @@ quiz:
         explanation: "When model validation fails, an HTTP 400 status code is returned. If the controller is annotated with the `[ApiController]` attribute, there's no need to explicitly call `BadRequest`."
       - content: "After a request for a product by ID, a match doesn't exist in the underlying data store. Call the `NotFound` method to generate a 404."
         isCorrect: true
-        explanation: "The `NotFound` method generates an HTTP 404 status code in the response. This is best way to communicate that the requested data doesn't exist."
+        explanation: "The `NotFound` method generates an HTTP 404 status code in the response. Using this status code is best way to communicate that the requested data doesn't exist."

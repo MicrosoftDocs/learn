@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-iot.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This content is a part of Introduction to Azure IoT."
+  ms.date: 8/14/2023
+  author: dominicbetts
+  ms.author: dobett
+  ms.topic: module-intro-to-product
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

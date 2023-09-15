@@ -1,5 +1,3 @@
-
-
 Whether you realized it or not, you've been calling C# methods ever since your first "Hello, World!" application. That application uses the `WriteLine()` method of the `Console` class to display the "Hello, World!" message. 
 
 However, not all classes and methods are implemented the same way. This unit covers some of the most common variants that you'll need to understand when using methods from the .NET Class Library. More importantly, you'll learn how to find and use the documentation to better understand more about each method.
