@@ -6,8 +6,8 @@ metadata:
   title: Methodology
   description: How the Microsoft Cloud Adoption Framework for Azure methodology works and how it fits in with the overall organization.
   ms.date: 04/26/2022
-  author: martinekuan
-  ms.author: martinek
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20
