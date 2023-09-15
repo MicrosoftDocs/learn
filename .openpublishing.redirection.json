@@ -25784,6 +25784,21 @@
       "source_path": "learn-pr/wwl-azure/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-of-azure-blueprints.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "/learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/4-describe-information-barriers.md",
+      "redirect_url": "https://learn.microsoft.com/microsoft-365/compliance/information-barriers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/7-knowledge-check.md",
+      "redirect_url": "/training/modules/describe-insider-risk-capabilities-microsoft-365/4-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "/learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/8-summary-resources.md",
+      "redirect_url": "/training/modules/describe-insider-risk-capabilities-microsoft-365/5-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
