@@ -1,5 +1,3 @@
-
-
 Methods are useful for organizing code, reusing code, and for tackling problems efficiently. You can think of a method like a black box that takes input, performs the named task, and returns output. With this assumption, you can quickly structure programs just by naming your tasks as methods, and then filling in the logic after you've identified all of the necessary tasks. 
 
 When you use plain language to describe steps in code, without strictly adhering to syntax rules, you're using "pseudo-code". Combining methods and pseudo-code is a great way to quickly power through any challenging programming task.

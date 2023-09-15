@@ -4,11 +4,10 @@ title: Review the solution to create a reusable method
 metadata:
   title: Review the solution to create a reusable method
   description: "Review the solution to create a reusable method"
-  ms.date: 05/06/2023
+  ms.date: 09/15/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/7-review-solution-restructure-code-to-use-methods.md)]

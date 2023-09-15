@@ -4,11 +4,10 @@ title: Exercise - Complete the challenge to create a reusable method
 metadata:
   title: Exercise - Complete the challenge to create a reusable method
   description: "Exercise - Complete the challenge to create a reusable method"
-  ms.date: 05/06/2023
+  ms.date: 09/15/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-challenge-restructure-code-to-use-methods.md)]

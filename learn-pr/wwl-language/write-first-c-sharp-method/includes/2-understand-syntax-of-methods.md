@@ -1,6 +1,3 @@
-
-
-
 You may already be familiar with some methods, such as `Console.WriteLine()` or `random.Next()`. You might have appreciated how these methods simplify tasks and allow you to build your code more easily. In this unit, you'll learn how to create your own methods.
 
 ## How methods work
