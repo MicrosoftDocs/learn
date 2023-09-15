@@ -1,8 +1,8 @@
 The IoT extension for Azure CLI gives developers command-line access to IoT device maintenance capabilities.
 
-An organization may decide to use Azure CLI for IoT device management in situations where scripting is required for repeatable or scriptable tasks such as with periodic device updates that a run on a timer. CLI scripting retains the flexibility and power of a coding environment verses using the Azure IoT Hub portal interface or Visual Studio Code and Azure IoT Hub extension menu-based interface.
+An organization may decide to use Azure CLI for IoT device management in situations where scripting is required for repeatable or scriptable tasks such as with periodic device updates that a run on a timer. CLI scripting retains the flexibility and power of a coding environment versus using the Azure IoT Hub portal interface or Visual Studio Code and Azure IoT Hub extension menu-based interface.
 
-Recall that as an electrical power system operator, you had to take a faulty sensor offline using the Azure portal. You are concerned that other sensors may become erratic due to a recent firmware update that may have some faulty code. You ask a programmer to check the code for errors. The programmer finds and fixes the faulty code. You run a script within the IoT extension for Azure CLI that updates all applicable sensor firmware with the new firmware version through a wireless network.
+Recall that as an electrical power system operator, you had to take a faulty device offline using the Azure portal. You are concerned that other devices may become erratic due to a recent firmware update that may have some faulty code. You ask a programmer to check the code for errors. The programmer finds and fixes the faulty code. You run a script within the IoT extension for Azure CLI that updates all applicable device firmware with the new firmware version through a wireless network.
 
 Here, you learn about Azure CLI scripting capabilities that you can use to manage IoT devices.
 

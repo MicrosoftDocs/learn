@@ -8,11 +8,11 @@ IoT devices can be managed using the following Azure IoT Hub device management t
 
 Recall that as an electrical power system operator, you detected a faulty power monitoring device. You use the Azure portal to send a direct method to the malfunctioning device, instructing it to go offline and stop sending messages. You receive confirmation that the device has executed the command successfully. You then update the device twin of the malfunctioning device, setting the status property to `offline` and add a reported property reason with the value `malfunction`. You then dispatch a technician to maintenance the malfunctioning device.
 
-Here, you'll learn about the features of the three device management tools for Azure IoT.
+Here, you learn about the features of the three device management tools for Azure IoT.
 
-The following feature comparision table lists a summary of the capabilities of each device maintenance tool.
+The following feature comparison table lists a summary of the capabilities of each device maintenance tool.
 
-| Feature | Azure Portal | Azure CLI using the Azure IoT extension | Visual Studio Code using the Azure IoT Hub extension |
+| Feature | Azure portal | Azure CLI using the Azure IoT extension | Visual Studio Code using the Azure IoT Hub extension |
 | --- | --- | --- | --- |
 | Invoke a direct method on a device | Yes | Yes | Yes |
 | Read device twin properties for a device | Yes | Yes | Yes |

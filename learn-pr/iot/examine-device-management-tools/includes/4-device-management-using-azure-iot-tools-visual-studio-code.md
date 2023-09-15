@@ -1,8 +1,8 @@
 The Azure IoT Hub extension for Visual Studio Code provides an interactive menu-based system that can be used to perform many IoT device management tasks. The interface runs outside of the Azure portal.
 
-Recall that a technician was dispatched to maintenance the malfunctioning sensor. The technician locates and replaces the faulty sensor, then uses a laptop computer to run Azure IoT extension for Visual Studio Code menu-based commands to put the sensor online and test it through the wireless network.
+Recall that a technician was dispatched to maintenance the malfunctioning device. The technician locates and replaces the faulty device. The technician then uses a laptop computer to run Azure IoT extension for Visual Studio Code menu-based commands to put the device online and test it through the wireless network.
 
-Here, you'll learn about some of the Visual Studio Code and Azure IoT Hub extension capabilities that you can use to manage IoT devices.
+Here, you learn about some of the Visual Studio Code and Azure IoT Hub extension capabilities that you can use to manage IoT devices.
 
 :::row:::
   :::column:::
