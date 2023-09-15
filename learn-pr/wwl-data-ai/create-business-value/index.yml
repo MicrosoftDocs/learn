@@ -3,10 +3,11 @@ uid: learn.wwl.create-business-value
 metadata:
   title: Create business value from AI
   description: "Understand the key elements that make a culture AI-ready and a framework to drive the change needed in your organization for a successful AI strategy."
-  ms.date: 06/28/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
+  ms.service: microsoft-365
 title: Create business value from AI
 summary: This module is designed to help you plan your AI strategy and adopt an AI-ready culture. It proposes a framework to drive that change in your organization.
 abstract: |

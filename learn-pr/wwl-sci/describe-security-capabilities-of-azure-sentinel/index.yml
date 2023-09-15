@@ -3,18 +3,18 @@ uid: learn.wwl.describe-security-capabilities-of-azure-sentinel
 metadata:
   title: Describe security capabilities of Microsoft Sentinel
   description: "Describe security capabilities of Microsoft Sentinel"
-  ms.date: 02/09/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.service: microsoft-sentinel
 title: Describe security capabilities of Microsoft Sentinel
-summary: Learn about Microsoft Sentinel a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution.
+summary: Learn about Microsoft Sentinel a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution.  In this module, you’ll also be introduced to Microsoft Security Copilot.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Describe the security concepts for SIEM and SOAR.
-  - Describe how Microsoft Sentinel provides integrated threat management.
-  - Describe the pricing models of Microsoft Sentinel.
+  - Describe how Microsoft Sentinel provides threat detection and mitigation.
+  - Describe Microsoft Security Copilot.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -33,7 +33,7 @@ units:
 - learn.wwl.describe-security-capabilities-of-azure-sentinel.introduction
 - learn.wwl.describe-security-capabilities-of-azure-sentinel.define-concepts-of-siem,-soar,-xdr
 - learn.wwl.describe-security-capabilities-of-azure-sentinel.describe-role-value-of-sentinel-providing-integrated-threat-protection
-- learn.wwl.describe-security-capabilities-of-azure-sentinel.understand-sentinel-costs
+- learn.wwl.describe-security-capabilities-of-azure-sentinel.describe-security-copilot
 - learn.wwl.describe-security-capabilities-of-azure-sentinel.knowledge-check
 - learn.wwl.describe-security-capabilities-of-azure-sentinel.summary-resources
 badge:

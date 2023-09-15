@@ -5,7 +5,7 @@ While string concatenation is simple and convenient, *string interpolation* is g
 
 ## What is string interpolation?
 
-String interpolation combines multiple values into a single literal string by using a "template" and one or more *interpolation expressions*. An **interpolation expression** is a variable surrounded by an opening and closing curly brace symbol `{ }`. The literal string becomes a template when it's prefixed by the `$` character.
+String interpolation combines multiple values into a single literal string by using a "template" and one or more *interpolation expressions*. An **interpolation expression** is indicated by an opening and closing curly brace symbol `{ }`. You can put any C# expression that returns a value inside the braces. The literal string becomes a template when it's prefixed by the `$` character.
 
 In other words, instead of writing the following line of code:
 
@@ -97,7 +97,7 @@ Suppose you need to use a verbatim literal in your template. You can use both th
     C:\Output\First-Project\Data
     ```
 
-    In this example, the `$` symbol allows you to reference the `projectName` variable inside the brackets, while the `@` symbol allows you to use the unescaped `\` character.
+    In this example, the `$` symbol allows you to reference the `projectName` variable inside the braces, while the `@` symbol allows you to use the unescaped `\` character.
 
 ## Recap
 
