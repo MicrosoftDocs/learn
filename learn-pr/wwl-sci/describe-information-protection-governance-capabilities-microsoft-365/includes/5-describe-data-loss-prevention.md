@@ -38,7 +38,7 @@ DLP policies can be created from predefined templates, or you can create a custo
 
 ### What is endpoint data loss prevention?
 
-Endpoint DLP enables you to audit and manage the many activities users take on sensitive items that are physically stored Windows 10, Windows 11, or macOS devices. Listed below are just a few examples:
+Endpoint DLP enables you to audit and manage the many activities users take on sensitive items that are physically stored Windows 10, Windows 11, or macOS devices. The list that follows shows a few examples:
 
 - Creating an item
 - Renaming an item
@@ -55,12 +55,12 @@ Admins use this information to enforce protective actions for content through co
 
 ### Data loss prevention in Microsoft Teams
 
-Data loss prevention capabilities extends to Microsoft Teams chat and channel messages, whether it's in a message or a file, including messages in private channels. Just like with Exchange, Outlook, SharePoint, and OneDrive, administrators can use DLP policy tips that will be displayed to the user to show them why a policy has been triggered. For example, the screenshot that follows shows a policy tip on a chat message that was blocked because the user attempted to share a U.S. Social Security Number.
+Data loss prevention capabilities extend to Microsoft Teams chat and channel messages, whether it's in a message or a file, including messages in private channels. Just like with Exchange, Outlook, SharePoint, and OneDrive, administrators can use DLP policy tips that will be displayed to the user to show them why a policy has been triggered. For example, the screenshot that follows shows a policy tip on a chat message that was blocked because the user attempted to share a U.S. Social Security Number.
 
-:::image type="content" source="../media/5-data-loss-prevention-policy-tip.png" alt-text="A screenshot of a Microsoft Teams chat that was blocked that includes a link for the user to get more information on why the message was blocked.":::
+:::image type="content" source="../media/5-data-loss-prevention-policy-tip.png" alt-text="A screenshot of a Microsoft Teams chat that was blocked that includes a link for the user to obtain more information.":::
 
 The user can then find out more about why their message was blocked by selecting the "What can I do?" link, and take appropriate action.
 
-:::image type="content" source="../media/5-policy-tip-more-information.png" alt-text="A screen capture of a DPL policy tip presented to user whose message is blocked. The tip provides information about why their message was blocked, and actions to take.":::
+:::image type="content" source="../media/5-policy-tip-more-information.png" alt-text="A screenshot of a DPL policy tip presented to user whose message is blocked. The tip provides information about why their message was blocked, and actions to take.":::
 
 DLP policies applied to Microsoft 365 services, including Microsoft Teams, can help users across organizations to collaborate securely and in a way that's in line with compliance requirements.
