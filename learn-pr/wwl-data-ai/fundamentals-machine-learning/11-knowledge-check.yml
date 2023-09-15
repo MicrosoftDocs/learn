@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/13/2023
+  ms.date: 09/15/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -53,6 +53,6 @@ quiz:
     - content: "Automatically provision Azure Machine Learning workspaces for new data scientists in an organization"
       isCorrect: false
       explanation: "Incorrect. Automated machine learning does not automate workspace provisioning."
-    - content: "Automate multiple training jobs using different algorithms and parameters to find the best model"
+    - content: "Automatically run multiple training jobs using different algorithms and parameters to find the best model"
       isCorrect: true
-      explanation: "Correct. Automated machine learning runs multiple training jobs, varying algorithms and parameters, to find the best mdoel for your data."
+      explanation: "Correct. Automated machine learning runs multiple training jobs, varying algorithms and parameters, to find the best model for your data."
