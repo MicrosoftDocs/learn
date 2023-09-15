@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-iot.when-to-use-iot
+title: When to use Azure IoT
+metadata:
+  title: When to use Azure IoT
+  description: "This content is a part of Introduction to Azure IoT."
+  ms.date: 8/14/2023
+  author: dominicbetts
+  ms.author: dobett
+  ms.topic: module-intro-to-product
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-use-criteria-iot.md)]
