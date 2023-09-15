@@ -4,11 +4,11 @@ title: Describe the Microsoft Purview unified data governance solution
 metadata:
   title: Describe the Microsoft Purview unified data governance solution
   description: "Describe the Microsoft Purview unified data governance solution"
-  ms.date: 07/05/2023
+  ms.date: 09/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.service: azure
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/7a-describe-purview-governance.md)]
