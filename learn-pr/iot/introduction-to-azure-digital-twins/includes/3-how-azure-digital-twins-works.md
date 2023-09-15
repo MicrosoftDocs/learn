@@ -1,12 +1,15 @@
 Here, you'll learn more about how an Azure Digital Twins solution is built. You'll see these concepts applied to the factory module scenario, and understand how an Azure Digital Twins graph might look for that environment.
 
-For a hands-on experience, this unit uses an Azure sandbox. Start by running the following commands in the Cloud Shell to create an Azure Digital Twins instance in the sandbox for this unit:
+For a hands-on experience, this unit uses an Azure sandbox. Start by running the following commands in the Cloud Shell to create an Azure Digital Twins instance:
+
+> [!IMPORTANT]
+> If you receive an error with *code: LocationNotAvailableForResourceType*, try switching the location to [another available region](https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/?products=digital-twins).
 
 ```azurecli
     INSTANCE_NAME="Distribution-Center-$RANDOM"
     echo "Your Azure Digital Twins instance's name is: $INSTANCE_NAME"
 
-    az dt create --dt-name $INSTANCE_NAME --resource-group <rgn>[sandbox resource group name]</rgn> --location centralus 
+    az dt create --dt-name $INSTANCE_NAME --resource-group <rgn>[sandbox resource group name]</rgn> --location westcentralus 
 ```
 
 ## Define models
@@ -16,7 +19,7 @@ In Azure Digital Twins, you freely define the types of digital entities that rep
 >[!TIP]
 >From a programming perspective, models are similar to class definitions.
 
-Models for Azure Digital Twins are defined using the [Digital Twins Definition Language (DTDL)](https://github.com/Azure/opendigitaltwins-dtdl/tree/master/DTDL). DTDL is based on JSON-LD and is programming-language independent, so you can write it in any text editor by creating valid DTDL files with a *json* extension. DTDL isn't exclusive to Azure Digital Twins; it's also used to represent device data in other IoT services such as IoT Plug and Play. You can design your own model sets from scratch, or get started with a pre-existing set of industry ontologies provided by Microsoft based on common vocabulary for your industry. You can also bring models from outside of Azure Digital Twins and convert them to DTDL, to make them compatible with Azure Digital Twins. If you design models from scratch, you may still want to consider using published industry standards in your solution language to help make them more recognizable and extensible.
+Models for Azure Digital Twins are defined using the [Digital Twins Definition Language (DTDL)](https://github.com/Azure/opendigitaltwins-dtdl/tree/master/DTDL). DTDL is based on JSON-LD and is programming-language independent, so you can write it in any text editor by creating valid DTDL files with a *json* extension. DTDL isn't exclusive to Azure Digital Twins; it's also used to represent device data in other IoT services such as IoT Plug and Play. You can design your own model sets from scratch, or get started with a pre-existing set of industry ontologies provided by Microsoft based on common vocabulary for your industry. You can also bring external models and convert them to DTDL, to make them compatible with Azure Digital Twins. If you design models from scratch, you may still want to consider using published industry standards in your solution language to help make them more recognizable and extensible.
 
 The following code snippet shows the DTDL inside a model file. This example aligns with the factory scenario for this module and represents the concept of a robotic arm. The model has several properties representing box pickup information, including a boolean property indicating an alert that the arm didn't pick up its latest package, and a property representing its hydraulic pressure level.
 
@@ -51,11 +54,11 @@ The following code snippet shows the DTDL inside a model file. This example alig
 }
 ```
 
-The role of the model is to define the concept of what a robotic arm is, so you'll only create one model file to use for all the robotic arms in your environment. You'll also create other models for other types of entity in your environment, such as a factory temperature sensor or the distribution center as a whole.
+The role of the model is to define the concept of what a robotic arm is, so you'll only create one model file to use for all the robotic arms in your environment. You'll also create other models for other types of entities in your environment, such as a factory temperature sensor or the distribution center as a whole.
 
 Model files can be uploaded to the service using the Azure Digital Twins APIs and SDKs, the Azure CLI, or Azure Digital Twins Explorer (a visual developer tool that's accessible from your instance page in the Azure portal).
 
-Run the following commands in the Cloud Shell to upload this *RobotArm* model, and another model for an entire distribution center, as inline JSON to your Azure Digital Twins instance in the sandbox.
+Run the following commands in the Cloud Shell to upload the *RobotArm* model, and another model for the entire distribution center, as inline JSON to your Azure Digital Twins instance in the sandbox.
 
 ```azurecli
     az dt model create -n $INSTANCE_NAME --models '{"@id":"dtmi:assetGen:RobotArm;1","@type":"Interface","@context":"dtmi:dtdl:context;2","displayName":"RobotArm","contents":[{"@type":"Property","name":"FailedPickupsLastHr","schema":"integer"},{"@type":"Property","name":"PickupFailedAlert","schema":"boolean"},{"@type":"Property","name":"LastPickupFailedBoxID","schema":"string"},{"@type":"Property","name":"HydraulicPressure","schema":"double"}]}' 
@@ -72,7 +75,7 @@ After creating models to define the types of entity in your environment, you cre
 >[!TIP]
 >From a programming perspective, twins are like instances of the model definitions.
 
-Twins can be created using the Azure Digital Twins APIs and SDKs, the Azure CLI, or Azure Digital Twins Explorer (a visual developer tool that's accessible from your instance page in the Azure portal). In the request, you'll provide an ID for the twin (its `$dtID` value) and reference the model it should use. You can also optionally define properties during creation.
+Twins can be created using the Azure Digital Twins APIs and SDKs, the Azure CLI, or Azure Digital Twins Explorer. In the request, you'll provide an ID for the twin (its `$dtID` value) and reference the model it should use. You can also optionally define properties during creation.
 
 Run the following commands in the Cloud Shell to create six robotic arm twins, all based on the *RobotArm* model from the previous section, and one distribution center twin based on the *DistributionCenter* model. These commands will also instantiate the twin properties with default values.
 
@@ -122,9 +125,17 @@ Run the following command in the Cloud Shell to create six *contains* relationsh
     az dt twin relationship create --dt-name $INSTANCE_NAME --relationship contains --relationship-id contains6 --source DistCtr --target Arm6
 ```
 
-Here's a screenshot from Azure Digital Twins Explorer, displaying the graph that you've created in this unit so far. The graph has one distribution center twin, *DistCtr*, and six robot arm twins, *Arm1* through *Arm6*. *DistCtr* has a *contains* relationship to each of the arm twins.
+Here's a screenshot from Azure Digital Twins Explorer, displaying the graph in 2D that you've created in this unit so far. The graph has one distribution center twin, *DistCtr*, and six robot arm twins, *Arm1* through *Arm6*. *DistCtr* has a *contains* relationship to each of the arm twins.
 
 :::image type="content" source="../media/2-3-factory-graph.png" alt-text="Screenshot of Azure Digital Twins Explorer showing a 2D graph. In the graph, one distribution center twin is connected to six arm twins via six lines labeled contains." border="false" lightbox="../media/2-3-factory-graph.png":::
+
+You can view your digital twin graph in 2D using Azure Digital Twins Explorer, or in 3D using Azure Digital Twins 3D Scenes Studio. Run the following command in the Cloud Shell to create a direct URL to your Azure Digital Twins instance in Azure Digital Twins Explorer.
+
+```azurecli
+    echo "https://explorer.digitaltwins.azure.net/?dtId=$INSTANCE_NAME"
+```
+
+In another browser tab or window, navigate to the URL shown in the output of the previous command.
 
 ## Set up data flow
 
@@ -134,7 +145,8 @@ Azure Digital Twins uses Azure functions to ingest data into a graph from many s
 
 In the factory example for this module, your Azure function updates the properties of the robot arm twins based on data from their associated devices registered in IoT Hub, and you'll also create a second Azure function that aggregates data from all of the arm twins and updates properties on the main *DistCtr* twin that contains them all.
 
-A complete simulation of live data flow is outside the scope of this introductory module, but you can simulate the results in your Cloud Shell by running the following commands to update the values of the twin properties manually.
+> [!NOTE]
+> A complete simulation of live data flow is outside the scope of this introductory module, but you can simulate the results in your Cloud Shell by running the following commands to update the values of the twin properties manually.
 
 ```azurecli
     az dt twin update -n $INSTANCE_NAME --twin-id Arm1 --json-patch '[{"op":"replace","path":"/FailedPickupsLastHr","value":1},{"op":"replace","path":"/PickupFailedAlert","value":True},{"op":"add","path":"/LastPickupFailedBoxID","value":"Box507"},{"op":"replace","path":"/HydraulicPressure","value":18.451452874964478}]'
@@ -146,7 +158,7 @@ A complete simulation of live data flow is outside the scope of this introductor
     az dt twin update -n $INSTANCE_NAME --twin-id DistCtr --json-patch '[{"op":"replace","path":"/AvgHydraulicPressure","value":17.72259624}]'
 ```
 
-Now your digital graph represents the state of your factory distribution center and its robotic arms. You can view your digital twin graph in 2D using Azure Digital Twins Explorer, or in 3D using Azure Digital Twins [3D Scenes Studio](https://explorer.digitaltwins.azure.net/3dscenes).
+Now your digital graph represents the state of your factory distribution center and its robotic arms.
 
 In the next section, you'll see how to query the graph to gather insights and export data to other services (inside or outside of Azure) for further processing and data presentation.
 
