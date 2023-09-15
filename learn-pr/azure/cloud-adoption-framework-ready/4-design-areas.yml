@@ -6,8 +6,8 @@ metadata:
   title: Design areas for Azure landing zones
   description: Learn how to design a cloud environment that supports your chosen operating model.
   ms.date: 05/12/2022
-  author: martinekuan
-  ms.author: martinek
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5 

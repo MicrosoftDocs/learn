@@ -25,7 +25,6 @@ products:
 - azure
 - azure-portal
 - azure-resource-manager
-- azure-application-insights
 - azure-monitor
 - azure-event-grid
 - azure-sentinel

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Deploy your first cloud adoption plan
   description: Create a project plan (or backlog) to manage efforts related to cloud adoption.
   ms.date: 02/22/2021
-  author: martinekuan
-  ms.author: martinek
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20
