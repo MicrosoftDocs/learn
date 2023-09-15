@@ -1,20 +1,20 @@
 This module covers the topic of Zero Trust and best practice frameworks for Microsoft cybersecurity capabilities.
 
-Imagine you are a cybersecurity architect in a large organization. You have been tasked with modernizing the organization's cybersecurity. You know that best practices are essential to achieve this goal, but you are not sure which framework to use. You have heard about Zero Trust and its potential benefits, but you are not sure how to get started. This module will help you understand best practices and how to use them as a cybersecurity architect. You will also learn about the concept of Zero Trust and how to get started with it in an organization.
+Imagine you're a cybersecurity architect in a large organization. You have been tasked with modernizing the organization's cybersecurity. You know that best practices are essential to achieve this goal, but you aren't sure which framework to use. You have heard about Zero Trust and its potential benefits, but you aren't sure how to get started. This module helps you understand best practices and how to use them as a cybersecurity architect. You'll also learn about the concept of Zero Trust and how to get started with it in an organization.
 
 The module is divided into five units: Introduction to Best Practices, Introduction to Zero Trust, Zero Trust Initiatives, Zero Trust Technology Pillars Part 1, and Zero Trust Technology Pillars Part 2.
 
-By the end of this module, you will be able to understand how to use best practices as a cybersecurity architect, understand the concept of Zero Trust and how it can be used to modernize an organization's cybersecurity, and understand when to use different best practice frameworks like MCRA, CAF, and WAF.
+By the end of this module, you'll be able to understand how to use best practices as a cybersecurity architect, understand the concept of Zero Trust and how it can be used to modernize an organization's cybersecurity, and understand when to use different best practice frameworks like MCRA, CAF, and WAF.
 
 ## Learning objectives
 
-Upon completion of this module, the learner will be able to:
+Upon completion of this module, the learner is able to:
 
 - Understand how to use best practices as a cybersecurity architect.
 - Understand the concept of Zero Trust and how it can be used to modernize an organizations cybersecurity.
 - Understand when to use different best practice frameworks like MCRA, CAF and WAF.
 
-The content in the module will help you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
+The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ Microsoft has embedded security best practices in various forms of guidance incl
 
 ## Antipatterns
 
-An **antipattern** is a common mistake that lead to negative outcomes. It is the opposite of a best practice. Many best practices are designed to help you avoid antipatterns.
+An **antipattern** is a common mistake that lead to negative outcomes. It's the opposite of a best practice. Many best practices are designed to help you avoid antipatterns.
 
 An example of a best practice that helps you overcome numerous antipatterns is applying security patches regularly. Microsoft has observed multiple antipatterns that get in the way of regularly applying this basic and critically important security best practice:
 
