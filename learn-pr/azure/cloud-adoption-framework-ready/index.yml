@@ -4,8 +4,10 @@ metadata:
   title: Choose the best Azure landing zone to support your requirements for cloud operations
   description: Azure landing zones help accelerate how you configure your environment to meet your operational requirements.
   ms.date: 05/12/2022
-  author: martinekuan
-  ms.author: martinek
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.service: caf
+  ms.subservice: caf-methodology-ready
   ms.topic: interactive-tutorial
 title: Choose the best Azure landing zone to support your requirements for cloud operations
 summary: Azure landing zones can accelerate configuration of your cloud environment. This module will help you choose and get started with the best landing zone option for your needs.
