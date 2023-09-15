@@ -4,11 +4,11 @@ title: Describe Microsoft Entra ID Protection
 metadata:
   title: Describe Microsoft Entra ID Protection
   description: "Describe Microsoft Entra ID Protection"
-  ms.date: 02/07/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/5-describe-azure.md)]

@@ -4,11 +4,12 @@ title: Describe Microsoft Defender for Office 365
 metadata:
   title: Describe Microsoft Defender for Office 365
   description: "Describe Microsoft Defender for Office 365"
-  ms.date: 02/09/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-durationInMinutes: 4
+  # ms.prod: learning-m365
+  ms.service: microsoft-365-security
+durationInMinutes: 2
 content: |
   [!include[](includes/3-describe-defender-office.md)]
