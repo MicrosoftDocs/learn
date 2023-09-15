@@ -4,11 +4,11 @@ title: Describe governance, risk, and compliance (GRC) concepts
 metadata:
   title: Describe governance, risk, and compliance (GRC) concepts
   description: "Describe governance, risk, and compliance (GRC) concepts"
-  ms.date: 02/09/2023
+  ms.date: 09/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.service: azure
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/6-describe-compliance-concepts.md)]

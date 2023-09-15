@@ -4,11 +4,11 @@ title: Understand language detection, translation, and transliteration
 metadata:
   title: Understand language detection, translation, and transliteration
   description: "Understand language detection, translation, and transliteration"
-  ms.date: 05/11/2022
+  ms.date: 08/31/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.service: azure-ai-language
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

@@ -18,7 +18,7 @@ The Starter code project for this module includes a Program.cs file with the fol
     - A description of the pet's personality.
     - The pet's nickname.
 
-- The code uses a for loop around a select-case construct to populate elements of the ourAnimals array.
+- The code uses a for loop around a switch-case construct to populate elements of the ourAnimals array.
 - The code includes a loop around a main menu that terminates when the user enters "exit". The main menu includes:
 
     1. List all of our current pet information.
