@@ -49,7 +49,7 @@ Endpoint DLP enables you to audit and manage the many activities users take on s
 
 In the activity explorer, you can view information about what users are doing with sensitive content.
 
-:::image type="content" source="../media/activity-explorer-endpoint-dlp-inline.png" lightbox="../media/activity-explorer-endpoint-dlp-expanded.png" alt-text="The activity explorer show activities monitored through endpoint DLP.":::
+:::image type="content" source="../media/activity-explorer-endpoint-dlp-inline.png" lightbox="../media/activity-explorer-endpoint-dlp-expanded.png" alt-text="A screenshot of data classification information in the activity explorer as monitored through endpoint DLP.":::
 
 Admins use this information to enforce protective actions for content through controls and policies.
 
@@ -57,7 +57,7 @@ Admins use this information to enforce protective actions for content through co
 
 Data loss prevention capabilities extends to Microsoft Teams chat and channel messages, whether it's in a message or a file, including messages in private channels. Just like with Exchange, Outlook, SharePoint, and OneDrive, administrators can use DLP policy tips that will be displayed to the user to show them why a policy has been triggered. For example, the screenshot that follows shows a policy tip on a chat message that was blocked because the user attempted to share a U.S. Social Security Number.
 
-:::image type="content" source="../media/5-data-loss-prevention-policy-tip.png" alt-text="A policy tip is shown in Microsoft Teams so that the user knows why their message was blocked.":::
+:::image type="content" source="../media/5-data-loss-prevention-policy-tip.png" alt-text="A screenshot of a Microsoft Teams chat that was blocked that includes a link for the user to get more information on why the message was blocked.":::
 
 The user can then find out more about why their message was blocked by selecting the "What can I do?" link, and take appropriate action.
 
