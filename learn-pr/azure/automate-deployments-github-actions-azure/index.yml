@@ -34,7 +34,7 @@ products:
   - github
   - azure-functions
   - azure-logic-apps
-  - azure-app-service-static
+  - static-web-apps
   - azure-web-apps
   - azure-devops
 subjects:

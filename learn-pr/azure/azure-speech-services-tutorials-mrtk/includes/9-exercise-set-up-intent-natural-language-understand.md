@@ -1,4 +1,4 @@
-In this module, you explore the Azure Speech Service's intent recognition. The intent recognition allows you to equip your application with AI-powered speech commands, where users can say non-specific speech commands and still have their intent understood by the system.
+In this module, you explore the Azure Speech Service's intent recognition. The intent recognition allows you to equip your application with AI-powered speech commands, where users can say nonspecific speech commands and still have their intent understood by the system.
 
 ## Prepare the scene
 
@@ -8,118 +8,117 @@ In this module, you explore the Azure Speech Service's intent recognition. The i
 
 2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **RocketLauncher** folder, drag the **RocketLauncher_Complete** prefab into your Hierarchy window, and place it at a suitable location in front of the camera, for example:
 
-    * Transform **Position** X = 0, Y = -0.4, Z = 1
+    * Transform **Position** X = 0, Y = 1, Z = 1.5
     * Transform **Rotation** X = 0, Y = 90, Z = 0
 
     :::image type="content" source="../media/rocket-launcher-prefab.png" alt-text="Screenshot of Add the RocketLauncher_Complete prefab." lightbox="../media/rocket-launcher-prefab.png":::
 
-3. In the Hierarchy window, select the **Lunarcom** object again, then expand the **RocketLauncher_Complete** > **Button** object and assign each of the **Buttons** object's child objects to the corresponding **Lunar Launcher Buttons** field:
+3. In the Hierarchy window, select the **Lunarcom** object again, then expand the **RocketLauncher_Complete** > **Buttons** object and assign each of the **Buttons** object's child objects to the corresponding **Lunar Launcher Buttons** field:
 
     :::image type="content" source="../media/assign-buttons.png" alt-text="Screenshot of Assigning each of the buttons." lightbox="../media/assign-buttons.png":::
 
-## Create the Azure language understanding resource
+## Create the Azure language service resource
 
-In this section, you'll create an Azure prediction resource for the Language Understanding Intelligent Service (LUIS) app you'll create in the next section.
+In this section, you'll create an Azure language service resource for the Conversational language understanding (CLU) app you'll create in the next section.
 
-1. Sign in to [Azure portal](https://portal.azure.com) and select **Create a resource**. Then search for and select **Language Understanding**:
+1. Sign in to [Azure portal](https://portal.azure.com) and select **Create a resource**. Then search for and select **Language Service**:
 
-    :::image type="content" source="../media/azure-prediction-resource.png" alt-text="Screenshot of Azure prediction resource." lightbox="../media/azure-prediction-resource.png":::
+    :::image type="content" source="../media/azure-prediction-resource.png" alt-text="Screenshot of Azure language service resource." lightbox="../media/azure-prediction-resource.png":::
 
 2. Select the **Create** button to create an instance of this service:
 
     :::image type="content" source="../media/instance-service.png" alt-text="Screenshot of create an instance of this service." lightbox="../media/instance-service.png":::
 
-3. On the Create page, select the **Prediction** option and enter the following values:
+3. On the Create Language page, enter the following values:
 
-    * For **Subscription**, select **Free Trail** if you have a trial subscription. If you don't have a trial subscription, select one of your other subscriptions.
-    * For the **Resource group**, select the **Create new** link, enter a suitable name, for example: *MRKT-Tutorials*. Select **OK**.
+    * For **Subscription**, select **Free Trial** if you have a trial subscription. If you don't have a trial subscription, select one of your other subscriptions.
+    * For the **Resource group**, select the **Create new** link, enter a suitable name, for example: *MRTK-Tutorials*. Select **OK**.
 
-    :::image type="content" source="../media/prediction-option.png" alt-text="Screenshot of Configure the prediction option." lightbox="../media/prediction-option.png":::
+    :::image type="content" source="../media/prediction-option.png" alt-text="Screenshot of Create Language screen." lightbox="../media/prediction-option.png":::
 
-    > [!NOTE]
-    > As of the time of this writing, you do not need to create an authoring resource, because an authoring trial key will automatically be generated within LUIS when you create the Language Understanding Intelligent Service (LUIS) in the next section.
     > [!TIP]
     > If you already have another suitable resource group in your Azure account, you may use this resource group instead of creating a new one.
 
 4. While still on the Create page, enter the following values:
 
     * For **Name**, enter a suitable name for the service, for example: *MRTK-Tutorials-AzureSpeechServices*
-    * For **Prediction location**, choose a location close to your app users' physical location, for example: *(US) West US*
-    * For **Prediction pricing tier**, in this tutorial, select **F0 (5 Calls per second, 10K Calls per month)**
+    * For **Region**, choose a location close to your app users' physical location, for example: *East US*
+    * For **Pricing tier**, in this tutorial, select **F0 (5k transactions per 30 days)**
 
-    :::image type="content" source="../media/create-page.png" alt-text="Screenshot of Configure the create page." lightbox="../media/create-page.png":::
+    :::image type="content" source="../media/create-page.png" alt-text="Screenshot of the configured Create Language form." lightbox="../media/create-page.png":::
 
 5. Next, select **Review + create**, review the details, and then select the **Create** button at the bottom of the page to create the resource (and the new resource group if you configured one to be created):
 
-    :::image type="content" source="../media/review-details.png" alt-text="Screenshot of Review the details." lightbox="../media/review-details.png":::
-
-    > [!NOTE]
-    > Creating your new resources might take a few minutes.
+    :::image type="content" source="../media/review-details.png" alt-text="Screenshot of Review + Create." lightbox="../media/review-details.png":::
 
 6. Once the resource creation process is completed, you'll see the message **Your deployment is complete**:
 
-    :::image type="content" source="../media/message-display.png" alt-text="Screenshot of Message display." lightbox="../media/message-display.png":::
+    :::image type="content" source="../media/message-display.png" alt-text="Screenshot of Overview screen." lightbox="../media/message-display.png":::
 
-## Create the language understanding intelligent service (LUIS)
+## Create the Conversational language understanding app (CLU)
 
-In this section, you create a LUIS app, configure and train its prediction model, and connect it to the Azure prediction resource you created in the previous step.
+In this section, you create a CLU app, configure and train its prediction model, and connect it to the Azure language resource you created in the previous step.
 
-Specifically, you create an intent that if the user says an action should be taken, the app triggers the `Interactable. OnClick()` event on one of the three red buttons in the scene, depending on which button the user references.
+Specifically, you'll create an intent that if the user says an action should be taken, the app triggers the `PressableButton.OnClicked()` event on one of the three blue buttons in the scene, depending on which button the user references.
 
-For example, if the user says **go ahead and launch the rocket**, the app predicts that **go ahead** means some **action** should be taken, and that the `Interactable. OnClick()` event to **target** is on the **launch** button.
+For example, if the user says **go ahead and launch the rocket**, the app predicts that **go ahead** means some **action** should be taken, and that the `PressableButton.OnClicked()` event to **target** is on the **launch** button.
 
 The main steps you'll take to achieve this are:
 
-1. Create a LUIS app
+1. Create a CLU app
 2. Create intents
 3. Create example utterances
 4. Create entities
 5. Assign entities to the example utterances
 6. Train, test, and publish the app
-7. Assign an Azure prediction resource to the app
 
-## 1. Create a LUIS app
+## 1. Create a CLU app
 
-Using the same user account you used when creating the Azure resource in the previous section, sign in to [LUIS](https://www.luis.ai), select your country/region, and agree to the terms of use. In the next step, when asked to **Link your Azure account**, choose **Continue using your trial key**, to use an Azure authoring resource instead.
+Using the same user account you used when creating the Azure resource in the previous section, sign in to [Language Studio](https://aka.ms/languageStudio).
 
-> [!NOTE]
-> If you've already signed up for LUIS and your authoring trial key has expired, you can refer to the [Migrate to an Azure resource authoring key](/azure/ai-services/luis/luis-migration-authoring) documentation to switch your LUIS authoring resource to Azure.
+1. Once signed in, you'll be prompted to select an Azure resource. Select the values you used when creating the Azure Language service resource and press **Done**.
 
-1. Once signed in, select **New app** and enter the following values in the **Create new app** popup window:
+    :::image type="content" source="../media/language-studio-azure.png" alt-text="Screenshot showing the Select an Azure resource popup." lightbox="../media/language-studio-azure.png":::
 
-    * For **Name**, enter a suitable name, for example: *MRTK Tutorials - AzureSpeechServices*
-    * For **Culture**, select **English**
+2. After having connected the Azure resource, select **Create new > Conversational Language Understanding** and enter the following values in the **Create a project** popup window:
+
+    * For **Name**, enter a suitable name, for example: *MRTK-Tutorials-AzureSpeechServices*. Note down the name you selected, you'll need it later in the tutorial.
+    * For **Utterances primary language**, select a language
     * For **Description**, optionally enter a suitable description
-    * For **Prediction resource**, select the prediction resource by dropdown list that had been created Azure portal.
 
-2. Select **Done** to create the new app:
+    :::image type="content" source="../media/create-project.png" alt-text="Screenshot of Create a project popup." lightbox="../media/create-project.png":::
 
-    :::image type="content" source="../media/done-button.png" alt-text="Screenshot representing Select the done button." lightbox="../media/done-button.png":::
+3. Select **Next** to review the project configuration. Select **Create** to create the project.
 
-3. When the new app has been created, you are taken to that app's **Dashboard** page:
+    :::image type="content" source="../media/review-clu-app.png" alt-text="Screenshot of Review and finish screen." lightbox="../media/review-clu-app.png":::
+
+4. When the new app has been created, you are taken to that app's **Schema definition** page:
 
     :::image type="content" source="../media/apps-dashboard-page.png" alt-text="Screenshot of App's dashboard page." lightbox="../media/apps-dashboard-page.png":::
 
 ## 2. Create intents
 
-1. From the Dashboard page, navigate to the Build > App Assets > **Intents** page, then select **Create** and enter the following value in the **Create new intent** popup window:
+1. From the Schema definition page, select **Add** and enter the following value in the **Add an intent** popup window:
 
     * For **Intent name**, enter **PressButton**
 
-2. Select **Done** to create the new intent:
+2. Select **Add intent** to create the new intent:
 
-    :::image type="content" source="../media/new-intent.png" alt-text="Screenshot of Create a new intent." lightbox="../media/new-intent.png":::
+    :::image type="content" source="../media/new-intent.png" alt-text="Screenshot of Add an intent." lightbox="../media/new-intent.png":::
 
     > [!CAUTION]
     > For the purpose of this tutorial, your Unity project will reference this intent by its name (`PressButton`). It is extremely important that you name your intent exactly the same.
 
-3. When the new intent has been created, you are taken to that intent's page:
+3. When the new intent has been created, you'll be taken back to the Schema definition page. The **PressButton** intent will show up in the list of intents.
 
-    :::image type="content" source="../media/intent-page.png" alt-text="Screenshot of Intent's page." lightbox="../media/intent-page.png":::
+    :::image type="content" source="../media/intents-list.png" alt-text="Screenshot of the list of Intents." lightbox="../media/intents-list.png":::
 
 ## 3. Create example utterances
 
-1. To the **PressButton** intent's **Example utterance** list, add the following example utterances:
+1. On the left-hand sidebar, select the **Data labeling** button. On the **Data labeling** screen, select **PressButton** from the **Select intent** drop-down:
+    :::image type="content" source="../media/select-intent.png" alt-text="Screenshot of Data labeling page." lightbox="../media/select-intent.png":::
+
+2. To the **PressButton** intent's **Utterances** list, add the following example utterances:
 
     * activate launch sequence
     * show me a placement hint
@@ -132,23 +131,22 @@ Using the same user account you used when creating the Azure resource in the pre
     * time to reset the experience
     * go ahead and launch the rocket
 
-2. When you have added all the example utterances, your PressButton intent page should look like this:
+3. When you have added all the example utterances, your Data labeling page should look like this:
 
-    :::image type="content" source="../media/button-intent-page.png" alt-text="Screenshot of PressButton intent page." lightbox="../media/button-intent-page.png":::
+    :::image type="content" source="../media/button-intent-page.png" alt-text="Screenshot of the updated Data labeling page." lightbox="../media/button-intent-page.png":::
 
     > [!CAUTION]
     > For the purpose of this tutorial, your Unity project will reference the words "hint", "hints", "reset", and "launch". It is extremely important that you spell these words in the exact same way in all instances.
 
 ## 4. Create entities
 
-1. From the PressButton intent page, navigate to the Build > App Assets > **Entities** page, then select **Create** and enter the following values in the **Create new entity** popup window:
+1. While on the Data labeling page, select **Add entity** in the right-hand **Activity pane** and enter the following values in the **Add an entity** popup window:
 
     * For **Entity name**, enter **Action**
-    * For **Entity type**, select **Machine learned**
 
-2. Select **Create** to create the new entity:
+2. Select **Add entity** to create the new entity:
 
-    :::image type="content" source="../media/create-intent.png" alt-text="Screenshot of Create a new entity." lightbox="../media/create-intent.png":::
+    :::image type="content" source="../media/add-entity.png" alt-text="Screenshot of Add a new entity." lightbox="../media/add-entity.png":::
 
 3. Repeat the previous step to create another entity named **Target**, so you have two entities named *Action* and *Target*:
 
@@ -159,9 +157,7 @@ Using the same user account you used when creating the Azure resource in the pre
 
 ## 5. Assign entities to the example utterances
 
-From the Entities page, navigate back to the **PressButton** intent page.
-
-1. Once back on the PressButton intent page, select the word **go** and then on the word **ahead**, then select **Action (Simple)** from the contextual popup menu to label **go ahead** as an **Action** entity value:
+1. Select the word **go** and then on the word **ahead**, then select **Action (Simple)** from the contextual popup menu to label **go ahead** as an **Action** entity value:
 
     :::image type="content" source="../media/label-action.png" alt-text="Screenshot of Label go ahead as an action entity value." lightbox="../media/label-action.png":::
 
@@ -193,78 +189,68 @@ From the Entities page, navigate back to the **PressButton** intent page.
     * **reset** (targets the ResetButton in the Unity project)
     * **launch** (targets the LaunchButton in the Unity project)
 
-7. When you have labeled all the example utterances, your PressButton intent page should look like this:
+7. Save your changes. When you have labeled all the example utterances, your PressButton intent page should look like this:
 
     :::image type="content" source="../media/utterances-label.png" alt-text="Screenshot of All the example utterances have been labeled." lightbox="../media/utterances-label.png":::
 
 ## 6. Train, test and publish the app
 
-1. To train the app, select the **Train** button and wait for the training process to complete:
+1. To train the app, select the **Train** button from the left-hand sidebar. You should see the Training jobs page:
 
-    :::image type="content" source="../media/train-app.png" alt-text="Screenshot of Train the app." lightbox="../media/train-app.png":::
+    :::image type="content" source="../media/training-jobs.png" alt-text="Screenshot of Training jobs screen." lightbox="../media/training-jobs.png":::
 
-    > [!NOTE]
-    > As you can see in the image above, the red lines under all the labels have been removed, indicating that all the entity values are predicted. Also, notice that the status icon to the left of the Train button has changed color from red to green.
+2. Select **Start a training job** and select the following values:
+    * Select **Train a new model** and enter a suitable name, for example: *MRTK-Tutorials-AzureSpeechServices*
+    * Select **Standard training**
+    * Select **Automatically split the testing set from training data**
 
-2. When the training is finished processing, select the **Test** button, then type in **go ahead and launch the rocket** and press the Enter key:
+3. Select **Train** to start the training process. When the training is finished processing, you will see a **Finished training** notification.
 
-    :::image type="content" source="../media/click-test-button.png" alt-text="Screenshot of select the test button." lightbox="../media/click-test-button.png":::
+    :::image type="content" source="../media/train-app.png" alt-text="Screenshot of Finished training notification." lightbox="../media/train-app.png":::
 
-3. When the test utterance has been processed, select **Inspect** to see the test result:
+4. To review the results of the training, select **Model Performance**:
 
-    * Intent: PressButton (with a 98.5% certainty)
-    * Action entity: go ahead
-    * Target entity: launch
+    :::image type="content" source="../media/model-performance.png" alt-text="Screenshot of Model performance." lightbox="../media/model-performance.png":::
 
-    :::image type="content" source="../media/inspect-test-results.png" alt-text="Screenshot of select inspect to see the test results." lightbox="../media/inspect-test-results.png":::
+5. To deploy the app, select the **Deploying a model** button in the left-hand sidebar. You should see the Deploying a model page:
 
-4. To publish the app, select the **Publish** button in the top right, then in the **Choose your publishing slot and settings** popup window, select **Production** and select the **Done** button:
+    :::image type="content" source="../media/deploy-model.png" alt-text="Screenshot of Deploying a model." lightbox="../media/deploy-model.png":::
 
-    :::image type="content" source="../media/publish-app.png" alt-text="Screenshot of Publish the app." lightbox="../media/publish-app.png":::
+6. Select **Add deployment** and enter the following values in the **Add deployment** popup:
+    * Select **Create a new deployment name** and enter a suitable name. Note down the name you selected, you will need it later in the tutorial.
+    * Select the model you have previously created from the **Select a trained model** from the dropdown
 
-5. Wait for the publishing process to complete:
+7. Select **Deploy** and wait for the publishing process to complete:
 
-    :::image type="content" source="../media/publish-process.png" alt-text="Screenshot of Wait for the publishing process to complete." lightbox="../media/publish-process.png":::
+    :::image type="content" source="../media/publish-process.png" alt-text="Screenshot of Deployment completed notification." lightbox="../media/publish-process.png":::
 
-6. Navigate to the Manage > Application Settings > **Azure Resources** page. Your Azure Resources page should look similar to this:
+8. Select the new deployment and press the **Get prediction URL** button:
 
-    :::image type="content" source="../media/azure-resources-page.png" alt-text="Screenshot of Azure resources page." lightbox="../media/azure-resources-page.png":::
+    :::image type="content" source="../media/azure-resources-page.png" alt-text="Screenshot of Get Prediction URL page." lightbox="../media/azure-resources-page.png":::
 
-## Connect the unity project to the LUIS app
+## Connect the unity project to the CLU app
 
-1. On the Manage > Application Settings > **Azure Resources** page, select the **Copy** icon to copy the **Example Query**:
+1. While on the **Get prediction URL** popup, select the **Copy** icon to copy the **Prediction URL**:
 
-    :::image type="content" source="../media/connecting-unity-project.png" alt-text="Screenshot of Connecting the unity project." lightbox="../media/connecting-unity-project.png":::
+    :::image type="content" source="../media/prediction-url.png" alt-text="Screenshot of Get Prediction URL popup." lightbox="../media/prediction-url.png":::
 
 2. Back in your Unity project, in the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, locate the **Lunarcom Intent Recognizer (Script)** component and configure it as follows:
 
-    * In the **LUIS Endpoint** field, pass the **Example Query** you copied in the previous step. Make sure to remove `YOUR_QUERY_HERE` from the URL:
+    * In the **CLU Endpoint** field, pass the **Prediction URL** you copied in the previous step.
+    * In the **CLU Project Name** field, pass the **Project Name** you noted down when creating a CLU app.
+    * In the **CLU Deployment** field, pass the **Deployment Name** you noted down when creating a new deployment.
+    * In the **Language Service API Key** field, pass the API key (Key1 or Key2) for your **Language Service**
 
     :::image type="content" source="../media/example-query.png" alt-text="Screenshot of Pass the example query you copied." lightbox="../media/example-query.png":::
 
-## Test and improve the intent recognition
+## Test the intent recognition
 
 1. To use intent recognition directly in the Unity editor, you must allow your development computer to use dictation. To verify this setting, open Windows Settings, then choose **Privacy** > **Speech** and ensure **Online speech recognition** is turned on:
 
     :::image type="content" source="../media/intent-recognition.png" alt-text="Screenshot of Testing the intent recognition." lightbox="../media/intent-recognition.png":::
 
-2. If you enter Game mode, you can test the intent recognition by first pressing the rocket button. Then, assuming your computer has a microphone, when you say the first example utterance, **go ahead and launch the rocket**, you'll see the LunarModule launch into space:
+2. If you enter Game mode, you can test the intent recognition by first pressing the rocket button. Then, when you say the first example utterance, **go ahead and launch the rocket**, you'll see the LunarModule launch into space:
 
     :::image type="content" source="../media/press-rocket-button.png" alt-text="Screenshot of Enter the game mode." lightbox="../media/press-rocket-button.png":::
 
 3. Try all the example utterances, then some variation of the example utterances, and a few random utterances.
-
-4. Next, return to [LUIS](https://www.luis.ai) and navigate to Build > Improve app performance > **Review endpoint utterances** page. Use the **toggle** button to switch from the default Entities View to **Tokens View**, and then review the utterances:
-
-    * In the **Utterance** column, change and remove the assigned labels as needed so they align with your intent
-    * In the **Aligned intent** column, verify that the intent is correct
-    * In the **Add/Delete** column, select the green check mark button to add the utterance or the red x button to delete it.
-
-5. When you have reviewed as many utterances as you like, select the **Train** button to retrain the model, then the **Publish** button to republish the updated app:
-
-    :::image type="content" source="../media/retrain-model.png" alt-text="Screenshot of Retrain the model." lightbox="../media/retrain-model.png":::
-
-    > [!NOTE]
-    > If an endpoint utterance does not align with the PressButton intent, but you would like your model to know that the utterance has no intent, you can change the Aligned intent to None.
-
-6. **Repeat** this process as many times as you like to improve your app model.

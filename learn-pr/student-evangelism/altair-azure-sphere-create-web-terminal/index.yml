@@ -35,7 +35,7 @@ products:
 - azure
 - azure-iot-central
 - azure-sphere
-- azure-app-service-static
+- static-web-apps
 - azure-virtual-machines
 subjects:
 - data-engineering

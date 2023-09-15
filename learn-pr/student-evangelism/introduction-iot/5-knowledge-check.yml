@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-to-iot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
+  ms.date: 11/02/2019
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.custom: team=nextgen
+  ms.service: iot-hub
+durationInMinutes: 5 # dummy number at present
+content: |
+quiz:
+  questions:
+  - content: "Suppose you work in a large retail environment where IoT is deployed. The shelves have sensors monitoring the product for replenishment. The aisles in the store have cameras to monitor flow of people taking items off shelves. The combination of the sensors and cameras helps make the restocking of shelves quick and efficient. In this scenario, which part of the digital feedback loop can you identify?"
+    choices:
+    - content: "Create digital products"
+      isCorrect: false
+      explanation: "Creating digital products isn't a part of the digital feedback loop."
+    - content: "Transform products"
+      isCorrect: false
+      explanation: "The product itself isn't transformed."
+    - content: "Empower employees and optimize operations"
+      isCorrect: true
+      explanation: "Employees are given only the accurate information about items out of stock. So, operations are optimized because employee time is focused."
+  - content: "Consider the same retail scenario as in the previous question. The cameras are designed to spot overcrowding. Computer vision algorithms can spot a person with disabilities struggling in the aisles. Staff are notified and can help the customer. In this scenario, which part of the digital feedback loop can you identify?"
+    choices:
+    - content: "Create digital products"
+      isCorrect: false
+      explanation: "Creating digital products isn't a part of the digital feedback loop."
+    - content: "Engage customers"
+      isCorrect: true
+      explanation: "Because the customer is provided with a personalized, responsive, and contextual experience."
+    - content: "Transform products"
+      isCorrect: false
+      explanation: "The product itself isn't transformed."
+  - content: "Consider the scenario of monitoring the status of wind turbines. Wind turbines operate in remote areas and are costly and expensive to monitor. Sensors monitor the health of turbines. Based on historical data from wind directions, gearbox temperature, wind speed, and turbine blade angles, a predictive maintenance model is created in the cloud. The models are deployed to turbines and take real-time decisions based on operating conditions. This scenario is an example of:"
+    choices:
+    - content: "Intelligent cloud and intelligent edge"
+      isCorrect: true
+      explanation: "Because the models are built in the cloud and deployed on the edge."
+    - content: "Employee empowerment using IoT"
+      isCorrect: false
+      explanation: "Employees aren't directly empowered in this scenario."
+    - content: "Customer engagement using IoT"
+      isCorrect: false
+      explanation: "Customers aren't directly empowered in this scenario."
+    
+    
