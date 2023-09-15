@@ -1,6 +1,6 @@
 This module covers common cyberthreats, business resiliency, secure backup and restore configurations, and security update management.
 
-Imagine that you work for a medium-sized company that has recently experienced a ransomware attack. The attack has caused significant damage to the company's systems and data, and the company is struggling to recover. As a cybersecurity architect, you have been tasked with designing a comprehensive backup and restore plan that will help the company recover from future attacks. In this module, you will learn how to design secure backup and restore configurations using Azure Backup, as well as how to integrate with Configuration Manager for on-premises resources. You will also learn how to manage security updates using Update Management and how to support business resiliency in the face of cyberthreats.
+Imagine that you work for a medium-sized company that has recently experienced a ransomware attack. The attack has caused significant damage to the company's systems and data, and the company is struggling to recover. As a cybersecurity architect, you have been tasked with designing a comprehensive backup and restore plan that will help the company recover from future attacks. In this module, you'll learn how to design secure backup and restore configurations using Azure Backup, and how to integrate with Configuration Manager for on-premises resources. You'll also learn how to manage security updates using Update Management and how to support business resiliency in the face of cyberthreats.
 
 The module is divided into four sections: Understanding Cyberthreats, Designing Secure Backup and Restore Configurations, Managing Security Updates, and Supporting Business Resiliency.
 
@@ -24,7 +24,7 @@ The content in the module helps you prepare for the certification exam SC-100: M
 
 ### What is the threat landscape?
 
-Whether an organization is big or small, the entirety of the digital landscape with which it interacts represents an entry point for a cyberattack. These can include:
+Whether an organization is large or small, the entirety of the digital landscape with which it interacts represents an entry point for a cyberattack. These can include:
 
 -   Email accounts
 -   Social media accounts
@@ -33,7 +33,7 @@ Whether an organization is big or small, the entirety of the digital landscape w
 -   Cloud services
 -   People
 
-Collectively, these are referred to as the threat landscape. Notice that the threat landscape can cover more than just computers and mobile phones. It can include any elements that are owned or managed by an organization, or some that aren't. As you'll learn next, criminals will use any means they can to mount and carry out an attack.
+Collectively, these are referred to as the threat landscape. Notice that the threat landscape can cover more than just computers and mobile phones. It can include any elements that are owned or managed by an organization, or some that aren't. As you learn next, criminals use any means they can to mount and carry out an attack.
 
 ## What are attack vectors?
 
@@ -43,10 +43,10 @@ An attack vector is an entry point or route for an attacker to gain access to a 
 
 Here are some examples of common attack vectors:
 
-- **Email** is perhaps the most common attack vector. Cybercriminals will send seemingly legitimate emails that result in users taking action. This might include downloading a file, or selecting a link that will compromise their device.
--   **Removable media**. An attacker can use media such as USB drives, smart cables, storage cards, and more to compromise a device. For example, attackers might load malicious code into USB devices that are subsequently provided to users as a free gift, or left in public spaces to be found. When they're plugged in, the damage is done.
+- **Email** is perhaps the most common attack vector. Cybercriminals send seemingly legitimate emails that result in users taking action. This might include downloading a file, or selecting a link that will compromise their device.
+-   **Removable media**. An attacker can use media such as USB drives, smart cables, storage cards, and more to compromise a device. For example, attackers might load malicious code into USB devices that are later provided to users as a free gift, or left in public spaces to be found. When they're plugged in, the damage is done.
 -   **Browser**. Attackers can use malicious websites or browser extensions to get users to download malicious software on their devices, or change a user's browser settings. The device can then become compromised, providing an entry point to the wider system or network.
--   **Cloud services**. Organizations rely more and more on cloud services for day-to-day business and processes. Attackers can compromise poorly secured resources or services in the cloud. For example, an attacker could compromise an account in a cloud service, and gain control of any resources or services accessible to that account. They could also gain access to another account with even more permissions.
+-   **Cloud services**. Organizations rely more on cloud services for day-to-day business and processes. Attackers can compromise poorly secured resources or services in the cloud. For example, an attacker could compromise an account in a cloud service, and gain control of any resources or services accessible to that account. They could also gain access to another account with even more permissions.
 -   **Insiders**. The employees of an organization can serve as an attack vector in a cyberattack, whether intentionally or not. An employee might become the victim of a cybercriminal who impersonates them as a person of authority to gain unauthorized access to a system. This is a form of social engineering attack. In this scenario, the employee serves as an unintentional attack vector. In some cases, however, an employee with authorized access may use it to intentionally steal or cause harm.
 
 ## What are security breaches?
@@ -69,7 +69,7 @@ When an attacker achieves a security breach, they'll often want to target data, 
 
 ## Attack chain modeling
 
-An attack chain describes the typical chain of events during an attack that leads to organizational damage. This includes technical and non-technical steps taken by adversaries or insiders during the attack. It's important to note that there's no single linear path for either insider risk or external attacks. There are many common elements across attacks, but each one can take a unique path.
+An attack chain describes the typical chain of events during an attack that leads to organizational damage. This includes technical and nontechnical steps taken by adversaries or insiders during the attack. It's important to note that there's no single linear path for either insider risk or external attacks. There are many common elements across attacks, but each one can take a unique path.
 
 The MCRA includes an attack chain diagram that depicts common techniques related to both external attacks and insider risks, as shown below.
 
@@ -89,7 +89,7 @@ Lockheed Martin created one of the first adaptations of the 'kill chain' militar
 
 The diagram below describes how these relate to each other and to a simple
 Prepare-Enter-Traverse-Execute (PETE) model that Microsoft developed to
-improve communications with business leaders and non-security
+improve communications with business leaders and nonsecurity
 professionals.
 
 ![Diagram of how MITRE ATT&CK, PETE, and Lockheed Martin kill chain map to each other.](../media/mitre-attack-pete-lockheed-kill-chains.png)
