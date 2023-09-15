@@ -4,11 +4,10 @@ title: Exercise - Build sample data and menu selection loops
 metadata:
   title: Exercise - Build sample data and menu selection loops
   description: "Exercise - Build sample data and menu selection loops"
-  ms.date: 05/30/2023
+  ms.date: 09/14/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 25
 content: |
   [!include[](includes/3-exercise-build-data-menu-loops.md)]

@@ -1,5 +1,4 @@
 
-
 Even though Intune offers a simple and easy approach for installing Microsoft 365 Apps on Windows and macOS devices other deployment options may be needed depending on your requirements.
 
 If you need complete control of the Microsoft 365 Apps deployment, you can choose what deployment tool to use and whether to install the Office files directly from the cloud or from a local source on your network. You have the following options for preparing and deploying Microsoft 365:

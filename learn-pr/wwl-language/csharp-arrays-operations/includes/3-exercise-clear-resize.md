@@ -1,8 +1,3 @@
-
-
-
-
-
 As you continue building a pallet tracker for the logistics company, suppose you also need track new pallets and remove old pallets from tracking. How can you accomplish creating tracking functionality for adding and removing pallets?
 
 ## Use array methods to clear and resize an array

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.design-cognitive-service
-title: Design Cognitive Services using Azure Functions
+title: Design Azure AI services using Azure Functions
 metadata:
-  title: Design Cognitive Services using Azure Functions
-  description: In this section, we help the learner to understand the design of the deploying cognitive services using Azure Functions
+  title: Design Azure AI services using Azure Functions
+  description: In this section, we help the learner to understand the design of the deploying Azure AI services using Azure Functions
   ms.date: 04/07/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
   ms.custom: team=nextgen
+  ms.service: iot-hub
 durationInMinutes: 6 # dummy number at present
 content: |
   [!include[](includes/2-design.md)]

@@ -21,7 +21,7 @@ quiz:
     - content: "You can only upload one document at a time."
       isCorrect: false
       explanation: "Incorrect. You can upload multiple documents if they're defined in the source data."
-    - content: "The JSON can't contain complex data types like arrays."
+    - content: "The JSON can't contain complex data types."
       isCorrect: true
       explanation: "Correct. At the moment, the linked service only supports a limited number of field types."
     - content: "You have to define the index in the Azure portal first."
@@ -37,7 +37,7 @@ quiz:
       explanation: "Incorrect. The indexer is a feature of the search service that pulls data into an index."
     - content: "Skillset."
       isCorrect: false
-      explanation: "Incorrect. A skillset is used to enrich an index using cognitive services."
+      explanation: "Incorrect. A skillset is used to enrich an index using Azure AI Services."
   - content: "When implementing a backoff strategy, what return codes should you look for and then retry your request?"
     choices:
     - content: "200 and 201."

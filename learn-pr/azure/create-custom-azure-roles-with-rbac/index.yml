@@ -12,11 +12,11 @@ title: Create custom roles for Azure resources with role-based access control (R
 summary: Understand the structure of role definitions for access control. Identify the role properties to use that define your custom role permissions. Create an Azure custom role and assign to a user. 
 abstract:  | 
   In this module, you will:
-  - Identify role definition structure and properties
-  - Create and manage an Azure custom role for resource access management
+  - Identify role definition structure and properties.
+  - Create and manage an Azure custom role for resource access management.
 
 prerequisites: |
-  - Basic knowledge of access management concepts in Azure like Azure role-based access control (RBAC).
+  - Basic knowledge of access management concepts in Azure like Azure role-based access control (RBAC)
   - (Optional) Access to an Azure subscription where you have the User Access Administrator or Owner role for your account
 iconUrl: /training/achievements/create-custom-azure-roles-with-rbac.svg
 levels:

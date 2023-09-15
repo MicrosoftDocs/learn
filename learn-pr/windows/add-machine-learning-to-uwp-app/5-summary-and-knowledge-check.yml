@@ -62,7 +62,7 @@ quiz:
 
   - content: "Bonus Challenge! Select the only item in this list that is **not** a method for training a new Machine Learning model:"
     choices:
-    - content: "QnA Maker, Azure Cognitive Services, to create rich knowledge resources that can be integrated into apps and services."
+    - content: "QnA Maker, Azure AI services, to create rich knowledge resources that can be integrated into apps and services."
       isCorrect: false
       explanation: |
         QnA Maker helps you build these things: 
@@ -73,12 +73,12 @@ quiz:
     - content: "PyTorch framework for natural language processing."
       isCorrect: false
       explanation: "PyTorch is another great way to train a new model both locally or in the cloud. For an example of how to train a model with PyTorch by using the MNIST dataset, see [Train a model with PyTorch](/windows/ai/train-model-pytorch)."
-    - content: "Speech to Text, Azure Cognitive Services, to convert audio to text for natural responsiveness."
+    - content: "Speech to Text, Azure AI services, to convert audio to text for natural responsiveness."
       isCorrect: false
-      explanation: "Speech to Text is one of several ways that Azure Cognitive Services makes training speech models easy. Check out the [speech processing](https://azure.microsoft.com/services/cognitive-services/directory/speech/) of the Azure Cognitive Services site."
+      explanation: "Speech to Text is one of several ways that Azure AI services makes training speech models easy. Check out the [speech processing](https://azure.microsoft.com/services/cognitive-services/directory/speech/) of the Azure Cognitive Services site."
     - content: "Microsoft Cognitive Toolkit framework with Visual Studio Tools for AI to describe neural networks as a series of computational steps via a directed graph."
       isCorrect: false
       explanation: "The Microsoft Cognitive Toolkit framework is a great way to train a new model. For an example of how to train a new model with the MNIST dataset, see [Train a model with CNTK](/windows/ai/train-model-vs-tools-ai)."
     - content: "All of these choices are ways to train a new ML model."
       isCorrect: true
-      explanation: "All of the preceding choices are ways to create a machine learning model. Select each for a link to more information and help on how to use these services. Or see [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/)."
+      explanation: "All of the preceding choices are ways to create a machine learning model. Select each for a link to more information and help on how to use these services. Or see [Azure AI services](https://azure.microsoft.com/services/cognitive-services/)."

@@ -1,6 +1,3 @@
-
-
-
 Code challenges reinforce what you've learned and help you gain some confidence before continuing on.
 
 In this challenge, you work with a string that contains a fragment of HTML. You extract data from the HTML fragment, replace some of its content, and remove other parts of its content to achieve the desired output.

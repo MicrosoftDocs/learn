@@ -8,8 +8,8 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
   ms.custom: team=nextgen
+  ms.service: iot-hub
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/3-gpio-hardware-interfaces.md)]

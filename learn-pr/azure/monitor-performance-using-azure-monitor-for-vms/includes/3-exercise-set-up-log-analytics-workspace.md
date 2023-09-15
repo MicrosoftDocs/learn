@@ -27,7 +27,7 @@ In this unit, you'll:
 
 1. After the resource deploys, select **Go to resource**.
 
-1. In the left menu, scroll down to **General** and select **Properties**.
+1. In the left menu, select **Properties** under **General**.
 
 1. Look for the access control mode, and select **Use resource or workspace permissions**. This setting changes the access mode to use the resource-context.
 

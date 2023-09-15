@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-visual-studio-code.exercise-explore-visual-studio-code-user-interface
+title: Exercise - Explore the Visual Studio Code user interface
+metadata:
+  title: Exercise - Explore the Visual Studio Code user interface
+  description: "Exercise - Explore the Visual Studio Code user interface"
+  ms.date: 09/15/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: vs-code
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-exercise-explore-visual-studio-code-user-interface.md)]

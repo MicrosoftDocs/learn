@@ -4,11 +4,11 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: Discover what this module will cover.
+  description: Discover what this module covers.
   ms.prod: learning-azure-monitor
   ms.date: 4/15/2021
-  author: gerryaobrien
-  ms.author: gerryo
+  author: guywi-ms
+  ms.author: guywild
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 2
 content: |

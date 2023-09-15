@@ -13,6 +13,6 @@ metadata:
     - build-2023
     - build-2023-dataai
     - build-2023-fabric  
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]

@@ -26,7 +26,6 @@ roles:
 - student
 products:
 - industry-solutions
-- return-to-workplace
 subjects:
 - cloud-computing
 units:

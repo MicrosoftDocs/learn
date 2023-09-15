@@ -2117,3 +2117,108 @@ achievements:
   title: Manage consent requests to apps through admin consent workflow in Azure Active Directory
   summary: "Admin consent workflow streamlines the process by which admins evaluate and respond to consent requests in Azure Active directory (Azure AD). Learn how to configure admin consent workflow to enable users of applications to request admin consent from the consent prompt. Learn how to properly evaluate consent requests and respond to them through the Azure portal."
   iconUrl: /training/achievements/configure-admin-consent-workflow.svg
+- uid: learn.azure.build-cloud-governance-strategy-azure.badge
+  type: badge
+  title: Build a cloud governance strategy on Azure
+  summary: Learn how access policies, resource locks, and tags, as well as Azure services such as Azure Policy and Azure Blueprints, can help you build a comprehensive cloud governance strategy.
+  iconUrl: /training/achievements/describe-azure-governance-methodologies.svg
+- uid: learn.azure.secure-access-azure-identity-services.badge
+  type: badge
+  title: Secure access to your applications by using Azure identity services
+  summary: Learn how Azure Active Directory helps you manage and secure identities. Also see how single sign-on, multifactor authentication, and Conditional Access enable your users to securely access resources and applications from your intranet and from public networks.
+  iconUrl: /training/achievements/examine-core-identity-services.svg
+- uid: learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.badge
+  type: badge
+  title: Analyze and optimize data warehouse storage in Azure Synapse Analytics
+  summary: In this module, you'll learn to analyze information used to optimize a data warehouse in Azure Synapse Analytics.
+  iconUrl: /training/achievements/azure-synaps-analytics-optimize-data-warehouse.svg
+- uid: learn.azure.plan-manage-azure-costs.badge
+  type: badge
+  title: Plan and manage your Azure costs
+  summary: Learn about the factors that influence cost and tools you can use to help estimate and manage your cloud spend.
+  iconUrl: /training/achievements/review-planning-managing-costs.svg
+- uid: learn.enable-single-sign-on.badge
+  type: badge
+  title: Enable single sign-on for applications by using Azure Active Directory
+  summary: "To enable single sign-on, you add an application from the Azure Active Directory(Azure AD) application gallery. You create a test user account in Azure AD  and assign it to the Azure AD application. You then configure single sign-on both at the identity provider and the service provider and test the single sign-on configuration by signing in to the application using the test user account."
+  iconUrl: /training/achievements/enable-single-sign-on.svg
+- uid: learn.data-ai.build-ai-solutions-with-azure-ml-service.trophy
+  type: trophy
+  title: Build and operate machine learning solutions with Azure Machine Learning
+  summary: Azure Machine Learning is a cloud platform for training, deploying, managing, and monitoring machine learning models. Learn how to use the Azure Machine Learning Python SDK to create and manage enterprise-ready ML solutions.
+  iconUrl: /training/achievements/data-ai/build-ai-solutions-with-azure-ml-service-trophy.svg
+- uid: learn.data-ai.intro-to-azure-machine-learning-service.badge
+  type: badge
+  title: Introduction to the Azure Machine Learning SDK
+  summary: Azure Machine Learning provides a cloud-based platform for training, deploying, and managing machine learning models.
+  iconUrl: /training/achievements/intro-to-azure-machine-learning-service-badge.svg
+- uid: learn.data-ai.train-local-model-with-azure-mls.badge
+  type: badge
+  title: Train a machine learning model with Azure Machine Learning
+  summary: Learn how to use Azure Machine Learning to train a model and register it in a workspace.
+  iconUrl: /training/achievements/train-local-model-with-azure-mls-badge.svg
+- uid: learn.wwl.create-pipelines-in-aml.badge
+  type: badge
+  title: Orchestrate machine learning with pipelines
+  summary: Orchestrating machine learning training with pipelines is a key element of DevOps for machine learning. In this module, you'll learn how to create, publish, and run pipelines to train models in Azure Machine Learning.
+  iconUrl: /training/achievements/create-pipelines-in-aml-badge.svg
+- uid: learn.wwl.use-compute-contexts-in-aml.badge
+  type: badge
+  title: Work with Compute in Azure Machine Learning
+  summary: One of the key benefits of the cloud is the ability to use scalable, on-demand compute resources for cost-effective processing of large data. In this module, you'll learn how to use cloud compute in Azure Machine Learning to run training experiments at scale.
+  iconUrl: /training/achievements/use-compute-contexts-in-aml-badge.svg
+- uid: learn.wwl.work-with-data-in-aml.badge
+  type: badge
+  title: Work with Data in Azure Machine Learning
+  summary: Data is the foundation of machine learning. In this module, you will learn how to work with datastores and datasets in Azure Machine Learning, enabling you to build scalable, cloud-based model training solutions.
+  iconUrl: /training/achievements/work-with-data-in-aml-badge.svg
+- uid: learn.data-ai.automate-model-selection-with-azure-automl.badge
+  type: badge
+  title: Automate machine learning model selection with Azure Machine Learning
+  summary: Learn how to use automated machine learning in Azure Machine Learning to find the best model for your data.
+  iconUrl: /training/achievements/automate-model-selection-with-azure-automl-badge.svg
+- uid: learn.data-ai.register-and-deploy-model-with-amls.badge
+  type: badge
+  title: Deploy real-time machine learning services with Azure Machine Learning
+  summary: Learn how to register and deploy ML models with the Azure Machine Learning service.
+  iconUrl: /training/achievements/register-and-deploy-model-with-amls-badge.svg
+- uid: learn.wwl.deploy-batch-inference-pipelines-with-azure-machine-learning.badge
+  type: badge
+  title: Deploy batch inference pipelines with Azure Machine Learning
+  summary: Machine learning models are often used to generate predictions from large numbers of observations in a batch process. To accomplish this, you can use Azure Machine Learning to publish a batch inference pipeline.
+  iconUrl: /training/achievements/deploy-batch-inference-pipelines-with-azure-machine-learning.svg
+- uid: learn.wwl.explore-differential-privacy.badge
+  type: badge
+  title: Explore differential privacy
+  summary: Data scientists have an ethical (and often legal) responsibility to protect sensitive data. Differential privacy is a leading edge approach that enables useful analysis while protecting individually identifiable data values.
+  iconUrl: /training/achievements/explore-differential-privacy.svg
+- uid: learn.wwl.tune-hyperparameters-with-azure-machine-learning.badge
+  type: badge
+  title: Tune hyperparameters with Azure Machine Learning
+  summary: Choosing optimal hyperparameter values for model training can be difficult, and usually involved a great deal of trial and error. With Azure Machine Learning, you can leverage cloud-scale experiments to tune hyperparameters.
+  iconUrl: /training/achievements/tune-hyperparameters-with-azure-machine-learning.svg
+- uid: learn.azure.azure-machine-learning-security.badge
+  type: badge
+  title: Explore security concepts in Azure Machine Learning
+  summary: Explore and experiment with securing a machine learning environment to ensure data remains private and models are accurate.
+  iconUrl: /training/achievements/15-explore-security-concepts-in-azure-machine-learning.svg
+- uid: learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning.badge
+  type: badge
+  title: Detect and mitigate unfairness in models with Azure Machine Learning
+  summary: Machine learning models can often encapsulate unintentional bias that results in unfairness. With Fairlearn and Azure Machine Learning, you can detect and mitigate unfairness in your models.
+  iconUrl: /training/achievements/detect-and-mitigate-unfairness-in-models-with-azure-machine-learning.svg
+- uid: learn.wwl.explain-machine-learning-models-with-azure-machine-learning.badge
+  type: badge
+  title: Explain machine learning models with Azure Machine Learning
+  summary: Many decisions made by organizations and automated systems today are based on predictions made by machine learning models. It's increasingly important to be able to understand the factors that influence the predictions models make.
+  iconUrl: /training/achievements/explain-machine-learning-models-with-azure-machine-learning.svg
+- uid: learn.wwl.monitor-data-drift-with-azure-machine-learning.badge
+  type: badge
+  title: Monitor data drift with Azure Machine Learning
+  summary: Changing trends in data over time can reduce the accuracy of the predictions made by a model. Monitoring for this data drift is an important way to ensure your model continues to predict accurately.
+  iconUrl: /training/achievements/monitor-data-drift-with-azure-machine-learning.svg
+- uid: learn.wwl.monitor-models-with-azure-machine-learning.badge
+  type: badge
+  title: Monitor models with Azure Machine Learning
+  summary: After a machine learning model has been deployed into production, it's important to understand how it is being used by capturing and viewing telemetry.
+  iconUrl: /training/achievements/monitor-models-with-azure-machine-learning.svg

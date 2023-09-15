@@ -9,8 +9,7 @@ metadata:
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: machine-learning
-title: |
-  Fine-tune a foundation model with Azure Machine Learning
+title: Fine-tune a foundation model with Azure Machine Learning
 summary: "Train a pretrained Large Language Model (LLM) on specific tasks. The model catalog in Azure Machine Learning offers many open source models that can be fine-tuned for your specific task."
 abstract: |
   By the end of this module, you'll be able to:
@@ -29,7 +28,9 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - azure-machine-learning
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-computing
-  - data-privacy
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
 units:
 - learn.finetune-foundation-model-with-azure-machine-learning.introduction
 - learn.finetune-foundation-model-with-azure-machine-learning.understand-finetune

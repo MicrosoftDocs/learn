@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-what-is-entitlement-management-access-reviews
-title: Describe what is entitlement management and access reviews
+title: Describe access reviews
 metadata:
-  title: Describe what is entitlement management and access reviews
-  description: "Describe what is entitlement management and access reviews"
-  ms.date: 02/07/2023
+  title: Describe access reviews
+  description: "Describe access reviews"
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-durationInMinutes: 8
+durationInMinutes: 5
 content: |
   [!include[](includes/3-describe-what-entitlement-management-access-reviews.md)]

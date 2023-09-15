@@ -1,5 +1,3 @@
-
-
 There's more to building a C# application than stringing together lines of code. You'll need the .NET Runtime, which hosts and manages your code as it executes on the end user's computer. You'll also rely on the .NET Class Library, a prewritten collection of coding resources that you can use in your applications. This unit explains what the .NET Class Library is and how it complements the C# programming language.
 
 ## What is the .NET Class Library?
