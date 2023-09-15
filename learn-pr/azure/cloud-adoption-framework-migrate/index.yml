@@ -8,6 +8,7 @@ metadata:
   ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.service: caf
+  ms.subservice: caf-methodology-adopt-migrate
 title: "Migrate to Azure through repeatable processes and common tools"
 summary: The Migrate methodology in the Cloud Adoption Framework guides you through migration to Azure by using repeatable processes and common tools.
 abstract: |
