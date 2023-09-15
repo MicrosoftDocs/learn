@@ -21,6 +21,6 @@ At its core, Azure Machine Learning is a service for training and managing machi
 In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), you can manage the compute targets for your data science activities. There are four kinds of compute resource you can create:
 - **Compute Instances**: Development workstations that data scientists can use to work with data and models.
 - **Compute Clusters**: Scalable clusters of virtual machines for on-demand processing of experiment code.
-- **Inference Clusters**: Deployment targets for predictive services that use your trained models.
+- **Kubernetes Clusters**: Deployment targets for predictive services that use your trained models.  You can access previous versions of "inference clusters" here. 
 - **Attached Compute**: Links to existing Azure compute resources, such as Virtual Machines or Azure Databricks clusters.
 

@@ -4,13 +4,11 @@ title: Understand steps for clustering
 metadata:
   title: Understand steps for clustering
   description: "Understand steps for clustering"
-  ms.date: 02/23/2023
+  ms.date: 09/15/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: machine-learning
 durationInMinutes: 6
 content: |
   [!include[](includes/5-clustering-steps.md)]

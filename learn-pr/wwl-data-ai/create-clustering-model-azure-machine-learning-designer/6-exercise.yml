@@ -4,13 +4,11 @@ title: Exercise - Explore clustering with Azure Machine Learning designer
 metadata:
   title: Exercise - Explore clustering with Azure Machine Learning designer
   description: "Exercise - Explore clustering with Azure Machine Learning designer"
-  ms.date: 02/23/2023
+  ms.date: 09/15/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: machine-learning
 durationInMinutes: 55
 content: |
   [!include[](includes/6-exercise.md)]
