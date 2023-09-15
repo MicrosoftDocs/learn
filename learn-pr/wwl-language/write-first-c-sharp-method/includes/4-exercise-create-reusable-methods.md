@@ -1,6 +1,3 @@
-
-
-
 As you develop applications, you may find yourself writing code to do the same thing over and over again. Instead of writing duplicate code, using a method to perform the same task shortens your code and helps you develop applications faster. In this exercise, you'll identify repeated code and replace it with a reusable method. Let's get started!
 
 ### Identify duplicated code

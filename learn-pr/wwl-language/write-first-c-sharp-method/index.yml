@@ -3,11 +3,11 @@ uid: learn.wwl.write-first-c-sharp-method
 metadata:
   title: Write your first C# method
   description: "This module covers the syntax of creating and executing methods. Creating reusable code and structuring solutions using methods are reviewed."
-  ms.date: 05/06/2023
+  ms.date: 09/15/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Write your first C# method
 summary: Learn to create your own methods to perform specific tasks.
 abstract: |
@@ -20,7 +20,7 @@ prerequisites: |
   - Experience using C# data types including `int`, `string`, `double`, and arrays
   - Experience using `switch` statements, `if-else` statements, and `for` loops
   - Experience using `string.Split`
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/write-first-c-sharp-method.svg
 levels:
 - beginner
 roles:

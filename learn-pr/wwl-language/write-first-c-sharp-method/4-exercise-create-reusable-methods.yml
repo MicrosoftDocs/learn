@@ -4,11 +4,10 @@ title: Exercise - Create reusable methods
 metadata:
   title: Exercise - Create reusable methods
   description: "Exercise - Create reusable methods"
-  ms.date: 05/06/2023
+  ms.date: 09/15/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-create-reusable-methods.md)]
@@ -23,7 +22,7 @@ quiz:
     - content: "`ConvertCurrency() { }`"
       isCorrect: false
       explanation: "This answer is incorrect. A return type must be declared before the method name."
-    - content: "`void ConvertCurrency();`"
+    - content: "`void ConvertCurrency(){};`"
       isCorrect: true
       explanation: "This line is correct. A method signature is created by declaring the return type, followed by the method name, and parentheses containing any input parameters."
   - content: "Suppose there's a method named `Update`. Which of the following correctly calls the method?"

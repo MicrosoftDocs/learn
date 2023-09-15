@@ -4,11 +4,10 @@ title: Understand the syntax of methods
 metadata:
   title: Understand the syntax of methods
   description: "Understand the syntax of methods"
-  ms.date: 05/06/2023
+  ms.date: 09/15/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-syntax-of-methods.md)]
