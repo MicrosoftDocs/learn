@@ -4,13 +4,11 @@ title: What is Azure Machine Learning designer?
 metadata:
   title: What is Azure Machine Learning designer?
   description: "What is Azure Machine Learning designer?"
-  ms.date: 06/01/2023
+  ms.date: 09/15/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: machine-learning
 durationInMinutes: 4
 content: |
   [!include[](includes/4-what-is-azure-designer.md)]

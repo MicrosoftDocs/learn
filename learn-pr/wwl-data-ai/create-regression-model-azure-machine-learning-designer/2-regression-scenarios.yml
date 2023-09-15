@@ -4,13 +4,11 @@ title: Identify regression machine learning scenarios
 metadata:
   title: Identify regression machine learning scenarios
   description: "Identify regression machine learning scenarios"
-  ms.date: 06/01/2023
+  ms.date: 09/15/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: machine-learning
 durationInMinutes: 3
 content: |
   [!include[](includes/2-regression-scenarios.md)]

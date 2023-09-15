@@ -4,15 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/01/2023
+  ms.date: 09/15/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: machine-learning
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "In Azure Machine Learning studio, what can you use to author regression machine learning pipelines using a drag-and-drop interface?"
     choices:
