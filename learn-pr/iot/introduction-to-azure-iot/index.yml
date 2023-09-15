@@ -16,7 +16,7 @@ abstract: |
     - Describe how features of the Azure IoT services work to implement your IoT scenario.
 prerequisites: |
   - Basic familiarity with IoT terms and concepts
-  - Familiarity with Azure cloud concepts such as services,security, and communications protocols
+  - Familiarity with Azure cloud concepts such as services, security, and communications protocols
 iconUrl: /learn/achievements/introduction-to-azure-iot.svg
 levels:
 - beginner
