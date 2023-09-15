@@ -98,10 +98,10 @@ products:
 - azure-iot
 subjects:
 - digital-application-innovation
+- iot
 units:
 - learn.introduction-to-azure-iot.introduction
 - learn.introduction-to-azure-iot.what-is-azure-iot
-- learn.introduction-to-azure-iot.describe-azure-iot-services
 - learn.introduction-to-azure-iot.how-azure-iot-works
 - learn.introduction-to-azure-iot.when-to-use-iot
 - learn.introduction-to-azure-iot.knowledge-check

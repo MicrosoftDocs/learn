@@ -3,11 +3,10 @@ uid: learn.introduction-to-azure-iot.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This content is a part of Introduction to Azure IoT."
   ms.date: 8/14/2023
   author: dominicbetts
   ms.author: dobett
-  ms.topic: interactive-tutorial
 ###########################################################################
 ###
 ### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
@@ -18,7 +17,6 @@ metadata:
 ### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.service: iot
 durationInMinutes: 5
 ###########################################################################
 ###

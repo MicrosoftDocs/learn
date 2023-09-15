@@ -15,7 +15,7 @@ A more comprehensive list of considerations includes:
 | **Time series data** | Do you need to analyze large-scale time-series data? |
 | **Offload processing to IoT Edge devices** | Do you plan to offload processing to edge devices? |
 | **Scale** | Do you need to manage IoT assets at scale? |
-| **Modeling physical spaces** | Do you need to model a physical spaces? |
-| **Secure IoT devices** | Do you need to manage secure devices? |
+| **Modeling physical spaces** | Do you need to model a physical space? |
+| **Secure IoT devices** | Do you need to manage and secure devices? |
 
 The Azure IoT services and SDKs can help implement an IoT solution if the answer to some or all of the above questions is yes.

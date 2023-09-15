@@ -54,7 +54,7 @@ In Azure IoT, a device developer writes the code to run on the devices in the so
 * Sends telemetry collected from attached sensors to the cloud.
 * Manages device state and synchronizes that state with the cloud.
 * Responds to commands sent from the cloud.
-* Enables the installation of software updates from the cloud.
+* Enables the installation of software and firmware updates from the cloud.
 * Enables the device to keep functioning while it's disconnected from the cloud.
 
 ### Device types
@@ -218,17 +218,17 @@ Analysis and visualization services and tools you can incorporate into your IoT 
 
 * The *Azure Digital Twins* service lets you build and maintain models that are live, up-to-date representations of the real world. You can query, analyze, and generate visualizations from these models to extract business insights. An example model might be a representation of a building that includes information about the rooms, the devices in the rooms, and the relationships between the rooms and devices.
 
-* *Azure Data Explorer* is a fully managed, high-performance, big-data analytics platform that makes it easy to analyze high volumes of data in near real time. The following articles and tutorials show some examples of how to use Azure Data Explorer to analyze and visualize IoT data:
+* *Azure Data Explorer* is a fully managed, high-performance, big-data analytics platform that makes it easy to analyze high volumes of data in near real time:
 
 * Use *Azure Databricks* to process, store, clean, share, analyze, model, and monetize datasets with solutions from BI to machine learning. Use the Azure Databricks platform to build and deploy data engineering workflows, machine learning models, analytics dashboards, and more.
 
 * *Azure Stream Analytics* is a fully managed stream processing engine that is designed to analyze and process large volumes of streaming data with low latency. Patterns and relationships can be identified in data that originates from various input sources including applications, devices, and sensors.
 
-* *Power BI* is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Power BI lets you easily connect to your data sources, visualize and discover what's important, and share that with anyone or everyone you want.
+* *Power BI* is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Power BI lets you easily connect to your data sources, visualize and discover what's important, and share that with anyone you want.
 
 * *Azure Maps* is a collection of geospatial services and SDKs that use fresh mapping data to provide geographic context to web and mobile applications.
 
-* Grafana is visualization and analytics software that lets you query, visualize, alert on, and explore your metrics, logs, and traces no matter where they're stored. It provides you with tools to turn your time-series database data into insightful graphs and visualizations.
+* *Grafana* is visualization and analytics software that lets you query, visualize, alert on, and explore your metrics, logs, and traces no matter where they're stored. It provides you with tools to turn your time-series database data into insightful graphs and visualizations.
 
 ## Manage your solution
 
@@ -248,11 +248,11 @@ There are many options for managing your IoT solution including the Azure portal
 
 You can divide security in an IoT solution into the following three areas:
 
-* Device security: Secure the IoT device while it's deployed in the wild.
+* *Device security*: Secure the IoT device while it's deployed in the wild.
 
-* Connection security: Ensure all data transmitted between the IoT device and the IoT cloud services is confidential and tamper-proof.
+* *Connection security*: Ensure all data transmitted between the IoT device and the IoT cloud services is confidential and tamper-proof.
 
-* Cloud security: Secure your data while it moves through, and is stored in the cloud.
+* *Cloud security*: Secure your data while it moves through, and is stored in the cloud.
 
 *Microsoft Defender for IoT* can automatically monitor some key security recommendations. Microsoft Defender for IoT should be the first line of defense to protect your resources in Azure. Microsoft Defender for IoT periodically analyzes the security state of your Azure resources to identify potential security vulnerabilities. It then provides you with recommendations on how to address them.
 
@@ -268,7 +268,7 @@ An IoT solution may need to support millions of connected devices. You need to e
 
 * You can scale the IoT Hub service vertically and horizontally. Use IoT Hub routing to handle scaling out the services that IoT Hub delivers messages to.
 
-* IoT Edge can help to help scale your solution. IoT Edge lets you move cloud analytics and custom business logic from the cloud to your devices. This approach lets your cloud solution focus on business insights instead of data management. Scale out your IoT solution by packaging your business logic into standard containers, deploy those containers to your devices, and monitor them from the cloud.
+* IoT Edge can help to scale your solution. IoT Edge lets you move cloud analytics and custom business logic from the cloud to your devices. This approach lets your cloud solution focus on business insights instead of data management. Scale out your IoT solution by packaging your business logic into standard containers, deploy those containers to your devices, and monitor them from the cloud.
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
