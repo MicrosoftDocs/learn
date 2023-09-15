@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-device-management-tools
 metadata:
-  title: Evaluate device management tools for Azure IoT
-  description: Evaluate the service and coding tools that are used to implement device management tasks in Azure IoT, and when the various approaches to device management should be applied.
+  title: Evaluate device management tools for Azure IoT Hub
+  description: Evaluate the service and coding tools that are used to implement device management tasks in Azure IoT Hub.
   ms.date: 09/06/2023
   author: kgremban
   ms.author: kgremban
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-standard-task-based
-  ms.prod: azure-iot
-title: Evaluate device management tools for Azure IoT
-summary: Evaluate service and coding tools in Azure IoT that are used to implement device management tasks, and when the various approaches to device management should be applied.
+  ms.service: iot-hub
+title: Evaluate device management tools for Azure IoT Hub
+summary: Evaluate the service and coding tools that are used to implement device management tasks in Azure IoT Hub, and when the various approaches to device management should be applied.
 abstract: |
   By the end of this module, you'll be able to:
-  - Describe the device management tools and approaches for Azure IoT.
-  - Describe device management using the IoT extension for Azure CLI.
+  - Describe the device management tools and approaches for Azure IoT Hub.
+  - Describe device management using the Azure IoT extension for Azure CLI.
   - Describe device management using the Azure IoT Hub extension for Visual Studio Code.
 prerequisites: |
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
@@ -26,15 +26,12 @@ levels:
 - intermediate
 roles:
 - developer
+- solution-architect
 products:
-- azure
-- azure-iot
 - azure-iot-hub
 - azure-iot-sdk
-- azure-portal
-- azure-clis
 subjects:
-- device-management
+- iot
 units:
 - learn.wwl.examine-device-management-tools.introduction
 - learn.wwl.examine-device-management-tools.review-approaches

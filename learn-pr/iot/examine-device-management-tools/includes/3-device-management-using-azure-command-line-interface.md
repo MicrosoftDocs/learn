@@ -1,8 +1,8 @@
-The IoT extension for Azure CLI gives developers command-line access to IoT device maintenance capabilities. The interface is run outside of the Azure portal.
+The IoT extension for Azure CLI gives developers command-line access to IoT device maintenance capabilities.
 
-An organization may decide to use Azure CLI for IoT device management in situations where scripting is required for repeatable or scriptable tasks such as with periodic device updates that a run on a timer. CLI scripting retains the flexibility and power of a coding environment vs. using the Azure IoT Hub portal interface or Visual Studio Code and Azure IoT Hub extension menu-based interface.
+An organization may decide to use Azure CLI for IoT device management in situations where scripting is required for repeatable or scriptable tasks such as with periodic device updates that a run on a timer. CLI scripting retains the flexibility and power of a coding environment verses using the Azure IoT Hub portal interface or Visual Studio Code and Azure IoT Hub extension menu-based interface.
 
-Imagine that you work for a large product distribution company. Your company needs to update 1000s of warehouse IoT devices regularly. You write a script that runs within the IoT extension for Azure CLI that updates IoT device configuration and firmware information as required through a wireless network. The script runs monthly using a software timer.
+Recall that as an electrical power system operator, you had to take a faulty sensor offline using the Azure portal. You are concerned that other sensors may become erratic due to a recent firmware update that may have some faulty code. You ask a programmer to check the code for errors. The programmer finds and fixes the faulty code. You run a script within the IoT extension for Azure CLI that updates all applicable sensor firmware with the new firmware version through a wireless network.
 
 Here, you learn about Azure CLI scripting capabilities that you can use to manage IoT devices.
 
@@ -71,7 +71,7 @@ Here, you learn about Azure CLI scripting capabilities that you can use to manag
   :::column-end:::
 :::row-end:::
 
-> [!NOTE]
+> [!TIP]
 > If you don't have the IoT extension for Azure CLI installed, the simplest way to install it is to run `az extension add --name azure-iot` in the Azure CLI.
 
 Before you can enter any device management commands, you need to sign in to your Azure account:

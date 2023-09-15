@@ -1,6 +1,6 @@
-The Azure IoT Hub extension for Visual Studio Code provides an interactive menu-based system that can be used to perform many IoT device management tasks. The interface is run outside of the Azure portal.
+The Azure IoT Hub extension for Visual Studio Code provides an interactive menu-based system that can be used to perform many IoT device management tasks. The interface runs outside of the Azure portal.
 
-Suppose you work as a field technician for an oil and gas company. You need to test some IoT devices by monitoring IoT Hub-to-device messages in real-time. Your company doesn't allow you to use its Azure portal account. This account is limited to a select group of administrators. So you use Visual Studio Code and the Azure IoT extension to run a menu-based command to monitor the IoT Hub-to-device messages.
+Recall that a technician was dispatched to maintenance the malfunctioning sensor. The technician locates and replaces the faulty sensor, then uses a laptop computer to run Azure IoT extension for Visual Studio Code menu-based commands to put the sensor online and test it through the wireless network.
 
 Here, you'll learn about some of the Visual Studio Code and Azure IoT Hub extension capabilities that you can use to manage IoT devices.
 
@@ -76,21 +76,21 @@ To invoke a direct method on a device:
 
 1. In the Visual Studio Code Explorer pane, right-click the device that you're interested in.
 2. On the context menu for your device, select **Invoke Direct Method**.
-3. Enter the method name in the input box, and then the associated payload value. The results are shown in OUTPUT &gt; Azure IoT Hub extension view. If the direct method that you specify doesn't exist on the device, you then see message similar to this: Failed to invoke Direct Method: Not found.
+3. Enter the method name in the input box, and then the associated payload value. The results are shown in OUTPUT &gt; Azure IoT Hub extension view. If the direct method that you specify doesn't exist on the device, you then see message similar to this: **Failed to invoke Direct Method: Not found**.
 
 ### Read a device twin
 
 To read the contents of a device twin document (JSON file):
 
 1. In the Visual Studio Code Explorer pane, right-click the device that you're interested in.
-2. On the context menu for your device, click **Edit Device Twin**. An azure-iot-device-twin.json file is opened in Visual Studio Code showing the contents of the device twin document.
+2. On the context menu for your device, click **Edit Device Twin**. An *azure-iot-device-twin.json* file is opened in Visual Studio Code showing the contents of the device twin document.
 
 ### Update a device twin
 
 After opening a device twin document, you can update desired properties as follows:
 
-1. Make some edits to the properties.desired field. You can also make changes to tags. Tags can be used to support of device management tasks that act on a group of devices that have the same tag value setting.
-2. Right-click anywhere within the azure-iot-device-twin.json document. This opens the Visual Studio Code context menu for the open document.
+1. Make some edits to the **properties.desired** field. You can also make changes to tags. Tags can be used to support of device management tasks that act on a group of devices that have the same tag value setting.
+2. Right-click anywhere within the **azure-iot-device-twin.json** document. This opens the Visual Studio Code context menu for the open document.
 3. On the context menu, to save the changes to the device twin, select **Update Device Twin**.
 
 ### Send cloud-to-device messages

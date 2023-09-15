@@ -8,7 +8,6 @@ metadata:
   author: kgremban
   ms.author: kgremban
   manager: lizross
-  ms.topic: training-unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -17,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When using Azure CLI for device management, which of the following command parameters would a developer use to instruct a device to take an action?"
+  - content: "When using the Azure CLI for device management, which of the following command parameters would a developer use to instruct a device to take an action?"
     choices:
     - content: "device-twin update"
       isCorrect: false
@@ -35,8 +34,8 @@ quiz:
       explanation: "Incorrect. Automatic device management can be done through the Azure portal or Azure CLI, but not Visual Studio Code with the Azure IoT Hub extension."
     - content: "Update a device twin property."
       isCorrect: true
-      explanation: "Correct. Updating a property of a device twin can be done using each of the three tools."
+      explanation: "Correct. Update a device twin property, which can be done using each of the three tools."
     - content: "Update a device twin desired property."
       isCorrect: false
-      explanation: "Incorrect. The desired properties of a device twin can be set from the service side using the Azure portal or Azure CLI, but not using Visual Studio Code with the Azure IoT Hub extension."
+      explanation: "Update a device twin reported property, which cannot be set from any of these three tools, but can be read from all three tools."
       

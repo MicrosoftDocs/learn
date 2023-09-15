@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.examine-device-management-tools.review-approaches
-title: Review device management tools and approaches for Azure IoT
+title: Review device management tools and approaches for Azure IoT Hub
 metadata:
-  title: Review device management tools and approaches for Azure IoT
+  title: Review device management tools and approaches for Azure IoT Hub
   description: This content is part of Evaluate device management tools for Azure IoT.
   ms.date: 09/06/2023
   author: kgremban
   ms.author: kgremban
-  ms.topic: training-unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 2
