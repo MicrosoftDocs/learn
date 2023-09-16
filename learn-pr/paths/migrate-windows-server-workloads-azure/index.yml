@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.migrate-windows-server-workloads-azure
+metadata:
+  title: Migrate Windows Server workloads to Azure
+  description: Learn to migrate physical and virtual on-premises Windows Server workloads to Azure.
+  ms.date: 09/15/2023
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+title: Migrate Windows Server workloads to Azure
+prerequisites: |
+  - Core Microsoft compute, storage, networking, and virtualization technologies
+  - On-premises resiliency Windows Server-based compute and storage technologies
+  - Implementing and managing infrastructure as a service (IaaS) services in Azure
+summary: |
+  Learn to migrate physical and virtual on-premises Windows Server workloads to Azure.
+iconUrl: /training/achievements/migrate-servers-and-workloads-in-on-premises-and-hybrid-environments.svg
+#iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-migrate
+- windows-server
+subjects:
+- migration
+modules:
+- learn.design-your-migration-to-azure
+- learn-m365.m365-azure-migrate-introduction 
+- learn-m365.m365-azure-migrate-set-up 
+- learn-m365.m365-azure-migrate-discover-assess
+- learn.wwl.prepare-onpremises-workloads-migration-azure
+- learn.wwl.migrate-onpremises-workloads-azure
+- learn.deploy-azure-vmware-solution
+- learn.migrate-vmware-workloads-on-premises-azure-vmware-solution
+trophy:
+  uid: learn.migrate-windows-server-workloads-azure.trophy
