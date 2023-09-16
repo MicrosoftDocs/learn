@@ -8,11 +8,11 @@ You might wonder if .NET is the right ecosystem to invest your time in learning.
 
 After you learn how to build an application based on one app model, you can easily apply your learning to something else, even if it uses a different app model. For instance, after you learn how to build a web application, your .NET skills translate to building a mobile app.
 
-Repurposing your knowledge reduces the time and stress involved in learning a new programming model or language. Your company saves time and expense when you're tasked with new challenges.
+Repurposing your knowledge reduces the time investment involved in learning a new programming model or language. Your company saves time and expense when you're tasked with new challenges.
 
 ### Choose .NET for enterprise-scale applications
 
-.NET is popular in enterprises for various reasons. Advantages include its ecosystem and its integration with other Microsoft products, including Azure cloud services and on-premise server products. Further, .NET is a strongly typed system, so it avoids many of the bugs that can arise in loosely typed systems. Developers can choose to use an object-based paradigm in C#, or a functional-based paradigm in F#. They use the language that best fits the kinds of problems they need to solve.
+.NET is popular in enterprises for several reasons. Advantages include its ecosystem and its integration with other Microsoft products, including Azure cloud services and on-premise server products. Further, .NET is a strongly typed system, so it avoids many of the bugs that can arise in loosely typed systems. Developers can choose to use an object-based paradigm in C#, or a functional-based paradigm in F#. They'll use the language that best fits the kinds of problems they need to solve.
 
 ### Choose .NET for prototypes, start-ups, and small-scale applications
 
