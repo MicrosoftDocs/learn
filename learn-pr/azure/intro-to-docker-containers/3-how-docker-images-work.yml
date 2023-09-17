@@ -44,7 +44,7 @@ quiz:
 
   - content: "Which of the following sentences describe a container image the best?"
     choices:
-    - content: "A container image is a read-only portable package that contains software and may include an operating system."
+    - content: "A container image is a read-only portable package that contains software and might include an operating system."
       isCorrect: true
       explanation: "A container image is an immutable package that contains all the application code, system packages, binaries, libraries, configuration files, and the operating system running in the container. Docker containers running on Linux share the host OS kernel and don't require a container OS as long as the binary can access the OS kernel directly."
     - content: "A container image is a set of commands that builds a container."

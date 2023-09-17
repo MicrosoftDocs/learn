@@ -3,7 +3,7 @@ uid: learn.intro-to-docker-containers
 metadata:
   title: "Introduction to Docker containers"
   description: "Introduction to Docker containers"
-  ms.date: 03/24/2023
+  ms.date: 09/16/2023
   author: rayoef
   ms.author: rayoflores
   ms.topic: interactive-tutorial
@@ -11,11 +11,11 @@ title: "Introduction to Docker containers"
 summary: "Describe the benefits of using Docker containers as a containerization platform. Discuss the infrastructure provided by the Docker platform."
 abstract: | 
   In this module, you will:
-  - Evaluate whether Docker is an appropriate containerization platform for you
-  - Describe how the components of Docker containers support compute container implementations
+  - Evaluate whether Docker is an appropriate containerization platform for you.
+  - Describe how the components of Docker containers support compute container implementations.
 prerequisites: | 
-  - Knowledge of operating system virtualization concepts at beginner level
-  - Knowledge of command-line based applications at beginner level
+  - Knowledge of operating-system virtualization concepts at a beginner level
+  - Knowledge of command-line-based applications at a beginner level
 iconUrl: /training/achievements/intro-to-docker-containers-social.png
 levels:
 - beginner
