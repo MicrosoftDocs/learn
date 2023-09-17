@@ -115,7 +115,7 @@ Docker images are large files that are initially stored on your PC, and we need 
 
 The Docker CLI and Docker Desktop allow us to manage images by building, listing, removing, and running them. We manage Docker images by using the `docker` client. The client doesn't execute the commands directly, and sends all queries to the `dockerd` daemon.
 
-We aren't going to cover all the client commands and command flags here, but we'll look at some of the most used commands. The _learn more_ section at the end of this module includes links to Docker documentation, which covers all commands and command flags in detail.
+We aren't going to cover all the client commands and command flags here, but we'll look at some of the most used commands. The _Learn more_ section at the end of this module includes links to Docker documentation, which covers all commands and command flags in detail.
 
 ## How to build an image
 
@@ -169,7 +169,7 @@ In the example build from earlier, notice the last build message that reads "Suc
 
 A single image can have multiple tags assigned to it. By convention, the most recent version of an image is assigned the _latest_ tag and a tag that describes the image version number. When you release a new version of an image, you can reassign the latest tag to reference the new image.
 
-For Windows, Microsoft does not provide base container images with the latest tag. For Windows base container images, you have to specify a tag that you want to use. For example, the Windows base container image for Server Core is `mcr.microsoft.com/windows/servercore`. Among its tags are `ltsc2016`, `ltsc2019`, and `ltsc2022`.
+For Windows, Microsoft doesn't provide base container images with the latest tag. For Windows base container images, you have to specify a tag that you want to use. For example, the Windows base container image for Server Core is `mcr.microsoft.com/windows/servercore`. Among its tags are `ltsc2016`, `ltsc2019`, and `ltsc2022`.
 
 Here's another example. Suppose you want to use the .NET Core samples Docker images. Here we have four platforms versions from which we can choose:
 
