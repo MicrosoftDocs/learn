@@ -8,7 +8,7 @@ Microsoft Purview is a unified data-governance service that helps you manage and
 - Sensitive data classification.
 - End-to-end data lineage.
 
-You can also allow data users to find valuable, trustworthy data.
+You can also empower data users to find valuable, trustworthy data.
 
 Microsoft Purview is designed to help enterprises get the most value from their existing information assets. With this cloud-based service, you can register your data sources to help you discover and manage them. Your data sources remain in place, but a copy of the metadata for the source is added to Microsoft Purview.
 
@@ -16,7 +16,7 @@ You can register a wide range of sources in Azure and across your multicloud dat
 
 Microsoft Purview has three main elements:
 
-**Microsoft Purview Data Map**: The data map provides a structure for your data estate in Microsoft Purview, where you can map your existing data stores into groups and hierarchies. In the data map, you can grant users and teams access to these groups so that they have access to find relevant data stores. The data map can then scan your data stores and gather metadata, like schema and data types. It can also identify sensitive data types so that you can keep track of them in your data estate.
+**Microsoft Purview Data Map**: The data map provides a structure for your data estate in Microsoft Purview, where you can map your existing data stores into groups and hierarchies. In the data map, you can grant users and teams access to these groups so that they have access to find relevant data stores. The data map can then scan your data stores and gather metadata such as schemas and data types. It can also identify sensitive data types so that you can keep track of them in your data estate.
 
 :::image type="content" source="../media/data-map-sources.png" alt-text="Screenshot that shows the Data Map view with data sources from Azure Data Lake Storage, Azure Files, Azure Cosmos DB, Azure Blob Storage, and Azure SQL Database on the map.":::
 
@@ -26,9 +26,9 @@ Microsoft Purview has three main elements:
 
 * **Data stewardship**: A report on how curated your data assets are so that you can track your governance progress.
 * **Catalog adoption**: A report on the number of active users in your data catalog, their top searches, and your most viewed assets.
-* **Asset insights**: A report on the data estate and source-type distribution. You can view by source type, classification, and file size. View the insights as a graph or key performance indicators.
+* **Asset insights**: A report on the data estate and source-type distribution. You can view by source type, classification, and file size. View the insights as a graph or as key performance indicators.
 * **Scan insights**: A report that provides information on the health of your scans (successes, failures, or canceled).
-* **Glossary insights**: A status report on the glossary to help users understand the distribution of glossary terms by status, or to view how the terms are attached to assets.
+* **Glossary insights**: A status report on the glossary to help users understand the distribution of glossary terms by status, and view how the terms are attached to assets.
 * **Classification insights**: A report that shows where classified data is located. It allows security administrators to understand the types of information found in their organization's data estate.
 * **Sensitivity insights**: A report that focuses on sensitivity labels found during scans. Security administrators can make use of this information to ensure security is appropriate for the data estate.
 
