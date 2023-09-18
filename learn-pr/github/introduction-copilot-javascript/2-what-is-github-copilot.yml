@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.github-copilot-with-javascript.what-is-github-copilot
+title: |
+  What is GitHub Copilot
+metadata:
+  title: |
+    What is GitHub Copilot
+  description: "GitHub Copilot is an AI-assisted coding tool that helps developers write better code, faster by suggesting whole lines or entire functions based on your comments and code."
+  ms.date: 8/23/2023
+  author: abrilurena
+  ms.author: abrilu
+  ms.topic: interactive-tutorial
+  ms.prod: github
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-github-copilot.md)]

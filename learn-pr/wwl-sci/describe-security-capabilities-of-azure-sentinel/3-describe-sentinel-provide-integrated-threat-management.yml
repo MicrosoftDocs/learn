@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-security-capabilities-of-azure-sentinel.describe-role-value-of-sentinel-providing-integrated-threat-protection
-title: Describe how Microsoft Sentinel provides integrated threat management
+title: Describe threat detection and mitigation capabilities in Microsoft Sentinel
 metadata:
-  title: Describe how Microsoft Sentinel provides integrated threat management
-  description: "Describe how Microsoft Sentinel provides integrated threat management"
-  ms.date: 02/09/2023
+  title: Describe threat detection and mitigation capabilities in Microsoft Sentinel
+  description: "Describe threat detection and mitigation capabilities in Microsoft Sentinel"
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial

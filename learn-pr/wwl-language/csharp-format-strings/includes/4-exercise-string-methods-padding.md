@@ -1,7 +1,5 @@
 
 
-
-
 The `string.Format()` method is used to perform composite formatting such as in the example:
 
 ```csharp
@@ -29,35 +27,32 @@ The `PadLeft()` method adds blank spaces to the left-hand side of the string so 
 
 1. Update your code in the Visual Studio Code Editor as follows:
 
-    ```csharp
-    string input = "Pad this";
-    Console.WriteLine(input.PadLeft(12));
-    ```
+	```csharp
+	string input = "Pad this";
+	Console.WriteLine(input.PadLeft(12));
+	```
 
 1. On the Visual Studio Code **File** menu, select **Save**.
-
-    Save the Program.cs file before building or running the code.
+   Save the Program.cs file before building or running the code.
 
 1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
-
-    A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your TestProject folder location.
+   A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your TestProject folder location.
 
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
+   > [!NOTE]
+	> If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
+	
+	When you run the code, you observe four characters prefixed to the left of the string bring the length to 12 characters long.
 
-    > [!NOTE]
-    > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
-
-    When you run the code, you observe four characters prefixed to the left of the string bring the length to 12 characters long.
-
-    ```Output
-        Pad this
-    ```
+	```Output
+		Pad this
+	```
 
 1. To add space or characters to the right side of your string, use the `PadRight()` method instead. 1. Update your code in the Visual Studio Code Editor as follows:
 
-    ```csharp
-    Console.WriteLine(input.PadRight(12));
-    ```
+	```csharp
+	Console.WriteLine(input.PadRight(12));
+	```
 
 1. Save your code file, and then use Visual Studio Code to run your code. You won't observe any characters added to the end of the string, but they're there.
 
@@ -71,17 +66,17 @@ You can also call a second *overloaded* version of the method and pass in whatev
 
 1. Update your code in the Visual Studio Code Editor as follows:
 
-    ```csharp
-    Console.WriteLine(input.PadLeft(12, '-'));
-    Console.WriteLine(input.PadRight(12, '-'));
-    ```
+	```csharp
+	Console.WriteLine(input.PadLeft(12, '-'));
+	Console.WriteLine(input.PadRight(12, '-'));
+	```
 
 1. Save your code file, and then use Visual Studio Code to run your code. You should see four dashes prefixing the left of the string that is 12 characters long.
 
-    ```Output
-    ----Pad this
-    Pad this----
-    ```
+	```Output
+	----Pad this
+	Pad this----
+	```
 
 Now, apply this newfound knowledge to another real world scenario.
 
@@ -99,21 +94,20 @@ To get started, print the Payment ID in the first six columns. You pick some ran
 
 1. Update your code in the Visual Studio Code Editor as follows:
 
-    ```csharp
-    string paymentId = "769C";
-
-    var formattedLine = paymentId.PadRight(6);
-
-    Console.WriteLine(formattedLine);
-    ```
-
-    Reuse the `formattedLine` variable to build the output string.
+	```csharp
+	string paymentId = "769C";
+	
+	var formattedLine = paymentId.PadRight(6);
+	
+	Console.WriteLine(formattedLine);
+	```
+   Reuse the `formattedLine` variable to build the output string.
 
 1. Save your code file, and then use Visual Studio Code to run your code. You should see the following output:
 
-    ```Output
-    769   
-    ```
+	```Output
+	769C	
+	```
 
 There are three blank spaces to the right that not visible. You'll confirm that they exist in the next step.
 
@@ -123,27 +117,26 @@ Next, you add a fictitious Payee Name, padding it appropriately.
 
 1. Update your code in the Visual Studio Code Editor as follows:
 
-    ```csharp
-    string paymentId = "769";
-    string payeeName = "Mr. Stephen Ortega";
+	```csharp
+	string paymentId = "769C";
+	string payeeName = "Mr. Stephen Ortega";
 
-    var formattedLine = paymentId.PadRight(6);
-    formattedLine += payeeName.PadRight(24);
+	var formattedLine = paymentId.PadRight(6);
+	formattedLine += payeeName.PadRight(24);
 
-    Console.WriteLine(formattedLine);
-    ```
+	Console.WriteLine(formattedLine);
+	```
+   The `+=` operator performs a string concatenation, taking the previous value of the variable `formattedLine` and adding the new value to it. It's a shortened equivalent the following code example:
 
-    The `+=` operator performs a string concatenation, taking the previous value of the variable `formattedLine` and adding the new value to it. It's a shortened equivalent the following code example:
-
-    ```csharp
-    formattedLine = formattedLine + payeeName.PadRight(24);
-    ```
+	```csharp
+	formattedLine = formattedLine + payeeName.PadRight(24);
+	```
 
 1. Save your code file, and then use Visual Studio Code to run your code. You should see the following output:
 
-    ```Output
-    769   Mr. Stephen Ortega      
-    ```
+	```Output
+	769C  Mr. Stephen Ortega
+	```
 
 Again, there are quite a few blank spaces after the Payee's Name. Also, there are three blank spaces after the Payment ID from Step 1.
 
@@ -153,23 +146,23 @@ Next, add a fictitious Payment Amount and make sure to use `PadLeft()` to right-
 
 1. Update your code in the Visual Studio Code Editor as follows:
 
-    ```csharp
-    string paymentId = "769";
-    string payeeName = "Mr. Stephen Ortega";
-    string paymentAmount = "$5,000.00";
+	```csharp
+	string paymentId = "769C";
+	string payeeName = "Mr. Stephen Ortega";
+	string paymentAmount = "$5,000.00";
 
-    var formattedLine = paymentId.PadRight(6);
-    formattedLine += payeeName.PadRight(24);
-    formattedLine += paymentAmount.PadLeft(10);
+	var formattedLine = paymentId.PadRight(6);
+	formattedLine += payeeName.PadRight(24);
+	formattedLine += paymentAmount.PadLeft(10);
 
-    Console.WriteLine(formattedLine);
-    ```
+	Console.WriteLine(formattedLine);
+	```
 
 1. Save your code file, and then use Visual Studio Code to run your code. You should see the following output:
 
-    ```Output
-    769   Mr. Stephen Ortega       $5,000.00
-    ```
+	```Output
+	769C  Mr. Stephen Ortega       $5,000.00
+	```
 
 This output is pretty close to what you understood the legacy system maintainers were looking for.
 
@@ -183,25 +176,25 @@ Console.WriteLine("1234567890123456789012345678901234567890");
 
 1. Update your code in the Visual Studio Code Editor as follows:
 
-    ```csharp
-    string paymentId = "769";
-    string payeeName = "Mr. Stephen Ortega";
-    string paymentAmount = "$5,000.00";
+	```csharp
+	string paymentId = "769C";
+	string payeeName = "Mr. Stephen Ortega";
+	string paymentAmount = "$5,000.00";
 
-    var formattedLine = paymentId.PadRight(6);
-    formattedLine += payeeName.PadRight(24);
-    formattedLine += paymentAmount.PadLeft(10);
+	var formattedLine = paymentId.PadRight(6);
+	formattedLine += payeeName.PadRight(24);
+	formattedLine += paymentAmount.PadLeft(10);
 
-    Console.WriteLine("1234567890123456789012345678901234567890");
-    Console.WriteLine(formattedLine);
-    ```
+	Console.WriteLine("1234567890123456789012345678901234567890");
+	Console.WriteLine(formattedLine);
+	```
 
 1. Save your code file, and then use Visual Studio Code to run your code. You should see the following output, that you can send off to the maintainers of the legacy system to confirm the new integration works correctly:
 
-    ```Output
-    1234567890123456789012345678901234567890
-    769   Mr. Stephen Ortega       $5,000.00
-    ```
+	```Output
+	1234567890123456789012345678901234567890
+	769C  Mr. Stephen Ortega       $5,000.00
+	```
 
 Success!
 
