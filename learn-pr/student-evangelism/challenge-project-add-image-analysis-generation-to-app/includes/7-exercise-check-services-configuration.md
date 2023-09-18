@@ -1,13 +1,13 @@
 
-As mentioned in previous exercises, if Azure AI services are not configured with authentication parameters (key and endpoint) before running the app, the app backend will not work properly. In this exercise you will:
+As mentioned in previous exercises, if Azure AI services aren't configured with authentication parameters (key and endpoint) before running the app, the app backend won't work properly. In this exercise you will:
 
 - add a check to ensure that the app is properly configured before running it.
-- add a warning message to the UI to inform the user that the app is not configured properly.
+- add a warning message to the UI to inform the user that the app isn't configured properly.
 
 ## Specification
 
 In the js modules you created to handle Azure AI services calls ('azure-image-generation' and 'azure-image-analysis'), add a function 'isConfigured' checking that the appropriate environment variables are set for the AI service.
-Then, import the two functions in your 'App.js' and call them before rendering the GUI. If either one of the two functions return false - meaning that one of the two Azure AI services is not correctly configured - display a warning message in the GUI, informing the user that the app is not configured properly. Otherwise render the GUI as usual.
+Then, import the two functions in your 'App.js' and call them before rendering the GUI. If either one of the two functions returns false - meaning that one of the two Azure AI services is not correctly configured - display a warning message in the GUI, informing the user that the app isn't configured properly. Otherwise render the GUI as usual.
 
 ## Check your work
 
