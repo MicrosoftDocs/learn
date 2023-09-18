@@ -30,7 +30,7 @@ You have a plan for how to apply Azure Policy settings to your Tailwind Traders 
 
 - **Consider assigning roles to groups, and not users**. To make role assignments more manageable, avoid assigning roles directly to users. Instead, assign roles to groups. Assigning roles to groups helps minimize the number of role assignments.
 
-- **Consider when to use Azure policies**. [Azure policies](/azure/governance/policy/overview) are used to focus on resource properties. During deployment, an Azure policy can be used to ensure users can deploy only certain virtual machines in a resource group. By using a combination of Azure policies and Azure RBAC, you can provide effective access control in your Tailwind Traders solution. The following table compares these access models.
+- **Consider when to use Azure policies**. [Azure policies](/azure/governance/policy/overview) are used to focus on resource properties. During deployment, an Azure policy can be used to ensure users can deploy only certain virtual machines in a resource group. By using a combination of Azure policies and Azure RBAC, you can provide effective access control inn your Tailwind Traders solution. The following table compares these access models.
 
    | <!-- blank --> | Azure Policy | Azure RBAC |
    | --- | --- | --- |

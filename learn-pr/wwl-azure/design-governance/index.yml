@@ -2,23 +2,24 @@
 uid: learn.wwl.design-governance
 metadata:
   title: Design governance
-  description: "Azure Architects design and recommend governance solutions."
-  ms.date: 10/08/2022
+  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Azure Architects design and recommend governance solutions.</span| </div|"
+  ms.date: 09/18/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
 title: Design governance
 summary: Azure Architects design and recommend governance solutions.
 abstract: |
-  In this module, you’ll learn how to:
-  -  Design for governance.
+  In this module, you learn how to:
+  - Design for governance.
   - Design for management groups.
   - Design for Azure subscriptions.
   - Design for resource groups.
   - Design for resource tagging.
-  - Design for Azure policy.
+  - Design for Azure Policy.
   - Design for Azure role-based access control.
   - Design for Azure Blueprints.
+  - Design for Azure landing zones.
 prerequisites: |
   - Conceptual knowledge of governance policies, resource organization, and subscription management.
   - Working experience with organizing resources, applying governance policies, and enforcing compliance requirements.
@@ -41,7 +42,6 @@ units:
 - learn.wwl.design-governance.design-for-resource-tags
 - learn.wwl.design-governance.design-for-azure-policy
 - learn.wwl.design-governance.design-for-role-based-access-control
-- learn.wwl.design-governance.design-for-azure-blueprints
 - learn.wwl.design-governance.design-for-azure-landing-zones
 - learn.wwl.design-governance.knowledge-check
 - learn.wwl.design-governance.summary-resources

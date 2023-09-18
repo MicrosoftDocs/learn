@@ -4,16 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/08/2022
+  ms.date: 09/18/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
-  [!include[](includes/11-knowledge-check.md)]
+  [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: ""
   questions:
@@ -21,13 +20,13 @@ quiz:
     choices:
     - content: "Add a resource tag that includes the required policy."
       isCorrect: false
-      explanation: "Incorrect. Resource tagging provides extra information, or metadata, about your resources, but doesn’t impact policy implementation."
+      explanation: "Incorrect. Resource tagging provides extra information, or metadata, about your resources, but doesn't impact policy implementation."
     - content: "Create a management group and place all the relevant subscriptions in the new management group."
       isCorrect: true
       explanation: "Correct. A management group could include all the subscriptions. Then a policy could be scoped to the management group and applied to all the subscriptions."
     - content: "Add a resource group and place all the relevant subscriptions in it."
       isCorrect: false
-      explanation: "Incorrect. A resource group is a logical container into which Azure resources such as web apps, databases, and storage accounts are deployed and managed."
+      explanation: "Incorrect. A resource group is a logical container into which Azure resources like web apps, databases, and storage accounts are deployed and managed."
   - content: "How can Tailwind Traders ensure applications use geo-redundancy to create highly available storage applications?"
     choices:
     - content: "Add a resource tag to each storage account for geo-redundant storage."
@@ -35,7 +34,7 @@ quiz:
       explanation: "Incorrect. Resource tagging just provides extra information, or metadata, about your resources."
     - content: "Add a geo-redundant resource group to contain all the storage accounts."
       isCorrect: false
-      explanation: "Incorrect. A resource group is a logical container into which Azure resources such as web apps, databases, and storage accounts are deployed and managed."
+      explanation: "Incorrect. A resource group is a logical container into which Azure resources like web apps, databases, and storage accounts are deployed and managed."
     - content: "Add an Azure policy that requires geo-redundant storage."
       isCorrect: true
       explanation: "Correct. An Azure policy can enforce different rules over your resource configurations."
@@ -49,15 +48,15 @@ quiz:
       explanation: "Incorrect. The assets are dispersed across multiple departments. Moving the assets would be time consuming and difficult."
     - content: "Add a spreadsheet and require each department to log their costs."
       isCorrect: false
-      explanation: "Incorrect. A spreadsheet would be prone to errors."
+      explanation: "Incorrect. A spreadsheet can be prone to errors."
   - content: "Which governance tool should Tailwind Traders use for the ISO 27001 requirements?"
     choices:
     - content: "Management groups"
       isCorrect: false
-      explanation: "Incorrect. Management groups help you manage resources but will not deploy resources."
-    - content: "Azure blueprints."
+      explanation: "Incorrect. Management groups help you manage resources, but they don't deploy resources."
+    - content: "Azure Blueprints"
       isCorrect: true
-      explanation: "Correct. Azure blueprints will deploy all the artifacts for ISO 27001 compliance."
-    - content: "Resource groups."
+      explanation: "Correct. Azure Blueprints deploy all the artifacts for ISO 27001 compliance."
+    - content: "Resource groups"
       isCorrect: false
       explanation: "Incorrect. Resource groups are for organizing resources."
