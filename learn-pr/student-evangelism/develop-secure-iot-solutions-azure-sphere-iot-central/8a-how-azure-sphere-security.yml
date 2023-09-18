@@ -8,8 +8,8 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
   ms.custom: team=nextgen
+  ms.service: iot-central
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/8a-how-azure-sphere-security.md)]
