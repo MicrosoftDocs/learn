@@ -165,4 +165,13 @@ Saving time, reducing errors, and increasing efficiency are some of the most sig
 
 - **Update Management**. Use this service to manage updates and patches for your VMs. With this service, you're able to assess the status of available updates, schedule installation, and review deployment results to verify updates applied successfully. Update management incorporates services that provide process and configuration management. You enable update management for a VM directly from your **Azure Automation** account. You can also enable update management for a single virtual machine from the virtual machine pane in the portal.
 
+## Auto-shutdown
+
+Auto-shutdown is a feature in Azure that allows you to automatically shut down your VMs on a schedule. Use Auto-shutdown to save costs by ensuring that your VMs are not running when they aren't needed. You can set the schedule for auto-shutdown to occur daily or weekly, and you can also specify the time zone for the schedule.
+
+To navigate to the Auto-shutdown feature in a VM in the Azure portal, go to the VM's blade in the portal, click on "Auto-shutdown" under the "Operations" section, and then configure the auto-shutdown settings according to your preferences.
+
+![Screenshot showing Auto-shutdown option for a VM.](../media/4-auto-shutdown-option.png)
+
+
 As you can see, Azure provides various tools to create and administer resources so that you can integrate management operations into a process _that works for you_. Let's examine some of the other Azure services to make sure your infrastructure resources are running smoothly.

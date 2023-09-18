@@ -4,11 +4,10 @@ title: Describe authorization security techniques
 metadata:
   title: Describe authorization security techniques
   description: "Describe authorization security techniques"
-  ms.date: 02/08/2022
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

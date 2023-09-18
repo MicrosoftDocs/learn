@@ -4,13 +4,11 @@ title: What is Azure Machine Learning studio?
 metadata:
   title: What is Azure Machine Learning studio?
   description: "What is Azure Machine Learning studio?"
-  ms.date: 05/15/2023
+  ms.date: 09/14/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: machine-learning
 durationInMinutes: 5
 content: |
   [!include[](includes/3-what-is-azure-machine-learning-studio.md)]

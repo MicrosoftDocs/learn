@@ -21,7 +21,7 @@ quiz:
     - content: "You can only upload one document at a time."
       isCorrect: false
       explanation: "Incorrect. You can upload multiple documents if they're defined in the source data."
-    - content: "The JSON can't contain complex data types like arrays."
+    - content: "The JSON can't contain complex data types."
       isCorrect: true
       explanation: "Correct. At the moment, the linked service only supports a limited number of field types."
     - content: "You have to define the index in the Azure portal first."

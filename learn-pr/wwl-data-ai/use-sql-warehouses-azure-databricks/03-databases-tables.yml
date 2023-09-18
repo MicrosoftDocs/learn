@@ -4,11 +4,10 @@ title: Create databases and tables
 metadata:
   title: Create databases and tables
   description: "Create databases and tables"
-  ms.date: 08/26/2022
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-iot.how-azure-iot-works
+title: How Azure IoT works
+metadata:
+  title: How Azure IoT works
+  description: "This content is a part of Introduction to Azure IoT."
+  ms.date: 8/14/2023
+  author: dominicbetts
+  ms.author: dobett
+  ms.topic: module-intro-to-product
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-azure-iot-works.md)]

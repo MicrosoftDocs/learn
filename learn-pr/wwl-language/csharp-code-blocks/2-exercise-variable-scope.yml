@@ -4,7 +4,7 @@ title: Exercise - Code blocks and variable scope
 metadata:
   title: Exercise - Code blocks and variable scope
   description: "Exercise - Code blocks and variable scope"
-  ms.date: 08/17/2023
+  ms.date: 09/14/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A developer writes some code that includes an `if` statement code block. They initialize one integer variable above (outside) of the code block and a second integer variable on the first line inside of the code block. The Boolean expression for the code block evaluates to `true` if the first integer variable is initialized. On the second line inside the code block they add the value of the second variable to the value of the first variable. On the first line after the code block, they write code to display the value of the first integer. What is the result when the code statement used to display the first integer is executed?"
+  - content: "A developer writes some code that includes an `if` statement code block. They initialize one integer variable to a value of 5 above (outside) of the code block. They initialize a second integer variable to a value of 6 on the first line inside of the code block. The Boolean expression for the code block evaluates to `true` if the first integer variable has a value greater than 0. On the second line inside the code block they assign the sum of the two values to the first variable. On the first line after the code block, they write code to display the value of the first integer. What is the result when the code statement used to display the first integer is executed?"
     choices:
     - content: "No error is generated and the integer value is displayed. The value displayed is the sum of the first and second integer."
       isCorrect: true

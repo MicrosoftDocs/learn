@@ -5,9 +5,9 @@ metadata:
   title: Get started with Azure Spatial Anchors
   description: Learn about how to use Azure Spatial Anchors to collaborate with mixed reality platforms.
   ms.custom: kr2b-contr-experiment
-  ms.date: 11/09/2022
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 2

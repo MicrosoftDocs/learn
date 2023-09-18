@@ -1,7 +1,3 @@
-
-
-
-
 In this exercise, you write the nested looping structure and selection code block that's used to display the ourAnimals array information. The detailed tasks that you complete during this exercise are:
 
 1. Outer loop: build the outer loop that iterates through the animals in the ourAnimals array.
@@ -222,7 +218,7 @@ In this task, you create a `for` loop inside the `if` statement code block that'
     }    
     ```
 
-    Notice that you now have a second `for` loop that's "nested" inside the code block of the first `for` loop. As you know, the outer loop iterates through the animals in the `outAnimals` array. The intention is for the inner loop to iterate through the characteristics of each animal. Since the animal data is stored in a multidimensional array, it will be easy to access animal characteristics.
+    Notice that you now have a second `for` loop that's "nested" inside the code block of the first `for` loop. As you know, the outer loop iterates through the animals in the `ourAnimals` array. The intention is for the inner loop to iterate through the characteristics of each animal. Since the animal data is stored in a multidimensional array, it will be easy to access animal characteristics.
   
 1. Take a minute to review the `for` statement that you entered.
 

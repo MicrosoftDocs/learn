@@ -24,7 +24,7 @@ az webapp deployment source config-zip \
     --name <your-app-name>
 ```
 
-The deployment will take a few minutes, during which time you'll get status output. A status code of 202 means the deployment was successful.
+The deployment will take a few minutes, during which time you'll get status output. A 202 status code means the deployment was successful.
 
 ## Verify the deployment
 
@@ -54,7 +54,7 @@ The easiest way to create deployment credentials is from the Azure CLI.
 
 ## Deploy the Java application package with WAR deploy
 
-Let's deploy our Java application with WAR deploy. WAR deploy is part of the Kudu REST API, an administrative service interface available on all App Service web apps, which can be accessed over HTTP. The simplest way to use WAR deploy is with the `curl` HTTP utility from the command line.
+Let's deploy our Java application with WAR deploy. WAR deploy is part of the Kudu REST API, an administrative service interface available on all App Service web apps, which you can access over HTTP. The simplest way to use WAR deploy is with the `curl` HTTP utility from the command line.
 
 Run the following commands to deploy your Java web app with WAR deploy. Replace `<username>` and `<password>` with the Deployment User username and password you created earlier, and replace `<your-app-name>` with the name of the web app you created in the Azure portal.
 
@@ -83,7 +83,7 @@ export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
 export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
 ```
 
-Now, run `az webapp up` with the appropriate values. Make sure you are in the `helloworld` directory before running this command.
+Now, run `az webapp up` with the appropriate values. Make sure you're in the `helloworld` directory before running this command.
 
 ```bash
 az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
@@ -93,7 +93,7 @@ The deployment will take a few minutes to propagate. You'll be able to view the 
 
 ## Verify the deployment
 
-Let's browse to our application. The last line of output from `az webapp up` before the JSON code block has a link to your app. Click it to navigate there in a new browser tab. The page will take a moment to load, as App Service is initializing your app for the first time.
+Let's browse to our application. The last line of output from `az webapp up` before the JSON code block has a link to your app. Select it to navigate there in a new browser tab. The page will take a moment to load, as App Service is initializing your app for the first time.
 
 Once it loads, you'll get the greeting message from your app. You've deployed successfully!
 
@@ -117,7 +117,7 @@ export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
 export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
 ```
 
-Now, run `az webapp up` with the appropriate values. Make sure you are in the `BestBikeApp` directory before running this command.
+Now, run `az webapp up` with the appropriate values. Make sure you're in the `BestBikeApp` directory before running this command.
 
 ```bash
 cd ~/BestBikeApp
@@ -128,7 +128,7 @@ The deployment will take a few minutes, during which time you'll get status outp
 
 ## Verify the deployment
 
-Let's browse to your application. In the output, just above the JSON code block, there's a line with a URL. Select that link to open your app in a new browser tab. The page may take a moment to load because the App Service is initializing your app for the first time.
+Let's browse to your application. In the output, just before the JSON code block, there's a line with a URL. Select that link to open your app in a new browser tab. The page may take a moment to load because the App Service is initializing your app for the first time.
 
 Once your program loads, you'll get the greeting message from your app. You've deployed successfully!
 

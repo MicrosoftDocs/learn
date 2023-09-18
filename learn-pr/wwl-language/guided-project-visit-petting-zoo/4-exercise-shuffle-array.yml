@@ -4,11 +4,10 @@ title: Exercise - Create a method to shuffle an array
 metadata:
   title: Exercise - Create a method to shuffle an array
   description: "Exercise - Create a method to shuffle an array"
-  ms.date: 05/04/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/4-exercise-shuffle-array.md)]

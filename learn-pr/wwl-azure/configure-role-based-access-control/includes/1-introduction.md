@@ -18,20 +18,6 @@ In this module, you learn how to:
 
 - Review built-in Azure RBAC roles.
 
-## Skills measured
-
-The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
-
-Manage identities and governance in Azure (15-20%)
-
-- Manage role-based access control (RBAC)
-
-   - Create a custom role.
-
-   - Provide access to Azure resources by assigning roles at different scopes.
-
-  - Interpret access assignments.
-
 ## Prerequisites
 
 None.
