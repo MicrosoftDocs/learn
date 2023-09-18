@@ -64,7 +64,7 @@ An [auto-failover group](/azure/azure-sql/database/auto-failover-group-sql-db) i
 
 An auto-failover group can include multiple databases. Both the primary and secondary have the same database size.
 
-:::image type="content" source="../media/7-auto-failover-groups.png" alt-text="Auto-Failover Groups for Azure SQL Database and Azure SQL Managed Instance":::
+:::image type="content" source="../media/7-auto-failover-groups.png" alt-text="Architecture diagram of the auto-failover groups for Azure SQL Database and Azure SQL Managed Instance.":::
 
 Auto-failover groups provide AG-like functionality called a listener, which allows both read-write and read-only activity. There are two different types of listeners: one for read-write and one for read-only traffic. Behind the scenes in a failover, DNS is updated so clients are able to point to the abstracted listener name and not need to know anything else. The database server containing the read-write copies is the primary, and the server that is receiving the transactions from the primary is a secondary.
 

@@ -8,9 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 9
 content: |
   [!include[](includes/3-protect-azure-sql-security-features.md)]

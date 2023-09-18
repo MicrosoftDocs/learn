@@ -62,4 +62,4 @@ It provides security alerts for suspicious database activities, potential vulner
 
 :::image type="content" source="../media/3-advanced-threat-protection.png" alt-text="Screenshot showing the advanced threat protection recommendation list on Azure portal.":::
 
-For a list of alerts, see the [Alerts for SQL Database and Azure Synapse Analytics in Microsoft Defender for Cloud](/en-us/azure/security-center/alerts-reference#alerts-sql-db-and-warehouse).
+For a list of alerts, see the [Alerts for SQL Database and Azure Synapse Analytics in Microsoft Defender for Cloud](/azure/security-center/alerts-reference#alerts-sql-db-and-warehouse).

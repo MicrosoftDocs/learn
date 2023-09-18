@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 durationInMinutes: 8
 quiz:
   questions:
@@ -34,15 +34,15 @@ quiz:
     - content: "There's no difference between server-level and database-level firewall rules."
       isCorrect: false
       explanation: "Incorrect. Server-level firewall rules apply to all databases within the same server, while Database-level firewall rules apply only to the database for which they were defined."
-  - content: "Can you perform read and write operations on a secondary database in Azure SQL Database using geo-replication?"
+  - content: "Which type of operations you can perform on a secondary database in Azure SQL Database using geo-replication?"
     choices:
-    - content: "Yes"
+    - content: "Read and write"
       isCorrect: false
       explanation: "Incorrect. You can only perform read operations on a secondary database."
-    - content: "No"
+    - content: "Read"
       isCorrect: true
       explanation: "Correct. You can only perform read operations on a secondary database."
-    - content: "Only if the primary database is offline"
+    - content: "Write operations, but only if the primary database is offline"
       isCorrect: false
       explanation: "Incorrect. Even if the primary database is offline, you can't perform write operations on a secondary database."
   - content: "What happens to client connections during a failover in Azure SQL Managed Instance?"

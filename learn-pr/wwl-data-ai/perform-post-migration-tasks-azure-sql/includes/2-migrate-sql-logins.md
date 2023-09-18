@@ -41,7 +41,7 @@ Follow these steps to migrate logins using the migration extension in Azure Data
 
 1. In **Step 3: Migration Status**, monitor the login migration process. Once the login migration is successfully completed (or if it has failures), the page displays the relevant updates.
 
-    :::image type="content" source="../media/2-login-migration-status.png" alt-text="Screenshot showing the login migration status in Azure Data Studio.png.":::
+    :::image type="content" source="../media/2-login-migration-status.png" alt-text="Screenshot showing the login migration status in Azure Data Studio":::
 
 ### Using DMA
 

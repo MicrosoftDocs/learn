@@ -8,9 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 7
 content: |
   [!include[](includes/7-automate-database-tasks-scalability.md)]

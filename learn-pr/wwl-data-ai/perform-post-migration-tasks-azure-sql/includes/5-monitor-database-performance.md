@@ -122,8 +122,8 @@ While the setup of Extended Events is similar on SQL Server, Azure SQL Database,
 
 Here are some key differences when configuring extended events on Azure SQL Database:
 
-1. **Transact-SQL**: When executing the `CREATE EVENT SESSION` command on SQL Server, you use the `ON SERVER` clause. But on Azure SQL Database, you use the `ON DATABASE` clause instead. The `ON DATABASE` clause also applies to the `ALTER EVENT SESSION` and `DROP EVENT SESSION` Transact-SQL commands. Azure SQL Database supports only database-scoped sessions.
+- **Transact-SQL**: When executing the `CREATE EVENT SESSION` command on SQL Server, you use the `ON SERVER` clause. But on Azure SQL Database, you use the `ON DATABASE` clause instead. The `ON DATABASE` clause also applies to the `ALTER EVENT SESSION` and `DROP EVENT SESSION` Transact-SQL commands. Azure SQL Database supports only database-scoped sessions.
 
-3. **Database-scoped sessions**: Extended events are founded on the single-tenant isolation model in Azure SQL Database. An event session in one database can't access data or events from another database. You can't issue a `CREATE EVENT SESSION` statement in the context of the master database¹.
+- **Database-scoped sessions**: Extended events are founded on the single-tenant isolation model in Azure SQL Database. An event session in one database can't access data or events from another database. You can't issue a `CREATE EVENT SESSION` statement in the context of the master database¹.
 
-4. **Storage**: Since you don’t have access to the file system of the server where your database lives in Azure SQL Database, you can configure a storage account target to store your extended event sessions.
+- **Storage**: Since you don’t have access to the file system of the server where your database lives in Azure SQL Database, you can configure a storage account target to store your extended event sessions.
