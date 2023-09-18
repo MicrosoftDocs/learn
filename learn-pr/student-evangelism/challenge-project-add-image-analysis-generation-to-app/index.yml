@@ -21,7 +21,7 @@ metadata:
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.prod: azure
 title: |
-  challenge-project-add-image-analysis-and-generation-to-your-app
+  Challenge project - Add image analysis and generation capabilities to your application
 summary: |
   Demonstrate your ability to develop a smart web application that integrates computer vision capabilities, leveraging Azure AI Vision and Azure OpenAI cognitive services.
   > [!NOTE]
