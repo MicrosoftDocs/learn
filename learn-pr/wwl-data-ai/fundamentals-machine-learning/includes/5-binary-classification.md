@@ -6,7 +6,7 @@ Classification, like regression, is a *supervised* machine learning technique; a
 
 To understand how binary classification works, let's look at a simplified example that uses a single feature (***x***) to predict whether the label ***y*** is 1 or 0. In this example, we'll use the blood glucose level of a patient to predict whether or not the patient has diabetes. Here's the data with which we'll train the model:
 
-|![A diagram of a syringe.](../media/blood-glucose.png)|![A diagram of a diabetic and non-diabetic person.](../media/diabetes.png)|
+|![Diagram of a syringe.](../media/blood-glucose.png)|![A diagram of a diabetic and non-diabetic person.](../media/diabetes.png)|
 |---|---|
 |**Blood glucose (x)** | **Diabetic? (y)**|
 |67|0|
@@ -22,7 +22,7 @@ To train the model, we'll use an algorithm to fit the training data to a functio
 
 There are many algorithms that can be used for binary classification, such as *logistic regression*, which derives a *sigmoid* (S-shaped) function with values between 0.0 and 1.0, like this:
 
-![A diagram of a logistic function.](../media//sigmoid-plot.png)
+![Diagram of a logistic function.](../media//sigmoid-plot.png)
 
 > [!NOTE]
 > Despite its name, in machine learning *logistic regression* is used for classification, not regression. The important point is the *logistic* nature of the function it produces, which describes an S-shaped curve between a lower and upper value (0.0 and 1.0 when used for binary classification).
@@ -50,7 +50,7 @@ As with regression, when training a binary classification model you hold back a 
 
 Applying the logistic function we derived previously to the ***x*** values results in the following plot. 
 
-![A diagram of predicted labels on a sigmoid curve.](../media/classification-predictions.png)
+![Diagram of predicted labels on a sigmoid curve.](../media/classification-predictions.png)
 
 Based on whether the probability calculated by the function  is above or below the threshold, the model generates a predicted label of 1 or 0 for each observation. We can then compare the *predicted* class labels (***&#375;***) to the *actual* class labels (***y***), as shown here:
 
@@ -67,7 +67,7 @@ Based on whether the probability calculated by the function  is above or below t
 
 The first step in calculating evaluation metrics for a binary classification model is usually to create a matrix of the number of correct and incorrect predictions for each possible class label:
 
-![A diagram of predicted labels on a sigmoid curve.](../media/binary-confusion-matrix.png)
+![Diagram of a confusion matrix.](../media/binary-confusion-matrix.png)
 
 This visualization is called a *confusion matrix*, and it shows the prediction totals where:
 
@@ -94,7 +94,7 @@ In the case of our diabetes example, the calculation is:
 
 So for our validation data, the diabetes classification model produced correct predictions 83% of the time.
 
-Accuracy might initially seem like a good metric to evaluate a model, but consider this. Suppose 11% of the population has diabetes. You could create a model that always predicts **0**, and it would achieve an accuracy of 89%, even though it makes no real attempt to differentiate between patients by evaulating their features. What we really need is a deeper understanding of how the model performs at predicting **1** for positive cases and **0** for negative cases.
+Accuracy might initially seem like a good metric to evaluate a model, but consider this. Suppose 11% of the population has diabetes. You could create a model that always predicts **0**, and it would achieve an accuracy of 89%, even though it makes no real attempt to differentiate between patients by evaluating their features. What we really need is a deeper understanding of how the model performs at predicting **1** for positive cases and **0** for negative cases.
 
 #### Recall
 

@@ -13,7 +13,7 @@ Let's explore an example in which we have some observations of penguins, in whic
 > [!NOTE]
 > As with previous examples in this module, a real scenario would include multiple feature (***x***) values. We'll use a single feature ito keep things simple.
 
-|![A diagram of a measuring ruler.](../media/ruler.png)|![A diagram of three penguins.](../media/penguins.png)|
+|![Diagram of a measuring ruler.](../media/ruler.png)|![A diagram of three penguins.](../media/penguins.png)|
 |---|---|
 |**Flipper length (x)** | **Species (y)**|
 |167|0|
@@ -73,7 +73,7 @@ Let's assume that we've validated our multiclass classifier, and obtained the fo
 
 The confusion matrix for a multiclass classifier is similar to that of a binary classifier, except that it shows the number of predictions for each combination of *predicted* (***&#375;***) and *actual* class labels (***y***):
 
-![A diagram of a multiclass confusion matrix.](../media/multiclass-confusion-matrix.png)
+![Diagram of a multiclass confusion matrix.](../media/multiclass-confusion-matrix.png)
 
 From this confusion matrix, we can determine the metrics for each individual class as follows:
 

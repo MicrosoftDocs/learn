@@ -1,6 +1,6 @@
 Regression models are trained to predict numeric label values based on training data that includes both features and known labels. The process for training a regression model (or indeed, any supervised machine learning model) involves multiple iterations in which you use an appropriate algorithm (usually with some parameterized settings) to train a model, evaluate the model's predictive performance, and refine the model by repeating the training process with different algorithms and parameters until you achieve an acceptable level of predictive accuracy.
 
-![A diagram showing the process of training an evaluating a supervised model.](../media/supervised-training.png)
+![Diagram showing the process of training an evaluating a supervised model.](../media/supervised-training.png)
 
 The diagram shows four key elements of the training process for supervised machine learning models:
 
@@ -17,7 +17,7 @@ Let's explore regression with a simplified example in which we'll train a model 
 
 For our example, let's stick with the ice cream sales scenario we discussed previously. For our feature, we'll consider the *temperature* (let's assume the value is the maximum temperature on a given day), and the label we want to train a model to predict is the number of ice creams sold that day. We'll start with some historic data that includes records of daily temperatures (***x***) and ice cream sales (***y***):
 
-|![A diagram of a thermometer.](../media/temperature.png)|![A diagram of a ice creams.](../media/ice-creams.png)|
+|![Diagram of a thermometer.](../media/temperature.png)|![A diagram of a ice creams.](../media/ice-creams.png)|
 |---|---|
 |**Temperature (x)** | **Ice cream sales (y)**|
 |51|1|
@@ -48,11 +48,11 @@ We'll start by splitting the data and using a subset of it to train a model. Her
 
 To get an insight of how these ***x*** and ***y*** values might relate to one another, we can plot them as coordinates along two axes, like this:
 
-![A diagram of a scatter plot showing x and y.](../media/scatter-plot.png)
+![Diagram of a scatter plot showing x and y.](../media/scatter-plot.png)
 
 Now we're ready to apply an algorithm to our training data and fit it to a function that applies an operation to ***x*** to calculate ***y***. One such algorithm is *linear regression*, which works by deriving a function that produces a straight line through the intersections of the ***x*** and ***y*** values while minimizing the average distance between the line and the plotted points, like this:
 
-![A diagram of the scatter plot with a regression line added.](../media/regression-line.png)
+![Diagram of the scatter plot with a regression line added.](../media/regression-line.png)
 
 The line is a visual representation of the function in which the slope of the line describes how to calculate the value of ***y*** for a given value of ***x***. The line intercepts the ***x*** axis at 50, so when ***x*** is 50, ***y*** is 0. As you can see from the axis markers in the plot, the line slopes so that every increase of 5 along the ***x*** axis results in an increase of 5 up the ***y*** axis; so when ***x*** is 55, ***y*** is 5; when ***x*** is 60, ***y*** is 10, and so on. To calculate a value of ***y*** for a given value of ***x***, the function simply subtracts 50; in other words, the function can be expressed like this:
 
@@ -90,7 +90,7 @@ Using the model we trained earlier, which encapsulates the function ***f*(x) = x
 
 We can plot both the *predicted* and *actual* labels against the feature values like this:
 
-![A diagram of a scatter plot showing predicted and actual values.](../media/regression-variance.png)
+![Diagram of a scatter plot showing predicted and actual values.](../media/regression-variance.png)
 
 The predicted labels are calculated by the model so they're on the function line, but there's some variance between the ***&#375;*** values calculated by the function and the actual ***y*** values from the validation dataset; which is indicated on the plot as a line between the ***&#375;*** and ***y*** values that shows how far off the prediction was from the actual value.
 

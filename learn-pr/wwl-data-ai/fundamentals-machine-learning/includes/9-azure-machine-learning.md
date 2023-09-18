@@ -23,7 +23,7 @@ The primary resource required for Azure Machine Learning is an *Azure Machine Le
 
 To create an Azure Machine Learning workspace, you can use the Azure portal, as shown here:
 
-![A screenshot of the Create Azure Machine Learning workspace page in the Azure portal.](../media/azure-portal.png)
+![Screenshot of the Create Azure Machine Learning workspace page in the Azure portal.](../media/azure-portal.png)
 
 ## Azure Machine Learning studio
 
@@ -40,6 +40,6 @@ In Azure Machine Learning studio, you can (among other things):
 - Deploy trained models for on-request and batch inferencing.
 - Import and manage models from a comprehensive model catalog.
 
-![A screenshot of Azure Machine Learning Studio.](../media/azure-ml-studio.png)
+![Screenshot of Azure Machine Learning Studio.](../media/azure-ml-studio.png)
 
 The screenshot shows the **Metrics** page for a trained model in Azure Machine Learning studio, in which you can see the evaluation metrics for a trained multiclass classification model.

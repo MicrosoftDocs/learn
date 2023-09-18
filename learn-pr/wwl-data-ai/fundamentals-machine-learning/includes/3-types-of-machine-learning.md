@@ -1,6 +1,6 @@
 There are multiple types of machine learning, and you must apply the appropriate type depending on what you're trying to predict. A breakdown of common types of machine learning is shown in the following diagram.
 
-![A diagram showing supervised machine learning (regression and classification) and unsupervised machine learning (clustering).](../media/machine-learning-types.png)
+![Diagram showing supervised machine learning (regression and classification) and unsupervised machine learning (clustering).](../media/machine-learning-types.png)
 
 ## Supervised machine learning
 

@@ -4,7 +4,7 @@
 
 For example, suppose a botanist observes a sample of flowers and records the number of leaves and petals on each flower:
 
-![A diagram of some flowers.](../media/flowers.png)
+![Diagram of some flowers.](../media/flowers.png)
 
 There are no known *labels* in the dataset, just two *features*. The goal is not to identify the different types (species) of flower; just to group similar flowers together based on the number of leaves and petals.
 
@@ -33,7 +33,7 @@ There are multiple algorithms you can use for clustering. One of the most common
 
 The following animation shows this process:
 
-![A diagram of an animation showing the k-means clustering process.](../media/clustering.gif)
+![Diagram of an animation showing the k-means clustering process.](../media/clustering.gif)
 
 ### Evaluating a clustering model
 

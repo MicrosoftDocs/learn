@@ -2,7 +2,7 @@
 
 | Biological neural network | Artificial neural network |
 |-|-|
-|![A diagram of a natural neural network.](../media/biological-neural-network.png)|![A diagram of an artificial neural network.](../media/artificial-neural-network.png)|
+|![Diagram of a natural neural network.](../media/biological-neural-network.png)|![A diagram of an artificial neural network.](../media/artificial-neural-network.png)|
 | Neurons fire in response to electrochemical stimuli. When fired, the signal is passed to connected neurons.| Each neuron is a function that operates on an input value (***x***) and a *weight* (***w***). The function is wrapped in an *activation* function that determines whether to pass the output on.|
 
 Artificial neural networks are made up of multiple *layers* of neurons - essentially defining a deeply nested function. This architecture is the reason the technique is referred to as *deep learning* and the models produced by it are often referred to as *deep neural networks* (DNNs). You can use deep neural networks for many kinds of machine learning problem, including regression and classification, as well as more specialized models for natural language processing and computer vision.
@@ -13,7 +13,7 @@ Just like other machine learning techniques discussed in this module, deep learn
 
 To better understand how a deep neural network model works, let's explore an example in which a neural network is used to define a classification model for penguin species.
 
-![A diagram of a neural network used to classify a pengion species.](../media/deep-classification.png)
+![Diagram of a neural network used to classify a penguin species.](../media/deep-classification.png)
 
 The feature data (***x***) consists of some measurements of a penguin. Specifically, the measurements are:
 
@@ -44,7 +44,7 @@ The process for inferencing a predicted penguin class using this network is:
 
 The weights in a neural network are central to how it calculates predicted values for labels. During the training process, the model *learns* the weights that will result in the most accurate predictions. Let's explore the training process in a little more detail to understand how this learning takes place.
 
-![A diagram of a neural network being trained, evaluated, and optimized.](../media/neural-network-training.png)
+![Diagram of a neural network being trained, evaluated, and optimized.](../media/neural-network-training.png)
 
 1. The training and validation datasets are defined, and the training features are fed into the input layer.
 1. The neurons in each layer of the network apply their weights (which are initially assigned randomly) and feed the data through the network.

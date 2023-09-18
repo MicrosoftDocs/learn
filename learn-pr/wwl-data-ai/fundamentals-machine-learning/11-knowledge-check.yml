@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/15/2023
+  ms.date: 09/18/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -49,7 +49,7 @@ quiz:
     choices:
     - content: "Automatically deploy new versions of a model as they're trained"
       isCorrect: false
-      explanation: "Incorrect. Autmated machine learning does not automatically deploy models."
+      explanation: "Incorrect. Automated machine learning does not automatically deploy models."
     - content: "Automatically provision Azure Machine Learning workspaces for new data scientists in an organization"
       isCorrect: false
       explanation: "Incorrect. Automated machine learning does not automate workspace provisioning."
