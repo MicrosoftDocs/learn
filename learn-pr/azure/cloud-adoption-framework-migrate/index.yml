@@ -4,10 +4,11 @@ metadata:
   title: "Migrate to Azure through repeatable processes and common tools"
   description: The Migrate methodology in the Cloud Adoption Framework guides you through migration to Azure by using repeatable processes and common tools.
   ms.date: 04/18/2023
-  author: jamcneil
-  ms.author: jumcn
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.service: caf
+  ms.subservice: caf-methodology-adopt-migrate
 title: "Migrate to Azure through repeatable processes and common tools"
 summary: The Migrate methodology in the Cloud Adoption Framework guides you through migration to Azure by using repeatable processes and common tools.
 abstract: |
