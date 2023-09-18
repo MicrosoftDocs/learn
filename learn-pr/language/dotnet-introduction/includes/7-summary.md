@@ -2,10 +2,10 @@ This module's goal was to introduce .NET. By now, you've begun to understand wha
 
 ## Resources
 
-If you want to use a graphical user interface to build applications by using C#, [download and install Visual Studio 2022](https://visualstudio.microsoft.com/vs/?azure-portal=true). As you learned earlier in the module, the installation process can take a while and require significant internet bandwidth.
+If you want to use a graphical user interface to build applications by using C#, [download and install Visual Studio 2022](https://visualstudio.microsoft.com/vs/?azure-portal=true). As you learned earlier in the module, this installation process can take a while and require significant internet bandwidth.
 
 > [!NOTE]
-> If you're not a (paid) licensed user of Visual Studio, download the *Community edition*, which has all of the features you need to get started.
+> If you're not a (paid) licensed user of Visual Studio, download the *Community edition*, which has all the features you need to get started.
 
 If you want to start by using a command-line interface, download and install both the [.NET SDK](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true).
 
