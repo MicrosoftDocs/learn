@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: "`foreach`"
       isCorrect: true
-      explanation: "Correct! It's possible to use any of these iteration types for the conditions described, but a `foreach` is best suited for this scenario.  The `foreach` is easy to implement when the number of array elements is unknown.  The `foreach` is a good choice when the index number of the selected array element isn't important.  The `foreach` may run faster when the selected item is used muliple times within the code block."
+      explanation: "Correct! It's possible to use any of these iteration types for the conditions described, but a `foreach` is best suited for this scenario.  The `foreach` is easy to implement when the number of array elements is unknown.  The `foreach` is a good choice when the index number of the selected array element isn't important.  The `foreach` may run faster when the selected item is used multiple times within the code block."
     - content: "`for`"
       isCorrect: false
       explanation: "Incorrect. It's possible to use the `for` statement, but it isn't the best choice for this scenario."
