@@ -5,7 +5,7 @@ Code challenges will reinforce what you've learned and help you gain some confid
 As you have seen, C# supports four types of iteration statements: `for`, `foreach`, `do-while`, and `while`. Microsoft's language reference documentation describes these statements as follows:
 
 - The `for` statement: executes its body while a specified Boolean expression (the 'condition') evaluates to true.
-- The `foreach` statement: enumerates the elements of a collection and executes its body for each element of the collection.
+- The `foreach` statement: enumerates the elements of a collection and executes its body for each element of the collection. 
 - The `do-while` statement: conditionally executes its body one or more times.
 - The `while` statement: conditionally executes its body zero or more times.
 
