@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Customize your cloud adoption plan
   description: Integrate data from the digital estate assessment into your cloud adoption plan.
   ms.date: 02/22/2021
-  author: martinekuan
-  ms.author: martinek
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20

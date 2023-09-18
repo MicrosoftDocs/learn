@@ -4,11 +4,10 @@ title: Examine how to create and throw exceptions in C#
 metadata:
   title: Examine how to create and throw exceptions in C#
   description: "Examine how to create and throw exceptions in C#"
-  ms.date: 05/04/2023
+  ms.date: 09/15/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 16
 content: |
   [!include[](includes/2-examine-create-exception-c-sharp.md)]

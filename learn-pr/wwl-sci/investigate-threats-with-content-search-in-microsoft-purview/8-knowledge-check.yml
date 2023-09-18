@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "As your organizations SOC analyst, you need the Enterprise Administrator to grant you access to the Content search page to conduct searches, and preview and export search results. What role group must Patti be a member of in the Microsoft Purview compliance portal to complete these tasks?"
+  - content: "As your organizations Security Operations analyst, you need the Enterprise Administrator to grant you access to the Content search page to conduct searches, and preview and export search results. What role group membership must be assigned in the Microsoft Purview compliance portal to complete these tasks?"
     choices:
     - content: "Organization Management role group"
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
     - content: "eDiscovery Manager role group"
       isCorrect: true
       explanation: "Correct. This role group provides the permissions necessary to access the Content search page to conduct searches and preview and export search results."
-  - content: "You created and ran a Content search and you want to preview the search results. What's the maximum number of randomly selected items that will be available for Holly to preview?"
+  - content: "You created and ran a Content search and you want to preview the search results. What's the maximum number of randomly selected items that are available to preview?"
     choices:
     - content: "500"
       isCorrect: false
