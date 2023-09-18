@@ -132,10 +132,12 @@ Here's a screenshot from Azure Digital Twins Explorer, displaying the graph in 2
 You can view your digital twin graph in 2D using Azure Digital Twins Explorer, or in 3D using Azure Digital Twins 3D Scenes Studio. Run the following command in the Cloud Shell to create a direct URL to your Azure Digital Twins instance in Azure Digital Twins Explorer.
 
 ```azurecli
-    echo "https://explorer.digitaltwins.azure.net/?dtId=$INSTANCE_NAME"
+    HOSTNAME = az dt show -n $INSTANCE_NAME --query "hostName" --output tsv 
+    TENANT_ID = az account list --query "[?isDefault].tenantId" --output tsv
+    echo "https://explorer.digitaltwins.azure.net/?tid=$TENANT_ID&eid=$HOSTNAME"
 ```
 
-In another browser tab or window, navigate to the URL shown in the output of the previous command.
+In another browser tab or window, navigate to the URL shown in the output of the last command.
 
 ## Set up data flow
 
@@ -146,7 +148,8 @@ Azure Digital Twins uses Azure functions to ingest data into a graph from many s
 In the factory example for this module, your Azure function updates the properties of the robot arm twins based on data from their associated devices registered in IoT Hub, and you'll also create a second Azure function that aggregates data from all of the arm twins and updates properties on the main *DistCtr* twin that contains them all.
 
 > [!NOTE]
-> A complete simulation of live data flow is outside the scope of this introductory module, but you can simulate the results in your Cloud Shell by running the following commands to update the values of the twin properties manually.
+> A complete simulation of live data flow is outside the scope of this introductory module.
+You can simulate the results in your Cloud Shell by running the following commands to update the values of the twin properties manually.
 
 ```azurecli
     az dt twin update -n $INSTANCE_NAME --twin-id Arm1 --json-patch '[{"op":"replace","path":"/FailedPickupsLastHr","value":1},{"op":"replace","path":"/PickupFailedAlert","value":True},{"op":"add","path":"/LastPickupFailedBoxID","value":"Box507"},{"op":"replace","path":"/HydraulicPressure","value":18.451452874964478}]'
