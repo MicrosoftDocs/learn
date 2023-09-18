@@ -98,7 +98,7 @@ Sign in to the user portal as the delegated provider and then create a new offer
 
 1.  Select **+ Create a resource**, then **Tenant Offers + Plans**, then select **Offer**.
     
-    :::image type="content" source="../media/delegate-offers-image-5-26938230.png" alt-text="Create a new offer in Azure Stack Hub user portal.":::
+    :::image type="content" source="../media/delegate-offers-image-5-26938230.png" alt-text="Create a new offer in Azure Stack Hub user portal." lightbox="../media/delegate-offers-image-5-26938230.png":::
     
 
 2.  Assign a name to the offer. This example uses **ResellerOffer**. Select the delegated offer on which to base it, and then select **Create**.
@@ -125,7 +125,7 @@ The delegated offers are not visible unless you use the delegated portal.
 
 2.  In the dashboard, select **Get a subscription**. You'll see that only the delegated offers that were created by the delegated provider are presented to the user.
     
-    :::image type="content" source="../media/delegate-offers-image-8-552caf70.png" alt-text="View and select offers in Azure Stack Hub user portal.":::
+    :::image type="content" source="../media/delegate-offers-image-8-552caf70.png" alt-text="View and select offers in Azure Stack Hub user portal." lightbox="../media/delegate-offers-image-8-552caf70.png":::
     
 
 The process of delegating an offer is finished. Now a user can sign up for this offer by getting a subscription to it.

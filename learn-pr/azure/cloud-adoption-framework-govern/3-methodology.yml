@@ -5,8 +5,8 @@ metadata:
   title: Govern methodology
   description: Learn how the Govern methodology drives the right governance decisions during cloud adoption.
   ms.date: 09/22/2020
-  author: BrianBlanchard
-  ms.author: jumcn
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

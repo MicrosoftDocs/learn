@@ -4,8 +4,8 @@ metadata:
   title: Design an Azure Kubernetes Service network with Azure CNI
   description: In this module, we take a detailed look at the process of designing an Azure Kubernetes Service network using the Azure Container Network Interface (CNI) plug-in.
   ms.date: 05/23/2023
-  author: markwme
-  ms.author: mawhitby
+  author: rayoef
+  ms.author: rayoflores
   ms.topic: interactive-tutorial
   ms.service: azure-kubernetes-service
 title: Design an Azure Kubernetes Service network with Azure CNI

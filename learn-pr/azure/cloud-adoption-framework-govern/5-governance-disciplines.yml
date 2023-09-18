@@ -5,8 +5,8 @@ metadata:
   title: Governance disciplines
   description: Understand the five actionable disciplines in the Govern methodology that guide the creation of cloud adoption guardrails.
   ms.date: 09/22/2020
-  author: BrianBlanchard
-  ms.author: jumcn
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
