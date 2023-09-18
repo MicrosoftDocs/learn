@@ -20,7 +20,7 @@ To be an app developer, you typically need skills in at least one programming la
 
 In the path [Python for beginners](../../../paths/beginner-python/index.yml) you’ll be taken through the fundamentals of Python as well as more advanced topics like working with Python in a Notebook or managing many files and dependencies as part of a project.
 
-## GitHub :::image type="icon" source="../media/github-logo.png" border="false":::
+## GitHub
 
 GitHub is a hosted service that allows companies, single developers, and students to host and collaborate on projects using Git. GitHub has an Octocat as its logo, which you may have encountered if you’ve visited a user group or conference. In fact, there’s even a story about the Octocat penned by the daughter of one of the developers working for GitHub. Here’s the story:
 
@@ -32,7 +32,7 @@ When we love the tools we use, we take the time to learn the features to be fast
 
 Imagine you're a computer science student eager to learn how to effectively collaborate on coding projects using Git and GitHub. You decide to create your first GitHub repository to track assignments. You initiate a local Git repository on your machine, add project files, and commit your initial changes. Next, you create a new repository on GitHub and link it to your local repository using the provided Git remote commands. You push your code to GitHub, enabling you to access your project from anywhere. You share the repository URL with your classmates, allowing them to clone the repository, make changes, and propose improvements through pull requests. With Git and GitHub, you can easily collaborate, manage versions, and merge changes to create an impressive final project.
 
-## Visual Studio Code :::image type="icon" source="../media/visual-studio-code-logo.png" border="false":::
+## Visual Studio Code
 
 Visual Studio Code is a free integrated development environment (IDE) that runs on most operating systems and is compatible with GitHub. An IDE is a software application that provides a comprehensive environment for software development. The purpose of an IDE is to make it easier for developers to write and debug code by providing a centralized interface for all the tools they need.
 
@@ -42,7 +42,7 @@ Visual Studio Code has a rich ecosystem of extensions you can install that will 
 
 Imagine you’re building a webpage as part of your group project. You need to add HTML for the appearance, JavaScript code to make it interactive, and CSS to make it fun and appealing to use. Using Visual Studio Code, you can install extensions that allow you to add each of these elements faster than ever. Visual Studio Code can check your syntax, suggest snippets of code, and preview your website to ensure you’re happy with the outcome before you publish it.
 
-## GitHub Copilot :::image type="icon" source="../media/copilot-logo.png" border="false":::
+## GitHub Copilot 
 
 GitHub Copilot is a tool that uses AI to give you suggestions based on a typed text instruction, or *prompt*. This tool helps you by providing code suggestions, answers to questions, and fixes or optimizations for your code, assisting you to write code faster and with greater precision.
 
