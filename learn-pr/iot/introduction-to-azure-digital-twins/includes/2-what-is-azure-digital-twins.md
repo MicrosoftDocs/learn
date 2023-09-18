@@ -13,7 +13,7 @@ After creating models to define the types of entity in your environment, you cre
 >[!TIP]
 >From a programming perspective, models are similar to class definitions, and twins are like instances of those classes.
 
-Finally, digital twins are connected to each other via **relationships** to form a conceptual graph of your complete environment. You'll create a twin to represent the entire distribution center, and use relationships to indicate that that center *contains* each of the robotic arm twins that you've created. Using relationships like this can help you to aggregate data from twins that are conceptually connected to each other, such as determining the average hourly efficiency across all robotic arms in the factory.
+Finally, digital twins are connected to each other via **relationships** to form a conceptual graph of your complete environment. You'll create a twin to represent the entire distribution center, and use relationships to indicate that the center *contains* each of the robotic arm twins that you've created. Using relationships like this can help you to aggregate data from twins that are conceptually connected to each other, such as determining the average hourly efficiency across all robotic arms in the factory.
 
 ## Sync and contextualize IoT and business system data
 

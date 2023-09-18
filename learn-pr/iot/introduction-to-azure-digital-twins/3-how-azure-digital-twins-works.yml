@@ -4,13 +4,11 @@ title: How Azure Digital Twins works
 sandbox: true
 interactive: bash
 metadata:
-  unitType: learning-content
   title: How Azure Digital Twins works
   description: Learn how Azure Digital Twins works.
   ms.date: 06/22/2023
   author: baanders
   ms.author: baanders
-  ms.topic: training-unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-how-azure-digital-twins-works.md)]

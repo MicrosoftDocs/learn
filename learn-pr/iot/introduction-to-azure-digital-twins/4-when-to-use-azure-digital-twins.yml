@@ -2,13 +2,11 @@
 uid: learn.iot.introduction-to-azure-digital-twins.when-to-use-azure-digital-twins
 title: When to use Azure Digital Twins
 metadata:
-  unitType: learning-content
   title: When to use Azure Digital Twins
   description: Learn when to use Azure Digital Twins.
   ms.date: 06/22/2023
   author: baanders
   ms.author: baanders
-  ms.topic: training-unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-when-to-use-azure-digital-twins.md)]

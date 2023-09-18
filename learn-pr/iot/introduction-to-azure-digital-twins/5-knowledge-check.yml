@@ -2,13 +2,11 @@
 uid: learn.iot.introduction-to-azure-digital-twins.knowledge-check
 title: Knowledge check
 metadata:
-  unitType: knowledge_check
   title: Knowledge check
   description: Check your understanding of what we've covered in this module.
   ms.date: 06/22/2023
   author: baanders
   ms.author: baanders
-  ms.topic: training-unit
 durationInMinutes: 7
 content: |
 quiz:
