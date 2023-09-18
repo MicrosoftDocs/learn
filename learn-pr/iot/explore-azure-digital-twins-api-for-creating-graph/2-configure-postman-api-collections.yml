@@ -9,7 +9,6 @@ metadata:
   ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
-  ms.topic: training-unit
 durationInMinutes: 15
 content: |
   [!include[](includes/2-configure-postman-api-collections.md)]

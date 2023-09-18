@@ -4,13 +4,11 @@ title: Create endpoints
 sandbox: true
 interactive: bash
 metadata:
-  unitType: exercise
   title: Create endpoints
   description: Use the Azure Digital Twins APIs to create an endpoint and check its status.
   ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
-  ms.topic: training-unit
 durationInMinutes: 15
 content: |
   [!include[](includes/5-create-endpoints.md)]
