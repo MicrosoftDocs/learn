@@ -2,11 +2,11 @@ Before you enhance your company's patient diagnostic image web app, you'd like t
 
 Your company could make use of more than just the SAS method of authentication.
 
-In this unit, you'll look at the different ways to authenticate access to files stored in Azure Storage.
+In this unit, you look at the different ways to authenticate access to files stored in Azure Storage.
 
 ## Access Azure Storage
 
-Files stored in Azure Storage are accessed by clients over HTTP/HTTPS. Azure checks each client request for authorization to access stored data. Four options are available for blob storage:
+Clients access files stored in Azure Storage over HTTP/HTTPS. Azure checks each client request for authorization to access the stored data. Four options are available for accessing blob storage:
 
 - Public access
 - Azure Active Directory (Azure AD)
@@ -15,21 +15,21 @@ Files stored in Azure Storage are accessed by clients over HTTP/HTTPS. Azure che
 
 ### Public access
 
-Public access is also known as anonymous public read access for containers and blobs. 
+Public access is also known as anonymous public read access for containers and blobs.
 
 There are two separate settings that affect public access:
 
 - **The Storage Account.** Configure the storage account to allow public access by setting the *AllowBlobPublicAccess* property. When set to true, Blob data is available for public access only if the container's public access setting is also set.
 
-- **The Container.** You can enable anonymous access only if anonymous access has been allowed for the storage account. A container has two possible settings for public access: *Public read access for blobs*, or *public read access for a container and its blobs*. Anonymous access is controlled at the container level, not for individual blobs. This means that if you want to secure some of the files, you need to put them in a separate container that doesn't permit public read access.
+- **The Container.** You can enable anonymous access only if anonymous access has been allowed for the storage account. A container has two possible settings for public access: *Public read access for blobs*, or *public read access for a container and its blobs*. Anonymous access is controlled at the container level, not for individual blobs. So, if you want to secure some of the files, you need to put them in a separate container that doesn't permit public read access.
 
  Both storage account and container settings are required to enable anonymous public access. The advantages of this approach are that you don't need to share keys with clients who need access to your files. You also don't need to manage a SAS.
 
- ### Azure Active Directory
+### Azure Active Directory
 
 Use the Azure AD option to securely access Azure Storage without storing any credentials in your code. AD authorization takes a two-step approach. First, you authenticate a security principal that returns an OAuth 2.0 token if successful. This token is then passed to Azure Storage to enable authorization to the requested resource.
 
-Use this form of authentication if you're running an app with managed identities or using security principals. 
+Use this form of authentication if you're running an app with managed identities or using security principals.
 
 ### Shared key
 
@@ -49,4 +49,4 @@ Azure Storage supports three types of shared access signatures:
 
 You can create a SAS ad-hoc by specifying all the options you need to control, including start time, expiration time, and permissions.
 
-If you plan to create a service SAS, there's also an option to associate it with a stored access policy. A stored access policy can be associated with up to five active SASs. You can control access and expiration at the stored access policy level. This is a good approach if you need to have granular control to change the expiration, or to revoke a SAS. The only way to revoke or change an ad-hoc SAS is to change the storage account keys.
+If you plan to create a service SAS, there's also an option to associate it with a stored access policy. A stored access policy can be associated with up to five active SASs. You can control access and expiration at the stored access policy level. This approach is good if you need to have granular control to change the expiration, or to revoke a SAS. The only way to revoke or change an ad-hoc SAS is to change the storage account keys.

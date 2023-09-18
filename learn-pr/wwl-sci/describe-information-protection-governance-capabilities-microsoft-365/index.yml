@@ -3,7 +3,7 @@ uid: learn.wwl.describe-information-protection-governance-capabilities-microsoft
 metadata:
   title: Describe information protection and data lifecycle management in Microsoft Purview
   description: "Describe information protection and data lifecycle management in Microsoft Purview"
-  ms.date: 06/16/2023
+  ms.date: 09/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -37,6 +37,7 @@ units:
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.describe-data-loss-prevention
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.describe-retention-polices-retention-labels
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.describe-records-management
+- learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.describe-purview-governance
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.knowledge-check
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.summary-resources
 badge:

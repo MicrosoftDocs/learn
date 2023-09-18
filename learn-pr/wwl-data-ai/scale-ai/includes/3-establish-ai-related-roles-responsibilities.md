@@ -1,5 +1,3 @@
-
-
 Any strategy for AI adoption needs to address your existing business capabilities. We covered this in the module ["Create business value from AI."](/training/modules/create-business-value) The goal of this module is to prepare your company for AI initiatives. The question now is: within your organization, who is responsible for what tasks when it comes to AI? In this unit, dive into how you can assign AI-related responsibilities in your organization.
 
 ## Enabling AI in your organization is a collective responsibility

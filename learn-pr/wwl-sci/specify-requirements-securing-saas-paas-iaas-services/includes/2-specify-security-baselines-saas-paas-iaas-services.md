@@ -42,7 +42,7 @@ We recommend that you encrypt your virtual hard disks (VHDs) to help protect you
 
 ### Restrict direct internet connectivity
 
-Monitor and restrict VM direct internet connectivity. Attackers constantly scan public cloud IP ranges for open management ports and attempt “easy” attacks like common passwords and known unpatched vulnerabilities. The following table lists best practices to help protect against these attacks:
+Monitor and restrict VM direct internet connectivity. Attackers constantly scan public cloud IP ranges for open management ports and attempt “easy” attacks like common passwords and known unpatched vulnerabilities. 
 
 ## PaaS security
 

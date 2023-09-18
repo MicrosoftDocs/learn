@@ -8,11 +8,6 @@ Conditional Access policies at their simplest are if-then statements.  For examp
 > [!IMPORTANT]
 > Conditional Access policies are enforced after first-factor authentication is completed. Conditional Access isn't intended to be an organization's first line of defense for scenarios like denial-of-service (DoS) attacks, but it can use signals from these events to determine access.
 
-Watch the video to see how Conditional Access policies work.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4INyI]
-
-
 ### Conditional access policy components
 
 A conditional access policy in Microsoft Entra ID consists of two components, assignments and access controls.
