@@ -2,13 +2,11 @@
 uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data.understand-data-flow-and-required-resources
 title:  Understand data flow and required resources
 metadata:
-  unitType: learning-content
   title:  Understand data flow and required resources
   description: Understand data flow from an IoT device into Azure Digital Twins, and from one twin to another.
   ms.date: 09/07/2023
   author: baanders
   ms.author: baanders
-  ms.topic: training-unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-understand-data-flow-required-resources.md)]
