@@ -1,10 +1,20 @@
-Upon completion of this module, the learner will be able to:
+This module covers the topic of Zero Trust and best practice frameworks for Microsoft cybersecurity capabilities.
+
+Imagine you're a cybersecurity architect in a large organization. You have been tasked with modernizing the organization's cybersecurity. You know that best practices are essential to achieve this goal, but you aren't sure which framework to use. You have heard about Zero Trust and its potential benefits, but you aren't sure how to get started. This module helps you understand best practices and how to use them as a cybersecurity architect. You'll also learn about the concept of Zero Trust and how to get started with it in an organization.
+
+The module is divided into five units: Introduction to Best Practices, Introduction to Zero Trust, Zero Trust Initiatives, Zero Trust Technology Pillars Part 1, and Zero Trust Technology Pillars Part 2.
+
+By the end of this module, you'll be able to understand how to use best practices as a cybersecurity architect, understand the concept of Zero Trust and how it can be used to modernize an organization's cybersecurity, and understand when to use different best practice frameworks like MCRA, CAF, and WAF.
+
+## Learning objectives
+
+Upon completion of this module, the learner is able to:
 
 - Understand how to use best practices as a cybersecurity architect.
 - Understand the concept of Zero Trust and how it can be used to modernize an organizations cybersecurity.
 - Understand when to use different best practice frameworks like MCRA, CAF and WAF.
 
-The content in the module will help you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
+The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 
 ## Prerequisites
 
@@ -31,7 +41,7 @@ Microsoft has embedded security best practices in various forms of guidance incl
 
 ## Antipatterns
 
-An **antipattern** is a common mistake that lead to negative outcomes. It is the opposite of a best practice. Many best practices are designed to help you avoid antipatterns.
+An **antipattern** is a common mistake that lead to negative outcomes. It's the opposite of a best practice. Many best practices are designed to help you avoid antipatterns.
 
 An example of a best practice that helps you overcome numerous antipatterns is applying security patches regularly. Microsoft has observed multiple antipatterns that get in the way of regularly applying this basic and critically important security best practice:
 
@@ -72,7 +82,7 @@ Adopting best practices will reduce common mistakes and improve overall security
 |---|---|---|---|---|---|
 | [Zero Trust RaMP initiatives](/security/zero-trust/zero-trust-ramp-overview) | Zero Trust guide based on initiatives designed to provide quick wins in high-impact areas. Plans organized chronologically and identify key stakeholders. | When you want to get started with Zero Trust and make progress quickly. | Cloud architects, IT professionals, and Business decision makers | Early stage cloud and Zero Trust adopters | Project plans with checklists |
 | [Zero Trust deployment objectives](/security/zero-trust/deploy/overview) | Zero Trust guide with detailed configuration steps for each of the technology pillars. More comprehensive than RaMP initiatives. | When you want a more comprehensive guide on rolling out Zero Trust. | Cloud architects, IT professionals | Organizations who have made some progress with Zero Trust and want detailed guidance to make the most out of the technology. | Deployment plans with primary and secondary objectives. |
-| [MCRA](/security/cybersecurity-reference-architecture/mcra)  | The MCRA is a set of diagrams that includes many best practices related to the access control modernization initiative in Zero Trust RaMP | When you want: a starting template for a security architecture, a comparison reference for security capabilities, to learn about Microsoft capabilities, to learn about Microsoft's integration investments | Cloud architects, IT professionals | Early stage cloud and zero trust adopters | Powerpoint slides with diagrams |
+| [MCRA](/security/cybersecurity-reference-architecture/mcra)  | The MCRA is a set of diagrams that includes many best practices related to the access control modernization initiative in Zero Trust RaMP | When you want: a starting template for a security architecture, a comparison reference for security capabilities, to learn about Microsoft capabilities, to learn about Microsoft's integration investments | Cloud architects, IT professionals | Early stage cloud and zero trust adopters | PowerPoint slides with diagrams |
 | [MCSB](/security/benchmark/azure/introduction)  | A framework for assessing the security posture of an organization's cloud environment against industry standards and best practices. | Looking for guidance on how to implement security controls and monitor them for compliance.  | Cloud architects, IT professionals | All | Detailed specifications of controls and service baselines |
 | [CAF](/azure/cloud-adoption-framework/overview) | A documentation and implementation framework for best practices throughout the cloud adoption lifecycle, providing a step-by-step approach to cloud migration and management using Azure. | When you are looking to create and implement business and technology strategies for the cloud. | Cloud architects, IT professionals, and Business decision makers | Organizations who need technical guidance for Microsoft Azure | Best practices, documentation, and tools |
 | [WAF](/azure/architecture/framework/) | A framework designed to help customers build secure, high-performing, resilient, and efficient infrastructure for their applications and workloads in Azure, using five pillars: cost optimization, operational excellence, performance efficiency, reliability, and security. | When you are looking to improve the quality of a cloud workload. | Cloud architects, IT professionals | All | Azure Well-Architected Review, Azure Advisor, Documentation, Partners, Support, and Services Offers, Reference architectures, Design principles |
