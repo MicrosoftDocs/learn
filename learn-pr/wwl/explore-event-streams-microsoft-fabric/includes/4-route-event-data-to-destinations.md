@@ -2,18 +2,18 @@
 
 To add an eventstream destination in Microsoft Fabric, you need to follow these steps:
 
-- Select New destination on the ribbon or ![Screenshot of new button in main editor.](../media/new-button-main-editor.png) in the main editor canvas and then select the type of destination you want to add. The types of destinations that you can add to your eventstream are KQL Database, Lakehouse, Custom App, and Reflex. See the Supported destinations section for details.
-- Enter a destination name, select a workspace, and choose a destination from the selected workspace. Then select Add and configure.
+1. Select New destination on the ribbon or ![Screenshot of new button in main editor.](../media/new-button-main-editor.png) in the main editor canvas and then select the type of destination you want to add. The types of destinations that you can add to your eventstream are KQL Database, Lakehouse, Custom App, and Reflex. See the Supported destinations section for details.
+2. Enter a destination name, select a workspace, and choose a destination from the selected workspace. Then select Add and configure.
 
   > [!NOTE]
   > Make sure to read any notes that might appear on the configuration panel that appears after selecting your destination type.
 
-- On the Ingest data page, navigate through the four tabs, which include:
+3. On the Ingest data page, navigate through the four tabs, which include:
   - Destination: Use an existing table of your KQL database or create a new one to route and ingest your real-time data.
   - Source: Verify the real-time data source for creating a data connection to ingest data from your eventstream.
   - Schema: Select a compression type and data format, and preview how the data is sent to your selected destination. By performing this step, you can ensure you have properly formatted your data and it adheres to the expected schema, which helps prevent data loss or inaccuracies during ingestion.
   - Summary: Review the status of your data ingestion, including the table created with the schema you defined, and connection between the eventstream and the selected destination.
-- Review the status of your data ingestion and select Done. A destination tile appears on the canvas, connected to your eventstream.
+4. Review the status of your data ingestion and select Done. A destination tile appears on the canvas, connected to your eventstream.
   For more information, you can refer to [this](/fabric/real-time-analytics/event-streams/add-manage-eventstream-destinations) article that explains how to create and manage an eventstream in Microsoft Fabric.
 
 ## Types of event destinations available in eventstream
@@ -29,17 +29,17 @@ In eventstream there are currently four current destination types supported incl
 
 ## Store events in a delta table using Lakehouse as an event destination
 
-- Create a lakehouse and an eventstream in your workspace. You can refer to this article for detailed instructions.
-- Add a lakehouse destination to your eventstream by selecting New destination on the ribbon or ![Screenshot of new button in main editor.](../media/new-button-main-editor.png) in the main editor canvas and then selecting **Lakehouse**.
+1. Create a lakehouse and an eventstream in your workspace. You can refer to this article for detailed instructions.
+2. Add a lakehouse destination to your eventstream by selecting New destination on the ribbon or ![Screenshot of new button in main editor.](../media/new-button-main-editor.png) in the main editor canvas and then selecting **Lakehouse**.
 
   ![Screenshot of new lakehouse destination.](../media/lakehouse-destination.png)
 
-- Enter a destination name, select a workspace, and choose a lakehouse from the selected workspace. Then select Add and configure.
+3. Enter a destination name, select a workspace, and choose a lakehouse from the selected workspace. Then select Add and configure.
 
   ![Screenshot of configure lakehouse destination.](../media/lakehouse-configuration.png)
 
-On the Ingest data page, navigate through the tabs to complete the configuration for your destination. You can specify the destination table, source connection, schema, compression type, data format, and preview how the data is sent to your lakehouse. You can also define real-time events processing logic with event processor. See this article for more details.
-Review the status of your data ingestion and select Done. A lakehouse destination tile appears on the canvas, connected to your eventstream. Real-time events are converted into Delta Lake format and then stored in the designated lakehouse tables.
+4. On the Ingest data page, navigate through the tabs to complete the configuration for your destination. You can specify the destination table, source connection, schema, compression type, data format, and preview how the data is sent to your lakehouse. You can also define real-time events processing logic with event processor. See this article for more details.
+5. Review the status of your data ingestion and select Done. A lakehouse destination tile appears on the canvas, connected to your eventstream. Real-time events are converted into Delta Lake format and then stored in the designated lakehouse tables.
 
   > [!NOTE] 
   > The other destination types, including KQL Database, Custom App, and Reflex can be used in combination with your source or as a stand-alone event stream.
