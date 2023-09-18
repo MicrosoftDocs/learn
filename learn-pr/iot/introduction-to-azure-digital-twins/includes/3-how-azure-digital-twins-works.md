@@ -149,6 +149,7 @@ In the factory example for this module, your Azure function updates the properti
 
 > [!NOTE]
 > A complete simulation of live data flow is outside the scope of this introductory module.
+
 You can simulate the results in your Cloud Shell by running the following commands to update the values of the twin properties manually.
 
 ```azurecli
