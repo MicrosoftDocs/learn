@@ -3,7 +3,7 @@ uid: learn.wwl.create-c-sharp-methods-parameters
 metadata:
   title: Create C# methods with parameters
   description: "This module covers method parameters, including pass-by-reference and pass-by-value parameter types. This module also covers optional and named arguments."
-  ms.date: 09/15/2023
+  ms.date: 09/18/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - Experience using switch statements, if-else statements, and for-loops
   - Experience using the `Random` class to generate a random number.
   - Basic understanding of C# methods
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/create-c-sharp-methods-parameters.svg
 levels:
 - beginner
 roles:
