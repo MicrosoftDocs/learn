@@ -4,8 +4,8 @@ metadata:
   title: Monitor the health of your Azure virtual machine by using Azure Metrics Explorer and metric alerts
   description: Learn how to monitor the health of your Azure VMs by using Azure Metrics Explorer and metric alerts. 
   ms.date: 08/11/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  author: guywi-ms
+  ms.author: guywild
   ms.topic: interactive-tutorial
   ms.custom: engagement-fy23
   ms.service: virtual-machines
