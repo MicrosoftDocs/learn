@@ -22,6 +22,8 @@ In the path [Python for beginners](../../../paths/beginner-python/index.yml) you
 
 ## GitHub
 
+:::image type="icon" source="../media/github-logo.png" border="false":::
+
 GitHub is a hosted service that allows companies, single developers, and students to host and collaborate on projects using Git. GitHub has an Octocat as its logo, which you may have encountered if you’ve visited a user group or conference. In fact, there’s even a story about the Octocat penned by the daughter of one of the developers working for GitHub. Here’s the story:
 
 _Once upon a time, there was a curious cat named Monalisa Octocat. She discovered GitHub, a magical ocean of coding and collaboration. With GitHub's help, she explored exciting projects, collaborated with developers worldwide, and showcased her own coding creations. It became her favorite playground, where she could unleash her creativity and leave her pawprints in the digital world._
@@ -34,6 +36,8 @@ Imagine you're a computer science student eager to learn how to effectively coll
 
 ## Visual Studio Code
 
+:::image type="icon" source="../media/visual-studio-code-logo.png" border="false":::
+
 Visual Studio Code is a free integrated development environment (IDE) that runs on most operating systems and is compatible with GitHub. An IDE is a software application that provides a comprehensive environment for software development. The purpose of an IDE is to make it easier for developers to write and debug code by providing a centralized interface for all the tools they need.
 
 Visual Studio Code has a rich ecosystem of extensions you can install that will enhance your coding experience. It also pairs nicely with GitHub as it has great support for it. This tool can make coding and debugging a breeze.  
@@ -42,7 +46,9 @@ Visual Studio Code has a rich ecosystem of extensions you can install that will 
 
 Imagine you’re building a webpage as part of your group project. You need to add HTML for the appearance, JavaScript code to make it interactive, and CSS to make it fun and appealing to use. Using Visual Studio Code, you can install extensions that allow you to add each of these elements faster than ever. Visual Studio Code can check your syntax, suggest snippets of code, and preview your website to ensure you’re happy with the outcome before you publish it.
 
-## GitHub Copilot 
+## GitHub Copilot
+
+:::image type="icon" source="../media/copilot-logo.png" border="false":::
 
 GitHub Copilot is a tool that uses AI to give you suggestions based on a typed text instruction, or *prompt*. This tool helps you by providing code suggestions, answers to questions, and fixes or optimizations for your code, assisting you to write code faster and with greater precision.
 
