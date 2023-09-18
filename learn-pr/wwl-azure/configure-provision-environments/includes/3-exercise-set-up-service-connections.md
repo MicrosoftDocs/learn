@@ -1,4 +1,3 @@
-
 In this exercise, you'll investigate Service Connections.
 
 > [!NOTE]

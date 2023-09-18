@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
+  ms.custom: devx-track-arm-template
 durationInMinutes: 8
 content: |
   [!include[](includes/4-describe-azure-resource-manager-azure-arm-templates.md)]

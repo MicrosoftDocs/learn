@@ -1,4 +1,3 @@
-
 Efficient log collection and analysis are essential for effective threat detection and response in cloud environments. Microsoft Defender for Cloud provides integration with Azure Log Analytics, enabling organizations to collect and analyze security logs from various sources. In this training module, we will explore the configuration and integration of a Log Analytics agent and workspace in Defender for Cloud, enabling organizations to centralize and leverage security logs for proactive security monitoring.
 
 ## Scenario

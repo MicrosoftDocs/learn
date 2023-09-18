@@ -4,8 +4,8 @@ metadata:
   title: Analyze your Azure infrastructure by using Azure Monitor logs
   description: Use Azure Monitor logs to extract valuable information about your infrastructure from log data.
   ms.date: 01/13/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  author: guywi-ms
+  ms.author: guywild
   ms.topic: interactive-tutorial
   ms.service: azure-monitor
   ms.subservice: logs

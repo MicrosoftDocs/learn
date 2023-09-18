@@ -21,7 +21,7 @@ levels:
 roles:
 - developer
 products:
-- azure-application-insights
+- azure-monitor
 modules:
 - learn.wwl.monitor-app-performance
 trophy:

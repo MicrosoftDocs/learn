@@ -1,5 +1,3 @@
-
-
 In the last unit, we discussed some of the societal implications of AI. We touched on the responsibility of businesses, governments, NGOs, and academic researchers to anticipate and mitigate unintended consequences of AI technology. As organizations consider these responsibilities, more are creating internal policies and practices to guide their AI efforts.
 
 At Microsoft, we've recognized six principles that we believe should guide AI development and use: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For us, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more prevalent in the products and services we use every day.

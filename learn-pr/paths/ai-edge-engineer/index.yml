@@ -51,7 +51,6 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-notebooks
 - azure-cloud-shell
 - azure-container-instances
 - azure-container-registry
@@ -63,7 +62,7 @@ products:
 subjects:
 - artificial-intelligence
 modules:
-- learn.oxford.intro-to-iot
+- learn.introduction-to-azure-iot
 - learn.oxford.intro-to-iot-hub
 - learn.oxford.intro-to-iot-edge
 - learn.oxford.deploy-prebuilt-module-edge-device

@@ -4,14 +4,11 @@ title: Explore PowerShell workflows
 metadata:
   title: Explore PowerShell workflows
   description: "Explore PowerShell workflows"
-  ms.date: 03/18/2022
+  ms.date: 09/05/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.custom:
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/8-explore-powershell-workflows.md)]

@@ -4,10 +4,11 @@ metadata:
   title: "Introduction to GitHub in Visual Studio Code"
   description: Learn to use the GitHub integration in Visual Studio Code, including authentication, publishing repos, and viewing your repo timeline.
   ms.date: 04/06/2022
-  author: gregvanl
-  ms.author: gregvanl
-  ms.topic: interactive-tutorial
+  author: kjo-msft
+  ms.author: karinjohnson
+  ms.topic: module-intro-to-product
   ms.prod: vs-code
+  manager: jmartens
 title: "Introduction to GitHub in Visual Studio Code"
 summary: Learn to use the GitHub integration in Visual Studio Code, including authentication, publishing repos, and viewing your repo timeline.
 abstract: |

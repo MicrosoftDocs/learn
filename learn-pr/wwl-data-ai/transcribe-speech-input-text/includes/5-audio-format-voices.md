@@ -1,3 +1,4 @@
+
 When synthesizing speech, you can use a **SpeechConfig** object to customize the audio that is returned by the Azure AI Speech service.
 
 ## Audio format
@@ -12,7 +13,7 @@ The supported formats are indicated in the SDK using the **SpeechSynthesisOutput
 
 To specify the required output format, use the **SetSpeechSynthesisOutputFormat** method of the **SpeechConfig** object:
 
-```
+```csharp
 speechConfig.SetSpeechSynthesisOutputFormat(SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm);
 ```
 
@@ -29,8 +30,8 @@ Voices are identified by names that indicate a locale and a person's name - for 
 
 To specify a voice for speech synthesis in the **SpeechConfig**, set its **SpeechSynthesisVoiceName** property to the voice you want to use:
 
-```
+```csharp
 speechConfig.SpeechSynthesisVoiceName = "en-GB-George";
 ```
 
-For information about voices, see the [Azure AI Speech SDK documentation](/azure/cognitive-services/speech-service/language-support#text-to-speech).
+For information about voices, see the [Azure AI Speech SDK documentation](/azure/ai-services/speech-service/language-support?tabs=tts).

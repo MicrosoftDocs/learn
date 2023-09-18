@@ -4,13 +4,12 @@ title: Categorize built-in functions
 metadata:
   title: Categorize built-in functions
   description: "Categorize built-in functions"
-  ms.date: 11/15/2022
+  ms.date: 09/14/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: sql
+  ms.subservice: t-sql
 durationInMinutes: 3
 content: |
   [!include[](includes/2-categorize-functions.md)]

@@ -3,7 +3,7 @@ uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.3-cogni
 title: Exercise - Train a machine learning model to recognize polar bears
 metadata:
   title: Exercise - Train a machine learning model to recognize polar bears
-  description: Use the Azure Cognitive Services Custom Vision service to train a machine learning model to recognize polar bears.
+  description: Use the Azure AI Custom Vision service to train a machine learning model to recognize polar bears.
   ms.date: 06/04/2022
   author: acomfort248
   ms.author: chnoring
@@ -12,4 +12,4 @@ metadata:
   ms.custom: team=nextgen
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-cognitive-services.md)]
+  [!INCLUDE[](includes/3-cognitive-services.md)]

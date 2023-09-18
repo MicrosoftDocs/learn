@@ -1,6 +1,10 @@
-During your journey as a developer, there's always _that_ moment when you end up asking yourself:
+During your journey as a developer, there's always _that_ moment when you end up asking yourself `Why isn't my code working?`
 
-> Why isn't my code working?
+During your work on the Tailwind Traders retail application, you'll most likely be confronted with this situation a few times. When there's a bug in the program, everyone usually has their own way of dealing with the problem.
+
+
+
+## Why isn't my code working?
 
 During your work on the Tailwind Traders retail application, you'll most likely be confronted with this situation a few times. When there's a bug in the program, everyone usually has their own way of dealing with the problem.
 
