@@ -73,6 +73,5 @@ modules:
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365
 - learn.wwl.describe-ediscovery-capabilities-of-microsoft-365
-- learn.wwl.describe-resource-governance-capabilities-azure
 trophy:
   uid: learn.wwl.describe-capabilities-of-microsoft-compliance-solutions.trophy
