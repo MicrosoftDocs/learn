@@ -3,7 +3,7 @@ Here, you'll learn more about how an Azure Digital Twins solution is built. You'
 For a hands-on experience, this unit uses an Azure sandbox. Start by running the following commands in the Cloud Shell to create an Azure Digital Twins instance:
 
 > [!IMPORTANT]
-> If you receive an error with *code: LocationNotAvailableForResourceType*, try switching the location to [another available region](https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/?products=digital-twins).
+> If you receive an error with *code: LocationNotAvailableForResourceType*, try switching the location to [another available region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/?products=digital-twins).
 
 ```azurecli
     INSTANCE_NAME="Distribution-Center-$RANDOM"
