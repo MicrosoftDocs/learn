@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.build-auto-suggest-engine-copilot
+metadata:
+  title: Build Auto suggest Engine with Copilot
+  description: "Use GitHub Copilot to interpret, debug, and extend project code for a Trie data structure that supports autocomplete and spelling suggestion features."
+  ms.date: 09/18/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.service: artificial-intelligence
+  ms.devlang: csharp
+title: Build Auto suggest Engine with Copilot
+summary: Use GitHub Copilot to interpret, debug, and extend project code for a Trie data structure that supports autocomplete and spelling suggestion features.
+abstract: |
+  In this module, you will:
+  - Interpret code with Copilot
+  - Author code with Copilot
+  - Debug and test code with Copilot
+prerequisites: |
+  - Visual Studio Code
+  - GitHub Copilot extension
+  - Github Copilot Chat extension
+  - Basic understanding of the C# programming language
+  - Familiarity with classes, methods, variables, and logic statements
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-ide
+units:
+- learn.wwl.build-auto-suggest-engine-copilot.introduction
+- learn.wwl.build-auto-suggest-engine-copilot.prepare
+- learn.wwl.build-auto-suggest-engine-copilot.interpret-code-with-copilot
+- learn.wwl.build-auto-suggest-engine-copilot.generate-code-with-copilot
+- learn.wwl.build-auto-suggest-engine-copilot.use-prompts-code-generation
+- learn.wwl.build-auto-suggest-engine-copilot.debug-code-with-copilot
+- learn.wwl.build-auto-suggest-engine-copilot.test-code-with-copilot
+- learn.wwl.build-auto-suggest-engine-copilot.knowledge-check
+- learn.wwl.build-auto-suggest-engine-copilot.summary
+badge:
+  uid: learn.wwl.build-auto-suggest-engine-copilot.badge

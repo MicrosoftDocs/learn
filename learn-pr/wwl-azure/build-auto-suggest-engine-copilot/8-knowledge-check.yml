@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-auto-suggest-engine-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/18/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.service: artificial-intelligence
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary function of GitHub Copilot?"
+    choices:
+    - content: "Generating full software projects without human input."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot focuses on assisting developers in writing code snippets, not providing complete solutions."
+    - content: "Providing virtual reality simulations for coding."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot doesn't provide virtual reality simulations."
+    - content: "Assisting in generating code and providing coding suggestions."
+      isCorrect: true
+      explanation: "Correct! GitHub Copilot is an AI-powered tool that helps developers write code more efficiently by offering code suggestions and completions."
+  - content: "What is one limitation of GitHub Copilot's code generation capabilities?"
+    choices:
+    - content: "It can replace the need for programmers in the software development process."
+      isCorrect: false
+      explanation: "Incorrect. Copilot can assist with code generation, but it can't replace the need for programmers."
+    - content: "It may generate code that doesn't align perfectly with the desired logic."
+      isCorrect: true
+      explanation: "Correct! While Copilot can assist with code generation, its suggestions might not always precisely match the intended logic or design."
+    - content: "It can predict the exact user requirements for complex projects."
+      isCorrect: false
+      explanation: "Incorrect. Copilot can assist with code generation, but it can't predict the exact user requirements for complex projects."

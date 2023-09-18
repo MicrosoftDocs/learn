@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-auto-suggest-engine-copilot.debug-code-with-copilot
+title: Exercise - Debug code with Copilot Chat
+metadata:
+  title: Exercise - Debug code with Copilot Chat
+  description: "Exercise - Debug code with Copilot Chat"
+  ms.date: 09/18/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.service: artificial-intelligence
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-debug-code-with-copilot.md)]

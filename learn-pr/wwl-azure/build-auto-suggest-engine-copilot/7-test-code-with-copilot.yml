@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-auto-suggest-engine-copilot.test-code-with-copilot
+title: Exercise - Test code with Copilot
+metadata:
+  title: Exercise - Test code with Copilot
+  description: "Exercise - Test code with Copilot"
+  ms.date: 09/18/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.service: artificial-intelligence
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-test-code-with-copilot.md)]

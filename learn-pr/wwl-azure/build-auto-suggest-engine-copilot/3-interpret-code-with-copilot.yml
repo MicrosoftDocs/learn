@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-auto-suggest-engine-copilot.interpret-code-with-copilot
+title: Exercise - Use Copilot to interpret code
+metadata:
+  title: Exercise - Use Copilot to interpret code
+  description: "Exercise - Use Copilot to interpret code"
+  ms.date: 09/18/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.service: artificial-intelligence
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-interpret-code-with-copilot.md)]
