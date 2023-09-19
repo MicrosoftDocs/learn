@@ -14,10 +14,10 @@ abstract: |
   After completing this module, you'll be able to:
   - Identify the components and functionality of an Azure Compute Gallery.
   - Describe the types of resources that can be stored in a gallery.
-  - Differentiate between the options for sharing resoruces stored in a gallery.
+  - Differentiate between the options for sharing resources stored in a gallery.
 prerequisites: |
   - Experience with Azure virtual machines, such as deploying and managing virtual machine resources.
-  - Experience with imaging technologies uch as ghost and managed images.
+  - Experience with imaging technologies such as ghost and managed images.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
