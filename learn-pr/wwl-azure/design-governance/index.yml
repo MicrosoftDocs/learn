@@ -2,8 +2,8 @@
 uid: learn.wwl.design-governance
 metadata:
   title: Design governance
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Azure Architects design and recommend governance solutions.</span| </div|"
-  ms.date: 09/18/2023
+  description: "Azure Architects design and recommend governance solutions."
+  ms.date: 09/19/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
