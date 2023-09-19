@@ -847,6 +847,176 @@ achievements:
   title: Introduction to implementing lambda architecture for IoT solutions
   summary: Introduction to implementing lambda architecture for IoT solutions
   iconUrl: /training/achievements/iot/introduction-lambda-architecture-iot-solutions.svg
+- uid: learn.wwl.introduction-iot-solution-architecture.badge
+  type: badge
+  title: Examine the architecture of an IoT solution
+  summary: This module introduces you to the architecture, subsystems, and workflows of an Azure IoT solution.
+  iconUrl: /training/achievements/iot-architecture-solution.svg
+- uid: learn.wwl.examine-components-of-iot-solution.badge
+  type: badge
+  title: Examine the components of an IoT solution
+  summary: This module introduces you to the device hardware, device software, and Azure service options that are used within an Azure IoT solution.
+  iconUrl: /training/achievements/iot-components-of-solution.svg
+- uid: learn.wwl.explore-azure-portal.badge
+  type: badge
+  title: Explore the Azure portal
+  summary: This module introduces you to features of the Azure portal and provides you with experience configuring, navigating, and customizing the Azure portal UI.
+  iconUrl: /training/achievements/azure-portal-explore.svg
+- uid: learn.wwl.explore-azure-iot-services.badge
+  type: badge
+  title: Explore Azure IoT services
+  summary: This module introduces you to features of IoT Hub and IoT Hub Device Provisioning Service resources, and provides you with experience creating these services.
+  iconUrl: /training/achievements/iot-explore-services.svg
+- uid: learn.wwl.create-azure-iot-services-azure-portal.trophy
+  type: trophy
+  title: Create Azure IoT services in the Azure portal
+  summary: Learners will become familiar with the Azure portal to the Azure resources that are available for an IoT solution. Learners will step through the process of creating IoT Hub and Device Provisioning Service resources.
+  iconUrl: /training/achievements/azure-iot-azure-portal.svg
+- uid: learn.wwl.examine-iot-hub-properties.badge
+  type: badge
+  title: Examine IoT Hub properties
+  summary: This module introduces you to IoT Hub device communication features and capabilities that affect solution scaling, downstream service resources, and security.
+  iconUrl: /training/achievements/iot-hub-properties-examine.svg
+- uid: learn.wwl.examine-iot-device-lifecycle-concepts.badge
+  type: badge
+  title: Examine IoT device lifecycle concepts
+  summary: This module introduces you to the IoT device lifecycle, the concept of device twins, and the conditions under which devices may need to be retired.
+  iconUrl: /training/achievements/iot-lifecycle-concepts.svg
+- uid: learn.wwl.examine-iot-developer-tools.badge
+  type: badge
+  title: Examine the IoT developer tools
+  summary: This module introduces you to some of the coding tools that are used by developers to create apps and automate configuration tasks.
+  iconUrl: /training/achievements/iot-developer-tools.svg
+- uid: learn.wwl.explore-device-configuration-communication.badge
+  type: badge
+  title: Explore device configuration and communication
+  summary: This module introduces you to device communication options and tools, and provides you with experience implementing device-to-cloud communication using the Azure IoT SDK for devices.
+  iconUrl: /training/achievements/device-configuration-communication.svg
+- uid: learn.wwl.implement-iot-device-communication-by-using-azure-iot-sdks.trophy
+  type: trophy
+  title: Implement IoT device communication by using the Azure IoT SDKs
+  summary:  You will learn about the IoT Hub service properties and limitations, the IoT device lifecycle, Azure IoT developer tools, and then you will implement communication between an IoT device and IoT Hub.
+  iconUrl: /training/achievements/iot-device-communication.svg
+- uid: learn.wwl.examine-business-integration-for-iot-solutions.badge
+  type: badge
+  title: Examine business integration for IoT solutions
+  summary: This module introduces you to business integration goals for IoT solutions, the Azure services that are used to enable downstream message processing, and the configuration options for Azure Event Grid and Azure Logic Apps.
+  iconUrl: /training/achievements/iot-business-integration.svg
+- uid: learn.wwl.examine-azure-time-series-insights.badge
+  type: badge
+  title: Examine Azure Time Series Insights
+  summary: This module introduces you to the Azure Time Series Insights service, the capabilities that the service provides, how to configure Time Series Insights, and how to integrate Time Series Insights with IoT Hub.
+  iconUrl: /training/achievements/time-series-insights-examine.svg
+- uid: learn.wwl.examine-data-visualizations-power-bi.badge
+  type: badge
+  title: Examine data visualizations with Power BI
+  summary: This module introduces you to the capabilities of Microsoft Power BI, how Power BI can be connected to your IoT solution, and how Power BI can be used to develop and share insights.
+  iconUrl: /training/achievements/powerbi-examine-data-visualization.svg
+- uid: learn.wwl.explore-event-grid-integration.badge
+  type: badge
+  title: Explore Event Grid integration
+  summary: This module provides you with experience configuring a solution to use IoT Hub events and built-in Event Grid integration to trigger downstream business processes and deliver event-based notifications using Logic Apps.
+  iconUrl: /training/achievements/event-grid-integration.svg
+- uid: learn.wwl.explore-time-series-insights-integration.badge
+  type: badge
+  title: Explore Time Series Insights integration
+  summary: This module provides you with experience configuring the IoT Hub built-in endpoint for use with Time Series Insights and using Time Series Insights to view and analyze time series data.
+  iconUrl: /training/achievements/time-series-insights-integration.svg
+- uid: learn.wwl.develop-data-insights-business-integrations.trophy
+  type: trophy
+  title: Develop data insights and business integrations
+  summary: You will learn about the tools and services that can be used to develop data insights and implement business integration, including Azure Event Grid, Azure Logic Apps, and Azure Time Series Insights.
+  iconUrl: /training/achievements/data-insights-business-integration.svg
+- uid: learn.wwl.examine-azure-iot-edge-environment.badge
+  type: badge
+  title: Examine the Azure IoT Edge environment
+  summary: This module introduces you to Azure IoT Edge and the benefits of bringing cloud-compute capabilities to the device, the IoT Edge runtime modules and module twin properties, and IoT Edge security manager implementation.
+  iconUrl: /training/achievements/iot-edge-environment.svg
+- uid: learn.wwl.examine-iot-edge-device-deployment.badge
+  type: badge
+  title: Examine IoT Edge device deployment
+  summary: This module introduces you to IoT Edge device deployment concepts, the IoT Edge deployment manifest, and other considerations when preparing for IoT Edge device deployments.
+  iconUrl: /training/achievements/iot-edge-device-deployment.svg
+- uid: learn.wwl.examine-iot-edge-gateway-device-configuration.badge
+  type: badge
+  title: Examine IoT Edge gateway device configuration
+  summary: This module introduces you to the IoT Edge device gateway patterns, configuring support for downstream devices and device authentication, and details for configuring a transparent gateway device that has child devices.
+  iconUrl: /training/achievements/iot-edge-device-gateway-configuration.svg
+- uid: learn.wwl.explore-iot-edge-module-deployment.badge
+  type: badge
+  title: Explore IoT Edge module deployment
+  summary: This module provides you with experience deploying, configuring, and running IoT Edge devices and IoT Edge modules in a test environment.
+  iconUrl: /training/achievements/iot-edge-module-development.svg
+- uid: learn.wwl.explore-iot-edge-gateway-configuration.badge
+  type: badge
+  title: Explore IoT Edge gateway configuration
+  summary: This module provides you with experience deploying IoT Edge devices, configuring IoT Edge devices as gateway and downstream child devices, and communicating child device messages to IoT Hub using the gateway device.
+  iconUrl: /training/achievements/iot-edge-gateway-configuration.svg
+- uid: learn.wwl.deploy-azure-iot-edge-devices-modules.trophy
+  type: trophy
+  title: Deploy Azure IoT Edge devices and modules
+  summary:   You will learn about the benefits provided by Azure IoT Edge, the IoT Edge runtime environment, IoT Edge device deployments, and IoT Edge gateway device patterns and capabilities.
+  iconUrl: /training/achievements/iot-edge-deploy-devices-modules.svg
+- uid: learn.wwl.examine-iot-edge-module-development.badge
+  type: badge
+  title: Examine IoT Edge module development
+  summary: This module introduces you to IoT Edge runtime environment configuration and programming tasks, and the tools and processes that are used to develop custom IoT Edge modules.
+  iconUrl: /training/achievements/iot-edge-module-development.svg
+- uid: learn.wwl.examine-offline-local-storage-capabilities.badge
+  type: badge
+  title: Examine offline and local storage capabilities
+  summary: This module introduces you to IoT Edge support for extend offline scenarios, local storage on IoT Edge devices, and the process for configuring an IoT device to access to local storage.
+  iconUrl: /training/achievements/storage-capabilities-offline-local.svg
+- uid: learn.wwl.explore-custom-module-development-for-iot-edge.badge
+  type: badge
+  title: Explore custom module development for IoT Edge
+  summary: This module provides you with experience configuring the IoT Edge runtime environment and container registry, developing and debugging a custom IoT Edge module, and publishing a module to the Azure Container Registry.
+  iconUrl: /training/achievements/iot-edge-custom-module-development.svg
+- uid: learn.wwl.explore-iot-edge-offline-support.badge
+  type: badge
+  title: Explore IoT Edge offline support
+  summary: This module provides you with experience implementing an extended offline scenario for IoT Edge devices that includes local storage, and using a gateway device to retain child device messages until the devices are back online.
+  iconUrl: /training/achievements/iot-edge-offline-support.svg
+- uid: learn.wwl.develop-deploy-custom-iot-edge-modules.trophy
+  type: trophy
+  title: Develop and deploy custom IoT Edge modules
+  summary: You will learn about programming for the IoT Edge runtime environment, the tools and processes that are used to develop custom IoT Edge modules, and the support that IoT Edge provides for extended offline scenarios.
+  iconUrl: /training/achievements/iot-edge-deploy-custom-modules.svg
+- uid: learn.wwl.examine-components-of-azure-digital-twins-solution.badge
+  type: badge
+  title: Examine the components of an Azure Digital Twins solution
+  summary: This module introduces you to the Azure Digital Twins service, the features and capabilities that the service provides, and the component elements that are used to build an Azure Digital Twins environment.
+  iconUrl: /training/achievements/digital-twins-component-solution.svg
+- uid: learn.wwl.examine-azure-digital-twins-solution-development-tools-processes.badge
+  type: badge
+  title: Examine the Azure Digital Twins solution development tools and processes
+  summary: This module introduces you to configuring the Azure Digital Twins service and access accounts, and examines the tools and processes used to configure, build, and manage an Azure Digital Twins solution.
+  iconUrl: /training/achievements/azure-digital-twins-solution-development.svg
+- uid: learn.wwl.monitor-troubleshoot-adt.badge
+  type: badge
+  title: Monitor and troubleshoot ADT
+  summary: This module introduces you to the Azure services and tools that can be used to monitor and troubleshoot an Azure Digital Twins solution.
+  iconUrl: /training/achievements/adt-monitor-troubleshoot.svg
+- uid: learn.wwl.explore-azure-digital-twins-implementation.badge
+  type: badge
+  title: Explore Azure Digital Twins implementation
+  summary: This module provides you with experience configuring and managing an Azure Digital Twins solution, querying the Azure Digital Twins graph, and implementing support for upstream and downstream services.
+  iconUrl: /training/achievements/digital-twins-implementation.svg
+- uid: learn.wwl.extend-iot-solutions-by-using-azure-digital-twins.trophy
+  type: trophy
+  title: Extend IoT solutions by using Azure Digital Twins
+  summary: You will learn about the features and capabilities of Azure Digital Twins service, how to configure, build, and manage an Azure Digital Twins environment, and how to integrate IoT and Azure Digital Twins solutions.
+  iconUrl: /training/achievements/iot-solutions-digital-twins.svg
+- uid: learn.wwl.explore-individual-enrollment-tasks.badge
+  type: badge
+  title: Explore individual enrollment tasks
+  summary: Experience implementing an individual enrollment using symmetric keys, using code that accesses device twin properties to initialize a device, and a deprovisioning process that disenrolls and deregisters a device.
+  iconUrl: /training/achievements/enrollment-individual-task.svg
+- uid: learn.wwl.explore-iot-hub-automatic-device-management
+  type: badge
+  title: Explore IoT Hub automatic device management
+  summary: This module provides you with experience using Azure IoT Hub automatic device management to target a set of devices based on their properties, define a desired configuration, and then update the devices.
+  iconUrl: /training/achievements/iot-hub-automatic-device-management.svg
 - uid: learn.languages.python-first-steps.trophy
   type: trophy
   title: Take your first steps with Python
@@ -2227,174 +2397,4 @@ achievements:
   title: Monitor models with Azure Machine Learning
   summary: After a machine learning model has been deployed into production, it's important to understand how it is being used by capturing and viewing telemetry.
   iconUrl: /training/achievements/monitor-models-with-azure-machine-learning.svg
-- uid: learn.wwl.introduction-iot-solution-architecture.badge
-  type: badge
-  title: Examine the architecture of an IoT solution
-  summary: This module introduces you to the architecture, subsystems, and workflows of an Azure IoT solution.
-  iconUrl: /training/achievements/iot-architecture-solution.svg
-- uid: learn.wwl.examine-components-of-iot-solution.badge
-  type: badge
-  title: Examine the components of an IoT solution
-  summary: This module introduces you to the device hardware, device software, and Azure service options that are used within an Azure IoT solution.
-  iconUrl: /training/achievements/iot-components-of-solution.svg
-- uid: learn.wwl.explore-azure-portal.badge
-  type: badge
-  title: Explore the Azure portal
-  summary: This module introduces you to features of the Azure portal and provides you with experience configuring, navigating, and customizing the Azure portal UI.
-  iconUrl: /training/achievements/azure-portal-explore.svg
-- uid: learn.wwl.explore-azure-iot-services.badge
-  type: badge
-  title: Explore Azure IoT services
-  summary: This module introduces you to features of IoT Hub and IoT Hub Device Provisioning Service resources, and provides you with experience creating these services.
-  iconUrl: /training/achievements/iot-explore-services.svg
-- uid: learn.wwl.create-azure-iot-services-azure-portal.trophy
-  type: trophy
-  title: Create Azure IoT services in the Azure portal
-  summary: Learners will become familiar with the Azure portal to the Azure resources that are available for an IoT solution. Learners will step through the process of creating IoT Hub and Device Provisioning Service resources.
-  iconUrl: /training/achievements/azure-iot-azure-portal.svg
-- uid: learn.wwl.examine-iot-hub-properties.badge
-  type: badge
-  title: Examine IoT Hub properties
-  summary: This module introduces you to IoT Hub device communication features and capabilities that affect solution scaling, downstream service resources, and security.
-  iconUrl: /training/achievements/iot-hub-properties-examine.svg
-- uid: learn.wwl.examine-iot-device-lifecycle-concepts.badge
-  type: badge
-  title: Examine IoT device lifecycle concepts
-  summary: This module introduces you to the IoT device lifecycle, the concept of device twins, and the conditions under which devices may need to be retired.
-  iconUrl: /training/achievements/iot-lifecycle-concepts.svg
-- uid: learn.wwl.examine-iot-developer-tools.badge
-  type: badge
-  title: Examine the IoT developer tools
-  summary: This module introduces you to some of the coding tools that are used by developers to create apps and automate configuration tasks.
-  iconUrl: /training/achievements/iot-developer-tools.svg
-- uid: learn.wwl.explore-device-configuration-communication.badge
-  type: badge
-  title: Explore device configuration and communication
-  summary: This module introduces you to device communication options and tools, and provides you with experience implementing device-to-cloud communication using the Azure IoT SDK for devices.
-  iconUrl: /training/achievements/device-configuration-communication.svg
-- uid: learn.wwl.implement-iot-device-communication-by-using-azure-iot-sdks.trophy
-  type: trophy
-  title: Implement IoT device communication by using the Azure IoT SDKs
-  summary:  You will learn about the IoT Hub service properties and limitations, the IoT device lifecycle, Azure IoT developer tools, and then you will implement communication between an IoT device and IoT Hub.
-  iconUrl: /training/achievements/iot-device-communication.svg
-- uid: learn.wwl.examine-business-integration-for-iot-solutions.badge
-  type: badge
-  title: Examine business integration for IoT solutions
-  summary: This module introduces you to business integration goals for IoT solutions, the Azure services that are used to enable downstream message processing, and the configuration options for Azure Event Grid and Azure Logic Apps.
-  iconUrl: /training/achievements/iot-business-integration.svg
-- uid: learn.wwl.examine-azure-time-series-insights.badge
-  type: badge
-  title: Examine Azure Time Series Insights
-  summary: This module introduces you to the Azure Time Series Insights service, the capabilities that the service provides, how to configure Time Series Insights, and how to integrate Time Series Insights with IoT Hub.
-  iconUrl: /training/achievements/time-series-insights-examine.svg
-- uid: learn.wwl.examine-data-visualizations-power-bi.badge
-  type: badge
-  title: Examine data visualizations with Power BI
-  summary: This module introduces you to the capabilities of Microsoft Power BI, how Power BI can be connected to your IoT solution, and how Power BI can be used to develop and share insights.
-  iconUrl: /training/achievements/powerbi-examine-data-visualization.svg
-- uid: learn.wwl.explore-event-grid-integration.badge
-  type: badge
-  title: Explore Event Grid integration
-  summary: This module provides you with experience configuring a solution to use IoT Hub events and built-in Event Grid integration to trigger downstream business processes and deliver event-based notifications using Logic Apps.
-  iconUrl: /training/achievements/event-grid-integration.svg
-- uid: learn.wwl.explore-time-series-insights-integration.badge
-  type: badge
-  title: Explore Time Series Insights integration
-  summary: This module provides you with experience configuring the IoT Hub built-in endpoint for use with Time Series Insights and using Time Series Insights to view and analyze time series data.
-  iconUrl: /training/achievements/time-series-insights-integration.svg
-- uid: learn.wwl.develop-data-insights-business-integrations.trophy
-  type: trophy
-  title: Develop data insights and business integrations
-  summary: You will learn about the tools and services that can be used to develop data insights and implement business integration, including Azure Event Grid, Azure Logic Apps, and Azure Time Series Insights.
-  iconUrl: /training/achievements/data-insights-business-integration.svg
-- uid: learn.wwl.examine-azure-iot-edge-environment.badge
-  type: badge
-  title: Examine the Azure IoT Edge environment
-  summary: This module introduces you to Azure IoT Edge and the benefits of bringing cloud-compute capabilities to the device, the IoT Edge runtime modules and module twin properties, and IoT Edge security manager implementation.
-  iconUrl: /training/achievements/iot-edge-environment.svg
-- uid: learn.wwl.examine-iot-edge-device-deployment.badge
-  type: badge
-  title: Examine IoT Edge device deployment
-  summary: This module introduces you to IoT Edge device deployment concepts, the IoT Edge deployment manifest, and other considerations when preparing for IoT Edge device deployments.
-  iconUrl: /training/achievements/iot-edge-device-deployment.svg
-- uid: learn.wwl.examine-iot-edge-gateway-device-configuration.badge
-  type: badge
-  title: Examine IoT Edge gateway device configuration
-  summary: This module introduces you to the IoT Edge device gateway patterns, configuring support for downstream devices and device authentication, and details for configuring a transparent gateway device that has child devices.
-  iconUrl: /training/achievements/iot-edge-device-gateway-configuration.svg
-- uid: learn.wwl.explore-iot-edge-module-deployment.badge
-  type: badge
-  title: Explore IoT Edge module deployment
-  summary: This module provides you with experience deploying, configuring, and running IoT Edge devices and IoT Edge modules in a test environment.
-  iconUrl: /training/achievements/iot-edge-module-development.svg
-- uid: learn.wwl.explore-iot-edge-gateway-configuration.badge
-  type: badge
-  title: Explore IoT Edge gateway configuration
-  summary: This module provides you with experience deploying IoT Edge devices, configuring IoT Edge devices as gateway and downstream child devices, and communicating child device messages to IoT Hub using the gateway device.
-  iconUrl: /training/achievements/iot-edge-gateway-configuration.svg
-- uid: learn.wwl.deploy-azure-iot-edge-devices-modules.trophy
-  type: trophy
-  title: Deploy Azure IoT Edge devices and modules
-  summary:   You will learn about the benefits provided by Azure IoT Edge, the IoT Edge runtime environment, IoT Edge device deployments, and IoT Edge gateway device patterns and capabilities.
-  iconUrl: /training/achievements/iot-edge-deploy-devices-modules.svg
-- uid: learn.wwl.examine-iot-edge-module-development.badge
-  type: badge
-  title: Examine IoT Edge module development
-  summary: This module introduces you to IoT Edge runtime environment configuration and programming tasks, and the tools and processes that are used to develop custom IoT Edge modules.
-  iconUrl: /training/achievements/iot-edge-module-development.svg
-- uid: learn.wwl.examine-offline-local-storage-capabilities.badge
-  type: badge
-  title: Examine offline and local storage capabilities
-  summary: This module introduces you to IoT Edge support for extend offline scenarios, local storage on IoT Edge devices, and the process for configuring an IoT device to access to local storage.
-  iconUrl: /training/achievements/storage-capabilities-offline-local.svg
-- uid: learn.wwl.explore-custom-module-development-for-iot-edge.badge
-  type: badge
-  title: Explore custom module development for IoT Edge
-  summary: This module provides you with experience configuring the IoT Edge runtime environment and container registry, developing and debugging a custom IoT Edge module, and publishing a module to the Azure Container Registry.
-  iconUrl: /training/achievements/iot-edge-custom-module-development.svg
-- uid: learn.wwl.explore-iot-edge-offline-support.badge
-  type: badge
-  title: Explore IoT Edge offline support
-  summary: This module provides you with experience implementing an extended offline scenario for IoT Edge devices that includes local storage, and using a gateway device to retain child device messages until the devices are back online.
-  iconUrl: /training/achievements/iot-edge-offline-support.svg
-- uid: learn.wwl.develop-deploy-custom-iot-edge-modules.trophy
-  type: trophy
-  title: Develop and deploy custom IoT Edge modules
-  summary: You will learn about programming for the IoT Edge runtime environment, the tools and processes that are used to develop custom IoT Edge modules, and the support that IoT Edge provides for extended offline scenarios.
-  iconUrl: /training/achievements/iot-edge-deploy-custom-modules.svg
-- uid: learn.wwl.examine-components-of-azure-digital-twins-solution.badge
-  type: badge
-  title: Examine the components of an Azure Digital Twins solution
-  summary: This module introduces you to the Azure Digital Twins service, the features and capabilities that the service provides, and the component elements that are used to build an Azure Digital Twins environment.
-  iconUrl: /training/achievements/digital-twins-component-solution.svg
-- uid: learn.wwl.examine-azure-digital-twins-solution-development-tools-processes.badge
-  type: badge
-  title: Examine the Azure Digital Twins solution development tools and processes
-  summary: This module introduces you to configuring the Azure Digital Twins service and access accounts, and examines the tools and processes used to configure, build, and manage an Azure Digital Twins solution.
-  iconUrl: /training/achievements/azure-digital-twins-solution-development.svg
-- uid: learn.wwl.monitor-troubleshoot-adt.badge
-  type: badge
-  title: Monitor and troubleshoot ADT
-  summary: This module introduces you to the Azure services and tools that can be used to monitor and troubleshoot an Azure Digital Twins solution.
-  iconUrl: /training/achievements/adt-monitor-troubleshoot.svg
-- uid: learn.wwl.explore-azure-digital-twins-implementation.badge
-  type: badge
-  title: Explore Azure Digital Twins implementation
-  summary: This module provides you with experience configuring and managing an Azure Digital Twins solution, querying the Azure Digital Twins graph, and implementing support for upstream and downstream services.
-  iconUrl: /training/achievements/digital-twins-implementation.svg
-- uid: learn.wwl.extend-iot-solutions-by-using-azure-digital-twins.trophy
-  type: trophy
-  title: Extend IoT solutions by using Azure Digital Twins
-  summary: You will learn about the features and capabilities of Azure Digital Twins service, how to configure, build, and manage an Azure Digital Twins environment, and how to integrate IoT and Azure Digital Twins solutions.
-  iconUrl: /training/achievements/iot-solutions-digital-twins.svg
-- uid: learn.wwl.explore-individual-enrollment-tasks.badge
-  type: badge
-  title: Explore individual enrollment tasks
-  summary: Experience implementing an individual enrollment using symmetric keys, using code that accesses device twin properties to initialize a device, and a deprovisioning process that disenrolls and deregisters a device.
-  iconUrl: /training/achievements/enrollment-individual-task.svg
-- uid: learn.wwl.explore-iot-hub-automatic-device-management
-  type: badge
-  title: Explore IoT Hub automatic device management
-  summary: This module provides you with experience using Azure IoT Hub automatic device management to target a set of devices based on their properties, define a desired configuration, and then update the devices.
-  iconUrl: /training/achievements/iot-hub-automatic-device-management.svg
   
