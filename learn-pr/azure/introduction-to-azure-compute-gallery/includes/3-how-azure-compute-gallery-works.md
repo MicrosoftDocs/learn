@@ -6,7 +6,7 @@ Azure Compute Gallery allows you to specify the number of replicas you want to k
 
 With Azure Compute Gallery, you can deploy up to a 1,000 VM instances in a scale set. You can set a different replica count in each target region, based on the scale needs for the region. Since each replica is a copy of your resource, this helps scale your deployments linearly with each extra replica.
 
-![Graphic showing how images can be scaled.](../media/3-compute-gallery-scaling.png)
+![Diagram showing how images can be scaled.](../media/3-compute-gallery-scaling.png)
 
 ## High availability
 
@@ -17,8 +17,6 @@ Azure Compute Gallery uses Azure Zone Redundant Storage, which provides resilien
 Azure Compute Gallery allows you to replicate your resources to other Azure regions automatically. Each image version can be replicated to different regions depending on what makes sense for your organization.
 
 The regions that a resource is replicated to can be updated after creation time. The time it takes to replicate to different regions depends on the amount of data being copied and the number of regions the version is replicated to. While the replication is happening, you can view the status of replication per region. Once the image replication is complete in a region, you can then deploy a VM or scale-set using that resource in the region.
-
-![Graphic showing how images can be replicated.](../media/3-compute-gallery-replication.png)
 
 ## Sharing
 
