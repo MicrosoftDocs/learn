@@ -2,7 +2,7 @@ Now that you know a bit about how Azure Compute Gallery works, let's discuss whe
 
 Azure Compute Gallery should be used when you have a large number of virtual machine images or applications that you need to maintain and make available throughout your organization. In this scenario, you can use Azure Compute Gallery as a repository.
 
-| | Consideration |
+| Feature | Consideration |
 | --- | --- |
 | **Support for virtual machine images** | Do you need to store, manage, or share large numbers of custom virtual machine images? Azure Compute Gallery can serve as your image repository, and you can control access to your images. |
 | **Support for virtual machine applications** | Do you rely on pre-installing your virtual machine applications on the images? You can use Azure Compute Gallery to separate your application installation from your images. |
