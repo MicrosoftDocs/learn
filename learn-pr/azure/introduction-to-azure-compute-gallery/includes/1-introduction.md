@@ -5,7 +5,7 @@ Managing all of the images has become burdensome and there have been a few times
 ### Prerequisites
 
 - Experience with Azure virtual machines, such as deploying and managing virtual machine resources.
-- Experience with imaging technologies uch as ghost and managed images.
+- Experience with imaging technologies such as ghost and managed images.
 
 ### Learning Objectives
 
