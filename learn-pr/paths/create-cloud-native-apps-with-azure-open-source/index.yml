@@ -39,7 +39,6 @@ products:
 - github
 - azure-database-postgresql
 - azure-monitor
-- azure-application-insights
 - azure-active-directory
 subjects:
 - cloud-computing

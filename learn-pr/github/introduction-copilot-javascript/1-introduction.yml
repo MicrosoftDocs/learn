@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.github-copilot-with-javascript.introduction
+title: |
+  Introduction
+metadata:
+  title: |
+    Introduction
+  description: "GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code in JavaScript. You can receive suggestions from GitHub Copilot in JavaScript either by starting to write the code you want to use, or by writing a natural language comment describing what you want the code to do."
+  ms.date: 8/23/2023
+  author: abrilurena
+  ms.author: abrilu
+  ms.topic: interactive-tutorial
+  ms.prod: github
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,9 +1,3 @@
-
-
-
-
-
-
 The C# debugger for Visual Studio Code supports the option to configure a breakpoint that only triggers if a condition is met. This type of breakpoint is called a conditional breakpoint. Conditional breakpoints can be configured directly or by editing an existing breakpoint.
 
 > [!NOTE]
