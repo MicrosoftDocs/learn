@@ -1,4 +1,3 @@
-
 Azure Active Directory (Azure AD) provides several ways to manage access to resources, applications, and tasks. With Azure AD groups, you can grant access and permissions to a group of users instead of each individual user. Limiting access to Azure AD resources to only those users who need access is one of the core security principles of Zero Trust.
 
 Azure AD lets you use groups to manage access to applications, data, and resources. Resources can be:

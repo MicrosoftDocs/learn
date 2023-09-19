@@ -1,5 +1,3 @@
-
-
 Windows Autopilot supports several deployment scenarios depending on the desired experience:
 
  -  Windows Autopilot user-driven mode
@@ -100,7 +98,7 @@ Pre-provisioned deployment requires Windows 1903 or later and an Intune subscrip
 > [!TIP]
 > The advantage of pre-provisioned deployment enables an administrator to install the bulk of applications, which are machine targeted, leaving only applications specific to the user onboarding to complete the process. This can drastically reduce the time to provision the device and improve the user experience.
 
-For more information on pre-provisioned deployment s, refer to [Windows Autopilot for Pre-provisioned deployment](https://aka.ms/AA6dcx6).
+For more information on pre-provisioned deployment, refer to [Windows Autopilot for Pre-provisioned deployment](https://aka.ms/AA6dcx6).
 
 ### Windows Autopilot Reset
 

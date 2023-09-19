@@ -3,11 +3,11 @@ uid: learn.wwl.create-throw-exceptions-c-sharp
 metadata:
   title: Create and throw exceptions in C# console applications
   description: "This module explores the process for creating, throwing, and catching customized exceptions in a C# console application. Hands-on activities provide experience customizing exception properties, throwing exceptions, and using the exception properties to mitigate the exception within a catch block."
-  ms.date: 05/04/2023
+  ms.date: 09/15/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Create and throw exceptions in C# console applications
 summary: Learn how to create exception objects, how to customize the properties of an exception object, and the process for creating, throwing, and catching custom exception objects in a C# application.
 abstract: |
@@ -19,7 +19,7 @@ prerequisites: |
   - Experience developing C# console applications that implement business logic.
   - Experience developing C# console applications that implement custom methods.
   - Experience debugging C# console application and implementing `try-catch` exception handing.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/create-throw-exceptions-c-sharp.svg
 levels:
 - beginner
 roles:

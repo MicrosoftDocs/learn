@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/22/2023
+  ms.date: 09/15/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -25,17 +25,17 @@ quiz:
     - content: "Entity detection"
       isCorrect: false
       explanation: "Incorrect. Entity detection identifies specific types of entity in the document, not the main talking points."
-  - content: "You use Azure AI Language to perform sentiment analysis on a document, and a score of 0.99 is returned. What does this score indicate about the document sentiment?"
+  - content: "You use Azure AI Language to perform sentiment analysis on a sentence. The confidence scores .04 positive, .36 neutral, and .6 negative are returned. What do these confidence scores indicate about the sentence sentiment?"
     choices:
     - content: "The document is positive."
-      isCorrect: true
-      explanation: "Correct. Score values closer to 1 indicated a more positive sentiment where scores closer to 0 indicated negative sentiment."
+      isCorrect: false
+      explanation: "Incorrect. The sentiment is most likely the type with the highest confidence score."
     - content: "The document is neutral."
       isCorrect: false
-      explanation: "Incorrect. A neutral document would score around 0.5."
+      explanation: "Incorrect. The sentiment is most likely the type with the highest confidence score."
     - content: "The document is negative."
-      isCorrect: false
-      explanation: "Incorrect. Score values closer to 1 indicated a more positive sentiment where scores closer to 0 indicated negative sentiment."
+      isCorrect: true
+      explanation: "Correct. The sentiment is most likely the type with the highest confidence score, in this case .6 negative."
   - content: "When might you see **NaN** returned for a score in language detection?"
     choices:
     - content: "When the score calculated by the service is outside the range of 0 to 1"
