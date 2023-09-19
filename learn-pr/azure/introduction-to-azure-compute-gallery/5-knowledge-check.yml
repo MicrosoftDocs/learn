@@ -20,7 +20,7 @@ quiz:
     - content: The main goal of Azure Compute Gallery is to share custom images with your organization and the Azure community.
       isCorrect: false
       explanation: "Incorrect: While Azure Compute Gallery enables you to share your images, it offers other management capabilities in service of its goal."
-    - content: The main goal of Azure Compute Gallery is to help you build structure and organization around your Azure virtual machine reources.
+    - content: The main goal of Azure Compute Gallery is to help you build structure and organization around your Azure virtual machine resources.
       isCorrect: true
       explanation: "Correct: Azure Compute Gallery is meant to help you simplify the storage and management of large numbers of custom virtual machine images and applications."
     - content: The main goal of Azure Compute Gallery is to enable customers to automatically create replicas of their virtual machine resources in other Azure regions.
