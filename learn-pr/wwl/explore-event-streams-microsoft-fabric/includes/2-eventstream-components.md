@@ -16,10 +16,10 @@ Microsoft Fabric Eventstream is a feature that lets you work with real-time even
 
 The main components of Microsoft Fabric Eventstream are:
 
-* **Eventstream** : This is what you create in the portal to set up your event data flow. It has a name, a sensitivity level, and an endorsement status.
-* **Source** : This is where your event data comes from. You can pick Azure Event Hubs, sample data, or custom app as your source type. You can also choose the data format and the consumer group of your source.
-* **Destination** : This is where your event data goes to. You can pick KQL database or lakehouse as your destination type. You can also give the table name and the schema mapping of your destination.
-* **Main editor** : This is the place where you can add and manage your sources and destinations. You can also see the event data, check the data insights, and view logs for each source or destination. Each source or destination shows up as a tile (node) in the place.
+* **Eventstream**: This is what you create in the portal to set up your event data flow. It has a name, a sensitivity level, and an endorsement status.
+* **Source**: This is where your event data comes from. You can pick Azure Event Hubs, sample data, or custom app as your source type. You can also choose the data format and the consumer group of your source.
+* **Destination**: This is where your event data goes to. You can pick KQL database or lakehouse as your destination type. You can also give the table name and the schema mapping of your destination.
+* **Main editor**: This is the place where you can add and manage your sources and destinations. You can also see the event data, check the data insights, and view logs for each source or destination. Each source or destination shows up as a tile (node) in the place.
 
  [ ![Screenshot of main editor with components.](../media/eventstream-components-from-main-editor.png)](../media/eventstream-components-from-main-editor.png)
 
