@@ -4,7 +4,7 @@ Your custom images can be created from a virtual machine, virtual hard disk, sna
 
 With a gallery, you can share your resources to everyone, or limit sharing to different users, service principals, or AD groups within your organization. Resources can be replicated to multiple regions, for quicker scaling of your deployments.
 
-The main goal of Azure Compute Gallery is to help you build structure and organization around your Azure virtual machine reources.
+The main goal of Azure Compute Gallery is to help you build structure and organization around your Azure virtual machine resources.
 
 ## Key features of Azure Compute Gallery
 
