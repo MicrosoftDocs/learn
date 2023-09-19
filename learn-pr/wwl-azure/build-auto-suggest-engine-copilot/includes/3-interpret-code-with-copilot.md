@@ -66,23 +66,23 @@ You can use Copilot to autocomplete code comments which can help you better unde
 
 1. Continue with this pattern to add comments to the rest of the code in the `Insert` method.
 
-    ![Copilot autocompletes comments for the code](../media/CopilotCommentSuggestions.png)
+    ![Copilot autocompletes comments for the code.](../media/copilot-comment-suggestions.png)
 
 ## Add code comments using Copilot Chat
 
 Copilot Chat can add comments for multiple lines of code, which is helpful when you want to add comments to a large block of code.
 
-1. Navigate to **Program.cs**
+1. Navigate to **Program.cs**.
 
-1. Select the `InitializeTrie` method code and right-click the selection
+1. Select the `InitializeTrie` method code and right-click the selection.
 
-1. Under **Copilot**, click **Start Code Chat**
+1. Under **Copilot**, click **Start Code Chat**.
 
-1. Enter the text "Insert comments to explain this code line by line"
+1. Enter the text "Insert comments to explain this code line by line".
 
     Copilot Chat should suggest comments for each line of code in the selection.
 
-    ![Copilot Chat suggests comments for each line of code in the selection](../media/InsertCommentsExample.png)
+    ![Copilot Chat suggests comments for each line of code in the selection.](../media/insert-comments-example.png)
 
 1. Click **Accept**
 

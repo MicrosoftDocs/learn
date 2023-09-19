@@ -69,10 +69,10 @@ Sometimes Copilot might not suggest the exact code you need. You can use more sp
 
     The code generated should perform the following tasks:
 
-    1. Determine if the word to be deleted exists in the trie
-    1. Update `IsEndOfWord` of the last node in the word
-    1. Verify that the nodes not part of another word before deleting them
-    1. Return true if the word was deleted, otherwise return false
+    1. Determine if the word to be deleted exists in the trie.
+    1. Update `IsEndOfWord` of the last node in the word.
+    1. Verify that the nodes not part of another word before deleting them.
+    1. Return true if the word was deleted, otherwise return false.
 
     ```c#
     private bool _delete(TrieNode root, string word, int index)

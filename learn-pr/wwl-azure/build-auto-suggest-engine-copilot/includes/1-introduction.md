@@ -5,7 +5,7 @@ The Trie data structure is a tree-based data structure used for storing and sear
 
 The key characteristic of a Trie is that each node in the tree represents a single character of a string. The root node represents an empty string, and each path from the root to a leaf node represents a complete word or string. Each node can have multiple children nodes, one for each possible character in the input alphabet. The following image is an example of a Trie containing the words `cat`, `clap`, `can`, `cats`, `cap`, `band`, and `banana`:
 
-[visual representation of a Trie](../media/treegraphic.png)
+[visual representation of a Trie.](../media/tree-graphic.png)
 
 This module guides you through an existing Trie project, and helps you learn to use GitHub Copilot to interpret, debug, and extend the project code. By the end of this module, your Trie project is able to insert, search, and delete words from the data structure.
 
@@ -21,13 +21,13 @@ This module guides you through an existing Trie project, and helps you learn to 
 ## Learning objectives
 
 In this module, you practice: 
-- Interpreting code with Copilot
-- Authoring code with Copilot
-- Debugging and testing with Copilot
+- Interpreting code with Copilot.
+- Authoring code with Copilot.
+- Debugging and testing with Copilot.
 
 ## Prerequisites 
-- Visual Studio Code
-- GitHub Copilot extension
-- GitHub Copilot Chat extension
-- Basic understanding of the C# programming language
-- Familiarity with classes, methods, variables, and logic statements
+- Visual Studio Code.
+- GitHub Copilot extension.
+- GitHub Copilot Chat extension.
+- Basic understanding of the C# programming language.
+- Familiarity with classes, methods, variables, and logic statements.
