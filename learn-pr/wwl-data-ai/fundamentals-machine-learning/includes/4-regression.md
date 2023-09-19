@@ -17,7 +17,7 @@ Let's explore regression with a simplified example in which we'll train a model 
 
 For our example, let's stick with the ice cream sales scenario we discussed previously. For our feature, we'll consider the *temperature* (let's assume the value is the maximum temperature on a given day), and the label we want to train a model to predict is the number of ice creams sold that day. We'll start with some historic data that includes records of daily temperatures (***x***) and ice cream sales (***y***):
 
-|![Diagram of a thermometer.](../media/temperature.png)|![A diagram of a ice creams.](../media/ice-creams.png)|
+|![Diagram of a thermometer.](../media/temperature.png)|![Diagram of a ice creams.](../media/ice-creams.png)|
 |---|---|
 |**Temperature (x)** | **Ice cream sales (y)**|
 |51|1|
@@ -114,7 +114,7 @@ In our ice cream example, the mean of the squared absolute values (which are 4, 
 
 The mean squared error helps take the magnitude of errors into account, but because it *squares* the error values, the resulting metric no longer represents the quantity measured by the label. In other words, we can say that the MSE of our model is 6, but that doesn't measure its accuracy in terms of the number of ice creams that were mispredicted; 6 is just a numeric score that indicates the level of error in the validation predictions.
 
-If we want to measure the error in terms of the number of ice creams, we need to calculate the *square root* of the MSE; which produces a metric called, unsuprisingly, **Root Mean Squared Error**. In this case &#8730;6, which is **2.45** (ice creams).
+If we want to measure the error in terms of the number of ice creams, we need to calculate the *square root* of the MSE; which produces a metric called, unsurprisingly, **Root Mean Squared Error**. In this case &#8730;6, which is **2.45** (ice creams).
 
 #### Coefficient of determination (R<sup>2</sup>)
 

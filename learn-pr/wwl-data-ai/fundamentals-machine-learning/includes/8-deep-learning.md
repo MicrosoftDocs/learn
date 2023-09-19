@@ -2,7 +2,7 @@
 
 | Biological neural network | Artificial neural network |
 |-|-|
-|![Diagram of a natural neural network.](../media/biological-neural-network.png)|![A diagram of an artificial neural network.](../media/artificial-neural-network.png)|
+|![Diagram of a natural neural network.](../media/biological-neural-network.png)|![Diagram of an artificial neural network.](../media/artificial-neural-network.png)|
 | Neurons fire in response to electrochemical stimuli. When fired, the signal is passed to connected neurons.| Each neuron is a function that operates on an input value (***x***) and a *weight* (***w***). The function is wrapped in an *activation* function that determines whether to pass the output on.|
 
 Artificial neural networks are made up of multiple *layers* of neurons - essentially defining a deeply nested function. This architecture is the reason the technique is referred to as *deep learning* and the models produced by it are often referred to as *deep neural networks* (DNNs). You can use deep neural networks for many kinds of machine learning problem, including regression and classification, as well as more specialized models for natural language processing and computer vision.

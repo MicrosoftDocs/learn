@@ -11,9 +11,9 @@ Let's explore an example in which we have some observations of penguins, in whic
 - 2: Chinstrap
 
 > [!NOTE]
-> As with previous examples in this module, a real scenario would include multiple feature (***x***) values. We'll use a single feature ito keep things simple.
+> As with previous examples in this module, a real scenario would include multiple feature (***x***) values. We'll use a single feature to keep things simple.
 
-|![Diagram of a measuring ruler.](../media/ruler.png)|![A diagram of three penguins.](../media/penguins.png)|
+|![Diagram of a measuring ruler.](../media/ruler.png)|![Diagram of three penguins.](../media/penguins.png)|
 |---|---|
 |**Flipper length (x)** | **Species (y)**|
 |167|0|

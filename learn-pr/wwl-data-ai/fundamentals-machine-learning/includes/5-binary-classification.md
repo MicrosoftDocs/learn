@@ -6,7 +6,7 @@ Classification, like regression, is a *supervised* machine learning technique; a
 
 To understand how binary classification works, let's look at a simplified example that uses a single feature (***x***) to predict whether the label ***y*** is 1 or 0. In this example, we'll use the blood glucose level of a patient to predict whether or not the patient has diabetes. Here's the data with which we'll train the model:
 
-|![Diagram of a syringe.](../media/blood-glucose.png)|![A diagram of a diabetic and non-diabetic person.](../media/diabetes.png)|
+|![Diagram of a syringe.](../media/blood-glucose.png)|![Diagram of a diabetic and non-diabetic person.](../media/diabetes.png)|
 |---|---|
 |**Blood glucose (x)** | **Diabetic? (y)**|
 |67|0|
@@ -152,7 +152,7 @@ Another name for recall is the *true positive rate* (TPR), and there's an equiva
 
 Of course, if we were to change the threshold above which the model predicts *true* (**1**), it would affect the number of positive and negative predictions; and therefore change the TPR and FPR metrics. These metrics are often used to evaluate a model by plotting a *received operator characteristic* (ROC) curve that compares the TPR and FPR for every possible threshold value between 0.0 and 1.0:
 
-![A diagram of a ROC curve.](../media/roc-chart.png)
+![Diagram of a ROC curve.](../media/roc-chart.png)
 
 The ROC curve for a perfect model would go straight up the TPR axis on the left and then across the FPR axis at the top. Since the plot area for the curve measures 1x1, the area under this perfect curve would be 1.0 (meaning that the model is correct 100% of the time). In contrast, a diagonal line from the bottom-left to the top-right represents the results that would be achieved by randomly guessing a binary label; producing an area under the curve of 0.5. In other words, given two possible class labels, you could reasonably expect to guess correctly 50% of the time.
 
