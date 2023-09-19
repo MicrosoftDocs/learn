@@ -76,7 +76,7 @@ More details:
     - [Nethermind](https://nethermind.io/?azure-portal=true)
 - Block time: 15 seconds on average
 - Goerli-specific links:
-  - [Faucet](https://faucet.goerli.mudit.blog/?azure-portal=true)
+  - [Faucet](https://goerlifaucet.com/)
   - [Explorer](https://goerli.etherscan.io/?azure-portal=true)
   - [GitHub](https://github.com/goerli/testnet/?azure-portal=true)
   - [Website](http://www.goerli.net/?azure-portal=true)

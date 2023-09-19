@@ -9,7 +9,7 @@ Then, edit the Github workflow file (hosted in the '.github/workflows' folder of
 
 ## Check your work
 
-Navigate to your GitHub repository and click on the 'Actions' tab. You should be able to see the GitHub workflow launched by your latest commit running. When the worflow execution is completed, double check that it ended with a successfull status and expand the 'Build and Deploy' job. You should see a log similar to the one below:
+Navigate to your GitHub repository and click on the 'Actions' tab. You should be able to see the GitHub workflow launched by your latest commit running. When the workflow execution is completed, double check that it ended with a successful status and expand the 'Build and Deploy' job. You should see a log similar to the one below:
 ![GitHub workflow log](../media/github-action-log.png)
 Click on the site link and test your app on the Cloud!
 
