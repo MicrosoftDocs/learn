@@ -5,7 +5,7 @@ Congratulations! Your app is ready and it runs correctly on your local machine. 
 
 In the first exercise, you built a GitHub workflow, connecting the GitHub repository hosting your code to the Azure static web app resource in your subscription. Now, to deploy your app changes on Azure, you'll push your code to the GitHub repository. You can use the built-in Git support in Visual Studio Code to do so.
 But before that, you need to configure the authentication parameters to ensure the deployed app is able to call the Azure AI services correctly. You can add the Azure AI Vision and Azure OpenAI services key and endpoint to your GitHub repository as [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#using-encrypted-secrets-in-a-workflow).
-Then, edit the Github workflow file (hosted in the '.github/workflows' folder of your solution) to enable your app to retrieve the authentication parameters from the GitHub Actions secrets and assign their values to the corresponding environment variables. Finally, push your code to the GitHub repository to trigger the workflow and deploy your app on Azure.
+Then, edit the GitHub workflow file (hosted in the '.github/workflows' folder of your solution) to enable your app to retrieve the authentication parameters from the GitHub Actions secrets and assign their values to the corresponding environment variables. Finally, push your code to the GitHub repository to trigger the workflow and deploy your app on Azure.
 
 ## Check your work
 
