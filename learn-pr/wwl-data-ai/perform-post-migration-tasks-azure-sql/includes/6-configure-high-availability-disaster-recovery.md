@@ -14,7 +14,7 @@ Weekly full backups, differential backups every 12 to 24 hours, and transaction 
 
 Azure offers a retention policy that you can set beyond the usual limits, which is useful for scenarios requiring [long-term retention](/azure/azure-sql/database/long-term-retention-overview). You can set a retention policy for up to 10 years, and this option is disabled by default.
 
-:::image type="content" source="../media/6-long-term-retention.png" alt-text="Screenshot of how to configure the long-term retention properties from Azure portal.":::
+:::image type="content" source="../media/6-long-term-retention.png" alt-text="Screenshot of how to configure the long-term retention properties from Azure portal." lightbox="../media/6-long-term-retention.png":::
 
 The image shows how to set up long-term retention policies on the Azure portal. After choosing the database, a panel will appear on the right side of the screen, where you can change the default settings.
 

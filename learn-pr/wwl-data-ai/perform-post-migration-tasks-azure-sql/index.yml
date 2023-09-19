@@ -17,7 +17,7 @@ abstract: |
   *   Configure high availability and disaster recovery in Azure SQL.
   *   Automate database tasks for scalability.
 prerequisites: |
-  *   Ability to navigate the Azure the portal.
+  *   Ability to navigate the Azure portal.
   *   Understanding of the traditional Database Administration role.
   *   Experience with T-SQL programming language at a basic level.
   

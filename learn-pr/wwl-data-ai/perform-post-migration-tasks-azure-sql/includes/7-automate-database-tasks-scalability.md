@@ -97,13 +97,18 @@ Migrating jobs from an on-premises SQL Server to Azure SQL Managed Instance  or 
 
 In our scenario, suppose we migrated our on-premises SQL Server to Azure SQL Managed Instance. We need to migrate and adjust several SQL Agent jobs to make them function seamlessly in the Azure environment.
 
-| Step                              | Description |
-| --------------------------------- | ----------------------------------- |
-| **Assess dependencies**         | <ul><li>Identify the SQL Agent job you want to migrate.</li><li>List any dependencies, such as linked servers, credentials, and databases, that the job relies on.</li></ul> |
-| **Script the SQL Agent Job**   | <ul><li>Script the SQL Agent job on the SQL Server as a SQL script. You can do this by right-clicking the job in SQL Server Management Studio (SSMS) and selecting **"Script Job as" -> "CREATE To" -> "New Query Editor Window."**</li></ul> |
-| **Modify job dependencies**    | <ul><li>Review the SQL script and modify any job dependencies that may have changed due to the migration. For example, if the job references a linked server or a file path on the local server, update it to match the new environment.</li></ul> |
-| **Azure SQL MI job creation**   | <ul><li>Open SSMS or Azure Data Studio and connect to your Azure SQL Managed Instance.</li><li>Create a new SQL Agent job using the script you generated previously.</li></ul> |
-| **Create dependencies on Azure SQL MI** | <ul><li>If your SQL Agent job relies on linked servers or credentials, create them in the Azure SQL MI environment. Ensure they match the configuration from the on-premises SQL Server.</li></ul> |
-| **Schedule the job** | <ul><li>Set up the job schedule in Azure SQL MI using SQL Server Agent. You can create a new schedule and link it to the job.</li></ul> |
-| **Testing** | <ul><li>Test the SQL Agent job thoroughly in the Azure SQL MI environment to ensure it runs as expected. Check for any errors or issues that may arise due to differences between on-premises SQL Server and Azure SQL MI.</li></ul> |
-| **Monitoring and maintenance**  | <ul><li>Monitor the job's performance and ensure it continues to meet your requirements in the Azure SQL MI environment.</li><li>Adjust any configurations or schedules as needed.</li></ul> |
+- **Assess dependencies:** Identify the SQL Agent job you want to migrate. List any dependencies, such as linked servers, credentials, and databases, that the job relies on
+
+- **Script the SQL Agent job:** Script the SQL Agent job on the SQL Server as a SQL script. You can do this by right-clicking the job in SQL Server Management Studio (SSMS) and selecting **"Script Job as" -> "CREATE To" -> "New Query Editor Window."**
+
+- **Modify job dependencies:** Review the SQL script and modify any job dependencies that may have changed due to the migration. For example, if the job references a linked server or a file path on the local server, update it to match the new environment.
+
+- **Azure SQL MI job creation:** Open SSMS or Azure Data Studio and connect to your Azure SQL Managed Instance. Create a new SQL Agent job using the script you generated previously.
+
+- **Create dependencies on Azure SQL MI:** If your SQL Agent job relies on linked servers or credentials, create them in the Azure SQL MI environment. Ensure they match the configuration from the on-premises SQL Server.
+
+- **Schedule the job:** Set up the job schedule in Azure SQL MI using SQL Server Agent. You can create a new schedule and link it to the job.
+
+- **Testing:** Test the SQL Agent job thoroughly in the Azure SQL MI environment to ensure it runs as expected. Check for any errors or issues that may arise due to differences between on-premises SQL Server and Azure SQL MI.
+
+- **Monitoring and maintenance:** Monitor the job's performance and ensure it continues to meet your requirements in the Azure SQL MI environment. Adjust any configurations or schedules as needed.
