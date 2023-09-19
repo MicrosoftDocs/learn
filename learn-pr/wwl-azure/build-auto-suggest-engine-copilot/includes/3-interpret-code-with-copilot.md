@@ -1,6 +1,7 @@
 In this exercise, you'll familiarize yourself with the Trie project by using Copilot to interpret the code. Let's get started!
 
-> [!IMPORTANT] This exercise uses features of Copilot Chat. To use Copilot Chat, you must have a GitHub account and be signed in to the GitHub Copilot extension. For more information, see [Use Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat/about-github-copilot-chat).
+> [!IMPORTANT]
+> This exercise uses features of Copilot Chat. To use Copilot Chat, you must have a GitHub account and be signed in to the GitHub Copilot extension. For more information, see [Use Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat/about-github-copilot-chat).
 
 > [!IMPORTANT]
 > You need to have completed the Setup instructions in the previous unit, Prepare, before you begin this Exercise.
