@@ -32,7 +32,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect: Azure Compute Gallery can store your virtual machine images, but it can also store your virtual machine applications."
     - content: A gallery can only store virtual machine applications.
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect: Azure Compute Gallery can store your virtual machine applications, but it can also store your virtual machine images."
     - content: A gallery can store both virtual machine images and applications.
       isCorrect: true
