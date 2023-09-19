@@ -56,7 +56,7 @@
 
     :::image type="content" source="../../media/unity-openxr-option.png" alt-text="Screenshot of Open XR option.":::
 
-1.Select **Fix All**.
+1. Select **Fix All**.
 
     :::image type="content" source="../../media/unity-validation-fix-all.png" alt-text="Screenshot of Fix All.":::
 
