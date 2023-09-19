@@ -27,7 +27,6 @@ Module 4 Demos
 - Demo 4.1: [Service trust portal](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_10_explore_service_trust_portal.md)
 - Demo 4.2: [Microsoft Purview compliance portal](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_11_explore_compliance_mgr.md) 
 - Demo 4.3: [Sensitivity labels in Microsoft Purview](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_12_explore_senstivity_labels.md)
-- Demo 4.4: [Azure policy](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_13_explore_azure_policy.md)
 
 Module 4 Labs (optional)
 
