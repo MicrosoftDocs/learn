@@ -38,7 +38,7 @@ Before we dive deeper into Eventstream, it's important to understand the design 
 > [!NOTE]
 > This bottom pane also summarizes runtime logs where the runtime logs exist in certain sources or destinations It also provides metrics for you to monitor the data insights for certain sources or destinations, such as input events, output events, incoming messages, outgoing messages, etc.
 
-## The benefits of eventstream
+## The benefits of Eventstream
 
 Some of the main benefits of Microsoft Fabric Eventstream are:
 
