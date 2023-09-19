@@ -6,4 +6,4 @@ In this module, we learned about Azure Compute Gallery. You learned how an Azure
 - [What's new in Azure Compute Gallery?](/azure/virtual-machines/compute-gallery-whats-new)
 - [Create a gallery](/azure/virtual-machines/compute-gallery)
 - [Share a gallery](/azure/virtual-machines/share-gallery)
-- [Introduction to Azure Image Builder](training/modules/intro-to-azure-image-builder)
+- [Introduction to Azure Image Builder](/training/modules/intro-to-azure-image-builder)
