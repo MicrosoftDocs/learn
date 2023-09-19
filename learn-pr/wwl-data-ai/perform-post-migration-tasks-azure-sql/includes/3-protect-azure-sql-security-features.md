@@ -8,7 +8,7 @@ In Azure SQL Database, you can configure firewall rules both at the server level
 
 [Server-level firewall rules](/azure/azure-sql/database/firewall-create-server-level-portal-quickstart) control access to Azure SQL Database on a broader level, determining which IP addresses can connect to the server. In contrast, 
 
-:::image type="content" source="../media/3-server-rule.png" alt-text="Screenshot of the server rule management through Azure portal.":::
+:::image type="content" source="../media/3-server-rule.png" alt-text="Screenshot of the server rule management through Azure portal." lightbox="../media/3-server-rule.png":::
 
 Server-level firewall rules permit users to connect to all server databases, while database-level firewalls control access for specific IP addresses to individual databases.
 
@@ -25,7 +25,7 @@ When connecting, Azure SQL Database checks for a database-level firewall rule sp
 
 If neither rule exists, and the user is using SQL Server Management Studio or Azure Data Studio to connect, they'll be prompted to create a firewall rule.
 
-:::image type="content" source="../media/3-database-firewall-rule.png" alt-text="Screenshot showing the new firewall rule dialog from SQL Server Management Studio.":::
+:::image type="content" source="../media/3-database-firewall-rule.png" alt-text="Screenshot showing the new firewall rule dialog from SQL Server Management Studio." lightbox="../media/3-database-firewall-rule.png":::
 
 To learn more about server-level firewall rules and database-level firewall rules, see [Azure SQL Database and Azure Synapse IP firewall rules](/azure/azure-sql/database/firewall-configure).
 
@@ -52,7 +52,7 @@ You have two configuration choices for SQL Vulnerability Assessment:
 
 2. [**Classic Configuration**](/azure/defender-for-cloud/sql-azure-vulnerability-assessment-enable#classic-configuration): It needs you to manage an Azure storage account for storing baseline and scan result data.
 
-:::image type="content" source="../media/3-vulnerability-dashboard.png" alt-text="Screenshot showing the SQL vulnerability assessment dashboard on Azure portal.":::
+:::image type="content" source="../media/3-vulnerability-dashboard.png" alt-text="Screenshot showing the SQL vulnerability assessment dashboard on Azure portal." lightbox="../media/3-vulnerability-dashboard.png":::
 
 ### Advanced Threat Protection
 
@@ -60,6 +60,6 @@ You have two configuration choices for SQL Vulnerability Assessment:
 
 It provides security alerts for suspicious database activities, potential vulnerabilities, SQL injection attacks, and abnormal access patterns, integrated with Microsoft Defender for Cloud. This integration offers insights and recommended actions for investigating and mitigating threats, making it accessible to nonsecurity experts.
 
-:::image type="content" source="../media/3-advanced-threat-protection.png" alt-text="Screenshot showing the advanced threat protection recommendation list on Azure portal.":::
+:::image type="content" source="../media/3-advanced-threat-protection.png" alt-text="Screenshot showing the advanced threat protection recommendation list on Azure portal." lightbox="../media/3-advanced-threat-protection.png":::
 
 For a list of alerts, see the [Alerts for SQL Database and Azure Synapse Analytics in Microsoft Defender for Cloud](/azure/security-center/alerts-reference#alerts-sql-db-and-warehouse).

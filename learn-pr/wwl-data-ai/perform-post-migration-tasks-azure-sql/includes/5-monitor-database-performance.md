@@ -74,11 +74,11 @@ Azure SQL Database offers a tool called [Query Performance Insight](/azure/azure
 
 Query Performance Insight in Azure SQL Database provides three filtering options: for long-running queries, top resource-consuming queries (which is the default), or a custom filter. It displays the top five queries sorted by a chosen resource, such as CPU, Data IO, or Log IO. You can drill into individual queries by selecting the row within the lower grid. Each row is marked with a distinct color that matches the color in the bar graph.
 
-[![Screenshot of Query Performance Insights.](../media/5-performance-monitor.png)](../media/5-performance-monitor.png#lightbox)
+:::image type="content" source="../media/5-performance-monitor.png" alt-text="Screenshot of Query Performance Insights dashboard from Azure portal.":::
 
 The custom tab offers more flexibility than the other options. It allows for a more tailored examination of performance data with several drop-down menus influencing data visualization. Key metrics include **CPU**, **Log IO**, **Data IO**, and **memory**, which are performance aspects capped by your Azure SQL Database's service tier and compute resources.
 
-[![Screenshot of a custom Dashboard in Query Performance Insight.](../media/5-performance-monitor-dashboard.png)](../media/5-performance-monitor-dashboard.png#lightbox)
+:::image type="content" source="../media/5-performance-monitor-dashboard.png" alt-text="Screenshot of a custom dashboard in Query Performance Insight.":::
 
 If we drill into an individual query, we're able to see the query ID and the query itself, as well as the query aggregation type and associated time period. 
 

@@ -14,7 +14,7 @@ Weekly full backups, differential backups every 12 to 24 hours, and transaction 
 
 Azure offers a retention policy that you can set beyond the usual limits, which is useful for scenarios requiring [long-term retention](/azure/azure-sql/database/long-term-retention-overview). You can set a retention policy for up to 10 years, and this option is disabled by default.
 
-> [![Screenshot of how to configure the long-term retention properties from Azure portal.](../media/6-long-term-retention.png)](../media/../media/6-long-term-retention.png#lightbox)
+:::image type="content" source="../media/6-long-term-retention.png" alt-text="Screenshot of how to configure the long-term retention properties from Azure portal.":::
 
 The image shows how to set up long-term retention policies on the Azure portal. After choosing the database, a panel will appear on the right side of the screen, where you can change the default settings.
 
@@ -38,7 +38,10 @@ One method to increase availability for Azure SQL Database is to use [active geo
 
 This replica is readable, similar to an AlwaysOn availability group in SQL Server. Underneath the surface, Azure uses availability groups to maintain this functionality, which is why some of the terminologies are similar.
 
-Active geo-replication provides business continuity by allowing customers to programmatically or manually failover primary databases to secondary regions during major disaster. However, it’s important to note that Azure SQL Managed Instance doesn't support active geo-replication. Instead, you must use auto-failover groups, a topic we'll explore later in this unit.
+Active geo-replication provides business continuity by allowing customers to programmatically or manually failover primary databases to secondary regions during major disaster. 
+
+>[!NOTE]
+> Azure SQL Managed Instance doesn't support active geo-replication. Instead, you must use auto-failover groups, a topic we'll explore later in this unit.
 
 :::image type="content" source="../media/6-active-geo-replication.png" alt-text="Diagram of active geo-replication for Azure SQL Database.":::
 
@@ -54,7 +57,10 @@ Once the secondary replica is established, you have the option to manually initi
 
 ## Cross-subscription geo-replication
 
-In certain scenarios, you may need to configure a secondary replica on a different subscription than the primary database. This is where the feature of cross-subscription geo-replication comes into play. However, it's important to note that cross-subscription geo-replication is only available programmatically.
+In certain scenarios, you may need to configure a secondary replica on a different subscription than the primary database. This is where the feature of cross-subscription geo-replication comes into play. 
+
+>[!NOTE]
+> Cross-subscription geo-replication is only available programmatically.
 
 To learn more about the steps required to configure a cross-subscription geo-replication, see [Cross-subscription geo-replication](/azure/azure-sql/database/active-geo-replication-overview#cross-subscription-geo-replication).
 
