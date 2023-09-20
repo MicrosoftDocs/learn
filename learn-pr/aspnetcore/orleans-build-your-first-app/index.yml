@@ -26,6 +26,7 @@ roles:
 products:
 - azure-app-service
 - dotnet-orleans
+- dotnet
 subjects:
   - development-tools
 prerequisites: |
