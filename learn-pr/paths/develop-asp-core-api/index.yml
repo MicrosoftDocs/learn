@@ -3,7 +3,7 @@ uid: learn.wwl.develop-asp-core-api
 metadata:
   title: 'APL-2002: Develop an ASP.NET Core web app that consumes an API'
   description: Learn how to gather information from API documentation and perform HTTP operations in an ASP.NET Core Razor Pages web app.
-  ms.date: 09/11/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -28,5 +28,7 @@ subjects:
 - development-tools
 modules:
 - learn.wwl.interact-api
+- learn.wwl.implement-http-operations-asp-razor
+- learn.wwl.render-api-responses-razor-pages
 trophy:
   uid: learn.wwl.develop-asp-core-api.trophy

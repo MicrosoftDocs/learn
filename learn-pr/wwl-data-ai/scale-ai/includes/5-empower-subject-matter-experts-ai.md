@@ -1,5 +1,3 @@
-
-
 Human beings are incredible. We have so many unique capabilities that no machine can replicate—creativity, empathy, inventiveness, and imagination. Business value comes from human expertise. At Microsoft, we believe the right AI tools can amplify these capabilities to help everyone achieve more. You should consider AI as a copilot, which helps you fulfill your potential.
 
 Business users in every industry can take advantage of a wide array of AI solutions. For example, subject matter experts like researchers and engineers can use AI to apply their expertise more effectively and efficiently.
@@ -13,7 +11,7 @@ Employees don't need to be data scientists to be able to use AI in their everyda
 > [!NOTE] 
 > Nearly a third of white-collar workers (27 percent) have tried to incorporate prebuilt generative AI models such as GPT in their work routines.<sup>3</sup>
 
-For more complex solutions, business users may want to create their own AI models or integrate a model into an app themselves. With no-code tools and platforms such as those provided by Microsoft Power Platform and Azure Cognitive Services, now business users can add AI capabilities to their apps and automate their workflow—regardless of their technical expertise.
+For more complex solutions, business users may want to create their own AI models or integrate a model into an app themselves. With no-code tools and platforms such as those provided by Microsoft Power Platform and Azure AI Services, now business users can add AI capabilities to their apps and automate their workflow—regardless of their technical expertise.
 
 The module [Leverage AI tools and resources for your business](/training/modules/leverage-ai-tools) gives you a more detailed overview of the AI products and services available for these cases.
 

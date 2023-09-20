@@ -4,12 +4,10 @@ title: Describe application hosting options
 metadata:
   title: Describe application hosting options
   description: "Describe application hosting options"
-  ms.date: 08/09/2023
+  ms.date: 09/13/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/7-describe-application-hosting-options.md)]

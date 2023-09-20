@@ -106,7 +106,7 @@ In this task, you use the EXPLORER view to open your code project folder, custom
 
 1. To compile a build of your application, enter the following command at the Terminal command prompt:
 
-    ```C#
+    ```dotnetcli
     dotnet build
     ```
 
@@ -121,7 +121,7 @@ In this task, you use the EXPLORER view to open your code project folder, custom
 
 1. To run your application, enter the following command at the Terminal command prompt:
 
-    ```C#
+    ```dotnetcli
     dotnet run
     ```
 

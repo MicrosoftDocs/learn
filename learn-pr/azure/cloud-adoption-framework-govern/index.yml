@@ -4,10 +4,11 @@ metadata:
   title: Address tangible risks with the Govern methodology of the Cloud Adoption Framework for Azure
   description: Any technical change introduces risk in your cloud environment. Learn how to evaluate risks and implement guardrails to help keep you safe as you adopt the cloud.
   ms.date: 08/08/2023
-  author: BrianBlanchard
-  ms.author: jumcn
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
-  ms.service: cloud-adoption-framework 
+  ms.service: caf
+  ms.subservice: caf-methodology-govern
 title: Address tangible risks with the Govern methodology of the Cloud Adoption Framework for Azure
 summary: Without proper governance, it can be difficult and laborious to maintain consistent control across a portfolio of workloads. Fortunately, cloud-native tools like Azure Policy and Azure Blueprints provide convenient means to establish those controls. The Govern methodology helps you evaluate and establish corporate policies and disciplines to mitigate tangible risks.
 abstract: |
