@@ -24,6 +24,6 @@ quiz:
       - content: "Razor Pages can't coexist in an ASP.NET Core MVC app."
         isCorrect: false
         explanation: "Incorrect. Razor Pages support are built into ASP.NET Core MVC and can coexist within an MVC app."
-      - content: "A productivity advantage of Razor Pages is that it keeps changes for views in your app together."
+      - content: "A productivity advantage of Razor Pages is that it keeps together what tends to change together for views in your app."
         isCorrect: true
         explanation: "Correct! Use Razor Pages to keep ASP.NET Core pages organized in a simpler way. All view (page) specific logic and page properties (view model) are kept in the same proximity."
