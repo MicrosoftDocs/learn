@@ -43,7 +43,7 @@ To create a new Razor page, you'll use the .NET CLI.
 
 ## Add the Pizza List page to the navigation menu
 
-This would be a good time to test the page, but the page can't be reached in the browser because isn't yet linked in the navigation menu. You'll link it now.
+This would be a good time to test the page, but the page can't be reached in the browser because it isn't yet linked in the navigation menu. You'll link it now.
 
 1. Open *Pages/Shared/_Layout.cshtml*.
 1. In the `<ul>` element with the `navbar-nav` class (starts on line 21), note the `<li>` elements that contain the links to the *Home* and *Privacy* pages. Add the following code to the end of the list, after the `<li>` element containing the *Privacy* link:
