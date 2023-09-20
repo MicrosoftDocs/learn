@@ -11,7 +11,7 @@ metadata:
   ms.service: azure-virtual-machines
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-knowledge-check.md)]
+
 quiz:
   title: Knowledge check
   questions:
