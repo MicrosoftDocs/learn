@@ -11,4 +11,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-device-management-using-azure-command-line-interface.md)]
+  [!include[](includes/3-device-management-use-azure-command-line-interface.md)]

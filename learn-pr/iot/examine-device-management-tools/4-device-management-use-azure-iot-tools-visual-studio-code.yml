@@ -11,4 +11,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-device-management-using-azure-iot-tools-visual-studio-code.md)]
+  [!include[](includes/4-device-management-use-azure-iot-tools-visual-studio-code.md)]
