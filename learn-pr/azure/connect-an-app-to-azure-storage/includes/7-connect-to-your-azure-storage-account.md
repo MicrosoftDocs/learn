@@ -47,7 +47,7 @@ Typically, storage-account connectivity information is stored within an environm
 > [!IMPORTANT]
 > Storing this information in a configuration file can be dangerous if you include that file in source control and store it in a public repository. This is a common mistake, and means that anyone can browse your source code in the public repository and see your storage-account connection information.
 
-Each storage account has two access keys. The is to allow keys to be rotated (regenerated) periodically as part of security best practice in keeping your storage account secure. You can do this from the Azure portal or the Azure CLI/PowerShell command line tool.
+Each storage account has two access keys. This is to allow keys to be rotated (regenerated) periodically as part of security best practice in keeping your storage account secure. You can do this from the Azure portal or the Azure CLI/PowerShell command line tool.
 
 Rotating a key invalidates the original key value immediately and revokes access to anyone who obtained the key inappropriately. With support for two keys, you can rotate keys without causing downtime in your applications that use them. Your app can switch to using the alternate access key while the other key is regenerated. If you have multiple apps using this storage account, they should all use the same key to support this technique. Here's the basic idea:
 
