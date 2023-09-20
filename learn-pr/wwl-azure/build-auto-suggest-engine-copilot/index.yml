@@ -1,16 +1,18 @@
 ### YamlMime:Module
 uid: learn.wwl.build-auto-suggest-engine-copilot
 metadata:
-  title: Build Auto suggest Engine with Copilot
+  title: Guided project - Build auto suggest engine with Copilot
   description: "Use GitHub Copilot to interpret, debug, and extend project code for a Trie data structure that supports autocomplete and spelling suggestion features."
-  ms.date: 09/19/2023
+  ms.date: 09/20/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.service: artificial-intelligence
   ms.devlang: csharp
-title: Build Auto suggest Engine with Copilot
-summary: Use GitHub Copilot to interpret, debug, and extend project code for a Trie data structure that supports autocomplete and spelling suggestion features.
+title: Guided project - Build auto suggest engine with Copilot
+summary: |
+  Use GitHub Copilot to interpret, debug, and extend project code for a Trie data structure that supports autocomplete and spelling suggestion features.
+  [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
 abstract: |
   In this module, you will:
   - Interpret code with Copilot
