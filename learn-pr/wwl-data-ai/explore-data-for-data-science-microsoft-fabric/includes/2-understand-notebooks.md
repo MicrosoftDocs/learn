@@ -14,7 +14,7 @@ Notebooks also allow data scientists to rapidly experiment and share insights th
 
 You can get started with notebooks in Microsoft Fabric with zero setup effort. You can either create a new notebook or import an existing notebook. You can also select multiple notebooks and import them in a batch.
 
-:::image type="content" border="false" source="../media/2-new-notebook.png" alt-text="Screenshot of the options available in a Data Science workspace in Microsoft Fabric.":::
+:::image type="content" border="false" source="../media/2-new-notebook.png" alt-text="Screenshot of the actions available in a Data Science workspace in Microsoft Fabric.":::
 
 Microsoft Fabric notebooks currently support four Apache Spark languages:
 
@@ -27,7 +27,7 @@ Microsoft Fabric notebooks currently support four Apache Spark languages:
 
 To create a new notebook, select the **Notebook** option in the **Home** in your workspace.
 
-:::image type="content" border="false" source="../media/2-notebook-options.png" alt-text="Screenshot of the options available in a Data Science workspace in Microsoft Fabric.":::
+:::image type="content" border="false" source="../media/2-notebook-options.png" alt-text="Screenshot of the options available in a Microsoft Fabric notebook.":::
 
 1. The menu bar in a Microsoft Fabric notebook offers various features. It allows you to save and export your notebook, manage cells, terminate the session, schedule the execution of your notebook, launch Data Wrangler, adjust the layout, among others. To access all these features, simply switch between the **Home**, **Edit**, **Run**, **Data**, and **View** tabs.
 
@@ -57,7 +57,7 @@ It’s not uncommon when working in a notebook to have hundreds of variables, ea
 
 As you execute code cells in your PySpark (Python) notebook in Microsoft Fabric, the variables you define are automatically tracked and listed in the variables explorer. This allows you to see the state of your variables at any point in your coding process.
 
-:::image type="content" border="false" source="../media/2-notebook-options.png" alt-text="Screenshot of the options available in a Data Science workspace in Microsoft Fabric.":::
+:::image type="content" border="false" source="../media/2-variable-explorer.png" alt-text="Screenshot of the variable explorer in a Microsoft Fabric notebook.":::
 
 For each variable, the explorer shows its name, type, length, and value. This gives you a quick overview of your data without needing to print or log these details manually.
 

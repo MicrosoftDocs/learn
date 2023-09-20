@@ -1,17 +1,18 @@
 ### YamlMime:Module
 uid: learn-wwl.explore-data-for-data-science-microsoft-fabric
 metadata:
-  title: Migrate SQL Server workloads to Azure Virtual Machine
-  description: "Discover the tools and features available to migrate SQL workloads from on-premises to Azure Virtual Machines (VMs), including the Azure SQL Migration extension for Azure Data Studio and and Data Migration Assistant."
+  title: Explore data for data science with notebooks in Microsoft Fabric
+  description: "Discover notebooks in Microsoft Fabric."
   ms.date: 09/19/2023
   author: wwlpublish
   ms.author: jupadrao
+  ms.topic: interactive-tutorial
   ms.service: fabric
   ms.custom:
     - build-2023
     - build-2023-dataai
     - build-2023-fabric 
-title: Migrate SQL Server workloads to Azure Virtual Machine
+title: Explore data for data science with notebooks in Microsoft Fabric
 summary: You will explore different migration tools and migrate SQL Server databases to Azure Virtual Machine.
 abstract: |
   In this module, you'll:

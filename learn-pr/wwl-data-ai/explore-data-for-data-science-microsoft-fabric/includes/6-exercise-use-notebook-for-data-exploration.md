@@ -8,4 +8,4 @@ In this exercise, you’ll learn how to perform Exploratory Data Analysis (EDA) 
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](XXX)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://azure.microsoft.com/free?azure-portal=true)
