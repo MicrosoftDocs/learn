@@ -29,7 +29,7 @@ To create a new notebook, select the **Notebook** option in the **Home** in your
 
 :::image type="content" border="false" source="../media/2-notebook-options.png" alt-text="Screenshot of the options available in a Data Science workspace in Microsoft Fabric.":::
 
-1. The menu bar in a Microsoft Fabric notebook offers a variety of features. It allows you to save and export your notebook, manage cells, terminate the session, schedule the execution of your notebook, launch Data Wrangler, adjust the layout, among others. To access all these features, simply switch between the **Home**, **Edit**, **Run**, **Data**, and **View** tabs.
+1. The menu bar in a Microsoft Fabric notebook offers various features. It allows you to save and export your notebook, manage cells, terminate the session, schedule the execution of your notebook, launch Data Wrangler, adjust the layout, among others. To access all these features, simply switch between the **Home**, **Edit**, **Run**, **Data**, and **View** tabs.
 
 1. On the **Lakehouses** tab, you can add a new or existing lakehouse from the lakehouse explorer. The **Resources** tab provides a Unix-like storage for small files like code, datasets, and images, accessible directly from the notebook.
 
@@ -37,11 +37,11 @@ To create a new notebook, select the **Notebook** option in the **Home** in your
 
 1. Add a new code or markdown cell. This option is also available from the menu by selecting **Edit -> Add code cell**.
 
-1. It provides a variety of options for managing a specific cell, such as repositioning the cell within the notebook, converting it to a markdown or code cell, clearing the output, adding comments, and more.
+1. It provides various options for managing a specific cell, such as repositioning the cell within the notebook, converting it to a markdown or code cell, clearing the output, adding comments, and more.
 
 ### Drag and drop files
 
-Drag and drop allows you to easily import data from the Lakehouse explorer. It supports various file types like text files, tables, images, etc. You can drop the data into an existing or new cell, and the notebook will generate a code snippet to preview the data. 
+Drag and drop allows you to easily import data from the Lakehouse explorer. It supports various file types like text files, tables, images, etc. You can drop the data into an existing or new cell, and the notebook generates a code snippet to preview the data. 
 
 :::image type="content" source="../media/2-code-snippet.gif" alt-text="Example of the drag-and-drop feature generating the necessary code to read a file.":::
 
@@ -69,7 +69,7 @@ In Microsoft Fabric, you can [manage libraries and dependencies](/fabric/data-sc
 
 Libraries installed at the workspace level can be used by all notebooks and Spark jobs within that workspace, and are accessible across different sessions. So, if you need to create a common environment for all sessions in a workspace, it's best to use workspace-level libraries.
 
-1. From the left navigation pane, select **Workspaces**. This will display a list of your workspaces. Select the workspace you want to work with.
+1. From the left navigation pane, select **Workspaces**. This displays a list of your workspaces. Select the workspace you want to work with.
 
 1. Select **Workspace settings** for your current workspace, and then select **Data Engineering/Science**.
 
@@ -98,9 +98,9 @@ It's a good practice to put all the commands for adding, deleting, or updating P
 
 ## Collaborate in notebooks
 
-Sharing and collaborating on notebooks allow for collective problem-solving, and efficiency in data science projects. Microsoft Fabric notebooks offer a powerful feature where multiple users can simultaneously edit the same document. This functionality is particularly useful in scenarios such as pair programming, remote troubleshooting, and knowledge sharing.
+Sharing and collaborating on notebooks allow for collective problem-solving, and efficiency in data science projects. Microsoft Fabric notebooks offer a powerful feature where multiple users can simultaneously edit the same document. This functionality is useful in scenarios such as pair programming, remote troubleshooting, and knowledge sharing.
 
-In our scenario, imagine you and your colleague are working on a project using Microsoft Fabric notebooks. You're stuck on a piece of code and ask your colleague for help. Your colleague opens the same notebook and you see his profile appear. As your colleague reviews and edits the code, you can see his cursor movements, selections, and changes in real-time. This immediate feedback helps you identify and understand the solution quickly.
+In our scenario, imagine you and your colleague are working on a project using Microsoft Fabric notebooks. You're stuck on a piece of code and ask your colleague for help. Your colleague opens the same notebook and you see their profile appear. As your colleague reviews and edits the code, you can see their cursor movements, selections, and changes in real-time. This immediate feedback helps you identify and understand the solution quickly.
 
 This real-time collaboration feature of Microsoft Fabric notebooks not only helps you solve your coding problem but also provides an excellent opportunity for learning from your more experienced colleague.
 

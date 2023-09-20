@@ -16,4 +16,4 @@ The goal of the project is to improve patient outcomes by identifying patterns a
 
 The project should also provide actionable insights that can inform business decisions. For example, the analysis might identify areas where the company can reduce costs or improve service.
 
-Regardless of whether you're a seasoned professional or just beginning your journey in the field, by the end of this module, you will have gained a solid understanding of how to use Microsoft Fabric for your data exploration needs.
+Regardless of whether you're a seasoned professional or just beginning your journey in the field, by the end of this module, you'll have gained a solid understanding of how to use Microsoft Fabric for your data exploration needs.
