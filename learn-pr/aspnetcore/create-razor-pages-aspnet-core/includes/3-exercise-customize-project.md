@@ -32,7 +32,7 @@ Let's take a moment to get familiar with the existing code in the ContosoPizza f
 - A *Models* folder was added to the project.
   - The model folder contains a `Pizza` class that represents a pizza.
 - A *Data* folder was added to the project.
-  - The data folder contains a `PizzaContext` class that represents the database context. It inherits from the `DbContext` class in the Entity Framework Core. Entity Framework Core is an object-relational mapper (ORM) that makes it easier to work with databases.
+  - The data folder contains a `PizzaContext` class that represents the database context. It inherits from the `DbContext` class in Entity Framework Core. Entity Framework Core is an object-relational mapper (ORM) that makes it easier to work with databases.
 - A *Services* folder was added to the project.
   - The services folder contains a `PizzaService` class that exposes methods to list and add pizzas.
   - The `PizzaService` class uses the `PizzaContext` class to read and write pizzas to the database.
