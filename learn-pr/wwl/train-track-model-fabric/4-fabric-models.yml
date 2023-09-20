@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.train-track-model-fabric.fabric-models
-title: Manage models in the Microsoft Fabric workspace
+title: Manage models in Microsoft Fabric
 metadata:
-  title: Manage models in the Microsoft Fabric workspace
-  description: "Manage models in the Microsoft Fabric workspace"
+  title: Manage models in Microsoft Fabric
+  description: "Manage models in Microsoft Fabric"
   ms.date: 09/20/2023
   author: wwlpublish
   ms.author: madiepev

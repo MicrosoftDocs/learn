@@ -1,4 +1,4 @@
-How you train a machine learning model depends on the type of model you want to train. Let's explore some commonly used frameworks that are used when training machine learning models.
+How you train a machine learning model depends on the type of model you want to train. Let's explore some commonly used frameworks that you can use to train a machine learning model in Microsoft Fabric.
 
 ## Explore machine learning frameworks
 
@@ -12,7 +12,7 @@ Some libraries and their popular uses that you can work with in Microsoft Fabric
 
 ## Work with notebooks in Microsoft Fabric
 
-When you want to train a model in Microsoft Fabric, you can use the **notebooks**.
+When you want to train a model in Microsoft Fabric, you can use **notebooks**.
 
 As a data scientist, you may already be familiar with Jupyter notebooks. The notebooks available in your Microsoft Fabric workspace are similar to Jupyter notebooks, making it easy for you to run your code as expected.
 
@@ -31,7 +31,7 @@ How you approach the training of a machine learning depends on the type of model
 - **Train** the model.
 - **Evaluate** the model by inspecting the performance metrics.
 
-Let's assume you have a dataset that you already explored and prepared for model training. If you want to train a regression model, you can use scikit-learn.
+Let's explore an example and assume you already have a dataset that you explored and prepared for model training. Imagine you want to train a regression model and you choose to use scikit-learn.
 
 You can split the prepared dataset with the following code:
 
@@ -42,6 +42,8 @@ X, y = df[['feature1','feature2','feature3']].values, df['label'].values
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
 ```
+
+As a result of splitting your dataset, you'll have four DataFrames:
 
 - `X_train`: Training dataset including only the features.
 - `X_test`: Test dataset including only the features.

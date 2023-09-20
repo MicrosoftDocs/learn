@@ -6,7 +6,7 @@ MLflow is already installed when you open a notebook in Microsoft Fabric. To use
 
 ## Create an experiment
 
-Whenever you want to track your work in Microsoft Fabric, you create an **experiment**. Each time you train a model, it's tracked as an experiment **run** in your workspace. You can create an experiment using the user interface (UI), or by running the following code:
+Whenever you want to track your work in Microsoft Fabric, you first need to create an **experiment**. Each time you train a model, it's tracked as an experiment **run** in your workspace. You can create an experiment using the user interface (UI), or by running the following code:
 
 ```python
 mlflow.set_experiment("<EXPERIMENT_NAME>")
