@@ -1,13 +1,16 @@
 ### YamlMime:Module
-uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines
+uid: learn-wwl.explore-data-for-data-science-microsoft-fabric
 metadata:
   title: Migrate SQL Server workloads to Azure Virtual Machine
   description: "Discover the tools and features available to migrate SQL workloads from on-premises to Azure Virtual Machines (VMs), including the Azure SQL Migration extension for Azure Data Studio and and Data Migration Assistant."
-  ms.date: 07/28/2023
+  ms.date: 09/19/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: fabric
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
 title: Migrate SQL Server workloads to Azure Virtual Machine
 summary: You will explore different migration tools and migrate SQL Server databases to Azure Virtual Machine.
 abstract: |
@@ -20,29 +23,26 @@ prerequisites: |
   - Experience in administering SQL Server databases.
   - Knowledge of SQL Server editions and versions.
   - Knowledge of basic T-SQL.
-iconUrl: /training/achievements/migrate-sql-workloads-to-azure-virtual-machines.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
-- intermediate
+- beginner
 roles:
-- administrator
+- data-analyst
 - data-engineer
-- database-administrator
-- developer
-- solution-architect
+- data-scientist
 products:
-- azure-sql-database
-- azure-virtual-machines
-- sql-server
+- fabric
+subjects:
+- data-science
+- machine-learning
 units:
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.introduction
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.migration-strategies-and-options
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.explore-azure-sql-migration-extension-for-migration
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.review-data-migration-assistant
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-using-always-on-availability-groups
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-use-native-backup-restore
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.compare-additional-migration-methods
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.exercise-migrate-sql-server-to-azure-vm
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.knowledge-check
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.summary
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.introduction
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.understand-notebooks
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.load-and-explore-data
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.apply-advanced-data-exploration-techniques
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.visualize-data-with-plots-and-charts
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.exercise-use-notebook-for-data-exploration
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.knowledge-check
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.summary
 badge:
-  uid: learn-wwl.migrate-sql-workloads-to-azure-virtual-machines.badge
+  uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.badge

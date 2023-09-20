@@ -1,115 +1,107 @@
-One of the most common ways for data analysts, data scientists, data engineers, and developers to work with Spark is to write code in *notebooks*. Notebooks provide an interactive environment in which you can combine text and graphics in *Markdown* format with cells containing code that you run interactively in the notebook session. To learn more about notebooks, see [Notebooks](/azure/databricks/notebooks/) in the Azure Databricks documentation.
+[Notebooks](/fabric/data-engineering/how-to-use-notebook?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json) provide an interactive environment in which you can combine text and graphics in *Markdown* format with cells containing code that you run interactively in the notebook session. 
 
-A *notebook* is an interactive environment where you can both write code and document it. Notebooks can also display mathematical computations and charts.
+As a data scientist, you may be most familiar with writing and executing code in notebooks. Microsoft Fabric offers a familiar notebook experience, powered by Apache Spark.
+
+In Microsoft Fabric, data scientists, business users, and analysts all work on the same platform, enhancing data sharing and collaboration at scale. 
 
 ## Usage of notebooks in Data Science
 
-use in data science
+Notebooks are a common tool for data scientists, and they allow users to combine code, explanatory text, and multimedia resources in a single document. This creates a narrative that can drive exploration by facilitating the sharing of codes, and quick prototyping. 
 
-## Create a new notebook in Microsoft Fabric
+Notebooks also allow data scientists to rapidly experiment and share insights through quick environment creation.
 
+## Notebook in Microsoft Fabric
 
+You can get started with notebooks in Microsoft Fabric with zero setup effort. You can either create a new notebook or import an existing notebook. You can also select multiple notebooks and import them in a batch.
 
-Here, you'll create a local *.ipynb* file and run it in Visual Studio Code. The suffix *.ipynb* is used to refer to Jupyter notebooks, which were previously called `iPython notebooks`: `ipynb`.
+:::image type="content" border="false" source="../media/2-new-notebook.png" alt-text="Screenshot of the options available in a Data Science workspace in Microsoft Fabric.":::
 
-## Create a notebook
+Microsoft Fabric notebooks currently support four Apache Spark languages:
 
-On your local computer, create a file called *ship-manual.ipynb*. You can create the file in the Explorer view or via the command palette in Visual Studio Code, by opening the palette and typing `Create: New Jupyter Notebook`. Open this file in Visual Studio Code. The Jupyter extension should display the file as blank, with the option to add code and Markdown blocks.
+- PySpark (Python)
+- Spark (Scala)
+- Spark SQL
+- SparkR
 
-:::image type="content" source="../media/blank-jupyter-notebook-visual-studio-code.png" alt-text="Screenshot that shows an example of a new Visual Studio Code file.":::
+### Create a notebook
 
-## Create a document element in Markdown
+To create a new notebook, select the **Notebook** option in the **Home** in your workspace.
 
-At the top of the notebook, you see two options to create two different types of content blocks in the notebook: Markdown and runnable code. Your first task is to create a document title. At the top of the notebook interface in Visual Studio Code, select the plus (**+**) button next to **Markdown**. A box will appear. Add the following Markdown to the box:
+:::image type="content" border="false" source="../media/2-notebook-options.png" alt-text="Screenshot of the options available in a Data Science workspace in Microsoft Fabric.":::
 
-`# Ship's Instruction Manual`
+1. The menu bar in a Microsoft Fabric notebook offers a variety of features. It allows you to save and export your notebook, manage cells, terminate the session, schedule the execution of your notebook, launch Data Wrangler, adjust the layout, among others. To access all these features, simply switch between the **Home**, **Edit**, **Run**, **Data**, and **View** tabs.
 
-## Run your notebook
+1. On the **Lakehouses** tab, you can add a new or existing lakehouse from the lakehouse explorer. The **Resources** tab provides a Unix-like storage for small files like code, datasets, and images, accessible directly from the notebook.
 
-Now you need to run your notebook. Choose a kernel from the dropdown list on the top right. 
+1. Run the current cell. Alternatively, you can press **Ctrl+Enter**, or press **Alt+Enter** to run the current cell and insert a new cell.
 
-:::image type="content" source="../media/select-kernel-visual-studio-code.png" alt-text="Screenshot that shows the Select Kernel option in the Visual Studio Code file.":::
+1. Add a new code or markdown cell. This option is also available from the menu by selecting **Edit -> Add code cell**.
 
-You might have one or several kernels to choose from, so make sure to choose a Python 3 kernel.
+1. It provides a variety of options for managing a specific cell, such as repositioning the cell within the notebook, converting it to a markdown or code cell, clearing the output, adding comments, and more.
 
-:::image type="content" source="../media/kernel-choices-python-visual-studio-code.png" alt-text="Screenshot that shows a selection of Python kernels.":::
+### Drag and drop files
 
-Select the tick to complete the Markdown field, and you'll find the text is rendered as an `<h1>`, or header text. You just named your notebook! To see how this Markdown file is rendered, choose **run all** from the top of the notebook.
+Drag and drop allows you to easily import data from the Lakehouse explorer. It supports various file types like text files, tables, images, etc. You can drop the data into an existing or new cell, and the notebook will generate a code snippet to preview the data. 
 
-:::image type="content" source="../media/run-markdown-jupyter-notebook-visual-studio-code.png" alt-text="Screenshot that shows the Markdown rendered as header text.":::
+:::image type="content" source="../media/2-code-snippet.gif" alt-text="Example of the drag-and-drop feature generating the necessary code to read a file.":::
 
-## Create runnable code
+Also, you can easily insert images into a markdown cell by dragging and dropping them from your browser or local computer.
 
-Now you can add some code to the notebook. Let's add a way to display a widget to start the ship's engine.
+### IDE-style IntelliSense
 
-First, you need to install a library called [ipywidgets](https://ipywidgets.readthedocs.io/?azure-portal=true). Install the library by adding a new code block under the notebook title block. Use Python's package manager, `pip`, to install the library.
+The IDE-style IntelliSense enhances code writing and error identification with features like syntax highlighting, error marking, and automatic code completions. As you type, it predicts what you’re trying to write and offers suggestions. This not only speeds up coding but also helps avoid typos and learn API calls.
 
-1. Add this line to the new code block: `pip install ipywidgets`. 
+### Variable explorer
 
-   ```python
-    pip install ipywidgets
-   ```
+It’s not uncommon when working in a notebook to have hundreds of variables, each playing a crucial role in your data analysis or model development. Keeping track of all these variables can be a challenging task. This is where the built-in variables explorer in Microsoft Fabric notebook comes into play.
 
-1. Run this block by using the arrow on the left to install the library.
+As you execute code cells in your PySpark (Python) notebook in Microsoft Fabric, the variables you define are automatically tracked and listed in the variables explorer. This allows you to see the state of your variables at any point in your coding process.
 
-   :::image type="content" source="../media/install-library-jupyter-notebook-visual-studio-code.png" alt-text="Screenshot that shows the code block in the Visual Studio Code file.":::
+:::image type="content" border="false" source="../media/2-notebook-options.png" alt-text="Screenshot of the options available in a Data Science workspace in Microsoft Fabric.":::
 
-   Follow the installation prompts. You should see `ipywidgets` being installed. Wait for it to finish before continuing.
+For each variable, the explorer shows its name, type, length, and value. This gives you a quick overview of your data without needing to print or log these details manually.
 
-1. Then, create a button right in your notebook that, when pressed, displays a message. In a new code block, add the following code:
+## Manage libraries and dependencies
 
-   ```python
-   import ipywidgets as widgets
+In Microsoft Fabric, you can [manage libraries and dependencies](/fabric/data-science/python-guide/python-library-management) in two ways: through workspace settings or in-line within a notebook.
 
-   ignition = widgets.ToggleButton(
-       value=False,
-       description='Start Engine',
-       button_style='success',
-       tooltip='Engage your Engine',
-       icon='rocket'
-   )
+### Workspace settings
 
-   output = widgets.Output()
+Libraries installed at the workspace level can be used by all notebooks and Spark jobs within that workspace, and are accessible across different sessions. So, if you need to create a common environment for all sessions in a workspace, it's best to use workspace-level libraries.
 
-   display(ignition, output)
+1. From the left navigation pane, select **Workspaces**. This will display a list of your workspaces. Select the workspace you want to work with.
 
-   def on_value_change(change):
-       with output:
-           if change['new'] == True:
-               print("engine started!")
-           else:   
-               print("engine stopped")
+1. Select **Workspace settings** for your current workspace, and then select **Data Engineering/Science**.
 
-   ignition.observe(on_value_change, names='value')
-   ```
+    :::image type="content" border="false" source="../media/2-library-management.png" alt-text="Screenshot of the library management option in a Data Science workspace in Microsoft Fabric.":::
 
-1. Run the code by using the arrow on the left.
+1. Select **Library management** to install both Python feed and custom libraries.
 
-   :::image type="content" source="../media/create-button-jupyter-notebook-visual-studio-code.png" alt-text="Screenshot that shows the code entered in the Visual Studio Code file.":::
+### In-line installation
 
-   Your code should display a button:
+The `%pip` command in Microsoft Fabric works the same as pip command in many data science notebooks. Use %pip commands to directly install feed libraries into your notebook.
 
-   :::image type="content" source="../media/button-displayed-jupyter-notebook.png" alt-text="Illustration of the Start Engine button that results from the execution of the code.":::
+> [!NOTE]
+> Any libraries installed with the `%pip` command are only available for the current session. Also, running a `%pip` command will restart the Python interpreter, which means any variables defined before running the command will be lost.
 
-   > [!TIP]
-   > If the button doesn't render, try changing to a different Python 3 kernel.
+The %pip install command is used to install the latest versions of these libraries. The import statement is then used to import these libraries into the current Python environment.
 
-   Press the button to start the engine.
+```python
+%pip install seaborn
+%pip install sklearn
 
-   :::image type="content" source="../media/button-output-engine-started-jupyter-notebook.png" alt-text="Illustration of the output from pressing the Start Engine button.":::
+import seaborn as sns
+from sklearn import datasets
+```
 
-   Press the button again to stop the engine.
+It's a good practice to put all the commands for adding, deleting, or updating Python packages at the beginning of your notebook.
 
-   :::image type="content" source="../media/button-output-engine-stopped-jupyter-notebook.png" alt-text="Illustration of the output from pressing the Start Engine button again.":::
+## Collaborate in notebooks
 
-What's going on here? You use the `ipywidget` library to create a button, and listen for its value to change, printing the observed message. Now your manual is starting to look good, and you can start your ship's engine if it stalls!
+Sharing and collaborating on notebooks allow for collective problem-solving, and efficiency in data science projects. Microsoft Fabric notebooks offer a powerful feature where multiple users can simultaneously edit the same document. This functionality is particularly useful in scenarios such as pair programming, remote troubleshooting, and knowledge sharing.
 
-## Installing necessary libraries and dependencies
+In our scenario, imagine you and your colleague are working on a project using Microsoft Fabric notebooks. You're stuck on a piece of code and ask your colleague for help. Your colleague opens the same notebook and you see his profile appear. As your colleague reviews and edits the code, you can see his cursor movements, selections, and changes in real-time. This immediate feedback helps you identify and understand the solution quickly.
 
+This real-time collaboration feature of Microsoft Fabric notebooks not only helps you solve your coding problem but also provides an excellent opportunity for learning from your more experienced colleague.
 
-## Share notebooks
-
-Collaboration is essential in data science. Sharing and collaborating on notebooks allow for collective problem-solving, knowledge sharing, and efficiency in data science projects. Microsoft Fabric provides tools for all these activities, making it an invaluable platform for data scientists.
-
-    a.	Saving and exporting notebooks
-    b.	Collaborating on notebooks with other users in real-time
+To learn more about all the features available Microsoft Fabric notebooks, see [Develop, execute, and manage Microsoft Fabric notebooks](/fabric/data-engineering/author-execute-notebook?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json).

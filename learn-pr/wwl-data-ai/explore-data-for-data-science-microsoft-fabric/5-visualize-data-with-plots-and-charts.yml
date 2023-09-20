@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.visualize-data-with-plots-and-charts
+title: Review migrations strategies and tools
+metadata:
+  title: Review migrations strategies and tools
+  description: "Considerations of SQL Server to Azure Virtual Machine migrations."
+  ms.date: 09/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.service: fabric
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-visualize-data-with-plots-and-charts.md)]
