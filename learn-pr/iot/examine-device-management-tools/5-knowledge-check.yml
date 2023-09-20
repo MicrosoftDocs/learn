@@ -32,10 +32,10 @@ quiz:
     - content: "Automatic device management."
       isCorrect: false
       explanation: "Incorrect. Automatic device management can be done through the Azure portal or Azure CLI, but not Visual Studio Code with the Azure IoT Hub extension."
-    - content: "Update a device twin property."
-      isCorrect: true
-      explanation: "Correct. Update a device twin property, which can be done using each of the three tools."
     - content: "Update a device twin desired property."
+      isCorrect: true
+      explanation: "Correct. Update a device twin desired property, which can be done using each of the three tools."
+    - content: "Update a device twin reported property."
       isCorrect: false
-      explanation: "Update a device twin reported property, which cannot be set from any of these three tools, but can be read from all three tools."
+      explanation: "Incorrect. Device twin reported properties cannot be set from any of these three tools, but can be read from all three tools."
       

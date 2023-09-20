@@ -51,7 +51,7 @@ Here, you learn about Azure CLI scripting capabilities that you can use to manag
     Device twin queries
   :::column-end:::
   :::column:::
-    Query all device twins to retrieve those twins with arbitrary conditions, such as identifying the devices that are available for use.
+    Query all device twins to retrieve those twins that match specified conditions, such as identifying the devices that are available for use.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -101,7 +101,8 @@ Set a desired property interval = 3000 by running the following command:
 
 ```bash
 az iot hub device-twin update --hub-name <your hub name> \
-  --device-id <your device id> --set properties.desired.interval = 3000
+  --device-id <your device id> \
+  --set properties.desired.interval = 3000
 
 ```
 
@@ -160,7 +161,7 @@ az iot hub query --hub-name <your hub name> \
 Create an edge enabled IoT device with default authorization (shared private key).
 
 ```bash
-az iot hub device-identity create -n <your hub name> -d <your device name> --ee
+az iot hub device-identity create --hub-name <your hub name> -device-id <your device id> --ee
 ```
 
 ## Device Update for IoT Hub
