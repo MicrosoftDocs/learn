@@ -8,8 +8,8 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
   ms.custom: team=nextgen, devx-track-azurecli
+  ms.service: iot-edge
 durationInMinutes: 10 # dummy number at present
 content: |
   [!include[](includes/4-exercise-configure-hub.md)]

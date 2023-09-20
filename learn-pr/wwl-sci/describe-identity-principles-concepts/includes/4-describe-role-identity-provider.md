@@ -7,7 +7,7 @@ With a central identity provider, organizations can establish authentication and
 
 Watch this video for more information about modern authentication and how it works with a central identity provider.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Kdt9 ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=24d9f006-33a7-4b37-9aba-d35f16ab372d]
 
 As you see in the video, thanks to modern authentication, the client communicates with the identity provider by giving an identity that can be authenticated. When the identity (which can be a user or an application)  has been verified, the identity provider issues a *security token* that the client sends to the server.
 

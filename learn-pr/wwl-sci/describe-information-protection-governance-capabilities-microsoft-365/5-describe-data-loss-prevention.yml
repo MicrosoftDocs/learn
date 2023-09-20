@@ -4,10 +4,10 @@ title: Describe data loss prevention
 metadata:
   title: Describe data loss prevention
   description: "Describe data loss prevention"
-  ms.date: 06/16/2023
+  ms.date: 09/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/5-describe-data-loss-prevention.md)]
