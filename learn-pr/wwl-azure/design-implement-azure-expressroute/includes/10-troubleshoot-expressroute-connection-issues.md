@@ -1,4 +1,3 @@
-
 As an Azure network engineer supporting an ExpressRoute deployment, you will have to diagnose and resolve any ExpressRoute connection issues that arise.
 
 ExpressRoute connectivity traditionally involves three distinct network zones, as follows:
@@ -12,7 +11,7 @@ ExpressRoute connectivity traditionally involves three distinct network zones, a
 
 ## **Verify circuit provisioning and state through the Azure portal**
 
-Provisioning an ExpressRoute circuit establishes a redundant Layer 2 connections between CEs/PE-MSEEs (2)/(4) and MSEEs (5).
+Provisioning an ExpressRoute circuit establishes a redundant Layer 2 connections between customer edge routers, provider edge routers/switches that face Microsoft Enterprise Edge ExpressRoute routers and Microsoft Enterprise Edge ExpressRoute routers.
 
 > [!TIP]
 > A service key uniquely identifies an ExpressRoute circuit. Should you need assistance from Microsoft or from an ExpressRoute partner to troubleshoot an ExpressRoute issue, provide the service key to readily identify the circuit.
