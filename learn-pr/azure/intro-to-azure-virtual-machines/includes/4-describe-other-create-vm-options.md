@@ -66,7 +66,7 @@ New-AzVm `
     -ResourceGroupName "TestResourceGroup" `
     -Name "test-wp1-eus-vm" `
     -Location "East US" `
-    -Image Debian `
+    -Image Debian11 `
     -VirtualNetworkName "test-wp1-eus-network" `
     -SubnetName "default" `
     -SecurityGroupName "test-wp1-eus-nsg" `
