@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-deploy-configure-azure-monitor.prepare-azure-environment
+title: Prepare your Azure environment
+metadata:
+  title: Prepare your Azure environment
+  description: "Prepare your Azure environment"
+  ms.date: 09/20/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+durationInMinutes: 30
+content: |
+  [!include[](includes/2-prepare-azure-environment.md)]
