@@ -1,10 +1,10 @@
-Creating a *value stream map*, or VSM, helps you analyze your current release cycle process. The purpose of a VSM is to visually show where in the process a team creates value and where there's waste. The goal is to arrive at a process that delivers maximum value to the customer with minimum waste. A VSM can help you pinpoint those areas that either don't contribute any value or that actually reduce the value of the product.
+Creating a *value stream map*, or VSM, helps you analyze your current release-cycle process. The purpose of a VSM is to visually show where in the process a team creates value and where there's waste. The goal is to arrive at a process that delivers maximum value to the customer with minimum waste. A VSM can help you pinpoint those areas that either don't contribute any value or that actually reduce the value of the product.
 
 Let's see how Tailspin measures up.
 
 Mara, who's new to the team, is going to create a VSM to help her understand the existing process. With a VSM, she'll get a sense of where the team fits into the DevOps maturity model. As it turns out, more mature teams typically release faster, with greater confidence, and with fewer bugs than less mature teams.
 
-Mara knows she doesn't understand everything yet. So she's going to create a quick VSM on the whiteboard in the meeting room. There'll be some gaps and unanswered questions, but that's okay. It's a start. When she's done as much as she can, she'll share it with the team. The VSM will give everyone a common starting point for identifying the first steps toward improving how Tailspin develops and releases its websites.
+Mara knows she doesn't understand everything yet, so she's going to create a quick VSM on the whiteboard in the meeting room. There'll be some gaps and unanswered questions, but that's okay. It's a start. When she's done as much as she can, she'll share it with the team. The VSM will give everyone a common starting point for identifying the first steps toward improving how Tailspin develops and releases its websites.
 
 Let's take a look at her map.
 
@@ -12,7 +12,7 @@ Let's take a look at her map.
 
 Mara gathers the team in the meeting room to present her VSM.
 
-:::image type="content" source="../media/4-vsm-whiteboard2.png" alt-text="Screenshot of a picture of a whiteboard showing the value stream map. The image highlights six important phases in the development process.":::
+:::image type="content" source="../media/4-vsm-whiteboard2.png" alt-text="Photo of a whiteboard showing the value stream map. The image highlights six important phases in the development process.":::
 
 **Mara:** A VSM helps us measure where a process has value to the customer and where it's eating up time without producing any value. Our map begins on the upper-left with the functional specification for the software. We'll follow just one feature to see how it moves through our current release cycle.
 
@@ -20,7 +20,7 @@ Mara gathers the team in the meeting room to present her VSM.
 
 ### Development processes
 
-Creating a new feature currently starts with creating a label in source control :::image type="icon" source="../../shared/media/callout-01.png":::. We have one person who can create labels, and that's Andy. We request a label by email. We use a centralized version control system, so Andy waits until all the existing code is checked in and stable before he creates the label. After the label is created, we get an email saying we can begin work. This process takes up to three days and has no value to the customer. Things with no value to the customer should take as little time as possible.
+Creating a new feature currently starts with creating a label in source control :::image type="icon" source="../../shared/media/callout-01.png":::. We have one person who can create labels, and that's Andy. We request a label by email. We use a centralized version-control system, so Andy waits until all the existing code is checked in and stable before he creates the label. After the label is created, we get an email saying we can begin work. This process takes up to three days and has no value to the customer. Things with no value to the customer should take as little time as possible.
 
 Coding a feature takes about four days for one person after we get access to all the files we need :::image type="icon" source="../../shared/media/callout-02.png":::. We have to be on the corporate network in order to access source control. This time has value to the customer. They want this feature.
 
@@ -34,7 +34,7 @@ Andy then has to take time to triage the bugs and assign work :::image type="ico
 
 ### Operations processes
 
-When Amita approves a build, she hands it off to Tim. Tim needs to deploy this build to the pre-production servers for more testing. Often, the pre-production servers are out of sync with the latest patches and updates that are needed to run the website. It takes Tim about two days to deploy to pre-production and run some tests. Again, while deploying to pre-production doesn't add value, it's necessary :::image type="icon" source="../../shared/media/callout-05.png":::.
+When Amita approves a build, she hands it off to Tim. Tim needs to deploy this build to the pre-production servers for more testing. Often, the pre-production servers are out of sync with the latest patches and updates needed to run the website. It takes Tim about two days to deploy to pre-production and run some tests. Again, while deploying to pre-production doesn't add value, it's necessary :::image type="icon" source="../../shared/media/callout-05.png":::.
 
 After a build is ready for production, leadership needs to approve the release before it can be deployed. The approval happens in a meeting. It takes four days to get leadership to meet and review the release.
 
@@ -64,9 +64,9 @@ As you can see, we have a lot of room for improvement. And taking 22 days to dev
 
 ## Where do we go from here?
 
-**Mara:** It helps to see where we're now so that we can pinpoint the areas where there's waste. We want to minimize the time we spend that has no value to the customer. I believe we can really improve our efficiency by adopting a DevOps approach. For one thing, we can automate many of these steps, and that will definitely cut down on the time.
+**Mara:** It helps to see where we are now so that we can pinpoint the areas where there's waste. We want to minimize the time we spend that has no value to the customer. I believe we can really improve our efficiency by adopting a DevOps approach. For one thing, we can automate many of these steps, and that will definitely cut down on the time.
 
-I'm not suggesting we drop our current processes, but I think we can work toward a more efficient process in small increments, without disrupting what we currently have in place.
+I'm not suggesting we drop our current processes, but I think we can work toward a more efficient process in small increments without disrupting what we currently have in place.
 
 Let's look at just a couple of areas where we can improve.
 
