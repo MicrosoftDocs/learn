@@ -50,7 +50,7 @@ As you develop with Copilot, you'll find that it can help you complete your code
 
     You might notice that Copilot has multiple suggestions. You can click the arrow to navigate through suggestions.
 
-    ![Copilot suggestions.](../media/copilot-code-suggestion.png)
+    ![Screenshot of Copilot suggestions.](../media/copilot-code-suggestion.png)
 
     Copilot may suggest code similar to the following code block:
 

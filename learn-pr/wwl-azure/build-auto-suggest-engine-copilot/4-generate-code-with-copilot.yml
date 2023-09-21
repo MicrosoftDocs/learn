@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-auto-suggest-engine-copilot.generate-code-with-copilot
-title: Exercise - Use Copilot to generate code
+title: Exercise - Use Copilot to autocomplete code
 metadata:
-  title: Exercise - Use Copilot to generate code
-  description: "Exercise - Use Copilot to generate code"
-  ms.date: 09/20/2023
+  title: Exercise - Use Copilot to autocomplete code
+  description: "Exercise - Use Copilot to autocomplete code"
+  ms.date: 09/21/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial

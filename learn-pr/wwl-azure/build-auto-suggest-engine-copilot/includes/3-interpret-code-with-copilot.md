@@ -36,7 +36,7 @@ In this exercise, you'll familiarize yourself with the Trie project by using Cop
 1. Right-click the selected code. Under **Copilot**, click **Explain this**
 
 1. In the chat, enter "Explain line by line"
-    
+   
     Copilot Chat provides an explanation for each line of code in the selection.
 
 ## Add code comments with Copilot
@@ -67,7 +67,7 @@ You can use Copilot to autocomplete code comments which can help you better unde
 
 1. Continue with this pattern to add comments to the rest of the code in the `Insert` method.
 
-    ![Copilot autocompletes comments for the code.](../media/copilot-comment-suggestions.png)
+    ![Screenshot of Copilot autocompletes comments for the code.](../media/copilot-comment-suggestions.png)
 
 ## Add code comments using Copilot Chat
 
@@ -83,7 +83,7 @@ Copilot Chat can add comments for multiple lines of code, which is helpful when 
 
     Copilot Chat should suggest comments for each line of code in the selection.
 
-    ![Copilot Chat suggests comments for each line of code in the selection.](../media/insert-comments-example.png)
+    ![Screenshot of Copilot Chat suggests comments for each line of code in the selection.](../media/insert-comments-example.png)
 
 1. Click **Accept**
 
