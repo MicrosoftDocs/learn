@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-basic-security-capabilities-azure.describe-azure-network-security-groups
-title: Describe Azure network security groups
+title: Describe Azure Network Security Groups
 metadata:
-  title: Describe Azure network security groups
-  description: "Describe Azure network security groups"
+  title: Describe Azure Network Security Groups
+  description: "Describe Azure Network Security Groups"
   ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
