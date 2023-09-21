@@ -6,10 +6,11 @@ Here, you'll look at the Network Watcher tool categories, the tools in each cate
 
 ## What is Network Watcher?
 
-Network Watcher is an Azure service that combines tools in a central place to diagnose the health of Azure networks. The Network Watcher tools are divided into two categories:
+Network Watcher is an Azure service that combines tools in a central place to diagnose the health of Azure networks. The Network Watcher tools are divided into three categories:
 
 - Monitoring tools
-- Diagnostic tools
+- Network Diagnostic tools
+- Traffic logging tools
 
 With tools to monitor for and diagnose problems, Network Watcher gives you a centralized hub for identifying network glitches, CPU spikes, connectivity problems, memory leaks, and other issues before they affect your business.
 
@@ -155,6 +156,44 @@ The following table shows examples of different fault types.
 | VipUnResponsive | The primary instance of the gateway can't be reached because of a health probe failure.| No |
 | PlatformInActive | There's an issue with the platform.| No |
 | | |
+
+## Traffic logging tools
+
+Network Watcher includes the two following traffic tools:
+
+- Flow logs
+- Traffic analytics
+
+### What is the flow logs tool?
+
+Flow logs allows you to log information about IP traffic flowing through a network security group. Flow logs stores data in Azure storage. Flow data is sent to Azure Storage from where you can access it and export it to any visualization tool, security information and event management (SIEM) solution, or intrusion detection system (IDS) of your choice. You can use this data to analyze traffic patterns and troubleshoot connectivity issues.
+
+Flow logs use cases can be categorized into two types. Network monitoring and usage monitoring and optimization.
+
+#### Network monitoring
+
+- Identify unknown or undesired traffic.
+- Monitor traffic levels and bandwidth consumption.
+- Filter flow logs by IP and port to understand application behavior.
+- Export flow logs to analytics and visualization tools of your choice to set up monitoring dashboards.
+
+#### Usage monitoring and optimization
+
+- Identify top talkers in your network.
+- Combine with GeoIP data to identify cross-region traffic.
+- Understand traffic growth for capacity forecasting.
+- Use data to remove overly restrictive traffic rules.
+
+
+### What is the traffic analysis tool?
+
+Traffic analytics is a cloud-based solution that provides visibility into user and application activity in your cloud networks. Specifically, traffic analytics analyzes Azure Network Watcher NSG flow logs to provide insights into traffic flow in your Azure cloud. With traffic analytics, you can:
+
+- Visualize network activity across your Azure subscriptions.
+- Identify hot spots.
+- Secure your network by using information to identify threats.
+- Optimize your network deployment for performance and capacity by understanding traffic flow patterns across Azure regions and the internet.
+- Pinpoint network misconfigurations that can lead to failed connections in your network.
 
 ## Azure Network Watcher use case scenarios
 
