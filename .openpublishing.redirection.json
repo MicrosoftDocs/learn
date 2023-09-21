@@ -27199,12 +27199,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "/training/modules/examine-device-management-tools/3-device-management-using-azure-command-line-interface.md",
+      "source_path": "learn-pr/wwl-azure/examine-device-management-tools/3-device-management-using-azure-command-line-interface.md",
       "redirect_url": "/training/modules/examine-device-management-tools",
       "redirect_document_id": false
     },
     {
-      "source_path": "/training /modules/examine-device-management-tools/4-device-management-using-azure-iot-tools-visual-studio-code.md",
+      "source_path": "learn-pr/wwl-azure/examine-device-management-tools/4-device-management-using-azure-iot-tools-visual-studio-code.md",
       "redirect_url": "/training/modules/examine-device-management-tools",
       "redirect_document_id": false
     }
