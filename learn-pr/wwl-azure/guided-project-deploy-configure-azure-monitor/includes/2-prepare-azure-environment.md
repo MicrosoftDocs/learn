@@ -2,8 +2,11 @@
 
 You must first complete the following steps to prepare your Azure environment before you begin the lab exercises:
 
-!NOTE]
-To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
+> [!NOTE]
+> To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
+
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
+](https://microsoftlearning.github.io/APL-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_01_prepare_azure_environment.html)
 
 ## Prepare your bring-your-own-subscription (BYOS)
 
@@ -13,8 +16,8 @@ This set of lab exercises assumes that you have global administrator permissions
 1. On the **Resource Groups** page, select **Create**.
 1. On the **Create a Resource Group** page, select your subscription and enter the name rg-alpha. Set the region to East US, choose **Review + Create**, and then choose **Create**.
 
-[NOTE]
-This set of exercises assumes that you choose to deploy in the East US Region, but you can change this to another region if you choose. Just remember that each time you see East US mentioned in these instructions you will need to substitute the region you have chosen.
+> [!NOTE]
+> This set of exercises assumes that you choose to deploy in the East US Region, but you can change this to another region if you choose. Just remember that each time you see East US mentioned in these instructions you will need to substitute the region you have chosen.
 
 ## Create App Log Examiners security group
 

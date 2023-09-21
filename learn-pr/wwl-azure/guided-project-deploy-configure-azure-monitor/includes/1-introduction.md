@@ -9,8 +9,8 @@ In this module, you practice configuring monitoring of various workloads and inf
 
 By the end of this guided exercise, you gain hands-on experience in creating and configuring these services in Azure.
 
-[!NOTE]
-This is a guided project module where you complete an end-to-end project by following step-by-step instructions.
+> [!NOTE]
+> This is a guided project module where you complete an end-to-end project by following step-by-step instructions.
 
 | Skilling area | Skilling task |
 | --- | --- | 
