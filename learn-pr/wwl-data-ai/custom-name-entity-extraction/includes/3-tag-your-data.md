@@ -5,7 +5,7 @@ Labeling, or tagging, your data correctly is an important part of the process to
 - **Precision** - Label your entities consistently, without unnecessary extra words. Precision ensures only the correct data is included in your extracted entity.
 - **Completeness** - Label your data completely, and don't miss any entities. Completeness helps your model always recognize the entities present.
 
-:::image type="content" source="../media/ner-tag-entity-screenshot.png" alt-text="Screenshot of labeling an entity in Language Studio." lightbox="../media/ner-tag-entity-screenshot.png":::
+:::image type="content" source="../media/tag-entity-screenshot.png" alt-text="Screenshot of labeling an entity in Language Studio." lightbox="../media/tag-entity-screenshot.png":::
 
 ## How to label your data
 
