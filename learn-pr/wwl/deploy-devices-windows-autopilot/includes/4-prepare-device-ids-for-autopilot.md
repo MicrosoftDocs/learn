@@ -1,5 +1,3 @@
-
-
 After you meet all the prerequisites, you can set up Windows Autopilot deployment. The setup process includes:
 
  -  Obtaining the hardware IDs of the devices that you want to deploy to the cloud service.

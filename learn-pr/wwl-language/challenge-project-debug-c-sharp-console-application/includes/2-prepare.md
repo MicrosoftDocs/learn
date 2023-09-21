@@ -1,7 +1,6 @@
 
 
 
-
 In this challenge project, you'll use the Visual Studio Code debugger tools to debug a C# console application.
 
 ## Project specification

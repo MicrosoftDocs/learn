@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365.summary-resources
+title: Summary and resources
+metadata:
+  title: Summary and resources
+  description: "Summary and resources"
+  ms.date: 09/09/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary-resources.md)]

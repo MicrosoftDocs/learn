@@ -8,8 +8,8 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
   ms.custom: team=nextgen
+  ms.service: iot-edge
 durationInMinutes: 6 # dummy number at present
 content: |
   [!include[](includes/10-exercise-deploy-solution.md)]
