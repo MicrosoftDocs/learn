@@ -12,7 +12,7 @@ You can learn more about the REST APIs in the [Speech to text REST API documenta
 
 While the specific details vary, depending on the SDK being used (Python, C#, and so on); there's a consistent pattern for using the **Speech to text** API:
 
-:::image type="content" source="../media/speech-to-text.png" alt-text="A SpeechRecognizer object is created from a SpeechConfig and AudioConfig, and its RecognizeOnceAsync method is used to call the Speech API":::
+:::image type="content" source="../media/speech-to-text.png" alt-text="A diagram showing how a SpeechRecognizer object is created from a SpeechConfig and AudioConfig, and its RecognizeOnceAsync method is used to call the Speech API.":::
 
 1. Use a **SpeechConfig** object to encapsulate the information required to connect to your Azure AI Speech resource. Specifically, its **location** and **key**.
 1. Optionally, use an **AudioConfig** to define the input source for the audio to be transcribed. By default, this is the default system microphone, but you can also specify an audio file.
