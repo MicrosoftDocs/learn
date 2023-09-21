@@ -37,7 +37,7 @@ Shifting left is a process change, but it isn’t a single control or specific t
 
 GitHub offers security features that help keep data secure in repositories and across organizations. Features include security policy, Depandabot alerts, security advisories, and code scanning. To learn more, see [GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features).
 
-Below we'll explore some of these features and ways to distribute security and operational responsibilities across all phases of the software-development lifecycle.
+Below we'll explore some of these features and learn ways to distribute security and operational responsibilities across all phases of the software-development lifecycle.
 
 ## Communicate a security policy with SECURITY.md
 
