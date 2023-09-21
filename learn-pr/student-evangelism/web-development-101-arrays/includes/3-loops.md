@@ -16,7 +16,7 @@ A `for` loop requires three parts to iterate:
 
    You ordinarily use this value as the first position you want to access in an array.
 
-- **Condition**: An expression that uses comparison operators to cause the loop to stop when `true`. Here's an example of a condition that stops when the array is out of indexes:
+- **Condition**: An expression that uses comparison operators to cause the loop to stop when `false`. Here's an example of a condition that stops when the array is out of indexes:
 
    ```javascript
    i < 10;   
