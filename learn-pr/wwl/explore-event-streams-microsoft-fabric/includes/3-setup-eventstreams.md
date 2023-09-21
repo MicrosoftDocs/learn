@@ -14,7 +14,7 @@ To create an event source, you need to follow these steps:
 2. Enter a name for the new eventstream and select Create. You'll see the main editor canvas where you can add sources and destinations to your eventstream.
 3. Select New source on the ribbon or ![Screenshot of new button in main editor.](../media/new-button-main-editor.png) in the main editor canvas and then choose your source type. You can pick Azure Event Hubs, sample data, or custom app.
 4. Enter a source name for the new source and select a cloud connection to your source. If you don’t have a cloud connection, select Create new connection to create one. You'll need to provide the information of your source, such as connection name, connection type, authentication, and privacy level.
-5. Select a Data format of the incoming real-time events that you want to get from your source. The event streams feature supports the ingestion of events from Azure Event Hubs in JSON, Avro, and CSV (with header) data formats.
+5. Select a Data format of the incoming real-time events that you want to get from your source. The eventstreams feature supports the ingestion of events from Azure Event Hubs in JSON, Avro, and CSV (with header) data formats.
 6. Select a Consumer group that can read the event data from your source and then select Add. You'll see the source added to your eventstream on the canvas.
 
 ## Event sources available in eventstream

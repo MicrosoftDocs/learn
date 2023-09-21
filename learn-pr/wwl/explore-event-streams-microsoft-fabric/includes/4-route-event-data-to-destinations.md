@@ -42,7 +42,7 @@ In eventstream there are currently four current destination types supported incl
 5. Review the status of your data ingestion and select Done. A lakehouse destination tile appears on the canvas, connected to your eventstream. Real-time events are converted into Delta Lake format and then stored in the designated lakehouse tables.
 
   > [!NOTE] 
-  > The other destination types, including KQL Database, Custom App, and Reflex can be used in combination with your source or as a stand-alone event stream.
+  > The other destination types, including KQL Database, Custom App, and Reflex can be used in combination with your source or as a stand-alone eventstream.
 
 ## Add event processor operators
 

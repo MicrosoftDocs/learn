@@ -6,7 +6,7 @@ Microsoft Fabric Eventstream is a no-code feature that lets you capture and send
 
 Microsoft Fabric Eventstream works by creating a pipeline of events from multiple internal and external sources to different destinations. You can think of it as a conveyor belt that moves data from one place to another. You can also add some transformations to the data along the way, such as filtering, aggregating, or enriching.
 
-[ ![Screenshot of mulitple event stream sources and destrinations.](../media/event-stream-multiple-sources-destinations.png)](../media/event-stream-multiple-sources-destinations-large.png)
+[ ![Screenshot of multiple eventstream sources and destinations.](../media/event-stream-multiple-sources-destinations.png)](../media/event-stream-multiple-sources-destinations-large.png)
 
 Eventstream's main editor can be used to design your pipeline by dragging and dropping different nodes, such as sources, destinations, and transformations. You can also see the event data flowing through the pipeline in real-time. Microsoft Fabric Eventstream handles the scaling, reliability, and security of your eventstream automatically. You don’t need to write any code or manage any infrastructure to use Microsoft Fabric Eventstream.
 
