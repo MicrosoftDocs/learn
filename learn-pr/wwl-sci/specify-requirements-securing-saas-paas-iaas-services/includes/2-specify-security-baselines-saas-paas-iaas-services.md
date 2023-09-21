@@ -42,7 +42,7 @@ We recommend that you encrypt your virtual hard disks (VHDs) to help protect you
 
 ### Restrict direct internet connectivity
 
-Monitor and restrict VM direct internet connectivity. Attackers constantly scan public cloud IP ranges for open management ports and attempt “easy” attacks like common passwords and known unpatched vulnerabilities. The following table lists best practices to help protect against these attacks:
+Monitor and restrict VM direct internet connectivity. Attackers constantly scan public cloud IP ranges for open management ports and attempt “easy” attacks like common passwords and known unpatched vulnerabilities. 
 
 ## PaaS security
 
@@ -63,10 +63,6 @@ Principles and patterns for the network perimeter have been available for decade
 ### Develop on Azure App Service
 
 [Azure App Service](https://learn.microsoft.com/azure/app-service/overview) is a PaaS offering that lets you create web and mobile apps for any platform or device and connect to data anywhere, in the cloud or on-premises. App Service includes the web and mobile capabilities that were previously delivered separately as Azure Websites and Azure Mobile Services. It also includes new capabilities for automating business processes and hosting cloud APIs. As a single integrated service, App Service brings a rich set of capabilities to web, mobile, and integration scenarios.
-
-### Azure Cloud Services
-
-[Azure Cloud Services](https://learn.microsoft.com/azure/cloud-services/cloud-services-choose-me) is an example of a PaaS. Like Azure App Service, this technology is designed to support applications that are scalable, reliable, and inexpensive to operate. In the same way that App Service is hosted on virtual machines (VMs), so too is Azure Cloud Services. However, you have more control over the VMs. You can install your own software on VMs that use Azure Cloud Services, and you can access them remotely.
 
 ### Install a web application firewall
 

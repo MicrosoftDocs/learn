@@ -29,7 +29,7 @@ products:
 - azure-blueprints
 - azure-iot-hub
 - azure-stack-hub
-- azure-farmbeats
+- data-manager-for-agri
 subjects:
 - cloud-computing
 - migration

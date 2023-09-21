@@ -4,8 +4,8 @@ metadata:
   title: Refine and test machine learning models
   description: When we think of machine learning, we often focus on the training process. A small amount of preparation before this process can not only speed up and improve learning, but also give us some confidence about how well our models will work when faced with data we have never seen before.
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: interactive-tutorial
 title: Refine and test machine learning models
 summary: When we think of machine learning, we often focus on the training process. A small amount of preparation before this process can not only speed up and improve learning, but also give us some confidence about how well our models will work when faced with data we have never seen before.

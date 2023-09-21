@@ -1,6 +1,6 @@
 String methods are one of the most common method types in Python. You'll often need to manipulate strings to extract information or fit a certain format. Python includes several string methods that are designed to do the most common and useful transformations.
 
-String methods are part of the `str` type. This means that the methods exist as string variables, or part of the string directly. For example, the method `.title()` returns the string in uppercase and can be used with a string directly:
+String methods are part of the `str` type. This means that the methods exist as string variables, or part of the string directly. For example, the method `.title()` returns the string in initial caps and can be used with a string directly:
 
 ```python
 print("temperatures and facts about the moon".title())

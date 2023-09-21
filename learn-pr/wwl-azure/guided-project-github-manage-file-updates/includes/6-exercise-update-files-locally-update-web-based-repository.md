@@ -1,4 +1,3 @@
-
 Now that you have the local repository set up on your computer, it’s time to start plugging in the grades for the different projects and students.
 
 One of the benefits of using Git is that you can make your changes in a branch, and then merge that branch back into the main branch if you’re happy with the changes you’ve made. While entering grades may not require that level of safety, when working with application code, the ability to view and test your changes before moving them to the main branch can be critical.

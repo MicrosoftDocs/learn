@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-form-recognizer
 metadata:
-  title: Introduction to Form Recognizer
-  description: Form Recognizer enables automated data identification and extraction from your documents. 
+  title: Introduction to Azure AI Document Intelligence
+  description: Azure AI Document Intelligence enables automated data identification and extraction from your documents.
   ms.date: 03/14/2023
   author: laujan
   ms.author: lajanuar
@@ -10,13 +10,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: applied-ai-services
   ms.subservice: forms-recognizer 
-title: Introduction to Form Recognizer 
-summary: Form Recognizer enables automated data identification and extraction from your documents. You can use a programming language SDK or the REST API to easily retrieve and utilize your data.
+title: Introduction to Azure AI Document Intelligence
+summary: Azure AI Document Intelligence enables automated data identification and extraction from your documents. You can use a programming language SDK or the REST API to easily retrieve and utilize your data.
 abstract: |
   In this module, you will:
-  - Assess the benefits of Form Recognizer
-  - Describe what Form Recognizer is
-  - Define scenarios where Form Recognizer can be applied
+  - Assess the benefits of Azure AI Document Intelligence
+  - Describe what Azure AI Document Intelligence is
+  - Define scenarios where Azure AI Document Intelligence can be applied
 prerequisites: A basic familiarity with Azure
 iconUrl: /training/achievements/intro-to-form-recognizer.svg
 levels:
@@ -29,8 +29,8 @@ roles:
 - student
 products:
 - azure
-- azure-cognitive-services
-- azure-form-recognizer
+- ai-services
+- document-intelligence
 subjects:
 - classification-analysis
 units:

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-foundation-models-in-model-catalog.explore-foundation-models
+title: |
+  Explore foundation models in the model catalog
+metadata:
+  title: |
+    Explore foundation models in the model catalog of Azure Machine Learning
+  description: "Learn about foundation models and explore the available open source models in the model catalog of Azure Machine Learning."
+  ms.date: 7/25/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-explore-foundation-models.md)]

@@ -12,4 +12,4 @@ metadata:
   ms.custom: team=nextgen
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-power-bi.md)]
+  [!INCLUDE[](includes/6-power-bi.md)]

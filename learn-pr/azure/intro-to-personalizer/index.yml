@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-personalizer
 metadata:
   title: Introduction to Personalizer
-  description: Discover the Personalizer service that is part of Azure Cognitive Services.
+  description: Discover the Azure AI Personalizer service that is part of Azure AI services.
   ms.date: 02/23/2023
   author: gerryo
   ms.author: gerryo
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: | 
   - Basic familiarity with Azure
   - Ability to navigate the Azure portal
-  - Basic familiarity with Azure Cognitive Services
+  - Basic familiarity with Azure AI services
   - Foundational knowledge of REST
 iconUrl: /training/achievements/intro-to-personalizer.svg
 levels:
@@ -32,7 +32,7 @@ roles:
 - functional-consultant
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 - azure-cloud-services
 units:
 - learn.azure.intro-to-personalizer.1-introduction

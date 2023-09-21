@@ -4,12 +4,10 @@ title: Ready
 metadata:
   title: Ready
   description: "Ready"
-  ms.date: 09/20/2020
+  ms.date: 08/23/2023
   author: wwlpublish
-  ms.author: rknapp
+  ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
 durationInMinutes: 8
 content: |
   [!include[](includes/5-ready.md)]

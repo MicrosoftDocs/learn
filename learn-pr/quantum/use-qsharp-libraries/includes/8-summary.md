@@ -7,6 +7,6 @@ In this module, we covered a lot. Here are a few key concepts to keep in mind:
 
 ## Learn more
 
-* If you haven't yet completed it, you can see another application of Grover's algorithm in the module [Solving graph coloring problems by using Grover's search](/training/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true).
-* In addition to the API reference documentation, you can find conceptual information and further learning resources at the [Microsoft Quantum documentation](/quantum?azure-portal=true).
-* The source code of the Q# libraries is primarily located in the [microsoft/QuantumLibraries](https://github.com/microsoft/QuantumLibraries?azure-portal=true) repository on GitHub. Some parts are in the [microsoft/qsharp-runtime](https://github.com/microsoft/qsharp-runtime?azure-portal=true) and [microsoft/quantum-nc](https://github.com/microsoft/quantum-nc?azure-portal=true) repositories.
+* If you haven't yet completed it, you can see another application of Grover's algorithm in the [Solving graph coloring problems by using Grover's search](/training/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true) module.
+* In addition to the API reference documentation, you can find conceptual information and further learning resources in the [Microsoft Quantum documentation](/quantum?azure-portal=true).
+* The Q# libraries source code is primarily located in the [microsoft/QuantumLibraries](https://github.com/microsoft/QuantumLibraries?azure-portal=true) repository on GitHub. Some parts are in the [microsoft/qsharp-runtime](https://github.com/microsoft/qsharp-runtime?azure-portal=true) and [microsoft/quantum-nc](https://github.com/microsoft/quantum-nc?azure-portal=true) repositories.

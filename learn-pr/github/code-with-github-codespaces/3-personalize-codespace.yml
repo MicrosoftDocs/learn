@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.github.code-with-github-codespaces.personalize-your-codespace
+title: Personalize your Codespace
+metadata:
+  title: Personalize your Codespace
+  description: This content is part of the "Code with GitHub Codespaces" module.
+  ms.date: 07/18/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: module-standard-task-based
+  ms.prod: github
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-personalize-codespace.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,3 @@
-
-
-
-
 The Azure File storage service allows you to create SMB file shares in Azure just as you would with an on-premises file server. Within each file share, you can create multiple levels of folders to categorize content. Each directory can contain multiple files and folders. Files can be up to 1 TB in size. The maximum size of a file share is 5 TB.
 
 The Azure File storage service is available via both SMB 2.1 and SMB 3.x protocols. Starting with Windows 8 and Windows Server 2012, the operating system includes support for SMB 3.x. Linux distributions also provide support for SMB 3.x by using the cifs-utils package from the Samba project.

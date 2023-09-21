@@ -1,19 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-fundamentals-describe-azure-architecture-services
 metadata:
-  title: 'Azure Fundamentals: Describe Azure architecture and services'
-  description: 'Azure Fundamentals: Describe Azure architecture and services'
-  ms.date: 11/29/2022
+  title: 'Microsoft Azure Fundamentals: Describe Azure architecture and services'
+  description: 'Microsoft Azure Fundamentals: Describe Azure architecture and services'
+  ms.date: 08/11/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Azure Fundamentals: Describe Azure architecture and services'
+title: 'Microsoft Azure Fundamentals: Describe Azure architecture and services'
 prerequisites: |
   * Basic familiarity with IT terms and concepts
 summary: |
-  The Microsoft Azure Fundamentals training is composed of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance.
-  Microsoft Azure Fundamentals: Azure architecture and services is the second learning path in the Microsoft Azure Fundamentals course. This learning path explores Microsoft Azure, its architecture, and some of the most commonly used services and resources.
+  New to the cloud? Microsoft Azure fundamentals is a three-part series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free. Complete all of the learning paths in the series if you are preparing for Exam AZ-900: Microsoft Azure Fundamentals.
+  This is the second learning path in the series, **Azure Fundamentals: Describe Azure architecture and services**. The other learning paths in the series are [**Part 1: Describe cloud concepts**](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/) and [**Part 3: Describe Azure management and governance**](/training/paths/describe-azure-management-governance/).
 iconUrl: /training/achievements/azure-fundamentals-describe-azure-architecture-services.svg
 levels:
 - beginner

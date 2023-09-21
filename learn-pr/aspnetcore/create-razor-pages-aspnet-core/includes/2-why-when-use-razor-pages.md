@@ -2,13 +2,13 @@ In this unit, you'll learn when and why to use Razor Pages for your ASP.NET Core
 
 ## The benefits of Razor Pages
 
-Razor Pages is a server-side, page-centric programming model for building web UI with ASP.NET Core. Benefits include:
+Razor Pages is a server-side, page-centric programming model for building web UIs with ASP.NET Core. Benefits include:
 
 * Easy setup for dynamic web apps using HTML, CSS, and C#.
 * Organized files by feature for easier maintenance.
 * Combines markup with server-side C# code using Razor syntax.
 
-Razor Pages utilize *[Razor](/aspnet/core/mvc/views/razor)* for embedding server-based code into webpages. Razor syntax combines HTML and [C#](https://dotnet.microsoft.com/languages/csharp) to define the dynamic rendering logic. This means you can use C# variables and methods within your HTML markup to generate dynamic web content on the server at runtime. It's important to understand that Razor Pages are not a replacement for HTML, CSS, or JavaScript. They are a way to combine these technologies to create dynamic web content.
+Razor Pages utilize *[Razor](/aspnet/core/mvc/views/razor)* for embedding server-based code into webpages. Razor syntax combines HTML and [C#](https://dotnet.microsoft.com/languages/csharp) to define the dynamic rendering logic. This means you can use C# variables and methods within your HTML markup to generate dynamic web content on the server at runtime. It's important to understand that Razor Pages are not a replacement for HTML, CSS, or JavaScript, but rather combines these technologies to create dynamic web content.
 
 ### Separation of concerns
 

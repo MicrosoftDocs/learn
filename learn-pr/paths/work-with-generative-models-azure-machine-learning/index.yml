@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.work-with-generative-models-azure-machine-learning
+metadata:
+  title: Work with generative artificial intelligence (AI) models in Azure Machine Learning
+  description: Work with generative artificial intelligence (AI) models in Azure Machine Learning
+  ms.date: 09/12/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with generative artificial intelligence (AI) models in Azure Machine Learning
+prerequisites: |
+  Familiarity with Azure and the Azure portal.
+summary: |
+  Explore the use of generative artificial intelligence (AI) models for natural language processing (NLP) in Azure Machine Learning.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- ai-services
+- azure-machine-learning
+subjects:
+- machine-learning
+modules:
+- learn.explore-foundation-models-in-model-catalog
+- learn.finetune-foundation-model-with-azure-machine-learning
+trophy:
+  uid: learn.wwl.work-with-generative-models-azure-machine-learning.trophy

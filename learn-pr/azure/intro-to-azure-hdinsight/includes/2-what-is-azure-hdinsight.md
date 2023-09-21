@@ -22,28 +22,28 @@ Azure HDInsight is a fully managed, cloud-based, open-source analytics service f
 
 HDInsight provides several benefits for organizations that are working with big data. It's:
 
-- Open-source. Enables you to create optimized clusters for various open-source frameworks.
-- Reliable. Provides an end-to-end SLA for all production workloads.
-- Scalable. Enables you to scale workloads to respond to demand changes.
+- **Open-source**: Enables you to create optimized clusters for various open-source frameworks.
+- **Reliable**: Provides an end-to-end SLA for all production workloads.
+- **Scalable**: Enables you to scale workloads to respond to demand changes.
 
    > [!TIP]
    > By creating clusters on demand, you can reduce your costs. You pay only for what you use.
 
-- Secure. Enables you to protect your enterprise data assets through integration with:
+- **Secure**: Enables you to protect your enterprise data assets through integration with:
 
   - Azure Virtual Network
   - Azure encryption technologies
   - Azure Active Directory
 
-- Compliant. Meets popular industry and government compliance standards.
-- Monitored. Integrates with Azure Monitor logs to provide a single interface. Monitor all clusters by using the single interface.
+- **Compliant**: Meets popular industry and government compliance standards.
+- **Monitored**: Integrates with Azure Monitor logs to provide a single interface. Monitor all clusters by using the single interface.
 
 ## How HDInsight can help you work with big data
 
 You can use HDInsight for many scenarios utilizing big-data processing. Your data can be:
 
-- Historical data. This data is already collected and stored.
-- Real-time data. This data is directly streamed from the source.
+- **Historical data**: This data is already collected and stored.
+- **Real-time data**: This data is directly streamed from the source.
 
 The following categories summarize the processing scenarios for this data:
 
@@ -73,7 +73,7 @@ You can use the transformed data for data warehousing or data science.
 
 ### Data warehousing
 
-A data warehouse provides an organization with somewhere to store big data while waiting to analyze it. Data warehousing enables you to:
+A data warehouse provides an organization with somewhere to store big data while waiting to analyze it. Data warehousing allows you to:
 
 - Store your data.
 - Prepare your data for analysis.
@@ -81,7 +81,7 @@ A data warehouse provides an organization with somewhere to store big data while
 
 The following diagram depicts how Apache Hadoop on HDInsight gathers and stores data from several sources. Apache Spark and Apache Hive prepare and analyze the data. Finally, the data is modeled for use with business intelligence (BI) tools. Power BI is used for data visualization.
 
-:::image type="content" source="../media/architecture-data-warehouse.png" alt-text="Depiction of how HDInsight helps several tools gather, store, and prepare data for analysis, and then facilitates data analysis by other tools.":::
+:::image type="content" source="../media/architecture-data-warehouse.png" alt-text="Diagram showing how HDInsight helps several tools gather, store, and prepare data for analysis, and then facilitates data analysis by other tools.":::
 
 Components in this scenario include:
 
@@ -93,27 +93,24 @@ Components in this scenario include:
 
 ### Internet of things
 
-As the following diagram depicts, HDInsight processes streaming data received in real time from different devices and sensors. In this example, several open-source frameworks provide stream processing, including:
-
-- Apache Spark
-- Apache Kafka
+As the following diagram depicts, HDInsight processes streaming data received in real time from different devices and sensors. In this example, several open-source frameworks provide stream processing, including Apache Spark and Apache Kafka.
 
 Azure gateway services and IoT hubs direct data from various sources to these frameworks. The frameworks then process the data, and it passes to:
 
-- Long-term storage
-- Real-time apps
-- Real-time dashboards
+- Long-term storage.
+- Real-time apps.
+- Real-time dashboards.
 
-:::image type="content" source="../media/architecture-iot.png" alt-text="Depiction of the Internet of things scenario, which the preceding text describes.":::
+:::image type="content" source="../media/architecture-iot.png" alt-text="Diagram of the Internet of things scenario, which the preceding text describes.":::
 
 ### Data science
 
 You can use HDInsight to complete common data-science tasks such as:
 
-- Data ingestion
-- Feature engineering
-- Modeling
-- Model evaluation
+- Data ingestion.
+- Feature engineering.
+- Modeling.
+- Model evaluation.
 
 The following diagram depicts a data-science scenario, in which:
 
@@ -121,7 +118,7 @@ The following diagram depicts a data-science scenario, in which:
 2. The ingested data is then stored in Azure storage (either Azure Blob Storage or a Data Lake Store).
 3. Azure Spark on HDInsight processes and prepares the data for Azure Machine Learning. Data is also visualized by using Power BI.
 
-:::image type="content" source="../media/architecture-data-science.png" alt-text="A diagram that displays the data-science scenario, which the preceding text describes.":::
+:::image type="content" source="../media/architecture-data-science.png" alt-text="Diagram that displays the data-science scenario, which the preceding text describes.":::
 
 ### Hybrid
 
@@ -131,4 +128,4 @@ Organizations that have an on-premises, big-data infrastructure can use HDInsigh
 - An Azure ExpressRoute circuit connects the on-premises corporate network environment to Azure virtual networks.
 - A live data migrator for Azure replicates the data received from on-premises to HDInsight.
 
-:::image type="content" source="../media/architecture-hybrid.png" alt-text="Depiction of the hybrid scenario, which the preceding text describes.":::
+:::image type="content" source="../media/architecture-hybrid.png" alt-text="Diagram of the hybrid scenario, which the preceding text describes.":::

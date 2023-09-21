@@ -1,4 +1,3 @@
-
 Features like **multifactor authentication (MFA)** are a great way to secure your organization. Still, users often get frustrated with the additional security layer on top of having to remember their passwords. Passwordless authentication methods are more convenient because the password is removed and replaced with something you have, plus something you are or something you know.
 
 | **Authentication** | **Something you have**                    | **Something you are or know** |

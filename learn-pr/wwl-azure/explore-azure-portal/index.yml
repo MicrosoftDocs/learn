@@ -35,3 +35,4 @@ units:
 - learn.wwl.explore-azure-portal.summary
 badge:
   uid: learn.wwl.explore-azure-portal.badge
+hidden: true

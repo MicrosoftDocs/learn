@@ -1,4 +1,5 @@
 
+
 In this module, you learned how to design for unstructured non-relational data. You compared the features of different types of Azure storage accounts and Storage access tiers. You explored scenarios for using Azure Blob Storage, Azure managed disks, Azure Files, and Azure NetApp Files. You reviewed how to implement support for data redundancy, and examined options for storage security, including customer-managed encryption keys, and secure transfer.
 
 ### Learn more with Azure documentation

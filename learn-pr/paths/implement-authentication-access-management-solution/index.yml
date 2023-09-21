@@ -23,7 +23,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-domain
 - microsoft-authenticator
 - active-directory
 - entra

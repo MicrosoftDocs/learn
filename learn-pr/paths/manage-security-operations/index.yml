@@ -29,7 +29,6 @@ products:
 subjects:
 - security
 modules:
-- learn.azure.protect-against-security-threats-azure
 - learn.azure-security.create-security-baselines
 - learn.azure-security.identify-threats-with-azure-security-center 
 - learn.azure-security.resolve-threats-with-azure-security-center

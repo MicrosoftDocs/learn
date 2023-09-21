@@ -1,0 +1,5 @@
+Contoso needed to understand how to handle the challenges caused by an increasingly complex hybrid infrastructure. They also wanted an easier way to manage Kubernetes clusters and deploy applications to them, while continuing to use Azure as their primary cloud provider.
+
+Azure Arc-enabled Kubernetes allows Contoso to extend the scope of Azure services to their on-premises Kubernetes clusters. By embracing GitOps, Contoso can streamline updates to cluster configuration across their environments, and minimize the risk of configuration drift. By using Azure Arc-enabled Kubernetes, Contoso can optimize and simplify its operations and use familiar Azure services. While Contoso continues to operate in a hybrid environment, Azure Arc-enabled Kubernetes clusters lets its IT staff minimize management overhead for their containerized workloads.
+
+Azure Arc-enabled Kubernetes extends the Azure platform so that companies like Contoso can run applications across datacenters, at the edge, and in multicloud environments. All Kubernetes resources are managed in a single control plane, providing a consistent development and operation experience.

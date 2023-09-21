@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "This unit is the knowledge check for the module, oversee device profiles."
-  ms.date: 04/27/2023
+  ms.date: 08/21/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -35,4 +35,4 @@ quiz:
       explanation: "Incorrect. This item isn't displayed. Try again."
     - content: "All the profiles that have the conflicted setting"
       isCorrect: true
-      explanation: "Correct. In Devices > All devices, you can see any policy settings that are causing a conflict. When there's a conflict, you're also shown all the configuration profiles that contain this setting. By knowing the conflicting setting and the policies that include that setting, it should be easier to resolve the conflict."
+      explanation: "Correct. In Devices > All devices, Holly can see any policy settings that are causing a conflict. When there's a conflict, she's also shown all the configuration profiles that contain this setting. By knowing the conflicting setting and the policies that include that setting, it should be easier to resolve the conflict."
