@@ -33,9 +33,11 @@ With the introduction of DevOps practices however, security testing is much easi
 
 Overall, when the time for rework is taken into account, adding security to your DevOps practices earlier in the development lifecycle allows development teams to catch issues earlier and can actually reduce the overall time it takes to develop quality software.
 
-Shifting left is a process change, but it isn’t a single control or specific tool; it’s about making all of your security more developer-centric and giving developers security feedback where they are. 
+Shifting left is a process change, but it isn’t a single control or specific tool; it’s about making all of your security more developer-centric and giving developers security feedback where they are.
 
-Below are some ways to distribute security and operational responsibilities across all phases of the software-development lifecycle.
+GitHub offers security features that help keep data secure in repositories and across organizations. Features include security policy, Depandabot alerts, security advisories, and code scanning. To learn more, see [GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features).
+
+Below we'll explore some of these features and ways to distribute security and operational responsibilities across all phases of the software-development lifecycle.
 
 ## Communicate a security policy with SECURITY.md
 
@@ -44,7 +46,8 @@ The community benefits of GitHub are substantial, but they also carry potential 
 To learn more about `SECURITY.md`, see [Adding a security policy to your repository](https://docs.github.com/code-security/getting-started/adding-a-security-policy-to-your-repository).
 
 ## GitHub Security Advisories
-GitHub Security Advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project. After collaborating on a fix, repository maintainers can publish the security advisory to publicly disclose the security vulnerability to the project's community. By publishing security advisories, repository maintainers make it easier for their community to update package dependencies and research the impact of the security vulnerabilities. GitHub stores the published advisories in the Common Vulnerabilities and Exposures (CVE) list, which is used for automatically notifying affected repositories that leverage software that has a listed vulnerability.
+
+GitHub Security Advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project. After collaborating on a fix, repository maintainers can publish the security advisory to publicly disclose the security vulnerability to the project's community. By publishing security advisories, repository maintainers make it easier for their community to update package dependencies and research the impact of the security vulnerabilities. GitHub stores the published advisories in the Common Vulnerabilities and Exposures (CVE) list, which is used for automatically notifying affected repositories that leverage software that has a listed vulnerability. To learn more, see [About repository security advisories](https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/about-repository-security-advisories).
 
 ## Keep sensitive files out of your repository with .gitignore
 
