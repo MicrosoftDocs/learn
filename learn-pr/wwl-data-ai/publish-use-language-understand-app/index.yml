@@ -7,8 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-  ms.subservice: language-understanding 
+  ms.service: azure-ai-language
+  ms.subservice: azure-ai-luis
 title: Publish and use an Azure AI Language Understanding app
 summary: After creating an Azure AI Language Understanding app, you can publish it and consume it from client applications.
 abstract: |
