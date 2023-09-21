@@ -28,7 +28,7 @@ To learn more about what you can get from IaaS services, check out [What is IaaS
 
 If you're considering SQL Server on Azure Virtual Machines, you should review the [guidance on images](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview?azure-portal=true), the [quick checklist](/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist) for getting optimal performance of SQL Server on Azure Virtual Machines, and the guidance for [storage configuration](/azure/azure-sql/virtual-machines/windows/storage-configuration).  
 
-If you're specifically considering SQL Server on RHEL Azure VMs, check out the [operations guide](https://azure.microsoft.com/resources/sql-server-on-rhel-azure-vms-operations-guide/?azure-portal=true).  
+If you're specifically considering SQL Server on Linux on Azure VMs, review [SQL Server on Linux](/sql/linux/sql-server-linux-overview).
 
 ### Companies that use Azure SQL  
 
