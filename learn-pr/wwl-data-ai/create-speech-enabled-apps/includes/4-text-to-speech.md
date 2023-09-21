@@ -12,7 +12,7 @@ As with speech recognition, in practice most interactive speech-enabled applicat
 
 The pattern for implementing speech synthesis is similar to that of speech recognition:
 
-:::image type="content" source="../media/text-to-speech.png" alt-text="A SpeechSynthesizer object is created from a SpeechConfig and AudioConfig, and its SpeakTextAsync method is used to call the Speech API":::
+:::image type="content" source="../media/text-to-speech.png" alt-text="A diagram showing how a SpeechSynthesizer object is created from a SpeechConfig and AudioConfig, and its SpeakTextAsync method is used to call the Speech API.":::
 
 1. Use a **SpeechConfig** object to encapsulate the information required to connect to your Azure AI Speech resource. Specifically, its **location** and **key**.
 1. Optionally, use an **AudioConfig** to define the output device for the speech to be synthesized. By default, this is the default system speaker, but you can also specify an audio file, or by explicitly setting this value to a null value, you can process the audio stream object that is returned directly.
