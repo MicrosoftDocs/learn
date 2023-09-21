@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Visual Studio Code
   - GitHub Copilot extension
-  - Github Copilot Chat extension
+  - GitHub Copilot Chat extension
   - Basic understanding of the C# programming language
   - Familiarity with classes, methods, variables, and logic statements
 iconUrl: /training/achievements/generic-badge.svg
