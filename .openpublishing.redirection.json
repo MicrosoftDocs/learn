@@ -27197,6 +27197,16 @@
       "source_path": "learn-pr/wwl-azure/design-governance/12-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-governance/11-summary-resources",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "/training/modules/examine-device-management-tools/3-device-management-using-azure-command-line-interface.md",
+      "redirect_url": "/training/modules/examine-device-management-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/training /modules/examine-device-management-tools/4-device-management-using-azure-iot-tools-visual-studio-code.md",
+      "redirect_url": "/training/modules/examine-device-management-tools",
+      "redirect_document_id": false
     }
   ]
 }
