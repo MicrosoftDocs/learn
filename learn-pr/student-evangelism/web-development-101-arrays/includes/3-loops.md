@@ -44,7 +44,7 @@ for (let i = 0; i < 10; i++ ) {
 
 ### `While` loops
 
-Unlike the `for` loop, a `while` loop requires a condition that will stop the loop only when the expression in the `while` loop evaluates to `true`. 
+Unlike the `for` loop, a `while` loop requires a condition that will stop the loop only when the expression in the `while` loop evaluates to `false`. 
 
 Conditions in loops usually rely on other values, such as counters, and they must be managed during the loop. 
 
