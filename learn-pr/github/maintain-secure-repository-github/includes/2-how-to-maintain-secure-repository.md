@@ -35,7 +35,7 @@ Overall, when the time for rework is taken into account, adding security to your
 
 Shifting left is a process change, but it isn’t a single control or specific tool; it’s about making all of your security more developer-centric and giving developers security feedback where they are.
 
-GitHub offers security features that help keep data secure in repositories and across organizations. Features include security policy, Depandabot alerts, security advisories, and code scanning. To learn more, see [GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features).
+GitHub offers security features that help keep data secure in repositories and across organizations. Features include security policy, Dependabot alerts, security advisories, and code scanning. For more information, see [GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features).
 
 Below we'll explore some of these features and learn ways to distribute security and operational responsibilities across all phases of the software-development lifecycle.
 
