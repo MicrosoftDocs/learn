@@ -4,6 +4,8 @@ Suppose you're creating a mixed reality experience in which the user needs the a
 
    :::image type="content" source="../media/001-hololens-interaction.png" alt-text="Screenshot of a simulated hand manipulating a hologram.":::
 
+A completed example of this tutorial can be found [here](https://github.com/microsoft/MixedRealityLearning/tree/development/MRTK3%20Tutorials).
+
 ## Learning objectives
 
 - Configure Unity for Windows Mixed Reality Development
@@ -14,7 +16,7 @@ Suppose you're creating a mixed reality experience in which the user needs the a
 
 ## Prerequisites
 
-- A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
+- A Windows 10 or 11 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
 - Windows 10 SDK 10.0.18362.0 or later
 - Unity Hub with Unity 2021.3 or later installed (make sure to check out the [known issues in Unity versions and packages page](/windows/mixed-reality/develop/unity/known-issues))
 - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)

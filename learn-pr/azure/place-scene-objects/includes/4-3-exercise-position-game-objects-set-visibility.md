@@ -8,7 +8,7 @@ To get started, first download the following Unity custom package: [MRTK.HoloLen
 
     :::image type="content" source="../media/import-custom-package.png" alt-text="Screenshot that shows how to import a custom package." lightbox="../media/import-custom-package.png":::
 
-2. In **Import package**, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unity** package that you downloaded, and then select **Open**.
+2. In **Import package**, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0** unitypackage that you downloaded, and then select **Open**.
 
     :::image type="content" source="../media/import-tutorial-package.png" alt-text="Screenshot that shows how to import the tutorial package." lightbox="../media/import-tutorial-package.png":::
 
