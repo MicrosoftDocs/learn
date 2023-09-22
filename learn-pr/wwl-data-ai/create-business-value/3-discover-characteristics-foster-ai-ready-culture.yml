@@ -4,10 +4,11 @@ title: Discover the characteristics that foster an AI-ready culture
 metadata:
   title: Discover the characteristics that foster an AI-ready culture
   description: "Discover the characteristics that foster an AI-ready culture"
-  ms.date: 06/28/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
+  ms.service: microsoft-365
 durationInMinutes: 8
 content: |
   [!include[](includes/3-discover-characteristics-foster-ai-ready-culture.md)]

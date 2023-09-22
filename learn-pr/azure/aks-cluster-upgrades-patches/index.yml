@@ -6,8 +6,8 @@ metadata:
   description: |
     Apply the latest version upgrades and patches to your Azure Kubernetes Service clusters. 
   ms.date: 07/19/2023
-  author: microsoftmichelle 
-  ms.author: mixie
+  author: rayoef 
+  ms.author: rayoflores
   ms.topic: interactive-tutorial
   ms.service: azure-kubernetes-service
 title: Apply cluster upgrades and security patches with Azure Kubernetes Service  

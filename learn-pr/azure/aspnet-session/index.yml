@@ -27,7 +27,7 @@ roles:
 products:
 - azure
 - aspnet
-- azure-web-apps
+- azure-app-service
 - azure-cache-redis
 - dotnet
 subjects:

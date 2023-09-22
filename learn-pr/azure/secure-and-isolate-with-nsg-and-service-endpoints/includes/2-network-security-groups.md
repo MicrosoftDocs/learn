@@ -10,7 +10,7 @@ Network security groups are assigned to a network interface or a subnet. When yo
 
 When you apply network security groups to both a subnet and a network interface, each network security group is evaluated independently. Inbound traffic is first evaluated by the network security group applied to the subnet, then by the network security group applied to the network interface. Conversely, outbound traffic from a VM is first evaluated by the network security group applied to the network interface, then by the network security group applied to the subnet.
 
-![Diagram of network security groups.](../media/2-nsg1.png)
+:::image type="content" source="../media/2-nsg1.png" alt-text="Diagram of network security groups.":::
 
 Applying a network security group to a subnet instead of individual network interfaces can reduce administration and management efforts. This approach also ensures that all VMs within the specified subnet are secured with the same set of rules.
 
@@ -40,7 +40,7 @@ For example, suppose your company has created a security rule to allow inbound t
 
 With network security groups, the connections are stateful. Return traffic is automatically allowed for the same TCP/UDP session. For example, an inbound rule allowing traffic on port 80 also allows the VM to respond to the request (typically on an ephemeral port). You don't need a corresponding outbound rule.
 
-With regard to the ERP system, the web servers for the ERP app connect to database servers that are in their own subnets. You can apply security rules to state that the only allowed communication from the web servers to the database servers is port 1433 for SQL Server database communications. All other traffic to the database servers will be denied.  
+Regarding the ERP system, the web servers for the ERP app connect to database servers that are in their own subnets. You can apply security rules to state that the only allowed communication from the web servers to the database servers is port 1433 for SQL Server database communications. All other traffic to the database servers will be denied.  
 
 ### Default security rules
 
@@ -98,11 +98,11 @@ Use app security groups within a network security group to apply a security rule
 
 An app security group lets you group network interfaces together. You can then use that app security group as a source or destination rule within a network security group.
 
-For example, your company has a number of front-end servers in a virtual network. The web servers must be accessible over ports 80 and 8080. Database servers must be accessible over port 1433. You assign the network interfaces for the web servers to one app security group, and the network interfaces for the database servers to another app security group. You then create two inbound rules in your network security group. One rule allows HTTP traffic to all servers in the web server app security group. The other rule allows SQL traffic to all servers in the database server app security group.
+For example, your company has many front-end servers in a virtual network. The web servers must be accessible over ports 80 and 8080. Database servers must be accessible over port 1433. You assign the network interfaces for the web servers to one app security group, and the network interfaces for the database servers to another app security group. You then create two inbound rules in your network security group. One rule allows HTTP traffic to all servers in the web server app security group. The other rule allows SQL traffic to all servers in the database server app security group.
 
-![Diagram of app security groups.](../media/2-asg-nsg.svg)
+:::image type="content" source="../media/2-asg-nsg.svg" alt-text="Diagram of app security groups.":::
 
- Without app security groups, you'd need to create a separate rule for each VM or add a network security group to a subnet, then add all the VMs to that subnet.
+Without app security groups, you'd need to create a separate rule for each VM or add a network security group to a subnet, then add all the VMs to that subnet.
 
 The key benefit of app security groups is that it makes administration easier. You can easily add and remove network interfaces to an app security group as you deploy or redeploy app servers. You can also dynamically apply new rules to an app security group, which are then automatically applied to all the VMs in that app security group.
 

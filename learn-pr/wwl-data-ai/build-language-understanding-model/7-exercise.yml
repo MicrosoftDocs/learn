@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-language-understanding-model.exercise
-title: Exercise - Build an Azure AI Language Understanding model
+title: Exercise - Build an Azure AI services conversational language understanding model
 metadata:
-  title: Exercise - Build an Azure AI Language Understanding model
-  description: "Exercise - Build an Azure AI Language Understanding model"
-  ms.date: 07/20/2023
+  title: Exercise - Build an Azure AI services conversational language understanding model
+  description: "Exercise - Build an Azure AI services conversational language understanding model"
+  ms.date: 08/31/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure-ai-language
+  ms.subservice: azure-ai-clu
 azureSandbox: false
 labId: 126701
 labModal: true
