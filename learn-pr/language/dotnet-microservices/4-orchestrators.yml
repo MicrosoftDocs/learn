@@ -29,7 +29,7 @@ quiz:
     - content: "To automate security penetration testing."
       isCorrect: false
       explanation: "Orchestrators can keep tabs on overall health, but aren't meant for security testing."    
-  - content: "In which language is an Docker compose file written?"
+  - content: "In which language is a Docker Compose file written?"
     choices:
     - content: "C#"
       isCorrect: false
@@ -39,4 +39,4 @@ quiz:
       explanation: "YAML is the language in which Docker compose files are written."
     - content: "JSON"
       isCorrect: false
-      explanation: "Docker compose files are not written in JSON."
+      explanation: "Docker compose files aren't written in JSON."
