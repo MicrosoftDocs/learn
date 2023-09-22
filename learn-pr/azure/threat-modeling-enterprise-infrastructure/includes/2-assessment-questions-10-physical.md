@@ -6,8 +6,8 @@
 
 These questions allow you to:
 
-- Learn existing physical security requirements to help keep employees, assets, and facilities safe.
-- Understand the security controls are used to help prevent malicious attacks.
+- Learn the existing physical security requirements to help keep employees, assets, and facilities safe.
+- Understand the security controls that are used to help prevent malicious attacks.
 - Gauge how well the enterprise is prepared against natural disasters.
 
 ### What questions to ask

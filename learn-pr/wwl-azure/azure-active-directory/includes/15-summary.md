@@ -1,4 +1,3 @@
-
 Azure AD helps you give access to your organization's resources by providing access rights to a single user, to an entire Azure AD group, or to specific administrative units.
 
 You should now be able to:

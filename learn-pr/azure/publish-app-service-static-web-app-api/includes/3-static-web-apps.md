@@ -61,29 +61,29 @@ This rule tells Azure Static Web Apps to serve `index.html` when a request for a
 
 ## Route file location
 
-Azure Static Web Apps expects your _staticwebapp.config.json_ file to be in the `output_location` by default. If your build process copies your _staticwebapp.config.json_ file to the `output_location`, then there's nothing else you need to do.
+Azure Static Web Apps expects your _staticwebapp.config.json_ file to be in the `output_location` by default. If your build process copies your _staticwebapp.config.json_ file to the `output_location`, then there's nothing else you need to do. For most projects, the `output_location` is relative to the `app_location`.
 
 ::: zone pivot="angular"
 
-The _staticwebapp.config.json_ file for your application is located in the folder _angular-app/src/assets_
+The _staticwebapp.config.json_ file for your application is located in the folder _angular-app/src/assets_.
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-The _staticwebapp.config.json_ file is located in the folder _react-app_
+The _staticwebapp.config.json_ file is located in the folder _react-app_.
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-The _staticwebapp.config.json_ file is located in the folder _svelte-app/public_
+The _staticwebapp.config.json_ file is located in the folder _svelte-app/public_.
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-The _staticwebapp.config.json_ file is located in the folder _vue-app/public_
+The _staticwebapp.config.json_ file is located in the folder _vue-app/public_.
 
 ::: zone-end
 

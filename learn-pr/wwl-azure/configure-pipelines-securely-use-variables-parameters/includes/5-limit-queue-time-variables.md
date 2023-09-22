@@ -10,7 +10,7 @@ However, allowing variables to be set at queue time can also introduce some risk
 
 The setting is designed to work at the organization and project levels.
 
-Using Azure DevOps you have a setting to limit variables that can be set at queue time. With this setting enabled, only those variables that are explicitly marked as "Settable at queue time" can be set. In other words, you can set any variables at queue time unless this setting is enabled.
+In Azure DevOps, you have a setting to limit variables that can be set at queue time. With this setting enabled, only those variables that are explicitly marked as "Settable at queue time" can be set. In other words, you can set any variables at queue time unless this setting is enabled.
 
 - **Organization**: When the setting is on, it enforces that, for all pipelines in all projects in the organization, only those variables that are explicitly marked as "Settable at queue time" can be set. When the setting is off, each project can choose to restrict variables set at queue time. The setting is a toggle under Organization Settings > Pipelines > Settings. Only Project Collection Administrators can enable or disable it.
 

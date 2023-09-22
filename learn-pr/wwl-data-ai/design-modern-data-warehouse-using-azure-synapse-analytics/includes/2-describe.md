@@ -10,7 +10,7 @@ Microsoft Azure services have the capability to scale its capacity to meet the d
 
 Staging data is also simplified using Azure Data Lake Store Gen2, which can store a wide variety of data in its raw format, making the process of ingesting data into a data warehouse much easier.
 
-Traditional data warehouses in the past have had difficulty in handling certain types of data. For example, extrapolating data from sources such as PDF files through to sound files were either too complex or cost prohibitive. The improvements in AI technologies such as Form Recognizer and Speech to Text Cognitive Services means that these types of data sources can now be passed through a cognitive service and outputted in a text-based format that can be stored in the Azure Data Lake Store Gen2, along with the source files themselves.
+Traditional data warehouses in the past have had difficulty in handling certain types of data. For example, extrapolating data from sources such as PDF files through to sound files were either too complex or cost prohibitive. The improvements in AI technologies such as Azure AI Document Intelligence and Azure AI Speech means that these types of data sources can now be passed through a Azure AI service and outputted in a text-based format that can be stored in the Azure Data Lake Store Gen2, along with the source files themselves.
 
 
 ## Data velocities

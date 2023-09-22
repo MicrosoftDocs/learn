@@ -15,12 +15,11 @@ Watch the following video to learn more.
 
 ## Natural language processing in Microsoft Azure
 
-In Microsoft Azure, you can use the following cognitive services to build natural language processing solutions:
+In Microsoft Azure, you can use the following Azure AI services to build natural language processing solutions:
 
 | Service | Capabilities |
 | ------- | ------------ |
-| **Language** | Use this service to access features for understanding and analyzing text, training language models that can understand spoken or text-based commands, and building intelligent applications. |
-| **Translator** | Use this service to translate text between more than 60 languages.|
-| **Speech** | Use this service to recognize and synthesize speech, and to translate spoken languages.|
-| **Azure Bot** | This service provides a platform for conversational AI, the capability of a software "agent" to participate in a conversation. Developers can use the *Bot Framework* to create a bot and manage it with Azure Bot Service - integrating back-end services like Language, and connecting to channels for web chat, email, Microsoft Teams, and others.|
-
+| **Azure AI Language** | Use this service to access features for understanding and analyzing text, training language models that can understand spoken or text-based commands, and building intelligent applications. |
+| **Azure AI Translator** | Use this service to translate text between more than 60 languages.|
+| **Azure AI Speech** | Use this service to recognize and synthesize speech, and to translate spoken languages.|
+| **Azure AI Bot Service** | This service provides a platform for conversational AI, the capability of a software "agent" to participate in a conversation. Developers can use the *Bot Framework* to create a bot and manage it with Azure Bot Service - integrating back-end services like Language, and connecting to channels for web chat, email, Microsoft Teams, and others.|

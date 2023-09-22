@@ -1,4 +1,3 @@
-
 In some cases, pre-trained computer vision models may not provide the accuracy or precision necessary to produce the desired results. Image Analysis 4.0 allows developers to train a specialized model in these circumstances. The model customization capabilities provided by Image Analysis 4.0 enable developers to use their own images to train unique, custom models specific to their individual needs. The Florence foundation model makes the Image Analysis 4.0 models especially effective at few-shot learning, meaning accurate models can be created with fewer training images.
 
 Custom models can be created for either image classification or object detection.

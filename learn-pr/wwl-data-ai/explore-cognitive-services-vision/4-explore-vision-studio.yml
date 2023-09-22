@@ -4,14 +4,11 @@ title: Explore Vision Studio
 metadata:
   title: Explore Vision Studio
   description: "Vision Studio is a set of UI-based tools that allows you to explore, build, and integrate features from Azure Computer Vision."
-  ms.date: 05/03/2023
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
+  ms.service: artificial-intelligence
 durationInMinutes: 2
 content: |
   [!include[](includes/4-explore-vision-studio.md)]

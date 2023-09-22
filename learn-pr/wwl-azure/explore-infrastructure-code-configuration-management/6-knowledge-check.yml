@@ -4,14 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/21/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.prod: azure
+durationInMinutes: 5
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
@@ -32,21 +30,21 @@ quiz:
     choices:
     - content: "Increment."
       isCorrect: false
-      explanation: "Incorrect. Idempotence is a mathematical term that can be used in Infrastructure as Code and Configuration as Code. It's the ability to apply one or more operations against a resource, resulting in the same outcome."
+      explanation: "Incorrect. Idempotence is a mathematical term that can be used in Infrastructure as Code and Configuration as Code. It is the ability to apply one or more operations against a resource, resulting in the same outcome."
     - content: "Idempotence."
       isCorrect: true
-      explanation: "Correct. Idempotence is a mathematical term that can be used in Infrastructure as Code and Configuration as Code. It's the ability to apply one or more operations against a resource, resulting in the same outcome."
+      explanation: "Correct. Idempotence is a mathematical term that can be used in Infrastructure as Code and Configuration as Code. It is the ability to apply one or more operations against a resource, resulting in the same outcome."
     - content: "Configuration Drift."
       isCorrect: false
-      explanation: "Incorrect. Idempotence is a mathematical term that can be used in Infrastructure as Code and Configuration as Code. It's the ability to apply one or more operations against a resource, resulting in the same outcome."
+      explanation: "Incorrect. Idempotence is a mathematical term that can be used in Infrastructure as Code and Configuration as Code. It is the ability to apply one or more operations against a resource, resulting in the same outcome."
   - content: "Which of the following choices is a benefit of infrastructure as code?"
     choices:
-    - content: "Treats infrastructure as a flexible resource that can be provisioned, deprovisioned, and reprovisioned as and when needed."
+    - content: "Treats infrastructure as a flexible resource that can be provisioned, de-provisioned, and reprovisioned as and when needed."
       isCorrect: true
-      explanation: "Correct. Treats infrastructure as a flexible resource that can be provisioned, deprovisioned, and reprovisioned as and when required."
+      explanation: "Correct. Treats infrastructure as a flexible resource that can be provisioned, de-provisioned, and reprovisioned as and when required."
     - content: "Uses mutable service processes."
       isCorrect: false
-      explanation: "Incorrect. Treats infrastructure as a flexible resource that can be provisioned, deprovisioned, and reprovisioned as and when needed."
+      explanation: "Incorrect. Treats infrastructure as a flexible resource that can be provisioned, de-provisioned, and reprovisioned as and when needed."
     - content: "Manual scale-up and scale-out."
       isCorrect: false
-      explanation: "Incorrect. Treats infrastructure as a flexible resource that can be provisioned, deprovisioned, and reprovisioned as and when needed."
+      explanation: "Incorrect. Treats infrastructure as a flexible resource that can be provisioned, de-provisioned, and reprovisioned as and when needed."

@@ -31,8 +31,8 @@ roles:
   - ai-engineer
 products:
   - azure
-  - azure-cognitive-services
-  - azure-web-apps
+  - ai-services
+  - azure-app-service
 subjects:
 - cloud-computing
 - machine-learning
