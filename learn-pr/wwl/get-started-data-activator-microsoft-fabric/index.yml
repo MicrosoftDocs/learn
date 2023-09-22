@@ -2,14 +2,15 @@
 uid: learn.wwl.get-started-data-activator-microsoft-fabric
 metadata:
   title: Get started with Data Activator in Microsoft Fabric
-  description: "Data Activator"
+  description: "In Microsoft Fabric data analysts can easily monitor and take action on data using Data Activator."
   ms.date: 09/22/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.service: fabric
 title: Get started with Data Activator in Microsoft Fabric
-summary: |-
+summary: |
+  In Microsoft Fabric data analysts can easily monitor and take action on data using Data Activator.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   * Understand Data Activator

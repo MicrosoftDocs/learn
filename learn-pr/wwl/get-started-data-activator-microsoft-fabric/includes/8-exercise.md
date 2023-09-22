@@ -6,4 +6,4 @@ Now it's your turn to use Data Activator in Fabric and monitor your data.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-fabric-warehouse)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-data-activator)
