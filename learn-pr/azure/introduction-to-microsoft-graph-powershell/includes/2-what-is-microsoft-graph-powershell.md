@@ -5,7 +5,7 @@ Microsoft Graph PowerShell is a Software Development Kit (SDK) that acts as an A
 
 ## Packaging
 
-Microsoft Graph PowerShell is packaged as the **Microsoft.Graph** module in PowerShell gallery as the root module, with multiple child modules. Microsoft.Graph acts as a container for the other modules.
+Microsoft Graph PowerShell is packaged as the **Microsoft.Graph** and **Microsoft.Graph.Beta** modules in PowerShell gallery as the GA and beta root modules, respectively, with multiple child modules. Microsoft.Graph acts as a container for the other modules.
 
 **Microsoft.Graph.Authentication** is the core module, which contains the following components:
 
