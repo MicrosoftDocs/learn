@@ -4,7 +4,7 @@ title: Introduction to GitHub Copilot for Business
 metadata:
   title: Introduction to GitHub Copilot for Business
   description: GitHub Copilot for Business builds the power of generative AI into an editor extension that suggests code in real-time. By using context to provide and synthesize code to match, it allows developers to convert comments to code, autofill repetitive code, and show alternatives.
-  ms.date: 05/23/2023
+  ms.date: 09/13/2023
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
@@ -17,8 +17,8 @@ abstract: |
   - Learn about specific use cases for GitHub Copilot for Business and hear how customers are enhancing their productivity.
   - Review how to enable GitHub Copilot for Business.
 prerequisites: |
-  - Basic understanding of GitHub fundamentals.
-  - A GitHub Enterprise Cloud account.
+  - Basic understanding of GitHub fundamentals
+  - A GitHub Enterprise Cloud account
 iconUrl: /training/achievements/generic-badge.svg
 ratingEnabled: true
 levels: 
