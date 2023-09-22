@@ -4,93 +4,47 @@ uid: |
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Knowledge Check"
   ms.date: 9/4/2023
   author: theoyinbooke
   ms.author: ooyinbooke
   ms.topic: interactive-tutorial
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
-### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
-###
-### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
-###
-### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
-  ms.service: TODO
-durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
+  ms.prod: learning-azure
+  ms.service: learning-azure
+durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What service provides speech-to-text functionality in this solution?"
     choices:
-    - content: ""
+    - content: "Language Understanding"
+      isCorrect: false
+      explanation: "Incorrect. Language Understanding is used to understand the intent of the user."
+    - content: "Speech API"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. The Speech API provides the speech recognition capability to convert speech to text."
+    - content: "Canvas controls"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. The Canvas controls are used to build the user interface in Power Apps."
+  - content: "Where should API keys be stored in a Power Apps solution?"
     choices:
-    - content: ""
+    - content: "Directly in formula bars"
+      isCorrect: false
+      explanation: "Incorrect. Storing keys directly in formula bars is insecure"
+    - content: "As app settings"
+      isCorrect: false
+      explanation: "Incorrect. App settings are visible to users. Storing keys in controls is insecure"
+    - content: "API connections"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Correct. Keys should be stored securely in API connections, not coded directly"
+  - content: "How can the Speech API model be improved over time?"
     choices:
-    - content: ""
+    - content: "Increase API call volume"
+      isCorrect: false
+      explanation: "Incorrect. Volume doesn't improve the model directly."
+    - content: "Train with more speech samples"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. More training data improves accuracy."
+    - content: "Purchase additional keys"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. More keys don't improve the model."

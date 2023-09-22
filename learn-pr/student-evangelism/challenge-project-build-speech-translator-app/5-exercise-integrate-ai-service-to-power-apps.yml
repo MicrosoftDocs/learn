@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-project-build-speech-translator-app.exercise-integrate-ai-service-to-power-apps
+title: Exercise - Integrate AI Service to Power Apps
+metadata:
+  title: Exercise - Integrate AI Service to Power Apps
+  description: "Exercise - Integrate AI Service to Power Apps"
+  ms.date: 9/4/2023
+  author: theoyinbooke
+  ms.author: ooyinbooke
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: learning-azure
+durationInMinutes: 45
+content: |
+  [!include[](includes/5-exercise-integrate-ai-service-to-power-apps.md)]

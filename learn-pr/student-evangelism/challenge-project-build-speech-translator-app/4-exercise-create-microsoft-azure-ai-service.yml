@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-project-build-speech-translator-app.exercise-create-microsoft-azure-ai-service
+title: Exercise - Create Microsoft Azure AI Service
+metadata:
+  title: Exercise - Create Microsoft Azure AI Service
+  description: "Exercise - Create Microsoft Azure AI Service"
+  ms.date: 9/4/2023
+  author: theoyinbooke
+  ms.author: ooyinbooke
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: learning-azure
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise-create-microsoft-azure-ai-service.md)]
