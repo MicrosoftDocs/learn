@@ -11,8 +11,11 @@ Managing a team via your service provider allows you to save time and resources 
 | Custom team/group maps | The team `slug` and group name will be matched automatically, unless you define a custom mapping with `syncmap.yml` |
 | Dynamic Config         | Utilize a `settings` file to derive Active Directory and GitHub settings |
 
-> [!NOTE]
-> Team synchronization is available for organizations and enterprise accounts using GitHub Enterprise Cloud.
+Team synchronization is available for organizations and enterprise accounts using GitHub Enterprise Cloud.
+
+## Enterprise Managed Users
+
+Enterprise Managed Users is a feature of GitHub Enterprise Cloud that provides even greater control over enterprise members and resources. With Enterprise Managed Users, all members are provisioned and managed through your identity provider (IdP) instead of users creating their own accounts on GitHub. Organization and team membership can be managed using groups on your IdP. Managed user accounts are restricted to their enterprise and are unable to push code, collaborate, or interact with users, repositories, and organizations outside of their enterprise. For more information, see [Getting started with GitHub Enterprise Cloud](https://docs.github.com/en/get-started/onboarding/getting-started-with-github-enterprise-cloud)
 
 ## Usage limits
 
