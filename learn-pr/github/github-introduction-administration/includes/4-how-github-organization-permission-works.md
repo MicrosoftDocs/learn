@@ -20,7 +20,7 @@ You can give organization members, outside collaborators, and teams different le
 Once you have created a repository with the correct permissions, you can make it a template so that anyone with access to the repository can generate a new repository with the same directory structure and files as your default branch. To make a template:
 
 1. On GitHub.com, navigate to the main page of the repository.
-1. Under the repository name, select **Settings**. If you cannot the see the **Settings** tab, select the dropdown menu, then select **Settings**.
+1. Under the repository name, select **Settings**. If you can't the see the **Settings** tab, select the dropdown menu, then select **Settings**.
 
     :::image type="content" source="../media/repo-actions-settings.png" alt-text="Screenshot showing where to locate the settings button in your GitHub repository.":::
 
@@ -80,7 +80,9 @@ In addition to these three levels, you can also set a policy of default reposito
 
 For improved management and security, you can give default read permissions to all members of your enterprise and adjust their access to repositories on a case-by-case basis. In a smaller enterprise, such as one with a single, relatively small organization, you might prefer to trust all members with write permissions by default.
 
-## Repository privacy settings
+## Repository security and management
+
+There are several ways you can oversee the security and management of your repositories. You can:
 
 ### Create protection rules
 
@@ -103,3 +105,20 @@ Additionally, you can set branch rules that apply to everyone including administ
 By adding a [CODEOWNERS](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners#codeowners-syntax) file to your repository, you can assign individual team members or entire teams as code owners who are responsible for code in the repository. Code owners are automatically requested for review when someone opens a pull request that modifies code that they own.
 
 You can create the CODEOWNERS file in either the root of the repository, or in the `docs` or `.github` folder.
+
+### View traffic with Insights
+
+Anyone with push access to a repository can view its traffic, including full clones (not fetches), visitors from the past 14 days, referring sites, and popular content in the traffic graph.
+
+To access the traffic graph:
+
+1. On GitHub.com, navigate to the main page of the repository.
+1. Under your repository name, select **insights**.
+
+    :::image type="content" source="../media/repo-nav-insights-tab.png" alt-text="Screenshot showing where to locate the insights button in GitHub.":::
+
+1. In the left sidebar, select **traffic**
+
+    :::image type="content" source="../media/traffic-tab.png" alt-text="Screenshot showing the traffic tab highlighted in GitHub.":::
+
+1. Optionally, you can select **clones** or **views** to view the traffic graph for clones or views
