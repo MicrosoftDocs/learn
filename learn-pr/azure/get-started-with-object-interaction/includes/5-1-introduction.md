@@ -8,3 +8,5 @@ This module shows you how to build a mixed reality user experience with MRTK usi
 * Add bounds control around 3D objects
 
 By the end of the module, you can create and edit UI elements for your project using MRTK.
+
+A completed example of this tutorial can be found [here](https://github.com/microsoft/MixedRealityLearning/tree/development/MRTK3%20Tutorials).
