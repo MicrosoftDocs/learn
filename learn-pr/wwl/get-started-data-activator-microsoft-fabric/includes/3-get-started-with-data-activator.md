@@ -1,31 +1,27 @@
 
-
 This section guides you through the initial setup process, from activation to understanding its essential elements.
 
-## Step 1: Kick-Start Data Activator
+> [!NOTE]
+> For the public preview, verify that your organization has workspaces with a Fabric capacity and that Data Activator is available in your region. As a preview feature, Data Activator may not be available in all Azure regions.
 
-Starting with Data Activator requires enabling its private preview feature within Power BI or Fabric. Follow these steps:
+## Select the Data Activator experience
 
-1. Sign into Power BI or Fabric using admin account credentials.
-1. Select 'Settings' in the page header, then select 'Admin portal' under 'Governance and Insights.'
-1. Select 'Tenant settings' from the left navigation pane.
-1. Expand 'Enable Trident (Private Preview)' under 'Microsoft Fabric (Preview).'
-1. Enable the setting for your entire organization or a select group of users using a security group.
+To begin using Data Activator in Microsoft Fabric, select ***Data Activator*** from the menu. This option customizes your Fabric experience to Data Activator.
 
-## Step 2: Availability by Region
+![Screenshot of selecting Data Activator in Fabric.](../media/data-activator-select.png)
 
-Verify the availability of Data Activator in your region. As a private preview feature, Data Activator may not be available in all Azure regions.
+## Create a Reflex
 
-## Step 3: Essential Prerequisites
+Just like other Fabric experiences, the first thing you do with Data Activator is set up an item in your Fabric Workspace. Data Activator’s items are known as Reflexes. A Reflex item contains all the necessary details to connect to data sources, monitor conditions, and initiate actions. You're likely to set up a Reflex for each business segment or process you're monitoring.
 
-Ensure that the prerequisites for using Data Activator are in place. This typically involves having a Power BI or Fabric admin account and the necessary access permissions to enable the Data Activator feature.
+Let's go ahead and create a Reflex item in your Fabric workspace. From the New menu in the workspace, choose the ***Reflex*** item.
 
-## Step 4: Objects - The Heart of Data Activator
+![Screenshot of selecting Reflexes in Data Activator.](../media/data-activator-reflex.png)
 
-Get familiar with the concept of Objects, one of the key constructs in Data Activator. Objects represent the entities that you're monitoring or manipulating in your use case.
+## Navigate between data mode and design mode
 
-## Step 5: Bring Your Objects to Life with Events
+When you’re working with a Reflex, there are two distinct tabs at the bottom of the screen: *Data* mode and *Design* mode. In data mode, you're able to inspect the fresh data and link it to specific objects. Switch over to design mode to develop triggers based on these objects. Initially, this area will be empty; populating it with your data is your next move after setting up a Reflex.
 
-Understand how Events in Data Activator are used to capture state changes for your Objects. These events are fundamental for triggering actions and responses based on the data flows in your system.
+![Screenshot of selecting Data or Design modes in Data Activator.](../media/data-activator-data-design.png)
 
-With these steps, you have a firm foundation to start using Data Activator effectively.
+Next, you'll learn how to connect to data sources, create triggers to monitor conditions and initiate actions.

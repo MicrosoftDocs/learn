@@ -4,11 +4,11 @@ title: Overview of Data Activator
 metadata:
   title: Overview of Data Activator
   description: "Overview of Data Activator"
-  ms.date: 08/01/2023
+  ms.date: 09/22/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: azure
-durationInMinutes: 2
+  ms.service: fabric
+durationInMinutes: 3
 content: |
   [!include[](includes/2-overview-of-data-activator.md)]
