@@ -29,7 +29,7 @@ quiz:
       explanation: "A microservice performs only a single business purpose. Here there are two business purposes being performed."
     - content: "GitHub Actions used to deploy a website"
       isCorrect: false
-      explanation: "A microservice is a service that is part of a larger application that serve a business need. While GitHub Actions help with deployment, they don't fit as a microservice."
+      explanation: "A microservice is a service that's part of a larger application that serves a business need. While GitHub Actions help with deployment, they don't fit as a microservice."
     - content: "A Docker image"
       isCorrect: false
       explanation: "A Docker image is a static representation of a microservice, not the microservice itself."
