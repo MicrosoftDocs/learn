@@ -9,6 +9,6 @@ metadata:
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.service: azure
-durationInMinutes: 13
+durationInMinutes: 7
 content: |
   [!include[](includes/3-describe-sentinel-provide-integrated-threat-management.md)]
