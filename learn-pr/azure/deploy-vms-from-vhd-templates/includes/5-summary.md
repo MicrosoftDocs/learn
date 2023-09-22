@@ -13,10 +13,9 @@ You can use this knowledge to build a customized virtual machine image that's co
 
 For more information about disk imaging in Azure, check out the following articles:
 
-- [Create a managed image of a generalized VM in Azure](/azure/virtual-machines/windows/capture-image-resource)
-- [How to create an image of a virtual machine or VHD](/azure/virtual-machines/linux/capture-image)
-- [Create a Windows VM from a specialized disk by using PowerShell](/azure/virtual-machines/windows/create-vm-specialized)
+- [Create a legacy managed image of a generalized VM in Azure](/azure/virtual-machines/capture-image-resource)
+- [Create a Windows VM from a specialized disk by using PowerShell](/azure/virtual-machines/attach-os-disk)
 - [Introduction to Azure managed disks](/azure/virtual-machines/windows/managed-disks-overview)
-- [Create a VM from a managed image](/azure/virtual-machines/windows/create-vm-generalized-managed)
+- [Create a VM from a generalized image version](/azure/virtual-machines/vm-generalized-image-version)
 
 For a complete description of the different types of VHDs available, and their performance and cost profiles, read [Azure managed disk types](/azure/virtual-machines/windows/disks-types).

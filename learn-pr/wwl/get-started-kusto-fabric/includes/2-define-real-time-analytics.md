@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 Synapse Real-Time Analytics provides an end-to-end streaming solution for high-speed data analysis across the Fabric service. It’s optimized for time-series data and supports automatic partitioning and indexing of any data format.
 
 Real-Time Analytics delivers high performance for data of various sizes, ranging from a few gigabytes to several petabytes. It can handle data from different sources and in various formats. Fabric's Real-Time Analytics workload can be used for solutions like IoT and log analytics in many scenarios including manufacturing, oil and gas, and automotive.

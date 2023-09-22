@@ -9,6 +9,6 @@ Personalizer can be used when you want to:
 
 ## Resources
 
-[Personalizer documentation](/azure/cognitive-services/personalizer/)
+[Personalizer documentation](/azure/ai-services/personalizer/)
 
 

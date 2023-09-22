@@ -1,6 +1,6 @@
 Organizations often have different development teams working on multiple projects and applications.
 
-In our banking institution example, it would be necessary to configure a project a repository structure that supports secure access and permissions to pipelines.
+In our banking institution example, it would be necessary to configure a project and repository structure that supports secure access and permissions to pipelines.
 
 Here, you'll learn about fundamental concepts for giving access and permissions, the benefits of separating a project, how to separate a project into other projects and repositories, and separate secure files between projects.
 

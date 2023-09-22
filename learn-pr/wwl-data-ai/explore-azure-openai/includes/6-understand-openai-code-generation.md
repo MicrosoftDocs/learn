@@ -9,7 +9,7 @@ for i in range(1,11):
     print(i)
 ```
 
-GPT models can help developers code faster, understand new coding languages, and focus on solving bigger problems in their application. Developers can break down their goal into simpler tasks and use GPT to help build those out tasks  using known patterns.
+GPT models can help developers code faster, understand new coding languages, and focus on solving bigger problems in their application. Developers can break down their goals into simpler tasks and use GPT to help build out those tasks using known patterns.
 
 ## Examples of code generation
 

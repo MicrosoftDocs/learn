@@ -28,7 +28,7 @@ Next, create a budget.
 
 1. From the Filter dropdown list, select **ResourceId**.
 
-1. In the selection dropdown list, select your most expensive resource that you identified in the pervious exercise. A suggested budget appears. The budget is associated with your selection.
+1. In the selection dropdown list, select your most expensive resource that you identified in the previous exercise. A suggested budget appears. The budget is associated with your selection.
 
 1. Name your budget (for example: *MyFirstBudget*).
 

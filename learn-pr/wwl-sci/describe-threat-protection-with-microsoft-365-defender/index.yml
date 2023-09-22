@@ -3,7 +3,7 @@ uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender
 metadata:
   title: Describe threat protection with Microsoft 365 Defender
   description: "Describe threat protection with Microsoft 365 Defender"
-  ms.date: 03/01/2023
+  ms.date: 09/14/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -32,6 +32,7 @@ products:
 - defender-office365
 - mdatp
 - microsoft-defender
+- defender-for-threat-intelligence
 subjects:
 - threat-protection
 units:
@@ -41,6 +42,8 @@ units:
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-for-endpoint-formerly-microsoft-defender-atp
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-cloud-app-security
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-for-identity-formerly-azure-atp
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-defender-vulnerability-management
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-defender-threat-intelligence
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-portal
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.knowledge-check
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.summary-resources

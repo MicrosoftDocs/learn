@@ -15,7 +15,7 @@ These Azure OpenAI models include:
 - **Embeddings** models that convert text to numeric vectors for analysis - for example comparing sources of text for similarity.
 - **DALL-E** models that generate images based on natural language descriptions.
 
-Azure OpenAI's AI models can all be trained and customized with fine-tuning. We won't go into custom models here, but you can learn more on the [fine-tuning your model](/azure/cognitive-services/openai/how-to/fine-tuning?pivots=programming-language-studio?azure-portal=true) Azure documentation.
+Azure OpenAI's AI models can all be trained and customized with fine-tuning. We won't go into custom models here, but you can learn more on the [fine-tuning your model](/azure/ai-services/openai/how-to/fine-tuning?pivots=programming-language-studio?azure-portal=true) Azure documentation.
 
 > [!IMPORTANT]
 > Generative AI models *always* have a *probability* of reflecting true values. Higher performing models, such as models that have been fine-tuned for specific tasks, do a better job of returning responses that reflect true values. It is important to review the output of generative AI models. 

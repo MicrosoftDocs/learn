@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "Vision API"
       isCorrect: false
-      explanation: "Incorrect: Computer Vision is a grouping of APIs, and not an API itself."
+      explanation: "Incorrect: Azure AI Vision is a grouping of APIs, and not an API itself."
     - content: "Read API"
       isCorrect: true
       explanation: "Correct: The Read API is the best choice for large amounts of text and multiple languages."
     - content: "Image Analysis API"
       isCorrect: false
-      explanation: "Incorrect: The Image Analysis service is a Computer Vision service, but its features extract visual features from images, such as objects and faces."
+      explanation: "Incorrect: The Image Analysis service is an Azure AI Vision service, but its features extract visual features from images, such as objects and faces."
   - content: "What languages can the Read API detect?"
     choices:
     - content: "Only English at this time"
@@ -40,12 +40,12 @@ quiz:
       explanation: "Correct: There are more than 160 languages available for printed text via the Read API."
   - content: "You've scanned a letter into PDF format and need to extract the text it contains. What should you do?"
     choices:
-    - content: "Use the Custom Vision service"
+    - content: "Use the Azure AI Custom Vision service"
       isCorrect: false
-      explanation: "Incorrect: The Custom Vision service is used to build and deploy image identification applications by applying labels to classes or objects."
-    - content: "Use the Image Analysis API of the Computer Vision service."
+      explanation: "Incorrect: The Azure AI Custom Vision service is used to build and deploy image identification applications by applying labels to classes or objects."
+    - content: "Use the Image Analysis API of the Azure AI Vision service."
       isCorrect: false
       explanation: "Incorrect: The Image Analysis API can't be used to process PDF formatted files."
-    - content: "Use the Read API of the Computer Vision service."
+    - content: "Use the Read API of the Azure AI Vision service."
       isCorrect: true
       explanation: "Correct: The Read API can be used to process PDF formatted files."

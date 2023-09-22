@@ -10,7 +10,7 @@ Watch the following video to learn how to write KQL log queries with Log Analyti
 - Filter and summarize search results
 - Add visualizations for search results
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/cAzlAg2L1Bg" title="Video that shows how to write KQL log queries for Azure Monitor." allowfullscreen></iframe><br>
+> [!VIDEO https://www.youtube.com/embed/cAzlAg2L1Bg]
 
 In the next unit, we take a closer look at how to structure a KQL query.
 

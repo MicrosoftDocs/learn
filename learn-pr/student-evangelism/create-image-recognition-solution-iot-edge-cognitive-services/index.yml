@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge
 metadata:
-  title: "Create an image recognition solution with Azure IoT Edge and Azure Cognitive Services"
+  title: "Create an image recognition solution with Azure IoT Edge and Azure AI services"
   description: "This is a computer vision solution using Azure IoT Edge"
   ms.date: 02/12/2021
   author: leestott
@@ -9,18 +9,18 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
   ms.service: iot-edge
-title: "Create an image recognition solution with Azure IoT Edge and Azure Cognitive Services"
-summary: "Create a computer vision solution on the IoT Edge using Azure Cognitive Services and Azure Speech Services. The application will capture and identify scanned item and convert the name of the item to the speech."
+title: "Create an image recognition solution with Azure IoT Edge and Azure AI services"
+summary: "Create a computer vision solution on the IoT Edge using Azure AI services and Azure Speech Services. The application will capture and identify scanned item and convert the name of the item to the speech."
 abstract: |
     In this module, you will:
-    - Use a pre-trained image classification module with Azure Cognitive Services
+    - Use a pre-trained image classification module with Azure AI services
     - Deploy your solution to the IoT Edge using VS Code
     - Verify a module that running successfully
 
-    ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***
+    ***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***
 prerequisites: |
     - Basic knowledge of IoT Edge
-    - Basic knowledge of Cognitive Services
+    - Basic knowledge of Azure AI services
     - Basic knowledge of Azure Custom Vision
     - Basic knowledge of Azure Speech Service
     - Azure subscription

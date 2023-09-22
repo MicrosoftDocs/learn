@@ -4,11 +4,10 @@ title: Exercise - Query files using a serverless SQL pool
 metadata:
   title: Exercise - Query files using a serverless SQL pool
   description: "Exercise - Query files using a serverless SQL pool"
-  ms.date: 05/26/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 40

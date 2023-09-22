@@ -10,7 +10,7 @@ In this unit, you investigate what risk policies are. You also learn what each t
 
 You can configure a risk policy to decide how you want Identity Protection to respond to a particular type of risk. Do you want to block or allow access? Do you want to make users go through more authentication before you allow access? Risk policies help you respond to risks rapidly. Your company can apply risk policies, and avoid hiring external contractors to handle identity-based risks.
 
-Based on the type of identity risk, dDifferent risk policies are available. You can use a sign-in risk policy or a user risk policy.
+Based on the type of identity risk, different risk policies are available. You can use a sign-in risk policy or a user risk policy.
 
 ## Sign-in risk policy
 

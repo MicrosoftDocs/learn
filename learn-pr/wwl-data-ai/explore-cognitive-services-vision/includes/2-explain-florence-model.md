@@ -1,7 +1,6 @@
-
 ## What is Microsoft's Florence foundation model?
 
-Image Analysis 4.0 is powered by Microsoft's Florence foundation model, trained on billions of text-images pairs. By using universal visual-language representations in the form of text-image pair data, the Florence model can be easily adapted to various computer vision tasks such as classification, retrieval, object detection, and captioning. The Florence foundation model provides start-of-the-art computer vision capabilities and is a significant step forward in delivering game-changing visual recognition functionality.
+Image Analysis 4.0 is powered by Microsoft's Florence foundation model, trained on billions of text-images pairs. By using universal visual-language representations in the form of text-image pair data, the Florence model can be easily adapted to various computer vision tasks such as classification, retrieval, object detection, and captioning. The Florence foundation model provides state-of-the-art computer vision capabilities and is a significant step forward in delivering game-changing visual recognition functionality.
 
 Florence significantly improves the Vision Image Analysis capabilities, including enhanced image captioning and groundbreaking customization capabilities with _few-shot learning_. Few-shot learning refers to using computer vision algorithms to make predictions based on a limited number of sample images. The goal of few-shot learning is to create models capable of recognizing similarities and differences between images and "learning" to associate similar pictures with the same labels, much like humans can learn to recognize objects from a small sample of photos.
 

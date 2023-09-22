@@ -1,5 +1,3 @@
-
-
 As an IT admin, you can use Microsoft Intune to manage the client apps that your company's workforce uses. This functionality is in addition to managing devices and protecting data. One of an admin's priorities is to ensure that end users have access to the apps they need to do their work. This goal can be a challenge because:
 
  -  There are a wide range of device platforms and app types.

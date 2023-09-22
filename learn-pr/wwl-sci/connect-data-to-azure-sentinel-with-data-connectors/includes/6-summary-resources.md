@@ -3,12 +3,15 @@ You should have learned how data is sent to the Microsoft Sentinel workspace by 
 You should now be able to:
 
 - Explain the use of data connectors in Microsoft Sentinel
+- Understand how data connectors are installed from Microsoft Sentinel Content Hub Solutions
 - Describe the Microsoft Sentinel data connector providers
 - Explain the Common Event Format and Syslog connector differences in Microsoft Sentinel
 
 ## Learn more
 
 You can learn more by reviewing the following.
+
+[Deploy and manage Microsoft Sentinel out-of-the-box content](/azure/sentinel/sentinel-solutions-deploy)
 
 [Become a Microsoft Sentinel Ninja](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310?azure-portal=true)
 

@@ -67,9 +67,9 @@ TODO: add your list of techniques used to solve the scenario problem -->
 
     Example:
         "## References
-          * [Administrator role permissions in Azure Active Directory](https://learn.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-          * [What is Azure role-based access control (Azure RBAC)?](https://learn.microsoft.com/azure/role-based-access-control/overview)
-          * [Manage access to billing information for Azure](https://learn.microsoft.com/azure/billing/billing-manage-access)"
+          * [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+          * [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)
+          * [Manage access to billing information for Azure](/azure/billing/billing-manage-access)"
  -->
 
 <!-- Do not include any other content -->

@@ -3,7 +3,7 @@ uid: learn.troubleshoot-azure-network-infrastructure.4-troubleshoot-networking-w
 metadata:
   title: Troubleshoot a network by using Network Watcher metrics and logs
   description: In this unit, you'll learn about the information presented in the Network Management metrics and logs, and how they can help you to diagnose issues.
-  ms.date: 09/03/2019
+  ms.date: 09/12/2023
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial

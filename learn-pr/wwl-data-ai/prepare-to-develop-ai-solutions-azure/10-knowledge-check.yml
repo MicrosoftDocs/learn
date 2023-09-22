@@ -31,7 +31,7 @@ quiz:
     - content: "Use Azure Machine Learning to publish the model as a web service."
       isCorrect: true
       explanation: "That's correct. You can use Azure Machine Learning to publish a trained model as a web service, and consume it from applications through its REST interface."
-    - content: "Export the model as a cognitive service."
+    - content: "Export the model as an Azure AI service."
       isCorrect: false
       explanation: "That's incorrect. You can use Azure Machine Learning to publish a trained model as a web service, and consume it from applications through its REST interface."
     - content: "You must build your application using the Azure Machine Learning designer."
@@ -39,7 +39,7 @@ quiz:
       explanation: "That's incorrect. You can use Azure Machine Learning to publish a trained model as a web service, and consume it from applications through its REST interface."
   - content: "You want to index a collection of text documents, and search them from a mobile application. Which service should you use to create the index?"
     choices:
-    - content: "The Language cognitive service"
+    - content: "The Azure AI service"
       isCorrect: false
       explanation: "That's incorrect. Use Azure Cognitive Search to index documents for search."
     - content: "Azure Cognitive Search"

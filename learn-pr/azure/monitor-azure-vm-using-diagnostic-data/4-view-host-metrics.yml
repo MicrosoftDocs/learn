@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: You want to track the average CPU usage of your Azure virtual machine over the last seven days. What is the most straightforward way to do this?
+  - content: You want to track the average CPU usage of your Azure virtual machine over the last seven days. What is the most straightforward way to do it?
     choices:
     - content: View the metrics for the virtual machine on the Overview page and set the range to the last seven days.
       isCorrect: true
@@ -31,9 +31,9 @@ quiz:
     - content: Install the Azure Diagnostics extension.
       isCorrect: false
       explanation: An Azure Diagnostics extension isn't required to store simple boot diagnostics.
-    - content: You don't have to install or create anything additional to store diagnostic logs in Azure.
+    - content: You don't have to install or create anything extra to store diagnostic logs in Azure.
       isCorrect: false
-      explanation: You don't have to create anything additional to see basic metrics for VMs. You need a storage account for boot diagnostics, though.
+      explanation: You don't have to create anything extra to see basic metrics for VMs. You need a storage account for boot diagnostics, though.
     - content: An Azure storage account.
       isCorrect: true
       explanation: You need a storage account to store boot diagnostics data, the boot screenshots, and logs.

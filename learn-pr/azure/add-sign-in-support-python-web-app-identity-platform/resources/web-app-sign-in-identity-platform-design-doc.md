@@ -16,10 +16,10 @@ Azure Active Directory
 
 ## Prerequisites
 
-- An Azure Active Directory (Azure AD) tenant with permissions for managing app registrations. To create a free account, we recommend going through [Create an Azure account](https://learn.microsoft.com/en-us/learn/modules/create-an-azure-account/) module.
+- An Azure Active Directory (Azure AD) tenant with permissions for managing app registrations. To create a free account, we recommend going through [Create an Azure account](https://learn.microsoft.com/learn/modules/create-an-azure-account/) module.
 - Familiarity with basic Python programming concepts and terminology.
 - An understanding of cloud computing concepts and services.
-- Basic knowledge of the [Microsoft identity platform](https://learn.microsoft.com/en-us/learn/modules/explore-microsoft-identity-platform/)
+- Basic knowledge of the [Microsoft identity platform](https://learn.microsoft.com/learn/modules/explore-microsoft-identity-platform/)
 
 ## Summary
 
@@ -128,6 +128,6 @@ Add more units as needed for your content
 ## Notes
 
 - [Python 3](https://www.python.org/download/releases/3.0/)
-- [Register an application with the Microsoft identity platform](https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-- [Microsoft identity platform access tokens](https://learn.microsoft.com/azure/active-directory/develop/access-tokens)
+- [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
+- [Microsoft identity platform access tokens](/azure/active-directory/develop/access-tokens)
 - [Use the Microsoft Graph API](https://learn.microsoft.com/graph/use-the-api)

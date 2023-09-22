@@ -70,7 +70,7 @@ Output: `There are actually 9 planets in the solar system.`
 You can remove the last item in a list by calling the `.pop()` method on the list variable:
 
 ```python
-planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"]
 planets.pop()  # Goodbye, Pluto
 number_of_planets = len(planets)
 print("No, there are definitely", number_of_planets, "planets in the solar system.")

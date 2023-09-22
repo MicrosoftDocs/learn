@@ -1,41 +1,38 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-features-tools-azure-for-governance-compliance.knowledge-check
-title: Knowledge check
+title: Knowledge Check
 metadata:
-  title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 10/14/2022
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How many parameters does an Azure Blueprint Artifact need to be valid?"
-    choices:
-    - content: "0"
-      isCorrect: true
-      explanation: "Correct. It is possible for artifacts to have no additional parameters. An example is the Deploy threat detection on SQL servers policy, which requires no additional configuration."
-    - content: "1"
-      isCorrect: false
-      explanation: "Incorrect. Depending on the scope, an Azure Blueprint Artifact may not have any parameters."
-    - content: "2"
-      isCorrect: false
-      explanation: "Incorrect. Depending on the scope, an Azure Blueprint Artifact may not have any parameters."
-  - content: "How can you prevent non-compliant resources from being created, without having to manually evaluate each resource as it’s created?"
+  - content: "How can you prevent creation of non-compliant resources, without having to manually evaluate each resource?"
     choices:
     - content: "Azure Policy"
       isCorrect: true
       explanation: "Correct. Azure policy lets you create policies and initiatives (groups of policies) that prevent non-compliant resource from being created."
-    - content: "Azure Blueprints"
+    - content: "Azure Purview"
       isCorrect: false
-      explanation: "Incorrect. Azure Blueprints helps you automate the creation of resources, and will ensure resources created with the blueprint are consistent, but won’t prevent an out-of-police resource creation."
+      explanation: "Incorrect. Azure Purview helps you manage your data estate, but won't prevent an out-of-policy resource creation."
     - content: "Azure Resource Monitor"
       isCorrect: false
       explanation: "Incorrect. Azure Policy is the best way to ensure that resource are created based on a set policy or group of policies."
+  - content: "What's the best way to prevent inadvertent deletion of a resource?"
+    choices:
+    - content: "Azure Policy"
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy helps ensure your resources are in alignment with requirements. However, a resource lock is the best way to prevent a resource from being deleted."
+    - content: "Microsoft Purview"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Purview helps you manage your data estate. However, a resource lock is the best way to prevent a resource from being deleted."
+    - content: "Azure resource locks"
+      isCorrect: true
+      explanation: "Correct. A resource lock can be used to prevent a resource from accidentally being deleted."

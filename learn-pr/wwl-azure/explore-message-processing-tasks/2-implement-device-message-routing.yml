@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 110068
-labModal: true
+# labId: 110068
+labModal: false
 durationInMinutes: 60
 content: |
   [!include[](includes/2-implement-device-message-routing.md)]

@@ -3,9 +3,9 @@ uid: learn.mixed-reality-toolkit-project-unity
 metadata:
   title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit 
   description: Import the Mixed Reality Toolkit (MRTK) into your Unity project to accelerate your mixed reality development. You can also deploy your project to a HoloLens.
-  ms.date: 08/11/2020
-  author: "aprilspeight"
-  ms.author: "apspeigh"
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.custom:
   - team=cloud_advocates
@@ -31,11 +31,12 @@ products:
 - mrtk
 - hololens
 prerequisites: |
-  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
+  - A Windows 10 or 11 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
-  - Unity Hub with Unity 2019.4.X installed
-  - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
-  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+  - (Optional) A HoloLens 2 device configured for development
+  - Unity Hub with Unity 2021.3 or later installed and the Universal Windows Platform Build Support module added
+  - [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)
+  - Basic familiarity with Unity: interface, scene creation, package import, addition of GameObjects to a scene
 subjects:
 - mixed-reality
 units:
