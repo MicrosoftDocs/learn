@@ -17,3 +17,4 @@ For more information, see:
 - [Map your data estate with Microsoft Purview](https://techcommunity.microsoft.com/t5/azure-purview/map-your-data-estate-with-azure-purview/ba-p/1958197)
 - [Microsoft Purview for unified data governance](https://azure.microsoft.com/services/purview/)
 - [Enable unified data governance with Microsoft Purview (video)](https://youtu.be/W2bsj3ULw0Y)
+- [Deploy Microsoft Purview and scan an Azure Data Lake resource using the Azure portal](/training/modules/deploy-microsoft-purview-scan-data-resources)
