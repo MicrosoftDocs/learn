@@ -1,6 +1,6 @@
 Before starting to develop a bot with the Bot Framework Composer, it's useful to understand a key concept in bot design - *dialogs*.
 
-In all but the most simple cases, your bot will likely make use multiple *dialogs* to implement multi-turn conversations in which the bot gathers information from the user, storing state between turns. Commonly, a bot interaction begins with a *main* dialog in which the bot welcomes a user and establishes the initial conversation, and then triggers child dialogs.
+In all but the most simple cases, your bot will likely use multiple *dialogs* to implement multi-turn conversations in which the bot gathers information from the user, storing state between turns. Commonly, a bot interaction begins with a *main* dialog in which the bot welcomes a user and establishes the initial conversation, and then triggers child dialogs.
 
 ## A flow of dialogs
 
