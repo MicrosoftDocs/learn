@@ -27212,6 +27212,11 @@
       "source_path": "learn-pr/wwl-sci/design-identity-security-strategy/7-define-identity-governance-for-access-reviews-entitlement-management.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-identity-access-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-identity-security-strategy/9-design-for-privileged-activities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-identity-access-management",
+      "redirect_document_id": false
     }
   ]
 }
