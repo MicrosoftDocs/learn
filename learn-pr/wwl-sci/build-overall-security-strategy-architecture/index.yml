@@ -38,7 +38,6 @@ units:
 - learn.wwl.build-overall-security-strategy-architecture.develop-security-requirements-based-business-goals
 - learn.wwl.build-overall-security-strategy-architecture.translate-security-requirements-into-technical-capabilities
 - learn.wwl.build-overall-security-strategy-architecture.design-security-for-resiliency-strategy
-- learn.wwl.build-overall-security-strategy-architecture.design-for-hybrid-multi-tenant-environments
 - learn.wwl.build-overall-security-strategy-architecture.design-technical-governance-strategies-for-traffic-filtering-segmentation
 - learn.wwl.build-overall-security-strategy-architecture.exercise
 - learn.wwl.build-overall-security-strategy-architecture.knowledge-check
