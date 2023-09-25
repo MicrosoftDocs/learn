@@ -2237,3 +2237,8 @@ achievements:
   title: Design a strategy for securing PaaS, IaaS, and SaaS services
   summary: Learn how to design a cybersecurity strategy which will secure cloud services in the SaaS, PaaS and IaaS service models.
   iconUrl: /training/achievements/3-design-a-strategy-for-securing-paas-iaas-and-saas-services.svg
+- uid: learn.wwl.design-strategy-for-securing-server-client-endpoints.badge
+  type: badge
+  title: Design a strategy for securing server and client endpoints
+  summary: Learn how to design a cybersecurity strategy to secure server and client endpoints.
+  iconUrl: /training/achievements/2-design-a-strategy-for-securing-server-and-client-endpoints.svg
