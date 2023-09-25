@@ -2262,3 +2262,8 @@ achievements:
   title: Understand architecture best practices and how they are changing with the Cloud
   summary: Learn best practices for cybersecurity architecture and how they have been affected by cloud computing.
   iconUrl: /training/achievements/1-understand-architecture-best-practices-how-change-cloud.svg
+- uid: learn.wwl.evaluate-regulatory-compliance-strategy.badge
+  type: badge
+  title: Evaluate a regulatory compliance strategy
+  summary: Learn how to evaluate a cybersecurity strategy for regulatory compliance.
+  iconUrl: /training/achievements/evaluate-a-regulatory-compliance-strategy.svg
