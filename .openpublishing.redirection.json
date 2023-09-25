@@ -27557,6 +27557,11 @@
       "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/3-to-identify-protect-sensitive-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
+      "redirect_document_id": false
     }
   ]
 }
