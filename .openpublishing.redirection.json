@@ -27262,6 +27262,11 @@
       "source_path": "learn-pr/wwl-sci/design-identity-security-strategy/5-secure-conditional-access.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-identity-access-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-identity-security-strategy/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-identity-access-management",
+      "redirect_document_id": false
     }
   ]
 }
