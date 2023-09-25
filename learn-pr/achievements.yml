@@ -2252,3 +2252,8 @@ achievements:
   title: Design a strategy for securing data
   summary: Learn how to design a cybersecurity strategy to secure data.
   iconUrl: /training/achievements/2-design-a-strategy-for-securing-data.svg
+- uid: learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.badge
+  type: badge
+  title: Evaluate security posture and recommend technical strategies to manage risk
+  summary: Learn how to evaluate an organization's security posture and recommend technical strategies to manage risk.
+  iconUrl: /training/achievements/evaluate-security-posture-recommend-technical-strategies-manage-risk.svg
