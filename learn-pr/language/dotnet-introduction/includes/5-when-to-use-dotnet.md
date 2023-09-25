@@ -12,7 +12,7 @@ Repurposing your knowledge reduces the time investment involved in learning a ne
 
 ### Choose .NET for enterprise-scale applications
 
-.NET is popular in enterprises for several reasons. Advantages include its ecosystem and its integration with other Microsoft products, including Azure cloud services and on-premise server products. Further, .NET is a strongly typed system, so it avoids many of the bugs that can arise in loosely typed systems. Developers can choose to use an object-based paradigm in C#, or a functional-based paradigm in F#. They'll use the language that best fits the kinds of problems they need to solve.
+.NET is popular in enterprises for several reasons. Advantages include its ecosystem and its integration with other Microsoft products, including Azure cloud services and on-premises server products. Further, .NET is a strongly typed system, so it avoids many of the bugs that can arise in loosely typed systems. Developers can choose to use an object-based paradigm in C#, or a functional-based paradigm in F#. They'll use the language that best fits the kinds of problems they need to solve.
 
 ### Choose .NET for prototypes, start-ups, and small-scale applications
 
