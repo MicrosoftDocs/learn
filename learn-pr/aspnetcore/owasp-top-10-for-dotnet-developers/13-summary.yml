@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.summary
+title: Summary
+metadata:
+  title: summary
+  description: "OWASP Top 10 for .NET Developers. Summary of what OWASP Top 10 means to .NET developers."
+  ms.date: 06/12/2023
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 5
+content: |
+  [!include[](includes/13-summary.md)]
+
+# more: |
+#   [https://learn.microsoft.com/learn/modules/owasp-and-dynamic-analyzers/]
+#   [https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf]

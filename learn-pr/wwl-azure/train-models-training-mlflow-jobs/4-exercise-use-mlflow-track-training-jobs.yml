@@ -4,11 +4,10 @@ title: Exercise - Use MLflow to track training jobs
 metadata:
   title: Exercise - Use MLflow to track training jobs
   description: "Explore how to use MLflow in scripts with Azure Machine Learning through a hands-on exercise."
-  ms.date: 02/14/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-use-mlflow-track-training-jobs.md)]

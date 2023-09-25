@@ -10,24 +10,24 @@ In this exercise, you'll create a GitHub repository from a template that contain
    https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
    ```
 
-1. Above the file list, select **Use this template**.
+1. Above the file list, select **Use this template**, then select **Create a new repository**.
 
     ![Screenshot of the "Use this template" button on the mslearn-java-petclinic-simplified main page.](../media/4-template.png)
 
 1. In the **Repository name** box, enter a unique name for your repository. Be sure to follow the naming convention for GitHub repositories.
 
-1. Ensure that the **Private** option is selected, and then select **Create repository from template**.
+1. Ensure that the **Private** option is selected, and then select **Create repository**.
 
     ![Screenshot of the "Create repository from template" button on the "Create a new repository from ..." page.](../media/4-template-create.png)
 
 ## Workflow
 
-Inside the project directory for the repository, you've created, you'll see a directory called *terraform* and, within it, a file called *main.tf*.
+Inside the project directory for the repository you've created, you'll see a directory called *terraform* and, within it, a file called *main.tf*.
 
 Let's look at a few sections that you might use to define your module's configuration:
 
-- **Provider**: A Terraform configuration file starts with the specification of the provider. When you use Azure, you specify the Azure provider (azurerm) in the provider block.
-- **Terraform**: The Terraform version that you're working with.
+- **Provider**: A Terraform configuration file starts with the specification of the provider. When you use Azure, you specify the Azure provider (`azurerm`) in the provider block.
+- **Terraform**: The Terraform version with which you're working.
 - **Data**: Gets data from existing services.
 - **Locals**: Generates new variables by using functions and expressions.
 - **Resource**: Describes resources and dependencies.
@@ -35,7 +35,7 @@ Let's look at a few sections that you might use to define your module's configur
 
 To provision our application and database, we'll only need to include the **Provider** and **Resource** sections.
 
-Next, open the *main.tf* file, and review the outline and comments:
+Next, open the *main.tf* file and review the outline and comments:
 
 ```yml
 provider "azurerm" {
@@ -154,7 +154,7 @@ az ad sp create-for-rbac --name "<yourServicePrincipalName>" --role contributor 
 
 The preceding command returns the following JSON. Copy it for use in the next step:
 
-```bash
+```output
 {
   "clientId": "XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXXX",
   "clientSecret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -171,12 +171,13 @@ Your GitHub repository has a feature called Secrets, where you can store sensiti
 After you've created the required IDs and the secret in the preceding step, the next step in this unit is to add them to the Secrets store in your GitHub project.
 
 For this exercise, you need to store the following secrets:
+
 * `AZURE_CLIENT_ID`
 * `AZURE_CLIENT_SECRET`
 * `AZURE_SUBSCRIPTION_ID`
 * `AZURE_TENANT_ID`
 
-To store the secrets, go to your forked GitHub repository, select **Settings**, and then select **Secrets** on the left pane.
+To store the secrets, go to your forked GitHub repository, select **Settings**, and then select **Secrets and variables**, then select **Actions** on the left pane.
 
 Create four secrets using the values returned from the creation of the Service Principal.
 
@@ -186,7 +187,7 @@ Be sure to store the secrets without the quotation marks (" "), as shown in the 
 
 ## Workflow file
 
-Inside your project directory, is a directory called *.github/workflows* and, within it, a file called *main.yml*.
+Inside your project directory is a directory called *.github/workflows* and, within it, a file called *main.yml*.
 
 The *main.yml* file is a GitHub workflow. It uses the secret you've configured to deploy your application to your Azure subscription.
 
@@ -246,17 +247,17 @@ This workflow does the following actions:
 
 ## Trigger the workflow
 
-Next, in your repository, trigger your GitHub action by doing the following action:
+Next, in your repository, trigger your GitHub action by:
 
 1. In the built-in GitHub text editor, or in an editor of your choice, edit *terraform/variables.tf* as follows:
 
-   a. Change `"<CHANGE_ME_RESOURCE_GROUP>"` to your intended resource group name.  
-   b. Change `"<CHANGE_ME_APP_NAME>"` to your intended application name. Make sure that your application name is unique.
+   a. Change `"CHANGE_ME_RESOURCE_GROUP"` to your intended resource group name.  
+   b. Change `"CHANGE_ME_APP_NAME"` to your intended application name. Make sure that your application name is unique.
 
     ```yaml
     variable "resource_group" {
       description = "The resource group"
-      default = "<CHANGE_ME_RESOURCE_GROUP>"
+      default = "CHANGE_ME_RESOURCE_GROUP"
     }
 
     variable "application_name" {
@@ -325,8 +326,7 @@ In your GitHub repository, edit your Azure resource names by doing the following
 
 ## Create an Azure Pipeline to provision your Terraform resources
 
-In our Azure DevOps project, we'll create two separate pipelines for provisioning and build-and-deploy.
-The provisioning pipeline creates the Azure resources that will be released via the build-and-deploy pipeline at a later point.
+In our Azure DevOps project, we'll create two separate pipelines for provisioning and build-and-deploy. The provisioning pipeline creates the Azure resources that will be released via the build-and-deploy pipeline at a later point.
 
 Let's create the first provisioning Pipeline:
 
@@ -339,10 +339,11 @@ Let's create the first provisioning Pipeline:
    | Project Name | Required |
    | Description | Optional |
    | Visibility | Choose **Private** |
-   | Source control type | Choose **GIT** |  
+   | Advanced |  |
+   | Version control | Choose **GIT** |  
    | Work Item Process | Choose **Basic** |
 
-1. Select "Create" to create the project and open a welcome page.
+1. Select **Create project** to create the project and open a welcome page.
 
 ![Screenshot displaying the new Azure Project form.](../media/4-project.png)
 
@@ -352,34 +353,36 @@ Let's give your Azure Pipeline access to your Azure account.
 
 1. In Azure DevOps, open the **Service connections** page from the project settings page
 
-1. Choose **+ New service connection** and select **Azure Resource Manager**.
+1. Choose **Create service connection** and select **Azure Resource Manager**, then select **Next**.
+1. Select **Service principal (automatic)**, then select **Next**.
 
 1. Specify the following parameters.
 
    | Parameter | Description |
    | --------- | ----------- |
-   | Connection Name | Required. The name you'll use to refer to this service connection in task properties. This name isn't the name of your Azure subscription. |
-   | Scope level | Select Azure Subscription. |
-   | Subscription | select an existing Azure subscription. |
+   | Scope level | Select Azure Subscription |
+   | Subscription | Select your existing Azure subscription |
    | Resource Group | Leave empty to allow users to access all resources defined within the subscription |
+   | Connection Name | Required. The name you'll use to refer to this service connection in task properties. This name isn't the name of your Azure subscription. |
 
-1. Select OK to create the connection
+1. Select **Save** to create the connection.
 
 ## Create the Provision Pipeline
 
 > [!IMPORTANT]
-> This module's pre-requisites required the install of the  [Terraform Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks) - if you have not installed it before hand, your pipeline will not run.
+> This module's prerequisites required you to install the [Terraform Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks). If you haven't installed it, your pipeline won't run.
 
 After setting up your project and connection to Azure, you'll need to create an Azure Pipeline to provision your terraform resources.
 
-In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
+In Azure DevOps, go to your Project, select **Pipelines** in the left-hand menu, then select **Create Pipeline**.
 
-1. On the "**Connect**" tab - Select "**GitHub**" (YAML file).
+1. On the "**Connect**" tab, select "**GitHub**" (YAML file).
 1. If prompted to authorize GitHub access, enter your GitHub Credentials and approve the access for Azure Pipelines with the requested privileges.
-1. On the "**Select**" tab - Select the GitHub Repository containing your Template.
-1. On the "**Configure**" tab - Select to use an "**Existing Azure Pipelines YAML file**".
+1. On the "**Select**" tab, select the GitHub Repository containing your Template.
+1. Select **Configure pipeline** on the **Inventory** tab.
+1. On the "**Configure**" tab, select to use an "**Existing Azure Pipelines YAML file**".
 1. In the path, select "/azuredevops/provision.yml"
-1. Select **Continue** to go the "***Review**" tab and review your PipeLine
+1. Select **Continue** to go the **Review** tab and review your pipeline.
 
 ![Screenshot displaying the new Azure Pipeline form.](../media/4-yaml.png)
 
@@ -420,14 +423,14 @@ steps:
 
 Let's look at some of the fields we use in the config:
 
-- **serviceConnection**: your Azure PipeLine Service Connection your setup previously.
-- **command**: your Terraform workflow command - **init** or **apply**.
-- **backendAzure**: required fields that are needed in a team environment to store shared state.
+- **serviceConnection**: Your Azure PipeLine Service Connection your setup previously
+- **command**: Your Terraform workflow command: **init** or **apply**
+- **backendAzure**: Required fields that are needed in a team environment to store shared state.\
 
 Before you save and run the pipeline, we need to add the variable that will bind to your service connection:
 
-1. Select "Variables" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
-1. Select "okay" (bottom-right corner) to save the variable
+1. Select **Variables** (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
+1. Select **OK** (bottom-right corner) to save the variable.
 
 ![Screenshot displaying the new Service Principal variable.](../media/4-service.png)
 

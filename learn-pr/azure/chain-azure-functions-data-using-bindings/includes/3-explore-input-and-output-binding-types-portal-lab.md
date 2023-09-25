@@ -95,9 +95,9 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 Now that we have a function app, it's time to create a function. Each function is activated by a trigger. In this module, we'll define an HTTP trigger by using a predefined template.
 
-1. In the **Function App** menu on the left, under **Functions**, select **Functions**. The **Functions** pane for your *Function App* appears.
+1. Select the **Create in Azure portal** button in the **Functions** tab on the **Overview** page.
 
-1. In the command bar, select **Create**. The **Create function** pane appears.
+1. The **Create function** pane appears.
 
     :::image type="content" source="../media/3-add-function-small.png" alt-text="Screenshot for the Create Function pane." lightbox="../media/3-add-function.png":::
 
@@ -191,9 +191,9 @@ In the preceding code for our function, we saw that we accessed the payload of t
 
 Now that we have a function app, let's create a function. Each function is activated by a trigger. In this module, we'll create an HTTP trigger by using a template.
 
-1. In the **Function App** menu on the left, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
+1. Select the **Create in Azure portal** button in the **Functions** tab on the **Overview** page.
 
-1. From the command bar, select **Create**. The **Create function** pane appears.
+1. The **Create function** pane appears.
 
 1. In the **Select a template** section, select the **HTTP trigger** template.
 

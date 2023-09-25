@@ -20,7 +20,7 @@ In this unit, you store the SQL Server connection string in your Azure key vault
     ```
 
     When the key vault is created, you'll receive the following warning:
-    
+
     ```output
     WARNING: Access policy is not set. No user or application have access permission to use this vault. This can happen if the vault was created by a service principal. Please use Set-AzKeyVaultAccessPolicy to set access policies.
     ```
@@ -67,7 +67,7 @@ In this unit, you store the SQL Server connection string in your Azure key vault
 
     ```PowerShell
     $objectId = az ad signed-in-user show `
-        --query objectId -o tsv
+        --query id -o tsv
     ```
 
 1. Grant your account privileges to create and retrieve secrets and keys from the key vault.

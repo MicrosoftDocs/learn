@@ -1,6 +1,6 @@
 In the [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true) learning path, you helped the Tailspin Toys team use Azure DevOps to plan and build a continuous integration (CI) pipeline to build their *Space Game* website.
 
-The Tailspin team's big release is approaching. The team can use Azure DevOps to build and test their code. But how can they quickly deploy the application to an environment that's available to their users?
+The Tailspin team's big release is approaching. The team can use Azure DevOps to build and test their code, but how can they quickly deploy the application to an environment that's available to their users?
 
 In this module, you'll continue your journey with the Tailspin team as they set up a continuous delivery (CD) pipeline to deploy their *Space Game* website.
 
@@ -17,7 +17,7 @@ After completing this module, you'll be able to:
 
 The modules in this learning path and previous learning paths form a progression.
 
-If you want to start with this learning path, set up a development environment on your Windows, macOS, or Linux system. You will need:
+If you want to start with this learning path, set up a development environment on your Windows, macOS, or Linux system. You'll need:
 
 [!include[](../../shared/includes/prerequisites.md)]
 
@@ -26,7 +26,7 @@ To follow the progression from the beginning, complete the following learning pa
 - [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
 - [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 
-You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps. But here you'll use Azure DevOps to deploy to Azure resources in your Azure subscription.
+You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources in your Azure subscription.
 
 [!include[](../../shared/includes/project-details-note.md)]
 

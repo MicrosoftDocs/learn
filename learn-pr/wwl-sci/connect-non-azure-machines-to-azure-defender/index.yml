@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: defender-for-cloud
 title: Connect non-Azure resources to Microsoft Defender for Cloud
 summary: Learn how you can add Microsoft Defender for Cloud capabilities to your hybrid environment.
 abstract: |

@@ -4,8 +4,8 @@ metadata:
   title: Secure your hub-spoke network
   description: Secure your hub-spoke network
   ms.date: 10/21/2019
-  author: KumudD
-  ms.author: kumud
+  author: mbender-ms
+  ms.author: mbender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your hub-spoke network

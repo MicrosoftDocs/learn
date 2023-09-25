@@ -4,11 +4,10 @@ title: Exercise-Explore the developer tools
 metadata:
   title: Exercise-Explore the developer tools
   description: "Exercise-Explore the developer tools"
-  ms.date: 01/06/2023
+  ms.date: 07/28/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise.md)]

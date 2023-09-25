@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-how-git-manages-source-control.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 08/23/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
+interactive: bash

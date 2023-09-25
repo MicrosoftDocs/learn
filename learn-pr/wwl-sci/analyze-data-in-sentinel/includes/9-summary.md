@@ -1,4 +1,5 @@
 
+
 Contoso wanted to improve the efficiency of the investigation of the security incidents performed by their SecOps team. <!--Marjan, the template for the summary topic was updated recently and I have tweaked the summary content to match the template. Please review the text below and make any changes required.-->
 
 The SecOps team was spending significant time investigating the high volume of alerts they were receiving from the various products and services used by Contoso.

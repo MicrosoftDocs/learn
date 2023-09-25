@@ -5,11 +5,11 @@ metadata:
   unitType: introduction
   title: introduction
   description: "Introduction unit for the Introduction to Microsoft Purview module."
-  ms.date: 5/05/2022 
+  ms.date: 05/09/2023
   author: whhender 
   ms.author: whhender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

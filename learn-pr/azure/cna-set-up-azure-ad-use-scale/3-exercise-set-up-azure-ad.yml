@@ -5,9 +5,11 @@ metadata:
   title: Exercise - Set up Azure AD
   description: Exercise - Set up Azure AD
   ms.date: 05/19/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |

@@ -14,19 +14,21 @@ GitHub secrets introduce a way to securely store secrets, keys, and other sensit
 
 1. Select **Settings** for the repository.
 
-1. Select **Secrets** > **Actions** > **New repository secret** and enter the following information:
+1. Select **Secrets and variables** > **Actions** > **New repository secret** and enter the following information:
     1. *Name*: **AZURE_SQL_CONNECTION_STRING**
-    1. *Value*: **Connection string from prior step**
+    1. *Secret*: **Connection string from prior step**
+
+1. Select **Add secret**.
 
 ## Configure yaml file for GitHub Actions
 
-There are several template yaml files available in the code repository. For this module, you'll only use the workflow file for Azure SQL Database. If you decide to complete future modules of this learning path, you will learn how to automate deployment for other services.
+There are several template yaml files available in the code repository. For this module, you'll only use the workflow file for Azure SQL Database. If you decide to complete future modules of this learning path, you'll learn how to automate deployment for other services.
 
 1. In Visual Studio Code, select the **Explorer** icon on the left-hand taskbar to view the repository files. If you don't see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
 
 1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
 
-1. Review the template and seek to understand what the workflow will do, and how it will update the database.
+1. Review the template and seek to understand what the workflow will do and how it'll update the database.
 
 ## Push commits and monitor results using Visual Studio Code and GitHub
 
@@ -41,7 +43,7 @@ Now that your GitHub secret and workflow file are configured, you're ready to pu
 1. Select the **...** > **Push**. This pushes your updates to your repository hosted on GitHub, and it kicks off any GitHub Actions.
 
     > [!IMPORTANT]
-    > If you are prompted to log in, you must use your GitHub username and obtain a personal access token to supply **instead of your GitHub password**. You can do this by going to https://github.com/settings/tokens/new. Add a note `VSCode`, check all the boxes, and select **Generate token**. Copy the token text and store in a secure location. Back in Visual Studio Code, use the token as your password/token to log in to GitHub.
+    > If you're prompted to log in, you must use your GitHub username and obtain a personal access token to supply **instead of your GitHub password**. You can do this by going to https://github.com/settings/tokens/new. Add a note `VSCode`, check all the boxes, and select **Generate token**. Copy the token text and store in a secure location. Back in Visual Studio Code, use the token as your password/token to log in to GitHub.
 
 1. Navigate to your GitHub repository for this module and select **Actions**.
 

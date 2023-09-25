@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.microservices-aspnet-core.7-update-aks-deployment
 metadata:
-  title: Exercise - Deploy changes to AKS
-  description: Deploy the coupon service and modified WebSPA app to AKS.
+  title: Exercise - Build and deploy the changes
+  description: Build and host the updated app in Azure Container Registry, and deploy the updated coupon service and modified WebSPA app to AKS.
   ms.date: 05/27/2020
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
-title: Exercise - Deploy changes to AKS
+title: Exercise - Build and deploy the changes
 durationInMinutes: 7
 content: |
   [!include[](includes/7-update-aks-deployment.md)]

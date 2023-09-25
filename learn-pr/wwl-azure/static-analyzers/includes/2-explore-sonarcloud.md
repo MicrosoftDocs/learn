@@ -1,3 +1,4 @@
+
 Technical debt can be classified as the measure between the codebase's current state and an optimal state.
 
 Technical debt saps productivity by making code hard to understand, easy to break, and difficult to validate, creating unplanned work and ultimately blocking progress.

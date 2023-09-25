@@ -16,4 +16,4 @@ You'll be able to use your screen reader to hear the speech that the automation 
 
 ## What's the main goal?
 
-By the end of this session, you'll be able to add text-to-speech screen reader features and control the order in which the on-screen elements are read. The goal is to improve the accessibility of your Xamarin.Forms mobile application.
+By the end of this session, you'll be able to add text to speech screen reader features and control the order in which the on-screen elements are read. The goal is to improve the accessibility of your Xamarin.Forms mobile application.

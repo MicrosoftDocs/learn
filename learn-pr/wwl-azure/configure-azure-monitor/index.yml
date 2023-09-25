@@ -3,11 +3,10 @@ uid: learn.wwl.configure-azure-monitor
 metadata:
   title: Configure Azure Monitor
   description: "Learn how to configure Azure Monitor, including querying the Azure Monitor activity log."
-  ms.date: 03/02/2023
+  ms.date: 06/25/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure Azure Monitor
 summary: Learn how to configure Azure Monitor, including querying the Azure Monitor activity log.
 abstract: |

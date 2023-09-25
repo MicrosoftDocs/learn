@@ -8,7 +8,6 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Deploy model to NVIDIA Triton Inference Server
 summary: NVIDIA Triton Inference Server is a multi-framework, open-source software that is optimized for inference. It supports popular machine learning frameworks like TensorFlow, ONNX Runtime, PyTorch, NVIDIA TensorRT, and more. It can be used for your CPU or GPU workloads.  In this module, you'll deploy your production model to NVIDIA Triton server to perform inference on a cloud-hosted virtual machine.
 abstract: |

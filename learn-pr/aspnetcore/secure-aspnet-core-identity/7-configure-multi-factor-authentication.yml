@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-aspnet-core-identity.configure-multi-factor-authentication
+uid: learn.secure-aspnet-core-identity.7-configure-multi-factor-authentication
 title: Exercise - Configure multi-factor authentication
 metadata:
   title: Exercise - Configure multi-factor authentication
-  description: "Add a QR code to the multi-factor authentication "
-  ms.date: 3/29/2022
+  description: Learn how to add a QR code to multi-factor authentication.
+  ms.date: 05/19/2023
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 durationInMinutes: 8

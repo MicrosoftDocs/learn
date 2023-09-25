@@ -4,11 +4,11 @@ title: Explore NFS v4.1 volumes on Azure NetApp Files
 metadata:
   title: Explore NFS v4.1 volumes on Azure NetApp Files
   description: "Explore NFS v4.1 volumes on Azure NetApp Files"
-  ms.date: 04/20/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/18-explore-nfs-v4-1-volumes-azure-netapp-files.md)]

@@ -7,6 +7,7 @@ metadata:
   ms.date: 12/03/2021
   author: JKirsch1
   ms.author: chnoring
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: learning-advocates
   ms.custom: team=nextgen, devx-track-azurecli

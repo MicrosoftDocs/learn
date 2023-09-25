@@ -8,6 +8,8 @@ metadata:
   author: tfitzmac
   ms.author: tomfitz
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-bicep
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |

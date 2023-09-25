@@ -19,27 +19,35 @@ There are various API frameworks and standards. API Management provides you with
 
 |Type  |Details |
 |---------|---------|
-|**Blank API**|You can import an API with a blank API definition. You then manually specify all the required parameters. |
+|**HTTP**|You can import an HTTP API with a blank API definition. You then manually specify all the required parameters. |
+|**WebSocket**| Set up pass-through to a backend WebSocket service.  |
+|**GraphQL**| Set up pass-through to a backend GraphQL service, or import a GraphQL schema and create a synthetic GraphQL API with custom field resolvers. |
 |**OpenAPI**|OpenAPI is a specification that documents all the endpoints and operations for RESTful APIs, and all input and output parameters. OpenAPI was originally called Swagger.|
 |**WADL**| Web Application Description Language is an XML description of HTTP-based web services. It's a simpler format and more lightweight than WSDL.|
 |**WSDL**| Web Service Description Language is an XML description of any network service, not just HTTP.|
+
+You can also import APIs from several backend Azure resources.
+
+|Type  |Details |
+|---------|---------|
 |**Logic App**| Logic apps are used to orchestrate and automate workflows and integrations with various data sources.|
-|**API App**|An API hosted within an API app service in Azure.|
+|**App Service**|An API hosted within an app service in Azure.|
 |**Function App**|Serverless code that can be called through triggers.|
+|**Container App**|Serverless containers for microservices.|
 
 ## Import an API
 
 There are several ways to import an API into Azure API Management.
 
-Using the Azure portal, you select **APIs**, and then **+ Add API**. You start by selecting the API framework you'd like to import.
+Using the Azure portal, you select **APIs**, and then **+ Add API**. You start by selecting the API type you'd like to import.
 
-![Screenshot of Azure portal showing API Management service with the APIs section highlighted and selected.](../media/4-apim-import.png)
+:::image type="content" source="../media/4-apim-import.png" alt-text="Screenshot of Azure portal showing API Management service with the APIs section highlighted and selected.":::
 
 You then provide a link to your API specification as a URL or file, and a name for the API. Here's an example for an OpenAPI import.
 
 ![Screenshot of create from OpenAPI specification import settings with OpenAPI specification and display name fields highlighted.](../media/4-api-details.png)
 
-The Azure portal isn't the most efficient tool for importing and configuring large numbers of APIs. As you scale up your API management, you'll need other tools. You can use **Azure PowerShell** to manage your API gateway, and to import APIs. There are cmdlets for deploying API gateways, defining and configuring products, importing APIs, and managing users and subscriptions.
+The Azure portal isn't the most efficient tool for importing and configuring large numbers of APIs. As you scale up your API management, you'll need other tools, such as the Azure CLI, Azure Resource Manager or Bicep templates, or Azure PowerShell. For example, you can use Azure PowerShell cmdlets for deploying API gateways, defining and configuring products, importing APIs, and managing users and subscriptions.
 
 ## Visualize
 
@@ -47,7 +55,7 @@ You can use the API gateway as a way to visualize how data is processed through 
 
 If you're an administrator, you can visualize APIs in the Azure portal.
 
-![Screenshot of Azure portal API configuration showing a highlighted GET request test on an imported API.](../media/4-apim-azure-portal-visualize.png)
+:::image type="content" source="../media/4-apim-azure-portal-visualize.png" alt-text="Screenshot of Azure portal API configuration showing a highlighted GET request test on an imported API.":::
 
 ## Policies
 
@@ -59,14 +67,14 @@ Popular configurations include:
 - Call rate limiting to restrict the number of incoming calls.
 - Setting inbound and outbound headers
 
-You use the Azure portal to apply different policies to APIs. 
-Policies can be viewed in the **Design** tab.
+You use the Azure portal to apply different policies to APIs. Policies can be viewed in the **Design** tab.
 
-![Screenshot of Azure portal showing API configuration for all operations with base policies highlighted for inbound, outbound, and backend sections.](../media/4-policies-1.png)
+:::image type="content" source="../media/4-policies-1.png" alt-text="Screenshot of Azure portal showing API configuration for all operations with base policies highlighted for inbound, outbound, and backend sections.":::
+
 
 You can also use the **Design** tab to add new policies.
 
-![Screenshot of Azure portal showing inbound policy options for API configuration.](../media/4-policies-2.png)
+:::image type="content" source="../media/4-policies-2.png" alt-text="Screenshot of Azure portal showing inbound policy options for API configuration.":::
 
 ## Product
 
@@ -88,6 +96,7 @@ You assign policies so that your products can have different access rules, usage
 
 You use the Azure portal to associate APIs with a product.
 
-![Screenshot of Azure portal showing API Management with products section highlighted.](../media/4-apim-products.png)
+:::image type="content" source="../media/4-apim-products.png" alt-text="Screenshot of Azure portal showing API Management with products section highlighted.":::
 
-For all pricing tiers except consumption, there are two default products: **Starter** and **Unlimited**. The Unlimited product is designed for production API management, as it has no restrictions on the number of attached APIs. You can create as many new products as you need. The starter product has a limit of five API calls/minute, and a maximum of 100 API calls/week.
+
+For all pricing tiers except Consumption, there are two default products: **Starter** and **Unlimited**. The Unlimited product is designed for production API management, as it has no restrictions on the number of attached APIs. You can create as many new products as you need. The Starter product has a limit of five API calls/minute, and a maximum of 100 API calls/week.

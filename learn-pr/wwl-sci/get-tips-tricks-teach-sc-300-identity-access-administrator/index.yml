@@ -3,9 +3,9 @@ uid: learn.wwl.get-tips-tricks-teach-sc-300-identity-access-administrator
 metadata:
   title: 'Tips and tricks for teaching SC- 300: Microsoft Identity and Access Administrator'
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
-  ms.date: 04/10/2023
+  ms.date: 05/03/2023
   author: wwlpublish
-  ms.author: 'Trinity Sheppard '
+  ms.author: tsheppard
   ms.topic: interactive-tutorial
   ms.prod: azure
   ms.service: azure
@@ -16,7 +16,8 @@ abstract: |
   - Understand how to utilize the tips and tricks for teaching SC-300: Microsoft Identity and Access Administrator in the classroom
   - Leverage the lab environment during the instructional portion of the class
   - Discover additional resources and materials to prepare students for success on their Microsoft Certification exams
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
@@ -24,7 +25,7 @@ roles:
 - higher-ed-educator
 products:
 - azure
-- azure-security-center
+- defender-for-cloud
 subjects:
 - security
 units:

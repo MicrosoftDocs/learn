@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: iot-edge
 title: Explore IoT Edge offline support
 summary: This module provides you with experience implementing an extended offline scenario for IoT Edge devices that includes local storage, and using a gateway device to retain child device messages until the devices are back online.
 abstract: |
@@ -45,3 +45,4 @@ units:
 - learn.wwl.explore-iot-edge-offline-support.summary
 badge:
   uid: learn.wwl.explore-iot-edge-offline-support.badge
+hidden: true

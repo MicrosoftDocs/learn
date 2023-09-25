@@ -3,11 +3,10 @@ uid: learn.wwl.explore-azure-databricks
 metadata:
   title: Explore Azure Databricks
   description: "Explore Azure Databricks"
-  ms.date: 08/26/2022
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore Azure Databricks
 summary: Azure Databricks is a cloud service that provides a scalable platform for data analytics using Apache Spark.
 abstract: |
@@ -17,7 +16,7 @@ abstract: |
   - Describe key concepts of an Azure Databricks solution.
 prerequisites: |
   Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
-iconUrl: /training/achievements/describe-azure-databricks.svg
+iconUrl: /learn/achievements/describe-azure-databricks.svg
 levels:
 - intermediate
 roles:

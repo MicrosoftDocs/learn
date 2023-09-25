@@ -25,9 +25,8 @@ roles:
 products:
 - dotnet
 - aspnet-core
-- dotnet-core
 - azure
-- azure-application-insights
+- azure-monitor
 - azure-container-registry
 - azure-kubernetes-service
 subjects:

@@ -1,4 +1,3 @@
-
 Two deployment types are available for delivering software to clients. Administrators can either install software for users or computers in advance by assigning the software, or give users the option to install the software when they require it by publishing the software in AD DS. Both user and computer configuration sections of a Group Policy Objects (GPO) have a Software Settings section. You can add software to a GPO by adding a new package to the Software Installation node and then specifying whether to assign or publish it.
 
 You also can choose advanced deployment of a package. Use this option to apply a customization file to a package for custom deployment. For example, you can use the Office Customization tool to create a setup customization file to deploy Microsoft Office.

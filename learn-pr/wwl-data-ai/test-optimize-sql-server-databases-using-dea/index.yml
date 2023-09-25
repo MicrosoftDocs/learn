@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: markohot
   ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.prod: sql
 title: Test and optimize SQL Server databases using the Database Experimentation Assistant (DEA)
 summary: The Database Experimentation Assistant (DEA) is a standalone application that can compare workloads between the current version of your database, and the target.
 abstract: |

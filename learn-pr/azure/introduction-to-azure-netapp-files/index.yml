@@ -8,7 +8,7 @@ metadata:
   author: mengruts   
   ms.author: mengtsai           
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-netapp-files
 title: Introduction to Azure NetApp Files
 summary: Describe how the low latency and high availability of Microsoft Azure NetApp Files work to provide on-premises-like performance for cloud workloads. Determine the types of file-based workloads that are suitable for migration to Azure NetApp Files.
 abstract: |

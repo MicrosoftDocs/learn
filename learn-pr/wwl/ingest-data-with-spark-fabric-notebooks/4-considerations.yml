@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-with-spark-fabric-notebooks.considerations
+title: Consider uses for ingested data
+metadata:
+  title: Consider uses for ingested data
+  description: "Consider uses for ingested data"
+  ms.date: 09/04/2023
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-considerations.md)]

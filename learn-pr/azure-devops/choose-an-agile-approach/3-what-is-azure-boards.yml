@@ -9,7 +9,7 @@ metadata:
   author: chcomley
   ms.author: chcomley
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 15
 content: |
   [!include[](includes/3-what-is-azure-boards.md)]

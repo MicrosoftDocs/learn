@@ -7,8 +7,8 @@ metadata:
   author: gloveboxes
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
   ms.custom: nextgen
+  ms.service: azure-sphere
 title: Introduction to the Altair 8800 and Azure Sphere
 summary: Introduction to computing fundamentals with Altair 8800 and Azure Sphere.
 abstract:  |
@@ -35,7 +35,7 @@ products:
 - azure
 - azure-iot-central
 - azure-sphere
-- azure-app-service-static
+- static-web-apps
 - azure-virtual-machines
 subjects:
 - cloud-computing

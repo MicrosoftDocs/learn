@@ -2,16 +2,16 @@ If you have questions around Azure services or are curious about Azure's capabil
 
 ## Azure free support resources
 
-You have 24/7 access to the online documentation, community support, and new Azure capabilities demo videos on YouTube. Created by Azure engineers, these demo videos are available on Azure Friday, Microsoft Mechanics, and Azure portal how-to videos playlists. As an Azure customer, the following free support resources are available to you as well.
+You have 24/7 access to the online documentation, community support, and new Azure capabilities demo videos on YouTube. Created by Azure engineers, these demo videos are available on the Azure Friday, Microsoft Mechanics, and Azure portal how-to videos playlists. As an Azure customer, the following free support resources are available to you, as well:
 
 - Billing and subscription management support
 - Azure Quickstart Center, a guided experience in the Azure portal available to anyone who wants to improve their knowledge of Azure
-- Azure Service Health gives you insights on issues related to your Azure services 
-- Azure Advisor gives you personalized recommendations on how to optimize your cost and performance
+- Azure Service Health, which gives you insights on issues related to your Azure services
+- Azure Advisor, which gives you personalized recommendations on how to optimize your cost and performance
 
 ## Azure support plans
 
-Azure offers customers reactive and proactive technical support. Choose the support plan that best meet your needs. You can purchase the support plan on the Azure website or Azure portal. If you are working with a Microsoft representative or partner, you can purchase a support plan from them. Microsoft also provides support plans that cover Azure, Microsoft 365 and Dynamics 365. Talk to your Microsoft representative or partner for more details.
+Azure offers customers reactive and proactive technical support. Choose the support plan that best meets your needs. You can purchase the support plan on the Azure website or Azure portal. If you're working with a Microsoft representative or partner, you can purchase a support plan from them. Microsoft also provides support plans that cover Azure, Microsoft 365, and Dynamics 365. Talk to your Microsoft representative or partner for more details.
 
 > [!div class="mx-tableFixed"]
 > |  |  Developer | Standard  | Professional Direct |

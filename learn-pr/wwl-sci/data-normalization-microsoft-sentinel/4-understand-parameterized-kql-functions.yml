@@ -4,11 +4,11 @@ title: Understand parameterized KQL functions
 metadata:
   title: Understand parameterized KQL functions
   description: "Understand parameterized KQL functions"
-  ms.date: 10/18/2022
+  ms.date: 05/18/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

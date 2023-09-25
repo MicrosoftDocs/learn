@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.wwl.investigate-container-for-use-with-cognitive-services
 metadata:
-  title: Deploy cognitive services in containers
-  description: "Deploy cognitive services in containers"
-  ms.date: 12/07/2021
+  title: Deploy Azure AI services in containers
+  description: "Deploy Azure AI services in containers"
+  ms.date: 07/21/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Deploy cognitive services in containers
-summary: Learn about Container support in Cognitive Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+  ms.service: cognitive-services
+title: Deploy Azure AI services in containers
+summary: Learn about Container support in Azure AI Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
 abstract: |
   After completing this module, learners will be able to:
   * Create Containers for Reuse
   * Deploy to a Container
   * Secure a Container
-  * Consume Cognitive Services from a Container
+  * Consume Azure AI Services from a Container
 prerequisites: |
   * Learners should have an Azure account and be familiar with navigating the Azure portal.
   * Learners should also have experience with Docker and containers.
@@ -29,7 +29,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 - azure-container-instances
 subjects:
 - container

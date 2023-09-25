@@ -7,15 +7,14 @@ metadata:
   ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
-  ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 8
 content: |
 quiz:
   questions:
-    - content: 'Which of the following ThreadX services should be used to obtain an instance from a semaphore?'
+    - content: 'Which of the following ThreadX service calls should be used to obtain an instance from a semaphore?'
       choices:
         - content: 'tx_semaphore_put(&my_semaphore, TX_NO_WAIT)'
           isCorrect: false
@@ -26,9 +25,9 @@ quiz:
         - content: 'tx_semaphore_get(&my_semaphore, TX_WAIT_FOREVER)'
           isCorrect: true
           explanation: 'Correct.'
-        - content: 'All of the above are correct'
+        - content: 'All of these service calls are correct'
           isCorrect: false
-          explanation: 'Incorrect. A semaphore get operation must be used.'
+          explanation: 'Incorrect. A semaphore_get operation must be used.'
     - content: 'Which of the following ThreadX resources embodies the property of ownership?'
       choices:
         - content: 'Mutex'
@@ -40,7 +39,7 @@ quiz:
         - content: 'Application timer'
           isCorrect: false
           explanation: 'Incorrect. Only a mutex has the concept of ownership.'
-        - content: 'None of the above'
+        - content: 'None of these resources'
           isCorrect: false
           explanation: 'Incorrect. Only a mutex has the concept of ownership.'
     - content: 'Which of the following ThreadX resources has the property of priority inheritance?'
@@ -54,34 +53,34 @@ quiz:
         - content: 'Application timer'
           isCorrect: false
           explanation: 'Incorrect. Only a mutex has the concept of priority inheritance.'
-        - content: 'None of the above'
+        - content: 'None of these resources'
           isCorrect: false
           explanation: 'Incorrect. Only a mutex has the concept of priority inheritance.'
-    - content: 'Which of the following ThreadX service calls cannot cause suspension?'
+    - content: "Which of the following ThreadX service calls can't cause suspension?"
       choices:
         - content: 'tx_mutex_get(&my_mutex, WAIT_FOREVER)'
           isCorrect: false
-          explanation: 'Incorrect. A semaphore get operation with TX_NO_WAIT will never cause suspension.'
+          explanation: 'Incorrect. A semaphore_get operation with TX_NO_WAIT never causes suspension.'
         - content: 'tx_mutex_get(&my_mutex, 1)'
           isCorrect: false
-          explanation: 'Incorrect. A semaphore get operation with TX_NO_WAIT will never cause suspension.'
+          explanation: 'Incorrect. A semaphore_get operation with TX_NO_WAIT never causes suspension.'
         - content: 'tx_semaphore_get(&my_semaphore, TX_NO_WAIT)'
           isCorrect: true
           explanation: 'Correct.'
         - content: 'tx_semaphore_get(&my_semaphore, 5)'
           isCorrect: false
-          explanation: 'Incorrect. A semaphore get operation with TX_NO_WAIT will never cause suspension.'
+          explanation: 'Incorrect. A semaphore_get operation with TX_NO_WAIT never causes suspension.'
     - content: 'Which of the following ThreadX service calls could result in thread suspension?'
       choices:
         - content: 'tx_semaphore_put(&my_semaphore, TX_WAIT_FOREVER)'
           isCorrect: false
-          explanation: 'Incorrect. This is an invalid semaphore put service call.'
+          explanation: 'Incorrect. This semaphore put service call is invalid.'
         - content: 'tx_semaphore_get(&my_semaphore, TX_NO_WAIT)'
           isCorrect: false
-          explanation: 'Incorrect. The TX_NO_WAIT option means that suspension cannot occur.'
+          explanation: "Incorrect. The TX_NO_WAIT option means that suspension can't occur."
         - content: 'tx_semaphore_get(&my_semaphore, 5)'
           isCorrect: true
           explanation: 'Correct.'
-        - content: 'All of the above are correct'
+        - content: 'All of these service calls are correct'
           isCorrect: false
           explanation: 'Incorrect. Only one of the options is correct.'

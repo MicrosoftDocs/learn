@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-machines
 title: Examine SAP S/4HANA on Azure virtual machines
 summary: Examine the architecture when deploying SAP S/4HANA workloads and in-memory SAP HANA databases, running on Azure VMs.
 abstract: |

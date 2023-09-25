@@ -10,7 +10,7 @@ Your organization needs a new platform for its virtualized workloads. As the Azu
 
 ## Objectives
 
-+ **Task 1**: Deploy a Docker image by using Azure Container Instances.
++ **Task 1**: Deploy an Azure Container Instances using a Docker image.
     + Create a new container instance by using a [Linux image](https://github.com/Azure-Samples/aci-helloworld). 
     + Configure a valid globally unique DNS host name. This host name is used to test the container.
 + **Task 2**: Review the functionality of Azure Container Instances.
@@ -21,4 +21,3 @@ Your organization needs a new platform for its virtualized workloads. As the Azu
 > Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
 
 [![Screenshot of the simulation page.](../media/simulation-container-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%2014?azure-portal=true)
-

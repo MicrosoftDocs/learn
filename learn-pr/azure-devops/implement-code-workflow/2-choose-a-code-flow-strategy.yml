@@ -9,7 +9,7 @@ metadata:
   ms.author: jukullam
   ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 8
 content: |
   [!include[](includes/2-choose-a-code-flow-strategy.md)]

@@ -6,6 +6,7 @@ metadata:
   ms.date: 01/06/2023
   author: jongalloway
   ms.author: jogallow
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Modernize ASP.NET Framework to ASP.NET Core with the .NET Upgrade Assistant

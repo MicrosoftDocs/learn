@@ -17,10 +17,16 @@ In this unit, you'll use your Communication Services phone number to send an SMS
 
 ## Add the SMS client library
 
-1. While still in the application directory, install the Azure Communication Services SMS client library for .NET package by using the dotnet add package command.
+1. While still in the application directory, install the Azure Communication Services SMS client library for .NET package by using the `dotnet add package` command.
 
     ```console
     dotnet add package Azure.Communication.Sms --version 1.0.0-beta.3
+    ```
+
+1. Open the project by using the following code:
+
+    ```console
+    code .
     ```
 
 1. Add a `using` directive to the top of `Program.cs` to include the `Azure.Communication` namespace.

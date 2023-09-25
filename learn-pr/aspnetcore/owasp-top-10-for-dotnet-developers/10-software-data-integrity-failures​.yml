@@ -1,0 +1,33 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.software-data-integrity-failures
+title: Software and data integrity failures
+metadata:
+  title: software-data-integrity-failures
+  description: "OWASP Top 10 for .NET Developers. Software and data integrity failures."
+  ms.date: 06/12/2023
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 2
+
+content: |
+  [!include[](includes/10-software-data-integrity-failures.md)]
+
+quiz:
+  title: Check your knowledge
+  questions: 
+  - content: "You plan to analyze deployed and running system. You want to focus finding security vulnerabilities in infrastructure and configuration. Which form of security testing would you benefit the most?"
+    choices:
+    - content: "Static application security testing (SAST)."
+      isCorrect: false
+      explanation: "Static analysis focuses on code prior to its deployment."
+    - content: "Software Composition Analysis (SCA)."
+      isCorrect: false
+      explanation: "Composition analysis focuses on code prior to its deployment."
+    - content: "Dynamic Application Security Testing (DAST)."
+      isCorrect: true
+      explanation: "Correct. Dynamic analysis can inspect and report on infrastructure configuration and expose its weak points."
+    - content: "Chaos testing."
+      isCorrect: false
+      explanation: "Helpful technique in reliability and disaster recovery testing but not quite."

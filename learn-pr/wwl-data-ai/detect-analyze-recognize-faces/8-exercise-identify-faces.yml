@@ -6,9 +6,9 @@ metadata:
   description: "Exercise - Detect, analyze, and identify faces"
   ms.date: 07/13/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labId: 100994
 labModal: true

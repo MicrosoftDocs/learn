@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.administer-fabric
+metadata:
+  title: Administer Microsoft Fabric
+  description: "Administer Microsoft Fabric"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+  ms.custom:
+    - build-2023
+title: Administer Microsoft Fabric
+summary: Microsoft Fabric is a SaaS solution for end-to-end data analytics. As an administrator, you can configure features and manage access to suit your organization's needs.
+abstract: |
+  In this module, you'll learn how to:
+  - Describe Fabric admin tasks
+  - Navigate the admin center
+  - Manage user access
+prerequisites: |
+  Before starting this module, you should be familiar with Microsoft Fabric. Familiarity with PowerShell may be helpful for some administrative tasks within Fabric.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- database-administrator
+products:
+- fabric
+subjects:
+- data-analytics
+units:
+- learn.wwl.administer-fabric.introduction
+- learn.wwl.administer-fabric.fabric-architecture
+- learn.wwl.administer-fabric.admin-role-tools
+- learn.wwl.administer-fabric.manage-security
+- learn.wwl.administer-fabric.govern-fabric
+- learn.wwl.administer-fabric.knowledge-check
+- learn.wwl.administer-fabric.summary
+badge:
+  uid: learn.wwl.administer-fabric.badge

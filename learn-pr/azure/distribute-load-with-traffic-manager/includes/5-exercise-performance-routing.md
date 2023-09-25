@@ -31,18 +31,18 @@ Your network architect would like to ensure customers have the best performance.
      ```
 
      ```azurecli
-    EastId=$(az network public-ip show \
+    WestId=$(az network public-ip show \
         --resource-group <rgn>Sandbox resource group </rgn> \
-        --name eastasia-vm-nic-pip \
+        --name westeurope-vm-nic-pip \
         --query id \
         --output tsv)
 
     az network traffic-manager endpoint create \
         --resource-group <rgn>Sandbox resource group </rgn> \
         --profile-name TM-MusicStream-Performance \
-        --name "EastAsia" \
+        --name "WestEurope" \
         --type azureEndpoints \
-        --target-resource-id $EastId
+        --target-resource-id $WestId
     ```
 
 ## Test the new configuration

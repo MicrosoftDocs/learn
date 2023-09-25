@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.microservices-aspnet-core.4-review-code-verify-deployment
 metadata:
-  title: Exercise - Review the code and verify deployment
-  description: Review the code for the existing microservices and confirm their deployment to AKS.
+  title: Exercise - Verify the deployment
+  description: Confirm that the app deployed successfully to AKS and works correctly.
   ms.date: 05/27/2020
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
-title: Exercise - Review the code and verify deployment
-durationInMinutes: 12
+title: Exercise - Verify the deployment
+durationInMinutes: 5
 content: |
   [!include[](includes/4-review-code-verify-deployment.md)]

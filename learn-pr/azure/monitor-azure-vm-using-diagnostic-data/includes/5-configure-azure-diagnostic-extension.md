@@ -2,23 +2,23 @@ If you need to capture Guest OS performance metrics in addition to the standard 
 
 Your band is on tour next month, and you have identified specific metrics that will help you monitor the health of your virtual machine (VM). The metrics that you want to monitor go beyond the standard virtual machine host metrics available in the Azure portal. You've decided to use the Azure Monitor Agent for guest OS visibility.
 
-In this unit, you'll see how to install the Azure Monitor Agent to monitor the health of a VM. You'll learn how to enable the agent for an existing VM.
+In this unit, you see how to install the Azure Monitor Agent to monitor the health of a VM. You learn how to enable the agent for an existing VM.
 
 ## Install the Azure Monitor Agent by using data collection rules
 
 The Azure Monitor Agent allows you to collect near real-time performance metrics from the guest operating system, along with log events, and store the results in Azure Monitor Metrics and Azure Monitor Logs.
 
-If you've already created the VM, the easiest way to add the agent is by going to **Azure Monitor** > **Data Collection Rules** to create a new Data Collection Rule and add the VM as a resource. 
+If you've already created the VM, the easiest way to add the agent is by going to **Azure Monitor** > **Data Collection Rules** to create a new Data Collection Rule and add the VM as a resource.
 
 Data collection rules define:
 
-- The scope of VMs where data will be captured.
+- The scope of VMs where data is captured.
 - The metrics or logs to be collected.
-- The destination or destinations where the data will be stored.
+- The destination or destinations where the data is stored.
 
 :::image type="content" source="../media/5-dcr-landing-page.png" alt-text="Screenshot of the Data Collection Rules Landing Page with rule." lightbox="../media/5-dcr-landing-page.png":::
 
-Resources allow you to select which VM(s) to collect data from for monitoring. Data sources define the metrics and logs you want to collect and where that data will be sent and stored.
+Resources allow you to select which VM(s) to collect data from for monitoring. Data sources define the metrics and logs you want to collect and where that data is sent and stored.
 
 :::image type="content" source="../media/5-dcr-definition.png" alt-text="Screenshot of the data collection rules definition." lightbox="../media/5-dcr-definition.png":::
 

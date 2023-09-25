@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-azure-files-azure-blobs.exercise3
+title: Exercise - Provide private storage for internal company documents
+metadata:
+  title: Exercise - Provide private storage for internal company documents
+  description: "Exercise - Provide private storage for internal company documents"
+  ms.date: 08/02/2023
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-private-company-storage.md)]

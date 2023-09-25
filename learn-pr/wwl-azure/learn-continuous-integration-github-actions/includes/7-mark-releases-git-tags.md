@@ -1,3 +1,4 @@
+
 Releases are software iterations that can be packed for release.
 
 In Git, releases are based on Git tags. These tags mark a point in the history of the repository. Tags are commonly assigned as releases are created.

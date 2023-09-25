@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-generative-ai.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summarize a responsible approach for generative AI."
+  ms.date: 7/13/2023
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: openai
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

@@ -4,13 +4,10 @@ title: Access storage
 metadata:
   title: Access storage
   description: "Access storage"
-  ms.date: 02/24/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/6-access-storage.md)]

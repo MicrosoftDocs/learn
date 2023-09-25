@@ -7,7 +7,6 @@ metadata:
   author: cassiebreviu
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Introduction to audio classification with TensorFlow
 summary: In this learn module we will be learning how to do audio classification with TensorFlow. There are multiple ways to build an audio classification model. You can use the waveform, tag sections of a wave file, or even use computer vision on the spectrogram image. In this tutorial we will first break down how to understand audio data, from analog to digital representations, then we will build the model using computer vision on the spectrogram images. That's right, you can turn audio into an image representation and then do computer vision to classify the word spoken!

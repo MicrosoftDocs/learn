@@ -1,7 +1,7 @@
 The following steps guide you on how to create roles in the Microsoft 365 Defender portal. It assumes that you have already created Azure Active Directory user groups.
 
 1. Access the Microsoft 365 Defender portal using an account with a Security administrator or Global administrator role assigned.
-1. In the navigation pane, select **Settings** then select **Endpoints**.  Under the Permissions area, select **Roles**.
+1. In the navigation pane, select **Settings** then select **Endpoints**. Under the **Permissions** category, select **Roles**.
 1. Select the **Turn on roles** button.
 1. Select **+ Add item**.
 1. Enter the role name, description, and permissions you'd like to assign to the role.

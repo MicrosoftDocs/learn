@@ -9,7 +9,7 @@ metadata:
   ms.author: jukullam
   ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 12
 content: |
   [!include[](includes/4-create-pull-request.md)]

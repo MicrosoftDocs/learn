@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/18/2022
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "A highly scalable relational database management system."
       isCorrect: false
-      explanation: "Incorrect. Spark supports some features of relational databases, but it is not primarily a relational database engine."
+      explanation: "Incorrect. Spark supports some features of relational databases, but it isn't primarily a relational database engine."
     - content: "A virtual server with a Python runtime."
       isCorrect: false
-      explanation: "Incorrect. Spark supports Python, but it is not a single virtual server."
+      explanation: "Incorrect. Spark supports Python, but it isn't a single virtual server."
     - content: "A distributed platform for parallel data processing using multiple languages."
       isCorrect: true
-      explanation: "Correct. Spark provides a highly-scalable distributed platform on which you can run code written in many languages to process data."
+      explanation: "Correct. Spark provides a highly scalable distributed platform on which you can run code written in many languages to process data."
   - content: "You need to use Spark to analyze data in a parquet file. What should you do?"
     choices:
     - content: "Load the parquet file into a dataframe."
@@ -33,10 +33,10 @@ quiz:
       explanation: "Correct. You can load data from files in many formats, including parquet, into a Spark dataframe."
     - content: "Import the data into a table in a serverless SQL pool."
       isCorrect: false
-      explanation: "Incorrect. You do not need to load the data into a SQL pool in order to analyze it with Spark."
+      explanation: "Incorrect. You don't need to load the data into a SQL pool in order to analyze it with Spark."
     - content: "Convert the data to CSV format."
       isCorrect: false
-      explanation: "Incorrect. While you could load the data into Spark from a CSV file, you do not need to convert the data from parquet format in order to use it in Spark."
+      explanation: "Incorrect. While you could load the data into Spark from a CSV file, you don't need to convert the data from parquet format in order to use it in Spark."
   - content: "You want to write code in a notebook cell that uses a SQL query to retrieve data from a view in the Spark catalog. Which magic should you use?"
     choices:
     - content: "%%spark"

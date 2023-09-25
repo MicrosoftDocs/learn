@@ -8,7 +8,7 @@ metadata:
   author: meaghanlewis
   ms.author: mosagie
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/3-describe-key-players-space-ecosystem.md)]

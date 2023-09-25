@@ -14,7 +14,7 @@ Encryption is part of a layered approach to security and should be used with oth
 
 The following is a comparison of **Storage Server-Side Encryption (SSE)**, **Azure Disk Encryption (ADE)**, **encryption at the host**, and **Confidential disk encryption**.
 
-:::image type="content" source="../media/managed-disk-encryption-options-4d8a7b78.png" alt-text="Screenshot showing managed disk encryption options.":::
+:::image type="content" source="../media/encryption-comparison-table-8eb3d1c8.png" alt-text="Screenshot showing disk encryption options.":::
 
 
 > [!IMPORTANT]

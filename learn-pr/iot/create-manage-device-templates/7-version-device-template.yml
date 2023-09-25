@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-device-templates.version-device-template
+title: Version a device template
+metadata:
+  title: Version a device template
+  description: This content is a part of Create and manage device templates in Azure IoT Central
+  ms.date: 05/11/2023
+  author: dominicbetts
+  ms.author: dobett
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.prod: azure-iot-central
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-version-device-template.md)]

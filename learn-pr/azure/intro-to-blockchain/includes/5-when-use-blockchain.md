@@ -3,7 +3,7 @@ Blockchain technology works best for certain scenarios. You shouldn't use it as 
 ## Participants
 
 * Do you need to support multiple partners or companies?
-* Do you want to avoid a central authority? Perhaps there is not trust in any one participant. Participants may not want to be reliant on a third party.
+* Do you want to avoid a central authority? Perhaps there isn't trust in any one participant. Participants may not want to be reliant on a third party.
 * Do the participants share data or use a workflow that involves several or all the participants? Blockchain technology guarantees each node is consistent. Most other business to business (B2B) solutions rely on synchronization. Synchronizing data introduces breakage and expense to B2B systems. The consistency of the distributed data is a key advantage of blockchain technology.
 
 ## Performance
@@ -14,7 +14,7 @@ Blockchain technology works best for certain scenarios. You shouldn't use it as 
 ## Business logic
 
 * Is your business logic simple? Executing a complex smart contract function on a public blockchain requires more cryptocurrency than a simple one.
-* Is your business logic static and doesn't change? Since blockchain data is immutable, smart contract logic changes require you to deploy a new contract to a new address. Consider how you will version your business logic.
+* Is your business logic static and doesn't change? Since blockchain data is immutable, smart contract logic changes require you to deploy a new contract to a new address. Consider how you'll version your business logic.
 
 ## Trust
 
@@ -42,4 +42,4 @@ Azure confidential ledger provides a managed and decentralized ledger for data e
 
 ### Azure SQL Database ledger
 
-Azure SQL Database ledger enables tamper-evidence through cryptographic verification for your centralized data stores. SQL Database ledger removes complexity of decentralized blockchain technology while providing many of the benefits of blockchain data integrity in a fully managed and familiar SQL environment. For more information about SQL Database ledger, see [Azure SQL Database ledger](/sql/relational-databases/security/ledger/ledger-landing-sql-server).
+Azure SQL Database ledger enables tamper-evidence through cryptographic verification for your centralized data stores. SQL Database ledger removes the complexity of decentralized blockchain technology. It provides many of the benefits of blockchain data integrity in a fully managed and familiar SQL environment. For more information about SQL Database ledger, see [Azure SQL Database ledger](/sql/relational-databases/security/ledger/ledger-landing-sql-server).

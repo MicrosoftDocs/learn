@@ -1,4 +1,5 @@
 
+
 ## Exercise: Threat detection with Microsoft Sentinel Analytics
 
 As a security engineer working for Contoso, you recently noticed that a significant number of VMs has been deleted from your Azure subscription. You want to analyze this  occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM.

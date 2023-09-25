@@ -3,7 +3,7 @@ uid: learn.wwl.write-first-c-sharp-method
 metadata:
   title: Write your first C# method
   description: "This module covers the syntax of creating and executing methods. Creating reusable code and structuring solutions using methods are reviewed."
-  ms.date: 04/25/2023
+  ms.date: 05/06/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -25,10 +25,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- dotnet-framework
+- dotnet
 - vs-code
 units:
 - learn.wwl.write-first-c-sharp-method.introduction

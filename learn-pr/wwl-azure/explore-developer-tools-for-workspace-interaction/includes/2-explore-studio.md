@@ -26,6 +26,6 @@ To author a new job with the studio, you can use two graphical interfaces:
 - **Designer**: A drag and drop interface that allows you to create *pipelines* with prebuilt (custom) *components*. 
 - **Automated Machine Learning**: A wizard interface that enables you to train a model using a combination of algorithms and data preprocessing techniques to find the best model for your data.
 
-Though you can use each tool at any time, you may prefer to use the studio whenever you want to use a *no-code* approach. Often, interacting with the workspace through the studio is ideal when you're exploring or when you quickly want to review your work. For example, use the studio if you want to verify that your pipeline ran successfully or what error messages were raised if not the pipeline failed. 
+Though you can use each tool at any time, you may prefer to use the studio whenever you want to use a *no-code* approach. Often, interacting with the workspace through the studio is ideal when you're exploring or when you quickly want to review your work. For example, use the studio if you want to verify that your pipeline ran successfully or what error messages were raised if the pipeline failed. 
 
 For more repetitive work, or tasks that you'd like to automate, you may prefer to use the Azure CLI or Python SDK as these tools allow you to define your work in code.

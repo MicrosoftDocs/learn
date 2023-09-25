@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: defender-for-cloud-apps
 title: Configure DLP policies for Microsoft Defender for Cloud Apps and Power Platform
 summary: Learn how to configure and implement data loss prevention policies and integrate them with Microsoft Defender for Cloud Apps.
 abstract: |
@@ -28,7 +28,6 @@ roles:
 products:
 - microsoft-purview
 - m365
-- m365-information-protection
 subjects:
 - security
 units:

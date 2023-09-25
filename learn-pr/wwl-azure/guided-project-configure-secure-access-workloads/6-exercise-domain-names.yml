@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-configure-secure-access-workloads.exercise5
+title: Exercise - Record and resolve domain names internally
+metadata:
+  title: Exercise - Record and resolve domain names internally
+  description: "Exercise - Record and resolve domain names internally"
+  ms.date: 06/13/2023
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-domain-names.md)]

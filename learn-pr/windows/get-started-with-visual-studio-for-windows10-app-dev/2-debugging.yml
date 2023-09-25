@@ -5,8 +5,8 @@ metadata:
   title: The basics of debugging in Visual Studio
   description: An introduction to debugging.
   ms.date: 08/23/2022
-  author: JohnKennedy
-  ms.author: jken
+  author: alvinashcraft
+  ms.author: aashcraft
   manager: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-windows

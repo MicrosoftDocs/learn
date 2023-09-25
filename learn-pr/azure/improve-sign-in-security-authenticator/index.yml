@@ -8,7 +8,6 @@ metadata:
   author: Justinha
   ms.author: Justinha
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
 title: Improve sign-in security with Microsoft Authenticator
 summary: Make it easy for users who sign in with less secure methods like voice calls or SMS to set up Microsoft Authenticator. Walk through the user experience and validate that push notifications are their new default sign-in method.
 abstract: |

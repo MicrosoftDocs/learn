@@ -4,11 +4,10 @@ title: Exercise - Complete a challenge activity using the debugger
 metadata:
   title: Exercise - Complete a challenge activity using the debugger
   description: "Exercise - Complete a challenge activity using the debugger"
-  ms.date: 03/24/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/9-exercise-challenge-debug-code.md)]

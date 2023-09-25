@@ -2,12 +2,11 @@ You can use Microsoft Intune to manage the apps that your company's workforce us
 
 ## Video - Interactive guide to managing devices
 
-The following interactive guide steps you through the Microsoft Intune admin center to show you how to manage and protect devices.
+The following interactive guide steps you through the Microsoft Intune admin center to show you how to manage and protect mobile and desktop applications.
 
-</p>
-<div align=”center”>
-<iframe allowfullscreen width="95%" height="450" src="https://mslearn.cloudguides.com/guides/Manage%20and%20protect%20mobile%20and%20desktop%20applications%20with%20Microsoft%20Endpoint%20Manager" frameborder="0" scrolling="no" loading="lazy"/></iframe>
-</div>
+
+> [!VIDEO https://mslearn.cloudguides.com/guides/Manage%20and%20protect%20mobile%20and%20desktop%20applications%20with%20Microsoft%20Endpoint%20Manager]
+
 
 Suppose that you're the administrator of a company with several thousand employees. Your company uses Microsoft Office to create and share information internally and externally. Your company allows employees to use their own devices. You must implement the rules that are enforced when employees attempts to access, move, or copy corporate data using managed apps.
 

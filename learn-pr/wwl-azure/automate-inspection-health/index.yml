@@ -2,14 +2,14 @@
 uid: learn.wwl.automate-inspection-of-health
 metadata:
   title: Automate inspection of health
-  description: "Automate inspection of health"
-  ms.date: 11/01/2022
+  description: "This module describes how to automate the inspection of health events, configure notifications in Azure DevOps and GitHub, set up service hooks to monitor pipelines, measure the quality of your release process, and detail release gates for quality purposes. You'll examine release management tools and details about them."
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 title: Automate inspection of health
-summary: This module describes how to automate the inspection of health events, configure notifications in Azure DevOps and GitHub, set up service hooks to monitor pipelines, measure the quality of your release process, and detail release gates for quality purposes. You will examine release management tools and details about them.
+summary: This module describes how to automate the inspection of health events, configure notifications in Azure DevOps and GitHub, set up service hooks to monitor pipelines, measure the quality of your release process, and detail release gates for quality purposes. You'll examine release management tools and details about them.
 abstract: |
   By the end of this module, you'll be able to:
   - Implement automated inspection of health
@@ -56,7 +56,6 @@ units:
 - learn.wwl.automate-inspection-of-health.examine-release-notes-documentation
 - learn.wwl.automate-inspection-of-health.examine-considerations-for-choosing-release-management-tools
 - learn.wwl.automate-inspection-of-health.explore-common-release-management-tools
-- learn.wwl.automate-inspection-of-health.create-release-dashboard
 - learn.wwl.automate-inspection-of-health.knowledge-check
 - learn.wwl.automate-inspection-of-health.summary
 badge:

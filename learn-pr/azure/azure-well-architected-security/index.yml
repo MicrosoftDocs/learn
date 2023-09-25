@@ -3,11 +3,12 @@ uid: learn.azure-well-architected-security
 metadata:
   title: Microsoft Azure Well-Architected Framework - Security
   description: Discover the tools that Azure provides to help you design a secure environment throughout your infrastructure, data, network, and applications.
-  ms.date: 10/27/2022
+  ms.date: 05/28/2023
   author: martinekuan
   ms.author: martinek
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: waf
+  ms.subservice: waf-pillar-security
 title: Microsoft Azure Well-Architected Framework - Security
 summary: Learn how to incorporate security into your architecture design, and discover the tools that Azure provides to help you create a secure environment through all the layers of your architecture.
 abstract:  | 

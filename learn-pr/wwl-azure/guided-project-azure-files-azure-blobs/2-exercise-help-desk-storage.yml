@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-azure-files-azure-blobs.exercise1
+title: Exercise - Provide storage for the IT department testing and training
+metadata:
+  title: Exercise - Provide storage for the IT department testing and training
+  description: "Exercise - Provide storage for the IT department testing and training"
+  ms.date: 08/02/2023
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-exercise-help-desk-storage.md)]

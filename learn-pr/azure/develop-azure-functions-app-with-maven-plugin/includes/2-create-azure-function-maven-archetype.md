@@ -103,6 +103,6 @@ The following steps illustrate the basic process for creating an Azure Function 
 
 1. Maven might prompt you for other parameters, and you can accept the defaults values by pressing the Return/Enter key on your computer. Only the `groupId` and `artifactId` are necessary for now.
 
-1. Maven creates a local Azure Function project for your. Once the `mvn archetype:generate` command has completed, you'll have a simple Java project that is ready to customize and build.
+1. Maven creates a local Azure Function project. Once the `mvn archetype:generate` command has completed, you'll have a simple Java project that is ready to customize and build.
 
 In the following exercise, you'll use this knowledge to create an Azure Function using Maven.

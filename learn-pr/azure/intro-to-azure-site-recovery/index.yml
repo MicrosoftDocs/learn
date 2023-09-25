@@ -7,7 +7,7 @@ metadata:
   author: orin-thomas
   ms.author: orthomas
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: site-recovery
 title: Introduction to Azure Site Recovery
 summary: This module explains what Azure Site Recovery does, how it works, and when you should choose to use Azure Site Recovery as a solution to meet your organization's needs.
 abstract: |

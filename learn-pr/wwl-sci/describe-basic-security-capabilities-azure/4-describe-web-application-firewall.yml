@@ -4,11 +4,11 @@ title: Describe Web Application Firewall
 metadata:
   title: Describe Web Application Firewall
   description: "Describe Web Application Firewall"
-  ms.date: 02/09/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 1
 content: |
   [!include[](includes/4-describe-web-application-firewall.md)]

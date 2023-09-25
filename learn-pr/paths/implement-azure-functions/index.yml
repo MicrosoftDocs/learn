@@ -2,19 +2,19 @@
 uid: learn.wwl.implement-azure-functions
 metadata:
   title: 'AZ-204: Implement Azure Functions'
-  description: 'AZ-204: Implement Azure Functions'
-  ms.date: 12/06/2021
+  description: Learn how to create and deploy Azure Functions. Explore hosting options, bindings, and triggers.
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: 'AZ-204: Implement Azure Functions'
 prerequisites: |
   * At least one year of experience developing scalable solutions through all phases of software development.
   * Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
-  * If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
+  * If you are new to Azure or cloud computing it's recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
 summary: |
-  Learn how to create and deploy Azure Functions. Explore hosting options, bindings, triggers, and how to use Durable Functions to define stateful workflows.
+  Learn how to create and deploy Azure Functions. Explore hosting options, bindings, and triggers.
 iconUrl: /training/achievements/az-204-implement-azure-functions.svg
 levels:
 - intermediate
@@ -23,12 +23,10 @@ roles:
 products:
 - azure
 - azure-functions
-- dotnet
 subjects:
 - serverless-compute
 modules:
 - learn.wwl.explore-azure-functions
 - learn.wwl.develop-azure-functions
-- learn.wwl.implement-durable-functions
 trophy:
   uid: learn.wwl.implement-azure-functions.trophy

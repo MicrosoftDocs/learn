@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
+  ms.service: powerbi
 title: Use tools to optimize Power BI performance
 summary: Use tools to develop, manage, and optimize Power BI data model and DAX query performance.
 abstract: |

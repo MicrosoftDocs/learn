@@ -2,7 +2,7 @@ The combination of Azure Synapse Analytics and Power BI opens exciting possibili
 
 ![A diagram that shows Synapse Analytics and Power BI integration.](../media/synapse-analytics-power-bi-integration.png)
 
-A data warehouse is a centralized repository of integrated data from one or more disparate sources. Data warehouses store current and historical data and are used for reporting and analysis of the data. A Power BI linked service in Azure Synapse Analytics helps your reports access data in a data lake through serverless SQL pools or taps into tables in a dedicated SQL Pool quickly. This capability provides a large selection of data from multiple sources. Moreover, having the authoring tools in Azure Synapse Studio helps to craft the connection between data in the data lake or dedicated SQL pool much intuitively. 
+A data warehouse is a centralized repository of integrated data from one or more disparate sources. Data warehouses store current and historical data and are used for reporting and analysis of the data. A Power BI linked service in Azure Synapse Analytics helps your reports access data in a data lake through serverless SQL pools or taps into tables in a dedicated SQL Pool quickly. This capability provides a large selection of data from multiple sources. Moreover, having the authoring tools in Azure Synapse Studio helps to craft the connection between data in the data lake or dedicated SQL pool much more intuitively. 
 
 ![Standardize reporting data with Synapse Analytics](../media/power-bi-synapse-reporting.png)
 

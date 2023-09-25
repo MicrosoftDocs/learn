@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity'
 prerequisites: |
   *   None
@@ -22,9 +22,9 @@ summary: |
     Part 1: Describe the concepts of security, compliance, and identity
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg" width="101" alt="Screenshot of the trophy for the Describe the capabilities of Microsoft Azure Active Directory, part of Microsoft Entra learning path." role="presentation"></img>
+    <img src="/training/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg" width="101" alt="Screenshot of the trophy for the Describe the capabilities of Microsoft Entra learning path." role="presentation"></img>
     
-    [Part 2: Describe the capabilities of Microsoft Azure Active Directory, part of Microsoft Entra](../describe-capabilities-of-microsoft-identity-access/index.yml)
+    [Part 2: Describe the capabilities of Microsoft Entra](../describe-capabilities-of-microsoft-identity-access/index.yml)
   :::column-end:::
   :::row-end:::
   :::row:::

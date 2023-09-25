@@ -1,3 +1,4 @@
+
 Tailwind Traders is advancing work on its customer rewards game. With each purchase, customers are offered a chance to win cash or prizes. You're asked to provide input on engineering requirements to enable the game features. 
 
 - **Transaction processing**. When a customer makes a purchase, the order details should be grouped into a single transaction in the game.  

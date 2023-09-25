@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Manage Azure updates
 summary: You'll be able to enable Azure Update Management, deploy updates, review an update assessment, and manage updates for your Azure VMs.
 abstract: |

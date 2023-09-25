@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: iot-hub
 title: Explore IoT Hub automatic device management
 summary: This module provides you with experience using Azure IoT Hub automatic device management to target a set of devices based on their properties, define a desired configuration, and then update the devices.
 abstract: |

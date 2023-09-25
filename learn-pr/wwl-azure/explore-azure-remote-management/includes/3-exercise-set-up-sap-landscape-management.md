@@ -10,7 +10,7 @@ Follow these steps:
 2. Open **Azure Active Directory**.
 3. Select **App registrations**.
 4. Select **Add**.
-5. Enter a **Name**, select Application Type "**Web app/API**", enter a sign-on URL (for example **<http://localhost>**) and select **Create**. The sign-on URL isn't used and can be any valid URL.
+5. Enter a **Name**, select Application Type "**Web app/API**", enter a sign-on URL (for example ``` <http://localhost> ```) and select **Create**. The sign-on URL isn't used and can be any valid URL.
 6. Select the **new App** and select **Keys** in the **Settings** tab.
 7. Enter a description for a new key, select "**Never expires**" and select **Save**.
 8. Write down the **Value**. It's used as the password for the Service Principal.
@@ -33,7 +33,7 @@ By default, the Service Principal doesn't have permissions to access your Azure 
      - **Label**: Choose a name for the connector instance
      - **User Name**: Service Principal Application ID
      - **Password**: Service Principal key/password
-     - **URL**: Keep default <https://management.azure.com/>
+     - **URL**: Keep default ```<https://management.azure.com/>```
      - **Monitoring Interval (Seconds)**: Should be at least 300
      - **Subscription ID**: Azure subscription ID
      - **Azure Active Directory Tenant ID**: ID of the Active Directory tenant

@@ -9,7 +9,7 @@ metadata:
   ms.author: orthomas
   ms.custom: team=cloud_advocates
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-cdn
 title: Introduction to Azure Content Delivery Network (CDN)
 summary: Azure Content Delivery Network (Azure CDN) allows an organization to deliver content that requires significant bandwidth with a minimum amount of latency to clients all across the world. This module explains what Azure CDN does, how it works, and when you should choose to use Azure CDN as a solution to meet your organization's needs.
 abstract: |

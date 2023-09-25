@@ -2,7 +2,7 @@
 uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.2-azure-site-recovery-overview
 metadata:
   title: Azure Site Recovery overview
-  description: Investigate how Azure Site Recovery can help achieve these goals by harnessing the power of the cloud and then study the tools that can make the failover and recovery of resources possible.
+  description: Investigate how Azure Site Recovery can help achieve these goals by harnessing the power of the cloud. Then, study the tools that can make the failover and recovery of resources possible.
   ms.date: 08/01/2019
   author: ankitaduttaMSFT
   ms.author: ankitadutta
@@ -19,21 +19,21 @@ quiz:
     choices:
     - content: Central management, on-premises virtual machine replication, network integration, app consistency during failover
       isCorrect: false
-      explanation: These are all the features of Azure Site Recovery, not the steps you need to take.
+      explanation: These features are all part of Azure Site Recovery, not the steps you need to take.
     - content: Networking, create a Recovery Services vault, give the correct permissions to credentials, install a configuration server in your vCenter via an OVA
       isCorrect: true
-      explanation: Correct, all of the above are needed to set up Azure Site Recovery correctly.
+      explanation: Correct, all of these steps are needed to set up Azure Site Recovery correctly.
     - content: Protected Items, Replicated Item, Compute & Network, use an existing Recovery Services vault, Test Failover
       isCorrect: false
-      explanation: These are properties you'll see in the Azure portal, not the steps you need to take.
+      explanation: These properties are what you see in the Azure portal, not the steps you need to take.
   - content: "How should you test the Azure Site Recovery deployment?"
     choices:
     - content: Run a disaster recovery drill for all the protected VMs, on the production network.
       isCorrect: false
-      explanation: This would adversely affect the performance of all the live workloads.
+      explanation: Running the drill on the production network would adversely affect the performance of all the live workloads.
     - content: Run a disaster recovery drill for a single isolated VM, on the production network.
       isCorrect: false
       explanation: Running on an isolated VM is best practice, but you should use an isolated network to ensure live services aren't affected.
     - content: Run a disaster recovery drill for a single isolated VM, on an isolated network.
       isCorrect: true
-      explanation: Proving the recovery on a single VM, on an isolated network, ensures that live services aren't affected and proves the recoveries are set up correctly.
+      explanation: If you run the recovery drill on a single VM, on an isolated network, it ensures that live services aren't affected and proves the recoveries are set up correctly.

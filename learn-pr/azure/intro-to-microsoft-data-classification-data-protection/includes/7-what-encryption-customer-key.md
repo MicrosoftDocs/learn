@@ -1,19 +1,24 @@
-Microsoft 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Microsoft 365 offers an added layer of encryption at the application layer for your content. This content includes data from Exchange Online, SharePoint Online, OneDrive for Business, and Teams files. This added layer of encryption is called service encryption.
+Microsoft 365 provides baseline, volume-level encryption for data at rest through BitLocker and Distributed Key Manager (DKM). Exchange Online, Microsoft Teams, SharePoint Online, and OneDrive for Business also use *service-level encryption* to encrypt customer data. For encryption key management, service encryption can use Microsoft-managed keys or Microsoft Purview Customer Key. This unit describes the uses and capabilities of different encryption key management levels and Customer Key.
 
-## How service encryption, BitLocker, and Customer Key work together
+## Service encryption
 
-Service encryption ensures that content at rest is encrypted at the service layer. Your data is always encrypted at rest in the Microsoft 365 service with BitLocker and DKM.  Customer Key provides extra protection against data observation by unauthorized systems or personnel and complements BitLocker disk encryption in Microsoft datacenters. Service encryption isn't meant to prevent Microsoft personnel from accessing customer data. The primary purpose is to help customers meet regulatory or compliance obligations for controlling root keys. Customers explicitly authorize Office 365 services to use their encryption keys to provide value-added cloud services, such as eDiscovery, anti-malware, anti-spam, and search indexing.
+In the Microsoft 365 service, your data at rest is always encrypted with BitLocker and DKM. Service encryption ensures that content at rest is also encrypted at the service layer. Service encryption doesn't prevent Microsoft personnel from accessing customer data. Customers explicitly authorize Office 365 services to use their encryption keys to provide value-added cloud services, such as eDiscovery, antimalware, antispam, and search indexing.
 
-Customer Key is built on service encryption and lets you provide and control encryption keys. Microsoft 365 then uses these keys to encrypt your data at rest as described in the Online Services Terms (OST). Customer Key helps you meet compliance obligations because you control the encryption keys that Microsoft 365 uses to encrypt and decrypt data.
+Service-level encryption uses Microsoft-managed keys by default unless you decide to onboard using Customer Key. The Microsoft-managed key option is currently enabled by default for Exchange Online, SharePoint Online, and OneDrive for Business. Your data is always encrypted at this default level at a minimum. At this service encryption level, Microsoft manages the cryptographic keys, including the root keys for service encryption. 
 
-Customer Key enhances the ability of your organization to meet the demands of compliance requirements that specify key arrangements with the cloud service provider. With Customer Key, you provide and control the root encryption keys for your Microsoft 365 data at rest at the application level. As a result, you exercise control over your organization's keys. If you decide to exit the service, you revoke access to your organization's root keys. For all Microsoft 365 services, revoking access to the keys is the first step on the path towards data deletion. By revoking access to the keys, the data is unreadable to the service.
+## Customer Key
 
-### Customer Key encrypts data at rest in Office 365
+Customer Key is built on service encryption and provides extra protection against data observation by letting you provide and control the data encryption keys. The primary purpose is to help you meet regulatory or compliance obligations for controlling root keys. Customer Key helps you meet compliance obligations because you control the encryption keys that Microsoft 365 uses to encrypt and decrypt data. Microsoft 365 uses these keys to encrypt your data at rest, as described in the Online Services Terms (OST).
 
-Using keys you provide, Customer Key encrypts:
+With Customer Key, you supply the root keys for service encryption, and you manage these keys by using Azure Key Vault. Using the keys you provide, Customer Key can encrypt:
 
 - SharePoint Online, OneDrive for Business, and Teams files.
 - Files uploaded to OneDrive for Business.
 - Exchange Online mailbox content including email body content, calendar entries, and the content within email attachments.
 
-Customer Key only encrypts data at rest in the cloud. Customer Key doesn’t work to help protect your on-premises mailboxes and files. You can encrypt your on-premises data using another method, such as BitLocker.
+Customer Key only encrypts data at rest in the cloud. Customer Key doesn't work on on-premises mailboxes and files. You can encrypt on-premises data by using another method, such as BitLocker.
+
+Customer Key enhances the ability of your organization to meet the demands of compliance requirements that specify key arrangements with the cloud service provider. With Customer Key, you provide and control the root encryption keys for your Microsoft 365 data at rest at the application level. Therefore, you control your organization's keys.
+
+If you decide to exit the service, you revoke access to your organization's root keys. For all Microsoft 365 services, revoking access to the keys is the first step on the path to data deletion. Revoking access to the keys makes the data unreadable to the service. If you decide to stop using Customer Key without following the data purge path, then your data stays encrypted using the Microsoft-managed keys.
+

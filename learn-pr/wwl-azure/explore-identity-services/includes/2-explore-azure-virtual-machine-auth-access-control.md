@@ -1,5 +1,6 @@
 
 
+
 In cross-premises scenarios, Active Directory from on-premises can be extended to serve as the authentication mechanism through an Azure deployed domain controller (as well as potentially using the integrated DNS). It is important to distinguish between traditional Active Directory Servers and Microsoft Azure Active Directory that provides only a subset of the traditional on-premises AD features. This subset includes Identity and Access Management but does not have the full AD schema or services that many third-party applications utilize. While Azure Active Directory is a requirement for provisioning resources in Azure, and it can synchronize users with customers’ on-premises AD, the two are explicitly different and customers will likely continue to require full Active Directory servers deployed in Microsoft Azure.
 
 From the authentication standpoint, the Active Directory domain controllers hosted in Azure VMs would typically constitute an extension of an on-premises Active Directory. To provide enough resiliency, corresponding to the 99.95% uptime Service Level Agreement offered by Azure, you should place Azure VMs hosting domain controllers into the same availability set. By collocating domain controllers with SAP servers within the same Azure virtual network, you improve performance by localizing authentication traffic.

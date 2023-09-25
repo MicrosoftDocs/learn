@@ -5,8 +5,9 @@ metadata:
   title: Summary
   description: An overview of the content covered in the module.
   ms.date: 02/27/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.service: machine-learning
+  author: fbsolo-ms1
+  ms.author: franksolomon
   ms.reviewer: franksolomon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

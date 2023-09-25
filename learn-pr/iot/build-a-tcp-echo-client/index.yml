@@ -3,12 +3,12 @@ uid: learn.iot.build-a-tcp-echo-client
 metadata:
   title: Building and running a TCP echo client
   description: Building and running a TCP echo client
-  ms.date: 03/30/2023
-  author: edlamie80
-  ms.author: liydu
+  ms.date: 06/15/2023
+  author: timlt
+  ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 title: Building and running a TCP echo client
 summary: Design, build, and run a TCP echo client.
 abstract: |
@@ -28,6 +28,7 @@ products:
   - azure
   - azure-iot
   - azure-iot-hub
+  - azure-rtos
 units:
   - learn.iot.build-a-tcp-echo-client.overview
   - learn.iot.build-a-tcp-echo-client.sending-and-receiving-tcp-packets

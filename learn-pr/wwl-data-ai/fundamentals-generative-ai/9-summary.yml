@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "This unit is a summary of the concepts covered in Fundamentals of generative AI."
+  ms.date: 6/27/2023
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

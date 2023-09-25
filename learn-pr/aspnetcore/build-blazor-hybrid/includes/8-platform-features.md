@@ -9,7 +9,7 @@ Each platform that .NET Multi-platform App UI (.NET MAUI) supports offers unique
 - **Application Model**: App functionality including app actions, application information, opening the browser, opening URIs, opening maps, handling permissions, and version tracking.
 - **Communication**: Access to contacts, email, networking, phone dialer, sms messaging, and web authentication.
 - **Device Features**: Information and access to battery, display info, device info, sensors, flashlight, geocoding, geolocation, haptic feedback, and vibration.
-- **Media**: Including media picker, screenshots, text-to-speech, and unit converters.
+- **Media**: Including media picker, screenshots, text to speech, and unit converters.
 - **Sharing**: Including access to the clipboard and sharing files or text to other applications.
 - **Storage**: APIs for picking files, file system helpers, preferences, and secure storage.
 

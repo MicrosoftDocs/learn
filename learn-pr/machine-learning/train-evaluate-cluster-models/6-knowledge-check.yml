@@ -19,21 +19,21 @@ quiz:
     choices:
     - content: "Supervised machine learning"
       isCorrect: false
-      explanation: "That is incorrect. Supervised machine learning requires a known label for training."
+      explanation: "Incorrect. Supervised machine learning requires a known label for training."
     - content: "Unsupervised machine learning"
       isCorrect: true
-      explanation: "That is correct. Clustering is a form of unsupervised machine learning in which the training data does not include known labels."
+      explanation: "Correct. Clustering is a form of unsupervised machine learning in which the training data doesn't include known labels."
     - content: "Reinforcement learning"
       isCorrect: false
-      explanation: "That is incorrect. Reinforcement learning is an advanced for of machine learning in which models learn to apply actions based on rewards."
-  - content: "You are using scikit-learn to train a K-Means clustering model that groups observations into three clusters. How should you create the KMeans object to accomplish this goal?"
+      explanation: "Incorrect. Reinforcement learning is an advanced for of machine learning in which models learn to apply actions based on rewards."
+  - content: "You're using scikit-learn to train a K-Means clustering model that groups observations into three clusters. How should you create the KMeans object to accomplish this goal?"
     choices:
     - content: "model = KMeans(n_clusters=3)"
       isCorrect: true
-      explanation: "That is correct. The n_clusters parameter determines the number of clusters."
+      explanation: "Correct. The n_clusters parameter determines the number of clusters."
     - content: "model = KMeans(n_init=3)"
       isCorrect: false
-      explanation: "That is incorrect. The n_init parameter determines the number of times the algorithm will run with different initialization seeds."
+      explanation: "Incorrect. The n_init parameter determines the number of times the algorithm will run with different initialization seeds."
     - content: "model = KMeans(max_iter=3)"
       isCorrect: false
-      explanation: "That is incorrect. The max_iter parameter determines the maximum number of algorithm iterations used for cluster assignment."
+      explanation: "Incorrect. The max_iter parameter determines the maximum number of algorithm iterations used for cluster assignment."

@@ -4,13 +4,11 @@ title: Explore feature branch workflow
 metadata:
   title: Explore feature branch workflow
   description: "Explore feature branch workflow"
-  ms.date: 12/09/2022
+  ms.date: 06/29/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/3-explore-feature-branch-workflow.md)]

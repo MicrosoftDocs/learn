@@ -9,7 +9,7 @@ metadata:
   author: jonburchel
   ms.author: jburchel  
   ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 7
 content: |
   [!include[](includes/4-when-to-use-azure-data-factory.md)]

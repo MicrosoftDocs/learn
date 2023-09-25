@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-github-manage-file-updates.exercise-merge-updates-single-repository-branch
+title: Exercise – Merge all updates to a single repository branch
+metadata:
+  title: Exercise – Merge all updates to a single repository branch
+  description: "Exercise – Merge all updates to a single repository branch"
+  ms.date: 08/30/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-exercise-merge-updates-single-repository-branch.md)]
+interactive: bash

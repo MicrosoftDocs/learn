@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 1
 content: |
   [!include[](includes/3-describe-use-azure-blueprints.md)]

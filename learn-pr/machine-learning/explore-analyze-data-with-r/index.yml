@@ -7,8 +7,8 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: nextgen
+  ms.devlang: r
 title: Explore and analyze data with R
 summary: In this module, you'll explore, analyze, and visualize data by using the R programming language.
 abstract:  | 

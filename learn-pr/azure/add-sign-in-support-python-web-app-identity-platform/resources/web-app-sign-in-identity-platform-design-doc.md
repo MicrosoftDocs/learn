@@ -8,7 +8,7 @@ Developer, student
 
 ## Level
 
-Beginner  
+Beginner
 
 ## Product(s)
 
@@ -16,14 +16,14 @@ Azure Active Directory
 
 ## Prerequisites
 
-- An Azure Active Directory (Azure AD) tenant with permissions for managing app registrations. To create a free account, we recommend going through [Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/) module.
+- An Azure Active Directory (Azure AD) tenant with permissions for managing app registrations. To create a free account, we recommend going through [Create an Azure account](https://learn.microsoft.com/learn/modules/create-an-azure-account/) module.
 - Familiarity with basic Python programming concepts and terminology.
 - An understanding of cloud computing concepts and services.
-- Basic knowledge of the [Microsoft identity platform](https://docs.microsoft.com/en-us/learn/modules/explore-microsoft-identity-platform/)
+- Basic knowledge of the [Microsoft identity platform](https://learn.microsoft.com/learn/modules/explore-microsoft-identity-platform/)
 
 ## Summary
 
-Add core authentication and authorization features to a Python web app using the Microsoft identity platform. Your web app will sign in Azure AD users and fetch data from a protected web API, such as the Microsoft Graph API. 
+Add core authentication and authorization features to a Python web app using the Microsoft identity platform. Your web app will sign in Azure AD users and fetch data from a protected web API, such as the Microsoft Graph API.
 
 
 ## Learning objectives
@@ -61,7 +61,7 @@ Add more units as needed for your content
     List the content that will enable the learner to complete the subtask:
 
     - Create your application project directory
-    - Install the required Python packages 
+    - Install the required Python packages
     - Install MSAL for Python
 
     **Knowledge check**
@@ -88,7 +88,7 @@ Add more units as needed for your content
    1. Add a client secret to the created app
    1. Take note of the application registration values
    1. Add app roles to your application
-   1. Assign app roles to users and groups. 
+   1. Assign app roles to users and groups.
 
 1. Add code to authenticate and authorize users
 
@@ -111,12 +111,12 @@ Add more units as needed for your content
    List the content that will enable the learner to _call Microsoft Graph API_:
 
    1. Configure the Microsoft Graph API endpoint
-   1. Acquire a token interactively and silently 
-      
+   1. Acquire a token interactively and silently
+
 
 1. Summary
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module? 
+    How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
    1. Installed the Microsoft Authentication Library (MSAL) for Python
    1. Registered an application in the Azure portal and configured it to use the Microsoft identity platform
@@ -128,6 +128,6 @@ Add more units as needed for your content
 ## Notes
 
 - [Python 3](https://www.python.org/download/releases/3.0/)
-- [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-- [Microsoft identity platform access tokens](https://docs.microsoft.com/azure/active-directory/develop/access-tokens)
-- [Use the Microsoft Graph API](https://docs.microsoft.com/graph/use-the-api)
+- [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
+- [Microsoft identity platform access tokens](/azure/active-directory/develop/access-tokens)
+- [Use the Microsoft Graph API](https://learn.microsoft.com/graph/use-the-api)

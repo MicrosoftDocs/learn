@@ -3,11 +3,11 @@ uid: learn.wwl.design-container-build-strategy
 metadata:
   title: Design a container build strategy
   description: "Design a container build strategy"
-  ms.date: 12/09/2022
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 title: Design a container build strategy
 summary: This module helps you plan a container build strategy, explains containers and their structure, introduces Docker, microservices, Azure Container Registry, and related services.
 abstract: |

@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -45,7 +45,7 @@ quiz:
       explanation: "Incorrect. Cognitive Search doesn't natively provide translation services."
     - content: "Azure Speech Service."
       isCorrect: false
-      explanation: "Incorrect. This product is focused on translating speech-to-text and text-to-speech services."
-    - content: "Azure Cognitive Services."
+      explanation: "Incorrect. This product is focused on translating speech to text and text to speech services."
+    - content: "Azure AI Services."
       isCorrect: true
-      explanation: "Correct. Cognitive Services provides translation services."
+      explanation: "Correct. Azure AI Services provides translation services."

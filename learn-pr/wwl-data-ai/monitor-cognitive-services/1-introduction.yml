@@ -4,12 +4,13 @@ title: Introduction
 metadata:
   title: Demo-Introduction
   description: "Introduction"
-  ms.date: 08/16/2021
+  ms.date: 05/29/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

@@ -8,7 +8,7 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: bicep
 title: Manage end-to-end deployment scenarios by using Bicep and GitHub Actions
 summary: |
   Create a unified workflow to deploy your entire environment. You'll add build jobs to your workflow, and use workflow artifacts and Bicep outputs to publish applications, databases, and blobs.

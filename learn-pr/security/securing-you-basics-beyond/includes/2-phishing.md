@@ -38,15 +38,15 @@ One other common approach that attackers use is to take advantage of your curios
 
 ## What can you do to protect yourself?
 
-First, recognize phishing! The following video has some guidance on what to look for, and how to handle a possible phishing email.
+First, recognize phishing! The following video has some guidance on what to look for and how to handle a possible phishing email.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Lzt0]
 
 Here are some common features of phishing attacks:
 
 - **Attachments**: If your email has an attachment that you don't expect, it might be phishing, and that attachment might be dangerous.
-- **Unusual hyperlinks**: Be aware of any links in emails. If you hover over a link and the destination looks odd, it might be a dangerous website. A website might look just like a legitimate one but be designed to capture your login information or run malware.
-- **Urgency**: If something says you need to do something *right now*, it might be a phishing email. Remember, your bank usually doesn't reach out to you with no warning by using an email subject about canceling your accounts.
+- **Unusual hyperlinks**: Be aware of any links in emails. If you hover over a link and the destination looks odd, it might be a dangerous website. A website might look just like a legitimate one, but be designed to capture your login information or run malware.
+- **Urgency**: If a message says you need to do something *right now*, it might be a phishing email. Remember, your bank usually doesn't reach out to you with no warning by using an email subject about canceling your accounts.
 - **Bad spelling or grammar**: Phishing emails are often full of unusual writing, spelling errors, and grammar errors. If the email looks suspicious, you should avoid interacting with it.
 - **Fake sender**: If the email address looks unusual or is someone you don't recognize, you should treat it as a phishing email.
 

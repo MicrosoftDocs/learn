@@ -7,6 +7,8 @@ metadata:
   author: barclayn
   ms.author: barclayn
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Exercise - Configure a system-assigned managed identity for an Azure VM
 durationInMinutes: 6

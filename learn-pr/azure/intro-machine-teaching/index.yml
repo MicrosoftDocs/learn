@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to Machine Teaching
 summary: In this module, you'll learn about capabilities and essential concepts of Machine Teaching, the steps to add intelligence into Autonomous Intelligence systems and the types of business problems that you can solve using Machine Teaching for Autonomous AI.
 abstract: | 
@@ -16,7 +15,7 @@ abstract: |
   - Explain how to use Machine Teaching to outperform current industrial control systems
   - Decide when Machine Teaching is the right choice for your business problem
 
-  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar Artificial Intelligence: Cloud and Edge Implementations course***"
 prerequisites: | 
   - Basic knowledge of Automated Intelligence
   - Basic knowledge of Autonomous Intelligence

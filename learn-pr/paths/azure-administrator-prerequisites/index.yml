@@ -75,7 +75,6 @@ subjects:
 - virtual-machine
 - it-management-monitoring
 modules:
-- learn.azure.build-cloud-governance-strategy-azure
 - learn.introduction-to-azure-virtual-machines
 - learn.azure.network-fundamentals
 - learn.azure.network-fundamentals-2

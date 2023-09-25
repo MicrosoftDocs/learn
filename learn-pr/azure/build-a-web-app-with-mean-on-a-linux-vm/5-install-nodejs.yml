@@ -8,6 +8,8 @@ metadata:
   author: ericd-mst-github
   ms.author: erd
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure
 interactive: bash
 azureSandbox: true

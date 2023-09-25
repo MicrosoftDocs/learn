@@ -7,6 +7,8 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 title: Exercise - Monitor and troubleshoot performance
 durationInMinutes: 10

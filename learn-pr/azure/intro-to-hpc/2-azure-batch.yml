@@ -2,7 +2,7 @@
 uid: learn.intro-to-hpc.2-azure-batch
 metadata:
   title: Azure Batch
-  description: In this unit, you'll learn about the Azure Batch service and how it helps you to manage high-performance compute tasks.
+  description: In this unit, you learn about the Azure Batch service and how it helps you to manage high-performance compute tasks.
   ms.date: 09/23/2022
   author: padmalathas
   ms.author: padmalathas
@@ -28,12 +28,12 @@ quiz:
       explanation: "You can create high-performance VMs manually without Azure Batch. Azure Batch helps by scheduling and managing nodes for HPC."
   - content: "You've analyzed a problem and found that it has 1000 separate subtasks. To solve this problem, your manager agrees to budget 20 VM nodes to run in Azure Batch. Compared to running on a single VM node of the same size, approximately how much quicker would you expect the problem's solution to be?"
     choices:
-    - content: "1/50 of the time"
+    - content: "1/50 of the time."
       isCorrect: false
-      explanation: "Because there are many small subtasks, work can be evenly distributed by Azure Batch, and 20 VMs can complete the tasks in approximately 1/20 of the time."
-    - content: "1/20 of the time"
+      explanation: "Because there are many small subtasks, Azure Batch evenly distributes the work, and 20 VMs can complete the tasks in approximately 1/20 of the time."
+    - content: "1/20 of the time."
       isCorrect: true
-      explanation: "Because there are many small subtasks, work can be evenly distributed by Azure Batch, and 20 VMs can complete the tasks in approximately 1/20 of the time."
-    - content: "The same length of time — but results are more accurate"
+      explanation: "Because there are many small subtasks, Azure Batch evenly distributes the work, and 20 VMs can complete the tasks in approximately 1/20 of the time."
+    - content: "The same length of time, but results are more accurate."
       isCorrect: false
-      explanation: "Because there are many small subtasks, work can be evenly distributed by Azure Batch, and 20 VMs can complete the tasks in approximately 1/20 of the time."
+      explanation: "Because there are many small subtasks, Azure Batch evenly distributes the work, and 20 VMs can complete the tasks in approximately 1/20 of the time."
