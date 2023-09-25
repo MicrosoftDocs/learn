@@ -5,10 +5,12 @@ metadata:
   unitType: exercise
   title: Exercise - Handle exceptions
   description: "Practice how to handle exceptions in this notebook, from simple try/except blocks to handling multiple exceptions."
-  ms.date: 12/10/2021
+  ms.date: 06/07/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

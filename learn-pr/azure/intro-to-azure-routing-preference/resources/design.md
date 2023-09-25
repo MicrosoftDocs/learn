@@ -56,7 +56,7 @@ Add more units as needed for your content
 
     Add your scenario [(Scenario guidance)](https://review.learn.microsoft.com/help/learn/id-guidance-scenarios)
 
-    You are a network engineer for a multi-national car manufacturer. Your application developers have deployed an application in the Central US Azure region. This application is used by the company's factory in Singapore. Recently, the cost of traffic from the Singapore factory to the Central US region across the Microsoft backbone network has significantly increased. You have been tasked with creating a plan to alleviate some of the cost of the network traffic from Singapore to the application in Azure.
+    You are a network engineer for a multi-national/regional car manufacturer. Your application developers have deployed an application in the Central US Azure region. This application is used by the company's factory in Singapore. Recently, the cost of traffic from the Singapore factory to the Central US region across the Microsoft backbone network has significantly increased. You have been tasked with creating a plan to alleviate some of the cost of the network traffic from Singapore to the application in Azure.
 
 1. What is Routing Preference?
 

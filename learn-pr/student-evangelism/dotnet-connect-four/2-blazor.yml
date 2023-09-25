@@ -8,6 +8,8 @@ metadata:
   ms.author: chnoring
   ms.date: 03/15/2023
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |

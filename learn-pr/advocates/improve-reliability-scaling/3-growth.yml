@@ -8,7 +8,7 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-04282021
 durationInMinutes: 8
@@ -18,7 +18,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'When a business expands its own capacity in a more natural and predictable way, we say this is:'
+  - content: "When a business expands its own capacity in a more natural and predictable way, it's called:"
     choices:
     - content: 'organic growth'
       isCorrect: true
@@ -30,7 +30,7 @@ quiz:
       isCorrect: false
       explanation: 'This description is the definition of organic growth.'
 
-  - content: 'With CosmodDB, which of these metrics are incorporated into a request unit?'
+  - content: 'With Cosmos DB, which of these metrics are incorporated into a request unit?'
     choices:
     - content: 'memory'
       isCorrect: false
@@ -41,7 +41,7 @@ quiz:
     - content: 'IOPS'
       isCorrect: false
       explanation: 'Request Units (RUs) are a mixture of Memory, CPU, and IOPS'
-    - content: 'all of the above'
+    - content: 'All of these metrics.'
       isCorrect: true
       explanation: 'Correct. Request Units (RUs) are a mixture of memory, CPU, and IOPS'
 
@@ -49,7 +49,7 @@ quiz:
     choices:
     - content: 'server count'
       isCorrect: true
-      explanation: 'Correct. This answer is not a business metric.'
+      explanation: "Correct. This answer isn't a business metric."
     - content: 'monthly active users (MAUs)'
       isCorrect: false
       explanation: 'This answer is a business metric you should correlate your resource usage to when planning for capacity.'

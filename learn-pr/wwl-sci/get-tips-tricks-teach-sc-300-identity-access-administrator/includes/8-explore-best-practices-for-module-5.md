@@ -1,5 +1,6 @@
 
 
+
 SC-300: Module 5 Plan and implement an identity governance strategy
 
 Module 5 Overview

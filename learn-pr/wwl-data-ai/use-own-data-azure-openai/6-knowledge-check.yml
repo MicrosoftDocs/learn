@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-own-data-azure-openai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge of using your own data with Azure OpenAI."
+  ms.date: 7/11/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: "What does Azure OpenAI on your data enable developers to do?"
+    choices:
+    - content: "Create their own AI chat models"
+      isCorrect: false
+      explanation: "Incorrect. Deploying models is a feature of Azure OpenAI, but not specifically related to using your own data."
+    - content: "Access Azure OpenAI without an approved subscription"
+      isCorrect: false
+      explanation: "Incorrect. Access to Azure OpenAI requires an approved subscription."
+    - content: "Use supported AI chat models that can reference specific sources of data"
+      isCorrect: true
+      explanation: "Correct. Azure OpenAI on your data allows developers to use supported AI chat models that can reference specific sources of data to ground the response."
+  - content: "What is the recommended way to add data when using Azure OpenAI on your data?"
+    choices:
+    - content: "Using any data source option available for Azure OpenAI on your data."
+      isCorrect: false
+      explanation: "Incorrect. Using any data source option may not yield the best results."
+    - content: "Using Azure AI Studio to create the search resource and index."
+      isCorrect: true
+      explanation: "Correct. Using Azure AI Studio allows the appropriate chunking to happen when inserting into the index, yielding better responses."
+    - content: "Connecting to files in a storage account without using Azure AI Studio."
+      isCorrect: false
+      explanation: "Incorrect. Connecting to files without using Azure AI Studio may not yield the best results."
+  - content: "What are some recommended prompt engineering techniques when using Azure OpenAI on your own data?"
+    choices:
+    - content: "Break down the task and use chain of thought prompting."
+      isCorrect: true
+      explanation: "Correct. Breaking down the task and using chain of thought prompting can help the model respond more effectively within the token limit."
+    - content: "Include as much conversation history as possible in your call."
+      isCorrect: false
+      explanation: "Incorrect. Including too much conversation history can exceed the token limit and impact the model's response."
+    - content: "Use a single long prompt to provide all necessary information."
+      isCorrect: false
+      explanation: "Incorrect. Using a single long prompt can also exceed the token limit and impact the model's response."

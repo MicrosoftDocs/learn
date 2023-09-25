@@ -7,8 +7,8 @@ metadata:
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: rust
 title: Set up the Rust development environment
 summary: Learn how to set up the Rust development environment, write a program, and use the Cargo build system.
 abstract: |

@@ -2,8 +2,8 @@
 uid: learn.wwl.work-data-azure-machine-learning
 metadata:
   title: Work with data in Azure Machine Learning
-  description: Work with data in Azure Machine Learning
-  ms.date: 01/13/2023
+  description: Learn how to work with data in Azure Machine Learning. Whether you want to access data in notebooks or scripts, you can read data directly, through datastores, or data assets.
+  ms.date: 05/11/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   Learn how to work with data in Azure Machine Learning. Whether you want to access data in notebooks or scripts, you can read data directly, through datastores, or data assets.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/work-data-azure-machine-learning.svg
 levels:
 - beginner
 roles:

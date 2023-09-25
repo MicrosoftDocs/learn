@@ -28,9 +28,9 @@ The criteria on which administrative units are created are guided by the unique 
 
 You can expect the creation of administrative units in the organization to go through the following stages:
 
-1. **Initial adoption**: Your organization will start creating administrative units based on initial criteria, and the number of administrative units will increase as the criteria are refined.
-1. **Pruning**: After the criteria are defined, administrative units that are no longer required will be deleted.
-1. **Stabilization**: Your organizational structure is defined, and the number of administrative units isn't going to change significantly in the short term.
+1.  **Initial adoption**: Your organization will start creating administrative units based on initial criteria, and the number of administrative units will increase as the criteria are refined.
+2.  **Pruning**: After the criteria are defined, administrative units that are no longer required will be deleted.
+3.  **Stabilization**: Your organizational structure is defined, and the number of administrative units isn't going to change significantly in the short term.
 
 ## Delegate administration in Azure Active Directory
 

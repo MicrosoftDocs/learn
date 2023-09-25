@@ -30,13 +30,13 @@ Let's start by configuring the five-year retention by using the portal.
 
 You can also configure long-term retention policies by using PowerShell. Let's configure the remainder of the policy this way.
 
-1. In Azure Cloud Shell, run this command to set a variable to the value of your SQL Server instance.
+1. In Azure Cloud Shell, run this command to set a variable to the value of your SQL Server instance:
 
     ```powershell
     $sqlserver=Get-AzSqlServer
     ```
 
-1. To view long-term retention policies for the database server, run this command.
+1. To view long-term retention policies for the database server, run this command:
 
     ``` powershell
     Get-AzSqlDatabase `
@@ -45,12 +45,12 @@ You can also configure long-term retention policies by using PowerShell. Let's c
         | Get-AzSqlDatabaseLongTermRetentionPolicy
     ```
 
-    This step outputs the retention policies for all databases on the server.
+    This step outputs the retention policies for all databases on the server:
 
     > [!NOTE]
     > You might see a message display after the output: `Long Term Retention is not supported : Not supported for master.` This message doesn't affect completion of this module.
 
-1. Run this command to view the long-term retention policy for the **sql-erp-db** database.
+1. Run this command to view the long-term retention policy for the **sql-erp-db** database:
 
     ``` powershell
     Get-AzSqlDatabaseBackupLongTermRetentionPolicy `
@@ -59,7 +59,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
         -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. Now let's configure the rest of the policy to meet the requirements specified earlier. To configure a long-term retention policy via PowerShell, run this command.
+1. Now let's configure the rest of the policy to meet the requirements specified earlier. To configure a long-term retention policy via PowerShell, run this command:
 
     ``` powershell
     Set-AzSqlDatabaseBackupLongTermRetentionPolicy `
@@ -72,7 +72,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
         -WeekOfYear 1
     ```
 
-1. To check that you've applied the new policy, run this command again.
+1. To check that you've applied the new policy, run this command again:
 
     ```powerShell
     Get-AzSqlDatabaseBackupLongTermRetentionPolicy `
@@ -96,7 +96,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
 
 1. You can also confirm the retention period in the portal. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select **ERPServer**.
 
-1. Under **Settings**, select **Manage Backups**. In the list of databases, check the **sql-erp-db** long-term retention properties.
+1. Under **Data management**, select **Backups**, then select **Retention policies**. In the list of databases, check the **sql-erp-db** long-term retention properties.
 
     :::image type="content" source="../media/5-completed-ltr-settings.png" alt-text="Screenshot of completed long-term retention policy settings.":::
 

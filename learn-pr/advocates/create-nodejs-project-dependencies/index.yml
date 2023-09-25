@@ -2,15 +2,17 @@
 uid: learn.azure.create-nodejs-project-dependencies
 metadata:
   title: Create a new Node.js project using JavaScript and work with package dependencies 
-  description: Create a Node.js project and learn to add packages and manage package dependencies in your project. Use the npm CLI and registry to add libraries and tools to your JavaScript/TypeScript web development projects using Visual Studio Code.
-  ms.date: 01/18/2023
+  description: Create a Node.js project and learn to add packages and manage package dependencies in your project. Use the npm CLI and registry to add libraries and tools to your JavaScript/TypeScript web development CommonJS projects using Visual Studio Code.
+  ms.date: 05/30/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: azure-javascript
+  ms.devlang: nodejs, javascript
+  devlang: nodejs, javascript
 title: Create a new Node.js project and work with dependencies  
-summary: Use dependencies from the npm registry to develop Node.js applications faster. Learn how to manage dependencies for your project.
+summary: Use dependencies from the npm registry to develop Node.js applications faster. Learn how to manage dependencies for your project. This module uses JavaScript CommonJS in the Node.js runtime.
 abstract: |
   After you complete this module, you'll be able to:
   - Initialize Node.js projects

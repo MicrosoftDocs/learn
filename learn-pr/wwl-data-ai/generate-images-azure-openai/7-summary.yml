@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-images-azure-openai.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summarize what you've learned about DALL-E models in the Azure openAI service"
+  ms.date: 6/14/2023
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: openai
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

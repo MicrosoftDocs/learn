@@ -2,12 +2,11 @@
 uid: learn.wwl.select-sort-measure-objects-use-pipeline
 metadata:
   title: Select, sort, and measure objects using the pipeline
-  description: "Select, sort, and measure objects using the pipeline"
-  ms.date: 12/21/2022
+  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|This module explains how to manipulate objects in the pipeline by using commands that sort, select, and measure objects.</span|  </div|"
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Select, sort, and measure objects using the pipeline
 summary: This module explains how to manipulate objects in the pipeline by using commands that sort, select, and measure objects.
 abstract: |

@@ -8,7 +8,7 @@ metadata:
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: sakriema-03012021
 durationInMinutes: 2
@@ -47,6 +47,6 @@ quiz:
     - content: "Events should be precise and lightweight."
       isCorrect: true
       explanation: "Correct. All events should be as precise and lightweight as possible to save network load and simplicity."
-    - content: "Events should always follow a convention."
+    - content: "Events should always follow a naming convention."
       isCorrect: false
       explanation: "Naming conventions might be helpful, but for the overall event, building other things are more important."

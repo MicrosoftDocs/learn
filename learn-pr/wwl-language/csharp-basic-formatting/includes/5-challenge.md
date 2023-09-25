@@ -1,6 +1,5 @@
 
 
-
 Code challenges will reinforce what you've learned and help you gain some confidence before continuing on.
 
 In this challenge, you'll print instructions to the end user to let them know where your application will output data files. You won't be actually creating any files -- you're only interested in displaying formatted instructions to the console window.

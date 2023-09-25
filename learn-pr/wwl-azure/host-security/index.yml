@@ -3,7 +3,7 @@ uid: learn.wwl.host-security
 metadata:
   title: Configure and manage host security
   description: "Learn to lock down the devices, virtual machines, and other components that run your applications in Azure."
-  ms.date: 04/17/2023
+  ms.date: 05/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -27,7 +27,6 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-defender
 - azure-disk-encryption
 - azure-virtual-machines
 - defender-for-cloud

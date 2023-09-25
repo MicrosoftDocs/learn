@@ -12,9 +12,9 @@ Azure Resource Health helps you diagnose and get support when an Azure issue imp
 
 ## Resource logs and monitoring
 
-Azure Monitor provides diagnostics information for Azure resources, which means that you can monitor operations that take place within your IoT hub. Azure Monitor's diagnostics settings replaces the IoT Hub operations monitor. If you currently use operations monitoring, you should migrate your workflows. For more information, see [Migrate from operations monitoring to diagnostics settings] (https://docs.microsoft.com/azure/iot-hub/iot-hub-migrate-to-diagnostics-settings).
+Azure Monitor provides diagnostics information for Azure resources, which means that you can monitor operations that take place within your IoT hub. Azure Monitor's diagnostics settings replaces the IoT Hub operations monitor. If you currently use operations monitoring, you should migrate your workflows. For more information, see [Migrate from operations monitoring to diagnostics settings] (https://learn.microsoft.com/azure/iot-hub/iot-hub-migrate-to-diagnostics-settings).
 
-To learn more about the specific metrics and events that Azure Monitor watches, see [Supported metrics with Azure Monitor] (https://docs.microsoft.com/azure/azure-monitor/platform/metrics-supported) and Supported services, schemas, and categories for Azure Diagnostic Logs [https://docs.microsoft.com/azure/azure-monitor/platform/metrics-supported](/azure/azure-monitor/platform/metrics-supported).
+To learn more about the specific metrics and events that Azure Monitor watches, see [Supported metrics with Azure Monitor] (https://learn.microsoft.com/azure/azure-monitor/platform/metrics-supported) and Supported services, schemas, and categories for Azure Diagnostic Logs [https://learn.microsoft.com/azure/azure-monitor/platform/metrics-supported](/azure/azure-monitor/platform/metrics-supported).
 
 Choose where you want to send the logs. You can select any combination of the three options:
 
@@ -408,7 +408,7 @@ class Program
 
 Use Azure Resource Health to monitor whether your IoT hub is up and running. You can also learn whether a regional outage is impacting the health of your IoT hub. To understand specific details about the health state of your Azure IoT Hub, we recommend that you use Azure Monitor as described in the previous section.
 
-Azure IoT Hub indicates health at a regional level. If a regional outage impacts your IoT hub, the health status shows as Unknown. To learn more, see [Resource types and health checks in Azure resource health] (https://docs.microsoft.com/azure/service-health/resource-health-checks-resource-types).
+Azure IoT Hub indicates health at a regional level. If a regional outage impacts your IoT hub, the health status shows as Unknown. To learn more, see [Resource types and health checks in Azure resource health] (https://learn.microsoft.com/azure/service-health/resource-health-checks-resource-types).
 
 To check the health of your IoT hubs, follow these steps:
 
@@ -416,4 +416,4 @@ To check the health of your IoT hubs, follow these steps:
  -  Navigate to Service Health &gt; Resource health.
  -  From the drop-down boxes, select your subscription then select IoT Hub as the resource type.
 
-To learn more about how to interpret health data, see [Azure resource health overview] (https://docs.microsoft.com/azure/service-health/resource-health-overview).
+To learn more about how to interpret health data, see [Azure resource health overview] (https://learn.microsoft.com/azure/service-health/resource-health-overview).

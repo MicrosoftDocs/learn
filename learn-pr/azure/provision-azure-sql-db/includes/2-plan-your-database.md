@@ -1,17 +1,17 @@
-Azure provides Platform as a Service (PaaS) services to help you manage all kinds of data - from highly structured relational data to unstructured data.
+Azure provides Platform as a Service (PaaS) services to help you manage all kinds of data, from highly structured relational data to unstructured data.
 
 Here, you'll learn why Azure SQL Database is a convenient, cost-effective, and secure way to host your relational databases.
 
 ## Why choose Azure SQL Database?
 
-Your transportation logistics application requires stored procedures that run basic CRUD (*Create*, *Read*, *Update*, and *Delete*) operations. You have experience working with SQL Server and other relational databases.
+Your transportation-logistics application requires stored procedures that run basic CRUD (*Create*, *Read*, *Update*, and *Delete*) operations. You have experience working with SQL Server and other relational databases.
 
 You consider two choices for your database:
 
-- Host SQL Server on-premises. Your IT team runs a small in-house data center to support the finance department and a few other teams. You can work with IT to host a SQL Server deployment in their data center.
-- Host Azure SQL Database in the cloud. Azure SQL Database is based on SQL Server, and provides the relational database functionality you need.
+- **Host SQL Server on-premises**: Your IT team runs a small in-house data center to support the finance department and a few other teams. You can work with IT to host a SQL Server deployment in their data center.
+- **Host Azure SQL Database in the cloud**: Azure SQL Database is based on SQL Server, and provides the relational database functionality you need.
 
-You've decided to build the web and application tiers for your logistics app on Azure. So, it makes sense to also host your database there. But there are some other reasons why Azure SQL Database is a smart choice, and why it's even easier than using virtual machines.
+You've decided to build the web and application tiers for your logistics app on Azure. So, it makes sense to also host your database there. However, there are some other reasons why Azure SQL Database is a smart choice, and why it's even easier than using virtual machines.
 
 - **Convenience**
 
@@ -25,7 +25,7 @@ You've decided to build the web and application tiers for your logistics app on 
 
     Because we manage things for you, there are no systems for you to buy, provide power for, or otherwise maintain.
 
-    Azure SQL Database has several pricing options. These pricing options enable you to balance performance versus cost. You can start for just a few dollars a month.
+    Azure SQL Database has several pricing options. These pricing options allow you to balance performance versus cost. You can start for just a few dollars a month.
 
 - **Scale**
 
@@ -39,6 +39,6 @@ You've decided to build the web and application tiers for your logistics app on 
 
     You can allow access to specific IP addresses that you trust. Doing so allows you to use Visual Studio, SQL Server Management Studio, or other tools to manage your Azure SQL database.
 
-To recap - with Azure SQL Database, Microsoft Azure manages the hardware, software updates, and OS patches for you. We provide buying options to help you get the performance you need at a predictable cost. Azure SQL Database also comes with a firewall so that you can control access to your data.
+To recap: with Azure SQL Database, Microsoft Azure manages the hardware, software updates, and OS patches for you. We provide buying options to help you get the performance you need at a predictable cost. Azure SQL Database also comes with a firewall so that you can control access to your data.
 
 Although you don't need to be a DBA to use Azure SQL Database, there are a few concepts you should understand before you start. We'll cover these concepts in the next unit.

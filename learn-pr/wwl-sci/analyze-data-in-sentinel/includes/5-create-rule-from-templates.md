@@ -1,4 +1,5 @@
 
+
 The Analytics section in Microsoft Sentinel contains rule templates that are preloaded from the Microsoft Sentinel GitHub repository. You can use these templates to create a rule to detect security threats.
 
 

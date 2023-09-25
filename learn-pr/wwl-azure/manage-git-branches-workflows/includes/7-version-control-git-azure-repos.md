@@ -1,7 +1,5 @@
-> [!WARNING]
-> Skip this lab. It will be retired soon.
 
-**Estimated time:** 30 minutes.
+**Estimated time:** 60 minutes.
 
 **Lab files:** none.
 
@@ -14,33 +12,34 @@ Azure DevOps supports two types of version control, Git and Team Foundation Vers
 
 Git is the default version control provider for new projects. You should use Git for version control in your projects unless you need centralized version control features in TFVC.
 
-In this lab, you'll learn how to work with branches and repositories in Azure DevOps.
+In this lab, you'll learn to establish a local Git repository, which can easily be synchronized with a centralized Git repository in Azure DevOps. In addition, you'll learn about Git branching and merging support. You'll use Visual Studio Code, but the same processes apply to using any Git-compatible client.
 
 ## Objectives
 
 After completing this lab, you'll be able to:
 
- -  Work with branches in Azure Repos.
- -  Work with repositories in Azure Repos.
+ -  Clone an existing repository.
+ -  Save work with commits.
+ -  Review the history of changes.
+ -  Work with branches by using Visual Studio Code.
 
 ## Requirements
 
  -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).
  -  **Set up an Azure DevOps organization:** If you don't already have an Azure DevOps organization that you can use for this lab, create one by following the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization).
- -  [Git for Windows](https://gitforwindows.org/) download page. This will be installed as part of the prerequisites for this lab.
- -  [Visual Studio Code](https://code.visualstudio.com/). This will be installed as part of the prerequisites for this lab.
+ -  If you don't have Git **2.29.2** or later installed, start a web browser, navigate to the [Git for Windows download page](https://gitforwindows.org/), and install it.
+ -  If you don't have Visual Studio Code installed yet, navigate to the [Visual Studio Code download page](https://code.visualstudio.com/) from the web browser window, download it, and install it.
+ -  If you don't have the Visual Studio C\# extension installed yet, navigate to the [C\# extension installation page](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) in the web browser window and install it.
 
 ## Exercises
 
 During this lab, you'll complete the following exercises:
 
-> [!NOTE]
-> If you completed **[Lab 02: Version Controlling with Git in Azure Repos](/learn/modules/work-azure-repos-github/7-version-control-git-azure-repos)**, you've already finished the steps in **Exercise 0: Configure the lab prerequisites** and **Exercise 1: Clone an existing repository** and can skip ahead to **Exercise 2: Manage branches from Azure DevOps**.
-
  -  Exercise 0: Configure the lab prerequisites.
  -  Exercise 1: Clone an existing repository.
- -  Exercise 2: Manage branches from Azure DevOps.
- -  Exercise 3: Manage repositories.
+ -  Exercise 2: Save work with commits.
+ -  Exercise 3: Review history.
+ -  Exercise 4: Work with branches.
 
-[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M02_L02_Version_Controlling_with_Git_in_Azure_Repos.html)
+[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
+](https://aka.ms/az-400-version-control-with-git-in-azure-repos)

@@ -75,6 +75,8 @@ Our blob trigger is now up and listening for activity. Let's create a blob to se
 
 1. In Storage Browser, select the **samples-workitems** container from the **Blob containers** list.
 
+1. In the **Authentication method:** link at the top if the list, select **Switch to Access key**.
+
 1. In the top menu bar, select **Upload**. The **Upload blob** pane opens.
 
 1. From the **Files** field, select any file from your computer.

@@ -5,7 +5,7 @@ In this module, you created The Mojifier, a Slack slash command that lets you:
 3. Replace faces in the image with emojis
 4. Post the updated image to Slack as a reply
 
-You created this command using the Azure Cognitive Services Face API and Azure functions written in TypeScript. You developed and debugged these functions on your local machine, then deployed them to Azure from Visual Studio Code.
+You created this command using the Azure AI Face API and Azure functions written in TypeScript. You developed and debugged these functions on your local machine, then deployed them to Azure from Visual Studio Code.
 
 ## Resources
 

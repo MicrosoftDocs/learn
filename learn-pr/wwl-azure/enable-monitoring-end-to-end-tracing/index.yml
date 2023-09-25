@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Enable monitoring and end-to-end tracing
 summary: Now that everything is up and running, it’s important to monitor application availability. Monitoring helps you determine errors or exceptions within your applications. In this exercise, you'll add end-to-end monitoring to your applications.
 abstract: |

@@ -19,6 +19,15 @@ The content in the module helps you prepare for the certification exam SC-100: M
 
 DevOps Security covers the controls related to the security engineering and operations in the DevOps processes, including deployment of critical security checks (such as static application security testing, vulnerability management) prior to the deployment phase to ensure the security throughout the DevOps process; it also includes common topics such as threat modeling and software supply security.
 
+This unit gives a summary of the Microsoft cloud security benchmark controls in the [DevOps Security family](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security).
+
+Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
+
+In the summary below, we have included controls from the full baseline where:
+
+* Security controls were *supported* but *not* enabled by default
+* There was explicit guidance which contained action to be taken on the part of the customer
+
 Microsoft cloud security benchmark outlines seven critical controls for DevOps security.
 
 1. [DS-1: Conduct threat modeling](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security#ds-1-conduct-threat-modeling)

@@ -3,7 +3,7 @@ uid: learn.wwl.review-principles-code-debugging-exception-handling-c-sharp
 metadata:
   title: Review the principles of code debugging and exception handling
   description: "This module examines code validation using a combination of testing, debugging, and exception handling. The debugging process and benefits provided by code debugger are reviewed, along with the principals and processes behind exception handling."
-  ms.date: 03/23/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -22,9 +22,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
+- student
 products:
 - dotnet
-- dotnet-framework
 - vs-code
 subjects:
 - development-tools

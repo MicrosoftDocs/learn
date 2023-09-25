@@ -4,13 +4,11 @@ title: Implement GitHub Dependabot alerts and security updates
 metadata:
   title: Implement GitHub Dependabot alerts and security updates
   description: "Implement GitHub Dependabot alerts and security updates"
-  ms.date: 01/10/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.service: azure-devops
+durationInMinutes: 2
 content: |
   [!include[](includes/5-implement-github-dependabot-alerts-security-updates.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-razor-pages-aspnet-core.5-tag-helpers-page-handlers
+title: Understand tag helpers and page handlers
+metadata:
+  title: Understand tag helpers and page handlers
+  description: "Learn about using tag handlers to reduce the context switching between HTML and C#. Then learn about page handlers and how they can be used to handle HTTP requests."
+  ms.date: 5/11/2023
+  author: camsoper
+  ms.author: casoper
+  ms.manager: markl
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-tag-helpers-page-handlers.md)]

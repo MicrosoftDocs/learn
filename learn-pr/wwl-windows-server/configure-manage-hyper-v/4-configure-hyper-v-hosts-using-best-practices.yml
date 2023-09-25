@@ -4,12 +4,12 @@ title: Configure Hyper-V hosts using best practices
 metadata:
   title: Configure Hyper-V hosts using best practices
   description: "Configure Hyper-V hosts using best practices"
-  ms.date: 02/26/2021
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/4-configure-hyper-v-hosts-using-best-practices.md)]

@@ -4,11 +4,11 @@ title: Configure Azure Virtual Desktop
 metadata:
   title: Configure Azure Virtual Desktop
   description: "Configure Azure Virtual Desktop"
-  ms.date: 04/05/2023
+  ms.date: 05/12/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 9
 content: |
   [!include[](includes/4-configure-azure-virtual-desktop.md)]

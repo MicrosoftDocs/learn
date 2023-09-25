@@ -4,10 +4,11 @@ title: Select the appropriate remote administration tool
 metadata:
   title: Select the appropriate remote administration tool
   description: "Select the appropriate remote administration tool"
-  ms.date: 09/16/2022
+  ms.date: 07/03/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
+  ms.custom: devx-track-azurecli, devx-track-azurepowershell
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

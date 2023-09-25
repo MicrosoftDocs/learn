@@ -2,7 +2,7 @@ Let's start with the most obvious task: creating an Azure Virtual Machine.
 
 ## Logins, subscriptions, and resource groups
 
-You'll be working in the Azure Cloud Shell on the right. Once you activate the sandbox, you'll be logged into Azure with a free subscription managed by Microsoft Learn. You don't have to log into Azure on your own, or select a subscription; this will be done for you. You would also normally create a _resource group_ to hold new resources. In this module, the Azure sandbox will create a resource group for you, which you will use to execute all the commands.
+You'll be working in the Azure Cloud Shell on the right. Once you activate the sandbox, you'll be logged into Azure with a free subscription that Microsoft Learn manages. You don't have to log in to Azure on your own or select a subscription; this is done for you. You'd also normally create a *resource group* to hold new resources. In this module, the Azure sandbox creates a resource group for you, which you'll use to execute all the commands.
 
 ## Create a Linux VM with the Azure CLI
 
@@ -24,17 +24,17 @@ The Azure CLI includes the `vm` command to work with virtual machines in Azure. 
 > [!NOTE]
 > For a complete list of commands, you can check the [Azure CLI reference documentation](/cli/azure/reference-index).
 
-Let's start with the first one: `az vm create`. This command is used to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The four parameters that must be supplied are:
+Let's start with the first one: `az vm create`. You can use this command to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The four parameters that must be supplied are:
 
 > [!div class="mx-tableFixed"]
 > | Parameter | Description |
 > |-----------|-------------|
-> | `--resource-group` | The resource group that will own the virtual machine, use **<rgn>[sandbox Resource Group]</rgn>**. |
-> | `--name` | The name of the virtual machine - must be unique within the resource group. |
+> | `--resource-group` | The resource group that will own the virtual machine; use **<rgn>[sandbox Resource Group]</rgn>**. |
+> | `--name` | The name of the virtual machine; must be unique within the resource group. |
 > | `--image` | The operating system image to use to create the VM. |
-> | `--location` | The region in which to place the VM. Typically, this would be close to the VM's consumer. In this exercise, choose a location nearby from the following list. |
+> | `--location` | The region in which to place the VM. Typically, this would be close to the VM's consumer. |
 
-In addition, it's helpful to add the `--verbose` flag to see progress while the VM is being created. 
+In addition, it's helpful to add the `--verbose` flag to see progress while the VM is being created.
 
 ## Create a Linux virtual machine
 
@@ -53,17 +53,16 @@ az vm create \
 
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
+This command creates a new **Ubuntu** Linux virtual machine with the name `SampleVM`. Notice that the Azure CLI tool waits while the VM is being created. You can add the `--no-wait` option to tell the Azure CLI tool to return immediately and have Azure continue creating the VM in the background. This is useful if you're executing the command in a script.
 
-This command will create a new **Ubuntu** Linux virtual machine with the name `SampleVM`. Notice that the Azure CLI tool waits while the VM is being created. You can add the `--no-wait` option to tell the Azure CLI tool to return immediately and have Azure continue creating the VM in the background. This is useful if you're executing the command in a script.
-
-We are specifying the administrator account name through the `--admin-username` flag to be `azureuser`. If you omit this, the `az vm create` command will use your *current user name*. Since the rules for account names are different for each OS, it's safer to specify a specific name.
+We're specifying the administrator account name through the `--admin-username` flag to be `azureuser`. If you omit this, the `az vm create` command will use your *current user name*. Because the rules for account names are different for each OS, it's safer to specify a specific name.
 
 > [!NOTE]
-> Common names such as "root" and "admin" are not allowed for most images.
+> Common names such as "root" and "admin" aren't allowed for most images.
 
-We are also using the `generate-ssh-keys` flag. This parameter is used for Linux distributions, and creates a pair of security keys so we can use the `ssh` tool to access the virtual machine remotely. The two files are placed into the `.ssh` folder on your machine and in the VM. If you already have an SSH key named `id_rsa` in the target folder, then that SSH key will be used rather than generating a new key.
+We're also using the `generate-ssh-keys` flag. Linux distributions use this parameter, and it creates a pair of security keys so we can use the `ssh` tool to access the virtual machine remotely. The two files are placed into the `.ssh` folder on your machine and in the VM. If you already have an SSH key named `id_rsa` in the target folder, then that SSH key will be used rather than generating a new key.
 
-Once Azure CLI finishes creating the VM, you will get a JSON response which includes the current state of the virtual machine and its public and private IP addresses assigned by Azure:
+Once Azure CLI finishes creating the VM, you'll get a JSON response which includes the current state of the virtual machine and its public and private IP addresses assigned by Azure:
 
 ```json
 {

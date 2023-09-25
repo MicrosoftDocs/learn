@@ -7,7 +7,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Concepts of scalability
 durationInMinutes: 2
 content: |
@@ -22,29 +22,29 @@ quiz:
           explanation: "Correct. When you scale an application horizontally, you're duplicating and balancing the load among several copies of it."
         - content: "Adding more RAM to the VM."
           isCorrect: false
-          explanation: "Adding more resources is not a part of horizontal scaling."
+          explanation: "Adding more resources isn't a part of horizontal scaling."
         - content: "Rendering the application stateless so it can be used without a persistent storage."
           isCorrect: false
-          explanation: "Stateless applications are easier to scale than stateful ones, however this is not the definition of horizontal scaling."
+          explanation: "Stateless applications are easier to scale than stateful ones, however that's not the definition of horizontal scaling."
     - content: "Why is it important to have a resource request set on pods bound to an HPA?"
       choices:
-        - content: "Because this is the only way to calculate the resource utilization."
+        - content: "Because it's the only way to calculate the resource utilization."
           isCorrect: true
           explanation: "Correct. The HPA algorithm uses the resource requests to calculate the utilization."
         - content: "It's not important, but it's recommended so the application doesn't starve."
           isCorrect: false
-          explanation: "Although it's important to have resources set for this reason, HPAs cannot calculate the resource usage if the resource keys are not set."
+          explanation: "Although it's important to have resources set for this reason, HPAs can't calculate the resource usage if the resource keys aren't set."
         - content: "So the HPA knows when to stop scaling a resource based on the resources available in the cluster."
           isCorrect: false
-          explanation: "HPAs will not mind the total amount of resources in a cluster."
+          explanation: "HPAs don't mind the total amount of resources in a cluster."
     - content: "Why is vertical scaling less recommended for stateless applications?"
       choices:
-        - content: "Because vertical scaling duplicates the applications and this is harder on stateless apps."
+        - content: "Vertical scaling duplicates the applications and is harder on stateless apps."
           isCorrect: false
-          explanation: "Vertical scaling does not duplicate applications."
-        - content: "Because it requires a stateful application to be vertically scaled."
+          explanation: "Vertical scaling doesn't duplicate applications."
+        - content: "It requires a stateful application to be vertically scaled."
           isCorrect: false
           explanation: "Any application can be vertically scaled."
-        - content: "Because it's cheaper to duplicate a stateless application than increase the resources on its VM."
+        - content: "It's cheaper to duplicate a stateless application than increase the resources on its VM."
           isCorrect: true
           explanation: "Correct. While a stateless application can be vertically scaled, the cost of adding more resources to a VM surpasses the cost of duplicating the same VM."

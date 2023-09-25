@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-generative-ai.plan-responsible-ai
+title: Plan a responsible generative AI solution
+metadata:
+  title: Plan a responsible generative AI solution
+  description: "Describe a practical process for responsible generative AI development."
+  ms.date: 7/13/2023
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: openai
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-plan-responsible-ai.md)]

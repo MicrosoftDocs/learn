@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Review CIM and WMI
 summary: This module covers CIM and WMI technologies to connect to a common information repository that contains management information that you can query and manipulate.
 abstract: |

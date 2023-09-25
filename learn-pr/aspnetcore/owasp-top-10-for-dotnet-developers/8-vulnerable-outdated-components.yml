@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.vulnerable-outdated-components
+title: Vulnerable and outdated components
+metadata:
+  title: vulnerable-outdated-components
+  description: "OWASP Top 10 for .NET Developers. Vulnerable and outdated components."
+  ms.date: 06/12/2023
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-vulnerable-outdated-components.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Should the DevOps team maintain and review list of third party components used in the system for security vulnerabilities? "
+    choices:
+    - content: "An Excel spreadsheet with Software Bill of Materials should be part of the design phase and any new green field project."
+      isCorrect: false
+      explanation: "SBOM is recommended, however can be applied at any stage of the project in more automated fashion."
+    - content: "Favor automated tools at any stage of product lifecycle to track and monitor your dependencies."
+      isCorrect: true
+      explanation: "Correct. Maintenance effort required to keep a list of dependencies up-to-date combined with their vulnerability check can quickly become unmanageable."
+    - content: "There's no risk associated with third party purchased and OSS components."
+      isCorrect: false
+      explanation: "Even if your software makes the best effort in staying secure, an insecure or flowed dependency may introduce security vulnerability in your system."

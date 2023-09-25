@@ -2,8 +2,6 @@ Azure Private DNS zones can be created by using your own custom domain names rat
 
 :::image type="content" source="../media/private-domains-4d85c760.png" alt-text="Diagram that shows how Azure DNS responds to a request with a private IP address." border="false":::
 
-DNS records for a private DNS zone aren't viewable or retrievable, but the DNS records are registered and will resolve successfully.
-
 ### Things to know about Azure Private DNS benefits
 
 There are many benefits to implementing Azure Private DNS for your domain.

@@ -5,12 +5,14 @@ metadata:
   unitType: learning-content
   title: Use keyword arguments in Python
   description: Work with keyword arguments for optional inputs to functions.
-  ms.date: 12/07/2021
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/5-keyword-arguments.md)]

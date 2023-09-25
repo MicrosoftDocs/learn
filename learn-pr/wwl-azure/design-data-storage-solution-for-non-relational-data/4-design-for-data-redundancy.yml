@@ -4,13 +4,11 @@ title: Design for data redundancy
 metadata:
   title: Design for data redundancy
   description: "Design for data redundancy"
-  ms.date: 03/13/2023
+  ms.date: 07/21/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 15
 content: |
   [!include[](includes/4-design-for-data-redundancy.md)]

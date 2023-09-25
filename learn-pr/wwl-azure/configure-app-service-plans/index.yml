@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: app-service
 title: Configure Azure App Service plans
 summary: Learn how to configure an Azure App Service plan, including pricing and scaling.
 abstract: |

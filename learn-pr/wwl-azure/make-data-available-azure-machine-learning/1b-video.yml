@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.make-data-available-azure-machine-learning.video
+title: Video - Make data available in Azure Machine Learning
+metadata:
+  title: Video - Make data available in Azure Machine Learning
+  description: "Optional video about making data available in Azure Machine Learning"
+  ms.date: 07/10/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 19
+content: |
+  [!include[](includes/1b-video.md)]

@@ -4,11 +4,10 @@ title: Use Spark to work with data files
 metadata:
   title: Use Spark to work with data files
   description: "Use Spark to work with data files"
-  ms.date: 09/05/2022
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

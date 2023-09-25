@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-manage-identities.exercise-assign-licenses-to-users
+title: Exercise - assign licenses to users
+metadata:
+  title: Exercise - assign licenses to users
+  description: "Exercise - assign licenses to users"
+  ms.date: 08/04/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-exercise-assign-licenses-users.md)]

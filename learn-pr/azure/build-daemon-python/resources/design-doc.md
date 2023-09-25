@@ -79,4 +79,4 @@ Identify the subtasks of module title.
 ## Notes
 
 - [Python 3](https://www.python.org/download/releases/3.0/)
-- [Register an application with the Microsoft identity platform](https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+- [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)

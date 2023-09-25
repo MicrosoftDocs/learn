@@ -6,9 +6,11 @@ metadata:
   title: How Azure Blueprints works
   description: "Learn how Azure Blueprints can help you to deploy and orchestrate governance at scale."
   ms.date: 11/30/2021
-  author: ricmmartins
-  ms.author: ricmart
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-arm-template
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 4
 content: |

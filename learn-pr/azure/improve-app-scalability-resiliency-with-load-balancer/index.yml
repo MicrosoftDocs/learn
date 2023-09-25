@@ -7,7 +7,7 @@ metadata:
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: load-balancer
 title: Improve application scalability and resiliency by using Azure Load Balancer
 summary: Discuss the different load balancers in Azure and how to choose the right Azure load balancer solution to meet your requirements.
 abstract: | 

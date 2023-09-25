@@ -4,9 +4,9 @@ title: Troubleshoot Azure AD authentication
 metadata:
   title: Troubleshoot Azure AD authentication
   description: "Troubleshoot Azure AD authentication"
-  ms.date: 06/14/2022
-  author: wwlpublish
-  ms.author: lola
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

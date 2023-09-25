@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-validate-permissions.configure-validate-approval-branch-checks
+title: Configure and validate approval and branch checks
+metadata:
+  title: Configure and validate approval and branch checks
+  description: "Configure and validate approval and branch checks."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-configure-validate-approval-branch-checks.md)]

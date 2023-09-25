@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-basics-azure-business.get-know-azure-business
+title: Get to know Azure for business
+metadata:
+  title: Get to know Azure for business
+  description: "Get to know Azure for business"
+  ms.date: 07/11/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-get-know-azure-business.md)]
+interactive: bash

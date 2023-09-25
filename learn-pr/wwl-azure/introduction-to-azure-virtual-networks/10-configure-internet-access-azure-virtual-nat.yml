@@ -4,11 +4,10 @@ title: Configure internet access with Azure Virtual NAT
 metadata:
   title: Configure internet access with Azure Virtual NAT
   description: "Configure internet access with Azure Virtual NAT"
-  ms.date: 04/11/2023
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

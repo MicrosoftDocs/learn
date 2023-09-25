@@ -9,7 +9,6 @@ metadata:
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
-  ms.prod: learning-graph
 title: Add custom data to your app by using extensions in Microsoft Graph
 summary: "Add custom data to Microsoft Graph resources by using Microsoft Graph extensions. Query and update the custom data to build unique experiences for your applications."
 abstract: |

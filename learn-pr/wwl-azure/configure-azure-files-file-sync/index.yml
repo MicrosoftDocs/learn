@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-files-file-sync
 metadata:
   title: Configure Azure Files and Azure File Sync
   description: "Learn how to configure Azure Files and Azure File Sync."
-  ms.date: 03/30/2023
+  ms.date: 05/19/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -24,6 +24,7 @@ levels:
 roles:
 - administrator
 products:
+- azure
 - azure-files
 subjects:
 - cloud-computing

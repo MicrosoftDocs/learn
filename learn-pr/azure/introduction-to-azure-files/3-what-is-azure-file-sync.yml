@@ -8,7 +8,7 @@ metadata:
   author: kendownie
   ms.author: kendownie
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 8
 content: |
   [!include[](includes/3-what-is-azure-file-sync.md)]

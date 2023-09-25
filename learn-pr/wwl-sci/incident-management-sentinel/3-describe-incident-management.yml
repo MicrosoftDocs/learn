@@ -1,45 +1,45 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.incident-management-sentinel.3-describe-incident-management
-title: Describe incident management
+title: Understand incidents
 metadata:
-  title: Describe incident management
-  description: "Describe incident management in Microsoft Sentinel"
-  ms.date: 01/26/2023
+  title: Understand incidents
+  description: Learn about incident definitions, key concepts, and overview in Microsoft Sentinel.
+  ms.date: 05/22/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 5
 content: |
   [!include[](includes/3-describe-incident-management.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which Microsoft Sentinel component is used to generate alerts?"
+  - content: "Which Microsoft Sentinel component generates alerts?"
     choices:
-    - content: "Incidents"
+    - content: "Incidents."
       isCorrect: false
-      explanation: "Incidents don't generate alerts. Rather, incidents are created from alerts."
-    - content: "Analytic rules"
+      explanation: "Incidents don't generate alerts, but are created from alerts."
+    - content: "Analytics rules."
       isCorrect: true
-      explanation: "Analytic rules can be configured to generate alerts in Sentinel."
-    - content: "Data connectors"
+      explanation: "You can configure analytics rules to generate alerts in Microsoft Sentinel."
+    - content: "Data connectors."
       isCorrect: false
-      explanation: "Data connectors don't generate alerts. They're used to gather event data from security-related services."
-    - content: "Events"
+      explanation: "Data connectors don't generate alerts, but gather event data from security-related services."
+    - content: "Events."
       isCorrect: false
-      explanation: "Events don't generate alerts. Events are stored in a Log Analytics workspace and contain the details of security-related activity that you want to monitor with Sentinel."
-  - content: "What is the primary goal of incident management in Sentinel?"
+      explanation: "Events don't generate alerts. Events are stored in a Log Analytics workspace and contain the details of security-related activity that you monitor with Microsoft Sentinel."
+  - content: "What's the primary goal of incident management in Microsoft Sentinel?"
     choices:
-    - content: "Understand the state of security health in Microsoft Azure."
+    - content: "To understand the state of security health in Azure."
       isCorrect: false
-      explanation: "Although incidents can help you understand your security environment, they're designed to help track and resolve security issues across all environments, including on-premises, Azure, and other cloud environments."
-    - content: "Track and manage issues in Azure."
+      explanation: "Incidents can help you understand, track, and resolve security issues across all environments"
+    - content: "To track and manage all Azure issues."
       isCorrect: false
-      explanation: "Incident management in Sentinel is only for resolving security-related issues"
-    - content: "Track and resolve security issues across your organization's environment."
+      explanation: "Microsoft Sentinel incident management is for resolving security-related issues only."
+    - content: "To track and resolve security issues across your organization's environment."
       isCorrect: true
-      explanation: "Sentinel incident management helps you track and resolve security issues across your organization's environment."
-    - content: "Manage security roles in your environment."
+      explanation: "Microsoft Sentinel incident management helps you track and resolve security issues across your organization, including on-premises, Azure, and other cloud environments."
+    - content: "To manage security roles in your environment."
       isCorrect: false
       explanation: "You can't directly manage security roles with incident management."

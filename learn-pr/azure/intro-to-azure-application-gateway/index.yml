@@ -9,7 +9,7 @@ metadata:
   ms.author: orthomas
   ms.custom: team=cloud_advocates
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: application-gateway
 title: Introduction to Azure Application Gateway
 summary: This module explains what Azure Application Gateway does, how it works, and when you should choose to use Application Gateway as a solution to meet your organization's needs.  
 abstract: |

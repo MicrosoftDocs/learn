@@ -8,7 +8,7 @@ metadata:
   author: jasallen
   ms.author: jasdeb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: bot-service
 title: Build a chat bot with the Azure Bot Service
 summary: The Azure Bot Service, combined with Microsoft QnA Maker, provides the tools developers need to build and publish intelligent bots that interact naturally with users using a range of services.
 abstract: |

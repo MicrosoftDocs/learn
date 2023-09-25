@@ -6,8 +6,9 @@ metadata:
   ms.date: 04/01/2020
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-functions
+  manager: mijacobs
 title: Develop Java serverless Functions on Azure using Maven
 summary: Learn how to use the Maven Plugin for Azure Functions to create a cloud-based function that is triggered when values are passed in the HTTP request, and outputs a log entry to track the activity.
 abstract: | 

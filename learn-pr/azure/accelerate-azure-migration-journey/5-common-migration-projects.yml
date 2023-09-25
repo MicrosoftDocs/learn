@@ -3,11 +3,14 @@ uid: learn.azure.accelerate-migration-journey.5-common-migration-projects
 title: Common migration and modernization projects
 metadata:
   title: Common migration and modernization projects
-  description: This unit examines common migration and modernization projects from the perspective of workload type. 
-  ms.date: 02/12/2021
+  description: Examine common migration and modernization projects from the perspective of workload type. 
+  ms.date: 05/15/2023
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
+    - devx-track-extended-java
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |

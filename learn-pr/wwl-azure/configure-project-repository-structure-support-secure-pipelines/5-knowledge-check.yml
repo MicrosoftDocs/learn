@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 1/25/2023
+  author: lauraAlvEl
+  ms.author: lauraalv
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "How can you ensure that any issues or security breaches that occur in one project don't affect other projects?"
+    choices:
+    - content: "By exporting the data in the compromised project to a new project and then deleting the compromised project."
+      isCorrect: false
+      explanation: "Incorrect. Exporting the data of a compromised project into a new project doesn't guarantee that other projects won't be affected. Also, deleting the compromised project after a breach has taken place won't prevent a possible security impact on other projects."
+    - content: "By setting up a rule that locks access to all projects if a security breach is detected."
+      isCorrect: false
+      explanation: "Incorrect. It isn't possible to set up a rule that locks access to all projects if a security breach is detected."
+    - content: "By restricting access to projects to specific users or groups, thus ensuring that only specific users or groups are able to view and modify the project resources where they're authorized."
+      isCorrect: true
+      explanation: "Correct. Setting separate permissions to each project helps you to keep control of who can access project resources and not let a breach in one project to affect other projects."
+  - content: "Which of the following statements is true about secure files?"
+    choices:
+    - content: "You can separate secure files between different team projects to reduce the risk of sensitive data being accidentally exposed or leaked."
+      isCorrect: true
+      explanation: "Correct. Adding project secure files to different team projects makes it easier to manage access and ensure confidentiality."
+    - content: "You can replace secure files but not delete them."
+      isCorrect: false
+      explanation: "Incorrect. Once you upload a secure file, you can delete it but not replace it."
+    - content: "You can't add permissions for individual secure files in a pipeline."
+      isCorrect: false
+      explanation: "Incorrect. It's possible to add permissions for an individual file. To do so, go to the file's edit view, select Pipeline permissions to set per-pipeline permissions, or select Security to set security roles."
+  - content: "In which of the following cases is it advisable to create multiple repositories within a single project?"
+    choices:
+    - content: "If the products or services work on independent schedules or processes."
+      isCorrect: false
+      explanation: "Incorrect. If the products or services work on independent schedules or processes, it's best to split them into multiple projects."
+    - content: "If coordinated code changes across the repos are expected to be made."
+      isCorrect: false
+      explanation: "Incorrect. No tools can help coordinate code changes across repos."
+    - content: "If the products or services are working on a coordinated release schedule."
+      isCorrect: true
+      explanation: "Correct. One project containing multiple repos works well to ensure the processes of products or services working on a coordinated release schedule remain shared and consistent."

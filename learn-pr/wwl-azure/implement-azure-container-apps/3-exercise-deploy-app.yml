@@ -4,11 +4,11 @@ title: Exercise - Deploy a container app
 metadata:
   title: Exercise - Deploy a container app
   description: "Exercise - Deploy a container app"
-  ms.date: 04/19/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-deploy-app.md)]

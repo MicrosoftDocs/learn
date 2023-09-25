@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-sensitive-information-types
 metadata:
   title: Create and manage sensitive information types
   description: "Create and manage sensitive information types"
-  ms.date: 04/18/2023
+  ms.date: 05/26/2023
   author: wwlpublish
   ms.author: riswinto
   ms.topic: interactive-tutorial
@@ -28,7 +28,6 @@ roles:
 - risk-practitioner
 products:
 - m365
-- m365-information-protection
 subjects:
 - information-protection-governance
 units:

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: postgresql
 title: Use system catalogs and system views in PostgreSQL
 summary: System information is known as metadata and is stored in system catalogs in Azure Database for PostgreSQL. In addition to directly accessing system catalogs, you can access system views.
 abstract: |

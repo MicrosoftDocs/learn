@@ -4,7 +4,7 @@ You deployed Azure File Sync and created trust relationships between Azure and y
 - You learned how to assess the compatibility of your server.
 - You learned how to set up Azure resources that are needed to support Azure File Sync.
 - You set up and configured Azure File Sync on Windows Server.
-- You learned how to troubleshoot Azure File Sync problems.
+- You learned how to check the file sync.
 
 ## Clean up
 

@@ -9,7 +9,7 @@ metadata:
   author: ramiMSFT
   ms.author: rabououn
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 15
 content: |
   [!include[](includes/4-set-up-environment.md)]

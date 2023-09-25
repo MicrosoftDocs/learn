@@ -6,8 +6,8 @@ metadata:
   title: Introduction                                ## Title of unit
   description: This module introduces the Introduction to GitHub Advanced Security module   ## description of unit content
   ms.date: 01/28/2022                               ## date unit was published
-  author: davenowell                               ## author's github name
-  ms.author: dapolite                              ## author's microsoft id
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial                    ## do not change 
   ms.prod: learning-azure                           ## do not change 
 durationInMinutes: 2                                ## approximate time to complete unit 

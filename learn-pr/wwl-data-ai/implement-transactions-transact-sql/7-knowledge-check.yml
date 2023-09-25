@@ -4,15 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/21/2022
+  ms.date: 08/25/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: sql
+  ms.subservice: t-sql
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "What happens to nested transactions when the outer transaction is rolled back?"
     choices:

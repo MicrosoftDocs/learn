@@ -30,17 +30,17 @@ ENV JAVA_OPTS="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss
 ENV JAVA_APP_JAR="/deployments/quarkus-run.jar"
 ```
 
-This Dockerfile expects the Quarkus application to be packaged as a `quarkus-run.jar` file. This is the default name for the Quarkus application when it's packaged as a `jar` file. So, we need to make sure that the Quarkus application is packaged as a `jar` file. To do this, we need to execute the following Maven command:
+This Dockerfile expects the Quarkus application to be packaged as a `quarkus-run.jar` file. This is the default name for the Quarkus application when it's packaged as a `jar` file. So, we need to make sure that the Quarkus application is packaged as a `jar` file. To do so, we need to execute the following Maven command:
 
 ```bash
 ./mvnw package
 ```
 
-This command packages the Quarkus application into a `jar` file and generate a `quarkus-run.jar` file in the `target/quarkus-app` folder.
+This command packages the Quarkus application into a `jar` file and generates a `quarkus-run.jar` file in the `target/quarkus-app` folder.
 
 ## Create the Azure Container App Environment and deploy the container
 
-Now that we've the Dockerfile at the right location, we can create the Azure Container App environment and deploy the container in a single Azure CLI command. Execute the following command at the root of the project:
+Now that we have the Dockerfile at the right location, we can create the Azure Container App environment and deploy the container in a single Azure CLI command. Execute the following command at the root of the project:
 
 ```bash
 az containerapp up \
@@ -109,7 +109,7 @@ ca-azure-deploy-quarkus             rg-azure-deploy-quarkus  eastus      Microso
 You can now execute the deployed Quarkus application. First, you need to get the URL of the application. You can get it by executing the following command:
 
 ```bash
-AZ_APP_URL=$(
+export AZ_APP_URL=$(
     az containerapp show \
         --name "$AZ_CONTAINERAPP" \
         --resource-group "$AZ_RESOURCE_GROUP" \
@@ -126,19 +126,38 @@ Your application is ready at `https://<appName>.azurecontainerapps.io/`. Notice 
 curl --header "Content-Type: application/json" \
     --request POST \
     --data '{"description":"Configuration","details":"Congratulations, you have set up your Quarkus application correctly!","done": "true"}' \
-    https://<value of $AZ_APP_URL>/api/todos
+    https://$AZ_APP_URL/api/todos
 ```
 
 Retrieve the data by using a new `cURL` request:
 
 ```bash
-curl https://<value of $AZ_APP_URL>/api/todos
+curl https://$AZ_APP_URL/api/todos
 ```
 
 This command returns the list of all to-do items from the database:
 
 ```json
-[{"id":1,"description":"Configuration","details":"Congratulations, you have set up your Quarkus application correctly!","done":true}]
+[
+   {
+      "description" : "Take Quarkus MS Learn",
+      "details" : "Take the MS Learn on deploying Quarkus to Azure Container Apps",
+      "done" : true,
+      "id" : 1
+   },
+   {
+      "description" : "Take Azure Container Apps MS Learn",
+      "details" : "Take the ACA Learn module",
+      "done" : false,
+      "id" : 2
+   },
+   {
+      "description" : "Configuration",
+      "details" : "Congratulations, you have set up your Quarkus application correctly!",
+      "done" : true,
+      "id" : 3
+   }
+]
 ```
 
 While you create new to-dos, you can stream the logs for your container with:
@@ -153,7 +172,7 @@ az containerapp logs show \
 Execute more curl commands, and you should see the logs scrolling in the terminal.
 
 ```bash
-curl https://<value of $AZ_APP_URL>/api/todos
+curl https://$AZ_APP_URL/api/todos
 ```
 
 > [!NOTE]

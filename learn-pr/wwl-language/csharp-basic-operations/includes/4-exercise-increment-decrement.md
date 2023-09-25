@@ -82,7 +82,7 @@ Both the increment and decrement operators have an interesting quality &mdash; d
     int value = 1;
     value++;
     Console.WriteLine("First: " + value);
-    Console.WriteLine("Second: " + value++);
+    Console.WriteLine($"Second: {value++}");
     Console.WriteLine("Third: " + value);
     Console.WriteLine("Fourth: " + (++value));
     ```
@@ -99,7 +99,7 @@ Both the increment and decrement operators have an interesting quality &mdash; d
 Notice this line of code:
 
 ```csharp
-Console.WriteLine("Second: " + value++);
+Console.WriteLine($"Second: {value++}");
 ```
 
 There's two steps to this line:
@@ -122,7 +122,7 @@ Console.WriteLine("Fourth: " + (++value));
 Here, the order of operations is switched because the `++` operator is placed before the operand `value`.
 
 1. Increment the value.
-2. Retrieve the new incremented value of the variable `value` and use that in the string interpolation operation.
+2. Retrieve the new incremented value of the variable `value` and use that in the string operation.
 
 While not strictly necessary, you added parenthesis around the expression `(++value)` to improve readability. Seeing so many `+` operators next to each other seems like it could be misunderstood by other developers. Stylistic decisions like this are subjective. However, since you'll write the code once but read it many times, you should prioritize readability.
 

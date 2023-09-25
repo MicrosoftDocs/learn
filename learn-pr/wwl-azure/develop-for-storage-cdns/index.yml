@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-cdn
 title: Develop for storage on CDNs
 summary: Learn how the Azure Content Delivery Network (CDN) functions, how to control cache behavior, and how to perform actions by using .NET.
 abstract: |

@@ -12,7 +12,11 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - devx-track-azurecli
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-app-service-mysql.md)]

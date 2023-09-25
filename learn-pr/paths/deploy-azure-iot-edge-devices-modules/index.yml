@@ -41,3 +41,4 @@ modules:
 - learn.wwl.explore-iot-edge-gateway-configuration
 trophy:
   uid: learn.wwl.deploy-azure-iot-edge-devices-modules.trophy
+hidden: true

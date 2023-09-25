@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.string-and-other-functions
+title: String and other functions enhancements
+metadata:
+  title: String and other functions enhancements
+  description: "In SQL Server 2022, new features have been added to several of our string manipulation functions, enhancing them for greater flexibility."
+  ms.date: 5/5/2023
+  author: MScalopez
+  ms.author: calopez
+  ms.reviewer: vanto
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-string-and-other-functions.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "In SQL Server 2022, which function is used to select the smallest value among multiple expressions?"
+    choices: 
+    - content: "MIN_VALUE"
+      isCorrect: false
+      explanation: "MIN_VALUE doesn't exist as a function in SQL Server 2022. The correct function to use is MIN, but it's an aggregate function and can't be used for multiple expressions."
+    - content: "LEAST"
+      isCorrect: true
+      explanation: "LEAST selects the smallest value among multiple expressions."
+    - content: "FIRST_VALUE"
+      isCorrect: false
+      explanation: "FIRST_VALUE selects the first value in an ordered set of values."
+  - content: "What is the purpose of the optional ordinal parameter in the STRING_SPLIT function in SQL Server 2022?"
+    choices:
+    - content: "It specifies the delimiter to use when splitting the string."
+      isCorrect: false
+      explanation: "The delimiter is specified as the second parameter of the STRING_SPLIT function. The optional ordinal parameter is used to enable or disable the creation of a 1-based index value of each substring's position in the input string."
+    - content: "It enables the creation of a 1-based index value of each substring's position in the input string."
+      isCorrect: true
+      explanation: "The optional ordinal parameter in the STRING_SPLIT function allows you to create a 1-based index value of each substring's position in the input string when set to 1 or enabled."
+    - content: "It controls the maximum number of substrings to return."
+      isCorrect: false
+      explanation: "The optional ordinal parameter isn't used for controlling the maximum number of substrings to return. It's used to enable or disable the creation of a 1-based index value of each substring's position in the input string."

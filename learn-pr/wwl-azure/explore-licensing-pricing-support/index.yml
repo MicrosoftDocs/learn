@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-machines
 title: Explore licensing, pricing, and support for SAP on Azure virtual machines
 summary: This module explores Azure and SAP licensing requirements and licensing costs, and walks through the support request process for Azure virtual machines.
 abstract: |

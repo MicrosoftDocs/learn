@@ -19,7 +19,7 @@ Azure Site Recovery supports many configurations and complements various Azure s
 
 ### Things to consider when using Site Recovery
 
-There are many benefits to implementing Azure Site Recovery. As you review the following features, consider how the service can support your buniess requirements.
+There are many benefits to implementing Azure Site Recovery. As you review the following features, consider how the service can support your business requirements.
 
 | Feature | Description |
 | --- | --- |

@@ -4,11 +4,10 @@ title: Examine Azure AD join prerequisites limitations and benefits
 metadata:
   title: Examine Azure AD join prerequisites limitations and benefits
   description: "This unit covers Azure AD pre-requisites limitations and benefits when joining devices."
-  ms.date: 03/13/2023
+  ms.date: 08/21/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/3-examine-azure-active-directory-join-prerequisites-limitations-benefits.md)]

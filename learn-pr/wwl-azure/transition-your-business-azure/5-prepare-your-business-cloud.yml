@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transition-your-business-azure.prepare-your-business-cloud
+title: Prepare your business for the cloud
+metadata:
+  title: Prepare your business for the cloud
+  description: "Prepare your business for the cloud"
+  ms.date: 07/18/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-prepare-your-business-cloud.md)]
+interactive: bash

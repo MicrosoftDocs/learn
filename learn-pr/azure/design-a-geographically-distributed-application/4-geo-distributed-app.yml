@@ -4,8 +4,8 @@ metadata:
   title: Design a geographically distributed application architecture
   description: In this unit, you learn how to ensure that web requests sent to a secondary region during an outage are satisfied by application services in that region.
   ms.date: 11/07/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design a geographically distributed application architecture

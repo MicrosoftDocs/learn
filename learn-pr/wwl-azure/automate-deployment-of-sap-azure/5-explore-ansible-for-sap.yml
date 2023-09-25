@@ -4,11 +4,10 @@ title: Explore Ansible for SAP on Azure
 metadata:
   title: Explore Ansible for SAP on Azure
   description: "Explore Ansible for SAP on Azure"
-  ms.date: 03/13/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 9
 content: |
   [!include[](includes/5-explore-ansible-for-sap.md)]

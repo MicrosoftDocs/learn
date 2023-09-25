@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement A/B testing and progressive exposure deployment
 summary: This module introduces A/B test and progressive exposure deployment concepts and explores CI/CD with deployment rings -- ring-based deployment.
 abstract: |

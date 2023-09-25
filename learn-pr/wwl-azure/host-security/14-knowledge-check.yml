@@ -4,12 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/17/2023
+  ms.date: 05/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 8
 content: |
   [!include[](includes/14-knowledge-check.md)]
@@ -60,7 +59,7 @@ quiz:
     - content: "System updates should be installed on your machines."
       isCorrect: false
       explanation: "System updates are a high-severity warning."
-  - content: "Which attacks will using a Privileged access workstations protects companies from?"
+  - content: "Which attacks will using a Privileged access workstations protect companies from?"
     choices:
     - content: "Protects against attackers who have gained administrative access."
       isCorrect: false

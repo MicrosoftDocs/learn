@@ -32,7 +32,7 @@ Let’s start by creating an Azure Function App in the portal.
     | **Plan** |
     | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload. |
 
-1. Select **Next : Hosting**, and enter the following values for each setting.
+1. Select **Next : Storage**, and enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|

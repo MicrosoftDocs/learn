@@ -4,13 +4,11 @@ title: Analyze Azure role permissions
 metadata:
   title: Analyze Azure role permissions
   description: "Analyze Azure role permissions"
-  ms.date: 03/24/2023
+  ms.date: 07/05/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: active-directory
 durationInMinutes: 3
 content: |
   [!include[](includes/6-analyze-azure-role-permissions.md)]

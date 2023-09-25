@@ -4,11 +4,11 @@ title: Create health probes
 metadata:
   title: Create health probes
   description: "Create health probes"
-  ms.date: 03/27/2023
+  ms.date: 06/05/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: load-balancer
 durationInMinutes: 2
 content: |
   [!include[](includes/7-create-health-probes.md)]

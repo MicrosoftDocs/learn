@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.responsible-generative-ai
+metadata:
+  title: Responsible Generative AI
+  description: "A practical approach to implementing generative AI responsibly."
+  ms.date: 7/13/2023
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: cognitive-services
+  ms.subservice: openai
+title: Responsible Generative AI
+summary: "Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe an overall process for responsible generative AI solution development
+    - Identify and prioritize potential harms relevant to a generative AI solution
+    - Measure the presence of harms in a generative AI solution
+    - Mitigate harms in a generative AI solution
+    - Prepare to deploy and operate a generative AI solution responsibly
+prerequisites: |
+  Before starting this module, you should be familiar with the Azure OpenAI service. Consider completing the [Introduction to Azure OpenAI Service](/training/modules/explore-azure-openai/) module before starting this one.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
+  - cloud-computing
+  - data-ai
+units:
+- learn.wwl.responsible-generative-ai.introduction
+- learn.wwl.responsible-generative-ai.plan-responsible-ai
+- learn.wwl.responsible-generative-ai.identify-harms
+- learn.wwl.responsible-generative-ai.measure-harms
+- learn.wwl.responsible-generative-ai.mitigate-harms
+- learn.wwl.responsible-generative-ai.operate-responsibly
+- learn.wwl.responsible-generative-ai.exercise-content-filters
+- learn.wwl.responsible-generative-ai.knowledge-check
+- learn.wwl.responsible-generative-ai.summary
+badge:
+  uid: learn.wwl.responsible-generative-ai.badge

@@ -3,13 +3,12 @@ uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory
 metadata:
   title: Execute existing SSIS packages in Azure Data Factory
   description: "Execute existing SSIS packages in Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 09/27/2022
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Execute existing SSIS packages in Azure Data Factory or Azure Synapse Pipeline
-summary: In this module, you will see how you can integrate SQL Server Integration Services packages into an Azure Data Factory solution
+summary: In this module, you'll see how you can integrate SQL Server Integration Services packages into an Azure Data Factory solution
 abstract: |
   * Introduction
   * Describe SQL Server Integration Services
@@ -21,9 +20,9 @@ abstract: |
   * Summary
 prerequisites: |
   The student should be able to:
-  - Log into the Azure portal
+  - Log in to the Azure portal
   - Explain and create resource groups
-  - Describe Azure Data Factory and it's core components
+  - Describe Azure Data Factory and its core components
   - Ingest data into Azure Data Factory using the Copy Activity
 iconUrl: /training/achievements/execute-existing-ssis-packages-azure-data-factory.svg
 levels:

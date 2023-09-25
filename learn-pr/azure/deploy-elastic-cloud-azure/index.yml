@@ -8,7 +8,6 @@ metadata:
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Deploy Elastic Cloud on Azure
 summary: In this module, we'll demonstrate how to deploy Elastic Cloud on Azure and walk through how to load sample data for exploration.
 abstract: |

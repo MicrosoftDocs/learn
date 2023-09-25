@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-video.understand-video-indexer-capabilities
-title: Understand Video Analyzer for Media capabilities
+title: Understand Azure Video Indexer capabilities
 metadata:
-  title: Understand Video Analyzer for Media capabilities
-  description: "Understand Video Analyzer for Media capabilities"
+  title: Understand Azure Video Indexer capabilities
+  description: "Understand Azure Video Indexer capabilities"
   ms.date: 07/14/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

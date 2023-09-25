@@ -7,9 +7,9 @@ metadata:
   author: videlalvaro
   ms.author: alvidela
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: alvidela-11122021
+  ms.service: azure-blob-storage
 title: Upload images to Azure Blob Storage from a static web app
 summary: Learn how to securely upload images to Azure Blob Storage from a static web app by using an Azure Function to generate on-demand shared access signatures.
 abstract: |

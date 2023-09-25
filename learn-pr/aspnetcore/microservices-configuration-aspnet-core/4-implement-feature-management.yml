@@ -5,9 +5,12 @@ metadata:
   description: Implement the .NET Feature Management library in a microservices app.
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.date: 11/23/2020
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
 title: Exercise - Implement the Feature Management library
 durationInMinutes: 12
 content: |

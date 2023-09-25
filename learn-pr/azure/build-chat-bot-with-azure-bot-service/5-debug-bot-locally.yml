@@ -8,6 +8,8 @@ metadata:
   author: jasallen
   ms.author: jasdeb
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure
 #labId: 46466
 durationInMinutes: 20

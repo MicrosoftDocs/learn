@@ -4,11 +4,12 @@ title: Assess physical servers with Azure Migrate
 metadata:
   title: Assess physical servers with Azure Migrate
   description: "Assess physical servers with Azure Migrate"
-  ms.date: 09/24/2020
+  ms.date: 08/15/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.contributors: orthomas-08152023
 azureSandbox: false
 durationInMinutes: 6
 content: |

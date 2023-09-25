@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-warehouse.understand-data-warehouse-fabric
+title: Understand data warehouses in Fabric
+metadata:
+  title: Understand data warehouses in Fabric
+  description: "Understand data warehouses in Fabric"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-understand-data-warehouse-fabric.md)]

@@ -3,11 +3,10 @@ uid: learn.wwl.explore-enterprise-desktop
 metadata:
   title: MD-102 Explore the Enterprise Desktop
   description: "This module covers modern endpoint management and enterprise desktop lifecycle concepts."
-  ms.date: 03/10/2023
+  ms.date: 08/28/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore the Enterprise Desktop
 summary: This module covers modern endpoint management and enterprise desktop lifecycle concepts. It teaches the stages of the lifecycle (planning, deployment, maintenance) and provides a foundation for future learning.
 abstract: |
@@ -20,7 +19,7 @@ prerequisites: |
   - Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later.
   - Strong understanding of computer networking, client security, and application concepts.
   - Experience using Active Directory Domain Services.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/enterprise-examine-desktop.svg
 levels:
 - intermediate
 roles:

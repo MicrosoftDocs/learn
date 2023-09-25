@@ -5,6 +5,7 @@ metadata:
   description: Add real-time monitoring of AKS infrastructure with Azure Monitor for Containers.
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.date: 10/14/2020
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial

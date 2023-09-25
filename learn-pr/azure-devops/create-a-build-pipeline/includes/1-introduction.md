@@ -37,7 +37,7 @@ After completing this module, you'll be able to:
 - Publish your builds so others can access them.
 - Use templates to build multiple configurations.
 
-## Prerequisites
+## Configure your environment
 
 The modules in this learning path and previous learning path form a progression.
 
@@ -48,7 +48,6 @@ To follow the progression from the beginning, be sure to first complete the [Get
 To complete this training module using a self-hosted agent with GitHub Codespaces you must have:
 
 - An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin. If you have completed the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path prerequisite, use that Azure DevOps organization.
-- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 - A [GitHub](https://github.com/join?azure-portal=true) account
 
 ::: zone-end

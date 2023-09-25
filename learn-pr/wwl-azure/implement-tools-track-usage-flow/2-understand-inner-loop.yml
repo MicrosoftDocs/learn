@@ -4,13 +4,11 @@ title: Understand the inner loop
 metadata:
   title: Understand the inner loop
   description: "Understand the inner loop"
-  ms.date: 01/16/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 6
+  ms.prod: azure
+durationInMinutes: 1
 content: |
   [!include[](includes/2-understand-inner-loop.md)]

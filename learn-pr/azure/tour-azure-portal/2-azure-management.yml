@@ -8,7 +8,10 @@ metadata:
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 7
+  ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
+durationInMinutes: 5
 content: |
   [!include[](includes/2-azure-management.md)]

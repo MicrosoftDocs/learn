@@ -3,11 +3,11 @@ uid: learn.wwl.describe-compliance-management-capabilities-microsoft-365
 metadata:
   title: Describe the compliance management capabilities in Microsoft Purview
   description: "Describe the compliance management capabilities in Microsoft Purview"
-  ms.date: 02/09/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: purview
 title: Describe the compliance management capabilities in Microsoft Purview
 summary: Explore the Microsoft Purview compliance portal, the portal for organizations to manage their compliance needs.  Learn about the Compliance Manager and compliance score, which can help organizations manage, simplify, and improve compliance across their organization.
 abstract: |
