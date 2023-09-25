@@ -27422,6 +27422,11 @@
       "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-server-client-endpoints/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-securing-server-client-endpoints",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-server-client-endpoints/10-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-securing-server-client-endpoints",
+      "redirect_document_id": false
     }
   ]
 }
