@@ -27502,6 +27502,11 @@
       "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/10-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
     }
   ]
 }
