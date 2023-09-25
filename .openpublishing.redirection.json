@@ -27457,6 +27457,11 @@
       "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-server-client-endpoints/3-specify-security-requirements-for-servers.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-securing-server-client-endpoints",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-server-client-endpoints/11-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-securing-server-client-endpoints",
+      "redirect_document_id": false
     }
   ]
 }
