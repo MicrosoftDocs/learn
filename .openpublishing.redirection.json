@@ -27817,6 +27817,11 @@
       "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/5-standard-for-onboarding-new-application.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
+      "redirect_document_id": false
     }
   ]
 }
