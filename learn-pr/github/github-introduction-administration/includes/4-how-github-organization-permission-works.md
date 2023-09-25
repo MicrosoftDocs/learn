@@ -17,10 +17,10 @@ You can customize access to a given repository by assigning permissions. There a
 
 You can give organization members, outside collaborators, and teams different levels of access to repositories owned by an organization. Each permission level progressively increases access to a repository's content and settings. Choose the level that best fits each person or team's role in your project without giving more access to the project than necessary.
 
-Once you have created a repository with the correct permissions, you can make it a template so that anyone with access to the repository can generate a new repository with the same directory structure and files as your default branch. To make a template:
+After you create a repository with the correct permissions, you can make it a template so that anyone who has access to the repository can generate a new repository that has the same directory structure and files as your default branch. To make a template:
 
-1. On GitHub.com, navigate to the main page of the repository.
-1. Under the repository name, select **Settings**. If you can't the see the **Settings** tab, select the dropdown menu, then select **Settings**.
+1. On GitHub.com, go to the main page of the repository.
+1. Under the repository name, select **Settings**. If you can't the see the **Settings** tab, open the dropdown menu and then select **Settings**.
 
     :::image type="content" source="../media/repo-actions-settings.png" alt-text="Screenshot showing where to locate the settings button in your GitHub repository.":::
 
@@ -49,12 +49,12 @@ There are multiple levels of permissions at the organizational level:
 
 | **Permission level**  | **Description**                                                                                                                 |
 |:----------------------|:--------------------------------------------------------------------------------------------------------------------------------|
-| Owner                 | Organization owners can do everything organization members can, and can add or remove other users to and from the organization. This role should be limited, but to no less than two people, in your organization.  |
+| Owner                 | Organization owners can do everything that organization members can do, and they can add or remove other users to and from the organization. This role should be limited to no less than two people in your organization.  |
 | Member                | Organization members can create and manage organization repositories and teams.                                                 |
-| Moderator       | Organization moderators can block and unblock non-member contributors, set interaction limits, and hide comments in public repositories owned by the organization.                                                |
+| Moderator       | Organization moderators can block and unblock nonmember contributors, set interaction limits, and hide comments in public repositories that the organization owns.                                                |
 | Billing manager       | Organization billing managers can view and edit billing information.                                                        |
-| Security managers       | Organization security managers can manage security alerts and settings across your organization, as well as read permissions for all repositories in the organization.                                        |
-| Outside collaborator      | Outside collaborators have access to one or more organization repositories but aren't explicit members of the organization, such as a consultant or temporary employee.                                                |
+| Security managers       | Organization security managers can manage security alerts and settings across your organization. They can also read permissions for all repositories in the organization.                                        |
+| Outside collaborator      | Outside collaborators, such as a consultant or temporary employee, can access one or more organization repositories. They aren't explicit members of the organization.                                                |
 
 In addition to these levels, you can also set default permissions for all members of your organization:
 
@@ -82,7 +82,7 @@ For improved management and security, you can give default read permissions to a
 
 ## Repository security and management
 
-There are several ways you can oversee the security and management of your repositories.
+You can oversee the security and management of your repositories in several ways.
 
 ### Create protection rules
 
@@ -95,30 +95,30 @@ To manage changes to content within your repository, you can create [branch prot
 - Require linear history
 - Require merge queue
 - Require deployments to succeed before merging
-- Optionally, you can lock the branch by making it read-only
+- Lock the branch by making it read-only
 - Restrict who can push to matching branches
 
-Additionally, you can set branch rules that apply to everyone, including administrators, such as allowing force pushes to matching branches and allowing deletions from users with push access.
+Additionally, you can set branch rules that apply to everyone, including administrators. For example, you can allow force pushes to matching branches and allow deletions from users who have push access.
 
 ### Add a CODEOWNERS file
 
-By adding a [CODEOWNERS](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners#codeowners-syntax) file to your repository, you can assign individual team members or entire teams as code owners who are responsible for code in the repository. Code owners are automatically requested for review when someone opens a pull request that modifies code that they own.
+By adding a [CODEOWNERS](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners#codeowners-syntax) file to your repository, you can assign team members or entire teams as code owners who are responsible for code in the repository. When someone opens a pull request that modifies code that belongs to a code owner, the code owner is automatically requested as a reviewer.
 
-You can create the CODEOWNERS file in either the root of the repository, or in the `docs` or `.github` folder.
+You can create the CODEOWNERS file in either the root of the repository or in the `docs` or `.github` folder.
 
-### View traffic with Insights
+### View traffic by using Insights
 
-Anyone with push access to a repository can view its traffic, including full clones (not fetches), visitors from the past 14 days, referring sites, and popular content in the traffic graph.
+Anyone who has push access to a repository can view its traffic. In the traffic graph, they can view full clones (not fetches), visitors from the past 14 days, referring sites, and popular content.
 
 To access the traffic graph:
 
-1. On GitHub.com, navigate to the main page of the repository.
-1. Under your repository name, select **insights**.
+1. On GitHub.com, go to the main page of the repository.
+1. Under your repository name, select **Insights**.
 
-    :::image type="content" source="../media/repo-nav-insights-tab.png" alt-text="Screenshot showing where to locate the insights button in GitHub.":::
+    :::image type="content" source="../media/repo-nav-insights-tab.png" alt-text="Screenshot showing where to locate the Insights button in GitHub.":::
 
-1. In the left sidebar, select **traffic**.
+1. On the left, select **Traffic**.
 
-    :::image type="content" source="../media/traffic-tab.png" alt-text="Screenshot showing the traffic tab highlighted in GitHub.":::
+    :::image type="content" source="../media/traffic-tab.png" alt-text="Screenshot showing the Traffic tab highlighted in GitHub.":::
 
-1. Optionally, you can select **clones** or **views** to view the traffic graph for clones or views.
+1. Optionally, you can select **Clones** or **Views** to see the traffic graph for clones or views.
