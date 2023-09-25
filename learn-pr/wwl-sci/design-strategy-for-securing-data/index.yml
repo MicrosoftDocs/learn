@@ -28,6 +28,5 @@ subjects:
 - architecture
 - security
 units:
-- learn.wwl.design-strategy-for-securing-data.to-identify-protect-sensitive-data
 badge:
   uid: learn.wwl.design-strategy-for-securing-data.badge
