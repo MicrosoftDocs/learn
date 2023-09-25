@@ -27662,6 +27662,11 @@
       "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/6-design-for-data-residency-requirements.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
     }
   ]
 }
