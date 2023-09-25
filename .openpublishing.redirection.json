@@ -27597,6 +27597,11 @@
       "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/10-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/2-postures-use-benchmarks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
     }
   ]
 }
