@@ -27387,6 +27387,11 @@
       "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-paas-iaas-saas-services/5-specify-security-requirements-for-iot-workloads.md",
       "redirect_url": "https://learn.microsoft.com/en-us/training/modules/specify-requirements-securing-saas-paas-iaas-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-paas-iaas-saas-services/8-specify-security-requirements-for-storage-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/modules/specify-requirements-securing-saas-paas-iaas-services/",
+      "redirect_document_id": false
     }
   ]
 }
