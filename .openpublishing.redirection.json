@@ -27407,6 +27407,11 @@
       "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-server-client-endpoints/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-securing-server-client-endpoints",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-server-client-endpoints/6-design-strategy-manage-secrets-keys-certificates.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-securing-server-client-endpoints",
+      "redirect_document_id": false
     }
   ]
 }
