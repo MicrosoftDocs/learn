@@ -1,7 +1,7 @@
 Copilot Chat allows you to interact with Copilot using natural language. In this exercise, you'll use Copilot Chat to debug and improve code in the Trie project. Let's get started!
 
 > [!IMPORTANT]
-> This module requires the Github Copilot Chat extension, which is currently in limited public beta.
+> This module requires the Github Copilot Chat extension, which is currently in public beta and subject to changes.
 
 ## Use Copilot Chat to debug code
 
