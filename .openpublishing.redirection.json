@@ -27807,6 +27807,11 @@
       "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/3-specify-priorities-for-mitigate-threats-to-applications.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/2-specify-security-strategy-apis.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
+      "redirect_document_id": false
     }
   ]
 }
