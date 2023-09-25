@@ -27582,6 +27582,11 @@
       "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/4-hygiene-of-cloud-workloads.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/6-interpret-technical-threat-intelligence-recommend-risk-mitigations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
     }
   ]
 }
