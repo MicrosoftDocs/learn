@@ -27462,6 +27462,201 @@
       "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-server-client-endpoints/11-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-securing-server-client-endpoints",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/7-design-for-hybrid-multi-tenant-environments.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/6-design-security-for-resiliency-strategy.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/8-design-technical-governance-strategies-for-traffic-filtering-segmentation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/3-develop-integration-points-architecture.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/4-develop-security-requirements-based-business-goals.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/9-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/10-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/11-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/5-translate-security-requirements-into-technical-capabilities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/2-zero-trust-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/5-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/2-prioritize-mitigating-threats-to-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/4-specify-encryption-standard-for-data-at-rest-motion.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/3-to-identify-protect-sensitive-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/5-design-security-for-azure-landing-zone.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/9-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/4-hygiene-of-cloud-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/6-interpret-technical-threat-intelligence-recommend-risk-mitigations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/10-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/2-postures-use-benchmarks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/3-postures-use-microsoft-defender-for-cloud.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/7-postures-use-secure-scores.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/8-recommend-security-capabilities-controls-to-mitigate-identified-risks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-security-posture-recommend-technical-strategies-to-manage-risk/11-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/understand-architecture-best-practices-how-change-cloud/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/understand-architecture-best-practices-how-change-cloud/3-establish-process-security-evolution.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/understand-architecture-best-practices-how-change-cloud/4-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/understand-architecture-best-practices-how-change-cloud/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/understand-architecture-best-practices-how-change-cloud/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/understand-architecture-best-practices-how-change-cloud/2-plan-implement-security-strategy-across-teams.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/understand-architecture-best-practices-how-change-cloud/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
     }
   ]
 }

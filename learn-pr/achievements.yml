@@ -2242,3 +2242,23 @@ achievements:
   title: Design a strategy for securing server and client endpoints
   summary: Learn how to design a cybersecurity strategy to secure server and client endpoints.
   iconUrl: /training/achievements/2-design-a-strategy-for-securing-server-and-client-endpoints.svg
+- uid: learn.wwl.build-overall-security-strategy-architecture.badge
+  type: badge
+  title: Build an overall security strategy and architecture
+  summary: Learn how to build an overall security strategy and architecture with zero trust in mind.
+  iconUrl: /training/achievements/build-overall-security-strategy-architecture.svg
+- uid: learn.wwl.design-strategy-for-securing-data.badge
+  type: badge
+  title: Design a strategy for securing data
+  summary: Learn how to design a cybersecurity strategy to secure data.
+  iconUrl: /training/achievements/2-design-a-strategy-for-securing-data.svg
+- uid: learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.badge
+  type: badge
+  title: Evaluate security posture and recommend technical strategies to manage risk
+  summary: Learn how to evaluate an organization's security posture and recommend technical strategies to manage risk.
+  iconUrl: /training/achievements/evaluate-security-posture-recommend-technical-strategies-manage-risk.svg
+- uid: learn.wwl.understand-architecture-best-practices-how-they-are-changing-cloud.badge
+  type: badge
+  title: Understand architecture best practices and how they are changing with the Cloud
+  summary: Learn best practices for cybersecurity architecture and how they have been affected by cloud computing.
+  iconUrl: /training/achievements/1-understand-architecture-best-practices-how-change-cloud.svg
