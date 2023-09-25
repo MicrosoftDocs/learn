@@ -27732,6 +27732,11 @@
       "source_path": "learn-pr/wwl-sci/recommend-ransomware-strategy-by-using-microsoft-security-best-practices/2-plan-for-ransomware-protection-extortion-based-attacks.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-resiliency-strategy-common-cyberthreats-like-ransomware",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-ransomware-strategy-by-using-microsoft-security-best-practices/3-protect-assets-from-ransomware-attacks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-resiliency-strategy-common-cyberthreats-like-ransomware",
+      "redirect_document_id": false
     }
   ]
 }
