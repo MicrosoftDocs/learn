@@ -27372,6 +27372,11 @@
       "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-paas-iaas-saas-services/10-specify-security-requirements-for-container-orchestration.md",
       "redirect_url": "https://learn.microsoft.com/en-us/training/modules/specify-requirements-securing-saas-paas-iaas-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-paas-iaas-saas-services/9-specify-security-requirements-for-containers.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/modules/specify-requirements-securing-saas-paas-iaas-services/",
+      "redirect_document_id": false
     }
   ]
 }
