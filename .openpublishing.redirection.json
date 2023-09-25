@@ -27337,6 +27337,11 @@
       "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-paas-iaas-saas-services/index.md",
       "redirect_url": "https://learn.microsoft.com/en-us/training/modules/specify-requirements-securing-saas-paas-iaas-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-paas-iaas-saas-services/11-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/modules/specify-requirements-securing-saas-paas-iaas-services/",
+      "redirect_document_id": false
     }
   ]
 }
