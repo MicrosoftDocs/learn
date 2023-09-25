@@ -2222,3 +2222,23 @@ achievements:
   title: Monitor models with Azure Machine Learning
   summary: After a machine learning model has been deployed into production, it's important to understand how it is being used by capturing and viewing telemetry.
   iconUrl: /training/achievements/monitor-models-with-azure-machine-learning.svg
+- uid: learn.wwl.design-identity-security-strategy.badge
+  type: badge
+  title: Design an identity security strategy
+  summary: Learn how to design a cybersecurity strategy for identity management.
+  iconUrl: /training/achievements/3-design-an-identity-security-strategy.svg
+- uid: learn.wwl.design-security-operations-strategy.badge
+  type: badge
+  title: Design a security operations strategy
+  summary: Learn how to design a cybersecurity strategy for security operations (SecOps).
+  iconUrl: /training/achievements/design-security-operations-strategy.svg
+- uid: learn.wwl.design-strategy-for-securing-paas-iaas-saas-services.badge
+  type: badge
+  title: Design a strategy for securing PaaS, IaaS, and SaaS services
+  summary: Learn how to design a cybersecurity strategy which will secure cloud services in the SaaS, PaaS and IaaS service models.
+  iconUrl: /training/achievements/3-design-a-strategy-for-securing-paas-iaas-and-saas-services.svg
+- uid: learn.wwl.design-strategy-for-securing-server-client-endpoints.badge
+  type: badge
+  title: Design a strategy for securing server and client endpoints
+  summary: Learn how to design a cybersecurity strategy to secure server and client endpoints.
+  iconUrl: /training/achievements/2-design-a-strategy-for-securing-server-and-client-endpoints.svg
