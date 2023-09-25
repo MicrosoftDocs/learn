@@ -108,7 +108,7 @@ You can create the CODEOWNERS file in either the root of the repository or in th
 
 ### View traffic by using Insights
 
-Anyone who has push access to a repository can view its traffic. In the traffic graph, they can view full clones (not fetches), visitors from the past 14 days, referring sites, and popular content.
+Anyone who has push access to a repository can [view its traffic](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-traffic-to-a-repository). In the traffic graph, they can view full clones (not fetches), visitors from the past 14 days, referring sites, and popular content.
 
 To access the traffic graph:
 
