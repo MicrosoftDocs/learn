@@ -31,7 +31,6 @@ subjects:
 units:
 - learn.wwl.specify-security-requirements-for-applications.understand-application-threat-modeling
 - learn.wwl.specify-security-requirements-for-applications.standard-for-onboarding-new-application
-- learn.wwl.specify-security-requirements-for-applications.specify-security-strategy-apis
 - learn.wwl.specify-security-requirements-for-applications.summary
 badge:
   uid: learn.wwl.specify-security-requirements-for-applications.badge
