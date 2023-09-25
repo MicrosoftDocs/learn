@@ -27472,6 +27472,11 @@
       "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/7-design-for-hybrid-multi-tenant-environments.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/6-design-security-for-resiliency-strategy.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
     }
   ]
 }
