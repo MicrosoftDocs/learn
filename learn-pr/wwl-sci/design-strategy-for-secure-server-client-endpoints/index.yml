@@ -34,7 +34,6 @@ subjects:
 - architecture
 - security
 units:
-- learn.wwl.design-strategy-for-secure-server-client-endpoints.introduction
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.specify-security-baselines-for-server-client-endpoints
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.specify-security-requirements-for-servers
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.specify-security-requirements-for-mobile-devices-clients
