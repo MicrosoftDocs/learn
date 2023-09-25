@@ -27657,6 +27657,216 @@
       "source_path": "learn-pr/wwl-sci/understand-architecture-best-practices-how-change-cloud/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/6-design-for-data-residency-requirements.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/5-design-validate-implementation-of-azure-policy.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/3-evaluate-infrastructure-compliance-use-microsoft-defender-for-cloud.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/8-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/2-interpret-compliance-requirements-their-technical-capabilities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/4-interpret-compliance-scores-recommend-actions.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/7-translate-privacy-requirements-into-requirements-for-security-solutions.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-ransomware-strategy-by-using-microsoft-security-best-practices/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-resiliency-strategy-common-cyberthreats-like-ransomware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-ransomware-strategy-by-using-microsoft-security-best-practices/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-resiliency-strategy-common-cyberthreats-like-ransomware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-ransomware-strategy-by-using-microsoft-security-best-practices/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-resiliency-strategy-common-cyberthreats-like-ransomware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-ransomware-strategy-by-using-microsoft-security-best-practices/2-plan-for-ransomware-protection-extortion-based-attacks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-resiliency-strategy-common-cyberthreats-like-ransomware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-ransomware-strategy-by-using-microsoft-security-best-practices/3-protect-assets-from-ransomware-attacks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-resiliency-strategy-common-cyberthreats-like-ransomware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-ransomware-strategy-by-using-microsoft-security-best-practices/4-recommend-microsoft-ransomware.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-resiliency-strategy-common-cyberthreats-like-ransomware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-ransomware-strategy-by-using-microsoft-security-best-practices/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-resiliency-strategy-common-cyberthreats-like-ransomware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-secure-methodology-using-cloud-adoption-framework-caf/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-secure-methodology-using-cloud-adoption-framework-caf/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-secure-methodology-using-cloud-adoption-framework-caf/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-secure-methodology-using-cloud-adoption-framework-caf/2-recommend-devsecops-process.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-secure-methodology-using-cloud-adoption-framework-caf/3-recommend-methodology-for-asset-protection.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-secure-methodology-using-cloud-adoption-framework-caf/4-recommend-strategies-for-managing-minimizing-risk.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-secure-methodology-using-cloud-adoption-framework-caf/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/6-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/3-specify-priorities-for-mitigate-threats-to-applications.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/2-specify-security-strategy-apis.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/5-standard-for-onboarding-new-application.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/4-understand-application-threat-modeling.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/2-recommend-for-cybersecurity-capabilities-controls.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/3-recommend-for-protecting-from-insider-external-attacks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/5-recommend-for-zero-trust-rapid-modernization-plan.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/4-recommend-for-zero-trust-security.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
+      "redirect_document_id": false
     }
   ]
 }
