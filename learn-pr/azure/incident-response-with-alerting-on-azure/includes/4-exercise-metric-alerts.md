@@ -45,13 +45,13 @@ You can use either the Azure portal or the CLI to create a metric alert. In this
 1. Open the **+ Create** menu, and select **Alert rule**
 1. On the **Select a resource pane**, set the scope for your alert rule. You can filter by subscription, resource type, or resource location.
 1. In the **Resource type** drop-down,start to type "virtual machines", and select **Virtual machines**.
-1. Select **vm1**, then select **Apply** at the bottom of the pane.
+1. Check the box next to **vm1**, then select **Apply** at the bottom of the pane.
 
     :::image type="content" source="../media/4-select-resource-scope.png" alt-text="Screenshot that shows the 'Select a resource' pane, with `vm1` selected.":::
 
 1. Select **Next:Condition** at the bottom of the page.
 1. In the **Signal name** drop-down, select **Percentage CPU**.
-1. **In the Alert logic section**, enter (or confirm) the following values for each setting.
+1. In the **Alert logic** section, enter (or confirm) the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
@@ -74,7 +74,7 @@ You can use either the Azure portal or the CLI to create a metric alert. In this
     | Alert rule name | Cpu90PercentAlert |
     | Description | Virtual machine is running at or greater than 90% CPU utilization |
 
-1. Open the **Advanced options** section, and confirm the following values for each setting.
+1. Expand the **Advanced options** section and confirm the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
@@ -89,7 +89,7 @@ You've successfully created a metric alert rule that will trigger an alert when 
 
 ## Create the metric alert through the CLI
 
-You can set up metric alerts by using the CLI. This process can be quicker than using the portal, especially if you're planning to set up more than one alert.
+You can also set up metric alerts by using the CLI. This process can be quicker than using the portal, especially if you're planning to set up more than one alert.
 
 Let's create a new metric alert similar to the one you set up in the Azure portal.
 
@@ -122,7 +122,7 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
 In this exercise, you set up an Ubuntu VM and configured it to stress test the CPU. You also created a metric rule to detect when the maximum CPU percentage exceeds 80 percent and 90 percent.
 
 > [!NOTE]
-> It might take 10 minutes before you see the alerts show up in your portal.
+> It might take 10 minutes before you see the alerts show up in the Azure portal.
 
 1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
@@ -134,4 +134,4 @@ In this exercise, you set up an Ubuntu VM and configured it to stress test the C
 
 1. You configured your metric alerts with severities of 2 and 3. Select one of the alerts to view the severity level.
 
-   Select one of the alerts to show the details of the alert.
+1. Select one of the alerts to show the alert details.

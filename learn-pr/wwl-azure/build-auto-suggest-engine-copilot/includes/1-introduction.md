@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> This module requires the GitHub Copilot extension which requires a subscription, as well as GitHub Copilot Chat, which is currently in limited public beta.
+> This module requires the GitHub Copilot extension which requires a subscription, as well as GitHub Copilot Chat, which is currently in public beta and subject to changes.
 
 The Trie data structure is a tree-based data structure used for storing and searching a large collection of strings. It's useful for tasks that involve prefix matching and autocompletion. The name "Trie" comes from the word "retrieval," as it efficiently retrieves words that share a common prefix.
 
