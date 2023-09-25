@@ -28,7 +28,6 @@ subjects:
 - architecture
 - security
 units:
-- learn.wwl.design-strategy-for-securing-data.introduction
 - learn.wwl.design-strategy-for-securing-data.prioritize-mitigating-threats-to-data
 - learn.wwl.design-strategy-for-securing-data.to-identify-protect-sensitive-data
 - learn.wwl.design-strategy-for-securing-data.specify-encryption-standard-for-data-at-rest-motion
