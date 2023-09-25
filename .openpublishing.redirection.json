@@ -27247,6 +27247,11 @@
       "source_path": "learn-pr/wwl-sci/design-identity-security-strategy/3-recommend-identity-store-for-security.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-identity-access-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-identity-security-strategy/4-recommend-secure-authentication-security-authorization-strategies.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-identity-access-management",
+      "redirect_document_id": false
     }
   ]
 }
