@@ -2227,3 +2227,8 @@ achievements:
   title: Design an identity security strategy
   summary: Learn how to design a cybersecurity strategy for identity management.
   iconUrl: /training/achievements/3-design-an-identity-security-strategy.svg
+- uid: learn.wwl.design-security-operations-strategy.badge
+  type: badge
+  title: Design a security operations strategy
+  summary: Learn how to design a cybersecurity strategy for security operations (SecOps).
+  iconUrl: /training/achievements/design-security-operations-strategy.svg
