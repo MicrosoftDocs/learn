@@ -2262,3 +2262,28 @@ achievements:
   title: Understand architecture best practices and how they are changing with the Cloud
   summary: Learn best practices for cybersecurity architecture and how they have been affected by cloud computing.
   iconUrl: /training/achievements/1-understand-architecture-best-practices-how-change-cloud.svg
+- uid: learn.wwl.evaluate-regulatory-compliance-strategy.badge
+  type: badge
+  title: Evaluate a regulatory compliance strategy
+  summary: Learn how to evaluate a cybersecurity strategy for regulatory compliance.
+  iconUrl: /training/achievements/evaluate-a-regulatory-compliance-strategy.svg
+- uid: learn.wwl.recommend-ransomware-strategy-by-using-microsoft-security-best-practices.badge
+  type: badge
+  title: Recommend a ransomware strategy by using Microsoft Security Best Practices
+  summary: "You'll learn how to execute the three important phases of ransomware protection: create a recovery plan, limit the scope of damage, make it hard to get in."
+  iconUrl: /training/achievements/recommend-ransomware-strategy-use-microsoft-security-best-practices.svg
+- uid: learn.wwl.recommend-secure-methodology-using-cloud-adoption-framework-caf.badge
+  type: badge
+  title: Recommend a secure methodology using the Cloud Adoption Framework (CAF)
+  summary: You'll learn how to use the Cloud Adoption Framework to recommend security best practices that help an organization move to the cloud while improving overall security posture.
+  iconUrl: /training/achievements/recommend-secure-methodology-using-cloud-adoption-framework-caf.svg
+- uid: learn.wwl.specify-security-requirements-for-applications.badge
+  type: badge
+  title: Specify security requirements for applications
+  summary: Learn how to specify cybersecurity requirements for applications.
+  iconUrl: /training/achievements/1-specify-security-requirements-for-applications.svg
+- uid: learn.wwl.use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks.badge
+  type: badge
+  title: Recommend security best practices using Microsoft Cybersecurity Reference Architectures (MCRA) and Microsoft Cloud Security Benchmarks
+  summary: You'll learn how to use guidance in Microsoft Cybersecurity Reference Architectures and Microsoft Cloud Security Benchmarks to help an organization apply Zero Trust principles and secure their infrastructure.
+  iconUrl: /training/achievements/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks.svg
