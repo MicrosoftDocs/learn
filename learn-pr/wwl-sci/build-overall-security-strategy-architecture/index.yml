@@ -34,7 +34,6 @@ subjects:
 units:
 - learn.wwl.build-overall-security-strategy-architecture.zero-trust-overview
 - learn.wwl.build-overall-security-strategy-architecture.translate-security-requirements-into-technical-capabilities
-- learn.wwl.build-overall-security-strategy-architecture.knowledge-check
 - learn.wwl.build-overall-security-strategy-architecture.summary
 badge:
   uid: learn.wwl.build-overall-security-strategy-architecture.badge
