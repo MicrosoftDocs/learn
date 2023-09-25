@@ -53,5 +53,6 @@ modules:
 - learn.beginner-python.functions-python
 - learn.beginner-python.python-error-handling
 - learn.beginner-python.create-run-jupyter-notebook
+- learn.github-copilot-with-python
 trophy:
   uid: learn.beginner-python.trophy

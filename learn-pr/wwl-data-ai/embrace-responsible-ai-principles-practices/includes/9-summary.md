@@ -1,4 +1,3 @@
-
 Through this module, we discussed the importance of embracing AI in a responsible, ethical way. We walked through some of the steps Microsoft is taking to prioritize responsible AI in the hope that our experience can help others. However, we recognize that we don't have all the answers. Every individual, company, and region has their own beliefs and standards that should be reflected in their path towards responsible AI. We should also recognize that as organizations and as a society, our steps towards responsible AI need to continually evolve to reflect new innovations and lessons from both our mistakes and accomplishments. The processes, tools, and resources mentioned can be a starting point from which organizations can create their own AI strategy.
 
 Now that you have reviewed this module, you should be able to:
