@@ -27862,6 +27862,11 @@
       "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/4-recommend-for-zero-trust-security.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
+      "redirect_document_id": false
     }
   ]
 }
