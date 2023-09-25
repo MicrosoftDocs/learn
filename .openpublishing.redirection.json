@@ -27547,6 +27547,11 @@
       "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/2-prioritize-mitigating-threats-to-data.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/4-specify-encryption-standard-for-data-at-rest-motion.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
+      "redirect_document_id": false
     }
   ]
 }
