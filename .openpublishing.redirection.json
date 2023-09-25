@@ -27287,6 +27287,11 @@
       "source_path": "learn-pr/wwl-sci/design-security-operations-strategy/4-develop-for-hybrid-multi-cloud-environments.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-operations",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-security-operations-strategy/8-evaluate-for-technical-threat-intelligence.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-operations",
+      "redirect_document_id": false
     }
   ]
 }
