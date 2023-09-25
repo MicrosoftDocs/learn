@@ -35,7 +35,6 @@ subjects:
 - security
 units:
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-requirements-for-web-workloads
-- learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-requirements-for-storage-workloads
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.summary
 badge:
   uid: learn.wwl.design-strategy-for-securing-paas-iaas-saas-services.badge
