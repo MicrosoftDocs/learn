@@ -37,6 +37,5 @@ subjects:
 - architecture
 - security
 units:
-- learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.summary
 badge:
   uid: learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.badge
