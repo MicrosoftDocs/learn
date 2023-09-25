@@ -27852,6 +27852,11 @@
       "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/3-recommend-for-protecting-from-insider-external-attacks.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/5-recommend-for-zero-trust-rapid-modernization-plan.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
+      "redirect_document_id": false
     }
   ]
 }
