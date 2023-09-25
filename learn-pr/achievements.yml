@@ -2267,3 +2267,8 @@ achievements:
   title: Evaluate a regulatory compliance strategy
   summary: Learn how to evaluate a cybersecurity strategy for regulatory compliance.
   iconUrl: /training/achievements/evaluate-a-regulatory-compliance-strategy.svg
+- uid: learn.wwl.recommend-ransomware-strategy-by-using-microsoft-security-best-practices.badge
+  type: badge
+  title: Recommend a ransomware strategy by using Microsoft Security Best Practices
+  summary: "You'll learn how to execute the three important phases of ransomware protection: create a recovery plan, limit the scope of damage, make it hard to get in."
+  iconUrl: /training/achievements/recommend-ransomware-strategy-use-microsoft-security-best-practices.svg
