@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.student-introduction-github.summary
+metadata:
+  title: Summary
+  description: "Summary of the module."
+  ms.date: 9/7/2023
+  author: v-regandowner
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

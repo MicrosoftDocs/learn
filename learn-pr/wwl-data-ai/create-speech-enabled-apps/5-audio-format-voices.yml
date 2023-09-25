@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-speech-enabled-apps.audio-format-voices
+title: Configure audio format and voices
+metadata:
+  title: Configure audio format and voices
+  description: "Configure audio format and voices"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-speech
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-audio-format-voices.md)]
