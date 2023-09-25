@@ -4,13 +4,11 @@ title: Exercise - Call an API with a subscription key
 metadata:
   title: Exercise - Call an API with a subscription key
   description: Exercise - Call an API with a subscription key
-  ms.date: 05/02/2019
+  ms.date: 05/02/2023
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/7-exercise-call-an-api-with-a-subscription-key.md)]

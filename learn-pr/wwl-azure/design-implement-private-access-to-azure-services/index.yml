@@ -2,22 +2,21 @@
 uid: learn.wwl.design-implement-private-access-to-azure-services
 metadata:
   title: Design and implement private access to Azure Services
-  description: "Design and implement private access to Azure Services"
-  ms.date: 12/07/2022
+  description: "You'll learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints."
+  ms.date: 04/27/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Design and implement private access to Azure Services
-summary: You will learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.
+summary: You'll learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.
 abstract: |
-  At the end of this module, you will be able to:
-  - Explain virtual network service endpoints
-  - Define Private Link Service and private endpoints
-  - Integrate private endpoints with DNS
-  - Design and configure private endpoints
-  - Design and configure access to service endpoints
-  - Integrate your App Service with Azure virtual networks
+  At the end of this module, you'll be able to:
+  *   Explain virtual network service endpoints
+  *   Define Private Link Service and private endpoints
+  *   Integrate private endpoints with DNS
+  *   Design and configure private endpoints
+  *   Design and configure access to service endpoints
+  *   Integrate your App Service with Azure virtual networks
 prerequisites: |
   - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
   - You should have experience with network connectivity methods, such as VPN or WAN

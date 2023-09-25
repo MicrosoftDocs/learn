@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.transcribe-speech-input-text
 metadata:
-  title: Create speech-enabled apps with the Speech service
-  description: "Create speech-enabled apps with the Speech service"
-  ms.date: 03/02/2022
+  title: Create speech-enabled apps with Azure AI services
+  description: "Create speech-enabled apps with Azure AI services"
+  ms.date: 08/31/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Create speech-enabled apps with the Speech service
-summary: The Speech service enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text-to-speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
+  ms.service: azure-ai-speech
+title: Create speech-enabled apps with Azure AI services
+summary: The Azure AI Speech service enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text to speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
 abstract: |
   In this module, you'll learn how to:
-  - Provision an Azure resource for the Speech service
-  - Use the Speech-to-Text API to implement speech recognition
-  - Use the Text-to-Speech API to implement speech synthesis
+  - Provision an Azure resource for the Azure AI Speech service
+  - Use the Azure AI Speech to text API to implement speech recognition
+  - Use the Text to speech API to implement speech synthesis
   - Configure audio format and voices
   - Use Speech Synthesis Markup Language (SSML)
 prerequisites: |
@@ -31,7 +31,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - custom-app-development
 - artificial-intelligence

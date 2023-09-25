@@ -1,8 +1,6 @@
-
-
 The throughput of an Azure NetApp volume is a function of the volume size and Service level, as documented in [Service level for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-service-levels).
 
-It is important to understand the performance relationship between the volume size and the physical limits for an Logical Interface (LIF) of the Storage Virtual Machine (SVM).
+It is important to understand the performance relationship between the volume size and the physical limits for a Logical Interface (LIF) of the Storage Virtual Machine (SVM).
 
 The table below demonstrates that it could make sense to create a large “Standard” volume to store backups and that it does not make sense to create an “Ultra” volume larger than 12 TB because the physical bandwidth capacity of a single LIF would be exceeded.
 
@@ -89,7 +87,7 @@ The maximum throughput for a Logical Interface and a single Linux session is bet
     960 MB/sec
   :::column-end:::
   :::column:::
-    1,400 MB/sec
+    1,400 MB/sec*
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -103,7 +101,7 @@ The maximum throughput for a Logical Interface and a single Linux session is bet
     1,280 MB/sec
   :::column-end:::
   :::column:::
-    1,400 MB/sec
+    1,400 MB/sec*
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -114,12 +112,15 @@ The maximum throughput for a Logical Interface and a single Linux session is bet
     640 MB/sec
   :::column-end:::
   :::column:::
-    1,400 MB/sec
+    1,400 MB/sec*
   :::column-end:::
   :::column:::
-    1,400 MB/sec
+    1,400 MB/sec*
   :::column-end:::
 :::row-end:::
+
+> [!NOTE]
+> write or single session read throughput limits (in case NFS mount option nconnect isn't used)
 
 It is important to understand that the data is written to the same SSDs in the storage backend. The performance quota from the capacity pool was created to be able to manage the environment. The Storage KPIs are equal for all HANA database sizes. In almost all cases, this assumption does not reflect the reality and the customer expectation. The size of HANA systems does not necessarily mean that a small system requires low storage throughput, or that a large system requires high storage throughput. But generally, we can expect higher throughput requirements for larger HANA database instances. As a result of SAP's sizing rules for the underlying hardware, such larger HANA instances also provide more CPU resources and higher parallelism in tasks like loading data after an instance's restart. As a result, the volume sizes should be adapted to the customer expectations and requirements, and not only driven by pure capacity requirements.
 

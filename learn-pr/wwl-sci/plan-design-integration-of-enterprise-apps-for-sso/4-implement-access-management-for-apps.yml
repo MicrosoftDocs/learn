@@ -4,11 +4,11 @@ title: Exercise implement access management for apps
 metadata:
   title: Exercise implement access management for apps
   description: "Exercise implement access management for apps"
-  ms.date: 02/07/2023
+  ms.date: 05/15/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

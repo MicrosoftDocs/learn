@@ -8,7 +8,7 @@ metadata:
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 20
 content: |
   [!include[](includes/7-exercise-create-table-constraints-and-indexes-with-ads.md)]

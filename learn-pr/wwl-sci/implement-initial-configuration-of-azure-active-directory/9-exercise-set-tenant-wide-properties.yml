@@ -4,11 +4,11 @@ title: Exercise - setting tenant-wide properties
 metadata:
   title: Exercise - setting tenant-wide properties
   description: "Exercise - setting tenant-wide properties"
-  ms.date: 02/03/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: identity-and-access
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

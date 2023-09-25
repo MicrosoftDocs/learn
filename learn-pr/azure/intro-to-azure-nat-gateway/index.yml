@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure NAT Gateway         
   description: Evaluate whether Microsoft Azure NAT Gateway is appropriate for resolving issues such as connection timeouts and delays connecting to the internet.       
-  ms.date: 04/21/2023
+  ms.date: 07/20/2023
   author: LBN-commits   
   ms.author: allensu         
   ms.topic: interactive-tutorial
@@ -12,7 +12,7 @@ metadata:
 title: Introduction to Azure NAT Gateway
 summary: Describe the Microsoft Azure NAT Gateway service, discuss scenarios of usage, learn how it works, and explore basic steps for its deployment and configuration.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Describe the Azure NAT Gateway service.
     - Recognize scenarios where Azure NAT Gateway is applicable.
     - Perform basic deployment of the Azure NAT Gateway service.

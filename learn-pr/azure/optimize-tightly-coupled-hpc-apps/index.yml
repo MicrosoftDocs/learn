@@ -3,11 +3,11 @@ uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series
 metadata:
   title: Optimizing tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
   description: Learn how to build, run, and tune tightly coupled HPC applications in Azure.
-  ms.date: 02/04/2021
+  ms.date: 05/09/2023
   author: garvct
   ms.author: cogarvey
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-machines
 title: Optimizing tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
 summary: This module provides you with guidance on choosing the right SKU for your high-performance computing (HPC) applications, and how to build and run highly optimized and tightly coupled HPC applications.
 abstract: |
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of high-performance computing (HPC).
   - Familiarity with Azure Virtual Machines tasks, such as deploying virtual machines and mounting shared file systems.
-  - To complete the optional exercises, you need to use your own subscription, which might incur charges. A trial subscription or a subscription that you already have access to will work to follow along.
+  - To complete the optional exercises, you need to use your own subscription, which might incur charges. A trial subscription or a subscription to which you already have access will work to follow along.
   - You need the Azure CLI to complete the exercise in this module. If you don't have the Azure CLI installed, see [Control Azure services with the CLI](/training/modules/control-azure-services-with-cli/).
 iconUrl: /training/achievements/optimize-hpc-application-azure-virtual-machines-series.svg
 levels:

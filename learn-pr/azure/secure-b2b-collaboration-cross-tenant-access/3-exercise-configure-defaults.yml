@@ -5,7 +5,8 @@ metadata:
   unitType: exercise
   title: exercise
   description: "In this exercise, practice configuring default cross-tenant access settings."
-  ms.date: 7/29/2022
+  ms.date: 08/03/2023
+  manager: CelesteDG
   author: msmimart
   ms.author: mimart
   ms.topic: interactive-tutorial

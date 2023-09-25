@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/05/2023
+  ms.date: 05/12/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -15,22 +15,22 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Wingtip Toys is a small wholesaler of children's toys and games. As its Desktop Administrator, Alan Deyoung has completely moved it client devices from legacy OS versions to Windows 11. Alan is now deciding what method of client management the company should employ. As part of that process, Alan has analyzed its existing IT environment and come to the following conclusions: Wingtip's applications are modern and relatively simple installs. The OS configuration capabilities provided by Autopilot meet its deployment needs. It doesn't have an excessive amount of existing legacy applications. Its existing configuration management deployment is relatively simple. Based on these findings, what method of client management should Alan recommend?"
+  - content: "Wingtip Toys is a small wholesaler specializing in children's toys and games. As the Desktop Administrator, Alan Deyoung has successfully migrated all client devices from older operating system versions to Windows 11. Alan is now deciding what method of client management the company should employ. As part of that process, Alan has analyzed its existing IT environment and come to the following conclusions: Wingtip's applications are modern and relatively simple installs. The OS configuration capabilities provided by Autopilot meet its deployment needs. It doesn't have an excessive number of existing legacy applications. Its existing configuration management deployment is relatively simple. Based on these findings, what method of client management should Alan recommend?"
     choices:
     - content: "Moving completely to cloud-based management using Intune"
       isCorrect: true
-      explanation: "Correct. Smaller organizations should consider moving to 100% cloud-based management using Intune if: The OS configuration capabilities provided by Autopilot meet deployment needs. Applications are modern and relatively simple installs. There is not an excessive amount of existing legacy applications. The existing configuration management deployment is relatively simple. Server management requirements can be accomplished with other tools such as Windows Admin Center."
+      explanation: "Correct. Smaller organizations should consider moving to 100% cloud-based management using Intune if: The OS configuration capabilities provided by Autopilot meet deployment needs. Applications are modern and relatively simple installs. There isn't an excessive number of existing legacy applications. The existing configuration management deployment is relatively simple. Server management requirements can be accomplished with other tools such as Windows Admin Center."
     - content: "Use Configuration Manager"
       isCorrect: false
       explanation: "Incorrect. This solution is more applicable for enterprise organizations that tend to have more complexity in their infrastructure, legacy systems and applications. Try again."
-    - content: "Use Configuration Manager and leverage co-management in Endpoint Manager"
+    - content: "Utilize Configuration Manager while leveraging co-management in Endpoint Manager"
       isCorrect: false
       explanation: "Incorrect. This solution is more applicable for enterprise organizations that tend to have more complexity in their infrastructure, legacy systems and applications. Try again."
-  - content: "Northwind Traders wants its Azure AD users to securely synchronize their user settings and application settings data to the cloud. By doing so, Northwind's users will have a unified experience across their Windows devices, and the time needed for configuring a new device will be reduced. What synchronization tool should Northwind use that will sync its users' settings across Azure AD joined devices?"
+  - content: "Northwind Traders wants its Azure AD users to securely synchronize their user settings and application settings data to the cloud. By doing so, Northwind's users have a unified experience across their Windows devices, and the time needed for configuring a new device will be reduced. What synchronization tool should Northwind use that sync's its users' settings across Azure AD joined devices?"
     choices:
     - content: "Enterprise State Roaming (ESR)"
       isCorrect: true
-      explanation: "Correct. ESR provides users with a unified experience across their Windows devices and reduces the time needed for configuring a new device. ESR syncs settings across Azure AD joined devices. When the organization has ESR enabled, the user only needs to sign-in to the new device, and the device will retain all the settings that ESR supports."
+      explanation: "Correct. ESR provides users with a unified experience across their Windows devices and reduces the time needed for configuring a new device. ESR syncs settings across Azure AD joined devices. When the organization has ESR enabled, the user only needs to sign-in to the new device, and the device retains all the settings that ESR supports."
     - content: "User State Migration Tool (USMT)"
       isCorrect: false
       explanation: "Incorrect. The USMT is typically used when synchronization solutions aren't enough and there's a need to migrate files or settings from one device to another in Windows environments. Try again."

@@ -4,11 +4,10 @@ title: Compare the MARS agent and Azure Backup Server
 metadata:
   title: Compare the MARS agent and Azure Backup Server
   description: "Compare the Azure Recovery Services (MARS) backup agent with Azure Backup Server (MABS)."
-  ms.date: 03/09/2023
+  ms.date: 06/08/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/8-compare-backup-options.md)]

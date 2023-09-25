@@ -1,4 +1,3 @@
-
 Code challenges will reinforce what you've learned and help you gain some confidence before continuing on.
 
 ## Variable scope challenge
@@ -22,8 +21,6 @@ In this challenge, you'll use what you've learned about code blocks and variable
 1. Type the following code into the Visual Studio Code Editor:
 
     ```c#
-    using System;
-    
     int[] numbers = { 4, 8, 15, 16, 23, 42 };
     
     foreach (int number in numbers)

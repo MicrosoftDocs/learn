@@ -10,15 +10,15 @@ People learn in different ways. A Channel 9 video series related to this learnin
 
 ### History of Azure SQL  
 
-You can watch the 2008 [Microsoft Professional Developers Conference](https://www.youtube.com/watch?v=otuf3goxLsg&azure-portal=true) keynote, where Microsoft Chief Software Architect (at the time) Ray Ozzie announced Azure for the first time. If you want to read the original "What to use when," you can find that in the [TechNet archive](https://social.technet.microsoft.com/wiki/contents/articles/1308.select-an-edition-of-sql-server-for-application-development/revision/7.aspx?azure-portal=true). You can also read the [original blog post](https://azure.microsoft.com/blog/microsoft-announces-windows-azure-and-azure-services-platform/?azure-portal=true) about the launch of Windows Azure and SQL Azure.  
+You can watch the 2008 [Microsoft Professional Developers Conference](https://www.youtube.com/watch?v=otuf3goxLsg&azure-portal=true) keynote, where Microsoft Chief Software Architect (at the time) Ray Ozzie announced Azure for the first time. If you want to read the original "What to use when," you can find that in the [TechNet archive](https://social.technet.microsoft.com/wiki/contents/articles/1308.select-an-edition-of-sql-server-for-application-development/revision/7.aspx?azure-portal=true). 
 
 ### SQL Server on Azure Virtual Machines
 
-To learn more about what you can get from infrastructure as a service (IaaS) services, check out [What is IaaS?](https://azure.microsoft.com/overview/what-is-iaas/?azure-portal=true). Here are some considerations specific to optimally deploying and managing SQL Server on Azure Virtual Machines:  
+To learn more about what you can get from IaaS services, check out [What is IaaS?](https://azure.microsoft.com/overview/what-is-iaas/?azure-portal=true). Here are some considerations specific to optimally deploying and managing SQL Server on Azure Virtual Machines:  
 
 - Install from [Azure gallery images](/azure/virtual-machines/shared-image-galleries) or take advantage of the [resource provider](/azure/azure-sql/virtual-machines/windows/sql-server-iaas-agent-extension-automate-management) (also referred to as the SQL IaaS Extension) for licensing flexibility and to enable automatic backups and updates.
-- Consider memory-optimized or storage-optimized virtual machine [sizes](https://azure.microsoft.com/pricing/details/virtual-machines/series/?azure-portal=true) for maximum performance.
-- Integrate your Azure virtual machines to on-premises networks by using [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview#communicate-with-on-premises-resources?azure-portal=true).
+- Consider memory-optimized or storage-optimized [VM sizes](https://azure.microsoft.com/pricing/details/virtual-machines/series/?azure-portal=true) for maximum performance.
+- Integrate your Azure VMs to on-premises networks by using [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview#communicate-with-on-premises-resources?azure-portal=true).
 - Take advantage of automated backups, backups to Azure Blob storage, and integration with [Azure Backup](https://azure.microsoft.com/blog/azure-backup-for-sql-server-in-azure-virtual-machines-now-generally-available/?azure-portal=true).
 - Always On Failover Cluster Instances is supported with [Azure premium file share](/azure/storage/files/storage-how-to-create-file-share).
 - [Always On availability groups](/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server) are supported, including Cloud Witness.  
@@ -59,4 +59,4 @@ The [documentation](/azure/azure-sql/database/service-tiers-sql-database-vcore#b
 
 ### Management interfaces
 
-To learn more about the tools, you can check out the [tools documentation](/sql/tools/overview-sql-tools?azure-portal=true), which includes information about and guidance on the various options discussed in this module (and more).
+To learn more about the tools, you can check out the [SQL tools documentation](/sql/tools/overview-sql-tools?azure-portal=true), which includes information about and guidance on the various options discussed in this module.

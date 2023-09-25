@@ -4,9 +4,9 @@ title: Choose between Azure Bastion or just in time virtual machine access
 metadata:
   title: Choose between Azure Bastion or just in time virtual machine access
   description: "Choose between Azure Bastion or just in time virtual machine access"
-  ms.date: 07/19/2022
-  author: wwlpublish
-  ms.author: lola
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

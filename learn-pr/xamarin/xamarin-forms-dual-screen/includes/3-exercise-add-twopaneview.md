@@ -1,6 +1,6 @@
 [!include[](../../includes/xamarin-not-maintained.md)]
 
-In this exercise, you'll work with an existing list-detail app. The app has a list view that shows different country flags. The first version of the code works well on single-screen devices but does not adapt to dual-screens. You'll change the code so that it uses a dual-screen layout.
+In this exercise, you'll work with an existing list-detail app. The app has a list view that shows different country/region flags. The first version of the code works well on single-screen devices but does not adapt to dual-screens. You'll change the code so that it uses a dual-screen layout.
 
 ## Open the starter solution
 

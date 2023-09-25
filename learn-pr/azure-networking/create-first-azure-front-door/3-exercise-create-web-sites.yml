@@ -9,7 +9,9 @@ metadata:
   author: duongau
   ms.author: duau
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-create-web-sites.md)]

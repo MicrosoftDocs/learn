@@ -1,4 +1,5 @@
 
+
 While the Microsoft Intune admin center doesn't include any reports specifically for inventory in the Reports node, you can still report on all your devices and applications using the Devices and Apps tab.
 
 ### Device reporting
@@ -27,4 +28,4 @@ To create and download a report for apps, in the Microsoft Intune admin center, 
 
 You can also download Audit logs from Intune, which provides you with a record of activities that generate a change in Microsoft Intune. Create, Update (edit), Delete, and Assign actions, or remote tasks, generate audit events that you can review. You can review audit logs for most Intune workloads. Auditing is enabled by default for all customers and can't be disabled.
 
-To view and download Audit logs, the steps are identical to how you would create reports for hardware and apps described above. To access Audit logs, in the Microsoft Intune admin center, navigate to **Tenant administration** &gt; **Audit logs**.
+To view and download Audit logs, the steps are identical to how you would create reports for hardware and apps described above. To access Audit logs, in the Microsoft Intune admin center, navigate to **Tenant administration** > **Audit logs**.

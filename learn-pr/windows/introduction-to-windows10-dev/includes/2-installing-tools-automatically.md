@@ -1,11 +1,12 @@
-Ready to install Visual Studio? Let's do it. Before you start, you'll need to make sure that your computer is running the latest version of Windows 10. 
+Ready to install Visual Studio? Let's do it. Before you start, you need to make sure that your computer is running the latest version of Windows 10 or Windows 11.
 
 To ensure that you're running the latest version of Windows:
 
 1. Navigate to **Settings** from your search bar.
 1. Select **Update & Security**.
 
-   ![Screenshot showing a successful Windows update.](../media/windows-update.png)
+    ![Screenshot showing a successful Windows update.](../media/windows-update.png)
+
 1. Select **Check for updates**.
 1. Follow the instructions to make sure updates are installed.
 
@@ -21,13 +22,13 @@ To ensure that you're running the latest version of Windows:
 
 1. Select the **Full Desktop App** link.
 1. Follow the instructions.
- 
+
 > [!NOTE]
 > To work properly, these installation scripts require the Microsoft Edge web browser.
 
 ## What the script installs
 
-The script will install the following tools:
+The script installs the following tools:
 
 * Visual Studio
 * Visual Studio Code
@@ -36,10 +37,10 @@ The script will install the following tools:
 * The Visual Studio UWP workload
 * The Visual Studio Managed desktop workload
 * The Visual Studio Native desktop workload
-* Windows Template Studio
+* Template Studio Visual Studio extensions for UWP, WPF, and Windows Forms
 * GitHub UWP samples
 
-The script also turns on Developer Mode on Windows 10.
+The script also turns on Developer Mode on Windows.
 
 ## If the script doesn't work
 

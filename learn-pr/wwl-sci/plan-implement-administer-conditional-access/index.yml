@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Plan, implement, and administer Conditional Access
 summary: Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe.
 abstract: |
@@ -31,7 +30,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-domain
 - identity-manager
 - entra
 - entra-workload-identities

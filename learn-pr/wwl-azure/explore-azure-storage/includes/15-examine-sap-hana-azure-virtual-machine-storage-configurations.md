@@ -1,5 +1,3 @@
-
-
 Azure provides different types of storage that are suitable for Azure VMs that are running SAP HANA. The **SAP HANA certified Azure storage types** that can be considered for SAP HANA deployments are:
 
 - Azure Premium SSD
@@ -12,11 +10,11 @@ Azure offers two deployment methods for VHDs on Azure Standard and Premium Stora
 
 For a list of storage types and their SLAs in IOPS and storage throughput, review the [Azure documentation for managed disks](https://azure.microsoft.com/pricing/details/managed-disks/).
 
-The minimum SAP HANA certified conditions for the different storage types are:
+Azure provides different types of storage suitable for Azure VMs running SAP HANA. The SAP HANA certified Azure storage types that you can consider for SAP HANA deployments are:
 
-- **Azure Premium SSD** \- **/hana/log** is required to be cached with Azure [Write Accelerator](/azure/virtual-machines/linux/how-to-enable-write-accelerator). The **/hana/data** volume could be placed on Premium SSD without Azure Write Accelerator or on Ultra disk
-- **Azure Ultra disk at least for the /hana/log volume**. The **/hana/data** volume can be placed on either Premium SSD without Azure Write Accelerator or in order to get faster restart times Ultra disk
-- **NFS v4.1** volumes on top of Azure NetApp Files for **/hana/log** and **/hana/data**
+- **Azure Premium SSD** \- **/hana/log** is required to be cached with Azure [Write Accelerator](/azure/virtual-machines/linux/how-to-enable-write-accelerator). The **/hana/data** volume can be placed on Premium SSD without Azure Write Accelerator or on Ultra disk.
+- **Azure Ultra disk** \- Azure Ultra disk for the **/hana/log** volume. The **/hana/data** volume can be placed on a Premium SSD without Azure Write Accelerator or an Ultra disk for faster restart times.
+- **Azure NetApp Files** \- requires **NFS v4.1** volumes on top of Azure NetApp Files for **/hana/log** and **/hana/data**.
 
 Some of the storage types can be combined. E.g., it is possible to put **/hana/data** onto Premium Storage and **/hana/log** can be placed on Ultra disk storage in order to get the required low latency. However, it is not recommended to mix NFS volumes, e.g. **/hana/data**, and use one of the other certified storage types for **/hana/log.**
 

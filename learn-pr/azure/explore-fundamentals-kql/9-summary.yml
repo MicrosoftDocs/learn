@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.explore-fundamentals-kql.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Review of the information you've learned in this Training module."
+  ms.date: 3/26/2023
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary.md)]

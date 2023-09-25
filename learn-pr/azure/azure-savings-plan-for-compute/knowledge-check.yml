@@ -4,59 +4,61 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 10/06/2022
-  author: mpolicht
-  ms.author: kyleikeda
+  ms.date: 04/28/2023
+  author: bandersmsft
+  ms.author: banders
+  ms.reviewer: onwokolo
   ms.topic: interactive-tutorial
   ms.custom:
     - ignite-2022
-  ms.prod: learning-azure
+    - engagement-fy23
+  ms.service: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/knowledge-check.md)]
 quiz:
   questions:
-  - content: 'Which Azure Functions pricing plan participates in Azure savings plan for compute?'
+  - content: "Which Azure Functions pricing plan participates in Azure savings plan for compute?"
     choices:
-    - content: 'Premium'
+    - content: "Premium"
       isCorrect: true
-      explanation: 'Correct. The Azure Functions Premium plan participates in Azure savings plan for compute.'
-    - content: 'App Service'
+      explanation: "Correct. The Azure Functions Premium plan participates in Azure savings plan for compute."
+    - content: "App Service"
       isCorrect: false
-      explanation: 'Incorrect. The Azure Functions App Service plan does not participate in Azure savings plan for compute.'
-    - content: 'Consumption'
+      explanation: "Incorrect. The Azure Functions App Service plan doesn't participate in Azure savings plan for compute."
+    - content: "Consumption"
       isCorrect: false
-      explanation: 'Incorrect. The Azure Functions Consumption plan does not participate in Azure savings plan for compute.'
-  - content: 'For which type of compute workloads is Azure savings plan for compute optimized?'
+      explanation: "Incorrect. The Azure Functions Consumption plan doesn't participate in Azure savings plan for compute."
+  - content: "For which type of compute workloads is Azure savings plan for compute optimized?"
     choices:
-    - content: 'Dynamic but predictable workloads that move across data center regions in the follow-the-sun scenarios.'
+    - content: "Dynamic but predictable workloads that move across data center regions in the follow-the-sun scenarios."
       isCorrect: true
-      explanation: 'Correct. Azure savings plan for compute is optimized for dynamic but predictable workloads that move across data center regions in the follow-the-sun scenarios.'
-    - content: 'Interruptible workloads'
+      explanation: "Correct. Azure savings plan for compute is optimized for dynamic but predictable workloads that move across data center regions in the follow-the-sun scenarios."
+    - content: "Interruptible workloads"
       isCorrect: false
-      explanation: 'Incorrect. Spot Virtual Machines, not Azure savings plan for compute, are optimized for interruptible workloads.'
-    - content: 'Stable, predictable workloads running on specific VMs in a specific Azure region'
+      explanation: "Incorrect. Spot Virtual Machines, not Azure savings plan for compute, are optimized for interruptible workloads."
+    - content: "Stable, predictable workloads running on specific VMs in a specific Azure region"
       isCorrect: false
-      explanation: 'Incorrect. Reservations, not Azure savings plan for compute, are optimized for stable, predictable workloads running on specific VMs in a specific Azure region.'
-  - content: 'What is the largest scope to which Azure savings plan for compute can be applied?'
+      explanation: "Incorrect. Reservations, not Azure savings plan for compute, are optimized for stable, predictable workloads running on specific VMs in a specific Azure region."
+  - content: "What is the largest scope to which Azure savings plan for compute can be applied?"
     choices:
-    - content: 'Management group'
+    - content: "Management group"
       isCorrect: false
-      explanation: 'Incorrect. Although Azure savings plan for compute can be applied to a management group, this is not the largest supported scope.'
-    - content: 'Shared'
+      explanation: "Incorrect. Although Azure savings plan for compute can be applied to a management group, it isn't the largest supported scope."
+    - content: "Shared"
       isCorrect: true
-      explanation: 'Correct. Shared scope is the largest scope to which Azure savings plan for compute can be applied.'
-    - content: 'Subscription'
+      explanation: "Correct. Shared scope is the largest scope to which Azure savings plan for compute can be applied."
+    - content: "Subscription"
       isCorrect: false
-      explanation: 'Incorrect. Although Azure savings plan for compute can be applied to a subscription, this is not the largest supported scope.'
-  - content: 'How are Azure savings plan for compute commitments priced for EA and MCA/MCP customers'
+      explanation: "Incorrect. Although Azure savings plan for compute can be applied to a subscription, it isn't the largest supported scope."
+  - content: "How are Azure savings plan for compute commitments priced for EA and MCA/MCP customers"
     choices:
-    - content: 'Always in local currency'
+    - content: "Always in local currency"
       isCorrect: false
-      explanation: 'Incorrect. Saving plan commitments are not priced in local currency for all customers.'
-    - content: 'In local currency for EA customers and in USD for MCA/MPA customers'
+      explanation: "Incorrect. Saving plan commitments aren't priced in local currency for all customers."
+    - content: "In local currency for EA customers and in USD for MCA/MPA customers"
       isCorrect: true
-      explanation: 'Correct. Saving plan commitments are priced in local currency for EA customers and in USD for MCA/MPA customers.'
-    - content: 'Always in USD'
+      explanation: "Correct. Saving plan commitments are priced in local currency for EA customers and in USD for MCA/MPA customers."
+    - content: "Always in USD"
       isCorrect: false
-      explanation: 'Incorrect. Saving plan commitments are not priced in USD for all customers.'
+      explanation: "Incorrect. Saving plan commitments aren't priced in USD for all customers."

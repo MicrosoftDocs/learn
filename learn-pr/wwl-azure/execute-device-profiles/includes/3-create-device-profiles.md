@@ -1,9 +1,10 @@
 
+
 As noted in the previous unit, many device profile types exist. Each platform has its own list of profile types. The process for creating device profiles is similar for all profiles.
 
 To create a Windows device profile:
 
-1.  In the Endpoint Manager admin center, select **Devices**, then select **Windows** platform, then select **Configuration Profiles**.
+1.  In the Microsoft Intune admin center, select **Devices**, then select **Windows** platform, then select **Configuration Profiles**.
 2.  Select **Create Profile**.
 3.  Enter the following properties:
     

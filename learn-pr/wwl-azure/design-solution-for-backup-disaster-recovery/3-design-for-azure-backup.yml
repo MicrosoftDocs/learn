@@ -3,8 +3,8 @@ uid: learn.wwl.design-solution-for-backup-disaster-recovery.design-for-azure-bac
 title: Design for Azure Backup
 metadata:
   title: Design for Azure Backup
-  description: "Design a backup and disaster recovery solution by using Azure Backup and storage vaults."
-  ms.date: 03/03/2023
+  description: "Design for Azure Backup"
+  ms.date: 06/09/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

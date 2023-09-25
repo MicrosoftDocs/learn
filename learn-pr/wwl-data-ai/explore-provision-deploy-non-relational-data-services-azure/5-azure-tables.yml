@@ -4,11 +4,11 @@ title: Explore Azure Tables
 metadata:
   title: Explore Azure Tables
   description: "Explore Azure Tables"
-  ms.date: 01/25/2023
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

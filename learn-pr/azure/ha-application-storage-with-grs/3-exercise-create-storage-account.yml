@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Create an Azure storage account
   description: In this exercise, you learn how to prepare the foundations for a highly available application by creating an Azure storage account.
   ms.date: 09/03/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create an Azure storage account

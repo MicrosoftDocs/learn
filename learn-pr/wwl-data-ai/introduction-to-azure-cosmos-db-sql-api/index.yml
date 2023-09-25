@@ -2,14 +2,14 @@
 uid: learn.wwl.introduction-to-azure-cosmos-db-sql-api
 metadata:
   title: Introduction to Azure Cosmos DB for NoSQL
-  description: "Learn about the Azure Cosmos DB for NoSQL and determine if it's a good fit for your application."
-  ms.date: 04/21/2023
+  description: "Learn about the Azure Cosmos DB for NoSQL and determine if it is a good fit for your application."
+  ms.date: 05/18/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Cosmos DB for NoSQL
-summary: Learn about the Azure Cosmos DB for NoSQL and determine if it's a good fit for your application.
+summary: Learn about the Azure Cosmos DB for NoSQL and determine if it is a good fit for your application.
 abstract: |
   After completing this module, you’ll be able to:
   *   Evaluate whether Azure Cosmos DB for NoSQL is the right database for your application.

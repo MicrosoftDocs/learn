@@ -7,7 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-forms
 title: Use effects in Xamarin.Forms
 summary: Adjust the behavior of Xamarin.Forms elements by accessing the underlying native controls.
 abstract: |
@@ -18,6 +19,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/use-effects-in-xamarin-forms-badge.svg
+hidden: true
 levels:
 - advanced
 roles:

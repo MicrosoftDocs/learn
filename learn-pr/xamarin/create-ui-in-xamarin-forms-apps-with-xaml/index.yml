@@ -7,7 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-forms
 title: Create a UI in Xamarin.Forms apps by using XAML
 summary: "Create a Xamarin.Forms application using XAML to define the UI while making use of platform-specific features. We will see how splitting the UI definition from the code implementation improves the maintainability of your application."
 abstract: |
@@ -19,6 +20,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/create-ui-in-xamarin-forms-apps-with-xaml-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

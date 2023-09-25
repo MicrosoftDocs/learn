@@ -7,7 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-forms
 title: Create accessible apps with Xamarin.Forms
 summary: Enhance the accessibility of Xamarin.Forms elements with automation properties for screen readers.
 abstract: |
@@ -19,6 +20,7 @@ prerequisites: |
   - Familiarity with building and deploying Xamarin.Forms apps
   - Familiarity with the concepts of accessibility, disability, and inclusion
 iconUrl: /training/achievements/xamarin-forms-accessibility.svg
+hidden: true
 levels:
 - intermediate
 roles:

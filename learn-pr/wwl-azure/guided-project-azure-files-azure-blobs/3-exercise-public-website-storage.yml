@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-azure-files-azure-blobs.exercise2
+title: Exercise - Provide storage for the public website
+metadata:
+  title: Exercise - Provide storage for the public website
+  description: "Exercise -Provide storage for the public website"
+  ms.date: 08/02/2023
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-public-website-storage.md)]

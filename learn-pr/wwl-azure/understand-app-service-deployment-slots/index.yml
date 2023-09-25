@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: app-service 
+  ms.subservice: web-apps
 title: Explore Azure App Service deployment slots
 summary: In this module you'll learn how slot swapping operates and how to perform a swap. You'll also learn how to route traffic to different slots manually and automatically.
 abstract: |

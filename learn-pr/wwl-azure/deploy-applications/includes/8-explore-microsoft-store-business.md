@@ -1,4 +1,3 @@
-
 The Microsoft Store for Business platform enables you to procure apps for your organization, either individually or in bulk. You can manage apps procured in volume from the portal by linking the store to Microsoft Intune. This includes the ability to:
 - Synchronize the list of purchased (or free) apps from the store with Intune.
 - View the synchronized apps in the Microsoft Intune admin center and assign them like any other app.
@@ -8,9 +7,13 @@ The Microsoft Store for Business platform enables you to procure apps for your o
 - Revoke app licenses for apps managed by Microsoft Store for Business if the user is deleted from Azure AD.
 
 >[!IMPORTANT]
->Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. However, admins can still leverage the connection to Store for Business and Education from their UEM solution to deploy apps to managed Windows 11 devices until they are retired in 2023.
-
-Starting March 31, 2023, Intune enables administrators to browse, deploy, and monitor Microsoft Store applications. Once deployed, the apps are automatically updated to the latest version by Intune. The Microsoft Store now supports various types of apps, including UWP apps, desktop apps packaged in `.msix`, and Win32 apps packaged in `.exe` or `.msi` installers.
+>The retirement of the Microsoft Store for Business and the Microsoft Store for Education, originally scheduled for March 31, 2023, has been postponed. 
+>
+>In April 2023 we will begin ending support for the Microsoft Store for Business experience in Intune. This will occur in several stages:
+>
+>- On April 30, 2023, Intune will disconnect Microsoft Store for Business services. Microsoft Store for Business and Education apps will no longer be able to sync with Intune and the connector page will be removed from the Intune admin center.
+>- On June 15, 2023, Intune will stop enforcing online and offline Microsoft Store for Business and Education apps on devices. Downloaded applications will remain on the device with limited support. Users may still be able to access the app from their device, but the app will no longer be managed. Existing synced Intune app objects will remain to allow admins to view the apps that had been synced and their assignments. Additionally, you will no longer be able to sync apps via the Microsoft Graph API syncMicrosoftStoreForBusinessApps and related API properties will display stale data.
+>- On September 15, 2023, Microsoft Store for Business and Education apps will be removed from the Intune admin center. Apps on the device will remain until intentionally removed. The Microsoft Graph API microsoftStoreForBusinessApp will no longer be available about a month later.
 
 >[!IMPORTANT]
 >There are key improvements to the most recent Microsoft Store apps functionality over legacy functionality. Specifically, the following differences:

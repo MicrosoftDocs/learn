@@ -1,4 +1,5 @@
 
+
 You use conditions and controls to create conditional access policies.
 
 ### Conditions
@@ -18,9 +19,9 @@ Controls are the actions that are allowed or disallowed when a condition is met.
 
 ### Configure conditional access
 
-You can configure conditional access from the Intune console in the Endpoint Manager admin center. by opening the **Conditional Access** &gt; **Policies** page. When creating the policy, you assign it to users or groups and can specify any cloud services that are affected by the policy.
+You can configure conditional access from the Intune console in the Microsoft Intune admin center. by opening the **Conditional Access** > **Policies** page. When creating the policy, you assign it to users or groups and can specify any cloud services that are affected by the policy.
 
-You can also configure conditional access for Exchange ActiveSync in the Tenant administration section of Endpoint Manager admin center.
+You can also configure conditional access for Exchange ActiveSync in the Tenant administration section of Microsoft Intune admin center.
 
 :::image type="content" source="../media/create-conditional-access-72f94dcd.png" alt-text="Screenshot showing the steps to create a conditional access policy.":::
 
@@ -46,3 +47,5 @@ Any device used to access Exchange on-premises is checked for compliance when de
 The Intune Exchange connector pulls in all the Exchange ActiveSync records that exist at the Exchange server so Intune can take these EAS records and map them to Intune device records. These records are devices enrolled and recognized by Intune. This process allows or blocks e-mail access.
 
 If the EAS record is brand new, and Intune isn't aware of it, Intune issues a command that blocks access to e-mail. The following diagram shows more details on how this process works.
+
+:::image type="content" source="../media/conditional-access-intune-common-ways-1.png" alt-text="Diagram showing how the EAS process works.":::

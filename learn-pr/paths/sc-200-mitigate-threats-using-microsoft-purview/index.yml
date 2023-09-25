@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-purview
+metadata:
+  title: 'SC-200: Mitigate threats using Microsoft Purview'
+  description: 'Use Microsoft Purview to discover, classify, and protect sensitive data in your organization. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.'
+  ms.date: 02/17/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: 'SC-200: Mitigate threats using Microsoft Purview'
+prerequisites: |
+  - Fundamental understanding of Microsoft security, compliance, and identity products
+  - Basic understanding of Microsoft 365 Defender
+summary: |
+  In this Learning Path we focus on Microsoft Purview's risk and compliance solutions that assist security operations analysts detect threats to organizations and identify, classify, and protect sensitive data, as well as monitor and report on compliance. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
+iconUrl: /training/achievements/mitigate-threats-using-microsoft-365-defender.svg
+levels:
+- intermediate
+roles:
+- security-operations-analyst
+products:
+- m365
+- microsoft-purview
+- microsoft-defender
+subjects:
+- compliance
+- information-protection-governance
+- insider-risk
+- security
+- threat-protection
+modules:
+- learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365
+- learn-m365.m365-compliance-insider-manage-insider-risk
+- learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-standard
+- learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-premium
+- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview
+trophy:
+  uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-purview.trophy

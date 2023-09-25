@@ -2,12 +2,11 @@
 uid: learn.intro-to-mixed-reality
 metadata:
   title: Introduction to mixed reality
-  description: Mixed reality is transforming the nature of on-the-job training, game development, and consumer application development. Build a foundation in the core concepts, terminology, and design processes that are unique to the development space for augmented reality, virtual reality, and mixed reality. Get familiar with HoloLens, Windows mixed reality immersive headsets, bodystorming prototypes, and the most common use cases for mixed reality content.
-  ms.date: 11/17/2020
+  description: Learn about core concepts of augmented reality, virtual reality, and mixed reality. Learn about HoloLens and Windows mixed reality immersive headsets.
+  ms.date: 05/20/2023
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to mixed reality
 summary: Build a foundation in the core concepts, terminology, and design processes unique to the mixed reality development space.
 abstract: |
@@ -31,7 +30,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 - dynamics-365
 - dynamics-guides
 - dynamics-remote-assist

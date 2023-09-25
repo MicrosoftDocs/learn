@@ -9,6 +9,8 @@ metadata:
   author: kengaderdus
   ms.author: kengaderdus
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 5
 content: |

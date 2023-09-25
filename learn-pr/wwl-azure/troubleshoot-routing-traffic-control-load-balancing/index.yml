@@ -3,11 +3,11 @@ uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing
 metadata:
   title: Troubleshoot routing, traffic control and load balancing in Microsoft Azure
   description: "Troubleshoot network issues revolving around routing and traffic control and load- balancing.AZ720 AZ-720 az-720 networking"
-  ms.date: 08/08/2022
-  author: wwlpublish
-  ms.author: lola
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure 
 title: Troubleshoot routing, traffic control and load balancing in Microsoft Azure
 summary: Troubleshoot network issues revolving around routing and traffic control and load- balancing.
 abstract: |
@@ -31,7 +31,7 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-domain
+- entra
 - azure-cdn
 - azure-firewall
 - azure-firewall-manager

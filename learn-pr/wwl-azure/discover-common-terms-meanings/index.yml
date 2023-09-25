@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 title: Discover common terms and meanings for SAP on Azure
 summary: You'll be introduced to some of the common terms that will be used in working with SAP workloads on Azure.
 abstract: |

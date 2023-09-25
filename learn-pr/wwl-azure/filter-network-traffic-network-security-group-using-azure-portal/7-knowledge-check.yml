@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/01/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of a Network Security Group (NSG) in Azure?"
+    choices:
+    - content: "To manage user access to Azure resources"
+      isCorrect: false
+      explanation: "Incorrect. This is the role of Azure Active Directory and Azure role-based access control."
+    - content: "To filter network traffic and enforce access controls"
+      isCorrect: true
+      explanation: "Correct. A Network Security Group (NSG) in Azure is used to filter network traffic by defining inbound and outbound security rules. It helps enforce access controls and restricts network traffic to Azure resources based on source, destination, port, and protocol."
+    - content: "To monitor performance and availability of Azure services"
+      isCorrect: false
+      explanation: "Incorrect. This is the role of Azure Monitor and Azure Application Insights."
+  - content: "Which of the following network security rules are valid in an NSG?"
+    choices:
+    - content: "Deny outbound traffic to a specific IP address"
+      isCorrect: false
+      explanation: "Incorrect. This rule blocks outbound traffic to a specific IP address."
+    - content: "Allow all traffic within the virtual network"
+      isCorrect: true
+      explanation: "Correct. Allowing all traffic within the virtual network would eliminate the purpose of using a Network Security Group (NSG) to filter network traffic. NSGs are designed to restrict and control network traffic based on defined rules."
+    - content: "Allow SSH traffic from a specific IP range"
+      isCorrect: false
+      explanation: "Incorrect. This rule permits SSH traffic from a specific range of IP addresses."
+  - content: "Which of the following methods would associate an NSG with an Azure resource?"
+    choices:
+    - content: "During the creation of the Azure resource"
+      isCorrect: false
+      explanation: "Incorrect. NSG association isn't typically done during resource creation."
+    - content: "By modifying the virtual network settings"
+      isCorrect: true
+      explanation: "Correct. To associate a Network Security Group (NSG) with an Azure resource, you need to modify the virtual network settings and associate the NSG with the desired subnet or network interface."
+    - content: "By using Azure PowerShell commands"
+      isCorrect: false
+      explanation: "Incorrect. While possible, it isn't the primary method for associating NSGs with resources."
+  - content: "What happens to network traffic that doesn't match any NSG rules?"
+    choices:
+    - content: "It's allowed by default"
+      isCorrect: false
+      explanation: "Incorrect. Allowing traffic by default would pose a security risk."
+    - content: "It's denied by default"
+      isCorrect: true
+      explanation: "Correct. By default, network traffic that does not match any Network Security Group (NSG) rules is denied. This ensures that any traffic not explicitly allowed is blocked and helps maintain a secure network environment."
+    - content: "It's logged for analysis"
+      isCorrect: false
+      explanation: "Incorrect. NSGs don't log traffic by default, but logging can be enabled for further analysis."

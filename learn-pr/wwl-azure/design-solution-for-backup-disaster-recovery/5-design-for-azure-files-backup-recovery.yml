@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solution-for-backup-disaster-recovery.design-for-azure-files-backup-recovery
-title: Design for Azure file shares backup and recovery
+title: Design for Azure files backup and recovery
 metadata:
-  title: Design for Azure file shares backup and recovery
-  description: "Design for Azure file shares snapshot backup and recovery, and automated backups with Azure Backup."
-  ms.date: 03/03/2023
+  title: Design for Azure files backup and recovery
+  description: "Design for Azure files backup and recovery"
+  ms.date: 06/09/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

@@ -2,7 +2,7 @@ We'll use codespace to build and run the TCP echo client project, and future pro
 
 ## Step 1: Go to codespace
 
-1. Launch your browser and go to the forked samples repository, which you've done in a previous module. The link should look like this: https://github.com/liydu/azure-rtos-learn-samples
+1. Launch your browser and go to the forked samples repository that you created in a [previous module](/training/modules/azure-rtos-netx-duo-fundamentals/1-introduction). The link should look like this: ``` https://github.com/[your_GitHub_id]/azure-rtos-learn-samples ```
 1. Select Code and open the Codespace you've created.
 1. Once the Codespace is launched, in the Explorer pane file tree, expand and open the `courses/netxduo` folder, as illustrated by the following screenshot.
 

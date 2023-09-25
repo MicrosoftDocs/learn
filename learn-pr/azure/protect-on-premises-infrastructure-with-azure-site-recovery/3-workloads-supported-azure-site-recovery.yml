@@ -33,7 +33,7 @@ quiz:
       explanation: IIS virtual directory replication and load-balanced site traffic aren't features of Site Recovery, but script integration is.
     - content: One-click failover, script integration, network mapping
       isCorrect: true
-      explanation: All of the above are features of Site Recovery that support application replication.
+      explanation: All are Site Recovery features that support application replication.
     - content: Manual failover and failback only, DHCP network address backup, one-click failover
       isCorrect: false
       explanation: Manual failover and failback and DHCP network address backup aren't features of Site Recovery, but one-click failover is.

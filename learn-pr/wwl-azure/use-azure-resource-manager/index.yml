@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-resource-manager
 title: Use Azure Resource Manager
 summary: You'll learn how to use resource groups to organize your Azure resources.
 abstract: |

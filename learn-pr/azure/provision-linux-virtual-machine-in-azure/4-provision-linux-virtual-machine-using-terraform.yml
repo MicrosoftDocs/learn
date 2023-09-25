@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.provision-linux-virtual-machine-in-azure.provision-linux-virtual-machine-using-terraform
+title: Provision a Linux virtual machine by using Terraform
+metadata:
+  title: Provision a Linux virtual machine by using Terraform
+  description: Learn how to provision by using Terraform.
+  ms.date: 05/01/2023
+  author: chasecrum
+  ms.author: chasecrum
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-terraform
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-provision-linux-virtual-machine-using-terraform.md)]

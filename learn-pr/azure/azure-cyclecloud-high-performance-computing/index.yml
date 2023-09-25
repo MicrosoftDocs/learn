@@ -8,7 +8,7 @@ metadata:
   author: anhoward
   ms.author: anhoward
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cyclecloud
 title: Create, customize and manage an HPC cluster in Azure with Azure CycleCloud
 summary: Azure CycleCloud is an application that provides a simple, secure, and scalable way to create, customize, and manage HPC clusters in Azure. 
 abstract: |

@@ -4,14 +4,15 @@ uid: learn-pr.azure.create-azure-database-for-mysql
 metadata:
   title: Create your first Azure Database for MySQL flexible server
   description: Microsoft Azure Database for MySQL is an Azure managed data service. It considerably simplifies database deployment, management, and maintenance, while providing compatibility with existing MySQL database workloads. 
-  ms.prod: learning-azure
   author: markingmyname
   ms.author: maghan
   manager: jroth
   ms.reviewer: shreyaanand
   ms.topic: interactive-tutorial
   ms.custom: event-tier1-build-2022
-  ms.date: 06/08/2022
+  ms.date: 06/09/2023
+  ms.service: mysql
+  ms.subservice: flexible-server
 
 title: Create your first Azure Database for MySQL flexible server
 summary: |

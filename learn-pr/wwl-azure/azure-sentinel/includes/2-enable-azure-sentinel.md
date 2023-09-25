@@ -5,7 +5,7 @@ Microsoft Sentinel is a scalable, cloud-native, security information event manag
 
 Security Operations (SecOps) teams are inundated with a high volume of alerts and spend far too much time in tasks like infrastructure setup and maintenance. As a result, many legitimate threats go unnoticed. According to the **“Cybersecurity Jobs Report, 2018-2021” by Cybersecurity Ventures**, An expected shortfall of 3.5M security professionals by 2021 will further increase the challenges for security operations teams. Alert fatigue is real. Security analysts face a huge burden of triage as they not only have to sift through a sea of alerts but also correlate alerts from different products manually or using a traditional correlation engine.
 
-### Microsoft Azure Sentinel
+### Microsoft Sentinel
 
 Microsoft Sentinel offers nearly limitless cloud scale and speed to address your security needs. Think of Microsoft Sentinel as the first **SIEM-as-a-service** that brings the power of the cloud and artificial intelligence to help security operations teams efficiently identify and stop cyber-attacks before they cause harm. Microsoft Sentinel enriches your investigation and detection by providing both Microsoft's threat intelligence stream and external threat intelligence streams.
 

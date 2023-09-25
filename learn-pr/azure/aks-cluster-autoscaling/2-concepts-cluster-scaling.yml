@@ -9,7 +9,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 5
 content: |
   [!include[](includes/2-concepts-cluster-scaling.md)]
@@ -23,7 +23,7 @@ quiz:
       explanation: "Incorrect. Pod autoscalers are meant to live within the cluster and scale pods."
     - content: "The cluster autoscaler monitors pods in order to scale the number of nodes in a cluster."
       isCorrect: true
-      explanation: "Correct. The cluster autoscaler will scale the number of nodes, while pod autoscalers will scale pods."
+      explanation: "Correct. The cluster autoscaler scales the number of nodes, while pod autoscalers scale pods."
     - content: "The pod autoscaler scales the number of pods, while the cluster autoscaler is intended for multi-cluster usage."
       isCorrect: false
       explanation: "Incorrect. The cluster autoscaler works in a single cluster."
@@ -32,22 +32,22 @@ quiz:
     choices:
     - content: "To avoid the work of someone having to manually scale the cluster."
       isCorrect: true
-      explanation: "Correct. This is the job of the cluster autoscaler."
-    - content: "The cluster autoscaler is not necessary in the cluster and it should not be used in production."
+      explanation: "Correct. This job is what the cluster autoscaler is for."
+    - content: "The cluster autoscaler isn't necessary in the cluster and it shouldn't be used in production."
       isCorrect: false
       explanation: "Incorrect. It's a good practice to use the cluster autoscaler in production."
     - content: "The cluster autoscaler makes sure all the pods are working right."
       isCorrect: false
-      explanation: "Incorrect. Cluster autoscalers will affect the cluster, not pods."
+      explanation: "Incorrect. Cluster autoscalers affect the cluster, not pods."
 
-  - content: "In which of these situations will the cluster fail to remove a node?"
+  - content: "In which of these situations does the cluster fail to remove a node?"
     choices:
-    - content: "When a pod is managed by a replica set"
+    - content: "When a replica set manages the pod."
       isCorrect: false
       explanation: "Incorrect. All managed pods are removed."
-    - content: "If there's a PDB and this PDB is too restrictive with the minimum number of pods in the cluster."
+    - content: "If there's a PDB and the PDB is too restrictive with the minimum number of pods in the cluster."
       isCorrect: true
-      explanation: "Correct. Among others, this is one of the situations the autoscaler won't remove a node."
+      explanation: "Correct. Among others, this situation is one in which the autoscaler doesn't remove a node."
     - content: "When the node runs Windows containers"
       isCorrect: false
       explanation: "Incorrect. The underlying Operating System isn't a factor."

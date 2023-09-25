@@ -4,14 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/09/2022
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.prod: azure
+durationInMinutes: 5
 content: |
   [!include[](includes/13-knowledge-check.md)]
 quiz:
@@ -28,7 +26,7 @@ quiz:
     - content: "Developer."
       isCorrect: false
       explanation: "Incorrect. It's the Configuration Custodian. It includes CRUD on keys, ensuring the security of secrets, regeneration of keys and tokens, defining configuration settings such as Log levels for each environment."
-  - content: "Which of the following choices enables applications to have no direct access to the secrets, which helps improve the security &amp; control?"
+  - content: "Which of the following choices enables applications to have no direct access to the secrets, which helps improve the security & control?"
     choices:
     - content: "Library."
       isCorrect: false

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.detect-objects-images.exercise-custom-vision
-title: Exercise - Detect objects in images with custom vision
+title: Exercise - Detect objects in images with Azure AI Custom Vision
 metadata:
-  title: Exercise - Detect objects in images with custom vision
-  description: "Exercise - Detect objects in images with custom vision"
+  title: Exercise - Detect objects in images with Azure AI Custom Vision
+  description: "Exercise - Detect objects in images with Azure AI Custom Vision"
   ms.date: 09/17/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 sandbox: false
 labId: 100993

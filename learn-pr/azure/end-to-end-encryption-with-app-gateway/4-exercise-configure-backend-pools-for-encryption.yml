@@ -3,10 +3,12 @@ uid: learn.end-to-end-encryption-with-app-gateway.4-exercise-configure-backend-p
 metadata:
   title: Exercise - Configure back-end pools for encryption
   description: Exercise - Create an application gateway and configure back-end pools for encryption
-  ms.date: 02/22/2022
+  ms.date: 07/25/2023
   author: vhorne
   ms.author: victorh
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Exercise - Configure back-end pools for encryption
 durationInMinutes: 30

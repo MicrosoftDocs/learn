@@ -10,7 +10,7 @@ So, if you hire a new engineer and add them to the Azure RBAC group for engineer
 
 Role-based access control is applied to a scope, which is a resource or set of resources that this access applies to.
 
-The following diagram shows the relationship between roles and scopes. A management group, subscription, or resource admin might be given the role of owner, so they have increased control and authority. An observer, who isn't expected to make any updates, might be given a role of Reader for the same scope, enabling them to review or observe the management group, subscription, or resource group.
+The following diagram shows the relationship between roles and scopes. A management group, subscription, or resource group might be given the role of owner, so they have increased control and authority. An observer, who isn't expected to make any updates, might be given a role of Reader for the same scope, enabling them to review or observe the management group, subscription, or resource group.
 
 :::image type="content" source="../media/role-based-access-scope-4b12a8f3.png" alt-text="A diagram showing scopes and roles. Role and scope combinations map to a specific kind of user or account, such as an observer or an admin.":::
 

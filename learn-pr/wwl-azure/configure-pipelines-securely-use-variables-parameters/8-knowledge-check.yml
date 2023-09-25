@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-pipelines-securely-use-variables-parameters.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "What is the purpose of using runtime parameters in Azure Pipelines?"
+    choices:
+    - content: "To pass dynamic values to a pipeline at queue time."
+      isCorrect: true
+      explanation: "Correct. Runtime parameters allow the user to specify values that can be used in the pipeline definition, such as branch names, stage names, environment names, etc. These values can be entered manually or selected from a predefined list when queueing the pipeline."
+    - content: "To store sensitive information such as passwords and tokens."
+      isCorrect: false
+      explanation: "Incorrect. Sensitive information should be stored in pipeline variables or variable groups, and marked as secrets, to ensure they're encrypted and not exposed in logs or scripts."
+    - content: "To define reusable steps or stages that can be referenced in multiple pipelines."
+      isCorrect: false
+      explanation: "Incorrect. Reusable steps or stages are defined using templates, which are YAML files that can be imported and customized in other pipeline definitions."
+  - content: "What is the benefit of using variable groups in Azure Pipelines?"
+    choices:
+    - content: "To create dynamic variables that can be modified at runtime."
+      isCorrect: false
+      explanation: "Incorrect. Dynamic variables are created using runtime parameters, not variable groups. Variable groups are static and can only be updated manually or by using the Azure CLI."
+    - content: "To group related variables together and link them to different pipelines or stages."
+      isCorrect: true
+      explanation: "Correct. Variable groups allow the user to organize and manage variables that are used across multiple pipelines or stages, and update them in one place. They can also be linked to Azure Key Vault to store secrets."
+    - content: "To encrypt and hide variables from logs and scripts."
+      isCorrect: false
+      explanation: "Incorrect. Encrypting and hiding variables are done by marking them as secrets, not by putting them in variable groups. Variable groups can contain both secrets and nonsecrets."
+  - content: "What is the purpose of using templates in Azure Pipelines?"
+    choices:
+    - content: "To create dynamic pipelines that can be modified at queue time or runtime."
+      isCorrect: false
+      explanation: "Incorrect. Dynamic pipelines are created using runtime parameters, not templates. Templates are static and can only be modified by editing the template file or overriding the parameters."
+    - content: "To define reusable steps or stages that can be referenced in multiple pipelines."
+      isCorrect: true
+      explanation: "Correct. Templates are YAML files that can contain steps, jobs, stages, or parameters that can be imported and customized in other pipeline definitions. They allow the user to avoid duplication and inconsistency, and follow the DRY (Don't Repeat Yourself) principle."
+    - content: "To store sensitive information such as passwords and tokens."
+      isCorrect: false
+      explanation: "Incorrect. Sensitive information should be stored in pipeline variables or variable groups, and marked as secrets, not in templates. Templates are YAML files that can be stored in a repository or a library, and can be viewed or edited by anyone who has access to them."

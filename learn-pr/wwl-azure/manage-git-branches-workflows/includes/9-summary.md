@@ -1,3 +1,4 @@
+
 This module explored Git branching types, concepts, and models for the continuous delivery process. It helped companies define their branching strategy and organization.
 
 You learned how to describe the benefits and usage of:

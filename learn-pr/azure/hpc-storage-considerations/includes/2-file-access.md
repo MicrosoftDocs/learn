@@ -10,16 +10,16 @@ Files can include different kinds of data, including:
 The data is assumed to be in one or more storage solutions in your local environment. Storage architectures in this context include:
 
 - Directly attached disks. That is, each machine in the HPC cluster has its own local storage disks.
-- Storage area network (SAN) solutions.
 - Network-attached storage (NAS) solutions.
+- Storage area network (SAN) solutions.
 
 ![Diagram that shows three storage architectures.](../media/storage-architectures.png)
 
-The data might be created locally by analysts, artists, researchers, or scientists. It might also be periodically acquired from third parties and deposited in your local storage solution.
+Analysts, artists, researchers, or scientists might create the data locally. Or, the data might be periodically acquired from third parties and deposited in your local storage solution.
 
 ## Types of file access
 
-The general file-access use cases we'll discuss in this module are limited to these activities:
+The general file-access use cases we discuss in this module are limited to these activities:
 
 - Loading and running job code, libraries, and/or toolchains on the HPC cluster machines.
 - Reading source data for a job. For example, daily pricing data, genomic data, or satellite data.
@@ -28,7 +28,7 @@ The general file-access use cases we'll discuss in this module are limited to th
 
 ## How do HPC machines get working-set data?
 
-Machines in the HPC cluster access files either through a directly attached disk or through a network export or share. In both cases, the files are presented in a local path (for example, /mnt/data).
+Machines in the HPC cluster access files through a directly attached disk or through a network export or share. In both cases, the files are presented in a local path (for example, /mnt/data).
 
 The code and scripts that make up the actual HPC job assume the files are accessible on this file system and use the machine's file-access capabilities to obtain the files. For example, a machine running Linux that needs to access a file located on a NAS would use the Network File System (NFS) protocol and NFS client packages installed as part of the operating system.
 

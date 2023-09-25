@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-pipelines-azure-machine-learning.video
+title: Video - Run pipelines in Azure Machine Learning
+metadata:
+  title: Video - Run pipelines in Azure Machine Learning
+  description: "Optional video on running pipelines in Azure Machine Learning"
+  ms.date: 07/10/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+  ms.subservice: pipelines
+durationInMinutes: 25
+content: |
+  [!include[](includes/1b-video.md)]

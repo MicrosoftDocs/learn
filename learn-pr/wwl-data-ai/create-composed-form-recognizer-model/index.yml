@@ -1,14 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.create-composed-form-recognizer-model
 metadata:
-  title: Create a composed Form Recognizer model
+  title: Create a composed Azure AI Document Intelligence model
   description: "Learn how to assemble custom models into composed solutions that can analyze different types of your own documents."
   ms.date: 09/22/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Create a composed Form Recognizer model
+  ms.service: applied-ai-services
+  ms.subservice: forms-recognizer 
+title: Create a composed Azure AI Document Intelligence model
 summary: Learn how to assemble custom models into composed solutions that can analyze different types of your own documents.
 abstract: |
   In this module, you will learn to:
@@ -16,7 +17,7 @@ abstract: |
   -	Train a custom model to obtain data from forms with unusual structures.
   -	Create a composed model that can analyze forms in multiple formats.
 prerequisites: |
-  - Basic understanding of Form Recognizer
+  - Basic understanding of Azure AI Document Intelligence
 iconUrl: /training/achievements/create-composed-form-recognizer-model.svg
 levels:
 - intermediate
@@ -24,7 +25,7 @@ roles:
 - ai-engineer
 products:
 - azure-cognitive-search
-- azure-form-recognizer
+- document-intelligence
 subjects:
 - artificial-intelligence
 units:

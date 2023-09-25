@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/12/2023
+  author: Adriamen
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.service: microsoft-365
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What's the difference between AI, data science, and machine learning?"
+    choices:
+    - content: "Machine learning is a technique where a machine sifts through data to find patterns over time. AI is an improved version of machine learning, thanks to LLMs. Data science is the field that makes it possible."
+      isCorrect: false
+      explanation: "Incorrect. Deep learning and reinforcement algorithms powered by massive computing power and applied against big data enable AI. But the algorithms don’t generate the big data."
+    - content: "AI is computer's ability to mimic human-like behavior. Machine learning is a technique that uses algorithms to find patterns in data. Data science is a field that uses machine learning and statistics to achieve AI."
+      isCorrect: true
+      explanation: "Correct. All concepts are related, but AI is technology as a goal, machine learning is a specific technique, and data science is a broader field."
+    - content: "AI is computer's ability to mimic human-like behavior. Machine learning is AI applied to robotics. Data science is the field that prepares data so it can be used in AI projects."
+      isCorrect: false
+      explanation: "Incorrect. Machine learning is a technique that uses algorithms to find patterns over time. Data science prepares data for AI projects, but it also covers the rest of the AI lifecycle."
+  - content: "What AI-powered products could use a salesperson with no coding or AI expertise use to improve sales?"
+    choices:
+    - content: "Microsoft 365 and Microsoft Dynamics 365."
+      isCorrect: true
+      explanation: "Correct. They can use AI embedded in Microsoft 365 to boost their productivity and focus, for example. Microsoft Dynamics 365 delivers specific solutions to improve sales with AI."
+    - content: "Microsoft 365 and Azure Machine Learning."
+      isCorrect: false
+      explanation: "Incorrect. Azure Machine Learning is a platform for data scientists to enable MLOps practices. It's beyond the expertise of our salesperson."
+    - content: "Microsoft 365, Microsoft Power Platform, and MLOps"
+      isCorrect: false
+      explanation: "Incorrect. MLOps is a methodology to improve machine learning processes. It's not a product and it's beyond the expertise of our salesperson."
+  - content: "A manufacturing company that produces machinery wants to develop a solution to extract information from their internal technical documentation. The Chief Digital Officer wants to solve the problem with OpenAI's generative AI. Which option should be recommended for this use case?"
+    choices:
+    - content: "OpenAI's API because it's better to consume the model from its source. This way, you benefit from most up-to-date AI."
+      isCorrect: false
+      explanation: "Incorrect. A specific version of an OpenAI model performs just as well in Azure OpenAI Service. However, using the public API would compromise the privacy of internal data."
+    - content: "Azure OpenAI Service because it doesn't compromise the company's internal documentation."
+      isCorrect: true
+      explanation: "Correct. Azure OpenAI Service delivers OpenAI models while ensuring data privacy. It's the safest option when dealing with confidential data."
+    - content: "GitHub Copilot because it's already based on OpenAI's generative AI, and it's useful in helping write the code."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot may indeed prove useful to develop your application. However, it can only deliver code. To receive insights, you should use the GPT model in Azure OpenAI Service."

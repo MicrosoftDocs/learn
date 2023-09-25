@@ -9,7 +9,7 @@ metadata:
   author: duongau
   ms.author: duau
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/2-routing-traffic-with-front-door.md)]
@@ -32,7 +32,7 @@ quiz:
     - content: " Front Door sends requests to web servers in a round-robin routing method."
       isCorrect: false
       explanation: "Traffic routing methods for origin group can be by latency, priority, weight or by session affinity."
-    - content: "Front Door sends requests to web servers using a 5-tuple hash."
+    - content: "Front Door sends requests to web servers using a five-tuple hash."
       isCorrect: false
       explanation: "Traffic routing methods for origin group can be by latency, priority, weight or by session affinity."
     - content: "Front Door sends requests to the origin with the lowest latency, but can also send requests based on weight, priority or session affinity."

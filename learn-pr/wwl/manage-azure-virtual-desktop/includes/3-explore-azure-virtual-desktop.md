@@ -1,4 +1,5 @@
 
+
 Azure Virtual Desktop is a cloud-based service for desktop and application virtualization. It operates within the cloud infrastructure, offering users secure and remote access to their desktop environments and applications from various devices and locations.
 
 With Azure Virtual Desktop running on Azure, you can:

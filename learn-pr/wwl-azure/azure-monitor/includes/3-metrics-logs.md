@@ -60,150 +60,17 @@ You can create dashboards instantaneously by importing existing charts directly 
 
 The differences between each of the metrics are summarized in the following table.
 
-:::row:::
-  :::column:::
-    **Category**
-  :::column-end:::
-  :::column:::
-    **Native platform metrics**
-  :::column-end:::
-  :::column:::
-    **Native custom metrics**
-  :::column-end:::
-  :::column:::
-    **Prometheus metrics** (preview)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Sources
-  :::column-end:::
-  :::column:::
-    Azure resources
-  :::column-end:::
-  :::column:::
-    Azure Monitor agent
-Application Insights
-Representational State Transfer (REST) Application Programming Interface (API)
-  :::column-end:::
-  :::column:::
-    Azure Kubernetes Service (AKS) cluster
-Any Kubernetes cluster through remote-write
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Configuration
-  :::column-end:::
-  :::column:::
-    None
-  :::column-end:::
-  :::column:::
-    Varies by source
-  :::column-end:::
-  :::column:::
-    Enable Azure Monitor managed service for Prometheus
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Stored
-  :::column-end:::
-  :::column:::
-    Subscription
-  :::column-end:::
-  :::column:::
-    Subscription
-  :::column-end:::
-  :::column:::
-    Azure Monitor workspace
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Cost
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes (free during preview)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Aggregation
-  :::column-end:::
-  :::column:::
-    pre-aggregated
-  :::column-end:::
-  :::column:::
-    pre-aggregated
-  :::column-end:::
-  :::column:::
-    raw data
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Analyze
-  :::column-end:::
-  :::column:::
-    Metrics Explorer
-  :::column-end:::
-  :::column:::
-    Metrics Explorer
-  :::column-end:::
-  :::column:::
-    Prometheus Querying (PromQL) LanguageGrafana dashboards
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Alert
-  :::column-end:::
-  :::column:::
-    metrics alert rule
-  :::column-end:::
-  :::column:::
-    metrics alert rule
-  :::column-end:::
-  :::column:::
-    Prometheus alert rule
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Visualize
-  :::column-end:::
-  :::column:::
-    WorkbooksAzure dashboardGrafana
-  :::column-end:::
-  :::column:::
-    WorkbooksAzure dashboardGrafana
-  :::column-end:::
-  :::column:::
-    Grafana
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Retrieve
-  :::column-end:::
-  :::column:::
-    Azure Command-Line Interface (CLI)Azure PowerShell cmdletsRepresentational State Transfer (REST) Application Programming Interface (API) or client library.NETGoJavaJavaScriptPython
-  :::column-end:::
-  :::column:::
-    Azure Command-Line Interface (CLI)Azure PowerShell cmdletsRepresentational State Transfer (REST) Application Programming Interface (API) or client library.NETGoJavaJavaScriptPython
-  :::column-end:::
-  :::column:::
-    Grafana
-  :::column-end:::
-:::row-end:::
-
+| **Category**  | **Native platform metrics**                                                                                                                                                          | **Native custom metrics**                                                                                                                                                            | **Prometheus metrics** (preview)                                                      |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| Sources       | Azure resources                                                                                                                                                                      | Azure Monitor agent<br>Application Insights<br>Representational State Transfer (REST) Application Programming Interface (API)                                                        | Azure Kubernetes Service (AKS) cluster<br>Any Kubernetes cluster through remote-write |
+| Configuration | None                                                                                                                                                                                 | Varies by source                                                                                                                                                                     | Enable Azure Monitor managed service for Prometheus                                   |
+| Stored        | Subscription                                                                                                                                                                         | Subscription                                                                                                                                                                         | Azure Monitor workspace                                                               |
+| Cost          | No                                                                                                                                                                                   | Yes                                                                                                                                                                                  | Yes (free during preview)                                                             |
+| Aggregation   | pre-aggregated                                                                                                                                                                       | pre-aggregated                                                                                                                                                                       | raw data                                                                              |
+| Analyze       | Metrics Explorer                                                                                                                                                                     | Metrics Explorer                                                                                                                                                                     | Prometheus Querying (PromQL) LanguageGrafana dashboards                               |
+| Alert         | metrics alert rule                                                                                                                                                                   | metrics alert rule                                                                                                                                                                   | Prometheus alert rule                                                                 |
+| Visualize     | WorkbooksAzure dashboardGrafana                                                                                                                                                      | WorkbooksAzure dashboardGrafana                                                                                                                                                      | Grafana                                                                               |
+| Retrieve      | Azure Command-Line Interface (CLI) Azure PowerShell cmdletsRepresentational State Transfer (REST) Application Programming Interface (API) or client library.NETGoJavaJavaScriptPython | Azure Command-Line Interface (CLI) Azure PowerShell cmdletsRepresentational State Transfer (REST) Application Programming Interface (API) or client library.NETGoJavaJavaScriptPython | Grafana                                                                               |
 
 ## Data collection
 

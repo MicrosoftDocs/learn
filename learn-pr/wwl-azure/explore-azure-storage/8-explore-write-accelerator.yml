@@ -4,11 +4,11 @@ title: Explore Write Accelerator
 metadata:
   title: Explore Write Accelerator
   description: "Explore Write Accelerator"
-  ms.date: 04/20/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/8-explore-write-accelerator.md)]

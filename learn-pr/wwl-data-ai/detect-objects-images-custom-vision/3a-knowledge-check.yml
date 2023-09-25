@@ -4,15 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/17/2023
+  ms.date: 08/21/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: artificial-intelligence
+  ms.subservice: custom-vision
 durationInMinutes: 2
 quiz:
+  title: ""
   questions:
   - content: "Which of the following results does an object detection model typically return for an image?"
     choices:
@@ -27,9 +27,9 @@ quiz:
       explanation: "Correct: An object detection model predicts a class label, probability, and bounding box for each object in the image"
   - content: "You plan to use a set of images to train an object detection model, and then publish the model as a predictive service. You want to use a single Azure resource with the same key and endpoint for training and prediction. What kind of Azure resource should you create?"
     choices:
-    - content: "Cognitive Services"
+    - content: "Azure AI services"
       isCorrect: true
-      explanation: "Correct: A cognitive services resource can be used for both training and prediction."
+      explanation: "Correct: An Azure AI services resource can be used for both training and prediction."
     - content: "Custom Vision"
       isCorrect: false
       explanation: "Incorrect: Creating a Custom Vision resource for both training and prediction results in two separate resources being provisioned, each with their own key and endpoint."

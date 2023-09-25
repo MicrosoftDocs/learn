@@ -3,10 +3,10 @@ uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-8-knowledg
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Three multiple-choice questions
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
+  description: Two multiple-choice questions
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -19,9 +19,9 @@ quiz:
         - content: "This script makes an object movable, scalable, and rotatable using one or two hands."
           isCorrect: true
           explanation: The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands.
-        - content: "This script makes an object grabbable from a close distance."
+        - content: "This script helps outline the game object for bodily collisions."
           isCorrect: false
-          explanation: NearInteractionGrabbable component is added to any GameObject that has a collidable on it to make that collidable near grabbable.
+          explanation: Collider component helps approximate the object's mesh and is added to any GameObject that can be manipulated.
         - content: "This script makes an object change color when a user gazes at the object."
           isCorrect: false
           explanation: You must enable eye-tracking to do the above operation.
@@ -30,22 +30,11 @@ quiz:
         - content: "Box Collider Component"
           isCorrect: false
           explanation: Box Colliders are rectangular cuboid and are useful for items such as crates or chests.
-        - content: "Physical Press Event Router Component"
+        - content: "Bounds Control Component"
           isCorrect: false
-          explanation: This script sends events from hand press interaction to Interactable.
-        - content: "Interactable Component"
+          explanation: This script helps display a bounding box across a hologram to suggest it can be interacted with.
+        - content: "StatefulInteractable Component"
           isCorrect: true
-          explanation: Interactable acts as a catch-all for all types of input including touch, hand rays, speech, and funnel these interactions into events and visual theme responses.
-    - content: "What function does ToolTip provide you?"
-      choices:
-        - content: "Provide voice inputs to the objects"
-          isCorrect: false
-          explanation: You must enable Microphone capability to provide speech inputs as commands to the objects.
-        - content: "Provide short descriptions to the objects"
-          isCorrect: true
-          explanation: Tooltips are used to convey a hint or extra information upon closer inspection of an object.
-        - content: "Provide manipulating function to the object"
-          isCorrect: false
-          explanation: Object Manipulator component provides manipulating function to the object.
-      
+          explanation: StatefulInteractable acts as a catch-all for all types of input including touch, hand rays, speech, and funnel these interactions into events and visual theme responses.
+ 
     

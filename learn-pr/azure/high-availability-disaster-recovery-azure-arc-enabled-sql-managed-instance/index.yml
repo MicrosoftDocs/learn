@@ -8,7 +8,8 @@ metadata:
   ms.author: mikeray
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-arc
+  ms.subservice: azure-arc-data-sqlmi
 title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
 summary: Describe high availability and disaster recovery options for Azure Arc-enabled SQL Managed Instance.
 abstract: |

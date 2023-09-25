@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-azure-files-azure-blobs.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/02/2023
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Suppose you have two video files stored as blobs. One of the videos is business-critical and requires a replication policy that creates multiple copies across geographically diverse datacenters. The other video is noncritical, and a local replication policy is sufficient. Which of the following options would satisfy both data diversity and cost sensitivity consideration."
+    choices:
+    - content: "Create a single storage account that makes use of Local-redundant storage (LRS) and host both videos from here."
+      isCorrect: false
+      explanation: "Incorrect. LRS doesn't protect the business-critical data."
+    - content: "Create a single storage account that makes use of Geo-redundant storage (GRS) and host both videos from here."
+      isCorrect: false
+      explanation: "Incorrect. GRS isn't needed for the noncritical data. You can reduce cost by creating two storage accounts."
+    - content: "Create two storage accounts. The first account uses of Geo-redundant storage (GRS) and hosts the business-critical video content. The second account makes use of Local-redundant storage (LRS) and hosts the noncritical video content."
+      isCorrect: true
+      explanation: "Correct. In general, increased diversity means an increased number of storage accounts. A storage account by itself has no financial cost. However, the settings you choose for the account do influence the cost of services in the account. Use multiple storage accounts to reduce costs."
+  - content: "Consider a scenario where data is frequently accessed in the early stages of the lifecycle, but only occasionally after two weeks. After the first month, the data set is rarely accessed. In this scenario, what would you configure?"
+    choices:
+    - content: "Blob replication"
+      isCorrect: false
+      explanation: "Incorrect. Object replication asynchronously copies block blobs between a source storage account and a destination account."
+    - content: "Data redundancy"
+      isCorrect: false
+      explanation: "Incorrect. Data redundancy protects from planned and unplanned events."
+    - content: "Lifecycle management"
+      isCorrect: true
+      explanation: "Correct. A time-based immutable storage policy rule can set conditions and move data between storage tiers."
+  - content: "Your company uses an Azure storage account for storing large numbers of video and audio files. The company wants the ability to revoke access to the files and to change the period for which users can access the files. What should you do?"
+    choices:
+    - content: "Provide a shared access signature (SAS)"
+      isCorrect: true
+      explanation: "Correct. A SAS provides secure delegated access to resources in your storage account. With a SAS, you have granular control to the assets and the permissions."
+    - content: "Provide the storage access key."
+      isCorrect: false
+      explanation: "Incorrect. Access keys provide unrestricted access to the storage resources, which is the requirement for production applications in this scenario."
+    - content: "Provide an encryption scope."
+      isCorrect: false
+      explanation: "Incorrect. Encryption scopes enable you to manage encryption with a key that is scoped to a container or an individual blob. You can use encryption scopes to create secure boundaries between data that resides in the same storage account but belongs to different customers."
+  - content: "Your company is developing an application. The developers want to use the key vault to store secrets and keys. Which method of authenticating to Azure Key Vault is recommended for most scenarios?"
+    choices:
+    - content: "Service principal and certificate"
+      isCorrect: false
+      explanation: "Incorrect. This method isn't recommended because it's difficult to automatically rotate the keys and secrets."
+    - content: "Service principal and secret"
+      isCorrect: false
+      explanation: "Incorrect. This method isn't recommended because the application owner or developer must rotate the certificate."
+    - content: "Managed identities"
+      isCorrect: true
+      explanation: "Correct. The benefit of this approach is that Azure automatically rotates the identity."

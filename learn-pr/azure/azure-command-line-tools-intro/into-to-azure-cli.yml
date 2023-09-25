@@ -8,6 +8,8 @@ metadata:
   author: dbradish-microsoft
   ms.author: dbradish
   ms.topic: module-choose-best-product
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Introduction to the Azure CLI
 durationInMinutes: 3

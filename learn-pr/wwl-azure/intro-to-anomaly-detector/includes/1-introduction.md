@@ -7,17 +7,18 @@ Other scenarios include:
 - evaluating mean time between failures for hardware products
 - comparing month-over-month expenses for product costs
 
-The Azure Anomaly Detector service is a cloud-based service that helps you monitor and detect abnormalities in your historical time series and real-time data.
+Azure AI Anomaly Detector is a cloud-based service that helps you monitor and detect abnormalities in your historical time series and real-time data.
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
 - Describe what anomaly detection is
-- Describe how the Anomaly Detector service can evaluate time series data
+- Describe how Azure AI Anomaly Detector can evaluate time series data
 - Define scenarios where anomaly detection can be applied for real-time and historical data
 
 ## Prerequisites
 
 - Ability to navigate the Azure portal
 - Foundational knowledge of Azure services
+

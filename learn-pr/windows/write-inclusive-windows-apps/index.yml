@@ -4,10 +4,11 @@ metadata:
   title: Add principles of inclusive design to your Windows app
   description: Learn how to incorporate principles of inclusive design to make your Windows app into an experience that supports a wide variety of users.
   ms.date: 5/24/2019
-  author: PeterTurcan
-  ms.author: v-pettur
+  author: Karl-Bridge-Microsoft
+  ms.author: kbridge
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.prod: windows
+  manager: jken
 title: Add principles of inclusive design to your Windows app
 summary: Inclusive app design provides support for users with visual or motor skills impairment. This module will show you how to support such users in a Windows app.
 abstract: |

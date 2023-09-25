@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/06/2023
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -17,21 +17,21 @@ quiz:
     choices:
     - content: "Functions Premium Plan"
       isCorrect: false
-      explanation: "That's incorrect. The Premium Plan does support scaling, but it isn't predictive."
+      explanation: "Incorrect. The Premium Plan does support scaling, but it isn't predictive."
     - content: "Dedicated plan"
       isCorrect: true
-      explanation: "That's correct. Dedicated plans run in App service which supports setting autoscaling rules based on predictive usage."
+      explanation: "Correct. Dedicated plans run in App service which supports setting autoscaling rules based on predictive usage."
     - content: "Consumption plan"
       isCorrect: false
-      explanation: "That's incorrect. The Consumption plan does support scaling, but it isn't predictive."
+      explanation: "Incorrect. The Consumption plan does support scaling, but it isn't predictive."
   - content: "An organization wants to implement a serverless workflow to solve a business problem. One of the requirements is the solution needs to use a designer-first (declarative) development model. Which of the choices below meets the requirements?"
     choices:
     - content: "Azure Functions"
       isCorrect: false
-      explanation: "That's incorrect. Azure Functions uses a code-first (imperative) development model."
+      explanation: "Incorrect. Azure Functions uses a code-first (imperative) development model."
     - content: "Azure Logic Apps"
       isCorrect: true
-      explanation: "That's correct. Azure Logic Apps enables serverless workloads and uses a designer-first (declarative) development model."
+      explanation: "Correct. Azure Logic Apps enables serverless workloads and uses a designer-first (declarative) development model."
     - content: "WebJobs"
       isCorrect: false
-      explanation: "That's incorrect. WebJobs are a code-first (imperative) development model."
+      explanation: "Incorrect. WebJobs are a code-first (imperative) development model."

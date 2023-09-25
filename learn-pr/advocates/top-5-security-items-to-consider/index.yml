@@ -6,18 +6,17 @@ metadata:
   description: Learn about the Site Reliability Engineering approach to the challenge of assuring reliability and gain a better understanding of why it matters.
   author: patridge
   ms.author: adpatrid
-  ms.date: 09/24/2018
+  ms.date: 05/26/2023
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Top 5 security items to consider before pushing to production
 summary: Secure your web applications on Azure and protect your apps against the most common and dangerous web application attacks.
 abstract: | 
  In this module, you will:
-  - Use Microsoft Defender for Cloud
-  - Verify your application's inputs and outputs
-  - Store your secrets into Key Vault
-  - Ensure you are using the latest version of your framework, and its security features
-  - Validate that your program dependencies and libraries are safe to use
+  - Use Microsoft Defender for Cloud.
+  - Verify your application's inputs and outputs.
+  - Store your secrets into Key Vault.
+  - Ensure you are using the latest version of your framework, and its security features.
+  - Validate that your program dependencies and libraries are safe to use.
 prerequisites: None
 iconUrl: /training/achievements/top-5-security-items-to-consider.svg
 levels:

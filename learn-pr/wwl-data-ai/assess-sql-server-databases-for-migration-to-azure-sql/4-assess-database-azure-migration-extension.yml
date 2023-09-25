@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.assess-database-azure-migration-extension
+title: Assess a database with Azure Migration extension
+metadata:
+  title: Assess a database with Azure Migration extension
+  description: "Assess a database using Azure migration extension for Azure Data Studio."
+  ms.date: 05/23/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-assess-database-azure-migration-extension.md)]

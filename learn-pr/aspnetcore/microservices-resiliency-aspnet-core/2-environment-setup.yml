@@ -2,10 +2,11 @@
 uid: learn.microservices-resiliency-aspnet-core.2-environment-setup
 metadata:
   title: Exercise - Set up the environment
-  description: Provision Azure resources, download the eShopOnContainers starter solution, and configure the learning environment.
+  description: Provision Azure resources, download the eShopOnContainers starter solution, and configure the learning environment for this tutorial.
   author: scottaddie
   ms.author: scaddie
-  ms.date: 08/04/2020
+  ms.manager: markl
+  ms.date: 05/09/2023
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial
 title: Exercise - Set up the environment

@@ -50,7 +50,7 @@ To get all the possible points for security control, all of your **resources mus
     
     
      -  :::image type="content" source="../media/preview-icon-d9b46adc.png" alt-text="Screenshot of preview icon.":::
-         **Preview recommendation** \- This recommendation won't affect your secure score until it's **GA**.
+         **Preview recommendation** \- This recommendation won't affect your secure score until **general availability (GA)**.
      -  :::image type="content" source="../media/fix-icon-c7b18e7c.png" alt-text="Screenshot of fix icon.":::
          **Fix** \- From within the recommendation details page, you can use '**Fix**' to resolve this issue.
      -  :::image type="content" source="../media/enforce-icon-cd64da95.png" alt-text="Screenshot of enforce icon.":::

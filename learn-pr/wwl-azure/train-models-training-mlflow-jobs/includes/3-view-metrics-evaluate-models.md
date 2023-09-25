@@ -1,5 +1,6 @@
 
 
+
 After you've trained and tracked models with MLflow in Azure Machine Learning, you can explore the metrics and evaluate your models. 
 
 - Review metrics in the Azure Machine Learning studio.
@@ -32,11 +33,11 @@ When you run a training script as a job in Azure Machine Learning, and track you
 
 When using MLflow to query your runs, you'll refer to experiments and runs. 
 
-### List all the experiments
+### Search all the experiments
 You can get all the active experiments in the workspace using MLFlow:
 
 ```python
-experiments = mlflow.list_experiments(max_results=2)
+experiments = mlflow.search_experiments(max_results=2)
 for exp in experiments:
     print(exp.name)
 ```
@@ -46,7 +47,7 @@ If you want to retrieve archived experiments too, then include the option `ViewT
 ```python
 from mlflow.entities import ViewType
 
-experiments = mlflow.list_experiments(view_type=ViewType.ALL)
+experiments = mlflow.search_experiments(view_type=ViewType.ALL)
 for exp in experiments:
     print(exp.name)
 ```

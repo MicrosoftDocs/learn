@@ -38,3 +38,4 @@ modules:
 - learn.wwl.explore-azure-digital-twins-implementation
 trophy:
   uid: learn.wwl.extend-iot-solutions-by-using-azure-digital-twins.trophy
+hidden: true

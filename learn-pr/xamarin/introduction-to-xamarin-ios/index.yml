@@ -7,7 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-ios
 title: Introduction to Xamarin.iOS
 summary: "Use Visual Studio and the Xamarin tools to create a Xamarin.iOS application. You design a UI in code and then provide behavior to create a tip calculator."
 abstract: |
@@ -18,6 +19,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/introduction-to-xamarin-ios-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

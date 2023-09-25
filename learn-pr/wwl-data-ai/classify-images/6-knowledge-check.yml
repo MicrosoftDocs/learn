@@ -6,15 +6,15 @@ metadata:
   description: "Knowledge check"
   ms.date: 08/20/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You want to train a model that can categorize an image as \"cat\" or \"dog\" based on its subject. What kind of Custom Vision project should you create?"
+  - content: "You want to train a model that can categorize an image as \"cat\" or \"dog\" based on its subject. What kind of Azure AI Custom Vision project should you create?"
     choices:
     - content: "Image classification (multiclass)"
       isCorrect: true
@@ -25,14 +25,14 @@ quiz:
     - content: "Object detection"
       isCorrect: false
       explanation: "That's incorrect. To train a model that classifies an image using a single tag, use an Image classification (multiclass) project."
-  - content: "Which of the following kinds of Azure resource can you use to host a trained Custom Vision model?"
+  - content: "Which of the following kinds of Azure resource can you use to host a trained Azure AI Custom Vision model?"
     choices:
-    - content: "Custom Vision (Training)"
+    - content: "Azure AI Custom Vision (Training)"
       isCorrect: false
-      explanation: "That's incorrect. You can publish a trained Custom Vision model to either a Custom Vision (Prediction) resource (which is not an option here) or a Cognitive Services resource."
-    - content: "Computer Vision"
+      explanation: "That's incorrect. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource (which is not an option here) or an Azure AI Services resource."
+    - content: "Azure AI Vision"
       isCorrect: false
-      explanation: "That's incorrect. You can publish a trained Custom Vision model to either a Custom Vision (Prediction) resource (which is not an option here) or a Cognitive Services resource."
-    - content: "Cognitive Services"
+      explanation: "That's incorrect. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource (which is not an option here) or an Azure AI Services resource."
+    - content: "Azure AI Services"
       isCorrect: true
-      explanation: "That's correct. You can publish a trained Custom Vision model to either a Custom Vision (Prediction) resource (which is not an option here) or a Cognitive Services resource."
+      explanation: "That's correct. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource (which is not an option here) or an Azure AI Services resource."

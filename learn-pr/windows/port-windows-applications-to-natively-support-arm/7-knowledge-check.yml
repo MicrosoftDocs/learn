@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.learn-windows-on-arm.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Test your knowledge on adding Arm support to Windows applications."
+  ms.date: 5/6/2023
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: module-standard-task-based
+  ms.prod: windows
+  ms.technology: arm
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is the main motivation behind adding an Arm build to an existing Windows application?"
+    choices:
+    - content: "Arm devices are less expensive"
+      isCorrect: false
+      explanation: "While some Arm-based hardware is less expensive, this isn't guaranteed."
+    - content: "The inability to run x86/x64 applications on Windows on Arm"
+      isCorrect: false
+      explanation: "x86 and x64 based applications can run unmodified on Windows on Arm using emulation."
+    - content: "To take full advantage of powerful hardware that is power-frugal and provides longer battery life."
+      isCorrect: true
+      explanation: "Arm-based devices are popular because of their power-frugal nature, longer battery life, and impressive processing power. Additionally, Windows on Arm includes support for Neural Processing Units (NPU) tuned for AI and machine learning workloads. The best performance is attained by providing an Arm-native build of the application versus using emulation."
+  - content: "Your Windows application has a large and complex codebase with multiple plugins and dependencies. You've added an Arm64 configuration, but are struggling to get a successful rebuild. What is the best approach to move forward with supporting your application on Arm devices?"
+    choices:
+    - content: "Rebuild your app using Arm64EC"
+      isCorrect: false
+      explanation: "Arm64EC does enable running x64 and Arm64 code side by side, but is a more advanced and intensive route to solve your issue. Your first approach should be to investigate whether there already may be existing Arm versions available (or in progress). You also may consider rebuilding an Arm-native version of the dependencies or plugins."
+    - content: "Identify any dependencies or plugins and determine if there's an Arm-supported version available."
+      isCorrect: true
+      explanation: "Rebuild any internal dependencies adding Arm support. For open source dependencies, check online (places like the vcpkg site) to see whether an Arm version may already exist. If your app uses a kernel driver, rebuild the driver as native Arm64 using the WDK. If there are essential dependencies that can't be rebuilt for Arm, consider using Arm64EC to rebuild your app."
+    - content: "Remove or replace the dependencies or plugins on your app."
+      isCorrect: false
+      explanation: "While an acceptable solution, you don't want the user experience on your app to change drastically to support Arm-based devices. Rebuilding or finding Arm-versions of dependencies and plugins should definitely be a first approach before giving up on them."
+  - content: "When adding an ARM64 build to a Windows application with a goal to have a 100% Arm-native build, you find a 3rd-party dependency that doesn't support Arm. What is the first step to fix this problem?"
+    choices:
+    - content: "Provide an ARM64EC build"
+      isCorrect: false
+      explanation: "An ARM64EC build allows for both Arm code and x64 code to run side by side. However, this doesn't satisfy the goal of having a complete Arm-native build."
+    - content: "Reach out to the 3rd party dependency owner and ask for an Arm build"
+      isCorrect: true
+      explanation: "Reaching out to the 3rd party dependency owner and asking for an Arm build is a good first step in attaining the goal of having a 100% Arm-native build."
+    - content: "Commission an organization that specializes in updating code to support Arm"
+      isCorrect: false
+      explanation: "While a valid step in attaining a complete Arm-native build, it is best to reach out to the dependency owner first."
+  - content: "After achieving a successful rebuild of your Windows application that now supports running natively on Arm64 devices, what should your next step should be?"
+    choices:
+    - content: "Update your installer and publish the Arm version of your Windows app to the Microsoft Store"
+      isCorrect: false
+      explanation: "You should first test your new Arm64 app, ensuring it has parity with the x64/x86 version of your app, and debugging any issues."
+    - content: "Add an Arm32 version of your Windows app"
+      isCorrect: false
+      explanation: "Arm32 is no longer supported on Windows."
+    - content: "Test and debug your newly built Arm64 app."
+      isCorrect: true
+      explanation: "If you're developing on a Windows on Arm device, then testing and debugging can be done right on your device using Visual Studio with local debugging. If cross-compiling (using a device not running on an Arm-processor), you can use remote debugging on a Windows on Arm device or use a virtual machine running Arm."
+  - content: "You've deployed an Arm64 version to a customer Arm device. The customer is experiencing runtime errors with the application. How do you debug the application?"
+    choices:
+    - content: "Install Remote Tools for Visual Studio on the Windows on Arm device."
+      isCorrect: true
+      explanation: "Installing Remote tools for Visual Studio on the Windows on Arm device allows you to remotely debug the application from a Visual Studio instance running on your local machine."
+    - content: "Install Visual Studio for Arm on the Windows on Arm device."
+      isCorrect: false
+      explanation: "Installing Visual Studio for Arm and running the code locally on the Arm device is a valid solution, however this is a customer's device. Having the customer install Remote Tools for Visual Studio is a better solution to enable remote debugging."
+    - content: "Reinstall the .NET runtime on the Windows on Arm device."
+      isCorrect: false
+      explanation: "Reinstalling the .NET runtime won't change the behavior of the application. You need to debug the application to determine the root cause of the runtime errors."

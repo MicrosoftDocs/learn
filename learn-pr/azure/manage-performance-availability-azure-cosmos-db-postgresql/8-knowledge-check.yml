@@ -30,20 +30,20 @@ quiz:
       explanation: "Try again. IOPS are scaled with storage."
   - content: "How many read replicas can Woodgrove Bank have?"
     choices:
-    - content: "Five read replicas per region"
+    - content: "Five read replicas per region."
       isCorrect: false
       explanation: "Try again. There are considerations for read replicas to know when working with them."
-    - content: "As many as they need - there's no limit"
+    - content: "As many as they need - there's no limit."
       isCorrect: false
       explanation: "Try again. There are considerations for read replicas to know when working with them."
-    - content: "Five read replicas in total"
+    - content: "Five read replicas in total."
       isCorrect: true
       explanation: "There's a limit of five read replicas for a primary cluster."
   - content: "High availability is enabled on the Woodgrove Bank cluster. One of the worker nodes is experiencing issues. Based on this information, when should you expect the node to fail over?"
     choices:
     - content: "Immediately on error"
       isCorrect: false
-      explanation: "Try again. Failover won't happen until the node is declared down."
+      explanation: "Try again. Failover doesn't happen until the node is declared down."
     - content: "After the fourth failed health check"
       isCorrect: true
       explanation: "After four failed health checks, a node is declared down and failover is triggered."

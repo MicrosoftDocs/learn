@@ -4,12 +4,11 @@ title: Design an Azure subscription management plan
 metadata:
   title: Design an Azure subscription management plan
   description: "Design an Azure subscription management plan"
-  ms.date: 02/27/2023
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/11-azure-subscription-management.md)]

@@ -6,9 +6,11 @@ metadata:
   description: "Learn how to design a UI for a .NET MAUI app using XAML"
   ms.date: 04/29/2022
   author: codemillmatt 
-  ms.author: masoucou 
+  ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.prod: dotnet-mobile
+  ms.technology: dotnet-maui
 title: Create a UI in a .NET MAUI app by using XAML
 summary: "Learn how to design a UI for a .NET MAUI app using XAML"
 abstract: |

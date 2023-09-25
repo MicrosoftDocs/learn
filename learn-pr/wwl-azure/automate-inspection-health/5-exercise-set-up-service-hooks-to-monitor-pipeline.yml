@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-inspection-of-health.exercise-set-up-service-hooks-to-monitor-pipeline
-title: Exercise - Set up service hooks to monitor the pipeline
+title: Exercise - set up service hooks to monitor the pipeline
 metadata:
-  title: Exercise - Set up service hooks to monitor the pipeline
-  description: "Exercise - Set up service hooks to monitor the pipeline"
-  ms.date: 11/01/2022
+  title: Exercise - set up service hooks to monitor the pipeline
+  description: "Exercise - set up service hooks to monitor the pipeline"
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/5-exercise-set-up-service-hooks-to-monitor-pipeline.md)]

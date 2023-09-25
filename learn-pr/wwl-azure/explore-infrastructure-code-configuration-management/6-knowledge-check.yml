@@ -4,14 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/09/2022
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.prod: azure
+durationInMinutes: 5
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
@@ -20,14 +18,14 @@ quiz:
   - content: "Which of the following choices represents when using this approach the methodology of HOW a state is achieved is abstracted away?"
     choices:
     - content: "Imperative."
-      isCorrect: false
-      explanation: "Incorrect. The declarative approach abstracts away the methodology of how a state is achieved."
-    - content: "Declarative."
       isCorrect: true
-      explanation: "Correct. The declarative approach abstracts away the methodology of how a state is achieved."
+      explanation: "Correct. In the imperative approach, the script states the how for the final state of the machine by executing the steps to get to the finished state."
+    - content: "Declarative."
+      isCorrect: false
+      explanation: "Incorrect. The declarative approach states what the final state should be."
     - content: "Exclamatory."
       isCorrect: false
-      explanation: "Incorrect. The declarative approach abstracts away the methodology of how a state is achieved."
+      explanation: "Incorrect. There are two main methods of approach: Declarative and Imperative."
   - content: "Which of the following choices is defines the ability to apply one or more operations against a resource, resulting in the same outcome every time?"
     choices:
     - content: "Increment."

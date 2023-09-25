@@ -3,16 +3,16 @@ uid: learn.azure.intro-to-arc-for-servers
 metadata:
   title: Introduction to Azure Arc-enabled servers
   description: This module introduces you to Azure Arc-enabled servers and describes its characteristics, capabilities, and use cases.
-  ms.date: 12/01/2021
-  author: JnHs
-  ms.author: jenhayes
+  ms.date: 05/22/2023
+  author: johnmarco
+  ms.author: johnmarc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: e2e-hybrid
+  ms.service: azure-arc
 title: Introduction to Azure Arc-enabled servers
 summary: This module introduces you to Azure Arc-enabled servers and describes its characteristics, capabilities, and use cases.
 abstract: |
-  By the end of this module, you will be able to answer:
+  By the end of this module, you'll be able to answer:
   - What are the characteristics of Azure Arc-enabled servers?
   - What are the core capabilities of Azure Arc-enabled servers?
   - How can you simplify management and maintenance of Azure Arc-enabled servers?

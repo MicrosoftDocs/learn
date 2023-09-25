@@ -9,7 +9,7 @@ metadata:
   ms.author: orthomas
   ms.custom: team=cloud_advocates
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: network-watcher
 title: Introduction to Azure Network Watcher
 summary: Azure Network Watcher allows your organization to detect and monitor issues related to the network performance of infrastructure as a service (IaaS) resources in Microsoft Azure. This module explains what Network Watcher does, how it works, and when you should choose to use Network Watcher as a solution to meet your organization's needs.  
 abstract: |

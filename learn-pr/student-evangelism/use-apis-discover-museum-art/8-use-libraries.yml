@@ -8,7 +8,11 @@ metadata:
   ms.author: chnoring 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-extended-java
+    - devx-track-js
+    - devx-track-python
   zone_pivot_groups: dev-lang-javascript-powershell-python-csharp
 title: Use libraries
 durationInMinutes: 5
