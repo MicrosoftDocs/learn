@@ -27522,6 +27522,11 @@
       "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/2-zero-trust-overview.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-securing-data/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-organization-data",
+      "redirect_document_id": false
     }
   ]
 }
