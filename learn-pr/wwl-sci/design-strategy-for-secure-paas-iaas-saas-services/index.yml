@@ -44,7 +44,6 @@ units:
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-requirements-for-storage-workloads
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-requirements-for-containers
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-requirements-for-container-orchestration
-- learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.exercise
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.knowledge-check
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.summary
 badge:
