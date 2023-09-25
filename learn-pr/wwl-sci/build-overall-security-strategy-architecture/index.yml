@@ -32,7 +32,6 @@ subjects:
 - architecture
 - security
 units:
-- learn.wwl.build-overall-security-strategy-architecture.introduction
 - learn.wwl.build-overall-security-strategy-architecture.zero-trust-overview
 - learn.wwl.build-overall-security-strategy-architecture.translate-security-requirements-into-technical-capabilities
 - learn.wwl.build-overall-security-strategy-architecture.knowledge-check
