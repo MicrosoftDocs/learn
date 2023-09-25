@@ -30,7 +30,6 @@ subjects:
 - cloud-security
 - security
 units:
-- learn.wwl.use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks.recommend-for-zero-trust-security
 - learn.wwl.use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks.summary
 badge:
   uid: learn.wwl.use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks.badge
