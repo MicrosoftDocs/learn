@@ -33,7 +33,6 @@ subjects:
 - architecture
 - security
 units:
-- learn.wwl.design-identity-security-strategy.secure-conditional-access
 - learn.wwl.design-identity-security-strategy.summary
 badge:
   uid: learn.wwl.design-identity-security-strategy.badge
