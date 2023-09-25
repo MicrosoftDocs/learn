@@ -34,7 +34,6 @@ subjects:
 - architecture
 - security
 units:
-- learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.introduction
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-baselines-for-paas-services
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-baselines-for-iaas-services
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-baselines-for-saas-services
