@@ -2242,3 +2242,8 @@ achievements:
   title: Design a strategy for securing server and client endpoints
   summary: Learn how to design a cybersecurity strategy to secure server and client endpoints.
   iconUrl: /training/achievements/2-design-a-strategy-for-securing-server-and-client-endpoints.svg
+- uid: learn.wwl.build-overall-security-strategy-architecture.badge
+  type: badge
+  title: Build an overall security strategy and architecture
+  summary: Learn how to build an overall security strategy and architecture with zero trust in mind.
+  iconUrl: /training/achievements/build-overall-security-strategy-architecture.svg
