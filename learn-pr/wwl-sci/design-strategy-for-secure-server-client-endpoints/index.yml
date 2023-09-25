@@ -41,7 +41,6 @@ units:
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.specify-requirements-active-directory-domain-services
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.secure-remote-access
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.plan-for-endpoint-forensics
-- learn.wwl.design-strategy-for-secure-server-client-endpoints.exercise
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.knowledge-check
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.summary
 badge:
