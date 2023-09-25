@@ -6,11 +6,11 @@ In this unit, you'll learn how to create and invoke an Azure function using an H
 
 An HTTP trigger is a trigger that executes a function when it receives an HTTP request. HTTP triggers have many capabilities and customizations, including:
 
-- Provide authorized access by supplying keys.
-- Restrict which HTTP verbs are supported.
-- Return data back to the caller.
-- Receive data through query string parameters or through the request body.
-- Support URL route templates to modify the function URL.
+- Providing authorized access by supplying keys.
+- Restricting which HTTP verbs are supported.
+- Returning data back to the caller.
+- Receiving data through query string parameters or through the request body.
+- Supporting URL route templates to modify the function URL.
 
 When you create an HTTP trigger, you need to select a programming language, provide a trigger name, and select an Authorization level.
 
@@ -40,6 +40,6 @@ To invoke an HTTP trigger, you send an HTTP request to the URL for your function
 
 ![Screenshot of the Azure portal showing a Functions App pane with the app's Get function URL button highlighted.](../media/5-function-url.png)
 
-After you have the URL for your function, you can send HTTP requests. If your function receives data, remember that you can either use query string parameters or supply the data through the request body.
+After you have the URL for your function, you can send HTTP requests. If your function receives data, remember that you can either use query-string parameters or supply the data through the request body.
 
 An HTTP trigger invokes an Azure function when it receives an HTTP request to its function URL. HTTP triggers allow you to receive data and return data back to the caller.

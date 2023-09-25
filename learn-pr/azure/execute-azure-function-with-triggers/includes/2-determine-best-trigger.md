@@ -16,12 +16,12 @@ Azure Functions supports a wide range of trigger types. Here are some of the mos
 
 | Type | Purpose |
 | --- | --- |
-| **Timer** | Execute a function at a set interval. |
-| **HTTP** | Execute a function when an HTTP request is received. |
-| **Blob** | Execute a function when a file is uploaded or updated in Azure Blob storage. |
-| **Queue** | Execute a function when a message is added to an Azure Storage queue. |
-| **Azure Cosmos DB** | Execute a function when a document changes in a collection. |
-| **Event Hub** | Execute a function when an event hub receives a new event. |
+| **Timer** | Execute a function at a set interval |
+| **HTTP** | Execute a function when an HTTP request is received |
+| **Blob** | Execute a function when a file is uploaded or updated in Azure Blob storage |
+| **Queue** | Execute a function when a message is added to an Azure Storage queue |
+| **Azure Cosmos DB** | Execute a function when a document changes in a collection |
+| **Event Hub** | Execute a function when an event hub receives a new event |
 
 ## What is a binding?
 

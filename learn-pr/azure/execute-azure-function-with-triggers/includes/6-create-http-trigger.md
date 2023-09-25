@@ -10,9 +10,9 @@ Let's continue using our existing Azure Functions app and add an HTTP trigger.
 
 1. Select your Function App identified under the *Type* column. Your **Function App** pane appears.
 
-1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
+1. Select the **Functions** tab in the center of the screen.
 
-1. On the top menu bar, select **Create**. This action starts the function creation process. The **Create function** pane appears.
+1. Select the **Create** button at the top of the **Functions** tab. This action starts the function creation process. The **Create function** pane appears.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
@@ -31,7 +31,6 @@ Now that we've created the HTTP trigger, let's get the function URL so we can be
 ## Issue a GET request to your HTTP trigger
 
 Let's issue a GET request for the URL to see if we get a response.
-
 
 1. Open a new tab in your web browser.
 
