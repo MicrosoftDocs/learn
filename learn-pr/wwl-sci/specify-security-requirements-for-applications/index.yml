@@ -29,7 +29,6 @@ subjects:
 - architecture
 - security
 units:
-- learn.wwl.specify-security-requirements-for-applications.introduction
 - learn.wwl.specify-security-requirements-for-applications.understand-application-threat-modeling
 - learn.wwl.specify-security-requirements-for-applications.specify-priorities-for-mitigate-threats-to-applications
 - learn.wwl.specify-security-requirements-for-applications.standard-for-onboarding-new-application
