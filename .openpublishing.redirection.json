@@ -27302,6 +27302,11 @@
       "source_path": "learn-pr/wwl-sci/design-security-operations-strategy/10-exercise.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-operations",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-security-operations-strategy/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-operations",
+      "redirect_document_id": false
     }
   ]
 }
