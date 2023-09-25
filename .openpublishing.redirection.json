@@ -27772,6 +27772,11 @@
       "source_path": "learn-pr/wwl-sci/recommend-secure-methodology-using-cloud-adoption-framework-caf/3-recommend-methodology-for-asset-protection.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/recommend-secure-methodology-using-cloud-adoption-framework-caf/4-recommend-strategies-for-managing-minimizing-risk.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/",
+      "redirect_document_id": false
     }
   ]
 }
