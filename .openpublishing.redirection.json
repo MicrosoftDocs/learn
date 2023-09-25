@@ -27482,6 +27482,11 @@
       "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/8-design-technical-governance-strategies-for-traffic-filtering-segmentation.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/build-overall-security-strategy-architecture/3-develop-integration-points-architecture.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-zero-trust-best-practice-frameworks",
+      "redirect_document_id": false
     }
   ]
 }
