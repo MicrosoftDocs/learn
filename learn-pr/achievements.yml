@@ -2277,3 +2277,8 @@ achievements:
   title: Recommend a secure methodology using the Cloud Adoption Framework (CAF)
   summary: You'll learn how to use the Cloud Adoption Framework to recommend security best practices that help an organization move to the cloud while improving overall security posture.
   iconUrl: /training/achievements/recommend-secure-methodology-using-cloud-adoption-framework-caf.svg
+- uid: learn.wwl.specify-security-requirements-for-applications.badge
+  type: badge
+  title: Specify security requirements for applications
+  summary: Learn how to specify cybersecurity requirements for applications.
+  iconUrl: /training/achievements/1-specify-security-requirements-for-applications.svg
