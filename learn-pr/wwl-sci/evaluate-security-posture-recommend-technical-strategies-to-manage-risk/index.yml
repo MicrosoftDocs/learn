@@ -37,7 +37,6 @@ subjects:
 - architecture
 - security
 units:
-- learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.postures-use-benchmarks
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.postures-use-microsoft-defender-for-cloud
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.postures-use-secure-scores
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.recommend-security-capabilities-controls-to-mitigate-identified-risks
