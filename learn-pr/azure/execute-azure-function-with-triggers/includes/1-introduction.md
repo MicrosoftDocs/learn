@@ -20,4 +20,4 @@ This module uses the Azure portal to create and test your function code. Functio
 - Python
 - PowerShell
 
-Azure Functions supports uther languages such as Java, TypeScript, Go, and Rust through local development tools. You can read more about the supported languages, tools, and features of Azure Functions in the [developer guide](/azure/azure-functions/functions-reference).
+Azure Functions supports other languages such as Java, TypeScript, Go, and Rust through local development tools. You can read more about the supported languages, tools, and features of Azure Functions in the [developer guide](/azure/azure-functions/functions-reference).
