@@ -22,7 +22,7 @@ Once you have created a repository with the correct permissions, you can make it
 1. On GitHub.com, navigate to the main page of the repository.
 1. Under the repository name, select **Settings**. If you can't the see the **Settings** tab, select the dropdown menu, then select **Settings**.
 
-    :::image type="content" source="../media/repo-actions-settings.png" alt-text="Screenshot showing where to locate the settings button in your GitHub repository.":::
+    :::image type="content" source="../media/repository-actions-settings.png" alt-text="Screenshot showing where to locate the settings button in your GitHub repository.":::
 
 1. Select **Template repository**.
 
@@ -88,15 +88,15 @@ There are several ways you can oversee the security and management of your repos
 
 To manage changes to content within your repository, you can create [branch protection rules](https://docs.github.com/github/administering-a-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) to enforce certain workflows for one or more branches. Protection rules that can be applied to a branch include:
 
-- Require a pull request before merging
-- Require status checks to pass before merging
-- Require conversation resolution before merging
-- Require signed commits
-- Require linear history
-- Require merge queue
-- Require deployments to succeed before merging
-- Optionally, you can lock the branch by making it read-only
-- Restrict who can push to matching branches
+- Require a pull request before merging.
+- Require status checks to pass before merging.
+- Require conversation resolution before merging.
+- Require signed commits.
+- Require linear history.
+- Require merge queue.
+- Require deployments to succeed before merging.
+- Optionally, you can lock the branch by making it read-only.
+- Restrict who can push to matching branches.
 
 Additionally, you can set branch rules that apply to everyone, including administrators, such as allowing force pushes to matching branches and allowing deletions from users with push access.
 
@@ -115,7 +115,7 @@ To access the traffic graph:
 1. On GitHub.com, navigate to the main page of the repository.
 1. Under your repository name, select **insights**.
 
-    :::image type="content" source="../media/repo-nav-insights-tab.png" alt-text="Screenshot showing where to locate the insights button in GitHub.":::
+    :::image type="content" source="../media/repository-navigation-insights-tab.png" alt-text="Screenshot showing where to locate the insights button in GitHub.":::
 
 1. In the left sidebar, select **traffic**.
 
