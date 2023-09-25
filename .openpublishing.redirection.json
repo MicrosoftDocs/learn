@@ -27687,6 +27687,11 @@
       "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/2-interpret-compliance-requirements-their-technical-capabilities.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/4-interpret-compliance-scores-recommend-actions.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
     }
   ]
 }
