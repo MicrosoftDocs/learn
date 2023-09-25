@@ -27822,6 +27822,11 @@
       "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-security-requirements-for-applications/4-understand-application-threat-modeling.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-applications",
+      "redirect_document_id": false
     }
   ]
 }
