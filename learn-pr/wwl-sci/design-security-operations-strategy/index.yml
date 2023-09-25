@@ -34,7 +34,6 @@ subjects:
 - security
 units:
 - learn.wwl.design-security-operations-strategy.understand-frameworks-processes-procedures
-- learn.wwl.design-security-operations-strategy.review-security-strategies-for-incident-management
 - learn.wwl.design-security-operations-strategy.summary
 badge:
   uid: learn.wwl.design-security-operations-strategy.badge
