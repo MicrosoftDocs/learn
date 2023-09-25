@@ -1,13 +1,13 @@
 Azure Storage Explorer isn't just about storage accounts. You can also use it to investigate and download data from Azure Data Lake Storage.
 
-You've seen how simple it's to create and manage blob and queue resources in your Azure storage account. Now you want to push your understanding further and see how the storage account connects to your developers' data lake, which they use to store infrastructure data for the CRM system.
+You've learned how simple creating and managing blob and queue resources in your Azure storage account is. Now you want to push your understanding further and learn how the storage account connects to your developers' data lake, which they use to store infrastructure data for the CRM system.
 
 Azure Data Lake Storage Gen2 isn't a dedicated service or account type. It's a set of capabilities that you unlock by enabling the hierarchical namespace feature of an Azure Storage account.
 Here, you'll learn how to use Storage Explorer to connect to Azure Data Lake Storage Gen2, create a container, and upload data into it.
 
 ## Create a storage account with Azure Data Lake Storage Gen2 capabilities
 
-Let's now look at connecting to a Data Lake Storage Gen2 enabled account. Before you can use Storage Explorer to manage your Data Lake Storage Gen2 enabled account, you need to create the storage account in Azure.
+Let's look at connecting to a Data Lake Storage Gen2-enabled account. Before you can use Storage Explorer to manage your Data Lake Storage Gen2-enabled account, you need to create the storage account in Azure.
 
 To create the Gen2 storage account, use the **az storage account create** command:
 
@@ -22,7 +22,7 @@ To create the Gen2 storage account, use the **az storage account create** comman
    ```
 
   > [!NOTE]
-  > Please give the Storage Account several minutes to complete.
+  > Please give the storage account several minutes to complete.
 
 ## Connect to your Data Lake Gen2 enabled storage account
 
@@ -31,7 +31,7 @@ Now that you've created a Gen2 enabled storage account, Storage Explorer should 
 1. In Storage Explorer, in the **EXPLORER** pane, locate **Concierge Subscription** and expand it to show all the storage accounts.
 
     > [!NOTE]
-    > It might take several minutes for the storage account to display in Storage Explorer.
+    > It might take several minutes for the storage account to display in Storage Explorer. If you don't see the storage account, wait a few moments and select **Refresh all**.
 
 1. You'll see the **dlsstoragetest001 (ADLS Gen2)** storage account displayed under the storage accounts. Your account will have a different number suffix.
 
@@ -55,11 +55,13 @@ All containers in a Data Lake Gen2 enabled storage account are blobs. To create 
 
 With the new **myfilesystem** container created, you can now upload files or folders to it.
 
-1. To upload a file, select the **Upload** option, and select **Upload Files**.
+1. To upload a file, select the **Upload** option, then select **Upload Files**.
 
     ![Screenshot that shows the upload options.](../media/5-data-lake-container-upload-options.png)
 
 1. In the dialog box, use the ellipsis (**...**) to select the file that you want to upload.
+
+1. Select the file you want to upload, then select **Open**.
 
 1. Select the **Upload** button.
 
