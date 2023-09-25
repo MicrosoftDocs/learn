@@ -35,7 +35,6 @@ subjects:
 - security
 units:
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-baselines-for-paas-services
-- learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-baselines-for-iaas-services
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-baselines-for-saas-services
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-requirements-for-iot-workloads
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.specify-security-requirements-for-data-workloads
