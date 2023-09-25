@@ -27362,6 +27362,11 @@
       "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-paas-iaas-saas-services/2-specify-security-baselines-for-paas-services.md",
       "redirect_url": "https://learn.microsoft.com/en-us/training/modules/specify-requirements-securing-saas-paas-iaas-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-paas-iaas-saas-services/4-specify-security-baselines-for-saas-services.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/modules/specify-requirements-securing-saas-paas-iaas-services/",
+      "redirect_document_id": false
     }
   ]
 }
