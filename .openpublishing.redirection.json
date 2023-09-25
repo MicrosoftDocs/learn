@@ -27707,6 +27707,11 @@
       "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/10-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/evaluate-regulatory-compliance-strategy/7-translate-privacy-requirements-into-requirements-for-security-solutions.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-regulatory-compliance",
+      "redirect_document_id": false
     }
   ]
 }
