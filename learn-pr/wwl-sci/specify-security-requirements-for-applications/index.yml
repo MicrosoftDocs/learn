@@ -29,6 +29,5 @@ subjects:
 - architecture
 - security
 units:
-- learn.wwl.specify-security-requirements-for-applications.understand-application-threat-modeling
 badge:
   uid: learn.wwl.specify-security-requirements-for-applications.badge
