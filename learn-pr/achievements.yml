@@ -2232,3 +2232,8 @@ achievements:
   title: Design a security operations strategy
   summary: Learn how to design a cybersecurity strategy for security operations (SecOps).
   iconUrl: /training/achievements/design-security-operations-strategy.svg
+- uid: learn.wwl.design-strategy-for-securing-paas-iaas-saas-services.badge
+  type: badge
+  title: Design a strategy for securing PaaS, IaaS, and SaaS services
+  summary: Learn how to design a cybersecurity strategy which will secure cloud services in the SaaS, PaaS and IaaS service models.
+  iconUrl: /training/achievements/3-design-a-strategy-for-securing-paas-iaas-and-saas-services.svg
