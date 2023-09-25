@@ -32,7 +32,6 @@ subjects:
 - architecture
 - security
 units:
-- learn.wwl.evaluate-regulatory-compliance-strategy.introduction
 - learn.wwl.evaluate-regulatory-compliance-strategy.translate-privacy-requirements-into-requirements-for-security-solutions
 - learn.wwl.evaluate-regulatory-compliance-strategy.knowledge-check
 - learn.wwl.evaluate-regulatory-compliance-strategy.summary
