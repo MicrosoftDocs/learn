@@ -14,6 +14,12 @@ You create a data collection endpoint and a data collection rule to collect Wind
 - Task 3: Add an IIS log collection to an existing data collection rule
 - Task 4: Configure Network Connection Monitor for a Linux IaaS virtual machine
 
+> [!NOTE]
+> To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
+
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
+](https://microsoftlearning.github.io/APL-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_04_exercise_configure_monitoring_compute_services.html)
+
 ## Exercise instructions
 
 **Task 1: Create a data collection endpoint**

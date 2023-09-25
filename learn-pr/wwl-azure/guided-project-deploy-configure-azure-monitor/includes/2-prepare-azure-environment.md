@@ -1,6 +1,15 @@
 
 
-You must first complete the following steps to prepare your Azure environment before you begin the lab exercises:
+You must first complete the following exercise to prepare your Azure environment before you begin the lab exercises.
+
+**Exercise: Prepare your Azure Environment**
+
+**Tasks**
+- Create a Log Analytics workspace.
+- Configure Log Analytics data retention and archive policies.
+- Enable access to a Log Analytics workspace.
+
+Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
