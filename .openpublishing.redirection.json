@@ -27867,6 +27867,11 @@
       "source_path": "learn-pr/wwl-sci/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-models-training-mlflow-jobs/1b-video.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/train-models-training-mlflow-jobs",
+      "redirect_document_id": false
     }
   ]
 }
