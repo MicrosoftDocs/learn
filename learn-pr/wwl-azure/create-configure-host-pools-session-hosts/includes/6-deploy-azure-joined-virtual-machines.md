@@ -1,4 +1,4 @@
-This unit provides and overview for deploying and accessing Azure AD-joined virtual machines in Azure Virtual Desktop. Azure AD-joined virtual machines remove the need to have line-of-sight from the VM to an on-premises or virtualized Active Directory Domain Controller (DC) or to deploy Azure AD Domain Services (Azure AD DS). In some cases, it can remove the need for a DC entirely, simplifying the deployment and management of the environment. These virtual machines can also be automatically enrolled in Intune for ease of management.
+This unit provides an overview for deploying and accessing Azure AD-joined virtual machines in Azure Virtual Desktop. Azure AD-joined virtual machines remove the need to have line-of-sight from the VM to an on-premises or virtualized Active Directory Domain Controller (DC) or to deploy Azure AD Domain Services (Azure AD DS). In some cases, it can remove the need for a DC entirely, simplifying the deployment and management of the environment. These virtual machines can also be automatically enrolled in Intune for ease of management.
 
 The configurations listed below are supported with Azure AD-joined virtual machines:
 
