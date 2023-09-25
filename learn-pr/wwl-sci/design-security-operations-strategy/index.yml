@@ -33,6 +33,5 @@ subjects:
 - architecture
 - security
 units:
-- learn.wwl.design-security-operations-strategy.understand-frameworks-processes-procedures
 badge:
   uid: learn.wwl.design-security-operations-strategy.badge
