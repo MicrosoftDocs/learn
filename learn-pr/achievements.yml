@@ -2272,3 +2272,8 @@ achievements:
   title: Recommend a ransomware strategy by using Microsoft Security Best Practices
   summary: "You'll learn how to execute the three important phases of ransomware protection: create a recovery plan, limit the scope of damage, make it hard to get in."
   iconUrl: /training/achievements/recommend-ransomware-strategy-use-microsoft-security-best-practices.svg
+- uid: learn.wwl.recommend-secure-methodology-using-cloud-adoption-framework-caf.badge
+  type: badge
+  title: Recommend a secure methodology using the Cloud Adoption Framework (CAF)
+  summary: You'll learn how to use the Cloud Adoption Framework to recommend security best practices that help an organization move to the cloud while improving overall security posture.
+  iconUrl: /training/achievements/recommend-secure-methodology-using-cloud-adoption-framework-caf.svg
