@@ -82,11 +82,11 @@ For improved management and security, you can give default read permissions to a
 
 ## Repository security and management
 
-There are several ways you can oversee the security and management of your repositories. You can:
+There are several ways you can oversee the security and management of your repositories.
 
 ### Create protection rules
 
-To manage changes to content within your repository you can create [branch protection rules](https://docs.github.com/github/administering-a-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) to enforce certain workflows for one or more branches. Protection rules that can be applied to a branch include:
+To manage changes to content within your repository, you can create [branch protection rules](https://docs.github.com/github/administering-a-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) to enforce certain workflows for one or more branches. Protection rules that can be applied to a branch include:
 
 - Require a pull request before merging
 - Require status checks to pass before merging
@@ -98,7 +98,7 @@ To manage changes to content within your repository you can create [branch prote
 - Optionally, you can lock the branch by making it read-only
 - Restrict who can push to matching branches
 
-Additionally, you can set branch rules that apply to everyone including administrators such as allowing force pushes to matching branches and allowing deletions from users with push access.
+Additionally, you can set branch rules that apply to everyone, including administrators, such as allowing force pushes to matching branches and allowing deletions from users with push access.
 
 ### Add a CODEOWNERS file
 
@@ -117,8 +117,8 @@ To access the traffic graph:
 
     :::image type="content" source="../media/repo-nav-insights-tab.png" alt-text="Screenshot showing where to locate the insights button in GitHub.":::
 
-1. In the left sidebar, select **traffic**
+1. In the left sidebar, select **traffic**.
 
     :::image type="content" source="../media/traffic-tab.png" alt-text="Screenshot showing the traffic tab highlighted in GitHub.":::
 
-1. Optionally, you can select **clones** or **views** to view the traffic graph for clones or views
+1. Optionally, you can select **clones** or **views** to view the traffic graph for clones or views.
