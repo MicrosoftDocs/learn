@@ -27437,6 +27437,11 @@
       "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-server-client-endpoints/7-secure-remote-access.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-securing-server-client-endpoints",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-server-client-endpoints/5-specify-requirements-active-directory-domain-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-securing-server-client-endpoints",
+      "redirect_document_id": false
     }
   ]
 }
