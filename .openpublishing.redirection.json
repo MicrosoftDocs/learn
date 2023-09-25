@@ -27317,6 +27317,11 @@
       "source_path": "learn-pr/wwl-sci/design-security-operations-strategy/9-monitor-sources-for-insights-threats-mitigations.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-operations",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-security-operations-strategy/7-review-security-strategies-for-incident-management.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-security-operations",
+      "redirect_document_id": false
     }
   ]
 }
