@@ -2257,3 +2257,8 @@ achievements:
   title: Evaluate security posture and recommend technical strategies to manage risk
   summary: Learn how to evaluate an organization's security posture and recommend technical strategies to manage risk.
   iconUrl: /training/achievements/evaluate-security-posture-recommend-technical-strategies-manage-risk.svg
+- uid: learn.wwl.understand-architecture-best-practices-how-they-are-changing-cloud.badge
+  type: badge
+  title: Understand architecture best practices and how they are changing with the Cloud
+  summary: Learn best practices for cybersecurity architecture and how they have been affected by cloud computing.
+  iconUrl: /training/achievements/1-understand-architecture-best-practices-how-change-cloud.svg
