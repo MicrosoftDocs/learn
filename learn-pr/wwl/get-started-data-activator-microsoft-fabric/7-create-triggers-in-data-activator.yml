@@ -4,11 +4,11 @@ title: Create triggers in Data Activator
 metadata:
   title: Create triggers in Data Activator
   description: "Create triggers in Data Activator"
-  ms.date: 09/22/2023
+  ms.date: 09/25/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.service: fabric
-durationInMinutes: 2
+durationInMinutes: 9
 content: |
   [!include[](includes/7-create-triggers-in-data-activator.md)]

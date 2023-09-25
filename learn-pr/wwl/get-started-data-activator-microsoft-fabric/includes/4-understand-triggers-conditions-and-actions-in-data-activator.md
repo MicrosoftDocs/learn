@@ -12,10 +12,10 @@ Conditions define the specific circumstances or states within your events under 
 
 ### Actions in Data Activator
 
-Actions are the end result of a condition met by a trigger. They represent the tasks that Data Activator carries out in response to the specified conditions within an event. These can range from sending an alert or notification to initiating a complex workflow.
+Actions are the end result of a condition met by a trigger. They represent the tasks that Data Activator carries out in response to the specified conditions within an event. These actions can range from sending an alert or notification to initiating a complex workflow.
 
 ### The Power of Triggers, Conditions, and Actions
 
 The combination of triggers, conditions, and actions, driven by real-time events, can transform your data management from a passive to an active state. They facilitate immediate and informed responses to changes occurring within your events. They enable you to act on insights as they unfold in real-time, creating a dynamic system that's both proactive and responsive.
 
-In the next section, we'll delve deeper into these concepts and explore how to practically implement and manage triggers, define meaningful conditions, and assign useful actions within the context of events using Data Activator.
+In the next section, we'll delve deeper into these concepts. We explore how to practically implement and manage triggers, define meaningful conditions, and assign useful actions within the context of events using Data Activator.

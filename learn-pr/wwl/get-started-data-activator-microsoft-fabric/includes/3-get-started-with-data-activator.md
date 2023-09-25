@@ -24,4 +24,4 @@ When you’re working with a Reflex, there are two distinct tabs at the bottom o
 
 ![Screenshot of selecting Data or Design modes in Data Activator.](../media/data-activator-data-design.png)
 
-Next, you'll learn how to connect to data sources, create triggers to monitor conditions and initiate actions.
+Next, you learn how to connect to data sources, create triggers to monitor conditions and initiate actions.

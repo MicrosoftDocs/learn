@@ -1,12 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-data-activator-microsoft-fabric.assign-data-in-data-activator
-title: Data Activator
+title: Assign data in Data Activator
 metadata:
-  title: Data Activator
-  description: "Data Activator"
-  ms.date: 09/22/2023
+  title: Assign data in Data Activator
+  description: "Assign data in Data Activator"
+  ms.date: 09/25/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.service: fabric
-durationInMinutes: 2
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-assign-data-in-data-activator.md)]
