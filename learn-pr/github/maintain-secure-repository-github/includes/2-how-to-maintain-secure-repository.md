@@ -39,15 +39,15 @@ Shifting left is a process change, but it isn’t a single control or specific t
 
 GitHub offers security features that help keep data secure in repositories and across organizations. To locate the security tab:
 
-1. On GitHub.com, navigate to the main page of the repository.
+1. On GitHub.com, go to the main page of the repository.
 
 1. Under the repository name, select **Security**.
 
-:::image type="content" source="../media/security-tab.png" alt-text="Screenshot showing where to locate the security tab in GitHub.":::
+:::image type="content" source="../media/security-tab.png" alt-text="Screenshot showing where to locate the Security tab in GitHub.":::
 
-From the security tab, you can add features into your GitHub workflow that keep vulnerabilities out of your repository and codebase. These features include:
+From the Security tab, you can add features to your GitHub workflow to help avoid vulnerabilities in your repository and codebase. These features include:
 
-- **Security policies** that allow you to give instructions for how to report a security vulnerability in your project by adding a `SECURITY.md` file to your repository.
+- **Security policies** that allow you to specify how to report a security vulnerability in your project by adding a `SECURITY.md` file to your repository.
 - **Dependabot alerts** that notify you when GitHub detects that your repository is using a vulnerable dependency or malware.
 - **Security advisories** that you can use to privately discuss, fix, and publish information about security vulnerabilities in your repository.
 - **Code scanning** that helps you find, triage, and fix vulnerabilities and errors in your code.
