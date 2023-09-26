@@ -33,10 +33,14 @@ Columns:
 
 Use one-to-many relationship between SpeechSession and SpeechUtterance tables
 
+![Sample Table Description](./images/dataverse-table-sample.png)
+
+
 > [!NOTE]
 > SpeechSession can have a lookup to SpeechModel to track model used.
 Maintain indexes on key columns like SessionId, UtteranceId for efficient querying
 Optionally track user feedback per utterance to improve recognition accuracy.
+> This model is a guide, if you have a better implementation for your tables, kindly go ahead.
 
 This normalized structure allows efficient storage and querying of speech data. The session and utterance separation support scenarios like analysis across sessions, aggregations per session etc.
 
