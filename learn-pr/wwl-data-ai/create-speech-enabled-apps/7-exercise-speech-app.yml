@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-speech-enabled-apps.exercise-speech-app
+title: Exercise - Create a speech-enabled app
+metadata:
+  title: Exercise - Create a speech-enabled app
+  description: "Exercise - Create a speech-enabled app"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-speech
+azureSandbox: false
+labId: 96280
+labModal: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-speech-app.md)]

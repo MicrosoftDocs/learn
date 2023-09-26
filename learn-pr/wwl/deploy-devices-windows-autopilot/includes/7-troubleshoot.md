@@ -1,5 +1,3 @@
-
-
 When troubleshooting Windows Autopilot, it's important to verify the following key factors:
 
  -  **Configuration:** Has Azure AD and Microsoft Intune (or an equivalent MDM service) been configured as specified in Windows Autopilot configuration requirements?

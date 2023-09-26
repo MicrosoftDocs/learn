@@ -7,8 +7,7 @@ metadata:
   author: tomreidnz
   ms.author: jasdeb
   ms.topic: interactive-tutorial
-  ms.service: applied-ai-services 
-  ms.subservice: immersive-reader 
+  ms.service: azure-ai-immersive-reader
 title: Introduction to Immersive Reader
 summary: Immersive Reader is a tool that embeds reading, math, and text comprehension capabilities into applications. Immersive Reader is an inclusively designed tool that implements proven techniques to improve reading comprehension for new readers, language learners, and people with learning differences such as dyslexia. No knowledge of machine learning is required.
 abstract: |

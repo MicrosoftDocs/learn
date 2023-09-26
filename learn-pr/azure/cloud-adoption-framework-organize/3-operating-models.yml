@@ -6,8 +6,8 @@ metadata:
   title: Operating models
   description: The pros and cons of using a central IT operating model versus a cloud center of excellence (CCoE) model.
   ms.date: 05/10/2022
-  author: martinekuan
-  ms.author: martinek
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

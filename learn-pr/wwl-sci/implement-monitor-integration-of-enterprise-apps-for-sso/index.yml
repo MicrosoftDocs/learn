@@ -3,10 +3,12 @@ uid: learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso
 metadata:
   title: Implement and monitor the integration of enterprise apps for SSO
   description: "Deploying and monitoring enterprise applications to Azure solutions can ensure security. Explore how to deploy on-premises and cloud based apps to users."
-  ms.date: 02/07/2023
+  ms.date: 09/25/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
+  ms.custom:
+  - N/A
 title: Implement and monitor the integration of enterprise apps for SSO
 summary: Deploying and monitoring enterprise applications to Azure solutions can ensure security. Explore how to deploy on-premises and cloud based apps to users.
 abstract: |
@@ -29,7 +31,7 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-api-apps
+- azure-app-service
 - defender-for-cloud-apps
 - entra
 - entra-workload-identities

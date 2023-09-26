@@ -5,8 +5,8 @@ metadata:
   title: Scale container applications in Azure Kubernetes Services (AKS) using KEDA
   description: Explore what your options are for autoscaling Kubernetes resources, earning when to use each and the know-how to implement KEDA
   ms.date: 4/5/2021
-  author: pplavetzki
-  ms.author: paplavet
+  author: rayoef
+  ms.author: rayoflores
   ms.topic: interactive-tutorial
   ms.service: azure-kubernetes-service
 title: Scale container applications in Azure Kubernetes Services using KEDA
