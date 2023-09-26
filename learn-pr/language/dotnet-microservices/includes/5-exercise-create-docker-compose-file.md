@@ -4,7 +4,7 @@ In this exercise, you'll create a Docker Compose YAML file, then use the Docker 
 
 ## Create the docker-compose file
 
-1. Use Visual Studio Code to open the **mslearn-dotnetmicroservices** folder you cloned.
+1. Use Visual Studio Code to open the **mslearn-dotnetmicroservices** folder you cloned by selecting **File** > **Open Folder**.
 1. In the topmost folder (the same folder with README.md), open the file named **docker-compose.yml**. This file will be empty.
 1. Add the following code to the **docker-compose.yml** file:
 
@@ -36,7 +36,7 @@ In this exercise, you'll create a Docker Compose YAML file, then use the Docker 
 
     This code does several things:
 
-    - First, it creates the frontend website, naming it **pizzafrontend**. The code tells Docker to build it, pointing to the Dockerfile found in the **frontend** folder. Then the code sets an environment variable for the website: `backendUrl=http://backend`. Finally, this code opens a port and declares it depends on the backend service.
+    - First, it creates the frontend website, naming it **pizzafrontend**. The code tells Docker to build it, pointing to the Dockerfile found in the **frontend** folder. The code then sets an environment variable for the website: `backendUrl=http://backend`. Finally, this code opens a port and declares it depends on the backend service.
     - The backend service gets created next. It's named **pizzabackend**. It's built from the same Dockerfile you created in the previous exercise. The last command specifies which port to open.
 
 1. To build the container images, open a command prompt, navigate to the directory with the **docker-compose.yml** file, and run the following command:
@@ -57,6 +57,6 @@ In this exercise, you'll create a Docker Compose YAML file, then use the Docker 
     Attaching to docker-aspnet-pizza_backend_1, docker-aspnet-pizza_frontend_1
     ```
 
-1. You can browse to: http://localhost:5902 to see the Contoso Pizza menu.
+1. You can browse to `http://localhost:5902` to see the Contoso Pizza menu.
 
 In this exercise, you learned how to create and write a Docker Compose file, build the services contained within, and run those services.
