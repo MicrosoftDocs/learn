@@ -6,7 +6,7 @@ In Microsoft Fabric, data scientists, business users, and analysts all work on t
 
 ## Usage of notebooks in Data Science
 
-Notebooks are a common tool for data scientists, and they allow users to combine code, explanatory text, and multimedia resources in a single document. This creates a narrative that can drive exploration by facilitating the sharing of codes, and quick prototyping. 
+Notebooks are a common tool for data scientists as they allow to combine code, explanatory text, and multimedia resources in a single document. This creates a narrative that can drive exploration by facilitating the sharing of codes, and quick prototyping. 
 
 Notebooks also allow data scientists to rapidly experiment and share insights through quick environment creation.
 
@@ -29,9 +29,9 @@ To create a new notebook, select the **Notebook** option in the **Home** in your
 
 :::image type="content" border="false" source="../media/2-notebook-options.png" alt-text="Screenshot of the options available in a Microsoft Fabric notebook.":::
 
-1. The menu bar in a Microsoft Fabric notebook offers various features. It allows you to save and export your notebook, manage cells, terminate the session, schedule the execution of your notebook, launch Data Wrangler, adjust the layout, among others. To access all these features, simply switch between the **Home**, **Edit**, **Run**, **Data**, and **View** tabs.
+1. The menu bar in a Microsoft Fabric notebook offers various features. It allows you to save and export your notebook, manage cells, terminate the session, schedule the execution of your notebook, launch [Data Wrangler](/fabric/data-science/data-wrangler), adjust the layout, among others. To access all these features, simply switch between the **Home**, **Edit**, **Run**, **Data**, and **View** tabs.
 
-1. On the **Lakehouses** tab, you can add a new or existing lakehouse from the lakehouse explorer. The **Resources** tab provides a Unix-like storage for small files like code, datasets, and images, accessible directly from the notebook.
+1. On the **Lakehouses** tab, you can add a new or existing [lakehouse](/fabric/data-engineering/lakehouse-overview) from the lakehouse explorer. The **Resources** tab provides a Unix-like storage for small files like code, datasets, and images, accessible directly from the notebook.
 
 1. Run the current cell. Alternatively, you can press **Ctrl+Enter**, or press **Alt+Enter** to run the current cell and insert a new cell.
 

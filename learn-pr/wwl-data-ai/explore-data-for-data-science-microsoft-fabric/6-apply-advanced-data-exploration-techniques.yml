@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.apply-advanced-data-exploration-techniques
-title: Review migrations strategies and tools
+title: Apply advanced data exploration techniques
 metadata:
-  title: Review migrations strategies and tools
-  description: "Considerations of SQL Server to Azure Virtual Machine migrations."
+  title: Apply advanced data exploration techniques
+  description: "Learn how to apply advanced data exploration techniques with Microsoft Fabric notebooks."
   ms.date: 09/19/2023
   author: wwlpublish
   ms.author: jupadrao
@@ -13,6 +13,6 @@ metadata:
     - build-2023
     - build-2023-dataai
     - build-2023-fabric 
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
-  [!include[](includes/4-apply-advanced-data-exploration-techniques.md)]
+  [!include[](includes/6-apply-advanced-data-exploration-techniques.md)]

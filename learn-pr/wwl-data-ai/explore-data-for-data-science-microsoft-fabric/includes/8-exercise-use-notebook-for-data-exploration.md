@@ -1,4 +1,3 @@
-
 Now it's your chance to explore data for data science with notebooks in Microsoft Fabric.
 
 In this exercise, you’ll learn how to perform Exploratory Data Analysis (EDA) using Microsoft Fabric notebooks.

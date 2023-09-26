@@ -2,7 +2,7 @@
 uid: learn-wwl.explore-data-for-data-science-microsoft-fabric
 metadata:
   title: Explore data for data science with notebooks in Microsoft Fabric
-  description: "Discover notebooks in Microsoft Fabric."
+  description: "Discover how to perform data exploration for data science using Microsoft Fabric notebooks."
   ms.date: 09/19/2023
   author: wwlpublish
   ms.author: jupadrao
@@ -13,17 +13,15 @@ metadata:
     - build-2023-dataai
     - build-2023-fabric 
 title: Explore data for data science with notebooks in Microsoft Fabric
-summary: You will explore different migration tools and migrate SQL Server databases to Azure Virtual Machine.
+summary: Microsoft Fabric facilitates easy access to data from various sources within the organization, fostering effective collaboration among data scientists. It serves as a comprehensive tool for data exploration, enabling users to uncover hidden patterns and relationships in their datasets.
 abstract: |
   In this module, you'll:
-  - Understand the importance of careful planning for a successful migration of SQL Server workloads to Azure Virtual Machines.
-  - Migrate databases using Azure SQL Migration extension for Azure Data Studio and tracking database migration activities to SQL Server on Azure Virtual Machines.
-  - Use the Data Migration Assistant (DMA) tool to facilitate SQL Server migrations to Azure Virtual Machine.
-  - Explore several other methods for migrating SQL Server databases to Azure Virtual Machines.
+  - Load data into a notebook and perform initial data exploration to understand data characteristics.
+  - Gain knowledge about different types of data distributions.
+  - Understand the concept of missing data, and strategies to handle missing data effectively.
+  - Visualize data using various data visualization techniques and libraries. 
 prerequisites: |
-  - Experience in administering SQL Server databases.
-  - Knowledge of SQL Server editions and versions.
-  - Knowledge of basic T-SQL.
+  Before starting this module, you should be familiar with the basic principles of machine learning.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
@@ -38,8 +36,10 @@ subjects:
 - machine-learning
 units:
 - learn-wwl.explore-data-for-data-science-microsoft-fabric.introduction
-- learn-wwl.explore-data-for-data-science-microsoft-fabric.understand-notebooks
-- learn-wwl.explore-data-for-data-science-microsoft-fabric.load-and-explore-data
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.explore-notebooks
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.load-data-for-exploration
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.understand-data-distribution
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.check-for-missing-data
 - learn-wwl.explore-data-for-data-science-microsoft-fabric.apply-advanced-data-exploration-techniques
 - learn-wwl.explore-data-for-data-science-microsoft-fabric.visualize-data-with-plots-and-charts
 - learn-wwl.explore-data-for-data-science-microsoft-fabric.exercise-use-notebook-for-data-exploration

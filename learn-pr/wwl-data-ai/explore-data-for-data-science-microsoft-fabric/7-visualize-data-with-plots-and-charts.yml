@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.visualize-data-with-plots-and-charts
-title: Review migrations strategies and tools
+title: Visualize charts in notebooks
 metadata:
-  title: Review migrations strategies and tools
-  description: "Considerations of SQL Server to Azure Virtual Machine migrations."
+  title: Visualize data in notebooks
+  description: "Learn how to visualize charts ."
   ms.date: 09/19/2023
   author: wwlpublish
   ms.author: jupadrao
@@ -15,4 +15,4 @@ metadata:
     - build-2023-fabric 
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-visualize-data-with-plots-and-charts.md)]
+  [!include[](includes/7-visualize-data-with-plots-and-charts.md)]
