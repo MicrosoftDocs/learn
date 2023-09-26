@@ -63,7 +63,6 @@ products:
 - azure
 - azure-virtual-machines
 - azure-monitor
-- azure-application-insights
 - azure-backup
 - azure-site-recovery
 subjects:

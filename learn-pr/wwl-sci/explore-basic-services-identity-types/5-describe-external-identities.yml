@@ -9,6 +9,6 @@ metadata:
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/5-describe-external-identities.md)]
