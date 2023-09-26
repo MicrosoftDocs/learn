@@ -17,7 +17,7 @@ In this unit, you'll:
 
     :::image type="content" source="../media/5-locate-category.png" alt-text="Screenshot of where the Category drop-down shows up in the queries pane." lightbox="../media/5-locate-category.png":::
 
-1. In the drop down, change **Category** to **Resource Type** and select **Virtual Machine Scale Sets** on the far left under **All Queries**.
+1. In the drop-down, change **Category** to **Resource Type** and select **Virtual Machine Scale Sets** on the far left under **All Queries**.
 
     :::image type="content" source="../media/5-resource-type-virtual-machine-scale-set.png" alt-text="Screenshot of Virtual Machine Scale Set queries." lightbox="../media/5-resource-type-virtual-machine-scale-set.png":::
 
