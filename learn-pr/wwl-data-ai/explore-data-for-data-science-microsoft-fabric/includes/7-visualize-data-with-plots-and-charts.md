@@ -75,7 +75,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-:::image type="content" border="false" source="../media/8-univariate-analysis.png" alt-text="Screenshot of the correlation using heat maps in a notebook.":::
+:::image type="content" border="false" source="../media/8-univariate-analysis.png" alt-text="Screenshot of a box plot and histogram using Python.":::
 
 These are a few conclusions we can draw from the results.
 
@@ -113,7 +113,7 @@ plt.show()
 
 ```
 
-:::image type="content" border="false" source="../media/8-scatter-plot.png" alt-text="Screenshot of the correlation using heat maps in a notebook.":::
+:::image type="content" border="false" source="../media/8-scatter-plot.png" alt-text="Screenshot of a scatter plot in a notebook.":::
 
 In this scatter plot, each point represents a house. You see that as the size of the house increases (moving right along the x-axis), the price also tends to increase (moving up along the y-axis). 
 

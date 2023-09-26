@@ -71,4 +71,4 @@ df_text = spark.read.text('<path>')
 ```
 
 > [!Tip]
-> Learn more about how to [ingest and orchestrate data from various sources with Microsoft Fabric](https://learn.microsoft.com/training/paths/ingest-data-with-microsoft-fabric/?azure-portal=true).
+> Learn more about how to [ingest and orchestrate data from various sources with Microsoft Fabric](/training/paths/ingest-data-with-microsoft-fabric/?azure-portal=true).

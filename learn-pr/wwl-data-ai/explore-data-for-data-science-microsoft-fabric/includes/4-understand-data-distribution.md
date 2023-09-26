@@ -101,7 +101,7 @@ plt.ylabel('Frequency')
 plt.show()
 ```
 
-:::image type="content" border="false" source="../media/4-uniform-distribution.png" alt-text="Screenshot of a histogram for a binomial distributed feature.":::
+:::image type="content" border="false" source="../media/4-uniform-distribution.png" alt-text="Screenshot of a histogram for a uniform distributed feature.":::
 
 In this code, the `np.random.uniform` function generates 1000 random numbers that are uniformly distributed between -1 and 1. The `bins=30` argument specifies that the data should be divided into 30 bins, and `density=True` ensures that the histogram is normalized to form a probability density. This means the area under the histogram integrates to 1, which is useful when comparing distributions.
 
