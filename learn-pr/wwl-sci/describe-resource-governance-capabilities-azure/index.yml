@@ -33,7 +33,6 @@ subjects:
 - cloud-computing
 - information-protection-governance
 units:
-- learn.wwl.describe-resource-governance-capabilities-azure.knowledge-check
 - learn.wwl.describe-resource-governance-capabilities-azure.summary-resources
 badge:
   uid: learn.wwl.describe-resource-governance-capabilities-azure.badge
