@@ -1,5 +1,3 @@
-
-
 Security analysts spend a significant amount of time on data discovery, collection, and parsing, instead of focusing on what actually helps their organization defend themselves--deriving insights about the actors through analysis and correlation.
 
 Microsoft Defender Threat Intelligence (Defender TI) helps streamline security analyst triage, incident response, threat hunting, and vulnerability management workflows. Defender TI aggregates and enriches critical threat information in an easy-to-use interface.

@@ -2222,3 +2222,73 @@ achievements:
   title: Monitor models with Azure Machine Learning
   summary: After a machine learning model has been deployed into production, it's important to understand how it is being used by capturing and viewing telemetry.
   iconUrl: /training/achievements/monitor-models-with-azure-machine-learning.svg
+- uid: learn.wwl.design-identity-security-strategy.badge
+  type: badge
+  title: Design an identity security strategy
+  summary: Learn how to design a cybersecurity strategy for identity management.
+  iconUrl: /training/achievements/3-design-an-identity-security-strategy.svg
+- uid: learn.wwl.design-security-operations-strategy.badge
+  type: badge
+  title: Design a security operations strategy
+  summary: Learn how to design a cybersecurity strategy for security operations (SecOps).
+  iconUrl: /training/achievements/design-security-operations-strategy.svg
+- uid: learn.wwl.design-strategy-for-securing-paas-iaas-saas-services.badge
+  type: badge
+  title: Design a strategy for securing PaaS, IaaS, and SaaS services
+  summary: Learn how to design a cybersecurity strategy which will secure cloud services in the SaaS, PaaS and IaaS service models.
+  iconUrl: /training/achievements/3-design-a-strategy-for-securing-paas-iaas-and-saas-services.svg
+- uid: learn.wwl.design-strategy-for-securing-server-client-endpoints.badge
+  type: badge
+  title: Design a strategy for securing server and client endpoints
+  summary: Learn how to design a cybersecurity strategy to secure server and client endpoints.
+  iconUrl: /training/achievements/2-design-a-strategy-for-securing-server-and-client-endpoints.svg
+- uid: learn.wwl.build-overall-security-strategy-architecture.badge
+  type: badge
+  title: Build an overall security strategy and architecture
+  summary: Learn how to build an overall security strategy and architecture with zero trust in mind.
+  iconUrl: /training/achievements/build-overall-security-strategy-architecture.svg
+- uid: learn.wwl.design-strategy-for-securing-data.badge
+  type: badge
+  title: Design a strategy for securing data
+  summary: Learn how to design a cybersecurity strategy to secure data.
+  iconUrl: /training/achievements/2-design-a-strategy-for-securing-data.svg
+- uid: learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.badge
+  type: badge
+  title: Evaluate security posture and recommend technical strategies to manage risk
+  summary: Learn how to evaluate an organization's security posture and recommend technical strategies to manage risk.
+  iconUrl: /training/achievements/evaluate-security-posture-recommend-technical-strategies-manage-risk.svg
+- uid: learn.wwl.understand-architecture-best-practices-how-they-are-changing-cloud.badge
+  type: badge
+  title: Understand architecture best practices and how they are changing with the Cloud
+  summary: Learn best practices for cybersecurity architecture and how they have been affected by cloud computing.
+  iconUrl: /training/achievements/1-understand-architecture-best-practices-how-change-cloud.svg
+- uid: learn.wwl.evaluate-regulatory-compliance-strategy.badge
+  type: badge
+  title: Evaluate a regulatory compliance strategy
+  summary: Learn how to evaluate a cybersecurity strategy for regulatory compliance.
+  iconUrl: /training/achievements/evaluate-a-regulatory-compliance-strategy.svg
+- uid: learn.wwl.recommend-ransomware-strategy-by-using-microsoft-security-best-practices.badge
+  type: badge
+  title: Recommend a ransomware strategy by using Microsoft Security Best Practices
+  summary: "You'll learn how to execute the three important phases of ransomware protection: create a recovery plan, limit the scope of damage, make it hard to get in."
+  iconUrl: /training/achievements/recommend-ransomware-strategy-use-microsoft-security-best-practices.svg
+- uid: learn.wwl.recommend-secure-methodology-using-cloud-adoption-framework-caf.badge
+  type: badge
+  title: Recommend a secure methodology using the Cloud Adoption Framework (CAF)
+  summary: You'll learn how to use the Cloud Adoption Framework to recommend security best practices that help an organization move to the cloud while improving overall security posture.
+  iconUrl: /training/achievements/recommend-secure-methodology-using-cloud-adoption-framework-caf.svg
+- uid: learn.wwl.specify-security-requirements-for-applications.badge
+  type: badge
+  title: Specify security requirements for applications
+  summary: Learn how to specify cybersecurity requirements for applications.
+  iconUrl: /training/achievements/1-specify-security-requirements-for-applications.svg
+- uid: learn.wwl.use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks.badge
+  type: badge
+  title: Recommend security best practices using Microsoft Cybersecurity Reference Architectures (MCRA) and Microsoft Cloud Security Benchmarks
+  summary: You'll learn how to use guidance in Microsoft Cybersecurity Reference Architectures and Microsoft Cloud Security Benchmarks to help an organization apply Zero Trust principles and secure their infrastructure.
+  iconUrl: /training/achievements/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks.svg
+- uid: learn.wwl.describe-resource-governance-capabilities-azure.badge
+  type: badge
+  title: Describe resource governance capabilities in Azure
+  summary: Azure governance capabilities provide mechanisms and processes for organizations to maintain control over their applications and resources. Learn how Azure policy, Blueprints, and Microsoft Purview help organizations govern their resources and applications.
+  iconUrl: /training/achievements/describe-resource-governance-capabilities-in-azure.svg
