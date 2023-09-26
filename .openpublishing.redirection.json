@@ -27877,6 +27877,11 @@
       "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/index.md",
       "redirect_url": "https://learn.microsoft.com/azure/governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/2-describe-azure-policy.md",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/",
+      "redirect_document_id": false
     }
   ]
 }
