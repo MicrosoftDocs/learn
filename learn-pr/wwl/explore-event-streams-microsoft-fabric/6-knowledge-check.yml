@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/21/2023
+  ms.date: 09/26/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -28,13 +28,13 @@ quiz:
     choices:
     - content: "Select a consumer group for your source."
       isCorrect: false
-      explanation: "Incorrect. This is done after you select your source type."
+      explanation: "Incorrect. Creating an event is done after you select your source type."
     - content: "Choose a data format for your event data."
       isCorrect: false
-      explanation: "Incorrect. This is done after you select your source type and cloud connection."
+      explanation: "Incorrect. Creating an event is done after you select your source type and cloud connection."
     - content: "Change your Fabric experience to Real-time Analytics and select EventStream to create a new eventstream item."
       isCorrect: true
-      explanation: "Correct. This is the first step to create an event source in EventStream."
+      explanation: "Correct. Changing your Fabric experience to Real-time Analytics is the first step to create an event source in EventStream."
   - content: "What is Microsoft Fabric Eventstream?"
     choices:
     - content: "A feature that lets you capture and send real-time events to different places without writing any code."
