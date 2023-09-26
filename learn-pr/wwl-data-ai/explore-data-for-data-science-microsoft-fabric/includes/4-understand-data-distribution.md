@@ -22,30 +22,33 @@ Let's explore some of the most common data distribution types such as normal, bi
 
 A [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution) is represented by two parameters: the mean and the standard deviation. The mean indicates where the bell curve is centered, and the standard deviation indicates the spread of the distribution. 
 
-Let's see an example of a normal distributed feature.
+Let's see an example of a normal distributed feature. We generated the data for the `var` feature for demonstration purposes.
 
 ```Python
-import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
+import numpy as np
 
-# Load the Iris dataset from seaborn
-iris = sns.load_dataset('iris')
+# Set the mean and standard deviation
+mu, sigma = 0, 0.1 
 
-# Compute summary statistics for 'sepal_width'
-summary = iris['sepal_width'].describe()
-print(summary)
+# Generate a normally distributed variable
+var = np.random.normal(mu, sigma, 1000)
 
-# Plot the distribution of 'sepal_width'
-sns.histplot(data=iris, x='sepal_width', kde=True)
-plt.title('Distribution of Sepal Width')
+# Create a histogram of the variable using seaborn's histplot
+sns.histplot(var, bins=30, kde=True)
+
+# Add title and labels
+plt.title('Histogram of Normally Distributed Variable')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+
+# Show the plot
 plt.show()
-
 ```
 
 :::image type="content" border="false" source="../media/4-normal-distribution.png" alt-text="Screenshot of a histogram for a normal distributed feature.":::
 
-We can see the `sepal_width` feature is normally distributed, where the mean and the median (50% percentile) are expected to be more or less equal. For skewed distributions, the mean tends to lean towards the heavier tail.
+ Observe that the `var` feature is normally distributed, where the mean and the median (50% percentile) are expected to be more or less equal. For skewed distributions, the mean tends to lean towards the heavier tail.
 
 However, these are heuristic checks and actual determination are done using specific statistical tests like [**Shapiro-Wilk**](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test) test or [**Kolmogorov-Smirnov**](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test) test for normality.
 

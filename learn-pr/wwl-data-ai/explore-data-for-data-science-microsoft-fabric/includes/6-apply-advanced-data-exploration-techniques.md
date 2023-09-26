@@ -9,15 +9,22 @@ Correlation is a statistical method used to evaluate the strength and direction 
 | **1**   | Indicates a perfect **positive linear correlation**. As one variable increases, the other variable also increases. |
 | **-1**  | Indicates a perfect **negative linear correlation**. As one variable increases, the other variable decreases. |
 | **0**   | Indicates **no linear correlation**. The two variables don't have a relationship with each other. |
+
+Let's use the penguins dataset to explain how the correlation works.
+
+> [!Note]
+> The penguins dataset used is a subset of data collected and made available by [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php) and the [Palmer Station, Antarctica LTER](https://pal.lternet.edu/), a member of the [Long Term Ecological Research Network](https://lternet.edu/).
+
 ```python
 import seaborn as sns
 import matplotlib.pyplot as plt
+import pandas as pd
 
-# Load the iris dataset
-iris = sns.load_dataset('iris')
+# Load the penguins dataset
+penguins = pd.read_csv('https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/penguins.csv')
 
 # Calculate the correlation matrix
-corr = iris.corr()
+corr = penguins.corr()
 
 # Create a heatmap
 sns.heatmap(corr, annot=True)
@@ -26,7 +33,7 @@ plt.show()
 
 :::image type="content" border="false" source="../media/6-correlation-analysis.png" alt-text="Screenshot of the correlation using heat maps in a notebook.":::
 
-The strongest correlation in the dataset is between `petal_length` and `petal_width` variables, with a correlation coefficient of **0.96**. This suggests a strong positive linear relationship, that is, longer petals are typically also wider.
+The strongest correlation in the dataset is between `FlipperLength` and `BodyMass` variables, with a correlation coefficient of **0.87**. This suggests that penguins with larger flippers tend to have a larger body mass.
 
 The identification and analysis of correlations are important for the following reasons.
 
@@ -41,23 +48,23 @@ The identification and analysis of correlations are important for the following 
 
 [Principal Component Analysis (PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis) can be used for both exploration and preprocessing of data. When used for exploration, PCA helps you to visualize high-dimensional data in two or three dimensions, making it easier to identify patterns and relationships between variables.
 
-Suppose you’re working with the iris dataset, which includes measurements for 150 iris flowers from three different species. The `sepal_length`, `sepal_width`, `petal_length`, and `petal_width` variables describe each flower.
-
-By applying PCA, you can reduce these four variables to two principal components that capture the most variance in your data. This transformation reduces the dimensionality of your data from four dimensions to two. You can then create a 2D scatter plot to visualize the data and identify clusters of flowers with similar characteristics.
-
-To simplify our example, we're working with the iris dataset that contains only four variables. However, you would follow a similar approach when working with a larger dataset.
+To simplify the example, we're working with the penguins dataset that contains only five variables. However, you would follow a similar approach when working with a larger dataset.
 
 ```python
+import pandas as pd
 import seaborn as sns
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 
-# Load the iris dataset
-iris = sns.load_dataset('iris')
+# Load the penguins dataset
+penguins = pd.read_csv('https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/penguins.csv')
+
+# Remove missing values
+penguins = penguins.dropna()
 
 # Prepare the data and target
-X = iris.drop('species', axis=1)
-y = iris['species']
+X = penguins.drop('Species', axis=1)
+y = penguins['Species']
 
 # Initialize and apply PCA
 pca = PCA(n_components=2)
@@ -65,18 +72,21 @@ X_pca = pca.fit_transform(X)
 
 # Plot the data
 plt.figure(figsize=(8, 6))
-for color, target in zip(['navy', 'turquoise', 'darkorange'], ['setosa', 'versicolor', 'virginica']):
+for color, target in zip(['navy', 'turquoise', 'darkorange'], penguins['Species'].unique()):
     plt.scatter(X_pca[y == target, 0], X_pca[y == target, 1], color=color, alpha=.8, lw=2,
                 label=target)
 plt.legend(loc='best', shadow=False, scatterpoints=1)
-plt.title('PCA of IRIS dataset')
+plt.title('PCA of Penguins dataset')
 plt.show()
+
 ```
 
 :::image type="content" border="false" source="../media/7-pca-analysis.png" alt-text="Screenshot of how to apply the principal component analysis to reduce the dimensionality, and then plot the data points in a scatter plot.":::
 
-Each point on the plot represents a flower from the dataset. The values for the first and second principal components (*x* and *y*) determine the position of a point.
+By applying PCA in the penguins dataset, we can reduce these five variables to two principal components that capture the most variance in the data. This transformation reduces the dimensionality of the data from five dimensions to two. We can then create a 2D scatter plot to visualize the data and identify clusters of penguins with similar characteristics.
 
-These are new variables that PCA creates from linear combinations of the `sepal_length`, `sepal_width`, `petal_length`, and `petal_width` variables. The first principal component captures the most variance in the data, and each subsequent component captures less variance.
+Each point on the plot represents a penguin from the dataset. The values for the first and second principal components (*x* and *y*) determine the position of a point.
 
-The results show a separation between flowers of different species. That is, points of the same color (species) are closer together and points of different colors are further apart. Differences in the feature distributions for different classes result in this separation, suggesting that we can distinguish these species based on their sepal and petal measurements.
+These are new variables that PCA creates from linear combinations of the `CulmenLength`, `CulmenDepth`, `FlipperLength`, `BodyMass`, and `Species` variables. The first principal component captures the most variance in the data, and each subsequent component captures less variance.
+
+The results show a separation between penguins of different species. That is, points of the same color (species) are closer together and points of different colors are further apart. Differences in the feature distributions for different classes result in this separation, suggesting that we can distinguish these species based on their attributes.
