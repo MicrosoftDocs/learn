@@ -5,4 +5,6 @@ Data exploration is like a preliminary investigation of the data, setting the st
 For additional reading, you can refer to the following URLs:
 
 - [How to use Microsoft Fabric notebooks](/fabric/data-engineering/how-to-use-notebook?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json)
+- [Develop, execute, and manage Microsoft Fabric notebooks](/fabric/data-engineering/author-execute-notebook?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json)
+- [Notebook visualization in Microsoft Fabric](/fabric/data-engineering/notebook-visualization?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json)
  
