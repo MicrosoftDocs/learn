@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: PySpark (Python), Spark (Scala), Spark SQL, and SparkR.
       isCorrect: true
-      explanation: Correct. Microsoft Fabric notebooks currently support four Apache Spark languages which are PySpark (Python), Spark (Scala), Spark SQL, and SparkR.
+      explanation: Correct. Microsoft Fabric notebooks currently support four Apache Spark languages, which are PySpark (Python), Spark (Scala), Spark SQL, and SparkR.
     - content: Python, Java, Scala, and R.
       isCorrect: false
-      explanation: Incorrect. While these are all programming languages, they are not the specific Apache Spark languages supported by Microsoft Fabric notebooks.
+      explanation: Incorrect. While these are all programming languages, they aren't the specific Apache Spark languages supported by Microsoft Fabric notebooks.
     - content: PySpark (Python), Spark (Scala), Java, and C#.
       isCorrect: false
-      explanation: Incorrect. Java and C# are not among the Apache Spark languages supported by Microsoft Fabric notebooks.
+      explanation: Incorrect. Java and C# aren't among the Apache Spark languages supported by Microsoft Fabric notebooks.
   - content: What is the range of a uniform distribution?
     choices:
     - content: The range is from 0 to 1.
@@ -37,7 +37,7 @@ quiz:
       explanation: Correct. The range of a uniform distribution is the interval [a, b], where 'a' is the minimum value and 'b' is the maximum value.
     - content: The range is all real numbers.
       isCorrect: false
-      explanation: Incorrect. The range of a uniform distribution is not all real numbers, but rather a specific interval [a, b].
+      explanation: Incorrect. The range of a uniform distribution isn't all real numbers, but rather a specific interval [a, b].
   - content: What does it mean when data is Missing at Random (MAR)?
     choices:
     - content: MAR means the missingness of data is related to some other variables' values but not the missing data itself.
@@ -54,9 +54,9 @@ quiz:
     - content: The correlation coefficient indicates the strength and direction of the linear relationship between two quantitative variables.
       isCorrect: true
       explanation: Correct. The correlation coefficient ranges from -1 to 1. A coefficient of 1 indicates a perfect positive linear correlation, -1 indicates a perfect negative linear correlation, and 0 indicates no linear correlation.
-    - content: The correlation coefficient indicates the non-linear relationship between two quantitative variables.
+    - content: The correlation coefficient indicates the nonlinear relationship between two quantitative variables.
       isCorrect: false
-      explanation: Incorrect. The correlation coefficient specifically measures the strength and direction of the linear relationship between two quantitative variables, not non-linear relationships.
+      explanation: Incorrect. The correlation coefficient specifically measures the strength and direction of the linear relationship between two quantitative variables, not nonlinear relationships.
     - content: The correlation coefficient indicates the causal relationship between two quantitative variables.
       isCorrect: false
-      explanation: Incorrect. Correlation does not imply causation. Just because two variables are correlated doesn't mean that changes in one variable cause changes in the other.    
+      explanation: Incorrect. Correlation doesn't imply causation. Just because two variables are correlated doesn't mean that changes in one variable cause changes in the other.    
