@@ -3,7 +3,7 @@ uid: learn.wwl.create-configure-log-analytics-workspace
 metadata:
   title: Create and configure a Log Analytics workspace
   description: "Create and configure a Log Analytics workspace"
-  ms.date: 09/08/2023
+  ms.date: 09/26/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -29,7 +29,6 @@ units:
 - learn.wwl.create-configure-log-analytics-workspace.configure-access-log-analytics-workspace
 - learn.wwl.create-configure-log-analytics-workspace.configure-log-analytics-data-retention
 - learn.wwl.create-configure-log-analytics-workspace.configure-log-analytics-health-status-alerts
-- learn.wwl.create-configure-log-analytics-workspace.guided-project-deploy-configure-azure-monitor
 - learn.wwl.create-configure-log-analytics-workspace.knowledge-check
 - learn.wwl.create-configure-log-analytics-workspace.summary
 badge:
