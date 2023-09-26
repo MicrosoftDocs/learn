@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.describe-resource-governance-capabilities-azure.introduction
+uid: learn.wwl.explore-event-streams-microsoft-fabric.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 02/09/2023
+  ms.date: 09/26/2023
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.service: azure
-durationInMinutes: 1
+  ms.service: fabric
+durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

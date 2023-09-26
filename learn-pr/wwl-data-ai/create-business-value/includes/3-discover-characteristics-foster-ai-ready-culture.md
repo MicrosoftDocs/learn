@@ -49,7 +49,7 @@ Fostering an AI-ready culture means **empowering people to be part of the AI tra
 
 * **Time for learning:** Organizations should help people get the knowledge and the skills.
 
-* **Room for experimentation:** During this process, you should encourage new ideas and continuous improvement. This experimentation must allow room for errors, sas well as celebration and acknowledgment of success.
+* **Room for experimentation:** During this process, you should encourage new ideas and continuous improvement. This experimentation must allow room for errors, as well as celebration and acknowledgment of success.
 
 It also means to create an **inclusive environment**, one that is predicated on the willingness and ability of employees to work in cross-functional teams that cut across organizational boundaries.
 :::column-end:::
