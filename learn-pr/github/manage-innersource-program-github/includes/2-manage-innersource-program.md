@@ -49,7 +49,7 @@ A few best practices include:
 - [License your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) so that others are free to use, change, and distribute the software.
 - Include a `README.md` file in the repository. GitHub uses this file as the landing page when people visit the repository.
 
-#### Create a README
+#### Add a README file
 
 A README file communicates expectations for your project and helps you manage contributions. README files can:
 
