@@ -2,6 +2,8 @@ Here, we discuss how you can design an InnerSource program to enjoy the best of 
 
 ## What is InnerSource?
 
+Open-source software can be freely used, modified, and shared by anyone. With open-source software anyone can view, modify, and distribute a project for any purpose—as enforced by open-source licenses.
+
 **InnerSource** is the practice of applying open-source patterns to projects with a limited audience. For example, a company may establish an InnerSource program that mirrors the structure of a typical open-source project, except that it's only accessible to the employees of that company. In effect, it's an open-source program behind your company's firewall.
 
 ### InnerSource benefits
@@ -44,13 +46,23 @@ A few best practices include:
 
 - Use a descriptive repository name, such as `warehouse-api` or `supply-chain-web`.
 - Include a concise description. A sentence or two should be enough for potential users to know if the project might fit their needs.
+- [License your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) so that others are free to use, change, and distribute the software.
 - Include a `README.md` file in the root of the repository. GitHub uses this file as the landing page when people visit the repository.
-	- Articulate the purpose and vision of the project so potential consumers understand whether it fits their needs.
-	- Offer visual aids, such as screenshots or code samples, to illustrate the project in action.
-	- Include a link to a production or demo version of the app for review.
-	- Set expectations for prerequisites and deployment procedures. If the project has disqualifying prerequisites, then let potential users know early.
-	- Include references to projects on which you depend. Visitors might only need to use one of the projects you depend on to meet their needs, which saves everyone time. It's also a good way to promote the work of others.
-	- Make use of Markdown to guide readers through properly formatted content.
+
+#### Create a README
+
+A README file, along with a repository license, citation file, contribution guidelines, and a code of conduct, communicates expectations for your project and helps you manage contributions. README files can:
+
+- Articulate the purpose and vision of the project so potential consumers understand whether it fits their needs.
+- Offer visual aids, such as screenshots or code samples, to illustrate the project in action.
+- Include a link to a production or demo version of the app for review.
+- Set expectations for prerequisites and deployment procedures. If the project has disqualifying prerequisites, then let potential users know early.
+- Include references to projects on which you depend. Visitors might only need to use one of the projects you depend on to meet their needs, which saves everyone time. It's also a good way to promote the work of others.
+- Make use of Markdown to guide readers through properly formatted content.
+
+If you put your README file in your repository's hidden .github, root, or docs directory, GitHub will recognize and automatically surface your README to repository visitors.
+
+If a repository contains more than one README file, then the file shown is chosen from locations in the following order: the .github directory, then the repository's root directory, and finally the docs directory.
 
 Check out some [Awesome README examples](https://github.com/matiassingers/awesome-readme?azure-portal=true).
 
@@ -67,6 +79,8 @@ If a `CONTRIBUTING.md` exists, GitHub presents a link to it when users create is
 ![Contributing guidelines links.](../media/2-contributing-guidelines.png)
 
 Check out some [Awesome CONTRIBUTING.md examples](https://github.com/mntnr/awesome-contributing?azure-portal=true)
+
+Additionally, consider [adding a CODEOWNERS file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) to the repository to define individuals or teams that are responsible for reviewing code modifications.
 
 ### Create issue and pull request templates
 
