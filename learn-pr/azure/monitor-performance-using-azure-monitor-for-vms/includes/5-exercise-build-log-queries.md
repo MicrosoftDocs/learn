@@ -7,21 +7,21 @@ In this unit, you'll:
 
 ## Build a query by using the query pane
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select **Log Analytics Workspace**. Select the workspace you created earlier.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select **Log Analytics workspaces**. Select the workspace you created earlier.
 
-1. Under **General**, select **Logs**. The **Queries** page should open. If it doesn't, in the upper-right corner of the logs editor, select **Queries**.
+1. Select **Logs** in the left-hand menu. The **Queries** page should open. If it doesn't, in the upper-right corner of the logs editor, select **Queries**.
 
     :::image type="content" source="../media/4-queries-logs-pane.png" alt-text="Screenshot showing where to select Queries from within the log editor pane." lightbox="../media/4-queries-logs-pane.png":::
 
-1. Locate **Group by: Category** on the upper left.
+1. Locate the **Category** drop-down on the upper left.
 
-    :::image type="content" source="../media/5-locate-category.png" alt-text="Screenshot of where Group by: Category shows up in the queries pane." lightbox="../media/5-locate-category.png":::
+    :::image type="content" source="../media/5-locate-category.png" alt-text="Screenshot of where the Category drop-down shows up in the queries pane." lightbox="../media/5-locate-category.png":::
 
-1. Change the filter on the top left from **Category** to **Resource Type** and select **Virtual Machine Scale Sets** on the far left under **All Queries**.
+1. In the drop down, change **Category** to **Resource Type** and select **Virtual Machine Scale Sets** on the far left under **All Queries**.
 
     :::image type="content" source="../media/5-resource-type-virtual-machine-scale-set.png" alt-text="Screenshot of Virtual Machine Scale Set queries." lightbox="../media/5-resource-type-virtual-machine-scale-set.png":::
 
-1. Select the **Chart CPU usage trends by computer** query, then select **Run**.
+1. Select **Run** in the **Chart CPU usage trends by computer** query box.
 
      :::image type="content" source="../media/5-resource-type-virtual-machine-scale-set-chart-cpu.png" alt-text="Screenshot showing what query to select for charting CPU trends." lightbox="../media/5-resource-type-virtual-machine-scale-set-chart-cpu.png":::
 
@@ -48,9 +48,9 @@ Let's take the query you just used and make an edit to build a different data vi
     1. Returns the rounded maximum value in 5-minute intervals for both machines.
     :::image type="content" source="../media/5-cpu-trends-max.png" alt-text="Screenshot showing maximum value for CPU usage trends." lightbox="../media/5-cpu-trends-max.png":::
 
-    You can pin each of these visualizations to a dashboard by selecting **Pin to dashboard** at the top. Then, specify the following details:
+    You can pin each of these visualizations to a dashboard by selecting **Pin to** > **Azure dashboard** at the top. Then, specify the following details:
 
-    - Create a new dashboard, or add to an existing dashboard.
+    - Create a new dashboard or add to an existing dashboard.
     - If existing, deploy the new visualization to the appropriate shared or private dashboard.
     - If new, determine if the dashboard will be a private or shared dashboard.
     - If new, name the dashboard.
