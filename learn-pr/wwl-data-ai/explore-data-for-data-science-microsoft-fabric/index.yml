@@ -16,7 +16,7 @@ title: Explore data for data science with notebooks in Microsoft Fabric
 summary: Microsoft Fabric notebooks serve as a comprehensive tool for data exploration, enabling users to uncover hidden patterns and relationships in their datasets.
 abstract: |
   In this module, you'll:
-  - Load data into and perform initial data exploration.
+  - Load data and perform initial data exploration.
   - Gain knowledge about different types of data distributions.
   - Understand the concept of missing data, and strategies to handle missing data effectively.
   - Visualize data using various data visualization techniques and libraries. 
