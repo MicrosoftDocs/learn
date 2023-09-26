@@ -27199,38 +27199,13 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/examine-device-management-tools/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/examine-device-management-tools/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/examine-device-management-tools/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/examine-device-management-tools/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/examine-device-management-tools/2-device-management-tools.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/examine-device-management-tools/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/examine-device-management-tools/3-device-management-using-azure-command-line-interface.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/examine-device-management-tools/",
+      "redirect_url": "/training/modules/examine-device-management-tools/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/examine-device-management-tools/4-device-management-using-azure-iot-tools-visual-studio-code.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/examine-device-management-tools/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/examine-device-management-tools/5-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/examine-device-management-tools/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/examine-device-management-tools/6-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/examine-device-management-tools/",
+      "redirect_url": "/training/modules/examine-device-management-tools/",
       "redirect_document_id": false
     },
     {
