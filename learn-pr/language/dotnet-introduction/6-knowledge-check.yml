@@ -50,7 +50,7 @@ quiz:
       explanation: "The .NET runtime can run only .NET assemblies. We're looking for an answer that covers broader functionality."
     - content: "The .NET base libraries"
       isCorrect: false
-      explanation: "The .NET base libraries contain a lot of functionality that you can access from your code.  But we're looking for an answer that covers broader functionality."
+      explanation: "The .NET base libraries contain a lot of functionality that you can access from your code. But we're looking for an answer that covers broader functionality."
     - content: "The .NET SDK"
       isCorrect: true
       explanation: "Correct!"

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github-copilot-with-javascript.use-copilot-with-javascript
+title: Use GitHub Copilot with JavaScript
+metadata:
+  title: Use GitHub Copilot with JavaScript
+  description: "Use GitHub Copilot to update a JavaScript project. Update the JavaScript portfolio site and use GitHub Copilot to suggest additions and enhancements."
+  ms.date: 8/23/2023
+  author: abrilurena
+  ms.author: abrilu
+  ms.topic: interactive-tutorial
+  ms.prod: github
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-use-copilot-with-javascript.md)]

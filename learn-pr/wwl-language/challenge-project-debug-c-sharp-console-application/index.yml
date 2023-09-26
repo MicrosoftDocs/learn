@@ -3,11 +3,11 @@ uid: learn.wwl.challenge-project-debug-c-sharp-console-application
 metadata:
   title: Challenge project - Debug a C# console application using Visual Studio Code
   description: "This module helps you evaluate your debugging skills. You start with a C# console application that contains code logic issues and a specification that describes the requirements. You’re challenged to demonstrate your ability to identify and fix the issues using the Visual Studio Code debugger tools."
-  ms.date: 05/04/2023
+  ms.date: 09/15/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Challenge project - Debug a C# console application using Visual Studio Code
 summary: In this module, you'll run an application to identify logic issues and then use the Visual Studio Code debugger tools to isolate and fix the issue.
 abstract: |
@@ -17,7 +17,7 @@ prerequisites: |
   - Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.
   - Experience using the Visual Studio Code debugging tools for C#.
   - Experience implementing `try-catch` exception handing and throwing exceptions in C# console applications.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/challenge-project-debug-c-sharp-console-application.svg
 levels:
 - beginner
 roles:

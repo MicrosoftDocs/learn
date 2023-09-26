@@ -4,7 +4,7 @@ title: Exercise - Discover integral types
 metadata:
   title: Exercise - Discover integral types
   description: "Exercise - Discover integral types"
-  ms.date: 08/30/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "sbyte"
       isCorrect: false
-      explanation: "That’s incorrect. The sbyte value type represents integers with values ranging from -128 to 127."
+      explanation: "Incorrect. The sbyte value type represents integers with values ranging from -128 to 127."
     - content: "ushort"
       isCorrect: true
       explanation: "Correct, ushort represents values 0 to 65535."
     - content: "byte"
       isCorrect: false
-      explanation: "Incorrect. The unsigned byte, referred to as \"byte\", only has values 0 to 255."
+      explanation: "Incorrect. The unsigned byte referred to as \"byte\", only has values 0 to 255."

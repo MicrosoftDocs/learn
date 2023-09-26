@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-http-operations-asp-razor.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/11/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the recommended approach for implementing `HttpClient` in an app with long-lived clients?"
+    choices:
+    - content: "Create a new instance of `HttpClient` for each request."
+      isCorrect: false
+      explanation: "Incorrect. This approach is not recommended for long-lived clients."
+    - content: "Use clients created by `IHttpClientFactory`."
+      isCorrect: false
+      explanation: "Incorrect. This approach is recommended for short-lived clients."
+    - content: "Create a `static` or singleton instance using the `HttpClient` class and set `PooledConnectionLifetime`."
+      isCorrect: true
+      explanation: "Correct. For long-lived clients, it's recommended to create a `static` or singleton instance using the `HttpClient` class and set `PooledConnectionLifetime`."
+  - content: "What is the purpose of `IHttpClientFactory` in an ASP.NET Razor Pages app?"
+    choices:
+    - content: "To handle the creation and disposal of REST operations"
+      isCorrect: false
+      explanation: "Incorrect. `IHttpClientFactory` handles the creation and disposal of HTTP clients, not REST operations."
+    - content: "To handle the creation and disposal of HTTP requests"
+      isCorrect: false
+      explanation: "Incorrect. `IHttpClientFactory` handles the creation and disposal of HTTP clients, not requests."
+    - content: "To handle the creation and disposal of HTTP clients"
+      isCorrect: true
+      explanation: "Correct. `IHttpClientFactory` handles the creation and disposal of HTTP clients, which can be used to perform REST operations."
+  - content: "What is the naming convention for handler methods in Razor Pages?"
+    choices:
+    - content: "The word 'Action' added to the beginning of the HTTP request verb"
+      isCorrect: false
+      explanation: "Incorrect. The word 'On' is added to the beginning of the HTTP request verb for handler methods in Razor Pages."
+    - content: "The word 'Handler' added to the beginning of the HTTP request verb"
+      isCorrect: false
+      explanation: "Incorrect. The word 'On' is added to the beginning of the HTTP request verb for handler methods in Razor Pages."
+    - content: "The word 'On' added to the beginning of the HTTP request verb"
+      isCorrect: true
+      explanation: "Correct. Handler methods in Razor Pages follow the naming convention of the word 'On' added to the beginning of the HTTP request verb."

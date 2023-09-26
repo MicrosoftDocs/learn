@@ -1,4 +1,3 @@
-
 AI embedded in everyday applications may not be enough to power the business applications an organization needs. In these cases, Power Platform is the next step towards more customizable AI solutions. It provides a simple, low-code way to introduce AI in your business applications without having to create or manage the AI yourself.
 
 ## What is Microsoft Power Platform?

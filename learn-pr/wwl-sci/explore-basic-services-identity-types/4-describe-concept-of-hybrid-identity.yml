@@ -9,6 +9,6 @@ metadata:
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-durationInMinutes: 6
+durationInMinutes: 2
 content: |
   [!include[](includes/4-describe-concept-of-hybrid-identity.md)]

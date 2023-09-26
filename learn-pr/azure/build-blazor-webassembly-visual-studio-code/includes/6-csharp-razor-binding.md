@@ -24,7 +24,7 @@ You can also add an `@functions` section to the template for methods and propert
 
 ### Page directive
 
-The `@Page` directive is special markup that identifies a component as a page. You can use this directive to specify a route. The route maps to an attribute route that the Blazor engine recognizes to register and access the page.
+The `@page` directive is special markup that identifies a component as a page. You can use this directive to specify a route. The route maps to an attribute route that the Blazor engine recognizes to register and access the page.
 
 ## Razor data binding
 

@@ -6,8 +6,8 @@ metadata:
   title: Security tools and policies
   description: Various tools and policies organizations can use to quickly achieve a security baseline.
   ms.date: 04/26/2022
-  author: martinekuan
-  ms.author: martinek
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

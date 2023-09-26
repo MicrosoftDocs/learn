@@ -33,5 +33,5 @@ Whether you use Windows 10 or 11, install or upgrade to the 64-bit version of Wi
 #### Scenario Answers
 
  -  ***Scenario 1.** Enterprise LTSC - As it doesn't receive feature updates, this minimizes changes to the OS that may affect the sensitive application.*
- -  ***Scenario 2.** Pro - While Samuael can use any edition of Windows to take advantage of features such as OneDrive to minimize losing data, or Windows Hello for authentication, the extra benefits of Pro like BitLocker can protect his data from being accessed in the event his device is stolen.*
+ -  ***Scenario 2.** Pro - While Samuel can use any edition of Windows to take advantage of features such as OneDrive to minimize losing data, or Windows Hello for authentication, the extra benefits of Pro like BitLocker can protect his data from being accessed in the event his device is stolen.*
  -  ***Scenario 3.** Enterprise - The Windows Enterprise edition offers advanced security features such as DirectAccess, Windows Defender Credential Guard, and Windows Defender Application Guard. Additionally, it provides comprehensive management tools for remote desktop services, making it ideal for businesses with a growing remote workforce.*
