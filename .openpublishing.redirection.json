@@ -27902,6 +27902,11 @@
       "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/6-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/azure/governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/7-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/",
+      "redirect_document_id": false
     }
   ]
 }
