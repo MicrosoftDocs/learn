@@ -2,7 +2,7 @@ Here, we discuss how you can design an InnerSource program to enjoy the best of 
 
 ## What is InnerSource?
 
-Open-source software can be freely used, modified, and shared by anyone. With open-source software anyone can view, modify, and distribute a project for any purpose, as enforced by open-source licenses.
+Open-source software can be freely used, modified, and shared by anyone. Using open-source software, anyone can view, modify, and distribute a project for any purpose with the idea that sharing code leads to better, more reliable software.
 
 **InnerSource** is the practice of applying open-source patterns to projects with a limited audience. For example, a company may establish an InnerSource program that mirrors the structure of a typical open-source project, except that it's only accessible to the employees of that company. In effect, it's an open-source program behind your company's firewall.
 
@@ -46,10 +46,10 @@ A few best practices include:
 
 - Use a descriptive repository name, such as `warehouse-api` or `supply-chain-web`.
 - Include a concise description. A sentence or two should be enough for potential users to know if the project might fit their needs.
-- [License your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) so that others are free to use, change, and distribute the software.
+- [License your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) so that customers know how they can use, change, and distribute the software.
 - Include a `README.md` file in the repository. GitHub uses this file as the landing page when people visit the repository.
 
-#### Add a README file
+### Add a README file
 
 A README file communicates expectations for your project and helps you manage contributions. README files can:
 
@@ -57,11 +57,10 @@ A README file communicates expectations for your project and helps you manage co
 - Offer visual aids, such as screenshots or code samples, to illustrate the project in action.
 - Include links to a production or demo version of the app for review.
 - Set expectations for prerequisites and deployment procedures.
-- Let potential users know if the project has disqualifying prerequisites.
-- Include references to projects on which you depend, which is a good way to promote the work of others.
-- Make use of Markdown to guide readers through properly formatted content.
+- Include references to the projects on which you depend. These references are a good way to promote the work of others.
+- Use Markdown to guide readers through properly formatted content.
 
-If you put your README file in your repository's hidden *.github*, *root*, or *docs* directory, GitHub recognizes and automatically surfaces your README to repository visitors. If a repository contains more than one README file, then the file shown is chosen from locations in the following order: the .github directory, then the repository's root directory, and finally the docs directory.
+If you put your README file in your repository's hidden *.github*, *docs*, or in the root directory, GitHub recognizes and automatically surfaces your README to repository visitors. If a repository contains more than one README file, then the file shown is chosen from locations in the following order: the *.github* directory, then the repository's root directory, and finally the *docs* directory.
 
 Check out some [Awesome README examples](https://github.com/matiassingers/awesome-readme?azure-portal=true).
 
