@@ -35,4 +35,4 @@ This command will start a stopped VM. We can verify it through the `vm get-insta
 
 ## Restart a VM
 
-Finally, we can restart a VM if we have made changes that require a reboot running the `vm restart` command. You can add the `--no-wait` flag if you want the Azure CLI to return immediately without waiting for the VM to reboot.
+Finally, we can restart a VM if we've made changes that require a reboot by running the `vm restart` command. You can add the `--no-wait` flag if you want the Azure CLI to return immediately without waiting for the VM to reboot.
