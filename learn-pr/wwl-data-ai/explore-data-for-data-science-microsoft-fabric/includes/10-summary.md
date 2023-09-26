@@ -1,6 +1,6 @@
 To perform data science, it's important to understand the underlying structure and extract meaningful insights from the data. These insights can guide you in choosing the appropriate model that best fit the data.
 
-Data exploration is like a preliminary investigation of the data, setting the stage for all subsequent steps in the data science process.
+Data exploration is a preliminary investigation of the data, setting the stage for all subsequent steps in the data science process.
 
 For additional reading, you can refer to the following URLs:
 
