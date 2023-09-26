@@ -4,12 +4,12 @@ title: Exercise - Use built-in functions
 metadata:
   title: Exercise - Use built-in functions
   description: "Exercise - Use built-in functions"
-  ms.date: 11/15/2022
+  ms.date: 09/14/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
+  ms.service: sql
+  ms.subservice: t-sql
 labId: 96514
 labModal: true
 durationInMinutes: 30

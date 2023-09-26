@@ -268,7 +268,7 @@ In this task, you update the `while (anotherPet == "y" && petCount < maxPets)` c
     case "3":
     ```
 
-    The value of `petCount` is incremented inside the `while` loop. If `petCount` is equal to `maxPets`, no more pets can be added to the `ourAnimals` array. You should let the user when this occurs.
+    The value of `petCount` is incremented inside the `while` loop. If `petCount` is equal to `maxPets`, no more pets can be added to the `ourAnimals` array. You should let the user know when this occurs.
 
 1. To inform the user that Contoso Pets has reached their capacity, update your code as follows:
 

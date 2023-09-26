@@ -4,11 +4,35 @@ This unit summarized design recommendations related to identity and access manag
 - [Platform access](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-platform-access)
 - [Prerequisites for a landing zone](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones)
 
-## Azure AD, Azure AD DS, and AD DS on Windows Server
+## Comparing identity solutions
 
-When evaluating which type of Active Directory solution to adopt, understand the capabilities and differences of Azure AD, Azure AD Domain Services (Azure AD DS), and AD DS on Windows Server.
+### Active Directory vs Azure AD: user management
 
-### Design recommendations
+|Concept|Active Directory (AD)|Azure Active Directory |
+|:-|:-|:-|
+|**Users**|||
+|Provisioning: users | Organizations create internal users manually or use an in-house or automated provisioning system, such as the Microsoft Identity Manager, to integrate with an HR system.|Existing AD organizations use Azure AD Connect to sync identities to the cloud.</br> Azure AD adds support to automatically create users from cloud HR systems. </br>Azure AD can provision identities in SCIM enabled SaaS apps to automatically provide apps with the necessary details to allow access for users. |
+|Provisioning: external identities| Organizations create external users manually as regular users in a dedicated external AD forest, resulting in administration overhead to manage the lifecycle of external identities (guest users)| Azure AD provides a special class of identity to support external identities. Azure AD B2B will manage the link to the external user identity to make sure they are valid. |
+| Entitlement management and groups| Administrators make users members of groups. App and resource owners then give groups access to apps or resources.| Groups are also available in Azure AD and administrators can also use groups to grant permissions to resources. In Azure AD, administrators can assign membership to groups manually or use a query to dynamically include users to a group. </br> Administrators can use Entitlement management in Azure AD to give users access to a collection of apps and resources using workflows and, if necessary, time-based criteria. |
+| Admin management|Organizations will use a combination of domains, organizational units, and groups in AD to delegate administrative rights to manage the directory and resources it controls.| Azure AD provides built-in roles with its Azure AD role-based access control (Azure AD RBAC) system, with limited support for creating custom roles to delegate privileged access to the identity system, the apps, and resources it controls.</br>Managing  roles can be enhanced with Privileged Identity Management (PIM) to provide just-in-time, time-restricted, or workflow-based access to privileged roles. |
+| Credential management| Credentials in Active Directory are based on passwords, certificate authentication, and smartcard authentication. Passwords are managed using password policies that are based on password length, expiry, and complexity.|Azure AD uses intelligent password protection for cloud and on-premises. Protection includes smart lockout plus blocking common and custom password phrases and substitutions. </br>Azure AD significantly boosts security through Multi-factor authentication and passwordless technologies, like FIDO2. </br>Azure AD reduces support costs by providing users a self-service password reset system. |
+
+### Active Directory-based services in Azure: AD DS, Azure AD and Azure AD DS
+
+To provide applications, services, or devices access to a central identity, there are three common ways to use Active Directory-based services in Azure. This choice in identity solutions gives you the flexibility to use the most appropriate directory for your organization's needs. For example, if you mostly manage cloud-only users that run mobile devices, it may not make sense to build and run your own Active Directory Domain Services (AD DS) identity solution. Instead, you could just use Azure Active Directory.
+
+Although the three Active Directory-based identity solutions share a common name and technology, they're designed to provide services that meet different customer demands. At high level, these identity solutions and feature sets are:
+
+* **Active Directory Domain Services (AD DS)** - Enterprise-ready lightweight directory access protocol (LDAP) server that provides key features such as identity and authentication, computer object management, group policy, and trusts.
+    * AD DS is a central component in many organizations with an on-premises IT environment, and provides core user account authentication and computer management features.
+* **Azure Active Directory (Azure AD)** - Cloud-based identity and mobile device management that provides user account and authentication services for resources such as Microsoft 365, the Azure portal, or SaaS applications.
+    * Azure AD can be synchronized with an on-premises AD DS environment to provide a single identity to users that works natively in the cloud.
+* **Azure Active Directory Domain Services (Azure AD DS)** - Provides managed domain services with a subset of fully compatible traditional AD DS features such as domain join, group policy, LDAP, and Kerberos / NTLM authentication.
+    * Azure AD DS integrates with Azure AD, which itself can synchronize with an on-premises AD DS environment. This ability extends central identity use cases to traditional web applications that run in Azure as part of a lift-and-shift strategy.
+
+For a more extensive discussion comparing these three options, see [Compare self-managed Active Directory Domain Services, Azure Active Directory, and managed Azure Active Directory Domain Services](https://learn.microsoft.com/azure/active-directory-domain-services/compare-identity-solutions).
+
+## Cross cutting Design recommendations
 
 - Use centralized and delegated responsibilities based on role and security requirements to manage resources inside the landing zone. 
 - The following types of privileged operations require special permissions. Consider which users will be handling such requests, and how to adequately secure and monitor their accounts.

@@ -1,4 +1,3 @@
-
 There's excitement stirring around AI. It's now clear that AI technologies drive substantial value to organizations and should be embraced to keep a competitive edge. However, the complexity underpinning AI may feel intimidating. Any organization needs a solid plan for AI adoption and scaling to fully benefit from AI's potential. You should consider AI as a tool to reach your business goals and incorporate it into the corporate strategy.
 
 In Microsoft, we recommend using a **holistic framework for AI strategy**. This framework applies to all organizations, and provides a sensible approach to AI implementation. This AI strategy framework covers three elements: the external environment that gives you context, the value proposition that you offer to customers, and the executive capabilities of your organization.

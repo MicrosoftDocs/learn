@@ -8,8 +8,7 @@ metadata:
   ms.author: gerryo
   manager: nitinme
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services 
-  ms.subservice: personalizer 
+  ms.service: azure-ai-personalizer
 title: Introduction to Personalizer
 summary: Discover the services available on Azure to personalize experiences for your users.
 abstract: | 
