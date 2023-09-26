@@ -4,11 +4,10 @@ title: Design for application delivery services
 metadata:
   title: Design for application delivery services
   description: "Review considerations and a decision tree flowchart to design for application delivery services."
-  ms.date: 03/17/2023
+  ms.date: 08/24/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

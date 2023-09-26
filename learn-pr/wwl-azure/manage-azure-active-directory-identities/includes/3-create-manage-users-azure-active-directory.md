@@ -1,4 +1,5 @@
 
+
 You can manage Azure AD users, groups, and devices by using the Azure portal, the Microsoft Azure Active Directory module for Windows PowerShell, or Microsoft 365. You can add users to a directory, and also add users to groups.
 
 You can create two types of user accounts on the Azure portal:
@@ -8,7 +9,7 @@ You can create two types of user accounts on the Azure portal:
 
 There are essentially two ways to create and manage your users:
 
- -  **As cloud identities by using only Azure A:D** This option is the quickest and most straightforward method.
+ -  **As cloud identities by using only Azure AD** This option is the quickest and most straightforward method.
  -  **As directory-synchronized identities by using an on-premises directory service to synchronize with Azure AD:** This method has the added complexity of installing and configuring synchronization software to ensure that directory objects synchronize successfully with Azure AD.
 
 The Azure portal provides a simple web interface for creating and managing users, groups, and devices.
@@ -25,7 +26,7 @@ To create a single user, perform the following steps:
 4.  Enter the following user information:
     
      -  Name
-     -  User name: &lt;unique name&gt;
+     -  User name: < unique name >
      -  Profile - First Name/Last Name/Display Name: (choose appropriate values)
      -  Properties: choose source of authority (default is Azure AD)
      -  Groups: Select groups to which you want the new user to belong

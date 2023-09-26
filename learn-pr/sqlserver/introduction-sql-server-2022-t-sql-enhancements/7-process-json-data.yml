@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.process-json-data
+title: New and improved JSON functions
+metadata:
+  title: New and improved JSON functions
+  description: "The addition and improvement of JSON functions in SQL Server 2022 make it easier for users to work with JSON objects."
+  ms.date: 5/5/2023
+  author: MScalopez
+  ms.author: calopez
+  ms.reviewer: vanto
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-process-json-data.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "What is the purpose of the JSON_OBJECT function in SQL Server 2022?"
+    choices:
+    - content: "To check if a JSON string is valid"
+      isCorrect: false
+      explanation: "The JSON_OBJECT function constructs a JSON object by specifying key-value pairs, simplifying the process of creating JSON objects from query results."
+    - content: "To construct a JSON object using key-value pairs"
+      isCorrect: true
+      explanation: "The JSON_OBJECT function constructs a JSON object by specifying key-value pairs, making it easier to create JSON objects from query results."
+    - content: "To construct a JSON array using elements"
+      isCorrect: false
+      explanation: "The JSON_ARRAY function constructs a JSON array by specifying elements, not the JSON_OBJECT function."
+  - content: "What enhancement was made to the ISJSON function in SQL Server 2022?"
+    choices:
+    - content: "Support for JSON type constraint"
+      isCorrect: true
+      explanation: "In SQL Server 2022, the ISJSON function was enhanced to support json_type_constraint, allowing you to check for the JSON types of VALUE, ARRAY, OBJECT, or SCALAR."
+    - content: "Support for JSON path expressions"
+      isCorrect: false
+      explanation: "The enhancement made to the ISJSON function in SQL Server 2022 was the support for json_type_constraint, not JSON path expressions."
+    - content: "Ability to create JSON arrays"
+      isCorrect: false
+      explanation: "The enhancement made to the ISJSON function in SQL Server 2022 was the support for json_type_constraint. Creating JSON arrays is a feature of the JSON_ARRAY function."

@@ -5,12 +5,14 @@ metadata:
   unitType: learning-content
   title: Work with numbers in lists
   description: You can work with data other than strings in lists, including numbers.
-  ms.date: 12/03/2021 
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms. prod: learning-languages 
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+durationInMinutes: 4
 content: |
   [!include[](includes/4-numeric-lists.md)]

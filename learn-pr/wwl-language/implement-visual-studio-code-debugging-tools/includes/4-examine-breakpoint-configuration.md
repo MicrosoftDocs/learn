@@ -1,7 +1,3 @@
-
-
-
-
 Debuggers are used to help you to analyze your code and can be used to control your program's runtime execution. When you start the Visual Studio Code debugger, it immediately begins executing your code. Because your code executes in micro-seconds, effective code debugging depends on your ability to pause the program on any statement within your code. Breakpoints are used to specify where code execution pauses.
 
 ## Set breakpoints
@@ -58,13 +54,17 @@ For example, suppose you need to debug some code that's inside the code block of
 
 When you run your code in the debugger, it skips over your breakpoint until the iteration when `i > 3` evaluates as `true`. When `i = 4`, execution pauses on your conditional breakpoint.
 
-## Support for `Hitcount` breakpoints and `Logpoints`
+## Support for `Hit Count` breakpoints and `Logpoints`
 
-The C# debugger for Visual Studio Code doesn't currently support `Hitcount` breakpoints or `Logpoints`.
+The C# debugger for Visual Studio Code also supports `Hit Count` breakpoints and `Logpoints`.
 
-If you configure either a `Hitcount` breakpoint or a `Logpoint`, the red dot to the left of the line number is updated (after the debug session) to indicate the breakpoint isn't supported. If you hover the mouse cursor over the red dot, the following message is displayed:
+A 'hit count' breakpoint can be used to specify the number of times that a breakpoint must be encountered before it will 'break' execution. You can specify a hit count value when creating a new breakpoint (with the Add Conditional Breakpoint action) or when modifying an existing one (with the Edit Condition action). In both cases, an inline text box with a dropdown menu opens where you can enter the hit count value.
 
-![Screenshot showing the breakpoint type not supported message.](../media/breakpoint-logpoint-hitcount-not-supported.png)
+A 'Logpoint' is a variant of a breakpoint that does not "break" into the debugger but instead logs a message to the console. Logpoints are especially useful for injecting logging while debugging production environments that cannot be paused or stopped. A Logpoint is represented by a "diamond" shaped icon rather than a filled circle. Log messages are plain text but can include expressions to be evaluated within curly braces ('{}').
+
+Logpoints can include a conditional 'expression' and/or 'hit count' to further control when logging messages are generated. For example, you can combine a Logpoint message of `i = {i}` with Hit Count condition `>4`to generate log messages as follows:
+
+![Screenshot showing the output of a Log Message breakpoint combined with Hit Count.](../media/breakpoints-log-message-hit-count.png)
 
 ## Recap
 
@@ -72,5 +72,5 @@ Here are a few important things to remember from this unit:
 
 - Visual Studio Code enables setting breakpoints in the code editor or from the **Run** menu. Breakpoint code lines are marked with a red dot to the left of the line number.
 - Breakpoints can be removed or disabled using the same options used to set them. Bulk operations that affect all breakpoints are available on the **Run** menu.
-- Conditional breakpoints can be used to pause execution when a specified condition is met.
-- The C# debugger for Visual Studio Code doesn't currently support `Hitcount` breakpoints or `Logpoints`.
+- Conditional breakpoints can be used to pause execution when a specified condition is met or when a 'hit count' is reached.
+- Logpoints can be used to log information to the terminal without pausing execution or inserting code.

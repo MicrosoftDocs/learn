@@ -4,12 +4,11 @@ title: App Service Environment
 metadata:
   title: App Service Environment
   description: "App Service Environment"
-  ms.date: 02/24/2023
+  ms.date: 05/26/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 10
 content: |
   [!include[](includes/8-app-service-environment.md)]

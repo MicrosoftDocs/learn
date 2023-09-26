@@ -5,8 +5,8 @@ metadata:
   title: Identify potential security incidents
   description: Introduction to data breach notifications and Microsoft shared responsibility model.
   ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

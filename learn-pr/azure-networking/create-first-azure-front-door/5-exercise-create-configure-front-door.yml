@@ -9,7 +9,7 @@ metadata:
   author: duongau
   ms.author: duau
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-create-configure-front-door.md)]

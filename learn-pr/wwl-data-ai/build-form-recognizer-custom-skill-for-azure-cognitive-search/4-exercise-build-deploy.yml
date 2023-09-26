@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.exercise-build-deploy
-title: 'Exercise: Build and deploy a Form Recognizer custom skill'
+title: 'Exercise: Build and deploy an Azure AI Document Intelligence custom skill'
 metadata:
-  title: 'Exercise: Build and deploy a Form Recognizer custom skill'
-  description: "Exercise: Build and deploy a Form Recognizer custom skill"
+  title: 'Exercise: Build and deploy an Azure AI Document Intelligence custom skill'
+  description: "Exercise: Build and deploy an Azure AI Document Intelligence custom skill"
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

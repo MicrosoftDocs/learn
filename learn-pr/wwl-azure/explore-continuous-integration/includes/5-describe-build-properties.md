@@ -1,3 +1,4 @@
+
 You may have noticed that in some demos, the build number was just an integer, yet in other demos, there's a formatted value that was based upon the date.
 
 It is one of the items that can be set in the **Build Options**.

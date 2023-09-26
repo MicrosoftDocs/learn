@@ -8,6 +8,8 @@ metadata:
   author: TomReidNZ
   ms.author: jasdeb
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-python
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 1

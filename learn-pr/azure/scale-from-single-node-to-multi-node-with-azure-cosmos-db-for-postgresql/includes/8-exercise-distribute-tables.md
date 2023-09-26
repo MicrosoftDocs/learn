@@ -1,41 +1,41 @@
-After looking at Wide World Importers' non-distributed data and evaluating it for distribution, you can distribute the data.
+After you review the Wide World Importers nondistributed data and evaluate it for distribution, you can distribute the data.
 
 ## Review the plan
 
-This is the plan based on what was seen:
+You create the following plan based on the data you reviewed:
 
-1. Set up a simulation of the sensors reporting their readings.
-2. Get a baseline understanding of the query in a non-distributed environment through its query plan.
-3. Start the benchmark to simulate data access.
-4. Drop and update the primary key on `events`.
-5. Make `device_types` a reference table.
-6. Remove the foreign key relationship between `devices` and `events`.
-7. Distribute `devices` on `device_id` using `create_distributed_table_concurrently()`.
-8. Distribute `events` on `device_id` using `create_distributed_table_concurrently()`.
-9. Recreate the foreign key relationship between `events` and `devices`.
-10. Truncate the data from the coordinator.
-11. Review query performance in a distributed environment.
+1. Set up a simulation of the sensors to report their readings.
+1. Get a baseline understanding of the query in a nondistributed environment through its query plan.
+1. Start the benchmark to simulate data access.
+1. Drop and update the primary key on the `events` table.
+1. Make `device_types` a reference table.
+1. Remove the foreign key relationship between `devices` and `events`.
+1. Distribute `devices` on `device_id` by using `create_distributed_table_concurrently()`.
+1. Distribute `events` on `device_id` by using `create_distributed_table_concurrently()`.
+1. Re-create the foreign key relationship between `events` and `devices`.
+1. Truncate the data from the coordinator.
+1. Review the query performance in a distributed environment.
 
 Now that the plan is laid out, you can execute the plan.
 
 ## Set up the simulation
 
-The sensors report their readings every minute. You can use the `pg_cron` extension and a cron job to write sensor values every minute.
+The sensors report their readings every minute. You can use the pg_cron extension and a cron job to write sensor values every minute.
 
-### Verify installation of pg_cron extension
+### Verify that the pg_cron extension is installed
 
-In the following tasks, you'll use the `pg_cron` extension for PostgreSQL to run scheduled jobs in the database. You'll use this to simulate the sensors' updates. Before installing any new supported extensions in your database, view the complete list of installed extensions to avoid potential conflicts. Many popular PostgreSQL extensions are pre-installed on every Azure Cosmos DB for PostgreSQL cluster.
+In the following tasks, you use the pg_cron extension for PostgreSQL to run scheduled jobs in the database. You use the extension to simulate sensor updates. Before you install any new supported extensions in your database, view the complete list of installed extensions to avoid potential conflicts. Many popular PostgreSQL extensions are preinstalled on every Azure Cosmos DB for PostgreSQL cluster.
 
 1. Connect to your Azure Cosmos DB for PostgreSQL cluster via psql in [Azure Cloud Shell](https://shell.azure.com).
-2. View the list of pre-installed extensions in your Azure Cosmos DB for PostgreSQL database by running the following:
+1. View the list of preinstalled extensions in your Azure Cosmos DB for PostgreSQL database by running the following query:
 
     ```sql
     SELECT * FROM pg_extension;
     ```
 
-    You can use this query to view the version and details associated with the installed extensions. Alternatively, you could run `\dx` from the command line, a shortcut command that provides a list of installed extensions in your database.
+    You can use this query to view the version and details that are associated with the installed extensions. Alternatively, you can run `\dx` at the command prompt, a shortcut command that provides a list of extensions that are installed in your database.
 
-3. Inspect the output of the above query, looking for a row where the `extname` value is `pg_cron` to determine if the extension is pre-installed.
+1. Inspect the output of the query. Look for a row in which the **extname** value is **pg_cron** to determine whether the extension is preinstalled.
 
     ```text
       oid  |      extname       | extowner | extnamespace | extrelocatable | extversion |         extconfig         | extcondition  
@@ -43,13 +43,13 @@ In the following tasks, you'll use the `pg_cron` extension for PostgreSQL to run
      19371 | pg_cron            |       10 |         2200 | f              | 1.4-1      | {19374,19373,19393,19392} | {"","","",""}
     ```
 
-    The query output reveals that `pg_cron` comes pre-installed, so there's nothing more you need to do to use this extension.
+    The query output reveals that pg_cron comes preinstalled, so there's nothing more you need to do to use this extension.
 
 ### Create and run a stored procedure to add sensor readings to the database
 
-To correctly measure the impact that transitioning from a single-node cluster to a multi-node cluster has on Wide World Importers' sensors database, you can use a stored procedure and scheduled job to simulate sensor reporting load on the database as you go through this exercise.
+To correctly measure the impact that transitioning from a single-node cluster to a multi-node cluster has on Wide World Importers sensor database, you can use a stored procedure and a scheduled job to simulate the load of sensor reporting on the database as you go through this exercise.
 
-1. You can use a stored procedure to create sensor readings for all of the devices listed on the devices table. Since the goal is to run this stored procedure in under 1 minute, you'll generate four sets of sensor data within a minute, sleeping for 10 seconds between runs. This is so that you have data generated in seconds, as this query is a quick query. Run the following SQL:
+1. You can use a stored procedure to create sensor readings for all the devices that are listed in the `devices` table. Because the goal is to run this stored procedure in under one minute, you generate four sets of sensor data within a minute, and then sleep for 10 seconds between runs. This query is a quick query, so you have data generated in seconds. Run the following SQL commands:
 
     ```sql
     CREATE OR REPLACE PROCEDURE generate_sensor_readings()    
@@ -73,31 +73,31 @@ To correctly measure the impact that transitioning from a single-node cluster to
     $$;
     ```
 
-2. Next, you need to execute the stored procedure occasionally to add sensors' readings to the database. To simulate sensor traffic, schedule `generate_sensor_readings` to run every minute using `pg_cron`. Run the following `cron.schedule` command to set up a job named `generate_readings` in the database.
+1. Next, you need to execute the stored procedure occasionally to add sensor readings to the database. To simulate sensor traffic, schedule `generate_sensor_readings` to run every minute by using pg_cron. Run the following `cron.schedule` command to set up a job named `generate_readings` in the database.
 
     ```sql
     SELECT cron.schedule('generate_readings','* * * * *', 'CALL generate_sensor_readings();');
     ```
 
-    This command returns the job ID. If you need to unschedule the job, you can run the `cron.unschedule()` function with either of the following formats:
+    This command returns the job ID. If you need to unschedule the job, you can run the `cron.unschedule()` function by using either of the following formats:
 
     ```sql
     SELECT cron.unschedule(JOB_ID);
     SELECT cron.unschedule(JOB_NAME);
     ```
 
-If you want to monitor the job runs, you can view their statuses and details with the following query:
+If you want to monitor job runs, you can view job status and details by using the following query:
 
 ```sql
 SELECT * FROM cron.job_run_details;
 ```
 
 > [!NOTE]
-> If you want to look at the 5 most recent job runs, run the following command: `SELECT * FROM cron.job_run_details ORDER BY start_time DESC LIMIT 5;`
+> If you want to look at the five most recent job runs, run the following command: `SELECT * FROM cron.job_run_details ORDER BY start_time DESC LIMIT 5;`
 
-## Get a baseline understanding of the query in a non-distributed configuration
+## Get a baseline understanding of the query in a nondistributed configuration
 
-Run the following command to understand how the query is run in a non-distributed configuration:
+Run the following command to understand how the query is run in a nondistributed configuration:
 
 ```sql
 EXPLAIN SELECT device_id, COUNT((CASE WHEN (payload ->> 'humidity')::decimal < 60 THEN 1 ELSE NULL END)) AS LowHumidity,  
@@ -110,7 +110,7 @@ FROM events
 GROUP BY device_id;
 ```
 
-The query plan may look like this:
+The query plan might look like this example:
 
 ```text
                              QUERY PLAN                             
@@ -121,36 +121,36 @@ The query plan may look like this:
 (3 rows)
 ```
 
-For this example, there are 68,005 rows in the sequence scan. When aggregated, it is 1000 rows, as there are 1000 devices showing outliers. Make note of this cost, as you'll compare it later.
+For this example, there are 68,005 rows in the sequence scan. When aggregated, it's 1,000 rows, because 1,000 devices show outliers. Make note of this cost because you'll compare it later.
 
-Keep this instance of Azure Cloud Shell open, as there are more SQL commands to issue. For the next section, you'll open a second instance of Azure Cloud Shell.
+Keep this instance of Cloud Shell open. You'll run more SQL commands later in this unit. For the next section, you'll open a second instance of Azure Cloud Shell.
 
 ## Simulate data access during data distribution
 
-As part of the goal of this module is to go from non-distributed data to distributed data with minimal interruption, you'll run a benchmark that runs in the background to simulate users accessing the data while you're distributing the data. The 20 minutes allocated for this benchmark job should be enough time to show how your data can be accessed while you're distributing it.
+Because part of the goal of this training module is to go from nondistributed data to distributed data with minimal interruption, you run a benchmark that runs in the background to simulate users accessing the data while you're distributing the data. The 20 minutes that you allocated for this benchmark job should be enough time to show how your data can be accessed while you're distributing it.
 
-This exercise shows simulated data usage while going from a non-distributed database to a distributed database configuration. The following scenarios are happening:
+This exercise shows simulated data usage for the scenario of changing from a nondistributed database to a distributed database. The scenario includes the following processes:
 
-- The `pg_cron` job writes data
-- The `pgbench` job reads data.
-- You're distributing data from `psql`.
+- The pg_cron job writes data.
+- The pgbench job reads data.
+- You distribute data from psql.
 
-Since `pgbench` is being used to simulate database read access, run the following command to benchmark over 20 minutes, reporting progress every minute, and then continue reading:
+Because you're using pgbench to simulate database read access, run the following command to set a benchmark of 20 minutes, to report progress every minute, and to then continue reading:
 
 ```bash
 pgbench $PGURL -c 64 -j 64 -T 1200 -n -P 60 -f outliers.sql
 ```
 
-Once this benchmark is started, return to your Azure Cloud Shell running psql.
+After this benchmark is started, return to the Cloud Shell window that's running psql.
 
 ## Update the primary key on events to include the distribution column
 
-Since the `events` table has a relationship with the `devices` table and is frequently queried for a device's readings, it makes sense to distribute the events on the `device_id`. Azure Cosmos DB for PostgreSQL can't enforce unique constraints on distributed tables unless the constraints include the distribution column. Before you can distribute the table, you have to add `device_id` as part of the primary key. The path to minimize disruption involves:
+Because the `events` table has a relationship with the `devices` table and is frequently queried for a device's readings, it makes sense to distribute the events on the `device_id`. Azure Cosmos DB for PostgreSQL can't enforce unique constraints on distributed tables unless the constraints include the distribution column. Before you can distribute the table, you have to add `device_id` as part of the primary key. The path to minimize disruption involves these tasks:
 
-1. Create a new index concurrently that includes the current primary key and the distribution column.
-2. Create a transaction to drop the primary key constraint and add the new primary key.
+1. Concurrently create a new index that includes the current primary key and the distribution column.
+1. Create a transaction to drop the primary key constraint and add the new primary key.
 
-Here's how to accomplish these steps:
+Here's how to accomplish these tasks:
 
 1. To create a new index while data is being used, use `CREATE INDEX CONCURRENTLY`. By creating the index concurrently, normal operations can continue while the index is built. To create a new index on the `events` table that includes the current primary key (`event_id`) and the distribution column, run the following query:
 
@@ -158,7 +158,7 @@ Here's how to accomplish these steps:
     CREATE UNIQUE INDEX CONCURRENTLY events_devices_idx ON events (event_id,device_id);
     ```
 
-2. Transactionally, drop the existing primary key and create a new primary key.
+1. Transactionally, drop the existing primary key and create a new primary key:
 
     ```sql
     BEGIN;
@@ -174,7 +174,7 @@ Here's how to accomplish these steps:
     COMMIT;
     ```
 
-    The output for this command should look similar to this:
+    The output for this command should look similar to this example:
 
     ```text
     BEGIN
@@ -185,15 +185,15 @@ Here's how to accomplish these steps:
     ```
 
     > [!NOTE]
-    > If you're typing these commands and run into this error: 'DETAIL: Cannot create a primary key or unique constraint using such an index.', you may have left the `UNIQUE` out of the concurrent index creation. If you find yourself in this situation, you can get out of that by running `DROP INDEX CONCURRENTLY events_devices_idx` and then start again at step 1 for this section.
+    > If you're typing these commands and see the error message 'DETAIL: Cannot create a primary key or unique constraint using such an index.', you might have left the `UNIQUE` out of the concurrent index creation. If you find yourself in this situation, you can get out of that by running `DROP INDEX CONCURRENTLY events_devices_idx`, and then start again at step 1 for this section.
 
-Confirm the new primary key is set by running the following command:
+Confirm that the new primary key is set by running the following command:
 
 ```sql
 \d events
 ```
 
-The output shows:
+The output looks like this example:
 
 ```text
                                            Table "public.events"
@@ -210,17 +210,17 @@ Foreign-key constraints:
     "events_device_id_fkey" FOREIGN KEY (device_id) REFERENCES devices(device_id)
 ```
 
-Notice that the primary key under Indexes shows `event_id` and `device_id`. Make note of the foreign key name, as you'll need that in the next section.
+The primary key under **Indexes** shows **event_id** and **device_id**. Make note of the foreign key name because you use it in the next section.
 
 ## Create a reference table
 
-Once the baseline query metrics and query plan are gathered, then you can distribute the data. First, promote `devices_types` to a reference table with the following query:
+After the baseline query metrics and query plan are gathered, you can distribute the data. First, promote `devices_types` to a reference table by using the following query:
 
 ```sql
 SELECT create_reference_table('device_types');
 ```
 
-You'll see output similar to this:
+You see output similar to this example:
 
 ```text
 NOTICE:  Copying data from local table...
@@ -235,20 +235,20 @@ NOTICE:  local tables that are added to metadata automatically by citus, but not
 HINT:  Executing citus_add_local_table_to_metadata($$public.events$$) prevents this for the given relation, and all of the connected relations
 ```
 
-It might look like the messages are repeated. Citus does add local tables automatically to the metadata and can convert them back to Postgres tables. There's a hint to execute `citus_add_local_table_to_metadata()` for `devices` and `events` since they're local tables with relationships. With those messages, there are a couple of things to note:
+It might look like the messages are repeated. Citus does automatically add local tables to the metadata, and it can convert them back to PostgreSQL tables. There's a hint to execute `citus_add_local_table_to_metadata()` for `devices` and `events` because they're local tables that have relationships. There are a couple of things to note in those messages:
 
-- You'll truncate the local copy of data at the end, once a copy has been successfully is distributed.
-- If you were keeping a table a local table, then you'd need to run `citus_add_local_table_to_metadata()`.
+- After a copy is successfully distributed, you truncate the local copy of data at the end.
+- If you were keeping a table as a local table, you'd need to run `citus_add_local_table_to_metadata()`.
 
-You aren't going to add the tables as local tables to the metadata, as these tables aren't staying as local tables. These other tables will be distributed.
+You aren't going to add the tables as local tables in the metadata because these tables won't remain local tables. These other tables are distributed.
 
-You can confirm the distribution status with the following query:
+You can confirm the distribution status by using the following query:
 
 ```sql
 SELECT * FROM citus_tables;
 ```
 
-The output looks something like this:
+The output looks something like this example:
 
 ```text
   table_name  | citus_table_type | distribution_column | colocation_id | table_size | shard_count | table_owner | access_method 
@@ -261,28 +261,28 @@ The output looks something like this:
 
 ## Remove the foreign key relationships before distribution
 
-You need to remove the foreign key relationship between `devices` and `events` before distributing them. Beware that when the foreign key is removed there's no protection in the database against an application adding or deleting records that violate referential integrity. You'll reestablish the foreign key relationship once the tables are distributed.
+You need to remove the foreign key relationship between `devices` and `events` before you distribute them. Be aware that when the foreign key is removed, there's no protection in the database against an application adding or deleting records that violate referential integrity. You'll reestablish the foreign key relationship after the tables are distributed.
 
-To remove the foreign key, use DROP CONSTRAINT in an ALTER statement. Since the foreign key constraint in the example above is named `events_device_id_fkey`, this is the SQL to remove it:
+To remove the foreign key, use `DROP CONSTRAINT` in an `ALTER` statement. Because the foreign key constraint in the example is named `events_device_id_fkey`, use this SQL statement to remove it:
 
 ```sql
 ALTER TABLE events DROP CONSTRAINT events_device_id_fkey;
 ```
 
-You may see the following notice as a response:
+You might see the following notice as a response:
 
 ```text
 NOTICE:  removing table public.events from metadata as it is not connected to any reference tables via foreign keys
 ```
 
 > [!NOTE]
-> If you run into an error while dropping the constraint, try running the query again.
+> If you run into an error when you drop the constraint, try running the query again.
 
-If you run the query to check `citus_tables`, you'll notice that the events table is missing from the list. This isn't concerning as events will be distributed and in the metadata again soon.
+If you run the query to check `citus_tables`, you notice that the `events` table is missing from the list. This fact isn't concerning because events will be distributed and they'll be in the metadata again soon.
 
 ## Distribute the devices table concurrently
 
-Since you have data already loaded, you need to be mindful of moving data in use. You'll use `create_distributed_table_concurrently()` to distribute `devices` on its `device_id` field with the following command:
+Because you have data that's already loaded, you need to be mindful of moving data that's in use. You use `create_distributed_table_concurrently()` to distribute `devices` on its `device_id` field by using the following command:
 
 ```sql
 SELECT create_distributed_table_concurrently('devices','device_id');
@@ -294,7 +294,7 @@ To confirm that it's distributed, run the following query:
 SELECT * FROM citus_tables;
 ```
 
-The output looks like this:
+The output looks like this example:
 
 ```text
   table_name  | citus_table_type | distribution_column | colocation_id | table_size | shard_count | table_owner | access_method 
@@ -303,13 +303,13 @@ The output looks like this:
  device_types | reference        | <none>              |             2 | 96 kB      |           1 | citus       | heap
 ```
 
-Notice that the `citus_table_type` shows `devices` as `distributed`. It also has a `distribution_column` value as well as a shard count greater than 1.
+Notice that the **citus_table_type** column shows that `devices` is distributed. It also has a **distribution_column** value and a shard count greater than 1.
 
 ## Distribute the events table concurrently
 
-As there's data in the events table, you want to move the data using `create_distributed_table_concurrently()`.
+Because there's data in the `events` table, you want to move the data by using `create_distributed_table_concurrently()`.
 
-Use `create_distributed_table_concurrently()` to distribute `events` on its `device_id` field with the following command:
+Use `create_distributed_table_concurrently()` to distribute `events` on its `device_id` field by using the following command:
 
 ```sql
 SELECT create_distributed_table_concurrently('events','device_id');
@@ -321,7 +321,7 @@ To confirm that it's distributed, run the following query:
 SELECT * FROM citus_tables;
 ```
 
-The output looks like this:
+The output looks like this example:
 
 ```text
   table_name  | citus_table_type | distribution_column | colocation_id | table_size | shard_count | table_owner | access_method 
@@ -331,25 +331,25 @@ The output looks like this:
  events       | distributed      | device_id           |             3 | 19 MB    |          32 | citus       | heap
 ```
 
-Notice that devices and events are colocated by having the same `colocation_id` value. This means that the `events` data is distributed on `device_id` and colocated with the `devices` shard for that `device_id`.
+Notice that `devices` and `events` are colocated by having the same `colocation_id` value. The `events` data is distributed on `device_id` and colocated with the `devices` shard for that `device_id` value.
 
 ## Reestablish the foreign key between devices and events
 
-Since `devices` and `events` are two distributed tables that are colocated, they can have a foreign key relationship enforced. Readd the foreign key relationship on `device_id` with the following command:
+Because `devices` and `events` are two distributed tables that are colocated, they can have a foreign key relationship enforced. Readd the foreign key relationship on `device_id` by using the following command:
 
 ```sql
 ALTER TABLE events ADD CONSTRAINT FK_events_devices FOREIGN KEY (device_id) REFERENCES devices(device_id);
 ```
 
-## Truncate data from the coordinator
+## Truncate data from the coordinator node
 
-Now that the data is distributed, you can truncate the data from the coordinator. Since you no longer need the local tables on there, it's good practice to clean that up. You can truncate the data by calling `truncate_local_data_after_distributing_table()`. Clean up the local tables with the following commands:
+Now that the data is distributed, you can truncate the data from the coordinator node. Because you no longer need the local tables on that node, it's good practice to clean up the node. You can truncate the data by calling `truncate_local_data_after_distributing_table()`. Clean up the local tables by using the following commands:
 
 ```sql
 SELECT truncate_local_data_after_distributing_table('public.device_types');
 ```
 
-The output looks like this:
+The output looks like this example:
 
 ```text
 NOTICE:  truncate cascades to table "devices"
@@ -360,15 +360,15 @@ NOTICE:  truncate cascades to table "events"
 (1 row)
 ```
 
-Truncates will cascade to the **local** version of other distributed tables. As the data has been distributed on the worker nodes, this `truncate_local_data_after_distributing_table()` command removes stale data on the local tables left behind in the distribution process.
+Truncates cascade to the **local** version of other distributed tables. Because the data has been distributed on the worker nodes, this `truncate_local_data_after_distributing_table()` command removes stale data on the local tables that was left behind in the distribution process.
 
 ## Confirm query performance
 
-Now that the data has been distributed and the local data has been truncated, you can stop the benchmarks in the second Azure Cloud Shell window. If they're still running, press `Ctrl+C` to stop `pgbench`. This instance of Azure Cloud Shell can be exited.
+Now that the data has been distributed and the local data has been truncated, you can stop the benchmarks in the second Cloud Shell window. If they're still running, select **Ctrl+C** to stop pgbench. You can close this instance of Cloud Shell.
 
-Switch to the Azure Cloud Shell running `psql`. You can examine the query plan to see if distributing the query changes the performance.
+Switch to the Cloud Shell window that's running psql. You can examine the query plan to see whether distributing the query changes the performance.
 
-The non-distributed query plan looked like this:
+The nondistributed query plan looked like this example:
 
 ```text
                              QUERY PLAN                             
@@ -392,7 +392,7 @@ FROM events
 GROUP BY device_id;
 ```
 
-The distributed query plan shows:
+The distributed query plan shows output that looks like this example:
 
 ```text
                                               QUERY PLAN                                              
@@ -408,11 +408,11 @@ The distributed query plan shows:
 (8 rows)
 ```
 
-In the query for outliers, there isn't a specific `device_id`. Since this query involves all records, the coordinator is engaging all nodes, which queries all shards. Why are there 32 tasks? There's a task for each shard, and Azure Cosmos DB for PostgreSQL creates 32 shards by default.
+In the query for outliers, there isn't a specific value for `device_id`. Because this query involves all records, the coordinator node is engaging all nodes, and all shards are queried. Why are there 32 tasks? There's a task for each shard, and Azure Cosmos DB for PostgreSQL creates 32 shards by default.
 
-## Looking at specific queries
+## Look at specific queries
 
-You know that device 42 is problematic. Does including the device ID improve the query? Try this:
+You know that device 42 is problematic. Does including the device ID improve the query? Try running the following query:
 
 ```sql
 EXPLAIN SELECT device_id, COUNT((CASE WHEN (payload ->> 'humidity')::decimal < 60 THEN 1 ELSE NULL END)) AS LowHumidity,  
@@ -426,7 +426,7 @@ WHERE device_id = 42
 GROUP BY device_id;
 ```
 
-The query plan for device 42's outlier report is:
+The query plan for device 42's outlier report looks like this example:
 
 ```text
                                               QUERY PLAN                                              
@@ -443,15 +443,15 @@ The query plan for device 42's outlier report is:
 (9 rows)
 ```
 
-In this case, there's one task, as the coordinator can identify which shard needs to be queried for the specific `device_id`. This means that only the shard with `device_id` equal to 42 is queried and not the entire dataset. By including the distribution column in the WHERE clause, Citus can optimize the cluster load to engage only the nodes that have shards with the specified distribution column value.
+In this case, there's one task because the coordinator node can identify which shard needs to be queried for the specific `device_id` value. Only the shard that has a `device_id` value that's equal to 42 is queried, and not the entire dataset. By including the distribution column in the `WHERE` clause, Citus can optimize the cluster load to engage only the nodes that have shards that have the specified distribution column value.
 
-Suppose you want to query for an `event_id`. Run this query to get the first five records of events for device 42:
+Suppose you want to query for an `event_id` value. Run this query to get the first five records of events for device 42:
 
 ```sql
 SELECT event_id FROM events WHERE device_id = 42 LIMIT 5;
 ```
 
-Your results may look like this:
+Your results might look like this example:
 
 ```text
  event_id 
@@ -485,15 +485,15 @@ The query plan comes back as:
 (7 rows)
 ```
 
-With that high of a task count, all of the shards are getting queried, so all of the nodes with shards are engaged. While the `event_id` is part of the index, it isn't the distribution column. Therefore, the coordinator node needs to engage all workers to find the events with the specific `event_id`.
+With a task count that's so high, you know that all the shards are being queried. All of the nodes that have shards are engaged. Although `event_id` is part of the index, it isn't the distribution column. Therefore, the coordinator node needs to engage all workers to find the events that have the specific `event_id` value.
 
-What if you include both the device_id and the event_id?
+What if you include both `device_id` and `event_id`?
 
 ```sql
 EXPLAIN SELECT * FROM events WHERE event_id=7 AND device_id=42;
 ```
 
-That query plan looks like this:
+That query plan looks like this example:
 
 ```text
                                                 QUERY PLAN                                                
@@ -508,8 +508,8 @@ That query plan looks like this:
 (7 rows)
 ```
 
-By including the distribution column in your query's WHERE clause, you help the coordinator to figure out which shards to query, which can lessen the impact of the query on the cluster as fewer worker nodes need to be engaged.
+By including the distribution column in your query's `WHERE` clause, you help the coordinator node figure out which shards to query. The result is less impact on the cluster because fewer worker nodes need to be engaged in the query.
 
 ## Conclusion
 
-By upgrading from a single-node cluster to a multi-node cluster, Wide World Importers were able to identify problems in their sensor data and quickly observe data for particular devices. They were able to take advantage of distributing their data and use parallel processing of the queries to quickly identify humidity and temperature concerns. They were able to improve their performance for queries for specific devices with minimal downtime. The chilly chocolates were removed from the location with device 42 in time to save them from becoming melted chocolates.
+By upgrading from a single-node cluster to a multi-node cluster, Wide World Importers was able to identify problems in its sensor data and quickly observe data for specific devices. The company was able to distribute its data and use parallel processing for queries to quickly identify humidity and temperature concerns. It was able to improve performance for queries for specific devices with minimal downtime. The popular chilly chocolates product were removed from device 42 in time to save them from becoming melted chocolates.

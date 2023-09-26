@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> To do these steps, you need an Azure subscription. If you don't have one already, you can create one by following the steps outlined on the [Create your Azure free account today](https://azure.microsoft.com/free/) webpage.<br>
+> To do these steps, you need an Azure subscription. If you don't have one already, you can create one by following the steps outlined on the [Create your Azure free](https://azure.microsoft.com/free/).<br>
 
 ## Steps
 
@@ -50,7 +50,7 @@ az deployment group create \
 5.  Obtain the IP address by running the following command:
 
 ```azurecli
-    $IPADDRESS=$(az vm show \
+    IPADDRESS=$(az vm show \
       --name SimpleWinVM \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --show-details \

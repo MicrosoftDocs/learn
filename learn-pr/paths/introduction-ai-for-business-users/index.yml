@@ -27,9 +27,5 @@ modules:
 - learn.wwl.enable-business-users-with-key-ai-uses-cases
 - learn-bizapps.wwl.introduction-power-bi
 - learn-bizapps.wwl.introduction-power-platform
-- learn-wwl.ai-strategy-to-create-business-value
-- learn-wwl.build-an-ai-ready-culture
-- learn-wwl.responsible-ai-guiding-principles
-- learn-wwl.intro-to-ai-technology
 trophy:
   uid: learn.wwl.introduction-ai-for-business-users.trophy

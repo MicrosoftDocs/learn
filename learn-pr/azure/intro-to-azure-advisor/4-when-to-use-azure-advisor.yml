@@ -6,8 +6,8 @@ metadata:
   title: When to use Azure Advisor
   description: Learn when to use Azure Advisor and how you can benefit from the provided recommendations.
   ms.date: 03/08/2023
-  author: ricmmartins
-  ms.author: ricmart
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

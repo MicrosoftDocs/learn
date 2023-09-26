@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-desktop
 title: Implement and manage storage for Azure Virtual Desktop
 summary: FSLogix roams profiles in remote computing environments, such as Azure Virtual Desktop. You set up a FSLogix profile container share for a host pool using a virtual machine-based file share.
 abstract: |

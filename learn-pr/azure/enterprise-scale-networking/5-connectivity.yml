@@ -16,14 +16,14 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which of the following should be used for all virtual networks with public endpoints?"
+  - content: "Which of the following connectivity options should be used for all virtual networks with public endpoints?"
     choices:
     - content: 'Azure Front Door'
       isCorrect: false
-      explanation: 'Azure Front Door is not assigned to a network.'
+      explanation: "Azure Front Door isn't assigned to a network."
     - content: 'Azure Private DNS zones'
       isCorrect: false
-      explanation: 'Private DNS zones are not a universal recommendation.'
+      explanation: "Private DNS zones aren't a universal recommendation."
     - content: 'Azure DDoS Standard'
       isCorrect: true
       explanation: 'DDoS Standard provides SLA-backed DDoS protection with log data.'
@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: 'VPN'
       isCorrect: false
-      explanation: 'A single VPN tunnel does not reach the required throughput.'
+      explanation: "A single VPN tunnel doesn't reach the required throughput."
     - content: 'Colocate its servers inside Azure datacenters'
       isCorrect: false
-      explanation: 'This solution is not a possibility.'
+      explanation: "This solution isn't a possibility."
     - content: 'ExpressRoute Direct'
       isCorrect: true
       explanation: "ExpressRoute Direct allows for a 100-Gbps connection to Microsoft's enterprise edge routers that can be carved into multiple 10-Gbps circuits."

@@ -2,30 +2,32 @@
 uid: learn.azure.intro-to-arc-enabled-kubernetes
 metadata:
   title: Introduction to Azure Arc-enabled Kubernetes
-  description: Introduction to Azure Arc-enabled Kubernetes
-  ms.date: 01/05/2023
+  description: Learn about Azure Arc-enabled Kubernetes and how it can help organizations optimize and simplify their operations.
+  ms.date: 08/07/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom:
   - e2e-hybrid
   - event-tier1-build-2022
+  ms.service: azure-arc
+  ms.subservice: azure-arc-kubernetes
 title: Introduction to Azure Arc-enabled Kubernetes
-summary: In this module, you'll learn how Azure Arc-enabled Kubernetes clusters can help customers like Contoso to optimize and simplify their operations.
+summary: Learn about Azure Arc-enabled Kubernetes and how it can help organizations optimize and simplify their hybrid cloud environments.
 abstract: |
-  In this module you will:
   - Describe Kubernetes, Azure Arc, and Azure Arc-enabled Kubernetes.
-  - Connect Kubernetes clusters to Azure Arc.
-  - Manage Azure Arc-enabled Kubernetes cluster configurations by using GitOps.
-  - Integrate Azure Arc-enabled Kubernetes clusters with Azure services such as Azure Monitor and Azure Policy.
+  - Understand how to enhance Kubernetes environments by connecting Kubernetes clusters to Azure Arc.
+  - Understand how to deploy applications to Azure Arc-enabled Kubernetes clusters by using GitOps to manage configurations.
+  - Learn about Azure services that can be deployed to Azure Arc-enabled Kubernetes clusters.
+  - Understand how to use Azure Policy and Azure Monitor with Azure Arc-enabled Kubernetes.
+
 prerequisites: |
-  - Containerization and its concepts
-  - Kubernetes architecture and its concepts
-  - Azure Resource Manager
-  - Azure Policy
-  - Azure command-line interface (CLI)
-  - GitOps principles
+  For the best learning experience from this module, you need basic understanding and familiarity with the following technologies:
+  - Containerization and Kubernetes architecture
+  - Basic understanding of managing Kubernetes clusters
+  - Azure portal and Azure CLI
+  - Azure Monitor and Azure Policy
+  - GitOps principles and processes
 iconUrl: /training/achievements/intro-to-arc-enabled-kubernetes.svg
 levels:
 - beginner
@@ -38,12 +40,13 @@ products:
 - azure-monitor
 units:
 - learn.azure.intro-to-arc-enabled-kubernetes.1-introduction
-- learn.azure.intro-to-arc-enabled-kubernetes.2-kubernetes-arc-overview
-- learn.azure.intro-to-arc-enabled-kubernetes.3-architecture-components
+- learn.azure.intro-to-arc-enabled-kubernetes.arc-overview
+- learn.azure.intro-to-arc-enabled-kubernetes.kubernetes-overview
 - learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
-- learn.azure.intro-to-arc-enabled-kubernetes.5-policy
+- learn.azure.intro-to-arc-enabled-kubernetes.services
 - learn.azure.intro-to-arc-enabled-kubernetes.6-gitops
-- learn.azure.intro-to-arc-enabled-kubernetes.7-integrate-azure-monitor
+- learn.azure.intro-to-arc-enabled-kubernetes.integrate-policy-monitor
+- learn.azure.intro-to-arc-enabled-kubernetes.knowledge-check
 - learn.azure.intro-to-arc-enabled-kubernetes.8-summary
 badge:
   uid: learn.azure.intro-to-arc-enabled-kubernetes.badge

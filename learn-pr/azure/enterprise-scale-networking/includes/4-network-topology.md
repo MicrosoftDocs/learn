@@ -29,7 +29,7 @@ Use the hub-and-spoke model if:
 - You have no requirements for branch-to-branch communications.
 - You don't need SD-WAN integrated solutions.
 - You need highly granular routing control.
-- You'll deploy more than 2,000 virtual machines per hub.
+- You need to deploy more than 2,000 virtual machines per hub.
 
 When multiple ExpressRoute circuits are connected to the same virtual network, you must use connection weights or Border Gateway Protocol (BGP) techniques to ensure an optimal path for traffic between on-premises and Azure. If you use connection weights, BGP AS prepending is ignored.
 
@@ -43,5 +43,5 @@ Each Azure region should have a hub and firewalls. ExpressRoute or VPN gateways 
 
 Use multiple ExpressRoute circuits for these reasons:
 
-- For resiliency, in different peering locations and different providers if possible
-- For dedicated bandwidth to projects or to production, to avoid "noisy neighbor" problems
+- For resiliency. If possible, use them in different peering locations and different providers.
+- For dedicated bandwidth to projects or to production, to avoid "noisy neighbor" problems.

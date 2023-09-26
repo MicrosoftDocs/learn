@@ -5,10 +5,12 @@ metadata:
   unitType: learning-content
   title: Handle exceptions
   description: "Knowing how to catch and handle exceptions is essential in Python. Learn more about common pitfalls like catching all errors to omit output."
-  ms.date: 12/10/2021
+  ms.date: 06/07/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

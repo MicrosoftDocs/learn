@@ -4,7 +4,7 @@ metadata:
   title: JavaScript on Azure
   description: Build JavaScript applications for Azure cloud services such as storage and databases.
   brand: azure
-  ms.date: 11/28/2022
+  ms.date: 06/06/2023
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial
@@ -28,8 +28,6 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn.javascript-on-azure.deploy-expressjs-app-service
-- learn.javascript-on-azure.deploy-expressjs-app-service-with-database
 - learn.azure.build-node-cosmos-app-vscode
 - learn.azure.cna-build-basic-service
 - learn.connect-app-to-azure-storage

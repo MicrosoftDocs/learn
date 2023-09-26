@@ -1,3 +1,5 @@
+
+
 The first step in your design for Azure storage is to determine what types of data are required to support the Tailwind Traders organization. In general, data can be classified in three ways: structured, semi-structured, and unstructured. Most organizations need to provide storage options for all data types. 
 
 ### Things to know about types of data

@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.select-window
+title: Named window definition with the SELECT WINDOW clause
+metadata:
+  title: Named window definition with the SELECT WINDOW clause
+  description: "Named window definition in the WINDOW clause determines the partitioning and ordering of a rowset before the window function which uses the window in OVER clause is applied."
+  ms.date: 5/5/2023
+  author: MScalopez
+  ms.author: calopez
+  ms.reviewer: vanto
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-select-window.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "In the context of the WINDOW clause, what does a named window specification refer to?"
+    choices:
+    - content: "A specific table in the database"
+      isCorrect: false
+      explanation: "A named window specification refers to a reusable definition that can be used with multiple window functions in a query, not a specific table in the database."
+    - content: "A definition that can be used across multiple data calculations"
+      isCorrect: true
+      explanation: "A named window specification refers to a reusable frame definition that can be used with multiple window functions in a query, simplifying complex calculations and aggregations."
+    - content: "A predefined set of SQL functions"
+      isCorrect: false
+      explanation: "A named window specification refers to a reusable definition that can be used with multiple window functions in a query, not a predefined set of SQL functions."
+  - content: "What is the one advantage of using named window specifications in a WINDOW clause?"
+    choices:
+    - content: "Reducing code duplication"
+      isCorrect: true
+      explanation: "One advantage of using named window specifications in a WINDOW clause is to reduce code duplication by allowing the reuse of a single window definition for multiple window functions in a query."
+    - content: "Automatically optimizing query performance"
+      isCorrect: false
+      explanation: "While using named window specifications might improve code readability and maintainability, it doesn't automatically optimize query performance."
+    - content: "Enforcing data consistency"
+      isCorrect: false
+      explanation: "Using named window specifications in a WINDOW clause helps to reduce code duplication and simplify complex calculations, but it doesn't enforce data consistency."

@@ -7,7 +7,7 @@ metadata:
   author: martinekuan
   ms.author: martinek
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: waf
 title: Introduction to the Microsoft Azure Well-Architected Framework
 summary: You want to build great things on Azure, but you're not sure exactly what that means. Using key principles throughout your architecture, regardless of technology choice, can help you design, build, and continuously improve your architecture.
 abstract: |

@@ -11,7 +11,7 @@ The Azure Storage Migration Service in the Windows Admin Center is helpful when 
 
 ### Things to know about the Migration Service
 
-The Azure Storage Migration Service can you help you migrate unstructured data stored in on-premises file servers to Azure Files and Azure-hosted virtual machines. The migration process is accomplished through capabilities provided by the Migration Service, Azure File Sync, and Azure Migrate.
+The Azure Storage Migration Service can help you migrate unstructured data stored in on-premises file servers to Azure Files and Azure-hosted virtual machines. The migration process is accomplished through capabilities provided by the Migration Service, Azure File Sync, and Azure Migrate.
 
 :::image type="content" source="../media/storage-migration-service.png" alt-text="Illustration that shows how the Azure Storage Migration Service moves on-premises data." border="false":::
 

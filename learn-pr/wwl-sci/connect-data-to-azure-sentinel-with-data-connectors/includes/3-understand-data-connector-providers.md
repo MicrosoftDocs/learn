@@ -60,23 +60,22 @@ Using Microsoft Sentinel's output plugin for the Logstash data collection engine
 
 If there's no vendor-provided connector, you can use the generic Common Event Format(CEF) or Syslog Connector.
 
-Syslog is an event logging protocol that is common to Linux. Applications will send messages that may be stored on the local machine or delivered to a Syslog collector.
+Syslog is an event logging protocol that is common to Linux. Applications send messages that may be stored on the local machine or delivered to a Syslog collector.
 
 Common Event Format (CEF) is an industry-standard format on top of Syslog messages, used by many security vendors to allow event interoperability among different platforms. 
 
 ### Syslog vs. Common Event Format
 
-CEF is always a superior choice because the log data is parsed into predefined fields in the CommonSecurityLog table.  Syslog provides header fields, but the raw log message is stored in a field named SyslogMessage in the Syslog table.  For the Syslog data to be queried, you'll need to write a parser to extract the specific fields.  The process to create a Parser for a Syslog message will be demonstrated in a later module.
+CEF is always a superior choice because the log data is parsed into predefined fields in the CommonSecurityLog table.  Syslog provides header fields, but the raw log message is stored in a field named SyslogMessage in the Syslog table.  For the Syslog data to be queried, you need to write a parser to extract the specific fields. The process to create a Parser for a Syslog message is demonstrated in a later module.
 
 ### Connector architecture options
 
-To connect the CEF or Syslog Collector to Microsoft Sentinel, the agent must deploy on a dedicated Azure virtual machine (VM) or an on-premises system to support the appliance's communication with Microsoft Sentinel. You can deploy the agent automatically or manually. Automatic deployment is only available if your dedicated machine is a Virtual Machine in Azure.
+To connect the CEF or Syslog Collector to Microsoft Sentinel, the agent must be deployed on a dedicated Azure virtual machine (VM) or an on-premises system to support the appliance's communication with Microsoft Sentinel. You can deploy the agent automatically or manually. Automatic deployment is only available if your dedicated machine is connected to Azure Arc or is a Virtual Machine in Azure.
 
 The following diagram illustrates on-premises systems sending Syslog data to a dedicated Azure VM running the Microsoft Sentinel agent.
 
-:::image type="content" source="../media/learn-path-01.png" alt-text="Diagram of sending Syslog data to a dedicated Azure VM running.":::
+:::image type="content" source="../media/common-event-format-forwarder-diagram-azure.png" alt-text="Diagram of Common Event Format architecture using Syslog on a dedicated Azure VM.":::
 
 Alternatively, you can manually deploy the agent on an existing Azure VM, on a VM in another cloud, or an on-premises machine. The following diagram illustrates on-premises systems sending Syslog data to a dedicated on-premises system running the Microsoft Sentinel agent.
 
-:::image type="content" source="../media/learn-path-02.png" alt-text="Diagram of on-premises systems sending Syslog data to a dedicated on-premises system.":::
-
+:::image type="content" source="../media/common-event-format-forwarder-diagram-on-premises.png" alt-text="Diagram of Common Event Format architecture for sending Linux log data using Syslog on a dedicated on-premises system.":::

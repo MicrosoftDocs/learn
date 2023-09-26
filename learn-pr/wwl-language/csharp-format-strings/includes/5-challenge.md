@@ -1,6 +1,3 @@
-
-
-
 To the sales and marketing company's newest investment products, you send thousands of personalized letters to the company's existing clients. Your job is to write C# code to merge personalized information about the customer. The letter contains information like their existing portfolio and compares their current returns to projected returns if they were to invest in using the new products.
 
 The writers have decided on the following example marketing message. Here's the desired output (using fictitious customer account data).

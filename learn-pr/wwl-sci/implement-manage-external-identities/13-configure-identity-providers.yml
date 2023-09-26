@@ -4,11 +4,11 @@ title: Configure identity providers
 metadata:
   title: Configure identity providers
   description: "Configure identity providers"
-  ms.date: 02/03/2023
+  ms.date: 07/10/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: identity-and-access
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

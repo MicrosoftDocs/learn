@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-search
 title: Maintain an Azure Cognitive Search solution
 summary: Maintain the performance, cost, and reliability of your Azure Cognitive Search solutions.
 abstract: |
@@ -39,7 +39,6 @@ units:
 - learn.wwl.maintain-azure-cognitive-search-solution.improve-reliability-of-azure-cognitive-search-solution
 - learn.wwl.maintain-azure-cognitive-search-solution.monitor-azure-cognitive-search-solution
 - learn.wwl.maintain-azure-cognitive-search-solution.debug-search-issues-use-azure-portal
-- learn.wwl.maintain-azure-cognitive-search-solution.exercise-debug-search-issues
 - learn.wwl.maintain-azure-cognitive-search-solution.knowledge-check
 - learn.wwl.maintain-azure-cognitive-search-solution.summary
 badge:

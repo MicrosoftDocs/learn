@@ -4,11 +4,10 @@ title: Integrate Azure Active Directory with SAP NetWeaver
 metadata:
   title: Integrate Azure Active Directory with SAP NetWeaver
   description: "Integrate Azure Active Directory with SAP NetWeaver"
-  ms.date: 04/21/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 13
 content: |
   [!include[](includes/8-exercise-integrate-azure-active-directory-sap-netweaver.md)]

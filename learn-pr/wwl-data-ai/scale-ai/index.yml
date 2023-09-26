@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.scale-ai
+metadata:
+  title: Scale AI in your organization
+  description: "Learn enterprise AI management with our free open online course, including scaling AI."
+  ms.date: 09/12/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.service: microsoft-365
+title: Scale AI in your organization
+summary: This module provides insights for a full adoption of AI in your organization. It covers AI strategy, assigning responsibilities, and empowering business users and subject matter experts so they can use AI themselves.
+abstract: |
+  In this module, you will:
+  * Plan AI projects and investments.
+  * Organize your staff for AI responsibilities.
+  * Identify how no-code AI tools can help business users and subject matter experts.
+prerequisites: |
+  * Basic understanding of AI concepts.
+  * Basic understanding of business concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+products:
+- azure
+- dynamics-365
+- m365
+subjects:
+- artificial-intelligence
+- data-ai
+units:
+- learn.wwl.scale-ai.introduction
+- learn.wwl.scale-ai.evaluate-prioritize-ai-investments
+- learn.wwl.scale-ai.establish-ai-related-roles-responsibilities
+- learn.wwl.scale-ai.empower-business-users-ai
+- learn.wwl.scale-ai.empower-subject-matter-experts-ai
+- learn.wwl.scale-ai.knowledge-check
+- learn.wwl.scale-ai.summary
+badge:
+  uid: learn.wwl.scale-ai.badge

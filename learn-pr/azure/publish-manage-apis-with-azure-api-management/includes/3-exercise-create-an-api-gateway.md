@@ -1,22 +1,28 @@
-To share an API, you must first configure an API gateway.
+In this exercise, you deploy a sample web API, and you configure an API gateway. You'll publish the web API to your gateway in a later unit.
 
 In the shoe company example, NorthWind Shoes has decided to share an inventory API with partners. This API enables partners to access inventory and product information.
 
-Here, you'll create an API gateway to publish an inventory app that exposes an OpenAPI endpoint.
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-## Deploy the ShoeCompany Web API
+## Deploy the ShoeCompany web API
 
 You've developed a .NET Core app that generates inventory and product information. The app includes Swashbuckle to generate OpenAPI Swagger documentation.
 
 To save time, let's start by running a script to host our RESTful API in Azure. The script performs the following steps:
 
 - Create an Azure App Service plan in the free tier
-- Create a Web API within an Azure App Service, configured for Git deployment from a local repo
+- Create a web API within an Azure App Service, configured for Git deployment from a local repo
 - Set account-level deployment credentials for our app
 - Configure Git locally
-- Deploy our Web API to our App Service instance
+- Deploy our web API to our App Service instance
 
-1. Run the following git command in the Cloud Shell to clone the GitHub repo that contains the source for our app.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+
+1. In the Azure taskbar, select the Cloud Shell icon to open Azure Cloud Shell.
+
+    :::image type="content" source="../media/3-cloud-shell-icon.png" alt-text="Screenshot of Cloud Shell icon in taskbar.":::
+
+1. Run the following `git` command in the Cloud Shell to clone the GitHub repo and download the source code for our app.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-publish-manage-apis-with-azure-api-management.git
@@ -56,31 +62,31 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 
 The final task in this exercise is to create an API gateway in the Azure portal. In the next exercise, you'll use this gateway to publish your API.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 
 1. In **Azure services**,  or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the resource menu, select **Integration**, and in the results, select **API management**. The **Install API Management gateway** pane appears.
+1. In the resource menu, select **Integration**, and in the results, select **API Management**. The **Create API Management service** pane appears.
 
 1. In the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --------- | --------- |
     | **Project details** |
-    | Subscription | Concierge Subscription |
-    | Resource group | Select the resource group <rgn>[sandbox resource group name]</rgn> |
+    | Subscription | Select your subscription.|
+    | Resource group | Select a new or existing resource group. A resource group is a logical container that holds related resources for an Azure solution.  |
     | **Instance details** |
-    | Region | Select one of the following regions: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is available in these regions. |
+    | Region | Select an available region. |
     | Resource Name | `apim-NorthWindShoes<random number>`, replacing `random number` with your own series of numbers to ensure that the name is globally unique. |
-    | Organization Name | `NorthWindShoes`. This name is used to identify your resources in the developer portal. |
-    | Administrator Email | If it doesn't display your Azure account email address by default, select your email from the dropdown list. |
+    | Organization Name | `NorthWindShoes`. The name of your organization for use in the developer portal and email notifications. (The developer portal and notifications aren't available in all service tiers.)|
+    | Administrator Email | The email address to receive all system notifications.   |
     | Pricing Tier | `Consumption` |
 
    > [!NOTE]
-   > The consumption plan is much faster to generate output during the testing process. The overall experience is very similar to the other pricing tiers and the resources will be deleted automatically when the sandbox expires.
+   > The Consumption tier provides fast deployment for testing and has a pay-for-use pricing model. The overall API management experience is similar to the other pricing tiers.
 
-1. Select **Review+create** to validate your settings.
+1. Select **Review + create** to validate your settings.
 
-1. When validation has passed, select **Create**. Deployment may take several minutes to complete. When deployment has completed, you'll see the gateway listed in the Azure resources. You'll also receive an email message. It may take several minutes for deployment to complete.
+1. When validation has passed, select **Create**. Deployment may take several minutes to complete.
 
-1. When deployment is complete, select **Go to resource** to view the pane for your API Management service.
+1. When deployment has completed, you'll see the API Management instance listed in the Azure resources. Select **Go to resource** to view the pane for your API Management service.

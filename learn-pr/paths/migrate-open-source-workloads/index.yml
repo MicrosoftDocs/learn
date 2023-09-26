@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Migrate open-source databases to Azure
 prerequisites: |
   - Knowledge of MySQL or PostgreSQL database management systems, including application development, administration, backup, and recovery techniques.

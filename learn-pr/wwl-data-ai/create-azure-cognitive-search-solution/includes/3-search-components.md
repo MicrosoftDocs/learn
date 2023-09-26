@@ -18,7 +18,7 @@ Alternatively, applications can push JSON data directly into an index, without p
 
 ![A conceptual illustration of a skillset](../media/skillset.png)  
 
-In a basic search solution, you might simply index the data extracted from the data source. The information that can be extracted depends on the data source. for example, when indexing data in a database, the fields in the database tables might be extracted; or when indexing a set of documents, file metadata such as file name, modified date, size, and author might be extracted along with the text content of the document.
+In a basic search solution, you might simply index the data extracted from the data source. The information that can be extracted depends on the data source. For example, when indexing data in a database, the fields in the database tables might be extracted; or when indexing a set of documents, file metadata such as file name, modified date, size, and author might be extracted along with the text content of the document.
 
 While a basic search solution that indexes data values extracted directly from the data source can be useful, the expectations of modern application users have driven a need for richer insights into the data. In Azure Cognitive Search, you can apply artificial intelligence (AI) *skills* as part of the indexing process to enrich the source data with new information, which can be mapped to index fields. The skills used by an indexer are encapsulated in a *skillset* that defines an enrichment pipeline in which each step enhances the source data with insights obtained by a specific AI skill. Examples of the kind of information that can be extracted by an AI skill include:
 

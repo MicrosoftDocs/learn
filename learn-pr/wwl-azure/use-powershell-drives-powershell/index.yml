@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Use PowerShell drives in PowerShell
 summary: This module explains how to work with PowerShell drives.
 abstract: |

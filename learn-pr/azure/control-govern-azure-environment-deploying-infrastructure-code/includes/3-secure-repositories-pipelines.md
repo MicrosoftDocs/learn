@@ -1,4 +1,4 @@
-When you use automation to deploy your infrastructure, your pipeline and repository become powerful and important because they represent the only way that changes are applied to your controlled environments.
+When you use automation to deploy your infrastructure, your pipeline and repository become powerful and important. Because they now represent the only way that changes are applied to your controlled environments.
 
 Many parts of your Azure DevOps organization, GitHub repository, and pipelines need to be protected. The following table provides some of the most important elements to protect, along with examples of vulnerabilities that might occur if you don't protect those elements adequately.
 
@@ -6,18 +6,18 @@ Many parts of your Azure DevOps organization, GitHub repository, and pipelines n
 |-|-|
 | Your Azure DevOps organization or GitHub repository, including who has access to it and what they're allowed to do. | A disgruntled ex-employee deletes your code repository. |
 | Important branches in your repository, and what needs to happen to change the code on those branches. | Somebody accidentally commits some nonsecure Bicep code onto your repository's *main* branch. |
-| The code inside your repository, including your infrastructure definitions, tests, and application code. | Somebody forgets to test the code they've just written, and it doesn't work correctly when it's released to production. |
+| The code inside your repository, including your infrastructure definitions, tests, and application code. | Somebody forgets to test the code they've written, and it doesn't work correctly when it's released to production. |
 | The pipeline definition. | Somebody inadvertently adds a pipeline step that writes a database connection string into the pipeline's log. |
 | The agents or runners that run your pipeline. | A pipeline running against a draft pull request installs a security vulnerability onto the agent, which is later used for a production deployment. |
 | Any third-party tasks or components that might run within your pipeline. | A third-party pipeline task sends your service principal's credentials to a malicious website. |
-| The service principals that your pipeline uses to access Azure. | A non-production service principal accidentally makes a change to your production environment. |
+| The service principals that your pipeline uses to access Azure. | A nonproduction service principal accidentally makes a change to your production environment. |
 | The secrets that your pipeline uses to access external systems. | A team member writes a new pipeline definition file for a prototype and accidentally connects it to your production environment. |
 
-In the rest of this unit, you'll learn about some of the approaches that you can use to apply governance and controls around your code repository and deployment pipelines, both in Azure DevOps and in GitHub.
+Now let's learn about some of the approaches that you can use to apply governance and controls around your code repository and deployment pipelines, in Azure DevOps and GitHub.
 
 ## Manage users and permissions
 
-Consider how you'll grant access to your Azure DevOps organization or GitHub repository. Think about who has access and what they can do.
+Consider how you grant access to your Azure DevOps organization or GitHub repository. Think about who has access and what they can do.
 
 It's a good practice to use your organization's Azure Active Directory (Azure AD) instance as your pipeline's identity provider. That way, you can ensure that whenever somebody joins or leaves your organization, access to your pipeline is automatically granted or revoked. By using Azure AD, you can also easily implement protections like conditional access and multifactor authentication.
 
@@ -33,7 +33,7 @@ You can also create *teams* (in GitHub) or *groups* (in Azure DevOps), which rep
 
 ## Protect important code branches
 
-Your pipelines and automation should be based on identifying specific code branches, like *main*. Code on these designated branches is usually trusted and allowed to be deployed to your production environments. Apply controls to ensure that the code that's on your important branches has been verified and reviewed.
+Your pipelines and automation should be based on identifying specific code branches, like *main*. Code on these designated branches is typically trusted and allowed to be deployed to your production environments. Apply controls to ensure that the code that's on your important branches has been verified and reviewed.
 
 Consider using *branch protection rules* (in GitHub) or *branch policies* (in Azure Repos) to prevent direct commits to important code branches. Then, you can require your team use pull requests to merge any changes. You can apply automated checks and manual review processes to verify that the changes are valid before they're merged.
 
@@ -51,9 +51,9 @@ Your pipeline runs on *agents* (for Azure Pipelines) or *runners* (for GitHub Ac
 
 Both Azure Pipelines and GitHub Actions provide *hosted* agents and runners, which Microsoft or GitHub configures and maintains. The platform owner configures the machines to be compliant with recommended security practices. The platform owner's responsibilities include patching operating system vulnerabilities.
 
-You can instead choose to use your own physical or virtual machines for your agents and runners. These are called *self-hosted* agents and runners. If you do this, you're responsible for ensuring that the machines are configured correctly and protected against threats.
+You can instead choose to use your own physical or virtual machines for your agents and runners. Machines of this type are called *self-hosted* agents and runners. If you use self-hosted agents and runners, you're responsible for ensuring that the machines are configured correctly and protected against threats.
 
-Microsoft-hosted agents and GitHub-hosted runners are ephemeral. Any files or configuration changes to an agent or runner are destroyed when a pipeline's run ends. If you self-host your agent or runner, the same machine is likely to be used for multiple separate pipelines or environments, including production and non-production environments. Suppose that somebody creates a pipeline definition that modifies some important files on the agent's operating system and runs the pipeline from a pull request. The next time that a deployment runs against your production environment, it might reuse the agent. Now you have no way to predict what the impact of the corrupted file might be on your production environment.
+Microsoft-hosted agents and GitHub-hosted runners are ephemeral. Any files or configuration changes to an agent or runner are destroyed when a pipeline's run ends. If you self-host your agent or runner, the same machine is likely to be used for multiple separate pipelines or environments, including production and nonproduction environments. Suppose that somebody creates a pipeline definition that modifies some important files on the agent's operating system and runs the pipeline from a pull request. The next time that a deployment runs against your production environment, it might reuse the agent. Now you have no way to predict what the impact of the corrupted file might be on your production environment.
 
 For these reasons, it's a good practice to use Microsoft-hosted agents and GitHub-hosted runners whenever you can. If you must use self-hosted runners, carefully evaluate the risks involved in their configuration and use.
 
@@ -88,13 +88,13 @@ Next, think about the permissions that you grant to service principals:
 
 ## Protect your service connections and secrets
 
-A *service connection* (in Azure Pipelines) or *secret* (in GitHub) contains the credentials for the service principal that the pipeline uses to access your Azure environment. It's important that you protect your service connections and secrets, and that you control which pipelines use each service connection and secret. Otherwise, you might accidentally enable a non-production environment to use a service principal that has access to production resources.
+A *service connection* (in Azure Pipelines) or *secret* (in GitHub) contains the credentials for the service principal that the pipeline uses to access your Azure environment. It's important that you protect your service connections and secrets, and that you control which pipelines use each service connection and secret. Otherwise, you might accidentally enable a nonproduction environment to use a service principal that has access to production resources.
 
 In Azure DevOps, when you create a service connection, you can configure it to require your approval before a new pipeline or environment can use it.
 
 Azure DevOps also allows you to associate *checks* with specific service connections. Checks add a further layer of protection. For example, you can configure a check on a production service connection to verify that it's used only on code from your repository's *main* branch. This check helps prevent unauthorized code from being deployed to your production environment.
 
-In GitHub, you can configure environment-specific secrets. GitHub Actions provides only the secret value when the workflow is working with that environment. By using environment-specific secrets and environment controls like approvals, you can reduce the risk that a non-production deployment is used to deploy to your production environment. You can also use workload identities to avoid using any credentials in your GitHub Actions workflows and eliminate the possibility that credentials might be exposed.
+In GitHub, you can configure environment-specific secrets, so that when the GitHub Actions workflow is working with that environment, it provides only the secret value. By using environment-specific secrets and environment controls like approvals, you can reduce the risk that a nonproduction deployment is used to deploy to your production environment. You can also use workload identities to avoid using any credentials in your GitHub Actions workflows and eliminate the possibility that credentials might be exposed.
 
 ## Use GitHub security features
 
@@ -111,7 +111,7 @@ Azure DevOps provides *audit logs* to help you understand who has made changes t
 
 ## Protect your repository and pipeline
 
-Now that you understand important controls that you can apply to your repository and pipeline, let's consider which ones you might use to protect each of the elements from earlier in this unit:
+We've discussed the important controls that you can apply to your repository and pipeline. Now let's consider which controls you might use to protect each of the important elements we listed earlier in this unit:
 
 | Element to protect | Controls to apply |
 |-|-|

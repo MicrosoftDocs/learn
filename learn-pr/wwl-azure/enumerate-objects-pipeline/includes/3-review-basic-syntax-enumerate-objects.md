@@ -3,7 +3,7 @@ The **ForEach-Object** command performs enumeration. It has two common aliases: 
 In the basic syntax, you can run a single method or access a single property of the objects that were piped into the command. Here's an example:
 
 ```powershell
-Get-ChildItem –Path C:\Encrypted\  File | ForEach Object  MemberName Encrypt
+Get-ChildItem –Path C:\Encrypted\  -File | ForEach Object  -MemberName Encrypt
 ```
 
 With this syntax, you don't include the parentheses after the member name if the member is a method. Because this basic syntax is meant to be short, you'll frequently notice it without the *-MemberName* parameter name, and you might notice it with an alias instead of the full command name. For example, both of the following commands perform the same action:

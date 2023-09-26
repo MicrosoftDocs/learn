@@ -2,15 +2,16 @@
 uid: learn.secure-aspnet-core-identity
 metadata:
   title: Secure a .NET web app with the ASP.NET Core Identity framework
-  description: Add authentication and authorization to a .NET web app using the ASP.NET Core Identity framework.
-  ms.date: 03/16/2022
+  description: Learn how to add authentication and authorization to a .NET web app using the ASP.NET Core Identity framework.
+  ms.date: 05/19/2023
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Secure a .NET web app with the ASP.NET Core Identity framework
-summary: Add authentication and authorization to a web app using ASP.NET Core Identity&mdash;ASP.NET Core's native security framework.
-abstract: | 
+summary: Add authentication and authorization to a web app using ASP.NET Core Identity, ASP.NET Core's native security framework.
+abstract: |
   In this module, you will:
   - Configure ASP.NET Core Identity support in an existing ASP.NET Core web app.
   - Provide new user registration capabilities.
@@ -30,23 +31,21 @@ levels:
 roles:
 - developer
 products:
-- dotnet
 - aspnet-core
-- dotnet-core
 - ef-core
 subjects:
 - identity-access
 - development-tools
 units:
-- learn.secure-aspnet-core-identity.introduction
-- learn.secure-aspnet-core-identity.understand-aspnetcore-identity
+- learn.secure-aspnet-core-identity.1-introduction
+- learn.secure-aspnet-core-identity.2-understand-aspnetcore-identity
 - learn.secure-aspnet-core-identity.3-add-identity
-- learn.secure-aspnet-core-identity.identity-customizations
-- learn.secure-aspnet-core-identity.4-customize-identity
-- learn.secure-aspnet-core-identity.multi-factor-authentication
-- learn.secure-aspnet-core-identity.configure-multi-factor-authentication
-- learn.secure-aspnet-core-identity.claims-policy-authorization
-- learn.secure-aspnet-core-identity.6-claims-policy-authorization
-- learn.secure-aspnet-core-identity.summary
+- learn.secure-aspnet-core-identity.4-identity-customizations
+- learn.secure-aspnet-core-identity.5-customize-identity
+- learn.secure-aspnet-core-identity.6-multi-factor-authentication
+- learn.secure-aspnet-core-identity.7-configure-multi-factor-authentication
+- learn.secure-aspnet-core-identity.8-claims-policy-authorization
+- learn.secure-aspnet-core-identity.9-enable-claims-policy-authorization
+- learn.secure-aspnet-core-identity.10-summary
 badge:
   uid: learn.secure-aspnet-core-identity.badge

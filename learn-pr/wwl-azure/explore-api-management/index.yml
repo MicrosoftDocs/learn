@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: api-management
 title: Explore API Management
 summary: Learn how the API Management service functions, how to transform and secure APIs, and how to create a backend API.
 abstract: |

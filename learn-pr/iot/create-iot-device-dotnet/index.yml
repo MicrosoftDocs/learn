@@ -7,8 +7,9 @@ metadata:
   ms.date: 9/9/2022
   author: CamSoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.prod: .net
 title: Construct Internet of Things devices using the .NET IoT Libraries
 summary: "Read environmental sensors and activate relays using the .NET IoT Libraries."
 abstract: |

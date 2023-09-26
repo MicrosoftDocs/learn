@@ -7,9 +7,9 @@ Python uses `+` to indicate addition. Using `+` between two numbers adds them to
 ```python
 answer = 30 + 12
 print(answer)
-
-# Output: 42
 ```
+
+Output: 42
 
 > [!NOTE]
 > Operators behave the same when using literal numbers (such as `42`) or variables.
@@ -21,9 +21,9 @@ Similarly, Python uses `-` for subtraction. Using `-` between two numbers subtra
 ```python
 difference = 30 - 12
 print(difference)
-
-# Output: 18
 ```
+
+Output: 18
 
 ## Multiplication
 
@@ -32,9 +32,9 @@ In Python, `*` is the multiplication operator. It provides the product of two nu
 ```python
 product = 30 * 12
 print(product)
-
-# Output: 360
 ```
+
+Output: 360
 
 ## Division
 
@@ -43,9 +43,8 @@ Finally, `/` is used for division. It provides the quotient of two numbers:
 ```python
 quotient = 30 / 12
 print(quotient)
-
-# Output: 2.5
 ```
+Output: 2.5
 
 ### Work with division
 
@@ -61,9 +60,9 @@ The first step is to determine the number of minutes in `1042` seconds. With `60
 seconds = 1042
 display_minutes = 1042 // 60
 print(display_minutes)
-
-# Output: 17
 ```
+
+Output: 17
 
 The next step is to determine the number of seconds. This number is the remainder of `1042` if you divide by `60`. You can find the remainder by using the [modulo](https://en.wikipedia.org/wiki/Modulo_operation) operator, which is `%` in Python. The remainder of `1042 / 60` is `22`, which is what the modulo operator will provide.
 
@@ -74,10 +73,11 @@ display_seconds = 1042 % 60
 
 print(display_minutes)
 print(display_seconds)
+```
 
-# Output:
-# 17
-# 22
+```Output
+17
+22
 ```
 
 ## Order of operation
@@ -93,6 +93,12 @@ Notice how parentheses are evaluated before any other operations. Using parenthe
 
 ```python
 result_1 = 1032 + 26 * 2
-result_2 = 1032 + (26 * 2)
-# The answer is the same in both cases - 1084
+print(result_1)
 ```
+
+```python
+result_2 = 1032 + (26 * 2)
+print(result_2)
+```
+
+The answer is the same in both cases - 1084.

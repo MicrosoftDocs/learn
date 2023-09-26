@@ -4,11 +4,10 @@ title: Explore primary scenarios using Active Directory Domain Services and Azur
 metadata:
   title: Explore primary scenarios using Active Directory Domain Services and Azure virtual machines
   description: "Explore primary scenarios using Active Directory Domain Services and Azure virtual machines"
-  ms.date: 04/21/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/11-scenarios-active-directory-domain-services-virtual-machines.md)]

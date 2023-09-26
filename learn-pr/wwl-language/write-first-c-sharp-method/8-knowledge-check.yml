@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/25/2023
+  ms.date: 05/06/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -21,9 +21,9 @@ quiz:
     - content: "`void DisplayNumbers{};`"
       isCorrect: false
       explanation: "Incorrect. Methods must use parentheses `()` after the name, and brackets `{}` to contain the method body."
-    - content: "`void DisplayNumbers();`"
+    - content: "`void DisplayNumbers() { }`"
       isCorrect: true
-      explanation: "Correct. Reason"
+      explanation: "Correct. A method is declared using the return type, followed by parentheses `()` containing any parameters, and brackets `{}` to contain the method body."
   - content: "Which of the following correctly calls a method?"
     choices:
     - content: "`GenerateID();`"

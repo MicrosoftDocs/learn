@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-linux-on-azure.identify-azure-iaas-options-for-linux-deployments
+title: Identify Azure IaaS options for Linux deployments
+metadata:
+  title: Identify Azure IaaS options for Linux deployments
+  description: Learn about the Azure IaaS options for Linux deployments.
+  ms.date: 05/01/2023
+  author: chasecrum
+  ms.author: chasecrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-azure-iaas-options-for-linux-deployments.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Which of the following statements is true of IaaS on Azure?"
+    choices:
+    - content: "Azure handles all aspects of system management after you set up your environment."
+      isCorrect: false
+      explanation: "Incorrect: With IaaS on Azure, you must set up and manage typical IT resources such as networks, backups, and storage."
+    - content: "Elasticity &mdash; the ability to grow or shrink capacity &mdash; is an inherent Azure capability provided by scale sets."
+      isCorrect: true
+      explanation: "Correct: Scale sets are a configurable capability in an IaaS deployment."
+    - content: "Hosting a website on Azure requires upgrading to a PaaS solution."
+      isCorrect: false
+      explanation: "Incorrect: You can use a couple of command lines to quickly configure a basic web server for your IaaS deployment."
+    - content: "When deploying Linux on Azure, you must start with IaaS before migrating to PaaS"
+      isCorrect: false
+      explanation: "Incorrect: You can deploy directly to IaaS or PaaS."
+  - content: "Which of the following options is a feature of the Azure pricing model?"
+    choices:
+    - content: "All Linux distributions are exclusively pay-as-you-go."
+      isCorrect: false
+      explanation: "Incorrect: Use pay-as-you-go for variable workloads and fixed-price reserved instances for more predictable scenarios."
+    - content: Certain Linux distributions can take advantage of the Azure Hybrid Benefit.
+      isCorrect: true
+      explanation: "Correct: Properly qualified Red Hat Enterprise Linux and SUSE Linux Enterprise Server subscriptions are eligible for the Azure Hybrid Benefit."
+    - content: "Only Windows VMs can take advantage of reserved instance fixed pricing."
+      isCorrect: false
+      explanation: "Incorrect: Several Linux distributions support reserved instance fixed pricing."

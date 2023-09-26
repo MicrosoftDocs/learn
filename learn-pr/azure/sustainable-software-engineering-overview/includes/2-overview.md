@@ -1,26 +1,23 @@
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IlK6]
+_The content in the video is still valid, but the principle numbers may differ due to the Green Software Foundation's principle renumbering._
 
-## Eight principles of Sustainable Software Engineering
+## Six principles of Sustainable Software Engineering
 
-There are eight principles of Sustainable Software Engineering that form a shared understanding of what it means to be a Sustainable Software Engineer. The subsequent units in this module will provide a basic introduction to each of these principles.
+Six principles of Sustainable Software Engineering form a shared understanding of what it means to be a Sustainable Software Engineer. The subsequent units in this module provide a basic introduction to these principles.
 
-1. **Carbon**: Build applications that are carbon efficient.
+- **Carbon Efficiency**: Build applications that are carbon efficient.
 
-1. **Electricity**: Build applications that are energy-efficient.
+- **Electricity Efficiency**: Build applications that are energy efficient.
 
-1. **Carbon Intensity**: Consume electricity with the lowest carbon intensity.
+- **Carbon Awareness**: Consume electricity with the lowest carbon intensity.
 
-1. **Embodied Carbon**: Build applications that are hardware efficient.
+- **Hardware Efficiency**: Build applications that are hardware efficient.
 
-1. **Energy Proportionality**: Maximize the energy efficiency of hardware.
+- **Measurement**: Improve sustainability through measurement.
 
-1. **Networking**: Reduce the amount of data and distance it must travel across the network.
+- **Climate Commitments**: Defining the exact mechanism of carbon reduction.
 
-1. **Demand Shaping**: Build carbon-aware applications.
-
-1. **Optimization**: Focus on step-by-step optimizations that increase the overall carbon efficiency.
-
-These eight principles are independent of:
+These six principles are independent of the following:
 
 - Application domain.
 - Organization size or type.
@@ -29,16 +26,16 @@ These eight principles are independent of:
 
 ## Two philosophies of Sustainable Software Engineering
 
-Alongside the eight principles of Sustainable Software Engineering, there are two philosophies.
+Alongside the six principles of Sustainable Software Engineering, there are two philosophies.
 
-1. **Everyone has a part to play in the climate solution**
+- **Everyone has a part to play in the climate solution**
 
-    If you're reading this document and identify as Green, know you're part of a massive global movement of people who care and are taking action. Greens work in every discipline across engineering, from designing silicon to designing user experiences.
+    If you're reading this document and identify as a Sustainable Software Engineer, know you're part of a massive global movement of people who care and are taking action. Sustainable Software Engineers work in every discipline across engineering, from designing silicon to designing user experiences.
 
-    Nothing happens in isolation, everything is connected, and small changes lead to significant changes. Even the act of normalizing a discussion about sustainability in technical meetings will empower others to raise their voices. That's how you create change in any organization.
+    Nothing happens in isolation, everything is connected, and small changes lead to significant changes. Normalizing sustainability discussions in technical meetings empowers others to raise their voices. That's how you create change in any organization.
 
-    As Sustainable Software Engineers, we believe that everyone has a part to play in the climate solution. Sustainable Software Engineering is inclusive. Whatever sector, industry, role, technology; there's always something you can do to have an impact.
+    As Sustainable Software Engineers, we believe that everyone has a part to play in the climate solution. Sustainable Software Engineering is inclusive. Whatever sector, industry, role, or technology, you can always do something to have an impact.
 
-1. **Sustainability is enough, all by itself, to justify our work**
+- **Sustainability is enough, all by itself, to justify our work**
 
-    As Sustainable Software Engineers, we recognize there are many advantages to building sustainable applications. They're almost always cheaper, they're often more performant, and they're often more resilient. But the primary reason we are practicing Sustainable Software Engineering is for sustainability; everything else is an added advantage.
+    As Sustainable Software Engineers, we recognize many advantages to building sustainable applications. They're almost always cheaper, they're often more performant, and they're often more resilient. But we're primarily practicing Sustainable Software Engineering for sustainability; everything else is an added advantage.

@@ -7,8 +7,8 @@ metadata:
   author: nrd26
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: healthbot
 title: Language understanding in Azure Health Bot
 summary: Language understanding plays a fundamental role in the working of Azure Health Bot. 
 abstract: |

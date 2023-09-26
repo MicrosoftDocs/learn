@@ -1,3 +1,4 @@
+
 The forking workflow is fundamentally different than other popular Git workflows.
 
 Instead of using a single server-side repository to act as the "central" codebase, it gives every developer their server-side repository.

@@ -27,18 +27,18 @@ Factor in the following Azure components before Azure VMware Solution deployment
 | Region | Azure VMware Solution is available globally. |
 | Resource name | The Azure VMware Solution resource name can't be longer than 14 characters. If it's longer than that, public IP addresses cannot be created to use with Azure VMware Solution. |
 | Host size | Host instance size is AV36: 36 cores, 576 GB of RAM, 15.36 TB of raw storage capacity, and a 3.2-TB NVMe cache.
-| Node count | The minimum number of hosts is 3. <br>The maximum number of hosts is 16 per vSphere cluster. <br>The maximum number of clusters in an Azure private cloud instance is 12. <br>The maximum number of nodes in an Azure private cloud instance is 96. <br>Clusters can be extended or shrunk as needed. <br>Minimum and maximum nodes need to be factored in as the environment extends or shrinks.
+| Node count | The minimum number of hosts is three. <br>The maximum number of hosts is 16 per vSphere cluster. <br>The maximum number of clusters in an Azure private cloud instance is 12. <br>The maximum number of nodes in an Azure private cloud instance is 96. <br>Clusters can be extended or shrunk as needed. <br>Minimum and maximum nodes need to be factored in as the environment extends or shrinks.
 | Azure virtual network | Create a new Azure virtual network or reuse an existing one.
 | Azure Bastion | Create a platform-as-a-service (PaaS) resource that provides seamless Remote Desktop Protocol (RDP) access to a jump host.
 | Jump host | Create an Azure VM (server or desktop) to use to access the vSphere environment after deployment.
 
 ## Review subscription-eligibility criteria
 
-An Azure account in an Azure subscription is needed to deploy Azure VMware Solution. The Azure subscription must meet one of these three criteria:
+You need an Azure account in an Azure subscription to deploy Azure VMware Solution. The Azure subscription must meet one of these three criteria:
 
-- A subscription under an Azure Enterprise Agreement (EA) with Microsoft.
-- A subscription under a Microsoft Customer Agreement (MCA) with Microsoft.
-- A Cloud Solution Provider (CSP)-managed subscription under an existing CSP Azure-offers contract or an Azure plan.
+- A subscription under an Azure Enterprise Agreement (EA) with Microsoft
+- A subscription under a Microsoft Customer Agreement (MCA) with Microsoft
+- A Cloud Solution Provider (CSP)-managed subscription under an existing CSP Azure-offers contract or an Azure plan
 
 ## Open a support ticket
 
@@ -46,7 +46,7 @@ This step depends on the subscription type:
 
 - **EA and MCA customers**: Open a support ticket for additional host quota. It might take up to five business days to confirm and allocate hosts for the request.
 
-- **CSPs**: Assign an Azure plan to a customer by using the Partner Center. Then, use Partner Center to open a support ticket for additional host quota. It might take up to five business days to confirm and allocate hosts for the request.
+- **CSPs**: Assign an Azure plan to a customer by using the Partner Center, then use Partner Center to open a support ticket for additional host quota. It might take up to five business days to confirm and allocate hosts for the request.
 
 ## Register the resource provider
 
@@ -73,7 +73,7 @@ To do the assessment:
 
 ## Review the Azure VMware Solution assessment
 
-You can evaluate the assessment in Azure Migrate, in the Azure portal, after the appliance runs within the on-premises environment. An Azure VMware Solution assessment describes readiness, number of nodes required, and usage across nodes. It also provides a monthly cost estimate.
+You can evaluate the assessment in Azure Migrate in the Azure portal after the appliance runs within the on-premises environment. An Azure VMware Solution assessment describes readiness, number of nodes required, and usage across nodes. It also provides a monthly cost estimate.
 
 To view the assessment:
 
@@ -100,7 +100,7 @@ The Azure Migrate assessment report will also provide:
 - Overall cost details.
 - A confidence score for migration.
 
-All this information helps to plan out the Azure VMware Solution environment before a migration of any workloads or applications takes place.
+All of this information helps to plan out the Azure VMware Solution environment before a migration of any workloads or applications takes place.
 
 ## Evaluate solution components
 
@@ -133,10 +133,10 @@ Microsoft is responsible for the lifecycle management of NSX-T appliances, such 
 
 ### NSX-T Configuration
 
-There are two different methods for managing AVS networking and networking services such as DNS, DHCP, and others with NSX-T. Configurations can be done in NSX-T Manager or Azure Resource Manager Portal.
+There are two different methods for managing AVS networking and networking services such as DNS, DHCP, and others with NSX-T. You can do configurations in NSX-T Manager or Azure Resource Manager Portal.
 
 ### Backup and restoration
 
-Private-cloud vCenter and NSX-T configurations are backed up on an hourly schedule by Microsoft. Backups are kept for three days. If you require restoration from a backup, open a support request in the Azure portal.
+Microsoft backs up Private-cloud vCenter and NSX-T configurations on an hourly schedule. Backups are kept for three days. If you require restoration from a backup, open a support request in the Azure portal.
 
 In the next unit, we'll cover all the planning considerations for network topology with Azure VMware Solution. We'll outline each aspect so you can make sure your deployment is successful.

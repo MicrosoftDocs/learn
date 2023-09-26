@@ -7,7 +7,7 @@ metadata:
   author: MicrosoftGuyJFlo
   ms.author: joflore
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
 title: Manage device identity with Azure AD join and Enterprise State Roaming
 summary: Evaluate options to manage device identities in Azure AD. Allow users to join devices in Azure AD. Require devices to be marked as compliant. Enable Enterprise State Roaming.
 abstract: | 

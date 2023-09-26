@@ -13,7 +13,7 @@ In Node.js, I/O operations such as reading or writing to a file on the disk, or 
 
 The name *event loop* describes the use of the "busy-waiting" mechanism that waits synchronously for a message to arrive before processing it. The following shows an event loop implementation:
 
-```js
+```javascript
 while (queue.wait()) {
   queue.process();
 }

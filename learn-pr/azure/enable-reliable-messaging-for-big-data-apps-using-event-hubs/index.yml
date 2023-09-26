@@ -7,7 +7,7 @@ metadata:
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: event-hubs
 title: Enable reliable messaging for Big Data applications using Azure Event Hubs
 summary: Connect sending and receiving applications with Event Hubs so you can handle extremely high loads without losing data.
 abstract:  | 

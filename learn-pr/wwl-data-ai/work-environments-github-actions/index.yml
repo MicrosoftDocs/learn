@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Work with environments in GitHub Actions
 summary: Learn how to train, test, and deploy a machine learning model by using environments as part of your machine learning operations (MLOps) strategy.
 abstract: |

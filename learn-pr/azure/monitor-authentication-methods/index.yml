@@ -8,7 +8,7 @@ metadata:
   author: softchris
   ms.author: chnoring                    
   ms.topic: interactive-tutorial            
-  ms.prod: learning-azure                   
+  ms.service: active-directory
 title: Monitor and report on authentication methods used in Azure AD
 summary: "This module teaches you how to create an Azure AD workbook that helps you to create a report of the authentication methods used in your tenant."
 abstract: |

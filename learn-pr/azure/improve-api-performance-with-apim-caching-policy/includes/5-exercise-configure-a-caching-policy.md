@@ -1,21 +1,21 @@
-When you host APIs with Azure API Management, you can modify API behavior without having to rewrite code, by use of policies.
+When you manage APIs with Azure API Management, you can modify API behavior without having to rewrite code, by use of policies. To cache API responses, you use API Management's caching policies.
 
 As the developer for a board game company, you decide to implement caching for a Board Gaming API. First, you need to add the API to API Management. Then, you'll write your caching policies. We'll do both in this exercise.
 
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 > [!NOTE]
 > In this exercise, the Board Gaming web API is hosted in the **azurewebsites.net** domain. The API Management instance is in the **azure-api.net** domain.
 
 ## Create a Redis cache
 
-We'll use the Consumption tier for API Management for this module. That's because Azure configures API Management instances for this tier in just a minute or so. Other tiers can take up to 30 minutes.
+We'll use the Consumption tier for API Management for this module. That's because Azure configures API Management instances for this tier in just a minute or so. Other tiers can take up to 30 minutes or longer.
 
 The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. It's a tier that has no internal cache. We must therefore create an external Redis cache and then configure an API Management caching policy to use it.
 
 Let's create a cache right away. This will allow the setup to run behind the scenes while we work on other steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Use the same ID that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/). 
 
 1. On the Azure portal **Resource** menu, or on the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
@@ -26,13 +26,12 @@ Let's create a cache right away. This will allow the setup to run behind the sce
     | Setting | Value |
     | --- | --- |
     | **Project details** |
-    | Subscription | *Concierge Subscription* |
-    | Resource group | *<rgn>Sandbox resource group</rgn>* |
+    | Subscription | Select your subscription. |
+    | Resource group | Select a new or existing resource group. A resource group is a logical container that holds related resources for an Azure solution. |
     | **Instance Details** |
-    | DNS name | Choose a unique name, for example, *boardgaming*. Make a note of it. You'll need it later on. |
-    | Location | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier that's used in this exercise is only available in these regions. |
+    | DNS name | Enter a unique name. Make a note of it. You'll need it later on. |
+    | Location | Select an available region. |
     | Cache type | Standard C1 |
-    | | |
 
     :::image type="content" source="../media/5-create-redis-cache.png" alt-text="Screenshot that shows the form that's used to create a new Redis cache.":::
 
@@ -40,9 +39,13 @@ Let's create a cache right away. This will allow the setup to run behind the sce
 
 ## Create a web API in Azure App Service
 
-To create an Azure App Service web API in the sandbox environment, we use a two-step process:
+To create an Azure App Service web API, we use the following steps:
 
-1. In Azure Cloud Shell to the right, clone the sample web API by running the following command:
+1. In the Azure taskbar, select the Cloud Shell icon to open Azure Cloud Shell.
+
+    :::image type="content" source="../media/3-cloud-shell-icon.png" alt-text="Screenshot of Cloud Shell icon in taskbar.":::
+
+1. Clone the sample web API by running the following command:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-improve-api-performance-with-apim-caching-policy.git
@@ -67,7 +70,7 @@ Make note of these URLs. We'll use them in the next task.
 
 When the web API is successfully created in Cloud Shell, you can test it. Run a test by submitting a GET request in the browser or by checking the OpenAPI definition. This test runs against the web API in the **azurewebsites.net** domain before it's added to API Management.
 
-1. On the Azure portal **Resource** menu, or on the **Home** page, select **All resources**. Then select the App Service resource. The **BoardGamingAPI123aa456789** App Service pane appears.  The numbers at the end will differ for your implementation.
+1. On the Azure portal **Resource** menu, or on the **Home** page, select **All resources**. Then select the App Service resource. The **BoardGamingAPI123aa456789** App Service pane appears. The numbers at the end will differ for your implementation.
 
 1. In the command bar of the **Overview** tab, as a test, select **Browse**. Notice the error message. The browser displays the message "No webpage found for this address". This occurs because the web API doesn't implement a web user interface.
 
@@ -85,23 +88,22 @@ Now that we have a functional API, let's set up API Management:
 
 1. On the Azure portal **Resource** menu, or on the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Create a Resource** menu, select **Web**, and then select **API Management** from the result list. The **Create API Management** pane appears.
+1. In the **Create a Resource** menu, select **Integration**, and then select **API Management** from the result list. The **Create API Management service** pane appears.
 
 1. Enter the following values for each setting in the **Basics** tab.
 
     | Setting | Value |
     | --- | --- |
     | **Project details** |
-    | Subscription | *Concierge Subscription* |
-    | Resource group | In the dropdown list, select *<rgn>Sandbox resource group</rgn>*. |
+    | Subscription | Select your subscription. |
+    | Resource group | Select a new or existing resource group. A resource group is a logical container that holds related resources for an Azure solution. |
     | **Instance details** |
-    | Region | Choose the same location you used for the Redis Cache. |
+    | Region | Choose the same location you used for the Redis cache. |
     | Resource name | Choose a unique name. Make a note of it. You'll need it later on. |
-    | Workspace name | BoardGames |
-    | Administrator email | Enter your email address. |
+    | Organization name | BoardGames |
+    | Administrator email | The email address to receive all system notifications. |
     | **Pricing tier** |
     | Pricing tier | Consumption |
-    | | |
 
 1. Select **Review + create** to validate your input, and then select **Create**.
 
@@ -113,7 +115,7 @@ You can configure the API Management instance to use your Redis cache as an exte
 
 1. In the **Overview** section of the pane, you should see the resource status display as **Running**. If it isn't, continue to check the status every few minutes by clicking the **Refresh** link. Proceed only when your Redis cache deployment is running.
 
-1. In the **Azure Cache for Redis** menu, in the **Settings** section of the left pane, select **Access Keys**. The **Access keys** pane appears for the Azure Cache for Redis instance that you just created.
+1. In the **Azure Cache for Redis** menu, in the **Settings** section of the left pane, select **Access keys**. The **Access keys** pane appears for the Azure Cache for Redis instance that you just created.
 
 1. In the right corner of the **Primary connection string (StackExchange.Redis)** box, select the *Copy to clipboard* icon.
 
@@ -123,7 +125,7 @@ You can configure the API Management instance to use your Redis cache as an exte
 
 1. On the **API Management service** menu, in **Deployment + Infrastructure** in the left navigation, select **External cache**. The **External cache** pane for your API Management service appears.
 
-1. Select **Add** from the command bar. The **External cache** pane for your API Management service appears.
+1. Select **+ Add** from the command bar. The **External cache** pane for your API Management service appears.
 
 1. In the **Cache instance** dropdown list, select **Custom**. Then in the **Use from** box, select the same location that you used for the API Management instance.
 
@@ -131,21 +133,23 @@ You can configure the API Management instance to use your Redis cache as an exte
 
     :::image type="content" source="../media/5-configure-external-cache.png" alt-text="Screenshot that shows how to configure the external cache.":::
 
-    The external cache that you just created is now listed on the **External cache** page for your API Management service.
+    The external cache that you created is now listed on the **External cache** page for your API Management service.
 
 ## Add your API to API Management
 
 We must apply a policy to enable users to access the API. However, before you can apply a policy, you must add the API to the API Management instance.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or on the **Home** page, select **All resources**. Then select the API Management service that you created earlier.
+1. In the [Azure portal](https://portal.azure.com/) menu, or on the **Home** page, select **All resources**. Then select the API Management service that you created earlier.
 
 1. In the **APIs** menu, select **APIs**. The **APIs** pane for your API Management service appears. It offers numerous templates for you to choose from.
 
 1. In the **Create from definition** section, choose **OpenAPI**. The **Create from OpenAPI specification** dialog box appears.
 
+    :::image type="content" source="../media/5-add-api-to-management.png" alt-text="Screenshot that shows how to add an API to API Management in the portal.":::
+
 1. In the **OpenAPI specification** box, paste the Swagger JSON URL that you copied previously.
 
-    :::image type="content" source="../media/5-complete-api-add.png" alt-text="Screenshot that shows how to add an API to API Management.":::
+    :::image type="content" source="../media/5-complete-api-add.png" alt-text="Screenshot that shows how to configure an OpenAPI specification in the portal.":::
 
 1. Select **Create**. The **APIs** pane for your API Management service reappears. It lists all available API operations for that management instance.
 
@@ -163,23 +167,24 @@ The API is now added to the management instance. Let's test how the API function
     | Game | chess |
     | Height | 8 |
     | Width | 8 |
-    | | |
 
 1. Select **Send**.
 
     :::image type="content" source="../media/5-test-api-in-apim.png" alt-text="Screenshot that shows how to test the API in API Management.":::
 
-1. Review the results. Notice that the precise time is included in the *HTTP response*.
+1. Review the results. Notice that the precise `quotePreparedTime` is included in the *HTTP response* payload.
 
-1. Select **Send** to repeat the request. Notice that the time in the *HTTP response* has changed.
+    :::image type="content" source="../media/5-view-cached-response.png" alt-text="Screenshot that shows the timestamp of the payload in the test console. ":::
+
+1. Select **Send** to repeat the request. Notice that the time in the *HTTP response* payload has changed.
 
 ## Add a caching policy
 
-We can now enable caching. This is done by adding policies to inbound processing XML code.
+We can now enable caching by adding response caching policies.
 
 1. Select your API Management service and then select the **APIs** link. Next select the **Design** tab and choose the **GET - GetPriceEstimate** operation.  The **GetPriceEstimate** pane appears.
 
-1. In the **Inbound processing** section, select **Add policy**. The **Add inbound policy** pane appears.
+1. In the **Inbound processing** section, select **+ Add policy**. The **Add inbound policy** pane appears.
 
     :::image type="content" source="../media/5-add-policy.png" alt-text="Screenshot that shows how to add a caching policy.":::
 
@@ -189,7 +194,7 @@ We can now enable caching. This is done by adding policies to inbound processing
 
 1. In the **Inbound processing** section, select **</>**. The policy XML editor appears.
 
-1. Notice that a **&lt;cache-lookup&gt;** tag has been added to the **&lt;inbound&gt;** section. A **&lt;cache-store&gt;** tag has also been added to the **&lt;outbound&gt;** section.
+1. Notice that a `<cache-lookup>` tag has been added to the `<inbound>` section. A `<cache-store>` tag has also been added to the `<outbound>` section.
 
     :::image type="content" source="../media/5-policy-editor-with-caching-policies.png" alt-text="Screenshot that shows a policy editor with caching policies.":::
 
@@ -209,15 +214,14 @@ We'll run the same test on the API as in the previous section, from within API M
     | Game | chess |
     | Height | 8 |
     | Width | 8 |
-    | | |
 
     :::image type="content" source="../media/5-test-api-in-apim.png" alt-text="Screenshot that shows how to test the API in API Management.":::
 
 1. Select **Send**.
 
-1. Review the results. Notice that the precise time is included in the *HTTP response*.
+1. Review the results. Notice that the precise `quotePreparedTime` is included in the *HTTP response* payload.
 
-1. Select **Send** to repeat the request. Notice that the time value in the response is still the same. That's because a cached response is served.
+1. Select **Send** to repeat the request. Notice that the `quotePreparedTime` value in the response is still the same. That's because a cached response is served.
 
 ## Configure the cache to vary results based on query parameters
 
@@ -251,11 +255,12 @@ The cache should now deliver unique responses based on the *Height* query parame
     | Game | chess |
     | Height | 8 |
     | Width | 8 |
-    | | |
 
 1. Select **Send**.
 
-1. Review the results. Notice that the precise time is included in the response.
+1. Review the results. Notice that the `quotePreparedTime` is included in the response.
+
+    :::image type="content" source="../media/5-view-cached-response.png" alt-text="Screenshot that shows the timestamp of the payload in the test console. ":::
 
 1. Select **Send** to repeat the request. Notice that like before, the time value in the response hasn't changed. That's because a cached response was served.
 
@@ -267,7 +272,6 @@ The cache should now deliver unique responses based on the *Height* query parame
     | Game | chess |
     | Height | 100 |
     | Width | 8 |
-    | | |
 
 1. Select **Send**.
 
@@ -281,7 +285,6 @@ The cache should now deliver unique responses based on the *Height* query parame
     | Game | chess |
     | Height | 100 |
     | Width | 500 |
-    | | |
 
 1. Select **Send**.
 

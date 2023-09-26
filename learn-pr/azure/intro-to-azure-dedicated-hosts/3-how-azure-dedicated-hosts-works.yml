@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-dedicated-hosts.how-azure-dedicated-hosts-work
+title: How Azure dedicated hosts work
+metadata:
+  title: How Azure dedicated hosts work
+  description: Learn how Azure dedicated hosts work.
+  ms.date: 06/1/2023
+  author: mattmcinnes
+  ms.author: mattmcinnes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-azure-dedicated-hosts-work.md)]

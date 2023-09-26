@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-aspnet-core-identity.identity-customizations
+uid: learn.secure-aspnet-core-identity.4-identity-customizations
 title: Identity customizations
 metadata:
   title: Identity customizations
   description: Learn about extending ASP.NET Core Identity with custom functionality.
-  ms.date: 03/16/2022
+  ms.date: 05/19/2023
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 durationInMinutes: 2

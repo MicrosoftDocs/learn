@@ -3,7 +3,7 @@ uid: learn.reactors.test-azure-cognitive-services.5-sentiment-analysis-api
 title: Sentiment Analytics API
 metadata:
   title: Sentiment Analytics API
-  description: Learn about the Azure Cognitive Services Sentiment Analytics API for data science operations.
+  description: Learn about the Azure AI services Sentiment Analytics API for data science operations.
   ms.date: 06/23/2022
   author: aahill
   ms.author: aahi
@@ -12,4 +12,4 @@ metadata:
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-sentiment-analysis-api.md)] 
+  [!INCLUDE[](includes/5-sentiment-analysis-api.md)]

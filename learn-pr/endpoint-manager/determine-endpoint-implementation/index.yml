@@ -7,7 +7,7 @@ metadata:
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.service: microsoft-intune
 title: Determine your endpoint management implementation
 summary: Microsoft Endpoint Manager helps you protect the devices, apps, and data that the people of your organization use to be productive. After completing this module, you'll have a better understanding of your endpoint management objectives, device inventory considerations, licensing needs, infrastructure objectives, and rollout plans. Additionally, you'll consider how to best communicate your endpoint plans with end users and prepare for questions and support.
 abstract: | 

@@ -6,8 +6,8 @@ metadata:
   title: When to use Azure Blueprints
   description: "Learn the scenarios where you should consider using Azure Blueprints."
   ms.date: 11/30/2021
-  author: ricmmartins
-  ms.author: ricmart
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1

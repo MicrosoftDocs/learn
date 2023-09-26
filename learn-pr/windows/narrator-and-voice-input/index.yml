@@ -4,10 +4,11 @@ metadata:
   title: Configure your Windows app to use Narrator and speech recognition
   description: In this module, we show you how to use Narrator and custom voice input controls to make your app inclusive to visually impaired users.
   ms.date: 5/24/2019
-  author: PeterTurcan
-  ms.author: v-pettur
+  author: Karl-Bridge-Microsoft
+  ms.author: kbridge
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.prod: windows
+  manager: jken
 title: Configure your Windows app to use Narrator and speech recognition
 summary: Learn how to use audio elements to make an inclusive Windows app. Configure your app to work well with Narrator, and add a custom speech recognition system for spoken input.
 abstract: |

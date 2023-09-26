@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-operational-excellence.4-use-automation-to-red
 title: Use automation to reduce effort and error
 metadata:
   title: Use automation to reduce effort and error
-  description: In this unit, we'll discuss how to use automation to decrease deployment times and reduce errors.
+  description: In this unit, we discuss how to use automation to decrease deployment times and reduce errors.
   ms.date: 05/19/2020
   author: martinekuan
   ms.author: martinek
@@ -16,29 +16,29 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following cannot be used to automate infrastructure deployment?'
+  - content: "Which of the following tools can't be used to automate infrastructure deployment?"
     choices:
     - content: 'Azure PowerShell'
       isCorrect: false
-      explanation: 'With Azure PowerShell you can create scripts to automate the deployment of infrastructure.'
+      explanation: 'With Azure PowerShell, you can create scripts to automate the deployment of infrastructure.'
     - content: 'Azure CLI'
       isCorrect: false
-      explanation: 'With the Azure CLI you can create scripts to automate the deployment of infrastructure.'
+      explanation: 'With the Azure CLI, you can create scripts to automate the deployment of infrastructure.'
     - content: 'Azure Resource Manager templates'
       isCorrect: false
-      explanation: 'With Azure Resource Manager templates you can fully automate the deployment of infrastructure.'
+      explanation: 'With Azure Resource Manager templates, you can fully automate the deployment of infrastructure.'
     - content: 'Application Insights'
       isCorrect: true
-      explanation: 'Application Insights helps you monitor and analyze your application, it does not offer automation.'
+      explanation: "Application Insights helps you monitor and analyze your application, it doesn't offer automation."
 
-  - content: 'Which of the following is not a common strategy for configuring virtual machines?'
+  - content: "Which of the following strategies is NOT a common way to configure virtual machines?"
     choices:
     - content: 'Custom images'
       isCorrect: false
       explanation: 'Custom images are a great way to speed up your VM deployments with the requisite software already installed and configured.'
-    - content: 'Auto-boot ISO images'
+    - content: 'Autoboot ISO images'
       isCorrect: true
-      explanation: 'Mounting ISO images with custom OS installations is not a common strategy for configuring VM.'
+      explanation: "Mounting ISO images with custom OS installations isn't a common strategy for configuring VM."
     - content: 'Post-deployment scripting'
       isCorrect: false
       explanation: 'Post-deployment scripting can be used to install and configure software after a VM has been deployed.'

@@ -8,7 +8,7 @@ metadata:
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 7
 content: |
   [!include[](includes/3-evaluate-costs-using-cost-analysis.md)]

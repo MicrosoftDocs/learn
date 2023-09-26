@@ -40,7 +40,7 @@ You first need to create a `DataTemplate` instance and assign it to the `ItemTem
    </ListView>
    ```
 
-1. Run the application. Each flag should be accompanied by the country name and date on which the flag was adopted.
+1. Run the application. Each flag should be accompanied by the country/region name and date on which the flag was adopted.
 
 ## Add an image to the row
 
@@ -67,4 +67,4 @@ Finally, you need add the flag image to the row. To load the flag images, you ne
    </ListView>
    ```
 
-1. Run the application. You should now see the flag images for each country.
+1. Run the application. You should now see the flag images for each country/region.

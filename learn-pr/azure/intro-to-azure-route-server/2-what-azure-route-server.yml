@@ -6,8 +6,8 @@ metadata:
   title: What is Azure Route Server?
   description: This unit provides an overview of Azure Route Server.
   ms.date: 11/23/2021
-  author: LBN-commits
-  ms.author: v-lanai
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

@@ -2,8 +2,8 @@
 uid: learn.wwl.deploy-consume-models-azure-machine-learning
 metadata:
   title: Deploy and consume models with Azure Machine Learning
-  description: Deploy and consume models with Azure Machine Learning
-  ms.date: 11/29/2022
+  description: Learn how to deploy a model to an endpoint. When you deploy a model, you can get real-time or batch predictions by calling the endpoint.
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   Learn how to deploy a model to an endpoint. When you deploy a model, you can get real-time or batch predictions by calling the endpoint.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/deploy-consume-models-azure-machine-learning.svg
 levels:
 - beginner
 roles:

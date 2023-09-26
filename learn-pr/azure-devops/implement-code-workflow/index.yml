@@ -8,7 +8,8 @@ metadata:
   ms.author: jukullam
   ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-devops
+  manager: mijacobs
 title: Implement a code workflow in your build pipeline by using Git and GitHub
 summary: Collaborate with others and merge only the highest quality code.
 abstract: |

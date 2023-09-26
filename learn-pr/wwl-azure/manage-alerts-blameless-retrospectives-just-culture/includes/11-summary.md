@@ -9,6 +9,6 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Smart detection - Performance Anomalies](/azure/azure-monitor/app/proactive-performance-diagnostics).
- -  [What are Azure Monitor Alerts?](/azure/azure-monitor/alerts/alerts-overview).
- -  [Create a new alert rule](/azure/azure-monitor/alerts/alerts-metric).
+ -  [Smart detection - performance anomalies - Azure Monitor \| Microsoft Docs](/azure/azure-monitor/app/proactive-performance-diagnostics).
+ -  [Overview of alerting and notification monitoring in Azure - Azure Monitor \| Microsoft Docs](/azure/azure-monitor/alerts/alerts-overview).
+ -  [Create, view, and manage Metric Alerts Using Azure Monitor - Azure Monitor \| Microsoft Docs](/azure/azure-monitor/alerts/alerts-metric).

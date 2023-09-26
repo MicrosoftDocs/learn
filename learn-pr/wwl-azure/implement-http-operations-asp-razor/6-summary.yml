@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-http-operations-asp-razor.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 09/11/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

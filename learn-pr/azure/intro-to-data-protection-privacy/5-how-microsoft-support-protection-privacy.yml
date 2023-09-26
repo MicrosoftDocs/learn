@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-data-protection-privacy.5-how-microsoft-support-protection-privacy
-title: How does Microsoft support data protection and privacy?
+title: Microsoft data categories and data protection principles
 metadata:
-  title: How does Microsoft support data protection and privacy?
-  description: How does Microsoft support data protection and privacy?
+  title: Microsoft data categories and data protection principles
+  description: Learn about Microsoft online services data categories, and Microsoft's principles and practices for data protection and governance.
   ms.date: 03/24/2021
   author: cwatson-cat
   ms.author: cwatson

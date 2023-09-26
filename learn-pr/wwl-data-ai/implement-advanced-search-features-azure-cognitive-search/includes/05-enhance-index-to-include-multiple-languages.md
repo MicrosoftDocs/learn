@@ -1,4 +1,4 @@
-Support for multiple languages can be added to a search index. You can add language support manually by providing all the translated text fields in all the different languages you want to support. You could also choose to use Cognitive Services to provide translated text through an enrichment pipeline. 
+Support for multiple languages can be added to a search index. You can add language support manually by providing all the translated text fields in all the different languages you want to support. You could also choose to use Azure AI Services to provide translated text through an enrichment pipeline. 
 
 Here, you'll see how to add fields with different languages to an index. You'll then constrain results to fields with specific languages. Finally, create a scoring profile to boost the native language of your end users.
 
@@ -103,9 +103,9 @@ Using the `searchFields` and `select` properties in the above results would retu
     },
 ```
 
-### Enrich an index with multiple languages using Cognitive Services
+### Enrich an index with multiple languages using Azure AI Services
 
-If you don't have access to translations, you can enrich your index and add translated fields using Cognitive Services.
+If you don't have access to translations, you can enrich your index and add translated fields using Azure AI Services.
 
 The steps are to add fields for each language, add a skill for each language, and then map the translated text to the correct fields.
 

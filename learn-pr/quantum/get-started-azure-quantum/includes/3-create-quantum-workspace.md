@@ -10,15 +10,15 @@ Register for free and sign up for a [pay-as-you-go subscription](https://azure.m
 
 ### [Free Trial](#tab/free)
 
-Sign up for a [free trial subscription for 30 days](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). With the Azure Quantum Credits you'll have $500 (USD) to use in each quantum hardware provider. After 30 days of sign-up or once you've consumed all you Azure Quantum Credits (whichever occurs first), you **must** upgrade to a [pay-as-you-go subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go). After the exhaustion of your Azure Quantum Credits, you'll only pay for the services you use and you can cancel anytime. 
+Sign up for a [free trial subscription for 30 days](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). With the Azure Quantum Credits, you'll have $500 (USD) to use in each quantum hardware provider. After you've been signed up for 30 days or once you've consumed all your Azure Quantum Credits (whichever occurs first), you **must** upgrade to a [pay-as-you-go subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go). After you exhaust your Azure Quantum Credits, you'll only pay for the services you use, and you can cancel anytime.
 
-In addition, the free Azure trial gets you started with $200 (USD) in Azure credits to be used in Azure 1st-party services (Azure Quantum is not elegible) within the first 30 days of sign-up.
+In addition, the free Azure trial gets you started with $200 (USD) in Azure credits to be used in Azure first-party services (Azure Quantum is not eligible) within the first 30 days of sign-up.
 
 ### [Students](#tab/student)
 
-Sign up for an [Azure for Students subscription](https://azure.microsoft.com/offers/ms-azr-0170p/). With the Azure Quantum Credits you'll have $500 (USD) to use in each quantum hardware provider. Once you've consumed all your credits, you must upgrade to a [pay-as-you-go subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go), and you can cancel anytime.
+Sign up for an [Azure for Students subscription](https://azure.microsoft.com/offers/ms-azr-0170p/). With the Azure Quantum Credits, you'll have $500 (USD) to use in each quantum hardware provider. Once you've consumed all your credits, you must upgrade to a [pay-as-you-go subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go), and you can cancel anytime.
 
-Azure for Students gets you started with $100 (USD) in Azure credits to be used in Azure 1st-party services (Azure Quantum is not elegible), and you don't need a credit card to sign-up. 
+Azure for Students gets you started with $100 (USD) in Azure credits to be used in Azure first-party services (Azure Quantum is not eligible), and you don't need a credit card to sign up.
 
 ### [Enterprise Agreement](#tab/EA)
 
@@ -39,13 +39,12 @@ Once you have an active Azure subscription, follow these steps to create an Azur
 
    |Option | Description |
    |--- | --- |
-   | Quick create | The quick create option is the easiest path to creating a workspace. It automatically creates the necessary resource group and storage account, adds the Quantinuum, IonQ, and Microsoft QIO providers, and includes free Azure Quantum Credits for Quantinuum and IonQ hardware (USD 500 each). Your workspace can still be customized after creation, if needed. |
+   | Quick create | The quick create option is the easiest path to creating a workspace. It automatically creates the necessary resource group and storage account, adds the Quantinuum, IonQ, and Microsoft QIO providers, and includes free Azure Quantum Credits for Quantinuum and IonQ hardware ($500 USD each). Your workspace can still be customized after creation, if needed. |
    | Advanced create | Use the advanced create option to manually configure your resource group and storage account, select other payment options for your providers, and set tags to categorize resources. By default, the advanced create option also adds the Quantinuum, IonQ, and Microsoft QIO providers, and includes free Azure Quantum Credits for Quantinuum and IonQ hardware (USD 500 each). |
-
 
 ### [Quick create](#tab/tabid-quick)
 
-1. Enter a name for the workspace. 
+1. Enter a name for the workspace.
 1. Select the region for the workspace.
 1. Select **Create**.
 
@@ -61,8 +60,8 @@ Once you have an active Azure subscription, follow these steps to create an Azur
    > [!IMPORTANT]
    > You must be an **Owner** of the resource group you use to create a new storage account. For more information about how resource groups work in Azure, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
-1. Select **Next**. 
-1. The Quantinuum, IonQ, and Microsoft QIO providers are automatically added to the workspace. To add another available provider, select **Add** on that provider's tile. To modify the pricing plan for any of the selected providers, select **Modify**. 
+1. Select **Next**.
+1. The Quantinuum, IonQ, and Microsoft QIO providers are automatically added to the workspace. To add another available provider, select **Add** on that provider's tile. To modify the pricing plan for any of the selected providers, select **Modify**.
 
     > [!NOTE]
     > Pricing for Azure Quantum varies by provider. Please consult the information in the Providers tab of your Azure Quantum workspace in the Azure portal for the most up-to-date pricing information, or visit the [Azure Quantum pricing page](https://azure.microsoft.com/pricing/details/azure-quantum/).
@@ -73,9 +72,9 @@ Once you have an active Azure subscription, follow these steps to create an Azur
 
 ***
 
-Deployment of your workspace may take a few minutes. The status and deployment details will be updated in the portal. 
+Deployment of your workspace may take a few minutes. The status and deployment details will be updated in the portal.
 
 > [!NOTE]
 > If you have any questions regarding the workspace creation process or run into any issue at any point using Azure Quantum, bookmark [Azure Quantum office hours](https://aka.ms/AQ/OfficeHours) and join our open office hours every Thursday 8∶30 AM Pacific Standard Time zone (PST).
 
-Congratulations! You're set up to start using the Azure Quantum service. In the next unit, you'll learn how to run Q# code using a Jupyter notebook in the Azure Quantum workspace you've created. 
+Congratulations! You're set up to start using the Azure Quantum service. In the next unit, you'll learn how to run Q# code using a Jupyter notebook in the Azure Quantum workspace you've created.
