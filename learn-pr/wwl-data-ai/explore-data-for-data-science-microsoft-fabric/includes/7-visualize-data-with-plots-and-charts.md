@@ -121,7 +121,7 @@ This type of analysis helps us understand how changes in the dependent variables
 
 Moreover, this analysis can help identify which dependent variables have a significant impact on the target variable. This is useful for feature selection in machine learning models, where the goal is to use the most relevant features to predict the target.
 
-### Line charts
+### Line plot
 
 The following Python script uses the [`matplotlib`](https://matplotlib.org/) library to create a line plot of simulated house prices over a period of three years. It generates a list of monthly dates from 2020 to 2022 and a corresponding list of house prices, which start from $200,000 and increase each month with some randomness. 
 
@@ -158,6 +158,8 @@ plt.ylabel('House Price ($)')
 plt.show()
 ```
 
+:::image type="content" border="false" source="../media/8-line-plot.png" alt-text="Screenshot of a line plot in a notebook.":::
+
 Line plots are simple to understand and read. They provide a clear, high-level overview of the data’s progression over time, making them a popular choice for time series data.
 
 ### Pair plot
@@ -181,6 +183,8 @@ df = pd.DataFrame(data)
 # Create a pair plot
 sns.pairplot(df)
 ```
+
+:::image type="content" border="false" source="../media/8-pair-plot.png" alt-text="Screenshot of a pair plot in a notebook.":::
 
 This creates a grid of plots where each feature is plotted against every other feature. On the diagonal are histograms showing the distribution of each feature. The off-diagonal plots are scatter plots showing the relationship between two features.
 
