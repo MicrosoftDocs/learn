@@ -35,7 +35,27 @@ Overall, when the time for rework is taken into account, adding security to your
 
 Shifting left is a process change, but it isn’t a single control or specific tool; it’s about making all of your security more developer-centric and giving developers security feedback where they are.
 
-GitHub offers security features that help keep data secure in repositories and across organizations. Features include security policy, Dependabot alerts, security advisories, and code scanning. For more information, see [GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features).
+### Security tab features
+
+GitHub offers security features that help keep data secure in repositories and across organizations. To locate the security tab:
+
+1. On GitHub.com, navigate to the main page of the repository.
+
+1. Under the repository name, select **Security**.
+
+:::image type="content" source="../media/security-tab.png" alt-text="Screenshot showing where to locate the Security tab in GitHub.":::
+
+From the security tab you can build security features into your GitHub workflow that will keep vulnerabilities out of your repository and codebase. These features include:
+
+- **Security policies** that allow you to give instructions for how to report a security vulnerability in your project by adding a `SECURITY.md` file to your repository.
+- **Dependabot alerts** that notify you when GitHub detects that your repository is using a vulnerable dependency or malware.
+- **Security advisories** that you can use to privately discuss, fix, and publish information about security vulnerabilities in your repository.
+- **Code scanning** that helps you find, triage, and fix vulnerabilities and errors in your code.
+
+For more information, see [GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features).
+
+> [!NOTE]
+> Dependabot alert advisories for malware are currently in beta and subject to change. Only advisories that have been reviewed by GitHub will trigger Dependabot alerts.
 
 Next we'll explore some of these features and learn ways to distribute security and operational responsibilities across all phases of the software-development lifecycle.
 
