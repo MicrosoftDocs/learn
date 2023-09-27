@@ -17,10 +17,14 @@ In Exercise 4, you configure two specific alerts: an action group to send an ema
 [:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
 ](https://microsoftlearning.github.io/APL-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_05_exercise_configure_alerts.html)
 
+## Skilling tasks
+
+- Create an action group to send an email
+- Create an alert for virtual machine CPU utilization
 
 ## Exercise instructions
 
-**Task 1: Create an action group to send an email**
+### Create an action group to send an email
 
 1. In the Azure Portal Search Bar, enter **Monitor** and select **Monitor** from the list of results.
 1. Select **Alerts** in the navigation menu.
@@ -41,7 +45,7 @@ In Exercise 4, you configure two specific alerts: an action group to send an ema
 1. Choose **Review and Create**. Choose **Create**.
 
 
-**Task 2: Create an alert for virtual machine CPU utilization**
+### Create an alert for virtual machine CPU utilization
 
 1. In the Azure Portal Search Bar, enter **rg-alpha** and select **rg-alpha** from the list of results.
 1. From the list of items in the resource group, choose **Linux-VM2**.

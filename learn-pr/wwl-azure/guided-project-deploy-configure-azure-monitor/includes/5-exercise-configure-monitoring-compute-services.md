@@ -20,9 +20,16 @@ You create a data collection endpoint and a data collection rule to collect Wind
 [:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
 ](https://microsoftlearning.github.io/APL-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_04_exercise_configure_monitoring_compute_services.html)
 
+## Skilling tasks
+
+- Create a data collection endpoint
+- Create a data collection rule
+- Add an IIS log collection to an existing data collection rule
+- Configure Network Connection Monitor for a Linux IaaS virtual machine
+
 ## Exercise instructions
 
-**Task 1: Create a data collection endpoint**
+### Create a data collection endpoint
 
 1. In the Azure Portal Search Bar, enter Monitor and select Monitor from the list of results.
 1. In the Monitor page, under Settings, choose Data Collection Endpoints.
@@ -39,7 +46,7 @@ You create a data collection endpoint and a data collection rule to collect Wind
 5. Review the settings and choose Create.
 
 
-**Task 2: Create a data collection rule**
+### Create a data collection rule
 
 1. In the Azure Portal Search Bar, enter **Monitor** and select **Monitor** from the list of results.
 1. In the **Monitor** page, under **Settings**, choose **Data Collection Rules**.
@@ -73,7 +80,7 @@ You create a data collection endpoint and a data collection rule to collect Wind
 1. Choose **Review + Create** and then choose **Create**.
 
 
-**Task 3: Add an IIS log collection to an existing data collection rule**
+### Add an IIS log collection to an existing data collection rule
 
 1. In the Azure Portal Search Bar, enter **Monitor** and select **Monitor** from the list of results.
 1. In the **Monitor** page, under **Settings**, choose **Data Collection Rules**.
@@ -92,7 +99,7 @@ You create a data collection endpoint and a data collection rule to collect Wind
 
 9. Choose **Add data source**.
 
-**Task 4: Configure Network Connection Monitor for a Linux IaaS virtual machine**
+### Configure Network Connection Monitor for a Linux IaaS virtual machine
 
 1. In the Azure Portal Search Bar, enter **Network Watcher** and select **Network Watcher** from the list of results.
 1. Under **Monitoring**, choose **Connection Monitor**.

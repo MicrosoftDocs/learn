@@ -9,7 +9,7 @@ This guided project consists of the four exercises:
 In Exercise 2, you configure monitoring for web applications.
 
 - Task 1: Enable Application Insights
-- Task 2: Disable loggingfor .NET core snapshot debugger
+- Task 2: Disable logging for .NET core snapshot debugger
 - Task 3: Configure web app HTTP logs to be written to a Log Analytics workspace
 - Task 4: Configure SQL Insights data to be written to a Log Analytics workspace
 - Task 5: Enable file and configuration change tracking for web apps
@@ -22,9 +22,17 @@ Launch the exercise and follow the instructions. When you're done, be sure to re
 [:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
 ](https://microsoftlearning.github.io/APL-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_03_exercise_monitor_web_apps.html)
 
+## Skilling tasks
+
+- Enable Application Insights
+- Disable logging for .NET core snapshot debugger
+- Configure web app HTTP logs to be written to a Log Analytics workspace
+- Configure SQL Insights data to be written to a Log Analytics workspace
+- Enable file and configuration change tracking for web apps
+
 ## Exercise instructions
 
-**Task 1: Enable Application Insights**
+### Enable Application Insights
 
 1. In the Azure Portal Search Bar, enter **rg-alpha** and select **rg-alpha** from the list of results.
 1. From the list of items in the resource group, choose **App Services for the Web App with an SQL Database**.
@@ -33,7 +41,7 @@ Launch the exercise and follow the instructions. When you're done, be sure to re
 1. On the **Application Insights** page, ensure that **Create a new resource** is selected and that the Log Analytics Workspace is set to **LogAnalytics1** and choose **Apply**.
 1. On the **Apply monitoring settings** dialog, choose **Yes**.
 
-**Task 2: Disable logging for .NET core snapshot debugger**
+### Disable logging for .NET core snapshot debugger
 
 1. In the Azure Portal Search Bar, enter **rg-alpha** and select **rg-alpha** from the list of results.
 1. From the list of items in the resource group, choose **App Services for the Web App with an SQL Database**.
@@ -49,7 +57,7 @@ Launch the exercise and follow the instructions. When you're done, be sure to re
     | Subscription	| Your subscription  |
     | Log Analytics workspace 	| LogAnalytics1   |
 
-**Task 4: Configure SQL Insights data to be written to a Log Analytics workspace**
+### Configure SQL Insights data to be written to a Log Analytics workspace
 
 1. In the Azure Portal Search Bar, enter **rg-alpha** and select **rg-alpha** from the list of results.
 1. From the list of items in the resource group, choose the sample SQL database.
@@ -65,7 +73,7 @@ Launch the exercise and follow the instructions. When you're done, be sure to re
     | Subscription	| Your subscription  |
     | Log Analytics workspace 	| LogAnalytics1   |
 
-**Task 5: Enable file and configuration change tracking for web apps**
+### Enable file and configuration change tracking for web apps
 
 1. In the Azure Portal Search Bar, enter **rg-alpha** and select **rg-alpha** from the list of results.
 1. From the list of items in the resource group, choose the AzureLinuxAppWXYZ-webapp.
