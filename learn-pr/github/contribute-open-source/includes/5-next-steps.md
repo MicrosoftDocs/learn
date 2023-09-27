@@ -4,7 +4,7 @@ You've added context to an issue, contributed a code review, and maybe even subm
 
 You'll find frequent contributors to the project in the comment section for issues and pull requests. Or, you can select **Insights** in the repository's navigation, and then select **Contributors** to find other active community members. Visit their GitHub profiles. Sometimes they'll suggest ways to get in touch with them.
 
-You can also [follow organizations and enterprises on GitHub](https://docs.github.com/en/get-started/exploring-projects-on-github) to stay in touch. Public activity for every enterprise, user, or organization you follow is shown on your personal dashboard.  
+You can also [follow organizations and enterprises on GitHub](https://docs.github.com/en/get-started/exploring-projects-on-github) to stay in touch. Your personal dashboard shows public activity for every enterprise, user, or organization you follow.  
 
 You can also find like-minded folks by attending meetups or conferences on open-source topics. Or, you can meet people if the project or ecosystem is large enough around the project you're interested in. Find archives with talk recordings for past events, podcasts, newsletters, and mailing lists.
 
@@ -20,7 +20,7 @@ Code, and solutions, can sometimes be reused across projects. Have you solved a 
 
 The first option is probably the best course of action when your bit of code is like a plug-in that could be used across web-development projects. Mirroring or forking a project with the addition of your code is useful when you're solving a narrow use case for a small subset of customers, or even a single customer. Consider that you'll need to keep your fork up to date with the upstream repository if you want to benefit from (for instance) security patches.
 
-GitHub Actions are packaged scripts that automate tasks in a software-development workflow in GitHub. The two different types of actions are container actions and JavaScript actions. You can submit your action to the GitHub Marketplace for discoverability. [GitHub Marketplace](https://docs.github.com/en/apps/publishing-apps-to-github-marketplace/github-marketplace-overview/about-github-marketplace-for-apps) connects you to developers who want to extend and improve their GitHub workflows. Using this platform, you can publish actions and share apps with other users for free.
+GitHub Actions are packaged scripts that automate tasks in a software-development workflow in GitHub. The two different types of actions are container actions and JavaScript actions. You can submit your action to the GitHub Marketplace for discoverability. [GitHub Marketplace](https://docs.github.com/en/apps/publishing-apps-to-github-marketplace/github-marketplace-overview/about-github-marketplace-for-apps) connects you to developers who want to extend and improve their GitHub workflows. Use this platform to publish actions and share apps with other users for free.
 
 For all three of the suggested paths, consider that you're now a maintainer of a project. People will come to you with praise, questions, and complaints. Are you ready for such a commitment?
 
