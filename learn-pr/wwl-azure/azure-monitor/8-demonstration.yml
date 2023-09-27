@@ -4,12 +4,11 @@ title: Perform try-this exercises
 metadata:
   title: Perform try-this exercises
   description: "Perform try-this exercises"
-  ms.date: 02/24/2023
+  ms.date: 05/09/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 10
 content: |
   [!include[](includes/8-demonstration.md)]

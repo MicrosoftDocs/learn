@@ -7,7 +7,9 @@ metadata:
   author: VanMSFT
   ms.author: vanto
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-azurepowershell
 title: Exercise - Configure Azure SQL Database
 durationInMinutes: 10
 interactive: powershell

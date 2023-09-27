@@ -9,7 +9,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 
 durationInMinutes: 2
 content: |

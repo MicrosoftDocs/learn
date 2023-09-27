@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.azure.build-first-azure-developer-cli-template
+metadata:
+  moduleType: introduction
+  title: Build your first Azure Developer CLI template
+  description: Learn how to build your own Azure Developer CLI templates
+  ms.date: 07/13/2023
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: engagement-fy23
+title: Build your first Azure Developer CLI template
+summary: "Learn how to build your own Azure Developer CLI templates."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Create a simple Azure Developer CLI template from start to finish
+    - Describe essential Azure Developer CLI template components, features and workflows
+prerequisites: |
+  - Basic working knowledge of the Azure Developer CLI
+  - Basic knowledge of software development workflows, such as packaging, provisioning, and deploying resources
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - devops-engineer
+  - solution-architect
+products:
+  - azure-clis
+subjects:
+- development-tools
+units:
+- learn.azure.build-first-azure-developer-cli-template.introduction
+- learn.azure.build-first-azure-developer-cli-template.create-template-structure
+- learn.azure.build-first-azure-developer-cli-template.add-source-code
+- learn.azure.build-first-azure-developer-cli-template.create-infrastructure
+- learn.azure.build-first-azure-developer-cli-template.update-azure-file
+- learn.azure.build-first-azure-developer-cli-template.provision-deploy
+- learn.azure.build-first-azure-developer-cli-template.configure-cicd
+- learn.azure.build-first-azure-developer-cli-template.knowledge-check
+- learn.azure.build-first-azure-developer-cli-template.summary
+badge:
+  uid: learn.azure.build-first-azure-developer-cli-template.badge

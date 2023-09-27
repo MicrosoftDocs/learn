@@ -2,7 +2,7 @@ You need a well-planned IP-addressing schema to ensure ease of routing and manag
 
 ## Considerations
 
-One of the most critical considerations is to not use an overlapping RFC 1918 (private) IP space with on-premises or other clouds. Keep in mind that Azure will reserve five IP addresses for each subnet in a virtual network. Also note that some Azure services, like an Azure ExpressRoute gateway or Azure Firewall, will require dedicated subnets.
+One of the most critical considerations is to not use an overlapping RFC 1918 (private) IP space with on-premises or other clouds. Keep in mind that Azure reserves five IP addresses for each subnet in a virtual network. Also note that some Azure services, like an Azure ExpressRoute gateway or Azure Firewall, require dedicated subnets.
 
 ## Recommendations
 

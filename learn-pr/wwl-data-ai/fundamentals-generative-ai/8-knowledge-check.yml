@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This knowledge check is based on content about generative AI, large language models, and copilots."
+  ms.date: 6/27/2023
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What are Large Language Models?"
+    choices:
+    - content: "Models that only work with one language."
+      isCorrect: false
+      explanation: "Incorrect. Large language models can work with multiple languages."
+    - content: "Models that only work with small amounts of data."
+      isCorrect: false
+      explanation: "Incorrect. Large language models work with massive amounts of data."
+    - content: "Models that use deep learning to process and understand natural language on a massive scale."
+      isCorrect: true
+      explanation: "Correct. Large language models use deep learning to process and understand natural language on a massive scale."
+  - content: "What is an example of a potential task a generative AI application can help solve?"
+    choices:
+    - content: "Monitoring the temperature in a manufacturing facility."
+      isCorrect: false
+      explanation: "Anomaly detection is an AI task, but not a generative AI task."
+    - content: "Creating a draft for an email."
+      isCorrect: true
+      explanation: "Creating a draft for an email is a generative AI task."
+    - content: "Collecting real time data and storing it in a database."
+      isCorrect: false
+      explanation: "Real-time data can be used to support AI tasks, but the storage of real-time data isn't in itself a generative AI task."
+  - content: "What is the purpose of vector-based embeddings?"
+    choices:
+    - content: "To represent semantic meaning of text tokens."
+      isCorrect: true
+      explanation: "Correct. The embedding for each token consists of multiple numeric elements. Each element indicates the location of the word along a particular dimension, like coordinates on a map."
+    - content: "To create tokens that include multiple representations of a word in different languages."
+      isCorrect: false
+      explanation: "Incorrect. Embeddings don't store multiple language definitions of a token."
+    - content: "To correct misspellings in the training data."
+      isCorrect: false
+      explanation: "Incorrect. Embeddings aren't used to correct misspellings in training data."
+  - content: "What is the potential impact of copilots?"
+    choices:
+    - content: "Copilots only impact applications used in professional settings."
+      isCorrect: false
+      explanation: "Incorrect. Copilots can be built for a multitude of applications that are used at work and in day-to-day life."
+    - content: "Copilots can help with first drafts, information synthesis, strategic planning, and much more."
+      isCorrect: true
+      explanation: "Correct. Copilots have the potential to revolutionize the way we work"
+    - content: "Copilots can only be used for certain natural language tasks like summarizing text."
+      isCorrect: false
+      explanation: "Incorrect. Copilots can be built on large language models that have a multitude of capabilities, from text to code to image generation and beyond."

@@ -24,7 +24,7 @@ quiz:
     - content: "The financial company should choose the Extranet option."
       isCorrect: false
       explanation: "Extranet isn't a routing preference option for an Azure public IP address. An extranet is a private network that allows controlled access to authorized external users, typically for business purposes. It extends an organization's intranet beyond its boundaries to include partners, vendors, and customers."
-  - content: "A multi-national car manufacturer wishes to use routing preference unmetered for CDN origin content stored in Azure. Who does the car manufacturer contact to determine if their CDN provider is a member of the program?"
+  - content: "A multi-national/regional car manufacturer wishes to use routing preference unmetered for CDN origin content stored in Azure. Who does the car manufacturer contact to determine if their CDN provider is a member of the program?"
     choices:
     - content: "The CDN provider"
       isCorrect: true
@@ -35,7 +35,7 @@ quiz:
     - content: "The Internet Service Provider"
       isCorrect: false
       explanation: "The determination of whether routing preference unmetered can be used is dependent on the CDN provider enrollment in the routing preference unmetered program. The Internet Service Provider wouldn't be able to assist if the CDN provider isn't a member of the program."
-  - content: "A multi-national car manufacturer has an application in the South Central US Azure region that requires the least amount of latency and the most network performance as possible. What routing preference should the network engineer choose for the application's public IP address?"
+  - content: "A multi-national/regional car manufacturer has an application in the South Central US Azure region that requires the least amount of latency and the most network performance as possible. What routing preference should the network engineer choose for the application's public IP address?"
     choices:
     - content: "The engineer should choose the Microsoft network option."
       isCorrect: true

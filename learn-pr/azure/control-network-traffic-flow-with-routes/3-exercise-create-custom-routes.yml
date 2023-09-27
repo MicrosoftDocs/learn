@@ -3,10 +3,12 @@ uid: learn.control-network-traffic-flow-with-routes.3-exercise-create-custom-rou
 metadata:
   title: Exercise - Create custom routes
   description: Create custom routes
-  ms.date: 03/02/2022
-  author: KumudD
-  ms.author: kumud
+  ms.date: 08/17/2023
+  author: mbender-ms
+  ms.author: mbender
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Exercise - Create custom routes
 durationInMinutes: 10

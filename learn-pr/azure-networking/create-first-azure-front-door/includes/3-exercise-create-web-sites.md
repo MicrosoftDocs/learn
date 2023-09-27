@@ -1,4 +1,4 @@
-In this exercise, you'll create a pair of virtual machines behind an internal load balancer and install the vehicle registration web app. You'll also configure a virtual network with a private endpoint that Front Door can use to connect to the virtual machines privately. Finally, you'll deploy the license renewal web site to an instance of Azure App Service and also establish private connectivity with Front Door.
+In this exercise, you create a pair of virtual machines behind an internal load balancer and install the vehicle registration web app. You also configure a virtual network with a private endpoint that Front Door can use to connect to the virtual machines privately. Finally, you deploy the license renewal web site to an instance of Azure App Service and also establish private connectivity with Front Door.
 
 ## Create virtual machines and deploy the vehicle registration site
 
@@ -14,7 +14,7 @@ In this exercise, you'll create a pair of virtual machines behind an internal lo
     az group create --name $RG --location <location>
     ```
 
-1. In the Cloud Shell window on the right, run the following command. This command uses the Azure command-line interface to create a virtual network named `vehicleappvnet`. It's a private network that provides addresses in the range 10.0.0.0 to 10.0.255.255. The command also creates a subnet called `webServerSubnet`, with the address range 10.0.1.0 to 10.0.1.255. This subnet will contain the virtual machines.
+1. In the Cloud Shell window on the right, run the following command. This command uses the Azure command-line interface to create a virtual network named `vehicleappvnet`. It's a private network that provides addresses in the range 10.0.0.0 to 10.0.255.255. The command also creates a subnet called `webServerSubnet`, with the address range 10.0.1.0 to 10.0.1.255. This subnet contains the virtual machines.
 
     ```azurecli
     az network vnet create \
@@ -52,7 +52,7 @@ In this exercise, you'll create a pair of virtual machines behind an internal lo
         --priority 200
     ```
 
-1. To create and configure the virtual machines for the web servers, run the following commands. The virtual machines are called `webServer1` and `webServer2`. Each virtual machine runs Ubuntu Server. An administrative user account is created for each virtual machine, with the login name `azureuser`. Each virtual machine has the vehicle registration web app installed.
+1. To create and configure the virtual machines for the web servers, run the following commands. The virtual machines are called `webServer1` and `webServer2`. Each virtual machine runs Ubuntu Server. An administrative user account is created for each virtual machine, with the user name `azureuser`. Each virtual machine has the vehicle registration web app installed.
 
     The first command runs asynchronously to enable both virtual machines to be created simultaneously.
 
@@ -164,7 +164,7 @@ In this exercise, you'll create a pair of virtual machines behind an internal lo
 
 ## Create a private link service and a private endpoint
 
-The private link service is required to establish private communication between Front Door and the origin resources. A private endpoint is what Front Door will establish a connection with to achieve an internal connection over the Microsoft network.
+The private link service is required to establish private communication between Front Door and the origin resources. A private endpoint is what Front Door establishes a connection with to achieve an internal connection over the Microsoft network.
 
 1. To create a private link service and associate it with the internal load balancer, run the following commands. The first command disables private link network policy on the subnet to allow the private link service to be created.
 
@@ -213,7 +213,7 @@ You've now created the virtual machines running the vehicle registration web app
     APPSERVICE="licenserenewal$RANDOM"
     ```
 
-1. Next, to create the App Service plan the web app will use, run the following command.
+1. Next, to create an App Service plan for the web app to use, run the following command.
 
     ```azurecli
     az appservice plan create \
@@ -231,7 +231,7 @@ You've now created the virtual machines running the vehicle registration web app
         --name $APPSERVICE \
         --plan vehicleAppServicePlan \
         --deployment-source-url https://github.com/MicrosoftDocs/mslearn-load-balance-web-traffic-with-application-gateway \
-        --deployment-source-branch appService --runtime "DOTNETCORE|3.1"
+        --deployment-source-branch appService
     ```
 
 Now, let's take a closer look at configuring Front Door.

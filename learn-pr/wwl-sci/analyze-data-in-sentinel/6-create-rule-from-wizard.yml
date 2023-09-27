@@ -4,11 +4,11 @@ title: Create an analytics rule from wizard
 metadata:
   title: Create an analytics rule from wizard
   description: "Describes how to create an analytics rule by using the wizard."
-  ms.date: 01/27/2023
+  ms.date: 05/15/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 8
 content: |
   [!include[](includes/6-create-rule-from-wizard.md)]

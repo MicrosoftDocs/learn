@@ -1,6 +1,6 @@
 You work for a manufacturing company and are moving resources into Azure. The database server must be accessible for clients in your on-premises network. Public resources, like web servers, must be accessible from the internet. You want to ensure that you plan IP addresses that support both these requirements.
 
-In this unit, you'll explore the constraints and limitations for public and private IP addresses in Azure. You'll also look at the capabilities that are available in Azure to reassign IP addresses in your network.
+In this unit, you explore the constraints and limitations for public and private IP addresses in Azure. You also look at the capabilities that are available in Azure to reassign IP addresses in your network.
 
 ## IP address types
 
@@ -22,20 +22,20 @@ Use a public IP address for public-facing services. A public address can be eith
 
 - **Dynamic public IP addresses** are assigned addresses that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM. The IP address is released when you stop or delete the VM. In each Azure region, public IP addresses are assigned from a unique pool of addresses. The default allocation method is dynamic.
 
-- **Static public IP addresses** are assigned addresses that won't change over the lifespan of the Azure resource. To ensure that the IP address for the resource remains the same, you can set the allocation method to static. In this case, an IP address is assigned immediately, and is released only when you delete the resource or change the IP allocation method to dynamic.
+- **Static public IP addresses** are assigned addresses that don't change over the lifespan of the Azure resource. To ensure that the IP address for the resource remains the same, you can set the allocation method to static. In this case, an IP address is assigned immediately, and is released only when you delete the resource or change the IP allocation method to dynamic.
 
 ### SKUs for public IP addresses
 
-For public IP addresses, there are two SKUs to choose from: **Basic** and **Standard**. All public IP addresses created before the introduction of SKUs are Basic SKU public IP addresses. With the introduction of SKUs, you can choose the scale, features, and pricing for load balancing internet traffic. 
+For public IP addresses, there are two SKUs to choose from: **Basic** and **Standard**. All public IP addresses created before the introduction of SKUs are Basic SKU public IP addresses. With the introduction of SKUs, you can choose the scale, features, and pricing for load balancing internet traffic.
 
-Both Basic and Standard SKUs:
+Both Basic and Standard SKUs have:
 
-- Have a default inbound originated flow idle timeout of 4 minutes, which is adjustable to up to 30 minutes.
-- Have a fixed outbound originated flow idle timeout of 4 minutes.
+- A default inbound originated flow idle timeout of 4 minutes, which is adjustable to up to 30 minutes.
+- A fixed outbound originated flow idle timeout of 4 minutes.
 
 #### Basic SKU
 
-Basic public IPs can be assigned by using static or dynamic allocation methods. Basic public IPs can be assigned to any Azure resource that can be assigned a public IP address, including network interfaces, VPN gateways, application gateways, and internet-facing load balancers. 
+Basic public IPs can be assigned by using static or dynamic allocation methods. Basic public IPs can be assigned to any Azure resource that can be assigned a public IP address. Including, network interfaces, VPN gateways, application gateways, and internet-facing load balancers.
 
  By default, Basic SKU IP addresses:
 
@@ -69,10 +69,10 @@ The benefit of a public IP address prefix is that you can specify firewall rules
 You can create a public IP address prefix by specifying a name and prefix size. The prefix size is the number of reserved addresses available for use.
 
 - Public IP address prefixes consist of IPv4 or IPv6 addresses. 
-- You can use technology like Azure Traffic Manager to balance region-specific instances. 
-- You can't bring your own public IP addresses from on-premises networks into Azure. 
-- You can't specify addresses when you create a prefix; they're assigned by Azure. After a prefix is created, the IP addresses are fixed in a contiguous range. 
-- Public IP addresses can't be moved between regions; all IP addresses are region-specific. 
+- You can use technology like Azure Traffic Manager to balance region-specific instances.
+- You can only bring your own public IP addresses from on-premises networks into Azure by using a [Custom IP address prefix (BYOIP)](/azure/virtual-network/ip-services/custom-ip-address-prefix).
+- You can't specify addresses when you create a prefix; Azure assigns them. After a prefix is created, the IP addresses are fixed in a contiguous range.
+- Public IP addresses can't be moved between regions; all IP addresses are region-specific.
 
 ## Private IP addresses
 
@@ -84,7 +84,7 @@ Private IP addresses are used for communication within an Azure Virtual Network,
 
 ## IP addressing for Azure virtual networks
 
-In Azure, a virtual network is a fundamental component that acts as an organization's network. The administrator has full control over IP address assignment, security settings, and security rules. When you create a virtual network, you define a scope of IP addresses. Private IP addressing works the same way as it does in an on-premises network. You choose the private IP addresses that are reserved by Internet Assigned Numbers Authority (IANA) based on your network requirements:
+In Azure, a virtual network is a fundamental component that acts as an organization's network. The administrator has full control over IP address assignment, security settings, and security rules. When you create a virtual network, you define a scope of IP addresses. Private IP addressing works the same way as it does in an on-premises network. You choose the private IP addresses that the Internet Assigned Numbers Authority (IANA) reserves based on your network requirements:
 
 - 10.0.0.0/8
 - 172.16.0.0/12  
@@ -94,7 +94,7 @@ A subnet is a range of IP address within the virtual network. You can divide a v
 
 Consider, for example, CIDR 192.168.10.0/24. "192.168.10.0" is the network address, and "24" indicates that the first 24 bits are part of the network address, leaving the last 8 bits for specific host addresses. The address range of a subnet can't overlap with other subnets in the virtual network or with the on-premises network.
 
-For all subnets in Azure, the first three IP addresses are reserved by default. For protocol conformance, the first and last IP addresses of all subnets also are reserved. In Azure, an internal DHCP service assigns and maintains the lease of IP addresses. The `.1`, `.2`, `.3`, and last IP addresses are not visible or configurable by the Azure customer. These addresses are reserved and used by internal Azure services.
+For all subnets in Azure, the first three IP addresses are reserved by default. For protocol conformance, the first and last IP addresses of all subnets also are reserved. In Azure, an internal DHCP service assigns and maintains the lease of IP addresses. The `.1`, `.2`, `.3`, and last IP addresses aren't visible or configurable by the Azure customer. These addresses are reserved and used by internal Azure services.
 
 In Azure virtual networks, IP addresses can be allocated to the following types of resources:
 

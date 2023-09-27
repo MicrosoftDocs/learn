@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
 title: Explore identity and Azure AD
 summary: This module covers definitions and available services for identity provided in Azure AD to Microsoft 365.  You start with authentication, authorization, and access tokens then build into full identity solutions.
 abstract: |
@@ -29,7 +29,7 @@ products:
 - azure
 - azure-active-directory
 - azure-active-directory-b2c
-- azure-active-directory-domain
+- entra
 - entra-verified-id
 subjects:
 - architecture

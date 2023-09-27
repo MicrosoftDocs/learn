@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-data-science-virtual-machine.connect
 metadata:
-  title: "Using SSH and RDP to connect"
-  description: Connect to your Data Science Virtual Machine by using both command-line and graphical clients.
-  ms.date: 08/28/2020
+  title: Using SSH and RDP to connect
+  description: Learn how to connect to your Data Science Virtual Machine by using both command-line and graphical clients.
+  ms.date: 06/02/2023
+  ms.service: machine-learning
   author: jesscioffi
   ms.author: jcioffi
+  ms.reviewer: franksolomon 
   ms.topic: interactive-tutorial
-  ms.service: machine-learning
   ms.prod: learning-azure
-title: "Using SSH and RDP to connect"
+title: Using SSH and RDP to connect
 durationInMinutes: 6
 content: |
   [!include[](includes/connect.md)]

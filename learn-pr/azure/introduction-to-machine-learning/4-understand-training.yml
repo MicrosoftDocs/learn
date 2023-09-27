@@ -5,8 +5,9 @@ metadata:
   title: What are inputs and outputs?
   description: Conceptual unit introducing what machine learning inputs and outputs are
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.service: machine-learning
+  author: msakande
+  ms.author: mopeakande
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

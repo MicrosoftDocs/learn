@@ -8,7 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 10
 content: |
   [!include[](includes/5-console-app-azure-cache-redis.md)]

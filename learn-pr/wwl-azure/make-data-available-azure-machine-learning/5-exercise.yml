@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.make-data-available-azure-machine-learning.exercise
-title: Exercise - Make data available
+title: Exercise - Make data available in Azure Machine Learning
 metadata:
-  title: Exercise - Make data available
+  title: Exercise - Make data available in Azure Machine Learning
   description: "Exercise - Make data available"
-  ms.date: 01/13/2023
+  ms.date: 05/18/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial

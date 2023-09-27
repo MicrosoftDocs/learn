@@ -3,10 +3,12 @@ uid: learn.protect-infrastructure-with-azure-site-recovery.8-exercise-failover-a
 metadata:
   title: Exercise - Failover and failback using Azure Site Recovery
   description: Exercise - Failover and failback using Azure Site Recovery
-  ms.date: 11/15/2019
+  ms.date: 05/09/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 title: Exercise - Failover and failback using Azure Site Recovery
 durationInMinutes: 10

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.create-razor-pages-aspnet-core.7-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 08/24/2021
+  author: jongalloway
+  ms.author: jogallow
+  ms.manager: markl
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
+  ms.prod: aspnet-core
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

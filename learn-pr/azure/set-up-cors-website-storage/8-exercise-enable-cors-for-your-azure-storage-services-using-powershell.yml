@@ -8,6 +8,8 @@ metadata:
   author: tamram
   ms.author: tamram
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 durationInMinutes: 10
 interactive: powershell

@@ -1,6 +1,6 @@
 ## Quick overview
 
-Published by Microsoft and recognized by the threat-modeling community, the Microsoft Threat Modeling Tool helps engineers create data-flow diagrams and apply STRIDE for their threat-modeling work.
+The Microsoft Threat Modeling Tool, recognized by the threat-modeling community, helps engineers create data-flow diagrams and apply STRIDE for their threat-modeling work.
 
 The Threat Modeling Tool offers:
 
@@ -26,11 +26,11 @@ For more advanced users, you can customize the template across three main sectio
 
 ### Stencils
 
-Process, external entity, data store, data-flow, and trust boundaries make up the parent elements.
+Process, external interactor, data store, data-flow, and trust boundaries make up the parent elements.
 
 :::image type="content" source="../media/parentstencils.jpg" alt-text="Screenshot of Parent Stencils." loc-scope="other":::
 
-You can also create child elements to help provide granularity for additional context, actionable threat generation, and risk-reduction strategies.
+You can also create child elements to help provide granularity for more context, actionable threat generation, and risk-reduction strategies.
 
 :::image type="content" source="../media/expandedflowstencils.jpg" alt-text="Screenshot of Expanded Flow Stencils." loc-scope="other":::
 
@@ -50,11 +50,11 @@ HTTP should generate more threats because tampering, information disclosure, and
 
 #### How to add element properties
 
-If you have additional properties that must be included in the default template, you can add them to each element in the administrator view.
+If you have other properties that must be included in the default template, you can add them to each element in the administrator view.
 
 :::image type="content" source="../media/StencilPropertiesAdmin.JPG" alt-text="Screenshot of the Stencil Properties Admin View." loc-scope="other":::
 
-Users will see the changes whenever they drag and drop that element onto the canvas.
+You can see the changes whenever you drag and drop that element onto the canvas.
 
 :::image type="content" source="../media/StencilProperties.JPG" alt-text="Screenshot of the Stencil Properties User View." loc-scope="other":::
 
@@ -70,15 +70,15 @@ Remember: the goal is to have as much context as possible in the simplest manner
 
 Add fields that give you more context and actionable steps. Examples include:
 
-- **Issue priority**: understand which issues need to be worked on first
-- **Hyperlinks**: link issues to online documentation
-- **External risk mapping**: speak the same risk language of other organizations by using reliable third-party sources, such as OWASP Top 10 and CWE Details
+- **Issue priority**: understand which issues need to be worked on first.
+- **Hyperlinks**: link issues to online documentation.
+- **External risk mapping**: speak the same risk language of other organizations by using reliable third-party sources, such as OWASP Top 10 and CWE Details.
 
 :::image type="content" source="../media/ThreatAdminView.JPG" alt-text="Screenshot of the Threat Properties Admin View." loc-scope="other":::
 
 ##### User view
 
-Threat Modeling Tool users will see these changes whenever they analyze their data-flow diagrams.
+Threat Modeling Tool users see these changes whenever they analyze their data-flow diagrams.
 
 :::image type="content" source="../media/ThreatUserView.JPG" alt-text="Screenshot of the Threat Properties User View." loc-scope="other":::
 
@@ -95,7 +95,7 @@ The threat-generation engine uses simple sentences to generate a threat. Example
 - target is [element name]
 - source is [element name]
 
-You can also use the element name on titles and descriptions. The format is: '{target.Name}' or '{source.Name}'
+You can also use the element name on titles and descriptions. The format is: '{target.Name}' or '{source.Name}'.
 
 ##### Step 2 - Combine sources and targets
 
@@ -108,8 +108,8 @@ You can be precise with the way a threat is generated. Combine targets, sources,
 
 The threat-generation engine uses two fields to generate or ignore a threat:
 
-- **Include**: threat will be generated if sentences added in this field are true
-- **Exclude**: threat won't be generated if sentences added in this field are true
+- **Include**: A threat is generated if sentences added in this field are true.
+- **Exclude**: A threat isn't generated if sentences added in this field are true.
 
 Here's an actual example from the default template to bring these steps together:
 
@@ -117,7 +117,7 @@ Here's an actual example from the default template to bring these steps together
 - **Include:** (target is [Web Server]) **OR** (target is [Web Application])
 - **Exclude:** (target.[Sanitizes Output] is 'Yes') **AND** (target.[Sanitizes Input] is 'Yes')
 
-The Cross Site Scripting threat above will **only** be generated when:
+The Cross Site Scripting threat in this example is **only** generated when:
 
 - The process is either a Web Server or a Web Application
 - Input and output aren't sanitized

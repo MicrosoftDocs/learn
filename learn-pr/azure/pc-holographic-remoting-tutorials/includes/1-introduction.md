@@ -13,3 +13,5 @@ In this module, you'll learn how to create a mixed reality experience demonstrat
 * Configure Unity for Holographic Remoting.
 * Learn how to build and deploy the application with Visual Studio.
 * Develop the Holographic Remoting application and deploy it to the HoloLens.
+
+A completed example of this tutorial can be found [here](https://github.com/microsoft/MixedRealityLearning/tree/development/MRTK3%20Tutorials).

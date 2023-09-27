@@ -3,11 +3,11 @@ uid: learn.end-to-end-encryption-with-app-gateway
 metadata:
   title: Encrypt network traffic end to end with Azure Application Gateway
   description: Secure the traffic from your users all the way to your web servers by enabling TLS encryption on Application Gateway.
-  ms.date: 06/28/2019
+  ms.date: 07/25/2023
   author: vhorne
   ms.author: victorh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: application-gateway 
 title: Encrypt network traffic end to end with Azure Application Gateway
 summary: Secure the traffic from your users all the way to your web servers by enabling TLS encryption on Application Gateway.
 abstract: | 

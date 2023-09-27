@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.is-not-distinct-from
+title: Enhance expression comparisons with IS [NOT] DISTINCT FROM
+metadata:
+  title: Enhance expression comparisons with IS [NOT] DISTINCT FROM
+  description: "Compares the equality of two expressions and guarantees a true or false result, even if one or both operands are NULL."
+  ms.date: 5/5/2023
+  author: MScalopez
+  ms.author: calopez
+  ms.reviewer: vanto
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-is-not-distinct-from.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "What is the primary difference between the '=' operator and the 'IS NOT DISTINCT FROM' operator?"
+    choices: 
+    - content: "There's no difference; they both compare values for equality in the same exact way."
+      isCorrect: false
+      explanation: "While both '=' and 'IS NOT DISTINCT FROM' compare values for equality, they handle NULL values differently."
+    - content: "`IS NOT DISTINCT FROM` handles `NULL` values in comparisons, while the `=` operator doesn't."
+      isCorrect: true
+      explanation: "`IS NOT DISTINCT FROM` compares the equality of two expressions and guarantees a true or false result, even if one or both operands are NULL. The `=` operator returns `UNKNOWN` when one or both expressions are `NULL`."
+    - content: "The `=` operator can compare any data type, while `IS NOT DISTINCT FROM` can only compare string values."
+      isCorrect: false
+      explanation: "Both '=' and 'IS NOT DISTINCT FROM' operators can compare various data types."
+  - content: "How does the `IS NOT DISTINCT FROM` predicate treat NULL values in comparisons?"
+    choices:
+    - content: "As unknown values"
+      isCorrect: false
+      explanation: "The `IS [NOT] DISTINCT FROM` predicate treats NULL values as known values in comparisons, making it easier to work with NULL values."
+    - content: "As known values"
+      isCorrect: true
+      explanation: "The `IS [NOT] DISTINCT FROM` predicate treats NULL values as known values in comparisons, making it easier to work with NULL values."
+    - content: "As zero values"
+      isCorrect: false
+      explanation: "The `IS [NOT] DISTINCT FROM` predicate doesn't treat NULL values as zero values, but as known values in comparisons."
+      

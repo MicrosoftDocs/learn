@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: defender-for-iot
 title: Examine Microsoft Defender for IoT security agents
 summary: This module introduces you to Microsoft Defender for IoT security agents and how security agents can be used to extend your security monitoring capabilities to the device-side of your IoT solution.
 abstract: |

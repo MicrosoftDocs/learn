@@ -13,7 +13,7 @@ Azure Logic Apps automatically shares custom connectors, which other users can s
 
 If external users can call your API, consider publishing your custom connector to the Azure community. Publishing makes building workflows with Azure Logic Apps and accessing your data through the API much easier. Making your custom connector more widely available also helps promote your API and drive community adoption.
 
-The Print Framer API is a good example. Anyone who has a subscription and can write code that makes REST API calls can access your API. However, if you publish your custom connector, people who use Azure Logic Apps can call your API from their workflows without writing any code. Some people might not know about your API. So, if they find your connector through the Azure Logic Apps connector gallery, they might decide to try the API and even buy a subscription.
+The Print Framer API is a good example. Anyone who has a subscription and can write code that makes REST API calls can access your API. However, if you publish your custom connector, people who use Azure Logic Apps can call your API from their workflows without writing any code. Some people might not know about your API, so if they find your connector through the Azure Logic Apps connector gallery, they might decide to try the API and even buy a subscription.
 
 To publish your connector in the Azure Logic Apps connector gallery, you have to submit the connector to Microsoft for certification. If the connector meets the certification criteria, Microsoft will publish the connector for all Azure Logic Apps users to find and use.
 
@@ -31,10 +31,10 @@ Microsoft only certifies connectors that meet the following criteria:
 
 ### Checklist before submitting a connector
 
-Fully test your connector before submission for certification. Make sure you're confident that no bugs or other issues exist. The following list covers common problems to check and resolve:
+Fully test your connector before you submit it for certification. Make sure you're confident that no bugs or other issues exist. The following list covers common problems to check and resolve:
 
 - **Errors in the OpenAPI definition**: Eliminate any invalid JSON code in the API definition file. Make sure the API definition complies with the OpenAPI schema.
-- **Full information in the definition**: Make sure that every operation, input parameter, and response attribute in the OpenAPI specification that you submit has a summary, description, and visibility information.
+- **Full information in the definition**: Make sure that every operation, input parameter, and response attribute in the OpenAPI specification you submit has a summary, description, and visibility information.
 
 ### Submit a connector for certification
 
@@ -46,6 +46,6 @@ The certification process takes around two weeks, but this timeline depends on h
 
 1. **Publish**: Microsoft stages and publishes the connector with the "Preview" tag.
 
-1. **Support and updates**: After Microsoft publishes the connector, and people start using the connector, monitor the related product forums to learn whether customers are having any problems. If you need to submit a new version, use the same nomination form. After the connector has been available for some time, you can ask your nomination contact to remove the "Preview" tag.
+1. **Support and updates**: After Microsoft publishes the connector and people start using it, monitor the related product forums to learn whether customers are having any problems. If you need to submit a new version, use the same nomination form. After the connector has been available for some time, you can ask your nomination contact to remove the "Preview" tag.
 
 For more information, see [Submit your connector for Microsoft certification](/connectors/custom-connectors/submit-for-certification).

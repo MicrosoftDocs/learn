@@ -1,4 +1,5 @@
 
+
 After you install the Configuration Manager client on the Windows devices and are connected to your site, you can monitor and manage the device directly inside the Configuration Manager console.
 
 From within the Configuration Manager console, there are a number in-built features (status) that can alert you if a client is experiencing issues or could require further attention:

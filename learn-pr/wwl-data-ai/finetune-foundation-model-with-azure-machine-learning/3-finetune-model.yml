@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.finetune-foundation-model-with-azure-machine-learning.finetune-model
+title: |
+  Explore fine-tuning foundation models in Azure Machine Learning
+metadata:
+  title: |
+    Explore fine-tuning foundation models in Azure Machine Learning
+  description: "Explore fine-tuning foundation models from the model catalog in Azure Machine Learning"
+  ms.date: 7/18/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-finetune-model.md)]

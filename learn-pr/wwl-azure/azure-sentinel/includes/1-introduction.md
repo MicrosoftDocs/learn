@@ -3,7 +3,7 @@ In the world we live in today, there is always the chance that your system may b
 
 ## Scenario
 
-A security engineer uses Microsoft Sentinel to discover and track a breach, you will work on such tasks as:
+A security engineer uses Microsoft Sentinel to discover and track a breach; you will work on such tasks as:
 
  -  Configure Microsoft Sentinel.
  -  Build queries to find breaches.
@@ -26,7 +26,7 @@ Manage Security Operations (25-30%)
 In this module, you will:
 
  -  Explain what Microsoft Sentinel is and how it is used
- -  Deploy Azure Sentinel
+ -  Deploy Microsoft Sentinel
  -  Connect data to Microsoft Sentinel, like Azure Logs, Azure AD, and others
  -  Track incidents using workbooks, playbooks, and hunting techniques
 

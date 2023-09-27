@@ -3,11 +3,10 @@ uid: learn.wwl.azure-security-center
 metadata:
   title: Enable and manage Microsoft Defender for Cloud
   description: "Use Azure Security Center, Azure Defender, and Secure Score to track and improve your security posture in Azure."
-  ms.date: 04/19/2023
+  ms.date: 07/13/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Enable and manage Microsoft Defender for Cloud
 summary: Use Microsoft Defender for Cloud to strengthen security posture and protect workloads against modern threats in Azure.
 abstract: |
@@ -27,8 +26,6 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-defender
-- azure-security-center
 - defender-for-cloud
 subjects:
 - cloud-security

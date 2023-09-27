@@ -3,11 +3,11 @@ uid: learn.protect-infrastructure-with-azure-site-recovery
 metadata:
   title: Protect your Azure infrastructure with Azure Site Recovery
   description: Provide disaster recovery for your Azure infrastructure by customizing replication, failover, and failback of Azure virtual machines with Azure Site Recovery.
-  ms.date: 03/01/2023
+  ms.date: 06/07/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: site-recovery
 title: Protect your Azure infrastructure with Azure Site Recovery
 summary: Provide disaster recovery for your Azure infrastructure by customizing replication, failover, and failback of Azure virtual machines with Azure Site Recovery.
 abstract: | 

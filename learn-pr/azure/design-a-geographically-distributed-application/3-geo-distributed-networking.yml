@@ -4,8 +4,8 @@ metadata:
   title: Design a geographically distributed networking architecture
   description: In this unit, you learn how to configure networking components to reroute requests to a standby region when the primary region has failed.
   ms.date: 11/07/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design a geographically distributed networking architecture

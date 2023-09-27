@@ -110,7 +110,7 @@ Container container = database.GetContainer("products");
 
 ```csharp
 Container container = await database.CreateContainerAsync(
-    "cosmicworks", 
+    "products", 
     "/categoryId", 
     400
 );
@@ -120,7 +120,7 @@ Container container = await database.CreateContainerAsync(
 
 ```csharp
 Container container = await database.CreateContainerIfNotExistsAsync(
-    "cosmicworks", 
+    "products", 
     "/categoryId", 
     400
 );

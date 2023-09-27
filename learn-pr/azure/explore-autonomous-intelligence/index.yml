@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore Autonomous Intelligence
 summary: In this module, you'll learn about several AI technologies such as machine learning, deep learning and deep reinforcement learning that are components of Machine Teaching. In addition, you’ll learn Autonomous Intelligence strengths, when to best use these technologies and their limitations, and when Automated Intelligence methods can support them.
 abstract: | 
@@ -16,7 +15,7 @@ abstract: |
   - Describe Deep Reinforcement Learning for human-like decision making as a key component of Machine Teaching for Autonomous intelligent systems
   - Evaluate the advantages and limitations of Machine Learning and Deep Reinforcement Learning when used in Machine Teaching for Autonomous intelligent systems 
 
-  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar Artificial Intelligence: Cloud and Edge Implementations course***"
 prerequisites: Basic knowledge of Automated Intelligence
 iconUrl: /training/achievements/generic-badge.svg
 levels: 

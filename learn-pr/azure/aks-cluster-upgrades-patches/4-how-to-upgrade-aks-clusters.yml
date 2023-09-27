@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-cluster-upgrades-patches.how-to-upgrade-aks-clusters
-title: How to safely upgrade AKS clusters?
+title: How to safely upgrade AKS clusters
 metadata: 
-  title: How to safely upgrade AKS clusters?
+  title: How to safely upgrade AKS clusters
   description: Understand how to upgrade AKS clusters through a Blue/Green deployment method.
   ms.date: 07/15/2021
   ms.author: mixie 

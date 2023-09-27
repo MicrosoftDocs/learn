@@ -3,11 +3,11 @@ uid: learn.wwl.explore-azure-storage
 metadata:
   title: Explore Azure for SAP storage
   description: "Explore Azure for SAP storage"
-  ms.date: 04/20/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 title: Explore Azure for SAP storage
 summary: This module explores the use of Azure he storage component to design scalable, performant, and resilient SAP deployments in Azure.
 abstract: |

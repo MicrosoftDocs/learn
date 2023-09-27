@@ -8,7 +8,7 @@ metadata:
   ms.author: bspendolini
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-data-studio
 title: Design a Performant Data Model in Azure SQL Database with Azure Data Studio
 summary: "Learn how to create a data model with Azure data studio. Create indexes, tables and use data types to help develop your applications"
 abstract: |
@@ -21,7 +21,7 @@ prerequisites: |
   - Knowledge of what (product) is and how it works at the beginner level
   - Beginner database knowledge
   - Basic experience navigating the Visual Studio Code user interface
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/design-a-data-model-with-ads.svg
 levels:
   - beginner
 roles:

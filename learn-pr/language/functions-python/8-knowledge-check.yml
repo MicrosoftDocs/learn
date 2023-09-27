@@ -5,27 +5,30 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Python functions.
-  ms.date: 12/07/2021
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
 quiz:
+  title: Check your knowledge
   questions:
   - content: "Can a function that defines arguments be called without arguments?"
     choices:
     - content: "No, because defined arguments are required."
       isCorrect: true
-      explanation: "Correct! When a function declares arguments, these are required."
+      explanation: "Correct! When a function declares arguments, they are required."
     - content: "Yes, because they're optional."
       isCorrect: false
-      explanation: "Defined arguments in a function are not optional."
+      explanation: "Incorrect. Defined arguments in a function aren't optional."
     - content: "Yes, as long as there's a return value."
       isCorrect: false
-      explanation: "Although some functions define a return value, defined arguments are required regardless."
+      explanation: "Incorrect. Although some functions define a return value, defined arguments are required regardless."
   - content: "Can a function with only keyword arguments be called without any arguments?"
     choices:
     - content: "Yes, because keyword arguments are optional when calling a function."
@@ -33,18 +36,18 @@ quiz:
       explanation: "Correct! Keyword arguments already define defaults, which allows calling a function without them."
     - content: "No, because you must pass values so that the function can work."
       isCorrect: false
-      explanation: "If a function has only keyword arguments, there's no need to pass any values."
+      explanation: "Incorrect. If a function has only keyword arguments, there's no need to pass any values."
     - content: "No, because it needs arguments."
       isCorrect: false
-      explanation: "A function that only defines keyword arguments doesn't require arguments."
+      explanation: "Incorrect. A function that only defines keyword arguments doesn't require arguments."
   - content: "Can a function define arguments and keyword arguments?"
     choices:
     - content: "No, only arguments or keyword arguments are allowed."
       isCorrect: false
-      explanation: "Python allows both to work together."
+      explanation: "Incorrect. Python allows both to work together."
     - content: "Yes, but only if keyword arguments are defined before arguments."
       isCorrect: false
-      explanation: "Python requires arguments to be defined before keyword arguments."
+      explanation: "Incorrect. Python requires arguments to be defined before keyword arguments."
     - content: "Yes, but only if arguments are defined before keyword arguments."
       isCorrect: true
       explanation: "Correct! As long as arguments come in first, a function can be defined with both."
@@ -55,18 +58,18 @@ quiz:
       explanation: "Correct! Variable arguments don't have a required minimum number."
     - content: "At least one argument is needed because arguments in functions are required."
       isCorrect: false
-      explanation: "Although arguments require values, variable arguments don't need to be passed into a function."
+      explanation: "Incorrect. Although arguments require values, variable arguments don't need to be passed into a function."
     - content: "At least one argument is needed unless it's a keyword argument."
       isCorrect: false
-      explanation: "Although a keyword argument is optional, there's no need to pass any argument when you're using variable arguments."
+      explanation: "Incorrect. Although a keyword argument is optional, there's no need to pass any argument when you're using variable arguments."
   - content: "What is the syntax to declare variable arguments and variable keyword arguments?"
     choices:
     - content: "`args, kwargs`"
       isCorrect: false
-      explanation: "Although this syntax is commonly used as placeholder for variable arguments and keyword arguments, these arguments must use the asterisk."
+      explanation: "Incorrect. Although this syntax is commonly used as placeholder for variable arguments and keyword arguments, these arguments must use the asterisk."
     - content: "`*a, *kw`"
       isCorrect: false
-      explanation: "Although this syntax correctly defines variable arguments, the variable keyword arguments need two asterisks instead of one."
+      explanation: "Incorrect. Although this syntax correctly defines variable arguments, the variable keyword arguments need two asterisks instead of one."
     - content: "`*args, **kwargs`"
       isCorrect: true
       explanation: "Correct! Although the placeholder name can change, you must use a single asterisk for variable arguments and double asterisks for variable keyword arguments."

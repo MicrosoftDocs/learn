@@ -4,7 +4,7 @@ title: Transform data files with the CREATE EXTERNAL TABLE AS SELECT statement
 metadata:
   title: Transform data files with the CREATE EXTERNAL TABLE AS SELECT statement
   description: "Transform data files with the CREATE EXTERNAL TABLE AS SELECT statement"
-  ms.date: 03/02/2023
+  ms.date: 06/27/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

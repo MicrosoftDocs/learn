@@ -8,7 +8,7 @@ metadata:
   author: ecfan
   ms.author: estfan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 10
 interactive: bash

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-devops-pipelines
 title: Explore Azure Pipelines
 summary: This module introduces Azure Pipelines concepts and explains key terms and components of the tool, helping you decide your pipeline strategy and responsibilities.
 abstract: |

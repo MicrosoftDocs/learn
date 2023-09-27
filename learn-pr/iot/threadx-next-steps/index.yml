@@ -6,10 +6,9 @@ metadata:
   ms.date: 03/29/2022
   author: timlt
   ms.author: timlt
-  ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 title: Azure RTOS ThreadX next steps
 summary: Learn the next steps for Azure RTOS ThreadX.
 abstract:  | 

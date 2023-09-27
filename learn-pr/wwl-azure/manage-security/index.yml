@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-desktop
 title: Manage security for Azure Virtual Desktop
 summary: The Windows client for Azure Virtual Desktop integrates Azure Virtual Desktop on local machines. You’ll learn the critical actions for keeping your users safe.
 abstract: |

@@ -1,11 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-aspnet-core-identity.6-claims-policy-authorization
+uid: learn.secure-aspnet-core-identity.9-enable-claims-policy-authorization
 metadata:
   title: Exercise - Use claims with policy-based authorization
   description: Learn how to create and persist user claims in an ASP.NET Core web app.
-  ms.date: 03/16/2022
+  ms.date: 05/19/2023
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Exercise - Use claims with policy-based authorization

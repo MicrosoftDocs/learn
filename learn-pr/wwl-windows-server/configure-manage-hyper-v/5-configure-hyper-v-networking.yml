@@ -4,12 +4,12 @@ title: Configure Hyper-V networking
 metadata:
   title: Configure Hyper-V networking
   description: "Configure Hyper-V networking"
-  ms.date: 02/26/2021
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/5-configure-hyper-v-networking.md)]

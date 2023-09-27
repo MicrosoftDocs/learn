@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-manage-identities.create-custom-security-attributes
+title: Create custom security attributes
+metadata:
+  title: Create custom security attributes
+  description: "Create custom security attributes"
+  ms.date: 08/04/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-create-custom-security-attributes.md)]

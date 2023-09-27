@@ -2,13 +2,13 @@
 uid: learn.wwl.create-manage-azure-sentinel-workspaces.manage-workspaces-across-tenants-using-azure-lighthouse
 title: Manage workspaces across tenants using Azure Lighthouse
 metadata:
-  title: Manage workspaces across tenants using Azure Lighthouse
-  description: "Manage workspaces across tenants using Azure Lighthouse"
+  title: Manage multiple Microsoft Sentinel workspaces
+  description: "Manage multiple Microsoft Sentinel workspaces, or workspaces not in your tenant"
   ms.date: 11/11/2022
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

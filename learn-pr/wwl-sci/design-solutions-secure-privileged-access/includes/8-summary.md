@@ -8,6 +8,7 @@ You've learned how to:
 ## Learn more with security documentation
 
 - [Securing privileged access Enterprise access model | Microsoft Learn](https://learn.microsoft.com/security/compass/privileged-access-access-model)
+- [What is Privileged Identity Management? - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)
 - [Learn about privileged access management - Microsoft Purview (compliance) | Microsoft Learn](https://learn.microsoft.com/microsoft-365/compliance/privileged-access-management?view=o365-worldwide)
 - [What is Azure Lighthouse? - Azure Lighthouse | Microsoft Learn](https://learn.microsoft.com/azure/lighthouse/overview)
 - [Tenant management for Microsoft 365 for enterprise | Microsoft Learn](https://learn.microsoft.com/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide)

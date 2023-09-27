@@ -1,4 +1,4 @@
-[Tailwind Traders](https://www.tailwindtraders.com/?azure-portal=true) is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online.
+Tailwind Traders is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online.
 
 :::image type="content" source="../media/tailwind-traders-logo.png" alt-text="The Tailwind Traders logo." border="false":::
 

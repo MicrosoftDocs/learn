@@ -1,3 +1,4 @@
+
 Microsoft Entra Permissions Management (formerly known as CloudKnox) is a cloud infrastructure entitlement management (CIEM) solution. Permissions management provides comprehensive visibility into permissions assigned to all identities. Permissions Management detects, automatically right-sizes, and continuously monitors unused and excessive permissions.
 
 Organizations have to consider permissions management as a central piece of their Zero Trust security to implement least privilege access across their entire infrastructure:

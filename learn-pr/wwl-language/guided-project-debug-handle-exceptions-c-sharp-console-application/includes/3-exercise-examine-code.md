@@ -1,6 +1,3 @@
-
-
-
 In this exercise, you review and test the code in the Starter project, isolate and fix a logic issue, and then verify that your updated application is working as expected.
 
 You complete the following tasks during this exercise:
@@ -153,10 +150,10 @@ In this task, you complete a walkthrough of the Starter project code. The Progra
 
     The top-level statements code completes the following tasks:
 
-    - Configures the application data and environment variables used to test the `MackChange` method.
+    - Configures the application data and environment variables used to test the `MakeChange` method.
     - Calls the `LoadTillEachMorning()`, `LogTillStatus()`, and `TillAmountSummary()` methods to prepare the money till and print status messages to the console.
     - Uses a `while` loop to simulate a series of transactions.
-    - Calls the `MackChange` method from inside the code block of the `while` loop.
+    - Calls the `MakeChange` method from inside the code block of the `while` loop.
     - Reports the status of the money till after each transaction.
 
     > [!NOTE]

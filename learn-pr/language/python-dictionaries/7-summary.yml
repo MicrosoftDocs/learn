@@ -5,10 +5,12 @@ metadata:
   unitType: summary
   title: 'Summary: Managing data with Python dictionaries'
   description: This module explored how to use dictionaries in Python.
-  ms.date: 12/08/2021
+  ms.date: 06/05/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 durationInMinutes: 1

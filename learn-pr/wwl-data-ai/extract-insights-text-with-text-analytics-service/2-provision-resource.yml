@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.extract-insights-text-with-text-analytics-service.provision-resource
-title: Provision a Language resource
+title: Provision an Azure AI Language resource
 metadata:
-  title: Provision a Language resource
-  description: "Provision a Language resource"
+  title: Provision an Azure AI Language resource
+  description: "Provision an Azure AI Language resource"
   ms.date: 04/21/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

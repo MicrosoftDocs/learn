@@ -2,11 +2,11 @@ To start learning how to protect cloud apps, you first need to learn what Cloud 
 
 **CASB** \- Cloud Access Security Broker - An on-premises or cloud-based security policy enforcement point, placed between cloud service consumers and cloud service providers to combine and interject enterprise security policies as the cloud-based resources are accessed.
 
-**Microsoft Defender for Cloud Apps** - Microsoft implementation of a CASB service to protect data, services, and applications with enterprise policies. It provides supplemental reporting and analytics services
+**MDCA** \- Microsoft Defender for Cloud Apps (MDCA) - Microsoft implementation of a CASB service to protect data, services, and applications with enterprise policies. It provides supplemental reporting and analytics services
 
 ## Microsoft Defender for Cloud Apps
 
-Moving to the cloud increases flexibility for employees and IT alike. However, it also introduces new challenges and complexities for keeping your organization secure. To get the full benefit of cloud apps and services, an IT team must find the right balance of supporting access while maintaining control to protect critical data. Microsoft Defender for Cloud Apps is a Cloud Access Security Broker (CASB) that supports various deployment modes, including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services. Microsoft Defender for Cloud Apps natively integrates with leading Microsoft solutions and is designed with security professionals in mind. It provides simple deployment, centralized management, and innovative automation capabilities. Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. Cloud Discovery, a feature of Microsoft Defender for Cloud Apps, enables you to gain visibility into Shadow IT by discovering cloud apps in use.
+Moving to the cloud increases flexibility for employees and IT alike. However, it also introduces new challenges and complexities for keeping your organization secure. To get the full benefit of cloud apps and services, an IT team must find the right balance of supporting access while maintaining control to protect critical data. Microsoft Defender for Cloud Apps (MDCA) is a Cloud Access Security Broker (CASB) that supports various deployment modes, including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services. Microsoft Defender for Cloud Apps natively integrates with leading Microsoft solutions and is designed with security professionals in mind. It provides simple deployment, centralized management, and innovative automation capabilities. Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. Cloud Discovery, a feature of Microsoft Defender for Cloud Apps, enables you to gain visibility into Shadow IT by discovering cloud apps in use.
 
 ### Architecture
 
@@ -79,20 +79,20 @@ Migrating all your application authentication to Azure AD is optimal, as it give
 
 There are two types of applications to migrate:
 
-1. SaaS applications, which are procured by the organization.
-1. Line-of-business applications, which are developed by the organization and not meant to be used by other companies. Your applications may use modern or legacy protocols for authentication. Most SaaS applications use modern authentication protocols and provide guidance on how to enable SSO. Consider first migrating applications that use modern authentication protocols (such as SAML and Open ID Connect). These apps can be reconfigured to authenticate with Azure AD via either a built-in connector in our App Gallery, or by registering the application in Azure AD. Integrate apps using older protocols by using [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy) and/or Azure AD Domain Services.
+1.  SaaS applications, which are procured by the organization.
+2.  Line-of-business applications, which are developed by the organization and not meant to be used by other companies. Your applications may use modern or legacy protocols for authentication. Most SaaS applications use modern authentication protocols and provide guidance on how to enable SSO. Consider first migrating applications that use modern authentication protocols (such as SAML and Open ID Connect). These apps can be reconfigured to authenticate with Azure AD via either a built-in connector in our App Gallery, or by registering the application in Azure AD. Integrate apps using older protocols by using [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy) and/or Azure AD Domain Services.
 
 ## Discover AD FS applications that can be migrated
 
 The AD FS application activity report is available in the Azure portal under Azure AD **Usage and insights** reporting. The AD FS application activity report analyzes each AD FS application to determine whether it can be migrated as-is or after review.
 
-1. Sign in to the Azure portal with an admin role that has access to AD FS application activity data (global administrator, report reader, security reader, application administrator, or cloud application administrator).
-1. Select **Azure Active Directory**, and then select **Enterprise applications**.
-1. Under **Activity**, select **Usage and insights**, and then select **AD FS application activity** to open a list of all AD FS applications in your organization.
+1.  Sign in to the Azure portal with an admin role that has access to AD FS application activity data (global administrator, report reader, security reader, application administrator, or cloud application administrator).
+2.  Select **Azure Active Directory**, and then select **Enterprise applications**.
+3.  Under **Activity**, select **Usage and insights**, and then select **AD FS application activity** to open a list of all AD FS applications in your organization.
     
     :::image type="content" source="../media/active-directory-federation-services-application-activity-d02afe1d.png" alt-text="Screenshot of A D F S application activity. Track what application you have.":::
     
-1. For each application in the AD FS application activity list, view the **Migration status**:
+4.  For each application in the AD FS application activity list, view the **Migration status**:
     
     
      -  **Ready to migrate** means the AD FS application configuration is fully supported in Azure AD and can be migrated as-is.

@@ -4,11 +4,11 @@ title: Implement and manage policies for OAuth apps
 metadata:
   title: Implement and manage policies for OAuth apps
   description: "Implement and manage policies for OAuth apps"
-  ms.date: 02/07/2023
+  ms.date: 05/15/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

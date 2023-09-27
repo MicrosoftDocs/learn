@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore group enrollment tasks
 summary: Experience implementing group enrollments using X.509 certificates, using code that accesses device twin properties to initialize a device, and deprovisioning enrollments groups or individual devices from an enrollment group.
 abstract: |
@@ -28,7 +27,6 @@ roles:
 - developer
 products:
 - azure
-- azure-iot-dps
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal

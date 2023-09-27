@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.finetune-foundation-model-with-azure-machine-learning.understand-finetune
+title: |
+  Understand when to fine-tune a foundation model 
+metadata:
+  title: |
+    Understand when to fine-tune a foundation model
+  description: "Learn when to fine-tune a foundation model from the model catalog."
+  ms.date: 7/18/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-finetune.md)]

@@ -4,11 +4,10 @@ title: Restrict access to Power BI model objects
 metadata:
   title: Restrict access to Power BI model objects
   description: "Restrict access to Power BI model objects"
-  ms.date: 01/25/2023
+  ms.date: 08/04/2023
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

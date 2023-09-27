@@ -8,7 +8,9 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
 title: Exercise - Develop a recommendation of Moon rock samples to be collected
 durationInMinutes: 4
 content: |

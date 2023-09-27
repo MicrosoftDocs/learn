@@ -1,7 +1,3 @@
-
-
-
-
 In this step of the development process, you update the code provided in the starter project folder, adding features for "suggested donation" to the application. The starter project.cs file should be open in Visual Studio Code. Return to the previous prepare unit if you need instructions for getting started.
 
 ## Create the "Suggested Donation" features
@@ -107,7 +103,7 @@ You need to create a new variable to hold suggested donations and expand the `ou
     ourAnimals[i, 6] = "Suggested Donation: "  + suggestedDonation;
     ```
 
-    But, in the next section you'll use another approach.
+    But, you won't add that code. In the next section you'll use another approach.
 
 ### Data validation with `TryParse()`
 
@@ -119,20 +115,22 @@ The variable `suggestedDonation` is intended to be a numeric value, but is colle
 
     ```csharp
     if (!decimal.TryParse(suggestedDonation, out decimalDonation)){
-    decimalDonation = 45.00m;
+        decimalDonation = 45.00m; // if suggestedDonation NOT a number, default to 45.00
+    }
     ```
 
     If the `suggestedDonation` variable can't be cast as a `decimal` the code assigns a default value `decimalDonation = 45.00m;`. If the cast is successful, the `TryParse` populates `decimalDonation`. Either way, `decimalDonation` represents a proper decimal.
 
 1. Ensure that your validation code is in the right place!
 
-    The two lines you added should appear in the code as the top two lines of the code:
+    The two lines you added should appear in the code as the top two lines of the following code :
 
     ```csharp
-    if (!decimal.TryParse(suggestedDonation, out decimalDonation)){
-    decimalDonation = 45.00m;
-    } 
-    
+        if (!decimal.TryParse(suggestedDonation, out decimalDonation)){
+            decimalDonation = 45.00m; // if suggestedDonation NOT a number, default to 45.00
+        }
+    }
+
     // #5 display the top-level menu options
     ```
 
@@ -162,7 +160,7 @@ The variable `suggestedDonation` is intended to be a numeric value, but is colle
     if (!decimal.TryParse(suggestedDonation, out decimalDonation)){
         decimalDonation = 45.00m; // if suggestedDonation NOT a number, default to 45.00
         }
-        ourAnimals[i, 6] = $"Suggested Donation: {decimalDonation:C2}";
+    ourAnimals[i, 6] = $"Suggested Donation: {decimalDonation:C2}";
     }
     
     // #5 display the top-level menu options

@@ -5,8 +5,8 @@ metadata:
   title: Explore Azure VPN Gateway
   description: Explore Azure VPN Gateway
   ms.date: 09/24/2018
-  author: KumudD
-  ms.author: kumud
+  author: cherylmc
+  ms.author: cherylmc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

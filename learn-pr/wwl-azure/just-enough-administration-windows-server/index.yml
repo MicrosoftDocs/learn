@@ -3,11 +3,11 @@ uid: learn.wwl.just-enough-administration-windows-server
 metadata:
   title: Just Enough Administration in Windows Server
   description: "Streamline the administration of your Windows Server environments with Just Enough Administration (JEA). Limit privileged operations to a set of specified PowerShell cmdlets, parameters and variables, and limit which users can connect to JEA endpoints. Constrain the level of privilege those users have when performing administrative tasks."
-  ms.date: 01/14/2022
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: windows-server
 title: Just Enough Administration in Windows Server
 summary: Streamline administration of Windows Server environments with Just Enough Administration (JEA). Limit privileged operations to a set of specified PowerShell cmdlets, parameters and variables, and limit which users can connect to JEA endpoints.
 abstract: |

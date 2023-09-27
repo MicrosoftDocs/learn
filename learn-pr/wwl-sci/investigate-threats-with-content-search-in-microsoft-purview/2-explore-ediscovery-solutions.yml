@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.explore-ediscovery-solutions
+title: Explore Microsoft Purview eDiscovery solutions
+metadata:
+  title: Explore Microsoft Purview eDiscovery solutions
+  description: "Explore Microsoft Purview eDiscovery solutions."
+  ms.date: 05/25/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-ediscovery-solutions.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your organization wants to let its legal teams manage custodians and the legal hold notification workflow. Which of the three eDiscovery solutions provided by Microsoft Purview must Fabrikam implement to provide this functionality?"
+    choices:
+    - content: "Content search"
+      isCorrect: false
+      explanation: "Incorrect. These features aren't provided in Content search."
+    - content: "eDiscovery (Standard)"
+      isCorrect: false
+      explanation: "Incorrect. These features aren't provided in eDiscovery (Standard)."
+    - content: "eDiscovery (Premium)"
+      isCorrect: true
+      explanation: "Correct. The eDiscovery (Premium) tool builds on the existing case management, preservation, search, and export capabilities in eDiscovery (Standard). eDiscovery (Premium) lets legal teams manage custodians and the legal hold notification workflow to communicate with custodians involved in a case."

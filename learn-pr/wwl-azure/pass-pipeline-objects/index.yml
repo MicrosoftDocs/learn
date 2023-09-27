@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Pass pipeline objects
 summary: This module explains how the Windows PowerShell command-line interface passes objects from one command to another in the pipeline.
 abstract: |

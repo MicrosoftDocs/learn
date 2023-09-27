@@ -1,4 +1,5 @@
 
+
 Device migration is like deploying a new device. The deployment to the target device, whether it be the same or a different device, is typically the same process as a new device. You can use a traditional process, such as reimaging the device, or if the target device has Windows 11, you can use modern methods, such as Autopilot.
 
 The key difference is consideration for the end user's data and configuration. The process must include a way to safely and securely ensure that user data and settings aren't lost during the process.

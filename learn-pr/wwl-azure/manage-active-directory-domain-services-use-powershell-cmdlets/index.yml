@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
+  ms.subservice: domain-services
 title: Manage Active Directory Domain Services using PowerShell cmdlets
 summary: This module covers the cmdlets that are used to administer Active Directory Domain Services.
 abstract: |

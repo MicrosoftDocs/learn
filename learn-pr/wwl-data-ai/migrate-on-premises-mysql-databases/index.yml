@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: mysql
+  ms.subservice: migration-guide
 title: Migrate on-premises MySQL databases to Azure Database for MySQL
 summary: In this module, you'll learn about the benefits of migrating MySQL workloads to Azure, you'll see how to create an Azure Database for MySQL instance, and learn how to migrate on-premises MySQL databases to Azure.
 abstract: |

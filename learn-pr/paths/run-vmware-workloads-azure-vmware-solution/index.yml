@@ -37,5 +37,6 @@ modules:
 - learn.migrate-vmware-workloads-on-premises-azure-vmware-solution
 - learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution
 - learn.azure.azure-vmware-solution
+- learn.azure-netapp-files-with-vmware-solution
 trophy:
   uid: learn.run-vmware-workloads-azure-vmware-solution.trophy

@@ -5,8 +5,8 @@ metadata:
   description: This learning path teaches how to create and customize Windows and Linux virtual machines, connect them to virtual networks, and keep them updated.
   brand: azure
   ms.date: 10/24/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Administer infrastructure resources in Azure
@@ -30,7 +30,8 @@ subjects:
 - cloud-computing
 modules:
 - learn.introduction-to-azure-virtual-machines
-- learn.create-linux-vm-in-azure
+- learn.plan-your-linux-environment-in-azure
+- learn.provision-linux-virtual-machine-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.manage-vms-with-azure-cli
 - learn.keep-your-virtual-machines-updated

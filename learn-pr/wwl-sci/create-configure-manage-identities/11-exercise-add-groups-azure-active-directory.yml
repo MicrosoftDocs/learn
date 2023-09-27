@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-manage-identities.exercise-adding-groups-azure-active-directory
+title: Exercise - add groups in Azure Active Directory
+metadata:
+  title: Exercise - add groups in Azure Active Directory
+  description: "Exercise - add groups in Azure Active Directory"
+  ms.date: 08/04/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/11-exercise-add-groups-azure-active-directory.md)]

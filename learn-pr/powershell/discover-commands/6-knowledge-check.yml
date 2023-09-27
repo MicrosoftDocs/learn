@@ -40,4 +40,3 @@ quiz:
         - content: "`'command' Get-Member`"
           isCorrect: false
           explanation: Incorrect. The command needs to be piped with the `Get-Member` cmdlet.
-

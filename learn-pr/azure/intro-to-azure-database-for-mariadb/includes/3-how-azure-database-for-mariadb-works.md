@@ -1,15 +1,15 @@
-Here, you'll explore how Azure Database for MariaDB works. If you're using MariaDB and considering using Azure to host your MariaDB apps, you must choose between hosting with:
+Here, you explore how Azure Database for MariaDB works. If you're using MariaDB and considering using Azure to host your MariaDB apps, you must choose between hosting with:
 
 - PaaS, by using Azure Database for MariaDB.
 - IaaS, by using MariaDB on Azure VMs.
 
-In this unit, you'll learn more about the differences between these options, the functions and features each provides, and specific requirements of each.
+In this unit, you learn more about the differences between these options, the functions and features each provides, and the specific requirements of each.
 
 ## How are the hosting options different?
 
 There are two possible hosting options:
 
-- Azure Database for MariaDB. Fully managed DBaaS that requires minimal user configuration or control.
+- Azure Database for MariaDB. A fully managed DBaaS that requires minimal user configuration or control.
 - MariaDB on Azure VMs.  A database implementation that uses IaaS. You manage the database.
 
 The following table identifies important differences between Azure Database for MariaDB and MariaDB on Azure VMs.
@@ -53,7 +53,7 @@ Azure Database for MariaDB provides a guaranteed high-availability level as defi
 | Scenario                | Recovery                                                     |
 | ----------------------- | ------------------------------------------------------------ |
 | Database server failure | Automatic. A new database server automatically deploys and the remote data storage is attached to it. After the database recovery is complete, clients can connect to the new database server. |
-| Storage failure         |  Automatic. All data is stored in three copies. Consequently, applications don't notice any impact from disk failure or block corruption.                 |
+| Storage failure         |  Automatic. All data is stored in three copies. So, applications don't notice any impact from disk failure or block corruption.                 |
 |  Region failure      |   Manual. This type of failure is a rare occurrence in Azure. To help protect against a region failure, configure one or more MariaDB read replicas in other regions for disaster recovery.   |
 | Logical or user errors         |  Manual. Use a point-in-time recovery to roll back to a pre-error point in time.           |
 
@@ -75,7 +75,7 @@ Using these backups enables server restoration to a specific point in time.
 
 Backup frequency varies, depending on database size:
 
-- Up to 4 TB storage:
+- Up to 4-TB storage:
 
   - Full backups weekly.
   - Differential backups twice daily.
@@ -84,7 +84,7 @@ Backup frequency varies, depending on database size:
 > [!NOTE]
 > Servers that have up to 4 TB of storage can retain two full database backups, all differential backups, and transaction log backups performed since the earliest full database backup.
 
-- Up to 16 TB storage. These backups are snapshot-based and occur as follows:
+- Up to 16-TB storage. These backups are snapshot-based and occur as follows:
 
   - First snapshot after server deployment.
   - Differential snapshots at least once a day thereafter.
@@ -108,10 +108,10 @@ Each tier provides different performance capabilities that support lightweight t
 Azure Database for MariaDB provides the following app protections:
 
 - In-transit data protection. MariaDB encrypts your data with Transport Layer Security (TLS). It provides encryption with Secure Sockets Layer and TLS (SSL/TLS) by default.
-- At-rest data protection. MariaDB encrypts at-rest data using a cryptographic module. This module is validated by the Federal Information Processing Standard 140-2 (FIPS 140-2).
+- At-rest data protection. MariaDB encrypts at-rest data using a cryptographic module. The Federal Information Processing Standard 140-2 (FIPS 140-2) validates this module.
 - Network security:
   - Connections to MariaDB are routed through a regional gateway. The gateway must have a publicly accessible IP. However, your MariaDB server IP is protected.
   - Firewall rules are created that block all access to any newly deployed MariaDB server.
-  - You can optionally implement Advanced Threat Protection to help provide additional protection for your MariaDB server.
+  - You can optionally implement Advanced Threat Protection to help provide more protection for your MariaDB server.
 
-Next, let's consider whether Azure Database for MariaDB is suitable for  your organization, its apps, and database workloads.
+Next, we consider whether Azure Database for MariaDB is suitable for your organization, its apps, and database workloads.

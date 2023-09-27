@@ -3,9 +3,9 @@ uid: learn.control-network-traffic-flow-with-routes.4-network-virtual-appliances
 metadata:
   title: What is an NVA?
   description: Explain the purpose and role of an NVA
-  ms.date: 03/02/2022
-  author: KumudD
-  ms.author: kumud
+  ms.date: 08/07/2023
+  author: mbender-ms
+  ms.author: mbender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is an NVA?

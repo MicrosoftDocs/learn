@@ -7,7 +7,7 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-devops
 title: "Automate DevOps processes by using GitHub Apps"
 summary: Optimize the value of GitHub Apps and features to manage users in your workflow to help speed up your processes while maintaining efficiency, security, and reliability.
 abstract: |

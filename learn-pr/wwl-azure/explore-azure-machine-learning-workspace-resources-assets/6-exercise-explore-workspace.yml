@@ -4,11 +4,11 @@ title: Exercise - Explore the workspace
 metadata:
   title: Exercise - Explore the workspace
   description: "Exercise - Explore the workspace"
-  ms.date: 01/05/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-explore-workspace.md)]

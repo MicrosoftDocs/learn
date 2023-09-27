@@ -5,15 +5,13 @@ metadata:
   unitType: learning-content
   title: Plan HCX deployment
   description: Plan HCX deployment.
-  ms.date: 6/17/2021
-  author: sbkuehn
-  ms.author: shkuehn
+  ms.date: 08/08/2023
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.contributors:
-  - shkuehn-07022021
-  ms.custom:
-  - team=cloud_advocates
+  ms.contributors: shkuehn-07022021, orthomas-08092023
+  ms.custom: team=cloud_advocates
 durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-hcx-deployment.md)]

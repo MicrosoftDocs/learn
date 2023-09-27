@@ -8,7 +8,10 @@ metadata:
   ms.date: 07/20/2021
   author: luisquintanilla
   ms.author: luquinta
+  ms.manager: markl
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-dotnet
 durationInMinutes: 5
 content: |

@@ -8,8 +8,8 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-central
   ms.custom: team=nextgen
+  ms.service: iot
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/9-how-set-virtual-thermostat-iot-device-twins.md)]

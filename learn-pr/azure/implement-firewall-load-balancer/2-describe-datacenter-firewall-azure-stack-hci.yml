@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.implement-firewall-load-balancer.2-describe-datacenter-firewall-azure-stack-hci
-title: Describe Datacenter Firewall on Azure Stack HCI
+title: Datacenter Firewall on Azure Stack HCI
 metadata:
   unitType: learning-content
-  title: Describe Datacenter Firewall on Azure Stack HCI
-  description: This unit provides an overview of Datacenter Firewall on Azure Stack HCI.
+  title: Datacenter Firewall on Azure Stack HCI
+  description: Read about the functionality and benefits of Datacenter Firewall on Azure Stack HCI.
   ms.date: 5/6/2021
-  author: LBN-commits
-  ms.author: v-lanai
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 9

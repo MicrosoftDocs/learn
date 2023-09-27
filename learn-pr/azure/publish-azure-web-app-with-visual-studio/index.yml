@@ -8,10 +8,10 @@ metadata:
   ms.author: mikejo
   manager: jmartens
   ms.topic: module-standard-task-based
-  ms.prod: learning-azure
+  ms.prod: visual-studio
 title: Publish a web app to Azure with Visual Studio
 summary: Use the publishing features of Visual Studio 2022 to deploy and manage an ASP.NET Core web application hosted on Azure.
-abstract: | 
+abstract: |
   In this module, you will:
   - Create an ASP.NET Core web app in Visual Studio
   - Publish a web app to Azure using Visual Studio
@@ -31,9 +31,7 @@ roles:
 - student
 products:
 - azure
-- dotnet
 - aspnet-core
-- dotnet-core
 - vs-ide
 subjects:
 - development-tools

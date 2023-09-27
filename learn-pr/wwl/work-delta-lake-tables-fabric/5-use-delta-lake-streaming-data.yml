@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-delta-lake-tables-fabric.use-delta-lake-streaming-data
+title: Use delta tables with streaming data
+metadata:
+  title: Use delta tables with streaming data
+  description: "Use delta tables with streaming data"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-use-delta-lake-streaming-data.md)]

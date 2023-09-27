@@ -7,7 +7,7 @@ metadata:
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: service-bus
 title: Enable asynchronous messaging in Java apps by using JMS and Azure Service Bus
 summary: Send messages to and receive messages from Azure Service Bus with Spring Boot applications.
 abstract: |

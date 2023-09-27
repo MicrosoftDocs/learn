@@ -5,8 +5,9 @@ metadata:
   title: How to use a model
   description: Conceptual unit about how to use a machine learning models
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.service: machine-learning
+  author: msakande
+  ms.author: mopeakande
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

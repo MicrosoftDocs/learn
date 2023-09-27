@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.provision-linux-virtual-machine-in-azure.provision-linux-virtual-machine-using-bicep
+title: Provision a Linux virtual machine by using Bicep
+metadata:
+  title: Provision a Linux virtual machine by using Bicep
+  description: Learn how to provision by using Bicep.
+  ms.date: 05/01/2023
+  author: chasecrum
+  ms.author: chasecrum
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-bicep
+  ms.prod: learning-azure
+durationInMinutes: 17
+content: |
+  [!include[](includes/5-provision-linux-virtual-machine-using-bicep.md)]
