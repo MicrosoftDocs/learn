@@ -2287,3 +2287,18 @@ achievements:
   title: Recommend security best practices using Microsoft Cybersecurity Reference Architectures (MCRA) and Microsoft Cloud Security Benchmarks
   summary: You'll learn how to use guidance in Microsoft Cybersecurity Reference Architectures and Microsoft Cloud Security Benchmarks to help an organization apply Zero Trust principles and secure their infrastructure.
   iconUrl: /training/achievements/use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks.svg
+- uid: learn.wwl.describe-resource-governance-capabilities-azure.badge
+  type: badge
+  title: Describe resource governance capabilities in Azure
+  summary: Azure governance capabilities provide mechanisms and processes for organizations to maintain control over their applications and resources. Learn how Azure policy, Blueprints, and Microsoft Purview help organizations govern their resources and applications.
+  iconUrl: /training/achievements/describe-resource-governance-capabilities-in-azure.svg
+- uid: learn.create-azure-account.badge
+  type: badge
+  title: Create an Azure account
+  summary: The first step to using Azure is to sign up. You may sign up directly through Azure.com, with the help of a Microsoft representative, or through a partner. If you’re new to Azure, you may sign up for an Azure free account to start exploring with $200 USD free credit and free services.
+  iconUrl: /training/achievements/create-azure-account.svg
+- uid: learn.wwl.apl-5001-configure-siem--security-operations-using-microsoft-sentinel.trophy
+  type: trophy
+  title: Configure SIEM security operations using Microsoft Sentinel
+  summary: Get started with Microsoft Sentinel security operations by configuring the Microsoft Sentinel workspace, connecting Microsoft services and Windows security events to Microsoft Sentinel, configuring Microsoft Sentinel analytics rules, and responding to threats with automated responses.
+  iconUrl: /training/achievements/configure-your-azure-sentinel-environment.svg

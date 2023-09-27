@@ -27872,6 +27872,91 @@
       "source_path": "learn-pr/wwl-azure/train-models-training-mlflow-jobs/1b-video.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/train-models-training-mlflow-jobs",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/2-describe-azure-policy.md",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/4-describe-microsoft-purview.md",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/3-describe-use-azure-blueprints.md",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/7-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/1-introduction.yml",
+      "redirect_url": "https://azure.microsoft.com/free/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/2-azure-accounts-and-subscriptions.yml",
+      "redirect_url": "https://azure.microsoft.com/free/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/3-exercise-create-an-azure-account.yml",
+      "redirect_url": "https://azure.microsoft.com/free/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/4-multiple-subscriptions.yml",
+      "redirect_url": "https://azure.microsoft.com/free/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/5-support-options.yml",
+      "redirect_url": "https://azure.microsoft.com/free/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/6-knowledge-check.yml",
+      "redirect_url": "https://azure.microsoft.com/free/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/7-summary.yml",
+      "redirect_url": "https://azure.microsoft.com/free/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/index.yml",
+      "redirect_url": "https://azure.microsoft.com/free/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/configure-siem-security-operations-using-microsoft-sentinel/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/configure-security-information-event-management-operations-using-microsoft-sentinel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/connect-azure-server-private-endpoint-using-azure-portal/4-connect-azure-sql-server-use-azure-private-endpoint-use-azure-portal.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/connect-azure-server-private-endpoint-using-azure-portal/4-connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-the-azure-portal",
+      "redirect_document_id": false
     }
   ]
 }
