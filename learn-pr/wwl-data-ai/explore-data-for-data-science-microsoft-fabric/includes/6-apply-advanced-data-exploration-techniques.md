@@ -13,7 +13,7 @@ Correlation is a statistical method used to evaluate the strength and direction 
 Let's use the penguins dataset to explain how the correlation works.
 
 > [!Note]
-> The penguins dataset used is a subset of data collected and made available by [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php) and the [Palmer Station, Antarctica LTER](https://pal.lternet.edu/), a member of the [Long Term Ecological Research Network](https://lternet.edu/).
+> The penguins dataset used is a subset of data collected and made available by [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php?azure-portal=true) and the [Palmer Station, Antarctica LTER](https://pal.lternet.edu/?azure-portal=true), a member of the [Long Term Ecological Research Network](https://lternet.edu/?azure-portal=true).
 
 ```python
 import seaborn as sns
@@ -46,7 +46,9 @@ The identification and analysis of correlations are important for the following 
 
 ## Principal Component Analysis (PCA)
 
-[Principal Component Analysis (PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis) can be used for both exploration and preprocessing of data. When used for exploration, PCA helps you to visualize high-dimensional data in two or three dimensions, making it easier to identify patterns and relationships between variables.
+[Principal Component Analysis (PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis?azure-portal=true) can be used for both exploration and preprocessing of data. 
+
+In many real-world data scenarios, we deal with high-dimensional data that can be hard to work with. When used for exploration, PCA helps in reducing the number of variables while retaining most of the original information. This makes the data easier to work with and less resource-intensive for machine learning algorithms.
 
 To simplify the example, we're working with the penguins dataset that contains only five variables. However, you would follow a similar approach when working with a larger dataset.
 

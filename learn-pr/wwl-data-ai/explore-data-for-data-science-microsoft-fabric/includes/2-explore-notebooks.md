@@ -1,16 +1,16 @@
-[Notebooks](/fabric/data-engineering/how-to-use-notebook?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json) provide an interactive environment in which you can combine text and graphics in *Markdown* format with cells containing code that you run interactively in the notebook session. 
+[Notebooks](/fabric/data-engineering/how-to-use-notebook?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json?azure-portal=true) provide an interactive environment in which you can combine text and graphics in *Markdown* format with cells containing code that you run interactively in the notebook session. 
 
 As a data scientist, you may be most familiar with writing and executing code in notebooks. Microsoft Fabric offers a familiar notebook experience, powered by Apache Spark.
 
 In Microsoft Fabric, data scientists, business users, and analysts all work on the same platform, enhancing data sharing and collaboration at scale. 
 
-## Usage of notebooks in Data Science
+## Usage of notebooks in data science
 
 Notebooks are a common tool for data scientists as they allow to combine code, explanatory text, and multimedia resources in a single document. This creates a narrative that can drive exploration by facilitating the sharing of codes, and quick prototyping. 
 
 Notebooks also allow data scientists to rapidly experiment and share insights through quick environment creation.
 
-## Notebook in Microsoft Fabric
+## Notebooks in Microsoft Fabric
 
 You can get started with notebooks in Microsoft Fabric with zero setup effort. You can either create a new notebook or import an existing notebook. You can also select multiple notebooks and import them in a batch.
 
@@ -29,9 +29,9 @@ To create a new notebook, select the **Notebook** option in the **Home** in your
 
 :::image type="content" border="false" source="../media/2-notebook-options.png" alt-text="Screenshot of the options available in a Microsoft Fabric notebook.":::
 
-1. The menu bar in a Microsoft Fabric notebook offers various features. It allows you to save and export your notebook, manage cells, terminate the session, schedule the execution of your notebook, launch [Data Wrangler](/fabric/data-science/data-wrangler), adjust the layout, among others. To access all these features, simply switch between the **Home**, **Edit**, **Run**, **Data**, and **View** tabs.
+1. The menu bar in a Microsoft Fabric notebook offers various features. It allows you to save and export your notebook, manage cells, terminate the session, schedule the execution of your notebook, launch [Data Wrangler](/fabric/data-science/data-wrangler/?azure-portal=true), adjust the layout, among others. To access all these features, simply switch between the **Home**, **Edit**, **Run**, **Data**, and **View** tabs.
 
-1. On the **Lakehouses** tab, you can add a new or existing [lakehouse](/fabric/data-engineering/lakehouse-overview) from the lakehouse explorer. The **Resources** tab provides a Unix-like storage for small files like code, datasets, and images, accessible directly from the notebook.
+1. On the **Lakehouses** tab, you can add a new or existing [lakehouse](/fabric/data-engineering/lakehouse-overview/?azure-portal=true) from the lakehouse explorer. The **Resources** tab provides a Unix-like storage for small files like code, datasets, and images, accessible directly from the notebook.
 
 1. Run the current cell. Alternatively, you can press **Ctrl+Enter**, or press **Alt+Enter** to run the current cell and insert a new cell.
 
@@ -39,7 +39,7 @@ To create a new notebook, select the **Notebook** option in the **Home** in your
 
 1. It provides various options for managing a specific cell, such as repositioning the cell within the notebook, converting it to a markdown or code cell, clearing the output, adding comments, and more.
 
-### Drag and drop files
+### Work with data in notebooks
 
 Drag and drop allows you to easily import data from the Lakehouse explorer. It supports various file types like text files, tables, images, etc. You can drop the data into an existing or new cell, and the notebook generates a code snippet to preview the data. 
 
@@ -47,11 +47,11 @@ Drag and drop allows you to easily import data from the Lakehouse explorer. It s
 
 Also, you can easily insert images into a markdown cell by dragging and dropping them from your browser or local computer.
 
-### IDE-style IntelliSense
+### Write code in notebooks
 
-The IDE-style IntelliSense enhances code writing and error identification with features like syntax highlighting, error marking, and automatic code completions. As you type, it predicts what you’re trying to write and offers suggestions. This not only speeds up coding but also helps avoid typos and learn API calls.
+The IntelliSense enhances code writing and error identification with features like syntax highlighting, error marking, and automatic code completions. As you type, it predicts what you’re trying to write and offers suggestions. This not only speeds up coding but also helps avoid typos and learn API calls.
 
-### Variable explorer
+### Keep track of your variables in notebooks
 
 It’s not uncommon when working in a notebook to have hundreds of variables, each playing a crucial role in your data analysis or model development. Keeping track of all these variables can be a challenging task. This is where the built-in variables explorer in Microsoft Fabric notebook comes into play.
 
@@ -63,7 +63,7 @@ For each variable, the explorer shows its name, type, length, and value. This gi
 
 ## Manage libraries and dependencies
 
-In Microsoft Fabric, you can [manage libraries and dependencies](/fabric/data-science/python-guide/python-library-management) in two ways: through workspace settings or in-line within a notebook.
+In Microsoft Fabric, you can [manage libraries and dependencies](/fabric/data-science/python-guide/python-library-management/?azure-portal=true) in two ways: through workspace settings or in-line within a notebook.
 
 ### Workspace settings
 
@@ -94,7 +94,8 @@ import seaborn as sns
 from sklearn import datasets
 ```
 
-It's a good practice to put all the commands for adding, deleting, or updating Python packages at the beginning of your notebook.
+> [!Tip]
+> It's a good practice to put all the commands for adding, deleting, or updating Python packages at the beginning of your notebook.
 
 ## Collaborate in notebooks
 
@@ -104,4 +105,4 @@ In our scenario, imagine you and your colleague are working on a project using M
 
 This real-time collaboration feature of Microsoft Fabric notebooks not only helps you solve your coding problem but also provides an excellent opportunity for learning from your more experienced colleague.
 
-To learn more about all the features available Microsoft Fabric notebooks, see [Develop, execute, and manage Microsoft Fabric notebooks](/fabric/data-engineering/author-execute-notebook?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json).
+To learn more about all the features available Microsoft Fabric notebooks, see [Develop, execute, and manage Microsoft Fabric notebooks](/fabric/data-engineering/author-execute-notebook?toc=%2Ffabric%2Fdata-science%2Ftoc.json&bc=%2Ffabric%2Fdata-science%2Fbreadcrumb%2Ftoc.json?azure-portal=true).

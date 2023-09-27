@@ -71,7 +71,7 @@ The approach to handling missing data can significantly impact the results of yo
 
 - **Remove:** If a particular row or column has many missing values, it might be best to remove it entirely.
 
-- **Impute:** Fill in the missing values with a specified value or estimate (like mean, median, mode, or using a machine learning algorithm like [K-Nearest Neighbors (KNN)](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)).
+- **Impute:** Fill in the missing values with a specified value or estimate (like mean, median, mode, or using a machine learning algorithm like [K-Nearest Neighbors (KNN)](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm?azure-portal=true)).
 
 - **Use it as a new feature:** Sometimes, the fact that a value is missing can be used as information itself. For example, in a product survey, unanswered questions about recommending the product could indicate customer dissatisfaction. In this case, the nonresponse can be a new feature indicating a likelihood of customer dissatisfaction.
 

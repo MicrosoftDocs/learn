@@ -4,7 +4,8 @@ With Microsoft Fabric notebooks and Apache Spark dataframes, your tabular result
 
 :::image type="content" border="false" source="../media/8-chart-notebooks.gif" alt-text="Screenshot of the tabular results being automatically presented as charts without the need for any additional coding.":::
 
-Open-source libraries such as [matplotlib](https://matplotlib.org/) and [plotly](https://plotly.com/) among others can also be used to enhance the data exploration experience.
+> [!Tip]
+> Open-source libraries such as [matplotlib](https://matplotlib.org/?azure-portal=true) and [plotly](https://plotly.com/?azure-portal=true) among others can also be used to enhance the data exploration experience.
 
 ## Categorical and numerical variables
 
@@ -89,7 +90,7 @@ Bivariate and multivariate analysis helps understand the relationships and inter
 
 ### Scatter plots
 
-The following code uses the `scatter()` function from [matplotlib](https://matplotlib.org/) to create the scatter plot. We specify `house_sizes` for the x-axis and `house_prices` for the y-axis.
+The following code uses the `scatter()` function from [matplotlib](https://matplotlib.org/?azure-portal=true) to create the scatter plot. We specify `house_sizes` for the x-axis and `house_prices` for the y-axis.
 
 ```python
 import matplotlib.pyplot as plt
@@ -123,7 +124,7 @@ Moreover, this analysis can help identify which dependent variables have a signi
 
 ### Line plot
 
-The following Python script uses the [`matplotlib`](https://matplotlib.org/) library to create a line plot of simulated house prices over a period of three years. It generates a list of monthly dates from 2020 to 2022 and a corresponding list of house prices, which start from $200,000 and increase each month with some randomness. 
+The following Python script uses the [`matplotlib`](https://matplotlib.org/?azure-portal=true) library to create a line plot of simulated house prices over a period of three years. It generates a list of monthly dates from 2020 to 2022 and a corresponding list of house prices, which start from $200,000 and increase each month with some randomness. 
 
 The x-axis of the plot is formatted to display dates in '*Year-Month*' format and set the interval of the ticks on the x-axis to every six months. 
 

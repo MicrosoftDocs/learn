@@ -1,6 +1,6 @@
 Understanding the distribution of your data is essential for effective data analysis, visualization, and model building.
 
-If a dataset has a skewed distribution, it can lead to a model inaccurately predicting data points from underrepresented groups or being optimized based on an inappropriate metric.
+If a dataset has a skewed distribution, it means that the data points are not evenly distributed and tend to lean more towards the right or left. This can lead to a model inaccurately predicting data points from underrepresented groups or being optimized based on an inappropriate metric.
 
 ## The importance of data distribution 
 
@@ -20,7 +20,7 @@ Let's explore some of the most common data distribution types such as normal, bi
 
 ## Normal distribution
 
-A [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution) is represented by two parameters: the mean and the standard deviation. The mean indicates where the bell curve is centered, and the standard deviation indicates the spread of the distribution. 
+A [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution/?azure-portal=true) is represented by two parameters: the mean and the standard deviation. The mean indicates where the bell curve is centered, and the standard deviation indicates the spread of the distribution. 
 
 Let's see an example of a normal distributed feature. We generated the data for the `var` feature for demonstration purposes.
 
@@ -50,7 +50,7 @@ plt.show()
 
  Observe that the `var` feature is normally distributed, where the mean and the median (50% percentile) are expected to be more or less equal. For skewed distributions, the mean tends to lean towards the heavier tail.
 
-However, these are heuristic checks and actual determination are done using specific statistical tests like [**Shapiro-Wilk**](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test) test or [**Kolmogorov-Smirnov**](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test) test for normality.
+However, these are heuristic checks and actual determination are done using specific statistical tests like [**Shapiro-Wilk**](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test?azure-portal=true) test or [**Kolmogorov-Smirnov**](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test?azure-portal=true) test for normality.
 
 ## Binomial distribution
 

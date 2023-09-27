@@ -1,6 +1,6 @@
 Loading and exploring data are the first steps in any data science project. They involve understanding the data’s structure, content, and source, which are crucial for subsequent analysis.
 
-After connecting to a data source, you can save the data into a Microsoft Fabric [**lakehouse**](/fabric/data-engineering/lakehouse-overview). You can use the lakehouse as a central location to store any structured, semi-structured, and unstructured files. You can then easily connect to the lakehouse whenever you want to access your data for exploration or transformation.
+After connecting to a data source, you can save the data into a Microsoft Fabric [**lakehouse**](/fabric/data-engineering/lakehouse-overview/?azure-portal=true). You can use the lakehouse as a central location to store any structured, semi-structured, and unstructured files. You can then easily connect to the lakehouse whenever you want to access your data for exploration or transformation.
 
 ## Load data using notebooks
 
@@ -10,7 +10,7 @@ Consider a scenario where a data engineer has already transformed customer data 
 
 Let's create a sample parquet file to illustrate the load operation. The following PySpark code creates a dataframe of customer data and writes it to a Parquet file in the lakehouse.
 
-[Apache Parquet](https://parquet.apache.org/) is an open-source, column-oriented data storage format. It’s designed for efficient data storage and retrieval, and is known for its high performance and compatibility with many data processing frameworks.
+[Apache Parquet](https://parquet.apache.org/?azure-portal=true) is an open-source, column-oriented data storage format. It’s designed for efficient data storage and retrieval, and is known for its high performance and compatibility with many data processing frameworks.
 
 ```python
 from pyspark.sql import Row
