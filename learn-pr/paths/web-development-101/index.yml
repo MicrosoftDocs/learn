@@ -28,5 +28,6 @@ modules:
 - learn.student-evangelism.web-development-101.functions
 - learn.student-evangelism.web-development-101-if-else
 - learn.student-evangelism.web-development-101-loops-arrays
+- learn.github-copilot-with-javascript
 trophy:
   uid: learn.student-evangelism.web-development-101.trophy

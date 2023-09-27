@@ -9,8 +9,7 @@ metadata:
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.service: virtual-desktop
-  ms.custom:
-  - N/A
+  ms.custom: N/A, devx-track-azurepowershell
 durationInMinutes: 8
 content: |
   [!include[](includes/2-automate-creation-host-pool-powershell.md)]
