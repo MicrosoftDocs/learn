@@ -21,12 +21,12 @@ Use Data Activator to:
 
 ## Understand Data Activator key concepts
 
-Data Activator operates based on four core concepts: events, objects, triggers and properties. Understanding these four principles enables you to utilize the capabilities of Data Activator more effectively.
+Data Activator operates based on four core concepts: *Events, Objects, Triggers* and *Properties*. Understanding these four principles enables you to utilize the capabilities of Data Activator more effectively.
 
 - **Events** - Data Activator considers all data sources as a sequence of events, each representing an observation about the status of a particular object. These events can occur frequently, as with IoT sensors, or less frequently, such as when monitoring package scanning in shipping locations.
 - **Objects** - Data Activator’s objects can be tangible items like vehicles or packages, or abstract concepts like advertising campaigns or user sessions. When creating a Reflex item, you model the object by connecting one or more event streams. You then select a column for the object ID, and specifying the fields to become properties of the object.
-- **Properties** - Data Activator’s properties are beneficial for reusing logic across various triggers. You could, for instance, set up a property on a smart lighting system to track the average brightness levels during the busiest hours of the day. This average could then be used in numerous triggers to correctly tweak the lighting and save energy.
 - **Triggers** - Data Activator’s triggers are designed to monitor your events and data, initiating specified actions once certain conditions within these events are fulfilled.
+- **Properties** - Data Activator’s properties are beneficial for reusing logic across various triggers. You could, for instance, set up a property on a smart lighting system to track the average brightness levels during the busiest hours of the day. This average could then be used in numerous triggers to correctly tweak the lighting and save energy.
 
 ## Interoperability with Other Fabric experiences
 

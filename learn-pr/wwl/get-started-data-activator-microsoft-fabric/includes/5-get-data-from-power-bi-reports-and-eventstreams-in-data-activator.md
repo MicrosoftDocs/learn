@@ -11,7 +11,7 @@ Using Data Activator, you can set up notifications that get triggered based on s
 
 Let's walk through the steps of setting up a notification based on a Power BI report.
 
-To trigger an action on a Power BI visual, you would first select to **Trigger Action** on your report. For example, the following screenshot shows an example of how to trigger an action from a visual that displays today’s sales for each store in a retail chain.
+To trigger an action on a Power BI visual, you would first select **Trigger Action** on your report. For example, the following screenshot shows an example of how to trigger an action from a visual that displays today’s sales for each store in a retail chain.
 
 > ![Screenshot showing the Trigger Action option from a visual that displays daily sales.](../media/data-activator-power-bi-trigger-action.png)
 
