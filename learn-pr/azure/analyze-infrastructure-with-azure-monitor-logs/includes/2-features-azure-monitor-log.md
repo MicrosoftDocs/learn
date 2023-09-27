@@ -47,7 +47,7 @@ To retrieve, consolidate, and analyze data, you can specify a query to run in Az
 
 You can test log queries in the Azure portal so you can work with them interactively. You'll typically start with basic queries, then progress to more advanced functions as your requirements become more complex.
 
-In the Azure portal, you can create custom dashboards, which are targeted displays of resources and data. You cna build each dashboard from a set of tiles. Each tile might show a set of resources, a chart, a data table, or some custom text. Azure Monitor provides tiles that you can add to dashboards; for example, you might use a tile to display the results of a Kusto query in a dashboard.
+In the Azure portal, you can create custom dashboards, which are targeted displays of resources and data. You can build each dashboard from a set of tiles. Each tile might show a set of resources, a chart, a data table, or some custom text. Azure Monitor provides tiles that you can add to dashboards; for example, you might use a tile to display the results of a Kusto query in a dashboard.
 
 In the example scenario, the operations team can consolidate its monitoring data by visualizing it in charts and tables. These tools are effective for summarizing data and presenting it to different audiences.
 
