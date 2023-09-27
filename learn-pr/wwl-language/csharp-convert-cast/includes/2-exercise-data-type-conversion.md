@@ -280,7 +280,7 @@ Most of the numeric data types have a `Parse()` method, which converts a string 
     Console.WriteLine(sum);
     ```
 
-1. Save your code file, and then use Visual Studio Code to run your code. When you run the code, the output should display a concatenation of the two values:
+1. Save your code file, and then use Visual Studio Code to run your code. When you run the code, the output should display a sum of the two values:
 
     ```Output
     12

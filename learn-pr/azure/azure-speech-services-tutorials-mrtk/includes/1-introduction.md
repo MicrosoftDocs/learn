@@ -4,6 +4,8 @@ Imagine a scenario where you're expected to build an application capable of tran
 
 Upon completion of this module, we'll be able to use your device's microphone to transcribe speech to text in real time. In addition, we will be able to translate our speech into other languages and use the Intent-recognition feature to understand voice commands using artificial intelligence.
 
+A completed example of this tutorial can be found [here](https://github.com/microsoft/MixedRealityLearning/tree/development/MRTK3%20Tutorials).
+
 ## Learning objectives
 
 * Learn how to integrate Azure Speech Services with a HoloLens 2 application
