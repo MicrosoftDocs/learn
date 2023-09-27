@@ -4,7 +4,7 @@ You've added context to an issue, contributed a code review, and maybe even subm
 
 You'll find frequent contributors to the project in the comment section for issues and pull requests. Or, you can select **Insights** in the repository's navigation, and then select **Contributors** to find other active community members. Visit their GitHub profiles. Sometimes they'll suggest ways to get in touch with them.
 
-You can also [follow organizations and enterprises on GitHub](https://docs.github.com/en/get-started/exploring-projects-on-github) to stay in touch. When you follow people and organizations on GitHub, you'll see their public activity on your personal dashboard.  
+You can also [follow organizations and enterprises on GitHub](https://docs.github.com/en/get-started/exploring-projects-on-github) to stay in touch. Public activity for every enterprise, user, or organization you follow is shown on your personal dashboard.  
 
 You can also find like-minded folks by attending meetups or conferences on open-source topics. Or, you can meet people if the project or ecosystem is large enough around the project you're interested in. Find archives with talk recordings for past events, podcasts, newsletters, and mailing lists.
 
