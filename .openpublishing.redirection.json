@@ -27957,6 +27957,16 @@
       "source_path": "learn-pr/wwl-azure/connect-azure-server-private-endpoint-using-azure-portal/4-connect-azure-sql-server-use-azure-private-endpoint-use-azure-portal.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/connect-azure-server-private-endpoint-using-azure-portal/4-connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-the-azure-portal",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/set-up-microsoft-defender-cloud/19-exercise-03b-enable-just-in-time-access-on-vms.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/set-up-microsoft-defender-cloud",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/set-up-microsoft-defender-cloud/6-exercise-03a-enable-defender-for-cloud-on-your-azure-subscription.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/set-up-microsoft-defender-cloud",
+      "redirect_document_id": false
     }
   ]
 }
