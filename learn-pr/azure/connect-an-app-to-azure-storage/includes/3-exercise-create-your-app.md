@@ -1,4 +1,4 @@
-Recall that we're working on a photo-sharing application that will use Azure Storage to manage pictures and other bits of data we store on behalf of our users.
+Recall that we're working on a photo-sharing application that uses Azure Storage to manage pictures and other bits of data we store on behalf of our users.
 
 ::: zone pivot="csharp"
 
@@ -8,7 +8,7 @@ To simplify our scenario so that we can focus on the Storage APIs, we'll create 
 
 .NET Core is a cross-platform version of .NET that runs on macOS, Windows, and Linux. You can install the tools locally or use Cloud Shell on the right side of the window to execute the following steps.
 
-1. Sign in to Cloud Shell or open a command-line session, and create a new .NET Core Console application with the name "PhotoSharingApp". Add the `-o` or `--output` flag to create the app in a specific folder.
+1. Create a new .NET Core Console application with the name "PhotoSharingApp". Add the `-o` or `--output` flag to create the app in a specific folder.
 
     ```dotnetcli
     dotnet new console --name PhotoSharingApp
@@ -20,7 +20,7 @@ To simplify our scenario so that we can focus on the Storage APIs, we'll create 
     cd PhotoSharingApp
     ```
 
-1. Run the app to make sure it builds and executes correctly. It should display "Hello World!" to the console.
+1. Run the app to make sure it builds and executes correctly.
 
     ```dotnetcli
     dotnet run
@@ -38,7 +38,7 @@ To simplify our scenario so that we can focus on the Storage APIs, we'll create 
 
 Node.js is a popular framework for running JavaScript apps. It's most commonly used for web apps, but you can use it to run logic from the command line as well. If you have the tools installed locally, you can run the following steps from a command line. Alternatively, you can use Cloud Shell on the right side of the window to execute the following steps.
 
-1. Sign in to Cloud Shell or open a command-line session, and create a new folder named "PhotoSharingApp".
+1. In the Cloud Shell on the right, create a new folder named "PhotoSharingApp".
 
     ```bash
     mkdir PhotoSharingApp
