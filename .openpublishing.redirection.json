@@ -27957,6 +27957,16 @@
       "source_path": "learn-pr/azure/create-an-azure-account/index.yml",
       "redirect_url": "https://azure.microsoft.com/free/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/configure-siem-security-operations-using-microsoft-sentinel/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/configure-security-information-event-management-operations-using-microsoft-sentinel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/connect-azure-server-private-endpoint-using-azure-portal/4-connect-azure-sql-server-use-azure-private-endpoint-use-azure-portal.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/connect-azure-server-private-endpoint-using-azure-portal/4-connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-the-azure-portal",
+      "redirect_document_id": false
     }
   ]
 }
