@@ -1,4 +1,4 @@
-We'll start by creating a new Unity project and configuring it for Windows Mixed Reality development. Unity offers some behaviors that are specific to mixed reality and can be modified through project settings.
+We'll start by creating a new Unity project and configuring it for Windows Mixed Reality development. Unity offers some behaviors that are specific to mixed reality and those behaviors can be modified with project settings.
 
 ## Create a new Unity project
 
