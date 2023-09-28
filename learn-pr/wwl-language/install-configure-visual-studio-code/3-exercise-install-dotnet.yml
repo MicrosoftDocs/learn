@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
   ms.prod: vs-code
 durationInMinutes: 5
 content: |

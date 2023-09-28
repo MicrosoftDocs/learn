@@ -82,3 +82,4 @@ To register the Azure Virtual Desktop agents, do the following on each virtual m
 5.  Download and install the Azure Virtual Desktop Agent Bootloader.
 6.  Download the [Azure Virtual Desktop Agent Bootloader](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH).
 7.  Run the installer.
+
