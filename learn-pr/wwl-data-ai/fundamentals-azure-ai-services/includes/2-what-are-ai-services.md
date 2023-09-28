@@ -1,5 +1,23 @@
 Azure AI services are AI capabilities that can be built into web or mobile applications, in a way that’s straightforward to implement. These AI services include image recognition, natural language processing, speech, AI powered search, and more. There're over a dozen [different services](/azure/ai-services/what-are-ai-services#available-azure-ai-services) that can be used separately or together to add AI power to applications.
 
+|**Name**|**Description**|
+|-|-|
+|Azure OpenAI| Perform a wide variety of generative tasks with natural language, code, images, and more|
+|Azure AI Speech|Speech to text, text to speech, translation and speaker recognition|
+|Azure AI Language|Build apps with industry-leading natural language understanding capabilities|
+|Azure AI Translator|Translate more than 100 languages and dialects|
+|Azure AI Vision|Analyze content in images and videos|
+|Azure AI Custom Vision|Customize image recognition to fit your business|
+|Azure AI Face|Detect and identify people and emotions in images|
+|Azure AI Content Safety|An AI service that detects unwanted contents|
+|Azure AI Personalizer|Create rich, personalized experiences for each user|
+|Azure AI Bot Service|Create bots and connect them across channels|
+|Azure AI Document Intelligence|Turn documents into usabel data at a fraction of the time and cost|
+|Azure Cognitive Search|Bring AI-powered cloud search to your mobile and web apps|
+|Azure AI Metrics Advisor|Proactively monitor metrics and diagnose issues|
+|Azure AI Video Indexer|Extract actionable insights from your videos|
+|Azure AI Immersive Reader|Help users read and comprehend text|  
+
 Examples of what can be done with Azure AI services include using the Content Safety service to detect harmful content within text or images, including violent or hateful content, and report on its severity. Natural language capabilities are being used to summarize text, classify information, or extract key phrases. The Speech service provides powerful speech to text and text to speech capabilities, allowing speech to be accurately transcribed into text, or text to natural sounding voice audio. 
 
 Azure AI services are based on three principles that dramatically improve speed-to-market:
@@ -22,6 +40,8 @@ For example, in sport, athletes, and coaches are customizing Azure AI Vision to 
 ## Azure AI services are accessed through APIs
 
 Azure AI services are designed to be used in different development environments, with minimal coding. Developers can access AI services through REST APIs, client libraries, or integrate them with tools such as Logic Apps and Power Automate. APIs are application programming interfaces that define the information that is required for one component to use the services of the other. APIs enable software components to communicate, so one side can be updated without stopping the other from working. Find out more about development options [here](/azure/ai-services/what-are-ai-services#use-azure-ai-services-in-different-development-environments).
+
+![Screenshot of how Azure AI services are consumed by APIs.](../media/endpoints-keys.png)
 
 ## Azure AI services are available on Azure
 

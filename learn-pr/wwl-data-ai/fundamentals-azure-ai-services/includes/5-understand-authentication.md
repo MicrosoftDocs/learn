@@ -10,7 +10,7 @@ The endpoint describes how to reach the AI service resource instance that you wa
 
 The resource key protects the privacy of your resource. To ensure this is always secure, the key can be changed periodically. You can view the endpoint and key in the Azure portal under Resource Management and Keys and Endpoint.
 
-![](../media/authentication-screenshot.jpg)
+![Screenshot of Azure portal's left-hand pane with Keys and Endpoints selected under Resource Management.](../media/authentication-screenshot.jpg)
 
 When you write code to access the AI service, the keys and endpoint must be included in the authentication header. The authentication header sends an authorization key to the service to confirm that the application can use the resource. Learn more about different [authentication requests to AI services](/azure/ai-services/authentication).
 

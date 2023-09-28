@@ -1,4 +1,7 @@
 Azure AI services are cloud-based, and like all Azure services you need to create a resource to use them.
+
+![Image of Microsoft Azure AI Services with a subscription, resource group, and resources.](../media/azure-cloud-services.png)
+
 There are two types of AI service resources: multi-service or single-service. Which type you use will be determined by your development requirements and how you want costs to be billed. 
 
 - **Multi-service** resource: Azure AI services is a resource created in the Azure portal that provides access to multiple Azure AI services with a single key and endpoint. Use this resource when you need several AI services or are exploring AI capabilities. When you use an AI services resource, all your AI services are billed together.
