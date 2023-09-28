@@ -1,19 +1,19 @@
 As you implement your security strategy, you want to control how network traffic is routed across your Azure infrastructure.
 
-In the following exercise, you'll use a network virtual appliance (NVA) to help secure and monitor traffic. You'll want to ensure communication between front-end public servers and internal private servers is always routed through the appliance.
+In the following exercise, you use a network virtual appliance (NVA) to help secure and monitor traffic. You want to ensure communication between front-end public servers and internal private servers is always routed through the appliance.
 
-You'll configure the network so that all traffic flowing from a public subnet to a private subnet will be routed through the NVA. To make this flow happen, you'll create a custom route for the public subnet to route this traffic to a perimeter-network subnet. Later, you'll deploy an NVA to the perimeter-network subnet.
+You configure the network so that all traffic flowing from a public subnet to a private subnet will be routed through the NVA. To make this flow happen, you create a custom route for the public subnet to route this traffic to a perimeter-network subnet. Later, you deploy an NVA to the perimeter-network subnet.
 
-![Virtual network, subnets, and route table.](../media/3-virtual-network-subnets-route-table.svg)
+:::image type="content" source="../media/3-virtual-network-subnets-route-table.svg" alt-text="Diagram of virtual network, subnets, and route table.":::
 
-In this exercise, you'll create the route table, custom route, and subnets. You'll then associate the route table with a subnet.
+In this exercise, you create the route table, custom route, and subnets. You'll then associate the route table with a subnet.
 
 ## Create a route table and custom route
 
 The first task is to create a new routing table and then add a custom route for all traffic intended for the private subnet.
 
-> [!NOTE] 
->  You might get an error that reads: *This command is implicitly deprecated*. Please ignore this error for this learning module. We are working on it!
+> [!NOTE]
+> You might get an error that reads: *This command is implicitly deprecated*. Please ignore this error for this learning module. We are working on it!
 
 1. In Azure Cloud Shell, run the following command to create a route table.
 

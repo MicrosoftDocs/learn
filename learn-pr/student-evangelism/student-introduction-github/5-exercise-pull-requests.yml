@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.student-introduction-github.exercise-pull-requests
+metadata:
+  title: Create pull requests and raise issues in GitHub
+  description: "Learn how to create a pull request and create an issue in GitHub."
+  ms.date: 9/7/2023
+  author: v-regandowner
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Create pull requests and raise issues in GitHub
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-pull-requests.md)]

@@ -1,4 +1,4 @@
-Video Analyzer for Media includes predefined models that can recognize well-known celebrities and brands, and transcribe spoken phrases into text. You can extend the recognition capabilities of Video Analyzer by creating custom models for:
+Azure Video Indexer includes predefined models that can recognize well-known celebrities and brands, and transcribe spoken phrases into text. You can extend the recognition capabilities of Video Analyzer by creating custom models for:
 
 - **People**. Add images of the faces of people you want to recognize in videos, and train a model. Video Indexer will then recognize these people in all of your videos. 
     > [!NOTE]

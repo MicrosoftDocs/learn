@@ -18,7 +18,7 @@ abstract:  |
   - Train a machine learning model to detect polar bears in photos
   - Write a function app in Azure Functions to invoke the machine learning model
   - Use Azure SQL Database to capture output from the function app in a SQL database
-  - Connect Power BI to the SQL database
+  - Connect Power BI to the SQL Database
   - Create a Power BI report that shows on a live map where cameras spot polar bears
 
 prerequisites: |

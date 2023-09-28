@@ -4,13 +4,12 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 01/27/2023
-  author: benjiang
-  ms.author: gmalc
+  ms.date: 08/21/2023
+  author: wwlpublish
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: artificial-intelligence
+  ms.subservice: face-api
 durationInMinutes: 1
 content: |
   [!include[](includes/4-summary.md)]

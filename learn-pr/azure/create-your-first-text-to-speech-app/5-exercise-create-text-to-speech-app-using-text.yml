@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-your-first-text-to-speech-app.exercise-create-text-to-speech-app-using-text
-title: Exercise - Create a text-to-peech application using a text file
+title: Exercise - Create a text to speech application using a text file
 metadata:
-  title: Exercise - Create a text-to-speech application using a text file
-  description: In this exercise, you'll create a text-to-speech application using a text file.
+  title: Exercise - Create a text to speech application using a text file
+  description: In this exercise, you'll create a text to speech application using a text file.
   ms.date: 09/15/2022
   author: rmcmurray
   ms.author: robmcm
@@ -13,4 +13,4 @@ azureSandbox: true
 interactive: bash
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-create-text-to-speech-app-using-text.md)]
+  [!INCLUDE[](includes/5-exercise-create-text-to-speech-app-using-text.md)]

@@ -1,5 +1,3 @@
-
-
 A code block is one or more C# statements that define an execution path. The statements outside of a code block affect when, if, and how often that block of code is executed at run time. The boundaries of a code block are typically defined by squiggly braces, `{}`.
 
 In addition to their effect on execution path, code blocks can also affect the scope of your variables. The code samples that you examine during this exercise will help you understand the relationship between code blocks and variable scope.

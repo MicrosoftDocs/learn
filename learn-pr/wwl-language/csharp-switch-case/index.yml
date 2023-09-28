@@ -3,7 +3,7 @@ uid: learn.languages.csharp-switch-case
 metadata:
   title: Branch the flow of code using the switch-case construct in C#
   description: "Branch the flow of code using the switch-case construct in C#"
-  ms.date: 05/04/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

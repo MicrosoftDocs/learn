@@ -27,7 +27,7 @@ levels:
 roles:
 - administrator
 products:
-- azure-app-service-web
+- azure-app-service
 subjects:
 - cloud-computing
 units:
