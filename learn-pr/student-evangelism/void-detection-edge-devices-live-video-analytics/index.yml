@@ -18,7 +18,7 @@ abstract: |
     - Set up an application that uses the virtual device for rapid inference at the edge
     - Deploy a solution that will enable you to watch images with defects through a web application
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 prerequisites: |
     - An Azure subscription
     - Ability to use Azure Cloud Shell

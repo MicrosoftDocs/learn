@@ -193,7 +193,7 @@ To complete the mock-up of the command-line tool, you'll add a phrase in Japanes
     c:\invoices
 
     日本の請求書を生成するには：
-    c:\invoices\app.exe -j
+        c:\invoices\app.exe -j
     ```
 
 ## Recap

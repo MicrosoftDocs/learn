@@ -29,7 +29,7 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-domain
+- entra
 subjects:
 - cloud-computing
 - identity-access

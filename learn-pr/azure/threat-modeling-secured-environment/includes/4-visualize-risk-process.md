@@ -10,13 +10,13 @@ Process is a task that receives, modifies, or redirects input to output.
 
 |Context|Questions|
 |-------|---------|
-|Code|Is this process running in C#, C++, Objective C, Java, or a scripting language?|
-|Permission level|Does this process need kernel, local, or administration level permissions to run?|
+|Code|Is the process running in C#, C++, Objective C, Java, or a scripting language?|
+|Permission level|Does the process need kernel, local, or administration level permissions to run?|
 |Service isolation|Is the process running in a sandbox?|
-|Input|Can this process accept input from everyone, local accounts, or just administrators?|
+|Input|Can the process accept input from everyone, local accounts, or just administrators?|
 |Validation|How does the process parse, handle and accept input?|
 |Authentication|Does the process rely on Azure Active Directory for authentication? If not, what does it rely on?|
-|Authorization|Does it rely on Access Control Lists (ACL) for authorization? If not, what does it rely on?|
+|Authorization|Does the process rely on Access Control Lists (ACL) for authorization? If not, what does it rely on?|
 
 #### Woodgrove process elements
 

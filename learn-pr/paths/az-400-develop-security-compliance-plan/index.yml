@@ -40,7 +40,6 @@ modules:
 - learn.control-authentication-with-apim
 - learn.monitor-report-aad-security-events
 - learn.github.maintain-secure-repository-github
-- learn.azure.build-cloud-governance-strategy-azure
 - learn.improve-reliability-failure
 - learn.improve-reliability-incidents
 trophy:

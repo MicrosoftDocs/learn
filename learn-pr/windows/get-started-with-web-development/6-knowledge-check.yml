@@ -21,10 +21,10 @@ quiz:
         explanation: Correct! HTML provides the structural building blocks of a web page.
         isCorrect: true
       - content: HTML is used to style web pages.
-        explanation: Incorrect. CSS is generally used for styling HTML elements.
+        explanation: Incorrect. CSS is typically used for styling HTML elements.
         isCorrect: false
       - content: User interaction or events.
-        explanation: Incorrect. JavaScript is generally used for interactivity.
+        explanation: Incorrect. JavaScript is typically used for interactivity.
         isCorrect: false
     - content: Which of the following choices is a design principle where you put code into different files?
       choices:

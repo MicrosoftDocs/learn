@@ -1,7 +1,7 @@
 
 Network security groups (NSGs) let you filter network traffic to and from Azure resources in an Azure virtual network; for example, a virtual machine. An NSG consists of rules that define how the traffic is filtered. You can associate only one network security group to each virtual network subnet and network interface in a virtual machine. The same network security group, however, can be associated to as many different subnets and network interfaces as you choose. 
 
-In the highly simplified diagram, shown below, you can see an Azure virtual network with two subnets that are connected to the internet, and each subnet has a virtual machine.  Subnet 1 has an NSG assigned to it that's filtering inbound and outbound access to VM1, which needs a higher level of access. In contrast, VM2 could represent a public-facing machine that doesn't require an NSG.
+In the highly simplified diagram that follows, you can see an Azure virtual network with two subnets that are connected to the internet, and each subnet has a virtual machine.  Subnet 1 has an NSG assigned to it that's filtering inbound and outbound access to VM1, which needs a higher level of access. In contrast, VM2 could represent a public-facing machine that doesn't require an NSG.
 
 :::image type="content" source="../media/2-virtual-network.png" alt-text="Diagram showing a simplified virtual network with two subnets each with a dedicated virtual machine resource, the first subnet has a network security group and the second subnet doesn't.":::
 
@@ -19,21 +19,19 @@ Each rule specifies one or more of the following properties:
 - **Port range**: You can specify an individual or range of ports. Specifying ranges enables you to be more efficient when creating security rules. 
 - **Action**: Finally, you need to decide what will happen when this rule is triggered.
 
-As an example, the table below shows the default inbound rules, which are included in all NSGs. For this example, assume no other inbound rules have been defined for this NSG.
+The screenshot that follows shows the default inbound rules and outbound, which are included in all NSGs.
 
-|Name|Priority|Source|Source ports|Destination|Destination ports|Protocol|Access|
-|---------|---------|---------|---------|---------|---------|---------|---------|
-|AllowVNetInBound|65000|VirtualNetwork|0-65535|VirtualNetwork|0-65535|Any|Allow|
-|AllowAzureLoadBalancerInBound|65001|AzureLoadBalancer|0-65535|0.0.0.0/0|0-65535|Any|Allow|
-|DenyAllInBound|65500|0.0.0.0/0|0-65535|0.0.0.0/0|0-65535|Any|Deny|
+:::image type="content" source="../media/network-security-group-rules-inline.png" lightbox="../media/network-security-group-rules-expanded.png" alt-text="Screenshot showing the default inbound and outbound rules for an Azure network security group.":::
 
-- The AllowVNetInBound rule is processed first as it has the lowest priority value. Recall that rules with the lowest priority value get processed first. This rule allows traffic from any Virtual Network (as defined by the VirtualNework service tag) on any port to any Virtual Network on any port, using any protocol.  If a match is found for this rule, then no other rules are processed.  If no match is found, then the next rule gets processed.
+Descriptions for the default inbound rules are as follows:.
 
-- The AllowAzureLoadBalancerInBound rule is processed second, as its priority value is higher than the AllowVNetInBound rule.  This rule allows traffic from any Azure Load Balancer (as defined by the AzureLoadBalancer service tag) on any port to any IP address on any port, using any protocol. If a match is found for this rule, then no other rules are processed.  If no match is found, then the next rule gets processed.
+- AllowVNetInBound - The AllowVNetInBound rule is processed first as it has the lowest priority value. Recall that rules with the lowest priority value get processed first. This rule allows traffic from a source with the VirtualNetwork service tag to a destination with the VirtualNetwork service tag on any port, using any protocol.  If a match is found for this rule, then no other rules are processed.  If no match is found, then the next rule gets processed.
 
-- The last rule in this NSG is the DenyAllInBound rule.  This rule denies all traffic from any source IP address on any port to any other IP address on any port, using any protocol.  
+- AllowAzureLoadBalancerInBound - The AllowAzureLoadBalancerInBound rule is processed second, as its priority value is higher than the AllowVNetInBound rule.  This rule allows traffic from a source with the AzureLoadBalancer service tag to a destination with the AzureLoadBalancer service tag on any port to any IP address on any port, using any protocol. If a match is found for this rule, then no other rules are processed.  If no match is found, then the next rule gets processed.
 
-In summary, any virtual network subnet or network interface card to which this NSG is assigned will only allow inbound traffic from an Azure Virtual Network or an Azure load balancer.  All other inbound network traffic is denied. Although not shown in this example, there are also three default outbound rules that are included in all NSGs. You can't remove the default rules, but you can override them by creating new rules with higher priorities (lower priority value).
+- DenyAllInBound - The last rule in this NSG is the DenyAllInBound rule.  This rule denies all traffic from any source IP address on any port to any other IP address on any port, using any protocol.  
+
+In summary, any virtual network subnet or network interface card to which this NSG is assigned will only allow inbound traffic from an Azure Virtual Network or an Azure load balancer (as defined by their respective service tags).  All other inbound network traffic is denied. You can't remove the default rules, but you can override them by creating new rules with higher priorities (lower priority value).
 
 ### What is the difference between Network Security Groups (NSGs) and Azure Firewall?
 Now that you've learned about both Network Security Groups and Azure Firewall, you may be wondering how they differ, as they both protect Virtual Network resources.  The Azure Firewall service complements network security group functionality. Together, they provide better "defense-in-depth" network security. Network security groups provide distributed network layer traffic filtering to limit traffic to resources ***within*** virtual networks in each subscription. Azure Firewall is a fully stateful, centralized network firewall as-a-service, which provides network and application-level protection ***across*** different subscriptions and virtual networks.

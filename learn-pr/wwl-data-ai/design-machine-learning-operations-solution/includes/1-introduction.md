@@ -1,6 +1,5 @@
 
 
-
 Imagine you trained a model. The next step is to operationalize the model and to make sure whoever needs the predictions can consume them. 
 
 **Machine Learning operations** or **MLOps** help you to scale your model from a proof of concept or pilot project to production. A model in production is ready for large-scale deployment and is retrained and redeployed when necessary.

@@ -6,8 +6,8 @@ metadata:
   title: Simplify compliance and security
   description: How the Azure Security Benchmark can be used to quickly secure cloud deployments.
   ms.date: 04/26/2022
-  author: martinekuan
-  ms.author: martinek
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

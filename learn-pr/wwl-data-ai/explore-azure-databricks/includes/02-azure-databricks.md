@@ -21,6 +21,6 @@ When you create a workspace, you must specify one of the following pricing tiers
 
 ## Using the Azure Databricks portal
 
-After you've provisioned an Azure Databricks workspace, you can use the Azure Databricks portal to work with data and compute resources. The Azure Databricks portal is a web-based user interface through which you can create and manage workspace resources (such as Spark clusters) and work with data in files and tables.
+After you've provisioned an Azure Databricks workspace, you can use the Azure Databricks portal to work with data and compute resources. The Azure Databricks portal is a web-based user interface through which you can create and manage workspace resources (such as Spark clusters) and use notebooks and queries to work with data in files and tables.
 
 ![Screenshot of the Azure Databricks portal.](../media/azure-databricks-portal.png)
