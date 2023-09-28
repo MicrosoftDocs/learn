@@ -2,7 +2,7 @@
 uid: learn.wwl.examine-device-management-concepts-methods
 metadata:
   title: Examine device management concepts and methods for Azure IoT Hub
-  description: "Evauluate the principles and common patterns of device management, and device management using device twins and direct methods."
+  description: "Evauluate the principles and common patterns of device management, and device management using device twins and direct methods in Azure IoT Hub."
   ms.date: 09/26/2023
   author: kgremban
   ms.author: kgremban
@@ -11,7 +11,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: iot-hub
 title: Examine device management concepts and methods for Azure IoT Hub
-summary: Evauluate the principles and common patterns of device management, and device management using device twins and direct methods.
+summary: Evauluate the principles and common patterns of device management, and device management using device twins and direct methods in Azure IoT Hub.
 abstract: |
   After you complete this module, you will be able to:
   - Describe device management concepts for Azure IoT Hub.
