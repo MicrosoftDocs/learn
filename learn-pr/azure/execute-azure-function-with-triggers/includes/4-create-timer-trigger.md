@@ -20,7 +20,7 @@ Let’s start by creating an Azure Function App in the portal.
     |---|---|
     | **Project Details** |
     | Subscription | Select the **Concierge Subscription** for this exercise  |
-    | Resource Group | Select the **<rgn>[Sandbox resource group name]</rgn>**'** resource group from the dropdown list. |
+    | Resource Group | Select the **<rgn>[Sandbox resource group name]</rgn>** resource group from the dropdown list. |
     | **Instance Details** |
     | Function App name | *\<your-webapp-name\>*. Enter a globally unique name for your function app. |
     | Publish | Code |
