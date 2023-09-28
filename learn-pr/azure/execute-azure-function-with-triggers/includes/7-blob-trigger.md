@@ -28,13 +28,15 @@ There are three types of blobs: **block blobs**, **append blobs**, and **page bl
 
 ## What is a blob trigger?
 
-A blob trigger is a trigger that executes a function when you upload or update a file in Azure Blob storage. To create a blob trigger, you create an Azure Storage account and provide a location that the trigger monitors.
+A blob trigger is a trigger that executes a function when you upload or update a file in Azure Blob storage. Functions periodically checks a storage container for changes, which can result in some latency. There are ways to reduce this latency when triggering on blob containers. 
+
+To create a blob trigger, you create an Azure Storage account and provide a location that the trigger monitors.  
 
 ## How to create a blob trigger
 
 Just like the other triggers we've seen so far, you can create a blob trigger in the Azure portal. Inside your Azure function, select **Blob trigger** from the list of predefined trigger types. Then, enter the logic that you want to execute when a blob is created or updated.
 
-One setting that's important to understand is the **Path**. The **Path** tells the blob trigger where to monitor to see if a blob is uploaded or updated. By default, the **Path** value is:
+One setting that's important to understand is the **Path**. The **Path** tells the blob trigger which blob container to monitor to see if a blob is uploaded or updated. By default, the **Path** value is:
 
 ```
 samples-workitems/{name}

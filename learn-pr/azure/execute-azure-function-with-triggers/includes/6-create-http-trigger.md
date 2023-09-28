@@ -1,14 +1,14 @@
-In this unit, we're going to create an Azure function that accepts an HTTP request with a single string. The function returns a string back to the caller to represent success or failure. We'll continue working on the function from the previous exercise.
+In this unit, we're going to create a function that accepts an HTTP request with a single string. The function returns a string back to the caller to represent success or failure. We'll continue working on the function from the previous exercise.
 
 ## Create an HTTP trigger
 
-Let's continue using our existing Azure Functions app and add an HTTP trigger.
+Let's continue using our existing functions app and add an HTTP trigger.
 
 1. Make sure you're signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**.
 
-1. Select your Function App identified under the *Type* column. Your **Function App** pane appears.
+1. Select your function app identified under the *Type* column. Your **Function App** pane appears.
 
 1. Select the **Functions** tab in the center of the screen.
 
