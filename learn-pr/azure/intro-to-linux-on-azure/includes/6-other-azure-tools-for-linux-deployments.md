@@ -4,6 +4,8 @@ Whether you choose IaaS, PaaS, DBaaS, or a combination of these services, you ca
 
 ## Examples of open-source tools
 
+This section describes some tools often used with Linux on Azure.
+
 ### Prometheus
 
 Monitor your Linux environment on Azure with Prometheus, a popular open-source metric monitoring solution. On Azure, you don't need to set up and manage a Prometheus server with a database. Instead, use Azure Monitor managed service for Prometheus, a component of [Azure Monitor Metrics](/azure/azure-monitor/essentials/data-platform-metrics). Prometheus metrics share some features with platform and custom metrics, but use some different features to better support open-source tools such as [PromQL](https://aka.ms/azureprometheus-promio-promql) and [Grafana](/azure/managed-grafana/overview). The service allows you to collect and analyze metrics at scale by using a Prometheus-compatible monitoring solution.
