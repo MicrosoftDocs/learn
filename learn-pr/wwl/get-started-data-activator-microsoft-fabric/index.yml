@@ -20,6 +20,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should be familiar with Microsoft Fabric. Familiarity with Power BI and EventStreams may be helpful.
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - intermediate
 roles:
