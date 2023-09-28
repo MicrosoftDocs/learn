@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-automation-devops.exercise-create-run-workflow-runbook
+title: Exercise - Create and run a workflow runbook
+metadata:
+  title: Exercise - Create and run a workflow runbook
+  description: "Exercise - Create and run a workflow runbook"
+  ms.date: 09/05/2023
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 30
+content: |
+  [!include[](includes/11-exercise-create-run-workflow-runbook.md)]

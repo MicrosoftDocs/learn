@@ -14,9 +14,9 @@ content: |
 quiz:
   title:  Check your knowledge
   questions:
-  - content: Which one of the following is a key difference between global Azure and Azure Government?
+  - content: What is a key difference between global Azure and Azure Government?
     choices:
-    - content: Azure Government has a marketplace from which you can deploy pre-built images from Microsoft and partners.
+    - content: Azure Government has a marketplace from which you can deploy prebuilt images from Microsoft and partners.
       isCorrect: false
       explanation: 'Incorrect. Both global Azure and Azure Government offer a marketplace'
     - content: Azure Government has a portal from which you can manage your resources.
@@ -46,27 +46,27 @@ quiz:
     choices:
     - content: 'A US government entity in its governmental capacity, such as a federal agency.'
       isCorrect: false
-      explanation: 'Incorrect. A government entity such as a federal agency will have access to Azure Government cloud.'
-    - content: 'A private entity building cloud solutions for the private sector.'
+      explanation: 'Incorrect. A government entity such as a federal agency has access to Azure Government cloud.'
+    - content: 'A private entity that is building cloud solutions for the private sector.'
       isCorrect: true
-      explanation: 'Correct. This type of customer will not have access to Azure Government cloud.'
+      explanation: 'Correct. This type of customer does not have access to Azure Government cloud.'
     - content: 'A partner using Azure Government to deliver a solution that provides services or solutions to US government customers through direct or indirect contracts.'
       isCorrect: false
       explanation: 'Incorrect. Azure Government is available to partners in this scenario.'
     - content: 'A commercial entity with data subject to government regulations.'
       isCorrect: false
-      explanation: 'Incorrect. Commercial entities with data subject to government regulations is allowed.'
+      explanation: 'Incorrect. Commercial entities with data subject to government regulations are allowed.'
   - content: Which one of the following addresses is the correct URL for accessing the Azure Government portal?
     choices:
     - content: portal.azure.com    
       isCorrect: false
-      explanation: This is the URL to access the global Azure portal. 
+      explanation: This address is the URL to access the global Azure portal. 
     - content: portal.azure.gov
       isCorrect: false
-      explanation: This is not a valid URL.
+      explanation: This address is not a valid URL.
     - content: portal.azure.us
       isCorrect: true
-      explanation: The Azure Government portal can be accessed at https://portal.azure.us
+      explanation: The Azure Government portal can be accessed at https://portal.azure.us.
     - content: portal.azure.fed
       isCorrect: false
-      explanation: This is not a valid URL.
+      explanation: This address is not a valid URL.

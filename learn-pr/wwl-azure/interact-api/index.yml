@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.interact-api
+metadata:
+  title: Interact with an ASP.NET Core minimal API
+  description: "Learn how APIs are implemented in ASP.NET Core, and how to use API documentation to learn the APIs requirements."
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+title: Interact with an ASP.NET Core minimal API
+summary: |
+  Learn how APIs are implemented in ASP.NET Core, and how to use API documentation to learn the APIs requirements.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+abstract: |
+  After completing this module, you'll be able to:
+  * Describe the two model types of APIs in ASP.NET Core
+  * Create Swagger documentation for an API by using Swashbuckle
+  * Interact with an API by using the Swagger interface
+prerequisites: |
+  * Knowledge of RESTful services and HTTP action verbs
+  * Experience with JSON at a beginner level
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- developer
+products:
+- aspnet-core
+- dotnet
+- aspnet-web-api
+subjects:
+- development-tools
+units:
+- learn.wwl.interact-api.introduction
+- learn.wwl.interact-api.explore-asp-net-core-api
+- learn.wwl.interact-api.document-api-swashbuckle
+- learn.wwl.interact-api.exercise-explore-api-documentation
+- learn.wwl.interact-api.knowledge-check
+- learn.wwl.interact-api.summary
+badge:
+  uid: learn.wwl.interact-api.badge

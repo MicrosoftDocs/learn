@@ -1,5 +1,3 @@
-
-
 Before you can assign, monitor, configure, or protect apps, you must add them to Microsoft Intune. The users of apps and devices at your company (your company's workforce) might have several app requirements. Before adding apps to Intune and making them available to your workforce, you must assess and understand a few app fundamentals. You must understand the various types of apps that are available for Intune. You must assess the app requirements, such as the platforms and capabilities that your workforce needs. You must determine whether to use Intune to manage the devices (including apps) or have Intune manage the apps without managing the devices. Finally, you must determine the apps and capabilities that your workforce needs, and who needs them.
 
 You can add the following app types in Intune:
@@ -13,4 +11,4 @@ You can add the following app types in Intune:
      -  Windows: .msi, .appx, appxbundle, .msix and .msixbundle
      -  Android: .apk
      -  iOS: .ipa and .intunemac
- -  **Windows app (Win32):** Building upon the existing support for line-of-business (LOB) apps and Microsoft Store apps, administrators can use Intune to deploy most of their organization’s existing Win32 line-of-business (LOB) applications to end users on Windows devices. Administrators can add, install, and uninstall applications for Windows users in various formats, such as MSIs, Setup.exe, or MSP. Intune evaluate's requirement rules before downloading and installing, notifying end users of the status or reboot requirements using the Windows Action Center.
+ -  **Windows app (Win32):** Building upon the existing support for line-of-business (LOB) apps and Microsoft Store apps, administrators can use Intune to deploy most of their organization’s existing Win32 line-of-business (LOB) applications to end users on Windows devices. Administrators can add, install, and uninstall applications for Windows users in various formats, such as MSIs, Setup.exe, or MSP. Intune evaluates requirement rules before downloading and installing, notifying end users of the status or reboot requirements using the Windows Action Center.

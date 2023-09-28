@@ -3,18 +3,18 @@ uid: learn.azure.extend-share-capacity-with-azure-file-sync
 metadata:
   title: Extend your on-premises file share capacity using Azure File Sync
   description: Evaluate and deploy Azure File Sync to extend the capacity of your on-premises file share.
-  ms.date: 09/27/2022
+  ms.date: 08/29/2023
   author: khdownie
   ms.author: kendownie
   ms.topic: interactive-tutorial
   ms.service: azure-file-storage
 title: Extend your on-premises file share capacity using Azure File Sync
-summary: Evaluate the requirements for Azure File Sync. Deploy the Storage Sync Service to replicate files from Windows Server to the Azure file share. Test and troubleshoot file sync between the file shares.
+summary: Evaluate the requirements for Azure File Sync. Deploy the Storage Sync Service to replicate files from Windows Server to the Azure file share. Test file sync between the file shares.
 abstract:  | 
   In this module, you will:
   - Evaluate your server's compatibility with Azure File Sync
   - Deploy Azure File Sync
-  - Test and troubleshoot file sync
+  - Test file sync
 prerequisites: |
   - Familiarity with Azure Files
   - Basic knowledge of Windows Server file shares
@@ -41,7 +41,7 @@ units:
 - learn.azure.extend-share-capacity-with-azure-file-sync.set-up-azure-file-sync-on-windows-server
 - learn.azure.extend-share-capacity-with-azure-file-sync.exercise-configure-file-sync-tools-on-windows-server
 - learn.azure.extend-share-capacity-with-azure-file-sync.test-troubleshoot-azure-file-sync
-- learn.azure.extend-share-capacity-with-azure-file-sync.exercise-troubleshoot-azure-file-sync
+- learn.azure.extend-share-capacity-with-azure-file-sync.exercise-check-file-sync
 - learn.azure.extend-share-capacity-with-azure-file-sync.knowledge-check
 - learn.azure.extend-share-capacity-with-azure-file-sync.summary
 badge:

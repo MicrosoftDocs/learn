@@ -1,4 +1,3 @@
-
 In this exercise, create a classification model that predicts whether a patient is likely to contract diabetes based on factors such as their BMI, age, glucose level, and other indicators.
 
 > [!NOTE]

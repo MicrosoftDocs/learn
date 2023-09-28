@@ -50,7 +50,6 @@ products:
 - azure
 - azure-active-directory
 - azure-app-service
-- azure-app-service-web
 # - azure-application-insights
 #- azure-automation
 - azure-cache-redis
@@ -59,7 +58,6 @@ products:
 - azure-database-mysql
 #- azure-devops
 - azure-spring-apps
-- azure-web-apps
 - msal-java
 - azure-service-bus
 subjects:

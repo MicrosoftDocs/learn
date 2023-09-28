@@ -17,7 +17,7 @@ abstract: |
     - Determine the pros and cons of each connectivity method
     - Provide a framework for the selection of the correct connectivity methods for Enterprise and Industrial IoT scenarios
 
-    ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***
+    ***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***
 prerequisites: |
     - Basic knowledge of IoT
     - Basic knowledge of Azure Sphere

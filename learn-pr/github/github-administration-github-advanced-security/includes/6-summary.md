@@ -11,7 +11,6 @@ Here are some links to more information on the topics we discussed in this modul
 **White papers:**
 
 - [The complete guide to developer-first application security](https://assets.ctfassets.net/wfutmusr1t3h/397ElOPOMY8H6wSwfFvf4z/06ed44457b6fb3a9bd77134c098749ea/GitHubAdvanced_SecurityEbook.pdf)
-- [Adopting and scaling GitHub Advanced Security in your company](https://resources.github.com/whitepapers/Scaling-GitHub-Advanced-Security/)
 
 **Documentation:**
 

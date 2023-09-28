@@ -15,7 +15,7 @@ This should result in your newly mojified image appearing in Slack, like so:
 
 ![Invoking the Slack Mojifier app to add an emoji to an image on a URL. The Mojifier has responded to the URL with an image.](../media/8.slack-type-mojify.png)
 
-The Mojifier is written using TypeScript, [Azure Functions](https://azure.microsoft.com/services/functions?azure-portal=true) and [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services?azure-portal=true). You use these to make your own version of The Mojifier.
+The Mojifier is written using TypeScript, [Azure Functions](https://azure.microsoft.com/services/functions?azure-portal=true) and [Azure AI services](https://azure.microsoft.com/services/cognitive-services?azure-portal=true). You use these to make your own version of The Mojifier.
 
 ## Learning objectives
 
@@ -28,9 +28,11 @@ In this module, you will:
 
 ## Tools you'll use
 
-### Azure Cognitive Services
+<a name='azure-cognitive-services'></a>
 
-Azure Cognitive Services are a set of high-level APIs you can use to quickly add advanced artificial intelligence (AI) functionality into an app. If you know how to make an HTTP request, then you should be able to use Cognitive Services.
+### Azure AI services
+
+Azure AI services are a set of high-level APIs you can use to quickly add advanced artificial intelligence (AI) functionality into an app. If you know how to make an HTTP request, then you should be able to use Azure AI services.
 
 ### Azure Functions
 

@@ -33,7 +33,8 @@ We'll start by creating a SQL server for our fitness databases, then we'll add d
     az sql db create \
     --resource-group $RESOURCE_GROUP \
     --server $SERVERNAME \
-    --name fitnessvancouverdb
+    --name fitnessvancouverdb \
+    --max-size 2GB
     ```
 
 1. Add a database named **fitnessparisdb** to **fitnesssqlserver-nnnn**.
@@ -42,7 +43,8 @@ We'll start by creating a SQL server for our fitness databases, then we'll add d
     az sql db create \
     --resource-group $RESOURCE_GROUP \
     --server $SERVERNAME \
-    --name fitnessparisdb
+    --name fitnessparisdb \
+    --max-size 2GB
     ```
 
 ## Create a SQL elastic pool
