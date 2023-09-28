@@ -21,7 +21,9 @@ iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
-- other
+- ai-engineer
+- data-scientist
+- student
 products:
 - azure
 units:
