@@ -99,13 +99,13 @@ Here's a detailed comparison of the various cloud-to-device communication option
     Frequency
   :::column-end:::
   :::column:::
-    High.
+    High
   :::column-end:::
   :::column:::
-    Medium.
+    Medium
   :::column-end:::
   :::column:::
-    Low.
+    Low
   :::column-end:::
 :::row-end:::
 :::row:::
