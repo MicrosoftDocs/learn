@@ -4,7 +4,7 @@ After connecting to a data source, you can save the data into a Microsoft Fabric
 
 ## Load data using notebooks
 
-Notebooks in Microsoft Fabric facilitates the process of handling your data assets. Once your data assets are located in the lakehouse, you can easily generate code within the notebook to ingest these assets. 
+Notebooks in Microsoft Fabric facilitate the process of handling your data assets. Once your data assets are located in the lakehouse, you can easily generate code within the notebook to ingest these assets. 
 
 Consider a scenario where a data engineer has already transformed customer data and stored it in the lakehouse. A data scientist can easily load the data using notebooks for further exploration to build a machine learning model. This enables work to start immediately, whether that involves additional data manipulations, exploratory data analysis, or model development.
 

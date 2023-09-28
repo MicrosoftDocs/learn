@@ -7,7 +7,7 @@ With Microsoft Fabric notebooks and Apache Spark dataframes, your tabular result
 > [!Tip]
 > Open-source libraries such as [matplotlib](https://matplotlib.org/?azure-portal=true) and [plotly](https://plotly.com/?azure-portal=true) among others can also be used to enhance the data exploration experience.
 
-## Categorical and numerical variables
+## Understand categorical and numerical variables
 
 For categorical variables, it's important to understand the different categories or levels in the variable. This involves identifying how many observations there are in each category, which is referred to as counts or frequencies. Additionally, understanding what proportion or percentage of the observations each category represents is crucial.
 

@@ -10,7 +10,7 @@ Correlation is a statistical method used to evaluate the strength and direction 
 | **-1**  | Indicates a perfect **negative linear correlation**. As one variable increases, the other variable decreases. |
 | **0**   | Indicates **no linear correlation**. The two variables don't have a relationship with each other. |
 
-Let's use the penguins dataset to explain how the correlation works.
+Let's use the penguins dataset to explain how correlation works.
 
 > [!Note]
 > The penguins dataset used is a subset of data collected and made available by [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php?azure-portal=true) and the [Palmer Station, Antarctica LTER](https://pal.lternet.edu/?azure-portal=true), a member of the [Long Term Ecological Research Network](https://lternet.edu/?azure-portal=true).

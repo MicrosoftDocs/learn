@@ -4,7 +4,7 @@ As a data scientist, you may be most familiar with writing and executing code in
 
 In Microsoft Fabric, data scientists, business users, and analysts all work on the same platform, enhancing data sharing and collaboration at scale. 
 
-## Usage of notebooks in data science
+## Use of notebooks in data science
 
 Notebooks are a common tool for data scientists as they allow to combine code, explanatory text, and multimedia resources in a single document. This creates a narrative that can drive exploration by facilitating the sharing of codes, and quick prototyping. 
 
@@ -25,7 +25,9 @@ Microsoft Fabric notebooks currently support four Apache Spark languages:
 
 ### Create a notebook
 
-To create a new notebook, select the **Notebook** option in the **Home** in your workspace.
+To create a new notebook, select **New** option in the **Home** in your Fabric enabled workspace.
+
+The screenshot below walks you through the main notebook components in Fabric.
 
 :::image type="content" border="false" source="../media/2-notebook-options.png" alt-text="Screenshot of the options available in a Microsoft Fabric notebook.":::
 
@@ -38,6 +40,9 @@ To create a new notebook, select the **Notebook** option in the **Home** in your
 1. Add a new code or markdown cell. This option is also available from the menu by selecting **Edit -> Add code cell**.
 
 1. It provides various options for managing a specific cell, such as repositioning the cell within the notebook, converting it to a markdown or code cell, clearing the output, adding comments, and more.
+ 
+> [!Note] 
+> If you’re unable to find the notebook option, it could be because either the tenant or the workspace hasn’t been enabled for Fabric. To learn how to enable Fabric, see [Enable Microsoft Fabric for your organization](/fabric/admin/fabric-switch/?azure-portal=true).
 
 ### Work with data in notebooks
 
