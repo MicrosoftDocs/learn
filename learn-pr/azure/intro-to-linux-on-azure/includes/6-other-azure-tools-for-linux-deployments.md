@@ -27,7 +27,7 @@ Operate and manage automation with a [Red Hat solution](https://azuremarketplace
 
 The [Azure Command-Line Interface (CLI)](/cli/azure/what-is-azure-cli) is a cross-platform command-line tool to execute administrative commands on Azure resources. Run commands through a terminal using interactive command-line prompts or batch commands together in a script.
 
-Azure CLI works with several shells, including Windows PowerShell, PowerShell, Cmd, Bash, and other Linux shells. First launch a shell, and then run the command at the shell prompt. To automate repetitive tasks, you assemble the CLI commands into a shell script by using the appropriate script syntax, and then execute the script.
+Azure CLI works with several shells, including Windows PowerShell, PowerShell, Cmd.exe, Bash, and other Linux shells. First launch a shell, and then run the command at the shell prompt. To automate repetitive tasks, you assemble the CLI commands into a shell script by using the appropriate script syntax, and then execute the script.
 
 ## Azure portal
 
