@@ -16,7 +16,7 @@ abstract: |
     - Explain how Azure Functions implements business logic with IoT devices
     - Decide whether Azure Functions is right choice for your IoT solution
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 prerequisites: |
     - Familiarity with Azure
     - Basic knowledge of REST and APIs

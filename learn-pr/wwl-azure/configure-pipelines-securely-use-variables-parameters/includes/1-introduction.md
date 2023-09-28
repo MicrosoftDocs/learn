@@ -21,10 +21,6 @@ For some exercises, you must create an Azure DevOps Organization and a Team Proj
 
 We recommend you understand Azure DevOps and pipeline management to get the most out of this course.
 
-For study recommendations, see:
-
-- [Configure secure access to pipeline resources - Introduction.](/training/modules/configure-secure-access-pipeline-resources/1-introduction)
-
 Ensure you have all the necessary resources and access to Azure DevOps before starting the course.
 
 Let's begin!

@@ -4,11 +4,11 @@ title: Implement Azure Active Directory join
 metadata:
   title: Implement Azure Active Directory join
   description: "Implement Azure Active Directory join"
-  ms.date: 05/29/2023
+  ms.date: 08/18/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
 durationInMinutes: 2
 content: |
   [!include[](includes/6-implement-active-directory-join.md)]

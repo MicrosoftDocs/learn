@@ -1,6 +1,6 @@
 
 
-Intune administration can be accessed using *Intune admin center* located at https://intune.microsoft.com. This console includes all the management capabilities provided by Intune, but also includes common management tasks such as managing users and groups. The Intune admin center portal replaces the Intune console previous found in the Azure portal.
+Intune administration can be accessed using *Intune admin center* located at https://intune.microsoft.com. This console includes all the management capabilities provided by Intune, but also includes common management tasks such as managing users and groups. The Intune admin center portal replaces the Intune console previously found in the Azure portal.
 
 #### Intune Company Portal
 

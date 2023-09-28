@@ -1,8 +1,3 @@
-
-
-
-
-
 The following solution provided is one of many possible solutions.
 
 ```csharp
@@ -24,7 +19,7 @@ foreach (var item in items)
 
 ```
 
-This code is merely "*one possible solution*". As long as your output matches the following, you succeeded.
+This code is merely "*one possible solution*." As long as your output matches the following, you succeeded.
 
 ```Output
 A345
@@ -37,7 +32,7 @@ C235
 G3003   - Error
 ```
 
-If you were successful, congratulations! Continue to the knowledge check in the next unit.
+Continue to the knowledge check in the next unit.
 
 > [!IMPORTANT]
 > If you had trouble completing this challenge, you should review the previous units before you continue.

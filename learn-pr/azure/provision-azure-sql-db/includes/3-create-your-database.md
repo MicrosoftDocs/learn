@@ -34,7 +34,7 @@ Azure SQL Database has two purchasing models: _DTU_ and _vCore_.
 
     Unlike the DTU model, which provides fixed configurations for compute, storage, and I/O resources, the vCore model lets you configure each of these resources independently. For example, with the vCore model, you can increase storage capacity but keep the existing amount of compute and I/O throughput.
 
-Your transportation and logistics prototype needs only one Azure SQL Database instance. You decide to use the DTU option because it provides the best balance of compute, storage, and I/O performance. It's also less expensive to use while you build your prototype.
+Your transportation and logistics prototype needs only one database. You decide to use the DTU option because it provides the best balance of compute, storage, and I/O performance. It's also less expensive to use while you build your prototype.
 
 ## What are SQL elastic pools?
 
@@ -76,6 +76,9 @@ Over time, if you realize you need more compute power to keep up with demand, yo
 
 1. The **Create SQL Database** pane appears. On the **Basics** tab, enter the following values for each setting.
 
+> [!NOTE]
+> You may see the **Want to try Azure SQL Database for free?** banner at the top of the page if your subscription is eligible. Select the **Apply offer** to take advantage of this offer. You can use this Azure SQL Database offer, free for the life of your subscription, as part of this exercise but your subscription can only have one free offer database at a time. For more information, see [Try Azure SQL Database free of charge](/azure/azure-sql/database/free-offer).
+
     | Setting | Value |
     | --- | --- |
     | **Project details** |
@@ -110,7 +113,8 @@ Over time, if you realize you need more compute power to keep up with demand, yo
       | Setting | Value |
       | --- | --- |
       | **Service and compute tier** |
-      | Service tier | In the dropdown list, under **DTU-based purchasing model**, select **Basic**, **Standard**, or **Premium**. |
+      | Service tier | If you used the [free Azure SQL Database offer](/azure/azure-sql/database/free-offer), leave the default settings.<br /><br />If not, in the dropdown list, under **DTU-based purchasing model**, select **Basic**. <br /><br />You can scale up or down the service and compute tier of your database at any time in the future. |
+      | Behavior when free limit reached | If you used the [free Azure SQL Database offer](/azure/azure-sql/database/free-offer), leave this set to **Auto-pause the database until next month** for now. You can configure this setting later. |
       | Remaining settings | Accept defaults |
 
     b. Select **Apply**.

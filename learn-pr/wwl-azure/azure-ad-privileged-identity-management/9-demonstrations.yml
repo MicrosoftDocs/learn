@@ -4,13 +4,10 @@ title: Explore Try-This exercises
 metadata:
   title: Explore Try-This exercises
   description: "Explore Try-This exercises"
-  ms.date: 02/02/2023
+  ms.date: 08/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 15
+durationInMinutes: 1
 content: |
   [!include[](includes/9-demonstrations.md)]

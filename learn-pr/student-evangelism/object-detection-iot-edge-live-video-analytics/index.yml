@@ -19,7 +19,7 @@ abstract: |
     - Bring an AI model of your choice into the video analytics solution
     - Test a solution that will detect a person at the edge from a web application
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 prerequisites: |
     - An Azure subscription
     - Ability to use Azure Cloud Shell

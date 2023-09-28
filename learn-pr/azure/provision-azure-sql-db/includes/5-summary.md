@@ -14,6 +14,9 @@ Azure Cloud Shell makes it easy to start working with your databases. From Cloud
 
 To ensure you're not charged for the resources you created, you can delete resources individually or delete the resource group you used to delete the entire set of resources. Make sure to delete any resources you don't plan to use again.
 
+> [!NOTE]
+> If you're ready to get started with Azure SQL Database, [try Azure SQL Database free of charge](/azure/azure-sql/database/free-offer) for the life of your subscription.
+
 ## Additional resources
 
 The documentation provides lots more information, including tutorials and samples. Here are a few links to what we covered here:

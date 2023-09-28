@@ -31,7 +31,7 @@ quiz:
       isCorrect: true
       explanation: "Application Insights helps you monitor and analyze your application, it doesn't offer automation."
 
-  - content: "Which of the following strategies isn't a common way to configure virtual machines?"
+  - content: "Which of the following strategies is NOT a common way to configure virtual machines?"
     choices:
     - content: 'Custom images'
       isCorrect: false

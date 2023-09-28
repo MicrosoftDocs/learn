@@ -8,36 +8,36 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
    :::image type="content" source="../media/select-create-resource-compute-function-app.png" alt-text="Screenshot that shows numbered elements in the Azure portal that you select to create a new function app resource.":::
 
-   _Create a new function app in Azure_
+   *Create a new function app in Azure*
 
-1. In **Create Function App**, on the **Basics** tab, enter or select the following values:
+1. In **Create Function App**, on the **Basics** tab, enter, or select the following values:
 
-   - **Subscription**: Select the subscription you want to use.
-   - **Resource Group**: Select **polar-bear-rg**.
-   - **Function App name**: Enter a name that's unique in Azure for your new app.
-   - **Publish**: Leave **Code** selected.
-   - **Runtime stack**: Select **Node.js**.
-   - **Region**: Select **South Central US**.
-   - **Operating System**: Select your system.
-   - **Plan Type**: Select **Consumption (Serverless)**.
+   - **Subscription:** Select the subscription you want to use.
+   - **Resource Group:** Select **polar-bear-rg**.
+   - **Function App name:** Enter a name that's unique in Azure for your new app.
+   - **Publish:** Leave **Code** selected.
+   - **Runtime stack:** Select **Node.js**.
+   - **Region:** Select **South Central US**.
+   - **Operating System:** Select your system.
+   - **Plan Type:** Select **Consumption (Serverless)**.
    - Select **Next : Hosting**.
 
    :::image type="content" source="../media/create-new-function-app-basic-settings.png" alt-text="Screenshot that shows the basic settings to select or enter for a new function app.":::
 
-   _Configure the basic settings for a new function app_
+   *Configure the basic settings for a new function app*
 
 1. On the **Hosting** tab, select the storage account you created to upload wildlife photos to. Then select **Review + create**.
 
    :::image type="content" source="../media/create-new-function-app-hosting-settings.png" alt-text="Screenshot that shows the hosting tab settings for a new function app.":::
 
-   _Configure the hosting settings for a new function app_
+   *Configure the hosting settings for a new function app*
 
 1. Wait for validation to finish, and then select **Create**.
 1. Wait for the function app to deploy, and then open the app in the Azure portal. In the resource menu, under **Functions**, select **Functions**, and then select **Create**.
 
    :::image type="content" source="../media/create-new-function-app-add-function.png" alt-text="Screenshot that highlights the elements to select to add a function in the Azure portal.":::
 
-   _Add a function_
+   *Add a function*
 
 1. In **Add function**:
 
@@ -46,13 +46,13 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
    :::image type="content" source="../media/create-new-function-choose-template.png" alt-text="Screenshot that highlights the elements to select for a new function.":::
 
-   _Configure the settings and choose a template for a function_
+   *Configure the settings and choose a template for a function*
 
-   > [!Note]
+   > [!NOTE]
    > If you're prompted to install the `Microsoft.Azure.WebJobs.Extensions.Storage` extension, select **Install**.
-   > 
+   >
    > Wait for the installation to finish, and then select **Continue**.
-   > 
+   >
    > (If you're *not* prompted to install the extension, you might have to wait a few minutes before you can proceed to the next step.)
 
 1. In **Template details**:
@@ -60,14 +60,14 @@ You can write a function app in Azure Functions in the Azure portal or externall
    1. For **New Function**, enter *BlobTrigger*.
    1. For **Path**, enter *photos/{name}* so that the function app triggers when blobs are uploaded to the `photos` container.
    1. Under **Storage account connection**, select **New**.
-      > [!Note]
+      > [!NOTE]
       > Copy and then save the value that's shown in **Storage account connection**. You'll use the value in a later step.
 
    1. In **New Storage Account connection**, select the storage account you created earlier, and then select **OK**.
 
    :::image type="content" source="../media/create-new-function-template-details.png" alt-text="Screenshot that shows settings to use to set up the template to create a blob-triggered function.":::
 
-   _Configure the template to create a blob-triggered function_
+   *Configure the template to create a blob-triggered function*
 
 1. Select **Add**. The portal view changes to show the new app.
 
@@ -75,7 +75,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
    :::image type="content" source="../media/blob-triggered-function-update-code.png" alt-text="Screenshot that highlights the portal elements to select to open the index dot J S file for the blob-triggered function.":::
 
-   _Open the index.js file for the trigger function_
+   *Open the index.js file for the trigger function*
 
 1. Copy the following code and replace the function app code in the Azure portal with the code:
 
@@ -175,7 +175,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
    :::image type="content" source="../media/open-function-app-console.png" alt-text="Screenshot that shows how to open a console for a function app.":::
 
-   _Open a function app console_
+   *Open a function app console*
 
 1. In the console, run the following commands to install the npm [request](https://www.npmjs.com/package/request) package and the [Azure Storage SDK for Node.js](https://www.npmjs.com/package/azure-storage?azure-portal=true), so your function app can use them.
 
@@ -196,7 +196,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
    :::image type="content" source="../media/function-app-application-settings.png" alt-text="Screenshot that shows selections to make in the Azure portal for application settings for a function app.":::
 
-   _Configure the application settings for the function app_
+   *Configure the application settings for the function app*
 
    To finish, select **Save**. If you're prompted, select **Continue** to finish the save action.
 
@@ -207,13 +207,13 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
    :::image type="content" source="../media/open-function-output-log-1.png" alt-text="Screenshot that shows selections to make in the Azure portal to view the blob trigger function app.":::
 
-   _Open the BlobTrigger function app_
+   *Open the BlobTrigger function app*
 
 1. In the resource menu, under **Developer**, select **Code + Test**. Below the code that's shown, select the **Logs** up arrow. The log output pane opens.
 
    :::image type="content" source="../media/open-function-output-log-2.png" alt-text="Screenshot that shows how to open the output log for a function.":::
 
-   _Open the function's output log_
+   *Open the function's output log*
 
    Keep the **Logs** pane open because we'll use it in a later step.
 
@@ -221,8 +221,8 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
    :::image type="content" source="../media/open-photos-container.png" alt-text="Screenshot that highlights the items you select in the Azure portal to open the photos container.":::
 
-   _Open the photos container for your Blob Storage account_
-    
+   *Open the photos container for your Blob Storage account*
+
 1. Next, upload an image to the photos container to try out your function app.
    1. In the `photos` container pane, select **Upload**.
    1. In **Upload blob**, under **Files**, select the folder icon.
@@ -232,19 +232,19 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
    :::image type="content" source="../media/upload-photo-to-container.png" alt-text="Screenshot that shows how to upload a photo to a container.":::
 
-   _Upload a photo to the container_
+   *Upload a photo to the container*
 
    Here's what **image_12.jpg** looks like:
 
    :::image type="content" source="../media/image-12.jpg" alt-text="Image 12 dot j p g, which shows a polar bear.":::
 
-   _Image 12 in Blob Storage_
+   *Image 12 in Blob Storage*
 
 1. In your browser, return to the function app log. Confirm that the function app executed, and that Custom Vision indicates that *image_12.jpg* contains a polar bear.
 
    :::image type="content" source="../media/function-output-1.png" alt-text="Screenshot that shows the output log details for uploading and analyzing image 12 dot j p g.":::
 
-   _View the output log details for uploading and analyzing image 12_
+   *View the output log details for uploading and analyzing image 12*
 
 The text *undefined at undefined, undefined* appears in the log output because the function attempted to read the latitude, longitude, and camera ID from blob metadata and include them in the output. Those metadata values don't exist because you uploaded the blob manually. That condition will change when your virtual cameras upload photos to Blob Storage.
 
@@ -262,8 +262,8 @@ Next, run the simulated camera array you created earlier. Then, you'll check the
 
    :::image type="content" source="../media/function-output-2.png" alt-text="Screenshot that shows logs in a terminal, with the log entry Polar Bear detected for one of the cameras and the camera's latitude and longitude.":::
 
-   _There be polar bears!_
+   *There be polar bears!*
 
 1. Return to the Command Prompt or terminal window in which *run.js* is running, and select Ctrl+C.
 
-Congratulations! You've built a system that transmits wildlife photos to Blob Storage and uses a custom AI model built by using Azure Cognitive Services Custom Vision to determine which photos contain polar bears. The next step is to make the output more visual, and that starts with creating a SQL database by using Azure SQL Database.
+Congratulations! You've built a system that transmits wildlife photos to Blob Storage and uses an Azure AI Custom Vision model to determine which photos contain polar bears. The next step is to make the output more visual, and that starts with creating a SQL database by using Azure SQL Database.

@@ -1,24 +1,24 @@
 To use the Language Understanding service to develop an NLP solution, you'll need to create a Language resource in Azure. That resource will be used for both authoring your model and processing prediction requests from client applications.
 
-The Language service has various features, including sentiment analysis, key phrase extraction, entity recognition, intent recognition, and text classification. Some of these features can be used without configuration of your Language resource, such as language detection or sentiment analysis. Other features, such as conversational language understanding and custom named entity recognition will require a model to be built for prediction.
+Azure AI Language has various features, including sentiment analysis, key phrase extraction, entity recognition, intent recognition, and text classification. Some features, such as conversational language understanding and custom named entity recognition require a model to be built for prediction.
 
 > [!TIP]
 > This module's lab covers building a model for conversational language understanding. For more focused modules on custom text classification and custom named entity recognition, see the [Build custom text analytics](/training/paths/build-custom-text-analytics?azure-portal=true) learning path.
 
-## Building your Language Understanding model
+## Build your model
 
-For Language features that require a model for prediction, you'll need to build, train and deploy that model before using it to make a prediction. This building and training will teach the Language service what to look for.
+For features that require a model for prediction, you'll need to build, train and deploy that model before using it to make a prediction. This building and training will teach the Azure AI Language service what to look for.
 
-First, you'll need to create your Language resource in the [Azure portal](https://portal.azure.com/?azure-portal=true).
+First, you'll need to create your Azure AI Language resource in the [Azure portal](https://portal.azure.com/?azure-portal=true). Then:
 
-1. Click on **Create a new resource**
-2. Find and select **Language service**
-3. Click Create
-4. Fill out the necessary details, choosing the region closest to you geographically (for best performance) and giving it a unique name
+1. Search for **Azure AI services**.
+1. Find and select **Language Service**.
+1. Select **Create** under the **Language Service**.
+1. Fill out the necessary details, choosing the region closest to you geographically (for best performance) and giving it a unique name.
 
 Once that resource has been created, you'll need a key and the endpoint. You can find that on the left side under **Keys and Endpoint** of the resource overview page.
 
-### Using the REST API
+### Use the REST API
 
 One way to build your model is through the REST API. The pattern would be to create your project, import data, train, deploy, then use your model.
 
@@ -28,7 +28,7 @@ For example, if you want to deploy a model for a conversational language underst
 
 #### Authentication
 
-For each call to your Language resource, you authenticate the request by providing the following header.
+For each call to your Azure AI Language resource, you authenticate the request by providing the following header.
 
 |Key|Value|
 |--|--|
@@ -44,7 +44,7 @@ Submit a **POST** request to the following endpoint.
 
 |Placeholder  |Value  | Example |
 |---------|---------|---------|
-|`{ENDPOINT}`     | The endpoint of your Language resource   | `https://<your-subdomain>.cognitiveservices.azure.com` |
+|`{ENDPOINT}`     | The endpoint of your Azure AI Language resource   | `https://<your-subdomain>.cognitiveservices.azure.com` |
 |`{PROJECT-NAME}`     | The name for your project. This value is case-sensitive   | `myProject` |
 |`{DEPLOYMENT-NAME}`     | The name for your deployment. This value is case-sensitive   | `staging` |
 |`{API-VERSION}`     | The version of the API you're calling | `2022-05-01` |
@@ -61,7 +61,7 @@ Include the following `body` with your request.
 |---------|-----|
 | `{MODEL-NAME}` | The model name that will be assigned to your deployment. This value is case-sensitive.   |
 
-Successfully submitting your request will receive a `202` response, with a response header of `location`. This header will have a URL with which to request the status, formatted like this:
+Successfully submitting your request will receive a `202` response, with a response header of `operation-location`. This header will have a URL with which to request the status, formatted like this:
 
 ```rest
 {ENDPOINT}/language/authoring/analyze-conversations/projects/{PROJECT-NAME}/deployments/{DEPLOYMENT-NAME}/jobs/{JOB-ID}?api-version={API-VERSION}
@@ -95,22 +95,22 @@ The response body will give the deployment status details. The `status` field wi
 }
 ```
 
-For a full walkthrough of each step with example requests, see the [conversational understanding quickstart](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=rest-api&azure-portal=true#create-a-clu-project).
+For a full walkthrough of each step with example requests, see the [conversational understanding quickstart](/azure/ai-services/language-service/conversational-language-understanding/quickstart?pivots=rest-api&azure-portal=true#create-a-clu-project).
 
-### Using Language Studio
+### Use Language Studio
 
-For a more visual method of building, training, and deploying your model, you can use [Language Studio](https://aka.ms/languageStudio) to achieve each of these steps. On the main page, you can select which type of project you want to create. Once the project is created, then go through the same process as above to build, train, and deploy your model.
+For a more visual method of building, training, and deploying your model, you can use [Language Studio](https://aka.ms/languageStudio) to achieve each of these steps. On the main page, you can choose to create a **Conversational language understanding** project. Once the project is created, then go through the same process as above to build, train, and deploy your model.
 
-[![Screenshot of Language Studio home page.](../media/language-studio-conversational.png)](../media/language-studio-conversational.png#lightbox)
+:::image type="content" source="../media/language-studio-conversational-small.png" alt-text="Screenshot of the Language Studio home page." lightbox="../media/language-studio-conversational.png":::
 
-The lab in this module will walk through using Language Studio to build your model. If you'd like to learn more, see the [Language Studio quickstart](/azure/cognitive-services/language-service/language-studio?azure-portal=true)
+The lab in this module will walk through using Language Studio to build your model. If you'd like to learn more, see the [Language Studio quickstart](/azure/ai-services/language-service/language-studio?azure-portal=true)
 
-## Querying your Language Understanding model
+## Query your model
 
 To query your model for a prediction, create a **POST** request to the appropriate URL with the appropriate body specified. For built in features such as language detection or sentiment analysis, you'll query the `analyze-text` endpoint.
 
 > [!TIP]
-> Remember each request needs to be authenticated with your Language resource key in the `Ocp-Apim-Subscription-Key` header
+> Remember each request needs to be authenticated with your Azure AI Language resource key in the `Ocp-Apim-Subscription-Key` header
 
 ```rest
 {ENDPOINT}/language/:analyze-text?api-version={API-VERSION}
@@ -123,7 +123,7 @@ To query your model for a prediction, create a **POST** request to the appropria
 
 Within the body of that request, you must specify the `kind` parameter, which tells the service what type of language understanding you're requesting.
 
-If I want to detect the language, for example, my JSON body would look something like the following.
+If you want to detect the language, for example, the JSON body would look something like the following.
 
 ```json
 {
@@ -158,7 +158,7 @@ A sample response to your query would be similar to the following.
             "warnings": []
         }],
         "errors": [],
-        "modelVersion": "String"
+        "modelVersion": "{VERSION}"
     }
 }
 ```
@@ -233,4 +233,4 @@ A sample response to your query would be similar to the following.
 }
 ```
 
-For full documentation on features, including examples and how-to guides, see the [Azure Cognitive Service for Language](/azure/cognitive-services/language-service/?azure-portal=true) documentation pages.
+For full documentation on features, including examples and how-to guides, see the [Azure AI Language documentation](/azure/ai-services/language-service/?azure-portal=true) documentation pages.

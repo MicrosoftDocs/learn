@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.render-api-responses-razor-pages.discover-razor-syntax
+title: Discover Razor Pages syntax
+metadata:
+  title: Discover Razor Pages syntax
+  description: "Discover Razor Pages syntax"
+  ms.date: 09/11/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-discover-razor-syntax.md)]
