@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
   ms.prod: aspnet-core
 durationInMinutes: 7
 content: |
