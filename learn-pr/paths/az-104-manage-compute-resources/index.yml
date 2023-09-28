@@ -2,7 +2,7 @@
 uid: learn.az-104-manage-compute-resources
 metadata:
   title: 'AZ-104: Deploy and manage Azure compute resources'
-  description: 'AZ-104: Deploy and manage Azure compute resources'
+  description: Learn how to deploy and configure virtual machines, containers, and Web Apps in Azure.
   ms.date: 08/21/2023
   author: wwlpublish
   ms.author: cynthist

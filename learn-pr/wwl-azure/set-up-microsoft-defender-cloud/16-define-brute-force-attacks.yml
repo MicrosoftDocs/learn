@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.set-up-microsoft-defender-cloud.define-brute-force-attacks
+title: Define brute force attacks
+metadata:
+  title: Define brute force attacks
+  description: "Define brute force attacks"
+  ms.date: 08/29/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/16-define-brute-force-attacks.md)]

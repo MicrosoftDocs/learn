@@ -47,7 +47,7 @@ This example configures the application with the following steps:
 
 ## Streams
 
-*Streams* aren't a Node.js concept, but rather an operating system concept. Streams define the way data is transported back and forth. Data is sent, chunk by chunk, from client to server and from server to client. Streams make the server capable of handling many concurrent requests.
+*Streams* aren't a Node.js concept, but rather an operating system concept. Streams define the way data is transported back and forth. Data is sent, chunk by chunk, from client to server and from server to client. Streams make the server capable of handling many concurrent requests or large files.
 
 A stream is a fundamental data structure in Node.js that can read and write data, and send and receive messages, or *events*. Streaming is implemented in the HTTP module by having classes that are streams.
 
@@ -147,3 +147,23 @@ Follow these steps to create a web application by using the Express framework:
 1. **Define routes and route handlers**: Define what routes the application should listen to. A route is part of the URL. For example, in the URL `http://localhost:8000/products`, the route part is `/products`. Express uses different routes to execute different pieces of code. Other examples of routes are slash `/`, also known as the default route, and `/orders`. Routes will be explored in more detail later in this module.
 1. **Configure middleware**: Middleware is a piece of code that can run before or after a request. You can also use middleware to handle authentication/authorization, or to add a capability to your app.
 1. **Start the app**: Define a port, and then instruct the app to listen to that port. Now the app is ready to receive requests.
+
+## Use Development container for consistent development environment
+
+A development container is a configured environment, which includes all tools and applications needed to complete a development task. This allows development teams to focus on writing code instead of chasing issues stemming from working in an environment (perhaps multiple environments) different than the production environment. 
+
+A development container can run:
+
+* **Remotely**: In the browser, you can use GitHub Codespaces and Visual Studio Code for the Web, using free compute time available with your GitHub account.
+*  **Locally**: On your local computer, you can use Visual Studio Code [] with a configured container environment or you can start with the default environment. Docker Community edition is required.
+
+### Remote development
+
+[GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
+
+> [!IMPORTANT]
+> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+
+### Local development
+
+The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.

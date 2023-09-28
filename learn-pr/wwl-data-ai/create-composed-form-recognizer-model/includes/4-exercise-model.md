@@ -15,7 +15,7 @@ To start the exercise, let's connect to Cloud Shell, which you'll use to run the
 
 ## Set up resources
 
-We'll use a script to create the Azure Forms Recognizer resource, a storage account with sample forms, and a resource group:
+We'll use a script to create the Azure AI Document Intelligence resource, a storage account with sample forms, and a resource group:
 
 1. In the Cloud Shell, to clone the code repository, enter this command:
 
@@ -34,25 +34,25 @@ We'll use a script to create the Azure Forms Recognizer resource, a storage acco
 
 To create a composed model, we must first create two or more custom models. To create the first custom model:
 
-1. In a new browser tab, start the [Forms Recognizer Studio](https://formrecognizer.appliedai.azure.com/studio).
+1. In a new browser tab, start the [Azure AI Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio).
 1. Scroll down, and then under **Custom model**, select **Custom model**. 
 1. If you are asked to sign into your account, use your Azure credentials.
-1. If you are asked which Forms Recognizer resource to use, select the subscription and resource name you used when you created the Forms Recognizer resource.
+1. If you are asked which Azure AI Document Intelligence resource to use, select the subscription and resource name you used when you created the Azure AI Document Intelligence resource.
 1. Under **My Projects**, select **+ Create a project**.
 1. In the **Project name** textbox, type **1040 Forms**, and then select **Continue**.
 1. On the **Configure service resource** page, in the **Subscription** drop-down list, select your Azure subscription.
-1. In the **Resource group** drop-down list, select **FormsRecognizerResources**.
-1. In the **Forms Recognizer or Cognitive Service Resource** drop-down list, select **FormsRecognizer**
+1. In the **Resource group** drop-down list, select **DocumentIntelligenceResources**.
+1. In the **Azure AI Document Intelligence or Azure AI Service Resource** drop-down list, select **DocumentIntelligence**
 1. In the **API version** drop-down list, ensure that **2022-06-30-preview** is selected and then select **Continue**.
 
-    :::image type="content" source="../media/4-configure-service-resources.png" alt-text="Screenshot showing the Configure service resources page in Forms Recognizer Studio custom model wizard." lightbox="../media/4-configure-service-resources.png":::
+    :::image type="content" source="../media/4-configure-service-resources.png" alt-text="Screenshot showing the Configure service resources page in Azure AI Document Intelligence Studio custom model wizard." lightbox="../media/4-configure-service-resources.png":::
 
 1. On the **Configure training data source** page, in the **Subscription** drop-down list, select your Azure subscription.
-1. In the **Resource group** drop-down list, select **FormsRecognizerResources**.
+1. In the **Resource group** drop-down list, select **DocumentIntelligenceResources**.
 1. In the **Storage account** drop-down list, select the only storage account listed.
 1. In the **Blob container** drop-down list, select **1040examples**, and then select **Continue**.
 
-    :::image type="content" source="../media/4-connect-training-data-source.png" alt-text="Screenshot showing the Connect training data source page in Forms Recognizer Studio custom model wizard." lightbox="../media/4-connect-training-data-source.png":::
+    :::image type="content" source="../media/4-connect-training-data-source.png" alt-text="Screenshot showing the Connect training data source page in Azure AI Document Intelligence Studio custom model wizard." lightbox="../media/4-connect-training-data-source.png":::
 
 1. In the **Review and create** page, select **Create project**.
 
@@ -62,12 +62,12 @@ Now, let's label the fields in the example forms:
 
 1. In the **Label data** page, in the top-right of the page, select **+**, and then select **Field**.
 
-    :::image type="content" source="../media/4-add-label.png" alt-text="Screenshot showing how to add a new label in Forms Recognizer Studio." lightbox="../media/4-add-label.png":::
+    :::image type="content" source="../media/4-add-label.png" alt-text="Screenshot showing how to add a new label in Azure AI Document Intelligence Studio." lightbox="../media/4-add-label.png":::
 
 1. Type **FirstName** and then press <kbd>Enter</kbd>.
 1. In the document, select **John** and then select **FirstName**.
 
-    :::image type="content" source="../media/4-label-first-name.png" alt-text="Screenshot showing how to complete a new label in Forms Recognizer Studio." lightbox="../media/4-label-first-name.png":::
+    :::image type="content" source="../media/4-label-first-name.png" alt-text="Screenshot showing how to complete a new label in Azure AI Document Intelligence Studio." lightbox="../media/4-label-first-name.png":::
 
 1. In the top-right of the page, select **+**, and then select **Field**.
 1. Type **LastName** and then press <kbd>Enter</kbd>.
@@ -87,7 +87,7 @@ Now, let's label the fields in the example forms:
 
 Now that the sample forms are labeled, we can train the first custom model:
 
-1. In the Forms Recognizer Studio, select **Train**.
+1. In the Azure AI Document Intelligence Studio, select **Train**.
 1. In the **Train a new model** dialog, in the **Model ID** textbox, type **1040FormsModel**.
 1. In the **Build mode** drop-down list, select **Template**, and then select **Train**. 
 1. In the **Training in progress** dialog, select **Go to Models**.
@@ -96,18 +96,18 @@ Now that the sample forms are labeled, we can train the first custom model:
 
 Now, you must create a second model, which you will train on example 1099 tax forms:
 
-1. In Forms Recognizer Studio, select **Custom model**.
+1. In Azure AI Document Intelligence Studio, select **Custom model**.
 1. Under **My Projects**, select **+ Create a project**.
 1. In the **Project name** textbox, type **1099 Forms**, and then select **Continue**.
 1. On the **Configure service resource** page, in the **Subscription** drop-down list, select your Azure subscription.
-1. In the **Resource group** drop-down list, select **FormsRecognizerResources**.
-1. In the **Forms Recognizer or Cognitive Service Resource** drop-down list, select **FormsRecognizer**
+1. In the **Resource group** drop-down list, select **DocumentIntelligenceResources**.
+1. In the **Azure AI Document Intelligence or Azure AI Service Resource** drop-down list, select **DocumentIntelligence**
 1. In the **API version** drop-down list, ensure that **2022-06-30-preview** is selected and then select **Continue**.
 
-    :::image type="content" source="../media/4-configure-service-resources.png" alt-text="Screenshot showing the Configure service resources page in Forms Recognizer Studio custom model wizard." lightbox="../media/4-configure-service-resources.png":::
+    :::image type="content" source="../media/4-configure-service-resources.png" alt-text="Screenshot showing the Configure service resources page in Azure AI Document Intelligence Studio custom model wizard." lightbox="../media/4-configure-service-resources.png":::
 
 1. On the **Configure training data source** page, in the **Subscription** drop-down list, select your Azure subscription.
-1. In the **Resource group** drop-down list, select **FormsRecognizerResources**.
+1. In the **Resource group** drop-down list, select **DocumentIntelligenceResources**.
 1. In the **Storage account** drop-down list, select the only storage account listed.
 1. In the **Blob container** drop-down list, select **1099examples**, and then select **Continue**.
 1. In the **Review and create** page, select **Create project**.
@@ -134,7 +134,7 @@ Now, label the example forms with some fields:
 
 You can now train the second custom model:
 
-1. In the Forms Recognizer Studio, select **Train**.
+1. In the Azure AI Document Intelligence Studio, select **Train**.
 1. In the **Train a new model** dialog, in the **Model ID** textbox, type **1099FormsModel**.
 1. In the **Build mode** drop-down list, select **Template**, and then select **Train**. 
 1. In the **Training in progress** dialog, select **Go to Models**.
@@ -144,12 +144,12 @@ You can now train the second custom model:
 
 The two custom models, which analyze 1040 and 1099 tax forms, are now complete. You can proceed to create the composed model:
 
-1. In the Forms Recognizer Models page, select both **1040FormsModel** and **1099FormsModel**.
+1. In the Azure AI Document Intelligence Models page, select both **1040FormsModel** and **1099FormsModel**.
 1. At the top of the list of models, select **Compose**.
 
-    :::image type="content" source="../media/4-start-compose-model.png" alt-text="Screenshot showing how to begin composing a model in Forms Recognizer Studio." lightbox="../media/4-start-compose-model.png":::
+    :::image type="content" source="../media/4-start-compose-model.png" alt-text="Screenshot showing how to begin composing a model in Azure AI Document Intelligence Studio." lightbox="../media/4-start-compose-model.png":::
 
-1. In the **Compose a new model** dialog, in the **Model ID** textbox, type **TaxFormsModel** and then select **Compose**. Forms Recognizer creates the composed model and displays it in the list of custom models:
+1. In the **Compose a new model** dialog, in the **Model ID** textbox, type **TaxFormsModel** and then select **Compose**. Azure AI Document Intelligence creates the composed model and displays it in the list of custom models:
 
 ## Use the composed model
 
@@ -159,12 +159,12 @@ Now that the composed model is complete, let's test it with an example form:
 1. Under **Data storage** select **Containers** and then select **TestDoc**.
 1. To the right of **f1040_7.pdf**, select **...** and then select **Download**.
 1. Save the PDF document to your local computer and make a note of the saved location.
-1. In the Forms Recognizer Studio, select **TaxFormsModel**, and then select **Test**.
+1. In the Azure AI Document Intelligence Studio, select **TaxFormsModel**, and then select **Test**.
 1. Select **+ Add** and then browse to the location where you saved the PDF document.
 1. Select **f1040_7.pdf**, and then select **Open**.
-1. Select **Analyze**. Forms Recognizer analyses the form by using the composed model.
+1. Select **Analyze**. Azure AI Document Intelligence analyses the form by using the composed model.
 
-    :::image type="content" source="../media/4-composed-model-analysis.png" alt-text="Screenshot showing how to use a composed model in Forms Recognizer Studio." lightbox="../media/4-composed-model-analysis.png":::
+    :::image type="content" source="../media/4-composed-model-analysis.png" alt-text="Screenshot showing how to use a composed model in Azure AI Document Intelligence Studio." lightbox="../media/4-composed-model-analysis.png":::
 
 1. The document you analyzed is an example of the 1040 tax form. Check the **DocType** property to see if the correct custom model has been used. Also check the **FirstName**, **LastName**, **City**, and **State** values identified by the model.
 
@@ -173,10 +173,10 @@ Now that the composed model is complete, let's test it with an example form:
 Now that you've seen how composed models work, let's remove the resources you created in your Azure subscription.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Resource groups**.
-1. In the list of **Resource groups**, select **FormsRecognizerResources**, and then select **Delete resource group**. 
-1. In the **TYPE THE RESOURCE GROUP NAME** textbox, type **FormsRecognizerResources** and then select **Delete**. Azure deletes the Form Recognizer resource and the storage account.
+1. In the list of **Resource groups**, select **DocumentIntelligenceResources**, and then select **Delete resource group**. 
+1. In the **TYPE THE RESOURCE GROUP NAME** textbox, type **DocumentIntelligenceResources** and then select **Delete** to delete the Document Intelligence resource and the storage account.
 
 ## Learn more
 
-- [Compose custom models v3.1](/azure/ai-services/document-intelligence/how-to-guides/compose-custom-models?view=doc-intel-3.1.0&tabs=studio)
+- [Compose custom models](/azure/ai-services/document-intelligence/concept-composed-models)
 - [Build your training dataset for a custom model](/azure/applied-ai-services/form-recognizer/how-to-guides/build-custom-model-v3)

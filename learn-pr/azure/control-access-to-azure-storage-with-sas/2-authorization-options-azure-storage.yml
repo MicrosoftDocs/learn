@@ -22,8 +22,8 @@ quiz:
       explanation: "This option is the most secure way to use SAS, but in this case the best option is to authenticate by using an Azure service principal."
     - content: "Use Azure Active Directory. By using Azure AD, you can create a service principal to authenticate the app."
       isCorrect: true
-      explanation: "This option is the best because no code or configuration files need to store credentials. Access is controlled with Azure AD and can be extended or revoked without requiring any code changes."
-    - content: "Use a shared key. The Azure Storage account can create and revoke keys that will be used in your app."
+      explanation: "This option is the best because no code or configuration files are needed to store credentials. Access is controlled with Azure AD and can be extended or revoked without requiring any code changes."
+    - content: "Use a shared key. The Azure Storage account can create and revoke keys that are used in your app."
       isCorrect: false
       explanation: "This option isn't correct and involves your app needing to keep an up-to-date key in code or configuration files. It also grants root-like level access to the storage account."
   - content: "Your public-facing static website stores all its public UI images in blob storage. The website needs to display the graphics without any kind of authorization. Which is the best option?"

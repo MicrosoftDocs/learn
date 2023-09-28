@@ -2,13 +2,13 @@ In this module, you'll learn how to save entity data to Azure Table storage and 
 
 ## Understand Azure Storage
 
-**Azure storage** is a Microsoft storage solution on the cloud that can cover many scenarios and requirements. It can scale massively and is easily approachable by developers. All services can be consumed under the umbrella of an **Azure storage Account**. For our use case, we will use *Table storage* and *Blob storage*.
+**Azure storage** is a Microsoft storage solution on the cloud that can cover many scenarios and requirements. It can scale massively and is easily approachable by developers. All services can be consumed under the umbrella of an **Azure storage Account**. For our use case, we'll use *Table storage* and *Blob storage*.
 
 Learn more about [Azure storage services](/azure/storage/blobs/storage-blobs-overview).
 
 ### Azure Table Storage
 
-This service allows us to store data in a NoSQL fashion. In our project, we will use it to store information about the *Tracked Object*, such as name, description, spatial anchor ID, and more.
+This service allows us to store data in a NoSQL fashion. In our project, we'll use it to store information about the *Tracked Object*, such as name, description, spatial anchor ID, and more.
 
 In context of the demo application, you'll need two Tables; one to store information about the project with information about the state of trained models more about that in the (Integrating Azure Custom Vision) tutorial, and a second table to store information about *Tracked Objects*.
 
@@ -26,7 +26,7 @@ Learn more about [Azure Blob storage](/azure/storage/blobs/storage-blobs-introdu
 
 To use the Azure storage services, you'll need an Azure storage account. To create a storage account, see [Create a storage account](/azure/storage/common/storage-account-create). To learn more about storage accounts, see [Azure storage account overview](/azure/storage/common/storage-account-overview).
 
-Once you have a storage account, you can retrieve the connection string from the **Azure portal**. You'll need the connection string in the next section of this lesson.
+Once you have a storage account, you can retrieve the connection string from the **Azure portal**. It can be found under Security + networking > Access keys. You'll need the connection string in the next section of this lesson.
 
 ### Optional Azure Storage Explorer
 
@@ -35,7 +35,7 @@ While you can view and verify all data changes from the UI inside the applicatio
 > [!TIP]
 > For testing from inside the Unity editor, you can use a local emulator:
 >
-> * on Windows 10, you can use [Azure Storage Emulator](/azure/storage/common/storage-use-emulator)
+> * on Windows 10, you can use [Azure Storage Emulator](/azure/storage/common/storage-use-azurite)
 > * on MacOS or Linux, you can use [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite) for Docker
 
 ## Prepare the scene
@@ -44,7 +44,7 @@ While you can view and verify all data changes from the UI inside the applicatio
 
     :::image type="content" source="../media/data-manager-configure.png" alt-text="Screenshot of Unity with DataManager script component configuration fields shown in Inspector." lightbox="../media/data-manager-configure.png":::
 
-    The **DataManager (script)** component in the Inspector window contains all **Azure storage** related settings. All relevant settings are already set; you just need to replace the *Connection String* field with the one you retrieved from the Azure portal. If you're using a local Azure storage emulator solution, then you can keep the already provided *Connection String*.
+    The **DataManager (script)** component in the Inspector window contains all **Azure storage** related settings. All relevant settings are already set; you just need to replace the *Connection String* field with the one you retrieved from the Azure portal. If you're using a local Azure storage emulator solution, then you can keep the already provided *Connection String* or it can be left empty.
 
     The **DataManager (script)** is responsible for talking to the **Table storage** and **Blob storage** which is consumed by other controller scripts on the UI components.
 
@@ -70,9 +70,6 @@ With everything prepared, it's time to create a *Tracked Object*.
 
 ## Upload and download images from Azure Blob Storage
 
-> [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
-
 In this section, you'll use Azure Blob Storage to upload and download images to use as thumbnails for *Tracked Objects*.
 
 > [!NOTE]
@@ -83,9 +80,6 @@ In this section, you'll use Azure Blob Storage to upload and download images to 
 2. Now rerun the application and search for the *Tracked Object* and the previously uploaded image should appear as thumbnail.
 
 ## Delete images from Azure Blob Storage
-
-> [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
 
 In the previous section, you uploaded new images to Azure Blob Storage. In this section, you'll delete an image thumbnail for your *Tracked Objects*.
 

@@ -6,6 +6,7 @@ By the end of this module, you'll be able to connect Microsoft 365 Defender secu
 
 After completing this module, you'll be able to:
 
+- Install and configure the Microsoft 365 Defender Content Hub solution
 - Activate the Microsoft 365 Defender connector in Microsoft Sentinel
 - Activate the Microsoft Defender for Cloud connector in Microsoft Sentinel
 - Activate the Microsoft Defender for IoT connector in Microsoft Sentinel

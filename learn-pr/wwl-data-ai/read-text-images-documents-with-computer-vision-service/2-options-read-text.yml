@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service.options-for-reading-text
-title: Explore Computer Vision options for reading text
+title: Explore Azure AI Vision options for reading text
 metadata:
-  title: Explore Computer Vision options for reading text
-  description: "Explore Computer Vision options for reading text"
+  title: Explore Azure AI Vision options for reading text
+  description: "Explore Azure AI Vision options for reading text"
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: sheryang

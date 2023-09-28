@@ -19,7 +19,7 @@ This calculation is called the _Euclidian distance_. You won't just use this in 
 
 ### The Face API
 
-Calculating emotion is, surprisingly, one of the most accessible parts of your app. The Azure Cognitive Services [Face API](https://azure.microsoft.com/pricing/details/cognitive-services/face-api/) takes image input and returns information about it, including whether a face was detected and its location. If requested, it calculates and returns the emotions of the faces as well, like so:
+Calculating emotion is, surprisingly, one of the most accessible parts of your app. The Azure AI services [Face API](https://azure.microsoft.com/pricing/details/cognitive-services/face-api/) takes image input and returns information about it, including whether a face was detected and its location. If requested, it calculates and returns the emotions of the faces as well, like so:
 
 ```json
 {

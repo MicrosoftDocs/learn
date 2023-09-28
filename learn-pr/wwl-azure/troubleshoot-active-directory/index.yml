@@ -30,7 +30,7 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-domain
+- entra
 - windows-server
 subjects:
 - identity-access

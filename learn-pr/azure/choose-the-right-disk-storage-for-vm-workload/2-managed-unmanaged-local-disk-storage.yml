@@ -4,7 +4,7 @@ title: Managed, unmanaged, and local disk storage
 metadata:
   title: Managed, unmanaged, and local disk storage
   description: Managed, unmanaged, and local disk storage
-  ms.date: 11/06/2019
+  ms.date: 09/05/2023
   author: roygara
   ms.author: rogarana
   ms.topic: interactive-tutorial
@@ -31,9 +31,6 @@ quiz:
     - content: "An ephemeral disk"
       isCorrect: false
       explanation: "Ephemeral disks don't support 99.999% availability because data is stored in local virtual machine storage and not replicated."
-    - content: "An unmanaged disk"
-      isCorrect: false
-      explanation: "Unmanaged disks don't guarantee 99.999% availability, although it might be possible to achieve this availability if you choose a highly available storage account."
     - content: "A managed disk"
       isCorrect: true
       explanation: "Managed disks guarantee 99.999% availability because data is automatically replicated."

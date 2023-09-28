@@ -1,4 +1,4 @@
-Experience the best of both Windows and Linux with Windows Subsystem for Linux (WSL).
+This training will introduce you to Windows Subsystem for Linux (WSL). Start integrating the best aspects of both Windows and Linux into your developer workflow.
 
 :::image type="content" source="../media/wsl-intro.png" alt-text="Illustration of a laptop running Windows with the Linux penguin sitting next to it.":::
 

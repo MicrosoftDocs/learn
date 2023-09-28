@@ -3,8 +3,8 @@ uid: learn.secure-azure-resources-with-rbac
 metadata:
   moduleType: standard
   title: Secure your Azure resources with Azure role-based access control (Azure RBAC)
-  description: Learn how to use Azure role-based access control to effectively manage your team’s access to Azure resources.
-  ms.date: 01/18/2023
+  description: Learn how to use Azure role-based access control to effectively manage your team's access to Azure resources.
+  ms.date: 09/07/2023
   author: rolyon
   ms.author: rolyon
   ms.topic: interactive-tutorial

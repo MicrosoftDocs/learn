@@ -1,10 +1,10 @@
 Bot solutions on Microsoft Azure are supported by the following technologies:
 
-- **Azure Bot Service**. A cloud service that enables bot delivery through one or more channels, and integration with other services.
-- **Bot Framework Service**. A component of Azure Bot Service that provides a REST API for handling bot activities.
+- **Azure AI Bot Service**. A cloud service that enables bot delivery through one or more channels, and integration with other services.
+- **Bot Framework Service**. A component of Azure AI Bot Service that provides a REST API for handling bot activities.
 - **Bot Framework SDK**. A set of tools and libraries for end-to-end bot development that abstracts the REST interface, enabling bot development in a range of programming languages.
 
-:::image type="content" source="../media/azure-bot-technologies.png" alt-text="Azure Bot Service, Bot Framework, and Bot SDK":::
+:::image type="content" source="../media/azure-bot-technologies.png" alt-text="Azure AI Bot Service, Bot Framework, and Bot SDK":::
 
 ## Developing a Bot with the Bot Framework SDK
 

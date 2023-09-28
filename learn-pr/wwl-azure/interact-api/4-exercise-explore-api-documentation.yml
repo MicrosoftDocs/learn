@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.interact-api.exercise-explore-api-documentation
+title: Exercise - Interact with an API
+metadata:
+  title: Exercise - Interact with an API
+  description: "Exercise - Interact with an API"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-exercise-explore-api-documentation.md)]
