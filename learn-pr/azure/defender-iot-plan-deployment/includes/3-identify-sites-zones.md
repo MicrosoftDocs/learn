@@ -1,103 +1,53 @@
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
-
-    Heading: none
-
-    Example: "A storage account represents a collection of settings that implement a business policy."
-
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
+    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)  title is : Identify the sites and zones for your network topology
 -->
-TODO: add your topic sentences(s)
+# Identify Sites and Zones across your organization
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Your car manufacturing organization has a network including offices and production sites across the globe. The Zero Trust access strategy requires segmenting your OT network to enhance network security. Defender for IoT for OT uses sites and zones for segmentation.
 
-    Goal: Describe the part of the scenario covered in this exercise
+## Zero Trust Access
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+Zero Trust is a security strategy, which assumes a breach as a given, and therefore always requires verifications and the least needed privileges. Some applications of Zero Trust in an OT network can include:
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+1. Ensuring that all connections between networks and devices are identified and managed.
+1. Limiting and securing your network jump hosts.
+1. Segmenting your network to limit data access. Encrypting and securing all communication between devices and segments and preventing lateral movement between systems.
+1. Evaluating signals like device location, health, and behavior using health data to gate access or flag for remediation.
+1. Monitoring security metrics to ensure security perimeter integrity.
+<!-- What are the most important zero trust examples for OT to use? -->
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+## Zero Trust with Defender for IoT
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+Defender for IoT supports Zero Trust access segmentation with sites and zones. You can group data ingested from sensors in the same site or zone together and monitor for unauthorized traffic crossing segments. Segmenting allows you to create policies for least-privileged access to Defender of IoT.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+Sites and zones are defined as follows:
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+- **Sites** group devices by a specific geographical location, like an office at a specific address.
+- **Zones** define a segment within a site that is a functional area, such as a specific production line.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+> [!NOTE]
+> You can further divide zones into *business units* and *regions* from the on-premises management console.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+### Example
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+In your car manufacturer, you might segment factories and office areas in Paris and Lagos into the following sites and zones:
 
-    Goal: List the steps they'll do to complete the exercise.
+|Sites  |Zones  |
+|---------|---------|
+|**Paris office**     | - Ground floor (Guests)</br>- Floor 1 (Sales)</br>- Floor 2 (Executive) </br>    |
+|**Lagos office**     | - Ground floor (Offices)</br>- Floors 1-2 (Factory)     |
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+### Separating Zones
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+It's recommended to separate sensors with similar characteristics, like recurring IP address ranges, into separate zones when working with multiple networks. This is to ensure that Defender for IoT differentiates between the devices and identifies each device uniquely.
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+<!--In the next unit, you'll check your understanding of  organize your car manufacturer's locations into sites and zones based on a network diagram.-->
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+<!-- Should there be -->
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Next Unit: Knowledge Check
 
-<!-- 5. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
-
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+<!--Optional "exercise-solution" video -->
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

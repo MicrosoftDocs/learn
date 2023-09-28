@@ -6,9 +6,9 @@ metadata:
   title: |
     Identify the sites and zones for your network topology
   description: Identify the sites and zones for your network topology
-  ms.date: 7/20/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 09/27/2023
+  author: mjosephym
+  ms.author: v-mjosephy
   ms.topic: interactive-tutorial
   ms.service: defender-for-iot
 durationInMinutes: 1

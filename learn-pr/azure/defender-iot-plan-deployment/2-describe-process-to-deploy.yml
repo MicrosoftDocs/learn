@@ -7,10 +7,10 @@ metadata:
     Describe the process to deploy Microsoft Defender for IoT
   description: Describe the process to deploy Microsoft Defender for IoT
   ms.date: 7/20/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  author: mjosephym
+  ms.author: v-mjosephy
   ms.topic: interactive-tutorial
   ms.service: defender-for-iot
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/2-describe-process-to-deploy.md)]
