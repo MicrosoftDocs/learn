@@ -2,7 +2,7 @@
 uid: learn.azure.deploy-elastic-cloud-kubernetes-azure.introduction
 title: Introduction
 metadata:
-  unitType: introduction
+  unitType: Introduction
   title: Introduction
   description: "This unit introduces deploying Elastic Cloud on Kubernetes (ECK) on Azure Kubernetes services. The unit introduces an example scenario and explains that the module will cover the steps for creating an AKS cluster and deploying Elastic Cloud on Kubernetes."
   ms.date: 6/13/2021

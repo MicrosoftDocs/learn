@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-plan-deployment.identify-azure-on-premises-roles
+title: |
+  Identify Azure and on-premises roles to assign to users
+metadata:
+  title: |
+    Identify Azure and on-premises roles to assign to users
+  description: Identify Azure and on-premises roles to assign to users
+  ms.date: 7/21/2023
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.service: defender-for-iot
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-identify-azure-on-premises-roles.md)]
