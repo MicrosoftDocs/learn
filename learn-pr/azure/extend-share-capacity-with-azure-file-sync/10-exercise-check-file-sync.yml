@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.extend-share-capacity-with-azure-file-sync.exercise-check-file-sync
+title: Exercise - Check File Sync
+metadata:
+  title: Exercise - Check File Sync
+  description: In this exercise, you'll map a drive to the Azure file share and check that the file sync works.
+  ms.date: 08/29/2023
+  author: khdownie
+  ms.author: kendownie
+  ms.topic: interactive-tutorial
+  ms.service: azure
+durationInMinutes: 12
+azureSandbox: false
+content: |
+  [!include[](includes/10-exercise-check-file-sync.md)]

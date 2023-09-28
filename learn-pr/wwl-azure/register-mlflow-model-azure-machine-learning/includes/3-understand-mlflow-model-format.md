@@ -1,5 +1,3 @@
-
-
 MLflow uses the MLModel format to store all relevant model assets in a folder or directory. One essential file in the directory is the `MLmodel` file. The `MLmodel` file is the single source of truth about how the model should be loaded and used.
 
 ## Explore the MLmodel file format

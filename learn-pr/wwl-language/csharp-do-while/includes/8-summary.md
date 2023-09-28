@@ -1,5 +1,3 @@
-
-
 Your goal was to use the `do-while` and `while` statements to perform iterations. The `do-while` and `while` statements are unique because the body of the code block determines whether the flow of execution should continue or stop.
 
 Using the `do-while` statement, you executed a block of code once before evaluating a Boolean expression and potentially exiting the iteration. Using the `while` statement, you performed the evaluation of the Boolean expression immediately, and continued to evaluate it to exit the iteration. You used the `continue` statement within the code block to step directly to the Boolean expression.

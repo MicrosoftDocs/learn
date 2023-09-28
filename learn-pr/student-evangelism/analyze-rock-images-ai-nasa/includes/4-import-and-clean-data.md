@@ -41,10 +41,6 @@ To load random images from our two datasets, we call the `SubsetRandomSampler` f
 
 We're ready to add the code to clean and separate the data. 
 
-1. Go to [this Azure Blob storage][AzureBlob] and download the *Data.zip* folder.
-
-1. Unzip the *Data* folder and put it in the same folder as your Jupyter Notebook file.
-
 1. In Visual Studio Code, return to your Jupyter Notebook file.
 
 1. Add the following code in a new cell to import the **Python Imaging Library** (PIL). We'll use this library to visualize the images. After you add the new code, run the cell.
@@ -123,6 +119,3 @@ We're ready to add the code to clean and separate the data.
 After you run the cell, you should see the two rock classification types in the output: `['Basalt', 'Highland']`.
 
 The space rock data is now imported, cleaned, and separated. We're ready to train our model with 80% of the data and run tests with the remaining 20%.
-
-<!-- Links -->
-[AzureBlob]: https://nasadata.blob.core.windows.net/nasarocks/Data.zip?azure-portal=true

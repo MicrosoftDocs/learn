@@ -1,7 +1,3 @@
-
-
-
-
 Code challenges reinforce what you've learned and help you gain some confidence before continuing.
 
 This module features two code challenges. This first challenge forces you to split up the data depending on its type and either concatenate or add the data accordingly.
@@ -18,7 +14,7 @@ This module features two code challenges. This first challenge forces you to spl
 
 1. Complete the required code, placing it within the array looping structure code block. It's necessary to implement the following business rules in your code logic:
 
-    - Rule 1: If the value is alphanumeric, concatenate it to form a message.
+    - Rule 1: If the value is alphabetical, concatenate it to form a message.
     - Rule 2: If the value is numeric, add it to the total.
     - Rule 3: The result should match the following output:
 

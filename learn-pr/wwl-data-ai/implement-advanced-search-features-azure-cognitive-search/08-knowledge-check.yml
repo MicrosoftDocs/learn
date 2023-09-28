@@ -46,6 +46,6 @@ quiz:
     - content: "Azure Speech Service."
       isCorrect: false
       explanation: "Incorrect. This product is focused on translating speech to text and text to speech services."
-    - content: "Azure Cognitive Services."
+    - content: "Azure AI Services."
       isCorrect: true
-      explanation: "Correct. Cognitive Services provides translation services."
+      explanation: "Correct. Azure AI Services provides translation services."

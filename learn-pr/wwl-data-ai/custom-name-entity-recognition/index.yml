@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should be familiar with:
   - The Azure portal
-  - General functionality of Cognitive Services
+  - General functionality of Azure AI Services
   - General programming technique
 iconUrl: /training/achievements/2-custom-name-entity-recognition.svg
 levels:

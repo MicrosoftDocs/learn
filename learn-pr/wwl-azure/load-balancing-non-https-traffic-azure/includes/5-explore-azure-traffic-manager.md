@@ -1,5 +1,3 @@
-
-
 Azure Traffic Manager is a DNS-based traffic load balancer. This service allows you to distribute traffic to your public facing applications across the global Azure regions. Traffic Manager also provides your public endpoints with high availability and quick responsiveness.
 
 Traffic Manager uses DNS to direct the client requests to the appropriate service endpoint based on a traffic-routing method. Traffic manager also provides health monitoring for every endpoint. The endpoint can be any Internet-facing service hosted inside or outside of Azure. Traffic Manager provides a range of traffic-routing methods and endpoint monitoring options to suit different application needs and automatic failover models. Traffic Manager is resilient to failure, including the failure of an entire Azure region.
@@ -383,7 +381,7 @@ You then enter the required information on the **Add endpoint** page.
 :::row-end:::
 :::row:::
   :::column:::
-    Fully-qualified domain name (FQDN) or IP **(for External endpoints only)**
+    fully qualified domain name (FQDN) or IP **(for External endpoints only)**
   :::column-end:::
   :::column:::
     Specify the FQDN or IP address for the external endpoint.

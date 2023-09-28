@@ -4,14 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/02/2023
+  ms.date: 08/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
+durationInMinutes: 1
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
@@ -25,9 +22,9 @@ quiz:
     - content: "Co-Administrator"
       isCorrect: false
       explanation: "The co-administrator role wouldn't allow you to enable PIM."
-    - content: "Global Admin"
+    - content: "Global Administrator"
       isCorrect: true
-      explanation: "Global Admin. Of the options listed, only the Global Admin role has the permission to enable PIM."
+      explanation: "Global Administrator. Of the options listed, only the Global Administrator role has the permission to enable PIM."
   - content: "A company has implemented Azure AD PIM. There's a need to ensure a new hire's request elevation before they make any changes in Azure, what should you do?"
     choices:
     - content: "Activate the new hire."

@@ -1,5 +1,3 @@
-
-
 ## Lab scenario
 In this lab, you create a Traffic Manager profile to deliver high availability for the fictional Contoso Ltd organization's web application.
 

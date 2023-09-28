@@ -8,7 +8,7 @@ Some sample applications of object detection include:
 - **Detecting tumors**: Medical imaging such as an MRI or x-rays that can detect known objects for medical diagnosis.
 
 ## Learning objectives 
-Learn how to use the Custom Vision service to create an image detection solution. In this module you will: 
+Learn how to use Azure AI Custom Vision service to create an image detection solution. In this module you will: 
 - Identify services in Azure for creating an object detection solution.
 - Provision a Custom Vision resource.
 - Train an object detection model.

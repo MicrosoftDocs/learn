@@ -34,7 +34,7 @@ Smart devices offer a wealth of connectivity and data options. Advancements in t
 
 Developers can use cloud-services, such as IoT Hub and Stream Analytics, to develop cloud-native apps with IoT integration. Since much of the groundwork has been done for you, development time can be decreased significantly.
 
-Because of the loosely coupled nature of cloud-native apps, for telemetry data you can choose a different database solution that is more suitable for streaming data, such as Cosmos DB. Rather than a traditional, relational database that might be more suitable for an inventory service.
+Because of the loosely coupled nature of cloud-native apps, you can choose a different database solution for telemetry data that's more suitable for streaming data, such as Cosmos DB, rather than a traditional, relational database that might be more suitable for an inventory service.
 
 :::column-end:::
 :::column span="1":::

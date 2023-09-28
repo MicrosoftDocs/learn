@@ -1,10 +1,10 @@
-The Language service provides various features for understanding human language. A client application can use each feature to better communicate with users, or use them together to provide more insight into what the user is saying, intending, and asking about.
+The Azure AI Language service provides various features for understanding human language. A client application can use each feature to better communicate with users, or use them together to provide more insight into what the user is saying, intending, and asking about.
 
-Language service features fall into two categories: Pre-configured features, and Learned features. Learned features require building and training a model to correctly predict appropriate labels.
+Azure AI Language service features fall into two categories: Pre-configured features, and Learned features. Learned features require building and training a model to correctly predict appropriate labels.
 
-This unit covers most of the capabilities of the Language service, but head over to the [Language service documentation](/azure/cognitive-services/language-service/overview) for a full list, including quickstarts and a full explanation of everything available.
+This unit covers most of the capabilities of the Azure AI Language service, but head over to the [Azure AI Language service documentation](/azure/cognitive-services/language-service/overview) for a full list, including quickstarts and a full explanation of everything available.
 
-The endpoint used to query a specific feature varies, but all of them are prefixed with the language resource you created in your Azure account. The endpoint will look something like this:
+The endpoint used to query a specific feature varies, but all of them are prefixed with the Azure AI Language resource you created in your Azure account. The endpoint will look something like this:
 
 ```http
 https://{ENDPOINT}/text/analytics/{VERSION}/{FEATURE}
@@ -20,7 +20,7 @@ Along with the POST query to the appropriate endpoint, a JSON body will be inclu
 
 ## Pre-configured features
 
-The Language service provides certain features without any model labeling or training. Once you create your resource, you can send your data and use the returned results within your app.
+The Azure AI Language service provides certain features without any model labeling or training. Once you create your resource, you can send your data and use the returned results within your app.
 
 The following features are all pre-configured.
 
@@ -71,7 +71,7 @@ A PII query will be sent to an endpoint similar to the following, with the task 
 
 ### Key phrase extraction
 
-Key phrase extraction is a feature that quickly pulls the main concepts out of the provided text. For example, given the text "Text Analytics is one of the features in Azure Cognitive Services.", the service would extract *"Azure Cognitive Services"* and *"Text Analytics"*.
+Key phrase extraction is a feature that quickly pulls the main concepts out of the provided text. For example, given the text "Text Analytics is one of the features in Azure AI Services.", the service would extract *"Azure AI Services"* and *"Text Analytics"*.
 
 A key phrase extraction query will be sent to an endpoint similar to the following, with the task specified as `KeyPhraseExtraction`.
 
@@ -123,7 +123,7 @@ Learned features require you to label data, train, and deploy your model to make
 
 ### Conversational language understanding (CLU)
 
-CLU is one of the core custom features offered by Azure Cognitive Services for Language. CLU helps users to build custom natural language understanding models to predict overall intent and extract important information from incoming utterances. CLU does require data to be tagged by the user to teach it how to predict intents and entities accurately.
+CLU is one of the core custom features offered by Azure AI Language. CLU helps users to build custom natural language understanding models to predict overall intent and extract important information from incoming utterances. CLU does require data to be tagged by the user to teach it how to predict intents and entities accurately.
 
 A language detection query will be sent to an endpoint similar to the following, with the task specified as `Conversation`. These custom features require extra parameters in the JSON body, including the `projectName` and `deploymentName` of your model.
 
@@ -185,4 +185,4 @@ The endpoint to query looks similar to the following.
 |`{DEPLOYMENTNAME}`     | The name of your deployment |
 |`{VERSION}`     | The api version number of the service you want to call. For example, `2022-05-01`   |
 
-For a complete list of capabilities and how to use them, see the Azure Cognitive Service for Language [documentation](/azure/cognitive-services/language-service/overview).
+For a complete list of capabilities and how to use them, see the Azure AI Language [documentation](/azure/cognitive-services/language-service/overview).

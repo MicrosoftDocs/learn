@@ -4,11 +4,11 @@ title: Persist enriched data in a knowledge store
 metadata:
   title: Persist enriched data in a knowledge store
   description: "Persist enriched data in a knowledge store"
-  ms.date: 06/21/2023
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

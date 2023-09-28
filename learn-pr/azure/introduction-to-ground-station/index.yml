@@ -3,7 +3,7 @@ uid: learn.introduction-to-azure-orbital-ground-station
 metadata:
   title: Introduction to Azure Orbital Ground Station
   description: Learn about the benefits, space market fit, and how-to provision services with Azure Orbital Ground Station.
-  ms.date: 09/26/2022
+  ms.date: 08/28/2023
   author: meaghanlewis
   ms.author: mosagie
   ms.topic: interactive-tutorial
@@ -12,10 +12,10 @@ title: Introduction to Azure Orbital Ground Station
 summary: Azure Orbital is an express route to space. It extends Azure capabilities and enables organizations to connect to the cloud from anywhere, analyze and disseminate space data, and build and test in the cloud from space. A part of the Azure Space portfolio, Azure Orbital Ground Station is a fully managed end-to-end service that enables satellite operators to communicate, uplink, downlink, and process data from their satellites/spacecrafts on a pay-as-you-go basis. In this module, we’ll look at AO Ground Station’s key features and how to perform essential steps in the Azure Orbital portal. 
 abstract: |
   After completing this module, you'll be able to:
-  - Understand how Azure Orbital Ground Station fits into the space market  
-  - Identify Azure Orbital Ground Station's key benefits 
-  - Articulate how Azure Orbital Ground Station works at each step in the architecture
-  - Know the steps to provision services, including registering a spacecraft, scheduling a contact, downlinking data, and processing data
+  - Understand how Azure Orbital Ground Station fits into the space market.  
+  - Identify Azure Orbital Ground Station's key benefits.
+  - Articulate how Azure Orbital Ground Station works at each step in the architecture.
+  - Know the steps to provision services, including registering a spacecraft, scheduling a contact, downlinking data, and processing data.
 prerequisites: |
   - Familiarity with Azure Space.
   - Ability to navigate the Azure portal.

@@ -1,5 +1,3 @@
-
-
 Code challenges will reinforce what you've learned and help you gain some confidence before continuing on.
 
 ## Role playing game battle challenge
