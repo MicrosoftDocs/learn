@@ -1,6 +1,6 @@
-Azure AI services are AI capabilities that can be built into web or mobile applications, in a way that’s straightforward to implement. These AI services include image recognition, natural language processing, speech, AI powered search and more. There're over a dozen [different services](/azure/ai-services/what-are-ai-services#available-azure-ai-services) that can be used separately or together to add AI power to applications.
+Azure AI services are AI capabilities that can be built into web or mobile applications, in a way that’s straightforward to implement. These AI services include image recognition, natural language processing, speech, AI powered search, and more. There're over a dozen [different services](/azure/ai-services/what-are-ai-services#available-azure-ai-services) that can be used separately or together to add AI power to applications.
 
-Examples of what can be done with Azure AI services include using Azure AI Vision to analyze images to detect faces and to help visually impaired people by describing their surroundings. The Content Safety service detects harmful content within text or images, including violent or hateful content, and report on its severity. Natural language capabilities are being used to summarize text, classify information, or extract key phrases. The Speech service provides powerful speech to text and text to speech capabilities, allowing speech to be accurately transcribed into text, or text to natural sounding voice audio. 
+Examples of what can be done with Azure AI services include using the Content Safety service to detect harmful content within text or images, including violent or hateful content, and report on its severity. Natural language capabilities are being used to summarize text, classify information, or extract key phrases. The Speech service provides powerful speech to text and text to speech capabilities, allowing speech to be accurately transcribed into text, or text to natural sounding voice audio. 
 
 Azure AI services are based on three principles that dramatically improve speed-to-market:
 - Prebuilt and ready to use
@@ -17,7 +17,7 @@ For example, in education, Immersive Reader is being used to support students by
 
 While Azure AI services can be used without any modification, some AI services can be customized to better fit specific requirements. Customization capabilities in Azure AI Vision, Azure AI Speech, and Azure OpenAI all allow you to add data to existing models. 
 
-For example, in sport, athletes, and coaches are customizing Azure AI Vision to improve performance and reduce injury. One resulting application allows surfers to upload a video and receive AI-generated insights and analysis. These insights can then be used by coaches, medics, judges, and event broadcasters.
+For example, in sport, athletes, and coaches are customizing Azure AI Vision to improve performance and reduce injury. One application allows [surfers](https://unlocked.microsoft.com/usa-surf) to upload a video and receive AI-generated insights and analysis. These insights can then be used by coaches, medics, judges, and event broadcasters.
 
 ## Azure AI services are accessed through APIs
 
@@ -27,5 +27,5 @@ Azure AI services are designed to be used in different development environments,
 
 AI services are cloud-based and accessed as an Azure resource. This means that they are managed in the same way as other Azure services, such as platform as a service (PaaS), infrastructure as a service (IaaS), or a managed database service. From creating or deleting resources, to availability and billing, the Azure platform and resource manager provides a consistent framework for all your Azure services. 
 
-Note: In some situations, AI has the potential to be used in ways that might compromise an individual’s privacy or rights. Microsoft follows six AI principles to help ensure AI services are ethical and fair. Because of this, certain AI services are restricted to ensure they are used responsibly.
+**Note**: In some situations, AI has the potential to be used in ways that might compromise an individual’s privacy or rights. Microsoft follows [six AI principles](/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai) to help ensure AI services are ethical and fair. Because of this, certain AI services are restricted to ensure they are used responsibly.
 

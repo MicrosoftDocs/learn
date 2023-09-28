@@ -46,11 +46,11 @@ quiz:
     - content: "You haven't associated the resource with the studio"
       isCorrect: true
       explanation: "Correct. To explore the capabilities of the translator service in the Language studio, you must first associate the resource with the studio."
-  - content: "What is an Azure AI Services resource?"
+  - content: "What is an Azure AI services resource?"
     choices:
     - content: "A bundle of several AI services in one resource"
       isCorrect: true
-      explanation: "Correct. An AI Services resource is a bundle of several AI services in one resource."
+      explanation: "Correct. An AI services resource is a bundle of several AI services in one resource."
     - content: "An AI service to recognize faces"
       isCorrect: false
       explanation: "Incorrect. The Face resource is one of many Azure AI services."
