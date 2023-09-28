@@ -31,7 +31,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-domain
 - azure-log-analytics
 - azure-monitor
 - entra

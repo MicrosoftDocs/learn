@@ -1,15 +1,15 @@
-In addition to other natural language processing capabilities, Azure Language service enables you to extract custom entities from various files.
+In addition to other natural language processing capabilities, Azure AI Language Service enables you to extract custom entities from various files.
 
-To test the custom entity extraction, we'll create a model and train it through Language Studio, then use a command line application to test it.
+To test the custom entity extraction, we'll create a model and train it through Azure AI Language Studio, then use a command line application to test it.
 
-## Create a *Language service* resource
+## Create an *Azure AI Language Service* resource
 
-To use custom entity recognition, you'll need to create an Azure Language service resource and select **Custom text classification & extraction** custom feature.
+To use custom entity recognition, you'll need to create an Azure AI Language Service resource and select **Custom text classification & extraction** custom feature.
 
-If you haven't already done so, create a **Language service** resource in your Azure subscription.
+If you haven't already done so, create an **Azure AI Language Service** resource in your Azure subscription.
 
 1. In a browser, open the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in with your Microsoft account.
-2. Select the **Create a resource** button, search for *Language*, and create a **Language service** resource. When asked about *Additional features*, select **Custom text classification & extraction**. Create the resource with the following settings:
+2. Select the **Create a resource** button, search for *Language*, and create an **Azure AI Language Service** resource. When asked about *Additional features*, select **Custom text classification & extraction**. Create the resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
     - **Region**: *Choose any available region*:
@@ -25,14 +25,14 @@ If you haven't already done so, create a **Language service** resource in your A
 
 3. Review and create the resource.
 
-### Get Language resource key and endpoint
+### Get Azure AI Language resource key and endpoint
 
-1. Navigate to the resource group in the [Azure portal](https://portal.azure.com?azure-portal=true), and select the Language resource
+1. Navigate to the resource group in the [Azure portal](https://portal.azure.com?azure-portal=true), and select the Azure AI Language resource
 2. Select **Keys and Endpoint** from the menu on the left side, located under **Resource Management**. You can copy it to your clipboard with the icon next to the key. We'll need one of the keys and the endpoint later, so either paste these values into Notepad for now or we'll come back to this page at that time.
 
 ## Upload sample ads
 
-After you've created the language service and storage account, you'll need to upload example ads to train your model later.
+After you've created the Azure AI Language Service and storage account, you'll need to upload example ads to train your model later.
 
 1. [Download sample classified ads](https://aka.ms/entity-extraction-ads) from this repo on GitHub. Extract the files from the `.zip` provided.
 
@@ -52,10 +52,10 @@ Once configuration is complete, create a custom named entity recognition project
 > [!NOTE]
 > You can also create, build, train, and deploy your model through the REST API
 
-1. Log into the [Language Studio](https://aka.ms/languageStudio) with your Azure account, and select the Azure subscription that you created your Language resource in, and select your Language resource
+1. Log into the [Azure AI Language Studio](https://aka.ms/languageStudio) with your Azure account, and select the Azure subscription that you created your Azure AI Language resource in, and select your Azure AI Language resource
 
     > [!NOTE]
-    > If you've previously logged into Language Studio, it's already linked to your previous Language resource. When creating the project in the following steps, be sure to switch that project to the correct resource.
+    > If you've previously logged into Azure AI Language Studio, it's already linked to your previous Azure AI Language resource. When creating the project in the following steps, be sure to switch that project to the correct resource.
 
 2. Under the **Extract information** section, select **Custom named entity recognition**
 3. Select **Create new project**
@@ -91,7 +91,7 @@ After you've labeled your data, you need to train your model.
 5. Choose **Automatically split the testing set from training data**
 
     > [!TIP]
-    > In your own extraction projects, use the testing split that best suits your data. For more consistent data and larger datasets, the Language service will automatically split the testing set by percentage. With smaller datasets, it's important to train with the right variety of possible input documents.
+    > In your own extraction projects, use the testing split that best suits your data. For more consistent data and larger datasets, the Azure AI Language Service will automatically split the testing set by percentage. With smaller datasets, it's important to train with the right variety of possible input documents.
 
 5. Click **Train**
 
@@ -114,7 +114,7 @@ When you're satisfied with the training of your model, it's time to deploy it, w
 
 ## Send entity recognition task to your model
 
-To test the text analytics capabilities of the Language service, we'll use a short command-line application that runs in the Cloud Shell on Azure.
+To test the text analytics capabilities of the Azure AI Language Service, we'll use a short command-line application that runs in the Cloud Shell on Azure.
 
 ### Run Cloud Shell
 
@@ -134,7 +134,7 @@ To test the text analytics capabilities of the Language service, we'll use a sho
 
 ### Configure and run PowerShell
 
-Now that you have a custom model, you can run a client application that uses the Language service.
+Now that you have a custom model, you can run a client application that uses the Azure AI Language Service.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-language.
 
@@ -155,10 +155,10 @@ Now that you have a custom model, you can run a client application that uses the
     code extract-entities.ps1
     ```
 
-3. In `extract-entities.ps1`, note the top two lines of the script with places for your Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key` and `$endpoint` with your resource values (`$projectName`, and `$modelName` should match what you entered above), and save the file.
+3. In `extract-entities.ps1`, note the top two lines of the script with places for your Azure AI Language Service key and endpoint, as well as your project and model names. Replace the placeholders for `$key` and `$endpoint` with your resource values (`$projectName`, and `$modelName` should match what you entered above), and save the file.
 
     > [!TIP]
-    > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true), find the Language resource you created earlier, and select the **Keys and endpoint** page on the left
+    > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true), find the Azure AI Language resource you created earlier, and select the **Keys and endpoint** page on the left
 
 4. Run the following command to call your model and extract the entities from the test file. Review the output.
 
@@ -177,4 +177,4 @@ Now that you have a custom model, you can run a client application that uses the
 
 ## Clean up
 
-When you don't need your project anymore, you can delete if from your **Projects** page in Language Studio. You can also remove the Language service and associated storage account in the [Azure portal](https://portal.azure.com?azure-portal=true).
+When you don't need your project anymore, you can delete if from your **Projects** page in Azure AI Language Studio. You can also remove the Azure AI Language Service and associated storage account in the [Azure portal](https://portal.azure.com?azure-portal=true).

@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check"
   ms.date: 07/13/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: false
@@ -15,7 +15,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You want to use the Computer Vision Analyze Image function to generate an appropriate caption for an image. Which visual feature should you specify?"
+  - content: "You want to use the Azure AI Vision Analyze Image function to generate an appropriate caption for an image. Which visual feature should you specify?"
     choices:
     - content: "Tags"
       isCorrect: false
@@ -26,14 +26,14 @@ quiz:
     - content: "Categories"
       isCorrect: false
       explanation: "That's incorrect. To generate a caption, include the Description visual feature in your analysis."
-  - content: "What is the purpose of the Computer Vision service?"
+  - content: "What is the purpose of the Azure AI Vision service?"
     choices:
     - content: "To provide functionality for audio transcription"
       isCorrect: false
-      explanation: "Incorrect. The Computer Vision service is designed to extract information from images, not audio."
+      explanation: "Incorrect. The Azure AI Vision service is designed to extract information from images, not audio."
     - content: "To extract information from images"
       isCorrect: true
-      explanation: "The Computer Vision service is designed to help you extract information from images through various functionalities."
+      explanation: "The Azure AI Vision service is designed to help you extract information from images through various functionalities."
     - content: "To detect the presence and location of specific sounds within an audio file"
       isCorrect: false
-      explanation: "Incorrect. The Computer Vision service is designed to extract information from images, not audio."
+      explanation: "Incorrect. The Azure AI Vision service is designed to extract information from images, not audio."

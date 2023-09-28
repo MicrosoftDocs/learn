@@ -45,7 +45,7 @@ quiz:
       explanation: "You can use Azure DevOps whether you deploy to the cloud or on-premises."
     - content: "A suite of services that provide an end-to-end tool chain"
       isCorrect: true
-      explanation: "Azure DevOps can help you throughout your application's entire life cycle &mdash; from planning all the way to deploying your application."
+      explanation: "Azure DevOps can help you throughout your application's entire lifecycle &mdash; from planning all the way to deploying your application."
     - content: "A DevOps course offered by Microsoft"
       isCorrect: false
       explanation: "Although you can take our courses, Azure DevOps is a collection of software and services."

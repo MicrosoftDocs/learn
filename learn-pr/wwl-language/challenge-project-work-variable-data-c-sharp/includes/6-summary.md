@@ -1,7 +1,3 @@
-
-
-
-
 Your challenge was to update an application to support multiple term search and to improve the "search status" information animation.
 
 In this module, you developed code that combines:

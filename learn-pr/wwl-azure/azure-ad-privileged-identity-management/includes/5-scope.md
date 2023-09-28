@@ -1,40 +1,70 @@
-:::image type="content" source="../media/az500-privileged-identity-management-scope-741f45a3.png" alt-text="Screenshot of the PIM blade showing Azure AD roles and Resource roles.":::
+## Role assignment overview
+
+The Privileged Identity Management (PIM) role assignments give you a secure way to grant access to resources in your organization. This section describes the assignment process. It includes assigning roles to members, activating assignments, approving or denying requests, extend and renewing assignments.
+
+PIM keeps you informed by sending you and other participants email notifications. These emails might also include links to relevant tasks, such as activating, approving, or denying a request.
+
+The following Privileged Identity Management. The email below informs Patti that Alex updated a role assignment for Emily.
+
+## :::image type="content" source="../media/pim-email-3e57c23c.png" alt-text="Screenshot showing email with updated a role assignment."::: 
+
+## Assign
+
+The assignment process starts by assigning roles to members. To grant access to a resource, the administrator assigns roles to users, groups, service principals, or managed identities. The assignment includes the following data:
+
+ -  The members or owners to assign the role.
+ -  The scope of the assignment. The scope limits the assigned role to a particular set of resources.
+ -  The type of the assignment
+     -  Eligible assignments require the member of the role to perform an action to use the role. Actions might include activation or requesting approval from designated approvers.
+     -  Active assignments don't require the member to perform any action to use the role. Members assigned as active have the privileges assigned to the role.
+ -  The duration of the assignment, using start and end dates or permanent. For eligible assignments, the members can activate or request approval during the start and end dates. For active assignments, the members can use the assigned role during this period of time.
+
+The following screenshot shows how the administrator assigns a role to members.
+
+:::image type="content" source="../media/role-assignment-04b22c03.png" alt-text="Screenshot showing how an administrator assigns a role to members.":::
 
 
- -  **Azure AD roles**. These roles are all in Azure Active Directory (such as Global Administrator, Exchange Administrator, and Security Administrator). You can read more about the roles and their functionality in Administrator role permissions in Azure Active Directory.
- -  **Azure resource roles**. These roles are linked to an Azure resource, resource group, subscription, or management group. Privileged Identity Management provides just-in-time access to both built-in roles like Owner, User Access Administrator, and Contributor, as well as custom roles.
+## Activate
 
-## Azure AD roles
+If users have been made eligible for a role, then they must activate the role assignment before using the role. To activate the role, users select a specific activation duration within the maximum (configured by administrators) and the reason for the activation request.
 
-Users can be assigned to different administrative roles in Azure AD. These role assignments control which tasks, such as adding or removing users or changing service settings, the users are able to perform on Azure AD, Microsoft 365 and other Microsoft Online Services and connected applications.
+The following screenshot shows how members activate their roles for a limited time.
 
-A global administrator can update which users are **permanently** assigned to roles in Azure AD, using PowerShell cmdlets such as `Add-MsolRoleMember` and `Remove-MsolRoleMember`, or through the Azure portal.
+## :::image type="content" source="../media/role-activation-913cac21.png" alt-text="Screenshot showing how members activate their role to a limited time."::: 
 
-Azure AD Privileged Identity Management (PIM) manages policies for privileged access for users in Azure AD. PIM assigns users to one or more roles in Azure AD, and you can assign someone to be permanently in the role, or eligible for the role. When a user is permanently assigned to a role, or activates an eligible role assignment, then they can manage Azure Active Directory, Microsoft 365, and other applications with the permissions assigned to their roles.
+If the role requires approval to activate, a notification will appear in the upper right corner of the user's browser, informing them the request is pending approval. If approval isn't required, the member can start using the role.
 
-There's no difference in the access given to someone with a permanent versus an eligible role assignment. The only difference is that some people don't need that access all the time. They are made eligible for the role, and can turn it on and off whenever they need to.
+## Approve or deny<br>
 
-### Roles managed in PIM
+Delegated approvers receive email notifications when a role request is pending their approval. Approvers can view, approve or deny these pending requests in PIM. After the request has been approved, the member can start using the role. For example, if a user or a group was assigned with Contribution role to a resource group, they'll be able to manage that particular resource group.
 
-Privileged Identity Management lets you assign users to common administrator roles, including:
+## Extend and renew assignments<br>
 
- -  **Global administrator** (also known as a Company administrator) has access to all administrative features. You can have more than one global admin in your organization. The person who signs up to purchase Microsoft 365 automatically becomes a global admin.
- -  **Privileged role administrator** manages Azure AD PIM and updates role assignments for other users.
- -  **Billing administrator** makes purchases, manages subscriptions, manages support tickets, and monitors service health.
- -  **Password administrator** users with this role have limited ability to manage passwords. This role does not grant the ability to manage service requests or monitor service health. Whether a Password Administrator can reset a user's password depends on the user's role.
- -  **Service administrator** manages service requests and monitors service health.
-    
-    > [!NOTE]
-    > If you are using Microsoft 365, then before assigning the service admin role to a user, first assign the user administrative permissions to a service, such as Exchange Online.
- -  **User management administrator** resets passwords, monitors service health, and manages user accounts, user groups, and service requests. The user management admin can’t delete a global admin, create other admin roles, or reset passwords for billing, global, and service admins.
- -  **Exchange administrator** has administrative access to Exchange Online through the Exchange admin center (EAC), and can perform almost any task in Exchange Online.
- -  **SharePoint administrator** has administrative access to SharePoint Online through the SharePoint Online admin center, and can perform almost any task in SharePoint Online.
- -  **Skype for Business administrator** has administrative access to Skype for Business through the Skype for Business admin center, and can perform almost any task in Skype for Business Online.
+After administrators set up the time-bound owner or member assignments, the first question you might ask is, what happens if an assignment expires? In this new version, we provide two options for this scenario:
 
-### Roles not managed in PIM
+ -  **Extend** – When a role assignment nears expiration, the user can use Privileged Identity Management to request an extension for the role assignment
+ -  **Renew** – When a role assignment has already expired, the user can use Privileged Identity Management to request a renewal for the role assignment
 
-Roles within Exchange Online or SharePoint Online, except for those mentioned above, are not represented in Azure AD and so are not visible in PIM. Azure subscriptions and resource groups are also not represented in Azure AD.
+Both user-initiated actions require approval from a Global Administrator or Privileged Role Administrator. Admins don't need to be in the business of managing assignment expirations. You can wait for the extension or renewal requests to arrive for simple approval or denial.
 
-## Azure resources
+## Scenarios
 
-When you first set up Privileged Identity Management for Azure resources, you need to discover and select the resources to protect with Privileged Identity Management. There's no limit to the number of resources that you can manage with Privileged Identity Management. However, we recommend starting with your most critical (production) resources.
+Privileged Identity Management supports the following scenarios:
+
+### Privileged Role Administrator permissions
+
+ -  Enable approval for specific roles
+ -  Specify approver users or groups to approve requests
+ -  View request and approval history for all privileged roles
+
+### Approver permissions
+
+ -  View pending approvals (requests)
+ -  Approve or reject requests for role elevation (single and bulk)
+ -  Provide justification for my approval or rejection
+
+### Eligible role user permissions
+
+ -  Request activation of a role that requires approval
+ -  View the status of your request to activate
+ -  Complete your task in Azure AD if activation was approved

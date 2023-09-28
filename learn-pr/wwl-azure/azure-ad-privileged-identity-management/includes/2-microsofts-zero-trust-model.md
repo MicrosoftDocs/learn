@@ -38,7 +38,7 @@ To address this new world of computing, Microsoft highly recommends the Zero Tru
  -  **Use least privilege access** \- Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
  -  **Assume breach** \- Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
 
-## Microsoft's Zero Trust architecture
+## Microsoft's Zero Trust architecture<br>
 
 Below is a simplified reference architecture for our approach to implementing Zero Trust. The primary components of this process are Intune for device management and device security policy configuration, Azure AD conditional access for device health validation, and Azure AD for user and device inventory.
 

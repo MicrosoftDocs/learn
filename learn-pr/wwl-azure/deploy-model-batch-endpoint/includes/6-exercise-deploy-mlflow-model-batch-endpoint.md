@@ -1,5 +1,3 @@
-
-
 Now, it's your chance to explore how to deploy models to a batch endpoint.
 
 In this exercise, you will:

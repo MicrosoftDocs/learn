@@ -1,5 +1,3 @@
-
-
 The specific values used in a hyperparameter tuning run, or **sweep job**, depend on the type of **sampling** used.
 
 There are three main sampling methods available in Azure Machine Learning:

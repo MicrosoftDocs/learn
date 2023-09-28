@@ -9,5 +9,5 @@ After that, you learned how to update your dependencies. Dependencies are update
 - Review the official [NuGet documentation](/nuget/).
 - Review the official [.NET CLI documentation](/dotnet/core/tools/).
 - Browse packages available on [NuGet](https://www.nuget.org).
-- Check the [.NET website](https://dot.net) for all things .NET.
+- Check the [.NET website](https://dotnet.microsoft.com/) for all things .NET.
 - Try [Visual Studio Code](https://code.visualstudio.com) for editing text and code files.

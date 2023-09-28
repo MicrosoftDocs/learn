@@ -3,7 +3,7 @@ uid: learn.incident-response-with-alerting-on-azure
 metadata:
   title: Improve incident response with alerting on Azure
   description: Respond to incidents and activities in your infrastructure through alerting capabilities in Azure Monitor.
-  ms.date: 03/28/2023
+  ms.date: 09/14/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial

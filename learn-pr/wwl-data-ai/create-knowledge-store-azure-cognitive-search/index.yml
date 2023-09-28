@@ -5,7 +5,7 @@ metadata:
   description: "Create a knowledge store with Azure Cognitive Search"
   ms.date: 07/30/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: cognitive-search
 title: Create a knowledge store with Azure Cognitive Search

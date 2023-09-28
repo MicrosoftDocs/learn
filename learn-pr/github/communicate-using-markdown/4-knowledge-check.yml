@@ -3,48 +3,50 @@ uid: learn.github.communicate-using-markdown.4-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check what you've learned.
+  description: This content is part of the "Communicate effectively on GitHub using Markdown" module.
   ms.date: 06/26/2020
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: training-unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following Markdown snippets would produce this text: *Hello, **world**!*?"
+  - content: "Which of the following Markdown snippets would produce the text *Hello, **world**!* in bold italics?"
     choices:
     - content: "`*Hello, *world*!*`"
       isCorrect: false
-      explanation: "This would produce *Hello, *world*!*."
+      explanation: "Incorrect. This snippet would produce *Hello, *world*!*."
     - content: "`**Hello, *world*!**`"
       isCorrect: false
-      explanation: "This would produce **Hello, *world*!**."
+      explanation: "Incorrect. This snippet would produce **Hello, *world*!**."
     - content: "`*Hello, **world**!*`"
       isCorrect: true
-      explanation: "Correct! Remember that you can also use underscores (`_`) instead of asterisks if you prefer."
+      explanation: "Correct. Remember that you can also use underscores (`_`) instead of asterisks if you prefer."
+    - content: "`### Hello, world!`"
+      isCorrect: False
+      explanation: "Incorrect. This snippet would produce ### Hello, world!"
   - content: "How do you print certain characters, like asterisks (`*`) and underscores (`_`), literally on your output?"
     choices:
     - content: "Use three in a row, like `***` or `___`."
       isCorrect: false
-      explanation: "This won't get you the results you're looking for."
+      explanation: "Incorrect. This won't get you the results you're looking for."
     - content: "Escape them with a backslash, like `\\*` or `\\_`."
       isCorrect: true
-      explanation: "You can also escape other reserved characters, including `{` and `#`, using backslashes."
-    - content: "Unfortunately, this is not supported at this time."
+      explanation: "Correct. You can also escape other reserved characters, including `{` and `#`, using backslashes."
+    - content: "Unfortunately, this isn't supported at this time."
       isCorrect: false
-      explanation: "This question was written in Markdown and uses those characters, so it's definitely possible."
-  - content: "Suppose there is an HTML snippet that you want to include on your GitHub Pages web site, but Markdown doesn't offer a way to render it. What should you do?"
+      explanation: "Incorrect. This question was written in Markdown and uses those characters, so it's definitely possible."
+  - content: "Suppose there's an HTML snippet that you want to include on your GitHub Pages web site, but Markdown doesn't offer a way to render it. What should you do?"
     choices:
     - content: "Just add the HTML inline."
       isCorrect: true
-      explanation: "Markdown is not a complete replacement for HTML, so it's understood that you may need to add HTML in to get the final results you're looking for."
+      explanation: "Correct. Markdown isn't a complete replacement for HTML. You may need to add HTML to get the final results you're looking for."
     - content: "Cut the content. If it's not supported in Markdown, then it's probably not worth including."
       isCorrect: false
-      explanation: "You can include HTML snippets in Markdown."
-    - content: "Open an issue that requests Markdown support for your very specialized scenario."
+      explanation: "Incorrect. You can include HTML snippets in Markdown."
+    - content: "Open an issue that requests Markdown support for your specialized scenario."
       isCorrect: false
-      explanation: "This path would offer a very low chance for success. Why not just put the HTML inline?"
+      explanation: "Incorrect. This path would offer a low chance for success. Why not just put the HTML inline?"
