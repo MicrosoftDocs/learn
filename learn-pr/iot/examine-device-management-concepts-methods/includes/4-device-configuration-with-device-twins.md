@@ -64,96 +64,97 @@ The solution back end operates on the device twin using the following atomic ope
 - **Replace desired properties**. This operation enables the solution back end to completely overwrite all existing desired properties and substitute a new JSON document for `properties/desired`.
 - **Replace tags**. This operation enables the solution back end to completely overwrite all existing tags and substitute a new JSON document for `tags`.
 - **Receive twin notifications**. This operation allows the solution back end to be notified when the twin is modified. To do so, your IoT solution needs to create a route and to set the Data Source equal to *twinChangeEvents*. By default, no such route exists, so no twin notifications are sent. If the rate of change is too high, or for other reasons such as internal failures, the IoT Hub might send only one notification that contains all changes. Therefore, if your application needs reliable auditing and logging of all intermediate states, you should use device-to-cloud messages. The twin notification message includes properties and body.
+
   - Properties. The properties for a twin notification message are shown in the following table. Message system properties are prefixed with the $ symbol.
   
-        :::row:::
-          :::column:::
-            **Name**
-          :::column-end:::
-          :::column:::
-            **Value**
-          :::column-end:::
-        :::row-end:::
-        :::row:::
-          :::column:::
-            $content-type
-          :::column-end:::
-          :::column:::
-            application/json
-          :::column-end:::
-        :::row-end:::
-        :::row:::
-          :::column:::
-            $iothub-enqueuedtime
-          :::column-end:::
-          :::column:::
-            Date and time when the notification was sent.
-          :::column-end:::
-        :::row-end:::
-        :::row:::
-          :::column:::
-            $iothub-message-source
-          :::column-end:::
-          :::column:::
-            twinChangeEvents
-          :::column-end:::
-        :::row-end:::
-        :::row:::
-          :::column:::
-            $content-encoding
-          :::column-end:::
-          :::column:::
-            utf-8
-          :::column-end:::
-        :::row-end:::
-        :::row:::
-          :::column:::
-            deviceId
-          :::column-end:::
-          :::column:::
-            ID of the device.
-          :::column-end:::
-        :::row-end:::
-        :::row:::
-          :::column:::
-            hubName
-          :::column-end:::
-          :::column:::
-            Name of IoT Hub that generated the event.
-          :::column-end:::
-        :::row-end:::
-        :::row:::
-          :::column:::
-            operationTimestamp
-          :::column-end:::
-          :::column:::
-            ISO8601 timestamp of operation.
-          :::column-end:::
-        :::row-end:::
-        :::row:::
-          :::column:::
-            iothub-message-schema
-          :::column-end:::
-          :::column:::
-            The message schema associated with the event category; for example, deviceLifecycleNotification.
-          :::column-end:::
-        :::row-end:::
-        :::row:::
-          :::column:::
-            moduleid
-          :::column-end:::
-          :::column:::
-            The module ID. This property is output only for module lifecycle and twin change events.
-          :::column-end:::
-        :::row-end:::
-        :::row:::
-          :::column:::
-            opType
-          :::column-end:::
-          :::column:::
-            "replaceTwin" or "updateTwin"
-          :::column-end:::
-        :::row-end:::
+      :::row:::
+        :::column:::
+          **Name**
+        :::column-end:::
+        :::column:::
+          **Value**
+        :::column-end:::
+      :::row-end:::
+      :::row:::
+        :::column:::
+          $content-type
+        :::column-end:::
+        :::column:::
+          application/json
+        :::column-end:::
+      :::row-end:::
+      :::row:::
+        :::column:::
+          $iothub-enqueuedtime
+        :::column-end:::
+        :::column:::
+          Date and time when the notification was sent.
+        :::column-end:::
+      :::row-end:::
+      :::row:::
+        :::column:::
+          $iothub-message-source
+        :::column-end:::
+        :::column:::
+          twinChangeEvents
+        :::column-end:::
+      :::row-end:::
+      :::row:::
+        :::column:::
+          $content-encoding
+        :::column-end:::
+        :::column:::
+          utf-8
+        :::column-end:::
+      :::row-end:::
+      :::row:::
+        :::column:::
+          deviceId
+        :::column-end:::
+        :::column:::
+          ID of the device.
+        :::column-end:::
+      :::row-end:::
+      :::row:::
+        :::column:::
+          hubName
+        :::column-end:::
+        :::column:::
+          Name of IoT Hub that generated the event.
+        :::column-end:::
+      :::row-end:::
+      :::row:::
+        :::column:::
+          operationTimestamp
+        :::column-end:::
+        :::column:::
+          ISO8601 timestamp of operation.
+        :::column-end:::
+      :::row-end:::
+      :::row:::
+        :::column:::
+          iothub-message-schema
+        :::column-end:::
+        :::column:::
+          The message schema associated with the event category; for example, deviceLifecycleNotification.
+        :::column-end:::
+      :::row-end:::
+      :::row:::
+        :::column:::
+          moduleid
+        :::column-end:::
+        :::column:::
+          The module ID. This property is output only for module lifecycle and twin change events.
+        :::column-end:::
+      :::row-end:::
+      :::row:::
+        :::column:::
+          opType
+        :::column-end:::
+        :::column:::
+          "replaceTwin" or "updateTwin"
+        :::column-end:::
+      :::row-end:::
 
   - Body. This section of a twin notification message includes all the twin changes in a JSON format. It uses the same format as a patch, with the difference that it can contain all twin sections: tags, properties.reported, properties.desired, and that it contains the `$metadata` elements.
 
