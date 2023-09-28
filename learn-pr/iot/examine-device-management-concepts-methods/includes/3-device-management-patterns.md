@@ -31,4 +31,4 @@ You can use a direct method to initiate device management actions (such as reboo
 You can use a back-end app in the cloud to run device twin queries to set a device twin desired property or to report on the progress of your device management actions. The device is responsible for:
 
 - Handling the property changed event and updating the local variables that correspond to the device twin desired property.
-- Communicating the device twin reported property setting to IoT hub after the updated desired property has been implemented successfully.
+- Communicating the device twin reported property setting to an IoT hub after the updated desired property has been implemented successfully.

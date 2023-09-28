@@ -175,7 +175,7 @@ The device app operates on the device twin using the following atomic operations
 
 All the preceding operations require the `DeviceConnect` permission.
 
-The Azure IoT device SDKs make it easy to use the preceding operations from many languages and platforms.
+The Azure IoT Hub device SDKs make it easy to use the preceding operations from many languages and platforms.
 
 ## Device twin metadata
 
@@ -243,4 +243,4 @@ IoT Hub does not preserve desired properties update notifications for disconnect
 The device app can ignore all notifications with `$version` less or equal than the version of the full retrieved document. This approach is possible because IoT Hub guarantees that versions always increment.
 
 > [!NOTE]
-> This logic is already implemented in the Azure IoT device SDKs. This description is useful only if the device app cannot use any of Azure IoT device SDKs and must program the MQTT interface directly.
+> This logic is already implemented in the Azure IoT Hub device SDKs. This description is useful only if the device app cannot use any of Azure IoT device SDKs and must program the MQTT interface directly.
