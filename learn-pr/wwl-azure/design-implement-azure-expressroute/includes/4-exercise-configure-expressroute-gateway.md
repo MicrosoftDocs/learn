@@ -1,4 +1,3 @@
-
 ## Lab scenario
 
 In this lab, you'll create a virtual network gateway for ExpressRoute. 
