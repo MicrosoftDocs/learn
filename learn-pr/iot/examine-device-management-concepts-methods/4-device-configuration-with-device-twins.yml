@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.examine-device-management-concepts-methods.configuration-using-device-twins
-title: Examine device configuration using device twins for Azure IoT Hub
+title: Examine device configuration using device twins in Azure IoT Hub
 metadata:
-  title: Examine device configuration using device twins for Azure IoT Hub
+  title: Examine device configuration using device twins in Azure IoT Hub
   description: This content is part of Examine device management concepts and methods for Azure IoT Hub
   ms.date: 09/26/2023
   author: kgremban

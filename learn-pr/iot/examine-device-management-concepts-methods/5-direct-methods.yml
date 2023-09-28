@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.examine-device-management-concepts-methods.using-direct-methods
-title: Examine device management using direct methods for Azure IoT Hub
+title: Examine device management using direct methods in Azure IoT Hub
 metadata:
-  title: Examine device management using direct methods for Azure IoT Hub
+  title: Examine device management using direct methods in Azure IoT Hub
   description: This content is part of Examine device management concepts and methods for Azure IoT Hub
   ms.date: 09/26/2023
   author: kgremban
