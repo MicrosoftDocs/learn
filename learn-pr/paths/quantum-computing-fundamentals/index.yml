@@ -17,6 +17,10 @@ summary: |
 
   Imagine you're the new member of a space crew. The spaceship is equipped with a computer that has access to the Azure Quantum servers on Earth and you can use the power of quantum to complete different tasks. During your training as a new crew member, you'll learn about quantum computing and how to use the Microsoft Azure Quantum service.
 
+  Welcome aboard!
+
+  <img src="/training/quantum/qsharp-create-first-quantum-development-kit/media/spaceship-core.svg" alt="Spaceship of the quantum exploration crew." width="350" height="304"></img>
+
   After completing this learning path, you'll be able to:
   - Explain the fundamental concepts of quantum computing.
   - Identify the kinds of problems quantum algorithms can solve more efficiently than classical algorithms.
@@ -38,9 +42,12 @@ products:
 subjects:
 - cloud-computing
 modules:
+- learn.quantum.get-started-azure-quantum
 - learn.quantum.qsharp-create-first-quantum-development-kit
 - learn.quantum.qsharp-explore-key-concepts-quantum-computing
+- learn.quantum.solve-graph-coloring-problems-grovers-search
 - learn.quantum.estimate-resources-quantum-algorithms
 - learn.quantum.use-qsharp-libraries
+- learn.quantum.run-quantum-algorithms-hardware
 trophy:
   uid: learn.quantum-computing-fundamentals.trophy
