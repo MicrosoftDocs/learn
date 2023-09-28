@@ -8,7 +8,7 @@ Of these options, direct methods and device twin properties are good choices for
 
 ## Choosing between device twin and direct method approaches
 
-Here is a detailed comparison of the various cloud-to-device communication options.
+Here's a detailed comparison of the various cloud-to-device communication options.
 
 :::row:::
   :::column:::
@@ -57,7 +57,7 @@ Here is a detailed comparison of the various cloud-to-device communication optio
     Durability
   :::column-end:::
   :::column:::
-    Disconnected devices are not contacted. The solution back end is notified that the device is not connected.
+    Disconnected devices aren't contacted. The solution back end is notified that the device isn't connected.
   :::column-end:::
   :::column:::
     Property values are preserved in the device twin. Device will read it at next reconnection. Property values are retrievable with the IoT Hub query language.
