@@ -120,7 +120,7 @@ By using Azure AD B2C and with the help of msal-node library, you added an authe
 
 ## Notes
 
-- [Azure AD B2C product content](https://learn.microsoft.com/azure/active-directory-b2c).
+- [Azure AD B2C product content](/azure/active-directory-b2c).
 - [microsoft-authentication-libraries-for-js](https://azuread.github.io/microsoft-authentication-library-for-js/ref/modules/_azure_msal_node.html).
 - [msal-node package in npm](https://www.npmjs.com/package/@azure/msal-node).
 - [MSAL Node Standalone Sample: Authorization Code Grant on Azure AD B2C](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/samples/msal-node-samples/b2c-auth-code).

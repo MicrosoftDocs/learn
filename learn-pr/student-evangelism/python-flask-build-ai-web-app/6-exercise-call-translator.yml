@@ -18,14 +18,14 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "What is the name of the HTTP header that carries API keys in calls to Azure Cognitive Services?"
+    - content: "What is the name of the HTTP header that carries API keys in calls to Azure AI services?"
       choices:
       - content: "Ocp-Apim-Cognitive-Key"
         isCorrect: false
         explanation: "Incorrect. This isn't quite right. These API keys are frequently called \"subscription\" keys."
       - content: "Ocp-Apim-Subscription-Key"
         isCorrect: true
-        explanation: "Correct! Ocp-Apim-Subscription-Key is the name of the HTTP header that carries API keys in calls to Azure Cognitive Services."
+        explanation: "Correct! Ocp-Apim-Subscription-Key is the name of the HTTP header that carries API keys in calls to Azure AI services."
       - content: "Ocp-Apim-Auth-Key"
         isCorrect: false
         explanation: "Incorrect. This isn't quite right. These API keys are frequently called \"subscription\" keys."

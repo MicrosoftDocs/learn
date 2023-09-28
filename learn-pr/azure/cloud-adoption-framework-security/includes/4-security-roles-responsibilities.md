@@ -58,7 +58,5 @@ Security architecture is affected by different factors:
 
 ## Recommended content
 
-- [Microsoft Cybersecurity Reference Architectures (MCRA) - People](https://aka.ms/MCRA-IG-People) 
-An interactive training guide for people who are new to security.
 - [MCRA Security Roles - YouTube](https://www.youtube.com/watch?v=GlqjvlX93gY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=13) 
 Overview of the roles and responsibilities in a security program. Includes a discussion of how they're evolving to meet the needs of modern attacks, cloud technology, and Zero Trust principles. This top-to-bottom view of roles includes the board and executives.

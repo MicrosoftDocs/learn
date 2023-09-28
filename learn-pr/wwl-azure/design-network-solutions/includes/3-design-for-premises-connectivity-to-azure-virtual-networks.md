@@ -6,7 +6,7 @@ Let's examine Azure services that provide connectivity between Azure resources, 
 
 An [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) connection is a type of virtual network gateway that sends encrypted traffic between an Azure virtual network and an on-premises location. The encrypted traffic goes over the public internet. There are different configurations available for VPN Gateway connections, such as, site-to-site, point-to-site, or virtual network-to-network.
 
-**Reference architecture**: [Hybrid network with Azure VPN Gateway](/azure/architecture/reference-architectures/hybrid-networking/vpn)
+**Reference architecture**: [Hybrid network with Azure VPN Gateway](/azure/architecture/reference-architectures/hybrid-networking/#vpn-connection)
 
 ### Azure ExpressRoute
 

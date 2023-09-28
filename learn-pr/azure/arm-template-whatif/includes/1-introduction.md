@@ -1,4 +1,4 @@
-Deployments that use Azure Resource Manager templates (ARM templates) and Bicep files result in a series of changes to your Azure environment. In this module, you learn how to review the changes that will happen before you execute a deployment.
+Deployments that use Azure Resource Manager templates (ARM templates) and Bicep files result in a series of changes to your Azure environment. In this module, you learn how to preview changes before you execute a deployment.
 
 ## Example scenario
 
@@ -12,7 +12,7 @@ In this module, you gain an understanding of the what-if operation for Azure Res
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to preview the changes that will happen before you deploy by using the what-if operation.
+By the end of this module, you're able to preview changes to your Azure environment before you deploy them by using the what-if operation.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ You should be familiar with:
 - Creating and deploying basic ARM templates, using either Bicep or JSON.
 - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
-To follow along with the exercises in the module, you'll need:
+To follow along with the exercises in the module, you need:
 
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
 - Either:

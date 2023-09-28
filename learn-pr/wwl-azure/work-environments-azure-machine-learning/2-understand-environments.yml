@@ -4,11 +4,10 @@ title: Understand environments
 metadata:
   title: Understand environments
   description: "Learn about environments in Azure Machine Learning, and how to list the available environments in a workspace."
-  ms.date: 02/28/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-environments.md)]

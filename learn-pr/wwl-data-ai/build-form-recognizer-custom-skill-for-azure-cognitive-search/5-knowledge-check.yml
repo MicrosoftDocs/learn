@@ -28,7 +28,7 @@ quiz:
     - content: "formSasToken."
       isCorrect: false
       explanation: "Incorrect. The formSasToken value is used to authenticate with an Azure Storage account when the form is stored there."
-  - content: "You're troubleshooting your Cognitive Search indexing process. You have a single custom skill that calls Form Recognizer but requests are never received by your skill. Which of the following stages of the indexing process might be causing the problem?"
+  - content: "You're troubleshooting your Cognitive Search indexing process. You have a single custom skill that calls Azure AI Document Intelligence but requests are never received by your skill. Which of the following stages of the indexing process might be causing the problem?"
     choices:
     - content: "Push to index."
       isCorrect: false

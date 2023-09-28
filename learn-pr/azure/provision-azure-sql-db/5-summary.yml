@@ -32,12 +32,12 @@ quiz:
       - content: "An administrative container for your databases."
         isCorrect: true
         explanation: "You can control logins, firewall rules, and security policies through the logical server."
-      - content: "Another name for an Azure SQL database instance."
+      - content: "Another name for the Azure SQL Managed Instance service."
         isCorrect: false
-        explanation: "Remember that you can have multiple database instances. Is there a way to administer them collectively?"
+        explanation: "Remember that you can have multiple databases. You can manage multiple databases in a single Azure SQL Database logical server. Azure SQL Managed Instance is a different Azure service."
       - content: "A server that defines the logical rules that sort and compare data."
         isCorrect: false
-        explanation: "_Collation_ refers to the rules that sort and compare data."
+        explanation: "_Collation_ refers to the rules that sort and compare data in tables. You can manage multiple databases in a single Azure SQL Database logical server."
     - content: "Your Azure SQL database provides adequate storage and compute power. But you find that you need more IO throughput. Which performance model might you use?"
       choices:
       - content: "DTU"

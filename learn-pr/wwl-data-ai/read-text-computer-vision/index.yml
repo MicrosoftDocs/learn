@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.wwl.read-text-computer-vision
 metadata:
-  title: Read text with the Computer Vision service
-  description: "Read text with the Computer Vision service"
-  ms.date: 01/27/2023
+  title: Read text with Azure AI Computer Vision
+  description: "Use optical character recognition (OCR) to read text with Azure AI Computer Vision."
+  ms.date: 08/18/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
+  ms.service: artificial-intelligence
   ms.subservice: computer-vision
-title: Read text with the Computer Vision service
+title: Read text with Azure AI Computer Vision
 summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
 abstract: |
-  Learn how to read text in images with the Computer Vision service
+  Learn how to read text in images with Azure AI Computer Vision.
 prerequisites: |
   Ability to navigate the Azure portal
 iconUrl: /training/achievements/read-text-computer-vision.svg

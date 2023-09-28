@@ -28,7 +28,7 @@ roles:
 - student
 - developer
 products:
-- azure-app-service-static
+- static-web-apps
 units:
 - learn.language.vue-get-started.1-introduction
 - learn.language.vue-get-started.2-create-app

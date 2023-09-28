@@ -1,5 +1,4 @@
 
-
 Joining a device to Azure AD is not a complicated procedure. You can do it right after the Windows OS installation, or you can do it later, at any time. To join a Windows device to Azure AD at the end of Windows setup process, follow these steps:
 
 1.  When you turn on your new device and start the setup process, you should see the Getting Ready message. Follow the prompts to set up your device.

@@ -4,13 +4,10 @@ title: Exercise - Configure a resource lock
 metadata:
   title: Exercise - Configure a resource lock
   description: "Exercise - Configure a resource lock"
-  ms.date: 10/14/2022
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-configure-resource-lock.md)]

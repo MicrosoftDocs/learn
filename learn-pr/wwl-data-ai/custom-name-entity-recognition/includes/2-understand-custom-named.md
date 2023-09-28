@@ -1,10 +1,10 @@
 Custom NER is an Azure API service that looks at documents, identifies, and extracts user defined entities. These entities could be anything from names and addresses from bank statements to knowledge mining to improve search results.
 
-Custom NER is part of the Language service in Azure Cognitive Services.
+Custom NER is part of the Azure AI Language Service in Azure AI Services.
 
 ## Custom vs built-in NER
 
-The Language service provides certain built-in entity recognition, to recognize things such as a person, location, organization, or URL. Built-in NER allows you to set up the service with minimal configuration, and extract entities. To call a built-in NER, create your service and call the endpoint for that NER service:
+The Azure AI Language Service provides certain built-in entity recognition, to recognize things such as a person, location, organization, or URL. Built-in NER allows you to set up the service with minimal configuration, and extract entities. To call a built-in NER, create your service and call the endpoint for that NER service:
 
 ```rest
 <YOUR-ENDPOINT>/text/analytics/v3.2-preview.2/entities/recognition/general
@@ -50,11 +50,11 @@ Custom NER, which is the focus of the rest of this module, is available when the
 
 Examples of when you'd want custom NER include specific legal or bank data, knowledge mining to enhance catalog search, or looking for specific text for audit policies. Each one of these projects requires a specific set of entities and data it needs to extract.
 
-## Language service project life cycle
+## Azure AI Language Service project life cycle
 
 ![Conceptual diagram showing a project steps to define entities, tag data, train model, view model, improve model, deploy model, and extract entities.](../media/extraction-development-lifecycle.png#lightbox)
 
-Creating an entity extraction model typically follows a similar path to most Language service features:
+Creating an entity extraction model typically follows a similar path to most Azure AI Language Service features:
 
 1. **Define entities**: Understanding the data and entities you want to identify, and try to make them as clear as possible. For example, defining exactly which parts of a bank statement you want to extract.
 2. **Tag data**: Label, or tag, your existing data, specifying what text in your dataset corresponds to which entity. This step is important to do accurately and completely, as any wrong or missed labels will reduce the effectiveness of the trained model. A good variation of possible input documents is useful. For example, label bank name, customer name, customer address, specific loan or account terms, loan or account amount, and account number.
@@ -114,7 +114,7 @@ Your payload will look similar to the following JSON:
 
 ## Project limits
 
-The Language service enforces the following restrictions:
+The Azure AI Language Service enforces the following restrictions:
 
 - **Training** - at least 10 files, and not more than 100,000
 - **Deployments** - 10 deployment names per project

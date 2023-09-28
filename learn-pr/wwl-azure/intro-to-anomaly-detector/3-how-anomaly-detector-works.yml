@@ -4,11 +4,11 @@ title: How Anomaly Detector works
 metadata:
   title: How Anomaly Detector works
   description: "The Anomaly Detector service identifies anomalies that exist outside the scope of a boundary. The boundary is set using a sensitivity value. Learn the basics of accepted data and data consistency recommendations."
-  ms.date: 02/01/2023
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

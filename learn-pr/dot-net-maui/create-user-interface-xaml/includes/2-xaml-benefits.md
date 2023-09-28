@@ -25,11 +25,11 @@ It's common for files that contain mark-up language to be processed and interpre
 
 XAML is a declarative mark-up language created by Microsoft. XAML was designed to simplify the process of creating the UI in applications.
 
-The XAML documents you create contain elements that declaratively describe the application UI elements. Keep in mind that these elements in XAML directly represent the instantiation of objects. Once you've define an element in XAML, you can access it in code-behind files and define behavior using C# code.
+The XAML documents you create contain elements that declaratively describe the application UI elements. Keep in mind that these elements in XAML directly represent the instantiation of objects. Once you've defined an element in XAML, you can access it in code-behind files and define behavior using C# code.
 
 ## Difference between .NET MAUI XAML and Microsoft XAML
 
-XAML is based on the Microsoft 2009 XAML specification. However, the specification defines only the syntax of the language. As with Windows Presentation Foundation (WPF), Universal Windows Platform (UWP), and WinUI 3, all of which use XAML, the elements you declare in the XAML will change.
+XAML is based on the Microsoft 2009 XAML specification. However, that specification defines only the syntax of the language. As with Windows Presentation Foundation (WPF), Universal Windows Platform (UWP), and WinUI 3, all of which use XAML, the elements you declare in the XAML will change.
 
 XAML first appeared in 2006, with WPF. If you've been working with Microsoft XAML for a while, the XAML syntax should look familiar.
 
