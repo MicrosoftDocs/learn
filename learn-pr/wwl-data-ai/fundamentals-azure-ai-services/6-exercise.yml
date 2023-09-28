@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-azure-ai-services.exercise
+title: Exercise - Explore Content Moderator Studio
+metadata:
+  title: Exercise - Explore Content Moderator Studio
+  description: "Exercise - Explore Content Moderator Studio"
+  ms.date: 09/28/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure-ai-services
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-azure-ai-services.what-are-ai-services
+title: AI services on the Azure platform
+metadata:
+  title: AI services on the Azure platform
+  description: "AI services on the Azure platform"
+  ms.date: 09/28/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure-ai-services
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-are-ai-services.md)]
