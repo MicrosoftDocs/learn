@@ -6,7 +6,7 @@ In Microsoft Fabric, data scientists, business users, and analysts all work on t
 
 ## Use of notebooks in data science
 
-Notebooks are a common tool for data scientists as they allow to combine code, explanatory text, and multimedia resources in a single document. This creates a narrative that can drive exploration by facilitating the sharing of codes, and quick prototyping. 
+Notebooks are a common tool for data scientists as they allow combining code, explanatory text, and multimedia resources in a single document. This creates a narrative that can drive exploration by facilitating the sharing of codes, and quick prototyping. 
 
 Notebooks also allow data scientists to rapidly experiment and share insights through quick environment creation.
 
