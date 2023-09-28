@@ -1,10 +1,6 @@
 
 
-Data Activator is a powerful  Fabric experience designed for real-time data response.
-
-## Understand Data Activator
-
-Data Activator is a Fabric experience tailored to handle real-time data streams. It distinguishes itself through its capability to quickly respond to and analyze data in real-time.
+Data Activator is a powerful  Fabric experience designed for real-time data response. It distinguishes itself through its capability to quickly respond to and analyze data in real-time.
 
 ## Use Cases for Data Activator
 
