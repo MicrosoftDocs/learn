@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.reactors.test-azure-cognitive-services
 metadata:
-  title: Test Azure Cognitive Services
-  description: Learn how to test Azure Cognitive Services for data science operations.
+  title: Test Azure AI services
+  description: Learn how to test Azure AI services for data science operations.
   ms.date: 06/23/2022
   author: aahill
   ms.author: aahi
@@ -10,24 +10,26 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
   ms.service: cognitive-services 
-title: Test Azure Cognitive Services  
-summary: Learn how to test Azure Cognitive Services for data science operations.
+title: Test Azure AI services
+summary: Learn how to test Azure AI services for data science operations.
 abstract: |
   In this module, you will:
-  - Learn how to use Azure Cognitive Services for data science operations.
-  - Learn how to test Azure Cognitive Services Computer Vision data.
-  - Learn how to test Azure Cognitive Services Text Analytics data.
-  - Learn how to use the Azure Cognitive Services Text Analytics API.
-  - Learn how to use the Azure Cognitive Services Sentiment Analysis API.
-  - Learn how to use the Azure Cognitive Services Key Phrases API.
-  - Learn how to use the Azure Cognitive Services Entities API.
+  - Learn how to use Azure AI services for data science operations.
+  - Learn how to test Azure AI services Vision data.
+  - Learn how to test Azure AI services Text Analytics data.
+  - Learn how to use the Azure AI services Text Analytics API.
+  - Learn how to use the Azure AI services Sentiment Analysis API.
+  - Learn how to use the Azure AI services Key Phrases API.
+  - Learn how to use the Azure AI services Entities API.
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
   - Review the steps to manipulate and clean data.
   - Understand machine learning models for data science.
   - Know simple cloud-based machine learning models for data science.
+
 # placeholder icon
+
 iconUrl: /training/achievements/reactors/test-azure-cognitive-services.svg
 hidden: true
 levels:

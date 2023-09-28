@@ -4,11 +4,11 @@ title: Exercise - Train a custom object detection model with Vision Studio and I
 metadata:
   title: Exercise - Train a custom object detection model with Vision Studio and Image Analysis 4.0
   description: "Vision Studio allows developers to create and train custom object detection and image classification models leveraging the few-shot learning power of Microsoft's Florence foundation model."
-  ms.date: 08/10/2023
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
+  ms.service: artificial-intelligence
 durationInMinutes: 60
 content: |
   [!include[](includes/7-exercise-train-custom-object-detection-model.md)]

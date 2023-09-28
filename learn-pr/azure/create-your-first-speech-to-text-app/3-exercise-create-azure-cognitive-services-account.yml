@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-your-first-speech-to-text-app.exercise-create-azure-cognitive-services-account
-title: Exercise - Create an Azure Cognitive Services account
+title: Exercise - Create an Azure AI services account
 metadata:
-  title: Exercise - Create an Azure Cognitive Services account
-  description: In this exercise, you'll create an Azure Cognitive Services account.
+  title: Exercise - Create an Azure AI services account
+  description: In this exercise, you'll create an Azure AI services account.
   ms.date: 09/15/2022
   author: rmcmurray
   ms.author: robmcm
@@ -13,4 +13,4 @@ azureSandbox: true
 interactive: bash
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-exercise-create-azure-cognitive-services-account.md)]
+  [!INCLUDE[](includes/3-exercise-create-azure-cognitive-services-account.md)]

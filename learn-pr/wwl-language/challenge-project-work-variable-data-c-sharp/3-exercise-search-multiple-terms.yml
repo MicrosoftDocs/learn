@@ -4,11 +4,10 @@ title: Add multiple term search support
 metadata:
   title: Add multiple term search support
   description: "Add multiple term search support"
-  ms.date: 05/02/2023
+  ms.date: 08/23/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-search-multiple-terms.md)]

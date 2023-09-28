@@ -10,13 +10,13 @@ Messages to the general public must be easily understood and trusted. With trans
 
 ## Business intelligence
 
-Translator can help Business intelligence (**BI**) applications where data is in various languages, while most analytical tools are only able to process one language. As Translator is available via REST, you can integrate functionality with other services and applications—such as Form Recognizer and Cognitive search—to improve analysis of documents and other data sources.
+Translator can help Business intelligence (**BI**) applications where data is in various languages, while most analytical tools are only able to process one language. As Translator is available via REST, you can integrate functionality with other services and applications (such as Azure AI Document Intelligence and Azure Cognitive Search) to improve analysis of documents and other data sources.
 
 ## Online learning
 
 The global reach of online courses' means that educational material needs to serve a broader audience. With Translator, course materials can be translated into multiple languages while maintaining the existing layout. Overall creating wider accessibility to help students fully grasp the course material, no matter their language background.
 
-Audio instructions can also be translated and captioned in real-time with **Speech translation services**, allowing students to follow conversations in the language they’re most comfortable with. The service also filters out unnecessary filler words, such as "um’s", stutters, and repetitions- making the conversation clearer.
+Audio instructions can also be translated and captioned in real-time with Azure AI Speech, allowing students to follow conversations in the language they're most comfortable with. The service also filters out unnecessary filler words, such as "um's", stutters, and repetitions- making the conversation clearer.
 
 ## Assistive technology
 

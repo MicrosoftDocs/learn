@@ -1,4 +1,3 @@
-
 The release pipeline deploys software to a target environment. But it isn't only the software that will be deployed with the release pipeline.
 
 If you focus on Continuous Delivery, Infrastructure as Code and spinning up Infrastructure as part of your release pipeline is essential.

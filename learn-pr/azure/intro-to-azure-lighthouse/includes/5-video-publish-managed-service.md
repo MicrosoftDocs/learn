@@ -8,7 +8,7 @@ If you already have experience with publishing offers to the Azure Marketplace, 
 
 ### Partner Center account
 
-In order to create a service offer, you need a valid Partner Center account. If you don't have one, you'll need to [sign up and enroll in the Commercial Marketplace program](https://learn.microsoft.com/azure/marketplace/create-account).
+In order to create a service offer, you need a valid Partner Center account. If you don't have one, you'll need to [sign up and enroll in the Commercial Marketplace program](/azure/marketplace/create-account).
 
 ### Public and Private offers
 

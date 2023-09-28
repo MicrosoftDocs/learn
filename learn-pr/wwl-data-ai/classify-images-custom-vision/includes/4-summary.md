@@ -1,6 +1,6 @@
-The Custom Vision service simplifies the process for creating custom image classification models and deploying AI solutions. You can use the service to automate processes with minimal knowledge of deep learning techniques. 
+Azure AI Custom Vision service simplifies the process for creating custom image classification models and deploying AI solutions. You can use the service to automate processes with minimal knowledge of deep learning techniques. 
 
-You can find out more about the Custom Vision service in the [service documentation](/azure/cognitive-services/custom-vision-service?azure-portal=true).
+You can find out more about Azure AI Custom Vision in the [service documentation](/azure/ai-services/custom-vision-service?azure-portal=true).
 
 ## Clean-up
 

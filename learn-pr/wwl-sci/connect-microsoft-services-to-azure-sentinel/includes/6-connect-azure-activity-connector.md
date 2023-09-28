@@ -5,7 +5,7 @@ The Azure Activity Log is a subscription log that provides insight into subscrip
 
 To deploy the *Azure Activity* connector, perform the following steps:
 
-1. In the *Microsoft Sentinel* left menu , scroll down to **Content Management** and select **Content Hub**.
+1. In the *Microsoft Sentinel* left menu, scroll down to **Content Management** and select **Content Hub**.
 
 1. In the *Content Hub* page, type *Azure Activity* into the *Search* form, and select the **Azure Activity** solution.
 
@@ -20,7 +20,7 @@ To deploy the *Azure Activity* connector, perform the following steps:
 
 1. In the *Instructions/Configuration* area, scroll down and under *2. Connect your subscriptions...* select **Launch Azure Policy Assignment Wizard**.
 
-1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure subscription" from the drop-down list and click **Select**.
+1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure subscription" from the drop-down list and select **Select**.
 
 1. Select the **Parameters** tab, choose your *yourName-sentinel* workspace from the **Primary Log Analytics workspace** drop-down list.
 

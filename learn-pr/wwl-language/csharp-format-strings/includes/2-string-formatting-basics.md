@@ -1,6 +1,3 @@
-
-
-
 In this unit, you learn methods to format strings for efficient display, especially for cases using multiple variables.
 
 ### Prepare your coding environment

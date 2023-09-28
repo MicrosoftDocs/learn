@@ -6,7 +6,7 @@ metadata:
   description: "Exercise - Create a knowledge store"
   ms.date: 07/30/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: false

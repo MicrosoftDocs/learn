@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 05/30/2023
+  ms.date: 08/25/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: synapse-analytics
 durationInMinutes: 1
 content: |

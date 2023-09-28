@@ -1,28 +1,28 @@
-Creating an application with Conversational Language Understanding consists of two main tasks. First you must define entities, intents, and utterances with which to train the language model - referred to as *authoring* the model. Then you must publish the model so that client applications can use it for intent and entity *prediction* based on user input.
+Creating an application with conversational language understanding consists of two main tasks. First you must define entities, intents, and utterances with which to train the language model - referred to as *authoring* the model. Then you must publish the model so that client applications can use it for intent and entity *prediction* based on user input.
 
-## Azure resources for Conversational Language Understanding
+## Azure resources for conversational language understanding
 
 For each of the authoring and prediction tasks, you need a resource in your Azure subscription. You can use the following types of resource:
 
-- **Language Service**: A resource that enables you to build apps with industry-leading natural language understanding capabilities without machine learning expertise.  
-- **Cognitive Services**: A general cognitive services resource that includes Conversational Language Understanding along with many other cognitive services. You can only use this type of resource for *prediction*.
+- **Language**: A resource that enables you to build apps with industry-leading natural language understanding capabilities without machine learning expertise. You can use a language resource for *authoring* and *prediction*. 
+- **Azure AI services**: A general resource that includes conversational language understanding along with many other Azure AI services. You can only use this type of resource for *prediction*.
 
-The separation of resources is useful when you want to track resource utilization for Language Service use separately from client applications using all Cognitive Services applications.
+The separation of resources is useful when you want to track resource utilization for Azure AI Language use separately from client applications using all Azure AI services applications.
 
-When your client application uses a Cognitive Services resource, you can manage access to all of the cognitive services being used, including the Language Service, through a single endpoint and key.
+When your client application uses an Azure AI services resource, you can manage access to all of the Azure AI services being used, including Azure AI Language, through a single endpoint and key.
 
 ## Authoring
 
-After you've created an authoring resource, you can use it to author and train a Conversational Language Understanding application by defining the entities and intents that your application will predict as well as utterances for each intent that can be used to train the predictive model.
+After you've created an authoring resource, you can use it to author and train a conversational language understanding application by defining the entities and intents that your application will predict as well as utterances for each intent that can be used to train the predictive model.
 
-Conversational Language Understanding provides a comprehensive collection of prebuilt *domains* that include pre-defined intents and entities for common scenarios; which you can use as a starting point for your model. You can also create your own entities and intents.
+Conversational language understanding provides a comprehensive collection of prebuilt *domains* that include pre-defined intents and entities for common scenarios; which you can use as a starting point for your model. You can also create your own entities and intents.
 
 When you create entities and intents, you can do so in any order. You can create an intent, and select words in the sample utterances you define for it to create entities for them; or you can create the entities ahead of time and then map them to words in utterances as you're creating the intents.
 
-You can write code to define the elements of your model, but in most cases it's easiest to author your model using the Language Understanding portal - a web-based interface for creating and managing Conversational Language Understanding applications.
+You can write code to define the elements of your model, but in most cases it's easiest to author your model using the Azure AI Language  portal - a web-based interface for creating and managing Conversational Language Understanding applications.
 
 >[!Tip]
->Best practice is to use the Language portal for authoring and to use the SDK for runtime predictions.  
+>Best practice is to use the Azure AI Language portal for authoring and to use the SDK for runtime predictions.  
 
 ### Creating intents
 

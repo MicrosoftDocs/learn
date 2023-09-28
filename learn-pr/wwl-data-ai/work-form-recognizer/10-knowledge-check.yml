@@ -16,7 +16,7 @@ content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   questions:
-  - content: "A person plans to use a Form Recognizer prebuilt invoice model. To extract form data using the model, what are two calls they need to make to the REST API?"
+  - content: "A person plans to use an Azure Document Intelligence prebuilt invoice model. To extract form data using the model, what are two calls they need to make to the REST API?"
     choices:
     - content: "Train Model and Get Model Labels"
       isCorrect: false
@@ -24,28 +24,28 @@ quiz:
     - content: "Analyze Invoice and Get Analyze Invoice Result"
       isCorrect: true
       explanation: "Correct: The Analyze Invoice function starts the form analysis and returns a result ID, which they can pass in a subsequent call to the Get Analyze Invoice Result function to retrieve the results."
-    - content: "Create Form Recognizer and Get Analyze Invoice Result"
+    - content: "Create Azure Document Intelligence and Get Analyze Invoice Result"
       isCorrect: false
-      explanation: "Incorrect: While they do need to create a Form Recognizer or Cognitive Service resource to use Form Recognizer services, Create Form Recognizer is not one of the REST API calls used to extract data."
+      explanation: "Incorrect: While they do need to create an Azure Document Intelligence or Azure AI Service resource to use Azure Document Intelligence services, Create Azure Document Intelligence is not one of the REST API calls used to extract data."
   - content: "A person needs to build an application that submits expense claims and extracts the merchant, date, and total from scanned receipts. What's the **best** way to do this?"
     choices:
     - content: "Use the Read API of the Computer Vision service."
       isCorrect: false
-      explanation: "Incorrect: The Read API of the Computer Vision service can read text from an image, but they'll want to use Form Recognizer to extract key-value pairs."
-    - content: "Use Form Recognizer's prebuilt receipts model"
+      explanation: "Incorrect: The Read API of the Computer Vision service can read text from an image, but they'll want to use Azure Document Intelligence to extract key-value pairs."
+    - content: "Use Azure Document Intelligence's prebuilt receipts model"
       isCorrect: true
-      explanation: "Correct: Use the Form Recognizer's prebuilt receipts model. It can intelligently extract the required fields even if the scanned receipts have different names in them."
-    - content: "Use Form Recognizer's Layout service"
+      explanation: "Correct: Use the Azure Document Intelligence's prebuilt receipts model. It can intelligently extract the required fields even if the scanned receipts have different names in them."
+    - content: "Use Azure Document Intelligence's Layout service"
       isCorrect: false
       explanation: "Incorrect: The Layout service will extract the structured output from documents, but the best way to build this application is to use a model specific to receipts."
-  - content: "A person is building a custom model with Form Recognizer services. What is required to train a model?"
+  - content: "A person is building a custom model with Azure Document Intelligence services. What is required to train a model?"
     choices:
     - content: "Along with the form to analyze, JSON files need to be provided."
       isCorrect: true
       explanation: "Correct: The labels needed in training are referenced in the **ocr.json** files, **labels.json** files, and single **fields.json** file."
     - content: "Training must be done through language specific SDKs."
       isCorrect: false
-      explanation: "Incorrect: Labeled training can be done through SDKs, REST API, or Form Recognizer Studio."
+      explanation: "Incorrect: Labeled training can be done through SDKs, REST API, or Azure Document Intelligence Studio."
     - content: "Nothing else is required."
       isCorrect: false
       explanation: "Incorrect: Labeled training requires JSON files to be provided when training a model, or those JSON files need to generated before training your model."
