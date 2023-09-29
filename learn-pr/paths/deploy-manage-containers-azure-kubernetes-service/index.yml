@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-manage-containers-azure-kubernetes-service
 metadata:
   title: Deploy containers by using Azure Kubernetes Service (AKS)
   description: In this learning path, you practice deploying containers, container orchestration, and managing clusters on Azure Kubernetes Service.  The skills validated include deploying, configuring, and scaling an Azure Kubernetes Service cluster. Also, deploying an Azure Container Registry instance and deploying an application into an Azure Kubernetes Service cluster.
-  ms.date: 09/28/2023
+  ms.date: 09/29/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
