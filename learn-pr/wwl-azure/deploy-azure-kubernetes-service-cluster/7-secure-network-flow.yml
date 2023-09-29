@@ -4,12 +4,11 @@ title: Secure the network flow
 metadata:
   title: Secure the network flow
   description: "Secure the network flow"
-  ms.date: 09/28/2023
+  ms.date: 09/29/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: azure
-  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/7-secure-network-flow.md)]

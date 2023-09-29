@@ -4,12 +4,11 @@ title: Try-This exercise - Create a Azure Kubernetes Service cluster
 metadata:
   title: Try-This exercise - Create a Azure Kubernetes Service cluster
   description: "Try-This exercise - Create a Azure Kubernetes Service cluster"
-  ms.date: 09/28/2023
+  ms.date: 09/29/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: azure
-  ms.service: azure
 durationInMinutes: 17
 content: |
   [!include[](includes/9-create-azure-kubernetes-service.md)]
