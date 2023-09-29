@@ -12,8 +12,6 @@ metadata:
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/10-knowledge-check.md)]
 quiz:
   questions:
   - content: "You want to find information in Microsoft Word documents that are stored in an Azure Storage blob container. What should you do to ensure the files can be accessed by Azure Cognitive Search?"
