@@ -53,7 +53,7 @@ The following example creates a virtual machine associated with the new user-ass
 az vm create \
 --resource-group <RESOURCE GROUP> \
 --name <VM NAME> \
---image UbuntuLTS \
+--image Ubuntu2204 \
 --admin-username <USER NAME> \
 --admin-password <PASSWORD> \
 --assign-identity <USER ASSIGNED IDENTITY NAME> \
