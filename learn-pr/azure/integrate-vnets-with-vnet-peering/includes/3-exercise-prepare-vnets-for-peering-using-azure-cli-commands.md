@@ -86,7 +86,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
         --location northeurope \
         --vnet-name SalesVNet \
         --subnet Apps \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```
@@ -104,7 +104,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
         --location northeurope \
         --vnet-name MarketingVNet \
         --subnet Apps \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```
@@ -119,7 +119,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
         --location westeurope \
         --vnet-name ResearchVNet \
         --subnet Data \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```
