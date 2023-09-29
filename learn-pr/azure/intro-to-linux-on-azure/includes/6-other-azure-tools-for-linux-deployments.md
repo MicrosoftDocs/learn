@@ -55,7 +55,7 @@ Azure offers an end-to-end backup and disaster recovery solution for Linux that'
 
 - **Azure Backup** &mdash; Back up cloud and on-site resources to the Azure cloud securely with no management or maintenance required. Azure Backup automatically allocates and manages backup storage, and it uses a pay-as-you-go model, meaning you only pay for the storage you consume.
 
-- **Azure Site Recovery** &mdash; Ensure business continuity by keeping business apps and workloads running during outages. Site Recovery [replicates](/azure/site-recovery/azure-to-azure-quickstart) workloads running on physical and virtual machines from a primary site to a secondary location.
+- **Azure Site Recovery** &mdash; Ensure business continuity by keeping business apps and workloads running during outages. Site Recovery [replicates workloads](/azure/site-recovery/azure-to-azure-quickstart) running on physical and virtual machines from a primary site to a secondary location.
 
 - **Azure Archive Storage** &mdash; Provides a low-cost means of delivering durable, highly available, secure cloud storage and data management for data that's rarely accessed.
 
