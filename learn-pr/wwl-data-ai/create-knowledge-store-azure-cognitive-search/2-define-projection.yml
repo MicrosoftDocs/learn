@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-define-projection-json.md)]
+  [!include[](includes/2-define-projection.md)]

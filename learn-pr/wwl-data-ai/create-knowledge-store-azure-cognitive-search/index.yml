@@ -32,7 +32,7 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.introduction
-- learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-projection-json
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-projection
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-knowledge-store
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.exercise-knowledge-store
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.knowledge-check
