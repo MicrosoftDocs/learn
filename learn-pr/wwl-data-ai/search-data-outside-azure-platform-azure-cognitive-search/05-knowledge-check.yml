@@ -12,8 +12,6 @@ metadata:
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/05-knowledge-check.md)]
 quiz:
   questions:
   - content: "What is the limitation of using the Azure Search linked service as a sink in a copy data task?"
