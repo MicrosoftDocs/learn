@@ -216,6 +216,7 @@ Create a search index that you can enrich with this model, you'll index all the 
 1. Expand the **Add enrichments** section.
 
     :::image type="content" source="../media/add-enrichments.png" alt-text="A screenshot showing the limited enrichments selected.":::
+
 1. Leave all the fields with their default values, then select **Extract people names**.
 1. Select **Extract key phrases**.
 1. Select **Detect language**.
@@ -278,7 +279,7 @@ The function app needs to be connected to your custom text classification model.
 
 1. In your browser, navigate to **Language Studio**, you should be on the **Deploying a model** page.
 
-    :::image type="content" source="../media/copy-prediction-endpoint-small.png" source="../media/copy-prediction-endpoint.png"alt-text="A screenshot showing where to copy the prediction endpoint from.":::
+    :::image type="content" source="../media/copy-prediction-endpoint-small.png" lightbox="../media/copy-prediction-endpoint.png" alt-text="A screenshot showing where to copy the prediction endpoint from.":::
 
 1. Select your model. Then select **Get prediction URL**.
 1. Select the copy icon next to the **Prediction URL**.
