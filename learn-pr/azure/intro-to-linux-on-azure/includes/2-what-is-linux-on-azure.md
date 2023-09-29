@@ -6,7 +6,7 @@ Linux is the fastest growing platform on Azure, which means that Linux users wil
 
 - If you bring your own Linux distribution, follow [Azure guidelines to prepare your image](/azure/virtual-machines/linux/create-upload-generic).
 
-- Linux-based images in Azure Marketplace include base distributions and images with preinstalled software for specific scenarios. All images contain the software and configuration needed to ensure smooth operation on Azure VMs, including kernel-level driver support for Azure infrastructure like storage and networking, and Azure-supported features like remote direct memory access.
+- Linux-based images in Azure Marketplace include base distributions and images with preinstalled software for specific scenarios. All images contain the software and configuration that is needed to ensure smooth operation on Azure VMs, including kernel-level driver support for Azure infrastructure like storage and networking, and Azure-supported features like remote direct memory access.
 
 - Many of the images in Azure Marketplace are free: you pay only for the virtual infrastructure your VM consumes. Some images have additional license and purchase terms for the software they include. Learn more about pricing and support options later in this module.
 
