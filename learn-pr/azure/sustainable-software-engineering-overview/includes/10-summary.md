@@ -16,7 +16,7 @@ In addition, you also learned about the two philosophies of Sustainable Software
 
 - Microsoft Azure Well-Architected Framework sustainability guidance:
   - [Sustainability workload documentation](/azure/well-architected/sustainability/)
-  - The [Principles of green software](azure/well-architected/sustainability/sustainability-design-principles#principles-of-green-software)
+  - The [Principles of green software](/azure/well-architected/sustainability/sustainability-design-principles#principles-of-green-software)
 - Microsoft Cloud Adoption Framework sustainability considerations:
   - [Sustainability outcomes and benefits for business](/azure/cloud-adoption-framework/strategy/business-outcomes/sustainability)
   - [Sustainability considerations in cloud adoption planning](/azure/cloud-adoption-framework/plan/plan-sustainability)
