@@ -23,7 +23,7 @@ To start with, enable diagnostic logging using Log Analytics:
 
 It's important to capture this diagnostic information at the search service level. As there are several places where your end-users or apps can see performance issues.
 
-:::image type="content" source="../media/possible-performance-issues.png" source="../media/possible-performance-issues.png"alt-text="A diagram showing all the possible performance bottlenecks when searching. From network latency, app service performance, or cognitive search processing the query.":::
+:::image type="content" source="../media/possible-performance-issues.png" lightbox="../media/possible-performance-issues.png"alt-text="A diagram showing all the possible performance bottlenecks when searching. From network latency, app service performance, or cognitive search processing the query.":::
 
 If you can prove that your search service is performing well, you can eliminate it from the possible factors if you're having performance issues.
 
