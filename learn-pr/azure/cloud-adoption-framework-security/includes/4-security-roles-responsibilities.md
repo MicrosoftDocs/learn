@@ -4,7 +4,7 @@ This holistic view enables the team to work well in general. It's especially imp
 
 ## Security responsibilities (functions)
 
-This diagram depicts the specific organizational functions within security. It represents an ideal view of a complete enterprise security team and might be an aspirational view for some security teams. One or more people can perform Each function. Each person can perform one or more functions based on factors like culture, budget, and available resources.
+This diagram depicts the specific organizational functions within security. It represents an ideal view of a complete enterprise security team and might be an aspirational view for some security teams. One or more people can perform each function. Each person can perform one or more functions based on factors like culture, budget, and available resources.
 
 :::image type="content" source="../media/security-organizational-functions.png" lightbox="../media/security-organizational-functions.png" alt-text="Diagram that illustrates the organizational functions within security." border="false":::
 
