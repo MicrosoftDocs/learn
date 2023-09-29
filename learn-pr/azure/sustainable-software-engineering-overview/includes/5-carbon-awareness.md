@@ -93,7 +93,7 @@ But at some point, being transparently more carbon-efficient isn't enough. If th
 
 Demand shaping carbon-aware applications is all about the carbon supply. When the carbon cost of running your application becomes high, shape the demand to match the carbon supply. This can happen automatically, or the user can make a choice.
 
-Demand shaping is related to a broader concept in sustainability, which is to reduce consumption. We can achieve a lot by becoming more efficient with resources, but we need to consume less at some point. As Sustainable Software Engineers, to be carbon-efficient means that when the carbon intensity is high, instead of demand-shifting compute, we consider canceling it, thereby reducing the our application's demands our end users' expectations.
+Demand shaping is related to a broader concept in sustainability, which is to reduce consumption. We can achieve a lot by becoming more efficient with resources, but we need to consume less at some point. As Sustainable Software Engineers, to be carbon-efficient means that when the carbon intensity is high, instead of demand-shifting compute, we consider canceling it, thereby reducing our application's demands our end users' expectations.
 
 ## Eco-modes
 
