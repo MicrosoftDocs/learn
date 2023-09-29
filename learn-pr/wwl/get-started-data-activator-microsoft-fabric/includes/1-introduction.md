@@ -1,4 +1,4 @@
-Data Activator in Microsoft Fabric takes action based on what's happening in your data.. Consider the following three scenarios:  
+Data Activator in Microsoft Fabric takes action based on what's happening in your data. Consider the following three scenarios:  
 
 - A warehouse manager needs to detect drops in product stocks and needs to start a reorder process to prevent running out of stock.
 - A sales associate needs to receive alerts when a potential client is visiting their website and offers to start a live chat with them.  

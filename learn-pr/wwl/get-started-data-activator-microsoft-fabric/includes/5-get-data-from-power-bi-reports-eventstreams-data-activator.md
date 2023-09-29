@@ -13,11 +13,11 @@ Let's walk through the steps of setting up a notification based on a Power BI re
 
 To trigger an action on a Power BI visual, you would first select **Trigger Action** on your report. For example, the following screenshot shows an example of how to trigger an action from a visual that displays today’s sales for each store in a retail chain.
 
-> ![Screenshot showing the Trigger Action option from a visual that displays daily sales.](../media/data-activator-power-bi-trigger-action.png)
+![Screenshot showing the Trigger Action option from a visual that displays daily sales.](../media/data-activator-power-bi-trigger-action.png)
 
 Once you pick a report to monitor, you define your Data Activator trigger.  It’s here where you would define *what to monitor*, or what measure Data Activator should keep track of in that report and the frequency of checking the measure’s value. Here you also define *what to detect*, in other words the condition that triggers the alert. And you define *where to save* or store the Data Activator trigger, either by selecting an existing Reflex or creating a new one. For example, the following screenshot shows how you would create a trigger that fires daily if the sales for any store drop under $60,000.
 
-> ![Screenshot showing the Create Alert dialog.](../media/data-activator-power-bi-create-alert.png)
+![Screenshot showing the Create Alert dialog.](../media/data-activator-power-bi-create-alert.png)
 
 The last thing remaining is to add an action to your trigger. Here you add an email or Teams notification to your trigger.
 
@@ -37,8 +37,8 @@ Let’s now learn how to connect Data Activator to your real-time data in Fabric
 
 All you need to set your Data Activator connection to the EventStream is to add the *Reflex* as a *New destination* on the EventStream item. You're now ready to assign your data to some objects.
 
-> ![Screenshot showing setting the EventStream destination to Reflex.](../media/data-activator-eventstream-destination-reflex.png)
+![Screenshot showing setting the EventStream destination to Reflex.](../media/data-activator-eventstream-destination-reflex.png)
 
-> ![Screenshot showing the Create a new Reflex.](../media/data-activator-eventstream-reflex.png)
+![Screenshot showing the Create a new Reflex.](../media/data-activator-eventstream-reflex.png)
 
 In the next unit, we'll cover assigning data in Data Activator.
