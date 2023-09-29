@@ -1,6 +1,3 @@
-
-
-
 Now, it's your chance to explore how to track models with MLflow in scripts.
 
 In this exercise, you will:

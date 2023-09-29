@@ -7,8 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.service: applied-ai-services
-  ms.subservice: forms-recognizer
+  ms.service: azure-ai-document-intelligence
 title: Build an Azure AI Document Intelligence custom skill for Azure Cognitive Search
 summary: Learn how to use an Azure AI Document Intelligence solution as a custom skill to enrich content in an Azure Cognitive Search pipeline.
 abstract: |

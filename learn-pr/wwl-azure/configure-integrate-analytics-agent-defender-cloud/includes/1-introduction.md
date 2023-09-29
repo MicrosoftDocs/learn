@@ -8,11 +8,11 @@ Imagine you are a security analyst working for a healthcare organization that re
 
 By the end of this training module, participants will:
 
--  Understand the importance of a centralized log collection and analysis solution in Microsoft Defender for Cloud.
--  Learn how to configure and deploy the Log Analytics agent in Azure.
--  Gain insights into creating and configuring a Log Analytics workspace for Defender for Cloud.
--  Understand how to integrate the Log Analytics workspace with Defender for Cloud to collect and analyze security logs.
--  Recognize the benefits of leveraging centralized log analytics for proactive security monitoring and threat detection.
+ -  Understand the importance of a centralized log collection and analysis solution in Microsoft Defender for Cloud.
+ -  Learn how to configure and deploy the Log Analytics agent in Azure.
+ -  Gain insights into creating and configuring a Log Analytics workspace for Defender for Cloud.
+ -  Understand how to integrate the Log Analytics workspace with Defender for Cloud to collect and analyze security logs.
+ -  Recognize the benefits of leveraging centralized log analytics for proactive security monitoring and threat detection.
 
 ## Goals
 
