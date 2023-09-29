@@ -41,7 +41,7 @@ For example, from the CLI, you can create an Azure VM with the `az vm create` co
 az vm create \
     --resource-group TestResourceGroup \
     --name test-wp1-eus-vm \
-    --image Ubuntu \
+    --image Ubuntu2204 \
     --admin-username azureuser \
     --generate-ssh-keys
 ```
