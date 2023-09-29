@@ -4,12 +4,11 @@ title: Try-This exercise - Assign a policy definition to an Azure Kubernetes clu
 metadata:
   title: Try-This exercise - Assign a policy definition to an Azure Kubernetes cluster
   description: "Try-This exercise - Assign a policy definition to an Azure Kubernetes cluster"
-  ms.date: 09/28/2023
+  ms.date: 09/29/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: azure
-  ms.service: azure
 durationInMinutes: 8
 content: |
   [!include[](includes/4-assign-policy-definition-azure-kubernetes-cluster.md)]
