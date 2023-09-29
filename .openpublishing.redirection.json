@@ -27959,7 +27959,7 @@
       "redirect_document_id": false
     },
      {
-      "source_path": "learn-pr/quantum/get-started-azure-quantum/",
+      "source_path": "learn-pr/quantum/get-started-azure-quantum/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
       "redirect_document_id": false
     },
@@ -27994,12 +27994,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/quantum/get-started-azure-quantum/6-knowledg-check.yml",
+      "source_path": "learn-pr/quantum/get-started-azure-quantum/6-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/",
+      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
       "redirect_document_id": false
     },
@@ -28019,7 +28019,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle,yml",
+      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
       "redirect_document_id": false
     },
@@ -28049,7 +28049,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/quantum/run-algorithms-quantum-hardware-azure-quantum/",
+      "source_path": "learn-pr/quantum/run-algorithms-quantum-hardware-azure-quantum/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
       "redirect_document_id": false
     },
