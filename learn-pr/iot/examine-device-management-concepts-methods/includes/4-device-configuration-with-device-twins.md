@@ -46,7 +46,7 @@ The solution back end operates on the device twin using the following atomic ope
 - **Retrieve device twin by ID**. This operation returns the device twin document, including tags and desired and reported system properties.
 - **Partially update device twin**. This operation enables the solution back end to partially update the tags or desired properties in a device twin. The partial update is expressed as a JSON document that adds or updates any property. Properties set to `null` are removed. The following example creates a new desired property with value `{"newProperty": "newValue"}`, overwrites the existing value of `existingProperty` with `"otherNewValue"`, and removes `otherOldProperty`. No other changes are made to existing desired properties or tags:
 
-```json
+  ```json
     {
         "properties": {
             "desired": {
@@ -59,7 +59,7 @@ The solution back end operates on the device twin using the following atomic ope
         }
     }
 
-```
+  ```
 
 - **Replace desired properties**. This operation enables the solution back end to completely overwrite all existing desired properties and substitute a new JSON document for `properties/desired`.
 - **Replace tags**. This operation enables the solution back end to completely overwrite all existing tags and substitute a new JSON document for `tags`.
