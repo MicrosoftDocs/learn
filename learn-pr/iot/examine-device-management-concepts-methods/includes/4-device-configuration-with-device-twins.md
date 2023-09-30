@@ -1,6 +1,6 @@
 The ability to configure devices from your back-end service is a core component of most device management solutions.
 
-To synchronize state information between a device and an IoT hub, you use device twins. A device twin is a JSON document, associated with a specific device, and stored by IoT Hub in the cloud where you can query them. A device twin contains the following information:
+To synchronize state information between a device and an IoT hub, you use device twins. A device twin is a JSON document that is associated with a specific device and stored by IoT Hub in the cloud where you can query it. A device twin contains the following information:
 
 - A *desired property* is set by a back-end application and read by a device.
 - A *reported property* is set by a device and read by a back-end application.

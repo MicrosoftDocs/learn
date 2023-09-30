@@ -21,9 +21,9 @@ quiz:
     - content: "Reboot and Factory Reset."
       isCorrect: true
       explanation: "Correct. Direct methods are recommended for the Reboot and Factory Reset patterns."
-    - content: "Configuration and Firmware Update."
+    - content: "Configuration."
       isCorrect: false
-      explanation: "Incorrect. The Configuration pattern uses Device Twin properties and the recommended approach for a Firmware update process is to use IoT Hub automatic device management."
+      explanation: "Incorrect. The Configuration pattern uses Device Twin properties."
     - content: "Reporting Progress and Status."
       isCorrect: false
       explanation: "Incorrect. The recommended approach for Reporting Progress and Status is to use Device Twins."

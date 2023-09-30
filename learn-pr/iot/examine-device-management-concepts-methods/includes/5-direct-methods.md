@@ -14,7 +14,8 @@ Direct methods have the following features:
 Direct methods are implemented on the device and may require zero or more inputs in the method payload to correctly instantiate. You invoke a direct method through a service-facing URI (`{iot hub}/twins/{device id}/methods/`). A device receives direct methods through a device-specific MQTT topic (`$iothub/methods/POST/{method name}/`) or through AMQP links (the `IoThub-methodname` and `IoThub-status` application properties).
 
 > [!NOTE]
-> When you invoke a direct method on a device, property names and values can only contain US-ASCII printable alphanumeric, except any in the following set: \`\{'$', '(', ')', '&lt;', '&gt;', '@', ',', ';', ':', '\\', '"', '/', '\[', '\]', '?', '=', '\{', '\}', SP, HT\}\`
+> When you invoke a direct method on a device, property names and values can only contain US-ASCII printable alphanumeric, except any in the following set: \
+`$ ( ) < > @ , ; : \ " / [ ] ? = { } SP HT`
 
 Direct methods are synchronous and either succeed or fail after the timeout period (default: 30 seconds, can be set within the range of 5-300 seconds). Direct methods are useful in interactive scenarios where you want a device to act if and only if the device is online and receiving commands. For example, turning on a light from a phone. In these scenarios, you want to see an immediate success or failure so the cloud service can act on the result as soon as possible. The device may return some message body as a result of the method, but it isn't required for the method to do so. There is no guarantee on ordering or any concurrency semantics on method calls.
 
@@ -28,16 +29,16 @@ The payload for method requests and responses is a JSON document up to 128 KB.
 
 Direct method invocations on a device are HTTPS calls that are made up of the following items:
 
-- The request *URI* specific to the device along with the API version:
+- The request URI specific to the device along with the API version:
 
 ```http
-    https://fully-qualified-iothubname.azure-devices.net/twins/{deviceId}/methods?api-version=2020-05-31-preview
-
+   https://fully-qualified-iothubname.azure-devices.net/twins/{deviceId}/
+methods?api-version=2021-04-12
 ```
 
-- The POST *method*
-- *Headers* that contain the authorization, content type, and content encoding.
-- A transparent JSON *body* in the following format:
+- The POST method
+- Headers that contain the authorization, content type, and content encoding.
+- A transparent JSON body in the following format:
 
 ```json
     {
@@ -49,7 +50,6 @@ Direct method invocations on a device are HTTPS calls that are made up of the fo
         "input2": "anotherInput"
         }
     }
-
 ```
 
 The value provided as `responseTimeoutInSeconds` in the request is the amount of time that IoT Hub service must await for completion of a direct method execution on a device. Set this timeout to be at least as long as the expected execution time of a direct method by a device. If timeout is not provided, the default value of 30 seconds is used. The minimum and maximum values for `responseTimeoutInSeconds` are 5 and 300 seconds, respectively.
@@ -82,7 +82,7 @@ The back-end app receives a response that is made up of the following items:
 - Headers that contain the ETag, request ID, content type, and content encoding.
 - A JSON body in the following format:
 
-```json
+  ```json
     {
         "status" : 201,
         "payload" : {...}
@@ -100,7 +100,7 @@ The `moduleId` is passed along with the `deviceId` in the request URI when using
 
 ## Handle a direct method on a device
 
-A Direct Method on a device can receive requests using either the MQTT or AMQP protocol.
+A direct method on a device can receive requests using either the MQTT or AMQP protocol.
 
 ### MQTT
 
