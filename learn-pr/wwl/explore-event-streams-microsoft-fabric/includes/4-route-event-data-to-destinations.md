@@ -96,7 +96,7 @@ Earlier, we mentioned the **Group by** operator in the event processor editor. T
   
      ![Screenshot of the session window concept.](./../media/session-window.png)
 
-  - **hopping windows** hopping windows are dfferent from **tumbling** windows as they model scheduled overlapping window.
+  - **hopping windows** hopping windows are different from **tumbling** windows as they model scheduled overlapping window.
 
      ![Screenshot of the hopping window concept.](./../media/hopping-window.png)
 
@@ -106,7 +106,7 @@ Earlier, we mentioned the **Group by** operator in the event processor editor. T
 
      ![Screenshot of the snapshot window concept.](./../media/snapshot-window.png)
 
-- The **window duration**, this is the length of each window intervals, which can be in seconds, minutes, hours, and even days. An example duration, such as 10 minutes, means simply that each window covers 10 minutes of event data.
+- The **window duration**, this is the length of each window interval, which can be in seconds, minutes, hours, and even days. An example duration, such as 10 minutes, means simply that each window covers 10 minutes of event data.
 - The **window offset**, this is an optional parameter that will shift the start and end of each window interval by a specified amount of time. An example of when this optional parameter is set might be a window offset of 2 minutes, which means that each window starts and ends 2 minutes later than usual.
 - The **grouping key**, this is one or more columns in your event data that you wish to group by. For example, by sensor ID, or item category.
 - The **Aggregation function**, this is one or more of the functions that you want to apply to each group of events in each window. This is where the counts, sums, averages, min/max, and even custom functions become useful.
