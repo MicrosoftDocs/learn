@@ -8,13 +8,13 @@ The ObjectManipulator script supports the "direct manipulation" modality of the 
 
     The cube's default size is one square meter--this is too large for our purposes. We'll scale the size down to 20x20x20 cm.
 
-1. Select the cube, and then in the **Inspector**, change the cube's **Tranform/Scale** values to the following:
+1. Select the cube, and then in the **Inspector**, change the cube's **Transform/Scale** values to the following:
    
    X = 0.2, Y = 0.2, Z = 0.2
    
     The cube was placed in the scene at the default position of (0,0,0). This means the cube is at the same position as the user's headset, and the user won't be able to see the cube until they move backwards. We'll change the cube's position values so it'll be in a better location for viewing.
 
-1. In the **Inspector**, change the cube's **Tranform/Position** values to the following:
+1. In the **Inspector**, change the cube's **Transform/Position** values to the following:
    
    X = -0.2, Y = 1.6, Z = 0.5
 
@@ -147,7 +147,7 @@ You can test holographic object behavior with the Unity in-editor input simulati
 ## (Optional) Build and deploy the application
 
 > [!Note]
-> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
+> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com).
 
 1. When the build process has completed, Windows File Explorer opens and displays the build folder. Navigate inside the folder and then double-click the solution file to open it in Visual Studio:
 
