@@ -57,18 +57,18 @@ The value provided as `responseTimeoutInSeconds` in the request is the amount of
 The following is a barebones example using `curl`.
 
 ```bash
-    curl -X POST \
-    https://iothubname.azure-devices.net/twins/myfirstdevice/methods?api-version=2021-04-12 \
-    -H 'Authorization: SharedAccessSignature sr=iothubname.azure-devices.net&sig=x&se=x&skn=iothubowner' \
-    -H 'Content-Type: application/json' \
-    -d '{
-      "methodName": "reboot",
-      "responseTimeoutInSeconds": 200,
-      "payload": {
-          "input1": "someInput",
-          "input2": "anotherInput"
-          }
-      }'
+  curl -X POST \
+  https://iothubname.azure-devices.net/twins/myfirstdevice/methods?api-version=2021-04-12 \
+  -H 'Authorization: SharedAccessSignature sr=iothubname.azure-devices.net&sig=x&se=x&skn=iothubowner' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "methodName": "reboot",
+    "responseTimeoutInSeconds": 200,
+    "payload": {
+        "input1": "someInput",
+        "input2": "anotherInput"
+        }
+    }'
 
 ```
 

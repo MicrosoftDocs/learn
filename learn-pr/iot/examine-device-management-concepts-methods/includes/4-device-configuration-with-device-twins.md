@@ -47,7 +47,7 @@ The solution back end operates on the device twin using the following atomic ope
 - **Partially update device twin**. This operation enables the solution back end to partially update the tags or desired properties in a device twin. The partial update is expressed as a JSON document that adds or updates any property. Properties set to `null` are removed. The following example creates a new desired property with value `{"newProperty": "newValue"}`, overwrites the existing value of `existingProperty` with `"otherNewValue"`, and removes `otherOldProperty`. No other changes are made to existing desired properties or tags:
 
   ```json
-  {
+    {
       "properties": {
           "desired": {
               "newProperty": {
@@ -57,7 +57,7 @@ The solution back end operates on the device twin using the following atomic ope
               "otherOldProperty": null
           }
       }
-  }
+    }
 
   ```
 
