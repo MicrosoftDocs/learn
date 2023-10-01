@@ -3,7 +3,7 @@ uid: learn.azure.learn-introduction-tutorials-mrtk
 metadata:
   title: Introduction to the Mixed Reality Toolkit - Set Up Your Project and Use Hand Interaction
   description: This course provides the user with a basic understanding of all the foundational elements of MRTK.
-  ms.date: 09/25/2023
+  ms.date: 09/30/2023
   author: marlenaklein-msft
   ms.author: marlenaklein
   ms.topic: interactive-tutorial

@@ -114,13 +114,13 @@ For performance purposes, it is recommended to use MRTK materials instead of the
 
 You can test holographic object behavior with the Unity in-editor input simulation features.
 
-**Change the view in the scene:**
+**Change the view in the scene**
 
 - To move the camera forward/left/back/right, press the W/A/S/D keys.
 - To move the camera vertically, press the Q and E keys.
 - To rotate the camera, press the right mouse button and then drag.
 
-**Simulate hand input:**
+**Simulate hand input**
 
 - To enable the simulated right hand, press and hold the space bar. To remove the hand, release the space bar.
 - To enable the left simulated hand, press and hold the left shift key. To remove the hand, release the key.
