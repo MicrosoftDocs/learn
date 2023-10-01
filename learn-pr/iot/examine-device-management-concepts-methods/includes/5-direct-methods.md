@@ -30,10 +30,9 @@ Direct method invocations on a device are HTTPS calls that are made up of the fo
 
 - The request URI specific to the device along with the API version:
 
-```http
-   https://fully-qualified-iothubname.azure-devices.net/twins/{deviceId}/
-methods?api-version=2021-04-12
-```
+  ```http
+   https://fully-qualified-iothubname.azure-devices.net/twins/{deviceId}/methods?api-version=2021-04-12
+  ```
 
 - The POST method
 - Headers that contain the authorization, content type, and content encoding.
@@ -112,10 +111,10 @@ Devices receive direct method requests on the MQTT topic: `$iothub/methods/POST/
 The body that the device receives is in the following format:
 
 ```json
-    {
+  {
         "input1": "someInput",
         "input2": "anotherInput"
-    }
+  }
 
 ```
 

@@ -13,23 +13,23 @@ To synchronize state information between a device and an IoT hub, you use device
 Consider the following `properties` section of a device twin document:
 
 ```json
-    "properties": {
-        "desired": {
-            "telemetryConfig": {
-                "sendFrequency": "5m"
-            },
-            "$metadata" : {...},
-            "$version": 1
-        },
-        "reported": {
-            "telemetryConfig": {
-                "sendFrequency": "5m",
-                "status": "success"
-            },
-            "$metadata" : {...},
-            "$version": 4
-        }
-    }
+  "properties": {
+      "desired": {
+          "telemetryConfig": {
+              "sendFrequency": "5m"
+          },
+          "$metadata" : {...},
+          "$version": 1
+      },
+      "reported": {
+          "telemetryConfig": {
+              "sendFrequency": "5m",
+              "status": "success"
+          },
+          "$metadata" : {...},
+          "$version": 4
+      }
+  }
 
 ```
 
@@ -47,17 +47,17 @@ The solution back end operates on the device twin using the following atomic ope
 - **Partially update device twin**. This operation enables the solution back end to partially update the tags or desired properties in a device twin. The partial update is expressed as a JSON document that adds or updates any property. Properties set to `null` are removed. The following example creates a new desired property with value `{"newProperty": "newValue"}`, overwrites the existing value of `existingProperty` with `"otherNewValue"`, and removes `otherOldProperty`. No other changes are made to existing desired properties or tags:
 
   ```json
-    {
-        "properties": {
-            "desired": {
-                "newProperty": {
-                    "nestedProperty": "newValue"
-                },
-                "existingProperty": "otherNewValue",
-                "otherOldProperty": null
-            }
-        }
-    }
+  {
+      "properties": {
+          "desired": {
+              "newProperty": {
+                  "nestedProperty": "newValue"
+              },
+              "existingProperty": "otherNewValue",
+              "otherOldProperty": null
+          }
+      }
+  }
 
   ```
 
@@ -184,41 +184,41 @@ IoT Hub maintains the timestamp of the last update for each JSON object in devic
 For example:
 
 ```json
-    "properties": {
-        "desired": {
-            "telemetryConfig": {
-                "sendFrequency": "5m"
-            },
-            "$metadata": {
-                "telemetryConfig": {
-                    "sendFrequency": {
-                        "$lastUpdated": "2019-08-30T16:24:48.789Z"
-                    },
-                    "$lastUpdated": "2019-08-30T16:24:48.789Z"
-                },
-                "$lastUpdated": "2019-08-30T16:24:48.789Z"
-            },
-            "$version": 23
-        },
-        "reported": {
-            "telemetryConfig": {
-                "sendFrequency": "5m",
-                "status": "success"
-            },
-            "batteryLevel": "55%",
-            "$metadata": {
-                "telemetryConfig": {
-                    "sendFrequency": "5m",
-                    "status": {
-                        "$lastUpdated": "2019-08-31T16:35:48.789Z"
-                    },
-                    "$lastUpdated": "2019-08-31T16:35:48.789Z"
-                },
-                "$lastUpdated": "2019-08-31T16:35:48.789Z"
-            },
-            "$version": 123
-        }
-    }
+  "properties": {
+      "desired": {
+          "telemetryConfig": {
+              "sendFrequency": "5m"
+          },
+          "$metadata": {
+              "telemetryConfig": {
+                  "sendFrequency": {
+                      "$lastUpdated": "2019-08-30T16:24:48.789Z"
+                  },
+                  "$lastUpdated": "2019-08-30T16:24:48.789Z"
+              },
+              "$lastUpdated": "2019-08-30T16:24:48.789Z"
+          },
+          "$version": 23
+      },
+      "reported": {
+          "telemetryConfig": {
+              "sendFrequency": "5m",
+              "status": "success"
+          },
+          "batteryLevel": "55%",
+          "$metadata": {
+              "telemetryConfig": {
+                  "sendFrequency": "5m",
+                  "status": {
+                      "$lastUpdated": "2019-08-31T16:35:48.789Z"
+                  },
+                  "$lastUpdated": "2019-08-31T16:35:48.789Z"
+              },
+              "$lastUpdated": "2019-08-31T16:35:48.789Z"
+          },
+          "$version": 123
+      }
+  }
 
 ```
 
