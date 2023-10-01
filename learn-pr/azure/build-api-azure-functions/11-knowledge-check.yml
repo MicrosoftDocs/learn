@@ -33,18 +33,18 @@ quiz:
           explanation: "The 'HTTP Trigger' template lets Azure Functions know that a function should be exposed as an HTTP endpoint."
     - content: "What is the RESTful way to handle a delete product action in your API?"
       choices:
-        - content: "Set the URL to /products, pass the ID of the item in the request body and use an HTTP DELETE method."
+        - content: "Set the URL to /product, pass the ID of the item in the request body and use an HTTP DELETE method."
           isCorrect: false
           explanation: "Parameters can be passed on the body, but it's not the best way to pass a single parameter like an 'ID'."
-        - content: "Set the URL to /products, pass in the ID of the item as a URL parameter (products/1) and set the HTTP method to POST."
+        - content: "Set the URL to /product, pass in the ID of the item as a URL parameter (products/1) and set the HTTP method to POST."
           isCorrect: false
           explanation: "The 'POST' method is used for create operations, not deletes."
-        - content: "Set the URL to /delete, pass in the ID of the item as a URL parameter (products/1) and set the HTTP method to DELETE."
+        - content: "Set the URL to /delete, pass in the ID of the item as a URL parameter (product/1) and set the HTTP method to DELETE."
           isCorrect: false
           explanation: "The URL should be set to the resource name, not the name of the action to be performed."
-        - content: "Set the URL to /products, pass in the ID of the item as a URL parameter (products/1) and set the HTTP method to DELETE."
+        - content: "Set the URL to /product, pass in the ID of the item as a URL parameter (product/1) and set the HTTP method to DELETE."
           isCorrect: true
-          explanation: "A RESTful URL is organized by resource name (products), parameters are passed as part of the URL and the correct HTTP method for a delete operation is DELETE. "
+          explanation: "A RESTful URL is organized by resource name (product), parameters are passed as part of the URL and the correct HTTP method for a delete operation is DELETE. "
     - content: "How do you specify app settings for an Azure Functions project?"
       choices:
         - content: "In the package.json file."
