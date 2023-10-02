@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-endpoint-manager.8-windows-autopilot
+uid: learn.intro-to-endpoint-manager.7-windows-autopilot
 title: Understand Windows Autopilot
 metadata:
   title: Understand Windows Autopilot
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-endpoint-manager
 durationInMinutes: 2
 content: |
-  [!include[](includes/8-windows-autopilot.md)]
+  [!include[](includes/7-windows-autopilot.md)]

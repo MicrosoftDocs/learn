@@ -5,7 +5,7 @@ Here are some of the things you covered:
 - Intune is used to manage an organization's endpoints. Endpoints include mobile devices, desktop computers, and servers that an organization uses. Additionally, endpoints also include the apps an organization uses. These endpoints are managed in different environments based on where these endpoints are located.
 - Intune helps you manage and protect your organization against advanced digital threats, while still being productive.
 - By implementing a management infrastructure, you can provide IT services, apps, protection, and configuration to your end users to make them extremely productive.
-- Intune integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, Endpoint analytics, and Windows Autopilot.
+- Intune integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Endpoint analytics, and Windows Autopilot.
 
 ## Next steps
 
