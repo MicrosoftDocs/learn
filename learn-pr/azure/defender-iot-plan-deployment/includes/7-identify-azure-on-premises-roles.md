@@ -54,7 +54,7 @@ Defender for IoT's integration with Active Directory supports LDAP v3 and the fo
 ## Example
 
 An Active Directory Security Analysts group is given access to all your organization's West European automotive and glass production lines, along with a plastics line in one region:
-:::image type="content" source="../media/7-security-analysts-diagram.png" alt-text="Diagram of an Active Directory Security Analyst on-premise access path.":::
+:::image type="content" source="../media/7-security-analysts-diagram.png" alt-text="Diagram of an Active Directory Security Analyst on-premises access path.":::
 
 ## Knowledge check
 <!--

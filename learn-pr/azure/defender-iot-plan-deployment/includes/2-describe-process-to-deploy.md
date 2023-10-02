@@ -1,5 +1,5 @@
 
- To implement Defender for IoT for OT monitoring in your car manufacturer, across global locations, requires planning. You'll want to consider what traffic to monitor across various systems and sites in your organization. Sites could include offices responsible for design and plants with pneumatic and packaging. Also, you'll want to know the teams and roles to involve in the different phases of deployment.
+ To implement Defender for IoT for OT monitoring in your car manufacturer, across global locations, requires planning. You'll want to consider what traffic to monitor across various systems and sites in your organization. Sites could include offices responsible for design and plants with pneumatic  and packaging systems. Also, you'll want to know the teams and roles to involve in the different phases of deployment.
 
 ## Defender for IoT for OT deployment path
 
