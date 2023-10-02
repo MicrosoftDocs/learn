@@ -83,7 +83,7 @@ If the renewable energy supply is high, increase the demand (do more in your app
 
 - Another example is TCP/IP. The transfer speed increases in response to how much data can be broadcast over the wire.
 
-- A third example is progressive enhancement with the web. The web experience improves depending on the resources and the end user's device bandwidth.
+- A third example is progressive enhancement with the web. The web experience improves depending on the resources and bandwidth of the end user's device.
 
 ## Carbon-aware vs. carbon-efficient
 
