@@ -3,12 +3,11 @@ uid: learn.wwl.examine-device-management-concepts-methods.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 07/14/2022
-  author: wwlpublish
-  ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: This content is part of Examine device management concepts and methods for Azure IoT Hub
+  ms.date: 09/26/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -22,9 +21,9 @@ quiz:
     - content: "Reboot and Factory Reset."
       isCorrect: true
       explanation: "Correct. Direct methods are recommended for the Reboot and Factory Reset patterns."
-    - content: "Configuration and Firmware Update."
+    - content: "Configuration."
       isCorrect: false
-      explanation: "Incorrect. The Configuration pattern uses Device Twin properties and the recommended approach for a Firmware update process is to use IoT Hub automatic device management."
+      explanation: "Incorrect. The Configuration pattern uses Device Twin properties."
     - content: "Reporting Progress and Status."
       isCorrect: false
       explanation: "Incorrect. The recommended approach for Reporting Progress and Status is to use Device Twins."

@@ -1,19 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-device-management-concepts-methods
 metadata:
-  title: Examine device management concepts and methods
-  description: "This module introduces you to principles of device management, common patterns of device management, and device management using device twins and direct methods."
-  ms.date: 07/14/2022
-  author: wwlpublish
-  ms.author: cahowd
-  ms.topic: interactive-tutorial
-title: Examine device management concepts and methods
-summary: This module introduces you to principles of device management, common patterns of device management, and device management using device twins and direct methods.
+  title: Examine device management concepts and methods for Azure IoT Hub
+  description: "Examine the principles and common patterns of device management, and device management using device twins and direct methods in Azure IoT Hub."
+  ms.date: 09/26/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.service: iot-hub
+title: Examine device management concepts and methods for Azure IoT Hub
+summary: Evaluate the principles and common patterns of device management, and device management using device twins and direct methods in Azure IoT Hub.
 abstract: |
-  After you complete this module, you will be able to:
-  - Describe device management concepts.
-  - Describe the device management patterns.
-  - Describe device configuration options using device twins and direct methods.
+  After you complete this module, you'll be able to:
+  - Describe device management concepts for Azure IoT Hub.
+  - Describe the device management patterns for Azure IoT Hub.
+  - Describe device configuration options using device twins and direct methods for Azure IoT Hub.
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
@@ -23,12 +26,12 @@ levels:
 - intermediate
 roles:
 - developer
+- solution-architect
 products:
-- azure
 - azure-iot-hub
-- azure-portal
+- azure-iot-sdk
 subjects:
-- device-management
+- iot
 units:
 - learn.wwl.examine-device-management-concepts-methods.introduction
 - learn.wwl.examine-device-management-concepts-methods.review
