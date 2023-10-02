@@ -24,7 +24,7 @@ Use the following questions to help you choose the connection for your manufactu
 - Is your site connected to Azure via ExpressRoute, or over a VPN?
 
 In the image to ensure communication confidentiality, sensors are connected to the Defender for IoT portal in Azure through a proxy in the Azure virtual network.
-:::image type="content" source="../media/5-proxy.png" alt-text="Diagram of a proxy connection using an Azure proxy.":::
+:::image type="content" source="../media/4-proxy.png" alt-text="Diagram of a proxy connection using an Azure proxy.":::
 
 #### Proxy connections with proxy chaining
 
@@ -33,14 +33,14 @@ In the image to ensure communication confidentiality, sensors are connected to t
 
 Here, sensors connect to the Defender for IoT portal in Azure through multiple proxies.
 
-:::image type="content" source="../media/5-proxy-chaining.png" alt-text="Diagram of a proxy connection using proxy chaining.":::
+:::image type="content" source="../media/4-proxy-chaining.png" alt-text="Diagram of a proxy connection using proxy chaining.":::
 
 #### Direct connection
 
 - Do you want to connect your sensor to Azure directly?
 
 An example of how you can connect your sensors to the Defender for IoT portal in Azure directly over the internet.
-:::image type="content" source="../media/5-direct.png" alt-text="Diagram of a direct cloud connection.":::
+:::image type="content" source="../media/4-direct.png" alt-text="Diagram of a direct cloud connection.":::
 
 #### Multicloud connections
 
