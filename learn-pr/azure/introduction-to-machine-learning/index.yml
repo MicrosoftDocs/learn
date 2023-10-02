@@ -39,4 +39,4 @@ units:
 - learn.machinelearning.introduction-to-machine-learning.knowledge-check
 - learn.machinelearning.introduction-to-machine-learning.summary
 badge: 
-  uid: learn.machinelearning.introduction-to-machine-learning.badge #add the uid for your achievement badge.
+  uid: learn.machinelearning.introduction-to-machine-learning.badge

@@ -9,8 +9,7 @@ metadata:
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.service: cognitive-services
-  ms.subservice: openai
+  ms.service: azure-ai-openai
 durationInMinutes: 3
 content: |
   [!include[](includes/4-dall-e-rest-api.md)]
