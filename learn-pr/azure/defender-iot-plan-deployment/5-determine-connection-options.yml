@@ -19,7 +19,7 @@ quiz:
 
   questions:
   
-  - content: "What advantage does cloud connection provide in terms of on-premises sensors?"
+  - content: "What advantage does a cloud connection provide for on-premises sensors?"
     choices:
     - content: "Sensor detected data is delivered to Azure for analysis and sharing."
       isCorrect: true

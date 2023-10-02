@@ -26,10 +26,10 @@ quiz:
       explanation: "The Security Reader role is the right level of access for a team member who only needs read-access to sensor data."
     - content: "Security Admin"
       isCorrect: false 
-      explanation: "The Zero Trust least-priviledged access idea suggests that Security Admin permissions are too high for someone who needs only read access to the sensor data."
+      explanation: "Zero Trust least-priviledged access suggests that Security Admin permissions are too high for someone who needs only read access to the sensor data."
     - content: "Admin"
       isCorrect: false
-      explanation: "Zero Trust least-priviledged access idea suggests that Security Admin permissions are too high for someone who needs only read access to the sensor data."
+      explanation: "Zero Trust least-priviledged access suggests that Security Admin permissions are too high for someone who needs only read access to the sensor data."
 
   - content: "Suppose you have a group of users who are onboarding OT sensors. What Active Directory group could you assign them to?"
     choices:
