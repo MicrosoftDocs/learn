@@ -175,14 +175,14 @@ A [development container](https://containers.dev/) environment is available with
     >
     > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
 
-1. Validate that .NET 7 is installed in your environment:
+1. Validate that .NET 8 is installed in your environment:
 
     ```bash
     dotnet --list-sdks
     ```
 
     ```output
-    7.0.203 [/usr/share/dotnet/sdk]
+    8.0.<patch> [/usr/share/dotnet/sdk]
     ```
 
 1. Build the .NET project
@@ -231,14 +231,14 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     >
     > :::image type="content" source="../media/reopen-container-toast.png" alt-text="Screenshot of a toast notification to reopen the current folder within the context of a development container.":::
 
-1. Validate that .NET 7 is installed in your environment:
+1. Validate that .NET 8 is installed in your environment:
 
     ```bash
     dotnet --list-sdks
     ```
 
     ```output
-    7.0.203 [/usr/share/dotnet/sdk]
+    8.0.<patch> [/usr/share/dotnet/sdk]
     ```
 
 1. Build the .NET project
