@@ -1,4 +1,4 @@
-The **Microsoft cloud security benchmark** (**MCSB**) provides prescriptive best practices and recommendations to help improve the **security of workloads**, **data**, and **services** **on Azure** and **your multi-cloud environment**. This benchmark focuses on cloud-centric control areas with input from a set of holistic Microsoft and industry security guidance that includes:<br>
+The **Microsoft cloud security benchmark** (**MCSB**) provides prescriptive best practices and recommendations to help improve the **security of workloads**, **data**, and **services** **on Azure** and **your multicloud environment**. This benchmark focuses on cloud-centric control areas with input from a set of holistic Microsoft and industry security guidance that includes:<br>
 
  -  **Cloud Adoption Framework**: Guidance on security, including strategy, roles and responsibilities, Azure Top 10 Security Best Practices, and reference implementation.
  -  **Azure Well-Architected Framework**: Guidance on securing your workloads on Azure.
@@ -9,10 +9,10 @@ Microsoft cloud security benchmark is the successor of **Azure Security Benchmar
 
 ## Multicloud security framework and Automated control monitoring
 
-**Comprehensive multi-cloud security framework**: Organizations often have to build an internal security standard to reconcile security controls across multiple cloud platforms to meet security and compliance requirements on each of them. This often requires security teams to repeat the same implementation, monitoring and assessment across the different cloud environments (often for different compliance standards). This creates unnecessary overhead, cost, and effort. To address this concern, we enhanced the Azure Security Benchmarkto Microsoft cloud security benchmarkto help you quickly work with different clouds by:
+**Comprehensive multicloud security framework**: Organizations often have to build an internal security standard to reconcile security controls across multiple cloud platforms to meet security and compliance requirements on each of them. This often requires security teams to repeat the same implementation, monitoring and assessment across the different cloud environments (often for different compliance standards). This creates unnecessary overhead, cost, and effort. To address this concern, we enhanced the Azure Security Benchmark to Microsoft cloud security benchmark to help you quickly work with different clouds by:
 
  -  Providing a single control framework to easily meet the security controls across clouds
- -  Providing consistent user experience for monitoring and enforcing the multi-cloud security benchmark in Defender for Cloud
+ -  Providing consistent user experience for monitoring and enforcing the multicloud security benchmark in Defender for Cloud
  -  Staying aligned with Industry Standards (e.g., CIS, NIST, PCI)
 
 **Automated control monitoring for AWS in Microsoft Defender for Cloud**: You can use Microsoft Defender for Cloud Regulatory Compliance Dashboard to monitor your AWS environment against MCSB just like how you monitor your Azure environment. We developed approximately 180 AWS checks for the new AWS security guidance in MCSB, allowing you to monitor your AWS environment and resources in Microsoft Defender for Cloud.
