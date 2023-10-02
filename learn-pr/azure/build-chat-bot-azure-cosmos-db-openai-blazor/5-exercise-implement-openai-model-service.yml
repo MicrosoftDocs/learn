@@ -8,7 +8,6 @@ metadata:
     Implement the service methods created to connect to Azure OpenAI. In those methods, send prompts to the service, parse the response, and measure the token count utilization.    
   author: seesharprun
   manager: jroth
-  sandbox: true
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial

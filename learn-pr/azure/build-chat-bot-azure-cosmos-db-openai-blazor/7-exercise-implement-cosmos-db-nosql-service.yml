@@ -8,7 +8,6 @@ metadata:
     Implement the service methods created to connect to Azure Cosmos DB for NoSQL. In those methods, create items, query containers, and perform transactional batch operations.
   author: seesharprun
   manager: jroth
-  sandbox: true
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
