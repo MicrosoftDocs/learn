@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.challenge-project-build-speech-translator-app.knowledge-check
+uid: learn.challenge-project-build-speech-translator-app.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -45,6 +44,6 @@ quiz:
     - content: "Train with more speech samples"
       isCorrect: true
       explanation: "Correct. More training data improves accuracy."
-    - content: "Purchase additional keys"
+    - content: "Purchase more keys"
       isCorrect: false
       explanation: "Incorrect. More keys don't improve the model."

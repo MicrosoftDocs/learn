@@ -1,5 +1,4 @@
 # Exercise 1 - Build Data Model and Create the App
-
 Your first activity will be to create a Dataverse table to store conversation history and details of the user. Giving the nature of the project, you only have to store the translated texts into the table and this doesn't require complex tables and relationship mapping. You'll validate your app against requirements to check your work.
 Let's dive deeper into other tasks to be carried out.
 

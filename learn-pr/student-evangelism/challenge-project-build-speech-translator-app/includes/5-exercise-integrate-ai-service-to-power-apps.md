@@ -1,9 +1,9 @@
 # Exercise 3 - Integrate Azure AI Speech Service into Your Canvas App
 
-You are almost done. The last step is to make the features fully functional and maximize their capabilities. Integrating AI into your solution is what makes this level of enhancement possible. It redefines the boundaries of what can be achieved, empowering you to accomplish much more, much faster than was feasible previously. In this case, AI-enabled language transcription takes it to the next level.
+You're almost done. The last step is to make the features fully functional and maximizes their capabilities. Integrating AI into your solution is what makes this level of enhancement possible. It redefines the boundaries of what can be achieved, empowering you to accomplish more, faster than was feasible previously. In this case, AI-enabled language transcription takes it to the next level.
 
 ## Specification
-Edit the Power Apps to meets the following basic functionalities and specifications:
+Edit the Power Apps to meet the following basic functionalities and specifications:
 
 - Add functionality to the Microphone feature to capture what is being said and pass this input to the AzureBatchSpeech-to-text API for translation and show the result in a Text field.
 
@@ -18,4 +18,4 @@ To validate that you have completed working on the requirement for this first ex
 4. Press the button to trigger text-to-speech
 5. Listen to the translated text.
 
-**Congratulations!** Your commitment paid off. You have now built a Speech Translator Application using LowCode Solution and successfully integrated Microsoft Azure AI Speech Service - You are a perfect definition of AI-Skillful LowCode Developer.
+**Congratulations!** Your commitment paid off. You have now built a Speech Translator Application using LowCode Solution and successfully integrated Microsoft Azure AI Speech Service - You're a perfect definition of AI-Skillful LowCode Developer.
