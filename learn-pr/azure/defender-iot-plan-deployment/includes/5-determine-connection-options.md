@@ -1,7 +1,3 @@
-<!-- 
--->
-# Determine connection options
-
 In the last unit, you organized your car manufacturing organization locations into sites and zones. This unit considers the types of sensor management you need. Specifically, the type of cloud-connected sensor that best fits your organizational needs.
 <!-- 
     [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
@@ -35,7 +31,7 @@ In the image to ensure communication confidentiality, sensors are connected to t
 - Does your sensor need a proxy to reach the cloud from the OT network?
 - Do you want multiple sensors to connect to Azure through a single point?
 
-Here, sensors are connected to the Defender for IoT portal in Azure through multiple proxies.
+Here, sensors connect to the Defender for IoT portal in Azure through multiple proxies.
 
 :::image type="content" source="../media/5-proxy-chaining.png" alt-text="Diagram of a proxy connection using proxy chaining.":::
 
@@ -66,7 +62,7 @@ With Air-gapped connections:
 - Specific sensor data must be viewed from the sensor console.
 - The on-premises management console can be used to manage air-gapped sensors and to view aggregated data and configure settings.
 - You must manually upload any threat intelligence packages to locally managed sensors.
-- Sensor names can be updated in the sensor console.
+- Sensor names are updated in the sensor console.
 
 ## Hybrid connection
 
@@ -76,7 +72,7 @@ A hybrid sensor connection includes sensors connected to the cloud as well as lo
 
 All data collection, processing, analysis, and alerting takes place directly on the sensor. Only telemetry and insights are transferred on for management to the Azure portal.
 
-## Next Unit: Knowledge Check
+## Knowledge Check
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!-- Do not add a unit summary or references/links -->

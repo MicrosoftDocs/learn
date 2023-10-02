@@ -14,3 +14,31 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/7-identify-azure-on-premises-roles.md)]
+
+quiz:
+
+  questions:
+  
+  - content: "What role should be assigned to a team member reviewing sensor data but not making any changes?"
+    choices:
+    - content: "Security Reader"
+      isCorrect: true
+      explanation: "The Security Reader role is the right level of access for a team member who only needs read-access to sensor data."
+    - content: "Security Admin"
+      isCorrect: false 
+      explanation: "The Zero Trust least-priviledged access idea suggests that Security Admin permissions are too high for someone who needs only read access to the sensor data."
+    - content: "Admin"
+      isCorrect: false
+      explanation: "Zero Trust least-priviledged access idea suggests that Security Admin permissions are too high for someone who needs only read access to the sensor data."
+
+  - content: "Suppose you have a group of users who are onboarding OT sensors. What Active Directory group could you assign them to?"
+    choices:
+    - content: "OT Security Reader" 
+      isCorrect: false
+      explanation: "An OT Security Reader group presumably has read-only access to sensor data, which isn't enough to onboard OT sensors."
+    - content: "OT Security Admin"
+      isCorrect: true
+      explanation: "An OT Security Admin group has sensor onboarding permissions but still has permission limits."
+    - content: "OT Owner"
+      isCorrect: false
+      explanation: "An OT Owner group presumably has all permissions and can create users. Creating users exceeds the permissions needed by the onboarding users."

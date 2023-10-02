@@ -1,10 +1,4 @@
-<!-- Identify Azure and on-premises roles to assign to users
-
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-# Identify users and roles
-
-In the previous exercise, you determined the best cloud connection options for an OT network sensor.
+In the previous unit, you determined the best cloud connection options for an OT network sensor.
 Now let's look at the user roles you'll need for your automotive manufacturing environment.
 
 ## Overview of users and roles in Microsoft Defender for IoT

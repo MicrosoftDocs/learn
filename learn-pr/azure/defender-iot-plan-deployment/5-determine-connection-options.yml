@@ -14,3 +14,31 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/5-determine-connection-options.md)]
+  
+quiz:
+
+  questions:
+  
+  - content: "What advantage does cloud connection provide in terms of on-premises sensors?"
+    choices:
+    - content: "Sensor detected data is delivered to Azure for analysis and sharing."
+      isCorrect: true
+      explanation: "Connecting to the cloud allows you to deliver sensor data to Azure for analysis and sharing. Also to receive Microsoft threat intelligence package updates automatically."
+    - content: "Sensor detected data is delivered to the on-premises management console for analysis and sharing."
+      isCorrect: false 
+      explanation: "You would choose a traffic mirroring method for each OT sensor in the Plan and prepare stage of deployment and configure them in the Site networking setup phase."
+    - content: "Sensor data is isolated from the network and viewed from the sensor console."
+      isCorrect: false
+      explanation: "Connecting to the cloud isn't an air-gapped solution. Sensor data isn't isolated from the network."
+
+  - content: "If you have a cloud connection that requires a private connection between your sensor and Azure, which type of connection should you choose?"
+    choices:
+    - content: "Multicloud connection" 
+      isCorrect: false
+      explanation: "A multicloud connection is used when you have sensors hosted in multiple public clouds."
+    - content: "Proxy connection with an Azure proxy"
+      isCorrect: true
+      explanation: "When you need a private connection between your sensor and Azure, you can connect through a proxy in the Azure virtual network."
+    - content: "Proxy connections with proxy chaining"
+      isCorrect: false
+      explanation: "Proxy chaining allows you to connect your sensors through multiple proxies."
