@@ -146,7 +146,7 @@ Finally, implement the class variables and client required to access Azure Cosmo
 
     ```csharp
     _container = container ??
-            throw new ArgumentException("Unable to connect to existing Azure Cosmos DB container or database.");
+        throw new ArgumentException("Unable to connect to existing Azure Cosmos DB container or database.");
     ```
 
     > [!TIP]
