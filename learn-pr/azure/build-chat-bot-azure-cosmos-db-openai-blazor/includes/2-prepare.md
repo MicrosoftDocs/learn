@@ -17,17 +17,28 @@ The key tasks you need to do are:
 
 To complete this project, you need an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. To streamline this process, deploy a Bicep template to Azure with both of these accounts.
 
-> [!TIP]
-> This "zero-touch" Bicep template also includes the final application running in Azure App Service. You can always check this out if you want to see a fully working solution.
+> [!NOTE]
+> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true). You will also need to sign up for [Azure OpenAI access](/legal/cognitive-services/openai/limited-access?azure-portal=true) to create an Azure OpenAI account.
 
 ### Deploy infrastructure from template
 
 This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-Samples/cosmosdb-chatgpt) GitHub repository for both the Azure Resource Manager templated deployment and the application code. In this step, create a new deployment using the Bicep template to deploy your resources using "infrastructure as code."
 
-1. Create a new shell variable named **resourceGroupName** with the name of the Azure resource group that has already been created on your behalf.
+> [!TIP]
+> This "zero-touch" Bicep template also includes the final application running in Azure App Service. You can always check this out if you want to see a fully working solution.
+
+1. Create a new shell variable named **resourceGroupName** with the name of the Azure resource group that you will create (`mslearn-cosmos-openai`).
 
     ```azurecli
-    resourceGroupName="<rgn>[sandbox resource group name]</rgn>"
+    resourceGroupName="mslearn-cosmos-openai"
+    ```
+
+1. Create a resource group using [`az group create`](/cli/azure/group#az-group-create()).
+
+    ```azurecli
+    az deployment group create \
+      --name $resourceGroupName \
+      --location "eastus"
     ```
 
 1. Deploy the [azuredeploy.json](https://github.com/Azure-Samples/cosmosdb-chatgpt/blob/main/azuredeploy.json) template file to the resource group using [`az group deployment create`](/cli/azure/group/deployment#az-group-deployment-create).
@@ -52,7 +63,7 @@ Your template deployed Azure Cosmos DB for NoSQL and Azure OpenAI accounts and t
 
 Use `az webapp config` from the Azure CLI to get the Azure OpenAI and Azure Cosmos DB credentials to use in your local development environment. In this section, you filter the output of the various commands to return your endpoint and connection string to use with the .NET SDKs of both Azure OpenAI and Azure Cosmos DB for NoSQL.
 
-1. First, get a list of all running web applications in your resource group using [`az webapp list`](/cli/azure/webapp#az-webapp-list)
+1. First, get a list of all running web applications in your resource group using [`az webapp list`](/cli/azure/webapp#az-webapp-list).
 
     ```azurecli
     az webapp list \
@@ -123,7 +134,7 @@ Use the [Azure portal](/azure/azure-portal) to get the credentials from the Azur
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. Select **Resource Groups** and then select the `<rgn>[sandbox resource group name]</rgn>` resource group.
+1. Select **Resource Groups** and then select the **mslearn-cosmos-openai** resource group.
 
     :::image type="content" source="../media/portal-resource-group.png" lightbox="../media/portal-resource-group.png" alt-text="Screenshot of the resource group page with an Azure Cosmos DB and Azure OpenAI resource.":::
 

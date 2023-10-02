@@ -1,6 +1,10 @@
-After completing the project, you may wish to clean up your development environment or return it to its typical state.
+After completing the project, you may wish to clean up your development environment or return it to its typical state. You may also wish to delete your resource group.
 
-## [GitHub Codespaces](#tab/github-codespaces)
+## Clean up development container
+
+You can stop your development container environment to free up resources whether they are on your local machine or on GitHub.
+
+### [GitHub Codespaces](#tab/github-codespaces)
 
 Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free core hours entitlement you get for your account.
 
@@ -17,7 +21,7 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
     :::image type="content" source="../media/codespace-delete.png" alt-text="Screenshot of the context menu for a single codespace with the delete option highlighted.":::
 
-## [Visual Studio Code](#tab/visual-studio-code)
+### [Visual Studio Code](#tab/visual-studio-code)
 
 You aren't necessarily required to clean up your local environment, but you can stop the running development container and return to running Visual Studio Code in the context of a local workspace.
 
@@ -29,3 +33,20 @@ You aren't necessarily required to clean up your local environment, but you can 
 > Visual Studio Code will stop the running development container, but the container still exists in Docker in a stopped state. You always have the option to deleting the container instance, container image, and volumes from Docker to free up more space on your local machine.
 
 ---
+
+## Clean up resource group
+
+When you no longer need the resources from this project, delete the corresponding resource group.
+
+1. Create a shell variable for `resourceGroupName`` if it doesn't already exist.
+
+    ```azurecli
+    resourceGroupName="mslearn-cosmos-openai"
+    ```
+
+1. Use [`az group delete`](/cli/azure/group#az-group-delete()) to delete the resource group.
+
+    ```azurecli
+    az group delete \
+        --name $resourceGroupName  
+    ```
