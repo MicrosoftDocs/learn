@@ -20,7 +20,7 @@ summary: |
   In future expansions of this path, well also present Machine Teaching Experimentation, the iterative process of implementing, validating results, and modifying brain design, until the brain reaches expected performance. designs to diverse stakeholders.
 
   At the end of this learning path, you'll be able to:
-  - Build Autonomous AI brains in the Project Bonsai platform.
+# - Build Autonomous AI brains in the Project Bonsai platform.
   - Train Autonomous AI brains with monolithic and modular brain structures.
   - Validate brain training and performance using the training graph and custom assessments, respectively.
   - Visually understanding brain performance using embedded graph interfaces.
@@ -35,11 +35,11 @@ roles:
 - data-scientist
 products:
 - azure
-- bonsai
+# - bonsai
 subjects:
 - artificial-intelligence
 modules:
-- learn.oxford.teach-ai-with-project-bonsai
+# - learn.oxford.teach-ai-with-project-bonsai
 - learn.oxford.build-industrial-brain
 trophy:
   uid: learn.oxford.autonomous-ai-implementation-engineer.trophy
