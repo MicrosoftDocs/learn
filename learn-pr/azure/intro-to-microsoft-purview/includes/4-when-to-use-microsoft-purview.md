@@ -43,6 +43,6 @@ Microsoft Purview also uses predefined Data Plane roles to help control who has 
 
 * **Purview Data Reader role**: Has access to the Microsoft Purview governance portal and can read all content in Microsoft Purview except for scan bindings.
 * **Purview Data Curator role**: Has access to the Microsoft Purview governance portal and can read all content in Microsoft Purview except for scan bindings. Can edit information about assets, classification definitions, and glossary terms. Can also apply classifications and glossary terms to assets.
-* **Purview Data Source Administrator role**: Doesn't have access to the Microsoft Purview governance portal because the user must also be in the Data Reader or Data Curator roles. Can manage all aspects of scanning data into Microsoft Purview. Doesn't have read or write access to content in Microsoft Purview beyond those tasks related to scanning.
+* **Purview Data Source Administrator role**: Doesn't have access to the Microsoft Purview governance portal (unless the user is also in the Data Reader or Data Curator roles). Can manage all aspects of scanning data into Microsoft Purview. Doesn't have read or write access to content in Microsoft Purview beyond those tasks related to scanning.
 
 These roles are assigned by using the collections where your data sources are registered. You can grant users access to the data they might need without granting them access to the entire data estate. By assigning roles, you can promote resource discoverability while still protecting sensitive information.
