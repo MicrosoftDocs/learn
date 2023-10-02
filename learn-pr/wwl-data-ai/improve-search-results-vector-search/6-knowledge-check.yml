@@ -24,26 +24,25 @@ quiz:
     - content: "To upload and index a document library."
       isCorrect: false
       explanation: "Incorrect. You upload documents to your storage resource then create an index."
-  - content: ""
+  - content: "What do you need to run a successful vector query?"
     choices:
-    - content: ""
+    - content: "Your search service URL and an admin key"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. These are inserted into the header information of your query."
+    - content: "Your Storage account name and location."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. This isn't the correct index."
+    - content: "Your Azure subscription ID."
       isCorrect: false
-      explanation: ""
-
-  - content: ""
+      explanation: "Incorrect. You don't need this informstion for vector query."
+  - content: "What type of vector search would you use to capture semantic similarity?"
     choices:
-    - content: ""
+    - content: "A Text search."
+      isCorrect: false
+      explanation: "Incorrect. A Text search embedding is used when you need to look at the relevance of long documents to a short query"
+    - content: "A Similarity search."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Use Similarity search embeddings to capture the semantic similarity between pieces of text."
+    - content: "A Code search"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Find embedding code snippets and natural language search queries using a Code search embedding."
