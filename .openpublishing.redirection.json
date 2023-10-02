@@ -27933,6 +27933,118 @@
       "redirect_url": "https://learn.microsoft.com/azure/governance/",
       "redirect_document_id": false
     },
+
+
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/2-what-is-project-bonsai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/3-how-project-bonsai-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/4-when-to-use-project-bonsai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/2-what-project-bonsai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/3-design-bonsai-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/4-exercise-setup-account.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/5-exercise-create-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/6-how-train-evaluate-progress.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/8-exercise-train-evaluate-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/9-understand-assessments.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/10-exercises-assess-trained-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/11-export-run-trained-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/12-exercise-export-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/13-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/14-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },    
     {
       "source_path": "learn-pr/azure/create-an-azure-account/1-introduction.yml",
       "redirect_url": "https://azure.microsoft.com/free/",
