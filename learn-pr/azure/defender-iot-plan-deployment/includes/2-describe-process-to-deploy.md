@@ -81,4 +81,4 @@ Once you no longer detect new traffic or have unhandled alerts your learning pha
 
 In the next units you'll identify the sites and zones appropriate for your auto manufacturer, determine the best connection to the cloud for your needs, and identify the user roles your team members will need.  
 
-## Knowledge Check
+## Knowledge check

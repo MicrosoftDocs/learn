@@ -7,7 +7,7 @@ In the last unit, you organized your car manufacturing organization locations in
 
 A Cloud-connection has on-premises sensors connected to Defender for IoT via Azure. Sensor detected data is displayed in the sensor console and delivered to Azure for analysis and sharing. Microsoft threat intelligence packages are pushed automatically to cloud-connected sensors. The sensor name defined during onboarding is displayed in the sensor and is read-only from the sensor console.
 
-### Connection Types
+### Connection types
 
  Consider what type of connection methods to use for your cloud-connected sensors. Possible types include:
 
@@ -72,7 +72,7 @@ A hybrid sensor connection includes sensors connected to the cloud as well as lo
 
 All data collection, processing, analysis, and alerting takes place directly on the sensor. Only telemetry and insights are transferred on for management to the Azure portal.
 
-## Knowledge Check
+## Knowledge check
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!-- Do not add a unit summary or references/links -->

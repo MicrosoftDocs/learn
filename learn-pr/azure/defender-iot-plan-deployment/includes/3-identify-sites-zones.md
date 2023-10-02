@@ -1,6 +1,6 @@
 Your car manufacturing organization has a network including offices and production sites across the globe. The Zero Trust access strategy requires segmenting your OT network to enhance network security. Defender for IoT for OT uses sites and zones for segmentation.
 
-## Zero Trust Access
+## Zero Trust
 
 Zero Trust is a security strategy, which assumes a breach as a given, and therefore always requires verifications and the least needed privileges. Some applications of Zero Trust in an OT network can include:
 
@@ -32,13 +32,13 @@ In your car manufacturer, you might segment factories and office areas in Paris 
 |**Paris office**     | - Ground floor (Guests)</br>- Floor 1 (Sales)</br>- Floor 2 (Executive) </br>    |
 |**Lagos office**     | - Ground floor (Offices)</br>- Floors 1-2 (Factory)     |
 
-### Separating Zones
+### Separating zones
 
 It's recommended to separate sensors with similar characteristics, like recurring IP address ranges, into separate zones when working with multiple networks. This is to ensure that Defender for IoT differentiates between the devices and identifies each device uniquely.
 
 <!--In the next unit, you'll check your understanding of  organize your car manufacturer's locations into sites and zones based on a network diagram.-->
 
-## Knowledge Check
+## Knowledge check
 
 :::image type="content" source="../media/3-recurring-segments-option-no.png" alt-text="Diagram of a sample network.":::
 <!--Optional "exercise-solution" video -->
