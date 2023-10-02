@@ -87,7 +87,7 @@ In this exercise, you'll:
         branches: [ main ]
     ```
 
-1. Remove the `branches` key and replace it with the `tags` key. This tag says that you'll run this workflow only on specific tags.
+1. Remove the `branches` key and replace it with the `tags` key. This key means this workflow is only run on specific tags.
 
     ```yaml
     name: Build and push the tagged build to production
@@ -98,7 +98,7 @@ In this exercise, you'll:
           - 'v*'
     ```
 
-    In this case, you'll run the workflow only if the tag follows the `v*` pattern, which includes `v1.0.0`.
+    In this case, the workflow runs only if the tag follows the `v*` pattern, which includes `v1.0.0`.
 
 ## Build and push the image
 
@@ -130,7 +130,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     Leave the `checkout` option like you did when you created the staging image.
 
-1. Create a new step that will gather the necessary version information. You'll use the `::set-output` internal command to create this step. Add the following lines below the checkout action:
+1. Create a new step that gathers the necessary version information. You use the `::set-output` internal command to create this step. Add the following lines below the checkout action:
 
     ```yaml
     - name: Fetch latest version
@@ -273,7 +273,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. Rename the `name` key `Build and push production images`.
 
-1. You'll use only a handful of the parameters that are available for these actions.
+1. You use only a handful of the parameters that are available for these actions.
 
     Add the values according to the following table:
 
@@ -287,7 +287,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     |push         |`docker/build-and-push`|`true`                                 |
     |tags         |`docker/build-and-push`|The version number obtained by the `fetch_version` step (as shown in following example). |
 
-    You can delete all the other keys because we won't use them in this exercise.
+    You can delete all the other keys because they aren't used in this exercise.
 
     Your file should look like this example:
 
@@ -327,7 +327,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     Using `steps.` in the YAML is a common practice to refer to previous steps in the pipeline. When we used `set-output` in the `fetch_version` step, we set the output of the step to the value of the `GITHUB_REF` variable. This output is now available in the pipeline inside the `steps` object.
 
-1. Before you save the file, we'll also add another action between the checkout action and the login action, to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
+1. Before you save the file, add another action between the checkout action and the login action, to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and we use `v1`.
 
     To set this action, copy the snippet from this example and paste it between the `Fetch latest version` and the `Docker Login` actions.
 
@@ -377,7 +377,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button.
 
-    This time, the action won't be triggered because you didn't push a new tag. But our earlier action triggers and builds a new `latest` image.
+    This time, the production action doesn't trigger because you didn't push a new tag. But, our earlier staging action triggers and builds a new `latest` image.
 
 ## Create a personal access token (PAT)
 
@@ -397,7 +397,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. Select **Generate token** at the bottom of the page.
 
-1. Select the copy icon to copy your PAT. Make note of the PAT, as it will be used in later steps.
+1. Select the copy icon to copy your PAT. Make note of the PAT for later steps.
 
     :::image type="content" source="../media/7-copy-personal-access-token.png" alt-text="Screenshot that shows the personal access token after it has been created.":::
 

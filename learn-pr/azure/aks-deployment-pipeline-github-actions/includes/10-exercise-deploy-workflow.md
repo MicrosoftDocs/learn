@@ -13,7 +13,7 @@ For staging, the steps include:
 - Deploy the application
 - Test the deployment
 
-To deploy to production, we'll:
+To deploy to production, you'll:
 
 - Create the production deploy job
 - Test the deployment
@@ -190,7 +190,7 @@ In this exercise, you use Helm version `v3.3.1`. Azure has a built action that d
 
 ### Get the AKS credentials
 
-Next, you use an action that uses the Azure CLI to get the AKS credentials. Then, you use Kubectl to deploy your workloads to the cluster.
+Next, you use an action that uses the Azure CLI to get the AKS credentials. Then, you use Kubectl to deploy your workloads to the cluster. Here' we'll use OIDC (Open ID Connect) to handle our authenthication to Azure.
 
 1. Change the `name` key to `Get AKS Credentials`.
 

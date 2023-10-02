@@ -1,6 +1,6 @@
 Let's set up the environment to deploy a Helm chart to AKS by using GitHub Actions.
 
-In this exercise, to deploy a Helm chart, we'll complete the following tasks:
+In this exercise, to deploy a Helm chart, you'll complete the following tasks:
 
 - Check the Helm installation
 - Create a chart
@@ -50,7 +50,7 @@ In this exercise, to deploy a Helm chart, we'll complete the following tasks:
     mkdir templates
     ```
 
-    You've created an empty chart. To start building the workloads, you'll use what others have already built. You'll use YAML files that currently aren't in the new directory you created.
+    You've created an empty chart. To start building the workloads, use what others have already built. Create a new set of YAML files
 
 1. Move the old `kubernetes` files to the `templates` folder.
 
@@ -143,7 +143,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
                   name: http
     ```
 
-    Next, we'll add templating for this deployment, beginning with the `namespace` and `name` keys.
+    Next, we add templates for this deployment, beginning with the `namespace` and `name` keys.
 
 1. In the `metadata` section, add a new key called `namespace`.  The key should have the following configuration:
 
@@ -327,7 +327,7 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
                 pathType: Prefix
     ```
 
-1. Add a new template variable, which will be your DNS zone name:
+1. Add a new template variable for your DNS zone name:
 
     ```yaml
     apiVersion: networking.k8s.io/v1

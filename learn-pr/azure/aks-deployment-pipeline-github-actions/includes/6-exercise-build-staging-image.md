@@ -246,7 +246,6 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     |push         |`docker/build-and-push`|`true`                                 |
     |tags         |`docker/build-and-push`|`${{secrets.ACR_NAME}}/contoso-website:latest`|
 
-
     You can delete all the other keys because they aren't used in this exercise.
 
     Your file should look like this example:
