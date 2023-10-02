@@ -177,66 +177,73 @@ In this exercise, you use Helm version `v3.3.1`. Azure has a built action that d
         with:
           version: v3.3.1
 
-      - name: Azure Kubernetes set context
-        uses: Azure/aks-set-context@v1
+      - name: Login to Azure with OIDC
+        uses: azure/login@v1
         with:
-          # Azure credentials, i.e., output of `az ad sp create-for-rbac --scopes /subscriptions/<SUBSCRIPTION-ID> --role Contributor --sdk-auth`
-          creds: # default is
-          # Resource group name
-          resource-group: # optional, default is
-          # AKS cluster name
-          cluster-name: # optional, default is
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Azure Kubernetes set context
+        uses: Azure/aks-set-context@v3
+        with:
+          resource-group: ${{ secrets.RESOURCE_GROUP }}
+          cluster-name: ${{ secrets.CLUSTER_NAME }}
     ```
 
 ### Get the AKS credentials
 
 Next, you use an action that uses the Azure CLI to get the AKS credentials. Then, you use Kubectl to deploy your workloads to the cluster. Here' we'll use OIDC (Open ID Connect) to handle our authenthication to Azure.
 
+1. Import another package Azure Login. TODO: IMAGES.
+
+1. Define 3 new secrets called `AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, and `AZURE_SUBSCRIPTION_ID`
+
 1. Change the `name` key to `Get AKS Credentials`.
 
-1. Change the `resource-group` key to the name of the resource group that contains your AKS resource. You can get this information by running the following command in Cloud Shell:
+1. Define the `RESOURCE_GROUP` key to the name of the resource group that contains your AKS resource. You can find this information by running the following command in Cloud Shell:
 
     ```azurecli-interactive
     az aks list -o tsv --query "[?name=='contoso-video'].resourceGroup"
     ```
 
-1. In the `cluster-name` key, enter the cluster name. The name of the AKS cluster in this exercise is fixed as `contoso-video`.
+1. In the `CLUSTER_NAME` key, enter the cluster name. The name of the AKS cluster in this exercise is fixed as `contoso-video`.
 
-1. In the `creds` key, define a secret called `AZURE_CREDENTIALS`. The value of this key `${{ secrets.AZURE_CREDENTIALS }}`.
+1. Fill in the secrets with the values of this key `${{ secrets.YOUR_KEY_NAME }}`.
 
     The final YAML should look like this example:
 
     ```yaml
     name: Build and push the latest build to staging
-    
+
     on:
       push:
         branches: [ main ]
-    
+
     jobs:
       build_push_image:
         runs-on: ubuntu-20.04
-    
+
         steps:
           - uses: actions/checkout@v2
-    
+
           - name: Set up Buildx
             uses: docker/setup-buildx-action@v1
-    
+
           - name: Docker Login
             uses: docker/login-action@v1
             with:
               registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
-    
+
           - name: Build and push staging images
             uses: docker/build-push-action@v2
             with:
               context: .
               tags: ${{secrets.ACR_NAME}}/contoso-website:latest
               push: true
-      
+
       deploy:
         runs-on: ubuntu-20.04
         needs: build_push_image
@@ -249,12 +256,18 @@ Next, you use an action that uses the Azure CLI to get the AKS credentials. Then
             with:
               version: v3.3.1
     
-          - name: Get AKS Credentials
-            uses: Azure/aks-set-context@v1
+          - name: Login to Azure with OIDC
+            uses: azure/login@v1
             with:
-              creds: ${{ secrets.AZURE_CREDENTIALS }}
-              resource-group: {resource-group}
-              cluster-name: contoso-video    
+              client-id: ${{ secrets.AZURE_CLIENT_ID }}
+              tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+              subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+          - name: Azure Kubernetes set context
+            uses: Azure/aks-set-context@v3
+            with:
+              resource-group: ${{ secrets.RESOURCE_GROUP }}
+              cluster-name: ${{ secrets.CLUSTER_NAME }}
       ```
 
 
@@ -317,14 +330,18 @@ Now, you have access to your cluster and you have Helm installed. The next step 
             with:
               version: v3.3.1
 
-          - name: Get AKS Credentials
-            uses: Azure/aks-set-context@v1
+          - name: Login to Azure with OIDC
+            uses: azure/login@v1
             with:
-              creds: ${{ secrets.AZURE_CREDENTIALS }}
-              # Resource Group Name
-              resource-group: {resource-group}
-              # AKS Cluster Name
-              cluster-name: contoso-video
+              client-id: ${{ secrets.AZURE_CLIENT_ID }}
+              tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+              subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+          - name: Azure Kubernetes set context
+            uses: Azure/aks-set-context@v3
+            with:
+              resource-group: ${{ secrets.RESOURCE_GROUP }}
+              cluster-name: ${{ secrets.CLUSTER_NAME }}
 
           - name: Run Helm Deploy
             run:
@@ -458,14 +475,18 @@ With the staging workflow created, the next step is to create the production wor
             with:
               version: v3.3.1
 
-          - name: Get AKS Credentials
-            uses: Azure/aks-set-context@v1
+          - name: Login to Azure with OIDC
+            uses: azure/login@v1
             with:
-              creds: ${{ secrets.AZURE_CREDENTIALS }}
-              # Resource group name
-              resource-group: {resource-group}
-              # AKS cluster name
-              cluster-name: contoso-video
+              client-id: ${{ secrets.AZURE_CLIENT_ID }}
+              tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+              subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+          - name: Azure Kubernetes set context
+            uses: Azure/aks-set-context@v3
+            with:
+              resource-group: ${{ secrets.RESOURCE_GROUP }}
+              cluster-name: ${{ secrets.CLUSTER_NAME }}
 
           - name: Run Helm Deploy
             run: |
@@ -541,14 +562,18 @@ With the staging workflow created, the next step is to create the production wor
             with:
               version: v3.3.1
 
-          - name: Get AKS Credentials
-            uses: Azure/aks-set-context@v1
+          - name: Login to Azure with OIDC
+            uses: azure/login@v1
             with:
-              creds: ${{ secrets.AZURE_CREDENTIALS }}
-              # Resource group name
-              resource-group: {resource-group}
-              # AKS cluster name
-              cluster-name: contoso-video
+              client-id: ${{ secrets.AZURE_CLIENT_ID }}
+              tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+              subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+          - name: Azure Kubernetes set context
+            uses: Azure/aks-set-context@v3
+            with:
+              resource-group: ${{ secrets.RESOURCE_GROUP }}
+              cluster-name: ${{ secrets.CLUSTER_NAME }}
 
           - name: Run Helm Deploy
             run: |
