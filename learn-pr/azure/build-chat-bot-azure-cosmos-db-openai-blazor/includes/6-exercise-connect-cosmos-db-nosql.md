@@ -24,16 +24,6 @@ The [`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Co
     dotnet build
     ```
 
-1. Open `cosmoschatgpt.csproj` and observe the new entry for `Microsoft.Azure.Cosmos`.
-
-    ```xml
-    <ItemGroup>
-      ...
-      <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.34.0" />
-      ...
-    </ItemGroup>
-    ```
-
 1. Close the terminal.
 
 ## Add application settings
@@ -184,7 +174,7 @@ At this point, your constructor should include enough logic to create a containe
     MSBuild version 17.5.1+f6fdcf537 for .NET
       Determining projects to restore...
       All projects are up-to-date for restore.
-      cosmoschatgpt -> /workspaces/cosmosdb-chatgpt/bin/Debug/net7.0/cosmoschatgpt.dll
+      cosmoschatgpt -> /workspaces/cosmosdb-chatgpt/bin/Debug/net8.0/cosmoschatgpt.dll
     
     Build succeeded.
         0 Warning(s)

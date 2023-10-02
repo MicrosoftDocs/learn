@@ -12,7 +12,7 @@ The [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) package 
 
 1. Open a new terminal.
 
-1. Use [`dotnet add package`](/dotnet/core/tools/dotnet-add-package) to import the `Azure.AI.OpenAI` package from NuGet specifying a pre-release version.
+1. Use [`dotnet add package`](/dotnet/core/tools/dotnet-add-package) to import the `Azure.AI.OpenAI` package from NuGet specifying a prerelease version.
 
     ```bash
     dotnet add package Azure.AI.OpenAI --prerelease
@@ -22,17 +22,6 @@ The [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) package 
 
     ```bash
     dotnet build
-    ```
-
-1. Open the `cosmoschatgpt.csproj` project file.
-
-1. Observe the entry that was created for the `Azure.AI.OpenAI` package.
-
-    ```xml
-    <ItemGroup>
-      <PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.5" />
-      ...
-    </ItemGroup>
     ```
 
 1. Close the terminal.
@@ -165,7 +154,7 @@ At this point, your constructor should include enough logic to create a client i
     MSBuild version 17.5.1+f6fdcf537 for .NET
       Determining projects to restore...
       All projects are up-to-date for restore.
-      cosmoschatgpt -> /workspaces/cosmosdb-chatgpt/bin/Debug/net7.0/cosmoschatgpt.dll
+      cosmoschatgpt -> /workspaces/cosmosdb-chatgpt/bin/Debug/net8.0/cosmoschatgpt.dll
     
     Build succeeded.
         0 Warning(s)
