@@ -6,7 +6,7 @@ In the previous module, you created a simple Canvas App however, not all the fea
 
 The Speech service provides speech to text and text to speech capabilities with a Speech resource. You can transcribe speech to text with high accuracy, produce natural-sounding text to speech voices, translate spoken audio, and use speaker recognition during conversations.
 
-![Available Speech to text services](./images/speech-to-text-service.png)
+![Available Speech to text services](../media/speech-to-text-service.png) 
 
 The Microsoft Azure AI Service - Speech Service is the back-end engine that completes the solution we're building.
 
@@ -19,7 +19,7 @@ The Microsoft Azure AI Service - Speech Service is the back-end engine that comp
 
 
 > [!NOTE]
-> You need an Active Microsoft Azure subscription to carry out this exercise. If you are a student you can benefit from a [free Azure for students subscription](https://azure.microsoft.com/en-us/free/students/) with $100 in credit to spend on Azure services for 12 months. If you are not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/en-us/free/) with $200 in credit to spend on Azure services for 30 days.
+> You need an Active Microsoft Azure subscription to carry out this exercise. If you are a student you can benefit from a [free Azure for students subscription](https://azure.microsoft.com/free/students/?WT.mc_id=academic-109170-ooyinbooke) with $100 in credit to spend on Azure services for 12 months. If you are not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/free/?WT.mc_id=academic-109171-ooyinbooke) with $200 in credit to spend on Azure services for 30 days.
 
 
 ## Check your work
@@ -30,5 +30,5 @@ If added successfully, Congratulations! You're making incredible progress.
 
 ## Helpful Resources
 If you need help with Azure AI Speech Service, kindly explore the resources here:
-- [Microsoft AI Service - Speech Recognition ](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/overview)
-- [Quickstart: Create a multi-service resource for Azure AI services](https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource)
+- [Microsoft AI Service - Speech Recognition ](https://learn.microsoft.com/azure/ai-services/speech-service/overview?WT.mc_id=academic-109173-ooyinbooke)
+- [Quickstart: Create a multi-service resource for Azure AI services](https://learn.microsoft.com/azure/ai-services/multi-service-resource?WT.mc_id=academic-109174-ooyinbooke)

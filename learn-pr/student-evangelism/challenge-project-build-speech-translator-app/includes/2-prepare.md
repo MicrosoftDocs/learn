@@ -18,8 +18,8 @@ With the diversity of the participants, there are noticeable language barriers t
 
 # Setting up your Tools
 
-1. To get started, you need a Power Apps Developer Account. If you don't have an account, create one for free at [https://powerapps.microsoft.com](https://powerapps.microsoft.com).
+1. To get started, you need a Power Apps Developer Account. If you don't have an account, create one for free at [https://powerapps.microsoft.com](https://powerapps.microsoft.com?WT.mc_id=academic-109169-ooyinbooke).
 2. Microsoft Azure Account.
 
 > [!NOTE]
-> Create an Azure subscription. If you are a student you can benefit from a [free Azure for students subscription](https://azure.microsoft.com/en-us/free/students/) with $100 in credit to spend on Azure services for 12 months. If you are not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/en-us/free/) with $200 in credit to spend on Azure services for 30 days.
+> Create an Azure subscription. If you are a student you can benefit from a [free Azure for students subscription](https://azure.microsoft.com/free/students/?WT.mc_id=academic-109170-ooyinbooke) with $100 in credit to spend on Azure services for 12 months. If you are not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/free/?WT.mc_id=academic-109171-ooyinbooke) with $200 in credit to spend on Azure services for 30 days.

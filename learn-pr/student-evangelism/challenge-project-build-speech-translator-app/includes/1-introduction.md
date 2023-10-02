@@ -32,5 +32,5 @@ In this module, you'll demonstrate your ability to:
 ## Learn before you Do
 If this is your first time learning about Power Apps or about Microsoft Azure AI Services, we have a few resources to help you gt started.
 
-- [Power Platform for Beginners](https://learn.microsoft.com/training/paths/power-plat-fundamentals/).
-- [Microsoft Azure AI Fundamental](https://learn.microsoft.com/training/paths/get-started-with-artificial-intelligence-on-azure/).
+- [Power Platform for Beginners](https://learn.microsoft.com/training/paths/power-plat-fundamentals/?WT.mc_id=academic-109167-ooyinbooke).
+- [Microsoft Azure AI Fundamental](https://learn.microsoft.com/training/paths/get-started-with-artificial-intelligence-on-azure/?WT.mc_id=academic-109168-ooyinbooke).

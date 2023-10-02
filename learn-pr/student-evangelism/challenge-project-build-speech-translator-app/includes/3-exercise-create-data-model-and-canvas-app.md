@@ -32,7 +32,7 @@ Columns:
 
 Use one-to-many relationship between SpeechSession and SpeechUtterance tables
 
-![Sample Table Description](./images/dataverse-table-sample.png)
+![Sample Table Description](../media/dataverse-table-sample.png)
 
 
 > [!NOTE]
