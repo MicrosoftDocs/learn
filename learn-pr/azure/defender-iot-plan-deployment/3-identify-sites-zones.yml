@@ -11,6 +11,22 @@ metadata:
   ms.author: v-mjosephy
   ms.topic: interactive-tutorial
   ms.service: defender-for-iot
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
   [!include[](includes/3-identify-sites-zones.md)]
+
+quiz:
+
+  questions:
+  
+  - content: "The image has six network segments allocated across two sites and zones. If site 2 has two network segments with the same IP addresses from different production lines, how many zones should you have between the two sites?"
+    choices:
+    - content: "1"
+      isCorrect: false
+      explanation: "Sites are divided into zones. One site could have one zone but it may not be shared across two sites."
+    - content: "2"
+      isCorrect: false
+      explanation: "Site 1 may have one zone. However, Site 2 shouldn't have one zone or devices with recurring IP addresses may be consolidated incorrectly, and are identified as separate and unique devices in the device inventory."
+    - content: "3"
+      isCorrect: true
+      explanation: "Site 1 can have one zone. Site 2 should be separated into two zones. That way devices in the segments with recurring IP addresses can consolidate correctly, and are identified as separate and unique devices in the device inventory."

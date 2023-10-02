@@ -1,8 +1,3 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)  title is : Identify the sites and zones for your network topology
--->
-# Identify Sites and Zones across your organization
-
 Your car manufacturing organization has a network including offices and production sites across the globe. The Zero Trust access strategy requires segmenting your OT network to enhance network security. Defender for IoT for OT uses sites and zones for segmentation.
 
 ## Zero Trust Access
@@ -18,7 +13,7 @@ Zero Trust is a security strategy, which assumes a breach as a given, and theref
 
 ## Zero Trust with Defender for IoT
 
-Defender for IoT supports Zero Trust access segmentation with sites and zones. You can group data ingested from sensors in the same site or zone together and monitor for unauthorized traffic crossing segments. Segmenting allows you to create policies for least-privileged access to Defender of IoT.
+Defender for IoT supports Zero Trust access segmentation with sites and zones. You can group data ingested from sensors in the same site or zone together and monitor for unauthorized traffic crossing segments. Segmenting allows you to create policies for least-privileged access to Defender for IoT.
 
 Sites and zones are defined as follows:
 
@@ -43,10 +38,9 @@ It's recommended to separate sensors with similar characteristics, like recurrin
 
 <!--In the next unit, you'll check your understanding of  organize your car manufacturer's locations into sites and zones based on a network diagram.-->
 
-<!-- Should there be -->
+## Knowledge Check
 
-## Next Unit: Knowledge Check
-
+:::image type="content" source="../media/3-recurring-segments-option-no.png" alt-text="Diagram of a sample network":::
 <!--Optional "exercise-solution" video -->
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
