@@ -40,5 +40,5 @@ quiz:
       isCorrect: true
       explanation: "An OT Security Admin group has sensor onboarding permissions but still has permission limits."
     - content: "OT Owner"
-      isCorrect: true
+      isCorrect: false
       explanation: "An OT Owner group presumably has all permissions and can create users. Creating users exceeds the permissions needed by the onboarding users."
