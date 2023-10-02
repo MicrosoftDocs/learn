@@ -4,7 +4,7 @@
 ## Defender for IoT for OT deployment path
 
 The image depicts an OT monitoring deployment path, with the team responsible for each phase that your organization could plan:
-:::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of an OT deployment path":::
+:::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of an OT deployment path.":::
 
 The phases include:
 
@@ -17,7 +17,7 @@ The phases include:
 
 ## Plan and prepare
 
-:::image type="content" source="../media/2-plan-prepare.png" alt-text="Diagram of the planning and preparing path":::
+:::image type="content" source="../media/2-plan-prepare.png" alt-text="Diagram of the planning and preparing path.":::
 
 ### OT site deployment planning
 
@@ -40,13 +40,13 @@ While planning for your organization, prepare the following items:
 
 ## Onboard your planned sensors
 
-:::image type="content" source="../media/2-onboard-sensors.png" alt-text="Diagram of an onboard sensors path":::
+:::image type="content" source="../media/2-onboard-sensors.png" alt-text="Diagram of an onboard sensors path.":::
 
  With your deployment teams, onboard your OT sensors with Defender for IoT on the Azure portal based on your plans for sensors and assigned zones. Download and save each OT sensor's activation file. Your onboarding team, which can include IoT and OT engineers, would need appropriate Azure account permissions, such as Admin or Security Admin to complete onboarding and management tasks.
 
 ## Site networking setup
 
-:::image type="content" source="../media/2-site-networking-setup.png" alt-text="Diagram of a site networking setup path":::
+:::image type="content" source="../media/2-site-networking-setup.png" alt-text="Diagram of a site networking setup path.":::
 
 In the site networking setup phase, you and your connectivity teams will:
 
@@ -55,7 +55,7 @@ In the site networking setup phase, you and your connectivity teams will:
 
 ## Deploy sensors
 
-:::image type="content" source="../media/2-deploy-sensors.png" alt-text="Diagram of a sensor deployment path":::
+:::image type="content" source="../media/2-deploy-sensors.png" alt-text="Diagram of a sensor deployment path.":::
 
 In the sensor deployment phase, you and your deployment teams:
 
@@ -65,7 +65,7 @@ In the sensor deployment phase, you and your deployment teams:
 
 ## Calibrate and fine-tune
 
-:::image type="content" source="../media/2-calibrate-fine-tune.png" alt-text="Diagram of a calibration and fine-tuning path":::
+:::image type="content" source="../media/2-calibrate-fine-tune.png" alt-text="Diagram of a calibration and fine-tuning path.":::
 
 You and your deployment teams do the following in the calibration and fine-tuning phase:
 
@@ -75,7 +75,7 @@ You and your deployment teams do the following in the calibration and fine-tunin
 
 ## Baseline learning ends
 
-:::image type="content" source="../media/2-baseline-learning-ends.png" alt-text="Diagram of the baseline learning ends path":::
+:::image type="content" source="../media/2-baseline-learning-ends.png" alt-text="Diagram of the baseline learning ends path.":::
 
 Once you no longer detect new traffic or have unhandled alerts your learning phase ends, the operational mode for ongoing monitoring begins.
 

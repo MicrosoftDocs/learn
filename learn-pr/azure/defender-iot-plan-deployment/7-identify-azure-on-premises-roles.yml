@@ -11,7 +11,7 @@ metadata:
   ms.author: v-mjosephy
   ms.topic: interactive-tutorial
   ms.service: defender-for-iot
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/7-identify-azure-on-premises-roles.md)]
 

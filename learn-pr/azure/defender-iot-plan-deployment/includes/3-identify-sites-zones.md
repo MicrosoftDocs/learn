@@ -40,7 +40,7 @@ It's recommended to separate sensors with similar characteristics, like recurrin
 
 ## Knowledge Check
 
-:::image type="content" source="../media/3-recurring-segments-option-no.png" alt-text="Diagram of a sample network":::
+:::image type="content" source="../media/3-recurring-segments-option-no.png" alt-text="Diagram of a sample network.":::
 <!--Optional "exercise-solution" video -->
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
