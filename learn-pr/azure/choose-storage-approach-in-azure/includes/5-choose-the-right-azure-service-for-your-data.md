@@ -41,7 +41,7 @@ Other Azure services, like Azure Table storage, Apache HBase in Azure HDInsight,
 
 - Retrieve only by ID.
 - Customers require a high number of read operations with low latency.
-- Create operations and update operations will be somewhat infrequent and can have higher latency than read operations.
+- Create operations and update operations will be less frequent and can have higher latency than read operations.
 
 **Latency and throughput**: Retrievals by ID need to support low latency and high throughput. Create operations and update operations can have higher latency than read operations.
 
