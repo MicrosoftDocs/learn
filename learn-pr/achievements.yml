@@ -29,17 +29,17 @@ achievements:
   type: badge
   title: Run algorithms on quantum hardware by using Azure Quantum
   summary: Run algorithms on quantum hardware by using Azure Quantum
-  iconURL: /training/achievements/quantum.run-quantum-algorithms-hardware-social.png
+  iconURL: /training/achievements/quantum.run-quantum-algorithms-hardware.svg
 - uid: learn.quantum.get-started-azure-quantum.badge
   type: badge
   title: Get started with Azure Quantum
   summary: Get started with Azure Quantum
-  iconURL: /training/achievements/quantum/get-started-quantum-workspace-social.png
+  iconURL: /training/achievements/quantum/get-started-quantum-workspace.svg
 - uid: learn.quantum.solve-graph-coloring-problems-grovers-search.badge
   type: badge
-  title: Solve graph coloring problems by using Grover's search
-  summary: Solve graph coloring problems by using Grover's search
-  iconURL: /training/achievements/quantum/solve-graph-coloring-problems-grovers-search-social.png
+  title: Solve graph coloring problems by using Grovers search
+  summary: Solve graph coloring problems by using Grovers search
+  iconURL: /training/achievements/quantum/solve-graph-coloring-problems-grovers-search.svg
 - uid: learn-wwl.learn-business-value-of-azure.trophy
   type: trophy
   title: Learn the business value of Microsoft Azure
