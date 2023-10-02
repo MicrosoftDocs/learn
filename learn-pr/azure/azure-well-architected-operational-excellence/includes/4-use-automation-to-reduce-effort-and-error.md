@@ -149,7 +149,7 @@ Examples of this automation might include:
 - Searching for and shutting down virtual machines in off hours
 - Running daily reports and producing a dashboard to report to senior management
 
-As an example, let's suppose that you want to reduce your compute costs by configuring one of your development virtual machines to run only during your organization's business hours. You can use the Start/Stop VMs v2 feature, which relies on [Azure Functions](https://learn.microsoft.com/azure/azure-functions/functions-overview) to handle the VM start and stop execution.
+As an example, let's suppose that you want to reduce your compute costs by configuring one of your development virtual machines to run only during your organization's business hours. You can use the Start/Stop VMs v2 feature, which relies on [Azure Functions](/azure/azure-functions/functions-overview) to handle the VM start and stop execution.
 
 ## Automate development environments
 
