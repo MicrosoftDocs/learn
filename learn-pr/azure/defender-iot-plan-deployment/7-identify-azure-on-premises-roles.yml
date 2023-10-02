@@ -11,7 +11,7 @@ metadata:
   ms.author: v-mjosephy
   ms.topic: interactive-tutorial
   ms.service: defender-for-iot
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/7-identify-azure-on-premises-roles.md)]
 
@@ -25,7 +25,7 @@ quiz:
       isCorrect: true
       explanation: "The Security Reader role is the right level of access for a team member who only needs read-access to sensor data."
     - content: "Security Admin"
-      isCorrect: false 
+      isCorrect: false
       explanation: "The Zero Trust least-priviledged access idea suggests that Security Admin permissions are too high for someone who needs only read access to the sensor data."
     - content: "Admin"
       isCorrect: false
