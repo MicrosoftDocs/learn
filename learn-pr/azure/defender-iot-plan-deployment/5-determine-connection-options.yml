@@ -40,5 +40,5 @@ quiz:
       isCorrect: true
       explanation: "When you need a private connection between your sensor and Azure, you can connect through a proxy in the Azure virtual network."
     - content: "Proxy connections with proxy chaining"
-      isCorrect: true
+      isCorrect: false
       explanation: "Proxy chaining allows you to connect your sensors through multiple proxies."
