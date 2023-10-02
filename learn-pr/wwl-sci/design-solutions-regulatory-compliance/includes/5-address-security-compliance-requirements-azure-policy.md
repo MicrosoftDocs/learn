@@ -101,9 +101,7 @@ Azure Policy relies on several factors to determine whether a resource is consid
 The compliance percentage is determined by dividing **Compliant**, **Exempt**, and **Unknown** resources by _total
 resources_. _Total resources_ include **Compliant**, **Non-compliant**,
 **Exempt**, and **Conflicting** resources. The overall compliance numbers are the sum of distinct
-resources that are **Compliant**, **Exempt**, and **Unknown** divided by the sum of all distinct resources. In the
-image below, there are 20 distinct resources that are applicable and only one is **Non-compliant**.
-The overall resource compliance is 95% (19 out of 20).
+resources that are **Compliant**, **Exempt**, and **Unknown** divided by the sum of all distinct resources.
 
 <!--- END: (https://learn.microsoft.com/azure/governance/policy/how-to/get-compliance-data)--->
 
