@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-healthcare.discover-potential-epic-success-story
+title: Discover the potential of Azure OpenAI Services in EHR systems – An Epic success story
+metadata:
+  title: Discover the potential of Azure OpenAI Services in EHR systems – An Epic success story
+  description: "Discover the potential of Azure OpenAI Services in EHR systems – An Epic success story"
+  ms.date: 10/02/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-services
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-discover-potential-epic-success-story.md)]
