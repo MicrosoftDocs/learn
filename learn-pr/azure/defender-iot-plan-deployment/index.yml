@@ -38,8 +38,7 @@ units:
 - learn.defender-iot-plan-deployment.identify-sites-zones
 - learn.defender-iot-plan-deployment.determine-connection-options
 - learn.defender-iot-plan-deployment.identify-azure-on-premises-roles
-- learn.defender-iot-plan-deployment.knowledge-check
-- learn.defender-iot-plan-deployment.summary
+- learn.defender-iot-plan-deployment.6-summary
 badge:
   uid: |
     learn.defender-iot-plan-deployment.badge
