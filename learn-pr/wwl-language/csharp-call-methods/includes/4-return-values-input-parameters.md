@@ -202,7 +202,7 @@ For example, as you enter the word `dice` slowly, IntelliSense will show all C# 
 1. Take a minute to examine the IntelliSense popup for the `Random.Next()` method.
 
     > [!NOTE]
-    > If the IntelliSense popup closed before you had a chance to examine it, delete the invocation operator `()`, and the enter **(** to display the IntelliSense popup.
+    > If the IntelliSense popup closed before you had a chance to examine it, delete the invocation operator `()`, and then enter **(** to display the IntelliSense popup.
 
     Notice that the popup window includes three sections, one on the left and two on the right.
 

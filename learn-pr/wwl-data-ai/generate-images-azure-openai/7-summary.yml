@@ -9,8 +9,7 @@ metadata:
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.service: cognitive-services
-  ms.subservice: openai
+  ms.service: azure-ai-openai
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

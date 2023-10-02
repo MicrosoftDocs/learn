@@ -16,7 +16,7 @@ Azure Active Directory
 
 ## Prerequisites
 
-- An Azure Active Directory (Azure AD) tenant with permissions for managing app registrations. To create a free account, we recommend going through [Create an Azure account](https://learn.microsoft.com/learn/modules/create-an-azure-account/) module.
+- An Azure Active Directory (Azure AD) tenant with permissions for managing app registrations. For more information, see [Create Azure free account](https://azure.microsoft.com/free/).
 - Familiarity with basic Python programming concepts and terminology.
 - An understanding of cloud computing concepts and services.
 - Basic knowledge of the [Microsoft identity platform](https://learn.microsoft.com/learn/modules/explore-microsoft-identity-platform/)
