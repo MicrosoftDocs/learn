@@ -21,4 +21,4 @@ In short, the application will:
 
 ## What is the main goal?
 
-By the end of this module, you're able to author .NET classes that connect to Azure Cosmos DB for NoSQL or Azure OpenAI. The classes you author implement common operations using their respective SDKs. Finally, the classes you author are then used in an Blazor application.
+By the end of this module, you're able to author .NET classes that connect to Azure Cosmos DB for NoSQL or Azure OpenAI. The classes you author implement common operations using their respective SDKs. Finally, the classes you author are then used in a Blazor application.

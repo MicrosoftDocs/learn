@@ -5,7 +5,7 @@ metadata:
   unitType: summary
   title: summary
   description: |
-    Summarize what you learned in this training module updating an Blazor web application that connects to Azure Cosmos DB for NoSQL and Azure OpenAI.
+    Summarize what you learned in this training module updating a Blazor web application that connects to Azure Cosmos DB for NoSQL and Azure OpenAI.
   author: seesharprun
   manager: jroth
   ms.author: sidandrews
