@@ -123,7 +123,7 @@ To complete the component that sends messages about sales performance, complete 
     }
     ```
 
-1. Save the file using the editor's **&#9776;** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. To save your changes, select <kbd>Ctrl+S</kbd>, and then select <kbd>Ctrl+Q</kbd> to close the editor.
 
 ## Send a message to the topic
 
@@ -330,7 +330,7 @@ To create the component that retrieves messages about sales performance, complet
     }
     ```
 
-1. Save the file using either the **&#9776;** menu or use the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. To save your changes, select <kbd>Ctrl+S</kbd>, and then select <kbd>Ctrl+Q</kbd> to close the editor.
 
 ## Retrieve a topic message for a subscription
 
@@ -358,7 +358,7 @@ az servicebus topic subscription show \
      --topic-name salesperformancemessages \
      --name Americas \
      --query messageCount \
-     --namespace-name <namespace-name> \
+     --namespace-name <namespace-name> 
 ```
 
 If you replace `Americas` with `EuropeAndAsia` in this code to see the current message count for the `EuropeAndAsia` subscription, you'll see that the message count is `1`. In the preceding code, only `Americas` was set to retrieve topic messages, so that message is still waiting for `EuropeAndAsia` to retrieve it.

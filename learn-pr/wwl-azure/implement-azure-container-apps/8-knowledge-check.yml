@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-container-apps.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/13/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.service: azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following options is true about the built-in authentication feature in Azure Container Apps?"
+    choices:
+    - content: "It can only be configured to restrict access to authenticated users."
+      isCorrect: false
+      explanation: "Incorrect. The built-in authentication feature can be configured to handle authenticated and non-authenticated users."
+    - content: "It allows for out-of-the-box authentication with federated identity providers."
+      isCorrect: true
+      explanation: "Correct. Azure Container Apps provides built-in authentication and authorization features to secure your external ingress-enabled container app with minimal or no code."
+    - content: "It requires the use of a specific language or SDK."
+      isCorrect: false
+      explanation: "Incorrect. The security container running the authentication and authorization module doesn't run in-process, so no direct integration with a specific language is possible."
+  - content: "What is a revision in Azure Container Apps?"
+    choices:
+    - content: "A dynamic snapshot of a container app version."
+      isCorrect: false
+      explanation: "Incorrect. A revision is an immutable snapshot of a container app version."
+    - content: "A version of a container app that is actively being used."
+      isCorrect: false
+      explanation: "Incorrect. A revision is an immutable snapshot of a container app version."
+    - content: "An immutable snapshot of a container app version."
+      isCorrect: true
+      explanation: "Correct. A revision is an immutable snapshot of a container app version."

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement a non-relational data model
 summary: Identify an application’s key access patterns. Define the entities’ data model, along with containers to store the data with a partition key that will result in an efficient and scalable data store for the application.
 abstract: |

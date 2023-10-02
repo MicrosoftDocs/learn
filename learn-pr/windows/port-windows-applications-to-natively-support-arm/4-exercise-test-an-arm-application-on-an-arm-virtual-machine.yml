@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.learn-windows-on-arm.exercise-test-an-arm-application-on-an-arm-virtual-machine
+title: Exercise test an Arm application build on a Windows on Arm virtual machine
+metadata:
+  title: Exercise - Test an Arm application build on a Windows on Arm virtual machine
+  description: "Tutorial demonstrating the steps to test an Arm64 build on a Windows on Arm virtual machine."
+  ms.date: 5/6/2023
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: module-standard-task-based
+  ms.prod: windows
+  ms.technology: arm
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-test-an-arm-application-on-an-arm-virtual-machine.md)]

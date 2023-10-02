@@ -4,11 +4,12 @@ metadata:
   moduleType: standard
   title: Implement Redis Pub/Sub and Streams in Azure Cache for Redis
   description: In this module, you will implement both the Pub/Sub and Streams features of Redis in Azure Cache for Redis.
-  ms.date: 02/11/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/11/2023
+  author: flang-msft
+  ms.author: franlanglois
+  ms.topic: module-standard-task-based
+  ms.service: cache
+  manager: mcleans
 title: Implement Pub/Sub and Streams in Azure Cache for Redis
 summary: >
   Execute Redis pub/sub commands for event-based messaging at scale in Azure Cache for Redis. Use the Redis console to create, append, and query a Redis stream with time-based ranges.

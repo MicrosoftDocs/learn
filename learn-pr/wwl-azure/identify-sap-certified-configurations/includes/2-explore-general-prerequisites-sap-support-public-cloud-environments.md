@@ -1,3 +1,5 @@
+
+
 General prerequisites for SAP support in public cloud environments are outlined in [SAP Note \#1380654](https://launchpad.support.sap.com/#/notes/1380654) and include the following items:
 
 - Licensing for SAP software to be deployed.
@@ -13,6 +15,6 @@ To implement SAP workloads on Azure in a supported manner, customers should foll
 - **SAP product**
 - **Operating system**
 - **RDBMS**
-- **Azure offering**, including Azure VM SKU and (in case of HANA) SAP HANA on Azure (Large Instances)
+- **Azure offering**, including Azure VM SKUs
 
 This information is summarized at [SAP certifications and configurations running on Microsoft Azure](/azure/virtual-machines/workloads/sap/sap-certifications).

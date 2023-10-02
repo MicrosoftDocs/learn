@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-c-sharp-methods-parameters.exercise-use-named-optional-parameters
-title: Methods with optional parameters
+title: Exercise - Methods with optional parameters
 metadata:
-  title: Methods with optional parameters
-  description: "Methods with optional parameters"
-  ms.date: 03/29/2023
+  title: Exercise - Methods with optional parameters
+  description: "Exercise - Methods with optional parameters"
+  ms.date: 09/19/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-use-named-optional-parameters.md)]

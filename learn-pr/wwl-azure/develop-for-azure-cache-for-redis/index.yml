@@ -3,11 +3,11 @@ uid: learn.wwl.develop-for-azure-cache-for-redis
 metadata:
   title: Develop for Azure Cache for Redis
   description: "Learn how to configure Azure Cache for Redis, interact with the cache, and connect an application to Azure Cache for Redis by using .NET."
-  ms.date: 02/08/2023
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cache
 title: Develop for Azure Cache for Redis
 summary: Learn how to configure Azure Cache for Redis, interact with the cache, and connect an application to Azure Cache for Redis by using .NET.
 abstract: |

@@ -1,4 +1,4 @@
-In this part, you learn about processes that you can implement to monitor site reliability. You also learn about ongoing tuning of your alerts to reduce meaningless alerts.
+In this unit, you learn about processes that you can implement to monitor site reliability. You also learn about ongoing tuning of your alerts to reduce meaningless alerts.
 
 ## Monitoring and alerting
 
@@ -15,9 +15,9 @@ When you review existing alerts or write new alert rules, consider these guideli
   - Correctness.
   - Feature-specific problems.
 - Symptoms are a better way to capture problems comprehensively and robustly with less effort.
-- Include cause-based information in symptom-based pages or on dashboards but avoid alerting directly on causes.
+- Include cause-based information in symptom-based pages or on dashboards, but avoid alerting directly on causes.
 - The further up your serving stack you go, the more distinct problems you catch in a single rule. But don't go so far that you can't sufficiently distinguish what's going on.
-- If you want a quiet on-call rotation, have a system for dealing with issues that need a timely response but are not imminently critical.
+- If you want a quiet on-call rotation, have a system for dealing with issues that need a timely response but aren't imminently critical.
 
 ## Monitor for your users
 
@@ -25,27 +25,17 @@ Monitoring for your users is also called *symptom-based monitoring.* This is in 
 
 In general, users care about:
 
-- Basic availability and correctness.
-
-    Anything that breaks the core service in some way should be categorized as unavailability.
-- Latency.
-
-    Pages should load quickly.
-- Completeness, freshness, and durability.
-
-    Your users' data should be safe, should come back promptly, and search indices should be up to date.
-- Uptime.
-
-    Even if the service is temporarily unavailable, users should have complete faith that the service will be back up soon.
-- Features.
-
-    Your users care that all the features of the service work. Monitor for anything that is an important aspect of your service, even if it's not core functionality.
+- **Basic availability and correctness**: Anything that breaks the core service in some way should be categorized as unavailability.
+- **Latency**: Pages should load quickly.
+- **Completeness, freshness, and durability**: Your users' data should be safe, should come back promptly, and search indices should be up to date.
+- **Uptime**: Even if the service is temporarily unavailable, users should have complete faith that the service will be back up soon.
+- **Features**: Your users care that all the features of the service work. Monitor for anything that is an important aspect of your service, even if it's not core functionality.
 
 There's a subtle but important difference between database servers being unavailable and user data being unavailable. The former is an immediate cause, the latter is a symptom.
 
 ## Cause-based alerts have their place
 
-Sometimes there is no symptom to alert on but you still need to be alerted to a situation. An example is running low on memory. You want rules to notify you of issues that could become a problem before they cause a symptom. In this case, you can write a rule to alert on this condition.
+Sometimes, there's no symptom to alert on, but you still need to be alerted to a situation. An example is running low on memory. You want rules to notify you of issues that could become a problem before they cause a symptom. In this case, you can write a rule to alert on this condition.
 
 However, don't write cause-based rules that trigger on call alerts for symptoms you can catch otherwise.
 
@@ -53,13 +43,9 @@ However, don't write cause-based rules that trigger on call alerts for symptoms 
 
 Alerts that need attention soon, but not right away are *subcritical alerts*. Here are some suggestions for logging subcritical alerts to follow up on later:
 
-- Bug or ticket-tracking systems can be useful for this type of alert.
-
-    An alert can open a bug, as long as the same alert gets correctly placed in a single ticket  or bug. These bugs can then go through a triage process to be assigned to someone to follow up on. It's important that these types of issues be addressed before they become critical. Take into account how much of your team members' time can be devoted to fixing bug.
-- A daily (or more frequent) report can be useful.
-
-    Write subcritical alerts that are long-lived, for example, the database is over 90% full, to a report that shows all active alerts. Assign someone to triage this report daily.
-- Every alert should be tracked through a workflow system to ensure that they're being seen and addressed.
+- **Bug or ticket-tracking systems can be useful for this type of alert**: An alert can open a bug, as long as the same alert gets correctly placed in a single ticket  or bug. These bugs can then go through a triage process to be assigned to someone to follow up on. It's important that these types of issues be addressed before they become critical. Take into account how much of your team members' time can be devoted to fixing bug.
+- **A daily (or more frequent) report can be useful**: Write subcritical alerts that are long-lived, for example, the database is over 90% full, to a report that shows all active alerts. Assign someone to triage this report daily.
+- **Every alert should be tracked through a workflow system**: This ensures that they're being seen and addressed.
 
 In general, create a system that promotes accountability for responsiveness, but doesn't have the high cost of immediate human intervention.
 
@@ -77,17 +63,9 @@ Having a weekly review of all triggered on-call alerts and analyzing quarterly a
 
 Here are some reasons you might break the above guidelines:
 
-- You have a known cause that actually sits below the noise in your symptoms.
-
-    For example, if your service has 99.99% availability, but you have a common event that causes 0.001% of requests to fail, you can't alert on it as a symptom because it's in the noise, but you can catch the causative event.
-- You can't monitor at the entry point because you lose data resolution.
-
-    For example, you tolerate some endpoints being slow, like credit card validation. At your load balancers, this distinction may be lost. You will need to walk down the stack and alert from the highest place where you have the distinction.
-- Your symptoms don't appear until it's too late.
-
-    For example, you've run out of quota. You need to alert someone before it's too late, and sometimes that means finding a cause to alert on. For example, your usage is greater than 80% and will run out in less than 4 hours at the growth rate of the last 1 hour.
+- **You have a known cause that actually sits below the noise in your symptoms**: For example, if your service has 99.99% availability, but you have a common event that causes 0.001% of requests to fail, you can't alert on it as a symptom because it's in the noise, but you can catch the causative event.
+- **You can't monitor at the entry point because you lose data resolution**: For example, you tolerate some endpoints being slow, like credit-card validation. At your load balancers, this distinction may be lost. You will need to walk down the stack and alert from the highest place where you have the distinction.
+- **Your symptoms don't appear until it's too late**: For example, you've run out of quota. You need to alert someone before it's too late, and sometimes that means finding a cause to alert on. For example, your usage is greater than 80% and will run out in less than four hours at the growth rate of the last one hour.
 
     However, you should also be able to find a similar cause that's less urgent. For example, your quota is greater than 90% and will run out in less than four days at the growth rate of the last day. That set of circumstances will catch most cases. You can then deal with the problem as a ticket or email alert or daily problem report, rather than the last-ditch escalation that an alert represents.
-- Your alert setup is more complex than the problems they're trying to detect.
-
-    The goal should be to move towards simple, robust, self-protecting systems.
+- **Your alert setup is more complex than the problems it's trying to detect**: The goal should be to move towards simple, robust, self-protecting systems.

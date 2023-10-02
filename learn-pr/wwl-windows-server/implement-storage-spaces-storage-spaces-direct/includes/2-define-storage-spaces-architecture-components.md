@@ -31,8 +31,6 @@ Storage tiers allow you to optimize the use of different disk types in a storage
 > [!NOTE]
 > Windows Server 2019 added support for persistent memory (PMem). You use PMem as a cache to accelerate the active working set, or as capacity to guarantee consistent low latency on the order of microseconds.
 
-By default, the Storage Spaces feature moves data once a day at 01:00 AM. You have the option of changing this default and to run the optimization task on demand. You can also exclude individual files from the scope of optimization by assigning them explicitly to a particular tier. The advantage is that if you have files that are accessed frequently, you can pin them to the faster disk. The goal of tiering is to balance capacity against performance. Windows Server recognizes only two levels of disk tiers: SSD, and non-SSD.
-
 ### Write-back caching
 
 The purpose of write-back caching is to optimize writing data to the disks in a storage space. Write-back caching works with Tiered Storage Spaces. If the server that is running the storage space detects a peak in disk-writing activity, it automatically starts writing data to the faster disks. By default, write-back caching is enabled.

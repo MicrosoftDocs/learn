@@ -1,18 +1,20 @@
+
+
 A common backup scheduling strategy described in the HANA Administration guide involves the following backups:
 
- -  Storage snapshot (daily)
- -  Complete data backup using file or bacint format (once a week)
- -  Automatic log backups
+- Storage snapshot (daily)
+- Complete data backup using file or bacint format (once a week)
+- Automatic log backups
 
 Optionally, one could go completely without storage snapshots; they could be replaced by HANA delta backups, like incremental or differential backups.
 
 The HANA Administration guide provides an example list. It suggests that one recover SAP HANA to a specific point in time using the following sequence of backups:
 
- -  Full data backup
- -  Differential backup
- -  Incremental backup 1
- -  Incremental backup 2
- -  Log backups
+- Full data backup
+- Differential backup
+- Incremental backup 1
+- Incremental backup 2
+- Log backups
 
 Regarding an exact schedule as to when and how often a specific backup type should happen, it is not possible to give a general guideline—this would be customer-specific and dependent on the volume of data changes in the system. One basic recommendation from SAP, which is general guidance, is to make one full HANA backup once a week. SAP also recommends doing some housekeeping of the backup catalog to keep it from growing infinitely.
 

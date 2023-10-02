@@ -8,7 +8,7 @@ metadata:
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/2-integrate-azure-openai-into-app.md)]

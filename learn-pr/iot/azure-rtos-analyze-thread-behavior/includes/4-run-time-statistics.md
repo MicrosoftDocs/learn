@@ -18,9 +18,9 @@ tx_thread_performance_info_get(&Routine, &Routine_resumptions,
 
 Here are the parameter meanings of this `tx_thread_performance_info_get` service:
 
-- `&Routine`—Pointer to the Routine thread control block structure
-- `&Routine_resumptions`—Pointer to destination for the number of resumptions of this thread
-- `&Routine_suspensions`—Pointer to destination for the number of suspensions of this thread
-- `&Routine_solicited_preemptions`—Pointer to the number of preemptions that occurred as a result of ThreadX API service calls executed by this thread
+- `&Routine`: Pointer to the Routine thread control block structure
+- `&Routine_resumptions`: Pointer to destination for the number of resumptions of this thread
+- `&Routine_suspensions`: Pointer to destination for the number of suspensions of this thread
+- `&Routine_solicited_preemptions`: Pointer to the number of preemptions that occurred as a result of ThreadX API service calls executed by this thread
 
 There are other parameters for this service that we don't need, so we enter `TX_NULL` to ignore them.

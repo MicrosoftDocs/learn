@@ -6,17 +6,17 @@ In this exercise, we'll look at how you can install a technology stack like Node
 
 1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **explorer** and select **View: Show Explorer**.
-1. Open the ".devcontainer" folder.
-1. Locate and open the devcontainer.json.
+1. Open the `.devcontainer` folder.
+1. Locate and open the `devcontainer.json` file.
 1. Add the following code to install Node.js via a Feature.
 
-```json
-"features": {
-	"ghcr.io/devcontainers/features/node:1": {
-		"version": "18"
-	}
-}
-```
+    ```json
+    "features": {
+    	"ghcr.io/devcontainers/features/node:1": {
+    		"version": "18"
+    	}
+    }
+    ```
 
 1. Save your project.
 1. Open the Command Palette.
@@ -27,7 +27,7 @@ In this exercise, we'll look at how you can install a technology stack like Node
 Let's check to make sure Node installed correctly.
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in Visual Studio Code.
-1. Enter the following code to check your version of Node.
+1. Enter the following code to check your version of Node:
 
    ```bash
    node --version

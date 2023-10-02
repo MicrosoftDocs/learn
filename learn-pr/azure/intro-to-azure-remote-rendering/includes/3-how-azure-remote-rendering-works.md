@@ -28,19 +28,19 @@ After conversion, you must establish a session between your client device and th
 
 ### What is a session?
 
-Azure Remote Rendering works by offloading complex rendering tasks to the cloud. These rendering tasks must be performed by specific cloud servers. The servers are equipped with the type of GPUs required to render complex 3D models. You cannot use just any server, so you must reserve the use of a server with the required capabilities. You do so by requesting a *session*.
+Azure Remote Rendering works by offloading complex rendering tasks to the cloud. These rendering tasks must be performed by specific cloud servers. The servers are equipped with the type of GPUs required to render complex 3D models. You can't use just any server, so you must reserve the use of a server with the required capabilities. You do so by requesting a *session*.
 
 A session includes the following components:
 
-- Lease request to reserve a server for your use. During a lease request, you choose the server size you want to run on. You can select Standard or Premium. This sizing cannot be changed during a running session.
+- Lease request to reserve a server for your use. During a lease request, you choose the server size on which you want to run. You can select Standard or Premium. You can't change this sizing during a running session.
 
    > [!IMPORTANT]
-   > Remote Rendering with a standard-sized server has a maximum scene size of 20 million polygons. Remote Rendering with a premium-sized server doesn't enforce a hard maximum; however, performance might be degraded if your content exceeds the rendering capabilities of the service.
+   > Remote Rendering with a Standard-sized server has a maximum scene size of 20 million polygons. Remote Rendering with a Premium-sized server doesn't enforce a hard maximum; however, performance might be degraded if your content exceeds the rendering capabilities of the service.
 
 - All the commands for loading and manipulating models.
 - A lease-end request to release the cloud server after rendering is complete.
 
-A session consists of three basic phases. These are described in the following table.
+A session consists of three basic phases, described in the following table:
 
 | Phase           | Description                                                  |
 | --------------- | ------------------------------------------------------------ |
@@ -50,7 +50,7 @@ A session consists of three basic phases. These are described in the following t
 
 ### Rendering modes
 
-When rendering, the server sends rendered frames back into the application that's running locally on the device. There are two rendering modes, which the following table describes.
+When rendering, the server sends rendered frames back into the application that's running locally on the device. The following table describes the two rendering modes:
 
 | Mode     | Description     |
 | ---- | ---- |
@@ -62,7 +62,7 @@ When rendering, the server sends rendered frames back into the application that'
 
 ## Client SDK
 
-After the frames arrive on your device, they're composited with any local holograms that you might have in your image. This provides a truly hybrid rendering experience that enables you to mix and match both remote and local holograms. This means that you only have to render the remote objects that have a higher polygon count.
+After the frames arrive on your device, they're composited with any local holograms that you might have in your image. This provides a truly hybrid rendering experience that allows you to mix and match both remote and local holograms. This means that you only have to render the remote objects that have a higher polygon count.
 
 > [!TIP]
 > Keep content such as menus and smaller models local.

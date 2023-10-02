@@ -3,14 +3,17 @@ uid: learn.build-dotnet-app-azure-cosmos-db-nosql
 metadata:
   moduleType: guided-project
   title: Guided project - Build a .NET app with Azure Cosmos DB for NoSQL
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   description: |
     This module walks through connecting to Azure Cosmos DB for NoSQL to create and query container items from a .NET console application. 
   author: seesharprun
   ms.author: sidandrews
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.date: 3/30/2023
+  ms.date: 06/08/2023
+  ms.service: cosmos-db
 title: Guided project - Build a .NET app with Azure Cosmos DB for NoSQL
 summary: |
   Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform common operations. Your code creates resources, coordinate multiple operations, and query items.
@@ -19,10 +22,10 @@ summary: |
   > This module is a **_Guided Project_** where you complete an end-to-end project by following step-by-step instructions.
 abstract: |
    In this module, you practice how to:
-    - Connect to an Azure Cosmos DB for NoSQL account using the .NET SDK
-    - Create Azure Cosmos DB for NoSQL database, container, and item resources
-    - Execute multiple Azure Cosmos DB for NoSQL .NET SDK operations together as a transaction
-    - Query Azure Cosmos DB for NoSQL items using language-intergrated query (LINQ) and the query language
+    - Connect to an Azure Cosmos DB for NoSQL account using the .NET SDK.
+    - Create Azure Cosmos DB for NoSQL database, container, and item resources.
+    - Execute multiple Azure Cosmos DB for NoSQL .NET SDK operations together as a transaction.
+    - Query Azure Cosmos DB for NoSQL items using language-intergrated query (LINQ) and the query language.
 prerequisites: |
   - Experience with Azure Cosmos DB concepts such as databases, containers, and items
   - Experience writing queries for Azure Cosmos DB for NoSQL
@@ -46,6 +49,7 @@ units:
   - learn.build-dotnet-app-azure-cosmos-db-nosql.exercise-create-items
   - learn.build-dotnet-app-azure-cosmos-db-nosql.exercise-read-query
   - learn.build-dotnet-app-azure-cosmos-db-nosql.exercise-linq
+  - learn.build-dotnet-app-azure-cosmos-db-nosql.cleanup
   - learn.build-dotnet-app-azure-cosmos-db-nosql.knowledge-check
   - learn.build-dotnet-app-azure-cosmos-db-nosql.summary
 badge:

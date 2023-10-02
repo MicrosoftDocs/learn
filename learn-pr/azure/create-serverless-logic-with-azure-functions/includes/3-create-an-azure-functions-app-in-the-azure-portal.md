@@ -6,14 +6,17 @@ Functions are hosted in an execution context called a **function app**. You defi
 
 ### Choose a service plan
 
-Function apps may use one of two types of service plans:
+Function apps may use one of the following hosting plans:
 
 - Consumption plan
-- Azure App Service plan
+- Premium plan
+- Dedicated (App Service) plan
 
 When using the Azure serverless application platform, choose the **Consumption plan**. This plan provides automatic scaling and bills you only when your functions are running. The Consumption plan comes with a configurable timeout period for executing a function. By default, it's five (5) minutes, but may be configured to have a timeout as long as 10 minutes.
 
-The **Azure App Service plan** enables you to avoid timeout periods by having your function run continuously on a VM that you define. When using an App Service plan, you're responsible for managing the app resources the function runs on, so this is technically not a serverless plan. However, it may be a better choice if your functions are used continuously, or if your functions require more processing power or longer execution time than the Consumption plan can provide.
+The **Premium plan** also dynamically scales your resources to meet demand, but you can specify a minimum number of VM instances to keep warm and reduce so called "cold starts." Premium plan also lets your functions connect to and run inside virtual networks. Like the Dedicated plan, the default timeout for apps in a Premium plan is 30 minutes, but they can essentially run for an unlimited time (depending on server availability). 
+
+The **Dedicated (App Service) plan** enables you to avoid timeout periods by having your function run continuously on a VM that you define. When using an App Service plan, you're responsible for managing the app resources the function runs on, so this is technically not a serverless plan. However, it may be a better choice when you already have excess App Service resources available on which to also run your functions.
 
 ### Storage account requirements
 
@@ -21,11 +24,13 @@ When you create a function app, it must be linked to a storage account. You can 
 
 ## Create a function app
 
-Let's create a function app in the Azure portal.
+[!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
+Let's create a function app in the Azure portal. Completing this module incurs a small cost of a few USD cents or less in your Azure account.
 
 ::: zone pivot="javascript"
 
-1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using your Azure account.
 
 1. Under **Azure services**, select **Create a resource**.
 
@@ -41,7 +46,7 @@ Let's create a function app in the Azure portal.
     | --- | --- |
     | **Project Details** |
     | Subscription | Concierge Subscription |
-    | Resource Group | From the dropdown list, select **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource Group | **<rgn>myResourceGroup</rgn>** |
     | **Instance Details** |
     | Function App name  | Enter a globally unique app name, which becomes part of the base URL of your service. For example, you can name it **escalator-functions-xxx**, where you can replace xxx with your initials and a number. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
@@ -49,13 +54,13 @@ Let's create a function app in the Azure portal.
     | Version | Accept *default* |
     | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
 
-1. Select **Review + create**, and then select **Create**. Deployment takes a few minutes. You'll receive a notification when deployment is completed.
+1. Select **Review + create**, and then select **Create**. Deployment takes a few minutes. You receive a notification when deployment is completed.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using your Azure account.
 
 1. Under **Azure services**, select **Create a resource**.
 
@@ -73,7 +78,7 @@ Let's create a function app in the Azure portal.
     | --- | --- |
     | **Project Details** |
     | Subscription | Concierge Subscription |
-    | Resource Group | From the dropdown list, select **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource Group | **<rgn>myResourceGroup</rgn>** |
     | **Instance Details** |
     | Function App name  | Enter a globally unique app name. This value serves as the base URL of your service. For example, you can name it **escalator-functions-xxx**, replacing xxx with your initials and a number. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
@@ -81,7 +86,7 @@ Let's create a function app in the Azure portal.
     | Version | Accept *default* |
     | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
 
-1. Select **Review + create**, and upon validation, then select **Create**. Deployment takes a few minutes. The Deployment pane displays the resources that are being created, and will display a **Your deployment is complete** notification when deployment is completed.
+1. Select **Review + create**, and upon validation, then select **Create**. Deployment takes a few minutes. The Deployment pane displays the resources that are being created, and displays a **Your deployment is complete** notification when deployment is completed.
 
 ::: zone-end
 

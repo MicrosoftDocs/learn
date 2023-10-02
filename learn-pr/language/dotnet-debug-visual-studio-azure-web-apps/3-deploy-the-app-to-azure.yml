@@ -10,6 +10,8 @@ metadata:
   ms.author: alexwolf
   manager: jmartens
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-dotnet
 durationInMinutes: 10
 content: |

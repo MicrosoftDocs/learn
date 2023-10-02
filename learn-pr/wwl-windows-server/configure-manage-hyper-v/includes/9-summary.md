@@ -1,4 +1,4 @@
-Using the knowledge acquired in this module, you explored considerations for installing and configuring Hyper-V on Windows Server 2019. You learned how to ensure that workloads are optimized and stable. You also determined the available Hyper-V networking features and functionality, and how they can be utilized.
+Using the knowledge acquired in this module, you explored considerations for installing and configuring Hyper-V on Windows Server. You learned how to ensure that workloads are optimized and stable. You also determined the available Hyper-V networking features and functionality, and how they can be utilized.
 
 ## Learn more
 
@@ -10,4 +10,3 @@ You can learn more by reviewing the following documents.
 - [Hyper-V Integration Services](/virtualization/hyper-v-on-windows/reference/integration-services?azure-portal=true)
 - [Performance Tuning Hyper-V Servers](/windows-server/administration/performance-tuning/role/hyper-v-server/?azure-portal=true)
 - [Hyper-V Network Virtualization Overview in Windows Server 2016](/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server?azure-portal=true)
-- [Course WS-011T00-A: Windows Server 2019 Administration](/certifications/courses/ws-011t00?azure-portal=true) 

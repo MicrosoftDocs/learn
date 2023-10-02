@@ -9,7 +9,9 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-  ms.custom: nextgen
+  ms.custom:
+    - nextgen
+    - devx-track-python
 durationInMinutes: 4 
 content: |
   [!include[](includes/07-exercise-run-virtual-disk-server.md)]

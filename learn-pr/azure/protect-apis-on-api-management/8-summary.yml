@@ -3,8 +3,8 @@ uid: learn.protect-apis-on-api-management.8-summary
 title: Summary
 metadata:
   title: Summary
-  description: In this unit, you will review what you have learned about API Management policies.
-  ms.date: 05/10/2019
+  description: In this unit, you'll review what you have learned about API Management policies you can use to protect your APIs.
+  ms.date: 08/10/2023
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial

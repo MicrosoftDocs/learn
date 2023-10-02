@@ -9,6 +9,8 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf  
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurepowershell
   ms.prod: learning-azure  
 durationInMinutes: 15
 interactive: powershell

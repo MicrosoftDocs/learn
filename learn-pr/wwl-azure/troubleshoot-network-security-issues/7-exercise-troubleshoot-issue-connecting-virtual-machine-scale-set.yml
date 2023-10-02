@@ -4,9 +4,9 @@ title: 'Exercise: Troubleshoot issue connecting virtual machine scale set'
 metadata:
   title: 'Exercise: Troubleshoot issue connecting virtual machine scale set'
   description: "Exercise: Troubleshoot issue connecting virtual machine scale set"
-  ms.date: 08/04/2022
-  author: wwlpublish
-  ms.author: lola
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true

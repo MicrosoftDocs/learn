@@ -29,7 +29,7 @@ They can also be mapped to requirements from well-known institutions, such as th
 |---------------|-------------|
 |![Access Control domain.](../media/policies/access-control-small.png)</br>Access control|Learn how the enterprise grants, manages, and revokes access to resources. Also, understand the process employees go through to access those resources.|
 |![Secure Development domain.](../media/policies/secure-development-small.png)</br>Secure development|Discover how engineering work is managed, secured, and stored.|
-|![Business Continuity domain.](../media/policies/business-continuity-small.png)</br>Business continuity|Learn what happens to the enterprise during an outage and what they do to reduce impact.|
+|![Business Continuity domain.](../media/policies/business-continuity-small.png)</br>Business continuity|Learn what happens to the enterprise during an outage and what they do to reduce the effect.|
 |![Cryptography domain.](../media/policies/cryptography-small.png)</br>Cryptography|Find out how data is protected at-rest, in-transit, and in-use.|
 |![Asset Management domain.](../media/policies/asset-small.png)</br>Asset management|Uncover how physical and logical assets are created, managed, and retired.|
 |![Legal domain.](../media/policies/legal-small.png)</br>Legal|Understand the legal and regulatory obligations for both employees and the company.|
@@ -55,11 +55,11 @@ Any IT professional with a basic understanding of security can create an infrast
 
 They need to work with people from other divisions, like legal, human resources, and finance, to get a better picture of the current state-of-security.
 
-When completed, this exercise will help you identify and incorporate missing security requirements and controls across the enterprise.
+When completed, this exercise helps you identify and incorporate missing security requirements and controls across the enterprise.
 
 ## Learning objectives
 
-In this module, you'll explore the four steps in the infrastructure threat modeling process and be able to:
+In this module, you explore the four steps in the infrastructure threat modeling process, allowing you to:
 
 - Understand the importance of a well-defined, open-ended questionnaire to get a better view of the infrastructure.
 - Visualize how each component interacts with the other with a detailed data-flow diagram.

@@ -7,8 +7,8 @@ metadata:
   author: sethmanheim
   ms.author: sethm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: e2e-hybrid
+  ms.service: azure-stack
 title: Introduction to Azure Stack
 summary: This module introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure.
 abstract: | 

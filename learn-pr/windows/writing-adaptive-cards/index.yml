@@ -4,10 +4,11 @@ metadata:
   title: Creating Adaptive Cards
   description: Find out about the capabilities of Adaptive Cards, try out the range of user input and action, and then extend the app with Adaptive Cards APIs. 
   ms.date: 1/10/2019
-  author: PeterTurcan
-  ms.author: v-pettur
+  author: alvinashcraft
+  ms.author: aashcraft
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.prod: adaptive-cards
+  manager: jken
 title: Creating Adaptive Cards
 summary: Learn the full range of capabilities (layout, inputs, and actions) of Adaptive Cards.
 abstract: |

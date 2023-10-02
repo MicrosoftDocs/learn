@@ -2,7 +2,7 @@ Machine Learning is the foundation for most AI solutions.
 
 Let's start by looking at a real-world example of how machine learning can be used to solve a difficult problem.
 
-Sustainable farming techniques are essential to maximize food production while protecting a fragile environment. *The Yield*, an agricultural technology company based in Australia, uses sensors, data and machine learning to help farmers make informed decisions related to weather, soil and plant conditions.
+Sustainable farming techniques are essential to maximize food production while protecting a fragile environment. *The Yield*, an agricultural technology company based in Australia, uses sensors, data, and machine learning to help farmers make informed decisions related to weather, soil, and plant conditions.
 
 View the following video to learn more.
 

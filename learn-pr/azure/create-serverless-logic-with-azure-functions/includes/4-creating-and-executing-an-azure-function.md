@@ -4,18 +4,16 @@ Now that we've created a function app, let's look at how to build, configure, an
 
 Functions are event driven, which means they run in response to an event. The type of event that starts a function is called a **trigger**. Each function must be configured with exactly one trigger.
 
-Azure supports triggers for the following services.
+Function execution can be triggered by HTTP requests, a scheduled timer, and events from the following Azure services:
 
-| Service | Trigger description |
+| Azure Service | Trigger description |
 |---------|---------|
 | Blob Storage | Starts a function when a new or updated blob is detected. |
 | Azure Cosmos DB| Start a function when inserts and updates are detected. |
 | Event Grid | Starts a function when an event is received from Event Grid. |
-| HTTP | Starts a function with an HTTP request. |
-| Microsoft Graph Events | Starts a function in response to an incoming webhook from the Microsoft Graph. Each instance of this trigger can react to one Microsoft Graph resource type. |
+| Event Hubs | Starts a function when an event is received from Event Hubs. |
 | Queue Storage | Starts a function when a new item is received on a queue. The queue message is provided as input to the function. |
 | Service Bus | Starts a function in response to messages from a Service Bus queue. |
-| Timer | Starts a function on a schedule. |
 
 ### Bindings
 
@@ -52,23 +50,28 @@ The following snippet is the *function.json* file for this scenario.
 }
 ```
 
-Our JSON configuration specifies that our function is triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to **outTable** in Azure Table storage. For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
-
+Our JSON configuration specifies that our function is triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to **outTable** in Azure Table storage. 
+:::zone pivot="powershell"
+For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
+:::zone-end
 This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
 > [!TIP]
 > To view and edit the contents of *function.json* in the Azure portal, from the Home page, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resource ID and the editable JSON code. To close the JSON view, select the **X** in the top right corner of the pane.
 
+Not all languages supported by Functions use the function.json file to define functions.
+
 ## Create a function in the Azure portal
 
-Azure provides several predefined function templates for common scenarios:
+Functions provides predefined function templates, which are based on a specific type of trigger. These templates, in your chosen language, make it easy to get started creating your first function. 
 
-- Quickstart
-- Custom functions
+This module isn't supported for all languages supported by Functions, and the portal itself doesn't support creating functions in all languages supported by Functions. 
+
+For supported languages that use the function.json file to define functions, you can create and edit these functions directly in the Azure portal. These portal-supported languages include: JavaScript, PowerShell, Python, and C# Script (.csx). Languages that define functions directly in the code itself must be developed outside of the portal and deployed to Azure. These nonportal supported languages include: C#, Java, Python (v2 programming model), and JavaScript/TypeScript (Node.js v4 programming model).
 
 ### Function templates
 
-When you create your first function in the Azure **Create function** pane, you can select a predefined trigger for your function. Based on your selections, Azure generates default code and configuration information, such as creating an event log entry when input data is received.
+When you create your first function in the portal, you can select a predefined trigger for your function. Based on your selections, Azure generates default code and configuration information, such as creating an event log entry when input data is received.
 
 Selecting a template from the **Add function** pane provides easy access to the most common development environments, triggers, dependencies. When you create a function in the Azure portal, you can choose from more than 20 templates. Once created you can further customize the code.
 
@@ -82,22 +85,22 @@ When you select a function that you created in your function app, the Function p
 
 :::image type="content" source="../media/4-file-navigation.png" alt-text="Screenshot of the function code and test editor showing the expanded Test/Run view, with menu options highlighted." lightbox="../media/4-file-navigation.png":::
 
-In the image above, the pane on the right has **Input** and **Output** tabs. Selecting the **Input** tab enables you to build and test the function by adding query parameters and supplying values for your query string. The **Output** tab displays the results of the request.
+In the previous image, the pane on the right has **Input** and **Output** tabs. Selecting the **Input** tab enables you to build and test the function by adding query parameters and supplying values for your query string. The **Output** tab displays the results of the request.
 
 ## Test your Azure function
 
-After you've created a function, you'll want to test it. There are two approaches:
+After you've created a function in the portal, you'll want to test it. There are two approaches:
 
+- Testing it in the portal
 - Running it manually
-- Testing it from within the Azure portal itself
+
+### Test in the Azure portal
+
+The portal also provides a convenient way to test your functions. As previously described, in the previous screenshot. When you select **Run** in this pane, the results automatically appear in the **Output** tab, and the **Logs** pane opens to display the status.
 
 ### Run function manually
 
 You can start a function by manually triggering the configured trigger. For instance, if you're using an HTTP trigger, you can use a tool, such as Postman or cURL, to initiate an HTTP request to your function endpoint URL, which is available from the function definition (**Get function URL**).
-
-### Test in the Azure portal
-
-The portal also provides a convenient way to test your functions. As previously described, in the screenshot above. When you select **Run** in this pane, the results automatically appear in the **Output** tab, and the **Logs** pane opens to display the status.
 
 ## Monitoring and Application Insights dashboard
 
@@ -109,25 +112,27 @@ The ability to monitor your functions is critical during development and in prod
 
 After you've enabled Application Insights in the Azure portal, you can add logging statements to your function for debugging. The called methods for each language are passed a "logging" object, which can be used to add log information to the Logs pane in the **Code + Test** pane when running a test.
 
-The following code snippets show how to create a log message:
-
-- In JavaScript, the `context` object is passed to the handler.
+::: zone pivot="javascript"
+Write to logs from your code using the `log` method on the `context` object, which is passed to the handler. The following example writes to the default log level (information):
 
   ```javascript
   context.log('Enter your logging statement here');
   ```
-
+::: zone-end
+<!-- until we have a C# pivot
 - In C#, `log.LogInformation` method, the `log` object is passed to the C# method processing the function.
 
   ```csharp
   log.LogInformation("Enter your logging statement here");
    ```
-
-- In PowerShell, use `Write-Host` cmdlet to write to the log:
+-->
+::: zone pivot="powershell"
+Write to logs from your code using the `Write-Host` cmdlet, as shown in the following example: 
 
    ```powershell
   Write-Host "Enter your logging statement here"
    ```
+::: zone-end
 
 ### Errors, failures, warnings, and anomalies
 

@@ -2,13 +2,14 @@
 uid: learn-sqlserver.deploy-sql-server-linux
 metadata:
   title: Deploy SQL Server on Linux 
-  description: Learn about the software and hardware prerequisites to run SQL Server on Linux and then discover the straightforward steps to install SQL Server on Linux. You will also learn additional tasks, such as installing command-line tools.
-  ms.date: 06/11/2019
+  description: Learn about prerequisites to run SQL Server on Linux and the steps to install SQL Server on Linux. Also, learn about installing command-line tools.
+  ms.date: 05/15/2023
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.prod: sql
+  ms.technology: sql-linux
 title: Deploy SQL Server on Linux
 summary: Learn about the software and hardware prerequisites to run SQL Server on Linux and then discover the straightforward steps to install SQL Server on Linux. You will also learn additional tasks, such as installing command-line tools.
 abstract: |

@@ -7,8 +7,8 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: typescript
 title: Get started with TypeScript
 summary: This module introduces you to the TypeScript language, why it was created, and how to use it for JavaScript development. You'll also set up a TypeScript development environment for future exercises.
 abstract:  | 

@@ -6,7 +6,7 @@ In this module, you'll:
 
 - Evaluate your server's compatibility with Azure File Sync.
 - Deploy Azure File Sync.
-- Test and troubleshoot file sync.
+- Test that the file sync is working.
 
 ## Prerequisites
 

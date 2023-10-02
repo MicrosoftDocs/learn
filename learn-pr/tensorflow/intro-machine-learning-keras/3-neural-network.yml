@@ -3,12 +3,11 @@ uid: learn.tensorflow.intro-machine-learning-keras.neural-network
 title: Neural network architecture
 metadata:
   title: Neural network architecture
-  description: Learn how to create a neural network
-  ms.date: 07/07/2021
+  description: Learn how to create a neural network using Keras and TensorFlow.
+  ms.date: 07/17/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial
-  ms.prod: learning-tensorflow
   ms.product: learning-tensorflow
   ms.contributors:
   - bstollnitz-08202021
@@ -22,12 +21,12 @@ quiz:
   questions:
   - content: "What's the output of the neural network used in this sample?"
     choices:
-    - content: "The string 'Ankle boot'."
+    - content: "The string *Ankle boot*."
       isCorrect: false
       explanation: "Incorrect."
     - content: "The number 9, which corresponds to an ankle boot."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "A vector of size 10, where the largest floating-point number is in index 9. This corresponds to an ankle boot."
+    - content: "A vector of size 10, where the largest floating-point number is in index 9, which corresponds to an ankle boot."
       isCorrect: true
       explanation: "Correct!"

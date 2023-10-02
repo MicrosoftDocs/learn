@@ -1,221 +1,106 @@
-In [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit/3-random-bit-generator) module, you learned that classical security protocols don't produce truly random numbers, but rather pseudorandom numbers and thus a hacker can find out the sequence of random numbers used to generate a classical password. To avoid this, your first task as a member of the space fleet was to create secure passwords using a quantum random number generator. 
+In [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit/3-random-bit-generator), you learn that classical security protocols don't produce truly random numbers. Instead, classical security protocols produce pseudo random numbers, and a hacker can determine the sequence of random numbers that was used to generate a classical password. To increase your security, your first task as a member of the space fleet was to create secure passwords by using a quantum random number generator. 
 
-However, there are more ways to create secure passwords and conceal confidential information. Cryptography is the technique by using physical or mathematical means, such as using a computational difficulty of solving a particular task. A popular cryptographic protocol is the [Rivest–Shamir–Adleman (RSA) scheme](https://wikipedia.org/wiki/RSA_(cryptosystem)?azure-portal=true), which is based on the practical difficulty of factoring prime numbers by using a classical computer.
+But there are other ways to create secure passwords and conceal confidential information. *Cryptography* uses physical or mathematical means, like computational difficulty, to accomplish a task. A popular cryptographic protocol is the [Rivest–Shamir–Adleman (RSA) scheme](https://wikipedia.org/wiki/RSA_(cryptosystem)?azure-portal=true), which is based on the practical difficulty of factoring prime numbers by using a classical computer.
 
-One quantum algorithm with superquadratic speedup and for which the cost of error correction is well studied is Shor’s factoring algorithm. In [Explore the key concepts of quantum computing by using Q#](/training/modules/qsharp-explore-key-concepts-quantum-computing/8-introduction-quantum-algorithms/?azure-portal=true) module, you can find an overview of Shor's algorithm application in cryptography.
+Shor's factoring algorithm studies a quantum algorithm with superquadratic speedup and the cost of error correction. In [Explore the key concepts of quantum computing by using Q#](/training/modules/qsharp-explore-key-concepts-quantum-computing/8-introduction-quantum-algorithms/?azure-portal=true), you can review an overview of Shor's algorithm application in cryptography.
 
-Some of today’s classical cryptographic schemes that are based on assumptions of the difficulty of factoring large numbers. Estimating the resources required for Shor’s algorithm is important for assessing the vulnerability of such cryptographic schemes. 
-
+Some of today’s classical cryptographic schemes are based on assumptions of the difficulty of factoring large numbers. Estimating the resources required for Shor’s algorithm is important to assess the vulnerability of these types of cryptographic schemes.
 
 ## Estimate the resources with Azure Quantum
 
-You'll calculate the resource estimates for the factoring of a 2048-bit integer. As tolerated error budget, you choose $\epsilon = 1/3$. 
+In the following exercise, you calculate the resource estimates for the factoring of a 2,048-bit integer. For this application, you compute the physical resource estimates directly from precomputed logical resource estimates. For more information, see [Use known estimates for an operation](/azure/quantum/how-to-work-with-re#use-known-estimates-for-an-operation).For the tolerated error budget, you use $\epsilon = 1/3$.
 
-### Getting started
+> [!TIP]
+> You can use this example as a blueprint to estimate the physical resources required of any application for which you already have computed logical estimates.
 
-Create a new Notebook in your workspace as you did in the previous step. 
+### Get started
 
-1. In the left blade, select **Notebooks**.
-1. Click **My Notebooks** and click **Add New**.
-1. In **Kernel Type**, select **IPython**.
-1. Type a name for the file, for example *factoringResourceEstimator.ipynb*, and click **Create file**.
+In your Azure Quantum workspace, create a new notebook:
 
-First, we need to import several Python classes and functions from `azure.quantum` and `qiskit`. We aren't using Qiskit to build quantum circuits, however, we're using `AzureQuantumJob` and `job_monitor`, which are built on top of the Qiskit ecosystem. Click **+ Code** to add a new cell. 
+1. On the left menu, select **Notebooks**.
+1. Select **My Notebooks**, and then select **Add New**.
+1. For **Kernel Type**, select **IPython**.
+1. Enter a name for the file, for example, *factoringResourceEstimator.ipynb*.
+1. Select **Create file**.
+
+First, you need to import some Python classes from `azure.quantum` to create a workspace and the resource estimator target. 
+
+Select **Code** to add a new cell, and then enter and run the following code:
 
 ```python
-from azure.quantum.qiskit import AzureQuantumProvider
-from azure.quantum.qiskit.job import AzureQuantumJob
-
-from qiskit.tools.monitor import job_monitor
+from azure.quantum import Workspace
+from azure.quantum.target.microsoft import MicrosoftEstimator, QubitParams, QECScheme
+import qsharp
 ```
 
-We connect to the Azure Quantum workspace. Click **+ Code** to add a new cell.  
+To connect to the Azure Quantum workspace, select **Code**, and then enter and run the following code:  
 
 ```python
-provider = AzureQuantumProvider (
+workspace = Workspace (
     resource_id = "",
     location = ""
 )
 ```
 
-### Extracting resource estimates from logical resource counts
+### Extract resource estimates from logical resource counts
 
-Let's implement a generic function that takes as input the Azure Quantum provider and the QIR bitcode of the quantum program. It returns as a result an Azure Quantum job. Resource Estimation input parameters can be passed via keyword arguments to the function. 
+Then, you create a Q# program that describes the algorithm in terms of precomputed logical resource estimates. If you already know some estimates for an operation, the Resource Estimator allows you to incorporate the known estimates into the overall cost of the program to reduce the execution time. For this end, you use the `AccountForEstimates` Q# operation. 
 
-For every code snippet in this unit, click **+ Code** to add a new cell and copy the code. 
-
-```python
-from azure.quantum.qiskit import AzureQuantumProvider
-
-def resource_estimation_job_from_qir(provider: AzureQuantumProvider, bitcode: bytes, **kwargs):
-    """A generic function to create a resource estimation job from QIR bitcode"""
-
-    # Find the Azure Quantum Resource Estimator target from the provider
-    backend = provider.get_backend('microsoft.estimator')
-
-    # You can provide a name for the job via keyword arguments; if not,
-    # we'll use QIR job as a default name
-    name = kwargs.pop("name", "QIR job")
-
-    # We extract some job specific arguments from the backend's configuration
-    config = backend.configuration()
-    blob_name = config.azure["blob_name"]
-    content_type = config.azure["content_type"]
-    provider_id = config.azure["provider_id"]
-    output_data_format = config.azure["output_data_format"]
-
-    # Finally, we create the Azure Quantum JSON object and return it
-    return AzureQuantumJob(
-        backend=backend,
-        target=backend.name(),
-        name=name,
-        input_data=bitcode,
-        blob_name=blob_name,
-        content_type=content_type,
-        provider_id=provider_id,
-        input_data_format="qir.v1",
-        output_data_format=output_data_format,
-        input_params=kwargs,
-        metadata={}
-    )
-```
-
-Based on this function, we create another function that creates a resource estimation job directly from precomputed logical resource estimates. This function internally creates a small QIR program that uses the low-level QIR function `__quantum__qis__applyunimplemented__body` that allows to inject logical resource counts to a list of qubits.
+Select **Code** to add a new cell, and then enter and run the following code:
 
 ```python
-def resource_estimation_job_from_logical_counts(
-    provider: AzureQuantumProvider,
-    qubit_count: int = 0,
-    t_count: int = 0,
-    rotation_count: int = 0,
-    rotation_depth: int = 0,
-    ccz_count: int = 0,
-    measurement_count: int = 0,
-    **kwargs
-):
-    from pyqir.generator import ir_to_bitcode
-    import textwrap
+%%qsharp
+open Microsoft.Quantum.ResourceEstimation;
 
-    ir = f"""
-        %Array = type opaque
-        %Qubit = type opaque
-        attributes #1 = {{ "EntryPoint" }}
-        declare %Array* @__quantum__rt__qubit_allocate_array(i64)
-        declare void @__quantum__rt__qubit_release_array(%Array*)
-        declare void @__quantum__qis__applyunimplemented__body(i64, i64, i64, i64, i64, %Array*)
-        define void @Project__Program() #1 {{
-        entry:
-            %target = call %Array* @__quantum__rt__qubit_allocate_array(i64 {qubit_count})
-            call void @__quantum__qis__applyunimplemented__body(i64 {t_count}, i64 {rotation_count}, i64 {rotation_depth}, i64 {ccz_count}, i64 {measurement_count}, %Array* %target)
-            call void @__quantum__rt__qubit_release_array(%Array* %target)
-            ret void
-        }}
-        """
-
-    bitcode = ir_to_bitcode(textwrap.dedent(ir))
+operation FactoringFromLogicalCounts() : Unit {
+    use qubits = Qubit[12581];
     
-    return resource_estimation_job_from_qir(provider, bitcode, **kwargs)
+    AccountForEstimates([TCount(12), RotationCount(12), RotationDepth(12), CczCount(3731607428), MeasurementCount(1078154040)], PSSPCLayout(), qubits);
+}
 ```
+### Run experiments
 
-### Running experiments
+As configurations for your experiment, you use all six predefined qubit parameters. As a predefined QEC scheme, use `surface_code` with gate-based qubit parameters and `floquet_code` with Majorana-based qubit parameters. 
 
-A resource estimation job consist of two types of job parameters: 
+So, you have 6 different items of configurations. In the Azure Quantum Resource Estimator, you can submit jobs that have multiple configurations of job parameters, or multiple *items*, as a single job to avoid rerunning multiple jobs on the same quantum program.
 
-- [Target parameters](/azure/quantum/overview-resources-estimator#target-parameters): qubit model, QEC schemes, and error budget.
-- Operation arguments (optional): arguments that can be passed to the QIR program. 
+To create a batching job with 6 items, you can use the `make_params` function and set `num_items` to 6. The `error_budget` is set globally for all items as 1/3. The names for `qubit_params` and `qec_scheme` are set individually for each item.
 
-The Azure Quantum Resource Estimator allows you to submit jobs with multiple configurations of job parameters, or multiple *items*, as a single job to avoid rerunning multiple jobs on the same quantum program.
-
-As configurations for our experiment, we use all six pre-defined qubit parameters. As pre-defined QEC scheme we use `surface_code` with gate-based qubit parameters, and `floquet_code` with Majorana based qubit parameters. For all experiments, we assume an error budget of 1/3. Therefore, we have six different items of configurations.
+Select **Code** to add a new cell, and then enter or paste the following code:
 
 ```python
+estimator = MicrosoftEstimator(workspace) 
+
 labels = ["Gate-based µs, 10⁻³", "Gate-based µs, 10⁻⁴", "Gate-based ns, 10⁻³", "Gate-based ns, 10⁻⁴", "Majorana ns, 10⁻⁴", "Majorana ns, 10⁻⁶"]
 
-items = [
-    {"qubitParams": {"name": "qubit_gate_us_e3"}, "errorBudget": 0.333},
-    {"qubitParams": {"name": "qubit_gate_us_e4"}, "errorBudget": 0.333},
-    {"qubitParams": {"name": "qubit_gate_ns_e3"}, "errorBudget": 0.333},
-    {"qubitParams": {"name": "qubit_gate_ns_e4"}, "errorBudget": 0.333},
-    {"qecScheme": {"name": "floquet_code"}, "qubitParams": {"name": "qubit_maj_ns_e4"}, "errorBudget": 0.333},
-    {"qecScheme": {"name": "floquet_code"}, "qubitParams": {"name": "qubit_maj_ns_e6", "tGateErrorRate": 0.01}, "errorBudget": 0.333}
-]
+params = estimator.make_params(num_items=6)
+params.error_budget = 0.333
+params.items[0].qubit_params.name = QubitParams.GATE_US_E3
+params.items[1].qubit_params.name = QubitParams.GATE_US_E4
+params.items[2].qubit_params.name = QubitParams.GATE_NS_E3
+params.items[3].qubit_params.name = QubitParams.GATE_NS_E4
+params.items[4].qubit_params.name = QubitParams.MAJ_NS_E4
+params.items[4].qec_scheme.name = QECScheme.FLOQUET_CODE
+params.items[5].qubit_params.name = QubitParams.MAJ_NS_E6
+params.items[5].qec_scheme.name = QECScheme.FLOQUET_CODE
 ```
 
-Next, we're creating a resource estimation job for all items based on logical resource counts that we have extracted for the pre-computed for the 2048-bit factoring instance.
+Next, you submit the resource estimation job based on the Q# operation `FactoringFromLogicalCounts`. Select **Code** to add a new cell, and then enter and run the following code:
 
 ```python
-job = resource_estimation_job_from_logical_counts(provider,
-    qubit_count=12581,
-    t_count=12,
-    rotation_count=12,
-    rotation_depth=12,
-    ccz_count=3731607428,
-    measurement_count=1078154040,
-    items=items
-)
-job_monitor(job)
-results = job.result()
+job = estimator.submit(FactoringFromLogicalCounts, input_params=params)
+results = job.get_results()
 ```
 
-### Understanding the results
+### Understand the results
 
-Finally, we're presenting the experimental results using built-in resource estimation tables and a custom summary table. For this purpose, we write a reusable `dashboard` function that creates an HTML display from a pandas data frame and the resource estimation tables.
+Finally, you present the experimental results in a summary table using the `summary_data_frame` function. Select **Code** to add a new cell, and then enter and run the following code:
 
 ```python
-def dashboard(results):
-    def get_row(result):
-        # Extract raw data from result dictionary
-        logical_qubits = result["physicalCounts"]["breakdown"]["algorithmicLogicalQubits"]
-        logical_depth = result["physicalCounts"]["breakdown"]["logicalDepth"]
-        num_tstates = result["physicalCounts"]["breakdown"]["numTstates"]
-        code_distance = result["logicalQubit"]["codeDistance"]
-        num_tfactories = result["physicalCounts"]["breakdown"]["numTfactories"]
-        tfactory_fraction = (result["physicalCounts"]["breakdown"]["physicalQubitsForTfactories"] / result["physicalCounts"]["physicalQubits"]) * 100
-        physical_qubits = result["physicalCounts"]["physicalQubits"]
-        runtime = result["physicalCounts"]["runtime"]
-
-        # Format some entries
-        logical_depth_formatted = f"{logical_depth:.1e}"
-        num_tstates_formatted = f"{num_tstates:.1e}"
-        tfactory_fraction_formatted = f"{tfactory_fraction:.1f}%"
-        physical_qubits_formatted = f"{physical_qubits / 1e6:.2f}M"
-
-        # Make runtime human readable; we find the largest units for which the
-        # runtime has a value that is larger than 1.0.  For that unit we are
-        # rounding the value and append the unit suffix.
-        units = [("nanosecs", 1), ("microsecs", 1000), ("millisecs", 1000), ("secs", 1000), ("mins", 60), ("hours", 60), ("days", 24), ("years", 365)]
-        runtime_formatted = runtime
-        for idx in range(1, len(units)):
-            if runtime_formatted / units[idx][1] < 1.0:
-                runtime_formatted = f"{round(runtime_formatted) % units[idx][1]} {units[idx - 1][0]}"
-                break
-            else:
-                runtime_formatted = runtime_formatted / units[idx][1]
-
-        # special case for years
-        if isinstance(runtime_formatted, float):
-            runtime_formatted = f"{round(runtime_formatted)} {units[-1][0]}"
-
-        # Append all extracted and formatted data to data array
-        return (logical_qubits, logical_depth_formatted, num_tstates_formatted, code_distance, num_tfactories, tfactory_fraction_formatted, physical_qubits_formatted, runtime_formatted)
-
-    data = [get_row(results.data(index)) for index in range(len(results))]
-
-    # Create data frame with explicit column names and configuration names extracted from array
-    import pandas as pd
-    df = pd.DataFrame(data, columns=["Logical qubits", "Logical depth", "T states", "Code distance", "T factories", "T factory fraction", "Physical qubits", "Physical runtime"], index=labels)
-
-    from IPython.display import HTML
-
-    html = f"""
-    Summary{df.to_html()}
-    Details{results._repr_html_()}
-    """
-    
-    return HTML(html)
-
-dashboard(results)
+results.summary_data_frame(labels=labels)
 ```
+
+Your output should look similar to this example:
 
 **Summary**
 
@@ -228,8 +113,8 @@ dashboard(results)
 |Majorana ns, 10⁻⁴	|   25481|	1.2e+10	|1.5e+10	|15	|15|	1.3%|	26.11M|	15 hours|
 |Majorana ns, 10⁻⁶	|   25481|	1.2e+10	|1.5e+10	|7	|13	|0.5%|	6.25M|	7 hours|
 
-We see that in the worst scenario, a hacker using gate-based µs qubits (qubits that have operation times in the nanosecond regime such as superconducting qubits) and a surface QEC code would need six years and 37.38 millions of qubits to factor a 2048-bit integer with Shor's algorithm.
+In the worst scenario, a hacker who is using gate-based µs qubits (qubits that have operation times in the nanosecond regime, such as superconducting qubits) and a surface QEC code would need six years and 37.38 millions of qubits to factor a 2,048-bit integer by using Shor's algorithm.
 
-If we use a different qubit technology, for example gate-based ns ion qubits and the same surface code, the number of qubits doesn't change much, but the runtime became two days in the worst case and 18 hours in the optimistic case. If we change the qubit technology and the QEC code, for example, with Majorana-based qubits, factoring a 2048-bit integer using Shor’s algorithm could be done in hours with an array of 6.25 millions of qubits in the best case scenario. 
+If you use a different qubit technology, for example gate-based ns ion qubits and the same surface code, the number of qubits doesn't change much, but the runtime became two days in the worst case and 18 hours in the optimistic case. If you change the qubit technology and the QEC code, for example, by using Majorana-based qubits, factoring a 2,048-bit integer by using Shor’s algorithm could be done in hours with an array of 6.25 millions of qubits in the best case scenario.
 
-We can conclude that using Majorana qubits and a Floquet QEC code is the best choice to execute Shor's algorithm and factor a 2048-bit integer password. The space fleet should prepare for future quantum hackers, and even better, be ready to hack our space enemies ourselves!  
+From your experiment, you can conclude that using Majorana qubits and a Floquet QEC code is the best choice to execute Shor's algorithm and factor a 2,048-bit integer password. The space fleet should prepare for future quantum hackers!  

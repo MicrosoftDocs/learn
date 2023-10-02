@@ -1,4 +1,5 @@
 
+
 On Windows 11 or later clients, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and uses biometric authentication or a PIN.
 
 Windows Hello addresses the following problems with passwords:

@@ -1,3 +1,5 @@
+
+
 As per [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533), the following RDBMS platforms are supported on Azure:
 
 ## Windows Server
@@ -13,10 +15,7 @@ As per [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533), 
 
 ## SLES and RHEL
 
-- SAP HANA 1.0 SP12 and higher, SAP HANA 2.0
-
-  - on Microsoft Azure Large Instance Types as described in [SAP Note \#2316233](https://launchpad.support.sap.com/#/notes/2316233).
-  - on Microsoft Azure VMs as listed on the SAP HANA Hardware Directory.
+- SAP HANA 1.0 SP12 and higher, SAP HANA 2.0 on Microsoft Azure VMs, as listed on the SAP HANA Hardware Directory.
 - SAP ASE 16.0 SP02 and higher
 - IBM DB2 10.5 and higher
 - SAP MaxDB version 7.9.09.05 and higher
@@ -36,11 +35,11 @@ For versions and restrictions refer to [SAP Note \#2039619](https://launchpad.su
 
 For more information, see the following SAP Notes:
 
-- [2303398 - SAP on SQL Server in Microsoft Azure Virtual Machines](https://launchpad.support.sap.com/#/notes/2303398)
-- [555223 - FAQ - Microsoft SQL Server in NetWeaver based systems](https://launchpad.support.sap.com/#/notes/555223)
-- [2134316 - Can SAP ASE run in a cloud environment? - SAP ASE](https://launchpad.support.sap.com/#/notes/2134316)
-- [2039619 - SAP Applications on Microsoft Azure using the Oracle Database](https://launchpad.support.sap.com/#/notes/2039619)
-- [1928533 - Supported Products and Azure VM types](https://launchpad.support.sap.com/#/notes/1928533)
+- [SAP Note \#2303398 - SAP on SQL Server in Microsoft Azure Virtual Machines](https://launchpad.support.sap.com/#/notes/2303398)
+- [SAP Note \#555223 - FAQ - Microsoft SQL Server in NetWeaver based systems](https://launchpad.support.sap.com/#/notes/555223)
+- [SAP Note \#2134316 - Can SAP ASE run in a cloud environment? - SAP ASE](https://launchpad.support.sap.com/#/notes/2134316)
+- [SAP Note \#2039619 - SAP Applications on Microsoft Azure using the Oracle Database](https://launchpad.support.sap.com/#/notes/2039619)
+- [SAP Note \#1928533 - Supported Products and Azure VM types](https://launchpad.support.sap.com/#/notes/1928533)
 
   - SAP products supported on Windows
   - RDBMS platforms supported on Windows

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore individual enrollment tasks
 summary: Experience implementing an individual enrollment using symmetric keys, using code that accesses device twin properties to initialize a device, and a deprovisioning process that disenrolls and deregisters a device.
 abstract: |
@@ -27,7 +26,6 @@ roles:
 - developer
 products:
 - azure
-- azure-iot-dps
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
@@ -40,3 +38,4 @@ units:
 - learn.wwl.explore-individual-enrollment-tasks.summary
 badge:
   uid: learn.wwl.explore-individual-enrollment-tasks.badge
+hidden: true

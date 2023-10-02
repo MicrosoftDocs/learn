@@ -37,14 +37,13 @@ The recommended configurations for production scenarios look like:
     **RAM**
   :::column-end:::
   :::column:::
-    **Max. VM I/O
-Throughput**
+    **Max. VM I/O throughput**
   :::column-end:::
   :::column:::
     **/hana/data**
   :::column-end:::
   :::column:::
-    **Provisioned Throughput**
+    **Provisioned throughput**
   :::column-end:::
   :::column:::
     **Maximum burst throughput**
@@ -292,7 +291,7 @@ Throughput**
 :::row-end:::
 :::row:::
   :::column:::
-    M192ms, M192dms\_v2, M128ms\_v2
+    M192ims, M192idms\_v2
   :::column-end:::
   :::column:::
     4,096 GiB
@@ -408,7 +407,7 @@ Throughput**
     4 x P50
   :::column-end:::
   :::column:::
-    2,000 MBps
+    1,000 MBps
   :::column-end:::
   :::column:::
     no bursting
@@ -431,14 +430,13 @@ Throughput**
     **RAM**
   :::column-end:::
   :::column:::
-    **Max. VM I/O
-Throughput**
+    **Max. VM I/O throughput**
   :::column-end:::
   :::column:::
     **/hana/log volume**
   :::column-end:::
   :::column:::
-    **Provisioned Throughput**
+    **Provisioned throughput**
   :::column-end:::
   :::column:::
     **Maximum burst throughput**
@@ -634,7 +632,7 @@ Throughput**
 :::row-end:::
 :::row:::
   :::column:::
-    M192ds\_v2, M192s\_v2
+    M192ids\_v2, M192is\_v2
   :::column-end:::
   :::column:::
     2,048 GiB
@@ -686,7 +684,7 @@ Throughput**
 :::row-end:::
 :::row:::
   :::column:::
-    M192dms\_v2, M192ms\_v2
+    M192idms\_v2, M192ims\_v2
   :::column-end:::
   :::column:::
     4,096 GiB
@@ -825,8 +823,7 @@ Throughput**
     **RAM**
   :::column-end:::
   :::column:::
-    **Max. VM I/O
-Throughput**
+    **Max. VM I/O throughput**
   :::column-end:::
   :::column:::
     **/hana/shared**
@@ -1020,7 +1017,7 @@ Throughput**
 :::row-end:::
 :::row:::
   :::column:::
-    M192dms\_v2, M192ms\_v2
+    M192idms\_v2, M192ims\_v2
   :::column-end:::
   :::column:::
     4,096 GiB
@@ -1151,8 +1148,7 @@ The following table shows a configuration of VM types that customers also use to
     **RAM**
   :::column-end:::
   :::column:::
-    **Max. VM I/O
-Throughput**
+    **Max. VM I/O throughput**
   :::column-end:::
   :::column:::
     **/hana/data and /hana/log

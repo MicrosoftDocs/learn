@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: application-gateway
 title: Configure Azure Application Gateway
 summary: Learn how to configure Azure Application Gateway.
 abstract: |

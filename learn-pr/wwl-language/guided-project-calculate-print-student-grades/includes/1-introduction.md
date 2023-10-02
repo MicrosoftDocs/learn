@@ -8,7 +8,8 @@ This module will guide you through the steps required to develop your Student Gr
 
 By the end of this module, you'll be able to write code that uses various variable types, performs numeric calculations, and displays formatted data for the user.
 
-[!NOTE] This is a guided project module where you'll complete an end-to-end project by following step-by-step instructions.  
+> [!NOTE] 
+> This is a guided project module where you'll complete an end-to-end project by following step-by-step instructions.  
 
 ## Learning objectives
 

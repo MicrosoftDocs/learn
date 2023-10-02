@@ -45,7 +45,7 @@ In addition, it is important to note that there are limits on the number of Azur
 :::row-end:::
 :::row:::
   :::column:::
-    M128ms, M128s
+    M192ids\_v2, M192idms\_v2, M192is\_v2, M192ims\_v2
   :::column-end:::
   :::column:::
     16
@@ -56,7 +56,18 @@ In addition, it is important to note that there are limits on the number of Azur
 :::row-end:::
 :::row:::
   :::column:::
-    M64ms, M64ls, M64s
+    M128ms, M128s, M128ds\_v2, M128dms\_v2, M128s\_v2, M128ms\_v2
+  :::column-end:::
+  :::column:::
+    16
+  :::column-end:::
+  :::column:::
+    20000
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    M64ms, M64ls, M64s, M64ds\_v2, M64dms\_v2, M64s\_v2, M64ms\_v2
   :::column-end:::
   :::column:::
     8
@@ -67,7 +78,7 @@ In addition, it is important to note that there are limits on the number of Azur
 :::row-end:::
 :::row:::
   :::column:::
-    M32ms, M32ls, M32ts, M32s
+    M32ms, M32ls, M32ts, M32s, M32dms\_v2, M32ms\_v2
   :::column-end:::
   :::column:::
     4

@@ -4,13 +4,16 @@ title: Exercise - Add logic to the function app
 metadata:
   title: Exercise - Add logic to the function app
   description: Add the business logic + trigger into the Function App
-  ms.date: 04/03/2023
+  ms.date: 04/19/2023
   author: ggailey777
   ms.author: glenga
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
+    - devx-track-js
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-javascript-powershell
-azureSandbox: true
+azureSandbox: false
 durationInMinutes: 10
 content: |
   [!include[](includes/5-add-logic-to-the-function-app.md)]

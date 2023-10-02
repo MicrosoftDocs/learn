@@ -4,12 +4,11 @@ title: Learn how it works
 metadata:
   title: Learn how it works
   description: "Learn how it works"
-  ms.date: 02/24/2023
+  ms.date: 04/13/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-interactive: csharp
 durationInMinutes: 6
 content: |
   [!include[](includes/3-how-it-works.md)]
@@ -27,3 +26,4 @@ quiz:
     - content: "`Console.WriteLine` appends a new line after the output."
       isCorrect: true
       explanation: "Correct! `Console.WriteLine` prints the output on the existing line and appends a new line after it."
+interactive: csharp

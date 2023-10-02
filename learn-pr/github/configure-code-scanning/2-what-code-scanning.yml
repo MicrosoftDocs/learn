@@ -7,8 +7,8 @@ metadata:
   title: What is code scanning?
   description: In this unit, you'll learn about CodeQL, the two options for setting up code scanning, and how to add the CodeQL workflow to your repository.
   ms.date: 02/8/2022
-  author: sterling463
-  ms.author: csterling
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

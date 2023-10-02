@@ -1,41 +1,41 @@
 ## NuGet and packages
 
-Developers share libraries and resources by bundling their work into *packages*. A package can be pulled into Visual Studio to provide extra functionality to projects (for example, to add support for JSON or add animation routines to XAML).
+Developers share libraries and resources by bundling their work into *packages*. You can pull a package into Visual Studio to provide extra functionality to projects. For example, to add support for JSON or add animation routines to XAML.
 
-NuGet is the *package manager* for .NET and UWP projects (as well as Windows Forms and WPF projects). Browse the package catalog with NuGet to install, update, or delete packages from your project. NuGet is built into Visual Studio, so you don't have to leave the IDE.
+NuGet is the *package manager* for .NET, UWP, Windows Forms, and WPF projects. Browse the package catalog with NuGet to install, update, or delete packages from your project. NuGet is built into Visual Studio, so you don't have to leave the IDE.
 
-## Installing a NuGet package
+## Install a NuGet package
 
 Let's use NuGet to install new XAML animation features from the Win2D package:
 
-1. Click **Project** and select **Manage NuGet Packages**.
+1. Select **Project**, and then select **Manage NuGet Packages**.
 
     :::image type="content" source="../media/nuget.png" alt-text="Screenshot of the project menu in Visual Studio. The project menu option and manage NuGet packages option are highlighted.":::
 
-2. Click **Browse** (upper-left), type **Win2D** in the search box, and press *Enter*. A list of available packages is displayed.
+2. Select **Browse**, type **Win2D** in the search box, and then press *Enter*. A list of available packages displays.
 
     :::image type="content" source="../media/search-nuget.png" alt-text="Screenshot of the NuGet package manager within Visual Studio. The search bar (and relevant package) are highlighted.":::
 
-3. Select **Win2D.uwp** from the list and click the **Install** button. The package begins installing.
+3. Select **Win2D.uwp** from the list and select the **Install** button. The package begins installing.
 
     :::image type="content" source="../media/install-package.png" alt-text="Screenshot of the NuGet package manager within Visual Studio. The win2D.uwp package is highlighted along with the install button.":::
 
     With the package installed, we can call a feature directly in the XAML code to define our main page.
 
     > [!NOTE]
-    > If you get an error during installation, you may not have set the correct minimum version.
+    > If you get an error during installation, you might not have set the correct minimum version.
     >
-    > Select **Project** and click **Hello World Properties**. Change the **Min version** (use **Windows 10, version 1809** or later).
+    > Select **Project**, and then select **Hello World Properties**. Change the **Min version** to **Windows 10, version 1809** or later.
 
-4. A *Preview Changes* window appears. Click **OK**.
+4. A *Preview Changes* window displays. Select **OK**.
 
     :::image type="content" source="../media/preview-changes.png" alt-text="Screenshot of the preview changes window in Visual Studio. The OK button is highlighted.":::
 
-5. A *License Acceptance* window appears. To agree to the license terms, click **I Accept**.
+5. A *License Acceptance* window displays. To agree to the license terms, select **I Accept**.
 
     :::image type="content" source="../media/agree-license.png" alt-text="Screenshot of the license acceptance window in Visual Studio. The I accept button is highlighted.":::
 
-6. Double click **MainPage.xaml** in the Solution Explorer to open it in design view.
+6. Double-click **MainPage.xaml** in the Solution Explorer to open it in design view.
 
     :::image type="content" source="../media/open-editor.png" alt-text="Screenshot of the Visual Studio solution explorer. The MainPage.xaml file is highlighted.":::
 

@@ -3,47 +3,12 @@ Azure role-based access control (RBAC) has several Azure built-in roles that you
 
 The four general built-in roles are:
 
-:::row:::
-  :::column:::
-    **Built-in Role**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Contributor**
-  :::column-end:::
-  :::column:::
-    Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Owner**
-  :::column-end:::
-  :::column:::
-    Grants full access to manage all resources, including the ability to assign roles in Azure RBAC.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Reader**
-  :::column-end:::
-  :::column:::
-    View all resources, but does not allow you to make any changes.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **User Access Administrator**
-  :::column-end:::
-  :::column:::
-    Lets you manage user access to Azure resources.
-  :::column-end:::
-:::row-end:::
-
+| **Built-in Role**             | **Description**                                                                                                                                                     |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Contributor**               | Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries. |
+| **Owner**                     | Grants full access to manage all resources, including the ability to assign roles in Azure RBAC.                                                                    |
+| **Reader**                    | View all resources, but does not allow you to make any changes.                                                                                                     |
+| **User Access Administrator** | Lets you manage user access to Azure resources.                                                                                                                     |
 
 ## Custom roles for Azure resources
 

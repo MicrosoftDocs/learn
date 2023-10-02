@@ -1,90 +1,59 @@
 
-A client application can request managed identities for Azure resources app-only access token for accessing a given resource. The token is based on the managed identities for Azure resources service principal. As such, there is no need for the client to register itself to obtain an access token under its own service principal. The token is suitable for use as a bearer token in service-to-service calls requiring client credentials.
 
-This unit provides various code and script examples for token acquisition, as well as guidance on important topics such as handling token expiration and HTTP errors.
+A client application can request managed identities for Azure resources app-only access token for accessing a given resource. The token is based on the managed identities for Azure resources service principal. The recommended method is to use the `DefaultAzureCredential`.
 
-> [!IMPORTANT]
-> All sample code/script in this unit assumes the client is running on a virtual machine with managed identities for Azure resources.
+The Azure Identity library supports a `DefaultAzureCredential` type. `DefaultAzureCredential` automatically attempts to authenticate via multiple mechanisms, including environment variables or an interactive sign-in. The credential type can be used in your development environment using your own credentials. It can also be used in your production Azure environment using a managed identity. No code changes are required when you deploy your application.
 
-## Acquire a token
+> [!NOTE]
+> `DefaultAzureCredential` is intended to simplify getting started with the SDK by handling common scenarios with reasonable default behaviors. Developers who want more control or whose scenario isn't served by the default settings should use other credential types.
 
-The fundamental interface for acquiring an access token is based on REST, making it accessible to any client application running on the VM that can make HTTP REST calls. This is similar to the Azure AD programming model, except the client uses an endpoint on the virtual machine versus an Azure AD endpoint.
+The `DefaultAzureCredential` attempts to authenticate via the following mechanisms, in this order, stopping when one succeeds:
 
-Sample request using the Azure Instance Metadata Service (IMDS) endpoint:
+1. **Environment** - The `DefaultAzureCredential` reads account information specified via environment variables and use it to authenticate.
+1. **Managed Identity** - If the application is deployed to an Azure host with Managed Identity enabled, the `DefaultAzureCredential` authenticates with that account.
+1. **Visual Studio** - If the developer has authenticated via Visual Studio, the `DefaultAzureCredential` authenticates with that account.
+1. **Azure CLI** - If the developer has authenticated an account via the Azure CLI `az login` command, the `DefaultAzureCredential` authenticates with that account. Visual Studio Code users can authenticate their development environment using the Azure CLI.
+1. **Azure PowerShell** - If the developer has authenticated an account via the Azure PowerShell `Connect-AzAccount` command, the `DefaultAzureCredential` authenticates with that account.
+1. **Interactive browser** - If enabled, the `DefaultAzureCredential` will interactively authenticate the developer via the current system's default browser. By default, this credential type is disabled.
 
-```http
-GET 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com/' HTTP/1.1 Metadata: true
+##  Examples
+
+The following examples use the Azure Identity SDK that can be added to a project with this command:
+
+```bash
+dotnet add package Azure.Identity
 ```
 
-Element | Description
-| - | - |
-`GET` | The HTTP verb, indicating you want to retrieve data from the endpoint. In this case, an OAuth access token.
-`http://169.254.169.254/metadata/identity/oauth2/token` | The managed identities for Azure resources endpoint for the Instance Metadata Service.
-`api-version` | A query string parameter, indicating the API version for the IMDS endpoint. Please use API version `2018-02-01` or greater.
-`resource` | A query string parameter, indicating the App ID URI of the target resource. It also appears in the `aud` (audience) claim of the issued token. This example requests a token to access Azure Resource Manager, which has an App ID URI of `https://management.azure.com/`.
-`Metadata` | An HTTP request header field, required by managed identities for Azure resources as a mitigation against Server Side Request Forgery (SSRF) attack. This value must be set to "true", in all lower case.
+### Authenticate with `DefaultAzureCredential`
 
-Sample response:
-
-```json
-HTTP/1.1 200 OK
-Content-Type: application/json
-{
-  "access_token": "eyJ0eXAi...",
-  "refresh_token": "",
-  "expires_in": "3599",
-  "expires_on": "1506484173",
-  "not_before": "1506480273",
-  "resource": "https://management.azure.com/",
-  "token_type": "Bearer"
-}
-```
-
-### Get a token by using C#
-
-The code sample below builds the request to acquire a token, calls the endpoint, and then extracts the token from the response.
+This example demonstrates authenticating the `SecretClient` from the [Azure.Security.KeyVault.Secrets](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Identity_1.8.2/sdk/keyvault/Azure.Security.KeyVault.Secrets) client library using the `DefaultAzureCredential`.
 
 ```csharp
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Net;
-using System.Web.Script.Serialization; 
-
-// Build request to acquire managed identities for Azure resources token
-HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com/");
-request.Headers["Metadata"] = "true";
-request.Method = "GET";
-
-try
-{
-    // Call /token endpoint
-    HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-
-    // Pipe response Stream to a StreamReader, and extract access token
-    StreamReader streamResponse = new StreamReader(response.GetResponseStream()); 
-    string stringResponse = streamResponse.ReadToEnd();
-    JavaScriptSerializer j = new JavaScriptSerializer();
-    Dictionary<string, string> list = (Dictionary<string, string>) j.Deserialize(stringResponse, typeof(Dictionary<string, string>));
-    string accessToken = list["access_token"];
-}
-catch (Exception e)
-{
-    string errorText = String.Format("{0} \n\n{1}", e.Message, e.InnerException != null ? e.InnerException.Message : "Acquire token failed");
-}
+// Create a secret client using the DefaultAzureCredential
+var client = new SecretClient(new Uri("https://myvault.vault.azure.net/"), new DefaultAzureCredential());
 ```
 
-## Token caching
+### Specify a user-assigned managed identity with `DefaultAzureCredential`
 
-While the managed identities for Azure resources subsystem does cache tokens, we also recommend implementing token caching in your code. As a result, you should prepare for scenarios where the resource indicates that the token is expired.
+This example demonstrates configuring the `DefaultAzureCredential` to authenticate a user-assigned identity when deployed to an Azure host. It then authenticates a `BlobClient` from the [Azure.Storage.Blobs](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Identity_1.8.2/sdk/storage/Azure.Storage.Blobs) client library with credential.
 
-On-the-wire calls to Azure Active Directory result only when:
+```csharp
+// When deployed to an azure host, the default azure credential will authenticate the specified user assigned managed identity.
 
-* Cache miss occurs due to no token in the managed identities for Azure resources subsystem cache.
-* The cached token is expired.
+string userAssignedClientId = "<your managed identity client Id>";
+var credential = new DefaultAzureCredential(new DefaultAzureCredentialOptions { ManagedIdentityClientId = userAssignedClientId });
 
-## Retry guidance
+var blobClient = new BlobClient(new Uri("https://myaccount.blob.core.windows.net/mycontainer/myblob"), credential);
+```
 
-It is recommended to retry if you receive a 404, 429, or 5xx error code. 
-Throttling limits apply to the number of calls made to the IMDS endpoint. When the throttling threshold is exceeded, IMDS endpoint limits any further requests while the throttle is in effect. During this period, the IMDS endpoint will return the HTTP status code 429 ("Too many requests"), and the requests fail.
+### Define a custom authentication flow with `ChainedTokenCredential`
 
+While the `DefaultAzureCredential` is generally the quickest way to get started developing applications for Azure, more advanced users may want to customize the credentials considered when authenticating. The `ChainedTokenCredential` enables users to combine multiple credential instances to define a customized chain of credentials. This example demonstrates creating a `ChainedTokenCredential` which attempts to authenticate using managed identity, and fall back to authenticating via the Azure CLI if managed identity is unavailable in the current environment. The credential is then used to authenticate an `EventHubProducerClient` from the [Azure.Messaging.EventHubs](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Identity_1.8.2/sdk/eventhub/Azure.Messaging.EventHubs) client library.
+
+```csharp
+// Authenticate using managed identity if it is available; otherwise use the Azure CLI to authenticate.
+
+var credential = new ChainedTokenCredential(new ManagedIdentityCredential(), new AzureCliCredential());
+
+var eventHubProducerClient = new EventHubProducerClient("myeventhub.eventhubs.windows.net", "myhubpath", credential);
+```

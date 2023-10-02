@@ -1,3 +1,5 @@
+
+
 The SAPS metric makes up one of the major criteria for determining whether a VM size offers the throughput requirement necessary for a given SAP workload. Effectively, it also represents one of the primary factors considered by Microsoft and SAP when certifying Azure VMs for SAP NetWeaver and SAP HANA. SAP uses that data to document it in [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533). This note is the official source of the information about SAPS ratings for SAP NetWeaver certified VMs. It lists the number of vCPUs, memory, and SAPS for each of the Azure VM types that are certified to run the SAP NetWeaver workload.
 
 Also, SAP makes its SAP Sales and Distribution Standard Application benchmarks for hyperscale clouds (including Azure) publicly available at [SAP Standard Application Benchmarks](https://www.sap.com/dmc/exp/2018-benchmark-directory/).
@@ -37,12 +39,12 @@ You might have the option of evaluating performance of your existing Azure deplo
 
 Additional sizing considerations applicable to scenarios involving migrating from anyDB to SAP HANA are documented in the following SAP notes:
 
-- [1872170 – Suite on HANA – S/4 sizing report](https://launchpad.support.sap.com/#/notes/1872170)
-- [1995209 – Suite on HANA memory Sizing report – Advanced correction 1](https://launchpad.support.sap.com/#/notes/1995209)
-- [2062017 – Suite on HANA memory Sizing report – Advanced correction 2](https://launchpad.support.sap.com/#/notes/2062017)
-- [2080648 – Suite on HANA memory Sizing report – Advanced correction 3](https://launchpad.support.sap.com/#/notes/2080648)
-- [2175150 – Suite on HANA memory Sizing report – Advanced correction 4](https://launchpad.support.sap.com/#/notes/2175150)
-- [2213586 – Suite on HANA memory Sizing report – Advanced correction 5](https://launchpad.support.sap.com/#/notes/2213586)
-- [2303847 – Suite on HANA memory Sizing report – Advanced correction 6](https://launchpad.support.sap.com/#/notes/2303847)
+- [SAP Note \#1872170 – Suite on HANA – S/4 sizing report](https://launchpad.support.sap.com/#/notes/1872170)
+- [SAP Note \#1995209 – Suite on HANA memory Sizing report – Advanced correction 1](https://launchpad.support.sap.com/#/notes/1995209)
+- [SAP Note \#2062017 – Suite on HANA memory Sizing report – Advanced correction 2](https://launchpad.support.sap.com/#/notes/2062017)
+- [SAP Note \#2080648 – Suite on HANA memory Sizing report – Advanced correction 3](https://launchpad.support.sap.com/#/notes/2080648)
+- [SAP Note \#2175150 – Suite on HANA memory Sizing report – Advanced correction 4](https://launchpad.support.sap.com/#/notes/2175150)
+- [SAP Note \#2213586 – Suite on HANA memory Sizing report – Advanced correction 5](https://launchpad.support.sap.com/#/notes/2213586)
+- [SAP Note \#2303847 – Suite on HANA memory Sizing report – Advanced correction 6](https://launchpad.support.sap.com/#/notes/2303847)
 
 In particular, [SAP Note \#1872170](https://launchpad.support.sap.com/#/notes/1872170) documents reports (/SDF/HDB\_SIZING and ZNEWHDB\_SIZE) that facilitate estimating the memory and disk space requirements for the database tables of Business Suite on HANA, S/4HANA systems, and any other ABAP-based systems running on HANA (except for BW). The sizing process includes running an SAP report.

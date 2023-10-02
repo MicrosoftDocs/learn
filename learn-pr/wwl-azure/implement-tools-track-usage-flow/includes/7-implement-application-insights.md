@@ -1,3 +1,4 @@
+
 ## Monitor
 
 Install Application Insights in your app, set up [availability web tests](/azure/application-insights/app-insights-monitor-web-app-availability), and:

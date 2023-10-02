@@ -11,9 +11,7 @@ In this module, we covered a lot. Here are a few key concepts to keep in mind:
 
 ## Learn more
 
-If you're interested in learning more, the [Solve optimization problems by using quantum-inspired optimization](/training/modules/solve-quantum-inspired-optimization-problems/?azure-portal=true) module is a great next step. There you'll see how you can apply algorithms inspired by quantum physics to solve difficult optimization problems.
-
-Also, be sure to explore the [Azure Quantum documentation](/quantum/?azure-portal=true). There you'll find comprehensive reference material, including:
+Explore the [Azure Quantum documentation](/quantum/?azure-portal=true). There you'll find comprehensive reference material, including:
 
 * Fundamental concepts around quantum computing.
 * Quickstarts and tutorials.

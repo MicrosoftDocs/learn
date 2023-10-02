@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: hdinsight
 title: Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight
 summary: In this module, you will learn how to create real-time streaming data analytics pipelines and applications on the cloud by using Azure HDInsight with Apache Kafka and Apache Spark.
 abstract: |

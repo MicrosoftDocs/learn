@@ -149,8 +149,21 @@
                 ],
                 "dest": "modules"
             },
-             {
+            {
                 "src": "commercial-marketplace",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "contributors",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -294,6 +307,32 @@
             },
             {
                 "src": "nvidia",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "partner-center-modules",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "./modules/partner-center/"
+            },
+            {
+                "src": "pwa",
                 "files": [
                     "**/*.yml",
                     "**/*.md"

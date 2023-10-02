@@ -8,7 +8,8 @@ metadata:
   author: guywi-ms
   ms.author: guywild
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.service: azure-monitor
+  ms.subservice: logs
 title: Guided project - Analyze logs in Azure Monitor with KQL
 summary: |
   Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.

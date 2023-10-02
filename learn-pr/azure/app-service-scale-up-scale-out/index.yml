@@ -6,12 +6,13 @@ metadata:
   ms.date: 04/11/2019
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: app-service
+  manager: mijacobs
 title: Scale an App Service web app to efficiently meet demand with App Service scale up and scale out
-summary: Respond to periods of increased activity by incrementally increasing the resources available and then, to reduce costs, decreasing these resources when activity drops. 
+summary: Respond to periods of increased activity by incrementally increasing the resources available and then, to reduce costs, decreasing these resources when activity drops.
 abstract: |
-  In this module, you will: 
+  In this module, you will:
   - Scale a web app in and out manually.
   - Scale a web app up and down.
 prerequisites: |
@@ -26,9 +27,7 @@ roles:
 - administrator
 products:
 - azure
-- dotnet
 - aspnet-core
-- dotnet-core
 units:
 - learn.azure.app-service-scale-up-scale-out.1-introduction
 - learn.azure.app-service-scale-up-scale-out.2-scale-a-web-app-manually

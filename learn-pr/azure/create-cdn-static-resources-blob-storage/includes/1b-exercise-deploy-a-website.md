@@ -1,8 +1,8 @@
-Before we explore Content Delivery Networks, let's deploy a static website in Azure Storage that we'll use throughout the module.
+Before we explore Content Delivery Networks, let's deploy a static website in Azure Storage to use throughout the module.
 
 ### Create a Storage Account in Azure Cloud Shell
 
-We'll start by creating a new storage account to host a static site. When we're finished, we'll access this site through the content delivery network.
+Start by creating a new storage account to host a static site. When we're finished, you can access this site through the content delivery network.
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
@@ -12,7 +12,7 @@ We'll start by creating a new storage account to host a static site. When we're 
     az extension add --name storage-preview
     ```
 
-1. Run these commands in the Cloud Shell to set up a few shell variables. We'll use these variables throughout this module to create items such as a storage account name. Replace `<location>` with one of the locations in the list above.
+1. Run these commands in the Cloud Shell to set up a few shell variables. Use these variables throughout this module to create items such as a storage account name. Replace `<location>` with one of the locations in the region list.
 
     ```bash
     STORAGE_ACCOUNT_NAME="cdnsitestorage$RANDOM" \
@@ -31,7 +31,7 @@ We'll start by creating a new storage account to host a static site. When we're 
         --kind StorageV2
     ```
 
-1. In the output, find the `"primaryEndpoints"` **web** url, copy it, and open the link in a web browser. The page that will open will indicate that "The requested content doesn't exist". Keep this tab open; we'll deploy our static content and then refresh the page.
+1. In the output, find the `"primaryEndpoints"` **web** url, copy it, and open the link in a web browser. The page that opens indicates that "The requested content doesn't exist". Keep this tab open; we're going to deploy our static content and then refresh the page.
 
 ### Enable static website hosting on the storage account
 
@@ -55,7 +55,7 @@ We'll start by creating a new storage account to host a static site. When we're 
     }
     ```
 
-1. Switch to the browser tab displaying the static website and refresh it. You'll see a message that the requested content doesn't exist.
+1. Switch to the browser tab displaying the static website and refresh it. You see a message that the requested content doesn't exist.
 
 ### Upload Files to the Static Website
 
@@ -79,4 +79,4 @@ We'll start by creating a new storage account to host a static site. When we're 
 
 ### Check for Website Publication
 
-Switch to the website you opened earlier and refresh the page (press F5). You'll see the landing page and an image.
+Switch to the website you opened earlier and refresh the page (press F5). You see the landing page and an image.

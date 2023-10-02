@@ -5,8 +5,8 @@ metadata:
   title: Detect and prevent threats to data
   description: Introduction to the Azure resources that help monitor and handle security threats in the cloud, as well as to the concept of shared responsibility.
   ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

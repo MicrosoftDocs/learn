@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.write-first-c-sharp-method.exercise-create-reusable-methods
-title: Create reusable methods
+title: Exercise - Create reusable methods
 metadata:
-  title: Create reusable methods
-  description: "Create reusable methods"
-  ms.date: 03/21/2023
+  title: Exercise - Create reusable methods
+  description: "Exercise - Create reusable methods"
+  ms.date: 05/06/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-create-reusable-methods.md)]
 quiz:

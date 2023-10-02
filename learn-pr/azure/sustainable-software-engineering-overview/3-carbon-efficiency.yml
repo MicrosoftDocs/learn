@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.sustainable-software-engineering-overview.carbon-efficiency
+title: "Principle: Carbon efficiency"
+metadata:
+  title: "Principle: Carbon efficiency"
+  description: This principle of sustainable software engineering is about building applications that are carbon efficient. In this unit, you'll learn about carbon, its unit of measurement, and why it's so important.
+  ms.date: 06/13/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors:
+  - tozimmergren
+  - simont
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-carbon-efficiency.md)]

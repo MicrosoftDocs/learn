@@ -4,4 +4,5 @@ metadata:
   title: >-
     Microsoft Badge: Deploy Azure infrastructure by using JSON ARM templates was
     issued by Microsoft
-socialImageUrl: /training/achievements/create-azure-resource-manager-template-vs-code-social.png
+socialImageUrl: >-
+  /training/achievements/create-azure-resource-manager-template-vs-code-social.png

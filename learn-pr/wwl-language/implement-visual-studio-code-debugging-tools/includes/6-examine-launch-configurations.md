@@ -1,7 +1,3 @@
-
-
-
-
 You've already seen that Visual Studio Code uses the launch.json file to configure the debugger. If you're creating a simple C# console application, it's likely that Visual Studio Code generates a launch.json file that has all of the information you need to successfully debug your code. However, there are cases when you need to modify a launch configuration, so it's important to understand the attributes of a launch configuration.
 
 ## Attributes of a launch configuration
@@ -89,7 +85,9 @@ To edit the `console` attribute:
 1. Locate the **console** attribute.
 
 1. Select the colon and assigned value, and then enter a colon character.
-   When you overwrite the existing information with a colon, Visual Studio Code IntelliSense displays the three options in a dropdown list.
+
+1. Notice that when you overwrite the existing information with a colon, Visual Studio Code IntelliSense displays the three options in a dropdown list.
+
    ![Screenshot showing the console attribute options for a launch configuration.](../media/launch-configuration-console.png)
 
 1. Select either **integratedTerminal** or **externalTerminal**.

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement open-source software
 summary: This module explores open-source software and corporate concerns with software components. Also, it explains common open-source licenses, license implications, and ratings.
 abstract: |

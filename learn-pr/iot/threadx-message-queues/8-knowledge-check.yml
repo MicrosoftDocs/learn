@@ -7,10 +7,9 @@ metadata:
   ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
-  ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 8
 content: |
 quiz:
@@ -40,7 +39,7 @@ quiz:
         - content: 'only from the front of the queue'
           isCorrect: true
           explanation: 'Correct.'
-        - content: 'wherever there is space available'
+        - content: "wherever there's space available"
           isCorrect: false
           explanation: 'Incorrect, messages are always received from the front of the queue.'
     - content: 'What is the purpose of the ThreadX prioritize service?'
@@ -61,27 +60,27 @@ quiz:
       choices:
         - content: 'tx_queue_contents'
           isCorrect: false
-          explanation: "Incorrect, it's tx_queue_info_get"
+          explanation: "Incorrect, tx_queue_info_get is the correct service."
         - content: 'tx_queue_performance_info_get'
           isCorrect: false
-          explanation: "Incorrect, it's tx_queue_info_get"
+          explanation: "Incorrect, tx_queue_info_get is the correct service."
         - content: 'tx_queue_info_get'
           isCorrect: true
           explanation: 'Correct.'
         - content: 'tx_queue_message_count'
           isCorrect: false
-          explanation: "Incorrect, it's tx_queue_info_get"
+          explanation: "Incorrect, tx_queue_info_get is the correct service."
     - content: 'Which ThreadX service can send a message to the front of the queue, rather than to the rear of the queue?'
       choices:
         - content: 'tx_queue_head'
           isCorrect: false
-          explanation: "Incorrect, it's tx_queue_front_send"
+          explanation: "Incorrect, tx_queue_front_send is the correct service."
         - content: 'tx_queue_front_send'
           isCorrect: true
           explanation: 'Correct.'
         - content: 'tx_queue_top'
           isCorrect: false
-          explanation: "Incorrect, it's tx_queue_front_send"
+          explanation: "Incorrect, itx_queue_front_send is the correct service."
         - content: 'tx_queue_first'
           isCorrect: false
-          explanation: "Incorrect, it's tx_queue_front_send"
+          explanation: "Incorrect, tx_queue_front_send is the correct service."

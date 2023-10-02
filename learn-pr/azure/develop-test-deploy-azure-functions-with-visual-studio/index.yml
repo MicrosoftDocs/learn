@@ -7,8 +7,8 @@ metadata:
   author: ggailey777
   ms.author: glenga
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.prod: visual-studio
 title: Develop, test, and deploy an Azure Function with Visual Studio
 summary: Create test and deploy Azure Functions using Visual studio and how to manage Azure Function code.
 abstract: |

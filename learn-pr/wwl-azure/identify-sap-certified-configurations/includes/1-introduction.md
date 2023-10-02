@@ -1,3 +1,5 @@
+
+
 ## Scenario
 
 Your deployment team is starting to plan moving its first SAP workload to Azure. You need to provide guidance on the prerequisites, deployment options, and SAP-certified configurations available to you when deploying SAP products in Azure.

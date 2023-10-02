@@ -4,12 +4,12 @@ title: Define Hyper-V
 metadata:
   title: Define Hyper-V
   description: "Define Hyper-V"
-  ms.date: 02/26/2021
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-define-hyper-v.md)]

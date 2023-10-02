@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Deploy Azure Databricks models in Azure Machine Learning
 summary: You can use Azure Databricks to train machine learning models, and deploy the trained models in Azure Machine Learning endpoints.
 abstract: |

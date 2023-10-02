@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-data-factory-pipelines-fabric.copy-data
+title: Use the Copy Data activity
+metadata:
+  title: Use the Copy Data activity
+  description: "Use the Copy Data activity"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-copy-data.md)]

@@ -4,13 +4,12 @@ title: Catalog Azure Synapse Analytics data assets in Microsoft Purview
 metadata:
   title: Catalog Azure Synapse Analytics data assets in Microsoft Purview
   description: "Catalog Azure Synapse Analytics data assets in Microsoft Purview"
-  ms.date: 04/04/2023
+  ms.date: 07/20/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: synapse-analytics
+  ms.subservice: purview
 durationInMinutes: 8
 content: |
   [!include[](includes/02-catalog-azure-synapse.md)]

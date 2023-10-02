@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-interactive-components-blazor-web-apps.exercise-use-javascript-libraries-blazor-apps
-title: Exercise - Use JavaScript libraries in Blazor apps
+title: Exercise - Use a JavaScript library in a Blazor app
 metadata:
   unitType: learning-content
-  title: "Exercise - Use JavaScript libraries in Blazor apps"
-  description: "Load a JavaScript library and call JavaScript functions in a Blazor app"
+  title: "Exercise - Use a JavaScript library in a Blazor app"
+  description: "Load a JavaScript library and call JavaScript functions in a Blazor app."
   ms.date: 02/02/2023
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
+  ms.custom:
   ms.prod: learning-blazor
 durationInMinutes: 10
 content: |

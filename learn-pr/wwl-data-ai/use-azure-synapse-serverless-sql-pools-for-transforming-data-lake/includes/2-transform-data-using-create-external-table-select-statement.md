@@ -125,7 +125,7 @@ WHERE OrderType = 'Special Order';
 
 ## Dropping external tables
 
-If you no longer need the external table containing the transformed data, you can drop it from the database my using the `DROP EXTERNAL TABLE` statement, as shown here:
+If you no longer need the external table containing the transformed data, you can drop it from the database by using the `DROP EXTERNAL TABLE` statement, as shown here:
 
 ```sql
 DROP EXTERNAL TABLE SpecialOrders;

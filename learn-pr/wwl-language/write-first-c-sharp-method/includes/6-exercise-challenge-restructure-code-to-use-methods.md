@@ -6,7 +6,7 @@ The focus of this challenge is to modify code so that it is reusable and can be 
 
 ## Tell a fortune
 
-You are helping to develop a massive multiplayer role-playing game. Each player has a luck stat that can affect their odds of finding rare treasure. Each day, a player can speak to an in-game fortune teller that will reveal whether their luck stat is high, low, or neutral. 
+You're helping to develop a massive multiplayer role-playing game. Each player has a luck stat that can affect their odds of finding rare treasure. Each day, a player can speak to an in-game fortune teller that reveals whether their luck stat is high, low, or neutral. 
 
 The game currently has code to generate a player's fortune, but it isn't reusable. Your task is to create a `tellFortune` method that can be called at any time, and replace the existing logic with a call to your method.
 
@@ -14,9 +14,9 @@ In this challenge, you're given some starting code. You must decide how to creat
 
 ## Code challenge: create a reusable method
 
-In the code that you'll start with, there is a generic text array, followed by good, bad, and neutral text arrays. Depending on the value of `luck`, one of the arrays is selected to be displayed alongside the generic text.
+In the code that you start with, there's a generic text array, followed by good, bad, and neutral text arrays. Depending on the value of `luck`, one of the arrays is selected and displayed alongside the generic text.
 
-Your challenge is to create a reusable method that will print a player's fortune at any time. The method should contain the logic that is already present in the code provided.
+Your challenge is to create a reusable method that prints a player's fortune at any time. The method should contain the logic that is already present in the code provided.
 
 1. Ensure that you have an empty Program.cs file open in Visual Studio Code.
 

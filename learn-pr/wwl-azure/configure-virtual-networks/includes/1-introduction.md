@@ -1,4 +1,5 @@
 
+
 Virtual networks are a fundamental component of private networks that enable resources to communicate securely. Communication can happen between resources, over the internet, and with on-premises networks. In this module, we explore how Azure Virtual Network can support your configuration.
 
 Suppose your company is migrating to Azure. They want to replicate their on-premises network in the cloud. Their Azure resources need to be organized into virtual networks and subnets, and implement a customized IP addressing schema for the company. 

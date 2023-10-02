@@ -4,34 +4,34 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/03/2023
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following App Service plans supports only function apps?"
+  - content: "Which of the following App Service plan categories provides the maximum scale-out capabilities?"
     choices:
-    - content: "Dedicated"
+    - content: "Dedicated compute"
       isCorrect: false
-      explanation: "That's incorrect. Dedicated compute supports all of the app types available in App Service."
+      explanation: "Incorrect. The Dedicated compute category does not provide the maximum scale-out capability."
     - content: "Isolated"
-      isCorrect: false
-      explanation: "That's incorrect. Isolated  supports all of the app types available in App Service."
-    - content: "Consumption"
       isCorrect: true
-      explanation: "That's correct. The consumption tier is only available to function apps. It scales the functions dynamically depending on workload."
+      explanation: "Correct. The Isolated category provides network and compute isolation, and has the maximum scale-out capability."
+    - content: "Shared compute"
+      isCorrect: false
+      explanation: "Incorrect. The Shared compute category does not provide the maximum scale-out capability."
   - content: "Which of the following networking features of App Service can be used to control outbound network traffic?"
     choices:
     - content: "App-assigned address"
       isCorrect: false
-      explanation: "That's incorrect. App-assigned address is an inbound network feature."
+      explanation: "Incorrect. App-assigned address is an inbound network feature."
     - content: "Hybrid Connections"
       isCorrect: true
-      explanation: "That's correct. Hybrid Connections are an outbound network feature."
+      explanation: "Correct. Hybrid Connections are an outbound network feature."
     - content: "Service endpoints"
       isCorrect: false
-      explanation: "That's incorrect. Service endpoints are an inbound network feature."
+      explanation: "Incorrect. Service endpoints are an inbound network feature."

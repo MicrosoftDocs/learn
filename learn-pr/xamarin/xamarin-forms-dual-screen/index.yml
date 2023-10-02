@@ -7,7 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-forms
 title: "Build dual-screen Xamarin.Forms apps by using TwoPaneView"
 summary: "Use TwoPaneView to support dual-screen devices like the Microsoft Surface Duo."
 abstract: |
@@ -19,6 +20,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/xamarin-forms-dual-screen-badge.svg
+hidden: true
 levels: 
 - intermediate
 roles: 

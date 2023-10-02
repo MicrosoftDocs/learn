@@ -9,7 +9,9 @@ metadata:
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+  content_well_notification: 
+    - AI-contribution
+durationInMinutes: 3
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)

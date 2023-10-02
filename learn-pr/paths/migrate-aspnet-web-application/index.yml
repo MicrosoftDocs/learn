@@ -36,7 +36,7 @@ subjects:
 - development-tools
 modules:
 - learn.azure.aspnet-configurationbuilder
-- learn.azure.aspnet-logging
+# - learn.azure.aspnet-logging
 - learn.azure.aspnet-session
 trophy:
   uid: learn.migrate-aspnet-web-application.trophy

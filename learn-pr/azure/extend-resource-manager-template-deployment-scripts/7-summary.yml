@@ -9,7 +9,9 @@ metadata:
   ms.date: 05/12/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-arm-template
   ms.contributors: stmuraws-05172021
 durationInMinutes: 3
 content: |

@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transition-your-business-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/18/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A manufacturing company wants to switch to Microsoft Azure because they have an exciting, new idea for using advanced cloud-connected sensors at their factories to lessen errors. What kind of cloud motivation is this?"
+    choices:
+    - content: "Critical business event"
+      isCorrect: false
+      explanation: "Incorrect. A critical business event is a situation in an organization or industry that urgently compels an IT reorganization."
+    - content: "Migration"
+      isCorrect: false
+      explanation: "Incorrect. A migration motivation is when a business wants to continue their typical operations on better, more cost-efficient cloud technology."
+    - content: "Innovation"
+      isCorrect: true
+      explanation: "Correct. An innovation motivation is when a business wants to try exciting new things in the cloud."
+  - content: "The manufacturing company already has a small version of their new system running on their old computers. They want to transfer that system directly to Azure datacenters, without any change to how it works. The system will take advantage of the Azure's greater computing power and capacity, but won’t use any new software. What kind of cloud service is this?"
+    choices:
+    - content: "Software as a service"
+      isCorrect: false
+      explanation: "Incorrect. Software as a service (SaaS) includes cloud-based software accessed directly over the Internet, such as Outlook or Microsoft Teams."
+    - content: "Platform as a service"
+      isCorrect: false
+      explanation: "Incorrect. Platform as a service (PaaS) includes cloud-based frameworks and operating systems that can form the basis of a company’s IT operations. In this case, the company is not using Azure frameworks or operating systems."
+    - content: "Infrastructure as a service"
+      isCorrect: true
+      explanation: "Correct. Infrastructure as a service (IaaS) is when a business rents cloud infrastructure for its bespoke digital operations without subscribing to Azure software or operating systems. That’s what this company is doing. This is often referred to “lifting and shifting” IT activities from off-cloud servers to the cloud."
+  - content: "Most of this company’s IT now happens in the cloud, but some of their old databases at company headquarters are still connected to the system. What kind of cloud arrangement is this?"
+    choices:
+    - content: "Public"
+      isCorrect: false
+      explanation: "Incorrect. Public cloud activity occurs in the worldwide Azure datacenters, shared with other Azure public cloud customers."
+    - content: "Private"
+      isCorrect: false
+      explanation: "Incorrect. A private cloud is a cloud infrastructure operated for one organization, on separate equipment from other cloud customers’ operations."
+    - content: "Hybrid"
+      isCorrect: true
+      explanation: "Correct. Hybrid cloud is a mixture of cloud and off-cloud, or public and private, IT operations."
+interactive: bash

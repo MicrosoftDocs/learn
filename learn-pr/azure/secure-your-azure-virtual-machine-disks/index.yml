@@ -7,7 +7,7 @@ metadata:
   author: roygara
   ms.author: rogarana
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-machines
 title: Secure your Azure virtual machine disks
 summary: Use Azure Disk Encryption (ADE) to encrypt OS and data disks on existing and new VMs.
 abstract: |

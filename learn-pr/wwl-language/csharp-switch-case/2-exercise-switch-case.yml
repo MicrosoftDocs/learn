@@ -4,11 +4,10 @@ title: Exercise - Implement a switch statement
 metadata:
   title: Exercise - Implement a switch statement
   description: "Exercise - Implement a switch statement"
-  ms.date: 02/24/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 11
 content: |
   [!include[](includes/2-exercise-switch-case.md)]

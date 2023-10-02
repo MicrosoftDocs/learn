@@ -1,5 +1,5 @@
 
-In this exercise you'll learn how to perform the following actions:
+In this exercise you learn how to perform the following actions:
 
 * Create a resource group for the container
 * Create a container
@@ -9,17 +9,17 @@ In this exercise you'll learn how to perform the following actions:
 
 * An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free)
 
-## Login to Azure and create the resource group
+## Sign-in to Azure and create the resource group
 
-1. Log in to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
+1. Sign-in to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
 
     :::image type="content" source="../media/cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
 
-1. After the shell opens be sure to select the **Bash** environment.
+1. When the shell opens be sure to select the **Bash** environment.
 
     :::image type="content" source="../media/shell-bash-selection.png" alt-text="Selecting the Bash environment.":::
 
-1. Create a new resource group with the name **az204-aci-rg** so that it will be easier to clean up these resources when you are finished with the module. Replace `<myLocation>` with a region near you.
+1. Create a new resource group with the name **az204-aci-rg** so that it's easier to clean up these resources when you're finished with the module. Replace `<myLocation>` with a region near you.
 
     ```bash
     az group create --name az204-aci-rg --location <myLocation>
@@ -27,7 +27,7 @@ In this exercise you'll learn how to perform the following actions:
 
 ## Create a container
 
-You create a container by providing a name, a Docker image, and an Azure resource group to the `az container create` command. You will expose the container to the Internet by specifying a DNS name label.
+You create a container by providing a name, a Docker image, and an Azure resource group to the `az container create` command. You expose the container to the Internet by specifying a DNS name label.
 
 1. Create a DNS name to expose your container to the Internet. Your DNS name must be unique, run this command from Cloud Shell to create a variable that holds a unique name.
 
@@ -35,7 +35,7 @@ You create a container by providing a name, a Docker image, and an Azure resourc
     DNS_NAME_LABEL=aci-example-$RANDOM
     ```
 
-1. Run the following `az container create` command to start a container instance. Be sure to replace the `<myLocation>` with the region you specified earlier. It will take a few minutes for the operation to complete.
+1. Run the following `az container create` command to start a container instance. Be sure to replace the `<myLocation>` with the region you specified earlier. It takes a few minutes for the operation to complete.
 
     ```bash
     az container create --resource-group az204-aci-rg 
@@ -45,7 +45,7 @@ You create a container by providing a name, a Docker image, and an Azure resourc
         --dns-name-label $DNS_NAME_LABEL --location <myLocation> 
     ```
 
-    In the commands above, `$DNS_NAME_LABEL` specifies your DNS name. The image name, `mcr.microsoft.com/azuredocs/aci-helloworld`, refers to a Docker image that runs a basic Node.js web application.
+    In the previous command, `$DNS_NAME_LABEL` specifies your DNS name. The image name, `mcr.microsoft.com/azuredocs/aci-helloworld`, refers to a Docker image that runs a basic Node.js web application.
 
 ## Verify the container is running
 

@@ -7,7 +7,6 @@ metadata:
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Understand how to use packages, variables, and functions in Go
 summary: Learn about the basic data types in Go and about how to declare variables, write functions, and use packages.

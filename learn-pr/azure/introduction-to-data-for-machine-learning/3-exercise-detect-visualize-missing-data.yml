@@ -5,10 +5,10 @@ metadata:
   title: Exercise - Visualize missing data
   description: Learn how to detect and visualize missing data.
   ms.date: 02/27/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.service: machine-learning
+  author: fbsolo-ms1
+  ms.author: franksolomon
   ms.topic: interactive-tutorial
-  ms.reviewer: franksolomon
   ms.prod: learning-azure
 durationInMinutes: 8
 sandbox: true

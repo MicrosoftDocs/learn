@@ -6,3 +6,6 @@ In this module, you've learned how to:
 - Understand how batches are handled by SQL Server.
 - Declare and assign variables and synonyms.
 - Use IF and WHILE blocks to control program flow.
+
+> [!NOTE]
+> If you're ready to get started with Azure SQL Database, [try Azure SQL Database free of charge](/azure/azure-sql/database/free-offer) for the life of your subscription.

@@ -3,11 +3,12 @@ uid: learn.azure.deploy-run-container-app-service
 metadata:
   title: Deploy and run a containerized web app with Azure App Service
   description: Discover how to create a Docker image and store it in the Azure Container Registry, then use Azure App Service to deploy a web application based on the image.
-  ms.date: 08/19/2019
+  ms.date: 04/27/2023
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: app-service
+  manager: mijacobs
 title: Deploy and run a containerized web app with Azure App Service
 summary: > 
   Create a Docker image and store it in a repository in Azure Container Registry. Use Azure App Service to deploy a web application based on the Docker image. Configure continuous deployment for the web app by using a webhook that monitors the Docker image for changes.
@@ -17,8 +18,8 @@ abstract:  |
   - Use Azure App Service to run web apps that are based on Docker images held in Container Registry.
   - Use webhooks to configure continuous deployment of a web app that's based on a Docker image.
 prerequisites: |
-  - Basic experience with Docker, including the use of Docker commands to store and retrieve Docker images.
-  - Experience with creating web apps by using Azure App Service.
+  - Basic experience with Docker, including the use of Docker commands to store and retrieve Docker images
+  - Experience with creating web apps by using Azure App Service
 iconUrl: /training/achievements/deploy-run-container-app-service.svg
 levels:
 - beginner

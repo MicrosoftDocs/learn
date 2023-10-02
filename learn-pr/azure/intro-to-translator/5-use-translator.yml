@@ -13,4 +13,4 @@ durationInMinutes: 10
 azureSandbox: true
 interactive: bash
 content: |
-  [!include[](includes/5-use-translator.md)]
+  [!INCLUDE[](includes/5-use-translator.md)]

@@ -14,7 +14,7 @@ But I'm worried that all of my testing is still manual. The process is slow, and
 
 **Andy:** I'm sure we can help you. What kind of tests take up most of your time?
 
-**Amita:** I think the UI tests do. I have to click through every step to make sure I get the correct result. And I have to do that for every browser we support. It's very time-consuming. And as the website grows in complexity, UI testing won't be practical in the long run.
+**Amita:** I think the UI tests do. I have to click through every step to make sure I get the correct result, and I have to do that for every browser we support. It's very time-consuming. And as the website grows in complexity, UI testing won't be practical in the long run.
 
 **Mara:** UI tests are considered to be _functional_ tests.
 
@@ -72,9 +72,9 @@ You can use various strategies to test for regression. These strategies typicall
 
 ### Sanity testing
 
-_Sanity testing_ involves testing each major component of a piece of software to verify that the software appears to be working and can undergo more thorough testing. You can think of sanity tests as being less thorough than regression tests or unit tests. But sanity tests are broader than smoke tests.
+_Sanity testing_ involves testing each major component of a piece of software to verify that the software appears to be working and can undergo more thorough testing. You can think of sanity tests as being less thorough than regression tests or unit tests, but sanity tests are broader than smoke tests.
 
-Although sanity testing can be automated, it's often done manually in response to a feature change or a bug fix. For example, a software tester who is validating a bug fix might also verify that other features are working by entering some typical values. If the software appears to be working as expected, it can then go through a more thorough test pass.
+Although sanity testing can be automated, it's often done manually in response to a feature change or a bug fix. For example, a software tester who's validating a bug fix might also verify that other features are working by entering some typical values. If the software appears to be working as expected, it can then go through a more thorough test pass.
 
 ### User interface testing
 
@@ -126,7 +126,7 @@ We've already covered the importance of writing tests. But just to emphasize it,
 * **Selenium**: Selenium is a portable open-source software-testing framework for web applications. It runs on most operating systems, and it supports all modern browsers. You can write Selenium tests in several programming languages, including C#. In fact, you can use NuGet packages that make it easy to run Selenium as NUnit tests. We already use NUnit for our unit tests.
 * **SpecFlow**: SpecFlow is for .NET projects. It's inspired by a tool called Cucumber. Both SpecFlow and Cucumber support behavior-driven development (BDD). BDD uses a natural-language parser called Gherkin to help both technical teams and nontechnical teams define business rules and requirements. You can combine either SpecFlow or Cucumber with Selenium to build UI tests.
 
-Andy looks at Amita.
+_Andy looks at Amita._
 
 **Andy:** I know these options are new to you, so do you mind if we pick Selenium? I have some experience with it, and it supports languages I already know. Selenium also will give us automatic support for multiple browsers.
 
@@ -149,8 +149,8 @@ Let's join the team as they answer these questions.
 
 **Mara:** Great question. We also have a choice about where we run the tests. We can run them:
 
-* On the agent: either a Microsoft agent or an agent that we host.
-* On test infrastructure: either on-premises or in the cloud.
+* On the agent: either a Microsoft agent or an agent that we host
+* On test infrastructure: either on-premises or in the cloud
 
 Our existing _Test_ stage includes one job. That job deploys the website to App Service from a Linux agent. We can add a second job that runs the UI tests from a Windows agent. The Windows agent that's hosted by Microsoft is already set up to run Selenium tests.
 
@@ -160,9 +160,9 @@ Our existing _Test_ stage includes one job. That job deploys the website to App 
 
 **Mara:** OK. Here's what we're going to do:
 
-* Run Selenium UI tests from a Microsoft-hosted Windows agent.
-* Have the tests fetch the web content from the app that's running on App Service, in the _Test_ stage.
-* Run the tests on all the browsers that we support.
+* Run Selenium UI tests from a Microsoft-hosted Windows agent
+* Have the tests fetch the web content from the app that's running on App Service, in the _Test_ stage
+* Run the tests on all the browsers that we support
 
 **Andy:** I'll work with Amita on this one. Amita, let's meet tomorrow morning. I'd like to do a bit of research before we meet.
 
@@ -172,7 +172,7 @@ Our existing _Test_ stage includes one job. That job deploys the website to App 
 
 We've seen the team decide on how they'll implement their first functional tests. If your team is just starting to incorporate functional tests into their pipeline (or even if you're already doing that), remember that you always need a plan.
 
-Many times, when someone asks team members about their performance testing plan, it's common for  them to respond with a list of tools they're going to use. However, a list of tools isn't a plan. You must also work out how the testing environments will be configured. You need to determine the processes to use, and determine what success or failure looks like.
+Many times, when someone asks team members about their performance testing plan, it's common for them to respond with a list of tools they're going to use. However, a list of tools isn't a plan. You must also work out how the testing environments will be configured. You need to determine the processes to use, and determine what success or failure looks like.
 
 Make sure your plan:
 

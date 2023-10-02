@@ -13,7 +13,7 @@ prerequisites: |
   -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
   -   Experience with hybrid and cloud implementations.
 summary: |
-  Learn how to design a cybersecurity strategy for data and applications.
+  Learn how to design solutions to secure data and applications, including: Microsoft 365, application development, existing application portfolios, data discovery and classification with Microsoft Purview and data security for Azure workloads.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - advanced
@@ -30,5 +30,6 @@ modules:
 - learn.wwl.design-solutions-secure-microsoft-365
 - learn.wwl.design-solutions-secure-applications
 - learn.wwl.design-solutions-secure-organization-data
+- learn.wwl.case-study-design-security-solutions-applications-data
 trophy:
   uid: learn.wwl.sc-100-design-security-solutions-applications-data.trophy

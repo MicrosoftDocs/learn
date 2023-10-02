@@ -49,7 +49,7 @@ To understand the pipeline built in the example, let's explore it step by step:
 
 1. The pipeline is built by defining the function `pipeline_function_name`. 
 1. The pipeline function expects `pipeline_job_input` as the overall pipeline input.
-1. The first pipeline step requires a value for the input parameter `input_data`. The value for the input will be the value of `pipeline_job_output`.
+1. The first pipeline step requires a value for the input parameter `input_data`. The value for the input will be the value of `pipeline_job_input`.
 1. The first pipeline step is defined by the loaded component for `prep_data`.
 1. The value of the `output_data` of the first pipeline step is used for the expected input `training_data` of the second pipeline step.
 1. The second pipeline step is defined by the loaded component for `train_model` and results in a trained model referred to by `model_output`.
@@ -86,6 +86,13 @@ jobs:
         path: ${{parent.inputs.pipeline_job_input}}
     outputs:
       output_data: ${{parent.outputs.pipeline_job_transformed_data}}
+  train_model:
+    type: command
+    inputs:
+      input_data:
+        path: ${{parent.outputs.pipeline_job_transformed_data}}
+    outputs:
+      output_model: ${{parent.outputs.pipeline_job_trained_model}}
 tags: {}
 properties: {}
 settings: {}

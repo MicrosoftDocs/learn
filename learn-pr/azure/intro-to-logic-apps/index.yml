@@ -3,12 +3,13 @@ uid: learn.azure-intro-to-logic-apps
 metadata:
   title: "Introduction to Azure Logic Apps"
   description: Learn how to evaluate Azure Logic Apps as an automation choice for your organization using criteria for integration, performance, conditionals, and connectors.
-  ms.date: 4/25/2019
+  ms.date: 05/16/2023
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-intro-to-product
   ROBOTS: INDEX,FOLLOW
+  ms.service: logic-apps
+  manager: mijacobs
 title: "Introduction to Azure Logic Apps"
 summary: "Characterize the types of business processes that Azure Logic Apps can automate. Describe the function of connectors, triggers, and actions and show how you combine them to create an app."
 abstract: |

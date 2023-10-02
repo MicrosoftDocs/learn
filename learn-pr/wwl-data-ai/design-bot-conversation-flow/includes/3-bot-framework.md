@@ -1,10 +1,10 @@
 Bot solutions on Microsoft Azure are supported by the following technologies:
 
-- **Azure Bot Service**. A cloud service that enables bot delivery through one or more channels, and integration with other services.
-- **Bot Framework Service**. A component of Azure Bot Service that provides a REST API for handling bot activities.
+- **Azure AI Bot Service**. A cloud service that enables bot delivery through one or more channels, and integration with other services.
+- **Bot Framework Service**. A component of Azure AI Bot Service that provides a REST API for handling bot activities.
 - **Bot Framework SDK**. A set of tools and libraries for end-to-end bot development that abstracts the REST interface, enabling bot development in a range of programming languages.
 
-:::image type="content" source="../media/azure-bot-technologies.png" alt-text="Azure Bot Service, Bot Framework, and Bot SDK":::
+:::image type="content" source="../media/azure-bot-technologies.png" alt-text="Azure AI Bot Service, Bot Framework, and Bot SDK":::
 
 ## Developing a Bot with the Bot Framework SDK
 
@@ -28,4 +28,4 @@ Conversations in a bot are composed of *activities*, which represent events such
 
 Bots developed with the Bot Framework SDK are designed to run as cloud services in Azure, but while developing your bot, you'll need a way to test it before you deploy it into production.
 
-The Bot Framework Emulator is an application that enables you to run your bot a local or remote web application and connect to it from an interactive web chat interface that you can use to test your bot. Details of activity events are captured and shown in the testing interface, so you can monitor your bots behavior as you submit messages and review the responses.
+The Bot Framework Emulator is an application that enables you to run your bot local or remote web applications and connect to it from an interactive web chat interface that you can use to test your bot. Details of activity events are captured and shown in the testing interface, so you can monitor your bots behavior as you submit messages and review the responses.

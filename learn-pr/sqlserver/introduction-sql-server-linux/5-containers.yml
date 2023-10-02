@@ -3,7 +3,7 @@ uid: learn-sqlserver.introduction-sql-server-linux.5-containers
 title: Use containers with SQL Server on Linux
 metadata:
   title: Use containers with SQL Server on Linux
-  description: In this unit, you will learn about containers and why you might choose to use them to host your SQL Server installation.
+  description: In this unit, you learn about containers and why you might choose to use them to host your SQL Server installation.
   ms.date: 06/11/2019
   author: rwestmsft
   ms.author: randolphwest
@@ -18,12 +18,12 @@ quiz:
   questions:
   - content: "When would a VM be the best choice to host an application?"
     choices:
-    - content: "If the app needs to be hosted, without modification on different operating systems"
+    - content: "If the app needs to be hosted without modification on different operating systems"
       isCorrect: true
-      explanation: "It is possible to host a VM on operating systems."
-    - content: "If the app needs to scale quickly, and to be fault tolerant"
+      explanation: "It's possible to host a VM on operating systems."
+    - content: "If the app needs to scale quickly and be fault tolerant"
       isCorrect: false
       explanation: "VMs must be shut down to scale them, and in themselves are not automatically fault tolerant."
-    - content: "If the app is small, and self-contained"
+    - content: "If the app is small and self-contained"
       isCorrect: false
       explanation: "Small, simple apps that are self-contained are ideal candidates for use in containers."

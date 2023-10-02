@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-project-building-augmented-reality-app-hololens-two.accessibility-and-privacy-considerations
+title: Accessibility and privacy considerations
+metadata:
+  title: Accessibility and privacy considerations
+  description: "This unit describes how to create accessibility and privacy considerations for a HoloLens app prototype."
+  ms.date: 7/25/2023
+  author: tholewis
+  ms.author: tholewis
+  ms.topic: interactive-tutorial
+  ms.prod: hololens
+durationInMinutes: 60
+content: |
+  [!include[](includes/4-accessibility-and-privacy-considerations.md)]

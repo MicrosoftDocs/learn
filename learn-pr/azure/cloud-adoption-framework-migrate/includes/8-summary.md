@@ -1,14 +1,14 @@
 In this module, you completed the following learning objectives:
 
-- Understand the tools commonly used in migration
-- Learn about the processes required to migrate effectively at scale
-- Demonstrate a simple migration
-- Understand options for properly migrating a variety of platforms and workloads
-- Choose the best learning path to migrate a specific platform or workload
+- Understanding the tools commonly used in migration.
+- Learning about the processes required to migrate effectively at scale.
+- Reviewing Azure Migrate and following the steps of a simple migration.
+- Understanding the options for properly migrating various platforms and workloads.
+- Choosing the best learning path to migrate a specific platform or workload.
 
 ## Next steps
 
-Continue this learning path for additional learning opportunities related to Azure Migrate.
+Continue this learning path for more learning opportunities related to Azure Migrate.
 
 ## Learn more
 

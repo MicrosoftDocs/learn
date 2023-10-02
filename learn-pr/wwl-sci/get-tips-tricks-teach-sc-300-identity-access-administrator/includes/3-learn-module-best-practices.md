@@ -1,5 +1,6 @@
 
 
+
 The SC-300: Microsoft Identity and Access Administrator course isn't a fundamentals course. Students should be familiar with Microsoft Azure and identity providers like Azure Active Directory, Active Directory Domain Services, or other authentication providers. Demos are provided in the trainer materials; however, you may want to use a lab environment to go through some of the steps in the lab to demonstrate the examples. Showing examples in a lab environment will also provide your learners with a head start on the actual labs.
 
 Use the trainer demos and your own experience to demonstrate each module’s purpose and watch for links to additional information that you’ll want to share with your students.

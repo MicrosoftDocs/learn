@@ -25,7 +25,7 @@ When you visit the GitHub repository (https://github.com/Azure/Azure-Lighthouse-
 
 | **Onboarding scenario**                                      | **Template to use**                                          |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Subscription                                                 | [delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/delegated-resource-management) |
+| Subscription                                                 | [delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/delegated-resource-management/subscription) |
 | Resource group                                               | [rg-delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/delegated-resource-management/rg) |
 | Multiple resource groups within a subscription               | [multipleRgDelegatedResourceManagement](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/delegated-resource-management/rg) |
 | Subscription when using an offer published to Azure Marketplace | [marketplace-delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/marketplace-delegated-resource-management) |

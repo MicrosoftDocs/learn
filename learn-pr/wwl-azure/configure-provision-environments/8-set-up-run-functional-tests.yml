@@ -4,13 +4,12 @@ title: Set up and run functional tests
 metadata:
   title: Set up and run functional tests
   description: "Set up and run functional tests"
-  ms.date: 02/07/2023
+  ms.date: 09/04/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.prod: azure
+  ms.service: azure-devops
+durationInMinutes: 60
 content: |
   [!include[](includes/8-set-up-run-functional-tests.md)]

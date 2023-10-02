@@ -15,7 +15,7 @@ Azure Compute Gallery is a service that helps you build structure and organizati
 
 Using an Azure Compute Gallery you can share your images to different users, service principals, or AD groups within your organization. Shared images can be replicated to multiple regions, for quicker scaling of your deployments.
 
-Use an Azure Compute Gallery as a repository for images you wan to make available within your company.
+Use an Azure Compute Gallery as a repository for images you want to make available within your company.
 
 The Azure Compute Gallery feature has multiple resource types:<br>
 

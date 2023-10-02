@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-basics-azure-business.understand-cloud-economics
+title: Understand cloud economics
+metadata:
+  title: Understand cloud economics
+  description: "Understand cloud economics"
+  ms.date: 07/11/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-understand-cloud-economics.md)]

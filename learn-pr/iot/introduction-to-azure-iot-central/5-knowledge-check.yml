@@ -2,54 +2,54 @@
 uid: learn.introduction-to-azure-iot-central.knowledge-check
 title: Knowledge check
 metadata:
-  unitType: knowledge_check
   title: Knowledge check
-  description: Check your understanding of what we've covered in this module.
-  ms.date: 07/21/2021
+  description: This content is a part of Introduction to Azure IoT Central.
+  ms.date: 05/28/2023
   author: asergaz
   ms.author: sergaz
   ms.reviewer: adchukwu
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom: engagement-fy23
+  ms.topic: module-intro-to-product
+  ms.prod: azure-iot-central
 durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "An IoT consultant needs to build a solution for a client that will allow them to track deliveries for their mobile food service company. Which of the following Azure services provides this capability to Azure IoT Central?"
+  - content: "What are the device capabilities that a device can implement in Azure IoT Central?"
     choices:
-    - content: "Azure IoT Hub"
-      isCorrect: false
-      explanation: "Incorrect. Azure IoT Hub establishes secure communication between Azure IoT Central and IoT devices."
-    - content: "Azure Maps"
+    - content: "Telemetry, properties, and commands"
       isCorrect: true
-      explanation: "Correct. Azure Maps provides map capabilities to Azure IoT Central using secure geo-spatial services, APIs and SDKs in Azure."
-    - content: "Azure Stream Analytics"
+      explanation: "Correct. You define these capabilities in a model that's shared between the device and the IoT Central application."
+    - content: "Telemetry, properties, and jobs"
       isCorrect: false
-      explanation: "Incorrect. Azure Stream Analytics enables real time insights from data streams sent from IoT devices."
-  - content: "What is the responsibility of the Operator user role in Azure IoT Central?"
+      explanation: "Incorrect. Jobs aren't a device capability. Jobs are defined at the application level and let you apply single or bulk updates to devices by setting properties or calling commands."
+    - content: "Telemetry, properties, and device twins"
+      isCorrect: false
+      explanation: "Incorrect. Device twins aren't a device capability. Device twins are JSON documents that store device state information including metadata, configurations, and conditions."
+  - content: "What can let you trigger external actions, such as to send an email or fire an event, in response to device conditions within Azure IoT Central?"
     choices:
-    - content: "Builds IoT solutions in the cloud"
-      isCorrect: false
-      explanation: "Incorrect. The Solution Builder builds the IoT solution that devices connect to."
-    - content: "Creates user roles and assigns their permissions"
-      isCorrect: false
-      explanation: "Incorrect. Administrators handle administrative tasks such as creating users and assigning roles and permissions."
-    - content: "Manages IoT devices connected to Azure IoT Central"
+    - content: "Rules"
       isCorrect: true
-      explanation: "Correct. The Operator is responsible for managing IoT devices connected to Azure IoT Central."
-  - content: "A small tech startup has plans to develop a line of tracking devices. Due to budget limitations, they aren't able to hire experienced IoT professionals. The startup wants an IoT solution that allows them to quickly provision their devices with little to no code. One of their senior developers doesn't believe Azure IoT Central will work. Is this senior developer correct?"
+      explanation: "Correct. Rules let you trigger external actions, such as to send an email or fire an event, in response to device conditions within IoT Central."
+    - content: "Device templates"
+      isCorrect: false
+      explanation: "Incorrect. A device template is the blueprint that defines the characteristics and behavior of a type of device."
+    - content: "REST API"
+      isCorrect: false
+      explanation: "Incorrect. IoT Central REST API purpose is to enable automation and build integrations that let other applications and services manage your application."
+  - content: "A small tech startup has plans to implement a tracking system. Due to budget limitations, they aren't able to hire experienced IoT professionals. The startup wants an IoT solution that allows them to quickly provision devices with little to no code and has identified a suitable IoT Plug and Play certified device. One of their senior developers doesn't believe Azure IoT Central will work. Is this senior developer correct?"
     choices:
-    - content: "Yes. All Azure IoT Central solutions require code to be written both in the cloud and on the devices."
+    - content: "Yes. All IoT Central solutions require code to be written both in the cloud and on the devices."
       isCorrect: false
-      explanation: "Incorrect. Azure IoT Central solutions don't require code to be written for both the cloud and devices."
-    - content: "Yes. Azure IoT Central solutions always require users to write code for the cloud application to function."
+      explanation: "Incorrect. IoT Central solutions don't require code to be written on the device when using a IoT Plug and Play certified device, nor on the cloud when using IoT Central built-in analytics."
+    - content: "Yes. IoT Central solutions always require users to write code for the cloud application to function."
       isCorrect: false
-      explanation: "Incorrect. Azure IoT Central cloud applications are built to function \"right out of the box\"."
-    - content: "No. Azure IoT Central has an IoT Plug and Play feature that lets users build solutions without writing any code."
+      explanation: "Incorrect. IoT Central cloud applications are built to function \"right out of the box\", you will only need to write code when leveraging IoT Central REST API."
+    - content: "No. IoT Central allow users to use IoT Plug and Play certified devices and build solutions without writing any code."
       isCorrect: true
-      explanation: "Correct. The IoT Plug and Play feature in Azure IoT Central enables solution builders to build production-ready solutions without writing code for the cloud or device."
-  - content: "A warehouse owner wants to automate their inventory management system. The owner would like to place sensors on each shelf of the warehouse to monitor item availability and programmatically replenish low inventory. The warehouse's IT department is in search of an IoT solution that will allow them to securely place orders to replenish low inventory. Which of the following benefits of Azure IoT Central makes this possible?"
+      explanation: "Correct. The IoT Plug and Play native integration with IoT Central enables solution builders to use IoT Plug and Play certified devices and build solutions without writing code for both the devices and cloud."
+  - content: "A warehouse owner wants to automate their inventory management system. The owner would like to place sensors on each shelf of the warehouse to monitor item availability and programmatically replenish low inventory. The warehouse's IT department is in search of an IoT solution that will allow them to securely test the scenario. Which of the following benefits of Azure IoT Central makes this possible?"
     choices:
     - content: "Big Data Management"
       isCorrect: false
@@ -59,15 +59,4 @@ quiz:
       explanation: "Incorrect. Device Management refers to the systematic pattern used to handle devices themselves; not their security."
     - content: "Security & Compliance"
       isCorrect: true
-      explanation: "Correct. Azure IoT Central's Security & Compliance features allow builders to create a secure IoT solution, including secure communication between devices and the cloud."
-  - content: "An online retail company is planning for their biggest annual sale. They have built an IoT solution using Azure IoT Central that will help them monitor inventory in each of their warehouses to ensure product availability during the sale. A tropical storm warning has been issued for the region where their Azure resources have been deployed. The IT department isn't worried at all. Why are they confident that their site won't experience any interruptions if a regional datacenter outage occurs?"
-    choices:
-    - content: "Azure IoT Central's high availability & disaster recovery benefits will ensure their application continues to function in the event of a regional outage."
-      isCorrect: true
-      explanation: "Correct. High availability & disaster recovery are benefits of using Azure cloud services. SLAs guarantee an uptime of close to 100% and application backups can be used for restorations, if needed."
-    - content: "Azure DevOps will allow the company to redeploy their application to datacenters affected by outages and immediately restore services."
-      isCorrect: false
-      explanation: "Incorrect. Azure DevOps can be used to deploy code; however, if a datacenter is experiencing an outage, a deployment to that datacenter won't guarantee availability of the deployed code."
-    - content: "Scaling gives the company enough compute power to overcome the outage."
-      isCorrect: false
-      explanation: "Incorrect. Scaling refers to adding additional resources or power for cloud services but can't ensure availability of cloud services."
+      explanation: "Correct. IoT Central's Security & Compliance features allow builders to create a secure IoT solution, including secure communication between devices and the cloud."

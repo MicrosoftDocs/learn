@@ -1,5 +1,6 @@
 
 
+
 Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
 
 ### Challenge: Write code in the .NET Editor to display two messages

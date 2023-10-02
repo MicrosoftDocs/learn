@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-web-app-settings.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/24/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.service: azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In which of the following app configuration settings categories would you set the language and SDK version?"
+    choices:
+    - content: "Application settings"
+      isCorrect: false
+      explanation: "Incorrect. This category is used to configure settings that are passed to your app at runtime."
+    - content: "Path mappings"
+      isCorrect: false
+      explanation: "Incorrect. This category is used to configure handler mappings, and virtual directory to directory mappings."
+    - content: "General settings"
+      isCorrect: true
+      explanation: "Correct. This category is used to configure stack, platform, debugging, and incoming client certificate settings."
+  - content: "Which of the following types of application logging is supported on the Linux platform?"
+    choices:
+    - content: "Web server logging"
+      isCorrect: false
+      explanation: "Incorrect. Web server logging is not supported on the Linux platform."
+    - content: "Failed request tracing"
+      isCorrect: false
+      explanation: "Incorrect. Failed request tracing is not supported on the Linux platform."
+    - content: "Deployment logging"
+      isCorrect: true
+      explanation: "Correct. Deployment logging is supported on the Linux platform."

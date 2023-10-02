@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following statements about the `switch-case` construct is true?"
     choices:
@@ -23,14 +23,14 @@ quiz:
     - content: "The colon at the end of the case label is optional."
       isCorrect: false
       explanation: "Incorrect. The colon isn't optional."
-  - content: "What is the purpose of the `break` keyword?"
+  - content: "A developer implements a `switch` statement in their application. What is the purpose of the `break` keyword?"
     choices:
     - content: "The `break` keyword tells the runtime to continue evaluating other cases in the `switch` construct."
       isCorrect: false
       explanation: "Incorrect. The `break` keyword doesn't instruct the runtime to continue evaluating other cases in the `switch` construct."
-    - content: "The `break` keyword tells the runtime to stop evaluating other cases in the `switch` construct."
-      isCorrect: true
-      explanation: "Correct! The `break` keyword prevents the code in one switch section from running into the next section."
     - content: "The `break` keyword tells the runtime to exit the application."
       isCorrect: false
       explanation: "Incorrect. The `break` keyword doesn't instruct the runtime to exit the application."
+    - content: "The `break` keyword tells the runtime to stop evaluating and prevents execution of other cases in the `switch` construct."
+      isCorrect: true
+      explanation: "Correct! The `break` keyword redirects code execution and prevents one switch section from continuing into the next section."

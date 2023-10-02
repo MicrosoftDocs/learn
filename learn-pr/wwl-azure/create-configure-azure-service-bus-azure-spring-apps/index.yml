@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: spring-apps
 title: Create and configure Azure Service Bus for Azure Spring Apps
 summary: At this point, you've deployed the Spring Petclinic application, and the services are running. In this module, you'll be using Azure Service Bus to test an existing microservice and update another microservice to utilize queues.
 abstract: |

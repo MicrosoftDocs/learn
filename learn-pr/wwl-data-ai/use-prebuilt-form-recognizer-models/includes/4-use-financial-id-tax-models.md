@@ -1,6 +1,6 @@
-Azure Forms Recognizer includes some prebuilt models that are trained on common form types. You can use these models to obtain the values of common fields from invoices, receipts, business cards, and more.
+Azure AI Document Intelligence includes some prebuilt models that are trained on common form types. You can use these models to obtain the values of common fields from invoices, receipts, business cards, and more.
 
-In your polling company, invoices and receipts are often submitted as photos or scans of the paper documents. Sometimes the scan is poor and the paper is creased or damaged. You want to know if Forms Recognizer can get this information into your databases more efficiently than manual data entry.
+In your polling company, invoices and receipts are often submitted as photos or scans of the paper documents. Sometimes the scan is poor and the paper is creased or damaged. You want to know if Azure AI Document Intelligence can get this information into your databases more efficiently than manual data entry.
 
 Here, you'll learn about the prebuilt models that handle financial, identity, and tax documents.
 
@@ -8,7 +8,7 @@ Here, you'll learn about the prebuilt models that handle financial, identity, an
 
 Your business both issues invoices and receives them from partner organization. There may be many different formats on paper or in digitized forms and some will have been scanned poorly at odd angles or from creased paper. 
 
-The invoice model in Azure Forms Recognizer can handle these challenges and uses the features of the read model to extract text from invoice scans. In addition, it extracts specific fields that are commonly used on invoices including:
+The invoice model in Azure AI Document Intelligence can handle these challenges and uses the features of the read model to extract text from invoice scans. In addition, it extracts specific fields that are commonly used on invoices including:
 
 - Customer name and reference ID
 - Purchase order number
@@ -25,7 +25,7 @@ Invoices also feature lines, usually in a table, each of which is one purchased 
 
 ## Using the receipt model
 
-Receipts have similar fields and structures to invoices, but they record amounts paid instead of amounts charged. Form Recognizer faces the same challenges of poor scanning or digitization but can reliably identify fields including:
+Receipts have similar fields and structures to invoices, but they record amounts paid instead of amounts charged. Azure AI Document Intelligence faces the same challenges of poor scanning or digitization but can reliably identify fields including:
 
 - Merchant details such a name, phone number, and address.
 - Amounts such as receipt total, tax, and tip.
@@ -39,7 +39,7 @@ As for invoices, receipts often include a table of items, each of which is a pro
 - The total price for that quantity.
 
 > [!NOTE]
-> In Form Recognizer v3.0, which is currently in preview, the receipt model supports single-page hotel receipt processing. If a receipt is classified as a hotel receipt, the model extracts extra relevant fields such as arrival and departure dates.
+> In Azure AI Document Intelligence v3.0, which is currently in preview, the receipt model supports single-page hotel receipt processing. If a receipt is classified as a hotel receipt, the model extracts extra relevant fields such as arrival and departure dates.
 
 ## Using the ID document model
 
@@ -61,7 +61,7 @@ The ID document model can extract fields including:
 > [!IMPORTANT]
 > Since much of the data extracted by the ID document model is personal, it is of a sensitive nature and covered by data protection laws in most jurisdictions. Be sure that you have the permission of the individual to store their data and comply with all legal requirements in the way you handle this information.
 
-At the time of writing, Form Recognizer v3.0 is in preview. It adds the following new capabilities to the extraction of data from a driver's license:
+At the time of writing, Azure AI Document Intelligence v3.0 is in preview. It adds the following new capabilities to the extraction of data from a driver's license:
 
 - **Endorsements.** Additional driving privileges possessed by the licensee.
 - **Restrictions.** Suspensions and revocations of privileges.
@@ -80,7 +80,7 @@ Business cards are a popular way to exchange contact information quickly and oft
 
 The W-2 form is issued by the United States Internal Revenue Service (IRS) and used by individuals to report employees' wages and taxes withheld. The form has more than 14 boxes and describes the employee's earnings in a year.
 
-The Form Recognizer W-2 model is trained on many examples of the W-2 form and can extract many fields from it, including:
+The Azure AI Document Intelligence W-2 model is trained on many examples of the W-2 form and can extract many fields from it, including:
 
 - Information about the employer, such as their name and address.
 - Information about the employee, such as their name, address, and social security number.
@@ -88,8 +88,8 @@ The Form Recognizer W-2 model is trained on many examples of the W-2 form and ca
 
 ## Learn more
 
-- [Form Recognizer invoice model](/azure/applied-ai-services/form-recognizer/concept-invoice)
-- [Form Recognizer receipt model](/azure/applied-ai-services/form-recognizer/concept-receipt)
-- [Form Recognizer ID document model](/azure/applied-ai-services/form-recognizer/concept-id-document)
-- [Form Recognizer business card model](/azure/applied-ai-services/form-recognizer/concept-business-card)
-- [Form Recognizer W-2 model](/azure/applied-ai-services/form-recognizer/concept-w2)
+- [Azure AI Document Intelligence invoice model](/azure/applied-ai-services/form-recognizer/concept-invoice)
+- [Azure AI Document Intelligence receipt model](/azure/applied-ai-services/form-recognizer/concept-receipt)
+- [Azure AI Document Intelligence ID document model](/azure/applied-ai-services/form-recognizer/concept-id-document)
+- [Azure AI Document Intelligence business card model](/azure/applied-ai-services/form-recognizer/concept-business-card)
+- [Azure AI Document Intelligence W-2 model](/azure/applied-ai-services/form-recognizer/concept-w2)

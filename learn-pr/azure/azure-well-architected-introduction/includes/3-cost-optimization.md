@@ -1,10 +1,10 @@
-Your organization has moved a majority of its systems to the cloud, but you're now seeing cost increases in areas you didn't expect. After some observation, you realize that you're inefficient across your environment and you're still doing manual operational work.
+Your organization has moved most of its systems to the cloud, but you're now seeing cost increases in areas you didn't expect. After some observation, you realize that you're inefficient across your environment, and you're still doing manual operational work.
 
-In this unit, you'll learn about cost optimization. You'll also look at ways to reduce unnecessary expenses and improve operational efficiencies.
+In this unit, you learn about cost optimization and look at ways to reduce unnecessary expenses and improve operational efficiencies.
 
 ## What is cost optimization?
 
-Cost optimization is ensuring that the money your organization spends is being used to maximum effect. Cloud services provide computing as a utility. Technologies in the cloud are provided under a service model, to be consumed on demand. This on-demand service offering drives a fundamental change that directly affects planning, bookkeeping, and organizing.
+Cost optimization is ensuring that the money your organization spends is being used to maximum effect. Cloud services provide computing as a utility. Technologies in the cloud are provided under a service model, to be consumed on demand. On-demand service offerings drive a fundamental change that directly affects planning, bookkeeping, and organizing.
 
 When an organization decides to own infrastructure, it buys equipment that goes onto the balance sheet as assets. Because a capital investment was made, accountants categorize this transaction as a capital expense (CapEx). Over time, to account for the assets' limited useful lifespan, assets are depreciated or amortized.
 
@@ -40,10 +40,10 @@ Efficiency is focused on identifying and eliminating unnecessary expenses within
 
 Waste can show up in several ways. Let's look at a few examples:
 
-- A virtual machine that's always 90 percent idle
-- Paying for a license included in a virtual machine when a license is already owned
-- Retaining infrequently accessed data on a storage medium optimized for frequent access
-- Manually repeating the build of a non-production environment
+- A virtual machine that's always 90 percent idle.
+- Paying for a license included in a virtual machine when a license is already owned.
+- Retaining infrequently accessed data on a storage medium optimized for frequent access.
+- Manually repeating the build of a nonproduction environment.
 
 In each of these cases, you're spending more money than you should. Each case presents an opportunity for cost reduction.
 

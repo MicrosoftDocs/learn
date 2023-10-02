@@ -3,11 +3,11 @@ uid: learn.control-azure-services-with-cli
 metadata:
   title: Control Azure services with the CLI
   description: Learn the steps to install the Azure CLI locally, create a website, and manage Azure resources using the CLI.
-  ms.date: 12/20/2022
+  ms.date: 09/07/2023
   author: dbradish-microsoft
   ms.author: dbradish
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-cli
 title: Control Azure services with the CLI
 summary: Install the Azure CLI locally and use it to manage Azure resources.
 abstract: | 

@@ -1,3 +1,5 @@
+
+
 SAP HANA supports storage snapshots (this is restricted to single-container systems). SAP HANA MCS with more than one tenant does not support this kind of SAP HANA database snapshot.
 
 The process works as follows:

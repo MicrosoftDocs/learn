@@ -4,10 +4,9 @@ metadata:
   title: Configure the network for your virtual machines
   description: Learn how to connect your local on-premises networks into Azure using virtual networks, VPN gateways, and Azure ExpressRoute.
   ms.date: 10/06/2022
-  author: KumudD
-  ms.author: kumud
+  author: mbender-ms
+  ms.author: mbender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure the network for your virtual machines
 summary: Learn how to configure networking in a secure way for your Azure virtual machines.
 abstract: |

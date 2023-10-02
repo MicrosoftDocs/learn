@@ -7,7 +7,7 @@ metadata:
   author: cynthn
   ms.author: cynthn
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-machines
 title: Automate the installation and configuration of software in your Virtual Machines
 summary: Learn how to use the cross-platform Azure CLI to create a virtual machine in Azure, and use a custom script to install and configure a web server. Automate the installation of PHP and the creation of a dynamic home page, then use a web browser to test your installation.
 abstract: | 

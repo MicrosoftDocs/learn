@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-premium.explore-microsoft-purview-audit-premium
+title: Explore Microsoft Purview Audit (Premium)
+metadata:
+  title: Explore Microsoft Purview Audit (Premium)
+  description: "Explore Microsoft Purview Audit (Premium)."
+  ms.date: 3/22/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-explore-microsoft-purview-audit-premium.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Fabrikam has implemented Microsoft Purview Audit (Premium). It now wants to create appropriate 10-year audit log retention policies for the managers of its security and compliance teams. What must Fabrikam do to enable this functionality?"
+    choices:
+    - content: "Configure the 10 year audit log setting in the Microsoft Purview compliance portal"
+      isCorrect: false
+      explanation: "Incorrect. There's no such setting in the Microsoft Purview compliance portal."
+    - content: "Purchase per-user add-on licenses for each manager"
+      isCorrect: true
+      explanation: "Correct. In addition to the one-year retention capabilities of Audit (Premium), Microsoft 365 can optionally retain audit logs for 10 years. The 10-year retention of audit logs helps support long running investigations and respond to regulatory, legal, and internal obligations. Retaining audit logs for 10 years requires an extra per-user add-on license. After this license is assigned to a user and an appropriate 10-year audit log retention policy is set for that user, audit logs covered by that policy will start to be retained for the 10-year period."
+    - content: "Nothing extra is needed since audit logs are retained by default for 10 years when Audit (Premium) is licensed"
+      isCorrect: false
+      explanation: "Incorrect. Audit logs are retained by default for one year in Audit (Premium)."

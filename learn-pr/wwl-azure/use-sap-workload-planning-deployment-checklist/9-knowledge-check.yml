@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/30/2022
+  ms.date: 04/20/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
@@ -43,10 +41,10 @@ quiz:
     choices:
     - content: "Perform database backups"
       isCorrect: false
-      explanation: "That’s incorrect. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that you moved into Azure in the current Go Live phase, you need to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances you moved into Azure."
+      explanation: "That’s incorrect. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that were moved into Azure in the current Go Live phase, the user needs to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances that were moved into Azure."
     - content: "Verify that monitoring is operational"
       isCorrect: false
-      explanation: "That’s incorrect. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that you moved into Azure in the current Go Live phase, you need to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances you moved into Azure."
+      explanation: "That’s incorrect. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that were moved into Azure in the current Go Live phase, the user needs to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances that were moved into Azure."
     - content: "Reset the host name buffer"
       isCorrect: true
-      explanation: "That's correct. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that you moved into Azure in the current Go Live phase, you need to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances you moved into Azure."
+      explanation: "That's correct. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that were moved into Azure in the current Go Live phase, the user needs to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances that were moved into Azure."

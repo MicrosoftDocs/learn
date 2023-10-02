@@ -1,14 +1,14 @@
-Setting up your environment and deploying the template is the first step in getting hands on with Azure SQL Database for IoT scenarios. For this sample, you'll use resources including Azure SQL Database, Azure Functions, Azure Virtual Machines, and Azure ARM templates.
+Setting up your environment and deploying the template is the first step in getting hands-on with Azure SQL Database for IoT scenarios. For this sample, you'll use resources including Azure SQL Database, Azure Functions, Azure Virtual Machines, and Azure ARM templates.
 
 In this exercise, you'll deploy the main solution and configure your environment.
 
 ## Deploy the Azure Resource Manager (ARM) template
 
-To deploy the template, you'll use Azure Cloud Shell, which is on the right side of this page. Cloud Shell is also available through the Azure portal, and it allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use both the bash and PowerShell interfaces. Throughout the script, you'll be prompted for pieces of information to enable you to connect to the Azure Virtual Machine and Azure SQL Database that you will deploy. 
+To deploy the template, you'll use Azure Cloud Shell, which is on the right side of this page. Cloud Shell is also available through the Azure portal, and it allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use both the bash and PowerShell interfaces. Throughout the script, you'll be prompted for pieces of information to enable you to connect to the Azure Virtual Machine and Azure SQL Database that you will deploy.
 
-These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, region, and the full ssh key. You can copy and paste them into a tool like NotePad, OneNote, or another tool of choice.
+These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, region, and the full ssh key. You can copy and paste them into a tool like Notepad, OneNote, or another tool of choice.
 
-1. In bash on the right-hand side of your screen, enter the following code to generate a public key. This key will enable easy access from the Cloud Shell to your virtual machine.
+1. In the Cloud Shell on the right-hand side of your screen, enter the following code to generate a public key. This key will enable easy access from the Cloud Shell to your virtual machine.
 
     ```bash
     mkdir .ssh
@@ -30,7 +30,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     ```
 
     > [!TIP]
-    > If you are not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
+    > If you're not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
 
 1. In the Azure Cloud Shell on the right-hand side of the screen, enter `pwsh` to switch from bash to PowerShell.
 
@@ -124,8 +124,8 @@ These scripts should take three to five minutes to complete. Be sure to note you
     az vm show --resource-group $resourceGroupName --name $iotSimulator --show-details --query publicIps
     ```
 
-    You will be prompted to provide a location. Depending on resource availability, you may have to try several. You can try `centralus`, `eastasia`, `westeurope`. If they all fail, you can list all the regions to try with `Get-AzLocation | select displayname,location`. 
-        
+    You'll be prompted to provide a location. Depending on resource availability, you may have to try several. You can try `centralus`, `eastasia`, `westeurope`. If they all fail, you can list all the regions to try with `Get-AzLocation | select displayname,location`. 
+
     The script will take 5-10 minutes to complete.
 
     > [!TIP]
@@ -141,20 +141,20 @@ These scripts should take three to five minutes to complete. Be sure to note you
     bash
     ```
 
-1. Update the code below and run the Azure Cloud Shell (you may want to copy to a text file to easily modify). Note you'll need to add your server name and password.
+1. Update the code below and run the Azure Cloud Shell (you might want to copy to a text file to easily modify). Note you'll need to add your server name and password.
 
     ```bash
     sqlcmd -S [server-name].database.windows.net -P [password] -U cloudadmin -d iot-db -i azure-sql-iot/sql_schema/script.sql
     ```
 
-You have now deployed and configured the appropriate schema for the scenario.
+You've now deployed and configured the appropriate schema for the scenario.
 
 > [!TIP]
 > The script may result with `Nonqualified transactions are being rolled back...`. That is OK for the purposes of this exercise.
 
 ## Configure the application settings for the `iot-workload` function
 
-1. In your notes tool of choice document the connection string for your Azure SQL Database. It will be something like `Server=tcp:<your-server-name>.database.windows.net,1433;Database=iot-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
+1. In your notes tool of choice, document the connection string for your Azure SQL Database. It will be something like `Server=tcp:<your-server-name>.database.windows.net,1433;Database=iot-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
 1. Navigate in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) to your resource group for the exercises.
 
@@ -162,13 +162,13 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. On the left-hand menu, under *Settings*, select **Shared access policies**.
 
-1. Click **iothubowner** and copy the *Primary connection string* in your notes tool of choice.
+1. Select **iothubowner** and copy the *Primary connection string* in your notes tool of choice.
 
 1. You'll also need the *Event Hub-comptabile endpoint*.
 
 1. On the left-hand menu, under *Settings*, select **Built-in endpoints**.
 
-1. Copy the *Event Hub-compatible endpoint* in your notes tool of choice. Make sure you label the two connection strings as one is used for the simulator and the other is used for Azure Functions.
+1. Copy the *Event Hub-compatible endpoint* in your notes tool of choice. Make sure you label the two connection strings, because one is used for the simulator and the other is used for Azure Functions.
 
 1. Navigate back to your resource group in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) and select the storage account that starts with **iotstorageaccount** followed by a series of numbers.
 
@@ -185,7 +185,7 @@ You have now deployed and configured the appropriate schema for the scenario.
 1. Select **EventHubConnectionAppSetting** and update it with your *Event Hub-compatible endpoint* for IoT Hub. Select **OK**.
 
     > [!TIP]
-    > To edit a configuration item, you can either click on the name of the configuration or scroll to the right and select the pencil icon.
+    > To edit a configuration item, you can either select the name of the configuration or scroll to the right and select the **pencil** icon.
 
 1. Select **SQLDBConnectionString** and update it with your Azure SQL Database connection string. Select **OK**.
 
@@ -205,7 +205,7 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. In the top-right corner of your browser, select the **Fork** button.
 
-1. Go to your forked repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/azure-sql-iot`.
+1. Go to your forked repository for this module on GitHub (make sure you're signed in). It will be something like `https://github.com/<your-git-username>/azure-sql-iot`.
 
 1. Select **Settings** for the repository.
 
@@ -228,9 +228,9 @@ You have now deployed and configured the appropriate schema for the scenario.
 1. Confirm the action completes successfully (takes about 2-3 minutes) by selecting **Actions** near the top of the window and reviewing the progress and completion.
 
     > [!TIP]
-    > While it is processing, you can continue to the next section.
+    > While the action processes, you can continue to the next section.
 
-1. If you face any errors, confirm you have included the right connection strings in the right places in the previous section of this exercise.
+1. If you face any errors, confirm you've included the right connection strings in the right places in the previous section of this exercise.
 
 1. Once complete, you have deployed the code that configures the function to support the scenario.
 
@@ -244,7 +244,7 @@ You have now deployed and configured the appropriate schema for the scenario.
     ssh cloudadmin@0.0.0.0
     ```
 
-1. Since you'll be using containers to run the simulation, run the following script to install the necessary packages.
+1. Because you'll be using containers to run the simulation, run the following script to install the necessary packages.
 
     ```bash
     sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
@@ -264,13 +264,13 @@ You have now deployed and configured the appropriate schema for the scenario.
     sudo apt install -y docker-ce    
     ```
 
-1. Replace `<IoTHubConnectionString>` with your IoT Hub connection string in the code below. Then, run it in the Azure Cloud Shell to provision the simulated devices.
+1. Replace `<IoTHubConnectionString>` with your IoT Hub connection string in the code below. Then, run the code the Azure Cloud Shell to provision the simulated devices.
 
     ```bash
     sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e DeviceCount=1000 mcr.microsoft.com/oss/azure-samples/azureiot-simulatordeviceprovisioning:latest
     ```
 
-1. Replace `<IoTHubConnectionString>` with your IoT Hub connection string in the code below. Then, run it in the Azure Cloud Shell to start generating messages on the provisioned devices. You should see the results in the window appearing rapidly.
+1. Replace `<IoTHubConnectionString>` with your IoT Hub connection string in the code below. Then, run the code the Azure Cloud Shell to start generating messages on the provisioned devices. You should get the results in the window appearing rapidly.
 
     ```bash
     sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e Template="{ \"deviceId\": \"$.DeviceId\", \"temp\": $.Temp, \"Ticks\": $.Ticks, \"Counter\": $.Counter, \"time\": \"$.Time\", \"engine\": \"$.Engine\" }" -e Variables="[{name: \"Temp\", \"random\": true, \"max\": 90, \"min\": 80}, {\"name\":\"Counter\", \"min\":100}, {name:\"Engine\", values: [\"on\", \"off\"]}]" -e MessageCount=0 -e DeviceCount=1000 -e Interval=100  mcr.microsoft.com/oss/azure-samples/azureiot-telemetrysimulator:latest
@@ -282,21 +282,21 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. Log in with the username **cloudadmin** and the password you set earlier.
 
-1. Run the following query. If you see results, the simulation is working and Azure Functions is inserting the data into your database.
+1. Run the following query. If you get results, the simulation is working and Azure Functions is inserting the data into your database.
 
     ```sql
     SELECT TOP(1000) * FROM dbo.events;
     ```
 
-1. To check the Azure Function App is processing events, in a different window navigate to your Azure Function App in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+1. To check the Azure Function App is processing events, navigate to your Azure Function App in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) in a new browser window.
 
 1. On the left-hand menu, under *Functions* select **Functions**.
 
-1. Select **iot_workload**. If it does not appear, refresh your browser.
+1. Select **iot_workload**. If it doesn't appear, refresh your browser.
 
-1. In the *Overview* tab, you should be able to see a high and varying number of successful execution counts. This information means that the Azure Function App is being triggered by the devices to push data into Azure SQL Database.
+1. In the *Overview* tab, you should find a high and varying number of successful execution counts. This information means that the Azure Function App is being triggered by the devices to push data into Azure SQL Database.
 
 > [!TIP]
-> There is a slight delay in telemetry reporting for Azure Functions. If you don't see any data, wait a few minutes and refresh the page. If you still don't see any requests (or data in Azure SQL Database), you should check the configurations you added for your Azure Function. Most likely, something is wrong with one of your connection strings.
+> There's a slight delay in telemetry reporting for Azure Functions. If you don't have any data, wait a few minutes and refresh the page. If you still don't have any requests (or data in Azure SQL Database), you should check the configurations you added for your Azure Function. Most likely, something is wrong with one of your connection strings.
 
-You have now successfully deployed the template and configured the resources. You are now simulating activity on 1,000 devices and using Azure Functions to ingest the data into Azure SQL Database. Let this continue to run so the simulation continues for the rest of the module.
+You've now successfully deployed the template and configured the resources. You're now simulating activity on 1,000 devices and using Azure Functions to ingest the data into Azure SQL Database. Let this continue to run so the simulation continues for the rest of the module.

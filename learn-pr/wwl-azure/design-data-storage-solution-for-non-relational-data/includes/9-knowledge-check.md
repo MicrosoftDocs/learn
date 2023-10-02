@@ -1,3 +1,5 @@
+
+
 Tailwind Traders wants to reduce storage costs by reducing duplicate content and migrating it to the cloud, when possible. The company is interested in a solution that centralizes maintenance while providing nation-wide access for customers. Customers should be able to browse and purchase items online even an entire Azure region goes offline. Here are some specific requirements:
 
 - **Warranty document retention.** The Compliance and Legal teams require warranty documents be kept for three years. 

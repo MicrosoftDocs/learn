@@ -1,4 +1,5 @@
 
+
 Multi-factor authentication (MFA) adds an extra security layer in the authentication process by requiring more than one method of authentication to detect and validate user identity. Users still require usernames and passwords to sign in to your data and applications, but you can add another access method as a second method of authentication. The multi-factor authentication technology combines something that you know, such as a password or a PIN, with something that you have, such as your phone or a token, and even possibly something that you are (biometric technologies).
 
 You can implement multi-factor authentication in different ways based on users’ demands and the level of extra security that they need. The following are some ways to implement MFA:

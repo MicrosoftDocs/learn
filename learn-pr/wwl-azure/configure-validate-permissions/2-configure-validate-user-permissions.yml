@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-validate-permissions.configure-validate-user-permissions
+title: Configure and validate user permissions
+metadata:
+  title: Configure and validate user permissions
+  description: "Configure and validate user permissions."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-configure-validate-user-permissions.md)]

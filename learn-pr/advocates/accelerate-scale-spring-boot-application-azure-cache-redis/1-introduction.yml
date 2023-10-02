@@ -3,12 +3,12 @@ uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.introducti
 title: Introduction
 metadata:
   title: Introduction
-  description: This unit introduces the Azure services for deploying Java applications.
+  description: Get basic information about Redis and Azure Cache for Redis, and see the learning objectives and prerequisites for this module.
   author: judubois
   ms.author: judubois
   ms.date: 01/20/2021
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03112021
 durationInMinutes: 3

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-azure-cognitive-services
-title: Understand capabilities of Azure Cognitive Services
+title: Understand capabilities of Azure AI Services
 metadata:
-  title: Understand capabilities of Azure Cognitive Services
-  description: "Understand capabilities of Azure Cognitive Services"
-  ms.date: 07/14/2022
+  title: Understand capabilities of Azure AI Services
+  description: "Understand capabilities of Azure AI Services"
+  ms.date: 05/11/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

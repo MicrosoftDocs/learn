@@ -4,11 +4,11 @@ title: Describe Azure DDoS protection
 metadata:
   title: Describe Azure DDoS protection
   description: "Describe Azure DDoS protection"
-  ms.date: 02/09/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe-azure-ddos-protection.md)]

@@ -2,17 +2,16 @@
 uid: learn.azure-data-subject-requests
 metadata:
   title: Responding to Data Subject Requests (DSRs)
-  description: Learners will know, understand, and be able to describe Data Subject Requests (DSRs). They will also know how to manage DSRs on Azure and Microsoft 365.
+  description: Know, understand, and be able to describe Data Subject Requests (DSRs), and learn how to manage DSRs on Azure and Microsoft 365.
   ms.date: 11/13/2020
-  author: micrum
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Responding to Data Subject Requests (DSRs) 
-summary: Learners will know, understand, and be able to describe Data Subject Requests (DSRs). They will also know how to manage DSRs on Azure and Microsoft 365.
+summary: Know, understand, and be able to describe Data Subject Requests (DSRs), and learn how to manage DSRs on Azure and Microsoft 365.
 abstract: |
   By the end of this module, you should know more about:
-  - DSRs
+  - DSRs.
   - How to use a DSR in Azure Active Directory (Azure AD).
   - How to use a DSR for Microsoft accounts.
   - How to use a DSR for Office 365 apps.
@@ -30,7 +29,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- m365-information-protection
 subjects:
 - information-protection-governance
 units:

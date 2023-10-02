@@ -1,4 +1,4 @@
-After an organization builds an MVP, it needs to validate the innovation hypothesis. In this unit, you'll learn how Azure tools can help in this crucial part of the innovation process.
+After an organization builds an MVP, it needs to validate the innovation hypothesis. In this unit, you learn how Azure tools can help in this crucial part of the innovation process.
 
 ## Measuring effectiveness
 
@@ -7,16 +7,16 @@ Measuring whether a hypothesis was right or wrong can be tricky, because multipl
 However, the way in which features are released to application users can help to assess the validity of a hypothesis:
 
 - Controlled deployments with *feature flags*, *feature rings*, and *canary deployments* allow you to release a feature to a limited set of users to prevent disrupting the experience of the whole customer base. Additionally, you can directly compare the performance of the customers with and without the feature to each other.
-- *Portal options* for users to decide if they want to be exposed to new functionality puts the users in control of their own experience. The fact that many users opt for a new feature might already be a confirmation that the previous functionality had room for improvement. If customers that had opted for the new feature go back to the previous experience, that might be an indicator that the deployed MVP is missing the mark.
-- *Customer surveys* are a powerful feedback mechanism if they're implemented correctly. Customers will provide information about their satisfaction if it's simple to give. One-click "traffic light" satisfaction surveys or single questions about new functionality might provide insights to help in evaluating whether the innovation hypothesis was correct. In general, only a few users will answer longer surveys and will take the time to fill them in thoroughly and truthfully.
+- *Portal options* for users to decide if they want to be exposed to new functionality puts the users in control of their own experience. The fact that many users opt for a new feature might already be a confirmation that the previous functionality had room for improvement. If customers that opt for the new feature go back to the previous experience, it might be an indicator that the deployed MVP is missing the mark.
+- *Customer surveys* are a powerful feedback mechanism if they're implemented correctly. Customers provide information about their satisfaction if it's simple to give. One-click "traffic light" satisfaction surveys or single questions about new functionality might provide insights to help in evaluating whether the innovation hypothesis was correct. In general, only a few users answer longer surveys, and take the time to fill them in thoroughly and truthfully.
 
 ## Understanding your application
 
-[Azure Application Insights](/azure/azure-monitor/app/app-insights-overview?azure-portal=true) is an application performance management (APM) platform with a rich set of tools to gather application telemetry for multiple purposes, such as performance monitoring, problem troubleshooting, or understanding how users move through applications. The last item is critical for the innovation lifecycle, because you can use it to validate an innovation hypothesis and to judge whether a certain innovation is improving the customer experience.
+[Azure Application Insights](/azure/azure-monitor/app/app-insights-overview?azure-portal=true) is an application performance management (APM) platform with a rich set of tools to gather application telemetry. You can use these insights for multiple purposes, such as performance monitoring, problem troubleshooting, or understanding how users move through applications. The last item is critical for the innovation lifecycle. You can use it to validate an innovation hypothesis and to judge whether a certain innovation is improving the customer experience.
 
 ### Detect problems before users do
 
-A crucial element that affects the user experience is the performance and availability of an application. If an application is not working correctly and running into errors, or if it's not responsive enough, some users will abandon it out of frustration. Your organization might lose business. Those frustrated users might also damage your organization's reputation if they share their experience on social media.
+A crucial element that affects the user experience is the performance and availability of an application. If an application isn't working correctly and running into errors, or if it's not responsive enough, some users abandon it out of frustration. Your organization might lose business. Those frustrated users might also damage your organization's reputation if they share their experience on social media.
 
 Detecting those problematic situations before they affect users is of the highest importance. To meet that goal, you need to proactively monitor the application and start working on potential problems before they affect the business. For example, you can enable notifications to automatically open incidents so that they're investigated before customers report them.
 
@@ -26,15 +26,15 @@ Notifications typically report that there might be a problem without context abo
 
 ### Monitor user activity
 
-[Usage analysis](/azure/azure-monitor/app/usage-overview?azure-portal=true) in Azure Application Insights can help you evaluate which application areas need to be improved. For example, usage analysis can identify the most popular application features or specific points at which users leave the web portal. You can explore, for example, whether your application works better in certain geographic areas than others, to get valuable information about where the application gaps might be.
+[Usage analysis](/azure/azure-monitor/app/usage-overview?azure-portal=true) in Azure Application Insights can help you evaluate which application areas need improvement. For example, usage analysis can identify the most popular application features or specific points at which users leave the web portal. You can explore, for example, whether your application works better in certain geographic areas than others, to get valuable information about where the application gaps might be.
 
-After you formulate a hypothesis with the data provided by Azure Application Insights, you can analyze telemetry to measure whether the situation is now better or worse. You can embed custom business events in the application so that telemetry data contains additional information that'll help in the measure process.
+After you formulate a hypothesis with the data provided by Azure Application Insights, you can analyze telemetry to measure whether the situation is now better or worse. You can embed custom business events in the application so that telemetry data contains additional information that helps in the measure process.
 
-[Funnels](/azure/azure-monitor/app/usage-funnels?azure-portal=true) can be an insightful tool. With funnels, you can predefine expected *flows* that users will follow when they use the application. This allows you to monitor which patterns users follow. You can then identify problems in the applications if users are behaving in unexpected ways.
+[Funnels](/azure/azure-monitor/app/usage-funnels?azure-portal=true) can be an insightful tool. With funnels, you can predefine the *flows* that you expect users to follow when they use the application. Then you can monitor which patterns users follow, and identify problems in the applications if users behave in unexpected ways.
 
 ### Retain users
 
-The Application Insights [retention tool](/azure/azure-monitor/app/usage-retention#the-retention-tool?azure-portal=true) offers specific functionality around user churn. Combined with business events, it contains valuable learning data. For example, understanding which actions customers who left the application unexpectedly took will allow you to formulate hypotheses with maximum business impact.
+The Application Insights [retention tool](/azure/azure-monitor/app/usage-retention#the-retention-tool?azure-portal=true) offers specific functionality around user churn. It contains valuable learning data when combined with business events. For example, understanding which actions that customers who left the application unexpectedly took, allows you to formulate hypotheses with maximum business impact.
 
 For example, if most users who abandoned your website did so from the payment method page, you'd suspect a business problem there. Maybe the payment options are insufficient or not clearly displayed, or another problem is preventing users from moving forward in their shopping process.
 

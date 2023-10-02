@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.explore-fundamentals-kql.query-basics
+title: Query language basics
+metadata:
+  title: learning-content
+  description: "Explore the basics of a query language, KQL specifically, and begin to learn how, where, and when you might want to use it."
+  ms.date: 3/26/2023
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-query-basics.md)]

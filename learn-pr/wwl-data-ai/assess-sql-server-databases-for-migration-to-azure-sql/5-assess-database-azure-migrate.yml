@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.assess-database-azure-migrate
+title: Assess a database with Azure Migrate
+metadata:
+  title: Assess a database with Azure Migrate
+  description: "Understand how Azure Migrate assesses on-premises workloads, provides insights for migration planning, and identifies dependencies between components."
+  ms.date: 05/23/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-assess-database-azure-migrate.md)]

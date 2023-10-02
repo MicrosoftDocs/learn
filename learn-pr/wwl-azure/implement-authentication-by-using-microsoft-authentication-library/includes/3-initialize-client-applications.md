@@ -5,9 +5,9 @@ Before initializing an application, you first need to register it so that your a
 
 * The client ID (a string representing a GUID)
 * The identity provider URL (named the instance) and the sign-in audience for your application. These two parameters are collectively known as the authority.
-* The tenant ID if you are writing a line of business application solely for your organization (also named single-tenant application).
+* The tenant ID if you're writing a line of business application solely for your organization (also named single-tenant application).
 * The application secret (client secret string) or certificate (of type X509Certificate2) if it's a confidential client app.
-* For web apps, and sometimes for public client apps (in particular when your app needs to use a broker), you'll have also set the redirectUri where the identity provider will contact back your application with the security tokens.
+* For web apps, and sometimes for public client apps (in particular when your app needs to use a broker), you have to also set the `redirectUri` where the identity provider connects back to your application with the security tokens.
 
 ## Initializing public and confidential client applications from code
 
@@ -29,7 +29,7 @@ IConfidentialClientApplication app = ConfidentialClientApplicationBuilder.Create
 
 ## Builder modifiers
 
-In the code snippets using application builders, a number of `.With` methods can be applied as modifiers (for example, `.WithAuthority` and `.WithRedirectUri`).
+In the code snippets using application builders, `.With` methods can be applied as modifiers (for example, `.WithAuthority` and `.WithRedirectUri`).
 
 * `.WithAuthority` modifier: The `.WithAuthority` modifier sets the application default authority to an Azure Active Directory authority, with the possibility of choosing the Azure Cloud, the audience, the tenant (tenant ID or domain name), or providing directly the authority URI.
 
@@ -39,7 +39,7 @@ In the code snippets using application builders, a number of `.With` methods can
         .Build();
     ```
 
-* `.WithRedirectUri` modifier: The `.WithRedirectUri` modifier overrides the default redirect URI. In the case of public client applications, this will be useful for scenarios which require a broker.
+* `.WithRedirectUri` modifier: The `.WithRedirectUri` modifier overrides the default redirect URI. 
 
     ```csharp
     var clientApp = PublicClientApplicationBuilder.Create(client_id)
@@ -57,10 +57,10 @@ The table below lists some of the modifiers you can set on a public, or confiden
 | `.WithAuthority()` | Sets the application default authority to an Azure Active Directory authority, with the possibility of choosing the Azure Cloud, the audience, the tenant (tenant ID or domain name), or providing directly the authority URI. |
 | `.WithTenantId(string tenantId)` | Overrides the tenant ID, or the tenant description. |
 | `.WithClientId(string)` | Overrides the client ID. |
-| `.WithRedirectUri(string redirectUri)` | Overrides the default redirect URI. In the case of public client applications, this will be useful for scenarios requiring a broker. |
+| `.WithRedirectUri(string redirectUri)` | Overrides the default redirect URI. This is useful for scenarios requiring a broker. |
 | `.WithComponent(string)` | Sets the name of the library using MSAL.NET (for telemetry reasons). |
-| `.WithDebugLoggingCallback()` | If called, the application will call `Debug.Write` simply enabling debugging traces. |
-| `.WithLogging()` | If called, the application will call a callback with debugging traces. |
+| `.WithDebugLoggingCallback()` | If called, the application calls `Debug.Write` simply enabling debugging traces. |
+| `.WithLogging()` | If called, the application calls a callback with debugging traces. |
 | `.WithTelemetry(TelemetryCallback telemetryCallback)` | Sets the delegate used to send telemetry. |
 
 

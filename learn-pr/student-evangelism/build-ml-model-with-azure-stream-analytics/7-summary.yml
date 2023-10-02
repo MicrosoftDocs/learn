@@ -12,4 +12,4 @@ metadata:
 title: Summary
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!INCLUDE[](includes/7-summary.md)]

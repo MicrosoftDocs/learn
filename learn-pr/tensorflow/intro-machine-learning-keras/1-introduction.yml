@@ -3,12 +3,11 @@ uid: learn.tensorflow.intro-machine-learning-keras.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
+  description: Learn about Keras, a high-level API for the TensorFlow machine learning framework. 
   author: bstollnitz
   ms.author: bstollnitz
-  ms.date: 07/07/2021
+  ms.date: 07/17/2023
   ms.topic: interactive-tutorial
-  ms.prod: learning-tensorflow
   ms.product: learning-tensorflow
   ms.contributors:
   - bstollnitz-08202021

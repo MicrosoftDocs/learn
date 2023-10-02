@@ -33,7 +33,7 @@ Let's take a look at the [Ethereum testnets](https://ethereum.org/en/developers/
 
 ### Ropsten
 
-[Ropsten](https://ropsten.etherscan.io/?azure-portal=true) is a PoW consensus protocol. It's closest to the mainnet in functionality. Ropsten is named after a Swedish subway station and has been around since 2016. Some say it has the best reproduction of the conditions on the mainnet. 
+Ropsten is a PoW consensus protocol. It's closest to the mainnet in functionality. Ropsten is named after a Swedish subway station and has been around since 2016. Some say it has the best reproduction of the conditions on the mainnet. 
 
 More details:
 - Supported clients: 
@@ -41,8 +41,6 @@ More details:
   - [OpenEthereum](https://openethereum.github.io/?azure-portal=true)
 - Block time: 30 seconds or less
 - Ropsten-specific links:
-  - [Faucet](https://faucet.ropsten.be/?azure-portal=true)
-  - [Explorer](https://ropsten.etherscan.io/?azure-portal=true)
   - [GitHub](https://github.com/ethereum/ropsten/?azure-portal=true)
     
 ### Kovan
@@ -53,21 +51,8 @@ More details:
 - Supported client: [OpenEthereum](https://openethereum.github.io/?azure-portal=true)
 - Block time: 4 seconds
 - Kovan-specific links:
-  - [Explorer](https://kovan.etherscan.io/?azure-portal=true)
   - [GitHub](https://github.com/kovan-testnet/proposal/?azure-portal=true)
   - [Website](https://kovan-testnet.github.io/website/?azure-portal=true)
-
-### Rinkeby
-
-[Rinkeby](https://www.rinkeby.io/?azure-portal=true) is a PoA testnet started by the Ethereum team in April 2017. It's named after a metro station in Stockholm.
-
-More details:
-- Supported client: [Geth](https://geth.ethereum.org/?azure-portal=true)
-- Block time: 15 seconds
-- Rinkeby-specific links:
-  - [Explorer](https://rinkeby.etherscan.io/?azure-portal=true)
-  - [GitHub](https://github.com/ethereum/EIPs/issues/225/?azure-portal=true)
-  - [Website](https://www.rinkeby.io/?azure-portal=true)
 
 ### Goerli
 
@@ -80,7 +65,7 @@ More details:
     - [Nethermind](https://nethermind.io/?azure-portal=true)
 - Block time: 15 seconds on average
 - Goerli-specific links:
-  - [Faucet](https://faucet.goerli.mudit.blog/?azure-portal=true)
+  - [Faucet](https://goerlifaucet.com/)
   - [Explorer](https://goerli.etherscan.io/?azure-portal=true)
   - [GitHub](https://github.com/goerli/testnet/?azure-portal=true)
   - [Website](http://www.goerli.net/?azure-portal=true)

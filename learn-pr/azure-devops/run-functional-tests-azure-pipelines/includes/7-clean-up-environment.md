@@ -1,4 +1,4 @@
-You're done with the tasks for this module. Here you'll clean up your Azure resources, move the work item to the **Done** state in Azure Boards, and clean up your Azure DevOps environment.
+You're done with the tasks for this module. Here, you'll clean up your Azure resources, move the work item to the **Done** state in Azure Boards, and clean up your Azure DevOps environment.
 
 > [!IMPORTANT]
 > This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. It also helps ensure that you're not charged for Azure resources after you complete this module.
@@ -27,11 +27,11 @@ To clean up your resource group:
     az group list --output table
     ```
 
-    You see that the resource group **tailspin-space-game-rg** no longer exists.
+    You find that the resource group **tailspin-space-game-rg** no longer exists.
 
 ## Move the work item to Done
 
-Here you'll finish the work item that you assigned to yourself earlier in this module. You'll move **Automate quality tests** to the **Done** column.
+Here, you'll finish the work item that you assigned to yourself earlier in this module. You'll move **Automate quality tests** to the **Done** column.
 
 In practice, *done* often means putting working software into the hands of your users. For learning purposes, here you'll mark this work as complete because you set up working UI tests in your pipeline.
 
@@ -48,7 +48,7 @@ To complete the work item:
 
 Each module in this learning path provides a template. You can run the template to create a clean environment for the duration of the module.
 
-Running multiple templates gives you multiple Azure Pipelines projects, each pointing to the same GitHub repository. This setup can trigger multiple pipelines to run each time you push a change to your GitHub repository. These runs can consume free build minutes on our hosted agents. So it's important to disable or delete your pipeline before you continue to the next module.
+Running multiple templates gives you multiple Azure Pipelines projects, each pointing to the same GitHub repository. This setup can trigger multiple pipelines to run each time you push a change to your GitHub repository. These runs can consume free build minutes on our hosted agents, so it's important to disable or delete your pipeline before you continue to the next module.
 
 Choose one of the following options.
 
@@ -62,7 +62,7 @@ To disable the pipeline:
 1. From the drop-down menu, select **Settings**:
 
     :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
-1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
+1. Under **Processing of new run requests**, select **Disabled**, then select **Save**.
 
     Your pipeline will no longer process build requests.
 
@@ -77,6 +77,6 @@ To delete the project:
 1. At the bottom of the **Project details** area, select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
-1. In the window that appears, enter the project name, and then select **Delete** again.
+1. In the window that appears, enter the project name, then select **Delete** again.
 
     Your project is now deleted.
