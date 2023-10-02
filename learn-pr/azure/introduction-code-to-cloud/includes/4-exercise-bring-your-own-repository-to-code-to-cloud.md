@@ -17,7 +17,7 @@ c. Click ‘Create repository’ to create a copy of the repository in your GitH
 
 ### Create a Code to Cloud instance
 
-1. Now, sign in to the Azure Portal by navigating to <https://portal.azure.com> and enter your credentials.
+1. Now, sign in to the Azure portal by navigating to <https://portal.azure.com> and enter your credentials.
 2. Enter App Spaces in the search box on the Navigation bar, select **App Spaces.**
 3. Click on ‘Start deploying’.
 
@@ -108,6 +108,6 @@ To view your deployment workflow, click on Deployment, to see the Azure Static W
 :::image type="content" source="../media/4-view-deployment.jpg" alt-text="Screenshot showing a view deployment workflow on Azure.":::
 Clicking the workflow file directs you to GitHub Actions and you can further inspect the workflow.
 
-:::image type="content" source="../media/4-view-deployment-github.png" alt-text="Screenshot showing a view deployment workflow on Github.":::
+:::image type="content" source="../media/4-view-deployment-github.png" alt-text="Screenshot showing a view deployment workflow on GitHub.":::
 
 Congratulations, you’ve now deployed your own GitHub repository to Code to Cloud. Now, let’s take a deeper look at how to manage your created resources.

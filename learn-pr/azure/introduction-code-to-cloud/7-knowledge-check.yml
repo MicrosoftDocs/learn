@@ -45,7 +45,7 @@ quiz:
     - content: "Click on the workflow file in GitHub Actions"
       isCorrect: false
       explanation: "Incorrect"
-    - content: "Click on the workflow file in the Azure Portal"
+    - content: "Click on the workflow file in the Azure portal"
       isCorrect: false
       explanation: "Incorrect"
     - content: "Both Option 2 and 3"
