@@ -1,10 +1,10 @@
-Before you begin deploying anything or changing the company's infrastructure, it's essential that you understand the concepts behind what you're planning to build.
+Before you start to deploy or change the company's infrastructure, it's essential that you understand the concepts behind what you plan to build.
 
-Let's explore some of the concepts behind CI and CD. In this unit, we learn what a pipeline is and how to apply CI and CD to GitHub Actions.
+Let's explore the concepts behind CI and CD. In this unit, we learn what a pipeline is and how to apply CI and CD to GitHub Actions.
 
 ## What are CI and CD?
 
-CI and CD are operating practices that can help make developer teams more productive by introducing continuous automation and monitoring into all the phases of software development, testing, and deployment. CI and CD aim to reduce problems that result when you integrate new code into an existing code base.
+CI and CD are operating practices that help make developer teams more productive by introducing continuous automation and monitoring into all the phases of software development, testing, and deployment. CI and CD aim to reduce problems that result when you integrate new code into an existing code base.
 
 ### Continuous integration (CI)
 
@@ -50,6 +50,6 @@ In the next units, you'll define a deployment pipeline to implement *continuous 
 
 Before technological advancements gave us tools that can implement CI and CD, the entire develop-test-deploy-test process was done "by hand." Automated test suites were available, but they had to be run manually or at scheduled times.
 
-Before CI, one of the most significant problems software developers faced, and one that led to the development of CI, was merge day. Because most software development teams consist of several developers working on the same code in different branches, merge day was the day when all code changes were integrated back into the main branch. 
+One of the most significant problems software developers face, which led to the development of CI is merge day. Merge day happens because most software development teams work on the same code in different branches with minimal tests. On merge day, all code changes were integrated back into the main branch.
 
-The entire day would be dedicated to solving integration issues as the team members' branches merged and intersected in the main branch.
+As a result, an entire day would be dedicated to solving integration issues as the team members' branches merged and intersected in the main branch.
