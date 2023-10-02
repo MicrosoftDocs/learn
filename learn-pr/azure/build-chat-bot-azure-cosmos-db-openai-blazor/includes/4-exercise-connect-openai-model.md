@@ -8,14 +8,14 @@ There are a few key requirements to tackle in this exercise:
 
 ## Import the .NET SDK
 
-The [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI/1.0.0-beta.5) package on NuGet provides a typed SDK to access various model deployments from your account endpoint.
+The [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) package on NuGet provides a typed SDK to access various model deployments from your account endpoint.
 
 1. Open a new terminal.
 
-1. Use [`dotnet add package`](/dotnet/core/tools/dotnet-add-package) to import the `Azure.AI.OpenAI` package from NuGet specifying version `1.0.0-beta.5`.
+1. Use [`dotnet add package`](/dotnet/core/tools/dotnet-add-package) to import the `Azure.AI.OpenAI` package from NuGet specifying a pre-release version.
 
     ```bash
-    dotnet add package Azure.AI.OpenAI --version 1.0.0-beta.5
+    dotnet add package Azure.AI.OpenAI --prerelease
     ```
 
 1. Build the .NET project again.

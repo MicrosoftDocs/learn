@@ -8,14 +8,14 @@ There are a few key requirements to tackle in this exercise:
 
 ## Import the .NET SDK
 
-The [`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.34.0) NuGet package is a typed library that simplifies the process of accessing Azure Cosmos DB for NoSQL from a .NET application.
+The [`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) NuGet package is a typed library that simplifies the process of accessing Azure Cosmos DB for NoSQL from a .NET application.
 
 1. Open a new terminal.
 
-1. Import version `3.34.0` of the `Microsoft.Azure.Cosmos` package from NuGet with `dotnet add package`.
+1. Import the `Microsoft.Azure.Cosmos` package from NuGet with `dotnet add package`.
 
     ```bash
-    dotnet add package Microsoft.Azure.Cosmos --version 3.34.0
+    dotnet add package Microsoft.Azure.Cosmos
     ```
 
 1. Build the .NET project one more time.
