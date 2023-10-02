@@ -4,7 +4,7 @@ title: Configure AKS burst scaling to Azure Container Instances
 metadata:
   title: Configure AKS burst scaling to Azure Container Instances
   description: "Configure AKS burst scaling to Azure Container Instances"
-  ms.date: 03/06/2023
+  ms.date: 07/13/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

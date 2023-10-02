@@ -4,13 +4,12 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 03/06/2023
+  ms.date: 08/16/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: artificial-intelligence
+  ms.subservice: language-understanding
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

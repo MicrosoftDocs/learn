@@ -26,12 +26,65 @@ Configuring a system interactively is a good way to get started because it helps
 
 In this section, you create a VM that's running Ubuntu 20.04, which will serve as your build agent. The VM isn't yet set up to be a build agent or have any of the tools that are required to build the _Space Game_ web application. You'll set that up shortly.
 
+### Bring up Cloud Shell through the Azure portal
+
+> [!IMPORTANT]
+> To complete the exercises in this module, you need your own Azure subscription.
+
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in.
+1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
+
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
+
+    > [!NOTE]
+    > Cloud Shell requires an Azure storage resource to persist any files that you create in the Cloud Shell. When you first open the Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
+
+### Select an Azure region
+
+A _region_ is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an Azure VM, is assigned a region.
+
+To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
+
+1. From the Cloud Shell, to list the regions that are available from your Azure subscription, run the following `az account list-locations` command.
+
+    ```azurecli
+    az account list-locations \
+      --query "[].{Name: name, DisplayName: displayName}" \
+      --output table
+    ```
+
+1. From the `Name` column in the output, select a region that's close to you. For example, choose `eastasia` or `westus2`.
+
+1. Run `az configure` to set your default region. Replace `<REGION>` with the name of the region you selected.
+
+    ```azurecli
+    az configure --defaults location=<REGION>
+    ```
+
+    This example sets `westus2` as the default region:
+
+    ```azurecli
+    az configure --defaults location=westus2
+    ```
+
+### Create a resource group
+
+Create a resource group to contain the resources used in this training module.
+
+- To create a resource group that's named *tailspin-space-game-rg*, run the following `az group create` command.
+
+    ```azurecli
+    az group create --name tailspin-space-game-rg
+    ```
+
+### Create the VM
+
 To create your VM, in Cloud Shell (at right), run the following `az vm create` command:
 
 ```azurecli
 az vm create \
     --name MyLinuxAgent \
-    --resource-group <rgn>[Resource Group Name]</rgn> \
+    --resource-group tailspin-space-game-rg \
     --image canonical:0001-com-ubuntu-server-focal:20_04-lts:latest \
     --size Standard_DS2_v2 \
     --admin-username azureuser \
@@ -42,10 +95,7 @@ Your VM will take a few minutes to come up.
 
 [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size that's provided by Microsoft-hosted agents. In practice, you can choose a size that provides more computing power or additional capabilities, such as graphics processing.
 
-The `--resource-group` argument specifies the _resource group_ that holds all the things that we need to create. A resource group enables you to administer all the VMs, disks, network interfaces, and other elements that make up our solution as a unit. Normally, you would create your own resource group before you create Azure resources. Because you're in the free Azure sandbox environment, you can skip this step. Instead, you use the pre-created resource group <rgn>[Resource Group Name]</rgn>.
-
-> [!IMPORTANT]
-> The Azure sandbox gives you temporary access to Azure resources. When your session expires, the VM you create here will no longer be accessible to you as a build agent. In practice, you would set up a build agent by using your own Azure subscription or a system that's running in your datacenter.
+The `--resource-group` argument specifies the _resource group_ that holds all the things that we need to create. A resource group enables you to administer all the VMs, disks, network interfaces, and other elements that make up our solution as a unit.
 
 ## Create the agent pool
 
@@ -101,7 +151,7 @@ The ability to connect to your build agent enables you to configure it with the 
     ```azurecli
     IPADDRESS=$(az vm show \
       --name MyLinuxAgent \
-      --resource-group <rgn>[Resource Group Name]</rgn> \
+      --resource-group tailspin-space-game-rg \
       --show-details \
       --query [publicIps] \
       --output tsv)

@@ -1,4 +1,4 @@
-From the previous unit, recall that you need to explore Azure native monitoring tools for your company. To further your knowledge, you'll need to know how to provision a Log Analytics workspace with the right permissions model. Then you'll configure Azure Monitor VM Insights to complete the process.
+From the previous unit, recall that you need to explore Azure native monitoring tools for your company. To further your knowledge, you'll need to know how to provision a Log Analytics workspace with the right permissions model. Then, you'll configure Azure Monitor VM Insights to complete the process.
 
 In this unit, you'll:
 
@@ -8,11 +8,13 @@ In this unit, you'll:
 
 ## Create and configure a Log Analytics workspace
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select **Log Analytics Workspace**.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 
-1. Select **Create**.
+1. In the Search bar, search for and select **Log Analytics Workspaces**.
 
-1. Enter the following values to build the Log Analytics workspace. For the Log Analytics workspace name, we suggest that you use your initials and numbers. For this module, we will use the name *xxxx-log-analytics*.
+1. Select the **Create** button in the toolbar.
+
+1. Enter the following values to build the Log Analytics workspace. For the Log Analytics workspace name, we suggest that you use your initials and numbers. For this module, we'll use the name *xxxx-log-analytics*.
 
     :::image type="content" source="../media/3-create-log-analytics-workspace.png" alt-text="Screenshot of declaring the Log Analytics resource name, placing everything in the Concierge Subscription for Learn, and selecting Review + Create.":::
 
@@ -23,13 +25,13 @@ In this unit, you'll:
     | Name | xxxx-log-analytics |
     | Region | Select the region closest to you.
 
-1. Select **Review + Create** > **Create**.
+1. Select **Review + Create**, then select **Create**.
 
 1. After the resource deploys, select **Go to resource**.
 
-1. In the left menu, scroll down to **General** and select **Properties**.
+1. In the left menu, select **Properties** under **Settings**.
 
-1. Look for the access control mode, and select **Use resource or workspace permissions**. This setting changes the access mode to use the resource-context.
+1. Look for the access control mode and ensure it's set to **Use resource or workspace permissions**. This setting changes the access mode to use the resource-context.
 
     :::image type="content" source="../media/3-check-log-analytics-resource-context.png" alt-text="Screenshot of changing access control mode for Log Analytics workspace.":::
 
@@ -67,7 +69,7 @@ In this unit, you'll:
 
 1. Select **SampleVM1**.
 
-1. In the left menu under **Monitoring**, select **Insights** > **Enable**.
+1. In the left menu under **Monitoring**, select **Insights**, then select the **Enable** button.
 
 1. Select the radio button for **Log Analytics agent**, then select the Log Analytics workspace you created in the **Log Analytics workspaces** drop-down.
 
@@ -81,7 +83,7 @@ In this unit, you'll:
 
 1. In the left menu under **Monitoring** > **Insights**, select **Refresh** until you get results.
 
-1. Review the map, which displays dependencies like processes running, ports open, connection details, health of the virtual machine, machine properties, and Azure virtual machine properties.
+1. Select the **Map** tab to review the map, which displays dependencies like processes running, ports open, connection details, health of the virtual machine, machine properties, and Azure virtual machine properties.
 
     :::image type="content" source="../media/3-azure-monitor-vms-map.png" alt-text="Screenshot of Azure Monitor map, showcasing dependencies and information about virtual machine." lightbox="../media/3-azure-monitor-vms-map.png":::
 

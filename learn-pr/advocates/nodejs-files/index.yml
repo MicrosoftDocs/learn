@@ -2,15 +2,17 @@
 uid: learn.azure.nodejs-files
 metadata:
   title: Work with files and directories in a Node.js app using JavaScript
-  description: Build an app that manipulates files and directories with Node.js using JavaScript.
+  description: Build an app that manipulates files and directories with Node.js using JavaScript CommonJS.
   ms.date: 03/22/2023
   author: burkeholland
   ms.author: buhollan
   ms.topic: interactive-tutorial
   ms.custom: team=cloud_advocates
   ms.contributors: buhollan-09032021
+  ms.devlang: nodejs, javascript
+  devlang: nodejs, javascript  
 title: Work with files and directories in a Node.js app
-summary: Build an app that manipulates files and directories with Node.js.
+summary: Build an app that manipulates files and directories with Node.js. This module uses JavaScript CommonJS in the Node.js runtime.
 abstract: |
   By the end of this module, you will be able to:
   

@@ -1,6 +1,3 @@
-
-
-
 Azure Active Directory enables single sign-on (SSO) to devices, applications, and services from anywhere. To support SSO, IT admins must ensure corporate assets are protected, and devices meet standards for security and compliance.
 
 :::image type="content" source="../media/azure-joined-devices-27a1fc5f.png" alt-text="Diagram that shows a device connecting to Azure AD. Azure AD is shown connecting with on-premises AD." border="false":::
@@ -33,4 +30,4 @@ Your organization is interested in using joined devices in their management stra
 
 - **Consider combining registration with other solutions**. Combine registration with a mobile device management (MDM) solution like Microsoft Intune, to provide other device attributes in Azure AD. You can create conditional access rules that enforce access from devices to meet organization standards for security and compliance.
 
-- **Consider other implementation scenarios**. Although AD Join is intended for organizations that don't have an on-premises Windows Server Active Directory infrastructure, it can be used for other scenarios like branch offices.
+- **Consider other implementation scenarios**. Although AD Join is intended for organizations that have an on-premises Windows Server Active Directory infrastructure, it can be used for other scenarios like branch offices.

@@ -1,5 +1,3 @@
-
-
 You can deploy only known devices by using Windows Autopilot. When you purchase new devices, the hardware vendor can upload device-specific information on your behalf. If you want to use Windows Autopilot to deploy devices that your company already owns, you can transfer device-specific information to a comma-separated value (CSV) file by running a Windows PowerShell script and then uploading the CSV file to Microsoft Intune or Microsoft Store for Business. You can manage Windows Autopilot by using either Microsoft Store for Business or Microsoft Intune admin center.
 
 Before you can start using Windows Autopilot for Windows 10 deployment, you must meet the following prerequisites:

@@ -1,4 +1,5 @@
 
+
 Azure Storage always stores multiple copies of your Tailwind Traders data. This redundancy ensures the data is protected from planned and unplanned events. These events can include transient hardware failures, network or power outages, and massive natural disasters. [Storage redundancy](/azure/storage/common/storage-redundancy?azure-portal=true) ensures your storage account meets its availability and durability targets.
 
 ### Things to know about data redundancy

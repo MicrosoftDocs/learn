@@ -27,7 +27,7 @@ levels:
 roles:
 - higher-ed-educator
 products:
-- azure-security-center
+- defender-for-cloud
 - dynamics-365
 - dynamics-customer-service
 units:

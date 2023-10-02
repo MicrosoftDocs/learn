@@ -3,10 +3,11 @@ uid: learn.wwl.explore-infrastructure-as-code-configuration-management
 metadata:
   title: Explore infrastructure as code and configuration management
   description: "Explore infrastructure as code and configuration management"
-  ms.date: 06/21/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
 title: Explore infrastructure as code and configuration management
 summary: This module describes key concepts of infrastructure as code and environment deployment creation and configuration. Also, understand the imperative, declarative, and idempotent configuration and how it applies to your company.
 abstract: |
@@ -17,7 +18,7 @@ abstract: |
   - Explain idempotent configuration
 prerequisites: |
   None
-iconUrl: /learn/achievements/1-explore-infrastructure-as-code-and-configuration-management.svg
+iconUrl: /training/achievements/1-explore-infrastructure-as-code-and-configuration-management.svg
 levels:
 - advanced
 roles:

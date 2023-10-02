@@ -1,5 +1,7 @@
 In this exercise, you'll learn how you can enable and disable change tracking and obtain tracked changes.
 
+To complete the steps in this exercise, you need the database you created from the sandbox environment in the [first exercise](/training/modules/azure-sql-replication/3-exercise-track-data-changes-with-cdc) and [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?azure-portal=true) to connect to your database and complete these exercises. 
+
 ### Enabling change tracking on your database
 
 Enable change tracking on your database by running the following `ALTER DATABASE` query:
@@ -96,12 +98,24 @@ You can use this function to obtain the minimum valid version that a client can 
 The following example shows how to verify the validity of the value of `last_synchronization_version` for each table:
 
 ```sql
--- Check individual table.
-IF (@last_synchronization_version < CHANGE_TRACKING_MIN_VALID_VERSION(OBJECT_ID('SalesLT.Product')))  
+-- Assume that the last synchronization version is stored in a variable called @last_sync_version
+DECLARE @last_sync_version bigint = 12345;
+ 
+-- Get the minimum valid version for the SalesLT.Product table
+DECLARE @min_valid_version bigint = CHANGE_TRACKING_MIN_VALID_VERSION(OBJECT_ID('SalesLT.Product'));
+ 
+-- Check if the last synchronization version is less than the minimum valid version
+IF (@last_sync_version < @min_valid_version)
 BEGIN
-  -- Handle invalid version and do not enumerate changes.
-  -- Client must be reinitialized.
+    -- The last synchronization version is not valid, so the client needs to reinitialize
+    PRINT 'Last synchronization version is not valid. Client needs to reinitialize.';
 END
+ELSE
+BEGIN
+    -- The last synchronization version is valid, so the client can retrieve changes using CHANGETABLE()
+    PRINT 'Last synchronization version is valid. Client can retrieve changes using CHANGETABLE().';
+END
+
 ```
 
 ### Disabling change tracking on your database & tables

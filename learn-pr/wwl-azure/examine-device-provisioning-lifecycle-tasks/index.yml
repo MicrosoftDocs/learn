@@ -26,7 +26,6 @@ roles:
 - developer
 products:
 - azure
-- azure-iot-dps
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal

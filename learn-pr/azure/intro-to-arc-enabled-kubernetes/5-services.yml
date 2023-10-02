@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-enabled-kubernetes.services
+metadata:
+  title: Deploy services to Azure Arc-enabled Kubernetes clusters
+  description: Learn about the types of services you can deploy to Arc-enabled Kubernetes clusters and the process for doing so.
+  ms.date: 08/07/2023
+  author: JnHs
+  ms.author: jenhayes
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.custom:
+  - e2e-hybrid
+  - event-tier1-build-2022
+title: Deploy services to Azure Arc-enabled Kubernetes clusters
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-services.md)]

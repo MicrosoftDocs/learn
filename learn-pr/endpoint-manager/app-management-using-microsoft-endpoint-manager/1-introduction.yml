@@ -9,6 +9,6 @@ metadata:
   ms.author: erikre
   ms.topic: interactive-tutorial
   ms.prod: learning-endpoint-manager
-durationInMinutes: 16
+durationInMinutes: 25
 content: |
   [!include[](includes/1-introduction.md)]

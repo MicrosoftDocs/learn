@@ -4,7 +4,7 @@ In this unit, you'll gain a better understanding of the various client options. 
 
 ## Network clients
 
-In the traditional sense, a network client is a lightweight computer or device that can't run programs on its own. This type of client is typically used to access and interact with a mainframe computer. As technology has advanced, the client has transformed from a simple terminal, and can now represent any hardware or software system that interacts with services made available on a server. This server is located elsewhere and accessed through a network.
+In the traditional sense, a network client is a lightweight computer or device that can't run programs on its own. This type of client is typically used to access and interact with a mainframe computer. As technology has advanced, the client has transformed from a simple terminal and can now represent any hardware or software system that interacts with services made available on a server. This server is located elsewhere and accessed through a network.
 
 A client is part of the client-server model that's in use today.
 
@@ -18,9 +18,9 @@ A client is part of the client-server model that's in use today.
 
 Three types of clients are typically used in a client-server configuration:
 
-- **Thick**. This type of client is the most common in today's network environments. A thick client is sometimes known as a workstation, and can process and store data locally without using a server. The client's interaction with a server is minimal, and might only be to store data on a shared network drive.
-- **Thin**. Historically, a thin client was a terminal. A thin client can't process or store data locally, and relies totally on the server to provide computational power and storage. Today, thin clients are represented by web applications that request and display information from servers regardless of the device on which they're running.
-- **Hybrid**. This client combines the best of both thick and thin clients. A hybrid client can do limited local data processing, but has no local storage capability. An example of such a client is a device that renders content and stores the results on the server, like in automated rating systems.
+- **Thick**: This type of client is the most common in today's network environments. A thick client is sometimes known as a workstation, and can process and store data locally without using a server. The client's interaction with a server is minimal, and might only be to store data on a shared network drive.
+- **Thin**: Historically, a thin client was a terminal. A thin client can't process or store data locally, and relies totally on the server to provide computational power and storage. Today, thin clients are represented by web applications that request and display information from servers regardless of the device on which they're running.
+- **Hybrid**: This client combines the best of both thick and thin clients. A hybrid client can do limited local data processing, but has no local storage capability. An example of such a client is a device that renders content and stores the results on the server, like in automated rating systems.
 
 ## Servers
 
@@ -32,9 +32,9 @@ Servers and server software expose various services and functions to network cli
 
 There are a few client-server models. Each is dependent on how the client and server software communicates and how the server shares data and resources with clients:
 
-- **Request-response**. In this model, the client sends a request to the server. The server carries out an activity and sends back a response. The response is either the result of a request or an acknowledgment.
-- **Peer-to-peer (P2P)**. In this model, every network device attached to the network is both a client and a server. Each client can request services (for example, files) from any other device on the network and vice versa. P2P is an unstructured network suited for ad-hoc usage.
-- **Publish-subscribe**. This model is a messaging pattern, where clients subscribe to a service on the server. When a server receives a new message, it sends a response to each client that has subscribed. An RSS feed is a typical publish-subscribe type of client-server, where the user subscribes to the RSS feed and is automatically notified when new items appear.
+- **Request-response**: In this model, the client sends a request to the server. The server carries out an activity and sends back a response. The response is either the result of a request or an acknowledgment.
+- **Peer-to-peer (P2P)**: In this model, every network device attached to the network is both a client and a server. Each client can request services (for example, files) from any other device on the network and vice versa. P2P is an unstructured network suited for ad-hoc usage.
+- **Publish-subscribe**: This model is a messaging pattern, where clients subscribe to a service on the server. When a server receives a new message, it sends a response to each client that has subscribed. An RSS feed is a typical publish-subscribe type of client-server, where the user subscribes to the RSS feed and is automatically notified when new items appear.
 
 ### Server types
 
@@ -42,10 +42,10 @@ A server's main task is to provide services and resources to its clients. The la
 
 | Server           | Purpose                           | Clients                        |
 | :-------------------: | :-------------------------------: | :----------------------------: |
-| Application  | Hosts an application, which can be run through a web browser or customized client software. |   Any network device with access   |
-| Computing  | Makes available CPU and memory to the client. This type of server might be a supercomputer or mainframe. | Any networked computer that requires more CPU power and RAM to complete an activity |
+| Application  | Hosts an application, which can run through a web browser or customized client software. |   Any network device with access   |
+| Computing  | Makes CPU and memory available to the client. This type of server might be a supercomputer or mainframe. | Any networked computer that requires more CPU power and RAM to complete an activity |
 | Database  | Maintains and provides access to any database. | Any form of software that requires access to structured data. |
-|   File    | Makes available shared files and folders across a network. | Any client that needs access to shared resources |
+|   File    | Makes shared files and folders available across a network. | Any client that needs access to shared resources |
 |   Game    | Provisions a multiplayer game environment. | Personal computers, tablets, smartphones, or game consoles |
 |   Mail    | Hosts your email and makes it available across the network. |  User of email applications  |
 |  Media   | Enables media streaming of digital video or audio over a network. | Web and mobile applications |
@@ -54,7 +54,7 @@ A server's main task is to provide services and resources to its clients. The la
 
 ## Advantages and disadvantages of client-server networks
 
-The client-server network architecture is the most common type of network architecture used today. As with all models, there are pros and cons in their use.
+The client-server network architecture is the most common type of network architecture used today. As with all models, there are pros and cons in its use.
 
 ### Advantages of client-server networks
 
@@ -82,6 +82,6 @@ Another common network architecture type is the peer-to-peer network. Peer-to-pe
 
 Azure has several tools that can help you configure and manage clients and servers in your network. Here's a brief overview of two common Azure tools:
 
-- **Azure Resource Manager**. This is a management service that provides a means to organize and secure your organization's assets and resources. It uses declarative templates to manage your infrastructure. It uses role-based access control (RBAC) to improve the security and access to your assets and resources.
+- **Azure Resource Manager**: This is a management service that provides a means to organize and secure your organization's assets and resources. It uses declarative templates to manage your infrastructure. It uses role-based access control (RBAC) to improve the security and access to your assets and resources.
 
-- **Azure Virtual Machines**. By using this service, you can implement a server without the need to purchase and house server hardware. Virtualization provides the flexibility to have multiple dedicated servers within a cloud environment. Azure VMs will work with both the cloud and your on-premises network. They are scalable and will dynamically adapt to meet your organization's needs as you grow.
+- **Azure Virtual Machines**: By using this service, you can implement a server without the need to purchase and house server hardware. Virtualization provides the flexibility to have multiple dedicated servers within a cloud environment. Azure VMs will work with both the cloud and your on-premises network. They are scalable and will dynamically adapt to meet your organization's needs as you grow.

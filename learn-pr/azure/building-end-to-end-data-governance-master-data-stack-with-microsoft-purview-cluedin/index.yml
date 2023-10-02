@@ -3,7 +3,7 @@ uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-
 metadata:
   title: Build an end to end data governance and master data management stack with Microsoft Purview and CluedIn.
   description: "This training module will build a complete master data management and data governance stack end to end with Microsoft Purview and CluedIn. It includes developing golden records, deduplication, data lineage, and data quality strategies."
-  ms.date: 03/28/2023
+  ms.date: 07/14/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ prerequisites: |
   - Ability to navigate the Azure portal
   - Familiarity with Azure Data Factory
   - Familiarity with high-level concepts of Microsoft Purview
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.svg
 levels:
   - beginner
   - intermediate

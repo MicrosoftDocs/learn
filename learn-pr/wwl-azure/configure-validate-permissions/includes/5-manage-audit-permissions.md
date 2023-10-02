@@ -1,4 +1,4 @@
-Managing permissions are essential to maintaining security and control over your pipelines and resources. By setting permissions, you can restrict access to sensitive data and ensure that only authorized users can access certain features.
+Managing permissions is essential to maintaining security and control over your pipelines and resources. By setting permissions, you can restrict access to sensitive data and ensure that only authorized users can access certain features.
 
 In this unit, learn how to manage and audit permissions using Azure DevOps.
 
@@ -9,7 +9,7 @@ You can also set permissions for specific projects. The steps and configuration 
 To configure permissions for an organization:
 
 1. Sign in to your Azure DevOps organization.
-2. Click on Organization Settings at the bottom left and in Permissions under Security section.
+2. Click on Organization Settings at the bottom left and in Permissions under the Security section.
 3. Under "Permissions," select the group or user you want to manage permissions for.
 4. Click on "Permissions," and select the type of permissions you want to set (for example, "General," "Repos," "Pipelines," "Auditing," etc.).
 5. Choose the level of permission you want to assign (for example, "Allow," "Deny," or "Not set").
@@ -27,7 +27,7 @@ To configure auditing for your organization:
    1. Sign in to your Azure DevOps organization.
    2. Click on Organization Settings at the bottom left and in Policies under the Security section.
    3. Under Security policies, enable Log Audit Events.
-   4. The Auditing section appears in the left navigation pane, under General. Click on it.
+   4. The Auditing section appears in the left navigation pane under General. Click on it.
    5. The audit log provides a simple view into the audit events recorded for your organization.
    6. You can filter the audit log by user, date range, or permission type to get a more specific view of the changes.
    7. (Optional) You can export the audit log to a CSV or JSON file by clicking on the Export button, or you can view the details of a specific event by clicking on the event.

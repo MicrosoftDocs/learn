@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/25/2023
+  ms.date: 09/15/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -26,17 +25,6 @@ quiz:
     - content: "8 GB"
       isCorrect: false
       explanation: "Incorrect. This amount of RAM isn't the minimum needed to install or upgrade to Windows 11. Try again."
-  - content: "Which of the following versions of Windows 10 and later is designed to run a single app on fixed purpose devices, such as automated teller machines, point-of-sale terminals, and industrial and medical devices?"
-    choices:
-    - content: "IoT Core edition"
-      isCorrect: true
-      explanation: "Correct. The IoT Edition of Windows is designed for fixed purpose devices, such as automated teller machines, point-of-sale terminals, and industrial and medical devices. Windows 10 IoT Core is a smaller OS designed to run a single app, while Windows 10/11 IoT Enterprise is a full version of Windows Enterprise with specialized features."
-    - content: "Pro for Workstations"
-      isCorrect: false
-      explanation: "Incorrect. Pro for Workstations edition offers the same features as Pro edition. It includes additional features intended for workloads that require higher performance and resilience. It's not designed for fixed purpose devices running a single app. Try again."
-    - content: "IoT Enterprise edition"
-      isCorrect: false
-      explanation: "Incorrect. While the IoT Enterprise edition is designed for fixed purpose devices, it's a full version of Windows Enterprise with specialized features. Try again."
   - content: "Fabrikam is a large Microsoft Volume License customer with a complex IT infrastructure. From a device management perspective, its IT department wants to choose the pace at which it adopts new technology for user devices. It also requires a broad range of options for operating system deployment and device and app management. Which of the following Windows 10/11 editions allows Fabrikam to meet these IT requirements?"
     choices:
     - content: "Pro edition"

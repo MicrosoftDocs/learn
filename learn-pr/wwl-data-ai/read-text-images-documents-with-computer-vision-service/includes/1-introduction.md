@@ -2,12 +2,12 @@ Suppose you are given thousands of images and asked to transfer the text on the 
 
 Companies around the world are tackling similar scenarios every day. Without AI services, it would be challenging to complete the project, especially if it were to change in scale.
 
-Using AI services, we can treat this project as a computer vision scenario and apply Optical Character Recognition (OCR). OCR allows you to extract text from images, such as photos of street signs and products, as well as from documents — invoices, bills, financial reports, articles, and more.
+Using AI services, we can treat this project as an Azure AI Vision scenario and apply Optical Character Recognition (OCR). OCR allows you to extract text from images, such as photos of street signs and products, as well as from documents — invoices, bills, financial reports, articles, and more.
 
-To build an automated AI solution, you need to train machine learning models to cover many use cases. Azure's Computer Vision service is a Cognitive Service that gives access to advanced algorithms for processing images and returns data to secure storage.
+To build an automated AI solution, you need to train machine learning models to cover many use cases. Azure AI Vision service gives access to advanced algorithms for processing images and returns data to secure storage.
 
 In this module, you'll learn how to:
 
-- Identify how the Computer Vision service enables you to read text from images with the Read API
-- Use the Computer Vision service with SDKs and the REST API
+- Identify how the Azure AI Vision service enables you to read text from images with the Read API
+- Use the Azure AI Vision service with SDKs and the REST API
 - Develop an application that can read printed and handwritten text

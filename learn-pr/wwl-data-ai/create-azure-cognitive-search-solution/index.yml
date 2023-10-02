@@ -5,7 +5,7 @@ metadata:
   description: "Create an Azure Cognitive Search solution"
   ms.date: 05/04/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: cognitive-search
 title: Create an Azure Cognitive Search solution

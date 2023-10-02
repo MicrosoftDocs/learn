@@ -14,4 +14,4 @@ Let's explore how anomaly detection might help in the racing car scenario.
 
 In Microsoft Azure, the **Anomaly Detector** service provides an application programming interface (API) that developers can use to create anomaly detection solutions.
 
-To learn more, view the [Anomaly Detector service web site](https://azure.microsoft.com/services/cognitive-services/anomaly-detector/).
+To learn more, view the [Anomaly Detector service web site](https://azure.microsoft.com/products/ai-services/ai-anomaly-detector).

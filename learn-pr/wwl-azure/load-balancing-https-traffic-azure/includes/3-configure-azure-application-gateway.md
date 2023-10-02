@@ -1,3 +1,4 @@
+
 Application Gateway has a series of components that combine to route requests to a pool of web servers and to check the health of these web servers.
 
 :::image type="content" source="../media/app-gateway-config-f068f2b5.png" alt-text="Diagram showing how Azure Application Gateway routes requests to a pool of web servers":::
@@ -15,7 +16,7 @@ The backend pool is used to route requests to the backend servers that serve the
 
 Azure Application Gateway by default monitors the health of all resources in its back-end pool and automatically removes any resource considered unhealthy from the pool. Application Gateway continues to monitor the unhealthy instances and adds them back to the healthy back-end pool once they become available and respond to health probes. By default, Application gateway sends the health probes with the same port that is defined in the back-end HTTP settings. A custom probe port can be configured using a custom health probe.
 
-The source IP address Application Gateway uses for health probes depends on the backend pool:
+The source IP address that the Application Gateway uses for health probes depends on the backend pool:
 
  -  If the server address in the backend pool is a public endpoint, then the source address is the application gateway's frontend public IP address.
  -  If the server address in the backend pool is a private endpoint, then the source IP address is from the application gateway subnet's private IP address space. :::image type="content" source="../media/app-gateway-probe-6300f27a.png" alt-text="example heath probe for Azure App Gateway":::
@@ -25,7 +26,7 @@ The source IP address Application Gateway uses for health probes depends on the 
 
 An application gateway automatically configures a default health probe when you don't set up any custom probe configurations. The monitoring behavior works by making an HTTP GET request to the IP addresses or FQDN configured in the back-end pool. For default probes if the backend http settings are configured for HTTPS, the probe uses HTTPS to test health of the backend servers.
 
-For example: You configure your application gateway to use back-end servers A, B, and C to receive HTTP network traffic on port 80. The default health monitoring tests the three servers every 30 seconds for a healthy HTTP response with a 30 second timeout for each request. A healthy HTTP response has a status code between 200 and 399. In this case, the HTTP GET request for the health probe will look like http://127.0.0.1/.
+For example: You configure your application gateway to use back-end servers A, B, and C to receive HTTP network traffic on port 80. The default health monitoring tests the three servers every 30 seconds for a healthy HTTP response with a 30 second timeout for each request. A healthy HTTP response has a status code between 200 and 399. In this case, the HTTP GET request for the health probe looks like http://127.0.0.1/.
 
 If the default probe check fails for server A, the application gateway stops forwarding requests to this server. The default probe continues to check for server A every 30 seconds. When server A responds successfully to one request from a default health probe, application gateway starts forwarding the requests to the server again.
 
@@ -57,10 +58,10 @@ The following table provides definitions for the properties of a custom health p
 | **Probe property**  |                                                                                  **Description**                                                                                  |
 |:-------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |        Name         |                                        Name of the probe. This name is used to identify and refer to the probe in back-end HTTP settings.                                         |
-|      Protocol       |                           Protocol used to send the probe. This must match with the protocol defined in the back-end HTTP settings it is associated to                            |
-|        Host         | Host name to send the probe with. In v1 SKU, this value will be used only for the host header of the probe request. In v2 SKU, it will be used both as host header as well as SNI |
+|      Protocol       |                           Protocol used to send the probe. This property must match with the protocol defined in the back-end HTTP settings it is associated to                   |
+|        Host         | Host name to send the probe with. In v1 SKU, this value is used only for the host header of the probe request. In v2 SKU, it is used both as host header and SNI                  |
 |        Path         |                                                             Relative path of the probe. A valid path starts with '/'                                                              |
-|        Port         |  If defined, this is used as the destination port. Otherwise, it uses the same port as the HTTP settings that it is associated to. This property is only available in the v2 SKU  |
+|        Port         |  If defined, this property is used as the destination port. Otherwise, it uses the same port as the HTTP settings that it is associated to. This property is only available in the v2 SKU  |
 |      Interval       |                                             Probe interval in seconds. This value is the time interval between two consecutive probes                                             |
 |      Time-out       |                             Probe time-out in seconds. If a valid response isn't received within this time-out period, the probe is marked as failed                              |
 | Unhealthy threshold |                          Probe retry count. The back-end server is marked down after the consecutive probe failure count reaches the unhealthy threshold                          |
@@ -94,7 +95,7 @@ When you create a new listener, you must choose between basic and multi-site.
 
 ### Order of processing listeners
 
-For the v1 SKU, requests are matched according to the order of the rules and the type of listener. If a rule with basic listener comes first in the order, it's processed first and will accept any request for that port and IP combination. To avoid this, configure the rules with multi-site listeners first and push the rule with the basic listener to the last in the list.
+For the v1 SKU, requests are matched according to the order of the rules and the type of listener. If a rule with basic listener comes first in the order, it's processed first and accepts any request for that port and IP combination. To avoid this, configure the rules with multi-site listeners first and push the rule with the basic listener to the last in the list.
 
 For the v2 SKU, multi-site listeners are processed before basic listeners.
 
@@ -113,7 +114,7 @@ Choose HTTP or HTTPS:
  -  **HTTP:** traffic between the client and the application gateway is unencrypted.
  -  **HTTPS:** enables TLS termination or end-to-end TLS encryption. The TLS connection terminates at the application gateway. Traffic between the client and the application gateway is encrypted. If you want end-to-end TLS encryption, you must choose HTTPS and configure the back-end HTTP setting. This ensures that traffic is re-encrypted when it travels from the application gateway to the back end.
 
-To configure TLS termination and end-to-end TLS encryption, you must add a certificate to the listener to enable the application gateway to derive a symmetric key. This is dictated by the TLS protocol specification. The symmetric key is used to encrypt and decrypt the traffic that's sent to the gateway. The gateway certificate must be in Personal Information Exchange (PFX) format. This format lets you export the private key that the gateway uses to encrypt and decrypt traffic.
+To configure TLS termination and end-to-end TLS encryption, you must add a certificate to the listener to enable the application gateway to derive a symmetric key. The symmetric key is used to encrypt and decrypt the traffic that's sent to the gateway. The gateway certificate must be in Personal Information Exchange (PFX) format. This format lets you export the private key that the gateway uses to encrypt and decrypt traffic.
 
 ## Redirection overview
 
@@ -262,7 +263,7 @@ The urlPathMap element is used to specify Path patterns to back-end server pool 
 
 ### PathPattern
 
-PathPattern is a list of path patterns to match. Each must start with / and the only place a "\*" is allowed is at the end following a "/." The string fed to the path matcher does not include any text after the first ? or \#, and those chars are not allowed here. Otherwise, any characters allowed in a URL are allowed in PathPattern. The supported patterns depend on whether you deploy Application Gateway v1 or v2.
+PathPattern is a list of path patterns to match. Each must start with / and the only place a "\*" is allowed is at the end following a "/." The string fed to the path matcher does not include any text after the first? or \#, and those chars are not allowed here. Otherwise, any characters allowed in a URL are allowed in PathPattern. The supported patterns depend on whether you deploy Application Gateway v1 or v2.
 
 **PathBasedRouting rule**
 
@@ -325,7 +326,7 @@ A rewrite rule set contains:
 
  -  **Request routing rule association:** The rewrite configuration is associated to the source listener via the routing rule. When you use a basic routing rule, the rewrite configuration is associated with a source listener and is a global header rewrite. When you use a path-based routing rule, the rewrite configuration is defined on the URL path map. In that case, it applies only to the specific path area of a site. You can create multiple rewrite sets and apply each rewrite set to multiple listeners. But you can apply only one rewrite set to a specific listener.
  -  **Rewrite Condition:** It is an optional configuration. Rewrite conditions evaluate the content of the HTTP(S) requests and responses. The rewrite action will occur if the HTTP(S) request or response matches the rewrite condition. If you associate more than one condition with an action, the action occurs only when all the conditions are met. In other words, the operation is a logical AND operation.
- -  **Rewrite type:** There are 3 types of rewrites available:
+ -  **Rewrite type:** There are three types of rewrites available:
     
      -  Rewriting request headers
      -  Rewriting response headers

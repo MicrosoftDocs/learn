@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/12/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -28,15 +27,15 @@ quiz:
       explanation: "Incorrect - Autoscaling is a feature that automatically adjusts capacity based on demand or a predefined schedule, typically used in Azure Virtual Desktop."
   - content: "Which of the following features is exclusive to Windows 365 Enterprise and unavailable in Windows 365 Business?"
     choices:
-    - content: "Windows Virtual Desktop"
-      isCorrect: false
-      explanation: "Incorrect. Windows Virtual Desktop is available in both Windows 365 Business and Windows 365 Enterprise."
-    - content: "Cloud PC"
-      isCorrect: false
-      explanation: "Incorrect. Cloud PC is available in both Windows 365 Business and Windows 365 Enterprise."
-    - content: "Windows 365 Enterprise"
+    - content: "Custom Cloud PCs"
       isCorrect: true
-      explanation: "Correct. Windows 365 Enterprise is only available in Windows 365 Enterprise."
+      explanation: "Correct - Custom Cloud PCs are available only in Windows 365 Enterprise."
+    - content: "Ready-to-use Cloud PCs"
+      isCorrect: false
+      explanation: "Incorrect - Ready-to-use Cloud PCs are available in both Windows 365 Enterprise and Windows 365 Business."
+    - content: "Azure AD integration"
+      isCorrect: false
+      explanation: "Incorrect - Azure AD integration is available in both Windows 365 Enterprise and Windows 365 Business."
   - content: "Contoso is interested in deploying Windows as virtual sessions. The company has 150 seats, and it wants a solution that provides ready-to-use Cloud PCs with simple management options. It doesn't want any licensing prerequisites or any dependencies on Active Directory. Given these requirements, which of the following solutions should Contoso use?"
     choices:
     - content: "Windows 365 Enterprise"

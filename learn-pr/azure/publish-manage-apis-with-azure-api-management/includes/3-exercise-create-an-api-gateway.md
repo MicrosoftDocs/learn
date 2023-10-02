@@ -66,7 +66,7 @@ The final task in this exercise is to create an API gateway in the Azure portal.
 
 1. In **Azure services**,  or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the resource menu, select **Integration**, and in the results, select **API Management**. The **Install API Management gateway** pane appears.
+1. In the resource menu, select **Integration**, and in the results, select **API Management**. The **Create API Management service** pane appears.
 
 1. In the **Basics** tab, enter the following values for each setting.
 

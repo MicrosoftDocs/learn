@@ -4,13 +4,12 @@ title: Exercise - Integrate Azure Synapse Analytics and Microsoft Purview
 metadata:
   title: Exercise - Integrate Azure Synapse Analytics and Microsoft Purview
   description: "Exercise - Integrate Azure Synapse Analytics and Microsoft Purview"
-  ms.date: 04/04/2023
+  ms.date: 07/20/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: synapse-analytics
+  ms.subservice: purview
 durationInMinutes: 40
 content: |
   [!include[](includes/06-exercise-synapse-purview.md)]

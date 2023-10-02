@@ -15,6 +15,3 @@ You learned how to:
 - [Microsoft Defender for Azure SQL - the benefits and features](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-sql-introduction)
 - [Overview of Defender for Azure Cosmos DB - Microsoft Defender for Azure Cosmos DB](https://learn.microsoft.com/azure/defender-for-cloud/concept-defender-for-cosmos)
 - [Microsoft Defender for Storage - the benefits and features - Microsoft Defender for Cloud](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-storage-introduction)
-
-> [!NOTE]
-> This module contains AI-generated content.

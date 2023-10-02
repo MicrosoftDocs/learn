@@ -24,6 +24,7 @@ We also recommend you start at the beginning of this learning path, [Build appli
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
 - An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+- An Azure subscription
 - A [GitHub](https://github.com/join?azure-portal=true) account
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
 - [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)

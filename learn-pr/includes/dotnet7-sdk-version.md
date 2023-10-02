@@ -1,10 +1,10 @@
-This module uses the .NET 7.0 SDK. Ensure that you have .NET 7.0 installed by running the following command in your preferred terminal:
+This module uses the .NET 7.0 SDK. Ensure that you have .NET 7.0 installed by running the following command in your preferred command terminal:
 
 ```dotnetcli
 dotnet --list-sdks
 ```
 
-Output similar to the following appears:
+Output similar to the following example appears:
 
 ```console
 6.0.308 [C:\Program Files\dotnet\sdk]

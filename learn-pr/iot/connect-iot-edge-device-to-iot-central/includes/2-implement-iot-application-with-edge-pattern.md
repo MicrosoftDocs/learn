@@ -12,9 +12,8 @@ Azure IoT Central is an IoT application platform as a service (aPaaS) that reduc
 - Collect and analyze telemetry from the connected devices.
 - Send data from the connected devices to other applications or services for further processing or storage.
 
-You have three options to create an IoT Central application:
+You have two options to create an IoT Central application:
 
-- Visit the [My applications](https://apps.azureiotcentral.com/) IoT Central site.
 - Use the [Azure portal](https://portal.azure.com/).
 - Use the Azure CLI.
 

@@ -1,6 +1,3 @@
-
-
-
 It's essential that you select the most suitable edition for your organization before you install Windows. The different editions of Windows address the needs of consumers, from individuals to large enterprises. This unit describes the various features of each edition available for Windows and later.
 
 | **Windows 10 / Windows 11 Edition** | **Audience**                                                                      | **Availability**                                                    |
@@ -66,7 +63,7 @@ Enterprise edition builds on the features of the Pro edition, with extra feature
 
 Some of the features Enterprise edition provides:
 
-  -  **Universal Print:** Organizations can use a modern print solution to manage their print infrastructure through cloud services from Microsoft using printers that support Universal Print.
+  -  **BranchCache:** Allows content from file and web servers on a wide area network (WAN) to be cached on computers at a local branch office.
  -  **Start menu layout control:** This feature enables you to use MDM policies or Group Policies to customize the appearance and content of the start menu.
  -  **Microsoft Defender Credential Guard:** Virtualization-based security isolates secrets, so only privileged users can access them.
  -  **Microsoft Defender Application Control:** Controls what applications run within your environment to help block against malware and untrusted apps.

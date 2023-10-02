@@ -10,7 +10,7 @@ metadata:
 title: Designing for mixed reality
 summary: Learn about all the foundational elements required to design a mixed reality application and equip yourselves with the required tools.
 abstract: |
-  By the end of this module you will be able to:
+  By the end of this module you'll be able to:
   - Understand core concepts in designing a mixed reality application.
   - Describe a few available UX components and interaction models.
   - Understand the available mixed reality resources.
@@ -26,15 +26,16 @@ products:
 prerequisites: |
   This Learn module has no prerequisites. Come as you are and dive into mixed reality!
   
-units: 
+units:
 - learn.azure.design-considerations-mr-development.introduction
 - learn.azure.design-considerations-mr-development.get-started-core-concepts
 - learn.azure.design-considerations-mr-development.ux-elements-interaction-models
 - learn.azure.design-considerations-mr-development.techniques-expand-design-process
+- learn.azure.design-considerations-mr-development.app-quality
+- learn.azure.design-considerations-mr-development.app-testing
 - learn.azure.design-considerations-mr-development.mixed-reality-resources
 - learn.azure.design-considerations-mr-development.great-design-example-in-mixed-reality
 - learn.azure.design-considerations-mr-development.knowledge-check
 - learn.azure.design-considerations-mr-development.summary
-
 badge:
   uid: learn.azure.design-considerations-mr-development.badge

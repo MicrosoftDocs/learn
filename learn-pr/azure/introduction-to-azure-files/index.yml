@@ -26,6 +26,7 @@ roles:
 - developer
 products:
 - azure
+- azure-files
 units:
 - learn.introduction-to-azure-files.introduction
 - learn.introduction-to-azure-files.what-is-azure-files

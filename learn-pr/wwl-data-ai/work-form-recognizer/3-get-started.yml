@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.work-with-form-recognizer.get-started
-title: Get started with Form Recognizer
+title: Get started with Azure Document Intelligence
 metadata:
-  title: Get started with Form Recognizer
-  description: "Get started with Form Recognizer"
+  title: Get started with Azure Document Intelligence
+  description: "Get started with Azure Document Intelligence"
   ms.date: 05/17/2022
   author: wwlpublish
   ms.author: sheryang

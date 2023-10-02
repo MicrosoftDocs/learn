@@ -2,7 +2,7 @@
 
 Once you have your Azure sandbox subscription, you can add a Face API resource and obtain the Face API URL and key needed to connect to this API.
 
-1. Go to the [Azure Cognitive Services Face Service](https://azure.microsoft.com/services/cognitive-services/face?azure-portal=true) and click on **Try Face**. Click on the **Sign In** button in the **Existing Azure Account** box. This will take you to the Azure Portal and open the **Create Face** dialog box. Enter the following information:
+1. Go to the [Azure AI Face Service](https://azure.microsoft.com/pricing/details/cognitive-services/face-api/) and click on **Try Face**. Click on the **Sign In** button in the **Existing Azure Account** box. This will take you to the Azure Portal and open the **Create Face** dialog box. Enter the following information:
 
     - a name for the Azure Face resource
     - `Concierge Subscription` for the subscription

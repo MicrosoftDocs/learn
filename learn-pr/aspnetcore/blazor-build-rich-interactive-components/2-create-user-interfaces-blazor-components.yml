@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-interactive-components-blazor-web-apps.use-javascript-libraries-blazor-apps
-title: Create a user interface with Blazor components
+title: JavaScript interoperability with Blazor
 metadata:
   unitType: learning-content
-  title: Create a user interface with Blazor components
-  description: "Learn how to use JavaScript libraries in Blazor apps."
+  title: JavaScript interoperability with Blazor
+  description: "Learn about Blazor JavaScript interoperability, loading JavaScript in Blazor, calling JavaScript from .NET, and calling .NET from JavaScript."
   ms.date: 02/02/2023
   author: IEvangelist
   ms.author: dapine
@@ -18,25 +18,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "If you are going to include a JavaScript file in Blazor, what is the recommended way to reference it?"
+    - content: "Where should you add the `script` tag to reference a JavaScript file that you include in Blazor?"
       choices:
-        - content: "Add a `script` tag on the Blazor page"
+        - content: "On the Blazor page"
           isCorrect: false
-          explanation: "Script tags shouldn't be added on Blazor pages because they won't render and load properly"
-        - content: "Add a `script` tag to the *Pages/_Host.cshtml* file"
+          explanation: "You shouldn't add `script` tags on Blazor pages, because they don't render and load properly."
+        - content: "In the *Pages/_Host.cshtml* file"
           isCorrect: true
-          explanation: "The `script` tag should be added to the *Pages/_Host.cshtml* file so that it is available before the Blazor components need it"
-        - content: "Add a `script` tag to the *Shared/MainLayout.razor* file"
+          explanation: "You should add the `script` tag to the *Pages/_Host.cshtml* file so it's available before the Blazor components need it."
+        - content: "In the *Shared/MainLayout.razor* file"
           isCorrect: false
-          explanation: "The layout should not include `script` tags and it would be better referenced in another location"
-    - content: "Which method should you use to execute a JavaScript function from C# that returns `void`?"
+          explanation: "The layout shouldn't include `script` tags, so it's better to reference the script in another location."
+    - content: "Which C# method should you use to execute a JavaScript function that returns `void`?"
       choices:
         - content: "`InvokeVoidAsync`"
           isCorrect: true
-          explanation: "This asynchronous method will execute a JavaScript function and await its response"
+          explanation: "This asynchronous method executes a JavaScript function and awaits its response."
         - content: "`Invoke`"
           isCorrect: false
-          explanation: "Invoke is not the method on the JavaScript runtime object in .NET that should be called"
+          explanation: "`Invoke` isn't the method to call on a JavaScript runtime object in .NET."
         - content: "`InvokeAsync`"
           isCorrect: false
-          explanation: "The C# method needs to be told that it should not expect a return value from the JavaScript function. This isn't the correct choice"
+          explanation: "This choice doesn't tell the C# method to not expect a return value from the JavaScript function."

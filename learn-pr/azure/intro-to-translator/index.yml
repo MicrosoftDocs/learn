@@ -2,14 +2,15 @@
 uid: learn.azure.intro-to-translator
 metadata:
   title: Introduction to Translator
-  description: Translator is a cloud-based service that uses Artificial Intelligence to reliably translate text and documents between languages in near real time. You can add multi-language user experiences to your apps in 90 languages and dialects, along with free text translation with any operating system. Translator also has customizable translation models that can better understand industry-specific terminology or pronouns.
+  description: Translator is a cloud-based service that uses AI to reliably translate text and documents between languages in near real time. You can add multilanguage user experiences to your apps in 90 languages and dialects, along with free text translation with any operating system. Translator also has customizable translation models that can better understand industry-specific terminology or pronouns.
+  ms.service: cognitive-services
   ms.date: 06/01/2023
   author: laujan
   ms.author: lajanuar
   manager: nitinme
   ms.topic: interactive-tutorial
-title: Introduction to Translator 
-summary: Translator is a cloud-based service that uses Artificial Intelligence to reliably translate text and documents between languages in near real time. You can add multi-language user experiences to your apps in 90 languages and dialects, along with free text translation with any operating system. Translator also has customizable translation models that can better understand industry-specific terminology or pronouns.
+title: Introduction to Azure AI Translator
+summary: Azure AI Translator is a cloud-based service that uses AI to reliably translate text and documents between languages in near real time. You can add multilanguage user experiences to your apps in 90 languages and dialects, along with free text translation with any operating system. Translator also has customizable translation models that can better understand industry-specific terminology or pronouns.
 abstract: |
   In this module, you will:
   - Assess the benefits of Translator
@@ -28,7 +29,7 @@ roles:
 products:
 - azure
 - azure-translator
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 units:

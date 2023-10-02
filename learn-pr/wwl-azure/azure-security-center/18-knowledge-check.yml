@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/04/2023
+  ms.date: 07/13/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which tasks are included in the Microsoft Defender for Cloud free tier?"
+  - content: "Which tasks are not included in the Microsoft Defender for Cloud free tier?"
     choices:
     - content: "Monitor IoT hubs and resources"
       isCorrect: false

@@ -1,4 +1,4 @@
-Behind your sports website is a database, which returns data by executing queries. However, performance slows down when the load is high, particularly during large sporting events. In hosted environments, increased resource usage translates into higher costs. Caching data ensures your website will perform well and run economically.
+Your sports website has a database behind it, which returns data by executing queries. However, performance slows down when the load is high, particularly during large sporting events. In hosted environments, increased resource usage translates into higher costs. Caching data ensures your website performs well and run economically.
 
 ## What is caching?
 
@@ -25,15 +25,15 @@ Redis supports various data types, all oriented around *binary safe* strings. Yo
 - Sorted sets of strings
 - Maps of strings
 
-Each data value is associated with a *key* that can be used to look up the value from the cache. Redis works best with smaller values (100k or less), so consider chopping up bigger data into multiple keys. Storing larger values is possible (up to 500 MB), but increases network latency and can cause caching and out-of-memory issues if the cache isn't configured to expire old values.
+Each data value is associated with a *key* that can be used to look up the value from the cache. Redis works best with smaller values (100 kB or less), so consider chopping up bigger data into multiple keys. Storing larger values is possible (up to 500 MB), but increases network latency and can cause caching and out-of-memory issues if the cache isn't configured to expire old values.
 
 ## What is a Redis key?
 
 Redis keys are also binary-safe strings. Here are some guidelines for choosing keys:
 
 - Avoid long keys. They take up more memory and require longer lookup times because they have to be compared byte-by-byte. If you want to use a binary blob as the key, generate a unique hash and use that as the key instead. The maximum size of a key is 512 MB, but you should *never* use a key that size.
-- Use keys that can identify the data. For example, "sport:football;date:2008-02-02" would be a better key than "fb:8-2-2". The former is more readable and the extra size is negligible. Find the balance between size and readability.
-- Use a convention. A good one is "object:ID", as in "sport:football".
+- Use keys that can identify the data. For example, `sport:football;date:2008-02-02` would be a better key than `fb:8-2-2`. The former is more readable and the extra size is negligible. Find the balance between size and readability.
+- Use a convention. A good one is `object:ID`, as in `sport:football`.
 
 ## How is data stored in a Redis cache?
 
@@ -41,7 +41,7 @@ Data in Redis is stored in ***nodes*** and ***clusters***.
 
 **Nodes** are a space in Redis where your data is stored.
 
-**Clusters** are sets of three or more nodes across which your dataset is split. Clusters are useful because your operations will continue if a node fails or is unable to communicate to the rest of the cluster.
+**Clusters** are sets of three or more nodes across which your dataset is split. Clusters are useful because your operations continue if a node fails or is unable to communicate to the rest of the cluster.
 
 ## What are Redis caching architectures?
 
@@ -55,7 +55,7 @@ Redis caching architectures are split across Azure by tiers:
 
 ### Basic cache
 
-A basic cache provides you with a ***single node*** Redis cache. The complete dataset will be stored in a single node. This tier is ideal for development, testing, and non-critical workloads.
+A basic cache provides you with a ***single node*** Redis cache. The complete dataset is stored in a single node. This tier is ideal for development, testing, and noncritical workloads.
 
 ### Standard cache
 
@@ -67,4 +67,4 @@ The premium tier includes the features of the standard tier, but adds the abilit
 
 ## Summary
 
-A database is great for storing large amounts of data, but there's an inherent latency when looking up data. You send a query. The server interprets the query, looks up the data, and returns it. Servers also have capacity limits for handling requests. If too many requests are made, data retrieval will likely slow down. Caching will store frequently requested data in memory that can be returned faster than querying a database, which should lower latency and increase performance. Azure Cache for Redis gives you access to a secure, dedicated, and scalable Redis cache, hosted in Azure and managed by Microsoft.
+A database is great for storing large amounts of data, but there's an inherent latency when looking up data. You send a query. The server interprets the query, looks up the data, and returns it. Servers also have capacity limits for handling requests. If too many requests are made, data retrieval is likely to slow down. Caching stores frequently requested data in memory that can be returned faster than querying a database, which should lower latency and increase performance. Azure Cache for Redis gives you access to a secure, dedicated, and scalable Redis cache, hosted in Azure and managed by Microsoft.

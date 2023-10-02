@@ -41,3 +41,4 @@ units:
 - learn.wwl.explore-device-configuration-communication.summary
 badge:
   uid: learn.wwl.explore-device-configuration-communication.badge
+hidden: true

@@ -44,3 +44,4 @@ units:
 - learn.wwl.explore-event-grid-integration.summary
 badge:
   uid: learn.wwl.explore-event-grid-integration.badge
+hidden: true

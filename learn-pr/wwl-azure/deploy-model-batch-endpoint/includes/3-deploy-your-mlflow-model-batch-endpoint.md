@@ -1,5 +1,3 @@
-
-
 An easy way to deploy a model to a batch endpoint is to use an **MLflow** model. Azure Machine Learning will automatically generate the scoring script and environment for MLflow models. 
 
 To deploy an MLflow model, you need to have created an endpoint. Then you can deploy the model to the endpoint.

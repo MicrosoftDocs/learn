@@ -5,22 +5,7 @@ In Azure Cognitive Search, an index is a persistent collection of JSON documents
 
 The index includes a definition of the structure of the data in these documents, called its schema. An example of an index schema with AI-extracted fields *keyphrases* and *imageTags* is below: 
 
-```json
-{
-  "name": "index",
-  "fields": [
-    {
-      "name": "content", "type": "Edm.String", "analyzer": "standard.lucene", "fields": []
-    }
-    {
-      "name": "keyphrases", "type": "Collection(Edm.String)", "analyzer": "standard.lucene", "fields": []
-    },
-    {
-      "name": "imageTags", "type": "Collection(Edm.String)", "analyzer": "standard.lucene", "fields": []
-    },
-  ]
-}
-```
+![A screenshot of the structure of an index schema in json including key phrases and image tags.](../media/json-index-example.png)
 
 ### Index attributes
 

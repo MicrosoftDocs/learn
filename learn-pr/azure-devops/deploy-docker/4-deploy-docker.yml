@@ -7,10 +7,7 @@ metadata:
   ms.date: 03/16/2023
   author: ramiMSFT
   ms.author: rabououn
-  ms.custom:
-    - devdivchpfy22
-    - engagement-fy23
-    - devx-track-python
+  ms.custom: devdivchpfy22, engagement-fy23
   ms.topic: interactive-tutorial
   ms.service: azure
 durationInMinutes: 15
