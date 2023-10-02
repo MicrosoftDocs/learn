@@ -1,4 +1,4 @@
-You're updating an existing .NET solution that has an ASP.NET Blazor application as it's sole project. This project includes service classes for data storage and conversation that are implemented with placeholders. Here, we discuss the overall goals of the project and how you're going to implement the data store and conversational functionality. Additionally, we cover how to set up the Azure resources that you need.
+You're updating an existing .NET solution that has a Blazor application as it's sole project. This project includes service classes for data storage and conversation that are implemented with placeholders. Here, we discuss the overall goals of the project and how you're going to implement the data store and conversational functionality. Additionally, we cover how to set up the Azure resources that you need.
 
 ## Project overview
 
@@ -22,7 +22,7 @@ To complete this project, you need an Azure Cosmos DB for NoSQL account and an A
 
 ### Deploy infrastructure from template
 
-This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-Samples/cosmosdb-chatgpt) GitHub repository for both the Azure Resource Manager templated deployment and the application code. In this step, create a new deployment using the Bicep template to deploy your resources using "infrastructure as code".
+This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-Samples/cosmosdb-chatgpt) GitHub repository for both the Azure Resource Manager templated deployment and the application code. In this step, create a new deployment using the Bicep template to deploy your resources using "infrastructure as code."
 
 1. Create a new shell variable named **resourceGroupName** with the name of the Azure resource group that has already been created on your behalf.
 
@@ -141,7 +141,7 @@ Use the [Azure portal](/azure/azure-portal) to get the credentials from the Azur
 
     :::image type="content" source="../media/portal-openai-account.png" alt-text="Screenshot of the Azure OpenAI resource page.":::
 
-1. In the **Settings** section of the resource navigation menu, select **Keys and Endpoint**. Record the value of the **ENDPOINT** and **KEY 1** fields. You also use these values later.
+1. In the **Settings** section of the resource navigation menu, select **Keys and Endpoint**. Record the value of the **LANGUAGE APIS ENDPOINT** and **KEY 1** fields. You also use these values later.
 
     :::image type="content" source="../media/portal-openai-account-credentials.png" alt-text="Screenshot of the credentials for an Azure OpenAI account.":::
 
@@ -160,8 +160,7 @@ A [development container](https://containers.dev/) environment is available with
 
 1. Start the process to create a new GitHub Codespace on the `start` branch of the [`azure-samples/cosmosdb-chatgpt`](https://github.com/azure-samples/cosmosdb-chatgpt) GitHub repository:
 
-    > [!div class="nextstepaction"]
-    > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=start&repo=612006455)
+    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Azure-Samples/cosmosdb-chatgpt?quickstart=1)
 
 1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
 

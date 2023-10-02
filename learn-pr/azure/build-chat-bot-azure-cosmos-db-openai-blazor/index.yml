@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor
 metadata:
-  title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and ASP.NET Blazor
+  title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and Blazor
   description: |
-    This module walks through the steps to connect an existing ASP.NET Core Blazor application to an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. Your application sends prompts to the model in Azure OpenAI and parses the responses. Your application also stores various conversation sessions and their corresponding messages as items colocated in a single container within Azure Cosmos DB for NoSQL.
+    This module walks through the steps to connect an existing Blazor application to an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. Your application sends prompts to the model in Azure OpenAI and parses the responses. Your application also stores various conversation sessions and their corresponding messages as items colocated in a single container within Azure Cosmos DB for NoSQL.
   moduleType: guided-project
   manager: jroth
   author: seesharprun
@@ -11,10 +11,10 @@ metadata:
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 09/11/2023
-title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and ASP.NET Blazor
+  ms.date: 10/02/2023
+title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and Blazor
 summary: |
-  Connect an existing ASP.NET Core Blazor web application to Azure Cosmos DB for NoSQL and Azure OpenAI using their .NET SDKs. Your code manages and queries items in an API for NoSQL container. Your code also sends prompts to Azure OpenAI and parses the responses.
+  Connect an existing Blazor web application to Azure Cosmos DB for NoSQL and Azure OpenAI using their .NET SDKs. Your code manages and queries items in an API for NoSQL container. Your code also sends prompts to Azure OpenAI and parses the responses.
   
   > [!NOTE]
   > This module is a **_Guided Project_** where you complete an end-to-end project by following step-by-step instructions.
@@ -31,7 +31,8 @@ prerequisites: |
   - Experience with Azure OpenAI concepts such as models, deployments, and prompts
   - Experience writing queries for Azure Cosmos DB for NoSQL
   - Ability to write C# at an intermediate level
-  - Experience running ASP.NET Blazor web applications
+  - Experience running ASP.NET web applications
+  - Experience running Blazor web applications
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner

@@ -318,7 +318,7 @@ Finally, combine the query and transactional batch functionality to remove multi
 
 ## Check your work
 
-Now, your application has a full implementation of Azure OpenAI and Azure Cosmos DB. You can test the application end-to-end by debugging the solution.
+Now your application has a full implementation of Azure OpenAI and Azure Cosmos DB. You can test the application end-to-end by debugging the solution.
 
 ### [Validate application](#tab/validate-app)
 
@@ -340,7 +340,7 @@ Now, your application has a full implementation of Azure OpenAI and Azure Cosmos
     dotnet watch run --non-interactive
     ```
 
-1. Visual Studio Code launches the in-tool simple browser yet again with the web application running. This time, observe that your chat sessions are persisted between debugging sessions.
+1. Visual Studio Code launches the in-tool simple browser yet again with the web application running. For this iteration, observe that your chat sessions are persisted between debugging sessions.
 
     :::image type="content" source="../media/openai-cosmosdb-impelmented-application.png" lightbox="../media/openai-cosmosdb-impelmented-application.png" alt-text="Screenshot of the application with both Azure Cosmos DB and Azure OpenAI services implemented.":::
 
