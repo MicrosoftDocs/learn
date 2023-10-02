@@ -31,7 +31,7 @@ The next steps deploy a VM into the public and private subnets.
         --name public \
         --vnet-name vnet \
         --subnet publicsubnet \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --no-wait \
         --custom-data cloud-init.txt \
@@ -46,7 +46,7 @@ The next steps deploy a VM into the public and private subnets.
         --name private \
         --vnet-name vnet \
         --subnet privatesubnet \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --no-wait \
         --custom-data cloud-init.txt \
