@@ -5,10 +5,10 @@ title: |
 metadata:
   title: |
     Summary
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 7/20/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  description: Summary of what you learned in the Plan to deploy a Microsoft Defender for IoT monitoring system for OT networks training module. 
+  ms.date: 09/27/2023
+  author: mjosephym
+  ms.author: v-mjosephy
   ms.topic: interactive-tutorial
   ms.service: defender-for-iot
 durationInMinutes: 1
