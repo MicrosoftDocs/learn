@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-ai-services.exercise-monitor
-title: Exercise - Monitor Azure AI Services
+title: Exercise - Monitor Azure AI services
 metadata:
   title: Demo-Introduction
-  description: "Exercise - Monitor Azure AI Services"
+  description: "Exercise - Monitor Azure AI services."
   ms.date: 09/28/2023
   author: wwlpublish
   ms.author: berryivor
