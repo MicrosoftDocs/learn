@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
+  ms.custom: devx-track-azurepowershell
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

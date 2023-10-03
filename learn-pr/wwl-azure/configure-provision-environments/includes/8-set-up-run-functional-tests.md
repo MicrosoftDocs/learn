@@ -1,4 +1,3 @@
-
 **Estimated time:** 60 minutes.
 
 **Lab files:** none.

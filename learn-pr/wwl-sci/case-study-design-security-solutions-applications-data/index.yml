@@ -27,7 +27,6 @@ roles:
 products: 
   - entra
   - azure-active-directory
-  - azure-active-directory-domain
 subjects: 
   - security
   - cloud-security

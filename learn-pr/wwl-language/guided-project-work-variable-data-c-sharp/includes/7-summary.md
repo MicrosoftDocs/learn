@@ -1,7 +1,3 @@
-
-
-
-
 You updated the pet adoption application in this guided project to support single term search functionality, improve readability of output, and add a suggested donation to descriptions.
 
 In this module, you practiced your ability to:

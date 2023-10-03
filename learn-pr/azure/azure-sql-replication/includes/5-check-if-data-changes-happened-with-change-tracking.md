@@ -4,11 +4,11 @@ As the CTO of your healthcare company, you might decide to only track whether a 
 
 ## How it works
 
-Different types of applications have different requirements for how much information they need about the changes. Applications can use change tracking to answer the following questions about the changes that have been made to a user table:
+Different types of applications have different requirements for how much information they need about the changes. Applications can use change tracking to answer the following questions about changes that have been made to a user table:
 
 - **What rows have changed for a user table?** Only the fact that a row has changed is required, not how many times the row has changed or the values of any intermediate changes. The latest data can be obtained directly from the table that is being tracked.
 
-- **Has a row changed?** The fact that a row has changed and information about the change must be available and recorded at the time that the change was made in the same transaction.
+- **Has a row changed?** The fact that a row has changed and information about the change must be available and recorded at the time the change was made in the same transaction.
 
 You can use change tracking as a foundation for both one-way and two-way synchronization applications.
 
@@ -36,7 +36,7 @@ SET CHANGE_TRACKING = ON
 (CHANGE_RETENTION = 2 DAYS, AUTO_CLEANUP = ON)
 ```
 
-You can also enable change tracking in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](/sql/relational-databases/databases/database-properties-changetracking-page) dialog box. If a database contains memory optimized tables, you can’t enable change tracking with SQL Server Management Studio. To enable, use T-SQL.
+You can also enable change tracking in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](/sql/relational-databases/databases/database-properties-changetracking-page) dialog box. If a database contains memory optimized tables, you can't enable change tracking with SQL Server Management Studio. To enable, use T-SQL.
 
 You can specify the `CHANGE_RETENTION` and `AUTO_CLEANUP` options when you enable change tracking, and you can change the values at any time after change tracking is enabled.
 
@@ -46,7 +46,7 @@ You can use the `AUTO_CLEANUP` option to enable or disable the cleanup task that
 
 ### Enabling change tracking on your tables
 
-Similarly to change data capture, change tracking must be enabled for each table that you want tracked. When change tracking is enabled, change tracking information is maintained for all rows in the table that are affected by a DML operation.
+Similarly to change data capture, change tracking must be enabled for each table that you want to track. When change tracking is enabled, change tracking information is maintained for all rows in the table that are affected by a DML operation.
 
 The following example shows how to enable change tracking for a table by using `ALTER TABLE`:
 

@@ -1,4 +1,4 @@
-In this module, you are going to use [Custom Vision](https://azure.microsoft.com/products/ai-services/ai-custom-vision), part of the Azure Cognitive Services suite, to detect your favorite animal in an image. Before we jump into training AI, we need to set up our work environment. In this case, your work environment will be all in the browser on Azure.
+In this module, you are going to use [Azure AI Custom Vision](https://azure.microsoft.com/products/ai-services/ai-custom-vision), part of the Azure AI services suite, to detect your favorite animal in an image. Before we jump into training AI, we need to set up our work environment. In this case, your work environment will be all in the browser on Azure.
 
 ## Sign up for Azure
 
@@ -72,7 +72,7 @@ Azure is a cloud service that gives you the compute power to run code in a secur
 
 :::image type="content" source="../media/azure-portal.png" alt-text="Screenshot of the Azure portal with our resource group and Custom Vision resource.":::
 
-What we are doing for this module is a tiny portion of what Azure can do for you. If you are interested in learning more about what Azure can do for you, check out Azure on Microsoft Learn. There are a lot of [modules on Cognitive Services](/training/browse/?azure-portal=true&expanded=azure&terms=cognitive+services) available.
+What we are doing for this module is a tiny portion of what Azure can do for you. If you are interested in learning more about what Azure can do for you, check out Azure on Microsoft Learn. There are a lot of [modules on Azure AI services](/training/browse/?azure-portal=true&expanded=azure&terms=cognitive+services) available.
 
 ### Custom Vision resource
 

@@ -20,9 +20,6 @@ Many of the Azure DevOps tools work with a large variety of languages and are cr
 - **Repos**: stores public and private code repositories.
 - **Actions**: allows for creation of automation workflows.
 
-> [!TIP]
-> Learn more about [working with GitHub with GitHub Learning Lab](https://github.com/apps/github-learning-lab).
-
 GitHub and Git are often used together but aren't the same. **Git** focuses on source control and can be accessed from various tools. GitHub is a specific code-hosting provider that offers the Git system through a web-based graphical interface and combines Git repositories with other DevOps tools. 
 
 ## What is Git?

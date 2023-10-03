@@ -7,7 +7,7 @@ As you've learned, when your SELECT statement is processed, after the FROM claus
 To group rows, specify one or more elements in the GROUP BY clause:
 
 ```sql
-GROUP BY <value1< [, <value2>, …]
+GROUP BY <value1> [, <value2>, …]
 ```
 
 GROUP BY creates groups and places rows into each group as determined by the elements specified in the clause.
