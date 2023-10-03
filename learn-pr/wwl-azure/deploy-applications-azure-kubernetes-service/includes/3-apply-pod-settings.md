@@ -12,11 +12,11 @@ In this exercise, you deploy an AKS cluster. You use this cluster throughout all
 > [!NOTE]
 > To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/).
 
-4.  From your computer, open a web browser window and navigate to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
-5.  In the Azure portal, select the **Azure Cloud Shell** icon.
-6.  If prompted to select either **Bash** or **PowerShell**, select **Bash**.
-7.  Ensure that **Bash** appears in the drop-down menu in the upper-left corner of the Cloud Shell pane.
-8.  To create a resource group to host the AKS cluster, in the Bash session in the Azure Cloud Shell, run the following commands. You can replace eastus with the name of another Azure region where you can create AKS clusters:
+1.  From your computer, open a web browser window and navigate to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
+2.  In the Azure portal, select the **Azure Cloud Shell** icon.
+3.  If prompted to select either **Bash** or **PowerShell**, select **Bash**.
+4.  Ensure that **Bash** appears in the drop-down menu in the upper-left corner of the Cloud Shell pane.
+5.  To create a resource group to host the AKS cluster, in the Bash session in the Azure Cloud Shell, run the following commands. You can replace eastus with the name of another Azure region where you can create AKS clusters:
     
     ```azurecli
     AKSRG='aks-01-RG'
@@ -99,12 +99,12 @@ In this task, you assign an Azure Policy initiative to an AKS cluster. You use o
 7.  Ensure that the **Policy enforcement** is set to **Enabled**, and then select **Next**.
 8.  On the **Basics** tab of the **Assign initiative** page, select **Next**.
 9.  On the **Advanced** tab, select **Next**.
-10. On the Parameters tab, remove the **Only show parameters that need input or review** parameter**.** Next, in the **Effect drop-down** list, select **Deny** and then select **Review + create**.
+10. On the Parameters tab, remove the **Only show parameters that need input or review parameter**. Next, in the **Effect drop-down** list, select **Deny** and then select **Review + create**.
     
     > [!NOTE]
     > You can apply exclusions and inclusions to individual namespaces.
 
-10. On the **Review + create** tab, select **Create.**
+10. On the **Review + create** tab, select **Create**.
 11. Wait until the assignment takes effect (about 20 minutes). In the Azure portal, navigate to the **Azure Policy** page, select **Compliance**, and check if it displays the compliance status for the newly created policy assignment. Alternatively, you can rerun the kubectl get constraint templates command.
 
 ### Validate the effect of Azure Policy

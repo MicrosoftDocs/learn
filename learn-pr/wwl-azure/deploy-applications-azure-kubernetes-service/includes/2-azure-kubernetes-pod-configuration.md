@@ -23,8 +23,8 @@ To install the Azure Policy add-on for AKS, you can use Azure CLI and Azure temp
 
 Commonly used Azure Policy built-in initiatives for AKS targeting pod security include:
 
- -  Kubernetes cluster pod security baseline standards for Linux-based workloads
- -  Kubernetes cluster pod security restricted standards for Linux-based workloads
+ -  Kubernetes cluster pod security baseline standards for Linux-based workloads.
+ -  Kubernetes cluster pod security restricted standards for Linux-based workloads.
 
 ### Assign a policy definition
 

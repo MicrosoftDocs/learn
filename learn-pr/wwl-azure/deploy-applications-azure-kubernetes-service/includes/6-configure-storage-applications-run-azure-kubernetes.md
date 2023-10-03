@@ -67,6 +67,6 @@ Kubernetes resources, such as pods and deployments, are logically grouped into *
 
 When you create an AKS cluster, the following namespaces are available:
 
- -  **default:** serves as the default namespace for resources that weren't allocated to another namespace during their creation. When you interact with the Kubernetes API (for example, when running kubectl get pods), the default namespace is used when none is specified.
- -  **kube-system:** host core resources, including DNS and proxy components. When using AKS, you don't deploy your own applications into this namespace.
- -  **kube-public:** is intended for resources to be visible across the entire cluster to any user.
+ -  **default**: serves as the default namespace for resources that weren't allocated to another namespace during their creation. When you interact with the Kubernetes API (for example, when running kubectl get pods), the default namespace is used when none is specified.
+ -  **kube-system**: host core resources, including DNS and proxy components. When using AKS, you don't deploy your own applications into this namespace.
+ -  **kube-public**: is intended for resources to be visible across the entire cluster to any user.

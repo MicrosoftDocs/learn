@@ -7,7 +7,7 @@ AKS supports both stateless and stateful workloads. Stateful workloads typically
 When choosing the optimal storage for AKS containerized workloads, you can choose from the following options:
 
  -  **Application-level access to structured or semi-structured data**. For structured or semi-structured data, use a platform managed database, such as Azure SQL, Azure Database by MySQL, Azure Database for PostgreSQL, and Cosmos DB.
- -  **File-level access to data**. For shared application data that requires high performance, use either Azure NetApp Files or the *premium* tier of Azure Files. For shared data that requires moderate performance, use the *standard* tier of Azure Files.
+ -  **File-level access to data**. For shared application data that requires high performance, use either Azure NetApp Files or the *premium* tier of Azure Files. For shared data that require moderate performance, use the *standard* tier of Azure Files.
  -  **Block-level access to data**. Use disks for storage for applications that require consistently low latency, high I/O operations per second (IOPS), and high throughput. For the best performance, consider using Azure Premium SSD, Azure Premium SSD v2, or Azure Ultra Disk Storage. Alternatively, apply Azure Blob storage by using BlobFuse virtual file system, or read from and write to blob storage directly.
 
 ### Plan for pod volumes
@@ -25,10 +25,10 @@ AKS volume types include:
 
 You can use either Azure Disk or Azure Files resources to implement `PersistentVolumes` in AKS clusters. The choice between them is typically based on the desired performance characteristics and the ability to provide either shared or exclusive access to the underlying storage.
 
-:::image type="content" source="../media/azure-kubernetes-storage-flow-30832364.png" alt-text="Diagram showing how either Azure Disk or Azure Files resources are used to implement Persistent Volumes for a clusters.":::
+:::image type="content" source="../media/azure-kubernetes-storage-flow-30832364.png" alt-text="Diagram showing how either Azure Disk or Azure Files resources are used to implement Persistent Volumes for a cluster.":::
 <br>
 
-To ensure the availability of persistent volumes, you can precreate PersistentVolume resources. Alternatively, you can rely on the Kubernetes API server to create them dynamically. A pod awaiting deployment ,may require storage that is unavailable, AKS can automatically provision an underlying Azure Disk or File resource and attach it to the pod. Dynamic provisioning relies on the *StorageClass* specification to determine the type of Azure storage to create.
+To ensure the availability of persistent volumes, you can precreate PersistentVolume resources. Alternatively, you can rely on the Kubernetes API server to create them dynamically. A pod awaiting deployment, may require storage that is unavailable, AKS can automatically provision an underlying Azure Disk or File resource and attach it to the pod. Dynamic provisioning relies on the *StorageClass* specification to determine the type of Azure storage to create.
 
 #### Create storage classes
 

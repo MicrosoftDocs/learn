@@ -1,9 +1,9 @@
 In this module, you learned how to:
 
- -  Provision an AKS cluster
- -  Install the Azure Policy add-on for AKS
- -  Assign an Azure Policy initiative to an AKS cluster
- -  Validate the effect of Azure Policy
+ -  Provision an AKS cluster.
+ -  Install the Azure Policy add-on for AKS.
+ -  Assign an Azure Policy initiative to an AKS cluster.
+ -  Validate the effect of Azure Policy.
 
 Learn more<br>
 
