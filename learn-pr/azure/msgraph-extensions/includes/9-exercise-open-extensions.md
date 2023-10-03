@@ -6,7 +6,7 @@ In this exercise, you use [Graph Explorer](https://aka.ms/ge) to make REST API r
 
 1. To perform the API operations in this exercise, consent to the *User.ReadWrite.All* Microsoft Graph permission.
 
-In the team-bonding app, employees will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions. When they grant this consent, the employees can discover their colleagues and update their own profile information.
+In the team-bonding app, employees will sign in with their Microsoft Entra profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions. When they grant this consent, the employees can discover their colleagues and update their own profile information.
 
 ## Create and store data
 
@@ -71,6 +71,8 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Other Azure AD scenarios for custom data
+<a name='other-azure-ad-scenarios-for-custom-data'></a>
 
-Open extensions and the data that the extensions store aren't supported by any other Azure AD scenarios. However, you can use the extensions and their data to support other custom app-specific scenarios for your organization.
+### Other Microsoft Entra scenarios for custom data
+
+Open extensions and the data that the extensions store aren't supported by any other Microsoft Entra scenarios. However, you can use the extensions and their data to support other custom app-specific scenarios for your organization.

@@ -20,7 +20,7 @@ The following image shows how applications, resources, workloads, tenant data, a
 
 :::image type="icon" source="../media/2-azure-monitor-overview.png" border="false" alt-text="Diagram that shows Azure resources generating data into metrics and logs, along with the Azure Monitor tooling you can use to consume data.":::
 
-In addition to logs and metrics, Azure resources also emit Azure platform logs, which Azure Monitor collects. Platform logs provide comprehensive diagnostic and auditing information for Azure resources and the underlying Azure platform. Platform logs are resource logs (formerly known as diagnostic logs), activity logs, and Azure Active Directory logs. All resources automatically generate platform logs. Administrators might need to configure certain platform logs to be forwarded to one or more destinations (like Log Analytics) in order to be kept.
+In addition to logs and metrics, Azure resources also emit Azure platform logs, which Azure Monitor collects. Platform logs provide comprehensive diagnostic and auditing information for Azure resources and the underlying Azure platform. Platform logs are resource logs (formerly known as diagnostic logs), activity logs, and Microsoft Entra logs. All resources automatically generate platform logs. Administrators might need to configure certain platform logs to be forwarded to one or more destinations (like Log Analytics) in order to be kept.
 
 ## Plan a Log Analytics workspace deployment
 

@@ -76,6 +76,8 @@ Schema extension definitions support the `$select` and `$filter` (`eq` and `star
 
 Schema extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters and you can also filter by extension attributes that are empty (`null`). In specific usage of `$filter`, you must include the `$count=true` query parameter in the HTTP request and set the *ConsistencyLevel* header to `eventual`.
 
-## Other Azure AD scenarios for custom data
+<a name='other-azure-ad-scenarios-for-custom-data'></a>
 
-Schema extension properties and the data they store aren't supported by any additional Azure AD scenarios. However, you can use the extensions and their data to support other app-specific scenarios for your organization.
+## Other Microsoft Entra scenarios for custom data
+
+Schema extension properties and the data they store aren't supported by any additional Microsoft Entra scenarios. However, you can use the extensions and their data to support other app-specific scenarios for your organization.

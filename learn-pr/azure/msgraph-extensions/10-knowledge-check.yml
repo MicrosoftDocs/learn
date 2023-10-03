@@ -29,13 +29,13 @@ quiz:
     choices:
     - content: "15 extension attributes, directory extensions, schema extensions, and open extensions"
       isCorrect: false
-      explanation: "Try again. Not all extension types support using their data to extend Azure AD scenarios."
+      explanation: "Try again. Not all extension types support using their data to extend Microsoft Entra scenarios."
     - content: "Directory extensions and schema extensions"
       isCorrect: false
-      explanation: "Try again. Schema extensions don't support using the data to extend Azure AD scenarios."
+      explanation: "Try again. Schema extensions don't support using the data to extend Microsoft Entra scenarios."
     - content: "15 extension attributes and directory extensions"
       isCorrect: true
-      explanation: "Correct. Only the 15 extension attributes and directory extensions support Azure AD scenarios."
+      explanation: "Correct. Only the 15 extension attributes and directory extensions support Microsoft Entra scenarios."
   - content: "Which of the following correctly lists the extension options that support custom names and support query capabilities?"
     choices:
     - content: "Extension attributes, schema extensions, open extensions."
