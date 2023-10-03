@@ -8,8 +8,8 @@ metadata:
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure-ai-services
-title: Monitor Azure AI Services
-summary: Azure AI Services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
+title: Monitor Azure AI services
+summary: Azure AI services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
 abstract: |
   After completing this module, you will be able to:
   - Monitor Azure AI services costs.
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should:
   - Be familiar with Azure services and the Azure portal.
-  - Have experience of provisioning Azure AI Services resources.
+  - Have experience of provisioning Azure AI services resources.
 iconUrl: /learn/achievements/monitor-cognitive-services.svg
 levels:
 - intermediate
