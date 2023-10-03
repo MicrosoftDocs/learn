@@ -3,7 +3,7 @@ Microsoft Intune is available for different organization sizes and needs, from a
 Whether you added users one at a time or all at once, you must assign each user an Intune license before users can enroll their devices in Intune. The Microsoft Intune free trial provides 25 Intune licenses. For a list of licenses, see [Licenses that include Intune](/mem/intune/fundamentals/licenses?azure-portal=true).
 
 > [!NOTE]
-> If you manage devices on-premises using Microsoft Endpoint Configuration Manager, you can also add cloud-based users and assign licenses to accounts synchronized from your on-premises Active Directory to Azure AD.
+> If you manage devices on-premises using Microsoft Endpoint Configuration Manager, you can also add cloud-based users and assign licenses to accounts synchronized from your on-premises Active Directory to Microsoft Entra ID.
 
 ## Assign an Intune license to an individual user
 
@@ -19,17 +19,17 @@ The following steps allow you to assign an Intune license to a user:
 
 The following steps allow you to assign Intune licenses to multiple users all at once:
 
-1. Sign in to the [**Azure AD admin center**](https://aad.portal.azure.com).
+1. Sign in to the [**Microsoft Entra admin center**](https://aad.portal.azure.com).
 
     > [!NOTE]
     > To manage licenses, the admin account must be a license administrator, user administrator, or global administrator. The account you create using the Intune free trial is a global administrator.
 
-2. Select **Azure Active Directory** > **Licenses** > **All products** to see and manage all licensable products that you have available for your organization.
+2. Select **Microsoft Entra ID** > **Licenses** > **All products** to see and manage all licensable products that you have available for your organization.
 3. Select the box next to **Intune**.
 4. Select **Assign** > **Add users and groups**.
 5. If you have created a group of users, select the group to add it to the **Selected items** list. Otherwise, select individual users that you have created earlier. Click **Select** to confirm your selection.
 
-   [ ![Screenshot of Azure AD admin center with users selected.](../media/sign-up-for-intune-15.png) ](../media/sign-up-for-intune-15.png#lightbox)
+   [ ![Screenshot of Microsoft Entra admin center with users selected.](../media/sign-up-for-intune-15.png) ](../media/sign-up-for-intune-15.png#lightbox)
   
 6. Select **Next: Assignment options** to confirm **Microsoft Intune** is **On**.
 7. Select **Review + assign** to confirm your license assignment settings.
