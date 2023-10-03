@@ -1,6 +1,6 @@
 Use this Try-This exercise to gain some hands-on experience with Azure Kubernetes Service.
 
-Before pushing and pulling container images, you must sign-in to the registry instance. [Sign into the Azure CLI](/cli/azure/get-started-with-azure-cli) on your local machine, then run the [az sign-in](/cli/azure/acr#az_acr_login) command. Specify only the registry resource name when logging in with the Azure CLI.
+Before pushing and pulling container images, you must sign-in to the registry instance. [Sign into the Azure CLI](/cli/azure/get-started-with-azure-cli) on your local machine, then run the [az sign-in](/cli/azure/acr#az_acr_login) command. Specify only the registry resource name when signing in with the Azure CLI.
 
 > [!NOTE]
 > Don't use the fully qualified sign-in server name.
@@ -33,4 +33,4 @@ az acr login --name newregistryapl.azurecr.io
 
 The command returns **sign in Succeeded** once completed. The output should resemble the image seen here.
 
-:::image type="content" source="../media/registry-login-success-command-line-b645c8b8.png" alt-text="Displays a screenshot of the connection to Azure being a success.":::
+:::image type="content" source="../media/registry-login-success-command-line-b645c8b8.png" alt-text="Screenshot of the connection to Azure being a success.":::

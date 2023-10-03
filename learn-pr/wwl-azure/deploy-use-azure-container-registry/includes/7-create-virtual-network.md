@@ -14,7 +14,7 @@ Sign in to the [Azure portal](https://portal.azure.com/) with your Azure account
 
 ## Create a virtual network
 
-The following procedure creates a virtual network with a resource subnet.
+The following procedure creates a virtual network with a resource subnet:
 
 1.  In the portal, search for and select **Virtual networks**.
 2.  On the **Virtual networks** page, select **Create**.

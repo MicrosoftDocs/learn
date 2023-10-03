@@ -15,4 +15,4 @@ docker run newregistryapl.azurecr.io/hello-world:v1
 
 The output should resemble graphic seen here.
 
-:::image type="content" source="../media/image-run-registry-output-f1bffcda.png" alt-text="Displays a screenshot of the output for running docker.":::
+:::image type="content" source="../media/image-run-registry-output-f1bffcda.png" alt-text="Screenshot of the output for running docker.":::
