@@ -8,11 +8,11 @@ metadata:
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure-ai-services
-title: Create and consume Azure AI Services 
-summary: Azure AI Services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
+title: Create and consume Azure AI services 
+summary: Azure AI services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
 abstract: |
   After completing this module, you'll able to:
-  - Create Azure AI Services resources in an Azure subscription.
+  - Create Azure AI services resources in an Azure subscription.
   - Identify endpoints, keys, and locations required to consume an Azure AI services resource.
   - Use a REST API and an SDK to consume Azure AI services.
 prerequisites: |
