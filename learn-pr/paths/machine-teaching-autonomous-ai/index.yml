@@ -29,7 +29,6 @@ roles:
 - data-scientist
 products:
 - azure
-# - bonsai
 subjects:
 - artificial-intelligence
 modules:
@@ -39,6 +38,5 @@ modules:
 - learn.oxford.explore-design-brain-patterns
 - learn.oxford.explore-select-use-cases
 - learn.oxford.explore-ai-specification
-- learn.oxford.build-industrial-brain
 trophy:
   uid: learn.oxford.machine-teaching-autonomous-ai.trophy
