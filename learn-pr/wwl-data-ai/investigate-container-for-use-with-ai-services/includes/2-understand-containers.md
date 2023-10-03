@@ -1,7 +1,7 @@
 
 When you deploy a software service, it must be hosted in an environment that provides the hardware, operating system, and supporting runtime components on which the service depends.
 
-Azure AI services is provided as a cloud service, in which the service software is hosted in an Azure data center that provides the underlying runtime services, operating system, and hardware. However, you can also deploy some AI services in a *container*, which encapsulates the necessary runtime components, and which is in turn deployed in a container host that provides the underlying operating system and hardware.
+Azure AI services is provided as a cloud service, in which the service software is hosted in an Azure data center that provides the underlying runtime services, operating system, and hardware. However, you can also deploy some Azure AI services in a *container*, which encapsulates the necessary runtime components, and which is in turn deployed in a container host that provides the underlying operating system and hardware.
 
 :::image type="content" source="../media/containers.png" alt-text="A container host with 4 containers":::
 

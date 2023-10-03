@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.investigate-container-for-use-with-ai-services.use-ai-services-containers
-title: Use Azure AI Services containers
+title: Use Azure AI services containers
 metadata:
-  title: Use Azure AI Services containers
-  description: "Use Azure AI Services containers"
+  title: Use Azure AI services containers
+  description: "Use Azure AI services containers"
   ms.date: 09/11/2023
   author: wwlpublish
   ms.author: berryivor

@@ -9,12 +9,12 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure-ai-services	
 title: Deploy Azure AI services in containers
-summary: Learn about Container support in Azure AI Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+summary: Learn about Container support in Azure AI services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
 abstract: |
   After completing this module, learners will be able to:
   - Create containers for reuse
   - Deploy to a container and secure a container
-  - Consume Azure AI Services from a container
+  - Consume Azure AI services from a container
 prerequisites: |
   - Learners should have an Azure account and be familiar with navigating the Azure portal.
   - Learners should also have experience with Docker and containers.
