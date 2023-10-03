@@ -40,7 +40,7 @@ In this exercise, you deploy a Linux VM and enable boot diagnostics. After the V
     ```azurecli
     az vm create \
         --name monitored-linux-vm \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --size Standard_B1s \
         --location $LOCATION \
         --admin-username azureuser \
