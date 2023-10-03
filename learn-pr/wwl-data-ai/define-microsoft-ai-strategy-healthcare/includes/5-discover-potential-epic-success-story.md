@@ -1,28 +1,35 @@
-Epic provides a good example of how health providers can implement AI solutions to deliver a better service to patients. Their partnership with Microsoft plays a key role in enabling these AI projects in a solid, responsible way. Let’s discover their success story.
+Zimmer Biomet provides a good example of how health providers can implement AI solutions to deliver a better service to patients. Let’s discover their success story.
 
 ## The organization
 
-Epic is a software company that develops EHR systems. Their products serve patients and all kinds of healthcare centers, such as hospitals, dental clinics, academic medical centers, and more. It’s based in Wisconsin (United States), where it started as just three people working in a basement. Now, more than 305 million patients have their health data on Epic software. Epic is dominant across the United States and has a strong international presence.
+**Zimmer Biomet** is a healthcare technology company that develops medical devices. They’re based in Indiana (United States), where Zimmer Biomet was founded in 1927. Now, they employ around 17,000 workers in 31 global offices.
 
-Innovation is a priority for Epic. To achieve it, they invest 38 percent of operating expenses in R&D. This innovative culture makes them leaders in healthcare IT. For years, Epic and Microsoft have been partners. Thanks to this collaboration, you can use Epic software on the Microsoft Azure platform.
+Their solutions serve **orthopedic patients** and healthcare professionals treating them. Zimmer Biomet aims to alleviate pain and improve quality of life before, during, and after orthopedic surgeries. Innovation is a key to reach this goal.
 
 ## The challenge
 
-In the last period, the healthcare industry has faced workforce shortages and burnout,<sup>3</sup> increased labor expenses, supply disruptions, the impact of inflation, and overall losses and operating margin decline.<sup>4</sup> This context makes increasing productivity and technological efficiency a top priority for businesses in the sector. Epic decided to rise to this challenge with Microsoft AI.
+In the last period, the healthcare industry has faced workforce shortages<sup>3</sup> and burnout,<sup>4</sup> increased labor expenses, supply disruptions, the impact of inflation, and overall losses and operating margin decline.<sup>5</sup> This context makes **increasing productivity** and technological efficiency a top priority for businesses in the sector.
+
+Besides, there’s a growing demand for **decentralized care**. Orthopedic patients often experience limited mobility, so it’s fundamental to minimize the times they need to move to the hospital or any other healthcare facility. 
 
 ## The solution
 
-Epic trusted they could improve productivity by adding generative AI into their EHR software. They decided Azure OpenAI Services was the best fit for Epic, since it delivers the most powerful OpenAI models over the robust, reliable infrastructure of Microsoft Azure. Epic chose two different use cases to implement this product in their EHR systems.
+Zimmer Biomet realized their first step should be to adopt a full data/AI strategy. The Azure environment establishes a responsible framework to protect the patients’ data. Azure products are designed to help healthcare companies comply with medical privacy requirements.
 
-### Epic In Basket: more agile conversations with draft responses
+In particular, Zimmer Biomet decided to use Microsoft products like Azure Kubernetes Service (AKS) and Azure Machine Learning. They help developers build scalable AI systems and manage the whole data science process.
 
-The first initiative is Epic In Basket, a solution that uses generative AI to help doctors when communicating with patients via chat. Azure OpenAI Services automatically creates draft responses for physicians to answer more efficiently. This system is now implemented in several healthcare centers, such as UC San Diego Health, UW Health in Madison, Wisconsin, and Stanford Health Care.
+### The mymobility app: An assistant for the recovery process 
 
-### An assistant for smart analysis in Slicer Dicer
+Then, Zimmer Biomet developed mymobility®, a patient engagement app that collects gait data and patient-reported data. This app enables patients who have had hip and knee replacements to better understand how they’re recovering. It helps them assess their mobility and pain levels to confirm if they’re within the expectable limits for the post-operative period.
 
-The second generative AI project developed by Epic and Microsoft focuses on Slicer Dicer, Epic’s self-service reporting and data visualization tool. The goal of this project is to empower clinical leaders. The solution adds a new feature to Slicer Dicer that suggests metrics based on search criteria. Employees can interact with this assistant in a conversational and more natural way. This copilot approach enables users to get more out of data and to do it more efficiently.
+### WalkAI: The first AI predictive analytics model for orthopedics
+
+The next step was to feed the data gathered by mymobility to an AI system. This is how WalkAI™ was born. This state-of-the-art AI model contextualizes a patient’s gait recovery with other patients’ data. Ninety days after a knee or hip replacement, the AI can confirm whether a patient is on the right track or whether they should be a bit more active.
 
 ## The results
-Epic’s clients are already reporting positive outcomes. The initiatives are simplifying daily work routines, and so increasing productivity. Now, professionals can allot more time and resources to the medical duties that are the core of their business. Likewise, the improvements in Slicer Dicer are helping analysts identify operational improvements. For example, they’re finding clever ways of reducing costs.
+
+Zimmer Biomet’s AI transformation is enabling them to take better care of patients. The combination of mymobility and WalkAI empowers patients to track their process from their homes. WalkAI’s near-real-time predictive model is revolutionary in the orthopedics industry. Now, the patient can take a more active role in their recovery and reassures them when they’re progressing as expected.
+
+Furthermore, they’re better equipped to take the decision whether to consult a clinician when feeling surgery-related inconveniences. So, clinicians have more time to assist the patients that really need medical attention.
 
 Next, let’s wrap up everything you’ve learned with a knowledge check.

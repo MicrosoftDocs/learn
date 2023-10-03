@@ -24,5 +24,6 @@ Now that you have reviewed this module, you should be able to:
 
 1. [Bhasker, Shashank; Bruce, Damien; Lamb, Jessica, & Stein, George, “Tackling healthcare’s biggest burdens with generative AI,” McKinsey & Company, July 10 2023.](https://www.mckinsey.com/industries/healthcare/our-insights/tackling-healthcares-biggest-burdens-with-generative-ai)
 1. [Richens, Jonathan G.; Lee, Ciarán M., and Johri, Saurabh, “Improving the accuracy of medical diagnosis with causal machine learning,” Nature, 2023.](https://www.nature.com/articles/s41467-020-17419-7)
-1. Missing reference in AI Skilling Recording_HEALTHCARE (slide 4, footnote 3).
-1. Missing reference in AI Skilling Recording_HEALTHCARE (slide 4, footnote 5).
+1. [World Health Organization, "Health workforce," 2023](https://www.who.int/health-topics/health-workforce).
+1. [U.S. Department of Health and Human Services, "Addressing Health Worker Burnout: The U.S. Surgeon General’s Advisory on Building a Thriving Health Workforce," 2022](https://www.hhs.gov/sites/default/files/health-worker-wellbeing-advisory.pdf).
+1. [D Magazine, "Healthcare Financial Trends for 2022," 2022](https://www.dmagazine.com/sponsored/2022/01/healthcare-financial-trends-for-2022/).
