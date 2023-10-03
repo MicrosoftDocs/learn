@@ -6,8 +6,7 @@ One recommended architecture for and Azure Kubernetes Service cluster is the hub
  -  All web applications should require a web application firewall (WAF) service to help govern HTTP traffic flow.
  -  A natural choice for workloads that span multiple subscriptions.
  -  It makes the architecture extensible. To accommodate new features or workloads, new spokes can be added instead of redesigning the network topology.
- -  Certain resources, such as a firewall and DNS can be shared across networks.:::image type="content" source="../media/network-cluster-hub-spoke-40877d23.png" alt-text="Diagram showing how a hub and spoke interacts with on premises and internet.":::
-    
+ -  Certain resources, such as a firewall and DNS can be shared across networks.
 
 ### Hub
 
@@ -37,7 +36,7 @@ Azure [Application Gateway](/azure/application-gateway/overview) is a web traffi
 
 #### Subnet to host the ingress resources
 
-#### To route and distribute traffic, an ingress controller fulfills the Kubernetes ingress resources. The Azure internal load balancers exist in this subnet. 
+To route and distribute traffic, an ingress controller fulfills the Kubernetes ingress resources. The Azure internal load balancers exist in this subnet.
 
 #### Subnet to host the cluster nodes
 

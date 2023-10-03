@@ -1,9 +1,9 @@
 Network flow can be categorized as:
 
- -  **Ingress traffic:** From the client, to the workload running in the cluster.
- -  **Egress traffic:** From a pod or node, in the cluster to an external service.
- -  **Pod-to-pod traffic:** Communication between pods. This traffic includes communication between the ingress controller and the workload. Also, if your workload is composed of multiple applications deployed to the cluster, communication between those applications would fall into this category.
- -  **Management traffic:** Traffic that goes between the client and the Kubernetes API server.
+ -  **Ingress traffic**: From the client, to the workload running in the cluster.
+ -  **Egress traffic**: From a pod or node, in the cluster to an external service.
+ -  **Pod-to-pod traffic**: Communication between pods. This traffic includes communication between the ingress controller and the workload. Also, if your workload is composed of multiple applications deployed to the cluster, communication between those applications would fall into this category.
+ -  **Management traffic**:Traffic that goes between the client and the Kubernetes API server.
 
 This architecture has several layers of security to secure all types of traffic.
 
