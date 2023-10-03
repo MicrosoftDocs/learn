@@ -3,7 +3,7 @@ In this exercise, you'll create aMicrosoft Fabric workspace and use it to ingest
 The exercise is designed to familiarize you with some key elements of a large-scale data analytics solution, not as a comprehensive guide to performing advanced data analysis with Microsoft Fabric. The exercise should take around 25 minutes to complete.
 
 > [!NOTE]
-> You need a Microsoft Fabric trial license with the Fabric preview enabled in your tenant. See [Getting started with Fabric](/fabric/get-started/fabric-trial) to enable your Fabric trial license..
+> You need a Microsoft Fabric trial license with the Fabric preview enabled in your tenant. See [Getting started with Fabric](/fabric/get-started/fabric-trial) to enable your Fabric trial license.
 
 Launch the exercise and follow the instructions.
 
