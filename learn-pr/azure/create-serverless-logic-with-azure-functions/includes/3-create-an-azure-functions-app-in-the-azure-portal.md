@@ -16,7 +16,7 @@ When using the Azure serverless application platform, choose the **Consumption p
 
 The **Premium plan** also dynamically scales your resources to meet demand, but you can specify a minimum number of VM instances to keep warm and reduce so called "cold starts." Premium plan also lets your functions connect to and run inside virtual networks. Like the Dedicated plan, the default timeout for apps in a Premium plan is 30 minutes, but they can essentially run for an unlimited time (depending on server availability). 
 
-The **Dedicated (App Service) plan** enables you to avoid timeout periods by having your function run continuously on a VM that you define. When using an App Service plan, you're responsible for managing the app resources the function runs on, so this is technically not a serverless plan. However, it may be a better choice when you already have excess App Service resources available on which to also run your functions.
+The **Dedicated (App Service) plan** enables you to avoid timeout periods by having your function run continuously on a VM that you define. An App Service plan is technically not a serverless plan, because you're responsible for managing the app resources the function runs on. However, it may be a better choice when you already have excess App Service resources available on which to also run your functions.
 
 ### Storage account requirements
 
