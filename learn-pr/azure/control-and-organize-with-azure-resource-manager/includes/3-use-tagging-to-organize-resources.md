@@ -1,4 +1,4 @@
-You've gone through your resources and moved them into resource groups that are more organized than befor; but what if resources have multiple uses? How do you better search, filter, and organize these resources? Tags can be helpful as you look to improve organization of your Azure resources.
+You've gone through your resources and moved them into resource groups that are more organized than before; but what if resources have multiple uses? How do you better search, filter, and organize these resources? Tags can be helpful as you look to improve organization of your Azure resources.
 
 ## What are tags?
 
