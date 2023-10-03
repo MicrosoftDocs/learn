@@ -42,6 +42,7 @@ units:
 - learn.wwl.examine-components-of-modern-data-warehouse.exercise-azure-synapse
 - learn.wwl.examine-components-of-modern-data-warehouse.fabric
 - learn.wwl.examine-components-of-modern-data-warehouse.exercise-fabric
+- learn.wwl.examine-components-of-modern-data-warehouse.exercise-explore-azure-data-services-azure-portal
 - learn.wwl.examine-components-of-modern-data-warehouse.summary
 badge:
   uid: learn.wwl.examine-components-of-modern-data-warehouse.badge
