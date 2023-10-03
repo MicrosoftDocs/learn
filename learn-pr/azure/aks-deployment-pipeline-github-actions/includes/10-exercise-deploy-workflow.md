@@ -282,7 +282,7 @@ You've set the credential secret, but the secret isn't created yet. Let's create
 1. Create a new secret called `AZURE_CREDENTIALS`. The value of this secret will be the output of the following command, a JSON object:
 
     ```azurecli-interactive
-    az ad sp create-for-rbac --role Contributor --scopes /subscriptions/<SUBSCRIPTION-ID> --sdk-auth
+    az ad sp create-for-rbac --role Contributor --scopes /subscriptions/<SUBSCRIPTION-ID>
     ```
 
 1. Copy the output and paste it in the secret value. Then, save the secret and close the tab.
