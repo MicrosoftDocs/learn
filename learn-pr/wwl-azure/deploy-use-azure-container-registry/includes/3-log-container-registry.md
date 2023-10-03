@@ -16,7 +16,7 @@ az login
 
 The output should resemble the image seen here.
 
-:::image type="content" source="../media/login-azure-command-line-ba5fb6b3.png" alt-text="Displays a screenshot of the command-line output for connecting to Azure.":::
+:::image type="content" source="../media/login-azure-command-line-ba5fb6b3.png" alt-text="Screenshot of the command-line output for connecting to Azure.":::
 
 
 Sign-in to the registry using the resource name.
