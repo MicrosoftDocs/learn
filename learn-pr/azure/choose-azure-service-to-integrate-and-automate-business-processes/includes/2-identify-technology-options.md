@@ -46,7 +46,7 @@ One reason why Logic Apps is so good at integration is that [over 200 connectors
 
 :::image type="icon" border="false" source="../media/2-microsoft-flow-logo.png":::
 
-Microsoft [Power Automate](https://flow.microsoft.com/) is a service to create workflows even when you have no development or IT Pro experience. You can create workflows that integrate and orchestrate many different components by using the website or the Microsoft [Power Automate mobile app](../../../power-automate/mobile/overview-mobile).
+Microsoft [Power Automate](https://flow.microsoft.com/) is a service to create workflows even when you have no development or IT Pro experience. You can create workflows that integrate and orchestrate many different components by using the website or the Microsoft [Power Automate mobile app](/power-automate/mobile/overview-mobile).
 
 There are four different types of flow that you can create:
 
