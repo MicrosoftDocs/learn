@@ -2,23 +2,23 @@ Typically, back-end apps enable device administrators and operators to update an
 
 Consider using jobs when you need to schedule and track progress any of the following activities on a set of devices:
 
- -  Update desired properties.
- -  Update tags.
- -  Invoke direct methods.
+- Update desired properties
+- Update tags
+- Invoke direct methods
 
 ## Job lifecycle
 
-Jobs are initiated by the solution back end and maintained by IoT Hub. You can initiate a job through a service-facing URI (`PUT https://<iot hub>/jobs/v2/<jobID>?api-version=2018-06-30`) and query for progress on an executing job through a service-facing URI (`GET https://<iot hub>/jobs/v2/<jobID?api-version=2018-06-30`). To refresh the status of running jobs once a job is initiated, run a job query.
+Jobs are initiated by the solution back end and maintained by IoT Hub. You can initiate a job through a service-facing URI (`PUT https://<iot hub>/jobs/v2/<jobID>?api-version=2021-04-12`) and query for progress on an executing job through a service-facing URI (`GET https://<iot hub>/jobs/v2/<jobID?api-version=2021-04-12`). To refresh the status of running jobs once a job is initiated, run a job query. There is no explicit purge of job history, but they have a Time to live (TTL) of 30 days.
 
 > [!NOTE]
-> When you initiate a job, property names and values can only contain US-ASCII printable alphanumeric, except any in the following set: \`$ ( ) &lt; &gt; @ , ; : \\ " / \[ \] ? = \{ \} SP HT\`
+> When you initiate a job, property names and values can only contain US-ASCII printable alphanumeric, except any in the following set: `$ ( ) < > @ , ; : \ " / [ ] ? = { } SP HT`
 
 ## Jobs to execute direct methods
 
 The following snippet shows the HTTPS 1.1 request details for executing a direct method on a set of devices using a job:
 
 ```
-PUT /jobs/v2/<jobId>?api-version=2018-06-30
+PUT /jobs/v2/<jobId>?api-version=2021-04-12
 
 Authorization: <config.sharedAccessSignature>
 Content-Type: application/json; charset=utf-8
@@ -46,14 +46,15 @@ The query condition can also be on a single device ID or on a list of device IDs
 "queryCondition" = "deviceId IN ['MyDevice1']"
 
 ```
-
-See IoT Hub Query Language: [IoT Hub query language for device and module twins, jobs, and message routing](/azure/iot-hub/iot-hub-devguide-query-language) for more information.
+> [!TIP]
+> See IoT Hub Query Language for more information about the query language structure.
+>
 
 The following snippet shows the request and response for a job scheduled to call a direct method named testMethod on all devices on contoso-hub-1:
 
 ```
 
-PUT https://contoso-hub-1.azure-devices.net/jobs/v2/job01?api-version=2018-06-30 HTTP/1.1
+PUT https://contoso-hub-1.azure-devices.net/jobs/v2/job01?api-version=2021-04-12 HTTP/1.1
 Authorization: SharedAccessSignature sr=contoso-hub-1.azure-devices.net&sig=68iv------------------------------------v8Hxalg%3D&se=1556849884&skn=iothubowner
 Content-Type: application/json; charset=utf-8
 Host: contoso-hub-1.azure-devices.net
@@ -68,7 +69,7 @@ Content-Length: 317
         "responseTimeoutInSeconds": 30
     },
     "queryCondition": "*",
-    "startTime": "2019-05-04T15:53:00.077Z",
+    "startTime": "2022-05-04T15:53:00.077Z",
     "maxExecutionTimeInSeconds": 20
 }
 
@@ -77,7 +78,7 @@ Content-Length: 65
 Content-Type: application/json; charset=utf-8
 Vary: Origin
 Server: Microsoft-HTTPAPI/2.0
-Date: Fri, 03 May 2019 01:46:18 GMT
+Date: Fri, 03 May 2022 01:46:18 GMT
 
 {"jobId":"job01","type":"scheduleDeviceMethod","status":"queued"}
 
@@ -88,7 +89,7 @@ Date: Fri, 03 May 2019 01:46:18 GMT
 The following snippet shows the HTTPS 1.1 request details for updating device twin properties using a job:
 
 ```
-PUT /jobs/v2/<jobId>?api-version=2018-06-30
+PUT /jobs/v2/<jobId>?api-version=2021-04-12
 
 Authorization: <config.sharedAccessSignature>
 Content-Type: application/json; charset=utf-8
@@ -110,7 +111,7 @@ Content-Type: application/json; charset=utf-8
 The following snippet shows the request and response for a job scheduled to update device twin properties for test-device on contoso-hub-1:
 
 ```
-PUT https://contoso-hub-1.azure-devices.net/jobs/v2/job02?api-version=2018-06-30 HTTP/1.1
+PUT https://contoso-hub-1.azure-devices.net/jobs/v2/job02?api-version=2021-04-12 HTTP/1.1
 Authorization: SharedAccessSignature sr=contoso-hub-1.azure-devices.net&sig=BN0U-------------------------------------RuA%3D&se=1556925787&skn=iothubowner
 Content-Type: application/json; charset=utf-8
 Host: contoso-hub-1.azure-devices.net
@@ -128,7 +129,7 @@ Content-Length: 339
     "etag": "*"
     },
     "queryCondition": "deviceId = 'test-device'",
-    "startTime": "2019-05-08T12:19:56.868Z",
+    "startTime": "2022-05-08T12:19:56.868Z",
     "maxExecutionTimeInSeconds": 20
 }
 
@@ -137,7 +138,7 @@ Content-Length: 63
 Content-Type: application/json; charset=utf-8
 Vary: Origin
 Server: Microsoft-HTTPAPI/2.0
-Date: Fri, 03 May 2019 22:45:13 GMT
+Date: Fri, 03 May 2022 22:45:13 GMT
 
 {"jobId":"job02","type":"scheduleUpdateTwin","status":"queued"}
 
@@ -148,7 +149,7 @@ Date: Fri, 03 May 2019 22:45:13 GMT
 The following snippet shows the HTTPS 1.1 request details for querying for jobs:
 
 ```
-GET /jobs/v2/query?api-version=2018-06-30[&jobType=<jobType>][&jobStatus=<jobStatus>][&pageSize=<pageSize>][&continuationToken=<continuationToken>]
+GET /jobs/v2/query?api-version=2021-04-12[&jobType=<jobType>][&jobStatus=<jobStatus>][&pageSize=<pageSize>][&continuationToken=<continuationToken>]
 
 Authorization: <config.sharedAccessSignature>
 Content-Type: application/json; charset=utf-8

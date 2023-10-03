@@ -1,1 +1,0 @@
-Your team is responsible for managing thousands of IoT devices that the company has in service. Understanding how to use IoT Hub automated device management and IoT Hub job to automate device management for large numbers of devices helps to ensure that the team is ready to manage thousands of deployed devices.

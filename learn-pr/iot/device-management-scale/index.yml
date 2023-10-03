@@ -1,35 +1,38 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-approaches-to-device-management-at-scale
 metadata:
-  title: Examine approaches to device management at scale
-  description: "This module introduces you to the approaches for applying device management tasks to large numbers of devices based on device properties or other identifying characteristics."
-  ms.date: 07/18/2022
-  author: wwlpublish
-  ms.author: cahowd
-  ms.topic: interactive-tutorial
-title: Examine approaches to device management at scale
-summary: This module introduces you to the approaches for applying device management tasks to large numbers of devices based on device properties or other identifying characteristics.
+  title: Examine approaches to device management at scale using Azure IoT Hub
+  description: "Examine the approaches for applying device management tasks to large numbers of IoT devices using Azure IoT Hub based on device properties or other identifying characteristics."
+  ms.date: 10/01/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.service: iot-hub
+title: Examine approaches to device management at scale using Azure IoT Hub
+summary: Examine the approaches for applying device management tasks to large numbers of IoT devices using Azure IoT Hub based on device properties or other identifying characteristics.
 abstract: |
   After you complete this module, you will be able to:
-  - Describe how to use IoT Hub jobs for device management.
-  - Describe IoT Hub automatic device management.
-  - Describe device management best practices.
+  - Describe how to use device management jobs in Azure IoT Hub.
+  - Describe automatic device management using Azure IoT Hub.
+  - Describe device management best practices in Azure IoT Hub.
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
-  - Describe the device management patterns and device configuration options using device twins and direct methods.
+  - Describe the device management patterns and device configuration options using Azure IoT Hub device twins and direct methods.
 iconUrl: /training/achievements/device-management-at-scale.svg
 levels:
 - intermediate
 roles:
 - developer
+- solution-architect
 products:
 - azure-iot-hub
 - azure-iot-sdk
-- azure-portal
 subjects:
-- device-management
+- iot
 units:
 - learn.wwl.examine-approaches-to-device-management-at-scale.introduction
 - learn.wwl.examine-approaches-to-device-management-at-scale.examine-how-to-use-iot-hub-jobs-for
