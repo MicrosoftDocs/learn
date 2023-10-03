@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-kubernetes-service-cluster
 metadata:
   title: Configure an Azure Kubernetes Service cluster
   description: "Use Azure Policy to enforce policies and safeguards on your Kubernetes clusters at scale. Azure Policy Ensures that your cluster is secure, compliant, and consistent across your organization."
-  ms.date: 09/29/2023
+  ms.date: 10/03/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -32,7 +32,7 @@ units:
 - learn.wwl.configure-azure-kubernetes-service-cluster.install-azure-policy-add-azure-kubernetes-service
 - learn.wwl.configure-azure-kubernetes-service-cluster.assign-policy-definition-azure-kubernetes-cluster
 - learn.wwl.configure-azure-kubernetes-service-cluster.host-based-encryption-azure-kubernetes-service
-- learn.wwl.configure-azure-kubernetes-service-cluster.create-custom-namepace
+- learn.wwl.configure-azure-kubernetes-service-cluster.create-custom-namespace
 - learn.wwl.configure-azure-kubernetes-service-cluster.knowledge-check
 - learn.wwl.configure-azure-kubernetes-service-cluster.summary
 badge:

@@ -24,14 +24,14 @@ Logical separation of clusters usually provides a higher pod density than physic
 ### Create a custom namespace
 
 1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
-2.  On the Azure portal menu or from the **Home** page, select the Azure Kubernetes cluster used in previous exercises**.**
-3.  Select **Namespaces.** :::image type="content" source="../media/azure-kubernetes-namespace-configuration-8f5962e2.png" alt-text="Displays a screenshot of how to navigate to existing cluster.":::
+2.  On the Azure portal menu or from the **Home** page, select the Azure Kubernetes cluster used in previous exercises.
+3.  Select **Namespaces**.:::image type="content" source="../media/azure-kubernetes-namespace-configuration-8f5962e2.png" alt-text="Screenshot of how to navigate to existing cluster.":::
     
-4.  Select **Create**, and then select **Namespace**. :::image type="content" source="../media/select-namespace-custom-2c0f8985.png" alt-text="Displays a screenshot of the new namespace creation process.":::
+4.  Select **Create**, and then select **Namespace**. :::image type="content" source="../media/select-namespace-custom-2c0f8985.png" alt-text="Screenshot of the new namespace creation process.":::
     
 5.  In **Create a namespace**, enter a name for the namespace, and select **Create**.
-6.  Select the new namespace. :::image type="content" source="../media/select-new-namespace-f060aee3.png" alt-text="Displays a screenshot of the newly created namespace.":::
+6.  Select the new namespace. :::image type="content" source="../media/select-new-namespace-f060aee3.png" alt-text="Screenshot of the newly created namespace.":::
     
-7.  To edit the namespace, select **YAML**. :::image type="content" source="../media/edit-namespace-yaml-1220bb0c.png" alt-text="Displays a screenshot of the YAML for the namespace.":::
+7.  To edit the namespace, select **YAML**. :::image type="content" source="../media/edit-namespace-yaml-1220bb0c.png" alt-text="Screenshot of the YAML for the namespace.":::
     
 8.  Select **Review + save** to save YAML updates to the namespace.
