@@ -38,7 +38,7 @@ Before you create a configuration, you must specify which devices or modules you
 
 You can use the Azure portal to begin the process of creating a Configuration as follows:
 
-1. In the Azure Portal, open your IoT hub.
+1. In the Azure portal, open your IoT hub.
 2. Select **Configurations + Deployments** in the left navigation pane.
 3. Select **Add** and choose **Device twin configuration** or **Module twin configuration** from the drop-down list.
 
@@ -52,15 +52,15 @@ There are five steps to create a configuration. The following five sections walk
 
 ### 2- Twin settings
 
-This section defines the content to be set in targeted device twin or module twin desired properties. There are two inputs for each set of settings. The first is the twin path, which is the path to the JSON section within the twin desired properties that will be set. The second is the JSON content to be inserted in that section.
+This section defines the content to be set in targeted device twin or module twin desired properties. There are two inputs for each set of settings. The first is the twin path, which is the path to the JSON section within the twin desired properties that are set. The second is the JSON content to be inserted in that section.
 
-For example, you could set the twin path to "properties.desired.chiller-water" and then provide the JSON content shown below:
+For example, you could set the twin path to "properties.desired.chiller-water" and then provide the JSON content shown as follows:
 
 :::image type="content" source="../media/m08-l03-device-management-scale-configurations-specify-settings-2c07c48e.png" alt-text="Screenshot that shows how to use the device twin path to specify the target content to be set when using Tags to target device twins.":::
 
 You can also set individual settings by specifying the entire path in the Device Twin Path and the value in the Content with no brackets. For example, set the Device Twin Path to `properties.desired.chiller-water.temperature` and set the Content to `66`.
 
-If two or more configurations target the same Device Twin Path, the Content from the highest priority configuration will apply (priority is defined below).
+If two or more configurations target the same Device Twin Path, the Content from the highest priority configuration will apply (priority is defined in 3 - Target devices or modules, step a.).
 
 If you wish to remove a property, set the property value to null.
 
@@ -74,7 +74,7 @@ Since multiple configurations may target the same device or module, you should g
 
 a. Enter a positive integer for the configuration **Priority**. The highest numerical value is considered the highest priority. If two configurations have the same priority number, the one that was created most recently wins.
 
-b. Enter a **Target condition** to determine which devices will be targeted with this configuration. The condition is based on device twin tags or device twin reported properties and should match the expression format. For example, `tags.environment='test'` or `properties.reported.chillerProperties.model='4000x'`. You can specify `*` to target all devices.
+b. Enter a **Target condition** to determine which devices are targeted with this configuration. The condition is based on device twin tags or device twin reported properties and should match the expression format. For example, `tags.environment='test'` or `properties.reported.chillerProperties.model='4000x'`. You can specify `*` to target all devices.
 
 For automatic module configuration, use a query to specify tags or reported properties from the modules registered to the IoT hub. For example, `from devices.modules where tags.environment='test'` or `from devices.modules where properties.reported.chillerProperties.model='4000x'`. The wildcard cannot be used to target all modules.
 
@@ -143,8 +143,8 @@ When you modify a configuration, the changes immediately replicate to all target
 If you update the target condition, the following updates occur:
 
 - If a device twin didn't meet the old target condition, but meets the new target condition and this configuration is the highest priority for that device twin, then this configuration is applied to the device twin.
-- If a device twin no longer meets the target condition, the settings from the configuration will be removed and the device twin will be modified by the next highest priority configuration.
-- If a device twin currently running this configuration no longer meets the target condition and doesn't meet the target condition of any other configurations, then the settings from the configuration will be removed and no other changes will be made on the twin.
+- If a device twin no longer meets the target condition, the settings from the configuration are removed and the device twin are modified by the next highest priority configuration.
+- If a device twin currently running this configuration no longer meets the target condition and doesn't meet the target condition of any other configurations, then the settings from the configuration are removed and no other changes are made on the twin.
 
 To modify a configuration, use the following steps:
 
