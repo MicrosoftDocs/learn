@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-active-directory.select-editions
-title: Select Azure Active Directory editions
+title: Select Microsoft Entra editions
 metadata:
-  title: Select Azure Active Directory editions
-  description: "Select Azure Active Directory editions"
+  title: Select Microsoft Entra editions
+  description: "Select Microsoft Entra editions"
   ms.date: 08/18/2023
   author: wwlpublish
   ms.author: cynthist

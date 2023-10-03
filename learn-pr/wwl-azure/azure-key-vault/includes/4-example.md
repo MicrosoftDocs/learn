@@ -1,11 +1,11 @@
-In this example, we're developing an application that uses a certificate for SSL, Azure Storage to store data, and an RSA 2,048-bit key for sign operations. Our application runs in an Azure virtual machine (VM) (or a virtual machine scale set). We can use a key vault to store the application secrets. We can store the bootstrap certificate that's used by the application to authenticate with Azure AD.
+In this example, we're developing an application that uses a certificate for SSL, Azure Storage to store data, and an RSA 2,048-bit key for sign operations. Our application runs in an Azure virtual machine (VM) (or a virtual machine scale set). We can use a key vault to store the application secrets. We can store the bootstrap certificate that's used by the application to authenticate with Microsoft Entra ID.
 
 We need access to the following stored keys and secrets:
 
  -  **SSL certificate** \- Used for SSL.
  -  **Storage key** \- Used to access the Storage account.
  -  **RSA 2,048-bit key** \- Used for sign operations.
- -  **Bootstrap certificate** \- Used to authenticate with Azure AD. After access is granted, we can fetch the storage key and use the RSA key for signing.
+ -  **Bootstrap certificate** \- Used to authenticate with Microsoft Entra ID. After access is granted, we can fetch the storage key and use the RSA key for signing.
 
 We need to define the following roles to specify who can manage, deploy, and audit our application:
 

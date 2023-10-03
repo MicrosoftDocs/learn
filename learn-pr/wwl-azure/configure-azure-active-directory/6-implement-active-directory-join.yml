@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-active-directory.implement-ad-join
-title: Implement Azure Active Directory join
+title: Implement Microsoft Entra join
 metadata:
-  title: Implement Azure Active Directory join
-  description: "Implement Azure Active Directory join"
+  title: Implement Microsoft Entra join
+  description: "Implement Microsoft Entra join"
   ms.date: 08/18/2023
   author: wwlpublish
   ms.author: cynthist
