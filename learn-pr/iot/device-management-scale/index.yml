@@ -16,7 +16,7 @@ abstract: |
   After you complete this module, you will be able to:
   - Describe how to use device management jobs in Azure IoT Hub.
   - Describe automatic device management using Azure IoT Hub.
-  - Describe device management best practices in Azure IoT Hub.
+  - Describe device management best practices for Azure IoT Hub.
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
