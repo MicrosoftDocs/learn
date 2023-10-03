@@ -40,22 +40,22 @@ Alternatively, if you prefer to work in code, you can create or edit a workflow 
 
 ![Screenshot of the Logic Apps code editor in the Azure portal.](../media/2-logic-apps-code-editor.png)
 
-One reason why Logic Apps is so good at integration is that [over 200 connectors are included](/connectors/connector-reference/). A *connector* is a Logic Apps component that provides an interface to an external service. For example, the [Twitter connector](/connectors/twitter/) allows you to send and retrieve tweets, while the [Office 365 Outlook connector](/connectors/office365/) lets you manage your email, calendar, and contacts. Logic Apps provides hundreds of pre-built connectors that you can use to create your apps. If you have an unusual or unique system that you want to call from Logic Apps, you can [create your own connector](/connectors/custom-connectors/) if your system exposes a REST API.
+One reason why Logic Apps is so good at integration is that [over 200 connectors are included](/connectors/connector-reference/). A *connector* is a Logic Apps component that provides an interface to an external service. For example, the [X connector](/connectors/twitter/) allows you to send and retrieve short posts, while the [Office 365 Outlook connector](/connectors/office365/) lets you manage your email, calendar, and contacts. Logic Apps provides hundreds of pre-built connectors that you can use to create your apps. If you have an unusual or unique system that you want to call from Logic Apps, you can [create your own connector](/connectors/custom-connectors/) if your system exposes a REST API.
 
 ### Microsoft Power Automate
 
 :::image type="icon" border="false" source="../media/2-microsoft-flow-logo.png":::
 
-Microsoft [Power Automate](https://flow.microsoft.com/) is a service to create workflows even when you have no development or IT Pro experience. You can create workflows that integrate and orchestrate many different components by using the website or the Microsoft [Power Automate mobile app](https://flow.microsoft.com/mobile/download/).
+Microsoft [Power Automate](https://flow.microsoft.com/) is a service to create workflows even when you have no development or IT Pro experience. You can create workflows that integrate and orchestrate many different components by using the website or the Microsoft [Power Automate mobile app](https://learn.microsoft.com/en-us/power-automate/mobile/overview-mobile).
 
 There are four different types of flow that you can create:
 
-- **Automated**: Starts by a trigger from some event. For example, the event could be the arrival of a new tweet or a new file being uploaded.
+- **Automated**: Starts by a trigger from some event. For example, the event could be the arrival of a new short post or a new file being uploaded.
 - **Button**: Runs a repetitive task with a single click from your mobile device.
 - **Scheduled**: Runs regularly. For example, once a week, on a specific date, or after 10 hours.
 - **Business process**: Models a business process such as the stock ordering process or the complaints procedure. The flow process can have: notifications to required people; with their approval recorded; calendar dates for steps; and recorded time of flow steps.
 
-Microsoft Power Automate provides an easy-to-use design surface to create these types of flows. As the following screenshot illustrates, the designer makes it easy to design and lay out your process.
+Microsoft Power Automate provides an easy-to-use design surface to create these types of flows. As the following screenshot illustrates, the flow designer makes it easy to design and lay out your process.
 
 ![Screenshot of the Microsoft Power Automate designer showing a workflow with a file trigger, an Office action to get a user's profile and an Outlook action to send an email.](../media/2-flow-designer.png)
 
@@ -89,7 +89,7 @@ The [Azure App Service](https://azure.microsoft.com/services/app-service/) is a 
 
 To determine what actions your WebJob takes, you can write code in several different languages. For example, you can script the WebJob by writing code in a Shell Script (Windows, PowerShell, Bash). Alternatively, you can write a program in PHP, Python, Java, or JavaScript.
 
-You can also program a WebJob by using the .NET Framework or the .NET Core Framework and a .NET language such as C# or VB.NET. In this case, you can also use the WebJobs SDK to make the task easier. The SDK includes a range of classes, such as `JobHostConfiguration` and `HostBuilder`, which reduce the amount of code required to interact with the Azure App Service.
+You can also program a WebJob by using .NET and a .NET language such as C# or VB.NET. In this case, you can also use the WebJobs SDK to make the task easier. The SDK includes a range of classes, such as `JobHostConfiguration` and `HostBuilder`, which reduce the amount of code required to interact with the Azure App Service.
 
 The WebJobs SDK only supports C# and the NuGet package manager.
 
@@ -103,23 +103,23 @@ When you create an Azure Function, you can start by writing the code for it in t
 
 To create an Azure Function, choose from the range of templates. The following list is a sample of some of the templates available to you:
 
-- **HTTPTrigger**. When you want the code to execute in response to a request sent through the HTTP protocol.
-- **TimerTrigger**. When you want the code to execute according to a schedule.
-- **BlobTrigger**. When you want the code to execute when a new blob is added to an Azure Storage account.
-- **CosmosDBTrigger**. When you want the code to execute in response to new or updated documents in a NoSQL database.
+- **HTTP trigger**. When you want the code to execute in response to a request sent through the HTTP protocol.
+- **Timer trigger**. When you want the code to execute according to a schedule.
+- **Blob storage trigger**. When you want the code to execute when a new blob is added to an Azure Storage account.
+- **Cosmos DB trigger**. When you want the code to execute in response to new or updated documents in a NoSQL database.
 
 Azure Functions can integrate with many different services both within Azure and from third parties. These services can trigger your function, or send data input to your function, or receive data output from your function.
 
 ### Code-first technologies compared
 
-In most cases, the simple administration and more flexible coding model provided by Azure Functions may lead you to choose them in preference to WebJobs. However, you may choose WebJobs for the following reasons:
+In most cases, the simple administration and more flexible coding model provided by Azure Functions may lead you to choose them in preference to WebJobs. However, you might choose WebJobs for the following reasons:
 
 - You want the code to be a part of an existing App Service application and to be managed as part of that application, for example in the same Azure DevOps environment.
 - You need close control over the object that listens for events that trigger the code. This object in question is the `JobHost` class, and you have more flexibility to modify its behavior in WebJobs.
 
 | | Azure WebJobs | Azure Functions |
 | -- | --| -- |
-| **Supported languages** | C# if you're using the WebJobs SDK | C#, Java, JavaScript, PowerShell, and so on |
+| **Supported languages** | C# if you're using the WebJobs SDK | C#, Java, JavaScript, PowerShell, and more |
 | **Automatic scaling** | No | Yes |
 | **Development and testing in a browser** | No | Yes |
 | **Pay-per-use pricing** | No | Yes |
