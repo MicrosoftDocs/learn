@@ -2,7 +2,7 @@
 uid: learn.wwl.examine-approaches-to-device-management-at-scale
 metadata:
   title: Examine approaches to device management at scale using Azure IoT Hub
-  description: "Examine the approaches for applying device management tasks to large numbers of IoT devices using Azure IoT Hub based on device properties or other identifying characteristics."
+  description: "Examine the approaches to apply device management tasks to large numbers of IoT devices using Azure IoT Hub."
   ms.date: 10/01/2023
   author: kgremban
   ms.author: kgremban
@@ -11,7 +11,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: iot-hub
 title: Examine approaches to device management at scale using Azure IoT Hub
-summary: Examine the approaches for applying device management tasks to large numbers of IoT devices using Azure IoT Hub based on device properties or other identifying characteristics.
+summary: Examine the approaches to apply device management tasks to large numbers of IoT devices using Azure IoT Hub.
 abstract: |
   After you complete this module, you will be able to:
   - Describe how to use device management jobs in Azure IoT Hub.
