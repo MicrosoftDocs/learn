@@ -16,7 +16,7 @@ Thanks to this transformation, Manulife could shift resources from workers on on
 
 Manulife is using a wide range of Azure products to boost performance in many parallel AI initiatives. The combination of AKS, Azure AI Services, and Azure Machine Learning empowers workers to get more out of the available data. It allows for faster underwriting and more reliable, data-based decision making.
 
-More specifically, Manulife is using **Azure Machine Learning and Azure Azure AI Document Intelligence to fight fraud**. These tools find patterns in the data that help identify fraudulent claims. This project has substantial potential, given that insurance companies may lose hundreds of millions a year because of fraud.
+More specifically, Manulife is using **Azure Machine Learning and Azure AI Document Intelligence to fight fraud**. These tools find patterns in the data that help identify fraudulent claims. This project has substantial potential, given that insurance companies may lose hundreds of millions a year because of fraud.
 
 Meanwhile, Azure has scaled up how many documents customers could submit online, which has made more data available for Manulife document intelligence models. John Hancock, the Manulife division at the United States, is using **Azure Synapse Analytics** to run AI models on these bigger datasets. This initiative is succeeding in getting more insights, ensuring accuracy, speeding up workflows, and improving customer experiences.
 
