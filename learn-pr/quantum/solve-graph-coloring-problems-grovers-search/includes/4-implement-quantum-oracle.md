@@ -80,7 +80,7 @@ A typical approach to implementing a quantum oracle for a given function is as f
 
 Let's see how this approach works for our vertex coloring problem!
 
-### Step 1. Check whether the colors of two vertices are the same
+### Step 1: Check whether the colors of two vertices are the same
 
 The smallest building block for checking whether the given graph coloring is valid, is taking a pair of vertices connected by an edge and checking whether their assigned colors are the same or different.
 
@@ -144,7 +144,7 @@ $$|00\rangle_\textrm{c0} \otimes \frac12\big(|00\rangle_\textrm{c1} \otimes |1\r
 > If the value of the function we're evaluating is the same for all inputs, the target qubit will remain unentangled from the input register, storing this value instead. 
 > In our case, some inputs yield $f(x) = 0$ and some yield $f(x) = 1$, so you cannot separate the information about the inputs from the information about the output any longer.
 
-### Step 2. Check whether the vertex coloring is valid
+### Step 2: Check whether the vertex coloring is valid
 
 Now that we know how to check that the colors of any two vertices are different, we can represent the vertex coloring validation as follows:
 
@@ -178,7 +178,7 @@ The coloring is valid
 * Modify the code to run on superpositions of inputs and see what happens. 
 
 
-### Step 3. Convert the marking oracle into the phase oracle
+### Step 3: Convert the marking oracle into the phase oracle
 
 Now, we have a marking oracle, that is, an operation that marks the qubit states that represent valid colorings in the state of an extra qubit. How can we use it to implement a phase oracle, that is, another operation that would mark such states using their phases?
 
