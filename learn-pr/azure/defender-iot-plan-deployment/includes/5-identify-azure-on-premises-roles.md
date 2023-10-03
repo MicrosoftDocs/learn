@@ -31,7 +31,7 @@ On-premises roles include:
 
 By default, each on-premises management console is installed with the privileged support user, which has access to advanced tools for troubleshooting and setup.
 
-## OT Sensor roles
+## OT sensor roles
 
 Microsoft Defender for IoT provides tools for managing on-premises user access in the OT network sensor.
 
