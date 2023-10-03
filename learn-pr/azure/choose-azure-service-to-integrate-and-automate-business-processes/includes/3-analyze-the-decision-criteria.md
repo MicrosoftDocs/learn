@@ -6,7 +6,7 @@ We've introduced an array of Azure technologies that could be used to help build
 
 The following diagram shows a simplified flow chart that you can use to choose the best technology to use for your business process:
 
-:::image type="content" source="../media/3-service-choice-flow-diagram.png" alt-text="Diagram of decision flow chart that will be described in depth in the text that follows.":::
+:::image type="content" source="../media/3-service-choice-flow-diagram.png" alt-text="Diagram of decision flow chart described in depth in the text that follows.":::
 
 The first question to ask is whether you prefer to design the workflow in a GUI designer tool or by writing code. Valid reasons for using a design-first tool include:
 
