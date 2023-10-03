@@ -74,7 +74,7 @@ That's it, you've created a resource group that you can now use when you deploy 
 
     :::image type="content" source="../media/2-resource-group-overview.png" alt-text="Screenshot of Azure portal showing new resource group pane with no resources in it yet.":::
 
-1. On the **Overview** page, you'll find the basic information about the resource group, such as its subscription, the subscription ID, any tags that are applied, and a history of the deployments to this resource group. We'll cover tags in the next unit. If you expand **Essentials** at the top of the page, you'll find the **Deployments** link, which takes you to a new panel with the history of all deployments to this resource group. Any time you create a resource, it's a deployment, and you'll see the history for each resource group here.
+1. On the **Overview** page, you'll find the basic information about the resource group, such as its subscription, the subscription ID, any tags that are applied, and a history of the deployments to this resource group. We'll cover tags in the next unit. If you expand **Essentials** at the top of the page, you'll find the **Deployments** link, which takes you to a new panel with the history of all deployments to this resource group. Whenever you create a resource, it's a deployment, and you'll see the history for each resource group here.
 
     Using the toolbar across the top of the resource group page, you can add more resources, change the columns in the list, move the resource group to another subscription, or delete it entirely.
 
