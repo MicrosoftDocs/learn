@@ -2,12 +2,12 @@
 
 Conditional access is a feature of Enterprise Mobility + Security (EMS). It provides granular access control to organizational data while allowing users to work from essentially any device and location. Conditional access helps to protect your company’s email and data from the security risks posed by devices that are noncompliant.
 
-Intune and Azure AD work together to enable conditional access for mobile devices. Intune provides information about device compliance with Azure AD. When Azure AD receives a request to access resources, it compares this information to conditional access policies.
+Intune and Microsoft Entra ID work together to enable conditional access for mobile devices. Intune provides information about device compliance with Microsoft Entra ID. When Microsoft Entra ID receives a request to access resources, it compares this information to conditional access policies.
 
  -  If the conditional access policy says that noncompliant devices can't access a resource, the access request is denied.
  -  If access is denied, the user is prompted to enroll the device and fix the compliance problems.
 
-You can also set policies in Azure AD that allow only domain-joined or Intune-enrolled devices to access resources.
+You can also set policies in Microsoft Entra ID that allow only domain-joined or Intune-enrolled devices to access resources.
 
 A conditional access policy is a definition of an access scenario using the **When this happens**: **Then do this** pattern.
 
