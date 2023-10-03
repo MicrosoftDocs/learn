@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-ai-services
 metadata:
-  title: Secure Azure AI Services
-  description: "Learn to secure Azure AI Services."
+  title: Secure Azure AI services
+  description: "Learn to secure Azure AI services."
   ms.date: 09/28/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure-ai-services
-title: Secure Azure AI Services
-summary: Securing Azure AI Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
+title: Secure Azure AI services
+summary: Securing Azure AI services can help prevent data loss and privacy violations for user data that may be a part of the solution.
 abstract: |
   After completing this module, you will know how to:
-  - Consider authentication for Azure AI Services
-  - Manage network security for Azure AI Services
+  - Consider authentication for Azure AI services
+  - Manage network security for Azure AI services
 prerequisites: |
   - Active Azure subscription
   - Ability to navigate the Azure portal
