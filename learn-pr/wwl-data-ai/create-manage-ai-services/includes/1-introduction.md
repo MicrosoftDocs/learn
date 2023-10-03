@@ -7,7 +7,6 @@ AI services includes a wide range of individual services across multiple categor
 | Azure AI Language | Azure AI Speech | Azure AI Computer Vision |  Azure AI Anomaly Detector |
 | Azure AI Translator | | Azure AI Custom Vision | Azure AI Content Moderator |
 | | | Azure AI Face | Azure AI Personalizer |
-| | | | |
 
 You can use AI services to build your own AI solutions to provide out-of-the-box solutions for common AI scenarios. Azure AI services include:
 
@@ -20,7 +19,7 @@ While the details of each AI service can vary, the approach to provisioning and 
 
 In this module, you will learn how to:
 
-- Create Azure AI Services resources in an Azure subscription.
+- Create Azure AI services resources in an Azure subscription.
 - Identify endpoints, keys, and locations required to consume an AI services resource.
 - Use a REST API to consume an AI service.
 - Use an SDK to consume an AI service.

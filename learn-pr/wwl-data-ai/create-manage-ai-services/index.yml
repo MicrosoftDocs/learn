@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.create-manage-ai-services
 metadata:
-  title: Create and consume Azure AI Services
-  description: "Learn to create and consume Azure AI Services."
+  title: Create and consume Azure AI services
+  description: "Learn to create and consume Azure AI services."
   ms.date: 09/28/2023
   author: wwlpublish
   ms.author: berryivor
@@ -13,7 +13,7 @@ summary: Azure AI Services enable developers to easily add AI capabilities into 
 abstract: |
   After completing this module, you'll able to:
   - Create Azure AI Services resources in an Azure subscription.
-  - Identify endpoints, keys, and locations required to consume an Azure AI Services resource.
+  - Identify endpoints, keys, and locations required to consume an Azure AI services resource.
   - Use a REST API and an SDK to consume Azure AI services.
 prerequisites: |
   Before starting this module, you should have:
