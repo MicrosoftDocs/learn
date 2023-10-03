@@ -15,7 +15,7 @@ The article [Create an additional Azure subscription](/azure/cost-management-bil
 
 1. Open the [Azure landing zone accelerator in the Azure portal](https://aka.ms/caf/ready/accelerator). This portal experience will guide you through deployment.
 1. On the **Deployment location** tab:
-   1. For **Directory**, choose the appropriate Azure Active Directory tenant.
+   1. For **Directory**, choose the appropriate Microsoft Entra tenant.
       
       If you don't have proper permissions, an error appears below your tenant.
    1. For **Region**, select a region from the dropdown list. 

@@ -30,7 +30,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-    - content: John is granting permission to an application registered within the Azure Active Directory (Azure AD) tenant. Which of the following permissions will allow a daemon application to authenticate as itself without user interaction and call Microsoft Graph?
+    - content: John is granting permission to an application registered within the Microsoft Entra tenant. Which of the following permissions will allow a daemon application to authenticate as itself without user interaction and call Microsoft Graph?
       choices:
         - content: Application permissions
           isCorrect: true
@@ -46,10 +46,10 @@ quiz:
         - content: pip install -r requirements.txt
           isCorrect: false
           explanation: Incorrect. The MSAL for Python is new library being introduced to the project and doesn't exist in the requirements.txt configuration file.
-        - content: pip install msal
+        - content: pip install MSAL
           isCorrect: true
           explanation: Correct. Python pip is the package manager for Python packages. We can use pip to install packages that don't come with Python.
-        - content: python install msal
+        - content: python install MSAL
           isCorrect: false
           explanation: Incorrect. The command is wrong and Python interpreter try to run a file.
     - content: John is building a new confidential client application for his company. Which of the following token grant flows does a confidential client application use?
