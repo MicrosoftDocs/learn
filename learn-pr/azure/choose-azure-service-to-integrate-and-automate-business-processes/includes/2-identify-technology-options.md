@@ -18,15 +18,15 @@ Business processes modeled in software are often called *workflows*. Azure inclu
 These four technologies have some similarities. For example:
 
 - They can all accept **inputs**. An input is a piece of data or a file that is supplied to the workflow.
-- They can all run **actions**. An action is a simple operation that the workflow executes and may often modify data or cause another action to be performed.
-- They can all include **conditions**. A condition is a test, often run against an input, that may decide which action to execute next.
+- They can all run **actions**. An action is a simple operation that the workflow runs and may often modify data or cause another action to be performed.
+- They can all include **conditions**. A condition is a test, often run against an input, that may decide which action to run next.
 - They can all produce **outputs**. An output is a piece of data or a file that is created by the workflow.
 
 In addition, workflows created with these technologies can either start based on a schedule or they can be triggered by some external event.
 
 ## Design-first technologies
 
-When business analysts discuss and plan a business process, they may draw a flow diagram on paper. With Logic Apps and Microsoft Power Automate, you can take a similar approach to designing a workflow. They both include user interfaces in which you can draw out the workflow. We call this approach a *design-first* approach.
+When business analysts discuss and plan a business process, they may draw a flow diagram on paper. With Logic Apps and Microsoft Power Automate, you can take a similar approach to designing a workflow. They both include user interfaces where you can draw out the workflow. We call this approach a *design-first* approach.
 
 ### Logic Apps
 
