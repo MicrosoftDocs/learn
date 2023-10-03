@@ -2,7 +2,7 @@
 Our goal with this module was to provide you with helpful information to assist you in deciding if Microsoft Entra Permissions Management is right for your organization. To help with this decision, we wanted to make sure you understood:
 
 - What is cloud infrastructure entitlement management (CIEM), and how does it relate to a cloud security strategy?
-- What is Entra Permissions Management and how does it relate to CIEM and to Zero Trust?
+- What is Microsoft Entra Permissions Management and how does it relate to CIEM and to Zero Trust?
 - How does Permissions Management work within your cloud infrastructure and why would you want to add it for cloud security? 
 - How Permissions Management works, and what differentiates it from other cloud security products.
 
