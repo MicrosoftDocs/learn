@@ -10,7 +10,7 @@ You tried some basic commands, intermixing Bash and PowerShell commands.
 
 You learned a bit about working between the Windows and Linux file system, as well as what a standard WSL developer environment and workflow looks like.
 
-While we didn't go in-depth, you should now be confident that WSL will enable you to use both your preferred command-line tools and graphic user interface (GUI) apps, whether they're running on Windows or Linux.
+While we didn't go in-depth, you should now be confident that WSL will enable you to use both your preferred command-line tools and graphical user interface (GUI) apps, whether they're running on Windows or Linux.
 
 Lastly, you learned that there are some great resources that go in to more depth on these topics available to meet your needs and interests. We've linked a few of them below.
 
