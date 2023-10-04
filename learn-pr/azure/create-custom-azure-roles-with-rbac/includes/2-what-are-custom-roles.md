@@ -4,9 +4,9 @@ In this unit, you'll learn about custom roles in Azure role-based access control
 
 <a name='azure-active-directory-and-azure-roles'></a>
 
-## Microsoft Entra ID and Azure roles
+## Microsoft Entra and Azure roles
 
-Microsoft Entra roles and Azure roles are often confused when you first work with Azure. Microsoft Entra roles provide the mechanism for managing permissions to AD resources, like user accounts and passwords. Azure roles provide a wealth of capabilities for managing Azure resources like virtual machines (VMs) at a granular level.
+Microsoft Entra roles and Azure roles are often confused when you first work with Azure. Microsoft Entra roles provide the mechanism for managing permissions to Microsoft Entra resources, like user accounts and passwords. Azure roles provide a wealth of capabilities for managing Azure resources like virtual machines (VMs) at a granular level.
 
 ![Diagram that shows relationship of Azure roles and Microsoft Entra roles.](../media/2-azure-office-roles.svg)
 
