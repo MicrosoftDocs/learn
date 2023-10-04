@@ -17,7 +17,7 @@ Jobs are initiated by the solution back end and maintained by IoT Hub. You can i
 
 The following snippet shows the HTTPS 1.1 request details for executing a direct method on a set of devices using a job:
 
-```
+```http
 PUT /jobs/v2/<jobId>?api-version=2021-04-12
 
 Authorization: <config.sharedAccessSignature>
@@ -35,12 +35,11 @@ Content-Type: application/json; charset=utf-8
     "startTime": <jobStartTime>,          // as an ISO-8601 date string
     "maxExecutionTimeInSeconds": <maxExecutionTimeInSeconds>
 }
-
 ```
 
 The query condition can also be on a single device ID or on a list of device IDs as shown in the following examples:
 
-```
+```http
 "queryCondition" = "deviceId = 'MyDevice1'"
 "queryCondition" = "deviceId IN ['MyDevice1','MyDevice2']"
 "queryCondition" = "deviceId IN ['MyDevice1']"
@@ -52,8 +51,7 @@ The query condition can also be on a single device ID or on a list of device IDs
 
 The following snippet shows the request and response for a job scheduled to call a direct method named testMethod on all devices on contoso-hub-1:
 
-```
-
+```http
 PUT https://contoso-hub-1.azure-devices.net/jobs/v2/job01?api-version=2021-04-12 HTTP/1.1
 Authorization: SharedAccessSignature sr=contoso-hub-1.azure-devices.net&sig=68iv------------------------------------v8Hxalg%3D&se=1556849884&skn=iothubowner
 Content-Type: application/json; charset=utf-8
@@ -81,14 +79,13 @@ Server: Microsoft-HTTPAPI/2.0
 Date: Fri, 03 May 2022 01:46:18 GMT
 
 {"jobId":"job01","type":"scheduleDeviceMethod","status":"queued"}
-
 ```
 
 ## Jobs to update device twin properties
 
 The following snippet shows the HTTPS 1.1 request details for updating device twin properties using a job:
 
-```
+```http
 PUT /jobs/v2/<jobId>?api-version=2021-04-12
 
 Authorization: <config.sharedAccessSignature>
@@ -102,7 +99,6 @@ Content-Type: application/json; charset=utf-8
     "startTime": <jobStartTime>,          // as an ISO-8601 date string
     "maxExecutionTimeInSeconds": <maxExecutionTimeInSeconds>
 }
-
 ```
 
 > [!NOTE]
@@ -110,7 +106,7 @@ Content-Type: application/json; charset=utf-8
 
 The following snippet shows the request and response for a job scheduled to update device twin properties for test-device on contoso-hub-1:
 
-```
+```http
 PUT https://contoso-hub-1.azure-devices.net/jobs/v2/job02?api-version=2021-04-12 HTTP/1.1
 Authorization: SharedAccessSignature sr=contoso-hub-1.azure-devices.net&sig=BN0U-------------------------------------RuA%3D&se=1556925787&skn=iothubowner
 Content-Type: application/json; charset=utf-8
@@ -148,7 +144,7 @@ Date: Fri, 03 May 2022 22:45:13 GMT
 
 The following snippet shows the HTTPS 1.1 request details for querying for jobs:
 
-```
+```http
 GET /jobs/v2/query?api-version=2021-04-12[&jobType=<jobType>][&jobStatus=<jobStatus>][&pageSize=<pageSize>][&continuationToken=<continuationToken>]
 
 Authorization: <config.sharedAccessSignature>

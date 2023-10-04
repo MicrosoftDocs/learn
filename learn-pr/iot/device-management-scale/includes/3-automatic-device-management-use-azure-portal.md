@@ -30,8 +30,7 @@ Before you create a configuration, you must specify which devices or modules you
   "state": "Washington",
   "city": "Tacoma"
     }
-},
-
+}
 ```
 
 ## Create a configuration
@@ -42,15 +41,23 @@ You can use the Azure portal to begin the process of creating a Configuration as
 2. Select **Configurations + Deployments** in the left navigation pane.
 3. Select **Add** and choose **Device twin configuration** or **Module twin configuration** from the drop-down list.
 
-There are five steps to create a configuration. The following five sections walk through each step.
+There are five steps to create a configuration.
 
-### 1 - Name and label
+1. Name and label
+2. Twin settings
+3. Target devices or modules
+4. Specify metrics
+5. Review configuration
+
+The following sections walk through each step.
+
+### Name and label
 
 1. Give your configuration a unique name that is up to 128 lowercase letters. Lowercase letters and the following special characters are allowed: `-+%_*!'` Spaces are not allowed.
 2. Add labels to help track your configurations. Labels are **Name**, **Value** pairs that describe your configuration. For example, `HostPlatform`, `Linux` or `Version`, `3.0.1`.
 3. Select **Next** to move to the next step.
 
-### 2- Twin settings
+### Twin settings
 
 This section defines the content to be set in targeted device twin or module twin desired properties. There are two inputs for each set of settings. The first is the twin path, which is the path to the JSON section within the twin desired properties that are set. The second is the JSON content to be inserted in that section.
 
@@ -60,13 +67,13 @@ For example, you could set the twin path to "properties.desired.chiller-water" a
 
 You can also set individual settings by specifying the entire path in the Device Twin Path and the value in the Content with no brackets. For example, set the Device Twin Path to `properties.desired.chiller-water.temperature` and set the Content to `66`.
 
-If two or more configurations target the same Device Twin Path, the Content from the highest priority configuration will apply (priority is defined in section 3 - Target devices or modules as follows).
+If two or more configurations target the same Device Twin Path, the Content from the highest priority configuration will apply (priority is defined in section Target devices or modules as follows).
 
 If you wish to remove a property, set the property value to null.
 
 You can add more settings by selecting **Add Device Twin Setting** or **Add Module Twin Setting**.
 
-### 3 - Target devices or modules
+### Target devices or modules
 
 Use the tags property from your device twins to target the specific devices that should receive this configuration. You can also target devices by device twin reported properties.
 
@@ -78,7 +85,7 @@ Since multiple configurations may target the same device or module, you should g
 
 For automatic module configuration, use a query to specify tags or reported properties from the modules registered to the IoT hub. For example, `from devices.modules where tags.environment='test'` or `from devices.modules where properties.reported.chillerProperties.model='4000x'`. The wildcard cannot be used to target all modules.
 
-### 4 - Specify metrics
+### Specify metrics
 
 Metrics provide summary counts of the various states that a device may report back after applying configuration content. For example, you may create a metric for pending settings changes, a metric for errors, and a metric for successful settings changes.
 
@@ -92,7 +99,6 @@ For example:
 ```SQL
 SELECT deviceId FROM devices
   WHERE properties.reported.chillerWaterSettings.status='pending'
-
 ```
 
 You can include a clause that the configuration was applied, for example:
@@ -101,7 +107,6 @@ You can include a clause that the configuration was applied, for example:
 /* Include the double brackets. */
 SELECT deviceId FROM devices
   WHERE configurations.[[yourconfigname]].status='Applied'
-
 ```
 
 If you're building a metric to report on configured modules, select `moduleId` from `devices.modules`. For example:
@@ -109,10 +114,9 @@ If you're building a metric to report on configured modules, select `moduleId` f
 ```SQL
 SELECT deviceId, moduleId FROM devices.modules
   WHERE properties.reported.lastDesiredStatus.code = 200
-
 ```
 
-### 5 - Review configuration
+### Review configuration
 
 Review your configuration information, then select **Submit**.
 

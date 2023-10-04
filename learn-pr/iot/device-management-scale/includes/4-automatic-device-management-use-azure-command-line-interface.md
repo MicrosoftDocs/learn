@@ -25,7 +25,6 @@ You configure target devices by creating a configuration that consists of the ta
     --labels [labels] --content [file path] --hub-name [hub name] \
     --target-condition [target query] --priority [int] \
     --metrics [metric queries]
-
 ```
 
 - `--config-id` \- The name of the configuration that will be created in the IoT hub. Give your configuration a unique name that is up to 128 characters long. Lowercase letters and the following special characters are allowed: `-+%_*!'`. Spaces are not allowed.
@@ -43,7 +42,6 @@ Use the following command to display the contents of a configuration:
 ```cli
 az iot hub configuration show --config-id [configuration id] \
   --hub-name [hub name]
-
 ```
 
 - `--config-id` \- The name of the configuration that exists in the IoT hub.
@@ -60,7 +58,6 @@ You can show a list of device IDs, module IDs, or objects for each of the metric
 ```cli
 az iot hub configuration show-metric --config-id [configuration id] \
   --metric-id [metric id] --hub-name [hub name] --metric-type [type]
-
 ```
 
 - `--config-id` \- The name of the deployment that exists in the IoT hub.
@@ -83,7 +80,6 @@ Use the following command to update a configuration:
 ```cli
 az iot hub configuration update --config-id [configuration id] \
   --hub-name [hub name] --set [property1.property2='value']
-
 ```
 
 - `--config-id` \- The name of the configuration that exists in the IoT hub.
@@ -102,7 +98,6 @@ Use the following command to delete a configuration:
 ```cli
 az iot hub configuration delete --config-id [configuration id] \
   --hub-name [hub name]
-
 ```
 
 `--config-id` \- The name of the configuration that exists in the IoT hub.
