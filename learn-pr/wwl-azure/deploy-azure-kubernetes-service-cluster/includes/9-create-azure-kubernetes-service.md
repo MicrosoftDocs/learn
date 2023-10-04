@@ -9,7 +9,7 @@ When you deploy an AKS cluster, you specify the number and size of the nodes, an
 
 1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 2.  On the Azure portal menu or from the **Home** page, select **Create a resource**.
-3.  In the **Categories** section, select **Containers** &gt; **Azure Kubernetes Service (AKS)**.:::image type="content" source="../media/create-new-azure-kubernetes-service-957cc050.png" alt-text="Screenshot for how to create a resource.":::
+3.  In the **Categories** section, select **Containers** and then select **Azure Kubernetes Service (AKS)**.:::image type="content" source="../media/create-new-azure-kubernetes-service-957cc050.png" alt-text="Screenshot for how to create a resource.":::
     
 
 4.  On the **Basics** page, configure the following options:
