@@ -9,20 +9,24 @@ The following programs are available to support your Azure migration:
 
 ## Azure Migration and Modernize and Azure Innovate
 
-The [Azure Migration and Modernization Program (AMMP)](https://azure.microsoft.com/migration/migration-modernization-program/) helps you simplify your journey to the cloud.  Wherever you are in your journey, AMMP can help accelerate your progress. The program offers proactive guidance and the right mix of expert help at every stage to ensure you can migrate and modernize applications, infrastructure, and databases with confidence. All customers can access resources, partners, and tools such as free migration tools, step-by-step technical guidance, training and help in finding a migration partner.  
+The [Azure Migration and Modernization Program (AMMP)](https://azure.microsoft.com/migration/migration-modernization-program/) helps you simplify your journey to the cloud.  Wherever you are in your journey, Azure Migrate and modernize can help accelerate your progress. The program offers proactive guidance and the right mix of expert help at every stage to ensure you can migrate and modernize applications, infrastructure, and databases with confidence. All customers can access resources, partners, and tools such as free migration tools, step-by-step technical guidance, training and help in finding a migration partner.  
 
 Here are some of the benefits available from Azure Migrate and Modernize and Azure Innovate:
 
-- Curated, step-by-step guidance from Microsoft experts and specialized migration partners based on the proven Microsoft Cloud Adoption Framework for Azure.
-- Technical skill building with foundational and role-specific courses to develop new Azure skills and long-term organizational readiness.
-- Free Azure migration tools, including Azure Migrate to assess and migrate workloads, and Microsoft Cost Management to optimize costs.
-- Offers and incentives to offset transition costs, including Azure Hybrid Benefit and free Extended Security Updates for Windows Server and SQL Server 2008.
+- **Comprehensive resources in one place** - Extensive guidance with assessments, proof of concepts (PoCs), pilots, tooling, deployment assistance to ensure a well architected and optimized approach from start to finish.
+- **Proven technical frameworks** - Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF), helps you to design optimized workloads from the start, with security and cost recommendations built throughout.
+- **Free automated tooling** - Azure Migrate provides you with discovery, assessment, business case analysis, planning, migration, and modernization capabilities.
+- **Access to experts** - Microsoft experts or specialized partners will help you at each step from planning to deployment which includes, assessments, total cost of ownership (TCO) analysis, cloud adoption approaches, workshops, pilots, and deployment.
+- **Microsoft-led delivery** - In addition to specialized partners being available for more complex workloads, with Azure Migrate and Modernize, you can also benefit from Microsoft-led delivery for rapid rehost migrations to increase both capacity and capability across the Azure portfolio to get the expert help as needed.
+- **Partner funding for specialized partners** - An increased investment in partner ecosystem to increase both capacity and capability across the Azure portfolio to get the expert help as needed.
+- **Extensive coverage from migration to innovation** - Azure Migrate and modernize and Azure Innovate helps you across a wide range of your cloud adoption needs which includes migrating or modernize Windows Server & SQL Server, Linux, Oracle, SAP, HPC, analytics AI and more.
+
 
 :::image type="content" source="../media/ammp-phases-2.png" alt-text="Diagram showing the Azure Migration and Modernization Program project phases.":::
 
 ### Self-guided digital support
 
-As a part of AMMP, Microsoft provides self-guided support to help put your team on a path to success. You can gain immediate access to curated resources designed to support your migration and modernization efforts. An Azure sales specialist calls to help answer questions about Azure and your migration and modernization plans. You also get a short email series that provides guidance and access to learning cloud skills with Azure technical training through Microsoft Learn and accredited partners.
+As a part of Azure Migrate and modernize, Microsoft provides self-guided support to help put your team on a path to success. You can gain immediate access to curated resources designed to support your migration and modernization efforts. An Azure sales specialist calls to help answer questions about Azure and your migration and modernization plans. You also get a short email series that provides guidance and access to learning cloud skills with Azure technical training through Microsoft Learn and accredited partners.
 
 ### Guided deployments
 
