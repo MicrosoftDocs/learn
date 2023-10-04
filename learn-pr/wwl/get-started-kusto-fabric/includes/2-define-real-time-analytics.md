@@ -4,7 +4,7 @@ Real-Time Analytics delivers high performance for data of various sizes, ranging
 
 ## Understand Real-Time Analytics in Microsoft Fabric
 
-Real-Time Analytics is a fully managed service that is optimized for streaming time-series data. With Real-Time Analytics you're able to get consistent performance searching all types of data, which includes structured, unstructured, and semi-structured data at scale. Additionally, it's fully integrated with the entire suite of Fabric capabilities, which allows tight integration of loading and visualization.
+Real-Time Analytics is a fully managed service that is optimized for streaming time-series data. With Real-Time Analytics you're able to get consistent performance searching all types of data at scale, including structured, unstructured, and semi-structured data. Additionally, it's fully integrated with the entire suite of Fabric capabilities, which allows a streamlined workflow from data loading to data visualization.
 
 By Using Real-Time Analytics in Fabric, you can:
 
@@ -13,7 +13,7 @@ By Using Real-Time Analytics in Fabric, you can:
 - Import data with by-default streaming that provides high performance, low latency, high freshness data analysis.
 - Imported data undergoes default partitioning - both time and hash-based partitioning, and by-default indexing.
 - Work with versatile data structures and query structured, semi-structured, or free text.
-Query raw data without transformation, with high performance, incredibly low response time, and using a wide variety of available operators.
+- Query raw data without transformation, with high performance, incredibly low response time, and using a wide variety of available operators.
 - Scale to an unlimited amount of data, from gigabytes to petabytes, with unlimited scale on concurrent queries and concurrent users.
 - Integrate seamlessly with other workloads and items in Microsoft Fabric.
 
