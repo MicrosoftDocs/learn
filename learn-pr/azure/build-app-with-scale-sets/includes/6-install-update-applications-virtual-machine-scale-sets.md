@@ -72,7 +72,7 @@ To specify the upgrade policy mode when you provision a Virtual Machine Scale Se
 az vmss create \
   --resource-group MyResourceGroup \
   --name MyScaleSet \
-  --image UbuntuLTS \
+  --image Ubuntu2204 \
   --upgrade-policy-mode automatic \
   --admin-username azureuser \
   --generate-ssh-keys
