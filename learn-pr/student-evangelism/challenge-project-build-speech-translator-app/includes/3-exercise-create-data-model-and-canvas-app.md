@@ -3,7 +3,7 @@ Your first activity will be to create a Dataverse table to store conversation hi
 Let's dive deeper into other tasks to be carried out.
 
 ## Specification
-Create a Power Apps App that meets the following basic functionalities and specifications:
+Create a Power Apps that meets the following basic functionalities and specifications:
 
 - Create a custom table to capture the conversation. Here are some recommendations for storing the speech recognition and translation data in Dataverse tables:
 
