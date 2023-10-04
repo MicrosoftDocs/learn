@@ -1,6 +1,6 @@
 Azure Monitor is a comprehensive monitoring solution that helps you maximize the performance and availability of your cloud and hybrid resources.
 
-In this module you learned how to:
+In this module, you learned how to:
 
 - Deploy and configure Log Analytics.
 - Configure monitoring for web apps.
