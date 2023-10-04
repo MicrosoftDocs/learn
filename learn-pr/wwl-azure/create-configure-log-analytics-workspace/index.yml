@@ -16,6 +16,7 @@ abstract: |
   - Configure Health Status Alerts for a Log Analytics workspace
 prerequisites: ""
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - intermediate
 roles:
