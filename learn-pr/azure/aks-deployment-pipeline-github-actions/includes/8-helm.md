@@ -101,7 +101,7 @@ spec:
               name: http
 ```
 
-Then, you just need to run the Helm command to install the workload and pass this argument:
+Then, you run helm install to point to your image and pass your charts folder:
 
 ```bash
 $ helm install contoso-website ./chart-location \
