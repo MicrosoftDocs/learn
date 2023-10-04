@@ -1,4 +1,4 @@
-# Exercise 3 - Integrate Azure AI Speech Service into Your Canvas App
+
 
 You're almost done. The last step is to make the features fully functional and maximizes their capabilities. Integrating AI into your solution is what makes this level of enhancement possible. It redefines the boundaries of what can be achieved, empowering you to accomplish more, faster than was feasible previously. In this case, AI-enabled language transcription takes it to the next level.
 
