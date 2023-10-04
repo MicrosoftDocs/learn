@@ -67,7 +67,7 @@ If you need a role that can also manage the data plane for example search indexe
 
 ## Secure outbound traffic
 
-Typically your outbound traffic indexes source data or enriches it using Artificial Intelligence (AI). The outbound connections support using key-based authentication, database logins, or Azure AD logins if you can use Azure Active Directory.
+Typically your outbound traffic indexes source data or enriches it using Artificial Intelligence (AI). The outbound connections support using key-based authentication, database logins, or Microsoft Entra logins if you can use Microsoft Entra ID.
 
 If your data sources are hosted on the Azure platform, you can also secure connections using a system or user-assigned managed identity.
 
@@ -94,7 +94,7 @@ With this field in place and populated with the allowed user or groups, you can 
 }
 ```
 
-This would filter the returned search results on the user ID and groups that this user belongs to. If your application can use Azure Active Directory, it's possible to use the user's identity and group memberships from there.
+This would filter the returned search results on the user ID and groups that this user belongs to. If your application can use Microsoft Entra ID, it's possible to use the user's identity and group memberships from there.
 
 > [!TIP]
-> For a step-by-step guide on how to use Azure Active Directory, see [Security filters for trimming Azure Cognitive Search results using Active Directory identities](/azure/search/search-security-trimming-for-azure-search-with-aad)
+> For a step-by-step guide on how to use Microsoft Entra ID, see [Security filters for trimming Azure Cognitive Search results using Active Directory identities](/azure/search/search-security-trimming-for-azure-search-with-aad)
