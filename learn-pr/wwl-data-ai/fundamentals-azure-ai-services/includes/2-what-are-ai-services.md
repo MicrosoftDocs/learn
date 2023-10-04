@@ -1,24 +1,6 @@
-Azure AI services are AI capabilities that can be built into web or mobile applications, in a way that’s straightforward to implement. These AI services include image recognition, natural language processing, speech, AI powered search, and more. There're over a dozen [different services](/azure/ai-services/what-are-ai-services#available-azure-ai-services) that can be used separately or together to add AI power to applications.
+Azure AI services are AI capabilities that can be built into web or mobile applications, in a way that's straightforward to implement. These AI services include image recognition, natural language processing, speech, AI-powered search, and more. There're over a dozen [different services](/azure/ai-services/what-are-ai-services#available-azure-ai-services) that can be used separately or together to add AI power to applications.
 
-|**Name**|**Description**|
-|-|-|
-|Azure OpenAI| Perform a wide variety of generative tasks with natural language, code, images, and more|
-|Azure AI Speech|Speech to text, text to speech, translation and speaker recognition|
-|Azure AI Language|Build apps with industry-leading natural language understanding capabilities|
-|Azure AI Translator|Translate more than 100 languages and dialects|
-|Azure AI Vision|Analyze content in images and videos|
-|Azure AI Custom Vision|Customize image recognition to fit your business|
-|Azure AI Face|Detect and identify people and emotions in images|
-|Azure AI Content Safety|An AI service that detects unwanted contents|
-|Azure AI Personalizer|Create rich, personalized experiences for each user|
-|Azure AI Bot Service|Create bots and connect them across channels|
-|Azure AI Document Intelligence|Turn documents into usabel data at a fraction of the time and cost|
-|Azure Cognitive Search|Bring AI-powered cloud search to your mobile and web apps|
-|Azure AI Metrics Advisor|Proactively monitor metrics and diagnose issues|
-|Azure AI Video Indexer|Extract actionable insights from your videos|
-|Azure AI Immersive Reader|Help users read and comprehend text|  
-
-Examples of what can be done with Azure AI services include using the Content Safety service to detect harmful content within text or images, including violent or hateful content, and report on its severity. Natural language capabilities are being used to summarize text, classify information, or extract key phrases. The Speech service provides powerful speech to text and text to speech capabilities, allowing speech to be accurately transcribed into text, or text to natural sounding voice audio. 
+Let's take a look at some examples of what can be done with Azure AI services. The Azure AI Content Safety service can be used to detect harmful content within text or images, including violent or hateful content, and report on its severity. The Azure AI Language service can be used to summarize text, classify information, or extract key phrases. The Azure AI Speech service provides powerful speech to text and text to speech capabilities, allowing speech to be accurately transcribed into text, or text to natural sounding voice audio. 
 
 Azure AI services are based on three principles that dramatically improve speed-to-market:
 - Prebuilt and ready to use
@@ -31,7 +13,7 @@ AI has been prohibitive for all but the largest technology companies because of 
 
 Azure AI services are a portfolio of services, with capabilities suitable for use cases across sectors and industries. 
 
-For example, in education, Immersive Reader is being used to support students by adapting to their requirements. Learners can have varying needs, such as wanting to read more slowly, get words or text translated into another language, or include pictures to aid their understanding. Immersive Reader helps students with different needs learn at their own pace, and in their own way.
+For example, in education, Immersive Reader is being used to support students by adapting to their requirements. Learners can have varying needs, such as wanting to read more slowly, get words or text translated into another language, or see pictures to aid their understanding. Immersive Reader helps students with different needs learn at their own pace, and in their own way.
 
 While Azure AI services can be used without any modification, some AI services can be customized to better fit specific requirements. Customization capabilities in Azure AI Vision, Azure AI Speech, and Azure OpenAI all allow you to add data to existing models. 
 
@@ -39,13 +21,13 @@ For example, in sport, athletes, and coaches are customizing Azure AI Vision to 
 
 ## Azure AI services are accessed through APIs
 
-Azure AI services are designed to be used in different development environments, with minimal coding. Developers can access AI services through REST APIs, client libraries, or integrate them with tools such as Logic Apps and Power Automate. APIs are application programming interfaces that define the information that is required for one component to use the services of the other. APIs enable software components to communicate, so one side can be updated without stopping the other from working. Find out more about development options [here](/azure/ai-services/what-are-ai-services#use-azure-ai-services-in-different-development-environments).
+Azure AI services are designed to be used in different development environments, with minimal coding. Developers can access AI services through REST APIs, client libraries, or integrate them with tools such as Logic Apps and Power Automate. APIs are application programming interfaces that define the information that is required for one component to use the services of the other. APIs enable software components to communicate, so one side can be updated without stopping the other from working. Find out more about development options for Azure AI services [here](/azure/ai-services/what-are-ai-services#use-azure-ai-services-in-different-development-environments).
 
 ![Screenshot of how Azure AI services are consumed by APIs.](../media/endpoints-keys.png)
 
 ## Azure AI services are available on Azure
 
-AI services are cloud-based and accessed as an Azure resource. This means that they are managed in the same way as other Azure services, such as platform as a service (PaaS), infrastructure as a service (IaaS), or a managed database service. From creating or deleting resources, to availability and billing, the Azure platform and resource manager provides a consistent framework for all your Azure services. 
+AI services are cloud-based and accessed through Azure resource. This means that they are managed in the same way as other Azure services, such as platform as a service (PaaS), infrastructure as a service (IaaS), or a managed database service. From creating or deleting resources, to availability and billing, the Azure platform and resource manager provides a consistent framework for all your Azure services. 
 
-**Note**: In some situations, AI has the potential to be used in ways that might compromise an individual’s privacy or rights. Microsoft follows [six AI principles](/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai) to help ensure AI services are ethical and fair. Because of this, certain AI services are restricted to ensure they are used responsibly.
+**Note**: In some situations, AI has the potential to be used in ways that might compromise an individual's privacy or rights. Microsoft follows [six AI principles](/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai) to help ensure AI services are ethical and fair. Because of this, certain AI services are restricted to ensure they are used responsibly.
 

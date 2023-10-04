@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-azure-ai-services.use-azure-ai-service
-title: Using an Azure AI service
+title: Using Azure AI services
 metadata:
-  title: Using an Azure AI service
-  description: "Using an Azure AI service"
-  ms.date: 09/29/2023
+  title: Using Azure AI services
+  description: "Using Azure AI services"
+  ms.date: 10/04/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial

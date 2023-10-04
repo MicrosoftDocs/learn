@@ -4,7 +4,7 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: "Knowledge Check"
-  ms.date: 09/29/2023
+  ms.date: 10/04/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -13,17 +13,6 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "You work for a wildlife sanctuary and are considering using AI to identify bird species from images. Which AI service should you use to prototype your idea?"
-    choices:
-    - content: "Azure AI Vision"
-      isCorrect: true
-      explanation: "Correct. Azure AI Vision allows you to add images to the existing model to improve the image identifier model. This is a good choice for identifying the small differences between bird species."
-    - content: "Azure AI Cognitive Search"
-      isCorrect: false
-      explanation: "Incorrect. Azure AI Cognitive Search includes data extraction and indexing capabilities for knowledge mining. Another Azure AI service should be used to identify individual bird species."
-    - content: "Azure OpenAI"
-      isCorrect: false
-      explanation: "Incorrect. Azure OpenAI helps organizations generate content and insights. Another Azure AI service should be used to identify bird species from images."
   - content: "Your application requires three separate AI services, and you want to see the cost for each separately. What type of resource(s) should you create?"
     choices:
     - content: "A multi-service resource that includes all the AI services that you require"
@@ -35,17 +24,17 @@ quiz:
     - content: "It is not possible to see costs separately for individual AI services"
       isCorrect: false
       explanation: "Incorrect. It is possible to see costs separately for each AI service resource you create."
-  - content: "You get an error message when trying to explore the capabilities of the translator service in the Language studio. What could be the problem?"
+  - content: "After you've logged into one of the Azure studios, what is one task you need to complete to begin using the studio?"
     choices:
-    - content: "The Language studio hasn’t been authenticated"
+    - content: "Input a key and endpoint into the studio"
       isCorrect: false
-      explanation: "Incorrect. It is not necessary to authenticate the Language studio."
-    - content: "You must first train the model in your chosen language"
+      explanation: "Incorrect. It is not necessary to authenticate the studio."
+    - content: "Customize the API request."
       isCorrect: false
-      explanation: "Incorrect. You do not need to train the model in your chosen language. The translator AI service includes a pre-trained model."
-    - content: "You haven't associated the resource with the studio"
+      explanation: "Incorrect. You do not need to customize an API request to use the studio."
+    - content: "Associate a resource with the studio"
       isCorrect: true
-      explanation: "Correct. To explore the capabilities of the translator service in the Language studio, you must first associate the resource with the studio."
+      explanation: "Correct. To explore the capabilities of the service in the studio, you must first associate the resource with the studio."
   - content: "What is an Azure AI services resource?"
     choices:
     - content: "A bundle of several AI services in one resource"
