@@ -10,7 +10,7 @@ Your choice of tools is highly dependent on what type of development work you pl
 
 - **Code Editor**: Visual Studio Code with the WSL extension
 
-    VS Code is a free, open source code editor, sometimes also called an Integrated Development Environment (IDE). It supports debugging, syntax highlighting, intelligent code completion (IntelliSense), built-in Git commands, and an expansive marketplace of extensions that enable you to install additional support tools.
+    VS Code is a free, open source code editor, sometimes also called an Integrated Development Environment, or IDE. It supports debugging, syntax highlighting, intelligent code completion (IntelliSense), built-in Git commands, and an expansive marketplace of extensions that enable you to install additional support tools.
 
     One reason for recommending VS Code is the WSL extension. This extension enables VS Code's user interface to run on Windows, while your commands, extensions, debugging, code autocomplete, linting, etc. all operate on the WSL Linux installation. Without this extension, you would run into performance and compatibility issues when working between the Windows and Linux file systems. With the extension, you can run your Linux code projects in an encapsulated environment, isolated from Windows. The tools, languages, compilers, and extensions you run in the Linux environment won't modify or disrupt anything installed in your Windows environment.
 
@@ -43,18 +43,18 @@ Once you've installed the tools you need for your WSL development environment, a
 
     ![Screenshot of Windows File Explorer with Ubuntu directory open](../media/windows-file-explorer-1.png)
 
-5. Open your project directory in Visual Studio Code using the WSL extension by entering the command: `code .`. The VS Code Remote Server will start and your project code, running on Linux, will open in VS Code, running on Windows. You will now have access to VS Code features like Intellisense code completion, debugging, and linting, powered by the tools and compilers installed on Linux.
+5. Open your project directory in Visual Studio Code using the WSL extension by entering the command: `code .`. The VS Code Remote Server will start and your project code, running on Linux, will open in VS Code, running on Windows. You will now have access to VS Code features like IntelliSense code completion, debugging, and linting, powered by the tools and compilers installed on Linux.
 
 6. Once you have made updates to your code, you'll be able to run it in your Linux distribution, but view it using a web browser on Windows with a localhost address (for example, `localhost:3000`). WSL supports hot-reload, so rather than needing to reload your entire app when you make a change, you can just refresh the files that were changed without losing the state of the app.
 
-## Common scenarios for using a WSL
+## Common scenarios for using WSL
 
 A few common situations or scenarios where a developer may want to use WSL include:
 
 - A beginner who wants to learn coding on both Windows and Linux environments.
 - A professional developer who wants access to Linux and Windows tools.
-- Any organization that wants to operationalize a Continuous Integration and Continuous Delivery (CICD) workflow, testing updates on a local computer before deploying code updates to the cloud.
-- Anyone who wants to use Docker for creating containers, Git for version control, GPU acceleration for Machine Learning, databases (like MySQL, PostgreSQL, MongoDB, Redis, SQLite), or have access to both Linux GUI apps and Windows at the same time.
+- Any organization that wants to operationalize a continuous integration and continuous delivery (CI/CD) workflow, testing updates on a local computer before deploying code updates to the cloud.
+- Anyone who wants to use Docker for creating containers, Git for version control, GPU acceleration for machine learning, databases (like MySQL, PostgreSQL, MongoDB, Redis, SQLite), or have access to both Linux GUI apps and Windows at the same time.
 - A company that wants to create customized WSL images for distribution to all of their computers so that employees have secure access to both Windows and Linux.
 
 :::image type="content" source="../media/wsl-cicd.png" alt-text="Diagram of a CICD workflow using WSL, GitHub, and a Linux VM.":::
@@ -63,10 +63,10 @@ There are also a few limitations to be aware of with WSL, including:
 
 - WSL is designed for development and includes some features that may make it challenging to use in production scenarios.
 
-- WSL uses a lightweight utility VM that starts, stops, and manages resources automatically. If you're trying to use it as a web server, the VM could shut down to clean up resources because it's detecting that no users are active. It is generally recommended to use a Linux distribution more specifically designed to be a web server for deployment scenarios.
+- WSL uses a lightweight utility VM that starts, stops, and manages resources automatically. If you're trying to use it as a web server, the VM could shut down to clean up resources because it's detecting that no users are active. You should use a Linux distribution without WSL for production scenarios such as running a production web server.
 
 - WSL automatically gives file access to Windows files and Windows paths. This access is appended to your path by default, which could cause unexpected behavior for certain Linux applications compared to a traditional Linux environment.
 
 More details on these limitations are covered in the WSL documentation FAQs.
 
-To wrap up our introduction to WSL, let's try actually using some basic Linux commands!
+To wrap up our introduction to WSL, let's try actually using some basic WSL and Linux commands!
