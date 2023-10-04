@@ -12,14 +12,14 @@ Bundled named entity SITs detect all possible matches in a class, such as *All p
 
 Here are some examples of named entity SITs. You can find all of them in [Sensitive information type entity definitions](/purview/sensitive-information-type-entity-definitions?azure-portal=true).
 
-|Named Entity |Description  |Bundled/Unbundled  |
+|Named entity |Description  |Bundled/unbundled  |
 |---------|---------|---------|
 |All full names    |Detect all possible matches of full names.         |   bundled      |
 |All physical addresses    |Detects all possible matches of physical addresses.     | bundled |
 |All medical terms and conditions    |Detects all possible matches of medical terms and conditions. |bundled |
-|Australia Physical Addresses |  Detects patterns related to physical addresses from Australia. Included in All physical addresses SIT. |unbundled |
-|Blood Test Terms     |Detects terms related to blood tests, such as 'hCG.' English terms only. Included in All medical terms and conditions SIT      |unbundled |
-|Brand Medication Names     |Detects names of brand medication, such as 'Tylenol.' English terms only. Included in All medical terms and conditions.         |unbundled |
+|Australia physical addresses |  Detects patterns related to physical addresses from Australia. Included in All physical addresses SIT. |unbundled |
+|Blood test terms     |Detects terms related to blood tests, such as 'hCG.' English terms only. Included in All medical terms and conditions SIT      |unbundled |
+|Brand medication names     |Detects names of brand medication, such as 'Tylenol.' English terms only. Included in All medical terms and conditions.         |unbundled |
 
 ## Examples of enhanced DLP policies
 
