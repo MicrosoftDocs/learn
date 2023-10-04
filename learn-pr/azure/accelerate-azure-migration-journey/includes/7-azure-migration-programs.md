@@ -2,17 +2,16 @@ Microsoft provides expert migration and modernization guidance, plus assistance 
 
 The following programs are available to support your Azure migration:
 
-- Azure Migration and Modernization Program (AMMP)
 - FastTrack for Azure
 - Azure Expert managed service providers (MSPs)
 
 :::image type="content" source="../media/path-to-cloud.png" alt-text="Diagram showing the path to the Cloud Programs.":::
 
-## Azure Migration and Modernization Program
+## Azure Migration and Modernize and Azure Innovate
 
 The [Azure Migration and Modernization Program (AMMP)](https://azure.microsoft.com/migration/migration-modernization-program/) helps you simplify your journey to the cloud.  Wherever you are in your journey, AMMP can help accelerate your progress. The program offers proactive guidance and the right mix of expert help at every stage to ensure you can migrate and modernize applications, infrastructure, and databases with confidence. All customers can access resources, partners, and tools such as free migration tools, step-by-step technical guidance, training and help in finding a migration partner.  
 
-Here are some of the benefits available from AMMP:
+Here are some of the benefits available from Azure Migrate and Modernize and Azure Innovate:
 
 - Curated, step-by-step guidance from Microsoft experts and specialized migration partners based on the proven Microsoft Cloud Adoption Framework for Azure.
 - Technical skill building with foundational and role-specific courses to develop new Azure skills and long-term organizational readiness.
