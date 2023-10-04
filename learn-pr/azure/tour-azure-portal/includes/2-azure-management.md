@@ -45,7 +45,7 @@ For example, to create a VM, you open a command prompt window and install the Az
 az vm create \
   --resource-group MyResourceGroup \
   --name TestVm \
-  --image UbuntuLTS \
+  --image Ubuntu2204 \
   --generate-ssh-keys \
   ...
 ```
