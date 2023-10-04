@@ -79,11 +79,11 @@ Prior to rotation of external secrets:
 6.  Download CertDirectoryMaker.ps1 to your network fileshare, and run the script. The script will create a folder structure that adheres to **.\\Certificates\\AAD** or **.\\Certificates\\ADFS**, depending on your identity provider. Your folder structure must begin with a **\\Certificates** folder, followed by ONLY an **\\AAD** or **\\ADFS** folder. All remaining subdirectories are contained within the preceding structure. For example:
     
      -  File share =**\\ &lt;ShareName&gt;** 
-     -  Certificate root folder for Azure AD provider = **\\Certificates\\AAD**
+     -  Certificate root folder for Microsoft Entra provider = **\\Certificates\\AAD**
      -  Full path = **\\ &lt;ShareName&gt;\\Certificates\\AAD** 
 
 7.  Copy the new set of replacement external certificates created in *Step 2*, to the **\\Certificates&lt;IdentityProvider&gt;** directory created in *Step 6*. Be sure to follow the `cert.<regionName>.<externalFQDN>` format for `<CertName>`.
 
-The image below is an example of a folder structure for the Azure AD Identity Provider:
+The image below is an example of a folder structure for the Microsoft Entra identity Provider:
 
 :::image type="content" source="../media/secrets-rotation-b04b4f04.png" alt-text="Prepare to run secret rotation PowerShell cmdlet for external certificates.":::
