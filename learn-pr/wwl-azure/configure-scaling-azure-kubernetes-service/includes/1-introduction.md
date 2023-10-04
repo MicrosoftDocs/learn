@@ -4,7 +4,7 @@ This module covers the scaling applications in Azure Kubernetes Service (AKS), i
 
 Imagine you're a software developer working for a company that has recently migrated its applications to AKS. Your team is responsible for ensuring that the applications can handle varying levels of traffic and usage. You need to understand how to scale the applications to meet demand and optimize resource usage. This module helps you learn the different scaling options available in AKS and how to use them effectively.
 
-## Learning Objectives
+## Learning objectives
 
 After completing this module, you'll be able to:
 
