@@ -110,9 +110,9 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. On the Azure portal menu or from the **Home** page, under **Recent resources**, select **See all**, and then select your function app. Your **Function App** pane appears.
 
-1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
+1. On the Overview page, select the **Functions** tab in the center of the screen.
 
-1. In the top menu bar, select **Create**. The **Create function** pane appears.
+1. Select the **Create in Azure portal** button. The **Create function** pane appears.
 
 1. Under **Select a template**, in the **Filter** box, enter *Durable Functions HTTP starter*, and select that template from the list. This template creates a durable function that runs in response to an HTTP request.
 
@@ -172,9 +172,9 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. On the Azure portal menu or from the **Home** page, under **Recent resources**, select **See all**, and then select your function app. Your **Function App** pane appears.
 
-1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
+1. On the **Overview** page, select the **Functions** tab in the center of the screen.
 
-1. In the top menu bar, select **Create**. The **Create function** pane appears.
+1. In the **Functions** menu bar, select **Create**. The **Create function** pane appears.
 
 1. Under **Select a template**, in the **Filter** box, enter *Durable Functions orchestrator*, and select that template from the list. This template creates a durable function that orchestrates the execution of functions.
 
@@ -213,9 +213,9 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. On the Azure portal menu or from the **Home** page, under **Recent resources**, select **See all**, and then select your function app. Your **Function App** pane appears.
 
-1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
+1. On the **Overview** page, select the **Functions** tab in the center of the screen.
 
-1. In the top menu bar, select **Create**. The **Create function** pane appears.
+1. In the **Functions** menu bar, select **Create**. The **Create function** pane appears.
 
 1. Under **Select a template**, in the **Filter** box, enter *Durable Functions activity*, and select that template from the list. This template creates a durable function that is run when an activity is called by an orchestrator function.
 
@@ -259,7 +259,7 @@ JavaScript Durable Functions currently require Azure Functions version 2 compati
 
 1. On the Azure portal menu or from the **Home** page, under **Recent resources**, select **See all**, and then select your function app. Your **Function App** pane appears.
 
-1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
+1. Select the **Functions** tab in the center of the page.
 
 1. Select the **HttpStart** function. The **HttpStart** pane appears for your function.
 
