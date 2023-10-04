@@ -11,6 +11,8 @@ There are a few things to know about what this command does and the options that
 
 You must make sure that you're running Windows 11 or Windows 10 version 2004+ (Build 19041 and higher) to run the WSL install command. You can [check the version of Windows you are currently running and update to a new version](ms-settings:windowsupdate) if necessary. If you're running an older build of Windows and can't update, see the docs linked at the end of this training on how to manually enable WSL and install a Linux distribution.
 
+:::image type="content" source="../media/wsl-install.png" alt-text="Screenshot of PowerShell with wsl install command entered.":::
+
 The `wsl --install` command performs the following actions:
 
 - Enables the Virtual Machine Platform optional component and installs the WSL core binaries.
