@@ -3,7 +3,7 @@ uid: learn.wwl.configure-monitoring-applications
 metadata:
   title: Configure monitoring for applications
   description: "Configure monitoring for applications"
-  ms.date: 09/26/2023
+  ms.date: 10/04/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -17,6 +17,7 @@ abstract: |
   - Leverage Azure SQL Insights to improve performance of Azure SQL database applications
 prerequisites: ""
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - intermediate
 roles:

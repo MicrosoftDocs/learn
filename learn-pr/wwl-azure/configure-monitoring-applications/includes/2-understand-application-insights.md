@@ -12,7 +12,7 @@ The log trace is associated with other telemetry to give a detailed view of the 
 
 ## What Application Insights monitors
 
-Application Insights collects Metrics and application Telemetry data, which describe application activities and health, as well as trace logging data.
+Application Insights collects metrics and application telemetry data, which describe application activities and health, as well as trace logging data.
 
 - Request rates, response times, and failure rates – Identify which pages are most popular, at what times of day, and where your users are. See which pages perform best. If your response times and failure rates go high when there are more requests, then you may have a resourcing problem.
 - Dependency rates, response times, and failure rates – Determine whether external services are slowing you down.

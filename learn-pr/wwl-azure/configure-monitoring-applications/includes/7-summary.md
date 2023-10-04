@@ -1,4 +1,4 @@
-In this module you learned how to monitor the performance of your applications and how to collect and analyze the appropriate telemetry to improve application performance. You learned how to how to create an Application Insights resource, and how to configure data sampling rate, anomaly detection, diagnostic and Azure SQL Insights.
+In this module, you learned how to monitor the performance of your applications and how to collect and analyze the appropriate telemetry to improve application performance. You learned how to create an Application Insights resource, and how to configure data sampling rate, anomaly detection, diagnostic and Azure SQL Insights.
 
 You can learn more by reviewing the following documents:
 

@@ -3,11 +3,11 @@ You are in IT Operations at Tailwind Traders.  Part of your responsibilities inc
 
 ## Learning objectives
 
-In this module you will learn how to:
-- Describe how Application Insights is used to monitor application performance
-- Distinguish between the different Application Insights sampling rates
-- Describe Azure diagnostic settings and resource logs
-- Leverage Azure SQL Insights to improve performance of Azure SQL database applications
+In this module you learn how to:
+- Describe how Application Insights is used to monitor application performance.
+- Distinguish between the different Application Insights sampling rates.
+- Describe Azure diagnostic settings and resource logs.
+- Leverage Azure SQL Insights to improve performance of Azure SQL database applications.
 
 ## Prerequisites
 - Understand the basic functionality of Azure Monitor and Log Analytics workspaces.
