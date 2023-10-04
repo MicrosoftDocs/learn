@@ -64,7 +64,7 @@ Alert processing rules can perform one of the following actions:
 ## Create an alert processing rule
 
 To create an alert processing rule, perform the following steps:
-1. In the **Alerts** page of the Azure Portal select **Create > Alert processing rules** to open the new alert processing rule wizard.
+1. In the **Alerts** page of the Azure portal select **Create > Alert processing rules** to open the new alert processing rule wizard.
 1. On the **Scope** tab, you select which fired alerts are covered by this rule. Pick the scope of resources whose alerts will be covered. You can choose multiple resources and resource groups, or an entire subscription. You can also optionally add filters.
 1. On the **Rule settings** tab, you select which action to apply on the affected alerts. Choose between **Suppress notifications** or **Apply action group**. If you choose **Apply action group**, you can select existing action groups by selecting **Add action groups**. You can also create a new action group.
 1. On the **Scheduling** tab, you select an optional schedule for the rule. By default, the rule works all the time, unless you disable it. You can set it to work On a specific time, or you can set up a Recurring schedule.
