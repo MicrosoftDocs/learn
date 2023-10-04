@@ -93,7 +93,7 @@ To delete an app registration in Azure CLI, run the az ad app delete command as 
 az ad app delete --id $TESTUPN
 ```
 
-<a name='delete-an-azure-ad-tenant'></a>
+<a name='delete-a-microsoft-entra-tenant'></a>
 
 ### Delete a Microsoft Entra tenant
 
