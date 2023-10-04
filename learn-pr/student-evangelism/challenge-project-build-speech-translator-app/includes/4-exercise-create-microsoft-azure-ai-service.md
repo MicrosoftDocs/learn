@@ -30,5 +30,5 @@ If added successfully, Congratulations! You're making incredible progress.
 
 ## Helpful Resources
 If you need help with Azure AI Speech Service, kindly explore the resources here:
-- [Microsoft AI Service - Speech Recognition ](https://learn.microsoft.com/azure/ai-services/speech-service/overview?WT.mc_id=academic-109173-ooyinbooke)
-- [Quickstart: Create a multi-service resource for Azure AI services](https://learn.microsoft.com/azure/ai-services/multi-service-resource?WT.mc_id=academic-109174-ooyinbooke)
+- [Microsoft AI Service - Speech Recognition ]/azure/ai-services/speech-service/overview?WT.mc_id=academic-109173-ooyinbooke)
+- [Quickstart: Create a multi-service resource for Azure AI services](/azure/ai-services/multi-service-resource?WT.mc_id=academic-109174-ooyinbooke)
