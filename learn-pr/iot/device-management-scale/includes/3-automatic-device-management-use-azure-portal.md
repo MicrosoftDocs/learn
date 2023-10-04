@@ -60,7 +60,7 @@ For example, you could set the twin path to "properties.desired.chiller-water" a
 
 You can also set individual settings by specifying the entire path in the Device Twin Path and the value in the Content with no brackets. For example, set the Device Twin Path to `properties.desired.chiller-water.temperature` and set the Content to `66`.
 
-If two or more configurations target the same Device Twin Path, the Content from the highest priority configuration will apply (priority is defined in 3 - Target devices or modules, step a.).
+If two or more configurations target the same Device Twin Path, the Content from the highest priority configuration will apply (priority is defined in section 3 - Target devices or modules as follows).
 
 If you wish to remove a property, set the property value to null.
 
@@ -70,11 +70,11 @@ You can add more settings by selecting **Add Device Twin Setting** or **Add Modu
 
 Use the tags property from your device twins to target the specific devices that should receive this configuration. You can also target devices by device twin reported properties.
 
-Since multiple configurations may target the same device or module, you should give each configuration a priority number. If there's ever a conflict, the configuration with the highest priority wins.
+Since multiple configurations may target the same device or module, you should give each configuration a priority number. If there's ever a conflict, the configuration with the highest priority wins:
 
-a. Enter a positive integer for the configuration **Priority**. The highest numerical value is considered the highest priority. If two configurations have the same priority number, the one that was created most recently wins.
+1. Enter a positive integer for the configuration **Priority**. The highest numerical value is considered the highest priority. If two configurations have the same priority number, the one that was created most recently wins.
 
-b. Enter a **Target condition** to determine which devices are targeted with this configuration. The condition is based on device twin tags or device twin reported properties and should match the expression format. For example, `tags.environment='test'` or `properties.reported.chillerProperties.model='4000x'`. You can specify `*` to target all devices.
+2. Enter a **Target condition** to determine which devices are targeted with this configuration. The condition is based on device twin tags or device twin reported properties and should match the expression format. For example, `tags.environment='test'` or `properties.reported.chillerProperties.model='4000x'`. You can specify `*` to target all devices.
 
 For automatic module configuration, use a query to specify tags or reported properties from the modules registered to the IoT hub. For example, `from devices.modules where tags.environment='test'` or `from devices.modules where properties.reported.chillerProperties.model='4000x'`. The wildcard cannot be used to target all modules.
 

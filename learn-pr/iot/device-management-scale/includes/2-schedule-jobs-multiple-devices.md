@@ -8,7 +8,7 @@ Consider using jobs when you need to schedule and track progress any of the foll
 
 ## Job lifecycle
 
-Jobs are initiated by the solution back end and maintained by IoT Hub. You can initiate a job through a service-facing URI (`PUT https://<iot hub>/jobs/v2/<jobID>?api-version=2021-04-12`) and query for progress on an executing job through a service-facing URI (`GET https://<iot hub>/jobs/v2/<jobID?api-version=2021-04-12`). To refresh the status of running jobs once a job is initiated, run a job query. There is no explicit purge of job history, but they have a Time to live (TTL) of 30 days.
+Jobs are initiated by the solution back end and maintained by IoT Hub. You can initiate a job through a service-facing URI (`PUT https://<iot hub>/jobs/v2/<jobID>?api-version=2021-04-12`) and query for progress on an executing job through a service-facing URI (`GET https://<iot hub>/jobs/v2/<jobID?api-version=2021-04-12`). To refresh the status of running jobs once a job is initiated, run a job query. There is no explicit purge of job history, but jobs have a Time to live (TTL) of 30 days.
 
 > [!NOTE]
 > When you initiate a job, property names and values can only contain US-ASCII printable alphanumeric, except any in the following set: `$ ( ) < > @ , ; : \ " / [ ] ? = { } SP HT`
