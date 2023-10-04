@@ -21,6 +21,6 @@ Today is the day <your name> began a PowerShell programming journey.
 
 ### Step 4: Run the code
 
-Close the code editor, and run the script in Cloud Shell.
+Close the code editor, and then run the script in the Cloud Shell terminal.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.

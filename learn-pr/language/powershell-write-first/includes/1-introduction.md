@@ -8,7 +8,7 @@ PowerShell is a powerful, cross-platform task automation and configuration manag
 
 PowerShell is a great language to learn whether you have prior programming experience or not. It's a beginner-friendly language because of its readability, focus on simplicity, and built-in help system.
 
-The best way to learn how to code in any language is to _write_ as much code as possible. We encourage you to type along with the exercises in this module and others in this learning path. Typing the code yourself in each exercise and solving the coding challenges can accelerate your learning and teach you small foundational concepts to build on with practice and exploration.
+The best way to learn how to code in any language is to *write* as much code as possible. We encourage you to type along with the exercises in this module and others in this learning path. Typing the code yourself in each exercise and solving the coding challenges can accelerate your learning and teach you small foundational concepts to build on with practice and exploration.
 
 ## Learning objectives
 

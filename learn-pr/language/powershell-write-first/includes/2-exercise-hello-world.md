@@ -2,7 +2,7 @@ One of the best ways to learn to code is to write many tiny programs. Writing sm
 
 ## Write your first lines of code
 
-In this exercise, you'll follow a longstanding tradition among software developers of printing the phrase "Hello World!" to a command line or console window. As you'll see, you can learn a lot from even this simple exercise.
+In this exercise, you'll follow a longstanding tradition among software developers of printing the phrase "Hello World!" to a command line or console window. You can learn a lot from even this simple exercise.
 
 ### Step 1: Type the code in Cloud Shell
 
@@ -19,7 +19,7 @@ In this module, you'll use a version of a code editor in Cloud Shell to write an
 
     The `New-Item` command creates a new `.ps1` file in the current directory. The `.ps1` file name extension is the extension that's used for PowerShell scripts.
 
-    The `code` command followed by the file name of the script you want to work with opens the file in the Cloud Shell code editor. Another window opens that allows you to write and edit scripts and then save them to run in Cloud Shell. If you want to open a file that's stored in another location, you can define the full path instead of using only the file name.
+    The `code` command followed by the file name of the script you want to work with opens the file in the Cloud Shell code editor. Another window opens where you can write and edit scripts and then save them to run in Cloud Shell. If you want to open a file that's stored in another location, you can define the full path instead of using only the file name.
 
 1. In the code editor window, type the following code:
 
@@ -76,7 +76,7 @@ Reading these errors is essential in helping you learn what caused them. When yo
 1. In the open *HelloWorld.ps1* file, *comment out* the code you wrote in the editor by adding a number sign (`#`) before the command. Below the commented line, add the following lines of code:
 
     ```powershell
-    # Write-Output -InputObject 'Hello World!'
+    # Write-Output 'Hello World!'
 
     $name = Read-Host -Prompt "Please enter your name"
     Write-Output "Congratulations $name! You have written your first code with PowerShell!"
