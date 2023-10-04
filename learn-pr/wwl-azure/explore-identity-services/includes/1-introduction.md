@@ -8,23 +8,22 @@ In addition to your SAP architect responsibilities for your company's Azure IaaS
 You need to prepare the specifications to leverage the identity services component to design multiple authentication and authorization scenarios Azure facilitates, including support for a range of identity providers. However, in the context of IaaS deployments, three of them are of primary relevance:
 
 - Active Directory Domain Services (AD DS)
-- Azure Active Directory (Azure AD)
-- Azure Active Directory Domain Services (Azure AD DS)
+- Microsoft Entra ID
+- Microsoft Entra Domain Services (Microsoft Entra Domain Services)
 
 ## Learning objectives
 
 You will:
 
 - Explore Azure virtual machine authentication, authorization, and access control.
-- Explore Azure Active Directory.
+- Explore Microsoft Entra ID.
 - Explore SAP Cloud Platform Identity authentication.
 - Add SAP Cloud Platform Identity Authentication from the gallery.
-- Integrate Azure Active Directory with SAP Fiori.
-- Integrate Azure Active Directory with SAP HANA.
-- Integrate Azure Active Directory with SAP NetWeaver.
+- Integrate Microsoft Entra ID with SAP Fiori.
+- Integrate Microsoft Entra ID with SAP HANA.
+- Integrate Microsoft Entra ID with SAP NetWeaver.
 - Integrate Active Directory with SAP single sign-on (Kerberos-SPNEGO).
 - Discover Active Directory Domain Services.
 - Explore primary scenarios using Active Directory Domain Services and Azure virtual machines.
 - Integrate Linux with Active Directory Domain Services.
-- Discover Azure Active Directory Domain Services.
-
+- Discover Microsoft Entra Domain Services.

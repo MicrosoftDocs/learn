@@ -9,4 +9,4 @@ If you want to provide equivalent functionality in Azure, you can deploy AD DS d
 
 - Providing authentication to AD DS–dependent applications and services within the Azure environment.
 - Extending the scope of the on-premises AD DS to one or more Azure regions for disaster recovery purposes.
-- Implementing additional AD DS domain controllers in Azure to enhance the resiliency of the directory synchronization with Azure AD and Azure AD-federated deployments.
+- Implementing additional AD DS domain controllers in Azure to enhance the resiliency of the directory synchronization with Microsoft Entra ID and Microsoft Entra ID-federated deployments.
