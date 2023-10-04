@@ -1,4 +1,4 @@
-Imagine that you work for a video production company. After a few months of planning, your team successfully migrated its technology stack to Azure Kubernetes Service (AKS).
+Imagine that you work for a video production company called Contoso Video. After a few months of planning, your team successfully migrated its technology stack to Azure Kubernetes Service (AKS).
 
 The new AKS solution is running without any problems. However, you've noticed that the developer team spends too much time building container images and deploying applications.
 

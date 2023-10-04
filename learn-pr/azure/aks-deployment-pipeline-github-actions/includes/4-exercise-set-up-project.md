@@ -1,4 +1,4 @@
-Now that we understand what we need to do, let's create our resources and publish our pipeline.
+Now that we understand the design, let's create our resources and publish our pipeline for the Contoso Video website.
 
 > [!IMPORTANT]
 > To run this exercise, you need:
