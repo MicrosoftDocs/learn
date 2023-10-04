@@ -3,7 +3,7 @@ uid: learn.wwl.configure-monitoring-virtual-networks
 metadata:
   title: Configure monitoring for virtual networks
   description: "Configure monitoring for virtual networks"
-  ms.date: 09/26/2023
+  ms.date: 10/04/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -16,6 +16,7 @@ abstract: |
   - Configure access to flow logs
 prerequisites: ""
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - intermediate
 roles:
