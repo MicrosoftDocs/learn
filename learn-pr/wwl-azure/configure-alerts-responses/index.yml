@@ -3,7 +3,7 @@ uid: learn.wwl.configure-alerts-responses
 metadata:
   title: Configure alerts and responses
   description: "Configure alerts and responses"
-  ms.date: 09/26/2023
+  ms.date: 10/04/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -17,6 +17,7 @@ abstract: |
   - Describe how Change Analysis provides insight into changes made to Azure resources
 prerequisites: ""
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - intermediate
 roles:

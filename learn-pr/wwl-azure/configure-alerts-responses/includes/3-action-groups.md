@@ -9,18 +9,6 @@ Each action is made up of:
 
 In general, an action group is a global service. Global requests from clients can be processed by action group services in any region. If one region of the action group service is down, the traffic is automatically routed and processed in other regions. As a global service, an action group helps provide a disaster recovery solution.
 
-## Action groups
-
-When Azure Monitor data indicates that there might be a problem with your infrastructure or application, an alert is triggered. Alerts can contain action groups, which are a collection of notification preferences. Azure Monitor, Azure Service Health, and Azure Advisor use action groups to notify users about the alert and take an action.
-
-Each action is made up of:
-
-- **Type**: The notification that's sent or action that's performed. Examples include sending a voice call, SMS, or email. You can also trigger various types of automated actions.
-- **Name**: A unique identifier within the action group.
-- **Details**: The corresponding details that vary by type.
-
-In general, an action group is a global service. Global requests from clients can be processed by action group services in any region. If one region of the action group service is down, the traffic is automatically routed and processed in other regions. As a global service, an action group helps provide a disaster recovery solution. 
-
 ## Action group properties
 
 Action groups have the following properties:

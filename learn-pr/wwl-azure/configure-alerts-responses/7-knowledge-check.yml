@@ -4,7 +4,7 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: "Knowledge Check"
-  ms.date: 09/26/2023
+  ms.date: 10/04/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -25,25 +25,25 @@ quiz:
     - content: "Twenty"
       isCorrect: false
       explanation: "Incorrect. You can add up to five action groups to an alert rule."
-  - content: "You want to suppress a set of action groups from sending notifications when you perform maintenance at scale on resources in Azure. Which of the following should you configure?"
+  - content: "You want to suppress a set of action groups from sending notifications when you perform maintenance at scale on resources in Azure. Which of the following items should you configure?"
     choices:
     - content: "Alert state"
       isCorrect: false
-      explanation: "Incorrect. Changing alert states will not suppress notifications."
+      explanation: "Incorrect. Changing alert states doesn't suppress notifications."
     - content: "Action group"
       isCorrect: false
-      explanation: "Incorrect. You would not modify the properties of the action group for maintenance; you would only do this if you wanted a more permanent change to how alerts functioned."
+      explanation: "Incorrect. You wouldn't modify the properties of the action group for maintenance; you'd only perform this action if you wanted a more permanent change to how alerts functioned."
     - content: "Alert processing rule"
       isCorrect: true
       explanation: "Alert processing rules allow you to suppress specific alerts. Alert rules generate new alerts, while alert processing rules modify the fired alerts as they're being fired."
-  - content: "You have three filters configured in an alert processing rule. How many of the filters will apply at any time to the rule?"
+  - content: "You have three filters configured in an alert processing rule. How many of the filters apply at any time to the rule?"
     choices:
-    - content: "1"
+    - content: "One"
       isCorrect: false
       explanation: "Incorrect. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."
-    - content: "2"
+    - content: "Two"
       isCorrect: false
       explanation: "Incorrect. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."
-    - content: "3"
+    - content: "Three"
       isCorrect: true
       explanation: "Correct. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."
