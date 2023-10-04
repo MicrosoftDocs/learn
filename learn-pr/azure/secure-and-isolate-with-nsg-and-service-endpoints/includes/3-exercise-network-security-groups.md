@@ -58,7 +58,7 @@ Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy 
         --vnet-name ERP-servers \
         --subnet Applications \
         --nsg ERP-SERVERS-NSG \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --size Standard_DS1_v2 \
          --generate-ssh-keys \
         --admin-username azureuser \
@@ -77,7 +77,7 @@ Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy 
         --subnet Databases \
         --nsg ERP-SERVERS-NSG \
         --size Standard_DS1_v2 \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --generate-ssh-keys \
         --admin-username azureuser \
         --custom-data cloud-init.yml \

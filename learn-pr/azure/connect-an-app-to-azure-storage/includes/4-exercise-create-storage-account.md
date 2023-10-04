@@ -2,13 +2,13 @@ Now that we have an app, we need an Azure storage account to work with.
 
 ## Use the Azure CLI to create an Azure storage account
 
-We'll use the `az storage account create` command to create a new storage account. There are several parameters to control the configuration of the storage account.
+We'll use the `az storage account create` command to create a new storage account. There are several parameters to control the storage account's configuration.
 
  | Option | Description |
  |--------|-------------|
- | `--name` | A **storage account name**. The name will be used to generate the public URL used to access the data in the account. It must be unique across all existing storage account names in Azure. It must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
+ | `--name` | A **storage account name**. The name is used to generate the public URL used to access the data in the account. It must be unique across all existing storage account names in Azure. It must be 3 to 24 characters long, and can contain only lowercase letters and numbers. |
  | `--resource-group` | Use **<rgn>[sandbox resource group name]</rgn>** to place the storage account into the free sandbox. |
- | `--location` | Select a location near you (see below). |
+ | `--location` | Select a location near you (see *Select a location*, following). |
  | `--sku` | The storage account performance and replication model. Options include `Premium_LRS`, `Standard_GRS`, `Standard_LRS`, `Standard_RAGRS`, and `Standard_ZRS`. |
 
 Use this table to craft a command line in Cloud Shell on the right to create the account.
@@ -40,6 +40,6 @@ Use this table to craft a command line in Cloud Shell on the right to create the
     ```
 
     > [!TIP]
-    > If you are interested in exploring the options for the storage account, review the [Create an Azure storage account](/training/modules/create-azure-storage-account?azure-portal=true) module, where we go through all the options in depth.
+    > If you're interested in exploring the storage account options, review the [Create an Azure storage account](/training/modules/create-azure-storage-account?azure-portal=true) module, where we go through all the options in depth.
 
-It will take a few minutes to deploy the account. While Azure is working on that, let's look at how we interact with the Azure Storage APIs.
+It takes a few minutes to deploy the account. While Azure is working on that, let's look at how we interact with the Azure Storage APIs.
