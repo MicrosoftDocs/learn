@@ -18,6 +18,6 @@ To create a Log Analytics workspace, perform the following steps:
 1. Use an existing Resource Group or create a new one.
 1. Provide a name for the new Log Analytics workspace, such as DefaultLAWorkspace. This name must be unique per resource group.
 1. Select an available Region.
-1. Select **Review + Create** to review the settings. Then select **Create** to crete the workspace. A default pricing tier of pay-as-you-go is applied. No charges will be incurred until you start collecting enough data.
+1. Select **Review + Create** to review the settings. Then select **Create** to create the workspace. A default pricing tier of pay-as-you-go is applied. No charges will be incurred until you start collecting enough data.
 
 Once you've configured the workspace and data is being logged, you can analyze it together using a sophisticated query language that's capable of quickly analyzing millions of records. You might start with a simple sample query that answers a common question, or perform sophisticated data analysis to identify critical patterns in your monitoring data. You can work with log queries and their results interactively using Log Analytics, use them in an alert rule to be proactively notified of issues, or visualize their results in a workbook or dashboard.

@@ -12,5 +12,4 @@ In this module, you learn how to:
 - Enable health status alerts for  Log Analytics workspace.
 
 ## Prerequisites
-
-- Describe the basic functionality of Azure Monitor and Log Analytics workspaces.
+- Understand the basic functionality of Azure Monitor and Log Analytics workspaces.

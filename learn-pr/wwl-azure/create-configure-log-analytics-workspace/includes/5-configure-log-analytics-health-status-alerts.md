@@ -18,7 +18,7 @@ If you want to create a new action group, you will perform the following steps b
 1. In the toolbar, select **Action groups**.
 1. Select **+Create**.
 1. Step through the Create action group wizard.
-1. On the Notifications page, set the Notification type to **Email/SMS message/Push/Voice** and set Email to alerts@contoso.com.
+1. On the **Notifications** page, set the Notification type to **Email/SMS message/Push/Voice** and set Email to alerts@contoso.com.
 
 If you want to create a new alert rule, perform the following steps:
 1. In the Azure portal, navigate to the Log Analytics workspace. Under **Monitoring**, select the **Alerts** section. On the menu bar click the **Create** drop down and then click **Alert rule**.

@@ -9,15 +9,15 @@ The access mode refers to how you access a Log Analytics workspace and defines t
 
 There are two access modes
 
-- Workspace-context: You can view all logs in the workspace for which you have permission. Queries in this mode are scoped to all data in tables that you have access to in the workspace. This access mode is used when logs are accessed with the workspace as the scope, such as when you select **Logs** on the **Azure Monitor** menu in the Azure portal. This mode is appropriate for Administrators who need to configure data collection and users who need access to a wide variety of resources. When the workspace context is used, access is managed through Azure Role Based Access Control (RBAC).
+- Workspace-context: You can view all logs in the workspace for which you have permission. Queries in this mode are scoped to all data in tables that you have access to in the workspace. This access mode is used when logs are accessed with the workspace as the scope, such as when you select **Logs** on the **Azure Monitor** menu in the Azure portal. This mode is appropriate for administrators who need to configure data collection and users who need access to a wide variety of resources. When the workspace context is used, access is managed through Azure Role Based Access Control (RBAC).
 
-- Resource-context: When you access the workspace for a particular resource, resource group, or subscription, such as when you select Logs from a resource menu in the Azure portal, you can view logs for only resources in all tables that you have access to. Queries in this mode are scoped to only data associated with that resource. This mode also enables granular Azure RBAC. Workspaces use a resource-context log model where every log record emitted by an Azure resource is automatically associated with this resource. This mode is appropriate for Administrators of Azure resources being monitored. It allows them to focus on their resource without filtering. Records are only available in resource-context queries if they're associated with the relevant resource.
+- Resource-context: When you access the workspace for a particular resource, resource group, or subscription, such as when you select Logs from a resource menu in the Azure portal, you can view logs for only resources in all tables that you have access to. Queries in this mode are scoped to only data associated with that resource. This mode also enables granular Azure RBAC. Workspaces use a resource-context log model where every log record emitted by an Azure resource is automatically associated with this resource. This mode is appropriate for administrators of Azure resources being monitored. It allows them to focus on their resource without filtering. Records are only available in resource-context queries if they're associated with the relevant resource.
 
-You can view the current workspace access control mode on the Overview page for the workspace in the Log Analytics workspace menu.
+You can view the current workspace access control mode on the **Overview** page for the workspace in the **Log Analytics workspace** menu.
 
 :::image type="content" source="../media/la-workspace1.png" alt-text="Screenshot of the Overview page of a Log Analytics workspace with the Access control mode setting highlighted." border="true":::
 
-You can switch which access control mode is being used by selecting the Properties page of the Log Analytics workspace, selecting **Use resource or workspace permissions**, and then selecting the appropriate permission.
+You can switch which access control mode is being used by selecting the **Properties** page of the Log Analytics workspace, selecting **Use resource or workspace permissions**, and then selecting the appropriate permission.
 
 :::image type="content" source="../media/la-workspace2.png" alt-text="Screenshot of the Properties page of a Log Analytics workspace with the Access control mode setting highlighted." border="true":::
 
@@ -58,7 +58,7 @@ To configure Azure RBAC permissions at the workspace scope, perform the followin
 1. Navigate to Log analytics workspace in the Azure portal.
 1. Select **Access control (IAM)**.
 1. Add a role assignment.
-1. Select Log Analytics Reader or Log Analytics Contributor and click **Next**.
+1. Select **Log Analytics Reader** or **Log Analytics Contributor** and click **Next**.
 1. Add the security principal to which you wish to assign the role and click **Next**.
 1. Click **Save**.
 
