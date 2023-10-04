@@ -55,7 +55,7 @@ In VM insights, you can view discovered application components on Windows and Li
 The Map feature visualizes the VM dependencies by discovering running processes that have:
 
 - Active network connections between servers.
-- nbound and outbound connection latency.
+- Inbound and outbound connection latency.
 - Ports across any TCP-connected architecture over a specified time range.
 
 To access VM insights map directly from a VM:

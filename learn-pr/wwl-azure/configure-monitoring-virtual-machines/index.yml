@@ -3,7 +3,7 @@ uid: learn.wwl.configure-monitoring-virtual-machines
 metadata:
   title: Configure monitoring for virtual machines
   description: "Configure monitoring for virtual machines"
-  ms.date: 09/26/2023
+  ms.date: 10/04/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -15,6 +15,7 @@ abstract: |
   - Enable data collection rules to collect operating system and application logs
 prerequisites: ""
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - intermediate
 roles:

@@ -1,4 +1,4 @@
-In this module you learned how to deploy and configure Azure Monitor Agent on IaaS VMs. You also learned how to enable VM Insights and Data Collection Rules to monitor performance and application telemetry.
+In this module, you learned how to deploy and configure Azure Monitor Agent on IaaS VMs. You also learned how to enable VM Insights and Data Collection Rules to monitor performance and application telemetry.
 
 ## Learn more
 
