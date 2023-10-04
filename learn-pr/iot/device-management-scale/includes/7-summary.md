@@ -1,4 +1,4 @@
-You have joined a development team for a large national retailer that is implementing a warehouse product inventory tracking system that uses thousands of IoT devices. You have been tasked with understanding Azure IoT Hub device management at scale so that your team can determine the best way to manage the warehouse IoT tracking devices.
+You have joined a development team for a large national retailer. Your team is implementing a warehouse product inventory tracking system that uses thousands of IoT devices. You have been tasked with understanding Azure IoT Hub device management at scale so that your team can determine the best way to manage the warehouse IoT tracking devices.
 
 You learned about Azure IoT Hub automated device management at scale and are now familiar with the essentials.
 
