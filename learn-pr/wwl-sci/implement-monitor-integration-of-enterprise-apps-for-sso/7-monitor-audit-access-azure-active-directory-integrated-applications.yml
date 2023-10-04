@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso.monitor-audit-access-to-azure-ad-integrated-applications
-title: Monitor and audit access to Azure Active Directory integrated applications
+title: Monitor and audit access to Microsoft Entra integrated applications
 metadata:
-  title: Monitor and audit access to Azure Active Directory integrated applications
-  description: "Monitor and audit access to Azure Active Directory integrated applications"
+  title: Monitor and audit access to Microsoft Entra integrated applications
+  description: "Monitor and audit access to Microsoft Entra integrated applications"
   ms.date: 09/25/2023
   author: wwlpublish
   ms.author: roberts
