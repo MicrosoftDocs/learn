@@ -43,7 +43,7 @@ In this exercise, you create a pair of virtual machines and install the vehicle 
     az vm create \
       --resource-group $RG \
       --name webServer1 \
-      --image UbuntuLTS \
+      --image Ubuntu2204 \
       --admin-username azureuser \
       --generate-ssh-keys \
       --vnet-name vehicleAppVnet \
@@ -58,7 +58,7 @@ In this exercise, you create a pair of virtual machines and install the vehicle 
     az vm create \
       --resource-group $RG \
       --name webServer2 \
-      --image UbuntuLTS \
+      --image Ubuntu2204 \
       --admin-username azureuser \
       --generate-ssh-keys \
       --vnet-name vehicleAppVnet \

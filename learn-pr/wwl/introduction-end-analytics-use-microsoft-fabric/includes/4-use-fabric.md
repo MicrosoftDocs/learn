@@ -1,5 +1,3 @@
-
-
 Before you can explore the end-to-end capabilities of Microsoft Fabric, it must be enabled for your organization. You may need to work with your IT department to enable Fabric for your organization. The permissions required to enable Fabric are either:
 
 - *Fabric admin*
