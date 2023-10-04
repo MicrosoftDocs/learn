@@ -25,7 +25,7 @@ The following ServiceTypes are available:
     
     NodePort creates a port mapping on the underlying node that allows the application to be accessed directly with the node IP address and port.
     
-    :::image type="content" source="../media/kubernetes-nodeport-cluster-f3af76e3.png" alt-text="Diagram showing NodePort traffic flow in an AKS cluster":::
+    :::image type="content" source="../media/kubernetes-nodeport-cluster-f3af76e3.png" alt-text="Diagram showing NodePort traffic flow in an AKS cluster.":::
     
  -  **LoadBalancer**
     

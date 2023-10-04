@@ -1,12 +1,12 @@
-At the highest level, Kubernetes is organized as a cluster of virtual or on-premises machines. These machines—called nodes—share compute, network, and storage resources. Each cluster has one master node connected to one or more worker nodes. The worker nodes are responsible for running groups of containerized applications and workloads, known as pods, and the master node manages which pods run on which worker nodes.
+At the highest level, Kubernetes is a cluster of virtual or on-premises machines. These machines—called nodes—share compute, network, and storage resources. Each cluster has one master node connected to one or more worker nodes. The worker nodes are responsible for running groups of containerized applications and workloads, known as pods, and the master node manages which pods run on which worker nodes.
 
 :::image type="content" source="../media/overview-cluster-nodes-bad6d19a.png" alt-text="Diagram showing how nodes and pods make up a cluster.":::
 
 
 Furthermore, a Kubernetes cluster is divided into two components:<br>
 
- -  **Control plane:** provides the core Kubernetes services and orchestration of application workloads.
- -  **Nodes:** run your application workloads.
+ -  **Control plane**: provides the core Kubernetes services and orchestration of application workloads.
+ -  **Nodes**: run your application workloads.
 
 :::image type="content" source="../media/cluster-architecture-control-plane-and-nodes-e496ba6d.png" alt-text="Diagram showing how Kubernetes control plane and node components work together.":::
 
@@ -17,7 +17,7 @@ A cluster uses centralized software that's responsible for scheduling and contro
 
 A node in a Kubernetes cluster is where your compute workloads run. Each node communicates with the control plane via the API server to inform it about state changes on the node.
 
-For the master node to communicate with the worker nodes—and for a person to communicate with the master node—Kubernetes includes many objects that collectively form the control plane.
+For the master node to communicate with the worker nodes—and for a person to communicate with the master node—Kubernetes includes many objects that make up the control plane.
 
 Developers and operators interact with the cluster primarily through the master node by using kubectl, a command-line interface that installs on their local OS. Commands issued to the cluster through kubectl are sent to the kube-apiserver, the Kubernetes API that resides on the master node. The kube-apiserver then communicates requests to the kube-controller-manager in the master node, which is in turn responsible for handling worker node operations. Commands from the master node are sent to the kubelet on the worker nodes.
 
