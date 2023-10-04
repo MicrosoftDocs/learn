@@ -1,4 +1,5 @@
-# Introduction
+
+
 One of the best ways to demonstrate your skill is by working on portfolio-worthy projects. This usually starts by taking up a well documented challenge.
 
 In this learning module, you'll build a Canvas App and integrate Microsoft AI Services into it. This project comes with numerous learning opportunities as you get to interact with Microsoft Azure AI services and integrate them into the application you're building.
