@@ -17,7 +17,7 @@ The CAF brings together cloud adoption best practices from Microsoft employees, 
 
 :::image type="content" source="../media/cloud-adoption-framework-overview-new.png" alt-text="Diagram showing the Cloud Adoption Framework process.":::
 
-Review the guidance for each methodology.
+Review the guidance for each methodology:
 - Learn more about CAF in this [overview](/azure/cloud-adoption-framework/overview/?azure-portal=true).
 - Download [tools and templates](/azure/cloud-adoption-framework/resources/tools-templates) from CAF to get started on your journey to Azure.
 
