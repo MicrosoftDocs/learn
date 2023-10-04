@@ -51,7 +51,7 @@ This exercise takes you through the process of evaluating whether you need a ded
 -->
 
 <!-- Pattern for simple chunks (repeat as needed) -->
-<a name='dedicated-test-tenant-or-production-azure-ad-tenant'></a>
+<a name='dedicated-test-tenant-or-production-microsoft-entra-tenant'></a>
 
 ## Dedicated test tenant or production Microsoft Entra tenant?
 
