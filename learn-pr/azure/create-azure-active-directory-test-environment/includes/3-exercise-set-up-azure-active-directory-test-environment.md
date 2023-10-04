@@ -152,7 +152,7 @@ clientsecret=$(az ad app credential reset --id $appIdTest --append --display-nam
 echo $clientsecret
 ```
 
-<a name='get-azure-ad-premium-features'></a>
+<a name='get-microsoft-entra-id-premium-features'></a>
 
 ## Get Microsoft Entra ID P1 or P2 features
 
