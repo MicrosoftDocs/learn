@@ -15,7 +15,7 @@ Existing connections may not be interrupted when you remove a security rule that
 
 ## How network security groups filter network traffic
 
-You can deploy resources from several Azure services into an Azure virtual network. For a complete list, see Services that can be deployed into a virtual network. You can associate zero, or one, network security group to each virtual network subnet and network interface in a virtual machine. The same network security group can be associated to as many subnets and network interfaces as you choose.e following picture illustrates different scenarios for how network security groups might be deployed to **allow network traffic to and from the internet over TCP port 80**:
+You can deploy resources from several Azure services into an Azure virtual network. You can associate zero, or one, network security group to each virtual network subnet and network interface in a virtual machine. The same network security group can be associated to as many subnets and network interfaces as you choose. The following picture illustrates different scenarios for how network security groups might be deployed to **allow network traffic to and from the internet over TCP port 80**:
 
 :::image type="content" source="../media/network-security-group-interaction-6fb53fae.png" alt-text="Diagram showing an example of how network security groups might be deployed to allow network traffic to and from the internet over TCP port 80.":::
 

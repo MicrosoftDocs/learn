@@ -34,6 +34,6 @@ modules:
 - learn.wwl.custom-name-entity-extraction
 - learn.wwl.translate-text-with-translator-service
 - learn.wwl.create-speech-enabled-apps
-- learn.wwl.transcribe-speech-input-text
+- learn.wwl.translate-speech-speech-service
 trophy:
   uid: learn.wwl.develop-language-solutions-azure-ai.trophy
