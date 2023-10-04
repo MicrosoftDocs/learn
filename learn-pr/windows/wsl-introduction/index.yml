@@ -22,7 +22,7 @@ abstract: |
     - Set up a basic development environment with WSL.
     - Explain a typical workflow that uses WSL with recommended IDE and tools.
     - Install and run a Linux distribution or multiple distributions running side-by-side.
-    - Describe the features WSL offers for using both Windows and Linux command line tools and GUI applications.
+    - Describe the features WSL offers for using both Windows and Linux command-line tools and GUI applications.
     - Run basic WSL, Bash, and PowerShell commands.
     - Explain what WSL can and can't do, and assess whether it's the right fit for your needs.
 prerequisites: |

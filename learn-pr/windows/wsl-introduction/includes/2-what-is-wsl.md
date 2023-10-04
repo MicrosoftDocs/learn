@@ -34,7 +34,7 @@ Microsoft announced WSL 2 in May 2019, introducing important changes to the WSL 
 
 The current WSL architecture uses a custom-built Linux kernel. This custom Linux kernel includes a small initialization script in the startup process that establishes connections between Windows and Linux. The kernel is open-source and users are invited to report bugs or request features.
 
-The WSL architecture lets any Linux distribution run on your Windows computer and supports running GUI apps (not just command line tools) if you follow [the tutorial in the documentation](/windows/wsl/tutorials/gui-apps) to add the necessary drivers. The WSL architecture also supports systemd, a Linux init system and service manager. These recent updates make WSL even more similar to running Linux distributions on a bare metal computer, without the Windows operating system.
+The WSL architecture lets any Linux distribution run on your Windows computer and supports running GUI apps (not just command-line tools) if you follow [the tutorial in the documentation](/windows/wsl/tutorials/gui-apps) to add the necessary drivers. The WSL architecture also supports systemd, a Linux init system and service manager. These recent updates make WSL even more similar to running Linux distributions on a bare metal computer, without the Windows operating system.
 
 ## When to use WSL?
 
