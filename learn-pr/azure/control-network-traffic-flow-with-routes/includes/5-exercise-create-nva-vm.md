@@ -20,7 +20,7 @@ To build the NVA, deploy an Ubuntu LTS instance.
         --name nva \
         --vnet-name vnet \
         --subnet dmzsubnet \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```

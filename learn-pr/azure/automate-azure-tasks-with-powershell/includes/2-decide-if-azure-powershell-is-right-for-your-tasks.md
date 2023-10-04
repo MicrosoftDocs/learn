@@ -28,7 +28,7 @@ The Azure CLI is a cross-platform command-line program to connect to Azure and e
 az vm create \
   --resource-group CrmTestingResourceGroup \
   --name CrmUnitTests \
-  --image UbuntuLTS
+  --image Ubuntu2204
   ...
 ```
 

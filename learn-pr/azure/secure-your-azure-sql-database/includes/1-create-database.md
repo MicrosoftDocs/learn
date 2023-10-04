@@ -61,7 +61,7 @@ Let's create the Linux VM that we'll use through some examples.
     az vm create \
       --resource-group $RESOURCEGROUP \
       --name appServer \
-      --image UbuntuLTS \
+      --image Ubuntu2204 \
       --size Standard_DS2_v2 \
       --generate-ssh-keys
     ```
