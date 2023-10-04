@@ -1,6 +1,12 @@
-You can use the power of machine learning to enrich a search index. To do this, you'll use a model trained in Azure Machine Learning studio and call it from a machine learning custom skillset.
+---
+uid: learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search.exercise-enrich-search-index-use-model
+title: Exercise: Enrich a search index using Azure Machine Learning model
+description: Exercise: Enrich a search index using Azure Machine Learning model
+durationInMinutes: 30
+---
+You can use the power of machine learning to enrich a search index. To do this, you'll use a model trained in Azure AI Machine Learning studio and call it from a machine learning custom skillset.
 
-In this exercise, you'll create an Azure Machine Learning studio model, then train, deploy, and test an endpoint using the model. Then you'll create an Azure Cognitive Search service, create sample data, and enrich an index using the Machine Learning studio endpoint.
+In this exercise, you'll create an Azure AI Machine Learning Studio model, then train, deploy, and test an endpoint using the model. Then you'll create an Azure Cognitive Search service, create sample data, and enrich an index using the Azure AI Machine Learning studio endpoint.
 
 > [!NOTE]
 >To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
@@ -8,16 +14,16 @@ In this exercise, you'll create an Azure Machine Learning studio model, then tra
 
 ### Create an Azure Machine Learning workspace
 
-Before you enrich your search index, create an Azure Machine Learning workspace. The workspace will give you access to the Azure Machine Learning studio, a graphical tool you can use to build AI models and deploy them for use.
+Before you enrich your search index, create an Azure Machine Learning workspace. The workspace will give you access to the Azure AI Machine Learning studio, a graphical tool you can use to build AI models and deploy them for use.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign into the [Azure portal](https://portal.azure.com).
 1. Select **+ Create a resource**.
 1. Search for machine learning, and then select **Azure Machine Learning**.
 1. Select **Create**.
-1. Create a Resource group, name it **aml-for-acs-enrichment**.
-1. In **Workspace name**, enter **aml-for-acs-workspace**.
-1. Select a supported Region near you.
-1. Use the default values for the storage account, key vault, application insights, and container registry.
+1. Select **Create new** under **Resource group** and name it **aml-for-acs-enrichment**.
+1. In the Workspace details section, for **Name**, enter **aml-for-acs-workspace**.
+1. Select a supported **Region** near to you.
+1. Use the default values for the **Storage account**, **Key vault**, **Application insights**, and **Container registry**.
 1. Select **Review + create**.
 1. Select **Create**.
 1. Wait for the Azure Machine Learning workspace to be deployed, then select **Go to resource**.
@@ -25,32 +31,33 @@ Before you enrich your search index, create an Azure Machine Learning workspace.
 
 ### Create a regression training pipeline
 
-You'll now create a regression model and train it using an Azure Machine Learning studio pipeline. You'll train your AI model on automobile price data. The model once trained will predict the price of an automobile based on its attributes.
+You'll now create a regression model and train it using an Azure AI Machine Learning Studio pipeline. You'll train your model on automobile price data. The model, once trained, will predict the price of an automobile based on its attributes.
 
-1. On the home page, in the **Designer** block, select **Start now**.
-
-    :::image type="content" source="../media/select-pre-built-components.png" alt-text="A screenshot showing selecting the prebuilt regression model." lightbox="../media/select-pre-built-components.png":::
+1. On the home page, select **Designer**.
 
 1. From the list of prebuilt components, select **Regression - Automobile Price Prediction (Basic)**.
+
+    :::image type="content" source="../media/select-pre-built-components-new.png" alt-text="A screenshot showing selecting the prebuilt regression model." lightbox="../media/select-pre-built-components.png":::
+
 1. Select **Validate**.
 
-    :::image type="content" source="../media/create-compute-instance.png" alt-text="A screenshot showing how to create a compute instance to train the model." lightbox="../media/create-compute-instance.png":::
+1. On the **Graph validation** pane, select the error **Select compute target in submission wizard**.
 
-1. On the **Graph validation** pane, select the error **Select compute target in the settings panel**.
-1. In the Settings pane, select **Create Azure ML instance**.
-1. In Compute name, enter **compute-for-training**.
-1. Select **Create**.
+    :::image type="content" source="../media/create-compute-instance-new.png" alt-text="A screenshot showing how to create a compute instance to train the model." lightbox="../media/create-compute-instance-new.png":::
+1. In the **Select compute type** dropdown, choose **Compute instance**. Then select **Create Azure ML compute instance** underneath.
+1. In the **Compute name** field, enter a unique name (such as **compute-for-training**).
+1. Select **Review + create**, then select **Create**.
 
-    Wait until the compute instance has been created.
-1. In **Select Azure ML compute instance**, select **compute-for-training**.
-1. Select **Validate**, the pipeline should look good.
+1. In the **Select Azure ML compute instance** field, select your instance from the dropdown. You might need to wait until it has finished provisioning.
+
+1. Select **Validate** again, the pipeline should look good.
 
     :::image type="content" source="../media/submit-pipeline.png" alt-text="A screenshot showing the pipeline looking good, and the Submit button highlighted." lightbox="../media/submit-pipeline.png":::
 
-1. Select **Submit**.
-1. In the **Set up pipeline job** dialog, select **Create new**.
+1. Select **Basics** in the **Set up pipeline job** pane.
+1. Select **Create new** under the Experiment name.
 1. In **New experiment name**, enter **linear-regression-training**.
-1. Select **Submit**.
+1. Select **Review + Submit** , then select **Submit**.
 
 #### Create an inference cluster for the endpoint
 
@@ -58,12 +65,13 @@ While your pipeline is training a linear regression model, you can create the re
 
 1. On the left, select **Compute**.
 
-    :::image type="content" source="../media/create-inference-cluster.png" alt-text="A screenshot showing how to create a new inference cluster." lightbox="../media/create-inference-cluster.png":::
+    :::image type="content" source="../media/create-inference-cluster-new.png" alt-text="A screenshot showing how to create a new inference cluster." lightbox="../media/create-inference-cluster-new.png":::
 
-1. Select **Inference clusters**, then select **+ New**.
-1. On the **Create inference cluster** pane, select **Create new**.
-1. Select the same region you used to create your other resources.
-1. In the VM sizes list, select **Standard_A4m_v2**.
+1. Select **Kubernetes clusters**, then select **+ New**.
+1. In the dropdown, select **AksCompute**.
+1. On the **Create AksCompute** pane, select **Create new**.
+1. For **Location**, select the same region you used to create your other resources.
+1. In the VM sizes list, select **Standard_A2_v2**.
 1. Select **Next**.
 1. In **Compute name**, enter **aml-acs-endpoint**.
 1. Select **Enable SSL configuration**.
@@ -74,28 +82,30 @@ While your pipeline is training a linear regression model, you can create the re
 
 Your pipeline job should have finished. You'll download the `score.py` and `conda_env.yaml` files. Then you'll register your trained model.
 
-1. On the left, select Jobs.
+1. On the left, select **Jobs**.
 
-    :::image type="content" source="../media/completed-pipeline.png" alt-text="A screenshot showing the completed pipeline job." lightbox="../media/completed-pipeline.png":::
+    :::image type="content" source="../media/completed-pipeline-new.png" alt-text="A screenshot showing the completed pipeline job." lightbox="../media/completed-pipeline-new.png":::
 
-1. Select your completed job, for example, **Pipeline-Created-on-06-22-2022**.
-1. In the designer, select **Train Model**, and expand the settings pane.
+1. Select your experiment, then select your completed job in the table, for example, **Regression - Automobile Price Prediction (Basic)**. If you're prompted to save changes, select **Discard** for changes.
+1. In the designer, select **Job overview** in the top right, then select the **Train Model** node.
 
     :::image type="content" source="../media/download-score-conda.png" alt-text="A screenshot showing how to download score.py." lightbox="../media/download-score-conda.png":::
 
-1. In **Other outputs**, expand the **trained_model_outputs** folder.
-1. Next to `score.py`, select the more menu (...), then select **Download**.
-1. Next to `conda_env.yaml`, select the more menu (...), then select **Download**.
-1. On the far right of the **Trained model**, select **Register model**.
-1. In the **Register model** dialog, in **Model name**, enter **carevalmodel**.
-1. In **Description (Optional)**, enter **A linear regression model to predict the price of cars**.
-1. Select **Save**.
+1. In the **Outputs + logs** tab, expand the **trained_model_outputs** folder.
+1. Next to `score.py`, select the more menu (**...**), then select **Download**.
+1. Next to `conda_env.yaml`, select the more menu (**...**), then select **Download**.
+1. Select **+ Register model** at the top of the tab.
+1. In the **Job output** field, select the **trained_model_outputs** folder. Then select **Next** at the bottom of the pane.
+1. For model **Name**, enter **carevalmodel**.
+1. In **Description**, enter **A linear regression model to predict the price of cars.**.
+1. Select **Next**.
+1. Select **Register**.
 
-#### Edit the scoring script to respond to Cognitive Search correctly
+#### Edit the scoring script to respond to Azure Cognitive Search correctly
 
-Azure Machine Learning studio has downloaded two files to your web browser's default download location. You need to edit the score.py file to change how the JSON request and response are handled. You can use a text editor or and code editor like VS Code.
+Azure Machine Learning Studio has downloaded two files to your web browser's default download location. You need to edit the score.py file to change how the JSON request and response are handled. You can use a text editor or a code editor like Visual Studio Code.
 
-1. In your text editor, open the score.py file. 
+1. In your editor, open the score.py file.
 1. Replace all the contents of the run function:
 
     ```python
@@ -143,34 +153,54 @@ Azure Machine Learning studio has downloaded two files to your web browser's def
     The other change is to only return the predicted price of the car instead of the whole JSON response.
 1. Save the changes in your text editor.
 
-### Deploy the model with the updated scoring code
+### Create custom environment
+
+Next, you'll create a custom environment so you can deploy to a real-time endpoint.
+
+1. Select **Environments** in the navigation pane.
+1. Select the **Custom environments** tab.
+1. Select **+ Create**.
+1. For **Name**, enter **my-custom-environment**.
+1. In the list of Curated environments under **Select environment type**, select **automl-gpu:2**.
+1. Select **Next**.
+1. On your local machine, open the `conda_env.yaml` file you downloaded earlier and copy its contents.
+1. Return to browser, and select **conda_dependencies.yaml** in the Customize pane.
+1. In the pane on the right, replace its contents with the code you copied earlier.
+1. Select **Next**, then select **Next** again.
+1. Select **Create** to create your custom environment.
+
+### Deploy the model with the updated scoring code <!--Option for web service deployment is greyed out. Can't go further after trying several different things.-->
 
 Your inference cluster should now be ready to use. You've also edited the scoring code to handle requests from your Azure Cognitive Search custom skillset. Let's create and test an endpoint for the model.
 
 1. On the left, select **Models**.
-1. Select the mode you registered, **carevalmodel**.
+1. Select the model you registered, **carevalmodel**.
 
-    :::image type="content" source="../media/deploy-web-service.png" alt-text="A screenshot showing the option to deploy a model as a web service." lightbox="../media/deploy-web-service.png":::
+1. Select **Deploy**, then select **Real-time endpoint**.
 
-1. Select **Deploy**, then select **Deploy to web service**.
+    :::image type="content" source="../media/04-select-endpoint.png" alt-text="A screenshot of the Select endpoint pane." lightbox="../media/04-select-endpoint.png":::
 
-    :::image type="content" source="../media/deploy-model-details.png" alt-text="A screenshot of the fields needed to deploy a model."  lightbox="../media/deploy-model-details.png":::
+1. For **Name**, enter **car-evaluation-endpoint**.
+1. For **Compute type**, select **Managed**.
+1. For **Authentication type**, select **Key-based authentication**.
+1. Select **Next**, then select **Next**.
+1. Select **Next** again.
+1. In the **Select a scoring script for inferencing** field, browse to your updated `score.py` file and select it.
+1. In the **Select environment type** dropdown, select **Custom enviroments**.
+1. Select the checkbox on your custom environment from the list.
+1. Select **Next**.
+1. For Virtual machine, select **Standard_D2as_v4**.
+1. Set **Instance count** to **1**.
+1. Select **Next**,  then select **Next** again.
+1. Select **Create**.
 
-1. In the **Deploy a model** dialog, in Name, enter **car-evaluation-endpoint**.
-1. In **Computer name**, select **aml-acs-endpoint**.
-1. Select **Enable authentication**.
-1. In **Type**, select **Key-based authentication**.
-1. In **Entry script file**, browse to your updated `score.py` file and select it.
-1. In **Conda dependencies file**, browse to your `conda_env.yaml` file and select it.
-1. Select **Deploy**.
-
-Wait for the model to be deployed, it can take up to 10 minutes. You can check the status in **Notifications** or the endpoints section of the Azure Machine Learning studio.
+Wait for the model to be deployed, it can take up to 10 minutes. You can check the status in **Notifications** or the endpoints section of the Azure Machine Learning Studio.
 
 #### Test your trained model's endpoint
 
 1. On the left, select **Endpoints**.
 1. Select **car-evaluation-endpoint**.
-1. Select **Test**, in **Input data to test real-time endpoint** paste this example JSON.
+1. Select **Test**, in **Input data to test endpoint** paste this example JSON.
 
     ```json
     {
@@ -201,13 +231,15 @@ Wait for the model to be deployed, it can take up to 10 minutes. You can check t
         "price": 0.0
     }
     ```
-1. Select **Submit**, and you should see a response:
+
+1. Select **Test**, and you should see a response:
 
     ```json
     {
         "predicted_price": 5790.948226933133
     }
     ```
+
 1. Select **Consume**.
 
     :::image type="content" source="../media/copy-rest-endpoint.png" alt-text="A screenshot showing how to copy the REST endpoint and primary key." lightbox="../media/copy-rest-endpoint.png":::
@@ -215,9 +247,9 @@ Wait for the model to be deployed, it can take up to 10 minutes. You can check t
 1. Copy the **REST endpoint**.
 1. Copy the **Primary key**.
 
-### Integrate an Azure Machine Learning model with Cognitive Search
+### Integrate an Azure Machine Learning model with Azure Cognitive Search
 
-Now create a new Cognitive Search service and enrich an index using a custom skillset.
+Next, you create a new Cognitive Search service and enrich an index using a custom skillset.
 
 #### Create a test file
 
@@ -225,13 +257,15 @@ Now create a new Cognitive Search service and enrich an index using a custom ski
 1. Select **aml-for-acs-enrichment**.
 
     :::image type="content" source="../media/navigate-storage-account.png" alt-text="A screenshot showing selecting a storage account in the Azure portal." lightbox="../media/navigate-storage-account.png":::
-1. Select the storage account, for example **amlforacsenric2940127500**.
-1. Under **Data storage**, select **Containers**.
+1. Select the storage account, for example **amlforacsworks1440637584**.
+1. Select **Configuration** under **Settings**. Then set **Allow Blob anonymous acces** to **Enabled**.
+1. Select **Save**.
+1. Under **Data storage**, select **Containers**. 
 1. Create a new container to store index data, select **+ Container**.
 1. In the **New container** pane, in **Name**, enter **docs-to-search**.
-1. In **Public access level**, select **Container**.
+1. In **Anonymous access level**, select **Container (anonymous read access for containers and blobs)**.
 1. Select **Create**.
-1. Select the container you created, **docs-to-search**.
+1. Select the **docs-to-search** container you created.
 1. In a text editor, create a JSON document:
 
     ```json
@@ -266,36 +300,37 @@ Now create a new Cognitive Search service and enrich an index using a custom ski
 
     Save the document to your machine as `test-car.json` extension.
 1. In the portal, select **Upload**.
-1. In the **Upload blob** pane, select **Files**, navigate to where you saved the JSON document, and select it.
+1. In the **Upload blob** pane, select **Brows for files**, navigate to where you saved the JSON document, and select it.
 1. Select **Upload**.
 
-#### Create an Azure Cognitive Search service
+#### Create an Azure Cognitive Search resource
 
-1. In the portal, on the left, select **+ Create a resource**.
-1. Search for cognitive search, then select **Azure Cognitive Search**.
+1. In the Azure portal, on the home page, select **+ Create a resource**.
+1. Search for **Azure Cognitive Search**, then select **Azure Cognitive Search**.
 1. Select **Create**.
 1. In **Resource Group**, select **aml-for-acs-enrichment**.
-1. In Service name, select **acs-enriched**.
+1. In Service name, enter **acs-enriched**.
+1. For **Location**, select the same region you used earlier.
 1. Select **Review + create**, then select **Create**.
 1. Wait for the resources to be deployed, then select **Go to resource**.
 1. Select **Import data**.
-1. On the **Import data** pane, in **Data Source**, select **Azure Blob Storage**.
-1. In **Data source name**, select **import-docs**.
+1. On the **Connect to your data** pane, for the **Data source name** field, select **Azure Blob Storage**.
+1. In **Data source name**, enter **import-docs**.
 1. In **Parsing mode**, select **JSON**.
 1. In **Connection string**, select **Choose an existing connection**.
-1. Select the storage account you uploaded to, for example, **amlforacsenricNNNNNNNN**.
+1. Select the storage account you uploaded to, for example, **amlforacsworks1440637584**.
 1. In the **Containers** pane, select **docs-to-search**. 
-1. Choose **Select**.
+1. Select **Select**.
 1. Select **Next: Add cognitive skills (Optional)**.
 
 #### Add cognitive skills
 
 1. Expand **Add enrichments**, then select **Extract people names**.
 1. Select **Next: Customize target index**.
-1. Select **+ Add field**, in the **Field name** enter **predicted_price**.
-1. In **Type**, select **Edm.Double**.
+1. Select **+ Add field**, in the **Field name** enter **predicted_price** at the bottom of the list.
+1. In **Type**, select **Edm.Double** for your new entry.
 1. Select **Retrievable** for all fields.
-1. Select **Searchable** against **make**.
+1. Select **Searchable** for **make**.
 1. Select **Next: Create an indexer**.
 1. Select **Submit**.
 
@@ -303,7 +338,7 @@ Now create a new Cognitive Search service and enrich an index using a custom ski
 
 You'll now replace the people names enrichment with the Azure Machine Learning custom skillset.
 
-1. On the Overview pane, select **Skillsets**.
+1. On the Overview pane, select **Skillsets** under **Search management**.
 1. Under **Name**, select **azureblob-skillset**.
 1. Replace the skills definition for the `EntityRecognitionSkill` with this JSON, remember to replace your copied endpoint and primary key values:
 
@@ -432,8 +467,8 @@ You'll now replace the people names enrichment with the Azure Machine Learning c
 
 #### Update the output field mappings
 
-1. From the **Overview** pane, select **Indexers**, then select the **azureblob-indexer**.
-1. Change the `outputFieldMappings` value to:
+1. Go back to the **Overview** pane, and select **Indexers**, then select the **azureblob-indexer**.
+1. Select the **Indexer Definition (JSON)** tab, then change the **outputFieldMappings** value to:
 
     ```json
     "outputFieldMappings": [
@@ -443,18 +478,20 @@ You'll now replace the people names enrichment with the Azure Machine Learning c
         }
       ]
     ```
+
 1. Select **Save**.
-1. Select **Reset**.
-1. Select **Run**.
+1. Select **Reset**, then select **Yes**.
+1. Select **Run**, then select **Yes**.
 
 ### Test index enrichment
 
 The updated skillset will now add a predicted value to the test car document in your index. To test this, follow these steps.
-1. On the **Overview** pane of your search service, select **Search explorer**.
+
+1. On the **Overview** pane of your search service, select **Search explorer** at the top of the pane.
 1. Select **Search**.
 1. Scroll to the bottom of the results.
 
-:::image type="content" source="../media/test-results-search-explorer.png" alt-text="A screenshot showing the predicted car price field added to the search results." lightbox="../media/test-results-search-explorer.png":::
+    :::image type="content" source="../media/test-results-search-explorer.png" alt-text="A screenshot showing the predicted car price field added to the search results." lightbox="../media/test-results-search-explorer.png":::
 
 You should see the populate field `predicted_price`.
 
@@ -462,5 +499,5 @@ You should see the populate field `predicted_price`.
 
 Now that you've completed the exercise, delete all the resources you no longer need. Delete the Azure resources:
 
-1. In the Azure portal, select **All resources**.
-1. Select the resources you don't need, then select **Delete**.
+1. In the Azure portal, select **Resource groups**.
+1. Select the resource group you don't need, then select **Delete resource group**.
