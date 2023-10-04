@@ -383,15 +383,18 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. Select **Developer settings** at the bottom of the left menu.
 
-1. Select **Personal access tokens**.
+1. Select **Personal access tokens** > **Tokens (classic)** from the dropdown.
 
-1. Select **Generate new token**.
+1. Select **Generate new token** > **Generate new token (classic)** from the dropdown.
 
 1. Provide a name for your PAT, such as *myPersonalAccessToken*
   
-1. Select the checkbox next to **public_repo**.
+1. Select the checkbox next to **workflow**.
 
     :::image type="content" source="../media/7-create-personal-access-token.png" alt-text="Screenshot that shows the personal access tokens page.":::
+
+    > [!NOTE]
+    > The Workflow scope grants admin repo access to the Github actions. You need this to push your tags in the next step and run the deploy script in a future unit.
 
 1. Select **Generate token** at the bottom of the page.
 
@@ -399,7 +402,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     :::image type="content" source="../media/7-copy-personal-access-token.png" alt-text="Screenshot that shows the personal access token after it has been created.":::
 
-## Check the results
+## Trigger tag event
 
 1. Open your cloned repository in Azure Cloud Shell. Run `git pull`.
     > [!div class="nextstepaction"]
@@ -426,8 +429,8 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. When the process is completed, in Azure Cloud Shell, run the following command to confirm that two tags are listed in the results:
 
-  ```bash
-    az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table
-  ```
-
-  Replace ACR_NAME with your ACR_NAME.
+    ```bash
+      az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table
+    ```
+    
+    Replace ACR_NAME with your ACR_NAME.
