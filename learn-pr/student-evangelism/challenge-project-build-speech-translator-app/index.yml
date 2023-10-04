@@ -24,29 +24,26 @@ prerequisites: |
   - Experience building Power Apps canvas apps
   - Basic knowledge of Power Fx formulas
   - Fundamental understanding of Microsoft Azure AI
-iconUrl: /training/achievements/student-evangelism/challenge-project-build-speech-translator-app.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
-  - beginners
+  - beginner
 roles: 
   - student
   - business-user
-  - educator
   - developer
-  - citizen-dev
   - higher-ed-educator
 products:
 - m365
 - azure
 - power-platform
 subjects:
-  - power-apps
-  - azure-ai
+  - data-ai
 units:
 - learn.student-evangelism.challenge-project-build-speech-translator-app.introduction
 - learn.student-evangelism.challenge-project-build-speech-translator-app.prepare
 - learn.student-evangelism.challenge-project-build-speech-translator-app.exercise-create-data-model-and-canvas-app
 - learn.student-evangelism.challenge-project-build-speech-translator-app.exercise-create-microsoft-azure-ai-service
-- learn.student-evangelism.challenge-project-build-speech-translator-app.exercise-integrate-ai-service-to-power-app
+- learn.student-evangelism.challenge-project-build-speech-translator-app.exercise-integrate-ai-service-to-power-apps
 - learn.student-evangelism.challenge-project-build-speech-translator-app.knowledge-check
 - learn.student-evangelism.challenge-project-build-speech-translator-app.summary
 badge:
