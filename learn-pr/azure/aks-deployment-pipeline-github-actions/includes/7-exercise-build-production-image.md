@@ -408,7 +408,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 1. Run the following command:
 
     ```bash
-    git tag -a v1.0.0 -m 'First tag'
+    git tag -a v2.0.0 -m 'My first tag'
     ```
 
 1. Run the following command:
@@ -416,6 +416,9 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     ```bash
     git push --tags
     ```
+
+    > [!IMPORTANT]
+    > When you push the tag, the original repo uses v1.0.0, so your tag must be different as duplicates cannot exist.
 
 1. When prompted, provide your GitHub username, and the PAT created previously as the password.
 
