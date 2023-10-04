@@ -1,7 +1,7 @@
 In this exercise, you step through the process of configuring a persistent volume for a pod on an AKS cluster. You use the AKS cluster provisioned in the first exercise of this module.
 
 > [!NOTE]
-> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/).
+> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/).<br>
 
 ### Create a custom storage class in an AKS cluster
 
@@ -23,7 +23,7 @@ allowVolumeExpansion:
 <!--- raw content end --->
     
     > [!NOTE]
-    > The `reclaimPolicy` is set to **Retain**.
+    > The `reclaimPolicy` is set to **Retain**.<br>
 2.  Save the changes to the file and close it to return to the Bash prompt.
 3.  To create the custom storage class, from the Bash session in the Azure Cloud Shell, run the following command:
     
@@ -52,7 +52,7 @@ spec:
 <!--- raw content end --->
     
     > [!NOTE]
-    > The `storageClassName` is set to **managed-premium-retain**.
+    > The `storageClassName` is set to **managed-premium-retain**.<br>
 2.  Save the changes to the file and close it to return to the Bash prompt.
 3.  To create the persistent volume claim, from the Bash session in the Azure Cloud Shell, run the following command:
     
@@ -85,7 +85,7 @@ spec:
 <!--- raw content end --->
     
     > [!NOTE]
-    > The `mountPath`is set to **/mnt/azure** and `claimName`is set to **azure-managed-disk**.
+    > The `mountPath`is set to **/mnt/azure** and `claimName`is set to **azure-managed-disk**.<br>
 
 2.  Save the changes to the file and close it to return to the Bash prompt.
 3.  To deploy the pod, from the Bash session in the Azure Cloud Shell, run the following command:
@@ -158,7 +158,7 @@ In this task, you delete the resources you provisioned in this exercise.
     ```
     
     > [!NOTE]
-    > Alternatively, you could run kubectl delete -f persistent-volume-claim-5g.yaml
+    > Alternatively, you could run kubectl delete -f persistent-volume-claim-5g.yaml<br>
 
 2.  To list and delete the storage class, run the following commands:
     

@@ -10,7 +10,7 @@ In this exercise, you step through the process of applying pod security settings
 In this exercise, you deploy an AKS cluster. You use this cluster throughout all exercises in the module. While you can deploy a cluster using the Azure portal, you can use on Azure CLI instead for simplicity.
 
 > [!NOTE]
-> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/).
+> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/)<br>.
 
 1.  From your computer, open a web browser window and navigate to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 2.  In the Azure portal, select the **Azure Cloud Shell** icon.
@@ -26,13 +26,13 @@ In this exercise, you deploy an AKS cluster. You use this cluster throughout all
 
 6.  To create an AKS cluster, run the following commands:
 
-```azurecli
-AKSNAME='aks-01'
-az aks create --resource-group $AKSRG --name $AKSNAME --enable-managed-identity --node-count 1 --generate-ssh-keys
-```
+    ```azurecli
+    AKSNAME='aks-01'
+    az aks create --resource-group $AKSRG --name $AKSNAME --enable-managed-identity --node-count 1 --generate-ssh-keys
+    ```
 
-    > [!NOTE]
-    > Wait for the cluster provisioning to complete. Provisioning takes a few minutes.
+> [!NOTE]
+> Wait for the cluster provisioning to complete. Provisioning takes a few minutes.<br>
 
 7.  Once the cluster provisioning completes, to connect to the AKS cluster, run the following command:
     
@@ -69,7 +69,7 @@ In this task, you install the Azure Policy add-on for AKS.
     ```
     
     > [!NOTE]
-    > It's possible to enable the add-on during cluster deployment.
+    > It's possible to enable the add-on during cluster deployment.<br>
 
 4.  To validate that the add-on installation was successful and that the *azure-policy* and *gatekeeper* pods are operational, run the following commands:
     
@@ -102,7 +102,7 @@ In this task, you assign an Azure Policy initiative to an AKS cluster. You use o
 10. On the Parameters tab, remove the **Only show parameters that need input or review parameter**. Next, in the **Effect drop-down** list, select **Deny** and then select **Review + create**.
     
     > [!NOTE]
-    > You can apply exclusions and inclusions to individual namespaces.
+    > You can apply exclusions and inclusions to individual namespaces.<br>
 
 10. On the **Review + create** tab, select **Create**.
 11. Wait until the assignment takes effect (about 20 minutes). In the Azure portal, navigate to the **Azure Policy** page, select **Compliance**, and check if it displays the compliance status for the newly created policy assignment. Alternatively, you can rerun the kubectl get constraint templates command.

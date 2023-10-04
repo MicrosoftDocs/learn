@@ -1,7 +1,7 @@
 In this exercise, you walk through the process of creating and updating a deployment in an Azure Kubernetes Service cluster. You use the cluster you provisioned in the first exercise of this module.
 
 > [!NOTE]
-> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/).
+> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/).<br>
 
 ### Prepare for creating a deployment to an Azure Kubernetes Service cluster.
 
@@ -22,7 +22,7 @@ In this task, you prepare for a deployment to an AKS cluster by creating a names
     ```
     
     > [!NOTE]
-    > Wait until the extra node is fully provisioned before you proceed to the next task.
+    > Wait until the extra node is fully provisioned before you proceed to the next task.<br>
 
 ### Create a deployment
 
@@ -138,4 +138,4 @@ In this task, you delete the resources you provisioned in this module by deletin
     ```
     
     > [!NOTE]
-    > The command takes a few minutes for the resource groups to be removed.
+    > The command takes a few minutes for the resource groups to be removed.<br>
