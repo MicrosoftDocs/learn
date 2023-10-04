@@ -1,4 +1,4 @@
-## Exercise 2 - Create Microsoft Azure AI Service
+
 
 In the previous module, you created a simple Canvas App however, not all the features are working, for example, clicking on the Translate button didn't change anything because there's no service yet for speech recognition and translation. In this exercise, you're to set up Microsoft Azure AI Speech Service that will address this need.
 
