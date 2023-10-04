@@ -1,15 +1,15 @@
-In the preceding exercise, you built the staging workflow for building and publishing the image. Let's recap the production workflow:
+In the previous exercise, you built the staging workflow for building and publishing the image. Now, let's build the production workflow:
 
 :::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy steps in a pipeline.":::
 
-You'll build the tagged version by using a different workflow.
+You'll build the tagged version trigger with a different workflow.
 
 In this exercise, you'll:
 
 - Build the Actions workflow
-- Create the trigger
-- Build and push the image
-- Check the results
+- Create the on tag trigger
+- Setup GitHub Authentication Tokens
+- Build and push the tagged image
 
 ## Build the Actions workflow
 
@@ -199,7 +199,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
           - name: Docker Login
             # You may pin to the exact commit or the version.
             # uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
-            uses: docker/login-action@v2.1.0
+            uses: docker/login-action@v3.0.0
             with:
               # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
@@ -245,9 +245,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
 
           - name: Docker Login
-            # You may pin to the exact commit or the version.
-            # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
-            uses: docker/login-action@v1
+            uses: docker/login-action@v3.0.0
             with:
               # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
@@ -261,7 +259,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
           - name: Build and push Docker images
             # You may pin to the exact commit or the version.
             # uses: docker/build-push-action@c56af957549030174b10d6867f20e78cfd7debc5
-            uses: docker/build-push-action@v3.2.0
+            uses: docker/build-push-action@v5.0.0
             with:
               # Here you can set the parameters
     ```
@@ -333,7 +331,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     ```yaml
     - name: Set up Buildx
-      uses: docker/setup-buildx-action@v1
+      uses: docker/setup-buildx-action@v3.0.0
     ```
 
     Your final file should be like this:
@@ -358,17 +356,17 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
 
           - name: Set up Buildx
-            uses: docker/setup-buildx-action@v1
+            uses: docker/setup-buildx-action@v3.0.0
 
           - name: Docker Login
-            uses: docker/login-action@v1
+            uses: docker/login-action@v3.0.0
             with:
               registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
 
           - name: Build and push production images
-            uses: docker/build-push-action@v2
+            uses: docker/build-push-action@v5.0.0
             with:
               context: .
               tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
@@ -410,7 +408,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 1. Run the following command:
 
     ```bash
-    git tag -a v2.0.0 -m 'First tag'
+    git tag -a v1.0.0 -m 'First tag'
     ```
 
 1. Run the following command:
@@ -425,6 +423,8 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. When the process is completed, in Azure Cloud Shell, run the following command to confirm that two tags are listed in the results:
 
-    ```bash
+  ```bash
     az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table
-    ```
+  ```
+
+  Replace ACR_NAME with your ACR_NAME.

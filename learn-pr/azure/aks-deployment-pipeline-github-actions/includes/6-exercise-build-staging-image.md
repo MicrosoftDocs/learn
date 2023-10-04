@@ -1,4 +1,4 @@
-We talked about the concepts behind the pipeline, CI, and Docker. Now, it's time to put these concepts into practice.
+We talked about the concepts behind the pipeline, CI/CD, and Docker. Now, it's time to put these concepts into practice.
 
 Let's review our designed pipeline:
 
@@ -11,8 +11,8 @@ In this exercise, you'll:
 - Build the Actions workflow
 - Create the trigger
 - Build and push the image
-- Set the secrets
-- Push the image
+- Set the environment/repo secrets
+- Push the image to run a workflow
 
 ## Build the Actions workflow
 
@@ -81,6 +81,8 @@ Our basic workflow file comes with two triggers:
 - Any push to the main branch.
 - Any pull request on the main branch.
 
+But, we don't need it to run on a pull request, so we modify it to keep only the push trigger.
+
 1. Change the default triggers in the `on` key.
 
 1. Remove the second trigger and leave only the `push` tags.
@@ -99,7 +101,7 @@ Our basic workflow file comes with two triggers:
 
 ## Build and push the image
 
-Let's work on the jobs you're going to run. In this process, you address both the build steps and the deploy steps that are shown in the pipeline design diagram.
+Let's work on the jobs next. In this process, you mimic both the build steps and the deploy steps shown in the pipeline design diagram.
 
 GitHub workflows are divided into jobs, and jobs are divided into steps. Each step can have multiple commands and use multiple actions to be executed.
 
@@ -128,7 +130,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     You already have a step that uses the `checkout` action. This action clones the repository into the job environment.
 
-    This step is equivalent to the first action (clone the repo) in the build steps in the pipeline design diagram.
+    This step is equivalent to the first action (clone the repo) in the build steps from the pipeline design diagram.
 
     Next, add other actions to build your Docker image.
 
@@ -162,9 +164,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
           - uses: actions/checkout@v2
 
           - name: Docker Login
-            # You may pin to the exact commit or the version.
-            # uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
-            uses: docker/login-action@v2.1.0
+            uses: docker/login-action@v3.0.0
             with:
               # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
@@ -205,9 +205,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
           - uses: actions/checkout@v2
 
           - name: Docker Login
-            # You may pin to the exact commit or the version.
-            # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
-            uses: docker/login-action@v1
+            uses: docker/login-action@v3.0.0
             with:
               # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
@@ -219,9 +217,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
               logout: # optional, default is true
 
           - name: Build and push Docker images
-            # You may pin to the exact commit or the version.
-            # uses: docker/build-push-action@c56af957549030174b10d6867f20e78cfd7debc5
-            uses: docker/build-push-action@v3.2.0
+            uses: docker/build-push-action@v5.0.0
             with:
               # Here we add a list of parameters
     ```
@@ -265,14 +261,14 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
           - uses: actions/checkout@v2
 
           - name: Docker Login
-            uses: docker/login-action@v1
+            uses: docker/login-action@v3.0.0
             with:
               registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
 
           - name: Build and push staging images
-            uses: docker/build-push-action@v2
+            uses: docker/build-push-action@v5.0.0
             with:
               context: .
               tags: ${{secrets.ACR_NAME}}/contoso-website:latest
@@ -287,7 +283,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     ```yml
     - name: Set up Buildx
-      uses: docker/setup-buildx-action@v2
+      uses: docker/setup-buildx-action@v3.0.0
     ```
 
     Your final file should be like this:
@@ -307,17 +303,17 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
           - uses: actions/checkout@v2
 
           - name: Set up Buildx
-            uses: docker/setup-buildx-action@v1
+            uses: docker/setup-buildx-action@v3.0.0
 
           - name: Docker Login
-            uses: docker/login-action@v1
+            uses: docker/login-action@v3.0.0
             with:
               registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
 
           - name: Build and push staging images
-            uses: docker/build-push-action@v2
+            uses: docker/build-push-action@v5.0.0
             with:
               context: .
               push: true
