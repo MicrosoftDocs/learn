@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-monitoring-applications.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: "Knowledge Check"
-  ms.date: 10/04/2023
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ quiz:
     - content: "Microsoft Entra ID logs"
       isCorrect: false
       explanation: "Incorrect. Microsoft Entra ID logs contain the history of sign-in activity and an audit trail of changes made in Entra ID for a particular tenant."
-  - content: "Which of the following Application Insights log-based metrics should you choose if you want to have the best performance at query time?"
+  - content: "Which of the following Application Insights log-based metrics should be chosen for the best performance at query time?"
     choices:
     - content: "Log-based metrics"
       isCorrect: false

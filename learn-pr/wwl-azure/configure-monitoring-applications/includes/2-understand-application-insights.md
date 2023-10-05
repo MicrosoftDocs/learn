@@ -8,7 +8,7 @@ In addition to collecting metrics and application telemetry data, which describe
 
 The log trace is associated with other telemetry to give a detailed view of the activity. Adding trace logging to existing apps only requires providing a destination for the logs; the logging framework rarely needs to be changed.
 
-:::image type="content" source="../media/app-insights.png" alt-text="Screenshot of the an Application Insights dashboard, displaying categories of metrics collected for web app usage, such as reliabilty, responsiveness, and browser." border="true":::
+:::image type="content" source="../media/app-insights.png" alt-text="Screenshot of the Application Insights dashboard, displaying categories of metrics collected for web app usage." lightbox="../media/app-insights.png" border="true":::
 
 ## What Application Insights monitors
 
