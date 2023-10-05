@@ -15,16 +15,12 @@ Here, you'll add an organization to your cross-tenant access settings. Then you'
 ### Open the Microsoft Entra service in the portal
 
 1. Open a web browser.
-1. In the address bar, type https://portal.azure.com.
+1. In the address bar, type https://entra.microsoft.com.
 1. Sign in using your Microsoft Entra admin account.
-1. Open the Microsoft Entra service with the following steps:
-   - Under **Azure services**, select **Microsoft Entra ID**, or
-   - Use the search box search for "Microsoft Entra ID" and then select it.
 
 ## Add an organization
 
-1. On the left navigation bar, select **External Identities**.
-1. Select **Cross-tenant access settings**.
+1. On the left navigation bar, browse to **Identity** > **External Identities** > **Cross-tenant access settings**.
 1. Select the **Organizational settings** tab.
 1. Select **Add organization**.
 
