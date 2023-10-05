@@ -1,4 +1,5 @@
-# Introduction
+
+
 One of the best ways to demonstrate your skill is by working on portfolio-worthy projects. This usually starts by taking up a well documented challenge.
 
 In this learning module, you'll build a Canvas App and integrate Microsoft AI Services into it. This project comes with numerous learning opportunities as you get to interact with Microsoft Azure AI services and integrate them into the application you're building.
@@ -32,5 +33,5 @@ In this module, you'll demonstrate your ability to:
 ## Learn before you Do
 If this is your first time learning about Power Apps or about Microsoft Azure AI Services, we have a few resources to help you gt started.
 
-- [Power Platform for Beginners](https://learn.microsoft.com/training/paths/power-plat-fundamentals/?WT.mc_id=academic-109167-ooyinbooke).
-- [Microsoft Azure AI Fundamental](https://learn.microsoft.com/training/paths/get-started-with-artificial-intelligence-on-azure/?WT.mc_id=academic-109168-ooyinbooke).
+- [Power Platform for Beginners](/training/paths/power-plat-fundamentals/?WT.mc_id=academic-109167-ooyinbooke).
+- [Microsoft Azure AI Fundamental](/training/paths/get-started-with-artificial-intelligence-on-azure/?WT.mc_id=academic-109168-ooyinbooke).

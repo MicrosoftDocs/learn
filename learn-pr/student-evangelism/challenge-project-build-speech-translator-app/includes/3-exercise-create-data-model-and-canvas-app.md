@@ -1,9 +1,9 @@
-# Exercise 1 - Build Data Model and Create the App
+
 Your first activity will be to create a Dataverse table to store conversation history and details of the user. Giving the nature of the project, you only have to store the translated texts into the table and this doesn't require complex tables and relationship mapping. You'll validate your app against requirements to check your work.
 Let's dive deeper into other tasks to be carried out.
 
 ## Specification
-Create a Power Apps App that meets the following basic functionalities and specifications:
+Create a Power Apps that meets the following basic functionalities and specifications:
 
 - Create a custom table to capture the conversation. Here are some recommendations for storing the speech recognition and translation data in Dataverse tables:
 

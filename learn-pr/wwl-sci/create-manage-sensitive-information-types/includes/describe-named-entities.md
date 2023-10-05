@@ -12,20 +12,20 @@ Bundled named entity SITs detect all possible matches in a class, such as *All p
 
 Here are some examples of named entity SITs. You can find all of them in [Sensitive information type entity definitions](/purview/sensitive-information-type-entity-definitions?azure-portal=true).
 
-|Named Entity |Description  |Bundled/Unbundled  |
+|Named entity |Description  |Bundled/unbundled  |
 |---------|---------|---------|
 |All full names    |Detect all possible matches of full names.         |   bundled      |
 |All physical addresses    |Detects all possible matches of physical addresses.     | bundled |
 |All medical terms and conditions    |Detects all possible matches of medical terms and conditions. |bundled |
-|Australia Physical Addresses |  Detects patterns related to physical addresses from Australia. Included in All physical addresses SIT. |unbundled |
-|Blood Test Terms     |Detects terms related to blood tests, such as 'hCG.' English terms only. Included in All medical terms and conditions SIT      |unbundled |
-|Brand Medication Names     |Detects names of brand medication, such as 'Tylenol.' English terms only. Included in All medical terms and conditions.         |unbundled |
+|Australia physical addresses |  Detects patterns related to physical addresses from Australia. Included in All physical addresses SIT. |unbundled |
+|Blood test terms     |Detects terms related to blood tests, such as 'hCG.' English terms only. Included in All medical terms and conditions SIT      |unbundled |
+|Brand medication names     |Detects names of brand medication, such as 'Tylenol.' English terms only. Included in All medical terms and conditions.         |unbundled |
 
 ## Examples of enhanced DLP policies
 
 DLP makes special use of named entities in *enhanced policy templates*. These are pre-configured DLP policies that you can customize for your organization's needs. You can also [create your own DLP policies](/purview/dlp-create-deploy-policy?azure-portal=true) from a blank template and use a named entity SIT as a condition. You can find 10 enhanced DLP policies in the **Microsoft Purview compliance portal** by navigating to **Data loss prevention** > **Create policy**. Enhanced templates can be used in DLP and auto-labeling.
 
-For more information about enhanced DLP policies that used named entity SITs, see [Examples of enhanced DLP policies](/purview/named-entities-learn#examples-of-enhanced-dlp-policies?azure-portal=true).
+For more information about enhanced DLP policies that use named entity SITs, see [Examples of enhanced DLP policies](/purview/named-entities-learn#examples-of-enhanced-dlp-policies?azure-portal=true).
 
 ## Monitor named entities with Microsoft Purview Information Protection interactive guide
 
