@@ -24,7 +24,7 @@ The Microsoft Azure AI Service - Speech Service is the back-end engine that comp
 
 ## Check your work
 
-- To validate if this work, navigate to Power Apps, add `AzureBatchSpeech-to-text` to your data source and connect using the key and region details from the Microsoft Azure portal.
+- To validate if this works, navigate to Power Apps, add `AzureBatchSpeech-to-text` to your data source and connect using the key and region details from the Microsoft Azure portal.
 
 If added successfully, Congratulations! You're making incredible progress.
 
