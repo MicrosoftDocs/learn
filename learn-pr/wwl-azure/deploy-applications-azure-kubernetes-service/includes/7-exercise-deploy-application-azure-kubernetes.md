@@ -3,7 +3,7 @@ In this exercise, you walk through the process of creating and updating a deploy
 > [!NOTE]
 > To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/).<br>
 
-### Prepare for creating a deployment to an Azure Kubernetes Service cluster.
+### Prepare for creating a deployment to an Azure Kubernetes Service cluster
 
 In this task, you prepare for a deployment to an AKS cluster by creating a namespace using Azure Cloud Shell.
 
@@ -120,7 +120,7 @@ In this task, you roll back the deployment by switching back to the original con
     kubectl get rs --namespace demo-deployment
     ```
 
-### Delete the resources provisioned in the module.
+### Delete the resources provisioned in the module
 
 In this task, you delete the resources you provisioned in this module by deleting the resource group containing these resources.
 

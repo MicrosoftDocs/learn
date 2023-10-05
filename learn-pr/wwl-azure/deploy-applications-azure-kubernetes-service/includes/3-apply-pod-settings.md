@@ -5,12 +5,12 @@ In this exercise, you step through the process of applying pod security settings
  -  Assign an Azure Policy initiative to an AKS cluster.
  -  Validate the effect of Azure Policy.
 
-### Deploy an AKS cluster.
+### Deploy an AKS cluster
 
 In this exercise, you deploy an AKS cluster. You use this cluster throughout all exercises in the module. While you can deploy a cluster using the Azure portal, you can use on Azure CLI instead for simplicity.
 
 > [!NOTE]
-> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/)<br>.
+> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/).<br>
 
 1.  From your computer, open a web browser window and navigate to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 2.  In the Azure portal, select the **Azure Cloud Shell** icon.
@@ -25,14 +25,14 @@ In this exercise, you deploy an AKS cluster. You use this cluster throughout all
     ```
 
 6.  To create an AKS cluster, run the following commands:
-
+    
     ```azurecli
     AKSNAME='aks-01'
     az aks create --resource-group $AKSRG --name $AKSNAME --enable-managed-identity --node-count 1 --generate-ssh-keys
     ```
-
-> [!NOTE]
-> Wait for the cluster provisioning to complete. Provisioning takes a few minutes.<br>
+    
+    > [!NOTE]
+    > Wait for the cluster provisioning to complete. Provisioning takes a few minutes.<br>
 
 7.  Once the cluster provisioning completes, to connect to the AKS cluster, run the following command:
     
@@ -48,7 +48,7 @@ In this exercise, you deploy an AKS cluster. You use this cluster throughout all
     
     The output of the command should include the listing of the AKS nodes.
 
-### Install the Azure Policy add-on for AKS.
+### Install the Azure Policy add-on for AKS
 
 In this task, you install the Azure Policy add-on for AKS.
 
@@ -86,7 +86,7 @@ In this task, you install the Azure Policy add-on for AKS.
 
 The command should generate output `No resources found.`
 
-### Assign an Azure Policy initiative to an AKS cluster.
+### Assign an Azure Policy initiative to an AKS cluster
 
 In this task, you assign an Azure Policy initiative to an AKS cluster. You use one of the built-in initiatives named *Kubernetes cluster pod security baseline standards for Linux-based workloads*.
 
