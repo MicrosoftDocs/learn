@@ -2,7 +2,7 @@
 uid: learn.wwl.configure-monitoring-virtual-networks
 metadata:
   title: Configure monitoring for virtual networks
-  description: "In this module, you learn how to use the following Azure Network Watcher functionality to monitor and diagnose Azure networks: Azure Network Watcher topology Connection Monitor IP flow verify and NSG diagnostics Packet capture"
+  description: "In this module, you learn how to use the following Azure Network Watcher functionality to monitor and diagnose Azure networks: Azure Network Watcher topology. Connection Monitor. IP flow verify and NSG diagnostics. Packet capture."
   ms.date: 10/05/2023
   author: wwlpublish
   ms.author: tonyj
