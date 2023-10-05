@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.get-started-data-activator-microsoft-fabric.introduction
+uid: learn.wwl.define-microsoft-ai-strategy-finance.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 10/05/2023
   author: wwlpublish
-  ms.author: calopez
+  ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.service: azure-ai-services
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
