@@ -1,20 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-monitoring-virtual-networks.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: "Knowledge Check"
-  ms.date: 10/04/2023
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 3
-content: |
-  [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: ""
+  title: "Check your knowledgeChoose the best response for each of the following questions. Then select **Check your answers**."
   questions:
-  - content: "Which functionality in Topology should you use to determine the path that is being taken from the VM to the external data source?"
+  - content: "Which functionality in Topology should be used to determine the path that is being taken from the VM to the external data source?"
     choices:
     - content: "Next Hop"
       isCorrect: true
@@ -25,7 +24,7 @@ quiz:
     - content: "DNS Settings"
       isCorrect: false
       explanation: "Incorrect. DNS settings information won't provide information about the next hop between the VM and the external data source."
-  - content: "What must you have installed on on-premises computers if you want to use Connection Monitor to diagnose latency between those computers and an Azure storage endpoint?"
+  - content: "What must be installed on on-premises computers in order to use Connection Monitor to diagnose latency between those computers and an Azure storage endpoint?"
     choices:
     - content: "Azure Network Adapter"
       isCorrect: false
@@ -36,7 +35,7 @@ quiz:
     - content: "Log Analytics Agent"
       isCorrect: true
       explanation: "Correct. Connection Monitor uses the Log Analytics Agent in managing connection tests between an on-premises computer an Azure storage endpoint."
-  - content: "You have created a Connection Monitor between an Azure Arc enabled server in your on-premises location and an Azure storage endpoint. You haven't specified a warning threshold so Connection Monitor uses default values for its tests. Which of the following results triggers a warning result?"
+  - content: "A Connection Monitor is created between an Azure Arc enabled server in an on-premises location and an Azure storage endpoint. No warning threshold is specified so Connection Monitor uses default values for its tests. Which of the following results triggers a warning result?"
     choices:
     - content: "Ten percent of results over 500 milliseconds"
       isCorrect: false

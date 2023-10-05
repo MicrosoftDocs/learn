@@ -21,10 +21,10 @@ For networks whose sources are on-premises VMs, the following issues can be dete
 - No hosts found.
 - Source unable to connect to destination. Target not reachable through ICMP.
 - Certificate-related issues including:
-	- Client certificate required to authenticate agent
-	- Certificate revocation list isn't accessible
-	- Host name of the endpoint doesn't match the certificate's subject or subject alternate name
-	- Root certificate is missing in source's Local Computer Trusted Certification Authorities store
+	- Client certificate required to authenticate agent.
+	- Certificate revocation list isn't accessible.
+	- Host name of the endpoint doesn't match the certificate's subject or subject alternate name.
+	- Root certificate is missing in source's Local Computer Trusted Certification Authorities store.
 	- SSL certificate is expired, invalid, revoked, or incompatible.
 
 For networks whose sources are Azure VMs, the following issues can be detected:
@@ -45,12 +45,12 @@ For networks whose sources are Azure VMs, the following issues can be detected:
 - Traffic was blocked because of local firewall issues or NSG rules.
 - Virtual network gateway issues including:
 	- Missing routes
-	- The tunnel between two gateways is disconnected or missing
-	- The second gateway wasn't found by the tunnel
-	- No peering info was found
-	- The route was missing in Microsoft Edge
-	- Traffic stopped because of system routes or user-defined route (UDR)
-	- Border Gateway Protocol (BGP) isn't enabled on the gateway connection
+	- The tunnel between two gateways is disconnected or missing.
+	- The second gateway wasn't found by the tunnel.
+	- No peering info was found.
+	- The route was missing in Microsoft Edge.
+	- Traffic stopped because of system routes or user-defined route (UDR).
+	- Border Gateway Protocol (BGP) isn't enabled on the gateway connection.
 	- The dynamic IP address (DIP) probe is down at the load balancer.
 
 ## Configuring Connection Monitor
