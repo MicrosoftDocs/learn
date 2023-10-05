@@ -45,9 +45,8 @@ The query condition can also be on a single device ID or on a list of device IDs
 "queryCondition" = "deviceId IN ['MyDevice1']"
 
 ```
-> [!TIP]
-> See IoT Hub Query Language for more information about the query language structure.
->
+
+See IoT Hub Query Language: [IoT Hub query language for device and module twins, jobs, and message routing](/azure/iot-hub/iot-hub-devguide-query-language) for more information.
 
 The following snippet shows the request and response for a job scheduled to call a direct method named testMethod on all devices on contoso-hub-1:
 

@@ -35,11 +35,12 @@ Before you create a configuration, you must specify which devices or modules you
 
 ## Create a configuration
 
-You can use the Azure portal to begin the process of creating a Configuration as follows:
+You can use the Azure portal to begin the process of creating a configuration as follows:
 
 1. In the Azure portal, open your IoT hub.
 2. Select **Configurations + Deployments** in the left navigation pane.
 3. Select **Add** and choose **Device twin configuration** or **Module twin configuration** from the drop-down list.
+:::image type="content" source="../media/create-automatic-configuration.png" alt-text="Screenshot showing how to add a configuration.":::
 
 There are five steps to create a configuration.
 
@@ -61,15 +62,22 @@ The following sections walk through each step.
 
 This section defines the content to be set in targeted device twin or module twin desired properties. There are two inputs for each set of settings. The first is the twin path, which is the path to the JSON section within the twin desired properties that are set. The second is the JSON content to be inserted in that section.
 
-For example, you could set the twin path to "properties.desired.chiller-water" and then provide the JSON content shown as follows:
+For example, you could set the twin path to properties.desired.chiller-water and then provide the following JSON content:
 
-:::image type="content" source="../media/m08-l03-device-management-scale-configurations-specify-settings-2c07c48e.png" alt-text="Screenshot that shows how to use the device twin path to specify the target content to be set when using Tags to target device twins.":::
+```json
+{
+  "temperature": 66,
+  "pressure": 28
+}
+```
 
-You can also set individual settings by specifying the entire path in the Device Twin Path and the value in the Content with no brackets. For example, set the Device Twin Path to `properties.desired.chiller-water.temperature` and set the Content to `66`.
+:::image type="content" source="../media/module-config-twin-settings.png" alt-text="Screenshot of setting the device or module twin property and json content.":::
+
+You can also set individual settings by specifying the entire path in the Device Twin Path and the value in the Content with no brackets. For example, set the Device Twin Path to `properties.desired.chiller-water.temperature` and set the Content to `66`. Then create a new twin setting for the pressure property.
 
 If two or more configurations target the same Device Twin Path, the Content from the highest priority configuration will apply (priority is defined in section Target devices or modules as follows).
 
-If you wish to remove a property, set the property value to null.
+If you wish to remove a property, set the property value to `null`.
 
 You can add more settings by selecting **Add Device Twin Setting** or **Add Module Twin Setting**.
 
@@ -125,13 +133,13 @@ Review your configuration information, then select **Submit**.
 To view the details of a configuration and monitor the devices running it, use the following steps:
 
 1. In the Azure portal, go to your IoT hub.
-2. Select **Configurations** in Device management.
+2. Select **Configurations + Deployments** in Device management.
 3. Inspect the configuration list. For each configuration, you can view the following details:
      - **ID** \- the name of the configuration.
      - **Target condition** \- the query used to define targeted devices or modules.
      - **Priority** \- the priority number assigned to the configuration.
      - **Creation time** \- the timestamp from when the configuration was created. This timestamp is used to break ties when two configurations have the same priority.
-     - **System metrics** \- metrics that are calculated by IoT Hub and cannot be customized by developers. Targeted specifies the number of device twins that match the target condition. Applies specified the number of device twins that have been modified by the configuration, which can include partial modifications when a separate, higher priority configuration also made changes.
+     - **System metrics** \- metrics that are calculated by IoT Hub and cannot be customized by developers. The **Targeted** metric specifies the number of device twins that match the target condition. The **Applied** metric specifies the number of device twins that have been modified by the configuration, which can include partial modifications when a separate, higher priority configuration also made changes.
      - **Custom metrics** \- metrics that have been specified by the developer as queries against device twin reported properties. Up to five custom metrics can be defined per configuration.
 4. Select the configuration that you want to monitor.
 5. Inspect the configuration details. You can use tabs to view specific details about the devices that received the configuration.
