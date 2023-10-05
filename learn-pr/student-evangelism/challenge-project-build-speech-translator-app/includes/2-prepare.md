@@ -2,7 +2,7 @@
 
 To build this solution, you'll be creating custom tables and columns in Dataverse. You'll need some services in place to get started. In this unit, we'll discuss the things you need to get started.
 
-## Project Specification
+## Project specification
 Let's talk through some more detailed project description for the use case in consideration - 'Build a Speech Translator App with Power Apps.'
 
 ## Fabrikam Company
