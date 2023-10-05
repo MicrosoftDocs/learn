@@ -1,18 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-monitoring-virtual-machines.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: "Knowledge Check"
-  ms.date: 10/04/2023
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 3
-content: |
-  [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: ""
+  title: "Check your knowledgeChoose the best response for each of the following questions. Then select **Check your answers**."
   questions:
   - content: "Which of the following role assignments includes the necessary permissions to install the Azure Monitor Agent?"
     choices:
@@ -25,7 +24,7 @@ quiz:
     - content: "Log Analytics Reader"
       isCorrect: false
       explanation: "Incorrect. The Virtual Machine Contributor role or Log Analytics Contributor role or higher is required to install the Azure Monitor Agent. The Reader level role doesn't have the required permissions."
-  - content: "What is the maximum amount of time you can view performance data over in a VM Insights performance chart on IaaS VM CPU utilization?"
+  - content: "What is the maximum amount of time performance data can be viewed over in a VM Insights performance chart on IaaS VM CPU utilization?"
     choices:
     - content: "7 days"
       isCorrect: false
@@ -36,7 +35,7 @@ quiz:
     - content: "21 days"
       isCorrect: false
       explanation: "Incorrect. The maximum amount of time you can view performance data over in a VM Insights performance chart is 30 days. The default is to display data from the last 24 hours."
-  - content: "When configuring a data collection rule, which of the following items can you send to both Azure Monitor Metrics and Azure Monitor Logs?"
+  - content: "When configuring a data collection rule, which of the following items can be sent to both Azure Monitor Metrics and Azure Monitor Logs?"
     choices:
     - content: "Windows Event log data"
       isCorrect: false

@@ -12,7 +12,7 @@ VM insights provides the following benefits beyond other features for monitoring
 - Pre-defined trending performance charts and workbooks, so that you can analyze core performance metrics from the virtual machine's guest operating system.
 - The Dependency map, which displays processes that run on each virtual machine and the interconnected components with other machines and external sources.
 
-:::image type="content" source="../media/insights-unit-3.png" alt-text="Screenshot of Performance tab in VM Insights showing data for a VM and the Dependency map showing processes running the VM and interconnected components with other machines and external sources." border="true":::
+:::image type="content" source="../media/insights-unit-3.png" alt-text="Screenshot showing Performance tab in VM Insights displaying data for a VM and the processes Dependency map for that VM." border="true":::
 
 ## Enable VM insights
 
@@ -68,7 +68,7 @@ The map visualizes the VM's dependencies by discovering running process groups a
 
 By default, the map shows the last 30 minutes. If you want to see how dependencies looked in the past, you can query for historical time ranges of up to one hour. To run the query, use the TimeRange selector in the upper-left corner. You might run a query, for example, during an incident or to see the status before a change.
 
-:::image type="content" source="../media/map-unit-3.png" alt-text="Screenshot of the Map tab in VM Insights showing a visual representation of ContosoVM1's dependencies between running process groups and processes that have active network connections over a specified time range." border="true":::
+:::image type="content" source="../media/map-unit-3.png" alt-text="Screenshot of Map tab in VM Insights showing a visual representation of ContosoVM1's dependencies between running process groups and processes." border="true":::
 
 In Azure Monitor, the Map feature provides a global view of your VMs and their dependencies. To access the Map feature in Azure Monitor:
 
