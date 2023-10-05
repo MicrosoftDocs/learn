@@ -17,7 +17,7 @@ The CAF brings together cloud adoption best practices from Microsoft employees, 
 
 :::image type="content" source="../media/cloud-adoption-framework-overview-new.png" alt-text="Diagram showing the Cloud Adoption Framework process.":::
 
-Review the guidance for each methodology.
+Review the guidance for each methodology:
 - Learn more about CAF in this [overview](/azure/cloud-adoption-framework/overview/?azure-portal=true).
 - Download [tools and templates](/azure/cloud-adoption-framework/resources/tools-templates) from CAF to get started on your journey to Azure.
 
@@ -84,7 +84,7 @@ The tool's output contains a readiness heatmap tool that helps to identify the a
 
 :::image type="content" source="../media/smart-tool.png" alt-text="Diagram showing the SMART Assessment Tool.":::
 
-This tool addresses your readiness across all dimensions of migration, from initial strategy to ongoing management. By answering a few questions, you get a customized report that helps you plan and close gaps.
+This tool addresses your readiness across all dimensions of migration, from initial strategy to ongoing management. By answering a few questions you get a customized report that helps you plan and close gaps.
 
 ## Cloud economics
 
