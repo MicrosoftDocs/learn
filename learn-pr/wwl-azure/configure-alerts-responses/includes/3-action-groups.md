@@ -28,9 +28,9 @@ Action groups support the following notification options:
 
 - **Email Azure Resource Manager role**. Send an email to the subscription members, based on their role. A notification email is sent only to the primary email address configured for the Azure AD user. The email is only sent to Azure Active Directory user members of the selected role, not to Azure AD groups or service principals.
 - **Email**. Send an email to a specific address. Ensure that your email filtering and any malware/spam prevention services are configured appropriately. Emails are sent from the following email addresses:
-	- * azure-noreply@microsoft.com
-	- * azureemail-noreply@microsoft.com
-	- * alerts-noreply@mail.windowsazure.com
+	- azure-noreply@microsoft.com
+	- azureemail-noreply@microsoft.com
+	- alerts-noreply@mail.windowsazure.com
 - **SMS**. SMS notifications support bi-directional communication. The recipient of an SMS is able to unsubscribe to SMS alerts, resubscribe, or request help. You must enter the country code and phone number of the recipient. The SMS contains the following information:
 	- Shortname of the action group this alert was sent to
 	- The title of the alert.

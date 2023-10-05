@@ -30,7 +30,7 @@ To create a new alert rule from the portal home page:
 	- **Log alert**. Write a query that returns the log events for which you want to create an alert. The condition tab will be populated based on your log query. Select threshold values to trigger the alert. 
 	- **Activity log alert**. Select the chart period and values for the event level, status, and event initiated by related to the activity.
 	- **Resource health alert**. Provide details for the Event status, Current resource status, Previous resource status and reason type fields.
-	- Service health alert. Provide details for the following fields: Azure services, Azure regions, event types.
+	- **Service health alert**. Provide details for the following fields: Azure services, Azure regions, event types.
 1. On the **Actions** tab, select or create the required action groups.
 1. On the **Alert Rule Details** page, specify the subscription and resource group that will host the alert. Also provide an alert name, description and severity.
 

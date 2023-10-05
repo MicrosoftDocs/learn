@@ -4,10 +4,12 @@ title: Alert processing rules
 metadata:
   title: Alert processing rules
   description: "Alert processing rules"
-  ms.date: 10/04/2023
+  ms.date: 10/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure-monitor
 durationInMinutes: 3
 content: |
   [!include[](includes/5-alert-processing-rules.md)]

@@ -5,9 +5,9 @@ You can use alert processing rules to add action groups or remove (suppress) act
 
 Common uses for alert processing rules include:
 
-- Suppress notifications during planned maintenance
-- Management at scale
-- Add action groups to all alert types
+- Suppress notifications during planned maintenance.
+- Management at scale.
+- Add action groups to all alert types.
 
 You can control when an alert processing rule will apply. The alert processing rule is always active, by default. You can select a one-time window for this rule to apply, or you can have a recurring window, such as a weekly recurrence.
 

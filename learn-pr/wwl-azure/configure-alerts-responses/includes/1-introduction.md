@@ -5,11 +5,11 @@ You are in IT Operations at Tailwind Traders. As part of your job, you want to e
 ## Learning objectives
 
 In this module, you will learn how to:
-- Describe the purpose of and identify the different types of alerts
-- Explain how action groups are used to notify users about alerts
-- Configure and manage alert rules
-- Configure alert processing rules to modify triggered alerts
-- Describe how Change Analysis provides insight into changes made to Azure resources
+- Describe the purpose of and identify the different types of alerts.
+- Explain how action groups are used to notify users about alerts.
+- Configure and manage alert rules.
+- Configure alert processing rules to modify triggered alerts.
+- Describe how Change Analysis provides insight into changes made to Azure resources.
 
 ## Prerequisites:
 
