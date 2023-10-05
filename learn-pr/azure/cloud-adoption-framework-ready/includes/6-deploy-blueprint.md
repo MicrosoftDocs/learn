@@ -20,7 +20,7 @@ The article [Create a Microsoft Customer Agreement subscription](/azure/cost-man
       If you don't have proper permissions, an error appears below your tenant.
    1. For **Region**, select a region from the dropdown list. 
    
-      Tailwind Traders chooses the default option: **West Central US**.
+      Tailwind Traders chooses the **West Central US** region.
 1. On the **Azure core setup** tab:
    1. For **Resource prefix (Root ID)**, enter a prefix. 
    
