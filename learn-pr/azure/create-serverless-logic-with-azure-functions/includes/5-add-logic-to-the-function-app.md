@@ -72,7 +72,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 ::: zone pivot="powershell"
 
-5. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
+1. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
 
 1. In the Function menu, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
 
@@ -192,7 +192,7 @@ Because you specified *Function* when you created this function, you need to sup
 
     :::image type="content" source="../media/5-get-function-key.png" alt-text="Screenshot showing the Function Keys pane with the revealed function key highlighted." lightbox="../media/5-get-function-key.png" :::
 
-1. To test the function with the function key, open a command prompt and run cURL to send an HTTP request to the function URL. Replace `<your-function-key>` with the function key value you saved, and replacing `<your-https-url>` with the URL of your function.
+1. To test the function with the function key, open a command prompt and run cURL to send an HTTP request to the function URL. Replace `<your-function-key>` with the function key value you saved, and replace `<your-https-url>` with the URL of your function.
 
     ```bash
     curl --header "Content-Type: application/json" --header "x-functions-key: <your-function-key>" --request POST --data "{\"name\": \"Azure Function\"}" <your-https-url>
