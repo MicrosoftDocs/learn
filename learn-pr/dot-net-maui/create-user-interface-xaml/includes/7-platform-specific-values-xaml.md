@@ -1,4 +1,4 @@
-Your app's visual experience will be different on each platform. You'll often need to fine-tune your UI for each platform based on the visual elements you use. .NET MAUI enables you to manage you app's layout based on these device properties.
+Your app's visual experience will be different on each platform. You'll often need to fine-tune your UI for each platform based on the visual elements you use. .NET MAUI enables you to manage your app's layout based on these device properties.
 
 In this unit, you'll learn about the features that .NET MAUI provides to allow you to tweak the UI for your apps according to the platform on which they're running.
 
