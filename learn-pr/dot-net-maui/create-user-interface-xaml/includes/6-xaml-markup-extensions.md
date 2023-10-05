@@ -89,7 +89,7 @@ You can apply the same markup extension throughout your XAML code for any contro
 
 ## The StaticExtension class
 
-As useful as the **GlobalFontSize** markup extension is, it's unlikely that you'd create such an extension. The reason for this is simple; .NET MAUI already provides a more generalized extension that allows you to reference any static value in your code. This extension is named **StaticExtension**, or **Static** for short. The following code shows the this extension class's basic outline:
+As useful as the **GlobalFontSize** markup extension is, it's unlikely that you'd create such an extension. The reason for this is simple; .NET MAUI already provides a more generalized extension that allows you to reference any static value in your code. This extension is named **StaticExtension**, or **Static** for short. The following code shows this extension class's basic outline:
 
 ```csharp
 [ContentProperty ("Member")]
