@@ -197,8 +197,10 @@ The following list shows the properties and corresponding descriptions, which ca
   :::column-end:::
   :::column:::
     Types of jobs:
-scheduleUpdateTwin: A job used to update a set of desired properties or tags.
-scheduleDeviceMethod: A job used to invoke a device method on a set of device twins.
+
+- **scheduleUpdateTwin**: A job used to update a set of desired properties or tags.
+- **scheduleDeviceMethod**: A job used to invoke a device method on a set of device twins.
+
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -207,12 +209,14 @@ scheduleDeviceMethod: A job used to invoke a device method on a set of device tw
   :::column-end:::
   :::column:::
     Current state of the job. Possible values for status:
-pending: Scheduled and waiting to be picked up by the job service.
-scheduled: Scheduled for a time in the future.
-running: Currently active job.
-canceled: Job has been canceled.
-failed: Job failed.
-completed: Job has completed.
+
+- **pending**: Scheduled and waiting to be picked up by the job service.
+- **scheduled**: Scheduled for a time in the future.
+- **running**: Currently active job.
+- **canceled**: Job has been canceled.
+- **failed**: Job failed.
+- **completed**: Job has completed.
+
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -220,12 +224,12 @@ completed: Job has completed.
     deviceJobStatistics
   :::column-end:::
   :::column:::
-    Statistics about the job's execution.
-deviceJobStatistics properties:
-deviceJobStatistics.deviceCount: Number of devices in the job.
-deviceJobStatistics.failedCount: Number of devices where the job failed.
-deviceJobStatistics.succeededCount: Number of devices where the job succeeded.
-deviceJobStatistics.runningCount: Number of devices that are currently running the job.
-deviceJobStatistics.pendingCount: Number of devices that are pending to run the job.
+    Statistics about the job's execution.deviceJobStatistics properties:
+- **deviceJobStatistics.deviceCount**: Number of devices in the job.
+- **deviceJobStatistics.failedCount**: Number of devices where the job failed.
+- **deviceJobStatistics.succeededCount**: Number of devices where the job succeeded.
+- **deviceJobStatistics.runningCount**: Number of devices that are currently running the job.
+- **deviceJobStatistics.pendingCount**: Number of devices that are pending to run the job.
+
   :::column-end:::
 :::row-end:::
