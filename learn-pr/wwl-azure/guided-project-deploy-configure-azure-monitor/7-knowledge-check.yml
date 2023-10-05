@@ -1,18 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-deploy-configure-azure-monitor.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: "Knowledge Check"
-  ms.date: 10/04/2023
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
 durationInMinutes: 3
-content: |
-  [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title: ""
+  title: "Check your knowledgeChoose the best response for each of the following questions. Then select **Check your answers**."
   questions:
   - content: "Tailwind Traders has a subscription that contains multiple Log Analytics workspaces across multiple resource groups. The administrator needs to assign the Log Analytics Reader role to a new user. Which scope should the role assignment be configured to allow the user access to all the Log Analytics workspaces in a specific resource group?"
     choices:

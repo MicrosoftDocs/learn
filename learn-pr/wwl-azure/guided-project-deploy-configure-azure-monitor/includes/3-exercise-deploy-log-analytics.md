@@ -8,9 +8,9 @@ This guided project consists of the four exercises:
 
 In Exercise 1, you deploy and configure a Log Analytics workspace
 
-- Task 1: Create a Log Analytics workspace
-- Task 2: Configure Log Analytics data retention and archive policies
-- Task 3: Enable access to a Log Analytics workspace
+- Task 1: Create a Log Analytics workspace.
+- Task 2: Configure Log Analytics data retention and archive policies.
+- Task 3: Enable access to a Log Analytics workspace.
 
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 

@@ -8,11 +8,11 @@ This guided project consists of the four exercises:
 
 In Exercise 2, you configure monitoring for web applications.
 
-- Task 1: Enable Application Insights
-- Task 2: Disable logging for .NET core snapshot debugger
-- Task 3: Configure web app HTTP logs to be written to a Log Analytics workspace
-- Task 4: Configure SQL Insights data to be written to a Log Analytics workspace
-- Task 5: Enable file and configuration change tracking for web apps
+- Task 1: Enable Application Insights.
+- Task 2: Disable logging for .NET core snapshot debugger.
+- Task 3: Configure web app HTTP logs to be written to a Log Analytics workspace.
+- Task 4: Configure SQL Insights data to be written to a Log Analytics workspace.
+- Task 5: Enable file and configuration change tracking for web apps.
 
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 

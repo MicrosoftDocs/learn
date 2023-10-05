@@ -8,8 +8,8 @@ This guided project consists of the four exercises:
 
 In Exercise 4, you configure two specific alerts: an action group to send an email, and an alert for virtual machine CPU utilization.
 
-- Task 1: Create an action group to send an email
-- Task 2: Create an alert for virtual machine CPU utilization
+- Task 1: Create an action group to send an email.
+- Task 2: Create an alert for virtual machine CPU utilization.
 
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
