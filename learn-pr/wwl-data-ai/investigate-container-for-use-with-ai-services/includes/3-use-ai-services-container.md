@@ -1,7 +1,7 @@
 
 There are container images for Azure AI services in the Microsoft Container Registry that you can use to deploy a containerized service that encapsulates an individual Azure AI services service API.
 
-To deploy and use a Azure AI services container, the following three activities must occur:
+To deploy and use an Azure AI services container, the following three activities must occur:
 
 1. The container image for the specific Azure AI services API you want to use is downloaded and deployed to a container host, such as a local Docker server, an Azure Container Instance (ACI), or Azure Kubernetes Service (AKS).
 2. Client applications submit data to the endpoint provided by the containerized service, and retrieve results just as they would from an Azure AI services cloud resource in Azure.
