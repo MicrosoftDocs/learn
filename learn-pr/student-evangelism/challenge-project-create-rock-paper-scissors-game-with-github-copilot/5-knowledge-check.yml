@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/02/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A developer is working on a nested `foreach` structure that iterates through the application's array data. The first array contains the names of 10 geographic regions. The remaining arrays are based on the 10 regions. Each regional array contains the population of cities that have a population over one million. The population values in the regional arrays go from largest to smallest. The application sums the 25 most populated cities in each region. How should the developer ensure that only the 25 largest populations are added to the sum?"
+    choices:
+    - content: "The developer should insert a \"marker value\" into the population arrays. The \"marker value\" should be added at index position 25. When the marker value is detected, the application should stop adding values to the sum."
+      isCorrect: false
+      explanation: "Incorrect. The developer should not modify application data. There are ways to track the number of array elements that have been processed within a `foreach` loop."
+    - content: "The developer should check the index number of the current array element inside the `foreach` code block. The application should stop adding values to the sum when the index number reaches 25."
+      isCorrect: false
+      explanation: "Incorrect. A `foreach` loop does not have a mechanism for checking the index number of array elements."
+    - content: "The developer should increment a counter inside the `foreach` code block. The application should stop adding values to the sum when the counter reaches 25."
+      isCorrect: true
+      explanation: "Correct! The developer should use a counter that increments inside the `foreach` loop."
+  - content: "A developer is working with two other developers to update a collection of applications. The developers will use code comments during the update process. Which of the following describes an appropriate use of code comments?"
+    choices:
+    - content: "When updates are made, the developers use line and block comments to identify each individual code update."
+      isCorrect: false
+      explanation: "Incorrect. Code comments should not be used to describe individual code lines. In this case, it would be better to summarize changes in a single block comment at the top of the files that contain updates."
+    - content: "When updates are made, the developers leave all existing code comments intact. New comments are added to indicate when old comments no longer apply."
+      isCorrect: false
+      explanation: "Incorrect. Old comments that no longer apply to the current application can be confusing and should not be retained. A history of the application should be documented in a change log."
+    - content: "When updates are made, the developers summarize changes using block comments."
+      isCorrect: true
+      explanation: "Correct! Using a block comment to summarize the changes implemented during an update is a good use of code comments. A single block comment at the top of the files that contain updates is often sufficient."
