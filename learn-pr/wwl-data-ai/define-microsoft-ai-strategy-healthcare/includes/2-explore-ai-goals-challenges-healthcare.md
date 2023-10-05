@@ -8,7 +8,7 @@ All healthcare professionals share these objectives. As all healthcare practices
 * **Improve and maintain the health and wellbeing of patients**: The principal and fundamental objective of healthcare remains simple: to provide safe, effective and high-quality care to everyone.
 * **Cultivate a supportive, diverse, and empowered workforce**: AI has the potential to enable a work environment that prioritizes the well-being, development, and satisfaction of healthcare workers while facilitating the delivery of excellent patient care.
 * **Move care closer to homes**: There’s a growing interest in making healthcare more accessible. Taking healthcare out of hospitals and into households is a strategy to reach more people.
-* **Safeguard patient data and maintain regulatory compliance**: Healthcare data is sensitive. It includes personally identifiable information (PII) that must be kept confidential at all costs. Governments require healthcare data management to follow strict protection measures, so privacy and security concerns should guide data policies to achieve compliance.
+* **Safeguard patient data and maintain regulatory compliance**: Healthcare data is sensitive. It includes personal data that must be kept confidential at all costs. Governments require healthcare data management to follow strict protection measures, so privacy and security concerns should guide data policies to achieve compliance.
 
 ## Challenges
 
