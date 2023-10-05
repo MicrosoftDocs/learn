@@ -62,7 +62,7 @@ The following sections walk through each step.
 
 This section defines the content to be set in targeted device twin or module twin desired properties. There are two inputs for each set of settings. The first is the twin path, which is the path to the JSON section within the twin desired properties that are set. The second is the JSON content to be inserted in that section.
 
-For example, you could set the twin path to properties.desired.chiller-water and then provide the following JSON content:
+For example, you could set the twin path to `properties.desired.chiller-water` and then provide the following JSON content:
 
 ```json
 {
@@ -99,8 +99,8 @@ Metrics provide summary counts of the various states that a device may report ba
 
 Each configuration can have up to five custom metrics.
 
-1. Enter a name for `Metric Name`.
-2. Enter a query for `Metric Criteria`. The query is based on device twin reported properties. The metric represents the number of rows returned by the query.
+1. Enter a name for **Metric Name**.
+2. Enter a query for **Metric Criteria**. The query is based on device twin reported properties. The metric represents the number of rows returned by the query.
 
 For example:
 
