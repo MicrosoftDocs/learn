@@ -20,9 +20,9 @@ In this exercise, to deploy a Helm chart, you'll complete the following tasks:
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
     > [!IMPORTANT]
-    > We'll run all the scripts with Bash. If you haven't created a Cloud Shell yet, select **Bash** as the running shell. For more information about setting up Cloud Shell, see [Overview of Azure Cloud Shell](/azure/cloud-shell/overview#connect-your-microsoft-azure-files-storage).
+    > We'll run all the scripts with Bash. If you haven't created a Cloud Shell yet, select **Bash** as the terminal. For more information about setting up Cloud Shell, see [Overview of Azure Cloud Shell](/azure/cloud-shell/overview#connect-your-microsoft-azure-files-storage).
 
-1. Run `helm version` and check whether the displayed version is greater than **3**.
+1. Run `helm version` to check whether the displayed version is greater than **3**.
 
 1. To pull the changes you've made to the CI workflow in the preceding units, run this command:
 
@@ -34,7 +34,7 @@ In this exercise, to deploy a Helm chart, you'll complete the following tasks:
 
 1. While inside the learn repository you forked, `cd` into the `kubernetes` directory.
 
-1. Run this command to create a starting template:
+1. Run this command to generate  a boilerplate template:
 
     ```bash
     helm create contoso-website
@@ -48,7 +48,7 @@ In this exercise, to deploy a Helm chart, you'll complete the following tasks:
     cd contoso-website
     ```
 
-1.  Delete the `charts` and `templates` folders in that directory.
+1. Delete the `charts` and `templates` folders in that directory.
 
     ```bash
     rm -r charts templates
@@ -158,6 +158,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
 1. In the `metadata` section, add a new key called `namespace` with the value `{{ default "staging" .Release.Namespace }}`.  
 
     The metadata configuration:
+
     ```yaml
     metadata:
       name: contoso-website
@@ -229,7 +230,7 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
       name: contoso-website
       tag: latest
     ```
-    
+
     Replace `<your-acr-name>` with the value from exercise 6.
     These values are the *default* values if you don't pass a new value as a parameter by using the `--set` option of the Helm CLI.
 
