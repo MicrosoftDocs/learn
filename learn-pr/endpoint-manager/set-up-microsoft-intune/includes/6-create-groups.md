@@ -20,7 +20,7 @@ Use the following steps to create a new group:
     - **Microsoft 365**: Microsoft 365 groups collaboration opportunities by members access to a shared mailbox, calendar, files, SharePoint sites, and more. Group members can only be users. This option also lets you give people outside of your organization access to the group. For more information, see [Learn about Microsoft 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
     > [!TIP]
-    > The users and groups created can also be seen in the [Microsoft 365 admin center](https://admin.microsoft.com), [Microsoft Entra admin center](https://aad.portal.azure.com), and [Microsoft Intune in the Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431). In your organization tenant, you can create and manage groups in all these areas.
+    > The users and groups created can also be seen in the [Microsoft 365 admin center](https://admin.microsoft.com), [Microsoft Entra admin center](https://entra.microsoft.com), and [Microsoft Intune in the Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431). In your organization tenant, you can create and manage groups in all these areas.
     >
     > If your primary role is device management, we recommend you use the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
