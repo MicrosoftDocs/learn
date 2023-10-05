@@ -79,7 +79,7 @@ If two or more configurations target the same Device Twin Path, the Content from
 
 If you wish to remove a property, set the property value to `null`.
 
-You can add more settings by selecting **Add Device Twin Setting** or **Add Module Twin Setting**.
+You can add more settings by selecting **Add Desired Property**.
 
 ### Target devices or modules
 
