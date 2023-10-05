@@ -34,7 +34,7 @@ Now that we understand the design, let's create our resources and publish our pi
     cd mslearn-aks-deployment-pipeline-github-actions
     ```
 
-1. Execute the **init.sh** file that's located in the root of the project by running the following command:
+1. Execute the **init.sh** file that's located in the root of the project with the following command:
 
     ```bash
     bash init.sh

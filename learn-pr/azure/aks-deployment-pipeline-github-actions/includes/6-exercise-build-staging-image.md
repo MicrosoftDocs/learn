@@ -8,13 +8,13 @@ You'll build this pipeline by using the GitHub Actions workflow.
 
 In this exercise, you'll:
 
-- Build the Actions workflow
-- Create the trigger
+- Build the GitHub Actions workflow
+- Create the on push trigger
 - Build and push the image
-- Set the environment/repo secrets
-- Push the image to run a workflow
+- Set the secrets
+- Re-run the job
 
-## Build the Actions workflow
+## Build the GitHub Actions workflow
 
 1. To start building your pipeline, go to the fork of the sample repository in the GitHub website. Select the **Actions** tab.
 
@@ -74,7 +74,7 @@ In this exercise, you'll:
    name: Build and push the latest build to staging
    ```
 
-## Create the trigger
+## Create the on push trigger
 
 Our basic workflow file comes with two triggers:
 
@@ -99,7 +99,7 @@ But, we don't need it to run on a pull request, so we modify it to keep only the
 
     Running this command closes the second trigger in the pipeline design diagram.
 
-## Build and push the image
+## Build and push the staging image
 
 Let's work on the jobs next. In this process, you mimic both the build steps and the deploy steps shown in the pipeline design diagram.
 
@@ -220,6 +220,9 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             uses: docker/build-push-action@v5.0.0
             with:
               # Here we add a list of parameters
+              context:
+                tags:
+                push:
     ```
 
     > [!IMPORTANT]
@@ -233,13 +236,13 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     Add the values according to the following table:
 
-    |Key name     | Used on action |Value                                         |
-    |-------------|--------|------------------------------------------------------|
-    |registry     |`docker/login`|`${{ secrets.ACR_NAME }}`                       |
-    |username     |`docker/login`|`${{ secrets.ACR_LOGIN }}`                      |
-    |password     |`docker/login`|`${{ secrets.ACR_PASSWORD }}`                   |
-    |context      |`docker/build-and-push`|`.`                                    |
-    |push         |`docker/build-and-push`|`true`                                 |
+    |Key name     |Used on action         |Value                                         |
+    |-------------|-----------------------|----------------------------------------------|
+    |registry     |`docker/login`         |`${{ secrets.ACR_NAME }}`                     |
+    |username     |`docker/login`         |`${{ secrets.ACR_LOGIN }}`                    |
+    |password     |`docker/login`         |`${{ secrets.ACR_PASSWORD }}`                 |
+    |context      |`docker/build-and-push`|`.`                                           |
+    |push         |`docker/build-and-push`|`true`                                        |
     |tags         |`docker/build-and-push`|`${{secrets.ACR_NAME}}/contoso-website:latest`|
 
     You can delete all the other keys because they aren't used in this exercise.
@@ -368,7 +371,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     1. For **Secret**, enter the value and select **Add secret**.
 
-## Push the image
+## Re-run the job
 
 1. Select the **Actions** tab.
 
