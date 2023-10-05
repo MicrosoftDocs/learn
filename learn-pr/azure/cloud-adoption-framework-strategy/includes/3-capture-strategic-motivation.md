@@ -4,7 +4,7 @@ This unit discusses some of the motivations for cloud migration that can lead to
 
 A review of the customer narrative would suggest that both innovation and migration are motivations for Tailwind Traders. Much of the company's focus is on innovative technology investments, but most of the technology costs are on central IT operations.
 
-Tailwind exhibits many common business values and expected benefits, including innovation and growth, improvements to operations and security, and technical capabilities and agility. Use this unit to understand how the company balances those expectations.
+Tailwind exhibits many common business values and expected benefits. Including, innovation and growth, improvements to operations and security, and technical capabilities and agility. Use this unit to understand how the company balances those expectations.
 
 ## Guiding the conversation
 
@@ -16,7 +16,7 @@ Prioritizing motivations is the first step toward creating clarity in corporate 
 
 Most digital transformation "failures" end in technological success, but they don't deliver on the initial strategic change that's required to positively affect the business. Ensure that technical success equates to business success by defining clear motivations and expectations with executive level leaders as early as possible.
 
-Throughout this conversation, be prepared to engage various personas. The following list shows a few of the types of roles that will be involved in establishing strategic vision and each persona's most common focus area:
+Throughout this conversation, be prepared to engage various personas. The following list shows a few of the types of roles that are involved in establishing strategic vision and each persona's most common focus area:
 
 - **Finance leadership**: Increase profitability while driving compliance
 - **Marketing**: Acquire and retain customers and build reputation
@@ -36,7 +36,7 @@ The goal of the lists in the following table is to help generate ideas about whi
 
 ## Classify your motivations
 
-Your motivations for cloud adoption likely will fall into multiple categories. As you're building the list of motivations, you'll probably see trends emerge. Motivations tend to be associated more with one classification (critical business event, migration, innovation) than with others. Use the predominant classification to help guide the development of your cloud-adoption strategy.
+Your motivations for cloud adoption will likely fall into multiple categories. As you're building the list of motivations, you'll probably see trends emerge. Motivations tend to be associated more with one classification (critical business event, migration, innovation) than with others. Use the predominant classification to help guide the development of your cloud-adoption strategy.
 
 When a response to *critical business events* is the highest priority, it's important to [get started with migration](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) early, often in parallel with strategy and planning efforts. Taking this approach requires a growth mindset and a willingness to iteratively improve processes based on direct lessons learned.
 
@@ -54,7 +54,7 @@ This section highlights the *migration* and *innovation* motivations and their c
 
 The migration motivations that are listed near the top of the motivations table are the most common reasons for adopting the cloud, but they're not necessarily the most significant reasons. These outcomes are important to achieve, but they're most effectively used to transition to other, more useful worldviews. This important first step to cloud adoption often is called a *cloud migration*. The framework uses the term [migrate](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) to refer to the strategy of executing a cloud migration.
 
-Some motivations align well with a migration strategy. The motivations at the top of this list likely will have significantly less business impact than motivations toward the bottom of the list. Top migrations motivations include:
+Some motivations align well with a migration strategy. The motivations at the top of this list likely have significantly less business impact than motivations toward the bottom of the list. Top migrations motivations include:
 
 - Saving on operating costs
 - Reducing vendor or technical complexity

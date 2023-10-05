@@ -16,15 +16,15 @@ The Tailwind Traders retail innovation team uses technology to continually redef
 In addition to new innovations, Tailwind Traders' central IT team supports the back office and its store technologies. The company's central IT team supports 3,500 employees. Fewer than 100 Tailwind employees are dedicated to IT. The IT team represents most of the technical staff, with roughly 80 employees focused on supporting the following types of technologies:
 
 - **Smart storefronts**: Environmental controls, doors, lighting, interactive shelves, in-store displays and advertisements, and more than 500 point-of-sale systems.
-- **Corporate headquarters**: More than 900 employees hosted in corporate headquarters, with technology systems that offer best-in-class solutions to support processes like real estate, logistics, supply chain, pricing, human resources, employee schedules and tracking, and payroll.
+- **Corporate headquarters**: More than 900 employees are hosted in corporate headquarters, with technology systems that offer best-in-class solutions. These solutions support processes like real estate, logistics, supply chain, pricing, human resources, employee schedules and tracking, and payroll.
 - **User workstations**: Mostly desktop-based, with a growing percentage of employees opting for mobile, bring your own device (BYOD), in-store kiosks, and virtual desktop solutions.
 - **Central operations**: Ongoing technical operations for all IT and retail innovation assets.
 
-Tailwind Traders currently has three datacenters. The leases for two of its datacenters are due to end in 18 months and 24 months. The IT manager and finance director have been talking, and they don't want to renew the leases. Instead, they are considering a project to upgrade, consolidate, and use the cloud as a replacement for the two expiring datacenters. The CIO sees this project as an opportunity to rethink IT operations for the company.
+Tailwind Traders currently has three datacenters. The leases for two of its datacenters are due to end in 18 months and 24 months. The IT manager and finance director have been talking, and they don't want to renew the leases. Instead, they're considering a project to upgrade, consolidate, and use the cloud as a replacement for the two expiring datacenters. The CIO sees this project as an opportunity to rethink IT operations for the company.
 
 ## Strategic priorities
 
-Tailwind Traders has a new CIO because of a recent retirement. The new CIO is focused on improving technical operations in several areas to fuel greater innovation throughout the company, but while limiting disruptions to core business operations. The cloud will play an important role in this transition.
+Tailwind Traders has a new CIO because of a recent retirement. The new CIO is focused on improving technical operations in several areas to fuel greater innovation throughout the company, but while limiting disruptions to core business operations. The cloud plays an important role in this transition.
 
 :::image type="content" source="../media/ccoe-paradigm-shift.png" alt-text="Image of shifting auto traffic routing from a stoplight and traffic police to a roundabout to demonstrate a shift in IT operations." border="false":::
 
