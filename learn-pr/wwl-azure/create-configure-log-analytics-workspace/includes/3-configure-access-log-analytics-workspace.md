@@ -15,14 +15,14 @@ There are two access modes
 
 You can view the current workspace access control mode on the **Overview** page for the workspace in the **Log Analytics workspace** menu.
 
-:::image type="content" source="../media/la-workspace1.png" alt-text="Screenshot of the Overview page of a Log Analytics workspace with the Access control mode setting highlighted." border="true":::
+:::image type="content" source="../media/log-analytics-workspace-1.png" alt-text="Screenshot of the Overview page of a Log Analytics workspace with the Access control mode setting highlighted." border="true":::
 
 You can switch which access control mode is being used by selecting the **Properties** page of the Log Analytics workspace, selecting **Use resource or workspace permissions**, and then selecting the appropriate permission.
 
-:::image type="content" source="../media/la-workspace2.png" alt-text="Screenshot of the Properties page of a Log Analytics workspace with the Access control mode setting highlighted." border="true":::
+:::image type="content" source="../media/log-analytics-workspace-2.png" alt-text="Screenshot of the Properties page of a Log Analytics workspace with the Access control mode setting highlighted." border="true":::
 
 ## Log Analytics RBAC roles
-There are two built in Log Analytics related RBAC roles. These are:
+There are two built-in Log Analytics related RBAC roles. These are:
 - Log Analytics Reader
 - Log Analytics Contributor
 

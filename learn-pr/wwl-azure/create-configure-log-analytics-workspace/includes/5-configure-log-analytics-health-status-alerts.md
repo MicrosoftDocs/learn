@@ -5,7 +5,7 @@ To enable recommended alert rules:
 1. In the Azure portal, navigate to the Log Analytics workspace. Under **Monitoring**, select the **Alerts** section and then under **Enable recommended alert** rules click **View + enable**.
 1. This will bring up the **Enable recommended alert rules** page.
 
-:::image type="content" source="../media/la-workspace3.png" alt-text="Screenshot of the Properties page of the Enable recommended alert rules page in a Log Analytics workspace with alert and notification settings configured." border="true":::
+:::image type="content" source="../media/log-analytics-workspace-3.png" alt-text="Screenshot of the Properties page of the Enable recommended alert rules page in a Log Analytics workspace with alert and notification settings configured." border="true":::
 
 3. In the **Alert me if** section, select all the rules you want to enable.
 1. In the **Notify me by** section, select the way you want to be notified if an alert is triggered.
