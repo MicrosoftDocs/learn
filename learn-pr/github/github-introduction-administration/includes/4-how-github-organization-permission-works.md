@@ -20,7 +20,7 @@ You can give organization members, outside collaborators, and teams different le
 After you create a repository with the correct permissions, you can make it a template so that anyone who has access to the repository can generate a new repository that has the same directory structure and files as your default branch. To make a template:
 
 1. On GitHub.com, go to the main page of the repository.
-1. Under the repository name, select **Settings**. If you can't the see the **Settings** tab, open the dropdown menu and then select **Settings**.
+1. Under the repository name, select **Settings**. If you can't see the **Settings** tab, open the dropdown menu and then select **Settings**.
 
     :::image type="content" source="../media/repository-actions-settings.png" alt-text="Screenshot showing where to locate the settings button in your GitHub repository.":::
 
