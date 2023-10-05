@@ -42,7 +42,7 @@ quiz:
     - content: "Network Security Groups (NSG)"
       isCorrect: false
       explanation: "That's incorrect. To secure a Virtual Hub, use Azure Firewall and Azure Firewall Manager."
-    - content: "Azure Active Directory"
+    - content: "Microsoft Entra ID"
       isCorrect: false
       explanation: "That's incorrect. To secure a Virtual Hub, use Azure Firewall and Azure Firewall Manager."
     - content: "Azure Firewall and Azure Firewall Manager"

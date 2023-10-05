@@ -13,7 +13,7 @@ The first step is precisely what we defined in the previous unit with `IsbnOracl
 
 The second step is sometimes called *reflection about the mean* or *diffusion*. It's *not* as problem specific as the oracle. Nonetheless, we can somewhat optimize it for our situation by using the following series of steps.
 
-## Step 1. Reflect about uniform superposition
+## Step 1: Reflect about uniform superposition
 
 In the [previous module that used Grover's algorithm](/training/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true), the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. In that case, the creation of the superposition is straightforwardly handled by applying the `H` operation to each individual qubit.
 
@@ -29,7 +29,7 @@ You can think of this operation as analogous to the previous module's use of `Ap
 
 :::code language="qsharp" source="../code/5-program-2.qs":::
 
-## Step 2. Determine the number of Grover iterations
+## Step 2: Determine the number of Grover iterations
 
 Each Grover iteration will consist of one application of `IsbnOracle` followed by `ReflectAboutUniform`.
 
@@ -39,7 +39,7 @@ The number of possible solutions and the total number of states provide the idea
 
 Because we consider only the 10 possible digits as our search space, we'll provide this as an argument of 10.
 
-## Step 3. Wrap Grover's algorithm
+## Step 3: Wrap Grover's algorithm
 
 To run Grover's algorithm, we can wrap everything into the single operation `RunGroversSearch`:
 
@@ -47,7 +47,7 @@ To run Grover's algorithm, we can wrap everything into the single operation `Run
 
 This operation is general for any phase oracle, so you can introduce the oracle that you defined in the previous unit as an argument.
 
-## Step 4. Check the result
+## Step 4: Check the result
 
 Recall that in most situations, Grover's algorithm is probabilistic. Although it typically returns a correct answer with a very high probability, there's often a finite chance that the measurement results in an incorrect solution. This is because it merely amplifies the amplitude of the "good" states, so the "bad" states will often retain small amplitudes.
 
@@ -70,7 +70,7 @@ Recall that the incomplete ISBNs are provided as 10-integer arrays with the miss
 
 :::code language="qsharp" source="../code/5-program-6.qs":::
 
-## Step 5. Run the full program
+## Step 5: Run the full program
 
 You need to have access to all the operations, so be sure to include the `open` statements as follows. (We include the corresponding operations that they provide in case you're curious.)
 
