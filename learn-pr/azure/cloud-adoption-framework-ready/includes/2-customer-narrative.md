@@ -4,7 +4,7 @@ In the _Getting Started_ module, we shared the narrative for Tailwind Traders. T
 
 At this time, the business has placed a high priority on migration and meeting the time constraints to get out of the datacenter. Because of that business priority, the business and IT teams have deprioritized longer-term security and compliance requirements until they can complete development of their core cloud platform.
 
-Because Tailwind Traders is new to the cloud, very few members of operations, platform, or IT admin teams are experienced with the cloud. The company wants to slowly move into modern operations, security, and governance, but it still needs a cloud foundation that can scale to meet those needs as they become more important. 
+Because Tailwind Traders is new to the cloud, few members of operations, platform, or IT admin teams are experienced with the cloud. The company wants to slowly move into modern operations, security, and governance, but it still needs a cloud foundation that can scale to meet those needs as they become more important. 
 
 Historically, Tailwind Traders has operated purely from the perspective of central operations. As a result, the workload teams can't interact with production environments. The company doesn't have an easy way of mapping assets (virtual machines, data, and apps) to defined workloads, so the boundaries of each workload can be unclear at times.
 
