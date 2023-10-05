@@ -12,19 +12,15 @@ Here, you'll configure your default outbound settings for B2B collaboration. You
 
 <a name='open-the-azure-active-directory-service-in-the-portal'></a>
 
-### Open the Microsoft Entra service in the portal
+### Open the Microsoft Entra service in the admin center
 
 1. Open a web browser.
-1. In the address bar, type https://portal.azure.com.
+1. In the address bar, type https://entra.microsoft.com.
 1. Sign in using your Microsoft Entra admin account.
-1. Open the Microsoft Entra service by following these steps:
-   - Under **Azure services**, select **Microsoft Entra ID**, or
-   - Use the search box search for "Microsoft Entra ID" and then select it.
 
 ### Configure default outbound settings
 
-1. On the left navigation bar, select **External Identities**.
-1. Select **Cross-tenant access settings**.
+1. On the left navigation bar, browse to **Identity** > **External Identities** > **Cross-tenant access settings**.
 1. Select the **Default settings** tab.
 1. Under **Outbound access settings**, select **Edit outbound defaults**.
 
