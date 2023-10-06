@@ -18001,6 +18001,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/2-define-projection.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-knowledge-store-azure-cognitive-search/2-define-projection-json.yml",
+      "redirect_document_id": false
+  },
+    {
       "source_path": "learn-pr/azure/distribute-data-globally-with-cosmos-db/5-data-consistency-levels.yml",
       "redirect_url": "/training/modules/work-with-cosmos-db/",
       "redirect_document_id": false
