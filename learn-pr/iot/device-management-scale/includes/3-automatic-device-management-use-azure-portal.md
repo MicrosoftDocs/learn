@@ -62,7 +62,7 @@ The following sections walk through each step.
 
 This section defines the content to be set in targeted device twin or module twin desired properties. There are two inputs for each set of settings. The first is the Module Twin Property, which is the path to the JSON section within the twin desired properties that are set. The second is the JSON content to be inserted in that section.
 
-For example, you could set the twin path to `properties.desired.chiller-water` and then provide the following JSON content:
+For example, you could set the **Module Twin Property** to `properties.desired.chiller-water` and then provide the following JSON content:
 
 ```json
 {
@@ -75,7 +75,7 @@ For example, you could set the twin path to `properties.desired.chiller-water` a
 
 You can also set individual settings by specifying the entire path in the Module Twin Property and the value in the Module Twin Property Content with no brackets. For example, set the **Module Twin Property** to `properties.desired.chiller-water.temperature` and set the **Module Twin Property Content** to `66`. Then create a new twin setting for the pressure property.
 
-If two or more configurations target the same Device Twin Property, the Content from the highest priority configuration will apply (priority is defined in section Target devices or modules as follows).
+If two or more configurations target the same Module Twin Property, the Content from the highest priority configuration will apply (priority is defined in section Target devices or modules as follows).
 
 If you wish to remove a property, set the property value to `null`.
 
