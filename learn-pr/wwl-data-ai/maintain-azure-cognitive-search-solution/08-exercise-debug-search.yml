@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.maintain-azure-cognitive-search-solution.exercise-debug-search-issues
+uid: learn.wwl.maintain-azure-cognitive-search-solution.exercise-debug-search
 title: Exercise - Debug search issues
 metadata:
   title: Exercise - Debug search issues
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 30
 content: |
-  [!include[](includes/08-exercise-debug-search-issues.md)]
+  [!include[](includes/08-exercise-debug-search.md)]
