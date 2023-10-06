@@ -30,37 +30,34 @@ In this task, you create a deployment in the target AKS cluster.
 
 1.  In the Azure portal, in the Bash session of Azure Cloud Shell, use the built-in editor to create a file named *nginx-deployment.yaml* and copy to the following YAML manifest:
     
-    <!--- raw content start --->
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nginx-deployment
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: nginx
-  template:
+    ```azurecli
+    apiVersion: apps/v1
+    kind: Deployment
     metadata:
-      labels:
-        app: nginx
+      name: nginx-deployment
     spec:
-      containers:
-      - name: nginx
-        image: mcr.microsoft.com/oss/nginx/nginx:1.15.2-alpine
-        ports:
-        - containerPort: 80
-        resources:
-          requests:
-            cpu: 250m
-            memory: 64Mi
-          limits:
-            cpu: 500m
-            memory: 256Mi
-<!--- raw content end --->
-    
-    > [!NOTE]
-    > The image used by the deployment is set to `mcr.microsoft.com/oss/nginx/nginx:1.15.2-alpine`.<br>
+      replicas: 3
+      selector:
+        matchLabels:
+          app: nginx
+      template:
+        metadata:
+          labels:
+            app: nginx
+        spec:
+          containers:
+          - name: nginx
+            image: mcr.microsoft.com/oss/nginx/nginx:1.15.2-alpine
+            ports:
+            - containerPort: 80
+            resources:
+              requests:
+                cpu: 250m
+                memory: 64Mi
+              limits:
+                cpu: 500m
+                memory: 256Mi
+    ```
 
 2.  Save the changes to the file and close it to return to the Bash prompt.
 3.  To create the deployment, from the Bash session in the Azure Cloud Shell, run the following command:

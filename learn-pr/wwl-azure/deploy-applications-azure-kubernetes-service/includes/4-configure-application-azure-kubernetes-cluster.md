@@ -41,7 +41,7 @@ Once an available storage resource has been assigned to the pod requesting stora
 
 The following YAML manifest describes a persistent volume claim that uses the *managed-premium* StorageClass and requests a Disk *5Gi* in size:
 
-<!--- raw content start --->
+```azurecli
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -53,7 +53,7 @@ spec:
   resources:
     requests:
       storage: 5Gi
-<!--- raw content end --->
+```
 
 When you create a pod definition, you also specify:
 
@@ -62,7 +62,7 @@ When you create a pod definition, you also specify:
 
 The following YAML manifest illustrates how that persistent volume claim defined earlier is used to mount a volume on the */mnt/azure* directory:
 
-<!--- raw content start --->
+```azurecli
 kind: Pod
 apiVersion: v1
 metadata:
@@ -78,4 +78,4 @@ spec:
     - name: volume
       persistentVolumeClaim:
         claimName: azure-managed-disk
-<!--- raw content end --->
+```

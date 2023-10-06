@@ -9,18 +9,18 @@ In this task, you create a custom storage class in the target AKS cluster.
 
 1.  In the Azure portal, in the Bash session of Azure Cloud Shell, use the built-in editor to create a file named *premium-storage-class.yaml* and copy into it the following YAML manifest:
     
-    <!--- raw content start --->
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: managed-premium-retain
-provisioner: disk.csi.azure.com
-parameters:
-  skuName: Premium_LRS
-reclaimPolicy: Retain
-volumeBindingMode: WaitForFirstConsumer
-allowVolumeExpansion:
-<!--- raw content end --->
+    ```azurecli
+    apiVersion: storage.k8s.io/v1
+    kind: StorageClass
+    metadata:
+      name: managed-premium-retain
+    provisioner: disk.csi.azure.com
+    parameters:
+      skuName: Premium_LRS
+    reclaimPolicy: Retain
+    volumeBindingMode: WaitForFirstConsumer
+    allowVolumeExpansion:
+    ```
     
     > [!NOTE]
     > The `reclaimPolicy` is set to **Retain**.<br>
@@ -37,19 +37,19 @@ In this task, you create a persistent volume claim in the target AKS cluster.
 
 1.  From the Bash session in the Azure Cloud Shell, use the built-in editor to create a file named *persistent-volume-claim-5g.yaml* and copy into it the following YAML manifest:
     
-    <!--- raw content start --->
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: azure-managed-disk
-spec:
-  accessModes:
-  - ReadWriteOnce
-  storageClassName: managed-premium-retain
-  resources:
-    requests:
-      storage: 5Gi
-<!--- raw content end --->
+    ```azurecli
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    metadata:
+      name: azure-managed-disk
+    spec:
+      accessModes:
+      - ReadWriteOnce
+      storageClassName: managed-premium-retain
+      resources:
+        requests:
+          storage: 5Gi
+    ```
     
     > [!NOTE]
     > The `storageClassName` is set to **managed-premium-retain**.<br>
@@ -66,23 +66,23 @@ In this task, you deploy a pod with a persistent volume mount in the target AKS 
 
 1.  From the Bash session in the Azure Cloud Shell, use the built-in editor to create a file named *pod-with-storage-mount.yaml* and copy into it into the following YAML manifest:
     
-    <!--- raw content start --->
-kind: Pod
-apiVersion: v1
-metadata:
-  name: nginx
-spec:
-  containers:
-    - name: myfrontend
-      image: mcr.microsoft.com/oss/nginx/nginx:1.15.5-alpine
-      volumeMounts:
-      - mountPath: "/mnt/azure"
-        name: volume
-  volumes:
-    - name: volume
-      persistentVolumeClaim:
-        claimName: azure-managed-disk
-<!--- raw content end --->
+    ```azurecli
+    kind: Pod
+    apiVersion: v1
+    metadata:
+      name: nginx
+    spec:
+      containers:
+        - name: myfrontend
+          image: mcr.microsoft.com/oss/nginx/nginx:1.15.5-alpine
+          volumeMounts:
+          - mountPath: "/mnt/azure"
+            name: volume
+      volumes:
+        - name: volume
+          persistentVolumeClaim:
+            claimName: azure-managed-disk
+    ```
     
     > [!NOTE]
     > The `mountPath`is set to **/mnt/azure** and `claimName`is set to **azure-managed-disk**.<br>

@@ -106,33 +106,33 @@ In this task, you assign an Azure Policy initiative to an AKS cluster. You use o
 
 ### Validate the effect of Azure Policy
 
-TEST: In this task, you validate the effects of Azure Policy.
+In this task, you validate the effects of Azure Policy.
 
 1.  In the Azure portal, in the Bash session of Azure Cloud Shell, use the built-in editor to create a file named *nginx-privileged.yaml* and copy it into the YAML manifest.
-
-```azurecli
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx-privileged
-spec:
-  containers:
-    - name: nginx-privileged
-      image: mcr.microsoft.com/oss/nginx/nginx:1.15.5-alpine
-      securityContext:
-        privileged: true
-```
+    
+    ```azurecli
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: nginx-privileged
+    spec:
+      containers:
+        - name: nginx-privileged
+          image: mcr.microsoft.com/oss/nginx/nginx:1.15.5-alpine
+          securityContext:
+            privileged: true
+    ```
 
 2.  Save the changes to the file and close it to return to the Bash prompt.
 
 3.  Attempt deploying a pod based on the YAML manifest by running the following command:
+    
+    ```azurecli
+    kubectl apply -f nginx-privileged.yaml
+    ```
 
-```azurecli
-kubectl apply -f nginx-privileged.yaml
-```
-
-4.  Verify that the deployment fails with an error message that resembles the following one
-
-```azurecli
-Error from server (Forbidden): error when creating "nginx-privileged.yaml": admission webhook "validation.gatekeeper.sh" denied the request: [azurepolicy-k8sazurev2noprivilege-a759592cb6adc510dcfa] Privileged container isn't allowed: nginx-privileged, securityContext: {"privileged": true}
-```
+4.  Verify that the deployment fails with an error message that resembles the following one.
+    
+    ```azurecli
+    Error from server (Forbidden): error when creating "nginx-privileged.yaml": admission webhook "validation.gatekeeper.sh" denied the request: [azurepolicy-k8sazurev2noprivilege-a759592cb6adc510dcfa] Privileged container isn't allowed: nginx-privileged, securityContext: {"privileged": true}
+    ```
