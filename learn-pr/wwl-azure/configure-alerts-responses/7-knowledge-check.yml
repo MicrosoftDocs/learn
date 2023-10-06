@@ -26,7 +26,7 @@ quiz:
     - content: "Twenty"
       isCorrect: false
       explanation: "Incorrect. You can add up to five action groups to an alert rule."
-  - content: "A set of action groups need to be suppressed from sending notifications during maintenance at scale on resources in Azure. Which of the following items should be configured?( ) Alert state {{Incorrect. Changing alert states doesn't suppress notifications.}}"
+  - content: "A set of action groups need to be suppressed from sending notifications during maintenance at scale on resources in Azure. Which of the following items should be configured?"
     choices:
     - content: "Alert state"
       isCorrect: false
