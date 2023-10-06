@@ -255,7 +255,7 @@ You've added secrets, but they have no value. Let's assign them by creating a se
 
     ```json
     {
-      "name": "<CREDENTIAL-NAME>",
+      "name": "<CREDENTIAL-NAME-1>",
       "issuer": "https://token.actions.githubusercontent.com",
       "subject": "repo:<YOUR_USERNAME>/mslearn-aks-deployment-pipeline-github-actions:ref:refs/head/main",
       "description": "Testing",
@@ -265,7 +265,7 @@ You've added secrets, but they have no value. Let's assign them by creating a se
     }
     ```
 
-1. Overwrite the `<CREDENTIAL-NAME>` with any name with no spaces.
+1. Overwrite `<CREDENTIAL-NAME-1>` with any name with no spaces.
 
 1. Edit the `subject` to fill in with your GitHub username.
 
@@ -273,7 +273,7 @@ You've added secrets, but they have no value. Let's assign them by creating a se
 
     ```json
     {
-      "name": "<CREDENTIAL-NAME>",
+      "name": "<CREDENTIAL-NAME-2>",
       "issuer": "https://token.actions.githubusercontent.com",
       "subject": "repo:<YOUR_USERNAME>/mslearn-aks-deployment-pipeline-github-actions:ref:refs/tags/<YOUR_TAG>",
       "description": "Testing",
@@ -283,7 +283,9 @@ You've added secrets, but they have no value. Let's assign them by creating a se
     }
     ```
 
-1. Repeat the steps as you did in `staging-cred.json`, but also update `<YOUR_TAG>` as `v2.0.0` for version 2 in the subject.
+1. Overwrite the `<CREDENTIAL-NAME-2>` with a different name from the first, with no spaces.
+
+1. In the subject, update it with your username and replace `<YOUR_TAG>` with `v2.0.0`. In the next step, we deploy version 2.
 
 1. Attach the new federated certificates to the authorize GitHub actions to access the application.
 
