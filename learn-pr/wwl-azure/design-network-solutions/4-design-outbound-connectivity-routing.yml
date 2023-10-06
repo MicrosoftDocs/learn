@@ -4,7 +4,7 @@ title: Design outbound connectivity and routing
 metadata:
   title: Design outbound connectivity and routing
   description: "Design outbound connectivity with NAT and define routes in routing tables."
-  ms.date: 08/24/2023
+  ms.date: 10/06/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/4b-design-outbound-connectivity-routing.md)]
+  [!include[](includes/4-design-outbound-connectivity-routing.md)]
