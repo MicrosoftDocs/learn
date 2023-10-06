@@ -15,7 +15,7 @@ abstract: |
   - Create a knowledge store from an Azure Cognitive Search pipeline
   - View data in projections in a knowledge store
 prerequisites: |
-  - Familiarity with with Microsoft Azure
+  - Familiarity with Microsoft Azure
   - Application development experience with C# or Python
   - Experience of creating an enrichment pipeline with Azure Cognitive Search
   If you haven't completed the [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution/) module, do so before starting this module.
@@ -32,7 +32,7 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.introduction
-- learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-projection
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-projection-json
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-knowledge-store
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.exercise-knowledge-store
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.knowledge-check
