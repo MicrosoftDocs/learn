@@ -22,7 +22,7 @@ You can switch which access control mode is being used by selecting the **Proper
 :::image type="content" source="../media/log-analytics-workspace-2.png" alt-text="Screenshot of the Properties page of a Log Analytics workspace with the Access control mode setting highlighted." border="true":::
 
 ## Log Analytics RBAC roles
-There are two built-in Log Analytics related RBAC roles. These are:
+There are two built in Log Analytics related RBAC roles. These are:
 - Log Analytics Reader
 - Log Analytics Contributor
 
