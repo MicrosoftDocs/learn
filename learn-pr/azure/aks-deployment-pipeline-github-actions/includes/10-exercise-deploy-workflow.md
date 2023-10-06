@@ -148,7 +148,7 @@ For authentication, it's recommended to use Open Identity Connect (OIDC) for Git
 1. In the search bar of the workflow Actions, enter *Azure login*. In the search results, select **Azure Login** published by **Azure**.
 
     <!-- TODO: ADD IMAGE IN MEDIA FOLDER -->
-    :::image type="content" source="../media/10-azure-kubernetes-azure-login.png" alt-text="Screenshot that shows the results for a Azure Login search.":::
+    :::image type="content" source="../media/10-azure-login.png" alt-text="Screenshot that shows the results for a Azure Login search.":::
 
     In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
 
