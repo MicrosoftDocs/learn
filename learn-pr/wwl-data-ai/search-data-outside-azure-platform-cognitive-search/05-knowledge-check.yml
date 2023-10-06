@@ -36,7 +36,7 @@ quiz:
     - content: "Skillset."
       isCorrect: false
       explanation: "Incorrect. A skillset is used to enrich an index using Azure AI Services."
-  - content: "When implementing a backoff strategy, what return codes should you look for and then retry your request?"
+  - content: "Which response code will require you to implement a backoff strategy?"
     choices:
     - content: "200 and 201."
       isCorrect: false
@@ -46,4 +46,4 @@ quiz:
       explanation: "Incorrect. These return codes are general HTTP response errors for when documents can't be found or there's a general error."
     - content: "207 and 503."
       isCorrect: true
-      explanation: "Correct. 503 is the response when a request is throttled. 207 is the response when a single document in a batch fails."
+      explanation: "Correct. 503 is the response means the system is under heavy load and your request can't be processed at this time. 207 means that some documents succeeded, but at least one of them failed."
