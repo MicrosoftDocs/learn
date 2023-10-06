@@ -1,14 +1,14 @@
-Imagine you're a software developer working for a ski resort. You are launching a new application, which will let users view trail maps and purchase lift tickets on your website or from their mobile phones. You want to create an ASP.NET Core web application to complement and advertise the app. Being a Visual Studio developer, you want to use Visual Studio 2022 to create, deploy, and manage your new site.
+Imagine you're a software developer working for a ski resort. You're launching a new application that will let users view trail maps and purchase lift tickets on your website or from their mobile phones. You want to create an ASP.NET Core web application to complement and advertise the app. Being a Visual Studio developer, you want to use Visual Studio 2022 to create, deploy, and manage your new site.
 
-Visual Studio and Azure App Service provide a powerful mechanism for creating, publishing, and maintaining web apps in Azure. Here, you will learn how to use the publishing features built in to Visual Studio to deploy and manage ASP.NET Core web applications hosted on Azure.
+Visual Studio and Azure App Service provide a powerful mechanism for creating, publishing, and maintaining web apps in Azure. Here, you'll learn how to use Visual Studio's built-in publishing features to deploy and manage ASP.NET Core web applications hosted on Azure.
 
 ## Learning objectives
 
 In this module, you'll:
 
-- Create an ASP.NET Core web app in Visual Studio
-- Publish a web app to Azure using Visual Studio
-- Update a web app in Visual Studio and publish the changes to Azure
+- Create an ASP.NET Core web app in Visual Studio.
+- Publish a web app to Azure using Visual Studio.
+- Update a web app in Visual Studio and publish the changes to Azure.
 
 ## Prerequisites
 
