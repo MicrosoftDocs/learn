@@ -29,7 +29,7 @@ using RealTime.Models;
 
 namespace ExampleServer.Hubs;
 
-public class NotificationHub : Hub
+public sealed class NotificationHub : Hub
 {
     public Task NotifyAll(Notification notification) =>
         Clients.All.SendAsync("NotificationReceived", notification);
@@ -60,16 +60,11 @@ using RealTime.Models;
 
 namespace ExampleServer.Services;
 
-public class NotificationService
+public sealed class NotificationService(IHubContext<NotificationHub> hubContext)
 {
-    private readonly IHubContext<NotificationHub> _hubContext;
-
-    public NotificationService(IHubContext<NotificationHub> hubContext) =>
-        _hubContext = hubContext;
-
     public Task SendNotificationAsync(Notification notification) =>
         notification is not null
-            ? _hubContext.Clients.All.SendAsync("NotificationReceived", notification)
+            ? hubContext.Clients.All.SendAsync("NotificationReceived", notification)
             : Task.CompletedTask;
 }
 ```
@@ -126,19 +121,19 @@ You call events from an <xref:Microsoft.AspNetCore.SignalR.IClientProxy> instanc
 
 Consider the following images, which can help you visualize how the hub sends messages to targeted clients. You can expand the images for improved readability.
 
-* **Broadcast to all**
+- **Broadcast to all**
 
     :::image type="content" source="../media/signalr-all.png" lightbox="../media/signalr-all-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.All syntax.":::
 
     All connected clients receive this message, regardless of the group that they might or might not belong to.
 
-* **Isolated user**
+- **Isolated user**
 
     :::image type="content" source="../media/signalr-user.png" lightbox="../media/signalr-user-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.User syntax.":::
 
     A single user receives this message, regardless of how many devices they're currently using.
 
-* **Isolated group**
+- **Isolated group**
 
     :::image type="content" source="../media/signalr-group.png" lightbox="../media/signalr-group-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.Group syntax.":::
 

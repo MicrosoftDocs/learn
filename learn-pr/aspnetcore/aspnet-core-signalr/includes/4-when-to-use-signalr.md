@@ -8,7 +8,7 @@ Knowing when *not* to choose SignalR is just as important as knowing when to cho
 
 SignalR is only as durable as its underlying connection. That is, if there's cause for concern with the *connectivity* of a client application, SignalR isn't the best choice.
 
-Another consideration is the scalability of SignalR. Depending on the number of concurrently connected clients, your web server could experience *resource contention* when it reaches its limits. In situations like this, you would likely need to deploy the application to a server farm and use a backplane. Implementing this on your own can be tedious. 
+Another consideration is the scalability of SignalR. Depending on the number of concurrently connected clients, your web server could experience *resource contention* when it reaches its limits. In situations like this, you would likely need to deploy the application to a server farm and use a backplane. Implementing this on your own can be tedious.
 
 Alternatively, you could resolve this problem by using [Azure SignalR Service](/azure/azure-signalr). Or you could help alleviate it by taking advantage of various [resiliency and disaster recovery](/azure/azure-signalr/signalr-concept-disaster-recovery) mechanisms.
 
@@ -16,15 +16,15 @@ Alternatively, you could resolve this problem by using [Azure SignalR Service](/
 
 You can use SignalR on-premises, in the cloud, or with Azure SignalR Service.
 
-* On-premises:
+- On-premises:
 
   :::image type="content" source="../media/on-prem-signalr.png" lightbox="../media/on-prem-signalr-large.png" alt-text="Diagram of ASP.NET Core SignalR being used on-premises.":::
 
-* In the cloud:
+- In the cloud:
 
   :::image type="content" source="../media/cloud-signalr.png" lightbox="../media/cloud-signalr-large.png" alt-text="Diagram of ASP.NET Core SignalR being used in the cloud.":::
 
-* With Azure SignalR Service:
+- With Azure SignalR Service:
 
   :::image type="content" source="../media/service-signalr.png" lightbox="../media/service-signalr-large.png" alt-text="Diagram of using Azure SignalR Service.":::
 
