@@ -2,7 +2,7 @@ SignalR provides real-time web functionality. Recall that Contoso Pizza requires
 
 ## Decision criteria
 
-Knowing when *not* to choose SignalR is just as important as knowing when to choose it. With real-time web functionality, the users' experience of an app relies on its responsiveness. It's best to understand which portions of an application require real-time updates.
+Knowing when *not* to choose SignalR is as important as knowing when to choose it. With real-time web functionality, the users' experience of an app relies on its responsiveness. It's best to understand which portions of an application require real-time updates.
 
 ### When *not* to use SignalR
 
@@ -30,7 +30,7 @@ You can use SignalR on-premises, in the cloud, or with Azure SignalR Service.
 
 ### Valid use cases
 
-SignalR is not a replacement for traditional HTTP requests. Applications could use SignalR to know when to make specific HTTP requests. In this way, they complement each other.
+SignalR isn't a replacement for traditional HTTP requests. Applications could use SignalR to know when to make specific HTTP requests. In this way, they complement each other.
 
 There are many valid use cases for SignalR. The following list represents good candidates for SignalR:
 

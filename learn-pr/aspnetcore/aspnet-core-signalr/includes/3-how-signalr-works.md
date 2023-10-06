@@ -19,7 +19,7 @@ namespace RealTime.Models;
 public record Notification(string Text, DateTime Date);
 ```
 
-The object can be shared when you use the .NET client SDK, so that the server and client have exactly the same object. Imagine a simple notification hub:
+The object can be shared when you use the .NET client SDK, so that the server and client have exactly the same object. Imagine a notification hub:
 
 ```csharp
 using Microsoft.AspNetCore.SignalR;
@@ -80,7 +80,7 @@ The preceding C# code relies on `IHubContext<NotificationHub>` to access the con
 - The method name is used to call the method from clients. You can customize it by using <xref:Microsoft.AspNetCore.SignalR.HubMethodNameAttribute>.
 - Parameters are optional, but when they're defined, clients are expected to provide corresponding arguments.
 
-Methods are not required to fire events, but they often do.
+Methods aren't required to fire events, but they often do.
 
 ### Events
 
@@ -191,10 +191,10 @@ public sealed class Consumer : IAsyncDisposable
 
 ### Call hub methods
 
-If it is given a client `HubConnection` instance that has successfully started, the client can call methods on a hub by using the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A> or <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A> extensions. If the hub method returns a `Task<TResult>`, the result of `InvokeAsync<TResult>` is of type `TResult`. If the hub method returns `Task`, there is no result. Both `InvokeAsync` and `SendAsync` expect the name of the hub method, and zero to ten parameters.
+If it's given a client `HubConnection` instance that has successfully started, the client can call methods on a hub by using the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A> or <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A> extensions. If the hub method returns a `Task<TResult>`, the result of `InvokeAsync<TResult>` is of type `TResult`. If the hub method returns `Task`, there's no result. Both `InvokeAsync` and `SendAsync` expect the name of the hub method, and zero to ten parameters.
 
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A>: Invokes a hub method on the server by using the specified method name and optional arguments.
-- <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A>: Invokes a hub method on the server by using the specified method name and optional arguments. This method does *not* wait for a response from the receiver.
+- <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A>: Invokes a hub method on the server by using the specified method name and optional arguments. This method doesn't* wait for a response from the receiver.
 
 ### An example hub method invocation
 
@@ -301,4 +301,4 @@ The `OnNotificationReceivedAsync` method is called when the server's hub instanc
 
 The server code for the web application needs to have a `Hub` implementation and expose a route to clients. The `Hub` could use the order object's unique identifier to create a group for tracking. All order status change updates could then be communicated in this group.
 
-The client code would also need to be updated to indicate that the Contoso Pizza application is a Blazor WebAssembly app. You could use either the JavaScript SDK or the .NET client SDK. You would replace the client-side polling functionality with code that builds a `HubConnection`, and then start the connection to the server. As it navigates to the order tracking page, the code would have to join the order's specific group where the change updates will be sent. You subscribe to the event for order status changes, and then handle it accordingly.
+The client code would also need to be updated to indicate that the Contoso Pizza application is a Blazor WebAssembly app. You could use either the JavaScript SDK or the .NET client SDK. You would replace the client-side polling functionality with code that builds a `HubConnection`, and then start the connection to the server. As it navigates to the order tracking page, the code would have to join the order's specific group where the change updates are sent. You subscribe to the event for order status changes, and then handle it accordingly.
