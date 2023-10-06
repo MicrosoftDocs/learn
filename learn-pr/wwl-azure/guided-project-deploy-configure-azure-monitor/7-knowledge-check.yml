@@ -4,10 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/05/2023
+  ms.date: 10/06/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -25,7 +26,7 @@ quiz:
     - content: "Resource"
       isCorrect: false
       explanation: "Incorrect. Resource scope allows access only to the specified workspace."
-  - content: "Tailwind Traders needs to collect information about all HTTP requests and responses that occur on their web server. You decide to create a data collection rule that collects this information from virtual machines that are monitored with Azure Monitor Agent. When configuring the data collection rule, which data source should you specify?"
+  - content: "Tailwind Traders needs to collect information about all HTTP requests and responses that occur on their web server. An IT staff member decides to create a data collection rule that collects this information from virtual machines that are monitored with Azure Monitor Agent. When configuring the data collection rule, which data source should the staff member specify?"
     choices:
     - content: "Performance counters"
       isCorrect: false
@@ -36,7 +37,7 @@ quiz:
     - content: "IIS logs"
       isCorrect: true
       explanation: "Correct. IIS logs contain information on each request made to the server, such as the request's date and time, the client IP address, the user's username, the HTTP status code provided by the web server as a result of the request, and more."
-  - content: "You need to set up an Azure Resource Health alert that notifies you of any changes in the health status of your resources due to a restart or a shutdown. Which type of alert should you use?"
+  - content: "Tailwind Traders needs to set up an Azure Resource Health alert that notifies them of any changes in the health status of any resources due to a restart or a shutdown. Which type of alert should be used?"
     choices:
     - content: "Activity log alert"
       isCorrect: true

@@ -4,10 +4,11 @@ title: Exercise - Deploy Log Analytics
 metadata:
   title: Exercise - Deploy Log Analytics
   description: "Exercise - Deploy Log Analytics"
-  ms.date: 10/05/2023
+  ms.date: 10/06/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-deploy-log-analytics.md)]
