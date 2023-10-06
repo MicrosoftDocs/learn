@@ -14280,6 +14280,141 @@
       "redirect_url": "/training/modules/explore-performance-based-design/",
       "redirect_document_id": false
     },
+         {
+      "source_path": "learn-pr/quantum/get-started-azure-quantum/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/get-started-azure-quantum/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/get-started-azure-quantum/2-azure-quantum-structure-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/get-started-azure-quantum/3-create-quantum-workspace.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/get-started-azure-quantum/4-case-study-quantum-computing.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/get-started-azure-quantum/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/get-started-azure-quantum/get-started-jupyter-notebook.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/get-started-azure-quantum/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/2-problem-description.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/3-quantum-oracles.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/6-implement-grovers-algorithm.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/7-grovers-algorithm-practice.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/solve-graph-coloring-problems-grovers-search/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/run-algorithms-quantum-hardware-azure-quantum/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/run-algorithms-quantum-hardware-azure-quantum/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/run-algorithms-quantum-hardware-azure-quantum/2-quantum-hardware-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/run-algorithms-quantum-hardware-azure-quantum/3-submit-job-azure-quantum.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/run-algorithms-quantum-hardware-azure-quantum/4-different-targets-azure-quantum.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/run-algorithms-quantum-hardware-azure-quantum/5-use-quantum-development-kit-create-qsharp-applications.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/run-algorithms-quantum-hardware-azure-quantum/6-continue-experiment-azure-quantum.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/run-algorithms-quantum-hardware-azure-quantum/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/run-algorithms-quantum-hardware-azure-quantum/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
     {
       "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/1-introduction.md",
       "redirect_url": "/training/modules/deploy-iaas-solutions-with-azure-sql/",
@@ -27992,6 +28127,6 @@
       "source_path": "learn-pr/wwl-azure/set-up-microsoft-defender-cloud/6-exercise-03a-enable-defender-for-cloud-on-your-azure-subscription.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/set-up-microsoft-defender-cloud",
       "redirect_document_id": false
-    }
+    }   
   ]
 }
