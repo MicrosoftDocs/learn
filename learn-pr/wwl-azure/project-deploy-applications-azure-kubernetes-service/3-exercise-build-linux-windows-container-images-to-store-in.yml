@@ -4,12 +4,13 @@ title: Exercise - Build Linux and Windows container images to store in the regis
 metadata:
   title: Exercise - Build Linux and Windows container images to store in the registry
   description: "Exercise - Build Linux and Windows container images to store in the registry"
-  ms.date: 09/29/2023
+  ms.date: 10/06/2023
   author: wwlpublish
+  ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 13
 content: |
-  [!include[](includes/3-exercise-build-linux-and-windows-container-images-to-store-in-.md)]
+  [!include[](includes/3-exercise-build-linux-windows-container-images-to-store-in.md)]
