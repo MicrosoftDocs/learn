@@ -1,4 +1,4 @@
-You've found that many toolsets are available for infrastructure-as-code resource deployments. You want to learn more about when Bicep might be the right tool for you and your organization.
+You've found that many tool sets are available for infrastructure-as-code resource deployments. You want to learn more about when Bicep might be the right tool for you and your organization.
 
 ## Is Bicep the right tool?
 

@@ -70,7 +70,7 @@ Azure Resource Manager templates are files that define the infrastructure and co
 
 ### Why use ARM templates?
 
-There are many benefits to using ARM templates, either JSON and Bicep, for your resource provisioning:
+There are many benefits to using ARM templates, either JSON or Bicep, for your resource provisioning.
 
 - **Repeatable results**:  ARM templates are idempotent, which means that you can repeatedly deploy the same template and get the same result. The template doesn't duplicate resources.
 
