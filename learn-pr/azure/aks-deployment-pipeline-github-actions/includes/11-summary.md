@@ -29,7 +29,7 @@ In this module, you created resources by using your Azure subscription. The foll
 
 1. At the top, select the **trash can**  marked **delete**.
 
-1. Select **delete** in the popup. This also deletes the federated crendentials.
+1. Select **delete** in the popup, which deletes the federated credentials too.
 
 ### GitHub
 

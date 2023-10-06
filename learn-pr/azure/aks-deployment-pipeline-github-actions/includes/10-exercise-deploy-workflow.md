@@ -9,7 +9,7 @@ These steps include:
 - Create the deploy job
 - Set up Open ID Connect (OIDC)
 - Deploy the application with Helm
-- Run the deployments on production
+- Run the deployment on production
 
 ## Create the deploy job
 
@@ -143,16 +143,16 @@ In this exercise, you use Helm version `v3.3.1`. GitHub has an action that downl
 
 ### Authenticate with Azure Login
 
-For authentication, it's recommended to use Open Identity Connect (OIDC) for GitHub Actions to access Azure Kubernetes Services(AKS).
+For authentication, it's recommended to use Open Identity Connect (OIDC) for GitHub Actions to access Azure Kubernetes Services (AKS).
 
 1. In the search bar of the workflow Actions, enter *Azure login*. In the search results, select **Azure Login** published by **Azure**.
 
     <!-- TODO: ADD IMAGE IN MEDIA FOLDER -->
-    :::image type="content" source="../media/10-azure-kubernetes-azure-login.png" alt-text="Screenshot that shows the results for a Set Context search.":::
+    :::image type="content" source="../media/10-azure-kubernetes-azure-login.png" alt-text="Screenshot that shows the results for a Azure Login search.":::
 
     In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
 
-    :::image type="content" source="../media/10-azure-login-copy.png" alt-text="Screenshot that shows the copy function after selecting the Azure Kubernetes set context action.":::
+    :::image type="content" source="../media/10-azure-login-copy.png" alt-text="Screenshot that shows the copy function after selecting the Azure Login action.":::
 
 1. Azure Login requires three parameters to authenticate: `client-id`, `tenant-id`, and `subscription-id`. Fill it in with placeholders to set for later.
 
@@ -433,7 +433,7 @@ Now, you have granted access to your cluster and have Helm installed. You're rea
 
 Go to **contoso-staging.\<your-dns-name\>** to test the staging deployment in your browser.
 
-## Create the production deployment
+## Run the deployment on production
 
 With the staging workflow created, the next step is to create the production workflow.
 
