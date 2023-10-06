@@ -75,4 +75,4 @@ Business data most likely will be queried by business analysts, who are more lik
 
 Azure Synapse Analytics supports OLAP solutions and SQL queries, but your business analysts will need to perform cross-database queries, which Azure Synapse Analytics doesn't support.
 
-Azure Stream Analytics is a great way to analyze data and transform it into actionable insights, but its focus is on real-time data that is streaming in. In this scenario, the business analysts are only looking at historical data.
+Azure Stream Analytics is a great way to analyze data and transform it into actionable insights, but its focus is on real-time data that is streaming in. In this scenario, the business analysts are looking at historical data only.
