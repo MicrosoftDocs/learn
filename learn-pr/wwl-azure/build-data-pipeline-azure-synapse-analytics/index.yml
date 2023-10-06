@@ -2,8 +2,8 @@
 uid: learn.wwl.build-data-pipeline-azure-synapse-analytics
 metadata:
   title: Build a data pipeline in Azure Synapse Analytics
-  description: "Build a data pipeline in Azure Synapse Analytics"
-  ms.date: 10/05/2023
+  description: "Build pipelines using Azure Synapse Analytics."
+  ms.date: 10/06/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
