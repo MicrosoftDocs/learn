@@ -33,7 +33,7 @@ Azure CLI works with several shells, including Windows PowerShell, PowerShell, C
 
 ## Azure portal
 
-The [Azure portal](/azure/azure-portal/) is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription by using a graphical user interface and you can build, manage, and monitor everything from Linux virtual machines to simple web apps to complex cloud deployments in the portal.
+The [Azure portal](/azure/azure-portal/) is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription by using a graphical user interface and you can build, manage, and monitor everything from Linux virtual machines, to simple web apps, to complex cloud deployments in the portal.
 
 ## Azure Resource Manager
 
