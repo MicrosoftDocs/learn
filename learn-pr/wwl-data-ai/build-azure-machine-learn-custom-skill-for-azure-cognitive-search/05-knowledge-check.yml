@@ -12,8 +12,6 @@ metadata:
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/05-knowledge-check.md)]
 quiz:
   questions:
   - content: "Which of the following options is the only supported endpoint for use with Azure Cognitive Search custom AML skill?"
