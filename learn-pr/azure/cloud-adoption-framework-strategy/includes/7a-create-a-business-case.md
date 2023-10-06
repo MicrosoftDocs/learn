@@ -27,11 +27,11 @@ When you're planning your business case to migrate to the cloud, there are sever
 
 **Projections: Migration timeline and Azure costs (optimized)**: Project what migration timeline and the Azure costs will be with a given environment. Consider how you can optimize and get the most out of your Azure investment. For example, use reserved instances, scale capacity up and down, use the Azure hybrid benefit, and right-size your resources.
 
-A business case isn't just a point-in-time view. It’s a plan for a period of time. As you shift to the cloud, you'll reduce your spend over-time and create a cloud migration plan. You can model out what the ramp-down in spend will be on-premises over time associated with your cloud migration plan.
+A business case isn't just a point-in-time view. It’s a plan for a period of time. As you shift to the cloud, you reduce your spend over-time and create a cloud migration plan. You can model out what the ramp-down in spend will be on-premises over time associated with your cloud migration plan.
 
 Once you've identified on-premises workloads and cost structure, you can then build out your optimized Azure consumption plan.
 
-As a final step, when you create your business case, you'll want to compare the cloud environment to an on-premises or status quo scenario. You can take your Azure view and compare it to your on-premises or status quo scenario with no migration so you can assess the benefit of migrating to the cloud. The Azure view will show on-premises costs that are being reduced over time, your Azure environment costs, and any migration costs associated with shifting to a cloud environment.
+As a final step, when you create your business case, you want to compare the cloud environment to an on-premises or status quo scenario. You can take your Azure view and compare it to your on-premises or status quo scenario with no migration so you can assess the benefit of migrating to the cloud. The Azure view will show on-premises costs that are being reduced over time, your Azure environment costs, and any migration costs associated with shifting to a cloud environment.
 
 :::image type="content" source="../media/cloud-on-premises-comparison.png" alt-text="Diagram of comparing the cloud to on-premises or the status quo." border="false":::
 

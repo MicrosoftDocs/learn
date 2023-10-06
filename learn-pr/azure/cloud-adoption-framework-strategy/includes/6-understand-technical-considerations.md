@@ -32,11 +32,18 @@ Cloud billing models and offers differ from on-premises, and they can create mea
 
 **Azure Dev/Test pricing**: Take advantage of discounted rates for your development and testing, including the Microsoft software charges on Azure Virtual Machines and special dev and test pricing on other services. For more information, see [Azure Dev/Test pricing](https://azure.microsoft.com/pricing/dev-test/#overview?azure-portal=true).
 
-**Extended security updates**: Receive continued support for SQL Server 2008 and SQL Server 2008 R2 in the cloud, which have reached the end of their support lifecycle. You can migrate your on-premises SQL Server instances to Azure Virtual Machines, Azure SQL Database, or stay on-premises and purchase extended security updates. You'll receive free extended security patches by migrating to an Azure Virtual Machine. To learn more, see [Lifecycle FAQ: Extended Security Updates](/lifecycle/faq/extended-security-updates?azure-portal=true).
+**Extended security updates**: Receive continued support for SQL Server 2008 and SQL Server 2008 R2 in the cloud that have reached the end of their support lifecycle. You can migrate your on-premises SQL Server instances to Azure Virtual Machines, Azure SQL Database, or stay on-premises and purchase extended security updates. You receive free extended security patches by migrating to an Azure Virtual Machine. To learn more, see [Lifecycle FAQ: Extended Security Updates](/lifecycle/faq/extended-security-updates?azure-portal=true).
 
 ## Continually optimize your environment
 
 Microsoft provides frameworks and tools to help you understand your costs and continually optimize your environment:
+
+Learn more:
+
+* Read about [Azure Advisor](/azure/advisor/advisor-overview?azure-portal=true)
+* Get Azure [Advisor cost recommendations](/azure/advisor/advisor-cost-recommendations?azure-portal=true)
+* Learn about the [Microsoft Azure Well-Architected Review](/assessments/?mode=pre-assessment&session=local?azure-portal=true)
+* Learn about the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true)
 
 Understand and forecast your costs: Monitor your bill, set budgets, and allocate costs to teams and projects with Microsoft Cost Management.
 
@@ -45,13 +52,6 @@ Learn more:
 * [Optimize costs from recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true)
 * [Prevent unexpected charges](/azure/cost-management-billing/cost-management-billing-overview)
 * Cost-optimize your workloads: Optimize your resources and architecture with Azure best practices from Azure Advisor and the Microsoft Azure Well-Architected Framework
-
-Learn more:
-
-* Read about [Azure Advisor](/azure/advisor/advisor-overview?azure-portal=true)
-* Get Azure [Advisor cost recommendations](/azure/advisor/advisor-cost-recommendations?azure-portal=true)
-* Learn about the [Microsoft Azure Well-Architected Review](/assessments/?mode=pre-assessment&session=local?azure-portal=true)
-* Learn about the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true)
 
 Save with Azure offers and licensing terms like the Azure Hybrid Benefit and Azure Reservations.
 
@@ -93,7 +93,7 @@ Your first adoption project should align with your motivations and any defined a
 
 ## First-project expectations
 
-Your team's first adoption project likely will result in a production deployment of some kind, but it isn't always the case. Establish proper expectations early. Here are a few wise expectations to set for the first project:
+Your team's first adoption project will likely result in a production deployment of some kind, but it isn't always the case. Establish proper expectations early. Here are a few wise expectations to set for the first project:
 
 - The project is a source of learning
 - The project might result in production deployments, but it probably will require additional effort first
@@ -136,7 +136,7 @@ It's important to start aligning your partnership strategy while strategizing ad
 * Evaluate a shortlist of partner options
 * Begin contract and paperwork reviews with selected partners
 
-Completing these steps early will ensure success of the team when the technical efforts begin. The following sections provide guidance for each of these steps:
+Completing these steps early helps ensure success of the team when the technical efforts begin. The following sections provide guidance for each of these steps:
 
 ## Understand support needs
 
@@ -152,11 +152,11 @@ Throughout the cloud adoption lifecycle, various teams might require support to 
 
 Few corporations have the diversity of skills required to support strategy, planning, readiness, adoption, governance, and management. Partners and other support models are often necessary to fill in the gaps in the team's skills and responsibilities.
 
-Various partnership options can help develop needed skills, augment staffing requirement, or completely offload specific processes.
+Various partnership options can help develop needed skills, augment staffing requirements, or completely offload specific processes.
 
 ## Partnership options
 
-You are not alone in your cloud journey. There are several options to support your team throughout your cloud adoption journey.
+You aren't alone in your cloud journey. There are several options to support your team throughout your cloud adoption journey.
 
 * **Azure solution providers (partners)**: Get connected with Azure Expert Managed Services Providers (MSPs) and other Microsoft partners who have service offerings aligned to the Cloud Adoption Framework methodologies
 * **FastTrack for Azure**: Use the Microsoft FastTrack for Azure program to accelerate migration
@@ -205,11 +205,11 @@ During strategy development, it's hard to define specific partnership needs. Dur
 
 But, based on the culture and maturity of your team, it might be possible to decide on a partnership option that is more aligned with your expected needs.
 
-Choose one or more of the partnership options above to narrow down the options to investigate first.
+Choose one or more of these partnership options to narrow down the options to investigate first.
 
 ## Begin contract and paperwork reviews
 
-As the shortlist of options is reviewed, there will likely be one or more partners that stand out. If there is a clear leader among the partners, start the process to review contracts and paperwork with the partner.
+As the shortlist of options is reviewed, there will likely be one or more partners that stand out. If there's a clear leader among the partners, start the process to review contracts and paperwork with the partner.
 
 The contracting process can take time. Reviewing legal terms ahead of time can remove one barrier to engagement when your teams need help the most.
 

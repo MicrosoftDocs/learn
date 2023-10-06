@@ -16,7 +16,7 @@ Use these common finance terms when your team is creating a cloud migration busi
 
 ## Terms
 
-**Amortization**: An expense tied to a typically intangible asset, that reflects the *economic* usage of that asset in a particular time period. For example, if you purchase a license worth USD100, you'd capitalize that on your balance sheet. If you amortized it over five years, you'd annually recognize an expense of USD20 per year that impacts your income statement.
+**Amortization**: An expense tied to a typically intangible asset that reflects the *economic* usage of that asset in a particular time period. For example, if you purchase a license worth USD100, you'd capitalize that on your balance sheet. If you amortized it over five years, you'd annually recognize an expense of USD20 per year that impacts your income statement.
 
 **Balance sheet**: A balance sheet is a financial statement that reports a company's assets, liabilities, and shareholders' equity as of a specific date.
 
@@ -26,23 +26,23 @@ Use these common finance terms when your team is creating a cloud migration busi
 
 **[Cloud economics](https://azure.microsoft.com/overview/cloud-economics/)**: An understanding of the benefits and costs of the cloud, and the financial impact when you start a migration from on-premises to cloud computing.
 
-**Depreciation**: An expense tied to a capitalized asset, that reflects the *economic* usage of that asset in a particular time period. For example, if you purchase a server worth USD100, you'd capitalize that on your balance sheet. If you depreciated it over five years, you'd annually recognize an expense of USD20 per year that impacts your income statement.
+**Depreciation**: An expense tied to a capitalized asset that reflects the *economic* usage of that asset in a particular time period. For example, if you purchase a server worth USD100, you'd capitalize that on your balance sheet. If you depreciated it over five years, you'd annually recognize an expense of USD20 per year that impacts your income statement.
 
 **Double-mortgage period**: A period when you have two sets of costs at the same time. For example, when you have both on-premises and cloud costs.
 
-**Earnings before interest, taxes, depreciation, and amortization (EBITDA)**: A performance indicator of the profitability of a business. This starts from *operating income*, which is the income from your ongoing business operations (ignoring things like taxes or interest expense) and adds back depreciation and amortization. While a useful performance metric that's used for comparability, it's often viewed in conjunction with metrics like Capital Expenditure to have a better all-up understanding of a company's ability to generate free cash flow.
+**Earnings before interest, taxes, depreciation, and amortization (EBITDA)**: A performance indicator of the profitability of a business. This metric starts from *operating income*, which is the income from your ongoing business operations (ignoring things like taxes or interest expense) and adds back depreciation and amortization. While a useful performance metric that's used for comparability, it's often viewed along with metrics like Capital Expenditure to have a better all-up understanding of a company's ability to generate free cash flow.
 
 **Net Present Value (NPV)**: An assessment of the financial value of a business investment. This metric looks at cash flows, timing, and the required interest rate.
 
 **Operating Expense (OPEX)**: The ongoing expenses for a business. For example, a maintenance payment or periodic bill for Azure services.
 
-**Profit and Loss (P&L)**: A financial statement that summarizes the revenues, costs, and expenses incurred over a specified period, usually a fiscal quarter or year. It is also referred to as the income statement.
+**Profit and Loss (P&L)**: A financial statement that summarizes the revenues, costs, and expenses incurred over a specified period, usually a fiscal quarter or year. It's also referred to as the income statement.
 
 **Return on Investment (ROI)**: Return on investment (ROI) is a metric used to understand the profitability of an investment. ROI compares how much you paid for an investment to how much you earned to evaluate its efficiency.
 
 ## Sample outcomes by category
 
-Speaking in terms of business outcomes can feel like a foreign language to many technical-minded individuals. To help ease translation, we've curated a set of business outcome examples. You can use the following examples to inspire and demonstrate business outcomes that are based on actual transformation journeys.
+Speaking in terms of business outcomes can feel like a foreign language to many technical-minded individuals. To help ease translation, we have curated a set of business outcome examples. You can use the following examples to inspire and demonstrate business outcomes that are based on actual transformation journeys.
 
 To help you find specific types of examples of business outcomes, we've separated our list of examples into categories. This approach tends to drive consensus-building conversations across business units.
 
@@ -78,7 +78,7 @@ Creating a financial model that accurately represents the full business value of
 
 ## Return on investment
 
-Return on investment (ROI) often is an important criteria for the C-suite or the board of directors. ROI is used to compare different ways to invest limited capital resources. The formula for ROI is fairly simple. The details you'll need to create each input to the formula might not be as simple, though. Essentially, ROI is the amount of return produced from an initial investment. ROI usually is represented as a percentage:
+Return on investment (ROI) often is an important criteria for the C-suite or the board of directors. ROI is used to compare different ways to invest limited capital resources. The formula for ROI is fairly simple. The details you need to create each input to the formula might not be as simple, though. Essentially, ROI is the amount of return produced from an initial investment. ROI usually is represented as a percentage:
 
 :::image type="content" source="../media/formula-roi.png" alt-text="Image of a math equation that shows that R O I equals gain from investment divided by cost of investment." border="false":::
 
@@ -156,7 +156,7 @@ Time savings for staff often are included in soft-cost reductions. When those ti
 
 That said, skills that are needed to work on-premises generally map to a similar (or higher-level) skill set that's needed to work in the cloud. So, people generally aren't laid off after a cloud migration.
 
-An exception occurs when operational capacity is provided by a third party or an Azure Expert Managed Services Provider (MSP). If IT systems are managed by a third party, the operating costs could be replaced by a cloud-native solution or cloud-native MSP. A cloud-native MSP can operate more efficiently and potentially at a lower cost. If that's the case, operational cost reductions belong in hard-cost calculations.
+An exception occurs when operational capacity is provided by a third party or an Azure Expert Managed Services Provider (MSP). If a third party manages IT systems, the operating costs could be replaced by a cloud-native solution or cloud-native MSP. A cloud-native MSP can operate more efficiently and potentially at a lower cost. If that's the case, operational cost reductions belong in hard-cost calculations.
 
 #### Capital expense reductions or avoidance
 
@@ -168,7 +168,7 @@ If a refresh cycle is approved and budgeted, a cloud transformation might help e
 
 ## What is cloud accounting?
 
-The cloud changes how IT accounts for costs. Various IT accounting models are much easier to support because of how the cloud allocates costs, so it's important to understand how to account for cloud costs before you begin a cloud-transformation journey. This article outlines the most common cloud accounting models for IT.
+The cloud changes how IT accounts for costs. Various IT accounting models are easier to support because of how the cloud allocates costs, so it's important to understand how to account for cloud costs before you begin a cloud-transformation journey. This article outlines the most common cloud accounting models for IT.
 
 ### Traditional IT accounting (cost-center model)
 
@@ -182,7 +182,7 @@ To overcome the cost-center view of IT, some CIOs opted for a centralized IT mod
 
 Regardless of the revenue model, centralized IT accounting models are unique because of how the IT unit accounts for costs. In a traditional IT model, the IT team records costs and pays those costs from shared funds like operations and maintenance (O&M) or a dedicated profit and loss (P&L) account.
 
-In a central IT accounting model, the IT team marks up the services provided to account for overhead, management, and other estimated expenses. It then bills the competing business units for the marked-up services. In this model, the CIO is expected to manage the P&L associated with the sale of those services. This can create inflated IT costs and contention between central IT and business units, especially when IT needs to cut costs or isn't meeting agreed-upon SLAs. During times of technology or market change, any new technology would cause a disruption to central IT's P&L, making transformation difficult.
+In a central IT accounting model, the IT team marks up the services provided to account for overhead, management, and other estimated expenses. It then bills the competing business units for the marked-up services. In this model, the CIO is expected to manage the P&L associated with the sale of those services. This model can create inflated IT costs and contention between central IT and business units. Especially, when IT needs to cut costs or isn't meeting agreed-upon SLAs. During times of technology or market change, any new technology would cause a disruption to central IT's P&L, making transformation difficult.
 
 ### Chargeback
 
@@ -194,7 +194,7 @@ However, you shouldn't implement this model without considering the implications
 
 * Chargeback results in a massive reduction of the overall IT budget. For IT organizations that are inefficient or require extensive complex technical skills in operations or maintenance, this model can expose those expenses in an unhealthy way.
 
-* Loss of control is a common consequence. In highly political environments, chargeback can result in loss of control and staff being reallocated to the business. This could create significant inefficiencies and reduce IT's ability to consistently meet SLAs or project requirements.
+* Loss of control is a common consequence. In highly political environments, chargeback can result in loss of control and staff being reallocated to the business. This situation could create significant inefficiencies and reduce IT's ability to consistently meet SLAs or project requirements.
 
 * Difficulty with accounting for shared services is another common consequence. If the organization has grown through acquisition and is carrying technical debt as a result, it's likely that a high percentage of shared services must be maintained to keep all systems working together effectively.
 
@@ -208,7 +208,7 @@ This model provides a balance between a true chargeback model and more tradition
 
 ## Cloud accounting tools
 
-There are several valuable tools you can leverage to project the costs involved in migrating to the cloud up front. Predicting and estimating costs will provide your organization with KPIs you can later use to compare predicted versus actual costs once you’ve completed your cloud migration.
+There are several valuable tools you can use to project the costs involved in migrating to the cloud up front. Predicting and estimating costs provides your organization with KPIs you can later use to compare predicted versus actual costs once you’ve completed your cloud migration.
 
 **Azure Pricing Calculator**: Use the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/) to configure and estimate the costs for Azure products.
 
