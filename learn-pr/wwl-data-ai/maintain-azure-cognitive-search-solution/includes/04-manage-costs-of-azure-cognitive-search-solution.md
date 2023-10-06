@@ -67,8 +67,8 @@ These tips can help you reduce the cost of running your search solution:
 
 The most effective way to manage your costs is to monitor how much you're spending, and take action if the costs have increased over your budget.
 
-All Azure resources can be monitored with budgets in Azure Cost Management. Follow the steps in [Tutorial: Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) for a detailed walk-through on how to create budgets.
+All Azure resources can be monitored with budgets in Microsoft Cost Management. Follow the steps in [Tutorial: Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) for a detailed walk-through on how to create budgets.
 
-:::image type="content" source="../media/budgets-cost-management-small.png" alt-text="A screenshot of the budgets section of Azure cost management." lightbox="../media/budgets-cost-management.png":::
+:::image type="content" source="../media/budgets-cost-management-small.png" alt-text="A screenshot of the budgets section of Microsoft Cost management." lightbox="../media/budgets-cost-management.png":::
 
 With your budget in place, you can enable alerts to notify you if your organizations search stakeholders to avoid the risks of overspending.
