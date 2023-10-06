@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel.4-exercise
+title: Exercise-3
+metadata:
+  title: Exercise-3
+  description: "Exercise-3: Configure a data connector Data Collection Rule (DCR)."
+  ms.date: 10/6/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.service: microsoft-sentinel
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-exercise.md)]

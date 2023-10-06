@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel
+metadata:
+  title: Configure SIEM security operations using Microsoft Sentinel
+  description: "Configure SIEM security operations using Microsoft Sentinel."
+  ms.date: 10/3/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: module-guided-project 
+  ms.prod: microsoft-sentinel
+  ms.service: microsoft-sentinel
+title: Configure SIEM security operations using Microsoft Sentinel
+summary: In this module, you learned how configure SIEM security operations using Microsoft Sentinel.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Create and configure a Microsoft Sentinel workspace
+  - Deploy Microsoft Sentinel Content Hub solutions and data connectors
+  - Configure Microsoft Sentinel Data Collection rules, NRT Analytic rule and Automation
+  - Perform a simulated attack to validate Analytic and Automation rules
+prerequisites: |
+  - Basic experience with Azure services
+  - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
+  - An Azure subscription
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - security-operations-analyst
+products: 
+- azure
+- microsoft-sentinel
+- azure-log-analytics
+subjects: 
+  - threat-protection
+  - cloud-security
+units:
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel.1-introduction
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel.2-exercise
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel.3-exercise
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel.4-exercise
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel.5-exercise
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel.6-summary
+badge:
+  uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel.badge

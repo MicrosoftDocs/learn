@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel.3-exercise
+title: Exercise-2
+metadata:
+  title: Exercise-2
+  description: "Exercise-2: Install Microsoft Sentinel Content Hub solutions and data connectors."
+  ms.date: 10/3/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.service: microsoft-sentinel
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise.md)]
