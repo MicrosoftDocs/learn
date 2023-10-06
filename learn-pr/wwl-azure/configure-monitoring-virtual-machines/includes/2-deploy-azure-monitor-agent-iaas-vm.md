@@ -32,8 +32,8 @@ Azure Monitor Agent is implemented as an Azure VM extension. The following prere
 - Networking: If you use network firewalls, the Azure Resource Manager service tag must be enabled on the virtual network for the virtual machine. The virtual machine must also have access to the following HTTPS endpoints:
 
     - `global.handler.control.monitor.azure.com`
-    - <virtual-machine-region-name>.handler.control.monitor.azure.com (example: `westus.handler.control.monitor.azure.com`)
-    - <log-analytics-workspace-id>.ods.opinsights.azure.com (example: `12345a01-b1cd-1234-e1f2-1234567g8h99.ods.opinsights.azure.com`)
+    - \<virtual-machine-region-name\>.handler.control.monitor.azure.com (example: `westus.handler.control.monitor.azure.com`)
+    - \<log-analytics-workspace-id\>.ods.opinsights.azure.com (example: `12345a01-b1cd-1234-e1f2-1234567g8h99.ods.opinsights.azure.com`)
 
 It is important to note that once the agent is installed that Azure Monitor Agents don’t function without being associated with data collection rules. Those can be created manually or through using VM Insights. 
 
