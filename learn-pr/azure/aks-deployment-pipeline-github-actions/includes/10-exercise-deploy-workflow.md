@@ -207,10 +207,10 @@ You've added secrets, but they have no value. Let's assign them by creating a se
 1. Find your subscription ID
 
     ```azurecli-interactive
-    az account list -o table
+    az account show
     ```
 
-    Look for your subscription name in the table. Copy the ID that matches it.
+    Your subscription_id is the `id`. Copy the ID.
 
 1. Create a Service Principal
 

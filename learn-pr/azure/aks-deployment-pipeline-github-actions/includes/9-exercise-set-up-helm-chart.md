@@ -32,9 +32,13 @@ In this exercise, to deploy a Helm chart, you'll complete the following tasks:
 
 ## Create a chart
 
-1. While inside the learn repository you forked, `cd` into the `kubernetes` directory.
+1. While inside the learn repository you forked go to the `kubernetes` directory.
 
-1. Run this command to generate  a boilerplate template:
+    ```bash
+    cd kubernetes
+    ```
+
+1. While inside, generate a boilerplate template `with helm create`:
 
     ```bash
     helm create contoso-website
@@ -42,7 +46,7 @@ In this exercise, to deploy a Helm chart, you'll complete the following tasks:
 
    The command creates a new directory called `contoso-website` in the `kubernetes` directory.
 
-1. Run `cd` to go to the new directory.
+1. Switch to the new directory with `cd`.
 
     ```bash
     cd contoso-website
