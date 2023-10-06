@@ -29,7 +29,7 @@ The cluster autoscaler is a Kubernetes component. Although the AKS cluster uses 
 
 ### Enable the cluster autoscaler on an existing cluster
 
-Update an existing cluster using the**`az aks update`** command and enable and configure the cluster autoscaler on the node pool using the `enable-cluster-autoscaler` parameter and specifying a node `min-count` and`max-count`. The following example command updates an existing AKS cluster to enable the cluster autoscaler on the node pool for the cluster and sets a minimum of one and maximum of three nodes:<br>
+Update an existing cluster using the **`az aks update`** command and enable and configure the cluster autoscaler on the node pool using the `enable-cluster-autoscaler` parameter and specifying a node `min-count` and`max-count`. The following example command updates an existing AKS cluster to enable the cluster autoscaler on the node pool for the cluster and sets a minimum of one and maximum of three nodes:<br>
 
 ```azurecli
 az aks update \
