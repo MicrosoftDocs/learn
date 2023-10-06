@@ -40,6 +40,10 @@ You manage alert rules from the Alerts page in the Azure portal.
 
 :::image type="content" source="../media/monitor-alerts.png" alt-text="Screenshot of the Alerts page in Azure Monitor, displaying a list of all current alerts." lightbox="../media/monitor-alerts.png":::
 
+[ ![Screenshot of the Alerts page in Azure Monitor, displaying a list of all current alerts.](../media/monitor-alerts.png)](../media/monitor-alerts.png#lightbox)
+
+
+
 You can filter the list of Alert rules using the available filters:
 
 - Subscription
