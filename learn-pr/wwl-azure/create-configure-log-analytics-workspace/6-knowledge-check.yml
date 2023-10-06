@@ -26,8 +26,11 @@ quiz:
     - content: "Access control mode"
       isCorrect: false
       explanation: "Incorrect. The access control mode is a setting on each workspace that defines how permissions are determined for the workspace."
-  - content: "An Azure subscription contains multiple Log Analytics workspace in a resource group named LogStores. Which Log Analytics RBAC role should be assigned in order to allow a security principal to be able to restore archived Log Analytics Workspace logs? ( ) Backup Operator {{Incorrect. The Backup Operator role allows you to manage backup services. It is not necessary for the restoration of archived Log Analytics logs. }}"
+  - content: "An Azure subscription contains multiple Log Analytics workspace in a resource group named LogStores. Which Log Analytics RBAC role should be assigned in order to allow a security principal to be able to restore archived Log Analytics Workspace logs?"
     choices:
+    - content: "Backup Operator"
+      isCorrect: false
+      explanation: "Incorrect. The Backup Operator role allows you to manage backup services. It is not necessary for the restoration of archived Log Analytics logs."
     - content: "Log Analytics Reader"
       isCorrect: false
       explanation: "Incorrect. The Log Analytics Reader role does not have the necessary permissions to restore archived log analytics workspace logs."
