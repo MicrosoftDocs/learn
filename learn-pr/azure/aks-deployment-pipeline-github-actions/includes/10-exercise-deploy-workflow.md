@@ -200,30 +200,38 @@ For authentication, it's recommended to use Open Identity Connect (OIDC) for Git
 
 ## Set up Open ID Connect (OIDC)
 
-<!-- TODO: Change outline into sentences -->
+You've added secrets, but they have no value. Let's assign them by creating a service principal and certificates to login with OIDC.
+
+### Register your app
+
 1. Find your subscription ID
 
+    ```azurecli-interactive
+    az account list -o table
+    ```
+
+    Look for your subscription name in the table. Copy the ID that matches it.
+
 1. Create a Service Principal
-    1. appId is the client_id
-    1. tenant_id is listed
 
-1. Assign the values to the secrets
+    ```azurecli-interactive
+    az ad sp create-for-rbac --scopes /subscriptions/$SUBSCRIPTION_ID --role Contributor 
+    ```
 
-1. Link a federated credential
-    1. Copy this certificate for staging
-    1. Copy this other certificate for production
-    2. Run this command to create a new certificate for staging
-    1. Repeat for production.
+    Copy your JSON output and save it for the next step.
 
-You've set the credential secret, but the secret has no value. Let's assign them by creating a service principal and certificates.
-
-### Create a service principal
-
-1. Get your subscription_Id from the command
+    ```json
+      {
+        "appId": "<client_id",
+        "displayName": "<generated_name>",
+        "password": "<secret>",
+        "tenant": "<tenant__id>"
+      }
+    ```
 
 ### Load the secrets
 
-1. Go to your fork of the GitHub online repository and select the **Settings** tab. 
+1. Go to your fork of the GitHub online repository and select the **Settings** tab.
 
 1. In the menu under **Security**, select **Secrets** and choose **Actions**. 
 
@@ -237,12 +245,55 @@ You've set the credential secret, but the secret has no value. Let's assign them
 
 ### Assign Federated Certificates
 
+1. Verify your app in the [Application Registration](https://ms.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
 
+1. Select the application that matches your displayName. By default, it uses a timestamp for the service principal creation.
 
+1. Confirm the contents of the appID (Client ID), Object ID (Application Object ID), and Directory ID (Tenant ID).
+
+1. Create a new file named staging-cred.json. Copy and paste this template into it.
+
+    ```json
+    {
+      "name": "<CREDENTIAL-NAME>",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "subject": "repo:<YOUR_USERNAME>/mslearn-aks-deployment-pipeline-github-actions:ref:refs/head/main",
+      "description": "Testing",
+      "audiences": [
+          "api://AzureADTokenExchange"
+      ]
+    }
+    ```
+
+1. Overwrite the `<CREDENTIAL-NAME>` with any name with no spaces.
+
+1. Edit the `subject` to fill in with your GitHub username.
+
+1. Create another file named prod-cred.json. Copy and paste this template into it.
+
+    ```json
+    {
+      "name": "<CREDENTIAL-NAME>",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "subject": "repo:<YOUR_USERNAME>/mslearn-aks-deployment-pipeline-github-actions:ref:refs/tags/<YOUR_TAG>",
+      "description": "Testing",
+      "audiences": [
+          "api://AzureADTokenExchange"
+      ]
+    }
+    ```
+
+1. Repeat the steps as you did in `staging-cred.json`, but also update `<YOUR_TAG>` as `v2.0.0` for version 2 in the subject.
+
+1. Attach the new federated certificates to the authorize GitHub actions to access the application.
+
+    ```azurecli-interactive
+    az ad app federated-credential create --id $APPLICATION_OBJECT_ID --parameters <prod-cred.json 
+    ```
 
 ## Deploy the application with Helm
 
-Now, you have granted access to your cluster and have Helm installed. You're ready to deploy the application. 
+Now, you have granted access to your cluster and have Helm installed. You're ready to deploy the application.
 
 1. In the YAML file, below the latest step, create a new `- name:` key. Name the key `Run Helm Deploy`. Then, below this key, create another key called `run`.
 
@@ -530,10 +581,19 @@ With the staging workflow created, the next step is to create the production wor
 
 ### Production changes
 
-<!-- TODO: Finish section -->
-1. In order for you run the production workflow, you need to update the federated certificate with the corresponding tag name you wish to use.
+Each time you run the production workflow, you need to update the federated certificate with the corresponding tag version.
 
-    1. use this command
+1. Open up your `prod-cred.json`
+
+1. Edit the <TAG_NAME> from v2.0.0 to a different v.x.x.x.
+
+1. Update the application's federated credential in Azure with this command.
+
+    ```azurecli-interactive
+    az ad app federated-credential update --federated-credential-id $CREDENTIAL_NAME --id $APPLICATION_OBJECT_ID --parameters prod-cred.json 
+    ```
+
+    Fill in the CREDENTIAL_NAME as the name you chose, and the APPLICATION_OBJECT_ID as the Object ID of your app.
 
 1. In Cloud Shell, run `git pull` to fetch the latest changes. Then, run the following command to tag and push the changes:
 
@@ -541,7 +601,7 @@ With the staging workflow created, the next step is to create the production wor
     git tag -a v2.0.1 -m 'Creating first production deployment' && git push --tags
     ```
 
-1. When prompted, provide your GitHub username, and the PAT created previously as the password.
+1. Provide your GitHub username and the PAT from the past exercise as the password.
 
 1. Open the **Actions** tab and see the running process.
 
