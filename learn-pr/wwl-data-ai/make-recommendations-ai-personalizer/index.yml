@@ -11,7 +11,7 @@ metadata:
   ms.service: azure-ai-personalizer
 title: |
   Make recommendations with Azure AI Personalizer
-summary: "Learn how to use Azure AI Personalizer, to empower your apps with smarter decision making through improved recommendations."
+summary: "Learn how to use Azure AI Personalizer to empower your apps with smarter decision making through improved recommendations."
 abstract: |
   By the end of this module, you'll be able to:
   - Create an Azure AI Personalizer resource
