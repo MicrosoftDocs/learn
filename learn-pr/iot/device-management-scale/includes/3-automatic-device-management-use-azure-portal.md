@@ -39,7 +39,7 @@ You can use the Azure portal to begin the process of creating a configuration as
 
 1. In the Azure portal, open your IoT hub.
 2. Select **Configurations + Deployments** in the left navigation pane.
-3. Select **Add** and choose **Device twin configuration** or **Module twin configuration** from the drop-down list.
+3. Select **Add** and then choose **Device Twin Configuration** or **Module Twin Configuration** from the drop-down list.
 :::image type="content" source="../media/create-automatic-configuration.png" alt-text="Screenshot showing how to add a configuration.":::
 
 There are five steps to create a configuration.
@@ -60,7 +60,7 @@ The following sections walk through each step.
 
 ### Twin settings
 
-This section defines the content to be set in targeted device twin or module twin desired properties. There are two inputs for each set of settings. The first is the twin path, which is the path to the JSON section within the twin desired properties that are set. The second is the JSON content to be inserted in that section.
+This section defines the content to be set in targeted device twin or module twin desired properties. There are two inputs for each set of settings. The first is the Module Twin Property, which is the path to the JSON section within the twin desired properties that are set. The second is the JSON content to be inserted in that section.
 
 For example, you could set the twin path to `properties.desired.chiller-water` and then provide the following JSON content:
 
@@ -73,9 +73,9 @@ For example, you could set the twin path to `properties.desired.chiller-water` a
 
 :::image type="content" source="../media/module-config-twin-settings.png" alt-text="Screenshot of setting the device or module twin property and json content.":::
 
-You can also set individual settings by specifying the entire path in the Device Twin Path and the value in the Content with no brackets. For example, set the Device Twin Path to `properties.desired.chiller-water.temperature` and set the Content to `66`. Then create a new twin setting for the pressure property.
+You can also set individual settings by specifying the entire path in the Module Twin Property and the value in the Module Twin Property Content with no brackets. For example, set the **Module Twin Property** to `properties.desired.chiller-water.temperature` and set the **Module Twin Property Content** to `66`. Then create a new twin setting for the pressure property.
 
-If two or more configurations target the same Device Twin Path, the Content from the highest priority configuration will apply (priority is defined in section Target devices or modules as follows).
+If two or more configurations target the same Device Twin Property, the Content from the highest priority configuration will apply (priority is defined in section Target devices or modules as follows).
 
 If you wish to remove a property, set the property value to `null`.
 
