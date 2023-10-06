@@ -3,7 +3,7 @@ uid: learn.wwl.plan-azure-kubernetes-service-deployment
 metadata:
   title: Plan an Azure Kubernetes Service deployment
   description: "Azure Kubernetes Service provides reliable scheduling of fault-tolerant application workloads, making it the leading platform for container orchestration."
-  ms.date: 10/04/2023
+  ms.date: 10/06/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
