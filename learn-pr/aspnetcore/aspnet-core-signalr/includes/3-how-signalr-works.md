@@ -60,7 +60,8 @@ using RealTime.Models;
 
 namespace ExampleServer.Services;
 
-public sealed class NotificationService(IHubContext<NotificationHub> hubContext)
+public sealed class NotificationService(
+    IHubContext<NotificationHub> hubContext)
 {
     public Task SendNotificationAsync(Notification notification) =>
         notification is not null
@@ -69,7 +70,7 @@ public sealed class NotificationService(IHubContext<NotificationHub> hubContext)
 }
 ```
 
-The preceding C# code relies on `IHubContext<NotificationHub>` to access the contextual listing of clients, exposing the ability to broadcast notifications. `_hubContext` is used to fire the `"NotificationReceived"` event, but it isn't intended to be used to call the hub's `NotifyAll` method.
+The preceding C# code relies on `IHubContext<NotificationHub>` to access the contextual listing of clients, exposing the ability to broadcast notifications. The `hubContext` primary constructor parameter that's captured in scope is used to fire the `"NotificationReceived"` event, but it isn't intended to be used to call the hub's `NotifyAll` method.
 
 ### Methods
 
@@ -287,6 +288,7 @@ public sealed class Consumer : IAsyncDisposable
     private async Task OnNotificationReceivedAsync(Notification notification)
     {
         // Do something meaningful with the notification.
+        await Task.CompletedTask;
     }
 
     // Omitted for brevity.

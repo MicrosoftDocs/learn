@@ -30,7 +30,7 @@ You can use SignalR on-premises, in the cloud, or with Azure SignalR Service.
 
 ### Valid use cases
 
-SignalR is not a replacement for traditional HTTP requests. Applications could use SignalR to know when to make specific HTTP requests. In this way, they complement each other. 
+SignalR is not a replacement for traditional HTTP requests. Applications could use SignalR to know when to make specific HTTP requests. In this way, they complement each other.
 
 There are many valid use cases for SignalR. The following list represents good candidates for SignalR:
 
