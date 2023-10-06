@@ -17,14 +17,14 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Which mark-up extension can you use in your XAML code to detect the platform on which the app is running?"
+  - content: "Which markup extension can you use in your XAML code to detect the platform on which the app is running?"
     choices:
     - content: "`DevicePlatform`"
       isCorrect: false
-      explanation: "No. `DevicePlatform` is a property of the DeviceInfo class, intended for use in C# code. Use the `OnPlatform` mark-up extension in your XAML code."
+      explanation: "No. `DevicePlatform` is a property of the DeviceInfo class, intended for use in C# code. Use the `OnPlatform` markup extension in your XAML code."
     - content: "`DeviceInfo`"
       isCorrect: false
-      explanation: "No. The `DeviceInfo` is intended for use in C# code. Use the `OnPlatform` mark-up extension in your XAML code."
+      explanation: "No. The `DeviceInfo` is intended for use in C# code. Use the `OnPlatform` markup extension in your XAML code."
     - content: "`OnPlatform`"
       isCorrect: true
       explanation: "This is the correct answer."
