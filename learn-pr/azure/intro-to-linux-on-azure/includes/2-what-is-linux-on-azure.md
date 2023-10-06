@@ -6,7 +6,7 @@ Linux is the fastest growing platform on Azure, which means that Linux users wil
 
 - If you bring your own Linux distribution, follow [Azure guidelines to prepare your image](/azure/virtual-machines/linux/create-upload-generic).
 
-- Linux-based images in Azure Marketplace include base distributions and images with preinstalled software for specific scenarios. All images contain the software and configuration that is needed to ensure smooth operation on Azure VMs, including kernel-level driver support for Azure infrastructure like storage and networking, and Azure-supported features like remote direct memory access.
+- Linux-based images in Azure Marketplace include base distributions and images with preinstalled software for specific scenarios. All images contain the software and configuration that is needed to ensure smooth operation on Azure VMs. This includes kernel-level driver support for Azure infrastructure like storage and networking, and Azure-supported features like remote direct memory access.
 
 - Many of the images in Azure Marketplace are free: you pay only for the virtual infrastructure your VM consumes. Some images have additional license and purchase terms for the software they include. Learn more about pricing and support options later in this module.
 
@@ -14,7 +14,7 @@ Linux is the fastest growing platform on Azure, which means that Linux users wil
 
 As you think about designing a computing environment on Azure, distinguish between four general usage models available: infrastructure as a service (IaaS), platform as a service (PaaS), database as a service (DBaaS), and software as a service (SaaS).
 
-**IaaS** &mdash; Azure maintains the physical hardware and provisions more computing resources as needed. You, the customer, are responsible for managing the operating system, configuring additional services for security, web applications, your development environment, application deployment, and monitoring.
+**IaaS** &mdash; Azure maintains the physical hardware and provisions more computing resources as needed. You, the customer, are responsible for managing the operating system, configuring other services for security, web applications, your development environment, application deployment, and monitoring.
 
 **PaaS** &mdash; Azure maintains all aspects of the infrastructure but enables you to control, configure, and deploy applications.
 
