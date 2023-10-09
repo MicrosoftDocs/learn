@@ -1,5 +1,3 @@
-
-
 All tasks in this lab are performed from the Azure portal (including the Bash Cloud Shell session).
 
 > [!NOTE]
@@ -26,9 +24,10 @@ After completing this lab, you will be able to:
 
 ## Exercises
 
-During this lab ([full instructions on GitHub](https://microsoftlearning.github.io/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/Instructions/AZ-120_Lab01a-Azure_VM_Linux_Clustering.html)) you will complete the following exercises:
+During this lab ([full instructions on GitHub](https://aka.ms/az-120-lab-01a)) you will complete the following exercises:
 
 - Exercise 1: Provision Azure compute resources necessary to support highly available SAP HANA deployments
 - Exercise 2: Configure operating system of Azure VMs running Linux to support a highly available SAP HANA installation
 - Exercise 3: Provision Azure network resources necessary to support highly available SAP HANA deployments
 - Exercise 4: Remove lab resources
+
