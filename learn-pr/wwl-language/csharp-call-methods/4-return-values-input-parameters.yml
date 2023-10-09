@@ -45,7 +45,7 @@ quiz:
       explanation: "Incorrect. Returning a value does not make a method an overloaded method."
     - content: "A method with more than five parameters."
       isCorrect: false
-      explanation: "Incorrect. An overloaded method may include more than five parameters."
+      explanation: "Incorrect. An overloaded method might include more than five parameters."
     - content: "It is a method that supports several implementations of the method, each with a unique method signature."
       isCorrect: true
       explanation: "Correct! This is the correct definition of an overloaded method."
