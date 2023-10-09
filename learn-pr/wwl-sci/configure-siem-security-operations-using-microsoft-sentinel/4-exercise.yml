@@ -9,6 +9,6 @@ metadata:
   ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.service: microsoft-sentinel
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise.md)]
