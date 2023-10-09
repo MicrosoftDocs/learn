@@ -1,6 +1,3 @@
-
-
-
 ## Scenario
 
 The organizations you support have dynamic business needs for processing, updating data, and reporting. The SAP workloads are among the largest in your company.
