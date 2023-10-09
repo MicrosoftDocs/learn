@@ -2,8 +2,8 @@
 uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.explore-data-with-data-wrangler
 title: Load data for exploration
 metadata:
-  title: Load data for exploration
-  description: "Learn how to load data for data exploration purposes in Microsoft Fabric."
+  title: Perform data exploration
+  description: "Learn how to perform data exploration in Data Wrangler."
   ms.date: 09/19/2023
   author: wwlpublish
   ms.author: jupadrao

@@ -1,4 +1,4 @@
-Now it's your chance to preprocess data for data science with notebooks in Microsoft Fabric.
+Now it's your chance to preprocess data for data science in Microsoft Fabric.
 
 In this exercise, you’ll learn how to preprocess data using Data Wrangler in Microsoft Fabric notebooks.
 

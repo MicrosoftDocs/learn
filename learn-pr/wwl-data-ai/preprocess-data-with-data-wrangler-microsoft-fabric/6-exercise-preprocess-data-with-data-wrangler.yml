@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.exercise-preprocess-data-with-data-wrangler
-title: 'Exercise: Use notebook for data exploration in Microsoft Fabric'
+title: 'Exercise: Preprocess data with Data Wrangler in Microsoft Fabric'
 metadata:
-  title: 'Exercise: Use notebook for data exploration in Microsoft Fabric'
-  description: "Learn how to perform data exploration using Microsoft Fabric notebook."
+  title: 'Exercise: Preprocess data with Data Wrangler in Microsoft Fabric'
+  description: "Learn how to preprocess data for data science with Data Wrangler in Microsoft Fabric."
   ms.date: 09/19/2023
   author: wwlpublish
   ms.author: jupadrao

@@ -2,8 +2,8 @@
 uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.handle-missing-data
 title: Understand data distribution
 metadata:
-  title: Understand data distribution
-  description: "Learn how to identify the distribution of your data in Microsoft Fabric."
+  title: Handle missing data
+  description: "Learn how to handle missing data in Data Wrangler."
   ms.date: 09/19/2023
   author: wwlpublish
   ms.author: jupadrao

@@ -2,8 +2,8 @@
 uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.transform-data
 title: Check for missing data in notebooks
 metadata:
-  title: Check for missing data in notebooks
-  description: "Learn how to check for missing data in Microsoft Fabric notebooks."
+  title: Transform data with operators
+  description: "Learn how to transform data with operators in Data Wrangler."
   ms.date: 09/19/2023
   author: wwlpublish
   ms.author: jupadrao
