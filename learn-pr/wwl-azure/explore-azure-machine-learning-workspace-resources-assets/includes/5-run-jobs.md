@@ -1,5 +1,3 @@
-
-
 To train models with the Azure Machine Learning workspace, you have several options:
 
 - Use the **designer** in the Azure Machine Learning studio.
@@ -21,9 +19,9 @@ You can also use the designer to swiftly create pipelines using components you'v
 
 ## Explore algorithms and hyperparameter values with Automated Machine Learning
 
-When you have a training dataset and you're tasked with finding the best performing model, you may want to experiment with various algorithms and hyperparameter values. 
+When you have a training dataset and you're tasked with finding the best performing model, you might want to experiment with various algorithms and hyperparameter values. 
 
-Manually experimenting with different configurations to train a model may take long. Alternatively, you can use Automated Machine Learning to speed up the process. 
+Manually experimenting with different configurations to train a model might take long. Alternatively, you can use Automated Machine Learning to speed up the process. 
 
 Automated Machine Learning iterates through algorithms paired with feature selections to find the best performing model for your data.
 
