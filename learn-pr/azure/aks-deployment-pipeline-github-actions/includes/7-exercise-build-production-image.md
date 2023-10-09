@@ -430,7 +430,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 1. When the process is completed, in Azure Cloud Shell, run the following command to confirm that two tags are listed in the results:
 
     ```bash
-      az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table
+    az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table
     ```
-    
+
     Replace ACR_NAME with your ACR_NAME.
