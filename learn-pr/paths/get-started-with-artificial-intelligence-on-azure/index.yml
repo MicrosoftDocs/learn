@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-with-artificial-intelligence-on-azure
 metadata:
   title: 'Microsoft Azure AI Fundamentals: Get started with artificial intelligence'
   description: 'Microsoft Azure AI Fundamentals: Get started with artificial intelligence'
-  ms.date: 09/22/2023
+  ms.date: 10/06/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -30,5 +30,6 @@ modules:
 - learn.wwl.get-started-ai-fundamentals
 - learn.wwl.fundamentals-machine-learning
 - learn.wwl.explore-azure-openai
+- learn.wwl.fundamentals-azure-ai-services
 trophy:
   uid: learn.wwl.get-started-with-artificial-intelligence-on-azure.trophy
