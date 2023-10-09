@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "Reader."
       isCorrect: false
-      explanation: "Incorrect. An AzureML Data Scientist is allowed to submit a job."
-    - content: "AzureML Data Scientist."
+      explanation: "Incorrect. An Azure Machine Learning Data Scientist is allowed to submit a job."
+    - content: "Azure Machine Learning Data Scientist."
       isCorrect: true
-      explanation: "Correct. An AzureML Data Scientist is allowed to submit a job."
-    - content: "AzureML Compute Operator."
+      explanation: "Correct. An Azure Machine Learning Data Scientist is allowed to submit a job."
+    - content: "Azure Machine Learning Compute Operator."
       isCorrect: false
-      explanation: "Incorrect. An AzureML Data Scientist is allowed to submit a job."
+      explanation: "Incorrect. An Azure Machine Learning Data Scientist is allowed to submit a job."
   - content: "The data scientist wants to run a single script to train a model. What type of job is the best fit to run a single script?"
     choices:
     - content: "Command"

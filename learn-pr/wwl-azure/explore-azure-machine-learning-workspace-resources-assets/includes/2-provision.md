@@ -77,7 +77,7 @@ Finally, if the built-in roles aren't meeting your needs, you can create a custo
 
 ## Organize your workspaces
 
-Initially, you may only work with one workspace. However, when working on large-scale projects, you may choose to use multiple workspaces.
+Initially, you might only work with one workspace. However, when working on large-scale projects, you may choose to use multiple workspaces.
 
 You can use workspaces to group machine learning assets based on projects, deployment environments (for example, test and production), teams, or some other organizing principle. 
 
