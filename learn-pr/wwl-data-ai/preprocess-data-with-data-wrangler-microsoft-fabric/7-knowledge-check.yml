@@ -37,12 +37,12 @@ quiz:
       explanation: Incorrect. The correct way to launch Data Wrangler from a notebook is by using the "Data" tab under the notebook ribbon.
     - content: By double-clicking on the DataFrame.
       isCorrect: false
-      explanation: Incorrect. Double-clicking on the DataFrame will not launch Data Wrangler.
+      explanation: Incorrect. Double-clicking on the DataFrame won't launch Data Wrangler.
   - content: What is the purpose of one-hot encoding in machine learning?
     choices:
     - content: To handle missing values in the dataset.
       isCorrect: false
-      explanation: Incorrect. One-hot encoding does not handle missing values. It's used for converting categorical data.
+      explanation: Incorrect. One-hot encoding doesn't handle missing values. It's used for converting categorical data.
     - content: To convert categorical data into a format that can be provided to machine learning algorithms to improve prediction accuracy.
       isCorrect: true
       explanation: Correct. One-hot encoding is a process of converting categorical data variables so they can be provided to machine learning algorithms to improve prediction accuracy.
