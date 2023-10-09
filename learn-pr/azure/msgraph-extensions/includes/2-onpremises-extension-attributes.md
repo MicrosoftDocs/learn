@@ -42,7 +42,7 @@ The **onPremisesExtensionAttributes** property isn't returned by default. You mu
 
 <a name='other-azure-ad-scenarios-for-the-custom-data'></a>
 
-## Other Microsoft Entra scenarios for the custom data
+## Other Microsoft Entra ID scenarios for the custom data
 
 Although you'll use the extension attribute properties to store data that's required by the team-bonding app, Microsoft Entra ID also supports the following use cases for the custom data:
 

@@ -78,6 +78,6 @@ Schema extension properties support both the `$select` and `$filter` (`eq` and `
 
 <a name='other-azure-ad-scenarios-for-custom-data'></a>
 
-## Other Microsoft Entra scenarios for custom data
+## Other Microsoft Entra ID scenarios for custom data
 
 Schema extension properties and the data they store aren't supported by any additional Microsoft Entra scenarios. However, you can use the extensions and their data to support other app-specific scenarios for your organization.

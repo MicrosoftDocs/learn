@@ -73,6 +73,6 @@ HTTP/1.1 204 No Content
 
 <a name='other-azure-ad-scenarios-for-custom-data'></a>
 
-### Other Microsoft Entra scenarios for custom data
+### Other Microsoft Entra ID scenarios for custom data
 
 Open extensions and the data that the extensions store aren't supported by any other Microsoft Entra scenarios. However, you can use the extensions and their data to support other custom app-specific scenarios for your organization.

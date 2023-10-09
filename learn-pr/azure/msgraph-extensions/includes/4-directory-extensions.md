@@ -36,7 +36,7 @@ Directory extension properties support both the `$select` and `$filter` (`eq` an
 
 <a name='other-azure-ad-scenarios-for-the-custom-data'></a>
 
-## Other Microsoft Entra scenarios for the custom data
+## Other Microsoft Entra ID scenarios for the custom data
 
 Similar to extension attributes in the previous unit, Microsoft Entra ID also supports the following other use cases for directory extension properties:
 

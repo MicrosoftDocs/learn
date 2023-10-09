@@ -1,5 +1,5 @@
 
-Microsoft Graph provides a single API endpoint to access data across Microsoft cloud services such as Microsoft 365, Microsoft Entra ID, and Windows. In addition, Microsoft Graph supports *extensions* as a lightweight option for adding custom properties and using them to store app-specific data.
+Microsoft Graph provides a single API endpoint to access data across Microsoft cloud services such as Microsoft 365, Microsoft Entra, and Windows. In addition, Microsoft Graph supports *extensions* as a lightweight option for adding custom properties and using them to store app-specific data.
 
 ## Example scenario
 
