@@ -4,12 +4,10 @@ title: Design patterns for Azure network connectivity services
 metadata:
   title: Design patterns for Azure network connectivity services
   description: "Design patterns for Azure network connectivity services"
-  ms.date: 10/06/2023
+  ms.date: 10/09/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/3-design-patterns-for-azure-network-connectivity-services.md)]
