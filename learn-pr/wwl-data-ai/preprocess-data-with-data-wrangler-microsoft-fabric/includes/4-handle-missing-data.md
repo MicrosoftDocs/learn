@@ -31,9 +31,9 @@ To check for missing data in Data Wrangler, you need to first launch Data Wrangl
 
 :::image type="content" border="false" source="../media/2-data-wrangler-dashboard.png" alt-text="Screenshot of how to check missing data information in Data Wrangler.":::
 
-1. **Column header -** Shows the count and proportion of missing values for each variable at the top of the grid.
-2. **Summary panel-** Highlights the summary statistics for the selected column or dataframe, including missing values.
-3. **Filter operator -** Filters rows based on one or more conditions. This option is also available in the column header when you select **More options** for the column.
+1. **Column header:** Shows the count and proportion of missing values for each variable at the top of the grid.
+2. **Summary panel:** Highlights the summary statistics for the selected column or dataframe, including missing values.
+3. **Filter operator:** Filters rows based on one or more conditions. This option is also available in the column header when you select **More options** for the column.
 
 ## Handling missing data
 

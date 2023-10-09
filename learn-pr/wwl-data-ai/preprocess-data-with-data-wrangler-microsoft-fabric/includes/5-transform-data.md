@@ -60,7 +60,7 @@ data = {
 restaurant = pd.DataFrame(data)
 ```
 
-The following steps show how to use the multi-label binarizer operator for the `category` variable.
+Then, the following steps show how to use the multi-label binarizer operator for the `category` variable.
 
 1. Launch Data Wrangler from a Microsoft Fabric notebook for the `restaurant` dataframe.
 

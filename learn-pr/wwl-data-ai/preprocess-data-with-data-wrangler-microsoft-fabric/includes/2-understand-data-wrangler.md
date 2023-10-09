@@ -40,11 +40,8 @@ To launch Data Wrangler in Microsoft Fabric, follow these steps.
 
     :::image type="content" border="false" source="../media/2-data-wrangler-option.gif" alt-text="Animated GIF showing multiple dataframes to open in Data Wrangler.":::
 
-### Use Data Wrangler extension in Visual Studio Code
-
-Data Wrangler is also integrated into VS Code and VS Code Jupyter Notebooks. 
-
-Add some screenshots, just 1 or 2.
+> [!Tip]
+> The [Data Wrangler Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.datawrangler) allows for the integration of Data Wrangler into both VS Code and VS Code Jupyter Notebooks.
 
 ## Work with operators
 
