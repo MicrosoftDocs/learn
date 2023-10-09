@@ -12,8 +12,7 @@ VM insights provides the following benefits beyond other features for monitoring
 - Pre-defined trending performance charts and workbooks, so that you can analyze core performance metrics from the virtual machine's guest operating system.
 - The Dependency map, which displays processes that run on each virtual machine and the interconnected components with other machines and external sources.
 
-:::image type="content" source="../media/insights-unit-3.png" alt-text="Screenshot showing Performance tab in VM Insights displaying data for a VM and the processes Dependency map for that VM." border="true":::
-
+:::image type="content" source="../media/insights-unit-3.png" alt-text="Screenshot showing Performance tab in VM Insights displaying data for a VM and the processes Dependency map for that VM." lightbox="../media/insights-unit-3.png" :::
 ## Enable VM insights
 
 To enable VM Insights, select Insights from your virtual machine's menu in the Azure portal. If VM insights isn't enabled, you see a short description of it and an option to enable it. 
@@ -80,8 +79,7 @@ If you have more than one Log Analytics workspace, choose the workspace that's e
 
 The Group selector returns subscriptions, resource groups, computer groups, and virtual machine scale sets of computers that are related to the selected workspace. Your selection applies only to the Map feature and doesn't carry over to Performance or Health.
 
-:::image type="content" source="../media/monitor-map-unit-3.png" alt-text="Screenshot of Map feature in Azure Monitor, displaying a global view of VMs and their dependencies." border="true":::
-
+:::image type="content" source="../media/monitor-map-unit-3.png" alt-text="Screenshot of Map feature in Azure Monitor, displaying a global view of VMs and their dependencies." lightbox="../media/monitor-map-unit-3.png" :::
 
 
 
