@@ -1,5 +1,3 @@
-
-
 ## Scenario
 
 In addition to your SAP architect responsibilities for your company's Azure IaaS solutions in compute, storage, and networking, there are other aspects of deploying SAP-based solutions in Azure. You also are responsible for identity services, remote management, and governance and manageability.
