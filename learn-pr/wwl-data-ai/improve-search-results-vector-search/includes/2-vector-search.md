@@ -26,4 +26,4 @@ There are a few limitations when using vector search, which you should note:
 - There are storage limitations applicable so you should check what your service quota provides.
 
 > [!NOTE]
-> If your documents are larger than the maximum (), you should use chunking. For more information: [Chunking large documents for vector search solutions in Cognitive Search](/azure/search/vector-search-how-to-chunk-documents)
+> If your documents are large, you consider chunking. Use the [Chunking large documents for vector search solutions in Cognitive Search](/azure/search/vector-search-how-to-chunk-documents) documentation for more information.
