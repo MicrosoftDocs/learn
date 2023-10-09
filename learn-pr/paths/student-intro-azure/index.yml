@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.student-intro-azure
+metadata:
+  title: Introduction to Azure
+  description: In this path, you will learn a variety of Azure fundamentals, including cloud concepts, core Azure services, useful tools and programs and more.
+  brand: azure
+  ms.date: 10/09/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Introduction to Azure
+summary: |
+
+  In this learning path, you will:
+    - Learn about cloud concepts.
+    - Understand how you can use various tools to work with apps
+    - Leverage program benefits you can apply to your own projects
+
+prerequisites: none
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- student
+products:
+- azure
+subjects:
+- cloud-computing
+modules:
+- learn.student-introduction-to-azure
+- learn.student-evangelism.student-introduction-github
+
+trophy:
+  uid: learn.student-intro-azure.trophy
