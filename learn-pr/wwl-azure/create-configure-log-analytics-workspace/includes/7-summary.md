@@ -1,4 +1,4 @@
-Azure Monitor collects log data and stores it in tables. Administrators use Log Analytics in the Azure portal to configure their input data sources and conduct queries for their Azure Monitor logs. In this module you learned how to create a Log analytics workspace, how to configure access to the workspace including the details of the built in Log Analytics RBAC roles, how to configure data retention for a Log Analytics workspace as well as how to configure Health Status Alerts for a Log Analytics Workspace.
+Azure Monitor collects log data and stores it in tables. Administrators use Log Analytics in the Azure portal to configure their input data sources and conduct queries for their Azure Monitor logs. In this module you learned how to create a Log analytics workspace, how to configure access to the workspace including the details of the built-in Log Analytics RBAC roles, how to configure data retention for a Log Analytics workspace as well as how to configure Health Status Alerts for a Log Analytics Workspace.
 
 ## Learn more
 You can learn more by reviewing the following documents:
