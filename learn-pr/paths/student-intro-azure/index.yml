@@ -2,7 +2,7 @@
 uid: learn.student-intro-azure
 metadata:
   title: Introduction to Azure
-  description: In this path, you will learn a variety of Azure fundamentals, including cloud concepts, core Azure services, useful tools and programs and more.
+  description: In this path, you'll learn various Azure fundamentals, including cloud concepts, core Azure services, useful tools and programs and more. If you're a beginner, this path is for you.
   brand: azure
   ms.date: 10/09/2023
   author: softchris
@@ -16,7 +16,7 @@ summary: |
   In this learning path, you will:
     - Learn about cloud concepts.
     - Understand how you can use various tools to work with apps
-    - Leverage program benefits you can apply to your own projects
+    - Use program benefits you can apply to your own projects
 
 prerequisites: none
 iconUrl: /training/achievements/generic-trophy.svg
