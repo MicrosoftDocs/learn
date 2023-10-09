@@ -7,6 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
+  ms.custom:
+  - N/A
   ms.devlang: csharp
 title: Implement the Visual Studio Code debugging tools for C#
 summary: Learn how to effectively debug C# programs in Visual Studio Code using breakpoints and the other debugging tools, such as resources in the RUN AND DEBUG view.
