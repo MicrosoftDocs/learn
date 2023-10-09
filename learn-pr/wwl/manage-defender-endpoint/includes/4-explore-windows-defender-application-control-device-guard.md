@@ -1,4 +1,3 @@
-
 With thousands of new malicious files created every day, using traditional methods like antivirus solutions—signature-based detection to fight against malware—provides an inadequate defense against new attacks. Application Control and Device Guard provide an extra layer of protection against unknown threats.
 
 ### Windows Defender Application Control
