@@ -1,5 +1,3 @@
-
-
 A common backup scheduling strategy described in the HANA Administration guide involves the following backups:
 
 - Storage snapshot (daily)

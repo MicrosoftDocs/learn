@@ -1,5 +1,3 @@
-
-
 A file-snapshot backup consists of a set of Azure snapshots of the blobs that contain database files and a backup file containing pointers to these file-snapshots. Each file-snapshot is stored in the container with the base blob. You can specify that the backup file itself to be written to URL, disk, or tape. File-snapshot backup to URL is recommended.
 
 You can use this approach for both full database and transaction log backups:

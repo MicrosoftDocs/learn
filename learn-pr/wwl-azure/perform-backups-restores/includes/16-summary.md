@@ -1,5 +1,3 @@
-
-
 Now you have:
 
 - Explored backup and restore of Azure virtual machines.

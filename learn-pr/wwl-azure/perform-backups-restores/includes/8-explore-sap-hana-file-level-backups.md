@@ -1,5 +1,3 @@
-
-
 ## SAP HANA backup with the Azure Backup service
 
 The backups (log and non-log) in SAP HANA Azure VMs provided via Backint are streams to Azure Recovery Services vaults (which internally use Azure Storage Blob) and so it is important to understand this streaming methodology.

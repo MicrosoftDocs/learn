@@ -1,5 +1,3 @@
-
-
 Creating an Azure Storage account within your Azure subscription is the first step in this process. SQL Server can either use the Azure storage account name and its access key value to authenticate and write and read blobs to the Microsoft Azure Blob storage service or use a Shared Access Signature token granting read and write permissions to individual containers. The SQL Server Credential stores this authentication information and uses it during the backup or restore operations.
 
 To implement SQL Server Backup to URL, you can use the following methods:

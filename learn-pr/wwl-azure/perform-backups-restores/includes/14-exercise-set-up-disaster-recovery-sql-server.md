@@ -1,5 +1,3 @@
-
-
 Now we will explore how to protect the SQL Server back end of an application using a combination of SQL Server business continuity and disaster recovery (BCDR) technologies and Azure Site Recovery.
 
 SQL Server can be deployed in many ways:
@@ -17,61 +15,12 @@ This process uses the following native SQL disaster recovery technologies for re
 
 Site Recovery can protect SQL Server as summarized in the table.
 
-:::row:::
-  :::column:::
-    **Scenario**
-  :::column-end:::
-  :::column:::
-    **To a secondary site**
-  :::column-end:::
-  :::column:::
-    **To Azure**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Hyper-V
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    VMware
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Physical server
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Azure
-  :::column-end:::
-  :::column:::
-    NA
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
+| **Scenario** | **To a secondary site** | **To Azure** |
+|---|---|---|
+| Hyper-V | Yes | Yes |
+| VMware | Yes | Yes |
+| Physical server | Yes | Yes |
+| Azure | NA | Yes |
 
 ## Supported SQL Server versions
 
@@ -87,61 +36,12 @@ The following SQL Server versions are supported, for the supported scenarios:
 
 Site Recovery can be integrated with native SQL Server BCDR technologies summarized in the table, to provide a disaster recovery solution.
 
-:::row:::
-  :::column:::
-    **Feature**
-  :::column-end:::
-  :::column:::
-    **Feature Details**
-  :::column-end:::
-  :::column:::
-    **SQL Server**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Always On availability group
-  :::column-end:::
-  :::column:::
-    Multiple standalone instances of SQL Server each run in a failover cluster that has multiple nodes. Databases can be grouped into failover groups that can be copied (mirrored) on SQL Server instances so that no shared storage is needed. Provides disaster recovery between a primary site and one or more secondary sites. Two nodes can be set up in a shared nothing cluster with SQL Server databases configured in an availability group with synchronous replication and automatic failover.
-  :::column-end:::
-  :::column:::
-    SQL Server (all supported versions)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Failover clustering (Always On FCI)
-  :::column-end:::
-  :::column:::
-    SQL Server uses Windows failover clustering for high availability of on-premises SQL Server workloads. Nodes running instances of SQL Server with shared disks are configured in a failover cluster. If an instance is down the cluster fails over to a different one. The cluster doesn't protect against failure or outages in shared storage. The shared disk can be implemented with iSCSI, fiber channel, or shared VHDXs.
-  :::column-end:::
-  :::column:::
-    SQL Server (all supported versions)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Database mirroring (high safety mode)
-  :::column-end:::
-  :::column:::
-    Protects a single database to a single secondary copy. Available in both high safety (synchronous) and high performance (asynchronous) replication modes. Doesn’t require a failover cluster.
-  :::column-end:::
-  :::column:::
-    SQL Server (all supported versions)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Standalone SQL Server
-  :::column-end:::
-  :::column:::
-    The SQL Server and database are hosted on a single server (physical or virtual). Host clustering is used for high availability if the server is virtual. No guest-level high availability.
-  :::column-end:::
-  :::column:::
-    Enterprise or Standard edition
-  :::column-end:::
-:::row-end:::
+| **Feature** | **Feature Details** | **SQL Server** |
+|---|---|---|
+| Always On availability group | Multiple standalone instances of SQL Server each run in a failover cluster that has multiple nodes. Databases can be grouped into failover groups that can be copied (mirrored) on SQL Server instances so that no shared storage is needed. Provides disaster recovery between a primary site and one or more secondary sites. Two nodes can be set up in a shared nothing cluster with SQL Server databases configured in an availability group with synchronous replication and automatic failover. | SQL Server (all supported versions) |
+| Failover clustering (Always On FCI) | SQL Server uses Windows failover clustering for high availability of on-premises SQL Server workloads. Nodes running instances of SQL Server with shared disks are configured in a failover cluster. If an instance is down the cluster fails over to a different one. The cluster doesn't protect against failure or outages in shared storage. The shared disk can be implemented with iSCSI, fiber channel, or shared VHDXs. | SQL Server (all supported versions) |
+| Database mirroring (high safety mode) | Protects a single database to a single secondary copy. Available in both high safety (synchronous) and high performance (asynchronous) replication modes. Doesn’t require a failover cluster. | SQL Server (all supported versions) |
+| Standalone SQL Server | The SQL Server and database are hosted on a single server (physical or virtual). Host clustering is used for high availability if the server is virtual. No guest-level high availability. | Enterprise or Standard edition |
 
 ## Deployment prerequisites
 

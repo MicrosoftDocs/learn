@@ -1,5 +1,3 @@
-
-
 SAP HANA on Azure VMs can be backed up by using the following two methods:
 
 - HANA backup to the file system in an Azure Linux VM
