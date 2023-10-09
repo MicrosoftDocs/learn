@@ -1,5 +1,3 @@
-
-
 ## SQL Server disaster recovery
 
 To facilitate disaster recovery when using SQL Server, you can configure Always On availability group on Azure VMs in different regions, as described at [Configure a SQL Server Always On availability group across different Azure regions](/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multiple-regions?view=azuresql). Another commonly used configuration that provides disaster recovery capabilities is log shipping.
