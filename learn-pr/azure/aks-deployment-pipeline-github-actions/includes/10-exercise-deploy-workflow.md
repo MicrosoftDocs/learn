@@ -221,10 +221,10 @@ You've added secrets, but they have no value. Let's assign them by creating a se
 
     ```json
       {
-        "appId": "<client_id",
-        "displayName": "<generated_name>",
-        "password": "<secret>",
-        "tenant": "<tenant__id>"
+        "appId": <client_id>,
+        "displayName": <generated-display-name>,
+        "password": <secret>,
+        "tenant": <tenant_id>
       }
     ```
 
