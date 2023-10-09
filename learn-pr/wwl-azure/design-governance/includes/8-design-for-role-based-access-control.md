@@ -24,7 +24,7 @@ You have a plan for how to apply Azure Policy settings to your Tailwind Traders 
 
    :::image type="content" source="../media/role-definition-assignment-scope.png" alt-text="Diagram that shows how a role definition is assigned to a resource and then scoped." border="false":::
 
-- **Consider the access needs for each user**. As you plan your access control strategy, it's a best practice to grant users the least privilege they need to get their work done. This method makes it easier to separate team member responsibilities. By limiting roles and scopes, you limit what resources are at risk if a security principal is ever compromised. You can create a diagram like the following example to help plan your Azure RBAC roles for Tailwind Traders. 
+- **Consider the access needs for each user**. As you plan your access control strategy, it's a best practice to grant users the least privilege they need to get their work done. This method makes it easier to separate team member responsibilities. By limiting roles and scopes, you limit what resources are at risk if a security principle is ever compromised. You can create a diagram like the following example to help plan your Azure RBAC roles for Tailwind Traders. 
 
    :::image type="content" source="../media/scope-role-matrix.png" alt-text="Diagram that shows how to plan roles of different scope levels within the organization." border="false":::
 
