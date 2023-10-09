@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.summary
+uid: learn.wwl.configure-scaling-azure-kubernetes-service.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
   ms.date: 10/06/2023
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.service: synapse-analytics
-durationInMinutes: 1
+  ms.prod: azure
+durationInMinutes: 2
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/9-summary.md)]
