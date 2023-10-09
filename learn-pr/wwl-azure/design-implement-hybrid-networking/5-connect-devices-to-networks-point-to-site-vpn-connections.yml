@@ -36,4 +36,4 @@ quiz:
       explanation: "Incorrect, An Active Directory Domain Controller alone isn't sufficient. Another type of server is required."
     - content: "DNS server"
       isCorrect: false
-      explanation: "Incorrect, A DNS server may be required for name resolution, but it isn't sufficient for authentication."
+      explanation: "Incorrect, A DNS server might be required for name resolution, but it isn't sufficient for authentication."
