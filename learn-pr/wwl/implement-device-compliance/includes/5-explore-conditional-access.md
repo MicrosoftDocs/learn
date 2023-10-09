@@ -16,7 +16,7 @@ A conditional access policy is a definition of an access scenario using the **Wh
 
 These two conditions are mandatory in a conditional access policy. In addition to the two mandatory conditions, you can also include other conditions that describe how the access attempt is performed. Common examples are using mobile devices or locations that are outside your company network.
 
- -  **Then do this**. Defines the response of the policy. With a conditional access policy, you control how authorized users (users that have been granted access to a cloud app) can access cloud apps under specific conditions. In your response, you enforce other requirements such as multi-factor authentication, a managed device, and others. In the context of conditional access, the requirements the policy enforces are called access controls. In the most restrictive form, your policy can block access.
+ -  **Then do this**. Defines the response of the policy. With a conditional access policy, you control how authorized users (users that have been granted access to a cloud app) can access cloud apps under specific conditions. In your response, you enforce other requirements such as multifactor authentication, a managed device, and others. In the context of conditional access, the requirements the policy enforces are called access controls. In the most restrictive form, your policy can block access.
 
 Conditional access is especially beneficial in certain scenarios.
 
