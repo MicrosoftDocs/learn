@@ -1,15 +1,11 @@
-Microsoft provides expert migration and modernization guidance, plus assistance via programs for customers and partners. You can accelerate Azure deployments while building cloud skills and learning from Azure engineers.
-
-The following programs are available to support your Azure migration:
-
-- FastTrack for Azure
-- Azure Expert managed service providers (MSPs)
-
-:::image type="content" source="../media/path-to-cloud.png" alt-text="Diagram showing the path to the Cloud Programs.":::
 
 ## Azure Migration and Modernize and Azure Innovate
 
-The [Azure Migration and Modernization Program (AMMP)](https://azure.microsoft.com/migration/migration-modernization-program/) helps you simplify your journey to the cloud.  Wherever you are in your journey, Azure Migrate and modernize can help accelerate your progress. The program offers proactive guidance and the right mix of expert help at every stage to ensure you can migrate and modernize applications, infrastructure, and databases with confidence. All customers can access resources, partners, and tools such as free migration tools, step-by-step technical guidance, training and help in finding a migration partner.  
+The Azure Migrate and modernize (formerly known as Azure Migration and modernization program (AMMP)) and Azure Innovate are two new offerings to help you simplify your journey to cloud. Both offerings provide proactive guidance and the right mix of expert help at every stage of your cloud journey.
+
+Azure Migrate and modernize will help you migrate and modernize applications, infrastructure, and database to the cloud. Azure innovate is a new offering designed to help you with your advanced innovation needs such as infusing AI into your apps and experiences, advanced analytics, and building custom cloud native application.
+ 
+All customers can access curated resources and frameworks, help from advanced specialized partners and tools such as Azure Migrate, and Azure cost management, step-by-step technical guidance, low cost or no cost skilling.
 
 Here are some of the benefits available from Azure Migrate and Modernize and Azure Innovate:
 
