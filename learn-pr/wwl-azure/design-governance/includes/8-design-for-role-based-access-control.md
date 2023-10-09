@@ -20,7 +20,7 @@ Suppose you need to manage access to resources in Azure for Tailwind Traders Dev
 
 You have a plan for how to apply Azure Policy settings to your Tailwind Traders applications. Now consider how to integrate Azure RBAC to control user privileges and resource access.
 
-- **Consider the highest scope level for each requirement**. Your first step is to accurately define each role definition and its permissions. Next, assign the roles to specific users, groups, and service principals. Lastly, scope the roles to management groups, subscriptions, resource groups, and resources. Assign each role at the highest scope level that meets the requirements.
+- **Consider the highest scope level for each requirement**. Your first step is to accurately define each role definition and its permissions. Next, assign the roles to specific users, groups, and service principles. Lastly, scope the roles to management groups, subscriptions, resource groups, and resources. Assign each role at the highest scope level that meets the requirements.
 
    :::image type="content" source="../media/role-definition-assignment-scope.png" alt-text="Diagram that shows how a role definition is assigned to a resource and then scoped." border="false":::
 
