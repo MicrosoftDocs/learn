@@ -49,13 +49,13 @@ As with any security technology that you implement, centralized management is re
 
  -  Administrators can automate the process of encrypting volumes on client computers across the enterprise.
  -  Security officers can determine the compliance state of individual computers or even of the enterprise itself.
- -  Provides centralized reporting and hardware management with Microsoft Configuration Manager.
+ -  Provides centralized reporting and hardware management with Microsoft Endpoint Configuration Manager.
  -  Reduces help desk workload assisting end users with BitLocker recovery requests.
  -  End users can recover encrypted devices independently by using the Self-Service Portal.
  -  Security officers can audit access to recovery key information.
  -  Windows Enterprise users can continue working anywhere with their corporate data protected.
  -  Enforces the BitLocker encryption policy options that you set for your enterprise.
- -  Integrates with existing management tools, such as Microsoft Configuration Manager.
+ -  Integrates with existing management tools, such as Endpoint Configuration Manager.
  -  Offers an IT-customizable recovery user experience.
 
 :::image type="content" source="../media/bitlocker-administration-monitoring-b958cc38.png" alt-text="Screenshot of Microsoft MBAM prompting for the KeyID and reason for recovering access to an encrypted drive.":::
