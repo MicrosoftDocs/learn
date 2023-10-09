@@ -31,7 +31,7 @@ The following ServiceTypes are available:
     
     LoadBalancer creates an Azure load balancer resource, configures an external IP address, and connects the requested pods to the load balancer backend pool. To allow customers' traffic to reach the application, load balancing rules are created on the desired ports.
     
-    :::image type="content" source="../media/kubernetes-loadbalancer-cluster-5e119e22.png" alt-text="Diagram showing Load Balancer traffic flow in an AKS cluster.":::
+    :::image type="content" source="../media/kubernetes-load-balancer-cluster-1ba6c92c.png" alt-text="Diagram showing Load Balancer traffic flow in an AKS cluster.":::
     
     
     For extra control and routing of the inbound traffic, you may instead use an [Ingress controller](/azure/aks/concepts-network#ingress-controllers).
@@ -58,10 +58,10 @@ In AKS, you can deploy a cluster that uses one of the following network models:
 
 The *kubenet* networking option is the default configuration for AKS cluster creation. With *kubenet*:
 
-1.  Nodes receive an IP address from the Azure virtual network subnet.
-2.  Pods receive an IP address from a logically different address space than the nodes' Azure virtual network subnet.
-3.  Network address translation (NAT) is then configured so that the pods can reach resources on the Azure virtual network.
-4.  The source IP address of the traffic is translated to the node's primary IP address.
+ -  Nodes receive an IP address from the Azure virtual network subnet.
+ -  Pods receive an IP address from a logically different address space than the nodes' Azure virtual network subnet.
+ -  Network address translation (NAT) is then configured so that the pods can reach resources on the Azure virtual network.
+ -  The source IP address of the traffic is translated to the node's primary IP address.
 
 Nodes use the kubenet Kubernetes plugin. You can let the Azure platform create and configure the virtual networks for you, or choose to deploy your AKS cluster into an existing virtual network subnet.
 
