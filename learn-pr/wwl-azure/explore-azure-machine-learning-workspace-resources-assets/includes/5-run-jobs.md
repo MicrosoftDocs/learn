@@ -1,5 +1,3 @@
-
-
 To train models with the Azure Machine Learning workspace, you have several options:
 
 - Use the **designer** in the Azure Machine Learning studio.

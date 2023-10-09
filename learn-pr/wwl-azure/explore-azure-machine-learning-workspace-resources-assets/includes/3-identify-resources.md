@@ -1,5 +1,3 @@
-
-
 **Resources** in Azure Machine Learning refer to the infrastructure you need to run a machine learning workflow. Ideally, you want someone like an administrator to create and manage the resources. 
 
 The resources in Azure Machine Learning include:
