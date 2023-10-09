@@ -8,7 +8,8 @@ metadata:
   author: steved0x
   ms.author: sdanie
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-devops-pipelines
+  manager: mijacobs
 title: Run quality tests in your build pipeline by using Azure Pipelines
 summary: Set up automated testing in your pipeline to improve code quality.
 abstract: |
@@ -19,7 +20,7 @@ abstract: |
   - Perform code coverage testing to see how much of your code is covered by unit tests.
   - Fix and verify test failures in your build pipeline.
 prerequisites: |
-  - An Azure DevOps organization with access to parallel jobs
+  - An Azure DevOps organization with access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
   - Visual Studio Code
   - .NET 6.0 SDK
   - Git

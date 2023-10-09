@@ -18,7 +18,7 @@ To help move your app through the development, test, and production lifecycle, y
 
     Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
 -->
-Recall that in the sales team dashboard example, managers use an internal web app to manage their direct reports and help them meet their targets.  Managers sign in to the web app and can view confidential information for themselves and the employees that report to them, internal sales goals, and upcoming product release dates.  To better secure access to the sales team dashboard, administrators recently enabled Azure AD Multi-Factor Authentication to prompt users for extra verification information during sign-in. Testing your application in your production Azure AD tenant would be simpler and easier, but can you safely constrain the test application in the production environment?  Will the administrators approve the creation of test users and test data in the production environment?  How can your integration tests use automated sign-ins when user interaction is required (through multi-factor authentication)?
+Testing your application in your production Azure AD tenant would be simpler and easier, but can you safely constrain the test application in the production environment?  Will the administrators approve the creation of test users and test data in the production environment?  How can your integration tests use automated sign-ins when user interaction is required (through multi-factor authentication)?
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
@@ -70,13 +70,4 @@ If any of these restrictions apply, set up a test environment in a separate tena
 
 If none of these restrictions apply, you can set up a test environment in your production tenant. Be aware that global administrators in your production tenant can access its resources and change its configuration at any time. To prevent access to any test resources or configuration, put that data in a separate tenant.
 
-## Deciding to use a dedicated test tenant
-
-After consulting with key stakeholders and reviewing the web app requirements, your team considered these key factors:
-
-- You want to set up a CI/CD pipeline that automates building, testing, and deploying the web app.  Creating test users and test app registrations in the tenant require in the production tenant are high-privilege operations, since they require admin permissions.
-- The administrators reviewed your request for allowing the creation of test users and test data in the production tenant and didn't approve.
-- Multi-factor authentication is required for all users in the production tenant.  Automating sign-ins for integration testing won't be possible.
-- After some investigation, your team decided that the integration tests need to use a non-interactive flow, called Resource Owner Password Credential Grant (ROPC), to automatically sign in users for testing. Microsoft recommends that you *don't* use the ROPC flow in a production environment.
-
-Taking all of these factors into account, your team decides to use a dedicated test tenant for testing the sales team dashboard.
+After consulting with key stakeholders and reviewing the web app requirements, your team decides to use a dedicated test tenant for testing the sales team dashboard.

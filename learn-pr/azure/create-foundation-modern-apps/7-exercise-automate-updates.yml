@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Automate updates with GitHub Actions
   description: Configure GitHub secrets and YAML file. Then, monitor the complete solution.
-  ms.date: 3/17/2021 
+  ms.date: 3/15/2023 
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: interactive-tutorial

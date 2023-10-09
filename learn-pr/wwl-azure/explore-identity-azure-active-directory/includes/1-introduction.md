@@ -17,7 +17,7 @@ In this module, you will:
 - Describe Azure AD architecture and its relationship with Microsoft 365
 - Define an identity provider and identity as a control plane
 - Compare different identity services - Azure AD, Azure AD DS, AD DS
-- Explain Azure AD business-to-busines (B2C) and business-to-customer (B2C)
+- Explain Azure AD business-to-busines (B2B) and business-to-customer (B2C)
 - Review licenses to run an identity solution in the Microsoft Cloud
 
 ### Learning objectives

@@ -8,7 +8,7 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: bicep
 title: Manage changes to your Bicep code by using Git
 summary: |
   Track of changes to your Bicep code and view the history of the files you've changed. Use branches to develop multiple versions of your code at the same time. Publish your repository to support collaboration.

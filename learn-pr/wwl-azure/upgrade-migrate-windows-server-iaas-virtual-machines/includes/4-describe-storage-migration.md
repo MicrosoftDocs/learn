@@ -30,13 +30,13 @@ The destination servers assume the source servers' former identities so that app
 To use Storage Migration Service, you need the following:
 
 - A source server or failover cluster from which to migrate files and data.
-- A destination server running Windows Server 2019 (clustered or standalone) to migrate to. You can also use Windows Server 2016 or even Windows Server 2012 R2, but both are around 50 percent slower than Windows Server 2019.
-- An Orchestrator server running Windows Server 2019 to manage the migration.
+- A destination server running Windows Server 2019 or Windows Server 2022 (clustered or standalone) to migrate to. You can also use Windows Server 2016 or even Windows Server 2012 R2, but both are around 50 percent slower than Windows Server 2019 or Windows Server 2022.
+- An Orchestrator server running Windows Server 2019 or Windows Server 2022 to manage the migration.
 
 > [!TIP]
-> If you're migrating only a few servers and one of the servers is running Windows Server 2019, you can use that as the Orchestrator. If you're migrating more servers, we recommend using a separate server to function as the Orchestrator server.
+> If you're migrating only a few servers and one of the servers is running Windows Server 2019 or Windows Server 2022, you can use that as the Orchestrator. If you're migrating more servers, we recommend using a separate server to function as the Orchestrator server.
 
-- A PC or server running WAC to run the Storage Migration Service user interface, unless you prefer using Windows PowerShell to manage the migration. The WAC and Windows Server 2019 version must both be at least version 1809.
+- A PC or server running WAC to run the Storage Migration Service user interface, unless you prefer using Windows PowerShell to manage the migration. 
 
 > [!NOTE]
 > Microsoft strongly recommends that the Orchestrator and destination computers have at least two cores or two virtual CPUs (vCPUs), and at least 2 gigabytes (GB) of memory. Inventory and transfer operations are significantly faster with more processors and memory.
@@ -57,11 +57,11 @@ The following is the security requirements, Storage Migration Service proxy serv
 
 ### Requirements for source servers
 
-The source server must run the Windows Server OS, from Windows Server 2003 to Windows Server 2019. This includes Small Business Server versions. Note, however, that Windows Small Business Server and Windows Server Essentials are domain controllers. Storage Migration Service can't yet cut over from domain controllers, but can inventory and transfer files from them.
+The source server must run the Windows Server OS, from Windows Server 2003 to Windows Server 2022. This includes Small Business Server versions. Note, however, that Windows Small Business Server and Windows Server Essentials are domain controllers. Storage Migration Service can't yet cut over from domain controllers, but can inventory and transfer files from them.
 
 If the Orchestrator is running Windows Server, version 1903 or later, or if the Orchestrator is running an earlier version of Windows Server with KB4512534 installed, you can migrate the following additional source types:
 
-- Failover clusters running Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, or Windows Server 2019
+- Failover clusters running Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, or Windows Server 2022
 - Linux servers that use Samba. The following have been tested:
   - CentOS 7
   - Debian GNU/Linux 8
@@ -75,10 +75,11 @@ If the Orchestrator is running Windows Server, version 1903 or later, or if the 
 The destination server must run one of the following operating systems:
 
 - Windows Server, Semi-Annual Channel
+- Windows Server 2022
 - Windows Server 2019
 - Windows Server 2016
 - Windows Server 2012 R2
 
 ## Azure VM migration
 
-WAC version 1910 enables you to deploy Azure VMs, and integrate VM deployment into Storage Migration Service. Instead of manually building new servers and VMs in the Azure portal prior to deploying your workload—and possibly missing required steps and configuration—WAC can deploy the Azure VM, configure its storage, join it to your domain, install roles, and then set up your distributed system for you. 
+WAC enables you to deploy Azure VMs, and integrate VM deployment into Storage Migration Service. Instead of manually building new servers and VMs in the Azure portal prior to deploying your workload—and possibly missing required steps and configuration—WAC can deploy the Azure VM, configure its storage, join it to your domain, install roles, and then set up your distributed system for you. 

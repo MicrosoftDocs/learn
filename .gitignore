@@ -17,3 +17,12 @@ _dependentPackages/
 Thumbs.db
 *.bak
 .fake
+
+######################
+# IntelliJ
+######################
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids

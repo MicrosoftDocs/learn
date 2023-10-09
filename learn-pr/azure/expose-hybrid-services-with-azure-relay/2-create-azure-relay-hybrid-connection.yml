@@ -3,7 +3,7 @@ uid: learn.expose-hybrid-services-with-azure-relay.2-create-azure-relay-hybrid-c
 metadata:
   title: Create an Azure Relay hybrid connection
   description: In this unit, you'll learn how Azure Relay can connect an on-premises component to a cloud component, without any network or security policy modifications.
-  ms.date: 02/21/2020
+  ms.date: 04/04/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial

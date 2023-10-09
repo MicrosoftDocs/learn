@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: kusto
 title: Build multi-table statements using KQL
 summary: Learn how to work with multiple tables using KQL.
 abstract: |
@@ -22,7 +22,11 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
+- azure-log-analytics
+subjects:
+  - cloud-security
+  - data-analytics
 units:
 - learn.wwl.build-multi-table-statements-kql.introduction
 - learn.wwl.build-multi-table-statements-kql.use-union-operator

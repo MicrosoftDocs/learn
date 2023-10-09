@@ -1,4 +1,4 @@
-This unit looks at why applications integrate with Azure Active Directory (Azure AD), part of Entra? Add applications to Azure AD to apply one or more of the services it provides, including:
+This unit looks at why applications integrate with Azure Active Directory (Azure AD), part of Entra. Add applications to Azure AD to apply one or more of the services it provides, including:
 
  -  Application authentication and authorization.
  -  User authentication and authorization.
@@ -111,11 +111,11 @@ For more detailed information on the service principal and application objects, 
 
 **Process flow of the diagram**
 
-1. User requests to register an application – a request token is issued.
-1. Authorization endpoint sends back an Authentication.
-1. User consents to have the application registration.
-1. Service is created from the application
-1. Token returned to the user.
+1.  User requests to register an application – a request token is issued.
+2.  Authorization endpoint sends back an Authentication.
+3.  User consents to have the application registration.
+4.  Service is created from the application
+5.  Token returned to the user.
 
 ## Who has permission to add applications to my Azure AD instance?
 

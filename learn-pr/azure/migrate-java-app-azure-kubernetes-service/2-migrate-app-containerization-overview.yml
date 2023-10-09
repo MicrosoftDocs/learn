@@ -4,9 +4,11 @@ metadata:
   title: Azure Migrate App Containerization overview
   description: Provides an overview of Azure Migrate App Containerization feature
   ms.date: 09/01/2021
-  author: rahug1190
-  ms.author: rahugup
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
   ms.prod: learning-azure
 title: Azure Migrate App Containerization overview
 durationInMinutes: 4

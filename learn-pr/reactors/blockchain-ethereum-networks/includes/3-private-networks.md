@@ -31,7 +31,7 @@ Besu runs, maintains, debugs, and monitors nodes in an Ethereum network. The API
 
 Besu is a popular Ethereum client. It's unique it can be used in either public networks or private, consortium-based networks. 
 
-Besu can be deployed in various [ways](https://besu.hyperledger.org/en/stable/HowTo/Get-Started/Installation-Options/Install-Binaries/?azure-portal=true). For more information about configuring and deploying, see the [Hyperledger Besu website](https://besu.hyperledger.org/en/latest/Tutorials/Examples/Private-Network-Example/?azure-portal=true).
+Besu can be deployed in various [ways](https://besu.hyperledger.org/development/public-networks?azure-portal=true). For more information about configuring and deploying, see the [Hyperledger Besu website](https://besu.hyperledger.org).
 
 
 ### R3 Corda
@@ -42,6 +42,6 @@ The [Corda platform](https://www.r3.com/corda-platform/?azure-portal=true) is a 
 
 In Ethereum, client applications play a pivotal role in the transaction lifecycle. The client application obtains the signing keys and transactions before the identities are submitted to the nodes.
 
-In the Corda platform, the client applications (commonly called [*CorDapps*](https://docs.corda.net/docs/corda-os/4.7/cordapp-overview.html?azure-portal=true)), live completely **on** the Corda nodes. The key and transaction signing identities exist only on the nodes and not with the client. Client applications trigger the workflow that's registered on the target Corda node, and monitor the workflow progression.
+In the Corda platform, the client applications (commonly called [*CorDapps*](https://docs.r3.com/en/platform/corda/4.9/enterprise/cordapps/cordapp-overview.html?azure-portal=true)), live completely **on** the Corda nodes. The key and transaction signing identities exist only on the nodes and not with the client. Client applications trigger the workflow that's registered on the target Corda node, and monitor the workflow progression.
 
 A [Corda Visual Studio Code extension](https://github.com/corda/vscode-corda?azure-portal=true) supports Corda development. To install the extension, in Visual Studio Code, select the **Extensions** icon. Then enter *Corda* to find and install the extension.

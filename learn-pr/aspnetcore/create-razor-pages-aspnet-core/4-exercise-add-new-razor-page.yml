@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-razor-pages-aspnet-core.4-exercise-add-new-razor-page
+title: Exercise - Add a new Razor Page
+metadata:
+  title: Exercise - Add a new Razor Page
+  description: "Add a new Razor Page to the app and link to it from the nav menu."
+  ms.date: 5/10/2023
+  author: camsoper
+  ms.author: casoper
+  ms.manager: markl
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-add-new-razor-page.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.explore-assessment-options
+title: Explore assessment options for database migration
+metadata:
+  title: Explore assessment tools for database migration
+  description: "Explore assessment options to identify potential issues that might impact the migration process to a new platform or version."
+  ms.date: 05/23/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-explore-assessment-options.md)]

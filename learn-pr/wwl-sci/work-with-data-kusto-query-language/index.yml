@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: microsoft-sentinel
 title: Work with data in Microsoft Sentinel using Kusto Query Language
 summary: Learn how to use the Kusto Query Language (KQL) to manipulate string data ingested from log sources.
 abstract: |
@@ -22,9 +22,11 @@ levels:
 roles:
 - security-operations-analyst
 products:
-- azure-sentinel
+- microsoft-sentinel
+- azure-log-analytics
+- azure
 subjects:
-- data-engineering
+- data-analytics
 units:
 - learn.wwl.work-with-data-kql.introduction
 - learn.wwl.work-with-data-kql.extract-data-from-unstructured-string-fields

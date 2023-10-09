@@ -4,15 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge about Python string methods and formatting.
-  ms.date: 12/02/2021
+  ms.date: 06/02/2023
   author: alfredodeza
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 durationInMinutes: 3
 content: |
 quiz:
+  title: Check your knowledge
   questions:
   - content: "Are strings immutable?"
     choices:
@@ -63,7 +66,7 @@ quiz:
     - content: "When many replacements are needed, it can make a program slower."
       isCorrect: false
       explanation: "Incorrect. Although `%` formatting isn't the fastest, slowness isn't a result of the replacements."
-    - content: "When many replacements are needed, it can make the code harder to read."
+    - content: "The code can be harder to read when many replacements are needed."
       isCorrect: true
       explanation: "Correct! Using `%` can become verbose with many replacements."
     - content: "It isn't possible to replace more than nine variables."

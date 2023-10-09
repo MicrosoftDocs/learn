@@ -1,3 +1,5 @@
+
+
 Besides the deployment considerations described earlier, manual single-instance implementation is straightforward and does not differ significantly from the process applicable to on-premises deployments:
 
 - For NetWeaver AnyDB deployments, you can follow the standard (2-tier) or distributed (3-tier) NetWeaver installation options in **SAP Software Provisioning Manager (SWPM)**.

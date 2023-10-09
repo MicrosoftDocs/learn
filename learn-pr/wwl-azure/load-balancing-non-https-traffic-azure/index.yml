@@ -2,16 +2,18 @@
 uid: learn.wwl.load-balancing-non-https-traffic-azure
 metadata:
   title: Load balance non-HTTP(S) traffic in Azure
-  description: "You will learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic."
-  ms.date: 09/28/2022
+  description: "You learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic."
+  ms.date: 08/21/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom:
+  - references_regions
+  ms.service: load-balancer
 title: Load balance non-HTTP(S) traffic in Azure
-summary: You will learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic.
+summary: You learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic.
 abstract: |
-  At the end of this module, you will be able to:
+  At the end of this module, you are able to:
   - Identify the features and capabilities of Azure Load Balancer
   - Design and implement an Azure Load Balancer
   - Implement a Traffic Manager profile

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.evaluate-security-posture-secure-scores
+title: Posture evaluation with Microsoft Defender for Cloud secure score
+metadata:
+  title: Posture evaluation with Microsoft Defender for Cloud secure score
+  description: "SC-100 preparatory unit on the topic: posture evaluation with Microsoft Defender for Cloud secure score."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-evaluate-security-posture-secure-scores.md)]

@@ -1,8 +1,8 @@
 The Azure Health Bot service is a cloud platform that empowers developers in healthcare organizations to build and deploy AI-powered virtual health assistants that help them improve processes and services.
 
-As a developer in the IT department of a healthcare organization, you want to build a health bot that triages patient issues with a symptom checker and gives patients chat support from live agents.
+As a developer in the IT department of a healthcare organization, you want to build a health bot. This bot triages patient issues with a symptom checker and gives patients chat support from live agents.
 
-In this module, you'll use the *triage and handoff* scenario template to build a health bot that extends the built-in symptom checker and transitions the conversation to a live nurse.
+In this module, use the *triage and handoff* scenario template to build a health bot. The template extends the built-in symptom checker and transitions the conversation to a live nurse.
 
 ## Learning objectives
 

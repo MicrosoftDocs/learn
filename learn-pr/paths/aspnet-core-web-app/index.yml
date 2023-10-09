@@ -19,10 +19,8 @@ roles:
   - developer
   - student
 products:
-  - vs
   - dotnet
   - aspnet-core
-  - vs-code
   - azure
 subjects:
 - custom-app-development

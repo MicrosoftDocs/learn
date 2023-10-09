@@ -2,11 +2,11 @@ Disaster recovery drills enable you to test your company's ability to recover fr
 
 After you produce a business continuity and disaster recovery (BCDR) plan, you're prompted to explore the options for how the system can be tested without interrupting live service. You want to learn more about recovery drills, and how they can verify that your Azure Site Recovery solution is set up and works correctly.
 
-In this unit, you'll gain an understanding of recovery time and recovery point objectives. You'll see how you can then use a recovery drill to test that Site Recovery was configured correctly to meet these objectives.
+In this unit, you gain an understanding of recovery time and recovery point objectives. You can then see how to use a recovery drill to test that Site Recovery was configured correctly to meet these objectives.
 
 ## Disaster recovery drill
 
-With Site Recovery, you can do a full disaster recovery test without affecting your existing live environment. Recovery plans are created within Site Recovery to allow the automation of recovery tasks and model an app around its dependencies, such as the need for Active Directory or DNS to function. BCDR plans also allow you to test your disaster recovery.
+With Site Recovery, you can do a full disaster recovery test without affecting your existing live environment. Recovery plans are created within Site Recovery to allow the automation of recovery tasks and to model an app around its dependencies. Such as, as the need for Active Directory or DNS to function. BCDR plans also allow you to test your disaster recovery.
 
 After a BCDR plan is created in the Azure portal, it can be executed for test purposes. Follow these steps:
 
@@ -14,7 +14,7 @@ After a BCDR plan is created in the Azure portal, it can be executed for test pu
 
 1. Select the recovery point from the options presented. Options include **Latest processed**, which is the latest recovery point that was processed by Site Recovery.
 
-1. Select the Azure virtual network on which the virtual machine will be created. Use an isolated network from the live environment to prevent any impact to production environments.
+1. Select the Azure virtual network on which the virtual machine should be created. Use an isolated network from the live environment to prevent any impact to production environments.
 
 1. Track progress in the **Jobs** tab and also in the **Site Recovery** dashboard.
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-environments-azure-machine-learning.create-use-custom-environments
+title: Create and use custom environments
+metadata:
+  title: Create and use custom environments
+  description: "Learn how to create and use custom environments in Azure Machine Learning."
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-create-use-custom-environments.md)]

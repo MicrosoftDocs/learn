@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-microsoft-defender-cloud-apps.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/18/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You're an IT team member responsible for ensuring the security of your organization's cloud applications and services. Your team is planning to implement Microsoft Defender for Cloud Apps. What is the relevance of this solution in today's dynamic work settings?"
+    choices:
+    - content: "Microsoft Defender for Cloud Apps is a robust cloud security solution that helps strike a balance between facilitating access and safeguarding crucial data in today's dynamic work settings."
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender for Cloud Apps is designed to optimize the advantages of cloud applications and services while ensuring the security of your organization's sensitive data. It helps strike a balance between facilitating access and safeguarding crucial data in today's dynamic work settings."
+    - content: "Microsoft Defender for Cloud Apps isn't relevant in today's dynamic work settings."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud Apps is a robust cloud security solution that helps protect your organization's sensitive data from cyber threats. It is highly relevant in today's dynamic work settings where cloud technology is widely used."
+    - content: "Microsoft Defender for Cloud Apps is only relevant for large organizations with complex cloud environments."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud Apps is relevant for organizations of all sizes, regardless of the complexity of their cloud environments. It provides a comprehensive understanding of cloud security and helps improve overall security posture."
+  - content: "Why is a Cloud Access Security Broker (CASB) necessary for organizations using cloud apps?"
+    choices:
+    - content: "CASBs are only necessary for organizations with a few users accessing cloud services."
+      isCorrect: false
+      explanation: "Incorrect. CASBs are necessary for organizations of all sizes that use cloud services to protect against malicious actors and secure sensitive data."
+    - content: "CASBs are only necessary for organizations using IaaS and PaaS cloud services."
+      isCorrect: false
+      explanation: "Incorrect. CASBs are necessary for organizations using all types of cloud services, including SaaS, PaaS, and IaaS."
+    - content: "CASBs are necessary to tackle the unique challenges of securing cloud environments, including IAM, VMs, compute resources, data and storage, and network resources."
+      isCorrect: true
+      explanation: "Correct. CASBs provide a broad range of capabilities that safeguard cloud environments across multiple pillars, including visibility, data security, threat protection, and compliance."
+  - content: "As a security administrator, what is the prerequisite to set up Microsoft Defender for Cloud Apps?"
+    choices:
+    - content: "A license for Office 365 productivity suite"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud Apps is a security tool and doesn't require Office 365 productivity suite licenses."
+    - content: "A license for every user protected by Microsoft Defender for Cloud Apps"
+      isCorrect: true
+      explanation: "Correct. In order for your organization to be in compliance for licensing Microsoft Defender for Cloud Apps, you must obtain a license for every user protected by Microsoft Defender for Cloud Apps."
+    - content: "A license for every user in the organization"
+      isCorrect: false
+      explanation: "Incorrect. In order for your organization to be in compliance for licensing Microsoft Defender for Cloud Apps, you must obtain a license for every user protected by Microsoft Defender for Cloud Apps."
+  - content: "What is the purpose of connecting an app in Microsoft Defender for Cloud Apps?"
+    choices:
+    - content: "To decrease visibility so you can investigate activities, files, and accounts for the apps in your cloud environment"
+      isCorrect: false
+      explanation: "Incorrect. Connecting an app increases visibility so you can investigate activities, files, and accounts for the apps in your cloud environment."
+    - content: "To gain deeper visibility so you can investigate activities, files, and accounts for the apps in your cloud environment"
+      isCorrect: true
+      explanation: "Correct. Connecting an app enables you to gain deeper visibility so you can investigate activities, files, and accounts for the apps in your cloud environment."
+    - content: "To increase the number of apps in your cloud environment"
+      isCorrect: false
+      explanation: "Incorrect. Connecting an app does not increase the number of apps in your cloud environment."

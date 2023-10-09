@@ -6,10 +6,10 @@ metadata:
   description: Learn how Agile can offer a better approach to software development through some of its guiding principles.
   ms.date: 06/22/2022
   ms.custom: devdivchpfy22
-  author: kathrynee
-  ms.author: kaelli
+  author: chcomley
+  ms.author: chcomley
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-agile.md)]

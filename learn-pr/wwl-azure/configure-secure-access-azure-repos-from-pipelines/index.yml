@@ -1,0 +1,61 @@
+### YamlMime:Module
+uid: learn.wwl.configure-secure-access-azure-repos-from-pipelines
+metadata:
+  title: Configure secure access to Azure Repos from pipelines
+  description: "Configure secure access to Azure Repos from pipelines."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure secure access to Azure Repos from pipelines
+summary: "This module is designed to help learners understand the importance of securing access to Azure Repos from pipelines and how to do it using Azure DevOps. The module covers fundamental concepts and best practices for securing access to packages, credential secrets, secrets for services, and Azure Key Vault."
+abstract: |
+  In this module, you practice how to:
+    - Configure pipeline access to packages.
+    - Configure credential secrets, and secrets for services.
+    - Ensure that the secrets are in the Azure Key Vault.
+    - Ensure that secrets aren't in the logs.
+prerequisites: |
+  - Basic knowledge of Azure Pipelines and YAML.
+  - Basic knowledge of security concepts like Azure Key Vault and permissions.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - solution-architect
+  - student
+  - support-engineer
+products:
+  - azure
+  - azure-artifacts
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+subjects:
+  - devops
+  - cloud-computing
+  - cloud-security
+  - key-management
+  - information-protection-governance
+  - identity-access
+  - compliance
+units:
+- learn.wwl.configure-secure-access-azure-repos-from-pipelines.introduction
+- learn.wwl.configure-secure-access-azure-repos-from-pipelines.configure-pipeline-access-packages
+- learn.wwl.configure-secure-access-azure-repos-from-pipelines.configure-pipeline-access-credential-secrets
+- learn.wwl.configure-secure-access-azure-repos-from-pipelines.configure-pipeline-access-secrets-services
+- learn.wwl.configure-secure-access-azure-repos-from-pipelines.use-azure-key-vault-secure-secrets
+- learn.wwl.configure-secure-access-azure-repos-from-pipelines.explore-secure-log-files
+- learn.wwl.configure-secure-access-azure-repos-from-pipelines.lab-integrate-azure-key-vault-with-azure-pipelines
+- learn.wwl.configure-secure-access-azure-repos-from-pipelines.knowledge-check
+- learn.wwl.configure-secure-access-azure-repos-from-pipelines.summary
+badge:
+  uid: learn.wwl.configure-secure-access-azure-repos-from-pipelines.badge

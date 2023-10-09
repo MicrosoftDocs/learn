@@ -11,25 +11,23 @@ While this module focuses on the core tasks that are required to build and deplo
 After completing this module, you'll be able to:
 
 - Create Azure resources to support a Docker container web application.
-- Update a basic release pipeline to build, publish, and deploy a Docker container.
-- Monitor the build, release, and deployment of your project.
+- Use YAML pipeline to build, publish, and deploy a Docker container.
+- Monitor the build and deployment of your project.
 
 ## Prerequisites
 
-The modules in this learning path form a progression. To follow the progression from the beginning, be sure to first complete these learning paths:
+The modules in this learning path form a progression. If you want to follow the progression from the beginning, complete the following learning paths:
 
-* [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
-* [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
+- [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
+- [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 
-We also recommend you start at the beginning of this learning path: [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true). This module picks up where [Create a release pipeline in Azure Pipelines](/training/modules/create-release-pipeline/?azure-portal=true) leaves off.
+This module assumes you have basic familiarity with Docker, although that knowledge isn't required to complete it. If you're new to the topic, it's recommended that you complete the [Introduction to Docker containers](/training/modules/intro-to-docker-containers/?azure-portal=true) module first.
 
 [!include[](../../shared/includes/project-details-note.md)]
 
-This module also assumes you have basic familiarity with Docker, although that knowledge isn't required to complete it. If you're new to the topic, it's recommended that you complete the [Introduction to Docker containers](/training/modules/intro-to-docker-containers/?azure-portal=true) module first.
-
 ## Meet the team
 
-You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+You met the *Space Game* web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
 
 :::row:::
 

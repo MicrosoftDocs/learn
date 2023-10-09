@@ -26,7 +26,7 @@ quiz:
     - content: "Both RDP and SSH"
       isCorrect: true
       explanation: "Correct. Administrators typically use both RDP and SSH to remotely administer Azure VMs."
-  - content: "When an administrator connects to Azure Bastion to open a remote connection to a hosted VM, which of the following occurs?"
+  - content: "When an administrator connects to Azure Bastion to open a remote connection to a hosted VM, which of the following connections occurs?"
     choices:
     - content: "Azure Bastion opens an RDP/SSH connection to the Azure VM using a private IP on the VM."
       isCorrect: true
@@ -39,16 +39,16 @@ quiz:
       explanation: "Incorrect. Azure Bastion uses only private IPs on the configured virtual network. The VMs don't need a public IP."
   - content: "When an administrator plans to deploy Azure Bastion, how and in which virtual network must they deploy it?"
     choices:
-    - content: "They must deploy Azure Bastion in a different virtual network from that which contains the VMs."
+    - content: "They must deploy Azure Bastion in a different virtual network from the one that contains the VMs."
       isCorrect: false
       explanation: "Incorrect. Azure Bastion must be in the same virtual network as the managed VMs."
-    - content: "They must deploy Azure Bastion in the same virtual network as that which contains the VMs, and in the same subnet."
+    - content: "They must deploy Azure Bastion in the same virtual network as the one that contains the VMs, and in the same subnet."
       isCorrect: false
       explanation: "Incorrect. Although Azure Bastion should be deployed in the same virtual network, it must be in a different subnet."
-    - content: "They must deploy Azure Bastion in the same virtual network as that which contains the VMs, and in a different subnet."
+    - content: "They must deploy Azure Bastion in the same virtual network as the one that contains the VMs, and in a different subnet."
       isCorrect: true
       explanation: "Correct. Azure Bastion must be deployed in the same virtual network (or peered virtual network) as the VMs, but in its own subnet."
-  - content: "Your boss is concerned that by implementing Azure Bastion, you'll need to maintain it with patches and updates. Is your boss correct?"
+  - content: "Your boss is concerned that by implementing Azure Bastion, you need to maintain it with patches and updates. Is your boss correct?"
     choices:
     - content: "No, your boss is wrong. Azure Bastion is a fully managed PaaS service that you don't need to patch or update."
       isCorrect: true
@@ -59,7 +59,7 @@ quiz:
     - content: "Yes, your boss is correct. You must periodically patch and update Azure Bastion."
       isCorrect: false
       explanation: "Incorrect. Azure Bastion is a fully managed PaaS service and requires no customer patching or updating."
-  - content: "When deploying Azure Bastion, which of the following require a public IP?"
+  - content: "When you deploy Azure Bastion, which of the following require a public IP?"
     choices:
     - content: "The Azure Bastion host in each virtual network requires a public IP."
       isCorrect: true

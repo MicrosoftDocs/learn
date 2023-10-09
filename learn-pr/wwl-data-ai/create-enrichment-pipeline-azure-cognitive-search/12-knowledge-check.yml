@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -21,7 +21,7 @@ quiz:
     - content: "Create a custom skill that uses an Azure Machine Learning model to predict the sentiment for a document"
       isCorrect: false
       explanation: "Incorrect. There is no need to create a custom skill in this scenario."
-    - content: "Create a custom skill that calls the Text Analytics cognitive service to predict the sentiment of each document."
+    - content: "Create a custom skill that calls the Azure AI Language service to predict the sentiment of each document."
       isCorrect: false
       explanation: "Incorrect. There is no need to create a custom skill in this scenario."
     - content: "Add the built-in Sentiment skill to the skillset used by the indexer."

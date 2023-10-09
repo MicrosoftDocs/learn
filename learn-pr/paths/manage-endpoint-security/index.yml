@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-endpoint-security
+metadata:
+  title: MD-102 Manage endpoint security
+  description: In this learning path, students will learn about data protection and protecting endpoints against threats. This path will also cover the key capabilities of Microsoft Defender solutions.
+  ms.date: 04/04/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: MD-102 Manage endpoint security
+prerequisites: |
+  Students should have:
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+summary: |
+  In this learning path, students will learn about data protection and protecting endpoints against threats. This path will also cover the key capabilities of Microsoft Defender solutions.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+modules:
+- learn.wwl.deploy-device-data-protection
+- learn.wwl.manage-defender-endpoint
+- learn.wwl.manage-defender-windows-client
+- learn.wwl.manage-microsoft-defender-cloud-apps
+trophy:
+  uid: learn.wwl.manage-endpoint-security.trophy

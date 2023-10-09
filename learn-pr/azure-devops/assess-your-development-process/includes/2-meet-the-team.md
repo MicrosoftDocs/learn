@@ -1,8 +1,8 @@
 DevOps has many features and tools to help a team collaborate and improve its processes. Your journey through DevOps begins with an introduction to our fictitious software team members, who are discovering that they need to improve their release process.
 
-Tailspin Toys, or Tailspin for short, is a video game company. Tailspin hosts its game servers and websites in an on-premises datacenter. The company just celebrated the release of a new racing game. They'll be releasing a space shooter game, called _Space Game_, in the coming months.
+Tailspin Toys, or Tailspin for short, is a video game company. Tailspin hosts its game servers and websites in an on-premises datacenter. The company just celebrated the release of a new racing game. They'll be releasing a space shooter game called _Space Game_ in the coming months.
 
-The team that you'll be working with builds websites to support new game titles. These websites provide information about the game, ways to get it, and leaderboards that show top scores. Each website must go live the same day the game is released, which requires coordination among the teams and puts some extra pressure on the web team.
+The team with which you'll be working builds websites to support new game titles. These websites provide information about the game, ways to get it, and leaderboards that show top scores. Each website must go live the same day the game is released, which requires coordination among the teams and puts some extra pressure on the web team.
 
 The _Space Game_ website is a .NET app written in C# that's deployed to Linux. The website isn't finished yet, but here's what it looks like right now:
 
@@ -18,9 +18,6 @@ And here's what the leaderboard looks like:
 You can filter the leaderboard by mode or by game map. You can also select a player's name to see their profile and game achievements:
 
 :::image type="content" source="../media/2-player-profile.png" alt-text="Screenshot of the Space Game website showing the top player's profile information.":::
-
-> [!NOTE]
-> Although the game and the website aren't finished yet, you can [check out the website now](https://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) to get a sense of how it works.
 
 Here are your team members:
 
@@ -38,7 +35,7 @@ Here are your team members:
 
 ## Good morning
 
-Irwin, the team's product manager, has called everyone into a meeting, and he's in a bad mood. The leaderboard for the racing game was updated with several new features and he showed it at a local gaming group. Players' reactions were disappointing, to say the least. He reads off a list of the top problems:
+Irwin—the team's product manager—has called everyone into a meeting, and he's in a bad mood. The leaderboard for the racing game was updated with several new features and he showed it at a local gaming group. Players' reactions were disappointing, to say the least. He reads off a list of the top problems:
 
 * Some features work correctly for only some game modes.
 * Updating the leaderboard takes too long, even with a few players.

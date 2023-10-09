@@ -1,3 +1,5 @@
+
+
 ## Compute
 
 Azure provides the ability to change the size of your virtual machine (VM) based on the required CPU, network, or disk performance. Resizing is important for temporary performance needs like upgrades and migrations.

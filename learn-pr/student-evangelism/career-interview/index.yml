@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Successful interviewing
 summary: In this module, you'll learn how to prepare for technical and
@@ -24,7 +23,7 @@ levels:
 roles:
   - developer
 products:
-  - vs
+  - azure
 prerequisites: None
 units:
   - learn.career-interview.1-introduction

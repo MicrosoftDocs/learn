@@ -1,3 +1,4 @@
+
 Microsoft Sentinel is your tool to hunt and investigate potential breaches in your Azure solutions.
 
 You should be able to:

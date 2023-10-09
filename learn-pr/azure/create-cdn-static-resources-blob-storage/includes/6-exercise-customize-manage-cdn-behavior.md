@@ -1,4 +1,4 @@
-In this exercise, you'll configure CDN settings to help optimize and control the delivery of content.
+In this exercise, configure CDN settings to help optimize and control the delivery of content.
 
 ### Verify the CDN delivered page
 
@@ -36,7 +36,7 @@ If you haven't already, verify the CDN is delivering the same content as your so
 
 1. Switch to the browser tab displaying the origin server link, and refresh the page. The page should update immediately.
 
-1. Switch to the browser tab displaying the CDN cached copy of the website, and refresh the page. The updated text won't appear.
+1. Switch to the browser tab displaying the CDN cached copy of the website, and refresh the page. The updated text doesn't appear.
 
 1. Switch to the copy of the Azure portal showing the CDN endpoint settings, and select the **Purge** button.
 

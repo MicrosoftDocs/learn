@@ -7,7 +7,13 @@ The distributed tracing tool is available from the ASE on which the packet core 
 > [!IMPORTANT]
 > To effectively diagnose issues in your private mobile network, you need to be familiar with the network functions that Azure Private 5G Core provides. For more information about the network functions, see [Packet core architecture](/azure/private-5g-core/private-5g-core-overview#packet-core-architecture).
 
-<!-- Insert an issue debugging video here once it is available -->
+If you can't find the root cause of an issue with the distributed tracing tool, Azure Private 5G Core allows you to [collect a diagnostics package](#collect-and-share-a-diagnostics-package) from the relevant site. The package can then be used by Azure support engineers to assist you. In addition, Azure Private 5G Core allows you to use the [*UPF Trace (UPFT)* tool](#perform-data-plane-packet-capture) to do data plane packet analysis.
+
+## Video: Issue diagnosis
+
+The following video provides an overview of how to diagnose issues in Azure Private 5G Core:
+
+> [!VIDEO 9c711355-a0a0-460a-b9e9-28ceee39d603]
 
 ## Access the distributed tracing tool
 
@@ -17,11 +23,9 @@ The URL for accessing the distributed tracing tool is as follows:
 
 Here *\<`LocalMonitoringIP`\>* is the IP address for accessing the local monitoring tools that you set up when you configure the management network during Azure Private 5G Core deployment.
 
-<!-- Need to verify if the AAD feature will be delivered for GA -->
-
 Azure Private 5G Core provides two authentication methods for the distributed tracing tool:
 
-- Azure active directory (AD): The Azure AD method allows users to sign in with their Azure accounts.
+- Azure active directory (AD): The [Azure AD method](/azure/private-5g-core/enable-azure-active-directory) allows users to sign in with their Azure accounts.
 - Username and password: The username/password method allows users to sign in with a default account.
 
 Whenever possible, use the Azure AD method, as it's more secure. Only use the username and password method when you don't have a stable connection to Azure. You can choose your preferred authentication method when you deploy or modify a site. For detailed instructions on configuring and using these authentication methods, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
@@ -46,7 +50,7 @@ For detailed instructions on using these views, see [Distributed tracing](/azure
 
 ## Search for specific information
 
-To find the root cause of a network issue, you'll need to find signal flows or errors involving a particular subscriber. The distributed tracing tool allows you to search for activities involving a particular subscriber using their subscription permanent identifier (SUPI) or, in 4G networks, their international mobile subscriber identity (IMSI). For errors, the tool allows you to search for error condition occurrences across all subscribers.
+To find the root cause of a network issue, you need to find signal flows or errors involving a particular subscriber. The distributed tracing tool allows you to search for activities involving a particular subscriber using their subscription permanent identifier (SUPI) or, in 4G networks, their international mobile subscriber identity (IMSI). For errors, the tool allows you to search for error condition occurrences across all subscribers.
 
 In addition, the distributed tracing tool allows you to use a date/time range to specify a custom time window in which to search for diagnostics data.
 
@@ -81,7 +85,7 @@ To find the root cause of this communication issue, you can take the following s
 
 ## Collect and share information for technical support
 
-If you can't find the root cause of an issue, you may need Microsoft technical support to help you. In this case, you'll need to collect necessary diagnostics information and share it with Microsoft support personnel.
+If you can't find the root cause of an issue, you may need Microsoft technical support to help you. In this case, you need to collect necessary diagnostics information and share it with Microsoft support personnel.
 
 You can use one of the following methods to collect the diagnostics information:
 
@@ -110,17 +114,29 @@ For detailed instructions on exporting a trace and sharing the exported trace fi
 
 ### Collect and share a diagnostics package
 
-<!-- Need to check if this feature is delivered for GA before the publication of this module -->
-
 Azure Private 5G Core allows you to use the Azure portal to collect a diagnostics package from a site. You can enable package collection either when you create a site or when you edit a site.
 
-To enable diagnostics package collection, you'll need to specify the following information:
+To enable diagnostics package collection, you need to specify the following information:
 
 - A storage account for storing your diagnostics package.
 - A managed identity that has the write access to the storage account.
 
   Azure Private 5G Core uses this identity to upload the collected package to your specified storage account.
 
-Once package collection is enabled, you can use the **Collect Diagnostics Package** link on the overview page of the relevant site resource to trigger package collection. After the collection is completed, share the package access Uniform Resource Identifier (URI) with Microsoft support personnel.
+Once package collection is enabled, you can use the **Diagnostics collection** menu of the relevant **Packet Core Control Plane** resource to trigger package collection. After the collection is completed, share the package access Uniform Resource Identifier (URI) with Microsoft support personnel.
 
-For details about diagnostics package collection, see relevant information in the [Azure Private 5G Core documentation](/azure/private-5g-core/).
+For details about diagnostics package collection, see [Gather diagnostics using the Azure portal](/azure/private-5g-core/gather-diagnostics).
+
+## Perform data plane packet capture
+
+Azure Private 5G Core provides a data plane packet capture tool, UPFT, which allows you to capture data plane packets for analysis purposes. You can use UPFT to capture packets on any user plane interface on the access network or data network.
+
+UPFT works together with *tcpdump*, a data-network packet analyzer program, for packet capturing.
+
+To perform packet capture, take these steps:
+
+1. Enter the UPF-PP troubleshooter pod in the Azure Arc-enabled Kubernetes cluster.
+1. Run `upftdump` to capture the packets. This command runs `tcpdump` automatically.
+1. Move the generated output file to a location where you want to do packet analysis.
+
+For detailed instructions about packet capturing, see [Perform data plane packet capture for a packet core instance](/azure/private-5g-core/data-plane-packet-capture).

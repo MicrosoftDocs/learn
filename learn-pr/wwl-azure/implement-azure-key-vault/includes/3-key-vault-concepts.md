@@ -19,7 +19,7 @@ Perfect Forward Secrecy (PFS) protects connections between customers’ client s
 
 ## Azure Key Vault best practices
 
-* **Use separate key vaults:** Recommended to use a vault per application per environment (Development, Pre-Production and Production). This helps you not share secrets across environments and also reduces the threat in case of a breach.
+* **Use separate key vaults:** Recommended using a vault per application per environment (Development, Pre-Production and Production). This pattern helps you not share secrets across environments and also reduces the threat if there is a breach.
 
 * **Control access to your vault:** Key Vault data is sensitive and business critical, you need to secure access to your key vaults by allowing only authorized applications and users.
 

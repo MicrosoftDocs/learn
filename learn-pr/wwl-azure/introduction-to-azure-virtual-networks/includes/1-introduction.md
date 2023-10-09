@@ -8,8 +8,8 @@ In this module, you will:
  -  Configure public IP services
  -  Design and implement name resolution
  -  Design and implement cross-VNET connectivity
- -  Design and implement an Azure Virtual Network NAT
  -  Implement virtual network routing
+ -  Design and implement an Azure Virtual Network NAT
 
 ## Prerequisites
 

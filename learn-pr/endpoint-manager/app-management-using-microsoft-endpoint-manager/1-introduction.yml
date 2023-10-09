@@ -3,12 +3,12 @@ uid: learn.app-management-using-microsoft-endpoint-manager.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Learn about managing apps with Microsoft Endpoint Manager. 
+  description: Learn about managing apps with Microsoft Intune. 
   ms.date: 02/11/2021
   author: ErikRe
   ms.author: erikre
   ms.topic: interactive-tutorial
   ms.prod: learning-endpoint-manager
-durationInMinutes: 16
+durationInMinutes: 25
 content: |
   [!include[](includes/1-introduction.md)]

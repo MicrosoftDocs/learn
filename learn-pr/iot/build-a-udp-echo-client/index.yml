@@ -4,11 +4,11 @@ metadata:
   title: Building and running a UDP echo client
   description: Building and running a UDP echo client
   ms.date: 01/23/2023
-  author: edlamie80
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 title: Building and running a UDP echo client
 summary: Design, build, and run a UDP echo client.
 abstract: |
@@ -29,6 +29,7 @@ products:
   - azure
   - azure-iot
   - azure-iot-hub
+  - azure-rtos
 units:
   - learn.iot.build-a-udp-echo-client.overview
   - learn.iot.build-a-udp-echo-client.sending-and-receiving-udp-packets

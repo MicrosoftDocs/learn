@@ -1,3 +1,4 @@
+
 Azure Virtual Network peering lets you connect virtual networks in a hub and spoke topology. Virtual Network peering is a cost-effective and easy to configure solution for connecting your Azure virtual networks.
 
 In this module, you examined usage cases and product features of Azure Virtual Network peering. You learned how to configure your virtual networks to implement Azure VPN Gateway for transit connectivity. You explored how to extend peering by using a hub and spoke network with user-defined routes and service chaining.

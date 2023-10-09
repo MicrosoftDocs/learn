@@ -8,7 +8,6 @@ metadata:
   author: msewaweru      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: eunicewaweru           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
-  ms.prod: learning-azure         # Edit as appropriate for your portfolio area
 ###########################################################################
 ###
 ### Do not edit: title must be "Introduction to (product)"

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Write your own documentation
   description: Add documentation comments to newly written code and learn how they can help.
   ms.date: 09/19/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: bradben
+  ms.author: brbenefield
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

@@ -3,7 +3,7 @@ uid: learn.azure.access-blob-storage-metrics-from-code.2-connect-to-storage-metr
 title: Connect to Azure Storage metrics in Azure Monitor
 metadata:
   title: Connect to Azure Storage metrics in Azure Monitor
-  description: In this unit, you will learn how Azure Storage accounts store metrics in Azure Monitor and how to examine those metrics by using the REST API.
+  description: In this unit, you learn how Azure Storage accounts store metrics in Azure Monitor and how to examine those metrics by using the REST API.
   ms.date: 04/11/2019
   author: normesta
   ms.author: normesta
@@ -22,13 +22,13 @@ quiz:
       explanation: "Azure Storage accounts place metrics in Azure Monitor and you can access them with the Azure Monitor APIs. You can use the REST API in your application because Ruby on Rails can submit REST requests and process the results."
     - content: "The Azure Monitor .NET API"
       isCorrect: false
-      explanation: "Although you must use an Azure Monitor API to access the metrics, you cannot use the .NET API in a Ruby on Rails application. Instead, use the Azure Monitor REST API."
+      explanation: "Although you must use an Azure Monitor API to access the metrics, you can't use the .NET API in a Ruby on Rails application. Instead, use the Azure Monitor REST API."
     - content: "The Azure Storage REST API"
       isCorrect: false
-      explanation: "Because the metrics are stored in Azure Monitor, you cannot use the Azure Storage REST API to access them. Instead, use the Azure Monitor REST API."
+      explanation: "Because the metrics are stored in Azure Monitor, you can't use the Azure Storage REST API to access them. Instead, use the Azure Monitor REST API."
   - content: "You have an existing mobile app written in C# that displays metrics that it retrieves from the $Metric tables in a Storage Account. You want to ensure the app continues to function for the foreseeable future with as little replacement code as possible. What should you do?"
     choices:
-    - content: "Update the mobile app so that it use the Azure Storage REST API to access metrics."
+    - content: "Update the mobile app so that it uses the Azure Storage REST API to access metrics."
       isCorrect: false
       explanation: "You must use an Azure Monitor API to access the most up-to-date metrics, which are stored in Azure Monitor. Classic metrics can be accessed with an Azure Storage API, but those APIs are deprecated and likely to be removed in the future."
     - content: "Update the mobile app so that it uses an Azure Storage .NET API to access metrics."

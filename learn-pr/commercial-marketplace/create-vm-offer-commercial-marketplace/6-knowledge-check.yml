@@ -8,7 +8,7 @@ metadata:
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: marketplace
 durationInMinutes: 3
 quiz:
   title: 'Knowledge check'

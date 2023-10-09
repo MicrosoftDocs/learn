@@ -1,3 +1,5 @@
+
+
 In accordance with the SAP installation manual, Oracle-related files shouldn't be installed or located on the system drive hosting the OS. Virtual machines of varying sizes support different numbers of attached disks.
 
 If you have smaller VMs, we recommend installing/locating Oracle `home`, `stage`, `saptrace`, `saparch`, `sapbackup`, `sapcheck`, or `sapreorg` on the OS disk. These parts of Oracle DBMS components aren't intense on I/O and I/O throughput. This means that the OS disk can handle the I/O requirements. The default size of the OS disk is 127 GB.

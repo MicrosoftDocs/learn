@@ -1,26 +1,23 @@
-In addition to other natural language processing capabilities, Azure Language service enables you to extract custom entities from various files.
+In addition to other natural language processing capabilities, Azure AI Language Service enables you to extract custom entities from various files.
 
-To test the custom entity extraction, we'll create a model and train it through Language Studio, then use a command line application to test it.
+To test the custom entity extraction, we'll create a model and train it through Azure AI Language Studio, then use a command line application to test it.
 
-## Create a *Language service* resource
+## Create an *Azure AI Language Service* resource
 
-To use custom entity recognition, you'll need to create an Azure Language service resource and select **Custom text classification & extraction** custom feature.
+To use custom entity recognition, you'll need to create an Azure AI Language Service resource and select **Custom text classification & extraction** custom feature.
 
-If you haven't already done so, create a **Language service** resource in your Azure subscription.
+If you haven't already done so, create an **Azure AI Language Service** resource in your Azure subscription.
 
 1. In a browser, open the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in with your Microsoft account.
-2. Select the **Create a resource** button, search for *Language*, and create a **Language service** resource. When asked about *Additional features*, select **Custom text classification & extraction**. Create the resource with the following settings:
+2. Select the **Create a resource** button, search for *Language*, and create an **Azure AI Language Service** resource. When asked about *Additional features*, select **Custom text classification & extraction**. Create the resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
     - **Region**: *Choose any available region*:
     - **Name**: *Enter a unique name*.
     - **Pricing tier**: Standard S pricing tier
-    - **Storage account**: Create new
-      - **Name**: CustomNER
-      - **Account kind**: Storage (general purpose v1)
-      - **Performance**: Standard
-      - **Replication**: Locally redundant storage (LRS)
-    - **Legal terms**: Selected.
+    - **Storage account**: New storage account
+      - **Storage account name**: *Enter a unique name*.
+      - **Storage account type**: Standard LRS
     - **Responsible AI notice**: Selected.
 
     > [!TIP]
@@ -28,20 +25,20 @@ If you haven't already done so, create a **Language service** resource in your A
 
 3. Review and create the resource.
 
-### Get Language resource key and endpoint
+### Get Azure AI Language resource key and endpoint
 
-1. Navigate to the resource group in the [Azure portal](https://portal.azure.com?azure-portal=true), and select the Language resource
+1. Navigate to the resource group in the [Azure portal](https://portal.azure.com?azure-portal=true), and select the Azure AI Language resource
 2. Select **Keys and Endpoint** from the menu on the left side, located under **Resource Management**. You can copy it to your clipboard with the icon next to the key. We'll need one of the keys and the endpoint later, so either paste these values into Notepad for now or we'll come back to this page at that time.
 
 ## Upload sample ads
 
-After you've created the language service and storage account, you'll need to upload example ads to train your model later.
+After you've created the Azure AI Language Service and storage account, you'll need to upload example ads to train your model later.
 
 1. [Download sample classified ads](https://aka.ms/entity-extraction-ads) from this repo on GitHub. Extract the files from the `.zip` provided.
 
 2. In the [Azure portal](https://portal.azure.com?azure-portal=true), navigate to the storage account you created, and select it
 
-3. In your storage account, select **Containers** from the left menu, located below **Data storage**. On the screen that appears, select **+ Container**. Give the container a name `customNER`, and set **Public access level** to *Container (anonymous read access for containers and blobs)*.
+3. In your storage account, select **Containers** from the left menu, located below **Data storage**. On the screen that appears, select **+ Container**. Give the container a name `customner`, and set **Public access level** to *Container (anonymous read access for containers and blobs)*.
 
     > [!NOTE]
     > When you configure a storage account outside of this module, be careful to assign the appropriate access level. To learn more about each access level, see the [docs on Azure Storage](/azure/storage/blobs/anonymous-read-access-configure).
@@ -55,19 +52,19 @@ Once configuration is complete, create a custom named entity recognition project
 > [!NOTE]
 > You can also create, build, train, and deploy your model through the REST API
 
-1. Log into the [Language Studio](https://aka.ms/languageStudio) with your Azure account, and select the Azure subscription that you created your Language resource in, and select your Language resource
+1. Log into the [Azure AI Language Studio](https://aka.ms/languageStudio) with your Azure account, and select the Azure subscription that you created your Azure AI Language resource in, and select your Azure AI Language resource
 
     > [!NOTE]
-    > If you've previously logged into Language Studio, it's already linked to your previous Language resource. When creating the project in the following steps, be sure to switch that project to the correct resource.
+    > If you've previously logged into Azure AI Language Studio, it's already linked to your previous Azure AI Language resource. When creating the project in the following steps, be sure to switch that project to the correct resource.
 
 2. Under the **Extract information** section, select **Custom named entity recognition**
 3. Select **Create new project**
 4. In the **Create a project** pop out, choose the following and create your project:
-    - **Connect storage**: *This  value is likely already filled. Change resource to* CustomNER *if it isn't already*
+    - **Connect storage**: *This  value is likely already filled. Change resource to* customner *if it isn't already*
     - **Name**: customNERLab
     - **Description**: *Enter short description*
     - **Text primary language**: English (US)
-    - **Blob store container**: customNER
+    - **Blob store container**: customner
     - **Are your files labeled with classes?**: No, I need to label my files as part of this project
 
 ## Label your data
@@ -88,13 +85,13 @@ Now that your project is created, you need to label your data to train your mode
 
 After you've labeled your data, you need to train your model.
 
-1. Select **Train model** on the left side menu
-2. Click **Start a training job**
-3. Enter a name `ExtractAds`
-4. Choose **Automatically split the testing set from training data**
+1. Select **Training jobs** on the left side menu
+3. Click **Start a training job**
+4. Enter a name `ExtractAds`
+5. Choose **Automatically split the testing set from training data**
 
     > [!TIP]
-    > In your own extraction projects, use the testing split that best suits your data. For more consistent data and larger datasets, the Language service will automatically split the testing set by percentage. With smaller datasets, it's important to train with the right variety of possible input documents.
+    > In your own extraction projects, use the testing split that best suits your data. For more consistent data and larger datasets, the Azure AI Language Service will automatically split the testing set by percentage. With smaller datasets, it's important to train with the right variety of possible input documents.
 
 5. Click **Train**
 
@@ -105,20 +102,19 @@ After you've labeled your data, you need to train your model.
 
 In real world applications, it's important to evaluate and improve your model to verify it's performing as you expect. Two pages on the left show you the details of your trained model, and any testing that failed.
 
-1. Select **View model details** and select your `ExtractAds` model. There you can see the scoring of your model, performance metrics, and when it was trained. You'll be able to see if any testing documents failed, and these failures help you understand where to improve.
-2. Select **Improve model**. Your model is already selected in the drop-down, and it defaults to show incorrect predictions only. Toggle that selection to see the documents you indicated for testing and what was extracted.
+1. Select **Model performance** on the left side menu, and select your `ExtractAds` model. There you can see the scoring of your model, performance metrics, and when it was trained. You'll be able to see if any testing documents failed, and these failures help you understand where to improve.
 
 ## Deploy your model
 
 When you're satisfied with the training of your model, it's time to deploy it, which allows you to start extracting entities through the API.
 
-1. On the left panel, select **Deploying model**
+1. On the left panel, select **Deploying a model**
 2. Select **Add deployment**, then enter the name `customExtractAds` and select `ExtractAds` from the model drop-down
-3. Click **Submit** to deploy your model
+3. Click **Deploy** to deploy your model
 
 ## Send entity recognition task to your model
 
-To test the text analytics capabilities of the Language service, we'll use a short command-line application that runs in the Cloud Shell on Azure.
+To test the text analytics capabilities of the Azure AI Language Service, we'll use a short command-line application that runs in the Cloud Shell on Azure.
 
 ### Run Cloud Shell
 
@@ -138,7 +134,7 @@ To test the text analytics capabilities of the Language service, we'll use a sho
 
 ### Configure and run PowerShell
 
-Now that you have a custom model, you can run a client application that uses the Language service.
+Now that you have a custom model, you can run a client application that uses the Azure AI Language Service.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-language.
 
@@ -159,10 +155,10 @@ Now that you have a custom model, you can run a client application that uses the
     code extract-entities.ps1
     ```
 
-3. In `extract-entities.ps1`, note the top two lines of the script with places for your Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key` and `$endpoint` with your resource values (`$projectName`, and `$modelName` should match what you entered above), and save the file.
+3. In `extract-entities.ps1`, note the top two lines of the script with places for your Azure AI Language Service key and endpoint, as well as your project and model names. Replace the placeholders for `$key` and `$endpoint` with your resource values (`$projectName`, and `$modelName` should match what you entered above), and save the file.
 
     > [!TIP]
-    > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true), find the Language resource you created earlier, and select the **Keys and endpoint** page on the left
+    > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true), find the Azure AI Language resource you created earlier, and select the **Keys and endpoint** page on the left
 
 4. Run the following command to call your model and extract the entities from the test file. Review the output.
 
@@ -181,4 +177,4 @@ Now that you have a custom model, you can run a client application that uses the
 
 ## Clean up
 
-When you don't need your project anymore, you can delete if from your **Projects** page in Language Studio. You can also remove the Language service and associated storage account in the [Azure portal](https://portal.azure.com?azure-portal=true).
+When you don't need your project anymore, you can delete if from your **Projects** page in Azure AI Language Studio. You can also remove the Azure AI Language Service and associated storage account in the [Azure portal](https://portal.azure.com?azure-portal=true).

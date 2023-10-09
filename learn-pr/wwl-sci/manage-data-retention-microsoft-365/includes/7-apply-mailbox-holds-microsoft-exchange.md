@@ -7,7 +7,7 @@ There are two different types of mailbox holds in Exchange Online:
 - **eDiscovery Hold**: Created in an eDiscovery case to prevent only mailbox content that matches the search criteria from being changed or deleted.
 
 > [!NOTE]
-> The hold in context of an eDiscovery case was once available in the Exchange admin center and could be applied to any mailbox, even without a case connected. The creation of new in-place holds was retried in October 2020 and only existing in-place holds can be removed now from Exchange Online. 
+> The hold in context of an eDiscovery case was once available in the Exchange admin center and could be applied to any mailbox, even without a case connected. The creation of new in-place holds was retired in October 2020 and only existing in-place holds can be removed now from Exchange Online.
 
 ## Apply a litigation hold
 

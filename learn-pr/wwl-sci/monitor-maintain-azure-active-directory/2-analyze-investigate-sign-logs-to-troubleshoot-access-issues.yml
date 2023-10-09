@@ -4,11 +4,11 @@ title: Analyze and investigate sign-in logs to troubleshoot access issues
 metadata:
   title: Analyze and investigate sign-in logs to troubleshoot access issues
   description: "Analyze and investigate sign-in logs to troubleshoot access issues"
-  ms.date: 02/07/2023
+  ms.date: 02/16/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

@@ -21,22 +21,22 @@ quiz:
     choices:
     - content: "Key Vault."
       isCorrect: true
-      explanation: "That's correct. Azure Stack Hub supports virtual machines, App Service web apps, API apps, and functions, Key Vault, SQL and MySQL databases, containers, Event Hubs, IoT Hubs, Service Fabric clusters and Kubernetes clusters."
+      explanation: "Correct. Azure Stack Hub supports virtual machines, App Service web apps, API apps, and functions. It also supports, Key Vault, SQL and MySQL databases, containers, Event Hubs, IoT Hubs, Service Fabric clusters and Kubernetes clusters."
     - content: "Cosmos DB."
       isCorrect: false
-      explanation: "That's incorrect. Cosmos DB is currently supported in Azure only."
+      explanation: "Incorrect. Cosmos DB is currently supported in Azure only."
     - content: "Traffic Manager."
       isCorrect: false
-      explanation: "That's incorrect. Traffic Manager is supported in Azure only."
+      explanation: "Incorrect. Traffic Manager is supported in Azure only."
 
-  - content: "Which of the following is the benefit of Azure Stack Hub?"
+  - content: "Which of the following benefits is provided by Azure Stack Hub?"
     choices:
     - content: "No need for infrastructure updates."
       isCorrect: false
-      explanation: "That's incorrect. Azure Stack Hub requires infrastructure updates."
+      explanation: "Incorrect. Azure Stack Hub requires infrastructure updates."
     - content: "A highly customizable infrastructure."
       isCorrect: false
-      explanation: "That's incorrect. Azure Stack Hub infrastructure is not highly customizable."
-    - content: "Support for Azure Resource Manager deployment model."
+      explanation: "Incorrect. Azure Stack Hub infrastructure isn't highly customizable."
+    - content: "Support for the Azure Resource Manager deployment model."
       isCorrect: true
-      explanation: "That's correct. Azure Stack Hub supports Azure Resource Manager deployment model."
+      explanation: "Correct. Azure Stack Hub supports the Azure Resource Manager deployment model."

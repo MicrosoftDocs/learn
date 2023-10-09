@@ -1,7 +1,7 @@
 You can think of the steps to train and evaluate a clustering machine learning model as: 
-1. **Prepare data**: Identify the features and label in a dataset. Pre-process, or clean and transform, the data as needed.   
+1. **Prepare data**: Identify the features in a dataset. Pre-process, or clean and transform, the data as needed.   
 2. **Train model**: Split the data into two groups, a training and a validation set. Train a machine learning model using the training data set. Test the machine learning model for performance using the validation data set. 
-3. **Evaluate performance**: 
+3. **Evaluate performance**: These metrics can help data scientists assess how well the model separates the clusters.
 4. **Deploy a predictive service**: After you train a machine learning model, you need to convert the training pipeline into a real-time inference pipeline. Then you can deploy the model as an application on a server or device so that others can use it. 
 
 Let's follow these four steps as they appear in Azure Designer. 
@@ -48,7 +48,7 @@ You have the ability to deploy a service that can be used in real-time. In order
 #### Inference pipeline 
 To deploy your pipeline, you must first convert the training pipeline into a real-time inference pipeline. This process removes training components and adds web service inputs and outputs to handle requests.
 
-The inference pipeline performs the same data transformations as the first pipeline for *new* data. Then it uses the trained model to *infer*, or predict, label values based on its features. This model will form the basis for a predictive service that you can publish for applications to use.
+The inference pipeline performs the same data transformations as the first pipeline for *new* data. Then it uses the trained model to *infer*, or predict, clusters based on its features. This model will form the basis for a predictive service that you can publish for applications to use.
 
 You can create an inference pipeline by selecting the menu above a completed job. 
 ![Screenshot of the inference pipeline options in the jobs pane.](../media/inference-pipeline-example.png)

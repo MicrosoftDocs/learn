@@ -3,12 +3,11 @@ uid: learn.tensorflow.intro-machine-learning-tensorflow.tensors-variables
 title: Tensors and variables
 metadata:
   title: Tensors and variables
-  description: Learn about TensorFlow's tensors and variables
-  ms.date: 07/07/2021
+  description: Learn about basic TensorFlow concepts like tensors and variables.
+  ms.date: 07/24/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial
-  ms.prod: learning-tensorflow
   ms.product: learning-tensorflow
   ms.contributors: bstollnitz-08202021
   ms.custom: team=cloud_advocates

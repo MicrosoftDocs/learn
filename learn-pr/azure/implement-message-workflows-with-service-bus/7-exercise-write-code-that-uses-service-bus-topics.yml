@@ -4,7 +4,7 @@ title: Exercise - Send and receive messages by using a topic
 metadata:
   title: Exercise - Send and receive messages by using a topic
   description: Write code that sends messages to a topic and receives messages from a subscription to the topic.
-  ms.date: 11/15/2022
+  ms.date: 04/04/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial

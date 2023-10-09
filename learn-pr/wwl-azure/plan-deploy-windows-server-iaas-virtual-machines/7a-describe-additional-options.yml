@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-deploy-windows-server-iaas-vms.describe-additional-options
+title: Describe additional management optimization options
+metadata:
+  title: Describe additional management optimization options
+  description: "Describe additional management optimization options"
+  ms.date: 02/08/2023
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/7a-describe-additional-options.md)]

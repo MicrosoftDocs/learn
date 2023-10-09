@@ -1,6 +1,6 @@
-Modules are independent Bicep files. They typically contain sets of resources that are deployed together. Modules can be consumed from any other Bicep template. 
+Modules are independent Bicep files. They typically contain sets of resources that are deployed together. Modules can be consumed from any other Bicep template.
 
-By using modules, you can reuse your Bicep code easily, and you can make your Bicep files more readable and understandable because they're each focused on a specific job. Your main templates then compose multiple modules together.
+By using modules, you can reuse your Bicep code, and you can make your Bicep files more readable and understandable because they're each focused on a specific job. Your main templates then compose multiple modules together.
 
 ## The benefits of modules
 
@@ -41,7 +41,7 @@ Occasionally, you might need to use modules to access certain functionality. For
 
 A module is a normal Bicep file. You'll create it just like you do any other Bicep file.
 
-Generally, it's not a good practice to create a module for every resource that you deploy. A good Bicep module typically defines multiple related resources. However, if you have a particularly complex resource with a lot of configuration, it might make sense to create a single module to encapsulate the complexity. This approach keeps your main templates simple and uncluttered.
+Generally, it's not a good practice to create a module for every resource that you deploy. A good Bicep module typically defines multiple related resources. However, if you have a complex resource with a lot of configuration, it might make sense to create a single module to encapsulate the complexity. This approach keeps your main templates simple and uncluttered.
 
 ### Split an existing Bicep template into modules
 
@@ -49,11 +49,11 @@ You might build up a large Bicep template and then decide that it should be spli
 
 The Bicep visualizer can help you put your whole Bicep file in perspective. The visualizer is included in the Bicep extension for Visual Studio Code.
 
-To view the visualizer, open Visual Studio Code Explorer, select and hold (or right-click) the Bicep file, then select **Open Visualizer**. The visualizer shows a graphical representation of the resources in your Bicep file. It includes lines between resources to show the dependencies that Bicep detects.
+To view the visualizer, open Visual Studio Code Explorer, select and hold (or right-click) the Bicep file, then select **Open Bicep Visualizer**. The visualizer shows a graphical representation of the resources in your Bicep file. It includes lines between resources to show the dependencies that Bicep detects.
 
 You can use the visualizer to help you to split up your files. Consider whether the visualization illustrates any clusters of resources. It might make sense to move these clusters into a module together.
 
-For example, consider the following visualization for a Bicep file. Two distinct sets of resources are defined. It might make sense to group them into separate *database* and *networking* modules.
+For example, consider the following visualization for a Bicep file. Two distinct sets of resources are defined. It might make sense to group them into separate _database_ and _networking_ modules.
 
 # [Visualizer](#tab/visualizer)
 
@@ -96,8 +96,8 @@ module appModule 'modules/app.bicep' = {
 A module definition includes the following components:
 
 - The `module` keyword.
-- A symbolic name. This name is used within this Bicep file whenever you want to refer to the module. The symbolic name never appears in Azure.
-- The module path. This is typically the path to a Bicep file on your local file system. In a future Microsoft Learn module, you'll learn about how you can share modules by using registries and template specs, which have their own module path formats.
+- A symbolic name, like `appModule`. This name is used within this Bicep file whenever you want to refer to the module. The symbolic name never appears in Azure.
+- The module path, like `modules/app.bicep`. This is typically the path to a Bicep file on your local file system. In a future Microsoft Learn module, you'll learn about how you can share modules by using registries and template specs, which have their own module path formats.
   > [!TIP]
   > You can also use a JSON Azure Resource Manager template (ARM template) as a module. This ability can be helpful if you have a set of templates that you haven't yet migrated to Bicep.
 - The `name` property, which specifies the name of the deployment. You'll learn more about deployments in the next section.
@@ -109,15 +109,15 @@ Understanding how modules work isn't necessary for using them, but it can help y
 
 ### Deployments
 
-In Azure, a *deployment* is a special resource that represents a deployment operation. Deployments are Azure resources that have the resource type `Microsoft.Resources/deployments`. When you submit a Bicep deployment, you create or update a deployment resource. Similarly, when you create resources in the Azure portal, the portal creates a deployment resource on your behalf.
+In Azure, a _deployment_ is a special resource that represents a deployment operation. Deployments are Azure resources that have the resource type `Microsoft.Resources/deployments`. When you submit a Bicep deployment, you create or update a deployment resource. Similarly, when you create resources in the Azure portal, the portal creates a deployment resource on your behalf.
 
 However, not all changes to Azure resources create or use deployments. For example, when you use the Azure portal to modify an existing resource, it generally doesn't create a deployment to make the change. When you use third-party tools like Terraform to deploy or configure your resources, they might not create deployments.
 
-When you deploy a Bicep file by using the Azure CLI or Azure PowerShell, you can optionally specify the name of the deployment. If you don't specify a name, the Azure CLI or Azure PowerShell automatically creates a deployment name for you from the file name of the template. For example, if you deploy a file named *main.bicep*, the default deployment name is `main`.
+When you deploy a Bicep file by using the Azure CLI or Azure PowerShell, you can optionally specify the name of the deployment. If you don't specify a name, the Azure CLI or Azure PowerShell automatically creates a deployment name for you from the file name of the template. For example, if you deploy a file named _main.bicep_, the default deployment name is `main`.
 
 When you use modules, Bicep creates a separate deployment for every module. The `name` property that you specify for the module becomes the name of the deployment. When you deploy a Bicep file that contains a module, multiple deployment resources are created: one for the parent template and one for each module.
 
-For example, suppose you create a Bicep file named *main.bicep*. It defines a module named `myApp`. When you deploy the *main.bicep* file, two deployments are created. The first one is named `main`, and it creates another deployment named `myApp` that contains your application resources.
+For example, suppose you create a Bicep file named _main.bicep_. It defines a module named `myApp`. When you deploy the _main.bicep_ file, two deployments are created. The first one is named `main`, and it creates another deployment named `myApp` that contains your application resources.
 
 :::image type="content" source="../media/2-deployments.png" alt-text="Diagram that shows two Bicep files, each of which has a separate deployment name." border="false":::
 
@@ -125,7 +125,7 @@ You can list and view the details of deployment resources to monitor the status 
 
 ### Generated JSON ARM templates
 
-When you deploy a Bicep file, Bicep converts it to a JSON ARM template. This conversion is also called *transpilation*. The modules that the template uses are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file will be created.
+When you deploy a Bicep file, Bicep converts it to a JSON ARM template. This conversion is also called _transpilation_. The modules that the template uses are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file will be created.
 
 In the example discussed in the previous section, Bicep generates a single JSON file even though there were originally two Bicep files.
 

@@ -4,7 +4,7 @@ Let's start with a few definitions and a look at *security information and event
 
 A SIEM system is a tool that an organization uses to collect, analyze, and perform security operations on its computer systems. Those systems can be hardware appliances, applications, or both.
 
-In its simplest form, a SIEM system enables you to:
+In its simplest form, a SIEM system allows you to:
 
 - Collect and query logs.
 - Do some form of correlation or anomaly detection.
@@ -30,12 +30,12 @@ Microsoft Sentinel is a cloud-native SIEM system that a security operations team
 - Detect and investigate threats quickly by using built-in machine learning and Microsoft threat intelligence.
 - Automate threat responses by using playbooks and by integrating Azure Logic Apps.
 
-Unlike with traditional SIEM solutions, to run Microsoft Sentinel, you don't need to install any servers either on-premises or in the cloud. Microsoft Sentinel is a service that you deploy in Azure. You can get up and running with Sentinel in just a few minutes in the Azure portal.
+Unlike with traditional SIEM solutions, you don't need to install any servers either on-premises or in the cloud to run Microsoft Sentinel. Microsoft Sentinel is a service that you deploy in Azure. You can get up and running with Sentinel in just a few minutes in the Azure portal.
 
 Microsoft Sentinel is tightly integrated with other cloud services. Not only can you quickly ingest logs, but you can also use other cloud services natively (for example, authorization and automation).
 
 Microsoft Sentinel helps you enable end-to-end security operations including collection, detection, investigation, and response:
 
-:::image type="content" source="../media/02-end-to-end.svg" alt-text="This diagram shows the end-to-end functionality of Microsoft Sentinel.":::
+:::image type="content" source="../media/02-end-to-end.svg" alt-text="Diagram showing the end-to-end functionality of Microsoft Sentinel.":::
 
 Let's take a look at the key components in Microsoft Sentinel.

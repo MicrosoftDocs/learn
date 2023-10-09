@@ -1,4 +1,4 @@
-Let's start by understanding the key concepts within Azure HPC Cache. This overview will help you understand how the cache service works.
+Let's start by understanding the key concepts within Azure HPC Cache. This overview helps you understand how the cache service works.
 
 ## What is a storage target?
 

@@ -23,13 +23,13 @@ quiz:
       explanation: Correct. We recommend a single Log Analytics workspace for platform log data.
     - content: '2'
       isCorrect: false
-      explanation: We recommend a single Log Analytics workspace for platform log data that's not constrained by sovereignty requirements.
+      explanation: We recommend a single Log Analytics workspace for platform log data that has no sovereignty requirements.
     - content: '3'
       isCorrect: false
-      explanation: We recommend a single Log Analytics workspace for platform log data that's not constrained by sovereignty requirements.
+      explanation: We recommend a single Log Analytics workspace for platform log data that has no sovereignty requirements.
     - content: '4'
       isCorrect: false
-      explanation: We recommend a single Log Analytics workspace for platform log data that's not constrained by sovereignty requirements.
+      explanation: We recommend a single Log Analytics workspace for platform log data that has no sovereignty requirements.
 
   - content: Where can you find a record of all write operations (PUT, POST, DELETE) for subscription resources?
     choices:

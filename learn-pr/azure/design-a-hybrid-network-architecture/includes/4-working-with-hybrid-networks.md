@@ -10,13 +10,13 @@ In this unit, you will:
 
 ## What is a hybrid network architecture?
 
-*Hybrid network* is a term that's used when two different network topologies combine to form a single cohesive network. With Azure, a hybrid network represents the merging or combining of an on-premises network with an Azure virtual network. It allows the continued use of your existing infrastructure while giving you all the benefits of cloud-based computing and access.
+*Hybrid network* is a term used when two different network topologies combine to form a single cohesive network. With Azure, a hybrid network represents the merging or combining of an on-premises network with an Azure virtual network. It allows the continued use of your existing infrastructure while giving you all the benefits of cloud-based computing and access.
 
 There are several reasons why you might want to adopt a hybrid network solution. The two most common are: 
 * To migrate from a pure on-premises network to a pure cloud-based network.
 * To extend your on-premises network and resources to support the cloud services.
 
-Whatever your motivations for adding cloud services to your infrastructure, there are several architectures to consider.  We covered ExpressRoute in the preceding unit. The other architectures are:
+Whatever your motivations for adding cloud services to your infrastructure, there are several architectures to consider. We covered ExpressRoute in the preceding unit. The other architectures are:
 
 - Azure VPN Gateway
 - ExpressRoute with VPN failover
@@ -32,16 +32,16 @@ VPN Gateway uses your existing connection to the internet. However, all communic
 
 When you set up a virtual network gateway, you must specify whether it's a VPN gateway or an ExpressRoute gateway.  
 
-The VPN type depends on the type of connection topology you need. For example, if you want to create a point-to-site (P2S) or a point-to-point (P2P) gateway, you use a *RouteBased* type.  There are two VPN types:
+The VPN type depends on the type of connection topology you need. For example, if you want to create a point-to-site (P2S) or a point-to-point (P2P) gateway, you use a *RouteBased* type. There are two VPN types:
 
-- **PolicyBased**: Uses an IPsec tunnel to encrypt data packets.  Configuration of the policy uses address prefixes that are drawn from your Azure virtual network and your on-premises network.
+- **PolicyBased**: Uses an IPsec tunnel to encrypt data packets. Configuration of the policy uses address prefixes drawn from your Azure virtual network and your on-premises network.
 - **RouteBased**: Uses the routing or IP forwarding tables to route data packets to the correct tunnel. Each tunnel encrypts and decrypts all packets.
 
-After you've specified the *VPN type* for the virtual network gateway, it can't be altered. If you have to make a change, you need to delete the virtual network gateway and create it again.
+After you've specified the *VPN type* for the virtual network gateway, you can't alter it. If you have to make a change, delete the virtual network gateway and create it again.
 
 ### Site-to-site
 
-All site-to-site gateway connections use an IPsec/IKE VPN tunnel to create a connection between Azure and your on-premises network. For a site-to-site connection to work, you'll need an on-premises VPN device with a publicly accessible IP address.
+All site-to-site gateway connections use an IPsec/IKE VPN tunnel to create a connection between Azure and your on-premises network. A site-to-site connection, requires an on-premises VPN device with a publicly accessible IP address.
 
 ![Diagram of a VPN Site-to-Site connection between the on-premises network and the Azure virtual network.](../media/4-s2s-connection.svg)
 
@@ -105,7 +105,7 @@ When you implement an ExpressRoute with VPN failover architecture, consider the 
 
 ## Hub-spoke network topology
 
-The hub-spoke network topology allows you to structure the workloads that are carried out by your servers. It uses a single virtual network as the hub, which is also connected to your on-premises network through either VPN or ExpressRoute. The spokes are other virtual networks that are peered with the hub. Each spoke can be assigned specific workloads, and the hub is used for shared services.
+The hub-spoke network topology allows you to structure the workloads that are carried out by your servers. It uses a single virtual network as the hub, which connects to your on-premises network through either VPN or ExpressRoute. The spokes are other virtual networks that are peered with the hub. You can assign specific workloads to each spoke, and use the hub for shared services.
 
 ![Diagram of hub-spoke architecture.](../media/4-hub-spoke-architecture.svg)
 

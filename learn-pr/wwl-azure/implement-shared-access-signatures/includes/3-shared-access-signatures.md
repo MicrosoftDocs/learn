@@ -1,5 +1,5 @@
 
-Use a SAS when you want to provide secure access to resources in your storage account to any client who does not otherwise have permissions to those resources.
+Use a SAS when you want to provide secure access to resources in your storage account to any client who doesn't otherwise have permissions to those resources.
 
 A common scenario where a SAS is useful is a service where users read and write their own data to your storage account. In a scenario where a storage account stores user data, there are two typical design patterns:
 

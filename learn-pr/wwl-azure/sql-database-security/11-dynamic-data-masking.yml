@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sql-database-security.dynamic-data-masking
+title: Configure dynamic data masking
+metadata:
+  title: Configure dynamic data masking
+  description: "Configure dynamic data masking"
+  ms.date: 04/06/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: None
+durationInMinutes: 7
+content: |
+  [!include[](includes/11-dynamic-data-masking.md)]

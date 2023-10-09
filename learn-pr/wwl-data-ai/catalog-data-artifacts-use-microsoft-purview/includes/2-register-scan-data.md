@@ -56,7 +56,7 @@ You'll now need to configure your scan and assign the following details:
 - [Create credentials](/azure/purview/manage-credentials) to authenticate to your registered data sources.
 - Choose a collection to send scan results.
 
-After the basic configuration, you'll *scope* your scan, which allows you to choose just a specific zone of your data source. For instance, if you have a collection call “Raw” in your data map, you can define the scope to scan only the raw container of your data lake.
+After the basic configuration, you'll *scope* your scan, which allows you to choose just a specific zone of your data source. For instance, if you have a collection called “Raw” in your data map, you can define the scope to scan only the raw container of your data lake.
 
 After configuring and scoping your scan, you'll define the *scan rule set*. A scan rule set is a container for grouping a set of scan rules together so that you can easily associate them with a scan. For example, you might create a default scan rule set for each of your data source types, and then use these scan rule sets by default for all scans within your company. You might also want users with the right permissions to create other scan rule sets with different configurations based on business need.
 
@@ -74,7 +74,7 @@ Permissions in Microsoft Purview are assigned at **collection** level. Collectio
 
 Data teams looking to discover and use data need to be assigned the **Data Reader** role in a collection in Microsoft Purview. The Data Reader role enables users to find assets, but doesn't enable users to edit anything. The **Data Curator** role is required to edit information about assets, assign classifications, and associate assets with glossary entries. To set up scans via the Microsoft Purview Governance Portal, individuals need to be either a data curator on the collection *or* data curator and data source administrator where the source is registered.
 
-When a Microsoft Purview account is created, it starts with a root collection that has the same name as the Microsoft Purview account itself. The creator of the Microsoft Purview account is automatically added as a Collection Admin, Data Source Admin, Data Curator, and Data Reader on this root collection, and can edit and manage this collection. 
+When a Microsoft Purview account is created, it starts with a root collection that has the same name as the Microsoft Purview account itself. The creator of the Microsoft Purview account is automatically added as a Collection Admin, who can then assign Data Source Admin, Data Curator, and Data Reader on this root collection, and can edit and manage this collection. 
 
 >[!TIP]
 >Learn more about [Microsoft Purview permissions and access](/azure/purview/catalog-permissions#who-should-be-assigned-to-what-role).

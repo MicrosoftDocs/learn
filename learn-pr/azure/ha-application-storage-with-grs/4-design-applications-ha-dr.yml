@@ -4,8 +4,8 @@ metadata:
   title: Design HA applications to handle disaster recovery
   description: In this unit, you learn how to design HA applications to handle disaster recovery.
   ms.date: 09/03/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design HA applications to handle disaster recovery

@@ -4,7 +4,7 @@ There are three primary concepts used in an Azure Key Vault: _vaults_, _keys_, a
 
 ## Vaults
 
-You use Azure Key Vault to create multiple secure containers, called vaults. Vaults help reduce the chances of accidental loss of security information by centralizing application secrets storage. Organizations will have several key vaults. Each key vault is a collection of cryptographic keys and cryptographically protected data (call them "secrets") managed by one or more responsible individuals within your organization. These key vaults represent the logical groups of keys and secrets for your organization; those that you want to manage together. They are like folders in the file system. Key vaults also control and log the access to anything stored in them.
+You use Azure Key Vault to create multiple secure containers, called vaults. Vaults help reduce the chances of accidental loss of security information by centralizing application secrets storage. Organizations have several key vaults. Each key vault is a collection of cryptographic keys and cryptographically protected data (call them "secrets") managed by one or more responsible individuals within your organization. These key vaults represent the logical groups of keys and secrets for your organization that you want to manage together. They are like folders in the file system. Key vaults also control and log the access to anything stored in them.
 
 You can create and manage vaults using command line tools such as Azure PowerShell or the Azure CLI, using the REST API, or through the Azure portal.
 
@@ -24,11 +24,11 @@ New-AzKeyVault -Name <your-unique-vault-name> -ResourceGroupName <resource-group
 
 ## Keys
 
-Keys are the central actor in the Azure Key Vault service. A given key in a key vault is a cryptographic asset destined for a particular use such as the asymmetric master key of Microsoft Azure RMS, or the asymmetric keys used for SQL Server TDE (Transparent Data Encryption), CLE (Column Level Encryption) and Encrypted backup.
+Keys are the central actor in the Azure Key Vault service. A given key in a key vault is a cryptographic asset destined for a particular use. Examples are, the asymmetric master key of Microsoft Azure RMS, or the asymmetric keys used for SQL Server TDE (Transparent Data Encryption), CLE (Column Level Encryption) and Encrypted backup.
 
 Microsoft and your apps don't have access to the stored keys directly once a key is created or added to a key vault. Applications must use your keys by calling cryptography methods on the Key Vault service. The Key Vault service performs the requested operation within its hardened boundary. The application never has direct access to the keys.
 
-Keys can be single instanced (only one key exists), or be versioned. In the versioned case, a key is an object with a primary (active) key, and a collection of zero, one or more secondary (archived) keys created when keys are rolled (renewed). Key Vault supports asymmetric keys (RSA 2048). Your applications may use these for encryption or digital signatures.
+Keys can be single instanced (only one key exists), or be versioned. In the versioned case, a key is an object with a primary (active) key, and a collection of zero, one or more secondary (archived) keys created when keys are rolled (renewed). Key Vault supports asymmetric keys (RSA 2048). Your applications may use these keys for encryption or digital signatures.
 
 There are two variations on keys in Key Vault: hardware-protected, and software-protected.
 
@@ -46,7 +46,7 @@ Key Vault can also generate and protect keys using software-based RSA and ECC al
 - It's stored _at rest_ encrypted with HSMs
 - You can monitor usage using Key Vault logs
 
-The primary difference (besides price) with a software-protected key is when cryptographic operations are performed, they are done in software using Azure compute services while for HSM-protected keys the cryptographic operations are performed within the HSM.
+The primary difference (besides price) with a software-protected key, is that cryptographic operations are performed in software using Azure compute services. With HSM-protected keys, the cryptographic operations are performed within the HSM.
 
 > [!TIP]
 > For production use, it's recommended to use HSM-protected keys and use software-protected keys in only test/pilot scenarios. There is an additional charge for HSM-backed keys per-month if the key is used in that month. The summary page has a link to the pricing details for Azure Key Vault.
@@ -81,7 +81,7 @@ Here are some security best practices for using Azure Key Vault.
 | Best practice | Solution |
 |---------------|----------|
 | Grant access to users, groups, and applications at a specific scope.| Use RBAC's predefined roles. For example, to grant access to a user to manage key vaults, you would assign the predefined role Key Vault Contributor to this user at a specific scope. The scope, in this case, would be a subscription, a resource group, or just a specific key vault. If the predefined roles don't fit your needs, you can define your own roles. |
-| Control what users have access to.| Access to a key vault is controlled through two separate interfaces: management plane, and data plane. The management plane and data plane access controls work independently. Use RBAC to control what users have access to. For example, if you want to grant an application the rights to use keys in a key vault, you only need to grant data plane access permissions using key vault access policies. No management plane access is needed for this application. Conversely, if you want a user to be able to read vault properties and tags but not have any access to keys, secrets, or certificates, by using RBAC, you can grant read access to the management plane. No access to the data plane is required. |
+| Control what users have access to.| Access to a key vault is controlled through two separate interfaces: management plane, and data plane. The management plane and data plane access controls work independently. Use RBAC to control what users have access to. For example, if you want to grant an application the rights to use keys in a key vault, you only need to grant data plane access permissions using key vault access policies. No management plane access is needed for this application. Conversely, if you want a user to be able to read vault properties and tags but not have any access to keys, secrets, or certificates. You can use RBAC to grant read access to the management plane. No access to the data plane is required. |
 | Store certificates in your key vault.| Azure Resource Manager can securely deploy certificates stored in Azure Key Vault to Azure VMs when the VMs are deployed. By setting appropriate access policies for the key vault, you also control who gets access to your certificate. Another benefit is that you manage all your certificates in one place in Azure Key Vault. |
 | Ensure that you can recover a deletion of key vaults or key vault objects.| Deletion of key vaults or key vault objects can be either inadvertent or malicious. Enable the soft delete and purge protection features of Key Vault, particularly for keys that are used to encrypt data at rest. Deletion of these keys is equivalent to data loss, so you can recover deleted vaults and vault objects if needed. Practice Key Vault recovery operations regularly. |
 

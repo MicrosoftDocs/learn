@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.test-azure-cognitive-services.2-computer-vision
-title: 'Azure Cognitive Services: Computer Vision'
+title: 'Azure AI services: Computer Vision'
 metadata:
-  title: 'Azure Cognitive Services: Computer Vision'
-  description: Learn about Azure Cognitive Services Computer Vision for data science operations.
+  title: 'Azure AI services: Vision'
+  description: Learn about Azure AI Vision for data science operations.
   ms.date: 06/23/2022
   author: aahill
   ms.author: aahi
@@ -12,4 +12,4 @@ metadata:
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-computer-vision.md)] 
+  [!INCLUDE[](includes/2-computer-vision.md)]

@@ -1,5 +1,5 @@
 
-In this exercise you will use ACR Tasks to perform the following actions:
+In this exercise you use ACR Tasks to perform the following actions:
 
 * Create an Azure Container Registry
 * Build and push image from a Dockerfile
@@ -10,25 +10,25 @@ In this exercise you will use ACR Tasks to perform the following actions:
 
 * An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free)
 
-## Login to Azure and start the Cloud Shell
+## Sign in to Azure and start the Cloud Shell
 
-1. Login to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
+1. Sign in to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
 
     :::image type="content" source="../media/cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
 
-1. After the shell opens be sure to select the **Bash** environment.
+1. When the shell opens select the **Bash** environment.
 
     :::image type="content" source="../media/shell-bash-selection.png" alt-text="Selecting the Bash environment.":::
 
 ## Create an Azure Container Registry
 
-1. Create a resource group for the registry, replace `<myLocation>` in the command below with a location near you.
+1. Create a resource group for the registry, replace `<myLocation>` in the following command with a location near you.
 
     ```bash
     az group create --name az204-acr-rg --location <myLocation>
     ```
 
-1. Create a basic container registry. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. Replace `<myContainerRegistry>` in the command below with a unique value.
+1. Create a basic container registry. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. Replace `<myContainerRegistry>` in the following command with a unique value.
 
     ```bash
     az acr create --resource-group az204-acr-rg \
@@ -36,13 +36,13 @@ In this exercise you will use ACR Tasks to perform the following actions:
     ```
 
     > [!NOTE]
-    > The command above creates a *Basic* registry, a cost-optimized option for developers learning about Azure Container Registry.
+    > The command creates a *Basic* registry, a cost-optimized option for developers learning about Azure Container Registry.
 
 ## Build and push image from a Dockerfile
 
 Now use Azure Container Registry to build and push an image based on a local Dockerfile.
 
-1. Create, or navigate, to a local directory and then use the command below to create the Dockerfile. The Dockerfile will contain a single line that references the `hello-world` image hosted at the Microsoft Container Registry.
+1. Create, or navigate, to a local directory and then use the following command to create the Dockerfile. The Dockerfile contains a single line that references the `hello-world` image hosted at the Microsoft Container Registry.
 
     ```bash
     echo FROM mcr.microsoft.com/hello-world > Dockerfile
@@ -56,7 +56,7 @@ Now use Azure Container Registry to build and push an image based on a local Doc
         --file Dockerfile .
     ```
 
-    The command above will generate a lot of output, below is shortened sample of that output showing the last few lines with the final results. You can see in the `repository` field the `sample/hello-word` image is listed.
+    Following is a shortened sample of the output from the previous command showing the last few lines with the final results. You can see in the `repository` field the `sample/hello-word` image is listed.
 
     ```
     - image:
@@ -115,9 +115,9 @@ Now use Azure Container Registry to build and push an image based on a local Doc
         --cmd '$Registry/sample/hello-world:v1' /dev/null
     ```
 
-    The `cmd` parameter in this example runs the container in its default configuration, but `cmd` supports additional `docker run` parameters or even other `docker` commands. 
+    The `cmd` parameter in this example runs the container in its default configuration, but `cmd` supports other `docker run` parameters or even other `docker` commands. 
 
-    Below is shortened sample of the output:
+    The following is shortened sample of the output:
 
     ```
     Packing source code into tar to upload...

@@ -2,23 +2,25 @@
 uid: learn.azure.intro-to-personalizer
 metadata:
   title: Introduction to Personalizer
-  description: Discover the Personalizer service that is part of the Azure Decision services offerings.
-  ms.date: 01/09/2021
+  description: Discover the Azure AI Personalizer service that is part of Azure AI services.
+  ms.date: 02/23/2023
   author: gerryo
   ms.author: gerryo
+  manager: nitinme
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-ai-personalizer
 title: Introduction to Personalizer
 summary: Discover the services available on Azure to personalize experiences for your users.
 abstract: | 
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Describe the Personalizer service
   - Briefly describe how Personalizer works
   - Describe when to use Personalizer
 prerequisites: | 
   - Basic familiarity with Azure
   - Ability to navigate the Azure portal
-  - Basic familiarity with Azure Cognitive Services
+  - Basic familiarity with Azure AI services
+  - Foundational knowledge of REST
 iconUrl: /training/achievements/intro-to-personalizer.svg
 levels:
 - beginner
@@ -29,7 +31,7 @@ roles:
 - functional-consultant
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 - azure-cloud-services
 units:
 - learn.azure.intro-to-personalizer.1-introduction

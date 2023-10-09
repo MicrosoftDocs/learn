@@ -8,7 +8,8 @@ metadata:
   ms.author: mikeray
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-arc
+  ms.subservice: azure-arc-data
 title: Deploy and manage Azure Arc data controller
 summary: Azure Arc-enabled data controller serves as the basis for deployment of Azure Arc-enabled data services.
 abstract: |
@@ -21,7 +22,6 @@ prerequisites: |
   - Intermediate knowledge of Azure management, including the ability to navigate the Azure portal and run Azure CLI commands.
   - Intermediate knowledge of containerization and container orchestration by using Kubernetes.
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
 levels: 
   - intermediate
 roles: 

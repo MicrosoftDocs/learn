@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-windows-containers.troubleshooting-aks
+title: Troubleshooting Windows containers on Azure Kubernetes Service
+metadata:
+  title: Troubleshooting Windows containers on Azure Kubernetes Service
+  description: This content is part of the "Troubleshooting Windows Containers" module.
+  ms.date: 05/11/2023
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-troubleshooting-containers-aks.md)]

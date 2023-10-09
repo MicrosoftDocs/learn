@@ -1,4 +1,4 @@
-Imagine that you're a security administrator for an enterprise organization. Your responsibility is to protect your organization from cyber security threats. You know that the constant menace of data breaches makes securing your development environment more important than ever. Bad actors can cause devastating events. However, the negligence of users and administrators can also create serious security incidents. As hackers become more sophisticated, the impact and damage to businesses and people have proven to be far-reaching and occasionally tragic.
+Imagine that you're a security administrator for an enterprise organization. Your responsibility is to protect your organization from cyber security threats. You know that the constant menace of data breaches makes securing your development environment more important than ever. Bad actors can cause devastating events. However, user and administrator negligence can also create serious security incidents. As hackers become more sophisticated, the impact and damage to businesses and people have proven to be far-reaching and occasionally tragic.
 
 A few examples from recent years come to mind:
 

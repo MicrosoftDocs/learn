@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/06/2023
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -17,21 +17,21 @@ quiz:
     choices:
     - content: "POST"
       isCorrect: false
-      explanation: "That's incorrect. The POST method creates a new resource."
+      explanation: "Incorrect. The POST method creates a new resource."
     - content: "PATCH"
       isCorrect: true
-      explanation: "That's correct. The PATCH method does update a resource with a new value."
+      explanation: "Correct. The PATCH method does update a resource with a new value."
     - content: "PUT"
       isCorrect: false
-      explanation: "That's incorrect. The PUT method replaces a resource with a new one."
+      explanation: "Incorrect. The PUT method replaces a resource with a new one."
   - content: "Which of the components of the Microsoft 365 platform is used to deliver data external to Azure into Microsoft Graph services and applications?"
     choices:
     - content: "Microsoft Graph API"
       isCorrect: false
-      explanation: "That's incorrect. The Microsoft Graph API offers a single endpoint to use with APIs and SDKs."
+      explanation: "Incorrect. The Microsoft Graph API offers a single endpoint to use with APIs and SDKs."
     - content: "Microsoft Graph connectors"
       isCorrect: true
-      explanation: "That's correct. Microsoft Graph connectors work in the incoming direction. Connectors exist for many commonly used data sources such as Box, Google Drive, Jira, and Salesforce."
+      explanation: "Correct. Microsoft Graph connectors work in the incoming direction. Connectors exist for many commonly used data sources such as Box, Google Drive, Jira, and Salesforce."
     - content: "Microsoft Graph Data Connect"
       isCorrect: false
-      explanation: "That's incorrect. Microsoft Graph Data Connect  provides a set of tools to streamline secure and scalable delivery of Microsoft Graph data to popular Azure data stores."
+      explanation: "Incorrect. Microsoft Graph Data Connect  provides a set of tools to streamline secure and scalable delivery of Microsoft Graph data to popular Azure data stores."

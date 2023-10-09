@@ -8,7 +8,7 @@ In this unit, we'll start by opening a project file called "**Devkit Translator*
 
 - **Functions folder:** has two code files – DevKitTranslatorFunction.cs,  SpeechTranslation.cs.
 
-- **DevKitTranslatorFunction.cs**: a function code file that lives in the Functions folder in the project sample. The function name in the code file is **devkit_translator.** The function calls the task from **SpeechTranslation.cs** that recognizes the speech, uploads the audio file to the Cognitive Services then translates the speech from the source language to the target language.
+- **DevKitTranslatorFunction.cs**: a function code file that lives in the Functions folder in the project sample. The function name in the code file is **devkit_translator.** The function calls the task from **SpeechTranslation.cs** that recognizes the speech, uploads the audio file to the Azure AI Speech service, and then translates the speech from the source language to the target language.
 
 Steps we follow are:
 

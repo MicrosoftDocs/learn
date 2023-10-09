@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays.exercise-foreach
+title: Exercise - Implement the foreach statement
+metadata:
+  title: Exercise - Implement the foreach statement
+  description: "Exercise - Implement the foreach statement"
+  ms.date: 07/28/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-exercise-foreach.md)]

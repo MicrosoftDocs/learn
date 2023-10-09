@@ -1,10 +1,10 @@
 Even small organizations can operate globally when they host their apps on Azure. To serve users around the globe, you must design an app architecture that responds rapidly to users, whatever their location.
 
-Suppose you work for a shipping company that has a portal on Azure for customers to create, manage, and track shipments. This portal is a critical part of their business, and has a highly scalable architecture that you implemented in the East US Azure region. The portal needs to be highly available and tolerant of faults across geographic regions. The company wants to create an architecture that will provide these capabilities and identify the services for the features they need.
+Suppose you work for a shipping company that has a portal on Azure for customers to create, manage, and track shipments. This portal is a critical part of their business, and has a highly scalable architecture that you implemented in the East US Azure region. The portal needs to be highly available and tolerant of faults across geographic regions. The company wants to create an architecture that provides these capabilities, and they want to identify the services for the features they need.
 
-In this module, you'll learn how to design an application architecture for high availability and fault tolerance that's present in more than one region.
+In this module, you learn how to design an application architecture for high availability and fault tolerance that's present in more than one region.
 
-By the end of this module, you'll be able to design this kind of application architecture and understand the benefits, and limitations of its component parts.
+By the end of this module, you're able to design this kind of application architecture and understand the benefits, and limitations of its component parts.
 
 ## Learning objectives
 

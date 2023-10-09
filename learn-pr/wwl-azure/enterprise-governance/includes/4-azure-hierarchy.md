@@ -1,3 +1,4 @@
+
 **Azure Resource Manager** is the deployment and management service for Azure. It provides a consistent management layer that allows you to create, update, and delete resources in your Azure subscription. You can use its access control, auditing, and tagging features to help secure and organize your resources after deployment.
 
 When you take actions through the portal, Azure PowerShell, the Azure CLI, REST APIs, or client software development kits (SDKs), the Resource Manager API handles your request. Because the same API handles all requests, you get consistent results and capabilities from all the different tools. Functionality initially released through APIs should be represented in the portal within 180 days of the initial release.
@@ -40,7 +41,7 @@ Management groups are an Azure resource to create flexible and very maintainable
 
 Management group hierarchies can be up to six levels deep. This provides you with the flexibility to create a hierarchy that combines several of these strategies to meet your organizational needs. For example, the diagram below shows an organizational hierarchy that combines a business unit strategy with a geographic strategy.
 
-:::image type="content" source="../media/az500-management-group-geography-4b75337f.png" alt-text="Management Group hieracrchy with geographical locations.":::
+:::image type="content" source="../media/az500-management-group-geography-4b75337f.png" alt-text="Management Group hierarchy with geographical locations.":::
 
 
 ### The value of management groups
@@ -61,7 +62,7 @@ Management group hierarchies can be up to six levels deep. This provides you wit
 **Apply policies or access controls to any service**.
 
  -  Create one RBAC assignment on the management group, which will inherit that access to all the subscriptions.
- -  Use Azure Resource Manager integrations that allow integrations with other Azure services: Microsoft Cost Management, Privileged Identity Management, and Microsoft Defender for Cloud.
+ -  Use Azure Resource Manager integrations that allow integrations with other Azure services: Azure Cost Management, Privileged Identity Management, and Microsoft Defender for Cloud.
 
 > [!IMPORTANT]
 > By using management groups, you can reduce your workload and reduce the risk of error by avoiding duplicate assignments. Instead of applying multiple assignments across numerous resources and subscriptions, you can apply the one assignment on the one management group that contains the target resources. This will save time in the application of assignments, creates one point for maintenance, and allows for better controls on who can control the assignment.

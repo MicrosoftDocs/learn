@@ -1,3 +1,5 @@
+
+
 Like bandwidth, the number of network connections present on a VM at any given time can affect its network performance. The Azure networking stack maintains state for each direction of a TCP/UDP connection in data structures called ‘flows’.
 
 A typical TCP/UDP connection will have two flows created, one for the inbound and another for the outbound direction. Data transfer between endpoints requires creation of several flows in addition to the flows that perform the data transfer. Some examples are flows created for Domain Name System (DNS) resolution and flows created for load balancer health probes.

@@ -9,7 +9,7 @@ In this unit, you'll learn how certain hybrid technologies allow Tailwind Trader
 
 ## What is an Azure file share?
 
-An Azure file share allows you to create a secure SMB 3.0 file share hosted in Azure. You can integrate Azure Files with Azure Active Directory (Azure AD) and Azure AD Connect to allow people to use their on-premises account credentials or their Azure AD credentials to securely access the Azure file share endpoint. 
+Azure Files offers two industry-standard protocols for mounting Azure file share: the Server Message Block (SMB) protocol and the Network File System (NFS) protocol. You can integrate Azure Files with Azure Active Directory (Azure AD) and Azure AD Connect to allow people to use their on-premises account credentials or their Azure AD credentials to securely access the Azure file share endpoint. 
 
 You can also configure Azure file shares to support access control list (ACL) permissions. This allows you to limit access to files and folders in the same way that you would secure files and folders for an on-premises file server. 
 
@@ -17,7 +17,7 @@ Because Azure Files is backed by Azure Storage, Azure file shares can store subs
 
 The following image shows clients connecting to Azure file shares.
 
-:::image type="content" source="../media/image14.png" alt-text="Clients connect to Azure file shares by using authentication of credentials synchronized to an Azure AD tenant." lightbox="../media/image14.png":::
+:::image type="content" source="../media/7-client-connect.png" alt-text="Diagram that shows clients connected to Azure file shares by using authentication of credentials synchronized to an Azure AD tenant." border="false" lightbox="../media/7-client-connect.png":::
 
 An Azure file share endpoint might provide a solution to some of the challenges that Tailwind Traders faces. Specifically, placing a file share in Azure can serve as an easy replacement for branch-office retail locations, such as the Wangaratta site, to use instead of making a VPN connection to a file server in the Melbourne Office. Azure file share endpoints can be used in conjunction with Azure File Sync, which you'll learn about in the next section.
 
@@ -31,7 +31,7 @@ When you configure cloud tiering, you can specify that a certain amount of disk 
 
 The following image shows a basic Azure File Sync deployment.
 
-:::image type="content" source="../media/image15.png" alt-text="On-premises file servers synchronize with Azure file shares in the cloud through storage sync agents." lightbox="../media/image15.png":::
+:::image type="content" source="../media/7-sync-deployment.png" alt-text="Diagram that shows on-premises file servers synchronized with Azure file shares in the cloud through storage sync agents." border="false" lightbox="../media/7-sync-deployment.png":::
 
 Tailwind Traders currently uses a distributed file system (DFS) to replicate a set of file shares across its locations in Australia and New Zealand. Azure File Sync would allow the company to replace DFS as the file-replication mechanism. The advantage is that it would allow Tailwind Traders to enable cloud tiering, which would solve its problems regarding file servers' space constraints when new files are created and stored on a regular basis.
 

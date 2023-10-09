@@ -8,11 +8,11 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
    cd mslearn-build-api-azure-functions/DB_SETUP && ./GET_CONNECTION_STRING.sh
    ```
 
-1. Copy the database connection string that is returned in Cloud Shell.
+1. Copy the database connection string that is returned in Azure Cloud Shell.
 
 ## Add connection string to local settings
 
-1. Open the `local.settings.json` file.
+1. In Visual Studio Code, open the `local.settings.json` file.
 
 1. In the "Values" section, add a setting for "CONNECTION_STRING", and paste in the value you copied in the previous section.
 
@@ -33,9 +33,9 @@ Open the `api/services/productsService.ts` file.
 
 Look at line 3. Notice that the connection string is read from the `process.env` variable.
 
-    ```typescript
-    const CONNECTION_STRING = process.env.CONNECTION_STRING;
-    ```
+  ```typescript
+  const CONNECTION_STRING = process.env.CONNECTION_STRING;
+  ```
 
 ## Test out the GetProducts endpoint from Visual Studio Code
 

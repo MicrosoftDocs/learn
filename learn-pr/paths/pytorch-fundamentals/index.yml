@@ -9,7 +9,7 @@ metadata:
   author: cassiebreviu
   ms.author: cassieb
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.service: machine-learning
   ms.custom:
   - team=cloud_advocates
   ms.contributors:

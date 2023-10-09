@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: 'What can be stored and queried with Azure Database for PostgreSQL?'
     choices:
-    - content: "Code modules, which can be run by queries"
+    - content: "Code modules, which can be run with queries"
       isCorrect: false
       explanation: "Incorrect. Azure Database for PostgreSQL can store code modules, but it can also store other data too."
     - content: "Geometric data"

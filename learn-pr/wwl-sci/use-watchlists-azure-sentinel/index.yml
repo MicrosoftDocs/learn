@@ -5,9 +5,9 @@ metadata:
   description: "Use watchlists in Microsoft Sentinel"
   ms.date: 06/21/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: microsoft-sentinel
 title: Use watchlists in Microsoft Sentinel
 summary: Learn how to create Microsoft Sentinel watchlists that are a named list of imported data.  Once created, you can easily use the named watchlist in KQL queries.
 abstract: |
@@ -22,7 +22,7 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - threat-protection
 units:

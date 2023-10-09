@@ -1,4 +1,4 @@
-While you can run a `CREATE EXTERNAL TABLE AS SELECT` (CTAS) statement in a script whenever you need to transform data, it's good practice to encapsulate the transformation operation in stored procedure. This approach can make it easier to operationalize data transformations by enabling you to supply parameters,  retrieve outputs, and include additional logic in a single procedure call.
+While you can run a `CREATE EXTERNAL TABLE AS SELECT` (CETAS) statement in a script whenever you need to transform data, it's good practice to encapsulate the transformation operation in stored procedure. This approach can make it easier to operationalize data transformations by enabling you to supply parameters,  retrieve outputs, and include additional logic in a single procedure call.
 
 For example, the following code creates a stored procedure that drops the external table if it already exists before recreating it with order data for the specified year:
 

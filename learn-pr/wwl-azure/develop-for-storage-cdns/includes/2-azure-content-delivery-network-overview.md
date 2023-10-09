@@ -37,13 +37,15 @@ Each Azure subscription has default limits for the following resources:
 
 For more information about CDN subscription limits, visit [CDN limits](/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
-## Azure Content Delivery Network products
+## Azure CDN features
 
-Azure Content Delivery Network (CDN) includes four products:
+Azure CDN offers the following key features:
 
-* Azure CDN Standard from Microsoft
-* Azure CDN Standard from Akamai
-* Azure CDN Standard from Verizon
-* Azure CDN Premium from Verizon
+* Dynamic site acceleration
+* CDN caching rules
+* HTTPS custom domain support
+* Azure diagnostics logs
+* File compression
+* Geo-filtering
 
-Visit the [product comparison](/azure/cdn/cdn-features) for a detailed feature comparison between the four products.
+For a complete list of features that each Azure CDN product supports, visit [Compare Azure CDN product features](/azure/cdn/cdn-features).

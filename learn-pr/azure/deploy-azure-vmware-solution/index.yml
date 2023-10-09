@@ -3,19 +3,19 @@ uid: learn.deploy-azure-vmware-solution
 metadata:
   title: Prepare for VMware resource migration by deploying Azure VMware Solution
   description: Prepare to migrate VMware resources to Azure by deploying an Azure VMware Solution resource. Then, connect your VMware environment to Azure VMware Solution.
-  ms.date: 03/19/2021
-  author: sbkuehn
-  ms.author: shkuehn
+  ms.date: 08/09/2023
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
-  ms.contributors: shkuehn-03222021
+  ms.contributors: shkuehn-03222021, orthomas-08092023
+  ms.service: azure-vmware
 title: Prepare to migrate VMware resources to Azure by deploying Azure VMware Solution
 summary: Learn how to plan an Azure VMware Solution deployment by reviewing the requirements and assessing your migration. Prepare for the VMware resource migration by deploying an Azure VMware Solution resource. Then, configure Azure ExpressRoute Global Reach to connect your on-premises VMware vSphere environment to Azure VMware Solution.
 abstract: |
-  By the end of this module, you will be able to:
-  - Plan a successful Azure VMware Solution deployment
-  - Connect to an on-premises VMware environment
+  By the end of this module, you'll be able to:
+  - Plan a successful Azure VMware Solution deployment.
+  - Connect to an on-premises VMware environment.
 prerequisites: |
   - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and vSAN
   - Basic knowledge of network concepts, such as Classless Inter-Domain Routing (CIDR), Border Gateway Protocol (BGP) routing, Dynamic Host Configuration Protocol (DHCP), and subnets

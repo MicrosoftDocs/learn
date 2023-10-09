@@ -1,4 +1,4 @@
-In this unit, you'll run the app and view it on the webpage you created. Then, take a look at how to troubleshoot common experiences.
+In this unit, you run the app and view it on the webpage you created. Then, take a look at how to troubleshoot common experiences.
 
 ## Run and debug the app
 
@@ -31,7 +31,7 @@ To debug the Flask app:
      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
     ```
 
-1. In the terminal output, position your cursor on the IP address link. Select Ctrl+Click to open the app in your web browser. If you give the browser permission to get your location, it centers on your current location. Otherwise, the app centers on the Microsoft headquarters in Redmond, Washington, USA.
+1. In the terminal output, position your cursor on the IP address link. Select `Ctrl+Click` to open the app in your web browser. If you give the browser permission to get your location, it centers on your current location. Otherwise, the app centers on the Microsoft headquarters in Redmond, Washington, USA.
 
     :::image type="content" source="../media/map-in-edge.png" alt-text="Screenshot of the map running in the Microsoft Edge web browser." lightbox="../media/map-in-edge-large.png"::: 
 

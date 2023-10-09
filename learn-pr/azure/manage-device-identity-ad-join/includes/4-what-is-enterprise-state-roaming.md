@@ -1,39 +1,38 @@
-Your organization wants to improve the security of its devices. So far, you've seen how security is enhanced by using device identity and Azure Active Directory (Azure AD) join. But you need to maintain the security seamlessly when a user switches between devices. You want to see the options that Azure offers to enable users to transition their accounts between devices. Users need to maintain data and settings without increasing technical overhead or maintenance.
+Your organization wants to improve the security of its devices. So far, you've learned how security is enhanced by using device identity and Azure Active Directory (Azure AD) join. But you need to maintain the security seamlessly when a user switches between devices. You want to see the options that Azure offers to enable users to transition their accounts between devices. Users need to maintain data and settings without increasing technical overhead or maintenance.
 
 In this unit, you'll learn about Enterprise State Roaming. You'll learn how to enable it, where the user's application and settings data is stored, and how long the data is stored.
 
 ## Basics of Enterprise State Roaming
 
-Enterprise State Roaming allows users of Windows 10 and newer devices to sync settings and application data with their organization's cloud service. When synchronization is enabled, it takes place automatically. You can enable all applicable device users, or select specific users or groups based on your organization's needs. With Enterprise State Roaming, users' settings and application data follow them when they switch devices.
+Enterprise State Roaming allows users of Windows 10 and newer devices to sync settings and application data with their organization's cloud service. When you enable synchronization, it takes place automatically. You can enable all applicable device users, or select specific users or groups based on your organization's needs. With Enterprise State Roaming, users' settings and application data follow them when they switch devices.
 
 Key benefits of using Enterprise State Roaming are:
 
-- Separation of corporate and consumer data.
-- Enhanced security, because all applicable device data is encrypted through Azure Rights Management before synchronizing with the cloud. All stored data remains encrypted.
-- Better management and monitoring, so you decide who can sync their data and from which devices.
+- Separation of corporate and consumer data
+- Enhanced security, because all applicable device data is encrypted through Azure Rights Management before synchronizing with the cloud. All stored data remains encrypted
+- Better management and monitoring, so you decide who can sync their data and from which devices
 
 Enterprise State Roaming requires a Premium Azure Active Directory subscription.
 
 ## Data that syncs and roams
 
-**Windows settings**:
-The PC settings that are built into the Windows operating system. Generally, these settings personalize your PC. They include the following categories:
+**Windows settings**: The PC settings that are built into the Windows operating system. Generally, these settings personalize your PC. They include the following categories:
 
-* *Theme*, which includes features such as desktop theme and taskbar settings.
-* *Internet Explorer settings*, including recently opened tabs and favorites.
-* *Microsoft Edge browser settings*, such as favorites.
-* *Passwords*, including internet passwords, Wi-Fi profiles, and others.
-* *Language preferences*, which include settings for keyboard layouts, system language, date and time, and more.
-* *Ease of access features*, such as high-contrast theme, Narrator, and Magnifier.
-* *Other Windows settings*, such as mouse settings.
+- *Theme*, which includes features such as desktop theme and taskbar settings.
+- *Internet Explorer settings*, including recently opened tabs and favorites.
+- *Microsoft Edge browser settings*, such as favorites.
+- *Passwords*, including internet passwords, Wi-Fi profiles, and others.
+- *Language preferences*, which include settings for keyboard layouts, system language, date and time, and more.
+- *Ease of access features*, such as high-contrast theme, Narrator, and Magnifier.
+- *Other Windows settings*, such as mouse settings.
 
 **Application data**: Universal Windows apps can write settings data to a roaming folder. Any data written to this folder will automatically be synced. It's up to the individual app developer to design an app to take advantage of this capability.
 
 ## Enable Enterprise State Roaming
 
-Enterprise State Roaming requires a device to authenticate with a known Azure AD identity. For Azure AD joined devices, this identity is the account that the user first signed in with.
+Enterprise State Roaming requires a device to authenticate with a known Azure AD identity. For Azure AD joined devices, this identity is the account with which the user first signed in.
 
-1. To enable Enterprise State Roaming, go to **Azure Active Directory** > **Devices** > **Enterprise State Roaming**.
+1. To enable Enterprise State Roaming, go to **Azure Active Directory** > **Devices** > **Enterprise State Roaming** in the Azure portal.
 
     ![Screenshot of Enterprise State Roaming options in the Azure portal.](../media/4-enable-enterprise-state-roaming.png)
 

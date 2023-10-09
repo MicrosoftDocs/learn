@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.register-mlflow-model-azure-machine-learning.understand-mlflow-model-format
+title: Understand the MLflow model format
+metadata:
+  title: Understand the MLflow model format
+  description: "Understand how the MLmodel format works when registering a model with MLflow."
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-understand-mlflow-model-format.md)]

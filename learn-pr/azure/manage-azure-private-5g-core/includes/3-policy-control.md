@@ -9,6 +9,12 @@ This unit introduces you to the policy control tasks, like SIM policy configurat
 > [!NOTE]
 > To design and configure services and SIM policies, you need to be familiar with network traffic at the packet level.
 
+## Video: SIM Policy Configuration
+
+The following video provides an overview of how to configure SIM polices in Azure Private 5G Core:
+
+> [!VIDEO ad0ba484-74ac-44b6-9e90-a4d45830b93f]
+
 ## Network traffic control
 
 In a private mobile network, packet core instances are responsible for handling the network traffic between UEs and DNs. Azure Private 5G Core allows you to use services and SIM policies to control the network traffic at the packet level.

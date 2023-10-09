@@ -32,25 +32,25 @@ Windows Hello for Business uses several security groups to simplify the deployme
 
 Azure Active Directory Connect synchronizes the public key on the user object created during provisioning. You assign write and read permission to this group to the Active Directory attribute. This will ensure the Azure AD Connect service can add and remove keys as part of its normal workflow.
 
-1. Sign in a domain controller or management workstation with *Domain Admin* equivalent credentials.
-1. Open **Active Directory Users and Computers**.
-1. Select **View** and select **Advance Features**.
-1. Expand the domain node from the navigation pane.
-1. Right-select the **Users** container. Select **New**. Select **Group**.
-1. Type **KeyCredential Admins** in the **Group Name** text box.
-1. Select **OK**.
+1.  Sign in a domain controller or management workstation with *Domain Admin* equivalent credentials.
+2.  Open **Active Directory Users and Computers**.
+3.  Select **View** and select **Advance Features**.
+4.  Expand the domain node from the navigation pane.
+5.  Right-select the **Users** container. Select **New**. Select **Group**.
+6.  Type **KeyCredential Admins** in the **Group Name** text box.
+7.  Select **OK**.
 
 ### Create the Windows Hello for Business Users security group
 
 The Windows Hello for Business Users group is used to make it easy to deploy Windows Hello for Business in phases. You assign Group Policy and Certificate template permissions to this group to simplify the deployment by adding the users to the group. This provides users with the proper permissions to configure Windows Hello for Business and to enroll in the Windows Hello for Business authentication certificate.
 
-1. Sign in a domain controller or management workstation with *Domain Admin* equivalent credentials.
-1. Open **Active Directory Users and Computers**.
-1. Select **View** and select **Advanced Features**.
-1. Expand the domain node from the navigation pane.
-1. Right-select the **Users** container. Select **New**. Select **Group**.
-1. Type **Windows Hello for Business Users** in the **Group Name** text box.
-1. Select **OK**.
+1.  Sign in a domain controller or management workstation with *Domain Admin* equivalent credentials.
+2.  Open **Active Directory Users and Computers**.
+3.  Select **View** and select **Advanced Features**.
+4.  Expand the domain node from the navigation pane.
+5.  Right-select the **Users** container. Select **New**. Select **Group**.
+6.  Type **Windows Hello for Business Users** in the **Group Name** text box.
+7.  Select **OK**.
 
 ## Microsoft Pluton Security Processor
 

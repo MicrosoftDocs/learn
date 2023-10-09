@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
 title: Manage access for Azure Stack Hub
 summary: |
   You configure Azure Stack Hub to support users from multiple Azure Active Directory (Azure AD) tenants.

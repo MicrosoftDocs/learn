@@ -1,5 +1,5 @@
 
-A stored access policy provides an additional level of control over service-level shared access signatures (SAS) on the server side. Establishing a stored access policy groups shared access signatures and provides additional restrictions for signatures that are bound by the policy. You can use a stored access policy to change the start time, expiry time, or permissions for a signature, or to revoke it after it has been issued.
+A stored access policy provides an extra level of control over service-level shared access signatures (SAS) on the server side. Establishing a stored access policy groups SAS and provides more restrictions for signatures that are bound by the policy. You can use a stored access policy to change the start time, expiry time, or permissions for a signature, or to revoke it after it has been issued.
 
 The following storage resources support stored access policies:
 
@@ -10,14 +10,14 @@ The following storage resources support stored access policies:
 
 ## Creating a stored access policy
 
-The access policy for a SAS consists of the start time, expiry time, and permissions for the signature. You can specify all of these parameters on the signature URI and none within the stored access policy; all on the stored access policy and none on the URI; or some combination of the two. However, you cannot specify a given parameter on both the SAS token and the stored access policy.
+The access policy for a SAS consists of the start time, expiry time, and permissions for the signature. You can specify all of these parameters on the signature URI and none within the stored access policy; all on the stored access policy and none on the URI; or some combination of the two. However, you can't specify a given parameter on both the SAS token and the stored access policy.
 
 To create or modify a stored access policy, call the `Set ACL` operation for the resource (see [Set Container ACL](/rest/api/storageservices/set-container-acl), [Set Queue ACL](/rest/api/storageservices/set-queue-acl), [Set Table ACL](/rest/api/storageservices/set-table-acl), or [Set Share ACL](/rest/api/storageservices/set-share-acl)) with a request body that specifies the terms of the access policy. The body of the request includes a unique signed identifier of your choosing, up to 64 characters in length, and the optional parameters of the access policy, as follows:
 
 > [!NOTE]
 > When you establish a stored access policy on a container, table, queue, or share, it may take up to 30 seconds to take effect. During this time requests against a SAS associated with the stored access policy may fail with status code 403 (Forbidden), until the access policy becomes active. Table entity range restrictions (`startpk`, `startrk`, `endpk`, and `endrk`) cannot be specified in a stored access policy.
 
-Below are examples of creating a stored access policy by using C# .NET and the Azure CLI.
+Following are examples of creating a stored access policy by using C# .NET and the Azure CLI.
 
 ```csharp
 BlobSignedIdentifier identifier = new BlobSignedIdentifier

@@ -8,6 +8,8 @@ metadata:
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
@@ -22,10 +24,10 @@ quiz:
       explanation: Any app that runs on Windows can save logs to Blob storage.
     - content: Node.js apps on Linux.
       isCorrect: false
-      explanation: Linux apps cannot write logs to Blob storage.
+      explanation: Linux apps can't write logs to Blob storage.
     - content: ASP.NET Core apps on Linux.
       isCorrect: false
-      explanation: Linux apps cannot write logs to Blob storage.
+      explanation: Linux apps can't write logs to Blob storage.
 
   - content: Why is file system logging automatically turned off after 12 hours?
     choices:
@@ -34,7 +36,7 @@ quiz:
       explanation: Excessive logging can potentially cause app performance to degrade.
     - content: So that storage space can be reused.
       isCorrect: false
-      explanation: There is no limit on storage space, but excessive logging can consume significant amounts of Azure storage, and add to billing overhead.
+      explanation: There's no limit on storage space, but excessive logging can consume significant amounts of Azure storage, and add to billing overhead.
     - content: To enable Web apps to reinstantiate on different server instances, with different file system storage.
       isCorrect: false
-      explanation: Web apps use a virtual file system, and restarting an app does not lose its association with this storage.
+      explanation: Web apps use a virtual file system, and restarting an app doesn't lose its association with this storage.

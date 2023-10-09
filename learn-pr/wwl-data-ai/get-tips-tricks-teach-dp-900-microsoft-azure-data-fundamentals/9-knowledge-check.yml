@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How often should you download content from the [Learning Download Center](https://aka.ms/ldc) (LDC) to ensure you have the most up to date course materials?"
+    choices:
+    - content: "Every three years"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+    - content: "Once a year"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+    - content: "Quarterly"
+      isCorrect: true
+      explanation: "Feedback: Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course you know you have the most up-to-date materials."
+  - content: "Which tool is great for giving students a visual representation of topics?"
+    choices:
+    - content: "The Textbook"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. While a textbook can be used as a standard work for the study of a particular subject, the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+    - content: "Microsoft Whiteboard"
+      isCorrect: true
+      explanation: "Feedback: Correct. A Microsoft Whiteboard can help people visualize a process. Microsoft Whiteboard increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+    - content: "Flash Cards"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. Flash cards contain a small amount of information, held up for students to see, as an aid to learning, however the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+  - content: "How can instructors prepare for complex lab environments that require provisioning in the DP-900 Microsoft Azure Data Fundamentals course?"
+    choices:
+    - content: "Provision labs before module instructional time"
+      isCorrect: true
+      explanation: "Feedback: Correct. It can take up to 10-15 minutes for a new account to be provisioned. Therefore, by provisioning the labs prior to instructional time instructors can maximize learning in the DP-900 Microsoft Azure Data Fundamentals course."
+    - content: "Begin with a demonstration of how to set up the lab environment"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. The correct answer is a) provision labs before module instruction time as it can take up to 10-15 minutes for a new account to be provisioned. Therefore, by provisioning the labs prior to instructional time instructors can maximize learning in the DP-900 Microsoft Azure Data Fundamentals course."
+    - content: "Provision labs following module instructional time"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. The correct answer is a) provision labs before module instruction time as it can take up to 10-15 minutes for a new account to be provisioned. Therefore, by provisioning the labs prior to instructional time instructors can maximize learning in the DP-900 Microsoft Azure Data Fundamentals course."

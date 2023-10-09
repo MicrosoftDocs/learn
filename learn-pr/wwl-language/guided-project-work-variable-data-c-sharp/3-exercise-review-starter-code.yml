@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-work-variable-data-c-sharp.exercise-review-starter-code
+title: Exercise - Review starter code
+metadata:
+  title: Exercise - Review starter code
+  description: "Exercise - Review starter code"
+  ms.date: 09/06/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-exercise-review-starter-code.md)]

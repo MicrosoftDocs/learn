@@ -9,6 +9,8 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.custom:
+    - devx-track-bicep
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |

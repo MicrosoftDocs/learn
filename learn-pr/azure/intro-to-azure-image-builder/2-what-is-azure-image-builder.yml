@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-image-builder.what-is-azure-image-builder
+title: What is Azure Image Builder?
+metadata:
+  title: What is Azure Image Builder?
+  description: "What is Azure Image Builder?"
+  ms.date: 06/05/2023
+  author: ericd-mst-github
+  ms.author: erd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-is-azure-image-builder.md)]

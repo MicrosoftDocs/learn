@@ -4,13 +4,12 @@ title: Configure SQL database firewalls
 metadata:
   title: Configure SQL database firewalls
   description: "Configure SQL database firewalls"
-  ms.date: 09/06/2022
+  ms.date: 04/06/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/3-firewalls.md)]

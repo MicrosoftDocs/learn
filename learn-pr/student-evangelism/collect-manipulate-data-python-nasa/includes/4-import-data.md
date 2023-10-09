@@ -22,7 +22,7 @@ Before continuing, be sure that you have:
 
 - [Visual Studio Code](https://aka.ms/LearnOnVSCode?azure-portal=true), [Anaconda](https://www.anaconda.com/products/individual), and [Python](https://www.python.org/downloads/) installed. (We'll create our Anaconda environment in the steps below).
 - A local folder you created to store all of the code and data.
-- The [Excel file](https://nasadata.blob.core.windows.net/rocketlaunches/RocketLaunchDataCompleted.xlsx?azure-portal=true) of our data downloaded and saved to your local folder.
+- The [Excel file](https://github.com/MicrosoftDocs/mslearn-collect-manipulate-data-python-nasa/blob/main/DATA/NASA/RocketLaunchDataCompleted.xlsx?azure-portal=true) of our data downloaded and saved to your local folder.
 - A blank Jupyter notebook saved in the folder. (In your local folder, create a dummy file called *yourfilename*.ipynb).
 
 To set up your local environment:

@@ -8,7 +8,6 @@ metadata:
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
 title: Code scanning with GitHub CodeQL
 summary: "Learn how to use CodeQL, a powerful static analysis tool, to implement code scanning on GitHub." # user input: introductory summary (https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main)
 abstract: | # user input: learning objectives (https://review.learn.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)

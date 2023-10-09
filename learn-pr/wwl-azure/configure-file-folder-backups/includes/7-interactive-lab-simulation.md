@@ -1,3 +1,4 @@
+
 ## Lab scenario
 
 Your organization has decided to use Azure Backup and Azure Recovery Services. As the Azure Administrator you need to:

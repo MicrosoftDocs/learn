@@ -3,7 +3,7 @@ In this module, you've seen how queues in Azure storage accounts are used to pas
 <!-- Cleanup sandbox -->
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-## Additional resources
+## Extra resources
 
 - [Azure.Storage.Queues package](https://www.nuget.org/packages/Azure.Storage.Queues/) on NuGet
 - [Reference documentation](/dotnet/api/overview/azure/storage.queues-readme) for the Azure.Storage.Queues package

@@ -3,6 +3,6 @@ achievementUid: >-
   learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.badge
 metadata:
   title: >-
-    Microsoft Badge: Handle events with Azure Functions and Azure Cosmos DB SQL
-    API change feed was issued by Microsoft
+    Microsoft Badge: Handle events with Azure Functions and Azure Cosmos DB for
+    NoSQL change feed was issued by Microsoft
 socialImageUrl: /training/achievements/azure-cosmos-db-sql-api-azure-functions-social.png

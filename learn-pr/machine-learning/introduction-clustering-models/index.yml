@@ -7,8 +7,8 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: nextgen
+  ms.devlang: R
 title: Introduction to clustering models by using R and tidymodels
 summary: Get an introduction to clustering models. Clustering is the process of grouping objects with similar objects.
 abstract:  | 

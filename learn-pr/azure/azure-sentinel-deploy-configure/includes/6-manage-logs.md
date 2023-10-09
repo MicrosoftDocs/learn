@@ -41,9 +41,6 @@ To address this requirement, Microsoft Sentinel offers multiple-workspace capabi
 This multiple-workspace model offers significant advantages over a fully centralized model in which all data copies to a single workspace, such as:
 
 - A more flexible role assignment to the global or local security operations center teams or to the managed security service provider for its customers
-
 - Fewer challenges regarding data ownership, data privacy, and regulatory compliance
-
 - Minimal network latency and charges
-
 - Easy onboarding and offboarding of new subsidiaries and customers

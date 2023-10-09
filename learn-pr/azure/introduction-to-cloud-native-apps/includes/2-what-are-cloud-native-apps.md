@@ -5,7 +5,7 @@ The cloud-native approach allows you to build cloud-based applications where you
 
 Additionally, cloud-native apps are modular in nature. You choose the cloud services and technologies, and loosely couple them together as shown in the diagram. Cloud-native apps often employ another pattern, called **Microservices.** Notice how each service has its own technology stack, independent of what other services use, meaning you choose the technologies that suit each individual service, rather than a one-size-fits-all solution.
 
-With Cloud Native, we're leveraging many pre-built types of services or services with pre-built infrastructure. So we can get scaling from Kubernetes or Azure Function Apps, and geo-redundant data storage from Cosmos DB or Hyperscale for PostgreSQL.
+With Cloud Native, we're using many pre-built types of services or services with pre-built infrastructure. So we can use scaling from Kubernetes or Azure Function Apps, and geo-redundant data storage from Cosmos DB or Hyperscale for PostgreSQL.
 
 :::column-end:::
 :::column:::
@@ -17,9 +17,9 @@ With Cloud Native, we're leveraging many pre-built types of services or services
 
 So, while apps built on "microservices" in general share many of the same characteristics, "cloud-native apps" can have parts of their tool chain where little to no custom code has to be used to get advanced functionality or operational excellence.
 
-Further, with different components loosely coupled together to create an application, you can change technologies as required without rewriting the entire application. Such as with our smart fridges, each service can be upgraded, deployed, scaled, and restarted with no impact to other services, allowing for frequent updates.
+Further, with different components loosely coupled together to create an application, you can change technologies as required without rewriting the entire application. Such as with our smart fridges, each service can be upgraded, deployed, scaled, and restarted with no effect on other services, allowing for frequent updates.
 
-### Leverage technologies that you’re strong with
+### Use technologies that you’re strong with
 
 :::row:::
 :::column span="3":::

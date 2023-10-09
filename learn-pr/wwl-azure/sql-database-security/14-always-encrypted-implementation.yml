@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sql-database-security.always-encrypted-implementation
+title: Deploy an always encrypted implementation
+metadata:
+  title: Deploy an always encrypted implementation
+  description: "Deploy an always encrypted implementation"
+  ms.date: 04/06/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: None
+durationInMinutes: 7
+content: |
+  [!include[](includes/14-always-encrypted-implementation.md)]

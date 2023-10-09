@@ -1,8 +1,8 @@
-Imagine you work for a small to medium-sized company with a public-facing web application deployed on-premises. Your servers are aging and running at near-capacity. Rather than invest more heavily in hardware, you're going to migrate to Azure. You want the benefits of hosting in the cloud, but minimize downtime and leverage the existing skills of your team. Further, the application is layered and deployed on an N-tier architecture. You want to ensure that you're able to scale, manage, and secure your application now and in the future.
+Imagine that you work for a small to medium-sized company with a public-facing web application deployed on-premises. Your servers are aging and running at near-capacity. Rather than invest more heavily in hardware, you're going to migrate to Azure. You want the benefits of hosting in the cloud, while minimizing downtime and using the existing skills of your team. Further, the application is layered and deployed on an N-tier architecture. You want to ensure that you're able to scale, manage, and secure your application now and in the future.
 
-In this module, you'll learn what N-tier (or multitier) architecture is, when to use it, and what are both the benefits and drawbacks of this architectural style.
+In this module, you learn what N-tier (or multitier) architecture is, when to use it, and what the benefits and drawbacks of this architectural style are.
 
-By understanding what makes up an N-tier architecture and how to optimize it, you can make the right decisions when selecting an architecture for new applications, or improve deployments of existing applications.
+By understanding what makes up an N-tier architecture and how to optimize it, you can make the right decisions when selecting an architecture for new applications. You can also improve deployments of existing applications.
 
 ## Learning objectives
 

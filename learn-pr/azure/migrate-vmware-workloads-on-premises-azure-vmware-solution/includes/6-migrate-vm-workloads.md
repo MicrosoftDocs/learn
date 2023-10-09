@@ -1,8 +1,8 @@
-After you install VMware HCX (HCX), and you connect your on-premises VMware environment to Azure VMware Solution, you work on VM migration next. You migrate VMs from on-premises through the HCX Connector migration web interface.
+After you install VMware HCX (HCX) and you connect your on-premises VMware environment to Azure VMware Solution, you next work on migrating VMs running Windows Server and Linux operating systems. You migrate VMs running Windows Server and Linux from on-premises through the HCX Connector migration web interface.
 
 ## Migrate virtual machines
 
-HCX provides several ways of migrating VMs into Azure VMware Solution: cold, live, and bulk migration. You configure migrations by using the HCX Connector on-premises that initiated site pairing into Azure VMware Solution. The HCX migration interface also provides a set of options for VMs. These options control behaviors and conditions on the VM. These behaviors and conditions can happen either before or after the migration operation.
+HCX provides several ways of migrating VMs running Windows Server and Linux into Azure VMware Solution: cold, live, and bulk migration. You configure migrations by using the HCX Connector on-premises that initiated site pairing into Azure VMware Solution. The HCX migration interface also provides a set of options for VMs. These options control behaviors and conditions on the VM. These behaviors and conditions can happen either before or after the migration operation.
 
 One last thing to note is that taking snapshots of a VM during migration, either manually or via a third-party backup solution, can disrupt the migration process. In order to prevent any disruption, disable backups until the VM completely migrates into Azure VMware Solution.
 
@@ -16,7 +16,7 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
     :::image type="content" source="../media/6-migrate-virtual-machines.png" alt-text="Screenshot of where to start the migration for existing VMs in the on-premises VMware environment.":::
 
-1. The list of virtual machines available for migration appears in the display. Make the selections, and select **Add**.
+1. The list of virtual machines available for migration appears in the display. Make the selections, then select **Add**.
 
     :::image type="content" source="../media/6-select-vms-migration.png" alt-text="Screenshot of how to select the VMs for migration.":::
 

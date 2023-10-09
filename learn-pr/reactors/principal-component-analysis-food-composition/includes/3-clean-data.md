@@ -10,9 +10,6 @@ Because we're working with a real-world dataset, it's a safe bet that the datase
 
 Drop rows from the DataFrame that contain `NaN` values.
 
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-
   If you need help with remembering which method to use, see the [pandas documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dropna.html?azure-portal=true).
 
   The exercise solution is:
@@ -24,12 +21,6 @@ Drop rows from the DataFrame that contain `NaN` values.
   The output is:
 
   :::image type="content" source="../media/df-drop-na.png" alt-text="Screenshot that shows the table output of running df.dropna()." lightbox="../media/df-drop-na.png" loc-scope="Azure":::
-
-</details>
-
-<br /><br />
-
-***
 
 Now, let's see how many rows we have left:
 
@@ -45,10 +36,11 @@ The output is:
 
 Dropping those rows eliminated 76 percent of our data (from 8,989 entries to 2,190 entries). It's an imperfect result, but we still have enough for our purposes.
 
-> [!div class="alert is-tip"]
+> [!Tip]
 > ### Key takeaway
 >
 > Another solution to removing `null` values is to impute values for them, but this can be tricky. Should we handle missing values as equal to 0? What about a fatty food with `NaN` for `Lipid_Tot_(g)`? We might try taking the averages of values surrounding a `NaN`, but what about foods that are right next to rows that contain foods from radically different food groups? It's possible to make justifiable imputations for missing values, but it can be important to involve subject matter experts (SMEs) in that process.
+
 ## Split off descriptive columns
 
 Our descriptive columns (such as `FoodGroup` and `Shrt_Desc`) pose challenges for us when it comes time to perform PCA because they're categorical rather than numerical features. So, we'll split our DataFrame into two. One contains the descriptive information, and one contains the nutritional information:
@@ -88,12 +80,6 @@ The output is:
 
 Why was it necessary to structure the `iloc` method call the way we did in the preceding code? What did it accomplish? Why was it necessary to set the `desc_df` index to `NDB_No`?
 
-<br />
-
-<details>
-
-  <summary>Hint <i>(expand to reveal)</i></summary>
-
   Running the following code helps you answer the questions:
 
   ```python
@@ -105,34 +91,13 @@ Why was it necessary to structure the `iloc` method call the way we did in the p
 
   :::image type="content" source="../media/nutr-df-head-49.png" alt-text="Screenshot that shows a table that holds the results of running nutr_df.head." lightbox="../media/nutr-df-head-49.png" loc-scope="Azure":::
 
- 5 rows × 49 columns
-
-</details>
-
-<br /><br />
-
-***
-
 ### Try it yourself
 
 Now, set the index of `nutr_df` to use `NDB_No`.
 
-
-<br />
-
-<details>
-
-  <summary>Hint <i>(expand to reveal)</i></summary>
-
   ```python
   nutr_df.set_index('NDB_No', inplace=True)
   ```
-64325ab491d4e3f74988dda20972166c820afd
-</details>
-
-<br /><br />
-
-***
 
 Let's take a look at `nutr_df` now, and see how it's changed:
 
@@ -143,8 +108,6 @@ nutr_df.head()
 The output is:
 
 :::image type="content" source="../media/nutr-df-head-46.png" alt-text="Screenshot that shows the results of running nutr_df.head, in table format." lightbox="../media/nutr-df-head-46.png" loc-scope="Azure":::
-
-5 rows × 46 columns
 
 ## Check for correlation among features
 
@@ -183,5 +146,3 @@ nutr_df.head()
 The output is:
 
 :::image type="content" source="../media/correlation-2.png" alt-text="Screenshot that shows the results of running nutr d f drop and head, in table format." lightbox="../media/correlation-2.png" loc-scope="Azure":::
-
-5 rows × 43 columns

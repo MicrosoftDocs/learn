@@ -12,6 +12,6 @@ These data professionals also work alongside:
  -  **Application developers** \- An application developer creates software applications to enable users to interact with business data. Application developers often collaborate with a data engineer, who creates and manages the data source, the developer builds a user interface for viewing, managing, or processing the data. The solutions can be web, cloud, or desktop applications, depending on the business requirement.
  -  **Infrastructure operators** \- An infrastructure operator is responsible for managing the underlying compute, storage, and networking services. Much like the DBA role, the operator ensures systems are available, or restored as quickly as possible following failure. This can be a varied role, supporting all departments within the business to enable continuous service of systems across offices, home offices, call centers, warehouses and distribution centers, and manufacturing plants.
 
-In this video, you will learn about the key data professions, and see how they work together to provide data solutions to a business:
+In this video, you'll learn about the key data professions, and see how they work together to provide data solutions to a business:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U38s]

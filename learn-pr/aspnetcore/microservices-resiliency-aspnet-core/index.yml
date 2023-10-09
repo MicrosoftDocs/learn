@@ -5,6 +5,7 @@ metadata:
   description: This module guides you through implementing resiliency in an ASP.NET Core microservices app in Azure Kubernetes Service.
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.date: 07/12/2020
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial
@@ -15,7 +16,7 @@ abstract: |
   - Understand foundational resiliency concepts.
   - Observe the behavior of a microservice with no resiliency strategy.
   - Implement failure handling code for HTTP requests in one microservice.
-  - Deploy an infrastructure-based resiliency solution to an AKS cluster.
+  - Deploy an infrastructure-based resiliency solution to an Azure Kubernetes Service (AKS) cluster.
 prerequisites: |
   - Familiarity with C# and ASP.NET Core development at the beginner level
   - Familiarity with RESTful service concepts
@@ -28,9 +29,7 @@ roles:
   - developer
   - solution-architect
 products:
-  - dotnet
   - aspnet-core
-  - dotnet-core
   - azure
   - azure-container-registry
   - azure-kubernetes-service

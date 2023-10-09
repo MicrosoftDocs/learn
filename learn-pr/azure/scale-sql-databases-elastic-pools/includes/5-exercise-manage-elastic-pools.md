@@ -1,4 +1,4 @@
-In this exercise, we'll manage the SQL elastic pool, and add an additional database to the pool for another location.
+In this exercise, we'll manage the SQL elastic pool and add an additional database to the pool for another location.
 
 ## Adjust elastic pool settings
 
@@ -8,11 +8,11 @@ In this exercise, we'll manage the SQL elastic pool, and add an additional datab
 
 1. In the left menu pane, under **Settings**, select **Configure**. The **Configure** pane appears.
 
-1. Here, you can select either a *DTU-based* or *vCore-based* pricing model by selecting the service tier for the elastic pool. Under the **Service and compute tier** section, for **Service tier**, select **Basic**, and in the top menu bar, select **Save**.
+1. Here, you can select either a *DTU-based* or *vCore-based* pricing model by selecting the service tier for the elastic pool. Under the **Service and compute tier** section, select **Basic** for **Service tier**, then select **Save** in the top menu bar. This will redeploy your elastic pool. Select **Go to resource** when the redeployment completes.
 
-1. Within each tier, you can change the number of eDTUs for the pool. Change the eDTUs to **200** and in the top menu bar, select **Save**.
+1. Select **Settings**, then select **Configure**. Within each tier, you can change the number of eDTUs for the pool. Change the eDTUs to **200** and observe the **Cost summary** on the right, which shows the estimated monthly cost of your elastic pool.
 
-1. Observe the **Cost summary** on the right, which shows the estimated monthly cost of your elastic pool.
+1. Select **Save** in the top menu bar. This will redeploy your elastic pool. Select **Go to resource** when the redeployment completes.
 
 ## Create a new database in the pool
 
@@ -27,6 +27,6 @@ In this exercise, we'll manage the SQL elastic pool, and add an additional datab
     | **Database details** |
     | Database name | Give your new database a meaningful name, such as *fitnesslondondb*. |
 
-1. Select **Review + create**, and then select **Create**.
+1. Select **Review + create**, then select **Create**.
 
-1. Wait for deployment to complete, and then select **Go to resource**. Your new SQL database Overview pane appears.
+1. Wait for deployment to complete, and then select **Go to resource**. Your new SQL database Getting started pane appears.

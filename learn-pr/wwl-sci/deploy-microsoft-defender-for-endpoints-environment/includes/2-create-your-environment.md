@@ -12,6 +12,7 @@ To access the Microsoft 365 Defender portal settings for Endpoints do the follow
 2. Select **Settings**.
 3. Select **Endpoints**.
 
+:::image type="content" source="../media/screenshot-m365-defender-settings-endpoints-2023-04-07-152009.png" alt-text="Screenshot of Microsoft 365 Defender Settings and Endpoints.":::
 
 ## Network configuration
 

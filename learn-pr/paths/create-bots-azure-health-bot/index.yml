@@ -21,7 +21,7 @@ levels:
 roles:
 - developer
 products:
-- vs
+- azure
 modules:
 - learn.health-bot-introduction
 - learn.health-bot-basic-bot

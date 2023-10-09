@@ -5,10 +5,10 @@ metadata:
   description: "Explore DevOps capabilities such as continuous planning and continuous collaboration and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure
   ms.date: 06/25/2020
-  author: kathrynee
-  ms.author: kaelli
+  author: chcomley
+  ms.author: chcomley
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: "Facilitate communication and collaboration"
 summary: |
   Learn how DevOps capabilities such as continuous planning and continuous collaboration help you communicate deployment and release information with business stakeholders.
@@ -31,7 +31,6 @@ modules:
 - learn.wwl.introduce-foundation-pillars-devops
 - learn.wwl.characterize-devops-continous-collaboration-improvement
 - learn.wwl.explain-devops-continous-delivery-quality
-- learn.azure.plan-manage-azure-costs
 - learn.azdo.route-system-feedback
 trophy:
   uid: az-400-facilitate-communication-collaboration.trophy

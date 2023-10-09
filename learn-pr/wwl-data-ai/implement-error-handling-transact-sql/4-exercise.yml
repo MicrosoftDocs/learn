@@ -4,11 +4,11 @@ title: 'Exercise: Implement error handling with Transact-SQL'
 metadata:
   title: 'Exercise: Implement error handling with Transact-SQL'
   description: "Exercise: Implement error handling with Transact-SQL"
-  ms.date: 10/09/2021
+  ms.date: 02/15/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labId: 105121
 labModal: true

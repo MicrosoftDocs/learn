@@ -1,3 +1,5 @@
+
+
 ## DMO processing
 
 Software Update Manager (SUM) creates the shadow repository (development components/target version for ABAP workbench) on the traditional database until the downtime phase. The target database is built up in parallel where the shadow repository is then copied and the SAP database connection is switched to the target database and the downtime process starts.
@@ -8,17 +10,17 @@ Following the migration of the application data (which includes data conversion)
 
 When migrating an existing SAP system running on anyDB to an SAP HANA database, the following steps could be required:
 
- -  Dual-Stack split
- -  Unicode conversion (for versions prior to SAP NetWeaver 7.5)
- -  Database upgrade of anyDB
- -  Upgrade of SAP software
+- Dual-Stack split
+- Unicode conversion (for versions prior to SAP NetWeaver 7.5)
+- Database upgrade of anyDB
+- Upgrade of SAP software
 
 ## DMO for SAP BW and SAP Business Suite systems
 
 DMO can be used for AS-ABAP systems and with SUM 1.0 SP09 or higher. DMO can also be used for SAP HANA and ASE targets. Furthermore, DMO can also be used for SQL Server, DB2, and MaxDB upon request. For more information, see the following SAP Notes:
 
- -  [2426315 on Database Migration Option for SUM 1.0 SP 21](https://launchpad.support.sap.com/#/notes/2426315)
- -  [2472850 on Database Migration Option for SUM 2.0 SP 01](https://launchpad.support.sap.com/#/notes/2472850)
+- [SAP Note \#3106927 on Database Migration Option for SUM 1.0 SP 28](https://launchpad.support.sap.com/#/notes/3106927)
+- [SAP Note \#3126581 on Database Migration Option for SUM 2.0 SP 14](https://launchpad.support.sap.com/#/notes/3126581)
 
 ## DMO phases
 
@@ -88,7 +90,6 @@ The following table provides an overview of the main DMO phases.
     All post-processing steps are executed, including SAP HANA content activation and cleaning up of logs in the SUM directory.
   :::column-end:::
 :::row-end:::
-
 
 ## DMO “cutover week”
 
@@ -164,19 +165,15 @@ The following table compares the Classical DMO versus DMO with System Move Optio
     Options for data transfer
   :::column-end:::
   :::column:::
-    
 
- -  Memory pipes
- -  Filesystem dump
-
+- Memory pipes
+- Filesystem dump
 
   :::column-end:::
   :::column:::
-    
 
- -  Filesystem dump
- -  Can use sequential or parallel load options
-
+- Filesystem dump
+- Can use sequential or parallel load options
 
   :::column-end:::
 :::row-end:::

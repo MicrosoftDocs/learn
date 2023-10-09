@@ -1,4 +1,4 @@
-After an evaluation of Azure DDoS Protection for Contoso, your recommendation is to proceed with the upgrade.
+After an evaluation of Azure DDoS Protection for Contoso, your recommendation is to proceed with utilizing the DDoS Protection service.
 
 Your decision is based on the fact that Azure DDoS Protection provides countermeasures against the most sophisticated DDoS threats. The service provides enhanced DDoS mitigation capabilities for your applications and resources deployed in your virtual networks. Additionally, it provides a customer-defined SLA and access to the DDoS rapid response team, which provides access to DDoS experts during an active attack.
 
@@ -14,7 +14,7 @@ You can learn more by reviewing the following articles:
 
 - [View and configure DDoS diagnostic logging](/azure/ddos-protection/reports-and-flow-logs?azure-portal=true)
 
-- [Fundamental best practices](/azure/ddos-protection/fundamental-best-practices?azure-portal=true)
+- [Azure DDoS Protection fundamental best practices](/azure/ddos-protection/fundamental-best-practices?azure-portal=true)
 
 - [Azure DDoS Rapid Response](/azure/ddos-protection/ddos-rapid-response?azure-portal=true)
 

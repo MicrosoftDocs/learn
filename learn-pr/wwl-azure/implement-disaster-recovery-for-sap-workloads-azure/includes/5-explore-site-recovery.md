@@ -1,6 +1,8 @@
+
+
 ## SQL Server disaster recovery
 
-To facilitate disaster recovery when using SQL Server, you can configure Always On availability group on Azure VMs in different regions, as described at [Configure a SQL Server Always On availability group across different Azure regions](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-dr). Another commonly used configuration that provides disaster recovery capabilities is log shipping.
+To facilitate disaster recovery when using SQL Server, you can configure Always On availability group on Azure VMs in different regions, as described at [Configure a SQL Server Always On availability group across different Azure regions](/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multiple-regions?view=azuresql). Another commonly used configuration that provides disaster recovery capabilities is log shipping.
 
 ## Oracle disaster recovery
 
@@ -8,7 +10,7 @@ Oracle Data Guard is supported for disaster recovery purposes. To achieve automa
 
 ## Azure Site Recovery
 
-Azure Site Recovery Services is a comprehensive Disaster Recovery suite that orchestrates Disaster Recovery (DR) failover and failback of on-premise resources. Azure Site Recovery can orchestrate Enterprise-2-Enterprise (E2E) scenarios and Enterprise-2-Cloud (E2C) scenarios. Site Recovery exceeds the capabilities of most on-premises disaster recovery solutions, and at a lower total cost of ownership (TCO) than competing solutions.
+Azure Site Recovery Services is a comprehensive Disaster Recovery suite that orchestrates Disaster Recovery (DR) failover and failback of on-premises resources. Azure Site Recovery can orchestrate Enterprise-2-Enterprise (E2E) scenarios and Enterprise-2-Cloud (E2C) scenarios. Site Recovery exceeds the capabilities of most on-premises disaster recovery solutions, and at a lower total cost of ownership (TCO) than competing solutions.
 
 You can use Site Recovery to implement a disaster recovery solution in the following scenarios:
 
@@ -67,15 +69,15 @@ The following mechanisms should be implemented to protect individual tiers of th
     Active Directory virtual machines
   :::column-end:::
   :::column:::
-    Active Directory replication
+    Use Active Directory replication
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    SQL Server databases
+    SQL Database servers
   :::column-end:::
   :::column:::
-    SQL Always On replication
+    Use SQL Always On replication
   :::column-end:::
 :::row-end:::
 

@@ -1,10 +1,10 @@
-When you work on Bicep code, the main branch of your Git repository becomes the source of truth. The main branch incorporates the latest changes from your whole team, and it usually reflects the state of your Azure environment. 
+When you work on Bicep code, the main branch of your Git repository becomes the source of truth. The main branch incorporates the latest changes from your whole team, and it usually reflects the state of your Azure environment.
 
 It's important that the changes that are merged into your repository's main branch are reviewed. In this module, you'll learn how to protect your main branch by using other branches and pull request reviews.
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your team is growing, and it's getting more difficult to keep track of all the changes that everyone is making. 
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your team is growing, and it's getting more difficult to keep track of all the changes that everyone is making.
 
 Recently, a new team member accidentally changed an important Bicep file on your repository's main branch. That change caused a problem in your organization's production environment. You talk to your team and decide that it's time for you to start reviewing code changes before they're merged and deployed.
 
@@ -21,21 +21,3 @@ In this module, you'll learn how to protect the code on your main branch by enfo
 ## What is the main goal?
 
 After you complete this module, you'll be able to use a branching strategy for your own Bicep code. You'll also know how to create, review, and merge pull requests. You'll understand important elements to look for when you review a pull request for Bicep code.
-
-## Prerequisites
-
-You should be familiar with using:
-
-- Bicep for basic deployments to Azure.
-- Basic Git commands, including cloning, branching, committing files, and pushing changes to either Azure Repos or GitHub.
-
-To work through the exercises in the module, you need either of:
-
-- An Azure DevOps organization and account.
-- A GitHub account.
-
-To follow along with the exercises in the module, you need to install these items locally:
-
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-- [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
-- [Git](https://git-scm.com/download?azure-portal=true)

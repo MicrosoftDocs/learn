@@ -2,16 +2,16 @@
 uid: learn.introduction-to-azure-iot-central.summary
 title: Summary
 metadata:
-  unitType: summary
   title: Summary
-  description: A summary review of what you've learned in this module.
-  ms.date: 07/21/2021
+  description: This content is a part of Introduction to Azure IoT Central.
+  ms.date: 05/28/2023
   author: asergaz
   ms.author: sergaz
   ms.reviewer: adchukwu
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 2
+  ms.custom: engagement-fy23
+  ms.topic: module-intro-to-product
+  ms.prod: azure-iot-central
+durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

@@ -8,7 +8,7 @@ Azure Container Instances has three restart-policy options:
 
 | Restart policy   | Description |
 | ---------------- | :---------- |
-| **Always** | Containers in the container group are always restarted. This policy makes sense for long-running tasks like a web server. This is the **default** setting applied when no restart policy is specified at container creation. |
+| **Always** | Containers in the container group are always restarted. This policy makes sense for long-running tasks like a web server. This setting is the **default** applied when no restart policy is specified at container creation. |
 | **Never** | Containers in the container group are never restarted. The containers run one time only. |
 | **OnFailure** | Containers in the container group are restarted only when the process executed in the container fails (when it terminates with a nonzero exit code). The containers are run at least once. This policy works well for containers that run short-lived tasks. |
 
@@ -40,7 +40,7 @@ To see the restart policy in action, create a container instance from the **azur
 
     Repeat the command until it reaches the **Terminated** status.
 
-1. Run `az container logs` as below to view the container's logs to examine the output:
+1. Run `az container logs` to view the container's logs to examine the output:
 
     ```azurecli
     az container logs \
@@ -48,7 +48,7 @@ To see the restart policy in action, create a container instance from the **azur
       --name mycontainer-restart-demo
     ```
 
-    You'll get this output:
+    You get this output:
 
     ```output
     [('the', 990),

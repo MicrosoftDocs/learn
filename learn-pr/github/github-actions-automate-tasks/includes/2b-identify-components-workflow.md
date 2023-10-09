@@ -16,7 +16,7 @@ The job is the first major component within the workflow. A job is a section of 
 
 ### Steps
 
-A step is an individual task that can run commands in a job. In our example above, the step uses the action `actions/checkout@v2` to check out the repository. What's interesting is the `using: ./action-a` value. This is the path to the container action that you'll build in an `action.yml` file.
+A step is an individual task that can run commands in a job. In our example above, the step uses the action `actions/checkout@v2` to check out the repository. What's interesting is the `uses: ./action-a` value. This is the path to the container action that you'll build in an `action.yml` file.
 
 ### Actions
 

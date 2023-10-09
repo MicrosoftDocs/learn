@@ -31,9 +31,9 @@ az monitor log-analytics workspace delete --force true --resource-group <your Re
 
 - [Azure monitor](/azure/azure-monitor?WT.mc_id=java-00000-ropreddy)
 
-- [Azure Spring Apps Availability by Region](https://azure.microsoft.com/global-infrastructure/services/?products=spring-cloud?WT.mc_id=java-00000-ropreddy)
+- [Azure Spring Apps Availability by Region](https://azure.microsoft.com/global-infrastructure/services/?products=spring-apps)
 
-- [Azure Spring Apps locations and pricing](https://azure.microsoft.com/pricing/details/spring-cloud?WT.mc_id=java-00000-ropreddy)
+- [Azure Spring Apps locations and pricing](https://azure.microsoft.com/pricing/details/spring-apps?WT.mc_id=java-00000-ropreddy)
 
 - [Azure Database for MySQL pricing](https://azure.microsoft.com/pricing/details/mysql/server?WT.mc_id=java-00000-ropreddy)
 

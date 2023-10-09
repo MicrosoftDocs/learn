@@ -2,7 +2,7 @@ To send and receive messages through Azure Relay, you must understand how to wri
 
 Let's suppose you've created the relay for the credit-checking service in Azure Relay. Now you want to modify your credit-checking service and the clients that call it, so that they can send messages through the relay. You need to know how to write this code.
 
-In this unit, you'll see how to use classes such as `HybridConnectionListener` and `HttpRequestMessage` to send and respond to messages.
+In this unit, we use classes such as `HybridConnectionListener` and `HttpRequestMessage` to send and respond to messages.
 
 ## Use TokenProvider to pass credentials
 
@@ -58,7 +58,7 @@ listener.RequestHandler = (context) =>
 };
 ```
 
-When you've configured the listener, you open it to begin listening for messages. Because the relay, listener, and sender are all hosted in different locations, they might take some time to respond to messages. It's important to use asynchronous code for these messages to ensure that your app doesn't appear to stop responding as it waits for responses. You'll notice the asynchronous `await` keyword and asynchronous method names in the following code:
+When you've configured the listener, you open it to begin listening for messages. Because the relay, listener, and sender are all hosted in different locations, they might take some time to respond to messages. It's important to use asynchronous code for these messages to ensure that your app doesn't appear to stop responding as it waits for responses. Notice the asynchronous `await` keyword and asynchronous method names in the following code:
 
 ```csharp
 await listener.OpenAsync()

@@ -1,8 +1,8 @@
 When you work on Bicep code, it's important to review and test all your changes. Even when your deployment workflows and processes are designed to detect bugs or problems, it's less time-consuming to find and fix any problems as early as possible. Pull requests provide an opportunity to review your code changes. When you review Azure deployments, it's a good practice not only to validate the code changes, but also to verify that the changes are deployed successfully and function as you expect.
 
-In this module, you'll learn how to add automated checks to your pull request review process. You'll learn how to validate changes to your Bicep code within a pull request, long before it's merged or deployed to a real environment. 
+In this module, you'll learn how to add automated checks to your pull request review process. You'll learn how to validate changes to your Bicep code within a pull request, long before it's merged or deployed to a real environment.
 
-You'll also learn how you can automatically deploy your changes to *ephemeral environments*, temporary environments where collaborators and reviewers can test the code changes before they're approved and merged into the repository's main branch.
+You'll also learn how you can automatically deploy your changes to _ephemeral environments_, temporary environments where collaborators and reviewers can test the code changes before they're approved and merged into the repository's main branch.
 
 ## Example scenario
 
@@ -23,25 +23,3 @@ You'll configure your pull request workflow to scan your Bicep code against reco
 ## What is the main goal?
 
 After completing this module, you'll be able to add automated checks and validation to your GitHub pull requests for your Bicep code.
-
-## Prerequisites
-
-You should be familiar with using:
-
-  - Bicep, including creating and deploying basic files.
-  - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-  - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
-  - Pull requests in GitHub, including creating, reviewing, and merging pull requests.
-  - Basic GitHub Actions workflows, including triggers and secrets for connecting to your Azure environment.
-
-To work through the exercises in the module, you'll need:
-
-  - An Azure account, with the ability to create resource groups and Azure Active Directory applications.
-  - A GitHub account.
-  
-You'll also need the following installed locally:
-  
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
-  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
-  - [Git](https://git-scm.com/download?azure-portal=true)

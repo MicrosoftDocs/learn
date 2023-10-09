@@ -68,7 +68,7 @@ dtype: float64
 
 Our first cluster is defined by foods that are high in protein and minerals, like selenium and zinc, while also being low in sugars and vitamin C. Even to a nonspecialist, these foods appear to be meat, poultry, or legumes.
 
-> [!div class="alert is-tip"]
+> [!TIP]
 > ### Takeaway
 >
 > Particularly with interpretation, subject matter expertise can prove essential to producing high-quality analysis. For this reason, you should also try to include SMEs in your data science projects.
@@ -135,12 +135,6 @@ Our second group is foods that are high in fiber and folic acid and low in chole
 
 Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
 
-<br />
-
-<details>
-
-  <summary>Hint <i>(expand to reveal)</i></summary>
-
   *Hint:* To find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$, remember that Python uses zero-indexing.
 
   Here's a possible solution:
@@ -159,10 +153,6 @@ Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
   c5 = pd.Series(vects[4], index=nutr_df.columns)
   c5.sort_values(ascending=False)
   ```
-
-</details>
-
-<br /><br />
 
 ***
 
@@ -209,34 +199,22 @@ Soups, Sauces, and Gravies      1
 Poultry Products                1
 Name: FoodGroup, dtype: int64
 ```
+
 ### Try it yourself
 
 Repeat this process for $c_{3}$, $c_{4}$, and $c_{5}$.
 
-<br />
-
-<details>
-
-  <summary>Hint <i>(expand to reveal)</i></summary>
-
   Here are the solutions:
 
-  ```python
-  pca_df.sort_values(by='c3')['FoodGroup'][:500].value_counts()
-  ```
-  ```python
-  pca_df.sort_values(by='c4')['FoodGroup'][:500].value_counts()
-  ```
-  ```python
-  pca_df.sort_values(by='c5')['FoodGroup'][:500].value_counts()
-  ```
-
-</details>
-
-<br /><br />
-
-***
-
+      ```python
+      pca_df.sort_values(by='c3')['FoodGroup'][:500].value_counts()
+      ```
+      ```python
+      pca_df.sort_values(by='c4')['FoodGroup'][:500].value_counts()
+      ```
+      ```python
+      pca_df.sort_values(by='c5')['FoodGroup'][:500].value_counts()
+      ```
 
 > [!NOTE]
 > The category **Baby Foods** and some other categories might seem to dominate the output. This is a result of all the rows we had to drop because they had `NaN` values. If we look at all of the value counts for the category **FoodGroup**, we'll see that they aren't evenly distributed. Some categories are far more represented than others.

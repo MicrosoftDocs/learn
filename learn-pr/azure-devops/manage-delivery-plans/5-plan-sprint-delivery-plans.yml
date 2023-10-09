@@ -6,10 +6,10 @@ metadata:
   description: Create a delivery plan, add teams, and optimize sprints to meet milestones.
   ms.date: 07/20/2022
   ms.custom: devdivchpfy22
-  author: kathrynee
-  ms.author: kaelli
+  author: chcomley
+  ms.author: chcomley
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-plan-sprint-delivery-plans.md)]

@@ -1,3 +1,5 @@
+
+
 In this phase, you should leverage all the knowledge and experience you accumulated in the prior phases and apply them in preparation for the production deployments. In addition, in migration scenarios, you should prepare for data transfer between your current hosting location and Azure.
 
 1. Work through necessary SAP release upgrades of your production systems before moving into Azure.
@@ -7,7 +9,7 @@ In this phase, you should leverage all the knowledge and experience you accumula
      - Using DBMS methods like backup/restore in combination with SQL Server Always On, HANA System Replication, or Log shipping to seed and synchronize database content into Azure.
      - Use Backup/restore for smaller databases.
      - Use SAP Migration Monitor implemented into SAP SWPM tool to perform heterogeneous migrations.
-     - Use the SAP DMO process (described at [Database Migration Option (DMO) of SUM – Introduction](https://blogs.sap.com/2013/11/29/database-migration-option-dmo-of-sum-introduction/)) if you need to combine with an SAP release upgrade. Keep in mind that not all combinations between source and target DBMS are supported. More information can be found in the DMO release-specific SAP Notes. For example, Database Migration Option (DMO) of SUM 2.0 SP04 is documented in [SAP Note \#2644872](https://launchpad.support.sap.com/#/notes/2644872).
+     - Use the SAP DMO process (described at [Database Migration Option (DMO) of SUM – Introduction](https://blogs.sap.com/2013/11/29/database-migration-option-dmo-of-sum-introduction/)) if you need to combine with an SAP release upgrade. Keep in mind that not all combinations between source and target DBMS are supported. More information can be found in the DMO release-specific SAP Notes. For example, Database Migration Option (DMO) of SUM 2.0 SP04 is documented in [SAP Note \#3126581](https://launchpad.support.sap.com/#/notes/3126581).
      - Compare throughput of data transfer via Internet and ExpressRoute in case you need to upload backups or SAP export files to Azure. To facilitate Internet-based transfers, you might need to adjust NSG/ASG configuration.
 4. Before moving systems from the old platform into Azure, collect resource consumption data, such as CPU usage, storage throughput, and IOPS data. This is particularly important regarding the DBMS layer units but is also very helpful in the case of the application layer units. In addition, you should measure network and storage latency.
 5. Reference SAP support notes, SAP HANA hardware directory, and SAP Product Availability Matrix (PAM) to ensure accuracy of the information regarding supported Azure VM SKUs, supported OS releases for these Azure VM SKUs, and supported SAP and DBMS releases.
@@ -33,7 +35,7 @@ In this phase, you should leverage all the knowledge and experience you accumula
      - There are no Azure Network Virtual Appliances in the communication path between the SAP application and the DBMS layer of an SAP NetWeaver, Hybris, or S/4HANA based SAP systems.
      - ASG and NSG rules control the connectivity in the intended manner.
      - Timeout settings identified in the pilot phase have been implemented.
-     - Network latency between SAP application layer VM and DBMS layer complies with the guidelines provided in [SAP Note \#500235](https://launchpad.support.sap.com) and [SAP Note \#1100926](https://launchpad.support.sap.com). When deploying SAP HANA on Azure (Large Instances), take into account the exceptions documented in [SAP HANA (Large Instances) network architecture](/azure/virtual-machines/workloads/sap/hana-network-architecture).
+     - Network latency between SAP application layer VM and DBMS layer complies with the guidelines provided in [SAP Note \#500235](https://launchpad.support.sap.com/#/notes/500235) and [SAP Note \#1100926](https://launchpad.support.sap.com/#/notes/1100926). When deploying SAP HANA on Azure (Large Instances), take into account the exceptions documented in [SAP HANA (Large Instances) network architecture](/azure/virtual-machines/workloads/sap/hana-network-architecture).
      - Encryption has been implemented in the intended manner.
      - Interfaces and applications are available in the newly deployed infrastructure.
 8. Create a playbook that facilitates Azure planned maintenance events. The playbook should define the order in which the systems and Azure VMs should be taken offline and brought back online in case of planned maintenance.

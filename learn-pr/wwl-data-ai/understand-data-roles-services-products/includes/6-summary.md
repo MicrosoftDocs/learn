@@ -2,7 +2,7 @@ Spreadsheets provide a useful tool for quickly transforming data for analysis. H
 
 The Microsoft Azure cloud platform enables you to take analytics to another level. It offers scalable solutions to host your data, centralize data from multiple sources into a data warehouse, and build reports and dashboards using Power BI.
 
-By completing this module, you have learned how to:
+By completing this module, you've learned how to:
 
  -  Describe data systems.
  -  Understand the fundamentals of Azure Data Services.

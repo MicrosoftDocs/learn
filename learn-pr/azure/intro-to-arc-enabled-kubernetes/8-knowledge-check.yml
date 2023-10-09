@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-enabled-kubernetes.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 08/07/2023
+  author: JnHs
+  ms.author: jenhayes
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.custom:
+  - e2e-hybrid
+  - event-tier1-build-2022
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "With Azure Arc-enabled Kubernetes, how is the connection from the cluster to Azure maintained?"
+    choices:
+    - content: "The cluster must be created within an Azure virtual machine."
+      isCorrect: false
+      explanation: "The Azure Arc agents deployed to the cluster enable the connection, regardless of where the cluster exists."
+    - content: "Agents deployed in the cluster maintain a connection to Azure."
+      isCorrect: true
+      explanation: "After Azure Arc agents are deployed, they synchronize cluster state and metadata between the cluster and Azure."
+    - content: "Status is updated manually in the Azure portal."
+      isCorrect: false
+      explanation: "The Azure Arc agents maintain the connection. No manual updates are required."
+  - content: "Which of these is required to connect a Kubernetes cluster to Azure Arc?"
+    choices:
+    - content: "Multiple Azure subscriptions."
+      isCorrect: false
+      explanation: "Only one Azure subscription is needed to connect a Kubernetes cluster to Azure Arc."
+    - content: "Outbound connectivity from the Kubernetes cluster."
+      isCorrect: true
+      explanation: "To connect a Kubernetes cluster to Azure Arc, the cluster must be able to connect to Azure and other required endpoints."
+    - content: "An Azure Active Directory (Azure AD) user account with the **Owner** role."
+      isCorrect: false
+      explanation: "The user account must have at least the **Kubernetes Cluster - Azure Arc Onboarding** role. The **Owner** role is not required."
+  - content: "What type of deployment agent does Azure Arc-enabled Kubernetes use for GitOps?"
+    choices:
+    - content: "Istio"
+      isCorrect: false
+      explanation: "Istio is an open-source service mesh platform. It's not used to implement GitOps for Arc-enabled Kubernetes."
+    - content: "omsagent"
+      isCorrect: false
+      explanation: "The omsagent agent implements Azure Monitor functionality on Kubernetes clusters. It's not used to implement GitOps for Arc-enabled Kubernetes."
+    - content: "Flux"
+      isCorrect: true
+      explanation: "Azure Arc-enabled Kubernetes clusters rely on Flux, an open-source GitOps deployment tool."

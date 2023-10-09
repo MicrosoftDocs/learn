@@ -6,10 +6,10 @@ metadata:
   description: Create your Azure DevOps project.
   ms.date: 07/20/2022
   ms.custom: devdivchpfy22
-  author: kathrynee
-  ms.author: kaelli
+  author: chcomley
+  ms.author: chcomley
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/4-set-up-environment.md)]

@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/06/2022
+  ms.date: 04/21/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/11-knowledge-check.md)]
@@ -21,13 +19,13 @@ quiz:
     choices:
     - content: "1"
       isCorrect: false
-      explanation: "That’s incorrect. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group aren't inherited by the resources in that resource group. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group aren't inherited by the resources in that resource group."
+      explanation: "That’s incorrect. Each resource or resource group can have a maximum of 15 tag name/value pairs."
     - content: "5"
       isCorrect: false
-      explanation: "That’s incorrect. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group aren't inherited by the resources in that resource group. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group aren't inherited by the resources in that resource group."
+      explanation: "That’s incorrect. Each resource or resource group can have a maximum of 15 tag name/value pairs."
     - content: "15"
       isCorrect: true
-      explanation: "That's correct. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group aren't inherited by the resources in that resource group."
+      explanation: "That's correct. Each resource or resource group can have a maximum of 15 tag name/value pairs."
   - content: "In Azure Resource Manager, can the same resource be added to multiple resource groups simultaneously?"
     choices:
     - content: "Yes"
@@ -36,7 +34,7 @@ quiz:
     - content: "No"
       isCorrect: true
       explanation: "That's correct. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
-    - content: "Yes, but you can't delete the resource from one resource group without also deleting it from the others"
+    - content: "Yes, but deleting the resource from one resource group deletes it from the other group(s)."
       isCorrect: false
       explanation: "That’s incorrect. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
   - content: "Which of the following elements in the Azure Resource Manager template scheme is a required element?"
@@ -46,7 +44,7 @@ quiz:
       explanation: "That's correct. The required \"resources\" parameter declares the resource types that are deployed or updated in a resource group or subscription."
     - content: "functions"
       isCorrect: false
-      explanation: "That’s incorrect. The \"functions\" element is not a required element."
+      explanation: "That’s incorrect. The \"functions\" element isn't a required element."
     - content: "parameters"
       isCorrect: false
-      explanation: "That’s incorrect. The \"parameters\" element is not a required element."
+      explanation: "That’s incorrect. The \"parameters\" element isn't a required element."

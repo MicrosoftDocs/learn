@@ -9,6 +9,8 @@ metadata:
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 8
 content: |

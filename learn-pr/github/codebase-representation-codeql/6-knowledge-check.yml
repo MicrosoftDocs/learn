@@ -6,8 +6,8 @@ metadata:
   title: check your knowledge # user input: module title for browser tab and search results
   description: check your knowledge # user input: a description for site search and SEO
   ms.date: 2/10/2022
-  author: sterling463
-  ms.author: csterling
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1 # user input: the estimate time to complete the unit

@@ -1,3 +1,4 @@
+
 A common challenge when building cloud applications is how to manage the credentials in your code for authenticating to cloud services. Keeping the credentials secure is an important task. Ideally, the credentials never appear on developer workstations and aren't checked into source control. Azure Key Vault provides a way to securely store credentials, secrets, and other keys, but your code has to authenticate to Key Vault to retrieve them.
 
 **Managed Identities** for Azure resources is the new name for the service formerly known as Managed Service Identity (MSI) for Azure resources feature in Azure Active Directory (Azure AD) solves the above noted problem. The feature provides Azure services with an automatically managed identity in Azure AD. You can use the identity to authenticate to any service that supports Azure AD authentication, including Key Vault, without any credentials in your code.

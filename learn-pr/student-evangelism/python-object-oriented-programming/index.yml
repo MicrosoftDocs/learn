@@ -7,8 +7,8 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: python
 title: Introduction to object-oriented programming with Python
 summary: This module will teach you how to model problems by using object-oriented programming (OOP) concepts. You'll also learn to turn your model into working code by using OOP concepts like classes, attributes, and methods.
 abstract: |
@@ -23,7 +23,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - vs-code
 prerequisites: |
   - Basic knowledge of Python - syntax, writing and invoking functions, creating variables, reading inputs, and generating outputs from the Python console
   - Familiarity with using a text editor or IDE  

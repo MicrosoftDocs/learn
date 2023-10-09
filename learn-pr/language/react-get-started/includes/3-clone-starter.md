@@ -14,7 +14,7 @@ We'll use a starter project so we can begin writing code quickly. The starter co
 
     # Windows
     git clone https://github.com/MicrosoftDocs/mslearn-react
-    cd mslearn-react\code\0-starter
+    cd mslearn-react/code/0-starter
     ```
 
 1. Install the required packages by using the following command in the same terminal or command window:
@@ -38,7 +38,7 @@ Let's explore the folders and files in the starter project:
     - **React** for React
     - **ReactDOM** to mount our application inside the browser
   - Scripts:
-    - **dev** to run the development server from Snowpack: 
+    - **start** to run the development server from Snowpack: 
       - It virtually builds all JavaScript and HTML files.
       - It hosts and automatically restarts the server as files are changed.
     - **build** to generate production files for deployment

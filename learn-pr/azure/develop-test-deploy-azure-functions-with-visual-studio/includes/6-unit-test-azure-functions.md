@@ -20,7 +20,7 @@ The first step is to create a project that contains your unit tests, and add it 
 
 1. Select **Next**. The **Additional information** window appears.
 
-1. Under **Target Framework**. accept the default value of **.NET Core 3.1 (Long-term support)**.
+1. Under **Target Framework**. accept the default value of **.NET 6.0 (Long-term support)**.
 
 1. Select **Create**.
 
@@ -90,7 +90,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     response.Wait();
     ```
 
-1. Add the following code to the method. This code checks that the response from the Azure Function is correct. In this case, the function should return an *OK* response, containing the expected data in the body.
+1. Add the following code to the method. This code checks that the response from the function is correct. In this case, the function should return an *OK* response, containing the expected data in the body.
 
     ```csharp
     // Check that the response is an "OK" response

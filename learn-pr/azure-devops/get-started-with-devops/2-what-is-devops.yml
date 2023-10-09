@@ -5,10 +5,10 @@ metadata:
   description: What is DevOps?
   ms.date: 06/15/2022
   ms.custom: devdivchpfy22
-  author: kathrynee
-  ms.author: kaelli
+  author: chcomley
+  ms.author: chcomley
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: What is DevOps?
 durationInMinutes: 5
 content: |

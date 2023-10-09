@@ -4,49 +4,47 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/18/2022
+  ms.date: 02/28/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "Azure Monitor organizes log data into which of the following?"
+  - content: "How does Azure Monitor organize log data?"
     choices:
-    - content: "Tables"
-      isCorrect: true
-      explanation: "Correct. Azure Monitor log data is organized in tables."
     - content: "Event queues"
       isCorrect: false
-      explanation: "Incorrect. Azure Monitor log data isn't organized in event queues. Is there another more structured option?"
+      explanation: "Incorrect. Azure Monitor log data doesn't use event queues. Is there a more structured option?"
     - content: "Text files"
       isCorrect: false
-      explanation: "Incorrect. Text files wouldn't be an efficient way to organize log data."
-  - content: "An online retailer has a large web farm with more than 100 virtual machines. They would like to use Log Analytics to ensure these machines are responding to requests. To automate the process, the team will create a search query. Which source table should be used?"
-    choices:
-    - content: "Event"
-      isCorrect: false
-      explanation: "Incorrect. The Events table logs Windows computer events."
-    - content: "SysLog"
-      isCorrect: false
-      explanation: "Incorrect. The Syslog table logs Linux computer events."
-    - content: "Heartbeat"
+      explanation: "Incorrect. Text files aren't an efficient way to organize log data."
+    - content: "Tables"
       isCorrect: true
-      explanation: "Correct. The Heartbeat table reports on agent health."
-  - content: "Log analytics agents can run on which of the following?"
+      explanation: "Correct. Azure Monitor log data organizes data by using tables."
+  - content: "What KQL commands build an aggregation of input data and produce visuals for query results?"
     choices:
-    - content: "Only on physical computers."
-      isCorrect: false
-      explanation: "Incorrect. Log analytic agents can also run on virtual computers."
-    - content: "Only on cloud computers."
-      isCorrect: false
-      explanation: "Incorrect. Log analytic agents can also run on on-premises computers."
-    - content: "On many different platforms including other cloud providers."
+    - content: "`summarize` and `render`"
       isCorrect: true
-      explanation: "Correct. Log analytics agents can run on many different platforms including other providers."
+      explanation: "Correct. The `summarize` operator creates a table that aggregates your input table content. The `render` operator prepares a visualization of your query results, such as a pie chart, scatter graph, or time pivot."
+    - content: "`aggregate` and `visualize`"
+      isCorrect: false
+      explanation: "Incorrect. You can compose an aggregation function in KQL, and also create visualizations, but `aggregate` and `visualize` aren't recognized commands in KQL."
+    - content: "`count` and `project`"
+      isCorrect: false
+      explanation: "Incorrect. The `count` operator shows the number of records in an input record set. The `project` operator selects columns to include, drop, or insert."
+  - content: "Log Analytics agents can run on which resource?"
+    choices:
+    - content: "Only on cloud computers"
+      isCorrect: false
+      explanation: "Incorrect. Log Analytic agents can also run on on-premises computers."
+    - content: "On multiple platforms including other cloud providers"
+      isCorrect: true
+      explanation: "Correct. Log Analytics agents can run on many different platforms, including other providers."
+    - content: "Only on physical computers"
+      isCorrect: false
+      explanation: "Incorrect. Log Analytic agents can also run on virtual computers."

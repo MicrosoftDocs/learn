@@ -1,0 +1,27 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-choose-data-type.exercise-reference-types
+title: Exercise - Discover reference types
+metadata:
+  title: Exercise - Discover reference types
+  description: "Exercise - Discover reference types"
+  ms.date: 09/12/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-reference-types.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What variable type is created if the `new` operator is used to create a variable?"
+    choices:
+    - content: "value"
+      isCorrect: false
+      explanation: "That’s incorrect. The `new` operator isn't used to create value types on the stack."
+    - content: "reference"
+      isCorrect: true
+      explanation: "That’s correct. The `new` operator is used to allocate memory on the heap for a reference type."
+    - content: "integer type"
+      isCorrect: false
+      explanation: "That’s incorrect. The `new` operator isn't used to create an integer variable. Integers are value types."

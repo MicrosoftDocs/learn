@@ -1,3 +1,4 @@
+
 When passing a secure value (such as a password) as a parameter during deployment, you can retrieve the value from an Azure Key Vault.
 
 Reference the Key Vault and secret in your parameter file.
@@ -14,7 +15,7 @@ To access the secrets inside this Key Vault from a Resource Manager deployment, 
 
 ## Using Azure CLI
 
-The following code snippet is an example how you can deploy a Key Vault and secret using Azure CLI:
+The following code snippet is an example of how you can deploy a Key Vault and secret using Azure CLI:
 
 ```PowerShell
 keyVaultName='{your-unique-vault-name}'
@@ -42,13 +43,13 @@ az keyvault secret set --vault-name $keyVaultName --name 'vmAdminPassword' --val
 
 ## Enable access to the secret
 
-Other than setting the Key Vault property **enabledForTemplateDeployment** to **true**, the user deploying the template must have `Microsoft.KeyVault/vaults/deploy/action` permission for the scope that contains the Key Vault.
+Other than setting the Key Vault property **enabledForTemplateDeployment** to **true**, the user deploying the template must have `Microsoft.KeyVault/vaults/deploy/action` permission for the Key Vault scope.
 
-Also, including the resource group and Key Vault. The Owner and Contributor roles both grant this access.
+Also including the resource group and Key Vault. The Owner and Contributor roles both grant this access.
 
 If you create the Key Vault, you're the owner, so you inherently have permission.
 
-However, if the Key Vault is under a different subscription, the owner of the Key Vault must grant the access.
+However, if the Key Vault is under a different subscription, the owner of the Key Vault must grant access.
 
 ## Reference a secret with static ID
 
@@ -56,7 +57,7 @@ The Key Vault is referenced in the parameter file and not the template.
 
 The following image shows how the parameter file references the secret and passes that value to the template.
 
-:::image type="content" source="../media/flow-secret-template-deployment-d278f75c.png" alt-text="Illustration of the flow of a secret during template deployment. The parameter file references the secret from the template and passes that value to the template.":::
+:::image type="content" source="../media/flow-secret-template-deployment-d278f75c.png" alt-text="Diagram showing the illustration of the flow of a secret during template deployment. The parameter file references the secret from the template and passes that value to the template.":::
 
 
 The following template deploys an SQL database that includes an administrator password.
@@ -98,7 +99,7 @@ The password parameter is set to a secure string. However, the template doesn't 
 
 ```
 
-Now you can create a parameter file for the preceding template. In the parameter file, specify a parameter that matches the name of the parameter in the template.
+Now you can create a parameter file for the preceding template. In the parameter file, specify a parameter that matches the parameter's name in the template.
 
 For the parameter value, reference the secret from the Key Vault. You reference the secret by passing the resource identifier of the Key Vault and the secret's name.
 
@@ -134,4 +135,4 @@ You would need to deploy the template and pass the parameter file to the templat
 
 For more information, use[ Azure Key Vault to pass secure parameter values during deployment](/azure/azure-resource-manager/resource-manager-keyvault-parameter) for more details.
 
-There are also details available on this web page for reference to a secret with a dynamic ID.
+There are also details on this web page for reference to a secret with a dynamic ID.

@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-standard.use-audit-log-searches-to-investigate-common-support-issues
+title: Use audit log searching to investigate common support issues
+metadata:
+  title: Use audit log searching to investigate common support issues
+  description: "Use audit log searching to investigate common support issues."
+  ms.date: 3/20/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-use-audit-log-searches-to-investigate-common-support-issues.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "As the Enterprise Admin for Lucerne Publishing, Patti Fernandez noticed that mailbox audit events for some users weren't found in audit log searches. This situation occurred when Lucerne's compliance team used either the Microsoft Purview compliance portal or the Office 365 Management Activity API to run the search. What was the probable cause of this situation?"
+    choices:
+    - content: "The missing events were administrator activity for Azure AD-related events"
+      isCorrect: false
+      explanation: "Incorrect. These events still show up in the search results; however, the IP address field displays a null value."
+    - content: "The compliance team should have used the Search-UnifiedAuditLog cmdlet to run the search"
+      isCorrect: false
+      explanation: "Incorrect. The probable cause of this situation wouldn't have been resolved by using the Search-UnifiedAuditLog cmdlet to run the search."
+    - content: "When either of these search methods is used, mailbox audit events are returned only for users with E5 licenses"
+      isCorrect: true
+      explanation: "Correct. Even when mailbox auditing is turned on by default for an organization, mailbox audit events for some users won't be found in audit log searches when the organization uses any of the following methods: the Microsoft Purview compliance portal, the Search-UnifiedAuditLog cmdlet, or the Office 365 Management Activity API. Why? Because mailbox audit events are returned only for users with E5 licenses when you use one of these methods to search the unified audit log."

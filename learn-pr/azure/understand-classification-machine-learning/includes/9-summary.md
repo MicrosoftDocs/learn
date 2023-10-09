@@ -6,4 +6,4 @@ We discussed how assessing classification models can be slightly more difficult 
 
 We also explored how adding and combining features could result in substantial model improvements. Importantly, we showed how really thinking about what your data mean is the key to achieving the best result.
 
-Remember that while we worked with logistic regression here, most topics we covered apply to many other types of classification models as well, including those that try to predict more than two possible categories.
+In this module, we worked with logistic regression. But keep in mind, that most of the subjects we covered here apply to many other types of classification models as well. Including models that try to predict more than two possible categories.

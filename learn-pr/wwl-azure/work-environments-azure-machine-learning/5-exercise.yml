@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-environments-azure-machine-learning.exercise
+title: Exercise - Work with environments
+metadata:
+  title: Exercise - Work with environments
+  description: "Exercise - Work with environments"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise.md)]

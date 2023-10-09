@@ -1,4 +1,4 @@
-As part of the plan to migrate Contoso on-premises servers to Hyper-V on Windows Server 2019, you need to determine the most appropriate management options for the various Hyper-V workloads and their geographical location.
+As part of the plan to migrate Contoso on-premises servers to Hyper-V on Windows Server 2022, you need to determine the most appropriate management options for the various Hyper-V workloads and their geographical location.
 
 Hyper-V Manager provides a GUI for managing local and remote Hyper-V hosts. Hyper-V Manager is available when you install the Hyper-V Management tools. These are included with a full Hyper-V Server role installation, or you can install them as a tools-only installation.
 
@@ -31,15 +31,15 @@ Hyper-V Manager can perform the Hyper-V management functions listed in the follo
 |Manage checkpoints|You can enable or disable checkpoint creation for your VMs in Hyper-V Manager, and choose between standard or production checkpoints.|
 |Enable Hyper-V Integration Services|With Hyper-V Manager, you can enable and disable Hyper-V Integration Services.|
 |Configure settings for Hyper-V features|You can use Hyper-V Manager to configure settings for Hyper-V features. For example, you can select the source and destination computers for live migration or specify a replica server for use with Hyper-V Replica.|
-|Previous version support|When using Hyper-V Manager on Windows Server 2019 or Windows 10, you can still manage hosts installed with previous operating systems such as Windows Server 2016, Windows Server 2012, or Windows Server 2012 R2.|
+|Previous version support|When using Hyper-V Manager on Windows Server 2022, Windows Server 2019 or Windows 10, you can still manage hosts installed with previous operating systems such as Windows Server 2016, Windows Server 2012, or Windows Server 2012 R2.|
 |Support for WS-Management protocol|Hyper-V Manager supports connections to Hyper-V hosts over the Web Services Management Protocol (WS-Management Protocol). This enables Hyper-V Manager to communicate by using the Kerberos protocol NTLM or Credential Security Support Provider (CredSSP). When you use CredSSP, Active Directory Domain Services (AD DS) delegation isn't necessary. This makes it easier to enable remote administration, because WS-Management Protocol communicates either over port 80 or port 443, which are the default open ports.|
 
 Hyper-V Manager supports the following general features:
 
-- Previous version support. When using Hyper-V Manager on Windows Server 2019 or Windows 10, you can still manage hosts installed with previous operating systems such as Windows Server 2016, Windows Server 2012, or Windows Server 2012 R2.
+- Previous version support. When using Hyper-V Manager on Windows Server 2022, Windows Server 2019, or Windows 10, you can still manage hosts installed with previous operating systems such as Windows Server 2016, Windows Server 2012, or Windows Server 2012 R2.
 - Support for WS-Management Protocol. Hyper-V Manager supports connections to Hyper-V hosts over the WS-Management Protocol. This enables Hyper-V Manager to communicate by using the Kerberos protocol NTLM or CredSSP. When you use CredSSP, Active Directory Domain Services (AD DS) delegation isn't necessary. This makes it easier to enable remote administration, because WS-Management Protocol communicates either over port 80 or port 443, which are the default open ports.
 
->[!TIP]
+> [!TIP]
 > Run the Hyper-V Server role on Windows Server Core hosts. On hosts that don't have a GUI, manage VMs by using one of the Hyper-V management tools. You can manage your Hyper-V hosts collectively while reducing the Hyper-V Server footprint.
 
 ## Other methods to manage Hyper-V on Windows Server

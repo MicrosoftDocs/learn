@@ -17,12 +17,12 @@ quiz:
   questions:
   - content: "What benefit does the threat modeling tool not provide?"
     choices:
-    - content: "Generated threats are based on the entire diagram, not just each element or each individual interaction"
+    - content: "Generated threats are based on the entire diagram, not just each element or each individual interaction."
       isCorrect: true
       explanation: "The tool only looks at individual elements and single interactions"
-    - content: "Threats, stencils and stencil properties can be changed"
+    - content: "Threats, stencils and stencil properties can be changed."
       isCorrect: false
       explanation: "The fields can be changed"
-    - content: "Ways to reduce or eliminate risk are included with each generated threat"
+    - content: "Ways to reduce or eliminate risk are included with each generated threat."
       isCorrect: false
       explanation: "While some templates only have threats, newer versions do have risk reduction strategies"

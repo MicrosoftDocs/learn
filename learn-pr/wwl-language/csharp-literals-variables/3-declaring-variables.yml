@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-literals-variables.declaring-variables
+title: Declare variables
+metadata:
+  title: Declare variables
+  description: "Declare variables"
+  ms.date: 09/22/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-declaring-variables.md)]
+interactive: csharp

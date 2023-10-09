@@ -32,15 +32,15 @@ quiz:
       explanation: Elastic Cloud on Azure is a software-as-a-service (SaaS) offering.
     - content: Elastic on Azure virtual machines
       isCorrect: false
-      explanation: Elastic on Azure virtual machines allows you to manage the underlying infrastructure.
+      explanation: Elastic on Azure virtual machines, allows you to manage the underlying infrastructure.
     - content: Elastic on Azure Kubernetes Service
       isCorrect: false
       explanation: Elastic on AKS allows you to manage the underlying infrastructure.
-  - content: Of the following services, which is supported through native integration with the Elastic Stack?
+  - content: Of the following services, which one is supported through native integration with the Elastic Stack?
     choices:
     - content: iTunes
       isCorrect: false
-      explanation: There is no integration with Elastic and iTunes.
+      explanation: There's no integration with Elastic and iTunes.
     - content: SQL Server
       isCorrect: true
       explanation: The Elastic Stack integrates with SQL Server.

@@ -24,7 +24,7 @@ az webapp deployment source config-zip \
     --name <your-app-name>
 ```
 
-The deployment will take a couple minutes, during which time you'll get status output. A status code of 202 means successful. 
+The deployment will take a few minutes, during which time you'll get status output. A 202 status code means the deployment was successful.
 
 ## Verify the deployment
 
@@ -54,7 +54,7 @@ The easiest way to create deployment credentials is from the Azure CLI.
 
 ## Deploy the Java application package with WAR deploy
 
-Let's deploy our Java application with WAR deploy. WAR deploy is part of the Kudu REST API, an administrative service interface available on all App Service web apps, which can be accessed over HTTP. The simplest way to use WAR deploy is with the `curl` HTTP utility from the command line.
+Let's deploy our Java application with WAR deploy. WAR deploy is part of the Kudu REST API, an administrative service interface available on all App Service web apps, which you can access over HTTP. The simplest way to use WAR deploy is with the `curl` HTTP utility from the command line.
 
 Run the following commands to deploy your Java web app with WAR deploy. Replace `<username>` and `<password>` with the Deployment User username and password you created earlier, and replace `<your-app-name>` with the name of the web app you created in the Azure portal.
 
@@ -71,7 +71,7 @@ When the command finishes running, open a new browser tab and go to `https://<yo
 
 ## Deploy with `az webapp up`
 
-Let's deploy our Node.js application with `az webapp up`. This command will package up our application and send it to our App Service instance, where it will be built and deployed.
+Let's deploy our Node.js application with `az webapp up`. This command packages up our application and sends it to our App Service instance, where it's built and deployed.
 
 First, we need to gather some information about our web app resource. Run the following commands to set shell variables that contain our app name, resource group name, plan name, sku, and location. Each of these uses a different `az` command to request the information from Azure; `az webapp up` needs these values to target our existing web app.
 
@@ -83,17 +83,17 @@ export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
 export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
 ```
 
-Now, run `az webapp up` with the appropriate values. Make sure you are in the `helloworld` directory before running this command.
+Now, run `az webapp up` with the appropriate values. Make sure you're in the `helloworld` directory before running this command.
 
 ```bash
 az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
 ```
 
-The deployment will take a few minutes to propagate. You'll be able to view the progress in the status output. A 202 return means your deployment was successful.
+The deployment will take a few minutes to propagate. You'll be able to view the progress in the status output. A 202 status code means your deployment was successful.
 
 ## Verify the deployment
 
-Let's browse to our application. The last line of output from `az webapp up` before the JSON code block has a link to your app. Click it to navigate there in a new browser tab. The page will take a moment to load, as App Service is initializing your app for the first time.
+Let's browse to our application. The last line of output from `az webapp up` before the JSON code block has a link to your app. Select it to navigate there in a new browser tab. The page will take a moment to load, as App Service is initializing your app for the first time.
 
 Once it loads, you'll get the greeting message from your app. You've deployed successfully!
 
@@ -105,7 +105,7 @@ Once it loads, you'll get the greeting message from your app. You've deployed su
 
 ## Deploy with `az webapp up`
 
-Let's deploy our Python application with `az webapp up`. This command will package up our application and send it to our App Service instance, where it will be built and deployed.
+Let's deploy our Python application with `az webapp up`. This command packages up our application and sends it to our App Service instance, where it's built and deployed.
 
 First, we need to gather some information about our web app resource. Run these commands to set shell variables that contain our app's name, resource group name, plan name, sku, and location. These use different `az` commands to request the information from Azure; `az webapp up` needs these values to target our existing web app.
 
@@ -117,7 +117,7 @@ export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
 export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
 ```
 
-Now, run `az webapp up` with the appropriate values. Make sure you are in the `BestBikeApp` directory before running this command.
+Now, run `az webapp up` with the appropriate values. Make sure you're in the `BestBikeApp` directory before running this command.
 
 ```bash
 cd ~/BestBikeApp
@@ -128,7 +128,7 @@ The deployment will take a few minutes, during which time you'll get status outp
 
 ## Verify the deployment
 
-Let's browse to your application. In the output, just above the JSON code block, there's a line with a URL. Select that link to open your app in a new browser tab. The page may take a moment to load because the App Service is initializing your app for the first time.
+Let's browse to your application. In the output, just before the JSON code block, there's a line with a URL. Select that link to open your app in a new browser tab. The page may take a moment to load because the App Service is initializing your app for the first time.
 
 Once your program loads, you'll get the greeting message from your app. You've deployed successfully!
 

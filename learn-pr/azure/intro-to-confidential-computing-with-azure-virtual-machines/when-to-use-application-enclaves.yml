@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.when-to-use-application-enclaves
+title: When to use application enclaves versus VM-level confidentiality
+metadata:
+  title: When to use application enclaves versus VM-level confidentiality
+  description: In this unit, you'll learn when to use application enclaves versus VM-level confidentiality.
+  ms.date: 03/22/2023
+  author: cynthn
+  ms.author: cynthn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/when-to-use-application-enclaves.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which two technology options are available for virtual machines and confidential computing in Azure?
+    choices:
+    - content: VMs with application enclaves and VM-level confidentiality.
+      isCorrect: true
+      explanation: "Correct: For confidential computing, you can choose from VMs with application enclaves and VM-level confidentiality."
+    - content: Azure Confidential Ledger and SQL Azure Always Encrypted.
+      isCorrect: false
+      explanation: "Incorrect: These two capabilities are part of the Azure confidential computing portfolio but do not apply directly to running virtual machines within the confidential computing portfolio."
+    - content: S and B series VMs.
+      isCorrect: false
+      explanation: "Incorrect: S-series and B-series virtual machines do not support Azure confidential computing capabilities."
+  - content: If you wanted to quickly run and test a virtual machine with confidential memory for the entire VM, which technology would you choose?
+    choices:
+    - content: Application enclaves.
+      isCorrect: false
+      explanation: "Incorrect: Enclaves provide line-by-line code security but can take longer to implement."
+    - content: Virtual machine-level confidentiality.
+      isCorrect: true
+      explanation: "Correct: It's a portfolio of products designed to meet trust and security requirements for sensitive workloads."
+    - content: Azure Key Vault Managed HSM.
+      isCorrect: false
+      explanation: "Incorrect: This might be used in your solution, but virtual machine-level confidentiality is the correct answer."

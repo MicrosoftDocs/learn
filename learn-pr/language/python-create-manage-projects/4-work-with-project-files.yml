@@ -4,10 +4,12 @@ title: Work with project files
 metadata:
   title: Work with project files
   description: Look at how to create a project file, and then manage your dependent libraries by upgrading them and removing them when they're no longer needed.
-  ms.date: 12/02/2021
+  ms.date: 01/25/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 durationInMinutes: 6

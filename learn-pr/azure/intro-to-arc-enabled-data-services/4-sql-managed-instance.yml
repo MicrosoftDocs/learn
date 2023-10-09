@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-arc-enabled-data-services.4-sql-managed-instance
 metadata:
   title: Deploy a managed database service with Azure Arc-enabled SQL Managed Instance
-  description: This unit will describe what Azure Arc-enabled SQL Managed instance provides and why it provides a hybrid data solution for SQL applications. This unit will also compare the features and management capabilities of Azure Arc-enabled SQL Managed Instance with SQL Server and Azure SQL Managed Instance. This unit will also provide more details on the interfaces used with Azure Arc-enabled SQL Managed Instance.
+  description: This unit describes what Azure Arc-enabled SQL Managed instance provides and why it provides a hybrid data solution for SQL applications. This unit also compares the features and management capabilities of Azure Arc-enabled SQL Managed Instance with SQL Server and Azure SQL Managed Instance. This unit also provides more details on the interfaces used with Azure Arc-enabled SQL Managed Instance.
   ms.date: 06/28/2021
   author: MikeRayMSFT
   ms.author: mikeray
@@ -23,41 +23,41 @@ quiz:
       explanation: "Incorrect. General purpose service tiers provide high availability through Kubernetes and shared storage."
     - content: "Enterprise"
       isCorrect: false
-      explanation: "Incorrect. Enterprise isn't a service tier deployment option"
+      explanation: "Incorrect. Enterprise isn't a service tier deployment option."
     - content: "Business Critical"
       isCorrect: true
-      explanation: "Correct. Business Critical service tiers provide high availability with replicas using Always On Availability Groups"
-  - content: "You can view billing, metrics, and logs for Azure Arc-enabled SQL Managed Instance in the Azure portal using indirect connected mode"
+      explanation: "Correct. Business Critical service tiers provide high availability with replicas using Always On Availability Groups."
+  - content: "You can view billing, metrics, and logs for Azure Arc-enabled SQL Managed Instance in the Azure portal using indirect connected mode."
     choices:
     - content: "true"
       isCorrect: true
-      explanation: "Correct. If you use export and upload through the az CLI, you can view billing, metrics, and logs in the Azure portal"
+      explanation: "Correct. If you use export and upload through the Azure CLI, you can view billing, metrics, and logs in the Azure portal."
     - content: "false"
       isCorrect: false
-      explanation: "Incorrect. You can view billing, metrics, and logs in the Azure portal using indirect connected mode provided you export and upload using the az CLI"
+      explanation: "Incorrect. You can view billing, metrics, and logs in the Azure portal using indirect connected mode provided you export and upload using the Azure CLI."
   - content: "Users configure automated backup for Azure Arc-enabled SQL Managed Instance using what options?"
     choices:
-    - content: "A server configuration setting using the T-SQL procedure sp_configure"
+    - content: "A server configuration setting using the T-SQL procedure sp_configure."
       isCorrect: false
-      explanation: "Incorrect. sp_configure doesn't provide an option to configure automated backups for Azure Arc-enabled SQL Managed Instance"
-    - content: "Long-term backup retention in the Azure portal"
+      explanation: "Incorrect. sp_configure doesn't provide an option to configure automated backups for Azure Arc-enabled SQL Managed Instance."
+    - content: "Long-term backup retention in the Azure portal."
       isCorrect: false
-      explanation: "Incorrect. Long-term backup retention settings in the Azure portal are used for Azure SQL Managed Instance"
-    - content: "Configure a desired Recovery Point Objective (RPO) and retention period"
+      explanation: "Incorrect. Long-term backup retention settings in the Azure portal are used for Azure SQL Managed Instance."
+    - content: "Configure a desired Recovery Point Objective (RPO) and retention period."
       isCorrect: true
-      explanation: "Correct. Adjusting the RPO settings will dictate how often a transaction log backup occurs and adjusting retention period will affect how long backups are kept"
+      explanation: "Correct. Adjusting the RPO settings dictates how often a transaction log backup occurs and adjusting retention period affects how long backups are kept."
   - content: "Which tool can be used to manage an Azure Arc-enabled SQL Managed Instance?"
     choices:
     - content: "Azure Data Studio (ADS)"
       isCorrect: false
-      explanation: "Incorrect. There is more than one tool to manage an Azure Arc-enabled SQL Managed Instance"
+      explanation: "Incorrect. There's more than one tool to manage an Azure Arc-enabled SQL Managed Instance."
     - content: "kubectl"
       isCorrect: false
-      explanation: "Incorrect. There is more than one tool to manage an Azure Arc-enabled SQL Managed Instance"
-    - content: "az CLI"
+      explanation: "Incorrect. There's more than one tool to manage an Azure Arc-enabled SQL Managed Instance."
+    - content: "Azure CLI"
       isCorrect: false
-      explanation: "Incorrect. There is more than one tool to manage an Azure Arc-enabled SQL Managed Instance"
+      explanation: "Incorrect. There's more than one tool to manage an Azure Arc-enabled SQL Managed Instance."
     - content: "All of the above"
       isCorrect: true
-      explanation: "Correct. Azure Data Studio, kubectl, and az CLI can all be used to manage an Azure Arc-enabled SQL Managed Instance"
+      explanation: "Correct. Azure Data Studio, kubectl, and Azure CLI can all be used to manage an Azure Arc-enabled SQL Managed Instance."
 

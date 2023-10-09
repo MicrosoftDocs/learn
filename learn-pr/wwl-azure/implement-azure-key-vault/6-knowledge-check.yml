@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/06/2023
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -17,21 +17,21 @@ quiz:
     choices:
     - content: "Service principal and certificate"
       isCorrect: false
-      explanation: "That's incorrect. This method is not recommended because it is difficult to automatically rotate the bootstrap secret that's used to authenticate to Key Vault."
+      explanation: "Incorrect. This method is not recommended because it is difficult to automatically rotate the bootstrap secret that's used to authenticate to Key Vault."
     - content: "Service principal and secret"
       isCorrect: false
-      explanation: "That's incorrect. This method is not recommended because the application owner or developer must rotate the certificate."
+      explanation: "Incorrect. This method is not recommended because the application owner or developer must rotate the certificate."
     - content: "Managed identities"
       isCorrect: true
-      explanation: "That's correct. The benefit of this approach is that Azure automatically rotates the identity."
-  - content: "Azure Key Vault protects data when it is traveling between Azure Key Vault and clients. What protocol does it use for encryption?"
+      explanation: "Correct. The benefit of this approach is that Azure automatically rotates the identity."
+  - content: "Azure Key Vault protects data when it's traveling between Azure Key Vault and clients. What protocol does it use for encryption?"
     choices:
     - content: "Secure Sockets Layer"
       isCorrect: false
-      explanation: "That's incorrect. The Secure Sockets Layer protocol has been replaced with the Transport Layer Security protocol."
+      explanation: "Incorrect. The Secure Sockets Layer protocol has been replaced with the Transport Layer Security protocol."
     - content: "Transport Layer Security"
       isCorrect: true
-      explanation: "That's correct. Azure Key Vault enforces Transport Layer Security protocol to protect data when it’s traveling between Azure Key Vault and clients."
+      explanation: "Correct. Azure Key Vault enforces Transport Layer Security protocol to protect data when it’s traveling between Azure Key Vault and clients."
     - content: "Presentation Layer"
       isCorrect: false
-      explanation: "That's incorrect. Presentation Layer is part of the Open Systems Interconnection model and is not a security protocol."
+      explanation: "Incorrect. Presentation Layer is part of the Open Systems Interconnection model and is not a security protocol."

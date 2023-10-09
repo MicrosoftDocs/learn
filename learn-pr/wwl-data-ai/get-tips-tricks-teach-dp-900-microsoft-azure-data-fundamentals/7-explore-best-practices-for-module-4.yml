@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals.explore-best-practices-for-module-4
+title: Explore best practices for module 4
+metadata:
+  title: Explore best practices for module 4
+  description: "Explore best practices for module 4"
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-explore-best-practices-for-module-4.md)]

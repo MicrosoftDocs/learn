@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-network-security.knowledge-check
+title: Knowledge check - Design solutions for network security
+metadata:
+  title: Knowledge check - Design solutions for network security
+  description: "Knowledge check for module on: design solutions for network security."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 3
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+    - content: "Which of the following correctly describes a good practice for network segmentation in Azure landing zones?"
+      choices:
+        - content: "Use one virtual network for all resources to simplify routing."
+          isCorrect: false
+          explanation: "A single virtual network can lead to complex routing tables and a lack of isolation for workloads. "
+        - content: "Use separate virtual networks for each workload for maximum isolation."
+          isCorrect: true
+          explanation: "Segmenting different workloads into separate virtual networks provides isolation and reduced attack surface."
+        - content: "Use separate subnets within the same virtual network for each workload to reduce cost."
+          isCorrect: false
+          explanation: "Using subnets can be a good way to split up a virtual network, but it does not provide the same level of isolation as using separate virtual networks."
+        - content: "Allow all internal traffic by default to avoid configuration complexity."
+          isCorrect: false
+          explanation: "Blocking unnecessary internal traffic can improve security and reduce complexity."
+    - content: "What is a Network Security Group (NSG) used for in Azure?"
+      choices:
+        - content: "An NSG is used to deploy and manage firewall appliances in Azure."
+          isCorrect: false
+          explanation: "An NSG is a virtual firewall for filtering network traffic to and from Azure resources."
+        - content: "An NSG is used to manage user access to Azure resources."
+          isCorrect: false
+          explanation: "Azure Role-Based Access Control (RBAC) is used to manage user permissions on Azure resources."
+        - content: "An NSG is used to set inbound and outbound rules for network traffic."
+          isCorrect: true
+          explanation: "An NSG allows organizations to create inbound and outbound rules for network traffic to and from its resources in Azure."
+        - content: "An NSG is used to connect virtual networks to other virtual networks or on-premises networks."
+          isCorrect: false
+          explanation: "Azure VPN Gateway can be used to connect virtual networks to each other or to on-premises networks."
+    - content: "What is traffic inspection, and why is it important in cloud environments?"
+      choices:
+        - content: "Traffic inspection is a method of observing traffic patterns to detect unauthorized activity."
+          isCorrect: false
+          explanation: "Traffic inspection is a process of analyzing network traffic to detect and block potentially harmful traffic."
+        - content: "Traffic inspection is used to monitor internet traffic for content filters and application controls."
+          isCorrect: false
+          explanation: "Content filtering and application control are important use cases for traffic inspection, but they do not cover the full scope of its functionality."
+        - content: "Traffic inspection is used to detect and prevent attacks before they reach their targets."
+          isCorrect: true
+          explanation: "Traffic inspection can detect and prevent attacks such as DDoS, port scans, and malware infections before they reach their intended targets."
+        - content: "Traffic inspection is used to segregate public-facing services from private ones to reduce attack surfaces."
+          isCorrect: false
+          explanation: "Segregating public-facing services from private ones is an important security consideration, but it is not the primary purpose of traffic inspection."
+    - content: "What are some benefits of using Microsoft Defender for DNS in Azure?"
+      choices:
+        - content: "Defender for DNS detects and blocks all types of malicious web traffic."
+          isCorrect: false
+          explanation: "While Defender for DNS can block many types of malicious web traffic, it is not foolproof and should be used in conjunction with other security measures."
+        - content: "Defender for DNS uses machine learning algorithms to detect threat patterns in real-time."
+          isCorrect: true
+          explanation: "Defender for DNS uses advanced analytics and machine learning algorithms to identify and stop malicious traffic in real-time."
+        - content: "Defender for DNS increases the speed of DNS resolution through the use of caching."
+          isCorrect: false
+          explanation: "While Defender for DNS may provide advantages over traditional DNS service, it does not directly impact the speed of DNS resolution."
+        - content: "Defender for DNS provides automatic updates of DNS records to minimize misconfigurations."
+          isCorrect: false
+          explanation: "While it may provide some benefits in terms of management and automation, Defender for DNS does not directly impact DNS record configuration."  

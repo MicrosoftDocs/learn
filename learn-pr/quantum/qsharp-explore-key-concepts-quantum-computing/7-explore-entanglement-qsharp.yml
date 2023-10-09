@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Explore entanglement with Q# and Azure Quantum
   description: Learn about entanglement in quantum computing by using Q# examples.
   ms.date: 09/09/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: bradben
+  ms.author: brbenefield
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

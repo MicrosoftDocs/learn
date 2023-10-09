@@ -8,7 +8,7 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: bicep
 title: Test your Bicep code by using GitHub Actions
 summary: |
   Validate and test your Bicep code in your deployment workflow. You'll use linting, preflight validation, and the what-if operation to validate your Azure changes before you deploy, and you'll test your resources after each deployment.

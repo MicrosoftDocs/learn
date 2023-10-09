@@ -4,6 +4,9 @@ Suppose you're working on the pizza delivery company's website and you've routed
 
 Here, you'll learn how to use route parameters to specify parts of the URL to process in your code.
 
+> [!NOTE]
+> The code blocks in this unit are illustrative examples. You'll write your own code in the next unit.
+
 ## Route parameters
 
 Earlier in this module, you learned how parts of the URI that the user requests can be used to route the request to the right component. You often want to use other parts of the URI as a value in your rendered page. For example, suppose the user requests:
@@ -112,7 +115,7 @@ Now suppose the user tried to specify two favorites by requesting the URI `http:
 
 <h1>Choose a Pizza</h1>
 
-<p>Your favorites pizza are: @Favorites</p>
+<p>Your favorite pizzas are: @Favorites</p>
 
 @code {
 	[Parameter]

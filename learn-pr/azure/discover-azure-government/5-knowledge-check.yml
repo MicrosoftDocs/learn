@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: A knowledge check for Discover the potential of Azure for government.
   ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
+  author: anaharris-ms
+  ms.author: anaharris
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
@@ -43,7 +43,7 @@ quiz:
     - content: "Azure Blueprints."
       isCorrect: true
       explanation: "Correct. Azure Blueprints is a service that helps automate compliance and cybersecurity risk management in cloud environments."
-  - content: "Which of the following may provide solution for customers when Microsoft doesn't have an in-country/region cloud presence and can't meet data sovereignty requirements?"
+  - content: "Which of the following may provide a solution for customers when Microsoft doesn't have an in-country/region cloud presence and can't meet data sovereignty requirements?"
     choices:
     - content: "Machine learning."
       isCorrect: false

@@ -4,13 +4,11 @@ title: Store database files directly on Azure Blob Storage
 metadata:
   title: Store database files directly on Azure Blob Storage
   description: "Store database files directly on Azure Blob Storage"
-  ms.date: 06/30/2022
+  ms.date: 04/23/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/5-store-database-files-directly-azure-blob-storage.md)]

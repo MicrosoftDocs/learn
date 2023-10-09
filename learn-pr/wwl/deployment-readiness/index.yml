@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.deployment-readiness
+metadata:
+  title: MD-102 1-Assess deployment readiness
+  description: "Discusses some of the tools that you can use to perform detailed assessments of existing deployments, and describes some of the challenges that you may face."
+  ms.date: 04/03/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Assess deployment readiness
+summary: Discusses some of the tools that you can use to perform detailed assessments of existing deployments, and describes some of the challenges that you may face.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the guidelines for an effective enterprise desktop deployment.
+  - Explain how to assess the current environment.
+  - Describe the tools that you can use to assess your current environment.
+  - Describe the methods of identifying and mitigating application compatibility issues.
+  - Explain considerations for planning a phased rollout.
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+units:
+- learn.wwl.deployment-readiness.introduction
+- learn.wwl.deployment-readiness.examine-deployment-guidelines
+- learn.wwl.deployment-readiness.explore-readiness-tools
+- learn.wwl.deployment-readiness.assess-application-compatibility
+- learn.wwl.deployment-readiness.explore-tools-for-application-compatibility-mitigation
+- learn.wwl.deployment-readiness.prepare-network-directory-for-deployment
+- learn.wwl.deployment-readiness.plan-pilot
+- learn.wwl.deployment-readiness.knowledge-check
+- learn.wwl.deployment-readiness.summary
+badge:
+  uid: learn.wwl.deployment-readiness.badge

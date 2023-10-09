@@ -7,15 +7,15 @@ You've now increased your team's confidence in your Bicep development process an
 ## References
 
 - Branching
-    - [Merge strategies and squash merge](/azure/devops/repos/git/merging-with-squash)
-    - [Trunk-based development](https://trunkbaseddevelopment.com/)
-    - [Gitflow](https://nvie.com/posts/a-successful-git-branching-model/)
-    - [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)
-    - [GitLab flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)
-    - [Patterns for Managing Source Code Branches](https://martinfowler.com/articles/branching-patterns.html)
+  - [Merge strategies and squash merge](/azure/devops/repos/git/merging-with-squash)
+  - [Trunk-based development](https://trunkbaseddevelopment.com/)
+  - [Gitflow](https://nvie.com/posts/a-successful-git-branching-model/)
+  - [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+  - [GitLab flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)
+  - [Patterns for Managing Source Code Branches](https://martinfowler.com/articles/branching-patterns.html)
 - Pull requests on Microsoft Learn
-    - [Manage repository changes by using pull requests on GitHub](xref:learn.github.manage-changes-pull-requests-github)
-    - [Collaborate with pull requests in Azure Repos](xref:learn.wwl.collaborate-pull-requests-azure-repos)
+  - [Manage repository changes by using pull requests on GitHub](xref:learn.github.manage-changes-pull-requests-github)
+  - [Collaborate with pull requests in Azure Repos](xref:learn.wwl.collaborate-pull-requests-azure-repos)
 - Bicep best practices
-    - [Structure your Bicep code for collaboration](xref:learn.azure.structure-bicep-code-collaboration)
-    - [Best practices for Bicep](/azure/azure-resource-manager/bicep/best-practices)
+  - [Structure your Bicep code for collaboration](xref:learn.azure.structure-bicep-code-collaboration)
+  - [Best practices for Bicep](/azure/azure-resource-manager/bicep/best-practices)

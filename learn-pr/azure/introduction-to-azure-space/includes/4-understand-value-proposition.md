@@ -1,14 +1,14 @@
-With Azure Space, Microsoft is building a platform for space and non-space industry leaders to use to unlock new use cases and innovation. 
+With Azure Space, Microsoft is building a platform for space and non-space industry leaders to use to unlock new use cases and innovation.
 
 ## Azure Space strategy
 
 Our strategy is:
 
-- **Non-competitive:** We're building a powerful partner community that will enable innovation and collaboration across industry leaders using the Azure Space platform.
+- **Non-competitive**: We're building a powerful partner community that will enable innovation and collaboration across industry leaders using the Azure Space platform.
 
-- **Multi-orbit:** By using a multi-orbit strategy, we can provide the best information and connectivity from both orbits. Our platform operates with NGSO (non-geostationary orbit) satellites for global coverage and low latency and GEO (geostationary orbit) satellites for use cases in high-density places.
+- **Multi-orbit**: By using a multi-orbit strategy, we can provide the best information and connectivity from both orbits. Our platform operates with NGSO (non-geostationary orbit) satellites for global coverage and low latency and GEO (geostationary orbit) satellites for use cases in high-density places.
 
-- **Multi-vendor:** We work with multiple vendors to provide a wide range of capabilities and the best-possible offerings for specialized use cases.
+- **Multi-vendor**: We work with multiple vendors to provide a wide range of capabilities and the best possible offerings for specialized use cases.
 
 Broadly speaking, the business opportunities for Azure Space serve two categories of users:
 
@@ -20,7 +20,7 @@ Broadly speaking, the business opportunities for Azure Space serve two categorie
 
 ## Azure Space core principles
 
-Microsoft's Azure Space platform can be used by satellite operators and end customers in both government and enterprise. While the intended user for each product in the Azure Space portfolio varies, Microsoft's approach is to provide value for all users through these core principles:
+Satellite operators and end customers in both government and enterprise can use Microsoft's Azure Space platform. While the intended user for each product in the Azure Space portfolio varies, Microsoft's approach is to provide value for all users through these core principles:
 
 - Our global network and infrastructure
 - Support for classified environments

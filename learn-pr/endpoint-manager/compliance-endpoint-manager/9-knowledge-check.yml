@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "If you wanted to determine the status of your Intune tenant, where in Microsoft Endpoint Manager should you start?"
+  - content: "If you wanted to determine the status of your Intune tenant, where in Microsoft Intune should you start?"
     choices:
     - content: "Start with the Tenant Status page. It allows you to view current and important details about your tenant."
       isCorrect: true

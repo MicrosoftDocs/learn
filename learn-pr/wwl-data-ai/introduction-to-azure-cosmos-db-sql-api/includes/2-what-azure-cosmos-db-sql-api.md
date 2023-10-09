@@ -2,26 +2,26 @@ Let's start with a few definitions and a quick tour through Azure Cosmos DB for 
 
 ## What is a NoSQL database?
 
-Developers require new kinds of databases that can address the needs of modern apps. NoSQL databases were designed to address these needs and unique challenges such as:
+Developers require new kinds of databases that can address the unique challenges of modern apps. NoSQL databases were designed to address needs such as:
 
-- High volumes of data
-- Data with many different sources and forms
-- Dynamic data schemas to store different types of data
-- Using high-velocity and/or real-time data
+- High volumes of data.
+- Data with many different sources and forms.
+- Dynamic data schemas that store different types of data.
+- Using high-velocity and/or real-time data.
 
-NoSQL databases are defined by common characteristics they share rather than a specific formal definition. These characteristics include:
+You define NoSQL databases by the common characteristics they share rather than by a specific formal definition. These characteristics include:
 
-- Data store is non-relational
-- Designed for scale-out
-- Does not enforce a specific schema
+- A nonrelational data store.
+- Being designed to scale out.
+- Not enforcing a specific schema.
 
-NoSQL databases generally do not enforce relational constraints or put locks on data, making writes fast. They are also often designed for horizontally scale via sharding or partitioning, which allows them to maintain high-performance regardless of size.
+Generally, NoSQL databases don't enforce relational constraints or put locks on data, making writes fast. Also, they're often designed to horizontally scale via sharding or partitioning, which allows them to maintain high-performance regardless of size.
 
 While there are many NoSQL data models, four broad data model families are commonly used when modeling data in a NoSQL database:
 
 ![Diagram showing various NoSQL models including; a key-value, document, graph, and column-family store](../media/2-nosql-db.png)
 
-Moving forward, we will focus on the document data model, the data model supported by Azure Cosmos DB for NoSQL
+Moving forward, we focus on the data model supported by Azure Cosmos DB for NoSQL: The *document* data model.
 
 ## Why use a NoSQL database with the document data model?
 
@@ -29,13 +29,13 @@ The document data model breaks data down into individual **document** entities. 
 
 ![Illustration of a hierarchical document data model that includes parent entities, child entities, and lines connecting them](../media/2-document-db.png)
 
-A document is an atomic entity and can have its own data form, regardless of what is stored in other documents in the same database. Because of this flexibility, there is no need for a pre-defined schema making it easier to build new applications rapidly. Additionally, this flexibility enables scenarios where different types of data can be stored together and where models can evolve over the lifetime of an application.
+A document is an atomic entity and can have its own data form, regardless of what is stored in other documents in the same database. Because of this flexibility, there's no need for a predefined schema making it easier to build new applications rapidly. Additionally, this flexibility enables scenarios where different types of data can be stored together and where models can evolve over the lifetime of an application.
 
 ## What is a JSON document?
 
 JavaScript Object Notation, or [JSON][json.org], is a lightweight data format. JSON was built to be highly compatible with the literal notation of an object in the JavaScript language. Many frameworks, browsers, and even databases support JavaScript natively making JSON a popular format for transmitting and storing data.
 
-Here is an example of a JSON document:
+Here's an example of a JSON document:
 
 ```json
 {
@@ -54,11 +54,11 @@ As you can see, JSON is a relatively readable data format that clearly exposes i
 
 ## What is Azure Cosmos DB for NoSQL?
 
-Azure Cosmos DB for NoSQL is a fast NoSQL database service that offers rich querying over diverse data, helps deliver configurable and reliable performance, is globally distributed, and enables rapid development.
+Azure Cosmos DB for NoSQL is a fast NoSQL database service that offers rich querying over diverse data. It helps deliver configurable and reliable performance, is globally distributed, and enables rapid development.
 
 ![Illustration of a world map with four globally distributed nodes that are connected via lines](../media/2-azure-cosmos-db.png)
 
-The NoSQL API is the core or native API for working with documents. The NoSQL API supports fast, flexible development utilizing JSON documents, a query language with a familiar syntax, and client libraries for popular programming languages. Azure Cosmos DB provides other APIs, such as Mongo, Gremlin, and Cassandra, that offer compatibility with each database ecosystem while still mapping to the same underlying infrastructure of the native NoSQL API.
+The NoSQL API is the core or native API for working with documents. The NoSQL API supports fast, flexible development utilizing JSON documents, a query language with a familiar syntax, and client libraries for popular programming languages. Azure Cosmos DB provides other APIs, such as Mongo, Gremlin, and Cassandra. These APIs offer compatibility with each database ecosystem, while still mapping to the same underlying infrastructure of the native NoSQL API.
 
 Azure Cosmos DB for NoSQL has a few advantages such as:
 

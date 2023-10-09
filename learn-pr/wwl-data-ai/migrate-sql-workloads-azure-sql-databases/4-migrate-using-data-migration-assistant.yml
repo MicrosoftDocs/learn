@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-using-data-migration-assistant
+title: Explore Data Migration Assistant to migrate to Azure SQL Database
+metadata:
+  title: Explore Data Migration Assistant to migrate to Azure SQL Database
+  description: "Learn how to use Data Migration Assistant to migrate to Azure SQL Database."
+  ms.date: 09/04/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-migrate-using-data-migration-assistant.md)]

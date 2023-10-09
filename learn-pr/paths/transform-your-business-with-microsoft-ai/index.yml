@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.transform-your-business-with-microsoft-ai
+metadata:
+  title: Transform your business with Microsoft AI
+  description: Transform your business with Microsoft AI
+  ms.date: 07/03/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.service: microsoft-365
+title: Transform your business with Microsoft AI
+prerequisites: |
+  * Basic understanding of IT concepts.
+  * Basic understanding of business concepts.
+summary: |
+  In this learning path, business leaders will find the knowledge and resources to adopt AI in their organizations. It explores planning, strategizing, and scaling AI projects in a responsible way.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+products:
+- azure-openai
+subjects:
+- artificial-intelligence
+- data-ai
+modules:
+- learn.wwl.leverage-ai-tools
+- learn.wwl.create-business-value
+- learn.wwl.embrace-responsible-ai-principles-practices
+- learn.wwl.scale-ai
+trophy:
+  uid: learn.wwl.transform-your-business-with-microsoft-ai.trophy

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-sap-hana.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Introductory unit of the Using Azure NetApp Files application groups with SAP HANA module      
+  ms.date: 02/27/2023
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

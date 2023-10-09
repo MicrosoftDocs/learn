@@ -1,3 +1,4 @@
+
 Never build and forget, you need to set proper controls and maintenance strategies in places to maintain your Azure solutions. Enterprise Governance provides the framework to keep your systems secure and your data protected.
 
 You should be able to:

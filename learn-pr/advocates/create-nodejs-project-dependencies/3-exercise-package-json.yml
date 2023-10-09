@@ -6,10 +6,12 @@ metadata:
   description: Exercise on how to configure the package.json to add metadata but also create and run scripts to manage your Node.js throughout its lifetime.
   author: GitHubber17
   ms.author: chnoring
-  ms.date: 05/10/2022
+  ms.date: 05/30/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-package-json.md)]

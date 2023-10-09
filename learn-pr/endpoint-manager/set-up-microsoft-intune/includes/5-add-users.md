@@ -9,7 +9,7 @@ As an administrator, you can add users individually or in bulk to Intune. The ea
 
 The following steps allow you to add individual users to Intune:
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431?azure-portal=true), choose **Users** > **All users** > **New user** > **Create user**.
+1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Users** > **All users** > **New user** > **Create user**.
 2. Specify the following user details:
    - **User name**: The new name that the user will use to sign in to Azure Active Directory.
    - **Name**: The user's given name. 
@@ -25,7 +25,7 @@ The following steps allow you to add individual users to Intune:
 
 You can add Intune users in bulk by uploading a csv file containing the full list of users. The following steps allow you to add multiple users to Intune:
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431?azure-portal=true), choose **Users** > **All users** > **Bulk operations** > **Bulk create**. The **Bulk create user** pane is displayed.
+1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Users** > **All users** > **Bulk operations** > **Bulk create**. The **Bulk create user** pane is displayed.
 2. Download, edit, and upload a *csv* template containing a list of users that you want to add to Intune. 
 
 The *csv* file is a comma-separated value list that can be edited in Notepad or Excel. For more information about using a *csv* file to add Intune users, see [Bulk create users in Azure Active Directory](/azure/active-directory/enterprise-users/users-bulk-add?azure-portal=true).

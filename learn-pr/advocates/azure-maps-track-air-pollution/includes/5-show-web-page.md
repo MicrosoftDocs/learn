@@ -1,12 +1,12 @@
-In this unit, you'll use the Flask web application framework to create a Python app. You'll also create a webpage that the Azure Maps web SDK can use to display your map app.
+In this unit, you use the Flask web application framework to create a Python app. You also create a webpage that the Azure Maps web SDK can use to display your map app.
 
 ## Build the app
 
-To build the app, first, we'll create project folders, configure the Python environment, and install the pip packages we need.
+To build the app, first, we create project folders, configure the Python environment, and install the pip packages we need.
 
-Then, we'll create an environment file and the application Python file.
+Then, we create an environment file and the application Python file.
 
-Finally, we'll create a *home.html* file to show results.
+Finally, we create a *home.html* file to show results.
 
 ### Create folders for the Python app
 
@@ -18,7 +18,7 @@ Finally, we'll create a *home.html* file to show results.
  
    When you create this Python file, Visual Studio Code activates the Python extension, so it's ready to build a Python app. You can see the progress of the extension activation in the status bar in the lower-left corner of Visual Studio Code.
 
-1. At the root of your application code folder, create a folder named *templates*. This folder will hold the HTML templates that the Flask app will use.
+1. At the root of your application code folder, create a folder named *templates*. This folder holds the HTML templates that the Flask app uses.
 
 ### Configure the Python environment
 
@@ -55,13 +55,13 @@ Finally, we'll create a *home.html* file to show results.
 
 ### Install pip packages
 
-The package installer for Python is called *pip*. The application you'll create requires the following pip packages:
+The package installer for Python is called *pip*. The application you create requires the following pip packages:
 
 * `flask`: This package is a web framework for Python.
 * `python-dotenv`: This package allows environment variables like the Azure Maps key to be loaded from environment files.
-* `requests`: This package makes it easy to make web requests. We'll use it later to query for air quality data.
+* `requests`: This package makes it easy to make web requests. We use it later to query for air quality data.
 
-First, you'll create a text file that lists the required pip packages. Then, you'll run a command that installs the packages that are listed in the text file.
+First, you create a text file that lists the required pip packages. Then, you run a command that installs the packages that are listed in the text file.
 
 1. In Visual Studio Code, at the root of your application code folder, create a new text file named *requirements.txt*. Copy the following code into the text file:
 
@@ -87,7 +87,7 @@ First, you'll create a text file that lists the required pip packages. Then, you
 
 ### Create an environment file
 
-The Flask app that you'll create will need to use your Azure Maps key to load the map control onto a webpage. A best practice is to store data like this in environment variables so that the data isn't checked in to source code control. You can set an environment variable to a specific value when you develop or publish your app. Flask uses the python-dotenv package to look for a file named *.env* at the root of your application code folder and then loads environment variables from this file.
+The Flask app that you create uses your Azure Maps key to load the map control onto a webpage. A best practice is to store data like this in environment variables so that the data isn't checked in to source code control. You can set an environment variable to a specific value when you develop or publish your app. Flask uses the python-dotenv package to look for a file named *.env* at the root of your application code folder and then loads environment variables from this file.
 
 > [!TIP]
 > If you deploy this app to Azure by using Azure App Service, the values in the *.env* file must be added to an application settings file so that the values are automatically set as environment variables that the app can use.

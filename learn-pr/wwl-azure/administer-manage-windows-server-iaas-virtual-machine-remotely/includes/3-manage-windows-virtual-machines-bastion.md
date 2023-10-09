@@ -65,7 +65,7 @@ To deploy an Azure Bastion host by using the Azure portal, start by creating a s
 
     1. On the **Virtual network** blade, in **Settings**, select **Subnets**.
     2. In the **Subnets** pane, select **+ Subnet**.
-    3. In the **Add subnet** blade, enter the name **AzureBastionSubnet**, and then configure the appropriate **Address range (CIDR block)**. This must have a prefix of at least /27.
+    3. In the **Add subnet** blade, enter the name **AzureBastionSubnet**, and then configure the appropriate **Address range (CIDR block)**. This must have a prefix of at least /26.
     4. Select a **Network security group** if necessary, and then select **OK**.
 
     ![A screenshot of the Add subnet blade. The administrator is adding a subnet called AzureBastionSubnet with a prefix of /27.](../media/m23-subnet.png)

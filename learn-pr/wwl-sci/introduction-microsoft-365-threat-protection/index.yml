@@ -3,11 +3,11 @@ uid: learn.wwl.introduction-microsoft-365-threat-protection
 metadata:
   title: Introduction to Microsoft 365 threat protection
   description: "Introduction to Microsoft 365 threat protection"
-  ms.date: 12/08/2022
+  ms.date: 05/10/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: microsoft-365
 title: Introduction to Microsoft 365 threat protection
 summary: In this module, you'll learn how to use the Microsoft 365 Defender integrated threat protection suite.
 abstract: |
@@ -15,7 +15,8 @@ abstract: |
   You should now be able to:
   - Understand Microsoft 365 Defender solution by domain
   - Understand Microsoft 365 Defender role in a Modern SOC
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/introduction-microsoft-365-threat-protection.svg
 levels:
 - intermediate
@@ -25,6 +26,7 @@ products:
 - defender-for-cloud-apps
 - defender-identity
 - m365
+- m365-defender
 subjects:
 - cloud-security
 - security
@@ -33,6 +35,7 @@ units:
 - learn.wwl.introduction-microsoft-365-threat-protection.introduction
 - learn.wwl.introduction-microsoft-365-threat-protection.explore-extended-detection-response-use-cases
 - learn.wwl.introduction-microsoft-365-threat-protection.understand-defender-security-operations-center
+- learn.wwl.introduction-microsoft-365-threat-protection.explore-microsoft-security-graph
 - learn.wwl.introduction-microsoft-365-threat-protection.investigate-security-incident-defender
 - learn.wwl.introduction-microsoft-365-threat-protection.knowledge-check
 - learn.wwl.introduction-microsoft-365-threat-protection.summary-resources

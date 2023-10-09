@@ -13,7 +13,6 @@ IoT Hub gives you a secure communication channel for your devices to send data.
  -  The IoT Hub Device Provisioning Service automatically provisions devices to the correct IoT hub when the device first boots up.
  -  Multiple authentication types support different device capabilities:
      -  SAS token-based authentication to quickly get started with your IoT solution.
-     -  Individual X.509 certificate authentication for secure, standards-based authentication.
      -  X.509 CA authentication for simple, standards-based enrollment.
 
 ## Scale your solution

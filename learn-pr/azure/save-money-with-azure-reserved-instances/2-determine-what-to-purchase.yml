@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.save-money-with-azure-reserved-instances.determine-purchase
 metadata:
-  title: Determine which reserved instances you should buy
-  description: Determine what to purchase
-  ms.date: 11/01/2021
+  title: Determine what to purchase
+  description: Learn how to use reservation purchase recommendations to determine what instances to reserve.
+  ms.date: 06/07/2023
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Determine what to purchase
 durationInMinutes: 5
 content: |

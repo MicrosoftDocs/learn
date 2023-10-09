@@ -1,11 +1,11 @@
 In this exercise, you'll create an Azure Active Directory (Azure AD) group to manage the developer team's access. You'll also add a rule for the group to manage the membership automatically.
 
 > [!NOTE]
-> This exercise depends on having completed prior exercises in this module. If you have not done so, complete [exercise in unit 3](../3-exercise-add-delete-users-azure-ad.yml) before you begin.
+> This exercise depends on having completed prior exercises in this module. If you haven't done so, complete [exercise in unit 3](../3-exercise-add-delete-users-azure-ad.yml) before you begin.
 
 ## Add a new group
 
-1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>).
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. Go to the Azure Active Directory you created earlier in this module.
 
@@ -39,7 +39,7 @@ You'll now assign members to the Developer group.
 
 1. Search for and select **Chris Green**.
 
-1. Select **Select**. You'll see this user in the *Direct members* list for the Developers group in the **Members** pane.
+1. Select **Select**. You'll see this user in the *Direct members* list for the Developers group in the **Members** pane. You might need to refresh to see the users.
 
 ## Modify the group to use dynamic assignment
 

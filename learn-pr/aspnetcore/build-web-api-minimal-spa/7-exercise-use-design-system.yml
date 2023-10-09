@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal-spa.exercise-use-design-system
+title: Exercise - Use a design system in your app
+metadata:
+  title: Exercise - Use a design system in your app
+  description: Use the Fluent UI design system for React to add consisent UI elements and a theme to the site.
+  ms.date: 08/11/2023
+  author: softchris
+  ms.author: chnoring
+  ms.manager: markl
+  ms.custom:
+    - team=nextgen
+    - devx-track-dotnet
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-exercise-use-design-system.md)]

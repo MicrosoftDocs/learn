@@ -1,3 +1,4 @@
+
 Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP) and route traffic based on source IP address and port, to a destination IP address and port.
 
 :::image type="content" source="../media/azure-application-gateway-flow-699baa3e.png" alt-text="Azure Application Gateway traffic flow":::
@@ -19,6 +20,7 @@ This type of routing is known as application layer (OSI layer 7) load balancing.
  -  **Redirection**: Redirection can be used to another site, or from HTTP to HTTPS.
  -  **Rewrite HTTP headers**: HTTP headers allow the client and server to pass parameter information with the request or the response.
  -  **Custom error pages:** Application Gateway allows you to create custom error pages instead of displaying default error pages. You can use your own branding and layout using a custom error page.
+
 
 ## Determine Application Gateway routing
 
@@ -46,29 +48,12 @@ Multi-site configurations are useful for supporting multi-tenant applications, w
 
 Application Gateway is available under a Standard\_v2 SKU. Web Application Firewall (WAF) is available under a WAF\_v2 SKU. The v2 SKU offers performance enhancements and adds support for critical new features like autoscaling, zone redundancy, and support for static VIPs. Existing features under the Standard and WAF SKU continue to be supported in the new v2 SKU.
 
-The new v2 SKU includes the following enhancements:
+Review the [feature comparison table](/azure/application-gateway/overview-v2#feature-comparison-between-v1-sku-and-v2-sku) between v1 and v2 SKU to determine which SKU meets your deployment needs. 
 
-**Autoscaling**: Application Gateway or WAF deployments under the autoscaling SKU can scale out or in based on changing traffic load patterns. Autoscaling also removes the requirement to choose a deployment size or instance count during provisioning. This SKU offers true elasticity. In the Standard\_v2 and WAF\_v2 SKU, Application Gateway can operate both in fixed capacity (autoscaling disabled) and in autoscaling enabled mode. Fixed capacity mode is useful for scenarios with consistent and predictable workloads. Autoscaling mode is beneficial in applications that see variance in application traffic.
-
-**Zone redundancy**: An Application Gateway or WAF deployment can span multiple Availability Zones, removing the need to provision separate Application Gateway instances in each zone with a Traffic Manager. You can choose a single zone or multiple zones where Application Gateway instances are deployed, which makes it more resilient to zone failure. The backend pool for applications can be similarly distributed across availability zones.
-
-**Not all Azure regions support availability zones yet**.
-
-**Static VIP**: Application Gateway v2 SKU supports the static VIP type exclusively. This ensures that the VIP associated with the application gateway doesn't change for the lifecycle of the deployment, even after a restart. There isn't a static VIP in v1, so you must use the application gateway URL instead of the IP address for domain name routing to App Services via the application gateway.
-
-**Header Rewrite**: Application Gateway allows you to add, remove, or update HTTP request and response headers with v2 SKU.
-
-**Key Vault Integration**: Application Gateway v2 supports integration with Key Vault for server certificates that are attached to HTTPS enabled listeners.
-
-**Azure Kubernetes Service Ingress Controller**: The Application Gateway v2 Ingress Controller allows the Azure Application Gateway to be used as the ingress for an Azure Kubernetes Service (AKS) known as AKS Cluster.
-
-**Performance enhancements**: The v2 SKU offers up to 5X better TLS offload performance as compared to the Standard/WAF SKU.
-
-**Faster deployment and update time:** The v2 SKU provides faster deployment and update time as compared to Standard/WAF SKU. This also includes WAF configuration changes.
 
 ## Choosing between Azure Application Gateway v2 and Web Application Firewall V2 SKUs
 
-When choosing whether to deploy an Application Gateway or a Web Application Firewall, there are several factors you must consider, including the scaling strategy you want to follow and the cost of the service.
+When choosing whether to deploy an Application Gateway or a Web Application Firewall, there are several factors you must consider, including the scaling strategy you want to follow.
 
 ### Scaling Application Gateway and WAF v2
 
@@ -76,14 +61,6 @@ Application Gateway and WAF can be configured to scale in two modes:
 
 **Autoscaling:** With autoscaling enabled, the Application Gateway and WAF v2 SKUs scale up or down based on application traffic requirements. This mode offers better elasticity to your application and eliminates the need to guess the application gateway size or instance count. This mode also allows you to save cost by not requiring the gateway to run at peak provisioned capacity for anticipated maximum traffic load. You must specify a minimum and optionally maximum instance count. Minimum capacity ensures that Application Gateway and WAF v2 don't fall below the minimum instance count specified, even in the absence of traffic. Each instance is roughly equivalent to 10 additional reserved Capacity Units. Zero signifies no reserved capacity and is purely autoscaling in nature. You can also optionally specify a maximum instance count, which ensures that the Application Gateway doesn't scale beyond the specified number of instances. You will only be billed for traffic served by the Gateway. The instance counts can range from 0 to 125. The default value for maximum instance count is 20 if not specified.
 
-**Manual:** You can alternatively choose Manual mode where the gateway won't autoscale. In this mode, if there is more traffic than the Application Gateway or WAF can handle, it could result in traffic loss. With manual mode, specifying instance count is mandatory. Instance count can vary from 1 to 125 instances.
+**Manual:** You can alternatively choose Manual mode where the gateway doesn't autoscale. In this mode, if there is more traffic than the Application Gateway or WAF can handle, it could result in traffic loss. With manual mode, specifying instance count is mandatory. Instance count can vary from 1 to 125 instances.
 
-### Pricing
 
-With the v2 SKU, the pricing model is driven by consumption and is no longer attached to instance counts or sizes. The v2 SKU pricing has two components:
-
-**Fixed price:** This is hourly (or partial hour) price to provision a Standard\_v2 or WAF\_v2 Gateway. Please note that 0 additional minimum instances still ensure high availability of the service which is always included with fixed price.
-
-**Capacity Unit price:** This is a consumption-based cost that is charged in addition to the fixed cost. Capacity unit charge is also computed hourly or partial hourly. There are three dimensions to capacity unit - compute unit, persistent connections, and throughput. Compute unit is a measure of processor capacity consumed. Factors affecting compute unit are TLS connections/sec, URL Rewrite computations, and WAF rule processing. Persistent connection is a measure of established TCP connections to the application gateway in each billing interval. Throughput is average Megabits/sec processed by the system in each billing interval. The billing is done at a Capacity Unit level for anything above the reserved instance count.
-
-Each capacity unit is composed of at most: 1 compute unit, 2500 persistent connections, and 2.22-Mbps throughput.

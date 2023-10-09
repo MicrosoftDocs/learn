@@ -4,11 +4,11 @@ title: Exercise - Detect threats with Microsoft Sentinel analytics
 metadata:
   title: Exercise - Detect threats with Microsoft Sentinel analytics
   description: "Detect threats by using Microsoft Sentinel Analytics."
-  ms.date: 01/27/2023
+  ms.date: 05/15/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 12
 content: |
   [!include[](includes/8-exercise-detect-threats.md)]

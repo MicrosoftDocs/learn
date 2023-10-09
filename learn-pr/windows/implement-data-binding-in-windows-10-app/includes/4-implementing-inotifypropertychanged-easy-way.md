@@ -1,10 +1,10 @@
 :::image type="icon" source="../media/tech-all.png":::
 
-If you've followed through the previous lessons, you may think that data binding is too much hassle. Why go through all the trouble of implementing `INotifyPropertyChanged`, firing events left and right, when you could simply use `TimeTextBlock.Text = DateTime.Now.ToLongTime()` to display the time? And it's true, in this simple case, data binding does look like overkill.
+If you've followed through the previous lessons, you may think that implementing data binding is too great an effort. Why go through all the trouble of implementing `INotifyPropertyChanged`, firing events left and right, when you could simply use `TimeTextBlock.Text = DateTime.Now.ToLongTime()` to display the time? And it's true, in this simple case, data binding does look like overkill.
 
 However, data binding is capable of much more. It can transfer data in both directions between the UI and the code, display lists of items, and support the editing of data. All of this with an architecture that offers a clean separation of the data your app's logic works on, and the presentation of the data.
 
-But how can we reduce the amount of code the developer has to write? Nobody wants to type 10 lines of code just to declare a simple property. Luckily, we can extract the common functionality, and bring down the property setters to just one line. This lesson shows you how.
+But how can we reduce the amount of code the developer has to write? Nobody wants to enter ten lines of code for every property they need to declare. Fortunately, we can extract the common functionality and reduce the property setters to a single line of code. This lesson shows you how.
 
 ### The goal
 
@@ -74,7 +74,7 @@ using System.ComponentModel;
 Next, we have to implement the interface. Add this line inside the body of the class.
 
 ```cs
-public event PropertyChangedEventHandler PropertyChanged;
+public event PropertyChangedEventHandler? PropertyChanged;
 ```
 
 #### 3. The `RaisePropertyChanged` method
@@ -82,7 +82,7 @@ public event PropertyChangedEventHandler PropertyChanged;
 In previous lessons, we have often raised the `PropertyChangedEvent` in our code, even outside of property setters. While modern C# and the [null-conditional operator](/dotnet/csharp/language-reference/operators/null-conditional-operators) or (`?.`) allowed us to do this in one line, we can still simplify by creating a convenience function like this:
 
 ```cs
-protected void RaisePropertyChanged(string propertyName)
+protected void RaisePropertyChanged(string? propertyName)
 {
     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 }
@@ -114,7 +114,7 @@ It can't really get simpler than that. We call a function, pass a reference to t
 protected bool Set<T>(
     ref T field,
     T newValue,
-    [CallerMemberName] string propertyName = null)
+    [CallerMemberName] string? propertyName = null)
 {
     if (EqualityComparer<T>.Default.Equals(field, newValue))
     {
@@ -430,9 +430,9 @@ So, what did we achieve with all this work? While the app works the same as befo
 
 The `MainWindow` class is very simple. It contains a reference to the logic, and simply receives and forwards a button click event. All the data flow between the logic and the UI happens through data binding, which is fast, robust, and proven.
 
-The `MainWindowDataContext` class is now UI-agnostic. It doesn't matter whether the clock is displayed in a `TextBlock` or some other control. The form submission can happen in any number of ways. These ways include a button click, a press of the Enter key, or a face recognition algorithm detecting a smile. The form can also be submitted by using automatic unit tests that target the logic and ensure it works according to the project's requirements.
+The `MainWindowDataContext` class is now UI-agnostic. It doesn't matter whether the clock is displayed in a `TextBlock` or some other control. The form submission can happen in any number of ways. These ways include a button click, a press of the *Enter* key, or a face recognition algorithm detecting a smile. The form can also be submitted by using automatic unit tests that target the logic and ensure it works according to the project's requirements.
 
-For these reasons, as well as others, it's a good practice to only have UI-related features in the page's codebehind, and separate the logic in a different class. More complicated apps may also have animation control and other, concrete UI-related features. As you work with more complicated apps, you'll appreciate the separation of UI and logic that we've created in this lesson.
+For these reasons, as well as others, it's a good practice to only have UI-related features in the window's code-behind, and separate the logic in a different class. More complex apps may also have animation control and other, concrete UI-related features. As you work with more complex apps, you'll appreciate the separation of UI and logic that we've created in this lesson.
 
 You can re-use the `ObservableObject` class in your own project. After a bit of practice, you'll find that it is actually faster and easier to approach problems this way. Or take advantage of an existing, well established library, such as the [MVVM Toolkit](/windows/communitytoolkit/mvvm/introduction), that follows and builds upon the principles you learned in this module.
 

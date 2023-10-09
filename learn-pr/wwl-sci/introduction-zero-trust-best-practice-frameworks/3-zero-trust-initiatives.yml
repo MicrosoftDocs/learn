@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-zero-trust-best-practice-frameworks.zero-trust-initiatives
+title: Zero Trust initiatives
+metadata:
+  title: Zero Trust initiatives
+  description: "SC-100 preparatory unit on the topic: Zero Trust initiatives."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-zero-trust-initiatives.md)]

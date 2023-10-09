@@ -7,7 +7,7 @@ You need to prepare for the migration of several of your company's SAP workloads
 - DBMS instances
 - SAP HANA
 
-In addition, you must ensure the availability solutions will be compatible with the solutions for disaster recovery of the SAP on Azure workloads in your company.
+In addition, you must ensure the availability solutions are compatible with the solutions for disaster recovery of the SAP on Azure workloads in your company.
 
 ## Learning objectives
 

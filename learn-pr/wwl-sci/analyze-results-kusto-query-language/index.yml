@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: kusto
 title: Analyze query results using KQL
 summary: Learn how to summarize and visualize data with a KQL statement provides the foundation to build detections in Microsoft Sentinel.
 abstract: |
@@ -24,10 +24,11 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
+- azure-log-analytics
 subjects:
 - data-analytics
-- security
+- cloud-security
 units:
 - learn.wwl.analyze-results-kql.introduction
 - learn.wwl.analyze-results-kql.use-summarize-operator

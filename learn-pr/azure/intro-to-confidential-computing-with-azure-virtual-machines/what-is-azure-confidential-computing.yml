@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.what-is-azure-confidential-computing
+title: What is Azure confidential computing?
+metadata:
+  title: What is Azure confidential computing?
+  description: In this unit, you'll learn about Azure confidential computing.
+  ms.date: 03/22/2023
+  author: cynthn
+  ms.author: cynthn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/what-is-azure-confidential-computing.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which best describes a Trusted Execution Environment, or TEE?
+    choices:
+    - content: TEEs control network access into Azure.
+      isCorrect: false
+      explanation: "Incorrect: TEEs enforce execution of only authorized code."
+    - content: TEEs enforce execution of only authorized code.
+      isCorrect: true
+      explanation: "Correct: TEEs prevent execution of unauthorized code."
+    - content: TEEs enforce data at rest encryption.
+      isCorrect: false
+      explanation: "Incorrect: TEEs enforce execution of only authorized code."
+  - content: Which best describes Azure confidential computing?
+    choices:
+    - content: It's only about attestation.
+      isCorrect: false
+      explanation: "Incorrect: It's a portfolio of products designed to meet trust and security requirements for sensitive workloads."
+    - content: It only works with containers or AKS.
+      isCorrect: false
+      explanation: "Incorrect: It's a portfolio of products designed to meet trust and security requirements for sensitive workloads."
+    - content: It's a capability incorporated into a portfolio of Azure products designed to meet trust and security requirements for sensitive workloads.
+      isCorrect: true
+      explanation: "Correct: Azure confidential computing is a capability offered through a portfolio that includes multiple Azure products."

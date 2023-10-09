@@ -1,3 +1,5 @@
+
+
 For on-premises development, you can use either HANA System Replication or use shared storage to establish high availability for SAP HANA. On Azure virtual machines (VMs), HANA System Replication on Azure is currently the only supported high availability function. SAP HANA Replication consists of one primary node and at least one secondary node. Changes to the data on the primary node are replicated to the secondary node synchronously or asynchronously.
 
 :::image type="content" source="../media/sap-hana-high-availability-overview-c1c1ac0b.png" alt-text="Overview diagram of S A P HANA high availability.":::

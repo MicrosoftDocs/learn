@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: microsoft-sentinel
 title: Hunt for threats using notebooks in Microsoft Sentinel
 summary: Learn how to use notebooks in Microsoft Sentinel for advanced hunting.
 abstract: |
@@ -25,7 +25,7 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - threat-protection
 units:

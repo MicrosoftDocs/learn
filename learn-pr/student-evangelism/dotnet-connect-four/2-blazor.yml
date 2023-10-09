@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-connect-four.blazor
+title: Blazor
+metadata:
+  title: Blazor
+  description: In this unit, we cover the Blazor framework and some core concepts.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 03/15/2023
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-blazor.md)]

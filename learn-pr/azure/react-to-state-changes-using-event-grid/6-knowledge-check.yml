@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.react-to-state-changes-using-event-grid.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 04/04/2023
+  author: spelluru
+  ms.author: spelluru
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  questions:
+    - content: "What is Event Grid?"
+      choices:
+      - content: "A fully managed enterprise message broker on Azure with queues and publish-subscribe topics."
+        isCorrect: false
+        explanation: "No. Azure Service Bus is a fully managed enterprise message broker." 
+      - content: "An Azure service that manages event routing and delivery from many sources and subscribers. "
+        isCorrect: true
+        explanation: "Yes. Azure Event Grid supports routing events from several sources to subscribers."
+      - content: "A big data streaming platform and event ingestion service on Azure."
+        isCorrect: false
+        explanation: "No. Azure Event Hubs is the big data streaming platform and event ingestion service on Azure."
+    - content: "Which one of these Azure services Azure Event Grid supports as an event handler? ?"
+      choices:
+        - content: "Azure Stream Analytics"
+          isCorrect: false
+          explanation: "No. Azure Event Grid doesn't support Azure Stream Analytics as an event handler. Some examples of event handlers within Azure are Functions, Event Hubs, Service Bus, Logic Apps."
+        - content: "Azure SQL Database"
+          isCorrect: false
+          explanation: "No. Azure Event Grid doesn't support Azure SQL Database as an event handler. Some examples of event handlers within Azure are Functions, Event Hubs, Service Bus, Logic Apps."
+        - content: "Azure Logic Apps"
+          isCorrect: true
+          explanation: "Yes. Azure Event Grid supports Azure Logic Apps as an event handler. Few other examples of event handlers within Azure are Functions, Event Hubs, and Service Bus."

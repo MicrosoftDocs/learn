@@ -3,12 +3,12 @@ uid: learn.health-bot-enhanced
 metadata:
   title: Enhanced Azure Health Bot
   description: Learn how to enhance your healthcare bot with advanced functionalities.
-  ms.date: 07/27/2021
+  ms.date: 03/16/2023
   author: shreyan1999
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: healthbot
 title: Enhanced Azure Health Bot 
 summary: In the previous module, you created a basic informative bot without any interrupting or breaking scenario involved. This module shows you how to enhance the bot with advanced functionalities.
 abstract: |
@@ -23,7 +23,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 prerequisites: |
  - Introduction to Azure Health Bot
  - Basic Azure Health Bot

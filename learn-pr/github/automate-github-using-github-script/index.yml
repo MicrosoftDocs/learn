@@ -3,19 +3,18 @@ uid: learn.github.automate-github-using-github-script
 metadata:
   title: "Automate GitHub by using GitHub Script"
   description: Learn to interact with the GitHub API from GitHub Actions by using GitHub Script.
-  ms.date: 10/18/2022
+  ms.date: 04/13/2022
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: "Automate GitHub by using GitHub Script"
 summary: Learn to interact with the GitHub API from GitHub Actions by using GitHub Script.
 abstract: |
   In this module, you will:
-  - Use GitHub Script in your workflow
-  - Comment on issues using octokit
-  - Add issues to a project board using octokit
-  - Use the workflow expression syntax to filter when jobs run in a workflow
+  - Use GitHub Script in your workflow.
+  - Comment on issues using octokit.
+  - Add issues to a project board using octokit.
+  - Use the workflow expression syntax to filter when jobs run in a workflow.
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub

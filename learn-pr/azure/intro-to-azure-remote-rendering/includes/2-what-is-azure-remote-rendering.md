@@ -16,7 +16,7 @@ When you work with 3D visualization, every detail matters. However, untethered d
 
 Unfortunately, this approach reduces the quality of the resulting models. The following graphic displays a rendered model of an engine and demonstrates decimation. The image has approximately 200,000 triangles. The image quality is insufficient for desired applications, such as a 3D design review or factory-layout visualization.
 
-:::image type="content" source="../media/engine-model-1.png" alt-text="An image of an engine. The image is rendered using decimation.":::
+:::image type="content" source="../media/engine-model-1.png" alt-text="Illustration of an engine rendered using decimation.":::
 
 ## Azure Remote Rendering definition
 
@@ -28,7 +28,7 @@ Azure Remote Rendering is a cloud service that enables you to render GPU-intensi
 > [!TIP]
 > Even for a high-end GPU, some models might be too complex to render at interactive frame rates. If this is the case, Azure Remote Rendering distributes your workload across multiple GPUs. It then merges the results into a single image. This process is transparent to the user.
 
-The following table describes the key features of Azure Remote Rendering and how you can benefit from them.
+The following table describes the key features of Azure Remote Rendering and how you can benefit from them:
 
 | Feature                        | Description                                                  |
 | :----------------------------- | ------------------------------------------------------------ |
@@ -37,8 +37,7 @@ The following table describes the key features of Azure Remote Rendering and how
 | Familiar interactions          | Enables you to interact with remote objects the same way you do with local objects. |
 | Software development kit (SDK) | Provides a powerful and simple-to-use SDK that enables you to integrate remotely rendered content into your existing apps. |
 
-
-## How Azure Remote Rendering can remove the need for decimation 
+## How Azure Remote Rendering can remove the need for decimation
 
 By using Azure Remote Rendering, you can:
 

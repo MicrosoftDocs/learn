@@ -1,5 +1,5 @@
 
-In this unit, you will learn how to enable autoscaling, create autoscale rules, and monitor autoscaling activity
+In this unit, you'll learn how to enable autoscaling, create autoscale rules, and monitor autoscaling activity
 
 ## Enable autoscaling
 
@@ -34,6 +34,6 @@ The Azure portal enables you to track when autoscaling has occurred through the 
 
 :::image type="content" source="../media/autoscale-run-history.png" alt-text="The Run history information for the app.":::
 
-You can use the **Run history** chart in conjunction with the metrics shown on the **Overview** page to correlate the autoscaling events with resource utilization.
+You can use the **Run history** chart with the metrics shown on the **Overview** page to correlate the autoscaling events with resource utilization.
 
 :::image type="content" source="../media/service-plan-metrics.png" alt-text="The metrics shown on the App Service Plan overview page.":::

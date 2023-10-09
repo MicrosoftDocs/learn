@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Implement CI/CD for Azure SQL Database
   description: Understand how CI/CD applies to databases. Get an overview of GitHub Actions and Azure DevOps and how it relates to Azure SQL Database.
-  ms.date: 3/17/2021 
+  ms.date: 3/15/2023 
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
     title: Knowledge check
     questions:
-    - content: "Which of the following approaches is not an approach for CI/CD in Azure SQL Database?"
+    - content: "Which of the following approaches isn't an approach for CI/CD in Azure SQL Database?"
       choices:
       - content: "Desired State"
         isCorrect: false
@@ -26,11 +26,11 @@ quiz:
         explanation: "This approach was discussed."
       - content: "Data DevOps"
         isCorrect: true
-        explanation: "That's correct, this is the overall topic, but not a specific approach."
+        explanation: "Data DevOps is correct. This term describes an overall concept, but not a specific approach."
       - content: "Custom Scripts"
         isCorrect: false
         explanation: "This approach was discussed."
-    - content: "DevOps was defined as the union of three things. Which of the following options was not one of them?"
+    - content: "DevOps was defined as the union of three things. Which of the following options wasn't one of them?"
       choices:
       - content: "People"
         isCorrect: false
@@ -40,7 +40,7 @@ quiz:
         explanation: "This option is one of the pieces, review the unit."
       - content: "Plans"
         isCorrect: true
-        explanation: "That's correct!"
+        explanation: "You've selected the correct choice!"
       - content: "Technology"
         isCorrect: false
         explanation: "This option is one of the pieces, review the unit."

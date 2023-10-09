@@ -1,3 +1,5 @@
+
+
 Azure Resource Manager is the deployment and management service for Azure. It provides a consistent management layer that enables you to create, update, and delete resources in your Azure subscription. You can use its access control, auditing, and tagging features to secure and organize Azure resources.
 
 The core concept of Azure Resource Manager is a *resource*. A resource is an elementary building block of services and solutions that you deploy into Azure. In order to facilitate resource management, Azure Resource Manager interacts with resource providers, which implement actions that you invoke through an administrative interface, such as the Azure portal, Azure PowerShell, Azure CLI, or REST API.

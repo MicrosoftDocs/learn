@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-arc-enabled-data-services.3-fundamentals
 metadata:
   title: Enable hybrid computing with Azure Arc-enabled data services
-  description: In this unit, you'll learn about the basics and architecture of Azure Arc-enabled data services.
+  description: In this unit, you learn about the basics and architecture of Azure Arc-enabled data services.
   ms.date: 06/28/2021
   author: MikeRayMSFT
   ms.author: mikeray
@@ -21,12 +21,12 @@ quiz:
     - content: "Kubernetes API"
       isCorrect: true
       explanation: "Correct. All services use one of the key components of the Kubernetes platform, the Kubernetes API"
-    - content: "az CLI"
+    - content: "Azure CLI"
       isCorrect: false
-      explanation: "Incorrect. az CLI isn't a key component of Kubernetes"
+      explanation: "Incorrect. Azure CLI isn't a key component of Kubernetes"
     - content: "kubectl"
       isCorrect: false
-      explanation: "Incorrect. kubectl is a tool used with Kubernetes but is not a key component used by Azure Arc-enabled data services"
+      explanation: "Incorrect. kubectl is a tool used with Kubernetes but isn't a key component used by Azure Arc-enabled data services"
     - content: "Azure Arc Agents"
       isCorrect: false
       explanation: "Incorrect. Azure Arc Agents are deployed on the Kubernetes cluster but not a component of Kubernetes"
@@ -37,7 +37,7 @@ quiz:
       explanation: "Incorrect. Indirect connected mode can't use the Azure Resource Manager. You can't use tools like the Azure portal to deploy or manage Azure Arc-enabled data services"
     - content: "direct connected mode"
       isCorrect: true
-      explanation: "Correct. With direct connected mode, users can use the Azure Resource Manager through the az CLI and Azure portal"
+      explanation: "Correct. With direct connected mode, users can use the Azure Resource Manager through the Azure CLI and Azure portal"
     - content: "Azure connected mode"
       isCorrect: false
       explanation: "Incorrect. The only connected mode options are direct or connected"
@@ -59,8 +59,8 @@ quiz:
       explanation: "Incorrect. The Azure portal is an interface that uses the Azure Resource Manager"
     - content: "Azure Arc resource providers"
       isCorrect: true
-      explanation: "Correct. Azure Arc resource providers will coordinate this request with Azure Arc agents and the Azure Arc data controller in the Kubernetes cluster to complete the deployment of Kubernetes pods and services"
-    - content: "az CLI"
+      explanation: "Correct. Azure Arc resource providers coordinate this request with Azure Arc agents and the Azure Arc data controller in the Kubernetes cluster to complete the deployment of Kubernetes pods and services"
+    - content: "Azure CLI"
       isCorrect: false
-      explanation: "Incorrect. The az CLI is an interface that uses the Azure Resource Manager"
+      explanation: "Incorrect. The Azure CLI is an interface that uses the Azure Resource Manager"
       

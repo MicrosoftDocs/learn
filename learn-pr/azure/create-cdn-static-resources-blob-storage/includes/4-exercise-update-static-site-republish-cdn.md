@@ -1,10 +1,10 @@
-With your delivery network configured, let's verify that your site content is being delivered through the CDN.
+Now that your delivery network is configured, let's verify that your site content is being delivered through the CDN.
 
-In this unit, you'll review how CDNs update content and the delay that you typically see when updating the source files.
+In this unit, review how CDNs update content and the delay that you typically see when updating the source files.
 
 ## Review both the Origin Server and CDN Versions
 
-Here you'll open the URLs for the origin server and the link to the CDN-published version in different browser windows. You'll then update the origin server with new files and notice how long it takes for that change to propagate.
+Open the URLs for the origin server and the link to the CDN-published version in different browser windows. Then update the origin server with new files and see how long it takes for that change to propagate.
 
 1. Open a web browser.
 

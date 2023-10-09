@@ -1,261 +1,288 @@
-In this part, you create a project in Azure Pipelines that builds and deploys that project to the Azure app service created earlier.
+The GitHub repo for this module contains the source code for a basic Java web project that connects to a MySQL database. In this unit, you create an Azure Pipelines continuous integration and continuous deployment (CI/CD) pipeline that builds and deploys the Java project to Azure App Service.
 
-The GitHub repo that you forked for this project contains the source code for a basic Java web project that connects to a MySQL database.
-
-In this part, you'll:
+In this unit, you:
 
 > [!div class="checklist"]
-> * Install the Azure Pipelines extension for your GitHub repo.
-> * Set up an Azure DevOps project for this module.
+> * Set up an Azure DevOps project for the CI/CD pipeline.
+> * Create required service connections for Azure Pipelines to connect to GitHub and Azure.
 > * Create pipeline variables in Azure Pipelines.
-> * Create required service connections so Azure Pipelines can connect to your Azure Container Registry and Azure App Service.
-> * Create a CI/CD pipeline to build and publish the Java container app.
-> * Save the pipeline to trigger a CI/CD workflow.
+> * Create and trigger a CI/CD pipeline that builds and publishes the Java container app to App Service.
 
-## Install the Azure Pipelines extension
+## Set up Azure DevOps
 
-Here you install the Azure Pipelines extension for your GitHub repository. This extension enables Azure Pipelines to access your GitHub account so that it can pull the latest source code from your repository.
+In this section, you make sure your Azure DevOps account has the necessary permissions and capabilities to:
 
-1. Go to the [GitHub Marketplace](https://github.com/marketplace?azure-portal=true).
-1. Search for **Azure Pipelines** and select the **Azure Pipelines** result.
-1. Locate the **Free** option and select **Install it for free**.
-1. Select **Complete order and begin installation**.
+- Create a project.
+- Run pipelines in your project.
+- Sign in to Azure.
+- Connect to GitHub.
+
+### Project creation permissions
+
+To create an Azure DevOps project, you need access to an Azure DevOps organization with [Project Collection Administrators](/azure/devops/organizations/security/change-organization-collection-level-permissions) group membership or collection-level **Create new projects** permission. Organization owners are automatically members of the **Project Collection Administration** group.
+
+### Parallel jobs availability
+
+To run the pipeline in this module, your Azure DevOps project must be able to run parallel jobs on Microsoft-hosted machines. Most Azure DevOps private projects allow one Microsoft-hosted parallel job with a certain number of free minutes available.
+
+To check availability, select **Organization settings** at the bottom of the Azure DevOps left navigation, and then select **Parallel jobs** under **Pipelines**. For more information, see [Check for available parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+
+### Azure sign-in account
+
+You don't need an Azure subscription to use Azure DevOps, but this module uses Azure DevOps to deploy resources that exist in your Azure subscription. To simplify this process, you use the same Microsoft account to sign in to your Azure subscription and your Azure DevOps organization.
+
+If you use different Microsoft sign-in accounts for Azure and Azure DevOps, add a user to your Azure DevOps organization for your Azure sign-in account. To add the user, you must be the Azure DevOps organization owner or a member of the **Project Collection Administrators** group.
+
+When you add the user, choose the **Basic** access level. Then sign out of Azure DevOps and sign back in with your Azure sign-in account. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true).
+  
+### Azure Pipelines authorization for GitHub
+
+Azure Pipelines needs access to your GitHub account so it can pull the latest source code from your repository. To install and authorize the Azure Pipelines extension for GitHub:
+
+1. Go to the [GitHub Marketplace](https://github.com/marketplace?azure-portal=true), and search for and select **Azure Pipelines**.
+1. At the bottom of the **Azure Pipelines** page, select **Install it for free**.
+1. Fill out the form and select **Save**.
 1. Select **Only select repositories** and choose the **mslearn-java-containers** repository that you forked earlier.
 1. Select **Install**.
 
-## Set up an Azure DevOps project
+>[!NOTE]
+>Optionally, you can install and authorize the Azure Pipelines extension for your GitHub repository later when you create your service connections or pipeline. 
 
-The previous task links your GitHub repository to your Azure DevOps organization. To complete the process, you now create an Azure DevOps project.
+## Create your Azure DevOps project
 
-1. Sign into your account at [dev.azure.com](https://dev.azure.com?azure-portal=true).
-1. Select **+ New project**.
+Create an Azure DevOps project to contain your CI/CD pipeline. Make sure you're the Azure DevOps organization owner, are a **Project Collection Administrators** group member, or have **Create new projects** permission.
 
-    The **Create new project** dialog opens.
-1. In the **Project name** field, enter a name such as *mslearn-java-containers*.
-1. Under **Visibility**, you choose whether to make your project public or private. For now, you can choose private.
-
-    Creators of open source projects will often choose public visibility so that others can view active issues and build status.
-1. Select **Advanced**.
-1. Under **Version control**, make sure that **Git** is selected.
+1. Go to your Azure DevOps organization at [dev.azure.com](https://dev.azure.com?azure-portal=true). If you're already signed in to Azure, you're automatically signed in to Azure DevOps. Otherwise, sign in.
+1. Select **Get started**. 
+1. Select **Create a new project to get started** and then choose **Create project**, or if you're already in your Azure DevOps organization, choose **New project**.
+1. On the **Create new project** page, in the **Project name** field, enter *mslearn-java-containers*.
+1. Under **Visibility**, choose whether to make your project public or private. Open-source project creators often choose public visibility so others can view project status and issues. For this project, choose **Private**.
+1. Select **Advanced**, and make sure **Git** appears under **Version control**.
 1. Select **Create**.
 
-## Create pipeline variables in Azure Pipelines
+## Create Azure service connections
 
-Your pipeline is going to need to include some variable names that specify the resources created in the previous steps. You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Plus, if the names of your instances change, you can update the variables and trigger your pipeline without modifying your configuration.
-
-To add the variables:
-
-1. Under **Pipelines**, select **Library**.
-
-    :::image type="content" source="../media/4-pipelines-library.png" alt-text="Screenshot of Azure Pipelines showing the Library menu option.":::
-
-1. Select **+ Variable group**.
-1. Under **Properties**, enter *Release* for the variable group name.
-1. Under **Variables**, select **+ Add**.
-1. For the name of your variable, enter `WebAppName`. For the value, enter the name of the App Service instance created earlier, such as `java-container-cicd-18116`.
-
-    > [!IMPORTANT]
-    > Set the name of the App Service instance, not its host name. In this example, you would enter `java-container-cicd-18116` and not `java-container-cicd-18116.azurewebsites.net`.
-
-1. Repeat the process to add another four variables named `RegistryName` with the following values of your Azure Container Registry login server, such as `javacontainercicd18116.azurecr.io`.
-1. Repeat the process to add another variable named `MySqlServer` with the value of your MySQL server host name, such as `java-container-cicd-18116`. You shouldn't use the fully qualified domain, just the host. If you followed the instructions as is, then it's the same as your web app name.
-1. Repeat the process to add another variable named `MySqlUserName` with the value of the MySQL user name used to create the server, such as `sysadmin`.
-1. Repeat the process to add another variable named `MySqlPassword` with the value of the MySQL password used to create the server, such as `P\@ssw0rd`. Select the padlock icon that appears when you hover over the variable to *Change variable type to secret* so that it won't be shown as plaintext after it's saved.
-
-    > [!IMPORTANT]
-    > In a real world scenario, you may opt to use an alternative storage mechanism for credentials, such as Azure Key Vault. To learn more about Azure Key Vault, see [Configure and manage secrets in Azure Key Vault](/training/modules/configure-and-manage-azure-key-vault/?azure-portal=true).
-
-1. Near the top of the page, select **Save** to save your variable to the pipeline.
-
-Make sure your variable group resembles like the one shown below:
-
-:::image type="content" source="../media/4-library-variable-group.png" alt-text="Screenshot of Azure Pipeline showing the variable group. The group contains five variables.":::
-
-## Create required service connections
-
-Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses the service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
+Create the necessary Azure service connections to allow Azure Pipelines to access your Azure resources. Azure Pipelines uses the Azure resource service connection to deploy the Java application to App Service, and uses the Docker Registry connection to publish the application's Docker container to Container Registry.
 
 > [!IMPORTANT]
-> Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account and you have owner access to the resource groups.
+> Make sure that you're signed in to Azure DevOps with an Azure sign-in account that has the **Owner** role in Azure.
 
-1. From the bottom corner of the page, select **Project settings**.
-1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection** > **Azure Resource Manager** > **Next**.
-1. Select the recommended settings as **Service principal (automatic)**, then select **Next**.
-1. Fill in these fields:
+### Azure resource service connection
 
-    | Field           | Value                                        |
-    |-----------------|----------------------------------------------|
-    | Scope level     | **Subscription**                             |
-    | Subscription    | Your Azure subscription                      |
-    | Resource Group  | `java-containers-cicd-rg`                   |
-    | Service connection name | `Azure Connection`                           |
+1. In your DevOps project, select **Project settings** at the bottom of the left navigation.
+1. Under **Pipelines**, select **Service connections**, and then select **Create service connection**.
+1. On the **New service connection** screen, select **Azure Resource Manager**, and then select **Next**.
+1. Select **Service principal (automatic)**, and then select **Next**.
+1. On the next screen, complete the following fields:
 
-    During the process, you might be prompted to sign in to your Microsoft account.
+   | Field           | Value                                        |
+   |-----------------|----------------------------------------------|
+   | **Scope level**     | Select **Subscription**.                             |
+   | **Subscription**    | Select your Azure subscription.                      |
+   | **Resource group**  | Select **java-containers-cicd-rg**                   |
+   | **Service connection name** | Enter *Azure Connection*.                           |
 
-1. Ensure that **Grant access permission to all pipelines** is selected.
+1. Select **Grant access permission to all pipelines**.
+1. Select **Save**. Azure DevOps tests the connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you get the chance to sign in a second time.
 
+### Container Registry service connection
+
+1. Back on the **Service connections** page, select **New service connection**.
+1. On the **New service connection** screen, select **Docker Registry**, and then select **Next**.
+1. On the **New Docker Registry service connection** page, under **Registry type**, select **Azure Container Registry**.
+1. Under **Authentication Type**, select **Service Principal**.
+1. Complete the following fields:
+
+   | Field           | Value                                        |
+   |-----------------|----------------------------------------------|
+   | **Subscription**| Select your Azure subscription.|
+   | **Azure container registry**|Select the container registry you created for this module.|
+   | **Service connection name**| Enter *Container Registry Connection*.|
+
+1. Select **Grant access permission to all pipelines**.
 1. Select **Save**.
 
-    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.
+>[!NOTE]
+>If you didn't yet authorize Azure Pipelines to access GitHub, you can use a service connection to grant authorization. Follow the preceding instructions to set up a service connection, and choose **GitHub** on the **New service connection** screen. Select **AzurePipelines** on the **New GitHub service connection** screen, and then select **Authorize**.
 
-1. Select **Create service connection** > **Docker Registry** > **Next**.
-1. Near the top of the page, select **Azure Container Registry**.
-1. Fill in these fields:
+## Create Azure Pipelines variables
 
-    | Field               | Value                                        |
-    |---------------------|----------------------------------------------|
-    | Subscription    | Your Azure subscription                          |
-    | Azure container registry  | **Select the one you created earlier** |
-    | Service connection name | *Container Registry Connection*          |
+Your CI/CD pipeline uses the Azure resource names you created in previous steps. You could hardcode these names in your pipeline configuration, but your configuration is more reusable and less error-prone if you define them as pipeline variables. If your instance names change, you can update the variables and trigger your pipeline without modifying your configuration.
 
-1. Ensure that **Grant access permission to all pipelines** is selected.
-1. Select **Save**.
+To define the pipeline variables:
+
+1. In the left navigation for your DevOps project, select **Pipelines** > **Library**.
+
+   :::image type="content" source="../media/4-pipelines-library.png" alt-text="Screenshot of the Library menu option under Pipelines in Azure DevOps.":::
+
+1. On the **Library** page, select **Variable group**.
+1. On the new variable group page, under **Properties**, enter *Release* for **Variable group name**.
+1. Under **Variables**, select **Add**.
+1. Enter the following variable names and values, and select **Add** after adding each name-value pair:
+
+   |Variable name|Value|
+   |-------------|-----|
+   |**WebAppName**|Name of the App Service instance you created, such as `java-container-cicd-18116`. Be sure to use the instance name, not the host name that contains `azurewebsites.net`.|
+   |**RegistryName**|Your Container Registry login server name, such as `javacontainercicd18116.azurecr.io`.|
+   |**MySqlServer**|Your MySQL server host name, such as `java-container-cicd-18116`, which if you followed the preceding instructions is the same as your web app name. Don't use the fully qualified domain, just the host.|
+   |**MySqlUserName**|The MySQL administrator login name you used to create the server, such as `sysadmin`.|
+   |**MySqlPassword**|The MySQL password you used to create the server, such as `P@ssw0rd`. After you enter the password, select the padlock icon to change variable type to secret so it doesn't show as plain text after it's saved.|
+
+   > [!IMPORTANT]
+   > In a real-world scenario, you might opt to use an alternative storage mechanism for credentials, such as Azure Key Vault. To learn more about Key Vault, see [Configure and manage secrets in Azure Key Vault](/training/modules/configure-and-manage-azure-key-vault/?azure-portal=true).
+
+   Make sure your variable group resembles the following image:
+
+   :::image type="content" source="../media/4-library-variable-group.png" alt-text="Screenshot of Azure Pipeline showing the variable group with five variables.":::
+
+1. Select **Save** near the top of the page to save your variable group to Azure Pipelines.
 
 ## Create the CI/CD pipeline
 
-Here you create a CI/CD pipeline that's based on a starter template. The process generates a pipelines configuration file named *azure-pipelines.yml*, which lives in the root directory of your Git repository.
+Now use Azure Pipelines to create your CI/CD build and deployment pipeline. You base the pipeline on a starter pipeline configuration template named *azure-pipelines.yml* that's in the root directory of your Git repository.
 
-1. In Azure DevOps, go to your **mslearn-java-containers** project.
-1. Select **Pipelines**, either from the project page or from the left pane.
+1. In your Azure DevOps project, select **Pipelines** from the left navigation.
 1. Select **Create Pipeline**.
-1. On the **Connect** tab, select **GitHub**.
+1. On the **Where is your code** page, select **GitHub**.
+1. On the **Select a repository** page, select your **mslearn-java-containers** repository.
 
-    If prompted, enter your GitHub credentials.
-1. On the **Select** tab, select your **mslearn-java-containers** repository.
-1. On the **Configure** tab, select **Starter pipeline**. While there are other templates you could choose that provide starter pipeline code, in this module you'll define each of the build steps.
-1. On the **Review** tab, review the starter code for your pipeline configuration. Don't select **Save and run** just yet.
+   - If prompted, select your GitHub account, select **Authorize**, select **Authorize Azure Pipelines**, and sign in to GitHub.
+   - If you haven't yet installed and authorized the Azure Pipelines extension, select **Approve and install Azure Pipelines**.
 
-### Setting up the trigger and variables  
+1. On the **Configure your pipeline** screen, select **Starter pipeline**. You could choose other templates that provide starter pipeline code, but for this learning path you define each build step.
+1. On the **Review your pipeline YAML** screen, view the starter pipeline configuration code.
 
-The pipeline runs whenever there's a change to the `main` branch on GitHub. Replace the contents of *azure-pipelines.yml* with this code:
+### Pipeline trigger
+
+To make the pipeline run whenever there's a code change in the `main` branch of your GitHub repository, replace the contents of *azure-pipelines.yml* with the following code:
 
 [!code-yml[](code/4-1-azure-pipelines.yml)]
 
 ### Pipeline variables
 
-To aid in pipeline maintenance, the default template uses variables for commonly used parameters, such as the name of the container repository to publish the app image to. You can also import variables from pipeline libraries managed outside of the pipeline itself.
+To aid in maintenance, the pipeline sets variables for commonly used parameters, such as the container repository to publish the app image to. You can also import variables from pipeline libraries.
 
-Add this code to the end of the pipeline:
+To set the pipeline variables, add the following code to the end of the file:
 
 [!code-yml[](code/4-2-azure-pipelines.yml)]
 
-### The Build stage
+> [!IMPORTANT]
+> YAML is very particular about indentation. The Azure Pipelines YAML editor underlines bad indentation with squiggly lines. After each step where you add YAML, be sure to review the the Azure Pipelines YAML editor and address any indentation issues.
 
-This pipeline is divided into two stages: *Build* and *Deploy*. The build stage configures and runs the build, publishing the package to artifact storage.
+### Build stage
 
-Add this code to define the *Build* stage:
+This pipeline has two stages, `Build` and `Deploy`. The `Build` stage configures and runs the build, and publishes the package to artifact storage.
+
+Add the following code to define the `Build` stage:
 
 [!code-yml[](code/4-3-azure-pipelines.yml)]
 
-### Maven task
+#### Maven task
 
-The `Maven@3` task builds Java projects. For the purposes of this pipeline, only the `options` and `publishJUnitResults` parameters are used to specify the path to the settings file and to skip publishing test results. You can learn more about this task in the [Maven task](/azure/devops/pipelines/tasks/build/maven?azure-portal=true) documentation.
+The `Maven@3` task builds Java projects into Apache Maven packages. This pipeline uses only the `options` and `publishJUnitResults` parameters, which specify the path to the settings file and skip publishing test results. For more information about this task, see [Maven task](/azure/devops/pipelines/tasks/build/maven?azure-portal=true).
 
-Add this code to the end of the pipeline:
+Add the following code to the end of the pipeline:
 
 [!code-yml[](code/4-4-azure-pipelines.yml)]
 
-> [!IMPORTANT]
-> YAML is very particular about indentation. Fortunately, the Azure Pipelines YAML editor is your best friend. After each step where you add YAML in this module, take a moment to review the editor to be sure that it's satisfied with your indentation (no visual warnings about indentation) before continuing.
+#### Copy output files task
 
-### Copying output files
+The build produces a WAR file that the Docker build must be able to access. To make the file available, use the `CopyFiles@2` task to copy it to the artifact staging directory.
 
-The build produces a WAR file that must be accessible to the Docker build. To make it available, use the `CopyFiles@2` task to copy it to the artifact staging directory.
-
-Add this code to the end of the pipeline:
+Add the following code to the end of the pipeline:
 
 [!code-yml[](code/4-5-azure-pipelines.yml)]
 
-### Docker task
+#### Docker task
 
-The `Docker@2` task builds and deploys Docker containers. It's ideal for this scenario because it accomplishes everything in a single task:
+The `Docker@2` task builds and deploys Docker containers. This task is ideal for this scenario, because it does the build and deployment in a single task.
 
-* `command` indicates the feature to run. In this case, `buildAndPush` does exactly what it sounds like.
-* `buildContext` specifies the path to the build context.
-* `repository` specifies the name of the repository.
-* `dockerfile` specifies the path to the Dockerfile.
-* `containerRegistry` specifies the name of the container registry connection to use.
-* `tags` indicates which tags to apply to the container image.
+- `command` indicates the feature to run, in this case `buildAndPush`.
+- `buildContext` specifies the path to the build context.
+- `repository` specifies the name of the repository.
+- `dockerfile` specifies the path to the Dockerfile.
+- `containerRegistry` specifies the name of the container registry connection to use.
+- `tags` indicates which tags to apply to the container image.
 
-You can learn more about this task in the [Docker task](/azure/devops/pipelines/tasks/build/docker?azure-portal=true) documentation.
+For more information about this task, see [Docker task](/azure/devops/pipelines/tasks/build/docker?azure-portal=true).
 
-Add this code to the end of the pipeline:
+Add the following code to the end of the pipeline:
 
 [!code-yml[](code/4-6-azure-pipelines.yml)]
 
-### Azure Database for Mysql Deployment task
+#### Azure Database for MySql deployment task
 
-The `AzureMysqlDeployment@1` task enables the pipeline to run scripts against an Azure Database for MySQL instance. In this case, the task is needed to run the initialization script that creates the database and configures sample data. It's safe to run this code every time the pipeline runs because it only makes changes when necessary.
+The `AzureMysqlDeployment@1` task enables running scripts against an Azure Database for MySQL database. For this scenario, the task runs the initialization script that creates the database and configures sample data. This code can safely run every time the pipeline runs, because it makes changes only when necessary.
 
-* `azureSubscription` specifies the name of the Azure service connection to use.
-* `ServerName` specifies the fully qualified host name of the server.
-* `DatabaseName` specifies the name of the database, which is `alm` in this app.
-* `SqlUsername` specifies the username in the format *username@server*.
-* `SqlPassword` specifies the password configured earlier.
-* `SqlFile` specifies the script to run. This is in the root of the project's source.
+This task uses the pipeline variable group values and other configurations you set up earlier.
 
-You can learn more about this task in the [Azure Database for Mysql Deployment task](/azure/devops/pipelines/tasks/deploy/azure-mysql-deployment?azure-portal=true) documentation.
+- `azureSubscription` specifies the name of the Azure service connection to use.
+- `ServerName` specifies the fully qualified host name of the server.
+- `DatabaseName` specifies the name of the database, which is `alm` in this app.
+- `SqlUsername` specifies the username in the format `username@server`.
+- `SqlPassword` specifies the password you configured earlier.
+- `SqlFile` specifies the script to run, which is in the root of the project's source code.
 
-Add this code to the end of the pipeline:
+For more information about this task, see [Azure Database for Mysql Deployment task](/azure/devops/pipelines/tasks/deploy/azure-mysql-deployment?azure-portal=true).
+
+Add the following code to the end of the pipeline:
 
 [!code-yml[](code/4-7-azure-pipelines.yml)]
 
-### Deploying the build image
+### Deploy stage
 
-The second stage of the pipeline manages to deploy the solution out to Azure. It takes a dependency on the *Build* stage completing successfully and imports the variables from the **Release** library that you created earlier.
+The second, `Deploy` stage of the pipeline deploys the solution to Azure. This stage is dependent on the `Build` stage completing successfully, and imports the variables from the Release variable group you created earlier.
 
-Add this code to the end of the pipeline:
+Add the following code to the end of the pipeline:
 
 [!code-yml[](code/4-8-azure-pipelines.yml)]
 
-### Azure Web App for Container task
+#### Azure Web App for Container task
 
-The `AzureWebAppContainer@1` task deploys Docker containers to Azure App Service. Deployment can be accomplished with a single task:
+The `AzureWebAppContainer@1` task deploys Docker containers to App Service in a single task.
 
-* `appName` specifies the name of the App Service instance.
-* `azureSubscription` specifies the name of the Azure connection.
-* `imageName` specifies the full name of the Docker container image.
+- `appName` specifies the name of the App Service instance.
+- `azureSubscription` specifies the name of the Azure connection.
+- `imageName` specifies the full name of the Docker container image.
 
-You can learn more about the flexibility of this task in the [Azure Web App for Container task](/azure/devops/pipelines/tasks/deploy/azure-rm-web-app-containers?azure-portal=true) documentation.
+For more information about this task, see [Azure Web App for Container task](/azure/devops/pipelines/tasks/deploy/azure-rm-web-app-containers?azure-portal=true).
 
-Add this code to the end of the pipeline:
+Add the following code to the end of the pipeline:
 
 [!code-yml[](code/4-9-azure-pipelines.yml)]
 
-### Azure App Service Settings task
+#### App Service Settings task
 
-The `AzureAppServiceSettings@1` task enables pipelines to update the settings of an app service in Azure. In this case, the pipeline is going to add (or update) the connection string the container app uses after each successful deployment. The parameters are straightforward:
+The `AzureAppServiceSettings@1` task enables pipelines to update the settings of an Azure app service. In this case, after each successful deployment, the pipeline adds or updates the connection string the container app uses. The task uses the following parameters:
 
-* `azureSubscription` specifies the name of the Azure connection.
-* `appName` specifies the name of the App Service instance.
-* `resourceGroupName` specifies the resource group the app service belongs to.
-* `connectionStrings` provides the JSON-formatted list of connection string settings to apply.
+- `azureSubscription` specifies the name of the Azure connection.
+- `appName` specifies the name of the App Service instance.
+- `resourceGroupName` specifies the resource group the app service belongs to.
+- `connectionStrings` provides the JSON-formatted list of connection string settings to apply.
 
-You can learn more about the details of this task in the [Azure App Service Settings task](/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?azure-portal=true) documentation.
+For more information about this task, see [Azure App Service Settings task](/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?azure-portal=true).
 
-Add this code to the end of the pipeline:
+Add the following code to the end of the pipeline:
 
 [!code-yml[](code/4-10-azure-pipelines.yml)]
 
-Take a moment to review the *azure-pipelines.yml* file, ensure indentation looks something like this:
+## Trigger the pipeline
 
-[!code-yml[](code/complete-azure-pipelines.yml)]
+1. Take a moment to review your *azure-pipelines.yml* file, and ensure that the indentation looks like the following example:
 
-## Save the pipeline to trigger the build
+   [!code-yml[](code/complete-azure-pipelines.yml)]
 
-1. Select **Save and run** from the top right corner of the page. Confirm the **Save and run** to trigger a run.
-1. In Azure Pipelines, go to the build. Trace the build as it runs.
-1. After the build has succeeded, select the website's deploy task, and copy the URL to view the deployed site.
+1. Select **Save and run** at upper right, and then select **Save and run** again to trigger the pipeline run.
+1. Select **Pipelines**, and then select the name of the run and the **Build** stage to see the steps as they run.
+1. After the pipeline completes successfully, expand the **DeploymentJob** at left, select **Update the web app with the new container**, and copy the **App Service Application URL** from the right pane.
 
-    :::image type="content" source="../media/4-deploy-url.png" alt-text="Screenshot of Azure Pipelines showing the location of the website URL.":::
+   :::image type="content" source="../media/4-deploy-url.png" alt-text="Screenshot of Azure Pipelines showing the location of the website URL.":::
 
-1. The site is hosted under the `/myshuttledev/` path on the server. Append that path to the copied URL and navigate to it in a new browser tab, such as:
+1. The site is hosted under the `/myshuttledev/` path on the server. Open a new browser tab and paste in the application URL you copied, appended with `/myshuttledev/`. For example, `http://java-container-cicd-18116.azurewebsites.net/myshuttledev/`.
+1. Go to the site to view the deployed application. If prompted for permission to access the insecure site, grant permission.
 
-    ```
-    http://java-container-cicd-18116.azurewebsites.net/myshuttledev/
-    ```
+   It might take a few minutes before you can see the site running on App Service. When the site appears, you can log in by using the user name `fred` and password `fredpassword` and explore the site.
 
-1. You see the site running on App Service. You can log in to the site by using the credentials: `fred`/`fredpassword`.
-
-    :::image type="content" source="../media/4-myshuttle.png" alt-text="Screenshot of the running website.":::
+   :::image type="content" source="../media/4-myshuttle.png" alt-text="Screenshot of the running website.":::
+   
+When you're finished with the resources you created for this module, proceed to the next unit to remove them.

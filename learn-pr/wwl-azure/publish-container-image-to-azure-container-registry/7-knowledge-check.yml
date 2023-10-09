@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/06/2023
+  ms.date: 04/25/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -17,10 +17,21 @@ quiz:
     choices:
     - content: "Basic"
       isCorrect: false
-      explanation: "That's incorrect. The basic tier doesn't support geo-replication."
+      explanation: "Incorrect. The basic tier doesn't support geo-replication."
     - content: "Standard"
       isCorrect: false
-      explanation: "That's incorrect. The standard tier doesn't support geo-replication."
+      explanation: "Incorrect. The standard tier doesn't support geo-replication."
     - content: "Premium"
       isCorrect: true
-      explanation: "That's correct. The premium tier adds geo-replication as a feature."
+      explanation: "Correct. The premium tier adds geo-replication as a feature."
+  - content: "Which Azure container registry tiers benefit from encryption-at-rest?"
+    choices:
+    - content: "Basic, Standard, and Premium"
+      isCorrect: true
+      explanation: "Correct. Encryption-at-rest is supported in all three tiers."
+    - content: "Basic and Standard only"
+      isCorrect: false
+      explanation: "Incorrect. Encryption-at-rest is supported in all three tiers."
+    - content: "Premium only"
+      isCorrect: false
+      explanation: "Incorrect. Encryption-at-rest is supported in all three tiers."

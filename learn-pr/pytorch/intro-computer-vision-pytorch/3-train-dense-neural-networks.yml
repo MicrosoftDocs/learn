@@ -8,7 +8,7 @@ metadata:
   ms.author: dmitryso
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.service: machine-learning
   ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true

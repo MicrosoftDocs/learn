@@ -1,3 +1,5 @@
+
+
 ## Replicate virtual machines
 
 To start replicating Azure VMs to the Azure region serving as the disaster recovery site, follow the guidance in [Tutorial: Set up disaster recovery for Azure VMs](/azure/site-recovery/azure-to-azure-walkthrough-enable-replication).

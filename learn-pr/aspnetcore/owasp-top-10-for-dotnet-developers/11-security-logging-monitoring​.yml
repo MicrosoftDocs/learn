@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.security-logging-monitoring
+title: Security logging and monitoring
+metadata:
+  title: security-logging-monitoring
+  description: "OWASP Top 10 for .NET Developers. Security logging and monitoring."
+  ms.date: 06/12/2023
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 2
+content: |
+  [!include[](includes/11-security-logging-monitoring.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:  
+  - content: "Which of the statements would you consider secure logging best practices?"
+    choices:
+    - content: "Log all events occurring in the system and store the logs in an easily accessible public location."
+      isCorrect: false
+      explanation: "Overlogging may add noise when diagnosing issues. Logs should be protected and not exposed to public."
+    - content: "Log user and password of all failed authentication attempts."
+      isCorrect: false
+      explanation: "Not quite. Failed authentication attempts should be logged and audited. Logging passwords is a security risk"    
+    - content: "Sanitize logs from sensitive information and guard access to logged information."
+      isCorrect: true
+      explanation: "Correct."

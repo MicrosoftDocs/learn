@@ -7,9 +7,9 @@ metadata:
   ms.date: 09/08/2022
   author: ramiMSFT
   ms.author: rabououn
-  ms.custom: devdivchpfy22
+  ms.custom: devdivchpfy22, devx-track-azurecli
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 20
 content: |
   [!include[](includes/3-set-up-environment.md)]

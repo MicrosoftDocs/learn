@@ -16,18 +16,18 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You have product catalog data in SAP HANA and sales data in SQL Server running on Linux. You want to write a report that uses data from both systems to analyze profit margins for all products but you want to minimize the amount work required for database administrators. What should you do?"
+  - content: "You have product catalog data in SAP HANA and sales data in SQL Server running on Linux. You want to write a report that uses data from both systems to analyze profit margins for all products, but you want to minimize the amount work required for database administrators. What should you do?"
     choices:
     - content: "Set up a data warehouse and use ETL packages in SQL Integration Services to populate it with data from SAP HANA and SQL Server. Write the report against the data warehouse."
       isCorrect: false
-      explanation: "This solution is possible but requires significant database administrator time to create the ETL packages and populate the data warehouse."
+      explanation: "This solution is possible, but requires significant database administrator time to create the ETL packages and populate the data warehouse."
     - content: "Install PolyBase on the SQL Server and add SAP HANA as an external data source. Create external data tables that connect to the tables in SAP HANA. Write the report against the SQL Server."
       isCorrect: true
       explanation: "By using PolyBase data virtualization, you can present SAP HANA data in SQL Server as external tables. You can write reports that query both catalog data and sales data from SQL Server, even though the catalog is actually stored in SAP HANA. There's no need to develop custom code or ETL packages."
-    - content: "Write separate queries to obtain the data you need from SQL Server and SAP HANA. Then write custom code that integrates the two datasets into a unified report."
+    - content: "Write separate queries to obtain the data you need from SQL Server and SAP HANA, then write custom code that integrates the two datasets into a unified report."
       isCorrect: false
-      explanation: "This solution is possible but requires significant database administrator and developer time to create the custom integration code."
-  - content: "You have a mobile app, written in Python, that your sales team uses to record orders and view sales performance data. Recently, you have migrated the database from a Windows server to an Ubuntu Linux server. What changes does this require in your app code?"
+      explanation: "This solution is possible, but requires significant database administrator and developer time to create the custom integration code."
+  - content: "You have a mobile app written in Python that your sales team uses to record orders and view sales performance data. Recently, you migrated the database from a Windows server to an Ubuntu Linux server. What changes does this require in your app code?"
     choices:
     - content: "You must rewrite the app in a .NET Framework language, such as VB.NET or C#."
       isCorrect: false

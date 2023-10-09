@@ -4,7 +4,7 @@ uid: learn-windows.windows-10-ui-and-data.5-creating-interactive-ui
 metadata:
   title: Creating an interactive UI
   description: Learn how to use data binding to control the visibility of UI elements in your Windows app.
-  ms.date: 10/18/2022
+  ms.date: 05/03/2023
   displayType: one-Column
   author: QuinnRadich
   ms.author: quradic

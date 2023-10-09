@@ -1,8 +1,34 @@
-Backing up Azure virtual machines using Azure Backup is easy and follows a simple process.
 
-:::image type="content" source="../media/backup-steps-97429b0d.png" alt-text="Three steps to create, use, and then backup.":::
+To use Azure Backup to protect your Azure virtual machines, you follow a simple three-step process: create a vault, define your backup options, and trigger the backup job.
 
+:::image type="content" source="../media/backup-steps-97429b0d.png" alt-text="Illustration that shows the three basic steps to back up an Azure virtual machine by using Azure Backup." border="false":::
 
-1.  **Create a recovery services vault**. To back up your files and folders, you need to create a Recovery Services vault in the region where you want to store the data. You also need to determine how you want your storage replicated, either geo-redundant (default) or locally redundant. By default, your vault has geo-redundant storage. If you are using Azure as a primary backup storage endpoint, use the default geo-redundant storage. If you are using Azure as a non-primary backup storage endpoint, then choose locally redundant storage, which will reduce the cost of storing data in Azure.
-2.  **Use the Portal to define the backup**. Protect your data by taking snapshots of your data at defined intervals. These snapshots are known as recovery points, and they are stored in recovery services vaults. If or when it is necessary to repair or rebuild a VM, you can restore the VM from any of the saved recovery points. A backup policy defines a matrix of when the data snapshots are taken, and how long those snapshots are retained. When defining a policy for backing up a VM, you can trigger a backup job once a day.
-3.  **Backup the virtual machine**. The Azure VM Agent must be installed on the Azure virtual machine for the Backup extension to work. However, if your VM was created from the Azure gallery, then the VM Agent is already present on the virtual machine. VMs that are migrated from on-premises data centers would not have the VM Agent installed. In such a case, the VM Agent needs to be installed.
+### Step 1. Create a Recovery Services vault
+
+The first step is to create an Azure Recovery Services vault for your virtual machine backups. The vault must be created within your Azure subscription, and in the region where you want to store the data.
+
+You also need to specify how you want your storage replicated, either geo-redundant (default) or locally redundant.
+
+- **Geo-redundant** (GRS): (Default) Use GRS when Azure is your primary backup storage endpoint.
+
+- **Locally redundant** (LRS): If Azure **isn't** your primary backup storage endpoint, use LRS to reduce your storage costs.
+
+### Step 2. Define your backup policy options
+
+After you create your vault, you need to define your backup policy. The policy specifies when to take the data snapshots, and how long to keep the snapshots. 
+
+Your virtual machine is protected by taking snapshots of your data at defined intervals. The snapshots produce recovery points that are stored in your Recovery Services vault.
+
+If it becomes necessary to repair or rebuild your virtual machine, you can restore your machine by using your saved recovery points. In your backup policy, you can specify to trigger a backup from one to five times per day.
+
+### Step 3. Back up your virtual machine
+
+The last step is to run the Azure Backup job process and create your backups.
+
+To run the backup job, the Azure Backup extension requires the Microsoft Azure Virtual Machine Agent to be present on your Azure virtual machine.
+
+- If your virtual machine was created from the Azure gallery, the agent is installed by default on your machine. 
+
+- If your virtual machine was migrated from an on-premises data center, you need to manually install the agent on your machine.
+
+For details, see [Install the Azure Virtual Machine Agent](/azure/virtual-machines/extensions/agent-windows#install-the-vm-agent).

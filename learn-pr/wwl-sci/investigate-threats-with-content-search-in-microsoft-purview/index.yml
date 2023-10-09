@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview
+metadata:
+  title: Investigate threats with Content search in Microsoft Purview
+  description: "Investigate threats with Content search in Microsoft Purview."
+  ms.date: 05/25/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Investigate threats with Content search in Microsoft Purview
+summary: This module examines how to search for content in the Microsoft Purview compliance portal using Content Search functionality, including how to view and export the search results, and configure search permissions filtering.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe how to use content search in the Microsoft Purview compliance portal.
+  - Design and create a content search.
+  - Preview the search results.
+  - View the search statistics.
+  - Export the search results and search report.
+  - Configure search permission filtering.
+prerequisites: |
+  - Familiarity with the Microsoft Purview Compliance Portal.
+  - Experience installing and importing PowerShell modules.
+  - Experience running PowerShell cmdlets.
+iconUrl: /training/achievements/m365-content-compliance.svg
+levels:
+- intermediate
+roles:
+- security-operations-analyst
+- security-engineer
+products:
+- m365
+- office-365
+subjects:
+- cloud-computing
+- compliance
+- information-protection-governance
+units:
+- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.introduction
+- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.explore-ediscovery-solutions
+- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.create-content-search
+- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.view-search-results
+- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.export-search-results
+- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.configure-search-permissions-filters
+- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.search-delete-email-messages
+- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.knowledge-check
+- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.summary
+badge:
+  uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.badge

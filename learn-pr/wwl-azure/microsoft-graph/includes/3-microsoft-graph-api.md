@@ -7,7 +7,7 @@ Unless explicitly specified in the corresponding topic, assume types, methods, a
 
 ## Call a REST API method
 
-To read from or write to a resource such as a user or an email message, you construct a request that looks like the following:
+To read from or write to a resource such as a user or an email message, construct a request that looks like the following:
 
 ```http
 {HTTP method} https://graph.microsoft.com/{version}/{resource}?{query-parameters}
@@ -39,22 +39,22 @@ Microsoft Graph uses the HTTP method on your request to determine what your requ
 | DELETE | Remove a resource. |                        
 
 * For the CRUD methods `GET` and `DELETE`, no request body is required.
-* The `POST`, `PATCH`, and `PUT` methods require a request body, specified in JSON format, that contains additional information, such as the values for properties of the resource.
+* The `POST`, `PATCH`, and `PUT` methods require a request body specified in JSON format that contains additional information. Such as the values for properties of the resource.
 
 ## Version
 
 Microsoft Graph currently supports two versions: `v1.0` and `beta`. 
 
 * `v1.0` includes generally available APIs. Use the v1.0 version for all production apps.
-* `beta` includes APIs that are currently in preview. Because we might introduce breaking changes to our beta APIs, we recommend that you use the beta version only to test apps that are in development; do not use beta APIs in your production apps.
+* `beta` includes APIs that are currently in preview. Because we might introduce breaking changes to our beta APIs, we recommend that you use the beta version only to test apps that are in development; don't use beta APIs in your production apps.
 
 ## Resource
 
 A resource can be an entity or complex type, commonly defined with properties. Entities differ from complex types by always including an **id** property.
 
-Your URL will include the resource you are interacting with in the request, such as `me`, **user**, **group**, **drive**, and **site**. Often, top-level resources also include *relationships*, which you can use to access other resources, like `me/messages` or `me/drive`. You can also interact with resources using *methods*; for example, to send an email, use `me/sendMail`. 
+Your URL includes the resource you're interacting with in the request, such as `me`, **user**, **group**, **drive**, and **site**. Often, top-level resources also include *relationships*, which you can use to access other resources, like `me/messages` or `me/drive`. You can also interact with resources using *methods*; for example, to send an email, use `me/sendMail`. 
 
-Each resource might require different permissions to access it. You will often need a higher level of permissions to create or update a resource than to read it. For details about required permissions, see the method reference topic.
+Each resource might require different permissions to access it. You often need a higher level of permissions to create or update a resource than to read it. For details about required permissions, see the method reference topic.
 
 ## Query parameters
 
@@ -68,9 +68,9 @@ For example, adding the following `filter` parameter restricts the messages retu
 GET https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso.com'
 ```
 
-## Additional resources
+## Other resources
 
-Below are links to some tools you can use to build and test requests using Microsoft Graph APIs.
+Following are links to some tools you can use to build and test requests using Microsoft Graph APIs.
 
 * [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 * [Postman](https://www.getpostman.com/)

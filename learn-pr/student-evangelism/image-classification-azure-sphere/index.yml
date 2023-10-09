@@ -7,8 +7,8 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
   ms.custom: team=nextgen
+  ms.service: azure-sphere
 title: "Image classification using Azure Sphere"
 summary: "Implement a neural network model for performing real-time image classification on a secured, internet-connected microcontroller-based device (Azure Sphere). Describe the components and steps for implementing a pre-trained image classification model on Azure Sphere."
 abstract: |
@@ -17,7 +17,7 @@ abstract: |
     - Implement image classification on a microcontroller device using a pre-trained neural network model.
     - Describe how the components and services of Azure Sphere work to deploy a pre-trained image classification model. 
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 prerequisites: |
     - A PC running Windows 10
     - Basic knowledge of Azure Sphere

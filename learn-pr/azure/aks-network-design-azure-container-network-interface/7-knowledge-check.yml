@@ -17,34 +17,34 @@ quiz:
   questions:
   - content: "Your development team has added a new feature to the shopping basket component of the online store application.  You want to deploy the new feature without incurring any downtime for your application. You use the rolling update feature of Kubernetes to deploy the new feature. How does a rolling update affect the IP addresses that are in use by the application?"
     choices:
-    - content: "The IP addresses used by the application's pods and services will remain the same."
+    - content: "The IP addresses used by the application's pods and services remain the same."
       isCorrect: false
-      explanation: "Incorrect. A rolling update will cause new pods to be deployed and the new pods will have new IP addresses. The IP address of the services however, will remain the same."
-    - content: "The IP addresses used by the application's pods will change, but the service IP address will remain the same."
+      explanation: "Incorrect. A rolling update causes new pods to be deployed and the new pods have new IP addresses. The IP address of the services however, remain the same."
+    - content: "The IP addresses used by the application's pods change, but the service IP address remains the same."
       isCorrect: true
-      explanation: "Correct. A rolling update will cause new pods to be deployed and the new pods will have new IP addresses. The IP address of the services however, will remain the same."
-    - content: "The IP addresses used by the application's pods and services will change."
+      explanation: "Correct. A rolling update causes new pods to be deployed and the new pods have new IP addresses. The IP address of the services however, remain the same."
+    - content: "The IP addresses used by the application's pods and services change."
       isCorrect: false
-      explanation: "Incorrect. A rolling update will cause new pods to be deployed and the new pods will have new IP addresses. The IP address of the services however, will remain the same."
-  - content: "When deciding how many IP addresses your cluster will need, what do you need to include in your calculation?"
+      explanation: "Incorrect. A rolling update causes new pods to be deployed and the new pods have new IP addresses. The IP address of the services however, remain the same."
+  - content: "When deciding how many IP addresses your cluster needs, what do you need to include in your calculation?"
     choices:
-    - content: "An IP address for each node in the cluster, which includes spare capacity to handle scaling up, plus an IP address for every pod you'll run in the cluster."
+    - content: "An IP address for each node in the cluster, which includes spare capacity to handle scaling up, plus an IP address for every pod you run in the cluster."
       isCorrect: false
       explanation: "Incorrect. Each node in the cluster requires an IP address, including spare capacity for scaling up. But you also need to account for cluster upgrades, which require the temporary deployment of extra nodes during the upgrade process. Each node also requires an IP address for each pod, equal to the maximum number of pods that has been defined for your cluster. The default value for maximum pods is 30."
-    - content: "An IP address for each node in the cluster, which includes spare capacity to handle scaling up and cluster upgrades, plus an IP address for every pod you'll run in the cluster."
+    - content: "An IP address for each node in the cluster, which includes spare capacity to handle scaling up and cluster upgrades, plus an IP address for every pod you run in the cluster."
       isCorrect: false
       explanation: "Incorrect. Each node in the cluster requires an IP address, including spare capacity for scaling up and cluster upgrades. But each node also requires an IP address for each pod, equal to the maximum number of pods that has been defined for your cluster. The default value for maximum pods is 30."
     - content: "An IP address for each node in the cluster, which includes spare capacity to handle scaling up and cluster upgrades, plus IP addresses equal to the maximum pods value defined for the cluster, which should be multiplied by the number of nodes."
       isCorrect: true
       explanation: "Correct."
-  - content: "You've calculated how many IP addresses your Azure Kubernetes Service cluster requires. When calculating the size of your Azure Virtual Network subnet, how many reserved addresses do you need to account for?"
+  - content: "You've calculated how many IP addresses your Azure Kubernetes Service cluster requires. When you calculate the size of your Azure Virtual Network subnet, how many reserved addresses do you need to account for?"
     choices:
     - content: "None. You just need to know how many IP addresses your application requires."
       isCorrect: false
       explanation: "Incorrect. Azure Virtual Network subnets reserve five IP addresses. One for the network address and one for the broadcast address, which is standard in IP networks and then Azure requires three more addresses, one for the default gateway and two for DNS."
     - content: "Two, because you can't use the first and last IP addresses in an Azure Virtual Network subnet as they're reserved."
       isCorrect: false
-      explanation: "Incorrect. Azure Virtual Network subnets reserve five IP addresses. The first address is reserved for the network address and the last for the broadcast address, which is standard in IP networks, but then Azure also requires three more addresses, one for the default gateway and two for DNS."
+      explanation: "Incorrect. Azure Virtual Network subnets reserve five IP addresses. The first address is reserved for the network address and the last for the broadcast address, which is standard in IP networks. However, Azure also requires three more addresses. One for the default gateway and two for DNS."
     - content: "Five, because in an Azure Virtual Network subnet, you can't use the first and last IP addresses, plus three more addresses are reserved for Azure internal use."
       isCorrect: true
       explanation: "Correct. Azure Virtual Network subnets reserve five IP addresses. One for the network address and one for the broadcast address, which is standard in IP networks and then Azure requires three more addresses, one for the default gateway and two for DNS."

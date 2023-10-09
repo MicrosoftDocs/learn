@@ -1,3 +1,5 @@
+
+
 In this module you:
 
 - Examined the SAP workload planning and deployment checklist.
@@ -15,7 +17,6 @@ In this module you:
 - [SAP ASCS/SCS instance multi-SID high availability with Windows Server Failover Clustering and shared disk on Azure](/azure/virtual-machines/workloads/sap/sap-ascs-ha-multi-sid-wsfc-shared-disk)
 - [SAP ASCS/SCS instance multi-SID high availability with Windows Server Failover Clustering and file share on Azure](/azure/virtual-machines/workloads/sap/sap-ascs-ha-multi-sid-wsfc-file-share)
 - [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-automation)
-- [SAP HANA Azure Resource Manager Installation](https://github.com/AzureCAT-GSI/SAP-HANA-ARM)
 - [SAP OS/DB Migration to SQL Server–FAQ](https://techcommunity.microsoft.com/t5/Running-SAP-Applications-on-the/SAP-OS-DB-Migration-to-SQL-Server-8211-FAQ-v6-2-April-2017/ba-p/368070)
 - [Database Migration Option (DMO) of SUM – Introduction](https://blogs.sap.com/2013/11/29/database-migration-option-dmo-of-sum-introduction/)
 - [SAPS ratings on Azure VMs – where to look and where you can get confused](https://techcommunity.microsoft.com/t5/Running-SAP-Applications-on-the/SAPS-ratings-on-Azure-VMs-8211-where-to-look-and-where-you-can/ba-p/368208)
@@ -30,7 +31,7 @@ In this module you:
 - [Onboarding requirements for SAP HANA on Azure (Large Instances)](/azure/virtual-machines/workloads/sap/hana-onboarding-requirements)
 - [Configure Software RAID on Linux](/azure/virtual-machines/linux/configure-raid)
 - [Configure LVM on a Linux VM in Azure](/azure/virtual-machines/linux/configure-lvm)
-- [SAP HANA Hardware Directory](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html)
+- [SAP HANA Hardware Directory](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas)
 - [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533)
 - [SAP Note \#2039619](https://launchpad.support.sap.com/#/notes/2039619)
 - [SAP Note \#1662610](https://launchpad.support.sap.com/#/notes/1662610)
@@ -39,4 +40,4 @@ In this module you:
 - [SAP Note \#500235](https://launchpad.support.sap.com/#/notes/500235)
 - [SAP Note \#1100926](https://launchpad.support.sap.com/#/notes/1100926)
 - [SAP Note \#2382421](https://launchpad.support.sap.com/#/notes/2382421)
-- [SAP Note \#2644872](https://launchpad.support.sap.com/#/notes/2644872)
+- [SAP Note \#3126581](https://launchpad.support.sap.com/#/notes/3126581)

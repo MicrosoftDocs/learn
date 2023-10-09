@@ -1,6 +1,6 @@
 Language models interpret user utterances and trigger the relevant scenario logic in response. They're fundamental components for configuring your Azure Health Bot experience. For example, you can use a language model to trigger scheduling logic when a user enters "How do I schedule an appointment?"
 
-Language models take textual unstructured utterances from users and provide a structured response that includes the user's intention combined with a confidence score that reflects the accuracy of the extracted intent.
+Language models take textual unstructured utterances from users and provide a structured response. This response includes the user's intent combined with a confidence score that reflects the accuracy of the extracted intent.
 
 Multiple models can be used in parallel. When more than one possible intent is identified, the confidence score for each intent is compared. The highest score is used to invoke the mapped scenario. Each intent is unique and mapped to a single built-in or custom scenario.
 
@@ -32,7 +32,7 @@ For more information, see [Bing Speller](/azure/cognitive-services/bing-spell-ch
 For more information on publishing your LUIS application, see [Production and Staging slots](/azure/cognitive-services/luis/luis-concept-app-iteration#publishing-slots).
 - **Verbose responses**: Typically, the response from your LUIS application includes only the highest scoring intent for the model. To include all intents and their respective scores in the response, use the **Verbose** setting.
 
-When you create a LUIS model, you'll need an account with the [LUIS.ai service](https://www.luis.ai/home).
+When you create a LUIS model, you need an account with the [LUIS.ai service](https://www.luis.ai/home).
 
 ### System models
 
@@ -52,23 +52,23 @@ Different models use different language recognition methods. Each method has its
 
 1. Go to the home page of your health bot. In the left pane, under **Language** select **Models**. Select the **New** option near the top of the page.
 
-   :::image type="content" source="../media/3-create-model.png" alt-text="Screenshot that shows how to create a new model." lightbox="../media/3-create-model.png":::
+   :::image type="content" source="../media/3-health-bot-create-model.png" alt-text="Screenshot that shows how to create a new model." lightbox="../media/3-health-bot-create-model.png":::
 
 1. In the **New model** pane that appears on the right side of the page:
 
-   * Under **Method**, select **RegEx**. Enter a name and description for your RegEx language model.
-   * Under **Regular Expression**, enter the RegEx pattern for your language model, which in this case is **/^hello$/**.
-   * Under **Intent mapping**, name your RegEx model with a unique intent that isn't used by another model. Name it **hello** for now, and map it to the **builtin/greeting** scenario in the dropdown menu. Select **Save**.
+   - Under **Method**, select **RegEx**. Enter a name and description for your RegEx language model.
+   - Under **Regular Expression**, enter the RegEx pattern for your language model, which in this case is **/^hello$/**.
+   - Under **Intent mapping**, name your RegEx model with a unique intent that isn't used by another model. Name it **hello** for now, and map it to the **builtin/greeting** scenario in the dropdown menu. Select **Create**.
 
-      :::image type="content" source="../media/3-details.png" alt-text="Screenshot that shows filling in details of the new model.":::
+      :::image type="content" source="../media/3-health-bot-model-details.png" alt-text="Screenshot that shows filling in details of the new model.":::
 
 1. After you've successfully created your RegEx language model, test it in Web Chat.
 
-   :::image type="content" source="../media/3-test-model.png" alt-text="Screenshot that shows testing your model in Web Chat." lightbox="../media/3-test-model.png":::
+   :::image type="content" source="../media/3-health-bot-test-model.png" alt-text="Screenshot that shows testing your model in Web Chat.":::
 
-1. After you're finished, exit Web Chat. Scroll through the various language models and find the **Greetings** language model. On the far right, select the **Edit** option.
+1. After you're finished, exit Web Chat. Scroll through the various language models and find the **Greetings** language model.
 
-   :::image type="content" source="../media/3-greeting-model.png" alt-text="Screenshot that shows viewing the Greetings language model.":::
+   :::image type="content" source="../media/3-health-bot-greeting-model.png" alt-text="Screenshot that shows viewing the Greetings language model.":::
 
    The language model that we added earlier was a simpler version of the built-in Greetings language model.
 

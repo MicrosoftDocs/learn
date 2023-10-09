@@ -1,3 +1,4 @@
+
 Auditing for Azure SQL Database and Azure Synapse Analytics tracks database events and writes them to an audit log in your Azure storage account, Log Analytics workspace or Event Hubs.
 
 Auditing also:

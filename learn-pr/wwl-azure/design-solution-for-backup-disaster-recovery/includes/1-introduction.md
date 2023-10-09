@@ -1,45 +1,43 @@
+Azure Architects design solutions to back up and recover their data to avoid costly business interruptions. Microsoft Azure provides an end-to-end backup and disaster recovery solution to support multiple scenarios. It's easy to implement, secure, scalable, and cost-effective.
+
 ### Meet Tailwind Traders
 
+:::image type="icon" source="../media/tailwind-traders.png" border="false":::
 
-:::image type="content" source="../media/tailwind-traders.png" alt-text="Logo of Tailwind Traders company.":::
+Tailwind Traders is a fictitious home improvement retailer. The company currently manages on-premises data centers to host their retail website. The data centers also store all the data and streaming video for the web applications.
 
+The IT department performs all management tasks for the computing hardware and software. They handle the procurement process to buy new hardware, install and configure software, and deploy everything throughout the data center. These management responsibilities create some obstacles for delivering applications to Tailwind Traders' users and customers in a timely fashion. So, the company is shifting on-premises workloads to the cloud.
 
-You work for a Tailwind Traders, a home improvement retailer. Tailwind Traders currently manages on-premises data centers that host the company's retail website. These data centers also store all the data and streaming video for its applications.
+You're responsible for selecting appropriate backup solutions for migrated workloads. You also need to select an appropriate disaster recovery option for these workloads.
 
-The IT department is currently responsible for all the management tasks for its computing hardware and software. The IT team handles the procurement process to buy new hardware, installs and configures software, and deploys everything throughout the data center.
+## Learning objectives
 
-These management responsibilities create some obstacles for delivering applications to Tailwind’s users and customers in a timely fashion. So, the company is shifting on-premises workloads to the cloud.
-
-You’ve been tasked with selecting appropriate backup solutions for migrated workloads. You also need to select an appropriate disaster recovery option for these workloads.
-
-### Learning objectives
-
-After completing this module, you’ll be able to:
+In this module, you learn how to:
 
 - Design for backup and recovery.
 
 - Design for Azure Backup.
 
-- Design for Azure blob backup and recovery.
+- Design for Azure Blob Storage backup and recovery.
 
 - Design for Azure Files backup and recovery.
 
-- Design for Azure virtual machine backup and recovery.
+- Design for Azure Virtual Machines backup and recovery.
 
 - Design for Azure SQL backup and recovery
 
 - Design for Azure Site Recovery.
 
-### Skills measured
+## Skills measured 
 
-The content in the module will help you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
+The content in the module helps you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module covers the following course concept requirements:
 
-Design business continuity
+Design business continuity solutions
 
-- Design a Solution for Backup and Disaster Recovery
+- Design a solution for backup and disaster recovery
 
-### Prerequisites
+## Prerequisites
 
-- Conceptual knowledge of Business Continuity and Disaster Recovery solutions.
+- Conceptual knowledge of business continuity and disaster recovery solutions.
 
 - Working experience with object replication, backup solution tools, and recovery options. 

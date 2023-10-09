@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
 title: Offer an App Services resource provider  for Azure Stack Hub
 summary: 'Azure App Service is a platform-as-a-service (PaaS) offering available on Azure Stack Hub. This learning path help you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
 abstract: |

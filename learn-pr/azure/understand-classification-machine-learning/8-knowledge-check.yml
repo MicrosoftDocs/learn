@@ -40,7 +40,7 @@ quiz:
     - content: "Log-loss is stricter about model errors, even if they're close to correct"
       isCorrect: true
       explanation: "Correct."
-    - content: "It is the only way to calculate error for categorical labels"
+    - content: "It's the only way to calculate error for categorical labels"
       isCorrect: false
       explanation: "Incorrect."
     - content: "Log-loss is more permissive to model error if that error is close to correct"

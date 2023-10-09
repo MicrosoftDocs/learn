@@ -4,10 +4,12 @@ title: Examine different types of data
 metadata:
   title: Examine different types of data
   description: Conceptual unit about examining different types of data in machine learning
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.date: 02/27/2023
+  ms.service: machine-learning
+  author: fbsolo-ms1
+  ms.author: franksolomon
   ms.topic: interactive-tutorial
+  ms.reviewer: franksolomon
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |

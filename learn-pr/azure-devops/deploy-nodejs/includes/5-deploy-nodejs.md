@@ -3,9 +3,9 @@ The GitHub repo that you forked for this project contains the source code for a 
 In this part, you:
 
 > [!div class="checklist"]
-> * Create a CI/CD pipeline triggered by commits to the *main* branch.
-> * Review the pipeline tasks.
-> * Save the pipeline to trigger a CI/CD workflow.
+> - Create a CI/CD pipeline triggered by commits to the *main* branch.
+> - Review the pipeline tasks.
+> - Save the pipeline to trigger a CI/CD workflow.
 
 ## Set up an Azure DevOps project
 
@@ -13,23 +13,24 @@ Create an Azure DevOps project.
 
 1. Sign into your account at [dev.azure.com](https://dev.azure.com?azure-portal=true).
 1. Select **+ New project**.
-    The **Create new project** dialog box opens.
-1. Create a new project with the following options. 
-    
-    |Field  |Description  |
-    |---------|---------|
-    |**Project name**     |   Enter a name such as *nodejs-hello-world*.    |
-    |**Visibility**     |    Choose whether to make your project public or private.     |
-    | **Advanced** > **Version control**     |   Select **Git**.      |
-    
+
+   The **Create new project** dialog box opens.
+
+1. Create a new project with the following options.
+
+   | Field                              | Description  |
+   |:-----------------------------------|:-------------|
+   | **Project name**                   | Enter a name such as *nodejs-hello-world*. |
+   | **Visibility**                     | Choose whether to make your project public or private. |
+   | **Advanced** > **Version control** | Select **Git**. |
 
 ## Create the pipeline
 
-You'll create a YAML CI/CD pipeline in Azure Pipelines by modifying the starter template. The process generates a pipelines configuration file named *azure-pipelines.yml*, which lives in the root directory of your Git repository.
+Create a YAML CI/CD pipeline in Azure Pipelines by modifying the starter template. The process generates a pipelines configuration file named *azure-pipelines.yml*, which lives in the root directory of your Git repository.
 
 1. Go to your ***nodejs-hello-world*** project.
 
-1. Go to **Pipelines**, and then select **New pipeline**.
+1. Go to **Pipelines**, and then select **Create pipeline**.
 
 1. Complete the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
@@ -50,7 +51,7 @@ You'll create a YAML CI/CD pipeline in Azure Pipelines by modifying the starter 
     1. Select the app name you created earlier, for example **helloworld-nodejs-16353**.
     1. Select **Validate and configure**.
 
-1. On the **Review** tab, review the starter code for your pipeline configuration. Don't select **Save and run** just yet.
+1. On the **Review** tab, review the starter code for your pipeline configuration. Don't select **Save and run** yet.
 
 ## Review the pipeline tasks
 
@@ -58,7 +59,7 @@ The starter pipeline code provides everything you need to build, test, package, 
 
 ### The CI trigger
 
-The pipeline is configured to run whenever a change is committed to the `main` branch. You can adjust it as needed, such as if you wanted to include (or exclude) runs based on their branch, path, or tag.
+The pipeline is configured to run whenever a change is committed to the `main` branch. You can adjust it as needed, such as if you wanted to include or exclude runs based on their branch, path, or tag.
 
 [!code-yml[](code/4-1-azure-pipelines.yml)]
 
@@ -66,23 +67,23 @@ The pipeline is configured to run whenever a change is committed to the `main` b
 
 To aid in pipeline maintenance, the default template uses variables for commonly used parameters, such as the name of the service connection string used to connect to Azure. A service connection provides secure access to your Azure subscription from Azure Pipelines.
 
-You can also import variables from pipeline libraries that are managed outside of the pipeline itself. Here's an example. The values you see will be specific to your Azure subscription.
+You can also import variables from pipeline libraries that are managed outside of the pipeline itself. Here's an example. The values you see are specific to your Azure subscription.
 
 [!code-yml[](code/4-2-azure-pipelines.yml)]
 
 ### The Build stage
 
-A `stage` is a part of the pipeline that can be triggered by different mechanisms and can run independently. For example, you might have a stage that builds the application, another stage that deploys it to a pre-production environment, and a final stage that deploys the application to the production.
+A `stage` is a part of the pipeline that different mechanisms can trigger and can run independently. For example, you might have a stage that builds the application, another stage that deploys it to a preproduction environment, and a final stage that deploys the application to the production.
 
-This pipeline is divided into two stages: `Build` and `Deploy`. The `Build` stage configures and performs the build tasks, which include publishing the build artifact (a *.zip* file) to artifact storage.
+This pipeline is divided into two stages: `Build` and `Deploy`. The `Build` stage configures and performs the build tasks, which include publishing the build artifact, as a *.zip* file, to artifact storage.
 
 [!code-yml[](code/4-3-azure-pipelines.yml)]
 
 ### Node.js Tool Installer task
 
-The `NodeTool@0` task sets up the build environment for Node.js projects. For the purposes of this pipeline, only the `versionSpec` parameter is needed to specify the version of the Node.js tools to install. You can learn more about this task in the [Node.js Tool Installer task](/azure/devops/pipelines/tasks/tool/node-js?azure-portal=true) documentation.
+The `NodeTool@0` task sets up the build environment for Node.js projects. For the purposes of this pipeline, only the `versionSpec` parameter is needed to specify the version of the Node.js tools to install. For more information, see [Node.js Tool Installer task](/azure/devops/pipelines/tasks/tool/node-js?azure-portal=true).
 
-Verify that `versionSpec` is set to `16.x`. If it is not, update the value.
+Verify that `versionSpec` is set to `16.x`. If it isn't, update the value.
 
 [!code-yml[](code/4-4-azure-pipelines.yml)]
 
@@ -98,26 +99,26 @@ After the build completes, the `ArchiveFiles@2` task packages the build output a
 
 [!code-yml[](code/4-6-azure-pipelines.yml)]
 
-You don't need to provide your own storage for build artifacts. Azure Pipelines holds the results of your builds based on the configured retention policy. To learn more, see [Build and release retention policies](/azure/devops/pipelines/policies/retention?azure-portal=true&tabs=yaml).
+You don't need to provide your own storage for build artifacts. Azure Pipelines holds the results of your builds based on the configured retention policy. For more information, see [Build and release retention policies](/azure/devops/pipelines/policies/retention?azure-portal=true&tabs=yaml).
 
 ### Deploying the build
 
 The second stage of the pipeline deploys the application to Azure. It depends on the `Build` stage completing successfully. It then uses the pipeline's Azure service connection to deploy the app to the configured target. This project deploys the app to the Azure App Service.
 
-Verify that `runtimeStack` is set to `NODE|16-lts`. If it is not, update the value.
+Verify that `runtimeStack` is set to `NODE|16-lts`. If it isn't, update the value.
 
 [!code-yml[](code/4-7-azure-pipelines.yml)]
 
 ### Azure Web App task
 
-The `AzureWebApp@1` task deploys web apps to Azure App Service. It's a very flexible task that supports apps across various platforms and includes everything needed for this Node.js application:
+The `AzureWebApp@1` task deploys web apps to Azure App Service. It's a flexible task that supports apps across various platforms and includes everything needed for this Node.js application:
 
-* `azureSubscription` refers to the name of your Azure service connection pipeline variable.
-* `appType` indicates whether the app is being deployed for Linux (`webAppLinux`).
-* `appName` specifies the name of the Azure App Service instance in your Azure account.
-* `runtimeStack` indicates which image the app should be run on, which is required for Linux deployments.
-* `package` specifies the path to the package to be deployed.
-* `startUpCommand` specifies the startup command to run after the app has been deployed, which is required for Linux deployments.
+- `azureSubscription` refers to the name of your Azure service connection pipeline variable.
+- `appType` indicates whether the app is being deployed for Linux (`webAppLinux`).
+- `appName` specifies the name of the Azure App Service instance in your Azure account.
+- `runtimeStack` indicates which image the app should be run on, which is required for Linux deployments.
+- `package` specifies the path to the package to be deployed.
+- `startUpCommand` specifies the startup command to run after the app has been deployed, which is required for Linux deployments.
 
 You can learn more about the flexibility of this task in the [Azure Web App task](/azure/devops/pipelines/tasks/deploy/azure-rm-web-app?azure-portal=true) documentation.
 
@@ -126,18 +127,12 @@ You can learn more about the flexibility of this task in the [Azure Web App task
 1. Select **Save and run** from the upper right corner of the page. Select **Save and run** again to commit git changes and trigger the pipeline to run.
 
 1. In Azure Pipelines, go to the build. You can trace the build as it runs.
-1. After the build has succeeded, select the deploy task, and select the URL to view the deployed website.
+1. After the build succeeds, select the deploy task, and select the URL to view the deployed website.
 
-    :::image type="content" source="../media/5-deploy-url.png" alt-text="Screenshot of the web site URL location in Azure Pipelines.":::
+   :::image type="content" source="../media/5-deploy-url.png" alt-text="Screenshot of the web site URL location in Azure Pipelines.":::
 
 1. You see the site running on App Service.
 
     :::image type="content" source="../media/5-hello-world.png" alt-text="Screenshot of the Node.js application running in a web browser.":::
 
 You now have a complete CI/CD pipeline that you can extend. You can repeat the steps you performed here to deploy one of your own Node.js projects to Azure.
-
-## Check your work
-
-1. Test the Bank API by sending a GET request. You can do this in your browser by visiting the URL `https://your-app-service-site.azurewebsites.net/api/accounts/test`. This query will return the account information and transactions for a test user.
-
-    :::image type="content" source="../media/5-json-return-query.png" alt-text="Screenshot of the Node.js application running in a web browser and returning a query.":::

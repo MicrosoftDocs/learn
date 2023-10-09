@@ -1,6 +1,6 @@
 Imagine that you work as a security operations center (SOC) analyst. Your organization wants to advance its security-management capabilities. The business has already started moving some workloads to the public cloud.
 
-You've been asked to evaluate *security information and event management* (SIEM) solutions that can help in both an on-premises and a multiple-cloud environment. You've heard about Microsoft Sentinel and want to find out whether it could be the right SIEM solution for your business.
+You've been asked to evaluate *security information and event management* (SIEM) solutions that can help in both an on-premises and a multicloud environment. You've heard about Microsoft Sentinel and want to find out whether it could be the right SIEM solution for your business.
 
 Ideally, you'd select a service that provides the features and functionality that you need, with minimal administration and a flexible pricing model.
 

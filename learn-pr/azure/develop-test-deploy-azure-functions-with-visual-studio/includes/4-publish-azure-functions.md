@@ -1,12 +1,12 @@
-An Azure function runs in the cloud in the context of an Azure Function App. A Function App is a container that specifies the operating system and resources, such as the memory, computing power, and disk space, for running an Azure function. The Azure Function App also provides the public URL for running your function. Behind the scenes, an Azure Function App is a collection of one or more virtual machines (VMs) running a web server. When you publish an Azure function, you deploy it to these VMs.
+Your function code runs in Azure in the context of a function app. A function app defines the operating system and resources, such as the memory, computing power, and disk space, for running your function code. It provides the base address for accessing your functions. The function app is dynamically scaled when your functions need more resources.
 
-In the luxury watch online website scenario, you'll deploy the Azure functions you create to the cloud. First create an Azure Function App, and then publish your functions to the Function App.
+In the luxury watch online website scenario, you'll deploy the Azure Functions you create to the cloud. First create an Azure Function App, and then publish your functions to the Function App.
 
-There are several options available for publishing an Azure function, and you want to determine the best method. In the overview material here, and in the following exercise, you'll learn about some of these options.
+There are several options available for publishing an Azure Function, and you want to determine the best method. In the overview material here, and in the following exercise, you'll learn about some of these options.
 
 ## Deploy from Visual Studio
 
-Azure Functions tools for Visual Studio enable you to deploy an Azure function directly from Visual Studio. The Azure Functions template in Visual Studio provides a Publish wizard. The wizard helps connect to your Azure account, and prompts you to either specify an existing Azure Function App, or create a new one. The functions in your project are then rebuilt and deployed to the Azure Functions App.
+Azure Functions tools for Visual Studio enable you to deploy an Azure Functions project directly from Visual Studio. The Publish wizard helps connect to your Azure account, and prompts you to either specify an existing function app, or create a new one. The functions in your project are then rebuilt and deployed to the function app in Azure.
 
 The Visual Studio **Publish** wizard requires that you either have access to the Azure Functions App that will host your functions, or you have an Azure subscription that you can use to create an Azure Functions App as part of the publication process. You'll investigate the **Publish** wizard in more detail in the exercise in the next unit.
 
@@ -32,7 +32,7 @@ You can configure continuous deployment from the Azure portal, using the **Deplo
 
 ## Zip deployment
 
-Azure functions can be deployed from a zip file using `push` deployment, either from the Azure CLI, or by using the REST interface.
+Azure Functions can be deployed from a zip file using `push` deployment, either from the Azure CLI, or by using the REST interface.
 
 The zip file contains the executable code for your functions. Zip deployment copies these files to the `wwwwroot` folder in the Azure Function App. You can perform zip deployment using the `functionapp deployment` command in the Azure CLI.
 

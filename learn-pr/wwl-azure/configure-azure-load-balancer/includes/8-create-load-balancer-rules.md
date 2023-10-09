@@ -1,3 +1,4 @@
+
 You can define load-balancing rules to specify how traffic is distributed to your back-end pools. Each rule maps a front-end IP address and port combination to a set of back-end IP address and port combinations.
 
 :::image type="content" source="../media/add-load-balancer-rules-f4d9b188.png" alt-text="Screenshot that shows how to create load-balancing rules in the Azure portal.":::

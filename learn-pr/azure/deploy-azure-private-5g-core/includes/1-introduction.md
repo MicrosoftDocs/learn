@@ -8,3 +8,9 @@ The Azure Private 5G Core solution is comprised of the Azure Stack Edge (ASE) co
 > The cloud components of Azure Private 5G Core can be deployed in the US East, North Europe, and West Europe Azure regions.  
 
 Prior to deploying a private mobile network, you should carefully consider your enterprise's needs. For information on designing private mobile networks, see [Private Mobile Network Design Requirements](/azure/private-5g-core/private-mobile-network-design-requirements).
+
+## Video: Azure Private 5G Core Deployment
+
+This video provides an overview of deploying a private mobile network with Azure Private 5G Core:
+
+> [!VIDEO d42db8fa-eb2e-479a-9e6e-9fec8b684891]

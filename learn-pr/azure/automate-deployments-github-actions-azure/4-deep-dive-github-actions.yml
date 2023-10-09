@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Dive into GitHub Actions
   description: In this unit, we recap how we've used GitHub Actions in our scenario. We specifically discuss GitHub Actions for Azure SQL Database, GitHub secrets, and configuring YAML files and monitoring deployments.
-  ms.date: 3/24/2021 
+  ms.date: 3/15/2023 
   author: amthomas46
   ms.author: chnoring
   ms.custom: team=nextgen

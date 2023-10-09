@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sql-database-security.microsoft-defender-for-sql
+title: Microsoft Defender for SQL
+metadata:
+  title: Microsoft Defender for SQL
+  description: "Microsoft Defender for SQL"
+  ms.date: 04/06/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: None
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-microsoft-defender-for-sql.md)]

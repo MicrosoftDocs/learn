@@ -7,13 +7,13 @@ In this exercise, we look at exercises for viewing the logs of your sample appli
 In your existing Azure Cloud Shell window, view the log of the application instance with the following command:
 
 ```azurecli
-az spring-cloud app logs --name customers-service
+az spring app logs --name customers-service
 ```
 
 > [!IMPORTANT]
 > If you closed the original Azure Cloud Shell window, or want to run the commands in your local development environment, you must specify your resource group and Azure Spring Apps service name:
 >```azurecli
->az spring-cloud app logs --name customers-service --resource-group <resource group name> --service <service >instance name>
+>az spring app logs --name customers-service --resource-group <resource group name> --service <service >instance name>
 >```
 
 This command will return logs:
@@ -29,10 +29,10 @@ This command will return logs:
 
 ### Continuously stream new logs
 
-By default, `az spring-cloud app log tail` prints only existing logs streamed to the app console and then exits. If you want to stream new logs, add `-f` (`--follow`):  
+By default, `az spring app log tail` prints only existing logs streamed to the app console and then exits. If you want to stream new logs, add `-f` (`--follow`):  
 
 ```azurecli
-az spring-cloud app logs --name customers-service -f
+az spring app logs --name customers-service -f
 ```
 
 ## Errors and warnings exercise
@@ -42,7 +42,7 @@ Next, we'll create an error, to show the value of how you can quickly debug and 
 1. Open the customers-service and follow the logs:
 
     ```azurecli
-    az spring-cloud app logs --name customers-service -f
+    az spring app logs --name customers-service -f
     ```
 
 2. Next, in a web browser, open a new window and trigger a warning with the following command: (Replace the "\<spring-apps-name\>" with the name of your spring apps instance)

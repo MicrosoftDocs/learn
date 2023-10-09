@@ -17,47 +17,12 @@ Azure Key Vault is designed to support application keys and secrets. Key Vault i
 
 The following table lists security best practices for using Key Vault.
 
-:::row:::
-  :::column:::
-    **Best practice**
-  :::column-end:::
-  :::column:::
-    **Solution**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Grant access to users, groups, and applications at a specific scope.
-  :::column-end:::
-  :::column:::
-    Use RBAC’s predefined roles. For example, to grant access to a user to manage key vaults, you would assign the predefined role Key Vault Contributor to this user at a specific scope. The scope in this case would be a subscription, a resource group, or just a specific key vault. If the predefined roles don’t fit your needs, you can define your own roles.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Control what users have access to.
-  :::column-end:::
-  :::column:::
-    Access to a key vault is controlled through two separate interfaces: management plane, and data plane. The management plane and data plane access controls work independently. Use RBAC to control what users have access to. For example, if you want to grant an application access to use keys in a key vault, you only need to grant data plane access permissions by using key vault access policies, and no management plane access is needed for this application. Conversely, if you want a user to be able to read vault properties and tags but not have any access to keys, secrets, or certificates, you can grant this user read access by using RBAC, and no access to the data plane is required.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Store certificates in your key vault.
-  :::column-end:::
-  :::column:::
-    Azure Resource Manager can securely deploy certificates stored in Azure Key Vault to Azure VMs when the VMs are deployed. By setting appropriate access policies for the key vault, you also control who gets access to your certificate. Another benefit is that you manage all your certificates in one place in Azure Key Vault.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Ensure that you can recover a deletion of key vaults or key vault objects.
-  :::column-end:::
-  :::column:::
-    Deletion of key vaults or key vault objects can be either inadvertent or malicious. Enable the soft delete and purge protection features of Key Vault, particularly for keys that are used to encrypt data at rest. Deletion of these keys is equivalent to data loss, so you can recover deleted vaults and vault objects if needed. Practice Key Vault recovery operations on a regular basis.
-  :::column-end:::
-:::row-end:::
-
+| **Best practice**                                                          | **Solution**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Grant access to users, groups, and applications at a specific scope.       | Use RBAC’s predefined roles. For example, to grant access to a user to manage key vaults, you would assign the predefined role Key Vault Contributor to this user at a specific scope. The scope in this case would be a subscription, a resource group, or just a specific key vault. If the predefined roles don’t fit your needs, you can define your own roles.                                                                                                                                                                                                                                                                                                                                              |
+| Control what users have access to.                                         | Access to a key vault is controlled through two separate interfaces: management plane, and data plane. The management plane and data plane access controls work independently. Use RBAC to control what users have access to. For example, if you want to grant an application access to use keys in a key vault, you only need to grant data plane access permissions by using key vault access policies, and no management plane access is needed for this application. Conversely, if you want a user to be able to read vault properties and tags but not have any access to keys, secrets, or certificates, you can grant this user read access by using RBAC, and no access to the data plane is required. |
+| Store certificates in your key vault.                                      | Azure Resource Manager can securely deploy certificates stored in Azure Key Vault to Azure VMs when the VMs are deployed. By setting appropriate access policies for the key vault, you also control who gets access to your certificate. Another benefit is that you manage all your certificates in one place in Azure Key Vault.                                                                                                                                                                                                                                                                                                                                                                              |
+| Ensure that you can recover a deletion of key vaults or key vault objects. | Deletion of key vaults or key vault objects can be either inadvertent or malicious. Enable the soft delete and purge protection features of Key Vault, particularly for keys that are used to encrypt data at rest. Deletion of these keys is equivalent to data loss, so you can recover deleted vaults and vault objects if needed. Practice Key Vault recovery operations on a regular basis.                                                                                                                                                                                                                                                                                                                 |
 
 ### Azure Key Vault is offered in two service tiers—standard and premium
 

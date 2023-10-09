@@ -96,7 +96,7 @@ You can set the value by using the attribute as you did before. In addition, you
 </template>
 
 <script>
-import UserInfo from './UserInfo.vue';
+import UserDisplay from './UserDisplay.vue';
 export default {
     data() {
         return {

@@ -1,10 +1,10 @@
 By default, Azure Container Instances are stateless. If the container crashes or stops, all of its state is lost. To persist state beyond the lifetime of the container, you must mount a volume from an external store.
 
-Here, you'll mount an Azure file share to an Azure container instance so you can store data and access it later.
+Mount an Azure file share to an Azure container instance so that you can store data and access it later.
 
 ## Create an Azure file share
 
-Here, you'll create a storage account and a file share that you'll later make accessible to an Azure container instance.
+Create a storage account and a file share. Later, you can make the file share accessible to an Azure container instance.
 
 1. Your storage account requires a unique name. For learning purposes, run the following command to store a unique name in a Bash variable:
 
@@ -31,7 +31,7 @@ Here, you'll create a storage account and a file share that you'll later make ac
       --output tsv)
     ```
 
-    `AZURE_STORAGE_CONNECTION_STRING` is a special environment variable that's understood by the Azure CLI. The `export` part makes this variable accessible to other CLI commands you'll run shortly.
+    `AZURE_STORAGE_CONNECTION_STRING` is a special environment variable that the Azure CLI understands. The `export` part makes this variable accessible to other CLI commands that you run later.
 
 1. Run this command to create a file share named **aci-share-demo** in the storage account:
 
@@ -47,7 +47,7 @@ To mount an Azure file share as a volume in Azure Container Instances, you need 
 * Share name
 * Storage account access key
 
-You already have the first two values. The storage account name is stored in the `STORAGE_ACCOUNT_NAME` Bash variable. You specified **aci-share-demo** as the share name in the previous step. Here, you'll get the remaining value: the storage account access key.
+You already have the first two values. The storage account name is stored in the `STORAGE_ACCOUNT_NAME` Bash variable. You specified **aci-share-demo** as the share name in the previous step. Here, you get the remaining value: the storage account access key.
 
 1. Run the following command to get the storage account key:
 
@@ -97,7 +97,7 @@ To mount an Azure file share as a volume in a container, you specify the share a
       --output tsv
     ```
 
-1. From a browser, navigate to your container's IP address. You'll get this page:
+1. From a browser, navigate to your container's IP address. You get this page:
 
     :::image type="content" source="../media/5-files-ui.png" alt-text="Screenshot of the Azure Container Instances file share demo running in a browser." loc-scope="other"::: <!-- no-loc -->
 

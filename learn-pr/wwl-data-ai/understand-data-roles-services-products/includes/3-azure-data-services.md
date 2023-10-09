@@ -11,6 +11,6 @@ Microsoft Azure is a powerful cloud platform that offers extensive services for 
 
 These are a handful of the cloud services that Microsoft offers. They can be combined with other services to create end-to-end cloud solutions for applications and reporting.
 
-In this video, you will see how the above services seamlessly combine to create a data warehouse for reporting:
+In this video, you'll see how the above services seamlessly combine to create a data warehouse for reporting:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U38p]

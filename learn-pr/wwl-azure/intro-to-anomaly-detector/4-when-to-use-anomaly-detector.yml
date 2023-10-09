@@ -4,11 +4,11 @@ title: When to use Anomaly Detector
 metadata:
   title: When to use Anomaly Detector
   description: "The Anomaly Detector service supports batch processing of time series data and last-point anomaly detection for real-time data. Read about example scenarios where anomaly detector can be used with batch and real-time data."
-  ms.date: 02/01/2023
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

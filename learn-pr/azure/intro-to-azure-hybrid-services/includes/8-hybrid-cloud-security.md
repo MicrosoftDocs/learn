@@ -24,7 +24,7 @@ SIEM solutions store and analyze log data and event telemetry that they ingest f
 
 The following image shows a Sentinel hybrid architecture.
 
-:::image type="content" source="../media/image16.png" alt-text=" Log telemetry for on-premises workloads and workloads in third-party clouds is forwarded to Microsoft Defender for Cloud and Microsoft Sentinel." lightbox="../media/image16.png":::
+:::image type="content" source="../media/8-sentinel-hybrid-architecture.png" alt-text="Diagram that shows log telemetry for on-premises workloads and workloads in third-party clouds forwarded to Microsoft Defender for Cloud and Microsoft Sentinel." border="false" lightbox="../media/8-sentinel-hybrid-architecture.png":::
 
 Microsoft Sentinel can perform the following tasks when it's supporting hybrid environments:
 
@@ -39,15 +39,15 @@ Tailwind Traders currently has an on-premises SIEM system that collects and anal
 
 It's also likely that Tailwind Traders will connect its existing SIEM solution to Sentinel. This connection will give the company the benefits of Sentinel's AI and deep learning without having to substantially modify the existing on-premises configuration.
 
-## What is Azure Update Management?
+## What is Azure Automation Update Management?
 
-Azure Update Management allows you to manage the updates to your on-premises and cloud server operating systems by using a single console in the cloud. Update Management works with Microsoft Windows Server workloads and with supported Linux operating system workloads running physically and virtually. 
+Azure Automation Update Management allows you to manage the updates to your on-premises and cloud server operating systems by using a single console in the cloud. Update Management works with Microsoft Windows Server workloads and with supported Linux operating system workloads running physically and virtually. 
 
 Update Management can use Microsoft Update or Windows Server Update Services (WSUS) as a source of updates for Windows Server operating systems. Update Management can also use a public or custom Linux package repository for updates to Linux operating systems. Update Management allows you to determine which updates are currently missing from enrolled operating systems. 
 
 The following diagram shows how Update Management integrates with Azure Automation and Log Analytics workspaces.
 
-:::image type="content" source="../media/image17.png" alt-text="A collection of on-premises and Azure VMs connecting to Azure Automation runbooks, Log Analytics workspaces, and Automation Hybrid Worker solutions over TCP port 443 in a hybrid Update Management architecture." lightbox="../media/image17.png":::
+:::image type="content" source="../media/8-update-management-integration.png" alt-text="Diagram that shows a collection of on-premises and Azure VMs connecting to Azure Automation runbooks, Log Analytics workspaces, and Automation Hybrid Worker solutions over TCP port 443 in a hybrid Update Management architecture." border="false" lightbox="../media/8-update-management-integration.png":::
 
 When you configure an update deployment, you specify:
 

@@ -24,4 +24,4 @@ Blobs and containers support metadata in the form of name-value string pairs. Yo
 
 ## Blob Storage API and client libraries
 
-The Blob Storage API is REST-based and supported by client libraries in many popular languages. It lets you write apps that create and delete blobs and containers, upload and download blob data, and list the blobs in a container.
+The [Blob Storage API[(https://learn.microsoft.com/rest/api/storageservices/blob-service-rest-api)] is REST-based and supported by client libraries in many popular languages. It lets you write apps that create and delete blobs and containers, upload and download blob data, and list the blobs in a container.

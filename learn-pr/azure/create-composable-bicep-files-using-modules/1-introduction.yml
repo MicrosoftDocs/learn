@@ -5,10 +5,12 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Introduction to creating composable Bicep files by using modules.
-  ms.date: 10/10/2021
+  ms.date: 03/27/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-bicep
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |

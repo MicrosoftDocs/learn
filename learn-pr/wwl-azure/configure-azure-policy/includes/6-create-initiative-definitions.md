@@ -18,8 +18,8 @@ You can create your own initiative definitions, or use built-in definitions in A
 
 Here are some examples of built-in initiative definitions:
 
-- **Audit machines with insecure password security settings**: Use this initiative to deploy an audit policy to specified resources in your organization. The definition evaluates the resources to check for insecure password security settings. This initiative is located under the Guest Configuration category.
+- **Audit machines with insecure password security settings**: Use this initiative to deploy an audit policy to specified resources in your organization. The definition evaluates the resources to check for insecure password security settings. This initiative is located in the Guest Configuration category.
 
-- **Configure Windows machines to run Azure Monitor Agent and associate them to a Data Collection Rule**: Use this initiative to monitor and secure your Windows VMs, Virtual Machine Scale Sets, and Arc machines. The definition deploys the Azure Monitor Agent extension and associates the resources with a specified Data Collection Rule. This initiative is located under the Monitoring category.
+- **Configure Windows machines to run Azure Monitor Agent and associate them to a Data Collection Rule**: Use this initiative to monitor and secure your Windows VMs, Virtual Machine Scale Sets, and Arc machines. The definition deploys the Azure Monitor Agent extension and associates the resources with a specified Data Collection Rule. This initiative is located in the Monitoring category.
 
-- **ISO 27001:2013**: Use this initiative to apply policies for a subset of ISO 27001:2013 controls. This initiative is located under the Regulatory Compliance category.
+- **Configure Azure Defender to be enabled on SQL servers**: Enable Azure Defender on your Azure SQL Servers to detect anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases. This initiative is located in the SQL category. 

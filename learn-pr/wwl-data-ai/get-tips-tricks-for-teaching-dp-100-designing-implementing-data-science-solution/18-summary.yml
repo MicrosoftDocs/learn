@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 09/07/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/18-summary.md)]

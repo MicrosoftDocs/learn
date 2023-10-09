@@ -56,7 +56,7 @@ quiz:
     choices:
     - content: Get the bounds property from the Maps camera.
       isCorrect: true
-      explanation: Correct! The viewable area of a map is controlled by a virtual camera. The camera has a bounds property that defines the north-west and south-east corners of the visible map.
+      explanation: Correct! A virtual camera controls the viewable area of a map. The camera has a bounds property that defines the north-west and south-east corners of the visible map.
     - content: Get the top, bottom, left, and right coordinates from the map control.
       isCorrect: false
       explanation: Incorrect. The map control doesn't contain the information you need to get the coordinates of a map that's shown in a web browser.

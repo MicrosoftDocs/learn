@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.bring-together
+title: Bring it all together
+metadata:
+  title: Bring it all together
+  description: "Bring it all together"
+  ms.date: 03/21/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: dynamics-365
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-bring-it-all-together.md)]

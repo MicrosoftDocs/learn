@@ -1,3 +1,4 @@
+
 Always secure your data and always make sure you know where it is stored, so you are protected by data sovereignty laws. In this module you saw how to secure access to your data and files, then explored how data is encrypted at rest and in transit.
 
 You should be able to:

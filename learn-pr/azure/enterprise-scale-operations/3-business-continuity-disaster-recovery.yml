@@ -35,13 +35,13 @@ quiz:
     choices:
     - content: Service-level objective and/or service-level agreement 
       isCorrect: true
-      explanation: Correct. Availability targets are typically measured by service-level objectives (SLOs) and service-level agreements (SLAs).
+      explanation: Correct. Availability targets are typically quantified with service-level objectives (SLOs) and service-level agreements (SLAs).
     - content: Recovery-point objective and recovery-time objective
       isCorrect: false
-      explanation: Availability targets are typically measured by service-level objectives (SLOs) and service-level agreements (SLAs).
+      explanation: Availability targets are typically quantified with service-level objectives (SLOs) and service-level agreements (SLAs).
     - content: Mean time between failure
       isCorrect: false
-      explanation: Availability targets are typically measured by service-level objectives (SLOs) and service-level agreements (SLAs).
+      explanation: Availability targets are typically quantified with service-level objectives (SLOs) and service-level agreements (SLAs).
     - content: Mean time to recover
       isCorrect: false
-      explanation: Availability targets are typically measured by service-level objectives (SLOs) and service-level agreements (SLAs).
+      explanation: Availability targets are typically quantified with service-level objectives (SLOs) and service-level agreements (SLAs).

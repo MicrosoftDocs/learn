@@ -51,7 +51,7 @@ After you clone the project, you'll see the following directories and files:
 
 ## Sign in to Azure
 
-Next, sign in to Azure:
+If you haven't already done so, sign in to Azure:
 
 ```azurecli
 az login
@@ -59,10 +59,10 @@ az login
 
 ## Set up a default installation location
 
-Specify the Azure datacenter region for your Flexible Server database instance. The following regions are available: `eastus2`, `westus2`, `brazilsouth`, `southeastasia`, `northeurope`, `australiaeast`, `japaneast`, `koreacentral`, `uksouth`, `westeurope`, `canadacentral`, `centralus`, and `eastus`.
+The commands executed by the script used in this module expect a `--location` option. You can specify a default value for this option with the following command.
 
 ```azurecli
-az configure --defaults location=japaneast
+az configure --defaults location=<desired location>
 ```
 
 > [!NOTE]
@@ -70,13 +70,13 @@ az configure --defaults location=japaneast
 
 ## Create an Azure Database for MySQL instance
 
-After you've signed in, use the project script `setup_mysql.sh` to create your Azure Database for MySQL instance.
+After you've signed in, use the project script `setup_mysql.sh` to create your Azure Database for MySQL instance. Make sure you're in the `mslearn-jakarta-ee-azure` directory.
 
 > [!IMPORTANT]
 > Run the following command in an IPv4 environment. If your environment has a IPv6 address, this command will fail because the firewall configuration for it doesn't support IPv6 addresses yet.
 
 ```bash
- ./setup_mysql.sh flexible
+./setup_mysql.sh flexible
 ```
 
 Note the key values that appear in the output of the command. You'll use those values in later steps.
@@ -123,7 +123,11 @@ In this module, you'll use a sample database called `world` from the official My
 1. Access the SQL file:
 
    ```bash
+   cd world-db
    ls -l world.sql
+   ```
+ 
+   ``` output
    -rw-r--r--  1 ******  wheel  398635  1  7 12:25 world.sql
    ```
 
@@ -162,7 +166,8 @@ Query OK, 0 rows affected (0.01 sec)
 
 mysql>
 ```
-The `world` database and its tables are automatically created in your MySQL database.
+
+The `world` database and its tables are automatically created in your MySQL database. This action takes several minutes.
 
 ## Confirm the database and tables
 
@@ -281,5 +286,4 @@ Now you can view the contents of the `world` database.
 
 ## Unit summary
 
-You've now completed the setup and preparation for your MySQL Server.
-In the next unit, you'll deploy the Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and configure it.
+You've now completed the setup and preparation for your MySQL Server. In the next unit, you see the steps to deploy the Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and configure it.

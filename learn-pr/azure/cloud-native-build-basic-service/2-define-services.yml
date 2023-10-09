@@ -5,8 +5,8 @@ metadata:
   title: Define the concept of services
   description: Describe the concept of service in the context of cloud-native applications.
   ms.date: 05/15/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

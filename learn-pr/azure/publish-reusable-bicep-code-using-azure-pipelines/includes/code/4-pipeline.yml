@@ -7,7 +7,7 @@ trigger:
     include:
     - 'template-specs/linux-app-service/**'
 
-variables: 
+variables:
 - name: ServiceConnectionName
   value: ToyReusable
 - name: AzureResourceGroupName

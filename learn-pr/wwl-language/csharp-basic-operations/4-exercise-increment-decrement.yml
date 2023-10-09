@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-basic-operations.exercise-increment-decrement
+title: Exercise - Increment and decrement values
+metadata:
+  title: Exercise - Increment and decrement values
+  description: "Exercise - Increment and decrement values"
+  ms.date: 09/13/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-increment-decrement.md)]
+interactive: csharp

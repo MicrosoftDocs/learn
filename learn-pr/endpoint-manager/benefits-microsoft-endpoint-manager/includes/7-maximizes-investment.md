@@ -1,4 +1,4 @@
-Microsoft Endpoint Manager helps you maximize your return on investment and accelerate time-to-value with fast rollout of services and devices, providing end-to-end integration across the familiar Microsoft stack.
+Microsoft Intune helps you maximize your return on investment and accelerate time-to-value with fast rollout of services and devices, providing end-to-end integration across the familiar Microsoft stack.
 
 ## Advanced endpoint analytics
 

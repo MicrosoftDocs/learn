@@ -61,28 +61,57 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
     -Size Standard_DS1_v2 `
     -VirtualNetworkName Syncvnet `
     -SubnetName Syncpublicnet `
-    -Image "MicrosoftWindowsServer:WindowsServer:2019-Datacenter-with-Containers:latest" 
+    -Image "Win2019Datacenter" 
 
 
     ```
 
    Creating the VM takes a few minutes.
 
+## Create a public IP address and associate it with the file server VM
+
+In order to connect to the new server using Remote Desktop, you'll need to create a public IP address and assign it to the file server VM.
+
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+
+1. In the portal, in the top search box, search for and select **Public IP addresses**. The **Public IP addresses** pane appears.
+
+1. Select **+ Create**. The **Create public IP address** pane appears.
+
+1. Select the same Azure subscription and location that you used for the VM. Select the **learn-file-sync-rg** resource group.
+
+1. Leave the rest of the defaults as they are, and under **Name**, specify **FileServerPublicIP**.
+
+1. Select **Review + Create** and then **Create** to create the public IP address.
+
+1. In the top search box, search for and select **Virtual machines**. The **Virtual machines** pane appears.
+
+1. Select the **FileServerLocal** VM. The **FileServerLocal** virtual machine pane appears.
+
+1. Under **Settings** > **Networking**, select the network interface called **FileServerLocal**.
+
+1. Under **Settings** > **IP configurations**, select the IP configuration **FileServerLocal**.
+
+1. Select **Associate public IP address**, and then for **Public IP address** select **FileServerPublicIP**.
+
+1. Select **Save**.
+
+
 ## Set up Windows Server for assessment
 
 Connect to the new server by using Remote Desktop client. You'll download a sample CAD file and install the Azure PowerShell module that you'll use later.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. Make sure you're still signed in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. In the portal, in the top search box, search for and select **Virtual machines**. The **Virtual machines** pane appears.
+1. In the top search box, search for and select **Virtual machines**. The **Virtual machines** pane appears.
 
 1. Select the **FileServerLocal** VM. The **FileServerLocal** virtual machine pane appears.
 
-1. In the top menu bar, select **Connect**, and from the dropdown list, select **RDP**. The **Connect** pane appears for your **FileServerLocal** virtual machine.
+1. In the top menu bar, select **Connect**. The **Connect** pane appears for your **FileServerLocal** VM. Select **Native RDP**.
 
 1. Select **Download RDP File**.
 
-1. Open the RDP file from your browser and select **Connect**.
+1. Open the RDP file and select **Connect**.
 
 1. In the **Windows Security** dialog box, select **More choices**, and then select **Use a different account**.
 
@@ -118,7 +147,7 @@ Connect to the new server by using Remote Desktop client. You'll download a samp
     Install-Module -Name Az
     ```
 
-1. When prompted, enter **Y** to accept the untrusted repository. Do the same thing for any of the modules.
+1. If prompted, enter **Y** to install the NuGet provider and/or accept the untrusted repository. Do the same thing for any of the modules.
 
    The modules take a few minutes to install.
 

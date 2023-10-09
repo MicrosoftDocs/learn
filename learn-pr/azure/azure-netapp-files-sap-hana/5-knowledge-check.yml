@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-sap-hana.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure NetApp Files application volume groups.
+  ms.date: 02/28/2023
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: Which of the following options isn't a benefit of using application volume groups for Azure NetApp Files?
+    choices:
+    - content: One step deployment of your single-host SAP HANA system
+      isCorrect: false
+      explanation: Incorrect. In addition to low latency and high-provisioning, one-step deployment of your single-host SAP HANA system is a key benefit of using application volume groups. 
+    - content: Automatic QoS provisioning
+      isCorrect: true
+      explanation: Correct. You must use manual QoS with application volume groups. 
+    - content: Low latency and high provisioning
+      isCorrect: false
+      explanation: Incorrect. Low latency and high-provisioning as well as one-step deployment of your single-host SAP HANA system are key benefits of using application volume groups. 
+  - content: SAP HANA systems require low latency and high performance. Azure NetApp Files leverages meets this demand with proximity placement groups. What role do proximity placement groups serve?
+    choices: 
+    - content: Determine throughput limits on your SAP HANA system
+      isCorrect: false 
+      explanation: Incorrect. Although application volume groups help you configure throughput options, they don't configure limits. 
+    - content: Ensure compute resources are placed adjacently to ensure compute performance and low latency
+      isCorrect: true 
+      explanation: Correct. Due to the low latency and performance requirements, application volume groups ensure 
+    - content: Determine the region of your Azure NetApp Files deployment
+      isCorrect: false
+      explanation: Incorrect. Application volume groups ensure compute resources are placed adjacently. You select the region of deployment. 
+  - content: Before requesting a proximity placement group, you must first.
+    choices: 
+    - content: Create a volume
+      isCorrect: false
+      explanation: Incorrect.
+    - content: Mount a VM  
+      isCorrect: false 
+      explanation: Incorrect.
+    - content: Create an empty AvSet
+      isCorrect: true 
+      explanation: Correct. 
+  - content: When you create a capacity pool for your application volume group, what type of Quality of Service should you use?
+    choices: 
+    - content: Manual
+      isCorrect: true 
+      explanation: Correct. Capacity pools for application volume groups must be configured with manual QoS. 
+    - content: Ultra 
+      isCorrect: false 
+      explanation: Incorrect. Azure NetApp Files offers two types of QoS - manual and auto. Capacity pools for application volume groups must be configured with manual QoS.
+    - content: Auto 
+      isCorrect: false 
+      explanation: Incorrect. Capacity pools for application volume groups must be configured with manual QoS.
+  - content: When you delegate a subnet for your application volume group, what size should you use?
+    choices: 
+    - content: /24
+      isCorrect: true 
+      explanation: Correct. 
+    - content: /25 
+      isCorrect: false 
+      explanation: Incorrect. You should use a /24 setting. 
+    - content: /26 
+      isCorrect: false 
+      explanation: Incorrect. You should use a /24 setting. 

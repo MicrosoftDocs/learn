@@ -1,6 +1,6 @@
 ## Overview
 
-Priority Inversion is a well-known problem with real-time embedded systems. It can result in system failure. Next, we'll look at the *ProjectPriorityInversion* project, that contains a system that suffers from this problem. The purposes of this experiment are as follows:
+Priority Inversion is a well-known problem with real-time embedded systems. It can result in system failure. Next, we look at the *ProjectPriorityInversion* project that contains a system that suffers from this problem. The purposes of this experiment are as follows:
 
 - Build and debug the project and record the results in a chart.
 - Modify the project so that priority inheritance is enabled; then build and debug the project and record the results in a chart.
@@ -11,16 +11,16 @@ The following image is a sample chart to record your results:
 
 :::image type="content" alt-text="Diagram of a chart for experiment results." source="../media/results-chart.png" border="false" loc-scope="Azure":::
 
-The actual results you receive will vary between different computers, but the general trend of the results should be clear.
+The actual results you receive vary between different computers, but the general trend of the results should be clear.
 
 > [!TIP]
 > Refer to [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
 
 ## Use GitHub Codespaces
 
-1. Open the codespace you've created from GitHub repo. Once done, you can view the sample projects repo within VSCode web.
+1. Open the codespace you've created from GitHub repo. Once done, you can view the sample projects repo within VS Code web.
 
-1. Expand the **TASK EXPLORER** pane and expand the **vscode** node you'll find **Build / Clean / Run Project** tasks. Choose **Build Project** and select the run button.
+1. Expand the **TASK EXPLORER** pane and expand the **vscode** node to find the **Build / Clean / Run Project** tasks. Choose **Build Project** and select the run button.
 
    ![VSCode Web Task Explorer](../../introduction-azure-rtos/media/vscode-web-tasks.png)
 
@@ -32,7 +32,7 @@ The actual results you receive will vary between different computers, but the ge
 
 1. Open the solution `azure_rtos_threadx_training.sln` in Visual Studio.
 
-1. In the **Solution Explorer**, right click on **ProjectPriorityInversion** and select **Set as Startup Project**.
+1. In the **Solution Explorer**, right-click on **ProjectPriorityInversion** and select **Set as Startup Project**.
 
 1. Select the **Build** tab and choose **Build ProjectPriorityInversion** to build your project. Then select the **Debug** tab, followed by **Start debugging** to debug your project.
 
@@ -40,14 +40,14 @@ The actual results you receive will vary between different computers, but the ge
 
 ### Priority inversion experiment
 
-Start Visual Studio, then build and debug ProjectPriorityInversion.c (without modifications) to produce output similar to what appears in the following image.
+Start Visual Studio, then build and debug *ProjectPriorityInversion.c* (without modifications) to produce output similar to what appears in the following image.
 
 > [!NOTE]
 > Each run for this experiment takes several minutes, so please be patient.
 
 :::image type="content" alt-text="Diagram that shows the output of the priority inversion experiment." source="../media/priority-inversion-results.png" loc-scope="Azure":::
 
-These results are from ProjectPriorityInversion.c, where we deliberately created a priority inversion problem. There were 251 Routine solicited preemptions, which means that the Routine thread was preempted 251 times by the Urgent thread. These results imply that there were approximately 251 priority inversions because the Routine thread owns the mutex that the Urgent thread needs.
+These results are from *ProjectPriorityInversion*, where we deliberately created a priority inversion problem. There were 251 Routine solicited preemptions, which means that the Routine thread was preempted 251 times by the Urgent thread. These results imply that there were approximately 251 priority inversions because the Routine thread owns the mutex that the Urgent thread needs.
 
 ### Priority inheritance experiment
 
@@ -61,7 +61,7 @@ tx_mutex_create(&my_mutex, "my_mutex", TX_NO_INHERIT);
 
 To use priority inheritance, change the mutex option to `tx_mutex_create(&my_mutex, "my_mutex", TX_INHERIT);`.
 
-Build and debug ProjectPriorityInversion.c with this modification to produce output that will appear similar to the following output:
+Build and debug *ProjectPriorityInversion.c* with this modification to produce output that should appear similar to the following output:
 
 :::image type="content" alt-text="Diagram that shows the output of the priority inheritance experiment." source="../media/priority-inheritance-results.png" loc-scope="Azure":::
 
@@ -73,7 +73,7 @@ There are several observations we can make immediately. First, there are zero So
 
 ## Preemption-threshold experiment
 
-For our last experiment, let us eliminate priority inversion by first disabling priority inheritance and enabling preemption-threshold by creating the Routine thread:
+For our last experiment, let's eliminate priority inversion by first disabling priority inheritance and enabling preemption-threshold by creating the Routine thread:
 
 ```c
 /* Create the Routine_thread. 
@@ -89,7 +89,7 @@ For our last experiment, let us eliminate priority inversion by first disabling 
                      TX_NO_TIME_SLICE, TX_AUTO_START);
 ```
 
-To use preemption-threshold, change the preemption-threshold value to 10. Build and debug ProjectPriorityInversion.c with this modification to produce output that will appear similar to this output:
+To use preemption-threshold, change the preemption-threshold value to 10. Build and debug *ProjectPriorityInversion.c* with this modification to produce output that should appear similar to this output:
 
 :::image type="content" alt-text="Diagram of the output from the preemption-threshold experiment." source="../media/preemption-threshold-results.png" loc-scope="Azure":::
 
@@ -99,6 +99,6 @@ The following image contains the result of copying the third set of experimental
 
 There are zero Routine Solicited Preemptions for preemption-threshold, so the priority inversion problem was eliminated. However, there are 902 mutex puts, which are slightly more than for priority inheritance. There are 470 Routine thread resumptions for preemption-threshold, compared to 1,335 Routine thread resumptions for priority inheritance. These results mean that the preemption-threshold approach used far fewer context switches than priority inheritance, thus reducing system overhead. The same argument can be made for the remainder of the resumptions and suspensions.
 
-The priority inversion results show the fewest number of resumptions and suspensions. Unfortunately, this result doesn't show an advantage because the system was operating at low capacity and produced relatively little work, as evidenced by the relatively small number of mutex puts.
+The priority inversion results show the fewest number of resumptions and suspensions. Unfortunately, this result doesn't show an advantage because the system was operating at low capacity. It produced relatively little work, as evidenced by the relatively small number of mutex puts.
 
 Both priority inheritance and preemption-threshold have the capability of eliminating priority inversion, which is the desired goal.

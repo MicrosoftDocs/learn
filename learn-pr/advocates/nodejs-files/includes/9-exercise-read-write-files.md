@@ -2,11 +2,11 @@ You can also use the *fs* module in Node.js to write data to files and read data
 
 You're almost finished creating a Node.js masterpiece for Tailwind Traders. So far, your code reads any directory, finds all .json files, and creates a *totals.txt* file.
 
-In this exercise, you'll complete the project by reading the .json files, adding up the store totals, and writing the grand total to the *totals.txt* file.
+In this exercise, you complete the project by reading the .json files, adding up the store totals, and writing the grand total to the *totals.txt* file.
 
 ## Create a method to calculate sales totals
 
-1. At the top of index.js, just below the `require("path")` statement, create a function that will calculate the sales total. This method should take in the array of file paths that it can iterate over.
+1. At the top of index.js, just below the `require("path")` statement, create a function that calculates the sales total. This method should take in the array of file paths that it can iterate over.
 
    ```javascript
    async function calculateSalesTotal(salesFiles) {
@@ -102,12 +102,12 @@ async function main() {
    node index.js
    ```
 
-   There is no output from the program. If you look in the *salesTotals/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
+   There's no output from the program, except for the message that the *salesTotals* file already exists. But, if you look in the *salesTotals/totals.txt* file, you see the total of all the sales from the *sales.json* and *totals.json* files.
 
 1. Run the program from the terminal again.
 
    ```bash
-   node.index.js
+   node index.js
    ```
 
 1. Select the *index.js* file.
@@ -156,7 +156,7 @@ async function findSalesFiles(folderName) {
         // Make sure the discovered file is a .json file
         if (path.extname(item.name) === ".json") {
           // store the file path in the salesFiles array
-          salesFiles.push(path.join(folderName, item.name));
+          await salesFiles.push(path.join(folderName, item.name));
         }
       }
     }
@@ -195,3 +195,38 @@ async function main() {
 
 main();
 ```
+
+Congratulations! You've read the files, parsed the JSON, and written the total to a file. You've completed the project!
+## Cleanup development container
+
+After completing the project, you may wish to clean up your development environment or return it to its typical state.
+
+#### [Remote development (browser)](#tab/github-codespaces)
+
+Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free per-core hours entitlement you get for your account.
+
+> [!IMPORTANT]
+> For more information about your GitHub account's entitlements, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+
+1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
+
+1. Locate your currently running codespaces sourced from the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
+
+    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
+
+1. Open the context menu for the codespace and select **Delete**.
+
+    :::image type="content" source="../media/codespaces/codespace-delete.png" alt-text="Screenshot of the context menu for a single codespace with the delete option highlighted.":::
+
+#### [Local development (Docker)](#tab/visual-studio-code)
+
+You aren't necessarily required to clean up your local environment, but you can stop the running development container and return to running Visual Studio Code in the context of a local workspace.
+
+1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen Folder Locally**.
+
+    :::image type="content" source="../media/codespaces/reopen-local-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within your local environment.":::
+
+> [!TIP]
+> Visual Studio Code will stop the running development container, but the container still exists in Docker in a stopped state. You always have the option to deleting the container instance, container image, and volumes from Docker to free up more space on your local machine.
+
+---

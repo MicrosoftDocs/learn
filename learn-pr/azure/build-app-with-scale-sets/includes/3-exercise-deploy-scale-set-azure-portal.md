@@ -40,18 +40,16 @@ Your first task is to create a scale set. You'll configure it to run a web serve
 1. Run the following command to create a new resource group named `scalesetrg` for your scale set:
 
     ```azurecli
-    az group create \
-      --location westus3 \
-      --name scalesetrg
+    az group create --location eastus --name myResourceGroup
     ```
 
 1. Run the following command to create the Virtual Machine Scale Set:
 
     ```azurecli
     az vmss create \
-      --resource-group scalesetrg \
+      --resource-group myResourceGroup \
       --name webServerScaleSet \
-      --image UbuntuLTS \
+      --image Ubuntu2204 \
       --upgrade-policy-mode automatic \
       --custom-data cloud-init.yaml \
       --admin-username azureuser \
@@ -72,7 +70,7 @@ Your first task is to create a scale set. You'll configure it to run a web serve
     ```azurecli
     az network lb probe create \
       --lb-name webServerScaleSetLB \
-      --resource-group scalesetrg \
+      --resource-group myResourceGroup \
       --name webServerHealth \
       --port 80 \
       --protocol Http \
@@ -85,7 +83,7 @@ Your first task is to create a scale set. You'll configure it to run a web serve
 
     ```azurecli
     az network lb rule create \
-      --resource-group scalesetrg \
+      --resource-group myResourceGroup \
       --name webServerLoadBalancerRuleWeb \
       --lb-name webServerScaleSetLB \
       --probe-name webServerHealth \

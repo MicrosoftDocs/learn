@@ -4,16 +4,16 @@ For example, a payment processing solution will use some form of a sender applic
 
 Although there are differences in how a Java application is configured, when compared to a .NET application, the principles for enabling applications to connect to an event hub and to successfully send or receive messages are the same.
 
-## What are the minimum Event Hub requirements for configuring an application?
+## What are the minimum Event Hubs requirements for configuring an application?
 
-To configure an application to send messages to an Event Hub, provide the following information, so that the application can create connection credentials:
+To configure an application to send messages to an event hub, provide the following information, so that the application can create connection credentials:
 
 - Event hub namespace name
 - Event hub name
 - Shared access policy name
 - Primary shared access key
 
-To configure an application to receive messages from an Event Hub, provide the following information, so that the application can create connection credentials:
+To configure an application to receive messages from an event hub, provide the following information, so that the application can create connection credentials:
 
 - Event hub namespace name
 - Event hub name
@@ -47,10 +47,10 @@ If you have an application that is hosted as a project in GitHub, you can make a
 
 ## Edit files in Cloud Shell
 
-You can use one of the built-in editors in Cloud Shell to modify all the files that make up the application, and add your Event Hub namespace, Event Hub name, shared access policy name, and primary key.
+You can use one of the built-in editors in Cloud Shell to modify all the files that make up the application, and add your event hub namespace, event hub name, shared access policy name, and primary key.
 
 Azure Cloud Shell supports **nano**, **vim**, **emacs, and Cloud Shell editor (code)**. Just enter the name of the editor you want, and it will launch in the environment. We'll use Cloud Shell editor (**code**) in the next unit.
 
 ## Summary
 
-Sender and receiver applications must be configured with specific information about the Event Hub environment. You need to create a storage account if your receiver application stores messages in Blob Storage. If your application is hosted on GitHub, you need to clone it to your local directory. Text editors, such as **nano** can be used to add your namespace to the application.
+Sender and receiver applications must be configured with specific information about the Event Hubs environment. You need to create a storage account if your receiver application stores messages in Blob Storage. If your application is hosted on GitHub, you need to clone it to your local directory. Text editors, such as **nano** can be used to add your namespace to the application.

@@ -74,7 +74,7 @@ Use these steps to build your function.
 
 ## Determine the latitude
 
-Create a function called predict_best_meteor_shower_viewing that takes in a city as a parameter:
+Create a function called `predict_best_meteor_shower_viewing` that takes in a city as a parameter:
 
 ```python
 def predict_best_meteor_shower_viewing(city):
