@@ -36,13 +36,11 @@ subjects:
 - machine-learning
 units:
 - learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.introduction
-- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.explore-notebooks
-- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.load-data-for-exploration
-- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.understand-data-distribution
-- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.check-for-missing-data
-- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.apply-advanced-data-exploration-techniques
-- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.visualize-data-with-plots-and-charts
-- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.exercise-use-notebook-for-data-exploration
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.understand-data-wrangler
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.explore-data-with-data-wrangler
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.handle-missing-data
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.transform-data
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.exercise-preprocess-data-with-data-wrangler
 - learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.knowledge-check
 - learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.summary
 badge:
