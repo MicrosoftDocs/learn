@@ -1,5 +1,3 @@
-
-
 This reference architecture describes an enterprise-grade, production-level system. To suit your business needs, this configuration can be reduced to a single virtual machine. However, the following components are required:
 
 ## Virtual network
