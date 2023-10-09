@@ -53,7 +53,7 @@ In just a few seconds, we can configure the group by and aggregate operator, whe
 
 Once the operator is applied, this is how your final grid should appear.
 
-:::image type="content" border="false" source="../media/3-aggregation-grid.png" alt-text="Screenshot of the group by and aggregate operator in Data Wrangler.":::
+:::image type="content" border="false" source="../media/3-aggregation-grid.png" alt-text="Screenshot of the results after applying the group by and aggregate operator in Data Wrangler.":::
 
 At this point, you can decide to generate the code or download the transformed dataframe as a comma-separated values (CSV) file.
 
@@ -63,6 +63,6 @@ In Data Wrangler, when you use any built-in or custom operators, the dataframe i
 
 Once you've applied all the operators to transform the data, select **+ Add code to notebook** in the toolbar above the Data Wrangler grid. This generates a function that you can then execute in your data pipeline.
 
-:::image type="content" border="false" source="../media/3-generate-code.gif" alt-text="Screenshot of the group by and aggregate operator in Data Wrangler.":::
+:::image type="content" border="false" source="../media/3-generate-code.gif" alt-text="Screenshot of how to generate code for the operators from Data Wrangler.":::
 
 This feature simplifies the data exploration and preprocessing tasks in your data science workflow.

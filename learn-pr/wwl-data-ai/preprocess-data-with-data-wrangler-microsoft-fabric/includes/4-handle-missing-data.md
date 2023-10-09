@@ -80,9 +80,9 @@ The following steps show how to fill or impute missing values in the targeted co
 1. On the **Operations** panel, select **Find and replace**, and then select **Fill missing values**.
 1. Select the **YearBuilt** column, and then select the **Median** fill method.
 
-    :::image type="content" border="false" source="../media/4-fill-with-median.png" alt-text="Screenshot of how to drop rows with missing values in the targeted columns in Data Wrangler.":::
+    :::image type="content" border="false" source="../media/4-fill-with-median.png" alt-text="Screenshot of how to impute missing values in the targeted columns using the median in Data Wrangler.":::
 
-    The rows marked for deletion are highlighted in red within the grid, and added to the **Cleaning steps** panel. This visual cue not only enhances the agility, but also allows for adjustments if needed. <replace this text>
+    The rows marked for deletion are highlighted in red within the grid, and added to the **Cleaning steps** panel. This visual cue facilitates real-time modifications when needed.
 
 1. Select **Apply**. 
     
