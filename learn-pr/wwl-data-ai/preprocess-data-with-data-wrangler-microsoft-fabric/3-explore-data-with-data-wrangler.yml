@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.explore-data-with-data-wrangler
-title: Load data for exploration
+title: Perform data exploration
 metadata:
   title: Perform data exploration
   description: "Learn how to perform data exploration in Data Wrangler."

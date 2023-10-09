@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.transform-data
-title: Check for missing data in notebooks
+title: Transform data with operators
 metadata:
   title: Transform data with operators
   description: "Learn how to transform data with operators in Data Wrangler."
