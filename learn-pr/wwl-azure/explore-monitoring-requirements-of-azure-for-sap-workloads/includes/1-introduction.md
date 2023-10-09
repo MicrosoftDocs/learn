@@ -1,5 +1,3 @@
-
-
 ## Scenario
 
 You're responsible for gathering the requirements that will help SAP administrators in your company prepare to monitor and troubleshoot SAP deployments on Azure. You'll need to account for the monitoring data from several Azure systems and tools. Working with the SAP administrators in your company, you'll determine any needs to consolidate monitoring data. That is, to surface Azure data (for example, Azure performance counters) into SAP systems (for example, SAP Enhanced Monitoring).

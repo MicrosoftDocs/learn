@@ -1,6 +1,4 @@
-
-
-[SAP Note \#1999351](https://launchpad.support.sap.com/#/notes/1999351) describes the process of troubleshooting issues with the Azure Extension for SAP. As the note states “to ensure full supportability of Azure for SAP workloads, it's crucial that the **AzureEnhancedMonitoring** service is correctly configured and that the Azure performance counters show up in the SAP OS monitor. In case there are no counters, supportability can't be guaranteed.“
+[SAP Note \#1999351](https://aka.ms/az-120-sapnote-1999351) describes the process of troubleshooting issues with the Azure Extension for SAP. As the note states “to ensure full supportability of Azure for SAP workloads, it's crucial that the **AzureEnhancedMonitoring** service is correctly configured and that the Azure performance counters show up in the SAP OS monitor. In case there are no counters, supportability can't be guaranteed.“
 
 If some of the monitoring data isn't delivered correctly, use the troubleshooting steps described here.
 
@@ -62,7 +60,7 @@ The configuration is incorrect. Reinstall the extension by using the steps descr
 
 The **AzureEnhancedMonitoring** Windows service collects performance metrics in Azure. The service gets data from several sources. Some configuration data is collected locally, and some performance metrics are read from Azure Diagnostics. Storage counters are used from your logging on the storage subscription level.
 
-If troubleshooting by using [SAP Note \#1999351](https://launchpad.support.sap.com/#/notes/1999351) doesn't resolve the issue, reinstall the extension by using the steps described earlier. You might have to wait an hour because storage analytics or diagnostics counters might not be created immediately after they're enabled. If the problem persists, open an SAP customer support message on the component BC-OP-NT-AZR for Windows or BC-OP-LNX-AZR for a Linux virtual machine.
+If troubleshooting by using [SAP Note \#1999351](https://aka.ms/az-120-sapnote-) doesn't resolve the issue, reinstall the extension by using the steps described earlier. You might have to wait an hour because storage analytics or diagnostics counters might not be created immediately after they're enabled. If the problem persists, open an SAP customer support message on the component BC-OP-NT-AZR for Windows or BC-OP-LNX-AZR for a Linux virtual machine.
 
 ## Linux performance counters do not show up at all
 
@@ -82,6 +80,6 @@ The extension isn't installed. Determine whether this is a proxy issue (as descr
 
 Performance metrics in Azure are collected by a daemon, which gets data from several sources. Some configuration data is collected locally, and some performance metrics are read from Azure Diagnostics. Storage counters come from the logs in your storage subscription.
 
-For a complete and up-to-date list of known issues, see [SAP Note \#1999351](https://launchpad.support.sap.com/#/notes/1999351), which has more troubleshooting information for the Azure Extension for SAP.
+For a complete and up-to-date list of known issues, see [SAP Note \#1999351](https://aka.ms/az-120-sapnote-), which has more troubleshooting information for the Azure Extension for SAP.
 
-If troubleshooting by using [SAP Note \#1999351](https://launchpad.support.sap.com/#/notes/1999351) doesn't resolve the issue, reinstall the extension by using the steps described earlier. You might have to wait for an hour because storage analytics or diagnostics counters might not be created immediately after they're enabled. If the problem persists, open an SAP customer support message on the component BC-OP-NT-AZR for Windows or BC-OP-LNX-AZR for a Linux virtual machine.
+If troubleshooting by using [SAP Note \#1999351](https://aka.ms/az-120-sapnote-1999351) doesn't resolve the issue, reinstall the extension by using the steps described earlier. You might have to wait for an hour because storage analytics or diagnostics counters might not be created immediately after they're enabled. If the problem persists, open an SAP customer support message on the component BC-OP-NT-AZR for Windows or BC-OP-LNX-AZR for a Linux virtual machine.

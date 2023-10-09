@@ -1,6 +1,4 @@
-
-
-As per [SAP Note \#2015553](https://launchpad.support.sap.com/#/notes/2015553), "for full support, you must enable built-in SAP monitors to retrieve information about configuration and resource utilization from the underlying Azure infrastructure." Therefore, you must set up every Azure instance that hosts SAP software and related DBMS systems such that:
+As per [SAP Note \#2015553](https://aka.ms/az-120-sapnote-2015553), "for full support, you must enable built-in SAP monitors to retrieve information about configuration and resource utilization from the underlying Azure infrastructure." Therefore, you must set up every Azure instance that hosts SAP software and related DBMS systems such that:
 
 - The Azure Extension for SAP is deployed and correctly configured.
 - Data from the Azure Extension for SAP is visible in the SAP NetWeaver system.
