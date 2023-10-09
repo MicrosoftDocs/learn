@@ -1,5 +1,3 @@
-
-
 Setting up a Windows Server failover cluster for an SAP ASCS/SCS instance involves these tasks:
 
 - Add cluster nodes to the cluster.
