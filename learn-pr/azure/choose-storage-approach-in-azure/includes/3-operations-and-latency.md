@@ -38,6 +38,6 @@ In summary, photos and videos can be queried by ID to return an entire file, but
 
 ### Business data
 
-The data analysis, the company uses only historical data. No original data is updated based on the analysis, so business data is read-only. Users don't expect their complex analytics to run instantly, so it's acceptable to have some latency in the results.
+For data analysis, the company uses only historical data. No original data is updated based on the analysis, so business data is read-only. Users don't expect their complex analytics to run instantly, so it's acceptable to have some latency in the results.
 
 Business data is stored in multiple datasets. Not all business analysts need write access to all datasets, but all business analysts can read from all datasets.
