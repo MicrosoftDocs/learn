@@ -56,7 +56,7 @@ $$
 
 In the remainder of this unit, you'll learn how to explicitly implement this mapping as a Q# operation.
 
-### Step 1. Flag the correct state by applying the oracle
+### Step 1: Flag the correct state by applying the oracle
 
 Recall from the [module on Grover's algorithm](/training/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states. The good states provide a solution to the search problem.
 
@@ -90,7 +90,7 @@ The following code defines the operation `IsbnOracle`, which implements the full
 
 Note that upon allocation, `targetReg` will be in the state $|0\rangle$. Therefore, `ComputeIsbnCheck` will need to first initialize.
 
-### Step 2. Apply the arithmetic mapping to the target state
+### Step 2: Apply the arithmetic mapping to the target state
 
 We just described how you implement the oracle by using the `ComputeIsbnCheck` operation, which performs the mapping:
 $$
@@ -103,7 +103,7 @@ Here's the code to do this:
 
 :::code language="qsharp" source="../code/4-program-2.qs":::
 
-## Step 3. Generalize to arbitrary ISBNs
+## Step 3: Generalize to arbitrary ISBNs
 
 We simplified the discussion in this unit by considering only the specific ISBN check of 
 $$
