@@ -49,7 +49,7 @@ Your first task is to create a scale set. You'll configure it to run a web serve
     az vmss create \
       --resource-group myResourceGroup \
       --name webServerScaleSet \
-      --image UbuntuLTS \
+      --image Ubuntu2204 \
       --upgrade-policy-mode automatic \
       --custom-data cloud-init.yaml \
       --admin-username azureuser \
