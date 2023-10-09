@@ -28167,6 +28167,11 @@
       "source_path": "learn-pr/wwl-azure/design-network-solutions/8-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-network-solutions/10-summary-resources",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-business-value/4-discover-apply-ai-maturity-model-assessment.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-business-value",
+      "redirect_document_id": false
     }
   ]
 }
