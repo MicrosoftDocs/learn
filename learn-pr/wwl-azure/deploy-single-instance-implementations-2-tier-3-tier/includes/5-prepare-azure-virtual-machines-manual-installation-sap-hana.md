@@ -1,5 +1,3 @@
-
-
 This section covers the following:
 
 - OS updates

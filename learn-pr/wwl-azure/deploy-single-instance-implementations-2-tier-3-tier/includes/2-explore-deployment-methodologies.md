@@ -1,5 +1,3 @@
-
-
 ## Deployment via the Azure portal
 
 The Azure portal offers an intuitive interface for performing most common administrative tasks manually.
