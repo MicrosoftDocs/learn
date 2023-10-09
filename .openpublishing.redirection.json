@@ -28117,6 +28117,46 @@
       "source_path": "learn-pr/wwl-azure/set-up-microsoft-defender-cloud/6-exercise-03a-enable-defender-for-cloud-on-your-azure-subscription.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/set-up-microsoft-defender-cloud",
       "redirect_document_id": false
-    }   
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-network-solutions/4a-design-patterns-for-azure-network-connectivity-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-network-solutions/3-design-patterns-for-azure-network-connectivity-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-network-solutions/4b-design-outbound-connectivity-routing.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-network-solutions/4-design-outbound-connectivity-routing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-network-solutions/3-design-for-premises-connectivity-to-azure-virtual-networks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-network-solutions/5-design-for-premises-connectivity-to-azure-virtual-networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-network-solutions/5a-choose-application-delivery-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-network-solutions/6-choose-application-delivery-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-network-solutions/5b-design-for-application-delivery-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-network-solutions/7-design-for-application-delivery-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-network-solutions/6-design-for-application-protection-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-network-solutions/8-design-for-application-protection-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-network-solutions/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-network-solutions/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-network-solutions/8-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-network-solutions/10-summary-resources",
+      "redirect_document_id": false
+    }
   ]
 }
