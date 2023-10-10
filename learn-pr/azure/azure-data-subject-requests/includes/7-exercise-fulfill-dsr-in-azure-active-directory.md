@@ -14,7 +14,8 @@ In this exercise you will complete the following tasks:
 
 To set up a new user, perform the following steps:
 
-1. Sign in to the [Microsoft Entra admin center](https://aad.portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com).
+
 2. Select **Microsoft Entra ID**, and then select the **Overview** blade if it's not already active.  
 3. In the **Tenant information** tile for the Default Directory, copy or record the **Primary domain** value (for example, yourprimarydomain.onmicrosoft.com).
 4. Select **Users**, select **New User**, and then verify that the **Create user** option is selected in the **New User** blade.
