@@ -9,7 +9,6 @@ In this module, you've learned how to build a Microsoft Entra workbook that prov
 
 To learn more about events in Microsoft Entra ID, see the following articles:
 
-- [What are Microsoft Entra reports?](/azure/active-directory/reports-monitoring/overview-reports)
-- [What is Microsoft Entra monitoring?](/azure/active-directory/reports-monitoring/overview-monitoring)
-- [Microsoft Entra activity logs in Azure Monitor](/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor)
+- [What is Microsoft Entra monitoring and health?](/azure/active-directory/reports-monitoring/overview-monitoring-health)
+- [Microsoft Entra activity logs integration options](/azure/active-directory/reports-monitoring/concept-log-monitoring-integration-options-considerations)
 - [Get started with log queries in Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
