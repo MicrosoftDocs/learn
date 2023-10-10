@@ -31,7 +31,7 @@ quiz:
     - content: "A Microsoft Entra ID work account with password, PIN, pattern, or Windows Hello"
       isCorrect: false
       explanation: "No, Microsoft Entra join doesn't support PIN or pattern."
-    - content: "A Microsoft Entra ID work account with password or Windows Hello, and multifactor authentication"
+    - content: "A Microsoft Entra work account with password or Windows Hello, and multifactor authentication"
       isCorrect: true
       explanation: "Microsoft Entra join supports Windows 10 or Windows Server 2019 devices where users sign in by using their work account with a password or Windows Hello. Microsoft Entra multifactor authentication is also supported."
     - content: "A Microsoft account with password, Windows Hello, and multifactor authentication"
