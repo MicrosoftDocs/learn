@@ -18,6 +18,6 @@ However, we've experienced an enormous AI acceleration during the last few years
 
 * **Need to be up to date:** Now, even mature companies need to reinvent themselves and adopt new waves of AI to avoid losing their competitive edge. Their AI strategy must reflect and leverage the impact brought by recent technologies.
 
-* **Mainstream AI:** Generative AI has changed the rules of AI adoption by empowering business users at an unprecedented level. It may be easier than ever to implement AI in business. Many companies are working hard to rank higher in the maturity assessment model.
+* **Mainstream AI:** Generative AI has changed the rules of AI adoption by empowering business users at an unprecedented level. It might be easier than ever to implement AI in business. Many companies are working hard to rank higher in the maturity assessment model.
 
 Now that you’ve considered various aspects of what it means to have an AI-ready culture, how to assess your organization’s AI success, and prepare for change, let’s wrap up everything you’ve learned with a knowledge check.

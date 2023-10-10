@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/09/2023
+  ms.date: 10/10/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. All team members should participate in AI, not just those to whom it's delegated."
     - content: "Utilizes generative AI."
       isCorrect: false
-      explanation: "Incorrect. Generative AI may be one of the AI technologies used to implement AI in an organization, but it isn't a factor in building an AI-ready culture."
+      explanation: "Incorrect. Generative AI might be one of the AI technologies used to implement AI in an organization, but it isn't a factor in building an AI-ready culture."
     - content: "Provides access to data."
       isCorrect: true
       explanation: "Correct. Different factions in an organization tend to protect and defend their data. Successful AI at an organization level requires that everyone share their data."
