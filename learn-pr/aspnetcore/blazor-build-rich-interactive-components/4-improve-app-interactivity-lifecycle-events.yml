@@ -26,7 +26,7 @@ quiz:
           explanation: "`OnPageLoad` sounds similar to another event in ASP.NET, but it isn't present in the Blazor component lifecycle."
         - content: "`OnAfterRenderAsync`"
           isCorrect: false
-          explanation: "`OnAfterRender` or `OnAfterRenderAsync` is the last event that triggers in the lifecycle, and may be triggered multiple times."
+          explanation: "`OnAfterRender` or `OnAfterRenderAsync` is the last event that triggers in the lifecycle, and might be triggered multiple times."
     - content: "Which of these events doesn't trigger the `SetParametersAsync` event?"
       choices:
         - content: "Route parameters are set."
