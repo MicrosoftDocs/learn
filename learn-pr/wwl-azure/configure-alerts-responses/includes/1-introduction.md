@@ -4,7 +4,7 @@ You are in IT Operations at Tailwind Traders. As part of your job, you want to e
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you learn how to:
 - Describe the purpose of and identify the different types of alerts.
 - Explain how action groups are used to notify users about alerts.
 - Configure and manage alert rules.
