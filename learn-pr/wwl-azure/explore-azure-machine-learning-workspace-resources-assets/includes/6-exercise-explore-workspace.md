@@ -1,5 +1,3 @@
-
-
 Now, it's your chance to create and explore the workspace.
 
 In this exercise, you will:

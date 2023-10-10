@@ -2,7 +2,7 @@ You can use virtual network peering to directly connect Azure virtual networks t
 
 With peered virtual networks, traffic between virtual machines is routed through the Azure network. The traffic uses only private IP addresses. It doesn't rely on internet connectivity, gateways, or encrypted connections. The traffic is always private, and it takes advantage of the high bandwidth and low latency of the Azure backbone network.
 
-![A basic diagram of two virtual networks that are connected by virtual network peering.](../media/2-vnet-peering.svg)
+:::image type="content" source="../media/2-vnet-peering.svg" alt-text="A basic diagram of two virtual networks that are connected by virtual network peering.":::
 
 The two types of peering connections are created in the same way:
 
@@ -42,7 +42,7 @@ To enable gateway transit, configure the **Allow gateway transit** option in the
 
 IP address spaces of connected networks within Azure, between Azure and your on-premises network can't overlap. This is also true for peered virtual networks. Keep this rule in mind when you're planning your network design. In any networks you connect through virtual network peering, VPN, or ExpressRoute, assign different address spaces that don't overlap.
 
-![Diagram of a comparison of overlapping and nonoverlapping network addressing.](../media/2-non-overlapping-networks.svg)
+:::image type="content" source="../media/2-non-overlapping-networks.svg" alt-text="Diagram of a comparison of overlapping and non-overlapping network addressing.":::
 
 ## Alternative connectivity methods
 

@@ -7,6 +7,7 @@ metadata:
   author: mbender-ms
   ms.author: mbender
   ms.topic: interactive-tutorial
+  ms.custom: devx-track-azurecli
   ms.prod: learning-azure
 title: Exercise - Route traffic through the NVA
 durationInMinutes: 10
