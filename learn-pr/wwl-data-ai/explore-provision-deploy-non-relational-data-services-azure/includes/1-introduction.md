@@ -11,3 +11,5 @@ In this module, you'll learn how to:
 - Describe features and capabilities of Azure file storage
 - Describe features and capabilities of Azure table storage
 - Provision and use an Azure Storage account
+- 
+- 
