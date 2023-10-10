@@ -18,20 +18,22 @@ After you enable identity-based authentication for a storage account, users can 
 
 ### Configure Azure file share permissions
 
-If you have enabled identity-based authentication, you can use role-based access control (RBAC) roles to control access rights (or, *permissions*) to Azure file shares. Azure includes the Azure file shares' related roles in the following table.
+If you've enabled identity-based authentication, you can use role-based access control (RBAC) roles to control access rights (or, *permissions*) to Azure file shares. Azure includes the Azure file shares' related roles in the following table.
 
 |Role|Description|
 |------------------------------------------------|------------------------------------------------------------|
 |Storage File Data SMB Share Contributor|Users in this role have read, write, and delete access in Azure Storage file shares over SMB.|
 |Storage File Data SMB Share Elevated Contributor|Users in this role have read, write, delete, and modify NTFS permission access in Azure Storage file shares over SMB. This role has full control permissions to the Azure file share.|
 |Storage File Data SMB Share Reader|Users in this role have read access to the Azure file share over SMB.|
+|Storage File Data Privileged Reader|Users in this role have full read access on all the data in the shares for all the configured storage accounts regardless of the file/directory level NTFS permissions that are set.|
+|Storage File Data Privileged Contributor|Users in this role have full read, write, modify ACLs, and delete access on all the data in the shares for all the configured storage accounts regardless of the file/directory level NTFS permissions that are set.|
 
 If needed, you can also create and use custom RBAC roles. However, RBAC roles grant access to a share only. To access files, a user must also have file-level permissions.
 
 Azure file shares enforce standard Windows file permissions at the folder and file level. You can mount the share and configure permissions over SMB in the same way as with on-premises file shares.
 
 > [!IMPORTANT]
-> Full administrative control of an Azure file share, including the ability to take ownership of a file, requires using the storage account key. Administrative control isn't supported with Azure AD credentials.
+> Full administrative control of an Azure file share, including the ability to take ownership of a file, requires using the storage account key.
 
 ### Data encryption
 
