@@ -37,4 +37,4 @@ Create Azure Digital Twins equipped user interfaces (UIs) to provide a window in
 1. Select the **OperateSceneUI** game object in the hierarchy.
 1. Position the UI in the scene as you would any other game object. Consider how the user is likely to view the turbine data and where you would expect the UI to be relative to the turbine assets.
 
-   :::image type="content" source="../media/position-ui-expanded.png" alt-text="Screenshot of the Unity editor with the operate scene UI prefab running in the main scene with the UI prefab is positioned closer to the terrain." lightbox="../media/position-ui.png":::
+   :::image type="content" source="../media/position-ui-expanded.png" alt-text="Screenshot of the Unity editor with the operate scene UI prefab in the main scene with the UI prefab closer to the terrain." lightbox="../media/position-ui.png":::

@@ -7,7 +7,7 @@ If you have a Windows Mixed Reality VR device set up with your PC, pressing the 
 
 :::image type="content" source="../media/build-settings.png" alt-text="Screenshot of the Unity build settings window open with main scene and universal windows platform options highlighted.":::
 
-Once your app has been deployed, you can put on your HoloLens 2 and begin testing the experience. The **Start** menu on HoloLens is where you open apps, see important status information, and access tools like the camera. To open your app from the **Start** menu, select an app tile. You can also say the name of the app to open it.
+After your app has been deployed, you can put on your HoloLens 2 and begin testing the experience. The **Start** menu on HoloLens is where you open apps, see important status information, and access tools like the camera. To open your app from the **Start** menu, select an app tile. You can also say the name of the app to open it.
 
 ## Begin the wind farm device simulation
 
@@ -47,5 +47,5 @@ To navigate to individual turbines and view details in mixed reality:
 ## Exit the app
 
 1. To exit an app that uses an immersive view, use the **Start gesture** to bring up the **Start menu**, then select the mixed-reality **Home** button.
-1. Once you've exited the app, close the app window using the close icon in the top right of the window.
+1. After you exit the app, close the app window using the close icon in the top right of the window.
 1. Remove your HoloLens 2 device.

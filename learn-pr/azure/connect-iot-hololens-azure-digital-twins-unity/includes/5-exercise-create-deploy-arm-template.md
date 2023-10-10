@@ -1,7 +1,9 @@
 > [!IMPORTANT]
 > This module creates Azure resources. If you don't plan to use this module again or if you don't complete the module, be sure to remove the created resources. Instructions for removing all resources are included at the end of the module.
 
-This module assumes that you have Azure CLI installed. You can run commands from a Command Prompt window or Windows PowerShell. We recommend PowerShell. The module also assumes that you have an Azure account. You need the Contributor and User Access Administrator roles on the Azure subscription, or Owner.
+This module assumes that you have Azure CLI installed. You can run commands from a Command Prompt window or Windows PowerShell. We recommend PowerShell.
+
+The module also assumes that you have an Azure account. You need the Contributor and User Access Administrator roles on the Azure subscription, or Owner.
 
 > [!IMPORTANT]
 > If you belong to an organization, you might need to coordinate with your IT Team to create your Azure Active Directory (Azure AD) user account and grant the appropriate privileges. Also, guest accounts associated with your Azure subscription don't meet the minimum requirements. You must have a member account.
@@ -141,11 +143,13 @@ az deployment group show --name azuredeploy --resource-group ${projectname}-rg `
 
 ## Query Azure deployment for resource group connection parameter
 
-1. Use the [az iot hub connection-string show](/cli/azure/iot/hub/connection-string#az-iot-hub-connection-string-show) command to query the IoT hub for the resource group connection string parameter. You use this value later in the module. The command redirects the output and appends it to the file named *Azure_config_settings.txt* in the same directory in which you run the command. You created this file in the previous section. The two `>` symbols indicate that the command appends rather than overwrites.
+1. Use the [az iot hub connection-string show](/cli/azure/iot/hub/connection-string#az-iot-hub-connection-string-show) command to query the IoT hub for the resource group connection string parameter. You use this value later in the module. 
 
    ```console
    az iot hub connection-string show --resource-group ${projectname}-rg >> Azure_config_settings.txt
    ```
+
+   The command redirects the output and appends it to the file named *Azure_config_settings.txt* in the same directory in which you run the command. You created this file in the previous section. The two `>` symbols indicate that the command appends rather than overwrites.
 
 1. Confirm the contents of the output text file in PowerShell. This command displays several key configuration parameters for later use in this module.
 

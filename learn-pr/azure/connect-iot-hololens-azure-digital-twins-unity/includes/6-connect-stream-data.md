@@ -40,7 +40,7 @@ Configure your `DeviceSimulator` with your Azure Digital Twins connection parame
 
 1. In your Visual Studio *DeviceSimulator* solution, open the *AzureIoTHub.cs* file in the editor by double-clicking the file from **Solution Explorer**. Paste the value for your `adtHostName` key/pair copied from Step 2 above into the **adtInstanceUrl** string variable.
 
-   :::image type="content" source="../media/host-name-cs-expanded.png" alt-text="Screenshot of the Device Simulator solution open in Visual Studio. The Azure IoT Hub dot cs file is open and host name and instance url values added." lightbox="../media/host-name-cs.png":::
+   :::image type="content" source="../media/host-name-cs-expanded.png" alt-text="Screenshot of the Device Simulator solution with the Azure IoT Hub cs file open and host name and instance URL values added." lightbox="../media/host-name-cs.png":::
 
 ## Configure the device simulator with primary connection string
 
@@ -54,7 +54,7 @@ Configure the `DeviceSimulator` with the primary connection string for the IoT H
 
 1. In your Visual Studio `DeviceSimulator` solution, open the *AzureIoTHub.cs* file in the editor and paste your `connectionString` value copied in the previous step into the **iotHubConnectionString** string variable.
 
-   :::image type="content" source="../media/host-name-cs-expanded.png" alt-text="Screenshot of the Device Simulator solution open in Visual Studio. The Azure IoT Hub dot cs file is open and iot hub connection string value is added." lightbox="../media/host-name-cs.png":::
+   :::image type="content" source="../media/host-name-cs-expanded.png" alt-text="Screenshot of the Device Simulator solution with the Azure IoT Hub cs file open and IoT Hub connection string value added." lightbox="../media/host-name-cs.png":::
 
 ## Configure the device simulator with authentication keys
 
@@ -69,7 +69,7 @@ Configure the **DeviceSimulator** with the authentication keys created by the AR
    | password | clientSecret |
    | tenant | tenantId |
 
-   :::image type="content" source="../media/prop-updater-expanded.png" alt-text="Screenshot of the Device Simulator solution in Visual Studio. The prop updater dot cs file is open and client, secret, and tenant ID values are added." lightbox="../media/prop-updater.png":::
+   :::image type="content" source="../media/prop-updater-expanded.png" alt-text="Screenshot of the Device Simulator solution with the PropUpdater.cs file open and client, secret, and tenant ID values added." lightbox="../media/prop-updater.png":::
 
 1. Select **File** > **Save All** to save your work in Visual Studio.
 
@@ -93,7 +93,7 @@ Add the Azure Digital Twins connection prefab asset to your Unity scene and conf
 
 1. Add this value to the **Url** parameter under **ADT Data Handler (Script)** with the **Function Url** obtained in Step 1. Include everything in the URL up to and including `…/api`. Don't include the last backslash nor the word *negotiate*.
 
-   :::image type="content" source="../media/adt-function-url.png" alt-text="Screenshot of the Unity editor with the Azure Digital Twins connection prefab selected and the ADT data handler script added. Main scene is in play mode and shows the terrain prefab." lightbox="../media/adt-function-url.png":::
+   :::image type="content" source="../media/adt-function-url.png" alt-text="Screenshot of the Unity editor with the Azure Digital Twins connection prefab selected and the ADT data handler script added." lightbox="../media/adt-function-url.png":::
 
 1. **Save** the scene.
 
