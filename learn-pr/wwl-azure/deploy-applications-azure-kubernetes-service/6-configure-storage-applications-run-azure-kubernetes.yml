@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-applications-azure-kubernetes-service.configure-storage-applications-run-azure-kubernetes
-title: Deploy an application to an Azure Kubernetes Service cluster
+title: Exercise - Configure storage for applications that run on Azure Kubernetes Service
 metadata:
-  title: Deploy an application to an Azure Kubernetes Service cluster
-  description: "Deploy an application to an Azure Kubernetes Service cluster"
-  ms.date: 10/06/2023
+  title: Exercise - Configure storage for applications that run on Azure Kubernetes Service
+  description: "Exercise - Configure storage for applications that run on Azure Kubernetes Service"
+  ms.date: 10/10/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 8
+durationInMinutes: 10
 content: |
   [!include[](includes/6-configure-storage-applications-run-azure-kubernetes.md)]

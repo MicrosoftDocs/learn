@@ -7,7 +7,7 @@ AKS supports both stateless and stateful workloads. Stateful workloads typically
 When choosing the optimal storage for AKS containerized workloads, you can choose from the following options:
 
  -  **Application-level access to structured or semi-structured data**. For structured or semi-structured data, use a platform managed database, such as Azure SQL, Azure Database by MySQL, Azure Database for PostgreSQL, and Cosmos DB.
- -  **File-level access to data**. For shared application data that requires high performance, use either Azure NetApp Files or the *premium* tier of Azure Files. For shared data that require moderate performance, use the *standard* tier of Azure Files.
+ -  **File-level access to data**. For shared application data that requires high performance, use either Azure NetApp Files or the *premium* tier of Azure Files. For shared data that requires moderate performance, use the *standard* tier of Azure Files.
  -  **Block-level access to data**. Use disks for storage for applications that require consistently low latency, high I/O operations per second (IOPS), and high throughput. For the best performance, consider using Azure Premium SSD, Azure Premium SSD v2, or Azure Ultra Disk Storage. Alternatively, apply Azure Blob storage by using BlobFuse virtual file system, or read from and write to blob storage directly.
 
 ### Plan for pod volumes
