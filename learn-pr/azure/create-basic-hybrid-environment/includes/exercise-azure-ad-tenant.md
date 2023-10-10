@@ -14,7 +14,7 @@ Now you need to create a Microsoft Entra tenant so that you can synchronize our 
 2. On the right, click **Microsoft Entra ID** and click **Overview**.
 3.  At the top, click **Manage tenants**.
 4.  On the tenants screen, click **Create**.
-5.  Under select tenant type, choose **Microsoft Entra ID**.  Click **Next: Configuration**.
+5.  Under select tenant type, choose **Workforce**.  Click **Next: Configuration**.
 6.  Enter the **Organization name** and an **Initial domain name** for your tenant.
 7.  Choose your **Country/Region**.
  ![Screenshot of create tenant.](../media/tenant-1.png)
