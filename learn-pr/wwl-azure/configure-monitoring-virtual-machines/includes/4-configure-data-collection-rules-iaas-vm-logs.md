@@ -30,7 +30,7 @@ To collect events and performance data, perform the following steps:
 
 To create the data collection rule to collect IIS logs from a Windows Server VM in the Azure portal perform the steps outlined in the collect events and performance section, except when choosing your data source, specify **IIS Logs**.
 
-:::image type="content" source="../media/iis-logs-unit-3.png" alt-text="Screenshot of the Add data source dialog in Create Data Collection Rule, showing IIS Logs selected and highlighted." border="true":::
+:::image type="content" source="../media/iis-logs-unit-3.png" alt-text="Screenshot of the Add data source dialog in Create Data Collection Rule, showing IIS Logs selected and highlighted." lightbox="../media/iis-logs-unit-3.png" :::
 
 ## Collect Syslog data
 
