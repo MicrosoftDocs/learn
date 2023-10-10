@@ -10,7 +10,7 @@ Several Terraform providers enable the management of Azure infrastructure:
 
 - **AzureRM**: Manage Azure Resource Manager resources such as virtual machines, storage accounts, and network
   interfaces.
-- **AzureAD**: Manage Azure Active Directory resources such as groups, users, service principals, and
+- **AzureAD**: Manage Microsoft Entra resources such as groups, users, service principals, and
   applications.
 - **AzureDevOps**: Manage Azure DevOps resources such as agents, repositories, projects, pipelines, and
   queries.
