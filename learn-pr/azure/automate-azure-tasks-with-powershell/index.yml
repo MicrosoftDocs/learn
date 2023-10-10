@@ -3,7 +3,7 @@ uid: learn.automate-azure-tasks-with-powershell
 metadata:
   title: Automate Azure tasks using scripts with PowerShell
   description: Learn how to install Azure PowerShell on Linux, macOS, or Windows and then connect to Azure and manage your resources.
-  ms.date: 01/31/2023
+  ms.date: 09/05/2023
   author: mikefrobbins
   ms.author: mirobb
   ms.topic: interactive-tutorial
@@ -12,10 +12,10 @@ title: Automate Azure tasks using scripts with PowerShell
 summary: Install Azure PowerShell locally and use it to manage Azure resources.
 abstract: | 
   In this module, you will:
-  - Decide if Azure PowerShell is the right tool for your Azure administration tasks
-  - Install Azure PowerShell on Linux, macOS, and/or Windows
-  - Connect to an Azure subscription using Azure PowerShell
-  - Create Azure resources using Azure PowerShell
+  - Decide if Azure PowerShell is the right tool for your Azure administration tasks.
+  - Install Azure PowerShell on Linux, macOS, and/or Windows.
+  - Connect to an Azure subscription using Azure PowerShell.
+  - Create Azure resources using Azure PowerShell.
 prerequisites: |
   - Experience with a command-line interface such as PowerShell or Bash
   - Knowledge of basic Azure concepts such as resource groups and Virtual Machines

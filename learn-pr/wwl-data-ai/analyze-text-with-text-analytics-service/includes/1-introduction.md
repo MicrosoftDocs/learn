@@ -1,4 +1,3 @@
-
 Analyzing text is a process where you evaluate different aspects of a document or phrase, in order to gain insights into the content of that text. For the most part, humans are able to read some text and understand the meaning behind it. Even without considering grammar rules for the language the text is written in, specific insights can be identified in the text.
 
 As an example, you might read some text and identify some key phrases that indicate the main talking points of the text. You might also recognize names of people or well-known landmarks such as the Eiffel Tower. Although difficult at times, you might also be able to get a sense for how the person was feeling when they wrote the text, also commonly known as sentiment.
@@ -14,7 +13,7 @@ Text analytics is a process where an artificial intelligence (AI) algorithm, run
 - Encoding words or terms as numeric features that can be used to train a machine learning model. For example, to classify a text document based on the terms it contains. This technique is often used to perform *sentiment analysis*, in which a document is classified as positive or negative.
 - Creating *vectorized* models that capture semantic relationships between words by assigning them to locations in n-dimensional space. This modeling technique might, for example,  assign values to the words "flower" and "plant" that locate them close to one another, while "skateboard" might be given a value that positions it much further away.
 
-While these techniques can be used to great effect, programming them can be complex. In Microsoft Azure, the **Language** cognitive service can help simplify application development by using pre-trained models that can:
+While these techniques can be used to great effect, programming them can be complex. In Microsoft Azure, **Azure AI Language** service can help simplify application development by using pre-trained models that can:
 
 - Determine the language of a document or text (for example, French or English).
 - Perform sentiment analysis on text to determine a positive or negative sentiment.
@@ -27,4 +26,4 @@ In this module, you'll explore some of these capabilities and gain an understand
 - A document search application that extracts key phrases to help summarize the main subject matter of documents in a catalog.
 - A tool to extract brand information or company names from documents or other text for identification purposes.
 
-These examples are just a small sample of the many areas that the Language service can help with text analytics.
+These examples are just a small sample of the many areas that Azure AI Language can help with text analytics.

@@ -4,13 +4,10 @@ title: Describe Azure DNS
 metadata:
   title: Describe Azure DNS
   description: "Describe Azure DNS"
-  ms.date: 12/12/2022
+  ms.date: 09/13/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/12-domain-name-system.md)]

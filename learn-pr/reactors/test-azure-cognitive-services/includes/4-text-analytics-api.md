@@ -9,7 +9,7 @@ print(language_api_url)
 
 The output is:
 
-```Output
+```output
 https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/languages
 ```
 
@@ -36,7 +36,7 @@ pprint(languages)
 
 The output is:
 
-```Output
+```output
 {'documents': [{'detectedLanguages': [{'iso6391Name': 'en',
                                        'name': 'English',
                                        'score': 1.0}],
@@ -77,7 +77,7 @@ HTML("<table><tr><th>Text</th><th>Detected languages(scores)</th></tr>{0}</table
 
 Here's the output:
 
-```Output
+```output
 | Text                                     | Detected languages(scores) |
 |------------------------------------------|----------------------------|
 | This is a document written in English.   | English(1.0)               |
@@ -92,16 +92,16 @@ The service did a pretty good job of identifying the languages. It did confident
 
 ### Try it yourself
 
-Create another document set of text. Use the Azure Cognitive Services Text Analytics API to detect the language for the text.
+Create another document set of text. Use the Azure AI services Text Analytics API to detect the language for the text.
 
 <br />
 
-<details> 
+<details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
   Here's the input:
-  
+
   ```python
   documents = { 'documents': [
     { 'id': '1', 'text': 'Trying out this new feature' },
@@ -120,14 +120,14 @@ Create another document set of text. Use the Azure Cognitive Services Text Analy
   ```
 
   The output is:
-  
-  ```Output
+
+  ```output
   | Text                        | Detected languages(scores) |
   |-----------------------------|----------------------------|
   | Trying out this new feature | English(1.0)               |
   | Creo que estoy aprendiendo. | Spanish(1.0)               |
   ```
-  
+
 </details>
 
 <br /><br />

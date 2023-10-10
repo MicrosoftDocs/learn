@@ -9,6 +9,7 @@ metadata:
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom: devx-track-dotnet
 durationInMinutes: 30
 content: |
   [!include[](includes/6-send-receive-messages-service-bus.md)]

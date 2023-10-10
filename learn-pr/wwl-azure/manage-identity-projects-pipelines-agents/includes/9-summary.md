@@ -1,6 +1,6 @@
 In this module, you learned the importance of managing identity for projects, pipelines, and agents in Azure DevOps and gained the skills to configure and manage these components effectively. You discovered fundamental concepts and best practices crucial for ensuring smooth operations and heightened security in your Azure DevOps environment.
 
-You learned how to describe the benefits and usage of:
+You learned how to:
 
 - Configure Microsoft-hosted agents and pools.
 - Configure agents for projects.

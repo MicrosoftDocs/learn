@@ -40,7 +40,7 @@ To configure Azure AD single sign-on with SAP HANA, complete the following steps
 4. On the **Set up Single Sign-On with SAML** page, perform the following steps:
 
     1. In the **Identifier** text box, type **HA100**.
-    2. In the **Reply URL** text box, type a URL in the format **<https://Customer-SAP-instance-url/sap/hana/xs/saml/login.xscfunc>**. To obtain its actual value, you can contact the [SAP HANA Client support team](https://cloudplatform.sap.com/contact.html).
+    2. In the **Reply URL** text box, type a URL in the format `<https://Customer-SAP-instance-url/sap/hana/xs/saml/login.xscfunc>`. To obtain its actual value, you can contact the [SAP HANA Client support team](https://cloudplatform.sap.com/contact.html).
     3. SAP HANA application expects the SAML assertions in a specific format. Configure the following claims for this application: **givenname**, **surname**, **emailaddress**, **name**, and **Unique User Identifier**. You can manage the values of these attributes from the **User Attributes** section on the application integration page.
 5. On the **Set up Single Sign-On with SAML** page, select the **Edit** button to open the **User Attributes** dialog.
 6. In the **User attributes** section on the **User Attributes &amp; Claims** page, perform the following steps:

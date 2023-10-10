@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-security-management-capabilities-of-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/08/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.service: azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Microsoft Defender for Cloud covers three pillars of cloud security.  Which pillar provides visibility to help you understand your current security situation and provides hardening recommendations?"
+    choices:
+    - content: "Cloud security posture management (CSPM)"
+      isCorrect: true
+      explanation: "Correct. The CSPM pillar of Microsoft Defender for Cloud provides visibility and to help you understand your current security situation and provides hardening recommendations."
+    - content: "Cloud workload protection (CWP)"
+      isCorrect: false
+      explanation: "Incorrect.  Although CWP is an important pillar of cloud security for Microsoft Defender for Cloud, it's focused on detecting and resolving threats for resources, workload, and services.  It works with the CSPM pillar."
+    - content: "Microsoft Cloud security benchmark"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft cloud security benchmark (MCSB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure and your multicloud environment."
+  - content: "An organization wants to add vulnerability scanning for its Azure resources to view, investigate, and remediate the findings directly within Microsoft Defender for Cloud. What functionality of Microsoft Defender for Cloud would they need to consider?"
+    choices:
+    - content: "Secure score and recommendations functionality that are part of the CSPM pillar of Microsoft Defender for Cloud."
+      isCorrect: false
+      explanation: "Incorrect. Secure score and recommendations functionality doesn't include vulnerability scanning."
+    - content: "The enhanced functionality that is provided through the Microsoft Defender plans and is part of the CWP pillar of Microsoft Defender for Cloud."
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender plans provide enhanced security features for your workloads, including vulnerability scanning."
+    - content: "Security Benchmarks"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft cloud security benchmark (MCSB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure, it doesn't provide vulnerability scanning."
+  - content: "Which framework does Microsoft Defender for Cloud apply as a default initiative for security and compliance and provides best practices and recommendations to help improve the security of workloads, data, and services on Azure and your multicloud environment?"
+    choices:
+    - content: "Microsoft Cloud security benchmark"
+      isCorrect: true
+      explanation: "Correct. The Microsoft cloud security benchmark that is automatically assigned to every subscription in Microsoft Defender for Cloud."
+    - content: "The Center for Internet Security (CIS) framework"
+      isCorrect: false
+      explanation: "Incorrect. Although the MCSB builds on the controls from the Center for Internet Security (CIS) and the National Institute of Standards and Technology (NIST) with a focus on cloud-centric security, it's the MCSB that is automatically applied as a default initiative."
+    - content: "The National Institute of Standards and Technology (NIST) framework"
+      isCorrect: false
+      explanation: "Incorrect. Although the MCSB builds on the controls from the Center for Internet Security (CIS) and the National Institute of Standards and Technology (NIST) with a focus on cloud-centric security, it's the MCSB that is automatically applied as a default initiative."
+  - content: "Which capability allows you to manage your connected DevOps environments and provides your security teams with visibility to discovered issues within those environments?"
+    choices:
+    - content: "The Defender for DevOps console"
+      isCorrect: true
+      explanation: "Correct. The Defender for DevOps console allows you to manage your connected DevOps environments and provides your security teams with a high level overview of discovered issues that may exist within them."
+    - content: "Secure score"
+      isCorrect: false
+      explanation: "Incorrect.  Although secure score in Microsoft Defender for Cloud provides single score so that you can tell, at a glance, your current security situation, it does not provide specific visibility to your DevOps environments. ."
+    - content: "The Microsoft cloud security benchmark (MCSB)"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft cloud security benchmark (MCSB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure and your multicloud environment."

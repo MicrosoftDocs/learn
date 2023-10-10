@@ -8,8 +8,8 @@ These questions allow you to:
 
 - Check if the application went through a Security Development Lifecycle (SDL) process.
 - Learn if there are open Common Vulnerabilities and Exposure (CVE) or other known critical issues.
-- Learn all encryption algorithms used to protect data at-rest, in-transit, and in-use.
-- Understand if system process persists data, logs, or secrets beyond the expected scope to gain elevated privileges.
+- Learn all of the encryption algorithms used to protect data at-rest, in-transit, and in-use.
+- Understand if the system process persists data, logs, or secrets beyond the expected scope to gain elevated privileges.
 - Learn about sensitive data stored by the application.
 - Investigate if the application requires services from trusted cloud providers to authenticate users or provide backups.
 - Learn of application network usage requirements, like ports and protocols.

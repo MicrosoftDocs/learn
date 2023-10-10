@@ -26,14 +26,14 @@ quiz:
     - content: Configure a policy, investigate by using a report, and remediate.
       isCorrect: true
       explanation: Use your risk policy to help you investigate and remediate threats.
-  - content: You want to analyze risks that describe authentication requests for sign-ins that probably weren't authorized by users. Which type of risks will you analyze?
+  - content: You want to analyze risks that describe authentication requests for sign-ins that users probably haven't authorized. Which type of risks are you analyzing?
     choices:
     - content: User risk
       isCorrect: false
-      explanation: A user risk is the type of risk that can cause, or is caused by, a user's identity or account being compromised.
+      explanation: A user risk is suspicious activity and actions by users when they sign in. Often, these risks cause a user's identity or account to be compromised.
     - content: Sign-in risk
       isCorrect: true
-      explanation: Azure AD Identity Protection scrutinizes each authentication request to judge whether it was authorized by the owner of the identity.
+      explanation: Azure AD Identity Protection scrutinizes each authentication request to judge whether the owner of the identity has authorized it.
     - content: Authentication risk
       isCorrect: false
       explanation: There's no such thing as an authentication risk.

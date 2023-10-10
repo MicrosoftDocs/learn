@@ -13,7 +13,8 @@ The Azure Quantum Resource Estimator takes some inputs that are called *target p
 - `qubitParams`, a physical qubit model.
 - `qecScheme`, a QEC scheme.
 - `errorBudget`, an error budget.
-- `constraints` - the constraints on the component-level
+- `constraints`, the constraints on the component-level.
+-  `distillationUnitSpecifications`, to specify T factories distillation algorithms.
 
 ### Physical qubit models
 
@@ -90,7 +91,7 @@ $$ \epsilon = \epsilon_{\log} + \epsilon_{\rm dis} + \epsilon_{\rm syn} $$
         "rotations": <double> // Optional
     }
 }
-
+```
 For more information, see [Error budget in the Azure Quantum Resource Estimator](/azure/quantum/overview-resources-estimator#error-budget).
 
 ### Constraints
@@ -105,6 +106,25 @@ You can use `constraints` parameters to apply constraints on the component-level
     }
 }
 ```
+For more information, see [Constraints in the Azure Quantum Resource Estimator](/azure/quantum/overview-resources-estimator#constraints).
+
+
+### Distillation units
+
+You can provide specifications for T factories distillation algorithms with the `distillationUnitSpecifications` parameter. The specification can be either predefined or custom. You can specify a predefined specification by selecting the distillation unit name: `15-1 RM` or `15-1 space-efficient`. 
+
+```JSON
+{
+    "distillationUnitSpecifications": [
+        "name": <string>,
+    ]
+}
+```
+In both cases, notation *15-1* stands for 15 input T states and 1 output T state. The `15-1 space-efficient` distillation unit uses fewer qubits than `15-1 RM` but requires more runtime. For more information, see [Table VI](https://arxiv.org/pdf/2211.07629.pdf#page=24).
+
+For more information, see [Distillation units in the Azure Quantum Resource Estimator](/azure/quantum/overview-resources-estimator#distillation-units).
+
+
 
 ## What is the result of a resource estimation job?
 

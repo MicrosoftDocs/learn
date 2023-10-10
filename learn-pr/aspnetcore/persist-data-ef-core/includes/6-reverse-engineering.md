@@ -1,4 +1,4 @@
-The manager of Contoso Pizza has asked you to add an endpoint so that the company can display coupons in its app. The coupons reside in an existing database. In this unit, you create scaffolding from an existing database and modify the resulting entity class.
+Contoso Pizza's manager has asked you to add an endpoint so that the company can display coupons in its app. The coupons reside in an existing database. In this unit, you'll create scaffolding from an existing database and modify the resulting entity class.
 
 ## Inspect the promotions database
 
@@ -12,7 +12,7 @@ Take a look at the database you'll use to generate the scaffolded code:
 
 ## Scaffold the promotions context and coupon model
 
-Now, you use the database to scaffold the code:
+Now, you'll use the database to scaffold the code:
 
 1. Run the following command:
 
@@ -47,11 +47,11 @@ Now, you use the database to scaffold the code:
     ```
 
     > [!TIP]
-    > If the database changes, you can generate new scaffolded files. The generated files are overwritten each time, but they are created as `partial` classes, so you can extend them with custom properties and behaviors in your own, separate files.
+    > If the database changes, you can generate new scaffolded files. The generated files are overwritten each time, but they're created as `partial` classes, so you can extend them with custom properties and behaviors in your own, separate files.
 
 ## Add a coupon endpoint
 
-Before you can test the scaffolded code, you need to add an endpoint to the API. So next, you add a new API controller.
+Before you can test the scaffolded code, you need to add an endpoint to the API. So, you'll next add a new API controller.
 
 To better understand how API controllers work, see [Create a web API with ASP.NET Core controllers](/training/modules/build-web-api-aspnet-core/).
 
@@ -109,7 +109,7 @@ Now that the endpoint is added, test the coupon operations:
 
 1. Go to the API's Swagger UI like you did in an earlier exercise (or refresh the existing UI in your browser).
 
-1. Under the **Coupon** heading, expand the **GET** operation and select **Try it out**.
+1. Under the **Coupon** heading, expand the **GET** operation and select the **Try it out** button.
 1. Select **Execute**. The response body shows the coupons from the database:
 
     ```json

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-identity-governance
-title: Describe identity governance in Azure AD
+title: Describe Microsoft Entra ID Governance
 metadata:
-  title: Describe identity governance in Azure AD
-  description: "Describe identity governance in Azure AD"
-  ms.date: 02/07/2023
+  title: Describe Microsoft Entra ID Governance
+  description: "Describe Microsoft Entra ID Governance"
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial

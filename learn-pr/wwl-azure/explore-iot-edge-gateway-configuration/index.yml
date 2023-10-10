@@ -44,3 +44,4 @@ units:
 - learn.wwl.explore-iot-edge-gateway-configuration.summary
 badge:
   uid: learn.wwl.explore-iot-edge-gateway-configuration.badge
+hidden: true

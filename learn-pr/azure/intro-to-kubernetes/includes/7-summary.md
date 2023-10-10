@@ -1,4 +1,4 @@
-The goal here was to help you evaluate whether Kubernetes would be a good choice as a container orchestration platform for your business. You looked at several features that enhance the Azure Kubernetes Service (AKS) offering. You saw how these features can help you decide if Kubernetes is a good fit for new projects, or if you should move to Kubernetes to orchestrate current container deployments.
+The goal here was to help you evaluate whether Kubernetes would be a good choice as a container-orchestration platform for your business. You looked at several features that enhance the Azure Kubernetes Service (AKS) offering. You learned how these features can help you decide if Kubernetes is a good fit for new projects, or if you should move to Kubernetes to orchestrate current container deployments.
 
 You saw how Kubernetes provides for:
 
@@ -10,7 +10,7 @@ You saw how Kubernetes provides for:
 - Management of network traffic.
 - Storage and management of sensitive information such as usernames and passwords.
 
-To deploy and manage your drone tracking solution into new customer regions, you were looking for a container orchestration platform. You now understand how Kubernetes can help you develop, deploy, and manage apps in your container environment.
+To deploy and manage your drone-tracking solution into new customer regions, you were looking for a container-orchestration platform. You now understand how Kubernetes can help you develop, deploy, and manage apps in your container environment.
 
 ## Learn more
 

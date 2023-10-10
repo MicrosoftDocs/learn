@@ -32,11 +32,11 @@ By configuring pipeline access to agent pools, you can ensure that your pipeline
 1. Sign-in to your Azure DevOps organization.
 2. Navigate to the project for which you want to configure pipeline access to agent pools.
 3. Go to Project Settings, then click on Agent Pools under Pipelines.
-4. Choose the agent pool that you want to grant access to your pipeline.
+4. Choose the agent pool to which you want to grant access to your pipeline.
 5. Go to the Security tab.
 6. Click on the + button (Add pipeline) to add a new pipeline.
 7. (Optional) Search for the pipeline name.
-8. Select the name of your pipeline that you want to grant access to the current agent.
+8. Select the name of the pipeline to which you want to grant access to the current agent.
 
     ![Screen recording of Azure DevOps project settings showing the steps to add the pipeline eShopOnWeb to the Pipeline permissions.](../media/add-pipeline.gif)
 

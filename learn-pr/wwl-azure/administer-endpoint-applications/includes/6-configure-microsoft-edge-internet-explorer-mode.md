@@ -1,5 +1,3 @@
-
-
 For Windows 11 and later, Microsoft Edge is the default browser experience. However, legacy web applications may still exist that were originally written for Internet Explorer 11. 
 
 > [!NOTE]
@@ -14,7 +12,7 @@ To overcome the hurdle of supporting legacy web applications, Microsoft Edge int
 Only those sites that you specifically configure (via policy) will use IE mode, all other sites will be rendered as modern web sites. When a site loads in IE mode, the IE logo indicator displays on the left side of navigation bar. Alternatively, IE Mode can be configured to open with a standalone Internet Explorer 11 window. However, most users prefer when sites open directly within Microsoft Edge in IE mode.
 
 > [!NOTE]
-> Internet Explorer provided a feature called Enterprise Mode. This enabled Internet Explorer to runin a compatiblity mode for web apps that were designed for older versions of IE.
+> Internet Explorer provided a feature called Enterprise Mode. This enabled Internet Explorer to run in a compatibility mode for web apps that were designed for older versions of IE.
 
 ### IE mode supports the following Internet Explorer functionality
 - All document modes and enterprise modes
@@ -50,7 +48,7 @@ Before you can start using either IE Mode, you must create an IE Mode site list 
 
 This tool helps you create error-free XML documents with simple n+1 versioning and URL verification. We recommend using this tool if your site list is relatively small. There are two versions of this tool, both supported on Windows 8.1 and Windows 10. We recommend that you only use Enterprise Mode Site List Manager (schema v.2) because the Enterprise Mode schema has been updated to v.2 to be easier to read and to provide a better foundation for future capabilities.
 
-When you're configuring a site list, all sites that have the element **<open-in>IE11</open-in>** will now open in IE mode. Sites that have an additional compat-mode tag, such as **<compat-mode>IE7Enterprise</compat-mode>**, will open using compatibility mode for that browser version.
+When you're configuring a site list, all sites that have the element **`<open-in>IE11</open-in>`** will now open in IE mode. Sites that have an additional compat-mode tag, such as **`<compat-mode>IE7Enterprise</compat-mode>`**, will open using compatibility mode for that browser version.
 
 You can download version 2 of the tool from here: [https://www.microsoft.com/download/details.aspx?id=49974](https://www.microsoft.com/download/details.aspx?id=49974).
 

@@ -4,13 +4,11 @@ title: Explore environment deployment
 metadata:
   title: Explore environment deployment
   description: "Explore environment deployment"
-  ms.date: 06/21/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/2-explore-environment-deployment.md)]

@@ -20,7 +20,7 @@ levels:
 roles:
 - higher-ed-educator
 products:
-- azure-security-center
+- defender-for-cloud
 subjects:
 - security
 modules:

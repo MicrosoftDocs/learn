@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.azure-openai
+title: What is Azure OpenAI?
+metadata:
+  title: What is Azure OpenAI?
+  description: "An introduction to Microsoft's generative AI capabilities which are offered through Azure OpenAI Service."
+  ms.date: 6/27/2023
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-azure-openai.md)]

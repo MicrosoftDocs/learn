@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.render-api-responses-razor-pages.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 09/11/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

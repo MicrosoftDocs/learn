@@ -1,0 +1,44 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-project-building-augmented-reality-app-hololens-two.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 11/17/2020
+  author: tholewis
+  ms.author: tholewis
+  ms.topic: interactive-tutorial
+  ms.prod: hololens
+durationInMinutes: 15
+quiz:
+  questions:
+  - content: "Which is true for planning?"
+    choices:
+    - content: "Planning isn't necessary for a successful project."
+      isCorrect: false
+      explanation: "Planning is necessary for a successful project."
+    - content: "Planning is necessary for a successful project."
+      isCorrect: true
+      explanation: "Correct! Planning is necessary for a successful project."
+  - content: "Which one of these is not a part of the product planning?"
+    choices:
+    - content: "Profit and loss statement."
+      isCorrect: true
+      explanation: "Profit and loss statement isn't needed for a project plan."
+    - content: "Privacy Considerations."
+      isCorrect: false
+      explanation: "Privacy considerations should be a part of the project plan."
+    - content: "App Description."
+      isCorrect: false
+      explanation: "App Description should be a part of the project plan."
+  - content: "Factors such as font size, color contrast, audio alternatives for visual cues, and navigation options are considered part of what type of considerations?"
+    choices:
+    - content: "Design Considerations."
+      isCorrect: false
+      explanation: "These factors are considerations for Accessibility."
+    - content: "Environmental Considerations."
+      isCorrect: false
+      explanation: "These factors are considerations for Accessibility."
+    - content: "Accessibility Considerations."
+      isCorrect: true
+      explanation: "Correct! These factors are considerations for Accessibility."

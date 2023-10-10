@@ -1,11 +1,10 @@
-
 Once you understand the basic Git commands, you can start using Git as a source and version control platform. If you’re working by yourself, or as part of a small team where everyone has their own files that they’re responsible for, you may not even need to go much past the basic Git commands. However, for more complex repositories, working together with multiple people on the same branch, and managing the history of branches, you’ll need a few more advanced Git commands in your toolbelt.
 
 ## git pull
 
 If you’re the only one working in a branch or on a repository, and all of your work is done from the same compute, then you know that you’ve always got the latest version. However, the point of Git is collaboration. What if you made changes to a file on a different computer, or if someone else made changes to a file in the branch you’re working on?
 
-`git pull` reaches out to the remote branch and checks if there are updates needed, and then updates your local repo It’s a good idea to run a git pull before you start working on your files. Updating your repo before you start work helps avoid conflicts later if you didn’t start from the latest update.
+`git pull` reaches out to the remote branch and checks if there are updates needed, and then updates your local repo. It’s a good idea to run a git pull before you start working on your files. Updating your repo before you start work helps avoid conflicts later if you didn’t start from the latest update.
 
 `git pull`
 

@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.wwl.create-language-model-with-luis
 metadata:
-  title: Create a language model with Conversational Language Understanding
-  description: "Create a language model with Conversational Language Understanding"
-  ms.date: 03/06/2023
+  title: Create a language model with Azure AI Language
+  description: "Create a language model with Azure AI language"
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-  ms.subservice: language-understanding 
-title: Create a language model with Conversational Language Understanding
-summary: In this module, we'll introduce you to Conversational Language Understanding, and show how to create applications that understand language.
+  ms.service: artificial-intelligence
+  ms.subservice: language-understanding
+title: Create a language model with Azure AI Language
+summary: In this module, we'll introduce you to conversational language understanding, and show how to create applications that understand language with Azure AI Language.
 abstract: |
   In this module, you'll:
-   - Learn what Conversational Language Understanding is.
-   - Learn about key features, such as intents and utterances.
-   - Build and publish a natural-language machine-learning model.
+  - Learn what conversational language understanding is.
+  - Learn about key features, such as intents and utterances.
+  - Build and publish a natural-language machine-learning model.
 prerequisites: |
   Ability to navigate the Azure portal
 iconUrl: /training/achievements/create-publish-luis-model.svg
@@ -29,8 +29,7 @@ roles:
 products:
 - azure
 - azure-bot-service
-- azure-cognitive-services
-- azure-language-understanding
+- ai-services
 - azure-sdks
 subjects:
 - natural-language-processing
