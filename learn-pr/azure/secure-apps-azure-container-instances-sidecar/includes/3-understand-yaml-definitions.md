@@ -56,7 +56,7 @@ properties:
   restartPolicy: Always
   sku: Standard
   subnetIds:
-  - id: /subscriptions/e7da9914-9b05-4891-893c-546cb7b0422e/resourceGroups/acilab/providers/Microsoft.Network/virtualNetworks/acivnet/subnets/aci
+  - id: /subscriptions/<<subscriptionid>>/resourceGroups/acilab/providers/Microsoft.Network/virtualNetworks/acivnet/subnets/aci
 tags: {}
 type: Microsoft.ContainerInstance/containerGroups
 ```
