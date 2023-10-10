@@ -1,5 +1,3 @@
-
-
 ## Architecture diagram
 
 | Storage Plan  | Tasks|
