@@ -28,13 +28,13 @@ quiz:
       explanation: "No. Requesting credentials is one of the means of authentication and maybe a step in the authentication process"
   - content: "What capabilities are supported by the Microsoft Authentication Library (MSAL)?"
     choices:
-    - content: "MSAL provides the ability to register an applications with Azure Active Directory programmatically."
+    - content: "MSAL provides the ability to register an applications with Microsoft Entra ID programmatically."
       isCorrect: false
       explanation: "No. MSAL is an authentication and authorization library. The Microsoft Graph API and SDK can be used to register an application programmatically."
     - content: "MSAL provides methods for applications to call the Microsoft Graph API."
       isCorrect: false
-      explanation: "No. MSAL is an authentication and authorization library which can be used to request access tokens from Azure Active Directory to authorize access to any Microsoft API. The Microsoft Graph SDK provides methods to call the Microsoft Graph API."
-    - content: "MSAL allows applications to request Azure Active Directory to provide ID tokens for the authenticated user and access tokens to make authorized calls to APIs."
+      explanation: "No. MSAL is an authentication and authorization library which can be used to request access tokens from Microsoft Entra ID to authorize access to any Microsoft API. The Microsoft Graph SDK provides methods to call the Microsoft Graph API."
+    - content: "MSAL allows applications to request Microsoft Entra ID to provide ID tokens for the authenticated user and access tokens to make authorized calls to APIs."
       isCorrect: true
       explanation: "This answer is correct"
   - content: "What does **scopes** refer to when using the Microsoft Authentication Library (MSAL)?"

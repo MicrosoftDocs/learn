@@ -45,7 +45,7 @@ The frequency of replication data transmission between primary and secondary loc
 > [!NOTE]
 > You can't perform an offline replication using Azure Data Box or other storage technologies for the initial replication to Azure.
 
-For scenarios where you're replicating from one Azure region to another, it's possible to replicate between Azure subscriptions if those subscriptions are associated with the same Azure AD tenant.
+For scenarios where you're replicating from one Azure region to another, it's possible to replicate between Azure subscriptions if those subscriptions are associated with the same Microsoft Entra tenant.
 
 ## Recovery points
 
