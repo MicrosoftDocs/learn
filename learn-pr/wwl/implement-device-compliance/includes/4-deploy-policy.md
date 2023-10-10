@@ -1,5 +1,3 @@
-
-
 Before an organization can implement device compliance policies, it must first satisfy the following prerequisites:
 
  -  It must be licensed for Azure AD Premium P1 or Azure AD Premium P2 and Intune. Both are part of Microsoft 365 or Enterprise Mobility + Security, but they can also be obtained separately.

@@ -1,5 +1,3 @@
-
-
 Compliance policies define the rules and settings that should be configured on a device for it to be considered compliant. After you configure and deploy a compliance policy, you can monitor device compliance status, and individual devices that are configured in an expected way.
 
 Before you can apply a compliance policy to a device, it must first be enrolled in Intune. Upon enrollment, the device can be automatically added to a device group. If a compliance policy is assigned to that group, the policy will be assessed on the device, with its compliance status automatically reported to Intune and displayed in the portal.
