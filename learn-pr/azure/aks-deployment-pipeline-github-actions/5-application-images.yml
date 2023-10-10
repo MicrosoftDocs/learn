@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-deployment-pipeline-github-actions.5-application-images
 metadata:
-  title: Understand application images
+  title: Understand Application Images
   description: Understand concepts about application images you use to deploy a cloud-native application by using GitHub Actions.
   ms.date: 10/08/2020
   author: nickomang
