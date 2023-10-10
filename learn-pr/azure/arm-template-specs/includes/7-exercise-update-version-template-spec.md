@@ -1,6 +1,6 @@
 Your Azure Cosmos DB template spec has been used throughout your organization to provision lots of new Azure Cosmos DB accounts. All of them have been configured to use continuous backup.
 
-Your security team recently reviewed the Azure Cosmos DB security capabilities. It decided that new accounts should use Azure Active Directory (Azure AD) authentication and Azure Cosmos DB role-based access control.
+Your security team recently reviewed the Azure Cosmos DB security capabilities. It decided that new accounts should use Microsoft Entra authentication and Azure Cosmos DB role-based access control.
 
 In this exercise, you'll update your template spec with a new version that includes the updated authentication configuration.
 

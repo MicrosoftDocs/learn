@@ -12,18 +12,18 @@ Beginner
 
 ## Product(s)
 
-Azure Active Directory
+Microsoft Entra ID
 
 ## Prerequisites
 
-- An Azure Active Directory (Azure AD) tenant with permissions for managing app registrations. For more information, see [Create Azure free account](https://azure.microsoft.com/free/).
+- A Microsoft Entra tenant with permissions for managing app registrations. For more information, see [Create Azure free account](https://azure.microsoft.com/free/).
 - Familiarity with basic Python programming concepts and terminology.
 - An understanding of cloud computing concepts and services.
 - Basic knowledge of the [Microsoft identity platform](https://learn.microsoft.com/learn/modules/explore-microsoft-identity-platform/)
 
 ## Summary
 
-Add core authentication and authorization features to a Python web app using the Microsoft identity platform. Your web app will sign in Azure AD users and fetch data from a protected web API, such as the Microsoft Graph API.
+Add core authentication and authorization features to a Python web app using the Microsoft identity platform. Your web app will sign in Microsoft Entra users and fetch data from a protected web API, such as the Microsoft Graph API.
 
 
 ## Learning objectives
@@ -71,7 +71,7 @@ Add more units as needed for your content
     - Question type
     - Question type
 
-1. Register your application with Azure AD
+1. Register your application with Microsoft Entra ID
 
    List the content that will enable the learner to _register an app in Azure portal_:
 
