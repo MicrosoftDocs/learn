@@ -199,7 +199,7 @@ For authentication, it's recommended to use Open Identity Connect (OIDC) for Git
 
 ## Set up Open ID Connect (OIDC)
 
-You've added secrets, but they have no value. Let's assign them by creating a service principal and certificates to login with OIDC.
+You've added secrets, but they have no value. Let's assign them by creating a service principal and certificates to log in with OIDC.
 
 ### Register your app
 
