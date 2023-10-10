@@ -49,7 +49,7 @@ quiz:
         - content: pip install msal
           isCorrect: true
           explanation: Correct. Python pip is the package manager for Python packages. We can use pip to install packages that don't come with Python.
-        - content: python install MSAL
+        - content: python install msal
           isCorrect: false
           explanation: Incorrect. The command is wrong and Python interpreter try to run a file.
     - content: John is building a new confidential client application for his company. Which of the following token grant flows does a confidential client application use?
