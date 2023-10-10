@@ -156,7 +156,7 @@ echo $clientsecret
 
 ## Get Microsoft Entra ID P1 or P2 features
 
-If you want to fully test Microsoft Entra ID P1 or P2 features on your application, you'll need to sign up your tenant for a [Premium P1 or Premium P2 license](https://azure.microsoft.com/pricing/details/active-directory/).
+If you want to fully test Microsoft Entra ID P1 or P2 features on your application, you'll need to sign up your tenant for a [P1 or P2 license](https://www.microsoft.com/security/business/microsoft-entra-pricing).
 
 If you signed up using the Microsoft 365 Developer program, your test tenant will come with Microsoft Entra ID P2 licenses. If not, you can still enable a [free trial of Microsoft Entra ID P1 or P2](https://azure.microsoft.com/free/active-directory/).
 
