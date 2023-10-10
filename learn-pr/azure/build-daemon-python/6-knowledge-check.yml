@@ -46,7 +46,7 @@ quiz:
         - content: pip install -r requirements.txt
           isCorrect: false
           explanation: Incorrect. The MSAL for Python is new library being introduced to the project and doesn't exist in the requirements.txt configuration file.
-        - content: pip install MSAL
+        - content: pip install msal
           isCorrect: true
           explanation: Correct. Python pip is the package manager for Python packages. We can use pip to install packages that don't come with Python.
         - content: python install MSAL
