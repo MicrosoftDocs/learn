@@ -40,7 +40,7 @@ The following diagram shows the topology you deploy in this unit:
     # Create test RG and VM
     az group create -n $rg -l $location
     az vm create -n test-vm -g $rg -l $location --image ubuntuLTS --generate-ssh-keys \
-        --public-ip-address test-vm-pip --vnet-name $vnet_name \
+        --public-ip-address test-vm-pip --public-ip-sku Standard --vnet-name $vnet_name \
         --vnet-address-prefix $vnet_prefix --subnet $vm_subnet_name --subnet-address-prefix $vm_subnet_prefix
     vm_pip=$(az network public-ip show -n test-vm-pip -g $rg --query ipAddress -o tsv) && echo $vm_pip
     ```
@@ -81,7 +81,7 @@ Now that you have all the required components, you can deploy the Azure containe
     az container create -n $aci_name -g $rg -e "SQL_SERVER_USERNAME=$sql_username" \
       "SQL_SERVER_PASSWORD=$sql_password" \
       "SQL_SERVER_FQDN=${sql_server_fqdn}" \
-      --image erjosito/sqlapi:1.0 \
+      --image erjosito/yadaapi:1.0 \
       --ip-address private --ports 8080 --vnet $vnet_id --subnet $aci_subnet_id
     ```
 
