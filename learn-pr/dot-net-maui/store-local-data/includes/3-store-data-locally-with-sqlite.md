@@ -98,7 +98,7 @@ public int AddNewUser(User user)
 
 The `Insert` method returns an `int`, which represents the number of rows inserted into the table. In this case, that number is one.
 
-To retrieve rows from a table, use the `Table` method. This method returns a collection of objects (which may be empty):
+To retrieve rows from a table, use the `Table` method. This method returns a collection of objects (which might be empty):
 
 ```csharp
 public List<User> GetAllUsers()
