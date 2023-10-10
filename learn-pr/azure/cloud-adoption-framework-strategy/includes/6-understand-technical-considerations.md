@@ -1,4 +1,4 @@
-To prepare for executing your digital-transformation strategy, it's important to understand the technical considerations that will drive the implementation of the strategy. This unit helps you evaluate those technical considerations through the selection and completion of your first technical project.
+To prepare for executing your digital-transformation strategy, it's important to understand the technical considerations that drive the implementation of the strategy. This unit helps you evaluate those technical considerations through the selection and completion of your first technical project.
 
 ## How does cloud pricing work?
 
@@ -26,13 +26,13 @@ Cloud billing models and offers differ from on-premises, and they can create mea
 
 **Azure Hybrid Benefit**: Reduce the costs of running your workloads in the cloud by using this licensing benefit. You can use your on-premises Software Assurance-enabled Windows Server and SQL Server licenses on Azure. This benefit applies to RedHat and SUSE Linux subscriptions, too. To learn more, see [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit?azure-portal=true).
 
-**Azure Spot Virtual Machines**: You can use Spot Virtual Machines with deep discounts for workloads that can be interrupted and don't need to complete within a specific time frame. For example, high-performance computing scenarios, batch processing jobs, visual rendering applications, dev and test environments, including continuous integration and continuous delivery workloads, or large-scale stateless applications. To learn more, see [Spot Virtual Machines](https://azure.microsoft.com/pricing/spot?azure-portal=true).
+**Azure Spot Virtual Machines**: You can use Spot Virtual Machines with deep discounts for workloads that can be interrupted and don't need to complete within a specific time frame. For example, high-performance computing scenarios, batch processing jobs, or visual rendering applications. Also, dev and test environments, including continuous integration and continuous delivery workloads, or large-scale stateless applications. To learn more, see [Spot Virtual Machines](https://azure.microsoft.com/pricing/spot?azure-portal=true).
 
 **Reservations**: Receive a discount on your workloads when you reserve your resources in advance. In return, Microsoft passes the savings on to you as discounts of up to 72 percent. For more information, see [Azure reservations](https://azure.microsoft.com/reservations?azure-portal=true).
 
 **Azure Dev/Test pricing**: Take advantage of discounted rates for your development and testing. Including, the Microsoft software charges on Azure Virtual Machines and special dev and test pricing on other services. For more information, see [Azure Dev/Test pricing](https://azure.microsoft.com/pricing/dev-test/#overview?azure-portal=true).
 
-**Extended security updates**: Receive continued support for SQL Server 2008 and SQL Server 2008 R2 in the cloud that have reached the end of their support lifecycle. You can migrate your on-premises SQL Server instances to Azure Virtual Machines, Azure SQL Database, or stay on-premises and purchase extended security updates. You receive free extended security patches by migrating to an Azure Virtual Machine. To learn more, see [Lifecycle FAQ: Extended Security Updates](/lifecycle/faq/extended-security-updates?azure-portal=true).
+**Extended security updates**: Receive continued support in the cloud for SQL Server 2008 and SQL Server 2008 R2 that have reached the end of their support lifecycle. You can migrate your on-premises SQL Server instances to Azure Virtual Machines, Azure SQL Database, or stay on-premises and purchase extended security updates. You receive free extended security patches by migrating to an Azure Virtual Machine. To learn more, see [Lifecycle FAQ: Extended Security Updates](/lifecycle/faq/extended-security-updates?azure-portal=true).
 
 ## Continually optimize your environment
 
@@ -93,10 +93,10 @@ Your first adoption project should align with your motivations and any defined a
 
 ## First-project expectations
 
-Your team's first adoption project will likely result in a production deployment of some kind, but it isn't always the case. Establish proper expectations early. Here are a few wise expectations to set for the first project:
+Your team's first adoption project is likely to result in a production deployment of some kind, but it isn't always the case. Establish proper expectations early. Here are a few wise expectations to set for the first project:
 
 - The project is a source of learning.
-- The project might result in production deployments, but it will probably require additional effort first.
+- The project might result in production deployments, but it's likely to require more effort first.
 - The output of the project is a set of clear requirements to provide a longer-term production solution.
 
 ## First-project examples
@@ -123,7 +123,7 @@ Here are other examples of first adoption projects:
 
 ## Align your partner strategy
 
-The Cloud Adoption Framework approaches cloud adoption as a self-service activity. The objective is to empower each of the teams supporting adoption through standardized approaches. In practice, you can't assume that a self-service approach will be sufficient for all adoption activities.
+The Cloud Adoption Framework approaches cloud adoption as a self-service activity. The objective is to empower each of the teams supporting adoption through standardized approaches. In practice, however, you can't assume that a self-service approach is sufficient for all adoption activities.
 
 Successful cloud-adoption programs typically involve at least one level of support. Some cloud-adoption efforts might require support from multiple partners working together toward a common goal.
 
@@ -165,15 +165,15 @@ You aren't alone in your cloud journey. There are several options to support you
 
 ## Azure solution providers
 
-Microsoft-certified solution providers specialize in providing modern customer solutions base on Microsoft technologies across the world. Optimize your business in the cloud with help from an experienced partner.
+Microsoft-certified solution providers specialize in providing modern customer solutions based on Microsoft technologies across the world. Optimize your business in the cloud with help from an experienced partner.
 
-[Find a Cloud Solution Provider (CSP)](https://www.microsoft.com/solution-providers/home). A certified CSP can help take full advantage of the cloud by assessing business goals for cloud adoption, identifying the right cloud solution that meets business needs and helps the business become more agile and efficient.
+[Find a Cloud Solution Provider (CSP)](https://www.microsoft.com/solution-providers/home). A certified CSP can help you take full advantage of the cloud by assessing business goals for cloud adoption and identifying the right cloud solution to meet your business needs. A CSP can help your business become more agile and efficient.
 
-Azure MSPs have undergone a third-party audit to validate a higher tier of capability, demonstrated through certified staff headcounts, customer references, annual consumption of Azure at scale, and other criteria.
+Azure MSPs undergo a third-party audit to validate a higher tier of capability. They're evaluated on criteria such as, certified staff headcounts, customer references, and annual consumption of Azure at scale.
 
-[Find a managed services partner](https://www.microsoft.com/solution-providers/home?cacheid=16a3b49b-fef2-449d-bdf0-628008114cca?azure-portal=true). An Azure MSP helps a business transition to Azure by guiding all aspects of the cloud journey. From consulting to migrations and operations management, cloud MSPs show customers all the benefits that come with cloud adoption. They also act as a one-stop shop for common support, provisioning, and the billing experience, all with a flexible pay-as-you-go business model.
+[Find a managed services partner](https://www.microsoft.com/solution-providers/home?cacheid=16a3b49b-fef2-449d-bdf0-628008114cca?azure-portal=true). An Azure MSP helps a business transition to Azure by guiding all aspects of the cloud journey. A Cloud MSP shows customers all the benefits that come with cloud adoption, from consulting to migrations and operations management. They also act as a one-stop shop for common support, provisioning, and the billing experience, all with a flexible pay-as-you-go business model.
 
-In parallel to the development of the cloud-adoption strategy, the cloud strategy team should start to identify solution providers that can partner in the delivery of business objectives.
+The cloud strategy team should start to identify solution providers that can partner in the delivery of business objectives while developing the cloud-adoption strategy.
 
 ## FastTrack for Azure
 
@@ -201,7 +201,7 @@ If you have questions or need help, [create a support request](https://ms.portal
 
 ## Shortlist of partner options
 
-During strategy development, it's hard to define specific partnership needs. During development of the cloud adoption plan and skilling plan, those needs will come into focus.
+During strategy development, it's hard to define specific partnership needs. During development of the cloud adoption plan and skilling plan, those needs come into focus.
 
 But, based on the culture and maturity of your team, it might be possible to decide on a partnership option that is more aligned with your expected needs.
 
@@ -209,11 +209,9 @@ Choose one or more of these partnership options to narrow down the options to in
 
 ## Begin contract and paperwork reviews
 
-As the shortlist of options is reviewed, there will likely be one or more partners that stand out. If there's a clear leader among the partners, start the process to review contracts and paperwork with the partner.
+As the shortlist of options is reviewed, there's likely to be one or more partners that stand out. If there's a clear leader among the partners, start the process to review contracts and paperwork with the partner.
 
-The contracting process can take time. Reviewing legal terms ahead of time can remove one barrier to engagement when your teams need help the most.
-
-This is especially true if your company requires vendors to be added to an approved vendor list.
+The contracting process can take time. Reviewing legal terms ahead of time can remove one barrier to engagement when your teams need help the most. Especially, if your company requires vendors to be added to an approved vendor list.
 
 ## Record your observations
 
