@@ -2,7 +2,7 @@
 uid: learn.wwl.create-computer-vision-solutions-azure-ai
 metadata:
   title: Create computer vision solutions with Azure AI Vision
-  description: Create computer vision solutions with Azure AI Vision
+  description: How to create computer vision solutions with Azure AI Vision
   ms.date: 10/10/2023
   author: wwlpublish
   ms.author: berryivor
@@ -37,4 +37,4 @@ modules:
 - learn.wwl.detect-analyze-recognize-faces
 - learn.wwl.analyze-video
 trophy:
-  uid: learn.wwl.create-computer-vision-solutions-azure-cognitive-services.trophy
+  uid: learn.wwl.create-computer-vision-solutions-azure-ai.trophy
