@@ -102,7 +102,7 @@ Like Azure SQL Managed Instance and Azure SQL Database, SQL Server 2022 supports
 
 One of the benefits of Microsoft Entra is support for advanced authentication methods, such as multi-factor authentication. SQL Server 2022 supports the following Microsoft Entra authentication methods:
 
-- Microsoft Entra Password
+- Microsoft Entra password
 - Microsoft Entra integrated
 - Microsoft Entra multifactor authentication (MFA)
 - Microsoft Entra access token
