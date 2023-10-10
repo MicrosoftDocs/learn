@@ -21,11 +21,11 @@ These credentials and URL need to be transferred to your Unity project, so that 
 1. Navigate to the **Credentials** folder in the Unity project panel: **Assets** > **ScriptableObjects** > **AzureDigitalTwin** > **Credentials**.
 1. Create a scriptable object for the credentials by selecting **Assets** > **Create** > **ScriptableObjects** > **Credentials** > **ADT Rest API Credentials**.
 
-   :::image type="content" source="../media/create-credential-asset.png" alt-text="Screenshot of the Unity assets menu open showing the create, scriptable objects, credentials, adt rest api credentials menu selection.":::
+   :::image type="content" source="../media/create-credential-asset.png" alt-text="Screenshot of the Unity assets menu open showing Create > ScriptableObjects > Credentials > ADT Rest API Credentials menu selection.":::
 
 1. Select the newly created scriptable object in the project panel to see its configuration parameters in the **Inspector** panel. Transfer the values based on the variable mapping in the previous section from the *AppCredentials.txt* file.
 
-   :::image type="content" source="../media/credentials-scriptable-object.png" alt-text="Screenshot of the ADT rest api credentials in the Inspector.":::
+   :::image type="content" source="../media/credentials-scriptable-object.png" alt-text="Screenshot of the ADT Rest API Credentials in the Inspector.":::
 
 ## Add turbine alert controller
 
@@ -44,6 +44,6 @@ To add turbine alert controller to your scene and authenticate:
 
 1. Select the **Adt Connection Info** property and assign the **ADTRestAPICredentials** scriptable object.
 
-   :::image type="content" source="../media/adt-turbine-controller-rest-api-so.png" alt-text="Screenshot of the ADT rest api credentials scriptable object in the Unity assets folder.":::
+   :::image type="content" source="../media/adt-turbine-controller-rest-api-so.png" alt-text="Screenshot of the ADT Rest API Credentials scriptable object in the Unity assets folder.":::
 
 1. Save your file with **File** > **Save**.
