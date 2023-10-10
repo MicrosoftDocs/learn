@@ -1,4 +1,4 @@
-The purpose of Azure Monitoring alerts is to  notify you proactively when Azure Monitor data indicates there might be a problem. Alerts can notify you of problems with your infrastruture of applications before a problem becomes one for your users.
+The purpose of Azure Monitoring alerts is to  notify you proactively when Azure Monitor data indicates there might be a problem. Alerts can notify you of problems with your infrastructure of applications before a problem becomes one for your users.
 
 You are in IT Operations at Tailwind Traders. As part of your job, you want to ensure you’re using the best tools to stay informed about issues that may affect your applications and infrastructure before those issues occur. You decide that Azure Monitor alerts and responses would give you the means to successfully accomplish this.
 
