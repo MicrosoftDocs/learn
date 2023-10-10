@@ -27,7 +27,7 @@ To support the Azure App Service on Kubernetes with Azure Arc, deploy a supporte
 - Run a supported Kubernetes version 1.20.x or newer.
 - Kubectl version 1.20.x or newer.
 - Feature a load balancer as its front-end service.
-- Have Azure AD enabled.
+- Have Microsoft Entra ID enabled.
 - Constitute an approved Azure App Service on Kubernetes with Azure Arc distribution.
 
 Use the following steps to deploy an AKS cluster that supports Azure App Service on Kubernetes with Azure Arc:
@@ -53,10 +53,10 @@ Use the following steps to deploy an AKS cluster that supports Azure App Service
 
 ## Task 2: Connect to the AKS cluster
 
-The AKS cluster you deployed is Azure AD enabled. Therefore, you've got the option to use a device code-based login to authenticate. However, to keep it simple, you'll instead retrieve the cluster's admin credentials by using the Azure Kubernetes Service Cluster Admin built-in role:
+The AKS cluster you deployed is Microsoft Entra ID enabled. Therefore, you've got the option to use a device code-based login to authenticate. However, to keep it simple, you'll instead retrieve the cluster's admin credentials by using the Azure Kubernetes Service Cluster Admin built-in role:
 
 > [!NOTE]
-> For more information about AKS integration with Azure AD, refer to [AKS-managed Azure Active Directory integration](/azure/aks/managed-aad).
+> For more information about AKS integration with Microsoft Entra ID, refer to [AKS-managed Microsoft Entra integration](/azure/aks/managed-aad).
 
 1. Run the following command to retrieve the admin credentials from the cluster and merge them into your local kubeconfig file:
 
