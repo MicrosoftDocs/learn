@@ -2,30 +2,9 @@ Missing data refers to the lack of values in certain variables within a dataset.
 
 Handling missing data is a crucial aspect of the preprocessing phase in a machine learning project, and the way you treat them can significantly affect the performance of your model.
 
-Back to our house prices scenario, once we have our DataFrame `df` from the previous unit, we can then proceed to introduce missing values.
-
-```python
-import random
-import numpy as np
-
-# Set the seed
-np.random.seed(0)
-
-# Define the number of missing values
-num_missing = 100
-
-# Randomly choose indices of the DataFrame
-idx = [(row, col) for row in range(df.shape[0]) for col in range(df.shape[1])]
-for row, col in random.sample(idx, num_missing):
-    df.iat[row, col] = np.nan
-```
-
-This code randomly selects and replaces the corresponding data in the dataframe with `NaN` to represent missing values.
-
->[!Note]
-> You'll likely get different results if you run the code multiple times. You can control this process by setting a *seed* value with `random.seed(0)`. This is very useful for testing and debugging in the model building phase, as it allows you to reproduce the same results.
-
 ## Check for missing data
+
+Back to the scenario of house prices from the previous unit, let’s suppose we encounter missing values in our `df` dataframe that require attention.
 
 To check for missing data in Data Wrangler, you need to first launch Data Wrangler from a Microsoft Fabric notebook. Once there, you have a few options.
 
@@ -75,7 +54,7 @@ Understanding these methods can help you choose the most appropriate strategy fo
 | **Propagate backward** | Fills missing values with the next valid value in the dataset. Also known as *backward fill*. |
 | **Custom value** | Replaces missing values with a user-defined constant value. This can be any value that makes sense in the context of the data. |
 
-The following steps show how to fill or impute missing values in the targeted columns using the median.
+The following steps show how to fill or impute missing values in the targeted columns using the median, for example.
 
 1. On the **Operations** panel, select **Find and replace**, and then select **Fill missing values**.
 1. Select the **YearBuilt** column, and then select the **Median** fill method.

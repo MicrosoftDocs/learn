@@ -2,7 +2,7 @@ While many operators in Data Wrangler are intuitive and easy to use, others requ
 
 ## Use one-hot encoding operator
 
-Some machine learning models, such as linear regression, require all input and output variables to be numeric and don't support categorical variables. Categorical data means variables that have labels, not numbers.
+Some machine learning models, such as linear regression, require all input and output variables to be numeric and don't support categorical variables. Categorical data refers to variables that are divided into multiple categories which don't carry a numerical value or order.
 
 In [one-hot encoding](/dotnet/machine-learning/how-to-guides/prepare-data-ml-net#work-with-categorical-data?azure-portal=true), each category in a feature is represented as a binary vector of 1's and 0's. 
 
@@ -81,6 +81,8 @@ Then, the following steps show how to use the multi-label binarizer operator for
 ## Use min-max scaling operator
 
 [Min-max scaling or min-max normalization](/dotnet/machine-learning/how-to-guides/prepare-data-ml-net#min-max-normalization?azure-portal=true) is the process of transforming a numerical feature. This process scales the range of your data while preserving the shape of the original distribution and the relationships among variables.
+
+It ensures that the significance of a feature is determined by its relative value, not its absolute value. In other words, features are not considered more important simply because they have larger scales.
 
 It takes each value in your data, subtracts the minimum value of that data, and then divides by the range of the data (the maximum value minus the minimum value). 
 

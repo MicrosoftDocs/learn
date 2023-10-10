@@ -1,4 +1,3 @@
-
 Data Wrangler facilitates the exploration of your data with an easy-to-use grid interface that dynamically present summary statistics of your data.
 
 Through the visual exploration of summary statistics, data scientists are able to select the appropriate statistical or machine learning models that best fit the data. For example, some models assume that the data is normally distributed and may not perform well if this assumption is violated.
@@ -35,7 +34,7 @@ df = pd.DataFrame(data)
 
 To view summary statistics for the `df` dataframe, select **Data** in the notebook ribbon, and then choose **Launch Data Wrangler** for the `df` dataframe. 
 
-:::image type="content" border="false" source="../media/3-summary-statistics.png" alt-text="Screenshot of the summary statistics in Data Wrangler.":::
+:::image type="content" border="false" source="../media/3-summary-statistics.png" alt-text="Screenshot of the summary statistics in Data Wrangler." lightbox="../media/3-summary-statistics.png":::
 
 For numerical variables, the grid displays a histogram, counts of missing and unique values, as well as the minimum and maximum values. When it comes to categorical variables, the grid offers insights into the proportion of each category within the variable.
 
@@ -47,13 +46,13 @@ Alternatively, you can apply aggregation in your data using the **Group by and a
 
 For our house prices scenario, imagine that we need the average of house price by type.
 
-:::image type="content" border="false" source="../media/3-aggregation.png" alt-text="Screenshot of the group by and aggregate operator in Data Wrangler.":::
+:::image type="content" border="false" source="../media/3-aggregation.png" alt-text="Screenshot of the group by and aggregate operator in Data Wrangler." lightbox="../media/3-aggregation.png":::
 
 In just a few seconds, we can configure the group by and aggregate operator, where the code is automatically generated for you. Also, the grid shows the new data in green, and the columns to be removed in red. 
 
 Once the operator is applied, this is how your final grid should appear.
 
-:::image type="content" border="false" source="../media/3-aggregation-grid.png" alt-text="Screenshot of the results after applying the group by and aggregate operator in Data Wrangler.":::
+:::image type="content" border="false" source="../media/3-aggregation-grid.png" alt-text="Screenshot of the results after applying the group by and aggregate operator in Data Wrangler." lightbox="../media/3-aggregation-grid.png":::
 
 At this point, you can decide to generate the code or download the transformed dataframe as a comma-separated values (CSV) file.
 

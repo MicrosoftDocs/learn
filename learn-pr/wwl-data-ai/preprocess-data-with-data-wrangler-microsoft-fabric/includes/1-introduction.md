@@ -4,7 +4,7 @@ In a typical data science project, it's a common practice to start with the Expl
 
 Once you have this understanding, you can move on to the preprocessing phase. This is where you address the data quality issues identified during EDA and prepare your data for modeling. Preprocessing transforms raw data into an understandable format for machine learning algorithms, which improves their ability to make accurate predictions.
 
-[Data Wrangler](/en-us/fabric/data-science/data-wrangler?azure-portal=true) provides a graphical experience where you can easily generate code for exploration and preprocessing purposes, and ensures that your data is in the best possible shape before it’s used to train a machine learning model.
+[Data Wrangler](/en-us/fabric/data-science/data-wrangler?azure-portal=true) in Microsoft Fabric provides a graphical experience where you can easily generate code for exploration and preprocessing purposes, and ensures that your data is in the best possible shape before it’s used to train a machine learning model.
 
 ## Understand the data science process
 
