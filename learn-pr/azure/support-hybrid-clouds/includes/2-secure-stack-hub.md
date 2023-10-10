@@ -6,7 +6,7 @@ Azure Stack Hub (formerly Azure Stack) is an integrated system of software and v
 
 Azure Stack Hub can accommodate up to 16 physical servers per Azure Stack Hub scale unit. It represents an extension of Azure, enabling customers to provision various IaaS and PaaS services and effectively bring multi-tenant cloud technology to on-premises and edge environments.
 
-Customers can run many types of VM instances, App Services, Containers (including Cognitive Services containers), Functions, Azure Monitor, Key Vault, Event Hubs, and other services. All while using the same development tools, APIs, and management processes they use in Azure. Azure Stack Hub isn’t dependent on connectivity to Azure to run deployed applications and enable operations via local connectivity.
+Customers can run many types of VM instances, App Services, Containers (including Azure AI services containers), Functions, Azure Monitor, Key Vault, Event Hubs, and other services. All while using the same development tools, APIs, and management processes they use in Azure. Azure Stack Hub isn’t dependent on connectivity to Azure to run deployed applications and enable operations via local connectivity.
 
 ## Tactical Azure Stack Hub
 

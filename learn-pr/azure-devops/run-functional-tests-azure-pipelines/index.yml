@@ -7,10 +7,10 @@ metadata:
   author: steved0x
   ms.author: sdanie
   ms.custom: devdivchpfy22
-  ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
+  ms.topic: module-standard-task-based
   ms.service: azure-devops-pipelines
   ms.subservice: azure-devops-pipelines-test
+  manager: mijacobs
 title: Run functional tests in Azure Pipelines
 summary: Run Selenium UI tests, a form of functional testing, in Azure Pipelines.
 abstract: |

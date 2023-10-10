@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.service: storage
+  ms.service: azure-storage
 title: Migrate file server workloads using Storage Migration Service
 summary: Learn to use Storage Migration Service to migrate files and files shares from existing file server to new servers running Windows Server 2022. Configure storage migration for optimum performance of data migration.
 abstract: |

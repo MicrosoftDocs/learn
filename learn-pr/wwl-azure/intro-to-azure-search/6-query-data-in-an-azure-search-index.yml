@@ -3,12 +3,12 @@ uid: learn.azure-introduction-to-azure-search.6-query-data-in-an-azure-search-in
 title: Query data in an Azure Cognitive Search index
 metadata:
   title: Query data in an Azure Cognitive Search index
-  description: "Write simple search queries in the Search explorer, then append extra parameters to manipulate those results"
-  ms.date: 09/02/2022
+  description: "Query data in an Azure Cognitive Search index"
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

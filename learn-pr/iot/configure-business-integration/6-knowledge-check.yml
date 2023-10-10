@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-business-integration.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of Configure business integration in Azure IoT Central
+  ms.date: 05/11/2023
+  author: dominicbetts
+  ms.author: dobett
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.prod: azure-iot-central
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices accurately describes how rules are used within an IoT Central application?"
+    choices:
+    - content: "Rules in IoT Central perform a set of actions that will be applied equally to all devices in your solution and ensure consistent behavior for the full fleet of devices."
+      isCorrect: false
+      explanation: "Incorrect. Rules are applied on a device-by-device basis when a condition is met, actions are not applied to all devices unless all devices meet the condition."
+    - content: "Rules in IoT Central allow you to further refine what actions are performed when a filter is specified."
+      isCorrect: false
+      explanation: "Incorrect. Rules use conditions (not filters) to determine when an action should be taken."
+    - content: "Rules in IoT Central serve as a customizable response tool that triggers on actively monitored events from connected devices."
+      isCorrect: true
+      explanation: "Correct. Rules and actions work closely together to automate tasks within the application. When a rule condition is met, it triggers an action defined by the developer."
+  - content: "What is the purpose of a dashboard within an Azure IoT Central solution?"
+    choices:
+    - content: "The dashboard is the home page for IoT Central that enables you to create your IoT Central app."
+      isCorrect: false
+      explanation: "Incorrect. A dashboard is not used to create an IoT Central app."
+    - content: "A dashboard is a customizable page that displays telemetry, property, and state information for selected devices."
+      isCorrect: true
+      explanation: "Correct. A dashboard, either personal or for an organization, is a page that displays telemetry, property, and state information for selected devices."
+    - content: "The dashboard is the IoT Central page that exposes marketplace items that you can add to your solution."
+      isCorrect: false
+      explanation: "Incorrect. The Azure Marketplace, accessed through the Azure portal, exposes marketplace items that you can add to your solution."

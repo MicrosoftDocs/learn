@@ -24,10 +24,10 @@ roles:
 - security-engineer
 - solution-architect
 products:
-- azure-iot-security-center
-- azure-security-center
+- azure
+- defender-for-cloud
 - m365-security-center
-- m365-ems-cloud-app-security
+- defender-for-cloud-apps
 subjects:
 - threat-protection
 units:

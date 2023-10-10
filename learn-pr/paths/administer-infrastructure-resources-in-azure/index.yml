@@ -30,7 +30,8 @@ subjects:
 - cloud-computing
 modules:
 - learn.introduction-to-azure-virtual-machines
-- learn.create-linux-vm-in-azure
+- learn.plan-your-linux-environment-in-azure
+- learn.provision-linux-virtual-machine-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.manage-vms-with-azure-cli
 - learn.keep-your-virtual-machines-updated

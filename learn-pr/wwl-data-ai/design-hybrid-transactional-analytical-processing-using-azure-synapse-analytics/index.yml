@@ -3,11 +3,10 @@ uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-syn
 metadata:
   title: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
   description: "Plan hybrid transactional and analytical processing using Azure Synapse Analytics"
-  ms.date: 01/11/2023
+  ms.date: 06/26/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.service: synapse-analytics
 title: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
 summary: Learn how hybrid transactional / analytical processing (HTAP) can help you perform operational analytics with Azure Synapse Analytics.
 abstract: |

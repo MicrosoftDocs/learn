@@ -2,7 +2,7 @@ As the solution architect for the manufacturing company, you now want to start m
 
 In this unit, you'll configure a network security group and security rules to restrict network traffic to specific servers. You want your app server to be able to connect to your database server over HTTP. You don't want the database server to be able to use HTTP to connect to the app server.
 
-![Diagram of exercise scenario network security groups.](../media/3-exercise-first-task.svg)
+:::image type="content" source="../media/3-exercise-first-task.svg" alt-text="Diagram of exercise scenario network security groups.":::
 
 ## Create a virtual network and network security group
 
@@ -58,7 +58,7 @@ Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy 
         --vnet-name ERP-servers \
         --subnet Applications \
         --nsg ERP-SERVERS-NSG \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --size Standard_DS1_v2 \
          --generate-ssh-keys \
         --admin-username azureuser \
@@ -77,7 +77,7 @@ Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy 
         --subnet Databases \
         --nsg ERP-SERVERS-NSG \
         --size Standard_DS1_v2 \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --generate-ssh-keys \
         --admin-username azureuser \
         --custom-data cloud-init.yml \

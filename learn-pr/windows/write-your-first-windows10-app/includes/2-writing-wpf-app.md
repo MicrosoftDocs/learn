@@ -11,17 +11,17 @@ In this unit, we:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NFxG]
 
 > [!NOTE]
-> We're assuming you've set up your computer with Windows 10 and Visual Studio, as described in the Learn module *Introduction to Windows 10 development*.
+> We're assuming you've set up your computer with Windows and Visual Studio, as described in the Learn module *Introduction to Windows 10 development*.
 
 ### WPF "Say hello" tutorial
 
 #### Create the project
 
-1. Open Visual Studio and select **File** > **New** > **Project** from the menu. Select **Visual C#** as the project language. Next, select the **WPF App (.NET Framework)** project type, and, in the **Name** field, enter a friendly name like **Say hello**. Select **Next** when you're done.
+1. Open Visual Studio and select **File** > **New** > **Project** from the menu. Select **C#** as the project language. Next, select the **WPF Application** project type, and, in the **Name** field, enter a friendly name like **Say hello**. Select **Next** when you're done.
 
     :::image type="content" source="../media/2-create-wpf-app.png" alt-text="Screenshot that shows the Configure your new project window for a WPF App with the Next button selected.":::
 
-2. Select your **.NET Framework** version, and then select **Create**.
+2. Select your **.NET** version, and then select **Create**.
 
 3. When the project opens, it's a good idea to make sure that the **Solution Explorer** and **Properties** panes are open. They're located, by default, on the right side of the Visual Studio window. If they aren't visible, open the **View** menu and select both of them.
 
@@ -42,37 +42,39 @@ In this unit, we:
     > [!NOTE]
     > Notice how button and **TextBox** entries are added to **&lt;Grid&gt;** in the XAML definition that displays below the layout.
 
-3. Now we want to set some properties on these UI elements. Select the button so that its properties appear in the **Properties** pane. Change the **Name** to something simple like **SayHelloButton**, and change the **Content** in the **Common** properties to **Say hello**.
+3. Next, we want to update the text that appears in the title bar of the window. Select the **Window** in the designer layout so that its properties are visible in the **Properties** pane, and then, change the **Title** to **Say hello**.
+
+4. Now we want to set some properties on the new UI elements. Select the button so that its properties appear in the **Properties** pane. Change the **Name** to something simple like **SayHelloButton**, and change the **Content** in the **Common** properties to **Say hello**.
 
     ![Screenshot that shows the Name and Content properties set in the Properties window.](../media/wpf-button-properties-a.png)
 
-4. We need to attach an event to the button. You can select the button itself, but that only works if the designer layout is in the required state. A more certain way to enter an event is to open the events available for that UI item. You do that by selecting the lightning bolt icon shown here in the **Properties** pane and then simply selecting the entry for the **Click** event. Doing so automatically creates the named event **SayHelloButton_Click**, adds the appropriate code entry in the MainWindow.xaml.cs file, and opens the file for you.
+5. We need to attach an event to the button. You can select the button itself, but that only works if the designer layout is in the required state. A more certain way to enter an event is to open the events available for that UI item. You do that by selecting the lightning bolt icon shown here in the **Properties** pane and then simply selecting the entry for the **Click** event. Doing so automatically creates the named event **SayHelloButton_Click**, adds the appropriate code entry in the MainWindow.xaml.cs file, and opens the file for you.
 
     ![Screenshot that shows the Events pane selected in the Properties window, and the Click event in a red box.](../media/wpf-button-events-a.png)
 
-5. We don't enter any code yet, so select **MainWindow.xaml** in the main view. Keep working on the UI for now.
+6. We don't enter any code yet, so select **MainWindow.xaml** in the main view. We're continuing to work on the UI for now.
 
-6. Select the text box you created in the designer to bring up its properties. We're going to make quite a few changes to the properties for the text box. If the events are showing in the **Properties** pane, select the wrench icon next to the name to return to the named properties.
+7. Select the text box you created in the designer to bring up its properties. We're going to make quite a few changes to the properties for the text box. If the events are showing in the **Properties** pane, select the wrench icon next to the name to return to the named properties.
 
-7. Change the **Name** entry to **textBox1**, and then, in the **Layout** properties, change **Width** and **Height** to **360** and **80**, respectively.
+8. Change the **Name** entry to **textBox1**, and then, in the **Layout** properties, change **Width** and **Height** to **360** and **80**, respectively.
 
     ![Screenshot that shows the Layout properties of Width and Height set in the Properties window.](../media/wpf-properties-layout-a.png)
 
-8. Collapse the **Layout** section.
+9. Collapse the **Layout** section.
 
-9. In the **Text** size list, change the point size to **36**: something nice and visible!
+10. In the **Text** size list, change the point size to **36**: something nice and visible!
 
     ![Screenshot that shows the Name set as textBox1 in the properties, and the Tex tab open with 36px selected as the text size.](../media/wpf-properties-text1-a.png)
 
-10. The font tab, labeled with an **A**, is open by default for the **Text** section. Select the paragraph icon and change the alignment to **Center**.
+11. The font tab, labeled with an **A**, is open by default for the **Text** section. Select the paragraph icon and change the alignment to **Center**.
 
     ![Screenshot that shows the paragraph tab under the Text menu selected, and Center selected as the paragraph justification.](../media/wpf-properties-text2-a.png)
 
-11. Collapse the **Text** section and expand **Appearance**. Select the down arrow at the bottom of the exposed list of appearance properties to expose the full list. Change the border thickness to **1** for the left and top borders and to **8** for the right and bottom borders. Now the box has a bit of a drop shadow effect!
+12. Collapse the **Text** section and expand **Appearance**. Select the down arrow at the bottom of the exposed list of appearance properties to expose the full list. Change the border thickness to **1** for the left and top borders and to **8** for the right and bottom borders. Now the box has a bit of a drop shadow effect!
 
     ![Screenshot that shows the Appearance menu expanded in the Properties window, with the BorderThickness settings in a red box.](../media/wpf-properties-appearance-a.png)
 
-12. Collapse **Appearance** and expand **Common**. Enter the text for the text box: something friendly like **Hello there!**.
+13. Collapse **Appearance** and expand **Common**. Enter the text for the text box: something friendly like **Hello there!**.
 
     ![Screenshot that shows the Common menu expanded in the Properties window, with Hello there entered in the Text property.](../media/wpf-properties-common-a.png)
 
@@ -90,7 +92,6 @@ You're almost finished with the UI elements for your app. The **&lt;Grid&gt;** e
     ```csharp
     public partial class MainWindow : Window
     {
-
         public MainWindow()
         {
             InitializeComponent();
@@ -103,7 +104,7 @@ You're almost finished with the UI elements for your app. The **&lt;Grid&gt;** e
     }
     ```
 
-2. Let's make sure we have all the necessary **using** statements. Make sure you have the ones shown here, and add them if you don't. You can optionally remove any unnecessary **using** statements that Visual Studio included when it created the project. (Unused namespaces appear in gray.)
+2. Let's make sure we have all the necessary **using** statements. Make sure you have the ones shown here, and add them if you don't. After you're finished editing the file, you can optionally remove any unnecessary **using** statements that Visual Studio included when it created the project. (Unused namespaces appear in gray.)
 
     ```csharp
     using System;
@@ -111,12 +112,12 @@ You're almost finished with the UI elements for your app. The **&lt;Grid&gt;** e
     using System.Windows.Media;
     ```
 
-3. The app renders the hello text in a random color each time the button is selected. So we need to add a global **Random** object and the **GetRandomBytes** method that randomly fills in values that we use as RGB settings. Copy and paste this code, or type it in yourself, so that your **class MainWindow** looks like this:
+3. The app renders the hello text in a random color each time the button is selected. So we need to add a class-level **Random** object and the **GetRandomBytes** method that randomly fills in values that we use as RGB settings. Copy and paste this code, or type it in yourself, so that your **class MainWindow** looks like this:
 
     ```csharp
     public partial class MainWindow : Window
     {
-        Random rand;
+        private Random rand;
 
         public MainWindow()
         {
@@ -126,7 +127,7 @@ You're almost finished with the UI elements for your app. The **&lt;Grid&gt;** e
 
         private byte[] GetRandomBytes(int n)
         {
-            //  Fill an array of bytes of length "n" with random numbers.
+            // Fill an array of bytes of length "n" with random numbers.
             var randomBytes = new byte[n];
             rand.NextBytes(randomBytes);
             return randomBytes;
@@ -146,10 +147,10 @@ You're almost finished with the UI elements for your app. The **&lt;Grid&gt;** e
         {
             byte[] rgb = GetRandomBytes(3);
 
-            //  Create a solid color brush using the three random numbers.
+            // Create a solid color brush using the three random numbers.
             var randomColorBrush = new SolidColorBrush(Color.FromArgb(255, rgb[0], rgb[1], rgb[2]));
 
-            //  Set both the text color and the text box border to the random color.
+            // Set both the text color and the text box border to the random color.
             textBox1.BorderBrush = randomColorBrush;
             textBox1.Foreground = randomColorBrush;
         }

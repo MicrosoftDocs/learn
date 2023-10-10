@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.identification-authentication-failures
+title: Identification and authentication failures
+metadata:
+  title: identification-authentication-failures
+  description: "OWASP Top 10 for .NET Developers. Identification and authentication failures."
+  ms.date: 06/12/2023
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-identification-authentication-failures.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:        
+  - content: "You support a legacy web app hosted in Azure. When browsing the codebase, you stumbled upon a hardcoded database connection string with username and password to a production environment database. What would be the correct course of action?"
+    choices:
+    - content: "Find the authors of the change with git blame and ask them to fix it when they have some spare time"
+      isCorrect: false
+      explanation: "Changes are, whoever checked in the commit, might no longer be part of your team or even the same company."
+    - content: "Change password for username referenced in connection string. Open a pull request with hardcoded connection string now being obtained from Azure KeyVault."
+      isCorrect: true
+      explanation: "Secret rotation is a good practice. Azure KeyVault is the go-to service for storing secrets, certificates and keys and in most secure fashion. Avoid blame games."
+    - content: "The connection string is only referenced in Git and code, no one can access it since only the web app is available to the public so nothing needs to be done."
+      isCorrect: false
+      explanation: "Secret scanning can ensure no secrets make their way into the repository. Access to the codebase and the CI/CD system can be compromised leading to exposure of connection string."

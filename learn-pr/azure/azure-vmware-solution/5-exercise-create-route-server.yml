@@ -1,4 +1,4 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.azure-vmware-solution.exercise-create-route-server
 title: Exercise - create and configure Azure Route Server
 metadata:
@@ -8,6 +8,8 @@ metadata:
   author: Mahesh-MSFT
   ms.author: maksh
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: azure-vmware-solution
 durationInMinutes: 10
 content: |

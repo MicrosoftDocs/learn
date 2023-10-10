@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Python error handling
   description: Use effective techniques for error handling in Python. Catching exceptions, raising new ones, and updating error messages are essential for robust Python projects.
-  ms.date: 12/10/2021
+  ms.date: 06/07/2023
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
@@ -19,8 +19,10 @@ abstract: |
     - Raise exceptions with useful error messages.
     - Use exceptions to control a program's flow.
 prerequisites: |
-  - Basic programming knowledge, like using and assigning variables
-  - Some experience with using Jupyter notebooks, including adding and modifying code
+  - Basic programming knowledge, like using and assigning variables.
+  - Some experience with using Jupyter notebooks, including adding and modifying code.
+  - (Optional) [Visual Studio Code](https://visualstudio.microsoft.com/downloads/)
+  - [Git](https://git-scm.com/downloads)
 iconUrl: /training/achievements/python-error-handling.svg
 levels: 
   - beginner

@@ -3,10 +3,10 @@ uid: learn.tensorflow.intro-machine-learning-tensorflow.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
+  description: Learn how to implement TensorFlow model, training, evaluation, and prediction by using lower-level concepts.
   author: bstollnitz
   ms.author: bstollnitz
-  ms.date: 07/07/2021
+  ms.date: 07/24/2023
   ms.topic: interactive-tutorial
   ms.product: learning-tensorflow
   ms.contributors: bstollnitz-08202021

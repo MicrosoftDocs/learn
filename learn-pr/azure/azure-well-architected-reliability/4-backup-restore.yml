@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-reliability.4-backup-restore
-title: Protect your data with backup and restore
+title: Processes for backup and restore
 metadata:
-  title: Protect your data with backup and restore
-  description: Protect your data with backup and restore
+  title: Processes for backup and restore
+  description: Use backup and restore to help protect your data by defining requirements, testing processes, and learning about Azure backup and restore services.
   ms.date: 05/19/2020
   author: robbyatmicrosoft
   ms.author: martinek
@@ -15,27 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-
-  - content: 'True or false: all Azure data storage options include automatic backup of data?'
+  - content: "Do all Azure data storage options include automatic data backup?"
     choices:
-    - content: 'True'
+    - content: "Yes."
       isCorrect: false
-      explanation: "Not all Azure data storage products include automatic backup; for example, Azure Blobs do not."
-    - content: 'False'
+      explanation: "Some Azure data storage products, such as Azure Blob Storage, don't include automatic backups."
+    - content: "No."
       isCorrect: true
-      explanation: "Most Azure services offer integrated backup functionality, but it is not always enabled by default. You can also add services like Azure Backup Agent as needed to make sure all your data is protected."
-
-  - content: 'Why is it important to test restores regularly?'
+      explanation: "Most Azure services offer integrated backup, but it's not always enabled by default. You can add services like Azure Backup Agent as needed to make sure all your data is protected."
+  - content: "Which of the following goals doesn't directly relate to regular backup and restore process testing?"
     choices:
-    - content: 'To validate the integrity of your backups.'
+    - content: "Validate the integrity of your backups."
       isCorrect: false
-      explanation: 'Testing restores regularly does allow you to validate the integrity of your backups, but this is not the only correct choice.'
-    - content: 'To become familiar with the restoration process.'
+      explanation: "Regular restore testing lets you validate the integrity of your backups."
+    - content: "Become familiar with your restoration process."
       isCorrect: false
-      explanation: 'Testing restores regularly does allow you to become more familiar with the restoration process, but this is not the only correct choice.'
-    - content: 'To identify gaps in your backup and restore processes.'
+      explanation: "Testing restores regularly lets you become more familiar with the restoration process."
+    - content: "Identify gaps in your backup and restore processes."
       isCorrect: false
-      explanation: 'Testing restores regularly does help identify gaps in your backup and restore processes, but this is not the only correct choice.'
-    - content: 'All of the above.'
+      explanation: "Regular testing helps you identify gaps or problems in your backup and restore processes."
+    - content: "Determine the relative importance of your data types."
       isCorrect: true
-      explanation: 'All are benefits of regularly testing your restore process.'
+      explanation: "Determining your data types and their relative importance is part of backup and restore planning, not testing existing processes."

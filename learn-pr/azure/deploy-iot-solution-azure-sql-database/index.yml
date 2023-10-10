@@ -20,7 +20,6 @@ prerequisites: |
   - Familiarity with database concepts such as monitoring and querying
 iconUrl: /training/achievements/deploy-iot-solution-azure-sql-database.svg
 levels:
-- intermediate
 - advanced
 roles:
 - developer

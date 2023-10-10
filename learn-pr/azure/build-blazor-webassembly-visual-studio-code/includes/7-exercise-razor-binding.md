@@ -80,7 +80,11 @@ public class TodoItem
 }
 ```
 
+::: zone pivot="vscode"
+
 You may need to stop and restart the `dotnet watch run` process if it doesn't detect the new `TodoItem` file and rebuild your project.
+
+::: zone-end
 
 ## Bind a list of TodoItems
 

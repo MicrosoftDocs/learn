@@ -29,4 +29,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 2: Create and manage a project wiki.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M09_L21_Sharing_Team_Knowledge_using_Azure_Project_Wikis.html)
+](https://aka.ms/az-400-share-team-knowledge-using-azure-projectWikis)

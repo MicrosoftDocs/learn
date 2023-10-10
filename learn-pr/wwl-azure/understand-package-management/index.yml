@@ -3,11 +3,11 @@ uid: learn.wwl.understand-package-management
 metadata:
   title: Understand package management
   description: "Understand package management"
-  ms.date: 05/18/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 title: Understand package management
 summary: This module describes package feeds, common public package sources, and how to create and publish packages.
 abstract: |

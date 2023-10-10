@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-cognitive-services
 metadata:
-  title: Secure Cognitive Services
-  description: "Secure Cognitive Services"
+  title: Secure Azure AI Services
+  description: "Secure Azure AI Services"
   ms.date: 04/05/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
-title: Secure Cognitive Services
-summary: Securing Cognitive Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
+title: Secure Azure AI Services
+summary: Securing Azure AI Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
 abstract: |
   After completing this module, you will know how to:
-  - Consider authentication for Cognitive Services
-  - Manage network security for Cognitive Services
+  - Consider authentication for Azure AI Services
+  - Manage network security for Azure AI Services
 prerequisites: |
   - Active Azure subscription
   - Ability to navigate the Azure portal
@@ -30,7 +30,7 @@ roles:
 - student
 products:
 - azure-active-directory
-- azure-cognitive-services
+- ai-services
 subjects:
 - security
 units:

@@ -2,31 +2,32 @@
 uid: learn.azdo.deploy-azure-functions
 metadata:
   title: Automate Azure Functions deployments with Azure Pipelines
-  description: Implement a CI/CD pipeline for Azure Functions.
-  ms.date: 12/21/2022
+  description: Implement a CI/CD pipeline with Azure Pipelines for Azure Functions.
+  ms.date: 06/19/2023
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.service: azure-devops-pipelines
+  manager: mijacobs
 title: Automate Azure Functions deployments with Azure Pipelines
-summary: Implement a CI/CD pipeline for Azure Functions.
+summary: Create an Azure DevOps pipeline that builds and deploys an ASP.NET web app and an Azure Function app to Azure.
 abstract: |
   After completing this module, you'll be able to:
-  - Explain the benefits of Azure Functions and when to use them
-  - Extend a basic release pipeline to also deploy an Azure Function app
-  - Monitor the build, release, and deployment of your project
+  - Describe when to use Azure Functions for app development projects
+  - Create Azure App Service and Azure Functions environments
+  - Deploy to Azure App Service and Azure Functions simultaneously with Azure Pipelines
 prerequisites: |
+  - Ability to create a basic Azure DevOps pipeline and an understanding of the components of a pipeline (tasks, stages, jobs)
+  - Ability to navigate the Azure portal and run Cloud Shell commands 
   - An Azure subscription
-  - An Azure DevOps organization
+  - An Azure DevOps organization with access to parallel jobs
   - A GitHub account
 iconUrl: /training/achievements/azure-devops/deploy-azure-functions.svg
 levels:
-- beginner
+- intermediate
 roles:
 - devops-engineer
-- administrator
 - developer
-- solution-architect
 products:
 - azure
 - azure-devops

@@ -3,19 +3,20 @@ uid: learn.azure.capture-application-logs-app-service
 metadata:
   title: Capture Web Application Logs with App Service Diagnostics Logging
   description: Learn about how to capture trace output from your Azure web apps. View a live log stream and download logs files for offline analysis.
-  ms.date: 03/20/2019
+  ms.date: 08/15/2023
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.service: app-service
+  manager: mijacobs
 title: Capture Web Application Logs with App Service Diagnostics Logging
 summary: Use application logs in Azure Web Apps to help debug web app code.
-abstract: | 
+abstract: |
   In this module, you will:
   - Enable application logging on an Azure Web App
   - View live application logging activity with the log streaming service
   - Retrieve application log files from an application with Kudu or the Azure CLI
-prerequisites: | 
+prerequisites: |
   - Experience in basic web app development and deployment, including creating trace output from applications
   - Understanding of Web apps in Microsoft Azure
 iconUrl: /training/achievements/capture-application-logs-app-service.svg
@@ -26,9 +27,7 @@ roles:
 - security-engineer
 products:
 - azure
-- dotnet
 - aspnet-core
-- dotnet-core
 subjects:
 - cloud-computing
 units:

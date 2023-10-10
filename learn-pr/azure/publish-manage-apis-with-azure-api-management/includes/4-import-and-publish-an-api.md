@@ -55,7 +55,7 @@ You can use the API gateway as a way to visualize how data is processed through 
 
 If you're an administrator, you can visualize APIs in the Azure portal.
 
-![Screenshot of Azure portal API configuration showing a highlighted GET request test on an imported API.](../media/4-apim-azure-portal-visualize.png)
+:::image type="content" source="../media/4-apim-azure-portal-visualize.png" alt-text="Screenshot of Azure portal API configuration showing a highlighted GET request test on an imported API.":::
 
 ## Policies
 
@@ -69,11 +69,12 @@ Popular configurations include:
 
 You use the Azure portal to apply different policies to APIs. Policies can be viewed in the **Design** tab.
 
-![Screenshot of Azure portal showing API configuration for all operations with base policies highlighted for inbound, outbound, and backend sections.](../media/4-policies-1.png)
+:::image type="content" source="../media/4-policies-1.png" alt-text="Screenshot of Azure portal showing API configuration for all operations with base policies highlighted for inbound, outbound, and backend sections.":::
+
 
 You can also use the **Design** tab to add new policies.
 
-![Screenshot of Azure portal showing inbound policy options for API configuration.](../media/4-policies-2.png)
+:::image type="content" source="../media/4-policies-2.png" alt-text="Screenshot of Azure portal showing inbound policy options for API configuration.":::
 
 ## Product
 
@@ -95,6 +96,7 @@ You assign policies so that your products can have different access rules, usage
 
 You use the Azure portal to associate APIs with a product.
 
-![Screenshot of Azure portal showing API Management with products section highlighted.](../media/4-apim-products.png)
+:::image type="content" source="../media/4-apim-products.png" alt-text="Screenshot of Azure portal showing API Management with products section highlighted.":::
+
 
 For all pricing tiers except Consumption, there are two default products: **Starter** and **Unlimited**. The Unlimited product is designed for production API management, as it has no restrictions on the number of attached APIs. You can create as many new products as you need. The Starter product has a limit of five API calls/minute, and a maximum of 100 API calls/week.

@@ -1,22 +1,20 @@
-Before you can migrate a single-node database to a multi-node, distributed cluster, you must prepare the tables in the database for distribution. In this exercise, you provision a single-node Azure Cosmos DB for PostgreSQL database, create and populate several tables, and then prepare them for migration to a multi-node distributed database.
+Before you can migrate a single-node database to a multi-node distributed cluster, you must prepare the tables in the database for distribution. In this exercise, you provision a single-node Azure Cosmos DB for PostgreSQL database, create and populate several tables, and then prepare the tables for migration to a multi-node distributed database.
 
 ## Provision an Azure Cosmos DB for PostgreSQL database
 
-To ensure you can modify the Tailspin Toys database and measure the impact those updates may have on the multi-tenant SaaS application, you first want to set up a development database to test the necessary changes to migrate from a single to a multi-node cluster. You start by provisioning an Azure Cosmos DB for PostgreSQL single-node database that mimics the configuration of Tailspin Toys' current production database. The selected node compute and storage sizes allow you to scale the database horizontally without downtime.
+To ensure that you can modify the Tailspin Toys database and to measure the impact that those updates might have on the multitenant SaaS application, you want to first set up a development database to test the migration from a single-node cluster to a multi-node cluster. You start by provisioning an Azure Cosmos DB for PostgreSQL single-node database that mimics the configuration of the Tailspin Toys current production database. The selected node compute and storage sizes allow you to scale the database horizontally without downtime.
 
-1. Navigate to the [Azure portal](https://portal.azure.com/) in a web browser.
+1. In a web browser, go to the [Azure portal](https://portal.azure.com/).
 
-2. In the Azure portal, select **Create a resource**, **Databases**, and **Azure Cosmos DB**. You can also use the **Search** functionality to find the resource.
+1. Select **Create a resource** > **Databases** > **Azure Cosmos DB** > **Create**. You can also use the search box to find the resource.
 
-    ![Screenshot of the Azure portal's Create a resource screen. Databases and Azure Cosmos DB are highlighted.](../media/cosmos-db-create.png)
+    :::image type="content" source="../media/cosmos-db-create.png" alt-text="Screenshot that shows the Azure portal Create a resource pane. Databases and Azure Cosmos DB are highlighted.":::
 
-3. On the **Which API best suits your workload?** screen, select **Create** within the **Azure Cosmos DB for PostgreSQL** tile.
+1. Under **Which API best suits your workload?**, on the **Azure Cosmos DB for PostgreSQL** tile, select **Create**.
 
-    ![Screenshot showing the PostgreSQL tile highlighted on the Azure Cosmos DB Select API option dialog.](../media/cosmos-db-select-api-option.png)
+    :::image type="content" source="../media/cosmos-db-select-api-option.png" alt-text="Screenshot that shows the PostgreSQL tile highlighted on the Azure Cosmos DB Select API option dialog.":::
 
-    After selecting **Create**, the portal will display a resource configuration screen.
-
-4. On the **Basics** tab, enter the following information:
+1. On the **Basics** tab, enter or select the following information:
 
     | Parameter       | Value |
     | --------------- | ----- |
@@ -24,68 +22,72 @@ To ensure you can modify the Tailspin Toys database and measure the impact those
     | Subscription    | Leave as the default subscription for the sandbox environment.  |
     | Resource group  | Select **Create new** and name your resource group `learn-cosmosdb-postgresql`. |
     | **Cluster details** |       |
-    | Cluster name    | _Enter a globally unique name_, such as `learn-cosmosdb-postgresql`. |
-    | Location        | Leave the default, or use a region close to you. |
-    | Scale           | See configuration settings in the next step. |
+    | Cluster name    | Enter a globally unique name, such as `learn-cosmosdb-postgresql`. |
+    | Location        | Leave the default, or select a region close to you. |
+    | Scale           | You'll configure scale settings in the next step. |
     | PostgreSQL version | Leave the default version (14) selected. |
     | **Administrator account** | |
-    | Admin username  | This is set to `citus` and can't be edited. |
+    | Admin username  | This value is set to `citus` and can't be edited. |
     | Password        | Enter and confirm a strong password. |
 
-    ![Screenshot of the Basics tab of the Create an Azure Cosmos DB - PostgreSQL cluster dialog. The fields are populated with the values specified in the exercise.](../media/cosmos-db-for-postgresql-basics-tab.png)
+    Make a note of the password that you create. You need the password later to connect to the database.
 
-    Make a note of the password you assign, as you need it later to connect to the database.
-
-5. For the **Scale** setting, select **Configure**, and on the cluster configuration page, set the following and select **Save** to return to the cluster configuration page:
+1. For the **Scale** settings, select **Configure**. On the cluster configuration pane, set the following options.
 
     | Parameter        | Value |
     | ---------------- | ----- |
     | **Nodes**            |       |
-    | Node count       | Choose **Single node**. |
+    | Node count       | Select **Single node**. |
     | Compute per node | Select **4 vCores, 16 GiB RAM**. |
-    | Storage per node | Select **512 GiBM**. |
+    | Storage per node | Select **512 GiB**. |
 
-    The high availability and automatic failover capabilities are out of scope for this exercise, so leave the **High availability** checkbox unchecked.
+    The high availability and automatic failover capabilities are out of scope for this exercise, so leave the **High availability** option cleared.
 
-    ![Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog. The node configuration specified in the exercise is selected.](../media/cosmos-db-for-postgresql-cluster-config.png)
+    :::image type="content" source="../media/cosmos-db-for-postgresql-cluster-config.png" alt-text="Screenshot that shows the Create an Azure Cosmos DB PostgreSQL cluster configuration dialog. The node configuration specified in the exercise is selected.":::
 
-6. Select the **Review + create** button, and on the review screen, select **Create** to provision your cluster. If the **Configure IP address in firewall rules** message appears, select **Create cluster without firewall rules**.
+    Select **Save**.
 
-    ![Screenshot showing the Configure IP address in firewall rules dialog, with a warning message.](../media/configure-ip-rules-warning.png)
+1. Select the **Review + create** button.
 
-    It can take 10-15 minutes for your cluster to provision.
+    :::image type="content" source="../media/cosmos-db-for-postgresql-basics-tab.png" alt-text="Screenshot that shows the Basics tab of the Create an Azure Cosmos DB PostgreSQL cluster dialog. The fields are populated with the values specified in the exercise.":::
 
-7. Once your cluster has finished provisioning, navigate to the resource in the Azure portal.
+1. On the review pane, select **Create** to provision your cluster. If the **Configure IP address in firewall rules** message appears, select **Create cluster without firewall rules**.
 
-8. Select **Networking** under **Settings** from the left-hand navigation menu. On the networking blade, check the box to **Allow public access from Azure services and resources within Azure to this cluster** and select **Save** on the toolbar.
+    :::image type="content" source="../media/configure-ip-rules-warning.png" alt-text="Screenshot that shows the Configure IP address in firewall rules dialog, with a warning message.":::
 
-    ![Screenshot of the Azure Cosmos DB for PostgreSQL cluster resource in the Azure portal. The Networking menu is selected and highlighted.](../media/cosmos-db-for-postgresql-networking.png)
+    It can take up to 15 minutes for your cluster to provision.
 
-## Connect to the database using psql in the Azure Cloud Shell
+1. When your cluster is finished provisioning, go to the resource in the Azure portal.
 
-You'll use `psql` from the command line to make your database changes. `psql` is a command line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
+1. On the left menu under **Settings**, select **Networking**. On the **Networking** pane, select the **Allow public access from Azure services and resources within Azure to this cluster** checkbox, and then select **Save** on the command bar.
 
-1. From your Azure Cosmos DB for PostgreSQL Cluster page in the Azure portal, select **Connection strings** under **Settings** in the left-hand navigation menu, then copy the connection string labeled **psql**.
+    :::image type="content" source="../media/cosmos-db-for-postgresql-networking.png" alt-text="Screenshot that shows the Azure Cosmos DB for PostgreSQL cluster resource in the Azure portal. The Networking menu is selected and highlighted.":::
 
-    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
+## Connect to the database by using psql in Azure Cloud Shell
 
-2. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
+You use psql at the command prompt to make your database changes. psql is a command-line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
 
-3. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
+1. On your Azure Cosmos DB for PostgreSQL Cluster page in the Azure portal, on the left menu under **Settings**, select **Connection strings**. Then copy the connection string that's labeled **psql**.
 
-    ![Screenshot showing the Cloud Shell icon on the Azure portal toolbar, and a Cloud Shell dialog open at the bottom of the browser window.](../media/azure-cloud-shell.png)
+    :::image type="content" source="../media/cosmos-db-for-postgresql-connection-strings-psql.png" alt-text="Screenshot that shows the Connection strings pane of the Azure Cosmos DB Cluster resource.":::
 
-    The Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
+1. Paste the connection string into a text editor like Notepad. Replace the `{your_password}` token with the password that you created for the `citus` user when you created your cluster. Copy the updated connection string to use later.
 
-4. If necessary, select **Bash** as the environment in the Cloud Shell window.
+1. On the **Connection strings** pane in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the global controls in the Azure portal.
 
-    ![Screenshot of the welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)
+    :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Screenshot that shows the Cloud Shell icon on the Azure portal global commands, and a Cloud Shell pane open at the bottom of the browser window.":::
 
-5. If this is the first time you open the Cloud Shell, you may be prompted to mount a storage account. Select the subscription you used for your database account, then select **Create storage**.
+    Cloud Shell opens as an embedded pane at the bottom of your browser window. Alternatively, you can open [Azure Cloud Shell](https://shell.azure.com/) in a different browser tab.
 
-    ![Screenshot of the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
+1. If you're prompted, select **Bash** as the environment in the Cloud Shell window.
 
-6. Now, use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following:
+    :::image type="content" source="../media/azure-cloud-shell-welcome.png" alt-text="Screenshot that shows the welcome dialog of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.":::
+
+1. If you're opening Cloud Shell for the first time, you might be prompted to connect a storage account. Select the subscription that you used for your database account, and then select **Create storage**.
+
+    :::image type="content" source="../media/azure-cloud-shell-mount-storage.png" alt-text="Screenshot that shows the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.":::
+
+1. Now, use the psql command-line utility to connect to your database. Paste your connection string (updated with your correct password) at the command prompt in Cloud Shell, and then run the command. The command should look similar to the following example:
 
     ```bash
     psql "host=c.learn-cosmosdb-postgresql.postgres.database.azure.com port=5432 dbname=citus user=citus password={your_password} sslmode=require"
@@ -93,9 +95,9 @@ You'll use `psql` from the command line to make your database changes. `psql` is
 
 ## Create tables in the database
 
-Now that you're connected to your database, you can begin populating the database. You'll use `psql` to create the table schema provided by Tailspin Toys in your development database.
+Now that you're connected to your database, you can begin populating the database. You use psql to create the table schema that was provided by Tailspin Toys in your development database.
 
-1. In the Cloud Shell, run the following query to create the `stores`, `products`, `orders`, and `line_items` tables.
+- In Cloud Shell, run the following query to create the `stores`, `products`, `orders`, and `line_items` tables:
 
     ```sql
     CREATE TABLE stores
@@ -134,33 +136,33 @@ Now that you're connected to your database, you can begin populating the databas
     );
     ```
 
-## Ingest data using the COPY command
+## Ingest data by using the COPY command
 
-Tailspin Toys has provided links to CSV files containing sample data representative of their production system data. You can use these files to populate your development database. The files are available via publicly accessible URLs, and you've decided to load the tables by performing a one-time bulk load into the new database.
+Tailspin Toys has provided links to .csv files that contain sample data that's representative of its production system data. You can use these files to populate your development database. The files are available via publicly accessible URLs. You decide to load the tables by performing a one-time bulk load into the new database.
 
 You can use the PostgreSQL `COPY` command to accomplish this task. It allows you to load data from files in bulk.
 
-1. Set the database encoding before loading data from the CSV files to ensure they're read correctly.
+1. Set the database encoding before you load data from the .csv files to ensure that the files are read correctly:
 
     ```sql
     SET CLIENT_ENCODING TO 'utf8';
     ```
 
-2. Download the ZIP file containing the provided data files.
+1. Download the .zip file that contains the provided data files:
 
     ```sql
-    \! curl -L -O 'https://github.com/MicrosoftDocs/mslearn-design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql-data/raw/main/data/data.zip'
+    \! curl -L -O 'https://github.com/MicrosoftDocs/mslearn-design-multitenant-saas-apps-with-azure-cosmos-db-for-postgresql-data/raw/main/data/data.zip'
     ```
 
-3. Unzip the file to extract the CSV files containing the data Tailspin Toys provided.
+1. Unzip the file to extract the .csv files that contain the data that Tailspin Toys provided:
 
     ```sql
     \! unzip data.zip
     ```
 
-   The ZIP file contains multiple CSV files containing stores, orders, products, and line item information. You can view the extracted files by running `\! ls` from the command line if you want to see the files.
+   The .zip file contains multiple .csv files that contain stores, orders, products, and line item information. You can view the extracted files by running `\! ls` at the command prompt.
 
-4. The following `COPY` command loads data from the downloaded `stores.csv` file into the `stores` table you created above and then updates the sequence for the `store_id` column.
+1. The following `COPY` command loads data from the downloaded *stores.csv* file into the `stores` table that you created earlier. Then it updates the sequence for the `store_id` column.
 
     ```sql
     BEGIN;
@@ -169,9 +171,9 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
     COMMIT;
     ```
 
-    The `WITH CSV HEADER` option provides information about the format of the file being ingested, specifying that it's a CSV file and the first row is a header row.
+    The `WITH CSV HEADER` option provides information about the format of the file being ingested. The option specifies that it's a .csv file and that the first row is a header row.
 
-5. Execute the below command to populate the `products` table. The `products.csv` file doesn't contain a header row, so you remove the `HEADER` option.
+1. Execute the following command to populate the `products` table. The *products.csv* file doesn't contain a header row, so you remove the `HEADER` option.
 
     ```sql
     BEGIN;
@@ -180,7 +182,7 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
     COMMIT;
     ```
 
-6. For orders and line items, there are multiple CSV files. The `COPY` command can only read a single file at a time, so to avoid making numerous calls, you can use the `FROM PROGRAM` clause to inform the coordinator to retrieve the data files from an application running on the coordinator. You can then use the `cat` application on the coordinator, which combines multiple files. The `cat` command output is passed to the `COPY` command, allowing it to act as a single file for data ingestion. Run the two `COPY` commands below to load the `orders` and `line_items` tables with data from the files.
+1. For orders and line items, there are multiple .csv files. The `COPY` command can read only a single file at a time. To avoid making numerous calls, you can use the `FROM PROGRAM` clause to inform the coordinator node to retrieve the data files from an application that's running on the coordinator node. You can then use the `cat` command on the coordinator, which combines multiple files. The `cat` command output is passed to the `COPY` command so that it acts as a single file for data ingestion. Run the two following `COPY` commands to load the `orders` and `line_items` tables with data from the files:
 
     ```sql
     BEGIN;
@@ -196,7 +198,7 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
     COMMIT;
     ```
 
-7. You can query the count of each table to verify data was loaded correctly.
+1. You can query the count of each table to verify that data was loaded correctly:
 
     ```sql
     SELECT COUNT(*) FROM stores;      -- Count should be 442
@@ -205,19 +207,19 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
     SELECT COUNT(*) FROM line_items;  -- Count should be 4002959
     ```
 
-## Verify installation of pg_cron extension
+## Verify that the pg_cron extension is installed
 
-In the following tasks, you'll use the `pg_cron` extension for PostgreSQL to run scheduled jobs in the database. Before installing any new supported extensions in your database, viewing the complete list of installed extensions is an excellent idea to avoid potential conflicts. Many popular PostgreSQL extensions are pre-installed on every Azure Cosmos DB for PostgreSQL instance.
+In the following tasks, you use the pg_cron extension for PostgreSQL to run scheduled jobs in the database. Before you install any new supported extensions in your database, it's a good idea to view the complete list of installed extensions to avoid potential conflicts. Many popular PostgreSQL extensions are preinstalled on every Azure Cosmos DB for PostgreSQL instance.
 
-1. You can view the list of pre-installed extensions in your Azure Cosmos DB for PostgreSQL database by running the following:
+1. You can view the list of preinstalled extensions in your Azure Cosmos DB for PostgreSQL database by running the following code:
 
     ```sql
     SELECT oid, extname, extversion FROM pg_extension;
     ```
 
-    Press the space bar on your keyboard to display more results if you see `--More--` at the bottom of the output.
+    If you see `--More--` at the bottom of the output, select the Spacebar to display more results.
 
-2. Inspect the output of the above query, looking for a row where the `extname` value is `pg_cron` to determine if the extension is pre-installed.
+1. Inspect the output of the query. Look for a row in which the `extname` value is `pg_cron` to determine whether the extension is preinstalled.
 
     ```sql
       oid  |      extname       | extversion 
@@ -225,13 +227,13 @@ In the following tasks, you'll use the `pg_cron` extension for PostgreSQL to run
      19371 | pg_cron            | 1.4-1      
     ```
 
-    The query output reveals that `pg_cron` comes pre-installed, so there's nothing more you need to do to use this extension. You can query the `pg_extension` view to retrieve details associated with the installed extensions. Alternatively, you could run `\dx` from the command line, a shortcut command that provides a list of installed extensions in your database.
+    The query output reveals that pg_cron is preinstalled, so there's nothing more you need to do to use this extension. You can query the pg_extension view to retrieve details that are associated with the installed extensions. Alternatively, you can run `\dx` at the command prompt. This command is a shortcut that provides a list of the extensions that are installed in your database.
 
 ## Create and run a function to add orders to the database
 
-To correctly measure the impact that transitioning to a multi-node database will have on Tailspin Toys' SaaS application,  you can use a function and scheduled job to simulate customer load on the database as you go through the remainder of the exercises in this module. Placing an artificial workload on the database during the migration process can help you identify potential problems or resource constraints as you migrate the database.
+To correctly measure the impact that transitioning to a multi-node database will have on the Tailspin Toys SaaS application, you can use a function and scheduled job to simulate customer load on the database as you go through the remainder of the exercises in this module. Placing an artificial workload on the database during the migration process can help you identify potential problems or resource constraints as you migrate the database.
 
-1. You can use a function that accepts the batch size of orders to insert into the database. This function will generate orders with one to three line items, inserting records into the `orders` and `line_items` tables. Execute the command below to create the function.
+1. You can use a function that accepts the batch size of orders to insert into the database. This function generates orders that have one to three line items. It inserts records in the `orders` and `line_items` tables. Execute the following command to create the function:
 
     ```sql
     CREATE OR REPLACE FUNCTION create_orders(batch_size int)
@@ -281,21 +283,21 @@ To correctly measure the impact that transitioning to a multi-node database will
     $$;
     ```
 
-2. To view how long it takes queries to run in `psql`, you can enable query execution time output by running the following command at the Citus command prompt:
+1. To view how long it takes queries to run in psql, you can enable query execution time output by running the following command at the Citus command prompt:
 
     ```sql
     \timing
     ```
 
-3. To simulate database load from customer traffic on various stores' websites, you want to use the function you created to send a representative load of 20,000 orders per minute into the database. Manually run the `create_orders()` function two or three times after enabling `\timing` so you can understand how long it takes to insert 20,000 orders.
+1. To simulate database load from customer traffic on various stores' websites, you want to use the function you created to send a representative load of 20,000 orders per minute into the database. Manually run the `create_orders()` function two or three times after you enable `\timing` so that you can understand how long it takes to insert 20,000 orders.
 
     ```sql
     SELECT create_orders(20000);
     ```
 
-    Note the time it takes, as you'll use this for comparison at the end of this exercise.
+    Note the time it takes. You'll use this information for comparison at the end of this exercise.
 
-4. Next, you want the function to execute every minute to add orders to the database automatically. For this, you can use `pg_cron` to schedule it. Run the following `cron.schedule` command to set up a scheduled task named `create_orders` that executes every minute and inserts 20,000 new orders into the database.
+1. Next, you want the function to execute every minute to automatically add orders to the database. You can use pg_cron to schedule the function. Run the following `cron.schedule` command to set up a scheduled task named `create_orders` that executes every minute and inserts 20,000 new orders into the database:
 
     ```sql
     SELECT cron.schedule('create_orders', '*/1 * * * *', 'SELECT create_orders(20000);');
@@ -303,19 +305,19 @@ To correctly measure the impact that transitioning to a multi-node database will
 
 ## Add distribution key and backfill missing values
 
-The `store_id` column is the internal identifier for tenants in the Tailspin Toys database, so it's the logical choice for the distribution column on the tables to be distributed. Notice in the schemas you used to create the database tables above that all of the tables except `line_items` contains the `store_id` column.
+The `store_id` column is the internal identifier for tenants in the Tailspin Toys database, so it's the logical choice as the distribution column on the tables that are being distributed. In the schemas that you used to create the database tables, all the tables except `line_items` contain the `store_id` column.
 
-To properly distribute and co-locate the `line_items` table data with `stores`, `orders`, and `products`, you need to add the `store_id` column to the `line_items` table and backfill the field for each row. Backfilling tables involves denormalizing the table to add the distribution column and then populating the column with the appropriate value.
+To properly distribute and colocate the `line_items` table data with `stores`, `orders`, and `products`, you need to add the `store_id` column to the `line_items` table and backfill the field for each row. Backfilling tables involves denormalizing the table to add the distribution column, and then populating the column with the appropriate value.
 
-1. Run the following SQL command from the `psql` prompt to denormalize the `line_items` table and add the `store_id` distribution column:
+1. Run the following SQL command at the psql prompt to denormalize the `line_items` table and add the `store_id` distribution column:
 
     ```sql
     ALTER TABLE line_items ADD COLUMN store_id bigint;
     ```
 
-    With the `line_items` table now denormalized, the next step is to backfill the newly created `store_id` column. However, performing this operation against large tables can cause a significant load on the database and disrupt other queries. To meet Tailspin Toys' request to horizontally scale the database with _minimal disruption_, you've decided again to use the `pg_cron` extension and a function to update the `line_items` table in small batches.
+    With the `line_items` table now denormalized, the next step is to backfill the newly created `store_id` column. However, performing this operation against large tables can cause a significant load on the database and disrupt other queries. To meet the Tailspin Toys request to horizontally scale the database with *minimal disruption*, you've decided again to use the pg_cron extension and a function to update the `line_items` table in small batches.
 
-2. Execute the below command to create a function for backfilling the `line_items` table in batches:
+1. Run the following command to create a function that backfills the `line_items` table in batches:
 
     ```sql
     CREATE OR REPLACE FUNCTION backfill_batch(batch_size bigint)
@@ -341,21 +343,21 @@ To properly distribute and co-locate the `line_items` table data with `stores`, 
     $$;
     ```
 
-3. Next, use `pg_cron` to create a scheduled job named `backfill` to run the function every minute and backfill one million records simultaneously.
+1. Next, use pg_cron to create a scheduled job named `backfill` that runs the function every minute and backfills 1 million records simultaneously:
 
     ```sql
     SELECT cron.schedule('backfill', '*/1 * * * *', 'SELECT backfill_batch(1000000);');
     ```
 
-    Note that you're updating one million records at a time in the `backfill` scheduled job. In a production system, you would typically use smaller batch sizes and backfill tables over a more extended period to reduce performance impacts on the system. The large batch size used in this example is done to allow the table to be backfilled in a short amount of time for this exercise. There are approximately four million records in the `line_items` table, so it takes four or five minutes for the existing records to be backfilled with the appropriate `store_id` value. You can move on to the next task while waiting for the table to be backfilled.
+    In this example, you're updating 1 million records at a time in the `backfill` scheduled job. In a production system, you would typically use smaller batch sizes and backfill tables over a more extended period to reduce performance impacts on the system. The example for this exercise uses a large batch size so that the table is backfilled in a short amount of time. There are approximately 4 million records in the `line_items` table, so it takes up to five minutes for the existing records to be backfilled with the appropriate `store_id` value. You can move on to the next task while you wait for the table to be backfilled.
 
 ## Update application queries
 
-With the distribution column added to each distributed table and the backfilling processes started, one of the next steps of the preparation phase is to update queries issued by the SaaS application to ensure the distribution column is included in all queries coming from the application. Above, you created a function to continually add new orders to the database to simulate the application sending in transactions. However, it isn't inserting the `store_id` value into the `line_items` being added.
+With the distribution column added to each distributed table and the backfilling processes started, one of the next steps of the preparation phase is to update queries that are issued by the SaaS application to ensure that the distribution column is included in all queries that come from the application. Earlier, you created a function to continually add new orders to the database to simulate the application sending in transactions. However, the function isn't inserting the `store_id` value into the `line_items` table that are being added.
 
 The denormalized `line_items` table now includes the `store_id` column, so you need to update the function to ensure that the application is populating that column.
 
-1. Replace the `create_orders()` function with the code below. The two lines following `-- Insert a new line_item row` are updated to include the `store_id` value when inserting new line items into the database.
+1. Replace the `create_orders()` function with the following code. The two lines after `-- Insert a new line_item row` are updated to include the `store_id` value when inserting new line items into the database.
 
     ```sql
     CREATE OR REPLACE FUNCTION create_orders(batch_size int)
@@ -405,27 +407,27 @@ The denormalized `line_items` table now includes the `store_id` column, so you n
     $$;
     ```
 
-2. Copy the updated function code to the command line and execute it. The next time your `pg_cron` job runs, the function will run with the updated code and populate the `store_id` column for each new line item.
+1. Copy the updated function code to the command prompt and execute it. The next time your pg_cron job runs, the function runs with the updated code and populates the `store_id` column for each new line item.
 
-## Verify backfill completion and stop scheduled job
+## Verify backfill and stop the scheduled job
 
-There are approximately four million records in the `line_items` table, plus the new rows inserted by the `create_orders()` function, so it takes four or five minutes to backfill the `line_items` table.
+There are approximately 4 million records in the `line_items` table, plus the new rows that are inserted by the `create_orders()` function. It takes up to five minutes to backfill the `line_items` table.
 
-1. Run the following query to verify the `store_id` column has been backfilled on all records in the `line_items` table.
+1. To verify that the `store_id` column has been backfilled on all records in the `line_items` table, run this query:
 
     ```sql
     SELECT count(*) FROM line_items WHERE store_id IS NULL;
     ```
 
-    Continue to execute the above query every minute or two until the count returned is zero. At that point, the table has been successfully backfilled.
+    Continue to execute the query every minute or two until the count returned is zero. At that point, the table has been successfully backfilled.
 
-2. Once all of the `line_items` records have been backfilled, you can disable the `pg_cron` job. To disable the job, you'll need either the `jobid` of the `cron.schedule` job you created above or the `jobname` you assigned. You can retrieve those values from the `cron.job` table by running the following query:
+1. After all the `line_items` records are backfilled, you can disable the pg_cron job. To disable the job, you need either the `jobid` of the `cron.schedule` job that you created earlier or the `jobname` that you assigned. You can retrieve those values from the `cron.job` table by running the following query:
 
     ```sql
     SELECT * FROM cron.job;
     ```
 
-3. Using the output of the above query, locate the job with the command that contains the `backfill_batch()` function. You can copy the `jobid` or `jobname` values to disable the job. The output should look similar to the following:
+1. In the output of the query, locate the job by using the command that contains the `backfill_batch()` function. You can copy the `jobid` or `jobname` values to disable the job. The output should look similar to the following example:
 
     ```text
      jobid |  schedule   |           command           | nodename | nodeport | database | username | active |    jobname    
@@ -434,7 +436,7 @@ There are approximately four million records in the `line_items` table, plus the
          7 | */1 * * * * | SELECT backfill_batch();    | /tmp     |     5432 | citus    | citus    | t      | backfill
     ```
 
-4. Stop the job using the following command, which uses the `jobname` value from the above query to disable it.
+1. Stop the job by using the following command, which uses the `jobname` value from the query to disable it:
 
     ```sql
     SELECT cron.unschedule('backfill');
@@ -442,9 +444,9 @@ There are approximately four million records in the `line_items` table, plus the
 
 ## Update table keys to include the distribution column
 
-Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints on tables unless they contain the distribution column. The single-node schema Tailspin Toys provided includes primary and foreign keys on tables. You need to update these to have the `store_id` distribution column and do it in a manner that minimizes application disruption.
+Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints on tables unless the tables contain the distribution column. The single-node schema that Tailspin Toys provided includes primary keys and foreign keys on tables. You need to update these tables to have the `store_id` distribution column while you continue to minimize application disruption.
 
-1. The first step you must take is to create new unique indexes on each table that include the distribution column. To prevent locks on the tables you update, use the `CONCURRENTLY` option while creating new indexes. Execute the following `CREATE INDEX` commands to create unique indexes that include the table's original primary key and the `store_id` column.
+1. The first step you must take is to create new unique indexes on each table that includes the distribution column. To prevent locks on the tables you update, use the `CONCURRENTLY` option when you create new indexes. Execute the following `CREATE INDEX` commands to create unique indexes that include the table's original primary key and the `store_id` column:
 
     ```sql
     CREATE UNIQUE INDEX CONCURRENTLY orders_tmp_idx ON orders (store_id, order_id);
@@ -452,7 +454,7 @@ Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints on tables un
     CREATE UNIQUE INDEX CONCURRENTLY line_items_tmp_idx ON line_items (store_id, line_item_id);
     ```
 
-2. With the new unique indexes created, you can now swap out the primary key on each table. Executing these operations in an order that considers the foreign key relationships between tables is best. Run the following command to drop and recreate the constraints on the `orders` table. Note the foreign key doesn't need to be updated, as it already correctly references the `store_id` column in the `stores` table:
+1. With the new unique indexes created, you can now swap out the primary key on each table. Executing these operations in an order that considers the foreign key relationships between tables is best. Run the following command to drop and then re-create the constraints on the `orders` table. The foreign key doesn't need to be updated because it already correctly references the `store_id` column in the `stores` table.
 
     ```sql
     BEGIN;
@@ -462,16 +464,16 @@ Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints on tables un
       DROP CONSTRAINT orders_pkey CASCADE,
       ADD CONSTRAINT orders_pkey PRIMARY KEY USING INDEX orders_tmp_idx;
     
-    -- Recreate the foreign key on the line_items table (dropped by CASCADE)
+    -- Re-create the foreign key on the line_items table (dropped by CASCADE)
     ALTER TABLE line_items
       ADD CONSTRAINT line_items_orders_fkey FOREIGN KEY (store_id, order_id) REFERENCES orders (store_id, order_id);
 
     COMMIT;
     ```
 
-    The `DROP CONSTRAINT` statement above includes the `CASCADE` option, which results in the foreign key constraint on the `line_items` table also being dropped. As a result, the transaction includes an `ALTER TABLE` statement on the `line_items` table to recreate the foreign key. Including these within the same transaction ensures there's no time when the constraints aren't enforced.
+    The `DROP CONSTRAINT` statement includes the `CASCADE` option, which results in the foreign key constraint on the `line_items` table also being dropped. As a result, the transaction includes an `ALTER TABLE` statement on the `line_items` table to re-create the foreign key. Including these statements in the same transaction ensures that there's no time when the constraints aren't enforced.
 
-3. Next, repeat the process for the `products` table:
+1. Next, repeat the process for the `products` table:
 
     ```sql
     BEGIN;
@@ -481,14 +483,14 @@ Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints on tables un
       DROP CONSTRAINT products_pkey CASCADE,
       ADD CONSTRAINT products_pkey PRIMARY KEY USING INDEX products_tmp_idx;
 
-    -- Recreate the foreign key on the line_items table (dropped by CASCADE)
+    -- Re-create the foreign key on the line_items table (dropped by CASCADE)
     ALTER TABLE line_items
       ADD CONSTRAINT line_items_products_fkey FOREIGN KEY (store_id, product_id) REFERENCES products (store_id, product_id);
     
     COMMIT;
     ```
 
-4. Finally, execute the commands against the `line_items` table. This one takes a bit longer to run due to the table size.
+1. Finally, execute the commands against the `line_items` table. This query takes longer to run due to the table size.
 
     ```sql
     BEGIN;
@@ -505,22 +507,22 @@ Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints on tables un
     COMMIT;
     ```
 
-5. With the table keys swapped out, manually run the `create_orders()` function again to observe any impact the changes you made had on query execution time. Enable query timing by running `\timing` first, if necessary.
+1. With the table keys swapped out, manually run the `create_orders()` function again to observe any effect that the changes you made had on query execution time. Enable query timing by running `\timing` first, if necessary.
 
     ```sql
     SELECT create_orders(20000);
     ```
 
-    Compare the time it took to execute after updating the table keys to what you observed previously. You should see that the new composite keys that include the distribution column provide a significant (>10x) performance improvement in the time it takes to insert 20,000 orders. This improvement results from how the new indices help your queries function and is unrelated to distributed processing.
+    Compare the time it took to run the query after you updated the table keys to the time you observed earlier. You should see that the new composite keys that include the distribution column provide a significant (more than tenfold) performance improvement in the time it takes to insert 20,000 orders. This improvement results from how the new indices help your queries function and is unrelated to distributed processing.
 
 ## Disconnect from the database
 
-Congratulations! You've successfully prepared the Tailspin Toys tables for migration to a multi-node, distributed database. In the next exercise, you'll partition the table data across worker nodes.
+Congratulations! You've successfully prepared the Tailspin Toys tables for migration to a multi-node distributed database. In the next exercise, you'll partition the table data across worker nodes.
 
-In the Cloud Shell, run the following command to disconnect from your database:
+In Cloud Shell, run the following command to disconnect from your database:
 
 ```sql
 \q
 ```
 
-You can keep the Cloud Shell open and move on to Unit 4 - Distribute tables with minimal application disruption.
+You can keep Cloud Shell open and move on to the next unit.

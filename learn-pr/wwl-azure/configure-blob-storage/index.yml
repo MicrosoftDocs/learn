@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.service: blobs
+  ms.service: azure-blob-storage
 title: Configure Azure Blob Storage
 summary: Learn how to configure Configure Azure Blob Storage, including tiers and object replication.
 abstract: |

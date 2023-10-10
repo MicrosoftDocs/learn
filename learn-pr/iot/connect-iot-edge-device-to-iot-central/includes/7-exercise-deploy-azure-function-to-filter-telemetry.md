@@ -1,8 +1,8 @@
 Filter the telemetry sent by the device.
 
-To reduce the amount of telemetry sent to your IoT Central application, you want to filter the data on the IoT Edge device.
+Recall that you want to minimize the amount of data sent from each store. To reduce the amount of telemetry sent to your IoT Central application, you want to filter the data on the IoT Edge device.
 
-In this unit, you'll use Azure Functions running on the IoT Edge device to implement a filter. The filter ensures that the device only sends telemetry when the ambient temperature is above 21&deg;C.
+Here, you'll use Azure Functions running on the IoT Edge device to implement a filter. The filter ensures that the device only sends telemetry when the ambient temperature is above 21&deg;C.
 
 ## Configure a container registry
 
@@ -67,27 +67,11 @@ This version of the deployment manifest:
 
 - Adds the module with the Azure function you created:
 
-    ```json
-    "filterfunction": {
-        "settings": {
-            "image": "{your container registry}.azurecr.io/filterfunction:v1",
-            "createOptions": ""
-        },
-        "type": "docker",
-        "status": "running",
-        "restartPolicy": "always",
-        "version": "1.0"
-    }
-    ```
+    :::code language="json" source="~/../iot-central-docs-samples/iotedge/EnvironmentalSensorManifestFilter-1-4.json" range="49-57":::
 
 - Routes the output from the **SimulatedTemperatureSensor** module to the **filterfunction** module before sending the filtered telemetry to your IoT Central application:
 
-    ```json
-    "routes": {
-        "FilterFunctionToIoTCentral": "FROM /messages/modules/filterfunction/outputs/* INTO $upstream",
-        "sensorToFilterFunction": "FROM /messages/modules/SimulatedTemperatureSensor/outputs/temperatureOutput INTO BrokeredEndpoint(\"/modules/filterfunction/inputs/input1\")"
-    },
-    ```
+    :::code language="json" source="~/../iot-central-docs-samples/iotedge/EnvironmentalSensorManifestFilter-1-4.json" range="65-68":::
 
 To upload the new deployment manifest:
 
@@ -119,9 +103,8 @@ The IoT Edge device is now sending the telemetry through the **filterfunction** 
 
 The new module now sends the telemetry to IoT Central. Next, add an interface to the new filter module that specifies the telemetry and update the chart:
 
-1. Select **Module FilterFunction**, then **+ Add inherited interface**.
+1. Select **Module FilterFunction**, then **+ Add inherited interface**. You may need to select ... to see this option.
 1. Choose the **Import interface** tile. Select the **TelemetryInterfaceFilter.json** file you downloaded previously.
-1. Select **Save** to save your changes.
 
 You can remove the original **Telemetry** interface because the **SimulatedTemperatureModule** no longer sends telemetry directly to IoT Central. The output from this module is routed to the **FilterFunction** module by the IoT Edge runtime:
 
@@ -135,7 +118,7 @@ Modify the **View IoT Edge device telemetry** view to display the telemetry sent
 1. Select **Update** and then **Save** to save your changes.
 1. Select **Publish** to publish the new version of the device template.
 
-## View the filtered data
+## Check your work
 
 To view the filtered telemetry from your IoT Edge device:
 

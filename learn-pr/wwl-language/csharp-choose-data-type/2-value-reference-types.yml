@@ -4,11 +4,10 @@ title: Discover value types and reference types
 metadata:
   title: Discover value types and reference types
   description: "Discover value types and reference types"
-  ms.date: 05/04/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/2-value-reference-types.md)]
@@ -19,10 +18,10 @@ quiz:
     choices:
     - content: "Bits are represented by \"x\" or \"o\""
       isCorrect: false
-      explanation: "Incorrect. Bits are binary and represented by \"1\" or \"0\"."
+      explanation: "Incorrect. Bits are binary and represented using the \"1\" or \"0\" digit."
     - content: "Bits are represented by \"+bit\" or \"-bit\""
       isCorrect: false
-      explanation: "Incorrect. Bits are binary and represented by \"1\" or \"0\"."
+      explanation: "Incorrect. Bits are binary and represented using the \"1\" or \"0\" digit."
     - content: "Bits are binary and represented by \"1\" or \"0\""
       isCorrect: true
-      explanation: "Correct. Bits are represented by \"1\" or \"0\"."
+      explanation: "Correct. Bits are represented using the \"1\" or \"0\" digit."

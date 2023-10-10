@@ -16,6 +16,7 @@ abstract: |
 prerequisites: |
   - None
 iconUrl: /training/achievements/app-center/introduction-to-app-center-badge.svg
+hidden: true
 badge:
   uid: learn.azure-intro-to-app-center.badge
 levels: 

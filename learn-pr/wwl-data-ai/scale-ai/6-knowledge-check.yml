@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/12/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.service: microsoft-365
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Why is it helpful to prioritize Horizon 1 initiatives over Horizon 2 or Horizon 3 when starting out with AI?"
+    choices:
+    - content: "New customer needs may be generated during Horizon 1 initiatives, which can fuel business growth during H2 and H3."
+      isCorrect: false
+      explanation: "Incorrect. An initiative that generates new customer need would likely fall in H2 or H3."
+    - content: "H1 initiatives can be carried out quickly, driving immediate value to the business."
+      isCorrect: false
+      explanation: "Incorrect. H1 initiatives optimize core business functions, but there’s no timetable for how long this may take."
+    - content: "Horizon 1 initiatives can grow capabilities and get buy-in with simpler technologies before moving on to more complex projects."
+      isCorrect: true
+      explanation: "Correct. Capabilities and buy-in gained in H1 can benefit later initiatives in H2 and H3."
+  - content: "Why is it beneficial for people from technical teams and lines of business to collaborate on AI initiatives?"
+    choices:
+    - content: "The technical teams need to make sure the solution has the latest and greatest AI capabilities."
+      isCorrect: false
+      explanation: "Incorrect. An AI solution’s complexity should be suited to the business use case."
+    - content: "All relevant teams need to be involved in design, implementation, and ongoing maintenance to make sure the solution functions properly and achieves its business objectives."
+      isCorrect: true
+      explanation: "Correct. Technical and line-of-business teams bring different perspectives to the table that are essential for creating and maintaining a successful solution."
+    - content: "Line-of-business leaders need to make sure the solution costs as little as possible."
+      isCorrect: false
+      explanation: "Incorrect. While cost is a consideration, it isn’t the primary benefit of collaboration."
+  - content: "What is AI for reasoning?"
+    choices:
+    - content: "Enabling your subject matter experts with the ability to choose which AI models to use for different purposes and what information sources to analyze with them."
+      isCorrect: true
+      explanation: "Correct. AI for reasoning enables subject matter experts to pivot their approach if they have a new idea or new evidence to work with."
+    - content: "Providing subject matter experts with AI development training so they can build their own AI models."
+      isCorrect: false
+      explanation: "Incorrect. Training every subject matter expert in AI development would be time-intensive and costly."
+    - content: "Encouraging subject matter experts to ask developers and data scientists whenever they need an AI model."
+      isCorrect: false
+      explanation: "Incorrect. Telling a developer or data scientist what they need ahead of time would be at best impractical and more likely impossible."

@@ -26,7 +26,7 @@ products:
 - defender-for-cloud-apps
 - defender-identity
 - m365
-- m365-threat-protection
+- m365-defender
 subjects:
 - cloud-security
 - security
@@ -35,6 +35,7 @@ units:
 - learn.wwl.introduction-microsoft-365-threat-protection.introduction
 - learn.wwl.introduction-microsoft-365-threat-protection.explore-extended-detection-response-use-cases
 - learn.wwl.introduction-microsoft-365-threat-protection.understand-defender-security-operations-center
+- learn.wwl.introduction-microsoft-365-threat-protection.explore-microsoft-security-graph
 - learn.wwl.introduction-microsoft-365-threat-protection.investigate-security-incident-defender
 - learn.wwl.introduction-microsoft-365-threat-protection.knowledge-check
 - learn.wwl.introduction-microsoft-365-threat-protection.summary-resources

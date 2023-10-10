@@ -8,7 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
 azureSandbox: false
 labModal: false
 durationInMinutes: 9

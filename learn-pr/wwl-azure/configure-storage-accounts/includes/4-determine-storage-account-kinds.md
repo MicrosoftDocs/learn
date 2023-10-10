@@ -1,4 +1,5 @@
 
+
 Azure Storage offers several storage account options. Each [storage account](/azure/storage/common/storage-account-overview) supports different features and has its own pricing model.
 
 ### Things to know about storage account types

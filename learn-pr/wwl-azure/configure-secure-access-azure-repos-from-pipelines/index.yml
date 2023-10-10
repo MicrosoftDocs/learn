@@ -54,6 +54,7 @@ units:
 - learn.wwl.configure-secure-access-azure-repos-from-pipelines.configure-pipeline-access-secrets-services
 - learn.wwl.configure-secure-access-azure-repos-from-pipelines.use-azure-key-vault-secure-secrets
 - learn.wwl.configure-secure-access-azure-repos-from-pipelines.explore-secure-log-files
+- learn.wwl.configure-secure-access-azure-repos-from-pipelines.lab-integrate-azure-key-vault-with-azure-pipelines
 - learn.wwl.configure-secure-access-azure-repos-from-pipelines.knowledge-check
 - learn.wwl.configure-secure-access-azure-repos-from-pipelines.summary
 badge:

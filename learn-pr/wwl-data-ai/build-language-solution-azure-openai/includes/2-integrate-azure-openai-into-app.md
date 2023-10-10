@@ -5,7 +5,7 @@ Azure OpenAI (AOAI) offers both C# and Python SDKs and a REST API that developer
 
 ## Create an Azure OpenAI resource
 
-An AOAI resource can be deployed through both the Azure command line interface (CLI) and the Azure portal. Creating the AOAI resource through the Azure portal is similar to deploying individual Cognitive Services resources, and is part of the Cognitive Services services.
+An AOAI resource can be deployed through both the Azure command line interface (CLI) and the Azure portal. Creating the AOAI resource through the Azure portal is similar to deploying individual Azure AI Services resources, and is part of the Azure AI Services services.
 
 1. Navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true)
 1. Search for **Azure OpenAI**, select it, and click **Create**
@@ -80,7 +80,7 @@ In contrast, the input for `ChatCompletion` is a conversation with clearly defin
 {"role": "system", "content": "You are a helpful assistant, teaching people about AI."},
 {"role": "user", "content": "Does Azure OpenAI support multiple languages?"},
 {"role": "assistant", "content": "Yes, Azure OpenAI supports several languages, and can translate between them."},
-{"role": "user", "content": "Do other Azure Cognitive Services support translation too?"}
+{"role": "user", "content": "Do other Azure AI Services support translation too?"}
 ```
 
 When you give the AI model a real conversation, it can generate a better response with more accurate tone, phrasing, and context. The `ChatCompletion` endpoint enables the ChatGPT model to have a more realistic conversation by sending the history of the chat with the next user message.
@@ -93,4 +93,4 @@ When you give the AI model a real conversation, it can generate a better respons
 ```
 
 > [!NOTE]
-> `ChatCompletion` is the only supported option for `gpt-4` models, and is preferred when using the `gpt-35-turbo` model. The lab in this module uses `gpt-35-turbo` with the `ChatCompletion` endpoint, but `Completion` is available for `gpt-3` generation models.
+> `Completion` is available for all `gpt-3` generation models, while `ChatCompletion` is the only supported option for `gpt-4` models and is the preferred endpoint when using the `gpt-35-turbo` model. The lab in this module uses `gpt-35-turbo` with the `ChatCompletion` endpoint.

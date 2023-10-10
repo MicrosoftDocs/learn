@@ -3,11 +3,11 @@ uid: learn.distribute-load-with-traffic-manager.2-routing-with-traffic-manager
 metadata:
   title: Route network traffic by using Traffic Manager
   description: Learn how Traffic Manager uses different routing methods to direct network traffic
-  ms.date: 04/15/2019
+  ms.date: 06/27/2023
   author: greg-lindsay
   ms.author: greglin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Route network traffic by using Traffic Manager
 durationInMinutes: 6
 content: |

@@ -3,8 +3,8 @@ uid: learn.tensorflow.intro-machine-learning-tensorflow.model
 title: Build the model
 metadata:
   title: Build the model
-  description: Learn how to create a model using lower-level TensorFlow concepts
-  ms.date: 07/07/2021
+  description: Learn how to create a model using lower-level TensorFlow concepts.
+  ms.date: 07/24/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial

@@ -1,4 +1,4 @@
-You were asked to prevent your company's identities from being compromised again and ensure that identities are protected in the future. This is a common problem for retail companies such as yours, which must guard their reputation for trustworthiness and conform with data protection legislation.
+You were asked to prevent your company's identities from being compromised again and to ensure that identities are protected in the future. This problem is common for retail companies such as yours, which must guard their reputation for trustworthiness and conform with data protection legislation.
 
 You used Azure Active Directory Identity Protection to protect your organization's identities by detecting, investigating, and remediating risks.
 

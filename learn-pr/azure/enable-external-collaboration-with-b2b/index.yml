@@ -7,9 +7,10 @@ metadata:
   ms.date: 03/15/2023
   author: msmimart
   ms.author: mimart
-  ms.service: active-directory-ds
+  ms.service: active-directory
   manager: celestedg
   ms.topic: interactive-tutorial
+  ms.subservice: domain-services
 title: Enable secure external collaboration for your applications with Azure AD B2B
 summary: Collaborate securely with partners, vendors, and other external users with **Azure AD B2B collaboration**. Use a simple invitation process to let partners use their own work, school, or social identities to access your resources, and add security with **multi-factor authentication**.
 abstract: | 

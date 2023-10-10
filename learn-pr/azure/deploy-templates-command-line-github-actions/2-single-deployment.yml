@@ -9,7 +9,10 @@ metadata:
   ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-azurecli
+    - devx-track-azurepowershell
   ms.contributors: pierrer-11122020
 durationInMinutes: 10
 content: |

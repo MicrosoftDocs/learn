@@ -1,3 +1,4 @@
+
 The purpose of writing code is to ship enhancements to your software.
 
 A branching model that introduces too much process overhead doesn't help increase the speed of getting changes to customers—developing a branching model gives you enough padding not to ship poor-quality changes. But, at the same time doesn't introduce too many processes to slow you down.

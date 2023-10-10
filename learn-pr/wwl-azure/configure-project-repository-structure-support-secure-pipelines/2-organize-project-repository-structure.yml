@@ -9,6 +9,6 @@ metadata:
   ms.author: lauraalv
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 21
+durationInMinutes: 17
 content: |
   [!include[](includes/2-organize-project-repository-structure.md)]

@@ -1,36 +1,37 @@
-To evaluate whether Azure Stack HCI SDN might help you enhance the security of your environment, you decide to explore its Datacenter Firewall functionality. On the surface, this option seems like a suitable solution that could potentially minimize the sprawl of hardware devices and help with your company’s consolidation initiatives. However, you want to ensure that its capabilities extend beyond virtual networking by providing integration with your existing virtual local area network (VLAN) environment.
+Azure Stack HCI software-defined networking (SDN) Datacenter Firewall functionality can potentially help enhance your environment's security. Datacenter Firewall can also minimize the sprawl of hardware devices, to support your company's consolidation initiatives. You need to ensure that Datacenter Firewall capabilities extend beyond virtual networking to provide integration with your existing virtual local area network (VLAN) environment.
 
-## What is Datacenter Firewall?
+Like traditional on-premises datacenters that use physical firewall appliances to restrict network connectivity, SDN environments must be able to control connectivity. Distributed Datacenter Firewall provides this functionality and, along with Software Load Balancing and Remote Access Server (RAS) Gateway, serves as a core component of SDN. Network Controller provides a central management and monitoring interface for Datacenter Firewall to help protect virtualized workloads from unauthorized network access.
 
-Similar to traditional on-premises datacenters that rely on physical firewall appliances to restrict network connectivity, customers need to be able to control connectivity in their SDN environments. Microsoft provides this functionality in the form of distributed Datacenter Firewall, which, alongside Software Load Balancing and Remote Access Server (RAS) Gateway, serves as a core component of SDN. Datacenter Firewall, in coordination with Network Controller, which provides a management and monitoring interface, makes it possible to centrally implement and manage firewalls that help protect virtualized workloads from unauthorized network access.
+## Benefits of Datacenter Firewall
 
-### What are the benefits of using Datacenter Firewall?
+Traditional firewalls target edge connectivity, filtering traffic between on-premises datacenters and the internet, commonly called *North-South* communication. This approach offers limited protection in today's world, where the network perimeter has less significance as the protection boundary.
 
-Traditional firewall deployments targeted edge connectivity, filtering traffic between on-premises datacenters and the internet (commonly referred to as *North-South* communication). However, such an approach offers limited protection in today's world where the significance of the network perimeter as the protection boundary has been considerably diminished.
+To provide meaningful protection in a zero-trust strategy, firewalls must also help protect resources within a datacenter from internal threats. Using physical firewalls to filter on-premises communication, also called *East-West* traffic, is challenging because it requires added hardware investment and operational overhead. Routing all protected traffic via a separate physical device also increases latency, which negatively affects internal workloads.
 
-To provide meaningful protection as an element of the zero-trust strategy, firewalls must also help protect resources within a datacenter from internal threats, filtering traffic between on-premises resources (referred to as *East-West* communication). However, using physical firewalls to accomplish this objective is challenging, because it requires added investment in hardware and increases operational overhead. Another negative implication is increased latency affecting internal workloads, because all protected traffic must be routed via a separate physical device.
-
-With Azure Stack HCI, you can define software-based granular filtering of virtualized workloads that are applicable to external and internal traffic. Datacenter Firewall provides this filtering through access control lists (ACLs) in logical and virtual networks.
+Within Azure Stack HCI, you can define granular software-based filtering of virtualized workloads that's applicable to external and internal traffic. Datacenter Firewall provides this filtering through access control lists (ACLs) in logical and virtual networks.
 
 For Azure Stack HCI administrators, Datacenter Firewall provides the following benefits:
 
-- A highly scalable software-based firewall solution that can be centrally managed
-- The ability to move virtual machines (VMs) across Azure Stack HCI cluster nodes without affecting the firewall configuration
-- Protection of tenant VMs regardless of their guest operating system
+- A highly scalable software-based firewall solution that can be centrally managed.
+- The ability to move virtual machines (VMs) across Azure Stack HCI cluster nodes without affecting the firewall configuration.
+- Protection of tenant VMs regardless of their guest operating system.
 
 For Azure Stack HCI tenants, Datacenter Firewall provides network level protection in the following scenarios:
 
-- Internet-facing workloads within virtual and logical networks of Azure Stack HCI
-- Communication within and between the virtual and logical network subnets of Azure Stack HCI
-- Communication between datacenter networks and tenant workloads hosted by Azure Stack HCI
+- Internet-facing workloads within virtual and logical networks of Azure Stack HCI.
+- Communication within and between the virtual and logical network subnets of Azure Stack HCI.
+- Communication between datacenter networks and tenant workloads hosted by Azure Stack HCI.
 
-### What functionality does Datacenter Firewall provide?
+## Datacenter Firewall functionality
 
-Datacenter Firewall is a network-layer, stateful, multitenant firewall that supports filtering by any combination of five parameters: source and destination port numbers, source and destination IP addresses, and a protocol. Datacenter Firewall is implemented as a distributed firewall, with firewall policies that you can apply at the VM-network interface, logical network subnet, or virtual network subnet level to restrict traffic between virtualized workloads and both external and internal networks.
+Datacenter Firewall is a network-layer, stateful, multitenant firewall that supports filtering by any combination of five parameters: source and destination port numbers, source and destination IP addresses, and a protocol. Datacenter Firewall is implemented as a distributed firewall, with policies that you can apply at the VM network interface, logical network subnet, or virtual network subnet level.
 
-To implement Datacenter Firewall-based traffic filtering, you define firewall policies by using any management tool that supports communication with the northbound Representational State Transfer (REST) API of Network Controller. These tools include PowerShell, Windows Admin Center, and Microsoft System Center Virtual Machine Manager (VMM). Network Controller applies these policies to the virtual switch ports of Azure Stack HCI cluster nodes that function as Hyper-V hosts. This process facilitates portability, because the rules are automatically updated if you move VMs across cluster nodes, thereby helping ensure that firewall-based protection remains consistent. Network Controller will also automatically remediate any deviations from the policies you defined due to local configuration changes.
+You can restrict traffic between virtualized workloads in both external and internal networks. Network Controller applies the firewall policies to the virtual switch ports of Azure Stack HCI cluster nodes that function as Hyper-V hosts. These policies support Azure Stack HCI workloads that are connected to VLAN-based networks.
 
-> [!NOTE]
-> These policies support Azure Stack HCI workloads that are connected to VLAN-based networks.
+To implement Datacenter Firewall-based traffic filtering, you define firewall policies by using any management tool that supports communication with the northbound Representational State Transfer (REST) API of Network Controller. These tools include PowerShell, Windows Admin Center, and Microsoft System Center Virtual Machine Manager (VMM).
 
-:::image type="content" source="../media/2-azure-stack-hci-firewall-architecture.png" alt-text="Diagram depicting Network Controller with a Distributed Firewall. The Distributed Firewall is using policies to administer firewalls protecting VMs." border="false":::
+The rules are automatically updated if you move VMs across cluster nodes. Network Controller also automatically remediates any deviations from the policies you defined due to local configuration changes. This process facilitates portability and helps ensure that firewall-based protection remains consistent.
+
+The following diagram shows how Network Controller works with the distributed firewall. Datacenter Firewall uses policies to administer firewalls that protect the VMs.
+
+:::image type="content" source="../media/2-azure-stack-hci-firewall-architecture.png" alt-text="Diagram depicting Network Controller with Distributed Firewall. Distributed Firewall is using policies to administer firewalls protecting VMs." border="false" lightbox="../media/2-azure-stack-hci-firewall-architecture.png":::

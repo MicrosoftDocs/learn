@@ -4,13 +4,11 @@ title: Share artifacts between jobs
 metadata:
   title: Share artifacts between jobs
   description: "Share artifacts between jobs"
-  ms.date: 05/17/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/4-share-artifacts-between-jobs.md)]

@@ -9,9 +9,10 @@ metadata:
   ms.author: wiassaf
   manager: jroth
   ms.topic: interactive-tutorial
+  ms.custom: devx-track-azurecli
   ms.prod: learning-azure
 interactive: bash
-azureSandbox: true
+azureSandbox: false
 durationInMinutes: 15
 content: |
   [!include[](includes/4-connect-add-data.md)]

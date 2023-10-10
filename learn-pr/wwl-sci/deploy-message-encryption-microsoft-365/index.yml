@@ -26,7 +26,6 @@ roles:
 products:
 - microsoft-purview
 - office-365
-- m365-information-protection
 subjects:
 - communication
 units:

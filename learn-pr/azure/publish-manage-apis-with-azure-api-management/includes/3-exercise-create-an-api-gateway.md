@@ -1,8 +1,6 @@
-To share an API, you must first configure an API gateway.
+In this exercise, you deploy a sample web API, and you configure an API gateway. You'll publish the web API to your gateway in a later unit.
 
 In the shoe company example, NorthWind Shoes has decided to share an inventory API with partners. This API enables partners to access inventory and product information.
-
-Here, you'll create an API gateway to publish an inventory app that exposes an OpenAPI endpoint.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -68,7 +66,7 @@ The final task in this exercise is to create an API gateway in the Azure portal.
 
 1. In **Azure services**,  or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the resource menu, select **Integration**, and in the results, select **API Management**. The **Install API Management gateway** pane appears.
+1. In the resource menu, select **Integration**, and in the results, select **API Management**. The **Create API Management service** pane appears.
 
 1. In the **Basics** tab, enter the following values for each setting.
 
@@ -89,6 +87,6 @@ The final task in this exercise is to create an API gateway in the Azure portal.
 
 1. Select **Review + create** to validate your settings.
 
-1. When validation has passed, select **Create**. Deployment may take several minutes to complete. When deployment has completed, you'll see the API Management instance listed in the Azure resources. It may take several minutes for deployment to complete.
+1. When validation has passed, select **Create**. Deployment may take several minutes to complete.
 
-1. When deployment is complete, select **Go to resource** to view the pane for your API Management service.
+1. When deployment has completed, you'll see the API Management instance listed in the Azure resources. Select **Go to resource** to view the pane for your API Management service.

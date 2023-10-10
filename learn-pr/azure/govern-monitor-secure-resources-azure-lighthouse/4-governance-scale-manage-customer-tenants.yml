@@ -7,6 +7,8 @@ metadata:
   author: iankensey
   ms.author: prukulka
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 title: Use governance at scale to manage your customers tenants
 durationInMinutes: 5

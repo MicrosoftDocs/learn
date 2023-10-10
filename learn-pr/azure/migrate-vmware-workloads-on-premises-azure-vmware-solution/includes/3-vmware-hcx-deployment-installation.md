@@ -38,7 +38,7 @@ Before you deploy HCX Connector in the on-premises vCenter, download the VMware 
 
      :::image type="content" source="../media/3-display-user-credentials.png" alt-text="Screenshot of where to find the vCenter and NSX sign-in information in the Azure portal.":::
 
-1. Open a browser window within the jump host behind Azure Bastion. Sign in to the Azure VMware Solution HCX Manager on *https://x.x.x.9* over port 443. Replace the x's with the CIDR address block used to configure with Azure VMware Solution.
+1. Open a browser window within the jump host behind Azure Bastion. Sign in to the Azure VMware Solution HCX Manager on `https://x.x.x.9` over port 443. Replace the x's with the CIDR address block used to configure with Azure VMware Solution.
 
 1. Use the *cloudadmin@vsphere.local* user credentials to sign in.
 
@@ -114,7 +114,7 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
     :::image type="content" source="../media/3-request-hcx-key.png" alt-text="Screenshot after the HCX Advanced key has been requested from the Azure portal.":::
 
-1. Use the admin credentials you configured earlier to sign in to the on-premises VMware HCX Manager at *https://x.x.x.x:9443*. Replace the x's with the IP address configured for the on-premises appliance.
+1. Use the admin credentials you configured earlier to sign in to the on-premises VMware HCX Manager at `https://x.x.x.x:9443`. Replace the x's with the IP address configured for the on-premises appliance.
 
 1. When prompted, enter your key for **HCX License Key**, then select **Add**. If you receive any errors during activation, the on-premises environment might not have open internet access or a proxy configured for activation. Check internet connectivity if HCX Connector on-premises won't activate.
 

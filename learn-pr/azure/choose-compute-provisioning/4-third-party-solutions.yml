@@ -7,6 +7,8 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-terraform
   ms.prod: learning-azure
 title: Choose a third-party solution
 durationInMinutes: 10

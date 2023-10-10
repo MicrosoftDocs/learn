@@ -12,7 +12,7 @@ System administrators can be responsible for a large number of users, systems, a
 
 Role-based access control (RBAC) offers a slightly different approach. Roles are defined as collections of access permissions. Security principals are mapped to roles directly or through group membership. Separating security principals, access permissions, and resources provides simplified access management and more detailed control.
 
-On Azure, users, groups, and roles are all stored in Azure Active Directory (Azure AD). The Azure Resource Manager API uses role-based access control to secure all resource access management within Azure.
+On Azure, users, groups, and roles are all stored in Microsoft Entra ID. The Azure Resource Manager API uses role-based access control to secure all resource access management within Azure.
 
 ![Illustration that shows the implementation of role-based access control.](../media/4-acl-based-access.png)
 
@@ -28,20 +28,20 @@ The ability to flow roles through an arbitrarily defined subscription hierarchy 
 
 ### Privileged Identity Management
 
-In addition to managing Azure resource access with RBAC, a comprehensive approach to infrastructure protection should consider including the ongoing auditing of role members as the organization changes and evolves. Azure AD Privileged Identity Management (PIM) is an additional paid offering that provides oversight of role assignments, self-service, and just-in-time (JIT) role activation.
+In addition to managing Azure resource access with RBAC, a comprehensive approach to infrastructure protection should consider including the ongoing auditing of role members as the organization changes and evolves. Microsoft Entra Privileged Identity Management (PIM) is an additional paid offering that provides oversight of role assignments, self-service, and just-in-time (JIT) role activation.
 
 ![Screenshot of the Privileged Identity Management dashboard.](../media/4-pim-dashboard.png)
 
-With the Azure AD PIM service, you can manage, control, and monitor access to important resources in your organization. This includes access to resources in Azure AD, Azure, and other Microsoft Online Services like Microsoft 365 and Microsoft Intune. This control does not eliminate the need for users to carry out privileged operations in Azure AD, Azure, Microsoft 365, and software as a service (SaaS) apps.
+With the Microsoft Entra PIM service, you can manage, control, and monitor access to important resources in your organization. This includes access to resources in Microsoft Entra ID, Azure, and other Microsoft Online Services like Microsoft 365 and Microsoft Intune. This control does not eliminate the need for users to carry out privileged operations in Microsoft Entra ID, Azure, Microsoft 365, and software as a service (SaaS) apps.
 
-Organizations can give users JIT privileged access to Azure resources and Azure AD. Oversight is needed for what those users do with their administrator privileges. PIM helps mitigate the risk of excessive, unnecessary, or misused access rights.
+Organizations can give users JIT privileged access to Azure resources and Microsoft Entra ID. Oversight is needed for what those users do with their administrator privileges. PIM helps mitigate the risk of excessive, unnecessary, or misused access rights.
 
 Here are some of the key features of PIM:
 
-* Providing just-in-time privileged access to Azure AD and Azure resources
+* Providing just-in-time privileged access to Microsoft Entra ID and Azure resources
 * Assigning time-bound access to resources by using start and end dates
 * Requiring approval to activate privileged roles
-* Enforcing Azure AD multifactor authentication to activate any role
+* Enforcing Microsoft Entra multifactor authentication to activate any role
 * Using justification to understand why users activate
 * Getting notifications when privileged roles are activated
 * Conducting access reviews to ensure that users still need roles
@@ -49,14 +49,14 @@ Here are some of the key features of PIM:
 
 To use PIM, you need one of the following paid or trial licenses:
 
-* Azure AD Premium P2
+* Microsoft Entra ID P2
 * Enterprise Mobility + Security (EMS) E5
 
 ## Providing identities to services
 
 It's often valuable for services to have identities. Often (and against best practices) credential information is embedded in configuration files. With no security around these configuration files, anyone with access to the systems or repositories can access these credentials and risk exposure.
 
-Azure AD addresses this problem through two methods: service principals and managed identities for Azure services.
+Microsoft Entra ID addresses this problem through two methods: service principals and managed identities for Azure services.
 
 ### Service principals
 
@@ -74,4 +74,4 @@ For example, your organization can assign its deployment scripts to run authenti
 
 The creation of service principals can be a tedious process. There are also many touchpoints that can make maintaining service principals difficult. Managed identities for Azure resources are much easier, and will do most of the work for you.
 
-You can instantly create a managed identity for any Azure service that supports it. (The list is constantly growing.) When you create a managed identity for a service, you're creating an account on the Azure AD tenant. Azure infrastructure will automatically take care of authenticating the service and managing the account. You can then use that account like any other Active Directory account, including letting the authenticated service securely access other Azure resources.
+You can instantly create a managed identity for any Azure service that supports it. (The list is constantly growing.) When you create a managed identity for a service, you're creating an account on the Microsoft Entra tenant. Azure infrastructure will automatically take care of authenticating the service and managing the account. You can then use that account like any other Active Directory account, including letting the authenticated service securely access other Azure resources.

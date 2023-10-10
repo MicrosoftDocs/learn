@@ -1,3 +1,4 @@
+
 **Estimated time:** 60 minutes.
 
 **Lab files:** none.
@@ -41,4 +42,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 4: Work with branches.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M02_L02_Version_Controlling_with_Git_in_Azure_Repos.html)
+](https://aka.ms/az-400-version-control-with-git-in-azure-repos)

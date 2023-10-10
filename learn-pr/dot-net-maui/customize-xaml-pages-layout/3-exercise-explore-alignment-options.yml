@@ -7,8 +7,11 @@ metadata:
   ms.date: 04/29/2022
   author: codemillmatt
   ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 5
 azureSandbox: false
 content: |

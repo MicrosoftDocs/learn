@@ -19,7 +19,7 @@ abstract: |
   - Learn how to declare variables
   - Build a simple Python app that takes input and produces output
 prerequisites: |
- - An Azure account. Learn how to create a free account in [Create an Azure account](/training/modules/create-an-azure-account/).
+ - An Azure account. If you don't have an account, you can sign up for one at [Create Your Azure Free Account](https://azure.microsoft.com/free).
 iconUrl: /training/achievements/intro-to-python.svg
 levels:
   - beginner

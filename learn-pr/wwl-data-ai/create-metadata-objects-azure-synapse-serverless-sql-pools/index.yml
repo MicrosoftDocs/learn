@@ -3,11 +3,10 @@ uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools
 metadata:
   title: Create a lake database in Azure Synapse Analytics
   description: "Create a lake database in Azure Synapse Analytics"
-  ms.date: 05/13/2022
+  ms.date: 06/12/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.service: synapse-analytics
 title: Create a lake database in Azure Synapse Analytics
 summary: Why choose between working with files in a data lake or a relational database schema? With lake databases in Azure Synapse Analytics, you can combine the benefits of both.
 abstract: |
@@ -16,7 +15,7 @@ abstract: |
   - Describe database templates in Azure Synapse Analytics
   - Create a lake database
 prerequisites: |
-  Consider completing the [Explore data analytics in Azure](/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/training/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths before starting this module. You will need knowledge of:
+  Consider completing the [Explore data analytics in Azure](/learn/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/learn/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths before starting this module. You will need knowledge of:
   - Analytical data workloads in Microsoft Azure
   - Querying data with Transact-SQL
 iconUrl: /training/achievements/create-metadata-objects-in-azure-synapse-serverless-sql-pools.svg
@@ -26,6 +25,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- serverless-compute
 units:
 - learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.introduction
 - learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.lake-database

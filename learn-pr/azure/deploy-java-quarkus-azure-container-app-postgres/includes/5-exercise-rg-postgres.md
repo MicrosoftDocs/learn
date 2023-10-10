@@ -18,13 +18,13 @@ export AZ_POSTGRES_SERVER_NAME="psql-${AZ_PROJECT}"
 ```
 
 > [!NOTE]
-> You can name your Azure resources the way you want, but we recommend to check [this documentation](/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviations for many Azure resources (for example, `rg` for Resource Groups or `ca` for Azure Container Apps).
+> You can name your Azure resources the way you want, but we recommend [this documentation](/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviations for many Azure resources (for example, `rg` for Resource Groups or `ca` for Azure Container Apps).
 
 Make sure to replace the placeholders when needed. These environment variables are used throughout this module.
 
 | Variable | Description |
 |-|-|
-| `AZ_PROJECT` | The name of the project |
+| `AZ_PROJECT` | The name of the project. To keep this value unique, we suggest using *AZ_PROJECT_\[*your initials*\]*. |
 | `AZ_RESOURCE_GROUP` | The name of the group holding all the other resources |
 | `AZ_LOCATION` | The Azure region you use. We recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
 | `AZ_CONTAINERAPP` | The name of the Azure Container Apps holding all the containers |

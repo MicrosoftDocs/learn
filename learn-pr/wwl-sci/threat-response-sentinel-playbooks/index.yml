@@ -29,7 +29,7 @@ products:
 - azure
 - azure-log-analytics
 - azure-logic-apps
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - threat-protection
 units:

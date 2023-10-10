@@ -25,16 +25,16 @@ products:
 - azure-iot-hub
 - azure-stack-hub
 - azure-stack-edge
-- azure-farmbeats
+- data-manager-for-agri
 - azure-active-directory
 - azure-key-vault
-- azure-security-center
+- defender-for-cloud
 - azure-monitor
 - azure-policy
 - azure-firewall
 - azure-network-watcher
 - azure-ddos-protection
-- azure-sentinel
+- microsoft-sentinel
 - azure-advisor
 subjects:
 - security

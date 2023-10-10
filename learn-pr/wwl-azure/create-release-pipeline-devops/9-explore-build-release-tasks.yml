@@ -4,13 +4,13 @@ title: Explore build and release tasks
 metadata:
   title: Explore build and release tasks
   description: "Explore build and release tasks"
-  ms.date: 05/17/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.prod: azure
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
+durationInMinutes: 4
 content: |
   [!include[](includes/9-explore-build-release-tasks.md)]

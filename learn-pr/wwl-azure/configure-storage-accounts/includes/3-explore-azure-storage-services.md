@@ -1,4 +1,5 @@
 
+
 Azure Storage offers four data services that can be accessed by using an Azure storage account:
 
 - **Azure Blob Storage (containers)**: A massively scalable object store for text and binary data.

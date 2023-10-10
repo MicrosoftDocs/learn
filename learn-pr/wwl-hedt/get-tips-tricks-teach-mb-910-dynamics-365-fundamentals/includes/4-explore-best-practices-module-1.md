@@ -26,5 +26,5 @@ Module 1 Demos
 
 Module 1 Labs 
 
-- Lab 1.1: [Work with customer engagement apps](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M01_Lab1_Work_with_customer_engagement_apps.md)
-- Lab 1.2: [Manage customers and activities](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M01_Lab2_Manage_Customers_and_Activities.md)
+- Lab 1.1: [Work with customer engagement apps](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_LP01_M01_Lab1_Work_with_customer_engagement_apps.md)
+- Lab 1.2: [Manage customers and activities](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_LP01_M02_Lab2_Manage_Customers_and_Activities.md)

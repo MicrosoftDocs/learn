@@ -7,6 +7,8 @@ metadata:
   author: v-tcassi
   ms.author: tomcassidy
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Exercise - Troubleshoot Azure Container Instances
 durationInMinutes: 10

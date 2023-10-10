@@ -10,6 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure-devops-pipelines
   ms.subservice: azure-devops-pipelines-build
+  manager: mijacobs
 title: Create a build pipeline with Azure Pipelines
 summary: Set up a continuous integration (CI) pipeline that automates the process of building your application.
 abstract: |
@@ -17,16 +18,24 @@ abstract: |
   - Create a build pipeline in Azure Pipelines
   - Map manual build steps to automated build tasks
   - Publish your builds so others can access them
-  - Use templates to build multiple configurations
+  - Use templates to build multiple configurations (optional)
 prerequisites: |
-  - An Azure DevOps organization
-    - To use Microsoft-hosted agents, your Azure DevOps organization must have access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
-    - You can use GitHub Codespaces to complete the module, even if your Azure DevOps organization doesn't have any parallel jobs.
-  - Visual Studio Code
-  - .NET 6.0 SDK
-  - Git
-  - A GitHub account
-  - Familiarity with forking and cloning a GitHub repo
+  **Required knowledge and skills**:
+    - Familiarity with forking and cloning a GitHub repo
+
+  **Account requirements**:
+    - An Azure DevOps organization
+      - To use Microsoft-hosted agents, your Azure DevOps organization must have access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+      - You can use GitHub Codespaces to complete the module, even if your Azure DevOps organization doesn't have any parallel jobs.
+    - A [GitHub](https://github.com/join) account
+
+  **Software requirements**:
+    - If using GitHub Codespaces to complete the module, there are no software requirements as all software is included in the Codespace
+    - If using a local development environment with Microsoft-hosted agents, you must have the following software installed:
+      - [Visual Studio Code](https://code.visualstudio.com)
+      - [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+      - [Git](https://git-scm.com/downloads)
+
 iconUrl: /training/achievements/azure-devops/create-a-build-pipeline-azure-pipelines.svg
 ratingEnabled: true
 levels:

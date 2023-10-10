@@ -6,6 +6,7 @@ metadata:
   ms.date: 05/19/2023
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Exercise - Use claims with policy-based authorization

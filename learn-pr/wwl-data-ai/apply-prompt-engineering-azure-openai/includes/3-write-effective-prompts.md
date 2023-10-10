@@ -54,7 +54,7 @@ This method can be extrapolated to include complex instructions, such as a bulle
 
 How instructions are formatted can impact how the model interprets the prompt. Recency bias can affect models, where information located towards the end of the prompt can have more influence on the output than information at the beginning. You may get better responses by repeating the instructions at the end of the prompt and assessing how that affects the generated response.
 
-This recency bias can also come into play when using `ChatCompletion` in a chat scenario, where more recent messages in the conversation included in the prompt have a greater impact on the response. The next unit goes more in depth on using conversations to improve response quality, but putting important information closer to the end of the prompt my result in a better response.
+This recency bias can also come into play when using `ChatCompletion` in a chat scenario, where more recent messages in the conversation included in the prompt have a greater impact on the response. The next unit goes more in depth on using conversations to improve response quality, but putting important information closer to the end of the prompt may result in a better response.
 
 ### Use section markers
 

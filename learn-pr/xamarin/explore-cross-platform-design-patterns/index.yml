@@ -20,6 +20,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/explore-cross-platform-design-patterns-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

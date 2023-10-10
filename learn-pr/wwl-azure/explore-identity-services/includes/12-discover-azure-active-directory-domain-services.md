@@ -1,5 +1,6 @@
 
 
+
 If you need to deploy AD DS–dependent workloads in Azure, but you want to minimize the overhead associated with deploying and managing Active Directory domain controllers hosted on Azure VMs, you should consider implementing Azure AD DS instead. Azure AD DS is a Microsoft-managed AD DS service that provides the standard Active Directory features such as Group Policy, domain join, and support for protocols such as Kerberos, NTLM, and LDAP.
 
 The service consists of two Active Directory domain controllers in a new, single-domain forest. When you provision the service, the Azure platform automatically deploys these two domain controllers to an Azure virtual network that you designate. In addition, the managed AD DS automatically synchronizes its users and groups from the Azure AD tenant associated with the Azure subscription hosting the virtual network. Effectively, the Azure AD DS domain will contain the same users and groups as its Azure AD counterpart. This provides the following capabilities:

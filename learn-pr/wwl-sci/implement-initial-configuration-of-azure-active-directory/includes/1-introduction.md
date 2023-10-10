@@ -12,4 +12,4 @@ In this module, you will:
 
 ## Prerequisites
 
-None
+Prior usage experience with the Azure portal user interface.

@@ -5,10 +5,12 @@ metadata:
   unitType: learning-content
   title: Design a pipeline and versioning strategy
   description: Learn about how to version your reusable Bicep code within a pipeline, and whether to use a single pipeline or multiple pipelines.
-  ms.date: 04/10/2023
+  ms.date: 06/29/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-bicep
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |

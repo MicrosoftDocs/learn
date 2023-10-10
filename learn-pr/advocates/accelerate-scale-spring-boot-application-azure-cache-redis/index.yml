@@ -1,25 +1,28 @@
 ### YamlMime:Module
 uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis
 metadata:
-  title: Accelerate and scale a Spring Boot application with Azure Cache for Redis
-  description: In this module, you'll learn what Azure Cache for Redis is, and how to use it with a Java and Spring Boot application. You'll use it to cache some business data through Spring Data Redis, and to store HTTP session data through Spring Session.
+  title: Accelerate a Spring Boot application with Azure Cache for Redis
+  description: Learn how to use Azure Cache for Redis to cache business data and HTTP session data in a Java Spring Boot application, then publish the application to the cloud.
   author: judubois
   ms.author: judubois
-  ms.date: 01/20/2021
+  ms.date: 06/05/2023
   ms.topic: interactive-tutorial
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03112021
   ms.service: cache
-title: Accelerate and scale a Spring Boot application with Azure Cache for Redis
-summary: Explore Azure Cache for Redis, and learn how to use it with a Java and Spring Boot application.
+title: Accelerate a Spring Boot application with Azure Cache for Redis
+summary: Learn how to use Azure Cache for Redis to cache business data and HTTP session data in a Java Spring Boot application, then publish the application to the cloud.
 abstract: | 
- By the end of this tutorial, you'll be able to:
-  - Describe the main uses of Azure Cache for Redis.
-  - Use Azure Cache for Redis to cache business data through Spring Data Redis.
-  - Use Azure Cache for Redis to store HTTP session data through Spring Session.
+  - Describe and differentiate the main Azure Cache for Redis use cases.
+  - Configure a Spring Boot application to cache business objects through Spring Data Redis.
+  - Use Spring Session to store and replicate HTTP session data between server nodes.
 prerequisites:  |
-  - Familiarity with developing and running Java applications
-  - Beginner-level experience with cloud infrastructure
+  - Familiarity with developing and running Java applications.
+  - A Java JDK installed.
+  - A development environment with all necessary tools for building and running Java and Spring Boot applications.
+  - The Azure CLI installed.
+  - Access to an Azure subscription.
+  - Beginner-level experience with Azure cloud infrastructure.
 iconUrl: /training/achievements/accelerate-scale-spring-boot-application-azure-cache-redis.svg
 levels:
 - intermediate

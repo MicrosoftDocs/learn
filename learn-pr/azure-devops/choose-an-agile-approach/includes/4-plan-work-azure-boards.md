@@ -51,7 +51,7 @@ Now's a good time to add members to your team. Although not required, if you'd l
 
 Mara adds entries for herself and her team members: "andy@tailspintoys.com", "amita@tailspintoys.com", "mara@tailspintoys.com", and "tim@tailspintoys.com".
 
-In practice, you might manage your team through an identity and access management service like Azure Active Directory, and set the appropriate permission levels for each team member. We'll point you to more resources at the end of this module.
+In practice, you might manage your team through an identity and access management service like Microsoft Entra ID, and set the appropriate permission levels for each team member. We'll point you to more resources at the end of this module.
 
 ### Create the board
 

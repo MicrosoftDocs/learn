@@ -7,9 +7,9 @@ metadata:
   ms.date: 04/19/2023
   author: ramiMSFT
   ms.author: rabououn
-  ms.custom: devdivchpfy22
+  ms.custom: devdivchpfy22, devx-track-extended-java
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 15
 content: |
   [!include[](includes/4-deploy-kubernetes.md)]

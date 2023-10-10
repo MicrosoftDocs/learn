@@ -18,7 +18,7 @@ The building phase allows you to improve efficiencies when developing a strategy
 After you build and test your baseline OS, you can begin deploying them and ensure they're stable and usable. A typical deployment takes place in phases throughout the networking environment. The deployment team stabilizes each phase before progressing to performing upgrades or installations. You can use the early phases to validate scenarios such as device configuration profiles, image configurations, the end-user experience, application deployment success, and so forth.
 
 ### Enrollment
-With enrollment, there’s no operating system deployment. The existing device becomes a recognized entity within the organization and can access resources. For devices that already has Windows 10 and later, modern methods don't require the OS to be redeployed to configure the device. Instead, the device is reconfigured to the organization’s requirements by enrolling the device and using Windows Autopilot.
+With enrollment, there’s no operating system deployment. The existing device becomes a recognized entity within the organization and can access resources. For devices that already have Windows 10 and later, modern methods don't require the OS to be redeployed to configure the device. Instead, the device is reconfigured to the organization’s requirements by enrolling the device and using Windows Autopilot.
 
 You can also use enrollment for mobile devices and the support for bring-your-own-device (BYOD) scenarios. The scenarios supported can range from accessing e-mail utilizing the user’s personal device to deploying organizational applications and complete management of the device.
 

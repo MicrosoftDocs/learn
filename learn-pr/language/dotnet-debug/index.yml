@@ -6,6 +6,7 @@ metadata:
   ms.date: 10/28/2020
   author: jongalloway
   ms.author: jogallow
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: vs-code
 title: Interactively debug .NET apps with the Visual Studio Code debugger

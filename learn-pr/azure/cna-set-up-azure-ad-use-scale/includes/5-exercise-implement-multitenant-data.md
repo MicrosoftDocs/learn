@@ -2,28 +2,28 @@ This exercise takes you through the process of:
 
 - Installing Azure Database for PostgreSQL in the server deployment model.
 - Creating a database with sample inventory data.
-- Integrating the server with Azure AD.
-- Implementing a simple Node.js-based application that queries the database by relying on Azure AD authentication.
+- Integrating the server with Microsoft Entra ID.
+- Implementing a simple Node.js-based application that queries the database by relying on Microsoft Entra authentication.
 
 > [!NOTE]
-> This exercise illustrates a simplified approach to providing support for multiple tenants by emulating the multitenancy functionality of the Azure Database for the PostgreSQL Hyperscale deployment model. It also provides a simplified approach for implementing Azure AD authentication in multitenant scenarios by relying on the Azure AD B2B functionality. Azure AD directly supports multitenant applications, but their detailed coverage is outside the scope of this module.
+> This exercise illustrates a simplified approach to providing support for multiple tenants by emulating the multitenancy functionality of the Azure Database for the PostgreSQL Hyperscale deployment model. It also provides a simplified approach for implementing Microsoft Entra authentication in multitenant scenarios by relying on the Microsoft Entra B2B functionality. Microsoft Entra ID directly supports multitenant applications, but their detailed coverage is outside the scope of this module.
 
 In this exercise, you'll:
 
 - Create an instance of Azure Database for PostgreSQL server.
 - Connect to the Azure Database for PostgreSQL server.
 - Create a database and sample tables.
-- Integrate the Azure Database for PostgreSQL server with Azure AD.
-- Register an application with Azure AD.
-- Implement a simple, Azure AD-integrated Node.js-based application.
+- Integrate the Azure Database for PostgreSQL server with Microsoft Entra ID.
+- Register an application with Microsoft Entra ID.
+- Implement a simple, Microsoft Entra integrated Node.js-based application.
 - Validate the functionality of the Node.js-based application.
 
 ## Prerequisites
 
-To perform this exercise, you need:
+To perform this exercise, you'll need:
 
 - An Azure subscription.
-- A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 - To have completed the first exercise of this module.
 
 ## Create an instance of Azure Database for PostgreSQL server
@@ -31,9 +31,11 @@ To perform this exercise, you need:
 You'll start by creating an instance of Azure Database for PostgreSQL server:
 
 1. If needed, start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
-1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Database for PostgreSQL**, and in the list of results, in the **Marketplace** section, select **Azure Database for PostgreSQL**.
-1. On the **Select Azure Database for PostgreSQL deployment option** blade, on the **Single server** tile, select **Create**.
-1. On the **Basics** tab of the **Single server** blade, configure the following settings, and then select **Next: Review + create**, while leaving all other settings with their default values:
+1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Database for PostgreSQL**, and in the list of results, in the **Services** section, select **Azure Database for PostgreSQL**.
+1. On the **Azure Database for PostgreSQL servers** blade, select **+ Create**.
+1. On the **Select Azure Database for PostgreSQL deployment option** blade, on the **Azure Database for PostgreSQL** tile, for **Resource type** select **Single server**.
+1. Select **Create**.
+1. On the **Basics** tab of the **Single server** blade, configure the following settings, and then select **Review + create**, while leaving all other settings with their default values:
 
     | Setting | Configuration |
     | --- | --- |
@@ -59,8 +61,8 @@ You'll start by creating an instance of Azure Database for PostgreSQL server:
 
 With the Azure Database for PostgreSQL server provisioned, you'll connect to it by using the **psql** tool.
 
-1. Within the browser window displaying the Azure portal with the **Azure Database for PostgreSQL server provisioning status** blade, select **Go to resource**.
-1. On the **Azure Database for PostgreSQL server** blade, in the vertical menu, in the **Settings** section, select **Connection security**.
+1. In the **Microsoft.PostgreSQLServer.createPostgreSqlServer Overview** blade, select **Go to resource**.
+1. On the **Deployment** blade, in the vertical menu, in the **Settings** section, select **Connection security**.
 1. On the **Connection security** blade, set **Allow access to Azure services** to **Yes**, select **+ Add client IP**, set **Enforce SSL connection** to **DISABLED**, and then select **Save**.
 
     > [!NOTE]
@@ -69,14 +71,14 @@ With the Azure Database for PostgreSQL server provisioned, you'll connect to it 
     > [!NOTE]
     > Disabling the SSL enforcement is meant to simplify the subsequent exercises. In general, you should keep this setting enabled.
 
-1. Within the browser window displaying the Azure portal with the **Azure Database for PostgreSQL server** blade, in the vertical menu, select **Overview**.
+1. Within the browser window displaying the Azure portal with the **Deployment** blade, in the vertical menu, select **Overview**.
 1. In the **Essentials** section, identify the entries next to the **Server name** and **Admin username** labels and record their values.
 
     > [!NOTE]
     > Note that the username includes the **@** symbol followed by the server name you specified in the previous task.
 
-1. Within the browser window displaying the Azure portal with the **Azure Database for PostgreSQL server** blade, in the vertical menu, in the **Settings** section, select **Connection strings**.
-1. In the list of connection strings, copy the value of the **psql** connection string into the clipboard and record it, so you can use it later in this exercise.
+1. Within the browser window displaying the Azure portal with the **Azure Database for PostgreSQL single server** blade, in the vertical menu, in the **Settings** section, select **Connection strings**.
+1. In the list of connection strings, copy the value of the **psql** connection string and record it, so you can use it later in this exercise.
 
     > [!NOTE]
     >  The connection string has the following syntax, where the `<server_name>` placeholder represents the name of the server you identified previously in this task:
@@ -96,7 +98,7 @@ With the Azure Database for PostgreSQL server provisioned, you'll connect to it 
 
 ## Create a database and sample tables
 
-1. Within the browser window displaying the Azure portal with the Bash session on the **Cloud Shell** pane, from the `postgres=>` prompt, run the following command to create a new database named **cnamtinventory**:
+1. In the **Cloud Shell** pane, from the `postgres=>` prompt, run the following command to create a new database named **cnamtinventory**:
 
     ```t-sql
     CREATE DATABASE cnamtinventory;
@@ -169,16 +171,18 @@ With the Azure Database for PostgreSQL server provisioned, you'll connect to it 
 
 1. Close the **Cloud Shell** pane.
 
-## Integrate the Azure Database for PostgreSQL server with Azure AD
+<a name='integrate-the-azure-database-for-postgresql-server-with-azure-ad'></a>
 
-To integrate the Azure Database for PostgreSQL server instance with Azure AD, you must provide an Azure AD user account as the designated Active Directory admin of the server. You'll use for this purpose the **adatumadmin1** user account you created in the previous task. You need to sign in to the server using that user account. At that point, you'll be able to create Azure AD-based database users and assign to them database roles. You'll use for the **adatumuser1**, **adatumgroup1**, and **contosouser1** Azure AD objects you created in the previous exercise.
+## Integrate the Azure Database for PostgreSQL server with Microsoft Entra ID
+
+To integrate the Azure Database for PostgreSQL server instance with Microsoft Entra ID, you must provide a Microsoft Entra user account as the designated Active Directory admin of the server. You'll use for this purpose the **adatumadmin1** user account you created in the previous task. You need to sign in to the server using that user account. At that point, you'll be able to create Microsoft Entra ID-based database users and assign to them database roles. You'll use for the **adatumuser1**, **adatumgroup1**, and **contosouser1** Microsoft Entra objects you created in the previous exercise.
 
 1. Within the browser window displaying the Azure portal with the Azure Database for PostgreSQL server blade, in the vertical menu, in the **Settings** section, select **Active Directory admin**, and then in the toolbar, select **Set admin**.
-1. On the **Active Directory admin** blade, in the list of Azure AD user accounts, select the **adatumadmin1** user account you created in the previous exercise, select **Select**, and then select **Save**.
+1. On the **Active Directory admin** blade, in the list of Microsoft Entra user accounts, select the **adatumadmin1** user account you created in the previous exercise, select **Select**, and then select **Save**.
 1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in by using the **adatumadmin1** user account (with the **Pa55w.rd1234** password) you created in the previous exercise.
 1. In the Azure portal, open the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. When you're prompted to select either **Bash** or **PowerShell**, select **Bash**, and then when presented with the message **You have no storage mounted**, select **Create storage**.
-1. Within the Bash session on the **Cloud Shell** pane, run the following commands to retrieve and display an Azure AD access token required to access Azure Database for PostgreSQL:
+1. Within the Bash session on the **Cloud Shell** pane, run the following commands to retrieve and display a Microsoft Entra access token required to access Azure Database for PostgreSQL:
 
     ```azurecli
     FULL_TOKEN=$(az account get-access-token --resource-type oss-rdbms)
@@ -206,7 +210,7 @@ To integrate the Azure Database for PostgreSQL server instance with Azure AD, yo
     export PGPASSWORD=$(echo $FULL_TOKEN | jq -r '.accessToken')
     ```
 
-1. Run the following command to connect to the **cnamtinventory** database using the **psql** tool and by using Azure AD authentication (replace the `<server_name>` placeholder with the name of the server you identified previously in this exercise):
+1. Run the following command to connect to the **cnamtinventory** database using the **psql** tool and by using Microsoft Entra authentication (replace the `<server_name>` placeholder with the name of the server you identified previously in this exercise):
 
     ```azurecli
     DOMAIN_NAME=$(az rest --method GET --url 'https://management.azure.com/tenants?api-version=2020-01-01' --query "value[0].defaultDomain" -o tsv)
@@ -216,7 +220,7 @@ To integrate the Azure Database for PostgreSQL server instance with Azure AD, yo
     > [!NOTE]
     > When you successfully connect, you should be presented with the `cnamtinventory=>` prompt.
 
-1. From the `cnamtinventory=>` prompt, run the following command to create a database role corresponding to the **adatumgroup1** Azure AD group you created in the previous exercise:
+1. From the `cnamtinventory=>` prompt, run the following command to create a database role corresponding to the **adatumgroup1** Microsoft Entra group you created in the previous exercise:
 
     ```t-sql
     CREATE ROLE "adatumgroup1" WITH LOGIN IN ROLE azure_ad_user;
@@ -236,19 +240,21 @@ To integrate the Azure Database for PostgreSQL server instance with Azure AD, yo
 
 1. Sign out as the **adatumadmin1** user account and close the Incognito/InPrivate mode web browser window.
 
-## Register an application with Azure AD
+<a name='register-an-application-with-azure-ad'></a>
 
-To implement a sample Node.js-based application that uses Azure AD authentication to access an Azure Database for PostgreSQL database, you must create an Azure AD application object and the corresponding security principal. This will allow the Node.js-based application to impersonate Azure AD users when accessing database objects.
+## Register an application with Microsoft Entra ID
 
-1. Within the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Active Directory**, and in the list of results, select **Azure Active Directory**.
-1. On the Azure Active Directory blade, in the vertical menu, in the **Manage** section, select **App registrations**.
+To implement a sample Node.js-based application that uses Microsoft Entra authentication to access an Azure Database for PostgreSQL database, you must create a Microsoft Entra application object and the corresponding security principal. This will allow the Node.js-based application to impersonate Microsoft Entra users when accessing database objects.
+
+1. In the Azure portal, use the **Search resources, services, and docs** text box to search for **Microsoft Entra ID**, and in the list of results, select **Microsoft Entra ID**.
+1. On the Microsoft Entra blade, in the vertical menu, in the **Manage** section, select **App registrations**.
 1. On the **App registrations** blade, select **+ New registration**.
-1. On the **Register an application** blade, in the **Name** text box, enter **cna-app**. In the **Supported account types** section, ensure that the option **Accounts in this organizational directory only (Default Directory only - Single tenant)** is selected. In the **Redirect URI (optional)** section, set the **Web** entry to `http://localhost:8080/redirect`, and then select **Register**.
+1. On the **Register an application** blade, in the **Name** text box, enter **cna-app**. In the **Supported account types** section, ensure that the option **Accounts in this organizational directory only (Default directory only - Single tenant)** is selected. In the **Redirect URI (optional)** section, set the **Web** entry to `http://localhost:8080/redirect`, and then select **Register**.
 
     :::image type="content" source="../media/5-azure-ad-node-js-app-register.png" alt-text="Screenshot of the Register an application blade in the Azure portal.":::
 
     > [!NOTE]
-    > You have the option of configuring multitenant support for your Azure AD registered applications. However, detailed coverage of this approach is outside of the scope of this module.
+    > You have the option of configuring multitenant support for your Microsoft Entra registered applications. However, detailed coverage of this approach is outside the scope of this module.
 
     > [!NOTE]
     > After you deploy your application, you'll need to modify the **Redirect URI (optional)** value to reflect its actual URL.
@@ -267,7 +273,7 @@ To implement a sample Node.js-based application that uses Azure AD authenticatio
     > [!NOTE]
     > Make sure to copy the value of the secret before you navigate away from this blade, because at that point, you'll no longer be able to retrieve it. If that happens, create another secret.
 
-    :::image type="content" source="../media/5-azure-ad-node-js-app-added-secret-.png" alt-text="Screenshot of the value of the client secret on the cna-app Certificates & secrets blade in the Azure portal.":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-added-secret.png" alt-text="Screenshot of the value of the client secret on the cna-app Certificates & secrets blade in the Azure portal.":::
 
 1. On the **cna-app \| Certificates & secrets** blade, in the vertical menu, in the **Manage** section, select **API permissions**.
 
@@ -277,7 +283,7 @@ To implement a sample Node.js-based application that uses Azure AD authenticatio
 
     :::image type="content" source="../media/5-azure-ad-node-js-app-configure-api-permissions-ossrdbms.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal.":::
 
-1. On the **Request API permission** blade, select **Delegated permissions**, select the **user_impersonation** checkbox, and then select **Add permission**.
+1. On the **Request API permission** blade, select **Delegated permissions**, select the **user_impersonation** checkbox, and then select **Add permissions**.
 
     :::image type="content" source="../media/5-azure-ad-node-js-app-configure-api-permissions-ossrdbms-impersonation.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal, with the Delegated permissions option selected.":::
 
@@ -289,11 +295,13 @@ To implement a sample Node.js-based application that uses Azure AD authenticatio
 
     :::image type="content" source="../media/5-azure-ad-node-js-app-configure-api-permissions-granted.png" alt-text="Screenshot of the cna-app API permissions blade in the Azure portal, with the consent and permissions granted.":::
 
-## Implement a simple, Azure AD-integrated Node.js-based application
+<a name='implement-a-simple-azure-ad-integrated-nodejs-based-application'></a>
 
-With the application registered in the Azure AD tenant, you can now proceed with its implementation.
+## Implement a simple, Microsoft Entra integrated Node.js-based application
 
-1. Within the browser window displaying the Azure portal, start a Bash session within the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
+With the application registered in the Microsoft Entra tenant, you can now proceed with its implementation.
+
+1. In the Azure portal, start a Bash session within the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. Within the Bash session on the **Cloud Shell** pane, run the following commands to initialize a Node.js project in a new directory:
 
     ```azurecli
@@ -315,7 +323,7 @@ With the application registered in the Azure AD tenant, you can now proceed with
     touch ./index.js
     ```
 
-1. Use the nano editor to open the file **index.js** and add the following content. Replace the placeholders `<client_id>`, `<tenant_id>`, `<client_secret>`, and `<server_name>` (excluding the `postgres.database.azure.com` suffix) with their actual values you recorded earlier in this exercise:
+1. Use the nano editor to open the file **index.js** and add the following content. You'll create an app name later in this unit to replace the placeholder `<webapp_name>`. Replace `<client_id>`, `<tenant_id>`, `<client_secret>`, and `<server_name>` (excluding the `.postgres.database.azure.com` suffix) with their actual values you recorded earlier in this exercise:
 
     > [!NOTE]
     > The placeholders `<client_id>` and `<tenant_id>` correspond to the **Application (client) ID** and the **Directory (tenant) ID** properties referenced earlier in this exercise.
@@ -438,12 +446,12 @@ With the application registered in the Azure AD tenant, you can now proceed with
     ```
 
     > [!NOTE]
-    > A multitenant Azure AD-registered application uses the generic authority URL `authority: "https://login.microsoftonline.com/common"`, but in your case, you need to use a single-tenant URL that includes your tenant ID.
+    > A multitenant Microsoft Entra registered application uses the generic authority URL `authority: "https://login.microsoftonline.com/common"`, but in your case, you need to use a single-tenant URL that includes your tenant ID.
 
     > [!NOTE]
-    > Keep in mind that after you deploy the application, you'll need to replace the value of **REDIRECT URL** to match its actual redirect URL.
+    > Keep in mind that after you deploy the application, you'll need to replace the value of **REDIRECT URL** with its actual redirect URL.
 
-1. Use the code editor to edit the **package.json** file in the root of the project and replace it with the following content:
+1. Use the nano editor to edit the **package.json** file in the root of the project and replace it with the following content:
 
     ```json
     {
@@ -471,7 +479,7 @@ With the application registered in the Azure AD tenant, you can now proceed with
 
 You're finally ready to test the functionality of your web app. While you could containerize it, for the sake of simplicity, you'll deploy it to an Azure App Service. This will provide a quick way to validate its functionality and ensure that containerizing it is a viable option.
 
-1. Within the web browser window displaying the Azure portal, from the Bash session on the **Cloud Shell** pane, run the following commands to create a resource group that will host the Azure web app, into which you'll deploy the Node.js Express app:
+1. In the Bash session on the **Cloud Shell** pane, run the following commands to create a resource group that will host the Azure web app, into which you'll deploy the Node.js Express app:
 
     ```azurecli
     RG1NAME=postgresql-db-RG
@@ -491,7 +499,7 @@ You're finally ready to test the functionality of your web app. While you could 
 
     ```azurecli
     WEBAPPNAME=aadexpress$RANDOM$RANDOM
-    az webapp create --name $WEBAPPNAME --resource-group $RG2NAME --plan $SPNAME --runtime "NODE|12-lts"
+    az webapp create --name $WEBAPPNAME --resource-group $RG2NAME --plan $SPNAME --runtime "NODE|16-lts"
     ```
 
 1. Run the following commands to identify the name of the web app:
@@ -500,14 +508,14 @@ You're finally ready to test the functionality of your web app. While you could 
     echo $WEBAPPNAME
     ```
 
-1. Use the code editor to open the **index.js** file, replace two `<webapp_name>` placeholders with the name you identified in the previous step, save your changes, and close the file.
+1. Use the nano editor to open the **index.js** file, replace two `<webapp_name>` placeholders with the name you identified in the previous step, save your changes, and close the file.
 
     > [!NOTE]
     > Make sure to replace both `<webapp_name>` placeholders.
 
 1. Open another tab in the web browser window displaying the Azure portal, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and, if prompted, sign in to access the Azure subscription you'll be using in this module.
-1. In the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.
-1. On the Azure Active Directory blade, navigate to the **App registrations** blade, select the **cna-app** entry, in the vertical menu, in the **Manage** section, select **Authentication**.
+1. In the Azure portal, use the **Search resources, services, and docs** text box to search for **Microsoft Entra ID** and, in the list of results, select **Microsoft Entra ID**.
+1. On the Microsoft Entra blade, navigate to the **App registrations** blade, select the **cna-app** entry, in the vertical menu, in the **Manage** section, select **Authentication**.
 1. On the **cna-app \| Authentication** blade, modify the value of the **Redirect URI** to match the entry you updated in the **index.js** file and save the change.
 
     :::image type="content" source="../media/5-azure-ad-node-js-app-redirect-uri-update.png" alt-text="Screenshot of the cna-app Authentication blade in the Azure portal.":::
@@ -552,28 +560,28 @@ You're finally ready to test the functionality of your web app. While you could 
     git remote add azure $DEPLOYMENTURL
     ```
 
-1. Run the following commands to create the **master** branch based on the **main** branch and push its contents to the Azure Web app (when prompted for the password that's part of the user-level deployment credentials you recorded previously in this task):
+1. Run the following commands to create the **test** branch based on the **main** branch and push its contents to the Azure Web app (when prompted for the password that's part of the user-level deployment credentials you recorded previously in this task):
 
     ```azurecli
-    git checkout -b master
-    git commit -a -m "test"
-    git push --set-upstream azure master
+    git checkout -b test
+    git commit -a -m "testing"
+    git push --set-upstream azure test
     ```
 
-1. Close the Cloud Shell pane.
+1. Close the **Cloud Shell** pane.
 1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in by using the **adatumuser1** user account you created in the previous exercise.
-1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **App Services**.
+1. In the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **App Services**.
 1. On the **App Services** blade, in the list of App Service instances, select the entry representing the newly deployed Azure web app.
-1. On the blade displaying the properties of the web app, in the **Essentials** section, copy the value of the URL.
-1. Open another tab in the same browser window and in the **URL** tab, paste the URL you just copied to the clipboard, add the **/auth** suffix at the end of the URL, and then select Enter:
+1. On the blade displaying the properties of the web app, in the **Essentials** section, copy the value of the **Default domain** URL.
+1. Open another tab in the same browser window and in its search box, enter **https://**, paste the URL you just copied to the clipboard, add the **/auth** suffix, and select Enter.
 
     > [!NOTE]
     > The URL should have the following format: `https://<webapp_name>.azurewebsites.net/auth`
 
-1. Verify that the resulting webpage consists of the Azure AD authentication information for the currently signed-in user (the output might differ).
+1. Verify that the resulting webpage consists of the Microsoft Entra authentication information for the currently signed-in user (the output might differ).
 
-    :::image type="content" source="../media/5-azure-ad-node-js-app-output-page.png" alt-text="Screenshot of the page of the Node.js web app displaying the Azure AD authentication information." lightbox="../media/5-azure-ad-node-js-app-output-page.png":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-output-page.png" alt-text="Screenshot of the page of the Node.js web app displaying the Microsoft Entra authentication information." lightbox="../media/5-azure-ad-node-js-app-output-page.png":::
 
 ## Results
 
-Congratulations! You've completed the second exercise of this module. In this exercise, you installed Azure Database for PostgreSQL in the single server deployment model, created a database with sample inventory data, integrated the server with Azure AD, and implemented a simple Node.js-based application that queries the database by relying on Azure AD authentication.
+Congratulations! You've completed the second exercise of this module. In this exercise, you installed Azure Database for PostgreSQL in the single server deployment model, created a database with sample inventory data, integrated the server with Microsoft Entra ID, and implemented a simple Node.js-based application that queries the database by relying on Microsoft Entra authentication.

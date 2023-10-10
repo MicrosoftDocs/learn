@@ -23,3 +23,4 @@ Then you create a Traffic Manager profile based on endpoint priority. This profi
 > You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 [![Screenshot of the simulation page.](../media/simulation-traffic-manager-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20a%20Traffic%20Manager%20profile%20using%20the%20Azure%20portal)
+

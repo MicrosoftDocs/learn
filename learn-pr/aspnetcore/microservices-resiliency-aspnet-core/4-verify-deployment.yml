@@ -5,6 +5,7 @@ metadata:
   description: Confirm the deployment of the microservices app to AKS and test the app.
   author: scottaddie
   ms.author: scaddie
+  ms.manager: markl
   ms.date: 05/09/2023
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial

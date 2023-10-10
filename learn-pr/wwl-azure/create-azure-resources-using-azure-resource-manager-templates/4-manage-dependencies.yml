@@ -4,13 +4,11 @@ title: Manage dependencies
 metadata:
   title: Manage dependencies
   description: "Manage dependencies"
-  ms.date: 05/17/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+durationInMinutes: 3
 content: |
   [!include[](includes/4-manage-dependencies.md)]

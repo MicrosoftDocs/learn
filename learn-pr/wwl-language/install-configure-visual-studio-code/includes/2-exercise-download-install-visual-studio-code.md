@@ -1,6 +1,3 @@
-
-
-
 Visual Studio Code is a lightweight but powerful source code editor that runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages and runtimes (such as C++, C#, Java, Python, PHP, Go, .NET).
 
 ## Download Visual Studio Code
@@ -18,10 +15,12 @@ Getting up and running with Visual Studio Code is quick and easy. It's a small d
   
 1. Wait for the installer file to finish downloading.
 
-    The name of the installer file will be similar to the following (for a Windows PC): VSCodeUserSetup-x64-1.75.1.exe.
+    The name of the installer file will be similar to the following (for a Windows PC): VSCodeUserSetup-x64-1.81.0.exe.
 
     > [!NOTE]
     > The file name depends on the current version of Visual Studio Code and your computer’s operating system.
+
+1. Close your browser window.
 
 ## Install Visual Studio Code
 
@@ -31,7 +30,10 @@ Visual Studio Code is lightweight and should run on most available hardware and 
 
 1. In your file explorer application, select and run the Visual Studio Code installer file.
 
-    On a Windows PC, you can double-click the installer file to begin the install process. For example, double-click **VSCodeUserSetup-x64-1.75.1**
+    On a Windows PC, you can double-click the installer file to begin the install process. For example, double-click **VSCodeUserSetup-x64-1.81.0**
+
+    > [!NOTE]
+    > You can install Visual Studio Code using either the User Installer or System Installer. The User Installer installs Visual Studio Code just for the current user, while the System Installer installs Visual Studio Code for all users. The User Installer is the recommended option for most users.
 
     After a moment, the **Setup - Microsoft Visual Studio Code** dialog window will appear.
 
@@ -43,4 +45,8 @@ Visual Studio Code is lightweight and should run on most available hardware and 
 
     For detailed installation instructions, see the following Visual Studio Code documentation page: [https://code.visualstudio.com/docs/setup/windows](https://code.visualstudio.com/docs/setup/windows).
 
-Congratulations, you've installed Visual Studio Code and are ready to start exploring this great integrated development environment!
+1. If Visual Studio Code opened at the end of the installation, close it now.
+
+    You'll be examining Visual Studio Code a little later in this module.
+
+Congratulations, you've installed Visual Studio Code, the integrated development environment that you'll be using to *write* C# applications. Your next step is to install the .NET runtime, the code library that's required to *run* your C# applications.

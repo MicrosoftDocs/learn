@@ -6,11 +6,12 @@ metadata:
   ms.date: 04/11/2023
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.service: app-service
+  manager: mijacobs
 title: Stage a web app deployment for testing and rollback by using App Service deployment slots
 summary: Use deployment slots to streamline deployment and roll back a web app in Azure App Service.
-abstract: | 
+abstract: |
   In this module, you will:
   - Create a deployment slot as a staging environment in App Service.
   - Deploy a new version of a web app to a slot by using git.
@@ -25,9 +26,7 @@ roles:
 - developer
 products:
 - azure
-- dotnet
 - aspnet-core
-- dotnet-core
 subjects:
 - cloud-computing
 units:

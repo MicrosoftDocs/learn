@@ -1,5 +1,6 @@
 
 
+
 Now, it's your chance to explore how to work with compute resources in Azure Machine Learning.
 
 In this exercise, you will:

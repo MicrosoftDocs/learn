@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-incident-readiness
+metadata:
+  title: Introduction to Azure Incident Readiness
+  description: "This Azure Incident Readiness module focuses on preparedness and proactive measures for managing Azure incidents. It provides guidance on getting notified and staying informed, building secure and resilient applications, understanding the incident process including information relating to our post incident reviews (PIRs), and when to engage support. Additionally, customers with support contracts will receive information on building their Major Incident Response Plan with their Microsoft account team."
+  ms.date: 6/25/2023
+  author: rmcmurray
+  ms.author: keall
+  ms.topic: module-intro-to-product
+  ms.prod: learning-azure
+  ms.service: azure
+title: Introduction to Azure Incident Readiness
+summary: |
+  This Azure Incident Readiness module focuses on preparedness and proactive measures for managing Azure incidents. It provides guidance on getting notified and staying informed, building secure and resilient applications, understanding the incident process including information relating to our post incident reviews (PIRs), and when to engage support. Additionally, customers with support contracts will receive information on building their Major Incident Response Plan with their Microsoft account team.
+abstract: |
+  By the end of this module, you can expect to:
+
+  - Know Azure's incident communications principles, which serve as our framework for customer notifications and updates. 
+  - Learn how Azure communicates with you during incidents and, most importantly, how you can consume this information.
+  - Be familiar with how you can build more resilient, secure workloads, enabling you to potentially avoid or minimize incident impact.
+  - Understand where to go and what to do during Azure incidents. And be knowledgeable of the outcomes following an incident. 
+  - Know when you should contact Microsoft and open a support ticket
+prerequisites: |
+  - None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - support-engineer
+products:
+- azure
+units:
+- learn.intro-to-azure-incident-readiness.introduction
+- learn.intro-to-azure-incident-readiness.communication-philosophy
+- learn.intro-to-azure-incident-readiness.prepare-for-unexpected
+- learn.intro-to-azure-incident-readiness.what-to-expect
+- learn.intro-to-azure-incident-readiness.after-an-incident
+- learn.intro-to-azure-incident-readiness.when-to-engage-support
+- learn.intro-to-azure-incident-readiness.summary
+badge:
+  uid: learn.intro-to-azure-incident-readiness.badge

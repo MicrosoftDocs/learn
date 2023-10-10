@@ -8,6 +8,8 @@ metadata:
   author: chasecrum
   ms.author: chasecrum
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-bicep
   ms.prod: learning-azure
 durationInMinutes: 17
 content: |

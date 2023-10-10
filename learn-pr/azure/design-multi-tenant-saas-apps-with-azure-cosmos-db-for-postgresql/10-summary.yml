@@ -3,7 +3,7 @@ uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.sum
 title: Summary
 metadata:
   title: summary
-  description: "In this module, you learned how to efficiently scale and monitor an Azure Cosmos DB for PostgreSQL cluster for multi-tenant SaaS applications."
+  description: "In this module, you learned how to efficiently scale and monitor an Azure Cosmos DB for PostgreSQL cluster for multitenant SaaS applications."
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
@@ -11,7 +11,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/10-summary.md)]

@@ -4,11 +4,10 @@ title: Choose the right data type
 metadata:
   title: Choose the right data type
   description: "Choose the right data type"
-  ms.date: 05/04/2023
+  ms.date: 09/12/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/6-choose-right-data-type.md)]

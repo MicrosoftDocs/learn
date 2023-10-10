@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "On the CEF Connector page"
       isCorrect: false
-      explanation: "Incorrect.  This will not show the number of Windows hosts connected."
-    - content: "On the Agent Management page in Log Analytics"
+      explanation: "Incorrect. This won't show the number of Windows hosts connected."
+    - content: "On the Agents page in Log Analytics"
       isCorrect: true
-      explanation: "Correct.  This page will display the hosts connected."
+      explanation: "Correct. This page displays the hosts connected."
     - content: "On the Data connectors page"
       isCorrect: false
-      explanation: "Incorrect. This will show the number of connectors, not the number of hosts."
+      explanation: "Incorrect. This shows the number of connectors, not the number of hosts."
   - content: "Which connector provides the log data in an unparsed field?"
     choices:
     - content: "Azure Active Directory"

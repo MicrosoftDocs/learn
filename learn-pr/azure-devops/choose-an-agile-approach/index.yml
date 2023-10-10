@@ -7,8 +7,9 @@ metadata:
   ms.custom: devdivchpfy22
   author: chcomley
   ms.author: chcomley
-  ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
+  ms.topic: module-standard-task-based
+  ms.service: azure-devops
+  manager: mijacobs
 title: Choose an Agile approach to software development
 summary: Learn to foster the DevOps values of transparency and team cooperation with Azure Boards.
 abstract: |

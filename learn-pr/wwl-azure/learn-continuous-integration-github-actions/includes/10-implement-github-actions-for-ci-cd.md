@@ -1,3 +1,4 @@
+
 **Estimated time:** 40 minutes.
 
 **Lab files:** none.
@@ -29,4 +30,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 2: Remove the Azure lab resources.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M03_L05_Implementing_GitHub_Actions_for_CI_CD.html)
+](https://aka.ms/az-400-implement-github-actions-for-ci-cd)

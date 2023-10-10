@@ -53,6 +53,7 @@ units:
 - learn.wwl.configure-validate-permissions.configure-validate-pipeline-permissions
 - learn.wwl.configure-validate-permissions.configure-validate-approval-branch-checks
 - learn.wwl.configure-validate-permissions.manage-audit-permissions
+- learn.wwl.configure-validate-permissions.lab-configure-and-validate-permissions
 - learn.wwl.configure-validate-permissions.knowledge-check
 - learn.wwl.configure-validate-permissions.summary
 badge:

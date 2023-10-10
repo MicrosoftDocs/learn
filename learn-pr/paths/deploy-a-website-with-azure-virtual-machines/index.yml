@@ -27,7 +27,8 @@ subjects:
 - virtual-machine
 modules:
 - learn.introduction-to-azure-virtual-machines
-- learn.create-linux-vm-in-azure
+- learn.plan-your-linux-environment-in-azure
+- learn.provision-linux-virtual-machine-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm
 trophy:

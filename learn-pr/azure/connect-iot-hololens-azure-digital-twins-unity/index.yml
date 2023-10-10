@@ -23,8 +23,8 @@ prerequisites: |
   - A 3D scene in Unity that uses the Bing Maps SDK module
   - Configured 3D assets in a Unity scene module
   - Azure service creation and configuration knowledge
-  - Domain User Azure Active Directory permissions (not Guest)
   - [The Azure CLI for Windows](/cli/azure/install-azure-cli-windows?tabs=azure-cli)
+  - Domain User Microsoft Entra ID (not Guest)
   - Basic Azure CLI knowledge
   - Basic Azure PowerShell knowledge
   - Desktop Development with C++ workload installed in Visual Studio
@@ -39,7 +39,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 - azure-digital-twins
 - azure-iot
 - azure-iot-hub

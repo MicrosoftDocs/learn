@@ -3,10 +3,11 @@ uid: learn.wwl.explore-continuous-integration
 metadata:
   title: Explore continuous integration
   description: "Explore continuous integration"
-  ms.date: 05/17/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
 title: Explore continuous integration
 summary: This module details continuous integration practice and the pillars for implementing it in the development lifecycle, its benefits, and properties.
 abstract: |

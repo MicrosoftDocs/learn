@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-operational-excellence.3-use-monitoring-and-an
 title: Use monitoring and analytics to gain operational insights
 metadata:
   title: Use monitoring and analytics to gain operational insights
-  description: In this unit, we'll discuss how to use monitoring and analytics to gain operational insights into your application's performance.
+  description: In this unit, we discuss how to use monitoring and analytics to gain operational insights into your application's performance.
   ms.date: 05/19/2020
   author: martinekuan
   ms.author: martinek
@@ -16,32 +16,32 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following would you use to troubleshoot the performance of API calls in your application?'
+  - content: 'Which of the following services would you use to troubleshoot the performance of API calls in your application?'
     choices:
     - content: 'Service Health'
       isCorrect: false
-      explanation: 'Azure Service Health will give you insight into the health of Azure services, but will not provide insight into your application.'
+      explanation: "Azure Service Health gives you insight into the health of Azure services, but doesn't provide insight into your application."
     - content: 'Network Watcher'
       isCorrect: false
-      explanation: 'Azure Network Watcher will help you troubleshoot network performance issues, but will not provide insight into your application.'
+      explanation: "Azure Network Watcher helps you troubleshoot network performance issues, but doesn't provide insight into your application."
     - content: 'Activity Log'
       isCorrect: false
-      explanation: 'Azure Activity Log will log events that have been performed on your resources on the Azure platform, but will not provide insight into your application.'
+      explanation: "Azure Activity Log logs events that have been performed on your resources on the Azure platform, but doesn't provide insight into your application."
     - content: 'Application Insights'
       isCorrect: true
-      explanation: 'Application Insights will help you detect and diagnose issues and understand usage for your web apps, services, and API calls in your application.'
+      explanation: 'Application Insights helps you detect and diagnose issues and understand usage for your web apps, services, and API calls in your application.'
 
   - content: 'Which of the following services would you use to identify who deleted a virtual machine?'
     choices:
     - content: 'Service Health'
       isCorrect: false
-      explanation: 'Azure Service Health will give you insight into the health of Azure services, but will not provide insight into actions performed on your resources.'
+      explanation: "Azure Service Health gives you insight into the health of Azure services, but doesn't provide insight into actions performed on your resources."
     - content: 'Network Watcher'
       isCorrect: false
-      explanation: 'Azure Network Watcher will help you troubleshoot network performance issues, but will not provide insight into actions performed on your resources.'
+      explanation: "Azure Network Watcher helps you troubleshoot network performance issues, but doesn't provide insight into actions performed on your resources."
     - content: 'Activity Log'
       isCorrect: true
       explanation: 'Azure Activity Log records all events that have been performed on your resources on the Azure platform, including deletion of resources.'
     - content: 'Application Insights'
       isCorrect: false
-      explanation: 'Application Insights will help you detect and diagnose issues and understand usage for your web apps and services, but will not provide insight into actions performed on your resources.'
+      explanation: "Application Insights helps you detect and diagnose issues and understand usage for your web apps and services, but doesn't provide insight into actions performed on your resources."

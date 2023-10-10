@@ -8,7 +8,7 @@ metadata:
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
 durationInMinutes: 50
 content: |
   [!include[](includes/4-integrate-deployed-technologies.md)]

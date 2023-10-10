@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: 'SC-200: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
 prerequisites: |
   Basic understanding of scripting concepts.
@@ -20,7 +20,7 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - threat-protection
 - data-analytics

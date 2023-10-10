@@ -24,7 +24,7 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-security-center
+- defender-for-cloud
 subjects:
 - threat-protection
 units:

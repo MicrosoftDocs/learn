@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transition-your-business-azure.identify-your-cloud-motivations
+title: Identify your cloud motivations
+metadata:
+  title: Identify your cloud motivations
+  description: "Identify your cloud motivations"
+  ms.date: 07/18/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-identify-your-cloud-motivations.md)]
+interactive: bash

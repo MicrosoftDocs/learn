@@ -3,9 +3,10 @@ uid: learn.languages.dotnet-deploy-microservices-kubernetes
 metadata:
   title: Deploy a .NET microservice to Kubernetes
   description: Microservice applications are composed of small, independently versioned, and scalable customer-focused services. Microservices applications deployed in containers make it possible to scale out apps, and respond to increased demand by deploying more container instances, and to scale back if demand is decreasing. In complex solutions of many microservices the process of deploying, updating, monitoring, and removing containers introduces challenges. This module explains some of those challenges and shows how Kubernetes can help.
-  ms.date: 08/13/2021
+  ms.date: 07/17/2023
   author: codemillmatt
   ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.custom:
   - team=cloud_advocates
@@ -15,17 +16,17 @@ metadata:
 title: Deploy a .NET microservice to Kubernetes
 summary: Microservice applications are composed of small, independently versioned, and scalable customer-focused services. Microservices applications deployed in containers make it possible to scale out apps, and respond to increased demand by deploying more container instances, and to scale back if demand is decreasing. In complex solutions of many microservices the process of deploying, updating, monitoring, and removing containers introduces challenges. This module explains some of those challenges and shows how Kubernetes can help.
 abstract: |
-  In this module you will:
+  In this module, you will:
     
   - Learn the concepts behind orchestrators and why you might need them.
   - Take an existing .NET microservice hosted in a Docker container and push it to Docker Hub.
   - Deploy the microservice from Docker Hub to a local Kubernetes instance.
   - Learn how to scale a container instance in a Kubernetes cluster.
 prerequisites: |
-  - Familiarity with basic Docker concepts and a Docker account.
-  - Familiarity with microservice design.
-  - Docker Desktop installed.
-  - Visual Studio Code installed.
+  - Familiarity with basic Docker concepts and a Docker account
+  - Familiarity with microservice design
+  - Docker Desktop installed
+  - Visual Studio Code installed
 ratingEnabled: true
 iconUrl: /training/achievements/dotnet-deploy-microservices-kubernetes.svg
 levels:

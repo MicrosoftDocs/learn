@@ -14,7 +14,7 @@ To run the quickstart script:
 
    > [!NOTE]
    > By default, Visual Studio Code displays *k8s* on the same line as *deploy* because *deploy*  contains only the *k8s* subdirectory.
-   
+
 1. Right-click the *k8s* directory and select **Open in Integrated Terminal**.
 
    ![Screenshot of the Explorer pane in Visual Studio Code, showing the context menu for the k8s folder with Open in Integrated Terminal selected.](../media/2-deploy-application/k8s-path.png)

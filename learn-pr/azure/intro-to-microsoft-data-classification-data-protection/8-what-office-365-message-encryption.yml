@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.data-classification-and-data-protection.8-what-office-365-message-encryption
-title: What is Office 365 Message Encryption?
+title: Microsoft Purview Message Encryption
 metadata:
-  title: What is Office 365 Message Encryption?
+  title: Microsoft Purview Message Encryption
   description: What is Office 365 Message Encryption?
   ms.date: 03/25/2021
   author: cwatson-cat

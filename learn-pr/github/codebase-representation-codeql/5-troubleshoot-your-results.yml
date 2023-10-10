@@ -9,6 +9,8 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-python
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

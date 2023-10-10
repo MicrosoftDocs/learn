@@ -56,6 +56,7 @@ units:
 - learn.wwl.manage-identity-projects-pipelines-agents.configure-agent-identities
 - learn.wwl.manage-identity-projects-pipelines-agents.configure-scope-service-connection
 - learn.wwl.manage-identity-projects-pipelines-agents.understand-convert-managed-identity
+- learn.wwl.manage-identity-projects-pipelines-agents.lab-manage-identity-projects-pipelines
 - learn.wwl.manage-identity-projects-pipelines-agents.knowledge-check
 - learn.wwl.manage-identity-projects-pipelines-agents.summary
 badge:

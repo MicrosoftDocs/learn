@@ -10,7 +10,7 @@ Attack surface reduction rules target certain software behaviors that are often 
 
 Such software behaviors are sometimes seen in legitimate applications; however, these behaviors are often considered risky because they're commonly abused by malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe.
 
-Each Attack Surface Reduction rule contains one of three settings:
+Each Attack Surface Reduction rule contains one of four settings:
 
 - **Not configured**: Disable the attack surface reduction rule
 

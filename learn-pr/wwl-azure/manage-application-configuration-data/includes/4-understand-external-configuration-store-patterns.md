@@ -1,3 +1,4 @@
+
 These patterns store the configuration information in an external location and provide an interface that can be used to quickly and efficiently read and update configuration settings.
 
 The type of external store depends on the hosting and runtime environment of the application.

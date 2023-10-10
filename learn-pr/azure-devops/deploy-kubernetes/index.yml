@@ -9,6 +9,7 @@ metadata:
   ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   ms.service: Azure Pipelines
+  manager: mijacobs
 title: Automate multi-container Kubernetes deployments with Azure Pipelines
 summary: Deploy multiple containers to AKS cluster with Azure Pipelines.
 abstract: |

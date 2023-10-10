@@ -32,7 +32,8 @@ subjects:
 modules:
 - learn.azure-well-architected-security
 - learn.azure-security.create-security-baselines
-- learn.create-linux-vm-in-azure
+- learn.plan-your-linux-environment-in-azure
+- learn.provision-linux-virtual-machine-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.secure-your-azure-virtual-machine-disks
 - learn.azure-security.secure-vms-with-security-center

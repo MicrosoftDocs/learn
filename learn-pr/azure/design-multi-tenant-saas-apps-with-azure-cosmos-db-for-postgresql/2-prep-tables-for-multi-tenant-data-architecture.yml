@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.prep-tables-for-multi-tenant-data-architecture
-title: Prepare tables for a multi-tenant data architecture
+title: Prepare tables for a multitenant data architecture
 metadata:
-  title: Prepare tables for a multi-tenant data architecture
-  description: "Migrating a multi-tenant database from a single to a multi-node Azure Cosmos DB for PostgreSQL cluster can be accomplished quickly and easily in the Azure portal. However, there's some planning and work that you must complete to prepare the database for a multi-tenant architecture."
+  title: Prepare tables for a multitenant data architecture
+  description: "Prepare the database for a multitenant architecture."
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
@@ -11,7 +11,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/2-prep-tables-for-multi-tenant-data-architecture.md)]

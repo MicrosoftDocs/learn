@@ -7,16 +7,16 @@ metadata:
   author: lauradolan
   ms.author: ladolan
   ms.topic: interactive-tutorial
-  ms.service: batch 
+  ms.service: batch
 title: Create an app to run parallel compute jobs in Azure Batch
 summary: Azure Batch is a Platform as a Service (PaaS) provided by Microsoft to run large-scale parallel, high performant, computing applications in Azure. In this module you'll write a .NET Core console app to perform video transcoding, in parallel, with Azure Batch services.
-abstract: | 
+abstract: |
   In this module, you will:
   - Build and run an Azure Batch job from a .NET app
   - Add an application package to a Batch account
   - Interact programmatically with Batch and Storage resources
   - Manage a Batch programmatically
-prerequisites: | 
+prerequisites: |
   - Working knowledge of Azure and the Azure portal
   - Familiarity with Azure Batch
   - Experience developing .NET apps
@@ -27,9 +27,8 @@ roles:
 - developer
 products:
 - azure
-- dotnet
-- dotnet-core
 - azure-batch
+- dotnet
 subjects:
 - cloud-computing
 units:

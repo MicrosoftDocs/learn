@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.explore-fundamentals-kql.exercise-1
+title: "Exercise: Sample queries"
+metadata:
+  title: "Exercise: Sample queries"
+  description: "Start exploring KQL by running some simple sample queries in any of the available demo environments."
+  ms.date: 06/07/2023
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-exercise.md)]

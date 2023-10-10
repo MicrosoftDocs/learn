@@ -3,11 +3,10 @@ uid: learn.wwl.automate-azure-virtual-desktop-management-tasks
 metadata:
   title: Automate Azure Virtual Desktop management tasks
   description: "Automate Azure Virtual Desktop management tasks"
-  ms.date: 03/15/2022
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.service: virtual-desktop
 title: Automate Azure Virtual Desktop management tasks
 summary: Reduce Azure Virtual Desktop deployment costs by scaling virtual machines (VMs). This means shutting down and deallocating session host VMs during off-peak usage hours, then turning them back on and reallocating them during peak hours.
 abstract: |
@@ -16,8 +15,9 @@ abstract: |
   *  Create or update an Azure Automation account.
   *  Create an Azure Automation Run As account.
   *  Create the Azure Logic App and execution schedule.
-prerequisites: ""
-iconUrl: /training/achievements/2-automate-azure-virtual-desktop-management-tasks.svg
+prerequisites: |
+  None
+iconUrl: /learn/achievements/2-automate-azure-virtual-desktop-management-tasks.svg
 levels:
 - intermediate
 roles:

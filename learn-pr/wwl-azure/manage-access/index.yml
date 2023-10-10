@@ -3,7 +3,7 @@ uid: learn.wwl.manage-access
 metadata:
   title: Manage access for Azure Virtual Desktop
   description: "Manage access for Azure Virtual Desktop"
-  ms.date: 08/04/2022
+  ms.date: 06/05/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -15,7 +15,8 @@ abstract: |
   *  Describe Azure role-based access controls (RBAC) for Azure Virtual Desktop.
   *  Plan and implement Azure roles and RBAC for Azure Virtual Desktop.
   *  Describe how to configure Azure Virtual Desktop with Intune.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/1-manage-access.svg
 levels:
 - intermediate

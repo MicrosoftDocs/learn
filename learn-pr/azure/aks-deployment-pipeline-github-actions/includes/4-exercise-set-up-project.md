@@ -1,4 +1,4 @@
-Now that we understand what we need to do, let's create our resources and publish our pipeline.
+Now that we understand the design, let's create our resources and publish our pipeline for the Contoso Video website.
 
 > [!IMPORTANT]
 > To run this exercise, you need:
@@ -34,7 +34,7 @@ Now that we understand what we need to do, let's create our resources and publis
     cd mslearn-aks-deployment-pipeline-github-actions
     ```
 
-1. Execute the **init.sh** file that's located in the root of the project by running the following command:
+1. Execute the **init.sh** file that's located in the root of the project with the following command:
 
     ```bash
     bash init.sh
@@ -42,12 +42,12 @@ Now that we understand what we need to do, let's create our resources and publis
 
     The init.sh file does the following tasks:
 
-    - Sets up the environment variables `AKS_NAME`, `DNS_NAME`, `RESOURCE_GROUP_NAME`, and `ACR_NAME`. These variables are the names of the resources you'll create.
     - Creates a new resource group.
     - Creates a new AKS cluster and sets up Kubectl to access it.
     - Creates a new Container Registry repository and links it to your AKS cluster.
+    - Sets up the environment variables `AKS_NAME`, `DNS_NAME`, `RESOURCE_GROUP_NAME`, and `ACR_NAME`.
 
-   When the script finishes running, it displays a list of variables. *Copy and store the variables names*. We'll use those variable names in the next steps.
+   When the script finishes running, it displays a list of variables. *Copy and store the variables names*. We need those variables for the exercises.
 
 ## Check the results
 

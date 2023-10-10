@@ -3,7 +3,7 @@ uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.int
 title: Introduction
 metadata:
   title: introduction
-  description: "Multi-tenant SaaS applications have unique database requirements, and Azure Cosmos DB for PostgreSQL is capable of handling these needs at any scale."
+  description: "Learn how Azure Cosmos DB for PostgreSQL can meet the unique database requirements of multitenant SaaS applications at any scale."
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
@@ -11,7 +11,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

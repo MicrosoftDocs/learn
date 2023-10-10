@@ -8,7 +8,7 @@ metadata:
   ms.author: shlindsay
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.service: powerbi
+  ms.service: fabric
   ms.custom:
     - build-2023
 title: Work with Delta Lake tables in Microsoft Fabric
@@ -28,7 +28,7 @@ roles:
 - data-analyst
 - data-engineer
 products:
-- power-bi
+- fabric
 subjects:
 - data-analytics
 - data-engineering

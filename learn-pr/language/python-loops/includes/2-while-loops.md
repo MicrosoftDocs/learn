@@ -19,7 +19,7 @@ A `while` loop has three important parts:
 - The code you want to run for each iteration, indented with nested whitespace. For example:
 
     ```python
-    while condition:
+    while <condition>:
         # code here
     ```
 

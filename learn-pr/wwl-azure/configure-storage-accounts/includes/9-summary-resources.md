@@ -1,4 +1,5 @@
 
+
 Azure Administrators must be familiar with configuring storage accounts and selecting appropriate storage types. They need to understand how to implement replication and set up endpoints.
 
 In this module, you learned that an Azure storage account contains all of your Azure Storage data objects. These data objects can be blobs, files, queues, tables, and disks. The storage account provides a unique namespace for your Azure Storage data. The data is accessible from anywhere in the world over HTTP or HTTPS. You reviewed how data in your Azure storage account is durable and highly available, secure, and massively scalable. You discovered how to create and configure storage accounts. You explored how to configure network access to storage accounts.

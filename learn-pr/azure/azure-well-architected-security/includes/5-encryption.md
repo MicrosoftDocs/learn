@@ -115,7 +115,7 @@ Azure Key Vault is a cloud service that works as a secure store for secrets. Key
 
 Azure Key Vault can handle requesting and renewing Transport Layer Security (TLS) certificates to provide a robust certificate lifecycle management solution. Key Vault is designed to support any type of secret. These secrets can be passwords, database credentials, API keys, and certificates.
 
-Because you can grant Azure Active Directory identities access to use Key Vault secrets, applications that use managed identities for Azure services can automatically and seamlessly acquire the secrets they need.
+Because you can grant Microsoft Entra identities access to use Key Vault secrets, applications that use managed identities for Azure services can automatically and seamlessly acquire the secrets they need.
 
 Your organization can use Key Vault to store all of its sensitive application information. That information includes the TLS certificates that the organization uses to secure communication between systems.
 

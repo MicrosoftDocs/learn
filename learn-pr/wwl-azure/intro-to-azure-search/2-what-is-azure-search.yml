@@ -3,12 +3,12 @@ uid: learn.azure-introduction-to-azure-search.2-what-is-azure-search
 title: What is Azure Cognitive Search?
 metadata:
   title: What is Azure Cognitive Search?
-  description: "Explore Azure Cognitive Search, its concepts and how to create a search index"
-  ms.date: 09/02/2022
+  description: "What is Azure Cognitive Search?"
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

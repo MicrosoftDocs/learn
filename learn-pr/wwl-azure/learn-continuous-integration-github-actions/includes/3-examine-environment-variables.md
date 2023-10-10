@@ -1,3 +1,4 @@
+
 When using Actions to create CI or CD workflows, you'll typically need to pass variable values to the actions. It's done by using Environment Variables.
 
 ## Built-in environment variables

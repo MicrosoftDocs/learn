@@ -20,6 +20,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/xamarin-forms-dual-screen-badge.svg
+hidden: true
 levels: 
 - intermediate
 roles: 

@@ -10,17 +10,17 @@ When you run multiple deployments a day, you want to:
  -  Stop releases when you detect something suspicious.
  -  Visualize some of these things on a dashboard.<br>
 
-You can do a few different things to stay informed about your release pipeline automatedly. In the following chapters, we'll dive a bit deeper into these.
+You can do a few things to stay informed about your release pipeline. In the following chapters, we'll dive a bit deeper into these.
 
 ## Release gates
 
-Release gates allow automatic collection of health signals from external services and then promote the release when all the signs are booming at the same time or stop the deployment on timeout.
+Release gates allow the automatic collection of health signals from external services and then promote the release when all the signs are booming simultaneously or stop the deployment on timeout.
 
 Typically, gates are connected with incident management, problem management, change management, monitoring, and external approval systems. Release gates are discussed in an upcoming module.
 
 ## Events, subscriptions, and notifications
 
-Events are raised when specific actions occur, like when a release is started, or a build is completed.
+Events are raised when specific actions occur, like when a release is started or a build is completed.
 
 A notification subscription is associated with a supported event type. The subscription ensures you get notified when a specific event occurs.
 

@@ -2,14 +2,14 @@
 uid: learn.azure-command-line-tools-intro.infrastructure-as-code
 metadata:
   title: Infrastructure as code
-  description: Infrastructure as Code deployment options, considerations, and recommendations
+  description: Deployment options, considerations, and recommendations for infrastructure as code
   ms.published: 02/27/2023
   ms.date: 02/27/2023
   author: tarcher
   ms.author: tarcher
   ms.topic: module-choose-best-product
   ms.prod: learning-azure
-title: Infrastructure as Code
+title: Infrastructure as code
 durationInMinutes: 3
 content: |
   [!include[](includes/infrastructure-as-code.md)]
