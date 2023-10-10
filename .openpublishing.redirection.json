@@ -28172,6 +28172,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-business-value/4-discover-apply-ai-maturity-model-assessment.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-business-value",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/set-up-microsoft-defender-cloud/19-activate-just-in-time-access-on-your-virtual-machines-from-azure-portal.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/set-up-microsoft-defender-cloud",
+      "redirect_document_id": false
     }
   ]
 }
