@@ -98,14 +98,15 @@ Complex configurations such as sidecars require using YAML instead of Azure CLI.
 
     ```bash
     # Create YAML
+    aci_subnet_id=$(az network vnet subnet show -n $aci_subnet_name --vnet-name $vnet_name -g $rg --query id -o tsv)
     aci_yaml_file=/tmp/aci_ssl.yaml
     cat <<EOF > $aci_yaml_file
-    apiVersion: 2019-12-01
-    location: westus
+    apiVersion: '2023-05-01'
+    location: $location
     name: $aci_name
     properties:
-      networkProfile:
-        id: $nw_profile_id
+      subnetIds:
+      - id: $aci_subnet_id
       containers:
       - name: nginx
         properties:
@@ -122,7 +123,7 @@ Complex configurations such as sidecars require using YAML instead of Azure CLI.
             mountPath: /etc/nginx
       - name: sqlapi
         properties:
-          image: erjosito/sqlapi:1.0
+          image: erjosito/yadaapi:1.0
           environmentVariables:
           - name: SQL_SERVER_USERNAME
             value: $sql_username
@@ -161,7 +162,7 @@ Complex configurations such as sidecars require using YAML instead of Azure CLI.
     az container create -g $rg --file $aci_yaml_file
     ```
 
-1. To test the configuration, extract the private IP address of the container instance and access it via HTTPS from the test VM. Use the flag `-k` with `curl` so it disables certificate validation, because this unit uses a self-signed certificate.
+1. To test the configuration, extract the private IP address of the container instance and access it via HTTPS from the test VM. Use the flag `-k` with `curl` so it disables certificate validation, because this unit uses a self-signed certificate. The additional curl flag -s is used in order to reduce curl's output verbosity:
 
     ```bash
     # Test
