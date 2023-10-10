@@ -105,7 +105,8 @@ Facts about the Moon:
 You can achieve the same result by using triple quotation marks:
 
 ```python
-multiline = """Facts about the Moon: There is no atmosphere. There is no sound."""
- print(multiline)
+multiline = """Facts about the Moon:
+ There is no atmosphere. 
+ There is no sound."""
+print(multiline)
 ```
-
