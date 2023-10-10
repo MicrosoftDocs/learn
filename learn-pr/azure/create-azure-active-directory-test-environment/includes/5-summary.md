@@ -113,7 +113,7 @@ You can't delete an organization in Microsoft Entra ID until it passes several c
 
 #### Delete the tenant
 
-1. Sign in to the [Microsoft Entra admin center](https://aad.portal.azure.com) with an account that is the global administrator for your organization.
+1. Sign in to the [Azure portal(https://portal.azure.com) with an account that is the Global Administrator for your organization.
 1. Select **Microsoft Entra ID**.
 1. On a tenant's **Overview** page, select **Manage tenants**.
    :::image type="content" source="../media/manage-tenants-command.png" alt-text="Screenshot that shows the button for managing tenants.":::
