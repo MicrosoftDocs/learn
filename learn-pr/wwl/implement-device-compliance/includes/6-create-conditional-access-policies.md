@@ -1,5 +1,3 @@
-
-
 You use conditions and controls to create conditional access policies.
 
 ### Conditions
