@@ -20,9 +20,9 @@ Inspect the generated YAML code, for example by using `cat /tmp/aci.yaml`. You s
 
 ```yml
 additional_properties: {}
-apiVersion: '2018-10-01'
-identity: null
-location: westeurope
+apiVersion: '2023-05-01'
+extended_location: null
+location: northeurope
 name: learnaci
 properties:
   containers:
@@ -32,9 +32,9 @@ properties:
       - name: SQL_SERVER_USERNAME
         value: azure
       - name: SQL_SERVER_PASSWORD
-        value: Microsoft123!
+        value: NAwzq6sjdItw7Ot
       - name: SQL_SERVER_FQDN
-        value: sqlserver5441.database.windows.net
+        value: sqlserver24791.database.windows.net
       image: erjosito/sqlapi:1.0
       ports:
       - port: 8080
@@ -43,16 +43,20 @@ properties:
         requests:
           cpu: 1.0
           memoryInGB: 1.5
+  initContainers: []
   ipAddress:
     ip: 192.168.2.4
     ports:
     - port: 8080
       protocol: TCP
     type: Private
-  networkProfile:
-    id: /subscriptions/<<subscriptionid>>/resourceGroups/acilab/providers/Microsoft.Network/networkProfiles/aci-network-profile-acivnet-aci
+  isCustomProvisioningTimeout: false
   osType: Linux
+  provisioningTimeoutInSeconds: 1800
   restartPolicy: Always
+  sku: Standard
+  subnetIds:
+  - id: /subscriptions/e7da9914-9b05-4891-893c-546cb7b0422e/resourceGroups/acilab/providers/Microsoft.Network/virtualNetworks/acivnet/subnets/aci
 tags: {}
 type: Microsoft.ContainerInstance/containerGroups
 ```
@@ -69,13 +73,15 @@ Notice the following characteristics of the YAML description:
 
 ## Modify and deploy the YAML file
 
-You don't want the SQL database password to be visible to customers, so you need to mask it. To generate the required YAML, you manually edit the automatically generated YAML file and redeploy it to create a modified container instance. While you could change the environment variable into a secure environment variable by using the Azure CLI, you use YAML in preparation for future requirements.
+You don't want the SQL database password to be visible to customers, so you need to mask it using secure values for the environment variables instead of standard values. To generate the required YAML, you manually edit the automatically generated YAML file and redeploy it to create a modified container instance. While you could change the environment variable into a secure environment variable by using the Azure CLI, you use YAML in preparation for future requirements.
 
-1. Use your favorite text editor to change line 13 of */tmp/aci.yaml* from <br>`        value: Microsoft123!` <br>to <br>`        secureValue: Microsoft123!`.<br>Be careful not to change indentation. You can also use the online text editor `sed` to make the change:
+1. Use your favorite text editor to change line 13 of */tmp/aci.yaml* from <br>`        value: <your Azure SQL password>` <br>to <br>`        secureValue: <your Azure SQL password>`.<br>Be careful not to change indentation. You can also use the online text editor `sed` to make the change. You should remove as well any other line you don't need, such as the `provisioningTimeoutInSeconds` attribute which is not supported by the `2023-05-01` API:
 
     ```bash
     # Modify auto-generated YAML
-    sed -i 's/        value: Microsoft123!/        secureValue: Microsoft123!/g' /tmp/aci.yaml
+    sed -i "s/        value: $sql_password/        secureValue: $sql_password/g" /tmp/aci.yaml
+    # Delete the provisioningTimeoutInSeconds attribute
+    sed -i /provisioningTimeoutInSeconds/d /tmp/aci.yaml
     ```
 
 1. After modifying the file, run the following commands to delete your old container and redeploy the new YAML. The Azure CLI command `az container create` takes the argument `--file`, where you can input the YAML description of the container to create. You only need to specify the resource group, because all the other information is contained in the YAML file, including the container instance name.
@@ -96,11 +102,11 @@ You don't want the SQL database password to be visible to customers, so you need
 
 You can find more properties to use in Container Instances YAML declarations in the Azure Container Instances YAML reference.
 
-<!--1. Delete the container created in this unit, so that we can move on to the next one.
+1. Delete the container created in this unit, since we will not be needing it any more.
 
     ```azurecli
     # Cleanup unit 3
     az container delete -n $aci_name -g $rg -y
     ```
--->
+
 
