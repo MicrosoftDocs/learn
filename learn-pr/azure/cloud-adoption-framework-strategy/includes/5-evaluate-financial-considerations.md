@@ -2,11 +2,11 @@ Measuring objectives and identifying the return expected from a specific objecti
 
 ## Understand your financial stories
 
-The core financial benefits of Azure are driven by a fundamental shift in the IT operating model. This shift benefits your organization's core financial statements and frees up cash flow for reinvestment:
+A fundamental shift in the IT operating model drives The core financial benefits of Azure. This shift benefits your organization's core financial statements and frees up cash flow for reinvestment:
 
 **Balance sheet**: When you operate on-premises in datacenters, you might have invested up front in long-term assets that limit the cash and capital required to grow your business. While in the cloud, you can shift datacenter operations costs into modernization, developing cloud applications, and other projects that drive business growth. This shift can make your balance sheet more agile.
 
-**Cash flow statement**: The pay-for-what-you-consume model and the ability to apply policies and tags to your Azure resources can help you improve the predictability of your cash flow statement. This model delays spend and improves the timing of your cash flow.
+**Cash flow statement**: The pay-for-what-you-consume model and the ability to apply policies and tags to your Azure resources can help you improve the predictability of your cash flow statement. This model improves the timing of your cash flow by delaying spend.
 
 **Income statement (profit and loss)**: You can improve profitability over time by taking advantage of Azure's flexibility, low management costs, services, and pricing models.
 
@@ -56,7 +56,7 @@ View samples of [agility outcomes](/azure/cloud-adoption-framework/strategy/busi
 
 <!-- docutune:ignore "global reach" -->
 
-**Reach outcomes**: In a constantly shrinking market, global reach (the ability to support global customers and users) can be measured by compliance in geographies that are relevant to the business.
+**Reach outcomes**: In a constantly shrinking market, you can measure global reach (the ability to support global customers and users) by compliance in geographies that are relevant to the business.
 
 View outcomes related to [global reach](/azure/cloud-adoption-framework/strategy/business-outcomes/reach-outcomes?azure-portal=true).
 
@@ -86,7 +86,7 @@ In the next sections, we'll walk through the data you'll need to calculate the i
 
 ### Calculate initial investment
 
-Initial investment is the capital expense and the operating expense that's required to complete a transformation. The classification of costs can vary depending on accounting models and CFO preference. But this category includes items like professional services that are required to complete the transformation, software licenses used only during the transformation, the cost of cloud services during the transformation, and potentially the cost of salaried employees during the transformation.
+Initial investment is the capital expense and the operating expense that's required to complete a transformation. Even though the classification of costs can vary depending on accounting models and CFO preference, this category includes items like professional services that are required to complete the transformation, software licenses used only during the transformation, and the cost of cloud services during the transformation. It can also potentially include the cost of salaried employees during the transformation.
 
 Add these costs to create an estimate of the initial investment.
 
@@ -109,11 +109,11 @@ Revenue deltas should be forecast in partnership with business stakeholders. Aft
 
 ### Cost deltas
 
-Cost deltas are the increase or decrease in costs that will be caused by the transformation. Independent variables can affect cost deltas. Earnings largely are based on hard costs like capital expense reductions, cost avoidance, operational cost reductions, and depreciation reductions. The following sections describe some cost deltas to consider.
+Cost deltas are the increase or decrease in costs caused by the transformation. Independent variables can affect cost deltas. Earnings largely are based on hard costs like capital expense reductions, cost avoidance, operational cost reductions, and depreciation reductions. The following sections describe some cost deltas to consider.
 
 #### Depreciation reduction or acceleration
 
-For guidance on depreciation, speak with the CFO or finance team. The following information is meant to serve as a general reference on the topic of depreciation.
+For guidance on depreciation, speak with the CFO or finance team. The following information is meant to serve as a general reference on the article of depreciation.
 
 When capital is invested in the acquisition of an asset, that investment might be used for financial or tax purposes to produce ongoing benefits over the expected lifespan of the asset. Some companies see depreciation as a positive tax advantage. Others see it as a committed, ongoing expense that's similar to other recurring expenses attributed to the annual IT budget.
 
@@ -148,7 +148,7 @@ When an operating expenditure is expected but not yet in an approved budget, the
 
 #### Soft-cost reductions
 
-At some companies, soft costs like reductions in operational complexity or reductions in full-time staff for operating a datacenter might also be included in cost deltas. But including soft costs might not be a good idea. When you include soft-cost reductions, you insert an undocumented assumption that the reduction will create tangible cost savings. Technology projects rarely result in actual soft-cost recovery.
+At some companies, soft costs like reductions in operational complexity or reductions in full-time staff for operating a datacenter might also be included in cost deltas. But including soft costs might not be a good idea. When you include soft-cost reductions, you insert an undocumented assumption that the reduction creates tangible cost savings. Technology projects rarely result in actual soft-cost recovery.
 
 #### Headcount reductions
 
@@ -156,11 +156,11 @@ Time savings for staff often are included in soft-cost reductions. When those ti
 
 That said, skills that are needed to work on-premises generally map to a similar (or higher-level) skill set that's needed to work in the cloud. So, people generally aren't laid off after a cloud migration.
 
-An exception occurs when operational capacity is provided by a third party or an Azure Expert Managed Services Provider (MSP). If a third party manages IT systems, the operating costs could be replaced by a cloud-native solution or cloud-native MSP. A cloud-native MSP can operate more efficiently and potentially at a lower cost. If that's the case, operational cost reductions belong in hard-cost calculations.
+An exception occurs when operational capacity is provided by a third party or an Azure Expert Managed Services Provider (MSP). If a third party manages IT systems, a cloud-native solution or cloud-native MSP could replace the operating costs. A cloud-native MSP can operate more efficiently and potentially at a lower cost. If that's the case, operational cost reductions belong in hard-cost calculations.
 
 #### Capital expense reductions or avoidance
 
-Capital expenses are slightly different from operating expenses. Generally, this category is driven by refresh cycles or datacenter expansion. A datacenter expansion example is the cost of a new high-performance cluster to host a big data solution or data warehouse. This expense generally would fit into a capital expense category.
+Capital expenses are slightly different from operating expenses. Generally, datacenter expansion or refresh cycles drive this category. A datacenter expansion example is the cost of a new high-performance cluster to host a big data solution or data warehouse. This expense generally would fit into a capital expense category.
 
 More common are basic equipment refresh cycles. Some companies have rigid hardware refresh cycles, which means that assets are retired and replaced on a regular cycle (usually every three, five, or eight years). These cycles often coincide with asset lease cycles or with the forecasted life span of equipment. In a new refresh cycle, IT draws on capital expense to acquire new equipment.
 
@@ -192,11 +192,11 @@ In a legacy on-premises model, chargeback is difficult to realize because someon
 
 However, you shouldn't implement this model without considering the implications. Here are a few consequences that are unique to a chargeback model:
 
-* Chargeback results in a massive reduction of the overall IT budget. For IT organizations that are inefficient or require extensive complex technical skills in operations or maintenance, this model can expose those expenses in an unhealthy way.
+- Chargeback results in a massive reduction of the overall IT budget. For IT organizations that are inefficient or require extensive complex technical skills in operations or maintenance, this model can expose those expenses in an unhealthy way.
 
-* Loss of control is a common consequence. In highly political environments, chargeback can result in loss of control and staff being reallocated to the business. This situation could create significant inefficiencies and reduce IT's ability to consistently meet SLAs or project requirements.
+- Loss of control is a common consequence. In highly political environments, chargeback can result in loss of control and staff being reallocated to the business. This situation could create significant inefficiencies and reduce IT's ability to consistently meet SLAs or project requirements.
 
-* Difficulty with accounting for shared services is another common consequence. If the organization has grown through acquisition and is carrying technical debt as a result, it's likely that a high percentage of shared services must be maintained to keep all systems working together effectively.
+- Difficulty with accounting for shared services is another common consequence. If the organization is carrying technical debt as a result of growing through acquisition, it's likely that a high percentage of shared services must be maintained to keep all systems working together effectively.
 
 Cloud transformations include solutions to these and other consequences associated with a chargeback model, but each of those solutions includes implementation and operating expenses. The CIO and CFO should carefully weigh the pros and cons of a chargeback model before considering one.
 
@@ -214,7 +214,7 @@ There are several valuable tools you can use to project the costs involved in mi
 
 Try the Azure Pricing Calculator [here](https://azure.microsoft.com/pricing/calculator/).
 
-**Azure Virtual Machine (VM) Cost Estimator**: The Azure VM Cost Estimator is a Power BI template that allows you to estimate your cost savings against pay-as-you-go pricing by optimizing Azure offers and benefits for VMs like Azure Hybrid Benefit and reserved instances. When you’re evaluating large-scale data centers, more than a hundred compute units, for example, using the web-based Azure Pricing Calculator can be challenging because it requires you to input a significant number of technical criteria. The Azure VM Cost Estimator includes an Excel file that feeds data into the BI template, allowing you to input a much larger list of criteria, along with additional technical specifications like the number of cores assigned to a specific compute unit or the memory footprint and associated utilization. You can even specify the currency value you want the price list generated in, and the different Azure targets you want to place your workloads in. In that way, the Azure VM Cost Estimator helps you automate the cloud cost estimation process.
+**Azure Virtual Machine (VM) Cost Estimator**: The Azure VM Cost Estimator is a Power BI template that allows you to estimate your cost savings against pay-as-you-go pricing. It shows you how to optimize Azure offers and benefits for VMs, like Azure Hybrid Benefit and reserved instances. When you’re evaluating large-scale data centers of more than a hundred compute units, it can be challenging to use the web-based Azure Pricing Calculator because it requires you to input a significant number of technical criteria. The Azure VM Cost Estimator includes an Excel file that feeds data into the Power BI template. This file allows you to input a larger list of criteria, along with more technical specifications. For example, the number of cores assigned to a specific compute unit or the memory footprint and associated utilization. You can even specify the currency value you want the price list generated in, and the different Azure targets you want to place your workloads in. In that way, the Azure VM Cost Estimator helps you automate the cloud cost estimation process.
 
 Download the following files to use the Power BI model:
 

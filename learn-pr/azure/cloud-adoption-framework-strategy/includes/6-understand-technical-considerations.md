@@ -4,7 +4,7 @@ To prepare for executing your digital-transformation strategy, it's important to
 
 Cloud costs are tied to compute and storage and include the underlying software licensing fees. The cloud uses a pay-for-what-you-consume model versus the up-front server infrastructure and software licensing costs that you would typically pay on-premises in your data center. On-premises, you typically have a combination of upfront costs and operating expenditures. When you move to the cloud, you shift to the pay-as-you-consume model and mainly operating expenditures.
 
-To take advantage of the best pricing in the cloud, you must understand how you'll consume resources for your specific workloads. Once you have a consumption plan, you can establish your fixed- and variable-cost models to maximize your investment.
+To take advantage of the best pricing in the cloud, you must understand how you consume resources for your specific workloads. Once you have a consumption plan, you can establish your fixed- and variable-cost models to maximize your investment.
 
 ## Understand your workloads
 
@@ -30,7 +30,7 @@ Cloud billing models and offers differ from on-premises, and they can create mea
 
 **Reservations**: Receive a discount on your workloads when you reserve your resources in advance. In return, Microsoft passes the savings on to you as discounts of up to 72 percent. For more information, see [Azure reservations](https://azure.microsoft.com/reservations?azure-portal=true).
 
-**Azure Dev/Test pricing**: Take advantage of discounted rates for your development and testing, including the Microsoft software charges on Azure Virtual Machines and special dev and test pricing on other services. For more information, see [Azure Dev/Test pricing](https://azure.microsoft.com/pricing/dev-test/#overview?azure-portal=true).
+**Azure Dev/Test pricing**: Take advantage of discounted rates for your development and testing. Including, the Microsoft software charges on Azure Virtual Machines and special dev and test pricing on other services. For more information, see [Azure Dev/Test pricing](https://azure.microsoft.com/pricing/dev-test/#overview?azure-portal=true).
 
 **Extended security updates**: Receive continued support for SQL Server 2008 and SQL Server 2008 R2 in the cloud that have reached the end of their support lifecycle. You can migrate your on-premises SQL Server instances to Azure Virtual Machines, Azure SQL Database, or stay on-premises and purchase extended security updates. You receive free extended security patches by migrating to an Azure Virtual Machine. To learn more, see [Lifecycle FAQ: Extended Security Updates](/lifecycle/faq/extended-security-updates?azure-portal=true).
 
@@ -40,28 +40,28 @@ Microsoft provides frameworks and tools to help you understand your costs and co
 
 Learn more:
 
-* Read about [Azure Advisor](/azure/advisor/advisor-overview?azure-portal=true)
-* Get Azure [Advisor cost recommendations](/azure/advisor/advisor-cost-recommendations?azure-portal=true)
-* Learn about the [Microsoft Azure Well-Architected Review](/assessments/?mode=pre-assessment&session=local?azure-portal=true)
-* Learn about the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true)
+- Read about [Azure Advisor](/azure/advisor/advisor-overview?azure-portal=true)
+- Get Azure [Advisor cost recommendations](/azure/advisor/advisor-cost-recommendations?azure-portal=true)
+- Learn about the [Microsoft Azure Well-Architected Review](/assessments/?mode=pre-assessment&session=local?azure-portal=true)
+- Learn about the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true)
 
 Understand and forecast your costs: Monitor your bill, set budgets, and allocate costs to teams and projects with Microsoft Cost Management.
 
 Learn more:
 
-* [Optimize costs from recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true)
-* [Prevent unexpected charges](/azure/cost-management-billing/cost-management-billing-overview)
-* Cost-optimize your workloads: Optimize your resources and architecture with Azure best practices from Azure Advisor and the Microsoft Azure Well-Architected Framework
+- [Optimize costs from recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true)
+- [Prevent unexpected charges](/azure/cost-management-billing/cost-management-billing-overview)
+- Cost-optimize your workloads: Optimize your resources and architecture with Azure best practices from Azure Advisor and the Microsoft Azure Well-Architected Framework
 
 Save with Azure offers and licensing terms like the Azure Hybrid Benefit and Azure Reservations.
 
 Learn more:
 
-* Learn about the [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit?azure-portal=true)
-* Learn about [Azure Hybrid Benefit for Windows Server](https://azure.microsoft.com/overview/azure-vs-aws/cost-savings?azure-portal=true)
-* Review [pricing guidance for SQL Server Azure VMs](/azure/azure-sql/virtual-machines/windows/pricing-guidance?azure-portal=true)
-* Learn about [Azure Reservations](/azure/cost-management-billing/reservations/save-compute-costs-reservations?azure-portal=true)
-* Read the [reserved instances FAQ](https://azure.microsoft.com/pricing/reserved-vm-instances?azure-portal=true#faq)
+- Learn about the [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit?azure-portal=true)
+- Learn about [Azure Hybrid Benefit for Windows Server](https://azure.microsoft.com/overview/azure-vs-aws/cost-savings?azure-portal=true)
+- Review [pricing guidance for SQL Server Azure VMs](/azure/azure-sql/virtual-machines/windows/pricing-guidance?azure-portal=true)
+- Learn about [Azure Reservations](/azure/cost-management-billing/reservations/save-compute-costs-reservations?azure-portal=true)
+- Read the [reserved instances FAQ](https://azure.microsoft.com/pricing/reserved-vm-instances?azure-portal=true#faq)
 
 Control your costs: Establish spending goals and policies with guidance from the Microsoft Cloud Adoption Framework for Azure. Implement cost controls with Azure Policy, so your teams can go fast while complying with policy. For more information, see [enforce tagging conventions using Azure Policy](/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
 
@@ -71,13 +71,13 @@ The goal of your cloud business case is to achieve more with every dollar invest
 
 The initial technical benefits of a cloud migration focus on the lift and shift model, where you migrate workloads to infrastructure-as-a-service (IaaS) in the cloud. The goal is to get the most out of your on-premises investment, then move those workloads to IaaS, potentially freeing up cash flow. Historically, this process would be considered a savings opportunity. This approach in the cloud is better viewed as a reinvestment opportunity.
 
-As you free up cash flow, continue your cloud adoption, and mature your workloads, you can reinvest the savings to modernize to different service levels. Once you have your initial workloads in IaaS, you might consider shifting some workloads to platform-as-a-service (PaaS). You’ll still provide the same type of service delivery; however, you'll deliver it at a lower cost with more features and functionality. The next step in the iterative modernization process is moving some workflows and line-of-business applications to software-as-a-service (SaaS).
+As you free up cash flow, continue your cloud adoption, and mature your workloads, you can reinvest the savings to modernize to different service levels. Once you have your initial workloads in IaaS, you might consider shifting some workloads to platform-as-a-service (PaaS). You can still provide the same type of service delivery; however, you deliver it at a lower cost with more features and functionality. The next step in the iterative modernization process is moving some workflows and line-of-business applications to software-as-a-service (SaaS).
 
-When you plan your phases of cloud maturity and the reinvestment of your cloud savings, and align with [business outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes?azure-portal=true), you can achieve more with every dollar you invest.
+By planning your phases of cloud maturity and the reinvestment of your cloud savings, and aligning with [business outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes?azure-portal=true), you can achieve more with every dollar you invest.
 
 ## Hands-on evaluation of technical considerations during your first project
 
-There's a learning curve and a time commitment associated with cloud adoption planning. Even for experienced teams, proper planning takes time, to align stakeholders, to collect and analyze data, to validate long-term decisions, and to align people, processes, and technology. In the most productive adoption efforts, planning grows in parallel with adoption, improving with each release and with each workload migration to the cloud. It's important to understand the difference between a cloud adoption plan and a cloud adoption strategy. You need a well-defined strategy to facilitate and guide the implementation of a cloud adoption plan.
+There's a learning curve and a time commitment associated with cloud adoption planning. Even for experienced teams, proper planning takes time. Time to align stakeholders, to collect and analyze data, to validate long-term decisions, and to align people, processes, and technology. In the most productive adoption efforts, planning grows in parallel with adoption, improving with each release and with each workload migration to the cloud. It's important to understand the difference between a cloud adoption plan and a cloud adoption strategy. You need a well-defined strategy to facilitate and guide the implementation of a cloud adoption plan.
 
 Beginning a first adoption process in parallel with developing the plan provides the following benefits:
 
@@ -95,9 +95,9 @@ Your first adoption project should align with your motivations and any defined a
 
 Your team's first adoption project will likely result in a production deployment of some kind, but it isn't always the case. Establish proper expectations early. Here are a few wise expectations to set for the first project:
 
-- The project is a source of learning
-- The project might result in production deployments, but it probably will require additional effort first
-- The output of the project is a set of clear requirements to provide a longer-term production solution
+- The project is a source of learning.
+- The project might result in production deployments, but it will probably require additional effort first.
+- The output of the project is a set of clear requirements to provide a longer-term production solution.
 
 ## First-project examples
 
@@ -131,10 +131,10 @@ Successful cloud-adoption programs typically involve at least one level of suppo
 
 It's important to start aligning your partnership strategy while strategizing adoption. The following steps can help remove roadblocks in later phases of the adoption lifecycle.
 
-* Start to understand support needs
-* Consider partnership options that fit your culture and needs
-* Evaluate a shortlist of partner options
-* Begin contract and paperwork reviews with selected partners
+- Start to understand support needs
+- Consider partnership options that fit your culture and needs
+- Evaluate a shortlist of partner options
+- Begin contract and paperwork reviews with selected partners
 
 Completing these steps early helps ensure success of the team when the technical efforts begin. The following sections provide guidance for each of these steps:
 
@@ -142,13 +142,13 @@ Completing these steps early helps ensure success of the team when the technical
 
 Throughout the cloud adoption lifecycle, various teams might require support to be successful. The following are a few examples of the types of help commonly required.
 
-* **Strategy**: Support defining the business strategy, building a business case, and supporting technology strategy
-* **Plan**: Support with discovery of the portfolio, quantitative assessment of the digital estate, development of a cloud adoption plan, and the creation of a skilling plan
-* **Ready**: Support deploying a landing zone or full cloud environment capable of supporting the cloud adoption plan
-* **Migrate**: Assistance migrating workloads or building a migration factory to ensure sound migration processes
-* **Innovate**: Assistance developing new solutions or rebuilding/rearchitecting existing solutions to drive innovation
-* **Govern**: Support or ongoing managed services to provide governance and controls across the cloud environment
-* **Manage**: Support or ongoing managed services to operate the cloud platform and the workloads hosted in the cloud
+- **Strategy**: Support defining the business strategy, building a business case, and supporting technology strategy
+- **Plan**: Support with discovery of the portfolio, quantitative assessment of the digital estate, development of a cloud adoption plan, and the creation of a skilling plan
+- **Ready**: Support deploying a landing zone or full cloud environment capable of supporting the cloud adoption plan
+- **Migrate**: Assistance migrating workloads or building a migration factory to ensure sound migration processes
+- **Innovate**: Assistance developing new solutions or rebuilding/rearchitecting existing solutions to drive innovation
+- **Govern**: Support or ongoing managed services to provide governance and controls across the cloud environment
+- **Manage**: Support or ongoing managed services to operate the cloud platform and the workloads hosted in the cloud
 
 Few corporations have the diversity of skills required to support strategy, planning, readiness, adoption, governance, and management. Partners and other support models are often necessary to fill in the gaps in the team's skills and responsibilities.
 
@@ -158,10 +158,10 @@ Various partnership options can help develop needed skills, augment staffing req
 
 You aren't alone in your cloud journey. There are several options to support your team throughout your cloud adoption journey.
 
-* **Azure solution providers (partners)**: Get connected with Azure Expert Managed Services Providers (MSPs) and other Microsoft partners who have service offerings aligned to the Cloud Adoption Framework methodologies
-* **FastTrack for Azure**: Use the Microsoft FastTrack for Azure program to accelerate migration
-* **Azure Migration Program**: The Azure Migration Program aligns a mixture of partners and Microsoft employees to accelerate and support your migration
-* **Solution assessments**: Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a Solution Assessment engagement
+- **Azure solution providers (partners)**: Get connected with Azure Expert Managed Services Providers (MSPs) and other Microsoft partners who have service offerings aligned to the Cloud Adoption Framework methodologies
+- **FastTrack for Azure**: Use the Microsoft FastTrack for Azure program to accelerate migration
+- **Azure Migration Program**: The Azure Migration Program aligns a mixture of partners and Microsoft employees to accelerate and support your migration
+- **Solution assessments**: Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a Solution Assessment engagement
 
 ## Azure solution providers
 

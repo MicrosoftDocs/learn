@@ -28,7 +28,7 @@ Throughout this conversation, be prepared to engage various personas. The follow
 
 Business transformations that are supported by cloud adoption can be driven by various motivations. It's likely that several motivations apply at the same time.
 
-The goal of the lists in the following table is to help generate ideas about which motivations are relevant for your organization. From there, you can prioritize and assess the potential impacts of the motivations. Your cloud-adoption team should meet with executives and business leaders and use this list to understand the motivations that might be affected by a cloud adoption effort.
+The goal of the lists in the following table is to help generate ideas about which motivations are relevant for your organization. From there, you can prioritize and assess the potential impacts of the motivations. Your cloud-adoption team should meet with executives and business leaders and use this list to understand which motivations could be affected by a cloud adoption effort.
 
 | Critical business events | Migration | Innovation |
 |---|---|---|
@@ -40,9 +40,9 @@ Your motivations for cloud adoption will likely fall into multiple categories. A
 
 When a response to *critical business events* is the highest priority, it's important to [get started with migration](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) early, often in parallel with strategy and planning efforts. Taking this approach requires a growth mindset and a willingness to iteratively improve processes based on direct lessons learned.
 
-When *migration* is the highest priority, strategy and planning play a vital role early in the process. We recommend that you implement the first workload in parallel with planning efforts to help the team understand and anticipate any learning curves that are associated with cloud adoption.
+When *migration* is the highest priority, strategy and planning play a vital role early in the process. We recommend that you implement the first workload in parallel with your planning efforts. This experience helps the team understand and anticipate any learning curves that are associated with cloud adoption.
 
-When *innovation* is the highest priority, strategy and planning require additional investments early in the process to ensure balance in the portfolio and wise alignment of the investment that's made during cloud adoption. For more information and guidance, see [Understand the innovation journey](/azure/cloud-adoption-framework/get-started/innovate?azure-portal=true).
+When *innovation* is the highest priority, strategy and planning require more investments early in the process to ensure balance in the portfolio and wise alignment of the investment that's made during cloud adoption. For more information and guidance, see [Understand the innovation journey](/azure/cloud-adoption-framework/get-started/innovate?azure-portal=true).
 
 To ensure wiser decision making, all participants in the migration process should have a clear awareness of their motivations. The following section outlines how leaders in the organization can influence wiser decision outcomes through consistent, strategic methodologies.
 
@@ -54,7 +54,7 @@ This section highlights the *migration* and *innovation* motivations and their c
 
 The migration motivations that are listed near the top of the motivations table are the most common reasons for adopting the cloud, but they're not necessarily the most significant reasons. These outcomes are important to achieve, but they're most effectively used to transition to other, more useful worldviews. This important first step to cloud adoption often is called a *cloud migration*. The framework uses the term [migrate](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) to refer to the strategy of executing a cloud migration.
 
-Some motivations align well with a migration strategy. The motivations at the top of this list likely have significantly less business impact than motivations toward the bottom of the list. Top migrations motivations include:
+Some motivations align well with a migration strategy. The motivations at the top of this list are likely to have less business impact than motivations toward the bottom of the list. Top migrations motivations include:
 
 - Saving on operating costs
 - Reducing vendor or technical complexity
@@ -95,7 +95,7 @@ Tailwind Traders uses the [Cloud Adoption Strategy Evaluator](/assessments/?id=8
 - Evaluating financial considerations
 - Technical considerations in creating a business case.
 
-Based on responses to the assessment questions, the Cloud Adoption Strategy Evaluator navigates you in detail through the categories most relevant to your organization. Personalized to you, according to your inputs for each question, we provide you with an aggregate strategy score—calculated and averaged across your uniquely identified strategy areas.
+The Cloud Adoption Strategy Evaluator takes you through the categories most relevant to your organization. Based on your inputs for each question, it provides you with a personalized aggregate strategy score that's calculated and averaged across your uniquely identified strategy areas.
 
 As you create your cloud adoption plan, and then document your strategy for stakeholder review, you’ll also receive curated guidance that points to specific tools and templates, along with recommendations based on principles of cloud economics and organizational alignment that provide a unified approach to build your business case.
 
@@ -115,7 +115,7 @@ Tailwind's horizons would align to the following target schedule, to be evaluate
 |--|--|--|--|
 | 1. Migration and modernization|Prioritize the datacenter exit with a focus on modern platform as a service (PaaS) solutions over a basic lift-and-shift migration|Months 0 - 18|The migration as priority should minimize conflicts with existing innovation commitments|
 | 2. Operation modernization|Prioritize operational improvements built on cloud-native governance, operations management, security, and compliance capabilities|Months 6 - 18|This effort complements and supports the primary migration effort|
-| 3. Advanced modernization|With post-migration and operational improvements, the team will have sufficient data and cloud skills to perform deeper modernization of complex architectures|Months 18-24||
+| 3. Advanced modernization|With post-migration and operational improvements, the team has sufficient data and cloud skills to perform deeper modernization of complex architectures|Months 18-24||
 | 4. Innovation and growth|Redirect capital reduction from datacenter exits and new skills in central IT to focus on accelerating continued innovation|Month 24+|All prior horizons will produce a long list of new innovations as the central IT and retail innovations teams create tighter collaborations and build out automation assets|
 
 ## Record your observations
