@@ -31,7 +31,7 @@ products:
 - azure-virtual-machines
 - defender-for-cloud
 - microsoft-defender
-- update-management-center
+- update-manager
 subjects:
 - cloud-security
 units:
