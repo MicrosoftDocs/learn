@@ -366,7 +366,7 @@ Use the following steps to test your app.
 
 1. To sign in, select the **Sign in** button. You're redirected to a sign in sign up page.
 
-    :::image type="content" source="../media/azure-ad-b2c-sign-in.png" alt-text="Screenshot of Microsoft Entra B 2 C sign in page.":::
+    :::image type="content" source="../media/azure-ad-b2c-sign-in.png" alt-text="Screenshot of Azure A D B 2 C sign in page.":::
 
 1. Enter your sign-in credentials, such as email address and password. If you don't have an account, select **Sign up now** to create an account. After you successfully sign in or sign up, you're redirected to a page in your app that shows sign-in status. **User1** is the user's given name.
 
