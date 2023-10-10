@@ -36,7 +36,7 @@ Security solutions should provide visibility and control over the network, as we
 
 For this reason, it is essential to have a security solution that adheres to industry standards and regulations in hybrid cloud environments to ensure data security, confidentiality, and integrity. 
 
-Microsoft Entra authentication for SQL Server 2022 is a central authentication repository that supports advanced authentication methods like Microsoft Entra Universal with Multi-Factor Authentication and Microsoft Entra access token where a company can add an extra layer of security to their authentication process. 
+Microsoft Entra authentication for SQL Server 2022 is a central authentication repository that supports advanced authentication methods like Microsoft Entra multifactor authentication and Microsoft Entra access token where a company can add an extra layer of security to their authentication process. 
 
 With a cloud-based central authentication authority like Microsoft Entra ID, you can take advantage of the latest SQL Server security features, while also reducing the risk of security breaches caused by weak or reused passwords.
 

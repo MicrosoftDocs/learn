@@ -96,15 +96,15 @@ SQL Server supports authentication for SQL Server or Windows accounts. Many user
 
 ### Solution using Microsoft Entra ID for authentication
 
-SQL Server 2022 now supports Microsoft Entra account based logins and users. SQL Server 2022 must be configured as an Azure Arc-enabled SQL Server to use Microsoft Entra ID. The Azure extension for SQL Server stores information on SQL Server that allows the database engine to authenticate a Microsoft Entra account.
+SQL Server 2022 now supports Microsoft Entra account based logins and users. SQL Server 2022 must be configured as an Azure Arc-enabled SQL Server to use Microsoft Entra authentication. The Azure extension for SQL Server stores information on SQL Server that allows the database engine to authenticate a Microsoft Entra account.
 
 Like Azure SQL Managed Instance and Azure SQL Database, SQL Server 2022 supports a new syntax for `CREATE LOGIN` to support an `EXTERNAL PROVIDER`, which is a Microsoft Entra account (user, group, or service principal). In addition, the `CREATE USER` T-SQL statement supports an `EXTERNAL PROVIDER` with a Microsoft Entra account to provide authentication to users in a database without the need for a login.
 
-One of the benefits of Microsoft Entra ID is support for advanced authentication methods, such as multi-factor authentication. SQL Server 2022 supports the following Microsoft Entra authentication methods:
+One of the benefits of Microsoft Entra is support for advanced authentication methods, such as multi-factor authentication. SQL Server 2022 supports the following Microsoft Entra authentication methods:
 
 - Microsoft Entra Password
 - Microsoft Entra integrated
-- Microsoft Entra Universal with Multi-Factor Authentication
+- Microsoft Entra multifactor authentication (MFA)
 - Microsoft Entra access token
 
 You can learn more about SQL Server and Microsoft Entra authentication in the article, [Microsoft Entra authentication for SQL Server](https://aka.ms/aadsqlserver).
