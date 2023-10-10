@@ -6966,6 +6966,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/2-azure-resources.md",
+      "redirect_url": "/training/modules/create-azure-cognitive-search-solution/2-manage-capacity",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/2-get-ready-develop.md",
       "redirect_url": "/training/modules/create-azure-cognitive-search-solution/2-azure-resources",
       "redirect_document_id": false
