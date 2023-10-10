@@ -1,9 +1,8 @@
-In this unit, you'll create and run a Hello World Node.js script.
+In this unit, you'll create and run a Node.js script.
 
 ## Start your dev container in a browser
 
 A [development container](https://containers.dev/) environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces in a browser or locally using Visual Studio Code.
-
 
 [GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
 
@@ -99,6 +98,37 @@ Hello World, from a script file.
 ```
 
 You have now run your first Node.js JavaScript code. Close the browser tab to stop the dev container.
+
+* Question: Is console.log synchronous or asynchronous?
+* Answer: The `console.log` method appears in development to execute immediately and is therefore assumed to be async. There is no guarantee of async behavior for this method so must be considered synchronous. This means that the code execution _can_ block until the `console.log` method is finished. This is why you'll be cautioned from keeping console.log statements in your code in production.
+
+## Add an asynchronous function
+
+Add the following code to the file to create an asynchronous HTTP request:
+
+```javascript
+const https = require('https');
+
+console.log(`start`);
+
+https.get('https://nodejs.org/dist/index.json', (res) => {
+    console.log(res.statusCode);
+});
+
+console.log(`end`);
+```
+
+The `https.get` method makes an HTTP request to the Node.js website and returns the response. The `get` method takes two parameters: the URL to request and a callback function that is called when the response is received. The callback function takes a single parameter, `res`, which is the response object.
+
+The order of the console logs is as follows:
+
+```output
+start
+end
+200
+```
+
+From the output, you can see the event loop in action. The HTTP method is called and put in the task queue, waiting for it to return. The event loop takes the next task, which is the console.log method.
 
 ## Stop your dev container
 
