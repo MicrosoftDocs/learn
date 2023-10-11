@@ -1,4 +1,4 @@
-﻿This exercise takes you through the process of implementing CI/CD of a sample IoT application to Azure IoT Edge. As in the previous exercise, you'll use Azure DevOps Starter for this purpose. However, you'll rely on Azure DevOps to provide the code repository and implement the corresponding CI/CD pipelines.
+This exercise takes you through the process of implementing CI/CD of a sample IoT application to Azure IoT Edge. As in the previous exercise, you'll use Azure DevOps Starter for this purpose. However, you'll rely on Azure DevOps to provide the code repository and implement the corresponding CI/CD pipelines.
 
 > [!NOTE]
 > This exercise illustrates how to use Azure DevOps Starter (which simplifies the process for implementing CI/CD pipelines considerably). For detailed information regarding authoring pipelines in Azure DevOps and GitHub, refer to the references provided at the end of this module.
@@ -14,8 +14,8 @@ In this exercise, you'll:
 To perform this exercise, you need:
 
 * An Azure subscription.
-* A Microsoft account, or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-* An Azure DevOps organization associated with the Microsoft account or the Azure AD account referenced in the previous prerequisite. To create an Azure DevOps organization, refer to the link provided at the end of the module.
+* A Microsoft account, or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+* An Azure DevOps organization associated with the Microsoft account or the Microsoft Entra account referenced in the previous prerequisite. To create an Azure DevOps organization, refer to the link provided at the end of the module.
 * At least one concurrent pipeline in your Azure DevOps organization.
 
 > [!NOTE]

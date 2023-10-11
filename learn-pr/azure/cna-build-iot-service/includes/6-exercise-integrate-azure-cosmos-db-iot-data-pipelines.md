@@ -10,7 +10,7 @@ In this exercise, you'll:
 
 To perform this exercise, you need:
 
-- A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 - To have completed the exercise unit **Set up Azure Cosmos DB**.
 - An active Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
