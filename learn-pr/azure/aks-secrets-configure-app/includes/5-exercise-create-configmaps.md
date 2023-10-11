@@ -17,7 +17,7 @@ You deployed the application back end, and now you need to deploy the applicatio
 
 [!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
 
-If you've been following along with this module, you should have a running AKS cluster. If you don't, you can follow the steps in the [previous exercise](/3-exercise-create-secrets.md) to create one.
+If you've been following along with this module, you should have a running AKS cluster. If you don't, you can follow the steps in the [previous exercise](./3-exercise-create-secrets.md) to create one.
 
 ## Create a ConfigMap
 
