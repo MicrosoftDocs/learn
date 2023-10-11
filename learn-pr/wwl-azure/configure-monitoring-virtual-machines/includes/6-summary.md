@@ -2,7 +2,7 @@ In this module, you learned how to deploy and configure Azure Monitor Agent on I
 
 ## Learn more
 
-You can learn more by reviewing the following documents:
+You can learn more by reviewing the following documents: 
 - [Azure Monitor Agent overview](/azure/azure-monitor/agents/agents-overview)
 - [Manage Azure Monitor Agent](/azure/azure-monitor/agents/azure-monitor-agent-manage)
 - [Use the Map feature of VM insights to understand application component](/azure/azure-monitor/vm/vminsights-maps)
