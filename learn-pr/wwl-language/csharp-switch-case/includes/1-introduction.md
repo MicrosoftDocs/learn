@@ -4,7 +4,7 @@ Suppose working on applications that make extensive use of selections statements
 
 In this module, you'll investigate the use of a `switch` statement to implement branching logic as an alternative to an `if` statement. You'll also work on converting an `if-elseif-else` construct to a `switch-case` construct. During this process, you'll learn to recognize the benefits of choosing one type of selection statement over the other.
 
-By the end of this module, you'll be able to implement `switch` statements in your application, judge when to use a `switch` statement over an `if-elseif-else` construct, and covert `if-elseif-else` constructs to `switch` statements.
+By the end of this module, you'll be able to implement `switch` statements in your application, judge when to use a `switch` statement over an `if-elseif-else` construct, and convert `if-elseif-else` constructs to `switch` statements.
 
 ## Learning objectives
 
