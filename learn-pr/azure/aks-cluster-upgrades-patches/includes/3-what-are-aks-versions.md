@@ -8,7 +8,7 @@ For example, let's say Kubernetes releases version *1.20.x* today. Following the
 
  :::image type="content" source="../media/3-n-minus-2-example.png" border="false" alt-text="Diagram that shows when Kubernetes releases version 1.20, Azure Kubernetes Service will deprecate support for version 1.17 because it's out of scope of the N-2 version support rule.":::
 
-For each minor version in which AKS maintains cluster support, only the latest stable two patch versions for each minor version is supported.
+For each minor version in which AKS maintains cluster support, only the latest stable two patch versions for each minor version are supported.
 
 This means if Kubernetes decides to release patch version *1.19.9* and *1.18.10*, the current patch versions AKS supports changes to:
 
