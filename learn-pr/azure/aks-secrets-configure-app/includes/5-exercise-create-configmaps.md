@@ -54,7 +54,7 @@ You deployed the application back end, and now you need to deploy the applicatio
     kubectl apply -f configmap.yaml
     ```
 
-6. Check the result by querying the for the ConfigMap using the `kubectl get configmap` command.
+6. Check the result by querying for the ConfigMap using the `kubectl get configmap` command.
 
     ```azurecli-interactive
     kubectl get configmap ship-manager-config
