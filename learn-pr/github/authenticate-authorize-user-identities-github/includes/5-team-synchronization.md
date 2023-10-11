@@ -1,4 +1,4 @@
-If your company is using Azure AD or Okta as your IdP for your enterprise in GitHub's cloud, you can use team synchronization to manage team membership within each organization through IdP groups. With team synchronization enabled, changes made in an IdP group are automatically reflected on GitHub. This feature reduces the need for manual updates and custom scripts. You can centrally manage users' identities, allowing authorization, review, and revocation of permissions. 
+If your company is using Microsoft Entra ID or Okta as your IdP for your enterprise in GitHub's cloud, you can use team synchronization to manage team membership within each organization through IdP groups. With team synchronization enabled, changes made in an IdP group are automatically reflected on GitHub. This feature reduces the need for manual updates and custom scripts. You can centrally manage users' identities, allowing authorization, review, and revocation of permissions. 
 
 When you synchronize a GitHub team with an IdP group, changes to the IdP group are reflected on GitHub automatically, reducing the need for manual updates and custom scripts. You can use an IdP with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions for movements within an organization, and removing member access to the organization.
 
@@ -31,12 +31,12 @@ With team synchronization, you can use your IdP to manage administrative tasks l
 
 You can enable and use team synchronization, but only with the following supported IdPs:
 
-- Azure AD
+- Microsoft Entra ID
 - Okta
 
 The steps to enable team synchronization depend on the IdP you want to use. There are prerequisites to enable team synchronization that apply to each IdP. To enable team synchronization with your IdP, you must obtain administrative access or work with your IdP administrator to configure the IdP integration and groups. After you enable team synchronization, team maintainers and organization owners can connect a team to an IdP group on GitHub or through the API.
 
-**Azure AD**: The GitHub System Admin for the GitHub organization will need to identify and work with the Azure AD Administrator to configure Team Synchronization. On the Azure AD side, the service is called “automatic user account provisioning.” To enable team synchronization for Azure AD, the installation needs the following permissions:
+**Microsoft Entra ID**: The GitHub System Admin for the GitHub organization will need to identify and work with the Microsoft Entra Administrator to configure Team Synchronization. On the Microsoft Entra ID side, the service is called “automatic user account provisioning.” To enable team synchronization for Microsoft Entra ID, the installation needs the following permissions:
 
 - Read all users’ full profiles
 - Sign in and read user profiles

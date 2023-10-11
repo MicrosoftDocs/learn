@@ -37,7 +37,7 @@ Many more built-in policy definitions are available. To view all policy definiti
 
 To implement Azure Policy for Kubernetes on connected clusters, you need to install the Azure Policy extension. For Azure Arc-enabled Kubernetes, the process consists of the following high-level steps.
 
-1. Sign in to the Azure AD tenant with an account that has permissions to manage the Arc-enabled Kubernetes resource.
+1. Sign in to the Microsoft Entra tenant with an account that has permissions to manage the Arc-enabled Kubernetes resource.
 1. Create an Azure Policy extension instance on the cluster.
 1. Create a policy assignment by using one of the Kubernetes-specific policy definitions.
 
@@ -71,6 +71,6 @@ Azure Monitor Container insights relies on a containerized version of Azure Moni
 
 The process to implement Azure Monitor Container insights for Azure Arc-enabled Kubernetes deployments consists of the following high-level steps.
 
-1. Sign in to the Azure AD tenant with an account that has permissions to manage the Arc-enabled Kubernetes resource.
+1. Sign in to the Microsoft Entra tenant with an account that has permissions to manage the Arc-enabled Kubernetes resource.
 1. Identify the workspace ID of the Log Analytics workspace you want to use.
 1. Create an Azure Monitor Container insights extension instance on the cluster, using the Log Analytics workspace ID.
