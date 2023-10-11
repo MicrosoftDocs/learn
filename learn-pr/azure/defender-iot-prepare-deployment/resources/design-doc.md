@@ -98,6 +98,9 @@ o	[Virtual appliance support](https://learn.microsoft.com/azure/defender-for-iot
    **Knowledge check**
 
     What types of questions will test the learning objective? [(Knowledge check guidance)](https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check)
+   
+    For a given scenario (sensor, bandwidth that sensor needs, etc), which appliance would you use? Why would you pick option > over option B? (We’d likely need to provide a list of options as we can’t list all in the training module.)
+
 
 1. Summary
 
