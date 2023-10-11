@@ -4,10 +4,12 @@ title: Exercise - Explore data type casting and conversion
 metadata:
   title: Exercise - Explore data type casting and conversion
   description: "Exercise - Explore data type casting and conversion"
-  ms.date: 10/09/2023
+  ms.date: 10/11/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/2-exercise-data-type-conversion.md)]
