@@ -1,6 +1,6 @@
-You can use *offline evaluations* to figure out how well Azure AI Personalizer does compared with your app's default behavior, and measure how configuration setting changes may improve your model.
+You can use *offline evaluations* to figure out how well Azure AI Personalizer does compared with your app's default behavior, and measure how configuration setting changes can improve your model.
 
-When you create a new offline evaluation, it's *Optimization discovery* capability can run evaluations against various learning policy values to identify a combination that may improve you model's performance.
+When you create a new offline evaluation, its *Optimization discovery* capability can run evaluations against various learning policy values to identify a combination that can improve your model's performance.
 
 ## Run offline evaluation
 
@@ -26,7 +26,7 @@ You can select **Start evaluation** to run an evaluation.
 
 ## Review evaluation results
 
-Your evaluation can take some time to run. This is because it depends on multiple factors, including the amount of data that needs to be processesed, the number of learning policies that are to be compared, and whether you requested optimization.
+Your evaluation can take some time to run. This is because it depends on multiple factors, including the amount of data that needs to be processed, the number of learning policies that are to be compared, and whether you requested optimization.
 
 1. When your evaluation has completed, you can select it the list of evaluations. You can then review the performance of your learning policies based on details like their average reward, confidence intervals, and more:
 
@@ -46,7 +46,7 @@ Your evaluation can take some time to run. This is because it depends on multipl
 You run *feature evaluation* on your log data to:
 
 - Identify which features are most or least important to your model.
-- Think of new features that may be useful to learning, by considering features that are currently important to your model.
+- Think of new features that can be useful to learning, by considering features that are currently important to your model.
 - Find out potentially unimportant or  features that aren't useful and should be considered for further analysis or deletion.
 - Troubleshoot common issues that happen when designing features and providing them to Azure AI Personalizer.
 
@@ -61,16 +61,16 @@ You use the Azure portal to create a feature evaluation report by doing the foll
 
     :::image type="content" source="../media/07-create-feature-report-pane.png" alt-text="A screenshot of the create feature effectiveness report pane.":::
 
-1. Finally, you select **Create report** to create your report. Once finished, your report will appear in the Features tab.
+1. Finally, you select **Create report** to create your report. Once finished, your report appears in the Features tab.
 
 ## Interpret feature scores
 
-Your report will list features and their importance scores. Features with higher importance scores mean they had more of an effect on your model for your chosen time range, than those with lower scores. For example, suppose that you saw that the feature "IsWeekend" has a high importance for  customer purchases. In that case it may be that holidays or long-weekends could also be important factors. As a result, you might want to think about adding features that capture those details.
+Your report will list features and their importance scores. Features with higher importance scores mean they had more of an effect on your model for your chosen time range, than those with lower scores. For example, suppose that you saw that the feature "IsWeekend" has a high importance for  customer purchases. In that case it might be that holidays or long-weekends could also be important factors. As a result, you might want to think about adding features that capture those details.
 
 Just because a feature has a lower importance score, doesn't mean that it's bad, or not useful. Features that have lower importance scores can be a good starting point for further analysis that could help you to improve your model. That's because in reality, there are several reasons why a feature might have had a lower importance, score including:
 
 - The number of occurrences of the feature was low compared with other features.
-- The values for the feature didn't have a lot of diversity or variation.
+- The values for the feature didn't have much diversity or variation.
 - The values were too noisy (random), or too distinct, and provided little value. This happens if the number of unique values is too high.
 - There's a data or formatting issue. Ensure that the feature is formatted properly and sent to Azure AI Personalizer in the expected format.
 

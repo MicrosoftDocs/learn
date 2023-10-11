@@ -1,7 +1,7 @@
 
 Azure AI Personalizer is an Azure AI service that uses *reinforcement learning* to empower your applications to make smarter decisions. Reinforcement learning is a process that enables Azure AI Personalizer to choose the best *action* for a given *context*, aiming to maximize a *reward*:
 
-- **Context**: The total information that represents the state of your app, scenario, or users that may be relevant to making a decision.
+- **Context**: The total information that represents the state of your app, scenario, or users that might be relevant to making a decision.
     - For instance: Device type (such as laptop, or phone), location, and popular topics of interest of users that visit a site.
 - **Actions**: Sets of items that can be chosen, together with specific attributes that describe each item.
     - For example: A set of technology review articles and the topics that are discussed in each article.
