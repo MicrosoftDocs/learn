@@ -55,6 +55,6 @@ The application receives the *decoded* Secret string as the value passed to it i
 
 ### Secret updates
 
-All Secrets that are *mounted as volumes* inside a pod are automatically updated once their value changes. This change may not occur immediately because of the [Kubelet configuration](https://kubernetes.io/docs/concepts/configuration/configmap/#mounted-configmaps-are-updated-automatically), but will happen automatically so there's no need to restart the Pod.
+All Secrets that are *mounted as volumes* inside a pod are automatically updated once their value changes. This change might not occur immediately because of the [Kubelet configuration](https://kubernetes.io/docs/concepts/configuration/configmap/#mounted-configmaps-are-updated-automatically), but will happen automatically so there's no need to restart the Pod.
 
 Secrets that are *bound to environment variables* aren't automatically updated. For these cases, it's necessary to restart the Pod for the changes to take effect.
