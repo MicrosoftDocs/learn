@@ -32,13 +32,13 @@ prerequisites: |
   - "Knowledge of operational technology (OT) networks and networking concepts at an intermediate level"
   - "Familiarity with the Purdue networking model like the device types that are included in each networking level"
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels: 
   - intermediate
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles: 
   - solution-architect
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  solution-architect
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+products: 
+  - defender-for-iot
+subjects:
   - security
 units:
 - learn.defender-iot-prepare-deployment.introduction
