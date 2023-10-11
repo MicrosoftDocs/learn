@@ -72,7 +72,7 @@ The current processes for operations management require that all new innovations
 
 Active Directory is the identity store and the primary tool for authentication and access control across the Tailwind Traders datacenters. The company has used some best-of-breed systems to extend identity into a multifactor authentication solution. The company has also federated identities to deploy its Microsoft 365 solution. But even with those, Active Directory is how Tailwind Traders manages identity.
 
-In the cloud, the company now has more options, like Azure Active Directory or Azure Active Directory Domain Services running in an infrastructure as a service (IaaS) infrastructure. The central operations team is struggling to compare options and choose the best identity solution for its cloud adoption plans.
+In the cloud, the company now has more options, like Microsoft Entra ID or Microsoft Entra Domain Services running in an infrastructure as a service (IaaS) infrastructure. The central operations team is struggling to compare options and choose the best identity solution for its cloud adoption plans.
 
 ### Network topology and connectivity
 

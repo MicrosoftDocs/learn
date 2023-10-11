@@ -119,7 +119,7 @@ Microsoft Graph PowerShell SDK supports optional query parameters that you can u
 
 ## Advanced queries
 
-Azure AD commands support advanced queries via the **ConsistencyLevel** parameter. These queries add the **-ConsistencyLevel** header to the Graph API request.
+Microsoft Entra ID commands support advanced queries via the **ConsistencyLevel** parameter. These queries add the **-ConsistencyLevel** header to the Graph API request.
 
 To get a count of all the devices in your tenant, you'll need to run the command using advanced queries.
 
