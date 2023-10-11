@@ -4,9 +4,9 @@ title: How Orleans works
 metadata:
   title: How Orleans works
   description: Learn how to build apps using Orleans.
-  ms.date: 7/21/2022
-  author: alexwolfmsft
-  ms.author: alexwolf
+  ms.date: 10/11/2023
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 durationInMinutes: 2
