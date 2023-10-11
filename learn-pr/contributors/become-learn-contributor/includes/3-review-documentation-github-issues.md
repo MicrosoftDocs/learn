@@ -21,9 +21,10 @@ To create and submit an issue, you need a GitHub account. Here’s how to submit
 1. Sign in to your GitHub account. 
 1. Navigate to the Microsoft Learn documentation article on which you’d like to give feedback. 
 1. At the bottom of the article, find the heading labeled **Feedback**. Here, you’ll see a box labeled **This page**. 
-    -To give feedback on the article itself, select **This page**. This will take you to a blank Issues form on GitHub where you can begin filling out your comments. You’ll choose this option now.
-    -If you’d like to review other GitHub issues submitted on the topic, select **View all page feedback**. Anyone can read other GitHub issues in a public repo, but if you have a GitHub account, you can comment on the issues as well.  
-    -Selecting **This product** allows you to provide feedback on the product itself. We won’t go into detail on this option for now so we can focus on providing feedback on the documentation itself. 
+
+    - To give feedback on the article itself, select **This page**. This will take you to a blank Issues form on GitHub where you can begin filling out your comments. You’ll choose this option now.
+    - If you’d like to review other GitHub issues submitted on the topic, select **View all page feedback**. Anyone can read other GitHub issues in a public repo, but if you have a GitHub account, you can comment on the issues as well.  
+    - Selecting **This product** allows you to provide feedback on the product itself. We won’t go into detail on this option for now so we can focus on providing feedback on the documentation itself. 
 1. After you’ve selected **This page**, you’ll be prompted to sign in to your GitHub account if you haven’t already. Then, a blank Issues feedback form appears in GitHub. 
 1. Enter a title for your feedback that briefly summarizes your input. 
 1. In the text box below, describe your feedback and provide any necessary context. Use the toolbar to format your description, such as adding a quote, list, or mention.  

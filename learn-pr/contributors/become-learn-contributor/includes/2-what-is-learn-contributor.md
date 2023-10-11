@@ -4,9 +4,9 @@ Microsoft Learn is built on the expertise of thousands of individuals, from with
 
 Microsoft Learn is made up of many different content communities that Microsoft manages. Wherever possible, Microsoft Learn keeps content open for public feedback and input. This open-source approach streamlines and improves communication between product engineers, content teams, and customers. It also has other advantages:
 
--Open-source repos *plan in the open* to get feedback on what docs are most needed.
--Open-source repos *review in the open* to publish the most helpful content on our first release.
--Open-source repos *update in the open* to make it easier to continuously improve the content.
+- Open-source repos *plan in the open* to get feedback on what docs are most needed.
+- Open-source repos *review in the open* to publish the most helpful content on our first release.
+- Open-source repos *update in the open* to make it easier to continuously improve the content.
 
 Because participating in an open-source community is a shared technical experience, participants agree to follow the Microsoft Learn Open Source Code of Conduct. All repositories (the behind-the-scenes places where Microsoft Learn content is stored) that publish to Microsoft Learn have adopted the Microsoft Open Source Code of Conduct or the .NET Foundation Code of Conduct. When you contribute, you agree to follow this Code of Conduct to make sure it’s a positive and respectful experience for all.  
 
@@ -16,11 +16,11 @@ If you’ve ever used information from learn.microsoft.com, you’ve benefited f
 
 A contribution to Microsoft Learn could be:
 
--A suggestion, edit, technical review, or update to source content on GitHub. 
--A GitHub issue submitting feedback on content..
--A question, comment, or answer posted to Microsoft Q&A.
--A Collection of curated training content to share with others.
--A shared link to Microsoft Learn (for example, on social media).
+- A suggestion, edit, technical review, or update to source content on GitHub. 
+- A GitHub issue submitting feedback on content..
+- A question, comment, or answer posted to Microsoft Q&A.
+- A Collection of curated training content to share with others.
+- A shared link to Microsoft Learn (for example, on social media).
 
 Contributors improve the content and learning opportunities for everyone on Microsoft Learn. By drawing on the experience and expertise of a widespread and diverse audience, contributions clarify content for all users of Microsoft products and technologies. 
 
