@@ -11,7 +11,7 @@ Users provide input to a query for an embedding model which is converted from te
 
 The result will be any documents matching the query that are contained in your search index. The documents, with embeddings containing vector fields, must exist in the search index and the same model must be used for indexing and the query.
 
-## Embedding Space
+## Embedding space
 
 *Embedding space* is the core of vector queries comprising all the vector fields from the same embedding model. It comprises of all the vector fields populated using the same model.
 

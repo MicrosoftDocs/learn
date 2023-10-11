@@ -34,7 +34,7 @@ quiz:
       explanation: "Incorrect. This isn't the correct index."
     - content: "Your Azure subscription ID."
       isCorrect: false
-      explanation: "Incorrect. You don't need this informstion for vector query."
+      explanation: "Incorrect. You don't need this information for vector query."
   - content: "What type of vector search would you use to capture semantic similarity?"
     choices:
     - content: "A Text search."
