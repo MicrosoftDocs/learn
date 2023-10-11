@@ -4,7 +4,7 @@ title: Deploy an application to an Azure Kubernetes Service cluster
 metadata:
   title: Deploy an application to an Azure Kubernetes Service cluster
   description: "Deploy an application to an Azure Kubernetes Service cluster"
-  ms.date: 10/10/2023
+  ms.date: 10/11/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
