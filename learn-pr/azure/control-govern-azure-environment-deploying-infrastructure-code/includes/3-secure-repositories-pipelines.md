@@ -19,10 +19,10 @@ Now let's learn about some of the approaches that you can use to apply governanc
 
 Consider how you grant access to your Azure DevOps organization or GitHub repository. Think about who has access and what they can do.
 
-It's a good practice to use your organization's Azure Active Directory (Azure AD) instance as your pipeline's identity provider. That way, you can ensure that whenever somebody joins or leaves your organization, access to your pipeline is automatically granted or revoked. By using Azure AD, you can also easily implement protections like conditional access and multifactor authentication.
+It's a good practice to use your organization's Microsoft Entra instance as your pipeline's identity provider. That way, you can ensure that whenever somebody joins or leaves your organization, access to your pipeline is automatically granted or revoked. By using Microsoft Entra ID, you can also easily implement protections like conditional access and multifactor authentication.
 
 > [!NOTE]
-> To use Azure AD integration with GitHub, your organization needs a GitHub Enterprise license.
+> To use Microsoft Entra integration with GitHub, your organization needs a GitHub Enterprise license.
 
 You can also create *teams* (in GitHub) or *groups* (in Azure DevOps), which represent sets of users who can be granted permissions together. That way, you don't need to assign permissions individually. It's easy to change the permissions of users by adding them to and removing them from a team or group.
 
@@ -81,7 +81,7 @@ Next, think about the permissions that you grant to service principals:
 
 > [!div class="checklist"]
 >
-> * Apply Azure AD Conditional Access policies to your pipeline's service principals. These policies help identify risky sign-ins and behaviors. For example, if your pipeline service principals always sign in from one geographic region, Conditional Access can detect and prevent sign-ins from unexpected locations, which might indicate that the credentials have been compromised.
+> * Apply Microsoft Entra Conditional Access policies to your pipeline's service principals. These policies help identify risky sign-ins and behaviors. For example, if your pipeline service principals always sign in from one geographic region, Conditional Access can detect and prevent sign-ins from unexpected locations, which might indicate that the credentials have been compromised.
 > * Carefully consider the permissions that you grant to each service principal. For example, suppose you have a service principal that you use to read the configuration of a shared resource. Consider whether you can grant only *Reader* access to that service principal, because the service principal doesn't need to do anything that requires more privileges.
 > * Use the minimum *scope* for each permission that you assign to a service principal. For example, if your service principal needs to deploy to only a single resource group, then scope the role assignment to that resource group instead of to the whole subscription.
 > * Use separate service principals for each of your environments. That way, even if a principal's credentials are compromised or if somebody gets access to one environment, they can't access other environments.
@@ -115,7 +115,7 @@ We've discussed the important controls that you can apply to your repository and
 
 | Element to protect | Controls to apply |
 |-|-|
-| Your Azure DevOps organization or GitHub repository, including who has access to it and what they're allowed to do. | <ul><li>Use Azure AD for authentication.</li><li>Use teams and groups to assign permissions.</li><li>Enable audit logging, and review audit logs regularly.</li></ul> |
+| Your Azure DevOps organization or GitHub repository, including who has access to it and what they're allowed to do. | <ul><li>Use Microsoft Entra ID for authentication.</li><li>Use teams and groups to assign permissions.</li><li>Enable audit logging, and review audit logs regularly.</li></ul> |
 | Important branches in your repository, and what needs to happen to change the code on those branches. | Apply branch protection rules or branch policies. |
 | The code inside your repository, including your infrastructure definitions, tests, and application code. | <ul><li>Enforce code review requirements.</li><li>Add automated or manual tests.</li><li>On GitHub, use Dependabot and secret scanning.</li></ul> |
 | The pipeline definition. | Enforce code review requirements. |

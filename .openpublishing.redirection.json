@@ -6991,9 +6991,14 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/2-azure-resources.md",
+      "redirect_url": "/training/modules/create-azure-cognitive-search-solution/2-manage-capacity",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/2-get-ready-develop.md",
       "redirect_url": "/training/modules/create-azure-cognitive-search-solution/2-azure-resources",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/3-resources-search.md",
@@ -18150,6 +18155,11 @@
       "redirect_url": "/training/modules/work-with-cosmos-db/",
       "redirect_document_id": false
     },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/2-define-projection.yml",
+      "redirect_url": "/training/modules/create-knowledge-store-azure-cognitive-search",
+      "redirect_document_id": false
+  },
     {
       "source_path": "learn-pr/azure/distribute-data-globally-with-cosmos-db/5-data-consistency-levels.yml",
       "redirect_url": "/training/modules/work-with-cosmos-db/",

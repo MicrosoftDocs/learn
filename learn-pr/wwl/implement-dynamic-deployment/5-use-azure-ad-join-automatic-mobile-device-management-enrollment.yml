@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-dynamic-deployment.use-azure-ad-join-automatic-mobile-device-management-enrollment
-title: Use Azure AD join with automatic MDM enrollment
+title: Use Microsoft Entra join with automatic MDM enrollment
 metadata:
-  title: Use Azure AD join with automatic MDM enrollment
-  description: "Use Azure AD join with automatic MDM enrollment"
+  title: Use Microsoft Entra join with automatic MDM enrollment
+  description: "Use Microsoft Entra join with automatic MDM enrollment"
   ms.date: 04/05/2023
   author: wwlpublish
   ms.author: rstearman
