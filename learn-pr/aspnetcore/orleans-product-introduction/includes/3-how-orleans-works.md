@@ -10,7 +10,7 @@ Let's explore each of these steps more closely.
 
 From a coding perspective, a grain is a standard C# class that usually implements the following three concepts:
 
-1. The implementation inherits from the Orleans `Grain` base class, which manages various internal behaviors and integration points with Orleans.
+1. The implementation inherits from the Orleans <xref:Orleans.Grain> base class, which manages various internal behaviors and integration points with Orleans.
 
 1. The grain implements one of the following grain interface types. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a `string` or `integer`.
 
@@ -26,9 +26,13 @@ From a coding perspective, a grain is a standard C# class that usually implement
     public interface IShoppingCartGrain
     {
         Task<bool> AddOrUpdateItemAsync(int quantity, ProductDetails product);
+
         Task RemoveItemAsync(ProductDetails product);
+
         Task<IEnumerable<CartItem>> GetAllItemsAsync();
+
         Task<int> GetCartItemsCount();
+
         Task EmptyCartAsync();
     }
     ```
@@ -49,7 +53,7 @@ public sealed class ShoppingCartGrain
         // TODO: Implementation details
     }
 
-    // Other methods were omitted for brevity...
+    // Other methods omitted for brevity...
 }
 ```
 
@@ -78,7 +82,7 @@ builder.Host.UseOrleans(siloBuilder =>
 Once your grains are created and your silos are configured, you can begin using those grains in your application. For example, consider the following Razor Page in ASP.NET Core, which uses grains to populate a shopping cart page:
 
 ```csharp
-public sealed class CartModel( grainFactory) : PageModel
+public sealed class CartModel(IGrainFactory grainFactory) : PageModel
 {
     public IEnumerable<CartItem> CartItems { get; set; } = [];
 
