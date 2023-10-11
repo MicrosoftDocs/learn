@@ -1,1 +1,1 @@
-<!-- Add content -->
+    Imagine you're tasked with designing a digital solution to help monitor a city's energy grid, including industrial plants, wind plants, power lines, generators, and major industrial consumers. As the first step of this solution, you've chosen to set up Azure Digital Twins as an organized hub to receive and contextualize data from IoT devices across the city. You need to create the digital twin mappings for your city's energy environment and prepare the graph for IoT data to propagate through it.

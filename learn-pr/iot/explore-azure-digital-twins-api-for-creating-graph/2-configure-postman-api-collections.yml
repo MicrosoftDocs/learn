@@ -6,9 +6,41 @@ interactive: bash
 metadata:
   title:  Configure Postman and API collections
   description: Deploy an Azure Digital Twins instance, configure Postman for Azure Digital Twins, and learn about the Azure Digital Twin API categories.
-  ms.date: 09/07/2023
+  ms.date: 10/11/2023
   author: baanders
   ms.author: baanders
 durationInMinutes: 15
 content: |
   [!include[](includes/2-configure-postman-api-collections.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+  
+  - content: "Question about the requirements for Postman to work properly"
+    choices:
+    - content: "Answer A"
+      isCorrect: true
+      explanation: "Explanation A"
+
+    - content: "Answer B"
+      isCorrect: false
+      explanation: "Explanation B"
+
+    - content: "Answer C"
+      isCorrect: false
+      explanation: "Explanation C"
+
+  - content: "Question about the APIs available for Azure Digital Twins"
+    choices:
+    - content: "Answer A"
+      isCorrect: true
+      explanation: "Explanation A"
+
+    - content: "Answer B"
+      isCorrect: false
+      explanation: "Explanation B"
+
+    - content: "Answer C"
+      isCorrect: false
+      explanation: "Explanation C"

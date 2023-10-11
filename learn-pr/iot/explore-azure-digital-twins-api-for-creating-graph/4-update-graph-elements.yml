@@ -6,7 +6,7 @@ interactive: bash
 metadata:
   title: Update graph elements
   description: Use the Azure Digital Twins APIs to edit a model, twin properties, and twin relationships.
-  ms.date: 09/07/2023
+  ms.date: 10/11/2023
   author: baanders
   ms.author: baanders
 durationInMinutes: 15
