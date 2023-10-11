@@ -26,7 +26,7 @@ As a part of Azure Migrate and modernize, Microsoft provides self-guided support
 
 ### Guided deployments
 
-AMMP includes guided deployments that include expert help from FastTrack for Azure engineers and specialized migration partners. It includes assistance to deliver your project, such as planning, design, and migrating your workloads to Azure. There are also offers to help offset your migration costs, based on eligibility. Your team can learn Azure with included technical training and certifications tailored to your organization's needs.
+Azure Migrate and modernize and Azure Innovate includes guided deployments that include expert help from FastTrack for Azure engineers and specialized migration partners. It includes assistance to deliver your project, such as planning, design, and migrating your workloads to Azure. There are also offers to help offset your migration costs, based on eligibility. Your team can learn Azure with included technical training and certifications tailored to your organization's needs.
 
 > [!NOTE]
 > Guided deployments have a minimum project size to qualify. See the application form for details.
