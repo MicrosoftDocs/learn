@@ -20,18 +20,6 @@ Here are some of the benefits available from Azure Migrate and Modernize and Azu
 
 :::image type="content" source="../media/ammp-phases-2.png" alt-text="Diagram showing the Azure Migration and Modernization Program project phases.":::
 
-### Self-guided digital support
-
-As a part of Azure Migrate and modernize, Microsoft provides self-guided support to help put your team on a path to success. You can gain immediate access to curated resources designed to support your migration and modernization efforts. An Azure sales specialist calls to help answer questions about Azure and your migration and modernization plans. You also get a short email series that provides guidance and access to learning cloud skills with Azure technical training through Microsoft Learn and accredited partners.
-
-### Guided deployments
-
-Azure Migrate and modernize and Azure Innovate includes guided deployments that include expert help from FastTrack for Azure engineers and specialized migration partners. It includes assistance to deliver your project, such as planning, design, and migrating your workloads to Azure. There are also offers to help offset your migration costs, based on eligibility. Your team can learn Azure with included technical training and certifications tailored to your organization's needs.
-
-> [!NOTE]
-> Guided deployments have a minimum project size to qualify. See the application form for details.
-
-Begin your migration journey with [AMMP](https://azure.microsoft.com/migration/migration-modernization-program/#program-form).
 
 ## FastTrack for Azure
 
