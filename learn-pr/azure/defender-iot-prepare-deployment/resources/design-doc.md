@@ -58,8 +58,8 @@ Add more units as needed for your content
 1. Identify devices and subnets to monitor with Defender for IoT
 
     - Provide a sample network diagram, and show how it’s divided into Purdue levels, and what sorts of devices are included and why. Touch on questions from here:
-    https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/plan-prepare-deploy#create-a-network-diagram 
-    - And include Purdue level information from here: https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/understand-network-architecture#the-purdue-model-of-networking-architecture. 
+    https://learn.microsoft.com/azure/defender-for-iot/organizations/best-practices/plan-prepare-deploy#create-a-network-diagram 
+    - And include Purdue level information from here: https://learn.microsoft.com/azure/defender-for-iot/organizations/best-practices/understand-network-architecture#the-purdue-model-of-networking-architecture. 
 
 
     **Knowledge check**
@@ -90,11 +90,11 @@ Add more units as needed for your content
 1. Review appliance options
    - List the “general” appliance options available for use with Defender for IoT network sensors
      Will need to summarize key points in these article to fit into a unit:
-	[Supported hardware profiles](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-appliance-sizing)
-o	[Pre-configured appliances](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-pre-configured-appliances)
-o	[Virtual appliance support](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-virtual-appliances) 
+	[Supported hardware profiles](https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-appliance-sizing)
+o	[Pre-configured appliances](https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-pre-configured-appliances)
+o	[Virtual appliance support](https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-virtual-appliances) 
    - Describe when you’d use each
-   - Per Vishakha Gosh: this is most commonly used hardware profile and purchased applicance: https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/hpe-proliant-dl20-plus-enterprise
+   - Per Vishakha Gosh: this is most commonly used hardware profile and purchased applicance: https://learn.microsoft.com/azure/defender-for-iot/organizations/appliance-catalog/hpe-proliant-dl20-plus-enterprise
    **Knowledge check**
 
     What types of questions will test the learning objective? [(Knowledge check guidance)](https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check)
