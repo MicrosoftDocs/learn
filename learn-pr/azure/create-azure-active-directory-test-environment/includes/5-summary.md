@@ -10,12 +10,12 @@
 -->
 Great work!  You've successfully:
 
-- Learned how to evaluate whether you should use an existing production tenant in Azure Active Directory (Azure AD) for your application test environment, or whether you should create a separate test tenant
-- Set up a dedicated test tenant in Azure AD
+- Learned how to evaluate whether you should use an existing production tenant in Microsoft Entra ID for your application test environment, or whether you should create a separate test tenant
+- Set up a dedicated test tenant in Microsoft Entra ID
 - Created a test user in the test tenant
 - Created an app registration to use as a test client for your web app
 
-Having completed this module, you can use this test environment in Azure AD as a starting point for testing your applications.  You can also use this Azure AD test environment as a resource in a CI/CD pipeline that moves a web app through the development, test, and production lifecycle.
+Having completed this module, you can use this test environment in Microsoft Entra ID as a starting point for testing your applications.  You can also use this Microsoft Entra test environment as a resource in a CI/CD pipeline that moves a web app through the development, test, and production lifecycle.
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
     Goal: Describe how you used the product to solve the problem(s) posed in the introduction scenario
@@ -93,26 +93,28 @@ To delete an app registration in Azure CLI, run the az ad app delete command as 
 az ad app delete --id $TESTUPN
 ```
 
-### Delete an Azure AD tenant
+<a name='delete-a-microsoft-entra-tenant'></a>
 
-When a tenant is deleted in Azure AD, all resources in the organization are also deleted. Prepare your organization by minimizing its associated resources before you delete. Only a global administrator in Azure AD can delete an Azure AD organization from the Azure portal.
+### Delete a Microsoft Entra tenant
+
+When a tenant is deleted in Microsoft Entra ID, all resources in the organization are also deleted. Prepare your organization by minimizing its associated resources before you delete. Only a global administrator in Microsoft Entra ID can delete a Microsoft Entra organization from the Azure portal.
 
 #### Prepare the tenant
 
-You can't delete an organization in Azure AD until it passes several checks.
+You can't delete an organization in Microsoft Entra ID until it passes several checks.
 
 - You've paid all outstanding invoices and amounts due or overdue.
-- No users are in the Azure AD tenant, except one global administrator who will delete the organization. You must delete any other users before you can delete the organization.
+- No users are in the Microsoft Entra tenant, except one global administrator who will delete the organization. You must delete any other users before you can delete the organization.
 - If users are synchronized from on-premises, turn off the sync first. You must delete the users in the cloud organization by using the Azure portal or Azure PowerShell cmdlets.
 - No applications are in the organization. You must remove any applications before you can delete the organization.
 - No multi-factor authentication providers are linked to the organization.
-- No subscriptions for any Microsoft Online Services offerings (such as Azure, Microsoft 365, or Azure AD Premium) are associated with the organization.
-- For example, if a default Azure AD tenant was created for you in Azure, you can't delete this organization if your Azure subscription still relies on it for authentication. You also can't delete a tenant if another user has associated an Azure subscription with it.
+- No subscriptions for any Microsoft Online Services offerings (such as Azure, Microsoft 365, or Microsoft Entra ID P1 or P2) are associated with the organization.
+- For example, if a default Microsoft Entra tenant was created for you in Azure, you can't delete this organization if your Azure subscription still relies on it for authentication. You also can't delete a tenant if another user has associated an Azure subscription with it.
 
 #### Delete the tenant
 
-1. Sign in to the [Azure AD admin center](https://aad.portal.azure.com) with an account that is the global administrator for your organization.
-1. Select **Azure Active Directory**.
+1. Sign in to the [Azure portal(https://portal.azure.com) with an account that is the Global Administrator for your organization.
+1. Select **Microsoft Entra ID**.
 1. On a tenant's **Overview** page, select **Manage tenants**.
    :::image type="content" source="../media/manage-tenants-command.png" alt-text="Screenshot that shows the button for managing tenants.":::
 
