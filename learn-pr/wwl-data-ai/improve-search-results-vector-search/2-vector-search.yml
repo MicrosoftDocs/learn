@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-search-results-vector-search.vector-search
+title: What is vector search?
+metadata:
+  title: What is vector search?
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 9/29/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: cognitive-search
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-vector-search.md)]
