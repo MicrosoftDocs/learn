@@ -10,7 +10,7 @@ Be an owner of an application and record its **appId**. This app will be the own
 
 1. To perform the API operations in this exercise, consent to the *User.ReadWrite.All* and *Application.ReadWrite.All* Microsoft Graph permissions.
 
-In the team-bonding app, employees will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite*  permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
+In the team-bonding app, employees will sign in with their Microsoft Entra profile and must consent to the *User.Read.All* and *User.ReadWrite*  permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
 
 ## Create schema extension definitions
 

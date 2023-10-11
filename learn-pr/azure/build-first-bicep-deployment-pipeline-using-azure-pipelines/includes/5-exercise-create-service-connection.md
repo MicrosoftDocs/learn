@@ -5,7 +5,7 @@ Before you can deploy your toy company's website by using a pipeline, you need t
 > - Create a resource group for your website.
 > - Create an Azure Pipelines service connection and configure it to access the resource group.
 
-This exercise requires that you have permissions to create applications and service principals in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/) and create a new Azure subscription and tenant.
+This exercise requires that you have permissions to create applications and service principals in your Microsoft Entra directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/) and create a new Azure subscription and tenant.
 
 [!INCLUDE [](../../includes/cleanup-steps.md)]
 

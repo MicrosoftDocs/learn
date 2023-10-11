@@ -32,7 +32,7 @@ Like the previous alerts, activity log alerts have their own attributes:
 - **Operation name**: Operation name
 - **Level**: Verbose, informational, warning, error, or critical
 - **Status**: Started, failed, or succeeded
-- **Event initiated by**: Email address or Azure Active Directory identifier (known as the "caller") for the user
+- **Event initiated by**: Email address or Microsoft Entra identifier (known as the "caller") for the user
 
 ### Create a resource-specific log alert
 

@@ -129,7 +129,7 @@ In Azure PowerShell, use the `Remove-AzRoleAssignment` cmdlet. The command might
 Remove-AzRoleAssignment -ObjectId <object_id> -RoleDefinitionName "role name" -Scope /subscriptions/<subscription_id>
  ```
 
-`ObjectID` is the Azure AD ObjectId of the user, group, or service principal.
+`ObjectID` is the Microsoft Entra ObjectId of the user, group, or service principal.
 
 ### Delete custom role
 
