@@ -99,7 +99,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
     kubectl apply -f backend-secret.yaml
     ```
 
-6. Check the result by querying the for the secret using the `kubectl get secret` command.
+6. Check the result by querying for the secret using the `kubectl get secret` command.
 
     ```azurecli-interactive
     kubectl get secret ship-manager-database
