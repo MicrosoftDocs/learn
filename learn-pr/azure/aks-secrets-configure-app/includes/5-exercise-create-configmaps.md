@@ -17,8 +17,6 @@ You deployed the application back end, and now you need to deploy the applicatio
 
 [!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
 
-If you've been following along with this module, you should have a running AKS cluster. If you don't, you can follow the steps in the [previous exercise](./3-exercise-create-secrets.md) to create one.
-
 ## Create a ConfigMap
 
 1. Get the DNS zone that has been made available with the HTTP application routing add-on using the `az aks show` command and save the output for later use. You can also use the same value from the previous Ingress you created for the application back end.
