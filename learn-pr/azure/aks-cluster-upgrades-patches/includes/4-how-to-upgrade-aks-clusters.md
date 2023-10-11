@@ -20,6 +20,6 @@ Let's apply the Blue/Green deployment method to the Nod Publishers scenario. You
 
  :::image type="content" source="../media/3-route-traffic-to-green-environment.png" border="false" alt-text="Diagram showing that the router has switched to route traffic to the AKS clusters in the green environment.":::
 
-A benefit of the of Blue/Green deployment method is that if you detect an issue with the upgraded AKS cluster versions in the green environment, you can roll back to the blue environment by switching the router, thereby minimizing application downtime.
+A benefit of the Blue/Green deployment method is that if you detect an issue with the upgraded AKS cluster versions in the green environment, you can roll back to the blue environment by switching the router, thereby minimizing application downtime.
 
  :::image type="content" source="../media/3-rollback-to-blue-environment.png" border="false" alt-text="Diagram showing the rollback process by making a switch at the router level back to the blue environment.":::
