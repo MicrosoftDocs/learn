@@ -1,4 +1,4 @@
-Your company is running a combination of Windows and Linux workloads. You've been asked to prove that Azure Backup is a good fit for both kinds of virtual machines (VMs). By using a combination of the Azure CLI and the Azure portal, you'll help protect both kinds of VMs with Azure Backup.
+Your company runs a combination of Windows and Linux workloads. You've been asked to prove that Azure Backup is a good fit for both kinds of virtual machines (VMs). By using a combination of the Azure CLI and the Azure portal, you'll help protect both kinds of VMs with Azure Backup.
 
 Azure Backup can be quickly enabled for VMs in Azure. You can enable Azure Backup from the portal, from the Azure CLI, or by using PowerShell commands.
 
@@ -12,9 +12,9 @@ In this exercise, you'll create a VM, set up a backup, and start a backup.
 
 ### Set up the environment
 
-1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and open Azure Cloud Shell.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and select the **>_** icon to open Azure Cloud Shell.
 
-    ![Open Cloud Shell.](../media/4-azure-portal-cloudshell.png)
+    ![Screenshot of the Azure Cloud Shell icon.](../media/4-azure-portal-cloudshell.png)
 
 1. Create a resource group to contain all the resources for this exercise.
 
