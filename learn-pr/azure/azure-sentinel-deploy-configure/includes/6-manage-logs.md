@@ -16,7 +16,7 @@ You can get the full benefit of the Microsoft Sentinel experience when using a s
 
 - **Sovereignty and regulatory compliance**: A workspace is tied to a specific region. If data must be kept in different Azure geographies to satisfy regulatory requirements, it must be split into separate workspaces.
 - **Data ownership**: The boundaries of data ownership, for example by subsidiaries or affiliated companies, are better delineated by using separate workspaces.
-- **Multiple Azure tenants**: Microsoft Sentinel supports data collection from Microsoft and Azure software as a service (SaaS) resources only within its own Azure AD tenant boundary. Therefore, each Azure AD tenant requires a separate workspace.
+- **Multiple Azure tenants**: Microsoft Sentinel supports data collection from Microsoft and Azure software as a service (SaaS) resources only within its own Microsoft Entra tenant boundary. Therefore, each Microsoft Entra tenant requires a separate workspace.
 
 You might have requirements, such as the need to have granular control over access to data. Those situations are best satisfied by using a single workspace. The following table lists some situations and ways you can reduce workspace count.
 
@@ -28,10 +28,10 @@ You might have requirements, such as the need to have granular control over acce
 
 ### Microsoft Sentinel multiple workspace architecture
 
-There are cases where multiple Microsoft Sentinel workspaces, potentially across Azure AD tenants, must be centrally monitored and managed by a single security operations center, such as:
+There are cases where multiple Microsoft Sentinel workspaces, potentially across Microsoft Entra tenants, must be centrally monitored and managed by a single security operations center, such as:
 
 - A managed security service provider Microsoft Sentinel service
-- A security operations center that monitors multiple Azure AD tenants in an organization
+- A security operations center that monitors multiple Microsoft Entra tenants in an organization
 - A global security operations center that serves multiple subsidiaries and each one has its own local security operations center
 
 To address this requirement, Microsoft Sentinel offers multiple-workspace capabilities that enable central monitoring, configuration, and management. It provides a single management display console across everything that the security operations center covers.

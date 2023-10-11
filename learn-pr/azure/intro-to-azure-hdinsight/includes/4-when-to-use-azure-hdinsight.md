@@ -27,7 +27,7 @@ Consider how your organization wants to work with big data. Now apply the decisi
    > Significant cost optimizations can result from separating compute and storage and having automatic cluster scaling.
 
 - **Fault tolerance**: HDInsight’s head nodes are resilient to failure and backed by fault-tolerant VMs. This makes it a highly available service that has an SLA of 99.9%.
-- **Security**: Azure Active Directory integration provides enterprise security authentication and authorization. These capabilities, in addition to encryption and virtual network support, give you granular control of who can access your data.
+- **Security**: Microsoft Entra integration provides enterprise security authentication and authorization. These capabilities, in addition to encryption and virtual network support, give you granular control of who can access your data.
 
 In summary, consider using HDInsight when you want to:
 

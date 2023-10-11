@@ -39,8 +39,8 @@ You'll also need to set up a Service Principal to generate the right credentials
 To create a new service principal:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. From the portal, search for and select **Azure Active Directory**.
-1. From the **Azure Active Directory** page, select **App registrations** from the left pane.
+1. From the portal, search for and select **Microsoft Entra ID**.
+1. From the **Microsoft Entra ID** page, select **App registrations** from the left pane.
 1. Select **New registration**.
 1. On the **Register an application** page:
     1. Enter a **Name** for the application (the service principal name).
@@ -56,7 +56,7 @@ To create a new service principal:
 
 To use the service principal (application), you need to know the service principal's password that can be found by:
 
-1. From the Azure portal, search for and select **Azure Active Directory**, and then select **App registrations** from the left pane.
+1. From the Azure portal, search for and select **Microsoft Entra ID**, and then select **App registrations** from the left pane.
 1. Select your service principal (application) from the list.
 1. Select **Certificates & secrets** from the left pane.
 1. Select **New client secret**.
