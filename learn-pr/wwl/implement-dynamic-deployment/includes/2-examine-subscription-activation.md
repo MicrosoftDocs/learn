@@ -19,7 +19,7 @@ Enterprise environments use three main types of volume activation models and a s
 
 Frequently, devices are purchased with Windows Pro already installed with a firmware embedded key. Traditionally, the machine needed to be re-imaged with the correct edition, typically Enterprise edition. Subscription activation removes the need for this, transforming a Windows Pro device into a Windows Enterprise device, without the need to re-image and reboot the device.
 
-You can deploy Windows Enterprise E3/E5/A3/A5 licenses within your organization by using Windows Enterprise Subscription Activation or Windows Enterprise E3 in CSP and Azure AD. You can deploy Windows Enterprise licenses in the following ways:
+You can deploy Windows Enterprise E3/E5/A3/A5 licenses within your organization by using Windows Enterprise Subscription Activation or Windows Enterprise E3 in CSP and Microsoft Entra ID. You can deploy Windows Enterprise licenses in the following ways:
 
  -  **Enabling Subscription Activation with an existing Enterprise Agreement (EA)**. If you're an existing EA customer, you can get Windows Enterprise E3 or E5 licenses for free, depending on your EA.
  -  **Enabling Subscription Activation without an existing EA**. You must purchase the licenses from a cloud solution provider (CSP) before you can assign them.
@@ -29,20 +29,20 @@ You can deploy Windows Enterprise E3/E5/A3/A5 licenses within your organization 
 To implement Subscription Activation, your organization must meet the following requirements:
 
  -  Windows Pro/Pro Education/Enterprise/Education is installed and activated on the devices you want to upgrade.
- -  An instance of Azure AD is available for identity management.
- -  Devices to upgrade are either Azure AD-joined or Hybrid Azure AD-joined.
+ -  An instance of Microsoft Entra ID is available for identity management.
+ -  Devices to upgrade are either Microsoft Entra joined or Microsoft Entra hybrid joined.
  -  For education, the Education tenant must have an active subscription to Microsoft 365 with a Windows Enterprise license or a Windows Enterprise or Education subscription.
 
 #### How Subscription Activation works
 
 With Subscription Activation users can upgrade their devices from Windows Pro to Windows Enterprise without entering a product key, and without requiring the users to restart their computers. Subscription Activation is possible with Windows Pro or Windows Enterprise. Your organization requires either:
 
- -  **An EA or a Microsoft Products and Services Agreement (MPSA)**. When a licensed user signs in using Azure AD credentials that are associated with a Windows 11 Enterprise E3/E5 or A3/A5 license on a device, which meets the above requirements, the operating system switches from Windows Pro to Windows Enterprise. All the appropriate Windows Enterprise features are available. When a user’s Azure AD subscription expires, or you transfer the subscription to another user, the Windows Enterprise device reverts back to Windows Pro edition. This occurs after a grace period of up to 90 days.
- -  **An Enterprise E3 subscription via a CSP**. Windows Enterprise E3 in CSP delivers, by subscription, exclusive features reserved for Windows Enterprise edition. Windows Enterprise E3 is available through a subscription-based model and delivers Windows Enterprise edition features. In a subscription-based model you pay a monthly fee for using Windows, and you don’t need to buy them before you can start using them. This offering is available through the CSP channel through the Partner Center as an online service. Windows Enterprise E3 in CSP provides a flexible, per-user subscription for small- and medium-sized companies, ranging from one to hundreds of users. As with the previous scenario, when a user signs in with Azure AD credentials that are associated with a Windows Enterprise E3 license, the operating system switches from Windows Pro to Windows Enterprise.
+ -  **An EA or a Microsoft Products and Services Agreement (MPSA)**. When a licensed user signs in using Microsoft Entra credentials that are associated with a Windows 11 Enterprise E3/E5 or A3/A5 license on a device, which meets the above requirements, the operating system switches from Windows Pro to Windows Enterprise. All the appropriate Windows Enterprise features are available. When a user’s Microsoft Entra subscription expires, or you transfer the subscription to another user, the Windows Enterprise device reverts back to Windows Pro edition. This occurs after a grace period of up to 90 days.
+ -  **An Enterprise E3 subscription via a CSP**. Windows Enterprise E3 in CSP delivers, by subscription, exclusive features reserved for Windows Enterprise edition. Windows Enterprise E3 is available through a subscription-based model and delivers Windows Enterprise edition features. In a subscription-based model you pay a monthly fee for using Windows, and you don’t need to buy them before you can start using them. This offering is available through the CSP channel through the Partner Center as an online service. Windows Enterprise E3 in CSP provides a flexible, per-user subscription for small- and medium-sized companies, ranging from one to hundreds of users. As with the previous scenario, when a user signs in with Microsoft Entra credentials that are associated with a Windows Enterprise E3 license, the operating system switches from Windows Pro to Windows Enterprise.
 
 ### VDA Subscription Activation
 
-You can also take advantage of subscriptions to Windows Enterprise for virtualized clients. Windows Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Microsoft Azure or in another appropriate hosting platform. To support this, you must configure your VMs to enable Windows Enterprise subscriptions for VDA. Both AD DS-joined and Azure AD-joined clients are supported.
+You can also take advantage of subscriptions to Windows Enterprise for virtualized clients. Windows Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Microsoft Azure or in another appropriate hosting platform. To support this, you must configure your VMs to enable Windows Enterprise subscriptions for VDA. Both AD DS-joined and Microsoft Entra joined clients are supported.
 
 VDA Subscription Activation also supports Inherited Activation starting with Windows 10, version 1803. It enables a Windows VM to inherit its activation state from the Windows host. When a user with Windows E3 or E5 license creates a Windows VM on their Windows host, the VM inherits the activation state from a host machine.
 
@@ -51,7 +51,7 @@ VDA Subscription Activation also supports Inherited Activation starting with Win
 To enable Windows Subscription Activation, your VMs must:
 
  -  Run Windows 11 Pro
- -  Be a member of an AD DS domain or Azure AD-joined
+ -  Be a member of an AD DS domain or Microsoft Entra joined
  -  Be generation 1
  -  Be hosted by a Qualified Multitenant Hoster (QMTH), such as Microsoft Azure
 
