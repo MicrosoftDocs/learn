@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Deprecate Kubernetes 1.0.0 and release Kubernetes 2.0.0."
       isCorrect: false
-      explanation: "Depreciating Kubernetes 1.0.0 and then releasing Kubernetes 2.0.0 is a major version release. Bug fixes don't require such drastic changes ."
+      explanation: "Depreciating Kubernetes 1.0.0 and then releasing Kubernetes 2.0.0 is a major version release. Bug fixes don't require such drastic changes."
     - content: "Make a patch release."
       isCorrect: true
       explanation: "A patch release means a new patch version is available that includes fixes to the identified bugs."
