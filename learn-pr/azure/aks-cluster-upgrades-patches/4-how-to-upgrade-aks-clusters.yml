@@ -15,7 +15,7 @@ content: |
 
 quiz:
   questions:
-  - content: "Your organization decided to use the Blue/Green deployment method to test and deploy newly-upgraded AKS clusters. Which of the following most accurately describes this testing and deployment strategy?"
+  - content: "Your organization decided to use the Blue/Green deployment method to test and deploy newly upgraded AKS clusters. Which of the following most accurately describes this testing and deployment strategy?"
     choices:
     - content: "Run two identical AKS clusters, upgrade one cluster, and then switch the router to the upgrade cluster."
       isCorrect: true
