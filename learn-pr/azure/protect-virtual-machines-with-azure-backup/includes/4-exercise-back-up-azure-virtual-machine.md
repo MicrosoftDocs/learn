@@ -14,7 +14,7 @@ In this exercise, you'll create a VM, set up a backup, and start a backup.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and select the **>_** icon to open Azure Cloud Shell.
 
-    ![Screenshot of the Azure Cloud Shell icon.](../media/4-azure-portal-cloudshell.png)
+    ![Screenshot of the Cloud Shell icon in the Azure portal.](../media/4-azure-portal-cloudshell.png)
 
 1. Create a resource group to contain all the resources for this exercise.
 
@@ -93,8 +93,6 @@ The command can take a few minutes to complete. Wait for it to finish before mov
     ![Screenshot that shows the backup options.](../media/4-portal-azure-backup.png)
 
 1. To perform the first backup for this server, in the top menu bar, select **Backup now**.
-
-    ![Screenshot that shows "Backup now."](../media/4-portal-backup-now.png)
 
     The **Backup Now** pane for NW-RHEL01 appears.
 
