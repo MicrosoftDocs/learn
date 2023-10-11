@@ -147,7 +147,7 @@ Two installers are required for an on-premises Azure AD Password Protection depl
 
 ## Install and configure the proxy service
 
-The Azure AD Password Protection proxy-service is typically on a member server in your on-premises AD DS environment. Once installed, the Azure AD Password Protection proxy-service communicates with Azure AD to maintain a copy of the global and customer banned password lists for your Azure AD tenant.
+The Azure AD Password Protection proxy-service is typically on a member server in your on-premises AD DS environment. Once installed, the Azure AD Password Protection proxy-service communicates with Azure AD to maintain a copy of the global and custom banned password lists for your Azure AD tenant.
 
 ## Install the DC agent service
 
