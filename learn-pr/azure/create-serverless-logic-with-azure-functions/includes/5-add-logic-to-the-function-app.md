@@ -18,7 +18,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 1. Under **Select a template**, select *HTTP trigger*.
 
-::: zone pivot="javascript"
+   ::: zone pivot="javascript"
 
 1. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
 
@@ -68,9 +68,9 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
     This configuration file declares that the function runs when it receives an HTTP request. The output binding declares that the response is sent as an HTTP response.
 
-::: zone-end
+   ::: zone-end
 
-::: zone pivot="powershell"
+   ::: zone pivot="powershell"
 
 1. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
 
@@ -132,7 +132,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
     This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response is sent as an HTTP response.
 
-::: zone-end
+   ::: zone-end
 
 ## Test the function
 

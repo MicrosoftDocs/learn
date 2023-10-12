@@ -2,7 +2,7 @@ To help decide whether serverless computing is right for you, let's first learn 
 
 ## What is serverless compute?
 
-[Serverless compute](https://azure.microsoft.com/solutions/serverless/) can be thought of as a function as a service (FaaS), or a microservice that is hosted on a cloud platform. Your business logic runs as functions and you don't have to manually provision or scale infrastructure. The cloud provider manages infrastructure. Your app is automatically scaled out or down depending on load. Azure has several ways to build this sort of architecture. The two most common approaches are Azure Logic Apps and Azure Functions, which is the focus of in this module.
+[Serverless compute](https://azure.microsoft.com/solutions/serverless/) can be thought of as a function as a service (FaaS), or a microservice that is hosted on a cloud platform. Your business logic runs as functions and you don't have to manually provision or scale infrastructure. The cloud provider manages infrastructure. Your app is automatically scaled out or down depending on load. Azure has several ways to build this sort of architecture. The two most common approaches are Azure Logic Apps and Azure Functions, which is the focus of this module.
 
 ## What is Azure Functions?
 
