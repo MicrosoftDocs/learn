@@ -26,7 +26,7 @@ quiz:
       explanation: "Standard Akamai is a valid Azure CDN type."
     - content: "Premium Akamai"
       isCorrect: true
-      explanation: "Premium Akamai isn't a valid Azure CDN type. Valid types are Standard Microsoft, Standard Akamai, Standard Verizon, and Premium Verizon"
+      explanation: "Premium Akamai isn't a valid Azure CDN type. Valid types are Standard Microsoft, Standard Akamai, Standard Edgio, and Premium Edgio"
     
   - content: "If a CDN doesn't have a copy of a user-requested file in an edge server at a Point of Presence (POP), what happens next?"
     choices:

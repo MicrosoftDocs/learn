@@ -35,8 +35,8 @@ There are four types of CDN available in Azure:
 
 - Standard Microsoft
 - Standard Akamai
-- Standard Verizon
-- Premium Verizon
+- Standard Edgio
+- Premium Edgio
 
 The types vary by features and caching options.
 
