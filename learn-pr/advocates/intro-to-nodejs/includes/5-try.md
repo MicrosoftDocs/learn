@@ -14,7 +14,7 @@ A [development container](https://containers.dev/) environment is available with
     > [!div class="nextstepaction"]
     > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=278117471)
 
-1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
+1. On the **Create codespace** page, review the codespace configuration settings and then select **Create codespace**
 
     :::image type="content" source="../media/codespaces/codespace-configuration.png" alt-text="Screenshot of the confirmation screen before creating a new codespace.":::
 
@@ -91,42 +91,48 @@ Node.js also supports running code from files.
    node index.js
    ```
 
-You should see the following output:
+    You should see the following output:
+    
+    ```output
+    Hello World, from a script file.
+    ```
 
-```output
-Hello World, from a script file.
-```
-
-You have now run your first Node.js JavaScript code. Close the browser tab to stop the dev container.
+You have now run your first Node.js JavaScript code. 
 
 * Question: Is console.log synchronous or asynchronous?
 * Answer: The `console.log` method appears in development to execute immediately and is therefore assumed to be async. There is no guarantee of async behavior for this method so must be considered synchronous. This means that the code execution _can_ block until the `console.log` method is finished. This is why you'll be cautioned from keeping console.log statements in your code in production.
 
 ## Add an asynchronous function
 
-Add the following code to the file to create an asynchronous HTTP request:
+1. Add the following code to the `index.js` file to create an asynchronous HTTP request:
 
-```javascript
-const https = require('https');
+    ```javascript
+    const https = require('https');
+    
+    console.log(`start`);
+    
+    https.get('https://nodejs.org/dist/index.json', (res) => {
+        console.log(res.statusCode);
+    });
+    
+    console.log(`end`);
+    ```
 
-console.log(`start`);
+    The `https.get` method makes an HTTP request to the Node.js website and returns the response. The `get` method takes two parameters: the URL to request and a callback function that is called when the response is received. The callback function takes a single parameter, `res`, which is the response object.
 
-https.get('https://nodejs.org/dist/index.json', (res) => {
-    console.log(res.statusCode);
-});
+1. Rerun the application:
 
-console.log(`end`);
-```
+    ```javascript
+    node index.js
+    ```
 
-The `https.get` method makes an HTTP request to the Node.js website and returns the response. The `get` method takes two parameters: the URL to request and a callback function that is called when the response is received. The callback function takes a single parameter, `res`, which is the response object.
-
-The order of the console logs is as follows:
-
-```output
-start
-end
-200
-```
+1. The order of the console logs is as follows:
+    
+    ```output
+    start
+    end
+    200
+    ```
 
 From the output, you can see the event loop in action. The HTTP method is called and put in the task queue, waiting for it to return. The event loop takes the next task, which is the console.log method.
 
@@ -140,7 +146,7 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
 1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
 
-1. Locate your currently running codespaces sourced from the [`azure-samples/minimal-api-work-with-databases`](https://github.com/azure-samples/minimal-api-work-with-databases) GitHub repository.
+1. Locate your currently running codespaces sourced from the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
 
     :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
 
