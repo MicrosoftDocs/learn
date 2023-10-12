@@ -12,12 +12,12 @@ The init container retrieves the IP address allocated to the application contain
 
 ## Create the initialization script and DNS zone
 
-First, you create an Azure service principal that the init container uses to retrieve the application's IP address and update the DNS. In this example, you assign the service principal **Contributor** role for simplicity. In production environments, you might want to be more restrictive.
+First, you create an Azure service principal that the init container uses to retrieve the application's IP address and update the DNS, since you cannot use managed identities in an init container. In this example, you assign the service principal **Contributor** role for simplicity. In production environments, you might want to be more restrictive.
 
 1. In Azure Cloud Shell in the Azure portal, run the following code to create the service principal:
 
     ```azurecli
-    # Create SP
+    # Create Service Principal for authentication
     scope=$(az group show -n $rg --query id -o tsv)
     new_sp=$(az ad sp create-for-rbac --scopes $scope --role Contributor --name acilab -o json)
     sp_appid=$(echo $new_sp | jq -r '.appId') && echo $sp_appid
@@ -51,7 +51,10 @@ First, you create an Azure service principal that the init container uses to ret
     echo "Logging into Azure..."
     az login --service-principal -u \$SP_APPID -p \$SP_PASSWORD --tenant \$SP_TENANT
     echo "Finding out IP address..."
-    my_private_ip=\$(az container show -n \$ACI_NAME -g \$RG --query 'ipAddress.ip' -o tsv) && echo \$my_private_ip
+    # my_private_ip=\$(az container show -n \$ACI_NAME -g \$RG --query 'ipAddress.ip' -o tsv) && echo \$my_private_ip
+    my_private_ip=\$(ifconfig eth0 | grep 'inet addr' | cut -d: -f2 | cut -d' ' -f 1) && echo \$my_private_ip
+    echo "Deleting previous record if there was one…"
+    az network private-dns record-set a delete -n \$HOSTNAME -z \$DNS_ZONE_NAME -g \$RG -y
     echo "Creating DNS record..."
     az network private-dns record-set a create -n \$HOSTNAME -z \$DNS_ZONE_NAME -g \$RG
     az network private-dns record-set a add-record --record-set-name \$HOSTNAME -z \$DNS_ZONE_NAME -g \$RG -a \$my_private_ip
@@ -76,18 +79,19 @@ You can now create a YAML file that builds on the files you used in previous uni
 
     ```bash
     # Create YAML
+    aci_subnet_id=$(az network vnet subnet show -n $aci_subnet_name --vnet-name $vnet_name -g $rg --query id -o tsv)
     aci_yaml_file=/tmp/acilab.yaml
     cat <<EOF > $aci_yaml_file
     apiVersion: 2019-12-01
-    location: westus
+    location: $location
     name: $aci_name
     properties:
-      networkProfile:
-        id: $nw_profile_id
+      subnetIds:
+      - id: $aci_subnet_id
       initContainers:
       - name: azcli
         properties:
-          image: microsoft/azure-cli:latest
+          image: mcr.microsoft.com/azure-cli:latest
           command:
           - "/bin/sh"
           - "-c"
@@ -126,7 +130,7 @@ You can now create a YAML file that builds on the files you used in previous uni
             mountPath: /etc/nginx
       - name: sqlapi
         properties:
-          image: erjosito/sqlapi:1.0
+          image: erjosito/yadaapi:1.0
           environmentVariables:
           - name: SQL_SERVER_FQDN
             value: $sql_server_fqdn
@@ -179,6 +183,13 @@ You can now create a YAML file that builds on the files you used in previous uni
     az container create -g $rg --file $aci_yaml_file
     ```
     
+1. Verify that the init container created an A record in the Azure Private DNS zone:
+
+    ```azurecli
+    # Verify A records in the Azure Private DNS zone
+    az network private-dns record-set a list -z $dns_zone_name -g $rg --query '[].{RecordName:name,IPv4Address:aRecords[0].ipv4Address}' -o table
+    ```
+
 1. Use the SQL API endpoints to test that the container is reachable. You use the domain name to access the container, not its IP address.
 
     ```bash
