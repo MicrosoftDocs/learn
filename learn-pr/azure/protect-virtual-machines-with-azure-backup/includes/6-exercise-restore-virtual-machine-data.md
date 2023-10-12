@@ -45,7 +45,7 @@ To prevent this error, follow these steps:
 
     ![Screenshot that shows the VM overview page.](../media/6-vm-overview.png)
 
-    The **NW-APP01** virtual machine pane appears.
+    The *NW-APP01* virtual machine pane appears.
 
 1. In the menu bar, select **Stop**.
 
@@ -63,7 +63,7 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
     ![Screenshot of the Backup operation for a VM.](../media/6-vm-backup-menu.png)
 
-1. To restore the virtual machine, in the menu bar, select **Restore VM**. The **Restore Virtual Machine** pane for *nw-app01* appears.
+1. To restore the virtual machine, in the menu bar, select **Restore VM**. The **Restore Virtual Machine** pane for *NW-APP01* appears.
 
 1. Under the **Restore point** text box, select **Select**. The **Select restore point** pane appears.
 
@@ -71,7 +71,7 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
     ![Screenshot of selecting a restore point.](../media/6-restore-point.png)
 
-    The **Restore Virtual Machine** pane for *nw-app01* appears.
+    The **Restore Virtual Machine** pane for *NW-APP01* appears.
 
 1. Configure the restore point using the following values for each setting.
 
@@ -83,7 +83,7 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
     ![Screenshot that shows the restore configuration options.](../media/6-restore-configuration.png)
 
-1. Select **Restore**. The **Backup** pane for the NW-APP01 virtual machine appears. Notice the notifications in the top right of the toolbar. The latest notification shows   **Triggering restore for NW-APP01**
+1. Select **Restore**. The **Backup** pane for the *NW-APP01* virtual machine appears. Notice the notifications in the top right of the toolbar. The latest notification shows **Triggering restore for NW-APP01**
 
 ## Track a restore
 
@@ -95,7 +95,7 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
     :::image type="content" source="../media/6-restore-progress.png" alt-text="Screenshot of the restore progress." lightbox="../media/6-restore-progress.png":::
 
-    The **Restore** pane appears for nw-app01.
+    The **Restore** pane appears for *NW-APP01*.
 
 1. You can monitor the progress of the VM restore job:
     - **Job details**: Details about the restore job you launched for this VM.
