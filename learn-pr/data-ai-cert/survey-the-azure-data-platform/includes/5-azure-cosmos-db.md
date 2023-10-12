@@ -38,6 +38,6 @@ As a data engineer, you can create stored procedures, triggers, and user-defined
 
 ## Data security
 
-Azure Cosmos DB supports data encryption, IP firewall configurations, and access from virtual networks. Data is encrypted automatically. User authentication is based on tokens, and Azure Active Directory provides role-based security. 
+Azure Cosmos DB supports data encryption, IP firewall configurations, and access from virtual networks. Data is encrypted automatically. User authentication is based on tokens, and Microsoft Entra ID provides role-based security. 
 
 Azure Cosmos DB meets many security compliance certifications, including HIPAA, FedRAMP, SOX, and HITRUST.

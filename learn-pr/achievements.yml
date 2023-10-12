@@ -25,6 +25,21 @@ achievements:
   title: Introduction to Mobile Apps in Azure App Service
   summary: Introduction to Mobile Apps in Azure App Service
   iconUrl: /training/achievements/azure-intro-mobile-app-service.svg
+- uid: learn.quantum.run-quantum-algorithms-hardware.badge
+  type: badge
+  title: Run algorithms on quantum hardware by using Azure Quantum
+  summary: Run algorithms on quantum hardware by using Azure Quantum
+  iconUrl: /training/achievements/quantum.run-quantum-algorithms-hardware.svg
+- uid: learn.quantum.get-started-azure-quantum.badge
+  type: badge
+  title: Get started with Azure Quantum
+  summary: Get started with Azure Quantum
+  iconUrl: /training/achievements/quantum/get-started-quantum-workspace.svg
+- uid: learn.quantum.solve-graph-coloring-problems-grovers-search.badge
+  type: badge
+  title: Solve graph coloring problems by using Grovers search
+  summary: Solve graph coloring problems by using Grovers search
+  iconUrl: /training/achievements/quantum/solve-graph-coloring-problems-grovers-search.svg
 - uid: learn-wwl.learn-business-value-of-azure.trophy
   type: trophy
   title: Learn the business value of Microsoft Azure
@@ -1360,7 +1375,7 @@ achievements:
 - uid: learn.wwl.sap-certified-offerings-azure.trophy
   type: trophy
   title: SAP certified offerings for Azure
-  summary: As an IT Professional experienced in SAP solutions, you need to understand how to leverage Azure resources that include virtual machines, virtual networks, storage accounts, and Azure AD. These modules will provide the basis for running SAP workloads in Azure.
+  summary: As an IT Professional experienced in SAP solutions, you need to understand how to leverage Azure resources that include virtual machines, virtual networks, storage accounts, and Microsoft Entra ID. These modules will provide the basis for running SAP workloads in Azure.
   iconUrl: /training/achievements/sap-certified-offerings-for-azure.svg
 - uid: learn.wwl.sap-hana-azure-compute-network-storage.badge
   type: badge
@@ -2114,8 +2129,8 @@ achievements:
   iconUrl: /training/achievements/iot-low-touch-iot-central.svg
 - uid: learn.configure-admin-consent-workflow.badge
   type: badge
-  title: Manage consent requests to apps through admin consent workflow in Azure Active Directory
-  summary: "Admin consent workflow streamlines the process by which admins evaluate and respond to consent requests in Azure Active directory (Azure AD). Learn how to configure admin consent workflow to enable users of applications to request admin consent from the consent prompt. Learn how to properly evaluate consent requests and respond to them through the Azure portal."
+  title: Manage consent requests to apps through admin consent workflow in Microsoft Entra ID
+  summary: "Admin consent workflow streamlines the process by which admins evaluate and respond to consent requests in Microsoft Entra ID. Learn how to configure admin consent workflow to enable users of applications to request admin consent from the consent prompt. Learn how to properly evaluate consent requests and respond to them through the Azure portal."
   iconUrl: /training/achievements/configure-admin-consent-workflow.svg
 - uid: learn.azure.build-cloud-governance-strategy-azure.badge
   type: badge
@@ -2125,7 +2140,7 @@ achievements:
 - uid: learn.azure.secure-access-azure-identity-services.badge
   type: badge
   title: Secure access to your applications by using Azure identity services
-  summary: Learn how Azure Active Directory helps you manage and secure identities. Also see how single sign-on, multifactor authentication, and Conditional Access enable your users to securely access resources and applications from your intranet and from public networks.
+  summary: Learn how Microsoft Entra ID helps you manage and secure identities. Also see how single sign-on, multifactor authentication, and Conditional Access enable your users to securely access resources and applications from your intranet and from public networks.
   iconUrl: /training/achievements/examine-core-identity-services.svg
 - uid: learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.badge
   type: badge
@@ -2139,8 +2154,8 @@ achievements:
   iconUrl: /training/achievements/review-planning-managing-costs.svg
 - uid: learn.enable-single-sign-on.badge
   type: badge
-  title: Enable single sign-on for applications by using Azure Active Directory
-  summary: "To enable single sign-on, you add an application from the Azure Active Directory(Azure AD) application gallery. You create a test user account in Azure AD  and assign it to the Azure AD application. You then configure single sign-on both at the identity provider and the service provider and test the single sign-on configuration by signing in to the application using the test user account."
+  title: Enable single sign-on for applications by using Microsoft Entra ID
+  summary: "To enable single sign-on, you add an application from the Microsoft Entra application gallery. You create a test user account in Microsoft Entra ID  and assign it to the Microsoft Entra application. You then configure single sign-on both at the identity provider and the service provider and test the single sign-on configuration by signing in to the application using the test user account."
   iconUrl: /training/achievements/enable-single-sign-on.svg
 - uid: learn.data-ai.build-ai-solutions-with-azure-ml-service.trophy
   type: trophy

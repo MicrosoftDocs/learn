@@ -6,7 +6,7 @@ In this exercise, you use [Graph Explorer](https://aka.ms/ge) to make REST API r
 
 1. To perform the API operations in this exercise, consent to the *User.ReadWrite.All* and *Group.ReadWrite.All* Microsoft Graph permissions.
 
-In the team-bonding app, employees will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
+In the team-bonding app, employees will sign in with their Microsoft Entra profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
 
 ## Identify the extension attributes to use
 

@@ -14,7 +14,7 @@ You'll use the Microsoft identity platform to simplify authorization and authent
 
 - Create a Python web application using the Flask framework
 - Install the Microsoft Authentication Library and other dependencies
-- Register the application with your Azure AD tenant
+- Register the application with your Microsoft Entra tenant
 - Configure platform settings and credentials
 - Add app roles to your application
 - Build the authorization code flow

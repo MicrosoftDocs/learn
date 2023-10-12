@@ -6,7 +6,7 @@ We saw earlier that there are several features that enhance the AKS Kubernetes o
 
 | | Consideration |
 | --- | --- |
-| **Identity and security management** | Do you already use existing Azure resources and make use of Azure AD? You can configure an AKS cluster to integrate with Azure AD and reuse existing identities and group membership. |
+| **Identity and security management** | Do you already use existing Azure resources and make use of Microsoft Entra ID? You can configure an AKS cluster to integrate with Microsoft Entra ID and reuse existing identities and group membership. |
 | **Integrated logging and monitoring** | AKS includes Azure Monitor for containers to provide performance visibility of the cluster. With a custom Kubernetes installation, you normally decided on a monitoring solution that requires installation and configuration. |
 | **Auto Cluster node and pod scaling** | Deciding when to scale up or down in large containerization environment is tricky. AKS supports two auto cluster scaling options. You can use either the horizontal pod autoscaler or the cluster autoscaler to scale the cluster. The horizontal pod autoscaler watches the resource demand of pods and will increase pods to match demand. The cluster autoscaler component watches for pods that can't be scheduled because of node constraints. It will automatically scale cluster nodes to deploy scheduled pods. |
 | **Cluster node upgrades** | Do you want to reduce the number of cluster management tasks? AKS manages Kubernetes software upgrades and the process of cordoning off nodes and draining them to minimize disruption to running applications. Once done, these nodes are upgraded one by one. |

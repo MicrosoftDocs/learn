@@ -1,12 +1,14 @@
-Azure Active Directory (Azure AD) Identity Protection helps you to automatically detect, remediate, and investigate identity-based risks for your organization.
+Microsoft Entra ID Protection helps you to automatically detect, remediate, and investigate identity-based risks for your organization.
 
 The retail company you work for is conscious about its reputation. Compromised identities have previously enabled malicious users to obtain customer information fraudulently. These attacks have affected your organization's reputation, and ultimately its profitability. Your manager has asked you to investigate Identity Protection as a solution. You've been asked to report back on what the service does and how it's used.
 
 In this unit, you learn what Identity Protection is and the risks involved in using it. You explore the different workflows you can use in Identity Protection to protect your identities.
 
-## What is Azure Active Directory Identity Protection?
+<a name='what-is-azure-active-directory-identity-protection'></a>
 
-Identity Protection is a solution built into Azure AD that's designed to protect your identities through a three-part process.
+## What is Microsoft Entra ID Protection?
+
+Identity Protection is a solution built into Microsoft Entra that's designed to protect your identities through a three-part process.
 
 ![Diagram of the Identity Protection overview.](../media/2-identity-protection-overview.svg)
 
@@ -36,7 +38,9 @@ Here, Identity Protection scrutinizes each authentication request to judge wheth
 | Malware-linked IP address | For example, if it's known that the IP address where the sign-in originates has been in contact with an active bot server, a risk detection is raised. |
 | Anonymous IP address | For example, a sign-in originates from an anonymous IP address. Because attackers can use these details to hide their real IP address or location, a risk detection is raised. |
 
-## Azure Active Directory Identity Protection workflow
+<a name='azure-active-directory-identity-protection-workflow'></a>
+
+## Microsoft Entra ID Protection workflow
 
 There are two different ways to detect and handle identity risks: self-remediation workflow and administrator remediation workflow.
 
