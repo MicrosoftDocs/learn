@@ -12,7 +12,7 @@ To configure rewards for your loop, you set the following values under Rewards:
 :::image type="content" source="../media/configure-rewards.png" alt-text="A screenshot showing the rewards section.":::
 
 - **Reward wait time**
-    - Determine how long Azure AI Personalizer should collect reward values for a Rank call from when the first call happens. To decide, you should ask yourself: "How long should Azure AI Personalizer wait for rewards calls?" Any rewards that are received after this time period won't used for learning, but will be logged.
+    - Determine how long Azure AI Personalizer should collect reward values for a Rank call from when the first call happens. To decide, you should ask yourself: "How long should Azure AI Personalizer wait for rewards calls?" Any rewards that are received after this time period won't be used for learning, but will be logged.
 - **Default reward**
     - If no reward call is received by Azure AI Personalizer during the reward wait time period for  a Rank call, AI Personalizer will assign this default reward. By default, and in most scenarios, this default reward is zero.
 - **Reward aggregation**

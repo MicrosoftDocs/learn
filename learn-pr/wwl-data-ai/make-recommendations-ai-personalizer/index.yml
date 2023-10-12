@@ -1,8 +1,7 @@
 ### YamlMime:Module
 uid: learn.make-recommendations-ai-personalizer
 metadata:
-  title: |
-    Make recommendations with Azure AI Personalizer
+  title: Make recommendations with Azure AI Personalizer
   description: "In this module, you'll learn how to use Azure AI Personalizer to make recommendations."
   ms.date: 9/27/2023
   author: wwlpublish
