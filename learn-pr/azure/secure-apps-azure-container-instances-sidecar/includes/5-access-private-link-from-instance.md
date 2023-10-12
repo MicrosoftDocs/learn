@@ -45,9 +45,9 @@ Create a new subnet in the virtual network, and create an Azure SQL Database pri
 
 In the results of the preceding `nslookup` command, you can see that the FQDN of the Azure SQL database still resolves to its public IP address inside the virtual network. To force the resources in the virtual network to use the private IP address of the Azure SQL database, you can create a private DNS zone.
 
-Azure SQL databases with configured private links use the intermediate domain `privatelink.database.windows.net`. You create a private zone for this domain that has an A-record for the IP address of the Azure SQL private endpoint.
+Azure SQL databases with configured private links use the intermediate domain `privatelink.database.windows.net`. You create a private zone for this domain that has an A record for the IP address of the Azure SQL private endpoint.
 
-1. Run the following `az network private-endpoint dns-zone-group create` command to connect the private endpoint with the private DNS zone and automatically create the A-record with the correct IP address.
+1. Run the following `az network private-endpoint dns-zone-group create` command to connect the private endpoint with the private DNS zone and automatically create the A record with the correct IP address.
 
    ```azurecli
    # Create Azure DNS private zone and record

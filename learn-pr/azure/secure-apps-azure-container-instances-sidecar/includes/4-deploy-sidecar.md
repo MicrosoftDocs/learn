@@ -79,16 +79,9 @@ First create a digital certificate for data encryption, and then create a file t
     ssl_key=$(cat ssl.key | base64)
     ```
 
-## Deploy container group with NGINX sidecar
+## Deploy the container group with the NGINX sidecar
 
 Complex configurations such as sidecars require using YAML instead of Azure CLI. Use YAML to define the container group.
-
-1. Get the `networkProfile` ID. You can either copy the profile ID from the YAML generated in the previous unit, or look it up by using the `az network profile list` command:
-
-    ```bash
-    # Get network profile ID
-    nw_profile_id=$(az network profile list -g $rg --query '[0].id' -o tsv) && echo $nw_profile_id
-    ```
 
 1. Create a YAML file that specifies the properties for the sidecar container by combining all the information you stored in variables. Be aware of the following points:
 

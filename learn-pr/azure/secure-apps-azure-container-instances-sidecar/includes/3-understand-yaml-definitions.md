@@ -100,8 +100,6 @@ You don't want the SQL database password to be visible to customers, so you need
     more /tmp/aci2.yaml
     ```
 
-You can find more properties to use in Container Instances YAML declarations in the Azure Container Instances YAML reference.
-
 1. Delete the container you created in this unit, because you don't need it anymore.
 
     ```azurecli
@@ -109,4 +107,5 @@ You can find more properties to use in Container Instances YAML declarations in 
     az container delete -n $aci_name -g $rg -y
     ```
 
+You can find more properties to use in Container Instances YAML declarations in the Azure Container Instances YAML reference.
 

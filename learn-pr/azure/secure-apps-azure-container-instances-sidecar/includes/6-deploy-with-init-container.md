@@ -62,7 +62,7 @@ First, you create an Azure service principal that the init container uses to ret
     az storage file upload --account-name $storage_account_name --account-key $storage_account_key -s initscript --source ${init_script_path}${init_script_filename}
     ```
     
-    The initialization script uses Azure CLI to run the commands that find out the IP address of the container instance and create an A-record in the private DNS zone. The script authenticates by using the service principal application ID and secret that it expects to find as environment variables.
+    The initialization script uses Azure CLI to run the commands that find out the IP address of the container instance and create an A record in the private DNS zone. The script authenticates by using the service principal application ID and secret that it expects to find as environment variables.
 
 ## Deploy the container group with the init container
 
@@ -82,7 +82,7 @@ You can now create a YAML file that builds on the files you used in previous uni
     aci_subnet_id=$(az network vnet subnet show -n $aci_subnet_name --vnet-name $vnet_name -g $rg --query id -o tsv)
     aci_yaml_file=/tmp/acilab.yaml
     cat <<EOF > $aci_yaml_file
-    apiVersion: 2019-12-01
+    apiVersion: '2023-05-01'
     location: $location
     name: $aci_name
     properties:
