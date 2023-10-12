@@ -91,7 +91,7 @@ The installed packages are listed in the `dependencies` section of your .csproj 
 
 ```output
 Project 'DotNetDependencies' has the following package references
-   [net5.0]:
+   [net8.0]:
    Top-level Package      Requested   Resolved
    > Humanizer            2.7.9       2.7.9
 ```
@@ -106,7 +106,7 @@ Including transitives will allow you to see dependencies along with all the pack
 
 ```output
 Project 'DotNetDependencies' has the following package references
-   [net5.0]:
+   [net8.0]:
    Top-level Package      Requested   Resolved
    > Humanizer            2.7.9       2.7.9
 
