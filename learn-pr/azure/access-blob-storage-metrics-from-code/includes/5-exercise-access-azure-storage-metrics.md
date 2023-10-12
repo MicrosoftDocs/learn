@@ -1,4 +1,4 @@
-You want to start writing code that retrieves metrics about your video app storage account from Azure Monitor. First, you must create a service principal for your app in the Azure Active Directory. Then, you configure the correct security information in the app, and write the code that lists metric definitions.
+You want to start writing code that retrieves metrics about your video app storage account from Azure Monitor. First, you must create a service principal for your app in the Microsoft Entra ID. Then, you configure the correct security information in the app, and write the code that lists metric definitions.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use the Azure Storage .NET API to create applications that can retrieve metrics.
@@ -30,13 +30,13 @@ To begin creating your application, use git to clone the sample application code
 
 ## Create a service principal and access key for the new app
 
-To grant your app permission to access Azure Monitor metrics, you must create a service principal in the Azure Active Directory. When your app identifies itself to Azure, it uses an access key. To create a service principal and access key, follow these steps:
+To grant your app permission to access Azure Monitor metrics, you must create a service principal in the Microsoft Entra ID. When your app identifies itself to Azure, it uses an access key. To create a service principal and access key, follow these steps:
 
-1. Go to the [Azure portal](https://portal.azure.com/), and in the left nav bar, select **Azure Active Directory.**
+1. Go to the [Azure portal](https://portal.azure.com/), and in the left nav bar, select **Microsoft Entra ID.**
 
 1. In the left nav bar, under the **Manage** section, select **App registrations**
 
-    :::image type="content" source="../media/5-access-app-registrations.png" alt-text="Screenshot of the Azure Active Directory navigation options with the app registrations option highlighted.":::
+    :::image type="content" source="../media/5-access-app-registrations.png" alt-text="Screenshot of the Microsoft Entra navigation options with the app registrations option highlighted.":::
 
 1. Select **+ New registration**. The **Register an application** window appears.
 
@@ -68,7 +68,7 @@ To grant your app permission to access Azure Monitor metrics, you must create a 
 
 When your app identifies itself to Azure, it also needs to provide a tenant ID, which is also called a directory ID. To determine your tenant ID, follow these steps:
 
-1. Go to the [Azure portal](https://portal.azure.com/), and in the left nav bar, select **Azure Active Directory**.
+1. Go to the [Azure portal](https://portal.azure.com/), and in the left nav bar, select **Microsoft Entra ID**.
 
 1. Under **Manage**, select **Properties**.
 
@@ -90,7 +90,7 @@ You must now add the app service principal to a role, so that the app has permis
 
 1. In the **Role** dropdown, select **Contributor**.
 
-1. In the **Assign access to** dropdown, select **Azure AD user, group, or service principal**.
+1. In the **Assign access to** dropdown, select **Microsoft Entra user, group, or service principal**.
 
 1. In the **Select** textbox, enter **metricapp**, and then select **metricapp**.
 

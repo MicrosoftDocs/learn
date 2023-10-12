@@ -6991,9 +6991,14 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/2-azure-resources.md",
+      "redirect_url": "/training/modules/create-azure-cognitive-search-solution/2-manage-capacity",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/2-get-ready-develop.md",
       "redirect_url": "/training/modules/create-azure-cognitive-search-solution/2-azure-resources",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/3-resources-search.md",
@@ -18161,6 +18166,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/2-define-projection.yml",
+      "redirect_url": "/training/modules/create-knowledge-store-azure-cognitive-search",
+      "redirect_document_id": false
+  },
+    {
       "source_path": "learn-pr/azure/distribute-data-globally-with-cosmos-db/5-data-consistency-levels.yml",
       "redirect_url": "/training/modules/work-with-cosmos-db/",
       "redirect_document_id": false
@@ -28166,6 +28176,11 @@
     {
       "source_path": "learn-pr/wwl-azure/design-network-solutions/8-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-network-solutions/10-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-business-value/4-discover-apply-ai-maturity-model-assessment.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-business-value",
       "redirect_document_id": false
     }
   ]

@@ -73,7 +73,7 @@ Depending on who is querying, the results would be as shown here:
 
 :::image type="content" source="../media/6-mask-example.png" alt-text="Screenshot of an example of users with unmask access.":::
 
-With the introduction to granular dynamic data masking permissions, you can grant or revoke UNMASK permission at the database-level, schema-level, table-level or at the column-level to a database user, Azure AD identity, Azure AD group, or database role.
+With the introduction to granular dynamic data masking permissions, you can grant or revoke UNMASK permission at the database-level, schema-level, table-level or at the column-level to a database user, Microsoft Entra identity, Microsoft Entra group, or database role.
 
 ## Tasks for data protection
 
