@@ -1,6 +1,6 @@
 In our scenario, a change was made to the network configuration. You've started to receive alerts informing you that virtual machines in the back-end pool aren't responding to health probes. Now you need to diagnose the cause of these failures and fix them.
 
-In this exercise, you'll use a script to reconfigure the environment and cause health probe failures. You'll use the skills learned in this module to return the load-balanced HTTP service back to full operation.
+In this exercise, you use a script to reconfigure the environment and cause health probe failures. You use the skills learned in this module to return the load-balanced HTTP service back to full operation.
 
 ## Reconfigure load balancer and retest
 
@@ -165,7 +165,7 @@ The problem might be caused by a network security rule blocking external traffic
 
 1. Select the **retailappnsg** network security group. This security group determines which traffic is allowed through the virtual network.
 
-1. Select **Inbound security rules**. Although there's a rule that allows incoming traffic from the load balancer running in the virtual network, there's no rule that permits traffic originating from outside the virtual network through port 80.
+1. Select **Inbound security rules**. While there's a rule that allows incoming traffic from the load balancer running in the virtual network, there's no rule permitting traffic originating from outside the virtual network through port 80.
 
 1. Select **Add**. The **Add inbound security rule** pane appears.
 

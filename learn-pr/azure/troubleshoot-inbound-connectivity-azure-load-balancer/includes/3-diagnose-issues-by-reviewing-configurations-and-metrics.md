@@ -1,6 +1,6 @@
 Monitoring the performance of Azure Load Balancer might give an early warning for any possible failures. Azure Monitor provides many important metrics you use to examine trends in the performance of Load Balancer. You can also trigger alerts if one or more virtual machines (VMs) fail health probe requests.
 
-In the example scenario, you monitor the performance of the load-balanced system to ensure the performance meets requirements. If the performance trails off, and connections to VMs start to fail, you'll troubleshoot the system to determine the cause and fix the problem. By the end of this unit, you'll be able to:
+In the example scenario, you monitor the performance of the load-balanced system to ensure the performance meets requirements. If the performance trails off, and connections to VMs start to fail, you troubleshoot the system to determine the cause and fix the problem. By the end of this unit, you're able to:
 
 - Describe the metrics available for measuring the throughput and performance of a load-balanced system.
 - Use the resource health page in the Azure portal to monitor the health of your system.
@@ -42,7 +42,7 @@ The **Resource health** page for Load Balancer reports on the general state of y
 > [!div class="mx-imgBorder"]
 > ![Screenshots that shows the Monitor and Service Health pages in the Azure portal.](../media/3-monitor.png)
 
-Select your load balancer. You'll see a report that details the health history of your service. You can expand any item in the report to view the details. The following image shows the summary generated when one of the VMs in the back-end pool was taken offline.
+Select your load balancer. You see a report that details the health history of your service. You can expand any item in the report to view the details. The following image shows the summary generated when one of the VMs in the back-end pool was taken offline.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Resource health page for Azure Load Balancer showing the report that indicates at least one endpoint is unavailable.](../media/3-resource-health.png)
@@ -91,7 +91,7 @@ Use the following steps to determine the cause of the problem with an unhealthy 
 
 ### Misconfigurations in Load Balancer
 
-Load Balancer requires you to correctly configure the routing rules that direct incoming traffic from the front end to the back-end pool. If a routing rule is missing or not configured correctly, traffic that arrives at the front end will be dropped, and the application is reported to clients as inaccessible.
+Load Balancer requires you to correctly configure the routing rules that direct incoming traffic from the front end to the back-end pool. If a routing rule is missing or not configured correctly, traffic that arrives at the front end is dropped. Once traffic is dropped, the application is reported to clients as inaccessible.
 
 Validate the route through Load Balancer from the front end to the back-end pool. You can use tools such as *Ping*, *TCPing* and *netsh*, which are available for Windows and Linux. You can also use *psping* on windows. The following sections describe how to use these tools.
 
@@ -242,11 +242,11 @@ The *netsh* utility is a general-purpose network configuration tool. Use the *tr
 
 ### VM firewall or NSG blocking the port
 
-If the network and Load Balancer are configured correctly, the VM is up, and the application is running, connectivity problems could be caused by the firewall or NSG configuration for the VMs.
+If the network and Load Balancer are configured correctly, the VM is up, and the application is running,  the firewall or NSG configuration for the VMs could be blocking the port used by the health probe or the application. Use the following steps to determine if this is the case:
 
-If there's a firewall on the VM, it could be blocking requests on the ports used by the health probe and application. Validate the firewall configuration on the host to ensure it allows traffic on the ports used by the health probe and the application.
+- If there's a firewall on the VM, it could be blocking requests on the ports used by the health probe and application. Validate the firewall configuration on the host to ensure it allows traffic on the ports used by the health probe and the application.
 
-Verify that any NSG for the VM's NIC allows for ingress and egress on the necessary ports. Check for a *Deny all* rule in the NSG on the VM's NIC that has higher priority than the default rule.
+- Verify that any NSG for the VM's NIC allows for ingress and egress on the necessary ports. Check for a *Deny all* rule in the NSG on the VM's NIC that has higher priority than the default rule.
 
 > [!IMPORTANT]
 > You can associate an NSG with a subnet and the individual NICs of VMs in the subnet. You might have configured the NSG for a subnet to allow traffic to pass through a port. However, if the NSG for a VM closes that same port, requests won't get through to that VM.
@@ -255,6 +255,6 @@ Verify that any NSG for the VM's NIC allows for ingress and egress on the necess
 
 Load Balancer operates at layer 4 in the ISO network stack and doesn't examine or otherwise manipulate the contents of network packets. You can't use it to implement content-based routing.
 
-All client requests are terminated by a VM in the back-end pool. Load Balancer is invisible to clients. If no VMs are available, a client request will fail. Client applications can't communicate with, or otherwise interrogate the status of, Load Balancer or any of its components.
+All client requests are terminated by a VM in the back-end pool. Load Balancer is invisible to clients. If no VMs are available, the client request fails. Client applications can't communicate with, or otherwise interrogate the status of, Load Balancer or any of its components.
 
 If you need to implement load balancing based on the contents of messages, consider using Azure Application Gateway. Or you could configure a proxy web server to handle incoming client requests and direct them toward specific VMs.
