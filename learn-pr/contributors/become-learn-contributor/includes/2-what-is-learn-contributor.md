@@ -24,6 +24,8 @@ A contribution to Microsoft Learn could be:
 
 Contributors improve the content and learning opportunities for everyone on Microsoft Learn. By drawing on the experience and expertise of a widespread and diverse audience, contributions clarify content for all users of Microsoft products and technologies. 
 
+:::image type="content" source="../media/meet-learn-contributors.png" alt-text="Screenshot with quotes from three Learn contributors that express the importance and benefits of contributions.":::
+
 Let’s look at some examples of how you might contribute. Recall that you have some expertise in Power Apps from your dental education app experience. You’re browsing through the Power Apps topic on Microsoft Q&A when you see a question about how to get started with AI Builder. You post a reply to the question, sharing your experience using AI Builder that you gained from your project work. Later, when reading through a tutorial in AI Builder’s documentation, you see an opportunity to clarify the instructions. You open a GitHub issue about the article to provide your feedback. You also know that your team is curious about AI Builder, but they’re missing some background knowledge to understand its applications, so you create and share a Collection with them. All of these are contributions you’ve made to Microsoft Learn. 
 
 ## Why should you become a contributor?

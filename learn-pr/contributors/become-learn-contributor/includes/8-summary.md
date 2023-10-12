@@ -9,9 +9,9 @@ Contributing your knowledge to Microsoft Learn benefits other learners while als
 
 ## References
 
--Learn more about [becoming a Microsoft Learn Contributor](/contribute/)
--Learn how to [edit documentation directly](../../contribute-to-docs-browser/index.yml)
--[Microsoft Learn documentation homepage](/docs/)
--[Microsoft Learn Q&A homepage](/answers/)
--Learn more about [Microsoft Q&A](/answers/support/)
--Learn more about [Microsoft Learn Collections ](/contribute/content/collections)
+- Learn more about [becoming a Microsoft Learn Contributor](/contribute/)
+- Learn how to [edit documentation directly](../../contribute-to-docs-browser/index.yml)
+- [Microsoft Learn documentation homepage](/docs/)
+- [Microsoft Learn Q&A homepage](/answers/)
+- Learn more about [Microsoft Q&A](/answers/support/)
+- Learn more about [Microsoft Learn Collections ](/contribute/content/collections)

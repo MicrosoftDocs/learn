@@ -35,7 +35,7 @@ quiz:
     - content: "Raise a GitHub issue on the article."
       isCorrect: true
       explanation: "This is the most direct way to provide feedback like questions, suggestions, or revisions on a documentation article."
-  - content: "How can you use a Microsoft Learn Collection?"
+  - content: "As a contributor, how can you use Microsoft Learn Collections?"
     choices:
     - content: "You can assign others to complete a series of learning resources using a Collection."
       isCorrect: false
