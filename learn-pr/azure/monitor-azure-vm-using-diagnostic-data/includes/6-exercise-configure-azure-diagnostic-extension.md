@@ -1,132 +1,52 @@
-The last time your band went on tour, your website went down while your fans were trying to buy tickets. You're not sure if the web server ran out of memory, or if the virtual machine (VM) wasn't the right size. For your new tour, you'd like a dashboard to keep track of the VM's traffic, memory, and CPU usage.
+## Create a data collection rule
 
-In this exercise, you install the Azure Monitor Agent on your new VM to collect near real-time metrics at the guest OS level. After you install the agent, you create a KPI dashboard to view the new metrics being captured.
+This unit describes how you can use Azure Monitor Data Collection Rules (DCRs) to collect event and performance counter data from VMs. The DCRs use the same Azure Monitor Agent [Azure Monitor Agent](azure-monitor-agent-overview.md) that you installed for VM Insights. VM Insights already provides a comprehensive view of performance data in its prebuilt workbook. Now, you set up a DCR to collect event data from the Linux VM Syslog.
 
-## Install the Azure Monitor agent by using data collection rules
+The DCRs you define can apply to any VMs in your subscription. Azure installs Azure Monitor Agent on VMs that don't already have it installed.
 
-1. In the [Azure portal](https://portal.azure.com?azure-portal=true), search for Monitor.
-1. Under **Settings**, select **Data Collection Rules**.
-1. Select **Create**.
+You can send performance counters to both Azure Monitor Metrics and Azure Monitor Logs, but you can send Windows Events and Linux Syslog data to Azure Monitor Logs only. You must have a Log Analytics workspace and a data collection endpoint to send the data to. You can use the default Log Analytics workspace that VM Insights set up for your subscription, and create the DCR in the same region as your Log Analytics workspace.
 
-    :::image type="content" source="../media/6-dcr-empty-landing-page.png" alt-text="Screenshot of the data collection rules landing page" lightbox="../media/6-dcr-empty-landing-page.png":::
+You can define a DCR to send data from multiple VMs to multiple destinations of the same or different types. For example, a DCR can send data to multiple Log Analytics workspaces, also known as *multihoming*, across different regions or tenants.
 
-1. Enter the following values.
+For events, you can select severity levels to log. For performance counters, you can select from a predefined set of objects and set sampling rates, or create custom objects.
 
-   | Setting     | Value |
-   |---------|---------|
-   |Rule Name    |   MyPerformanceMetrics |
-   |Subscription  |   Your subscription  |
-   |Resource group   |  Resource group that contains the VM    |
-   |Region  | Region where the VM is located     |
-   |Platform Type  | Linux     |
+1. In the Azure portal, search for and select *monitor* to go to the Azure Monitor **Overview** screen.
 
-    :::image type="content" source="../media/6-dcr-name-and-location.png" alt-text="Screenshot of the data collection rules basics":::
+1. In the left navigation menu under **Settings**, select **Data Collection Endpoints**.
+1. On the **Data Collection Endpoints** page, select **Create**.
+1. On the **Create data collection endpoint** page, for **Name**, enter *linux-logs-endpoint*.
+1. Select the same **Subscription**, **Resource group**, and **Region** as your VM uses.
+1. Select **Review + create**, and when validation passes, select **Create**.
 
-1. On the **Resources** tab, select **Add resources**.
-1. On the **Select a scope** pane, select the **monitored-linux-vm** VM you created, and select **Apply**.
-1. Review the result on the **Resources** tab.
+1. In the Monitor left navigation menu under **Settings**, select **Data Collection Rules**.
+1. On the **Data Collection Rules** page, you can see the DCR that VM Insights created.
+1. Select **Create** to create a new data collection rule.
 
-    :::image type="content" source="../media/6-dcr-add-resources.png" alt-text="Screenshot of the data collection rules resources" lightbox="../media/6-dcr-add-resources.png":::
+1. On the **Basics** tab of the **Create Data Collection Rule** screen, provide the following information:
+   - **Rule name**: Enter *collect-events-linux*.
+   - **Subscription**, **Resource Group**, and **Region**: Select the same as for your VM.
+   - **Platform Type**: Select **Linux**.
 
-1. On the **Collect and deliver** tab, select **Add data source** to configure the data to be collected and the destination to send it to.
+1. Select **Next: Resources** or the **Resources** tab.
+1. On the **Resources** screen, select **Add resources**.
+1. On the **Select a scope** screen, select the **monitored-linux-vm** VM, and then select **Apply**.
+1. On the **Resources** screen, select **Enable Data Collection Endpoints**.
+1. Under **Data collection endpoint** for the **monitored-linux-vm**, select **linux-logs-endpoint**.
 
-    You have different configuration options depending on the OS installed on the VM. At the basic level, these options are performance counters (CPU, Memory, Disk and Network) which can be sent to Azure Monitor Metrics and/or Azure Monitor Logs. However, you can also choose to collect custom metrics like percentage of free disk space on Windows, or the amount of swap available on Linux.
+1. Select **Next: Collect and deliver**, or the **Collect and deliver** tab.
+1. On the **Collect and deliver** tab, select **Add data source**.
+1. On the **Add data source** screen, under **Data source type**, select **Linux Syslog**.
+1. Select **Next: Destination** or the **Destination** tab, and make sure the **Account or namespace** matches the default workspace that Azure created for VM Insights.
+1. Select **Save**.
+1. On the **Create Data Collection Rule** screen, select **Review + create**, and when validation passes, select **Create**.
 
-1. For **Data source type**, select **Performance Counters**.
+## View log data
 
-    :::image type="content" source="../media/6-add-data-sources.png" alt-text="Screenshot of the data collection rules performance counters." lightbox="../media/6-add-data-sources.png":::
-1. Change the **Sample rate (seconds)** for each counter to *60*. 
-1. Select the **Destination** tab to view the default destination for Performance Counters, Azure Monitor Metrics.
+You can view the data collected by the DCR in your Log Analytics workspace by using a log query written in Kusto Query Language (KQL). A set of precreated KQL queries is available for VMs, but you can use a simple query to look at the events your DCR is collecting.
 
-    :::image type="content" source="../media/6-add-dcr-destinations.png" alt-text="Screenshot of the data collection rules performance counters destination.":::
+1. On your VM's **Overview** page, select **Logs** from the left navigation menu under **Monitoring**. Log Analytics opens an empty query window with the scope set to your VM.
 
-    Confirm your settings include a destination type of Azure Monitor metrics.
-
-1. On the bottom of the pane, select **Add data source**.
-1. Select **Review and create** > **Create**. This command installs the Azure Monitor Agent on the selected VM, and starts data collection with the parameters defined in the rule you created.
-
-## Confirm that the agent is installed on the VM
-
-1. In the Azure portal, search for and select Virtual Machines.
-1. Select the virtual machine you created in the previous exercise.
-1. On the VM overview page, under **Extensions**, you should see **AzureMonitorLinuxAgent** listed.
-
-    :::image type="content" source="../media/6-agent-on-vm.png" alt-text="Screenshot of the virtual machine overview page with the agent Installed.":::
-
-## Create a custom KPI dashboard
-
-1. In the left menu pane, under **Monitoring**, select **Metrics**. The **Metrics** pane appears for your VM.
-
-1. Select the following values:
-
-   | Setting     | Value |
-   |---------|---------|
-   |Metric Namespace    |   azure.vm.linux.guestmetrics |
-   |Metric    |   net/bytes_total  |
-   |Aggregation    |    Max     |
-
-   If the metric namespace **azure.vm.linux.guestmetrics** isn't listed, wait a few minutes and try again.
-
-1. Select the **Finish editing metric** check mark.
-
-1. At the top right of the chart, select **Save to dashboard** > **Pin to dashboard**. The **Pin to dashboard** pane appears.
-
-1. Select the **Create new** tab.
-
-1. For **Type**, select **Private**. If you're using your own subscription, you can create a shared dashboard.
-
-1. In the **Dashboard name** field, enter *KPI Dashboard*.
-
-   :::image type="content" source="../media/6-create-dashboard.png" alt-text="Screenshot that shows the 'Pin to another dashboard' pane filled out.":::
-
-1. Select **Create and pin**. The **Metrics** pane reappears.
-
-### Add a free memory percentage graph
-
-1. In the top menu bar, select **New chart**.
-
-1. Select the following values:
-
-   | Setting     | Value |
-   |---------|---------|
-   |Metric Namespace    |   azure.vm.linux.guestmetrics      |
-   |Metric     |   mem/available_percent  |
-   |Aggregation    |    Max     |
-
-1. Select the **Finish editing metric** check mark.
-
-1. At the top right of the chart, select **Save to dashboard** > **Pin to dashboard**. The **Pin to dashboard** pane appears.
-
-1. In the **Dashboard** dropdown field, select **KPI Dashboard**.
-
-1. Select **Pin**. The **Metrics** pane for your VM reappears.
-
-### Add a CPU usage graph
-
-1. Select **New chart**.
-
-1. Select the following values:
-
-   | Setting     | Value |
-   |---------|---------|
-   |Metric Namespace    |   azure.vm.linux.guestmetrics  |
-   |Metric     |   cpu/usage_active  |
-   |Aggregation    |    Max     |
-
-1. Select the **Finish editing metric** check mark.
-
-1. At the top right of the chart, select **Save to dashboard** > **Pin to dashboard**.
-
-1. In the **Dashboard** dropdown field, select **KPI Dashboard**.
-
-1. Select **Pin**. The **Metrics** pane for your VM reappears.
-
-### View the new dashboard
-
-1. At the top left of the portal, select the **&#9776;** icon, and then select **Dashboard**. The **KPI Dashboard** appears.
-
-    :::image type="content" source="../media/6-view-dashboard.png" alt-text="Screenshot that shows the dashboard selection dropdown list.":::
-
-1. Explore the dashboard. Try changing the **UTC Time** range to **Past 30 minutes**, and select **Apply**.
-
-    :::image type="content" source="../media/6-kpi-dashboard.png" alt-text="Screenshot that shows the new KPI dashboard with the three graphs created earlier." lightbox="../media/6-kpi-dashboard.png":::
+   >[!NOTE]
+   > The **Queries** window with precreated queries might open when you open Log Analytics. For now, close this window because you're going to manually create a simple query.
+   
+1. In the empty query window, type *Syslog*, and then select **Run**. The events the DCR collected within the **Time range** are displayed.

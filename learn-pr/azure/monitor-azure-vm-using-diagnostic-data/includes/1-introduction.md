@@ -1,13 +1,19 @@
-As the administrator for your band's website hosted on Azure, you need to monitor the performance and behavior of the website. The band is on tour next month, so you're expecting a spike in traffic. The website must be accessible by your fans during the tour. 
+You're the IT administrator for a musical group's website that's hosted on Azure virtual machines (VMs). The website runs mission-critical services for the group, including ticket booking, venue information, and tour updates.
 
-The website is running mission-critical services, including ticket booking, venue information, and tour dates. This information is vital for the band, so you want a simple way to monitor the health of the virtual machine hosting the website. You need to know when the traffic spikes so you can take the appropriate action.
+The website must respond quickly and remain accessible during frequent updates and spikes in traffic. You need to maintain sufficient VM size and memory to effectively host the website without incurring unnecessary costs. So you can proactively prevent and quickly respond to any access, security, and performance issues, you want to be able to quickly and easily monitor your server and client VMs' traffic, health, performance, and events.
+
+Azure VMs come with built-in and customizable monitoring abilities that you can access to track the health, performance, and behavior of the systems, workloads, and websites. This learning module shows you how to use built-in metrics and alert rules, Azure Monitor VM Insights, and custom data collection rules (DCRs) to collect and analyze the data you need from all your VMs and Azure resources.
 
 ## Prerequisites
 
-- Familiarity with virtualization and Azure virtual machines
+To complete this module, you need the following prerequisites:
+
+- At least **Contributor** role access to an Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and add a subscription before you begin. If you're a student, you can take advantage of the [Azure for students](https://azure.microsoft.com/free/students/?azure-portal=true) offer.
+- Familiarity with virtualization and Azure VMs.
 
 ## Learning objectives
 
-- Identify metrics and diagnostic data that you can collect for virtual machines
-- Configure monitoring for a virtual machine
-- Use monitoring data to diagnose problems
+- Explore built-in host metrics and set up recommended alerts.
+- Use Metrics Explorer to create customized metrics charts.
+- Enable and configure VM Insights to collect and display client and workload metrics.
+- Define a data collection rule (DCR) to collect event logs from VMs.

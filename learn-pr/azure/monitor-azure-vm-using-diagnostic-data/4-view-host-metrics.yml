@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.view-host-metrics
-title: View VM metrics
+title: Exercise - Enable VM Insights to monitor guest OS and workload metrics
 metadata:
-  title: View VM metrics
-  description: See how to build rich charts by using the VM metrics, and then pin these charts to a new health dashboard.
-  ms.date: 10/18/2019
+  title: Exercise - Enable VM Insights to monitor guest OS and workload metrics
+  description: Enable Azure Monitor VM Insights with process and dependency mapping to monitor guest OS and workload metrics and performance.
+  ms.date: 10/06/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
