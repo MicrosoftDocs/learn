@@ -1,0 +1,14 @@
+uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.debug-model
+title: Debug model
+metadata:
+  title: Debug model
+  description: "Debug model"
+  ms.date: 10/31/2023
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+  ms.subservice: responsible-ai  
+durationInMinutes: 
+content: |
+  [!include[](includes/4-debug-model.md)]

@@ -1,0 +1,14 @@
+uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.add-responsible-ai-dashboard
+title: Add responsible AI dashboard 
+metadata:
+  title: Add responsible AI dashboard 
+  description: "Add responsible AI dashboard"
+  ms.date: 10/31/2023
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+  ms.subservice: responsible-ai  
+durationInMinutes: 
+content: |
+  [!include[](includes/3-add-responsible-ai-dashboard.md)]

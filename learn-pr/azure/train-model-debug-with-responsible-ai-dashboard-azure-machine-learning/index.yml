@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning
+metadata:
+  title: Train a model and debug it with responsible ai dashboard
+  description: Learn how to train a model with Azure Machine Learning and use Responsible AI to ensure it performs responsibly. 
+  ms.date: 10/31/2023
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: interactive-tutorial
+   ms.topic: interactive-tutorial
+  ms.service: machine-learning
+  ms.subservice: responsible-ai 
+summary: Learn how to train a model with Azure Machine Learning and use Responsible AI to ensure it performs responsibly. 
+ 
+abstract: |
+  By the end of this module, you'll be able to:
+  - Train a custom model using Azure Machine Learning.
+  - Create a responsible AI dashboard.
+  - Debug a model using the responsible AI dashboard. 
+prerequisites: |
+  - Ability to navigate the Azure the portal
+  - Ability to understand Python at the beginner level
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels: 
+  - beginner
+roles: 
+  - student
+  - data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+units:
+  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.introduction
+  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.train-model
+  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.add-responsible-ai-dashboard
+  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.debug-model
+  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.knowledge-check
+  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.summary
+badge:
+  uid: learn.github.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.badge
