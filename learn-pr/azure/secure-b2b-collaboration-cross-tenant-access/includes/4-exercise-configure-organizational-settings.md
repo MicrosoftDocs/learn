@@ -1,6 +1,6 @@
 In this exercise, we'll configure cross-tenant access settings for a specific organization. These settings will take precedence over the default cross-tenant access settings for this organization only.
 
-Recall that in the financial institution example, your default cross-tenant access settings allow outbound B2B collaboration and block inbound B2B collaboration for all external Azure AD organizations. Now that your financial institution has acquired a branch, you want to allow users in the branch to access your internal accounting applications using B2B collaboration. You also want to make sure that if a user has completed multifactor authentication in the branch tenant, they won't be asked to do so again.
+Recall that in the financial institution example, your default cross-tenant access settings allow outbound B2B collaboration and block inbound B2B collaboration for all external Microsoft Entra organizations. Now that your financial institution has acquired a branch, you want to allow users in the branch to access your internal accounting applications using B2B collaboration. You also want to make sure that if a user has completed multifactor authentication in the branch tenant, they won't be asked to do so again.
 
 ![Diagram of the full financial institution example, with just the organizational settings highlighted.](../media/5-scenario-organizational.png)
 
@@ -8,21 +8,19 @@ To try this exercise yourself, you need an Azure subscription. If you don't have
 
 ## Create organizational settings
 
-Here, you'll add an organization to your cross-tenant access settings. Then you'll configure the organization's inbound cross-tenant access settings to allow the organization's users to access your applications through B2B collaboration. You won't make any changes to the organization's outbound settings, which means your default settings will apply and other Azure AD organizations will be able to invite your users to their organization for B2B collaboration.
+Here, you'll add an organization to your cross-tenant access settings. Then you'll configure the organization's inbound cross-tenant access settings to allow the organization's users to access your applications through B2B collaboration. You won't make any changes to the organization's outbound settings, which means your default settings will apply and other Microsoft Entra organizations will be able to invite your users to their organization for B2B collaboration.
 
-### Open the Azure Active Directory service in the portal
+<a name='open-the-azure-active-directory-service-in-the-portal'></a>
+
+### Open the Microsoft Entra service in the portal
 
 1. Open a web browser.
-1. In the address bar, type https://portal.azure.com.
-1. Sign in using your Azure AD admin account.
-1. Open the Azure Active Directory service with the following steps:
-   - Under **Azure services**, select **Azure Active Directory**, or
-   - Use the search box search for "Azure Active Directory" and then select it.
+1. In the address bar, type https://entra.microsoft.com.
+1. Sign in using your Microsoft Entra admin account.
 
 ## Add an organization
 
-1. On the left navigation bar, select **External Identities**.
-1. Select **Cross-tenant access settings**.
+1. On the left navigation bar, browse to **Identity** > **External Identities** > **Cross-tenant access settings**.
 1. Select the **Organizational settings** tab.
 1. Select **Add organization**.
 
@@ -54,12 +52,12 @@ Now the organization appears in the **Organizational settings** list. You'll not
 
 ## Trust multifactor authentication from the organization
 
-When you choose to trust multifactor authentication, your Conditional Access policies will trust claims from the external organization about whether their user has completed multifactor authentication in their home tenant. During authentication, Azure AD will check a user's credentials, and if a claim exists indicating that the user has completed multifactor authentication, they won't be asked to do so again.
+When you choose to trust multifactor authentication, your Conditional Access policies will trust claims from the external organization about whether their user has completed multifactor authentication in their home tenant. During authentication, Microsoft Entra ID will check a user's credentials, and if a claim exists indicating that the user has completed multifactor authentication, they won't be asked to do so again.
 
 1. In the **Organizational settings** list, find the organization in the list and select the link in the **Inbound access** column.
 1. Select the **Trust settings** tab.
 1. Select **Customize settings**.
-1. Select **Trust multifactor authentication from Azure AD tenants**.
+1. Select **Trust multifactor authentication from Microsoft Entra tenants**.
 
    ![Screenshot of the Trust settings page with the multifactor authentication trust option selected.](../media/5-organizational-multi-factor-authentication-trust.png)
 
