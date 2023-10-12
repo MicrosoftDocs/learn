@@ -41,19 +41,16 @@ All data that's stored in an Azure storage account (which includes the data on A
 
 By default, all Azure storage accounts have encryption-in-transit enabled. This ensures that all data is encrypted when transferring from the Azure datacenter to your device. Unencrypted access by using SMB 2.1 and SMB 3.0 without encryption or HTTP isn't allowed by default, and clients aren't able to connect to Azure file shares without encryption. This can be configured for an Azure storage account and is effective for all storage account services.
 
-![Screenshot of the Secure transfer required setting for an Azure storage account. The setting is enabled.](../media/m11-secure-transfer-required-004.png)
-
 ### Creating Azure file shares
 
 Azure Files deploys as part of an Azure storage account. Settings that you specify when creating an Azure storage account—such as location, replication, and connectivity method—also apply to Azure Files. Some Azure storage account settings, such as performance and account type, can limit options that are available for Azure Files. For example, if you want to use premium file shares, which use SSDs, you must select premium performance and the FileStorage type of storage account when creating the Azure storage account.
 
-After an Azure storage account is in place, you can create an Azure file share by using the Azure portal, Azure PowerShell, Azure Command-Line Interface (Azure CLI), or REST API. You can also create an Azure storage account by using Windows Admin Center when you're deploying Azure File Sync. When you're creating an Azure file share, you must provide the file share name and optionally set the quota. A quota limits the total size of files that can be stored on the file share.
+After an Azure storage account is in place, you can create an Azure file share by using the Azure portal, Azure PowerShell, Azure Command-Line Interface (Azure CLI), or REST API. You can also create an Azure storage account by using Windows Admin Center when you're deploying Azure File Sync.
 
-![The screenshot depicts creation of an Azure Files share by using the Azure portal. The user has selected +File share, and have named their new file share share 1.](../media/m11-create-azure-file-share-001.png)
-
-To create an Azure file share, use the following procedure:
+To create a standard SMB Azure file share, use the following procedure. If you're creating a premium Azure file share, you must also specify provisioned capacity.
 
 1. In the Azure portal, select the appropriate storage account.
 2. In the navigation pane, under **File service**, select **File shares**.
 3. In the details pane, on the toolbar, select **+ File share**.
-4. In the **New file share** blade, enter the desired **Name** and **Quota** values, and then select **Create**.
+4. In the **New file share** blade, enter the desired **Name** and select a **Tier**.
+5. Select **Review + create** and then select **Create**.
