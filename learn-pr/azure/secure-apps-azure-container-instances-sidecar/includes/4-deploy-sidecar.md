@@ -162,7 +162,7 @@ Complex configurations such as sidecars require using YAML instead of Azure CLI.
     az container create -g $rg --file $aci_yaml_file
     ```
 
-1. To test the configuration, extract the private IP address of the container instance and access it via HTTPS from the test VM. Use the flag `-k` with `curl` so it disables certificate validation, because this unit uses a self-signed certificate. The additional curl flag -s is used in order to reduce curl's output verbosity:
+1. To test the configuration, extract the private IP address of the container instance and access it via HTTPS from the test VM. Use the flag `-k` with `curl` so it disables certificate validation, because this unit uses a self-signed certificate. The added curl flag `-s` is used to reduce curl's output verbosity.
 
     ```bash
     # Test

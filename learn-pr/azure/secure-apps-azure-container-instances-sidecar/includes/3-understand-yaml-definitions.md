@@ -75,7 +75,7 @@ Notice the following characteristics of the YAML description:
 
 You don't want the SQL database password to be visible to customers, so you need to mask it using secure values for the environment variables instead of standard values. To generate the required YAML, you manually edit the automatically generated YAML file and redeploy it to create a modified container instance. While you could change the environment variable into a secure environment variable by using the Azure CLI, you use YAML in preparation for future requirements.
 
-1. Use your favorite text editor to change line 13 of */tmp/aci.yaml* from <br>`        value: <your Azure SQL password>` <br>to <br>`        secureValue: <your Azure SQL password>`.<br>Be careful not to change indentation. You can also use the online text editor `sed` to make the change. You should remove as well any other line you don't need, such as the `provisioningTimeoutInSeconds` attribute which is not supported by the `2023-05-01` API:
+1. Use your favorite text editor to change line 13 of */tmp/aci.yaml* from <br>`        value: <your Azure SQL password>` <br>to <br>`        secureValue: <your Azure SQL password>`.<br>Be careful not to change indentation. You can also use the online text editor `sed` to make the change. You should also remove any other line you don't need, such as the `provisioningTimeoutInSeconds` attribute, which isn't supported by the `2023-05-01` API.
 
     ```bash
     # Modify auto-generated YAML
@@ -102,7 +102,7 @@ You don't want the SQL database password to be visible to customers, so you need
 
 You can find more properties to use in Container Instances YAML declarations in the Azure Container Instances YAML reference.
 
-1. Delete the container created in this unit, since we will not be needing it any more.
+1. Delete the container you created in this unit, because you don't need it anymore.
 
     ```azurecli
     # Cleanup unit 3

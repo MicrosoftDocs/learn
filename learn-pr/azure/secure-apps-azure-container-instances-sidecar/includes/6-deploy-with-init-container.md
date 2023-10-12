@@ -12,12 +12,12 @@ The init container retrieves the IP address allocated to the application contain
 
 ## Create the initialization script and DNS zone
 
-First, you create an Azure service principal that the init container uses to retrieve the application's IP address and update the DNS, since you cannot use managed identities in an init container. In this example, you assign the service principal **Contributor** role for simplicity. In production environments, you might want to be more restrictive.
+First, you create an Azure service principal that the init container uses to retrieve the application's IP address and update the DNS, because you can't use managed identities in an init container. In this example, you assign the service principal **Contributor** role for simplicity. In production environments, you might want to be more restrictive.
 
 1. In Azure Cloud Shell in the Azure portal, run the following code to create the service principal:
 
     ```azurecli
-    # Create Service Principal for authentication
+    # Create service principal for authentication
     scope=$(az group show -n $rg --query id -o tsv)
     new_sp=$(az ad sp create-for-rbac --scopes $scope --role Contributor --name acilab -o json)
     sp_appid=$(echo $new_sp | jq -r '.appId') && echo $sp_appid
