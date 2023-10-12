@@ -35,7 +35,7 @@ To get the best learning experience from this module, it's important that you ha
 - Core Microsoft compute, storage, networking, and virtualization technologies
 - Implementing and managing infrastructure as a service (IaaS) services in Azure
 - Microsoft Entra ID (formerly Azure AD)
-- Security-related technologies (firewalls, encryption, multi-factor authentication)
+- Security-related technologies (firewalls, encryption, multifactor authentication)
 - Windows PowerShell scripting
 - Automation and monitoring
 
