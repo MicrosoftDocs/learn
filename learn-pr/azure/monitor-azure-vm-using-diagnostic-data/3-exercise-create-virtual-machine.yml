@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-create-virtual-machine
-title: Exercise - Set up a VM with boot diagnostics
+title: Exercise - Create a VM and view built-in metrics
 metadata:
-  title: Exercise - Set up a VM with boot diagnostics
-  description: Deploy a Linux virtual machine and enable boot diagnostics. After the VM is created, you'll quickly set up a graph to view the CPU usage and inbound traffic. You'll also check that boot diagnostics are working correctly.
+  title: Exercise - Create a VM and view built-in metrics
+  description: Use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled, and view built-in metrics graphs and boot diagnostics.
   ms.date: 02/03/2023
   author: cwatson-cat
   ms.author: cwatson

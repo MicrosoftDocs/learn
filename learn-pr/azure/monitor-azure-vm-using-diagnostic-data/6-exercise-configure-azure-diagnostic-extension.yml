@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-configure-azure-diagnostic-extension
-title: Exercise - Configure the Azure Diagnostics extension
+title: Exercise - Create a DCR to monitor events
 metadata:
-  title: Exercise - Configure the Azure Diagnostics extension
-  description: Install the Azure Diagnostics extension on your new VM. With the extension installed, you'll change the sample rate to every minute. From the metrics that are captured at the guest OS level, you'll create a KPI dashboard to view them.
+  title: Exercise - Create a DCR to monitor events
+  description: Use the Azure Monitor Agent to create a data collection rule (DCR) that collects system event logs and sends them to Azure Monitor Logs.
   ms.date: 02/03/2023
   author: cwatson-cat
   ms.author: cwatson

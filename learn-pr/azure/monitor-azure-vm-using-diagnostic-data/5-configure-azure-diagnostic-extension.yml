@@ -1,15 +1,39 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.monitor-azure-vm-using-diagnostic-data.configure-azure-diagnostic-extension
-title: Configure the Azure Diagnostics extension
+uid: learn.azure.monitor-azure-vm-using-diagnostic-data.view-host-metrics
+title: Exercise - Enable VM Insights to monitor performance and guest metrics
 metadata:
-  title: Configure the Azure Diagnostics extension
-  description: Look at installing the Azure Diagnostics extension to monitor the health of a virtual machine. You'll learn how to enable guest diagnostics at virtual machine creation time and for an already created virtual machine.
-  ms.date: 10/18/2019
+  title: Exercise - Enable VM Insights to monitor performance and guest metrics
+  description: Enable Azure Monitor VM Insights with process and dependency mapping to monitor and map performance and guest metrics.
+  ms.date: 10/06/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
-  [!include[](includes/5-configure-azure-diagnostic-extension.md)]
-
+  [!include[](includes/4-view-host-metrics.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: You want to track the average CPU usage of your Azure virtual machine over the last seven days. What is the most straightforward way to do it?
+    choices:
+    - content: View the metrics for the virtual machine on the Overview page and set the range to the last seven days.
+      isCorrect: true
+      explanation: The Overview page displays this graph by default. You can set the range to show a seven-day range.
+    - content: View the metrics for the virtual machine each day and store the values for each of the last seven days in a spreadsheet.
+      isCorrect: false
+      explanation: You can track trends in virtual machine metrics on a single graph for up to seven days.
+    - content: View the metric in the Monitor section by creating a graph and set the range to the last seven days.
+      isCorrect: false
+      explanation: You don't need to create a graph for the average CPU. The Overview page shows this metric by default.
+  - content: What do you have to install or create to store simple boot diagnostics in Azure?
+    choices:
+    - content: Install the Azure Diagnostics extension.
+      isCorrect: false
+      explanation: An Azure Diagnostics extension isn't required to store simple boot diagnostics.
+    - content: You don't have to install or create anything extra to store diagnostic logs in Azure.
+      isCorrect: false
+      explanation: You don't have to create anything extra to see basic metrics for VMs. You need a storage account for boot diagnostics, though.
+    - content: An Azure storage account.
+      isCorrect: true
+      explanation: You need a storage account to store boot diagnostics data, the boot screenshots, and logs.

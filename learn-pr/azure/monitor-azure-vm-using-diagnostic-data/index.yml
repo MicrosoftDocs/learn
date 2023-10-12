@@ -38,8 +38,6 @@ units:
 - learn.azure.monitor-azure-vm-using-diagnostic-data.view-host-metrics
 - learn.azure.monitor-azure-vm-using-diagnostic-data.configure-azure-diagnostic-extension
 - learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-configure-azure-diagnostic-extension
-- learn.azure.monitor-azure-vm-using-diagnostic-data.use-diagnostic-data
-- learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-use-diagnostic-data
 - learn.azure.monitor-azure-vm-using-diagnostic-data.summary
 badge:
   uid: learn.azure.monitor-azure-vm-using-diagnostic-data.badge

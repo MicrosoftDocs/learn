@@ -2,8 +2,6 @@ You can quickly create an Azure VM by using the Azure portal, the Azure CLI, or 
 
 In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. After you create the VM, you view the built-in metrics graphs and boot diagnostics.
 
- and see how to configure more metrics in Metrics Explorer.
-
 ## Create a VM
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and in the Search field, enter and select **virtual machines**.

@@ -1,6 +1,6 @@
-In this unit, you explore the metrics available in Azure and look at ways to use Azure Monitor Metrics to monitor a virtual machine (VM).
+In this unit, you explore the metrics available in Azure, and look at ways to use Azure Monitor Metrics to monitor a virtual machine (VM).
 
-## Overview of Azure Monitor metrics
+## Azure Monitor metrics
 
 Azure Monitor has two main features for collecting and storing monitoring data: Azure Monitor Metrics and Azure Monitor Logs. Metrics are numerical values that are collected at regular intervals and describe some aspect of a system at a particular time. Metrics can measure performance, resource utilization, error counts, user behavior, or any other aspect of the system that you can quantify.
 

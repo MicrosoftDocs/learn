@@ -1,8 +1,8 @@
-## Use Metrics Explorer
+Many VM host metrics are available. You can use Metrics Explorer to view available metrics and create custom metrics graphs for VMs and any other Azure resource types. Before you use Metrics Explorer to create a metrics graph, be sure to check to see whether the built-in metrics graphs already display the data.
 
-Many VM host metrics are available. You can use Metrics Explorer to view available metrics and create custom metrics graphs for VMs and any other Azure resource types. Before you use Metrics Explorer to create a metrics graph, check to see whether the built-in metrics graphs already display the data.
+In this unit, you configure a customized metrics chart to learn how to use Metrics Explorer.
 
-### Metrics Explorer
+## Understand Metrics Explorer
 
 To open Metrics Explorer, select **Metrics** from the VM's left navigation menu under **Monitoring**.
 
@@ -27,7 +27,7 @@ You can apply the following aggregation functions to metrics:
 
 You can select flexible time ranges for graphs from the past 30 minutes to the last 30 days, or custom ranges. You can specify time interval granularity from one minute to one month.
 
-### Create a metrics graph
+## Create a metrics graph
 
 To create a Metrics Explorer graph that shows maximum percentage CPU and inbound flows for a host VM:
 
