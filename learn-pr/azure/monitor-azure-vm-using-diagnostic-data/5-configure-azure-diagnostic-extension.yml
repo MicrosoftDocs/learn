@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.monitor-azure-vm-using-diagnostic-data.view-host-metrics
+uid: learn.azure.monitor-azure-vm-using-diagnostic-data.configure-azure-diagnostic-extension
 title: Exercise - Enable VM Insights to monitor performance and guest metrics
 metadata:
   title: Exercise - Enable VM Insights to monitor performance and guest metrics
