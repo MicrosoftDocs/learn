@@ -31,6 +31,7 @@ subjects:
 modules:
 - learn.student-introduction-to-azure
 - learn.student-evangelism.student-introduction-github
+- learn.introduction-to-visual-studio-code
 
 trophy:
   uid: learn.student-intro-azure.trophy

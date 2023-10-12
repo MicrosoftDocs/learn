@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: Introduction
   title: Introduction
-  description: Create a Python daemon app that authenticates and acquires tokens from Azure Active Directory (Azure AD) as itself and calls a secure web API.
+  description: Create a Python daemon app that authenticates and acquires tokens from Microsoft Entra ID as itself and calls a secure web API.
   ms.date: 08/10/2022
   author: henrymbuguakiarie
   ms.author: henrymbugua

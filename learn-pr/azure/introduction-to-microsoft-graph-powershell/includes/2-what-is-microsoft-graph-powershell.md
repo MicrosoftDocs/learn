@@ -22,11 +22,11 @@ Commands are named like **{Verb}**-Mg **{Resource}** (a Graph API resource) for 
 
 Microsoft Graph PowerShell has the following features and benefits:
 
-- **Access to all Microsoft Graph APIs**: Microsoft Graph PowerShell is based on Microsoft Graph API. The Microsoft Graph API includes, in addition to Azure AD, APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
+- **Access to all Microsoft Graph APIs**: Microsoft Graph PowerShell is based on Microsoft Graph API. The Microsoft Graph API includes, in addition to Microsoft Entra ID, APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
 - **Supports PowerShell 7**: Microsoft Graph PowerShell module works with PowerShell 7 and later. It's also compatible with Windows PowerShell 5.1.
 - **Cross-platform support**: Microsoft Graph PowerShell module works on all platforms including Windows, macOS, and Linux.
 - **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) which offers more security. For example, you can use Passwordless sign-in experiences.
-- **Supports external identities**: Users from other Azure AD tenants can authenticate to services in your tenant with Microsoft Graph PowerShell.
+- **Supports external identities**: Users from other Microsoft Entra tenants can authenticate to services in your tenant with Microsoft Graph PowerShell.
 - **Uses least privilege**: Microsoft Graph PowerShell permissions are NOT pre-authorized and users must perform one-time request for app permissions depending on their needs.
 - **Advanced queries**: Microsoft Graph PowerShell supports rich, advanced queries via eventual consistency. For example, you can get a near-instant count of all users using advanced queries.
 - **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
