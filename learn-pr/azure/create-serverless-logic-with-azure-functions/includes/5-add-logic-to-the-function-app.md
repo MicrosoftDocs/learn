@@ -18,11 +18,11 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 1. Under **Select a template**, select *HTTP trigger*.
 
-   ::: zone pivot="javascript"
+::: zone pivot="javascript"
 
-1. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
+4. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
 
-1. In the Developer menu on the left, select **Code + Test**. The code editor opens, displaying the contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
+5. In the Developer menu on the left, select **Code + Test**. The code editor opens, displaying the contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
 
     ```javascript
     module.exports = async function (context, req) {
@@ -68,13 +68,13 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
     This configuration file declares that the function runs when it receives an HTTP request. The output binding declares that the response is sent as an HTTP response.
 
-   ::: zone-end
+::: zone-end
 
-   ::: zone pivot="powershell"
+::: zone pivot="powershell"
 
-1. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
+4. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
 
-1. In the Function menu, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
+5. In the Function menu, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
 
     ```powershell
     using namespace System.Net
@@ -106,7 +106,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
     Our function expects a name to be passed in either through the HTTP request query string, or as part of the request body. HTTP functions must generate a response by writing to their output binding, which is accomplished in PowerShell Functions with the `Push-OutputBinding` cmdlet. This function returns the message **Hello, $name**, echoing back the name that was sent in the request.
 
-1. From the source dropdown list, select **function.json** to view the configuration of the function, which should look like the following.
+6. From the source dropdown list, select **function.json** to view the configuration of the function, which should look like the following.
 
     ```json
     {
@@ -132,7 +132,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
     This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response is sent as an HTTP response.
 
-   ::: zone-end
+::: zone-end
 
 ## Test the function
 
