@@ -1,18 +1,16 @@
 
-## Azure Migration and Modernize and Azure Innovate
+The Azure Migrate and Modernize (formerly known as Azure Migration and Modernization program) and Azure Innovate are two new offerings to help you simplify your journey to cloud. Both offerings provide proactive guidance and the right mix of expert help at every stage of your cloud journey.
 
-The Azure Migrate and modernize (formerly known as Azure Migration and modernization program (AMMP)) and Azure Innovate are two new offerings to help you simplify your journey to cloud. Both offerings provide proactive guidance and the right mix of expert help at every stage of your cloud journey.
-
-Azure Migrate and modernize will help you migrate and modernize applications, infrastructure, and database to the cloud. Azure innovate is a new offering designed to help you with your advanced innovation needs such as infusing AI into your apps and experiences, advanced analytics, and building custom cloud native application.
+Azure Migrate and Modernize will help you migrate and modernize applications, infrastructure, and database to the cloud. Azure Innovate is a new offering designed to help you with your advanced innovation needs such as infusing AI into your apps and experiences, advanced analytics, and building custom cloud native application.
  
-All customers can access curated resources and frameworks, help from advanced specialized partners and tools such as Azure Migrate, and Azure cost management, step-by-step technical guidance, low cost or no cost skilling.
+All customers can access curated resources and frameworks, help from advanced specialized partners and tools such as Azure Migrate, and Microsoft Cost Management, step-by-step technical guidance, low cost or no cost skilling.
 
 Here are some of the benefits available from Azure Migrate and Modernize and Azure Innovate:
 
 - **Comprehensive resources in one place** - Extensive guidance with assessments, proof of concepts (PoCs), pilots, tooling, deployment assistance to ensure a well architected and optimized approach from start to finish.
 - **Proven technical frameworks** - Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF), helps you to design optimized workloads from the start, with security and cost recommendations built throughout.
 - **Free automated tooling** - Azure Migrate provides you with discovery, assessment, business case analysis, planning, migration, and modernization capabilities.
-- **Access to experts** - Microsoft experts or specialized partners will help you at each step from planning to deployment which includes, assessments, total cost of ownership (TCO) analysis, cloud adoption approaches, workshops, pilots, and deployment.
+- **Access to experts** - Microsoft experts or specialized partners will help you at each step from planning to deployment which includes assessments, total cost of ownership (TCO) analysis, cloud adoption approaches, workshops, pilots, and deployment.
 - **Microsoft-led delivery** - In addition to specialized partners being available for more complex workloads, with Azure Migrate and Modernize, you can also benefit from Microsoft-led delivery for rapid rehost migrations to increase both capacity and capability across the Azure portfolio to get the expert help as needed.
 - **Partner funding for specialized partners** - An increased investment in partner ecosystem to increase both capacity and capability across the Azure portfolio to get the expert help as needed.
 - **Extensive coverage from migration to innovation** - Azure Migrate and modernize and Azure Innovate helps you across a wide range of your cloud adoption needs which includes migrating or modernize Windows Server & SQL Server, Linux, Oracle, SAP, HPC, analytics AI and more.

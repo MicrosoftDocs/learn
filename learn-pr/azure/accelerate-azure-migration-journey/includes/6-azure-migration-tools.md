@@ -23,9 +23,9 @@ Review the guidance for each methodology:
 
 ## Azure Migrate
 
-[Azure Migrate](https://azure.microsoft.com/products/azure-migrate) Azure Migrate is your central hub for moving to Azure. You can discover, assess, create a business case (TCO), migrate and modernize your IT estate. Apply the valuable insights gathered during the process and track your progress using a central dashboard.
+[Azure Migrate](https://azure.microsoft.com/products/azure-migrate) is your central hub for moving to Azure. You can discover, assess, create a business case of Total Cost of Ownership (TCO), migrate and modernize your IT estate. Apply the valuable insights gathered during the process and track your progress using a central dashboard.
 
-:::image type="content" source="../media/azure-migrate.png" alt-text="Screenshot of the Azure Migrate get started screen.":::
+:::image type="content" source="../media/azure-migrate-inline.png" alt-text="Screenshot of the Azure Migrate get started screen." lightbox="../media/azure-migrate-expanded.png":::
 
 Tailwind Traders can use a comprehensive approach to migrating your application and data center estate. Get support for critical migration workloads like Windows, SQL and Linux Server, databases, data, web apps, and virtual desktops. Migrate to destinations including Azure Virtual Machines, Azure VMware Solution, Azure App Service, and Azure SQL Database. Migrations are holistic across VMware, Hyper-V, physical server, and cloud-to-cloud migration.
 
@@ -37,7 +37,7 @@ Azure Migrate provides the following benefits:
 
 ### End-to-end visibility
 
-The guided experience and progress dashboard walk you through the entire journey for diverse workloads in a unified manner. You can make the best migration decisions with customizable assumptions and *what-if* scenarios in one central data repository and the best migration decisions with built-in insights and recommendations.
+The guided experience and progress dashboard walk you through the entire journey for diverse workloads in a unified manner. You can make the best migration decisions with customizable assumptions, *what-if* scenarios in one central data repository, and with built-in insights and recommendations.
 
 ### Diverse capabilities
 
@@ -45,7 +45,7 @@ Take advantage of the free Azure Migrate tool with features like agentless data 
 
 ### Reduced cost
 
-Migrate efficiently with rapid lift-and-shift (IaaS) at no additional cost. Right-size resources in the cloud for optimal performance and utilization, leading to reduced cost.
+Migrate efficiently with rapid lift-and-shift Infrastructure as a Service(IaaS) at no additional cost. Right-size resources in the cloud for optimal performance and utilization, leading to reduced cost.
 
 ## Azure Database Migration Service
 
