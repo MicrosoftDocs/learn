@@ -1,4 +1,4 @@
-Many VM host metrics are available. You can use Metrics Explorer to view available metrics and create custom metrics graphs for VMs and any other Azure resource types. Before you use Metrics Explorer to create a metrics graph, be sure to check to see whether the built-in metrics graphs already display the data.
+Many VM host metrics are available. You can use Metrics Explorer to view available metrics and create custom metrics graphs for VMs and any other Azure resource types. Before you use Metrics Explorer to create a metrics graph, be sure to check whether a built-in metrics graph already displays the data.
 
 In this unit, you configure a customized metrics chart to learn how to use Metrics Explorer.
 

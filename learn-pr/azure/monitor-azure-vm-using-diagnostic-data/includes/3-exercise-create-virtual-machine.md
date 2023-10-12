@@ -44,13 +44,13 @@ Under **Performance and utilization** > **Platform metrics**, you can see the fo
 
 :::image type="content" source="../media/platform-metrics.png" alt-text="Screenshot that shows the platform metrics graphics on the VM Overview page.":::
 
-Under **Guest OS metrics**, note that guest OS metrics aren't being collected yet. In the next unit, you configure VM Insights and data collection rules to collect guest metrics.
+Under **Guest OS metrics**, notice that guest OS metrics aren't being collected yet. In the next units, you configure VM Insights and data collection rules to collect guest metrics.
 
 ## View boot diagnostics
 
 You enabled boot diagnostics when you created the VM, so you can view boot diagnostics to troubleshoot VM boot issues.
 
-1. In the left navigation menu for the VM, under **Help**, select **Boot diagnostics**.
+1. In the left navigation menu for the VM, select **Boot diagnostics** under **Help**.
 1. On the **Boot diagnostics** page, select **Screenshot** to see a startup screenshot from the VM's hypervisor. Select **Serial log** to view log messages created when the VM started.
 
    :::image type="content" source="../media/3-boot-diagnostics.png" alt-text="Screenshot that shows the boot diagnostic image captured.":::

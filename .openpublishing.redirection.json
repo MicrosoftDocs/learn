@@ -28206,7 +28206,7 @@
     {
       "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/9-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/7-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/create-business-value/4-discover-apply-ai-maturity-model-assessment.md",

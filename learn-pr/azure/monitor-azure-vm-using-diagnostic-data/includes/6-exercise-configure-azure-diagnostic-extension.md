@@ -1,4 +1,4 @@
-This unit describes how you can use Azure Monitor Data Collection Rules (DCRs) to collect event and performance counter data from VMs. The DCRs use the same Azure Monitor Agent [Azure Monitor Agent](azure-monitor-agent-overview.md) that you installed for VM Insights. VM Insights already provides a comprehensive view of performance data in its prebuilt workbook. Now, you set up a DCR to collect event data from the Linux VM Syslog.
+This unit describes how you can use Azure Monitor Data Collection Rules (DCRs) to collect event and performance counter data from VMs. The DCRs use the [Azure Monitor Agent](/azure/azure-monitor/agents/agents-overview) that you installed for VM Insights. VM Insights already provides a comprehensive view of performance data in its prebuilt workbook. Now, you set up a DCR to collect event data from the Linux VM Syslog.
 
 The DCRs you define can apply to any VMs in your subscription. Azure installs Azure Monitor Agent on VMs that don't already have it installed.
 

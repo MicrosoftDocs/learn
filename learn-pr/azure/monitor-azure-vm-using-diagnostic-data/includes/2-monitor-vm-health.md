@@ -49,7 +49,7 @@ Azure Monitor doesn't collect logs by default, but you can configure Azure Monit
 
 ## VM Insights
 
-The VM Insights feature of Azure Monitor provides a set of predefined workbooks that show collected VM metrics over time. You can view this data directly from a single VM, or you can see an combined view of multiple VMs. You can use VM Insights to view and assess trends and patterns across data from all of your VMs.
+The VM Insights feature of Azure Monitor provides a set of predefined workbooks that show collected VM metrics over time. You can view this data directly from a single VM, or you can see a combined view of multiple VMs. You can use VM Insights to view and assess trends and patterns across data from all of your VMs.
 
 VM Insights is especially useful for exploring VM usage when you don't know the particular metric of interest in advance, whether CPU utilization, disk space, memory, or network dependencies. Unlike other usage analytics tools, VM Insights workbooks let you combine multiple kinds of visualizations and analyses, making them helpful for this kind of freeform exploration.
 
