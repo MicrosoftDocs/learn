@@ -31,12 +31,14 @@ VM Insights installs *Azure Monitor Agent*, an agent that collects data from ins
 
 To view the VM Insights performance workbooks and maps, select **Insights** from the VM's left navigation menu under **Monitoring**.
 
-Near the top of the **Insights** page, select the **Performance** tab.
+- Near the top of the **Insights** page, select the **Performance** tab.
 
-The prebuilt VM Insights Performance workbook shows charts and graphs with performance-related data for the current VM. You can customize the view by specifying a different **Time range** at the top of the page, and different aggregations at the top of each graph.
+  The prebuilt VM Insights Performance workbook shows charts and graphs with performance-related data for the current VM. You can customize the view by specifying a different **Time range** at the top of the page, and different aggregations at the top of each graph.
 
-You can select **View Workbooks** at upper right to select from other available prebuilt workbooks. Select **Go To Gallery** to choose from other available prebuilt workbooks, or edit and create your own workbooks.
+  :::image type="content" source="../media/vm-insights-performance.png" alt-text="Screenshot that shows the prebuilt VM Insights Performance workbook.":::
 
-:::image type="content" source="../media/vm-insights-performance.png" alt-text="Screenshot that shows the prebuilt VM Insights Performance workbook.":::
+- Select the **Map** tab to see the workbook for the Map feature. The map visualizes the VM's dependencies by discovering running process groups and processes that have active network connections over a specified time range.
 
-Select the **Map** tab to see the workbook for the Map feature.
+  :::image type="content" source="../media/dependency-map.png" alt-text="Screenshot that shows a dependency map on the Maps tab of VM Insights.":::
+
+- Select **View Workbooks** to select from other available prebuilt VM Insights workbooks. Select **Go To Gallery** to go to a gallery of other VM Insights workbooks and workbook templates, or to edit and create your own workbooks.
