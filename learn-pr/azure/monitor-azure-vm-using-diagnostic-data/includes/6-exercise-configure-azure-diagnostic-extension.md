@@ -46,7 +46,7 @@ For performance counters, you can select from a predefined set of objects and se
 1. Under **Data collection endpoint** for the **monitored-linux-vm**, select **linux-logs-endpoint**.
 1. Select **Next: Collect and deliver**, or the **Collect and deliver** tab.
 
-   :::image type="content" source="../media/create-dcr-basics.png" alt-text="Screenshot of the Resources tab of the Create Data Collection Rule screen.":::
+   :::image type="content" source="../media/create-dcr-resources.png" alt-text="Screenshot of the Resources tab of the Create Data Collection Rule screen.":::
 
 1. On the **Collect and deliver** tab, select **Add data source**.
 1. On the **Add data source** screen, under **Data source type**, select **Linux Syslog**.
