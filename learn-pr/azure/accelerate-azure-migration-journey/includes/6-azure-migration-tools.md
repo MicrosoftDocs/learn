@@ -45,7 +45,7 @@ Take advantage of the free Azure Migrate tool with features like agentless data 
 
 ### Reduced cost
 
-Migrate efficiently with rapid lift-and-shift Infrastructure as a Service(IaaS) at no additional cost. Right-size resources in the cloud for optimal performance and utilization, leading to reduced cost.
+Migrate efficiently with rapid lift-and-shift Infrastructure as a Service (IaaS) at no additional cost. Right-size resources in the cloud for optimal performance and utilization, leading to reduced cost.
 
 ## Azure Database Migration Service
 
