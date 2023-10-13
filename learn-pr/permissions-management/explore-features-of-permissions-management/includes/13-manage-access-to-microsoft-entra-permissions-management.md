@@ -2,9 +2,9 @@ Permissions Management has its own group-based access system that provides granu
 
 There are three types of permissions that can be granted in Permissions Management:
 
-1. **Viewer** – Gives access to view data and insights related to a specific authorization system (ex: read-only status) and allows you to request permissions on demand.  
-2. **Controller** – Gives access to perform controller actions within the product, such as performing remediation tasks.
-3. **Approver** – Gives access to approve Permission On-Demand requests.
+- **Viewer** – Gives access to view data and insights related to a specific authorization system (ex: read-only status) and allows you to request permissions on demand.  
+- **Controller** – Gives access to perform controller actions within the product, such as performing remediation tasks.
+- **Approver** – Gives access to approve Permission On-Demand requests.
 
 :::image type="content" source="../media/permissions-management-group-permissions-setup.png" alt-text="Screenshot of the Permissions Management set up group permissions."lightbox="../media/permissions-management-group-permissions-setup.png":::
 

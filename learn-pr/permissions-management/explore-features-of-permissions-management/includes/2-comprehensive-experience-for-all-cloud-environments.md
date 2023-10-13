@@ -2,7 +2,7 @@ As a multicloud product, Permissions Management offers a comprehensive experienc
 
 Each page in Permissions Management presents a dropdown menu, which allows you to easily switch between different cloud providers.
 
-:::image type="content" source="../media/mepm-cloud-dropdown-menu.png" alt-text="Screenshot of the Permissions Management UI drop-down menu."lightbox="../media/mepm-cloud-dropdown-menu.png":::
+:::image type="content" source="../media/permissions-management-cloud-dropdown-menu.png" alt-text="Screenshot of the Permissions Management UI drop-down menu."lightbox="../media/permissions-management-cloud-dropdown-menu.png":::
 
 Regardless of the cloud environment you work in, the process for performing different tasks in the product (creating alerts, right-sizing roles, etc.) has the same look and feel.
 

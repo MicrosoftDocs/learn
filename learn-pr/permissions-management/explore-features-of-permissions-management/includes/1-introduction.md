@@ -17,5 +17,5 @@ In this module, you'll:
 
 ## Prerequisites:
 
-- [Introduction to Microsoft Entra Permissions Management](https://go.microsoft.com/fwlink/?linkid=2245157/)
+- [Introduction to Microsoft Entra Permissions Management](https://go.microsoft.com/fwlink/?linkid=2245157)
 - (Optional) Sign up for the Microsoft Entra Permissions Management [45- day free trial](https://aka.ms/TryPermissionsManagement). We recommend signing up for the free trial so you can follow along in your own account and view the features presented in this module on your own machine.

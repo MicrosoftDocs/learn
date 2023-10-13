@@ -29,15 +29,15 @@ The second remediation tool that Permissions Management provides is perhaps its 
 
 There are four quick actions that can be used to manage users:
 
-1. Revoke Unused Tasks
-2. Revoke High-Risk Tasks
-3. Revoke Delete Tasks
-4. Assign Read-Only Status
+- Revoke Unused Tasks
+- Revoke High-Risk Tasks
+- Revoke Delete Tasks
+- Assign Read-Only Status
 
 To understand how these actions work, we’ll focus on the **Revoke Unused Tasks** action. If we want to perform this quick action, we first start by selecting the user we want to perform the action on. Then, we select **Revoke Unused Tasks**. These actions happen in the background:
 
-1. Permissions Management looks at the selected user’s historical usage and creates a custom role containing only the permissions that the user has used within the past 90 days.
-2. This custom role is assigned to the user and all other assignments are removed; leaving the user with a perfectly right-sized role assignment based on their 90-day history.
+- Permissions Management looks at the selected user’s historical usage and creates a custom role containing only the permissions that the user has used within the past 90 days.
+- This custom role is assigned to the user and all other assignments are removed; leaving the user with a perfectly right-sized role assignment based on their 90-day history.
 
 This process of creating a custom role assignment and then revoking all other assignments applies to all four of the quick action options.
 
