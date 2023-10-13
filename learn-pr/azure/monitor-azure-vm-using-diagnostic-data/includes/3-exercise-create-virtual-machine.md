@@ -1,4 +1,4 @@
-You can quickly create an Azure VM by using the Azure portal, the Azure CLI, or PowerShell. In the Azure portal, you can enable boot diagnostics and recommended alerts when you create a VM. As soon as the VM starts up, Azure begins collecting basic metrics automatically, and you can view built-in metrics charts.
+You can quickly create an Azure VM by using the Azure portal, the Azure CLI, or PowerShell. In the Azure portal, you can enable boot diagnostics and recommended alerts when you create the VM. As soon as the VM starts up, Azure begins collecting basic metrics automatically, and you can view built-in metrics charts.
 
 In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. After you create the VM, you view the built-in metrics graphs and boot diagnostics.
 
@@ -11,19 +11,19 @@ In this unit, you use the Azure portal to create a Linux VM with recommended ale
    - Under the **Resource group** field select **Create new**, enter *learn-monitor-vm-rg* under **Name**, and then select **OK**.
    - For **Virtual machine name**, enter *monitored-linux-vm*.
    - For **Image**, select **Ubuntu Server 20.04 LTS - x64 Gen2**.
-1. Leave the other settings at their defaults, and near the top of the page, select **Monitoring**.
+1. Near the top of the page, select **Monitoring**.
 
-:::image type="content" source="../media/create-vm-basic.png" alt-text="Screenshot that shows the Basics tab of the Create a virtual machine page.":::
+   :::image type="content" source="../media/create-vm-basic.png" alt-text="Screenshot that shows the Basics tab of the Create a virtual machine page.":::
 
 1. On the **Monitoring** screen, select the checkbox next to **Enable recommended alert rules**.
 1. On the **Set up recommended alert rules** screen, select all the listed alert rules if not already selected.
 1. Under **Notify me by**, select the checkbox next to **Email**, and enter an email address to receive alert notifications.
 1. Select **Save**.
-
-:::image type="content" source="../media/create-vm-monitoring.png" alt-text="Screenshot that shows the Monitoring tab and alert rule configuration screen of the Create a virtual machine page.":::
-
 1. Under **Diagnostics**, next to **Boot diagnostics**, ensure that **Enable with managed storage account (recommended)** is selected.
 1. Select **Review + create** at the bottom of the page, and when validation passes, select **Create**.
+
+   :::image type="content" source="../media/create-vm-monitoring.png" alt-text="Screenshot that shows the Monitoring tab and alert rule configuration screen of the Create a virtual machine page.":::
+
 1. On the **Generate new key pair** popup, select **Download private key and create resource**.
 
 It can take a few minutes to create the VM. When you get the notification that the VM is created, select **Go to resource**.
@@ -48,7 +48,7 @@ Under **Guest OS metrics**, notice that guest OS metrics aren't being collected 
 
 ## View boot diagnostics
 
-You enabled boot diagnostics when you created the VM, so you can view boot diagnostics to troubleshoot VM boot issues.
+You enabled boot diagnostics when you created the VM. You can view boot diagnostics to troubleshoot VM boot issues.
 
 1. In the left navigation menu for the VM, select **Boot diagnostics** under **Help**.
 1. On the **Boot diagnostics** page, select **Screenshot** to see a startup screenshot from the VM's hypervisor. Select **Serial log** to view log messages created when the VM started.

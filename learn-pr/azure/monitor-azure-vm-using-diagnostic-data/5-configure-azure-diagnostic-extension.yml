@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.configure-azure-diagnostic-extension
-title: Exercise - Enable VM Insights to monitor performance and guest metrics
+title: Enable VM Insights to monitor performance and guest metrics
 metadata:
-  title: Exercise - Enable VM Insights to monitor performance and guest metrics
+  title: Enable VM Insights to monitor performance and guest metrics
   description: Enable Azure Monitor VM Insights with process and dependency mapping to monitor and map performance and guest metrics.
   ms.date: 10/06/2023
   author: cwatson-cat
@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: You want to track the average CPU usage of your Azure virtual machine over the last seven days. What is the most straightforward way to do it?
+  - content: What capabilities does enabling VM Insights with the Azure Monitor Agent provide?
     choices:
-    - content: View the metrics for the virtual machine on the Overview page and set the range to the last seven days.
+    - content: Prebuilt performance workbooks and guest OS metrics.
       isCorrect: true
-      explanation: The Overview page displays this graph by default. You can set the range to show a seven-day range.
-    - content: View the metrics for the virtual machine each day and store the values for each of the last seven days in a spreadsheet.
+      explanation: Enabling VM Insights with the Azure Monitor Agent provides prebuilt workbooks that visualize VM performance, and collects guest OS metrics.
+    - content: Charts that show several VM metrics together with customizable timeframes.
       isCorrect: false
-      explanation: You can track trends in virtual machine metrics on a single graph for up to seven days.
-    - content: View the metric in the Monitor section by creating a graph and set the range to the last seven days.
+      explanation: Azure Monitor Metrics Explorer lets you build customizable metrics charts that show several metrics together with adjustable timeframes.
+    - content: Azure VM log collection and analytics.
       isCorrect: false
-      explanation: You don't need to create a graph for the average CPU. The Overview page shows this metric by default.
-  - content: What do you have to install or create to store simple boot diagnostics in Azure?
+      explanation: Azure Monitor doesn't collect any logs by default. You have to set up DCRs to collect logs and send them to Log Analytics.
+  - content: How can you use the Azure Monitor Agent to collect guest VM metrics?
     choices:
-    - content: Install the Azure Diagnostics extension.
+    - content: Install the diagnostics extension under **Diagnostics settings**.
       isCorrect: false
-      explanation: An Azure Diagnostics extension isn't required to store simple boot diagnostics.
-    - content: You don't have to install or create anything extra to store diagnostic logs in Azure.
+      explanation: The diagnostics extension isn't required and isn't related to the Azure Monitor Agent.
+    - content: You don't have to install or create anything extra to use the Azure Monitor Agent to collect guest VM metrics.
       isCorrect: false
-      explanation: You don't have to create anything extra to see basic metrics for VMs. You need a storage account for boot diagnostics, though.
-    - content: An Azure storage account.
+      explanation: Guest OS metrics aren't collected by default. Enable VM Insights with the Azure Monitor Agent to collect guest OS metrics.
+    - content: Select the **Azure Monitor Agent** when you enable VM Insights.
       isCorrect: true
-      explanation: You need a storage account to store boot diagnostics data, the boot screenshots, and logs.
+      explanation: To install the Azure Monitor Agent, select the Azure Monitor Agent instead of the legacy Log Analytics Agent when you enable VM Insights.

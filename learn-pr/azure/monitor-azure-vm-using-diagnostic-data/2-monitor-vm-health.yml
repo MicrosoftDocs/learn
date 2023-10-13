@@ -12,3 +12,28 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-monitor-vm-health.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What are the two main Azure Monitor features for collecting and storing monitoring data?
+    choices:
+    - content: Azure Monitor Metrics and Azure Monitor Logs.
+      isCorrect: true
+      explanation: Azure Monitor has two main features for collecting and storing monitoring data: Azure Monitor Metrics and Azure Monitor Logs.
+    - content: Azure Monitor Insights and Azure Monitor Alerts.
+      isCorrect: false
+      explanation: Insights and Alerts are features of Azure Monitor that use Azure Monitor Metrics data.
+    - content: Workbooks and Log Analytics.
+      isCorrect: false
+      explanation: You can gather Azure Monitor Metrics in workbooks, and send Azure Monitor Logs data to Log Analytics workspaces, but these aren't the primary features of Azure Monitor.
+  - content: What's the fundamental architecture of Azure VMs?
+    choices:
+    - content: Host VM operating system, SKU, and disks.
+      isCorrect: false
+      explanation: The operating system, SKU, and disks are features of host VMs, but these VMs host client VMs and applications.
+    - content: Host VM, guest OS and workloads, and applications.
+      isCorrect: true
+      explanation: VM architecture consists of the host VM, the guest or client VM OS and workloads, and the applications that run on the VMs.
+    - content: Subscription, resource group, and VM.
+      isCorrect: false
+      explanation: VMs are created inside resource groups, which are created inside Azure subscriptions, but these aren't features of VMs.

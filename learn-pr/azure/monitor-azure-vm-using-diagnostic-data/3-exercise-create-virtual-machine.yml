@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-create-virtual-machine
-title: Exercise - Create a VM and view built-in metrics
+title: Create a VM and view built-in metrics
 metadata:
-  title: Exercise - Create a VM and view built-in metrics
+  title: Create a VM and view built-in metrics
   description: Use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled, and view built-in metrics graphs and boot diagnostics.
   ms.date: 02/03/2023
   author: cwatson-cat
@@ -12,11 +12,28 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-create-virtual-machine.md)]
-# NOTE: Task validation is failing for learners, so that is disabled for now.
-# tasks:
-# - action: exists
-#   environment: azure
-#   hint: "Run the `az vm create` command as shown to create your virtual machine."
-#   azure:
-#     resource:
-#       type: "Microsoft.Compute/virtualMachines"
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What do you need to do to enable recommended alert rules when you create a VM?
+    choices:
+    - content: Nothing, they're enabled by default.
+      isCorrect: false
+      explanation: Recommended alert rules aren't enabled by default, but you can easily enable them during or after VM creation.
+    - content: Go to **Alerts** and select **Create**.
+      isCorrect: false
+      explanation: You can create custom alerts by using Azure Monitor Alerts, but you can easily enable recommended alert rules during VM creation.
+    - content: Select **Enable recommended alert rules** on the **Monitoring** tab.
+      isCorrect: true
+      explanation: You can easily enable recommended alert rules during VM creation by selecting **Enable** and configuring the alert parameters on the **Monitoring** tab.
+  - content: Which metrics graph isn't available by default on the **Monitoring** tab when you create a VM? (client OS graphs)
+    choices:
+    - content: VM Availability
+      isCorrect: false
+      explanation: The VM Availability (preview) metrics graph appears by default after you create a VM.
+    - content: Guest OS Available Memory
+      isCorrect: true
+      explanation: Guest OS metrics charts aren't available until you enable the Azure Monitor Agent to collect guest VM metrics.
+    - content: Percentage CPU (average)
+      isCorrect: false
+      explanation: The Percentage CPU (average) metrics graph appears by default after you create a VM.

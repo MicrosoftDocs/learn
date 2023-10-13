@@ -1,16 +1,14 @@
-Many VM host metrics are available. You can use Metrics Explorer to view available metrics and create custom metrics graphs for VMs and any other Azure resource types. Before you use Metrics Explorer to create a metrics graph, be sure to check whether a built-in metrics graph already displays the data.
+Many VM host metrics are available. You can use Metrics Explorer to view available metrics and create custom metrics graphs for VMs and any other Azure resource types.
 
-In this unit, you configure a customized metrics chart to learn how to use Metrics Explorer.
+In this unit, you configure a customized metrics chart to learn how to use Metrics Explorer. The built-in metrics charts for a VM already display several important metrics, so be sure to check the built-in graphs before you use Metrics Explorer to create a custom graph.
 
 ## Understand Metrics Explorer
 
-To open Metrics Explorer, select **Metrics** from the VM's left navigation menu under **Monitoring**.
-
-You can also select the **See all Metrics** link next to **Platform metrics** on the **Monitoring** tab of the VM's **Overview** screen.
+To open Metrics Explorer, select **Metrics** from the VM's left navigation menu under **Monitoring**. You can also select the **See all Metrics** link next to **Platform metrics** on the **Monitoring** tab of the VM's **Overview** screen.
 
 :::image type="content" source="../media/metrics-explorer.png" alt-text="Screenshot that shows Metrics Explorer.":::
 
-In **Metrics Explorer**, you can select the following values from the dropdown fields:
+In Metrics Explorer, you can select the following values from the dropdown fields:
 
 - **Scope:** If you open Metrics Explorer from a VM, this field is prepopulated with the VM name. You can add more items with the same resource type (VMs) and location.
 - **Metric Namespace**: Most resource types have only one namespace, but for some types, you must pick a namespace. For example, storage accounts have separate namespaces for files, tables, blobs, and queues.
@@ -19,11 +17,11 @@ In **Metrics Explorer**, you can select the following values from the dropdown f
 
 You can apply the following aggregation functions to metrics:
 
-- **Count**: Counts the number of data points within a group.
-- **Average (Avg)**: Calculates the arithmetic mean of values within a group.
-- **Maximum (Max)**: Identifies the highest value within a group.
-- **Minimum (Min)**: Identifies the lowest value within a group.
-- **Sum**: Adds up all the values within a group.
+- **Count**: Counts the number of data points.
+- **Average (Avg)**: Calculates the arithmetic mean of values.
+- **Maximum (Max)**: Identifies the highest value.
+- **Minimum (Min)**: Identifies the lowest value.
+- **Sum**: Adds up all the values.
 
 You can select flexible time ranges for graphs from the past 30 minutes to the last 30 days, or custom ranges. You can specify time interval granularity from one minute to one month.
 
