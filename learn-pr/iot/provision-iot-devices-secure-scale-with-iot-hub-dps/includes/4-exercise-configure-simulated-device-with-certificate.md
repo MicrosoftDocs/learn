@@ -41,7 +41,8 @@ In this exercise, you will generate a device certificate using the root certific
    download ~/certificates/certs/sensor-thl-001-device.cert.pfx
    ```
 
-   > **Note**: Watch for a browser prompt asking you to save the file.
+   > [!NOTE]
+   > Watch for a browser prompt asking you to save the file.
 
 1. To download the second generated X.509 device certificate from the Cloud Shell to your local machine, enter the following command:
 
@@ -49,7 +50,8 @@ In this exercise, you will generate a device certificate using the root certific
    download ~/certificates/certs/sensor-thl-002-device.cert.pfx
    ```
 
-   > **Note**: Watch for a browser prompt asking you to save the file.
+   > [!NOTE]
+   > Watch for a browser prompt asking you to save the file.
 
 In the next task, you will start building the simulated devices that will use the X.509 device certificates to authenticate with the Device Provisioning Service.
 
@@ -345,7 +347,8 @@ In this task, you will complete the following:
     private static string dpsIdScope = "0ne000CBD6C";
     ```
 
-    > **Note**: If you don't have the DPS ID Scope value, you can get a copy from from the Overview pane of the Device Provisioning Service in the Azure portal or by running the cli command `az iot dps show --name dps-$suffix`.
+    > [!NOTE]
+    > If you don't have the DPS ID Scope value, you can get a copy from from the Overview pane of the Device Provisioning Service in the Azure portal or by running the cli command `az iot dps show --name dps-$suffix`.
 
 1. Locate the **certificateFileName** variable, and notice that its value is set to the name of the device certificate file that you generated (**sensor-thl-001-device.cert.pfx**). If you named the certificate file something else, update the variable value to match.
 

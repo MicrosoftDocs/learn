@@ -4,15 +4,15 @@ To prepare for the exercises, you're going through the steps required to create 
 
 As part of this module, the following resources will be created:
 
-* Azure IoT Hub
-* Azure IoT Device Provisioning Service (DPS)
+* An Azure IoT hub
+* An Azure IoT Device Provisioning Service (DPS) instance
 * Two simulated devices in C#
 
 ### Cloud resources
 
 To complete this guided project, you need an IoT hub and a Device Provisioning Service (DPS) instance that are linked to each other. Creating these service instance can take several minutes.
 
-1. Start by **activating the Azure sandbox**. The sandbox automatically creates an Azure resource group for you that is displayed on the sandbox web page. You'll create additional resources for this project using the following steps; the resource group is substited automatically within steps that it is used.
+1. Start by clicking on the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You'll create additional resources for this project using the following steps. The resource group ID is substituted automatically where it is used within the code steps.
 
 1. Create a variable named **suffix** with a random number that you'll use for resource names that need to be globally unique.
 
@@ -28,7 +28,7 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
    ```
 
 
-1. Create a Device Provisioning Service instance. Substitute the resource group number from steps 1 for [sandbox resource group name] in the following script.
+1. Create a Device Provisioning Service (DPS) instance.
 
    ```azurecli
    az iot dps create --name dps-$suffix --resource-group <rgn>[sandbox resource group name]</rgn> --location westus
@@ -41,7 +41,7 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
    echo $hubConnectionString
    ```
 
-1. Add your IoT hub as a linked hub to your DPS instance. Linking an IoT hub means that the DPS instance can provision devices to that IoT hub. Substitute the resource group number from steps 1 for [sandbox resource group name] in the following script.
+1. Add your IoT hub as a linked hub to your DPS instance. Linking an IoT hub means that the DPS instance can provision devices to that IoT hub.
 
    ```azurecli
    az iot dps linked-hub create --dps-name dps-$suffix --resource-group <rgn>[sandbox resource group name]</rgn> --connection-string $hubConnectionString --location westus

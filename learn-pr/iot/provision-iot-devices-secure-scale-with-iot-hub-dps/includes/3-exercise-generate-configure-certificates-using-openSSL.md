@@ -6,23 +6,14 @@ This X.509 CA certificate will be used to sign the device certificates for each 
 
 In this section, you will generate an X.509 CA certificate using OpenSSL. This certificate will be used to configure a group enrollment within DPS.
 
-1. In the Azure sandbox, create a directory and then move into a new directory using the following commands:
-
-<!--TODO: DECIDE IF WE WANT TO USE THE HELPER SCRIPTS OR OPENSSL -->
-
-   Make a directory named "certificates"
+1. In the Azure sandbox, create a directory named "certificates" and then move into a new directory using the following commands:
 
    ```azurecli
    mkdir certificates
-   ```
-
-   change directory to the "certificates" directory
-
-   ```azurecli
    cd certificates
    ```
 
-1. Download a helper script and two OpenSSL configuration files that you will use to create X.509 certificates.
+2. Download a helper script and two OpenSSL configuration files that you will use to create X.509 certificates.
 
    Download files
 
@@ -42,14 +33,15 @@ In this section, you will generate an X.509 CA certificate using OpenSSL. This c
 
    For additional instructions on using this helper script, and for instructions on how to use PowerShell instead of Bash, please see: [https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md)
 
-   > **WARNING**: Certificates created by this helper script **MUST NOT** be used for production. They contain hard-coded passwords ("*1234*"), expire after 30 days, and are provided for demonstration purposes only. When using CA certificates in production, be sure to apply your company's security best practices for certificate creation and lifetime management.
+   > [!WARNING]
+   > Certificates created by this helper script **MUST NOT** be used for production. They contain hard-coded passwords ("*1234*"), expire after 30 days, and are provided for demonstration purposes only. When using CA certificates in production, be sure to apply your company's security best practices for certificate creation and lifetime management.
 
    If you are interested, you can quickly scan the contents of the script file that you downloaded by using the editor that's built-in to the Cloud Shell.
 
    * In the Cloud Shell, to open the editor, select **{}**.
    * In the FILES list, select **certificates**, and then select **certGen.sh**.
 
-1. To generate the root and intermediate certificates, enter the following command:
+3. To generate the root and intermediate certificates, enter the following command:
 
    ```sh
    ./certGen.sh create_root_and_intermediate
@@ -73,7 +65,7 @@ Figure out the cleanest way to have someone carry their own variables around
    az iot dps certificate create --dps-name dps-$suffix --certificate-name groupCA-sensors --path ~/certificates/certs/azure-iot-test-only.root.ca.cert.pem
    ```
 
-1. Create an enrollment group in your DPS instance. This command creates an enrollment group with the following parameters:
+2. Create an enrollment group in your DPS instance. This command creates an enrollment group with the following parameters:
 
    | Parameter | Description |
    | --------- | ----------- |

@@ -14,7 +14,8 @@ In this exercise, you run the simulated device. When the device is started for t
     dotnet run
     ```
 
-    > **Note**:  When you run your simulated device for the first time, the most common error is an *Invalid certificate* error. This error can cause a **ProvisioningTransportException** exception. If you see a message similar to the following example, ensure that the CA certificate in DPS and the device certificate for the simulated device application are configured correctly.
+    > [!NOTE]
+    > When you run your simulated device for the first time, the most common error is an *Invalid certificate* error. This error can cause a **ProvisioningTransportException** exception. If you see a message similar to the following example, ensure that the CA certificate in DPS and the device certificate for the simulated device application are configured correctly.
     >
     > ```text
     > localmachine:LabFiles User$ dotnet run

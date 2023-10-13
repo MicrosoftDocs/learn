@@ -2,7 +2,7 @@
 uid: learn.wwl.explore-group-enrollment-tasks
 metadata:
   title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
-  description: "Experience implementing group enrollments using X.509 certificates, using code that accesses device twin properties to initialize a device, and deprovisioning enrollments groups or individual devices from an enrollment group."
+  description: "Practice implementing group enrollments and disenrollments using X.509 certificates and the IoT Hub Device Provisioning Service (DPS)"
   ms.date: 10/11/2023
   author: kgremban
   ms.author: kgremban
@@ -11,10 +11,10 @@ metadata:
   ms.topic: module-guided-project
   ms.service: iot-hub
 title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
-summary: Experience implementing group enrollments using X.509 certificates, using code that accesses device twin properties to initialize a device, and deprovisioning enrollments groups or individual devices from an enrollment group.
+summary: Practice implementing group enrollments and disenrollments using X.509 certificates and the IoT Hub Device Provisioning Service (DPS)
 abstract: |
   After you complete this module, you will be able to:
-  - Generate an X.509 root CA Certificate using OpenSSL within the Azure Cloud Shell, and then use the root certificate to configure a group enrollment within the Device Provisioning Service.
+  - Generate an X.509 root CA Certificate using OpenSSL within the Azure Cloud Shell, and then use the root certificate to configure a group enrollment using the Device Provisioning Service (DPS)
   - Generate a device certificate and use it to provision a device to IoT hub.
   - Use code to access to the device twin properties and perform initial configuration of the device.
   - Deprovision an individual device from the enrollment group and then deprovision the entire group enrollment.
