@@ -4,7 +4,7 @@ Here, you'll learn some common configurations within a workflow file. You'll als
 
 As mentioned previously, you can configure your workflows to run when specific activity occurs on GitHub, when an event outside of GitHub happens, or at a scheduled time. The `schedule` event allows you to trigger a workflow to run at specific UTC times using [POSIX cron syntax](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07). This cron syntax has five `*` fields, and each field represents a unit of time.
 
-:::image type="content" source="../media/scheduled-events.png" alt-text="Depiction the five unit-of-time fields for scheduling an event in a workflow file." border="false":::
+:::image type="content" source="../media/scheduled-events.png" alt-text="Diagram of the five unit-of-time fields for scheduling an event in a workflow file." border="false":::
 
 For example, if you wanted to run a workflow every 15 minutes, the `schedule` event would look like the following:
 
