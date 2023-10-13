@@ -7,4 +7,4 @@ Imagine you are an IT professional responsible for managing SAP workloads in you
 - Discover Azure Center for SAP Solutions (ACSS) and its services.
 - Learn how to deploy SAP workloads on Azure or register existing SAP workloads with ACSS.
 - Use ACSS to manage new and existing SAP workloads on Azure.
-- Monitor and troubleshoot SAP workloads on Azure.
+- Monitor and troubleshoot SAP workloads on Azure. 
