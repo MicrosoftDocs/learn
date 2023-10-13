@@ -4,19 +4,60 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/14/2022
-  author: wwlpublish
-  ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/11/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-guided-project
+  ms.service: iot-hub
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-knowledge-check.md)]
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
+  - content: "How should you handle a potentially compromised device that's part of a group enrollment?"
+    choices:
+    - content: "Delete the group enrollment and update all of the devices with a new certificate chain of trust."
+      isCorrect: false
+      explanation: ""
+    - content: "Create an individual enrollment to disallow the potentially compromised device then delete the device from IoT hub."
+      isCorrect: true
+      explanation: ""
+    - content: "Delete the CA certificate from DPS."
+      isCorrect: false
+      explanation: ""
+    - content: "Delete the potentially compromised device from IoT hub."
+      isCorrect: false
+      explanation: ""
+  - content: "What certificate or certificates do you upload to DPS to enable group enrollment with X.509"
+    choices:
+    - content: "The bottom-level device certificates."
+      isCorrect: false
+      explanation: ""
+    - content: "The highest intermediate certificate that all the devices share."
+      isCorrect: true
+      explanation: ""
+    - content: "The top-level root CA certificate for your organization."
+      isCorrect: false
+      explanation: ""
+    - content: "The entire certificate chain of trust."
+      isCorrect: false
+      explanation: ""
+  - content: "Group enrollments include the option to specify an initial configuration of a device. What mechanism is used to apply this configuration?"
+    choices:
+    - content: "The enrollment process instructs IoT Hub to trigger a direct method."
+      isCorrect: false
+      explanation: ""
+    - content: "The enrollment process uses a security token to request device access permission and pushes the configuration to the device."
+      isCorrect: false
+      explanation: ""
+    - content: "The enrollment process includes a device twin state field that contains desired properties for the device."
+      isCorrect: true
+      explanation: ""
   - content: "The Device Provisioning Service uses X.509 certificates to help ensure that device connections are secure. What type of certificate is used to verify proof of possession for the root certificate?"
     choices:
     - content: "A leaf certificate."
