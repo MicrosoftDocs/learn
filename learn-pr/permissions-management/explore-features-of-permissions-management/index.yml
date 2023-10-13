@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.permissions-management.explore-features-of-permissions-management
+
+metadata:
+  title: Explore the many features of Permissions Management
+  description: Use the framework of discover, remediate, monitor as a guide to walk through how the Permissions Management features set can benefit your organization.
+  ms.date: 09/27/2023
+  author: jenniferf-skc
+  ms.author: jfields
+  ms.topic: interactive-tutorial
+  ms.service: active-directory
+  ms.subservice: ciem
+title: Explore the many features of Permissions Management
+summary: While exploring more about the features of Permissions Management, we'll use this framework of discover, remediate, monitor as a guide to help walkthrough how the Permissions Management features set can benefit your organization.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explore the features of Microsoft Entra Permissions Management
+  - Learn more specifics about how Permissions Management allows you to discover, remediate, and monitor identities, permissions, and resources 
+  - Get real-world views of the data and analytics Permissions Management provides
+
+
+iconUrl: /learn-pr/achievements/achievements/2-explore-features-of-permissions-management.svg
+levels:
+- beginner
+roles:
+- identity-access-admin 
+products:
+- active-directory
+- entra-permissions-management
+- entra
+subjects:
+- classification-analysis
+units:
+- learn.permissions-management.explore-features-of-permissions-management.introduction
+- learn.permissions-management.explore-features-of-permissions-management.a-comprehensive-experience-for-all-cloud-environments
+- learn.permissions-management.explore-features-of-permissions-management.get-high-level-insights-in-the-permissions-management-dashboard
+- learn.permissions-management.explore-features-of-permissions-management.knowledge-check
+- learn.permissions-management.explore-features-of-permissions-management.dive-deeper-with-the-analytics-tab
+- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-2
+- learn.permissions-management.explore-features-of-permissions-management.develop-a-better-understanding-of-your-environment-with-reports
+- learn.permissions-management.explore-features-of-permissions-management.analyze-historical-data-with-the-audit-tab
+- learn.permissions-management.explore-features-of-permissions-management.act-on-your-findings-with-the-remediation-tab
+- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-3.md
+- learn.permissions-management.explore-features-of-permissions-management.stay-informed-and-take-a-more-proactive-approach-to-managing-with-continuous-monitoring
+- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-4.md
+- learn.permissions-management.explore-features-of-permissions-management.managing-access-to-microsoft-entra-permissions-management
+- learn.permissions-management.explore-features-of-permissions-management.putting-it-all-together
+- learn.permissions-management.explore-features-of-permissions-management.summary
+badge:
+  uid: learn.permissions-management.explore-features-of-permissions-management.badge
+
