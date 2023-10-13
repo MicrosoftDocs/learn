@@ -25,9 +25,9 @@ roles:
 products:
 - dotnet
 prerequisites: |
-- Local installations of the [.NET SDK](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code[(https://code.visualstudio.com/?azure-portal=true)
-- Optional: [Visual Studio 2022](https://www.visualstudio.com&azure-portal=true)
-- Experience with using the command line
+  - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code[(https://code.visualstudio.com/?azure-portal=true)
+  - Optional: [Visual Studio 2022](https://www.visualstudio.com&azure-portal=true)
+  - Experience with using the command line
 subjects:
 - development-tools
 units:
