@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: Azure Monitor Metrics and Azure Monitor Logs.
       isCorrect: true
-      explanation: Azure Monitor has two main features for collecting and storing monitoring data: Azure Monitor Metrics and Azure Monitor Logs.
+      explanation: Azure Monitor has two main features for collecting and storing monitoring data, Azure Monitor Metrics and Azure Monitor Logs.
     - content: Azure Monitor Insights and Azure Monitor Alerts.
       isCorrect: false
       explanation: Insights and Alerts are features of Azure Monitor that use Azure Monitor Metrics data.
@@ -37,3 +37,4 @@ quiz:
     - content: Subscription, resource group, and VM.
       isCorrect: false
       explanation: VMs are created inside resource groups, which are created inside Azure subscriptions, but these aren't features of VMs.
+      

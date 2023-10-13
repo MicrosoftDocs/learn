@@ -26,7 +26,7 @@ quiz:
     - content: Select **Enable recommended alert rules** on the **Monitoring** tab.
       isCorrect: true
       explanation: You can easily enable recommended alert rules during VM creation by selecting **Enable** and configuring the alert parameters on the **Monitoring** tab.
-  - content: Which metrics graph isn't available by default on the **Monitoring** tab when you create a VM? (client OS graphs)
+  - content: Which metrics graph isn't available by default on the **Monitoring** tab when you create a VM?
     choices:
     - content: VM Availability
       isCorrect: false

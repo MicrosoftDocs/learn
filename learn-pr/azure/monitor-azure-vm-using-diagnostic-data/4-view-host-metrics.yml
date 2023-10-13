@@ -23,7 +23,7 @@ quiz:
     - content: Select **New chart**.
       isCorrect: false
       explanation: You can select **New chart** to create a new graph, but to add another metric to the existing graph, select **Add metric**.
-     - content: Select **Add metric**.
+    - content: Select **Add metric**.
       isCorrect: true
       explanation: To add another metric to the existing Metrics Explorer graph, select **Add metric** at upper left.
   - content: Which of these parameters isn't included in the dropdown fields when you define a Metrics Explorer graph?
