@@ -1,6 +1,6 @@
-Many VM host metrics are available. You can use Metrics Explorer to view available metrics and create custom metrics graphs for VMs and any other Azure resource types.
+Many VM host metrics are available in addition to those shown on the built-in charts. You can use Metrics Explorer to view available metrics and create custom metrics graphs for VMs and any other Azure resource types.
 
-In this unit, you configure a customized metrics chart to learn how to use Metrics Explorer. The built-in metrics charts for a VM already display several important metrics, so be sure to check the built-in graphs before you use Metrics Explorer to create a custom graph.
+The built-in metrics charts for a VM already display several important metrics, so be sure to check the built-in graphs to see if you need to use Metrics Explorer to view an available metric. In this unit, you use Metrics Explorer to create a customized metrics chart that shows two different metrics together.
 
 ## Understand Metrics Explorer
 
@@ -13,7 +13,7 @@ In Metrics Explorer, you can select the following values from the dropdown field
 - **Scope:** If you open Metrics Explorer from a VM, this field is prepopulated with the VM name. You can add more items with the same resource type (VMs) and location.
 - **Metric Namespace**: Most resource types have only one namespace, but for some types, you must pick a namespace. For example, storage accounts have separate namespaces for files, tables, blobs, and queues.
 - **Metric**: Each metrics namespace has many metrics available to choose from.
-- **Aggregation**: For each metric, Metrics Explorer applies a default aggregation that makes sense in basic scenarios. You can use a different aggregation to get different information about the metric.
+- **Aggregation**: For each metric, Metrics Explorer applies a default aggregation. You can use a different aggregation to get different information about the metric.
 
 You can apply the following aggregation functions to metrics:
 

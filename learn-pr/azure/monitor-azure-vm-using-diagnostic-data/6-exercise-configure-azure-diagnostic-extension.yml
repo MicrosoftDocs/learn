@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Where can an Azure Monitor DCR send event log data?
+  - content: Where can an Azure Monitor DCR send system event log data?
     choices:
-    - content: To Azure Monitor Logs
+    - content: Azure Monitor Logs
       isCorrect: true
       explanation: A DCR can send log data to multiple Log Analytics workspaces in Azure Monitor Logs.
-    - content: To Azure Monitor Metrics or Azure Monitor Logs
+    - content: Azure Monitor Metrics or Azure Monitor Logs
       isCorrect: false
-      explanation: DCRs can send performance counters to both Azure Monitor Metrics and Azure Monitor Logs, but Windows Events and Linux Syslog data can be sent to Azure Monitor Logs only.
-    - content: To Azure Monitor Alerts
+      explanation: DCRs can send performance counters to both Azure Monitor Metrics and Azure Monitor Logs, but event log data can be sent to Azure Monitor Logs only.
+    - content: Azure Monitor Metrics
       isCorrect: false
-      explanation: Alerts act on metrics or log data, but they don't collect data directly.
+      explanation: DCRs can send performance counters to Azure Monitor Metrics, but event log data can be sent to Azure Monitor Logs only.
   - content: How can you view log data collected by a DCR?
     choices:
     - content: In the **Monitoring** tab of your VM **Overview** page.

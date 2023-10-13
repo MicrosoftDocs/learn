@@ -16,9 +16,10 @@ In this unit, you use the Azure portal to create a Linux VM with recommended ale
    :::image type="content" source="../media/create-vm-basic.png" alt-text="Screenshot that shows the Basics tab of the Create a virtual machine page.":::
 
 1. On the **Monitoring** screen, select the checkbox next to **Enable recommended alert rules**.
-1. On the **Set up recommended alert rules** screen, select all the listed alert rules if not already selected.
-1. Under **Notify me by**, select the checkbox next to **Email**, and enter an email address to receive alert notifications.
-1. Select **Save**.
+1. On the **Set up recommended alert rules** screen:
+   1. Select all the listed alert rules if not already selected.
+   1. Under **Notify me by**, select the checkbox next to **Email**, and enter an email address to receive alert notifications.
+   1. Select **Save**.
 1. Under **Diagnostics**, next to **Boot diagnostics**, ensure that **Enable with managed storage account (recommended)** is selected.
 1. Select **Review + create** at the bottom of the page, and when validation passes, select **Create**.
 

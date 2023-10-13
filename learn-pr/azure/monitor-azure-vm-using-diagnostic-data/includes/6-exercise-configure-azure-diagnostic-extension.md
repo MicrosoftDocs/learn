@@ -1,8 +1,6 @@
-This unit describes how you can use Azure Monitor Data Collection Rules (DCRs) to collect event and performance counter data from VMs. The [Azure Monitor Agent](/azure/azure-monitor/agents/agents-overview) that you installed for VM Insights already uses a DCR to provides a comprehensive view of performance data in its prebuilt workbook. Now, you set up a DCR to collect event data from the Linux VM Syslog.
+This unit describes how you can use Azure Monitor Data Collection Rules (DCRs) to collect event data from VMs. The [Azure Monitor Agent](/azure/azure-monitor/agents/agents-overview) that you installed for VM Insights already uses a DCR to provides a comprehensive view of performance data in its prebuilt workbook. Now, you set up a DCR to collect event data from the Linux VM Syslog.
 
-DCRs that you define can apply to any VMs in your subscription. Azure installs Azure Monitor Agent on VMs that don't already have it installed.
-
-You can send performance counters to both Azure Monitor Metrics and Azure Monitor Logs, but you can send Windows Events and Linux Syslog data to Azure Monitor Logs only.
+DCRs that you define can apply to any VMs in your subscription. Azure installs Azure Monitor Agent on VMs that don't already have it installed. DCRs can send performance counters to both Azure Monitor Metrics and Azure Monitor Logs, but can send Windows Events or Linux Syslog data to Azure Monitor Logs only.
 
 You must have a Log Analytics workspace and a data collection endpoint to send log data to. You can use the default Log Analytics workspace that VM Insights set up for your subscription, and create the DCR in the same region as the Log Analytics workspace.
 
@@ -12,13 +10,13 @@ For performance counters, you can select from a predefined set of objects and se
 
 ## Create a DCR to monitor events
 
-1. In the Azure portal, search for and select *monitor* to go to the Azure Monitor **Overview** screen.
+In the Azure portal, search for and select *monitor* to go to the Azure Monitor **Overview** screen.
 
-   :::image type="content" source="../media/monitor-overview.png" alt-text="Screenshot that shows the Azure Monitor Overview page.":::
+:::image type="content" source="../media/monitor-overview.png" alt-text="Screenshot that shows the Azure Monitor Overview page.":::
 
 ### Create the Data Collection Endpoint
 
-1. In the left navigation menu under **Settings**, select **Data Collection Endpoints**.
+1. In the Azure Monitor left navigation menu under **Settings**, select **Data Collection Endpoints**.
 1. On the **Data Collection Endpoints** page, select **Create**.
 1. On the **Create data collection endpoint** page, for **Name**, enter *linux-logs-endpoint*.
 1. Select the same **Subscription**, **Resource group**, and **Region** as your VM uses.

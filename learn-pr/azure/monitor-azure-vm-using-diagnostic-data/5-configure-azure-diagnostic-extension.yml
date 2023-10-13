@@ -20,9 +20,9 @@ quiz:
     - content: Prebuilt performance workbooks and guest OS metrics.
       isCorrect: true
       explanation: Enabling VM Insights with the Azure Monitor Agent provides prebuilt workbooks that visualize VM performance, and collects guest OS metrics.
-    - content: Charts that show several VM metrics together with customizable timeframes.
+    - content: Graphs that show several VM metrics on one graph with customizable timeframes.
       isCorrect: false
-      explanation: Azure Monitor Metrics Explorer lets you build customizable metrics charts that show several metrics together with adjustable timeframes.
+      explanation: To build metrics graphs that show several metrics on one graph with adjustable timeframes, use Metrics Explorer.
     - content: Azure VM log collection and analytics.
       isCorrect: false
       explanation: Azure Monitor doesn't collect any logs by default. You have to set up DCRs to collect logs and send them to Log Analytics.

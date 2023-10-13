@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: Select the metric from the dropdown list in the **Metric** field.
       isCorrect: false
-      explanation: You select the current metric from the dropdown list in the **Metric** field, but to add a different metric, select **Add metric** first.
+      explanation: You select the current metric from the dropdown list in the **Metric** field. To add another metric, select **Add metric**.
     - content: Select **New chart**.
       isCorrect: false
       explanation: You can select **New chart** to create a new graph, but to add another metric to the existing graph, select **Add metric**.
@@ -31,7 +31,7 @@ quiz:
     - content: Metric Namespace
       isCorrect: false
       explanation: The fields for a Metrics Explorer graph include **Scope**, **Metrics Namespace**, **Metric**, and **Aggregation**.
-    - content: Time
+    - content: Time range
       isCorrect: true
       explanation: You select the time range and granularity for a metrics graph by selecting the time filter above the graph.
     - content: Aggregation
