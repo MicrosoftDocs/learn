@@ -40,9 +40,9 @@ units:
 - learn.permissions-management.explore-features-of-permissions-management.develop-better-understanding-of-your-environment-with-reports
 - learn.permissions-management.explore-features-of-permissions-management.analyze-historical-data-with-audit-tab
 - learn.permissions-management.explore-features-of-permissions-management.act-on-your-findings-with-permissions-management-remediation-tab
-- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-remediation.md
+- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-remediation
 - learn.permissions-management.explore-features-of-permissions-management.stay-informed-with-continuous-monitoring
-- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-monitoring.md
+- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-monitoring
 - learn.permissions-management.explore-features-of-permissions-management.manage-access-to-microsoft-entra-permissions-management
 - learn.permissions-management.explore-features-of-permissions-management.put-it-all-together
 - learn.permissions-management.explore-features-of-permissions-management.summary

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.permissions-management.explore-features-of-permissions-management.managing-access-to-microsoft-entra-permissions-management
+uid: learn.permissions-management.explore-features-of-permissions-management.manage-access-to-microsoft-entra-permissions-management
 title: Manage access to Microsoft Entra Permissions Management
 metadata:
   title: Manage access to Microsoft Entra Permissions Management
-  description: Managing access to Microsoft Entra Permissions Management.
+  description: Manage access to Microsoft Entra Permissions Management.
   ms.date: 09/27/2023
   author: jenniferf-skc
   ms.author: jfields
