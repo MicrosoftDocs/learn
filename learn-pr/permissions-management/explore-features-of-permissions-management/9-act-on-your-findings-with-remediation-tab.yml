@@ -11,4 +11,4 @@ metadata:
   ms.prod: learn-entra-permissions-management
 durationInMinutes: 6
 content: |
-  [!include[](includes/9-act-on-your-findings-with-permissions-management-remediation-tab.md)]
+  [!include[](includes/9-act-on-your-findings-with-remediation-tab.md)]
