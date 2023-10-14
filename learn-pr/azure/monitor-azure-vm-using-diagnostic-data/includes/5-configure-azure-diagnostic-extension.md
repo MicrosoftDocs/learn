@@ -41,4 +41,4 @@ To view the VM Insights performance workbooks and maps, select **Insights** from
 
   :::image type="content" source="../media/dependency-map.png" alt-text="Screenshot that shows a dependency map on the Maps tab of VM Insights.":::
 
-- Select **View Workbooks** to select from other available prebuilt VM Insights workbooks. Select **Go To Gallery** to go to a gallery of other VM Insights workbooks and workbook templates, or to edit and create your own workbooks.
+- Select **View Workbooks** to select from other available prebuilt VM Insights workbooks. Select **Go To Gallery** to select from a gallery of other VM Insights workbooks and workbook templates, or to edit and create your own workbooks.

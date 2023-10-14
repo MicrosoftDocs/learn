@@ -15,22 +15,22 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: What capabilities does enabling VM Insights with the Azure Monitor Agent provide?
+  - content: What capabilities does enabling VM Insights provide?
     choices:
     - content: Prebuilt performance workbooks and guest OS metrics.
       isCorrect: true
       explanation: Enabling VM Insights with the Azure Monitor Agent provides prebuilt workbooks that visualize VM performance, and collects guest OS metrics.
-    - content: Graphs that show several VM metrics on one graph with customizable timeframes.
+    - content: Prebuilt graphs that show several metrics on one graph with customizable timeframes.
       isCorrect: false
       explanation: To build metrics graphs that show several metrics on one graph with adjustable timeframes, use Metrics Explorer.
     - content: Azure VM log collection and analytics.
       isCorrect: false
       explanation: Azure Monitor doesn't collect any logs by default. You have to set up DCRs to collect logs and send them to Log Analytics.
-  - content: How can you use the Azure Monitor Agent to collect guest VM metrics?
+  - content: How do you use the Azure Monitor Agent to collect guest VM metrics?
     choices:
     - content: Install the diagnostics extension under **Diagnostics settings**.
       isCorrect: false
-      explanation: The diagnostics extension isn't required and isn't related to the Azure Monitor Agent.
+      explanation: The diagnostics extension isn't related to the Azure Monitor Agent.
     - content: You don't have to install or create anything extra to use the Azure Monitor Agent to collect guest VM metrics.
       isCorrect: false
       explanation: Guest OS metrics aren't collected by default. Enable VM Insights with the Azure Monitor Agent to collect guest OS metrics.
