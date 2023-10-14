@@ -32,19 +32,19 @@ subjects:
 - classification-analysis
 units:
 - learn.permissions-management.explore-features-of-permissions-management.introduction
-- learn.permissions-management.explore-features-of-permissions-management.a-comprehensive-experience-for-all-cloud-environments
-- learn.permissions-management.explore-features-of-permissions-management.get-high-level-insights-in-the-permissions-management-dashboard
-- learn.permissions-management.explore-features-of-permissions-management.knowledge-check
-- learn.permissions-management.explore-features-of-permissions-management.dive-deeper-with-the-analytics-tab
-- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-2
-- learn.permissions-management.explore-features-of-permissions-management.develop-a-better-understanding-of-your-environment-with-reports
-- learn.permissions-management.explore-features-of-permissions-management.analyze-historical-data-with-the-audit-tab
-- learn.permissions-management.explore-features-of-permissions-management.act-on-your-findings-with-the-remediation-tab
-- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-3.md
-- learn.permissions-management.explore-features-of-permissions-management.stay-informed-and-take-a-more-proactive-approach-to-managing-with-continuous-monitoring
-- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-4.md
-- learn.permissions-management.explore-features-of-permissions-management.managing-access-to-microsoft-entra-permissions-management
-- learn.permissions-management.explore-features-of-permissions-management.putting-it-all-together
+- learn.permissions-management.explore-features-of-permissions-management.comprehensive-experience-for-all-cloud-environments
+- learn.permissions-management.explore-features-of-permissions-management.get-high-level-insights-permissions-management-dashboard
+- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-insights
+- learn.permissions-management.explore-features-of-permissions-management.dive-deeper-with-analytics-tab
+- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-analytics
+- learn.permissions-management.explore-features-of-permissions-management.develop-better-understanding-of-your-environment-with-reports
+- learn.permissions-management.explore-features-of-permissions-management.analyze-historical-data-with-audit-tab
+- learn.permissions-management.explore-features-of-permissions-management.act-on-your-findings-with-permissions-management-remediation-tab
+- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-remediation.md
+- learn.permissions-management.explore-features-of-permissions-management.stay-informed-with-continuous-monitoring
+- learn.permissions-management.explore-features-of-permissions-management.knowledge-check-monitoring.md
+- learn.permissions-management.explore-features-of-permissions-management.manage-access-to-microsoft-entra-permissions-management
+- learn.permissions-management.explore-features-of-permissions-management.put-it-all-together
 - learn.permissions-management.explore-features-of-permissions-management.summary
 badge:
   uid: learn.permissions-management.explore-features-of-permissions-management.badge
