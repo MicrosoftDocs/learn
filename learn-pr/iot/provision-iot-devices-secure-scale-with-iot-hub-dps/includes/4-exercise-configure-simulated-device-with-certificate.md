@@ -18,7 +18,8 @@ In this exercise, you will generate a device certificate using the root certific
 
    Once the **create_device_certificate** command has completed, the generated X.509 device certificate will be named **new-device.cert.pfx**, and will be located within the **/certs** sub-directory.
 
-   > **IMPORTANT**: This command overwrites any existing device certificate in the **/certs** sub-directory. If you want to create a certificate for multiple devices, ensure that you save a copy of the **new-device.cert.pfx** each time you run the command.
+   > [!IMPORTANT]
+   > This command overwrites any existing device certificate in the **/certs** sub-directory. If you want to create a certificate for multiple devices, ensure that you save a copy of the **new-device.cert.pfx** each time you run the command.
 
 1. To rename the device certificate that you just created, enter the following commands:
 

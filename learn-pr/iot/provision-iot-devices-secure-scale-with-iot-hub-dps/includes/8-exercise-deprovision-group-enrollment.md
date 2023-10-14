@@ -1,4 +1,4 @@
-In this exercise, you deprovision the full enrollment group. Again, this includes disenrolling the enrollment from Device Provisioning Service and deregistering the devices from IoT Hub.
+In this exercise, you deprovision the full enrollment group. This includes disenrolling the enrollment from Device Provisioning Service and deregistering the devices from IoT Hub.
 
 ### Task 1: Disenroll the enrollment group from the DPS
 
@@ -24,7 +24,7 @@ If you run the sensor-thl-001 simulated device now, you will see an error messag
 
 ### Task 2: Deregister the devices from the IoT Hub
 
-Once the enrollment group has been removed from the Device Provisioning Service (DPS), the device registration will still exist within Azure IoT Hub. To fully deprovision the devices, you will need to remove that registration as well.
+Once the enrollment group has been removed from the Device Provisioning Service (DPS), the device registration still exists within Azure IoT Hub. To fully deprovision the devices, you need to remove that registration as well.
 
 1. In the Azure sandbox, delete the device from your IoT hub device registry.
 
@@ -48,7 +48,7 @@ With the group enrollment deleted from the Device Provisioning Service, and the 
 
 1. Notice the exceptions listed when the device attempts to provision.
 
-   Now that the group enrollment and registered device have been deleted, the simulated device will no longer be able to provision or connect. When the application attempts to use the configured X.509 certificate to connect to DPS, it will return a **ProvisioningTransportException** error message.
+   Now that the group enrollment and registered device have been deleted, the simulated device can no longer be able to provision or connect. When the application attempts to use the configured X.509 certificate to connect to DPS, it returns a **ProvisioningTransportException** error message.
 
    ```txt
    Found certificate: AFF851ED016CA5AEB71E5749BCBE3415F8CF4F37 CN=sensor-thl-001; PrivateKey: True

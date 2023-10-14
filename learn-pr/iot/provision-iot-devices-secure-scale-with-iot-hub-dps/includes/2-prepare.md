@@ -2,7 +2,7 @@ To prepare for the exercises, you're going through the steps required to create 
 
 ## Setup
 
-As part of this module, the following resources will be created:
+As part of this module, the following resources are created:
 
 * An Azure IoT hub
 * An Azure IoT Device Provisioning Service (DPS) instance
@@ -10,11 +10,11 @@ As part of this module, the following resources will be created:
 
 ### Cloud resources
 
-To complete this guided project, you need an IoT hub and a Device Provisioning Service (DPS) instance that are linked to each other. Creating these service instance can take several minutes.
+To complete this guided project, you need an IoT hub and a Device Provisioning Service (DPS) instance that are linked to each other. Creating these service instances can take several minutes.
 
-1. Start by clicking on the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You'll create additional resources for this project using the following steps. The resource group ID is substituted automatically where it is used within the code steps.
+1. Start by clicking on the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You create additional resources for this project using the following steps. The resource group ID is substituted automatically where it's used within the code steps.
 
-1. Create a variable named **suffix** with a random number that you'll use for resource names that need to be globally unique.
+1. Create a variable named **suffix** with a random number that you use for resource names that need to be globally unique.
 
    ```azurecli
    let suffix=$RANDOM*$RANDOM
@@ -34,7 +34,7 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
    az iot dps create --name dps-$suffix --resource-group <rgn>[sandbox resource group name]</rgn> --location westus
    ```
 
-1. Get the service connection string from your IoT hub, which you'll provide to the DPS instance to link the two resources.
+1. Get the service connection string from your IoT hub, which you provide to the DPS instance to link the two resources.
 
    ```azurecli
    hubConnectionString=$(az iot hub connection-string show --hub-name hub-$suffix --key-type primary --query connectionString -o tsv)
@@ -56,7 +56,7 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
 
 ### Development resources
 
-To simulate your IoT devices provisioning through Device Provisioning Service, you'll run two C# applications on your development machine. Have the following prerequisites ready on your development machine:
+To simulate your IoT devices provisioning through Device Provisioning Service, you run two C# applications on your development machine. Have the following prerequisites ready on your development machine:
 
 * [Visual Studio Code](https://code.visualstudio.com/download)
 * [.NET SDK 6.0 or later](https://dotnet.microsoft.com/download)

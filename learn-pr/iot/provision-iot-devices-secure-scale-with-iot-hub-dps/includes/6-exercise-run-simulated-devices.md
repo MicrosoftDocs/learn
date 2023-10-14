@@ -78,7 +78,7 @@ In this exercise, you run the simulated device. When the device is started for t
 
 1. Open a new instance of Visual Studio Code.
 
-    You can do this from within Visual Studio Code: open the **File** menu and select **New window**.
+    You can open the new instance from within Visual Studio Code: open the **File** menu and select **New window**.
 
 1. In the new Visual Studio Code window, on the **File** menu, select **Open Folder**.
 
@@ -108,7 +108,7 @@ When you created the group enrollment in DPS, you set the initial twin configura
 
 1. Notice that the application has been notified of the updated device twin **telemetryDelay** desired property setting.
 
-   The application outputs messages to the Console that show that the new device twin desired properties have been loaded, and the changes have been set and reported back to the Azure IoT Hub.
+   The application outputs messages to the Console that show that the new device twin desired properties have been loaded, and that the changes have been set and reported back to the Azure IoT Hub.
 
    ```text
    Desired Twin Property Changed:

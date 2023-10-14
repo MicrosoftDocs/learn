@@ -4,13 +4,14 @@ To deprovision a single device from an enrollment group, you must do two things:
 
 * Create a disabled individual enrollment for the device's leaf (device) certificate.
 
-    This revokes access to the provisioning service for that device while still permitting access for other devices that have the enrollment group's signing certificate in their chain. Note that you should not delete the disabled individual enrollment for the device, as doing so would allow the device to re-enroll through the enrollment group.
+    This revokes access to the provisioning service for that device while still permitting access for other devices that have the enrollment group's signing certificate in their chain. You shouldn't delete the disabled individual enrollment for the device, as doing so would allow the device to re-enroll through the enrollment group.
 
 * Disable or delete the device from the IoT hub's identity registry.
 
-    If your solution includes multiple IoT hubs, you should use the list of provisioned devices for the enrollment group to find the IoT hub that the device was provisioned to (so that you can disable or delete the device). In this case you have a single IoT hub, so you don't need to look up which IoT hub was used.
+    [!TIP]
+    > If your solution includes multiple IoT hubs, you should use the list of provisioned devices for the enrollment group to find the IoT hub that the device was provisioned to. This is so that you can disable or delete the device. In this exercise you use a single IoT hub, so you don't need to look up which IoT hub was used.
 
-In this exercise, you will deprovision a single device from an enrollment group.
+In this exercise, you deprovision a single device from an enrollment group.
 
 ### Task 1: Create a disabled individual enrollment for the device
 
