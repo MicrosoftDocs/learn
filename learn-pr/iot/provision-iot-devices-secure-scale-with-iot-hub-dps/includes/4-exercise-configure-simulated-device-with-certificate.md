@@ -1,4 +1,4 @@
-In this exercise, you will generate a device certificate using the root certificate, and configure a simulated device that connects by using the device certificate for attestation.
+In this exercise, you generate a device certificate using the root certificate, and configure a simulated device that connects by using the device certificate for attestation.
 
 ### Task 1: Generate a device certificate
 
@@ -14,12 +14,12 @@ In this exercise, you will generate a device certificate using the root certific
    ./certGen.sh create_device_certificate sensor-thl-001
    ```
 
-   This command creates a new X.509 certificate that's signed by the CA certificate that was generated previously. Notice that the device id (**sensor-thl-001**) is passed to the **create_device_certificate** command of the **certGen.sh** script. This device id will be set within the *common name*, or *CN=*, value of the device certificate. This certificate will generate a leaf device X.509 certificate for your simulated device, and will be used to authenticate the device with the Device Provisioning Service (DPS).
+   This command creates a new X.509 certificate that's signed by the CA certificate that was generated previously. Notice that the device ID (**sensor-thl-001**) is passed to the **create_device_certificate** command of the **certGen.sh** script. This device ID is set within the *common name*, or *CN=*, value of the device certificate. This certificate generates a leaf device X.509 certificate for your simulated device, and is used to authenticate the device with the Device Provisioning Service (DPS).
 
-   Once the **create_device_certificate** command has completed, the generated X.509 device certificate will be named **new-device.cert.pfx**, and will be located within the **/certs** sub-directory.
+   Once the **create_device_certificate** command has completed, the generated X.509 device certificate is named **new-device.cert.pfx**, and is located within the **/certs** subdirectory.
 
    > [!IMPORTANT]
-   > This command overwrites any existing device certificate in the **/certs** sub-directory. If you want to create a certificate for multiple devices, ensure that you save a copy of the **new-device.cert.pfx** each time you run the command.
+   > This command overwrites any existing device certificate in the **/certs** subdirectory. If you want to create a certificate for multiple devices, ensure that you save a copy of the **new-device.cert.pfx** each time you run the command.
 
 1. To rename the device certificate that you just created, enter the following commands:
 
@@ -54,13 +54,13 @@ In this exercise, you will generate a device certificate using the root certific
    > [!NOTE]
    > Watch for a browser prompt asking you to save the file.
 
-In the next task, you will start building the simulated devices that will use the X.509 device certificates to authenticate with the Device Provisioning Service.
+In the next task, you start building the simulated devices that uses the X.509 device certificates to authenticate with the Device Provisioning Service.
 
 ### Task 2: Configure a simulated device
 
 <!-- TODO: GET THIS SAMPLE CODE INTO THE C# REPO -->
 
-In this task, you will complete the following:
+In this task, you complete the following:
 
 * Create two project folders
 * Copy the downloaded device certificate into the root folder of the application
@@ -336,7 +336,7 @@ In this task, you will complete the following:
 
    All devices that connect to Azure DPS are configured with this global device endpoint DNS name.
 
-   The **ContainerDevice** application uses X.509 certificates as an attestation mechanism. From the application's perspective, it doesn't matter that this device will be connecting using a group enrollment rather than an individual enrollment. All the device has to do is connect to its assigned DPS instance and receive its assigned IoT hub information.
+   The **ContainerDevice** application uses X.509 certificates as an attestation mechanism. From the application's perspective, it doesn't matter that this device is connecting using a group enrollment rather than an individual enrollment. All the device has to do is connect to its assigned DPS instance and receive its assigned IoT hub information.
 
 1. Locate the **dpsIdScope** variable
 
@@ -353,7 +353,7 @@ In this task, you will complete the following:
 
 1. Locate the **certificateFileName** variable, and notice that its value is set to the name of the device certificate file that you generated (**sensor-thl-001-device.cert.pfx**). If you named the certificate file something else, update the variable value to match.
 
-    The device application will use an X.509 certificate for authentication. This variable tells the device code which file contains the X.509 device certificate that it will use when authenticating with the Device Provisioning Service.
+    The device application uses an X.509 certificate for authentication. This variable tells the device code which file contains the X.509 device certificate that it uses when authenticating with the Device Provisioning Service.
 
 1. Locate the **certificatePassword** variable, and notice that its value is set to the default password defined by the **certGen.sh** script.
 
@@ -373,4 +373,4 @@ In this task, you will complete the following:
    dotnet build
    ```
 
-   If you see any build errors listed, you will need to fix them before continuing to the next exercise. Ensure that you updated the code files correctly and that you saved your changes to the .csproj and .cs files.
+   If you see any build errors listed, you need to fix them before continuing to the next exercise. Ensure that you updated the code files correctly and that you saved your changes to the .csproj and .cs files.
