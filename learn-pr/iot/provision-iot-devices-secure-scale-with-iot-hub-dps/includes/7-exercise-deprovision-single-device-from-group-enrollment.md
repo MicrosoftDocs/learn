@@ -1,4 +1,4 @@
-There are many reasons why you might need to deprovision just a portion of the devices that are registered as part of a group enrollment. For example, a device may no longer be needed, a newer version of the device may have become available, or it may have been broken or compromised.
+There are many reasons why you might need to deprovision just a portion of the devices that are registered as part of a group enrollment. For example, a device might no longer be needed, a newer version of the device might have become available, or it might have been broken or compromised.
 
 To deprovision a single device from an enrollment group, you must do two things:
 

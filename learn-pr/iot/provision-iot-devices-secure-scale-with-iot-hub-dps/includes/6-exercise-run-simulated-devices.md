@@ -1,4 +1,4 @@
-In this exercise, you run the simulated device. When the device is started for the first time, it connects to the Device Provisioning Service (DPS) which automatically enrolls it using the configured group enrollment. Once enrolled into the DPS group enrollment, the device is registered automatically in the Azure IoT Hub device registry. Once enrolled and registered, the device can begin communicating with Azure IoT Hub securely using the configured X.509 certificate authentication.
+In this exercise, you run the simulated device. When the device is started for the first time, it connects to the Device Provisioning Service (DPS) which automatically enrolls it using the configured group enrollment. Once the device is enrolled into the DPS group enrollment, the device is registered automatically in the Azure IoT Hub device registry. Once enrolled and registered, the device can begin communicating with Azure IoT Hub securely using the configured X.509 certificate authentication.
 
 ### Task 1: Build and run the simulated device projects
 
@@ -68,7 +68,7 @@ In this exercise, you run the simulated device. When the device is started for t
     12/9/2019 5:47:01 PM > Sending message: {"temperature":26.628804161040485,"humidity":68.09610794675355,"pressure":1014.6454375411363,"latitude":40.093269544242695,"longitude":-98.22227128174003}
     ```
 
-    Once the simulated device completes the initial start up, provision, and registration tasks, it sends simulated sensor telemetry messages to Azure IoT Hub.
+    Once the simulated device completes the initial startup, provision, and registration tasks, it sends simulated sensor telemetry messages to Azure IoT Hub.
 
     Notice that the delay between each message sent to IoT Hub, as defined by the **telemetryDelay** Device Twin Property, is currently delaying **1 second** between sending sensor telemetry messages.
 
@@ -108,7 +108,7 @@ When you created the group enrollment in DPS, you set the initial twin configura
 
 1. Notice that the application has been notified of the updated device twin **telemetryDelay** desired property setting.
 
-   The application outputs messages to the Console that show that the new device twin desired properties have been loaded, and that the changes have been set and reported back to the Azure IoT Hub.
+   The application outputs messages to the Console that show that the new device twin desired properties have been loaded, and that the changes have been set and reported back to the Azure IoT hub.
 
    ```text
    Desired Twin Property Changed:
@@ -129,4 +129,4 @@ When you created the group enrollment in DPS, you set the initial twin configura
 
 1. Switch to your other Visual Studio Code windows and use the **Terminal** prompt to stop the simulated device apps.
 
-   Don't close the Visual Studio Code windows yet, as you'll come back to rerun the programs.
+   Don't close the Visual Studio Code windows yet, as you come back to rerun the programs in the next exercise.

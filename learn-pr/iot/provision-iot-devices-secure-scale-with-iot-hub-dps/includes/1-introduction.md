@@ -2,7 +2,7 @@ This module will guide you through the steps required to generate an X.509 root 
 
 ## Example scenario
 
-Suppose you are working on an update to your company's cheese shipping container monitoring and tracking solution. The proposed system update will use IoT devices to reduce manual data entry and provide more advanced monitoring during the container shipping process. The IoT devices connect to an Azure IoT hub using vehicle-provided WiFi. The new system will provide continuous monitoring of the product environment and enable various notification scenarios when issues are detected. The IoT devices are equiped with integrated sensors to track the location, temperature, and pressure of shipping containers during transit.
+Suppose you are working on an update to your company's cheese shipping container monitoring and tracking solution. The proposed system update uses IoT devices to reduce manual data entry and provide more advanced monitoring during the container shipping process. The IoT devices connect to an Azure IoT hub using vehicle-provided WiFi. The proposed system provides continuous monitoring of the product environment and enable various notification scenarios when issues are detected. The IoT devices are equipped with integrated sensors to track the location, temperature, and pressure of shipping containers during transit.
 
 You have been tasked with validating the container IoT tracking device provisioning and deprovisioning process using Azure IoT Hub Device Provisioning Service (DPS) and X.509 certificate authentication. You need to demonstrate that DPS can be used to autoprovision large numbers of IoT tracking devices securely using this configuration. Container IoT tracking devices are autoprovisioned using DPS and X.509 certificate authentication when containers are loaded, and deprovisioned (disenrolled and deregistered) after each container is delivered for later reuse and reprovisioning.
 
@@ -11,7 +11,7 @@ You have been tasked with validating the container IoT tracking device provision
 
 ## Learning objectives
 
-In this module, you'll practice how to:
+In this module, you practice how to:
 
 * Generate an X.509 root CA certificate using OpenSSL.
 * Configure a group enrollment that uses X.509 certificate authentication within Device Provisioning Service.
