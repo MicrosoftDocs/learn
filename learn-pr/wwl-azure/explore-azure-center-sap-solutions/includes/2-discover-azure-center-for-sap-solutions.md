@@ -16,11 +16,11 @@ For existing SAP systems that run on Azure, there's a simple registration experi
 - SAP systems that run on Windows, SUSE, and RHEL Linux operating systems
 - SAP systems that run on HANA, DB2, SQL Server, Oracle, Max DB, or SAP ASE databases
 
-Azure Center for SAP solutions brings services, tools and frameworks together to provide an end-to-end unified experience for deployment and management of SAP workloads on Azure, creating the foundation for you to build innovative solutions for your unique requirements.
+Azure Center for SAP solutions brings services, tools and frameworks together to provide an end-to-end unified experience. ACSS provides features for deployment and management of SAP workloads on Azure, creating the foundation for you to build innovative solutions for your unique requirements.
 
 ## What is a Virtual Instance for SAP solutions?
 
-When you use Azure Center for SAP solutions, you'll create a *Virtual Instance for SAP solutions (VIS)* resource. The VIS is a logical representation of an SAP system on Azure. Every time that you create a new SAP system through Azure Center for SAP solutions, or register an existing SAP system to ACSS, Azure creates a VIS. A VIS contains the metadata for the entire SAP system.
+When you use Azure Center for SAP solutions, you create a *Virtual Instance for SAP solutions (VIS)* resource. The VIS is a logical representation of an SAP system on Azure. Every time that you create a new SAP system through Azure Center for SAP solutions, or register an existing SAP system to ACSS, Azure creates a VIS. A VIS contains the metadata for the entire SAP system.
 
 Each VIS consists of:
 
@@ -29,7 +29,7 @@ Each VIS consists of:
 - A database instance
 - One or more SAP Application Server instances
 
-:::image type="complex" source="./media/virtual-instance-for-sap.png" alt-text="Diagram of a Virtual Instance for SAP solutions containing an SAP system identifier with ASCS, Application Server and Database instances.":::
+:::image type="content" source="../media/virtual-instance-for-sap.png" alt-text="Diagram of a Virtual Instance for S A P solutions containing an S A P system identifier with A S C S, Application Server and Database instances.":::
 
 Inside the VIS, the SID is the parent resource. Your VIS resource is named after the SID of your SAP system. Any ASCS, Application Server, or database instances are child resources of the SID. The child resources are associated with one or more VM resources outside of the VIS. A standalone system has all three instances mapped to a single VM. A distributed system has one ASCS and one Database instance, with each mapped to a VM. High Availability (HA) deployments have the ASCS and Database instances mapped to multiple VMs to enable HA. A distributed or HA type SAP system can have multiple Application Server instances linked to their respective VMs.
 

@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-center-sap-solutions
 metadata:
-  title: Explore Azure center sap solutions
-  description: "IT professional responsible for managing SAP workloads more efficiently on a secure, scalable, and reliable cloud platform. In this module, we will explore how Azure Center for SAP Solutions (ACSS) can help you achieve these goals."
-  ms.date: 10/13/2023
+  title: Explore Azure Center for SAP solutions
+  description: "SAP professionals are responsible for managing SAP workloads efficiently on a secure, scalable, and reliable cloud platform. In this module, we will explore how Azure Center for SAP Solutions (ACSS) can help you achieve these goals."
+  ms.date: 10/14/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: azure
-title: Explore Azure center sap solutions
-summary: IT professional responsible for managing SAP workloads more efficiently on a secure, scalable, and reliable cloud platform. In this module, we will explore how Azure Center for SAP Solutions (ACSS) can help you achieve these goals.
+title: Explore Azure Center for SAP solutions
+summary: SAP professionals are responsible for managing SAP workloads more efficiently on a secure, scalable, and reliable cloud platform. In this module, we will explore how Azure Center for SAP Solutions (ACSS) can help you achieve these goals.
 abstract: |
   After completing this module, you will be able to:
   - Explain Azure Center for SAP Solutions (ACSS) and its services.
