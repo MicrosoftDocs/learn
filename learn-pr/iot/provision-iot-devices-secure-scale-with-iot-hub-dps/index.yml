@@ -13,7 +13,7 @@ metadata:
 title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
 summary: Practice implementing group enrollment and disenrollment using X.509 certificates and the IoT Hub Device Provisioning Service (DPS)
 abstract: |
-  After you complete this module, you will be able to:
+  After you complete this module, you'll be able to:
   - Generate an X.509 root CA Certificate using OpenSSL within the Azure Cloud Shell, and then use the root certificate to configure a group enrollment using the Device Provisioning Service (DPS)
   - Generate a device certificate and use it to provision a device to IoT hub.
   - Use code to access to the device twin properties and perform initial configuration of the device.
