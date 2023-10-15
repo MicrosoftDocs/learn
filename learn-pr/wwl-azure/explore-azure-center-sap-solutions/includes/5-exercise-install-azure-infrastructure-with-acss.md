@@ -1,8 +1,8 @@
-To create a deployment with Azure Center for SAP solutions (ACSS) for the Azure infrastructure, sign in to the [Azure portal](https://portal.azure.com). Then, follow the [Create deployment steps](#create-deployment), provided you have the pre-provisioned network and other prerequisites are in place.
+To create a deployment with Azure Center for SAP solutions (ACSS) Azure infrastructure, sign in to the [Azure portal](https://portal.azure.com). Then, follow the [Create deployment steps](#create-deployment), provided you have the pre-provisioned network and other prerequisites are in place.
 
 Supplemental options for this lesson include:
 
-- A detailed set of lab steps are available in Github [AZ 120 Module: Design and implement an infrastructure to support SAP workloads on Azure](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/polichtm-acss-lab1/Instructions/AZ-120_Lab04-ACSS_Deployment.md).
+- A detailed set of lab steps are available in AZ-120 GitHub lab Module 4: Design and implement an infrastructure to support SAP workloads on Azure - [Exercise 2: Deploy the infrastructure that will host SAP workloads in Azure by using Azure Center for SAP solutions](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/polichtm-acss-lab1/Instructions/AZ-120_Lab04-ACSS_Deployment.md#exercise-2-deploy-the-infrastructure-that-will-host-sap-workloads-in-azure-by-using-azure-center-for-sap-solutions).
 - Interactive Guides including clickable simulations are available for:
   - [Installing ACSS prerequisites](https://mslearn.cloudguides.com/guides/Azure%20Center%20for%20SAP%20solutions%20-%20Complete%20the%20prerequisites%20for%20deploying%20and%20registering%20SAP%20systems).
   - [Infrastructure deployment](https://mslearn.cloudguides.com/guides/Azure%20Center%20for%20SAP%20solutions%20-%20Complete%20the%20prerequisites%20for%20deploying%20and%20registering%20SAP%20systems) and the installation of the SAP software.
@@ -33,11 +33,11 @@ Supplemental options for this lesson include:
 
     - For **HANA scale method**, keep the selection as **Scale up**.
 
-    - For **Deployment type**, [select and configure your deployment type](4-choose-deployment-type-supported-software.md).
+    - For **Deployment type**, [select and configure your deployment type](/azure/sap/center-sap-solutions/deploy-s4hana#deployment-types).
 
     - For **Network**, create the [network you created previously with subnets](/azure/sap/center-sap-solutions/prepare-network).
 
-    - For **Application subnet** and **Database subnet**, map the IP address ranges as required. It's recommended to use a different subnet for each deployment. The names including **AzureFirewallSubnet**, **AzureFirewallManagementSubnet**, **AzureBastionSubnet**, and **GatewaySubnet** are reserved names within Azure: don't use these as the subnet names.
+    - For **Application subnet** and **Database subnet**, map the IP address ranges as required. It's recommended to use a different subnet for each deployment. The names including **AzureFirewallSubnet**, **AzureFirewallManagementSubnet**, **AzureBastionSubnet**, and **GatewaySubnet** are reserved names within Azure and **shouldn't be used** as the subnet names.
 
 1. Under **Operating systems**, enter the OS details:
 

@@ -37,7 +37,7 @@ To prepare for SAP installation, you can upload the SAP components to your Azure
 
 Before downloading the SAP software, set up an Azure Storage account to store the components.
 
-1. [Create an Azure Storage account through the Azure portal](../../storage/common/storage-account-create.md). Make sure to create the storage account in the same subscription as your SAP system infrastructure.
+1. [Create an Azure Storage account through the Azure portal](/azure/storage/common/storage-account-create?tabs=azure-portal). Make sure to create the storage account in the same subscription as your SAP system infrastructure.
 
 1. Create a container within the Azure Storage account named `sapbits`.
 
@@ -48,15 +48,14 @@ Before downloading the SAP software, set up an Azure Storage account to store th
     1. On the **New container** pane, for **Name**, enter `sapbits`.
 
     1. Select **Create**.
-    
- 1. Grant the **User-assigned managed identity**, which was used during infrastructure deployment, **Storage Blob Data Reader** and **Reader and Data Access** role access on this storage account.
 
+1. Grant the **User-assigned managed identity**, which was used during infrastructure deployment, **Storage Blob Data Reader** and **Reader and Data Access** role access on this storage account.
 
 ### Create virtual machine
 
 Next, set up a virtual machine (VM) where you will download the SAP components later.
 
-1. Create an **Ubuntu 20.04** VM in Azure. For more information, see [how to create a Linux VM in the Azure portal](../../virtual-machines/linux/quick-create-portal.md).
+1. Create an **Ubuntu 20.04** VM in Azure. For more information, see [how to create a Linux VM in the Azure portal](/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntud).
 
 1. Sign in to the VM.
 
@@ -71,7 +70,6 @@ Next, set up a virtual machine (VM) where you will download the SAP components l
     ```azurecli
     az --version
     ```
-
 
 1. Sign in to Azure.
 
@@ -124,9 +122,8 @@ Next, set up a virtual machine (VM) where you will download the SAP components l
     ```git bash
     git checkout main
     ```
-    
-1. Optionally, check that your current branch is `main`.
 
+1. Optionally, check that your current branch is `main`.
 
     ```git bash
     git status
@@ -192,7 +189,7 @@ Next, download the SAP installation media to the VM using a script.
 
 1. Where `orchestration_ansible_user` is the user with **admin** privileges like (e.g. root).
 
-Now you can [install the SAP software](install-software.md) through Azure Center for SAP solutions.
+Now you can [install the SAP software](/azure/sap/center-sap-solutions/install-software) through Azure Center for SAP solutions.
 
 ## Install SAP with Azure Center for SAP solutions
 

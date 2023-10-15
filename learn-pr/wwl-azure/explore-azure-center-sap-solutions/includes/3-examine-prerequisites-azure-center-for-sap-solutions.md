@@ -1,11 +1,10 @@
 Azure Center for SAP solutions (ACSS) is an end-to-end solution that enables you to create and run SAP systems as a unified workload on Azure, but there are prerequisites. To successfully deploy SAP on Azure, ACSS requires prerequisites to be completed.
 
->[!NOTE]
->You will need an Azure [subscription](/azure/cost-management-billing/manage/create-subscription#create-a-subscription) to provision Azure resources with the prerequisites.
+You will need an Azure [subscription](/azure/cost-management-billing/manage/create-subscription#create-a-subscription) to provision Azure resources with the prerequisites.
 
 ## Infrastructure pre-provisioning
 
-The following items are required for a deployment of SAP infrastructure using ACSS:
+The following items are required for a deployment of SAP infrastructure on Azure using ACSS:
 
 - Review the quotas for your Azure subscription. If the quotas are low, you might need to create a support request before creating your infrastructure deployment. Otherwise, you might experience deployment failures or an **Insufficient quota** error.
 - Configure Azure role-based access control (RBAC) role assignments for the Microsoft Entra ID user account used to perform the deployment.
@@ -28,7 +27,7 @@ Grant access to:
 Use one of these options:
 
 - Allow outbound internet connectivity for the VMs.
-- Use a [**Service tags**](azure/virtual-network/service-tags-overview) to allow connectivity.
+- Use a [**Service tags**](/azure/virtual-network/service-tags-overview) to allow connectivity.
 - Use a Service tag with regional scope to allow connectivity to resources in the same region as the VMs.
 - Allowlist the region-specific IP addresses for Azure Storage, Azure Resource Manager and Microsoft Entra ID.
 - Register the **Microsoft.Workloads** Resource Provider in the subscription where you have the SAP system.
@@ -51,4 +50,4 @@ Use one of these options:
 ## Further details
 
 - Review the article [Prepare network for infrastructure deployment](/azure/sap/center-sap-solutions/prepare-network) to complete steps necessary for deploying your SAP system on Azure.
-- Detailed steps are available in [Lab 4b: Implement SAP architecture on Azure VMs running Windows](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/polichtm-acss-lab1/Instructions/AZ-120_Lab03b-SQL_HA_Infrastructure_Deployment.md).
+- Detailed steps are available in AZ-120 GitHub lab Module 4: Design and implement an infrastructure to support SAP workloads on Azure - [Exercise 1: Implement prerequisites for deploying SAP workloads in Azure by using Azure Center for SAP solutions](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/polichtm-acss-lab1/Instructions/AZ-120_Lab04-ACSS_Deployment.md#exercise-1-implement-prerequisites-for-deploying-sap-workloads-in-azure-by-using-azure-center-for-sap-solutions).

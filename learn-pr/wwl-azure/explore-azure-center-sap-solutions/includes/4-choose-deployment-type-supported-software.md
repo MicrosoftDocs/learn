@@ -8,7 +8,13 @@ When you deploy S/4HANA infrastructure with *Azure Center for SAP solutions (ACS
 
 ## Supported software
 
-Azure Center for SAP solutions supports the following SAP software versions: **S/4HANA 1909 SPS 03**, **S/4HANA 2020 SPS 03**, and **S/4HANA 2021 ISS 00**. The following operating system (OS) software versions are compatible with these SAP software versions:
+Azure Center for SAP solutions supports the following SAP software versions:
+
+- **S/4HANA 1909 SPS 03**
+- **S/4HANA 2020 SPS 03**
+- **S/4HANA 2021 ISS 00**
+
+The following operating system (OS) software versions are compatible with these SAP software versions:
 
 :::row:::
   :::column:::
@@ -107,9 +113,11 @@ You can use `latest` if you want to use the latest image and not a specific olde
   
 where, for example:
 
-- **$locName** = "eastus"
-- **$pubName** = "RedHat"
-- **$offerName** = "RHEL-SAP-HA"
-- **$skuName** = "82sapha-gen2"
+```Powershell
+$locName = "eastus"
+$pubName = "RedHat"
+$offerName = "RHEL-SAP-HA"
+$skuName = "82sapha-gen2"
+```
 
 You can start your ACSS-based deployment after you choose a deployment option, SAP software and OS; and have provisioned the necessary infrastructure and prerequisites.
