@@ -34,5 +34,6 @@ modules:
 - learn.wwl.connect-windows-hosts-to-azure-sentinel
 - learn.azure.analyze-data-in-sentinel
 - learn.azure.threat-response-sentinel-playbooks
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs
 trophy:
   uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel.trophy

@@ -25,7 +25,7 @@ If you'd like to use your own encryption keys, ACS supports using the Azure Key 
 
 If your search solution can be accessed externally from the internet or apps, you can reduce the attack surface. Azure Cognitive Search lets you restrict access to the public endpoint for free using a firewall to allow access from specific IP addresses.
 
-:::image type="content" source="../media/inbound-traffic-through-firewalls-azure-cogntive-search.png" alt-text="Diagram showing inbound traffic secured using ExpressRoute through a firewall into Azure Cognitive Search." border="false":::
+:::image type="content" source="../media/inbound-traffic-through-firewalls-azure-cogntive-search-small.png" lightbox="../media/inbound-traffic-through-firewalls-azure-cogntive-search.png"alt-text="Diagram showing inbound traffic secured using ExpressRoute through a firewall into Azure Cognitive Search." border="false":::
 
 If your search service is only going to be used by on-premises resources, you can harden security with an ExpressRoute circuit, Azure Gateway, and an App service. There's also the option to change the public endpoint to use an Azure private link. You'll also need to set up an Azure virtual network and other resources. Using a private endpoint is the most secure solution, although it does come with the added cost of using those services that need to be hosted on the Azure platform.
 
@@ -71,7 +71,7 @@ Typically your outbound traffic indexes source data or enriches it using Artific
 
 If your data sources are hosted on the Azure platform, you can also secure connections using a system or user-assigned managed identity.
 
-:::image type="content" source="../media/secure-outbound-traffic.png" alt-text="Diagram showing Azure Cognitive Search solution accessing data sources through an IP restricted firewall." border="false":::
+:::image type="content" source="../media/secure-outbound-traffic-small.png" lightbox="../media/secure-outbound-traffic.png" alt-text="Diagram showing Azure Cognitive Search solution accessing data sources through an IP restricted firewall." border="false":::
 
 Azure services can restrict access to them using a firewall. Your firewall can be configured to only allow the IP address of your Azure Cognitive Search service. If you're enriching your indexes with AI, you'll also need to allow all the IP addresses in the **AzureCognitiveSearch** service tag.
 
