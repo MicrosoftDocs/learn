@@ -20,7 +20,8 @@ In this task, you disenroll your enrollment group, which removes the enrolled de
 
 If you run the sensor-thl-001 simulated device now, you will see an error message similar to what you saw with the disabled individual enrollment.
 
-> **Note**:  If you delete an enrollment group for a certificate, devices that have the certificate in their certificate chain might still be able to enroll if a different, enabled enrollment group still exists for the root certificate or another intermediate certificate higher up in their certificate chain.
+> [!NOTE]
+> If you delete an enrollment group for a certificate, devices that have the certificate in their certificate chain might still be able to enroll if a different, enabled enrollment group still exists for the root certificate or another intermediate certificate higher up in their certificate chain.
 
 ### Task 2: Deregister the devices from the IoT Hub
 

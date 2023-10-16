@@ -2,7 +2,7 @@ In this exercise, you make copies of your simulated device project, and then upd
 
 ### Task 1: Make copies of your code project
 
-1. In Visual Studio Code or your file explorer, copy the **ContainerDevice.csproj** and **Program.cs** files from 0000-device folder into the 0001-device folder.
+1. In Visual Studio Code or your file explorer, copy the **ContainerDevice.csproj** and **Program.cs** files from sensor-thl-001-device folder into the sensor-thl-002-device folder.
 
 1. In both files, replace the certificate file name to match the certificate file in this folder: **sensor-thl-002-device.cert.pfx**.
 

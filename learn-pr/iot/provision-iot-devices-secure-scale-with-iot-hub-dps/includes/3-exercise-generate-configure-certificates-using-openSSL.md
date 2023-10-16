@@ -1,4 +1,4 @@
-In this exercise, you generate an X.509 CA certificate using OpenSSL within the Azure Cloud Shell then you create an enrollment group in your Device Provisioning Service (DPS) instance for IoT devices to provision using X.509 authentication.
+In this exercise, you generate an X.509 CA certificate using OpenSSL within the Azure Cloud Shell, then you create an enrollment group in your Device Provisioning Service (DPS) instance for IoT devices to provision using X.509 authentication.
 
 This X.509 CA certificate is used to sign the device certificates for each device in this enrollment group. The enrollment group in DPS only needs a copy of this top CA certificate. When a device connects to DPS for provisioning, it presents its certificate chain of authority that shows its device certificate, any intermediate certificates, and the top CA certificate.
 
@@ -38,7 +38,7 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
 
    If you are interested, you can quickly scan the contents of the script file that you downloaded by using the editor that's built in to the Cloud Shell.
 
-   * In the Cloud Shell, to open the editor, select **{}**.
+   * In the Cloud Shell, to open the editor, select **{}** (steve-how?).
    * In the FILES list, select **certificates**, and then select **certGen.sh**.
 
 3. To generate the root and intermediate certificates, enter the following command:

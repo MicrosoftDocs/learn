@@ -43,7 +43,7 @@ In this exercise, you generate a device certificate using the root certificate, 
    ```
 
    > [!NOTE]
-   > Watch for a browser prompt asking you to save the file.
+   > Watch for a browser prompt asking you to save the file. Click on the **Click here to download your file.** message when prompted. The file will be downloaded to your computer's Download folder.
 
 1. To download the second generated X.509 device certificate from the Cloud Shell to your local machine, enter the following command:
 
@@ -52,7 +52,7 @@ In this exercise, you generate a device certificate using the root certificate, 
    ```
 
    > [!NOTE]
-   > Watch for a browser prompt asking you to save the file.
+   > Watch for a browser prompt asking you to save the file. Click on the **Click here to download your file.** message when prompted. The file will be downloaded to your computer's Download folder.
 
 In the next task, you start building the simulated devices that use the X.509 device certificates to authenticate with the Device Provisioning Service.
 
@@ -367,10 +367,10 @@ In this task, you complete the following:
 
 1. Open the **Terminal** menu, then select **New Terminal**.
 
-1. At the Terminal command prompt, build the code to check for any errors.
+1. At the Visual Studio Terminal command prompt, build the code to check for any errors.
 
    ```bash
-   dotnet build
+   dotnet build ContainerDevice.csproj
    ```
 
    If you see any build errors listed, you need to fix them before continuing to the next exercise. Ensure that you updated the code files correctly and that you saved your changes to the .csproj and .cs files.

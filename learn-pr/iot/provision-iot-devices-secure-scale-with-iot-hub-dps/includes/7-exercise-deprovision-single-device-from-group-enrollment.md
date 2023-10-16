@@ -8,7 +8,7 @@ To deprovision a single device from an enrollment group, you must do two things:
 
 * Disable or delete the device from the IoT hub's identity registry.
 
-    [!TIP]
+    > [!TIP]
     > If your solution includes multiple IoT hubs, you should use the list of provisioned devices for the enrollment group to find the IoT hub that the device was provisioned to. This is so that you can disable or delete the device. In this exercise you use a single IoT hub, so you don't need to look up which IoT hub was used.
 
 In this exercise, you deprovision a single device from an enrollment group.

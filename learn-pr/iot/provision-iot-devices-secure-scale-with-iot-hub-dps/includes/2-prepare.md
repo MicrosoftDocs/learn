@@ -14,6 +14,21 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
 
 1. Start by clicking on the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You create additional resources for this project using the following steps. The resource group ID is substituted automatically where it's used within the code steps.
 
+> [!NOTE]
+> If you leave your sandbox session idle for a while, the sandbox session may time out and disconnect and you will need to start again. It is best to complete this module without significant time away from the sandbox.
+
+1. Login to ensure that you the session is connected to your account.
+
+   ```azurecli
+   az login
+   ```
+
+1. Install the Azure IoT extension.
+
+   ```azurecli
+   az extension add --name azure-iot
+   ```
+
 1. Create a variable named **suffix** with a random number that you use for resource names that need to be globally unique.
 
    ```azurecli
@@ -49,10 +64,10 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
 
 1. Once the deployment has completed, open a text editor tool. Use the text editor to store some configuration values associated with your Azure resources. In your text editor, save the following values to use in the next units:
 
-   * Resource group name
-   * IoT Hub connection string
-   * DPS name
-   * DPS scope ID
+   * Resource group name - Listed on this web page.
+   * IoT Hub connection string - Stored in `$hubConnectionString`.
+   * DPS name - The value for `name` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, a value for  `"name"` is `"dps-586732230"`.
+   * DPS scope ID - The value for `idScope` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, the value for `"idScope"` is `"0ne00B3761F"`.
 
 ### Development resources
 
