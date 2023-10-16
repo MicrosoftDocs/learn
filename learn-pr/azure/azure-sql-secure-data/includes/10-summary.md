@@ -31,7 +31,7 @@ Your networking environment and configuration can get complex quickly. You'll wa
 To learn more about authentication, see:  
 
 * [Azure SQL security playbook: Authentication](/azure/sql-database/sql-database-security-best-practice#authentication?azure-portal=true)
-* [Configure Azure Active Directory](/azure/security/fundamentals/database-best-practices#enable-database-authentication?azure-portal=true)  
+* [Configure Microsoft Entra ID](/azure/security/fundamentals/database-best-practices#enable-database-authentication?azure-portal=true)  
 * [Azure role-based access control (RBAC) roles](/azure/role-based-access-control/built-in-roles?azure-portal=true)
 * [Security best practices related to RBAC](/azure/security/fundamentals/database-best-practices#protect-your-data-by-using-encryption-and-row-level-security?azure-portal=true)
 

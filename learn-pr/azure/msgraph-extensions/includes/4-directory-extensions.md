@@ -34,9 +34,11 @@ Directory extension definitions support the `$select` and `$filter` (`eq` operat
 
 Directory extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters and you can also filter by extension attributes that are empty (`null`). In specific usage of `$filter`, you must include the `$count=true` query parameter in the HTTP request and set the *ConsistencyLevel* header to `eventual`.
 
-## Other Azure AD scenarios for the custom data
+<a name='other-azure-ad-scenarios-for-the-custom-data'></a>
 
-Similar to extension attributes in the previous unit, Azure AD also supports the following other use cases for directory extension properties:
+## Other Microsoft Entra ID scenarios for the custom data
+
+Similar to extension attributes in the previous unit, Microsoft Entra ID also supports the following other use cases for directory extension properties:
 
 - Use extensions data as rules for dynamic groups memberships.
 - Use extensions data to customize claims.

@@ -30,7 +30,7 @@ Customer data in an Azure Storage account is [always replicated](/azure/storage/
 
 As described on the [data location page](https://azure.microsoft.com/explore/global-infrastructure/data-residency/), most Azure **regional** services honor the data at rest commitment to make sure that customer data remains within the geographic boundary where the corresponding service is deployed. A handful of exceptions to this rule are noted on the data location page. Customers should review these exceptions to decide if the type of data stored outside their chosen deployment geography meets their needs.
 
-**Non-regional** Azure services don't allow customers to specify the region where the services will be deployed. Some non-regional services don't store customer data at all, but merely provide global routing functions such as Azure Traffic Manager or Azure DNS. Other non-regional services are intended for data caching at edge locations around the globe, such as the Content Delivery Network. Such services are optional, and customers shouldn't use them for sensitive customer content they want to keep in Geo. One non-regional service that deserves more discussion is **Azure Active Directory**, which we discuss in a later section.
+**Non-regional** Azure services don't allow customers to specify the region where the services will be deployed. Some non-regional services don't store customer data at all, but merely provide global routing functions such as Azure Traffic Manager or Azure DNS. Other non-regional services are intended for data caching at edge locations around the globe, such as the Content Delivery Network. Such services are optional, and customers shouldn't use them for sensitive customer content they want to keep in Geo. One non-regional service that deserves more discussion is **Microsoft Entra ID**, which we discuss in a later section.
 
 ## Data in transit
 
@@ -44,17 +44,19 @@ Data in transit applies to the following scenarios involving data moving between
 
 While data in transit between two points within the geography will usually remain in Geo, it's not possible to guarantee this 100% of the time because of the way that networks automatically reroute traffic to avoid congestion or bypass other interruptions. That said, data in transit can be protected through encryption.
 
-## Customer data in Azure Active Directory
+<a name='customer-data-in-azure-active-directory'></a>
 
-Azure Active Directory (Azure AD) is a non-regional service that might store Active Directory (AD) data globally, except for Azure AD deployments in:
+## Customer data in Microsoft Entra ID
+
+Microsoft Entra ID is a non-regional service that might store Active Directory (AD) data globally, except for Microsoft Entra deployments in:
 
 * The United States, where identity data is stored solely in the United States.
-* Europe, where Azure AD keeps most of the identity data within European datacenters except as noted in [Customer data storage and processing for European customers in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-data-storage-eu).
-* Australia and New Zealand, where identity data is stored in Australia except as noted in [Customer Data storage for Australian and New Zealand customers in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-data-storage-australia-newzealand).
+* Europe, where Microsoft Entra ID keeps most of the identity data within European datacenters except as noted in [Customer data storage and processing for European customers in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-data-storage-eu).
+* Australia and New Zealand, where identity data is stored in Australia except as noted in [Customer Data storage for Australian and New Zealand customers in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-data-storage-australia-newzealand).
 
-Azure AD provides a [dashboard](https://go.microsoft.com/fwlink/?linkid=2092972) with clear insight into data location for every Azure AD component service. Among other features, Azure AD is an identity-management service that stores directory data for customer's Azure administrators, including user **personal data** such as names, email addresses, and other personal information.
+Microsoft Entra ID provides a [dashboard](https://go.microsoft.com/fwlink/?linkid=2092972) with clear insight into data location for every Microsoft Entra component service. Among other features, Microsoft Entra ID is an identity-management service that stores directory data for customer's Azure administrators, including user **personal data** such as names, email addresses, and other personal information.
 
-Azure AD implements extensive **data-protection features**, including tenant isolation and access control, data encryption in transit, secrets encryption and management, disk-level encryption, advanced cryptographic algorithms used by various Azure AD components, data operational considerations for insider access, and more. Detailed information is available from the [Active Directory Data Security Considerations](https://aka.ms/AADDataWhitePaper) whitepaper.
+Microsoft Entra ID implements extensive **data-protection features**, including tenant isolation and access control, data encryption in transit, secrets encryption and management, disk-level encryption, advanced cryptographic algorithms used by various Microsoft Entra components, data operational considerations for insider access, and more. Detailed information is available from the [Active Directory Data Security Considerations](https://aka.ms/AADDataWhitePaper) whitepaper.
 
 ## Data residency and compliance
 
