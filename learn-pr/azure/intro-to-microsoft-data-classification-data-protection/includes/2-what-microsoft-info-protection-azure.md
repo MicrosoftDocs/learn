@@ -34,7 +34,7 @@ The Azure Information Protection unified labeling client extends labeling, class
 
 The information protection process works as follows:
 
-1. The process authenticates the user with their Azure Active Directory (Azure AD) or Microsoft 365 organizational account.
+1. The process authenticates the user with their Microsoft Entra ID or Microsoft 365 organizational account.
 1. Upon authentication, the service issues certificates that allow the user to consume protected content and help protect content offline. A stored copy of the user's certificate helps ensure that if the user moves to another device, they can access their protected data.
 1. The information protection client creates a random content key and encrypts the document with it.
 1. The client creates a certificate that includes a policy based on a template or specific document rights. The policy includes rights for users and groups, and restrictions such as read-only or an expiration date. The client uses the organization's key to encrypt the policy and the symmetric content decryption key.
@@ -48,4 +48,3 @@ When a user wants access to a protected document, the client uses the following 
 4. The service extracts the content key from the decrypted policy, and encrypts this key with the user's public RSA key that it got from the request.
 5. The service returns an encrypted user license with the list of user rights to the client.
 6. The client decrypts the encrypted user license by using its own user private key, decrypts the rights list, and passes it to the application.
-

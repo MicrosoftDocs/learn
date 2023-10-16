@@ -18,7 +18,7 @@ Because you operate Microsoft Sentinel from a central location to manage all you
 - Ensure that customer data is stored within their tenant and that it stays within geographical boundaries
 - Improved network latency when performing actions on customer workspaces
 - Related costs are never charged to your tenant, but go directly to the customer for whom you’re providing services
-- Integration with many customer data sources including Microsoft Threat Protection alerts, Azure Active Directory Activity logs, Microsoft 365 logs, and more
+- Integration with many customer data sources including Microsoft Threat Protection alerts, Microsoft Entra Activity logs, Microsoft 365 logs, and more
 - Flexibility to accommodate the addition or removal of new customers, or their subsidiaries
 
 ### Manage Microsoft Sentinel using role-based access control (RBAC)

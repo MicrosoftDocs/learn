@@ -15,7 +15,7 @@ Process is a task that receives, modifies, or redirects input to output.
 |Service isolation|Is the process running in a sandbox?|
 |Input|Can this process accept input from everyone, local accounts, or just administrators?|
 |Validation|How does the process parse, handle and accept input?|
-|Authentication|Does the process rely on Azure Active Directory for authentication? If not, what does it rely on?|
+|Authentication|Does the process rely on Microsoft Entra ID for authentication? If not, what does it rely on?|
 |Authorization|Does it rely on Access Control Lists (ACL) for authorization? If not, what does it rely on?|
 
 #### Woodgrove process elements
