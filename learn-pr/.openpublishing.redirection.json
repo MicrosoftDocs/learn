@@ -1,11 +1,6 @@
 {
     "redirections": [
       {
-        "source_path_from_root": "/learn-pr/achievements/learn-windows.building-connected-windows-apps.badge.yml",
-        "redirect_url": "/training/paths/develop-windows10-apps/",
-        "redirect_document_id": false
-      },
-      {
         "source_path_from_root": "/learn-pr/windows/build-internet-connected-windows10-apps/1-building-app-that-uses-cloud-service.yml",
         "redirect_url": "/training/paths/develop-windows10-apps/",
         "redirect_document_id": false
