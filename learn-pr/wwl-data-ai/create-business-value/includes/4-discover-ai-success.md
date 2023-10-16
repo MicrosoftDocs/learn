@@ -1,4 +1,7 @@
-Now that you've learned about the basics of an AI-centric organization, it's important to understand the current maturity of your organization to determine where to start the transformation. For this purpose, Microsoft has developed a [leader's guide to build a foundation for AI success](https://aka.ms/AI-Success-Whitepaper).
+Now that you've learned about the basics of an AI-centric organization, it's important to understand the current maturity of your organization to determine where to start the transformation.
+
+> [!NOTE] 
+> For this purpose, Microsoft has developed a [leader's guide to build a foundation for AI success](https://aka.ms/AI-Success-Whitepaper).
 
 This whitepaper includes a model of the **stages of AI success**. This five-tiered chart is a tool to help organizations take AI to the next level and evaluates their AI maturity.
 

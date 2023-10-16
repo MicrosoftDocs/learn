@@ -1,15 +1,36 @@
 Here, you'll learn more about how an Azure Digital Twins solution is built. You'll see these concepts applied to the factory module scenario, and understand how an Azure Digital Twins graph might look for that environment.
 
-For a hands-on experience, this unit uses an Azure sandbox. Start by running the following commands in the Cloud Shell to create an Azure Digital Twins instance:
+## Set up hands-on session
 
-> [!IMPORTANT]
-> If you receive an error with *code: LocationNotAvailableForResourceType*, try switching the location to [another available region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/?products=digital-twins).
+For a hands-on experience with Azure Digital Twins, this unit provides Azure CLI commands that you can run with an Azure subscription. If you don't have an Azure subscription already, [create one for free now](https://azure.microsoft.com/free).
+
+In another browser tab, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/).
+
+Run the following commands in the Cloud Shell to set up your session and create a resource group to use for this unit. There is one placeholder for your Azure subscription ID value.
+
+```azurecli
+    az account set --subscription "<your-Azure-subscription-ID>"
+    az group create --name introduction-to-azure-digital-twins --location westcentralus
+```
+
+Next, create an Azure Digital Twins instance. Run the following commands in the Cloud Shell to generate a random name for the instance and then create a new instance with that name.
 
 ```azurecli
     INSTANCE_NAME="Distribution-Center-$RANDOM"
-    echo "Your Azure Digital Twins instance's name is: $INSTANCE_NAME"
+    echo "Your Azure Digital Twins instance name will be: $INSTANCE_NAME"
 
-    az dt create --dt-name $INSTANCE_NAME --resource-group <rgn>[sandbox resource group name]</rgn> --location westcentralus 
+    az dt create --dt-name $INSTANCE_NAME --resource-group introduction-to-azure-digital-twins --location  
+```
+
+Finally, grant yourself the *Azure Digital Twins Data Owner* role on the instance, which is required to edit its data. Insert the username associated with your Azure account into the following command and run it in the Cloud Shell.
+
+>[!IMPORTANT]
+> This command can only be run by someone with subscription-level permission to manage access to Azure resources. For instance, if you've created your own subscription and are the **Owner**, you'll be able to run it. If you only have the **Contributor** role in the subscription, this command will return an error.
+>
+> If you find you're unable to run this command and you want to follow along with the hands-on exercises in this unit, have someone with elevated permissions (such as an Owner, Account Admin, or User Access Administrator + Contributor) run this command on your behalf.
+
+```azurecli
+    az dt role-assignment create --dt-name $INSTANCE_NAME --assignee "<your-Azure-AD-username>" --role "Azure Digital Twins Data Owner"
 ```
 
 ## Define models
@@ -58,7 +79,9 @@ The role of the model is to define the concept of what a robotic arm is, so you'
 
 Model files can be uploaded to the service using the Azure Digital Twins APIs and SDKs, the Azure CLI, or Azure Digital Twins Explorer (a visual developer tool that's accessible from your instance page in the Azure portal).
 
-Run the following commands in the Cloud Shell to upload the *RobotArm* model, and another model for the entire distribution center, as inline JSON to your Azure Digital Twins instance in the sandbox.
+### Hands-on exercise: Create models
+
+Run the following commands in the Cloud Shell to upload the *RobotArm* model, and another model for the entire distribution center, as inline JSON to the Azure Digital Twins instance you created for this unit.
 
 ```azurecli
     az dt model create -n $INSTANCE_NAME --models '{"@id":"dtmi:assetGen:RobotArm;1","@type":"Interface","@context":"dtmi:dtdl:context;2","displayName":"RobotArm","contents":[{"@type":"Property","name":"FailedPickupsLastHr","schema":"integer"},{"@type":"Property","name":"PickupFailedAlert","schema":"boolean"},{"@type":"Property","name":"LastPickupFailedBoxID","schema":"string"},{"@type":"Property","name":"HydraulicPressure","schema":"double"}]}' 
@@ -66,7 +89,7 @@ Run the following commands in the Cloud Shell to upload the *RobotArm* model, an
     az dt model create -n $INSTANCE_NAME --models '{"@id":"dtmi:assetGen:DistributionCenter;1","@type":"Interface","@context":["dtmi:dtdl:context;2"],"displayName":"DistributionCenter","contents":[{"@type":"Property","name":"AvgHydraulicPressure","schema":"double"},{"@type":"Relationship","name":"contains","properties":[{"@type":"Property","name":"targetModel","schema":"string"}],"target":"dtmi:assetGen:RobotArm;1"}]}'
 ```
 
-Then, in the next section, you'll use the robot arm model definition to create multiple robotic arm twin entities to map to the specific, individual robot arms in your environment.
+Later, in the next section, you'll use the robot arm model definition to create multiple robotic arm twin entities to map to the specific, individual robot arms in your environment.
 
 ## Define twins
 
@@ -76,6 +99,8 @@ After creating models to define the types of entity in your environment, you cre
 >From a programming perspective, twins are like instances of the model definitions.
 
 Twins can be created using the Azure Digital Twins APIs and SDKs, the Azure CLI, or Azure Digital Twins Explorer. In the request, you'll provide an ID for the twin (its `$dtID` value) and reference the model it should use. You can also optionally define properties during creation.
+
+### Hands-on exercise: Create twins
 
 Run the following commands in the Cloud Shell to create six robotic arm twins, all based on the *RobotArm* model from the previous section, and one distribution center twin based on the *DistributionCenter* model. These commands will also instantiate the twin properties with default values.
 
@@ -114,6 +139,8 @@ The DTDL model definition for the distribution center included this excerpt, all
     }
 ```
 
+### Hands-on exercise: Create relationships
+
 Run the following command in the Cloud Shell to create six *contains* relationships from the distribution center twin, each targeting one of the existing robot arm twins.
 
 ```azurecli
@@ -129,7 +156,9 @@ Here's a screenshot from Azure Digital Twins Explorer, displaying the graph in 2
 
 :::image type="content" source="../media/2-3-factory-graph.png" alt-text="Screenshot of Azure Digital Twins Explorer showing a 2D graph. In the graph, one distribution center twin is connected to six arm twins via six lines labeled contains." border="false" lightbox="../media/2-3-factory-graph.png":::
 
-You can view your digital twin graph in 2D using Azure Digital Twins Explorer, or in 3D using Azure Digital Twins 3D Scenes Studio. Run the following command in the Cloud Shell to create a direct URL to your Azure Digital Twins instance in Azure Digital Twins Explorer.
+### Hands-on exercise: View the graph
+
+You can open Azure Digital Twins Explorer yourself to view your digital twin graph. Run the following command in the Cloud Shell to create a direct URL to your Azure Digital Twins instance in Azure Digital Twins Explorer.
 
 ```azurecli
     HOSTNAME = az dt show -n $INSTANCE_NAME --query "hostName" --output tsv 
@@ -137,7 +166,9 @@ You can view your digital twin graph in 2D using Azure Digital Twins Explorer, o
     echo "https://explorer.digitaltwins.azure.net/?tid=$TENANT_ID&eid=$HOSTNAME"
 ```
 
-In another browser tab or window, navigate to the URL shown in the output of the last command.
+In another browser tab or window, navigate to the URL shown in the output of the last command. This will open Azure Digital Twins Explorer connected to your instance. Select **Run Query** to run the default query to display all twins and relationships in your graph.
+
+:::image type="content" source="../media/2-run-query.png" alt-text="Screenshot of Azure Digital Twins Explorer highlighting the Run Query button." border="false" lightbox="../media/2-run-query.png":::
 
 ## Set up data flow
 
@@ -145,12 +176,11 @@ Now that you have a static graph representing the entities in your environment a
 
 Azure Digital Twins uses Azure functions to ingest data into a graph from many sources, including event data from IoT Hub devices and business data from across Azure or external applications. In the function body, you define where the function watches for new data and how that data is processed, including how it maps to and updates the right twins in your graph. You can also create Azure functions to propagate data throughout the twin graph, so that when one twin receives an update, other related twins automatically update accordingly.
 
-In the factory example for this module, your Azure function updates the properties of the robot arm twins based on data from their associated devices registered in IoT Hub, and you'll also create a second Azure function that aggregates data from all of the arm twins and updates properties on the main *DistCtr* twin that contains them all.
+In a real factory scenario paralleling the example in this module, you'd create an Azure function to update the properties of the robot arm twins based on data from their associated devices registered in IoT Hub, and you'd also create a second Azure function that aggregates data from all of the arm twins and updates properties on the main *DistCtr* twin that contains them all.
 
-> [!NOTE]
-> A complete simulation of live data flow is outside the scope of this introductory module.
+### Hands-on exercise: Simulate data
 
-You can simulate the results in your Cloud Shell by running the following commands to update the values of the twin properties manually.
+A complete simulation of live data flow is outside the scope of this introductory module. Instead, you can simulate the results in your Cloud Shell by running the following commands to update the values of the twin properties manually.
 
 ```azurecli
     az dt twin update -n $INSTANCE_NAME --twin-id Arm1 --json-patch '[{"op":"replace","path":"/FailedPickupsLastHr","value":1},{"op":"replace","path":"/PickupFailedAlert","value":True},{"op":"add","path":"/LastPickupFailedBoxID","value":"Box507"},{"op":"replace","path":"/HydraulicPressure","value":18.451452874964478}]'
@@ -169,6 +199,8 @@ In the next section, you'll see how to query the graph to gather insights and ex
 ## Query and export data
 
 Now that your graph is complete and property values are updated, you can query your graph using the Azure Digital Twins APIs and SDKs, the Azure CLI, or Azure Digital Twins Explorer. Azure Digital Twins uses a custom **query language** that's similar to SQL, which can retrieve digital twins according to their properties, models, and relationships.
+
+### Hands-on exercise: Run queries
 
 Run the following queries in your Cloud Shell to see information about your environment.
 
@@ -196,8 +228,18 @@ Run the following queries in your Cloud Shell to see information about your envi
     az dt twin query --dt-name $INSTANCE_NAME --query-command 'SELECT * FROM DIGITALTWINS T WHERE T.FailedPickupsLastHr > 5'
     ``
 
+### Apply query results
+
 One way to use the query results in the factory example for this module is to program them into custom applications or dashboards to display to factory operators in near-real time.
 
 You can also query historized twin data collected over time using the **data history** feature, to have a wider pool of environment data and the ability to identify patterns over time. You can set up a data history connection that connects an Azure Digital Twins instance to an Azure Data Explorer cluster, so that graph updates are automatically stored in Azure Data Explorer. From there, you can query the data in Azure Data Explorer, and use the results however you'd like. In the factory example for this module, you'll want to collect this historical data so that whenever a robotic arm fails to pick up a package, you can investigate how frequent that behavior has been over the past day, week, month, etc. This will help you identify if the arm needs to be replaced.
 
 For further data processing or storage, you can create **event routes** that export digital twin data to endpoints in either Azure Event Grid, Azure Event Hubs, or Azure Service Bus. Other applications can watch these endpoints and receive the data there. Endpoints and event routes can be defined using the Azure Digital Twins APIs and SDKs or the Azure CLI. In the request, you'll provide the name of the Azure Digital Twins instance, the name of the Event Grid, Event Hubs, or Service Bus resource, and optional filter conditions to specify which events are routed there. If your company in the factory example is already using any database or external applications for distribution center monitoring, you can use event routes to integrate your Azure Digital Twins data into those solutions.
+
+## Clean up hands-on resources
+
+In your Cloud Shell, run the following command to delete the resources that you created in the hands-on exercises for this unit.
+
+```azurecli
+az group delete --name introduction-to-azure-digital-twins
+```

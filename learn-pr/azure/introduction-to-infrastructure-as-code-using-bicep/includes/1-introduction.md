@@ -1,4 +1,4 @@
-Infrastructure as code, sometimes referred to as _IaC_, is the process of provisioning infrastructure resources similar to how software is deployed. These resources include virtual machines, virtual networks, and web applications. Infrastructure as code can help automate your deployments, increase confidence in your deployments, and increase efficiency and repeatability.
+Infrastructure as code, sometimes referred to as _IaC_, is a way to provision infrastructure resources that's similar to how software is deployed. These resources include virtual machines, virtual networks, and web applications. Infrastructure as code can help automate your deployments, increase confidence in your deployments, and increase efficiency and repeatability.
 
 ## Example scenario
 
