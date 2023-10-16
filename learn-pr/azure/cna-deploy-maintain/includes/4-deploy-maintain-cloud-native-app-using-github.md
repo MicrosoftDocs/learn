@@ -23,7 +23,7 @@ GitHub Actions accommodate such implementations through a number of built-in and
 
 Some of the more commonly-used actions applicable to Azure-based cloud-native application scenarios are:
 
-- azure/login. This action performs a non-interactive sign-in by using Azure AD service principal credentials.
+- azure/login. This action performs a non-interactive sign-in by using Microsoft Entra service principal credentials.
 - azure/arm-deploy. This action deploys an Azure Resource Manager template to a target Azure resource group.
 - azure/k8s-create-secret. This action creates a generic secret or docker-registry secret in a Kubernetes cluster.
 - azure/k8s-bake. This action prepares a Kubernetes manifest file for deployment into a target Kubernetes cluster.
