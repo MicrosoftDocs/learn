@@ -1,6 +1,6 @@
 An SAP Basis Admin wants to view and manage SAP systems using Virtual Instance for SAP (VIS) solutions resources. A developer wants to start and stop SAP systems in Azure Center for SAP solutions (ACSS) to control instances through the VIS resource.
 
->A Supplemental option for this lesson is the interactive guide, [Manage SAP workloads](https://mslearn.cloudguides.com/guides/Azure%20Center%20for%20SAP%20solutions%20-%20Manage%20SAP%20workloads)to simulate the ACSS SAP system registration experience in the U.S. version of the Azure portal (currently English only).
+A supplemental option for this lesson is the interactive guide, [Manage SAP workloads](https://mslearn.cloudguides.com/guides/Azure%20Center%20for%20SAP%20solutions%20-%20Manage%20SAP%20workloads)to simulate the ACSS SAP system registration experience in the U.S. version of the Azure portal (currently English only).
 
 ## Open VIS in the portal
 
@@ -19,7 +19,7 @@ To configure your VIS in the Azure portal:
 
 ## Monitor VIS
 
-To see infrastructure-based metrics for the VIS, [open the VIS in the Azure portal](#open-vis-in-the-portal). On the **Overview** pane, select the **Monitoring** tab. You can see the following metrics:
+To see infrastructure-based metrics for the VIS, open the VIS in the Azure portal. On the **Overview** pane, select the **Monitoring** tab. You can see the following metrics:
 
 - VM utilization by ASCS and Application Server instances. The graph shows CPU usage percentage for all VMs that support the ASCS and Application Server instances.
 - VM utilization by the database instance. The graph shows CPU usage percentage for all VMs that support the database instance.
@@ -27,7 +27,7 @@ To see infrastructure-based metrics for the VIS, [open the VIS in the Azure port
 
 ## View instance properties
 
-1. To view properties for the instances within your VIS, first [open the VIS in the Azure portal](#open-vis-in-the-portal).
+1. To view properties for the instances within your VIS, first open the VIS in the Azure portal.
 1. In the sidebar menu, look under the section **SAP resources**:
 
     - To see properties of ASCS instances, select **Central service instances**.
@@ -63,7 +63,7 @@ To connect to and manage SAP Application, you can use the following credentials:
 
 ## Connect to HANA database
 
-If you've deployed an SAP system using Azure Center for SAP solutions, [find the SAP system's main password and HANA database passwords](#find-sap-and-hana-passwords).
+If you've deployed an SAP system using Azure Center for SAP solutions, find the SAP system's main password and HANA database passwords.
 
 The HANA database username is either `system` or `SYSTEM` for:
 
@@ -75,7 +75,7 @@ The HANA database username is either `system` or `SYSTEM` for:
 
 To retrieve the password:
 
-1. [Open the VIS in the Azure portal](#open-vis-in-the-portal).
+1. Open the VIS in the Azure portal.
 1. On the overview page, select the **Managed resource group**.
 
     :::image type="content" source="../media/select-managed-resource-group.png" lightbox="../media/select-managed-resource-group.png" alt-text="Screenshot of V I S resource in the Azure portal, showing selection of managed resource group on the overview page.":::

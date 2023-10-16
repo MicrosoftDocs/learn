@@ -1,6 +1,6 @@
 Azure Center for SAP solutions (ACSS) creates several required resources during system registration, but for ACSS to fully deploy it also requires an SAP workload in Azure infrastructure and the SAP system prerequisites listed in this article.
 
->A Supplemental option for this lesson is the interactive guide, [Register an existing SAP system](https://mslearn.cloudguides.com/guides/Azure%20Center%20for%20SAP%20solutions%20-%20Register%20an%20existing%20SAP%20system) to simulate the ACSS SAP system registration experience in the U.S. version of the Azure portal (currently English only).
+A supplemental option for this lesson is the interactive guide, [Register an existing SAP system](https://mslearn.cloudguides.com/guides/Azure%20Center%20for%20SAP%20solutions%20-%20Register%20an%20existing%20SAP%20system) to simulate the ACSS SAP system registration experience in the U.S. version of the Azure portal (currently English only).
 
 ## System registration in ACSS
 

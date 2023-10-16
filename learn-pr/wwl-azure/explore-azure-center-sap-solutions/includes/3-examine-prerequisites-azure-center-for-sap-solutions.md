@@ -27,7 +27,7 @@ Grant access to:
 Use one of these options:
 
 - Allow outbound internet connectivity for the VMs.
-- Use a [**Service tags**](/azure/virtual-network/service-tags-overview) to allow connectivity.
+- Use [**Service tags**](/azure/virtual-network/service-tags-overview) to allow connectivity.
 - Use a Service tag with regional scope to allow connectivity to resources in the same region as the VMs.
 - Allowlist the region-specific IP addresses for Azure Storage, Azure Resource Manager and Microsoft Entra ID.
 - Register the **Microsoft.Workloads** Resource Provider in the subscription where you have the SAP system.

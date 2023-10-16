@@ -111,13 +111,13 @@ You can use `latest` if you want to use the latest image and not a specific olde
   Get-AzVMImage -Location $locName -PublisherName $pubName -Offer $offerName -Sku $skuName | Select Version
   ```
   
-where, for example:
+  where, for example:
 
-```Powershell
-$locName = "eastus"
-$pubName = "RedHat"
-$offerName = "RHEL-SAP-HA"
-$skuName = "82sapha-gen2"
-```
+  ```Powershell
+  $locName = "eastus"
+  $pubName = "RedHat"
+  $offerName = "RHEL-SAP-HA"
+  $skuName = "82sapha-gen2"
+  ```
 
 You can start your ACSS-based deployment after you choose a deployment option, SAP software and OS; and have provisioned the necessary infrastructure and prerequisites.
