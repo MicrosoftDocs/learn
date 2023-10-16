@@ -1,20 +1,20 @@
-Users need to authenticate whenever they're accessing protected resources. In our scenario, the bank requires customers to sign in before they can access information. The bank uses Django as its web app development framework. In this unit, you learn how to sign in users to a Django web app that's registered in an Azure Active Directory (Azure AD) tenant.
+Users need to authenticate whenever they're accessing protected resources. In our scenario, the bank requires customers to sign in before they can access information. The bank uses Django as its web app development framework. In this unit, you learn how to sign in users to a Django web app that's registered in a Microsoft Entra tenant.
 
 ## OAuth 2.0 authorization code flow
 
 The OAuth 2.0 authorization code flow includes these steps:
 
-1. When the application needs a user to sign in, or needs an access token to act on the user's behalf, it redirects the user to the Azure AD authorization endpoint for authentication.
-1. After a successful sign-in, Azure AD redirects the user back to a specific URL in the app and includes an authorization code that only Azure AD can read.
-1. The web app takes the authorization code, which is valid for a short time, and includes it in a request to the Azure AD token endpoint.
+1. When the application needs a user to sign in, or needs an access token to act on the user's behalf, it redirects the user to the Microsoft Entra authorization endpoint for authentication.
+1. After a successful sign-in, Microsoft Entra ID redirects the user back to a specific URL in the app and includes an authorization code that only Microsoft Entra ID can read.
+1. The web app takes the authorization code, which is valid for a short time, and includes it in a request to the Microsoft Entra token endpoint.
 
-Azure AD issues your app with an ID token after the user is signed in. The app uses the header and signature of the ID token to verify the authenticity of the token. The payload contains the information about the user that the client requested.
+Microsoft Entra ID issues your app with an ID token after the user is signed in. The app uses the header and signature of the ID token to verify the authenticity of the token. The payload contains the information about the user that the client requested.
 
 ## Sign-in process
 
-The first step of the sign-in process is to send a request to the `/authorize` endpoint on Azure AD. Azure AD presents the user with a sign-in prompt. If the sign-in attempt is successful, the user's browser is redirected back to this app's `/redirect` endpoint. In our case, the redirect endpoint is `/auth/redirect`.
+The first step of the sign-in process is to send a request to the `/authorize` endpoint on Microsoft Entra ID. Microsoft Entra ID presents the user with a sign-in prompt. If the sign-in attempt is successful, the user's browser is redirected back to this app's `/redirect` endpoint. In our case, the redirect endpoint is `/auth/redirect`.
 
-A successful request to this endpoint contains an authorization code. The web app uses this authorization code to acquire an ID token and an access token from Azure AD. The application is responsible for storing these tokens securely.
+A successful request to this endpoint contains an authorization code. The web app uses this authorization code to acquire an ID token and an access token from Microsoft Entra ID. The application is responsible for storing these tokens securely.
 
 ## Sign-in to a Django web app
 

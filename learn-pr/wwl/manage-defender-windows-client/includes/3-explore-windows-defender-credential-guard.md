@@ -14,7 +14,7 @@ Kerberos, NTLM, and Credential Manager isolate secrets by using virtualization-b
 
 For increased security, the isolated LSA process doesn't allow any device drivers and only includes a restricted number of essential operating system binaries necessary for security reasons. Each of these binaries bears a certificate trusted by virtualization-based security, and their signatures undergo validation before file execution in the protected environment.
 
-When Windows Defender Credential Guard is enabled, NTLMv1, MS-CHAPv2, Digest, and CredSSP can't use the signed-in credentials. Thus, single sign-on doesn't work with these protocols. However, applications can prompt for credentials or use credentials stored in the Windows Vault, which aren't protected by Windows Defender Credential Guard with any of these protocols. It's recommended that valuable credentials, such as the sign-in credentials, shouldn't be used with any of these protocols. When domain or Azure AD users require the use of these protocols, provision secondary credentials specifically for these scenarios.
+When Windows Defender Credential Guard is enabled, NTLMv1, MS-CHAPv2, Digest, and CredSSP can't use the signed-in credentials. Thus, single sign-on doesn't work with these protocols. However, applications can prompt for credentials or use credentials stored in the Windows Vault, which aren't protected by Windows Defender Credential Guard with any of these protocols. It's recommended that valuable credentials, such as the sign-in credentials, shouldn't be used with any of these protocols. When domain or Microsoft Entra users require the use of these protocols, provision secondary credentials specifically for these scenarios.
 
 When Windows Defender Credential Guard is enabled, Kerberos doesn't allow unconstrained Kerberos delegation or DES encryption, not only for signed-in credentials, but also prompted or saved credentials.
 
@@ -35,6 +35,6 @@ You can use Group Policy to enable Windows Defender Credential Guard. This adds 
 4.  In the Credential Guard Configuration box, select **Enabled with UEFI lock**, and then select **OK**. If you want to be able to turn off Windows Defender Credential Guard remotely, choose **Enabled without lock**. :::image type="content" source="../media/virtualization-based-security-322010f5.png" alt-text="screenshot of Windows Defender Credential Guard Group Policy setting.":::
     
 
-Besides using Group Policy to enable Credential Guard, administrators can also use Microsoft Intune platform to deploy this feature to client computers enrolled to Azure AD and Intune. Credential Guard is a part of device configuration profile, when using Endpoint protection profile type. It's available only for Windows 10 and later OS platforms.
+Besides using Group Policy to enable Credential Guard, administrators can also use Microsoft Intune platform to deploy this feature to client computers enrolled to Microsoft Entra ID and Intune. Credential Guard is a part of device configuration profile, when using Endpoint protection profile type. It's available only for Windows 10 and later OS platforms.
 
 :::image type="content" source="../media/intune-credential-guard-760949ed.png" alt-text="screenshot of Windows Defender Credential Guard.":::

@@ -144,14 +144,14 @@ Here are some examples.
 
 ## Create roles
 
-Azure AD comes with built-in roles that are likely to cover 99% of what you'll ever want to do. It's preferable to use a built-in role if possible. However, you can create custom roles if you find it necessary.
+Microsoft Entra ID comes with built-in roles that are likely to cover 99% of what you'll ever want to do. It's preferable to use a built-in role if possible. However, you can create custom roles if you find it necessary.
 
 > [!NOTE]
-> Custom role creation requires Azure AD Premium P1 or P2, and cannot be done in the free tier.
+> Custom role creation requires Microsoft Entra ID P1 or P2, and cannot be done in the free tier.
 
 You can create a new role through several mechanisms:
 
-* **Azure portal**: You can use the Azure portal to create a custom role by selecting **Azure Active Directory > Roles and administrators > New custom role**.
+* **Azure portal**: You can use the Azure portal to create a custom role by selecting **Microsoft Entra ID** > **Roles and administrators** > **New custom role**.
 
 * **Azure PowerShell**: You can use the `New-AzRoleDefinition` cmdlet to define a new role.
 
