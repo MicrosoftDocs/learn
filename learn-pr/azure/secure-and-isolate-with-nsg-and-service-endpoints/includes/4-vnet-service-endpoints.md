@@ -21,7 +21,7 @@ Azure service endpoints are available for many services, such as:
 - Azure Service Bus
 - Azure Data Lake
 
-For a service like SQL Database, which can't be accessed until you add IP addresses to its firewall, service endpoints should still be considered. Using a service endpoint for SQL Database restricts access to specific virtual networks, providing greater isolation and reducing the attack surface.
+For a service like SQL Database, which you can't access until you add IP addresses to its firewall, you should still consider service endpoints. Using a service endpoint for SQL Database restricts access to specific virtual networks, providing greater isolation and reducing the attack surface.
 
 ## How service endpoints work
 
@@ -30,9 +30,9 @@ To enable a service endpoint, you must:
 1. Turn off public access to the service.
 1. Add the service endpoint to a virtual network.
 
-When you enable a service endpoint, you restrict the flow of traffic, and enable your Azure VMs to access the service directly from your private address space. Devices cannot access the service from a public network. On a deployed VM vNIC, if you look at **Effective routes**, you'll notice the service endpoint as the **Next Hop Type**.
+When you enable a service endpoint, you restrict the flow of traffic and enable your Azure VMs to access the service directly from your private address space. Devices cannot access the service from a public network. On a deployed VM vNIC, if you look at **Effective routes**, you'll notice the service endpoint as the **Next Hop Type**.
 
-This is an example route table, before enabling a service endpoint:
+This is an example route table before enabling a service endpoint:
 
 | SOURCE  | STATE   | ADDRESS PREFIXES | NEXT HOP TYPE |
 |---------|---------|------------------|---------------|
@@ -54,12 +54,12 @@ And here's an example route table after you've added two service endpoints to th
 | Default | Active | 20.38.106.0/23, 10 more  | VirtualNetworkServiceEndpoint |
 | Default | Active | 20.150.2.0/23, 9 more    | VirtualNetworkServiceEndpoint |
 
-All traffic for the service now is routed to the **VirtualNetworkServiceEndpoint**, and remains internal to Azure.
+All traffic for the service now is routed to the **VirtualNetworkServiceEndpoint** and remains internal to Azure.
 
 ## Service endpoints and hybrid networks
 
 Service resources that you've secured by using virtual network service endpoints are not, by default, accessible from on-premises networks. To access resources from an on-premises network, use NAT IPs. If you use ExpressRoute for connectivity from on-premises to Azure, you have to identify the NAT IP addresses ExpressRoute uses. By default, each circuit uses two NAT IP addresses to connect to the Azure backbone network. You then need to add these IP addresses into the Azure service resource's IP firewall configuration (for example, Azure Storage).
 
-The following diagram shows how you can use a service endpoint and firewall configuration to enable on-premises devices to access Azure Storage resources.
+The following diagram shows how you can use a service endpoint and firewall configuration to enable on-premises devices to access Azure Storage resources:
 
 :::image type="content" source="../media/4-service-endpoint-flow.svg" alt-text="Diagram of a service endpoint for on-premises access to Azure resources.":::
