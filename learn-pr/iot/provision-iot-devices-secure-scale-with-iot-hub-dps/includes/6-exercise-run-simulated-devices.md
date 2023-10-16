@@ -1,4 +1,4 @@
-In this exercise, you run the simulated device. When the device is started for the first time, it connects to the Device Provisioning Service (DPS) which automatically enrolls it using the configured group enrollment. Once the device is enrolled into the DPS group enrollment, the device is registered automatically in the Azure IoT Hub device registry. Once enrolled and registered, the device can begin communicating with Azure IoT Hub securely using the configured X.509 certificate authentication.
+In this exercise, you run the simulated device. When the device is started for the first time, it connects to the Device Provisioning Service (DPS) which automatically enrolls it using the configured group enrollment. Once the device is enrolled into the DPS group enrollment, the device is registered automatically in the Azure IoT Hub device registry. Once the device is enrolled and registered, the device can begin communicating with Azure IoT Hub securely using the configured X.509 certificate authentication.
 
 ### Task 1: Build and run the simulated device projects
 

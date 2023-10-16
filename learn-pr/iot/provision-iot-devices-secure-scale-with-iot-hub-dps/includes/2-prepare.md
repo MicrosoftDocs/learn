@@ -1,4 +1,4 @@
-To prepare for the exercises, you're going through the steps required to create a resource group, IoT hub, and Device Provisioning Service (DPS). Then you'll link the IoT hub to the DPS instance. Next, you save resource group, IoT hub, and DPS instance identifiers for use in the exercises.
+To prepare for the exercises, you're going through the steps required to create a resource group, IoT hub, and Device Provisioning Service (DPS). Then you link the IoT hub to the DPS instance. Next, you save resource group, IoT hub, and DPS instance identifiers for use in the exercises.
 
 ## Setup
 
@@ -12,12 +12,12 @@ As part of this module, the following resources are created:
 
 To complete this guided project, you need an IoT hub and a Device Provisioning Service (DPS) instance that are linked to each other. Creating these service instances can take several minutes.
 
-1. Start by clicking on the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You create additional resources for this project using the following steps. The resource group ID is substituted automatically where it's used within the code steps.
+1. Start by clicking on the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You create more resources for this project using the following steps. The resource group ID is substituted automatically where it's used within the code steps.
 
 > [!NOTE]
-> If you leave your sandbox session idle for a while, the sandbox session may time out and disconnect and you will need to start again. It is best to complete this module without significant time away from the sandbox.
+> The integrated Azure Cloud Shell will time out after 20 minutes. The sandbox will still be available and the Cloud Shell can be reactivated, but command-line and environment variables used will be lost. After timeout, you will need to start the module again from the beginning to recreate the variables. Therefore, do not take a break for more than 20 minutes during this lab to avoid a Cloud Shell timeout.
 
-1. Login to ensure that you the session is connected to your account.
+1. Log in to ensure that you the session is connected to your account.
 
    ```azurecli
    az login
@@ -59,7 +59,7 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
 1. Add your IoT hub as a linked hub to your DPS instance. Linking an IoT hub means that the DPS instance can provision devices to that IoT hub.
 
    ```azurecli
-   az iot dps linked-hub create --dps-name dps-$suffix --resource-group <rgn>[sandbox resource group name]</rgn> --connection-string $hubConnectionString --location westus
+   az iot dps linked-hub create --dps-name dps-$suffix --resource-group <rgn>[sandbox resource group name]</rgn> --connection-string $hubConnectionString
    ```
 
 1. Once the deployment has completed, open a text editor tool. Use the text editor to store some configuration values associated with your Azure resources. In your text editor, save the following values to use in the next units:

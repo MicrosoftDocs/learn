@@ -43,7 +43,7 @@ In this exercise, you generate a device certificate using the root certificate, 
    ```
 
    > [!NOTE]
-   > Watch for a browser prompt asking you to save the file. Click on the **Click here to download your file.** message when prompted. The file will be downloaded to your computer's Download folder.
+   > Watch for a browser prompt asking you to save the file. Click the **Click here to download your file.** message when prompted. The file will be downloaded to your computer's Download folder.
 
 1. To download the second generated X.509 device certificate from the Cloud Shell to your local machine, enter the following command:
 
@@ -52,7 +52,7 @@ In this exercise, you generate a device certificate using the root certificate, 
    ```
 
    > [!NOTE]
-   > Watch for a browser prompt asking you to save the file. Click on the **Click here to download your file.** message when prompted. The file will be downloaded to your computer's Download folder.
+   > Watch for a browser prompt asking you to save the file. Click the **Click here to download your file.** message when prompted. The file will be downloaded to your computer's Download folder.
 
 In the next task, you start building the simulated devices that use the X.509 device certificates to authenticate with the Device Provisioning Service.
 
