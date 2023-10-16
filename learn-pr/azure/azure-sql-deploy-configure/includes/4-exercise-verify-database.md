@@ -50,7 +50,7 @@ Now that you're connected, you might want an easy way to access scripts and Jupy
 
 1. Next, select the **Explorer** icon from the left taskbar to browse through the files in the module. This folder contains all of the necessary resources for the learning path about Azure SQL fundamentals, so you only need to download and configure this information once!
 
-    Throughout the module and learning path exercises, you're instructed at various points to open a *notebook* file that ends in *.ipynb*. You can access the notebook from here directly. Alternatively, you can access it from the **Notebook** icon tab.  
+    Throughout the module and learning path exercises, you're instructed at various points to open a *notebook* file that has the following file name extension: *.ipynb*. You can access the notebook from here directly. Alternatively, you can access it from the **Notebook** icon tab.  
 
 ## Verify deployment
 
