@@ -2,7 +2,7 @@ Let's start with a few definitions and a quick tour through Azure Kubernetes Ser
 
 ## What is a container?
 
-A *container* is an atomic unit of software that packages up code, dependencies, and configuration for a specific application. Containers allow us to split up monolithic applications into individual services that make up the solution. This rearchitecting of our application enables us to deploy these separate services via containers.
+A *container* is an atomic unit of software that packages up code, dependencies, and configuration for a specific application. Containers allow you to split up monolithic applications into individual services that make up the solution. This rearchitecting of our application enables us to deploy these separate services via containers.
 
 ![An image of a server or application replicated as containers for cloud deployment.](../media/2-container.png)
 
@@ -20,17 +20,17 @@ You realize that to meet customer demand you have to scale out your solution.
 
 ### Virtual Machines (VM)
 
-One option is to deploy a new virtual machine (VM) for every application, hosted across multiple regions. Then, copy the applications to your new VMs. However, doing so makes you responsible for the management of each VM that you use. This has maintenance overhead increase as you scale.
+One option is to deploy a new virtual machine for every application, hosted across multiple regions. Then, copy the applications to your new VMs. However, doing so makes you responsible for the management of each VM that you use. 
 
-VM operating system (OS) versions and dependencies for each application need to be provisioned and configured to match. When you apply upgrades for your applications that affect the OS and major changes, if there are errors, the rollback of the installation causes disruption to your application, such as downtime or delays.
+The maintenance overhead increases as you scale. VM operating system (OS) versions and dependencies for each application need to be provisioned and configured to match. When you apply upgrades for your applications that affect the OS and major changes there are precautions. If any errors appear during the upgrade, the rollback of the installation is required and causes disruption, such as downtime or delays.
 
-![An image of replicated servers as VMs in the cloud and how this problem raises migration questions and problems.](../media/2-deploy-mutile-instances.png)
+![An image of replicated servers as VMs in the cloud and how the problem raises migration questions and problems.](../media/2-deploy-mutile-instances.png)
 
 The deployment in the previous diagram is cumbersome, sometimes error-prone, and doesn't easily scale single services. For example, you might find you can't easily scale only the caching service used in the web application. Containers help solve these types of problems.
 
 The container concept gives us three major benefits:
 
-1. **Immutable** - The unchanging nature of a container allows it to be deployed and run reliably with the same behavior from one compute environment to another. A container image tested in a QA environment is the same container image deployed to production.
+1. **Immutability** - The unchanging nature of a container allows it to be deployed and run reliably with the same behavior from one compute environment to another. A container image tested in a QA environment is the same container image deployed to production.
 
 1. **Smaller Size** - A container is similar to a VM, but without the kernel for each machine. Instead, they share a host kernel. VMs use a large image file to store both the OS and the application you want to run. In contrast, a container doesn't need an OS, only the application.
 
@@ -74,7 +74,7 @@ However, this view might be slightly misleading as there are a few aspects to ke
 
 - Kubernetes doesn't provide middleware, data-processing frameworks, databases, caches, nor cluster storage systems. All these items are run as containers or as part of another service offering.
 
-- A Kubernetes deployment is configured as a cluster. A cluster consists of at least one primary machine and one or more worker machines. For production deployments, the preferred configuration is a high availability deployment with three to five replicated main machines. These worker machines are also called nodes or agent nodes.
+- A Kubernetes deployment is configured as a cluster. A cluster consists of at least one primary machine or control plane,  and one or more worker machines. For production deployments, the preferred configuration is a high availability deployment with three to five replicated control plane machines. These worker machines are also called nodes or agent nodes.
 
 With all the benefits you receive with Kubernetes, you're responsible for finding the best solution that fits your needs to address these aspects. Keep in mind that you're responsible for maintaining your Kubernetes cluster. For example, you need to manage OS upgrades and the Kubernetes installation and upgrades. You also manage the hardware configuration of the host machines, such as networking, memory, and storage.
 
@@ -85,7 +85,7 @@ With all the benefits you receive with Kubernetes, you're responsible for findin
 
 ![Image of replicated servers as multiple containers in an AKS Kubernetes cluster.](../media/2-deploy-AKS.png)
 
-AKS manages your hosted Kubernetes environment and makes it simple to deploy and manage containerized applications in Azure. Your AKS environment is enabled with features such as automated updates, self-healing, and easy scaling. Azure manages the master machine in the Kubernetes cluster for free. You manage the agent nodes in the cluster and only pay for the VMs on which your nodes run.
+AKS manages your hosted Kubernetes environment and makes it simple to deploy and manage containerized applications in Azure. Your AKS environment is enabled with features such as automated updates, self-healing, and easy scaling. Azure manages the control plane of your Kubernetes cluster for free. You manage the agent nodes in the cluster and only pay for the VMs on which your nodes run.
 
 You either create your cluster in the Azure portal or use the Azure CLI to use AKS. When you create the cluster, there are Resource Manager templates to automate cluster creation. With these templates, you have access to features such as advanced networking options, Microsoft Entra Identity, and resource monitoring. Then, you can set up triggers and events to automate the cluster deployment for multiple scenarios.
 

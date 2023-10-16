@@ -8,13 +8,13 @@ You have two options when you create an AKS cluster. You either use the Azure po
 
 - The Kubernetes cluster name.
 - The version of Kubernetes to install.
-- A DNS prefix to make the master node publicly accessible.
+- A DNS prefix to make the control plane node publicly accessible.
 - The initial node pool size.
 
 The initial node pool size defaults to two nodes, however it's recommended that at least three nodes are used for a production environment.
 
 > [!NOTE]
-> The master node in your cluster is free. You only pay for node VMs, storage and networking resources consumed in your cluster.
+> The control plane node in your cluster is free. You only pay for node VMs, storage and networking resources consumed in your cluster.
 
 Unless specified, the Azure service creation workflow creates a Kubernetes cluster using default configuration for scaling, authentication, networking and monitoring. Creating an AKS cluster typically takes a few minutes. Once complete, you can change any of the default AKS cluster properties. Access and management of your cluster is done through the Azure portal or from the command line.
 
