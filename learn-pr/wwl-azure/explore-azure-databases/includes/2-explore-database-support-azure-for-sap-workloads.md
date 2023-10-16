@@ -27,7 +27,7 @@ As per [SAP Note \#1928533](https://aka.ms/az-120-sapnote-1928533), the followin
 - SAP liveCache as part of SAP SCM 7.0 EhP4 (or higher):
 
   - Minimal version for SAP liveCache: SAP LC/LCAPPS 10.0 SP 34 including liveCache 7.9.09.05 and LCA-Build 34, released for EhP 4 for SAP SCM 7.0 and higher.
-  - SAP liveCache: The minimum requirement is SAP liveCache 10.0 SP 34 (i.e. Build 100.34) or higher. We strongly recommend using the latest SAP liveCache version compliant to the corresponding SAP SCM 7.0 EHP (see [SAP Note \#2074842](https://launchpad.support.sap.com/#/notes/2074842)).
+  - SAP liveCache: The minimum requirement is SAP liveCache 10.0 SP 33 (i.e. Build 100.33) or higher. We strongly recommend using the latest SAP liveCache version compliant to the corresponding SAP SCM 7.0 EHP (see [SAP Note \#2074842](https://launchpad.support.sap.com/#/notes/2074842)).
   - SAP liveCache based on SAP MaxDB technology must run on an Azure VM solely dedicated to SAP liveCache (that is, without any other application software running on this VM).
 
 ## Oracle Linux

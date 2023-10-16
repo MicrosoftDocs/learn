@@ -13,7 +13,7 @@ Data in a new storage account is encrypted with Microsoft-managed keys by defaul
 Customers who require high levels of assurance that their data is secure can also enable 256-bit AES encryption at the Azure Storage infrastructure level. When infrastructure encryption is enabled, data in a storage account is encrypted twice—once at the service level and once at the infrastructure level—with two different encryption algorithms and two different keys. Double encryption of Azure Storage data protects against a scenario where one of the encryption algorithms or keys may be compromised. In this scenario, the additional layer of encryption continues to protect your data.
 
 > [!NOTE]
-> It is not generally recommended to combine both Azure Disk Encryption with DBMS encryption, as this may impact performance.
+> It isn't generally recommended to combine both Azure Disk Encryption with DBMS encryption, as this may impact performance.
 
-- Availability Zones introduce increased latency between SAP and DB servers. It is usually negligible, but it will show up in performance numbers. This is the tradeoff for the extra 0.04% uptime. Also, be aware that Availability Zones incur an extra charge for cross-zone network traffic.
+- Availability Zones introduce increased latency between SAP and DB servers. It's usually negligible, but it will show up in performance numbers. This is the tradeoff for the extra 0.04% uptime. Also, be aware that Availability Zones incur an extra charge for cross-zone network traffic.
 - Do not use the HANA data-at-rest encryption with Azure Disk Encryption on the same server. For HANA, use only HANA data encryption.
