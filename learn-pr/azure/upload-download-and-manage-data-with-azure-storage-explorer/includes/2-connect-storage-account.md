@@ -64,7 +64,7 @@ The management role grants access to view lists of your various storage accounts
 
 There are many ways to connect an Azure Storage Explorer instance to your Azure resources. For example:
 
-- Add resources by using Azure Active Directory (Azure AD)
+- Add resources by using Microsoft Entra ID
 - Use a connection string
 - Use a shared access signature URI
 - Use a name and key
@@ -73,16 +73,18 @@ There are many ways to connect an Azure Storage Explorer instance to your Azure 
 
 We'll explore a few of these connection types, and provide an overview of the required steps to set up the connection.
 
-### Add an Azure account by using Azure AD
+<a name='add-an-azure-account-by-using-azure-ad'></a>
 
-Use this connection type when the user can access the data layer. You can use it only to create an Azure Data Lake blob container or a standard blob container. Connecting to Azure Storage through Azure AD requires more configuration than the other methods. The account that you use to connect to Azure must have the correct permissions and authorization to access the target resources.
+### Add an Azure account by using Microsoft Entra ID
 
-To add a resource by using Azure AD:
+Use this connection type when the user can access the data layer. You can use it only to create an Azure Data Lake blob container or a standard blob container. Connecting to Azure Storage through Microsoft Entra ID requires more configuration than the other methods. The account that you use to connect to Azure must have the correct permissions and authorization to access the target resources.
+
+To add a resource by using Microsoft Entra ID:
 
 1. Open Storage Explorer.
 1. Select the **Sign in with Azure** option and sign in to Azure.
 1. Connect to your Azure storage account.
-1. Select **Add a resource via Azure AD**, and then choose the Azure tenant and the associated account.
+1. Select **Add a resource via Microsoft Entra ID**, and then choose the Azure tenant and the associated account.
 1. When you're prompted, provide the type of resource that you're connecting to.
 1. Review and verify the connection details, and then select **Connect**.
 

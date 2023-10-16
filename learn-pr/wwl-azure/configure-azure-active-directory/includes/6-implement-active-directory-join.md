@@ -12,7 +12,6 @@ Let's look at some of the benefits of using joined devices:
 | --- | --- |
 | **Single-Sign-On (SSO)** | Joined devices offer SSO access to your Azure-managed SaaS apps and services. Your users won't have extra authentication prompts when they access work resources. The SSO functionality is available even when users aren't connected to the domain network. |
 | **Enterprise state roaming** | Starting in Windows 10, your users can securely synchronize their user settings and app settings data to joined devices. Enterprise state roaming reduces the time to configure a new device. |
-| **Access to Microsoft Store for Business** | When your users access Microsoft Store for Business by using an Azure AD account, they can choose from an inventory of applications pre-selected by your organization. |
 | **Windows Hello** | Provide your users with secure and convenient access to work resources from joined devices. |
 | **Restriction of access** | Restrict user access to apps from only joined devices that meet your compliance policies. |
 | **Seamless access to on-premises resources** | Joined devices have seamless access to on-premises resources, when the device has line of sight to the on-premises domain controller. |
