@@ -29,9 +29,9 @@ The **Managed Network fabric** resource models the Physical Network fabric with 
 
 The Network Fabric Controller (NFC) performs the configuration, bootstrapping and management required to bring-up the Network fabric and all resources required to enable networks for tenant workloads.
 
-The **Nexus Azure Kubernetes Service (NAKS)** brings Azure managed Kubernetes services to on-premises environments. It provides users the ability to create Kubernetes clusters and lifecycle them through an API. NAKS integrates with Operator Nexus networking that supports SRIOV and DPDK. It also integrates with Operator Nexus storage backends such as Pure. These NAKS subclusters are used to deploy CNF workloads.
+The **Nexus Kubernetes Service (NKS)** brings Azure-managed Kubernetes services to on-premises environments. It provides users the ability to create Kubernetes clusters and lifecycle them through an API. NKS integrates with Operator Nexus networking that supports SRIOV and DPDK. It also integrates with Operator Nexus storage backends such as Pure. These NAKS subclusters are used to deploy CNF workloads.
 
-**Network Resources**: The network resources tie together the x86 VF features and the fabric network that was deployed by Network fabric Automation. They are the resources that are leveraged by the NAKS workloads and Operator Nexus VMs to represent network attachments.  Their provisioning states represent whether we've completed all Undercloud setup required for these networks to be usable by both NAKS and VM attachments. (for example, [NetworkAttachmentDefinitions] created).
+**Network Resources**: The network resources tie together the x86 VF features and the fabric network that was deployed by Nexus Network Fabric. They are the resources that are leveraged by the NKS workloads and Operator Nexus VMs to represent network attachments.  Their provisioning states represent whether we've completed all Undercloud setup required for these networks to be usable by both NAKS and VM attachments. (for example, [NetworkAttachmentDefinitions] created).
 
 Networks have a many-to-one relationship with the [NetworkFabric RoutingDomain]. There are five network resource types represented in Operator Nexus.
 
@@ -39,13 +39,11 @@ Networks have a many-to-one relationship with the [NetworkFabric RoutingDomain].
   - A Cloud Services Network is created by a Tenant user to house additional egress information that will be used by associated Virtual Machines or NAKS instances. Upon creation, the additional services that are provided by the platform will be allocated and represented in the status of this resource.
   - The Cloud Services Network will always assume a /16 Prefix: 169.0.0.0/16.
   - At least one cloud services network must be created but may be reused across many Virtual Machines and/or NAKS instances.
-- **Default CNI Network Resource**
-  - This resource encapsulates the customer managed portions of the Default Container Networking Interface (Pod) Network that is created for NAKS instances.
 - **Layer-2 Network Resource**
   - A Layer-2 Network represents a network that utilizes a single isolation-domain, and only sets up Layer-2 resources (for example, no IPAM support). An example might be a L2 isolation-domain to support East-West traffic to and from a UPF proxy.
 - **Layer-3 Network Resource**
   - A Layer-3 Network represents the L3 isolation-domain that is leveraged by NAKS workloads and Operator Nexus VMs to represent network attachments. Examples might include having an L3 isolation-domain to support North-South traffic for external connectivity.
 - **Trunked Network Resource**
-  - A Trunked Network represents a trunking of VLANs across multiple L3IsolationDomain and L2IsolationDomains and doesn't support IPAM.
+  - A Trunked Network represents trunking of VLANs across multiple L3IsolationDomain and L2IsolationDomains and doesn't support IPAM.
 
-Azure Resource providers list: [Resource providers by Azure services - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers)
+Azure Resource providers list: [Resource providers by Azure services - Azure Resource Manager](/azure/azure-resource-manager/management/azure-services-resource-providers)

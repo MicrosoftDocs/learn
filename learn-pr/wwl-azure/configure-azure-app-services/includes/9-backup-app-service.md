@@ -4,7 +4,7 @@ Watch the following video on how to configure a backup for your App Service inst
 
 #### <!-- Video -->
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/uQXDkW1pCzs" title="How to configure a backup for your Azure App Service app | Azure Tips and Tricks" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/uQXDkW1pCzs]
 
 ### Things to know about Backup and Restore
 

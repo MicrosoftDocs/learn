@@ -4,7 +4,7 @@ title: Design and implement Azure load balancer using the Azure portal
 metadata:
   title: Design and implement Azure load balancer using the Azure portal
   description: "Design and implement Azure load balancer using the Azure portal"
-  ms.date: 07/12/2023
+  ms.date: 08/21/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ quiz:
       explanation: "Correct, Standard SKU supports outbound rules through declarative outbound NAT configuration."
     - content: "Basic"
       isCorrect: false
-      explanation: "Incorrect, Basic SKU does not support outbound rules."
+      explanation: "Incorrect, Basic SKU doesn't support outbound rules."
     - content: "Either Standard or Basic"
       isCorrect: false
-      explanation: "Incorrect, Basic SKU does not support outbound rules."
+      explanation: "Incorrect, Basic SKU doesn't support outbound rules."

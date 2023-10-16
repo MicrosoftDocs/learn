@@ -24,10 +24,13 @@ Intune supports devices running the following operating systems through device e
  -  Windows 10/11 Cloud PCs on Windows 365
  -  Windows 10 IoT and Windows 10 Holographic
  -  Windows 10 2019 LTSC
- -  Windows RT 8.1, and Windows 8.1 (sustaining mode)
- -  Apple iOS/iPadOS 13.0 and later
- -  macOS X 10.15 and later
- -  Android 6.0 and later, including Samsung Knox 2.4 and later and Android for Work
+ -  Surface Hub
+ -  Windows 10 Teams (Surface Hub)
+ -  Apple iOS/iPadOS 14.0 and later
+ -  macOS 11.0 and later
+ -  Android 8.0 and later, including Samsung KNOX Standard 3.0 and higher
+ -  Linux Ubuntu Desktop (20.04 or 22.04 LTS on x86/64)
+ -  Chrome OS
 
 > [!NOTE]
 > Intune offered a software client for legacy operating systems. This is not needed on current supported operating systems.
@@ -42,7 +45,7 @@ By default, all users who are assigned an Intune license are allowed to enroll t
     
      -  Minimum version
      -  Maximum version
- -  Restrict enrollment of personally owned devices. You can configure this restriction for iOS, Android, Android work profile, and macOS devices only; this restriction isn't available for Windows devices.
+ -  Restrict enrollment of personally owned devices. You can configure this restriction for iOS, Android, Android work profile, macOS, and personally owned devices for Windows 10/11.
 
 :::image type="content" source="../media/configure-platform-326ebf7a.png" alt-text="Screenshot of the Configure platforms screen.":::
 

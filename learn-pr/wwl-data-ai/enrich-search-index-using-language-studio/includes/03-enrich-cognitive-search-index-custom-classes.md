@@ -1,3 +1,4 @@
+
 Custom text classification allows you to map a passage of text to different user defined classes. For example, you could train a model on the synopsis on the back cover of books to automatically identify a books genre. You then use that identified genre to enrich your online shop search engine with a genre facet.
 
 :::image type="content" source="../media/flow-diagram.png" alt-text="A diagram showing the steps needed to enrich a search index." border="false":::
@@ -8,12 +9,12 @@ Here, you'll see what you need to consider to enrich a search index using a cust
 - Create a custom text classification project
 - Train and test your model
 - Create a search index based on your stored documents
-- Create a function app that will use your deployed trained model
+- Create a function app that uses your deployed trained model
 - Update your search solution, your index, indexer, and custom skillset
 
 ### Store your data
 
-Azure Blob storage can be accessed from both Language Studio and Cognitive Services. The container needs to be accessible, so the simplest option is to choose Container, but it's also possible to use private containers with some additional configuration.
+Azure Blob storage can be accessed from both Language Studio and Azure AI Services. The container needs to be accessible, so the simplest option is to choose Container, but it's also possible to use private containers with some additional configuration.
 
 Along with your data, you also need a way to assign classifications for each document. Language Studio provides a graphical tool that you can use to classify each document one at a time manually.
 
@@ -76,13 +77,13 @@ As you were going to create a custom text classification, select that custom fea
 Once the resource has been deployed, you can navigate directly to the Language Studio from the overview pane of the language service. You can then create a new custom text classification project.
 
 > [!NOTE]
-> If you have created your language service from Language Studio you might need to follow these steps, [Set roles for your Azure Language resource and storage account](/azure/cognitive-services/language-service/custom-text-classification/how-to/create-project?tabs=azure-portal%2Cstudio%2Cmulti-classification%2Csingle-classification#set-roles-for-your-azure-language-resource-and-storage-account), to connect your storage container to your custom text classification project.
+> If you have created your language service from Language Studio you might need to follow these steps, [Set roles for your Azure Language resource and storage account](/azure/ai-services/language-service/custom-text-classification/how-to/create-project?tabs=azure-portal%2Cstudio%2Csingle-classification#set-roles-for-your-azure-language-resource-and-storage-account), to connect your storage container to your custom text classification project.
 
 ### Train your classification model
 
 As with all AI models, you need to have identified data that you can use to train it. The model needs to see examples of how to map data to a class and have some examples it can use to test the model. You can choose to let the model automatically split your training data, be default it will use 80% of the documents to train the model and 20% to blind test it. If you have some specific documents that you want to test your model with, you can label documents for testing.
 
-:::image type="content" source="../media/assign-document-testing.png" alt-text="A screenshot of Language Studio showing selecting a document to add to the test set.":::
+:::image type="content" source="../media/assign-document-testing-small.png" lightbox="../media/assign-document-testing.png"alt-text="A screenshot of Language Studio showing selecting a document to add to the test set.":::
 
 In Language Studio, in your project, select Data labeling. You'll see all your documents. Select each document you'd like to add to the testing set, then select **Testing the model's performance.** Save your updated labels and then create a new training job.
 
@@ -183,11 +184,11 @@ There are five things the function app needs to know:
 
 The first is passed from your custom skillset in cognitive search to the function as input. The remaining four can be found in Language Studio.
 
-:::image type="content" source="../media/copy-prediction-endpoint.png" alt-text="A screenshot showing where to copy the prediction endpoint from." lightbox="../media/copy-prediction-endpoint.png":::
+:::image type="content" source="../media/copy-prediction-endpoint-small.png" alt-text="A screenshot showing where to copy the prediction endpoint from." lightbox="../media/copy-prediction-endpoint.png":::
 
 The endpoint and deployment name is on the deploying a model pane.
 
-:::image type="content" source="../media/project-settings-primary-key.png" alt-text="A screenshot showing where to copy the primary key for language services from." lightbox="../media/project-settings-primary-key.png":::
+:::image type="content" source="../media/project-settings-primary-key-small.png" alt-text="A screenshot showing where to copy the primary key for language services from." lightbox="../media/project-settings-primary-key.png":::
 
 The project name and primary key are on the project settings pane.
 
@@ -258,7 +259,7 @@ In the Azure portal, select the skillset and add JSON in this format:
   "httpMethod": "POST",
   "timeout": "PT30S",
   "batchSize": 1,
-  "degreeOfParallelism": null,
+  "degreeOfParallelism": 1,
   "inputs": [
     {
       "name": "lang",

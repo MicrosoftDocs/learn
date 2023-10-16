@@ -30,7 +30,6 @@ products:
 subjects:
 - cloud-security
 modules:
-- learn.azure.protect-against-security-threats-azure
 - learn.top-5-security-items-to-consider
 - learn.azure-security.configure-security-policies-to-manage-data
 - learn.azure.secure-azure-storage-account

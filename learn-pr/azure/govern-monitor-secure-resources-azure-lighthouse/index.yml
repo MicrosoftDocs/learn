@@ -3,7 +3,7 @@ uid: learn.govern-monitor-secure-resources-azure-lighthouse
 metadata:
   title: Use Azure Lighthouse to govern, monitor, and secure customer resources
   description: Learn about how Azure Lighthouse can help you monitor, secure, and govern your customer resources.
-  ms.date: 04/30/2020
+  ms.date: 08/10/2023
   author: iankensey
   ms.author: prukulka
   ms.topic: interactive-tutorial
@@ -12,11 +12,11 @@ title: Use Azure Lighthouse to govern, monitor, and secure customer resources
 summary: Azure Lighthouse can help you monitor, secure, and govern your customer resources.
 abstract: | 
   In this module, you will:
-  -	As a customer, learn how to view & manage service provider activities
-  -	As a managed service provider, learn how to use centralized monitoring in a scalable way
-  -	As a managed service provider, learn how to use governance at scale
-  -	As a managed service provider, learn how to use security at scale
-  -	As a managed service provider, learn how to manage hybrid resources at scale
+  -	As a customer, learn how to view & manage service provider activities.
+  -	As a managed service provider, learn how to use centralized monitoring in a scalable way.
+  -	As a managed service provider, learn how to use governance at scale.
+  -	As a managed service provider, learn how to use security at scale.
+  -	As a managed service provider, learn how to manage hybrid resources at scale.
 
 iconUrl: /training/achievements/generic-badge.svg
 levels:

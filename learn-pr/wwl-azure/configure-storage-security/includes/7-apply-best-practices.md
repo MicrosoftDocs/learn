@@ -8,8 +8,8 @@ It's important to understand that when you use a SAS in your application, there 
 
 Watch this video for more ideas on how to secure your storage. This video is based on [Azure Tips and Tricks #272 Azure Security Best Practices](https://microsoft.github.io/AzureTipsAndTricks/blog/blog/tip272.html).
 
-<br/>
-<iframe width="854" height="480" src="https://www.youtube.com/embed/mntOLLNejUo?list=PLLasX02E8BPCNCK8Thcxu-Y-XcBUbhFWC" title="Azure Security best practices | Azure Tips and Tricks" allowfullscreen></iframe>
+
+> [!VIDEO https://www.youtube.com/embed/mntOLLNejUo?list=PLLasX02E8BPCNCK8Thcxu-Y-XcBUbhFWC]
 
 
 ### Recommendations for managing risks

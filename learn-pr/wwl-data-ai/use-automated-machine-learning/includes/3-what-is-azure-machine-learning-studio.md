@@ -4,24 +4,13 @@ Most importantly, Azure Machine Learning helps data scientists increase their ef
 
 ## Azure Machine Learning workspace 
 
-To use Azure Machine Learning, you first create a *workspace* resource in your Azure subscription. You can then use this workspace to manage data, compute resources, code, models, and other artifacts related to your machine learning workloads.
+To use Azure Machine Learning, you first create a *workspace* resource in your Azure subscription. You can then use this workspace to manage data, code, models, and other artifacts related to your machine learning workloads.
 
-After you have created an Azure Machine Learning workspace, you can develop solutions with the Azure machine learning service either with developer tools or the Azure Machine Learning studio web portal.
+After you have created an Azure Machine Learning workspace, you can develop solutions with the Azure Machine Learning service either with developer tools or the Azure Machine Learning studio web portal.
 
 ## Azure Machine Learning studio 
 
 Azure Machine Learning studio is a web portal for machine learning solutions in Azure. It includes a wide range of features and capabilities that help data scientists prepare data, train models, publish predictive services, and monitor their usage. To begin using the web portal, you need to assign the workspace you created in the Azure portal to Azure Machine Learning studio 
 
 ![Screenshot of the Azure Machine Learning studio interface.](../media/studio-home.png)
-
-## Azure Machine Learning compute 
-At its core, Azure Machine Learning is a service for training and managing machine learning models, for which you need compute on which to run the training process.
-
-Compute targets are cloud-based resources on which you can run model training and data exploration processes.
-
-In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), you can manage the compute targets for your data science activities. There are four kinds of compute resource you can create:
-- **Compute Instances**: Development workstations that data scientists can use to work with data and models.
-- **Compute Clusters**: Scalable clusters of virtual machines for on-demand processing of experiment code.
-- **Inference Clusters**: Deployment targets for predictive services that use your trained models.
-- **Attached Compute**: Links to existing Azure compute resources, such as Virtual Machines or Azure Databricks clusters.
 

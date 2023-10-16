@@ -1,5 +1,3 @@
-
-
 Windows Autopilot supports several deployment scenarios depending on the desired experience:
 
  -  Windows Autopilot user-driven mode
@@ -17,22 +15,22 @@ Windows Autopilot user-driven mode is designed to enable new Windows 10 or later
  -  Connect it to a wireless or wired network with internet access.
  -  Specify your e-mail address and password for your organization account.
 
-To enable User-driven mode for Azure Active Directory join, the following actions must be taken as part of preparing the Autopilot deployment:
+To enable User-driven mode for Microsoft Entra join, the following actions must be taken as part of preparing the Autopilot deployment:
 
- -  Users must be able to join Azure AD.
- -  If using Intune (and not Microsoft Store for Business), user-driven mode must be selected in the Autopilot profile assigned to the device if using Intune. The Autopilot profile must also be assigned to an Azure AD device group.
+ -  Users must be able to join Microsoft Entra ID.
+ -  If using Intune (and not Microsoft Store for Business), user-driven mode must be selected in the Autopilot profile assigned to the device if using Intune. The Autopilot profile must also be assigned to a Microsoft Entra device group.
  -  The device must be added to Windows Autopilot and a profile must be assigned to the device.
 
-User-driven mode is also supported for hybrid Azure Active Directory join. In addition to the actions above, the following steps must also be taken:
+User-driven mode is also supported for Microsoft Entra hybrid join. In addition to the actions above, the following steps must also be taken:
 
  -  The device must be running Windows 1809 or later.
- -  **Hybrid Azure AD joined** must be specified as the selected option under **Join to Azure AD as** in the Autopilot profile.
+ -  **Microsoft Entra hybrid joined** must be specified as the selected option under **Join to Microsoft Entra ID as** in the Autopilot profile.
  -  The device must be able to access the internet and an Active Directory domain controller.
  -  The Intune Connector for Active Directory must be installed (this performs the on-premises AD join instead of requiring user permission to join).
 
 ### Self-deploying mode
 
-Windows Autopilot self-deploying mode enables a device to be deployed with little to no user interaction, achieving a ZTI experience with all OOBE prompts pre-configured. The enrollment status page will display while the device is being configured, and then the computer will either complete and display the sign-in screen, ready for Azure AD credentials. If the device is configured as a kiosk device, it will automatically sign in by using a locally configured account.
+Windows Autopilot self-deploying mode enables a device to be deployed with little to no user interaction, achieving a ZTI experience with all OOBE prompts pre-configured. The enrollment status page will display while the device is being configured, and then the computer will either complete and display the sign-in screen, ready for Microsoft Entra credentials. If the device is configured as a kiosk device, it will automatically sign in by using a locally configured account.
 
 To perform a self-deploying mode deployment using Windows Autopilot:
 
@@ -95,12 +93,12 @@ The process for configuring a pre-provisioned deployment is as follows:
 
 The device can now be delivered to the user. When the user receives the device, they simply need to connect and power on the device, select regional and keyboard settings, select a WiFi network if applicable, and sign in.
 
-Pre-provisioned deployment requires Windows 1903 or later and an Intune subscription. The device must also support TPM 2.0 and device attestation, virtual machines aren't supported. Access to the on-premises domain isn't required in the pre-provision process. Internet connectivity (or connectivity to a domain controller is using Hybrid Azure AD join) is required during the final user process.
+Pre-provisioned deployment requires Windows 1903 or later and an Intune subscription. The device must also support TPM 2.0 and device attestation, virtual machines aren't supported. Access to the on-premises domain isn't required in the pre-provision process. Internet connectivity (or connectivity to a domain controller is using Microsoft Entra hybrid join) is required during the final user process.
 
 > [!TIP]
 > The advantage of pre-provisioned deployment enables an administrator to install the bulk of applications, which are machine targeted, leaving only applications specific to the user onboarding to complete the process. This can drastically reduce the time to provision the device and improve the user experience.
 
-For more information on pre-provisioned deployment s, refer to [Windows Autopilot for Pre-provisioned deployment](https://aka.ms/AA6dcx6).
+For more information on pre-provisioned deployment, refer to [Windows Autopilot for Pre-provisioned deployment](https://aka.ms/AA6dcx6).
 
 ### Windows Autopilot Reset
 
@@ -113,7 +111,7 @@ Windows Autopilot Reset supports two scenarios:
 
 #### Local Windows Autopilot Reset
 
-Local Windows Autopilot Reset uses Windows reset functionality. You can use local Windows Autopilot Reset regardless of how you're currently managing a device. It preserves device name, Azure AD membership, and MDM enrollment.
+Local Windows Autopilot Reset uses Windows reset functionality. You can use local Windows Autopilot Reset regardless of how you're currently managing a device. It preserves device name, Microsoft Entra membership, and MDM enrollment.
 
 By default, local Windows Autopilot Reset is disabled in Windows, which helps ensure that it doesn't start by accident. To enable local Windows Autopilot Reset, you must set the **DisableAutomaticReDeploymentCredentials** policy to **0** (false).
 

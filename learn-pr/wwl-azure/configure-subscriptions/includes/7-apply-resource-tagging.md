@@ -30,4 +30,4 @@ Here are a few things you can do with resource tags:
 
 - **Consider grouping billing data**. Group resources like virtual machines by cost center and production environment. When you download the resource usage comma-separated values (CSV) file for your services, the tags appear in the `Tags` column. 
 
-- **Consider creating tags with PowerShell or the Azure CLI**. Create many resource tags programatically by using Azure PowerShell or the Azure CLI.
+- **Consider creating tags with PowerShell or the Azure CLI**. Create many resource tags programmatically by using Azure PowerShell or the Azure CLI.

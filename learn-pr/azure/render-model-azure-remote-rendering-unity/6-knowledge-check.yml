@@ -19,36 +19,36 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "What is decimation and how does it impact viewing 3D content on untethered devices?"
+  - content: "What is decimation, and how does it impact the appearance of 3D content on untethered devices?"
     choices:
-      - content: "Decimation compresses a model and removes textures. Decimated models aren't rendered with full detail."
+      - content: "Decimation compresses a model to remove textures, so models don't render with full detail."
         isCorrect: false
-        explanation: "Decimation doesn't remove model textures."
-      - content: "Decimation improves the quality of a model for rendering on an untethered device."
+        explanation: "Decimation removes polygons, so models don't render with full detail."
+      - content: "Decimation compresses a model to remove noise, so models render with improved quality."
         isCorrect: false
-        explanation: "When a model is decimated, the rendering quality is diminished."
-      - content: "Decimation compresses a model and removes polygons. Decimated models aren't rendered with full detail."
+        explanation: "Decimation removes polygons, so models render with reduced quality."
+      - content: "Decimation compresses a model to remove polygons, so models don't render with full detail."
         isCorrect: true
-        explanation: "Decimation reduces the quality of a model. Therefore, when the model is rendered, it isn't rendered with full detail."
-  - content: "How long does a sessionID persist?"
+        explanation: "Decimation reduces the quality of a model, because the model doesn't render with full detail."
+  - content: "How long does a session ID persist?"
     choices:
-      - content: "The sessionID persists for 24 hours."
+      - content: "The session ID persists for 24 hours."
         isCorrect: false
-        explanation: "The sessionID persists for longer than 24 hours."
-      - content: "The sessionID persists for 30 days."
+        explanation: "The session ID persists for longer than 24 hours."
+      - content: "The session ID persists for 30 days."
         isCorrect: true
-        explanation: "The sessionID persists for 30 days. Within those 30 days, the sessionID can be used to query information about the scene."
-      - content: "The sessionID persists for 12 months."
+        explanation: "The session ID persists for 30 days, so you can query information about a past session."
+      - content: "The session ID persists for 12 months."
         isCorrect: false
-        explanation: "The sessionID expires in less than 12 months."
+        explanation: "The session ID expires in less than 12 months."
   - content: "How many devices can connect to a session at a time?"
     choices:
-      - content: "Only one can connect to a session at a time."
+      - content: "Only one device can connect to a session at a time."
         isCorrect: true
-        explanation: "Only a single device may connect to a session at a time. Every Azure Remote Rendering host only serves one client device at a time. As such, when a client connects to a session, it has exclusive control over the rendered content."
+        explanation: "An Azure Remote Rendering host only serves one client device at a time. When a client connects to a session, that client has exclusive control over the rendered content."
       - content: "Up to five devices can connect to a session at a time."
         isCorrect: false
-        explanation: "Attempts by multiple to connect will fail."
-      - content: "Any number of devices can connect to a session at a time."
+        explanation: "Attempts to connect to a session by more than one device fail. Another device can connect only after the session stops."
+      - content: "Any number of devices can connect to a session at once."
         isCorrect: false
-        explanation: "Attempts by multiple to connect will fail."
+        explanation: "You can create, observe, and shut down as many sessions as you want, but only one device can connect to a session at a time."

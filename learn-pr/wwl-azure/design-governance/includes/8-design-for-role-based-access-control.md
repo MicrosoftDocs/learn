@@ -20,11 +20,11 @@ Suppose you need to manage access to resources in Azure for Tailwind Traders Dev
 
 You have a plan for how to apply Azure Policy settings to your Tailwind Traders applications. Now consider how to integrate Azure RBAC to control user privileges and resource access.
 
-- **Consider the highest scope level for each requirement**. Your first step is to accurately define each role definition and its permissions. Next, assign the roles to specific users, groups, and service principals. Lastly, scope the roles to management groups, subscriptions, resource groups, and resources. Assign each role at the highest scope level that meets the requirements.
+- **Consider the highest scope level for each requirement**. Your first step is to accurately define each role definition and its permissions. Next, assign the roles to specific users, groups, and service principles. Lastly, scope the roles to management groups, subscriptions, resource groups, and resources. Assign each role at the highest scope level that meets the requirements.
 
    :::image type="content" source="../media/role-definition-assignment-scope.png" alt-text="Diagram that shows how a role definition is assigned to a resource and then scoped." border="false":::
 
-- **Consider the access needs for each user**. As you plan your access control strategy, it's a best practice to grant users the least privilege they need to get their work done. This method makes it easier to separate team member responsibilities. By limiting roles and scopes, you limit what resources are at risk if a security principal is ever compromised. You can create a diagram like the following example to help plan your Azure RBAC roles for Tailwind Traders. 
+- **Consider the access needs for each user**. As you plan your access control strategy, it's a best practice to grant users the least privilege they need to get their work done. This method makes it easier to separate team member responsibilities. By limiting roles and scopes, you limit what resources are at risk if a security principle is ever compromised. You can create a diagram like the following example to help plan your Azure RBAC roles for Tailwind Traders. 
 
    :::image type="content" source="../media/scope-role-matrix.png" alt-text="Diagram that shows how to plan roles of different scope levels within the organization." border="false":::
 

@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.investigate-container-for-use-with-cognitive-services.use-cognitive-services-containers
-title: Use Cognitive Services containers
+title: Use Azure AI Services containers
 metadata:
-  title: Use Cognitive Services containers
-  description: "Use Cognitive Services containers"
-  ms.date: 12/07/2021
+  title: Use Azure AI Services containers
+  description: "Use Azure AI Services containers"
+  ms.date: 07/21/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: cognitive-services
 durationInMinutes: 6
 content: |
   [!include[](includes/3-use-cognitive-services-container.md)]

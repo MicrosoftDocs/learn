@@ -1,4 +1,4 @@
-We'll use the Azure Cognitive Services Custom Vision service to create a machine learning model. Let's learn more about how Custom Vision works. Then, you'll see the step-by-step process we use to build a model, from idea to fully functioning model!
+We'll use the Azure AI Custom Vision service to create a machine learning model. Let's learn more about how Custom Vision works. Then, you'll see the step-by-step process we use to build a model, from idea to fully functioning model!
 
 ## What is machine learning?
 
@@ -16,7 +16,7 @@ When we build a model, we're trying to mimic human intelligence. We use data as 
 
 ## What is transfer learning?
 
-Azure Cognitive Services Custom Vision uses *transfer learning*. Transfer learning is the ability to use prior knowledge to better solve the problem at hand. As humans, we take this approach to problem solving all the time. We're discovering new ways to do it with computers, too. 
+Azure AI Custom Vision uses *transfer learning*. Transfer learning is the ability to use prior knowledge to better solve the problem at hand. As humans, we take this approach to problem solving all the time. We're discovering new ways to do it with computers, too. 
 
 In the Custom Vision service in Azure, transfer learning works by adding a layer that consists of a pre-trained model to the neural network. The trained model gives us a head start when we train new data. Training starts with a general-knowledge domain. New layers are added to the neural network to solve a specific problem. In this case, the problem we want to solve is how to identify birds. By starting with a pre-trained model, we get better results without adding large amounts of data.
 
@@ -39,4 +39,3 @@ To better understand the process of building a machine learning model, here's a 
 1. *Deploy the model.* Custom Vision gives us some options when it's time to deploy our model. We can deploy to an endpoint to integrate the model or we can download the model. If you download the model, you can choose from multiple formats to deploy the way that works best for your project. In this module, we'll discuss how to use the quick-deploy option that's available in the Custom Vision portal.
 
 Let's get started building our model!
-

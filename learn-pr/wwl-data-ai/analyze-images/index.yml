@@ -3,15 +3,16 @@ uid: learn.wwl.analyze-images
 metadata:
   title: Analyze images
   description: "Analyze images"
+  ms.service: cognitive-services
   ms.date: 07/13/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
 title: Analyze images
-summary: With the Computer Vision service, you can use pre-trained models to analyze images and extract insights and information from them.
+summary: With the Azure AI Vision service, you can use pre-trained models to analyze images and extract insights and information from them.
 abstract: |
   After completing this module, you'll be able to:
-  - Provision a Computer Vision resource
+  - Provision an Azure AI Vision resource
   - Analyze an image
   - Generate a smart-cropped thumbnail
 prerequisites: |
@@ -26,7 +27,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
+- ai-services
 - azure-computer-vision
 subjects:
 - artificial-intelligence

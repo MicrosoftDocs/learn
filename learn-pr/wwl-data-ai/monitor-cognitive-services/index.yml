@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-cognitive-services
 metadata:
-  title: Monitor Cognitive Services
-  description: "Monitor Cognitive Services"
+  title: Monitor Azure AI Services
+  description: "Monitor Azure AI Services"
   ms.date: 05/29/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: azure
-title: Monitor Cognitive Services
-summary: Azure Cognitive Services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Cognitive Services in order to track utilization, determine trends, and detect and troubleshoot issues.
+  ms.service: cognitive-services
+title: Monitor Azure AI Services
+summary: Azure AI Services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
 abstract: |
   After completing this module, you will be able to:
-  - Monitor Cognitive Services costs
+  - Monitor Azure AI Services costs
   - Create alerts
   - View metrics
   - Manage diagnostic logging
 prerequisites: |
   Before starting this module, you should:
   - Be familiar with Azure services and the Azure portal.
-  - Have experience of provisioning Azure Cognitive Services resources.
+  - Have experience of provisioning Azure AI Services resources.
 iconUrl: /learn/achievements/monitor-cognitive-services.svg
 levels:
 - intermediate
@@ -29,7 +29,7 @@ roles:
 - developer
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 - cloud-computing

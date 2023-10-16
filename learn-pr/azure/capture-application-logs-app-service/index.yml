@@ -3,7 +3,7 @@ uid: learn.azure.capture-application-logs-app-service
 metadata:
   title: Capture Web Application Logs with App Service Diagnostics Logging
   description: Learn about how to capture trace output from your Azure web apps. View a live log stream and download logs files for offline analysis.
-  ms.date: 03/20/2019
+  ms.date: 08/15/2023
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: module-standard-task-based

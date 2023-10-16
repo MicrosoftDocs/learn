@@ -36,7 +36,7 @@ Once you confirm your settings, you can configure pipeline access to the reposit
 
     ```
 
-This step will checkout the code from the specified repository and reference, and make it available for the rest of the pipeline to use. You can validate the pipeline access by observing the logs and ensuring that the code was retrieved from the repository successfully.
+This step will check out the code from the specified repository and reference, and make it available for the rest of the pipeline to use. You can validate the pipeline access by observing the logs and ensuring that the code was retrieved from the repository successfully.
 
 When running the pipeline using more than one repository, the pipeline asks permission to access the "eShopOnWeb", MyWebApp and "implement-security-through-pipeline-using-devops" repositories.
 
@@ -47,11 +47,11 @@ By restricting pipeline access to specific repositories, you can ensure that onl
 1. Sign-in to your Azure DevOps organization.
 2. Navigate to the project for which you want to configure pipeline access and repository.
 3. Go to Project Settings, then click on Repositories under Repos.
-4. Choose the repository that you want to grant access to your pipeline.
+4. Choose the repository to which you want to grant access to your pipeline.
 5. Go to the Security tab.
 6. Click on the + button (Add pipeline) in the Pipeline permissions section to add a new pipeline.
 7. (Optional) Search for the pipeline name.
-8. Select the name of your pipeline that you want to grant access to the current repository.
+8. Select the name of the pipeline to which you want to grant access to the current repository.
     ![Screen recording of Azure DevOps project settings showing the steps to add the pipeline eShopOnWeb to the repository eShopOnWeb permissions.](../media/add-pipeline-repository.png)
 
 Additionally, restricting pipeline access to specific repositories also helps to ensure that pipelines can only make changes to the codebase through authorized means. For example, pipelines that only have access to a particular repository may not be able to push code changes directly to the repository but may be required to submit pull requests for review and approval. It helps to prevent unplanned and unintended changes to the codebase and ensures that changes are made through a controlled and secure process.

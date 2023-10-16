@@ -16,11 +16,11 @@ The application's homepage is accessible by all users as it requires no authenti
 
 ## Provide consent for application access
 
-When a user navigates to any of the routes that require authentication, their browser is redirected to the Azure AD sign-in page. After signing into your app for the first time, they'll be prompted by Microsoft identity to consent to the app's request for permission to access their data.
+When a user navigates to any of the routes that require authentication, their browser is redirected to the Microsoft Entra sign-in page. After signing into your app for the first time, they'll be prompted by Microsoft identity to consent to the app's request for permission to access their data.
 
 :::image type="content" source="../media/6-consent-to-permissions-request.png"  alt-text="Screenshot of the consent window prompting users to accept the app's request for permissions.":::
 
-In Azure AD tenants, an admin could also choose to disable user consent and instead, consent on behalf of all users. To support this scenario, you'll either need to create your own tenant or receive admin consent.
+In Microsoft Entra tenants, an admin could also choose to disable user consent and instead, consent on behalf of all users. To support this scenario, you'll either need to create your own tenant or receive admin consent.
 
 ## Call the Microsoft Graph API
 
@@ -28,7 +28,7 @@ Before making a call to an API, such as Microsoft Graph, you'll need to acquire 
 
 :::image type="content" source="../media/7-acquire-token-interactively.png" alt-text="Diagram that shows the interactive token acquisition flow.":::
 
-To get an access token with the necessary scopes, invoke the `acquire_token_flow` on the MSAL client. Based on the requested scopes, Azure AD presents a consent dialogue to the user upon signing in. If the user consents to one or more scopes and obtains a token, the scopes are encoded into the resulting access token.
+To get an access token with the necessary scopes, invoke the `acquire_token_flow` on the MSAL client. Based on the requested scopes, Microsoft Entra ID presents a consent dialogue to the user upon signing in. If the user consents to one or more scopes and obtains a token, the scopes are encoded into the resulting access token.
 
 Note the scope requested by the application by referring app.py. By default, this array is set to `["User.Read]`, the Microsoft Graph API scope for accessing basic user account information. The graph endpoint for accessing this info is `https://graph.microsoft.com/v1.0/me`. 
 
@@ -65,7 +65,7 @@ return render_template("authenticated/graph.html",
     graphAccessTokenExpiresInSeconds=result['expires_in'])
 ```
 
-A call to the Microsoft Graph API is an HTTP Get that contains the access token in the authorization header. After the user consents to the requested permissions and signs in, the app displays that they've successfully logged in using Azure AD credentials. The controller makes a call to `Microsoft Graph's /me` API endpoint for the user and receives the following information. 
+A call to the Microsoft Graph API is an HTTP Get that contains the access token in the authorization header. After the user consents to the requested permissions and signs in, the app displays that they've successfully logged in using Microsoft Entra credentials. The controller makes a call to `Microsoft Graph's /me` API endpoint for the user and receives the following information. 
 
 :::image type="content" source="../media/7-call-microsoft-graph-api.png" border="true" alt-text="Screenshot that shows the response upon calling the Microsoft Graph API.":::
 

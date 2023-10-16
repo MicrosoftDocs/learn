@@ -17,7 +17,7 @@ summary: |
     - Messaging and eventing systems - Event Hubs and Service Bus
     - Cache - Azure Redis Cache
     - Storage - Azure Storage
-    - Directory - Azure Active Directory (Azure AD) and Azure AD B2C
+    - Directory - Microsoft Entra ID and Azure AD B2C
 
   As always, use tools and frameworks that you know and love - Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
 
@@ -59,7 +59,6 @@ products:
 - azure
 - azure-active-directory
 - azure-app-service
-- azure-app-service-web
 # - azure-application-insights
 #- azure-automation
 - azure-cache-redis
@@ -68,7 +67,6 @@ products:
 - azure-database-mysql
 #- azure-devops
 - azure-spring-apps
-- azure-web-apps
 - msal-java
 - azure-service-bus
 subjects:

@@ -1,4 +1,3 @@
-
 If you have applications and services that need access to traditional authentication mechanisms such as Kerberos or NTLM, there are **two ways** to provide Active Directory Domain Services in the cloud:
 
  -  A ***managed domain*** that you create using Azure Active Directory Domain Services (Azure AD DS). Microsoft creates and manages the required resources.

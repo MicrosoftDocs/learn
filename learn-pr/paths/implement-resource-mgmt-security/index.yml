@@ -32,8 +32,6 @@ products:
 subjects:
 - security
 modules:
-- learn.azure.protect-against-security-threats-azure
-- learn.azure.build-cloud-governance-strategy-azure
 - learn.control-and-organize-with-resource-manager
 - learn.secure-azure-resources-with-rbac
 - learn.azure.manage-subscription-access-azure-rbac
