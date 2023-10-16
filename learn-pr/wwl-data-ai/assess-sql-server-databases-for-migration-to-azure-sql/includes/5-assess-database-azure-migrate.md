@@ -60,7 +60,15 @@ To run this exercise, ensure you follow these steps before proceeding:
 - Once the database has been restored, run the following command:
     
     ```sql
+    USE [AdventureWorks]
+    GO    
+
     ALTER TABLE [Person].[Person] ADD [Next] VARCHAR(5);
+    
+    CREATE PROCEDURE [HumanResources].[usp_legacyIntegration]
+    AS
+    SELECT DataCreated, UserID, ActionID 
+    FROM LogDB..Logs
     ```
 
 - A SQL Server user with read access to the source database.
