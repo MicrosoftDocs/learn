@@ -13,7 +13,7 @@ Make sure that the following Azure Extension for SAP technical requirements are 
 
 ## Explore SAP HANA monitoring
 
-In order to effectively analyze problems related to SAP HANA (both in Azure VMs and on bare-metal hardware), it is useful to narrow down the root cause of a problem. SAP has published a large amount of documentation to help you. Applicable FAQs related to SAP HANA performance can be found in the following SAP Notes:
+In order to effectively analyze problems related to SAP HANA (both in Azure VMs and on bare-metal hardware), it's useful to narrow down the root cause of a problem. SAP has published a large amount of documentation to help you. Applicable FAQs related to SAP HANA performance can be found in the following SAP Notes:
 
 - [SAP Note \#2222200 – FAQ: SAP HANA Network](https://launchpad.support.sap.com/#/notes/2222200)
 - [SAP Note \#2100040 – FAQ: SAP HANA CPU](https://launchpad.support.sap.com/#/notes/2100040)

@@ -2,18 +2,18 @@
 
 If some of the monitoring data isn't delivered correctly, use the troubleshooting steps described here.
 
-## Set-AzVMAEMExtension and Test-AzVMAEMExtension show warning messages stating that Standard Managed Disks are not supported
+## Set-AzVMAEMExtension and Test-AzVMAEMExtension show warning messages stating that Standard Managed Disks aren't supported
 
 ### Issue
 
 When executing **Set-AzVMAEMExtension** or **Test-AzVMAEMExtension** messages like these are shown:
 
 ```
-WARNING: [WARN] Standard Managed Disks are not supported. Extension will be installed but no disk metrics will be available.
+WARNING: [WARN] Standard Managed Disks aren't supported. Extension will be installed but no disk metrics will be available.
 
-WARNING: [WARN] Standard Managed Disks are not supported. Extension will be installed but no disk metrics will be available.
+WARNING: [WARN] Standard Managed Disks aren't supported. Extension will be installed but no disk metrics will be available.
 
-WARNING: [WARN] Standard Managed Disks are not supported. Extension will be installed but no disk metrics will be available.
+WARNING: [WARN] Standard Managed Disks aren't supported. Extension will be installed but no disk metrics will be available.
 ```
 
 Executing azperflib.exe indicates a non-healthy state.
