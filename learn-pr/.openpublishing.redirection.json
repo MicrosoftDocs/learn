@@ -1,27 +1,27 @@
 {
     "redirections": [
       {
-        "source_path_from_root": "learn-pr/achievements/learn-windows.building-connected-windows-apps.badge.yml",
+        "source_path_from_root": "/learn-pr/achievements/learn-windows.building-connected-windows-apps.badge.yml",
         "redirect_url": "/training/paths/develop-windows10-apps/",
         "redirect_document_id": false
       },
       {
-        "source_path_from_root": "learn-pr/windows/build-internet-connected-windows10-apps/1-building-app-that-uses-cloud-service.yml",
+        "source_path_from_root": "/learn-pr/windows/build-internet-connected-windows10-apps/1-building-app-that-uses-cloud-service.yml",
         "redirect_url": "/training/paths/develop-windows10-apps/",
         "redirect_document_id": false
       },
       {
-        "source_path_from_root": "learn-pr/windows/build-internet-connected-windows10-apps/2-building-app-that-accesses-internet.yml",
+        "source_path_from_root": "/learn-pr/windows/build-internet-connected-windows10-apps/2-building-app-that-accesses-internet.yml",
         "redirect_url": "/training/paths/develop-windows10-apps/",
         "redirect_document_id": false
       },
       {
-        "source_path_from_root": "learn-pr/windows/build-internet-connected-windows10-apps/3-summary.yml",
+        "source_path_from_root": "/learn-pr/windows/build-internet-connected-windows10-apps/3-summary.yml",
         "redirect_url": "/training/paths/develop-windows10-apps/",
         "redirect_document_id": false
       },
       {
-        "source_path_from_root": "learn-pr/windows/build-internet-connected-windows10-apps/index.yml",
+        "source_path_from_root": "/learn-pr/windows/build-internet-connected-windows10-apps/index.yml",
         "redirect_url": "/training/paths/develop-windows10-apps/",
         "redirect_document_id": false
       }
