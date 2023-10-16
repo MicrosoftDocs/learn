@@ -1,10 +1,14 @@
+
+
+[!INCLUDE [](../../../includes/wwl/ai-contribution-notes.md)]
+
 This module covers different storage scenarios using Azure Files and Azure Blob Storage.
 
-In this module, you'll learn how to provide storage for different purposes such as IT department testing and training, public website, private company documents, shared file storage for the company offices, and a new company app. 
+In this module, you will learn how to provide storage for different purposes such as IT department testing and training, public website, private company documents, shared file storage for the company offices, and a new company app. 
 
 :::image type="content" source="../media/task-overview.png" alt-text="Diagram of customer requirements." border="false":::
 
-You'll be presented with a scenario for each purpose and a diagram showing the architecture of the solution. You'll then follow a set of tasks to create the storage account and configure it according to the scenario. Each exercise has a duration of 10 to 15 minutes.
+You will be presented with a scenario for each purpose and a diagram showing the architecture of the solution. You will then follow a set of tasks to create the storage account and configure it according to the scenario. Each exercise has a duration of 10 to 15 minutes.
 
 The module is divided into five exercises, each covering a specific storage scenario. The exercises are: 
 - Exercise 1 - Provide storage for the IT department testing and training, 
@@ -13,7 +17,7 @@ The module is divided into five exercises, each covering a specific storage scen
 - Exercise 4 - Provide shared file storage for the company offices, and 
 - Exercise 5 - Provide storage for a new company app.
 
-By the end of this module, you'll have gained hands-on experience in creating and configuring Azure Files and Azure Blob Storage for different storage scenarios. You'll be able to apply this knowledge to your own projects and provide secure and efficient storage solutions.
+By the end of this module, you will have gained hands-on experience in creating and configuring Azure Files and Azure Blob Storage for different storage scenarios. You will be able to apply this knowledge to your own projects and provide secure and efficient storage solutions.
 
 > [!NOTE]
 > This is a guided project module where you complete an end-to-end project by following step-by-step instructions. 
@@ -29,6 +33,5 @@ You've used the Azure documentation to [review your storage options](/azure/clou
 | **Create and configure Azure Files** | <ul><li>  Create an Azure Files share, including directories. </li><li> Configure performance tiers, like standard and premium. </li><li> Configure data protection for Azure Files, such as snapshots. </li></ul>  |
 | **Configure encryption for storage** | <ul><li> Configure encryption for data at rest, including Microsoft managed keys and customer managed keys. </li><li>  Configure encryption for data in transit. </li></ul> |
 | **Configure networking​ for storage** | <ul><li> Create and configure private endpoints. </li><li>  Create and configure service endpoints. </li><li> Configure Azure Storage firewalls and virtual networks. </li></ul>|
-
 
 

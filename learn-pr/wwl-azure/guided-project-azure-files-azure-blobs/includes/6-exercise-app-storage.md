@@ -1,3 +1,6 @@
+
+
+
 The company is designing and developing a new app. Developers need to ensure the storage is only accessed using keys and managed identities. The developers would like to use role-based access control. To help with testing, protected immutable storage is needed. 
 
 ## Architecture diagram
