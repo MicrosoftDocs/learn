@@ -6,7 +6,7 @@ After implementing these tools, you're confident that you can monitor and manage
 
 ## Clean up resources
 
-In this module, you created resources that use your Azure subscription. So that you won't continue to be charged for these resources, you can delete them individually, or delete the resource group you created to contain the resources.
+In this module, you created VMs that use your Azure subscription. So you don't continue to incur charges for these resources, you can delete them individually, or delete the resource group you created to contain the resources.
 
 - To delete the VM you created:
 

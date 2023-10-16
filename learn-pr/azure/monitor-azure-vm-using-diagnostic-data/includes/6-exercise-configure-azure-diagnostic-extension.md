@@ -8,7 +8,7 @@ You can define a DCR to send data from multiple VMs to multiple destinations of 
 
 For performance counters, you can select from a predefined set of objects and set sampling rates, or create custom objects. For events, you can select severity levels to log.
 
-## Create a DCR to monitor events
+## Create the DCR in Azure Monitor
 
 In the Azure portal, search for and select *monitor* to go to the Azure Monitor **Overview** screen.
 
@@ -48,8 +48,8 @@ In the Azure portal, search for and select *monitor* to go to the Azure Monitor 
 
 1. On the **Collect and deliver** tab, select **Add data source**.
 1. On the **Add data source** screen, under **Data source type**, select **Linux Syslog**.
-1. Select **Next: Destination** or the **Destination** tab, and make sure the **Account or namespace** matches the default workspace that Azure created for VM Insights.
-1. Select **Add data source**.
+1. On the **Add data source** screen, select **Next: Destination** or the **Destination** tab, and make sure the **Account or namespace** matches the default workspace that Azure created for VM Insights.
+1. On the **Add data source** screen, select **Add data source**.
 1. On the **Create Data Collection Rule** screen, select **Review + create**, and when validation passes, select **Create**.
 
    :::image type="content" source="../media/create-dcr-finish.png" alt-text="Screenshot of Review + create highlighted on the Create Data Collection Rule screen.":::
