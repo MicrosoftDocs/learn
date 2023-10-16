@@ -2,7 +2,7 @@ You've verified that your deployment was successful, and you know what resources
 
 ## Configure Azure SQL Managed Instance
 
-Azure SQL Managed Instance is essentially a managed SQL Server instance. Many configurations available in SQL Server apply here. For example, you can configure using `sp_configure` and certain global trace flags. You also have options available around `tempdb`, `model`, and `master`, and you have control over your network connectivity and configuration, which we discuss shortly.
+Azure SQL Managed Instance is essentially a managed SQL Server instance. Many configurations available in SQL Server apply here. For example, you can configure using `sp_configure` and certain global trace flags. You also have options available around `tempdb`, `model`, and `master`. You have control over your network connectivity and configuration.
 
 ## Database configuration
 
@@ -84,4 +84,4 @@ At the highest level, in Proxy mode, all connections are proxied through the gat
 
 The direct connection (redirect) allows for reduced latency and improved throughput. It also requires opening more ports to allow inbound and outbound communication in the range of 11000 to 11999.  
 
-In the next exercise, you'll be exposed to some commands for configuring Azure SQL with the Azure CLI. Then, dive into evaluating the proxy and redirect connection policies.
+In the next exercise, you see some commands for configuring Azure SQL with the Azure CLI. Then, dive into evaluating the proxy and redirect connection policies.

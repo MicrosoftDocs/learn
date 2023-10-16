@@ -46,11 +46,11 @@ Now that you're connected, you might want an easy way to access scripts and Jupy
 
     :::image type="content" source="../media/4-open-folder.png" alt-text="Screenshot of opening a folder in Azure Data Studio.":::  
 
-1. Browse to where you extracted the zip file of the resources for this exercise. If you followed the prerequisites, the path should be similar to *C:\Users\\<machine-username>\mslearn-azure-sql-fundamentals*. When you're there, select **Select Folder**. If prompted, select **Yes, I trust the authors**.
+1. Browse to where you extracted the zip file of the resources for this exercise. If you followed the prerequisites, the path should be similar to *C:\Users\\\<machine-username>\mslearn-azure-sql-fundamentals*. When you're there, select **Select Folder**. If prompted, select **Yes, I trust the authors**.
 
 1. Next, select the **Explorer** icon from the left taskbar to browse through the files in the module. This folder contains all of the necessary resources for the learning path about Azure SQL fundamentals, so you only need to download and configure this information once!
 
-    Throughout the module and learning path exercises, you're instructed at various points to open a *notebook* file that ends in `.ipynb`. You can access the notebook from here directly. Alternatively, you can access it from the **Notebook** icon tab.  
+    Throughout the module and learning path exercises, you're instructed at various points to open a *notebook* file that ends in *.ipynb*. You can access the notebook from here directly. Alternatively, you can access it from the **Notebook** icon tab.  
 
 ## Verify deployment
 

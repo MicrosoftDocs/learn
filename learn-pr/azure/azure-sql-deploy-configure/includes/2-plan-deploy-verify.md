@@ -57,7 +57,7 @@ Generally, if you're migrating, use size that's similar to what you use on-premi
 
 ### Networking configuration
 
-Choices for networking for Azure SQL Database and Azure SQL Managed Instance are different. When you deploy an Azure SQL Database SQL database, the current default is **No access**.  
+Choices for networking for Azure SQL Database and Azure SQL Managed Instance are different. When you deploy an Azure SQL Database, the current default is **No access**.  
 
 You can then choose to select a public endpoint or private endpoint. In the exercise that follows this unit, use the public endpoint and set the **Allow Azure services and resources to access this server** option to *yes*. Other Azure services, for example, Azure Data Factory or Azure Virtual Machines, can access the database if you configure it. You can also select **Add current client IP address** if you want to be able to connect from the client computer's IP address that you used to deploy Azure SQL Database.
 
@@ -84,8 +84,8 @@ In Azure SQL Database, you can't set the server collation. It's set at the defau
 * `SQL` means that it's a SQL Server collation, as opposed to a Windows or binary collation.
 * `Latin1_General` specifies the alphabet or language to use when sorting.
 * `CP1` references the code page that the collation uses.
-* `CI` means that it's case-insensitive. `CS` would mean case-sensitive.
-* `AS` means that it's accent-sensitive. `AI` would mean accent-insensitive.
+* `CI` means that it's case-insensitive. `CS` means case-sensitive.
+* `AS` means that it's accent-sensitive. `AI` means accent-insensitive.
 
 Other options are available. Examples are character widths and UTF-8 encoding. You can find more details about what you can and can't do with Azure SQL [in the documentation](/azure/azure-sql/).
 
