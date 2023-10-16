@@ -40,6 +40,11 @@ achievements:
   title: Solve graph coloring problems by using Grovers search
   summary: Solve graph coloring problems by using Grovers search
   iconUrl: /training/achievements/quantum/solve-graph-coloring-problems-grovers-search.svg
+- uid: learn-windows.building-connected-windows-apps.badge
+  type: badge
+  title: Build internet-connected Windows apps
+  summary: Build internet-connected Windows apps
+  iconUrl: /training/achievements/build-internet-connected-windows-apps.svg
 - uid: learn-wwl.learn-business-value-of-azure.trophy
   type: trophy
   title: Learn the business value of Microsoft Azure
@@ -2317,8 +2322,3 @@ achievements:
   title: Configure SIEM security operations using Microsoft Sentinel
   summary: Get started with Microsoft Sentinel security operations by configuring the Microsoft Sentinel workspace, connecting Microsoft services and Windows security events to Microsoft Sentinel, configuring Microsoft Sentinel analytics rules, and responding to threats with automated responses.
   iconUrl: /training/achievements/configure-your-azure-sentinel-environment.svg
-- uid: learn-windows.building-connected-windows-apps.badge
-  type: badge
-  title: Build internet-connected Windows apps
-  summary: Build internet-connected Windows apps
-  iconUrl: /training/achievements/build-internet-connected-windows-apps.svg
