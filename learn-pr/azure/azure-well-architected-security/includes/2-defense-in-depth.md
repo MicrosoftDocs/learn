@@ -39,7 +39,7 @@ Each layer can implement one or more of the CIA concerns:
 |3|Compute|Regular application of OS and layered software patches|Availability|
 |4|Network|Network security rules|Confidentiality|
 |5|Perimeter|DDoS protection|Availability|
-|6|Identity and access|Azure Active Directory user authentication|Integrity|
+|6|Identity and access|Microsoft Entra user authentication|Integrity|
 |7|Physical security|Azure datacenter biometric access controls|Confidentiality|
 
 ### Data

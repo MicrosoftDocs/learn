@@ -14,7 +14,7 @@ Use the Azure portal to create an Azure AD B2C tenant as a resource. Specify a n
 
 ![Screenshot of the Azure AD B2C Create Tenant form.](../media/4-create-tenant.png)
 
-An Azure AD B2C tenant isn't the same as an Azure Active Directory (Azure AD) tenant. You use an Azure AD tenant to represent an organization. Your Azure AD B2C tenant represents the identities that are used for customer applications.
+An Azure AD B2C tenant isn't the same as a Microsoft Entra tenant. You use a Microsoft Entra tenant to represent an organization. Your Azure AD B2C tenant represents the identities that are used for customer applications.
 
 When you create a new Azure AD B2C tenant, you'll see it in your list of directories in the portal.
 

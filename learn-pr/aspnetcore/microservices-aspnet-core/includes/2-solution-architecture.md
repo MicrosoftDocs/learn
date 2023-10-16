@@ -39,7 +39,7 @@ Each microservice can implement the data store that's best optimized for its wor
 
 ### Authentication and authorization
 
-The *:::no-loc text="WebSPA ":::* client app delegates authentication and authorization to an **Identity microservice** that also serves as a Security Token Service (STS). The identity service is a containerized ASP.NET Core project that uses [IdentityServer 4](https://identityserver4.readthedocs.io), a popular OpenID Connect and OAuth 2.0 framework for ASP.NET Core. An alternative to hosting an STS is to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory), which offers identity and access management as a service.
+The *:::no-loc text="WebSPA ":::* client app delegates authentication and authorization to an **Identity microservice** that also serves as a Security Token Service (STS). The identity service is a containerized ASP.NET Core project that uses [IdentityServer 4](https://identityserver4.readthedocs.io), a popular OpenID Connect and OAuth 2.0 framework for ASP.NET Core. An alternative to hosting an STS is to use [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory), which offers identity and access management as a service.
 
 The identity service in the diagram is configured to allow direct access, so it bypasses the API gateway. The full *:::no-loc text="eShopOnContainers":::* app that this sample is based on uses multiple API gateways separated by business areas. The smaller implementation in this module doesn't require another API gateway.
 

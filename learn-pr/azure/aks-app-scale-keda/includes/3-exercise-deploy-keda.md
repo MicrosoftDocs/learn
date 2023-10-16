@@ -21,7 +21,7 @@ In this exercise, you'll deploy KEDA to an Azure Kubernetes Service (AKS) cluste
 2. Use `kubectl` to deploy the KEDA manifest files.
 
     ```bash
-    kubectl apply -f https://github.com/kedacore/keda/releases/download/v2.2.0/keda-2.2.0.yaml
+    kubectl apply -f https://github.com/kedacore/keda/releases/download/v2.11.2/keda-2.11.2-core.yaml
     ```
 
 3. Use `kubectl` to verify the installation of KEDA.

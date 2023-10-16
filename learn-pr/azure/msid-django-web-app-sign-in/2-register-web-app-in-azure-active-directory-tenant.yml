@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.msid-django-web-app-sign-in.register-web-app-in-azure-active-directory-tenant
-title: Register a web app in an Azure AD tenant
+title: Register a web app in a Microsoft Entra tenant
 metadata:
   unitType: learning-content
-  title: Register a web app in an Azure AD tenant
-  description: Register a Django web app in an Azure AD tenant by using the Azure portal.
+  title: Register a web app in a Microsoft Entra tenant
+  description: Register a Django web app in a Microsoft Entra tenant by using the Azure portal.
   ms.date: 05/09/2023
   author: SHERMANOUKO
   ms.author: shermanouko
