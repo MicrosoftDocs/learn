@@ -7,11 +7,11 @@ Lab files: none
 
 ## Scenario
 
-In preparation for deployment of SAP NetWeaver on Azure, Adatum Corporation wants to implement a demo that will illustrate highly available implementation of SAP NetWeaver on Azure VMs running the SUSE distribution of Linux.
+In preparation for deployment of SAP NetWeaver on Azure, Adatum Corporation wants to implement a demo that illustrates highly available implementation of SAP NetWeaver. In the demo, SAP NetWeaver on Azure VMs is running the SUSE distribution of Linux.
 
 ## Objectives
 
-After completing this lab, you will be able to:
+After completing this lab, you'll be able to:
 
 - Provision Azure resources necessary to support a highly available SAP NetWeaver deployment.
 - Configure operating system of Azure VMs running Linux to support a highly available SAP NetWeaver deployment.
@@ -24,7 +24,7 @@ After completing this lab, you will be able to:
 
 ## Exercises
 
-During this lab ([full instructions on GitHub](https://aka.ms/az-120-lab-03a)) you will complete the following exercises:
+During this lab ([full instructions on GitHub](https://aka.ms/az-120-lab-03a)) you'll complete the following exercises:
 
 - Exercise 1: Provision Azure resources necessary to support highly available SAP NetWeaver deployments
 - Exercise 2: Configure Azure VMs running Linux to support a highly available SAP NetWeaver deployment
