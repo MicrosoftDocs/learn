@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/27/2023
+  ms.date: 10/13/2023
   author: Adriamen
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -47,4 +47,4 @@ quiz:
       explanation: "Correct. Azure OpenAI Service delivers OpenAI models while ensuring data privacy. It's the safest option when dealing with confidential data."
     - content: "GitHub Copilot because it's already based on OpenAI's generative AI, and it's useful in helping write the code."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot may indeed prove useful to develop your application. However, it can only deliver code. To receive insights, you should use the GPT model in Azure OpenAI Service."
+      explanation: "Incorrect. GitHub Copilot might indeed prove useful to develop your application. However, it can only deliver code. To receive insights, you should use the GPT model in Azure OpenAI Service."

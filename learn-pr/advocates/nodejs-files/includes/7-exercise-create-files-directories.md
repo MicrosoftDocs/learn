@@ -73,7 +73,7 @@ In this exercise, you create the *salesTotals* directory and *totals.txt* file w
 
    :::image type="content" source="../media/refresh-file-explorer.png" alt-text="Screenshot of the Refresh icon in the Files explorer of the Cloud Shell editor.":::
 
-You're almost finished. The last step is to read the sales files, add up the totals, and write the grand total to the new *totals.txt* file. Next you learn how to read and parse data inside files.
+You created the file but it doesn't have the totals yet. The next step is to read the sales files, add up the totals, and write the grand total to the new *totals.txt* file. Next you learn how to read and parse data inside files.
 
 ## Got stuck?
 

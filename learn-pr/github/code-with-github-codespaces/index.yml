@@ -18,7 +18,7 @@ abstract: |
   - Define the different customizations you can personalize with GitHub Codespaces.
   - Discern the differences between GitHub.dev and GitHub Codespaces. 
 prerequisites: |
-  -  A GitHub account
+  - A GitHub account
 iconUrl: /training/achievements/generic-badge.svg
 ratingEnabled: false
 levels: 

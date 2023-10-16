@@ -44,7 +44,7 @@ The previous diagram shows the topology you'll deploy:
     ```azurecli
     # Create test RG and VM
     az group create -n $rg -l $location
-    az vm create -n test-vm -g $rg -l $location --image ubuntuLTS --generate-ssh-keys \
+    az vm create -n test-vm -g $rg -l $location --image Ubuntu2204 --generate-ssh-keys \
         --public-ip-address test-vm-pip --vnet-name $vnet_name \
         --vnet-address-prefix $vnet_prefix --subnet $vm_subnet_name --subnet-address-prefix $vm_subnet_prefix
     vm_pip=$(az network public-ip show -n test-vm-pip -g $rg --query ipAddress -o tsv) && echo $vm_pip

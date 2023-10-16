@@ -1,5 +1,3 @@
-
-
 You can create a pipeline in Azure Synapse Studio by using shortcuts on the **Home** page, but the primary place where pipelines are created and managed is the **Integrate** page.
 
 When you create a pipeline in Azure Synapse Studio, you can use the graphical design interface.

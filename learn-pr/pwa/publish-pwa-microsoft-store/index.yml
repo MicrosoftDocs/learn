@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.edge.publish-pwa-to-msft-store
+title: Test and publish Progressive Web Apps (PWAs) for Microsoft Store
+metadata:
+  title: Test and publish Progressive Web Apps (PWAs) for Microsoft Store
+  description: Learn to test and publish Progressive Web Apps (PWAs) on various devices and platforms, ensuring seamless user experiences. Acquire test packages, test on different browsers and devices, and comply with guidelines. Utilize PWABuilder to package and submit PWAs to the Microsoft Store, reserve app names, and navigate the Microsoft Partner Center for successful publication. Enhance PWA development skills and boost app performance and reach with this informative guide.
+  ms.date: 07/13/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: module-standard-task-based
+  ms.prod: microsoft-edge
+summary: >
+  Master PWA testing across devices and platforms while learning to package and submit your app to the Microsoft Store. Gain insights into compliance, PWABuilder usage, and Microsoft Partner Center navigation for successful PWA publication.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Test a Progressive Web App (PWA) on various devices and platforms, ensuring it's compliant with technical guidelines and requirements.
+  - Understand the procedures for packaging and submitting a PWA to the Microsoft Store, including reserving an app name and reviewing store policies and code of conduct.
+  - Successfully navigate the process for PWA review and publication.
+prerequisites: |
+  - Intermediate understanding of web development (HTML, CSS, JavaScript, and JSON).
+  - Grasp the process of integrating and creating PWAs.
+iconUrl: /training/achievements/publish-pwa-microsoft-store.svg
+ratingEnabled: false
+levels: 
+  - intermediate
+roles: 
+  - developer
+products:
+  - microsoft-edge
+units:
+  - learn.edge.publish-pwa-to-msft-store.introduction
+  - learn.edge.publish-pwa-to-msft-store.test-pwa
+  - learn.edge.publish-pwa-to-msft-store.ensure-compliance
+  - learn.edge.publish-pwa-to-msft-store.publish-pwa-to-store
+  - learn.edge.publish-pwa-to-msft-store.knowledge-check
+  - learn.edge.publish-pwa-to-msft-store.summary
+badge:
+  uid: learn.edge.publish-pwa-to-msft-store.badge

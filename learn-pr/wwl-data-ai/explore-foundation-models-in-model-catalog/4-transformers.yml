@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-foundation-models-in-model-catalog.transformers
+title: |
+  Understand the transformer architecture used for natural language processing (NLP)
+metadata:
+  title: |
+    Understand the transformer architecture used for natural language processing
+  description: "Learn about the transformer architecture used in deep learning techniques for NLP."
+  ms.date: 7/24/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-transformers.md)]
