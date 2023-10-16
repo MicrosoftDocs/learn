@@ -9,7 +9,7 @@ metadata:
   ms.date: 10/11/2023
   author: baanders
   ms.author: baanders
-durationInMinutes: 15
+durationInMinutes: 20
 content: |
   [!include[](includes/2-configure-postman-api-collections.md)]
 

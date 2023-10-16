@@ -11,4 +11,4 @@ metadata:
   ms.author: baanders
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-query-graph.md)]
+  [!include[](includes/5-query-graph.md)]

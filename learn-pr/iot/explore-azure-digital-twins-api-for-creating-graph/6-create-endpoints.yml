@@ -11,4 +11,4 @@ metadata:
   ms.author: baanders
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-create-endpoints.md)]
+  [!include[](includes/6-create-endpoints.md)]

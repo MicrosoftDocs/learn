@@ -11,4 +11,4 @@ metadata:
   ms.author: baanders
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-create-event-routes.md)]
+  [!include[](includes/7-create-event-routes.md)]
