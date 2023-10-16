@@ -6,15 +6,26 @@ The Microsoft Graph PowerShell SDK is published on the PowerShell Gallery.
 
 PowerShell 7 and later is the recommended PowerShell version for use with the Microsoft Graph PowerShell SDK on all platforms. There are no additional prerequisites to use the SDK with PowerShell 7 or later. Microsoft Graph PowerShell is also compatible with Windows PowerShell 5.1 or later.
 
+The Microsoft Graph PowerShell SDK comes in 2 modules, **Microsoft.Graph** and **Microsoft.Graph.Beta**, that you will install separately. These modules call the Microsoft Graph v1.0 and Microsoft Graph beta endpoints, respectively. You can install the 2 modules on the same PowerShell version.
+
 > [!NOTE]
 > Installing the main module of the SDK, Microsoft.Graph, will install all the 38 sub modules. Consider installing only the necessary modules, including `Microsoft.Graph.Authentication`, which is installed by default when you opt to install the sub modules individually. For a list of available Microsoft Graph modules, use `Find-Module Microsoft.Graph*`.
 > Only cmdlets for the installed modules will be available for use.
 
-To install **all** modules, run:
+To install the v1 module, run:
 
 ```powershell
 Install-Module Microsoft.Graph
 ```
+
+To install the beta module, run:
+
+```powershell
+Install-Module Microsoft.Graph.Beta
+```
+
+>[!NOTE]
+> Commands for APIs in the beta endpoint are subject to change. We don't recommend that you use them in your production apps.
 
 ## Sign in Connect-MgGraph
 
@@ -82,39 +93,18 @@ To find permissions related to a given domain, run;
 Find-MgGraphPermission user.read
 ```
 
-### Using Select-MgProfile
-
-By default, the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default.
-
-To check your current profile, run:
-
-```powershell
-Get-MgProfile
-```
-
-To change to the beta version, use `Select-MgProfile`.
-
-```powershell
-Select-MgProfile -Name Beta
-```
-
-To switch back to using v1.0 API commands, specify **v1.0** for the **-Name** parameter.
-
->[!NOTE]
-> Commands for APIs in the beta endpoint are subject to change. We don't recommend that you use them in your production apps.
-
 ## Common query parameters
 
-Microsoft Graph PowerShell SDK supports optional query parameters that you can use to control the amount of data returned in an output. Support for the exact query parameters varies from one cmdlet to another, and depending on the profile, can differ between the v1.0 and beta endpoints. Microsoft Graph PowerShell cmdlets support one or more of the following OData system query options, which are only supported in the **GET** operations.
+Microsoft Graph PowerShell SDK supports optional query parameters that you can use to control the amount of data returned in an output. Support for the exact query parameters varies from one cmdlet to another, and can differ between the v1.0 and beta endpoints. Microsoft Graph PowerShell cmdlets support one or more of the following OData system query options, which are only supported in the **GET** operations.
 
 |Name|Description|Example|
 |--------|----|-----|
 | -Count |Retrieves the total count of matching resources|`Get-MgUser -ConsistencyLevel eventual -Count count`<br>`$count`|
-| -Expand | Retrieves related resources|`Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members \| Select -ExpandProperty members`|
+| -Expand | Retrieves related resources|<code>Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members &#124; Select -ExpandProperty members</code>|
 | -Filter | Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
 | -OrderBy | Orders results|`Get-MgUser -OrderBy DisplayName`|
 |-Search | Returns results based on search criteria|`Get-MgUser -ConsistencyLevel eventual -Search '"DisplayName:Conf"'`|
-|-Select | Filters properties (columns)|`Get-MgUser \| Select DisplayName, Id`|
+|-Select | Filters properties (columns)|<code>Get-MgUser &#124; Select DisplayName, Id</code>|
 | -Top | Sets the page size of results. |`Get-MgUser -Top 10`|
 
 ## Advanced queries

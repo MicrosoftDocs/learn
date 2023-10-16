@@ -13,7 +13,7 @@ Here are some of the benefits available from Azure Migrate and Modernize and Azu
 - **Access to experts** - Microsoft experts or specialized partners will help you at each step from planning to deployment which includes assessments, total cost of ownership (TCO) analysis, cloud adoption approaches, workshops, pilots, and deployment.
 - **Microsoft-led delivery** - In addition to specialized partners being available for more complex workloads, with Azure Migrate and Modernize, you can also benefit from Microsoft-led delivery for rapid rehost migrations to increase both capacity and capability across the Azure portfolio to get the expert help as needed.
 - **Partner funding for specialized partners** - An increased investment in partner ecosystem to increase both capacity and capability across the Azure portfolio to get the expert help as needed.
-- **Extensive coverage from migration to innovation** - Azure Migrate and modernize and Azure Innovate helps you across a wide range of your cloud adoption needs which includes migrating or modernize Windows Server & SQL Server, Linux, Oracle, SAP, HPC, analytics AI and more.
+- **Extensive coverage from migration to innovation** - Azure Migrate and Modernize and Azure Innovate helps you across a wide range of your cloud adoption needs which includes migrating or modernize Windows Server & SQL Server, Linux, Oracle, SAP, HPC, analytics AI and more.
 
 
 :::image type="content" source="../media/ammp-phases-2.png" alt-text="Diagram showing the Azure Migration and Modernization Program project phases.":::
