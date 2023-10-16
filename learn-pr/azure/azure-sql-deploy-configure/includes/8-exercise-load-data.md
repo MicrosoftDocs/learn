@@ -59,7 +59,9 @@ Both exercises contain the same commands and content, so you can choose the opti
     ```
 
     > [!TIP]
-    > You'll see a number entry after the T-SQL statements. It represents each line of the T-SQL entry. For example, the preceding command ends with `26`. Be sure to select **ENTER** after these lines. You know that the command has finished when you see `1>` again, which indicates that `sqlcmd` is ready for the first line of your next T-SQL entry.
+    > You'll see a number entry after the T-SQL statements. It represents each line of the T-SQL entry. For example, the preceding command ends with `26`. Be sure to select **ENTER** after these lines.
+    >
+    > You know that the command has finished when you see `1>` again, which indicates that `sqlcmd` is ready for the first line of your next T-SQL entry.
 
 1. Next, create a master key:
 

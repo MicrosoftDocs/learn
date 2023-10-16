@@ -35,8 +35,8 @@ In this activity, you deploy Azure SQL Database by using the Azure portal. Throu
     |                                  | **Password/Confirm Password**: Use a complex password that meets [strong password requirements](/sql/relational-databases/security/strong-passwords?azure-portal=true). Note this password for later use.|
     |**Want to use SQL elastic pool?** | No |
     |**Workload environment**          | Leave the default of **Production**. |
-    |**Compute + storage**             | Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage** . |
-    |**Backup storage redundancy**     | Leave the default of **Geo-redundant backup storage** |
+    |**Compute + storage**             | Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage**. |
+    |**Backup storage redundancy**     | Leave the default of **Geo-redundant backup storage**. |
 
 1. Select **Next: Networking**.  
 
@@ -46,7 +46,7 @@ In this activity, you deploy Azure SQL Database by using the Azure portal. Throu
 
 1. Select **Next: Security**.
 
-1. When you deploy Azure SQL Database in the portal, you're prompted about whether you want to **Enable Microsoft Defender for SQL** in a free trial. Select **Start free trial**.
+1. When you deploy Azure SQL Database in the Azure portal, you're prompted about whether you want to **Enable Microsoft Defender for SQL** in a free trial. Select **Start free trial**.
 
     After the free trial, you're billed according to the Microsoft Defender for Cloud Standard Tier pricing. After you enable it, you get functionality related to identifying and mitigating potential database vulnerabilities and threat detection.
 
@@ -54,7 +54,7 @@ In this activity, you deploy Azure SQL Database by using the Azure portal. Throu
 
 1. On the **Additional settings** tab for Azure SQL Database, you can select the `AdventureWorksLT` database as the sample in the Azure portal. For this exercise, for **Use existing data**, select **Sample**. Select **OK** when prompted.
 
-1. Select **Review + create**. Here, you can review your deployment selections and the Azure Marketplace terms. Review all the options to ensure that all of your selections match the exercise instructions, and then select **Create** to deploy the service.  
+1. Select **Review + create**. Review your deployment selections and the Azure Marketplace terms. Review all the options to ensure that all of your selections match the exercise instructions, and then select **Create** to deploy the service.  
 
    You're redirected to a pane where you can monitor the status of your deployment. You can also go to your resource group and select **Deployments** to open this same pane. It gives you the various deployments, their status, and more information. This deployment typically takes less than five minutes.  
 
@@ -84,7 +84,7 @@ Keep that in mind as a reference for comparison as you complete the following st
 
 ### Connect to your SQL Database by using SSMS
 
-1. First, get the logical server name. On the **Overview** pane for your database, locate the **Server name** information. The name is the fully qualified domain name (FQDN) of your logical server, for example, *aw-server0406.database.windows.net*. Hover your mouse at the end of the name and select **Copy to clipboard**.
+1. Get the logical server name. On the **Overview** pane for your database, locate the **Server name** information. The name is the fully qualified domain name (FQDN) of your logical server, for example, *aw-server0406.database.windows.net*. Hover your mouse at the end of the name and select **Copy to clipboard**.
 
 1. Connect to your Azure SQL Database logical server. On your local device, open SSMS if it's not open already and create a new connection. Select **Connect** > **Database Engine**.  
 
@@ -97,7 +97,9 @@ Keep that in mind as a reference for comparison as you complete the following st
     Select **Remember password**, and then select **Connect**.  
 
     > [!NOTE]
-    > Depending on your local configuration (for example, VPN), your client IP address might differ from the IP address that the Azure portal used during deployment. If it does, you get a message that says "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign in with the account you use for Azure and add a firewall rule for your client IP address. You can complete all of these steps by using the pop-up wizard in SSMS.  
+    > Depending on your local configuration (for example, VPN), your client IP address might differ from the IP address that the Azure portal used during deployment. If it does, you get a message that says: **Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access.**
+    >
+    > If you get this message, sign in with the account you use for Azure and add a firewall rule for your client IP address. You can complete all of these steps by using the pop-up wizard in SSMS.  
 
 1. Expand the databases and system databases. The view should be similar to the following example:
 

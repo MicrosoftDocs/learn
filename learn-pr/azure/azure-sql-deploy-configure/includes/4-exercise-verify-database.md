@@ -32,7 +32,7 @@ Now that you've seen how Azure SQL appears in SQL Server Management Studio (SSMS
 
 1. Running queries in Azure Data Studio is similar to SSMS. Right-click a database or server name and select **New query**.
 
-1. For Azure SQL Database, because you're not getting a full "server," **USE [DatabaseName]** isn't supported to change the database context. You must either change the connection to specifically connect to the database on which you want to run a query or use the dropdown. Change to the context of your `AdventureWorks` database by selecting the option next to `master` and run `SELECT @@VERSION`.  
+1. For Azure SQL Database, because you're not getting a full server, **USE [DatabaseName]** isn't supported to change the database context. You must either change the connection to specifically connect to the database on which you want to run a query or use the dropdown. Change to the context of your `AdventureWorks` database by selecting the option next to `master` and run `SELECT @@VERSION`.  
 
     :::image type="content" source="../media/4-new-query-azure-data-studio.png" alt-text="Screenshot of querying in Azure Data Studio.":::
 
@@ -81,13 +81,13 @@ In this option, walk through some common queries against system functions, dynam
 
 1. Determine the specific type of Azure SQL deployment, based on the number returned:
 
-    1 = Personal or Desktop Engine  
-    2 = Standard  
-    3 = Enterprise  
-    4 = Express  
-    5 = SQL Database  
-    6 = SQL Data Warehouse  
-    8 = SQL Managed Instance  
+    - 1 = Personal or Desktop Engine  
+    - 2 = Standard  
+    - 3 = Enterprise  
+    - 4 = Express  
+    - 5 = SQL Database  
+    - 6 = SQL Data Warehouse  
+    - 8 = SQL Managed Instance  
 
     Run the following T-SQL command to see if you get the expected result.
 

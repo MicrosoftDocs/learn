@@ -1,4 +1,4 @@
-After you select a workload to either migrate to or create in Azure SQL, you need to plan your deployment, deploy accordingly, and verify that the deployment was successful. In this unit, you learn various methods for each step in the process.
+After you select a workload to either migrate to or create in Azure SQL, you need to plan your deployment, deploy accordingly, and verify that the deployment succeeded. In this unit, you learn various methods for each step in the process.
 
 ## Predeployment planning
 
@@ -11,7 +11,7 @@ Before you start deploying things in Azure, it's important to understand your re
 * **Hardware**: Gen5, or something new?
 * **Sizing**: number of vCores and **Data max size**?  
 
-Perhaps before answering the preceding questions, you also need to pick a workload that's going to either be migrated to Azure SQL or be *born in the cloud*. If you're migrating, many tools and resources are available to help you plan, assess, migrate, and optimize your databases and application. Resources are provided at the end of this module.  
+Perhaps before answering the preceding questions, you also need to pick a workload that's going to either be migrated to Azure SQL or be *born in the cloud*. If you're migrating, many tools and resources are available to help you plan, assess, migrate, and optimize your databases and application. Resources are provided at the end of this module.
 
 ### Resource limits
 
@@ -59,7 +59,7 @@ Generally, if you're migrating, use size that's similar to what you use on-premi
 
 Choices for networking for Azure SQL Database and Azure SQL Managed Instance are different. When you deploy an Azure SQL Database, the current default is **No access**.  
 
-You can then choose to select a public endpoint or private endpoint. In the exercise that follows this unit, use the public endpoint and set the **Allow Azure services and resources to access this server** option to *yes*. Other Azure services, for example, Azure Data Factory or Azure Virtual Machines, can access the database if you configure it. You can also select **Add current client IP address** if you want to be able to connect from the client computer's IP address that you used to deploy Azure SQL Database.
+You can select a public endpoint or private endpoint. In the exercise that follows this unit, use the public endpoint and set the **Allow Azure services and resources to access this server** option to *yes*. Other Azure services, for example, Azure Data Factory or Azure Virtual Machines, can access the database if you configure it. You can also select **Add current client IP address** if you want to be able to connect from the client computer's IP address that you used to deploy Azure SQL Database.
 
 With Azure SQL Managed Instance, you deploy inside an Azure virtual network and a subnet that's dedicated to managed instances, which lets you have a secure, private IP address. Azure SQL Managed Instance can connect an on-premises network to a managed instance, connect a managed instance to a linked server or other on-premises data store, and connect a managed instance to other resources.
 
@@ -142,7 +142,7 @@ Other implementations to govern transaction log rate are built into the database
 
 After you complete your deployment, it's time to verify that deployment. In this stage, typically you check the results in the Azure portal or the Azure CLI, run some queries that verify your deployment configuration, and tweak as necessary.  
 
-For Azure SQL Managed Instance and Azure SQL Database, the first thing you might do is check the status of the database or instance with the Azure portal or the Azure CLI. Next, you can review the deployment details and activity log to ensure there were no failures or active issues.
+For Azure SQL Managed Instance and Azure SQL Database, the first thing you might do is check the status of the database or instance with the Azure portal or the Azure CLI. Next, you can review the deployment details and activity log to ensure that there are no failures or active issues.
 
 For Azure SQL Managed Instance, you then might check the error log, which is a common thing to do in SQL Server on-premises or in an Azure virtual machine. This capability isn't available in Azure SQL Database.  
 

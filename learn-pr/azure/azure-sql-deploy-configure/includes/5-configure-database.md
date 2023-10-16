@@ -1,4 +1,4 @@
-You've verified that your deployment was successful, and you know what resources are available. You might now want to configure your SQL managed instance, SQL database, or databases within a managed instance. These databases are called *managed databases*.
+You've verified that your deployment succeeded, and you know what resources are available. You might now want to configure your SQL managed instance, SQL database, or databases within a managed instance. These databases are called *managed databases*.
 
 ## Configure Azure SQL Managed Instance
 
@@ -62,7 +62,7 @@ For Azure SQL Managed Instance, there's a possible maximum storage size allowed 
 
 Just like SQL Server, the size of any new database is based on the size of the model database. The model database is a 100-MB data file and an 8-MB log file. Also like SQL Server, the size of model is configurable. You can alter the size and the number of files, but you don't have control over their physical location. Microsoft has commitments on I/O performance based on your deployment choice. Additionally, because remote storage is used in the General Purpose service tier, the data file and log file size can affect performance.
 
-For Azure SQL Database, there's a possible maximum size of database files based on your chosen SLO. You choose a **Data max size** up to this possible maximum size. **Maxsize** for database files (as defined by the `sys.database_files.max_size` column) can grow to **Data max size**.
+For Azure SQL Database, there's a possible maximum size of database files based on your chosen SLO. You choose a **Data max size** up to this possible maximum size. **Maxsize** for database files, as defined by the `sys.database_files.max_size` column, can grow to **Data max size**.
 
 To understand this idea of **Data max size** versus **Maxsize**, consider an example where a 1 TB (**Data max size**) General Purpose database is deployed. When you do this deployment, your database requires only ~500 GB, not 1 TB. As your database grows and approaches **Data max size**, **Maxsize** for database files also grows up to the 1-TB level.
 
