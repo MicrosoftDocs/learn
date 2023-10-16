@@ -23,7 +23,7 @@ When you deploy a Bicep file from your own computer, you use the Azure CLI or Az
 > [!TIP]
 > In this module, you'll create a workload identity for your workflow to use. The module [Authenticate your Azure deployment workflow by using workload identities](xref:learn.azure.authenticate-azure-deployment-workflow-workload-identities) provides a more detailed explanation of workload identities including how they work, as well as how you create them, assign them roles, and manage them.
 
-Deployment by workflow requires authentication, too. Because workflows run without human intervention, workflows authenticate to Azure by using a _workload identity_. GitHub and Azure Active Directory work together to securely authenticate your workflow without needing any credentials.
+Deployment by workflow requires authentication, too. Because workflows run without human intervention, workflows authenticate to Azure by using a _workload identity_. GitHub and Microsoft Entra ID work together to securely authenticate your workflow without needing any credentials.
 
 When your workflow needs to communicate with Azure, a workflow step signs in to Azure by using a workload identity. Then, the steps that are defined in the workflow use the workflow's _identity_.
 
@@ -40,7 +40,7 @@ Before your workflow can execute commands against your Azure environment, it fir
 
 :::code language="yaml" source="code/4-workflow.yml" range="1-8, 13-24" highlight="5-7, 16-20":::
 
-The `azure/login` action requires that you provide three pieces of information to use a workload identity: an Azure AD application ID, your Azure AD tenant (directory) ID, and the Azure subscription ID that you want to work with.
+The `azure/login` action requires that you provide three pieces of information to use a workload identity: a Microsoft Entra application ID, your Microsoft Entra tenant (directory) ID, and the Azure subscription ID that you want to work with.
 
 After this action has executed, your runner will be authenticated and able to run statements against your Azure environment.
 
@@ -115,4 +115,4 @@ When your workflow starts, the runner that's running your deployment steps has a
 > [!TIP]
 > Just like Bicep parameters, you don't need to create variables for everything. It's a good idea to create variables for anything that might change between environments, and GitHub secrets for anything that's secret. Because the workflow will always use the same Bicep file, you don't need to create a variable for the path.
 
-In this module, you'll use GitHub secrets to store the information the `azure/login` task needs to sign in to Azure: your Azure AD subscription and tenant ID, and the workload identity's application registration ID.
+In this module, you'll use GitHub secrets to store the information the `azure/login` task needs to sign in to Azure: your Microsoft Entra subscription and tenant ID, and the workload identity's application registration ID.
