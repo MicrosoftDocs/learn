@@ -287,7 +287,7 @@ Site Recovery creates default settings and replication policy for the target reg
         **Replication group**
       :::column-end:::
       :::column:::
-        If your application needs multi-VM consistency across VMs, you can create a replication group for those VMs. By default, the selected VMs are not part of any replication group.
+        If your application needs multi-VM consistency across VMs, you can create a replication group for those VMs. By default, the selected VMs aren't part of any replication group.
       :::column-end:::
     :::row-end:::
 
@@ -305,7 +305,7 @@ If the source VM has Azure disk encryption (ADE) enabled, review the settings.
 
 1. Verify the settings:
 
-     - **Disk encryption key vaults**: By default, Site Recovery creates a new key vault on the source VM disk encryption keys, with an `asr` suffix. If the key vault already exists, it is reused.
+     - **Disk encryption key vaults**: By default, Site Recovery creates a new key vault on the source VM disk encryption keys, with an `asr` suffix. If the key vault already exists, it's reused.
      - **Key encryption key vaults**: By default, Site Recovery creates a new key vault in the target region. The name has an `asr` suffix and is based on the source VM encryption keys. If the key vault created by Site Recovery already exists, it's reused.
 2. Select **Customize** to select custom key vaults.
 
