@@ -40,7 +40,7 @@ A Contoso customer residing in Spain submitted a DSR form through the corporate 
 One of Contoso's customers who resides in The Netherlands has submitted a DSR form through the corporate website. They’re requesting the deletion of their personal data stored in system-generated logs. To respond to the DSR, take the following steps:
 
 1. Sign into the Azure portal.
-1. Navigate to Azure AD, and then select **Users**.
+1. Navigate to Microsoft Entra ID, and then select **Users**.
 1. In the **All users** blade, select the check box for the data subject's user account.
 1. Select **Delete**, and then select **Yes** to confirm.
 1. In the **Deleted users** blade, select the data subject's user account check box.
@@ -69,4 +69,4 @@ The following table lists tools that you can use for fulfilling DSRs for system-
 |------|------|
 |Microsoft Data Log Export|Tenant administrators can export system-generated logs by using the Microsoft Data Log Export.|
 |User Privacy|Located in the **Policy** blade in the Azure portal, you can use this tool to access and export system-generated logs in Office 365.|
-|Azure AD Admin Center|You can delete a data subject from Azure AD and its system-generated logs.|
+|Microsoft Entra Admin Center|You can delete a data subject from Microsoft Entra ID and its system-generated logs.|

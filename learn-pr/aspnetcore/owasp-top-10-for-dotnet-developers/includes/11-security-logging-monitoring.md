@@ -21,7 +21,7 @@ Make sure you have answers to the following questions:
 * Who has viewed or downloaded a specific file?
 * Have any incorrect authentication attempts occurred?
 * Who has logged in recently?
-* Have authentication events happened at unexpected times or for unexpected locations (Azure Active Directory Conditional Access)?
+* Have authentication events happened at unexpected times or for unexpected locations (Microsoft Entra Conditional Access)?
 
 .NET comes with a LoggerFactory, which is in Microsoft.Extensions.Logging.
 

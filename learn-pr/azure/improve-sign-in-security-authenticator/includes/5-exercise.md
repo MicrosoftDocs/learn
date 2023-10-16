@@ -22,7 +22,7 @@ Validate the user experience by signing in as a test user
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-Here, you'll create an Azure AD user account for testing and enable it for Microsoft Authenticator. 
+Here, you'll create a Microsoft Entra user account for testing and enable it for Microsoft Authenticator. 
 
 :::image type="content" border="true" source="../media/phone-sign-in-microsoft-authenticator-app.png" alt-text="Screenshot of Microsoft Authenticator sign-in.":::
 
@@ -64,7 +64,7 @@ You'll confirm the test user can set up Microsoft Authenticator and have push no
 <!-- Introduction paragraph -->
 Create a user account for the purposes of testing the Microsoft Authenticator registration campaign.
 
-1. Sign in to the Azure portal, click **Azure Active Directory** > **Manage** > **Users**.
+1. Sign in to the Azure portal, click **Microsoft Entra ID** > **Manage** > **Users**.
 1. Select **New user** at the top of the pane.
 1. In the **User name** field, enter the username of the user account. For example, `contosouser1@contoso.com`. Be sure to change `contoso.com` to the name of the tenant domain.
 1. In the **Name** field, enter the name of the user of the account. For example, `contosouser1`.

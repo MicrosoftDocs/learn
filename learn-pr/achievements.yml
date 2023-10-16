@@ -2317,3 +2317,24 @@ achievements:
   title: Configure SIEM security operations using Microsoft Sentinel
   summary: Get started with Microsoft Sentinel security operations by configuring the Microsoft Sentinel workspace, connecting Microsoft services and Windows security events to Microsoft Sentinel, configuring Microsoft Sentinel analytics rules, and responding to threats with automated responses.
   iconUrl: /training/achievements/configure-your-azure-sentinel-environment.svg
+- uid: learn.oxford.teach-ai-with-project-bonsai.badge
+  type: badge
+  title: Teach AI like you would a human with Project Bonsai
+  summary: Implement a monolithic (one concept) brain, set up your Bonsai workplace, and train a brain.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.autonomous-systems.intro-to-project-bonsai.badge
+  type: badge
+  title: Introduction to Microsoft Project Bonsai
+  summary: Microsoft Project Bonsai enables you to more quickly and easily implement AI-powered automation development. It can simplify machine teaching so you can train and deploy smarter autonomous systems.
+  iconUrl: /training/achievements/autonomous-systems/bonsai-introduction.svg
+- uid: learn.oxford.build-industrial-brain.badge
+  type: badge
+  title: Build an industrial strength brain
+  summary: Train a modular brain for real industrial processes. Decompose the tasks into skills, do Machine Teaching experimentation to get the orchestration and the training completed successfully. Evaluate brain performance using training graphs and custom assessments. 
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.oxford.autonomous-ai-implementation-engineer.trophy
+  type: trophy
+  title: Autonomous AI implementation engineer
+  summary: Learn to build the Machine Teaching for Autonomous AI brains that you learned to design in the “Autonomous AI Design Architect” learning path.
+  iconUrl: /training/achievements/generic-badge.svg
+
