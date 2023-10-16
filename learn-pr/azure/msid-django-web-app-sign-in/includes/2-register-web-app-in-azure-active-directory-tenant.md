@@ -1,39 +1,43 @@
 Organizations want to keep their data safe from unauthenticated and unauthorized users. Developers can use the Microsoft identity platform to add authentication to web apps, so that users can sign in and obtain tokens. 
 
-In our example of a banking company, users need to authenticate themselves to access protected data. To ensure that a web app can use the Microsoft identity platform, you must register the app with Azure Active Directory (Azure AD). In this unit, you learn about registering a web app in an Azure AD tenant.
+In our example of a banking company, users need to authenticate themselves to access protected data. To ensure that a web app can use the Microsoft identity platform, you must register the app with Microsoft Entra ID. In this unit, you learn about registering a web app in a Microsoft Entra tenant.
 
-## Azure AD tenants and user accounts
+<a name='azure-ad-tenants-and-user-accounts'></a>
 
-An Azure AD tenant represents an organization. You register and manage your apps in an Azure AD tenant. To use the Microsoft identity platform for identity and access management, you need access to the Azure AD tenant.
+## Microsoft Entra tenants and user accounts
 
-Each Azure AD tenant has its own representation of work and school identities, consumer identities (if it's an Azure AD B2C tenant), and app registrations. An app registration inside your tenant allows authentications only from accounts within your tenant (single-tenant apps) or from all tenants (multitenant apps).
+A Microsoft Entra tenant represents an organization. You register and manage your apps in a Microsoft Entra tenant. To use the Microsoft identity platform for identity and access management, you need access to the Microsoft Entra tenant.
+
+Each Microsoft Entra tenant has its own representation of work and school identities, consumer identities (if it's an Azure AD B2C tenant), and app registrations. An app registration inside your tenant allows authentications only from accounts within your tenant (single-tenant apps) or from all tenants (multitenant apps).
 
 The Microsoft identity platform helps you build applications that your users and customers can sign in to by using several identity types. These identities include:
 
-- Work or school accounts, provisioned through Azure AD.
+- Work or school accounts, provisioned through Microsoft Entra ID.
 - Personal Microsoft accounts, like Skype, Xbox, and Outlook.com.
 - Social or local accounts, by using Azure AD B2C.
 
-This module focuses on authenticating a work or school accounts provisioned through Azure AD.
+This module focuses on authenticating a work or school accounts provisioned through Microsoft Entra ID.
 
 :::image type="content" source="../media/02-azure-active-directory-tenants-and-users.png" alt-text="Screenshot of the Azure portal that shows the page for managing users and tenants.":::
 
-## Azure AD app registration
+<a name='azure-ad-app-registration'></a>
 
-For a web app to use the Microsoft identity platform to enable user authentication, you must register a new app with Azure AD. You can do this in the [Azure portal](https://portal.azure.com/). Your web app should live in an Azure AD tenant.
+## Microsoft Entra app registration
 
-When you register a web app in Azure AD, ensure that the redirect URI of the app points to the callback URL of the web app. This URL must match the redirect URI that the app provides when the authentication process starts. The authorization code will be sent to this endpoint, so you need to configure any authentication libraries and/or middleware to listen on this endpoint to receive the authorization code.
+For a web app to use the Microsoft identity platform to enable user authentication, you must register a new app with Microsoft Entra ID. You can do this in the [Azure portal](https://portal.azure.com/). Your web app should live in a Microsoft Entra tenant.
+
+When you register a web app in Microsoft Entra ID, ensure that the redirect URI of the app points to the callback URL of the web app. This URL must match the redirect URI that the app provides when the authentication process starts. The authorization code will be sent to this endpoint, so you need to configure any authentication libraries and/or middleware to listen on this endpoint to receive the authorization code.
 
 You should also specify a sign-out URL so that the authentication libraries and/or middleware deletes any cached tokens or other data that's needed only for signed-in users.
 
 :::image type="content" source="../media/02-azure-active-directory-portal-new-app-details.png" alt-text="Screenshot of the Azure portal that shows a web app registration form.":::
 
-The web app also needs a client secret to sign in with Azure AD to exchange the authorization code for an access token.
+The web app also needs a client secret to sign in with Microsoft Entra ID to exchange the authorization code for an access token.
 
 :::image type="content" source="../media/02-azure-active-directory-portal-new-app-secret.png" alt-text="Screenshot of Azure portal that shows the page for creating a new app secret.":::
 
-You need three things from the Azure AD app registration:
+You need three things from the Microsoft Entra app registration:
 
-- **Tenant ID**: ID of your Azure AD directory.
+- **Tenant ID**: ID of your Microsoft Entra directory.
 - **Client ID**: Unique autogenerated ID of the app. This is also called the application ID.
 - **Client secret**: Secret that you created during app registration.

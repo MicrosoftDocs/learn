@@ -1,4 +1,4 @@
-Now that you know the basics of Azure Kubernetes Service, let's see what information you need to set up a simple AKS cluster. This information should help you decide how much additional configuration AKS may require when integrating with existing development and deployment processes.
+Now that you know the basics of Azure Kubernetes Service, let's see what information you need to set up a simple AKS cluster. This information should help you decide how much more configuration AKS requires when integrating with existing development and deployment processes.
 
 ## Creating an AKS cluster
 
@@ -6,10 +6,10 @@ At its core, an AKS cluster is a cloud hosted Kubernetes cluster. Unlike a custo
 
 You have two options when you create an AKS cluster. You either use the Azure portal or Azure CLI. Both options require you to configure basic information about the cluster. For example:
 
-- The Kubernetes cluster name
-- The version of Kubernetes to install
-- A DNS prefix to make the master node publicly accessible
-- The initial node pool size
+- The Kubernetes cluster name.
+- The version of Kubernetes to install.
+- A DNS prefix to make the master node publicly accessible.
+- The initial node pool size.
 
 The initial node pool size defaults to two nodes, however it's recommended that at least three nodes are used for a production environment.
 
@@ -22,7 +22,7 @@ Unless specified, the Azure service creation workflow creates a Kubernetes clust
 
 ![Image showing combined services used to accelerate development and deployment.](../media/3-development-accelerate.png)
 
-AKS supports the Docker image format that means that you can use any development environment to create a workload, package the workload as a container and deploy the container as a Kubernetes pod.
+AKS supports the Docker image format. That means that you can use any development environment to create a workload, package the workload as a container and deploy the container as a Kubernetes pod.
 
 Here you use the standard Kubernetes command-line tools or the Azure CLI to manage your deployments. The support for the standard Kubernetes tools ensures that you don't need to change your current workflow to support an existing Kubernetes migration to AKS.
 
@@ -34,8 +34,8 @@ Bridge to Kubernetes allows you to run and debug code on your development comput
 
 Using Bridge to Kubernetes lets you:
 
-- Avoid having to build and deploy code to your cluster by instead creating a direct connection from your development computer to your cluster, allowing you to quickly test and develop your service in the context of the full application without creating any Docker or Kubernetes configuration. 
-- Redirect traffic between your connected Kubernetes cluster and your development computer, which allows code on your development computer and services running in your Kubernetes cluster to communicate as if they are in the same Kubernetes cluster. 
+- Avoid having to build and deploy code to your cluster. Instead, you create a direct connection from your development computer to your cluster. That allows you to quickly test and develop your service in the context of the full application without creating any Docker or Kubernetes configuration.
+- Redirect traffic between your connected Kubernetes cluster and your development computer. This bridge allows code on your development computer and services running in your Kubernetes cluster to communicate as if they are in the same Kubernetes cluster.
 - Provide a way to replicate environment variables and mounted volumes available to pods in your Kubernetes cluster in your development computer, which allows you to quickly work on your code without having to replicate those dependencies manually.
 
 ## Deployment Center
@@ -48,7 +48,7 @@ With Azure DevOps Projects you can:
 - Create an Azure Application Insights resource for monitoring an AKS cluster
 - Enable Azure Monitor for containers to monitor performance for the container workloads on an AKS cluster
 
-You can add richer DevOps capabilities by extending the default configured DevOps pipeline. For example, you can add approvals before deploying, provision additional Azure resources, run scripts or upgrade workloads.
+You can add richer DevOps capabilities by extending the default configured DevOps pipeline. For example, you can add approvals before deploying, provision more Azure resources, run scripts or upgrade workloads.
 
 ## Azure Service Integration
 

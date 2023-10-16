@@ -3,12 +3,14 @@ uid: learn.wwl.configure-azure-active-directory
 metadata:
   title: Configure Azure Active Directory
   description: "Learn how to configure Azure Active Directory, including features like Azure AD join and self-service password reset."
-  ms.date: 08/18/2023
+  ms.date: 10/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
+  ms.custom:
+  - N/A
   ms.service: active-directory
-title: Configure Azure Active Directory
+title: Configure Microsoft Entra ID
 summary: Learn how to configure Azure Active Directory, including features like Azure AD join and self-service password reset.
 abstract: |
   In this module, you learn how to:
