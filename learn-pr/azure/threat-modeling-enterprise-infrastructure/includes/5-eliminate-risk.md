@@ -11,11 +11,11 @@ Visit [Microsoft cloud security benchmark](/azure/security/benchmarks/overview) 
 |Issue|Solution|
 |-----|--------|
 |File access per user|Use [role-based access control](/mem/configmgr/core/understand/fundamentals-of-role-based-administration), which allows an administrator to grant access based on roles instead of specific employees. It makes it easier to grant, manage, and revoke access. If an individual employee needs access to a highly classified resource, use [just-in-time access](/azure/azure-resource-manager/managed-applications/request-just-in-time-access). It grants the employee access to the resource for a short period of time.|
-|No MFA|Enable MFA across each SaaS offering. Integrate with [Microsoft Azure Active Directory connect](/azure/active-directory/hybrid/whatis-azure-ad-connect) for hybrid identities where applicable.|
-|No password or group policy|Configure [security policy settings](/windows/security/threat-protection/security-policy-settings/security-policy-settings) for all endpoints with group policy or [Azure Active Directory domain services](/azure/active-directory-domain-services/password-policy).|
+|No MFA|Enable MFA across each SaaS offering. Integrate with [Microsoft Entra Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect) for hybrid identities where applicable.|
+|No password or group policy|Configure [security policy settings](/windows/security/threat-protection/security-policy-settings/security-policy-settings) for all endpoints with group policy or [Microsoft Entra Domain Services](/azure/active-directory-domain-services/password-policy).|
 |No shared account protection|Avoid using shared accounts wherever possible. If engineering teams require a service account as part of automation or engineering, use [group managed service accounts](/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts).|
-|No dedicated administrator account use|Use [Microsoft Identity Manager](/microsoft-identity-manager/microsoft-identity-manager-2016) for on-premises or [Azure Active Directory Privilege Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) for cloud privileged access management.|
-|Decentralized identities|Integrate each SaaS offering with [Azure Active Directory connect](/azure/active-directory/hybrid/whatis-azure-ad-connect) for hybrid identities where applicable. Rotate passwords on all service accounts.|
+|No dedicated administrator account use|Use [Microsoft Identity Manager](/microsoft-identity-manager/microsoft-identity-manager-2016) for on-premises or [Microsoft Entra ID Privilege Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) for cloud privileged access management.|
+|Decentralized identities|Integrate each SaaS offering with [Microsoft Entra Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect) for hybrid identities where applicable. Rotate passwords on all service accounts.|
 
 ## Secure development
 

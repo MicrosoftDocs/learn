@@ -8,9 +8,9 @@ Autopilot offers the following advantages over on-premises deployment methods:
  -  Configuring Autopilot deployments are relatively simple compared to traditional image creation and management.
  -  With no images to deploy, heavy bandwidth consumption is no longer a concern.
 
-Windows Autopilot is cloud-driven and based around Azure AD Premium and Microsoft Intune. Using Windows Autopilot, you can:
+Windows Autopilot is cloud-driven and based around Microsoft Entra ID P1 or P2 and Microsoft Intune. Using Windows Autopilot, you can:
 
- -  Join devices to Azure AD automatically.
+ -  Join devices to Microsoft Entra ID automatically.
  -  Auto enroll your users' devices into MDM services.
  -  Restrict the creation of the Administrator account.
  -  Customize the OOBE content specifically to your organization.
