@@ -7,9 +7,9 @@ By using workload identities, you can start to build deployment workflows that s
 ## Learn more
 
 - [What are workload identities?](/azure/active-directory/develop/workload-identities-overview)
-- [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
+- [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals)
 - [Workload identity federation](/azure/active-directory/develop/workload-identity-federation)
-  - [Azure Active Directory - Configure an app to trust a GitHub repo](/azure/active-directory/develop/workload-identity-federation-create-trust-github)
+  - [Microsoft Entra ID - Configure an app to trust a GitHub repo](/azure/active-directory/develop/workload-identity-federation-create-trust-github)
   - [GitHub - Configuring OpenID Connect in Azure](https://docs.github.com/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure)
 - [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)
 - [Azure built-in roles](/azure/role-based-access-control/built-in-roles)

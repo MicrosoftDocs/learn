@@ -17,9 +17,9 @@ quiz:
   questions:
   - content: Which one of these resource types can't be moved between resource groups?
     choices:
-    - content: Azure Active Directory Domain Services
+    - content: Microsoft Entra Domain Services
       isCorrect: true
-      explanation: According to the move operation support list, Azure AD DS can't be moved. 
+      explanation: According to the move operation support list, Microsoft Entra Domain Services can't be moved. 
     - content: Azure Storage accounts
       isCorrect: false
       explanation: According to the move operation support list, Azure Storage accounts can be moved.

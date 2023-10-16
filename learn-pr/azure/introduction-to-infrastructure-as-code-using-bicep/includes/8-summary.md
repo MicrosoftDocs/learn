@@ -1,6 +1,6 @@
 To stay competitive and to meet customer demand, your toy company needs the ability to automate its Azure infrastructure deployments by using infrastructure as code.
 
-In this module, you learned how using infrastructure as code makes it possible for you to automate your infrastructure provisioning and configuration. It helps you and your organization gain higher confidence in your deployments by providing consistency. Infrastructure as code can help you manage multiple environments, including new environments and non-production environments. You can gain a better understanding of your cloud resources by using infrastructure as code.
+In this module, you learned how using infrastructure as code makes it possible to automate your infrastructure provisioning and configuration. It helps you and your organization gain higher confidence in your deployments by providing consistency. Infrastructure as code can help you manage multiple environments, including new environments and nonproduction environments. You can gain a better understanding of your cloud resources by using infrastructure as code.
 
 Imagine how much time it would take to deploy new environments manually by using only the Azure portal. You must deploy each resource one by one, making sure to keep configurations identical. When you want to add a new resource or change an existing resource, you must manually create the resource for each environment. Infrastructure as code can help you define your resources in a single place and then apply the same configuration to all your environments.
 
