@@ -4,7 +4,7 @@ The Azure portal offers an intuitive interface for performing most common admini
 
 ## Deployment via Microsoft Azure PowerShell cmdlets
 
-PowerShell is a powerful and extensible framework that has been widely adopted by customers that deploy larger numbers of systems in Azure. It is a common choice of administrators with Windows background, although with the release of PowerShell 6.0, it became possible to run it also on Linux and macOS.
+PowerShell is a powerful and extensible framework that has been widely adopted by customers that deploy larger numbers of systems in Azure. It's a common choice of administrators with Windows background, although with the release of PowerShell 6.0, it became possible to run it also on Linux and macOS.
 
 ## Deployment via Microsoft Azure CLI commands
 

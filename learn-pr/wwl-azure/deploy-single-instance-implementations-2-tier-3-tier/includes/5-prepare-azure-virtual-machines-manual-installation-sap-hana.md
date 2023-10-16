@@ -94,7 +94,7 @@ Based on the SAP HANA TDI storage requirements, the following Azure premium stor
   :::column-end:::
 :::row-end:::
 
-In the suggested disk configuration, the HANA data volume and log volume are placed on the same set of premium storage disks that are striped with LVM or mdadm. It isn't necessary to define any RAID redundancy level because Azure premium storage provides sufficient level of redundancy.
+In the suggested disk configuration, the HANA data volume and log volume are placed on the same set of premium storage disks that are striped with LVM or mdadm. It'sn't necessary to define any RAID redundancy level because Azure premium storage provides sufficient level of redundancy.
 
 You can add more premium storage disks to the HANA DBMS VMs to store database or transaction log backups.
 
@@ -123,7 +123,7 @@ It isn't mandatory to structure your file systems this way. You have other optio
 
 For the SAP HANA DB VM, during a database installation, when you use SAPinst with SWPM and the typical installation option, everything is installed under **/hana** and **/usr/sap**. The default location for the SAP HANA log backup is under **/usr/sap**. Again, it's important to prevent the root file system from running out of storage space. Make sure that there's enough free space under **/hana** and **/usr/sap** before you install SAP HANA by using SWPM.
 
-If during installation you receive a message that there is no sufficient swap space, you can manually configure a swap file by using dd, mkswap, and swapon. Another option is to configure swap space by using the Linux VM agent as described earlier.
+If during installation you receive a message that  there isn't sufficient swap space, you can manually configure a swap file by using dd, mkswap, and swapon. Another option is to configure swap space by using the Linux VM agent as described earlier.
 
 ## The **/etc/hosts** file
 
