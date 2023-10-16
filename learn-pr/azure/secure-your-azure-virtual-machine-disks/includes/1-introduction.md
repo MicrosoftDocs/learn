@@ -1,4 +1,4 @@
-Suppose you work for a warehouse company that's transitioning to the cloud. Currently, you use a hybrid environment consisting of on-premises Windows servers, Azure Virtual Machines (VMs), and Azure Active Directory. Your company has developed a custom in-house business-to-business (B2B) infrastructure, supporting secure order management with your suppliers. Some of your suppliers use Linux servers, and you run several Linux servers in Azure to support these suppliers.
+Suppose you work for a warehouse company that's transitioning to the cloud. Currently, you use a hybrid environment consisting of on-premises Windows servers, Azure Virtual Machines (VMs), and Microsoft Entra ID. Your company has developed a custom in-house business-to-business (B2B) infrastructure, supporting secure order management with your suppliers. Some of your suppliers use Linux servers, and you run several Linux servers in Azure to support these suppliers.
 
 Your security policies mandate that data must be encrypted using your own encryption keys, and that your company is responsible for managing these keys.
 

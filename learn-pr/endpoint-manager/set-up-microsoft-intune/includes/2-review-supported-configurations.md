@@ -19,7 +19,7 @@ Different administrative tasks require that you use one of the following adminis
 
 - [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 - [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Azure Active Directory admin center](https://aad.portal.azure.com)
+- [Microsoft Entra admin center](https://aad.portal.azure.com)
 
 The following browsers are supported for these portals:
 
