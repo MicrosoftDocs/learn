@@ -1,12 +1,12 @@
-To optimize the manageability of Azure Linux VMs, you must understand the interaction between the Azure platform and the VM OS. This interaction is particularly significant during VM provisioning.
+To optimize the manageability of Azure Linux VMs, you must understand the interaction between the Azure platform and the VM operating system (OS). This interaction is especially significant during VM provisioning.
 
 ## Platform-supported management agents
 
-*VM provisioning* is the process of creating the Azure VM configuration parameter values, such as hostname, username, and password, that are available to the OS during the startup or *boot* process. A provisioning agent consumes these values, configures the OS, and reports the results when completed.
+*VM provisioning* is the process of creating the Azure VM configuration parameter values, such as hostname, username, and password, that are available to the OS during the startup or *boot* process. A *provisioning agent* consumes these values, configures the OS, and reports the results when completed.
 
-Azure supports *cloud-init provisioning agents* and *Azure Linux Agent (WALA)*.
+Azure supports cloud-init provisioning agents and Azure Linux Agent (WALA).
 
-- **Cloud-init provisioning agents** are a widely-used approach to customizing Linux during an initial boot. You can use cloud-init to install packages and write files, or to configure users and security. Because cloud-init is called during the initial boot process, you don't need any more steps or required agents to apply the configuration. For more information, see the [Cloud-init documentation](https://cloudinit.readthedocs.io/latest).
+- **Cloud-init provisioning agents** are a widely used approach to customizing Linux during an initial boot. You can use cloud-init to install packages and write files, or to configure users and security. Because cloud-init is called during the initial boot process, you don't need any more steps or required agents to apply the configuration. For more information, see the [Cloud-init documentation](https://cloudinit.readthedocs.io/en/latest).
 
   >[!NOTE]
   >Microsoft is enhancing the VM configuration process to use cloud-init instead of the Linux Agent. Existing cloud-init customers can use their current cloud-init scripts, and new customers can use rich cloud-init configuration functionality.
@@ -23,11 +23,13 @@ Boot diagnostics help you analyze boot failures by collecting serial log informa
 
 ### Use the Azure VM serial console
 
-You can use Azure VM serial console access for troubleshooting boot failures. Serial console provides a text-based console over the Linux VM's `ttyS0` serial port. This access is independent of network connectivity or OS state. Azure users with at least **Contributor**-level permissions can access the serial console by using the Azure portal or Azure CLI. You must enable boot diagnostics to use the serial console.
+You can use Azure VM serial console access for troubleshooting boot failures. Serial console provides a text-based console over the Linux VM's `ttyS0` serial port. This access is independent of network connectivity or OS state.
+
+Azure users with at least **Contributor**-level permissions can access the serial console by using the Azure portal or Azure CLI. You must enable boot diagnostics to use the serial console.
 
 The serial console can help you restore a VM to an operational state in situations like the following scenarios:
 
-- Broken file system table `fstab` files
+- Broken file system table *fstab* files
 - Misconfigured firewall rules
 - File system corruption
 - SSH configuration issues
