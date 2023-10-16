@@ -1,4 +1,4 @@
-Now we will explore how to protect the SQL Server back end of an application using a combination of SQL Server business continuity and disaster recovery (BCDR) technologies and Azure Site Recovery.
+Now we'll explore how to protect the SQL Server back end of an application using a combination of SQL Server business continuity and disaster recovery (BCDR) technologies and Azure Site Recovery.
 
 SQL Server can be deployed in many ways:
 

@@ -122,7 +122,7 @@ select * from sys.fn_db_backup_file_snapshots ('AdventureWorks2016') ;
 To delete an individual backup file-snapshot of a database base blob, use the sys.sp\_delete\_backup\_file\_snapshot system stored procedure. A primary use case for this system stored procedure is to delete orphaned file-snapshot files that remain after a backup file was deleted using a method other than the sys.sp\_delete\_backup system stored procedure.
 
 > [!WARNING]
-> Deleting an individual file-snapshot that is part of a file-snapshot backup set will invalidate the backup set.
+> Deleting an individual file-snapshot that's part of a file-snapshot backup set will invalidate the backup set.
 
 The following example deletes the specified backup file-snapshot. The URL for the specified backup was obtained using the sys.fn\_db\_backup\_file\_snapshots system function.
 
