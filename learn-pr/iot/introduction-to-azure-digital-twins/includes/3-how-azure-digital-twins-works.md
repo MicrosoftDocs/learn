@@ -1,37 +1,6 @@
 Here, you'll learn more about how an Azure Digital Twins solution is built. You'll see these concepts applied to the factory module scenario, and understand how an Azure Digital Twins graph might look for that environment.
 
-## Set up hands-on session
-
-For a hands-on experience with Azure Digital Twins, this unit provides Azure CLI commands that you can run with an Azure subscription. If you don't have an Azure subscription already, [create one for free now](https://azure.microsoft.com/free).
-
-In another browser tab, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/).
-
-Run the following commands in the Cloud Shell to set up your session and create a resource group to use for this unit. There is one placeholder for your Azure subscription ID value.
-
-```azurecli
-    az account set --subscription "<your-Azure-subscription-ID>"
-    az group create --name introduction-to-azure-digital-twins --location westcentralus
-```
-
-Next, create an Azure Digital Twins instance. Run the following commands in the Cloud Shell to generate a random name for the instance and then create a new instance with that name.
-
-```azurecli
-    INSTANCE_NAME="Distribution-Center-$RANDOM"
-    echo "Your Azure Digital Twins instance name will be: $INSTANCE_NAME"
-
-    az dt create --dt-name $INSTANCE_NAME --resource-group introduction-to-azure-digital-twins --location  
-```
-
-Finally, grant yourself the *Azure Digital Twins Data Owner* role on the instance, which is required to edit its data. Insert the username associated with your Azure account into the following command and run it in the Cloud Shell.
-
->[!IMPORTANT]
-> This command can only be run by someone with subscription-level permission to manage access to Azure resources. For instance, if you've created your own subscription and are the **Owner**, you'll be able to run it. If you only have the **Contributor** role in the subscription, this command will return an error.
->
-> If you find you're unable to run this command and you want to follow along with the hands-on exercises in this unit, have someone with elevated permissions (such as an Owner, Account Admin, or User Access Administrator + Contributor) run this command on your behalf.
-
-```azurecli
-    az dt role-assignment create --dt-name $INSTANCE_NAME --assignee "<your-Azure-AD-username>" --role "Azure Digital Twins Data Owner"
-```
+[!include [Instructions to set up Azure Digital Twins instance]](../../includes/set-up-azure-digital-twins.md)
 
 ## Define models
 
@@ -241,5 +210,5 @@ For further data processing or storage, you can create **event routes** that exp
 In your Cloud Shell, run the following command to delete the resources that you created in the hands-on exercises for this unit.
 
 ```azurecli
-az group delete --name introduction-to-azure-digital-twins
+az group delete --name azure-digital-twins-training
 ```
