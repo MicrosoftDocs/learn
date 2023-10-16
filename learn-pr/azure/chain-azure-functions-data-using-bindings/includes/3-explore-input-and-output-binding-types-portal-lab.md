@@ -41,7 +41,7 @@ Let's create a function app that we can use throughout this module. A function a
     | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | The resource group for the sandbox. |
     | **Instance Details** |
     | Function App name | Enter a *globally unique name* | This name identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-    | Publish | Code | Option to publish code files or a Docker container. |
+    | Do you want to deploy code or container image? | Code | Option to publish code files or a Docker container. |
     | Runtime stack | From the dropdown list, select **Node.js** | The sample code in this module is written in JavaScript. |
     | Version | Accept *default* | The default value is sufficient for this exercise. |
     | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
@@ -73,7 +73,7 @@ Let's create a function app that we can use throughout this module. A function a
     | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | The resource group for the sandbox. |
     | **Instance Details** |
     | Function App name | Enter a *globally unique name* | This name identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-    | Publish | Code | Option to publish code files or a Docker container. |
+    | Do you want to deploy code or container image? | Code | Option to publish code files or a Docker container. |
     | Runtime stack | From the dropdown list, select *PowerShell Core* | The sample code for this module is written in PowerShell. |
     | Version | Accept *default* | The default value is sufficient for this exercise. |
     | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
