@@ -60,7 +60,7 @@ To configure Azure AD single sign-on with SAP HANA, complete the following steps
 5. In the **Name** box of the **General Data** screen area, enter a name for the new SAML SSO identity provider.
 
     > [!NOTE]
-    > The name of the SAML IDP is mandatory and must be unique. It appears in the list of available SAML IDPs that is displayed when you select SAML as the authentication method for SAP HANA XS applications to use. For example, you can do this in the Authentication screen area of the XS Artifact Administration tool.
+    > The name of the SAML IDP is mandatory and must be unique. It appears in the list of available SAML IDPs that's displayed when you select SAML as the authentication method for SAP HANA XS applications to use. For example, you can do this in the Authentication screen area of the XS Artifact Administration tool.
 6. Select **Save** to save the details of the SAML identity provider and to add the new SAML IDP to the list of known SAML IDPs.
 7. In HANA Studio, within the system properties of the **Configuration** tab, filter the settings by **saml**. Then adjust the **assertion\_timeout** from 10 sec to 120 sec.
 
