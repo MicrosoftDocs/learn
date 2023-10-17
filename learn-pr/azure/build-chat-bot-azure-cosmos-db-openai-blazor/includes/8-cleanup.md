@@ -1,4 +1,4 @@
-After completing the project, you may wish to clean up your development environment or return it to its typical state. You may also wish to delete your resource group.
+After completing the project, you might wish to clean up your development environment or return it to its typical state. You might also wish to delete your resource group.
 
 ## Clean up development container
 
@@ -29,7 +29,7 @@ You aren't necessarily required to clean up your local environment, but you can 
 
     :::image type="content" source="../media/reopen-local-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within your local environment.":::
 
-1. Wait for the environment to reopen in the context of your local machine. This process may take a couple of minutes.
+1. Wait for the environment to reopen in the context of your local machine. This process might take a couple of minutes.
 
 > [!TIP]
 > Visual Studio Code will stop the running development container, but the container still exists in Docker in a stopped state. You always have the option to deleting the container instance, container image, and volumes from Docker to free up more space on your local machine.
