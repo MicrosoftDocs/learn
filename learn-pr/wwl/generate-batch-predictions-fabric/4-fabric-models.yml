@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.train-track-model-fabric.fabric-models
+uid: learn.wwl.wwl.generate-batch-predictions-fabric.fabric-models
 title: Manage models in Microsoft Fabric
 metadata:
   title: Manage models in Microsoft Fabric
   description: "Manage models in Microsoft Fabric"
-  ms.date: 09/20/2023
+  ms.date: 10/18/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial

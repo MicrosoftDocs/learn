@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.train-track-model-fabric.exercise
-title: Exercise - Train and track a model in Microsoft Fabric
+uid: learn.wwl.wwl.generate-batch-predictions-fabric.exercise
+title: Exercise - Generate and save batch predictions
 metadata:
-  title: Exercise - Train and track a model in Microsoft Fabric
-  description: "Exercise - Train and track a model in Microsoft Fabric"
-  ms.date: 09/20/2023
+  title: Exercise - Generate and save batch predictions
+  description: "Exercise - Generate and save batch predictions in Microsoft Fabric"
+  ms.date: 10/18/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
