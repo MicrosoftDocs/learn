@@ -26,11 +26,7 @@ Your Collection is now ready for you to add resources to. Let’s do that next:
  
     - For a training module, this button appears near the bottom of the title section.
     - For a documentation article, this button appears to the right of the title. 
-    
-    :::image type="content" source="../media/collections-docs-article.png" alt-text="Screenshot of the button to add a documentation article to a Collection.":::
     - For a code sample, the button appears on the **Browse code samples** page, at the bottom of each search result. 
-    
-    :::image type="content" source="../media/collections-code-samples.png" alt-text="Screenshot of the button to add a code sample to a Collection.":::
 1. A pop-up box will appear. Check the box next to the name of the Collection you’d like to add the module to. You can also create a new Collection from this pop-up if needed. 
 1. Select **Save**. You can confirm that the module was added to your Collection by checking to see that the **+Add** option now reads **Added**. 
 
