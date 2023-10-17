@@ -2,13 +2,13 @@ After you incorporate the best sizing, networking, and management practices into
 
 ## Optimize network performance
 
-For Azure Linux VMs, you can use kernel-based network optimizations and implement accelerated networking.
+To optimize network performance for Azure Linux VMs, you can use kernel-based network optimizations and implement accelerated networking if available.
 
 ### Kernel-based network optimizations
 
 Linux kernels released after September 2017 include network optimization options that enable Azure Linux VMs to achieve higher network throughput. You can get significant throughput performance by using the latest Linux kernel.
 
-New and existing Azure VMs can also benefit from installing the latest Linux Integration Services (LIS). Throughput optimization is part of LIS beginning with version 4.2, and subsequent versions contain further improvements.
+New and existing Azure VMs can also benefit from installing the latest [Linux Integration Services (LIS)](https://www.microsoft.com/download/details.aspx?id=55106). Throughput optimization is part of LIS beginning with version 4.2, and subsequent versions contain further improvements.
 
 ### Accelerated networking
 
@@ -16,19 +16,19 @@ You can implement accelerated networking to minimize latency, maximize throughpu
 
 Without accelerated networking, all networking traffic in and out of the VM must traverse the host and the virtual switch. With accelerated networking, network traffic that arrives at the VM's network interface forwards directly to the VM, bypassing the host.
 
-Accelerated networking applies only to the VM it's enabled on. For best results, enable this feature on Azure VMs connected to the same virtual network. For communicating across virtual networks or in hybrid scenarios, this feature has minimal impact on overall latency.
+Accelerated networking applies only to the VM it's enabled on. For best results, enable this feature on Azure VMs that are connected to the same virtual network. For communicating across virtual networks or in hybrid scenarios, this feature has minimal impact on overall latency.
 
 Azure supports accelerated networking for most general-purpose and compute-optimized–instance sizes that have two or more vCPUs. VM instances that use hyperthreading support accelerated networking on instances that have four or more vCPUs.
 
 ## Optimize storage performance
 
-Every Azure Linux VM has at least the following two *virtual disks*:
+Every Azure Linux VM has at least the following two virtual disks:
 
 - The OS disk, labeled as `/dev/sda`, has a maximum capacity of 4 tebibytes (TiB) for disks in the Master Boot Record (MBR) format or 2 TiB for disks in the GUID Partition Table (GPT) format. The image you use to provision the Azure VM determines the default size.
 
   Avoid storing data and installing applications on the OS disk, because it's optimized for fast boot rather than running non-OS workloads.
 
-- A temporary disk labeled as `/dev/sdb` and mounted to `/mnt` provides temporary storage. The disk's size and performance depend on the VM size, and its primary purpose is to store a *swap file*.
+- A temporary disk labeled as `/dev/sdb` and mounted to `/mnt` provides temporary storage. The disk's size and performance depend on the VM size, and its primary purpose is to store a swap file.
 
   - The temporary disk serves as short-term storage for data that can either be discarded or easily recreated. Don't use the temporary disk to store files that must persist across operations like resizing, redeployment, or restarts.
 
@@ -39,7 +39,7 @@ Every Azure Linux VM has at least the following two *virtual disks*:
 For storing data and installing applications, you can create virtual disks, attach them to an Azure VM, and mount them within the OS. You can add more disks as needed according to your storage and *input/output per second (IOPS)* requirements. Keep the following considerations in mind:
 
 - The maximum number of disks you can attach to an Azure VM depends on the VM size.
-- The maximum number of IOPS an Azure VM supports depends not only on the aggregate throughput of its disks, but also on the VM's maximum IOPS throughput, which its size determines. The effective throughput is the lower of the two values.
+- The maximum number of IOPS an Azure VM supports depends not only on the aggregate throughput of its disks, but also on the VM's maximum IOPS throughput, which the VM size determines. The effective throughput is the lower of the two values.
 
 To provide storage for an Azure VM, you can use Azure-managed block-level storage volumes. Azure-managed disks support the following five disk types to address specific customer scenarios:
 

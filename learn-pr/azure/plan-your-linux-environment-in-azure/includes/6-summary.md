@@ -2,9 +2,9 @@ This module reviewed the process of planning a deployment of Azure Linux VMs.
 
 - You chose the VM sizes most suitable for their intended workloads, and identified the corresponding networking dependencies.
 - You learned how to manage and troubleshoot your VMs by using boot diagnostics and serial console.
-- You reviewed storage options and performance optimization techniques to help you maximize the benefits of the planned deployment.
+- You reviewed storage options and performance optimization techniques that help maximize the benefits of the planned deployment.
 
-With the knowledge you've gained, you can recommend the compute, networking, and storage options most suitable for hosting Linux-based workloads on Azure VMs.
+With the knowledge you've gained, you can recommend the compute, networking, and storage options most suitable for hosting your company's Linux-based workloads on Azure VMs.
 
 ## Related resources
 

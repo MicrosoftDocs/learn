@@ -9,6 +9,6 @@ metadata:
   ms.author: chasecrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-for-sizing-and-networking-of-azure-vms-running-linux.md)]

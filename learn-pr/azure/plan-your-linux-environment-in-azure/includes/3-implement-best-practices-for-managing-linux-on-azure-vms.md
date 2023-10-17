@@ -35,6 +35,6 @@ The serial console can help you restore a VM to an operational state in situatio
 - SSH configuration issues
 - Common bootloader issues:
 
-  - **Increase the timeout value in the grub menu on Gen2 Azure VMs**. Because legacy hardware has been removed from emulation in generation 2 VMs, the grub menu countdown timer counts down too quickly to display real-time loading of the default entry. To address this issue, replace the default entry `"timeout=5"` with `"timeout=100000"` in */boot/grub/grub.conf*, */etc/default/grub*, or their equivalent.
+  - **GRUB menu countdown on Gen2 Azure VMs**. Because legacy hardware has been removed from emulation in Generation 2 Azure VMs, the Grand Unified Bootloader (GRUB) menu countdown timer can count down too quickly to display real-time loading of the default entry. To address this issue, replace the default entry `"timeout=5"` with `"timeout=100000"` in */boot/grub/grub.conf*, or */etc/default/grub*, or their equivalents.
 
-  - **Reserve more memory for kdump**. If the dump capture kernel ends up with a panic on boot, you should reserve more memory for the kernel. For example, when using Ubuntu, in the grub configuration file, change the parameter `crashkernel=384M-:128M` to `crashkernel=384M-:256M`.
+  - **Kernal panic boot error in kdump**. If the crash dump capture ends with a kernal panic on boot, you should reserve more memory for the kernel. For example, in the Ubuntu GRUB configuration, change the parameter `crashkernel=384M-:128M` to `crashkernel=384M-:256M`.

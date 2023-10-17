@@ -46,7 +46,7 @@ quiz:
       explanation: "The Azure VM size is the sole factor that determines its maximum available bandwidth."
     - content: "Number of disks"
       isCorrect: false
-      explanation: "The number of disks attached to an Azure VM don't directly determine its maximum bandwidth."
+      explanation: "The number of disks attached to an Azure VM doesn't directly determine its maximum bandwidth."
   - content: "Which feature of an Azure VM must be implemented to provide access via the Azure VM serial console?"
     choices:
     - content: "JIT VM Access"
