@@ -28088,6 +28088,49 @@
       "redirect_url": "https://learn.microsoft.com/azure/governance/",
       "redirect_document_id": false
     },
+
+
+
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/2-computer-vision.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/3-text-analytics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/4-text-analytics-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/5-sentiment-analysis-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/6-key-phrases-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/7-entities-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
     {
       "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
