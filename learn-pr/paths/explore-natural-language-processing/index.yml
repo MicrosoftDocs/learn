@@ -11,6 +11,9 @@ metadata:
 title: 'Microsoft Azure AI Fundamentals: Explore natural language processing'
 prerequisites: |
   Ability to navigate the Azure portal.
+video:
+  title: "Explore natural language processing"
+  url: https://www.microsoft.com/videoplayer/embed/RWxEO0
 summary: |
   Natural language processing supports applications that can see, hear, speak with, and understand users.  Using text analytics, translation, and language understanding services, Microsoft Azure makes it easy to build applications that support natural language.
 iconUrl: /learn/achievements/explore-natural-language-processing.svg
