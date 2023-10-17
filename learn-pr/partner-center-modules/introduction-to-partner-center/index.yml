@@ -9,7 +9,9 @@ metadata:
   ms.author: juliacawthra
   manager: jasonh
   ms.topic: module-intro-to-product  
-  ms.service: partner-dashboard         
+  ms.service: partner-dashboard
+  hidden:true 
+
 
 title: Introduction to Partner Center
 
