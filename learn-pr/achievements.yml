@@ -2342,4 +2342,8 @@ achievements:
   title: Autonomous AI implementation engineer
   summary: Learn to build the Machine Teaching for Autonomous AI brains that you learned to design in the “Autonomous AI Design Architect” learning path.
   iconUrl: /training/achievements/generic-badge.svg
-
+- uid: learn.wwl.discover-microsoft-ai-financial-professionals.trophy
+  type: trophy
+  title: Discover Microsoft AI for financial professionals
+  summary: In this learning path, FSI business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
+  iconUrl: /training/achievements/generic-trophy.svg
