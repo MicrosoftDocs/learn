@@ -4,13 +4,10 @@ title: Azure Cosmos DB for MongoDB API versions
 metadata:
   title: Azure Cosmos DB for MongoDB API versions
   description: "Azure Cosmos DB for MongoDB API versions"
-  ms.date: 02/06/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/2-mongodb-application-program-interface-versions.md)]
