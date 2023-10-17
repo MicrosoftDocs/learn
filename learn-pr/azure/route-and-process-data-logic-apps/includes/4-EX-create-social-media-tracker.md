@@ -8,7 +8,7 @@ The first step is a Twitter trigger named "When a new tweet is posted. This trig
 
 First, we need to create the logic app resource in Azure. For this task, we need to find the **Logic App** resource type in the Azure portal.
 
-1. With the same account that you used to activate the sandbox, sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure account.
 
    [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -23,28 +23,30 @@ First, we need to create the logic app resource in Azure. For this task, we need
       | Setting | Value |
       |---------|-------|
       | **Project Details** |
-      | **Subscription** | Concierge Subscription |
-      | **Resource Group** | From the list, select <rgn>[Sandbox resource group]</rgn> |
+      | **Subscription** | Select your Azure subscription |
+      | **Resource Group** | Select the Create New link, then create a resource group with a unique name |
       | **Instance Details** |
-      | **Logic app name** | **ShoeTracker** |
+      | **Logic app name** | **ShoeTrackerXXXX**, replacing XXXX with a random string of numbers or letters |
       | **Region** | Select a location nearest you. |
       | **Type** | Consumption |
   
-   1. Select **Review + create**, and then select **Create**.
+   1. Leave all other options as their defaults.
+
+1. Select **Review + create**, and then select **Create**.
 
    The deployment pane appears and shows the deployment progress with the resources that Azure creates.
-      
-1. Wait for deployment to successfully finish. 
+
+1. Wait for deployment to successfully finish.
 
 1. After deployment for your logic app resource completes, select **Go to resource**.
 
-   The page with the common trigger and template galleries now appears.
+   The Overview page for your logic app appears.
 
 ## Select a template for your logic app workflow
 
 After you create and deploy a new logic app resource in the Azure portal, you can select a starter template. Let's select the blank template so that we can build our logic app workflow from scratch.
 
-On the page with the common trigger and template galleries, scroll down to the **Templates** section, and select the **Blank Logic App** template.
+On the Overview page, select **Logic app designer** in the menu on the left. Scroll down and select the **Blank Logic App** template in the **Templates** section.
 
 The workflow designer surface opens for you to add a trigger.
 
@@ -55,13 +57,13 @@ Now, you'll add the Twitter trigger and provide values for all required paramete
 1. On the designer, in the search box, enter **twitter**. From the triggers list, select the trigger named **When a new tweet is posted**.
 
    *Substitution*: In the search box, enter **RSS**. From the triggers list, select the RSS trigger named **When a feed item is published**.
-   
+
 1. Provide the following information for creating a connection to your Twitter account. When you're done, select **Sign in**.
 
    | Property | Required | Value | Description |
    |----------|----------|-------|-------------|
    | **Connection name** | Yes | ShoeTrackerTwitterConnection | The name to give your Twitter connection |
-   | **Authentication Type** | Yes | Use default shared application | The authentication type for your connection |
+   | **Authentication Type** | Yes | Bring your own application | The authentication type for your connection |
 
    *Substitution*: This step doesn't apply to the RSS trigger.
 
@@ -73,7 +75,7 @@ Now, you'll add the Twitter trigger and provide values for all required paramete
 
    *Substitution*: This step doesn't apply to the RSS trigger.
 
-   After you create a valid connection, the trigger information box reappears. 
+   After you create a valid connection, the trigger information box reappears.
 
 1. Provide the following trigger information:
 
@@ -95,8 +97,6 @@ Now, you'll add the Twitter trigger and provide values for all required paramete
    | **Add a new parameter** | No | None | Any parameters to add to the trigger. |
 
 1. When you're done, on the designer toolbar, select **Save**.
-
-1. Enter the name for your logic app resource with a unique identifier, which is **ShoeTracker*NNN*** where *NNN* represents a unique ID, such as your initials and a number.
 
    When you save your workflow, Azure automatically publishes your changes to your deployed logic app resource, which is live and running. You can either wait for the trigger to fire, or you can manually activate the trigger.
 

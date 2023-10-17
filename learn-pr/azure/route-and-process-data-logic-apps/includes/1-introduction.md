@@ -15,6 +15,7 @@ In this module, you will:
 
 ## Prerequisites
 
+- Your own Azure subscription
 - Basic knowledge of Azure Logic Apps concepts, such as connector, trigger, and action
 - Experience creating and managing resources using the Azure portal at the beginner level
 - Familiarity with programming concepts like conditional statements and loops

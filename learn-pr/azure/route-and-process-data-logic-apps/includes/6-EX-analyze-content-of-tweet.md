@@ -14,7 +14,9 @@ The Azure AI Language API provides natural language processing for text and incl
 
 - Return an account key and an endpoint URL for the Azure AI services. For this exercise, we need these values to make calls and get back sentiment scores.
 
-1. In Azure Cloud Shell to the right, run the following `curl` command to copy the **setup-textanalytics.sh** script from GitHub:
+1. In the Azure portal, open a Cloud Shell session by selecting the **Cloud Shell** icon along the top of the screen. You can also open a Cloud Shell window at [https://shell.azure.com](https://shell.azure.com).
+
+1. In the Cloud Shell window, run the following `curl` command to copy the **setup-textanalytics.sh** script from GitHub:
 
    ```azurecli
    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-route-and-process-data-logic-apps/master/setup-textanalytics.sh > setup-textanalytics.sh

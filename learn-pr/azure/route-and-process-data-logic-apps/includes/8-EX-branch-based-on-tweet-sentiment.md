@@ -4,9 +4,9 @@ In this exercise, we're going to continue work on our social media monitoring ap
 
 ## Create SQL Server database to store positive tweets
 
-When our workflow trigger receives a positive tweet, we want to save the tweet to a backend database. In this section, we'll run a script to create a database in the sandbox for us to use. You incur no costs because the database runs in the sandbox and is free for this exercise.
+When our workflow trigger receives a positive tweet, we want to save the tweet to a backend database. In this section, we'll run a script to create a database for us to use. Make sure to delete the database when you're finished with this module to avoid incurring charges. The Summary section contains instructions on deleting the database.
 
-1. In the Cloud Shell to the right, run the following `curl` command to copy the **setup-sql-database.sh** script from GitHub:
+1. In your Cloud Shell session, run the following `curl` command to copy the **setup-sql-database.sh** script from GitHub:
 
    ```azurecli
    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-route-and-process-data-logic-apps/master/setup-sql-database.sh > setup-sql-database.sh
