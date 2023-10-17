@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.generate-batch-predictions-fabric
+metadata:
+  title: Generate batch predictions using a deployed model in Microsoft Fabric
+  description: "Learn how to use a trained machine learning model to generate batch predictions in Microsoft Fabric."
+  ms.date: 10/18/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.custom: 
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+  ms.service: fabric
+title: Generate batch predictions using a deployed model in Microsoft Fabric
+summary: In Microsoft Fabric, data scientists can use trained models to generate batch predictions to enrich their data.
+abstract: |
+  In this module, you'll learn how to:
+  - Save a model in the Microsoft Fabric workspace
+  - Apply the model to dataset to generate new predictions
+  - Retrieve the predictions from the delta table where they are saved
+prerequisites: |
+  Before starting this module, you should be familiar with the data science process.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- fabric
+subjects:
+- data-science
+- machine-learning
+units:
+- learn.wwl.wwl.generate-batch-predictions-fabric.introduction
+- learn.wwl.wwl.generate-batch-predictions-fabric.train-model
+- learn.wwl.wwl.generate-batch-predictions-fabric.mlflow
+- learn.wwl.wwl.generate-batch-predictions-fabric.fabric-models
+- learn.wwl.wwl.generate-batch-predictions-fabric.exercise
+- learn.wwl.wwl.generate-batch-predictions-fabric.knowledge-check
+- learn.wwl.wwl.generate-batch-predictions-fabric.summary
+badge:
+  uid: learn.wwl.wwl.generate-batch-predictions-fabric.badge
