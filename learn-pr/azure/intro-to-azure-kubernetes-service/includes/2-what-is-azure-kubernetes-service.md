@@ -1,4 +1,4 @@
-Let's start with a few definitions and a quick tour through Azure Kubernetes Service (AKS). This overview provides information to help you decide if AKS is a good platform for your containerization management strategy.
+Let's start with a few definitions and a quick tour through the Azure Kubernetes Service (AKS). This overview provides information to help you decide if AKS is a good platform for your containerization management strategy.
 
 ## What is a container?
 
@@ -22,11 +22,11 @@ You realize that to meet customer demand you have to scale out your solution.
 
 One option is to deploy a new virtual machine for every application, hosted across multiple regions. Then, copy the applications to your new VMs. However, doing so makes you responsible for the management of each VM that you use. 
 
-The maintenance overhead increases as you scale. VM operating system (OS) versions and dependencies for each application need to be provisioned and configured to match. When you apply upgrades for your applications that affect the OS and major changes there are precautions. If any errors appear during the upgrade, the rollback of the installation is required and causes disruption, such as downtime or delays.
+The maintenance overhead increases as you scale. VM operating system (OS) versions and dependencies for each application need to be provisioned and configured to match. When you apply upgrades for your applications that affect the OS and major changes, there are precautions. If any errors appear during the upgrade, the rollback of the installation is required and causes disruption, such as downtime or delays.
 
 ![An image of replicated servers as VMs in the cloud and how the problem raises migration questions and problems.](../media/2-deploy-mutile-instances.png)
 
-The deployment in the previous diagram is cumbersome, sometimes error-prone, and doesn't easily scale single services. For example, you might find you can't easily scale only the caching service used in the web application. Containers help solve these types of problems.
+The deployment in the previous diagram is cumbersome, sometimes error-prone, and doesn't easily scale single services. For example, you can't easily scale only the caching service used in the web application. Containers help solve these types of problems.
 
 The container concept gives us three major benefits:
 
@@ -44,9 +44,9 @@ The above benefits make containers a popular choice for developers and IT operat
 
 ![Image of replicated servers as multiple containers in the cloud.](../media/2-deploy-mutile-containers.png)
 
-Even though functionally, containers are similar to VMs, you have to keep in mind that they aren't. A container has a distinct life cycle. Its status passes through stages of deployed, started, stopped, and destroyed as requested. This life cycle makes containers more disposable and impacts how developers and IT operations think about the management of large interconnected applications.
+Even though functionally, containers are similar to VMs, their purposes vary. A container has a distinct life cycle that exists as a temporary machine. Its state passes through the stages of pending, running, and terminated. This life cycle makes containers more disposable and impacts how developers and IT operations think about the management of large interconnected applications.
 
-The process of deploying, updating, monitoring, and removing containers introduces many challenges.
+Management involves a process of deploying, upgrading, monitoring, and removing containers introduces many challenges.
 
 You find that during at noon there's more site traffic, so you need more instances of the site's caching service to manage performance. You plan to solve this problem by adding more caching service containers.
 

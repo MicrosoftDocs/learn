@@ -1,10 +1,10 @@
-Here, we discuss how you can decide whether Azure Kubernetes Service (AKS) is the right choice for you.
+Here, you can decide whether Azure Kubernetes Service (AKS) is the right choice for you.
 
 You can either approach your decision from a *green fields* or a *lift-and-shift* project point of view. A green fields project allows you to evaluate AKS based on default features. A lift-and-shift project forces you to look at which features are best suited to support your migration.
 
-We saw earlier that there are several features that enhance the AKS Kubernetes offering. Each of these features can be a compelling factor in your decision to use AKS.
+Earlier, you learned of AKS support for DevOps capabilities through Azure. Here, we list out Azure resources for consideration to enhance your AKS Kubernetes offering. These features each represent compelling factors for why customers choose AKS.
 
-| | Consideration |
+| Service | Consideration |
 | --- | --- |
 | **Identity and security management** | Do you already use existing Azure resources and make use of Microsoft Entra ID? You can configure an AKS cluster to integrate with Microsoft Entra ID and reuse existing identities and group membership. |
 | **Integrated logging and monitoring** | AKS includes Azure Monitor for containers to provide performance visibility of the cluster. With a custom Kubernetes installation, you decide on a monitoring solution that requires installation and configuration. |

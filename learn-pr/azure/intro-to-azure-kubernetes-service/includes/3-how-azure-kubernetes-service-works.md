@@ -30,9 +30,9 @@ AKS also supports all the popular development and management tools such as Helm,
 
 ## Bridge to Kubernetes
 
-Bridge to Kubernetes allows you to run and debug code on your development computer, while still connected to your Kubernetes cluster with the rest of your application or services. 
+Bridge to Kubernetes allows you to run and debug code on your development computer, while still connected to your Kubernetes cluster with the rest of your application or services.
 
-Using Bridge to Kubernetes lets you:
+Bridge to Kubernetes lets you:
 
 - Avoid having to build and deploy code to your cluster. Instead, you create a direct connection from your development computer to your cluster. That allows you to quickly test and develop your service in the context of the full application without creating any Docker or Kubernetes configuration.
 - Redirect traffic between your connected Kubernetes cluster and your development computer. This bridge allows code on your development computer and services running in your Kubernetes cluster to communicate as if they are in the same Kubernetes cluster.
