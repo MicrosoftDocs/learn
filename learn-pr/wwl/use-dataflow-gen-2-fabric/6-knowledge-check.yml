@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-dataflows-gen2-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a Dataflow (Gen2)?"
+    choices:
+    - content: "A hybrid database that supports ACID transactions."
+      isCorrect: false
+      explanation: "Incorrect. A Fabric Lakehouse is a hybrid database storage layer that supports transactional data consistency."
+    - content: "A way to export data to Power BI Desktop."
+      isCorrect: false
+      explanation: "Incorrect. A Dataflow (Gen2) is intended for transformations on a dataset."
+    - content: "A way to import and transform data with Power Query Online."
+      isCorrect: true
+      explanation: "Correct. Dataflow (Gen2) allows you to get and transform data, then optionally ingest to a Lakehouse."
+  - content: "Which workload experience lets you create a Dataflow (Gen2)?"
+    choices:
+    - content: "Real-time analytics."
+      isCorrect: false
+      explanation: "Incorrect. Real-time analytics is for Kusto workloads."
+    - content: "Data warehouse."
+      isCorrect: false
+      explanation: "Incorrect. The Data warehouse workload is primarily for importing data."
+    - content: "Data Factory."
+      isCorrect: true
+      explanation: "Correct. Data Factory and Power BI workloads allow Dataflow (Gen2) creation."
+  - content: "You need to connect to and transform data to be loaded into a Fabric Lakehouse and also loaded into a KQL Database for Real-time Analytics. You aren't comfortable using Spark notebooks, so decide to use Dataflows (Gen2). How would you complete this task?"
+    choices:
+    - content: "Connect to Data Factory workload > Create Dataflows Gen2 to transform data > Create Data pipeline to include your dataflow and then land data to a KQL Database."
+      isCorrect: true
+      explanation: "Correct. These are the high-level steps to accomplish your task."
+    - content: "Connect to Real-time Analytics workload > Create Pipeline to copy data > Transform data with an Eventstream."
+      isCorrect: false
+      explanation: "Incorrect. Eventstreams and the Real-time analytics workload are not meant for data integration."
+    - content: "Connect to Data Factory workload > Create Pipeline to copy data and load to Lakehouse > Transform directly in the Lakehouse."
+      isCorrect: false
+      explanation: "Incorrect. Data transformation in the lakehouse isn't as efficient as using Dataflows (Gen2)."

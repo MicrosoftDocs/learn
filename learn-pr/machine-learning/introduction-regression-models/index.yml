@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: nextgen
 title: Introduction to regression models by using R and tidymodels
 summary: Get an introduction to regression models. In machine learning, the goal of regression is to create a model that can predict a numeric, quantifiable value.

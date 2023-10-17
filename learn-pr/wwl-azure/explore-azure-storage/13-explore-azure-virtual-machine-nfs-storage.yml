@@ -4,11 +4,11 @@ title: Explore Azure virtual machine NFS storage
 metadata:
   title: Explore Azure virtual machine NFS storage
   description: "Explore Azure virtual machine NFS storage"
-  ms.date: 04/20/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/13-explore-azure-virtual-machine-nfs-storage.md)]

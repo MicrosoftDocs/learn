@@ -3,11 +3,11 @@ uid: learn.wwl.guided-project-visit-petting-zoo
 metadata:
   title: Guided project - Plan a Petting Zoo Visit
   description: "Create an application that coordinates school visits to a petting zoo. This project requires the use of different methods with return types and parameters to complete the code."
-  ms.date: 04/25/2023
+  ms.date: 09/08/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Guided project - Plan a Petting Zoo Visit
 summary: Demonstrate your ability to develop a console app that relies on methods with different parameters and return values to coordinate a visit to the petting zoo.
 abstract: |
@@ -26,10 +26,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- dotnet-framework
+- dotnet
 - vs-code
 units:
 - learn.wwl.guided-project-visit-petting-zoo.introduction

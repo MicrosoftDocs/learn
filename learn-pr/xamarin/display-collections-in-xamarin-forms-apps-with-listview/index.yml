@@ -7,7 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-forms
 title: "Display collections in Xamarin.Forms apps by using ListView"
 summary: "Use ListView to display a scrollable list of data that you can dynamically modify."
 abstract: |
@@ -18,6 +19,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/display-collections-in-xamarin-forms-apps-with-listview-badge.svg
+hidden: true
 levels: 
 - intermediate
 roles: 

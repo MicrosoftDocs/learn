@@ -7,10 +7,9 @@ metadata:
   ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
-  ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 2
 content: |
   [!include[](includes/4-activities.md)]

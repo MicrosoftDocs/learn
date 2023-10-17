@@ -3,17 +3,17 @@ uid: learn.azure.improve-api-performance-with-apim-caching-policy
 metadata:
   title: Improve the performance of an API by adding a caching policy in Azure API Management
   description: Learn how to use Azure API Management to change an API without rewriting code to enable you to apply a caching policy to a GET operation for quicker response.
-  ms.date: 12/02/2022
+  ms.date: 07/11/2023
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: api-management
 title: Improve the performance of an API by adding a caching policy in Azure API Management
 summary: |
   API Management policies are configurable modules that you can add to APIs to change 
   their behaviors. Policies can do things like cache responses, transform documents and values, 
   call webhooks for notification or audit purposes, and retry requests after transient 
-  failures. This module will use policies to enable caching in order to improve API performance 
+  failures. This module shows how to use policies to enable caching in order to improve API performance 
   under load.
 abstract: |
   In this module, you will:
@@ -25,7 +25,7 @@ prerequisites: |
   - Experience with XML syntax
 iconUrl: /training/achievements/improve-api-performance-with-apim-caching-policy.svg
 levels:
-- beginner
+- intermediate
 roles:
 - developer
 products:

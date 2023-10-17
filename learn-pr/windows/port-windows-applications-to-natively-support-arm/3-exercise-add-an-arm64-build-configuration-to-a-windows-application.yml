@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.learn-windows-on-arm.exercise-add-an-arm64-build-configuration-to-a-windows-application
+title: Exercise - Add an Arm64 build configuration to a Windows application
+metadata:
+  title: Exercise - Add an Arm64 build configuration to a Windows application
+  description: "Tutorial demonstrating the steps to add an Arm64 build to a Windows application."
+  ms.date: 5/6/2023
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: module-standard-task-based
+  ms.prod: windows
+  ms.technology: arm
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-exercise-add-an-arm64-build-configuration-to-a-windows-application.md)]

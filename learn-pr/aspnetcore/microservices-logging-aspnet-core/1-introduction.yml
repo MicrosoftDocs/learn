@@ -5,9 +5,9 @@ metadata:
   description: Introduction
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.date: 10/14/2020
-  ms.prod: aspnet-core
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 1
 content: |

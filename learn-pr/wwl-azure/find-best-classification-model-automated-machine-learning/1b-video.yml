@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.find-best-classification-model-automated-machine-learning.video
+title: Video - Find the best classification model with Automated Machine Learning
+metadata:
+  title: Video - Find the best classification model with Automated Machine Learning
+  description: "Optional video to find the best classification model with Automated Machine Learning."
+  ms.date: 07/10/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.custom:
+durationInMinutes: 38
+content: |
+  [!include[](includes/1b-video.md)]

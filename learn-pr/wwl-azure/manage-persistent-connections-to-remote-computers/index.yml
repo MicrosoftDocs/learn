@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Manage persistent connections to remote computers by using Windows PowerShell sessions
 summary: This module explains how to establish and manage persistent connections to remote computers, known as Windows PowerShell sessions or PSSessions.
 abstract: |

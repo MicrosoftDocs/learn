@@ -6,7 +6,7 @@ As Contoso’s administrator, you must evaluate the DSR process in the Microsoft
 In this exercise you will complete the following tasks:
 - Task 1: Create a user
 - Task 2: Review the DSR to determine the appropriate process
-- Task 3: Locate and verify the personal information of the DSR in Azure AD
+- Task 3: Locate and verify the personal information of the DSR in Microsoft Entra ID
 - Task 4: Fulfill the DSR by deleting the relevant data
 - Task 5: Clean up resources
 
@@ -14,8 +14,9 @@ In this exercise you will complete the following tasks:
 
 To set up a new user, perform the following steps:
 
-1. Sign in to the [Azure Active Directory portal](https://aad.portal.azure.com).
-2. Select **Azure Active Directory**, and then select the **Overview** blade if it's not already active.  
+1. Sign in to the [Azure portal](https://portal.azure.com).
+
+2. Select **Microsoft Entra ID**, and then select the **Overview** blade if it's not already active.  
 3. In the **Tenant information** tile for the Default Directory, copy or record the **Primary domain** value (for example, yourprimarydomain.onmicrosoft.com).
 4. Select **Users**, select **New User**, and then verify that the **Create user** option is selected in the **New User** blade.
 5. Enter the following information, and then select **Create**:
@@ -48,7 +49,7 @@ In this task, we'll step through a scenario where we receive a DSR from a user, 
    - DSR form received today
    - Identity verified today, as follows
      - Avery Howard is a financial planning client who resides in the United Kingdom.
-     - Avery was contacted, and they provided verification with a national ID card.
+     - Avery was contacted, and they provided verification with a national/regional ID card.
 
     |Field|Details|
     |---|---|
@@ -60,7 +61,7 @@ In this task, we'll step through a scenario where we receive a DSR from a user, 
     |With regard to|Right to erasure (right to be forgotten)|
     |Preferred feedback method|In writing to address|
 
-1. Now that you’ve confirmed the user’s request to delete, first search for (discover) the user in Azure AD, then delete the user. Identify which of the following steps you’ll use in the DSR process, and then fulfill the DSR:
+1. Now that you’ve confirmed the user’s request to delete, first search for (discover) the user in Microsoft Entra ID, then delete the user. Identify which of the following steps you’ll use in the DSR process, and then fulfill the DSR:
     - Discover
     - Access
     - Rectify
@@ -71,12 +72,14 @@ In this task, we'll step through a scenario where we receive a DSR from a user, 
 > [!NOTE]
 > In this exercise, the first step you’ll use is discover, and the next step is delete.
 
-## Task 3: Locate and verify the personal information of the DSR in Azure AD
+<a name='task-3-locate-and-verify-the-personal-information-of-the-dsr-in-azure-ad'></a>
 
-You'll now use the Azure Active Directory admin center to find personal information in Azure AD:
+## Task 3: Locate and verify the personal information of the DSR in Microsoft Entra ID
 
-1. Verify that you're still signed in to the Azure Active Directory admin center.
-1. Select **Azure Active Directory**, select **Users**, and then select the **All users** blade if it's not already active.  
+You'll now use the Microsoft Entra admin center to find personal information in Microsoft Entra ID:
+
+1. Verify that you're still signed in to the Microsoft Entra admin center.
+1. Select **Microsoft Entra ID**, select **Users**, and then select the **All users** blade if it's not already active.  
 1. Select **Search users**, and then enter **Avery**.  
 1. Select **Avery Howard** to review the data subject's profile.
 1. Review and confirm that the personal information contained in the profile matches the subject's information in the DSR.
@@ -98,7 +101,7 @@ You'll now respond to  the DSR by deleting the data subject's user account:
 
 If you’ve completed all the steps in this exercise, you won’t have any resources to clean up. However, if you’ve only partially completed the exercise, complete the following steps:
 
-1. In the Azure Active Directory admin center, select **All Users**.
+1. In the Microsoft Entra admin center, select **All Users**.
 1. Search for and select **Avery Howard**.
 1. Select **Delete**, and then select **Yes** to confirm.
 1. Select **Deleted users**.

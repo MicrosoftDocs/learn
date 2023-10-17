@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-image-builder.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 05/26/2023
+  author: ericd-mst-github
+  ms.author: erd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'What is the main purpose of evaluating the performance of an Azure Image Builder pipeline for your business?'
+    choices:
+    - content: "To determine the efficiency of the pipeline."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "To identify the limitations of the pipeline."
+      isCorrect: false
+      explanation: "Incorrect. The main purpose of evaluating the performance of an Azure Image Builder pipeline is to determine the efficiency of the pipeline, not to identify its limitations"
+    - content: "To measure the cost-effectiveness of the pipeline."
+      isCorrect: false
+      explanation: "Incorrect. While cost-effectiveness is an important factor to consider, it is not the primary purpose of evaluating the pipeline's performance."
+    - content: "To assess the reliability of the pipeline."
+      isCorrect: false
+      explanation: "Incorrect. While reliability is an important factor to consider, it is not the primary purpose of evaluating the pipeline's performance."
+  - content: 'What is the primary benefit of using Azure Image Builder for your business?'
+    choices:
+    - content: "To automate the image creation process"
+      isCorrect: false
+      explanation: "Incorrect. The primary benefit is to reduce the time and effort required for image creation."
+    - content: "To reduce the time and effort required for image creation"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "To improve the security and compliance of images"
+      isCorrect: false
+      explanation: "Incorrect. While Azure Image Builder can help improve the security and compliance of images, it is not the primary benefit of using the service. The primary benefit is to reduce the time and effort required for image creation."
+    - content: "To increase the scalability and flexibility of images"
+      isCorrect: false
+      explanation: "Incorrect. The primary benefit is to reduce the time and effort required for image creation."
+  - content: 'Which of the following steps are required to create and deploy a custom image using Azure Image Builder?'
+    choices:
+    - content: "Create an image template."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Upload the image source."
+      isCorrect: false
+      explanation: "Incorrect. Uploading the image source isn't part of the required steps to create and deploy a custom image using Azure Image Builder."
+    - content: "Configure the image builder."
+      isCorrect: false
+      explanation: "Incorrect. Configuring the image builder isn't part of the required steps to create and deploy a custom image using Azure Image Builder."
+    - content: "Deploy the custom resource group."
+      isCorrect: false
+      explanation: "Incorrect. Deploying the custom resource group isn't part of the required steps to create and deploy a custom image using Azure Image Builder."

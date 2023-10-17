@@ -9,6 +9,9 @@ metadata:
   author: chtrembl
   ms.author: chtrembl
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-extended-java
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |

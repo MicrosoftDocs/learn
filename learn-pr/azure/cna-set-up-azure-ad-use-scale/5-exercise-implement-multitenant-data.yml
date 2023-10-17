@@ -1,13 +1,16 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.cna-set-up-apps-use-scale.5-exercise-implement-multitenant-data
 title: Exercise - Implement multitenant data
 metadata:
   title: Exercise - Implement multitenant data
   description: Exercise - Implement multitenant data
   ms.date: 05/19/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-js
   ms.prod: learning-azure
 durationInMinutes: 30
 content: |

@@ -3,11 +3,11 @@ uid: learn.wwl.structure-your-git-repo
 metadata:
   title: Structure your Git Repo
   description: "Structure your Git Repo"
-  ms.date: 10/25/2022
+  ms.date: 08/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 title: Structure your Git Repo
 summary: This module examines Git repositories structure, explains the differences between mono versus multiple repos, and helps you create a changelog.
 abstract: |
@@ -16,7 +16,8 @@ abstract: |
   - Implement mono repo or multiple repos
   - Explain how to structure Git Repos
   - Implement a change log
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/1-structure-your-git-repo.svg
 levels:
 - advanced

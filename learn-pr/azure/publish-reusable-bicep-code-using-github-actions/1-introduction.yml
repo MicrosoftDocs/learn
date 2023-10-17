@@ -5,10 +5,12 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Introduction to publishing template specs and Bicep modules by using GitHub Actions.
-  ms.date: 04/05/2022
+  ms.date: 06/29/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-bicep
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |

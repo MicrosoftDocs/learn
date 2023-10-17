@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Test your knowledge on how to use automated machine learning to find the best classification model in Azure Machine Learning."
-  ms.date: 01/20/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
   questions:

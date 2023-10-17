@@ -1,3 +1,4 @@
+
 In this module, you learned how to evaluate and design an effective application architecture. You explored Azure solutions for exchanging messages, automating application deployment, and managing application configuration. You reviewed how to integrate Azure services with your applications by using APIs, and how to provide appropriate caching. You discovered how to use Azure services to create a scalable, efficient, event-driven solution.
 
 ## Learn more with Azure documentation

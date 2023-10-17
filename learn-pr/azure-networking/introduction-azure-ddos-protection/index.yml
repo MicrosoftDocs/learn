@@ -7,7 +7,7 @@ metadata:
   author: AbdullahBell
   ms.author: abell
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: ddos-protection
 title: "Introduction to Azure DDoS Protection"
 summary: Learn how to guard your Azure services from a denial of service attack using Azure DDoS Protection.
 abstract: |

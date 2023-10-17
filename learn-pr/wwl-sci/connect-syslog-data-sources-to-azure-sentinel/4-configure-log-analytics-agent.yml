@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.connect-syslog-data-sources-to-azure-sentinel.configure-log-analytics-agent
-title: Configure the log analytics agent
+title: Configure the Data Collection Rule for Syslog Data Sources
 metadata:
-  title: Configure the log analytics agent
-  description: "Configure the log analytics agent"
+  title: Configure the Data Collection Rule for Syslog Data Sources
+  description: "Configure the Data Collection Rule for Syslog Data Sources"
   ms.date: 06/27/2022
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

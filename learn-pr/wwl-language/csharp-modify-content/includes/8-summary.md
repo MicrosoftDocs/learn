@@ -1,6 +1,3 @@
-
-
-
 Your goal was to extract, remove, and replace values in strings. Often, the data you receive has extraneous data or characters that you'll need to avoid or eliminate before you can use the target data.
 
 Utilizing the `IndexOf()` method, enabled you to identify the position of a character or string within another string. The position returned from the `IndexOf()` method was the first building block to using the `Substring()` method to extract a portion of a string given the starting position and the number of characters to extract (the length). It also enabled you to use the `Remove()` method to eliminate characters from a string given the starting position and the length. You learned of variations like `LastIndexOf()` method to find the last position of a character of string within another string, and the `IndexOfAny()` to find the position of any value of a given `char` array. You used the `while` statement to iterate through a longer string to find and extract all instances of a character or string within a larger source string. Finally, you used the `Replace()` method to swap all instances of a character or string inside of a larger string.

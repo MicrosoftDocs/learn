@@ -5,8 +5,9 @@ metadata:
   title: Knowledge check
   description: Multiple-choice questions.
   ms.date: 05/25/2021
-  author: tomreidnz
-  ms.author: jasdeb
+  ms.service: machine-learning
+  author: lgayhardt
+  ms.author: lagayhar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

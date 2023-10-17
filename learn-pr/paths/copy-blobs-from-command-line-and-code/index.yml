@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.azure.copy-blobs-with-command-line-and-code
+metadata:
+  title: Copy blobs between Azure Storage accounts from the command line or by using code (learning path)
+  description: This learning path gets you started using .NET, AzCopy, and Azure CLI to copy blobs between Azure Storage accounts.
+  brand: azure
+  ms.date: 04/24/2023
+  author: normesta
+  ms.author: normesta
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Copy blobs between Azure Storage accounts from the command line or by using code
+summary:  |
+  Learn how to use the Azure CLI, AzCopy, and .NET code to copy blobs between storage accounts. 
+prerequisites: None
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+- data-engineer
+products:
+- azure
+- azure-storage
+- azure-cloud-shell
+- azure-blob-storage
+subjects:
+- storage
+modules:
+- learn.azure.copy-blobs-using-azure-cli
+- learn.copy-blobs-using-azcopy
+- learn.azure.copy-blobs-using-dotnet
+trophy:
+  uid: learn.azure.copy-blobs-with-command-line-and-code.trophy

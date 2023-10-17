@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
+  ms.subservice: identity-protection
 title: Manage Azure AD Identity Protection
 summary: Protecting a user's identity by monitoring their usage and sign-in patterns will ensure a secure cloud solution. Explore how to design and implement Azure AD Identity protection.
 abstract: |
@@ -28,7 +29,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-domain
 - defender-identity
 - identity-manager
 - entra

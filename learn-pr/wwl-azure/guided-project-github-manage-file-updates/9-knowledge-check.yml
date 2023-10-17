@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-github-manage-file-updates.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/30/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the correct sequence of commands to update the current working branch on the remote repository (GitHub) with local changes?"
+    choices:
+    - content: "git add; git commit; and git push"
+      isCorrect: true
+      explanation: "Correct. Stage (git add), update locally (git commit), and update the remote (git push) is the correct sequence."
+    - content: "git push; git commit; and git add"
+      isCorrect: false
+      explanation: "Incorrect. The order is reversed. First, you stage the files with git add, then you commit them to the local repository with git commit. Finally, you push the files to the remote with git push."
+    - content: "git update; git merge"
+      isCorrect: false
+      explanation: "Incorrect. First, you stage the files with git add, then you commit them to the local repository with git commit. Finally, you push the files to the remote with git push."
+  - content: "What command lets you create a new branch and automatically start working in the new branch?"
+    choices:
+    - content: "git clone"
+      isCorrect: false
+      explanation: "Incorrect. git clone creates a copy, or clone, of a repository. It doesn't create a new branch and change you into the new branch."
+    - content: "git checkout -b &lt;branchname&gt;"
+      isCorrect: true
+      explanation: "Correct. git checkout with the -b operator creates a new branch and immediately shifts you to work inside the new branch."
+    - content: "git branch -checkout &lt;branchname&gt;"
+      isCorrect: false
+      explanation: "Incorrect. git branch is used to create, list, or manage existing branches, but doesn't automatically swap you into any newly created branches."
+interactive: bash

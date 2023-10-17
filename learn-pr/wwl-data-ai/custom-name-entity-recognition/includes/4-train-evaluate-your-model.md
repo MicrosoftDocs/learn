@@ -1,4 +1,4 @@
-Training and evaluating your model is an iterative process of adding data and labels to your training dataset to teach the model more accurately. To know what types of data and labels need to be improved, Language Studio provides scoring in the **View model details** page on the left hand pane.
+Training and evaluating your model is an iterative process of adding data and labels to your training dataset to teach the model more accurately. To know what types of data and labels need to be improved, Azure AI Language Studio provides scoring in the **View model details** page on the left hand pane.
 
 ![Screenshot of the View model scoring tab.](../media/model-scoring.png#lightbox)
 

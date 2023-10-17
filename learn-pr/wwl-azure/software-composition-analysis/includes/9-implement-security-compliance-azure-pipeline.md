@@ -1,3 +1,4 @@
+
 **Estimated time:** 45 minutes.
 
 **Lab files:** none.
@@ -42,4 +43,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 1: Implement Security and Compliance in an Azure DevOps pipeline using Mend Bolt.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M07_L16_Implement_Security_and_Compliance_in_an_Azure_Pipeline.html)
+](https://aka.ms/az-400-implement-security-and-compliance-azure-devops-pipeline)

@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure 
+  ms.subservice: azure-large-instances
 title: Monitor and troubleshoot SAP HANA on Azure (Large Instances)
 summary: Investigate monitoring tools and methods used for SAP HANA on Azure (Large Instances).
 abstract: |

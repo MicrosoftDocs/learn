@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-distribution-hololens-app.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This knowledge check assesses the user's understanding of distribution channels for a HoloLens app."
+  ms.date: 7/13/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: hololens
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "In a highly secure research facility, a doctor developed a groundbreaking HoloLens 2 application tailored for the facility's unique needs. To ensure confidentiality and control over distribution, the doctor wants to directly distribute the application to their colleagues. Which distribution option is best?"
+    choices:
+    - content: "Microsoft Store"
+      isCorrect: false
+      explanation: "The Microsoft Store is best for apps that are intended for a public wide audience."
+    - content: "Sideloading"
+      isCorrect: true
+      explanation: "Sideloading is best for apps that are intended for a private audience. Since the doctor wants to directly distribute the application to their colleagues, sideloading is the best option."
+    - content: "Third Party Store"
+      isCorrect: false
+      explanation: "The Third Party Store is best for apps that are intended for a niche audience but not necessarily a private audience."
+  - content: "An independent game developer has created an immersive HoloLens 2 game designed to captivate gamers and provide an unparalleled mixed reality gaming experience. However, they’re still in the development phase and would like to capture gameplay feedback from their friends. Which distribution option is best?"
+    choices:
+    - content: "Microsoft Store"
+      isCorrect: false
+      explanation: "Since the application is still in the development phase, the Microsoft Store isn't the best option. The Microsoft Store is best for apps that are intended for a public audience."
+    - content: "Sideloading"
+      isCorrect: true
+      explanation: "Sideloading is best for apps that are intended for a private audience. Since the developer wants to distribute the application to their friends, sideloading is the best option."
+    - content: "Third Party Store"
+      isCorrect: false
+      explanation: "The Third Party Store is best for apps that are intended for a niche audience but not necessarily a private audience."
+  - content: "Why should you sign an application package?"
+    choices:
+    - content: "Verifies that the application is bug-free."
+      isCorrect: false
+      explanation: "An application can be signed and still contain bugs."
+    - content: "Confirms that the application is compatible with various HoloLens configurations."
+      isCorrect: false
+      explanation: "An application can be signed and still be incompatible with various HoloLens configurations."
+    - content: "Adds a digital signature to the app package, which serves as a proof of authenticity and integrity."
+      isCorrect: true
+      explanation: "Signing the app package allows users and devices to verify that the app package hasn't been tampered with and originates from a trusted source."

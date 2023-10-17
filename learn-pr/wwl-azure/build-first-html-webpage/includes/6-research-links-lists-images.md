@@ -21,7 +21,7 @@ There are many types of resources a link can point to. Many times links point to
 To create a link to an external site, you use the full address of the site. For example, to create a link to Microsoft's documentation site, you could use:
 
 ```html
-<a href="https://docs.microsoft.com/">Microsoft Technical Documentation</a>
+<a href="https://learn.microsoft.com/">Microsoft Technical Documentation</a>
 ```
 
 It's possible to link to an email address. This type of link will automatically open the user's email client and complete the **To** field with the address indicated after the `mailto:` directive.

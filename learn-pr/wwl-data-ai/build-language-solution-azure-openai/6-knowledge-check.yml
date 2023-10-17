@@ -8,22 +8,22 @@ metadata:
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
 durationInMinutes: 2
 content: |
 quiz:  
   questions:  
-  - content: "What is the model family that is the best fit for 'general tasks, conversations, and chat formats'?"  
+  - content: "What resource values are required to make requests to your Azure OpenAI resource?"  
     choices:  
-    - content: "Text"  
+    - content: "Chat, Embedding, and Completion"  
+      isCorrect: false  
+      explanation: "Each call to the Azure OpenAI service requires a key, endpoint, and deployment name."  
+    - content: "Key, Endpoint, and Deployment name"  
       isCorrect: true  
-      explanation: "The text or Generative Pre-trained Transformer (GPT) models are best at general tasks, conversations, and chat formats."  
-    - content: "Code"  
+      explanation: "Each call to the Azure OpenAI service requires a key, endpoint, and deployment name."  
+    - content: "Summary, Deployment name, and Endpoint"  
       isCorrect: false  
-      explanation: "The text or Generative Pre-trained Transformer (GPT) models are best at general tasks, conversations, and chat formats."  
-    - content: "Audio"  
-      isCorrect: false  
-      explanation: "The text or Generative Pre-trained Transformer (GPT) models are best at general tasks, conversations, and chat formats."  
+      explanation: "Each call to the Azure OpenAI service requires a key, endpoint, and deployment name."  
   - content: "What are the three available endpoints for interacting with a deployed Azure OpenAI model?"  
     choices:  
     - content: "Completion, ChatCompletion, and Translation"  

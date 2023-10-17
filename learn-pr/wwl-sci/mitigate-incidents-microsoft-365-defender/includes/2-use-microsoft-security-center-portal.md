@@ -3,7 +3,7 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://sec
 
 You can investigate the alerts that affect your network, understand what they mean, and collate evidence associated with the incidents so that you can devise an effective remediation plan.
 
-The Home page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user's role. Because the Microsoft 365 Defender portal uses role-based access control, different roles will see cards that are more meaningful to their day-to-day jobs.
+The Home page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user's role. Because the Microsoft 365 Defender portal uses role-based access control, different roles see cards that are more meaningful to their day-to-day jobs.
 
 This at-a-glance information helps you keep up with the latest activities in your organization. The Microsoft 365 Defender portal brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
 
@@ -55,9 +55,9 @@ The following table outlines the roles and permissions required to access each u
 | Threat Analytics | Alerts and incidents data: <br />- View data - security operations <br /><br />TVM mitigations: <br />- View data - Threat and vulnerability management | Alerts and incidents data:<br />- View-only Manage alerts<br />- Manage alerts<br />- Organization configuration<br />- Audit logs<br />- View-only audit logs<br />- Security reader<br />- Security admin<br />- View-only recipients<br /><br />Prevented email attempts:<br />- Security reader<br />- Security admin<br />- View-only recipients | Not available for Defender for Cloud Apps or MDI users |
 
 
+## Interactive Lab Simulation
 
+> [!NOTE]
+> Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning.
 
-
-
-
-
+[![Screenshot of the lab simulation page.](../media/lab-simulation-explore-microsoft-365-defender.png)](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Explore%20Microsoft%20365%20Defender)

@@ -53,7 +53,7 @@ However, when you deploy a model to a real-time endpoint and use such container 
 
 Alternatively, if you need **batch predictions**, you need compute that can handle a large workload. Ideally, you'd use a **compute cluster** that can score the data in *parallel* batches by using multiple nodes. 
 
-When working with compute clusters that can process data in parallel batches, the compute can start when the batch scoring is triggered, and stop when there's no new data to process. By stopping an idle compute cluster, you can save significant costs. 
+When working with compute clusters that can process data in parallel batches, the compute is provisioned by the workspace when the batch scoring is triggered, and scaled down to 0 nodes when there's no new data to process. By letting the workspace scale down an idle compute cluster, you can save significant costs.
 
 ## Decide on real-time or batch deployment
 

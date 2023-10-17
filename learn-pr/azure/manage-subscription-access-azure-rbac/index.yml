@@ -7,13 +7,13 @@ metadata:
   author: rolyon
   ms.author: rolyon
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: role-based-access-control
 title: Manage access to an Azure subscription by using Azure role-based access control (Azure RBAC)
 summary: To grant access to a subscription, identify the appropriate role to assign to an employee. Understand when you might need to temporarily elevate your own access to regain access to a subscription.
 abstract: | 
   In this module, you will:
   - Identify the appropriate role to assign to an employee.
-  - Identify scenarios where the Global Administrator for Azure Active Directory might need to temporarily elevate their access in Azure.
+  - Identify scenarios where the Global Administrator for Microsoft Entra ID might need to temporarily elevate their access in Azure.
   - Grant the employee management access to a subscription.
 prerequisites: | 
   - A basic understanding of how Azure role-based access control (Azure RBAC) works

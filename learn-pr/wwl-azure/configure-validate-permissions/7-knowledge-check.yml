@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-validate-permissions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "Which of the following is the recommended approach for managing pipeline permissions in Azure DevOps?"
+    choices:
+    - content: "Grant users the minimum permissions necessary to perform their job."
+      isCorrect: true
+      explanation: "Correct. It's a best practice to grant users the minimum permissions necessary to perform their job. It helps ensure that sensitive information and resources are protected and that users only have access to what they need to do their work."
+    - content: "Use default security settings recommended by Azure DevOps."
+      isCorrect: false
+      explanation: "Incorrect. Azure DevOps doesn't restrict permissions by default. You need to adapt to your company's process."
+    - content: "Grant users full access to all pipelines."
+      isCorrect: false
+      explanation: "Incorrect. Incorrect. Granting full access allows unauthorized users to have access to your pipelines."
+  - content: "What is the purpose of an Approval in Azure DevOps?"
+    choices:
+    - content: "An approval is a way to automatically test code changes before merging them into a branch."
+      isCorrect: false
+      explanation: "Incorrect. The Approval process isn't an automatic control."
+    - content: "An approval is a way to require manual sign before changes can be deployed to a production environment."
+      isCorrect: true
+      explanation: "Correct. An approval is a way to require manual sign before changes can be deployed to a production environment."
+    - content: "Approval is a way to automatically approve changes deploying to a production environment."
+      isCorrect: false
+      explanation: "Incorrect. The Approval process isn't an automatic control."
+  - content: "Which of the following is a best practice for securing pipelines in Azure DevOps?"
+    choices:
+    - content: "Use role-based access control to limit who can view and edit pipelines."
+      isCorrect: true
+      explanation: "Correct. Use role-based access control to limit who can view and edit pipelines. It allows administrators to specify who can view and edit pipelines."
+    - content: "Run pipelines as a Project or Collection Administrator only."
+      isCorrect: false
+      explanation: "Incorrect. It doesn't prevent unauthorized access to pipeline data or ensures that only authorized users can change pipelines."
+    - content: "Allow anyone to access pipeline data without permission to delete it."
+      isCorrect: false
+      explanation: "Incorrect. It doesn't prevent unauthorized access to pipeline data or ensures that only authorized users can change pipelines."

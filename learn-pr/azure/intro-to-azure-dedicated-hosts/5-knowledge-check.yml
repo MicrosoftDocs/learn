@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-dedicated-hosts.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure dedicated hosts.
+  ms.date: 06/1/2023
+  author: mattmcinnes
+  ms.author: mattmcinnes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What are the additional prerequisites required to run VMs on a dedicated host? "
+    choices:
+    - content: "Host reservations, Hosts, Size sets, Instances"
+      isCorrect: false
+      explanation: "Incorrect. Host reservations and Size sets don't exist"
+    - content: "Host groups, Scale reservations, Size families, Cores"
+      isCorrect: false
+      explanation: "Incorrect. Scale reservations don't exist. Cores are a layer of standard virtual machines."
+    - content: "Host groups, Hosts, Size families, Instances"
+      isCorrect: true
+      explanation: "Correct. All these prerequisites are required to run a virtual machine on a dedicated host."
+  - content: "How do maintenance schedules work with dedicated hosts"
+    choices:
+    - content: "Azure never does maintenance on dedicated hosts."
+      isCorrect: false
+      explanation: "Incorrect. Azure still requires occasional maintenance to function properly, however a 35 day notice is given prior to said maintenance. You can choose to perform this maintenance at any time during this time window."
+    - content: "The user selects a maintenance window within a set time window."
+      isCorrect: true
+      explanation: "Correct. Users get a warning 35 days in advance of any major maintenance. You can choose to perform this maintenance at any time during this time window."
+    - content: "Users are given a set time when maintenance will occur."
+      isCorrect: false
+      explanation: "Incorrect. Azure never performs maintenance on a host without informing the user. You'll get a warning 35 days in advance of any major maintenance. You can choose to perform this maintenance at any time during this time window."  
+  - content: "How many VMs can run on a single dedicated host?"
+    choices:
+    - content: "As many as the host can fit"
+      isCorrect: true
+      explanation: "Correct. As long as the sum of the sizes is less than the host's resources, you can run as many VMs as you want."
+    - content: "As many as you want as long as they're identical sizes"
+      isCorrect: false
+      explanation: "Incorrect. You can mix as many sizes as you want as long as they're in the same size family and the sum of the sizes is less than the host's resources."
+    - content: "A dedicated host is a single VM"
+      isCorrect: false
+      explanation: "Incorrect. While a single size can encompass an entire host's resources, you can run as many smaller sizes as you can fit within the host's resources."

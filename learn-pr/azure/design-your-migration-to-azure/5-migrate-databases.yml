@@ -4,8 +4,8 @@ metadata:
   title: Migrate databases with Azure Database Migration Service
   description: Learn how to use Azure Database Migration Service, which provides a way to move on-premises SQL Server databases efficiently to the Azure cloud platform.
   ms.date: 04/13/2023
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate databases with Azure Database Migration Service

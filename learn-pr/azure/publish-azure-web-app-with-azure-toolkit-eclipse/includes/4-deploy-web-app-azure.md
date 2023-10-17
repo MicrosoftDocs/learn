@@ -14,7 +14,7 @@ If the **Azure Explorer** window indicates that you have not signed in, follow t
 
     :::image type="content" source="../media/4-not-signed-in.png" alt-text="Screenshot of the Azure Explorer in Eclipse. The user is about to sign in." loc-scope="third-party":::
 
-2. You'll be prompted to connect. You can either use a device login, in which case you'll be given a code and directed to a login page using the web browser, or you can specify an authentication file containing credentials for an Azure Active Directory service principal.
+2. You'll be prompted to connect. You can either use a device login, in which case you'll be given a code and directed to a login page using the web browser, or you can specify an authentication file containing credentials for a Microsoft Entra service principal.
 
     :::image type="content" source="../media/4-azure-sign-in.png" alt-text="Screenshot of the Azure Sign In dialog box." loc-scope="third-party":::
 

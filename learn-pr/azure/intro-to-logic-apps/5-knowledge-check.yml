@@ -8,13 +8,13 @@ metadata:
   author: ecfan
   ms.author: estfan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
+  - content: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You need to handle a large volume of transactions and you need to do it quickly. The faster you can complete trades, the more of an advantage you have over your competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
     choices:
     - content: "High throughput"
       isCorrect: false
@@ -43,7 +43,7 @@ quiz:
       explanation: "Azure Logic Apps offers a code view editor that lets you change the underlying JSON definition of your workflow. However, this editor doesn't support writing executable code in a language like JavaScript."
     - content: "Azure Logic Apps isn't the correct service to use and you should investigate different solutions."
       isCorrect: false
-      explanation: "You can use Azure Logic Apps even when some services don't have pre-built connectors. It's your job to implement the missing connectors."
+      explanation: "You can use Azure Logic Apps even when some services don't have prebuilt connectors. It's your job to implement the missing connectors."
     - content: "Create a custom connector for the customer management system and use it in your logic app workflow."
       isCorrect: true
       explanation: "Azure Logic Apps is an extensible platform. You can create a REST API for your proprietary systems and build a custom connector that invokes that API."

@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
+  ms.subservice: azure-large-instances
 title: Examine SAP HANA on Azure (Large Instances) sample architecture
 summary: Examine SAP HANA on Azure (Large Instances) sample architecture and workflow.
 abstract: |

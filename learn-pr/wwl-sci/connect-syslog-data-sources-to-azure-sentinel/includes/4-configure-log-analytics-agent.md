@@ -1,46 +1,18 @@
-The agent to only collect events with the facilities and severities that are specified in its configuration. You can add a new facility in the Log Analytics workspace advanced settings.
+The Data Collection Rule (DCR) only collects events with the facilities and severities that are specified in its Data sources configurations. For Syslog, you can modify the `Facility Minimum log level` and `Destination` in the **Add data source** page.
 
-To configure the agent for syslog facilities:
+To configure the Syslog `Facility log level`and `Destination`:
 
-1. Access the Log Analytics Workspace Advanced Settings page:
+1. Access the Data collection rule Data sources **Add data source** page:
 
-    - From the Syslog Data connector page, select Open your workspace advanced settings configuration.
+    - Select **Configuration**, **Data sources**
 
-    - From the Microsoft Sentinel portal, select **Settings** in the Configuration area. Select **Workspace Settings** Tab. Select **Advanced settings** in the Settings area.
+    - Select **Linux Syslog**.
 
-1. Select **Agents Configuration**.
+1. Select the **Minimum log level** drop-down menu to make changes for each `Facility`.
 
-1. Select **Syslog**.
+    :::image type="content" source="../media/04-linux-syslog-facilities-log-level.png" alt-text="Screenshot of Linux Syslog facilities selections and minimum log levels.":::
 
-1. Enter the facility name and select **+** for each facility.
+1. When completed select **Save**
 
-By default, all configuration changes are automatically pushed to all agents. 
-
-The following facilities are supported with the Syslog collector:
-
-- kern
-
-- user
-
-- mail
-
-- daemon
-
-- auth
-
-- syslog
-
-- lpr
-
-- news
-
-- uucp
-
-- cron
-
-- authpriv
-
-- ftp
-
-- local0-local7
-
+    >[!NOTE]
+    >The default is "LOG_DEBUG" for each Facility, and changes are automatically pushed to all configured resources.

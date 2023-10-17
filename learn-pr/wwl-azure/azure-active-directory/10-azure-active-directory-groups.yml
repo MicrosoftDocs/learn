@@ -4,12 +4,10 @@ title: Manage users with Azure AD groups
 metadata:
   title: Manage users with Azure AD groups
   description: "Manage users with Azure AD groups"
-  ms.date: 04/04/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/10-azure-active-directory-groups.md)]

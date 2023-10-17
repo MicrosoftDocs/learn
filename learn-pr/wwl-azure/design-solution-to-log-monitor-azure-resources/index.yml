@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Design a solution to log and monitor Azure resources
 summary: Azure Architects design and recommend logging and monitoring solutions.
 abstract: |

@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-create-moderator-service.md)]

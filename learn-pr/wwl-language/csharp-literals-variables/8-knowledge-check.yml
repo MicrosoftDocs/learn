@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/13/2023
+  ms.date: 09/22/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -31,11 +30,11 @@ quiz:
       explanation: "Incorrect. It's true that `var` isn't a data type, but that's not the problem with this code."
     - content: "Use of `var` keyword without initializing the variable"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! A `var` data type must have an initialized value."
     - content: "A variable named `message` should always be a string."
       isCorrect: false
       explanation: "Incorrect. This isn't necessarily true. It depends on the context."
-  - content: "Which of the following is the output of `Console.WriteLine(34.40M)`?"
+  - content: "Which of the following is the output of `Console.WriteLine(34.40M);`?"
     choices:
     - content: "`34.40M`"
       isCorrect: false
@@ -45,7 +44,7 @@ quiz:
       explanation: "Incorrect. Using the decimal literal `M` or `m` will print a number that includes values after the decimal point."
     - content: "`34.40`"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! Using the decimal literal `M` or `m` will denote a decimal data type. Decimal values include the values after the decimal point when displayed."
   - content: "Which of the following lines of code creates a variable correctly?"
     choices:
     - content: "`int x = 12.3m;`"

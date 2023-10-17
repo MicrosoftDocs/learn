@@ -1,10 +1,10 @@
-Agile is a term that's used to describe approaches to software development, emphasizing incremental delivery, team collaboration, continual planning and learning. Agile isn't a process as much as it's a philosophy or mindset for planning the work that a team will do. It's based on iterative development and helps a team better plan for and react to the inevitable changes that occur in software development. Let's listen in on Mara's discussion with Andy after the latest release.
+Agile is a term that's used to describe approaches to software development, emphasizing incremental delivery, team collaboration, continual planning, and learning. Agile isn't a process as much as it's a philosophy or mindset for planning the work that a team will do. It's based on iterative development and helps a team better plan for and react to the inevitable changes that occur in software development. Let's listen in on Mara's discussion with Andy after the latest release.
 
 Mara felt she'd made a few small steps toward interesting the team in DevOps, but progress has stalled. The team has been too busy fixing bugs in the last release to think about anything else.
 
 Recall that Irwin, the product manager, provided the team with some rather critical customer feedback about the racing game website. Resolving these issues wasn't fun. Andy and Mara would write code and then hand it to Amita, the tester. Amita always seemed to find new bugs and had to hand the code back. The build server failed. Tim couldn't get the game's website to work in production, even after it worked in dev and test. Everyone worked long hours and lost a couple of weekends.
 
-After they shipped the release, Mara and Andy sat down for coffee. They were both tired. Mara was discouraged but Andy had a different attitude.
+After they shipped the release, Mara and Andy sat down for coffee. They were both tired. Mara was discouraged, but Andy had a different attitude.
 
 **Andy:** I don't know why you're surprised. Getting software out the door is hard. It's always a slog. Have you ever done it differently?
 
@@ -39,13 +39,13 @@ The team is getting ready to take their first steps toward adopting Agile. Here 
 
 ### Create an organizational structure that supports Agile practices
 
-For most organizations, adopting Agile can be difficult. It requires a mind-shift and a culture-shift that challenges many existing policies and processes within the organization. Traditionally, most companies use a horizontal team structure. In practice, this means teams correspond to the software architecture. For example, there might be a team responsible for an application's user interface, another team responsible for data, and another team responsible for the service-oriented architecture.
+For most organizations, adopting Agile can be difficult. It requires a mind shift and a culture shift that challenges many existing policies and processes within the organization. Traditionally, most companies use a horizontal team structure. In practice, this means teams correspond to the software architecture. For example, there might be a team responsible for an application's user interface, another team responsible for data, and another team responsible for the service-oriented architecture.
 
-However, vertical teams provide better results for Agile projects. Vertical teams span the architecture and are aligned with product outcomes. For example, there might be a team responsible for the email portion of the app and team members come from all three of the above mentioned disciplines. Another benefit of the vertical team structure is that scaling occurs by adding teams. 
+However, vertical teams provide better results for Agile projects. Vertical teams span the architecture and are aligned with product outcomes. For example, there might be a team responsible for the app's email portion, and team members come from all three of the previously mentioned disciplines. Another benefit of the vertical team structure is that scaling occurs by adding teams.
 
 ### Mentor team members on Agile techniques and practices
 
-When they first start to adopt Agile techniques and practices, some teams decide to hire external coaches. Coaches might even work with multiple teams to help remove organizational roadblocks and silos, so they often have both teaching and managerial skills. They can also train team members in Agile techniques like how to run stand-up and review meetings. Over time though, it's important for team members to develop an ability to mentor each other. This means that most work should be done collaboratively and not by individuals who spend most of their time working alone.
+When they first start to adopt Agile techniques and practices, some teams decide to hire external coaches. Coaches might even work with multiple teams to help remove organizational roadblocks and silos, so they often have both teaching and managerial skills. They can also train team members in Agile techniques, like how to run stand-up and review meetings. Over time, though, it's important for team members to develop an ability to mentor each other. This means that most work should be done collaboratively and not by individuals who spend most of their time working alone.
 
 ### Enable in-team and cross-team collaboration
 
@@ -61,7 +61,7 @@ Asynchronous communications, like email and messages, can feel overwhelming and 
 
 Remote team members are now the norm in many companies. Everyone needs to feel comfortable with all their team members and to treat them equally, whether they're in the office or working offsite. Collaboration via communication should become part of the organization's DNA.
 
-The importance of good communication can't be overemphasized, even when there are disagreements. Conflict resolution is a good skill for any Agile team to have.
+We can't overemphasize the importance of good communication, even when there are disagreements. Conflict resolution is a good skill for any Agile team to have.
 
 #### Cross-functional teams
 
@@ -71,8 +71,8 @@ Just as it's important for team members to work collaboratively, it's also impor
 
 Good tools can help your Agile team members collaborate more effectively, both within the team and with other teams. Here are a few suggestions to help you get started:
 
-* [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software?azure-portal=true). Teams is an application that provides a workplace for chat, meetings, notes, and file storage.
-* [Skype](https://www.skype.com/?azure-portal=true). Skype is easy to use and a good general-purpose tool. Many people have it already installed.
-* [Slack](https://slack.com/?azure-portal=true). Slack provides many separate communication channels, all from a single interface. These can be organized in many ways, such as by project, team, or topic. Conversations are retained and are searchable. It's easy to add both internal and external team members. Slack directly integrates with many third-party tools, like GitHub for source code.
+* [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software?azure-portal=true): Teams is an application that provides a workplace for chat, meetings, notes, and file storage.
+* [Skype](https://www.skype.com/?azure-portal=true): Skype is easy to use and a good general-purpose tool. Many people already have it installed.
+* [Slack](https://slack.com/?azure-portal=true): Slack provides many separate communication channels, all from a single interface. You can organize these channels in many ways, such as by project, team, or topic. Conversations are retained and are searchable. It's easy to add both internal and external team members. Slack directly integrates with many third-party tools, like GitHub for source code.
 
 Other common tools include Google Hangouts, Asana, Trello, GoToMeeting and monday.com. Try to familiarize yourself with the options to see which of them suit the needs of your team and your company.

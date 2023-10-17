@@ -8,6 +8,9 @@ metadata:
   author: ggailey777
   ms.author: glenga
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-extended-java
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |

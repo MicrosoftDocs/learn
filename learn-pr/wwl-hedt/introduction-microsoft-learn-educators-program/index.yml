@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: learn
 title: Introduction to Microsoft Learn for Educators program
 summary: Microsoft Learn for Educators provides eligible educators and faculty members at colleges, universities, community colleges, polytechnics, and some STEM-focused secondary schools access to Microsoft's ready-to-teach curriculum and teaching materials aligned to industry-recognized Microsoft certifications.
 abstract: |
@@ -24,7 +24,7 @@ levels:
 roles:
 - higher-ed-educator
 products:
-- azure-security-center
+- defender-for-cloud
 - dynamics-365
 - dynamics-customer-service
 subjects:

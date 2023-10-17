@@ -10,7 +10,7 @@ metadata:
   ms.author: jushiman
   ms.reviewer: mimckitt
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 
 durationInMinutes: 3
 content: |

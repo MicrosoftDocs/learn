@@ -7,7 +7,7 @@ Let's examine some details about working with activity logs in Azure Monitor.
 
 - You can use the information in activity logs to understand the status of resource operations and other relevant properties.
 
-- Activity logs can help you can determine the "what, who, and when" for any write operation (PUT, POST, DELETE) performed on resources in your subscription.
+- Activity logs can help you determine the "what, who, and when" for any write operation (PUT, POST, DELETE) performed on resources in your subscription.
 
 - Activity logs are kept for 90 days.
 

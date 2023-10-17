@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-secure-access-pipeline-resources.configure-service-connections
+title: Configure service connections
+metadata:
+  title: Configure service connections
+  description: "Configure service connections."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-configure-service-connections.md)]

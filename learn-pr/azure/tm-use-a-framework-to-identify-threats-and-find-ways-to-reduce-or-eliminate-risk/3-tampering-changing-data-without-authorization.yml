@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Sender encrypts the attachment of an email so the receiver knows it came from them"
       isCorrect: false
-      explanation: "Encrypting the attachment is not enough. Digitally sign a message to ensure tampering does not happen"
+      explanation: "Encrypting the attachment isn't enough. Digitally sign a message to ensure tampering doesn't happen"
     - content: "System logs all actions and users to keep everyone accountable"
       isCorrect: false
       explanation: "This statement applies to repudiation"

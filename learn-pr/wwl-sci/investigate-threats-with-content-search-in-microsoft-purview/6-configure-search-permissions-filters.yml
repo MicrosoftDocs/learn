@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.configure-search-permissions-filters
+title: Configure search permissions filtering
+metadata:
+  title: Configure search permissions filtering
+  description: "Configure Microsoft Purview Content Search, search permissions filtering."
+  ms.date: 05/25/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-configure-search-permissions-filters.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "To perform threat hunting with Content search, you need the Enterprise Administrator for your organization to run compliance security filter cmdlets in Windows PowerShell. Which of the following is a step that Allan must complete to run these cmdlets?"
+    choices:
+    - content: "Enable search permission filtering in the Microsoft Purview compliance portal"
+      isCorrect: false
+      explanation: "Incorrect. This item isn't a valid step that Allan must complete."
+    - content: "Connect Windows PowerShell to both the Microsoft Purview compliance portal and to Microsoft Teams"
+      isCorrect: false
+      explanation: "Incorrect. Allan must connect Windows PowerShell to both the Microsoft Purview compliance portal and to Northwind's Exchange Online organization."
+    - content: "Be a member of the Organization Management role group in the Microsoft Purview compliance portal"
+      isCorrect: true
+      explanation: "Correct. Allan must be a member of the Organization Management role group in the Microsoft Purview compliance portal to have the permissions necessary to run the compliance security filter cmdlets in Windows PowerShell."

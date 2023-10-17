@@ -3,11 +3,11 @@ uid: learn.azure.access-blob-storage-metrics-from-code
 metadata:
   title: Access metrics from your Azure Blob Storage Containers Programmatically
   description: Discover how to use Azure Monitor to gather performance metrics and then configure and access those metrics from .NET application code.
-  ms.date: 04/12/2019
+  ms.date: 08/29/2023
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-blob-storage
 title: Access Metrics from your Azure Blob Storage Containers Programmatically
 summary: Learn how to write C# code that accesses Azure Blob Storage metrics from Azure Monitor.
 abstract: |
@@ -18,7 +18,7 @@ prerequisites: |
   - Knowledge of the Azure portal
   - Knowledge of Azure Blob Storage Containers
   - Ability to write and understand C# code and .NET framework classes
-  - To complete the optional exercises, you'll need an Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and add a subscription before you begin.
+  - To complete the optional exercises, you need an Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and add a subscription before you begin.
 iconUrl: /training/achievements/access-blob-storage-metrics-from-code.svg
 levels:
 - beginner

@@ -8,6 +8,7 @@ metadata:
   ms.date: 11/09/2021
   author: IEvangelist
   ms.author: dapine
+  ms.manager: markl
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: aspnet-core
 durationInMinutes: 10

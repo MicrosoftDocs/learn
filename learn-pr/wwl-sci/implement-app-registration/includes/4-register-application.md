@@ -141,3 +141,10 @@ Next, you'll configure a client app's registration with access to your web API a
 Once a client app registration is granted permission to access your web API, the client can be issued an OAuth 2.0 access token by the Microsoft identity platform. When the client calls the web API, it presents an access token whose scope (scp) claim is set to the permissions you've specified in the client's app registration.
 
 You can expose additional scopes later as necessary. Consider that your web API can expose multiple scopes associated with several operations. Your resource can control access to the web API at runtime by evaluating the scope (scp) claim(s) in the OAuth 2.0 access token it receives.
+
+### What is going on behind the scenes
+
+ -  The app registration is created in the home tenant
+ -  The app is instantiated with a security principal in Azure AD
+ -  The security principal is granted consent by either the first user or admin, based on the setup of the exposed API
+ -  The security principal is granted the security token as the user accesses the application and uses the API

@@ -7,7 +7,10 @@ metadata:
   ms.date: 10/12/2020
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-languages
 durationInMinutes: 3
 quiz:
@@ -47,7 +50,7 @@ quiz:
       explanation: "The .NET runtime can run only .NET assemblies. We're looking for an answer that covers broader functionality."
     - content: "The .NET base libraries"
       isCorrect: false
-      explanation: "The .NET base libraries contain a lot of functionality that you can access from your code.  But we're looking for an answer that covers broader functionality."
+      explanation: "The .NET base libraries contain a lot of functionality that you can access from your code. But we're looking for an answer that covers broader functionality."
     - content: "The .NET SDK"
       isCorrect: true
       explanation: "Correct!"

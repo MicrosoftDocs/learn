@@ -6,8 +6,8 @@ metadata:
   ms.date: 05/27/2020
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.topic: unit
 title: Review the coupon service design
 durationInMinutes: 6
 content: |

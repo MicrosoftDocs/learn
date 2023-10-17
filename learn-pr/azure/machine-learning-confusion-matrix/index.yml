@@ -4,10 +4,9 @@ metadata:
   title: Confusion matrix and data imbalances
   description: How do we know if a model is good or bad at classifying our data? The way that computers assess model performance sometimes can be difficult for us to comprehend or can over-simplify how the model will behave in the real world. To build models that work in a satisfactory way, we need to find intuitive ways to assess them, and understand how these metrics can bias our view.
   ms.date: 04/14/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Confusion matrix and data imbalances
 summary: How do we know if a model is good or bad at classifying our data? The way that computers assess model performance sometimes can be difficult for us to comprehend or can over-simplify how the model will behave in the real world. To build models that work in a satisfactory way, we need to find intuitive ways to assess them, and understand how these metrics can bias our view.
 abstract: | 

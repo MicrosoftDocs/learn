@@ -8,9 +8,9 @@ metadata:
   author: eric-urban
   ms.author: eur
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 15
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/5-exercise-customize-batch-transcription.md)]
+  [!INCLUDE[](includes/5-exercise-customize-batch-transcription.md)]

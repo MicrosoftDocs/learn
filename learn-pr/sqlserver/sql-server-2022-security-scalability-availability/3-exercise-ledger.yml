@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.sql-server-2022-security-scalability-availability.exercise-ledger
+title: Exercise - Ledger
+metadata:
+  title: Exercise - Ledger
+  description: "An exercise on a real world scenario of using ledger in SQL Server 2022."
+  ms.date: 05/23/2023
+  author: VanMSFT
+  ms.author: vanto
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-exercise-ledger.md)]
+quiz:
+  title: Knowledge check - Choose the best answer
+  questions:
+  - content: "Ledger tables are introduced in two forms in SQL Server 2022. What are they?"
+    choices: 
+    - content: "A. Updatable ledger tables and read-only ledger tables."
+      isCorrect: false
+      explanation: "A read-only ledger table isn't one of the tables introduced in SQL Server 2022."
+    - content: "B. Blockchain ledger tables and updatable ledger tables."
+      isCorrect: false
+      explanation: "A blockchain ledger table isn't one of the tables introduced in SQL Server 2022."
+    - content: "C. Append-only ledger tables and audit ledger tables."
+      isCorrect: false
+      explanation: "An audit ledger table isn't one of the tables introduced in SQL Server 2022."
+    - content: "D. Updatable ledger tables and append-only ledger tables."
+      isCorrect: true
+      explanation: "Correct."
+  - content: "Independent verification for ledger in SQL Server 2022 is done by:"
+    choices:
+    - content: "A. The database ledger through system tables."
+      isCorrect: false
+      explanation: "The system tables can provide you with information for transactions in a ledger table, such as the user who made that transaction, but can't verify the ledger."
+    - content: "B. The ledger history view."
+      isCorrect: false
+      explanation: "The ledger history view can provide you with transaction sequence and operation types, such as an `INSERT`, but can't verify the ledger."
+    - content: "C. Database digest."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "D. Blockchain data in SQL Server tables."
+      isCorrect: false
+      explanation: "Blockchain data in SQL Server doesn't provide verification for ledger in SQL Server."

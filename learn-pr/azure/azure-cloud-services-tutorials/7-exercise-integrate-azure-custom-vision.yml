@@ -4,9 +4,9 @@ title: Exercise - Integrate Azure Custom Vision
 metadata:
   title: Exercise - Integrate Azure Custom Vision
   description: Description to Integrate Azure Custom Vision
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 4

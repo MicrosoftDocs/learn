@@ -4,13 +4,11 @@ title: Create keyword dictionary
 metadata:
   title: Create keyword dictionary
   description: "Create keyword dictionary"
-  ms.date: 04/18/2023
+  ms.date: 05/26/2023
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: riswinto
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-azureSandbox: false
-labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/6-create-keyword-dictionary.md)]

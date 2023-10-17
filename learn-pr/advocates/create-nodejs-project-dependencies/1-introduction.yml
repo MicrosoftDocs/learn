@@ -6,10 +6,12 @@ metadata:
   description: Build your app faster by using packages from npm. Manage your package dependencies and your Node.js project by configuring the package.json file.  
   author: softchris
   ms.author: chnoring
-  ms.date: 05/10/2022
+  ms.date: 05/30/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

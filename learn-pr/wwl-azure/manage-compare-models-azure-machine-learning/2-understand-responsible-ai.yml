@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-compare-models-azure-machine-learning.understand-responsible-ai
+title: Understand Responsible AI
+metadata:
+  title: Understand Responsible AI
+  description: "Understand the Responsible AI guidelines presented by Microsoft."
+  ms.date: 09/11/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-understand-responsible-ai.md)]

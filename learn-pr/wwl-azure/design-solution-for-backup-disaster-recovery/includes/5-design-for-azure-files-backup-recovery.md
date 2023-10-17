@@ -2,7 +2,7 @@ Azure Files provides the capability to take [share snapshots of file shares](/az
 
 :::image type="content" source="../media/file-share-backup.png" alt-text="Diagram of Azure file shares snapshots stored in a Recovery Services vault." border="false":::
 
-### Things to know about Azure file share backup and recovery
+### Things to know about Azure File share backup and recovery
 
 Let's review some of the characteristics regarding backup and recovery of Azure file shares.
 

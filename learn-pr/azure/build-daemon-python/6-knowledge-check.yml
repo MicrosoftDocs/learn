@@ -9,7 +9,9 @@ metadata:
   author: henrymbuguakiarie
   ms.author: henrymbugua
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 3
 ###########################################################################
 ###
@@ -28,7 +30,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-    - content: John is granting permission to an application registered within the Azure Active Directory (Azure AD) tenant. Which of the following permissions will allow a daemon application to authenticate as itself without user interaction and call Microsoft Graph?
+    - content: John is granting permission to an application registered within the Microsoft Entra tenant. Which of the following permissions will allow a daemon application to authenticate as itself without user interaction and call Microsoft Graph?
       choices:
         - content: Application permissions
           isCorrect: true

@@ -39,6 +39,6 @@ modules:
 - learn.provision-azure-sql-db
 - learn.azure.migrate-app-service-migration-assistant
 - learn-wwl.migrate-sql-workloads-azure-sql-databases
-- learn.azure.deploy-aspnet-apps-azure-app-service-pipelines
+# - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines
 trophy:
   uid: learn.azure.migrate-dotnet-apps-azure.trophy

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Set up Azure Database for PostgreSQL
   description: Provision and configure an Azure Database for PostgreSQL server.
   ms.date: 05/15/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 25

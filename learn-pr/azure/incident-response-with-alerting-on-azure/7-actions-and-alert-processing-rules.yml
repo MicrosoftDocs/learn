@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.incident-response-with-alerting-on-azure.actions-and-alert-processing-rules
+metadata:
+  title: Use action groups and alert processing rules to send notifications when an alert is fired
+  description: Learn about how to send notifications when an alert is fired using action groups, and how to override the actions with alert processing rules.
+  ms.date: 10/10/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use action groups and alert processing rules to send notifications when an alert is fired
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-actions-and-alert-processing-rules.md)]

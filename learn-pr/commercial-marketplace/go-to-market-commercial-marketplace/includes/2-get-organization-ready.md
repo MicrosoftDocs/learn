@@ -63,7 +63,7 @@ Here are a few example activities that require some technical knowledge:
 
 - Connecting your Customer Relationship Management (CRM) system to get [customer leads from your commercial marketplace offer](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads)
 - Offering a free trial or [test drive](/azure/marketplace/what-is-test-drive) of your offer so customers can test your solution
-- Integrating your software with [Azure Active Directory](/azure/marketplace/azure-ad-saas) for streamlined purchasing, fulfillment, and management of your solution for customers
+- Integrating your software with [Microsoft Entra ID](/azure/marketplace/azure-ad-saas) for streamlined purchasing, fulfillment, and management of your solution for customers
 - Building a [transact](/azure/marketplace/marketplace-commercial-transaction-capabilities-and-considerations) offer to provide streamlined purchases and automated distribution of your solution
 
 Your technical teams will also need to be involved as you consider different pricing strategies and software-deployment models. For more technical information, your team can reference the [commercial marketplace documentation](/azure/marketplace/).

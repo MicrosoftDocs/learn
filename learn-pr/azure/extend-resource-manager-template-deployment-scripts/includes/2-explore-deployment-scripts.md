@@ -4,7 +4,7 @@ ARM templates are wonderful things. You can use them to declare the desired stat
 
 ## What are deployment scripts?
 
-`deploymentScripts` resources are either PowerShell or Bash scripts that run in a Docker container as part of your template deployment. The default container images have either the Azure CLI or Azure PowerShell available. These scripts run during the processing of the ARM template, so you can add custom behavior to the deployment process.
+`deploymentScripts` resources are either PowerShell or Bash scripts that run in a Docker container as part of your template deployment. The default container images have either the Azure CLI or Azure PowerShell available. These scripts run during the ARM template processing, so you can add custom behavior to the deployment process.
 
 Deployment scripts use a [managed identity](/azure/active-directory/managed-identities-azure-resources/overview) to authenticate to Azure. A managed identity is a service principal whose credential and lifecycle are managed by the Azure platform. This identity is what the Azure PowerShell or Azure CLI commands will use to act on the environment. Because you assign the identity, you control the scope of what a `deploymentScripts` resource can affect.
 
@@ -41,7 +41,7 @@ Two `deploymentScripts`-specific values are required:
 
   ::: zone-end
 
-- `identity`: The managed identity that the container instance will use. You can create the managed identity ahead of time and specify it like the following example. Or you can create it in the template and reference it there (which is what you'll do in the next exercise).
+- `identity`: The managed identity that the container instance will use. You can create the managed identity ahead of time and specify it like the following example, or you can create it in the template and reference it there (which is what you'll do in the next exercise).
 
   ::: zone pivot="jsoncli,jsonpowershell"
 
@@ -90,7 +90,7 @@ For a PowerShell script, you pass outputs back by creating a variable named `$De
 > [!TIP]
 > You can also write deployment scripts in Bash. To create outputs from a Bash script, you need to create a JSON file in a location specified by the `AZ_SCRIPTS_OUTPUT_PATH` environment variable.
 
-Within the `properties` section, you also define the various options that `deploymentScripts` can take. In this module, we'll keep it simple and add just enough to get the script to run. At a minimum, you need to provide the version of Azure PowerShell or the Azure CLI to use, a script to run, and a retention interval. 
+Within the `properties` section, you also define the various options that `deploymentScripts` can take. In this module, we'll keep it simple and add just enough to get the script to run. At a minimum, you need to provide the version of Azure PowerShell or the Azure CLI to use, a script to run, and a retention interval.
 
 The retention interval is how long the results should be kept if you want to keep the resources. By default, the results are removed after you run the script.
 

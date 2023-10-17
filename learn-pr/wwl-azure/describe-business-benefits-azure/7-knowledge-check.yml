@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-business-benefits-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/11/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How does switching to Microsoft Azure from an off-cloud system change a business’s IT costs?"
+    choices:
+    - content: "The business will definitely pay more because Azure’s more powerful computing is more expensive than off-cloud IT."
+      isCorrect: false
+      explanation: "Incorrect. Azure offers greater power and capacity at more cost-efficient rates than off-cloud IT. A business will often be able to do more while paying less."
+    - content: "The business will always spend less on IT than before because Azure is so cheap."
+      isCorrect: false
+      explanation: "Incorrect. Azure is more cost-efficient than off-cloud IT. If a business invests a lot in the cloud, it may end up spending more on IT, but it will be doing a lot more as well."
+    - content: "The business’s IT spending will be more cost-efficient, regardless of the amount."
+      isCorrect: true
+      explanation: "Correct. Azure-based IT is more cost-efficient than off-cloud IT, meaning that any given task will cost less in the cloud. A business may pay less for the same IT tasks or pay more for a big expansion in the cloud."
+  - content: "How does Azure handle compliance with government regulations?"
+    choices:
+    - content: "Azure offers products that are designed to be compliant with regulations from around the world."
+      isCorrect: true
+      explanation: "Correct. Azure offers products that are compliant with various regulations from around the world, making it easy for a business to stay within the law wherever it operates."
+    - content: "Each business using Azure must construct a bespoke, compliant system in the cloud."
+      isCorrect: false
+      explanation: "Incorrect. Azure offers products to make compliance easier with various regulations. A business’s IT team will not have to construct a compliant cloud system on their own."
+    - content: "Cloud computing is generally subject to looser regulations than other IT arrangements."
+      isCorrect: false
+      explanation: "Incorrect. Cloud computing is subject to the same regulations as off-cloud IT, though Azure offers products to make compliance easier with various laws."
+  - content: "What does using Azure mean for a business’s IT security?"
+    choices:
+    - content: "The business’s data is safely hidden away with Azure, and they can’t control it without requesting special access from Microsoft."
+      isCorrect: false
+      explanation: "Incorrect. Azure is highly secure, but a business can always access and monitor its own data over the Internet."
+    - content: "The business’s data is less secure because it’s not housed on the business’s own equipment."
+      isCorrect: false
+      explanation: "Incorrect. Housing data in Azure is far more secure than most off-cloud IT systems."
+    - content: "The business’s data is stored on some of the most secure equipment in the world, and they can easily monitor it for compliance and proper use."
+      isCorrect: true
+      explanation: "Correct. Azure is one of the safest places a business can store its data, and any business can easily monitor its own cloud activity via the Internet."
+interactive: bash

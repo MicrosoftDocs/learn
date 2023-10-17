@@ -117,7 +117,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ## Create a workload identity
 
-Next, create a workload identity in Azure AD for your deployment workflow.
+Next, create a workload identity in Microsoft Entra ID for your deployment workflow.
 
 ::: zone pivot="cli"
 
@@ -162,7 +162,7 @@ To create the workload identities, the Azure CLI commands use `jq` to parse data
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
-      -Subject "repo:$githubOrganizationName/$githubRepositoryName:ref:refs/heads/main"
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):ref:refs/heads/main"
    ```
 
 ::: zone-end

@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-provision-environments.exercise-set-up-service-connections
-title: Exercise - Set up service connections
+title: Exercise - set up service connections
 metadata:
-  title: Exercise - Set up service connections
-  description: "Exercise - Set up service connections"
-  ms.date: 02/07/2023
+  title: Exercise - set up service connections
+  description: "Exercise - set up service connections"
+  ms.date: 09/04/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
+  ms.prod: azure
+  ms.service: azure-devops
+durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-set-up-service-connections.md)]

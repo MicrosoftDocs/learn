@@ -3,11 +3,11 @@ uid: learn.wwl.explore-azure-sap-workloads
 metadata:
   title: Explore Azure for SAP workloads
   description: "Explore how the Microsoft and SAP partnership allows fully supported SAP applications to run across development, test, and production scenarios in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 04/23/2023
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 title: Explore Azure for SAP workloads
 summary: Explore the expanded partnership between Microsoft and SAP. This partnership allows you to run fully supported SAP applications across development, test, and production scenarios in Azure alongside other Microsoft components.
 abstract: |

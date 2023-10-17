@@ -1,4 +1,4 @@
-This unit will address a few specific strategies for modern authentication:
+This unit addresses a few specific strategies for modern authentication:
 
 - Conditional access
 - Continuous access authentication
@@ -7,7 +7,7 @@ This unit will address a few specific strategies for modern authentication:
 
 ## Conditional Access
 
-Users can access your organization's resources by using a variety of devices and apps from anywhere. As an IT admin, you want to make sure that these devices meet your standards for security and compliance. Just focusing on who can access a resource is not sufficient anymore.
+Users can access your organization's resources by using various devices and apps from anywhere. As an IT admin, you want to make sure that these devices meet your standards for security and compliance. Just focusing on who can access a resource isn't sufficient anymore.
 
 To balance security and productivity, you need to think about how a resource is accessed before you can make a decision about access control. With Azure AD Conditional Access, you can address this requirement. With Conditional Access, you can make automated access control decisions based on conditions for accessing your cloud apps.
 
@@ -31,14 +31,12 @@ Timely response to policy violations or security issues really requires a "conve
 
 The initial implementation of continuous access evaluation focuses on Exchange, Teams, and SharePoint Online.
 
-To prepare your applications to use CAE, see How to use Continuous Access Evaluation enabled APIs in your applications.
-
 Continuous access evaluation is available in Azure Government tenants (GCC High and DOD) for Exchange Online.
 
 ### Key benefits
 
-- User termination or password change/reset: User session revocation will be enforced in near real time.
-- Network location change: Conditional Access location policies will be enforced in near real time.
+- User termination or password change/reset: User session revocation is enforced in near real time.
+- Network location change: Conditional Access location policies are enforced in near real time.
 - Token export to a machine outside of a trusted network can be prevented with Conditional Access location policies.
 
 ## Scenarios 
@@ -147,17 +145,17 @@ END([What is Azure Active Directory Identity Protection? - Microsoft Entra | Mic
 
 Access control policies can be applied to protect organizations when a sign-in or user is detected to be at risk. Such policies are called **risk-based policies**. 
 
-Azure AD Conditional Access offers two risk conditions: **Sign-in risk** and **User risk**. Organizations can create risk-based Conditional Access policies by configuring these two risk conditions and choosing an access control method. During each sign-in, Identity Protection sends the detected risk levels to Conditional Access, and the risk-based policies will apply if the policy conditions are satisfied.
+Azure AD Conditional Access offers two risk conditions: **Sign-in risk** and **User risk**. Organizations can create risk-based Conditional Access policies by configuring these two risk conditions and choosing an access control method. During each sign-in, Identity Protection sends the detected risk levels to Conditional Access, and the risk-based policies apply if the policy conditions are satisfied.
 
 ![Diagram that shows a conceptual risk-based Conditional Access policy.](../media/risk-based-conditional-access-diagram.png)
 
-For example, as shown in the diagram below, if organizations have a sign-in risk policy that requires multifactor authentication when the sign-in risk level is medium or high, their users must complete multifactor authentication when their sign-in risk is medium or high.
+The following diagram shows an example of enforcing a policy that requires multifactor authentication when the sign-in risk level is medium or high.
   
 ![Diagram that shows a conceptual risk-based Conditional Access policy with self-remediation.](../media/risk-based-conditional-access-policy-example.png)
 
-The example above also demonstrates a main benefit of a risk-based policy: **automatic risk remediation**. When a user successfully completes the required access control, like a secure password change, their risk is remediated. That sign-in session and user account won't be at risk, and no action is needed from the administrator. 
+The example above also demonstrates a main benefit of a risk-based policy: **automatic risk remediation**. When a user successfully completes the required access control, like a secure password change, their risk is remediated. That sign-in session and user account isn't at risk, and no action is needed from the administrator. 
 
-Allowing users to self-remediate using this process will significantly reduce the risk investigation and remediation burden on the administrators while protecting your organizations from security compromises. More information about risk remediation can be found in the article, Remediate risks and unblock users.
+Allowing users to self-remediate using this process reduces the risk investigation and remediation burden on the administrators while protecting your organizations from security compromises. More information about risk remediation can be found in the article, Remediate risks and unblock users.
 
 ### Sign-in risk-based Conditional Access policy
 
@@ -171,9 +169,9 @@ If risks are detected on a sign-in, users can perform the required access contro
 
 ### User risk-based Conditional Access policy
 
-Identity Protection analyzes signals about user accounts and calculates a risk score based on the probability that the user has been compromised. If a user has risky sign-in behavior, or their credentials have been leaked, Identity Protection will use these signals to calculate the user risk level. Administrators can configure user risk-based Conditional Access policies to enforce access controls based on user risk, including requirements such as: 
+Identity Protection analyzes signals about user accounts and calculates a risk score based on the probability that the user has been compromised. If a user has risky sign-in behavior, or their credentials have been leaked, Identity Protection uses these signals to calculate the user risk level. Administrators can configure user risk-based Conditional Access policies to enforce access controls based on user risk, including requirements such as: 
 
 - Block access
 - Allow access but require a secure password change.
 
-A secure password change will remediate the user risk and close the risky user event to prevent unnecessary noise for administrators.
+A secure password change remediates the user risk and close the risky user event to prevent unnecessary noise for administrators.
