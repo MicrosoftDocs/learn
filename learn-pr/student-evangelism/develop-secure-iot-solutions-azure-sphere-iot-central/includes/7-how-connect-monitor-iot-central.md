@@ -8,9 +8,6 @@ The components for this unit:
 
 ![IoT Central Architecture.](../media/iot-central-architecture.png)
 
-Azure IoT Central is built on the [8 attributes of successful IoT solutions](https://azure.microsoft.com/resources/8-attributes-of-successful-iot-solutions?azure-portal=true)
-
-
 **Azure IoT Central application** An Azure IoT Central application simplifies the creation of IoT solutions. You'll learn how to create, customize, manage, and use an Azure IoT Central application.
 
 ### Steps to follow

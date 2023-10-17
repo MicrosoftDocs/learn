@@ -12,7 +12,6 @@ Now you have:
 
 ## Learn more
 
-- [Migration Methodologies for SAP on Azure](https://azure.microsoft.com/resources/migration-methodologies-for-sap-on-azure/)
 - [SAP Note \#3106927](https://launchpad.support.sap.com/#/notes/3106927)
 - [SAP Note \#3126581](https://launchpad.support.sap.com/#/notes/3126581)
 - [SAP Note \#936441](https://launchpad.support.sap.com/#/notes/936441)
