@@ -1,5 +1,3 @@
-
-
 You considered remote management of Azure virtual machines. You set up the Azure connector for SAP Landscape Management, explored access management and Azure Bastion, and you also examined just-in-time virtual machine access.
 
 ## Learn more
