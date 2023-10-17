@@ -34,7 +34,7 @@ Contributions can be large or small, from adding new articles and discussions, t
 
 The effects of sharing your knowledge can be far-reaching and long-lasting. When you share your knowledge, you’re helping others grow and improve. In doing so, you’re also building your collaboration, technical, subject-matter, and content-development skills. You’re progressing your own career and skill set while helping others improve theirs. 
 
-Becoming a contributor means you join a communal effort alongside like-minded peers. Contributors can grow to become thought leaders in their fields, and they may be recognized and showcased for their work.
+Becoming a contributor means you join a communal effort alongside like-minded peers. Contributors can grow to become thought leaders in their fields, and they might be recognized and showcased for their work.
 
 Sharing your expertise with others helps everyone achieve more. Contributors are a vital and empowering pillar of Microsoft Learn, and you can join this global effort!
 

@@ -16,12 +16,12 @@ To post in Microsoft Q&A, you need a Microsoft Learn account. Once you’ve crea
 ### Ask a question
 
 1. To post a question, select **Ask a question**. 
-1. Add a title for your question in the title field. The title should summarize your problem or question. As you type, similar questions may appear to help guide you to questions that have already been asked and answered.
+1. Add a title for your question in the title field. The title should summarize your problem or question. As you type, similar questions might appear to help guide you to questions that have already been asked and answered.
 1. Add at least one tag to each new question posted. Tags help group topics together to make discussions easier to find and to help other experts monitor topics to answer. To add a tag, type the product name and choose from the available tag options.
 1. Add more details about your problem or question in the body field. You can use the rich web editor to enter details. 
 1. Select **Post your question** when finished. 
 
-:::image type="content" source="../media/ask-question-form.png" alt-text="Screenshot of a blank form to post a question on Microsoft Q&A":::
+:::image type="content" source="../media/ask-question-form.png" alt-text="Screenshot of a blank form to post a question on Microsoft Q&A.":::
 
 Let’s say one of your team members is having difficulty integrating AI Builder with Power Automate, and you’d like to help troubleshoot. You navigate to Microsoft Q&A and select the button to ask a question. You title your question “How to fix ‘app isn’t opening correctly’ error when integrating AI Builder with Power Automate?” You don’t see a tag for Power Platform so you use the tag ”Not monitored.” In the description, you add some additional context to your question, and select **Post your question** so others can see and begin responding! 
 
