@@ -50,7 +50,7 @@ Now, we'll add the **Sentiment** action to our workflow using the Azure portal.
 
 1. In the **Actions** section, select **Sentiment**.
 
-   The connection profile box appears so that you can provide informtion for your connection to your Azure AI services account.
+   The connection profile box appears so that you can provide information for your connection to your Azure AI services account.
 
 1. Provide the following connection information:
 
@@ -74,7 +74,7 @@ Next, we'll set up the **Sentiment** action's properties to pass in the tweet te
 
 1. Next, select the **documents-text** field.
 
-   The dynamic content list appears for you to select outputs from the prededing trigger or any actions.
+   The dynamic content list appears for you to select outputs from the preceding trigger or any actions.
 
 1. From the dynamic content list, under **When a new tweet is posted**, select **Tweet text**.
 
@@ -90,7 +90,7 @@ In this section, you'll learn how to monitor your logic app workflow's execution
 
 1. On the logic app resource menu, select **Overview**.
 
-1. On the **Oveview** pane toolbar, select **Refresh** every minute until the **Runs history** section shows at least one completed run.
+1. On the **Overview** pane toolbar, select **Refresh** every minute until the **Runs history** section shows at least one completed run.
 
    > [!NOTE]
    > 
