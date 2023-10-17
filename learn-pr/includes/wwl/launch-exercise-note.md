@@ -1,3 +1,10 @@
+---
+author: ivorb
+ms.author: berryivor
+ms.date: 10/12/2023
+ms.topic: include
+ms.service: azure
+---
 > [!NOTE]
 > To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can [sign up for one](https://azure.microsoft.com/?azure-portal=true).
 >
