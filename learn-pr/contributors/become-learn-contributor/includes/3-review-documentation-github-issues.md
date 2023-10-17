@@ -1,4 +1,4 @@
-One of the most useful ways to contribute to Microsoft Learn is to give feedback directly on a documentation article. Using the feedback link on the page, you can provide edits, suggestions, questions, or other insights as they come up in your browsing. Since most Microsoft Learn documentation content is stored in GitHub repositories, you’ll provide your feedback using a GitHub process called submitting a GitHub Issue. 
+One of the most useful ways to contribute to Microsoft Learn is to give feedback directly on a documentation article. Using the feedback link on the page, you can provide edits, suggestions, questions, or other insights as they come up in your browsing. Since most Microsoft Learn documentation content is stored in GitHub repositories, you can provide your feedback using a GitHub process called submitting a GitHub Issue. 
 
 An Issue in GitHub is a tool that enables technology users, engineers, and other Microsoft Learn visitors to share and track feedback on a specific article. You fill out a form to document your feedback and post it to the source article’s repository in GitHub, where an author or owner will be notified. Anyone who visits the GitHub repository can see Issues. They serve as a helpful way to collect and store valuable feedback, like reporting bugs, feature requests, or notes. 
 
@@ -12,7 +12,7 @@ Contributing to documentation content can provide professional benefits to you a
 
 ## How to give feedback on content
 
-Recall that many documentation articles on Microsoft Learn are stored in GitHub repositories. Many GitHub repositories have GitHub issues enabled. When enabled, you’ll find the option to submit feedback for *this page* at the bottom of an article on learn.microsoft.com. 
+Recall that many documentation articles on Microsoft Learn are stored in GitHub repositories. Many GitHub repositories have GitHub issues enabled. When enabled, you can find the option to submit feedback for *this page* at the bottom of an article on learn.microsoft.com. 
 
 :::image type="content" source="../media/feedback-options-github-issue.png" alt-text="Screenshot of the feedback options at the bottom of a documentation article.":::
 
@@ -20,9 +20,9 @@ To create and submit an issue, you need a GitHub account. Here’s how to submit
 
 1. Sign in to your GitHub account. 
 1. Navigate to the Microsoft Learn documentation article on which you’d like to give feedback. 
-1. At the bottom of the article, find the heading labeled **Feedback**. Here, you’ll see a box labeled **This page**. 
+1. At the bottom of the article, find the heading labeled **Feedback**. Here, you see a box labeled **This page**. 
 
-    - To give feedback on the article itself, select **This page**. This will take you to a blank Issues form on GitHub where you can begin filling out your comments. You’ll choose this option now.
+    - To give feedback on the article itself, select **This page**. This takes you to a blank Issues form on GitHub where you can begin filling out your comments. You’ll choose this option now.
     - If you’d like to review other GitHub issues submitted on the topic, select **View all page feedback**. Anyone can read other GitHub issues in a public repo, but if you have a GitHub account, you can comment on the issues as well.  
     - Selecting **This product** allows you to provide feedback on the product itself. We won’t go into detail on this option for now so we can focus on providing feedback on the documentation itself. 
 1. After you’ve selected **This page**, you’ll be prompted to sign in to your GitHub account if you haven’t already. Then, a blank Issues feedback form appears in GitHub. 

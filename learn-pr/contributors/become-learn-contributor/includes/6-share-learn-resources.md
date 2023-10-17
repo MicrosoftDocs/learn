@@ -6,7 +6,7 @@ By sharing links, you help create opportunities for others to overcome problems 
 
 ## How to share Microsoft Learn resources
 
-Sharing Microsoft Learn documentation pages is easy, as articles have a built-in share function. Select the three vertical dots next to the title of the article. This will show the sharing drop-down menu. From this menu, choose the social media platform you’d like to share to, or you can copy the URL to paste it elsewhere. 
+Sharing Microsoft Learn documentation pages is easy, as articles have a built-in share function. Select the three vertical dots next to the title of the article. This shows the sharing drop-down menu. From this menu, choose the social media platform you’d like to share to, or you can copy the URL to paste it elsewhere. 
 
 :::image type="content" source="../media/share-documentation-menu.png" alt-text="Screenshot showing the share options menu on a Microsoft documentation article.":::
 

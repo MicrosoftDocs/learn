@@ -17,7 +17,7 @@ If you’ve ever used information from learn.microsoft.com, you’ve benefited f
 A contribution to Microsoft Learn could be:
 
 - A suggestion, edit, technical review, or update to source content on GitHub. 
-- A GitHub issue submitting feedback on content..
+- A GitHub issue submitting feedback on content.
 - A question, comment, or answer posted to Microsoft Q&A.
 - A Collection of curated training content to share with others.
 - A shared link to Microsoft Learn (for example, on social media).
@@ -30,7 +30,7 @@ Let’s look at some examples of how you might contribute. Recall that you have 
 
 ## Why should you become a contributor?
 
-Contributions can be large or small, from adding new articles and discussions, to fixing a broken link. Your contribution doesn’t need to be gigantic to make a big impact. All contributions are valuable and help improve the Microsoft technologies and content offerings that many rely on. 
+Contributions can be large or small, from adding new articles and discussions, to fixing a broken link. Your contribution doesn’t need to be gigantic to make a large impact. All contributions are valuable and help improve the Microsoft technologies and content offerings that many rely on. 
 
 The effects of sharing your knowledge can be far-reaching and long-lasting. When you share your knowledge, you’re helping others grow and improve. In doing so, you’re also building your collaboration, technical, subject-matter, and content-development skills. You’re progressing your own career and skill set while helping others improve theirs. 
 
