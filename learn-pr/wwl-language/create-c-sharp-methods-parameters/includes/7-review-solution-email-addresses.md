@@ -1,6 +1,6 @@
 The following code is one possible solution for the challenge from the previous unit.
 
-	```c#
+```c#
 	string[,] corporate = 
 	{
 		{"Robert", "Bavin"}, {"Simon", "Bright"},
@@ -31,15 +31,15 @@ The following code is one possible solution for the challenge from the previous 
 		email = email.ToLower();
 		Console.WriteLine($"{email}@{domain}");
 	}
-	```
+```
 
-This code is just "*one possible solution*" because you may have added line feeds in different spots, used variables differently, or formatted the code differently.
+This code is just "*one possible solution*" because you might have added line feeds in different spots, used variables differently, or formatted the code differently.
 
 Regardless of minor code differences, your method should apply the default value of an optional parameter to display `contoso.com`. 
 
 When you run the code, you should see the following output:
 
-	```Output
+```Output
 	robavin@contoso.com
 	sibright@contoso.com
 	kisinclair@contoso.com
@@ -50,7 +50,7 @@ When you run the code, you should see the following output:
 	codysart@hayworth.com
 	shlawrence@hayworth.com
 	davaldes@hayworth.com
-	```
+```
 
 If you completed this challenge, congratulations! Continue on to the knowledge check in the next unit.
 
