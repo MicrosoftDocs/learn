@@ -1,6 +1,3 @@
-
-
-
 Integrating SAP Cloud Platform Identity Authentication with Azure AD gives you the following benefits:
 
 - You can control in Azure AD who has access to SAP Cloud Platform Identity Authentication.
@@ -50,7 +47,7 @@ Upload Azure AD metadata XML file or configure manually the following fields:
 2. In the applications list, select **SAP Cloud Platform Identity Authentication**.
 3. In the Azure portal, select **Users and groups**.
 4. Select the **Add user** button, then select users and groups you intend to assign to the application in the **Add Assignment** dialog.
-5. If you are expecting any role value in the SAML assertion then in the **Select Role** dialog select the appropriate role for the user from the list, then click the **Select** button at the bottom of the screen. In the Add Assignment dialog, select the **Assign** button.
+5. If you're expecting any role value in the SAML assertion then in the **Select Role** dialog select the appropriate role for the user from the list, then click the **Select** button at the bottom of the screen. In the Add Assignment dialog, select the **Assign** button.
 
     > [!NOTE]
     > You don't need to create a user in SAP Cloud Platform Identity Authentication. Users who are in the Azure AD user store can use the SSO functionality. SAP Cloud Platform Identity Authentication supports the Identity Federation option. This option allows the application to check whether users who are authenticated by the corporate identity provider exist in the user store of SAP Cloud Platform Identity Authentication. The Identity Federation option is disabled by default. If Identity Federation is enabled, only the users that are imported in SAP Cloud Platform Identity Authentication can access the application.
