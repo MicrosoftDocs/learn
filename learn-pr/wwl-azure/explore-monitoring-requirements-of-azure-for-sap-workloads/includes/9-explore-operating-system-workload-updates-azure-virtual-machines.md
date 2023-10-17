@@ -1,5 +1,3 @@
-
-
 ## Azure VMs
 
 You can use the Update Management solution to manage updates and patches for your virtual machines. For details, refer to [Manage updates and patches for your VMs](/azure/automation/update-management/manage-updates-for-vm).
