@@ -3,7 +3,7 @@ uid: learn.wwl.explore-computer-vision-microsoft-azure
 metadata:
   title: 'Microsoft Azure AI Fundamentals: Explore computer vision'
   description: 'Microsoft Azure AI Fundamentals: Explore computer vision'
-  ms.date: 08/23/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -29,10 +29,7 @@ subjects:
 - artificial-intelligence
 modules:
 - learn.wwl.analyze-images-computer-vision
-- learn.wwl.classify-images-custom-vision
-- learn.wwl.detect-objects-images-custom-vision
 - learn.wwl.detect-analyze-faces
 - learn.wwl.read-text-computer-vision
-- learn.wwl.analyze-receipts-form-recognizer
 trophy:
   uid: learn.wwl.explore-computer-vision-microsoft-azure.trophy
