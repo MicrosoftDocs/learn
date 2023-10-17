@@ -114,7 +114,7 @@ Now we'll review the trigger outputs and workflow's run history.
 
    You might have to scroll to the left to find the main menu, or you can use your browser's search to find the word **overview** on the page.
 
-1. On the **Oveview** pane toolbar, select **Refresh** every minute until the **Runs history** section shows at least one completed run.
+1. On the **Overview** pane toolbar, select **Refresh** every minute until the **Runs history** section shows at least one completed run.
 
 1. While you wait, you can review the trigger history. On the **Overview** pane, find the **Trigger history** section.
 
