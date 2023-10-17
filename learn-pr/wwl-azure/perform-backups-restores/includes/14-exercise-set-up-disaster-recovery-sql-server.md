@@ -61,7 +61,7 @@ These instructions presume that a domain controller is available in the secondar
 
 Here's what you need to do:
 
-1. Import scripts available at [https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/demos/asr-automation-recovery/scripts/ASR-SQL-FailoverAG.ps1](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/demos/asr-automation-recovery/scripts/ASR-SQL-FailoverAG.ps1) into your Azure Automation account. This repository contains the scripts to failover SQL Availability Group.
+1. Import scripts available at [https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/demos/asr-automation-recovery/scripts/ASR-SQL-FailoverAG.ps1](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/demos/asr-automation-recovery/scripts/ASR-SQL-FailoverAG.ps1) into your Azure Automation account. This repository contains the scripts to fail over SQL Availability Group.
 2. Add the ASR-SQL-FailoverAG script as a pre-action of the first group of the recovery plan.
 3. Follow the instructions available in the script to create an automation variable to provide the name of the availability groups.
 
