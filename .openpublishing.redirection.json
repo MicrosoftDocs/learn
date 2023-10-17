@@ -1886,6 +1886,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/9-create-bot.md",
+      "redirect_url": "/training/modules/create-question-answer-solution-ai-language",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/4-amazon-dynamodb.md",
       "redirect_url": "/training/cmu-cloud-computing/cmu-case-study-nosql-databases",
       "redirect_document_id": false
@@ -10617,6 +10622,11 @@
     },
     {
       "source_path": "learn-pr/wwl-data-ai/use-containers-language-understanding-intelligent-service-apps/6-summary.md",
+      "redirect_url": "/training/modules/publish-use-language-understanding-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/4-use-container.md",
       "redirect_url": "/training/modules/publish-use-language-understanding-app",
       "redirect_document_id": false
     },

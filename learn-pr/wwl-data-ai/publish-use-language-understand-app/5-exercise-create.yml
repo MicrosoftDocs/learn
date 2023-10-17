@@ -9,9 +9,6 @@ metadata:
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
-azureSandbox: false
-labId: 126702
-labModal: true
 durationInMinutes: 40
 content: |
   [!include[](includes/5-exercise-create.md)]
