@@ -45,7 +45,7 @@ Now we need to specify the condition to test. Remember that the **Sentiment** ac
 
 1. In the **Condition** action, select the leftmost **Choose a value** field.
 
-1. From the dynamic content list that opens, select **sentitment**.
+1. From the dynamic content list that opens, select **Sentiment**.
 
 1. In the middle column, from the operator list, select **is greater than**.
 
@@ -89,7 +89,7 @@ Now, specify how to map the tweet data to your database columns. Let's store the
 
 1. When the dynamic content list opens, under **When a new tweet is posted**, select **Tweet text**.
 
-   *Substitution*: If you're using the the RSS trigger named **When a feed item is published**, select the **FeedSummary** property instead.
+   *Substitution*: If you're using the RSS trigger named **When a feed item is published**, select the **FeedSummary** property instead.
 
 1. Open the **Add new parameter** list, and select **Source**.
 
@@ -133,7 +133,7 @@ Now, map the tweet data to the respective email fields.
 
 1. When you're done, save your workflow.
 
-## Reivew results with positive sentiment tweets
+## Review results with positive sentiment tweets
 
 Now, the **Control** action is properly configured and running. Let's examine the SQL database to review our positive tweets.
 
