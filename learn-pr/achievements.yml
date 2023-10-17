@@ -40,6 +40,11 @@ achievements:
   title: Solve graph coloring problems by using Grovers search
   summary: Solve graph coloring problems by using Grovers search
   iconUrl: /training/achievements/quantum/solve-graph-coloring-problems-grovers-search.svg
+- uid: learn-windows.building-connected-windows-apps.badge
+  type: badge
+  title: Build internet-connected Windows apps
+  summary: Build internet-connected Windows apps
+  iconUrl: /training/achievements/build-internet-connected-windows-apps.svg
 - uid: learn-wwl.learn-business-value-of-azure.trophy
   type: trophy
   title: Learn the business value of Microsoft Azure
