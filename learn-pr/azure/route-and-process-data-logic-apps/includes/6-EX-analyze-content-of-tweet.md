@@ -8,7 +8,7 @@ In this exercise, we're going to continue work on our social media monitoring ap
 
 The Azure AI Language API provides natural language processing for text and includes capabilities such as sentiment analysis, key phrase extraction, language detection, and entity linking. We'll use this API for sentiment analysis and run a script to programmatically complete the following tasks:
 
-- Set up an Azure AI services account in the sandbox environment, making the account free for use in this module.
+- Set up an Azure AI services account.
 
 - Register the Text Analytics service.
 
