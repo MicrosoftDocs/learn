@@ -91,9 +91,7 @@ Over time, if you realize you need more compute power to keep up with demand, yo
     | **Backup storage redundancy** |
     | Backup storage redundancy | Geo-redundant backup storage (default) |
 
-1. Under **Server**, select **Create new**. The **Create SQL Database Server** pane appears. 
-
-    1. Enter the following values for each setting.
+1. Under **Server**, select **Create new**. The **Create SQL Database Server** pane appears. Enter the following values for each setting:
 
     | Setting | Value |
     | --- | --- |
@@ -103,11 +101,9 @@ Over time, if you realize you need more compute power to keep up with demand, yo
     | Server admin login | Choose a unique admin login that serves as your primary administrator login ID |
     | Password | The password of your choice must have eight or more characters from three of these categories: uppercase, lowercase, numbers, and nonalphanumeric |
 
-    1. Select **OK**. The Server field updates with the name of the server you created.
+    Select **OK**. The Server field updates with the name of the server you created.
 
-1. In the **Database details** section, for **Compute + storage**, select **Configure database**. The **Configure** pane appears.
-
-    1. Enter the following values for each setting.
+1. In the **Database details** section, for **Compute + storage**, select **Configure database**. The **Configure** pane appears. Enter the following values for each setting:
 
     | Setting | Value |
     | --- | --- |
@@ -116,7 +112,7 @@ Over time, if you realize you need more compute power to keep up with demand, yo
     | Behavior when free limit reached | If you used the [free Azure SQL Database offer](/azure/azure-sql/database/free-offer), leave this set to **Auto-pause the database until next month** for now. You can configure this setting later. |
     | Remaining settings | Accept defaults |
 
-    1. Select **Apply**.
+    Select **Apply**.
 
 1. Select the **Additional settings** tab at the top of the screen, and enter or confirm the following values for each setting.
 

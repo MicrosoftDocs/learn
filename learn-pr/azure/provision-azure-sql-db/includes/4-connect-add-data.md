@@ -155,10 +155,10 @@ Remember that CRUD stands for *Create*, *Read*, *Update*, and *Delete*. These te
     sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U martina -P 'password1234$' -N -l 30
     ```
 
-Now that you've launched your `sqlcmd` session, the remaining commands use the language Transact-SQL, or T-SQL.
+    Now that you've launched your `sqlcmd` session, the remaining commands use the language Transact-SQL, or T-SQL.
 
-> [!TIP]
-> When running the T-SQL commands in this module, the `GO` on the second line may not copy through to the `sqlcmd` prompt. So, after you enter the first line of the command, you may need to type in the `GO` command. The T-SQL command won't execute without it, so make sure to run the `GO` command.
+    > [!TIP]
+    > When running the T-SQL commands in this module, the `GO` on the second line may not copy through to the `sqlcmd` prompt. After you enter the first line of the command, you may need to type in the `GO` command. The T-SQL command won't execute without it, so make sure to run the `GO` command.
 
 1. From your `sqlcmd` session, run the following T-SQL statements to create a table named `Drivers`:
 
