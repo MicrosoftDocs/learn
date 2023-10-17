@@ -10,8 +10,6 @@ First, we need to create the logic app resource in Azure. For this task, we need
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure account.
 
-   [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
 1. On the Azure portal home page, select **Create a resource**. On the **Create a resource** menu, select **Integration** > **Logic App**.
 
    The **Create Logic App** page appears.
@@ -24,7 +22,7 @@ First, we need to create the logic app resource in Azure. For this task, we need
       |---------|-------|
       | **Project Details** |
       | **Subscription** | Select your Azure subscription |
-      | **Resource Group** | Select the Create New link, then create a resource group with a unique name |
+      | **Resource Group** | Select the **Create New** link, then create a resource group with a unique name |
       | **Instance Details** |
       | **Logic app name** | **ShoeTrackerXXXX**, replacing XXXX with a random string of numbers or letters |
       | **Region** | Select a location nearest you. |
