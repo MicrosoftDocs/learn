@@ -1,4 +1,8 @@
-To get valuable insights from your data, you can train a machine learning model using data science. As a data scientist, you may be familiar with using open-source frameworks like scikit-learn and TensorFlow to train models. Microsoft Fabric offers a familiar notebook experience for you to train your models, integrating with the open-source framework MLflow to easily track and manage your models.
+As a data scientist, you spend most of your time on training machine learning models to identify complex patterns in your data. After training, you want to use the models to retrieve valuable insights.
+
+For example, after training a model on historical sales data, you can generate the forecast of the upcoming week. Or using customer data, you train a model to identify customers that are likely to churn. Whatever use case you have, after training the model, you want to apply the model to a new dataset to generate predictions.
+
+Microsoft Fabric helps you to apply your model after tracking it with MLflow.
 
 ## Understand the data science process
 
@@ -12,4 +16,4 @@ A data science project commonly includes the following phases:
 1. **Train the model**: Choose an algorithm and hyperparameter values based on trial and error by tracking your experiments with MLflow.
 1. **Generate predictions**: Use model batch scoring to generate the requested predictions.
 
-In this module, you focus on how to train and track the model. Working in a notebook within Microsoft Fabric, you work with Python to train a model. You learn how to use MLflow to track your machine learning models and their metadata. Finally, you explore your models by using the MLflow library and the Microsoft Fabric user interface.
+In this module, you focus on how to generate batch predictions. You learn how to save your model in Microsoft Fabric to retrieve the required predictions. The model expects a dataset as input to generate predictions. You learn how to prepare your dataset and how to then apply the model to the dataset to generate and save the new predictions.

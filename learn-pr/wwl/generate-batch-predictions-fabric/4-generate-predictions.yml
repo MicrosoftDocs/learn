@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.wwl.generate-batch-predictions-fabric.fabric-models
+uid: learn.wwl.generate-batch-predictions-fabric.generate-predictions
 title: Manage models in Microsoft Fabric
 metadata:
   title: Manage models in Microsoft Fabric
@@ -15,4 +15,4 @@ metadata:
     - build-2023-fabric
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-fabric-models.md)]
+  [!include[](includes/4-generate-predictions.md)]

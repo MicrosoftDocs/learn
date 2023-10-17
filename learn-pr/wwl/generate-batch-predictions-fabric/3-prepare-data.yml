@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.wwl.generate-batch-predictions-fabric.mlflow
+uid: learn.wwl.generate-batch-predictions-fabric.prepare-data
 title: Train and track models with MLflow and experiments
 metadata:
   title: Train and track models with MLflow and experiments
@@ -15,4 +15,4 @@ metadata:
     - build-2023-fabric  
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-mlflow.md)]
+  [!include[](includes/3-prepare-data.md)]

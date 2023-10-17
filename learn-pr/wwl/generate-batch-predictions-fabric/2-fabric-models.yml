@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.wwl.generate-batch-predictions-fabric.train-model
+uid: learn.wwl.generate-batch-predictions-fabric.fabric-models
 title: Understand how to train machine learning models
 metadata:
   title: Understand how to train machine learning models
@@ -15,4 +15,4 @@ metadata:
     - build-2023-fabric
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-train-model.md)]
+  [!include[](includes/2-fabric-models.md)]
