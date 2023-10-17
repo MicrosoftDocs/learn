@@ -8,7 +8,7 @@ The first step is a Twitter trigger named "When a new tweet is posted. This trig
 
 First, we need to create the logic app resource in Azure. For this task, we need to find the **Logic App** resource type in the Azure portal.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure account.
+1. Sign in to the [Azure portal](https://portal.azure.com) with your Azure account.
 
 1. On the Azure portal home page, select **Create a resource**. On the **Create a resource** menu, select **Integration** > **Logic App**.
 
