@@ -1,18 +1,14 @@
-Azure VM is a popular infrastructure-as-a-service (IaaS) compute resource type in Azure. Compared with platform-as-a-service (PaaS) compute services, an Azure VM provides more flexibility and control over the VM operating system (OS) and its configuration.
+Azure VM is a popular infrastructure-as-a-service (IaaS) compute resource type in Azure. Compared with platform-as-a-service (PaaS) compute services, Azure VMs provide more flexibility and control over the VM operating system (OS) and its configuration. This increased control and flexibility require planning to ensure optimal outcomes.
 
-This control and flexibility require planning to ensure optimal outcomes. This unit describes overall factors and considerations for planning Azure Linux VM deployments.
+This unit describes overall factors and considerations for planning Azure Linux VM deployments. The planning process should consider the compute, networking, and storage aspects of the VM configuration. Some of these characteristics are OS–specific, with implementation details varying across different Linux distributions.
 
-The planning process should consider the compute, networking, and storage aspects of the VM configuration. Some of these characteristics are OS–specific, with implementation details varying across different Linux distributions.
-
-Microsoft partners with prominent Linux vendors to integrate their products with the Azure platform. To fully benefit from this integration, you can create Azure VMs from prebuilt images for various popular Linux distributions, such as SUSE, Red Hat, and Ubuntu.
-
-Optionally, you can build a custom image of a Linux distribution to run in the cloud environment. In this case, there might be more steps in your Azure VM provisioning process.
+Microsoft partners with prominent Linux vendors to integrate their products with the Azure platform. To fully benefit from this integration, you can create Azure VMs from prebuilt images for various popular Linux distributions, such as SUSE, Red Hat, and Ubuntu. Optionally, you can build a custom image of a Linux distribution to run in the cloud environment. In this case, there might be more steps in your Azure VM provisioning process.
 
 In either case, this learning module can help further optimize your resulting deployment. Optimization requires you to have a strong understanding of the Azure VM resource and its dependencies.
 
 ## Understand resource dependencies
 
-When you create an Azure VM, you also create several associated resources that the Azure VM depends on to provide full functionality to the virtualized OS. These resources include:
+When you create an Azure VM, you also need to create several associated resources that the Azure VM depends on to provide full functionality to the virtualized OS. These resources include:
 
 - Virtual disks to store the OS, applications, and data.
 - A virtual network with one or more subnets to connect the Azure VM to other Azure services, or to your on-premises datacenters.
@@ -37,11 +33,11 @@ To determine the right size for your Azure VM, you need to consider its intended
 - Support for advanced networking features
 
 > [!IMPORTANT]
-> Azure VMs have virtual CPU (vCPU) quota limits, which you should account for in planning. To raise quota limits, you must submit an online request to Azure Support.
+> Azure VMs have virtual CPU (vCPU) quota limits, which you should account for in planning. To raise quota limits after deployment, you must submit an online request to Azure Support.
 
 Azure offers a wide range of sizes with different specifications and price points to meet a wide variety of needs. VM sizes are grouped into several categories that represent the types of workloads they're optimized for. Each category includes one or more series, or *families*, which share common underlying hardware characteristics but offer a range of different sizes.
 
-The following table lists workload types and common use cases for each workload type. 
+The following list shows the workload types and common use cases for each workload type. Each workload type has corresponding families that include various sizes.
 
 - **General purpose**: Testing and development, small-to-medium databases, and low-to-medium traffic web servers.
 - **Compute-intensive**: Medium-traffic web servers, network appliances, batch processes, and application servers.
@@ -58,7 +54,7 @@ When you plan for Azure VM sizes, also consider the following factors:
 - VM size availability varies by region, so account for regional availability when you plan your deployment.
 - The maximum number of disks you can attach to an Azure VM depends on its size.
 
-Consider using [Microsoft Azure VM Selector](https://azure.microsoft.com/pricing/vm-selector/) to determine the most suitable VM size based on the workload type, OS, software installed, and deployment region.
+Consider using the [Microsoft Azure VM Selector](https://azure.microsoft.com/pricing/vm-selector/) to determine the most suitable VM size based on the workload type, OS, software installed, and deployment region.
 
 If you plan to use the same or similar size Azure VMs in the same region over an extended period, consider using [Azure Reservations](/azure/cost-management-billing/reservations/save-compute-costs-reservations) to reduce compute cost by up to 72 percent.
 
@@ -68,11 +64,11 @@ To lower the cost of Azure VMs for workloads that can handle interruptions, such
 
 VMs communicate with external resources by using a *virtual network*. A virtual network represents a private network within an Azure region. You can connect virtual networks to other networks, including networks in your on-premises datacenters, and apply traffic rules to control inbound and outbound connectivity.
 
-Each virtual network designates an *IP address space* that typically consists of one or more *private address ranges*, as defined by Request For Comments (RFC) 1918. As with on-premises networks, you can divide the virtual network address space into multiple *subnets* to isolate Azure VM workloads. Each subnet within a virtual network represents a private address range. To enforce workload isolation, you can associate a *Network Security Group (NSG)* with each subnet.
+Each virtual network designates an *IP address space* that typically consists of one or more *private address ranges*, as defined by [RFC 1918](https://datatracker.ietf.org/doc/html/rfc1918). As with on-premises networks, you can divide the virtual network address space into multiple *subnets* to isolate Azure VM workloads. Each subnet within a virtual network represents a private address range. To enforce workload isolation, you can associate a *Network Security Group (NSG)* with each subnet.
 
 Every Azure VM includes one or more *network interfaces*, and each interface connects to a subnet within the same virtual network. Azure automatically assigns every VM in the subnet an IP address from the subnet's range. Azure reserves the first four and the last IP address on every subnet for its own use and doesn't assign them.
 
-While it's possible to create a virtual network and subnets as part of a VM provisioning process, the recommended approach is to start Azure VM deployment planning with the network environment. After you account for all networking requirements and create the corresponding virtual networks, you can proceed with deploying Azure VMs.
+While it's possible to create a virtual network and subnets as part of a VM provisioning process, the recommended approach is to start Azure VM deployment planning with the network environment. After you account for all networking requirements and create the corresponding virtual networks, you can proceed with deploying the Azure VMs.
 
 As you plan for Azure virtual networks and subnets, keep in mind the following design principles:
 
@@ -89,14 +85,14 @@ Azure doesn't directly limit ingress bandwidth. However, factors such as storage
 
 ## Plan for remote connectivity
 
-As part of your deployment planning, consider the most suitable approach to provide remote connectivity. For Linux VMs, remote connectivity typically involves using *Secure Shell (SSH)* to implement in-transit encryption of a terminal shell session.
+As part of your deployment planning, consider the most suitable approach to providing remote connectivity. For Linux VMs, remote connectivity typically involves using *Secure Shell (SSH)* to implement in-transit encryption of a terminal shell session.
 
 To authenticate over an SSH connection, you can use a username and password or an *SSH key* pair. Using passwords for SSH connections leaves the VM vulnerable to brute-force attacks. Using SSH keys is a more secure and preferred method of connecting to a Linux VM with SSH.
 
 Even with SSH keys, by default you must open connectivity to a public IP address associated with the target Azure VM's network adapter. This public IP is vulnerable to external threats and represents a potential attack vector. To mitigate this risk, consider implementing Azure Bastion or just-in-time (JIT) VM access.
 
 > [!NOTE]
-> In hybrid scenarios, to eliminate the need for public IP addresses when connecting from your on-premises environment to Azure VMs, you can use site-to-site virtual private network (VPN) or Azure ExpressRoute.
+> In hybrid scenarios, to eliminate the need for public IP addresses when connecting from your on-premises environment to Azure VMs, you can use a site-to-site virtual private network (VPN) or Azure ExpressRoute.
 
 ### Azure Bastion
 

@@ -2,7 +2,7 @@ To optimize the manageability of Azure Linux VMs, you must understand the intera
 
 ## Platform-supported management agents
 
-*VM provisioning* is the process of creating the Azure VM configuration parameter values, such as hostname, username, and password, that are available to the OS during the startup or *boot* process. A *provisioning agent* consumes these values, configures the OS, and reports the results when completed.
+*VM provisioning* is the process of creating Azure VM configuration parameter values, such as hostname, username, and password, that are available to the OS during the startup or *boot* process. A *provisioning agent* consumes these values, configures the OS, and reports the results when finished.
 
 Azure supports cloud-init provisioning agents and Azure Linux Agent (WALA).
 

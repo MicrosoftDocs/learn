@@ -15,7 +15,7 @@ abstract: |
   - Optimize your Linux environment on Azure VMs for performance and functionality.
 prerequisites: |
   - Familiarity with Linux server configuration and administration.
-  - Access to a Microsoft Azure account with at least **Contributor** permissions.
+  - Access to a Microsoft Azure subscription with at least **Contributor** permissions.
   - Experience with Azure portal navigation.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
