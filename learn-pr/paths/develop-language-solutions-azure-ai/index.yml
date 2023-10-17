@@ -29,6 +29,7 @@ subjects:
 modules:
 - learn.wwl.analyze-text-ai-language
 - learn.wwl.create-question-answer-solution-ai-language
+- learn.wwl.publish-use-language-understand-app
 - learn.wwl.build-language-understanding-model
 - learn.wwl.custom-text-classification
 - learn.wwl.custom-name-entity-extraction
