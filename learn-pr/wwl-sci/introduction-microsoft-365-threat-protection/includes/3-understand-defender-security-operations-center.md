@@ -55,11 +55,11 @@ This is a multi-disciplinary team focused on identifying attackers that could ha
 To give you an idea of how this works, let’s follow a common incident lifecycle
 
 1. **Triage (Tier 1)** analyst claims a malware alert from the queue and investigates (for example, with Microsoft 365 Defender console)
-1. While most Triage cases are rapidly remediated and closed, this time the analyst observes that malware may require more involved/advanced remediation (for example, device isolation and cleanup). Triage escalates the case to the Investigation analyst (Tier 2), who takes lead for investigation. The Triage team has option to stay involved and learn more (Investigation team may use Microsoft Sentinel or another SIEM for broader context)
+1. While most Triage cases are rapidly remediated and closed, this time the analyst observes that malware might require more involved/advanced remediation (for example, device isolation and cleanup). Triage escalates the case to the Investigation analyst (Tier 2), who takes lead for investigation. The Triage team has option to stay involved and learn more (Investigation team might use Microsoft Sentinel or another SIEM for broader context)
 1. **Investigation** verifies investigation conclusions (or digs further into it) and proceeds with remediation, closes case. 
-1. Later, **Hunt (Tier 3)** may notice this case while reviewing closed incidents to scan for commonalities or anomalies worth digging into:
-    - Detections that may be eligible for autoremediation
-    - Multiple similar incidents that may have a common root cause
+1. Later, **Hunt (Tier 3)** might notice this case while reviewing closed incidents to scan for commonalities or anomalies worth digging into:
+    - Detections that might be eligible for autoremediation
+    - Multiple similar incidents that might have a common root cause
     - Other potential process/tool/alert improvements
 In one case, Tier 3 reviewed the case and found that the user had fallen for a tech scam. This detection was then flagged as a potentially higher priority alert because the scammers had managed to get admin level access on the endpoint. A higher risk exposure.
 
