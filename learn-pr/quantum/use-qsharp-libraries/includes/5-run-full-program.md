@@ -15,7 +15,7 @@ The second step is sometimes called *reflection about the mean* or *diffusion*. 
 
 ## Step 1: Reflect about uniform superposition
 
-In the [Implement Grover's search algorithm in Q#](azure/quantum/tutorial-qdk-grovers-search?azure-portal=true) tutorial, the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. In that case, the creation of the superposition is straightforwardly handled by applying the `H` operation to each individual qubit.
+In the [Implement Grover's search algorithm in Q#](/azure/quantum/tutorial-qdk-grovers-search?azure-portal=true) tutorial, the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. In that case, the creation of the superposition is straightforwardly handled by applying the `H` operation to each individual qubit.
 
 Because we're interested in only the number states $0-9$ here, we have no use for the remaining states ($10-15$) that our four qubits can represent. Therefore, we'll only use and reflect about the uniform superposition $\sum_{i=0}^9 |i \rangle$.
 
@@ -91,7 +91,7 @@ Your complete program file should now look like the following:
 
 To run the program:
 
-1. Create and open a VS Code project named *ISBNGrover*. See [Install the QDK for Visual Studio Code](../../../quantum/qsharp-create-first-quantum-development-kit/includes/2-install-quantum-development-kit-code.md?azure-portal=true) if you need the steps. 
+1. Create and open a Q# project in VS Code named *ISBNGrover*. See [Install the QDK for Visual Studio Code](/training/modules/qsharp-create-first-quantum-development-kit/2-install-quantum-development-kit-code?azure-portal=true) if you need a refresher on the steps to create a Q# project. 
 1. Copy the complete program code you just created and paste it into the *program.qs* file of your new project. 
 1. Open a terminal window in VS Code and run `dotnet run`. VS Code will use the quantum simulator by default. 
 
