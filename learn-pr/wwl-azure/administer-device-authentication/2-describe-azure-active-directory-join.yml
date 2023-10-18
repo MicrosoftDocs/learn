@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.administer-device-authentication.describe-azure-active-directory-join
-title: 'Describe Azure AD join '
+title: 'Describe Microsoft Entra join '
 metadata:
-  title: Describe Azure AD join
-  description: "This unit describes the Azure AD join process."
+  title: Describe Microsoft Entra join
+  description: "This unit describes the Microsoft Entra join process."
   ms.date: 08/21/2023
   author: wwlpublish
   ms.author: rstearman

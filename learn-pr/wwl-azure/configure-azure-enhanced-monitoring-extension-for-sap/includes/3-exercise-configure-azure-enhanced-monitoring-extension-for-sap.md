@@ -1,5 +1,3 @@
-
-
 ## Azure PowerShell for Linux and Windows VMs
 
 To install the Azure Extension for SAP by using PowerShell:

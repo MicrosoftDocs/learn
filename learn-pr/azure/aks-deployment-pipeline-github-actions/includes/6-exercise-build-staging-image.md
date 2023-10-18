@@ -1,4 +1,4 @@
-We talked about the concepts behind the pipeline, CI, and Docker. Now, it's time to put these concepts into practice.
+We talked about the concepts behind the pipeline, CI/CD, and Docker. Now, it's time to put these concepts into practice.
 
 Let's review our designed pipeline:
 
@@ -8,13 +8,13 @@ You'll build this pipeline by using the GitHub Actions workflow.
 
 In this exercise, you'll:
 
-- Build the Actions workflow
-- Create the trigger
+- Build the GitHub Actions workflow
+- Create the on push trigger
 - Build and push the image
 - Set the secrets
-- Push the image
+- Re-run the job
 
-## Build the Actions workflow
+## Build the GitHub Actions workflow
 
 1. To start building your pipeline, go to the fork of the sample repository in the GitHub website. Select the **Actions** tab.
 
@@ -74,12 +74,14 @@ In this exercise, you'll:
    name: Build and push the latest build to staging
    ```
 
-## Create the trigger
+## Create the on push trigger
 
 Our basic workflow file comes with two triggers:
 
 - Any push to the main branch.
 - Any pull request on the main branch.
+
+But, we don't need it to run on a pull request, so we modify it to keep only the push trigger.
 
 1. Change the default triggers in the `on` key.
 
@@ -97,9 +99,9 @@ Our basic workflow file comes with two triggers:
 
     Running this command closes the second trigger in the pipeline design diagram.
 
-## Build and push the image
+## Build and push the staging image
 
-Let's work on the jobs you're going to run. In this process, you address both the build steps and the deploy steps that are shown in the pipeline design diagram.
+Let's work on the jobs next. In this process, you mimic both the build steps and the deploy steps shown in the pipeline design diagram.
 
 GitHub workflows are divided into jobs, and jobs are divided into steps. Each step can have multiple commands and use multiple actions to be executed.
 
@@ -128,11 +130,11 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     You already have a step that uses the `checkout` action. This action clones the repository into the job environment.
 
-    This step is equivalent to the first action (clone the repo) in the build steps in the pipeline design diagram.
+    This step is equivalent to the first action (clone the repo) in the build steps from the pipeline design diagram.
 
     Next, add other actions to build your Docker image.
 
-1. In the right panel, search for **Docker Login**. Select the first result published by **Docker**.
+1. In the right panel, search for **"Docker Login"**. Select the first result published by **Docker**.
   
     :::image type="content" source="../media/6-3-docker-login.png" alt-text="Screenshot showing the search results listing Docker Login.":::
 
@@ -162,9 +164,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
           - uses: actions/checkout@v2
 
           - name: Docker Login
-            # You may pin to the exact commit or the version.
-            # uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
-            uses: docker/login-action@v2.1.0
+            uses: docker/login-action@v3.0.0
             with:
               # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
@@ -205,9 +205,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
           - uses: actions/checkout@v2
 
           - name: Docker Login
-            # You may pin to the exact commit or the version.
-            # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
-            uses: docker/login-action@v1
+            uses: docker/login-action@v3.0.0
             with:
               # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
@@ -219,11 +217,12 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
               logout: # optional, default is true
 
           - name: Build and push Docker images
-            # You may pin to the exact commit or the version.
-            # uses: docker/build-push-action@c56af957549030174b10d6867f20e78cfd7debc5
-            uses: docker/build-push-action@v3.2.0
+            uses: docker/build-push-action@v5.0.0
             with:
-              # Here we'll have a list of parameters
+              # Here we add a list of parameters
+              context:
+                tags:
+                push:
     ```
 
     > [!IMPORTANT]
@@ -233,21 +232,20 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. Rename the `name` key from `Build and push Docker images` to `Build and push staging images`.
 
-1. You'll use only a handful of the parameters that are available for these actions.
+1. For these actions, you include only a handful of parameters available.
 
     Add the values according to the following table:
 
-    |Key name     | Used on action |Value                                         |
-    |-------------|--------|------------------------------------------------------|
-    |registry     |`docker/login`|`${{ secrets.ACR_NAME }}`                       |
-    |username     |`docker/login`|`${{ secrets.ACR_LOGIN }}`                      |
-    |password     |`docker/login`|`${{ secrets.ACR_PASSWORD }}`                   |
-    |context      |`docker/build-and-push`|`.`                                    |
-    |push         |`docker/build-and-push`|`true`                                 |
-    |tags         |`docker/build-and-push`|${{secrets.ACR_NAME}}/contoso-website:latest     |
+    |Key name     |Used on action         |Value                                         |
+    |-------------|-----------------------|----------------------------------------------|
+    |registry     |`docker/login`         |`${{ secrets.ACR_NAME }}`                     |
+    |username     |`docker/login`         |`${{ secrets.ACR_LOGIN }}`                    |
+    |password     |`docker/login`         |`${{ secrets.ACR_PASSWORD }}`                 |
+    |context      |`docker/build-and-push`|`.`                                           |
+    |push         |`docker/build-and-push`|`true`                                        |
+    |tags         |`docker/build-and-push`|`${{secrets.ACR_NAME}}/contoso-website:latest`|
 
-
-    You can delete all the other keys because we won't use them in this exercise.
+    You can delete all the other keys because they aren't used in this exercise.
 
     Your file should look like this example:
 
@@ -266,27 +264,29 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
           - uses: actions/checkout@v2
 
           - name: Docker Login
-            uses: docker/login-action@v1
+            uses: docker/login-action@v3.0.0
             with:
               registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
 
           - name: Build and push staging images
-            uses: docker/build-push-action@v2
+            uses: docker/build-push-action@v5.0.0
             with:
               context: .
               tags: ${{secrets.ACR_NAME}}/contoso-website:latest
               push: true
     ```
 
-1. Before you save the file, we'll also add another action between the checkout action and the login action, to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
+1. Add another action between the checkout action and the login action, to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action`.
 
+  > [!NOTE]
+    > Docker actions prior to version 2 had the login flow built-in. However, on versions 2 and above, these actions were separated. This is why we need two actions to set the entire workflow correctly.
     To set this action, copy the below snippet and paste it between the checkout and the login actions.
 
     ```yml
     - name: Set up Buildx
-      uses: docker/setup-buildx-action@v1
+      uses: docker/setup-buildx-action@v3.0.0
     ```
 
     Your final file should be like this:
@@ -306,17 +306,17 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
           - uses: actions/checkout@v2
 
           - name: Set up Buildx
-            uses: docker/setup-buildx-action@v1
+            uses: docker/setup-buildx-action@v3.0.0
 
           - name: Docker Login
-            uses: docker/login-action@v1
+            uses: docker/login-action@v3.0.0
             with:
               registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
 
           - name: Build and push staging images
-            uses: docker/build-push-action@v2
+            uses: docker/build-push-action@v5.0.0
             with:
               context: .
               push: true
@@ -327,7 +327,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Start commit and Commit new file buttons in the Commit new file pane.":::
 
-    Selecting the **Commit new file** button triggers a new build to start on the **Actions** tab. This build will fail because you haven't set the secrets yet!
+    Selecting the **Commit new file** button triggers a new build to start on the **Actions** tab. But, this build fails because you haven't set the secrets yet!
 
 ## Set the secrets
 
@@ -371,7 +371,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     1. For **Secret**, enter the value and select **Add secret**.
 
-## Push the image
+## Re-run the job
 
 1. Select the **Actions** tab.
 

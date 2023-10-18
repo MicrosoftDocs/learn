@@ -15,7 +15,7 @@ Microsoft Entra Password Protection is designed with the following principles in
 
 ## Create an Azure account and add Microsoft Entra ID P2 trial licenses
 
-The tasks in this exercise and the exercises in this learning path require you to already have and Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you may skip this task and continue to the next.
+The tasks in this exercise and the exercises in this learning path require you to already have and Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you might skip this task and continue to the next.
 
 1.  In a web browser, go to the [Azure portal](https://azure.microsoft.com/free/).
 2.  Scroll down through the page to learn more about the benefits and free services available.
@@ -199,8 +199,8 @@ When a newer version of the Microsoft Entra Password Protection DC agent softwar
 
 It's not required to uninstall the current version of the DC agent software—the installer performs an in-place upgrade. A reboot is always required when upgrading the DC agent software. This requirement is caused by core Windows behavior.
 
-The software upgrade may be automated using standard MSI procedures, such as `msiexec.exe /i AzureADPasswordProtectionDCAgentSetup.msi /quiet /qn /norestart`.
+The software upgrade might be automated using standard MSI procedures, such as `msiexec.exe /i AzureADPasswordProtectionDCAgentSetup.msi /quiet /qn /norestart`.
 
-You may omit the `/norestart` flag if you prefer to have the installer automatically reboot the machine.
+You might omit the `/norestart` flag if you prefer to have the installer automatically reboot the machine.
 
 The `Get-AzureADPasswordProtectionDCAgent` cmdlet may be used to query the software version of all currently installed Microsoft Entra Password Protection DC agents in a forest.

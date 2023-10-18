@@ -19,12 +19,12 @@ This module shows you how to interoperate with JavaScript code, use templated co
 
 - Familiarity with HTML, CSS, and JavaScript web development.
 - Novice ability to write C# code.
-- The [.NET 7.0 SDK](https://dotnet.microsoft.com/download/dotnet/7.0) installed.
+- The [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed.
 - An integrated development environment (IDE). This module uses [Visual Studio Code](https://code.visualstudio.com).
 
 > [!TIP]
 > This module uses the .NET Command Line Interface (CLI) and Visual Studio Code for local development. After you complete the module, you can apply the concepts and continue development by using Visual Studio for Windows, Visual Studio for Mac, or Visual Studio Code with Windows, Linux, or Mac.
 
-### .NET 7.0 SDK
+### .NET 8.0 SDK
 
-[!include[](../../../includes/dotnet7-sdk-version.md)]
+[!include[](../../../includes/dotnet8-sdk-version.md)]
