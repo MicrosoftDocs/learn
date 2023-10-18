@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-implement-privileged-access.assign-azure-ad-roles-privileged-identity-management
-title: Exercise assign Azure Active Directory roles in Privileged Identity Management
+title: Exercise assign Microsoft Entra roles in Privileged Identity Management
 metadata:
-  title: Exercise assign Azure Active Directory roles in Privileged Identity Management
-  description: "Exercise assign Azure Active Directory roles in Privileged Identity Management"
+  title: Exercise assign Microsoft Entra roles in Privileged Identity Management
+  description: "Exercise assign Microsoft Entra roles in Privileged Identity Management"
   ms.date: 08/16/2023
   author: wwlpublish
   ms.author: roberts

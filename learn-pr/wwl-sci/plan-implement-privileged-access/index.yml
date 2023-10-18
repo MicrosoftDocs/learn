@@ -13,7 +13,7 @@ summary: Ensuring that administrative roles are protected and managed to increas
 abstract: |
   By the end of this module, you will be able to:
   - Define a privileged access strategy for administrative users (resources, roles, approvals, and thresholds)
-  - Configure Privileged Identity Management for Azure AD roles
+  - Configure Privileged Identity Management for Microsoft Entra roles
   - Configure Privileged Identity Management for Azure resources
   - Assign roles
   - Manage PIM requests
