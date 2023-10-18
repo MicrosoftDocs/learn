@@ -12,7 +12,7 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
 
 1. Select the **api** folder.
 
-1. When prompted, enter the following values. Do **not** overwrite the *package.json* file when prompted.
+1. When prompted, enter the following values. **Do not** overwrite the *package.json* file when prompted.
 
    | Name          | Value        |
    | ------------- | ------------ |
@@ -22,9 +22,9 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
    | Name          | GetProducts  |
    | Authorization | Function     |
 
-1. When asked to overwrite the `package.json` file, make sure you select **no**.
+1. When asked to overwrite the `package.json` file, make sure you select **No**.
 
-    The *api* folder in Visual Studio Code will now contain an Azure Functions project along with a new function called *GetProducts*. Several other required project files are also added, including `host.json` and `local.settings.json`.
+    The *api* folder in Visual Studio Code now contains an Azure Functions project along with a new function called *GetProducts*. Several other required project files are also added, including `host.json` and `local.settings.json`.
 
 1. Replace the code in the *GetProducts/index.ts* file with the following code.
 
@@ -53,13 +53,13 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
 
 ## Examine the Create, Update, and Delete functions
 
-The Create, Update and Delete functions have been created for you already. They were created with the same process that you used to create the *GetProducts* function and they already contain database access code.
+The Create, Update and Delete functions were already created for you. They were created with the same process that you used to create the *GetProducts* function and, they already contain database access code.
 
 - Notice that the *api* project already contains *CreateProduct*, *DeleteProduct* and *UpdateProduct* functions.
 
 ## Run the Azure Functions project
 
-Azure Functions projects can be run and debugged locally from within Visual Studio Code.
+You can run and debug Azure Functions projects locally from within Visual Studio Code.
 
 1. Open the Command Palette.
 
@@ -69,8 +69,8 @@ Azure Functions projects can be run and debugged locally from within Visual Stud
   
 1. Select **Attach to Node Functions**.
 
-   The Azure Functions project will launch. Note that the terminal shows you what URL the function is running on. 
+   The Azure Functions project will launch. Note that the terminal shows you on what URL the function is running.
 
    :::image type="content" source="../media/functions-in-terminal.png" alt-text="Screenshot of the Visual Studio Code integrated terminal showing functions URLs." loc-scope="other"::: <!-- no-loc -->
 
-Visual Studio Code generates the following error, "Cannot read property 'endpoint' of undefined". That's OK! That's because you haven't set up the database connection string yet. Notice that the four endpoints are listed above that error, and that if you select on a any of them, you'll get the same error.
+Visual Studio Code generates the following error, "Cannot read property 'endpoint' of undefined". That's OK! That's because you haven't set up the database connection string yet. Notice that the four endpoints are listed above that error, and that if you select any of them, you'll get the same error.
