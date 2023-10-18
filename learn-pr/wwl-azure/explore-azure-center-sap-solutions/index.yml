@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-center-sap-solutions
 metadata:
   title: Explore Azure Center for SAP solutions
   description: "SAP professionals work to manage SAP workloads efficiently on a secure, scalable, and reliable cloud platform. This module explores how Azure Center for SAP Solutions (ACSS) helps achieve these goals."
-  ms.date: 10/17/2023
+  ms.date: 10/18/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -29,13 +29,13 @@ products:
 - azure
 units:
 - learn.wwl.explore-azure-center-sap-solutions.introduction
-- learn.wwl.explore-azure-center-sap-solutions.discover-azure-center-for-sap-solutions
-- learn.wwl.explore-azure-center-sap-solutions.examine-prerequisites-azure-center-for-sap-solutions
+- learn.wwl.explore-azure-center-sap-solutions.discover-azure-center-sap-solutions
+- learn.wwl.explore-azure-center-sap-solutions.examine-prerequisites-azure-center-sap-solutions
 - learn.wwl.explore-azure-center-sap-solutions.choose-deployment-type-supported-software
-- learn.wwl.explore-azure-center-sap-solutions.exercise-install-azure-infrastructure-with-acss
+- learn.wwl.explore-azure-center-sap-solutions.exercise-install-azure-infrastructures
 - learn.wwl.explore-azure-center-sap-solutions.exercise-install-sap-software
 - learn.wwl.explore-azure-center-sap-solutions.register-existing-sap-system
-- learn.wwl.explore-azure-center-sap-solutions.exercise-utilize-acss-features
+- learn.wwl.explore-azure-center-sap-solutions.exercise-use-azure-center-sap-services-features
 - learn.wwl.explore-azure-center-sap-solutions.knowledge-check
 - learn.wwl.explore-azure-center-sap-solutions.summary
 badge:

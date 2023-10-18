@@ -12,10 +12,10 @@ To configure your VIS in the Azure portal:
 1. On the **Azure Center for SAP solutions** overview page, search for and select **Virtual Instances for SAP solutions** in the sidebar menu.
 1. On the **Virtual Instances for SAP solutions** page, select the VIS that you want to view.
 
-    :::image type="content" source="../media/select-vis.png" lightbox="../media/select-vis.png" alt-text="Screenshot of Azure portal, showing the V I S page in the Azure Center for S A P solutions service with a table of available V I S resources.":::
+    :::image type="content" source="../media/select-virtual-instance-sap.png" lightbox="../media/select-virtual-instance-sap.png" alt-text="Screenshot of Azure portal, showing the V I S page in the Azure Center for S A P solutions service with a table of available V I S resources.":::
 
 > [!IMPORTANT]
-> Each VIS resource has a unique Managed Resource Group associated with it. This Resource Group contains resources like Storage Account, Key vault, etc. which are critical for ACSS to provide capabilities like deployment of infrastructure for a new system, installation of SAP software, registration of existing systems, and all other SAP system management functions. Do not delete this Resource Group or any resources within it. If they are deleted, you will have to re-register the VIS to use any capabilities of ACSS.
+> Each VIS resource has a unique Managed Resource Group associated with it. This Resource Group contains resources like Storage Account, Key vault, etc. which are critical for ACSS to provide capabilities like deployment of infrastructure for a new system, installation of SAP software, registration of existing systems, and all other SAP system management functions. Don't delete this Resource Group or any resources within it. If they are deleted, you will have to re-register the VIS to use any capabilities of ACSS.
 
 ## Monitor VIS
 
@@ -89,7 +89,7 @@ To retrieve the password:
 1. Select the SAP password file name to open the secret's page.
 1. Copy the **Secret value**.
 
-If you get the warning **The operation 'List' is not enabled in this key vault's access policy.** with the message **You are unauthorized to view these contents.**, follow these steps:
+If you get the warning **The operation 'List' is not enabled in this key vault's access policy**. with the message **You are unauthorized to view these contents**., follow these steps:
 
 1. Make sure that you're responsible to manage these secrets in your organization.
 1. In the sidebar menu, under **Settings**, select **Access policies**.
@@ -169,12 +169,12 @@ As developer wants to set up monitoring for a Virtual Instance for SAP solutions
 1. On the service's page, select **Virtual Instances for SAP solutions** in the sidebar menu.
 1. On the page for the VIS, review the table of instances. There's an overview of health and status information for each VIS.
 
-    :::image type="content" source="../media/all-vis-statuses.png" lightbox="../media/all-vis-statuses.png" alt-text="Screenshot of the Azure Center for S A P solutions service in the Azure portal, showing a page of all V I S resources with their health and status information.":::
+    :::image type="content" source="../media/all-virtual-instance-sap-statuses.png" lightbox="../media/all-virtual-instance-sap-statuses.png" alt-text="Screenshot of the A C S S service in the Azure portal, showing a page of all V I S resources with their health and status information.":::
 
 1. Select the VIS you want to check.
 1. On the **Overview** page for the VIS resource, select the **Properties** tab.
 
-    :::image type="content" source="../media/vis-resource-overview.png" lightbox="../media/vis-resource-overview.png" alt-text="Screenshot of the V I S resource overview in the Azure portal, showing health and status information and the Properties tab highlighted.":::
+    :::image type="content" source="../media/virtual-instance-sap-overview.png" lightbox="../media/virtual-instance-sap-overview.png" alt-text="Screenshot of the V I S resource overview in the Azure portal, showing health and status information and the Properties tab highlighted.":::
 
 1. On the properties page for the VIS, review the **SAP status** section to see the health of SAP instances. Review the **Virtual machines** section to see the health of VMs inside the VIS.
 
@@ -186,7 +186,7 @@ As developer wants to set up monitoring for a Virtual Instance for SAP solutions
 1. In the sidebar menu, under **SAP resources**, select **Central service instances**.
 1. Select an instance from the table to see its properties.
 
-    :::image type="content" source="../media/ascs-vm-details.png" lightbox="../media/ascs-vm-details.png" alt-text="Screenshot of an A S C S instance in the Azure portal, showing health and status information for the V M.":::
+    :::image type="content" source="../media/central-services-virtual-machine-details.png" lightbox="../media/central-services-virtual-machine-details.png" alt-text="Screenshot of an A S C S instance in the Azure portal, showing health and status information for the V M.":::
 
 ### See information about SAP application server instances
 
@@ -194,7 +194,7 @@ As developer wants to set up monitoring for a Virtual Instance for SAP solutions
 1. In the sidebar menu, under **SAP resources**, select **App server instances**.
 1. Select an instance from the table to see its properties.
 
-    :::image type="content" source="../media/app-server-vm-details.png" lightbox="../media/app-server-vm-details.png" alt-text="Screenshot of an Application Server instance in the Azure portal, showing health and status information for the V M.":::
+    :::image type="content" source="../media/app-server-virtual-machine-details.png" lightbox="../media/app-server-virtual-machine-details.png" alt-text="Screenshot of an Application Server instance in the Azure portal, showing health and status information for the V M.":::
 
 ## Monitor SAP infrastructure
 
@@ -206,7 +206,7 @@ Azure Center for SAP solutions enables you to analyze important SAP infrastructu
 1. On the page for the VIS, select the VIS from the table.
 1. On the overview page for the VIS, select the **Monitoring** tab.
 
-    :::image type="content" source="../media/vis-resource-overview-monitoring.png" lightbox="../media/vis-resource-overview-monitoring.png" alt-text="Screenshot of the Monitoring tab for a V I S resource in the Azure portal, showing monitoring charts for C P U utilization and I O P S.":::
+    :::image type="content" source="../media/virtual-instance-sap-overview-monitoring.png" lightbox="../media/virtual-instance-sap-overview-monitoring.png" alt-text="Screenshot of the Monitoring tab for a V I S resource in the Azure portal, showing monitoring charts for C P U utilization and I O P S.":::
 
 1. Review the monitoring charts, which include:
 
@@ -227,6 +227,6 @@ You can also set up or register Azure Monitor for SAP solutions to monitor SAP p
 1. In the sidebar menu for the VIS, under **Monitoring**, select **Azure Monitor for SAP solutions**.
 1. Select whether you want to create a new Azure Monitor for SAP solutions instance, or register an existing Azure Monitor for SAP solutions instance. If you don't see this option, you've already configured this setting.
 
-    :::image type="content" source="../media/monitoring-setup.png" lightbox="../media/monitoring-setup.png" alt-text="Screenshot of Azure Monitor for SAP solutions page inside a V I S resource in the Azure portal, showing the option to create or register a new instance.":::
+    :::image type="content" source="../media/monitoring-setup.png" lightbox="../media/monitoring-setup.png" alt-text="Screenshot of the A C S S page inside a V I S resource in the Azure portal, showing the option to create or register a new instance.":::
 
 1. After you create or register your Azure Monitor for SAP solutions instance, you're redirected to the Azure Monitor for SAP solutions instance.

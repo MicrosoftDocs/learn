@@ -20,6 +20,6 @@ Azure Center for SAP solutions system registration also creates:
 - Scripts and logs in the Storage account blobs necessary for the service to provide capabilities including discovering and registering all components of SAP system.
 
 > [!NOTE]
-> Check that you're trying to register a [supported SAP system configuration](azure/sap/center-sap-solutions/register-existing-system#supported-systems).
+> Check that you're trying to register a [supported SAP system configuration](/azure/sap/center-sap-solutions/register-existing-system#supported-systems).
 
 After you register an SAP system with Azure Center for SAP solutions, you can use its visualization, management, and monitoring capabilities through the Azure portal.

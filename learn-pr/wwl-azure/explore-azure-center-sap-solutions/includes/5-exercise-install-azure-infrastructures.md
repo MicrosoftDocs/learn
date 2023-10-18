@@ -112,7 +112,7 @@ Supplemental options for this lesson include:
 
     - Optionally, select and drag resources or containers to move them around visually.
 
-    - Select **Reset** to reset the visualization to its default state. That is, revert any changes you may have made to the position of resources or containers.
+    - Select **Reset** to reset the visualization to its default state. That is, revert any changes you might have made to the position of resources or containers.
 
     - Select **Scale to fit** to reset the visualization to its default zoom level.
 

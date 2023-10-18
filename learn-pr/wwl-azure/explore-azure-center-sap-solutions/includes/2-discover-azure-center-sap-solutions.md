@@ -12,9 +12,9 @@ You can use Azure Center for SAP solutions to deploy the following types of SAP 
 
 For existing SAP systems that run on Azure, there's a simple registration experience. You can register the following types of existing SAP systems that run on Azure:
 
-- An SAP system that runs on SAP NetWeaver or ABAP stack
-- SAP systems that run on Windows, SUSE, and RHEL Linux operating systems
-- SAP systems that run on HANA, DB2, SQL Server, Oracle, Max DB, or SAP ASE databases
+- An SAP system that runs on SAP NetWeaver or ABAP stack.
+- SAP systems that run on Windows, SUSE, and RHEL Linux operating systems.
+- SAP systems that run on HANA, DB2, SQL Server, Oracle, Max DB, or SAP ASE databases.
 
 Azure Center for SAP solutions brings services, tools and frameworks together to provide an end-to-end unified experience. ACSS provides features for deployment and management of SAP workloads on Azure, creating the foundation for you to build innovative solutions for your unique requirements.
 
@@ -24,10 +24,10 @@ When you use Azure Center for SAP solutions, you create a *Virtual Instance for 
 
 Each VIS consists of:
 
-- The SAP system itself, referred to by the SAP System Identifier (SID)
-- An ABAP Central Services (ASCS) instance
-- A database instance
-- One or more SAP Application Server instances
+- The SAP system itself, referred to by the SAP System Identifier (SID).
+- An ABAP Central Services (ASCS) instance.
+- A database instance.
+- One or more SAP Application Server instances.
 
 :::image type="content" source="../media/virtual-instance-for-sap.png" alt-text="Diagram of a Virtual Instance for S A P solutions containing an S A P system identifier with A S C S, Application Server and Database instances.":::
 
