@@ -4,7 +4,7 @@ If the functionality you're looking for isn't present on the home page, you can 
 
 - The portal menu simplifies accessing commonly used features and resource types, and it's available in the flyout and docked mode. 
 
-- The global search identifies matches for the text you enter across all services, resources, resource groups, marketplace offers, Azure Active Directory (Azure AD) objects, and online documentation. (By default, the global search box displays the text "Search resources, services, and docs (G+/)".)
+- The global search identifies matches for the text you enter across all services, resources, resource groups, marketplace offers, Microsoft Entra objects, and online documentation. (By default, the global search box displays the text "Search resources, services, and docs (G+/)".)
 
 Because the global search box offers a more comprehensive and consistent behavior, all procedures covered in this module will use this option.
 
@@ -37,7 +37,7 @@ The settings you assign at this stage will determine the properties of the deplo
 
 > [!NOTE]
 > 
-> Microsoft doesn't support moving resources across subscriptions associated with different Azure AD tenants, and provisioning multiple resources that are part of a larger deployment should follow a planning stage that determines their optimal configuration, including a naming convention.
+> Microsoft doesn't support moving resources across subscriptions associated with different Microsoft Entra tenants, and provisioning multiple resources that are part of a larger deployment should follow a planning stage that determines their optimal configuration, including a naming convention.
 
 The settings displayed by the Azure VM provisioning wizard in the Azure portal are grouped into the following pages:
 
@@ -88,7 +88,7 @@ In addition to the Basic grouping, networking is another critical part of Azure 
 
 ##### Management
 
-From the Management page, you can enable several optional settings to enhance the manageability of your Azure VM. These settings control support for Microsoft Defender for Cloud and Azure AD authentication. You can also use them to schedule-based auto-shutdown, automatic backups, and patch orchestration.
+From the Management page, you can enable several optional settings to enhance the manageability of your Azure VM. These settings control support for Microsoft Defender for Cloud and Microsoft Entra authentication. You can also use them to schedule-based auto-shutdown, automatic backups, and patch orchestration.
 
 > [!NOTE]
 > 

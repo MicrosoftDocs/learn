@@ -1,4 +1,4 @@
-You configured a daemon application with Azure Active Directory (Azure AD). In the financial company scenario, the task is to build an application that acquires a token to call a protected web API on behalf of itself (not on behalf of a user). This application uses OAuth 2.0 client credentials flow to access a protected web API using the identity of the application. This type of grant is commonly used for server-to-server interactions that must run in the background, without immediate interaction with a user. These types of applications are often referred to as _daemons_.
+You configured a daemon application with Microsoft Entra ID. In the financial company scenario, the task is to build an application that acquires a token to call a protected web API on behalf of itself (not on behalf of a user). This application uses OAuth 2.0 client credentials flow to access a protected web API using the identity of the application. This type of grant is commonly used for server-to-server interactions that must run in the background, without immediate interaction with a user. These types of applications are often referred to as _daemons_.
 
 In this unit, you'll learn about the confidential client application, OAuth 2.0 client credentials flow, and how to create a confidential client instance.
 
@@ -16,7 +16,7 @@ When the app presents a token to a resource, the resource enforces that the app 
 
 ## Microsoft Authentication Library (MSAL) for Python
 
-The MSAL for Python enables applications to integrate with the Microsoft identity platform. It allows you to sign in users or apps with Microsoft identities (Azure AD, Microsoft Accounts and Azure AD B2C accounts) and obtain tokens to call Microsoft APIs like Microsoft Graph or your own APIs registered with the Microsoft identity platform.
+The MSAL for Python enables applications to integrate with the Microsoft identity platform. It allows you to sign in users or apps with Microsoft identities (Microsoft Entra ID, Microsoft Accounts and Azure AD B2C accounts) and obtain tokens to call Microsoft APIs like Microsoft Graph or your own APIs registered with the Microsoft identity platform.
 
 ### Initialize the MSAL object
 
@@ -34,6 +34,6 @@ app = ConfidentialClientApplication(
 )
 ```
 
-- **client_id**: The client id is the unique **Application (client) ID** assigned to your app by Azure AD when the app was registered.
+- **client_id**: The client id is the unique **Application (client) ID** assigned to your app by Microsoft Entra ID when the app was registered.
 - **authority**: The authority is a URL that indicates a directory that MSAL can request tokens from. It's composed of the identity provider instance and a sign-in audience for the app.
 - **client_secret**: The client secret for the confidential client app, created when registering the app.

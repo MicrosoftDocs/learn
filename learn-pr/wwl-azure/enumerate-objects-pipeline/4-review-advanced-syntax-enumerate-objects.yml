@@ -4,13 +4,12 @@ title: Review advanced syntax to enumerate objects in the pipeline
 metadata:
   title: Review advanced syntax to enumerate objects in the pipeline
   description: "Review advanced syntax to enumerate objects in the pipeline"
-  ms.date: 07/06/2023
+  ms.date: 10/10/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/4-review-advanced-syntax-enumerate-objects.md)]
