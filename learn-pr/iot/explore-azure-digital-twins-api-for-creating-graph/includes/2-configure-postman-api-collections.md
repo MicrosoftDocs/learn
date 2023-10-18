@@ -24,7 +24,7 @@ In a new browser tab, navigate to the [Azure Cloud Shell](https://ms.portal.azur
 
 Run the following command to get a token for the control plane APIs. It includes a static value for the token context: `https://management.azure.com/`. This value is same for everyone.
 
-```azurecli-interactive
+```azurecli
 az account get-access-token --resource https://management.azure.com/
 ```
 
@@ -32,7 +32,7 @@ Copy the value of `accessToken` from the result, and save it to use in the next 
 
 Next, run the following command to get a token for the data plane APIs. The static value for the token context is `0b07f429-9f4b-4714-9392-cc5e8e80c8b0` (the resource ID for the Azure Digital Twins service endpoint).
 
-```azurecli-interactive
+```azurecli
 az account get-access-token --resource 0b07f429-9f4b-4714-9392-cc5e8e80c8b0
 ```
 
@@ -90,7 +90,7 @@ Switch to the *Data plane* collection and create the following variable:
 
 Select **Save**.
 
-Now your Postman environment is set up to run Azure Digital Twins API requests.
+Now your Postman environment is set up to run Azure Digital Twins API requests. Leave the Postman window open, as you'll use it to run requests in upcoming units.
 
 ## View and understand the API categories
 

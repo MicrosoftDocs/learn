@@ -8,7 +8,7 @@ Run the following commands in the Cloud Shell to set up your session and create 
 
 ```azurecli
     az account set --subscription "<your-Azure-subscription-ID>"
-    az group create --name azure-digital-twins-training --location westcentralus
+    az group create --name azure-digital-twins-training --location westus2
 ```
 
 Next, create an Azure Digital Twins instance. Run the following commands in the Cloud Shell to generate a random name for the instance and then create a new instance with that name.
@@ -16,16 +16,17 @@ Next, create an Azure Digital Twins instance. Run the following commands in the 
 ```azurecli
     INSTANCE_NAME="Digital-Twins-$RANDOM"
     echo "Your Azure Digital Twins instance name will be: $INSTANCE_NAME"
-    az dt create --dt-name $INSTANCE_NAME --resource-group azure-digital-twins-training --location  
+    az dt create --dt-name $INSTANCE_NAME --resource-group azure-digital-twins-training --location westus2
 ```
 
-Finally, grant yourself the *Azure Digital Twins Data Owner* role on the instance, which is required to edit its data. Insert the username associated with your Azure account into the following command and run it in the Cloud Shell.
+Finally, run the following command to grant yourself the *Azure Digital Twins Data Owner* role on the instance, which is required to edit its data.
 
 >[!IMPORTANT]
 > This command can only be run by someone with subscription-level permission to manage access to Azure resources. For instance, if you've created your own subscription and are the **Owner**, you'll be able to run it. If you only have the **Contributor** role in the subscription, this command will return an error.
 >
-> If you find you're unable to run this command and you want to follow along with the hands-on exercises in this unit, have someone with elevated permissions (such as an Owner, Account Admin, or User Access Administrator + Contributor) run this command on your behalf.
+> If you find you're unable to run this command and you want to follow along with the hands-on exercises in this unit, have someone with elevated permissions (such as an Owner, Account Admin, or User Access Administrator + Contributor) run this command on your behalf. Instead of assigning the role to the current signed-in user account, they can enter the email associated with your Azure account for the `assignee` parameter.
 
 ```azurecli
-    az dt role-assignment create --dt-name $INSTANCE_NAME --assignee "<your-Azure-AD-username>" --role "Azure Digital Twins Data Owner"
+    $USER = az ad signed-in-user show --query id -o tsv
+    az dt role-assignment create --dt-name $INSTANCE_NAME --assignee $USER --role "Azure Digital Twins Data Owner"
 ```

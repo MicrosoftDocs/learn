@@ -1,4 +1,179 @@
-    1. View the API documentation for the Jobs API
-    1. Use the documentation to craft a request in the data plane collection that uploads models/twins/graph
-    1. View the API documentation for the Model and Twin APIs (List operation for models and relationships and GetByID for twins)
-    1. Use Model and Twin APIs to check the status of the new graph
+In this unit, you'll use the Jobs API to import a sample scenario graph complete with models, twins, and relationships. The Import Jobs API uses a file placed in Azure Blob Storage to import all of these entities into your Azure Digital Twins instance at once.
+
+Follow the steps in this unit to explore and import the sample scenario graph in to your Azure Digital Twins instance.
+
+## Understand sample scenario and import file
+
+The sample scenario of this unit represents a city energy grid, including different types of plants and consumers, power lines, receivers, and substations.
+
+These entities are connected by relationships indicating ownership and feed of power between them. The sample scenario has the following digital twin graph:
+
+:::image type="content" source="../media/3-sample-graph.png" alt-text="Azure Digital Twins Explorer screenshot showing the sample scenario, including a list of models and a graph of twins connected by relationships." border="false" lightbox="../media/3-sample-graph":::
+
+Each model, twin, and relationship in the sample graph is stored in JSON format in the import file for this module. You'll pass this file through the Import Jobs API to import all of these elements into your own Azure Digital Twins instance.
+
+Open the sample file in GitHub here: [distributionGridBulkImport.json](https://github.com/Azure-Samples/azure-digital-twins-getting-started/blob/main/models/energy-grid-example/distributionGridBulkImport.json). Notice that the code in the file is split into three sections: `Models`, `Twins`, and `Relationships`. Each line within a section represents a different model, twin, or relationship to be imported.
+
+:::image type="content" source="../media/3-import-file.png" alt-text="GitHub screenshot showing the body of the import file." border="false" lightbox="../media/3-import-file":::
+
+When you're done reviewing the contents of the import file, download the sample file from GitHub to use later in this unit.
+
+## Set up import resources and permissions
+
+For this unit, you'll be using the same Azure Digital Twins instance that you created in the previous unit. If you still have the same console window open, the name of this instance is stored in a variable `$INSTANCE_NAME`. If not, you can reset the variable below.
+
+If you don't already have a Cloud Shell tab open, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/) in a browser tab.
+
+Set the following console variables to use in this section, replacing placeholders with your own values:
+
+```azure-cli
+$INSTANCE_NAME = <The name of your Azure Digital Twins instance from the previous unit. It's in the format Digital-Twins-xxxx>
+$USER = az ad signed-in-user show --query id -o tsv
+$SUBSCRIPTION = az account show --query "id" --output tsv
+
+$STORAGE_ACCOUNT = <Enter a name to use for your Azure storage account>
+$CONTAINER = <Enter a name to use for your storage container>
+```
+
+Next, run the following command to assign a system-assigned identity to the Azure Digital Twins instance, and store its ID value to a `$PRINCIPALID` console variable. This value is needed to give Azure Digital Twins permission to access the import file from Azure Blob Storage.
+
+```azure-cli
+az dt create --dt-name $INSTANCE_NAME --resource-group azure-digital-twins-training --mi-system-assigned --location westus2
+$PRINCIPALID = az dt identity show -n $INSTANCE_NAME -g azure-digital-twins-training --query "principalId" --output tsv 
+```
+
+Next, create an Azure storage account and blob container, and assign access permission for both your user account and your Azure Digital Twins instance. These Azure storage resources are necessary to store the import file used by the Import Jobs API.
+
+```azure-cli
+az storage account create --name $STORAGE_ACCOUNT --resource-group azure-digital-twins-training --location westus2 --sku Standard_ZRS --encryption-services blob
+
+az role assignment create --role "Storage Blob Data Contributor" --assignee $USER --scope "/subscriptions/$SUBSCRIPTION/resourceGroups/azure-digital-twins-training/providers/Microsoft.Storage/storageAccounts/$STORAGE_ACCOUNT"
+
+az role assignment create --role "Storage Blob Data Contributor" --assignee $PRINCIPALID --scope "/subscriptions/$SUBSCRIPTION/resourceGroups/azure-digital-twins-training/providers/Microsoft.Storage/storageAccounts/$STORAGE_ACCOUNT"
+
+az storage container create --account-name $STORAGE_ACCOUNT --name $CONTAINER --auth-mode login
+```
+
+Run this command to get the URL of your new storage container. Save this value, because you'll use it later when you run the Import Jobs API command from Postman.
+
+```azure-cli
+echo "https://$STORAGE_ACCOUNT.blob.core.windows.net/$CONTAINER"
+```
+
+Finally, upload the sample file you downloaded [at the start of this unit](#understand-sample-scenario-and-import-file) to your Cloud Shell. Using the **Upload/Download files** icon across the top of the Cloud Shell, upload *distributionGridBulkImport.json* to your Cloud Shell storage.
+
+Now that the sample file is accessible from the Cloud Shell, you can run the following CLI command to upload the sample file to your Azure storage container.
+
+```azure-cli
+az storage blob upload --account-name $STORAGE_ACCOUNT --container-name $CONTAINER --name distributionGridBulkImport.json --file distributionGridBulkImport.json --auth-mode login
+```
+
+Now you have the import file available in an Azure storage account that can be accessed by your Azure Digital Twins instance. In the next section, you'll send an API request that uses this file to create the defined entities in your Azure Digital Twins instance.
+
+## Make the import request
+
+In this section, you'll send an Import Jobs API request to import the sample file of models, twins, and relationships.
+
+>[!TIP]
+>For a full description of the requests and fields used in this section, see the [ImportJobs reference documentation](/rest/api/digital-twins/dataplane/jobs).
+
+In your Postman collection, expand the folder path **Data plane** > **jobs** > **imports** > **{id}**, and open **PUT Import Jobs Add**. You'll fill in this request template to create a new import job.
+
+In the **Params** tab, set **api-version** to *2023-06-30* and the **id** value to *importdistributiongrid* to assign an ID value to the job you are creating.
+
+In the **Body** tab, replace any contents with the following section of code, replacing the placeholder with the URL of your Azure storage container created during the previous step. This information tells the request where to look for the file containing import details, and designates a location for any logs/outputted information.
+
+```json
+{
+  "inputBlobUri": "<container-URL>/distributionGridBulkImport.json",
+  "outputBlobUri": "<container-URL>/output.json"
+}
+```
+
+Send the request.
+
+The response from a successful request will look something like this:
+
+:::image type="content" source="../media/3-import-jobs-add.png" alt-text="Postman screenshot showing the results of the Import Jobs Add request." border="false" lightbox="../media/3-import-jobs-add":::
+
+This result indicates that the job has been created. It has probably started running in the minutes since the response was sent, so check the current status of the job by opening the **GET Import Jobs Get By Id** request template from the collection, also under **Data plane** > **jobs** > **imports** > **{id}**.
+
+In the **Params** tab, set **api-version** to *2023-06-30* and the **id** value to *importdistributiongrid*.
+
+Send the request.
+
+The response from a successful request will look something like this:
+
+:::image type="content" source="../media/3-import-jobs-get-by-id.png" alt-text="Postman screenshot showing the results of the Import Jobs Get By Id request." border="false" lightbox="../media/3-import-jobs-get-by-id":::
+
+The value of `succeeded` in the output indicates that the import job was successful.
+
+## Verify imported elements
+
+To check that your Azure Digital Twins graph now contains models, twins, and relationships, this section uses the data plane APIs for **models** and **digitaltwins**.
+
+>[!TIP]
+>For a full description of the requests and fields used in this section, see the [Models reference documentation](/rest/api/digital-twins/dataplane/models) and [Twins reference documentation](/rest/api/digital-twins/dataplane/twins).
+
+### Verify models
+
+First, use one of the model APIs to see a list of all the models in your Azure Digital Twins instance.
+
+In your Postman collection, expand the folder path **Data plane** > **models**, and open **GET Digital Twin Models List**.
+
+In the **Params** tab, set **api-version** to *2023-06-30*. Uncheck the **dependenciesFor** options.
+
+In the **Headers** tab, uncheck the **max-items-per-page**, **traceparent**, and **tracestate** options.
+
+Send the request.
+
+The response from a successful request will look something like this:
+
+:::image type="content" source="../media/3-digital-twin-models-list.png" alt-text="Postman screenshot showing the results of the Digital Twin Models List request." border="false" lightbox="../media/3-digital-twin-models-list":::
+
+The reply body will list all of the models that are present in your Azure Digital Twins instance. Review the results to confirm that the models from the import file (including consumers, substations, plants, and more) are represented.
+
+### Verify twins
+
+Next, use one of the digital twins APIs to see the details of one of the twins that was imported, a power line named *pl_distribute*.
+
+>[!TIP]
+>To search for multiple digital twins at once, use the Query API, which is explored in Unit 5 of this module.
+
+In your Postman collection, expand the folder path **Data plane** > **digitaltwins** > **{id}**, and open **GET Digital Twins Get By Id**.
+
+In the **Params** tab, set **api-version** to *2023-06-30* and the **id** value to *pl_distribute*.
+
+In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+
+Send the request.
+
+The response from a successful request will look something like this:
+
+:::image type="content" source="../media/3-digital-twins-get-by-id.png" alt-text="Postman screenshot showing the results of the Digital Twins Get By Id request." border="false" lightbox="../media/3-digital-twins-get-by-id":::
+
+The reply body will give details of the *pl_distribute* digital twin. This twin is a power line with two properties indicating `Capacity` and `GridType`.
+
+### Verify relationships
+
+In this section, you'll use one of the relationships APIs to see the all of the relationships coming from the *pl_distribute* twin.
+
+In your Postman collection, expand the folder path **Data plane** > **digitaltwins** > **{id}** > **relationships**, and open **GET Digital Twins List Relationships**.
+
+In the **Params** tab, set **api-version** to *2023-06-30* and the **id** value to *pl_distribute*. Uncheck the **relationshipName** parameter to avoid specifying any one type of relationship, in order to see them all.
+
+In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+
+Send the request.
+
+The response from a successful request will look something like this:
+
+:::image type="content" source="../media/3-digital-twins-list-relationships.png" alt-text="Postman screenshot showing the results of the Digital Twins List Relationships request." border="false" lightbox="../media/3-digital-twins-list-relationships":::
+
+The reply body will list all the relationships, both incoming and outgoing, of the *pl_distribute* digital twin. Review the results to see what kind of relationships this power line twin has in the graph.
+
+### Further exploration
+
+From here, you can experiment with different API requests for viewing additional models, twins, or relationships in your graph. You may also want to view an interactive, visual version of the graph that you've created in this unit.
+
+[!include [Instructions to view an Azure Digital Twins graph in Azure Digital Twins Explorer]](../../includes/view-azure-digital-twins-graph.md)
