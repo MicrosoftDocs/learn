@@ -28,7 +28,8 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
+- entra
+- entra-id
 subjects:
 - identity-access
 units:

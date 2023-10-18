@@ -19,7 +19,7 @@ The tasks in this exercise and the exercises in this learning path require you t
 2.  Scroll down through the page to learn more about the benefits and free services available.
 3.  Select **Start free**.
 4.  Use the wizard to sign up for your Azure trial subscription.
-5.  You'll need to an Microsoft Entra P2 license to complete some of the exercises. In the organization you created, search for and then select **Microsoft Entra ID**.
+5.  You'll need to a Microsoft Entra P2 license to complete some of the exercises. In the organization you created, search for and then select **Microsoft Entra ID**.
 6.  In the left navigation menu, select **Getting started**.
 7.  Under Getting started with Microsoft Entra, select **Get a free trial for Microsoft Entra Premium**.
 8.  In the Activate pane, under **Microsoft Entra PREMIUM P2**, select **Free trial** and then select **Activate**.
@@ -33,7 +33,7 @@ The on-premises Microsoft Entra Password Protection components work as follows:
 
 1.  Each Microsoft Entra Password Protection proxy-service-instance advertises itself to the DCs in the forest by creating a *serviceConnectionPoint* object in Active Directory.
 2.  Each DC Agent service for Microsoft Entra Password Protection also creates a *serviceConnectionPoint* object in Active Directory. This object is used primarily for reporting and diagnostics.
-3.  The DC Agent service is responsible for initiating the download of a new password policy from Microsoft Entra. The first step is to locate an Microsoft Entra Password Protection proxy-service by querying the forest for proxy *serviceConnectionPoint* objects.
+3.  The DC Agent service is responsible for initiating the download of a new password policy from Microsoft Entra. The first step is to locate a Microsoft Entra Password Protection proxy-service by querying the forest for proxy *serviceConnectionPoint* objects.
 4.  When an available proxy service is found, the DC Agent sends a password policy download request to the proxy service. The proxy service in turn sends the request to Microsoft Entra, and then returns the response to the DC Agent service.
 5.  After the DC Agent service receives a new password policy from Microsoft Entra, the service stores the policy in a dedicated folder at the root of its domain *sysvol* folder share. The DC Agent service also monitors this folder in case newer policies replicate in from other DC Agent services in the domain.
 6.  The DC Agent service always requests a new policy at service startup. After the DC Agent service is started, it checks the age of the current locally available policy hourly. If the policy is older than one hour, the DC Agent requests a new policy from Microsoft Entra via the proxy service, as described previously. If the current policy isn't older than one hour, the DC Agent continues to use that policy.
@@ -106,10 +106,10 @@ The following core requirements apply:
      -  By default, the RPC server port is a dynamic RPC port, but it can be configured to use a static port.
  -  All machines where the Microsoft Entra Password Protection proxy-service will be installed must have network access to the following endpoints:
 
-| **Endpoint**                               | **Purpose**                                       |
-| ------------------------------------------ | ------------------------------------------------- |
-| https://login.microsoftonline.com          | Authentication requests                           |
-| https://enterpriseregistration.windows.net | Microsoft Entra Password Protection functionality |
+| **Endpoint**                                 | **Purpose**                                       |
+| -------------------------------------------- | ------------------------------------------------- |
+| `https://login.microsoftonline.com`          | Authentication requests                           |
+| `https://enterpriseregistration.windows.net` | Microsoft Entra Password Protection functionality |
 
 ### Microsoft Entra Password Protection DC agent
 
@@ -137,7 +137,7 @@ The following requirements apply to the Microsoft Entra Password Protection prox
  -  Network access must be enabled for the set of ports and URLs specified in the Application Proxy environment setup procedures.
     
     > [!WARNING]
-    > Microsoft Entra Password Protection proxy and Microsoft Entra Application Proxy install different versions of the Microsoft Microsoft Entra Connect Agent Updater service, which is why the instructions refer to Application Proxy content. These different versions are incompatible when installed side by side. Doing so will prevent the Agent Updater service from contacting Azure for software updates, so you should never install Microsoft Entra Password Protection Proxy and Application Proxy on the same machine.
+    > Microsoft Entra Password Protection proxy and Microsoft Entra Application Proxy install different versions of the Microsoft Entra Connect Agent Updater service, which is why the instructions refer to Application Proxy content. These different versions are incompatible when installed side by side. Doing so will prevent the Agent Updater service from contacting Azure for software updates, so you should never install Microsoft Entra Password Protection Proxy and Application Proxy on the same machine.
 
 ## Download required software
 
@@ -175,7 +175,7 @@ The installation of on-premises Microsoft Entra Password Protection is complete 
 
 ## Upgrading the proxy service
 
-The Microsoft Entra Password Protection proxy-service supports automatic upgrade. Automatic upgrade uses the Microsoft Microsoft Entra Connect Agent Updater service, which is installed side by side with the proxy service. Automatic upgrade is on by default and may be enabled or disabled using the `Set-AzureADPasswordProtectionProxyConfiguration` cmdlet.
+The Microsoft Entra Password Protection proxy-service supports automatic upgrade. Automatic upgrade uses the Microsoft Entra Connect Agent Updater service, which is installed side by side with the proxy service. Automatic upgrade is on by default and may be enabled or disabled using the `Set-AzureADPasswordProtectionProxyConfiguration` cmdlet.
 
 The current setting can be queried using the `Get-AzureADPasswordProtectionProxyConfiguration` cmdlet. We recommend that the automatic upgrade setting always is enabled.
 
