@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-ad-privileged-identity-management.privileged-identity-management
-title: Deploy Azure AD privileged identity management
+title: Deploy Microsoft Entra Privileged Identity Management
 metadata:
-  title: Deploy Azure AD privileged identity management
-  description: "Deploy Azure AD privileged identity management"
+  title: Deploy Microsoft Entra Privileged Identity Management
+  description: "Deploy Microsoft Entra Privileged Identity Management"
   ms.date: 08/28/2023
   author: wwlpublish
   ms.author: serlingdavis
