@@ -23,11 +23,13 @@ After fulfilling the requirements like service accounts and a SQL Server instanc
 
 ### Configuration of the unified labeling scanner
 
-The Unified label is installed on a Windows server and is connected to the SQL Server instance. In the next steps to configure the Scanner we need to connect the local instance with the Azure environment with an Azure AD Token and after it we can configure it to make the first run.
+The Unified label is installed on a Windows server and is connected to the SQL Server instance. In the next steps to configure the Scanner we need to connect the local instance with the Azure environment with a Microsoft Entra Token and after it we can configure it to make the first run.
 
-### Acquire an Azure AD Token for the scanner
+<a name='acquire-an-azure-ad-token-for-the-scanner'></a>
 
-Perform the following steps to fetch an Azure AD Token for the Unified Labeling Scanner:
+### Acquire a Microsoft Entra Token for the scanner
+
+Perform the following steps to fetch a Microsoft Entra Token for the Unified Labeling Scanner:
 
 1. Navigate to the **Azure portal** at [https://portal.azure.com](https://portal.azure.com/?azure-portal=true).
 
@@ -81,18 +83,18 @@ Perform the following steps to fetch an Azure AD Token for the Unified Labeling 
 
 1. Select the **Grant admin consent button.**
 
-1. Navigate to the **Azure Active Directory.**
+1. Navigate to the **Microsoft Entra ID.**
 
 1. Within the overview page copy, the **Tenant ID** required for the next step.
 
-1. Configure the Azure AD applications for **Set-AIP Authentications** from the Windows Server computer, if your scanner service account has been granted the sign in locally right for the installation, sign in with this account and start a PowerShell session using the **AzureInformationProtection** module.
+1. Configure the Microsoft Entra applications for **Set-AIP Authentications** from the Windows Server computer, if your scanner service account has been granted the sign in locally right for the installation, sign in with this account and start a PowerShell session using the **AzureInformationProtection** module.
 
     ```powershell
     Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>
 
     ```
 
-1. After this cmdlet is run the scanner will have an Azure AD Token and be registered as an application in the Azure environment. With this connection, the scanner has access to the label scheme and the settings.
+1. After this cmdlet is run the scanner will have a Microsoft Entra Token and be registered as an application in the Azure environment. With this connection, the scanner has access to the label scheme and the settings.
 
 ### Configuration of the scanner and scan methods
 
