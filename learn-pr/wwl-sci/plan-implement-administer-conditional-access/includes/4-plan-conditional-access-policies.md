@@ -7,7 +7,7 @@ Microsoft Entra Conditional Access (CA) analyzes signals, such as user, device, 
 :::image type="content" source="../media/conditional-access-overview-how-it-works-b5356a16.png" alt-text="Diagram of how Conditional Access works. Centralize identity provider verifies rules before access is granted.":::
 
 
-Although security defaults ensure a basic level of security, your organization may need more flexibility than security defaults offer. You can use CA to customize security defaults with more granularity and to configure new policies that meet your requirements.
+Although security defaults ensure a basic level of security, your organization need more flexibility than security defaults offer. You can use CA to customize security defaults with more granularity and to configure new policies that meet your requirements.
 
 ### Benefits
 
@@ -33,7 +33,7 @@ Some common questions about assignments, access controls, and session controls:
  -  Users and Groups: Which users and groups will be included in or excluded from the policy? Does this policy include all users, specific group of users, directory roles, or external users?
  -  Cloud apps or actions: What application(s) will the policy apply to? What user actions will be subject to this policy?
  -  Conditions: Which device platforms will be included in or excluded from the policy? What are the organization’s trusted locations?
- -  Access controls: Do you want to grant access to resources by implementing requirements such as MFA, devices marked as compliant, or hybrid Microsoft Enta joined devices?
+ -  Access controls: Do you want to grant access to resources by implementing requirements such as MFA, devices marked as compliant, or Microsoft Entra hybrid joined devices?
  -  Session controls: Do you want to control access to cloud apps by implementing requirements such as app enforced permissions or Conditional Access App Control?
 
 ### Access token issuance
