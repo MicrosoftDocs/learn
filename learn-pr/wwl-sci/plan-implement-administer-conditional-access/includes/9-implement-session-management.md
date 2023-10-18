@@ -33,14 +33,14 @@ The sign-in frequency setting works with SAML applications as well, as long as t
 
 ### User sign-in frequency and multifactor authentication
 
-Sign-in frequency previously applied only to the first factor authentication on devices that were Microsoft Entra joined, Microsoft Entra hybrid joined, and Microsoft Entra registered. There was no easy way for our customers to re-enforce multifactor authentication (MFA) on those devices. Based on customer feedback, sign-in frequency will apply for MFA as well.
+Sign-in frequency previously applied only to the first factor authentication on devices that were Microsoft Entra joined, Hybrid Microsoft Entra joined, and Microsoft Entra registered. There was no easy way for our customers to re-enforce multifactor authentication (MFA) on those devices. Based on customer feedback, sign-in frequency will apply for MFA as well.
 
-:::image type="content" source="../media/conditional-access-flow-chart-2401cc8b.png" alt-text="Screenshot of the Sign-in frequency and MFA with Microsoft Entra Conditional Access.":::
+:::image type="content" source="../media/conditional-access-flow-chart-2401cc8b.png" alt-text="Screenshot of the Sign-in frequency and MFA with Azure A D conditional access.":::
 
 
 ### User sign-in frequency and device identities
 
-If you have Microsoft Entra joined, Microsoft Entra hybrid joined, or Microsoft Entra registered devices, when a user unlocks their device or signs in interactively, this event will satisfy the sign-in frequency policy as well. In the following two examples user sign-in frequency is set to one hour:
+If you have Microsoft Entra joined, hybrid Microsoft Entra joined, or Microsoft Entra registered devices, when a user unlocks their device or signs in interactively, this event will satisfy the sign-in frequency policy as well. In the following two examples user sign-in frequency is set to one hour:
 
 Example 1:
 

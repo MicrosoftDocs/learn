@@ -33,7 +33,7 @@ Some common questions about assignments, access controls, and session controls:
  -  Users and Groups: Which users and groups will be included in or excluded from the policy? Does this policy include all users, specific group of users, directory roles, or external users?
  -  Cloud apps or actions: What application(s) will the policy apply to? What user actions will be subject to this policy?
  -  Conditions: Which device platforms will be included in or excluded from the policy? What are the organization’s trusted locations?
- -  Access controls: Do you want to grant access to resources by implementing requirements such as MFA, devices marked as compliant, or Microsoft Entra hybrid joined devices?
+ -  Access controls: Do you want to grant access to resources by implementing requirements such as MFA, devices marked as compliant, or hybrid Microsoft Enta joined devices?
  -  Session controls: Do you want to control access to cloud apps by implementing requirements such as app enforced permissions or Conditional Access App Control?
 
 ### Access token issuance
@@ -72,9 +72,9 @@ It can be difficult to predict the number and names of users affected by common 
 
 Report-only mode allows administrators to evaluate the CA policies before enabling them in their environment.
 
-### Exclude countries/regions from which you never expect a sign-in
+### Exclude countries from which you never expect a sign-in
 
-Microsoft Entra ID allows you to create named locations. Create a named location that includes all of the countries/regions from which you would never expect a sign-in to occur. Then create a policy for all apps that blocks sign in from that named location. **Be sure to exempt your administrators from this policy**.
+Microsoft Entra ID allows you to create named locations. Create a named location that includes all of the countries from which you would never expect a sign-in to occur. Then create a policy for all apps that blocks sign in from that named location. **Be sure to exempt your administrators from this policy**.
 
 ## Common policies
 
@@ -124,5 +124,5 @@ The test plan is important to have a comparison between the expected results and
 
  -  Free Microsoft Entra ID - No Conditional Access
  -  Free Office 365 subscription - No Conditional Access
- -  Microsoft Entra ID P1 or P2 (or Microsoft 365 E3 and up) - Conditional access work based on standard rules
- -  Microsoft Entra ID P1 or P2 - Conditional Access, and you get the ability to use Risky sign-in, Risky Users, and risk-based sign-in options as well (from Identity Protection)
+ -  Microsoft Entra ID Premium 1 (or Microsoft 365 E3 and up) - Conditional access work based on standard rules
+ -  Microsoft Entra ID Premium 2 - Conditional Access, and you get the ability to use Risky sign-in, Risky Users, and risk-based sign-in options as well (from Identity Protection)

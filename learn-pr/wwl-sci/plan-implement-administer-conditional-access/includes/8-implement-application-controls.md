@@ -27,46 +27,58 @@ This section presents two scenarios to configure Conditional Access policies for
 
 ### Scenario 1: Microsoft 365 apps require an approved client app
 
-In this scenario, Contoso has decided that users using mobile devices can access all Microsoft 365 services as long as they use approved client apps, like Outlook mobile, OneDrive, and Microsoft Teams. All of their users already sign in with Microsoft Entra credentials and have licenses assigned to them that include Microsoft Entra ID P1 or P2 and Microsoft Intune.
+In this scenario, Contoso has decided that users using mobile devices can access all Microsoft 365 services as long as they use approved client apps, like Outlook mobile, OneDrive, and Microsoft Teams. All of their users already sign in with Microsoft Entra credentials and have licenses assigned to them that include Microsoft Entra ID Premium P1 or P2 and Microsoft Intune.
 
 Organizations must complete the following three steps in order to require the use of an approved client app on mobile devices.
 
 **Step 1: Policy for Android and iOS based modern authentication clients requiring the use of an approved client application when accessing Exchange Online.**
 
-1. Sign in to the **Azure portal** as a Global Administrator, Security Administrator, or Conditional Access Administrator.
-1. Browse to **Microsoft Entra ID**, then **Security**, and then **Conditional Access**.
-1. Select **New policy**.
-1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
-1. Under **Assignments**, select **Users and groups.**
-    1. Under **Include**, select **All users** or the specific **Users and groups** you wish to apply this policy to.
-    1. Select **Done**.
-1. Under **Cloud apps or actions**, then **Include**, select **Office 365**.
-1. Under **Conditions**, select **Device platforms**.
-    1. Set **Configure** to **Yes**.
-    1. Include **Android** and **iOS**.
-1. Under **Conditions**, select **Client apps (preview)**.
-    1. Set **Configure** to **Yes**.
-    1. Select **Mobile apps and desktop clients** and **Modern authentication clients**.
-1. Under **Access controls**, then **Grant**, select **Grant access**, **Require approved client app**, and select **Select**.
-1. Confirm your settings and set **Enable policy** to **On**.
-1. Select **Create** to create and enable your policy.
+1.  Sign in to the **Microsoft Entra admin center** as a Global Administrator, Security Administrator, or Conditional Access Administrator.
+2.  Browse to **Identity**, then **Protection**, and then **Conditional Access**.
+3.  Select **+Create new policy**.
+4.  Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
+5.  Under **Assignments**, select **Users and groups.**
+    
+    
+    1.  Under **Include**, select **All users** or the specific **Users and groups** you wish to apply this policy to.
+    2.  Select **Done**.
+6.  Under **Cloud apps or actions**, then **Include**, select **Office 365**.
+7.  Under **Conditions**, select **Device platforms**.
+    
+    
+    1.  Set **Configure** to **Yes**.
+    2.  Include **Android** and **iOS**.
+8.  Under **Conditions**, select **Client apps (preview)**.
+    
+    
+    1.  Set **Configure** to **Yes**.
+    2.  Select **Mobile apps and desktop clients** and **Modern authentication clients**.
+9.  Under **Access controls**, then **Grant**, select **Grant access**, **Require approved client app**, and select **Select**.
+10. Confirm your settings and set **Enable policy** to **On**.
+11. Select **Create** to create and enable your policy.
 
-**Step 2: Configure a Microsoft Entra Conditional Access policy for Exchange Online with ActiveSync (EAS).**
+**Step 2: Configure an Microsoft Entra Conditional Access policy for Exchange Online with ActiveSync (EAS).**
 
-1. Browse to **Microsoft Entra ID**, then **Security**, and then **Conditional Access**.
-1. Select **New policy**.
-1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
-1. Under **Assignments**, select **Users and groups.**
-    1. Under **Include**, select **All users** or the specific **Users and groups** you wish to apply this policy to.
-    1. Select **Done**.
-1. Under **Cloud apps or actions**, then **Include**, select **Office 365 Exchange Online**.
-1. Under **Conditions**:
-    1. **Client apps (preview)**:
-        1. Set **Configure** to **Yes**.
-        1. Select **Mobile apps and desktop clients** and **Exchange ActiveSync clients**.
-1. Under **Access controls**, then **Grant**, select **Grant access**, **Require approved client app**, and select **Select**.
-1. Confirm your settings and set **Enable policy** to **On**.
-1. Select **Create** to create and enable your policy.
+1.  Browse to **Identity**, then **Protection**, and then **Conditional Access**.
+2.  Select **+Create new policy**.
+3.  Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
+4.  Under **Assignments**, select **Users and groups.**
+    
+    
+    1.  Under **Include**, select **All users** or the specific **Users and groups** you wish to apply this policy to.
+    2.  Select **Done**.
+5.  Under **Cloud apps or actions**, then **Include**, select **Office 365 Exchange Online**.
+6.  Under **Conditions**:
+    
+    
+    1.  **Client apps (preview)**:
+        
+        
+        1.  Set **Configure** to **Yes**.
+        2.  Select **Mobile apps and desktop clients** and **Exchange ActiveSync clients**.
+7.  Under **Access controls**, then **Grant**, select **Grant access**, **Require approved client app**, and select **Select**.
+8.  Confirm your settings and set **Enable policy** to **On**.
+9.  Select **Create** to create and enable your policy.
 
 **Step 3: Configure Intune app protection policy for iOS and Android client applications.**
 
@@ -74,46 +86,58 @@ Review the article [How to create and assign app protection policies](/intune/ap
 
 ### Scenario 2: Exchange Online and SharePoint Online require an approved client app
 
-In this scenario, Contoso has decided that users may only access email and SharePoint data on mobile devices as long as they use an approved client app like Outlook mobile. All of their users already sign in with Microsoft Entra credentials and have licenses assigned to them that include Microsoft Entra ID P1 or P2 and Microsoft Intune.
+In this scenario, Contoso has decided that users may only access email and SharePoint data on mobile devices as long as they use an approved client app like Outlook mobile. All of their users already sign in with Microsoft Entra credentials and have licenses assigned to them that include Microsoft Entra ID Premium P1 or P2 and Microsoft Intune.
 
 Organizations must complete the following three steps in order to require the use of an approved client app on mobile devices and Exchange ActiveSync clients.
 
 **Step 1: Policy for Android and iOS based modern authentication clients requiring the use of an approved client application when accessing Exchange Online and SharePoint Online.**
 
-1. Sign in to the **Azure portal** as a Global Administrator, Security Administrator, or Conditional Access Administrator.
-1. Browse to **Microsoft Entra ID**, then **Security**, and then **Conditional Access**.
-1. Select **New policy**.
-1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
-1. Under **Assignments**, select **Users and groups.**
-    1. Under **Include**, select **All users** or the specific **Users and groups** you wish to apply this policy to.
-    1. Select **Done**.
-1. Under **Cloud apps or actions**, then **Include**, select **Office 365 Exchange Online** and **Office 365 SharePoint Online**.
-1. Under **Conditions**, select **Device platforms**.
-    1. Set **Configure** to **Yes**.
-    1. Include **Android** and **iOS**.
-1. Under **Conditions**, select **Client apps (preview)**.
-    1. Set **Configure** to **Yes**.
-    1. Select **Mobile apps and desktop clients** and **Modern authentication clients**.
-1. Under **Access controls**, then **Grant**, select **Grant access**, **Require approved client app**, and select **Select**.
-1. Confirm your settings and set **Enable policy** to **On**.
-1. Select **Create** to create and enable your policy.
+1.  Sign in to the **Microsoft Entra admin center** as a Global Administrator, Security Administrator, or Conditional Access Administrator.
+2.  Browse to **Identity**, then **Protection**, and then **Conditional Access**.
+3.  Select **New policy**.
+4.  Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
+5.  Under **Assignments**, select **Users and groups.**
+    
+    
+    1.  Under **Include**, select **All users** or the specific **Users and groups** you wish to apply this policy to.
+    2.  Select **Done**.
+6.  Under **Cloud apps or actions**, then **Include**, select **Office 365 Exchange Online** and **Office 365 SharePoint Online**.
+7.  Under **Conditions**, select **Device platforms**.
+    
+    
+    1.  Set **Configure** to **Yes**.
+    2.  Include **Android** and **iOS**.
+8.  Under **Conditions**, select **Client apps (preview)**.
+    
+    
+    1.  Set **Configure** to **Yes**.
+    2.  Select **Mobile apps and desktop clients** and **Modern authentication clients**.
+9.  Under **Access controls**, then **Grant**, select **Grant access**, **Require approved client app**, and select **Select**.
+10. Confirm your settings and set **Enable policy** to **On**.
+11. Select **Create** to create and enable your policy.
 
 **Step 2: Policy for Exchange ActiveSync clients requiring the use of an approved client app.**
 
-1. Browse to **Microsoft Entra ID**, then **Security**, and then **Conditional Access**.
-1. Select **New policy**.
-1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
-1. Under **Assignments**, select **Users and groups.**
-    1. Under **Include**, select **All users** or the specific **Users and groups** you wish to apply this policy to.
-    1. Select **Done**.
-1. Under **Cloud apps or actions**, then **Include**, select **Office 365 Exchange Online**.
-1. Under **Conditions**:
-    1. **Client apps (preview)**:
-        1. Set **Configure** to **Yes**.
-        1. Select **Mobile apps and desktop clients** and **Exchange ActiveSync clients**.
-1. Under **Access controls**, then **Grant**, select **Grant access**, **Require approved client app**, and select **Select**.
-1. Confirm your settings and set **Enable policy** to **On**.
-1. Select **Create** to create and enable your policy.
+1.  Browse to **Identity**, then **Protection**, and then **Conditional Access**.
+2.  Select **New policy**.
+3.  Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
+4.  Under **Assignments**, select **Users and groups.**
+    
+    
+    1.  Under **Include**, select **All users** or the specific **Users and groups** you wish to apply this policy to.
+    2.  Select **Done**.
+5.  Under **Cloud apps or actions**, then **Include**, select **Office 365 Exchange Online**.
+6.  Under **Conditions**:
+    
+    
+    1.  **Client apps (preview)**:
+        
+        
+        1.  Set **Configure** to **Yes**.
+        2.  Select **Mobile apps and desktop clients** and **Exchange ActiveSync clients**.
+7.  Under **Access controls**, then **Grant**, select **Grant access**, **Require approved client app**, and select **Select**.
+8.  Confirm your settings and set **Enable policy** to **On**.
+9.  Select **Create** to create and enable your policy.
 
 **Step 3: Configure Intune app protection policy for iOS and Android client applications.**
 
