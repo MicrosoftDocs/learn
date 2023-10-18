@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: cognitive-search	
 title: Use semantic search to get better search results in Azure Cognitive Search
-summary: "Suppose that you work for a company that is developing an app for local tourists. You have huge amounts of information about local tourist sites, but when users search for information sometimes they don't find the most relevant articles at the top of their search results. To improve the usability of your app, you are investigating how to return more relevant results to users by using Azure Cognitive Search."
+summary: "Learn how semantic search can help you to improve your Azure Cognitive Search results."
 abstract: |
   By the end of this module, you'll be able to:
     - Describe semantic search
