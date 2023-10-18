@@ -4,7 +4,7 @@ Identity Protection is a service that enables organizations to view the security
  -  Investigate risks using data in the portal.
  -  Export risk detection data to third-party utilities for further analysis.
 
-Always remember that Microsoft Entra Identity Protection requires an Microsoft Entra ID Premium P2 license to operate. Licensing is covered in more detail in a later unit.
+Always remember that Microsoft Entra Identity Protection requires a Microsoft Entra ID Premium P2 license to operate. Licensing is covered in more detail in a later unit.
 
 Identity Protection uses the knowledge Microsoft has gained from its position in organizations with Microsoft Entra ID, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analyzes 6.5 trillion signals per day to identify and protect customers from threats.
 
@@ -42,7 +42,7 @@ Currently, the Security Operator role cannot access the Risky sign ins report. C
 
 ## License requirements
 
-Using this feature requires an Microsoft Entra ID Premium P2 license.
+Using this feature requires a Microsoft Entra ID Premium P2 license.
 
 | **Capability**   | **Details**                                                         | **Microsoft Entra ID Free / Microsoft 365 Apps**                                                        | **Microsoft Entra ID Premium P1**                                                                       | **Microsoft Entra ID Premium P2** |
 | ---------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | --------------------------------- |

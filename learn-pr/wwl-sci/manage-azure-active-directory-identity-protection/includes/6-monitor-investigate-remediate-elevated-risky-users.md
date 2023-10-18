@@ -4,7 +4,7 @@ Identity Protection provides organizations with three reports they can use to in
 
 All three reports allow for downloading of events in .CSV format for further analysis outside of the Azure portal. The risky users and risky sign-ins reports allow for downloading the most recent 2,500 entries, while the risk detections report allows for downloading the most recent 5,000 records.
 
-Organizations can take advantage of the Microsoft Graph API integrations to aggregate data with other sources they may have access to as an organization.
+Organizations can take advantage of the Microsoft Graph API integrations to aggregate data with other sources they have access to as an organization.
 
 You can find the three reports in the **Microsoft Entra admin center**, then **Identity**, and then **Protection - Identity Protection**.
 
@@ -12,7 +12,7 @@ You can find the three reports in the **Microsoft Entra admin center**, then **I
 
 Each report launches with a list of all detections for the period shown at the top of the report. Each report allows for the addition or removal of columns based on administrator preference. Administrators can choose to download the data in .CSV or .JSON format. Reports can be filtered using the filters across the top of the report.
 
-Selecting individual entries may enable additional entries at the top of the report, such as the ability to confirm a sign-in as compromised or safe, confirm a user as compromised, or dismiss user risk.
+Selecting individual entries enables additional entries at the top of the report, such as the ability to confirm a sign-in as compromised or safe, confirm a user as compromised, or dismiss user risk.
 
 Selecting individual entries expands a details window below the detections. The details view allows administrators to investigate and perform actions on each detection.
 
@@ -71,7 +71,7 @@ Administrators can then choose to return to the user's risk or sign-ins report t
 The risk detection report also provides a clickable link to the detection in the Microsoft Defender for Cloud Apps (MDCA) portal where you can view additional logs and alerts.
 
 > [!NOTE]
-> Our system may detect that the risk event that contributed to the risk user risk score was a false positive or that the user risk was remediated with policy enforcement such as completing an MFA prompt or secure password change. Therefore, our system will dismiss the risk state, and a risk detail of “AI confirmed sign-in safe” will surface and no longer contribute to the user’s risk.
+> Our system detects that the risk event that contributed to the risk user risk score was a false positive or that the user risk was remediated with policy enforcement such as completing an MFA prompt or secure password change. Therefore, our system will dismiss the risk state, and a risk detail of “AI confirmed sign-in safe” will surface and no longer contribute to the user’s risk.
 
 ## Remediate risks and unblock users
 
@@ -81,7 +81,7 @@ After completing your investigation, you'll want to take action to remediate the
 
 All active risk detections contribute to the calculation of a value called *user risk level*. The user risk level is an indicator (low, medium, high) for the probability that an account has been compromised. As an administrator, you want to get all risk detections closed, so that the affected users are no longer at risk.
 
-Some risk detections may be marked by Identity Protection as "Closed (system)" because the events were no longer determined to be risky.
+Some risk detections are marked by Identity Protection as "Closed (system)" because the events were no longer determined to be risky.
 
 Administrators have the following options to remediate:
 
@@ -94,7 +94,7 @@ Administrators have the following options to remediate:
 
 If you allow users to self-remediate, with multifactor authentication (MFA) and self-service password reset (SSPR) in your risk policies, they can unblock themselves when risk is detected. These detections are then considered closed. Users must have previously registered for MFA and SSPR in order to use when risk is detected.
 
-Some detections may not raise risk to the level where a user self-remediation would be required, but administrators should still evaluate these detections. Administrators may determine that additional measures are necessary, such as blocking access from locations or lowering the acceptable risk in their policies.
+Some detections don't raise risk to the level where a user self-remediation would be required, but administrators should still evaluate these detections. Administrators determine that additional measures are necessary, such as blocking access from locations or lowering the acceptable risk in their policies.
 
 ### Manual password reset
 
@@ -125,7 +125,7 @@ When closing risk detections manually, you can choose to take any of the followi
 
 ### Unblocking users
 
-An administrator may choose to block a sign-in based on their risk policy or investigations. A block may occur based on either sign-in or user risk.
+An administrator chooses to block a sign-in based on their risk policy or investigations. A block occurs based on either sign-in or user risk.
 
 ### Unblocking based on user risk
 
@@ -172,7 +172,7 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
 
 ### Create a new app registration
 
-1.  In the Microsoft Entra admin center, browse to **Idenity and Applications**, then **App registrations**.
+1.  In the Microsoft Entra admin center, browse to **Identity and Applications**, then **App registrations**.
 2.  Select **New registration**.
 3.  On the **Create** page, perform the following steps:
     
@@ -301,7 +301,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=d
 
 ### Get all of the users who successfully passed an MFA challenge triggered by risky sign-ins policy (riskyUsers API)
 
-To understand the value Identity Protection risk-based policies have on your organization, you can query all of the users who successfully passed an MFA challenge triggered by a risky sign-ins policy. This information can help you understand which users Identity Protection may have falsely detected as a risk and which of your legitimate users may be performing actions that the AI deems risky.
+To understand the value Identity Protection risk-based policies have on your organization, you can query all of the users who successfully passed an MFA challenge triggered by a risky sign-ins policy. This information can help you understand which users Identity Protection has falsely detected as a risk and which of your legitimate users are performing actions that the AI deems risky.
 
 ```http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=riskDetail eq 'userPassedMFADrivenByRiskBasedPolicy'
