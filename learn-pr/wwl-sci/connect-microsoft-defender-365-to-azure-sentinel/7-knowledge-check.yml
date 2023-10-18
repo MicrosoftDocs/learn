@@ -36,7 +36,7 @@ quiz:
     - content: "Microsoft Purview Information Protection"
       isCorrect: false
       explanation: "Incorrect. Microsoft Purview Information Protection is not considered as part of the Microsoft 365 Defender suite of products."
-    - content: "Azure Active Directory"
+    - content: "Microsoft Entra ID"
       isCorrect: false
       explanation: "Incorrect.  Azure Activate Directory is not considered as part of the Microsoft 365 Defender suite of products."
   - content: "Which table (Data type) does the Microsoft 365 Defender connector write to?"

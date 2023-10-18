@@ -12,7 +12,7 @@ In this module, you learn how to:
 
 - Create role assignments.
 
-- Identify differences between Azure RBAC and Azure Active Directory (Azure AD) roles.
+- Identify differences between Azure RBAC and Microsoft Entra roles.
 
 - Manage access to subscriptions with RBAC.
 

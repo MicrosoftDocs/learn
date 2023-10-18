@@ -1,8 +1,8 @@
 ## Enable user risk policy
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using a Global administrator account.
-1. Open the portal menu and then select **Azure Active Directory**.
-1. On the Azure Active Directory blade, under **Manage**, select **Security**.
+1. Open the portal menu and then select **Microsoft Entra ID**.
+1. On the Microsoft Entra blade, under **Manage**, select **Security**.
 1. On the Security blade, in the left navigation, select **Identity protection**.
 1. In the Identity protection blade, in the left navigation, select User risk policy.
     

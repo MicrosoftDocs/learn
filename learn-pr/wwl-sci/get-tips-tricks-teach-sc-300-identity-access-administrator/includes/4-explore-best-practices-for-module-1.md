@@ -1,7 +1,7 @@
 
 
 
-SC-300: Module 1 Explore identity in Azure AD
+SC-300: Module 1 Explore identity in Microsoft Entra ID
 
 Module 1 Overview
 

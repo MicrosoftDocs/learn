@@ -7,8 +7,8 @@ metadata:
   ms.date: 09/27/2023
   author: jenniferf-skc
   ms.author: jfields
-  ms.topic: interactive-tutorial
-  ms.prod: learn-entra-permissions-management
+  ms.topic: module-standard-task-based
+  ms.service: multicloud-permissions-management
 durationInMinutes: 6
 content: |
   [!include[](includes/9-act-on-your-findings-with-remediation-tab.md)]

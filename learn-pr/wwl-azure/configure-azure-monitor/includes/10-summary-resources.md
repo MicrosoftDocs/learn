@@ -33,6 +33,6 @@ In this module, you identified the features and usage cases for Azure Monitor. Y
 
 - Monitor [performance of virtual machines by using Azure Monitor for Virtual Machines (sandbox)](/training/modules/monitor-performance-using-azure-monitor-for-vms/).
 
-- Monitor and report on [security events in Azure Active Directory](/training/modules/monitor-report-aad-security-events/). _Azure subscription required_.
+- Monitor and report on [security events in Microsoft Entra ID](/training/modules/monitor-report-aad-security-events/). _Azure subscription required_.
 
 - Monitor, diagnose, and troubleshoot [your Azure Storage](/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/). _Azure subscription required_.
