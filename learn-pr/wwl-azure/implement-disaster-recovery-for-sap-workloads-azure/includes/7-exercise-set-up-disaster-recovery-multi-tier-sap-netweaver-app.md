@@ -67,7 +67,7 @@ For Site Recovery to work as expected, you need to allow outbound network connec
 :::row-end:::
 :::row:::
   :::column:::
-    Azure Active Directory
+    Microsoft Entra ID
   :::column-end:::
   :::column:::
     `login.microsoftonline.com`
@@ -133,7 +133,7 @@ Azure Site Recovery provides three built-in RBAC roles to control Site Recovery 
 1. In **Recovery Services vaults**, select the vault name &gt; **+Replicate**.
 2. In **Source**, select **Azure**.
 3. In **Source location**, select the source Azure region where your VMs are currently running.
-4. Select the **Source subscription** where the virtual machines are running. This can be any subscription within the same Azure Active Directory tenant where your recovery services vault exists.
+4. Select the **Source subscription** where the virtual machines are running. This can be any subscription within the same Microsoft Entra tenant where your recovery services vault exists.
 5. Select the **Source resource group**, and select **OK** to save the settings.
 
 #### Select the VMs
@@ -164,7 +164,7 @@ Site Recovery creates default settings and replication policy for the target reg
         **Target subscription**
       :::column-end:::
       :::column:::
-        By default, the target subscription is the same as the source subscription. Select **Customize** to select a different target subscription within the same Azure Active Directory tenant.
+        By default, the target subscription is the same as the source subscription. Select **Customize** to select a different target subscription within the same Microsoft Entra tenant.
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -312,7 +312,7 @@ If the source VM has Azure disk encryption (ADE) enabled, review the settings.
 2. Select **Customize** to select custom key vaults.
 
 > [!NOTE]
-> Only Azure VMs running Windows operating systems and enabled for encryption with Azure AD app are currently supported by Azure Site Recovery.
+> Only Azure VMs running Windows operating systems and enabled for encryption with Microsoft Entra app are currently supported by Azure Site Recovery.
 
 ### Track replication status
 
