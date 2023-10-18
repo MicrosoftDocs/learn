@@ -89,7 +89,7 @@ To retrieve the password:
 1. Select the SAP password file name to open the secret's page.
 1. Copy the **Secret value**.
 
-If you get the warning **The operation 'List' is not enabled in this key vault's access policy**. with the message **You are unauthorized to view these contents**., follow these steps:
+If you get the warning **The operation 'List' is not enabled in this key vault's access policy**. with the message **You are unauthorized to view these contents**, follow these steps:
 
 1. Make sure that you're responsible to manage these secrets in your organization.
 1. In the sidebar menu, under **Settings**, select **Access policies**.
