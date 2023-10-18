@@ -2,7 +2,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 ## Get the database connection string
 
-1. Paste the following code into Azure Cloud Shell on the right, and press <kbd>Enter</kbd>.
+1. Paste the following code into Azure Cloud Shell on the right and press <kbd>Enter</kbd>.
 
    ```bash
    cd mslearn-build-api-azure-functions/DB_SETUP && ./GET_CONNECTION_STRING.sh
@@ -31,7 +31,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 Open the `api/services/productsService.ts` file.
 
-Look at line 3. Notice that the connection string is read from the `process.env` variable.
+Look at line 4. Notice that the connection string is read from the `process.env` variable.
 
   ```typescript
   const CONNECTION_STRING = process.env.CONNECTION_STRING;

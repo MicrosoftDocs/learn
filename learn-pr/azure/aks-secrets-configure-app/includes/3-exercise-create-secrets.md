@@ -13,48 +13,52 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
 
 -->
 
-## Before we start
+## Create a resource group and AKS cluster
 
 [!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
 
-Before creating a new cluster, run the following commands to create a resource group. Update the LOCATION variable with the region closest to you; for example, `eastus`:
+1. Create environment variables for your resource group, cluster, and location. Make sure you update the LOCATION variable with the region closest to you, for example, `eastus`.
 
-```azurecli-interactive
-export RESOURCE_GROUP=rg-ship-manager
-export CLUSTER_NAME=ship-manager-cluster
-export LOCATION={location}
-az group create --location $LOCATION --name $RESOURCE_GROUP
-```
+    ```azurecli-interactive
+    export RESOURCE_GROUP=rg-ship-manager
+    export CLUSTER_NAME=ship-manager-cluster
+    export LOCATION={location}
+    ```
 
-Then, create your AKS cluster by running the following command in a Cloud Shell environment:
+    > [!IMPORTANT]
+    > Make a note of the `RESOURCE_GROUP` and `CLUSTER_NAME` variables for later use.
 
-```azurecli-interactive
-az aks create \
- -g $RESOURCE_GROUP \
- -n $CLUSTER_NAME \
- --location $LOCATION \
- --node-count 1 \
- --node-vm-size Standard_B2s \
- --generate-ssh-keys \
- --enable-addons http_application_routing
-```
+2. Create a resource group using the `az group create` command.
 
-After your cluster is created, get the administration config:
+    ```azurecli-interactive
+    az group create --location $LOCATION --name $RESOURCE_GROUP
+    ```
 
-```azurecli-interactive
-az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
-```
+3. Create an AKS cluster using the `az aks create` command.
 
-The complete cluster creation can take up to five minutes.
+    ```azurecli-interactive
+    az aks create \
+     -g $RESOURCE_GROUP \
+     -n $CLUSTER_NAME \
+     --location $LOCATION \
+     --node-count 1 \
+     --node-vm-size Standard_B2s \
+     --generate-ssh-keys \
+     --enable-addons http_application_routing
+    ```
 
-> [!IMPORTANT]
-> Make a note of the `RESOURCE_GROUP` and `CLUSTER_NAME` variables for later use.
+4. After your cluster is created, get the credentials for the cluster using the `az aks get-credentials` command.
 
-## Create the Secret
+    ```azurecli-interactive
+    az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
+    ```
 
-According to the [application documentation](https://github.com/Azure-Samples/aks-contoso-ships-sample/tree/main/kubernetes), there are two parts of this application: the front end, and the back end. Only the back end will need to use a Secret, because it has the MongoDB connection string as an environment variable.
+## Create a Secret
 
-1. The first step is to deploy a MongoDB database to support this application by using Cosmos DB:
+> [!NOTE]
+> In the [application documentation](https://github.com/Azure-Samples/aks-contoso-ships-sample/tree/main/kubernetes), you can see this application has two parts: the front end and the back end. Only the back end needs to use a Secret, because it has the MongoDB connection string as an environment variable.
+
+1. Deploy a MongoDB database to support the application using the `az cosmosdb create` command.
 
     ```azurecli-interactive
     export DATABASE_NAME=contoso-ship-manager-$RANDOM && \
@@ -64,7 +68,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
      --kind MongoDB
     ```
 
-    The database creation can take up to three minutes. Once the database is created, fetch the connection string:
+2. Once the database is created, get the connection string using the `az cosmosdb keys list` command and copy the output value.
 
     ```azurecli-interactive
     az cosmosdb keys list \
@@ -75,21 +79,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
       --query "connectionStrings[0].connectionString"
     ```
 
-    Copy the output value.
-
-1. Create a new file called `backend-secret.yaml`.
-
-    ```bash
-    touch backend-secret.yaml
-    ```
-
-1. Enter the following command to open the file in the editor.
-
-    ```bash
-    code backend-secret.yaml
-    ```
-
-1. Add the following code to this file to create the Secret spec. Be sure to replace the placeholder string with the connection string.
+3. Create a new YAML file named `backend-secret.yaml` and paste in the following code to create the Secret spec. Make sure to replace the placeholder string with the connection string from the previous output.
 
     ```yaml
     apiVersion: v1
@@ -102,21 +92,20 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
       database_mongodb_uri: "<paste the connection string here>"
     ```
 
-1. Save and close the file.
-
-1. Apply the secret by running the `kubectl apply` command:
+4. Save and close the file.
+5. Apply the secret using the `kubectl apply` command.
 
     ```azurecli-interactive
     kubectl apply -f backend-secret.yaml
     ```
 
-1. Check the result of your work by querying the secret:
+6. Check the result by querying for the secret using the `kubectl get secret` command.
 
     ```azurecli-interactive
     kubectl get secret ship-manager-database
     ```
 
-    You should get an output similar to:
+    You should get an output similar to the following:
 
     ```output
     NAME                    TYPE     DATA   AGE
@@ -125,9 +114,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
 
 ## Create the application
 
-Let's create the application and apply the secret to this application.
-
-1. Get the DNS zone that has been made available with the HTTP application routing add-on:
+1. Get the DNS zone that has been made available with the HTTP application routing add-on using the `az aks show` command and save the output value for later use.
 
     ```azurecli-interactive
     az aks show \
@@ -137,17 +124,8 @@ Let's create the application and apply the secret to this application.
       --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
     ```
 
-    Copy the output value for later use.
-
-1. Create a new file called `backend-application.yaml` and open it in the editor.
-
-    ```bash
-    touch backend-application.yaml
-    code backend-application.yaml
-    ```
-
-1. Create the Deployment specification by adding the following code to the file:
-
+2. Create a new YAML file named `backend-application.yaml` and paste in the following code to create the Deployment spec.
+  
     ```yaml
     apiVersion: apps/v1
     kind: Deployment
@@ -180,9 +158,9 @@ Let's create the application and apply the secret to this application.
                   value: ship_manager
     ```
 
-    Notice that we're using the `valueFrom` and then `secretKeyRef` keys in the `env` section. The order of these keys is telling the deployment that we'll use the value from the `key` present in the Secret defined in the `name` key.
+    Notice that in the `env` section, we use the `valueFrom` and the `secretKeyRef` keys. The order of these keys tells the deployment to use the value from the `key` present in the Secret defined in the `name` key.
 
-1. Add three dashes below the last line to separate the Deployment from the Service you're about to create.
+3. Add three dashes below the last line in the `backend-application.yaml` file to separate the next section.
 
     ```yaml
     # Previous lines from the deployment
@@ -203,7 +181,7 @@ Let's create the application and apply the secret to this application.
     ---
     ```
 
-1. Let's add the Ingress so that we can access the application. Below the last three dashes, add the following code:
+4. Below the three dashes, paste in the following code to create the Ingress spec.
 
     ```yaml
     apiVersion: networking.k8s.io/v1
@@ -227,13 +205,10 @@ Let's create the application and apply the secret to this application.
                       name: http
     ```
 
+5. Change the DNS zone in the `host:` to match the DNS you copied earlier.
+6. Save and close the file.
+7. Apply the changes to your cluster using the `kubectl apply` command.
 
-1. Change the DNS zone in the `host:` to match the DNS you copied earlier. Save and close the file.
-
-1. Apply the changes by running the following command:
-
-    ```bash
+    ```azurecli-interactive
     kubectl apply -f backend-application.yaml
     ```
-
-   The changes can take up to five minutes to propagate.

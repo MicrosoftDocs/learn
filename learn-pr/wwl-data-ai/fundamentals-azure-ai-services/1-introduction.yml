@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-azure-ai-services.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 10/05/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-services
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

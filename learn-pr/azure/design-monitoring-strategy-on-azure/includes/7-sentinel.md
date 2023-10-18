@@ -16,7 +16,7 @@ You can create a Microsoft Sentinel resource in the Azure portal. The process fo
 
 ![SCreenshot of create a workspace.](../media/7-sentinel-01.png)
 
-When you've created a Sentinel resource, you need to connect data sources for your enterprise. Sentinel integrates with Microsoft solutions, including Azure Active Directory and Office 365, through connectors. It also comes with connectors for non-Microsoft solutions. Sentinel also has a REST API that allows you to connect to other data sources.
+When you've created a Sentinel resource, you need to connect data sources for your enterprise. Sentinel integrates with Microsoft solutions, including Microsoft Entra ID and Office 365, through connectors. It also comes with connectors for non-Microsoft solutions. Sentinel also has a REST API that allows you to connect to other data sources.
 
 Use the Sentinel dashboard to view all of your data connectors.  
 
@@ -26,7 +26,7 @@ Choose the appropriate data connector for your data source. Next, look at the pr
 
 ![SCreenshot of data received.](../media/7-sentinel-03.png)
 
-When you connect the data source, your logs will be synced to Sentinel. You'll get a summary of the data that has been collected in the **DATA RECEIVED** graph for your connector. You'll also get the different data types that have been collected for the source. For example, the Azure Active Directory connector collects sign-in logs and audit logs for you.
+When you connect the data source, your logs will be synced to Sentinel. You'll get a summary of the data that has been collected in the **DATA RECEIVED** graph for your connector. You'll also get the different data types that have been collected for the source. For example, the Microsoft Entra connector collects sign-in logs and audit logs for you.
 
 ## Use alerts to monitor your enterprise
 

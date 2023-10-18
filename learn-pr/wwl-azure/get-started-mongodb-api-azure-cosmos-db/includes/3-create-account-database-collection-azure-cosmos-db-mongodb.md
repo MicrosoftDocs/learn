@@ -1,3 +1,4 @@
+
 Azure Cosmos DB is a fully managed platform-as-a-service (PaaS). To use this service, we'll need to first create an Azure Cosmos DB account under our subscription. Once our account has been created, we can then add database, collections and documents within it.
 
 > [!div class="mx-imgBorder"]
@@ -279,10 +280,10 @@ To create or access an existing collection, we'll use a get collection method or
 
   ```csharp
       // Add code to connect to a collection and add an entry here 
-      var mongoCollection = mongoDatabase.GetCollection<Products>("products");
+      var ProductCollection = ProductDatabase.GetCollection<Products>("products");
 
       Products Product = new Products {ProductId=1,name="bread"};
-      mongoCollection.InsertOne (Product);
+      ProductCollection.InsertOne (Product);
   ```
 
 ::: zone-end
