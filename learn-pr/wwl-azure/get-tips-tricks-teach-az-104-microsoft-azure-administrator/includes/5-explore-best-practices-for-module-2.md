@@ -18,6 +18,6 @@ This module consists of three lessons:
 
   - Consider completing the demonstrations of both Azure Policy and RBAC 
 
-- Emphasize the difference between RBAC roles and Azure AD roles 
+- Emphasize the difference between RBAC roles and Microsoft Entra roles 
 
    - Consider presenting the labs as demonstrations  

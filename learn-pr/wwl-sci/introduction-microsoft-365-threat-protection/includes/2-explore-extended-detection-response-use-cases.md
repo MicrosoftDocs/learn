@@ -19,8 +19,8 @@ MDE also remediates this threat across your enterprise and across our Microsoft 
   
 ### Share Intelligence and Restore Access  
   
-Restore Access – Once the infected devices have been remediated, MDE signals Intune to change the device risk status and Entra ID Conditional Access then allows access to enterprise resources (more on the next slide). 
-Remediate Threat Variants in MDO and others – The threat signals in Microsoft Threat intelligence are used by Microsoft tools securing other parts of your organization’s attack surface. MDO and Microsoft Defender for Cloud use the signals to detect and remediate threats in email, office collaboration, Azure, and more.
+Restore Access – Once the infected devices have been remediated, MDE signals Intune to change the device risk status and Azure AD Conditional Access then allows access to enterprise resources (more on the next slide). 
+Remediate Threat Variants in MDO and others – The threat signals in Microsoft Threat intelligence are used by Microsoft tools securing other parts of your organization’s attack surface. MDO and Microsoft Defender for Cloud use the signals to detect and remediate threats in email, office collaboration, Azure, and more. 
 
 
 ## from the previous graphic when the user’s device was still compromised
@@ -29,13 +29,13 @@ Remediate Threat Variants in MDO and others – The threat signals in Microsoft 
 
 ### Access Restricted  
   
-Conditional Access knows about device risk because Microsoft Defender for Endpoint (MDE) notified Intune, which then updated the compliance status of the device in Entra ID.
+Conditional Access knows about device risk because Microsoft Defender for Endpoint (MDE) notified Intune, which then updated the compliance status of the device in Azure AD.   
   
 During this time, the user is restricted from accessing corporate resources. This applies to all new resource requests and blocks any current access to resources that support continuous access evaluation (CAE). People will still be able to do general internet productivity tasks, like research YouTube, Wikipedia, and anything else that doesn’t require corporate authentication, but won’t have access to corporate resources.
   
 ### Access Restored  
   
-Once the threat has been remediated and cleaned up, MDE triggers Intune to update Entra ID, and Conditional Access restores the user’s access to corporate resources.
+Once the threat has been remediated and cleaned up, MDE triggers Intune to update Azure AD, and Conditional Access restores the user’s access to corporate resources.
   
 This mitigates risk to the organization by ensuring attackers who may be in control of these devices can't access corporate resources, while minimizing the impact on user productivity to minimize disruption of business processes.  
   

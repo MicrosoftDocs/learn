@@ -24,7 +24,7 @@ You can configure inbound connectivity by configuring Destination Network Addres
 
 Azure Storage provides a layered security model, which enables you to secure your storage accounts to a specific set of supported networks. When network rules are configured, only applications requesting data from over the specified set of networks can access a storage account.
 
-An application that accesses a storage account when network rules are in effect requires proper authorization on the request. Authorization is supported with Azure AD credentials for blobs and queues, a valid account access key, or a SAS token.
+An application that accesses a storage account when network rules are in effect requires proper authorization on the request. Authorization is supported with Microsoft Entra credentials for blobs and queues, a valid account access key, or a SAS token.
 
 By default, storage accounts accept connections from clients on any network. To limit access to selected networks, you must first change the default action. Making changes to network rules can impact your applications' ability to connect to Azure Storage. Setting the default network rule to Deny blocks all access to the data unless specific network rules that grant access are also applied. Be sure to grant access to any allowed networks using network rules before you change the default rule to deny access.
 
