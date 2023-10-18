@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-maintain-azure-active-directory.analyze-azure-ad-workbooks-reporting
-title: Analyze Azure Active Directory workbooks and reporting
+title: Analyze Microsoft Entra workbooks and reporting
 metadata:
-  title: Analyze Azure Active Directory workbooks and reporting
-  description: "Analyze Azure Active Directory workbooks and reporting"
+  title: Analyze Microsoft Entra workbooks and reporting
+  description: "Analyze Microsoft Entra workbooks and reporting"
   ms.date: 02/16/2023
   author: wwlpublish
   ms.author: roberts

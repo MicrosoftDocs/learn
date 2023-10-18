@@ -7,7 +7,7 @@ Following the Secure Score recommendations can protect your organization from th
 Currently there are recommendations for the following products:
 
 -   Microsoft 365 (including Exchange Online)
--   Azure Active Directory
+-   Microsoft Entra ID
 -   Microsoft Defender for Endpoint
 -   Microsoft Defender for Identity
 -   Microsoft Defender for Cloud Apps
@@ -27,7 +27,7 @@ Some recommended actions only give points when fully completed. Some give partia
 
 To help you find the information you need more quickly, Microsoft recommended actions are organized into groups:
 
--   Identity (Azure Active Directory accounts & roles)
+-   Identity (Microsoft Entra accounts & roles)
 -   Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](https://learn.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 -   Apps (email and cloud apps, including Office 365 and Microsoft Defender for Cloud Apps)
 -   Data (through Microsoft Information Protection)

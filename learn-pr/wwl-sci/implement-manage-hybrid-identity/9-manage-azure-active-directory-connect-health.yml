@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-manage-hybrid-identity.manage-azure-active-directory-connect-health
-title: Manage Azure Active Directory Connect Health
+title: Manage Microsoft Entra Connect Health
 metadata:
-  title: Manage Azure Active Directory Connect Health
-  description: "Manage Azure Active Directory Connect Health"
+  title: Manage Microsoft Entra Connect Health
+  description: "Manage Microsoft Entra Connect Health"
   ms.date: 06/21/2023
   author: wwlpublish
   ms.author: roberts

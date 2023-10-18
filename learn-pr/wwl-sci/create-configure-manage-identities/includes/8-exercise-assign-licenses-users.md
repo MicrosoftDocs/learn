@@ -1,8 +1,10 @@
-## Create a new user in Azure Active Directory
+<a name='create-a-new-user-in-azure-active-directory'></a>
+
+## Create a new user in Microsoft Entra ID
 
 You can skip creating this user if you have already created the same user in the earlier module.
 
-1.  Browse to the Azure Active Directory page in the [Azure portal](https://portal.azure.com/).
+1.  Browse to the Microsoft Entra ID page in the [Azure portal](https://portal.azure.com/).
 2.  In the left navigation, under **Manage**, select **Users**.
 3.  Within the Users page, on the menu, select **New user**.
 4.  Create a user using the following information:
@@ -17,9 +19,11 @@ You can skip creating this user if you have already created the same user in the
     |             |                           |
 5.  When complete, verify the account for Chris Green is shown in the **All users** list.
 
-## Create a security group in Azure Active Directory
+<a name='create-a-security-group-in-azure-active-directory'></a>
 
-1.  Browse to the [Azure Active Directory](https://portal.azure.com/) screen.
+## Create a security group in Microsoft Entra ID
+
+1.  Browse to the [Microsoft Entra ID](https://portal.azure.com/) screen.
 2.  In the left navigation, under **Manage**, select **Groups**.
 3.  In the Groups screen, on the menu, select **New group**.
 4.  Create a group using the following information:
@@ -32,7 +36,7 @@ You can skip creating this user if you have already created the same user in the
     | Owners          | Assign your own administrator account as the group owner |
     | Members         | Chris Green                                              |
     
-    :::image type="content" source="../media/create-group-7be1cd36-52e77c53.png" alt-text="Screenshot of the new group creation page in Azure A D. The New Group page has the Group type, Group name, Owners, and Members highlighted. Chris Green is being added to the group as it is being created.":::
+    :::image type="content" source="../media/create-group-7be1cd36-52e77c53.png" alt-text="Screenshot of the new group creation page in Microsoft Entra ID. The New Group page has the Group type, Group name, Owners, and Members highlighted. Chris Green is being added to the group as it is being created.":::
     
 5.  When complete, verify the group named **Marketing** is shown in the **All groups** list.
 
@@ -51,11 +55,13 @@ You can skip creating this user if you have already created the same user in the
     
 6.  Select **Save**.
 
-## Restore or remove a recently deleted user with Azure Active Directory
+<a name='restore-or-remove-a-recently-deleted-user-with-azure-active-directory'></a>
+
+## Restore or remove a recently deleted user with Microsoft Entra ID
 
 After you delete a user, the account remains in a suspended state for 30 days. During that 30-day window, the user account can be restored, along with all its properties. After that 30-day window passes, the permanent deletion process is automatically started.
 
-You can view your restorable users, restore a deleted user, or permanently delete a user using Azure Active Directory (Azure AD) in the Azure portal.
+You can view your restorable users, restore a deleted user, or permanently delete a user using Microsoft Entra ID in the Azure portal.
 
 > [!IMPORTANT]
 > Neither you nor Microsoft customer support can restore a permanently deleted user.
