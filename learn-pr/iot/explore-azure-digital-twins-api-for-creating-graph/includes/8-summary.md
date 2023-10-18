@@ -6,5 +6,5 @@
 ## Clean up hands-on resources
 In your Cloud Shell, run the following command to delete the resources that you created in the hands-on exercises for this module.
 ```azurecli
-az group delete --name introduction-to-azure-digital-twins
+az group delete --name azure-digital-twins-training
 ```

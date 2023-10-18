@@ -17,30 +17,34 @@ quiz:
   title: Check your knowledge
   questions:
   
-  - content: "Question about the requirements for Postman to work properly"
+  - content: "True or false: You can use the same bearer token for Azure Digital Twins control plane and data plane API requests."
     choices:
-    - content: "Answer A"
+    - content: "True"
+      isCorrect: false
+      explanation: "That's incorrect. Control plane APIs and data plane APIs each require their own bearer token, granted from a different Azure resource endpoint."
+
+    - content: "False"
       isCorrect: true
-      explanation: "Explanation A"
+      explanation: "That's correct.  Control plane APIs and data plane APIs each require their own bearer token, granted from a different Azure resource endpoint."
 
-    - content: "Answer B"
-      isCorrect: false
-      explanation: "Explanation B"
-
-    - content: "Answer C"
-      isCorrect: false
-      explanation: "Explanation C"
-
-  - content: "Question about the APIs available for Azure Digital Twins"
+  - content: "Which of the following is NOT an API category for Azure Digital Twins?"
     choices:
-    - content: "Answer A"
+    - content: "models"
+      isCorrect: false
+      explanation: "Models is one of the API categories. It contains operations like upload, validation, retrieval, and deletion of models."
+
+    - content: "digitaltwins"
+      isCorrect: false
+      explanation: "Digitaltwins is one of the API categories. It contains operations like creating, modifying, and deleting digital twins and their relationships."
+
+    - content: "graph"
       isCorrect: true
-      explanation: "Explanation A"
+      explanation: "Graph is NOT one of the API categories. The digital twin graph, including twins and their relationships, is managed with the Digitaltwins APIs. "
 
-    - content: "Answer B"
+    - content: "query"
       isCorrect: false
-      explanation: "Explanation B"
+      explanation: "Query is one of the API categories. You can use it to find sets of digital twins in the twin graph by their properties, models, or relationships. "
 
-    - content: "Answer C"
+    - content: "jobs"
       isCorrect: false
-      explanation: "Explanation C"
+      explanation: "Jobs is one of the API categories. It's for managing long-running, asynchronous actions such as bulk import of models, twins, and relationships."
