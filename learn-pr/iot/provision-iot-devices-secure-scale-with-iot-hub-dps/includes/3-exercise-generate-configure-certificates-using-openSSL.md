@@ -62,7 +62,7 @@ Figure out the cleanest way to have someone carry their own variables around
 1. In the Azure sandbox, upload your CA certificate to your Device Provisioning Service instance.
 
    ```azurecli
-   az iot dps certificate create --dps-name dps-$suffix --certificate-name groupCA-sensors --path ~/certificates/certs/azure-iot-test-only.root.ca.cert.pem
+   az iot dps certificate create --dps-name dps-$suffix --certificate-name groupCA-sensors --path ~/certificates/certs/azure-iot-test-only.root.ca.cert.pem --verified true
    ```
 
 2. Create an enrollment group in your DPS instance. This command creates an enrollment group with the following parameters:
@@ -74,5 +74,5 @@ Figure out the cleanest way to have someone carry their own variables around
    | `--initial-twin-properties` | Sets a desired property that all devices in this enrollment group will receive once they're provisioned. The devices will use the **properties.desired.telemetryDelay** property to set the time delay for reading and sending telemetry to IoT Hub. |
 
    ```azurecli
-   az iot dps enrollment-group create --dps-name dps-$suffix --enrollment-id enrollgroup-sensors --root-ca-name groupCA-sensors --iot-hubs hub-$suffix --initial-twin-properties "{'telemetryDelay':'1'}"
+   az iot dps enrollment-group create --dps-name dps-$suffix --enrollment-id enrollgroup-sensors --root-ca-name groupCA-sensors --iot-hubs hub-$suffix.azure-devices.net --initial-twin-properties "{'telemetryDelay':'1'}" --allocation-policy static
    ```

@@ -43,7 +43,7 @@ In this exercise, you generate a device certificate using the root certificate, 
    ```
 
    > [!NOTE]
-   > Watch for a browser prompt asking you to save the file. Click the **Click here to download your file.** message when prompted. The file will be downloaded to your computer's Download folder.
+   > Watch for a browser prompt asking you to save the file. Click the **Click here to download your file.** or **Download file** message when prompted. The file will be downloaded to your computer's Download folder.
 
 1. To download the second generated X.509 device certificate from the Cloud Shell to your local machine, enter the following command:
 
@@ -52,7 +52,7 @@ In this exercise, you generate a device certificate using the root certificate, 
    ```
 
    > [!NOTE]
-   > Watch for a browser prompt asking you to save the file. Click the **Click here to download your file.** message when prompted. The file will be downloaded to your computer's Download folder.
+   > Watch for a browser prompt asking you to save the file. Click the **Click here to download your file.** or **Download file** message when prompted. The file will be downloaded to your computer's Download folder.
 
 In the next task, you start building the simulated devices that use the X.509 device certificates to authenticate with the Device Provisioning Service.
 
@@ -349,7 +349,7 @@ In this task, you complete the following:
     ```
 
     > [!NOTE]
-    > If you don't have the DPS ID Scope value, you can get a copy from from the Overview pane of the Device Provisioning Service in the Azure portal or by running the cli command `az iot dps show --name dps-$suffix`.
+    > If you don't have the DPS ID Scope (idScope) value, you can get a copy from from the Overview pane of the Device Provisioning Service in the Azure portal or by running the cli command `az iot dps show --name dps-$suffix`.
 
 1. Locate the **certificateFileName** variable, and notice that its value is set to the name of the device certificate file that you generated (**sensor-thl-001-device.cert.pfx**). If you named the certificate file something else, update the variable value to match.
 
