@@ -29,7 +29,7 @@ Subscriptions serve as boundaries for Azure Policy assignments.
          -  Establish a dedicated identity subscription in your platform management group to host Windows Server Active Directory domain controllers when needed.
          -  Establish a dedicated connectivity subscription in your platform management group to host an **Azure Virtual WAN hub**, **private Domain Name System (DNS)**, **ExpressRoute circuit**, and other networking resources. A dedicated subscription ensures that all your foundation network resources are billed together and isolated from other workloads.
          -  Use subscriptions as a democratized unit of management aligned with your business needs and priorities.
- -  Use manual processes to limit Azure AD tenants to only Enterprise Agreement enrollment subscriptions. Using a manual process prevents the creation of Microsoft Developer Network subscriptions at the root management group scope.
+ -  Use manual processes to limit Microsoft Entra tenants to only Enterprise Agreement enrollment subscriptions. Using a manual process prevents the creation of Microsoft Developer Network subscriptions at the root management group scope.
     
     
      -  For support, submit an Azure Support ticket.
@@ -46,32 +46,32 @@ Azure regions might have a finite number of resources. As a result, available ca
 
 ### Tenant transfer restriction design considerations
 
-Each Azure subscription is linked to a single Azure AD tenant, which acts as an **identity provider (IdP)** for your Azure subscription. The Azure AD tenant is used to authenticate users, services, and devices.
+Each Azure subscription is linked to a single Microsoft Entra tenant, which acts as an **identity provider (IdP)** for your Azure subscription. The Microsoft Entra tenant is used to authenticate users, services, and devices.
 
-The Azure AD tenant linked to your Azure subscription can be changed by any user with the required permissions.
+The Microsoft Entra tenant linked to your Azure subscription can be changed by any user with the required permissions.
 
 > [!NOTE]
-> Transferring to another Azure AD tenant is not supported for Azure Cloud Solution Provider (CSP) subscriptions.
+> Transferring to another Microsoft Entra tenant is not supported for Azure Cloud Solution Provider (CSP) subscriptions.
 
-With Azure landing zones, you can set requirements to prevent users from transferring subscriptions to your organization's Azure AD tenant. **Review the process in Manage Azure subscription policies**.
+With Azure landing zones, you can set requirements to prevent users from transferring subscriptions to your organization's Microsoft Entra tenant. **Review the process in Manage Azure subscription policies**.
 
 Configure your subscription policy by providing a list of exempted users. Exempted users are permitted to bypass restrictions set in the policy.
 
 > [!IMPORTANT]
 > An exempted users list is not an Azure Policy.
 
- -  Consider whether users with Visual Studio/MSDN Azure subscriptions should be allowed to transfer their subscription to or from your Azure AD tenant.
- -  Tenant transfer settings are only configurable by users with the Azure AD Global Administrator role assigned. These users and must have elevated access to change the policy.
+ -  Consider whether users with Visual Studio/MSDN Azure subscriptions should be allowed to transfer their subscription to or from your Microsoft Entra tenant.
+ -  Tenant transfer settings are only configurable by users with the Microsoft Entra Global Administrator role assigned. These users and must have elevated access to change the policy.
     
     
-     -  You can only specify individual user accounts as exempted users, not Azure AD groups.
- -  All users with access to Azure can view the policy defined for your Azure AD tenant.
+     -  You can only specify individual user accounts as exempted users, not Microsoft Entra groups.
+ -  All users with access to Azure can view the policy defined for your Microsoft Entra tenant.
     
     
      -  Users can't view your exempted users list.
-     -  Users can view the global administrators within your Azure AD tenant.
- -  Azure subscriptions transferred into an Azure AD tenant are placed into the default management group for that tenant.
- -  If approved by your organization, your application team can define a process to allow Azure subscriptions to be transferred to or from an Azure AD tenant.
+     -  Users can view the global administrators within your Microsoft Entra tenant.
+ -  Azure subscriptions transferred into a Microsoft Entra tenant are placed into the default management group for that tenant.
+ -  If approved by your organization, your application team can define a process to allow Azure subscriptions to be transferred to or from a Microsoft Entra tenant.
 
 ### Establish cost management design considerations
 
@@ -90,7 +90,7 @@ Cost transparency is a critical management challenge every large enterprise orga
  -  Make subscription owners aware of their roles and responsibilities.
     
     
-     -  Do a quarterly or yearly access review for Azure AD Privileged Identity Management to ensure that privileges don't proliferate as users move within your organization.
+     -  Do a quarterly or yearly access review for Microsoft Entra Privileged Identity Management to ensure that privileges don't proliferate as users move within your organization.
      -  Take full ownership of budget spending and resources.
      -  Ensure policy compliance and remediate when necessary.
  -  Reference the following principles as you identify requirements for new subscriptions:
@@ -120,11 +120,11 @@ Cost transparency is a critical management challenge every large enterprise orga
 
 ### Tenant transfer restriction recommendations
 
- -  Configure the following settings to prevent users from transferring Azure subscriptions to or from your Azure AD tenant:
+ -  Configure the following settings to prevent users from transferring Azure subscriptions to or from your Microsoft Entra tenant:
     
     
-     -  Set Subscription leaving Azure AD directory to Permit no one.
-     -  Set Subscription entering Azure AD directory to Permit no one.
+     -  Set Subscription leaving Microsoft Entra directory to Permit no one.
+     -  Set Subscription entering Microsoft Entra directory to Permit no one.
  -  Configure a limited list of exempted users.
     
     
