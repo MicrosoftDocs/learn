@@ -7,14 +7,15 @@ metadata:
   ms.date: 09/27/2023
   author: jenniferf-skc
   ms.author: jfields
-  ms.topic: interactive-tutorial
-  ms.service: active-directory
+  ms.topic: module-standard-task-based
+  ms.service: multicloud-permissions-management
   ms.subservice: ciem
 title: Explore the many features of Permissions Management
-summary: While exploring more about the features of Permissions Management, we'll use this framework of discover, remediate, monitor as a guide to help walkthrough how the Permissions Management features set can benefit your organization.
+summary: While diving deeper into the features of Microsoft Entra Permissions Management, we'll use the framework of discover, remediate, monitor as a guide to help walkthrough how the Permissions Management features set can benefit your organization.
+
 abstract: |
   By the end of this module, you'll be able to:
-  - Explore the features of Microsoft Entra Permissions Management
+  - Understand the features of Microsoft Entra Permissions Management
   - Learn more specifics about how Permissions Management allows you to discover, remediate, and monitor identities, permissions, and resources 
   - Get real-world views of the data and analytics Permissions Management provides
 
