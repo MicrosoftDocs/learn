@@ -3,7 +3,7 @@ The probability that you're blocked from getting your work done due to a forgott
 :::image type="content" source="../media/az500-password-hash-sync-0bca2d04.png" alt-text="Users and devices are shown connecting to the on-premises AD, Microsoft Entra ID, Microsoft 365, and SaaS Apps. Password1 is being used to connect.":::
 
 
-**Password hash synchronization** (PHS) is a feature used to synchronize user passwords from an on-premises Active Directory instance to a cloud-based Microsoft Entra instance. Use this feature to sign in to Microsoft Entra services like Microsoft 365, Microsoft Intune, CRM Online, and Microsoft Entra Domain Services (Microsoft Entra Domain Services). You sign in to the service by using the same password you use to sign in to your on-premises Active Directory instance. Password hash synchronization helps you to:
+**Password hash synchronization** (PHS) is a feature used to synchronize user passwords from an on-premises Active Directory instance to a cloud-based Microsoft Entra instance. Use this feature to sign in to Microsoft Entra services like Microsoft 365, Microsoft Intune, CRM Online, and Microsoft Entra Domain Services. You sign in to the service by using the same password you use to sign in to your on-premises Active Directory instance. Password hash synchronization helps you to:
 
  -  Improve the productivity of your users.
  -  Reduce your helpdesk costs.
