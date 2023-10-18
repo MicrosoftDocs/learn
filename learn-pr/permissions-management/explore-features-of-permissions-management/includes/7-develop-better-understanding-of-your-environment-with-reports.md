@@ -10,7 +10,7 @@ In addition to providing you with insights to perform both high-level and in-dep
 - Role/Policy Details Report 
 - User Entitlements and Usage Report 
 
-:::image type="content" source="../media/permissions-management-system-reports.png" alt-text="Screenshot of the Permissions Management System Reports list view."lightbox="../media/permissions-management-system-reports.png":::
+:::image type="content" source="../media/system-reports.png" alt-text="Screenshot of the Permissions Management System Reports list view."lightbox="../media/system-reports.png":::
 
 If you find you’re still looking for certain information not found in these reports, Permissions Management gives you the ability to create custom reports. You can customize reports based on the specific information you want, and you can schedule the reports to be emailed to you on a daily, weekly, or monthly basis. 
 

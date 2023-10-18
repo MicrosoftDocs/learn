@@ -48,8 +48,9 @@ With the resource group in place, you can now create the AKS cluster. Your first
     ```azurecli
     VERSION=$(az aks get-versions \
         --location $REGION_NAME \
-        --query 'orchestrators[?!isPreview] | [-1].orchestratorVersion' \
+        --query "values[?isPreview==null].version | [-1]" \
         --output tsv)
+    echo $VERSION
     ```
 
 1. Run the `az aks create` command shown later in this step to create the AKS cluster. The cluster will run the latest Kubernetes version with two nodes in the system node pool. This command can take a few minutes to finish.

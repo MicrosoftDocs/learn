@@ -6,9 +6,9 @@ There are three types of permissions that can be granted in Permissions Manageme
 - **Controller** – Gives access to perform controller actions within the product, such as performing remediation tasks.
 - **Approver** – Gives access to approve Permission On-Demand requests.
 
-:::image type="content" source="../media/permissions-management-group-permissions-setup.png" alt-text="Screenshot of the Permissions Management set up group permissions."lightbox="../media/permissions-management-group-permissions-setup.png":::
+:::image type="content" source="../media/group-permissions-setup.png" alt-text="Screenshot of the Permissions Management set up group permissions."lightbox="../media/group-permissions-setup.png":::
 
-:::image type="content" source="../media/permissions-management-group-permissions-custom-selection.png" alt-text="Screenshot of the Permissions Management create custom group permissions."lightbox="../media/permissions-management-group-permissions-custom-selection.png":::
+:::image type="content" source="../media/group-permissions-custom-selection.png" alt-text="Screenshot of the Permissions Management create custom group permissions."lightbox="../media/group-permissions-custom-selection.png":::
 
 After specifying the Microsoft Entra ID Security Group that you want to assign permissions to, you have three different options for determining the level of permissions that users within that security group should be granted:
 
