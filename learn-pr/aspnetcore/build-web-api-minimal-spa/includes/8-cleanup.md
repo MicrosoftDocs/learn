@@ -9,8 +9,6 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
 1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
 
-1. Locate your currently running codespaces sourced from the [`azure-samples/minimal-api-work-with-databases`](https://github.com/azure-samples/minimal-api-work-with-databases) GitHub repository.
-
     :::image type="content" source="../media/codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
 
 1. Open the context menu for the codespace and select **Delete**.

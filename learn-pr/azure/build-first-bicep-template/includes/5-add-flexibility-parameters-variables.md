@@ -1,6 +1,6 @@
 Templates are powerful because of their reusability. You can use Bicep to write templates that deploy multiple environments or copies of your resources.
 
-Your toy company will launch new products regularly, and you need to use the Bicep templates to create the Azure resources required for each product launch. You need to avoid using fixed resource names. Many types of Azure resources need unique names, so embedding names in your template means you can't reuse the template for multiple product launches. You also have to deploy the resources in different locations depending on where the toys will be launched, which means you can't embed the resource locations in your template either.
+Your toy company launches new products regularly, and you need to use the Bicep templates to create the Azure resources required for each product launch. You need to avoid using fixed resource names. Many types of Azure resources need unique names, so embedding names in your template means you can't reuse the template for multiple product launches. You also have to deploy the resources in different locations depending on where the toys will be launched, which means you can't embed the resource locations in your template either.
 
 In this unit, you'll learn about _parameters_ and _variables_, which are two Bicep features that can make your templates flexible and reusable. You'll also be introduced to _expressions_.
 
@@ -8,18 +8,18 @@ In this unit, you'll learn about _parameters_ and _variables_, which are two Bic
 
 ## Parameters and variables
 
-A _parameter_ lets you bring in values from outside the template file. For example, if someone is manually deploying the template by using the Azure CLI or Azure PowerShell, they'll be asked to provide values for each parameter. They can also create a _parameter file_, which lists all of the parameters and values they want to use for the deployment. If the template is deployed from an automated process like a deployment pipeline, the pipeline can provide the parameter values.
+A _parameter_ lets you bring in values from outside the template file. For example, if you're manually deploying the template by using the Azure CLI or Azure PowerShell, you'll be asked to provide values for each parameter. You can also create a _parameter file_, which lists all of the parameters and values you want to use for the deployment. If the template is deployed from an automated process like a deployment pipeline, the pipeline can provide the parameter values.
 
 A _variable_ is defined and set within the template. Variables let you store important information in one place and refer to it throughout the template without having to copy and paste it.
 
 It's usually a good idea to use parameters for things that will change between each deployment, like:
 
-- The names of resources that need to be unique.
+- Resource names that need to be unique.
 - Locations into which to deploy the resources.
 - Settings that affect the pricing of resources, like their SKUs, pricing tiers, and instance counts.
 - Credentials and information needed to access other systems that aren't defined in the template.
 
-Variables are usually a good option when you'll use the same values for each deployment, but you want to make a value reusable within the template. Or, when you want to use expressions to create a complex value. You can also use variables for the names of resources that don't need unique names.
+Variables are usually a good option when you'll use the same values for each deployment, but you want to make a value reusable within the template, or when you want to use expressions to create a complex value. You can also use variables for resources that don't need unique names.
 
 > [!TIP]
 > It's important to use good naming for parameters and variables, so your templates are easy to read and understand. Make sure you're using clear, descriptive, and consistent names.
@@ -35,7 +35,7 @@ param appServiceAppName string
 Let's look at how each part of this definition works:
 
 - `param` tells Bicep that you're defining a parameter.
-- `appServiceAppName` is the name of the parameter. If someone is deploying the template manually, they might be asked to enter a value, so it's important that the name is clear and understandable. The name is also how you refer to the parameter value within the template, just like with resource symbolic names.
+- `appServiceAppName` is the name of the parameter. If you're deploying the template manually, you might be asked to enter a value, so it's important that the name is clear and understandable. The name is also how you refer to the parameter value within the template, just like with resource symbolic names.
 - `string` is the type of the parameter. You can specify several different types for Bicep parameters, including `string` for text, `int` for numbers, and `bool` for Boolean true or false values. You can also pass in more complex parameters by using the `array` and `object` types.
 
 > [!TIP]
@@ -87,7 +87,7 @@ _Expressions_ in Bicep are a powerful feature that helps you handle all sorts of
 
 ### Resource locations
 
-When you're writing and deploying a template, you often don't want to have to specify the location of every resource individually. Instead, you might have a simple business rule that says, _by default, deploy all resources into the same location the resource group was created in_.
+When you're writing and deploying a template, you often don't want to have to specify the location of every resource individually. Instead, you might have a simple business rule that says, _by default, deploy all resources into the same location in which the resource group was created_.
 
 In Bicep, you can create a parameter called `location`, then use an expression to set its value:
 
@@ -95,7 +95,7 @@ In Bicep, you can create a parameter called `location`, then use an expression t
 param location string = resourceGroup().location
 ```
 
-Look at the default value of that parameter. It uses a _function_ called `resourceGroup()` that gives you access to information about the resource group the template is being deployed into. In this example, the template uses the `location` property. It's common to use this approach to deploy your resources into the same Azure region as the resource group.
+Look at the default value of that parameter. It uses a _function_ called `resourceGroup()` that gives you access to information about the resource group into which the template is being deployed. In this example, the template uses the `location` property. It's common to use this approach to deploy your resources into the same Azure region as the resource group.
 
 If someone is deploying this template, they might choose to override the default value here and use a different location.
 
@@ -110,9 +110,9 @@ You can now use the resource location parameter inside the template, like this:
 
 Many Azure resources need unique names. In your scenario, you have two resources that need unique names: the storage account and the App Service app. Asking for these values to be set as parameters can make it difficult for whoever uses the template, because they need to find a name that nobody else has used.
 
-Bicep has another function called `uniqueString()` that comes in handy when you're creating resource names. When you use this function, you need to provide a _seed value_, which should be different across different deployments but consistent across all deployments of the same resources.
+Bicep has another function called `uniqueString()` that comes in handy when you're creating resource names. When you use this function, you need to provide a _seed value_, which should be different across different deployments, but consistent across all deployments of the same resources.
 
-If you choose a good seed value, you can get the same name every time you deploy the same set of resources. But you'll get a different name whenever you deploy a different set of resources by using the same template. Let's look at how you might use the `uniqueString()` function:
+If you choose a good seed value, you can get the same name every time you deploy the same set of resources, but you'll get a different name whenever you deploy a different set of resources by using the same template. Let's look at how you might use the `uniqueString()` function:
 
 ```bicep
 param storageAccountName string = uniqueString(resourceGroup().id)
@@ -135,7 +135,7 @@ The resource group ID includes the Azure subscription ID (`3e57e557-826f-460b-8f
 
 ### Combined strings
 
-If you just use the `uniqueString()` function to set resource names, you'll probably get unique names, but they won't be meaningful. A good resource name should also be descriptive so that it's clear what the resource is for. You'll often want to create a name by combining a meaningful word or string with a unique value. This way, you'll have resources that have both meaningful _and_ unique names.
+If you just use the `uniqueString()` function to set resource names, you'll probably get unique names, but they won't be meaningful. A good resource name should also be descriptive, so that it's clear what the resource is for. You'll often want to create a name by combining a meaningful word or string with a unique value. This way, you'll have resources that have both meaningful _and_ unique names.
 
 Bicep has a feature called _string interpolation_ that lets you combine strings. Let's see how it works:
 
@@ -145,7 +145,7 @@ param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
 
 The default value for the `storageAccountName` parameter now has two parts to it:
 
-- `toylaunch` is a hard-coded string that helps anyone who looks at the deployed resource in Azure to understand what the storage account's purpose.
+- `toylaunch` is a hard-coded string that helps anyone who looks at the deployed resource in Azure to understand the storage account's purpose.
 - `${uniqueString(resourceGroup().id)}` is a way of telling Bicep to evaluate the output of the `uniqueString(resourceGroup().id)` function, then concatenate it into the string.
 
 > [!TIP]
@@ -153,9 +153,9 @@ The default value for the `storageAccountName` parameter now has two parts to it
 
 ### Selecting SKUs for resources
 
-The other members of your team have been impressed with the Bicep code you've built so far. You've decided together that you'll use your template to deploy the resources to support the launches of all of your new toys.
+The other members of your team have been impressed with the Bicep code you've built so far. You've decided together that you'll use your template to deploy the resources to support all your new toy launches.
 
-One of your colleagues has suggested that you create non-production environments for each product launch to help the marketing team test the sites before they're available to customers. However, you want to make sure you don't spend too much money on your non-production environments. So you decide on some policies together:
+One of your colleagues has suggested that you create non-production environments for each product launch to help the marketing team test the sites before they're available to customers. However, you want to make sure you don't spend too much money on your non-production environments, so you decide on some policies together:
 
 - In production environments, storage accounts will be deployed at the `Standard_GRS` (geo-redundant storage) SKU for high resiliency. App Service plans will be deployed at the `P2v3` SKU for high performance.
 - In non-production environments, storage accounts will be deployed at the `Standard_LRS` (locally redundant storage) SKU. App Service plans will be deployed at the free `F1` SKU.
@@ -184,9 +184,9 @@ var appServicePlanSkuName = (environmentType == 'prod') ? 'P2V3' : 'F1'
 Notice some new syntax here, too. Let's break it down:
 
 - `(environmentType == 'prod')` evaluates to a Boolean (true or false) value, depending on which allowed value is used for `environmentType` parameter.
-- `?` is called a _ternary operator_ and it evaluates an `if/then` statement. The value after the `?` operator is used if the expression is true. If the expression evaluates to false, the value after the colon (`:`) is used.
+- `?` is called a _ternary operator_, and it evaluates an `if/then` statement. The value after the `?` operator is used if the expression is true. If the expression evaluates to false, the value after the colon (`:`) is used.
 
-These rules can be translated to:
+We can translate these rules to:
 
 - For the `storageAccountSkuName` variable, if the `environmentType` parameter is set to `prod`, then use the `Standard_GRS` SKU. Otherwise, use the `Standard_LRS` SKU.
 - For the `appServicePlanSkuName` variable, if the `environmentType` parameter is set to `prod`, then use the `P2V3` SKU and the `PremiumV3` tier. Otherwise, use the `F1` SKU.
