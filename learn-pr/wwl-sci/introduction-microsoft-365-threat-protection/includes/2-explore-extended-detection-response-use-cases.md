@@ -37,5 +37,5 @@ During this time, the user is restricted from accessing corporate resources. Thi
   
 Once the threat has been remediated and cleaned up, MDE triggers Intune to update Entra ID, and Conditional Access restores the user’s access to corporate resources.
   
-This mitigates risk to the organization by ensuring attackers who may be in control of these devices can't access corporate resources, while minimizing the impact on user productivity to minimize disruption of business processes.  
+This mitigates risk to the organization by ensuring attackers who might be in control of these devices can't access corporate resources, while minimizing the impact on user productivity to minimize disruption of business processes.  
   
