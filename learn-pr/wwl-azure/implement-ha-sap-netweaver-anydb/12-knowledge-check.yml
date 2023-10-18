@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/16/2023
+  ms.date: 10/18/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ quiz:
   questions:
   - content: "When a single SID 3-tier SAP NetWeaver high availability AnyDB is deployed using a 3-tier SAP Azure Resource Manager template, IP addresses are created for Azure internal load balancers and for the network cards for all virtual machines. Which of the following statements about those IP addresses is true?"
     choices:
-    - content: "The IP addresses are properly configured automatically, and do not need to be changed."
+    - content: "The IP addresses are properly configured automatically, and don't need to be changed."
       isCorrect: false
       explanation: "That’s incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
     - content: "All of the IP addresses are static by default, and need to be changed to dynamic."

@@ -7,7 +7,7 @@ Setting up a Windows Server failover cluster for an SAP ASCS/SCS instance involv
 
 Set up the failover cluster by using Failover Cluster Manager:
 
-1. In Failover Cluster Manager, select **Create Cluster**, and then add only the name of the first cluster (node A). Do not add the second node yet; you add the second node in a later step.
+1. In Failover Cluster Manager, select **Create Cluster**, and then add only the name of the first cluster (node A). Don't add the second node yet; you add the second node in a later step.
 2. Enter the network name (virtual host name) of the cluster.
 3. After you've created the cluster, run a cluster validation test.
 4. You can ignore any warnings about disks at this point in the process. At this stage, you don't need to worry about having a quorum.
