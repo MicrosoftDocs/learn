@@ -5,7 +5,7 @@ In Azure Machine Learning, **datastores** are abstractions for cloud data source
 When you create a datastore with an existing storage account on Azure, you have the choice between two different authentication methods:
 
 - **Credential-based**: Use a *service principal*, *shared access signature* (*SAS*) token or *account key* to authenticate access to your storage account.
-- **Identity-based**: Use your *Azure Active Directory identity* or *managed identity*.
+- **Identity-based**: Use your *Microsoft Entra identity* or *managed identity*.
 
 ## Understand types of datastores
 

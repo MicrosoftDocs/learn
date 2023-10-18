@@ -3,14 +3,14 @@
 :::image type="content" source="../media/terms-of-use-entitlement-47ffe922.png" alt-text="Screenshot of terms of use settings. You can set Name, Display Name, link to a PDF document with the terms, and some settings to ensure the user sees the terms of use.":::
 
 
-Azure AD terms of use policies use the PDF format to present content. The PDF file can be any content, such as existing contract documents, allowing you to collect end-user agreements during user sign-in. To support users on mobile devices, the recommended font size in the PDF is 24 point. Remember that terms of use PDF documents can contain an End User License Agreement (EULA). The user has to commit to before access resources based on their entitlement settings.
+Microsoft Entra terms of use policies use the PDF format to present content. The PDF file can be any content, such as existing contract documents, allowing you to collect end-user agreements during user sign-in. To support users on mobile devices, the recommended font size in the PDF is 24 point. Remember that terms of use PDF documents can contain an End User License Agreement (EULA). The user has to commit to before access resources based on their entitlement settings.
 
 ## Add terms of use
 
 Once you have finalized your terms of use document, use the following procedure to add it.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) as a Global administrator.
-1. Open **Azure Active Directory** and the select **Identity Governance**.
+1. Open **Microsoft Entra ID** and the select **Identity Governance**.
 1. In the left navigation menu, under **Terms of use**, select **Terms of use**.
 1. On the Terms of use page, on the top menu, select **+ New terms**.
     
@@ -24,7 +24,7 @@ Once you have finalized your terms of use document, use the following procedure 
 1. To require end users to accept your terms of use on every device they are accessing from, set **Require users to consent on every device** to **On**. Users may be required to install other applications if this option is enabled.
     
     > [!WARNING]
-    > Consent on every device will require users to register each device with Azure AD prior to getting access.
+    > Consent on every device will require users to register each device with Microsoft Entra prior to getting access.
 1. If you want to expire terms of use consents on a schedule, set **Expire consents** to **On**. When set to On, two extra schedule settings are displayed.
     
     :::image type="content" source="../media/new-terms-of-use-create-73231536.png" alt-text="Screenshot of the Expire consents settings to set start date, frequency, and duration":::
@@ -130,7 +130,7 @@ Users can review and see the terms of use that they have accepted by using the f
 You can edit some details of terms of use, but you can't modify an existing document. The following procedure describes how to edit the details.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) as a Global administrator.
-1. Open Azure Active Directory and the select **Identity Governance**.
+1. Open Microsoft Entra ID and the select **Identity Governance**.
 1. In the left navigation menu, under **Terms of use**, select **Terms of use**.
 1. Select the terms of use you want to edit.
 1. On the top menu, select **Edit terms**.

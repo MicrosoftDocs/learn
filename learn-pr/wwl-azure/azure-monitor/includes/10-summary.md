@@ -15,4 +15,4 @@ Microsoft Learn provides a large number of self-paced learning paths. For this l
  -  [Analyze your Azure infrastructure by using Azure Monitor logs](/training/modules/analyze-infrastructure-with-azure-monitor-logs/)
  -  [Manage security operations in Azure](/training/paths/manage-security-operations/)
  -  [Design a holistic monitoring strategy on Azure](/training/modules/design-monitoring-strategy-on-azure/)
- -  [Monitor and report on security events in Azure AD](/training/modules/monitor-report-aad-security-events/)
+ -  [Monitor and report on security events in Microsoft Entra ID](/training/modules/monitor-report-aad-security-events/)
