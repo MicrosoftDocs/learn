@@ -2,7 +2,7 @@ The Azure File storage service allows you to create SMB file shares in Azure jus
 
 The Azure File storage service is available via both SMB 2.1 and SMB 3.x protocols. Starting with Windows 8 and Windows Server 2012, the operating system includes support for SMB 3.x. Linux distributions also provide support for SMB 3.x by using the cifs-utils package from the Samba project.
 
-The Windows server and client-based version of SMB 3.x offers several advantages over SMB 2.1, including built-in encryption. As the result, you can establish mapping to Azure File storage shares from locations outside the Azure region where the Azure Storage account that is hosting the shares resides. This includes other Azure regions and on-premises environment if you allow outbound traffic on TCP port 445. With SMB 2.1, mappings to file shares are available only from the same Azure region.
+The Windows server and client-based version of SMB 3.x offers several advantages over SMB 2.1, including built-in encryption. As the result, you can establish mapping to Azure File storage shares from locations outside the Azure region where the Azure Storage account that's hosting the shares resides. This includes other Azure regions and on-premises environment if you allow outbound traffic on TCP port 445. With SMB 2.1, mappings to file shares are available only from the same Azure region.
 
 Azure Files offers two performance tiers:
 

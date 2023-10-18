@@ -1,4 +1,4 @@
-You'll use the Microsoft Authentication Library (MSAL) for Python to add authentication to a daemon app that uses its identity to get access tokens from Azure Active Directory (Azure AD).
+You'll use the Microsoft Authentication Library (MSAL) for Python to add authentication to a daemon app that uses its identity to get access tokens from Microsoft Entra ID.
 
 In this exercise, you'll add application permissions to access Microsoft Graph and build your daemon app.
 
@@ -8,7 +8,7 @@ In the following steps, you grant the registered app permission to Microsoft Gra
 
 1. Sign in to the <a href="https://portal.azure.com/" target="_blank">Azure portal</a>.
 1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/portal-directory-subscription-filter.png" border="false"::: in the top menu to select the tenant containing your client app's registration.
-1. Search for and select **Azure Active Directory**.
+1. Search for and select **Microsoft Entra ID**.
 1. Under **Manage**, select **App registrations**.
 1. Select your daemon application.
 1. Under **Manage**, Select **API permissions**.
@@ -73,7 +73,7 @@ pip install msal
     
    ```
 
-   In the sample code we've created, we import `json`, `requests` and `msal` module for our daemon app. The `config` section contains the values required for interaction with the Azure AD.
+   In the sample code we've created, we import `json`, `requests` and `msal` module for our daemon app. The `config` section contains the values required for interaction with the Microsoft Entra ID.
 
 1. Replace the values in the `config` section as described here:
 

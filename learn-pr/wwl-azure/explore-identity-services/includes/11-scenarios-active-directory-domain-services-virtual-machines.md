@@ -1,6 +1,3 @@
-
-
-
 There are three main scenarios that involve AD DS and Azure VMs:
 
 - **AD DS deployed to Azure VMs without cross-premises connectivity**. This deployment results in the creation of a new forest, with all domain controllers residing in Azure. Use this approach if you plan to implement Azure-resident workloads hosted on Azure VMs that rely on Kerberos authentication or Group Policy but have no on-premises dependencies.

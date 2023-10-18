@@ -4,11 +4,13 @@ title: Describe Microsoft Entra concepts
 metadata:
   title: Describe Microsoft Entra concepts
   description: "Describe Microsoft Entra concepts"
-  ms.date: 08/18/2023
+  ms.date: 10/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.service: active-directory
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/3-describe-azure-active-directory-concepts.md)]

@@ -22,7 +22,7 @@ A common string method is `.split()`. Without arguments, the method will separat
 
 ```python
 temperatures = "Daylight: 260 F Nighttime: -280 F"
-temperatures_list = temperatures .split()
+temperatures_list = temperatures.split()
 print(temperatures_list)
 ```
 
@@ -32,7 +32,7 @@ In this example, you're dealing with multiple lines, so the (implicit) newline c
 
 ```python
 temperatures = "Daylight: 260 F\n Nighttime: -280 F"
-temperatures_list = temperatures .split('\n')
+temperatures_list = temperatures.split('\n')
 print(temperatures_list)
 ```
 

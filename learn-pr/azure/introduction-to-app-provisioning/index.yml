@@ -23,7 +23,7 @@ abstract: |
 
 prerequisites: |
   - General understanding of identity concepts
-  - Basic knowledge of Azure Active Directory
+  - Basic knowledge of Microsoft Entra ID
   - Familiarity with how Software as a Service (SaaS) apps work
 ###########################################################################
 ###
