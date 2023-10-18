@@ -65,20 +65,22 @@ In this task, we'll create a blob storage access policy.
 11. The **Access Policy** drop-down enables you to create a SAS based on a pre-defined configuration.
 12. As you have time, show how Storage Explorer can be used to perform security tasks.
 
-## Task 4: Azure AD User Account Authentication
+<a name='task-4-azure-ad-user-account-authentication'></a>
 
-In this task, we will configure Azure AD user account authentication for storage.
+## Task 4: Microsoft Entra user Account Authentication
+
+In this task, we will configure Microsoft Entra user account authentication for storage.
 
 1.  In the portal, navigate to and select your blob container.
-2.  Notice at the top the authentication method. There are two choices: **Access key** and **Azure AD User Account**. Explain the differences between the two methods.
-3.  Switch to **Azure AD User Account**.
+2.  Notice at the top the authentication method. There are two choices: **Access key** and **Microsoft Entra user Account**. Explain the differences between the two methods.
+3.  Switch to **Microsoft Entra user Account**.
 4.  You should receive an error stating you don't have access permissions.
 5.  Click **Access Control (IAM)**.
 6.  Select **Add role assignment**.
 7.  Select the **Storage Blob Data Owner** role. Discuss the other storage roles that are shown.
 8.  Assign the role to your account and **Save** your changes.
 9.  Return to the **Overview** blade.
-10. Switch to **Azure AD User Account**.
+10. Switch to **Microsoft Entra user Account**.
 11. Notice that you're now able to view the container.
 12. Take a minute to select **Change access level** and review the **Public access level** choices.
 

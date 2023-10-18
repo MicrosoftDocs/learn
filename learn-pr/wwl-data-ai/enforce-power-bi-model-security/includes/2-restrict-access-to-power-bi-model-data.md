@@ -100,7 +100,7 @@ When you create roles, it’s important to test them to ensure they apply the co
 
 ## Set up role mappings
 
-Role mappings must be set up in advance of users accessing Power BI content. Role mapping involves assigning Azure Active Directory (Azure AD) security objects to roles. Security objects can be user accounts or security groups.
+Role mappings must be set up in advance of users accessing Power BI content. Role mapping involves assigning Microsoft Entra security objects to roles. Security objects can be user accounts or security groups.
 
 > [!TIP]
 > When possible, it’s a good practice to map roles to security groups. That way, there will be fewer mappings, and you can delegate the group membership management to the network administrators.

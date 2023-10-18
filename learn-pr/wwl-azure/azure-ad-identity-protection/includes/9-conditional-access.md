@@ -1,11 +1,11 @@
 The old world of security behind a corporate firewall, having your secure network perimeter just doesn’t work anymore, not with people wanting to work from anywhere, being able to connect to all sorts of cloud applications.
 
-For an interactive overview of how to Configure Conditional Access in Azure AD, click the start button in the image below.
+For an interactive overview of how to Configure Conditional Access in Microsoft Entra ID, click the start button in the image below.
 
-[:::image type="content" source="../media/configure-conditional-access-in-azure-ad-2022-9f7d8f24.png" alt-text="Screenshot of the Interactive Guide for Configure Conditional Access in Azure Active Directory":::
+[:::image type="content" source="../media/configure-conditional-access-in-azure-ad-2022-9f7d8f24.png" alt-text="Screenshot of the Interactive Guide for Configure Conditional Access in Microsoft Entra ID":::
 ](https://mslearn.cloudguides.com/en-us/guides/Configure%20Conditional%20Access%20in%20Azure%20AD)
 
-Conditional Access is the tool used by Azure Active Directory to bring signals together, to make decisions, and enforce organizational policies.
+Conditional Access is the tool used by Microsoft Entra ID to bring signals together, to make decisions, and enforce organizational policies.
 
 Conditional Access is at the heart of the new **identity driven control plane**.
 
@@ -22,7 +22,7 @@ A user’s identity is like a control plane, because it controls which protocols
 
 Now, everything pivots around that user identity. You know what their activities are, and where they are located. You know what devices they’re using. Then we leverage that information in conditional access policy to be able to enforce things like multifactor authentication or require a compliant device.
 
-There are the conditions, which indicate when the policy is going to apply. This can be, again, the location, type of application that you’re on, any detected risk. How is the risk determined? It is determined from all the analysis and intel that we have across organizations using Azure Active Directory, as well as Microsoft consumer identity offerings. Conditional Access is the tool used by Azure Active Directory to bring signals together, to make decisions, and enforce organizational policies. Conditional Access policies at their simplest are if-then statements, if a user wants to access a resource, then they must complete an action. Example: A payroll manager wants to access the payroll application and is required to perform multifactor authentication to access it.
+There are the conditions, which indicate when the policy is going to apply. This can be, again, the location, type of application that you’re on, any detected risk. How is the risk determined? It is determined from all the analysis and intel that we have across organizations using Microsoft Entra ID, as well as Microsoft consumer identity offerings. Conditional Access is the tool used by Microsoft Entra ID to bring signals together, to make decisions, and enforce organizational policies. Conditional Access policies at their simplest are if-then statements, if a user wants to access a resource, then they must complete an action. Example: A payroll manager wants to access the payroll application and is required to perform multifactor authentication to access it.
 
 Administrators are faced with two primary goals:
 

@@ -59,7 +59,7 @@ The following requirements must be fulfilled before installing the Unified Label
 
 - One of the following roles: Compliance administrator or Compliance data administrator or Security administrator permissions or Global administrator.
 
-- A configured Azure AD token.
+- A configured Microsoft Entra token.
 
 - Any Windows Server 2016 to Windows Server 2019 with UI.
 

@@ -4,7 +4,7 @@ The Microsoft Store for Business platform enables you to procure apps for your o
 - Synchronize both Online and Offline licensed versions of apps to Intune, with the app names being appended with "Online" or "Offline" in the portal.
 - Monitor the number of licenses available and being used in the admin center.
 - Prevent the assignment and installation of apps if there are insufficient licenses available.
-- Revoke app licenses for apps managed by Microsoft Store for Business if the user is deleted from Azure AD.
+- Revoke app licenses for apps managed by Microsoft Store for Business if the user is deleted from Microsoft Entra ID.
 
 >[!IMPORTANT]
 >The retirement of the Microsoft Store for Business and the Microsoft Store for Education, originally scheduled for March 31, 2023, has been postponed. 

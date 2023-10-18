@@ -2,10 +2,10 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 ## Conditional Access App Control
 
-:::image type="content" source="../media/conditional-access-app-control-21108d98.png" alt-text="Screenshot of Azure A D Conditional Access policy wizard with the Use Conditional Access App Control highlighted.":::
+:::image type="content" source="../media/conditional-access-app-control-21108d98.png" alt-text="Screenshot of Microsoft Entra Conditional Access policy wizard with the Use Conditional Access App Control highlighted.":::
 
 
-Conditional Access App Control uses a reverse proxy architecture and is uniquely integrated with Azure AD Conditional Access. Azure AD Conditional Access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define who (user or group of users) and what (which cloud apps) and where (which locations and networks) a Conditional Access policy is applied to. After you’ve determined the conditions, you can route users to Microsoft Defender for Cloud Apps where you can protect data with Conditional Access App Control by applying access and session controls.
+Conditional Access App Control uses a reverse proxy architecture and is uniquely integrated with Microsoft Entra Conditional Access. Microsoft Entra Conditional Access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define who (user or group of users) and what (which cloud apps) and where (which locations and networks) a Conditional Access policy is applied to. After you’ve determined the conditions, you can route users to Microsoft Defender for Cloud Apps where you can protect data with Conditional Access App Control by applying access and session controls.
 
 With the access and session policies, you can:
 
@@ -23,18 +23,18 @@ People regularly use their mobile devices for both personal and work tasks. Whil
 This section presents two scenarios to configure Conditional Access policies for resources like Microsoft 365, Exchange Online, and SharePoint Online.
 
 > [!NOTE]
-> In order to require approved client apps for iOS and Android devices, these devices must first register in Azure AD.
+> In order to require approved client apps for iOS and Android devices, these devices must first register in Microsoft Entra ID.
 
 ### Scenario 1: Microsoft 365 apps require an approved client app
 
-In this scenario, Contoso has decided that users using mobile devices can access all Microsoft 365 services as long as they use approved client apps, like Outlook mobile, OneDrive, and Microsoft Teams. All of their users already sign in with Azure AD credentials and have licenses assigned to them that include Azure AD Premium P1 or P2 and Microsoft Intune.
+In this scenario, Contoso has decided that users using mobile devices can access all Microsoft 365 services as long as they use approved client apps, like Outlook mobile, OneDrive, and Microsoft Teams. All of their users already sign in with Microsoft Entra credentials and have licenses assigned to them that include Microsoft Entra ID P1 or P2 and Microsoft Intune.
 
 Organizations must complete the following three steps in order to require the use of an approved client app on mobile devices.
 
 **Step 1: Policy for Android and iOS based modern authentication clients requiring the use of an approved client application when accessing Exchange Online.**
 
 1. Sign in to the **Azure portal** as a Global Administrator, Security Administrator, or Conditional Access Administrator.
-1. Browse to **Azure Active Directory**, then **Security**, and then **Conditional Access**.
+1. Browse to **Microsoft Entra ID**, then **Security**, and then **Conditional Access**.
 1. Select **New policy**.
 1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 1. Under **Assignments**, select **Users and groups.**
@@ -51,9 +51,9 @@ Organizations must complete the following three steps in order to require the us
 1. Confirm your settings and set **Enable policy** to **On**.
 1. Select **Create** to create and enable your policy.
 
-**Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS).**
+**Step 2: Configure a Microsoft Entra Conditional Access policy for Exchange Online with ActiveSync (EAS).**
 
-1. Browse to **Azure Active Directory**, then **Security**, and then **Conditional Access**.
+1. Browse to **Microsoft Entra ID**, then **Security**, and then **Conditional Access**.
 1. Select **New policy**.
 1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 1. Under **Assignments**, select **Users and groups.**
@@ -74,14 +74,14 @@ Review the article [How to create and assign app protection policies](/intune/ap
 
 ### Scenario 2: Exchange Online and SharePoint Online require an approved client app
 
-In this scenario, Contoso has decided that users may only access email and SharePoint data on mobile devices as long as they use an approved client app like Outlook mobile. All of their users already sign in with Azure AD credentials and have licenses assigned to them that include Azure AD Premium P1 or P2 and Microsoft Intune.
+In this scenario, Contoso has decided that users may only access email and SharePoint data on mobile devices as long as they use an approved client app like Outlook mobile. All of their users already sign in with Microsoft Entra credentials and have licenses assigned to them that include Microsoft Entra ID P1 or P2 and Microsoft Intune.
 
 Organizations must complete the following three steps in order to require the use of an approved client app on mobile devices and Exchange ActiveSync clients.
 
 **Step 1: Policy for Android and iOS based modern authentication clients requiring the use of an approved client application when accessing Exchange Online and SharePoint Online.**
 
 1. Sign in to the **Azure portal** as a Global Administrator, Security Administrator, or Conditional Access Administrator.
-1. Browse to **Azure Active Directory**, then **Security**, and then **Conditional Access**.
+1. Browse to **Microsoft Entra ID**, then **Security**, and then **Conditional Access**.
 1. Select **New policy**.
 1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 1. Under **Assignments**, select **Users and groups.**
@@ -100,7 +100,7 @@ Organizations must complete the following three steps in order to require the us
 
 **Step 2: Policy for Exchange ActiveSync clients requiring the use of an approved client app.**
 
-1. Browse to **Azure Active Directory**, then **Security**, and then **Conditional Access**.
+1. Browse to **Microsoft Entra ID**, then **Security**, and then **Conditional Access**.
 1. Select **New policy**.
 1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 1. Under **Assignments**, select **Users and groups.**
