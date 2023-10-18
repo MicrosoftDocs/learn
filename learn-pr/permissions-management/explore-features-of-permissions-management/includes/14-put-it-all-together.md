@@ -2,7 +2,7 @@ Now that you’ve learned the various discovery, remediation, and monitoring cap
 
 As a security administrator using Permissions Management, the first thing that you’ll do is educate yourself on the status of your cloud environment – what in your environment requires more attention?
 
-:::image type="content" source="../media/dashboard-2.png" alt-text="Screenshot of the Permissions Management dashboard featuring Permissions Creep Index."lightbox="../media/pdashboard-2.png":::
+:::image type="content" source="../media/dashboard-2.png" alt-text="Screenshot of the Permissions Management dashboard featuring Permissions Creep Index."lightbox="../media/dashboard-2.png":::
 
 Looking at the dashboard, you can see that your PCI score has increased by one over the past seven days. To see what is contributing to the increase, you review the recommended findings to see if anything stands out as abnormal.
 
