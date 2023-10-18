@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-manage-roles
-title: Configure and manage Azure Active Directory roles
+title: Configure and manage Microsoft Entra roles
 metadata:
-  title: Configure and manage Azure Active Directory roles
-  description: "Configure and manage Azure Active Directory roles"
+  title: Configure and manage Microsoft Entra roles
+  description: "Configure and manage Microsoft Entra roles"
   ms.date: 06/28/2023
   author: wwlpublish
   ms.author: roberts
