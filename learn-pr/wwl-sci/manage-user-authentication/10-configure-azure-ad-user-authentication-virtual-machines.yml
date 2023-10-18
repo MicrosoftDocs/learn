@@ -3,6 +3,7 @@ uid: learn.wwl.manage-user-authentication.configure-azure-ad-user-authentication
 title: Configure Microsoft Entra user authentication for virtual machines
 metadata:
   title: Configure Microsoft Entra user authentication for virtual machines
+  description: "Configure Azure AD user authentication for virtual machines"
   ms.date: 10/11/2023
   author: wwlpublish
   ms.author: roberts
