@@ -1,7 +1,7 @@
 ## Invite guest users in bulk
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) with an account that is a User administrator in the organization.
-2.  In the navigation pane, select **Azure Active Directory**.
+2.  In the navigation pane, select **Microsoft Entra ID**.
 3.  Under **Manage**, select **Users**.
 4.  On the Users screen, on the menu, select **Bulk operations - Bulk invite**.
     
