@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-user-authentication.exercise-manage-azure-ad-smart-lockout-values
-title: Exercise - Manage Azure Active Directory smart lockout values
+title: Exercise - Manage Microsoft Entra smart lockout values
 metadata:
-  title: Exercise - Manage Azure Active Directory smart lockout values
-  description: "Exercise - Manage Azure Active Directory smart lockout values"
+  title: Exercise - Manage Microsoft Entra smart lockout values
+  description: "Exercise - Manage Microsoft Entra smart lockout values"
   ms.date: 10/11/2023
   author: wwlpublish
   ms.author: roberts

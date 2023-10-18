@@ -10,8 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure-ai-translator
 azureSandbox: false
-labId: 99992
-labModal: true
+labModal: false
 durationInMinutes: 30
 content: |
   [!include[](includes/6-exercise-translate-text.md)]

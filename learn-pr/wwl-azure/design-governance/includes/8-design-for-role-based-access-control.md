@@ -39,6 +39,6 @@ You have a plan for how to apply Azure Policy settings to your Tailwind Traders 
    | **Implementation** | Specify a set of rules. | Assign roles and scopes. |
    | **Default access** | By default, policy rules are set to _allow_. | By default, all access for all users is _denied_. |
 
-- **Consider when to create a custom role**. Sometimes, the built-in roles don't grant the precise level of access you need. [Custom roles](/azure/role-based-access-control/custom-roles) allow you to define roles that meet the specific needs of your organization. Custom roles can be shared between subscriptions that trust the same Azure Active Directory.
+- **Consider when to create a custom role**. Sometimes, the built-in roles don't grant the precise level of access you need. [Custom roles](/azure/role-based-access-control/custom-roles) allow you to define roles that meet the specific needs of your organization. Custom roles can be shared between subscriptions that trust the same Microsoft Entra ID.
 
 - **Consider how to resolve overlapping role assignments**. Azure RBAC is an additive model, so your effective permissions are the sum of your role assignments. Consider a user is granted the **Contributor** role at the subscription scope and the **Reader** role on a resource group. The sum of the Contributor permissions and the Reader permissions is effectively the Contributor role for the subscription. Therefore, in this case, the Reader role assignment has no impact.

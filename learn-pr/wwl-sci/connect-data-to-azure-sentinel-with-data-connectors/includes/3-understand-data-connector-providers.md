@@ -15,11 +15,11 @@ The Microsoft 365 Defender data connector provides alerts, incidents, and raw da
 
 The connectors for Microsoft and Azure-related services include (but aren't limited to):
 
-- Azure Active Directory 
+- Microsoft Entra ID 
 
 - Azure Activity
 
-- Azure AD Identity Protection
+- Microsoft Entra ID Protection
 
 - Azure DDoS Protection
 

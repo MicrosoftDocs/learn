@@ -1,4 +1,4 @@
-Azure Active Directory (Azure AD) self-service password reset (SSPR) gives users the ability to change or reset their password, with no administrator or helpdesk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
+Microsoft Entra self-service password reset (SSPR) gives users the ability to change or reset their password, with no administrator or helpdesk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
 
 ## Benefits of self-service password reset
 
@@ -9,27 +9,27 @@ There are many benefits for the user and the organization to enabling self-servi
 
 Licensing requirements:
 
- -  Cloud based accounts - A user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Standard license is required.
- -  On-premises accounts - A user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Premium license.
+ -  Cloud based accounts - A user has to be enrolled into self-service password reset, and that a Microsoft Entra ID P1 or P2 license or a Microsoft 365 Business Standard license is required.
+ -  On-premises accounts - A user has to be enrolled into self-service password reset, and that a Microsoft Entra ID P1 or P2 license or a Microsoft 365 Business Premium license.
 
 ## Enable self-service password reset
 
-:::image type="content" source="../media/enable-password-reset-dfa70be3.png" alt-text="Screenshot of Azure A D, configure Self-Service Password Reset dialog. S S P R feature is being enabled for a group of users called S S P R Test Group.":::
+:::image type="content" source="../media/enable-password-reset-dfa70be3.png" alt-text="Screenshot of Microsoft Entra ID, configure Self-Service Password Reset dialog. S S P R feature is being enabled for a group of users called S S P R Test Group.":::
 
 
 Basic steps to enable self-service password reset:
 
 1.  Sign in to the Azure portal using an account with global administrator permissions.
-2.  Search for and select Azure Active Directory, then select Password reset from the menu on the left side.
+2.  Search for and select Microsoft Entra ID, then select Password reset from the menu on the left side.
 3.  From the Properties page, under the option Self-service password reset, select Select group
-4.  Browse for and select your Azure AD group, like SSPR-Test-Group, then choose Select.
+4.  Browse for and select your Microsoft Entra group, like SSPR-Test-Group, then choose Select.
 5.  To enable SSPR for the chosen group, select Save.
 
 ## Add a new user
 
 Create a user account that will be added to a security group.
 
-1.  In the Azure AD organization you created, under **Manage**, select **Users** then select **New User**.
+1.  In the Microsoft Entra organization you created, under **Manage**, select **Users** then select **New User**.
 2.  The User pane now appears. Enter the following values:
     
     
@@ -43,8 +43,8 @@ Create a user account that will be added to a security group.
 You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) using a Global administrator account.
-2.  Open the portal menu and then select **Azure Active Directory**.
-3.  On the Azure Active Directory screen, under **Manage**, select **+ New Group**.
+2.  Open the portal menu and then select **Microsoft Entra ID**.
+3.  On the Microsoft Entra ID screen, under **Manage**, select **+ New Group**.
 4.  Create a new group using the following information:
     
     | **Setting**       | **Value**               |
@@ -63,7 +63,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
 Enable SSPR for the group.
 
-1.  Browse back to the Azure Active Directory screen.
+1.  Browse back to the Microsoft Entra ID screen.
 2.  Under **Manage**, select **Password reset**.
     
     > [!IMPORTANT]

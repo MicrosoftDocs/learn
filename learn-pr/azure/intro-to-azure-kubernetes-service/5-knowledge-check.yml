@@ -20,9 +20,9 @@ quiz:
   
   - content: "Suppose you work for a company that builds a Massively Multiplayer Online (MMO) game. You decide to move all your services to Azure Kubernetes service. Which of the following components contribute to your monthly Azure charge?"
     choices:
-    - content: "The Master node"
+    - content: "The control plane"
       isCorrect: false
-      explanation: "In an AKS cluster, the Master node is free and there's no charge for Cluster Management."
+      explanation: "In an AKS cluster, there's no charge for having a control plane."
     - content: "Per deployed Pod"
       isCorrect: false
       explanation: "Deploying and running Pods on an AKS cluster is free."
@@ -32,7 +32,7 @@ quiz:
 
   - content: "Suppose you work for an event management company. Your events website needs persisted storage. Which feature of AKS should you use?"
     choices:
-    - content: "Use Azure Container Registry"
+    - content: "Azure Container Registry"
       isCorrect: false
       explanation: "Azure Container Registry allows you to store images for all types of container deployments."
     - content: "Storage volume support"

@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-maintain-azure-active-directory
 metadata:
-  title: Monitor and maintain Azure Active Directory
-  description: "Azure AD audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data."
+  title: Monitor and maintain Microsoft Entra ID
+  description: "Microsoft Entra audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data."
   ms.date: 02/16/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.service: active-directory
-title: Monitor and maintain Azure Active Directory
-summary: Azure AD audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
+title: Monitor and maintain Microsoft Entra ID
+summary: Microsoft Entra audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
 abstract: |
   By the end of this module, you'll be able to:
   *   Analyze and investigate sign in logs to troubleshoot access issues

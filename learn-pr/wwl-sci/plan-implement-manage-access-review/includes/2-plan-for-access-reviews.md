@@ -1,6 +1,6 @@
 ## What is an access review?
 
-An **Access Review** as the name implies, is a planned review of the access needs, rights, and history of user access. Access Reviews help users ensure that the right people have the right access to the right resources. They mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity. Finally, the access review is performed in Azure Active Directory (Azure AD), part of Entra, Identity Governance. An Azure AD premium P2 license is required.
+An **Access Review** as the name implies, is a planned review of the access needs, rights, and history of user access. Access Reviews help users ensure that the right people have the right access to the right resources. They mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity. Finally, the access review is performed in Microsoft Entra ID, part of Microsoft Entra, Identity Governance. A Microsoft Entra ID P2 license is required.
 
 Consider your organizational needs to determine the strategy for deploying access reviews in your environment.
 
@@ -16,9 +16,11 @@ When technology projects fail, they typically do so due to mismatched expectatio
     > [!NOTE]
     > For reviews requiring manual evaluations, be sure to plan for adequate reviewers and review cycles that meet your policy and compliance needs. If review cycles are too frequent, or there are too few reviewers, quality may be lost and too many or too few people may have access.
 
-## What is Azure AD Identity Governance?
+<a name='what-is-azure-ad-identity-governance'></a>
 
-Azure Active Directory (Azure AD) Identity Governance enables you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right people have the right access to the right resources. These and related Azure AD and Enterprise Mobility + Security features allows you to mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity.
+## What is Microsoft Entra ID Governance?
+
+Microsoft Entra ID Governance enables you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right people have the right access to the right resources. These and related Microsoft Entra ID and Enterprise Mobility + Security features allows you to mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity.
 
 Identity Governance gives organizations the ability to complete tasks across employees, business partners and vendors, and across services and applications both on-premises and in clouds. Specifically, it is intended to help organizations address these four key questions:
 
@@ -34,20 +36,20 @@ We encourage customers to initially pilot access reviews with a small group and 
 In your pilot, we recommend that you:
 
  -  Start with reviews where the results are not automatically applied, and you can control the implications.
- -  Ensure that all users have valid email addresses listed in Azure AD and that they receive email communication to take the appropriate action.
+ -  Ensure that all users have valid email addresses listed in Microsoft Entra ID and that they receive email communication to take the appropriate action.
  -  Document any access removed as a part of the pilot in case you need to quickly restore it.
  -  Monitor audit logs to ensure all events are properly audited.
 
 ### What resource types can be reviewed?
 
-Once you integrate your organization’s resources with Azure AD (such as users, applications, and groups), they can be managed and reviewed.
+Once you integrate your organization’s resources with Microsoft Entra ID (such as users, applications, and groups), they can be managed and reviewed.
 
 Typical targets for review include:
 
- -  User access to applications integrated with Azure AD for single-sign-on (such as SaaS, line-of-business).
- -  Group membership (synchronized to Azure AD, or created in Azure AD or Microsoft 365, including Microsoft Teams).
+ -  User access to applications integrated with Microsoft Entra ID for single-sign-on (such as SaaS, line-of-business).
+ -  Group membership (synchronized to Microsoft Entra ID, or created in Microsoft Entra ID or Microsoft 365, including Microsoft Teams).
  -  Access Package that groups resources (groups, apps, and sites) into a single package to manage access.
- -  Azure AD roles and Azure Resource roles as defined in Privileged Identity Management (PIM).
+ -  Microsoft Entra roles and Azure Resource roles as defined in Privileged Identity Management (PIM).
 
 ### Who will create and manage access reviews?
 
@@ -58,11 +60,11 @@ The administrative role required to create, manage, or read an Access Review dep
 | Group or application | Global Administrator                                                            | Global administrator              |
 |                      | User Administrator                                                              | Global reader                     |
 |                      | Identity Governance administrator                                               | User administrator                |
-|                      | Privileged Role administrator (only does review for Azure AD assignable groups) | Identity Governance Administrator |
+|                      | Privileged Role administrator (only does review for Microsoft Entra assignable groups) | Identity Governance Administrator |
 |                      | Group owner                                                                     | Privileged Role Administrator     |
 |                      |                                                                                 | Security reader                   |
 |                      |                                                                                 | Group owner                       |
-| Azure AD role        | Global Administrator                                                            |                                   |
+| Microsoft Entra role        | Global Administrator                                                            |                                   |
 |                      | Privileged Role Administrator                                                   | Global administrator              |
 |                      |                                                                                 | Global reader                     |
 |                      |                                                                                 | User administrator                |
@@ -144,9 +146,9 @@ Group membership can be reviewed by:
 
 We recommend that group owners review membership, as they're best situated to know who needs access. Ownership of groups differs with the type of group.
 
- -  Groups that are created in Microsoft 365 and Azure AD have one or more well-defined owners. In most cases, these owners make perfect reviewers for their own groups as they know who should have access. For example, Microsoft Teams uses Microsoft 365 Groups as the underlying authorization model to grant users access to resources that are in SharePoint, Exchange, OneNote, or other Microsoft 365 services. The creator of the team automatically becomes an owner and should be responsible for attesting to the membership of that group.
- -  Groups created manually in the Azure AD portal or via scripting through Microsoft Graph may not necessarily have owners defined. We recommend that you define them either through the Azure AD Portal in the group’s “Owners” section or via Graph.
- -  Groups that are synchronized from on-premises Active Directory cannot have an owner in Azure AD. When creating an Access Review for them, you should select individuals who are best suited to decide on membership in them.
+ -  Groups that are created in Microsoft 365 and Microsoft Entra ID have one or more well-defined owners. In most cases, these owners make perfect reviewers for their own groups as they know who should have access. For example, Microsoft Teams uses Microsoft 365 Groups as the underlying authorization model to grant users access to resources that are in SharePoint, Exchange, OneNote, or other Microsoft 365 services. The creator of the team automatically becomes an owner and should be responsible for attesting to the membership of that group.
+ -  Groups created manually in the Microsoft Entra admin center or via scripting through Microsoft Graph may not necessarily have owners defined. We recommend that you define them either through the Microsoft Entra admin center in the group’s “Owners” section or via Graph.
+ -  Groups that are synchronized from on-premises Active Directory cannot have an owner in Microsoft Entra ID. When creating an Access Review for them, you should select individuals who are best suited to decide on membership in them.
     
     > [!NOTE]
     > We recommend defining business policies that define how groups are created to ensure clear group ownership and accountability for regular review of membership.
@@ -161,7 +163,7 @@ To minimize manual work and associated potential errors, consider using Dynamic 
 
 ### Review access to on-premises groups
 
-Access reviews can't change the group membership of groups that you synchronize from on-premises with Azure AD Connect. This is because the source of authority is on-premises. You can still use access reviews to schedule and maintain regular reviews of on-premises groups. Reviewers will then take action in the on-premises group. This strategy keeps access reviews as the tool for all reviews. You can use the results from an Access Review on on-premises groups and process them further. The data is available in a CSV file or from Microsoft Graph.
+Access reviews can't change the group membership of groups that you synchronize from on-premises with Microsoft Entra Connect. This is because the source of authority is on-premises. You can still use access reviews to schedule and maintain regular reviews of on-premises groups. Reviewers will then take action in the on-premises group. This strategy keeps access reviews as the tool for all reviews. You can use the results from an Access Review on on-premises groups and process them further. The data is available in a CSV file or from Microsoft Graph.
 
 ## Plan access reviews for applications
 
@@ -176,13 +178,15 @@ We recommend you plan reviews for applications in the following scenarios:
 
 ### Reviewers for an application
 
-Access reviews can be for the members of a group or for users who were assigned to an application. Applications in Azure AD don't necessarily have an owner, which is why the option for selecting the application owner as a reviewer isn't possible. You can further scope a review to review only guest users assigned to the application, rather than reviewing all access.
+Access reviews can be for the members of a group or for users who were assigned to an application. Applications in Microsoft Entra ID don't necessarily have an owner, which is why the option for selecting the application owner as a reviewer isn't possible. You can further scope a review to review only guest users assigned to the application, rather than reviewing all access.
 
-## Plan review of Azure AD and Azure resource roles
+<a name='plan-review-of-azure-ad-and-azure-resource-roles'></a>
 
-Privileged Identity Management (PIM) simplifies how enterprises manage privileged access to resources in Azure AD. This keeps the list of privileged roles, both in Azure AD and Azure resources, much smaller and increases the overall security of the directory.
+## Plan review of Microsoft Entra ID and Azure resource roles
 
-Access reviews allow reviewers to attest whether users still need to be in a role. Just like access reviews for Access Packages, reviews for Azure AD roles and Azure resource are integrated into the PIM admin user experience. We recommend you review the following role assignments regularly:
+Privileged Identity Management (PIM) simplifies how enterprises manage privileged access to resources in Microsoft Entra ID. This keeps the list of privileged roles, both in Microsoft Entra ID and Azure resources, much smaller and increases the overall security of the directory.
+
+Access reviews allow reviewers to attest whether users still need to be in a role. Just like access reviews for Access Packages, reviews for Microsoft Entra roles and Azure resource are integrated into the PIM admin user experience. We recommend you review the following role assignments regularly:
 
  -  Global Administrator
  -  User Administrator
@@ -193,7 +197,7 @@ Access reviews allow reviewers to attest whether users still need to be in a rol
 
 ## Deploy access reviews
 
-After you've prepared a strategy and a plan to review access for resources integrated with Azure AD, deploy and manage reviews by using the resources below.
+After you've prepared a strategy and a plan to review access for resources integrated with Microsoft Entra ID, deploy and manage reviews by using the resources below.
 
 ### Review access packages
 
@@ -205,9 +209,11 @@ Employees' and guests' access needs to groups and applications likely change ove
 
 You can create access reviews for group members or application access, perform access reviews for members of a group or users with access to an application, allow members to review their own access to a group or an application, view access reviews, and take action for on-premises groups with PowerShell.
 
-### Review Azure AD roles
+<a name='review-azure-ad-roles'></a>
 
-To reduce the risk associated with stale role assignments, you should regularly review access of privileged Azure AD roles.
+### Review Microsoft Entra roles
+
+To reduce the risk associated with stale role assignments, you should regularly review access of privileged Microsoft Entra roles.
 
 ### Review Azure resource roles
 
@@ -231,7 +237,7 @@ Popular access reviews tasks to automate using the Graph API for access reviews 
 
 ## Monitor access reviews
 
-Access reviews activities are recorded and available from the Azure AD’s audit logs. You can filter the audit data on the category, activity type, and date range. Here is a sample query:
+Access reviews activities are recorded and available from the Microsoft Entra ID’s audit logs. You can filter the audit data on the category, activity type, and date range. Here is a sample query:
 
 | **Category**  | **Policy**           |
 | ------------- | -------------------- |
@@ -245,7 +251,7 @@ Access reviews activities are recorded and available from the Azure AD’s audit
 |               | Apply decision       |
 | Date range    | Seven days           |
 
-For more advanced queries and analysis of access reviews, and to track changes and completion of reviews, we recommend you export your Azure AD Audit Logs to Azure Log Analytics or Azure Event Hubs. When logs are stored in Azure Log Analytics, you can use the powerful analytics language and build your own dashboards.
+For more advanced queries and analysis of access reviews, and to track changes and completion of reviews, we recommend you export your Microsoft Entra audit logs to Azure Log Analytics or Azure Event Hubs. When logs are stored in Azure Log Analytics, you can use the powerful analytics language and build your own dashboards.
 
 ## Plan communications
 
@@ -269,18 +275,18 @@ Upon selecting Start review, reviewers will be directed to the MyAccess portal f
 
 ## How many licenses must you have?
 
-Your directory needs at least as many Azure AD Premium P2 licenses as the number of employees who will be performing the following tasks:
+Your directory needs at least as many Microsoft Entra ID P2 licenses as the number of employees who will be performing the following tasks:
 
  -  Member users who are assigned as reviewers
  -  Member users who perform a self-review
  -  Member users as group owners who perform an access review
  -  Member users as application owners who perform an access review
 
-For guest users, licensing needs will depend on the licensing model you’re using. However, the below guest users’ activities are considered Azure AD Premium P2 usage:
+For guest users, licensing needs will depend on the licensing model you’re using. However, the below guest users’ activities are considered Microsoft Entra ID P2 usage:
 
  -  Guest users who are assigned as reviewers
  -  Guest users who perform a self-review
  -  Guest users as group owners who perform an access review
  -  Guest users as application owners who perform an access review
 
-Azure AD Premium P2 licenses are not required for users with the Global Administrator or User Administrator roles who set up access reviews, configure settings, or apply the decisions from the reviews.
+Microsoft Entra ID P2 licenses are not required for users with the Global Administrator or User Administrator roles who set up access reviews, configure settings, or apply the decisions from the reviews.
