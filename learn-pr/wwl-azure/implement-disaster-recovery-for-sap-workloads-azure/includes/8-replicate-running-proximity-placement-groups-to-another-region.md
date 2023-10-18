@@ -6,7 +6,7 @@ In a typical scenario, you have your virtual machines running in a proximity pla
 
 ## Considerations
 
-- It's best to failover/failback the virtual machines into a proximity placement group. However, if VM is unable to be brought up inside Proximity Placement during failover/failback, then failover/failback still happens, and virtual machines are be created outside of a proximity placement group.
-- When an Availability Set is pinned to a Proximity Placement Group and during failover/failback VMs in the availability set have an allocation constraint, then the virtual machines are be created outside of both the availability set and proximity placement group.
+- It's best to failover/failback the virtual machines into a proximity placement group. However, if VM is unable to be brought up inside Proximity Placement during failover/failback, then failover/failback still happens, and virtual machines are created outside of a proximity placement group.
+- When an Availability Set is pinned to a Proximity Placement Group and during failover/failback VMs in the availability set have an allocation constraint, then the virtual machines are created outside of both the availability set and proximity placement group.
 - This functionality is currently available via PowerShell and supports any Azure VM using Managed Disks. Site Recovery for Proximity Placement Groups isn't supported for unmanaged disks.
 - Azure Site Recovery doesn't support failback from managed disks for Hyper-V to Azure scenarios. As such, failback from a Proximity Placement Group in Azure to Hyper-V isn't supported.
