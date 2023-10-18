@@ -22,7 +22,7 @@ Alongside **Q# libraries** are a few other sets of API documentation. We won't f
 - *Python libraries* contain details about integration with Python as a host program.
 - *IQ# magic commands* are the magic commands that can be used in Jupyter Notebooks (for example, the [`%package` command](/qsharp/api/iqsharp-magic/package?azure-portal=true) that adds a package to the workspace).
 - *REST APIs*  which allow you to develop clients that use REST calls to work with the service.
-- *ARM templates* to eploy an Azure Quantum workspace using ARM, Bicep, or Terraform.
+- *ARM templates* to deploy an Azure Quantum workspace using ARM, Bicep, or Terraform.
 
 ### Q# library API references
 
