@@ -1,5 +1,3 @@
-
-
 ## Data protection
 
 - Use the Azure Resource Manager deployment model.
