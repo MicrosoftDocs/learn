@@ -4,10 +4,11 @@ title: Summary and resources
 metadata:
   title: Summary and resources
   description: "Summary and resources"
-  ms.date: 07/05/2023
+  ms.date: 10/18/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
+  ms.prod: azure
   ms.service: active-directory
 durationInMinutes: 3
 content: |

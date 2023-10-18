@@ -1,4 +1,3 @@
-
 Managed identities for Azure resources are a feature of Microsoft Entra ID. Each Azure service that supports managed-identities are subject to their own timeline. Make sure you review the availability status of managed identities for your resource and known issues before you begin. After you've configured an Azure resource with a managed identity, you can give the managed identity access to another resource.
 
 ### Add access to other resources
@@ -15,6 +14,6 @@ After you've enabled managed identity on an Azure resource, such as an Azure App
 5.  Pick the Owner, Contributor, or Reader based on the least privilege rules for your applications needs.
 6.  Select the managed identity you want assigned.
     
-    :::image type="content" source="../media/managed-identity-select-8adf45e1.png" alt-text="Screenshot of the Azure portal in the storage account page, choose the managed identity to grant role and access to.":::
+    :::image type="content" source="../media/managed-identity-select-8adf45e1.png" alt-text="Screenshot of the Azure portal in the key vault page, choose the managed identity to grant role and access to.":::
     
 7.  Complete the assignment with the **Review + assign** option.

@@ -1,4 +1,3 @@
-
 Azure role-based access control (Azure RBAC) is the authorization system you use to manage access to Azure resources. To grant access, you assign roles to users, groups, service principals, or managed identities at a particular scope. Primary steps to follow when assigning an Azure role:
 
 1.  Who needs access?
@@ -22,10 +21,13 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
 3.  Identify what level to assign the role (the Scope). Scope is the set of resources that the access applies to. In Azure, you can specify a scope at four levels: management group, subscription, resource group, and resource. Scopes are structured in a parent-child relationship. Each level of hierarchy makes the scope more specific. You can assign roles at any of these levels of scope. The level you select determines how widely the role is applied. Lower levels inherit role permissions from higher levels. Example:
     
     ```
-     - If you assign the **Reader role** to a user at the **management group scope**, that user can read everything in all subscriptions in the management group.
-     - If you assign the **Billing Reader role** to a group at the **subscription scope**, the members of that group can read billing data for every resource group and resource in the subscription.
     
-     - If you assign the **Contributor role** to an application at the **resource group scope**, it can manage resources of all types in that resource group, but not other resource groups in the subscription.
+    - If you assign the **Reader role** to a user at the **management group scope**, that user can read everything in all subscriptions in the management group.
+    - If you assign the **Billing Reader role** to a group at the **subscription scope**, the members of that group can read billing data for every resource group and resource in the subscription.
+    
+    
+    - If you assign the **Contributor role** to an application at the **resource group scope**, it can manage resources of all types in that resource group, but not other resource groups in the subscription.
+    
     
     ```
     
@@ -49,6 +51,7 @@ New-AzRoleAssignment -ObjectId <objectId> `
 -RoleDefinitionName <roleName> `
 -Scope /subscriptions/<subscriptionId>/resourcegroups/<resourceGroupName>/providers/<providerName>/<resourceType>/<resourceSubType>/<resourceName>
 
+
 ```
 
 CLI scripting
@@ -57,5 +60,6 @@ CLI scripting
 az role assignment create --assignee "{assignee}" \
 --role "{roleNameOrId}" \
 --resource-group "{resourceGroupName}"
+
 
 ```
