@@ -1,6 +1,6 @@
-The Products Manager API is about to get serious style upgrade courtesy of you - fake Tailwind Traders developer extraordinaire. In this exercise, you'll turn all of the functions you created earlier into RESTful ones by modifying their configuration files.
+The Products Manager API is about to get serious style upgrade courtesy of you, fake Tailwind Traders developer. In this exercise, you'll turn all of the functions you created earlier into RESTful ones by modifying their configuration files.
 
-1. Open the `api/GetProducts/function.json` file.
+1. In Visual Studio Code, open the `api/GetProducts/function.json` file.
 
 1. Modify the "methods" property so that it only contains the value "get".
 
@@ -81,6 +81,8 @@ The Products Manager API is about to get serious style upgrade courtesy of you -
    }
    ```
 
+1. Save the file.
+
 ## Make the UpdateProduct function RESTful
 
 1. Open the `api/UpdateProduct/function.json` file.
@@ -120,6 +122,8 @@ The Products Manager API is about to get serious style upgrade courtesy of you -
    }
    ```
 
+1. Save the file.
+
 ## Make the DeleteProduct function RESTful
 
 1. Open the `api/DeleteProduct/function.json` file.
@@ -158,6 +162,8 @@ The Products Manager API is about to get serious style upgrade courtesy of you -
      "scriptFile": "../dist/DeleteProduct/index.js"
    }
    ```
+
+1. Save the file.
 
 ## Start the project
 
