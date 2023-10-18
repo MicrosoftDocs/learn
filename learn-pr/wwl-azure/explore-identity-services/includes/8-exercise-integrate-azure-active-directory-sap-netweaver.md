@@ -1,6 +1,4 @@
 
-
-
 Integrating SAP NetWeaver with Microsoft Entra ID provides the following benefits:
 
 - You can control in Microsoft Entra ID who has access to SAP NetWeaver.

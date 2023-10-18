@@ -92,7 +92,6 @@ Identify the subtasks of **Choose network plugin for AKS**
         - Virtual Nodes add on
         - Windows Node Pools
         - Azure Network Policies (Azure Policies)
-        - Azure AD Pod Managed Identity
 
 
 

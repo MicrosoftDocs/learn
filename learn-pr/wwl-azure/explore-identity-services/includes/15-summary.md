@@ -1,6 +1,3 @@
-
-
-
 Now you have:
 
 - Explored Azure virtual machine authentication, authorization, and access control.

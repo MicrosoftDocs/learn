@@ -1,6 +1,4 @@
 
-
-
 Microsoft Entra ID is a Microsoft-managed, cloud-based, identity and access management solution. It provides secure access for organizations and individuals to various cloud-resident services, including Azure, Office 365, Microsoft Dynamics CRM Online, and Microsoft Intune. It can also be used to facilitate seamless authentication to on-premises applications.
 
 Microsoft Entra ID offers multitenancy and scalability:

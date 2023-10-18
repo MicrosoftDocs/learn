@@ -1,6 +1,4 @@
 
-
-
 Integrating SAP Fiori with Microsoft Entra ID gives you the following benefits:
 
 - You can use Microsoft Entra ID to control who has access to SAP Fiori.
