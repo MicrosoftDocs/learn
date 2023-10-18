@@ -1,11 +1,11 @@
-If the Azure built-in roles don't meet the specific needs of your organization, you can create your own Azure custom roles. Just like built-in roles, you can assign custom roles to users, groups, and service principals at management group (in preview only), subscription and resource group scopes. Custom roles are stored in an Microsoft Entra ID and can be shared across subscriptions. Each directory can have up to 5000 custom roles. Custom roles can be created using the Azure portal, Azure PowerShell, Azure CLI, or the REST API.
+If the Azure built-in roles don't meet the specific needs of your organization, you can create your own Azure custom roles. Just like built-in roles, you can assign custom roles to users, groups, and service principals at management group (in preview only), subscription and resource group scopes. Custom roles are stored in a Microsoft Entra ID and can be shared across subscriptions. Each directory can have up to 5000 custom roles. Custom roles can be created using the Azure portal, Azure PowerShell, Azure CLI, or the REST API.
 
 ### Create the custom role from the user interface
 
 :::image type="content" source="../media/new-custom-role-9290de44.png" alt-text="Screenshot of the Microsoft Entra ID screen with a new custom role dialog. Select the attributes you want to role to have.":::
 
 
-You would assign a custom role to a user, group, or other resource the same as you do for built-in. Your admin, just gets to control exactly with capabilities the custom role has access to. The principle of least privilege let's you pick just the capabilities you need. To create the custom role:
+You would assign a custom role to a user, group, or other resource the same as you do for built-in. Your admin gets to control exactly with capabilities the custom role has access to. The principle of least privilege let's you pick just the capabilities you need. To create the custom role:
 
 1.  Open Microsoft Entra admin center.
 2.  From the **Identity** menu, Select **Roles and administration**.

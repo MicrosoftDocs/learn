@@ -1,4 +1,4 @@
-What is a permission? The dictionary definition of permission is the \*\*consent or authorization to perform a specific action." In Microsft Entra ID, you've permissions for each of the operations you're able to do. Permission can range from viewing your settings, to be able to change your setting. Then move on to granting permission to add or remove users and beyond. There are two primary places where permission can be assigned, at a user or group level. However, they all pass down to the user at the final point. When dealing with users, you've both a member-user and a guest-user. The default permissions for the guest-user are slightly less than the member.
+What is a permission? The dictionary definition of permission is the \*\*consent or authorization to perform a specific action." In Microsoft Entra ID, you've permissions for each of the operations you're able to do. Permission can range from viewing your settings, to be able to change your setting. Then move on to granting permission to add or remove users and beyond. There are two primary places where permission can be assigned, at a user or group level. However, they all pass down to the user at the final point. When dealing with users, you've both a member-user and a guest-user. The default permissions for the guest-user are slightly less than the member.
 
 ### What are a sample of the default permissions for users?
 
@@ -6,7 +6,7 @@ What is a permission? The dictionary definition of permission is the \*\*consent
 | -------------------------------------------- | --------------------------------------------------------- |
 | Enumerate list of users and their contacts   | Read own properties                                       |
 | Invite guest users                           | Invite guest users                                        |
-| Can create Security and Microsoft 365 Groups | Can search for non-hidden groups by name                  |
+| Can create Security and Microsoft 365 Groups | Can search for nonhidden groups by name                   |
 | Register new applications                    | Read properties of registered and enterprise applications |
 
 \[!Note\] This is just a small subset, to show differences. If you want a full list of the [Default User Permissions](/azure/active-directory/fundamentals/users-default-permissions)
