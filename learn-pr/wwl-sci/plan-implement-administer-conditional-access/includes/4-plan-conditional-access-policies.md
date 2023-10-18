@@ -7,7 +7,7 @@ Microsoft Entra Conditional Access (CA) analyzes signals, such as user, device, 
 :::image type="content" source="../media/conditional-access-overview-how-it-works-b5356a16.png" alt-text="Diagram of how Conditional Access works. Centralize identity provider verifies rules before access is granted.":::
 
 
-Although security defaults ensure a basic level of security, your organization need more flexibility than security defaults offer. You can use CA to customize security defaults with more granularity and to configure new policies that meet your requirements.
+Although security defaults ensure a basic level of security, your organization needs more flexibility than security defaults offer. You can use CA to customize security defaults with more granularity and to configure new policies that meet your requirements.
 
 ### Benefits
 
