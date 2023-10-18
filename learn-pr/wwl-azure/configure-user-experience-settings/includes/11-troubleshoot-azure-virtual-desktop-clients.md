@@ -43,7 +43,7 @@ If your browser starts acting up or stops working while you're using the web cli
 
 ## Client doesn't show my resources
 
-First, check the Azure Active Directory account you're using. If you've already signed in with a different Azure Active Directory account than the one you want to use for Azure Virtual Desktop, you should either sign out or use a private browser window.
+First, check the Microsoft Entra account you're using. If you've already signed in with a different Microsoft Entra account than the one you want to use for Azure Virtual Desktop, you should either sign out or use a private browser window.
 
 If that doesn't work, make sure your app group is associated with a workspace.
 

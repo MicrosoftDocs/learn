@@ -6,7 +6,7 @@ Your company has decided to implement Azure role-based access control (RBAC) to 
 
 - How are scopes and permissions applied for Azure resources, including the custom role definition?
 
-- Your manager has asked if there are differences between Azure roles and Azure Active Directory (Azure AD) roles. 
+- Your manager has asked if there are differences between Azure roles and Microsoft Entra roles. 
 
 
 ### Answer the following questions

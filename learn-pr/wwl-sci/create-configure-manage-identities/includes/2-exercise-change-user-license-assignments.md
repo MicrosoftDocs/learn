@@ -1,6 +1,8 @@
-## Create a new user in Azure Active Directory
+<a name='create-a-new-user-in-azure-active-directory'></a>
 
-1.  Browse to the Azure Active Directory page of the [Azure portal](https://portal.azure.com/).
+## Create a new user in Microsoft Entra ID
+
+1.  Browse to the Microsoft Entra ID page of the [Azure portal](https://portal.azure.com/).
 2.  In the left navigation, under **Manage**, select **Users**.
 3.  In the Users blade, on the menu, select **New user**.
 4.  Create a user using the following information:
@@ -13,11 +15,11 @@
     | Last name      | Koch                                 |
     | Password       | Make a unique password for the user  |
     | Usage location | Select your preferred usage location |
-5.  When complete, open Azure AD and click on Users to verify the account for Dominique Koch is shown in the list of all users.
+5.  When complete, open Microsoft Entra ID and click on Users to verify the account for Dominique Koch is shown in the list of all users.
 
 ## Update user license assignments
 
-1.  Browse to the [Azure Active Directory](https://portal.azure.com/) blade.
+1.  Browse to the [Microsoft Entra ID](https://portal.azure.com/) blade.
 2.  In the left navigation, under **Manage**, select **Users**.
 3.  In the Users blade, select **Dominique Koch**.
 4.  In the left navigation, select **Licenses.**
