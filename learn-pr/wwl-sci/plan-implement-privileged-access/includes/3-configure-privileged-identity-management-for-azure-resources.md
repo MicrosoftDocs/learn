@@ -1,6 +1,6 @@
-Using Azure AD PIM, you can improve the protection of your Azure resources. This is helpful to:
+Using Microsoft Entra PIM, you can improve the protection of your Azure resources. This is helpful to:
 
- -  Organizations that already use PIM to protect Azure AD roles.
+ -  Organizations that already use PIM to protect Microsoft Entra roles.
  -  Management group and subscription owners who are trying to secure production resources.
 
 When you first set up PIM for Azure resources, you need to discover and select the resources to protect with PIM. There's no limit to the number of resources that you can manage with PIM. However, we recommend starting with your most critical production resources.
@@ -8,7 +8,7 @@ When you first set up PIM for Azure resources, you need to discover and select t
 ## Discover resources
 
 1.  Sign in to the Azure portal.
-2.  Open **Azure AD Privileged Identity Management**.
+2.  Open **Microsoft Entra Privileged Identity Management**.
 3.  Select **Azure resources**.If this is your first time using PIM for Azure resources, you'll see a **Discover resources** page.
     
     :::image type="content" source="../media/discover-resources-first-run-00821624.png" alt-text="Screenshot of the Azure resources page of the Privileged Identity Management.":::

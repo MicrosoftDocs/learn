@@ -1,9 +1,11 @@
-## Manage the lifecycle of external users in Azure AD Identity Governance settings
+<a name='manage-the-lifecycle-of-external-users-in-azure-ad-identity-governance-settings'></a>
+
+## Manage the lifecycle of external users in Microsoft Entra ID Governance settings
 
 You can select what happens when an external user, who was invited to your directory through an access package request being approved, no longer has any access package assignments. This situation can happen if the user relinquishes all their access package assignments, or their last access package assignment expires. By default, when an external user no longer has any access package assignments, they are blocked from signing in to your directory. After 30 days, their guest user account is removed from your directory.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) as a Global administrator. An account with Global administrator or User administrator is required to complete these tasks.
-1. Open Azure Active Directory and the select **Identity Governance**.
+1. Open Microsoft Entra ID and the select **Identity Governance**.
 1. In the left navigation menu, under **Entitlement management**, select **Settings**.
 1. On the top menu, select **Edit**.
     
