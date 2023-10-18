@@ -34,6 +34,6 @@ Cloud-based identity and mobile device management that provides user account and
 
 <a name='azure-active-directory-domain-services-azure-ad-ds'></a>
 
-## Microsoft Entra Domain Services (Microsoft Entra Domain Services)
+## Microsoft Entra Domain Services
 Provides managed domain services with a subset of fully compatible traditional AD DS features such as domain join, group policy, LDAP, and Kerberos / NTLM authentication.
 - Microsoft Entra Domain Services integrates with Microsoft Entra ID, which itself can synchronize with an on-premises AD DS environment. This ability extends central identity use cases to traditional web applications that run in Azure as part of a lift-and-shift strategy.
