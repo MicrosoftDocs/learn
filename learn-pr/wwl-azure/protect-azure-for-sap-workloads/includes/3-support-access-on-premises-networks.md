@@ -1,7 +1,7 @@
 | ![Cartoon image of Amita.](../media/amita.png) | When Amita starts up an office desktop computer, they are authenticated by Microsoft Active Directory. Amita opens and uses desktop SAP applications as if the SAP landscape were running on-premises. From Amita's perspective, there simply is no difference. |
 | :--- | :--- |
 
-Behind the scenes, the company’s on-premises Active Directory works with Azure Active Directory to provide single sign-on to both Azure and the SAP S/4 HANA landscape running in Azure. Other Azure services enable Amita’s connectivity and security.
+Behind the scenes, the company’s on-premises Active Directory works with Microsoft Entra ID to provide single sign-on to both Azure and the SAP S/4 HANA landscape running in Azure. Other Azure services enable Amita’s connectivity and security.
 
 The numbered steps below show what’s happening to the network traffic that Amita generates.
 
