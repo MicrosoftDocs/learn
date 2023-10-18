@@ -1,6 +1,6 @@
 **Microsoft Entra ID** (Microsoft Entra ID) is a cloud-based identity and access management service. This service helps employees access external resources, such as Microsoft 365, the Azure portal, and thousands of other software-as-a-service (SaaS) applications. Microsoft Entra ID also helps them access internal resources like apps on your corporate intranet network, along with any cloud apps developed for your organization.
 
-## :::image type="content" source="../media/Microsoft Entra features-2f5b251f.png" alt-text="Screenshot showing Microsoft Entra features implementation example."::: Who uses Microsoft Entra ID?
+## :::image type="content" source="../media/azure-active-directory-features-2f5b251f.png" alt-text="Screenshot showing Microsoft Entra features implementation example."::: Who uses Microsoft Entra ID?
 
 Microsoft Entra ID is intended for:
 
