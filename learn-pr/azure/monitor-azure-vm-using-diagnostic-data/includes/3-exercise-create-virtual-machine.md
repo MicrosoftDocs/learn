@@ -56,3 +56,12 @@ You enabled boot diagnostics when you created the VM. You can view boot diagnost
 
    :::image type="content" source="../media/3-boot-diagnostics.png" alt-text="Screenshot that shows the boot diagnostic image captured.":::
 
+## View the activity log
+
+The Azure Monitor activity log is an Azure platform log that includes information like when your VM is started or modified. You can view the VM's activity log in the Azure portal by selecting **Activity log** from the VM's left navigation menu. You can also retrieve entries with PowerShell and the Azure CLI. For more functionality, you can create a diagnostic setting to send the activity log to several destinations:
+
+- Azure Monitor Logs for more complex querying and alerting and for longer retention up to two years.
+- Azure Storage for cheaper, long-term archiving.
+- Azure Event Hubs to forward outside of Azure.
+
+:::image type="content" source="../media/activity-log.png" alt-text="Screenshot of the activity log for a VM.":::

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-configure-azure-diagnostic-extension
-title: Create a DCR to monitor events
+title: Collect VM client events
 metadata:
-  title: Create a DCR to monitor events
-  description: Use the Azure Monitor Agent to create a data collection rule (DCR) that collects system event logs and sends them to Azure Monitor Logs.
+  title: Collect VM client events
+  description: Use the Azure Monitor Agent to create a data collection rule (DCR) that collects client system event logs and sends them to Azure Monitor Logs.
   ms.date: 02/03/2023
   author: cwatson-cat
   ms.author: cwatson

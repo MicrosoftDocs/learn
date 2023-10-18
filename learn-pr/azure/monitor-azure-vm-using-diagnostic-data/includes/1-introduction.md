@@ -13,7 +13,7 @@ To complete this module, you need the following prerequisites:
 
 ## Learning objectives
 
-- Explore built-in host metrics and set up recommended alerts.
-- Use Metrics Explorer to create customized metrics charts.
-- Enable and configure VM Insights to collect and display client and workload metrics.
-- Define a data collection rule (DCR) to collect event logs from VMs.
+- Decide which monitoring data you need to collect from your VM.
+- Enable recommended alerts and diagnostics.
+- Use Azure Monitor to collect and analyze VM metrics data.
+- Use Azure Monitor to collect VM performance metrics and event logs.

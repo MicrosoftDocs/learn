@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-create-virtual-machine
-title: Create a VM and view built-in metrics
+title: View VM host monitoring data
 metadata:
-  title: Create a VM and view built-in metrics
-  description: Use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled, and view built-in metrics graphs and boot diagnostics.
+  title: View VM host monitoring data
+  description: Create a Linux VM with recommended alerts and boot diagnostics enabled, and view built-in metrics graphs, boot diagnostics, and the activity log.
   ms.date: 02/03/2023
   author: cwatson-cat
   ms.author: cwatson
@@ -33,7 +33,7 @@ quiz:
       explanation: The VM Availability (preview) metrics graph appears by default after you create a VM.
     - content: Guest OS Available Memory
       isCorrect: true
-      explanation: Guest OS metrics charts aren't available until you enable the Azure Monitor Agent to collect guest VM metrics.
+      explanation: Guest OS metrics charts aren't available until you enable the Azure Monitor Agent to collect client VM metrics.
     - content: Percentage CPU (average)
       isCorrect: false
       explanation: The Percentage CPU (average) metrics graph appears by default after you create a VM.

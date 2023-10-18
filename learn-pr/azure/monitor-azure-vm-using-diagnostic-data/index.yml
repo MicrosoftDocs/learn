@@ -3,7 +3,7 @@ uid: learn.azure.monitor-azure-vm-using-diagnostic-data
 metadata:
   title: Monitor your Azure virtual machines
   description: Learn how to monitor the health and performance of your Azure virtual machines (VMs) by using Azure Monitor Metrics, Alerts, VM Insights, and Data Collection Rules (DCRs).
-  ms.date: 10/11/2023
+  ms.date: 10/18/2023
   author: guywi-ms
   ms.author: guywild
   ms.topic: interactive-tutorial
@@ -12,10 +12,10 @@ metadata:
 title: Monitor your Azure virtual machines
 summary: Learn how to monitor the health and performance of your Azure VMs by using Azure Monitor Metrics, Alerts, VM Insights, and Data Collection Rules (DCRs).
 abstract: | 
-  - Explore built-in host metrics and set up recommended alerts.
-  - Use Metrics Explorer to create customized metrics charts.
-  - Enable and configure VM Insights to collect and display client and workload metrics.
-  - Define a data collection rule (DCR) to collect event logs from VMs.
+  - Decide which monitoring data you need to collect from your VM.
+  - Enable recommended alerts and diagnostics.
+  - Use Azure Monitor to collect and analyze VM metrics data.
+  - Use Azure Monitor to collect VM performance metrics and event logs.
 prerequisites: | 
   - At least **Contributor** role access to an Azure subscription
   - Familiarity with virtualization and Azure VMs
