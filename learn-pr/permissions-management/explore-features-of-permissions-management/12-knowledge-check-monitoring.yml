@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.permissions-management.explore-features-of-permissions-management.knowledge-check-monitoring
-title: Knowledge check for Monitoring
+title: Knowledge check - Monitoring
 metadata:
-  title: Knowledge check for Monitoring
+  title: Knowledge check - Monitoring
   description: Multiple choice and true/false questions
   ms.date: 09/27/2023
   author: jenniferf-skc
   ms.author: jfields
-  ms.topic: interactive-tutorial
-  ms.prod: learn-entra-permissions-management
+  ms.topic: module-standard-task-based
+  ms.service: multicloud-permissions-management
 durationInMinutes: 3
 content: |
   [!include[](includes/12-knowledge-check-monitoring.md)]
