@@ -2,12 +2,12 @@ If you decide to purchase an integrated system, your original equipment manufact
 
 ## Choose an Azure Stack Hub deployment connection model
 
-You can choose to deploy Azure Stack Hub either connected to the internet (and to Azure) or disconnected. Deploy connected to Azure to get the most benefit from Azure Stack Hub, including hybrid scenarios between Azure Stack Hub and Azure. This choice defines which options are available for your identity store (Azure Active Directory or Active Directory Federation Services) and billing model (pay as you use-based billing or capacity-based billing) as summarized in the following diagram and table:
+You can choose to deploy Azure Stack Hub either connected to the internet (and to Azure) or disconnected. Deploy connected to Azure to get the most benefit from Azure Stack Hub, including hybrid scenarios between Azure Stack Hub and Azure. This choice defines which options are available for your identity store (Microsoft Entra ID or Active Directory Federation Services) and billing model (pay as you use-based billing or capacity-based billing) as summarized in the following diagram and table:
 
 :::image type="content" source="../media/azure-stack-sub-integrated-systems-connection-models-image-24-90824009.png" alt-text="Azure Stack Hub deployment and billing scenarios.":::
 
 
-Choosing Active Directory Federation Services (AD FS) or Azure Active Directory (Azure AD) is a one-time decision that you must make at deployment time. You can't make changes later without redeploying the entire system.
+Choosing Active Directory Federation Services (AD FS) or Microsoft Entra ID is a one-time decision that you must make at deployment time. You can't make changes later without redeploying the entire system.
 
 :::row:::
   :::column:::
@@ -22,7 +22,7 @@ Choosing Active Directory Federation Services (AD FS) or Azure Active Directory 
 :::row-end:::
 :::row:::
   :::column:::
-    Azure AD
+    Microsoft Entra ID
   :::column-end:::
   :::column:::
     **Yes**

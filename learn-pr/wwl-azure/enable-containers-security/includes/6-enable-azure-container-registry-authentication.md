@@ -1,6 +1,6 @@
 There are several ways to authenticate with an Azure container registry, each of which is applicable to one or more registry usage scenarios.
 
-Recommended ways include authenticating to a registry directly via individual login, or your applications and container orchestrators can perform unattended, or "headless," authentication by using an Azure Active Directory (Azure AD) service principal.
+Recommended ways include authenticating to a registry directly via individual login, or your applications and container orchestrators can perform unattended, or "headless," authentication by using a Microsoft Entra service principal.
 
 ## Authentication options
 
@@ -19,7 +19,7 @@ The following table lists available authentication methods and recommended scena
 :::row-end:::
 :::row:::
   :::column:::
-    Azure AD identities including user and service principals
+    Microsoft Entra identities including user and service principals
   :::column-end:::
   :::column:::
     Unattended push from DevOps, unattended pull to Azure or external services
@@ -52,9 +52,11 @@ The following table lists available authentication methods and recommended scena
 :::row-end:::
 
 
-## Individual login with Azure AD
+<a name='individual-login-with-azure-ad'></a>
 
-When working with your registry directly, such as pulling images to and pushing images from a development workstation, authenticate by using the az acr login command in the Azure CLI. When you log in with az acr login, the CLI uses the token created when you executed az login to seamlessly authenticate your session with your registry. To complete the authentication flow, Docker must be installed and running in your environment. az acr login uses the Docker client to set an Azure Active Directory token in the docker.config file. Once you've logged in this way, your credentials are cached, and subsequent docker commands in your session do not require a username or password.
+## Individual login with Microsoft Entra ID
+
+When working with your registry directly, such as pulling images to and pushing images from a development workstation, authenticate by using the az acr login command in the Azure CLI. When you log in with az acr login, the CLI uses the token created when you executed az login to seamlessly authenticate your session with your registry. To complete the authentication flow, Docker must be installed and running in your environment. az acr login uses the Docker client to set a Microsoft Entra token in the docker.config file. Once you've logged in this way, your credentials are cached, and subsequent docker commands in your session do not require a username or password.
 
 ## Service principal
 
