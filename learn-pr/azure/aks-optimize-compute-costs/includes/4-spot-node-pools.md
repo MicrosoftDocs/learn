@@ -67,71 +67,9 @@ Before you decide to add a spot user node pool to your AKS cluster, consider the
 
 Remember that spot node pools should be used only for workloads that can be interrupted.
 
-## Create a spot node pool
-
-Spot node pools are in preview at the time this module is being written. To complete configuration of the spot node pool, you need to enable the preview feature on the **Microsoft.ContainerService** resource provider and install the aks-preview CLI extension.
-
 >[!IMPORTANT]
 >
 >In some subscriptions, such as sponsorship subscriptions, the ability to create spot VMs and spot node pools is limited. You might not be able to create a spot node pool for your cluster.
-
-## Enable preview features on your subscription
-
-To use spot node pools, you must enable the **spotpoolpreview** feature on your subscription and provide the latest set of service enhancements when configuring a cluster.
-
->[!CAUTION]
->
->After you enable some preview features in Azure, defaults might be used for all AKS clusters created in the subscription. Test any preview features in non-production subscriptions to avoid unforeseen side effects in production deployments.
-
-To register the **spotpoolpreview** feature:
-
-1. Use the `az feature register` command to register the **spotpoolpreview** feature. This command takes two parameters: *namespace* identifies the resource provider you're registering the feature with, and *name* identifies the feature.
-
-    You register the **spotpoolpreview** feature with the **Microsoft Container Service** resource provider.
-
-    The **Microsoft Container Service** resource provider enables AKS cluster management. Examples of actions include creating, updating, and deleting container services, or reading details about each service.
-
-    Here's an example of the `az feature register` command to register the **spotpoolpreview** feature:
-
-    ```azurecli
-    az feature register --namespace "Microsoft.ContainerService" --name "spotpoolpreview"
-    ```
-
-1. The registration of the resource provider requires a refresh when the feature is registered. To check the status of the registration, query the resource provider's feature list. The `az feature list` query returns the value **Registered** when it's complete. Here's an example of the query command:
-
-    ```azurecli
-    az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/spotpoolpreview')].{Name:name,State:properties.state}"
-    ```
-
-1. When the feature is registered, the last step is to propagate the new registration. Run the `az provider register` command with the `--namespace` parameter, specifying the same resource provider as before. Here's an example of the `az provider register` command.
-
-    ```azurecli
-    az provider register --namespace Microsoft.ContainerService
-    ```
-
-## Install the aks-preview CLI extension
-
-The AKS spot node pool command parameters are available only in the aks-preview CLI extension. Without the extension installed, you can't use the preview features.
-
-You can run the following commands to install the extension or, if it's already installed, to check its version and update it.
-
-If the extension isn't already installed, run this command to install it:
-
-```azurecli
-az extension add --name aks-preview
-```
-
-You must install the aks-preview CLI extension version 0.4.53 or later to create an AKS cluster that uses spot node pools. Check the installed version of the extension if you've already installed the preview version. To query the extension version, run the `az extension show` command:
-
-```azurecli
-az extension show --name aks-preview --query [version]
-```
-
-If you've previously installed the extension and need to update it to a newer version, run the `az extension update` command:
-
-```azurecli
-az extension update --name aks-preview
-```
 
 ## Add a spot node pool to an AKS cluster
 
@@ -172,7 +110,9 @@ Set the minimum node count to a value between 1 and 100 by using the `--min-coun
 
 Set the maximum node count to a value between 1 and 100 by using the `--max-count` parameter. A maximum node count is required when you enable the cluster autoscaler.
 
-Here's an example `az aks nodepool add` command that adds a spot node pool. Notice the use of another parameter to enable the spot node features.
+### Sample Configuration
+
+Here's an example `az aks nodepool add` command that adds a spot node pool with a max count of 3 and min count of 1. Notice the use of `--enable-cluster-autoscaler` to enable the spot node features.
 
 ```azurecli
 az aks nodepool add \
