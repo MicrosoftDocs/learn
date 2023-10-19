@@ -3,11 +3,11 @@ uid: learn.wwl.implement-manage-external-identities
 metadata:
   title: Implement and manage external identities
   description: "Inviting external users to use company Azure resources is a great benefit, but you want to do it in a secure way. Explore how to enable secure external collaboration."
-  ms.date: 07/10/2023
+  ms.date: 10/19/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: identity-and-access
+  ms.prod: azure
 title: Implement and manage external identities
 summary: Inviting external users to use company Azure resources is a great benefit, but you want to do it in a secure way. Explore how to enable secure external collaboration.
 abstract: |
@@ -18,7 +18,7 @@ abstract: |
   - Configure identity providers (social and SAML/WS-fed)
 prerequisites: |
   None
-iconUrl: /training/achievements/implement-and-manage-external-identities.svg
+iconUrl: /learn/achievements/implement-and-manage-external-identities.svg
 levels:
 - advanced
 roles:
@@ -27,15 +27,14 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-b2c
 - entra
-- entra-workload-identities
+- entra-verified-id
+- entra-external-id
 subjects:
 - identity-access
 units:
 - learn.wwl.implement-manage-external-identities.introduction
-- learn.wwl.implement-manage-external-identities.describe-guess-access-business-to-business-accounts
+- learn.wwl.implement-manage-external-identities.describe-guest-access-business-to-business-accounts
 - learn.wwl.implement-manage-external-identities.collaboration
 - learn.wwl.implement-manage-external-identities.exercise-configure-external-collaboration
 - learn.wwl.implement-manage-external-identities.invite-external-users-individually-bulk
@@ -43,11 +42,11 @@ units:
 - learn.wwl.implement-manage-external-identities.exercise-invite-guest-users-bulk
 - learn.wwl.implement-manage-external-identities.demo-invite-guest-users-to-app
 - learn.wwl.implement-manage-external-identities.user-accounts-azure-active-directory
-- learn.wwl.implement-manage-external-identities.manage-extern-users-microsoft-365-workload
+- learn.wwl.implement-manage-external-identities.manage-external-users-microsoft-365-workloads
 - learn.wwl.implement-manage-external-identities.exercise-explore-dynamic-groups
-- learn.wwl.implement-manage-external-identities.implement-cross-tenant-access-controls
-- learn.wwl.implement-manage-external-identities.configure-identity-providers
 - learn.wwl.implement-manage-external-identities.implement-manager-entra-verified-id
+- learn.wwl.implement-manage-external-identities.configure-identity-providers
+- learn.wwl.implement-manage-external-identities.implement-cross-tenant-access-controls
 - learn.wwl.implement-manage-external-identities.knowledge-check
 - learn.wwl.implement-manage-external-identities.summary-resources
 badge:
