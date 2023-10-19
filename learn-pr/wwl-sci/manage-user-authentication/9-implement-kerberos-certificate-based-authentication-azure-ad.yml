@@ -4,7 +4,7 @@ title: Implement Kerberos and certificate-based authentication in Microsoft Entr
 metadata:
   title: Implement Kerberos and certificate-based authentication in Microsoft Entra ID
   description: "Implement Kerberos and certificate-based authentication in Microsoft Entra ID"
-  ms.date: 10/18/2023
+  ms.date: 10/19/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
