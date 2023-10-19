@@ -17,9 +17,9 @@ By default, a container app is in single revision mode. In this mode, when a new
 
 ### Multiple revision mode
 
-You can also set the revision mode to multiple revision mode. Multiple revision mode enables you to run multiple revisions of your app simultaneously. While in this mode, new revisions are activated alongside current active revisions.
+You can also set the revision mode to `Multiple`. The `Multiple` revision mode enables you to run multiple revisions of your app simultaneously. While in this mode, new revisions are activated alongside current active revisions.
 
-For an app implementing external HTTP ingress, you can control the percentage of traffic going to each active revision from your container app's Revision management page in the Azure portal, using Azure CLI commands, or in an ARM template.
+For apps that implement external HTTP ingress, you can control the percentage of traffic that goes to each active revision. Configure traffic control from your container app's Revision management page in the Azure portal, using Azure CLI commands, or in an ARM template.
 
 ## Revision Labels
 
@@ -28,7 +28,7 @@ For container apps with external HTTP traffic, labels are a portable means to di
 - Labels keep the same URL when moved from one revision to another.
 - A label can be applied to only one revision at a time.
 - Allocation for traffic splitting isn't required for revisions with labels.
-- Labels are most useful when the app is in multiple revision mode.
+- Labels are most useful when the revision mode is set to `Multiple`.
 - You can enable labels, traffic splitting or both.
 - Labels are useful for testing new revisions. For example, when you want to give access to a set of test users, you can give them the label's URL. Then when you want to move your users to a different revision, you can move the label to that revision.
 

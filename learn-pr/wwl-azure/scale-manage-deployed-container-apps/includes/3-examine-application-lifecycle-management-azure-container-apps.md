@@ -12,7 +12,7 @@ As a container app is deployed, the first revision is automatically created.
 
 ## Update
 
-As a container app is updated with a revision scope-change, a new revision is created. You can choose whether to automatically deactivate old revisions (single revision mode), or allow them to remain available (multiple revision mode).
+As a container app is updated with a revision scope-change, a new revision is created. You can choose whether to automatically deactivate old revisions (single revision mode), or allow them to remain available (`Multiple` revision mode).
 
 ![Diagram showing the update phase of a container app instance.](../media/azure-container-apps-lifecycle-update.png)
 
@@ -23,7 +23,7 @@ In single revision mode, Container Apps automatically ensures your app doesn't e
 > [!NOTE]
 > A new revision is considered ready when one of its replicas starts and becomes ready. A replica is ready when all of its containers start and pass their startup and readiness probes.
 
-In multiple revision mode, you control when revisions are activated or deactivated and which revisions receive ingress traffic. If a traffic splitting rule is configured with `latestRevision` set to `true`, traffic doesn't switch to the latest revision until it's ready.
+In `Multiple` revision mode, you control when revisions are activated or deactivated and which revisions receive ingress traffic. If a traffic splitting rule is configured with `latestRevision` set to `true`, traffic doesn't switch to the latest revision until it's ready.
 
 ## Deactivate
 

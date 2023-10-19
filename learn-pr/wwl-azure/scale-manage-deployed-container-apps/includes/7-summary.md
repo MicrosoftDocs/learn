@@ -2,7 +2,7 @@ In this module, you have learned about revisions in Azure Container Apps. Revisi
 
 The main takeaways from this module are that revisions in Azure Container Apps help manage the release of updates to your container app, and you can control which revisions are active and the external traffic that is routed to each active revision. Additionally, labels are a portable means to direct traffic to specific revisions for container apps with external HTTP traffic.
 
-Additional reading:
+Detailed resources:
 
 - Revisions in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/revisions](/azure/container-apps/revisions)
 

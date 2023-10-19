@@ -25,7 +25,7 @@ You can enable ingress when you create your container app, or you can enable ing
 
 ## Traffic splitting
 
-By default, when ingress is enabled, all traffic is routed to the latest deployed revision. When you enable multiple revision mode in your container app, you can split incoming traffic between active revisions.
+By default, when ingress is enabled, all traffic is routed to the latest deployed revision. When you enable `Multiple` revision mode in your container app, you can split incoming traffic between active revisions.
 
 Traffic splitting is useful for testing updates to your container app. You can use traffic splitting to gradually phase in a new revision in blue-green deployments or in A/B testing.
 
