@@ -26,7 +26,7 @@ User node pools support your workloads, and you can specify Windows or Linux as 
 
 You can configure up to 100 nodes in a node pool. However, the number of nodes you choose to configure depends on the number of pods that run per node.
 
-For example, in a system node pool, it's essential to set the maximum number of pods that run on a single node to 30. This value guarantees that enough space is available to run the system pods critical to cluster health. When the number of pods exceeds this minimum value, new nodes are required in the pool to schedule additional workloads. For this reason, a system node pool needs at least one node in the pool. For production environments, the recommended node count for a system node pool is a minimum of three nodes.
+For example, in a system node pool, it's essential to set the maximum number of pods that run on a single node to 30. This value guarantees that enough space is available to run the system pods critical to cluster health. When the number of pods exceeds this minimum value, new nodes are required in the pool to schedule extra workloads. For this reason, a system node pool needs at least one node in the pool. For production environments, the recommended node count for a system node pool is a minimum of three nodes.
 
 User node pools are designed to run custom workloads and don't have the 30-pod requirement. User node pools allow you to set the node count for a pool to zero.
 
@@ -78,7 +78,7 @@ Let's look at each option, starting with the horizontal pod autoscaler.
 
 Use the Kubernetes horizontal pod autoscaler to monitor the resource demand on a cluster and automatically scale the number of workload replicas.
 
-The Kubernetes Metrics Server collects memory and processor metrics from controllers, nodes, and containers that run on the AKS cluster. One way to access this information is to use the Metrics API. The horizontal pod autoscaler checks the Metrics API every 30 seconds to decide whether your application needs additional instances to meet the required demand.
+The Kubernetes Metrics Server collects memory and processor metrics from controllers, nodes, and containers that run on the AKS cluster. One way to access this information is to use the Metrics API. The horizontal pod autoscaler checks the Metrics API every 30 seconds to decide whether your application needs more instances to meet the required demand.
 
 Assume your company also has a batch-processing service that schedules drone flight paths. You see the service gets inundated with requests and builds up a backlog of deliveries, causing delays and frustrations for customers. Increasing the number of batch-processing service replicas could enable the timely processing of orders.
 
@@ -88,7 +88,7 @@ However, the horizontal pod autoscaler scales pods only on available nodes in th
 
 ### Cluster autoscaler
 
-A resource constraint is triggered when the horizontal pod autoscaler can't schedule additional pods on the existing nodes in a node pool. You use the cluster autoscaler to scale the number of nodes in a cluster's node pools. The cluster autoscaler checks the defined metrics and scales the number of nodes up or down based on the computing resources required.
+A resource constraint is triggered when the horizontal pod autoscaler can't schedule another pod on the existing nodes in a node pool. You need to use the cluster autoscaler to scale the number of nodes in a cluster's node pools in times of constraints. The cluster autoscaler checks the defined metrics and scales the number of nodes up or down based on the computing resources required.
 
 The cluster autoscaler is used alongside the horizontal pod autoscaler.
 
@@ -97,5 +97,4 @@ The cluster autoscaler monitors for both scale-up and scale-down events, and all
 You configure each node pool with different scale rules. For example, you might want to configure only one node pool to allow autoscaling. Or you might configure a node pool to scale only to a specific number of nodes.
 
 >[!IMPORTANT]
->
 >You lose the ability to scale the node count to zero when you enable the cluster autoscaler on a node pool.
