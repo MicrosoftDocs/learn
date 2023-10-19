@@ -18,7 +18,7 @@ In **New policy** settings, select **Cloud apps or actions** and select **Visual
 
 ## Sign-in risk-based Conditional Access
 
-Most users have a normal behavior that can be tracked. When they fall outside of this norm, it could be risky to allow them to just sign in. You may want to block that user or maybe just ask them to perform multifactor authentication to prove that they are really who they say they are.
+Most users have a normal behavior that can be tracked. When they fall outside of this norm, it could be risky to allow them to just sign in. You might want to block that user or maybe just ask them to perform multifactor authentication to prove that they are really who they say they are.
 
 A sign-in risk represents the probability that a given authentication request isn't authorized by the identity owner. Organizations with Microsoft Entra ID Premium P2 licenses can create Conditional Access policies incorporating Microsoft Entra Identity Protection sign-in risk detections.
 
@@ -32,7 +32,7 @@ Like sign-in risk-based Conditional Access, this policy can be assigned either t
 
 ## Securing security info registration
 
-Securing when and how users register for multifactor Authentication and self-service password reset is now possible with user actions in Conditional Access policy. This preview feature is available to organizations that have enabled the combined registration preview. This functionality may be enabled in organizations where they want to use conditions like trusted network location to restrict access to register for multifactor Authentication and self-service password reset (SSPR).
+Securing when and how users register for multifactor authentication and self-service password reset is now possible with user actions in Conditional Access policy. This preview feature is available to organizations that have enabled the combined registration preview. This functionality might be enabled in organizations where they want to use conditions like trusted network location to restrict access to register for multifactor authentication and self-service password reset (SSPR).
 
 ### Create a policy to require registration from a trusted location
 
@@ -66,7 +66,7 @@ The following policy applies to all selected users who attempt to register using
 
 At step 6 in this policy, organizations have choices they can make. The policy above requires registration from a trusted network location. Organizations can choose to utilize any available conditions in place of **Locations**. Remember that this policy is a block policy, so anything included is blocked.
 
-Some may choose to use device state instead of location in step 6 above:
+Some might choose to use device state instead of location in step 6 above:
 
 11. Under **Conditions**, select **Device state (Preview)**.
 12. Configure **Yes**.
@@ -159,7 +159,7 @@ The following steps will help create a Conditional Access policy to require devi
 
 ### Known behavior
 
-On Windows 7, iOS, Android, macOS, and some third-party web browsers, Microsoft Entra iD identifies the device using a client certificate that is provisioned when the device is registered with Microsoft Entra ID. When a user first signs in through the browser, the user is prompted to select the certificate. The end user must select this certificate before they can continue to use the browser.
+On Windows 7, iOS, Android, macOS, and some third-party web browsers, Microsoft Entra ID identifies the device using a client certificate that is provisioned when the device is registered with Microsoft Entra ID. When a user first signs in through the browser, the user is prompted to select the certificate. The end user must select this certificate before they can continue to use the browser.
 
 ## Block access
 
