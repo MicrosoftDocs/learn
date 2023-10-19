@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-container-instances-sidecar.understand-yaml
-title: Understand Azure Container Instances YAML definitions 
+title: Use YAML container instance definitions
 metadata:
-  title: Understand Azure Container Instances YAML definitions
+  title: Use YAML container instance definitions
   description: Understand Azure Container Instances YAML definitions
   ms.date: 04/27/2022
   author: erjosito
