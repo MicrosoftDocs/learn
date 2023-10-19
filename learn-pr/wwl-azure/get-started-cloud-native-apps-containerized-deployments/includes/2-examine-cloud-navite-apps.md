@@ -12,7 +12,7 @@ Designed to thrive in a dynamic, virtualized cloud environment, these systems ma
 
 Consider the widely accepted DevOps concept of Pets vs. Cattle. In a traditional data center, servers are treated as Pets: a physical machine, given a meaningful name, and cared for. You scale by adding more resources to the same machine (scaling up). If the server becomes sick, you nurse it back to health. Should the server become unavailable, everyone notices.
 
-The Cattle service model is different. You provision each instance as a virtual machine or container. They're identical and assigned a system identifier such as Service-01, Service-02, and so on. You scale by creating more of them (scaling out). When one becomes unavailable, nobody notices.
+The Cattle service model is different. You provision each instance as a virtual machine or container. They're identical and assigned a system identifier such as Service-01, Service-02, and so on. You scale by creating more instances (scaling out). Nobody notices when an instance becomes unavailable.
 
 The cattle model embraces immutable infrastructure. Servers aren't repaired or modified. If one fails or requires updating, it's destroyed and a new one is provisioned – all done via automation.
 
@@ -24,7 +24,7 @@ The Azure cloud platform supports this type of highly elastic infrastructure wit
 
 Cloud-native applications are built to take advantage of cloud computing models to increase speed, flexibility, and quality, while reducing deployment risks. Cloud-native applications offer the following advantages:
 
-- **Resilient**. Cloud-native applications are resilient to failure and can scale to meet demand. They are designed to be loosely coupled and distributed, so if one component fails, the application can continue to function.
+- **Resilient**. Cloud-native applications are resilient to failure and can scale to meet demand. They're designed to be loosely coupled and distributed, so if one component fails, the application can continue to function.
 - **Elastic**. Cloud-native applications can scale out to meet demand and scale in to reduce costs. They can also scale to zero when not in use.
 - **Observable**. Cloud-native applications are observable, so you can monitor their health and performance.
 - **Automated**. Cloud-native applications are automated, so you can build, test, and deploy them quickly and reliably.
