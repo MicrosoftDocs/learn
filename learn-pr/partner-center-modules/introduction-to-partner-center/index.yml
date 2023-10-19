@@ -9,7 +9,7 @@ metadata:
   ms.author: juliacawthra
   manager: jasonh
   ms.topic: module-intro-to-product  
-  ms.service: partner-dashboard         
+  ms.service: partner-dashboard
 
 title: Introduction to Partner Center
 
@@ -28,6 +28,8 @@ prerequisites: |
   - None
 
 iconUrl: /learn/achievements/generic-badge.svg
+
+hidden: true
 
 levels:
   - beginner
