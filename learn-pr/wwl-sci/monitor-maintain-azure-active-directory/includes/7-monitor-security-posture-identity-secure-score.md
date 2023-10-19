@@ -23,10 +23,10 @@ By following the improvement actions, you can:
 
 ## How do I get my secure score?
 
-The identity secure score is available in all editions of Azure AD. Organizations can access their identity secure score, with the following steps:
+The identity secure score is available in all editions of Microsoft Entra ID. Organizations can access their identity secure score, with the following steps:
 
 1. Azure portal.
-1. Azure Active Directory.
+1. Microsoft Entra ID.
 1. Security.
 1. Identity Secure Score.
 

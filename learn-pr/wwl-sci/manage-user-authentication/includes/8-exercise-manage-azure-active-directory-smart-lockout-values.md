@@ -1,10 +1,12 @@
-## Manage Azure Active Directory smart lockout values
+<a name='manage-azure-active-directory-smart-lockout-values'></a>
 
-Based on your organizational requirements, you can customize the Azure AD smart lockout values. Customization of the smart lockout settings, with values specific to your organization, requires Azure AD Premium P1 or higher licenses for your users.
+## Manage Microsoft Entra smart lockout values
+
+Based on your organizational requirements, you can customize the Microsoft Entra smart lockout values. Customization of the smart lockout settings, with values specific to your organization, requires Microsoft Entra ID P1 or higher licenses for your users.
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) using a Global administrator account.
-2.  Open the portal menu and then select **Azure Active Directory**.
-3.  On the Azure Active Directory blade, under **Manage**, select **Security**.
+2.  Open the portal menu and then select **Microsoft Entra ID**.
+3.  On the Microsoft Entra blade, under **Manage**, select **Security**.
 4.  On the Security blade, in the left navigation, select **Authentication methods**.
 5.  In the left navigation, select **Password protection**.
     

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-identity-services.explore-azure-active-directory-azure-ad
-title: Explore Azure Active Directory (Azure AD)
+title: Explore Microsoft Entra ID
 metadata:
-  title: Explore Azure Active Directory (Azure AD)
-  description: "Explore Azure Active Directory (Azure AD)"
+  title: Explore Microsoft Entra ID
+  description: "Explore Microsoft Entra ID"
   ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric

@@ -7,7 +7,7 @@ The need to keep application components on-premises doesn't have to be a barrier
 
 ### Data Flow
 
-1.  Set up an Azure Active Directory tenant.
+1.  Set up a Microsoft Entra tenant.
 2.  Create users.
 3.  Deploy, manage, and operate application resources on Azure and Azure Stack Hub.
 4.  Create service principles.

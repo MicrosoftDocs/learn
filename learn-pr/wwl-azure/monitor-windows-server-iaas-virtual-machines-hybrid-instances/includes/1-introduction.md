@@ -34,7 +34,7 @@ In order to get the best learning experience from this module, it's important th
 - Core Microsoft compute, storage, networking, and virtualization technologies.
 - On-premises resiliency Windows Server–based compute and storage technologies.
 - Implementing and managing IaaS services in Azure.
-- Azure Active Directory (Azure AD).
+- Microsoft Entra ID.
 - Security-related technologies such as firewalls, encryption, and multi-factor authentication.
 - Windows PowerShell scripting.
 - Automation and monitoring.

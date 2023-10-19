@@ -18,7 +18,7 @@ Libraries in Q# are distributed as [NuGet](https://www.nuget.org?azure-portal=tr
 
 NuGet is a package manager for various different platforms, and is the primary package manager for most .NET languages. It allows developers to produce, share, and consume useful code. A NuGet package is essentially a .zip file that contains compiled code and related files.
 
-The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any compatible package. Naturally, a Q# project can use only the packages that are meant for use with Q#. Examples include packages that contain Q# libraries, new/custom simulators, or new magic commands for [Q# Jupyter Notebooks](/azure/quantum/install-overview-qdk#jupyter-notebooks).
+The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any compatible package. Naturally, a Q# project can use only the packages that are meant for use with Q#. Examples include packages that contain Q# libraries, new/custom simulators, or new magic commands for [Q# Jupyter Notebooks](/azure/quantum/install-overview-qdk#jupyter-notebooks?azure-portal=true).
 
 Users can easily use the Q# libraries produced by Microsoft, along with other Q# libraries that aren't released as part of the QDK, because they're all hosted through NuGet.
 
@@ -28,7 +28,7 @@ As you'll learn later in this unit, the simple process of adding these libraries
 
 Microsoft provides four libraries as part of the QDK.
 
-The *standard library* provides much of Q#'s primary functionality and is the focus of this module. The other three libraries are focused on more domain-specific functionality:
+- The *standard library* provides much of Q#'s primary functionality and is the focus of this module. The other three libraries are focused on more domain-specific functionality:
 
 - The *quantum chemistry library* provides a data model for loading representations of fermionic Hamiltonians (for example, molecular systems) and casting them to a representation that can be mapped to a quantum computer's physical qubits. This library also provides operations to reveal system properties and simulate dynamics.
 - The *quantum machine learning library* provides an implementation of a hybrid quantum-classical algorithm that makes use of quantum computing to encode and process the data.
@@ -42,7 +42,7 @@ The *standard library* provides much of Q#'s primary functionality and is the fo
 
 The standard library is included in every Q# project by default. Accessing other libraries, including the domain-specific libraries, requires adding their respective packages to the project.
 
-Depending on your Q# development setup, the method of adding the packages will vary. You can find specifics at [The Q# Libraries](/azure/quantum/user-guide/libraries/) in the official documentation. Regardless of your environment, though, the process is straightforward.
+Depending on your Q# development setup, the method of adding the packages will vary. You can find specifics at [The Q# Libraries](/azure/quantum/user-guide/libraries/?azure-portal=true) in the official documentation. Regardless of your environment, though, the process is straightforward.
 
 For example, if you're working with Q# command-line applications in Visual Studio Code, you can simply use the `dotnet` command to add a NuGet package reference to your project. Adding the [Microsoft.Quantum.Numerics](https://www.nuget.org/packages/Microsoft.Quantum.Numerics?azure-portal=true) package then requires only running the following command:
 

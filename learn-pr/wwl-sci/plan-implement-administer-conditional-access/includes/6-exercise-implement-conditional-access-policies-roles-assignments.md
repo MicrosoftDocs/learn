@@ -1,10 +1,10 @@
 ## Create a conditional access policy
 
-Azure Active Directory Conditional Access is an advanced feature of Azure AD that allows you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like groups, device type, location, and role.
+Microsoft Entra Conditional Access is an advanced feature of Microsoft Entra ID that allows you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like groups, device type, location, and role.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using a Global administrator account.
-1. Open the portal menu and then select **Azure Active Directory**.
-1. On the Azure Active Directory blade, under **Manage**, select **Security**.
+1. Open the portal menu and then select **Microsoft Entra ID**.
+1. On the Microsoft Entra blade, under **Manage**, select **Security**.
 1. On the Security blade, in the left navigation, select **Conditional access**.
 1. On the top menu, select **New policy**.
     
