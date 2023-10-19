@@ -1,27 +1,14 @@
 To train models with the Azure Machine Learning workspace, you have several options:
 
-- Use the **designer** in the Azure Machine Learning studio.
 - Use **Automated Machine Learning**.
 - Run a Jupyter notebook.
 - Run a script as a job.
 
-## Author and run a pipeline with the designer
-
-In the Azure Machine Learning studio, you can use the designer when you want to use a drag and drop web-based user interface (UI) to create and run pipelines. 
-
-You can create a pipeline by using the built-in or custom components. 
-
-:::image type="content" source="../media/designer-canvas.png" alt-text="Screenshot of a sample pipeline created in the Designer." lightbox="../media/designer-canvas.png":::
-
-The designer is ideal for easy and quick exploration during the initial phase of training machine learning models. 
-
-You can also use the designer to swiftly create pipelines using components you've created and registered in the workspace.
-
 ## Explore algorithms and hyperparameter values with Automated Machine Learning
 
-When you have a training dataset and you're tasked with finding the best performing model, you might want to experiment with various algorithms and hyperparameter values. 
+When you have a training dataset and you're tasked with finding the best performing model, you might want to experiment with various algorithms and hyperparameter values.
 
-Manually experimenting with different configurations to train a model might take long. Alternatively, you can use Automated Machine Learning to speed up the process. 
+Manually experimenting with different configurations to train a model might take long. Alternatively, you can use Automated Machine Learning to speed up the process.
 
 Automated Machine Learning iterates through algorithms paired with feature selections to find the best performing model for your data.
 
@@ -29,9 +16,9 @@ Automated Machine Learning iterates through algorithms paired with feature selec
 
 ## Run a Jupyter notebook
 
-When you prefer to develop by running code in notebooks, you can use the built-in notebook feature in the workspace. 
+When you prefer to develop by running code in notebooks, you can use the built-in notebook feature in the workspace.
 
-The **Notebooks** page in the studio allows you to edit and run Jupyter notebooks. 
+The **Notebooks** page in the studio allows you to edit and run Jupyter notebooks.
 
 :::image type="content" source="../media/notebooks.png" alt-text="Screenshot of an open notebook in the Azure Machine Learning studio.":::
 
