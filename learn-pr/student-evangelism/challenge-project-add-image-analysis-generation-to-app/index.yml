@@ -1,8 +1,7 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app
 metadata:
-  title: |
-    Challenge project - Add image analysis and generation capabilities to your application
+  title: Challenge project - Add image analysis and generation capabilities to your application
   description: "Add image analysis and generation capabilities to your application"
   ms.date: 9/5/2023
   author: carlottac94
@@ -20,8 +19,7 @@ metadata:
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.prod: azure
-title: |
-  Challenge project - Add image analysis and generation capabilities to your application
+title: Challenge project - Add image analysis and generation capabilities to your application
 summary: |
   Demonstrate your ability to develop a smart web application that integrates computer vision capabilities, leveraging Azure AI Vision and Azure OpenAI cognitive services.
   > [!NOTE]

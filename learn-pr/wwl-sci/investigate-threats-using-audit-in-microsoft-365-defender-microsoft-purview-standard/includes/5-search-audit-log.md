@@ -7,7 +7,7 @@ Microsoft 365 supports an audit log so that organizations can search it for acti
 
 | **Microsoft 365 service or feature**    | **Record types**                                                                                                     |
 | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Azure Active Directory                  | AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon                                 |
+| Microsoft Entra ID                  | AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon                                 |
 | Azure Information Protection            | AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat                            |
 | Communication compliance                | ComplianceSuperVisionExchange                                                                                        |
 | Content explorer                        | LabelContentExplorer                                                                                                 |
@@ -102,7 +102,7 @@ The results contain the following information about each event returned by the s
  -  **IP address**. The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.
     
     > [!NOTE]
-    > For some services, the value displayed in this field may be the IP address for a trusted application (for example, Office on the web apps) calling into the service on behalf of a user and not the IP address of the device used by the person who performed the activity. Also, for administrator activity (or activity performed by a system account) for Azure Active Directory-related events, the IP address isn't logged. As a result, the value displayed in this field is null.
+    > For some services, the value displayed in this field may be the IP address for a trusted application (for example, Office on the web apps) calling into the service on behalf of a user and not the IP address of the device used by the person who performed the activity. Also, for administrator activity (or activity performed by a system account) for Microsoft Entra ID-related events, the IP address isn't logged. As a result, the value displayed in this field is null.
  -  **User**. The user (or service account) who performed the action that triggered the event.
  -  **Activity**. The activity performed by the user. This value corresponds to the activities that were selected in the **Activities** drop down list. For an event from the Exchange admin audit log, the value in this column is an Exchange cmdlet.
  -  **Item**. The object that was created or modified as a result of the corresponding activity. For example, the file that was viewed or modified or the user account that was updated. Not all activities have a value in this column.

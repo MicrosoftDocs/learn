@@ -1,6 +1,6 @@
-Access to Azure resources is controlled through user accounts and identities that are defined in Azure Active Directory (Azure AD). Azure AD supports group accounts to help you organize user accounts for easier administration.
+Access to Azure resources is controlled through user accounts and identities that are defined in Microsoft Entra ID. Microsoft Entra ID supports group accounts to help you organize user accounts for easier administration.
 
-In this module, your company wants to take advantage of the user and group account features in Azure AD. You need to understand the concepts of user accounts and group accounts. You're looking for information about how to create, configure, and manage these accounts. Your organization needs support for bulk configuration of settings, group account organization, and managing accounts across multiple directories.
+In this module, your company wants to take advantage of the user and group account features in Microsoft Entra ID. You need to understand the concepts of user accounts and group accounts. You're looking for information about how to create, configure, and manage these accounts. Your organization needs support for bulk configuration of settings, group account organization, and managing accounts across multiple directories.
 
 ## Learning objectives
 
@@ -20,7 +20,7 @@ The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Ad
 
 Manage identities and governance in Azure (15-20%)
 
-- Manage Azure Active Directory objects
+- Manage Microsoft Entra objects
 
   - Create users and groups
 
