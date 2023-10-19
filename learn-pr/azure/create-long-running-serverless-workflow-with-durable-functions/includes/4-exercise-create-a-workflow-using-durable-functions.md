@@ -35,7 +35,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
     | Setting | Value | Description |
     |---|---|---|
     | **Storage** |
-    | Storage account | *[Globally unique name]* | Specifies the name of the new storage account used by your function app (which does not need to match the globally unique name that you specified for your function). Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog automatically populates the field with a unique name that is dynamically generated. However, feel free to use a different name or even an existing account. |
+    | Storage account | *[Globally unique name]* | Specifies the name of the new storage account used by your function app (which doesn't need to match the globally unique name that you specified for your function). Storage account names must be between 3 and 24 characters in length and might contain numbers and lowercase letters only. This dialog automatically populates the field with a unique name that is dynamically generated. However, feel free to use a different name or even an existing account. |
 
 1. Select **Next : Networking**. Accept the defaults.
 
@@ -54,7 +54,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
 
 ## Install the durable-functions npm package
 
-Because we are creating JavaScript Durable Functions, we need to install the `durable-functions` npm package. To do so, perform the following steps.
+Because we're creating JavaScript Durable Functions, we need to install the `durable-functions` npm package. To do so, perform the following steps.
 
 1. Select **Go to resource** to select your function app. Your **Function App** pane appears.
 
