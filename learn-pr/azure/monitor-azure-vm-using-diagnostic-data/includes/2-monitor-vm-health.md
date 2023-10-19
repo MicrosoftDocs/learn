@@ -2,17 +2,17 @@ In this unit, you explore the types of data you can monitor on an Azure VM and h
 
 ## Azure Monitor metrics
 
-Azure Monitor has two main features for collecting and storing monitoring data: Azure Monitor Metrics and Azure Monitor Logs. Metrics are numerical values that are collected at predetermined intervals to describe some aspect of a system at a particular time. Metrics can measure performance, resource utilization, error counts, user behavior, or any other aspect of the system that you can quantify.
+Azure Monitor has two main features for collecting and storing monitoring data: Metrics and Logs. Metrics are numerical values that are collected at predetermined intervals to describe some aspect of a system at a particular time. Metrics can measure performance, resource utilization, error counts, user behavior, or any other aspect of the system that you can quantify.
 
-Azure Monitor Metrics automatically monitors a predefined set of metrics for every Azure VM, and retains the data for 93 days with some exceptions. In the Azure portal, you can see built-in graphs for several important VM metrics, and configure Azure Monitor Metrics to collect many other metrics. You can choose a specific metric and see graphs for that metric, or create customized graphs that show several metrics together.
+Azure Monitor Metrics automatically monitors a predefined set of metrics for every Azure VM, and retains the data for 93 days with some exceptions. In the Azure portal, you can see built-in graphs for several important VM host metrics, and configure Azure Monitor Metrics to collect many other metrics. You can choose a specific metric and see graphs for that metric, or create customized graphs that show several metrics together.
 
 :::image type="content" source="../media/2-vm-metrics-screenshot.png" alt-text="Screenshot showing CPU percentage usage and inbound flow chart." lightbox="../media/2-vm-metrics-screenshot.png":::
 
 ## VM monitoring
 
-There are fundamentally four layers to a VM that require monitoring. Each layer has a distinct set of telemetry and monitoring requirements.
+There are fundamentally four layers to a VM that require monitoring. Each of the following layers has a distinct set of telemetry and monitoring requirements.
 
-- The host VM
+- Host VM
 - Guest operating system (OS)
 - Client workloads
 - Applications that run on the VM
@@ -21,23 +21,25 @@ There are fundamentally four layers to a VM that require monitoring. Each layer 
 
 ## Host VM metrics
 
-Azure automatically collects the following metrics for host VMs, and displays the data in a set of built-in charts on the VM's **Overview** page. You can view the built-in basic metrics charts for any Azure VM, and customize the displayed range from the past hour to the past 30 days.
+For an Azure VM, the VM host represents the compute, storage, and network resources that Azure allocates to the VM. VM host metrics track and alert on activity such as configuration changes, processor utilization, and whether the machine is running.
+
+Azure automatically collects basic metrics for host VMs and displays the data in a set of built-in charts on the VM's **Overview** page. You can view the following built-in metrics charts for any Azure VM, and customize the displayed range from the past hour to the past 30 days.
 
 - VM availability (preview)
 - CPU usage percentage (average)
-- OS disk usage
-- Network operations
+- OS disk usage (total)
+- Network operations (total)
 - Disk operations per second (average)
 
 By using VM host metrics, you can:
 
-- Know when your VMs are reaching their disk and CPU limits.
+- Get alerts when your VMs are reaching their disk and CPU limits.
 - Detect trends or patterns.
 - Control your operational costs by sizing VMs according to usage and demand.
 
 ### Recommended alert rules
 
-Azure Monitor alerts proactively notify you of certain occurrences and patterns in your VM host metrics. *Recommended alert rules* are a predefined set of alert rules based on common host metrics. These metrics include CPU percentage, available memory, and VM availability, which shows when the VM stops running.
+Azure Monitor alerts proactively notify you of specified occurrences and patterns in your VM host metrics. *Recommended alert rules* are a predefined set of alert rules based on common host metrics. These rules define CPU, memory, disk, and network usage levels to alert on, including VM availability, which alerts when the VM stops running.
 
 You can quickly enable and configure recommended alert rules when you create an Azure VM, or afterwards from the VM's **Overview** page. You can also view, configure, and create custom alerts from the VM's **Alerts** page.
 
@@ -64,7 +66,7 @@ To use Azure Monitor to collect guest OS and client workload metrics, you instal
 
 The VM Insights feature of Azure Monitor provides a set of predefined workbooks that show collected VM client metrics over time. VM Insights workbooks use the Azure Monitor Agent to create a DCR that sends the predefined metrics data to Azure Monitor Logs. Because the DCR sends its metrics to Azure Monitor Logs, you don't use Metrics Explorer to view the metrics data that VM Insights collects.
 
-Prebuilt VM Insights workbooks show performance, connections, active ports, traffic, and other collected data from one or several VMs. You can edit the prebuilt workbook configurations or create your own custom workbooks. You can view VM Insights data directly from a single VM, or see a combined view of multiple VMs to view and assess trends and patterns across all of your VMs.
+Prebuilt VM Insights workbooks show performance, connections, active ports, traffic, and other collected data from one or several VMs. You can edit the prebuilt workbook configurations or create your own custom workbooks. You can view VM Insights data directly from a single VM, or see a combined view of multiple VMs to view and assess trends and patterns across VMs.
 
 VM Insights is especially useful for exploring overall VM usage when you don't know the metric of primary interest in advance. Unlike other usage analytics tools, VM Insights workbooks let you combine multiple kinds of visualizations and analyses, such as CPU utilization, disk space, memory, and network dependencies.
 
