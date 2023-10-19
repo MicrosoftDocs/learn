@@ -100,7 +100,7 @@ Supplemental options for this lesson include:
     - To change the Application server count, enter a new count for **Number of VMs** under **Application virtual machines**.
 
         >[!NOTE]
-        >The number of VMs for ASCS and Database instances aren't editable. The default number for each is **2**.
+        >The number of VMs for ASCS and Database instances isn't editable. The default number for each is **2**.
         >
         >ACSS automatically configures a database disk layout for the deployment. To view the layout for a single database server, make sure to select a VM SKU. Then, select **View disk configuration**. If there's more than one database server, the layout applies to each server.
 

@@ -183,7 +183,7 @@ Next, download the SAP installation media to the VM using a script.
 
     1. On the container's sidebar menu, select **Properties** under **Settings**.
 
-    1. Copy down the **URL** value. The format is `https://<your-storage-account>.blob.core.windows.net/sapbits`. The format is `https://<your-storage-account>.blob.core.windows.net/sapbits`.
+    1. Copy down the **URL** value. The format is `https://<your-storage-account>.blob.core.windows.net/sapbits`.
 
 1. Where `BOM_directory_path` is the absolute path to **SAP-automation-samples/SAP**. e.g. */home/loggedinusername/SAP-automation-samples/SAP*
 

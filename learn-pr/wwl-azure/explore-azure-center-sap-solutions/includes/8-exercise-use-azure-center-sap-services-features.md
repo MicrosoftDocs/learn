@@ -15,7 +15,7 @@ To configure your VIS in the Azure portal:
     :::image type="content" source="../media/select-virtual-instance-sap.png" lightbox="../media/select-virtual-instance-sap.png" alt-text="Screenshot of Azure portal, showing the V I S page in the Azure Center for S A P solutions service with a table of available V I S resources.":::
 
 > [!IMPORTANT]
-> Each VIS resource has a unique Managed Resource Group associated with it. This Resource Group contains resources like Storage Account, Key vault, etc. which are critical for ACSS to provide capabilities like deployment of infrastructure for a new system, installation of SAP software, registration of existing systems, and all other SAP system management functions. Don't delete this Resource Group or any resources within it. If they are deleted, you will have to re-register the VIS to use any capabilities of ACSS.
+> Each VIS resource has a unique Managed Resource Group associated with it. This Resource Group contains resources like Storage Account, Key Vault, etc. which are critical for ACSS to provide capabilities like deployment of infrastructure for a new system, installation of SAP software, registration of existing systems, and all other SAP system management functions. Don't delete this Resource Group or any resources within it. If they are deleted, you will have to re-register the VIS to use any capabilities of ACSS.
 
 ## Monitor VIS
 
@@ -89,7 +89,7 @@ To retrieve the password:
 1. Select the SAP password file name to open the secret's page.
 1. Copy the **Secret value**.
 
-If you get the warning **The operation 'List' is not enabled in this key vault's access policy**. with the message **You are unauthorized to view these contents**, follow these steps:
+If you get the warning **The operation 'List' is not enabled in this key vault's access policy** with the message **You are unauthorized to view these contents**, follow these steps:
 
 1. Make sure that you're responsible to manage these secrets in your organization.
 1. In the sidebar menu, under **Settings**, select **Access policies**.
