@@ -15,7 +15,7 @@ Azure Backup provides many ways to restore a VM. As explained earlier, you can e
 
 ## Recover files from a backup
 
-You can also recover individual files from a recovery point by mounting the snapshot on the target machine using the iSCSI initiator in the machine. To more more, see [Recover files from Azure virtual machine backup](/azure/backup/backup-azure-restore-files-from-vm).
+You can also recover individual files from a recovery point by mounting the snapshot on the target machine using the iSCSI initiator in the machine. To learn more, see [Recover files from Azure virtual machine backup](/azure/backup/backup-azure-restore-files-from-vm).
 
 ## Restore an encrypted virtual machine
 
