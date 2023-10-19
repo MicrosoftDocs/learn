@@ -24,7 +24,7 @@ When creating a storage account, keep in mind that:
 
 - You can't use a Blob storage account for a Cloud Witness.
 - You can't use Azure Premium Storage for a Cloud Witness.
-- For Replication, select Locally-redundant storage (LRS). Failover Clustering uses the blob file as the arbitration point, which requires some consistency guarantees when reading the data. Therefore you must select Locally-redundant storage for Replication type.
+- For Replication, select Locally redundant storage (LRS). Failover Clustering uses the blob file as the arbitration point, which requires some consistency guarantees when reading the data. Therefore you must select Locally redundant storage for Replication type.
 
 When you create a storage account, it's associated with two Access Keys that are automatically generated - Primary Access key and Secondary Access key. For a first-time creation of Cloud Witness, use the Primary Access Key. There is no restriction regarding which key to use for Cloud Witness. You can identify the values of a Storage Account keys directly from the Azure portal or programmatically.
 
