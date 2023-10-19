@@ -94,7 +94,7 @@ Based on the SAP HANA TDI storage requirements, the following Azure premium stor
   :::column-end:::
 :::row-end:::
 
-In the suggested disk configuration, the HANA data volume and log volume are placed on the same set of premium storage disks that are striped with LVM or mdadm. It'sn't necessary to define any RAID redundancy level because Azure premium storage provides sufficient level of redundancy.
+In the suggested disk configuration, the HANA data volume and log volume are placed on the same set of premium storage disks that are striped with LVM or mdadm. It isn't necessary to define any RAID redundancy level because Azure premium storage provides sufficient level of redundancy.
 
 You can add more premium storage disks to the HANA DBMS VMs to store database or transaction log backups.
 
