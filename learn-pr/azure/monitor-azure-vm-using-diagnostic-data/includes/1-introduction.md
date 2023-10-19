@@ -8,7 +8,7 @@ Azure VMs come with built-in and customizable monitoring abilities that you can 
 
 To complete this module, you need the following prerequisites:
 
-- Access to an Azure subscriptiont with at least **Contributor** role.
+- Access to an Azure subscription with at least **Contributor** role.
 
   If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and add a subscription before you begin. If you're a student, you can take advantage of the [Azure for students](https://azure.microsoft.com/free/students/?azure-portal=true) offer.
 
