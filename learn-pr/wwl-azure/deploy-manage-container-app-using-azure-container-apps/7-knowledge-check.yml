@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 10/19/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module-guided-project
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-knowledge-check.md)]
