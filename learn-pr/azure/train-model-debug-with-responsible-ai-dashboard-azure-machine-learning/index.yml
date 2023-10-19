@@ -30,6 +30,7 @@ products:
 - azure-machine-learning
 subjects:
 - machine-learning
+- artificial-intelligence
 units:
   - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.introduction
   - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.train-model

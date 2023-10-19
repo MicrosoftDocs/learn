@@ -11,8 +11,8 @@ metadata:
   ms.service: machine-learning
   ms.subservice: responsible-ai  
 azureSandbox: false
-labId:
+labId: 1
 labModal: true
-durationInMinutes: 
+durationInMinutes: 1
 content: |
   [!include[](includes/2-train-model.md)]
