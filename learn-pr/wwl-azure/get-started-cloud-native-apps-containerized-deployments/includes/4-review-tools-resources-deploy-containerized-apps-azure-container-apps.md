@@ -10,7 +10,7 @@ The following example project takes the workload used in Microservices architect
 
 Fabrikam inc has created a new operations team, and under its organization is a brownfield application called Drone Delivery. This application has been running for a while in Azure Kubernetes Service (AKS). The team recognizes the benefits gained by using containers to run microservices and by having Kubernetes to host them. However, the team has discovered that they aren't making use of advanced AKS features, such as custom service mesh and autoscaling.
 
-The team has detected an opportunity to simplify and be more efficient at the devops level. They are going to evaluate using Azure Container Apps to host the Drone Delivery app. Azure Container Apps could help the team to publish and run containerized microservices at scale, faster than before, and with reduce complexity. Azure Container Apps could also save resources by using scale-to-zero and the built-in autoscaling capability. Azure Container Apps provides these benefits without losing all the container advantages the team loves.
+The team has detected an opportunity to simplify and be more efficient at the devops level. They're going to evaluate using Azure Container Apps to host the Drone Delivery app. Azure Container Apps could help the team to publish and run containerized microservices at scale, faster than before, and with reduce complexity. Azure Container Apps could also save resources by using scale-to-zero and the built-in autoscaling capability. Azure Container Apps provides these benefits without losing all the container advantages the team loves.
 
 ### Migration process and architecture
 
@@ -26,8 +26,8 @@ The following information describes how the Container Apps features are used in 
 - Securely manage secrets for Package, Ingestion and Workflow services.
 - Run containers from any registry, the Fabrikam Drone Delivery uses Azure Container Registry (ACR) to publish its Docker images.
 - Use Revisions in Azure Container Apps to safely deploy updates, where appropriate. The Workflow Service app consumes messages, so it needs to be deployed in single revision mode. Single revision mode prevents old versions from inadvertently retrieving and processing a message.
-- Use ARM templates to deploy the application, there is no need for another layer of indirection like Helm charts. All the Drone Delivery containers are part of the ARM templates
-- Logs, review container logs directly in Log Analytics without configuring any provider from code or Azure service.
+- Use ARM templates to deploy the application, there's no need for another layer of indirection like Helm charts. All the Drone Delivery containers are part of the ARM templates
+- Review container logs directly in Log Analytics without configuring any provider from code or Azure service.
 
 The following Azure resources are used throughout this example scenario.
 
@@ -35,7 +35,7 @@ The following Azure resources are used throughout this example scenario.
 | --- | --- |
 | An Azure Container App Environment | This resource is the managed Container App environment where Container Apps are deployed. |
 | Five Azure Container Apps | These Azure resources represent the five Fabrikam microservices in the Azure Container App environment. |
-| An Azure Container Registry | This resource is the private container registry where all Fabrikam workload images are uploaded. After they are uploaded, image are pulled by the different Azure Container Apps. |
+| An Azure Container Registry | This resource is the private container registry where all Fabrikam workload images are uploaded. After they're uploaded, images are pulled by the different Azure Container Apps. |
 | An Azure Log Analytics Workspace | This resource is where all the Container Apps logs are sent, along with Azure Diagnostics on all services. |
 | An Azure Application Insights instance | All services are sending trace information to a shared Azure Application Insights instance. |
 | Two Azure Cosmos DB instances | Delivery and Package services have dependencies on Azure Cosmos DB. |
@@ -54,7 +54,7 @@ The services sharing the same environment benefit from the following capabilitie
 - A single Log Analytics workspace for runtime logging.
 - Secure management of secrets and certificates.
 
-The workflow service container app is running in single revision mode. A container app running in single revision mode has a single revision for zero-many replicas. A replica is composed of the application container and any required sidecar containers. This example isn't making use of sidecar containers, therefore each container app replica represents a single container. Since this example doesn't employ scaling, there is only one replica running for each container app.
+The workflow service container app is running in single revision mode. A container app running in single revision mode has a single revision for zero-many replicas. A replica is composed of the application container and any required sidecar containers. This example isn't making use of sidecar containers, therefore each container app replica represents a single container. Since this example doesn't employ scaling, there's only one replica running for each container app.
 
 The workflow uses a hybrid approach to managing secrets. Managed identities are used in the services where such implementation required no code changes. The Drone Scheduler and Delivery services use user-assigned managed identities to authenticate with Azure Key Vault to access the secrets stored there. The remaining services store secrets via Container Apps service at the application level.
 
@@ -91,7 +91,7 @@ A host environment configured with the following tools:
 
 - Docker desktop
 - Visual Studio Code with Docker and Azure App Service extensions
-- Azure CLI with containerapp extension
+- Azure CLI with `containerapp` extension
 - Windows PowerShell
 - Self-hosted Windows agent
 
