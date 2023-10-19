@@ -1,4 +1,4 @@
-In Azure AD entitlement management, you can see who has been assigned to access packages, their policy, and status. If an access package has an appropriate policy, you can also directly assign user to an access package. This article describes how to view, add, and remove assignments for access packages.
+In Microsoft Entra entitlement management, you can see who has been assigned to access packages, their policy, and status. If an access package has an appropriate policy, you can also directly assign user to an access package. This article describes how to view, add, and remove assignments for access packages.
 
 ## Governance
 
@@ -17,7 +17,7 @@ Following the rules of **zero trust** you review your entitlement packages regul
 
 Follow these steps to review assignments:
 
-1. In the Azure portal, select **Azure Active Directory** and then select **Identity Governance**.
+1. In the Azure portal, select **Microsoft Entra ID** and then select **Identity Governance**.
 1. In the left menu, select **Access packages** and then open the access package.
 1. select Assignments to see a list of active assignments.
     
@@ -50,7 +50,7 @@ $assignments | ft Id,AssignmentState,TargetId,{$_.Target.DisplayName}
 
 If you find an assignment that is out of date, take action. You can remove an assignment that a user or an administrator had previously requested.
 
-1. In the Azure portal, select **Azure Active Directory** and then select **Identity Governance**.
+1. In the Azure portal, select **Microsoft Entra ID** and then select **Identity Governance**.
 1. In the left menu, select **Access packages** and then open the access package.
 1. In the left menu, select **Assignments**.
 1. select the check box next to the user whose assignment you want to remove from the access package.

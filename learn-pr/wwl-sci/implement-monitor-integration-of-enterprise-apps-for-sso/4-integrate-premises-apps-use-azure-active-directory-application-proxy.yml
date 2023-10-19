@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso.integrate-premises-apps-by-using-azure-ad-application-proxy
-title: Integrate on-premises apps by using Azure Active Directory application proxy
+title: Integrate on-premises apps by using Microsoft Entra application proxy
 metadata:
-  title: Integrate on-premises apps by using Azure Active Directory application proxy
-  description: "Integrate on-premises apps by using Azure Active Directory application proxy"
+  title: Integrate on-premises apps by using Microsoft Entra application proxy
+  description: "Integrate on-premises apps by using Microsoft Entra application proxy"
   ms.date: 09/25/2023
   author: wwlpublish
   ms.author: roberts

@@ -12,7 +12,7 @@ The reason for doing so is to make sure that your security is reliable and robus
 Column level security will also eliminate the necessity for the introduction of view, where you would filter out columns, to impose access restrictions on 'Leo'
 
 The way to implement column level security is by using the GRANT T-SQL statement. 
-Using this statement, SQL and Azure Active Directory (AAD) support the authentication. 
+Using this statement, SQL and Microsoft Entra ID support the authentication. 
 
 ![Showing Column-level security](../media/column-level-security.png)
 

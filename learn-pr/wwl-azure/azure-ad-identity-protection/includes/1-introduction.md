@@ -2,7 +2,7 @@ Identity Protection is a tool that allows organizations to automate the detectio
 
 ## Scenario
 
-A security engineer uses Azure AD Identity Protection to configure Azure features that monitor and protect identities in the tenant; you will work on such tasks as:
+A security engineer uses Microsoft Entra ID Protection to configure Azure features that monitor and protect identities in the tenant; you will work on such tasks as:
 
  -  Creating access reviews to check on how each identity is being used and that the correct rights are assigned.
  -  Configure policies to identify risky user behaviors and odd sign-in patterns.
@@ -10,14 +10,14 @@ A security engineer uses Azure AD Identity Protection to configure Azure feature
 
 ## Skills measured
 
-Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
+Microsoft Entra ID is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
 
 Manage identity and access (30-35%)
 
  -  Configure secure access by using Azure and
      -  Configure Access Reviews
      -  Implement Conditional Access policies, including multi-factor authentication
-     -  Configure Azure AD identity protection
+     -  Configure Microsoft Entra ID Protection
 
 ## Learning objectives
 

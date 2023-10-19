@@ -2,9 +2,9 @@ Azure Virtual Desktop, much like Azure, has certain service limitations that you
 
 | **Azure Virtual Desktop object** | **Per Parent container object**  | **Service limit** |
 | -------------------------------- | -------------------------------- | ----------------- |
-| Workspace                        | Azure Active Directory tenant    | 1300              |
+| Workspace                        | Microsoft Entra tenant    | 1300              |
 | HostPool                         | Workspace                        | 400               |
-| Application group                | Azure Active Directory tenant    | 500               |
+| Application group                | Microsoft Entra tenant    | 500               |
 | RemoteApp                        | Application group                | 500               |
 | Role assignment                  | Any Azure Virtual Desktop object | 200               |
 | Session host                     | HostPool                         | 10,000            |
