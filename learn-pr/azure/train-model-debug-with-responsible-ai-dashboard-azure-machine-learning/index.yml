@@ -3,11 +3,10 @@ uid: azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learnin
 metadata:
   title: Train a model and debug it with responsible AI dashboard
   description: Learn how to train a model with Azure Machine Learning and use Responsible AI to ensure it performs responsibly. 
-  ms.date: 10/31/2023
+  ms.date: 10/19/2023
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: interactive-tutorial
-   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.subservice: responsible-ai 
 title: Train a model and debug it with responsible AI dashboard

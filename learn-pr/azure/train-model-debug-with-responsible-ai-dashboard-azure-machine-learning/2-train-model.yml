@@ -4,12 +4,15 @@ title: Train model
 metadata:
   title: Train model
   description: "Train model"
-  ms.date: 10/31/2023
+  ms.date: 10/19/2023
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.subservice: responsible-ai  
+azureSandbox: false
+labId:
+labModal: true
 durationInMinutes: 
 content: |
   [!include[](includes/2-train-model.md)]

@@ -4,12 +4,15 @@ title: Add responsible AI dashboard
 metadata:
   title: Add responsible AI dashboard 
   description: "Add responsible AI dashboard"
-  ms.date: 10/31/2023
+  ms.date: 10/19/2023
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.subservice: responsible-ai  
-durationInMinutes: 
+azureSandbox: false
+labId:
+labModal: true
+durationInMinutes:
 content: |
   [!include[](includes/3-add-responsible-ai-dashboard.md)]
