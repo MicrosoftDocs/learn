@@ -1,11 +1,11 @@
-In this guided project, you'll configure Azure resources and other tools to demonstrate the suitability of Azure Container Apps as a deployment option.
+In this guided project, you configure Azure resources and other tools to demonstrate the suitability of Azure Container Apps as a deployment option.
 
 > [!IMPORTANT]
-> An Azure subscription and GitHub account are required for this guided project. For your Azure subscription, we recommend that you have the Owner, Azure account administrator, or Azure co-administrator role. The Contributor role may not provide the permissions required to complete all tasks in this guided project module.
+> An Azure subscription and GitHub account are required for this guided project. For your Azure subscription, we recommend that you have the Owner, Azure account administrator, or Azure co-administrator role. The Contributor role does not provide the permissions required to complete all tasks in this guided project module.
 
 ## Project overview
 
-You work on a devops team for a technology company named Fabrikam Inc. The team is looking into using Azure Container Apps to run containerized cloud-native apps. Fabrikam has been using Azure Kubernetes Service (AKS), and while you're obtaining the benefits of running apps as containers and Kubernetes as a host, the team has discovered that they're not making use of the advance features of AKS like custom service mesh or autoscaling. The team believes they can simplify and improve efficiency of their devops implementation by switching from Azure Kubernetes Service (AKS) to Azure Container Apps. The team believes that switching to Azure Container Apps will:
+You work on a devops team for a technology company named Fabrikam Inc. The team is looking into using Azure Container Apps to run containerized cloud-native apps. Fabrikam has been using Azure Kubernetes Service (AKS) to run containers. Although the team is obtaining the benefits of running apps as containers and from using Kubernetes as a host, they've discovered that they're not using advanced AKS features. For example, they're not using the custom service mesh or autoscaling features. The team believes they can both simplify and improve efficiency of their devops implementation by switching to Azure Container Apps. The team believes that switching to Azure Container Apps will:
 
 - Improve their ability to publish and run containerized apps at scale.
 - Reduce the complexity of their current devops implementation.
@@ -19,7 +19,7 @@ You have been tasked with developing a proof-of-concept solution. The solution m
 1. Scale a deployed app in Azure Container Apps.
 1. Manage revisions in Azure Container Apps.
 
-Your goal for this module is to implement a solution that demonstrates the deployment of cloud-native apps using Azure Container Apps. To achieve this goal, you'll complete the following:
+Your goal for this module is to implement a solution that demonstrates the deployment of cloud-native apps using Azure Container Apps. To achieve this goal, you complete the following activities:
 
 1. Set up the host environment and deployment resources.
 1. Configure Azure Container Registry for a secure connection with Azure Container Apps.
@@ -29,13 +29,13 @@ Your goal for this module is to implement a solution that demonstrates the deplo
 
 ## Setup
 
-To set up the host environment and deployment resources, you'll complete the following tasks:
+To set up the host environment and deployment resources, you complete the following tasks:
 
 1. Configure host environment tools.
 
     - Install Docker Desktop.
     - Install Visual Studio Code with Docker and Azure App Service extensions.
-    - Install Azure CLI with containerapp extension.
+    - Install Azure CLI with `containerapp` extension.
     - Install Windows PowerShell.
 
 1. Configure Azure resources that support the container apps solution.
@@ -132,9 +132,9 @@ Complete the following steps to install Visual Studio Code with Docker and Azure
 
 1. Close Visual Studio Code.
 
-### Install Azure CLI and the containerapp extension
+### Install Azure CLI and the `containerapp` extension
 
-Complete the following steps install Azure CLI and the containerapp extension.
+Complete the following steps install Azure CLI and the `containerapp` extension.
 
 1. Open a browser window, and then navigate to: [https://learn.microsoft.com/cli/azure/install-azure-cli](/cli/azure/install-azure-cli).
 
@@ -166,9 +166,9 @@ Complete the following steps to configure a resource group for your Azure resour
 
 1. Open a browser window, and then navigate to the Azure portal: [https://portal.azure.com/](https://portal.azure.com/)
 
-1. Ensure that your account has the required access permission for the Azure subscription that you're using.
+1. Ensure that your Azure account has permission to create resources and assign RBAC permissions. Check the RBAC role(s) assigned to your account before your continue.
 
-    The Contributor role is not able to assign Azure RBAC permissions. We recommend that your account be assigned the Owner, Azure account administrator, or Azure co-administrator role for your Azure subscription. Other role combinations may provide sufficient access to complete all tasks in this guided project module.
+    The Contributor role isn't able to assign Azure RBAC permissions. We recommend using an account that has been assigned the Owner, Azure account administrator, or Azure co-administrator role for your Azure subscription. Other role combinations could provide sufficient access to complete this guided project module but have not been tested.
 
 1. On the top search bar of the Azure portal, in the Search textbox, enter **resource group**
 
@@ -176,7 +176,7 @@ Complete the following steps to configure a resource group for your Azure resour
 
 1. On the Basics tab, configure the resource group as follows:
 
-    - Subscription: Specify the Azure subscription that you will be using to complete the guided project.
+    - Subscription: Specify the Azure subscription that you're using to complete the guided project.
 
     - Resource group: Enter **RG1**
 
@@ -271,7 +271,7 @@ Complete the following steps to configure a Container Registry instance.
 
 1. On the Container registries page, select **Create container registry** or **+ Create**.
 
-1. On the Basic tab of the Create container registry page, complete the following:
+1. On the Basic tab of the Create container registry page, specify the following information:
 
     > [!NOTE]
     > The name of your Registry must be unique. Also, the Premium tier is required for private link with private endpoints.
@@ -310,7 +310,7 @@ Complete the following steps to create a WebAPI app and publish to a GitHub repo
 
 1. On the Terminal menu, select **New Terminal**.
 
-1. At the terminal command prompt, to create a new ASP.NET Web API project, enter the following:
+1. At the terminal command prompt, to create a new ASP.NET Web API project, enter the following command:
 
     ```dotnetcli
     dotnet new webapi --no-https
@@ -326,7 +326,7 @@ Complete the following steps to create a WebAPI app and publish to a GitHub repo
 
     If the command generates an error message, select **OK**, and then run the command again.
 
-1. In the root project folder, create a .gitignore file that contains the following:
+1. In the root project folder, create a .gitignore file that contains the following information:
 
     ```
     [Bb]in/
@@ -351,7 +351,7 @@ Complete the following steps to create a Docker image and push the image to your
 
 1. To create a Dockerfile, run the following in the Command Palette: **Docker: Add Docker Files to Workspace**.
 
-1. When prompted, select the following:
+1. When prompted, specify the following information:
 
     - Application Platform: **.NET ASP.NET Core**.
     - Operating System: **Linux**.
@@ -384,11 +384,11 @@ Complete the following steps to create a Docker image and push the image to your
 
     - Select your Azure Container Registry resource. For example: **acrapl2003cah12oct**
 
-        An image tag will be generated. For example: `acrapl2003cah12oct.azurecr.io/aspnetcorecontainer:latest`
+        An image tag is generated. For example: `acrapl2003cah12oct.azurecr.io/aspnetcorecontainer:latest`
 
     - To push the image to your Container Registry, press Enter.
 
-    The following Docker command will be executed:
+    The following Docker command is executed:
 
     ```azurecli
     docker image push acrapl2003cah12oct.azurecr.io/aspnetcorecontainer:latest
@@ -424,9 +424,9 @@ Complete the following steps to configure Azure DevOps and a starter Pipeline:
 
 1. Under Import a repository, select **Import**.
 
-1. On the Import a Git repository page, enter the URL for the GitHub repository your created for your code project, and then select **Import**.
+1. On the Import a Git repository page, enter the URL for the GitHub repository you created for your code project, and then select **Import**.
 
-    Your repository URL will be similar to the following:
+    Your repository URL should be similar to the following example:
 
     `https://github.com/<your account>/APL2003`
 
@@ -442,7 +442,7 @@ Complete the following steps to configure Azure DevOps and a starter Pipeline:
 
 1. Under Save and Run, select **Save**, and then select **Save**.
 
-1. To rename the pipeline to "Pipeline1", complete the following:
+1. To rename the pipeline to `Pipeline1`, complete the following steps:
 
     1. On the left-side menu, select **Pipelines**.
 
@@ -452,11 +452,11 @@ Complete the following steps to configure Azure DevOps and a starter Pipeline:
 
 ### Deploy a self-hosted Windows agent
 
-For an Azure Pipeline to build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent in the host environment.
+For an Azure Pipeline to build and deploy Windows, Azure, and other Visual Studio solutions you need at least one Windows agent in the host environment.
 
 Complete the following steps to deploy a self-hosted Windows agent:
 
-1. Ensure that you're signed-in to Azure DevOps with the user account you are using for your Azure DevOps organization.
+1. Ensure that you're signed-in to Azure DevOps with the user account you're using for your Azure DevOps organization.
 
     For example: `https://dev.azure.com/{your organization}`
 
@@ -478,7 +478,7 @@ Complete the following steps to deploy a self-hosted Windows agent:
 
 1. On the Success page, to copy the token, select **Copy to clipboard**.
 
-    You'll use this token when you configure the agent.
+    You use this token when you configure the agent.
 
 1. Ensure that you’re signed into Azure DevOps as the Azure DevOps organization owner.
 
@@ -486,13 +486,13 @@ Complete the following steps to deploy a self-hosted Windows agent:
 
 1. On the left side menu under Pipelines, select **Agent pools**.
 
-1. If the **Get the agent** dialog box opens when you selected Agent pools, skip to the next step.
+1. If the **Get the agent** dialog box opens, skip to the next step.
 
-    If a list of Agent pools is displayed when you selected Agent pools, complete the following:
+    If a list of Agent pools is displayed, complete the following steps:
 
     1. To select the default pool, select **default**.
 
-        If the **default** pool does not exist, select **Add pool**, and then enter the following information:
+        If the **default** pool doesn't exist, select **Add pool**, and then enter the following information:
 
         1. Under Pool type, select **Self-hosted**.
 
@@ -504,7 +504,7 @@ Complete the following steps to deploy a self-hosted Windows agent:
 
     1. Select **Agents**, and then select **New agent**.
 
-1. On the **Get the agent** dialog box, complete the following:
+1. On the **Get the agent** dialog box, complete the following steps:
 
     1. Select the **Windows** tab.
 
@@ -524,7 +524,7 @@ Complete the following steps to deploy a self-hosted Windows agent:
 
 1. Unpack the agent zip file into the directory you created.
 
-1. Open PowerShell as an Administrator, and then enter the following PS command:
+1. Open PowerShell as an Administrator, and then enter the following PowerShell command:
 
     `.\config`
 
@@ -532,7 +532,7 @@ Complete the following steps to deploy a self-hosted Windows agent:
 
     - Enter server URL >: enter the URL for your DevOps organization. Such as: `https://dev.azure.com/<your organization>`
     - Enter authentication type (press enter for PAT) >: press Enter.
-    - Enter personal access token >: Paste-in the personal access token that you copied to the clipboard above.
+    - Enter personal access token >: Paste-in the personal access token that you copied to the clipboard earlier.
     - Enter agent pool (press enter for default) >: press Enter.
     - Enter agent name (press enter for YOUR-PC-NAME) > enter **apl2003-agent**
     - Enter work folder (press enter for _work) >: press Enter.
@@ -541,8 +541,8 @@ Complete the following steps to deploy a self-hosted Windows agent:
     - Enter User account to use for the service (press enter for NT AUTHORITY\NETWORK SERVICE) >: press Enter.
     - Enter whether to prevent service starting immediately after configuration is finished? (Y/N) (press enter for N) >: press Enter.
 
-    You will see a message informing you that the agent started successfully.
+    A message informing you that the agent started successfully is displayed.
 
-    For additional help, see the following: [https://learn.microsoft.com/azure/devops/pipelines/agents/windows-agent?view=azure-devops#permissions](/azure/devops/pipelines/agents/windows-agent?view=azure-devops#permissions)
+    For extra help, see the following documentation: [https://learn.microsoft.com/azure/devops/pipelines/agents/windows-agent?view=azure-devops#permissions](/azure/devops/pipelines/agents/windows-agent?view=azure-devops#permissions)
 
 You're now ready to begin the Guided project exercises. Good luck!

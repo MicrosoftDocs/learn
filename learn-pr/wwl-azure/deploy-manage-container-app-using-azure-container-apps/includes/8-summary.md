@@ -1,10 +1,10 @@
-Your goal was to demonstrate that using Container Apps to manage app deployments and revisions will meet Fabrikam's business requirements.
+Your goal was to demonstrate that using Container Apps to manage app deployments and revisions meets Fabrikam's business requirements.
 
-By configuring the app deployment resources and by using Container Apps to manage scaling and revisions, you demonstrated a solution that improved your ability to publish and run containarized apps at scale.
+By configuring your deployment resources and by using Container Apps to manage scaling and revisions, you demonstrated a solution that improved your ability to publish and run containerized apps at scale.
 
-Having the ability to implement the scaling and revision management capabilities enabled by Container Apps while also reducing the complexity of your devops implementation will be a big win for Fabrikam.
+Having the ability to implement the scaling and revision management capabilities enabled by Container Apps while also reducing the complexity of your devops implementation is a big win for Fabrikam.
 
-Additional Reading:
+Detailed resources:
 
 - Azure Container Apps documentation: [https://docs.microsoft.com/azure/container-apps/](/azure/container-apps/)
 

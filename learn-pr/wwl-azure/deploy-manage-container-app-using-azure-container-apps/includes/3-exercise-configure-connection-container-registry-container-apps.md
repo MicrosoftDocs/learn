@@ -40,7 +40,7 @@ Complete the following steps to configure a user-assigned managed identity.
 
 1. On the User Assigned Managed Identity page, select **Create**.
 
-1. On the Create User Assigned Managed Identity page, specify the following:
+1. On the Create User Assigned Managed Identity page, specify the following information:
 
     - Subscription: Specify the Azure subscription that you're using for this guided project.
     - Resource group: **RG1**
@@ -89,7 +89,7 @@ Complete the following steps to configure Container Registry with AcrPull permis
 
 1. On the Private access tab, select **+ Create a private endpoint connection**.
 
-1. On the Basics tab, under Project details, specify the following:
+1. On the Basics tab, under Project details, specify the following information:
 
     - Subscription: Specify the Azure subscription that you're using for this guided project.
     - Resource group: **RG1**
@@ -98,7 +98,7 @@ Complete the following steps to configure Container Registry with AcrPull permis
 
 1. Select **Next: Resource**.
 
-1. On the Resource tab, ensure the following:
+1. On the Resource tab, ensure the following information is displayed:
 
     - Subscription: Ensure that the Azure subscription that you're using for this guided project is selected.
     - Resource type: Ensure that **Microsoft.ContainerRegistry/registries** is selected.
@@ -107,14 +107,14 @@ Complete the following steps to configure Container Registry with AcrPull permis
 
 1. Select **Next: Virtual Network**.
 
-1. On the Virtual Network tab, under Networking, ensure the following:
+1. On the Virtual Network tab, under Networking, ensure the following information is displayed:
 
-    - Virtual network: Ensure that **VNET1** is selected
-    - Subnet: Ensure that **PESubnet** is selected.
+    - Virtual network: Ensure that **`VNET1`** is selected
+    - Subnet: Ensure that **`PESubnet`** is selected.
 
 1. Select **Next: DNS**.
 
-1. On the DNS tab, under Private DNS Integration, ensure the following:
+1. On the DNS tab, under Private DNS Integration, ensure the followinginformation is displayed:
 
     - Integrate with private DNS zone: Ensure that **Yes** is selected.
     - Private DNS Zone: Notice that **(new) privatelink.azurecr.io** is specified.

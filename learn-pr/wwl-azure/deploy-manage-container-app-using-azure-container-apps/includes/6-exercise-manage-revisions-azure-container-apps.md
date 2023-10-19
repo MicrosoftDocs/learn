@@ -14,7 +14,7 @@ You've been asked to configure traffic splitting for your Container Apps to meet
 
 - You need to create a new revision of the container app that uses a suffix of v2.
 - You must ensure that 25 percent of requests to your app are directed to the v2 revision.
-- You must label the revisions "current"" and "updated" and ensure that requests to the "---updated" revision are directed to the v2 revision.
+- You must label the revisions "current" and "updated" and ensure that requests to the "---updated" revision are directed to the v2 revision.
 
 You complete the following tasks during this exercise:
 
@@ -24,7 +24,7 @@ You complete the following tasks during this exercise:
 
 1. Configure labels on the revisions.
 
-1. Configure a traffic percentages on the revisions.
+1. Configure a traffic percentage on the revisions.
 
 1. Verify the configuration.
 
@@ -48,10 +48,10 @@ You complete the following tasks during this exercise:
 
 1. At the top of the page, select **+ Create new revision**.
 
-1. On the Create and deploy new revision page, configure the following:
+1. On the Create and deploy new revision page, complete the following steps:
 
-    - Name / suffix: v2
-    - Under Container image, select the container image (aca-apl2003)
+    - Name / suffix: Enter **v2**
+    - Under Container image, select your container image. For example, aca-apl2003.
 
 1. Select **Create**.
 
@@ -61,9 +61,9 @@ You complete the following tasks during this exercise:
 
 1. On the left-side menu, under Settings, select **Ingress**.
 
-1. If Ingress is not enabled, select **Enabled**.
+1. If Ingress isn't enabled, select **Enabled**.
 
-1. On the Ingress page, specify the following:
+1. On the Ingress page, specify the following information:
 
     - Ingress traffic: select **Accepting traffic from anywhere**.
 
@@ -89,7 +89,7 @@ You complete the following tasks during this exercise:
 
 1. At the top of the page, select **Save**.
 
-## Configure a traffic percentages on the revisions
+## Configure a traffic percentage on the revisions
 
 1. Ensure that you have the Revisions page open.
 

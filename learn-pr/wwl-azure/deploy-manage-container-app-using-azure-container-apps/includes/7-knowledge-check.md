@@ -31,7 +31,7 @@ What is the purpose of setting the revision management to multiple in Azure Cont
 ## Multiple Choice
 As part of the setup process for the Azure Container Apps deployment, what tool should be installed to enable the creation and management of container images?
 (x) Install Docker Desktop. {{Correct. Docker Desktop is a tool that enables the creation and management of container images.}}
-( ) Install Azure CLI with containerapp extension {{Incorrect. Azure CLI with containerapp extension is used for managing Azure Container Apps, not for creating and managing container images.}}
+( ) Install Azure CLI with `containerapp` extension {{Incorrect. Azure CLI with `containerapp` extension is used for managing Azure Container Apps, not for creating and managing container images.}}
 ( ) Install Visual Studio Code. {{Incorrect. Visual Studio Code is used for developing and deploying applications, not for creating and managing container images.}}
 
 ## Multiple Choice
@@ -47,10 +47,10 @@ What is the purpose of configuring a connection between the container app and Se
 ( ) To authenticate the container app using a user-assigned managed identity. {{Incorrect. This is the purpose of configuring the container app to authenticate using the user assigned identity.}}
 
 ## Multiple Choice
-What is the purpose of configuring Pipeline1 to use the self-hosted agent pool?
-( ) To verify the configuration of the continuous integration environment for Container Apps. {{Incorrect. The purpose of configuring Pipeline1 to use the self-hosted agent pool is not related to verifying the configuration.}}
-( ) To deploy a container image from the Azure Container Registry to the Azure Container Apps platform. {{Incorrect. This is the purpose of configuring Pipeline1 with an Azure Container Apps deployment task.}}
-(x) To enable Pipeline1 to deploy a container image from the container registry to the container app using a self-hosted agent pool. {{Correct. Configuring Pipeline1 to use the self-hosted agent pool enables it to deploy a container image from the container registry to the container app.}}
+What is the purpose of configuring `Pipeline1` to use the self-hosted agent pool?
+( ) To verify the configuration of the continuous integration environment for Container Apps. {{Incorrect. The purpose of configuring `Pipeline1` to use the self-hosted agent pool is not related to verifying the configuration.}}
+( ) To deploy a container image from the Azure Container Registry to the Azure Container Apps platform. {{Incorrect. This is the purpose of configuring `Pipeline1` with an Azure Container Apps deployment task.}}
+(x) To enable `Pipeline1` to deploy a container image from the container registry to the container app using a self-hosted agent pool. {{Correct. Configuring `Pipeline1` to use the self-hosted agent pool enables it to deploy a container image from the container registry to the container app.}}
 
 ## Multiple Choice
 What is the purpose of setting the revision management to multiple in Azure Container Apps?

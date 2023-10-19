@@ -12,31 +12,31 @@ The following Azure resources must be available in your Resource group named RG1
 
 You've been asked to configure a continuous integration environment for Container Apps that meets the following requirements:
 
-- You need an Azure Container Apps deployment task in Project1/Pipeline1 of your ADO environment.
-- Pipeline1 must deploy a container image from your container registry to your container app using a self-hosted agent pool.
+- You need an Azure Container Apps deployment task in your ADO environment.
+- `Pipeline1` must deploy a container image from your container registry to your container app using a self-hosted agent pool.
 - You must ensure that the pipeline successfully deploys the image at least once.
 
 You complete the following tasks during this exercise:
 
-1. Configure Pipeline1 to use the self-hosted agent pool
+1. Configure `Pipeline1` to use the self-hosted agent pool.
 
-1. Configure Pipeline1 with an Azure Container Apps deployment task
+1. Configure `Pipeline1` with an Azure Container Apps deployment task.
 
-1. Run the Pipeline1 deployment task
+1. Run the `Pipeline1` deployment task.
 
-1. Verify the configuration
+1. Verify the configuration.
 
-## Configure Pipeline1 to use the self-hosted agent pool
+## Configure `Pipeline1` to use the self-hosted agent pool
 
-1. Open a browser windows, navigate to https://dev.azure.com, and then open your Azure DevOps organization.
+1. Open a browser window, navigate to https://dev.azure.com, and then open your Azure DevOps organization.
 
-1. On your Azure DevOps page, to your the DevOps project, select **Project1**.
+1. On your Azure DevOps page, to open your the DevOps project, select **`Project1`**.
 
-1. In the left-side menu, select **Pipelines**.
+1. In the left-side menu, select **`Pipelines`**.
 
-1. Select **Pipeline1**, and then select **Edit**.
+1. Select **`Pipeline1`**, and then select **Edit**.
 
-1. To use the self-hosted agent pool, update the azure-pipelines.yml file as shown below:
+1. To use the self-hosted agent pool, update the azure-pipelines.yml file as shown in the following example:
 
     ```yml
     trigger:
@@ -52,24 +52,24 @@ You complete the following tasks during this exercise:
 
 1. Enter a commit message, and then select **Save**.
 
-## Configure Pipeline1 with an Azure Container Apps deployment task
+## Configure `Pipeline1` with an Azure Container Apps deployment task
 
-1. Ensure that you have Pipeline1 open for editing.
+1. Ensure that you have `Pipeline1` open for editing.
 
 1. On the right side under Tasks, in the Search tasks field, enter **azure container**
 
 1. In the filtered list of tasks, select **Azure Container Apps Deploy**
 
-1. Under Azure Resource Manager connection, select the Subscription you are using, and then select **Authorize**.
+1. Under Azure Resource Manager connection, select the Subscription you're using, and then select **Authorize**.
 
 1. In the Azure portal tab, open your Container App resource, and then open the Containers page.
 
-1. Use the information on the Containers page to configure the following Pipeline1 Task information:
+1. Use the information on the Containers page to configure the following `Pipeline1` Task information:
 
     - Docker Image to Deploy: `<Registry>/<Image>:<Image tag>`
     - Azure Container App name: `<Name>`
 
-1. Configure the following Pipeline1 Task information:
+1. Configure the following `Pipeline1` Task information:
 
     - Azure Resource group name: **RG1**
 
@@ -110,15 +110,15 @@ You complete the following tasks during this exercise:
 
 1. Select **Save**, and then select **Save** again to commit.
 
-## Run the Pipeline1 deployment task
+## Run the `Pipeline1` deployment task
 
-1. Ensure that you have Pipeline1 open in Azure DevOps.
+1. Ensure that you have `Pipeline1` open in Azure DevOps.
 
 1. To run the AzureContainerApps task, select **Run**.
 
 1. On the Run pipeline page, select **Run**.
 
-    A pipeline page will open to display the associated job. The job section displays job status, which progresses from Queued to Waiting.
+    A pipeline page opens to display the associated job. The job section displays job status, which progresses from Queued to Waiting.
 
     ![Screenshot of Azure Pipelines showing a successful run of Pipeline1.](../media/pipeline-progress-queued-waiting.png)
 
@@ -134,9 +134,9 @@ You complete the following tasks during this exercise:
 
 In this task, you examine your pipeline and container app to verify successful pipeline runs.
 
-1. Ensure that you have Pipeline1 open in Azure DevOps.
+1. Ensure that you have `Pipeline1` open in Azure DevOps.
 
-1. On the left side menu, select **Pipelines**, and then select **Pipeline1**.
+1. On the left side menu, select **Pipelines**, and then select **`Pipeline1`**.
 
 1. The Runs tab displays individual runs that can be selected to review details.
 
