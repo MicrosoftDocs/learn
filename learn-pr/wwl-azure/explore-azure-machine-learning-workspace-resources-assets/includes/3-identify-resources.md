@@ -20,7 +20,7 @@ One of the most important resources you need when training or deploying a model 
 - **Compute clusters**: On-demand clusters of CPU or GPU compute nodes in the cloud, managed by the workspace. Ideal to use for production workloads as they automatically scale to your needs.
 - **Kubernetes clusters**: Allows you to create or attach an Azure Kubernetes Service (AKS) cluster. Ideal to deploy trained machine learning models in production scenarios.
 - **Attached computes**: Allows you to attach other Azure compute resources to the workspace, like Azure Databricks or Synapse Spark pools.
-- **Serverless compute**: A fully managed, on-demand compute. Azure Machine Learning creates, scales, and manages the compute to use for training jobs for you.
+- **Serverless compute**: A fully managed, on-demand compute you can use for training jobs.
 
 > [!Note]
 > As Azure Machine Learning creates and manages *serverless compute* for you, it's not listed on the compute page in the studio. Learn more about how to [use serverless compute for model training](https://learn.microsoft.com/azure/machine-learning/how-to-use-serverless-compute?azure-portal=true)
