@@ -36,10 +36,11 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
    > [!WARNING]
    > Certificates created by this helper script **MUST NOT** be used for production. They contain hard-coded passwords ("*1234*"), expire after 30 days, and are provided for demonstration purposes only. When using CA certificates in production, be sure to apply your company's security best practices for certificate creation and lifetime management.
 
-   If you are interested, you can quickly scan the contents of the script file that you downloaded by using the editor that's built in to the Cloud Shell.
+   If you are interested, you can quickly read the contents of the script file that you downloaded by using the `cat` command.
 
-   * In the Cloud Shell, to open the editor, select **{}** (steve-how?).
-   * In the FILES list, select **certificates**, and then select **certGen.sh**.
+   ```sh
+   cat certGen.sh
+   ```
 
 3. To generate the root and intermediate certificates, enter the following command:
 

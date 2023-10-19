@@ -73,7 +73,8 @@ In this task, you complete the following:
 
 1. Move the two certificate files that you downloaded in the previous step into the folders, making sure that the certificate file matches the folder name.
 
-   > **Important**: On a production device, the certificate file should be stored securely using a hardware security module (HSM).
+   > [!IMPORTANT]
+   > On a production device, the certificate file should be stored securely using a hardware security module (HSM).
 
 1. Open the first folder, **sensor-thl-001-device**, in Visual Studio Code.
 

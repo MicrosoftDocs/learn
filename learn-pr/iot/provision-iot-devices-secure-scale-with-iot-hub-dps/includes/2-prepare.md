@@ -15,7 +15,7 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
 1. Start by clicking the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You create more resources for this project using the following steps. The resource group ID is substituted automatically where it's used within the code steps.
 
 > [!NOTE]
-> The integrated Azure Cloud Shell will time out after 20 minutes of inactivity. The sandbox will still be available and the Cloud Shell can be reactivated, but command-line and environment variables used will be lost. Your IoT Hub and Device Provisioning Service (DPS) instances will still be functional and available. Make sure you copy these variables as instructed at the end of this page so that you can still enter the values in upcoming Cloud Shell commands when necessary.
+> The integrated Azure Cloud Shell will time out after 20 minutes of inactivity. The sandbox will still be available and the Cloud Shell can be reactivated, but command-line and environment variables will be lost. Your IoT Hub and Device Provisioning Service (DPS) instances will still be functional and available. Make sure you copy these variables as instructed at the end of this page so that you can still enter the values in upcoming Cloud Shell commands when necessary.
 
 1. Install the Azure IoT extension.
 
