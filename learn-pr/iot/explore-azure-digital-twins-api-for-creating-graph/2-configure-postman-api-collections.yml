@@ -29,22 +29,22 @@ quiz:
 
   - content: "Which of the following is NOT an API category for Azure Digital Twins?"
     choices:
-    - content: "models"
+    - content: "Models"
       isCorrect: false
       explanation: "Models is one of the API categories. It contains operations like upload, validation, retrieval, and deletion of models."
 
-    - content: "digitaltwins"
+    - content: "Digitaltwins"
       isCorrect: false
       explanation: "Digitaltwins is one of the API categories. It contains operations like creating, modifying, and deleting digital twins and their relationships."
 
-    - content: "graph"
+    - content: "Graph"
       isCorrect: true
       explanation: "Graph is NOT one of the API categories. The digital twin graph, including twins and their relationships, is managed with the Digitaltwins APIs. "
 
-    - content: "query"
+    - content: "Query"
       isCorrect: false
       explanation: "Query is one of the API categories. You can use it to find sets of digital twins in the twin graph by their properties, models, or relationships. "
 
-    - content: "jobs"
+    - content: "Jobs"
       isCorrect: false
       explanation: "Jobs is one of the API categories. It's for managing long-running, asynchronous actions such as bulk import of models, twins, and relationships."

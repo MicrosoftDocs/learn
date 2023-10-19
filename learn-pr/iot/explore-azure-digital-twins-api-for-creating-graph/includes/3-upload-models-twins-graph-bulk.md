@@ -1,4 +1,4 @@
-In this unit, you'll use the Jobs API to import a sample scenario graph complete with models, twins, and relationships. The Import Jobs API uses a file placed in Azure Blob Storage to import all of these entities into your Azure Digital Twins instance at once.
+In this unit, you'll use the Jobs API to import a sample scenario graph complete with models, twins, and relationships. The Import Jobs API uses a file placed in Azure Blob Storage to import all of these entities into your Azure Digital Twins instance at once. You'll then use Models and Digitaltwins APIs to verify the graph that was imported.
 
 Follow the steps in this unit to explore and import the sample scenario graph in to your Azure Digital Twins instance.
 
@@ -70,6 +70,14 @@ az storage blob upload --account-name $STORAGE_ACCOUNT --container-name $CONTAIN
 
 Now you have the import file available in an Azure storage account that can be accessed by your Azure Digital Twins instance. In the next section, you'll send an API request that uses this file to create the defined entities in your Azure Digital Twins instance.
 
+## View Jobs API documentation
+
+Start by reviewing the [Jobs API documentation](/rest/api/digital-twins/dataplane/jobs). The API contains operations for managing a long-running import job, including add, cancel, delete, get by ID, and list.
+
+:::image type="content" source="../media/3-jobs.png" alt-text="Reference doc screenshot showing the Jobs operations." border="false" lightbox="../media/3-jobs":::
+
+In this unit, you'll use **Add** to create an import request, and **GetById** to check the job's status.
+
 ## Make the import request
 
 In this section, you'll send an Import Jobs API request to import the sample file of models, twins, and relationships.
@@ -110,10 +118,10 @@ The value of `succeeded` in the output indicates that the import job was success
 
 ## Verify imported elements
 
-To check that your Azure Digital Twins graph now contains models, twins, and relationships, this section uses the data plane APIs for **models** and **digitaltwins**.
+To check that your Azure Digital Twins graph now contains models, twins, and relationships, this section uses the data plane APIs for **Models** and **Digitaltwins**.
 
 >[!TIP]
->For a full description of the requests and fields used in this section, see the [Models reference documentation](/rest/api/digital-twins/dataplane/models) and [Twins reference documentation](/rest/api/digital-twins/dataplane/twins).
+>For a full description of the requests and fields used in this section, see the [Models reference documentation](/rest/api/digital-twins/dataplane/models) and [Twins reference documentation](/rest/api/digital-twins/dataplane/twins). For more practice using the Models and Digitaltwins APIs, see the next unit in this module.
 
 ### Verify models
 
