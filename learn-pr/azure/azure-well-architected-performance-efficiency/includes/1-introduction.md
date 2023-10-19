@@ -1,4 +1,4 @@
-Whether you're running a public-facing application that handles massive amounts of traffic or an internal business API that manages critical data for internal systems, your users expect a system that performs well. Scaling your system to handle load, identifying network bottlenecks, and optimizing your storage performance are important tasks to ensure your users have the best experience.
+Whether you're running a public-facing application that handles massive amounts of traffic or an internal business API that manages critical data for internal systems. Your users expect a system that performs well. Scaling your system to handle load, identifying network bottlenecks, and optimizing your storage performance are important tasks to ensure your users have the best experience.
 
 In this module, you learn about the *performance efficiency* pillar of the Azure Well-Architected Framework.
 

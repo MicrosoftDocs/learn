@@ -38,7 +38,7 @@ quiz:
       explanation: 'Decreasing the number of instances serving requests is scaling in.'
     - content: 'Taking ownership of how your application scales.'
       isCorrect: false
-      explanation: "Taking ownership of how your application scales, isn't scaling down."
+      explanation: "Controlling how your application scales, isn't scaling down."
     - content: 'Decreasing the amount of resources allocated to an instance.'
       isCorrect: true
       explanation: 'Scaling down is the reduction of resources that a single instance has available.'
@@ -46,7 +46,7 @@ quiz:
       isCorrect: false
       explanation: "Scaling down is the reduction of resources for a single instance."
 
-  - content: 'Which of the following is *not* a consideration when you build a scaling strategy into your application?'
+  - content: 'Which of the following considerations is *not* important when you build a scaling strategy into your application?'
     choices:
     - content: 'The backup retention policies for your instances.'
       isCorrect: true
