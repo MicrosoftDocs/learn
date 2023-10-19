@@ -1,6 +1,8 @@
-## Create a Microsoft 365 group in Azure Active Directory
+<a name='create-a-microsoft-365-group-in-azure-active-directory'></a>
 
-1.  Browse to the Azure Active Directory page in the [Azure portal](https://portal.azure.com/).
+## Create a Microsoft 365 group in Microsoft Entra ID
+
+1.  Browse to the Microsoft Entra ID page in the [Azure portal](https://portal.azure.com/).
 2.  In the left navigation, under **Manage**, select **Groups**.
 3.  In the Groups blade, on the menu, select **New group**.
 4.  Create a group using the following information:

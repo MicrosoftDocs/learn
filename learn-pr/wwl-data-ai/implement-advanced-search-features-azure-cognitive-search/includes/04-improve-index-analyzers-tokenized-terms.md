@@ -1,4 +1,5 @@
-Cognitive Search is configured by default to analyze text and identify tokens that will be helpful in your index. The right tokens ensure that users can find the documents they need quickly. In most cases, the default configuration produces an optimal index. However, when you have unusual or unique fields, you might want to configure exactly how text is analyzed.
+
+Azure Cognitive Search is configured by default to analyze text and identify tokens that will be helpful in your index. The right tokens ensure that users can find the documents they need quickly. In most cases, the default configuration produces an optimal index. However, when you have unusual or unique fields, you might want to configure exactly how text is analyzed.
 
 Here, you'll learn how to define a custom analyzer to control how the content of a field is split into tokens for inclusion in the index.
 

@@ -1886,6 +1886,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/9-create-bot.md",
+      "redirect_url": "/training/modules/create-question-answer-solution-ai-language",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/4-amazon-dynamodb.md",
       "redirect_url": "/training/cmu-cloud-computing/cmu-case-study-nosql-databases",
       "redirect_document_id": false
@@ -6991,9 +6996,14 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/2-azure-resources.md",
+      "redirect_url": "/training/modules/create-azure-cognitive-search-solution/2-manage-capacity",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/2-get-ready-develop.md",
       "redirect_url": "/training/modules/create-azure-cognitive-search-solution/2-azure-resources",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/3-resources-search.md",
@@ -10612,6 +10622,11 @@
     },
     {
       "source_path": "learn-pr/wwl-data-ai/use-containers-language-understanding-intelligent-service-apps/6-summary.md",
+      "redirect_url": "/training/modules/publish-use-language-understanding-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/4-use-container.md",
       "redirect_url": "/training/modules/publish-use-language-understanding-app",
       "redirect_document_id": false
     },
@@ -18160,6 +18175,11 @@
       "redirect_url": "/training/modules/work-with-cosmos-db/",
       "redirect_document_id": false
     },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/2-define-projection.yml",
+      "redirect_url": "/training/modules/create-knowledge-store-azure-cognitive-search",
+      "redirect_document_id": false
+  },
     {
       "source_path": "learn-pr/azure/distribute-data-globally-with-cosmos-db/5-data-consistency-levels.yml",
       "redirect_url": "/training/modules/work-with-cosmos-db/",
@@ -28069,6 +28089,181 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/2-what-is-project-bonsai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/3-how-project-bonsai-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/4-when-to-use-project-bonsai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/2-what-project-bonsai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/3-design-bonsai-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/4-exercise-setup-account.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/5-exercise-create-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/6-how-train-evaluate-progress.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/8-exercise-train-evaluate-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/9-understand-assessments.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/10-exercises-assess-trained-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/11-export-run-trained-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/12-exercise-export-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/13-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/14-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/teach-ai-with-project-bonsai/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-industrial-brain/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-industrial-brain/2-define-machine-teaching-problem.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-industrial-brain/3-decompose-problem.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-industrial-brain/4-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-industrial-brain/5-exercise-set-up-account.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-industrial-brain/6a-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-industrial-brain/6-exercise-create-modular-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-industrial-brain/7-exercise-train-brain.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-industrial-brain/8-exercise-create-custom-assessment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-industrial-brain/10-exercise-query-custom-assessment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-industrial-brain/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-industrial-brain/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/autonomous-ai-implementation-engineer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/create-an-azure-account/1-introduction.yml",
       "redirect_url": "https://azure.microsoft.com/free/",
       "redirect_document_id": false
@@ -28171,6 +28366,16 @@
     {
       "source_path": "learn-pr/wwl-data-ai/create-business-value/4-discover-apply-ai-maturity-model-assessment.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-business-value",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/discover-microsoft-ai-financial-professionals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/discover-microsoft-ai-leaders-financial-industry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/discover-microsoft-ai-healthcare-professionals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/discover-microsoft-ai-leaders-healthcare-industry/",
       "redirect_document_id": false
     }
   ]

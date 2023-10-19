@@ -1,4 +1,4 @@
-Azure AD simplifies how enterprises manage access to groups and applications with Azure AD access reviews. Other Microsoft Online Services such as Microsoft 365 can also be managed with Azure AD access reviews.
+Microsoft Entra ID simplifies how enterprises manage access to groups and applications with Microsoft Entra access reviews. Other Microsoft Online Services such as Microsoft 365 can also be managed with Microsoft Entra access reviews.
 
 ## Perform access review using My Apps
 

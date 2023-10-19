@@ -10,7 +10,7 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-An Azure Active Directory (Azure AD) tenant includes the tenant's users, groups, and apps and is used to perform identity and access management functions for tenant resources.  You can create different tenants and resources to represent different application environments, such as production and test.
+A Microsoft Entra tenant includes the tenant's users, groups, and apps and is used to perform identity and access management functions for tenant resources.  You can create different tenants and resources to represent different application environments, such as production and test.
 
 <!--TODO: add a visual element -->
 
@@ -31,9 +31,9 @@ An Azure Active Directory (Azure AD) tenant includes the tenant's users, groups,
  -->
 ## Example scenario
 
-Suppose you work on a development team that creates internal apps for a retail company. Your team recently released a sales team dashboard for sales managers to manage their direct reports and help them meet their targets. You now need an Azure AD test environment for a CI/CD pipeline that automates the deployment of the web app, the configuration of Azure App Service authentication, and the execution of integration tests as a user.
+Suppose you work on a development team that creates internal apps for a retail company. Your team recently released a sales team dashboard for sales managers to manage their direct reports and help them meet their targets. You now need a Microsoft Entra test environment for a CI/CD pipeline that automates the deployment of the web app, the configuration of Azure App Service authentication, and the execution of integration tests as a user.
 
-In this module, your team will set up an Azure AD test environment to help move your web app through the development, test, and production lifecycle.  You'll need an Azure AD tenant, which contains app registrations to represent your application and test clients, test users, and optionally policies to protect resources.
+In this module, your team will set up a Microsoft Entra test environment to help move your web app through the development, test, and production lifecycle.  You'll need a Microsoft Entra tenant, which contains app registrations to represent your application and test clients, test users, and optionally policies to protect resources.
 
 :::image type="content" source="../media/pipeline.png" alt-text="Diagram showing the components of a CI/CD pipeline.":::
 
@@ -53,8 +53,8 @@ In this module, your team will set up an Azure AD test environment to help move 
 
 In this module, you will:
 
-- Decide whether to use a production Azure AD tenant or a separate tenant for your test environment
-- Set up a dedicated test tenant in Azure AD
+- Decide whether to use a production Microsoft Entra tenant or a separate tenant for your test environment
+- Set up a dedicated test tenant in Microsoft Entra ID
 - Create a test user in the test tenant
 - Create an app registration to use as a test client for your web app
 - Add policies to the test tenant
@@ -70,6 +70,6 @@ In this module, you will:
  -->
 ## What is the main goal?
 
-By the end of this session, you'll be able to set up a test environment in Azure AD for testing applications.
+By the end of this session, you'll be able to set up a test environment in Microsoft Entra ID for testing applications.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

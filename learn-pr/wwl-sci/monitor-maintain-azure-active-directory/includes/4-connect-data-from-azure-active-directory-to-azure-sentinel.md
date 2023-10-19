@@ -12,10 +12,10 @@ A security information and event management (SIEM) aggregates and analyzes activ
 
 ## Prerequisites
 
- -  An Azure Active Directory P1 or P2 license is required to ingest sign-in logs into Microsoft Sentinel. Any Azure AD license (Free/O365/P1/P2) is sufficient to ingest the other log types. Additional per-gigabyte charges may apply for Azure Monitor (Log Analytics) and Microsoft Sentinel.<br>
+ -  A Microsoft Entra ID P1 or P2 license is required to ingest sign-in logs into Microsoft Sentinel. Any Microsoft Entra ID license (Free/O365/P1 or P2) is sufficient to ingest the other log types. Additional per-gigabyte charges may apply for Azure Monitor (Log Analytics) and Microsoft Sentinel.<br>
  -  Your user must be assigned the Microsoft Sentinel Contributor role on the workspace.
  -  Your user must be assigned the Global Administrator or Security Administrator roles on the tenant you want to stream the logs from.
- -  Your user must have read and write permissions to the Azure AD diagnostic settings to be able to see the connection status.
+ -  Your user must have read and write permissions to the Microsoft Entra diagnostic settings to be able to see the connection status.
 
 ## Create and add a Microsoft Sentinel workspace
 
@@ -36,17 +36,19 @@ Use these instructions if you don't already have a workspace available to Micros
     | Pricing tier   | Pay-as-you-go                                       |
 1. When complete, select your new workspace and then select **Add** to add the workspace to Microsoft Sentinel.
 
-## Connect to Azure Active Directory
+<a name='connect-to-azure-active-directory'></a>
 
-You can use Microsoft Sentinel's built-in connector to collect data from [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) and stream it into Microsoft Sentinel. The connector allows you to stream [sign in logs](/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit logs](/azure/active-directory/reports-monitoring/concept-audit-logs).
+## Connect to Microsoft Entra ID
+
+You can use Microsoft Sentinel's built-in connector to collect data from [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) and stream it into Microsoft Sentinel. The connector allows you to stream [sign in logs](/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit logs](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 1. In Microsoft Sentinel, in the navigation menu on the left, under **Configuration**, select **Data connectors**.
-1. In the **Data connectors** list, select **Azure Active Directory** and then select **Open connector page**.
+1. In the **Data connectors** list, select **Microsoft Entra ID** and then select **Open connector page**.
     
-    :::image type="content" source="../media/sentinel-add-azure-active-directory-connector-127ee277.png" alt-text="Screenshot of the data connectors screen with the Azure Active Directory connector and Open Connector page highlighted.":::
+    :::image type="content" source="../media/sentinel-add-azure-active-directory-connector-127ee277.png" alt-text="Screenshot of the data connectors screen with the Microsoft Entra connector and Open Connector page highlighted.":::
     
-1. Under **Configuration**, select the **Azure Active Directory Sign in logs** and **Audit logs** checkboxes and then select **Apply changes**.
+1. Under **Configuration**, select the **Microsoft Entra sign-in logs** and **Audit logs** checkboxes and then select **Apply changes**.
     
-    :::image type="content" source="../media/sentinel-configure-azure-active-directory-connector-3c6e960d.png" alt-text="Screenshot of the Azure Active Directory logs collected by Azure Sentinel selections highlighted.":::
+    :::image type="content" source="../media/sentinel-configure-azure-active-directory-connector-3c6e960d.png" alt-text="Screenshot of the Microsoft Entra logs collected by Azure Sentinel selections highlighted.":::
     
-1. Close the Azure Active Directory connector page.
+1. Close the Microsoft Entra connector page.

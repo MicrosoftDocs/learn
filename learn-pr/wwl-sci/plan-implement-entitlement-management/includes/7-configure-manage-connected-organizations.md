@@ -1,20 +1,20 @@
-With Azure Active Directory (Azure AD) entitlement management, you can collaborate with people outside your organization. If you frequently collaborate with users in an external Azure AD directory or domain, you can add them as a connected organization. This article describes how to add a connected organization so that you can allow users outside your organization to request resources in your directory.
+With Microsoft Entra entitlement management, you can collaborate with people outside your organization. If you frequently collaborate with users in an external Microsoft Entra directory or domain, you can add them as a connected organization. This article describes how to add a connected organization so that you can allow users outside your organization to request resources in your directory.
 
 ## What is a connected organization?
 
-A connected organization is another organization that you have a relationship with. In order for the users in that organization to be able to access your resources, such as your SharePoint Online sites or apps, you'll need a representation of that organization's users in that directory. Because in most cases the users in that organization aren't already in your Azure AD directory, you can use entitlement management to bring them into your Azure AD directory as needed.
+A connected organization is another organization that you have a relationship with. In order for the users in that organization to be able to access your resources, such as your SharePoint Online sites or apps, you'll need a representation of that organization's users in that directory. Because in most cases the users in that organization aren't already in your Microsoft Entra directory, you can use entitlement management to bring them into your Microsoft Entra directory as needed.
 
 There are three ways that entitlement management lets you specify the users that form a connected organization. It could be
 
- -  users in another Azure AD directory (from any Microsoft cloud),
+ -  users in another Microsoft Entra directory (from any Microsoft cloud),
  -  users in another non-Azure AD directory that has been configured for direct federation, or
  -  users in another non-Azure AD directory, whose email addresses all have the same domain name in common.
 
 ## Add a connected organization
 
-To add an external Azure AD directory or domain as a connected organization, follow the instructions in this section. **Prerequisite role:** Global administrator, Identity Governance administrator, or User administrator
+To add an external Microsoft Entra directory or domain as a connected organization, follow the instructions in this section. **Prerequisite role:** Global administrator, Identity Governance administrator, or User administrator
 
-1. In the **Azure portal**, select **Azure Active Directory**, and then select **Identity Governance**.
+1. In the **Azure portal**, select **Microsoft Entra ID**, and then select **Identity Governance**.
 1. In the left pane, select **Connected organizations**, and then select **+ Add connected organization**.
 1. Select the **Basics** tab, and then enter a display name and description for the organization.
     
@@ -24,12 +24,12 @@ To add an external Azure AD directory or domain as a connected organization, fol
     
     
      -  The Select directories + domains pane opens.
-1. In the search box, enter a domain name to search for the Azure AD directory or domain. Be sure to enter the entire domain name.
+1. In the search box, enter a domain name to search for the Microsoft Entra directory or domain. Be sure to enter the entire domain name.
     
     
      -  Confirm that the organization name and authentication type are correct.
-1. Select **Add** to add the Azure AD directory or domain. Currently, you can add only one Azure AD directory or domain per connected organization.
-1. After you've added the Azure AD directory or domain, select Select.
+1. Select **Add** to add the Microsoft Entra directory or domain. Currently, you can add only one Microsoft Entra directory or domain per connected organization.
+1. After you've added the Microsoft Entra directory or domain, select Select.
     
     
      -  The organization appears in the list.

@@ -1,4 +1,4 @@
-With Azure AD reports, you can get the information needed to determine how your environment is doing. With the usage and insights report, you can get an application-centric view of your sign-in data and find answers to the following questions:
+With Microsoft Entra reports, you can get the information needed to determine how your environment is doing. With the usage and insights report, you can get an application-centric view of your sign-in data and find answers to the following questions:
 
  -  What are the top used applications in the organization?
  -  What applications have the most failed sign-ins?
@@ -7,7 +7,7 @@ With Azure AD reports, you can get the information needed to determine how your 
 ## Access the usage and insights report
 
 1. Navigate to the [Azure portal](https://portal.azure.com/).
-1. Select the correct directory, then select **Azure Active Directory** and choose **Enterprise applications**.
+1. Select the correct directory, then select **Microsoft Entra ID** and choose **Enterprise applications**.
 1. From the **Activity** section, select **Usage &amp; insights** to open the report.
 
 :::image type="content" source="../media/main-menu-13c3dfec.png" alt-text="Screenshot of the Usage and insights selected from the Activity section. Use the report to gain insights.":::
@@ -28,7 +28,7 @@ When you select a day in the application usage graph, you get a detailed list of
 
 ## Audit logs
 
-The Azure AD audit logs provide records of system activities for compliance. Users in the Security Administrator, Security Reader, Report Reader, Global Reader or Global Administrator roles can access their data. To access the audit report, select **Audit logs** in the **Monitoring** section of **Azure Active Directory**.
+The Microsoft Entra audit logs provide records of system activities for compliance. Users in the Security Administrator, Security Reader, Report Reader, Global Reader or Global Administrator roles can access their data. To access the audit report, select **Audit logs** in the **Monitoring** section of **Microsoft Entra ID**.
 
 An audit log has a default list view that shows:
 

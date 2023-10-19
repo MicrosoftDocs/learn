@@ -1,6 +1,6 @@
 Azure role-based access control (RBAC) is a system that enables granular access management of Azure resources. Azure Administrators use Azure RBAC to segregate duties within a team, and grant users the specific access they need to perform their jobs.
 
-In this module, you identified the features and use cases for RBAC. You discovered how to create role definitions and role assignments, and find and use built-in Azure RBAC roles. You explored how to use RBAC to manage access to subscriptions with RBAC. You reviewed the differences between Azure RBAC and Azure Active Directory (Azure AD) roles. 
+In this module, you identified the features and use cases for RBAC. You discovered how to create role definitions and role assignments, and find and use built-in Azure RBAC roles. You explored how to use RBAC to manage access to subscriptions with RBAC. You reviewed the differences between Azure RBAC and Microsoft Entra roles. 
 
 ## Learn more with Azure documentation
 
@@ -10,7 +10,7 @@ In this module, you identified the features and use cases for RBAC. You discover
 
 - Search [Azure RBAC built-in role definitions](/azure/role-based-access-control/built-in-roles).
 
-- Explore [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference).
+- Explore [Microsoft Entra administrator roles](/azure/active-directory/roles/permissions-reference).
 
 - Define your own [Azure RBAC custom roles](/azure/role-based-access-control/custom-roles).
 

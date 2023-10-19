@@ -53,9 +53,9 @@ When picking the right tool, consider your past experience and current work envi
 
 ### Microsoft Graph
 
-:::image type="content" source="../media/graph-capabilities.png" alt-text="Diagram Microsoft Graph features.  Use graph to pull identity information from Azure A D.":::
+:::image type="content" source="../media/graph-capabilities.png" alt-text="Diagram Microsoft Graph features.  Use graph to pull identity information from Microsoft Entra ID.":::
 
-Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services such as Azure AD, Microsoft 365, devices, and many others.
+Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services such as Microsoft Entra ID, Microsoft 365, devices, and many others.
 
 - The Microsoft Graph API offers a single endpoint, `https://graph.microsoft.com`, to provide access to rich, people-centric data and insights in the Microsoft cloud, including Microsoft 365, Windows 10, and Enterprise Mobility + Security. You can use REST APIs or SDKs to access the endpoint and build apps that support Microsoft 365 scenarios. The access can span from productivity, to collaboration, to education. Microsoft Graph also includes a powerful set of services that manage user and device identity. You can determine and configure access, compliance, security, and help protect organizations from data leakage or loss.
 

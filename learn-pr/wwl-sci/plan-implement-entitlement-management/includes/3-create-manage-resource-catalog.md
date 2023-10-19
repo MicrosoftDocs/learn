@@ -1,4 +1,6 @@
-## Create an Azure account and add Azure Active Directory Premium P2 trial licenses
+<a name='create-an-azure-account-and-add-azure-active-directory-premium-p2-trial-licenses'></a>
+
+## Create an Azure account and add Microsoft Entra ID P2 trial licenses
 
 The tasks in this exercise require and Azure subscription. You'll also find the exercises in this learning path need an Azure subscription. You can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you may skip this task.
 
@@ -6,12 +8,12 @@ The tasks in this exercise require and Azure subscription. You'll also find the 
 1. Scroll down through the page to learn more about the benefits and free services available.
 1. Select **Start free**.
 1. Use the wizard to sign up for your Azure trial subscription.
-1. You'll need to an Azure AD P2 license to complete some of the exercises. In the organization you created, search for and then select **Azure Active Directory**.
+1. You'll need to a Microsoft Entra ID P2 license to complete some of the exercises. In the organization you created, search for and then select **Microsoft Entra ID**.
 1. In the left navigation menu, select **Getting started**.
-1. Under Getting started with Azure AD, select **Get a free trial for Azure AD Premium**.
-1. In the Activate pane, under **AZURE AD PREMIUM P2**, select **Free trial** and then select **Activate**.
+1. Under Getting started with Microsoft Entra ID, select **Get a free trial for Microsoft Entra ID P1 or P2**.
+1. In the Activate pane, under **Microsoft Entra ID P2**, select **Free trial** and then select **Activate**.
 1. In the navigation menu on the left, select **Overview**.
-1. Refresh the browser until you see Azure AD Premium P2 under the organization name. It may take a couple of minutes.
+1. Refresh the browser until you see Microsoft Entra ID P2 under the organization name. It may take a couple of minutes.
 1. The license may take a few minutes to activate. You may need to sign out and sign back into Microsoft Azure. Try restarting if you encounter problems with expected features not being available.
 
 ## Create a catalog
@@ -21,15 +23,15 @@ A catalog is a container of resources and access packages. You create a catalog 
 1. Sign in to the [Azure portal](https://portal.azure.com/) as a Global administrator.
     
     
-     -  Azure AD Premium P1, P2, EMS E3, or EMS E5 subscription.
-     -  If you don't have one of these subscriptions, you can get Azure AD Premium or enable Azure AD Premium trial.
+     -  Microsoft Entra ID P1, P2, EMS E3, or EMS E5 subscription.
+     -  If you don't have one of these subscriptions, you can get Microsoft Entra ID P1 or P2 or enable Microsoft Entra ID P1 or P2 trial.
      -  One of the following administrator accounts for the directory you want to configure:
         
         
          -  Global Administrator
          -  Security Administrator
          -  Conditional Access Administrator
-1. Open **Azure Active Directory** and the select **Identity Governance**.
+1. Open **Microsoft Entra ID** and the select **Identity Governance**.
 1. In the left menu, under **Entitlement management**, select **Catalogs**.
 1. On the top menu, select **+New Catalog**.
     
@@ -46,7 +48,7 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 ## Add resources to a catalog
 
-To include resources in an access package, the resources must exist in a catalog. The types of resources you can add are groups, applications, and SharePoint Online sites. The groups can be cloud-created Microsoft 365 Groups or cloud-created Azure AD security groups. The applications can be Azure AD enterprise applications, including both SaaS applications and your own applications federated to Azure AD. The sites can be SharePoint Online sites or SharePoint Online site collections.
+To include resources in an access package, the resources must exist in a catalog. The types of resources you can add are groups, applications, and SharePoint Online sites. The groups can be cloud-created Microsoft 365 Groups or cloud-created Microsoft Entra security groups. The applications can be Microsoft Entra enterprise applications, including both SaaS applications and your own applications federated to Microsoft Entra ID. The sites can be SharePoint Online sites or SharePoint Online site collections.
 
 1. On the Identity Governance screen, if necessary, select **Catalogs**.
 1. In the **Catalogs** list, select **Marketing**.
@@ -63,7 +65,7 @@ To include resources in an access package, the resources must exist in a catalog
 
 The user that created a catalog becomes the first catalog owner. To delegate management of a catalog, you add users to the catalog owner role. This helps share the catalog management responsibilities.
 
-1. In the Marketing catalog, in the left navigation menu, select Roles and administrators. If necessary, in the Azure portal, browse to **Azure Active Directory**, then **Identity Governance**, then **Catalogs** and then select **Marketing**.
+1. In the Marketing catalog, in the left navigation menu, select Roles and administrators. If necessary, in the Azure portal, browse to **Microsoft Entra ID**, then **Identity Governance**, then **Catalogs** and then select **Marketing**.
     
     :::image type="content" source="../media/catalog-roles-admins-281217c1.png" alt-text="Screenshot of the Roles and administrators page for the Marketing catalog. Pick your catalog owner.":::
     

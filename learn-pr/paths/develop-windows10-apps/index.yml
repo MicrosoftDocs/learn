@@ -27,6 +27,5 @@ modules:
 - learn-windows.introduction-w10-dev
 - learn-windows.introducing-visual-studio
 - learn-windows.writing-windows-10-apps
-- learn-windows.building-connected-windows-apps
 trophy:
   uid: learn-windows.develop-windows-apps.trophy

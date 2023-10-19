@@ -17,7 +17,7 @@ If you wish, you can further customize your GUI by adding an App.css file and de
 
 ## Check your work
 
-To validate the work done in this exercise, run your React app locally (using `npm start` command) and open the URL <http://localhost:3000> in a browser. You should see a web page with a title, a text box and two buttons, like the one below:
+To validate the work done in this exercise, run your React app locally (using `npm start` command) and open the URL `http://localhost:3000` in a browser. You should see a web page with a title, a text box and two buttons, like the one below:
 ![Application GUI](../media/app-gui.png)
 
 > [!WARNING]

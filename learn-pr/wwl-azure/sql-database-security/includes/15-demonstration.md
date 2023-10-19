@@ -91,12 +91,14 @@ In this task, we will review and configure SQL database diagnostics.
 19. Review the additional metrics that are provided by this product.
 20. You can drill into any graphic for additional details.
 
-## Task 3 - Azure SQL: Azure AD Authentication
+<a name='task-3---azure-sql-azure-ad-authentication'></a>
+
+## Task 3 - Azure SQL: Microsoft Entra authentication
 
 > [!NOTE]
-> This task requires an Azure SQL database that has not had Azure AD configured. This task also requires SQL Server Management Studio.
+> This task requires an Azure SQL database that has not had Microsoft Entra ID configured. This task also requires SQL Server Management Studio.
 
-In this task, we will configure Azure AD authentication.
+In this task, we will configure Microsoft Entra authentication.
 
 1.  In the **Portal**.
 2.  Navigate to your SQL database.
