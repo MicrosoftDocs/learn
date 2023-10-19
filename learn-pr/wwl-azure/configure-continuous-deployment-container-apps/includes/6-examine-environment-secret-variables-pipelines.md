@@ -20,7 +20,7 @@ You can use a variable group to make variables available across multiple pipelin
 
 ### System variables
 
-In addition to user-defined variables, Azure Pipelines has system variables with predefined values. If you're using YAML or classic build pipelines, see predefined variables for a comprehensive list of system variables. If you're using classic release pipelines, see release variables.
+In addition to user-defined variables, Azure Pipelines has system variables with predefined values.
 
 System variables get set with their current value when you run the pipeline. Some variables are set automatically. As a pipeline author or end user, you change the value of a system variable before the pipeline runs.
 
@@ -30,9 +30,9 @@ System variables are read-only.
 
 Environment variables are specific to the operating system you're using. They're injected into a pipeline in platform-specific ways. The format corresponds to how environment variables get formatted for your specific scripting platform.
 
-On UNIX systems (macOS and Linux), environment variables have the format $NAME. On Windows, the format is %NAME% for batch and $env:NAME in PowerShell.
+On UNIX systems (macOS and Linux), environment variables have the format `$NAME`. On Windows, the format is `%NAME%` for batch and `$env:NAME` in PowerShell.
 
-System and user-defined variables also get injected as environment variables for your platform. When variables convert into environment variables, variable names become uppercase, and periods turn into underscores. For example, the variable name any.variable becomes the variable name $ANY_VARIABLE.
+System and user-defined variables also get injected as environment variables for your platform. When variables convert into environment variables, variable names become uppercase, and periods turn into underscores. For example, the variable name any.variable becomes the variable name `$ANY_VARIABLE`.
 
 There are variable naming restrictions for environment variables (example: you can't use `secret` at the start of a variable name).
 
@@ -40,9 +40,9 @@ There are variable naming restrictions for environment variables (example: you c
 
 Secret variables are encrypted variables that you can use in pipelines without exposing their value. Secret variables can be used for private information like passwords, IDs, and other identifying data that you wouldn't want to have exposed in a pipeline. Secret variables are encrypted at rest with a 2048-bit RSA key and are available on the agent for tasks and scripts to use.
 
-The recommended ways to set secret variables are in the UI, in a variable group, and in a variable group from Azure Key Vault. You can also set secret variables in a script with a logging command but this is not recommended since anyone who can access your pipeline will be able to also see the secret.
+The recommended ways to set secret variables are in the UI, in a variable group, and in a variable group from Azure Key Vault. You can also set secret variables in a script with a logging command but this approach isn't recommended since anyone who can access your pipeline is able to also see the secret.
 
-Secret variables set in the pipeline settings UI for a pipeline are scoped to the pipeline where they are set. You can use variable groups to share secret variables across pipelines.
+Secret variables set in the pipeline settings UI for a pipeline are scoped to the pipeline where they're set. You can use variable groups to share secret variables across pipelines.
 
 ### Secret variable in the UI
 

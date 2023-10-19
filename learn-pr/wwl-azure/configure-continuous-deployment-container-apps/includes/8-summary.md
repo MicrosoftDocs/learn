@@ -2,7 +2,7 @@ In this module, you have learned about continuous deployment options for contain
 
 The main takeaways from this module are that Azure Container Apps implements container app versioning by creating revisions, which allows you to retain a historical record of your container app updates. Additionally, Azure Container Apps provides support for continuous deployment using either GitHub Actions or Azure Pipelines, which allows you to automate the deployment process and ensure that your container app is always up-to-date.
 
-Additional Reading:
+Detailed resources:
 
 - Revisions in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/revisions](/azure/container-apps/revisions)
 

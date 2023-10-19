@@ -9,13 +9,13 @@ Understanding pipeline terms and parts can help you to work more efficiently and
 - A trigger tells a Pipeline to run.
 - A pipeline is made up of one or more stages. A pipeline can deploy to one or more environments.
 - A stage is a way of organizing jobs in a pipeline and each stage can have one or more jobs.
-- Each job runs on one agent. A job can also be agentless, but agentless jobs are limited to a small number of out-of-the-box tasks.
+- Each job runs on one agent. A job can also be agentless, but agentless jobs are limited to a few out-of-the-box tasks.
 - Each agent runs a job that contains one or more steps.
 - A step can be a task or script and is the smallest building block of a pipeline.
-- A task is a pre-packaged script that performs an action, such as invoking a REST API or publishing a build artifact.
+- A task is a prepackaged script that performs an action, such as invoking a REST API or publishing a build artifact.
 - An artifact is a collection of files or packages published by a run.
 
-The following sections provide additional term details.
+The following sections provide more details.
 
 ### Agent
 
@@ -34,7 +34,7 @@ A deployment typically refers to a deployment job. A deployment job is a collect
 
 ### Deployment group
 
-A deployment group is a set of deployment target machines that have agents installed. A deployment group is just another grouping of agents, like an agent pool. You can set the deployment targets in a pipeline for a job using a deployment group. Learn more about provisioning agents for deployment groups.
+A deployment group is a set of deployment target machines that have agents installed. A deployment group is just another grouping of agents, like an agent pool. You can set the deployment targets in a pipeline for a job using a deployment group.
 
 ### Environment
 
@@ -50,7 +50,7 @@ A pipeline defines the continuous integration and deployment process for your ap
 
 ### Run
 
-A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests. During a run, Azure Pipelines will first process the pipeline and then send the run to one or more agents. Each agent will run jobs. Learn more about the pipeline run sequence.
+A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests. During a run, Azure Pipelines processes the pipeline and then sends the run to one or more agents. Each agent runs jobs.
 
 ### Script
 
@@ -58,17 +58,17 @@ A script runs code as a step in your pipeline using command line, PowerShell, or
 
 ### Stage
 
-A stage is a logical boundary in the pipeline. It can be used to mark separation of concerns (for example, Build, QA, and production). Each stage contains one or more jobs. When you define multiple stages in a pipeline, by default, they run one after the other. You can specify the conditions for when a stage runs. When you are thinking about whether you need a stage, ask yourself:
+A stage is a logical boundary in the pipeline. It can be used to mark separation of concerns (for example, Build, QA, and production). Each stage contains one or more jobs. When you define multiple stages in a pipeline, by default, they run one after the other. You can specify the conditions for when a stage runs. When you're thinking about whether you need a stage, ask yourself:
 
 - Do separate groups manage different parts of this pipeline? For example, you could have a test manager that manages the jobs that relate to testing and a different manager that manages jobs related to production deployment. In this case, it makes sense to have separate stages for testing and production.
 
 - Is there a set of approvals that are connected to a specific job or set of jobs? If so, you can use stages to break your jobs into logical groups that require approvals.
 
-- Are there jobs that need to run a long time? If you have part of your pipeline that will have an extended run time, it makes sense to divide them into their own stage.
+- Are there jobs that need to run a long time? If part of your pipeline has an extended run time, it makes sense to divide the parts into their own stage.
 
 ### Step
 
-A step is the smallest building block of a pipeline. For example, a pipeline might consist of build and test steps. A step can either be a script or a task. A task is simply a pre-created script offered as a convenience to you. To view the available tasks, see the Build and release tasks reference.
+A step is the smallest building block of a pipeline. For example, a pipeline might consist of build and test steps. A step can either be a script or a task. A task is prepackaged script offered as a convenience to you.
 
 ### Task
 
@@ -82,7 +82,7 @@ A trigger is something that's set up to tell the pipeline when to run. You can c
 
 Tasks are used to perform an action in a pipeline. For example, a task can build an app, interact with Azure resources, install a tool, or run a test.
 
-When you add a task to your pipeline, it may also add a set of demands to the pipeline. The demands define the prerequisites that must be installed on the agent for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
+When you add a task to your pipeline, it could also add a set of demands to the pipeline. The demands define the prerequisites that must be installed on the agent for the task to run. When you run the build or deployment, an agent that meets these demands is chosen.
 
 When you run a job, all the tasks are run in sequence, one after the other.
 
@@ -96,22 +96,22 @@ The Azure Pipelines service provides some built-in tasks to enable fundamental b
 
 The AzureContainerApps@1 - Azure Container Apps Deploy v1 task is an Azure DevOps Task that can be used to build and deploy Azure Container Apps.
 
-This Azure Pipelines Task allows users to easily deploy their application source to an Azure Container App in their Azure Pipelines workflow by either providing a previously built image, a Dockerfile that an image can be built from, or using a builder to create a runnable application image for the user.
+This Azure Pipelines Task makes it easy for users to deploy their application source to an Azure Container App in their Azure Pipelines workflow. Users can choose between providing a previously built image, a Dockerfile that an image can be built from, or using a builder to create a runnable application image for the user.
 
 The task has the following two usage patterns:
 
-- Pushing an image to ACR - when pushing a new image to ACR, the acrName and appSourcePath task inputs are required.
+- The task pushes an image to ACR - when the task pushes a new image to ACR, the acrName and appSourcePath task inputs are required.
 
-- Deploying a previously pushed image - when deploying a previously pushed image, the imageToDeploy task input is required. If this image is found in an ACR instance that requires authentication to pull, the acrName argument, or the acrUsername and acrPassword arguments, can be provided to authenticate requests to the ACR instance.
+- The task deploys a previously pushed image - when the task deploys a previously pushed image, the imageToDeploy task input is required. If this image is found in an ACR instance that requires authentication to pull, the acrName argument, or the acrUsername and acrPassword arguments, can be provided to authenticate requests to the ACR instance.
 
-If no Dockerfile is found or provided in the provided application source, the following steps are performed by this task:
+If no Dockerfile is found or provided in the application source, this task performs the following steps:
 
-- Uses the Oryx++ Builder to build the application source using Oryx to produce a runnable application image
+- Uses the `Oryx++ Builder` to build the application source using Oryx to produce a runnable application image.
 
-- Pushes this runnable application image to the provided Azure Container Registry
+- Pushes this runnable application image to the provided Azure Container Registry.
 
-- Creates or updates a Container App based on this image
+- Creates or updates a Container App based on this image.
 
-If a Dockerfile is found or discovered in the application source, the builder won't be used and the image will be built with a call to docker build and the Container App will be created or updated based on this image.
+If a Dockerfile is found or discovered in the application source, the builder isn't used. An image is built with a call to `docker build`. The Container App is created or updated based on the image.
 
-If a previously built image has already been pushed to the ACR instance and is provided to this task, no application source is required and the image will be used when creating or updating the Container App.
+If a previously built image has already been pushed to the ACR instance and is provided to this task, no application source is required. The image is used when creating or updating the Container App.
