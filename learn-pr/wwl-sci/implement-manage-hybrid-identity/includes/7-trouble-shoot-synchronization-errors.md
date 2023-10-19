@@ -1,16 +1,14 @@
-Errors could occur when identity data is synchronized from Windows Server Active Directory (AD DS) to Microsoft Entra ID. This section provides an overview of different types of sync errors, some of the possible scenarios that cause those errors and potential ways to fix the errors. This section includes the common error types and may not cover all the possible errors.
+Errors could occur when identity data is synchronized from Windows Server Active Directory (AD DS) to Microsoft Entra ID. This section provides an overview of different types of sync errors, some of the possible scenarios that cause those errors and potential ways to fix the errors. This section includes the common error types and might not cover all the possible errors.
 
 With the latest version of Microsoft Entra Connect, a report of Synchronization Errors is available in the [Azure portal](https://aka.ms/aadconnecthealth) as part of Microsoft Entra Connect Health for sync.
 
 Microsoft Entra Connect performs three types of operations from the directories it keeps in sync: Import, Synchronization, and Export. Errors can take place in all the operations. This section mainly focuses on errors during Export to Microsoft Entra ID.
 
-<a name='errors-during-export-to-azure-ad'></a>
-
 ## Errors during export to Microsoft Entra ID
 
-The following section describes different types of synchronization errors that can occur during the export operation to Microsoft Entra ID using the Microsoft Entra connector. This connector can be identified by the name format being `contoso.onmicrosoft.com`. Errors during export to Microsoft Entra ID indicate that the operation (add, update, delete etc.) attempted by Microsoft Entra Connect (Sync Engine) on Microsoft Entra ID failed.
+The following section describes different types of synchronization errors that can occur during the export operation to Microsoft Entra ID using the Microsoft Entra connector. This connector can be identified by the name format being `contoso.onmicrosoft.com`. Errors during export to Microsoft Entra ID indicate that the operation (add, update, delete etc.) attempted by Microsoft Entra Connect (Sync Engine) on Microsoft Entra directory failed.
 
-:::image type="content" source="../media/export-errors-overview-01-c60297ff.png" alt-text="Screenshot of the Export Errors Overview page in Microsoft Entra Connect.":::
+:::image type="content" source="../media/export-errors-overview-6876e61f.png" alt-text="Screenshot of the Export Errors Overview page in Microsoft Entra Connect.":::
 
 
 ## Data mismatch errors
@@ -19,26 +17,26 @@ The following section describes different types of synchronization errors that c
 
 ### Description
 
- -  When Microsoft Entra Connect (sync engine) instructs Microsoft Entra ID to add or update objects, Microsoft Entra ID matches the incoming object using the **sourceAnchor** attribute to the **immutableId** attribute of objects in Microsoft Entra ID. This match is called a **Hard Match**.
- -  When Microsoft Entra ID **does not find** any object that matches the **immutableId** attribute with the **sourceAnchor** attribute of the incoming object, before provisioning a new object, it falls back to use the ProxyAddresses and UserPrincipalName attributes to find a match. This match is called a **Soft Match**. The Soft Match is designed to match objects already present in Microsoft Entra ID (that are sourced in Microsoft Entra ID) with the new objects being added/updated during synchronization that represent the same entity (users, groups) on premises.
+ -  When Microsoft Entra Connect (sync engine) instructs directory to add or update objects, Microsoft Entra ID matches the incoming object using the **sourceAnchor** attribute to the **immutableId** attribute of objects in Microsoft Entra ID. This match is called a **Hard Match**.
+ -  When Microsoft Entra ID **does not find** any object that matches the **immutableId** attribute with the **sourceAnchor** attribute of the incoming object, before provisioning a new object, it falls back to use the ProxyAddresses and UserPrincipalName attributes to find a match. This match is called a **Soft Match**. The Soft Match is designed to match objects already present in Microsoft Entra ID with the new objects being added/updated during synchronization that represent the same entity (users, groups) on premises.
  -  **InvalidSoftMatch** error occurs when the hard match does not find any matching object **AND** soft match finds a matching object but that object has a different value of *immutableId* than the incoming object's *SourceAnchor*, suggesting that the matching object was synchronized with another object from on premises Active Directory.
 
 In other words, in order for the soft match to work, the object to be soft-matched with should not have any value for the *immutableId*. If any object with *immutableId* set with a value is failing the hard-match but satisfying the soft-match criteria, the operation would result in an InvalidSoftMatch synchronization error.
 
-Microsoft Entra schema does not allow two or more objects to have the same value of the following attributes. (This is not an exhaustive list.)
+Microsoft Entra directory schema does not allow two or more objects to have the same value of the following attributes. (This is not an exhaustive list.)
 
  -  ProxyAddresses
  -  UserPrincipalName
  -  onPremisesSecurityIdentifier
  -  ObjectId
 
-[Microsoft Entra Attribute Duplicate Attribute Resiliency](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency) feature is also being rolled out as the default behavior of Microsoft Entra ID. This will reduce the number of synchronization errors seen by Microsoft Entra Connect (as well as other sync clients) by making Microsoft Entra more resilient in the way it handles duplicated ProxyAddresses and UserPrincipalName attributes present in on premises AD environments. This feature does not fix the duplication errors. So the data still needs to be fixed. But it allows provisioning of new objects which are otherwise blocked from being provisioned due to duplicated values in Microsoft Entra ID. This will also reduce the number of synchronization errors returned to the synchronization client. If this feature is enabled for your Tenant, you will not see the InvalidSoftMatch synchronization errors seen during provisioning of new objects.
+[Microsoft Entra Attribute Duplicate Attribute Resiliency](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency) feature is also being rolled out as the default behavior of Microsoft Entra ID. This will reduce the number of synchronization errors seen by Microsoft Entra Connect (as well as other sync clients) by making Microsoft Entra ID more resilient in the way it handles duplicated ProxyAddresses and UserPrincipalName attributes present in on premises AD environments. This feature does not fix the duplication errors. So the data still needs to be fixed. But it allows provisioning of new objects which are otherwise blocked from being provisioned due to duplicated values in Microsoft Entra ID. This will also reduce the number of synchronization errors returned to the synchronization client. If this feature is enabled for your Tenant, you will not see the InvalidSoftMatch synchronization errors seen during provisioning of new objects.
 
 ### Example scenarios for InvalidSoftMatch
 
  -  Two or more objects with the same value for the ProxyAddresses attribute exist in on-premises Active Directory. Only one is getting provisioned in Microsoft Entra ID.
  -  Two or more objects with the same value for the userPrincipalName attribute exist in on-premises Active Directory. Only one is getting provisioned in Microsoft Entra ID.
- -  An object was added in the on premises Active Directory with the same value of ProxyAddresses attribute as that of an existing object in Microsoft Entra ID. The object added on premises is not getting provisioned in Microsoft Entra ID.
+ -  An object was added in the on premises Active Directory with the same value of ProxyAddresses attribute as that of an existing object in Microsoft Entra directory. The object added on premises is not getting provisioned in Microsoft Entra directory.
  -  An object was added in on premises Active Directory with the same value of userPrincipalName attribute as that of an account in Microsoft Entra ID. The object is not getting provisioned in Microsoft Entra ID.
  -  A synced account was moved from Forest A to Forest B. Microsoft Entra Connect (sync engine) was using ObjectGUID attribute to compute the SourceAnchor. After the forest move, the value of the SourceAnchor is different. The new object (from Forest B) is failing to sync with the existing object in Microsoft Entra ID.
  -  A synced object got accidentally deleted from on premises Active Directory and a new object was created in Active Directory for the same entity (such as user) without deleting the account in Microsoft Entra ID. The new account fails to sync with the existing Microsoft Entra object.
@@ -75,8 +73,8 @@ The most common reason for the InvalidSoftMatch error is two objects with differ
 
 1.  Identify the duplicated proxyAddresses, userPrincipalName, or other attribute value that's causing the error. Also identify which two (or more) objects are involved in the conflict. The report generated by [Microsoft Entra Connect Health for sync](/azure/active-directory/hybrid/how-to-connect-health-sync) can help you identify the two objects.
 2.  Identify which object should continue to have the duplicated value and which object should not.
-3.  Remove the duplicated value from the object that should NOT have that value. You should make the change in the directory where the object is sourced from. In some cases, you may need to delete one of the objects in conflict.
-4.  If you made the change in the on premises AD, let Microsoft Entra Connect Sync the change.
+3.  Remove the duplicated value from the object that should NOT have that value. You should make the change in the directory where the object is sourced from. In some cases, you might need to delete one of the objects in conflict.
+4.  If you made the change in the on premises AD, let Microsoft Entra Connect sync the change.
 
 Sync error reports within Microsoft Entra Connect Health for sync are updated every 30 minutes and include the errors from the latest synchronization attempt.
 
@@ -87,7 +85,7 @@ Sync error reports within Microsoft Entra Connect Health for sync are updated ev
 
 ### Description
 
-When Microsoft Entra ID attempts to soft match two objects, it is possible that two objects of different "object type" (such as User, Group, Contact etc.) have the same values for the attributes used to perform the soft-match. As duplication of these attributes is not permitted in Microsoft Entra ID, the operation can result in "ObjectTypeMismatch" synchronization error.
+When Microsoft Entra ID attempts to soft match two objects, it is possible that two objects of different "object type" (such as User, Group, Contact etc.) have the same values for the attributes used to perform the soft-match. As duplication of these attributes is not permitted in Microsoft Entra, the operation can result in "ObjectTypeMismatch" synchronization error.
 
 ### Example scenarios for ObjectTypeMismatch error
 
@@ -105,8 +103,8 @@ The most common reason for the ObjectTypeMismatch error is two objects of differ
 
 1.  Identify the duplicated proxyAddresses (or other attribute) value that's causing the error. Also identify which two (or more) objects are involved in the conflict. The report generated by [Microsoft Entra Connect Health for sync](/azure/active-directory/hybrid/how-to-connect-health-sync) can help you identify the two objects.
 2.  Identify which object should continue to have the duplicated value and which object should not.
-3.  Remove the duplicated value from the object that should NOT have that value. You should make the change in the directory where the object is sourced from. In some cases, you may need to delete one of the objects in conflict.
-4.  If you made the change in the on premises AD, let Microsoft Entra Connect Sync the change. Sync error report within Microsoft Entra Connect Health for sync gets updated every 30 minutes and includes the errors from the latest synchronization attempt.
+3.  Remove the duplicated value from the object that should NOT have that value. You should make the change in the directory where the object is sourced from. In some cases, you might need to delete one of the objects in conflict.
+4.  If you made the change in the on premises AD, let Microsoft Entra Connect sync the change. Sync error report within Microsoft Entra Connect Health for sync gets updated every 30 minutes and includes the errors from the latest synchronization attempt.
 
 ## Duplicate attributes
 
@@ -148,8 +146,8 @@ The most common reason for the AttributeValueMustBeUnique error is two objects w
 
 1.  Identify the duplicated proxyAddresses, userPrincipalName or other attribute value that's causing the error. Also identify which two (or more) objects are involved in the conflict. The report generated by [Microsoft Entra Connect Health for sync](/azure/active-directory/hybrid/how-to-connect-health-sync) can help you identify the two objects.
 2.  Identify which object should continue to have the duplicated value and which object should not.
-3.  Remove the duplicated value from the object that should NOT have that value. You should make the change in the directory where the object is sourced from. In some cases, you may need to delete one of the objects in conflict.
-4.  If you made the change in the on premises AD, let Microsoft Entra Connect Sync the change for the error to get fixed.
+3.  Remove the duplicated value from the object that should NOT have that value. You should make the change in the directory where the object is sourced from. In some cases, you might need to delete one of the objects in conflict.
+4.  If you made the change in the on premises AD, let Microsoft Entra Connect sync the change for the error to get fixed.
 
 ## Data validation failures
 
@@ -184,13 +182,6 @@ For a synchronized user, the UserPrincipalName suffix was changed from one feder
 3.  Both contoso.com and fabrikam.com domains are federated domains with Microsoft Entra ID.
 4.  Bob's userPrincipalName does not get updated and results in a "FederatedDomainChangeError" sync error.
 
-### How to fix
-
-If a user's UserPrincipalName suffix was updated from bob@**contoso.com** to bob@**fabrikam.com**, where both **contoso.com** and **fabrikam.com** are **federated domains**, then follow these steps to fix the sync error
-
-1.  Update the user's UserPrincipalName in Microsoft Entra ID from bob@contoso.com to bob@contoso.onmicrosoft.com. You can use the following PowerShell command with the Azure AD PowerShell Module: `Set-MsolUserPrincipalName -UserPrincipalName bob@contoso.com -NewUserPrincipalName bob@contoso.onmicrosoft.com`
-2.  Allow the next sync cycle to attempt synchronization. This time synchronization will be successful and it will update the UserPrincipalName of Bob to bob@fabrikam.com as expected.
-
 ## LargeObject
 
 ### Description
@@ -204,8 +195,8 @@ When an attribute exceeds the allowed size limit, length limit or count limit se
 
 ### Possible scenarios
 
-1.  Bob's userCertificate attribute is storing too many certificates assigned to Bob. These may include older, expired certificates. The hard limit is 15 certificates.
-2.  Bob's userSMIMECertificate attribute is storing too many certificates assigned to Bob. These may include older, expired certificates. The hard limit is 15 certificates.
+1.  Bob's userCertificate attribute is storing too many certificates assigned to Bob. These might include older, expired certificates. The hard limit is 15 certificates.
+2.  Bob's userSMIMECertificate attribute is storing too many certificates assigned to Bob. These might include older, expired certificates. The hard limit is 15 certificates.
 3.  Bob's thumbnailPhoto set in Active Directory is too large to be synced in Microsoft Entra ID.
 4.  During automatic population of the ProxyAddresses attribute in Active Directory, an object has too many ProxyAddresses assigned.
 
