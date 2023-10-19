@@ -14,7 +14,7 @@ Automated Machine Learning iterates through algorithms paired with feature selec
 
 :::image type="content" source="../media/automated-machine-learning.png" alt-text="Screenshot of a task selection when configuring Automated Machine Learning.":::
 
-## Run a Jupyter notebook
+## Run a notebook
 
 When you prefer to develop by running code in notebooks, you can use the built-in notebook feature in the workspace.
 
@@ -43,4 +43,4 @@ There are different types of jobs depending on how you want to execute a workloa
 - **Pipeline**: Run a pipeline consisting of multiple scripts or components.
 
 > [!Note]
-> When you submit a pipeline you created with the designer it will run as a pipeline job. When you submit an Automated Machine Learning experiment, it will also run as a job. 
+> When you submit a pipeline you created with the designer it will run as a pipeline job. When you submit an Automated Machine Learning experiment, it will also run as a job.
