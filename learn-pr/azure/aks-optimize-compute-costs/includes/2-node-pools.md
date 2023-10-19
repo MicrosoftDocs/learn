@@ -80,9 +80,9 @@ Use the Kubernetes horizontal pod autoscaler to monitor the resource demand on a
 
 The Kubernetes Metrics Server collects memory and processor metrics from controllers, nodes, and containers that run on the AKS cluster. One way to access this information is to use the Metrics API. The horizontal pod autoscaler checks the Metrics API every 30 seconds to decide whether your application needs additional instances to meet the required demand.
 
-Assume your company also has a batch-processing service that schedules drone flight paths. You see the service gets inundated with requests and builds up a backlog of deliveries, causing delays and frustrations for customers. Increasing the number of batch-processing service replicas will enable the timely processing of orders.
+Assume your company also has a batch-processing service that schedules drone flight paths. You see the service gets inundated with requests and builds up a backlog of deliveries, causing delays and frustrations for customers. Increasing the number of batch-processing service replicas could enable the timely processing of orders.
 
-To solve the problem, you configure the horizontal pod autoscaler to scale up the number of service replicas when needed. When batch requests decrease, it scales the replica count down.
+To solve the problem, you configure the horizontal pod autoscaler to increase the number of service replicas when needed. When the number of batch requests decrease, it decreases the number of service replicas.
 
 However, the horizontal pod autoscaler scales pods only on available nodes in the configured node pools of the cluster.
 
