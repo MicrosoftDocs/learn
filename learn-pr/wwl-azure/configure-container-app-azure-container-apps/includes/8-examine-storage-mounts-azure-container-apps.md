@@ -32,7 +32,7 @@ Ephemeral storage has the following characteristics:
 
 - A container can mount multiple ephemeral volumes.
 
-- The available storage depends on the total amount of vCPUs allocated to the replica.
+- The available storage depends on the total number of vCPUs allocated to the replica.
 
 ## Azure Files volume
 

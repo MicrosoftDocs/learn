@@ -2,7 +2,7 @@ In this module, you have learned about Azure Container Apps, a fully managed env
 
 The main takeaways from this module are that Azure Container Apps supports multiple types of storage, including container file system, ephemeral volume, and Azure Files volume. You can use managed identities to authenticate to any service that supports Microsoft Entra authentication. You can also use Service Connector to connect to cloud services in just a few steps. Service Connector manages the configuration of the network settings and connection information between different services.
 
-Additional Reading:
+Detailed resources:
 
 - Containers in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/containers](/azure/container-apps/containers)
 
@@ -24,4 +24,4 @@ Additional Reading:
 
 - Quickstart: Deploy your first container app using the Azure portal | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/quickstart-portal](/azure/container-apps/quickstart-portal)
 
-- Deploy Azure Container Apps with the az containerapp up command | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/containerapp-up](/azure/container-apps/containerapp-up)
+- Deploy Azure Container Apps with the `az containerapp up` command | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/containerapp-up](/azure/container-apps/containerapp-up)
