@@ -22,10 +22,10 @@ quiz:
       explanation: Recommended alert rules aren't enabled by default, but you can easily enable them during or after VM creation.
     - content: Go to **Alerts** and select **Create**.
       isCorrect: false
-      explanation: You can create custom alerts by using Azure Monitor Alerts, but you can easily enable recommended alert rules during VM creation.
+      explanation: You can create custom alerts by Alerts, but you can easily enable recommended alerts at VM creation.
     - content: Select **Enable recommended alert rules** on the **Monitoring** tab.
       isCorrect: true
-      explanation: You can easily enable recommended alert rules during VM creation by selecting **Enable** and configuring the alert parameters on the **Monitoring** tab.
+      explanation: You can easily enable recommended alerts at VM creation by selecting **Enable** and configuring the alert parameters on the **Monitoring** tab.
   - content: Which metrics graph isn't available by default on the **Monitoring** tab when you create a VM?
     choices:
     - content: VM Availability

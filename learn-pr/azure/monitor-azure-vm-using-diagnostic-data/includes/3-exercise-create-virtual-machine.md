@@ -1,6 +1,6 @@
 You can quickly create an Azure VM by using the Azure portal, the Azure CLI, or PowerShell. In the Azure portal, you can enable boot diagnostics and recommended alerts when you create the VM. As soon as the VM starts up, Azure begins collecting basic metrics automatically, and you can view built-in metrics charts.
 
-In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. After you create the VM, you view the built-in metrics graphs and boot diagnostics.
+In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. After you create the VM, you view the built-in metrics graphs, boot diagnostics, and activity logs.
 
 ## Create a VM
 
@@ -13,7 +13,7 @@ In this unit, you use the Azure portal to create a Linux VM with recommended ale
    - For **Image**, select **Ubuntu Server 20.04 LTS - x64 Gen2**.
 1. Near the top of the page, select **Monitoring**.
 
-   :::image type="content" source="../media/create-vm-basic.png" alt-text="Screenshot that shows the Basics tab of the Create a virtual machine page.":::
+   :::image type="content" source="../media/create-vm-basic.png" alt-text="Screenshot that shows the Basics tab of the Create a virtual machine page." lightbox="../media/create-vm-basic.png":::
 
 1. On the **Monitoring** screen, select the checkbox next to **Enable recommended alert rules**.
 1. On the **Set up recommended alert rules** screen:
@@ -23,7 +23,7 @@ In this unit, you use the Azure portal to create a Linux VM with recommended ale
 1. Under **Diagnostics**, next to **Boot diagnostics**, ensure that **Enable with managed storage account (recommended)** is selected.
 1. Select **Review + create** at the bottom of the page, and when validation passes, select **Create**.
 
-   :::image type="content" source="../media/create-vm-monitoring.png" alt-text="Screenshot that shows the Monitoring tab and alert rule configuration screen of the Create a virtual machine page.":::
+   :::image type="content" source="../media/create-vm-monitoring.png" alt-text="Screenshot that shows the Monitoring tab and alert rule configuration screen of the Create a virtual machine page." lightbox="../media/create-vm-monitoring.png":::
 
 1. On the **Generate new key pair** popup, select **Download private key and create resource**.
 
@@ -33,7 +33,7 @@ It can take a few minutes to create the VM. When you get the notification that t
 
 Once an Ubuntu or Windows VM is created, Azure starts collecting basic metrics data automatically. To view basic metrics graphs, on the VM's **Overview** page, select the **Monitoring** tab.
 
-:::image type="content" source="../media/select-monitoring.png" alt-text="Screenshot that shows Monitoring tab on a VM's Overview screen.":::
+:::image type="content" source="../media/select-monitoring.png" alt-text="Screenshot that shows Monitoring tab on a VM's Overview screen." lightbox="../media/select-monitoring.png":::
 
 Under **Performance and utilization** > **Platform metrics**, you can see the following useful graphs related to the VM's performance and utilization:
 
@@ -43,9 +43,9 @@ Under **Performance and utilization** > **Platform metrics**, you can see the fo
 - **Network (total)**
 - **Disk operations/sec (average)**
 
-:::image type="content" source="../media/platform-metrics.png" alt-text="Screenshot that shows the platform metrics graphics on the VM Overview page.":::
+:::image type="content" source="../media/platform-metrics.png" alt-text="Screenshot that shows the platform metrics graphics on the VM Overview page." lightbox="../media/platform-metrics.png":::
 
-Under **Guest OS metrics**, notice that guest OS metrics aren't being collected yet. In the next units, you configure VM Insights and data collection rules to collect guest metrics.
+Under **Guest OS metrics**, notice that guest OS metrics aren't being collected yet. In the next units, you configure VM Insights and data collection rules to collect guest OS metrics.
 
 ## View boot diagnostics
 
@@ -54,14 +54,14 @@ You enabled boot diagnostics when you created the VM. You can view boot diagnost
 1. In the left navigation menu for the VM, select **Boot diagnostics** under **Help**.
 1. On the **Boot diagnostics** page, select **Screenshot** to see a startup screenshot from the VM's hypervisor. Select **Serial log** to view log messages created when the VM started.
 
-   :::image type="content" source="../media/3-boot-diagnostics.png" alt-text="Screenshot that shows the boot diagnostic image captured.":::
+   :::image type="content" source="../media/3-boot-diagnostics.png" alt-text="Screenshot that shows the boot diagnostic image captured." lightbox="../media/3-boot-diagnostics.png":::
 
 ## View the activity log
 
-The Azure Monitor activity log is an Azure platform log that includes information like when your VM is started or modified. You can view the VM's activity log in the Azure portal by selecting **Activity log** from the VM's left navigation menu. You can also retrieve entries with PowerShell and the Azure CLI. For more functionality, you can create a diagnostic setting to send the activity log to several destinations:
+The Azure Monitor activity log is an Azure platform log that includes information like when your VM starts or is modified. You can view the VM's activity log in the Azure portal by selecting **Activity log** from the VM's left navigation menu. You can also retrieve entries with PowerShell and the Azure CLI. For more functionality, you can create diagnostic settings to send activity logs to the following destinations:
 
-- Azure Monitor Logs for more complex querying and alerting and for longer retention up to two years.
-- Azure Storage for cheaper, long-term archiving.
-- Azure Event Hubs to forward outside of Azure.
+- Azure Monitor Logs, for more complex querying and alerting and for longer retention up to two years.
+- Azure Storage, for cheaper, long-term archiving.
+- Azure Event Hubs, to forward outside of Azure.
 
-:::image type="content" source="../media/activity-log.png" alt-text="Screenshot of the activity log for a VM.":::
+:::image type="content" source="../media/activity-log.png" alt-text="Screenshot of the activity log for a VM." lightbox="../media/activity-log.png":::

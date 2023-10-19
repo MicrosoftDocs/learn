@@ -20,7 +20,7 @@ quiz:
     - content: Prebuilt client performance workbooks and guest OS metrics.
       isCorrect: true
       explanation: Enable VM Insights with the Azure Monitor Agent to collect guest OS metrics and use prebuilt workbooks to visualize VM client performance.
-    - content: Prebuilt graphs that show several host metrics on one graph with customizable timeframes.
+    - content: Graphs that show several host metrics on one graph with customizable timeframes.
       isCorrect: false
       explanation: To build metrics graphs that show several host metrics on one graph with adjustable timeframes, use Metrics Explorer.
     - content: Azure VM log collection and analytics.

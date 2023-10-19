@@ -4,9 +4,9 @@ The built-in metrics charts for a VM already display several important metrics, 
 
 ## Understand Metrics Explorer
 
-To open Metrics Explorer, select **Metrics** from the VM's left navigation menu under **Monitoring**. You can also select the **See all Metrics** link next to **Platform metrics** on the **Monitoring** tab of the VM's **Overview** screen.
+To open Metrics Explorer, select **Metrics** from the VM's left navigation menu under **Monitoring**. You can also select the **See all Metrics** link next to **Platform metrics** on the **Monitoring** tab of the VM's **Overview** page.
 
-:::image type="content" source="../media/metrics-explorer.png" alt-text="Screenshot that shows Metrics Explorer.":::
+:::image type="content" source="../media/metrics-explorer.png" alt-text="Screenshot that shows Metrics Explorer." lightbox="../media/metrics-explorer.png":::
 
 In Metrics Explorer, you can select the following values from the dropdown fields:
 
@@ -33,7 +33,7 @@ To create a Metrics Explorer graph that shows maximum percentage CPU and inbound
 1. **Scope** and **Metric Namespace** are already populated for the host VM. Select **Percentage CPU** from the **Metrics** dropdown list.
 1. **Aggregation** is automatically populated with **Avg**, but change it to **Max**.
 
-   :::image type="content" source="../media/3-view-host-level-metrics.png" alt-text="Screenshot of the Percentage CPU metrics graph for a VM.":::
+   :::image type="content" source="../media/3-view-host-level-metrics.png" alt-text="Screenshot of the Percentage CPU metrics graph for a VM." lightbox="../media/3-view-host-level-metrics.png":::
 
 1. Select **Add metric** at upper left.
 1. Under **Metric**, select **Inbound Flows**. Leave **Aggregation** at **Avg**.
@@ -41,5 +41,5 @@ To create a Metrics Explorer graph that shows maximum percentage CPU and inbound
 
 Your graph should look similar to the following screenshot:
 
-:::image type="content" source="../media/3-metric-graph.png" alt-text="Screenshot that shows a graph of CPU usage and inbound traffic.":::
+:::image type="content" source="../media/3-metric-graph.png" alt-text="Screenshot that shows a graph of CPU usage and inbound traffic." lightbox="../media/3-metric-graph.png":::
 
