@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.generate-batch-predictions-fabric.fabric-models
-title: Understand how to train machine learning models
+title: Customize the model's behavior during batch scoring
 metadata:
-  title: Understand how to train machine learning models
-  description: "Understand how to train machine learning models"
+  title: Customize the model's behavior during batch scoring
+  description: "Understand how to customize the model's behavior during batch scoring and save it to the Microsoft Fabric workspace."
   ms.date: 10/18/2023
   author: wwlpublish
   ms.author: madiepev
@@ -13,6 +13,6 @@ metadata:
     - build-2023
     - build-2023-dataai
     - build-2023-fabric
-durationInMinutes: 6
+durationInMinutes: 8
 content: |
   [!include[](includes/2-fabric-models.md)]

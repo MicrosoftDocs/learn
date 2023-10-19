@@ -1,135 +1,91 @@
-When you want to use a trained model to generate predictions, you need to save the model to the Microsoft Fabric workspace. When you track a model during training, you can specify the model's expected behavior when generating predictions. More specifically, you need to define the model's expected inputs and outputs.
+When you want to use a trained model to generate predictions, you need to save the model to the Microsoft Fabric workspace. When you track a model during training, you can specify the **model's expected behavior** when generating predictions. More specifically, you need to define the model's expected inputs and outputs.
 
 Microsoft Fabric is integrated with MLflow to easily track and manage your machine learning models.
 
 > [!Tip]
 > Learn more about [training and tracking machine learning models with MLflow in Microsoft Fabric](https://learn.microsoft.com/training/modules/train-track-model-fabric/?azure-portal=true).
 
-When tracking a model during model training, there is one file that defines the model's behavior during batch scoring: the `MLmodel` file.
+When you track a model during model training, there's one file that defines the model's behavior during batch scoring: the `MLmodel` file.
 
-:::image type="content" source="../media/mlmodel-file.png" alt-text="Screenshot of the model folder with the MLmodel file selected and opened.":::
+:::image type="content" source="../media/model-file.png" alt-text="Screenshot of the model folder with the MLmodel file selected and opened.":::
+
+As you explore the example `MLmodel` file, you notice that the expected inputs and outputs are defined as tensors. When you then try to apply the model through the wizard, only one input column is shown as the input data is expected to be an array.
+
+:::image type="content" source="../media/tensor-input.png" alt-text="Screenshot of apply model wizard showing one input column.":::
+
+To clarify how the model should be applied, you can define the various expected input and output columns.
 
 Let's explore how to customize the model's behavior during batch scoring by changing the MLmodel file.
 
-## Save a model to the Microsoft Fabric workspace
-
-When you train and track a model with MLflow in Microsoft Fabric, the output folder `model` is automatically created for you.
-
-When you use MLflow for tracking, you can choose to use autologging or custom logging. When you choose autologging, the `MLmodel` file is automatically created for you too. The necessary information about the model's expected inputs and outputs are derived from the structure of the training dataset. Though automatically logging models is an easy starting point, there are times that you need to customize how a model behaves during inferencing.
-
-To log a model manually, you can disable the 
-
-When you track a model with MLflow during training in Microsoft Fabric, all model artifacts are stored in the `model` output folder. You can find the `model` folder in the experiment run:
-
-:::image type="content" source="../media/model-folder-experiment.png" alt-text="Screenshot of the model folder overview in an experiment run.":::
-
-The model folder contains:
-
-- `MLmodel`: Contains the model's metadata.
-- `conda.yaml`: Contains the Anaconda environment needed to run the model.
-- `model.pkl`: Contains the trained model
-- `python_env.yaml`: Describes the Python environment needed to run the model. References the `requirements.txt` file.
-- `requirements.txt`: Lists Python packages required to run the model.
-
-All these model artifacts are necessary when you want to use your model to generate predictions on new data.
-
-### Save a model your workspace
-
-When you choose the model you want to use, you can save the model in the workspace from the experiment run. By saving a model, you create a new versioned model in the workspace that contains all the model artifacts and metadata.
-
-Select the experiment run that represent the model you trained, and select the **Save** option to save the run as a model.
-
-:::image type="content" source="../media/save-model.png" alt-text="Screenshot of the save as model pop-up in Microsoft Fabric.":::
-
-By selecting an existing model, you create a new version of a model under the same name. Model versioning allows you to compare models that serve a similar purpose, after which you can choose the best performing model to generate predictions.
-
-:::image type="content" source="../media/models.png" alt-text="Screenshot of the model overview in Microsoft Fabric.":::
-
-
 ## Customize the model's behavior
 
-The integration of MLflow in Microsoft Fabric makes it easy to track and manage your machine learning models.
+To use a trained model to generate predictions, the model takes an input dataset, performs transformations, and generates new data. For example, when you've trained a forecasting model, the input dataset is the sales data from the past month. The model uses the historical data, to generate the forecasted sales for the coming week, which are the predictions generated by the model.
 
-## Track model artifacts with MLflow
+To apply a trained model, the model needs to know what the shape is of the expected data input, and how to output the predictions. The information about expected inputs and outputs is stored, together with other metadata, in the `MLmodel` file.
 
-After you train a model, you want to use the model for scoring and generating new predictions. To easily integrate your model, you need to store your model so that you can load the model in a different environment. A common approach is to store a model as a *pickle file*, a serialized object.
+When you track a machine learning model with MLflow in Microsoft Fabric, the expected inputs and outputs of the model are inferred. With MLflow's autologging, the `model` folder and the `MLmodel` file are automatically created for you.
 
-> [!Note]
-> The format of your stored model depends on the machine learning framework you're using. For example, when training a deep learning model, you may opt to store your model using the Open Neural Network Exchange (ONNX) format instead.
+Whenever you want to change the model's expected inputs or outputs, you can change how the `MLmodel` file is created when the model is tracked within the Microsoft Fabric workspace. The schema of the data input and output is defined in the model **signature**.
 
-MLflow adds another layer to your model's output by adding the **MLmodel** file. The MLmodel file specifies the model's metadata, like how and when the model was trained, as well as the model's expected input and output.
+### Create the model signature
 
-### Understand the MLmodel file
+Let's explore an example of when you train a model with scikit-learn and you use MLflow's autologging to log all other parameters and metrics. To manually log a model, you can set `log_models=False`.
 
-When you log a model with MLflow, all relevant model assets are stored in the `model` folder with your experiment run.
+To define the input schema, you use MLflow's `Schema` class. You can specify the expected input columns, their data types, and their names. Similarly, you can define the output schema, which commonly consists of one column that represents the target variable.
 
-The `model` folder includes the MLmodel file, a single source of truth about how the model should be loaded and consumed.
+Finally, you create the model signature object by using MLflow's `ModelSignature` class.
 
-The MLmodel file may include:
+```python
+from sklearn.tree import DecisionTreeRegressor
+from mlflow.models.signature import ModelSignature
+from mlflow.types.schema import Schema, ColSpec
 
-- `artifact_path`: During training, the model is logged to this path.
-- `flavor`: The machine learning library with which the model was created.
-- `model_uuid`: The unique identifier of the registered model.
-- `run_id`: The unique identifier of job run during which the model was created.
-- `signature`: Specifies the schema of the model's inputs and outputs:
-    - `inputs`: Valid input to the model. For example, a subset of the training dataset.
-    - `outputs`: Valid model output. For example, model predictions for the input dataset.
+with mlflow.start_run():
+   # Use autologging for all other parameters and metrics
+   mlflow.autolog(log_models=False)
 
-Imagine you trained a regression model to predict diabetes in patients, the logged MLmodel file may look like:
+   model = DecisionTreeRegressor(max_depth=5)
 
-```yml
-artifact_path: model
-flavors:
-  python_function:
-    env:
-      conda: conda.yaml
-      virtualenv: python_env.yaml
-    loader_module: mlflow.sklearn
-    model_path: model.pkl
-    predict_fn: predict
-    python_version: 3.10.10
-  sklearn:
-    code: null
-    pickled_model: model.pkl
-    serialization_format: cloudpickle
-    sklearn_version: 1.2.0
-mlflow_version: 2.1.1
-model_uuid: 8370150f4e07495794c3b80bcaf07e52
-run_id: 14cdf02f-119b-4b8d-90f3-044987c29bce
-signature:
-  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 10]}}]'
-  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+   # When you fit the model, all other information will be logged 
+   model.fit(X_train, y_train)
+
+   # Create the signature manually
+   input_schema = Schema([
+   ColSpec("integer", "AGE"),
+   ColSpec("integer", "SEX"),
+   ColSpec("double", "BMI"),
+   ColSpec("double", "BP"),
+   ColSpec("integer", "S1"),
+   ColSpec("double", "S2"),
+   ColSpec("double", "S3"),
+   ColSpec("double", "S4"),
+   ColSpec("double", "S5"),
+   ColSpec("integer", "S6"),
+   ])
+
+   output_schema = Schema([ColSpec("integer")])
+
+   # Create the signature object
+   signature = ModelSignature(inputs=input_schema, outputs=output_schema)
+
+   # Manually log the model
+   mlflow.sklearn.log_model(model, "model", signature=signature)
 ```
 
-When you choose to use MLflow's autologging function in Microsoft Fabric, the MLmodel file is automatically created for you. If you want to change the file to change the model's behavior during scoring, you can change how the MLmodel file is logged.
+As a result, the `MLmodel` file that is stored in the `model` output folder looks like:
 
-> [!Tip]
-> Learn more about [MLflow model files and how to customize the fields](https://www.mlflow.org/docs/latest/models.html#model-signature?azure-portal=true).
+:::image type="content" source="../media/custom-model.png" alt-text="Screenshot of a customized MLmodel file.":::
 
-## Manage models in Microsoft Fabric
+When applying the model through the wizard, you can find the input columns to be clearly defined and easier to align with the dataset you want to generate predictions for.
 
-When you track a model with MLflow during training in Microsoft Fabric, all model artifacts are stored in the `model` folder. You can find the `model` folder in the experiment run:
+:::image type="content" source="../media/custom-wizard.png" alt-text="Screenshot of model wizard for a custom model.":::
 
-:::image type="content" source="../media/model-folder-experiment.png" alt-text="Screenshot of the model folder overview in an experiment run.":::
+## Save the model to the Microsoft Fabric workspace
 
-The model folder contains:
+After training and tracking a machine learning model with Mlflow in Microsoft Fabric, you can inspect the contents of the `model` output folder in the experiment run. By exploring the `MLmodel` file specifically, you can decide whether your model will behave as expected during batch scoring.
 
-- `MLmodel`: Contains the model's metadata.
-- `conda.yaml`: Contains the Anaconda environment needed to run the model.
-- `model.pkl`: Contains the trained model
-- `python_env.yaml`: Describes the Python environment needed to run the model. References the `requirements.txt` file.
-- `requirements.txt`: Lists Python packages required to run the model.
+When you want to use a tracked model to generate batch predictions, you need to save it. You can easily save a model by navigating to the respective experiment run in the user interface.
 
-All these model artifacts are necessary when you want to use your model to generate predictions on new data.
+When you save a model, you can decide whether to create a new model, or add a new version to an existing model that is saved in the Microsoft Fabric workspace.
 
-### Save a model your workspace
-
-When you choose the model you want to use, you can save the model in the workspace from the experiment run. By saving a model, you create a new versioned model in the workspace that contains all the model artifacts and metadata.
-
-Select the experiment run that represent the model you trained, and select the **Save** option to save the run as a model.
-
-:::image type="content" source="../media/save-model.png" alt-text="Screenshot of the save as model pop-up in Microsoft Fabric.":::
-
-By selecting an existing model, you create a new version of a model under the same name. Model versioning allows you to compare models that serve a similar purpose, after which you can choose the best performing model to generate predictions.
-
-:::image type="content" source="../media/models.png" alt-text="Screenshot of the model overview in Microsoft Fabric.":::
+You need to specify the `model` output folder when you save a model as that folder contains all the necessary information about how the model should behave during batch scoring, and the model artifacts themselves. Commonly, the trained model is stored as a `pickle` file in the same folder.

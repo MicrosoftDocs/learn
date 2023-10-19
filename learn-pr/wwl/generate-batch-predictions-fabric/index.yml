@@ -13,7 +13,7 @@ metadata:
     - build-2023-fabric
   ms.service: fabric
 title: Generate batch predictions using a deployed model in Microsoft Fabric
-summary: In Microsoft Fabric, data scientists can use trained models to generate batch predictions to enrich their data.
+summary: Save and use your machine learning models in Microsoft Fabric to generate batch predictions and enrich your data.
 abstract: |
   In this module, you'll learn how to:
   - Save a model in the Microsoft Fabric workspace
