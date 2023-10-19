@@ -7,4 +7,4 @@ The Audit tab in Permissions Management is where to go to query activity log inf
 
 The Audit tab is also where you can find the activity logs for Permissions Management itself. Selecting Platform from the dropdown menu allows you to view and query all past Permissions Management activity.
 
-:::image type="content" source="../media/permissions-management-audit-tab.png" alt-text="Screeshot of the Permissions Management Audit tab."lightbox="../media/permissions-management-audit-tab.png":::
+:::image type="content" source="../media/audit-tab.png" alt-text="Screenshot of the Permissions Management Audit tab."lightbox="../media/audit-tab.png":::
