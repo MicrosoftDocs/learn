@@ -205,7 +205,7 @@ public Task<IEnumerable<T>> GetItemsAsync(
 }
 ```
 
-In this scenario, you could check GitHub to see if the file was recently change.
+In this scenario, you could check GitHub to see if the file was recently changed.
 
 :::image type="content" source="../media/7-github-diff.png" alt-text="A screenshot of GitHub showing a file diff where a minus one operation was added.":::
 
