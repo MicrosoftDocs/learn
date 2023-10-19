@@ -1,20 +1,16 @@
-This unit describes how you can use Azure Monitor Data Collection Rules (DCRs) to collect event data from VM clients. The [Azure Monitor Agent](/azure/azure-monitor/agents/agents-overview) that you installed for VM Insights already uses a DCR to provides a comprehensive view of performance data in its prebuilt workbook. Now, you set up a DCR to collect Linux VM Syslog event data.
+This unit describes how you can use Azure Monitor Data Collection Rules (DCRs) to collect event log data from VM clients. The [Azure Monitor Agent](/azure/azure-monitor/agents/agents-overview) that you installed for VM Insights already uses a DCR to provides a comprehensive view of performance data in its prebuilt workbook. Now, you set up a DCR to collect Linux VM Syslog event data.
 
-DCRs that you define can apply to any VMs in your subscription. Azure installs Azure Monitor Agent on VMs that don't already have it installed. DCRs can send performance counters to both Azure Monitor Metrics and Azure Monitor Logs, but can send Windows Events or Linux Syslog data to Azure Monitor Logs only.
+DCRs that you define can apply to any VMs in your subscription. Azure installs Azure Monitor Agent on VMs that don't already have it installed. DCRs can send performance counters to both Azure Monitor Metrics and Azure Monitor Logs, but can send Windows Events or Linux Syslog data to Azure Monitor Logs only. You must have a Log Analytics workspace and a data collection endpoint to send log data to. You can use the default Log Analytics workspace that VM Insights sets up for your subscription if you create the DCR in the same region as the Log Analytics workspace.
 
-You must have a Log Analytics workspace and a data collection endpoint to send log data to. You can use the default Log Analytics workspace that VM Insights set up for your subscription. Create the DCR in the same region as the Log Analytics workspace.
+You can define a DCR to send data from multiple VMs to multiple destinations of the same or different types. For example, a DCR can send log data to multiple Log Analytics workspaces, also known as *multihoming*, across different regions or tenants. For performance counters, you can select from a predefined set of objects and set sampling rates, or create custom objects. For events, you can select severity levels to log.
 
-You can define a DCR to send data from multiple VMs to multiple destinations of the same or different types. For example, a DCR can send data to multiple Log Analytics workspaces, also known as *multihoming*, across different regions or tenants.
-
-For performance counters, you can select from a predefined set of objects and set sampling rates, or create custom objects. For events, you can select severity levels to log.
-
-## Create the DCR in Azure Monitor
+## Create a DCR in Azure Monitor
 
 In the Azure portal, search for and select *monitor* to go to the Azure Monitor **Overview** screen.
 
 :::image type="content" source="../media/monitor-overview.png" alt-text="Screenshot that shows the Azure Monitor Overview page." lightbox="../media/monitor-overview.png":::
 
-### Create the Data Collection Endpoint
+### Create a Data Collection Endpoint
 
 You must have a data collection endpoint to send log data to. To create the endpoint:
 

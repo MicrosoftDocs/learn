@@ -1,6 +1,6 @@
-You can quickly create an Azure VM by using the Azure portal, the Azure CLI, or PowerShell. In the Azure portal, you can enable boot diagnostics and recommended alerts when you create the VM. As soon as the VM starts up, Azure begins collecting basic metrics automatically, and you can view built-in metrics charts.
+You can quickly create an Azure VM by using the Azure portal, the Azure CLI, or PowerShell. In the Azure portal, you can enable boot diagnostics and recommended alerts when you create the VM. As soon as the VM starts up, Azure begins collecting basic metrics and logs automatically, and you can view built-in metrics charts, activity logs, and boot diagnostics.
 
-In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. After you create the VM, you view the built-in metrics graphs, boot diagnostics, and activity logs.
+In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. After you create the VM, you view the built-in metrics graphs, activity logs, and boot diagnostics.
 
 ## Create a VM
 
@@ -47,6 +47,12 @@ Under **Performance and utilization** > **Platform metrics**, you can see the fo
 
 Under **Guest OS metrics**, notice that guest OS metrics aren't being collected yet. In the next units, you configure VM Insights and data collection rules to collect guest OS metrics.
 
+## View the activity log
+
+You can view the VM's activity log by selecting **Activity log** from the VM's left navigation menu. You can also retrieve entries with PowerShell and Azure CLI.
+
+:::image type="content" source="../media/activity-log.png" alt-text="Screenshot of the activity log for a VM." lightbox="../media/activity-log.png":::
+
 ## View boot diagnostics
 
 You enabled boot diagnostics when you created the VM. You can view boot diagnostics to troubleshoot VM boot issues.
@@ -56,12 +62,3 @@ You enabled boot diagnostics when you created the VM. You can view boot diagnost
 
    :::image type="content" source="../media/3-boot-diagnostics.png" alt-text="Screenshot that shows the boot diagnostic image captured." lightbox="../media/3-boot-diagnostics.png":::
 
-## View the activity log
-
-The Azure Monitor activity log is an Azure platform log that includes information like when your VM starts or is modified. You can view the VM's activity log in the Azure portal by selecting **Activity log** from the VM's left navigation menu. You can also retrieve entries with PowerShell and the Azure CLI. For more functionality, you can create diagnostic settings to send activity logs to the following destinations:
-
-- Azure Monitor Logs, for more complex querying and alerting and for longer retention up to two years.
-- Azure Storage, for cheaper, long-term archiving.
-- Azure Event Hubs, to forward outside of Azure.
-
-:::image type="content" source="../media/activity-log.png" alt-text="Screenshot of the activity log for a VM." lightbox="../media/activity-log.png":::
