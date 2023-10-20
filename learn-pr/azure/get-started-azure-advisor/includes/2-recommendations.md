@@ -105,4 +105,4 @@ After you select a linked description for a recommendation, a window opens showi
 - If you'd prefer to handle the recommendation at a later time, you can select **Postpone**. Advisor removes it from the list, but will recommend it again if the issue hasn't been resolved.
 - If you know that you don't want to resolve that issue, you can select **Dismiss**, and Advisor removes it from the list and no longer shows it as a recommendation for that resource. You can always revisit your dismissed recommendations in the **Postponed & Dismissed** tab under any of your recommendations.
 
-   :::image type="content" source="../media/azure-advisor-vm-resize-postpone-dismiss.png" alt-text="Screenshot showing a recommended action in Azure Advicor." lightbox="../media/azure-advisor-vm-resize-postpone-dismiss.png":::
+   :::image type="content" source="../media/azure-advisor-vm-resize-postpone-dismiss.png" alt-text="Screenshot showing a recommended action in Azure Advisor." lightbox="../media/azure-advisor-vm-resize-postpone-dismiss.png":::
