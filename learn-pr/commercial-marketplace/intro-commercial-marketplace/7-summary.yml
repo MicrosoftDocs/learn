@@ -8,8 +8,7 @@ metadata:
   author: marleva
   ms.author: maevan
   manager: jasonh
-  ms.topic: interactive-tutorial
-  ms.service: marketplace
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
