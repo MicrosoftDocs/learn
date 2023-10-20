@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/07/2023
   author: bandersmsft
   ms.author: banders
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 title: View reservation transactions
 durationInMinutes: 4
 content: |
