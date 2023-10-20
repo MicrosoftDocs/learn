@@ -1,4 +1,3 @@
-
 All Azure storage accounts use a pricing model for Azure Blob Storage that's based on the tier of each blob.
 
 ### Things to know about pricing for Blob Storage
