@@ -106,7 +106,7 @@ The task has the following two usage patterns:
 
 If no Dockerfile is found or provided in the application source, this task performs the following steps:
 
-- Uses the `Oryx++ Builder` to build the application source using Oryx to produce a runnable application image.
+- Uses the `Oryx++ Builder` to build the application source using `Oryx` to produce a runnable application image.
 
 - Pushes this runnable application image to the provided Azure Container Registry.
 

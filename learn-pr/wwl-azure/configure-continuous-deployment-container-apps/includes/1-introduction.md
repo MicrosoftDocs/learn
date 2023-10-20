@@ -1,6 +1,6 @@
 This module covers the use of Azure Pipelines to automate build, test, and deployment processes.
 
-In this module, you will learn how to configure a pipeline to use the self-hosted pool, use built-in tasks, and deploy a self-hosted Windows agent. You will also examine agents and agent pools for pipelines, environment and secret variables for pipelines.
+In this module, you learn how to configure a pipeline to use the self-hosted pool, use built-in tasks, and deploy a self-hosted Windows agent. You also examine agents and agent pools for pipelines, environment and secret variables for pipelines.
 
 The module is divided into the following sections: Revision management, Continuous deployment to Azure Container Apps, Azure Pipeline configuration and deployment tasks, and Agents and agent pools for pipelines.
 
