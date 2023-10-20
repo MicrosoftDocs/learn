@@ -1,6 +1,6 @@
 Azure Container Apps is a fully managed environment that enables you to run microservices and containerized applications on a serverless platform.
 
-Suppose you're part of a team that wants use of Azure Container Apps to run containerized cloud-native apps. The team needs to demonstrate that Container Apps will meet their business requirements before transitioning away from their existing solution.  
+Suppose you're part of a team that wants use of Azure Container Apps to run containerized cloud-native apps. The team needs to demonstrate that Container Apps meet their business requirements before transitioning away from their existing solution.  
 
 This module guides you through ...
 

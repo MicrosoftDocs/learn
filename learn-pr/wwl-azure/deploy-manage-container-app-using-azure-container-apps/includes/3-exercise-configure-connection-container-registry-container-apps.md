@@ -114,7 +114,7 @@ Complete the following steps to configure Container Registry with AcrPull permis
 
 1. Select **Next: DNS**.
 
-1. On the DNS tab, under Private DNS Integration, ensure the followinginformation is displayed:
+1. On the DNS tab, under Private DNS Integration, ensure the following information is displayed:
 
     - Integrate with private DNS zone: Ensure that **Yes** is selected.
     - Private DNS Zone: Notice that **(new) privatelink.azurecr.io** is specified.

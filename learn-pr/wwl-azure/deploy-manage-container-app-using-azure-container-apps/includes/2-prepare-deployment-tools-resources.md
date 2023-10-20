@@ -166,7 +166,7 @@ Complete the following steps to configure a resource group for your Azure resour
 
 1. Open a browser window, and then navigate to the Azure portal: [https://portal.azure.com/](https://portal.azure.com/)
 
-1. Ensure that your Azure account has permission to create resources and assign RBAC permissions. Check the RBAC role(s) assigned to your account before your continue.
+1. Ensure that your Azure account has permission to create resources and assign RBAC permissions. Check the RBAC role(s) assigned to your account before you continue.
 
     The Contributor role isn't able to assign Azure RBAC permissions. We recommend using an account that has been assigned the Owner, Azure account administrator, or Azure co-administrator role for your Azure subscription. Other role combinations could provide sufficient access to complete this guided project module but have not been tested.
 
@@ -211,7 +211,7 @@ Complete the following steps to configure a Virtual Network and subnets.
 
 1. On the Edit subnet page, configure the subnet as follows:
 
-    - Name: Enter **PESubnet**
+    - Name: Enter **`PESubnet`**
     - Starting address: Ensure that **10.0.0.0** is specified.
     - Subnet size: Ensure that **/24 (256 addresses)** is specified.
 
@@ -221,7 +221,7 @@ Complete the following steps to configure a Virtual Network and subnets.
 
 1. On the Add a subnet page, configure the subnet as follows:
 
-    - Name: Enter **ACASubnet**
+    - Name: Enter **`ACASubnet`**
     - Starting address: Ensure that **10.0.4.0** is specified.
     - Subnet size: Ensure that **/23 (512 addresses)** is specified.
 
@@ -349,7 +349,7 @@ Complete the following steps to create a Docker image and push the image to your
 
 1. Ensure that you have your APL2003 code project open in Visual Studio Code.
 
-1. To create a Dockerfile, run the following in the Command Palette: **Docker: Add Docker Files to Workspace**.
+1. To create a Dockerfile, run the following command in the Command Palette: **Docker: Add Docker Files to Workspace**.
 
 1. When prompted, specify the following information:
 

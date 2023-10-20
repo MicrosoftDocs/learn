@@ -30,7 +30,7 @@ You complete the following tasks during this exercise:
 
 1. Open a browser window, navigate to https://dev.azure.com, and then open your Azure DevOps organization.
 
-1. On your Azure DevOps page, to open your the DevOps project, select **`Project1`**.
+1. On your Azure DevOps page, to open your DevOps project, select **`Project1`**.
 
 1. In the left-side menu, select **`Pipelines`**.
 
