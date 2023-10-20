@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.exercise-set-tenant-wide-properties
+uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.exercise-setting-tenant-wide-properties
 title: Exercise - setting tenant-wide properties
 metadata:
   title: Exercise - setting tenant-wide properties
   description: "Exercise - setting tenant-wide properties"
-  ms.date: 10/18/2023
+  ms.date: 10/20/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/9-exercise-set-tenant-wide-properties.md)]

@@ -4,7 +4,7 @@ In this exercise, you'll create a user account to use in the exercises.
 
 ## Create an Azure account and add Microsoft Entra ID Premium P2 trial licenses
 
-The tasks in this exercise and the exercises in this learning path require you to already have an Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you might skip this task and continue to the next.
+The tasks in this exercise and the exercises in this learning path require you to already have an Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you may skip this task and continue to the next.
 
 1.  In a web browser, go to [Azure portal](https://azure.microsoft.com/free/).
 2.  Scroll down through the page to learn more about the benefits and free services available.
@@ -16,8 +16,8 @@ The tasks in this exercise and the exercises in this learning path require you t
 8.  Under Getting started with Microsoft Entra ID, select **Get a free trial for Microsoft Entra ID Premium**.
 9.  In the Activate pane, underMicrosoft Entra ID **PREMIUM P2**, select **Free trial** and then select **Activate**.
 10. In the navigation menu on the left, select **Overview**.
-11. Refresh the browser until you see Microsoft Entra ID Premium P2 under the organization name. It might take a couple of minutes.
-12. You might need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.
+11. Refresh the browser until you see Microsoft Entra ID Premium P2 under the organization name. It may take a couple of minutes.
+12. You may need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.
 
 ## Add a new user
 
@@ -44,7 +44,11 @@ Using Microsoft Entra ID, you can designate limited administrators to manage ide
 2.  On the **user’s profile** page, select **Assigned roles**. The **Assigned roles** page appears.
 3.  Select **Add assignments**, select the role to assign to the user (for example, *Application administrator*), and then select **Add**.
     
-    :::image type="content" source="../media/directory-role-select-role-5a90aac4.png" alt-text="Screenshot of the Assigned roles page - showing the selected role of Application administrator.":::
+    :::image type="content" source="../media/directory-role-select-role-5a90aac4.png" alt-text="Screenshot of the Assigned roles page Adele Vance.":::
+    
+4.  Select **+ Add Assignment.**
+    
+    :::image type="content" source="../media/directory-role-select-app-admin-64518214.png" alt-text="Screenshot of the Assigned roles page - showing the selected role of Application administrator.":::
     
 
 The newly assigned Application administrator role appears on the user’s **Assigned roles** page.
