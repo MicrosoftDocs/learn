@@ -22,7 +22,7 @@ The tasks in this exercise and the exercises in this learning path require you t
 5.  You'll need to a Microsoft Entra P2 license to complete some of the exercises. In the organization you created, search for and then select **Microsoft Entra ID**.
 6.  In the left navigation menu, select **Getting started**.
 7.  Under Getting started with Microsoft Entra, select **Get a free trial for Microsoft Entra Premium**.
-8.  In the Activate pane, under **Microsoft Entra PREMIUM P2**, select **Free trial** and then select **Activate**.
+8.  In the Activate pane, under **Microsoft Entra Premium P2**, select **Free trial** and then select **Activate**.
 9.  In the navigation menu on the left, select **Overview**.
 10. Refresh the browser until you see Microsoft Entra Premium P2 under the organization name. It might take a couple of minutes.
 11. You might need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.

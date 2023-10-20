@@ -5,13 +5,13 @@ As part of the sign-in experience for accounts in Microsoft Entra ID, there are 
 
 Passwordless authentication methods such as Windows Hello, FIDO2 security keys, and the Microsoft Authenticator app provide the most secure sign-in events.
 
-Multi-Factor Authentication (MFA) adds extra security over only using a password when a user signs in. The user can be prompted for other forms of authentication. The user might have to respond to a push notification, enter a code from a software or hardware token. Finally, the user might have to respond to an SMS or phone call.
+Multifactor authentication (MFA) adds extra security over only using a password when a user signs in. The user can be prompted for other forms of authentication. The user might have to respond to a push notification, enter a code from a software or hardware token. Finally, the user might have to respond to an SMS or phone call.
 
 Simplify the user on-boarding experience by registering for both MFA and self-service password reset (SSPR). Microsoft recommends you enable combined security information registration. For resiliency, we recommend you require users to register multiple authentication methods. When one method isn't available for a user during sign-in or SSPR, they can choose to authenticate with another method.
 
 ### Authentication method strength and security
 
-When you deploy features like Multi-Factor Authentication in your organization, review the available authentication methods. Choose the methods that meet or exceed your requirements in terms of security, usability, and availability. Where possible, use authentication methods with the highest level of security.
+When you deploy features like multifactor authentication in your organization, review the available authentication methods. Choose the methods that meet or exceed your requirements in terms of security, usability, and availability. Where possible, use authentication methods with the highest level of security.
 
 The following table outlines the security considerations for the available authentication methods. Availability is an indication of the user being able to use the authentication method, not of the service availability in Microsoft Entra ID:
 
@@ -34,7 +34,7 @@ The following table outlines the security considerations for the available authe
 
 ### How each authentication method works
 
-Some authentication methods can be used as the primary factor when you sign in to an application or device. A good example of primary authentication is to use a FIDO2 security key or a password. Other authentication methods are only available as a secondary factor. Examples are when you use Multi-Factor Authentication or SSPR.
+Some authentication methods can be used as the primary factor when you sign in to an application or device. A good example of primary authentication is to use a FIDO2 security key or a password. Other authentication methods are only available as a secondary factor. Examples are when you use multifactor authentication or SSPR.
 
 The following table outlines when an authentication method can be used during a sign-in event:
 
@@ -56,7 +56,7 @@ All of these authentication methods can be configured in the Azure portal and in
 
 The following verification methods can be used in certain scenarios:
 
- -  App passwords - used for old applications that don't support modern authentication and can be configured for per-user Multi-Factor Authentication.
+ -  App passwords - used for old applications that don't support modern authentication and can be configured for per-user multifactor authentication.
  -  Security questions - only used for SSPR.
  -  Email address - only used for SSPR.
 
@@ -84,8 +84,8 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication sp
 1.  Browse to **https://myprofile.microsoft.com**.
 2.  Sign in if you haven't already.
 3.  Select **Security Info**.
-4.  If the user already has at least one Multi-Factor Authentication method registered, they can immediately register a FIDO2 security key.
-5.  If they don't have at least one Multi-Factor Authentication method registered, they must add one.
+4.  If the user already has at least one multifactor authentication method registered, they can immediately register a FIDO2 security key.
+5.  If they don't have at least one multifactor authentication method registered, they must add one.
 6.  Add a FIDO2 security key by selecting **Add method** and choosing **Security key**.
 7.  Choose **USB device** or **NFC device**.
 8.  Have your key ready and choose **Next**.
@@ -105,6 +105,6 @@ In the example below a user has already provisioned their FIDO2 security key. Th
  -  Windows 10, version 1511 or later or Windows 11
  -  Microsoft Azure account
  -  Microsoft Entra ID
- -  Multi-Factor Authentication
+ -  Multifactor authentication
  -  Modern Management - *optional,* Microsoft Intune, or supported third-party mobile-device management (MDM)
  -  Microsoft Entra ID Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Microsoft Entra ID
