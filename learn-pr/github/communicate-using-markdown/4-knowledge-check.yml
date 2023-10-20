@@ -22,7 +22,7 @@ quiz:
     - content: "`**Hello, *world*!**`"
       isCorrect: false
       explanation: "Incorrect. This snippet would produce **Hello, *world*!**."
-    - content: "`***Hello, **world!***`"
+    - content: "`***Hello, world!***`"
       isCorrect: true
       explanation: "Correct. Remember that you can also use underscores (`_`) instead of asterisks if you prefer."
     - content: "`### Hello, world!`"
