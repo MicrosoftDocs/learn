@@ -54,8 +54,8 @@ In this module, you also registered service providers within Azure to access the
     az provider unregister --namespace Microsoft.ContainerService
     ```
 
-    >![IMPORTANT]
-    >If you choose to unregister, then the optimization features covered in the learning module aren't able until you register.
+    > [!IMPORTANT]
+    > If you choose to unregister, then the optimization features covered in the learning module aren't able until you register.
 
 ## Learn more
 
