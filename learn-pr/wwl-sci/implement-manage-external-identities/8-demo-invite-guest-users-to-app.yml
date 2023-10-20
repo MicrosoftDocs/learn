@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-manage-external-identities.demo-invite-guest-users-to-app
-title: Demo - manage guest users in Azure Active Directory
+title: Demo - manage guest users in Microsoft Entra ID
 metadata:
-  title: Demo - manage guest users in Azure Active Directory
-  description: "Demo - manage guest users in Azure Active Directory"
+  title: Demo - manage guest users in Microsoft Entra ID
+  description: "Demo - manage guest users in Microsoft Entra ID"
   ms.date: 07/10/2023
   author: wwlpublish
   ms.author: roberts

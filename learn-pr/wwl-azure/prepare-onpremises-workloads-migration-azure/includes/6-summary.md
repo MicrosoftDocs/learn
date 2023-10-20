@@ -2,7 +2,7 @@
 
 In this module, you learned about essential preparations for a migration to Azure. You saw how choice of tools and approach are key to accomplishing a successful migration.
 
-You also learned about several requirements to be handled before you migrate your workloads. First, an Azure Migrate project needs the correct Azure Active Directory (AD) permissions. Second, you confirmed that the prerequisites for the on-premises environment are in place. Last, the Azure Migrate appliance is used for agentless assessment and migration of Hyper VMs. You learned how to deploy the appliance.
+You also learned about several requirements to be handled before you migrate your workloads. First, an Azure Migrate project needs the correct Microsoft Entra permissions. Second, you confirmed that the prerequisites for the on-premises environment are in place. Last, the Azure Migrate appliance is used for agentless assessment and migration of Hyper VMs. You learned how to deploy the appliance.
 
 ## Learn more
 

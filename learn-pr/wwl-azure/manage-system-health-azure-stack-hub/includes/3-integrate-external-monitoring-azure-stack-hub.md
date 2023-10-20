@@ -22,7 +22,7 @@ You can use Operations Manager for external monitoring of Azure Stack Hub. The S
 The management pack for Azure Stack Hub provides the following capabilities:
 
  -  You can manage multiple Azure Stack Hub deployments.
- -  There's support for Azure Active Directory (Azure AD) and Active Directory Federation Services (AD FS).
+ -  There's support for Microsoft Entra ID and Active Directory Federation Services (AD FS).
  -  You can retrieve and close alerts.
  -  There's a health and a capacity dashboard.
  -  Includes Auto Maintenance Mode detection for when patch and update (P&amp;U) are in progress.

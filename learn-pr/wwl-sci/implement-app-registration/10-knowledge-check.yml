@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "SaaS directory"
       isCorrect: false
-      explanation: "Incorrect. Application publishers/vendors who integrate with Azure AD are required to have a SaaS directory."
+      explanation: "Incorrect. Application publishers/vendors who integrate with Microsoft Entra ID are required to have a SaaS directory."
     - content: "Single-sign-on app connected directory"
       isCorrect: false
       explanation: "Incorrect. Apps connected for single-sign-on are added by the user."
@@ -49,4 +49,4 @@ quiz:
       explanation: "Incorrect. Applications are authorized to call APIs when they're granted permissions by users/admins as part of the consent process. The list of configured permissions should include all the permissions the application needs"
     - content: "Use the App roles and App manifest editor."
       isCorrect: true
-      explanation: "Correct. Application roles are used to assign permissions to users. You define app roles by using the Azure portal. When a user signs into the application, Azure AD emits a roles claim for each role that the user has been granted individually to the user and from their group membership. The App roles and Manifest editor are found in the Manage section of the app."
+      explanation: "Correct. Application roles are used to assign permissions to users. You define app roles by using the Azure portal. When a user signs into the application, Microsoft Entra ID emits a roles claim for each role that the user has been granted individually to the user and from their group membership. The App roles and Manifest editor are found in the Manage section of the app."

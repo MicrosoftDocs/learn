@@ -1,4 +1,4 @@
-The Microsoft identity platform helps you build applications that your users and customers can sign in to. Users can sign in by using accounts provisioned through Azure Active Directory (Azure AD).
+The Microsoft identity platform helps you build applications that your users and customers can sign in to. Users can sign in by using accounts provisioned through Microsoft Entra ID.
 
 ## Example scenario
 
@@ -8,12 +8,12 @@ To meet security requirements, users need to authenticate before they can access
 
 ## What will we be doing?
 
-In this module, you'll create a Django web app that authenticates users by using Azure AD:
+In this module, you'll create a Django web app that authenticates users by using Microsoft Entra ID:
 
-- Register a Django web application in an Azure AD tenant.
+- Register a Django web application in a Microsoft Entra tenant.
 - Configure a Django web application to use its tenant registration details.
-- Sign in users to a Django web app by using Azure AD.
+- Sign in users to a Django web app by using Microsoft Entra ID.
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to register a Django web application in an Azure AD tenant and sign in users to the Django web app by using Azure AD.
+By the end of this session, you'll be able to register a Django web application in a Microsoft Entra tenant and sign in users to the Django web app by using Microsoft Entra ID.

@@ -1,4 +1,4 @@
-In this module, you'll learn how to use Azure Active Directory business-to-consumer (Azure AD B2C) to manage how customers access your applications.
+In this module, you'll learn how to use Azure Active Directory Business-to-Consumer (Azure AD B2C) to manage how customers access your applications.
 
 You're the solutions architect for a healthcare organization. The organization is publishing an application that patients can use to view their health records. You'll implement a secure identity solution for the application to protect your users' sensitive health data.
 
@@ -13,4 +13,4 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-- Basic understanding of Azure AD
+- Basic understanding of Microsoft Entra ID

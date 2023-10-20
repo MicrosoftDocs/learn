@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-ai-services.exercise-ai-services
+title: Exercise - Use Azure AI services
+metadata:
+  title: Exercise - Use Azure AI services
+  description: "Exercise - Use Azure AI services."
+  ms.date: 09/28/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-services
+durationInMinutes: 30
+content: |
+  [!include[](includes/5a-exercise-ai-services.md)]

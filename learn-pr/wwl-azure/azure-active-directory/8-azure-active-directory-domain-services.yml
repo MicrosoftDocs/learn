@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-active-directory.azure-ad-domain-services
-title: Deploy Azure AD Domain Services
+title: Deploy Microsoft Entra Domain Services
 metadata:
-  title: Deploy Azure AD Domain Services
-  description: "Deploy Azure AD Domain Services"
+  title: Deploy Microsoft Entra Domain Services
+  description: "Deploy Microsoft Entra Domain Services"
   ms.date: 09/11/2023
   author: wwlpublish
   ms.author: serlingdavis

@@ -13,7 +13,7 @@ Using a hybrid architecture allows organizations to:
 
 The hybrid architecture of Operator Nexus provides four major components, each of which brings significant benefits:
 
-- **Common identity platform:** Azure Active Directory (Azure AD) is a common identity platform that provides single-sign on (SSO) across on-premises and the cloud, making it simple for users to safely access the applications and assets they need. Admins can manage security and governance controls and also have the flexibility to adjust permissions without affecting the user experience. It also ensures consistency as users cross network or cloud boundaries.
+- **Common identity platform:** Microsoft Entra ID is a common identity platform that provides single-sign on (SSO) across on-premises and the cloud, making it simple for users to safely access the applications and assets they need. Admins can manage security and governance controls and also have the flexibility to adjust permissions without affecting the user experience. It also ensures consistency as users cross network or cloud boundaries.
 
 - **Integrated management and security:** Microsoft Defender provides integrated management and security, offering a cohesive way to monitor, manage, and secure the environment, which enables increased visibility and control.
 

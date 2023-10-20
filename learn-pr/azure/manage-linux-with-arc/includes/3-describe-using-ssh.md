@@ -2,10 +2,10 @@ Contoso uses SSH for their Windows machines to provide secure management, remote
 
 SSH for Azure Arc provides SSH-based connections to Linux machines on Azure Arc without requiring a public IP address or additional open ports. This functionality can be used interactively, automated, or with existing SSH-based tooling, allowing existing management tools to have a greater impact. SSH access allows you to reach your Linux machines through a simple Azure CLI command or through Microsoft PowerShell. You can leverage your existing local SSH keys to connect to your Linux machines.
 
-Additionally, you can use SSH with Azure Active Directory credentials. With SSH you can access any of your machines, in any network, with one command, without exposing a public IP address or opening additional inbound firewall ports.
+Additionally, you can use SSH with Microsoft Entra credentials. With SSH you can access any of your machines, in any network, with one command, without exposing a public IP address or opening additional inbound firewall ports.
 
 > [!NOTE]
-> Azure Active Directory authorization is limited to Linux machines.
+> Microsoft Entra authorization is limited to Linux machines.
 
 ## Supported Linux environments
 
@@ -45,6 +45,6 @@ To use SSH with a Linux machine connected via Azure Arc, the following high-leve
     
     `az ssh arc --resource-group \<resource-group\> \<host-name\> --local-user \<local-user-name\>`
 
-    To connect using Azure Active Directory instead of connecting as a local user, remove the `--local-user` parameter from the command above. You need to already be logged in through Azure Active Directory for this method to work.
+    To connect using Microsoft Entra ID instead of connecting as a local user, remove the `--local-user` parameter from the command above. You need to already be logged in through Microsoft Entra ID for this method to work.
 
 Once you've established your SSH connection, you can now manage the Linux resource securely.
