@@ -11,11 +11,11 @@ You can use revisions to:
 
 The revision mode controls whether only a single revision or multiple revisions of your container app can be simultaneously active. You can set your app's revision mode from your container app's Revision management page in the Azure portal, using Azure CLI commands, or in the ARM template.
 
-### Single revision mode
+### Revision mode: single
 
 By default, a container app is in single revision mode. In this mode, when a new revision is created, the latest revision replaces the active revision.
 
-### Multiple revision mode
+### Revision mode: multiple
 
 You can also set the revision mode to `Multiple`. The `Multiple` revision mode enables you to run multiple revisions of your app simultaneously. While in this mode, new revisions are activated alongside current active revisions.
 
