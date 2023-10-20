@@ -9,13 +9,12 @@ metadata:
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - build-2023
     - build-2023-dataai
     - devx-track-extended-java
     - devx-track-python
-  ms.service: azure
   zone_pivot_groups: dev-lang-php-python-java
 durationInMinutes: 5
 content: |
