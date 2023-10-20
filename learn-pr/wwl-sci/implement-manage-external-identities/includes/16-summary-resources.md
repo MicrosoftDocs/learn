@@ -16,4 +16,3 @@ Use these resources to discover more:
  -  [Introduction to Microsoft Entra Verified ID](/azure/active-directory/verifiable-credentials/decentralized-identifier-overview)
  -  [Set up the Microsoft Entra Verified ID service](/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant)
  -  [Cross-tenant access with Microsoft Entra External Identities](/azure/active-directory/external-identities/cross-tenant-access-overview)
-

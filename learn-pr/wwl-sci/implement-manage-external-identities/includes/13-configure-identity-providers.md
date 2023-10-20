@@ -182,7 +182,7 @@ You can delete your Google federation setup. If you do so, Google guest users wh
 3.  Select **All identity providers**.
 4.  On the **Google** line, select the ellipsis button (**...**) and then select **Delete**.
     
-    :::image type="content" source="../media/google-social-identity-providers-22681be3.png" alt-text="Screenshot of the Delete the Google identity provider page. Use the ellipsis at the end to open the delete command.":::
+    :::image type="content" source="../media/google-social-identity-providers-22681be3.png" alt-text="Screenshot of the Delete the Google identity provider page. Use the elipsis at the end to open the delete command.":::
     
 5.  Select **Yes** to confirm the deletion.
 
@@ -207,7 +207,7 @@ To use a Facebook account as an identity provider, you need to create an applica
 2.  If you haven't already done so, you need to register as a Facebook developer. Select **Get Started** on the upper-right corner of the page, accept Facebook's policies, and complete the registration steps.
 3.  Select **My Apps** and then **Create App**.
 4.  Enter a **Display Name** and a valid **Contact Email**.
-5.  Select **Create App ID**. You might have to accept Facebook platform policies and complete an online security check.
+5.  Select **Create App ID**. You may have to accept Facebook platform policies and complete an online security check.
 6.  Select **Settings** then select **Basic**.
 7.  Choose a **Category**, for example Business and Pages. This value is required by Facebook, but not used for Microsoft Entra ID.
 8.  At the bottom of the page, select **Add Platform**, and then select **Website**.

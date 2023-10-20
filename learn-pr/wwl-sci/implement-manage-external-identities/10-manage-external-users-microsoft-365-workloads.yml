@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-manage-external-identities.manage-external-users-microsoft-365-workloads
+uid: learn.wwl.implement-manage-external-identities.manage-extern-users-microsoft-365-workload
 title: Manage external users in Microsoft 365 workloads
 metadata:
   title: Manage external users in Microsoft 365 workloads
   description: "Manage external users in Microsoft 365 workloads"
-  ms.date: 10/19/2023
+  ms.date: 10/20/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-manage-external-identities.describe-guest-access-business-to-business-accounts
+uid: learn.wwl.implement-manage-external-identities.describe-guess-access-business-to-business-accounts
 title: Describe guest access and Business to Business accounts
 metadata:
   title: Describe guest access and Business to Business accounts
   description: "Describe guest access and Business to Business accounts"
-  ms.date: 10/19/2023
+  ms.date: 10/20/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

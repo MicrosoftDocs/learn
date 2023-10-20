@@ -1,4 +1,4 @@
-Microsoft Entra B2B collaboration users are added as guest users to the directory, and guest permissions in the directory are restricted by default. Your business might need some guest users to fill higher-privilege roles in your organization. To support defining higher-privilege roles, guest users can be added to any roles you desire, based on your organization's needs.
+Microsoft Entra B2B collaboration users are added as guest users to the directory, and guest permissions in the directory are restricted by default. Your business may need some guest users to fill higher-privilege roles in your organization. To support defining higher-privilege roles, guest users can be added to any roles you desire, based on your organization's needs.
 
 ## Add a B2B user to a role
 
@@ -32,7 +32,7 @@ This property indicates the user’s primary identity provider. A user can have 
 
 ### Can Microsoft Entra B2B users be added as members instead of guests?
 
-Typically, an Microsoft Entra B2B user and guest user are synonymous. Therefore, an Microsoft Entra B2B collaboration user is added as a user with UserType = Guest by default. However, in some cases, the partner organization is a member of a larger organization to which the host organization also belongs. If so, the host organization might want to treat users in the partner organization as members instead of guests. Use the Microsoft Entra user properties to change a guest into a member.
+Typically, a Microsoft Entra B2B user and guest user are synonymous. Therefore, a Microsoft Entra B2B collaboration user is added as a user with UserType = Guest by default. However, in some cases, the partner organization is a member of a larger organization to which the host organization also belongs. If so, the host organization might want to treat users in the partner organization as members instead of guests. Use the Microsoft Entra user properties to change a guest into a member.
 
 ### Filter for guest users in the directory
 
@@ -45,7 +45,7 @@ It's possible to convert UserType from Member to Guest and vice-versa by using P
 
 ## Remove guest user limitations
 
-There might be cases where you want to give your guest users higher privileges. You can add a guest user to any role and even remove the default guest user restrictions in the directory to give a user the same privileges as members. It's possible to turn off the default limitations so that a guest user in the company directory has the same permissions as a member user. Remove the limitation in the user settings within Microsoft Entra ID menu.
+There may be cases where you want to give your guest users higher privileges. You can add a guest user to any role and even remove the default guest user restrictions in the directory to give a user the same privileges as members. It's possible to turn off the default limitations so that a guest user in the company directory has the same permissions as a member user. Remove the limitation in the user settings within Microsoft Entra ID menu.
 
 :::image type="content" source="../media/remove-guest-limitations-6f8f344d.png" alt-text="Screenshot of the External users option in the user settings. Choose what restrictions are set for external users.":::
 
