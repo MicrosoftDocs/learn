@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/28/2021
   author: bwoody
   ms.author: bwoody
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Learn about hybrid computing
 durationInMinutes: 9
