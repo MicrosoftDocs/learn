@@ -20,7 +20,7 @@ System node pools host critical system pods that make up the control plane of yo
 
 ### User node pools
 
-User node pools support your workloads, and you can specify Windows or Linux as the node operating system. You can also define the underlying VM sizes for nodes and run specific workloads. For example, your drone-tracking solution has a batch-processing service that you deploy to a node pool configured with general-purpose VMs. The new predictive-modeling service requires higher-capacity, GPU-based VMs. You decide to configure a separate node pool and configure it to use GPU-enabled nodes.  
+User node pools support your workloads, and you can specify Windows or Linux as the node operating system. You can also define the underlying VM sizes for nodes and run specific workloads. For example, your drone-tracking solution has a batch-processing service that you deploy to a node pool with a configuration for general-purpose VMs. The new predictive-modeling service requires higher-capacity, GPU-based VMs. You decide to configure a separate node pool and configure it to use GPU-enabled nodes.  
 
 ## Number of nodes in a node pool
 
@@ -32,13 +32,13 @@ User node pools are designed to run custom workloads and don't have the 30-pod r
 
 ## Manage application demand in an AKS cluster
 
-The function in AKS that provides for increasing or decreasing the amount of compute resources in a Kubernetes cluster is called *scaling*. You scale either the number of workload instances that need to run or the number of nodes on which these workloads run. You scale workloads on an AKS-managed cluster in one of two ways. The first option is to scale the pods or nodes manually as necessary. Or, you can use the horizontal pod autoscaler to scale pods and the cluster autoscaler to scale nodes.
+In AKS, when you increase or decrease the amount of compute resources in a Kubernetes cluster you're *scaling*. You scale either the number of workload instances that need to run or the number of nodes on which these workloads run. You scale workloads on an AKS-managed cluster in one of two ways. The first option is to scale the pods or nodes manually as necessary. The second option is through automation, where you can use the horizontal pod autoscaler to scale pods and the cluster autoscaler to scale nodes.
 
 ## How to scale a node pool manually
 
-If you're running workloads that execute for a specific duration at specific intervals, manually scaling the node pool size is a way to control node costs.
+If you're running workloads that execute for a specific duration at specific known intervals, manually scaling the node pool size is a good way to control node costs.
 
-Assume that the new, compute-heavy predictive-modeling service requires a GPU-based node pool and runs only at specific intervals. You can configure the node pool with specific GPU-based nodes and scale the node pool to zero nodes when you're not using the cluster.
+Assume that the predictive-modeling service requires a GPU-based node pool and runs for an hour everyday at noon. You can configure the node pool with specific GPU-based nodes and scale the node pool to zero nodes when you're not using the cluster.
 
 Here's an example of the `az aks node pool add` command that you can use to create the node pool. Notice the `--node-vm-size` parameter, which specifies the `Standard_NC6` GPU-based VM size for the nodes in the pool.
 
@@ -97,4 +97,4 @@ The cluster autoscaler monitors for both scale-up and scale-down events, and all
 You configure each node pool with different scale rules. For example, you might want to configure only one node pool to allow autoscaling. Or you might configure a node pool to scale only to a specific number of nodes.
 
 >[!IMPORTANT]
->You lose the ability to scale the node count to zero when you enable the cluster autoscaler on a node pool.
+>You lose the ability to scale the node count to zero when you enable the cluster autoscaler on a node pool. Instead, you set the min count to zero to save on cluster resources.
