@@ -7,8 +7,8 @@ metadata:
   ms.date: 09/27/2023
   author: jenniferf-skc
   ms.author: jfields
-  ms.topic: interactive-tutorial
-  ms.prod: learn-entra-permissions-management 
+  ms.topic: module-standard-task-based
+  ms.service: multicloud-permissions-management 
 durationInMinutes: 5
 content: |
   [!include[](includes/7-develop-better-understanding-of-your-environment-with-reports.md)]

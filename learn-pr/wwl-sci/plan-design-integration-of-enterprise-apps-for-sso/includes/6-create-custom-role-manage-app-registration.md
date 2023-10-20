@@ -3,8 +3,8 @@
 Create a new custom role that can be used to grant access to manage app registrations.
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) using a Global Administrator account.
-2.  Open the portal menu and then select **Azure Active Directory**.
-3.  On the **Azure Active Directory** screen, under **Manage**, select **Roles and administrators.**
+2.  Open the portal menu and then select **Microsoft Entra ID**.
+3.  On the **Microsoft Entra ID** screen, under **Manage**, select **Roles and administrators.**
 4.  On the **Roles and administrators** screen, on the menu, select **New custom role.**
     
     :::image type="content" source="../media/new-custom-role-138a40ed.png" alt-text="Screenshot of the Roles and administrators screen with the New custom role menu option highlighted":::

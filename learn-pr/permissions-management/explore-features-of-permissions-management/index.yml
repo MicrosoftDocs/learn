@@ -2,24 +2,25 @@
 uid: learn.permissions-management.explore-features-of-permissions-management
 
 metadata:
-  title: Explore the many features of Permissions Management
-  description: Use the framework of discover, remediate, monitor as a guide to walk through how the Permissions Management features set can benefit your organization.
+  title: Explore the many features of Microsoft Entra Permissions Management
+  description: Use the framework of discover, remediate, monitor as a guide to walk through how the Microsoft Entra Permissions Management features set can benefit your organization.
   ms.date: 09/27/2023
   author: jenniferf-skc
   ms.author: jfields
-  ms.topic: interactive-tutorial
-  ms.service: active-directory
+  ms.topic: module-standard-task-based
+  ms.service: multicloud-permissions-management
   ms.subservice: ciem
-title: Explore the many features of Permissions Management
-summary: While exploring more about the features of Permissions Management, we'll use this framework of discover, remediate, monitor as a guide to help walkthrough how the Permissions Management features set can benefit your organization.
+title: Explore the many features of Microsoft Entra Permissions Management
+summary: While diving deeper into the features of Microsoft Entra Permissions Management, we use the framework of discover, remediate, monitor as a guide to help walkthrough how the Permissions Management features set can benefit your organization.
+
 abstract: |
   By the end of this module, you'll be able to:
-  - Explore the features of Microsoft Entra Permissions Management
+  - Understand the features of Microsoft Entra Permissions Management
   - Learn more specifics about how Permissions Management allows you to discover, remediate, and monitor identities, permissions, and resources 
   - Get real-world views of the data and analytics Permissions Management provides
 
 
-iconUrl: /learn-pr/achievements/2-explore-features-of-permissions-management.svg
+iconUrl: /training/achievements/2-explore-features-of-permissions-management.svg
 levels:
 - beginner
 roles:

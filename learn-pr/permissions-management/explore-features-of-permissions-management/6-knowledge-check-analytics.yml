@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.permissions-management.explore-features-of-permissions-management.knowledge-check-analytics
-title: Knowledge check for Analytics
+title: Knowledge check - Analytics
 metadata:
-  title: Knowledge check for Analytics
+  title: Knowledge check - Analytics
   description: Multiple-choice questions
   ms.date: 09/27/2023
   author: jenniferf-skc
   ms.author: jfields
-  ms.topic: interactive-tutorial
-  ms.prod: learn-entra-permissions-management
+  ms.topic: module-standard-task-based
+  ms.service: multicloud-permissions-management
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check-analytics.md)]

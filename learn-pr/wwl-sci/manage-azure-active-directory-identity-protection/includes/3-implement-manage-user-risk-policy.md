@@ -10,13 +10,13 @@ Both policies work to automate the response to risk detections in your environme
 
 ### Watch the video
 
-In this video, learn how to deploy Azure AD Identity Protection by configuring risk-based policies (user risk and sign-in risk) in your organization. You’ll also learn best practices on how to gradually roll out these policies and MFA registration in your organization.
+In this video, learn how to deploy Microsoft Entra ID Protection by configuring risk-based policies (user risk and sign-in risk) in your organization. You’ll also learn best practices on how to gradually roll out these policies and MFA registration in your organization.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MxmD]
 
 ## Prerequisites
 
-If your organization wants to allow users to self-remediate when risks are detected, users must be registered for both self-service password reset and Azure AD Multi-Factor Authentication. We recommend enabling the combined security information registration experience. Allowing users to self-remediate gets them back to a productive state more quickly without requiring administrator intervention. Administrators can still see these events and investigate them after the fact.
+If your organization wants to allow users to self-remediate when risks are detected, users must be registered for both self-service password reset and Microsoft Entra multifactor authentication. We recommend enabling the combined security information registration experience. Allowing users to self-remediate gets them back to a productive state more quickly without requiring administrator intervention. Administrators can still see these events and investigate them after the fact.
 
 ## Choosing acceptable risk levels
 
