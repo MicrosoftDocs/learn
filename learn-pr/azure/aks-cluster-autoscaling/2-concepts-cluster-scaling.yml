@@ -8,8 +8,7 @@ metadata:
   ms.date: 04/27/2021
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-concepts-cluster-scaling.md)]
