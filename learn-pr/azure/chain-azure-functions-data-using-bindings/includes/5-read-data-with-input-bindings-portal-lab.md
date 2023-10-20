@@ -69,7 +69,7 @@ Let's use the Data Explorer tool to create a database and container.
 
 1. Scroll to the bottom of the pane and select **OK**. Allow a few minutes for the database and container to be built.
 
-    When complete, the Data Explorer displays **func-io-learn-db** in **DATA** under **SQL API**.
+    When complete, the Data Explorer displays **func-io-learn-db** in **DATA** under **NOSQL API**.
 
 1. Select **func-io-learn-db** to expand it. Notice that your **func-io-learn-db** database contains several child members, including Scale and Bookmarks. 
 
@@ -365,12 +365,12 @@ Let's examine what this code is doing.
           "name": "Response"
         },
         {
-          "name": "bookmark",
-          "direction": "in",
           "type": "cosmosDB",
-          "connectionStringSetting": "your-database_DOCUMENTDB",
+          "name": "bookmark",
           "databaseName": "func-io-learn-db",
-          "collectionName": "Bookmarks",
+          "containerName": "Bookmarks",
+          "connection": "your-database_DOCUMENTDB",
+          "direction": "in",
           "id": "{id}",
           "partitionKey": "{id}"
         }
