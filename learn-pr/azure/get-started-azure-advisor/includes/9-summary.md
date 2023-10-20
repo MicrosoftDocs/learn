@@ -3,7 +3,7 @@ Think of Azure Advisor as your own personal cloud consultant. It provides you wi
 In this module, you've learned how Advisor provides you with recommendations based on the five pillars of the Azure Well-Architected Framework:
 
 - **Cost**: Such as reporting idle or under-used services that can be deleted or downsized to save money
-- **Security**: Such as recommending multi-factor authentication settings for your users
+- **Security**: Such as recommending multifactor authentication settings for your users
 - **Reliability**: Such as recommending redundancy to keep your applications up and running
 - **Operational Excellence**: Such as providing your service health status, which can affect your applications
 - **Performance**: Such as scaling applications or upgrading resources to get better performance
