@@ -56,7 +56,7 @@ Specify similar configurations as you did for Advisor Alerts:
 - **SCOPE:** Select the subscription for which you want to receive recommendation digest notifications.
 - **CONDITION:** Specify how often you're notified, which categories you want to include, and in what language you want to receive the recommendation digest.
 - **ACTION GROUPS:** Select an existing action group or create a new one to define the list of notifications that are sent for the recommendation digest, such as through email or SMS.
-- **DIGEST DETAILS:** Provide a name for the recommendation digest. You can also choose enable or disable it when you save your changes.
+- **DIGEST DETAILS:** Provide a name for the recommendation digest. You can also choose to enable or disable it when you save your changes.
 
 :::image type="content" source="../media/azure-advisor-recommendation-digest.png" alt-text="Screenshot showing the Add and Advisor recommendation digest page." lightbox="../media/azure-advisor-recommendation-digest.png":::
 
