@@ -2,7 +2,7 @@
 uid: learn.wwl.configure-virtual-machines
 metadata:
   title: Configure virtual machines
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|You will learn to configure virtual machines including sizing, storage, and connections.</span| </div|"
+  description: "You will learn to configure virtual machines including sizing, storage, and connections."
   ms.date: 10/20/2023
   author: wwlpublish
   ms.author: cynthist
