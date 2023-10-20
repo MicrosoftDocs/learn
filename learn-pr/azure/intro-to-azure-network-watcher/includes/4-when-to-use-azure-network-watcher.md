@@ -28,6 +28,6 @@ You could also use Network Watcher if you have an on-premises hybrid application
 
 ## When not to use Network Watcher
 
-Network Watcher tools provide intermediate levels of network diagnostic functionality. These tools don't provide some of the advanced features available in some third-party tools. If your organization needs access to this advanced functionality, you may need to deploy a third-party tool that includes this advanced functionality to accomplish your diagnostic goals.  
+Network Watcher tools provide intermediate levels of network diagnostic functionality. These tools don't provide some of the advanced features available in some third-party tools. If your organization needs access to this advanced functionality, you might need to deploy a third-party tool that includes this advanced functionality to accomplish your diagnostic goals.  
 
 It's important to realize that Network Watcher is mostly used for IaaS resources on Azure virtual networks and that you can't use Azure Network Watcher to diagnose connectivity issues related to PaaS services or Web analytics. If you're encountering problems related to these services, you should check the Azure status or service health dashboard.
