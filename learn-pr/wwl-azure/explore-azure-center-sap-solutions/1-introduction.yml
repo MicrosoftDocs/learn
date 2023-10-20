@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.deploy-single-instance-implementations-2-tier-3-tier.introduction
+uid: learn.wwl.explore-azure-center-sap-solutions.introduction
 title: Introduction
 metadata:
   title: Introduction
@@ -9,6 +9,6 @@ metadata:
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
