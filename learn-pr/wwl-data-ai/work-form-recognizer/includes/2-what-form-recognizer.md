@@ -10,7 +10,7 @@ OCR captures document structure by creating bounding boxes around detected objec
 > [!div class="mx-imgBorder"]
 > ![Screenshot of JSON output sample.](../media/json-output-sample.png)
 
-To build a high-accuracy model from scratch, people need to build deep learning models, use a large amount of compute resources, and face long model training times. These factors could make a project infeasible. Azure Document Intelligence provides underlying models that have been trained on thousands of form examples. The underlying models enable you to do high-accuracy data extraction from your forms with little to no model training.   
+To build a high-accuracy model from scratch, people need to build deep learning models, use a large amount of compute resources, and face long model training times. These factors could make a project infeasible. Azure Document Intelligence provides underlying models that have been trained on thousands of form examples. The underlying models enable you to do high-accuracy data extraction from your forms with little to no model training.
 
 ## Azure Document Intelligence service components 
 
@@ -28,7 +28,7 @@ Azure Document Intelligence is composed of the following services:
 - **Custom models**: custom models extract data from forms specific to your business. Custom models can be trained through the [Azure Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio). 
 
 > [!NOTE]
-> Some Azure Document Intelligence features are in preview, as of the time this content was authored, and as a result, features and usage details may change. You should refer to the [official page](/azure/ai-services/document-intelligence/overview?azure-portal=true) for up-to-date information.
+> Some Azure Document Intelligence features are in preview, as of the time this content was authored, and as a result, features and usage details might change. You should refer to the [official page](/azure/ai-services/document-intelligence/overview?azure-portal=true) for up-to-date information.
 
 ## Access services with the client library SDKs or REST API 
 
