@@ -6,12 +6,11 @@ metadata:
   ms.date: 10/31/2020
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - build-2023
     - build-2023-dataai
     - devx-track-azurecli
-  ms.service: azure
 title: Host a new database by using Azure Cosmos DB
 sandbox: true
 interactive: bash
