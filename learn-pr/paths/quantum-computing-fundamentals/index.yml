@@ -24,9 +24,9 @@ summary: |
   - Estimate physical resources for quantum algorithms using Azure Quantum.
 
 prerequisites: |
-- Basic knowledge of Azure ecosystem
-- Basic knowledge of linear algebra
-- Familiarity with Visual Studio Code
+  - Basic knowledge of Azure ecosystem
+  - Basic knowledge of linear algebra
+  - Familiarity with Visual Studio Code
 iconUrl: /training/achievements/quantum/quantum-computing-fundamentals.svg
 levels:
 - beginner
