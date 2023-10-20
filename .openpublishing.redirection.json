@@ -14891,6 +14891,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/work-form-recognizer/4-understand-prebuilt-models.md",
+      "redirect_url": "/training/modules/work-form-recognizer/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/reactors/blockchain-solidity-ethereum-smart-contracts/4-truffle.md",
       "redirect_url": "/training/modules/reactors/blockchain-solidity-ethereum-smart-contracts/3-truffle",
       "redirect_document_id": false
