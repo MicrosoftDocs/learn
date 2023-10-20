@@ -14891,6 +14891,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/work-form-recognizer/4-understand-prebuilt-models.md",
+      "redirect_url": "/training/modules/work-form-recognizer/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/reactors/blockchain-solidity-ethereum-smart-contracts/4-truffle.md",
       "redirect_url": "/training/modules/reactors/blockchain-solidity-ethereum-smart-contracts/3-truffle",
       "redirect_document_id": false
@@ -28376,6 +28381,11 @@
     {
       "source_path": "learn-pr/paths/discover-microsoft-ai-healthcare-professionals/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/discover-microsoft-ai-leaders-healthcare-industry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-machine-learning-workspace-resources-assets/1b-video.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-machine-learning-workspace-resources-assets/1-introduction",
       "redirect_document_id": false
     }
   ]

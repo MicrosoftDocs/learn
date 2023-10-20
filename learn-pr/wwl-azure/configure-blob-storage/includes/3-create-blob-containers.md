@@ -1,4 +1,3 @@
-
 Azure Blob Storage uses a container resource to group a set of blobs. A blob can't exist by itself in Blob Storage. A blob must be stored in a container resource.
 
 ### Things to know about containers and blobs
