@@ -3,21 +3,6 @@ You're all done with the tasks for this module. You can now move the work item t
 > [!IMPORTANT]
 > This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
 
-## Move the work item to Done
-
-In this section, you'll move the work item that you assigned to yourself earlier in this module, **Create unit tests**, to the **Done** column.
-
-In practice, the definition of "Done" often means that working software is in the hands of your users. In this unit, for learning purposes, you'll mark this work as complete because you have working unit tests and code coverage tests set up in your build pipeline.
-
-At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting. Here, you share the work you completed, what went well in the sprint, and what could be improved.
-
-To complete the work item:
-
-1. In Azure DevOps, go to **Boards** and then, in the left pane, select **Boards**.
-1. Move the **Create unit tests** work item from the **Doing** column to the **Done** column.
-
-    :::image type="content" source="../media/8-azure-boards-wi3-done.png" alt-text="A screenshot of Azure Boards showing the Create unit tests card in the Done column.":::
-
 ## Disable the pipeline or delete your project
 
 Each module in this learning path provides a template that you can run to create a clean environment for the duration of the module.
