@@ -12,12 +12,12 @@ A Key Vault access policy determines whether a user, application, or group, can 
 3.  From the menu select **Access policies**, then select **+ Add Access Policy**.
 4.  Use the dialog to assign the specific permission you want service principal to have.
     
-    ```
+    
     [!Note]
     Service principal represents the user, group, or application you're assigning the policy to.
     
     
-    ```
+    
 5.  Select **Add** to save and apply the access policy.
 
 You can complete this activity using a saved template, PowerShell, CLI, and the Azure portal.
