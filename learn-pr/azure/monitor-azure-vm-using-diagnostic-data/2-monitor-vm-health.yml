@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.monitor-vm-health
-title: Azure Monitor Metrics overview
+title: Monitoring for Azure VMs
 metadata:
-  title: Azure Monitor Metrics overview
-  description: Understand metrics, explore the metrics available from Azure Monitor, and look at ways to use Azure Monitor Metrics to monitor a virtual machine (VM).
+  title: Monitoring for Azure VMs
+  description: Understand Azure Monitor Metrics and Logs, and explore the various Azure Monitor capabilities for monitoring a virtual machine (VM).
   ms.date: 10/18/2019
   author: cwatson-cat
   ms.author: cwatson
@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: What are the two main Azure Monitor features for monitoring VMs?
     choices:
-    - content: Azure Monitor Metrics and Azure Monitor Logs.
+    - content: Metrics and Logs.
       isCorrect: true
       explanation: Azure Monitor has two main features for monitoring VMs, Azure Monitor Metrics and Azure Monitor Logs.
-    - content: VM Insights and Alerts.
+    - content: Insights and Alerts.
       isCorrect: false
-      explanation: VM Insights and Alerts use Azure Monitor Metrics data, but they aren't the main monitoring features of Azure Monitor.
-    - content: Workbooks and Log Analytics.
+      explanation: VM Insights and Alerts analyze and act on, but don't collect the Azure Monitor Metrics data.
+    - content: Workbooks and Workspaces.
       isCorrect: false
       explanation: You can gather metrics in workbooks, and send log data to Log Analytics workspaces, but those aren't monitoring features of Azure Monitor.
   - content: What's the fundamental architecture of an Azure VM?

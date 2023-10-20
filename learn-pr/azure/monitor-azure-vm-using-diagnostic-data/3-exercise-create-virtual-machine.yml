@@ -22,7 +22,7 @@ quiz:
       explanation: Recommended alert rules aren't enabled by default, but you can easily enable them during or after VM creation.
     - content: Go to **Alerts** and select **Create**.
       isCorrect: false
-      explanation: You can create custom alerts by Alerts, but you can easily enable recommended alerts at VM creation.
+      explanation: You can create custom alerts in Alerts, but you can easily enable recommended alerts at VM creation or afterwards.
     - content: Select **Enable recommended alert rules** on the **Monitoring** tab.
       isCorrect: true
       explanation: You can easily enable recommended alerts at VM creation by selecting **Enable** and configuring the alert parameters on the **Monitoring** tab.

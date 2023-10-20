@@ -2,17 +2,15 @@ Suppose you're the IT administrator for a musical performer's website that's hos
 
 You need to maintain sufficient VM size and memory to effectively host the website without incurring unnecessary costs. You also need to proactively prevent and quickly respond to any access, security, and performance issues. To achieve these objectives, you want to quickly and easily monitor your VMs' traffic, health, performance, and events.
 
-Azure VMs come with built-in and customizable monitoring abilities that you can use to track the health, performance, and behavior of systems, workloads, and applications. This learning module shows you how to use built-in metrics and alert rules, Metrics Explorer, VM Insights, and custom data collection rules (DCRs) to collect and analyze monitoring data from your VMs.
+Azure VMs come with built-in and customizable monitoring abilities that you can use to track the health, performance, and behavior of systems, workloads, and applications. This learning module shows you how to use Azure Monitor built-in metrics and alert rules, Metrics Explorer, VM Insights, and custom data collection rules (DCRs) to collect and analyze monitoring data from your VMs.
 
 ## Prerequisites
 
 To complete this module, you need the following prerequisites:
 
-- Access to an Azure subscription with at least **Contributor** role.
+- Familiarity with virtualization, Azure portal navigation, and Azure VMs.
+- Access to an Azure subscription with at least **Contributor** role. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and add a subscription before you begin. If you're a student, you can take advantage of the [Azure for students](https://azure.microsoft.com/free/students/?azure-portal=true) offer.
 
-  If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and add a subscription before you begin. If you're a student, you can take advantage of the [Azure for students](https://azure.microsoft.com/free/students/?azure-portal=true) offer.
-
-- Familiarity with virtualization and Azure VMs.
 
 ## Learning objectives
 
