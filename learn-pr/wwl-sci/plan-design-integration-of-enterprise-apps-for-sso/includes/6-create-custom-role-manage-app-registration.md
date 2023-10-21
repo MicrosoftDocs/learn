@@ -9,7 +9,7 @@ Create a new custom role that can be used to grant access to manage app registra
     
     :::image type="content" source="../media/new-custom-role-138a40ed.png" alt-text="Screenshot of the Roles and administrators screen with the New custom role menu option highlighted":::
     
-5.  In the **New custom role** blade, on the **Basics** tab, in the name box, enter **My custom app role**.
+5.  In the **New custom role** dialog, on the **Basics** tab, in the name box, enter **My custom app role**.
 6.  Review the remaining options and then select **Next**.
 7.  On the **Permissions** tab, review the available permissions.
 8.  In the **Search by permission name or description** box, enter credentials.

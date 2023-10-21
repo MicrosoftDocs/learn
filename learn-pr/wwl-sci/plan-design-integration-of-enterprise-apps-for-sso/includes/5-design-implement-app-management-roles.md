@@ -68,6 +68,6 @@ This separation enables you to create a single role definition and then assign i
 
 Tips when creating and using custom roles for delegating application management:
 
- -  Custom roles only grant access in the most current app registration blades of the Microsoft Entra admin center. They don't grant access in the legacy app registrations screen.
+ -  Custom roles only grant access in the most current app registration screen of the Microsoft Entra admin center. They don't grant access in the legacy app registrations screen.
  -  Custom roles don't grant access to the Microsoft Entra ID portal when the **Restrict access to Microsoft Entra ID administration** portal user setting is set to Yes.
  -  For app registrations the user has access to, role assignments only show up in the **All applications** tab on the **App registration** page. They don't show up in the **Owned applications** tab.
