@@ -25,10 +25,10 @@ By following the improvement actions, you can:
 
 The identity secure score is available in all editions of Microsoft Entra ID. Organizations can access their identity secure score, with the following steps:
 
-1. Azure portal.
-1. Microsoft Entra ID.
-1. Security.
-1. Identity Secure Score.
+1.  Azure portal.
+2.  Microsoft Entra ID.
+3.  Security.
+4.  Identity Secure Score.
 
 ## How are controls scored?
 
