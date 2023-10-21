@@ -2,8 +2,8 @@
 
 Enterprise organizations often face challenges when managing employee access to resources such as:
 
- -  Users may not know what access they should have, and even if they do, they may have difficulty locating the right individuals to approve their access
- -  Once users find and receive access to a resource, they may hold on to access longer than is required for business purposes
+ -  Users don't know what access they should have, and even if they do, they can have difficulty locating the right individuals to approve their access
+ -  Once users find and receive access to a resource, they hold on to access longer than is required for business purposes
 
 These problems are compounded for users who need access from another organization, such as external users who are from supply chain organizations or other business partners. For example, Microsoft Entra entitlement management can help organizations ensure that everyone has access to the correct directories and that all user access is managed consistently.
 
@@ -37,7 +37,7 @@ Before exploring entitlement management and its documentation in depth, you shou
 | policy                 | A set of rules that defines the access lifecycle, such as how users get access, who can approve, and how long users have access through an assignment. A policy is linked to an access package. For example, an access package could have two policies: one for employees to request access and a second for external users to request access. |
 | resource               | An asset, such as an Office group, a security group, an application, or a SharePoint Online site, with a role that a user can be granted permissions to.                                                                                                                                                                                       |
 | resource directory     | A directory that has one or more resources to share.                                                                                                                                                                                                                                                                                           |
-| resource role          | A collection of permissions associated with and defined by a resource. A group has two roles: member and owner. SharePoint sites typically have three roles but may have additional custom roles. Applications can have custom roles.                                                                                                          |
+| resource role          | A collection of permissions associated with and defined by a resource. A group has two roles: member and owner. SharePoint sites typically have three roles but can have additional custom roles. Applications can have custom roles.                                                                                                          |
 
 ## What are access packages and what resources can I manage with them?
 
@@ -52,7 +52,7 @@ You can also control access to other resources that rely upon Microsoft Entra se
 
  -  Licenses for Microsoft 365 by using a security group in an access package and configuring group-based licensing for that group.
  -  Access to manage Azure resources by using a security group in an access package and creating an Azure role assignment for that group.
- -  Access to manage Microsoft Entra roles by using groups assignable to roles in an access package and assigning an role to that group.
+ -  Access to manage Microsoft Entra roles by using groups assignable to roles in an access package and assigning a role to that group.
 
 ## How do I control who gets access?
 

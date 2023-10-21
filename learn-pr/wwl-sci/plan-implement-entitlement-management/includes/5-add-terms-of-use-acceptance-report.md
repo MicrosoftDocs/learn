@@ -18,10 +18,10 @@ Once you have finalized your terms of use document, use the following procedure 
     
 5.  In the **Name** box, enter **Testing terms of use**. Set the name the terms-of-use will be used in the Azure portal.
 6.  In the **Display name** box, enter **Contoso Terms of Use**. The title that users see when they sign-in.
-7.  Select the **Terms of use document box**, browse to your finalized terms of use PDF, and select it. For this exercise, you can choose any PDF you may have. Another option is use Microsoft Word to create the terms of use doc and then save as PDF.
+7.  Select the **Terms of use document box**, browse to your finalized terms of use PDF, and select it. For this exercise, you can choose any PDF you have. Another option is use Microsoft Word to create the terms of use doc and then save as PDF.
 8.  Select the language for your terms of use document. The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user will see will be based on their browser preferences.
 9.  To require end users to view the terms of use prior to accepting them, set **Require users to expand the terms of use** to **On**.
-10. To require end users to accept your terms of use on every device they are accessing from, set **Require users to consent on every device** to **On**. Users may be required to install other applications if this option is enabled.
+10. To require end users to accept your terms of use on every device they are accessing from, set **Require users to consent on every device** to **On**. Users are required to install other applications if this option is enabled.
     
     > [!WARNING]
     > Consent on every device will require users to register each device with Microsoft Entra ID prior to getting access.
@@ -82,7 +82,7 @@ The terms-of-use-screen shows a count of the users who have accepted and decline
     
     :::image type="content" source="../media/terms-of-use-accept-decline-003cb407.png" alt-text="Screenshot of the terms of use with the Accepted and Declined columns highlighted.":::
     
-3.  In this exercise, you may not have any accepted or declined terms of use. In the following example, the **Accepted** value was selected. You can see the reported user information for those that have accepted the terms of use.
+3.  In this exercise, you might not have any accepted or declined terms of use. In the following example, the **Accepted** value was selected. You can see the reported user information for those that have accepted the terms of use.
     
     :::image type="content" source="../media/accepted-terms-of-use-3a8b9b7f.png" alt-text="Screenshot of the Terms of use consents pane listing the users that have accepted.":::
     
@@ -149,7 +149,7 @@ You can edit some details of terms of use, but you can't modify an existing docu
 
 ## Update an existing terms-of-use document
 
-You may, on occasion, be required to update the terms of use document.
+You can be required to update the terms of use document.
 
 1.  Select the terms of use you want to edit.
 2.  Select **Edit terms**.

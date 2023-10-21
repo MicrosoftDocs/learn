@@ -41,7 +41,7 @@ quiz:
     choices:
     - content: "To allow one organization access when collaborating on a project."
       isCorrect: false
-      explanation: "Incorrect. You need to focus on when two or more organizations are collaborating on a project. You may have multiple users from one organization which need access to another organizations resources via Microsoft Entra B2B."
+      explanation: "Incorrect. You need to focus on when two or more organizations are collaborating on a project. You can have multiple users from one organization which need access to another organizations resources via Microsoft Entra B2B."
     - content: "An employee requires permanent permissions to perform their job role."
       isCorrect: false
       explanation: "Incorrect. Employees need time-limited access for a particular task. For example, you might use group-based licensing and a dynamic group to ensure all employees have an Exchange Online mailbox, and then use access packages for situations in which employees need additional access, such as to read departmental resources from another department."
