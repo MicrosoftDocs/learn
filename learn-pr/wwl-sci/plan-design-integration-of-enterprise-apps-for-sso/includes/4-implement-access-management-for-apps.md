@@ -2,7 +2,7 @@
 
 The tasks in this exercise and the exercises in this learning path require you to already have and Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you skip this task and continue to the next.
 
-1.  In a web browser, go to [Azure portal](https://azure.microsoft.com/free/).
+1.  In a web browser, go to [Azure free subscription portal](https://azure.microsoft.com/free/).
 2.  Scroll down through the page to learn more about the benefits and free services available.
 3.  Select **Start free**.
 4.  Use the wizard to sign up for your Azure trial subscription.
