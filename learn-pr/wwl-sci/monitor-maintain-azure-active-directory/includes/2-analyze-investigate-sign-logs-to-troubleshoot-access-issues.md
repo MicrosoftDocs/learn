@@ -40,7 +40,7 @@ Under **Monitoring**, select **Sign-ins** to open the Sign-ins report.
 :::image type="content" source="../media/sign-ins-azure-active-directory-d02f9bb4.png" alt-text="Screenshot of the Sign-ins selected from the Monitoring menu. Track what report you want to review.":::
 
 
-It may take up to two hours for some sign-in records to show up in the portal.
+It takes up to two hours for sign-in records to show up in the portal.
 
 > [!IMPORTANT]
 > The sign-ins report only displays the interactive sign-ins—those in which a user manually signs in using their username and password. Non-interactive sign-ins, such as service-to-service authentication, are not displayed in the sign-ins report.

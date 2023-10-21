@@ -11,9 +11,9 @@ The score helps you to:
 
 You can access the score and related information on the identity secure score dashboard. On this dashboard, you find:
 
- -  Your identity secure score
+ -  The secure score for your identity
  -  A comparison graph showing how your Identity secure score compares to other tenants in the same industry and similar size
- -  A trend graph showing how your Identity secure score has changed over time
+ -  A trend graph showing any change to the secure score for your Identity over time
  -  A list of possible improvements
 
 By following the improvement actions, you can:
@@ -36,4 +36,4 @@ Controls can be scored in two ways. Some are scored in a binary fashion - you ge
 
 ## How should I interpret my score?
 
-Your score improves for configuring recommended security features or performing security-related tasks (like reading reports). Some actions are scored for partial completion, like enabling multi-factor authentication (MFA) for your users. Your secure score is directly representative of the Microsoft security services you use. Remember that security must be balanced with usability. All security controls have a user impact component. Controls with low user impact should have little to no effect on your users' day-to-day operations.
+Your score improves for configuring recommended security features or performing security-related tasks (like reading reports). Some actions are scored for partial completion, like enabling multifactor authentication (MFA) for your users. Your secure score is directly representative of the Microsoft security services you use. Remember that security must be balanced with usability. All security controls have a user affect component. Controls with low user lock-down should have little to no effect on your users' day-to-day operations.

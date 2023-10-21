@@ -44,7 +44,7 @@ quiz:
       explanation: "Incorrect. Microsoft Entra Domain Services is a standalone service in Azure that allows you to configure notifications and other services."
     - content: "Azure Microsoft Portal - Microsoft Entra Domain Services - Notification settings - Add email recipient."
       isCorrect: true
-      explanation: "Correct. The health of an Microsoft Entra Domain Services (MEDS) managed domain is monitored by the Azure platform. The health status page in the Azure Microsoft Portal shows any alerts for the managed domain. To make sure issues are responded to in a timely manner, email notifications can be configured to report on health alerts as soon as they're detected in the Microsoft Entra Domain Services managed domain."
+      explanation: "Correct. The health of a Microsoft Entra Domain Services (MEDS) managed domain is monitored by the Azure platform. The health status page in the Azure Microsoft Portal shows any alerts for the managed domain. To make sure issues are responded to in a timely manner, email notifications can be configured to report on health alerts as soon as they're detected in the Microsoft Entra Domain Services managed domain."
     - content: "Azure Microsoft Portal - Notification Hubs - Microsoft Entra ID - Add email recipient."
       isCorrect: false
       explanation: "Incorrect. Azure Notification Hubs are to provide push notification to any platform (iOS, Android, Windows, and so on.) to share breaking news, promotional content, or other Azure App information to users."
