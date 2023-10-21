@@ -14,6 +14,6 @@ The following list is a brief comparison of the various protocols used by Micros
  -  **OAuth vs. SAML**: OAuth is used for authorization and Security Assertion Markup Language (SAML) is used for authentication.
  -  **OpenID Connect vs. SAML**: Both OpenID Connect and SAML are used to authenticate a user and are used to enable single-sign-on. SAML authentication is commonly used with identity providers such as Active Directory Federation Services (ADFS) federated to Microsoft Entra ID and is therefore frequently used in enterprise applications. OpenID Connect is commonly used for apps that are purely in the cloud, such as mobile apps, web sites, and web APIs.
 
-If you have an application that you want to integrate with AzureAD providing the single-sign-on experience for your users, please see the article ClaimsXRay in Microsoft Entra ID with Directory Extension, linked below:
+If you have an application that you want to integrate with Microsoft Entra ID to provide the single-sign-on experience for your users, please see the article ClaimsXRay in Microsoft Entra ID with Directory Extension, linked below:
 
 [ClaimsXRay in Microsoft Entra ID with Directory Extension](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/claimsxray-in-azuread-with-directory-extension/ba-p/1505737)
