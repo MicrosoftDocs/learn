@@ -2,7 +2,7 @@
 
 ### Open role settings
 
-Follow these steps to open the settings for an Microsoft Entra role.
+Follow these steps to open the settings for a Microsoft Entra role.
 
 1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
 2.  Search for and then select **Microsoft Entra Privileged Identity Management.**

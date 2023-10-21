@@ -4,7 +4,7 @@ The Microsoft Entra Privileged Identity Management (PIM) service also allows Pri
 
 ## Assign a role
 
-Follow these steps to make a user eligible for an Microsoft Entra admin role.
+Follow these steps to make a user eligible for a Microsoft Entra admin role.
 
 1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
 2.  Search for and then select **Microsoft Entra Privileged Identity Management.**
@@ -25,13 +25,13 @@ Follow these steps to make a user eligible for an Microsoft Entra admin role.
 11. On the **Settings** tab, under **Assignment type**, review the available options. For this task, use the default setting.
     
     
-     -  Eligible assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
+     -  Eligible assignments require the member of the role to perform an action to use the role. Actions might include performing a multifactor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
      -  Active assignments don't require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
 12. Review the remaining settings and then select **Assign**.
 
 ## Activate your Microsoft Entra roles
 
-When you need to assume an Microsoft Entra role, you can request activation by opening **My roles** in Privileged Identity Management.
+When you need to assume a Microsoft Entra role, you can request activation by opening **My roles** in Privileged Identity Management.
 
 1.  On the Privileged Identity Management screen, in the left navigation menu, select **My roles.**
 2.  In the My roles pane, review the list of eligible assignments.
