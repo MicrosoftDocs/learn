@@ -25,7 +25,7 @@ Here, you add an Enterprise app that you can use for the exercise.
     
     :::image type="content" source="../media/new-enterprise-application-c413caf8.png" alt-text="Screenshot of the Enterprise applications screen with New application highlighted.":::
     
-5.  In the **Browse Microsoft Entra Gallery** blade, in the **Search application** box, enter **GitHub**.
+5.  In the **Browse Microsoft Entra Gallery** page, in the **Search application** box, enter **GitHub**.
     
     :::image type="content" source="../media/azure-active-directory-gallery-search-dd2360d5.png" alt-text="Screenshot of the browse Microsoft Entra ID Gallery screen with the search box highlighted.":::
     
