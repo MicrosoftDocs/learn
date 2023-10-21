@@ -1,4 +1,4 @@
-You can specify the lifetime of a token issued by Microsoft identity platform. Additionally, you can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization. In Microsoft Entra ID, part of Microsoft Entra, a policy object represents a set of rules that are enforced on individual applications or on all applications in an organization. Each policy type has a unique structure, with a set of properties that are applied to objects to which they're assigned.
+You can specify the lifetime of a token issued by Microsoft identity platform. Additionally, you can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization. In Microsoft Entra ID, a policy object represents a set of rules that are enforced on individual applications or on all applications in an organization. Each policy type has a unique structure, with a set of properties that are applied to objects to which they're assigned.
 
 You can designate a policy as the default policy for your organization. The policy is applied to any application in the organization, as long as it isn't overridden by a policy with a higher priority. You also can assign a policy to specific applications. The order of priority varies by policy type.
 
@@ -15,8 +15,6 @@ Conditional Access controls allow you to create policies that target specific us
 
 For more information see the link in the resources at the end of this module.
 
-<a name='customize-tokens-for-azure-ad'></a>
-
 ## Customize Tokens for Microsoft Entra ID
 
 | **Access and ID token lifetime**                        | **Refresh token lifetime (days)**                                                              | **Refresh token sliding windows lifetime** | **Lifetime length (days)**                                      |
@@ -28,7 +26,7 @@ For more information see the link in the resources at the end of this module.
 
 ## Configure optional claims as part of your token
 
-Application developers can use optional claims in their Microsoft Entra applications to specify which claims they want in tokens sent to their application.
+Application developers can use optional claims in their Microsoft Entra ID applications to specify which claims they want in tokens sent to their application.
 
 You can use optional claims to:
 
