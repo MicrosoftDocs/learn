@@ -8,8 +8,7 @@ metadata:
   ms.date: 04/27/2021
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
