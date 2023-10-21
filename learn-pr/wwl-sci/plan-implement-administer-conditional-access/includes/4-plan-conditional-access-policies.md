@@ -7,7 +7,7 @@ Microsoft Entra Conditional Access (CA) analyzes signals, such as user, device, 
 :::image type="content" source="../media/conditional-access-overview-how-it-works-b5356a16.png" alt-text="Diagram of how Conditional Access works. Centralize identity provider verifies rules before access is granted.":::
 
 
-Although security defaults ensure a basic level of security, your organization may need more flexibility than security defaults offer. You can use CA to customize security defaults with more granularity and to configure new policies that meet your requirements.
+Although security defaults ensure a basic level of security, your organization needs more flexibility than security defaults offer. You can use CA to customize security defaults with more granularity and to configure new policies that meet your requirements.
 
 ### Benefits
 
@@ -72,9 +72,9 @@ It can be difficult to predict the number and names of users affected by common 
 
 Report-only mode allows administrators to evaluate the CA policies before enabling them in their environment.
 
-### Exclude countries/regions from which you never expect a sign-in
+### Exclude countries from which you never expect a sign-in
 
-Microsoft Entra ID allows you to create named locations. Create a named location that includes all of the countries/regions from which you would never expect a sign-in to occur. Then create a policy for all apps that blocks sign in from that named location. **Be sure to exempt your administrators from this policy**.
+Microsoft Entra ID allows you to create named locations. Create a named location that includes all of the countries from which you would never expect a sign-in to occur. Then create a policy for all apps that blocks sign in from that named location. **Be sure to exempt your administrators from this policy**.
 
 ## Common policies
 
@@ -124,5 +124,5 @@ The test plan is important to have a comparison between the expected results and
 
  -  Free Microsoft Entra ID - No Conditional Access
  -  Free Office 365 subscription - No Conditional Access
- -  Microsoft Entra ID P1 or P2 (or Microsoft 365 E3 and up) - Conditional access work based on standard rules
- -  Microsoft Entra ID P1 or P2 - Conditional Access, and you get the ability to use Risky sign-in, Risky Users, and risk-based sign-in options as well (from Identity Protection)
+ -  Microsoft Entra ID Premium 1 (or Microsoft 365 E3 and up) - Conditional access work based on standard rules
+ -  Microsoft Entra ID Premium 2 - Conditional Access, and you get the ability to use Risky sign-in, Risky Users, and risk-based sign-in options as well (from Identity Protection)

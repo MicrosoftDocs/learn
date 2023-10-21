@@ -1,13 +1,11 @@
-Microsoft Entra Connect Health provides robust monitoring of your on-premises identity infrastructure. It enables you to maintain a reliable connection to Microsoft 365 and Microsoft Online Services. This reliability is achieved by providing monitoring capabilities for your key identity components. Also, it makes the key data points about these components easily accessible.
+Microsoft Entra Connect Health provides monitoring of your on-premises identity infrastructure. It enables you to maintain a reliable connection to Microsoft 365 and Microsoft Online Services. This reliability is achieved by providing monitoring capabilities for your key identity components. Also, it makes the key data points about these components easily accessible.
 
 The information is presented in the [Microsoft Entra Connect Health portal](https://aka.ms/aadconnecthealth). Use the Microsoft Entra Connect Health portal to view alerts, performance monitoring, usage analytics, and other information. Microsoft Entra Connect Health enables the single lens of health for your key identity components in one place.
 
-:::image type="content" source="../media/azure-active-directory-connect-health-2-8d08121d.png" alt-text="Diagram of What is Microsoft Entra Connect Health.  Shows how Microsoft Entra Connect is maintained.":::
+:::image type="content" source="../media/azure-active-directory-connect-health-2-8d08121d.png" alt-text="Diagram of What is Azure AD Connect Health.  Shows how Azure AD Connect is maintained.":::
 
 
-Using the Microsoft Entra Connect Health feature requires a Microsoft Entra ID P1 license.
-
-<a name='azure-ad-connect-health-agent-installation'></a>
+Using the Microsoft Entra Connect Health feature requires a Microsoft Entra ID Premium P1 license.
 
 ## Microsoft Entra Connect Health agent installation
 
@@ -15,7 +13,7 @@ This section provides instructions for installing and configuring the Microsoft 
 
 ## Requirements
 
- -  Microsoft Entra ID P1 or P2 is installed.
+ -  Microsoft Entra ID Premium is installed.
  -  You're a global administrator in Microsoft Entra ID.
  -  The Microsoft Entra Connect Health agent is installed on each targeted server.
  -  The Azure service endpoints have outbound connectivity.
@@ -44,17 +42,17 @@ Download and install the Microsoft Entra Connect Health agent from the Download 
 
 Before you install the agent, make sure your AD FS server host name is unique and isn't present in the AD FS service. To start the agent installation, double-click the *.exe* file that you downloaded. In the first window, select **Install**.
 
-:::image type="content" source="../media/install-1-ba515c5e.png" alt-text="Screenshot of the installation window for the Microsoft Entra Connect Health A D F S agent.":::
+:::image type="content" source="../media/install-1-ba515c5e.png" alt-text="Screenshot of the installation window for the Azure Microsoft Entra Connect Health AD  FS agent.":::
 
 
 After the installation finishes, select **Configure Now**.
 
-:::image type="content" source="../media/install-2-b1ed2a20.png" alt-text="Screenshot of the installation window for the confirmation message for the Microsoft Entra Connect Health A D F S agent installation.":::
+:::image type="content" source="../media/install-2-b1ed2a20.png" alt-text="Screenshot of the installation window for the confirmation message for the Microsoft Entra Connect Health AD FS agent installation.":::
 
 
-A PowerShell window opens to start the agent registration process. When you're prompted, sign in by using a Microsoft Entra account that has permissions to register the agent. By default, the global admin account has permissions.
+A PowerShell window opens to start the agent registration process. When you're prompted, sign in by using a Microsoft Entra ID account that has permissions to register the agent. By default, the global admin account has permissions.
 
-:::image type="content" source="../media/install-3-3dc48bc2.png" alt-text="Screenshot of the sign-in window for Microsoft Entra Connect Health A D F S.":::
+:::image type="content" source="../media/install-3-3dc48bc2.png" alt-text="Screenshot of the sign-in window for Microsoft Entra Connect Health AD FS.":::
 
 
 After you sign in, PowerShell continues. When it finishes, you can close PowerShell. The configuration is complete.
@@ -63,7 +61,7 @@ At this point, the agent services should start automatically to allow the agent 
 
 If you haven't met all of the prerequisites, warnings appear in the PowerShell window. Be sure to complete the requirements before you install the agent. The following screenshot shows an example of these warnings.
 
-:::image type="content" source="../media/install-4-2816edd6.png" alt-text="Screenshot of the Microsoft Entra Connect Health A D F S configure script. You can customize if needed.":::
+:::image type="content" source="../media/install-4-2816edd6.png" alt-text="Screenshot of the Microsoft Entra Connect Health AD FS configure script. You can customize if needed.":::
 
 
 To verify that the agent was installed, look for the following services on the server. If you completed the configuration, they should already be running. Otherwise, they're stopped until the configuration is complete.
@@ -72,7 +70,7 @@ To verify that the agent was installed, look for the following services on the s
  -  Microsoft Entra Connect Health AD FS Insights Service
  -  Microsoft Entra Connect Health AD FS Monitoring Service
 
-:::image type="content" source="../media/install-5-01ef9e2e.png" alt-text="Screenshot of the Microsoft Entra Connect Health A D F S services.  Deploy only the services you need.":::
+:::image type="content" source="../media/install-5-01ef9e2e.png" alt-text="Screenshot of the Microsoft Entra Connect Health AD FS services.  Deploy only the services you need.":::
 
 
 ## Install the agent for Sync
@@ -88,4 +86,4 @@ To verify the agent has been installed, look for the following services on the s
 
 
 > [!NOTE]
-> Remember that you must have Microsoft Entra ID P1 or P2 to use Microsoft Entra Connect Health. If you don't have Microsoft Entra ID P1 or P2, you can't complete the configuration in the Azure portal.
+> Remember that you must have Microsoft Entra ID Premium to use Microsoft Entra Connect Health. If you don't have Microsoft Entra ID Premium, you can't complete the configuration in the Azure portal.
