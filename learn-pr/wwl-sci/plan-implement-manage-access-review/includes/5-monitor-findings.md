@@ -38,7 +38,7 @@ There are two ways that you can approve or deny access:
     
     > [!NOTE]
     > If you are unsure, you can select "Don't know" and the user gets to keep their access and your choice is recorded in the audit logs.
-3.  The administrator of the access review may require that you supply a reason in the **Reason** box for your decision.
+3.  The administrator of the access review can require that you supply a reason in the **Reason** box for your decision.
     
     
      -  Even when a reason is not required. You can still provide a reason for your decision and the information that you include will be available to other reviewers.

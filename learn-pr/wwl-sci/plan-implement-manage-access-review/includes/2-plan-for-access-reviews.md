@@ -14,7 +14,7 @@ When technology projects fail, they typically do so due to mismatched expectatio
  -  **Corporate governance** ensures that the organization is following internal policy and complying with regulations.
     
     > [!NOTE]
-    > For reviews requiring manual evaluations, be sure to plan for adequate reviewers and review cycles that meet your policy and compliance needs. If review cycles are too frequent, or there are too few reviewers, quality may be lost and too many or too few people may have access.
+    > For reviews requiring manual evaluations, be sure to plan for adequate reviewers and review cycles that meet your policy and compliance needs. If review cycles are too frequent, or there are too few reviewers, quality is lost and too many or too few people have access.
 
 ## What is Microsoft Entra ID Governance?
 
@@ -118,12 +118,12 @@ To create an access review policy, you must have the following information.
 | Timeline            | 48 hours from notification                                                                                                                 |
 | Automatic actions   | Remove access from any account that has no interactive sign-in within 90 days by removing the user from the security group dynamics-access |
 |                     | *Perform actions if not reviewed within timeline*                                                                                          |
-| Manual actions      | Reviewers may perform removals approval prior to automated action if desired                                                               |
+| Manual actions      | Reviewers perform removals approval prior to automated action if desired                                                                   |
 | Communications      | Send internal (member) users who are removed an email explaining they are removed and how to regain access                                 |
 
 ## Plan access reviews for access packages
 
-Access packages can vastly simplify your governance and Access Review strategy. An Access Package is a bundle of all the resources with the access a user needs to work on a project or perform their task. For example, you may want to create an Access Package that includes all the applications that developers in your organization need, or all applications to which external users should have access. An administrator or delegated Access Package manager then groups the resources (groups or apps) and the roles the users need for those resources.
+Access packages can vastly simplify your governance and Access Review strategy. An Access Package is a bundle of all the resources with the access a user needs to work on a project or perform their task. For example, you might want to create an Access Package that includes all the applications that developers in your organization need, or all applications to which external users should have access. An administrator or delegated Access Package manager then groups the resources (groups or apps) and the roles the users need for those resources.
 
 When creating an Access Package, you can create one or more access policies that set conditions for which users can request an Access Package, what the approval process looks like, and how often a person would have to re-request access. Access reviews are configured while creating or editing an Access Package policy.
 
@@ -145,7 +145,7 @@ Group membership can be reviewed by:
 We recommend that group owners review membership, as they're best situated to know who needs access. Ownership of groups differs with the type of group.
 
  -  Groups that are created in Microsoft 365 and Microsoft Entra ID have one or more well-defined owners. In most cases, these owners make perfect reviewers for their own groups as they know who should have access. For example, Microsoft Teams uses Microsoft 365 Groups as the underlying authorization model to grant users access to resources that are in SharePoint, Exchange, OneNote, or other Microsoft 365 services. The creator of the team automatically becomes an owner and should be responsible for attesting to the membership of that group.
- -  Groups created manually in the Microsoft Entra admin center portal or via scripting through Microsoft Graph may not necessarily have owners defined. We recommend that you define them either through the admin portal in the group’s “Owners” section or via Graph.
+ -  Groups created manually in the Microsoft Entra admin center portal or via scripting through Microsoft Graph might not necessarily have owners defined. We recommend that you define them either through the admin portal in the group’s “Owners” section or via Graph.
  -  Groups that are synchronized from on-premises Active Directory cannot have an owner in Microsoft Entra ID. When creating an Access Review for them, you should select individuals who are best suited to decide on membership in them.
     
     > [!NOTE]
@@ -153,11 +153,11 @@ We recommend that group owners review membership, as they're best situated to kn
 
 ### Review membership of exclusion groups in CA policies
 
-There are times when Conditional Access policies designed to keep your network secure shouldn't apply to all users. For example, a CA policy that only allows users to sign in while on the corporate network may not apply to the sales team, which travels extensively. In that case, the sales team members would be put into a group and that group would be excluded from the CA policy.
+There are times when Conditional Access policies designed to keep your network secure shouldn't apply to all users. For example, a CA policy that only allows users to sign in while on the corporate network might not apply to the sales team, which travels extensively. In that case, the sales team members would be put into a group and that group would be excluded from the CA policy.
 
 ### Review external users' group memberships
 
-To minimize manual work and associated potential errors, consider using Dynamic Groups to assign group membership based on a user’s attributes. You may want to create one or more Dynamic Groups for external users. The internal sponsor can act as a reviewer for membership in the group.
+To minimize manual work and associated potential errors, consider using Dynamic Groups to assign group membership based on a user’s attributes. You want to create one or more Dynamic Groups for external users. The internal sponsor can act as a reviewer for membership in the group.
 
 ### Review access to on-premises groups
 

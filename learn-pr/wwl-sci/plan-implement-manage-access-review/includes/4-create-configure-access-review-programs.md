@@ -1,4 +1,4 @@
-Microsoft Entra access reviews is a feature of Microsoft Entra ID Governance. Access reviews help to ensure that the right identities have the right access to the right resources in the organization. Access reviews can be implemented programmatically using the access reviews API in Microsoft Graph.
+Microsoft Entra access reviews are a feature of Microsoft Entra ID Governance. Access reviews help to ensure that the right identities have the right access to the right resources in the organization. Access reviews can be implemented programmatically using the access reviews API in Microsoft Graph.
 
 ## Microsoft Entra access reviews data model
 
@@ -8,11 +8,11 @@ The Microsoft Entra access reviews feature adds the following resource types:
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | accessReview         | The container represents an access review. Can be a one-time review, a recurring review series, or an instance of a recurring review.                                                                                                                                                                                                                                                                                                                               |
 | businessFlowTemplate | Template for business flow determines the type resource on which an access review is to be performed. The identifier of a template, such as to review guest members of a group, is supplied by the caller when creating an access review. (The business flow template objects are read only, they're automatically generated when the global administrator onboards the tenant to use the access reviews feature. No other business flow templates can be created.) |
-| program              | represents an Microsoft Entra access review program. A program is a container, holding program controls. A tenant can have one or more programs. Each control links an access review to a program, to make it easier to locate related access reviews. Each tenant that has onboarded Microsoft Entra access reviews has one program, `Default program`. A global administrator can create other programs, for example to represent compliance initiatives.         |
+| program              | represents a Microsoft Entra access review program. A program is a container, holding program controls. A tenant can have one or more programs. Each control links an access review to a program, to make it easier to locate related access reviews. Each tenant that has onboarded Microsoft Entra access reviews has one program, `Default program`. A global administrator can create other programs, for example to represent compliance initiatives.          |
 | programControl       | represents a control, which links an access review to a particular program                                                                                                                                                                                                                                                                                                                                                                                          |
 | programControlType   | the program control type is used when associating a control to a program, to indicate the type of access review the control is for. (The program control type objects are read only, they're automatically generated when the global administrator onboards the tenant to use the access reviews feature. No other program control types can be created.)                                                                                                           |
 
-## Register an Microsoft Entra ID application which has permissions to call the access reviews API in Graph
+## Register a Microsoft Entra ID application which has permissions to call the access reviews API in Graph
 
 The Graph authorization model requires that an application must be consented by a user or administrator prior to accessing an organization’s data.
 
@@ -53,7 +53,7 @@ The access reviews API is structured logically and is composed of the following 
 2.  Access review instance
     
     
-     -  Represents a single review activity, or occurrence, against which reviewers make decisions. An access review definition may have multiple instances as is the case in recurring reviews. One-off reviews have exactly one instance. For a multi-stage access review, each instance contains up to three stages.
+     -  Represents a single review activity, or occurrence, against which reviewers make decisions. An access review definition might have multiple instances as is the case in recurring reviews. One-off reviews have exactly one instance. For a multi-stage access review, each instance contains up to three stages.
 3.  Decision item recorded for a review
     
     
