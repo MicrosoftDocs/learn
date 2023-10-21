@@ -31,7 +31,7 @@ To assign users and groups to roles by using the Azure portal:
 4.  This app was created in an earlier exercise.
 5.  Under **Manage**, select **Users and groups.**
 6.  On the menu, select **+ Add user/group.**
-7.  On the **Add Assignment** blade, select **Users and groups**.
+7.  On the **Add Assignment** dialog, select **Users and groups**.
 8.  A list of users and security groups is displayed. You can search for a certain user or group, as well as select multiple users and groups that appear in the list.
 9.  After you have selected users and groups, select **Select**.
 10. When using the **Select a role** assignment, all the roles that you've defined for the application are displayed.

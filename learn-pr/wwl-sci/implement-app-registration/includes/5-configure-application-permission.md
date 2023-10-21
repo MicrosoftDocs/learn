@@ -35,7 +35,7 @@ Microsoft identity platform supports two types of permissions: **delegated permi
 
 *Effective permissions* are those that your app will have when making requests to the target resource. It's important to understand the difference between the delegated and application permissions that your app is granted and its effective permissions when making calls to the target resource.
 
- -  For delegated permissions, the *effective permissions* of your app will be the least privileged intersection of the delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user may be determined by policy or by membership in one or more administrator roles. To learn which administrator roles can consent to delegated permissions, see Administrator role permissions in Microsoft Entra ID.
+ -  For delegated permissions, the *effective permissions* of your app will be the least privileged intersection of the delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user is determined by policy or by membership in one or more administrator roles. To learn which administrator roles can consent to delegated permissions, see Administrator role permissions in Microsoft Entra ID.
  -  For example, assume your app has been granted the *User.ReadWrite.All* delegated permission. This permission nominally grants your app permission to read and update the profile of every user in an organization. If the signed-in user is a global administrator, your app will be able to update the profile of every user in the organization. However, if the signed-in user isn't in an administrator role, your app will be able to update only the profile of the signed-in user. It will not be able to update the profiles of other users in the organization, because the user whom it has permission to act on behalf of doesn't have those privileges.
  -  For application permissions, the *effective permissions* of your app will be the full level of privileges implied by the permission. For example, an app that has the *User.ReadWrite.All* application permission can update the profile of every user in the organization.
 
@@ -67,7 +67,7 @@ On the Microsoft identity platform (requests made to the v2.0 endpoint), your ap
 > When you are using a Single Page Application (SPA) the refresh token is always provided.
 
 > [!NOTE]
-> This permission appears on all consent screens today, even for flows that don't provide a refresh token (the *implicit flow* (https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)). This is to cover scenarios where a client can begin within the implicit flow, and then move on to the code flow where a refresh token is expected.
+> This permission appears on all consent screens today, even for flows that don't provide a refresh token ([the *implicit flow*](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow%29)). This is to cover scenarios where a client can begin within the implicit flow, and then move on to the code flow where a refresh token is expected.
 
 ## Requesting individual user consent
 
