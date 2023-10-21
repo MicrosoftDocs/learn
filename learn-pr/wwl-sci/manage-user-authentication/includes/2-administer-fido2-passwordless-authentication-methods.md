@@ -5,7 +5,7 @@ As part of the sign-in experience for accounts in Microsoft Entra ID, there are 
 
 Passwordless authentication methods such as Windows Hello, FIDO2 security keys, and the Microsoft Authenticator app provide the most secure sign-in events.
 
-Multifactor authentication (MFA) adds extra security over only using a password when a user signs in. The user can be prompted for other forms of authentication. The user might have to respond to a push notification, enter a code from a software or hardware token. Finally, the user might have to respond to an SMS or phone call.
+multifactor authentication (MFA) adds extra security over only using a password when a user signs in. The user can be prompted for other forms of authentication. The user may have to respond to a push notification, enter a code from a software or hardware token. Finally, the user might have to respond to an SMS or phone call.
 
 Simplify the user on-boarding experience by registering for both MFA and self-service password reset (SSPR). Microsoft recommends you enable combined security information registration. For resiliency, we recommend you require users to register multiple authentication methods. When one method isn't available for a user during sign-in or SSPR, they can choose to authenticate with another method.
 
@@ -52,7 +52,7 @@ The following table outlines when an authentication method can be used during a 
 All of these authentication methods can be configured in the Azure portal and increasingly using the Microsoft Graph REST API beta.
 
 > [!NOTE]
-> In Microsoft Entra ID, a password is often one of the primary authentication methods. You can't disable the password authentication method. If you use a password as the primary authentication factor, increase the security of sign-in events using Multi-Factor Authentication.
+> In Microsoft Entra ID, a password is often one of the primary authentication methods. You can't disable the password authentication method. If you use a password as the primary authentication factor, increase the security of sign-in events using multifactor authentication.
 
 The following verification methods can be used in certain scenarios:
 
@@ -85,7 +85,7 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication sp
 2.  Sign in if you haven't already.
 3.  Select **Security Info**.
 4.  If the user already has at least one multifactor authentication method registered, they can immediately register a FIDO2 security key.
-5.  If they don't have at least one multifactor authentication method registered, they must add one.
+5.  If they don't have at least one multifactor Authentication method registered, they must add one.
 6.  Add a FIDO2 security key by selecting **Add method** and choosing **Security key**.
 7.  Choose **USB device** or **NFC device**.
 8.  Have your key ready and choose **Next**.
