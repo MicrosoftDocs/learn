@@ -1,7 +1,7 @@
-:::image type="content" source="../media/app-single-sign-on-79005b35.png" alt-text="Diagram of Microsoft Entra being the single-sign-on provider for cloud apps.  User and external users log into Microsoft Entra ID, then connect to cloud applications.":::
+:::image type="content" source="../media/app-single-sign-on-79005b35.png" alt-text="Diagram of Microsoft Entra ID being the single-sign-on provider for cloud apps. User and external users log into Microsoft Entra ID, then connect to cloud applications.":::
 
 
- -  You can use Microsoft Entra ID as your identity system for just about any app. Many apps are already pre-configured and can be set up with minimal effort. These pre-configured apps are published in the Microsoft Entra App Gallery.
+ -  You can use Microsoft Entra ID as your identity system for just about any app. Many apps are already pre-configured and can be set up with minimal effort. These pre-configured apps are published in the Microsoft Entra ID App Gallery.
  -  You can manually configure most apps for single-sign-on if they aren't already in the gallery. Microsoft Entra ID provides several SSO options. SAML-based SSO and OIDC-based SSO.
 
 Effectively, apps can delegate maintenance of their own username and password information to a centralized identity provider, Microsoft Entra ID as an example. Delegating authentication and authorization enables scenarios such as Conditional Access policies that require a user to be in a specific location or require multifactor authentication. The use of single-sign-on (SSO), enables a user to sign in once and then be automatically signed in to all of the web apps that share the same centralized directory.
