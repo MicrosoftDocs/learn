@@ -13,7 +13,7 @@ By the end of this module, you will be able to:
  -  Create and manage emergency access accounts.
  -  Configure privileged access groups
 
-Organizations want to minimize the number of people who have access to secure information or resources. Minimizing access reduces the chance of a malicious actor getting that access. It can also help prevent an authorized user inadvertently impacting a sensitive resource. However, users still need to carry out privileged operations in Microsoft Entra ID, part of Microsoft Entra, Azure, Microsoft 365, or SaaS apps. Organizations can give users just-in-time privileged access to Azure resources. Then can track and manage the need for oversight of what those users are doing with their administrator privileges.
+Organizations want to minimize the number of people who have access to secure information or resources. Minimizing access reduces the chance of a malicious actor getting that access. It can also help prevent an authorized user inadvertently impacting a sensitive resource. However, users still need to carry out privileged operations in Microsoft Entra ID, Azure, Microsoft 365, or SaaS apps. Organizations can give users just-in-time privileged access to Azure resources. Then can track and manage the need for oversight of what those users are doing with their administrator privileges.
 
 ## Prerequisites
 

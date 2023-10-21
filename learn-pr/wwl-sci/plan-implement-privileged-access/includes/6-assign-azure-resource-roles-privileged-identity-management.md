@@ -10,7 +10,7 @@ Microsoft Entra Privileged Identity Management (PIM) can manage the built-in Azu
 
 Follow these steps to make a user eligible for an Azure resource role.
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/) as a tenant administrator.
+1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
 2.  Search for and then select **Microsoft Entra Privileged Identity Management.**
 3.  In the Privileged Identity Management blade, in the left navigation, select **Azure resources.**
 4.  On the top menu, select **Discover resources**.
