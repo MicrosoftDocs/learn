@@ -2,7 +2,7 @@ To start learning how to protect cloud apps, you first need to learn what Cloud 
 
 **CASB** \- Cloud Access Security Broker - An on-premises or cloud-based security policy enforcement point, placed between cloud service consumers and cloud service providers to combine and interject enterprise security policies as the cloud-based resources are accessed.
 
-**MDCA** \- Microsoft Defender for Cloud Apps (MDCA) - Microsoft implementation of a CASB service to protect data, services, and applications with enterprise policies. It provides supplemental reporting and analytics services
+**MDCA** \- Microsoft Defender for Cloud Apps - The Microsoft implementation of a CASB service to protect data, services, and applications with enterprise policies. It provides supplemental reporting and analytics services
 
 ## Microsoft Defender for Cloud Apps
 
