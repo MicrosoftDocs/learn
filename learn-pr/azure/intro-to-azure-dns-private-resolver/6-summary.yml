@@ -8,8 +8,7 @@ metadata:
   ms.date: 03/17/2023
   author: greg-lindsay
   ms.author: greglin
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
