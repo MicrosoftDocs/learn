@@ -8,7 +8,17 @@
 
     [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=main)
 -->
-TODO: restate the scenario problem
+In this module you prepared your OT site for Defender for IoT implementation. This included:
+
+- Deciding what devices and subnets to monitor
+- Choosing the best traffic monitoring methods for your sensors
+- Deciding what appliances to use for your sensors
+
+In order to prepare you:
+
+- Analyzed your site diagram to determine which devices and subnets to monitor
+- Checked the types of sensors you'd be using and matched them to traffic monitoring methods such as...
+- Mapped appliances to the types of sensors you would be using....
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
@@ -24,8 +34,6 @@ TODO: restate the scenario problem
         * Replaced fire-industry jargon with everyday words, which made the instructions accessible to a wider audience.
         * Replaced a comma-delimited list with a bulleted list, which made the steps to activate the fire extinguisher easier to follow."
  -->
-TODO: add your lead-in sentence(s)
-TODO: add your list of techniques used to solve the scenario problem
 
 <!-- 3. Describe the experience without the product ---------------------------------------------------
 
@@ -47,6 +55,11 @@ TODO: describe the experience without the product
     Example: "The test for effective instructions is whether customers can use your extinguishers correctly during an emergency. Users that fail might blame the instructions or the product. In either case, it's not good for business. On the other hand, successful customers are likely to share their stories and become advocates for your product."
  -->
 TODO: describe the business impact
+
+## References
+
+- [Prepare an OT site deployment](/azure/defender-for-iot/organizations/best-practices/plan-prepare-deploy)
+- 
 
 <!-- 5. References (optional) ----------------------------------------------------
 

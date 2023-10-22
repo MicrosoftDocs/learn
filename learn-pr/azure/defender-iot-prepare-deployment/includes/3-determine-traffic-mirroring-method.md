@@ -8,7 +8,30 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+In the previous unit you determined the devices and subnets in your automotive manufacturing site to monitor. Now you'll determine the traffic mirroring methods to use for your site.
+
+## Traffic Mirroring
+
+Traffic mirroring allows you to mirror network traffic to a system that allows you to monitor and diagnose problems. Defender for IoT monitors traffic to your OT network sensor. You should configure traffic mirroring on a switch or a terminal access point (TAP) that includes only industrial ICS and SCADA traffic to ensure that Defender for IoT only analyzes the traffic you want to monitor. 
+
+### Mirroring port scope
+
+Configure traffic mirroring from all of your switch's ports, whether or not data is connected to them to prevent rogue devices from connecting undetected to an unmonitored port. For OT networks that use broadcast or multicast messaging, configure traffic mirroring only for RX (*Receive*) transmissions to prevent unneccessary bandwidth use.
+
+## Traffic mirroring methods
+
+You will need to determine what method to use based on your network configuration. Defender for IoT supports the following traffic mirroring methods:
+
+|Method  |Description  |
+|---------|---------|
+|**Switch SPAN port**     |  Mirrors local traffic from interfaces on the switch to a different interface on the same switch. |  
+|**Remote SPAN (RSPAN) port**     |  Mirrors traffic from multiple, distributed source ports into a dedicated remote virtual local area network (VLAN). The VLAN data is then delivered through trunked ports, across multiple switches to a specified switch that contains the physical destination port. |
+|**Active or passive aggregation (TAP)**    |   Installs an active / passive aggregation TAP inline to your network cable, which duplicates traffic to the OT network sensor. The TAP hardware device allows network traffic to flow between ports without interruption and without compromising network integrity. Best method for forensic monitoring.|
+|**Encapsulated remote switched port analyzer (ERSPAN)**     | Mirrors input interfaces to your OT sensor's monitoring interface. |
+|**ESXi vSwitch**   |  Mirrors traffic using *Promiscuous mode* on an ESXi vSwitch. |
+|**Hyper-V vSwitch**    |   Mirrors traffic using *Promiscuous mode* on a Hyper-V vSwitch.  |
+
+Traffic mirroring methods: What and where are all the switch port types used in your organization and what connector media do you need? How should you deal with unmanaged switches? Is there rack space for a collector? Do you use broadcast or multicast messaging? Which traffic mirroring method best fits your switch port types? Choose a traffic mirroring method for each OT sensor, such as a SPAN port or TAP.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -51,7 +74,8 @@ TODO: add a visual element
 -->
 
 <!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
+## Traffic Monitoring
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)

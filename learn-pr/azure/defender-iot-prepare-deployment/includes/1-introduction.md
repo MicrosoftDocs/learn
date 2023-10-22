@@ -10,8 +10,9 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+Microsoft Defender for IoT provides comprehensive threat detection for IoT/OT environments, with multiple deployment options that include cloud-connected, fully on-premises, or hybrid.
+
+This module describes the high-level steps required to prepare your deployment of Defender for IoT for operational technology (OT) monitoring.
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -29,9 +30,10 @@ TODO: add a visual element
     [Scenario video guidance](TBD)
  -->
 ## Example scenario
-TODO: add your scenario
-TODO: add a visual element
 
+Suppose you work for a car manufacturer with offices and production sites across the globe. You're tasked with implementing a system to monitor traffic and secure your manufacturing automation systems, from the access panels to the pneumatic and packaging systems. To take the organization's operational technology security visibility to the next level, your team chooses to use Microsoft Defender for IoT.
+
+Having chosen the OT site to deploy to first, you'll need to prepare your OT site. You'll need to determine what devices and subnets to monitor, choose the best traffic monitoring methods for your sensors, and decide what appliances to use for your sensors.
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
     Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
@@ -45,8 +47,12 @@ TODO: add a visual element
 
  -->
 ## What will we be doing?
-TODO: add your activities
 
+You'll perform steps involved in preparing an OT site for Microsoft Defender for Iot deployment. You'll prepare for deploying an OT monitoring system, through actions such as:
+
+- **Network traffic diagram analysis**- Identify devices and subnets to monitor with Defender for IoT
+- **Traffic monitoring** -Decide which traffic monitoring methods to use for the sensor types
+- **Appliance comparison** - Decide on which appliance to use based on the sensor specification
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
     Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
@@ -57,6 +63,7 @@ TODO: add your activities
 
  -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
+
+By the end of this session, you'll prepare for a deployment of Microsoft Defender for IoT to monitor your OT networks.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
