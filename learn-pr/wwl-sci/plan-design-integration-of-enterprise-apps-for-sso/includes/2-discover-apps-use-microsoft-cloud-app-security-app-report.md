@@ -64,7 +64,7 @@ If you have an on-premises directory that contains user accounts, you likely hav
 
 To increase application security, your goal is to have a single set of access controls and policies across your on-premises and cloud environments.
 
-:::image type="content" source="../media/app-integration-after-migration-1843eca9.png" alt-text="Screenshot of the same Applications connected through Azure A D, after using app discovery.":::
+:::image type="content" source="../media/app-integration-after-migration-1843eca9.png" alt-text="Screenshot of the same Applications connected through Azure AD, after using app discovery.":::
 
 
 Many organizations use AD FS to provide SSO to cloud applications. Moving your AD FS applications to Microsoft Entra ID for authentication provides significant benefits, especially in terms of cost management, risk management, productivity, compliance, and governance. But understanding which applications are compatible with Microsoft Entra ID and identifying specific migration steps can be time consuming.
