@@ -18,7 +18,7 @@ summary: |
   In this learning path, you practice deploying containers, container orchestration, and managing clusters on Azure Kubernetes Service.
   The skills validated include deploying, configuring, and scaling an Azure Kubernetes Service cluster. Also, deploying an Azure Container Registry instance and deploying an application into an Azure Kubernetes Service cluster.
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:
