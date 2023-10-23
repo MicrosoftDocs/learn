@@ -15,6 +15,8 @@ abstract: |
   - Tell the difference between a classical and a quantum computer.
   - Describe the characteristics and applications of quantum computing.
   - Define the Azure Quantum service and its components.
+
+  
   During this module, you will:
   - Learn the concept of a qubit.
   - Review the building blocks of a quantum computer.

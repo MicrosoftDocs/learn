@@ -70,4 +70,4 @@ You can also learn from experts and enthusiasts through blogs, articles and vide
 
 :::image type="content" source="../media/learn-with-azure-quantum.png" alt-text="Art diagram showing that Azure Quantum offers tutorials, samples, AI.":::
 
-All these tools are free of charge.
+All these tools are **free of charge**.
