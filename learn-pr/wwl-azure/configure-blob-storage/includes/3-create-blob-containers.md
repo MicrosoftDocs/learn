@@ -1,3 +1,4 @@
+
 Azure Blob Storage uses a container resource to group a set of blobs. A blob can't exist by itself in Blob Storage. A blob must be stored in a container resource.
 
 ### Things to know about containers and blobs
@@ -13,6 +14,10 @@ Let's look at the configuration characteristics of containers and blobs.
 - You can create the container in the Azure portal.
 
 - You upload blobs into a container.
+
+### How to move content between containers
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/S3TXW4UrSak" title="How to move Azure Storage Blobs between containers" allowfullscreen></iframe>
 
 ### Configure a container
 

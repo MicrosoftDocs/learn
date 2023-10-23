@@ -1,3 +1,4 @@
+
 Object replication copies blobs in a container asynchronously according to policy rules that you configure. During the replication process, the following contents are copied from the source container to the destination container:
 - The blob contents
 - The blob metadata and properties
@@ -20,6 +21,8 @@ There are several considerations to keep in mind when planning your configuratio
 - When you configure object replication, you create a replication policy that specifies the source Azure storage account and the destination storage account.
 
 - A replication policy includes one or more rules that specify a source container and a destination container. The policy identifies the blobs in the source container to replicate.
+
+<iframe width="854" height="480" src="https://www.youtube.com/watch?v=bjKmJKAKyp4" title="How to use Blob versioning in Azure Storage | Azure Tips and Tricks" allowfullscreen></iframe>
 
 ### Things to consider when configuring blob object replication
 
