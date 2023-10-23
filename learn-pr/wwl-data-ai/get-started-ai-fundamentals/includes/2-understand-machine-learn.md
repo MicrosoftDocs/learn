@@ -27,4 +27,5 @@ Approaches to AI have advanced to complete tasks of much greater complexity. **D
 Microsoft Azure provides the **Azure Machine Learning** service - a cloud-based platform for creating, managing, and publishing machine learning models. **Azure Machine Learning Studio** offers multiple authoring experiences depending on the type of project such as:
 - **Automated machine learning**: this feature enables non-experts to quickly create an effective machine learning model from data.
 - **Azure Machine Learning designer**: a graphical interface enabling no-code development of machine learning solutions.
-- **Data and compute management**: cloud-based data storage and compute resources that professional data scientists can use to run data experiment code at scale.
+- **Data metric visualization**: analyze and optimize your experiments with visualization.
+- **Notebooks**: write and run your own code in managed Jupyter Notebook servers that are directly integrated in the studio.

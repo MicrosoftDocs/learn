@@ -4,7 +4,6 @@ Generative AI describes a category of capabilities within AI that create origina
 
 In Microsoft Azure, you can use the **Azure OpenAI service** to build generative AI solutions. Azure OpenAI Service is Microsoft's cloud solution for deploying, customizing, and hosting generative AI models. It brings together the best of OpenAI's cutting edge models and APIs with the security and scalability of the Azure cloud platform. 
 
-Azure OpenAI supports many models that can serve different needs. These models can be deployed and tested in **Azure OpenAI Studio**, a user interface that makes it simple to manage, develop, and customize generative AI models.
+Azure OpenAI supports many foundation model choices that can serve different needs. These models can be deployed and tested in **Azure OpenAI Studio**, a user interface that makes it simple to manage, develop, and customize generative AI models.
 
-![A screenshot video of the Azure OpenAI Studio showing how to use the playground.](../media/azure-openai-studio.mp4)
-
+:   > [!VIDEO https://learn-video.azurefd.net/vod/player?id=50315eb4-a772-406e-9fbb-f8dd3267e15b]
