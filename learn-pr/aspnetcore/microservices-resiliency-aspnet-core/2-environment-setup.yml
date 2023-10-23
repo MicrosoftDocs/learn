@@ -7,8 +7,7 @@ metadata:
   ms.author: scaddie
   ms.manager: markl
   ms.date: 05/09/2023
-  ms.prod: aspnet-core
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 title: Exercise - Set up the environment
 durationInMinutes: 5
 content: |
