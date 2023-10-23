@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-sap-azure
 metadata:
   title: Deploy SAP on Azure
   description: Deploy SAP on Azure
-  ms.date: 10/09/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -26,5 +26,6 @@ subjects:
 modules:
 - learn.wwl.deploy-single-instance-implementations-2-tier-3-tier
 - learn.wwl.implement-ha-sap-netweaver-anydb
+- learn.wwl.explore-azure-center-sap-solutions
 trophy:
   uid: learn.wwl.deploy-sap-azure.trophy
