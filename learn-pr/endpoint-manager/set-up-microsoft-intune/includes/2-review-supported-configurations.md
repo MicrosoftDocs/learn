@@ -1,4 +1,4 @@
-Before you begin setting up Microsoft Intune, review the device platforms and operating systems that Intune supports. You can learn which web browsers are supported when you access Intune by using Microsoft Intune admin center. Also, you should be familiar with the network bandwidth requirements to perform installations and updates using Intune.
+Before you begin setting up Microsoft Intune, review the device platforms and operating systems that Intune supports. Learn which web browsers are supported when you access Intune by using Microsoft Intune admin center. Also, you should be familiar with the network bandwidth requirements to perform installations and updates using Intune.
 
 ## Intune supported operating systems
 

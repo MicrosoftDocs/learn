@@ -10,7 +10,7 @@ You can add the following types of groups in Intune:
 Use the following steps to create a new group:
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Select **Groups** > **New group**:
+1. Select **Groups** > **New group**.
 
    :::image type="content" source="../media/sign-up-for-intune-09.png" alt-text="Screenshot of Endpoint Manager with new group selected." lightbox="../media/sign-up-for-intune-09.png":::
 
@@ -22,7 +22,7 @@ Use the following steps to create a new group:
    > [!TIP]
    > The users and groups created can also be seen in the [Microsoft 365 admin center](https://admin.microsoft.com), [Microsoft Entra admin center](https://entra.microsoft.com), and [Microsoft Intune in the Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431). In your organization tenant, you can create and manage groups in all these areas.
    >
-   > If your primary role is device management, we recommend you use the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+   > If your primary role is device management, we recommend that you use the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 1. Enter a **Group name** and **Group description** for the new group.
 1. Select the **Membership type**. Your options include the following choices:

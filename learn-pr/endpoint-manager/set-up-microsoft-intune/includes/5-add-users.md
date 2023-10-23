@@ -28,14 +28,16 @@ The following steps allow you to add individual users to Intune:
 
 ## Add multiple Intune users at the same time
 
-You can add Intune users in bulk by uploading a *csv* file containing the full list of users. The following steps allow you to add multiple users to Intune:
+You can add Intune users in bulk by uploading a *csv* file that contains the full list of users. The following steps allow you to add multiple users to Intune:
 
 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Users** > **All users** > **Bulk operations** > **Bulk create**. The **Bulk create user** pane is displayed.
-1. Download, edit, and upload a *csv* template containing a list of users that you want to add to Intune.
+1. Download, edit, and upload a *csv* template that contains a list of users that you want to add to Intune.
 
 The *csv* file is a comma-separated value list that can be edited in Notepad or Excel. For more information about using a *csv* file to add Intune users, see [Bulk create users in Microsoft Entra ID](/azure/active-directory/enterprise-users/users-bulk-add?azure-portal=true).
 
 > [!NOTE]
-> If you're using [Microsoft Endpoint Configuration Manager](/training/modules/intro-to-endpoint-manager/4-endpoint-configuration-manager?azure-portal=true) for your on-premises device management, you can configure directory synchronization to import user accounts from your on-premises Active Directory to Microsoft Entra ID. Having your on-premises Active Directory service connected with all of your Microsoft Entra ID-based services makes managing user identity much simpler. You can use the [Microsoft Entra Connect wizard](/azure/active-directory/hybrid/install) to connect your on-premises identity infrastructure to the cloud.
+> If you're using [Microsoft Endpoint Configuration Manager](/training/modules/intro-to-endpoint-manager/4-endpoint-configuration-manager?azure-portal=true) for your on-premises device management, you can configure directory synchronization to import user accounts from your on-premises Active Directory to Microsoft Entra ID.
+>
+> Having your on-premises Active Directory service connected with all of your Microsoft Entra ID-based services makes managing user identity much simpler. You can use the [Microsoft Entra Connect wizard](/azure/active-directory/hybrid/install) to connect your on-premises identity infrastructure to the cloud.
 
 You can also add users manually using the Microsoft 365 admin center. For more information, see [Add users and grant administrative permission to Intune](/mem/intune/fundamentals/users-add#add-intune-users-in-the-microsoft-365-admin-center?azure-portal=true) and [Add users and assign licenses at the same time](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?azure-portal=true).
