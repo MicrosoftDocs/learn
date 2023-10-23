@@ -8,14 +8,8 @@ Some potential uses for computer vision include:
 - **Text Extraction**: Analyze images and PDF documents that contain text and extract the text into a structured format.
 - **Spatial Analysis**: Identify people or objects, such as cars, in a space and map their movement within that space.
 
-To an AI application, an image is just an array of pixel values. These numeric values can be used as *features* to train machine learning models that make predictions about the image and its contents.
+To an AI application, an image is just an array of pixel values. These numeric values can be used as *features* to train deep learning models that make predictions about the image and its contents.
 
 ![an example of the pixel values that represent an image](../media/computer-vision-pixels.png)
 
-Training machine learning models from scratch can be very time intensive and require a large amount of data. Microsoft's Azure AI Vision service gives you access to pre-trained computer vision capabilities.  
-
-## Learning objectives 
-In this module you will: 
-- Identify image analysis tasks that can be performed with the Azure AI Vision service.
-- Provision a Computer Vision resource.
-- Use a Computer Vision resource to analyze an image.
+Next we will explore how computer vision models work.  
