@@ -61,7 +61,7 @@ The resource creation experience on the portal is a wizard that walks you throug
 
     | Setting | Value  |
     |---------|---------|
-    | DDoS Protection Standard | **Disable**  |
+    | Azure DDoS Network Protection | **Disable**  |
     | Firewall               | **Disable**  |
 
 1. Select **Review + create**. After validation passes, to start provisioning the virtual network, select **Create**.

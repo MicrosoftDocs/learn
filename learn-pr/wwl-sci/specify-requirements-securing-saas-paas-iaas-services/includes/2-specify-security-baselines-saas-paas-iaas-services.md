@@ -72,7 +72,7 @@ Web applications are increasingly targets of malicious attacks that exploit comm
 
 ### DDoS protection
 
-[Azure DDoS Protection Standard](https://learn.microsoft.com/azure/ddos-protection/ddos-protection-overview), combined with application-design best practices, provides enhanced DDoS mitigation features to provide more defense against DDoS attacks. You should enable [Azure DDOS Protection Standard](https://learn.microsoft.com/azure/ddos-protection/ddos-protection-overview) on any perimeter virtual network.
+[Azure DDoS Protection](https://learn.microsoft.com/azure/ddos-protection/ddos-protection-overview), combined with application-design best practices, provides enhanced DDoS mitigation features to provide more defense against DDoS attacks. You should enable [Azure DDOS Protection](https://learn.microsoft.com/azure/ddos-protection/ddos-protection-overview) on any perimeter virtual network.
 
 ### Monitor the performance of your applications
 
