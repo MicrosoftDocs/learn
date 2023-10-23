@@ -8,8 +8,7 @@ metadata:
   ms.date: 10/14/2022
   author: Dickson-Mwendia
   ms.author: dmwendia
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom:
     - devx-track-python
 durationInMinutes: 3

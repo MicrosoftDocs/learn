@@ -8,8 +8,7 @@ metadata:
   ms.date: 10/16/2023
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-create-configure-front-door.md)]

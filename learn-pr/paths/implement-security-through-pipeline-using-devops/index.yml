@@ -19,7 +19,7 @@ prerequisites: |
   - Basic knowledge of security concepts like identities and permissions.
   - Experience using the Azure portal to create resources like Azure Key Vault and set permissions.
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
+hidden: false
 levels:
   - intermediate
 roles:
