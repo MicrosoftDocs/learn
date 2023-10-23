@@ -42,7 +42,7 @@ Now, we'll add the **Sentiment** action to our workflow using the Azure portal.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), return to the workflow designer. On the logic app resource menu, under **Development Tools**, select **Logic app designer**.
 
-1. Under the Twitter trigger, select **New step**.
+1. Under the X trigger, select **New step**.
 
 1. In the **Choose an operation** search box, enter **Cognitive Services**.
 
@@ -61,14 +61,14 @@ Now, we'll add the **Sentiment** action to our workflow using the Azure portal.
    | **Account Key** | Yes | <*your-previously-saved-API-key*> | The key to use for accessing your Azure AI services account |
    | **Site URL** | No | <*your-saved-endpoint-address*> | The URL address for your Azure AI services account endpoint |
    |||||
-   
+
 1. When you're done, select **Create**.
 
    The **Sentiment** action and properties now appear.
 
 ## Set up the Sentiment action
 
-Next, we'll set up the **Sentiment** action's properties to pass in the tweet text from the Twitter trigger.
+Next, we'll set up the **Sentiment** action's properties to pass in the tweet text from the X trigger.
 
 1. In the **Sentiment** action, select the **documents-id** field. Provide a unique ID to assign your document.
 

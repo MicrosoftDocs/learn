@@ -1,6 +1,6 @@
-Implementing any business process is difficult because you need to make diverse services work together. Think about everything your company uses to store and process data: Salesforce, Office 365, Oracle, Twitter, YouTube, Dropbox, Google services, Azure AI services, and so on. How do you integrate all these products?
+Implementing any business process is difficult because you need to make diverse services work together. Think about everything your company uses to store and process data: Salesforce, Office 365, Oracle, X, YouTube, Dropbox, Google services, Azure AI services, and so on. How do you integrate all these products?
 
-Azure Logic Apps gives you hundreds of pre-built connectors that work with various kinds of apps, data, services, and systems plus other components to organize and integrate everything into a workflow. For example, in this athletic shoe company scenario, we want to monitor social media reaction to our new basketball shoe product. We'll build a logic app workflow to integrate Twitter, Azure AI services, SQL Server, and Outlook email.
+Azure Logic Apps gives you hundreds of pre-built connectors that work with various kinds of apps, data, services, and systems plus other components to organize and integrate everything into a workflow. For example, in this athletic shoe company scenario, we want to monitor social media reaction to our new basketball shoe product. We'll build a logic app workflow to integrate X, Azure AI services, SQL Server, and Outlook email.
 
 In this unit, we'll plan the sequence of steps needed to implement a business process. Then we'll map those steps to the components available in Azure Logic Apps. Finally, we'll assemble these pieces into a workflow using the designer in Azure Logic Apps. The following diagram shows an overview of the app development process.
 
@@ -39,19 +39,19 @@ To decide which pre-built component to implement, we need to be clear about comp
 
 - *Control actions* are special built-in actions that let you add decisions and loops to your workflow. Our example uses a control action to branch based on the sentiment score.
 
-A *connector* is a group of related triggers and actions. Conceptually, you can think of a connector as a component that lets you access a service or system. For example, the Twitter connector lets you send and receive tweets, while the Microsoft 365 Outlook connector allows you to manage your email, calendar, and contacts. The following diagram shows the Twitter connector and its operations divided into the two categories.
+A *connector* is a group of related triggers and actions. Conceptually, you can think of a connector as a component that lets you access a service or system. For example, the X connector lets you send and receive tweets, while the Microsoft 365 Outlook connector allows you to manage your email, calendar, and contacts. The following diagram shows the X connector and its operations divided into the two categories.
 
-:::image type="content" source="../media/twitter-connector-details.png" alt-text="Diagram showing the triggers and actions available in the Twitter connector." border="false":::
+:::image type="content" source="../media/twitter-connector-details.png" alt-text="Diagram showing the triggers and actions available in the X connector." border="false":::
 
 Now, you need to map each task in your flowchart to the triggers and actions available in Azure Logic Apps. The following diagram shows the connectors we'd use in the social media app with the relevant triggers and actions highlighted.
 
-:::image type="content" source="../media/social-media-design-process.png" alt-text="Diagram showing the operations available in the connectors used by the social media monitoring app. Specifically, the connectors are Twitter, Text Analytics, SQL Server, and Office 365 Outlook along with a graphical representation for each control action. The trigger and actions used in the social media monitoring app are highlighted." border="false":::
+:::image type="content" source="../media/social-media-design-process.png" alt-text="Diagram showing the operations available in the connectors used by the social media monitoring app. Specifically, the connectors are X, Text Analytics, SQL Server, and Office 365 Outlook along with a graphical representation for each control action. The trigger and actions used in the social media monitoring app are highlighted." border="false":::
 
 ## Define your workflow with the designer
 
 The designer in Azure Logic Apps is a graphical tool for creating your workflows. You can pick from a gallery of connectors that contain the triggers and actions that you can use in your workflow. You'll use designer to arrange the trigger, actions, and control actions. The following screenshot shows the designer with the completed workflow.
 
-:::image type="content" source="../media/social-media-app-designer-view.png" alt-text="Screenshot showing the workflow designer with the completed social media monitoring app. The workflow starts with the Twitter trigger, which is followed by three actions: detect sentiment, insert row, and send email. A control action determines whether the insert row or send email action executes based on the score of the **Detect sentiment** action." border="false":::
+:::image type="content" source="../media/social-media-app-designer-view.png" alt-text="Screenshot showing the workflow designer with the completed social media monitoring app. The workflow starts with the X trigger, which is followed by three actions: detect sentiment, insert row, and send email. A control action determines whether the insert row or send email action executes based on the score of the **Detect sentiment** action." border="false":::
 
 After you save your workflow, your logic app is automatically published live and runs whenever the trigger activates.
 
