@@ -15,7 +15,7 @@ Azure Monitor collects two types of data:
 | Data Type | Description |
 |-----|-----|
 | **Metrics** | Numerical values that describe some aspect of a component at a point in time. For example, an Average Server Response Time metric measures how long a component has taken to respond to users on average over the last few minutes. You can use the **Metrics Explorer** to show how these metrics vary over time. |
-| **Logs** | Records of the behavior of a component that may contain telemetries such as events and traces. In the Azure portal, you can use the **Log Analytics** page to drill into this data and find individual events that interest you. |
+| **Logs** | Records of the behavior of a component that might contain telemetries such as events and traces. In the Azure portal, you can use the **Log Analytics** page to drill into this data and find individual events that interest you. |
 
 By default, you can access 93 days of data in Azure Monitor. If you need to retain data for a longer period, you can archive it to an Azure Storage account.
 
@@ -46,7 +46,7 @@ Old storage metrics still work, but they're deprecated, and support for them is 
 
 For new storage metrics, Azure Storage sends the data to the Azure Monitor backend in order to unify the metrics from Azure Storage with the metrics of other Azure services. You get the same monitoring experience regardless of the data source in Azure Monitor, and you can integrate metrics from different sources into the same displays.
 
-This module discusses new Azure Storage metrics, but bear in mind: when you read about storage metrics, both old and new metrics exist. (Some third-party articles may not be entirely clear about which metrics they discuss.)
+This module discusses new Azure Storage metrics, but bear in mind: when you read about storage metrics, both old and new metrics exist. (Some third-party articles might not be entirely clear about which metrics they discuss.)
 
 ## How to use curl to make queries against the REST API
 
