@@ -1,6 +1,6 @@
 In your video analysis company, you use Azure Blob Storage for storing daily rushes. Performance is a key consideration, and you want to ensure your administrators can see how the system behaves and whether it responds optimally to users.
 
-To do that, you must understand how your Storage Account sends information to Azure Monitor and how to access that information.
+To do that, you must understand how your storage account sends information to Azure Monitor and how to access that information.
 
 ## Overview of Azure Monitor
 
@@ -32,11 +32,11 @@ The optional exercise in the next unit shows you how to use the **curl** command
 
 ## Azure Monitor and Azure Storage
 
-When you create a Storage Account in Azure, it's automatically configured to send storage metrics to Azure Monitor for later display and analysis.
+When you create a storage account in Azure, it's automatically configured to send storage metrics to Azure Monitor for later display and analysis.
 
 ## Storage account metrics and classic storage metrics
 
-Originally, Azure Storage collected metrics and stored them in **$Metric** tables within the same storage account. These metrics are known as old metrics or classic metrics, and they included capacity measurements for blob storage, and transaction measurements for blob, table, file, and queue storage.
+Originally, Azure Storage collected metrics and stored them in **$Metric** tables within the same storage account. These metrics are known as old metrics or classic metrics, and they included capacity measurements for Blob Storage, and transaction measurements for blob, table, file, and queue storage.
 
 In the Azure portal, classic storage metrics are shown on pages with **(classic)** appended to the title:
 
