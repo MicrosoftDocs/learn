@@ -68,6 +68,6 @@ If you want to learn by doing, Azure Quantum provides the *Quantum Katas*, a ser
 
 You can also learn from experts and enthusiasts through blogs, articles and videos. And you can try out some Q# code samples in the online code editor.
 
-All these tools are free of charge.
-
 :::image type="content" source="../media/learn-with-azure-quantum.png" alt-text="Art diagram showing that Azure Quantum offers tutorials, samples, AI.":::
+
+All these tools are free of charge.

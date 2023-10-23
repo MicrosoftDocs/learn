@@ -3,12 +3,12 @@ uid: learn.quantum.intro-to-azure-quantum.what-is-qsharp
 title: What is Q#?
 metadata:
   title: What is Q#?
-  description: 
+  description: Learn the characteristics of Q# and why you need a quantum programming language.
   ms.date: 10/20/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
   ms.topic: interactive-tutorial
   ms.prod: learning-quantum
-durationInMinutes: 1
+durationInMinutes: 7
 content: |
-  [!include[](includes/.md)]
+  [!include[](includes/4-what-is-qsharp.md)]
