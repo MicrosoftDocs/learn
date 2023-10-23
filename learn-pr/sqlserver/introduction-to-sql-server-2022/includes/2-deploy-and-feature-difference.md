@@ -63,4 +63,4 @@ The following features have been removed from SQL Server 2022 that were availabl
 
 ### New deployment experiences in SQL Server 2022
 
-In SQL Server 2022, the Azure extension for SQL Server configuration is part of the SQL Server 2022 setup experience. The Azure extension for SQL Server can be used to configure SQL Server 2022 as an Azure Arc-enabled SQL Server. There's no subscription charge to set up an Azure Arc-enabled SQL Server. You only incur subscriptionss charges when you use specific Azure services such as Microsoft Entra authentication, Microsoft Purview, or Microsoft Defender for SQL.
+In SQL Server 2022, the Azure extension for SQL Server configuration is part of the SQL Server 2022 setup experience. The Azure extension for SQL Server can be used to configure SQL Server 2022 as an Azure Arc-enabled SQL Server. There's no subscription charge to set up an Azure Arc-enabled SQL Server. You only incur subscription charges when you use specific Azure services such as Microsoft Entra authentication, Microsoft Purview, or Microsoft Defender for SQL.
