@@ -1,7 +1,7 @@
-In this exercise, we'll create our social media monitoring logic app using the Azure portal. We'll add a X trigger using the workflow designer. The following diagram shows a conceptual view for the app and highlights the part that we'll work on.
+In this exercise, we'll create our social media monitoring logic app using the Azure portal. We'll add an X trigger using the workflow designer. The following diagram shows a conceptual view for the app and highlights the part that we'll work on.
 
 :::image type="complex" source="../media/exercise-add-trigger.png" alt-text="Diagram shows triggers and actions in the social media monitoring logic app." lightbox="../media/exercise-add-trigger.png" border="false":::
-The first step is a X trigger named "When a new tweet is posted. This trigger is highlighted to show the completed part in this exercise.
+The first step is an X trigger named "When a new tweet is posted. This trigger is highlighted to show the completed part in this exercise.
 :::image-end:::
 
 ## Create the logic app resource
