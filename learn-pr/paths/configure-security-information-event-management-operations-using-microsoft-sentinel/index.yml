@@ -19,7 +19,7 @@ summary: |
   > You need to have your own Azure subscription.  
   > [!INCLUDE [](../../includes/azure-subscription-prerequisite.md)]   
 iconUrl: /training/achievements/configure-your-azure-sentinel-environment.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:
