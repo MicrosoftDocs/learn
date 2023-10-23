@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.intro-to-azure-quantum.what-is-qsharp
+title: What is Q#?
+metadata:
+  title: What is Q#?
+  description: 
+  ms.date: 10/20/2023
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-quantum
+durationInMinutes: 1
+content: |
+  [!include[](includes/.md)]
