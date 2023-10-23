@@ -15,7 +15,7 @@ Lastly, you learned how to apply an action group to an alert to send notificatio
 
 For more info about Azure Monitor and each of the alert types, see:
 
-- [Azure Monitor](/azure/azure-monitor/platform/alerts-overview)
+- [What are Azure Monitor alerts?](/azure/azure-monitor/alerts/alerts-overview)
 - [Metric alerts](/azure/azure-monitor/alerts/alerts-types#metric-alerts)
 - [Log alerts](/azure/azure-monitor/alerts/alerts-types#log-alerts)
 - [Activity log alerts](/azure/azure-monitor/alerts/alerts-types#activity-log-alerts)

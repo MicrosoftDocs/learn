@@ -17,7 +17,7 @@ Intermediate
 
 ## Prerequisites
 
-- An Azure account. Learn how to create a free account in [Create an Azure account](/training/modules/create-an-azure-account).
+- An Azure account. For more information, see [Create Azure free account](https://azure.microsoft.com/free/).
 - [Python 3+](https://www.python.org/downloads/) installed on your computer.
 - An Azure Active Directory (Azure AD) tenant that you manage as a global administrator, cloud app administrator, or app administrator.
 

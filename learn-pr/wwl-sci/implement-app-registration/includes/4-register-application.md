@@ -3,8 +3,8 @@
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) using a Global Administrator account.
-2.  Open the portal menu and then select **Azure Active Directory**.
-3.  On the **Azure Active Directory** screen, under **Manage**, select **App registrations.**
+2.  Open the portal menu and then select **Microsoft Entra ID**.
+3.  On the **Microsoft Entra ID** screen, under **Manage**, select **App registrations.**
 4.  On the **App registrations** page, on the menu, select **+ New registration**.
 5.  On the **register an application** dialog, register an app named **Demo app** using the default values. You don't need to enter the redirect URI.
     
@@ -83,7 +83,7 @@ First, follow these steps to create an example scope named Employees.Read.All:
 
 1.  Sign in to the Azure portal.
 2.  If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant containing your client app's registration.
-3.  Select **Azure Active Directory**, then **App registrations**, and then select your API's app registration.
+3.  Select **Microsoft Entra ID**, then **App registrations**, and then select your API's app registration.
 4.  Select **Expose an API**, then **Add a scope**.
     
     :::image type="content" source="../media/portal-02-expose-api-5724141a.png" alt-text="Screenshot of an app registration's Expose an API pane in the Azure portal.":::
@@ -145,6 +145,6 @@ You can expose additional scopes later as necessary. Consider that your web API 
 ### What is going on behind the scenes
 
  -  The app registration is created in the home tenant
- -  The app is instantiated with a security principal in Azure AD
+ -  The app is instantiated with a security principal in Microsoft Entra ID
  -  The security principal is granted consent by either the first user or admin, based on the setup of the exposed API
  -  The security principal is granted the security token as the user accesses the application and uses the API

@@ -23,24 +23,57 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 1. Run the `az login` command to sign-in if you haven't already.
 1. When you create a new Azure resource, you can create a new resource group or use an existing one. This command shows you how to create a new resource group. Use the name **HikingConversations-RG** but you can substitute the name of your choice, or use an existing group's name.
 
+    ::: zone pivot="cli"
+
     ```azurecli
     az group create \
-    --name HikingConversations-RG
+    --name HikingConversations-RG \
     --location eastus
     ```
 
+    ::: zone-end
+
+    ::: zone pivot="powershell"
+
+    ```powershell
+    az group create `
+    --name HikingConversations-RG `
+    --location eastus
+    ```
+
+    ::: zone-end
+
 1. Run the following command to create an OpenAI resource in the **HikingConversations-RG** resource group. Name the OpenAI resource **HikingConversationsAI**.
 
+    ::: zone pivot="cli"
+
     ```azurecli
-    az cognitiveserices account create \
-    -n HikingConversationsAI
-    -g HikingConversations-RG
-    -l eastus
+    az cognitiveservices account create \
+    -n HikingConversationsAI \
+    -g HikingConversations-RG \
+    -l eastus \
     --kind OpenAI \
     --sku s0
     ```
 
+    ::: zone-end
+
+    ::: zone pivot="powershell"
+
+    ```powershell
+    az cognitiveservices account create `
+    -n HikingConversationsAI `
+    -g HikingConversations-RG `
+    -l eastus `
+    --kind OpenAI `
+    --sku s0
+    ```
+
+    ::: zone-end
+
 1. Next we want to deploy the GPT-35-Turble model to the OpenAI resource we created. Call the model deployment **HikingRecommendationTurbo**. Note we're using **HikingConversations-RG** as the resource group name, **HikingConversationsAI** as the OpenAI resource name, if you used different values make sure you substitute those values.
+
+    ::: zone pivot="cli"
 
     ```azurecli
     az cognitiveservices account deployment create \
@@ -48,23 +81,57 @@ Creating the resource and deploying the model is a multi-step process. Use the A
     -n HikingConversationsAI \
     --deployment-name HikingRecommendationTurbo \
     --model-name gpt-35-turbo \
-    --model-version "0301"
+    --model-version "0301" \
     --model-format OpenAI \
     --scale-settings-scale-type "Standard"
     ```
+
+    ::: zone-end
+
+    ::: zone pivot="powershell"
+
+    ```powershell
+    az cognitiveservices account deployment create `
+    -g HikingConversations-RG `
+    -n HikingConversationsAI `
+    --deployment-name HikingRecommendationTurbo `
+    --model-name gpt-35-turbo `
+    --model-version "0301" `
+    --model-format OpenAI `
+    --scale-settings-scale-type "Standard"
+    ```
+
+    ::: zone-end
 
 1. Once the resource and model have been created, we need to get the base URL and access keys so the .NET SDK can access the Azure OpenAI resource. Use these commands to get the endpoint and primary API keys and make note of them for later use:
 
     **The endpoint**
 
+    ::: zone pivot="cli"
+
     ```azurecli
     az cognitiveservices account show \
     -g HikingConversations-RG \
     -n HikingConversationsAI \
-    --query ".properties.endpoint"
+    --query "properties.endpoint"
     ```
 
+    ::: zone-end
+
+    ::: zone pivot="powershell"
+
+    ```powershell
+    az cognitiveservices account show `
+    -g HikingConversations-RG `
+    -n HikingConversationsAI `
+    --query "properties.endpoint"
+    ```
+
+    ::: zone-end
+
     **The primary API key**
+
+    ::: zone pivot="cli"
 
     ```azurecli
     az cognitiveservices account keys list \
@@ -72,6 +139,19 @@ Creating the resource and deploying the model is a multi-step process. Use the A
     -n HikingConversationsAI \
     --query "key1"
     ```
+
+    ::: zone-end
+
+    ::: zone pivot="powershell"
+
+    ```powershell
+    az cognitiveservices account keys list `
+    -g HikingConversations-RG `
+    -n HikingConversationsAI `
+    --query "key1"
+    ```
+
+    ::: zone-end
 
 ## Create the console application and add the OpenAI SDK
 

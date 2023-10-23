@@ -2,13 +2,13 @@
 uid: learn.wwl.implement-app-registration
 metadata:
   title: Implement app registration
-  description: "Line of business developed in-house need registration in Azure AD and assigned to users for a secure Azure solution. Explore how to implement app registration."
+  description: "Line of business developed in-house need registration in Microsoft Entra ID and assigned to users for a secure Azure solution. Explore how to implement app registration."
   ms.date: 06/20/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
 title: Implement app registration
-summary: Line of business developed in-house need registration in Azure AD and assigned to users for a secure Azure solution. Explore how to implement app registration.
+summary: Line of business developed in-house need registration in Microsoft Entra ID and assigned to users for a secure Azure solution. Explore how to implement app registration.
 abstract: |
   By the end of this module you will be able to:
   - Plan your line of business application registration strategy
@@ -27,7 +27,7 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-api-apps
+- azure-app-service
 - defender-for-cloud-apps
 - entra
 - entra-workload-identities

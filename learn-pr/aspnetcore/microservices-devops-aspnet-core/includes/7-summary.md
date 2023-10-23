@@ -12,7 +12,7 @@ In this module, you:
 
 ## Remove Azure service principal
 
-Earlier, you created an Azure Active Directory (Azure AD) service principal, which allows GitHub to authenticate to each Azure resource. To remove the service principal, run the following script:
+Earlier, you created a Microsoft Entra service principal, which allows GitHub to authenticate to each Azure resource. To remove the service principal, run the following script:
 
 ```bash
 ./cleanup-service-principal.sh
@@ -20,7 +20,7 @@ Earlier, you created an Azure Active Directory (Azure AD) service principal, whi
 
 The *cleanup-service-principal.sh* script:
 
-1. Uses the following Azure CLI command to return a list of service principal identifiers from Azure AD:
+1. Uses the following Azure CLI command to return a list of service principal identifiers from Microsoft Entra ID:
 
    ```azurecli
    az ad sp list --show-mine --query "[?contains(displayName,'eshop-learn-sp')].appId" --output tsv

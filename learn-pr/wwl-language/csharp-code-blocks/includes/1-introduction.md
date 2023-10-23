@@ -12,8 +12,6 @@ In this module, you will:
 
 - Understand the impact of declaring and initializing variables inside and outside of code blocks.
 - Improve the readability code blocks in `if` statements.
-- Identify namespaces, classes, and methods in your code.
-- Understand the use of the `using` statement to instruct the compiler where to look for classes referenced in your code.
 
 ## Prerequisites:
 

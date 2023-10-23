@@ -4,10 +4,12 @@ title: Exercise - Remove code blocks from if statements
 metadata:
   title: Exercise - Remove code blocks from if statements
   description: "Exercise - Remove code blocks from if statements"
-  ms.date: 08/17/2023
+  ms.date: 10/09/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/3-exercise-remove-if-statements.md)]

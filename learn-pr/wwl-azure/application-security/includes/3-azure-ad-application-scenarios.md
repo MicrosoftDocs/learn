@@ -3,7 +3,7 @@ Applications can sign in users themselves or delegate sign-in to an identity pro
 
 ## Register an application
 
-For an identity provider to know that a user has access to a particular app, both the user and the application must be registered with the identity provider. When you register your application with **Azure Active Directory (Azure AD)**, you're providing an identity configuration for your application that allows it to integrate with the Microsoft identity platform. Registering the app also allows you to:
+For an identity provider to know that a user has access to a particular app, both the user and the application must be registered with the identity provider. When you register your application with **Microsoft Entra ID**, you're providing an identity configuration for your application that allows it to integrate with the Microsoft identity platform. Registering the app also allows you to:
 
  -  Customize the branding of your application in the sign-in dialog box. This branding is important because signing in is the first experience a user will have with your app.
  -  Decide if you want to allow users to sign in only if they belong to your organization. This architecture is known as a single-tenant application. Or, you can allow users to sign in by using any work or school account, which is known as a multi-tenant application. You can also allow personal Microsoft accounts or a social account from LinkedIn, Google, and so on.
@@ -22,7 +22,7 @@ The Microsoft identity platform:
 
  -  Holds all the data required to support authentication at runtime.
  -  Holds all the data for deciding what resources an app might need to access, and under what circumstances a given request should be fulfilled.
- -  Provides infrastructure for implementing app provisioning within the app developer's tenant, and to any other Azure AD tenant.
+ -  Provides infrastructure for implementing app provisioning within the app developer's tenant, and to any other Microsoft Entra tenant.
  -  Handles user consent during token request time and facilitates the dynamic provisioning of apps across tenants.
 
 Consent is the process of a resource owner granting authorization for a client application to access protected resources, under specific permissions, on behalf of the resource owner. The Microsoft identity platform enables:

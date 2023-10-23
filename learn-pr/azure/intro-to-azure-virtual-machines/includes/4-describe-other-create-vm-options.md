@@ -41,7 +41,7 @@ For example, from the CLI, you can create an Azure VM with the `az vm create` co
 az vm create \
     --resource-group TestResourceGroup \
     --name test-wp1-eus-vm \
-    --image Ubuntu \
+    --image Ubuntu2204 \
     --admin-username azureuser \
     --generate-ssh-keys
 ```
@@ -66,7 +66,7 @@ New-AzVm `
     -ResourceGroupName "TestResourceGroup" `
     -Name "test-wp1-eus-vm" `
     -Location "East US" `
-    -Image Debian `
+    -Image Debian11 `
     -VirtualNetworkName "test-wp1-eus-network" `
     -SubnetName "default" `
     -SecurityGroupName "test-wp1-eus-nsg" `
@@ -173,5 +173,6 @@ To navigate to the Auto-shutdown feature in a VM in the Azure portal, go to the 
 
 ![Screenshot showing Auto-shutdown option for a VM.](../media/4-auto-shutdown-option.png)
 
+For more information, see [Auto-shutdown](/azure/virtual-machines/auto-shutdown-vm).
 
 As you can see, Azure provides various tools to create and administer resources so that you can integrate management operations into a process _that works for you_. Let's examine some of the other Azure services to make sure your infrastructure resources are running smoothly.

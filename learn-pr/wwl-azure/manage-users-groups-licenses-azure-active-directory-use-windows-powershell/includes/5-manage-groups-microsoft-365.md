@@ -63,7 +63,7 @@ Other Msol cmdlets that you can use to manage groups are listed in the following
 
 ## Synchronized groups
 
-Groups that you create in Microsoft 365 with Windows PowerShell are cloud groups. Many organizations use Azure AD Connect to synchronize users and groups from on-premises AD DS to Microsoft 365. These users and groups are created by Azure AD Connect, and you can't them delete directly in Microsoft 365. Instead, you need to delete the object in AD DS, and the deletion is synchronized to Microsoft 365.
+Groups that you create in Microsoft 365 with Windows PowerShell are cloud groups. Many organizations use Microsoft Entra Connect to synchronize users and groups from on-premises AD DS to Microsoft 365. These users and groups are created by Microsoft Entra Connect, and you can't them delete directly in Microsoft 365. Instead, you need to delete the object in AD DS, and the deletion is synchronized to Microsoft 365.
 
 When objects are synchronized from AD DS to Microsoft 365, the value of some attributes in AD DS is authoritative. This means you can't modify the attribute value in Microsoft 365. Instead, you need to modify the value in AD DS, and the modified value synchronizes to Microsoft 365.  If you attempt to modify these attributes in Microsoft 365, an error is generated.
 

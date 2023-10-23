@@ -18,7 +18,7 @@ In this task, you'll update your code to apply the finishing touches to the repo
 
     ```
 
-    Notice that you're including `\n` at the end of the text. In the "Perform basic string formatting with C#" module, you learned that the `\n` escape character sequence will cause a new line to be created. The location of the escape sequence is important. In this case, the `\n` is at the end of the information that you want to write to the console, so the new line will be added after "Student Grade" is displayed. 
+    Notice that you're including `\n` at the end of the text. In the "Perform basic string formatting with C#" module, you learned that the `\n` escape character sequence will cause a new line to be created. The location of the escape sequence is important. In this case, the `\n` is at the end of the information that you want to write to the console, so the new line will be added after "Student Name" is displayed. 
 
 1. Create a blank code line  after the previous Console.WriteLine() statement.
 

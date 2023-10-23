@@ -46,11 +46,11 @@ T-SQL provides the following statements to support data virtualization with REST
 
 ### New native file format support
 
-SQL Server allows you to create a file format to define the structure of a file in a remote data source. You would use file formats to define the structure of a JSON file, since JSON isn't a native supported file format. SQL Server 2022 now recognizes native file formats **parquet** and **delta tables**.
+SQL Server allows you to create a file format to define the structure of a file in a remote data source. For example, you can use file formats to define the structure of a JSON file, since JSON isn't a natively supported file format. SQL Server 2022 now recognizes native file formats **parquet** and **delta tables**.
 
 - **Parquet**
 
-  Parquet is an open-source binary file format with the schema built into the file. Parquet files use a columnar storage format making them efficient for compression and retrieval. For more information and examples, see [Virtualize parquet file in a S3-compatible object storage with PolyBase](/sql/relational-databases/polybase/polybase-virtualize-parquet-file).
+  Parquet is an open-source binary file format with the schema built into the file. Parquet files use a columnar storage format that makes them efficient for compression and retrieval. For more information and examples, see [Virtualize parquet file in a S3-compatible object storage with PolyBase](/sql/relational-databases/polybase/polybase-virtualize-parquet-file).
 
 - **Delta tables**
 
