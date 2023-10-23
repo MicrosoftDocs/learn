@@ -27,7 +27,7 @@ Once you have finalized your terms of use document, use the following procedure 
     > Consent on every device will require users to register each device with Microsoft Entra ID prior to getting access.
 11. If you want to expire terms of use consents on a schedule, set **Expire consents** to **On**. When set to On, two extra schedule settings are displayed.
     
-    :::image type="content" source="../media/new-terms-of-use-create-73231536.png" alt-text="Screenshot of the Expire consents settings to set start date, frequency, and duration":::
+    :::image type="content" source="../media/new-terms-of-use-create-73231536.png" alt-text="Screenshot of the Expire consents settings to set start date, frequency, and duration.":::
     
 12. Use the **Expire starting on** and **Frequency** settings to specify the schedule for terms of use expirations. The following table shows the result for a couple of example settings:
     
@@ -92,7 +92,7 @@ The terms-of-use-screen shows a count of the users who have accepted and decline
     
 5.  In the view history pane, you see a history of all the accepts, declines, and expirations.
     
-    :::image type="content" source="../media/view-history-pane-f582e693.png" alt-text="Screenshot of the View History pane lists the history accepts, declines, and expirations for a user":::
+    :::image type="content" source="../media/view-history-pane-f582e693.png" alt-text="Screenshot of the View History pane lists the history accepts, declines, and expirations for a user.":::
     
 
 ## What terms of use looks like for users
