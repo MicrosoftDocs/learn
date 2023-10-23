@@ -1,12 +1,12 @@
 Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more and more popular. Security defaults provide secure default settings that Microsoft manages on behalf of organizations to keep customers safe until organizations are ready to manage their own identity security story. Security defaults provide preconfigured security settings, such as:
 
- -  Requiring all users to register for Azure Active Directory Multifactor Authentication.
- -  Requiring administrators to perform multi-factor authentication.
+ -  Requiring all users to register for multifactor authentication.
+ -  Requiring administrators to perform multifactor authentication.
  -  Blocking legacy authentication protocols.
- -  Requiring users to perform multi-factor authentication when necessary.
+ -  Requiring users to perform multifactor authentication when necessary.
  -  Protecting privileged activities like access to the Azure portal.
     
-    :::image type="content" source="../media/security-defaults-azure-active-directory-portal-1d0b1406.png" alt-text="Screenshot of the Azure portal with the toggle to enable security defaults.":::
+    :::image type="content" source="../media/security-defaults-azure-active-directory-portal-1d0b1406.png" alt-text="Screenshot of the Microsoft Entra admin center with the toggle to enable security defaults.":::
     
 
 ## Availability
@@ -18,20 +18,20 @@ Microsoft security defaults are available to everyone. The goal is to ensure tha
 | **Who should use security defaults?**                                                           | **Who shouldn't use security defaults?**                                                                                                 |
 | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | Organizations that want to increase their security posture but don't know how or where to start | Organizations currently using Conditional Access policies to bring signals together, make decisions, and enforce organizational policies |
-| Organizations utilizing the free tier of Azure Active Directory Licensing                       | Organizations with Azure Active Directory Premium licenses                                                                               |
+| Organizations utilizing the free tier of Microsoft Entra ID Licensing                           | Organizations with Microsoft Entra ID Premium licenses                                                                                   |
 |                                                                                                 | Organizations with complex security requirements that warrant using Conditional Access                                                   |
 
 ## Policies enforced
 
 ### Unified multifactor authentication registration
 
-All users in your tenant must register for multifactor authentication (MFA) in the form of the Azure Active Directory (Azure AD) Multifactor Authentication. Users have 14 days to register for multifactor authentication within Azure Active Directory (Azure AD), part of Microsoft Entra by using the Microsoft Authenticator app. After the 14 days have passed, the user won't be able to sign in until registration is completed. A user's 14-day period begins after their first successful interactive sign-in after enabling security defaults.
+All users in your tenant must register for multifactor authentication (MFA) in the form of the Multifactor Authentication. Users have 14 days to register for multifactor authentication within Microsoft Entra ID by using the Microsoft Authenticator app. After the 14 days have passed, the user won't be able to sign in until registration is completed. A user's 14-day period begins after their first successful interactive sign-in after enabling security defaults.
 
 ### Protecting administrators
 
-Users with privileged access have increased access to your environment. Due to the power these accounts have, you should treat them with special care. One common method to improve the protection of privileged accounts is to require a stronger form of account verification for sign-in. In Azure AD, you can get a stronger account verification by requiring multifactor authentication.
+Users with privileged access have increased access to your environment. Due to the power these accounts have, you should treat them with special care. One common method to improve the protection of privileged accounts is to require a stronger form of account verification for sign-in. In Microsoft Entra ID, you can get a stronger account verification by requiring multifactor authentication.
 
-After registration with Azure AD Multi-Factor Authentication is finished, the following nine Azure AD administrator roles will be required to perform additional authentication every time they sign in:
+After registration with Multifactor Authentication is finished, the following nine Microsoft Entra administrator roles will be required to perform additional authentication every time they sign in:
 
  -  Global Administrator
  -  SharePoint Administrator
@@ -49,11 +49,11 @@ We tend to think that administrator accounts are the only accounts that need ext
 
 After these attackers gain access, they can request access to privileged information on behalf of the original account holder. They can even download the entire directory to perform a phishing attack on your whole organization.
 
-One common method to improve protection for all users is to require a stronger form of account verification, such as multifactor authentication, for everyone. After users complete Azure Active Directory Multi-Factor Authentication registration, they'll be prompted for additional authentication whenever necessary. This functionality protects all applications registered with Azure AD, including SaaS applications.
+One common method to improve protection for all users is to require a stronger form of account verification, such as multifactor authentication, for everyone. After users complete Multifactor Authentication registration, they'll be prompted for additional authentication whenever necessary. This functionality protects all applications registered with Microsoft Entra ID, including SaaS applications.
 
 ### Blocking legacy authentication
 
-To give your users easy access to your cloud apps, Azure AD supports a variety of authentication protocols, including legacy authentication. *Legacy authentication* is an authentication request made by:
+To give your users easy access to your cloud apps, Microsoft Entra ID supports a variety of authentication protocols, including legacy authentication. *Legacy authentication* is an authentication request made by:
 
  -  Clients that don't use modern authentication (for example, an Office 2010 client). Modern authentication encompasses clients that implement protocols, such as OAuth 2.0, to support features like multifactor authentication and smart cards. Legacy authentication typically only supports less secure mechanisms like passwords.
  -  Client that uses mail protocols such as IMAP, SMTP, or POP3.

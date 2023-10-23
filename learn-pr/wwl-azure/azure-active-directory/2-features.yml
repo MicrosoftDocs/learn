@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-active-directory.features
-title: Explore Azure Active Directory features
+title: Explore Microsoft Entra features
 metadata:
-  title: Explore Azure Active Directory features
-  description: "Explore Azure Active Directory features"
+  title: Explore Microsoft Entra features
+  description: "Explore Microsoft Entra features"
   ms.date: 09/11/2023
   author: wwlpublish
   ms.author: serlingdavis

@@ -79,7 +79,7 @@ az webapp identity assign \
     --name <your-unique-app-name>
 ```
 
-From the resulting JSON output, copy the **principalId** value. PrincipalId is the unique ID of the app's new identity in Azure Active Directory, and you're going to use it in the next step.
+From the resulting JSON output, copy the **principalId** value. PrincipalId is the unique ID of the app's new identity in Microsoft Entra ID, and you're going to use it in the next step.
 
 ## Grant access to the vault
 

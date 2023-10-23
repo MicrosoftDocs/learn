@@ -29,7 +29,7 @@ Module 6 Demos
 
 Module 6 Labs/Exercises (~45 mins) 
 
-- Exercise 1: Configure a single-tenant Azure active directory environment 
+- Exercise 1: Configure a single-tenant Microsoft Entra environment 
 - Exercise 2: Create a single-tenant ASP.NET Core web app 
-- Exercise 3: Configure a multi-tenant Azure active directory environment 
+- Exercise 3: Configure a multi-tenant Microsoft Entra environment 
 - Exercise 4: Clean up your subscription 

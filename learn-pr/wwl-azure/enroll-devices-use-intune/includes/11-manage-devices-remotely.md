@@ -26,7 +26,7 @@ The **Overview** page is displayed by default. It shows the device name, and lis
      -  **New Remote Assistance Session**. Devices managed by Intune can be administered remotely using TeamViewer. TeamViewer is a third-party program that you purchase separately.
      -  **Locate device (Windows 10 and later, iOS, Android Enterprise dedicated).** Identifies the location (or last known location of Android dedicated devices) of a device or initiates a sound alert to assist in finding devices that support this feature.
 
-:::image type="content" source="../media/endpoint-manage-admin-center-device-overview-c304c3a0.png" alt-text="Screenshot of the Devices - Azure AD devices screen.":::
+:::image type="content" source="../media/endpoint-manage-admin-center-device-overview-c304c3a0.png" alt-text="Screenshot of the Devices - Microsoft Entra devices screen.":::
 
 
 On the device details page, you can also manage and monitor the following:

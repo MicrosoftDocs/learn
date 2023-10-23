@@ -24,9 +24,9 @@ To complete the exercise, you'll need the credentials for a different non-admini
 
 ## Step 2: Assignments
 
-1.  Select **Add Azure AD users or user groups**.
+1.  Select **Add Microsoft Entra users or user groups**.
 
-:::image type="content" source="../media/create-application-group-users-groups-2c910498.png" alt-text="Screenshot showing the assignments tab with Add Azure AD users or user groups highlighted.":::
+:::image type="content" source="../media/create-application-group-users-groups-2c910498.png" alt-text="Screenshot showing the assignments tab with Add Microsoft Entra users or user groups highlighted.":::
 
 
 2.  Select single or multiple users or you can select user groups.

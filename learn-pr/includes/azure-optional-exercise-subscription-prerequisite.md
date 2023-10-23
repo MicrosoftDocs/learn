@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> For this module, you'll need to use your own subscription to complete the optional exercises, which might incur charges. A trial subscription or a subscription that you already have access to will work to follow along.
+> To complete the optional exercises in this module, you need to use your own subscription, which might incur charges. If you want to follow along, you can use a trial subscription or a subscription that you already have access to.
