@@ -6,7 +6,7 @@ In this unit, we'll plan the sequence of steps needed to implement a business pr
 
 :::image type="content" source="../media/app-design-process.png" alt-text="Diagram showing the typical sequence of activities to create a logic app workflow. The process has five steps. First, plan your business process. Second, identify the type for each step in your process. Third, decide which component will implement each step. Fourth, use the designer to build your workflow from the components. Fifth, save your design. Your logic app workflow will now run automatically in the cloud." border="false":::
 
-The following sections describes each of these five steps in the app development process:
+The following sections describe each of these five steps in the app development process:
 
 ## Plan your business process
 
@@ -33,7 +33,7 @@ For example, in our social media monitoring scenario, a *trigger* starts the pro
 
 To decide which pre-built component to implement, we need to be clear about component types. Let's be more formal about the definitions of the component types:
 
-- A *trigger* is an event that occurs when a specific conditions are met. Triggers activate automatically when the conditions are right, for example, when a timer expires or data becomes available. Every workflow must start with a trigger. In our example, we want to trigger the workflow when a new tweet mentions our product.
+- A *trigger* is an event that occurs when specific conditions are met. Triggers activate automatically when the conditions are right, for example, when a timer expires or data becomes available. Every workflow must start with a trigger. In our example, we want to trigger the workflow when a new tweet mentions our product.
 
 - An *action* is an operation that runs one of the tasks in your business process. Actions run when a trigger activates or another action completes. Our social media monitoring app has three actions: analyze sentiment, insert database row, and send email.
 
