@@ -2,7 +2,7 @@ Computer vision capabilities are built on deep learning models, which use layers
 
 For example, an image of an apple could be described as an array of pixel numbers (features), associated with the name of what they represent (label): 
 
-![A photo of an apple against a white background with a grid on top of it where each grid block has a pixel number in it.](../media/fruit-pixel1.jpg)
+![A photo of an apple against a white background with a grid on top of it where each grid block has a pixel number in it.](../media/fruit-pixel1.png)
 
 Thus an array of numbers: 
 ```
