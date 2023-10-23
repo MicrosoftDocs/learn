@@ -92,7 +92,7 @@ Applications that you add (represented as "App (yours)" in the diagram) include:
 
 ### Notes and exceptions to service principals
 
-Not all service principals point back to an application object. When Microsoft Entra D was originally built, the services provided to applications were more limited, and the service principal was sufficient for establishing an application identity. The original service principal was closer in shape to the Windows Server Active Directory service account. For this reason, it's still possible to create service principals through different pathways, such as using PowerShell, without first creating an application object. The Microsoft Graph API requires an application object before creating a service principal.
+Not all service principals point back to an application object. When Microsoft Entra ID was originally built, the services provided to applications were more limited, and the service principal was sufficient for establishing an application identity. The original service principal was closer in shape to the Windows Server Active Directory service account. For this reason, it's still possible to create service principals through different pathways, such as using PowerShell, without first creating an application object. The Microsoft Graph API requires an application object before creating a service principal.
 
 Not all of the information described above is currently exposed programmatically. The following are only available in the UI:
 
