@@ -21,7 +21,7 @@ For more information see the link in the resources at the end of this module.
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------------- |
 | The lifetime of the OAuth 2.0 bearer token and ID token | The maximum time period before which a refresh token can be used to acquire a new access token | The refresh token sliding window type      | After time period elapses, the user is forced to reauthenticate |
 
-:::image type="content" source="../media/token-customize-timeline-4817b4d6.png" alt-text="Diamgram of the Refresh token lifetime - token is valid for a specified amount of time and the access token must be refreshed before it expires.":::
+:::image type="content" source="../media/token-customize-timeline-4817b4d6.png" alt-text="Diagram of the Refresh token lifetime - token is valid for a specified amount of time and the access token must be refreshed before it expires.":::
 
 
 ## Configure optional claims as part of your token
