@@ -1,8 +1,8 @@
-Increasing your Azure solution security by ensuring that administrative roles are protected and managed is a must. Explore how to use Privileged Identity Management (PIM) to protect your data and resources. In this module, you will learn how to create an access strategy. Then you will configure, and assign PIM roles and resources, and manage emergency-access accounts.
+Increasing your Azure solution security by ensuring that administrative roles are protected and managed is required. Explore how to use Privileged Identity Management (PIM) to protect your data and resources. In this module, you learn how to create an access strategy. Then you configure, and assign PIM roles and resources, and manage emergency-access accounts.
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you are able to:
 
  -  Define a privileged access strategy for administrative users (resources, roles, approvals, thresholds).
  -  Configure PIM for Azure Roles.
