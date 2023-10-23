@@ -24,7 +24,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of the Azure ecosystem.
   - Familiarity with programming concepts.
-iconUrl: /training/achievements/quantum/intro-to-azure-quantum.svg
+iconUrl: ../../achievements/quantum/intro-to-azure-quantum.svg
 ratingEnabled: true
 levels:
 - beginner
