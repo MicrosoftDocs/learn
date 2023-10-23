@@ -8,7 +8,6 @@ metadata:
   ms.date: 08/18/2023
   author: JnHs
   ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 content: |
   [!include[](includes/6-customize-the-dashboard.md)]
