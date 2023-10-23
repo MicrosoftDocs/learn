@@ -1,14 +1,14 @@
 Now that you've seen some of the high-level insights that Microsoft Entra Permissions Management provides, let’s get more granular with the Analytics tab. 
 
-:::image type="content" source="../media/permissions-management-analytics-tab.png" alt-text="Screenshot of the Permissions Management Analytics tab."lightbox="../media/permissions-management-analytics-tab.png":::
+:::image type="content" source="../media/analytics-tab.png" alt-text="Screenshot of the Permissions Management Analytics tab."lightbox="../media/analytics-tab.png":::
 
 The Analytics tab gives you more detailed visibility into each cloud environment by providing access into exactly which permissions each identity has and how they're being granted. 
 
 For the sake of this module, we focus on the **Users** view, but note that the information discussed here also applies to the **Group**, **Resource**, **Task**, **Access Key**, and **Serverless Function** views.  
 
-:::image type="content" source="../media/permissions-management-analytics-menu.png" alt-text="Screenshot of the Permissions Management Analytics menu."lightbox="../media/permissions-management-analytics-menu.png":::
+:::image type="content" source="../media/analytics-menu.png" alt-text="Screenshot of the Permissions Management Analytics menu."lightbox="../media/analytics-menu.png":::
 
-:::image type="content" source="../media/permissions-management-analytics-users.png" alt-text="Screenshot of the Permissions Management Analytics users view."lightbox="../media/permissions-management-analytics-users.png":::
+:::image type="content" source="../media/analytics-users.png" alt-text="Screenshot of the Permissions Management Analytics users view."lightbox="../media/analytics-users.png":::
 
 
 The initial view on the Analytics tab shows you the following information about your users: 
@@ -28,7 +28,7 @@ The initial view on the Analytics tab shows you the following information about 
 - User Groups: How many groups the user belongs to 
 - Last Activity On: The date and time of the user’s last executed permission 
 
-:::image type="content" source="../media/permissions-management-analytics-user-information.png" alt-text="Screenshot of the Permissions Management Analytics users information."lightbox="../media/permissions-management-analytics-user-information.png":::
+:::image type="content" source="../media/analytics-user-information.png" alt-text="Screenshot of the Permissions Management Analytics users information."lightbox="../media/analytics-user-information.png":::
 
 Selecting the triangular dropdown next to any user gives you a more detailed view of that user and provides the following additional information: 
 
@@ -38,7 +38,7 @@ Selecting the triangular dropdown next to any user gives you a more detailed vie
     - Source of the role assignment 
     - Type of role assignment (permanent, PIM eligible, etc.) 
 
-:::image type="content" source="../media/permissions-management-analytics-user-permissions.png" alt-text="Screenshot of the Permissions Management Analytics users permissions."lightbox="../media/permissions-management-analytics-user-permissions.png":::
+:::image type="content" source="../media/analytics-user-permissions.png" alt-text="Screenshot of the Permissions Management Analytics users permissions."lightbox="../media/analytics-user-permissions.png":::
 
 For more information on a specific user, you select the specific user’s name. Selecting a user’s name pulls up a view with comprehensive information on the user, including: 
 
@@ -48,6 +48,6 @@ For more information on a specific user, you select the specific user’s name. 
 
 More views and features are available depending on what you’re looking at. For example, if you’re viewing Access Key information, a calendar view is presented that allows you to see what days and times your access keys are being used.
 
-:::image type="content" source="../media/permissions-management-analytics-access-key-information.png" alt-text="Screenshot of the Permissions Management Analytics Access Key information."lightbox="../media/permissions-management-analytics-access-key-information.png":::
+:::image type="content" source="../media/analytics-access-key-information.png" alt-text="Screenshot of the Permissions Management Analytics Access Key information."lightbox="../media/analytics-access-key-information.png":::
 
 For more information about analytics and the data you can view, see [View analytic information with the Analytics dashboard.](https://go.microsoft.com/fwlink/?linkid=2247976)
