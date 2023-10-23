@@ -5,4 +5,4 @@ In this exercise, you'll explore the automated machine learning capability in Az
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-automl-lab?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AI-900-AIFundamentals/instructions/01a-machine-learning.html?azure-portal=true)
