@@ -2,7 +2,7 @@
 uid: learn.wwl.explore-group-enrollment-tasks
 metadata:
   title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
-  description: "Practice implementing group enrollments using X.509 certificates, code that accesses device twin properties to initialize a device, and deprovision enrollments groups or individual devices from an enrollment group."
+  description: "Practice implementing group enrollments using X.509 certificates, code that provisions using Device Provisioning Service, generates telemetry, accesses device twin properties, and deprovision enrollments groups or individual devices from an enrollment group."
   ms.date: 10/11/2023
   author: kgremban
   ms.author: kgremban
@@ -11,7 +11,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: iot-hub
 title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
-summary: Practice implementing group enrollments using X.509 certificates, code that accesses device twin properties to initialize a device, and deprovision enrollments groups or individual devices from an enrollment group.
+summary: Practice implementing group enrollments using X.509 certificates, code that provisions using Device Provisioning Service, generates telemetry, accesses device twin properties, and deprovision enrollments groups or individual devices from an enrollment group.
 
 abstract: |
   After you complete this module, you'll be able to:

@@ -1,4 +1,4 @@
-In this exercise, you deprovision the full enrollment group. This includes disenrolling the enrollment from Device Provisioning Service (DPS) and deregistering the devices from IoT Hub.
+In this exercise you deprovision the full enrollment group, including disenrolling the enrollment from Device Provisioning Service (DPS) and deregistering the devices from IoT Hub.
 
 ### Task 1: Disenroll the enrollment group from DPS
 
@@ -6,13 +6,13 @@ In this task, you disenroll your enrollment group from DPS, which disables the e
 
 1. In the Azure sandbox, either disable or delete your enrollment group.
 
-   * Disable:
+   Disable:
 
      ```azurecli
      az iot dps enrollment-group update --dps-name dps-$suffix --enrollment-id enrollgroup-sensors --provisioning-status disabled
      ``` 
 
-   * Delete:
+   Delete:
 
      ```azurecli
      az iot dps enrollment-group delete --dps-name dps-$suffix --enrollment-id enrollgroup-sensors
