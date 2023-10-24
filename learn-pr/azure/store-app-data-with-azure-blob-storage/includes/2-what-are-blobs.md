@@ -15,14 +15,14 @@ Blobs are used for data storage in many ways across all kinds of apps and archit
 
 Some apps constantly create, update, and delete blobs as part of their work. Others use a small set of blobs and rarely change them.
 
-## Storage accounts, containers, and metadata
+## Storage accounts, containers, tags, and metadata
 
 In Blob Storage, every blob lives inside a *blob container*. You can store an unlimited number of blobs in a container and an unlimited number of containers in a storage account. Containers are *flat*. They can only store blobs, not other containers.
 
-Blobs and containers support metadata in the form of name-value string pairs. Your apps can use metadata for anything, such as  human-readable description of a blob's contents to display or a string that your app uses to determine how to process the data.
+Blobs and containers support tags and metadata in the form of name-value string pairs. Your apps can use tags and metadata for anything, such as a human-readable description of a blob's contents to display or a string that your app uses to determine how to process the data.
 
 > [!TIP]
-> Blob Storage does not provide any mechanism for searching or sorting blobs by metadata. For information about using Azure Cognitive Search, see the *Further Reading* section at the end of this module.
+> Blob Storage does not provide any mechanism for searching or sorting blobs by metadata. You can search and sort blobs by using Blob index tags. For information about using Azure Cognitive Search, see the *Further Reading* section at the end of this module.
 
 ## Blob Storage API and client libraries
 

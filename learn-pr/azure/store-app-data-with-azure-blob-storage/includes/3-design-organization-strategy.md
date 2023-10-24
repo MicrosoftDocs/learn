@@ -35,6 +35,9 @@ Containers are *flat*. They don't support any kind of nesting or hierarchy. If y
 
 Some tools and client libraries use this approach to visualize and navigate Blob Storage as if it was a file system. Each folder navigation triggers a separate call to list the blobs in that folder. This feature is often called *virtual directories*.
 
+> [!NOTE]
+> If you enable the hierarchial namespace feature of the account, directories are no longer virtual. Instead, they become concrete, independent objects that you can operate on directly. A directory can exist without containing any files. This module describes only accounts that **do not** have hierarchical namespace feature enabled.
+
 ## Blob types
 
 There are three different kinds of blobs in which you can store data:
