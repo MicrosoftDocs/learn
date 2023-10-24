@@ -16,15 +16,21 @@ The answer is, from data. In today's world, we create huge volumes of data as we
 
 Data scientists can use all of that data to train machine learning models that can make predictions and inferences based on the relationships they find in the data. 
 
-Machine learning models try to capture the relationship between data. For example, you might have daily temperature data and data on units of ice cream a store sells in a day. A simple model that captures some of this relationship can be visualized as a regression line (in red in the graph). The model allows you to predict ice cream unit sales per day based on temperature.  
+Machine learning models try to capture the relationship between data. For example, suppose an environmental conservation organization wants volunteers to identify and catalog different species of wildflower using a phone app. The following animation shows how machine learning can be used to enable this scenario.
 
-![Screenshot of the relationship between temperature and ice cream units sold in a graph.](../media/machine-learning-basic-graph.png) 
+![An animation of the steps of machine learning.](../media/machine-learn.gif) 
 
-Approaches to AI have advanced to complete tasks of much greater complexity. **Deep learning** developed as a subset of machine learning to address complex tasks using layers of algorithms. These complex models form the basis of AI capabilities.
+1. A team of botanists and scientists collect data on wildflower samples.
+1. The team labels the samples with the correct species.
+1. The labeled data is processed using an algorithm that finds relationships between the features of the samples and the labeled species.
+1. The results of the algorithm are encapsulated in a model.
+1. When new samples are found by volunteers, the model can identify the correct species label.
+
+Approaches to AI have advanced to complete tasks of much greater complexity. These complex models form the basis of AI capabilities.
 
 ## Machine learning in Microsoft Azure
 
-Microsoft Azure provides the **Azure Machine Learning** service - a cloud-based platform for creating, managing, and publishing machine learning models. **Azure Machine Learning Studio** offers multiple authoring experiences depending on the type of project such as:
+Microsoft Azure provides the **Azure Machine Learning** service - a cloud-based platform for creating, managing, and publishing machine learning models. **Azure Machine Learning Studio** offers multiple authoring experiences such as:
 - **Automated machine learning**: this feature enables non-experts to quickly create an effective machine learning model from data.
 - **Azure Machine Learning designer**: a graphical interface enabling no-code development of machine learning solutions.
 - **Data metric visualization**: analyze and optimize your experiments with visualization.
