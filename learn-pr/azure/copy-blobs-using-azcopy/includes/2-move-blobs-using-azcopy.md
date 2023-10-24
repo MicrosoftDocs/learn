@@ -48,7 +48,7 @@ As with uploads, you can use wildcards to download multiple blobs with matching 
 
 ## Copy data between storage accounts and synchronize storage
 
-The final use of the `AzCopy copy` command is to transfer blobs between storage accounts. The following example copies the blobs from *sourcecontainer* in the *sourceaccount* storage account to *destcontainer* in *destaccount*. This example requires two SAS tokens: one for the source account and another for the destination account.
+The final use of the `AzCopy copy` command is to transfer blobs between storage accounts. The following example copies the blobs from *sourcecontainer* in the *sourceaccount* storage account to *destcontainer* in *destaccount*. This example uses two SAS tokens: one for the source account and another for the destination account.
 
 ```bash
 azcopy copy "https://sourceaccount.blob.core.windows.net/sourcecontainer/*?<source sas token>" "https://destaccount.blob.core.windows.net/destcontainer/*?<dest sas token>"

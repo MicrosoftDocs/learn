@@ -20,6 +20,7 @@ abstract: |
   - Identify when to use Node.js
   - Create and run a Node.js script from the command line
 prerequisites: |
+  - Have a free [GitHub account](https://github.com/login)
   - Familiarity with editing text and code files in any text editor
   - Beginner-level experience writing JavaScript code
   - Experience using the command line
