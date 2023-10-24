@@ -6,4 +6,4 @@ In Microsoft Azure, you can use the **Azure OpenAI service** to build generative
 
 Azure OpenAI supports many foundation model choices that can serve different needs. These models can be deployed and tested in **Azure OpenAI Studio**, a user interface that makes it simple to manage, develop, and customize generative AI models.
 
-:   > [!VIDEO https://learn-video.azurefd.net/vod/player?id=50315eb4-a772-406e-9fbb-f8dd3267e15b]
+![A screenshot of the home page of the Azure OpenAI studio interface which includes quick-start buttons.](../media/azure-openai-studio.png)
