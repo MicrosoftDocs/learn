@@ -56,7 +56,7 @@ Up until now, you created Git branches locally to make changes to the *Space Gam
 1. Under **Sample Markdown**, select the **Copy** button to copy the Markdown code to the clipboard.
 1. In GitHub, go to your project.
 1. Make sure you're on the `main` branch. In the files area, open the *README.md* file.
-1. Select **Edit this file** (the penicl icon) to open the file in the editor.
+1. Select **Edit this file** (the pencil icon) to open the file in the editor.
 1. At the top of the page, add a blank line, and then paste the contents of the clipboard.
 1. Select the **Preview** tab to see your proposed changes.
 
