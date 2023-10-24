@@ -5,7 +5,7 @@ You can grant access to Azure Key Vault using either role-based access control (
 
 A Key Vault access policy determines whether a user, application, or group, can perform operations on Key Vault secrets, keys, and certificates. You can assign access policies using the Azure portal, the Azure CLI, or Azure PowerShell. Key vault supports up to 1024 access policy entries, with each entry granting a distinct set of permissions to a particular security principal. Because of this limitation, we recommend assigning access policies to groups of users, where possible, rather than individual users. Using groups makes it much easier to manage permissions for multiple people in your organization.
 
-:::image type="content" source="../media/key-vault-access-policy-56f5c1df.png" alt-text="Screenshot of the Roles and administrators screen in Azure AD. List of roles that can be applied.":::
+:::image type="content" source="../media/key-vault-access-policy-56f5c1df.png" alt-text="Screenshot of the Roles and administrators screen in Microsoft Entra ID. List of roles that can be applied.":::
 
 
 1.  Open **Key Vault** in the Azure portal.

@@ -13,6 +13,7 @@ By the end of this module, you'll be able to:
 
 ## Prerequisites
 
+- GitHub account
 - Familiarity with editing text and code files in any text editor
 - Beginner-level experience writing JavaScript code
 - Experience using the command line

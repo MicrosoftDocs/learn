@@ -78,7 +78,7 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
       --account-key $HOT_KEY
     ```
 
-## Create a Cool storage account
+## Create a cool storage account
 
 Now we'll create a second storage account and move data between accounts.
 
@@ -134,7 +134,7 @@ Now we'll create a second storage account and move data between accounts.
       --output table
     ```
 
-## Copy blobs to Cool storage
+## Copy blobs to cool storage
 
 1. Batch-copy the blobs from the specifications container in the source storage account to the archived-specifications container in the destination storage account. Use the `--dryrun` flag to see which blobs will be copied, without actually copying them.
 
