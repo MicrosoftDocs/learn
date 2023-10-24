@@ -8,8 +8,7 @@ metadata:
   author: timlt
   ms.author: timlt
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.service: rtos
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-build-debug.md)]
