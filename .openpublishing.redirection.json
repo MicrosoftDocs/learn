@@ -26429,6 +26429,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-daemon-python/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/2-azure-daemon-app-authentication-authorization.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/3-exercise-register-azure-ad-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/4-explore-client-confidential-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/5-exercise-configure-authentication-daemon-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.build-daemon-python.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/enable-single-sign-on/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on/",
       "redirect_document_id": false
