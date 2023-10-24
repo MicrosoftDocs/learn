@@ -28490,6 +28490,11 @@
       "source_path": "learn-pr/wwl-azure/run-training-script-command-job-azure-machine-learning/includes/1b-video.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/run-training-script-command-job-azure-machine-learning/1-introduction",
       "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/wwl-azure/run-pipelines-azure-machine-learning/includes/1b-video.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/run-pipelines-azure-machine-learning/1-introduction",
+      "redirect_document_id": false
     }
   ]
 }
