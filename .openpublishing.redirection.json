@@ -26469,6 +26469,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/achievements/learn.build-daemon-python.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/enable-single-sign-on/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on/",
       "redirect_document_id": false
