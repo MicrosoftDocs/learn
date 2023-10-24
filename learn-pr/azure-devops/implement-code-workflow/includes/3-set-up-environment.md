@@ -62,7 +62,7 @@ Recall that **Create a Git-based workflow** relates to moving to a code workflow
 
 To set up the work item:
 
-1. In Azure DevOps select to **Boards** in the left pane, then select **Boards**.
+1. In Azure DevOps, select **Boards** in the left pane, then select **Boards**.
 
     :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
