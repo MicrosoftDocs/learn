@@ -1,6 +1,6 @@
 Azure Storage Explorer isn't just about storage accounts. You can also use it to investigate and download data from Azure Data Lake Storage.
 
-You've learned how simple creating and managing blob and queue resources in your Azure storage account is. Now you want to push your understanding further and learn how the storage account connects to your developers' data lake, which they use to store infrastructure data for the CRM system.
+You've learned how simple creating and managing blob and queue resources in your Azure Storage account is. Now you want to push your understanding further and learn how the storage account connects to your developers' data lake, which they use to store infrastructure data for the CRM system.
 
 Azure Data Lake Storage Gen2 isn't a dedicated service or account type. It's a set of capabilities that you unlock by enabling the hierarchical namespace feature of an Azure Storage account.
 Here, you'll learn how to use Storage Explorer to connect to Azure Data Lake Storage Gen2, create a container, and upload data into it.
@@ -9,7 +9,7 @@ Here, you'll learn how to use Storage Explorer to connect to Azure Data Lake Sto
 
 Let's look at connecting to a Data Lake Storage Gen2-enabled account. Before you can use Storage Explorer to manage your Data Lake Storage Gen2-enabled account, you need to create the storage account in Azure.
 
-To create the Gen2 storage account, use the **az storage account create** command:
+To create the storage account, use the **az storage account create** command:
 
    ```azurecli
    az storage account create \

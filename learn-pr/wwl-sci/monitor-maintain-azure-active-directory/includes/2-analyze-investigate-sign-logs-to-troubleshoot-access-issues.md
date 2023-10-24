@@ -1,4 +1,4 @@
-The reporting architecture in Microsoft Entra ID, part of Microsoft Entra ID consists of the following components:
+The reporting architecture in Microsoft Entra ID consists of the following components:
 
  -  **Activity**
     
@@ -18,9 +18,7 @@ The reporting architecture in Microsoft Entra ID, part of Microsoft Entra ID con
  -  Global Administrators
  -  Any user (non-admins) can access their own sign-ins
 
-<a name='what-azure-ad-license-do-you-need-to-access-sign-in-activity'></a>
-
-### What Microsoft Entra ID license do you need to access sign-in activity?
+### What Microsoft Entra license do you need to access sign-in activity?
 
 The sign-in activity report is available in all editions of Microsoft Entra ID and can also be accessed through the Microsoft Graph API.
 
@@ -34,7 +32,7 @@ The user sign-ins report provides answers to the following questions:
 
 On the Azure portal menu, select **Microsoft Entra ID**, or search for and select **Microsoft Entra ID** from any page.
 
-:::image type="content" source="../media/select-azure-active-directory-1ab1b468.png" alt-text="Screenshot of the Select Microsoft Entra ID screen, so you can modify Microsoft Entra settings.":::
+:::image type="content" source="../media/select-azure-active-directory-1ab1b468.png" alt-text="Screenshot of the Select Microsoft Entra ID screen, so you can modify the settings.":::
 
 
 Under **Monitoring**, select **Sign-ins** to open the Sign-ins report.
@@ -42,12 +40,12 @@ Under **Monitoring**, select **Sign-ins** to open the Sign-ins report.
 :::image type="content" source="../media/sign-ins-azure-active-directory-d02f9bb4.png" alt-text="Screenshot of the Sign-ins selected from the Monitoring menu. Track what report you want to review.":::
 
 
-It may take up to two hours for some sign-in records to show up in the portal.
+It takes up to two hours for sign-in records to show up in the portal.
 
 > [!IMPORTANT]
 > The sign-ins report only displays the interactive sign-ins—those in which a user manually signs in using their username and password. Non-interactive sign-ins, such as service-to-service authentication, are not displayed in the sign-ins report.
 
-A sign-in log has a default list view that shows the:
+A sign-ins log has a default list view that shows the:
 
  -  Sign-in date
  -  Related user
@@ -151,7 +149,7 @@ Select the **Download** option to create a CSV or JSON file of the most recent 2
 
 
 > [!IMPORTANT]
-> The number of records you can download is constrained by the [Microsoft Entra report retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
+> The number of records you can download is constrained by the [Microsoft Entra ID report retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ## Sign-ins data shortcuts
 
