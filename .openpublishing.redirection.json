@@ -26429,6 +26429,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-daemon-python/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/2-azure-daemon-app-authentication-authorization.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/3-exercise-register-azure-ad-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/4-explore-client-confidential-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/5-exercise-configure-authentication-daemon-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-daemon-python/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.build-daemon-python.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/enable-single-sign-on/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on/",
       "redirect_document_id": false
@@ -28028,6 +28073,49 @@
       "redirect_url": "https://learn.microsoft.com/azure/governance/",
       "redirect_document_id": false
     },
+
+
+
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/2-computer-vision.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/3-text-analytics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/4-text-analytics-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/5-sentiment-analysis-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/6-key-phrases-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/7-entities-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/test-azure-cognitive-services/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
     {
       "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
@@ -28386,6 +28474,26 @@
     {
       "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/9-exercise-restore-remove-deleted-users.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/4-exercise-restore-remove-deleted-users",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/wwl-azure/make-data-available-azure-machine-learning/1b-video.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/make-data-available-azure-machine-learning/1-introduction",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/wwl-azure/find-best-classification-model-automated-machine-learning/1b-video.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/find-best-classification-model-automated-machine-learning/1-introduction",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/wwl-azure/run-training-script-command-job-azure-machine-learning/1b-video.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/run-training-script-command-job-azure-machine-learning/1-introduction",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/wwl-azure/run-pipelines-azure-machine-learning/1b-video.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/run-pipelines-azure-machine-learning/1-introduction",
       "redirect_document_id": false
     }
   ]
