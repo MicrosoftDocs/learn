@@ -1,4 +1,3 @@
-
 Azure Storage supports several access tiers for blob data, including Hot, Cool, and Archive. Each access tier is optimized to support a particular pattern of data usage.
 
 ### Things to know about blob access tiers
@@ -15,7 +14,7 @@ The Cool tier is optimized for storing large amounts of data that's infrequently
 
 #### Cold tier
 
-The Cold tier is also optimized for storing large amounts of data that's infrequently accessed. This tier is intended for data that can remain in the tier for at least 90 days.
+The Cold tier is also optimized for storing large amounts of data that's infrequently accessed. This tier is intended for data that can remain in the tier for at least 90 days. 
 
 #### Archive tier
 
