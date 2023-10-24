@@ -18,7 +18,7 @@ Mara looks up.
 
 ## Set up approvals
 
-In this section, you'll set up a rule on GitHub that requires at least one reviewer to approve a pull request before it can be merged into the `main` branch. You'll then then verify that the rule works by pushing up a fix to the typing error that Mara made earlier.
+In this section, you'll set up a rule on GitHub that requires at least one reviewer to approve a pull request before it can be merged into the `main` branch. You'll then verify that the rule works by pushing up a fix to the typing error that Mara made earlier.
 
 ### Add the rule
 
