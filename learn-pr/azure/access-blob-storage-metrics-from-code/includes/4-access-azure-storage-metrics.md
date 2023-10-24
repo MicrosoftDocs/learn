@@ -19,7 +19,11 @@ You must also assign a role to the service principal, which authorizes that app 
 
 To create a service principal in Azure:
 
-1. Go to the [Azure portal](https://portal.azure.com/). From the Azure Marketplace search box, enter **Microsoft Entra ID**.
+1. Go to the [Azure portal](https://portal.azure.com/).
+
+1. In the search box, enter **Microsoft Entra ID**.
+
+1. In the search results, select **Microsoft Entra ID**.
 
 1. In the left nav bar, under the **Manage** section, select **App registrations**, and then select **+ New registration**. The **Register an application** window appears.
 

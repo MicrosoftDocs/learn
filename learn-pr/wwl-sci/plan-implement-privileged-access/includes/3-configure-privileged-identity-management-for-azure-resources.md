@@ -7,7 +7,7 @@ When you first set up PIM for Azure resources, you need to discover and select t
 
 ## Discover resources
 
-1.  Sign in to the Azure portal.
+1.  Sign in to the Microsoft Entra admin center.
 2.  Open **Microsoft Entra Privileged Identity Management**.
 3.  Select **Azure resources**.If this is your first time using PIM for Azure resources, you'll see a **Discover resources** page.
     
