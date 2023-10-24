@@ -4,7 +4,7 @@ Imagine you're the DevOps administrator for a prototyping and engineering compan
 
 The Azure CLI provides access to Azure Storage through the `az storage` series of commands.
 
-The basic commands to upload and download blobs between blob Storage and the local file system are synchronous. Transferring a large blob could potentially take several hours, depending on the network bandwidth available. Additionally, if a transfer fails partway through, there's no simple way of restarting the operation from the point of failure; you must repeat the entire operation.
+The basic commands to upload and download blobs between Blob Storage and the local file system are synchronous. Transferring a large blob could potentially take several hours, depending on the network bandwidth available. Additionally, if a transfer fails partway through, there's no simple way of restarting the operation from the point of failure; you must repeat the entire operation.
 
 You can transfer blobs between containers and storage accounts using the `az storage blob copy` command. Unlike the upload and download operations, this command runs asynchronously and uses the Azure Storage service to manage the copy process. This means you don't have to download and upload blobs via local storage to migrate them between accounts. You can track the progress and cancel the operation if necessary. The command also supports a batch mode that lets you copy multiple blobs.
 
@@ -14,8 +14,8 @@ In this module, you'll learn how to copy and move blobs between Azure Storage ac
 
 In this module, you will:
 
-- Identify when to use synchronous and asynchronous methods for transferring blobs
-- Copy and move blobs between Azure Storage accounts using the Azure CLI
+- Identify when to use synchronous and asynchronous methods for transferring blobs.
+- Copy and move blobs between Azure Storage accounts using the Azure CLI.
 
 ## Prerequisites
 
