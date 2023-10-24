@@ -3,6 +3,7 @@ Object replication copies blobs in a container asynchronously according to polic
 - The blob metadata and properties
 - Any versions of data associated with the blob
 
+
 The following illustration shows an example of asynchronous replication of blob containers between regions.
 
 :::image type="content" source="../media/blob-object-replication-21fd3c07.png" alt-text="Diagram that shows asynchronous replication of blob containers between regions." border="false":::
@@ -15,7 +16,7 @@ There are several considerations to keep in mind when planning your configuratio
 
 - Object replication doesn't support blob snapshots. Any snapshots on a blob in the source account aren't replicated to the destination account.
 
-- Object replication is supported when the source and destination accounts are in the Hot or Cool tier. The source and destination accounts can be in different tiers.
+- Object replication is supported when the source and destination accounts are in the Hot, Cool, or Cold tier. The source and destination accounts can be in different tiers.
 
 - When you configure object replication, you create a replication policy that specifies the source Azure storage account and the destination storage account.
 
@@ -32,3 +33,4 @@ There are many benefits to using blob object replication. Consider the following
 - **Consider data distribution**. Optimize your configuration for data distribution. You can process or analyze data in a single location and then replicate only the results to other regions.
 
 - **Consider costs benefits**. Manage your configuration and optimize your storage policies to achieve cost benefits. After your data is replicated, you can reduce costs by moving the data to the Archive tier by using lifecycle management policies.
+
