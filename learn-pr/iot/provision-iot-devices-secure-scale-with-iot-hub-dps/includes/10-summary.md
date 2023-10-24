@@ -4,4 +4,4 @@ You used code to test and validate that the Azure IoT Hub DPS provisioning and d
 
 If you and your company didn't validate the IoT Hub DPS with X.509 certificate authentication provisioning and deprovisioning process, you wouldn't know if the process would work for your planned system upgrade.
 
-You validated the process and it has prepared you to provide detailed input into planning for your company's planned system update.
+You validated the process and it has prepared you to provide detailed input into planning for your company's system update.

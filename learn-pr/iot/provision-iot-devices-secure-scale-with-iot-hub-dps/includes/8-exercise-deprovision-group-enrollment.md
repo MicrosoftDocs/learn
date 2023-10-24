@@ -1,8 +1,8 @@
-In this exercise, you deprovision the full enrollment group. This includes disenrolling the enrollment from Device Provisioning Service and deregistering the devices from IoT Hub.
+In this exercise, you deprovision the full enrollment group. This includes disenrolling the enrollment from Device Provisioning Service (DPS) and deregistering the devices from IoT Hub.
 
-### Task 1: Disenroll the enrollment group from the DPS
+### Task 1: Disenroll the enrollment group from DPS
 
-In this task, you disenroll your enrollment group, which removes the enrolled devices. If you want to temporarily disenroll the devices, you can disable the enrollment group. For a permanent disenrollment, delete the enrollment group.
+In this task, you disenroll your enrollment group from DPS, which disables the enrolled devices. If you want to temporarily disenroll the devices, you can disable the enrollment group. For a permanent disenrollment, delete the enrollment group.
 
 1. In the Azure sandbox, either disable or delete your enrollment group.
 
@@ -61,4 +61,38 @@ With the group enrollment deleted from the Device Provisioning Service, and the 
       at Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportHandlerAmqp.RegisterAsync(ProvisioningTransportRegisterMessage message, CancellationToken cancellationToken)
    ```
 
-You have completed the registration, configuration, and deprovisioning as part of the IoT devices life cycle with Device Provisioning Service.
+You have completed the registration, configuration, and deprovisioning as part of the IoT devices lifecycle with Device Provisioning Service (DPS).
+
+## Verify your work
+
+1. Verify that the enrollment group was disabled or deleted from DPS.
+
+   ```azurecli
+   az iot dps enrollment-group show --dps-name dps-$suffix --enrollment-id enrollgroup-sensors
+   ```
+
+   If the enrollment group is disabled, you should see command output that the `provisioningStatus` is disabled.
+
+   Enrollment group is disabled
+
+   ```azurecli
+   "provisioningStatus": "disabled"
+   ```
+
+   If the erollment group is deleted, you should see a message similar to the following.
+
+   ```azurecli
+   {'code': 404204, 'message': 'Not Found.', 'trackingId': '3a1badb5-c1db-4dff-a001-69a5e6e252f4'}
+   ```
+
+1. Verify that device sensor-thl-001 was deregistered (deleted) from the IoT hub.
+
+   ```azurecli
+   az iot hub device-identity show --hub-name hub-$suffix --device-id sensor-thl-001
+   ```
+
+    You should see an `DeviceNotFound` error message similar to the following.
+
+   ```azurecli
+    {'Message': 'ErrorCode:DeviceNotFound;sensor-thl-001', 'ExceptionMessage': 'Tracking ID:06e0221675514160850421f0b3b787a9-G:0-TimeStamp:10/24/2023 16:57:00'}
+    ```

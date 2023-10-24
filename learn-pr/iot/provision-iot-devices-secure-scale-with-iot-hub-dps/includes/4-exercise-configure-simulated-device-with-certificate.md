@@ -8,27 +8,27 @@ In this exercise, you generate a device certificate using the root certificate, 
    cd ~/certificates
    ```
 
-1. To generate an X.509 device certificate within the CA certificate chain, enter the following command:
+1. Generate an X.509 device certificate within the CA certificate chain for a device using the following command:
 
    ```sh
    ./certGen.sh create_device_certificate sensor-thl-001
    ```
 
-   This command creates a new X.509 certificate that's signed by the CA certificate that was generated previously. Notice that the device ID (**sensor-thl-001**) is passed to the **create_device_certificate** command of the **certGen.sh** script. This device ID is set within the *common name*, or *CN=*, value of the device certificate. This certificate generates a leaf device X.509 certificate for your simulated device, and is used to authenticate the device with the Device Provisioning Service (DPS).
+   This command creates a new X.509 certificate .pem and .pfx pair that are signed by the CA certificate that was generated previously. Notice that the device ID (**sensor-thl-001**) is passed to the **create_device_certificate** command of the **certGen.sh** script. This device ID is set within the *common name*, or *CN=*, value of the device certificate. This certificate generates a leaf device X.509 certificate for your simulated device, and is used to authenticate the device with the Device Provisioning Service (DPS). This module uses the .pfx certificate file to validate the program that connects to DPS from your computer.
 
-   Once the **create_device_certificate** command has completed, the generated X.509 device certificate is named **new-device.cert.pfx**, and is located within the **/certs** subdirectory.
+   Once the **create_device_certificate** command has completed, the generated X.509 device certificate pair is named **new-device.cert.pfx** and **new-device.cert.pem**, and is located within the **/certs** subdirectory.
 
    > [!IMPORTANT]
-   > This command overwrites any existing device certificate in the **/certs** subdirectory. If you want to create a certificate for multiple devices, ensure that you save a copy of the **new-device.cert.pfx** each time you run the command.
+   > This command overwrites any existing device certificate in the **/certs** subdirectory. If you want to create a certificate for multiple devices, ensure that you save a copy of **new-device.cert.pfx** and **new-device.cert.pem** each time you run the command.
 
-1. To rename the device certificate that created in the last step, enter the following commands:
+1. Rename the device certificate files to the device name that you created in the last step using the following commands:
 
     ```sh
     mv ~/certificates/certs/new-device.cert.pfx ~/certificates/certs/sensor-thl-001-device.cert.pfx
     mv ~/certificates/certs/new-device.cert.pem ~/certificates/certs/sensor-thl-001-device.cert.pem
     ```
 
-1. To create another device certificate, enter the following commands:
+1. Create and rename certificate files for a second device using the following commands:
 
     ```sh
     ./certGen.sh create_device_certificate sensor-thl-002
@@ -36,7 +36,7 @@ In this exercise, you generate a device certificate using the root certificate, 
     mv ~/certificates/certs/new-device.cert.pem ~/certificates/certs/sensor-thl-002-device.cert.pem
     ```
 
-1. To download the first generated X.509 device certificate from the Cloud Shell to your local machine, enter the following command:
+1. Download the first generated X.509 device certificate from the Cloud Shell to your local machine, enter the following command:
 
    ```sh
    download ~/certificates/certs/sensor-thl-001-device.cert.pfx
@@ -45,7 +45,7 @@ In this exercise, you generate a device certificate using the root certificate, 
    > [!NOTE]
    > Watch for a browser prompt asking you to save the file. Click the **Click here to download your file.** or **Download file** message when prompted. The file will be downloaded to your computer's Download folder.
 
-1. To download the second generated X.509 device certificate from the Cloud Shell to your local machine, enter the following command:
+1. Download the second generated X.509 device certificate from the Cloud Shell to your local machine using the following command:
 
    ```sh
    download ~/certificates/certs/sensor-thl-002-device.cert.pfx
@@ -368,10 +368,13 @@ In this task, you complete the following:
 
 1. Open the **Terminal** menu, then select **New Terminal**.
 
+## Verify your work
+
 1. At the Visual Studio Terminal command prompt, build the code to check for any errors.
 
    ```bash
    dotnet build ContainerDevice.csproj
    ```
 
-   If you see any build errors listed, you need to fix them before continuing to the next exercise. Ensure that you updated the code files correctly and that you saved your changes to the .csproj and .cs files.
+2. If you see any build errors listed, fix them before continuing to the next exercise.
+3. Ensure that you updated the code files correctly and that you saved your changes to the .csproj and .cs files.

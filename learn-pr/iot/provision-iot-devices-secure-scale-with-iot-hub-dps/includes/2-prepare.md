@@ -1,4 +1,8 @@
-To prepare for the exercises, you're going through the steps required to create a resource group, IoT hub, and Device Provisioning Service (DPS). Then you link the IoT hub to the DPS instance. Next, you save resource group, IoT hub, and DPS instance identifiers for use in the exercises.
+Here, we discuss the overall goals of the project and how to prepare resources for the exercises.
+
+## Project overview
+
+In this module, you will begin by creating Azure resources that are required to complete this module, such as an instance of IoT Hub Device Provisioning Service (DPS) and an IoT hub. You will then generate an X.509 root CA Certificate using OpenSSL within the Azure Cloud Shell, and use the root certificate to configure a Group Enrollment within the Device Provisioning Service (DPS). After that, you will use the root certificate to generate two device certificates, which you will use within a simulated device code to provision the devices to an IoT hub. While in your device code, you will implement access to the device twin properties used to perform initial configuration of the device. You will then test your simulated device. To finish up this lab, you will deprovision the entire group enrollment.
 
 ## Setup
 
@@ -14,10 +18,10 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
 
 1. Start by clicking the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You create more resources for this project using the following steps. The resource group ID is substituted automatically where it's used within the code steps.
 
-> [!NOTE]
-> The integrated Azure Cloud Shell will time out after 20 minutes of inactivity. The sandbox will still be available and the Cloud Shell can be reactivated, but command-line and environment variables will be lost. Your IoT Hub and Device Provisioning Service (DPS) instances will still be functional and available. Make sure you copy these variables as instructed at the end of this page so that you can still enter the values in upcoming Cloud Shell commands when necessary.
+   > [!NOTE]
+   > The integrated Azure Cloud Shell will time out after 20 minutes of inactivity. The sandbox will still be available and the Cloud Shell can be reactivated, but command-line and environment variables will be lost. Your IoT Hub and Device Provisioning Service (DPS) instances are functional and available. Make sure you copy these values as instructed at the end of this page so that you can still reference and enter the values in upcoming Cloud Shell commands when necessary.
 
-1. Install the Azure IoT extension.
+1. Install the Azure IoT extension for Azure CLI.
 
    ```azurecli
    az extension add --name azure-iot
@@ -36,7 +40,7 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
    az iot hub create --name hub-$suffix --resource-group <rgn>[sandbox resource group name]</rgn> --location westus
    ```
 
-1. Create a Device Provisioning Service (DPS) instance.
+1. Create a Device Provisioning Service (DPS) instance in the resource group created by the Azure sandbox.
 
    ```azurecli
    az iot dps create --name dps-$suffix --resource-group <rgn>[sandbox resource group name]</rgn> --location westus
@@ -55,12 +59,20 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
    az iot dps linked-hub create --dps-name dps-$suffix --resource-group <rgn>[sandbox resource group name]</rgn> --connection-string $hubConnectionString
    ```
 
-1. Once the deployment has completed, open a text editor tool. Use the text editor to store some configuration values associated with your Azure resources. In your text editor, save the following values to use in the next units:
+1. Once the deployment has completed, open a text editor tool. Use the text editor to store configuration values associated with your Azure resources in case your sandbox times out after 20 minutes. In your text editor, save the following names and values to use in the next unit pages.
 
    * Resource group name - Listed on this web page.
    * IoT Hub connection string - Stored in `$hubConnectionString`.
    * DPS name - The value for `name` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, a value for  `"name"` is `"dps-586732230"`.
    * DPS scope ID - The value for `idScope` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, the value for `"idScope"` is `"0ne00B3761F"`.
+
+   | Name    | Value |
+   | -------- | ------- |
+   | Resource group name  | Listed on this web page |
+   | IoT hub connection string | Stored in `$hubConnectionString` |
+   | IoT hub name | The value for `name` in the JSON data returned from the `az iot hub create` command you ran in step 3. For example, a value for  `"name"` is `"hub-586732230"`.    |
+   | DPS name    | The value for `name` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, a value for  `"name"` is `"dps-586732230"`.    |
+   | DPS scope ID | The value for `idScope` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, the value for `"idScope"` is `"0ne00B3761F"`.
 
 ### Development resources
 

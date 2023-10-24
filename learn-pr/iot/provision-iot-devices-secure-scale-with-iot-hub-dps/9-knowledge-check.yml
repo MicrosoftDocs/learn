@@ -23,60 +23,35 @@ quiz:
     choices:
     - content: "Delete the group enrollment and update all of the devices with a new certificate chain of trust."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. This would unnecessarily disable all devices within the enrollment group and certificate chain of trust. All devices would have to be re-enrolled with the new certifcate."
     - content: "Create an individual enrollment to disallow the potentially compromised device then delete the device from IoT hub."
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. The disabled individual enrollment blocks DPS from reprovisioning the device, and deleting or disabling the device from IoT Hub prevents the device from connecting to the IoT hub."
     - content: "Delete the CA certificate from DPS."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. This would disable all devices that were enrolled under this CA certificate. Instead, disable the device in DPS and delete the device from IoT hub."
     - content: "Delete the potentially compromised device from IoT hub."
       isCorrect: false
-      explanation: ""
-  - content: "What certificate or certificates do you upload to DPS to enable group enrollment with X.509"
-    choices:
-    - content: "The bottom-level device certificates."
-      isCorrect: false
-      explanation: ""
-    - content: "The highest intermediate certificate that all the devices share."
-      isCorrect: true
-      explanation: ""
-    - content: "The top-level root CA certificate for your organization."
-      isCorrect: false
-      explanation: ""
-    - content: "The entire certificate chain of trust."
-      isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. The device could re-enroll in this case. You must both create a disabled DPS individual enrollment record and delete the device from IoT hub."
   - content: "Group enrollments include the option to specify an initial configuration of a device. What mechanism is used to apply this configuration?"
     choices:
     - content: "The enrollment process instructs IoT Hub to trigger a direct method."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. The enrollment process includes a device twin state field that contains desired properties for the device."
     - content: "The enrollment process uses a security token to request device access permission and pushes the configuration to the device."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. The enrollment process includes a device twin state field that contains desired properties for the device."
     - content: "The enrollment process includes a device twin state field that contains desired properties for the device."
       isCorrect: true
-      explanation: ""
-  - content: "The Device Provisioning Service uses X.509 certificates to help ensure that device connections are secure. What type of certificate is used to verify proof of possession for the root certificate?"
-    choices:
-    - content: "A leaf certificate."
-      isCorrect: false
-      explanation: "Incorrect. A leaf certificate is the end-entity certificate that is used to validate a device."
-    - content: "An intermediate certificate."
-      isCorrect: false
-      explanation: "Incorrect. Intermediate certificates are used to validate leaf certificates or other intermediate certificates."
-    - content: "A verification certificate."
-      isCorrect: true
-      explanation: "Correct. A verification certificate, which is created by using the root certificate and a DPS-generated verification code, is used to establish proof of possession."
+      explanation: "Correct. The device twin state field can be used to set the initial desired properties for the device."
   - content: "What needs to be completed in order to deprovision a single device from a group enrollment?"
     choices:
     - content: "Disable or delete the device from the IoT hub's identity registry."
       isCorrect: false
-      explanation: "Incorrect. This action does not prevent the device from being reprovisioned as part of the group enrollment."
-    - content: "Create a disabled individual enrollment for the device's leaf certificate, disable or delete the device from the IoT hub's identity registry, and then delete the disabled individual enrollment for the device."
+      explanation: "Incorrect. This action does not prevent the device from being reprovisioned as part of the DPS group enrollment."
+    - content: "Create a DPS disabled individual enrollment for the device's leaf certificate, disable or delete the device from the IoT hub's identity registry, and then delete the DPS disabled individual enrollment for the device."
       isCorrect: false
-      explanation: "Incorrect. Deleting the disabled enrollment for the device would allow the device to re-enroll through the enrollment group."
-    - content: "Create a disabled individual enrollment for the device's leaf certificate and then disable or delete the device from the IoT hub's identity registry."
+      explanation: "Incorrect. Deleting the DPS disabled enrollment for the device would allow the device to re-enroll through the enrollment group. The DPS disabled individual enrollment must be retained."
+    - content: "Create a DPS disabled individual enrollment for the device's leaf certificate and then disable or delete the device from the IoT hub's identity registry."
       isCorrect: true
-      explanation: "Correct. The disabled individual enrollment blocks DPS from reprovisioning the device and deleting or disabling the device from IoT Hub prevents the device from connecting to the IoT hub."
+      explanation: "Correct. The disabled individual enrollment blocks DPS from reprovisioning the device, and deleting or disabling the device from IoT Hub prevents the device from connecting to the IoT hub."

@@ -42,7 +42,7 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
    cat certGen.sh
    ```
 
-3. To generate the root and intermediate certificates, enter the following command:
+3. Enter the following command to generate the root and intermediate certificates:
 
    ```sh
    ./certGen.sh create_root_and_intermediate
@@ -52,28 +52,53 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
 
    This command generated a Root CA Certificate named **azure-iot-test-only.root.ca.cert.pem** and placed it within a **./certs** directory (under the certificates directory that you created).
 
-### Task 2: Create group enrollment (X.509 Certificate) in DPS
+### Task 2: Create a group enrollment (X.509 Certificate) in DPS
 
-<!-- TODO: FIGURE OUT IF SAVED VARIABLES PERSIST IN THE SANDBOX ACROSS UNITS?
-
-ANSWSER: They do, but not if someone walks away for 20+ minutes, then the cloud shell restarts.
-Figure out the cleanest way to have someone carry their own variables around
- -->
-
-1. In the Azure sandbox, upload your CA certificate to your Device Provisioning Service instance.
+1. In the Azure sandbox, upload your CA certificate to your Device Provisioning Service (DPS) instance. The certificate name is `groupCA-sensors`. The `--verified true` command parameter allows the certificate to be verified automatically on upload, bypassing the need for an additional certificate Proof of Possession generation step.
 
    ```azurecli
    az iot dps certificate create --dps-name dps-$suffix --certificate-name groupCA-sensors --path ~/certificates/certs/azure-iot-test-only.root.ca.cert.pem --verified true
    ```
 
-2. Create an enrollment group in your DPS instance. This command creates an enrollment group with the following parameters:
-
-   | Parameter | Description |
-   | --------- | ----------- |
-   | `--root-ca-name` | Sets the attestation method for the enrollment group to be X.509 CA-signed certificates, and points to the CA certificate that you uploaded to DPS. |
-   | `--iot-hubs` | Configures DPS to provision the devices in this enrollment group to the IoT hub that you created and linked to DPS at the beginning of this module. |
-   | `--initial-twin-properties` | Sets a desired property that all devices in this enrollment group will receive once they're provisioned. The devices will use the **properties.desired.telemetryDelay** property to set the time delay for reading and sending telemetry to IoT Hub. |
+2. Create an enrollment group in your DPS instance.
 
    ```azurecli
    az iot dps enrollment-group create --dps-name dps-$suffix --enrollment-id enrollgroup-sensors --root-ca-name groupCA-sensors --iot-hubs hub-$suffix.azure-devices.net --initial-twin-properties "{'telemetryDelay':'1'}" --allocation-policy static
+   ```
+
+   This command creates an enrollment group with the following parameters:
+
+   | Parameter | Description |
+   | --------- | ----------- |
+   | `--dps-name` | The DPS identifier. |
+   | `--enrollment-id` | The name of the new enrollment group. |
+   | `--root-ca-name` | Sets the attestation method for the enrollment group to be X.509 CA-signed certificates, and points to the CA certificate that you uploaded to DPS. |
+   | `--iot-hubs` | Configures DPS to provision the devices in this enrollment group to the IoT hub that you created and linked to DPS at the beginning of this module. |
+   | `--initial-twin-properties` | Sets a desired property that all devices in this enrollment group will receive once they're provisioned. The devices will use the **properties.desired.telemetryDelay** property to set the time delay for reading and sending telemetry to IoT Hub. |
+   | `allocation-policy` | Used to determine how a device is assigned to an IoT Hub. A static policy allows you to designate a single IoT hub that you want to assign devices to. |
+
+## Check your work
+
+1. Verify that the root CA **azure-iot-test-only.root.ca.cert.pem** file was created in the /certs folder.
+
+   ```azurecli
+   dir ~/certificates/certs/
+   ```
+
+2. Verify that the CA certificate was uploaded to your Device Provisioning Service (DPS) instance.
+
+   ```azurecli
+   az iot dps certificate show --certificate-name groupCA-sensors --dps-name dps-$suffix
+   ```
+
+   Examine the command return information. Verify that the name is `groupCA-sensors`.
+
+      ```azurecli
+      "name": "groupCA-sensors"
+      ```
+
+3. Examine this command return information to verify that the DPS enrollment group was created with the parameters that you specified in the az iot dps certificate create statement in step 2.
+
+   ```azurecli
+   az iot dps enrollment-group show --dps-name dps-$suffix --enrollment-id enrollgroup-sensors
    ```

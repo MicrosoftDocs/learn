@@ -1,4 +1,6 @@
-In this exercise, you run the simulated device. When the device is started for the first time, it connects to the Device Provisioning Service (DPS) which automatically enrolls it using the configured group enrollment. Once the device is enrolled into the DPS group enrollment, the device is registered automatically in the Azure IoT Hub device registry. Once the device is enrolled and registered, the device can begin communicating with Azure IoT Hub securely using the configured X.509 certificate authentication.
+In this exercise, you run the simulated device. When the device is started for the first time, it connects to the Device Provisioning Service (DPS) which automatically enrolls it using the configured group enrollment.
+
+Once the device is enrolled into the DPS group enrollment, the device is registered automatically in the Azure IoT Hub device registry. Once the device is enrolled and registered, the device can begin communicating with Azure IoT Hub securely using the configured X.509 device certificate authentication.
 
 ### Task 1: Build and run the simulated device projects
 
@@ -15,7 +17,7 @@ In this exercise, you run the simulated device. When the device is started for t
     ```
 
     > [!NOTE]
-    > When you run your simulated device for the first time, the most common error is an *Invalid certificate* error. This error can cause a **ProvisioningTransportException** exception. If you see a message similar to the following example, ensure that the CA certificate in DPS and the device certificate for the simulated device application are configured correctly.
+    > When you run your simulated device for the first time, the most common error is an *Invalid certificate* error. This error can cause a **ProvisioningTransportException** exception. If you see a message similar to the following example, ensure that the CA certificate in DPS and the device certificate for the simulated device application are configured correctly. There are Cloud Shell commands to show registered CA and device certificate information from DPS in the Verify your work section at the bottom of this web page.
     >
     > ```text
     > localmachine:LabFiles User$ dotnet run
@@ -37,7 +39,7 @@ In this exercise, you run the simulated device. When the device is started for t
 
     Scroll up to the top of the information displayed in the Terminal window.
 
-    Notice the X.509 certificate was loaded, the device was registered with the Device Provisioning Service, it was assigned to connect to the **hub-{your-suffix}** IoT Hub, and the device twin desired properties are loaded.
+    Notice the X.509 sensor-thl-001 device certificate was loaded, the device was registered with the Device Provisioning Service (DPS), it was assigned to connect to the **hub-{your-suffix}** IoT Hub, and the device twin desired properties are loaded.
 
     ```text
     localmachine:LabFiles User$ dotnet run
@@ -127,6 +129,26 @@ When you created the group enrollment in DPS, you set the initial twin configura
 
 1. Within the **Terminal** pane, to exit the simulated device app, press **Ctrl-C**.
 
-1. Switch to your other Visual Studio Code windows and use the **Terminal** prompt to stop the simulated device apps.
+1. Switch to your other Visual Studio Code window and use the **Terminal** prompt to stop the simulated device app.
 
    Don't close the Visual Studio Code windows yet, as you come back to rerun the programs in the next exercise.
+
+## Verify your work
+
+1. Verify that the CA certificate is registered with DPS. Examine the command return values including `Name`.
+
+   ```azurecli
+   az iot dps certificate show --certificate-name groupCA-sensors --dps-name dps-$suffix
+   ```
+
+1. Verify that the device certificate is registered with DPS. Examine the command return values including `Name`.
+
+   ```azurecli
+   az iot dps certificate show --certificate-name sensor-thl-001 --dps-name dps-$suffix
+   ```
+
+1. Verify that the Device Twin `telemetryDelay` value is `3` seconds.
+
+   ```azurecli
+   az iot hub device-twin show --hub-name hub-$suffix --device-id sensor-thl-001
+   ```

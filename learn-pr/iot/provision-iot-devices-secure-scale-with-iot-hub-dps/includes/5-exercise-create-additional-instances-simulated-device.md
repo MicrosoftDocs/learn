@@ -9,3 +9,8 @@ In this exercise, you make copies of your simulated device project, and then upd
 1. Save your changes.
 
 If you want to create more devices to enroll with your DPS instance, you can do so by creating a new device certificate and repeating these steps.
+
+## Verify your work
+
+1. Navigate your FIle Manager to the sensor-thl-002-device folder.
+1. Verify that the files contained in the sensor-thl-002-device folder match what you defined in the Task 1.
