@@ -33,9 +33,12 @@ subjects:
 - artificial-intelligence
 units:
   - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.introduction
-  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.train-model
-  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.add-responsible-ai-dashboard
-  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.debug-model
+  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.responsible-ai-dashboard
+  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.error-analysis
+  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.model-performance-inconsistencies
+  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.data-biases
+  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.interpret-model
+  - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.lab-train-debug-model
   - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.knowledge-check
   - learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.summary
 badge:
