@@ -1,6 +1,6 @@
 App configuration policies can help you eliminate app setup problems by letting you select configuration settings for a policy. That policy is then assigned to end users before they run a specific app. The settings are then supplied automatically when the app is configured on the end user's device. End users don't need to take action. The configuration settings are unique for each app. 
 
-You can create and use app configuration policies to provide configuration settings for both iOS/iPadOS or Android apps. These configuration settings allow an app to be customized by using app configuration and management. The configuration policy settings are used when the app checks for these settings, typically the first time the app is run.
+You can create and use app configuration policies to provide configuration settings for both iOS/iPadOS or Android apps. These configuration settings allow you to customize an app by using app configuration and management. Use the configuration policy settings when the app checks for these settings, typically the first time you run the app.
 
 An app configuration setting, for example, might require you to specify any of the following details:
 
