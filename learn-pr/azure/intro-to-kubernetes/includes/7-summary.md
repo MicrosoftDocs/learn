@@ -12,6 +12,44 @@ You saw how Kubernetes provides for:
 
 To deploy and manage your drone-tracking solution into new customer regions, you were looking for a container-orchestration platform. You now understand how Kubernetes can help you develop, deploy, and manage apps in your container environment.
 
+## Uninstall MicroK8s
+
+To recover space on your development machine, you can remove everything you've deployed so far, even the VM. Keep in mind that this procedure is optional.
+
+1. To remove the add-ons from the cluster, run the `microk8s.disable` command, and specify the add-ons to remove:
+
+    ```bash
+    sudo microk8s.disable dashboard dns registry
+    ```
+
+1. To remove MicroK8s from the VM, run the `snap remove` command:
+
+    ```bash
+    sudo snap remove microk8s
+    ```
+
+If you want to remove the Multipass VM manager from your machine, there are a few extra steps to take on Windows and macOS.
+
+1. To exit the VM, run the `exit` command:
+
+    ```bash
+    exit
+    ```
+
+1. To stop the VM, run the `multipass stop` command and specify the VM's name:
+
+    ```bash
+    multipass stop microk8s-vm
+    ```
+
+1. To delete and purge the VM instance, run `multipass delete`, then run `multipass purge`:
+
+    ```console
+    multipass delete microk8s-vm
+    multipass purge
+    ```
+
+
 ## Learn more
 
 To learn more about Kubernetes, running Kubernetes on Azure, and related tools, visit the following sites and articles:
