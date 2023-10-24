@@ -36,4 +36,4 @@ You can enable Blob storage versioning to automatically maintain previous versio
 
 #### <!-- Video -->
 
-<iframe width="854" height="480" src="https://www.youtube.com/watch?v=bjKmJKAKyp4" title="How to use Blob versioning in Azure Storage | Azure Tips and Tricks" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/bjKmJKAKyp4" title="How to use Blob versioning in Azure Storage | Azure Tips and Tricks" allowfullscreen></iframe>
