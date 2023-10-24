@@ -16,4 +16,4 @@ A data science project commonly includes the following phases:
 1. **Train the model**: Choose an algorithm and hyperparameter values based on trial and error by tracking your experiments with MLflow.
 1. **Generate predictions**: Use model batch scoring to generate the requested predictions.
 
-In this module, you focus on how to generate batch predictions. To retrieve predictions from a trained model, you first need to save it in the Microsoft Fabric workspace. You can then prepare your new data and apply the model to the data to generate batch predictions. Finally, you can save the predictions in Microsoft Fabric for further processing, like visualizing the data in a Power BI report.
+In this module, you focus on how to generate batch predictions. To retrieve predictions from a trained model, you first need to save the model to the Microsoft Fabric workspace. You can then prepare your new data and apply the model to the data to generate batch predictions. Finally, you can save the predictions in Microsoft Fabric for further processing, like visualizing the data in a Power BI report.

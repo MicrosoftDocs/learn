@@ -1,85 +1,34 @@
-The integration of MLflow in Microsoft Fabric makes it easy to track and manage your machine learning models.
 
-## Track model artifacts with MLflow
 
-After you train a model, you want to use the model for scoring and generating new predictions. To easily integrate your model, you need to store your model so that you can load the model in a different environment. A common approach is to store a model as a *pickle file*, a serialized object.
 
-> [!Note]
-> The format of your stored model depends on the machine learning framework you're using. For example, when training a deep learning model, you may opt to store your model using the Open Neural Network Exchange (ONNX) format instead.
+Create an MLFlowTransformer object to load the model for inferencing. To create an MLFlowTransformer object for generating batch predictions, you must do the following:
 
-MLflow adds another layer to your model's output by adding the **MLmodel** file. The MLmodel file specifies the model's metadata, like how and when the model was trained, as well as the model's expected input and output.
+specify which columns from the test DataFrame you need as model inputs (in this case, all of them),
+choose a name for the new output column (in this case, predictions), and
+provide the correct model name and model version for generating those predictions.
+If you're using your own model, substitute the values for the input columns, output column name, model name, and model version.
 
-### Understand the MLmodel file
+Python
 
-When you log a model with MLflow, all relevant model assets are stored in the `model` folder with your experiment run.
+Copy
+from synapse.ml.predict import MLFlowTransformer
 
-The `model` folder includes the MLmodel file, a single source of truth about how the model should be loaded and consumed.
+# You can substitute values below for your own input columns,
+# output column name, model name, and model version
+model = MLFlowTransformer(
+    inputCols=test.columns,
+    outputCol='predictions',
+    modelName='diabetes-model',
+    modelVersion=1
+)
+Generate predictions using the PREDICT function. To invoke the PREDICT function, you can use the Transformer API, the Spark SQL API, or a PySpark user-defined function (UDF). The following sections show how to generate batch predictions with the test data and model defined in the previous steps, using the different methods for invoking PREDICT.
 
-The MLmodel file may include:
+PREDICT with the Transformer API
+The following code invokes the PREDICT function with the Transformer API. If you've been using your own model, substitute the values for the model and test data.
 
-- `artifact_path`: During training, the model is logged to this path.
-- `flavor`: The machine learning library with which the model was created.
-- `model_uuid`: The unique identifier of the registered model.
-- `run_id`: The unique identifier of job run during which the model was created.
-- `signature`: Specifies the schema of the model's inputs and outputs:
-    - `inputs`: Valid input to the model. For example, a subset of the training dataset.
-    - `outputs`: Valid model output. For example, model predictions for the input dataset.
+Python
 
-Imagine you trained a regression model to predict diabetes in patients, the logged MLmodel file may look like:
-
-```yml
-artifact_path: model
-flavors:
-  python_function:
-    env:
-      conda: conda.yaml
-      virtualenv: python_env.yaml
-    loader_module: mlflow.sklearn
-    model_path: model.pkl
-    predict_fn: predict
-    python_version: 3.10.10
-  sklearn:
-    code: null
-    pickled_model: model.pkl
-    serialization_format: cloudpickle
-    sklearn_version: 1.2.0
-mlflow_version: 2.1.1
-model_uuid: 8370150f4e07495794c3b80bcaf07e52
-run_id: 14cdf02f-119b-4b8d-90f3-044987c29bce
-signature:
-  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 10]}}]'
-  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
-```
-
-When you choose to use MLflow's autologging function in Microsoft Fabric, the MLmodel file is automatically created for you. If you want to change the file to change the model's behavior during scoring, you can change how the MLmodel file is logged.
-
-> [!Tip]
-> Learn more about [MLflow model files and how to customize the fields](https://www.mlflow.org/docs/latest/models.html#model-signature?azure-portal=true).
-
-## Manage models in Microsoft Fabric
-
-When you track a model with MLflow during training in Microsoft Fabric, all model artifacts are stored in the `model` folder. You can find the `model` folder in the experiment run:
-
-:::image type="content" source="../media/model-folder-experiment.png" alt-text="Screenshot of the model folder overview in an experiment run.":::
-
-The model folder contains:
-
-- `MLmodel`: Contains the model's metadata.
-- `conda.yaml`: Contains the Anaconda environment needed to run the model.
-- `model.pkl`: Contains the trained model
-- `python_env.yaml`: Describes the Python environment needed to run the model. References the `requirements.txt` file.
-- `requirements.txt`: Lists Python packages required to run the model.
-
-All these model artifacts are necessary when you want to use your model to generate predictions on new data.
-
-### Save a model your workspace
-
-When you choose the model you want to use, you can save the model in the workspace from the experiment run. By saving a model, you create a new versioned model in the workspace that contains all the model artifacts and metadata.
-
-Select the experiment run that represent the model you trained, and select the **Save** option to save the run as a model.
-
-:::image type="content" source="../media/save-model.png" alt-text="Screenshot of the save as model pop-up in Microsoft Fabric.":::
-
-By selecting an existing model, you create a new version of a model under the same name. Model versioning allows you to compare models that serve a similar purpose, after which you can choose the best performing model to generate predictions.
-
-:::image type="content" source="../media/models.png" alt-text="Screenshot of the model overview in Microsoft Fabric.":::
+Copy
+# You can substitute "model" and "test" below with values  
+# for your own model and test data 
+model.transform(test).show()

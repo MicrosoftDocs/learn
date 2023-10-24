@@ -1,7 +1,5 @@
-Microsoft Fabric offers three key features to help you manage your machine learning models: notebooks, experiments, and models. 
+Retrieve valuable insights from your data by applying a machine learning model.
 
-To train machine learning models with the open-source framework of your choice, you can use notebooks.
+By tracking a model with MLflow while training it in Microsoft Fabric, you can configure the model's expected inputs and outputs at scoring time.
 
-To keep a clear overview of your work and easily compare the models you've trained, you can use experiments and their runs.
-
-When you've trained a model that you want to use to generate predictions, you can save the model in the Microsoft Fabric workspace.
+When you save a model with its necessary model artifacts in Microsoft Fabric, you can easily apply it to new data and save the predictions in a delta table, ready for further processing.

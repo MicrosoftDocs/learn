@@ -3,7 +3,7 @@ uid: learn.wwl.generate-batch-predictions-fabric
 metadata:
   title: Generate batch predictions using a deployed model in Microsoft Fabric
   description: "Learn how to use a trained machine learning model to generate batch predictions in Microsoft Fabric."
-  ms.date: 10/18/2023
+  ms.date: 10/26/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
