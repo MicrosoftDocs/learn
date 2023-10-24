@@ -10,7 +10,7 @@ To deprovision a single device from a DPS enrollment group, you must do two thin
 
 * Disable or delete the device from the IoT hub's identity registry.
 
-    sensor-thl-001 and sensor-thl-002 were registered with your IoT hub when you ran the two C# programs. This step deletes an identity registeration entry from your IoT hub.
+    sensor-thl-001 and sensor-thl-002 were registered with your IoT hub when you ran the two C# programs. This step disables or deletes an identity registeration entry from your IoT hub.
 
     > [!TIP]
     > If your solution includes multiple IoT hubs, you should use the list of provisioned devices for the enrollment group to find the IoT hub that the device was provisioned to. This is so that you can disable or delete the device. In this exercise you use a single IoT hub, so you don't need to look up which IoT hub was used.

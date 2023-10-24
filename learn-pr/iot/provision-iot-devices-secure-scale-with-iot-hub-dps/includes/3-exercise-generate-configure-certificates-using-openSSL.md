@@ -54,7 +54,7 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
 
 ### Task 2: Create a group enrollment (X.509 Certificate) in DPS
 
-1. In the Azure sandbox, upload your CA certificate to your Device Provisioning Service (DPS) instance. The certificate name is `groupCA-sensors`. The `--verified true` command parameter allows the certificate to be verified automatically on upload, bypassing the need for an additional certificate Proof of Possession generation step.
+1. In the Azure sandbox, upload your CA certificate to your Device Provisioning Service (DPS) instance. The certificate name is `groupCA-sensors`. The `verified true` command parameter allows the certificate to be verified automatically on upload, bypassing the need for an additional step for certificate Proof of Possession generation.
 
    ```azurecli
    az iot dps certificate create --dps-name dps-$suffix --certificate-name groupCA-sensors --path ~/certificates/certs/azure-iot-test-only.root.ca.cert.pem --verified true
@@ -91,13 +91,13 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
    az iot dps certificate show --certificate-name groupCA-sensors --dps-name dps-$suffix
    ```
 
-   Examine the command return information. Verify that the name is `groupCA-sensors`.
+   Examine the command return information. Verify that the CA certificate name is `groupCA-sensors` as shown here.
 
       ```azurecli
       "name": "groupCA-sensors"
       ```
 
-3. Examine this command return information to verify that the DPS enrollment group was created with the parameters that you specified in the az iot dps certificate create statement in step 2.
+3. Examine this command return information to verify that the DPS enrollment group was created with the parameters that you specified in the az `iot dps certificate create` statement in Task 2, step 2.
 
    ```azurecli
    az iot dps enrollment-group show --dps-name dps-$suffix --enrollment-id enrollgroup-sensors

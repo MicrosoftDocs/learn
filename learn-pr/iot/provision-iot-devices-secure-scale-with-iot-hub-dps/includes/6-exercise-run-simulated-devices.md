@@ -17,7 +17,7 @@ Once the device is enrolled into the DPS group enrollment, the device is registe
     ```
 
     > [!NOTE]
-    > When you run your simulated device for the first time, the most common error is an *Invalid certificate* error. This error can cause a **ProvisioningTransportException** exception. If you see a message similar to the following example, ensure that the CA certificate in DPS and the device certificate for the simulated device application are configured correctly. There are Cloud Shell commands to show registered CA and device certificate information from DPS in the Verify your work section at the bottom of this web page.
+    > When you run your simulated device for the first time, the most common error is an *Invalid certificate* error. This error can cause a **ProvisioningTransportException** exception. If you see a message similar to the following example, ensure that the CA certificate in DPS and the device certificate for the simulated device application are configured correctly. In the Verify your work section at the bottom of this web page, there are Cloud Shell commands to show registered CA and device certificate information from DPS.
     >
     > ```text
     > localmachine:LabFiles User$ dotnet run

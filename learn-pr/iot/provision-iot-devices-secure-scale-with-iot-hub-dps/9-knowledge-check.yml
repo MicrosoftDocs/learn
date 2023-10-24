@@ -24,7 +24,7 @@ quiz:
     - content: "Delete the group enrollment and update all of the devices with a new certificate chain of trust."
       isCorrect: false
       explanation: "Incorrect. This would unnecessarily disable all devices within the enrollment group and certificate chain of trust. All devices would have to be re-enrolled with the new certifcate."
-    - content: "Create an individual enrollment to disallow the potentially compromised device then delete the device from IoT hub."
+    - content: "Create an individual enrollment to disallow the potentially compromised device, then delete the device from IoT hub."
       isCorrect: true
       explanation: "Correct. The disabled individual enrollment blocks DPS from reprovisioning the device, and deleting or disabling the device from IoT Hub prevents the device from connecting to the IoT hub."
     - content: "Delete the CA certificate from DPS."
@@ -49,9 +49,9 @@ quiz:
     - content: "Disable or delete the device from the IoT hub's identity registry."
       isCorrect: false
       explanation: "Incorrect. This action does not prevent the device from being reprovisioned as part of the DPS group enrollment."
-    - content: "Create a DPS disabled individual enrollment for the device's leaf certificate, disable or delete the device from the IoT hub's identity registry, and then delete the DPS disabled individual enrollment for the device."
+    - content: "Create a DPS disabled individual enrollment for the device's name and leaf certificate, disable or delete the device from the IoT hub's identity registry, and then delete the DPS disabled individual enrollment for the device."
       isCorrect: false
       explanation: "Incorrect. Deleting the DPS disabled enrollment for the device would allow the device to re-enroll through the enrollment group. The DPS disabled individual enrollment must be retained."
-    - content: "Create a DPS disabled individual enrollment for the device's leaf certificate and then disable or delete the device from the IoT hub's identity registry."
+    - content: "Create a DPS disabled individual enrollment for the device's name and leaf certificate and then disable or delete the device from the IoT hub's identity registry."
       isCorrect: true
       explanation: "Correct. The disabled individual enrollment blocks DPS from reprovisioning the device, and deleting or disabling the device from IoT Hub prevents the device from connecting to the IoT hub."

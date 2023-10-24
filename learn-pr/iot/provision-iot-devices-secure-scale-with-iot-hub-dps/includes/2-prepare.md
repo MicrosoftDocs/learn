@@ -16,10 +16,10 @@ As part of this module, the following resources are created:
 
 To complete this guided project, you need an IoT hub and a Device Provisioning Service (DPS) instance that are linked to each other. Creating these service instances can take several minutes.
 
-1. Start by clicking the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You create more resources for this project using the following steps. The resource group ID is substituted automatically where it's used within the code steps.
+1. Start by clicking the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You create more resources for this project using the following steps. The resource group name is substituted automatically where it's used within the code steps.
 
    > [!NOTE]
-   > The integrated Azure Cloud Shell will time out after 20 minutes of inactivity. The sandbox will still be available and the Cloud Shell can be reactivated, but command-line and environment variables will be lost. Your IoT Hub and Device Provisioning Service (DPS) instances are functional and available. Make sure you copy these values as instructed at the end of this page so that you can still reference and enter the values in upcoming Cloud Shell commands when necessary.
+   > The sandbox Azure Cloud Shell will time out after 20 minutes of inactivity. The sandbox will still be available and the Cloud Shell can be reactivated, but command-line and environment variables will be lost. Your IoT Hub and Device Provisioning Service (DPS) instances are functional and available. Make sure you copy these values as instructed at the end of this page so that you can still reference and enter the values in upcoming Cloud Shell commands when necessary.
 
 1. Install the Azure IoT extension for Azure CLI.
 
@@ -34,7 +34,7 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
    echo $suffix
    ```
 
-1. Create an IoT hub in the resource group created by the Azure sandbox.
+1. Create an IoT hub in the resource group name created by the Azure sandbox.
 
    ```azurecli
    az iot hub create --name hub-$suffix --resource-group <rgn>[sandbox resource group name]</rgn> --location westus
@@ -61,18 +61,13 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
 
 1. Once the deployment has completed, open a text editor tool. Use the text editor to store configuration values associated with your Azure resources in case your sandbox times out after 20 minutes. In your text editor, save the following names and values to use in the next unit pages.
 
-   * Resource group name - Listed on this web page.
-   * IoT Hub connection string - Stored in `$hubConnectionString`.
-   * DPS name - The value for `name` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, a value for  `"name"` is `"dps-586732230"`.
-   * DPS scope ID - The value for `idScope` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, the value for `"idScope"` is `"0ne00B3761F"`.
-
    | Name    | Value |
    | -------- | ------- |
    | Resource group name  | Listed on this web page |
    | IoT hub connection string | Stored in `$hubConnectionString` |
    | IoT hub name | The value for `name` in the JSON data returned from the `az iot hub create` command you ran in step 3. For example, a value for  `"name"` is `"hub-586732230"`.    |
    | DPS name    | The value for `name` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, a value for  `"name"` is `"dps-586732230"`.    |
-   | DPS scope ID | The value for `idScope` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, the value for `"idScope"` is `"0ne00B3761F"`.
+   | DPS ID scope | The value for `idScope` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, the value for `"idScope"` is `"0ne00B3761F"`.
 
 ### Development resources
 

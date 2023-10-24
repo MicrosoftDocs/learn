@@ -8,20 +8,20 @@ In this exercise, you generate a device certificate using the root certificate, 
    cd ~/certificates
    ```
 
-1. Generate an X.509 device certificate within the CA certificate chain for a device using the following command:
+1. Generate an X.509 device certificate within the CA certificate chain for the first device using the following command:
 
    ```sh
    ./certGen.sh create_device_certificate sensor-thl-001
    ```
 
-   This command creates a new X.509 certificate .pem and .pfx pair that are signed by the CA certificate that was generated previously. Notice that the device ID (**sensor-thl-001**) is passed to the **create_device_certificate** command of the **certGen.sh** script. This device ID is set within the *common name*, or *CN=*, value of the device certificate. This certificate generates a leaf device X.509 certificate for your simulated device, and is used to authenticate the device with the Device Provisioning Service (DPS). This module uses the .pfx certificate file to validate the program that connects to DPS from your computer.
+   This command creates a new device X.509 certificate .pem and .pfx pair that are signed by the CA certificate that was generated previously. Notice that the device ID (**sensor-thl-001**) is passed to the **create_device_certificate** command of the **certGen.sh** script. This device ID is set within the *common name*, or *CN=*, value of the device certificate. This certificate generates a leaf device X.509 certificate for your simulated device, and is used to authenticate the device with the Device Provisioning Service (DPS). This module uses the .pfx certificate file to validate the program that connects to DPS from your computer.
 
-   Once the **create_device_certificate** command has completed, the generated X.509 device certificate pair is named **new-device.cert.pfx** and **new-device.cert.pem**, and is located within the **/certs** subdirectory.
+   Once the **create_device_certificate** command has completed, the generated X.509 device certificate pair is named **new-device.cert.pfx** and **new-device.cert.pem** respectively, and is located within the **/certs** subdirectory.
 
    > [!IMPORTANT]
    > This command overwrites any existing device certificate in the **/certs** subdirectory. If you want to create a certificate for multiple devices, ensure that you save a copy of **new-device.cert.pfx** and **new-device.cert.pem** each time you run the command.
 
-1. Rename the device certificate files to the device name that you created in the last step using the following commands:
+1. Rename the device certificate files to the sensor-thl-001 device name that you created in the last step using the following commands:
 
     ```sh
     mv ~/certificates/certs/new-device.cert.pfx ~/certificates/certs/sensor-thl-001-device.cert.pfx
@@ -54,7 +54,7 @@ In this exercise, you generate a device certificate using the root certificate, 
    > [!NOTE]
    > Watch for a browser prompt asking you to save the file. Click the **Click here to download your file.** or **Download file** message when prompted. The file will be downloaded to your computer's Download folder.
 
-In the next task, you start building the simulated devices that use the X.509 device certificates to authenticate with the Device Provisioning Service.
+In the next task, you start building the simulated devices that use the X.509 device certificates to authenticate with the Device Provisioning Service (DPS).
 
 ### Task 2: Configure a simulated device
 
@@ -64,7 +64,7 @@ In this task, you complete the following:
 
 * Create two project folders
 * Copy the downloaded device certificate into the root folder of the application
-* Configure the application in Visual Studio Code to use the ID Scope from DPS
+* Configure the application in Visual Studio Code to use the DPS ID Scope
 
 1. On your development machine, create two folders in your preferred working directory:
 
@@ -341,7 +341,7 @@ In this task, you complete the following:
 
 1. Locate the **dpsIdScope** variable
 
-1. Update the assigned value using the **ID Scope** that you retrieved when you created the DPS instance.
+1. Update the assigned value using the **DPS ID Scope** that you retrieved when you created the DPS instance.
 
     When you have updated your code, it should look similar to the following:
 
@@ -350,7 +350,7 @@ In this task, you complete the following:
     ```
 
     > [!NOTE]
-    > If you don't have the DPS ID Scope (idScope) value, you can get a copy from from the Overview pane of the Device Provisioning Service in the Azure portal or by running the cli command `az iot dps show --name dps-$suffix`.
+    > If you don't have the DPS ID Scope (idScope) value, you can get a copy from from the Overview pane of the Device Provisioning Service in the Azure portal or by running the CLI command `az iot dps show --name dps-$suffix`.
 
 1. Locate the **certificateFileName** variable, and notice that its value is set to the name of the device certificate file that you generated (**sensor-thl-001-device.cert.pfx**). If you named the certificate file something else, update the variable value to match.
 
@@ -360,9 +360,10 @@ In this task, you complete the following:
 
     The **certificatePassword** variable contains the password for the X.509 device certificate. It's set to **1234**, which is the default password used by the **certGen.sh** helper script when generating the X.509 certificates.
 
-    > **Important**: For the purpose of this lab, the password is hard coded. In a *production* scenario, the password needs to be stored in a more secure manner, such as in an Azure Key Vault. Additionally, the certificate file (PFX) should be stored securely on a production device using a Hardware Security Module (HSM).
+    > [IMPORTANT]
+    > For the purpose of this lab, the password is hard coded. In a *production* scenario, the password needs to be stored in a more secure manner, such as in an Azure Key Vault. Additionally, the certificate file (PFX) should be stored securely on a production device using a Hardware Security Module (HSM).
     >
-    > An HSM (Hardware Security Module), is used for secure, hardware-based storage of device secrets, and is the most secure form of secret storage. Both X.509 certificates and SAS tokens can be stored in the HSM. HSMs can be used with all attestation mechanisms the provisioning service supports.
+    > A HSM (Hardware Security Module), is used for secure, hardware-based storage of device secrets, and is the most secure form of secret storage. Both X.509 certificates and SAS tokens can be stored in the HSM. HSMs can be used with all attestation mechanisms the provisioning service supports.
 
 1. Open the Visual Studio Code **File** menu, then select **Save**.
 
