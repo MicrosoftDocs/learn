@@ -1,15 +1,6 @@
-Azure AI Vision service provides many capabilities that you can use to analyze images, including generating a descriptive caption, extracting relevant tags, identifying objects, determining image type and metadata, detecting human faces, known brands, and celebrities, and others.
+Computer vision is built on the analysis and manipulation of numeric pixel values in images. Machine learning models are trained using a large volume of images to enable common computer vision scenarios, such as image classification, object detection, automated image tagging, optical character recognition, and others
 
-You can find out more about using the Azure AI Vision service in the [service documentation](/azure/ai-services/computer-vision/overview?azure-portal=true).
+While you *can* create your own machine learning models for computer vision, the Azure AI Vision service provides many pretrained capabilities that you can use to analyze images, including generating a descriptive caption, extracting relevant tags, identifying objects, and others.
 
-## Clean-up
-
-It's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. 
-
-If you are continuing on to other modules in this learning path you can keep your resources for use in other labs.
-
-If you have finished learning, you can delete the resource group or individual resources from your Azure subscription:
-
-1. In the [Azure portal](https://portal.azure.com/), in the **Resource groups** page, open the resource group you specified when creating your resource.
-
-2. Click **Delete resource group**, type the resource group name to confirm you want to delete it, and select **Delete**. You can also choose to delete individual resources by selecting the resource(s), clicking on the three dots to see more options, and clicking **Delete**.
+> [!TIP]
+> You can find out more about using the Azure AI Vision service in the **[service documentation](/azure/ai-services/computer-vision/overview?azure-portal=true)**.

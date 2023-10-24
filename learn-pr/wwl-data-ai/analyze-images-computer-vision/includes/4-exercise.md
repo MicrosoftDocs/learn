@@ -1,7 +1,7 @@
-In this exercise, you will use [Vision Studio](https://portal.vision.cognitive.azure.com/gallery/featured) to try out the capabilities Azure AI Vision.
+If you have an Azure subscription, you can use [Vision Studio](https://portal.vision.cognitive.azure.com/gallery/featured) to explore the capabilities of Azure AI Vision.
 
 > [!NOTE]
-> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
+> If you don't already have one, you can [sign up for an Azure subscription](https://azure.microsoft.com/free?azure-portal=true), which includes free credits for the first 30 days.
 
 Launch the exercise and follow the instructions.
 

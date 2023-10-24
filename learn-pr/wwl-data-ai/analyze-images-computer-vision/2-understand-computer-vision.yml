@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-images-computer-vision.understand-computer-vision
-title: Understand computer vision
+title: Images and image processing
 metadata:
-  title: Understand computer vision
-  description: "Understand computer vision"
-  ms.date: 10/23/2023
+  title: Images and image processing
+  description: "Understand how computers process images"
+  ms.date: 10/24/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.service: artificial-intelligence
   ms.subservice: vision
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-computer-vision.md)]

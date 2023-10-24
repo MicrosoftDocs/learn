@@ -1,49 +1,114 @@
-Computer vision capabilities are built on deep learning models, which use layers of equations to make predictions about what is in images. The main type of deep learning model that supports computer vision is a **Convolutional neural network** (CNN), which uses pixel numbers from images as *features* to make calculations and predict *labels*.  
+Before we can explore image processing and other computer vision capabilities, it's useful to consider what an image actually *is* in the context of data for a computer program.
 
-For example, an image of an apple could be described as an array of pixel numbers (features), associated with the name of what they represent (label): 
+## Images as pixel arrays
 
-![A photo of an apple against a white background with a grid on top of it where each grid block has a pixel number in it.](../media/fruit-pixel1.png)
+To a computer, an image is an array of numeric *pixel* values. For example, consider the following array:
 
-Thus an array of numbers: 
 ```
-255 255 255 255 255 255 
-255 255 100 255 255 255
-255 100 100 100 255 255
-100 100 100 100 100 255
-255 255 255 255 255 255
-255 255 255 255 255 255
+ 0   0   0   0   0   0   0  
+ 0   0   0   0   0   0   0
+ 0   0  255 255 255  0   0
+ 0   0  255 255 255  0   0
+ 0   0  255 255 255  0   0
+ 0   0   0   0   0   0   0
+ 0   0   0   0   0   0   0
 ```
-can represent the label "apple". 
 
-CNNs extract features from images and use feature extraction layers to reduce the number of features from the potentially huge array of individual pixel values to a smaller feature set. A smaller feature set can make it easier for a computer to predict labels with speed and accuracy. 
+The array consists of seven rows and seven columns, representing the pixel values for a 7x7 pixel image (which is known as the image's *resolution*). Each pixel has a value between 0 (black) and 255 (white); with values between these bounds representing shades of gray. The image represented by this array looks similar to the following (magnified) image:
 
-CNNs consist of multiple layers, each performing a specific task in extracting features or predicting labels. One of the principal layer types is a convolutional layer that extracts important features in images. A convolutional layer works by applying a filter to images. The filter is defined by a matrix of weight values known as a filter kernel.
+![Diagram of a grayscale image.](../media/white-square.png)
 
-For example, a 3x3 matrix of weight values can look like this: 
- 1  -1   1
--1   0  -1
- 1  -1   1
+The array of pixel values for this image is two-dimensional (representing rows and columns, or *x* and *y* coordinates) and defines a single rectangle of pixel values. A single layer of pixel values like this represents a grayscale image. In reality, most digital images are multidimensional and consist of three layers (known as *channels*) that represent red, green, and blue (RGB) color hues. For example, we could represent a color image by defining three channels of pixel values that create the same square shape as the previous grayscale example:
 
-Let's take a look at how the filter kernel can be applied to an array of pixels to create a feature map.  
+```
+Red:
+ 0   0   0   0   0   0   0  
+ 0   0   0   0   0   0   0
+ 0   0  255 255 255  0   0
+ 0   0  255 255 255  0   0
+ 0   0  255 255 255  0   0
+ 0   0   0   0   0   0   0
+ 0   0   0   0   0   0   0
 
-![An animation showing what is outlined in the five steps below on how a feature map is created.](../media/steps-to-create-feature-map.gif)
+Green:
+ 0   0   0   0   0   0   0  
+ 0   0   0   0   0   0   0
+ 0   0  255 255 255  0   0
+ 0   0  255 255 255  0   0
+ 0   0  255 255 255  0   0
+ 0   0   0   0   0   0   0
+ 0   0   0   0   0   0   0
 
-1. An image is passed to the convolutional layer. In this case, the image is a simple geometric shape.
-2. The image is composed of an array of pixels with values between 0 and 255 (for color images, this is usually a 3-dimensional array with values for red, green, and blue channels).
-3. A filter kernel is generally initialized with random weights. This filter will be used to extract a feature map from the image data.
-4. The filter is convolved across the image, calculating feature values by applying a sum of the weights multiplied by their corresponding pixel values in each position. A Rectified Linear Unit (ReLU) activation function is applied to ensure negative values are set to 0.
-5. After convolution, the feature map contains the extracted feature values, which often emphasize key visual attributes of the image. In this case, the feature map highlights the edges and corners of the triangle in the image.
+Blue:
+ 0   0   0   0   0   0   0  
+ 0   0   0   0   0   0   0
+ 0   0  255 255 255  0   0
+ 0   0  255 255 255  0   0
+ 0   0  255 255 255  0   0
+ 0   0   0   0   0   0   0
+ 0   0   0   0   0   0   0
+```
 
-Different calculations can be done with the arrays of numbers in a feature map. Usually, a CNN ends with a fully connected network in which the feature values are passed into an input layer, through one or more hidden layers, and generate predicted values in an output layer.
+Here's the resulting image:
 
-![An image of the steps of a basic CNN architecture.](../media/convolutional-neural-network.png)
+![Diagram of a color image.](../media/color-square.png)
 
-## Predictions and evaluations 
+## Using filters to process images
 
-To be useful in real-life scenarios, computer vision applications need to make predictions that mimic or improve upon the performance of human eyes. 
+A common way to perform image processing tasks is to apply *filters* that modify the pixel values of the image to create a visual effect. A filter is defined by one or more arrays of pixel values, called filter *kernels*. For example, you could define filter with a 3x3 kernel as shown in this example:
 
-Evaluation metrics help us understand how well a model is performing. That information can be used to improve the model. One metric is a *confidence score*, which is a value between 0 and 1, and indicates how likely the image contains the items in its description. When a computer vision model makes a prediction, that prediction has a probability of reflecting the truth.
+```
+-1 -1 -1
+-1  8 -1
+-1 -1 -1
+```
 
-Importantly, each time the computer vision model is run, the resulting trained model can differ. One of the causes for variations in the trained model is the setting of the initial values of the model's parameters (its weights and biases) before training. 
+The kernel is then *convolved* across the image, calculating a weighted sum for each 3.3 patch of pixels and assigning the result to a new image. It's easier to understand how the filtering works by exploring a step-by-step example.
 
-The complexity of training computer vision models is why pretrained vision models are so valuable. Next we will explore how Azure AI Vision's vision capabilities, powered by CNNs and other deep learning models, can make it possible for engineers to build intelligent vision applications without a background in deep learning.   
+Let's start with the grayscale image we explored previously:
+
+```
+ 0   0   0   0   0   0   0  
+ 0   0   0   0   0   0   0
+ 0   0  255 255 255  0   0
+ 0   0  255 255 255  0   0
+ 0   0  255 255 255  0   0
+ 0   0   0   0   0   0   0
+ 0   0   0   0   0   0   0
+```
+
+First, we apply the filter kernel to the top left patch of the image, multiplying each pixel value by the corresponding weight value in the kernel and adding the results:
+
+```
+(0 x -1) + (0 x -1) + (0 x -1) +
+(0 x -1) + (0 x 8) + (0 x -1) +
+(0 x -1) + (0 x -1) + (255 x -1) = -255
+```
+
+The result (-255) becomes the first value in a new array. Then we move the filter kernel along one pixel to the right and repeat the operation:
+
+```
+(0 x -1) + (0 x -1) + (0 x -1) +
+(0 x -1) + (0 x 8) + (0 x -1) +
+(0 x -1) + (255 x -1) + (255 x -1) = -510
+```
+
+Again, the result is added to the new array, which now contains two values:
+
+```
+-255  -510
+```
+
+The process is repeated until the filter has been convolved across the entire image, as shown in this animation:
+
+![Diagram of a filter.](../media/filter.gif)
+
+The filter is convolved across the image, calculating a new array of values. Some of the values may be outside of the 0 to 255 pixel value range, so the values are adjusted to fit into that range. Because of the shape of the filter, the outside edge of pixels isn't calculated, so a padding value (usually 0) is applied. The resulting array represents a new image in which the filter has transformed the original image. In this case, the filter has had the effect of highlighting the *edges* of shapes in the image.
+
+To see the effect of the filter more clearly, here's an example of the same filter applied to a real image:
+
+| Original Image | Filtered Image |
+|--|--|
+|![Diagram of a banana.](../media/banana-grayscale.png)| ![Diagram of a filtered banana.](../media/laplace.png)|
+
+Because the filter is convolved across the image, this kind of image manipulation is often referred to as *convolutional filtering*. The filter used in this example is a particular type of filter (called a *laplace* filter) that highlights the edges on objects in an image. There are many other kinds of filter that you can use to create blurring, sharpening, color inversion, and other effects.

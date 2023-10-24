@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-images-computer-vision.get-started
-title: Get started with image analysis on Azure
+title: Azure AI Vision
 metadata:
-  title: Get started with image analysis on Azure
-  description: "Get started with image analysis on Azure"
-  ms.date: 10/23/2023
+  title: Azure AI Vision
+  description: "Get started with Azure AI Vision"
+  ms.date: 10/24/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial

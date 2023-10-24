@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-images-computer-vision
 metadata:
   title: Fundamentals of Computer Vision
   description: "Analyze images with the Computer Vision service."
-  ms.date: 10/23/2023
+  ms.date: 10/24/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -31,6 +31,7 @@ subjects:
 units:
 - learn.wwl.analyze-images-computer-vision.introduction
 - learn.wwl.analyze-images-computer-vision.understand-computer-vision
+- learn.wwl.analyze-images-computer-vision.computer-vision-models
 - learn.wwl.analyze-images-computer-vision.get-started
 - learn.wwl.analyze-images-computer-vision.exercise
 - learn.wwl.analyze-images-computer-vision.knowledge-check
