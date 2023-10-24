@@ -2,7 +2,7 @@ In this exercise, we'll use Azure portal and PowerShell to configure storage met
 
 ## Create a storage account
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account with which you activated the sandbox.
+1. Select [this link](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to sign in to the Azure portal. This link signs you in to the Azure portal by using the same account with which you activated the sandbox.
 
 2. In the Azure portal, select **Create a resource**.
 
@@ -47,17 +47,15 @@ Before you can add blobs to a storage account, you need to create a blob contain
 
 To upload a single file to the blob container:
 
-1. Open the **monitor-blobs-container** container, and then select **Upload**.
+1. Open the **monitor-blobs-container** container, and then select **Browse for files**.
 
-2. On the **Upload blob** pane, select the folder icon.
+2. In the **Open** dialog box, select a small text file from your local file system, and select **Open**.
 
-3. In the **Open** dialog box, select a small text file from your local file system, and select **Open**.
+3. Wait for one minute, and then repeat these steps to upload a different file.
 
-4. Wait for one minute, and then repeat these steps to upload a different file.
+4. Wait for another minute, and then repeat these steps to upload another file.
 
-5. Wait for another minute, and then repeat these steps to upload another file.
-
-6. Wait for several more minutes before continuing with the next section.
+5. Wait for several more minutes before continuing with the next section.
 
 ## Visualize metrics in the Azure portal
 
@@ -73,9 +71,7 @@ Transaction metrics are emitted on every request to a storage account, so you sh
 
 5. On the bar that appears beneath the chart title, select **Line chart**, and then **Bar chart**.
 
-6. Under **Chart Title**, select **Add metric**.
-
-7. Change the **metric namespace** to **Blob**, select **ingress** for **metric**.
+6. Change the **metric namespace** to **Blob**, select **ingress** for **metric**.
 
    The following image shows a bar for every file upload operation in the last hour.
 

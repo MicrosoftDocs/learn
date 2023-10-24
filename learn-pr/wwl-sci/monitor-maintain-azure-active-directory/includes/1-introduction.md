@@ -1,4 +1,4 @@
-Microsoft Entra ID, part of Microsoft Entra audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
+Microsoft Entra ID audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
 
 In this module, you will:
 

@@ -15,7 +15,7 @@ The second step is sometimes called *reflection about the mean* or *diffusion*. 
 
 ## Step 1: Reflect about uniform superposition
 
-In the [previous module that used Grover's algorithm](/training/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true), the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. In that case, the creation of the superposition is straightforwardly handled by applying the `H` operation to each individual qubit.
+In the [Implement Grover's search algorithm in Q#](/azure/quantum/tutorial-qdk-grovers-search?azure-portal=true) tutorial, the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. In that case, the creation of the superposition is straightforwardly handled by applying the `H` operation to each individual qubit.
 
 Because we're interested in only the number states $0-9$ here, we have no use for the remaining states ($10-15$) that our four qubits can represent. Therefore, we'll only use and reflect about the uniform superposition $\sum_{i=0}^9 |i \rangle$.
 
@@ -70,26 +70,34 @@ Recall that the incomplete ISBNs are provided as 10-integer arrays with the miss
 
 :::code language="qsharp" source="../code/5-program-6.qs":::
 
-## Step 5: Run the full program
+## Step 5: Build the full program
 
-You need to have access to all the operations, so be sure to include the `open` statements as follows. (We include the corresponding operations that they provide in case you're curious.)
+You need to have access to all the library operations, so we'll include the `open` statements as follows. (We include the corresponding operations that they provide in case you're curious.)
 
 :::code language="qsharp" source="../code/5-program-7.qs":::
 
-To perform the full search, define the operation `SearchForMissingDigit` as follows. Be sure to include the `@EntryPoint()` attribute before it, so you can run it from the command line.
+To perform the full search, we'll define the operation `SearchForMissingDigit` that calls all the operations and functions we've defined so far. Note the required `@EntryPoint()` attribute before it, so the program knows where to start when you run it from the command line. 
 
-Your program file should look like the following:
+## Step 6: Run the program on the simulator
+
+Your complete program file should now look like the following:
 
 :::code language="qsharp" source="../code/5-program-8.qs":::
 
 > [!NOTE]
-> This code snippet does not currently run on any available Azure Quantum hardware targets, as the callable `MeasureInteger` requires a QPU with [full computation profile](/azure/quantum/quantum-computing-target-profiles#create-and-run-applications-for--profile-targets).
+> While this program runs on the built-in quantum simulator, it does not currently run on any available Azure Quantum hardware targets, as the callable `MeasureInteger` requires a QPU with [full computation profile](/azure/quantum/quantum-computing-target-profiles#create-and-run-applications-for--profile-targets).
 >
 > Learn module code that does not feature such a notice is executable on current hardware targets.
 
+To run the program:
+
+1. Create and open a Q# project in VS Code named *ISBNGrover*. See [Install the QDK for Visual Studio Code](/training/modules/qsharp-create-first-quantum-development-kit/2-install-quantum-development-kit-code?azure-portal=true) if you need a refresher on the steps to create a Q# project. 
+1. Copy the complete program code you just created and paste it into the *program.qs* file of your new project. 
+1. Open a terminal window in VS Code and run `dotnet run`. VS Code will use the quantum simulator by default. 
+
 ## Find your missing digit
 
-Enter `dotnet run` in the command line, and you should see the following output:
+After the program runs, you should see the following output:
 
 ```output
 ISBN with missing digit: [0,3,0,6,-1,0,6,1,5,2]
