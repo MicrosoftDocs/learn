@@ -1,4 +1,4 @@
-In this exercise, you will test out Optical Character Recognition using Azure Vision Studio. 
+In this exercise, you'll test out Optical Character Recognition using Azure Vision Studio. 
 
 > [!NOTE]
 > To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
