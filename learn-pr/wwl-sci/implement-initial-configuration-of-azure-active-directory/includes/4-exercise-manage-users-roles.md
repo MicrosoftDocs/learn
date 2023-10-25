@@ -4,7 +4,7 @@ In this exercise, you'll create a user account to use in the exercises.
 
 ## Create an Azure account and add Microsoft Entra ID Premium P2 trial licenses
 
-The tasks in this exercise and the exercises in this learning path require you to already have an Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you may skip this task and continue to the next.
+The tasks in this exercise and the exercises in this learning path require you to already have an Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you might skip this task and continue to the next.
 
 1.  In a web browser, go to [Azure portal](https://azure.microsoft.com/free/).
 2.  Scroll down through the page to learn more about the benefits and free services available.
@@ -16,8 +16,8 @@ The tasks in this exercise and the exercises in this learning path require you t
 8.  Under Getting started with Microsoft Entra ID, select **Get a free trial for Microsoft Entra ID Premium**.
 9.  In the Activate pane, underMicrosoft Entra ID **PREMIUM P2**, select **Free trial** and then select **Activate**.
 10. In the navigation menu on the left, select **Overview**.
-11. Refresh the browser until you see Microsoft Entra ID Premium P2 under the organization name. It may take a couple of minutes.
-12. You may need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.
+11. Refresh the browser until you see Microsoft Entra ID Premium P2 under the organization name. It might take a couple of minutes.
+12. You might need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.
 
 ## Add a new user
 

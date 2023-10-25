@@ -13,7 +13,7 @@ Microsoft Entra ID is intended for:
 
 In Microsoft Entra ID, if one of your users needs permission to manage Microsoft Entra resources, you must assign them to a role that provides the permissions they need.
 
-If you're new to Azure, you may find it a little challenging to understand all the different roles in Azure. The following section helps explain the following roles and provides additional information on Azure roles and Microsoft Entra roles:
+If you're new to Azure, you might find it a little challenging to understand all the different roles in Azure. The following section helps explain the following roles and provides additional information on Azure roles and Microsoft Entra roles:
 
  -  Classic subscription administrator roles
  -  Azure roles
