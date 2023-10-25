@@ -8,8 +8,7 @@ metadata:
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22, devx-track-extended-java
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-deploy-kubernetes.md)]

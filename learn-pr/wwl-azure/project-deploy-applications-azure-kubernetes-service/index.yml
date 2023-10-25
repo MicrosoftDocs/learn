@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   None
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:
