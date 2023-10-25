@@ -7,8 +7,7 @@ metadata:
   ms.date: 07/23/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: learning-path
 title: Take your first steps with F#
 summary: |
   Interested in learning to program with F# but don't know where to start? Start here! Learn the basic syntax and features of the language. In this learning path you'll:
