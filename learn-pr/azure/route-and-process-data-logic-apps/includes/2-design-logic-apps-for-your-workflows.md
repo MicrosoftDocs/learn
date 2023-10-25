@@ -41,7 +41,7 @@ To decide which pre-built component to implement, we need to be clear about comp
 
 A *connector* is a group of related triggers and actions. Conceptually, you can think of a connector as a component that lets you access a service or system. For example, the X connector lets you send and receive tweets, while the Microsoft 365 Outlook connector allows you to manage your email, calendar, and contacts. The following diagram shows the X connector and its operations divided into the two categories.
 
-:::image type="content" source="../media/twitter-connector-details.png" alt-text="Diagram showing the triggers and actions available in the X connector." border="false":::
+:::image type="content" source="../media/x-connector-details.png" alt-text="Diagram showing the triggers and actions available in the X connector." border="false":::
 
 Now, you need to map each task in your flowchart to the triggers and actions available in Azure Logic Apps. The following diagram shows the connectors we'd use in the social media app with the relevant triggers and actions highlighted.
 
