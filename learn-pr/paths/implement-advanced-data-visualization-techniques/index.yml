@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/26/2022
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Implement advanced data visualization techniques by using Power BI
 prerequisites: |
   - Ability to visualize data and create reports in Power BI Desktop.
