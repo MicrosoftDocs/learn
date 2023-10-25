@@ -106,7 +106,7 @@ In this task, you'll run our application from the Integrated Terminal and verify
 
     double VndToUsd(int vnd) 
     {
-        int rate = 23500;
+        double rate = 23500;
         return vnd / rate;
     }
     ```
