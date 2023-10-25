@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/07/2022
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Develop data insights and business integrations
 prerequisites: |
   Ability to:
