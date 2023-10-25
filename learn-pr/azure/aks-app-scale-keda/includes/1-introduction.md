@@ -1,5 +1,3 @@
-Kubernetes Event-driven Autoscaling (KEDA) works alongside standard Kubernetes components like the Horizontal Pod Autoscaler (HPA), and the Cluster Autoscaler. KEDA extends functionality without overwriting or duplication.
-
 ## Example scenario
 
 You work for a growing video editing company that provides a cloud-based video rendering service.  Usage of its client application peaks at various times during a 24-hr period. Due to increasing and decreasing demand, the company needs to scale its application accordingly to provide a better experience to all customers. Since the application is event driven and receives a significant number of events at various times; CPU and Memory based metrics are not representative of pending work to scale properly. As the DevOps engineer, you need to assess which tools will help achieve the company's scaling needs.  
