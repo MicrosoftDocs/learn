@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.wwl.detect-objects-images-custom-vision
 metadata:
-  title: Detect objects in images with the Custom Vision service
-  description: "Detect objects in images with the Custom Vision service"
-  ms.date: 04/17/2023
+  title: Detect objects in images with Azure AI Custom Vision
+  description: "Learn how to use Azure AI Custom Vision to create an object detection solution using the Custom Vision studio."
+  ms.date: 08/21/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
+  ms.service: artificial-intelligence
   ms.subservice: custom-vision
-title: Detect objects in images with the Custom Vision service
+title: Detect objects in images with Azure AI Custom Vision
 summary: Object detection is a form of computer vision in which artificial intelligence (AI) agents can identify and locate specific types of object in an image or camera feed.
 abstract: |
-  Learn how to use the Custom Vision service to create an object detection solution.
+  Learn how to use Azure AI Custom Vision to create an object detection solution.
 prerequisites: |
   Ability to navigate the Azure portal
 iconUrl: /training/achievements/detect-objects-images-custom-vision.svg

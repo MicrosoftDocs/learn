@@ -4,12 +4,12 @@ title: Exercise - Customize the dashboard
 metadata:
   title: Exercise - Customize the dashboard
   description: Customize the dashboard and add new quick-access tiles to your Azure portal dashboard.
-  ms.date: 09/24/2018
+  ms.date: 08/18/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: true
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-customize-the-dashboard.md)]

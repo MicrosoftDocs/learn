@@ -24,6 +24,6 @@ quiz:
     - content: "Active Directory"
       isCorrect: false
       explanation: "Incorrect. Windows Servers that are deployed as part of a Kubernetes cluster node pool are not automatically joined to Active Directory."
-    - content: "Azure Active Directory"
+    - content: "Microsoft Entra ID"
       isCorrect: false
-      explanation: "Incorrect. Windows Server does not support Azure Active Directory authentication."
+      explanation: "Incorrect. Windows Server does not support Microsoft Entra authentication."

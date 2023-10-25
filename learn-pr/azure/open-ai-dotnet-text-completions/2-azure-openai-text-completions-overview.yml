@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.open-ai-dotnet-text-completions.2-azure-openai-text-completions-overview
+title: Overview Azure OpenAI and text completions
+metadata:
+  title: Overview Azure OpenAI and Text completions
+  description: An overview of what Azure OpenAI is and the benefits of using text completions to query your data
+  ms.date: 08/24/2023
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-azure-openai-text-completions-overview.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What does a classification completion do?
+    choices:
+    - content: Transformation
+      isCorrect: false
+      explanation: Transformation allows the model to summarize, convert and express data in different ways.
+    - content: Sort data into pre-defined categories
+      isCorrect: true
+      explanation: Classification instructs the model what category to sort the data into and provides some examples.
+    - content: Translation
+      isCorrect: false
+      explanation: Translation allows the model to convert text from one language to another.
+    - content: Conversion
+      isCorrect: false
+      explanation: Conversion allows the model to convert text from one format to another, such as text to emoji.

@@ -1,6 +1,6 @@
 Organizations often have different development teams working on multiple projects and applications.
 
-In our banking institution example, it would be necessary to configure a project a repository structure that supports secure access and permissions to pipelines.
+In our banking institution example, it would be necessary to configure a project and repository structure that supports secure access and permissions to pipelines.
 
 Here, you'll learn about fundamental concepts for giving access and permissions, the benefits of separating a project, how to separate a project into other projects and repositories, and separate secure files between projects.
 
@@ -52,7 +52,7 @@ Here's what you need to know about permission settings:
 
 **Do:**
 
-- Use Microsoft Entra ID (former Azure Active Directory), Active Directory, or Windows security groups when managing lots of users.
+- Use Microsoft Entra ID (formerly Azure Active Directory), Active Directory, or Windows security groups when managing lots of users.
 
 - When adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.
 

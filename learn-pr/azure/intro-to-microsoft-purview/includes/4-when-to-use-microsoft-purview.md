@@ -1,9 +1,9 @@
-In this unit, we discuss how you can decide if Microsoft Purview is the right choice for your data governance and discovery needs. The criteria that indicate whether Microsoft Purview will meet your requirements are:
+In this unit, we discuss how you can decide whether Microsoft Purview is the right choice for your data governance and discovery needs. The criteria that indicate whether Microsoft Purview will meet your requirements are:
 
 * Discovery
 * Governance
 
-Let's take a look at the criteria and see how Microsoft Purview can help address the needs in those specific areas.
+Let's take a look at these criteria and see how Microsoft Purview can help address their needs.
 
 ## Discovery
 
@@ -27,7 +27,7 @@ Let's take a look at how Microsoft Purview can address the data discovery and go
 
 ### Does Microsoft Purview help with data discovery?
 
-Do you require a solution or centralized location to register data sources? Often, users might be unaware of a data source unless they come into contact with it as part of another process. Microsoft Purview can help to provide a solution.
+Do you require a solution or centralized location to register data sources? Often, users might be unaware of a data source unless they come into contact with it as part of another process. Microsoft Purview can help provide a solution.
 
 After you've registered data sources in the Microsoft Purview governance portal and displayed them in the data map, you can set up scanning of those data sources. The metadata that's returned catalogs the data in those sources. In this way, it's easier for users to discover what the data sources contain. The metadata is indexed to make each data source easy to discover via search. It's also more understandable to the users who discover it.
 
@@ -43,6 +43,6 @@ Microsoft Purview also uses predefined Data Plane roles to help control who has 
 
 * **Purview Data Reader role**: Has access to the Microsoft Purview governance portal and can read all content in Microsoft Purview except for scan bindings.
 * **Purview Data Curator role**: Has access to the Microsoft Purview governance portal and can read all content in Microsoft Purview except for scan bindings. Can edit information about assets, classification definitions, and glossary terms. Can also apply classifications and glossary terms to assets.
-* **Purview Data Source Administrator role**: Doesn't have access to the Microsoft Purview governance portal because the user must also be in the Data Reader or Data Curator roles. Can manage all aspects of scanning data into Microsoft Purview. Doesn't have read or write access to content in Microsoft Purview beyond those tasks related to scanning.
+* **Purview Data Source Administrator role**: Doesn't have access to the Microsoft Purview governance portal (unless the user is also in the Data Reader or Data Curator roles). Can manage all aspects of scanning data into Microsoft Purview. Doesn't have read or write access to content in Microsoft Purview beyond those tasks related to scanning.
 
 These roles are assigned by using the collections where your data sources are registered. You can grant users access to the data they might need without granting them access to the entire data estate. By assigning roles, you can promote resource discoverability while still protecting sensitive information.

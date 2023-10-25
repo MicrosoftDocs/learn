@@ -2,11 +2,13 @@ After installing updates or hotfixes to Azure Stack, new features may be introdu
 
 ## Download Azure Stack tools
 
-The Azure Stack tools GitHub repository contains PowerShell modules that support Azure Stack functionality, including updating permissions on Azure AD. During the registration process, you must import and use the **AzureStack.Connect** and **AzureStack.Identity** PowerShell modules, found in the Azure Stack tools repository, to update the permissions on Azure AD for the Azure Stack Hub stamp.
+The Azure Stack tools GitHub repository contains PowerShell modules that support Azure Stack functionality, including updating permissions on Microsoft Entra ID. During the registration process, you must import and use the **AzureStack.Connect** and **AzureStack.Identity** PowerShell modules, found in the Azure Stack tools repository, to update the permissions on Microsoft Entra ID for the Azure Stack Hub stamp.
 
 To ensure that you are using the latest version, delete any existing versions of the Azure Stack tools, then [download the latest version from GitHub](/azure-stack/operator/azure-stack-powershell-download) before proceeding.
 
-## Updating Azure AD tenant permissions
+<a name='updating-azure-ad-tenant-permissions'></a>
+
+## Updating Microsoft Entra tenant permissions
 
 You should now be able to update the permissions, which should clear the alert. Run the following commands from the **Azurestack-tools-master/identity** folder:
 
@@ -24,4 +26,4 @@ Update-AzsHomeDirectoryTenant -AdminResourceManagerEndpoint $adminResourceManage
 
 ```
 
-The script prompts you for administrative credentials on the Azure AD tenant, and takes several minutes to run. The alert should clear after you have run the cmdlet.
+The script prompts you for administrative credentials on the Microsoft Entra tenant, and takes several minutes to run. The alert should clear after you have run the cmdlet.

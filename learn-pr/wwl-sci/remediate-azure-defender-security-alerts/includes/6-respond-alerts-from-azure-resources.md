@@ -32,11 +32,11 @@ If you don't recognize the user or application, or if you think the access shoul
 
   - Remove the corresponding security principal, or restrict the operations the security principal can perform.
 
-- If the source of the alert has an Azure Active Directory role in your tenant:
+- If the source of the alert has a Microsoft Entra role in your tenant:
 
   - Contact your administrator.
 
-  - Determine whether there's a need to reduce or revoke Azure Active Directory permissions.
+  - Determine whether there's a need to reduce or revoke Microsoft Entra permissions.
 
 ### Identify impact
 
@@ -125,4 +125,3 @@ Contact the resource owner to determine whether the behavior was expected or int
   - Run a full antimalware scan on the machine
 
   - Reimage the machines from a malware-free source
-

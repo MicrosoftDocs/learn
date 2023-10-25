@@ -1,3 +1,4 @@
+
 Now you've a well-managed, secured, and cost-effective search solution. The next step is to make sure your service is highly available and protected from disasters. 
 
 Here, you'll explore how to protect your search service reliability and make it more responsive globally.

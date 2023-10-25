@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   - Experience with hybrid and cloud implementations.
-iconUrl: /training/achievements/design-solutions-security-posture-management-hybrid-multicloud-environments.svg
+iconUrl: /training/achievements/design-solutions-posture-management-hybrid-multicloud-environments.svg
 levels:
 - advanced
 roles:

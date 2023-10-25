@@ -28,7 +28,7 @@ products:
   - azure
   - azure-functions
   - azure-app-service
-  - azure-app-service-static
+  - static-web-apps
 prerequisites: |
   - Familiarity with one of Angular, React, Svelte, or Vue
   - Active [Node Version Manager](https://github.com/nvm-sh/nvm#git-install)

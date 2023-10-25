@@ -24,7 +24,7 @@ Email notifications can be configured when users report fraud alerts. These noti
 
 ## OATH tokens
 
-Azure AD supports the use of OATH-TOTP SHA-1 tokens that refresh codes every 30 or 60 seconds. Customers can purchase these tokens from the vendor of their choice.
+Microsoft Entra ID supports the use of OATH-TOTP SHA-1 tokens that refresh codes every 30 or 60 seconds. Customers can purchase these tokens from the vendor of their choice.
 
 ## Trusted IPs
 

@@ -7,7 +7,7 @@ In this unit, learn how to configure and validate approvals and branch checks in
 ## Set up approvals and checks
 
 1. In your Azure DevOps project, click on Environments under Pipelines.
-2. Select the environment you want to create the approval or branch check. If you don't have an environment, you can create one by clicking on the "New environment" button.
+2. Select the environment for which you want to create the approval or branch check. If you don't have an environment, you can create one by clicking on the "New environment" button.
 3. Click on the three dots "..." button next to the Add resource button and select "Approvals and Checks" from the dropdown menu.
 
     ![Screenshot of Azure DevOps showing how to add approvals and checks to existing testing environment.](../media/environment-approvals-checks.png)
@@ -15,7 +15,7 @@ In this unit, learn how to configure and validate approvals and branch checks in
 4. To add an approval check, select the "Approvals".
 5. In the "Add Approvals" dialog box, you can configure the details of the approval check, such as the approvers, the instructions to approvers, if the approver can approve their own runs, and the approval timeout.
 
-    ![Screenshot of Azure DevOps showing how to add a new approvals to the existing testing environment.](../media/add-environment-approval.png)
+    ![Screenshot of Azure DevOps showing how to add a new approval to the existing testing environment.](../media/add-environment-approval.png)
 
 6. Click on the Create button to create the approval check.
 7. Back to "Approvals and Checks" to add a branch check, select the "Branch control".

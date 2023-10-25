@@ -1,12 +1,12 @@
-XAML is a mark-up language that you can use to build your UI instead of C# code. Using XAML, you can split up your UI and behavior code to make both easier to manage.
+XAML is a markup language that you can use to build your UI instead of C# code. Using XAML, you can split up your UI and behavior code to make both easier to manage.
 
-In this unit, you'll compare the use of XAML to defining the UI layout using C# code. You'll learn about some of the benefits of using XAML as a mark-up language to define your UI.
+In this unit, you'll compare the use of XAML to defining the UI layout using C# code. You'll learn about some of the benefits of using XAML as a markup language to define your UI.
 
-## What is a mark-up language?
+## What is a markup language?
 
-A mark-up language is a computer language that you can use to introduce various elements in a document. You describe elements using predefined tags. The tags have specific meaning in the context of the domain where the document is used.
+A markup language is a computer language that you can use to introduce various elements in a document. You describe elements using predefined tags. The tags have specific meanings in the context of the domain where the document is used.
 
-For example, you can use Hypertext mark-up Language (HTML) to create a webpage that you can display in a web browser. You don't need to understand all the tags that are used in the following example. What's important to see is that this code describes a document that has the text "Hello World!" as its content.
+For example, you can use Hypertext Markup Language (HTML) to create a webpage that you can display in a web browser. You don't need to understand all the tags that are used in the following example. What's important to see is that this code describes a document that has the text "Hello World!" as its content.
 
 ```HTML
 <!DOCTYPE html>
@@ -17,29 +17,29 @@ For example, you can use Hypertext mark-up Language (HTML) to create a webpage t
 </html>
 ```
 
-You've likely already worked with a mark-up language. You might have created a webpage using HTML, or you might have modified the Extensible mark-up Language (XML) definitions in a Visual Studio project.csproj file. This file is parsed and processed by the Microsoft build tools.
+You've likely already worked with a markup language. You might have created a webpage using HTML, or you might have modified the Extensible Markup Language (XML) definitions in a Visual Studio project.csproj file. The Microsoft build tools parse and process this file.
 
-It's common for files that contain mark-up language to be processed and interpreted by other software tools. This interpretative nature of mark-up is exactly how XAML is intended to work. However, the software tools that interpret it, help to generate the app UI.
+It's common for files that contain markup language to be processed and interpreted by other software tools. This interpretative nature of markup is exactly how XAML is intended to work. However, the software tools that interpret it help to generate the app UI.
 
 ## What is XAML?
 
-XAML is a declarative mark-up language created by Microsoft. XAML was designed to simplify the process of creating the UI in applications.
+XAML is a declarative markup language created by Microsoft. XAML was designed to simplify the process of creating the UI in applications.
 
-The XAML documents you create contain elements that declaratively describe the application UI elements. Keep in mind that these elements in XAML directly represent the instantiation of objects. Once you've define an element in XAML, you can access it in code-behind files and define behavior using C# code.
+The XAML documents you create contain elements that declaratively describe the application's UI elements. Keep in mind that these elements in XAML directly represent the instantiation of objects. Once you've defined an element in XAML, you can access it in code-behind files and define behavior using C# code.
 
 ## Difference between .NET MAUI XAML and Microsoft XAML
 
-XAML is based on the Microsoft 2009 XAML specification. However, the specification defines only the syntax of the language. As with Windows Presentation Foundation (WPF), Universal Windows Platform (UWP), and WinUI 3, all of which use XAML, the elements you declare in the XAML will change.
+XAML is based on the Microsoft 2009 XAML specification. However, that specification defines only the language syntax. As with Windows Presentation Foundation (WPF), Universal Windows Platform (UWP), and WinUI 3, all of which use XAML, the elements you declare in the XAML will change.
 
 XAML first appeared in 2006, with WPF. If you've been working with Microsoft XAML for a while, the XAML syntax should look familiar.
 
-There are some key differences between the .NET MAUI flavor of XAML and XAML used by other UI tools. The structure and concepts are similar. However, some of the names of the classes and properties are different.
+There are some key differences between the .NET MAUI flavor of XAML and XAML used by other UI tools. The structure and concepts are similar, but some of the names of the classes and properties are different.
 
 ## Create a UI by using .NET MAUI XAML
 
 The best way to see XAML in action is to look at an example of an existing C# coded ContentPage page type. You can then compare it to another page that has the same UI defined using XAML.
 
-Suppose you have the following coded `ContentPage` in your app.
+Suppose you have the following coded `ContentPage` in your app:
 
 ```CSharp
 namespace MauiCode;
@@ -83,7 +83,7 @@ public partial class MainPage : ContentPage
 
 The page contains a layout container, two labels, two entries, and a button. The code also handles the Clicked event for the button. There are also only a few design properties set on the elements in the page. At runtime, on an Android device, the page looks like this:
 
-:::image type="content" source="../media/2-login-page.png" alt-text="Screenshot of the log-in page generated by the C# code. It shows a title, 2 text boxes for username and password. And a button to log in with.":::
+:::image type="content" source="../media/2-login-page.png" alt-text="Screenshot of the sign-in page generated by the C# code. It shows a title, two text boxes for username and password, and a button with which to sign in.":::
 
 Although the page has a simple design, it's a mix of behavior and design in the same file.
 
@@ -126,12 +126,12 @@ public partial class Page1 : ContentPage, IPage
 ```
 
 > [!NOTE]
-> The `InitializeComponent` method in the page constructor reads the XAML description of the page, loads the various controls on that page, and sets their properties. You only call this method if you define a page using XAML mark-up. The previous example showing how to create the UI using C# code doesn't invoke `InitializeComponent`.
+> The `InitializeComponent` method in the page constructor reads the XAML description of the page, loads the various controls on that page, and sets their properties. You only call this method if you define a page using XAML markup. The previous example showing how to create the UI using C# code doesn't invoke `InitializeComponent`.
 
-This structure allows for the separation of design and behavior. The entire declaration of the UI is contained in a single dedicated source file. It's separate from the UI behavior. Additionally, the XAML mark-up provides greater clarity for a developer trying to understand the look and feel of the application.
+This structure allows for the separation of design and behavior. The UI's entire declaration is contained in a single dedicated source file. It's separate from the UI behavior. Additionally, the XAML markup provides greater clarity for a developer trying to understand the look and feel of the application.
 
 ## Benefits of using XAML
 
-Using XAML enables you to separate the behavior logic from the UI design. This separation helps you build each piece independently and will make the entire app easier to manage as it grows.
+Using XAML allows you to separate the behavior logic from the UI design. This separation helps you build each piece independently and makes the entire app easier to manage as it grows.
 
-This approach also enables a specialist UI designer to work on updating the look and feel of the UI using XAML editing tools separately from a developer updating the UI logic.
+This approach also allows a specialist UI designer to work on updating the look and feel of the UI using XAML editing tools separately from a developer updating the UI logic.
