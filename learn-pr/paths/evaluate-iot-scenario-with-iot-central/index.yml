@@ -10,8 +10,7 @@ metadata:
   ms.author: sergaz
   ms.reviewer: adchukwu
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.prod: azure-iot-central
+  ms.topic: learning-path
 prerequisites: |
   - Basic familiarity with IoT terms and concepts
 iconUrl: /training/achievements/iot/evaluate-iot-scenario-with-iot-central.svg

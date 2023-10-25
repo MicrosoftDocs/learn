@@ -61,7 +61,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-clis
 - azure-container-instances
 - azure-container-registry
