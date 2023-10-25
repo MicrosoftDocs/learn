@@ -31,7 +31,7 @@ roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/me
   - developer
   - solution-architect
 products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-- azure-active-directory-b2c
+- entra-external-id
 - msal-node
 units:
 - learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.introduction
