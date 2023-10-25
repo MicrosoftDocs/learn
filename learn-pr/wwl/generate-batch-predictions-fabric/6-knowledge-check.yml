@@ -34,7 +34,7 @@ quiz:
       explanation: "Correct. Column-based signatures make for easier alignment with input columns."
     - content: "Tensor-based signature"
       isCorrect: false
-      explanation: "Incorrect. Tensor-based signatures provide greater flexibility and introduces unnecessary complexity."
+      explanation: "Incorrect. Tensor-based signatures provide greater flexibility and introduce unnecessary complexity."
     - content: "Signature with params"
       isCorrect: false
       explanation: "Incorrect. The params field in signatures is optional and not necessary for tabular data."
