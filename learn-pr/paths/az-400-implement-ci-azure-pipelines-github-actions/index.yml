@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/17/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-400: Implement CI with Azure Pipelines and GitHub Actions'
 prerequisites: |
   None
