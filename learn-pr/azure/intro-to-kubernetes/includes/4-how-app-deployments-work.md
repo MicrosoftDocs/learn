@@ -87,7 +87,7 @@ Cloud providers also provide their own networking solutions. For example, Azure 
 
 A Kubernetes service is a Kubernetes object that provides stable networking for pods. A Kubernetes service enables communication between nodes, pods, and users of your app, both internal and external, to the cluster.
 
-Kubernetes assigns a service an IP address on creation, just like a node or pod. These addresses get assigned from a service cluster's IP rang; for example, 10.96.0.0/12. A service is also assigned a DNS name based on the service name, and an IP port.
+Kubernetes assigns a service an IP address on creation, just like a node or pod. These addresses get assigned from a service cluster's IP range; for example, 10.96.0.0/12. A service is also assigned a DNS name based on the service name, and an IP port.
 
 In the drone-tracking app, network communication is as follows:
 
