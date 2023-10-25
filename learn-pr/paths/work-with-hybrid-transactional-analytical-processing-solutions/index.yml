@@ -6,8 +6,7 @@ metadata:
   ms.date: 07/01/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
 prerequisites: |
   Before starting this Learning Path, you should have a basic knowledge of data analytics and Azure services for data. Consider completing the [Azure Data Fundamentals](/certifications/azure-data-fundamentals/?azure-portal=true) certification first.

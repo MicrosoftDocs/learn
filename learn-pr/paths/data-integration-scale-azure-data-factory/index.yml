@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Data integration at scale with Azure Data Factory or Azure Synapse Pipeline
 prerequisites: |
   The following pre-requisite should be completed:
