@@ -70,22 +70,15 @@ az storage blob upload --account-name $STORAGE_ACCOUNT --container-name $CONTAIN
 
 Now you have the import file available in an Azure storage account that can be accessed by your Azure Digital Twins instance. In the next section, you'll send an API request that uses this file to create the defined entities in your Azure Digital Twins instance.
 
-## View Jobs API documentation
-
-Start by reviewing the [Jobs API documentation](/rest/api/digital-twins/dataplane/jobs). The API contains operations for managing a long-running import job, including add, cancel, delete, get by ID, and list.
-
-:::image type="content" source="../media/3-jobs.png" alt-text="Reference doc screenshot showing the Jobs operations." border="false" lightbox="../media/3-jobs":::
-
-In this unit, you'll use **Add** to create an import request, and **GetById** to check the job's status.
-
 ## Make the import request
 
 In this section, you'll send an Import Jobs API request to import the sample file of models, twins, and relationships.
 
->[!TIP]
->For a full description of the requests and fields used in this section, see the [ImportJobs reference documentation](/rest/api/digital-twins/dataplane/jobs).
+Start by reviewing the [Jobs API documentation](/rest/api/digital-twins/dataplane/jobs). The API contains operations for managing a long-running import job, including add, cancel, delete, get by ID, and list. In this section, you'll use **Add** to create an import request, and **GetById** to check the job's status.
 
-In your Postman collection, expand the folder path **Data plane** > **jobs** > **imports** > **{id}**, and open **PUT Import Jobs Add**. You'll fill in this request template to create a new import job.
+:::image type="content" source="../media/3-jobs.png" alt-text="Reference doc screenshot showing the Jobs operations." border="false" lightbox="../media/3-jobs":::
+
+From your Postman collections, expand the folder path **Data plane** > **jobs** > **imports** > **{id}**, and open **PUT Import Jobs Add**. You'll fill in this request template to create a new import job.
 
 In the **Params** tab, set **api-version** to *2023-06-30* and the **id** value to *importdistributiongrid* to assign an ID value to the job you are creating.
 
@@ -104,7 +97,7 @@ The response from a successful request will look something like this:
 
 :::image type="content" source="../media/3-import-jobs-add.png" alt-text="Postman screenshot showing the results of the Import Jobs Add request." border="false" lightbox="../media/3-import-jobs-add":::
 
-This result indicates that the job has been created. It has probably started running in the minutes since the response was sent, so check the current status of the job by opening the **GET Import Jobs Get By Id** request template from the collection, also under **Data plane** > **jobs** > **imports** > **{id}**.
+This result indicates that the job has been created. It has probably started running in the minutes since the response was sent, so check the current status of the job by opening the **GET Import Jobs Get By Id** request template from the collection (also found in the **Data plane** > **jobs** > **imports** > **{id}** folder).
 
 In the **Params** tab, set **api-version** to *2023-06-30* and the **id** value to *importdistributiongrid*.
 
@@ -127,7 +120,7 @@ To check that your Azure Digital Twins graph now contains models, twins, and rel
 
 First, use one of the model APIs to see a list of all the models in your Azure Digital Twins instance.
 
-In your Postman collection, expand the folder path **Data plane** > **models**, and open **GET Digital Twin Models List**.
+From your Postman collections, open the request template at **Data plane** > **models** > **GET Digital Twin Models List**.
 
 In the **Params** tab, set **api-version** to *2023-06-30*. Uncheck the **dependenciesFor** options.
 
@@ -148,7 +141,7 @@ Next, use one of the digital twins APIs to see the details of one of the twins t
 >[!TIP]
 >To search for multiple digital twins at once, use the Query API, which is explored in Unit 5 of this module.
 
-In your Postman collection, expand the folder path **Data plane** > **digitaltwins** > **{id}**, and open **GET Digital Twins Get By Id**.
+From your Postman collections, open the request template at **Data plane** > **digitaltwins** > **{id}** > **GET Digital Twins Get By Id**.
 
 In the **Params** tab, set **api-version** to *2023-06-30* and the **id** value to *pl_distribute*.
 
@@ -166,9 +159,9 @@ The reply body will give details of the *pl_distribute* digital twin. This twin 
 
 In this section, you'll use one of the relationships APIs to see the all of the relationships coming from the *pl_distribute* twin.
 
-In your Postman collection, expand the folder path **Data plane** > **digitaltwins** > **{id}** > **relationships**, and open **GET Digital Twins List Relationships**.
+From your Postman collections, open the request template at **Data plane** > **digitaltwins** > **{id}** > **relationships** > **GET Digital Twins List Relationships**.
 
-In the **Params** tab, set **api-version** to *2023-06-30* and the **id** value to *pl_distribute*. Uncheck the **relationshipName** parameter to avoid specifying any one type of relationship, in order to see them all.
+In the **Params** tab, set **api-version** to *2023-06-30* and the **id** value to *pl_distribute*. Uncheck the **relationshipName** parameter to avoid specifying any one type of relationship, so you can see them all.
 
 In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
 
