@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/14/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Implement Windows Server high availability
 prerequisites: |
   - Windows Server 2012, Windows Server 2016, or later.
