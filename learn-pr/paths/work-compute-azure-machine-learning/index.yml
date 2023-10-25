@@ -6,8 +6,7 @@ metadata:
   ms.date: 07/12/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Work with compute in Azure Machine Learning
 prerequisites: |
   None
