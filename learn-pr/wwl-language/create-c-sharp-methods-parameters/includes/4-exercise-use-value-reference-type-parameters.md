@@ -66,6 +66,7 @@ In this exercise, you'll learn more about passing reference and value type argum
         {
             Console.Write($"{a} ");
         }
+        Console.WriteLine();
     }
 
     void Clear(int[] array) 
