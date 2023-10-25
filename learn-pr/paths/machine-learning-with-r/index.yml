@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/13/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
   ms.custom: team=nextgen
 title: Create machine learning models with R and tidymodels
 summary: |

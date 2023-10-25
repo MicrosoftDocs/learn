@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/14/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Use Python basics to solve mysteries and find answers
 summary: |
   You are a novice but dedicated sleuth, and you enjoy solving mysteries. Harness the power of Python and Visual Studio Code to find solutions  programmatically and resolve intrigue.
