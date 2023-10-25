@@ -20,4 +20,4 @@ Use these resources to discover more.
      -  [Require MFA for Azure management](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
      -  [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
      -  [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-     -  [Require Microsoft Entra multifactor authentication registration](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) \- Requires Microsoft Entra ID Protection part of Microsoft Entra ID P2.
+     -  [Require MFA registration](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) \- Requires Microsoft Entra Identity Protection part of Microsoft Entra ID Premium P2.
