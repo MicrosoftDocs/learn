@@ -4,10 +4,11 @@ title: Exercise - Create reusable methods
 metadata:
   title: Exercise - Create reusable methods
   description: "Exercise - Create reusable methods"
-  ms.date: 09/15/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-create-reusable-methods.md)]

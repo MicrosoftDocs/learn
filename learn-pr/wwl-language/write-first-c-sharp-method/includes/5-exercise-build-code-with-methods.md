@@ -159,7 +159,8 @@ Now that you have all the placeholder methods needed to solve the problem, you c
 
         foreach (string number in address) 
         {
-            if (int.Parse(number) > 255) 
+            int value = int.Parse(number);
+            if (value < 0 || value > 255) 
             {
                 validRange = false;
                 return;
@@ -302,7 +303,8 @@ In this task, you'll run your application from the Integrated Terminal and verif
     {
         foreach (string number in address) 
         {
-            if (int.Parse(number) > 255) 
+            int value = int.Parse(number);
+            if (value < 0 || value > 255) 
             {
                 validRange = false;
                 return;
