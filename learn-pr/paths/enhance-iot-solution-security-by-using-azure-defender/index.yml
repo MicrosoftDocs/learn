@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/13/2022
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Enhance IoT solution security by using Microsoft Defender for IoT
 prerequisites: |
   Ability to:
