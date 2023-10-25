@@ -80,13 +80,32 @@ When applying the model through the wizard, you can find the input columns to be
 
 ## Save the model to the Microsoft Fabric workspace
 
-After training and tracking a machine learning model with Mlflow in Microsoft Fabric, you can inspect the contents of the `model` output folder in the experiment run. By exploring the `MLmodel` file specifically, you can decide whether your model is going to behave as expected during batch scoring.
+After training and tracking a machine learning model with MLflow in Microsoft Fabric, you can inspect the contents of the `model` output folder in the experiment run. By exploring the `MLmodel` file specifically, you can decide whether your model is going to behave as expected during batch scoring.
 
-When you want to use a tracked model to generate batch predictions, you need to save it. You can easily save a model by navigating to the respective experiment run in the user interface.
-
-When you save a model in Microsoft Fabric, you can:
+To use a tracked model for generating batch predictions, you need to save it. When you save a model in Microsoft Fabric, you can:
 
 - Create a new model.
 - Add a new version to an existing model.
 
-To save a model, you need to specify the `model` output folder as that folder contains all the necessary information about how the model should behave during batch scoring, and the model artifacts themselves. Commonly, the trained model is stored as a `pickle` file in the same folder.
+To save a model, you need to specify the `model` output folder, as that folder contains all the necessary information about how the model should behave during batch scoring, and the model artifacts themselves. Commonly, the trained model is stored as a `pickle` file in the same folder.
+
+You can easily save a model by navigating to the respective experiment run in the user interface.
+
+Alternatively, you can save a model through code:
+
+```python
+# Get the experiment by name
+exp = mlflow.get_experiment_by_name(experiment_name)
+
+# List the last experiment run
+last_run = mlflow.search_runs(exp.experiment_id, order_by=["start_time DESC"], max_results=1)
+
+# Retrieve the run ID of the last experiment run
+last_run_id = last_run.iloc[0]["run_id"]
+
+# Create a path to the model output folder of the last experiment run
+model_uri = "runs:/{}/model".format(last_run_id)
+
+# Register or save the model by specifying the model folder and model name
+mv = mlflow.register_model(model_uri, "diabetes-model")
+```

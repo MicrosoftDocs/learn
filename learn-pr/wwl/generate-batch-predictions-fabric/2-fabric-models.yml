@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.generate-batch-predictions-fabric.fabric-models
-title: Customize the model's behavior during batch scoring
+title: Customize the model's behavior for batch scoring
 metadata:
-  title: Customize the model's behavior during batch scoring
-  description: "Understand how to customize the model's behavior during batch scoring and save it to the Microsoft Fabric workspace."
+  title: Customize the model's behavior for batch scoring
+  description: "Understand how to customize the model's behavior for batch scoring and save it to the Microsoft Fabric workspace."
   ms.date: 10/26/2023
   author: wwlpublish
   ms.author: madiepev

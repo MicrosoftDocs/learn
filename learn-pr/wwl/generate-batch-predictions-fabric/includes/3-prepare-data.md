@@ -1,6 +1,25 @@
 Whenever you apply a model to new data, the most important thing is to ensure that the schema of the input data aligns with the model's expectations of the input data. 
 
-More specifically, you need to verify that the data types of the input columns are the same as defined in the model's signature.
+More specifically, you need to verify that the data types of the input columns are the same as defined in the model's signature. First, let's get the data you want to generate predictions on.
+
+## Work with data in Delta tables
+
+To apply a model on new data in Microsoft Fabric, you should store the new data as a **Delta table** in a lakehouse.
+
+> [!Tip]
+> Learn more about how to [ingest data into a Microsoft Fabric lakehouse](https://learn.microsoft.com/training/modules/ingest-data-with-spark-fabric-notebooks/?azure-portal=true).
+
+You can store a PySpark dataframe `df` as a Delta lake `new_table` in a lakehouse by using the following code:
+
+```python
+df.write.format("delta").save(f"Tables/new_table")
+```
+
+When you want to read data from a Delta table, you can use the following code:
+
+```python
+df = spark.read.format("delta").load(f"Tables/new_table")
+```
 
 ## Understand data types in the model's signature
 
@@ -23,8 +42,23 @@ When you define the model's signature, you need to use [MLflow data types](https
 
 ## Set the data types of the input data
 
-When you're working with data in Microsoft Fabric as a data scientist, you can choose to transform data with Python or PySpark. When you prepare your new data before applying the model, you can set the data type of each column for your data by 
+After ingesting the data into a Delta lake and understanding the model's signature, you need to ensure that the data types of the data are compatible with the model's expected input.
 
+You can work with your data in a notebook to verify that the data types of each column are as expected and make changes if necessary.
 
-- list data type
-- change data type
+To list the [data types](https://spark.apache.org/docs/latest/sql-ref-datatypes.html?azure-portal=true) of each column of a dataframe `df`, use the following code:
+
+```python
+df.dtypes
+```
+
+If you want to change the data type of a specific column, you can use the following code:
+
+```python
+from pyspark.sql.types import IntegerType, DoubleType
+
+df = df.withColumn("S1", df["S1"].cast(IntegerType()))
+df = df.withColumn("S2", df["S2"].cast(DoubleType()))
+```
+
+When you've set the data types of the input data to align with the model's expected inputs, you can save the data to a new Delta table. The new table is now ready to be used to generate batch predictions.
