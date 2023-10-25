@@ -6,8 +6,7 @@ metadata:
   ms.date: 12/30/2021
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Create Azure IoT services in the Azure portal
 prerequisites: |
   Before starting this learning path, the student should complete course AZ-900: Azure Fundamentals, or have equivalent skills. We recommend that students feel comfortable in their ability to:
