@@ -4,11 +4,11 @@ title: 'Implement application-based user provisioning '
 metadata:
   title: Implement application-based user provisioning
   description: "Implement application-based user provisioning"
-  ms.date: 10/23/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 durationInMinutes: 1
 content: |
   [!include[](includes/6-implement-application-user-provisioning.md)]
