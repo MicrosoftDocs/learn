@@ -7,8 +7,7 @@ metadata:
   ms.date: 01/24/2023
   author: ChaseCrum
   ms.author: chasecrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Linux on Azure
 summary: |
   This comprehensive learning path reviews deployment and management of Linux on Azure. Learn about cloud computing concepts, Linux IaaS and PaaS solutions and benefits and Azure cloud services. Discover how to migrate and extend your Linux-based workloads on Azure with improved scalability, security, and privacy.
