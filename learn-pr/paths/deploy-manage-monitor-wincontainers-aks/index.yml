@@ -9,8 +9,7 @@ metadata:
   author: vrapolinario
   ms.author: viniap
   #ms.learn-contact: smmark
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 prerequisites: |
   - Basic knowledge of Windows Server virtualization
   - An Azure subscription 
