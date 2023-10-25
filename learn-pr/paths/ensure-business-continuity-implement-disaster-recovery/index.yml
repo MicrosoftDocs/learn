@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/05/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Ensure business continuity and implement disaster recovery for SAP solutions on Azure
 prerequisites: ""
 summary: |
