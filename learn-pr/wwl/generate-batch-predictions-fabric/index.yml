@@ -19,7 +19,7 @@ abstract: |
   - Save a model in the Microsoft Fabric workspace
   - Prepare a dataset for batch predictions
   - Apply the model to dataset to generate new predictions
-  - Retrieve the predictions from the delta table where they are saved
+  - Save the predictions to a Delta table
 prerequisites: |
   Before starting this module, you should be familiar with the data science process.
 iconUrl: /training/achievements/generic-badge.svg
