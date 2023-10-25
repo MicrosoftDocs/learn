@@ -22,4 +22,4 @@ The Azure portal guides you through the configuration process to create your vir
 
 ### Learn how to reduce costs when creating your virtual machine
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/n9QRCdCNtG0" title="Five Tips to reduce cost with Azure Virtual Machines | Azure Tips and Tricks " allowfullscreen></iframe>
+> [!Video https://www.youtube.com/embed/n9QRCdCNtG0]
