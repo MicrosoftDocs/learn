@@ -28505,6 +28505,17 @@
       "source_path": "learn-pr/wwl-azure/run-pipelines-azure-machine-learning/1b-video.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/run-pipelines-azure-machine-learning/1-introduction",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-implement-private-access-to-azure-services/7-integrate-your-app-service-azure-virtual-networks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-implement-private-access-to-azure-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-implement-private-access-to-azure-services/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/design-implement-private-access-to-azure-services/7-summary",
+      "redirect_document_id": false
     }
+    
   ]
 }
