@@ -37,20 +37,20 @@ As you develop with Copilot, you'll find that it can help you complete your code
 
 1. Navigate to the `AutoSuggest` method.
 
-    This method relies on another method `GetWordsWithPrefix` that doesn't exist yet. You can use Copilot to generate this method.
+    This method relies on another method `GetAllWordsWithPrefix` that is incomplete. You can use Copilot to generate this method.
 
-1. Enter a new line after the end of the `AutoSuggest` method, then enter the following code:
+1. Navigate to the `GetAllWordsWithPrefix` method and remove the return statement;
 
     ```c#
     private List<string> GetAllWordsWithPrefix(TrieNode node, string prefix)
     {
+        
+    }
     ```
 
 1. Wait for Copilot to generate code.
 
-    You might notice that Copilot has multiple suggestions. You can click the arrow to navigate through suggestions.
-
-    ![Screenshot of Copilot suggestions.](../media/copilot-code-suggestion.png)
+    Copilot should automatically suggest code when you remove the return statement. If not, you can try entering the following: `List<string> words = ` and Copilot should complete the code.
 
     Copilot may suggest code similar to the following code block:
 
@@ -89,6 +89,17 @@ In this task, you'll test the methods you created with Copilot to verify that th
     // PrefixAutocomplete();
     // DeleteWord();
     // GetSpellingSuggestions();
+    ```
+
+1. Navigate to the `SearchWord()` method and uncomment the following code block:
+
+    ```c#
+    /*
+    if (input != null && dictionary.Search(input))
+    {
+        Console.WriteLine($"Found \"{input}\" in dictionary");
+    }
+    */
     ```
 
 1. In the file explorer, right click the **Program.cs** file and click **Open in Integrated Terminal**
