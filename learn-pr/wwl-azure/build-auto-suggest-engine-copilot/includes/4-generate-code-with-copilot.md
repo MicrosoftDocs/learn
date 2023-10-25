@@ -14,7 +14,7 @@ As you develop with Copilot, you'll find that it can help you complete your code
 
 1. Wait for Copilot to generate code. 
 
-    Copilot may suggest code similar to the following code block:
+    Copilot might suggest code similar to the following code block:
 
     ```c#
     // Search for a word in the trie
@@ -52,7 +52,7 @@ As you develop with Copilot, you'll find that it can help you complete your code
 
     Copilot should automatically suggest code when you remove the return statement. If not, you can try entering the following: `List<string> words = ` and Copilot should complete the code.
 
-    Copilot may suggest code similar to the following code block:
+    Copilot might suggest code similar to the following code block:
 
     ```c#
     private List<string> GetAllWordsWithPrefix(TrieNode node, string prefix)

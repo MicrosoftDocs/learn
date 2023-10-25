@@ -8,7 +8,7 @@ Sometimes Copilot might not suggest the exact code you need. You can use more sp
     {
     ```
 
-1. Wait for Copilot to generate code, then pess <kbd>Tab</kbd> or click **Accept** to apply the code suggestion.
+1. Wait for Copilot to generate code, then press <kbd>Tab</kbd> or click **Accept** to apply the code suggestion.
 
     You might notice that Copilot has multiple suggestions. You can click the arrow to navigate through suggestions.
 
@@ -18,7 +18,7 @@ Sometimes Copilot might not suggest the exact code you need. You can use more sp
 
     Feel free to prompt Copilot to generate comments to explain the code by entering a new line with forward slashes. 
     
-    You may have a method similar to the following code:
+    You might have a method similar to the following code:
 
     ```c#
     // Delete a word from the trie
@@ -69,7 +69,7 @@ Sometimes Copilot might not suggest the exact code you need. You can use more sp
 
 1. Take a moment to consider the code that Copilot suggested. 
 
-    You may want to prompt Copilot to generate comments to explain the code by entering a new line with forward slashes. 
+    You might want to prompt Copilot to generate comments to explain the code by entering a new line with forward slashes. 
 
     The code generated should perform the following tasks:
 
