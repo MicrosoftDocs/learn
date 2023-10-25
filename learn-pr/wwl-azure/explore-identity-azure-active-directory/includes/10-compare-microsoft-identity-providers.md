@@ -1,4 +1,3 @@
-
 An identity provider (IdP) is a system that creates, manages and stores digital identities.  Microsoft Entra ID is an example. The capabilities and features of identity providers can vary. The three most common components are:
 
 - a repository of user identities

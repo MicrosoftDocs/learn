@@ -1,4 +1,3 @@
-
 It's important to understand the identity landscape before reviewing other identity concepts.  How does Microsoft think about identity when designing products and solutions? The essential lifecycle of identity.
 
 | 1) Zero Trust |

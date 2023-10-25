@@ -1,4 +1,3 @@
-
 Business to business communication for your applications and users is essential.  You need to work with external organizations without having to maintain multiple identities.  That creates the space for Azure Business to Business (B2B) services.  And the product Microsoft Entra External ID, part of Microsoft Entra.
 
 <a name='azure-ad-external-identities'></a>
@@ -24,3 +23,4 @@ You may also find it necessary to offer services directly to customers.  This ca
 Azure AD B2C is a customer identity access management (CIAM) solution capable of supporting millions of users and billions of authentications per day. It takes care of the scaling and safety of the authentication platform, monitoring, and automatically handling threats like denial-of-service, password spray, or brute force attacks.
 
 Azure AD B2C is a separate service from Microsoft Entra ID. It is built on the same technology as Microsoft Entra ID but for a different purpose. It allows businesses to build customer facing applications, and then allow anyone to sign up into those applications with no restrictions on user account.
+

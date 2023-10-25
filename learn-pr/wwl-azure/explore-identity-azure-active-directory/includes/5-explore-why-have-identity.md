@@ -1,5 +1,4 @@
-
-We have talked about Zero Trust and about identity as the control plane for accessing resources.  By why use identity?
+We have talked about Zero Trust and about identity as the control plane for accessing resources.  But why use identity?
 
 ### Identity gives the ability:
 
