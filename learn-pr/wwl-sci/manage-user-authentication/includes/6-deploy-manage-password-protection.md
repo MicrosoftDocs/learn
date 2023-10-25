@@ -13,7 +13,7 @@ Microsoft Entra Password Protection is designed with the following principles in
 
 ## Create an Azure account and add Microsoft Entra ID Premium P2 trial licenses
 
-The tasks in this exercise and the exercises in this learning path require you to already have and Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you may skip this task and continue to the next.
+The tasks in this exercise and the exercises in this learning path require you to already have and Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you might skip this task and continue to the next.
 
 1.  In a web browser, go to the [Azure portal](https://azure.microsoft.com/free/).
 2.  Scroll down through the page to learn more about the benefits and free services available.
@@ -24,8 +24,8 @@ The tasks in this exercise and the exercises in this learning path require you t
 7.  Under Getting started with Microsoft Entra, select **Get a free trial for Microsoft Entra Premium**.
 8.  In the Activate pane, under **Microsoft Entra Premium P2**, select **Free trial** and then select **Activate**.
 9.  In the navigation menu on the left, select **Overview**.
-10. Refresh the browser until you see Microsoft Entra Premium P2 under the organization name. It may take a couple of minutes.
-11. You may need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.
+10. Refresh the browser until you see Microsoft Entra Premium P2 under the organization name. It might take a couple of minutes.
+11. You might need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.
 
 ## How Microsoft Entra Password Protection works
 
@@ -175,17 +175,17 @@ The installation of on-premises Microsoft Entra Password Protection is complete 
 
 ## Upgrading the proxy service
 
-The Microsoft Entra Password Protection proxy-service supports automatic upgrade. Automatic upgrade uses the Microsoft Entra Connect Agent Updater service, which is installed side by side with the proxy service. Automatic upgrade is on by default and may be enabled or disabled using the `Set-AzureADPasswordProtectionProxyConfiguration` cmdlet.
+The Microsoft Entra Password Protection proxy-service supports automatic upgrade. Automatic upgrade uses the Microsoft Entra Connect Agent Updater service, which is installed side by side with the proxy service. Automatic upgrade is on by default and might be enabled or disabled using the `Set-AzureADPasswordProtectionProxyConfiguration` cmdlet.
 
 The current setting can be queried using the `Get-AzureADPasswordProtectionProxyConfiguration` cmdlet. We recommend that the automatic upgrade setting always is enabled.
 
-The `Get-AzureADPasswordProtectionProxy` cmdlet may be used to query the software version of all currently installed Microsoft Entra Password Protection proxy-servers in a forest.
+The `Get-AzureADPasswordProtectionProxy` cmdlet might be used to query the software version of all currently installed Microsoft Entra Password Protection proxy-servers in a forest.
 
 ### Manual upgrade process
 
 A manual upgrade is accomplished by running the latest version of the `AzureADPasswordProtectionProxySetup.exe` software installer. The latest version of the software is available on the Microsoft Download Center.
 
-It's not required to uninstall the current version of the Microsoft Entra Password Protection proxy-service—the installer performs an in-place upgrade. No reboot should be required when upgrading the proxy service. The software upgrade may be automated using standard MSI procedures, such as `AzureADPasswordProtectionProxySetup.exe /quiet`.
+It's not required to uninstall the current version of the Microsoft Entra Password Protection proxy-service—the installer performs an in-place upgrade. No reboot should be required when upgrading the proxy service. The software upgrade might be automated using standard MSI procedures, such as `AzureADPasswordProtectionProxySetup.exe /quiet`.
 
 ## Upgrading the DC agent
 
@@ -193,8 +193,8 @@ When a newer version of the Microsoft Entra Password Protection DC agent softwar
 
 It's not required to uninstall the current version of the DC agent software—the installer performs an in-place upgrade. A reboot is always required when upgrading the DC agent software. This requirement is caused by core Windows behavior.
 
-The software upgrade may be automated using standard MSI procedures, such as `msiexec.exe /i AzureADPasswordProtectionDCAgentSetup.msi /quiet /qn /norestart`.
+The software upgrade might be automated using standard MSI procedures, such as `msiexec.exe /i AzureADPasswordProtectionDCAgentSetup.msi /quiet /qn /norestart`.
 
-You may omit the `/norestart` flag if you prefer to have the installer automatically reboot the machine.
+You might omit the `/norestart` flag if you prefer to have the installer automatically reboot the machine.
 
-The `Get-AzureADPasswordProtectionDCAgent` cmdlet may be used to query the software version of all currently installed Microsoft Entra Password Protection DC agents in a forest.
+The `Get-AzureADPasswordProtectionDCAgent` cmdlet might be used to query the software version of all currently installed Microsoft Entra Password Protection DC agents in a forest.
