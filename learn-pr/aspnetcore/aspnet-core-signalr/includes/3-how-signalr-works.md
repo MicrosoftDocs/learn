@@ -84,7 +84,7 @@ Methods aren't required to fire events, but they often do.
 
 ### Events
 
-An event can be subscribed to by name from a client. The server is responsible for raising events. `Hub`, `Hub<T>`, `IHubContext<THub>`, and `IHubContext<THub, T>` events are *named* and can define up to ten parameters. Events are fired on the server and handled by interested clients. A client is considered interested when it subscribes to events on its hub's connection. Clients can indirectly trigger events when they call hub methods that fire events as a result of their invocation. Events can't be directly triggered by clients, though, because that's the responsibility of the server.
+An event can be subscribed to by name from a client. The server is responsible for raising events. `Hub`, `Hub<T>`, `IHubContext<THub>`, and `IHubContext<THub, T>` events are *named* and can define up to 10 parameters. Events are fired on the server and handled by interested clients. A client is considered interested when it subscribes to events on its hub's connection. Clients can indirectly trigger events when they call hub methods that fire events as a result of their invocation. Events can't be directly triggered by clients, though, because that's the responsibility of the server.
 
 #### Event client scopes
 
@@ -144,7 +144,7 @@ Consider the following images, which can help you visualize how the hub sends me
 
 The `HubConnection` class is a SignalR client concept, which represents the client's connection to the [server `Hub`](#servers-and-the-hub-class). It's defined within the `Microsoft.AspNetCore.SignalR.Client` namespace, and it's part of the [Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client) NuGet package.
 
-You create a `HubConnection` by using the builder pattern and the corresponding `HubConnectionBuilder` type. Given the hub's route (or <xref:System.Uri?displayProperty=fullName>), you can create a `HubConnection`. The builder can also specify additional configuration options, including, logging, the desired protocol, authentication token forwarding, and automatic reconnection, among others.
+You create a `HubConnection` by using the builder pattern and the corresponding `HubConnectionBuilder` type. Given the hub's route (or <xref:System.Uri?displayProperty=fullName>), you can create a `HubConnection`. The builder can also specify additional configuration options, including logging, the desired protocol, authentication token forwarding, and automatic reconnection, among others.
 
 The `HubConnection` API exposes start and stop functions, which you use to start and stop the connection to the server. Additionally, there are capabilities for streaming, calling [hub methods](#methods), and subscribing to [events](#events).
 
@@ -191,7 +191,7 @@ public sealed class Consumer : IAsyncDisposable
 
 ### Call hub methods
 
-If a client is given a client `HubConnection` instance that has successfully started, that client can call methods on a hub by using the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A> or <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A> extensions. If the hub method returns a `Task<TResult>`, the result of `InvokeAsync<TResult>` is of type `TResult`. If the hub method returns `Task`, there's no result. Both `InvokeAsync` and `SendAsync` require the name of the hub method, and zero to ten parameters.
+If a client is given a client `HubConnection` instance that has successfully started, that client can call methods on a hub by using the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A> or <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A> extensions. If the hub method returns a `Task<TResult>`, the result of `InvokeAsync<TResult>` is of type `TResult`. If the hub method returns `Task`, there's no result. Both `InvokeAsync` and `SendAsync` require the name of the hub method, and zero to 10 parameters.
 
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A>: Invokes a hub method on the server by using the specified method name and optional arguments.
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A>: Invokes a hub method on the server by using the specified method name and optional arguments. This method *doesn't* wait for a response from the receiver.
