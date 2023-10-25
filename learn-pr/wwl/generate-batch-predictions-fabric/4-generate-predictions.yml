@@ -4,7 +4,7 @@ title: Generate and save predictions to a Delta table
 metadata:
   title: Generate and save predictions to a Delta table
   description: "Apply a model in Microsoft Fabric to generate predictions. Save the new data to a Delta table for further processing."
-  ms.date: 10/26/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
