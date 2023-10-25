@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/31/2021
   author: wwlpublish
   ms.author: chtestao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Integrate Azure Synapse Analytics with Azure Data and AI services
 prerequisites: |
   - It is recommended that students have completed Data Fundamentals before starting this learning path.
