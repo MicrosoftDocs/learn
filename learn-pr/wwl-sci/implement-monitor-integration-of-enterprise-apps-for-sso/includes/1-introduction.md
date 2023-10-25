@@ -14,4 +14,5 @@ In this module, you'll:
 
 ## Prerequisites
 
-none
+ -  Management of users and administrators in Microsoft Entra ID
+ -  Experience with setting up conditional access
