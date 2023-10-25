@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/16/2023
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'Microsoft Azure Fundamentals: Describe Azure management and governance'
 prerequisites: |
   * Basic familiarity with IT terms and concepts
