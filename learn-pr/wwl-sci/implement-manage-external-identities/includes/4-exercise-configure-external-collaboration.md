@@ -1,7 +1,7 @@
 ## Configure external collaboration settings
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/) as a tenant administrator.
-2.  Select **Microsoft Entra ID**.
+1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
+2.  Select **Identity.**
 3.  Select **External Identities - External collaboration settings**.
 4.  Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
     
