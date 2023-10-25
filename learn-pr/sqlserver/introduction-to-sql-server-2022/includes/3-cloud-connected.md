@@ -22,7 +22,7 @@ The Link feature for Azure SQL Managed Instance provides a new managed disaster 
 
 ### Challenges with disaster recovery
 
-Having a diaster recovery site and plan are critical to ensuring your business and application are available at any time. While SQL Server has all the features and capabilities to support various disaster recovery options, a user or admin must do all the configuration, setup, and maintenance.
+Having a disaster recovery site and plan are critical to ensuring your business and application are available at any time. While SQL Server has all the features and capabilities to support various disaster recovery options, a user or admin must perform all the configuration, setup, and maintenance.
 
 ### Solution using managed disaster recovery in SQL Server 2022
 
@@ -36,7 +36,7 @@ A planned or forced failover could then be done, should a disaster scenario aris
 
 Following these steps would allow for an offline diaster recovery scenario, so that you could restore a copy of the database from SQL Managed Instance *back* to SQL Server 2022.
 
-You can learn more about the Link feature for Azure SQL Managed Instance in the article, [Link feature for Azure SQL Managed Instance](https://aka.ms/milink).
+To learn more about the Link feature for Azure SQL Managed Instance, see [Link feature for Azure SQL Managed Instance](https://aka.ms/milink).
 
 ## Near real-time analytics with Azure Synapse Link for SQL Server
 
@@ -44,7 +44,7 @@ Azure Synapse Link for SQL Server allows you to offload read workloads in Azure 
 
 ### Challenges with analytics
 
-Azure Synapse has become a popular service for analytics for data of all types. In addition, many customers are looking to offload their read intensive applications from their primary SQL Server to ensure the primary application has plenty of resources. In order to use Azure Synapse for this purpose, you typically have to build Extract Transform Load (ETL) applications, or use scripts to copy data out of SQL Server to synchronize into Azure Synapse. This method can introduce challenges because the data is often out of date in Azure Synapse and it can be costly to build and maintain ETL applications.
+Azure Synapse has become a popular service for analytics for data of all types. In addition, many customers are looking to offload their read intensive applications from their primary SQL Server, to ensure the primary application has plenty of resources. To use Azure Synapse for this purpose, you'd typically have to build Extract Transform Load (ETL) applications, or use scripts to copy data out of SQL Server to synchronize into Azure Synapse. This method can introduce challenges because the data is often out of date in Azure Synapse and it can be costly to build and maintain ETL applications.
 
 ### Solution using Azure Synapse Link for near real-time analytics
 
@@ -58,7 +58,7 @@ When committed transactions are made in SQL Server 2022 for affected tables, the
 
 You can now use the power of Azure Synapse with Power BI, Spark, or other analytics to read SQL Server 2022 data in near real-time offloaded from the primary SQL Server database.
 
-You can learn more about Azure Synapse Link for SQL Server in the article, [What is Azure Synapse Link for SQL?](https://aka.ms/synapselinksql)
+To learn more about Azure Synapse Link for SQL Server, see [What is Azure Synapse Link for SQL?](https://aka.ms/synapselinksql)
 
 ## Central governance with Microsoft Purview
 
@@ -80,9 +80,7 @@ You don't need to create a login or user account for the Microsoft Entra account
 
 You can delete the access policy from Microsoft Purview to remove the authentication and authorization of the Microsoft Entra account at any time. You can also apply an access policy across multiple SQL Server 2022 instances, thereby providing a central governance method.
 
-You can learn more about Microsoft Purview access policies for SQL Server 2022 in the article, [Provision access by data owner for SQL Server on Azure Arc-enabled servers](https://aka.ms/purviewsqlaccesspolicies).
-
-<a name='central-authentication-using-azure-active-directory-azure-ad'></a>
+To learn more about Microsoft Purview access policies for SQL Server 2022, see [Provision access by data owner for SQL Server on Azure Arc-enabled servers](https://aka.ms/purviewsqlaccesspolicies).
 
 ## Central authentication using Microsoft Entra ID
 
@@ -90,9 +88,7 @@ Microsoft Entra ID provides a cloud-based central authentication authority for a
 
 ### Challenges with authentication
 
-SQL Server supports authentication for SQL Server or Windows accounts. Many users are looking to centralize their authentication systems using the cloud, and to support advanced authentication methods, like multi-factor authentication (MFA).
-
-<a name='solution-using-azure-active-directory-azure-ad-for-authentication'></a>
+SQL Server supports authentication for SQL Server or Windows accounts. Many users are looking to centralize their authentication systems using the cloud, and to support advanced authentication methods, like multifactor authentication (MFA).
 
 ### Solution using Microsoft Entra ID for authentication
 
@@ -100,14 +96,14 @@ SQL Server 2022 now supports Microsoft Entra account based logins and users. SQL
 
 Like Azure SQL Managed Instance and Azure SQL Database, SQL Server 2022 supports a new syntax for `CREATE LOGIN` to support an `EXTERNAL PROVIDER`, which is a Microsoft Entra account (user, group, or service principal). In addition, the `CREATE USER` T-SQL statement supports an `EXTERNAL PROVIDER` with a Microsoft Entra account to provide authentication to users in a database without the need for a login.
 
-One of the benefits of Microsoft Entra is support for advanced authentication methods, such as multi-factor authentication. SQL Server 2022 supports the following Microsoft Entra authentication methods:
+One of the benefits of Microsoft Entra is support for advanced authentication methods, such as multifactor authentication. SQL Server 2022 supports the following Microsoft Entra authentication methods:
 
 - Microsoft Entra password
 - Microsoft Entra integrated
 - Microsoft Entra multifactor authentication (MFA)
 - Microsoft Entra access token
 
-You can learn more about SQL Server and Microsoft Entra authentication in the article, [Microsoft Entra authentication for SQL Server](https://aka.ms/aadsqlserver).
+To learn more about SQL Server and Microsoft Entra authentication, see [Microsoft Entra authentication for SQL Server](https://aka.ms/aadsqlserver).
 
 ## Stay protected with Microsoft Defender for SQL
 
@@ -134,4 +130,4 @@ Microsoft Defender scans your SQL Server configuration and provides recommendati
 
 Microsoft Defender monitors possible security threats to your SQL Server instance. It alerts you to threats including SQL injection attacks, suspicious login activity, and brute force attacks, among others.
 
-You can learn more about Microsoft Defender for SQL in the article, [Enable Microsoft Defender for SQL servers on machines](https://aka.ms/defendersqlserver).
+To learn more about Microsoft Defender for SQL, see [Enable Microsoft Defender for SQL servers on machines](https://aka.ms/defendersqlserver).

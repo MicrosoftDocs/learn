@@ -21,7 +21,7 @@ prerequisites: |
   - Experience with cloud networking.
   - The prerequisites can be obtained by completing the other modules in this learning path.
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:
