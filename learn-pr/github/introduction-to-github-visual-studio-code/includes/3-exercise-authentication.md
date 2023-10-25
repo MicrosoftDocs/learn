@@ -1,6 +1,6 @@
-In this exercise, you'll learn how to authenticate to GitHub using Visual Studio Code. You'll also learn how to control your signed-in status and which extensions in Visual Studio Code can use your authentication.
+In this exercise, you'll authenticate to GitHub using Visual Studio Code. You'll also learn how to control your signed-in status and which extensions in Visual Studio Code can use your authentication.
 
-1. Make sure you have the latest version of Visual Studio Code installed. Select the Profile/accounts icon in the activity bar, select **Check for Updates**, and then install the latest version, if necessary.
+1. Make sure you have the latest version of Visual Studio Code installed. From the Help menu, select **Check for Updates**, and then install the latest version, if necessary.
 
 2. Select the extensions icon on the activity bar. Search for the **GitHub Pull Requests and Issues** extension and install it.
 
