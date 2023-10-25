@@ -6,8 +6,7 @@ metadata:
   ms.date: 07/28/2021
   author: nishanil
   ms.author: nanil
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: learning-path
 title: Create microservices with .NET and ASP.NET Core
 summary: |
   Create independently deployable, highly scalable, and resilient services using the free and open-source .NET platform.
