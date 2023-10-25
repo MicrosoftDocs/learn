@@ -8,7 +8,11 @@ Sometimes Copilot might not suggest the exact code you need. You can use more sp
     {
     ```
 
-1. Wait for Copilot to generate code, then press <kbd>Tab</kbd> or click **Accept**
+1. Wait for Copilot to generate code, then pess <kbd>Tab</kbd> or click **Accept** to apply the code suggestion.
+
+    You might notice that Copilot has multiple suggestions. You can click the arrow to navigate through suggestions.
+
+    ![Screenshot of one of two Copilot code suggestions](../media/copilot-code-suggestion.png)
 
 1. Take a moment to consider the code that Copilot autocompleted. 
 
@@ -132,6 +136,18 @@ In this task, you'll test the methods you created with Copilot to verify that th
     // PrefixAutocomplete();
     DeleteWord();
     // GetSpellingSuggestions();
+    ```
+1. Navigate to the `DeleteWord()` method and uncomment the following code:
+
+    ```c#
+    /*
+    if (input != null && dictionary.Search(input))
+    {
+        dictionary.Delete(input);
+        Console.WriteLine($"Deleted \"{input}\" from dictionary\n");
+        PrintTrie(dictionary);
+    }
+    */
     ```
 
 1. In the file explorer, right click the **Program.cs** file and click **Open in Integrated Terminal**
