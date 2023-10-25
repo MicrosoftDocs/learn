@@ -58,4 +58,4 @@ You're ready to consider how to apply Azure Policy settings to your Tailwind Tra
 
 After you determine your identity management solution for Tailwind Traders, it's time to think about resource access. What resources should these identities be able to access? How will you enforce that access? How will you monitor and review the access?
 
-A user's identity goes through several phases. Initially, the user has no access. Access can be granted through RBAC and verified with Azure AD conditional access. Azure AD Identity Protection can be used to monitor the user's access. Periodically, Azure AD access reviews confirm the access is still required.
+A user's identity goes through several phases. Initially, the user has no access. Access can be granted through RBAC and verified with Microsoft Entra Conditional Access. Microsoft Entra ID Protection can be used to monitor the user's access. Periodically, Microsoft Entra access reviews confirm the access is still required.

@@ -40,6 +40,11 @@ achievements:
   title: Solve graph coloring problems by using Grovers search
   summary: Solve graph coloring problems by using Grovers search
   iconUrl: /training/achievements/quantum/solve-graph-coloring-problems-grovers-search.svg
+- uid: learn-windows.building-connected-windows-apps.badge
+  type: badge
+  title: Build internet-connected Windows apps
+  summary: Build internet-connected Windows apps
+  iconUrl: /training/achievements/build-internet-connected-windows-apps.svg
 - uid: learn-wwl.learn-business-value-of-azure.trophy
   type: trophy
   title: Learn the business value of Microsoft Azure
@@ -2312,3 +2317,38 @@ achievements:
   title: Configure SIEM security operations using Microsoft Sentinel
   summary: Get started with Microsoft Sentinel security operations by configuring the Microsoft Sentinel workspace, connecting Microsoft services and Windows security events to Microsoft Sentinel, configuring Microsoft Sentinel analytics rules, and responding to threats with automated responses.
   iconUrl: /training/achievements/configure-your-azure-sentinel-environment.svg
+- uid: learn.oxford.teach-ai-with-project-bonsai.badge
+  type: badge
+  title: Teach AI like you would a human with Project Bonsai
+  summary: Implement a monolithic (one concept) brain, set up your Bonsai workplace, and train a brain.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.autonomous-systems.intro-to-project-bonsai.badge
+  type: badge
+  title: Introduction to Microsoft Project Bonsai
+  summary: Microsoft Project Bonsai enables you to more quickly and easily implement AI-powered automation development. It can simplify machine teaching so you can train and deploy smarter autonomous systems.
+  iconUrl: /training/achievements/autonomous-systems/bonsai-introduction.svg
+- uid: learn.oxford.build-industrial-brain.badge
+  type: badge
+  title: Build an industrial strength brain
+  summary: Train a modular brain for real industrial processes. Decompose the tasks into skills, do Machine Teaching experimentation to get the orchestration and the training completed successfully. Evaluate brain performance using training graphs and custom assessments. 
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.oxford.autonomous-ai-implementation-engineer.trophy
+  type: trophy
+  title: Autonomous AI implementation engineer
+  summary: Learn to build the Machine Teaching for Autonomous AI brains that you learned to design in the “Autonomous AI Design Architect” learning path.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.discover-microsoft-ai-financial-professionals.trophy
+  type: trophy
+  title: Discover Microsoft AI for financial professionals
+  summary: In this learning path, FSI business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.discover-microsoft-ai-healthcare-professionals.trophy
+  type: trophy
+  title: Discover Microsoft AI for healthcare professionals
+  summary: In this learning path, healthcare business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.reactors.test-azure-cognitive-services.badge
+  type: badge
+  title: Test Azure AI services
+  summary: Learn how to test Azure AI services for data science operations.
+  iconUrl: /training/achievements/reactors/test-azure-cognitive-services.svg

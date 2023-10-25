@@ -12,7 +12,7 @@ With delegation, the delegated provider manages an offer (called a delegated off
 The following roles are part of delegation:
 
  -  The *Azure Stack Hub operator* manages the Azure Stack Hub infrastructure and creates an offer template. The operator delegates others to provide offers to their tenant.
- -  The delegated Azure Stack Hub operators are users with *Owner* or *Contributor* rights in the subscriptions called delegated providers. They can belong to other organizations, such as other Azure Active Directory (Azure AD) tenants.
+ -  The delegated Azure Stack Hub operators are users with *Owner* or *Contributor* rights in the subscriptions called delegated providers. They can belong to other organizations, such as other Microsoft Entra tenants.
  -  *Users* sign up for the offers and use them for managing their workloads, creating virtual machines, storing data, and so on.
 
 ## Delegation steps
@@ -39,7 +39,7 @@ The following sections describe the steps to set up a delegated provider, delega
 
 ### Set up roles
 
-To use this walkthrough, you need two Azure AD accounts in addition to your Azure Stack Hub operator account. If you don't have these two accounts, you must create them. The accounts can belong to any Azure AD user and are referred to as the delegated provider and the user.
+To use this walkthrough, you need two Microsoft Entra accounts in addition to your Azure Stack Hub operator account. If you don't have these two accounts, you must create them. The accounts can belong to any Microsoft Entra user and are referred to as the delegated provider and the user.
 
 :::row:::
   :::column:::
