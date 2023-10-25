@@ -12,10 +12,10 @@ Using an identity provider for authentication offers a way to ensure secure iden
 
 **Protocols** - Often, organizations have a variety of authentication protocols in place which cause a deficient experience to both end-users and the organization. A focus area of this capability is to help an organization standardize on one, or more, modern and secure authentication protocols to accomplish their authentication goals.
 
-**Assurance** - Authentication assurance is the confidence an organization has that an individual accessing a resource is who they say they are. This capability talks about whether or not an organization uses shared accounts, if they use personalized accounts and if solutions such as multi-factor authentication or risk-based authentication are in place.
+**Assurance** - Authentication assurance is the confidence an organization has that an individual accessing a resource is who they say they are. This capability talks about whether or not an organization uses shared accounts, if they use personalized accounts and if solutions such as multifactor authentication or risk-based authentication are in place.
 
 ### Federated identity
-Federation is a collection of domains that have established trust. The level of trust may vary, but typically includes authentication and almost always includes authorization. This allows you to leverage existing identities from trusted sources, like an existing on-premises active directory.
+Federation is a collection of domains that have established trust. The level of trust might vary, but typically includes authentication and almost always includes authorization. This allows you to leverage existing identities from trusted sources, like an existing on-premises active directory.
 
 ### Common communication protocols in identity
 

@@ -36,7 +36,7 @@ There are many common tasks performed during identity administration.
 
 | Azure PowerShell | CLI (command line interface) |
 | :--------------- | :--------------------------- |
-| Cross-platform PowerShell module, runs on Windows, macOS, Linux | Cross-platform command-line interface, installable on Windows, macOS, Linux |
+| Cross-platform PowerShell module runs on Windows, macOS, Linux | Cross-platform command-line interface, installable on Windows, macOS, Linux |
 | Requires Windows PowerShell or PowerShell | Runs in Windows PowerShell, Command prompt, or Bash and other Unix shells |
 
 > [!Note]
