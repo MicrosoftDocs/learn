@@ -2,7 +2,7 @@ Here, we discuss the overall goals of the project and how to prepare resources f
 
 ## Project overview
 
-In this module, you begin by creating Azure resources that are required to complete this module, such as an instance of IoT Hub Device Provisioning Service (DPS) and an IoT hub. You then generate an X.509 root CA Certificate using OpenSSL within the Azure Cloud Shell, and use the root certificate to configure a Group Enrollment within the Device Provisioning Service (DPS). After that, you use the root certificate to generate two device certificates, which you use within a simulated device code to provision the devices to an IoT hub. While in your device code, you implement access to the device twin properties used to perform initial configuration of the device. You then test your simulated device. To finish up this lab, you deprovision the entire group enrollment.
+In this module, you begin by creating Azure resources that are required to complete this module, such as an instance of IoT Hub Device Provisioning Service (DPS) and an IoT hub. You then generate an X.509 root CA Certificate using OpenSSL within the Azure Cloud Shell, and use the root certificate to configure a Group Enrollment within the Device Provisioning Service (DPS). After that, you use the root certificate to generate two device certificates, which you use within a simulated device code to provision the devices to an IoT hub. While in your device code, you implement access to the device twin properties used to perform initial configuration of the device. You then test your simulated device. To finish up this module, you deprovision the entire group enrollment.
 
 ## Setup
 
