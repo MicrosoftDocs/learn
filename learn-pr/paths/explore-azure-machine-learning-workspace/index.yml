@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/01/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Explore the Azure Machine Learning workspace
 prerequisites: |
   None
