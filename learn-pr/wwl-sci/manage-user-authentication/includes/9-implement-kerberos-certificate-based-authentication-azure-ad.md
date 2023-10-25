@@ -2,7 +2,7 @@ You can provide single sign-on for on-premises applications published through Ap
 
 ### Kerberos authentication process flow
 
-:::image type="content" source="../media/kerberos-authentication-cdf4cd35.png" alt-text="Diagram of the authentication process flow with Kerberos is configured for Application Proxy authentication.":::
+:::image type="content" source="../media/kerberos-authentication-cdf4cd35.png" alt-text="Diagram of the process flow for Kerberos authentication in Microsoft Entra ID.  Full description of process is in the content.":::
 
 
 1.  The user enters the URL to access the on premises application through Application Proxy.

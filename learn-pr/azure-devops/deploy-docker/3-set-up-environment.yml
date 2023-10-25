@@ -11,8 +11,7 @@ metadata:
     - devdivchpfy22
     - engagement-fy23
     - devx-track-azurecli
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-set-up-environment.md)]

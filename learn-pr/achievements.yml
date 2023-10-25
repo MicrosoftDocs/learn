@@ -2352,3 +2352,8 @@ achievements:
   title: Discover Microsoft AI for healthcare professionals
   summary: In this learning path, healthcare business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.reactors.test-azure-cognitive-services.badge
+  type: badge
+  title: Test Azure AI services
+  summary: Learn how to test Azure AI services for data science operations.
+  iconUrl: /training/achievements/reactors/test-azure-cognitive-services.svg

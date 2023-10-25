@@ -30,7 +30,7 @@ Let's walk through a checklist of things to think about.
 
 ## The network
 
-The first thing you should think about isn't the virtual machine at all - it's the network. Take a look at on of your on-premises servers:
+The first thing you should think about isn't the virtual machine at all - it's the network. Take a look at one of your on-premises servers:
 - What does the server communicate with?
 - Which ports are open?
 
