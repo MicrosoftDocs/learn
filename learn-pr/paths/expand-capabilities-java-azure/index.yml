@@ -57,7 +57,7 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-app-service
 # - azure-application-insights
 #- azure-automation
