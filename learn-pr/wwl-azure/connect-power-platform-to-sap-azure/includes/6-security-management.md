@@ -10,13 +10,13 @@ Create DLP policies in the [Power Platform admin center](/power-platform/admin/a
 
 ## Control access to apps, flows, and connectors
 
-Power Platform relies on Azure Active Directory (AAD) for authentication. AAD is Microsoft’s cloud-based identity and management service that helps authorized users sign in and access resources.
+Power Platform relies on Microsoft Entra ID for authentication. Microsoft Entra ID is Microsoft’s cloud-based identity and management service that helps authorized users sign in and access resources.
 
-Developers can also register applications with AAD and use the oAuth2 authorization framework to allow their code to access platform APIs. This allows them to create applications that access SAP applications and data with high security.
+Developers can also register applications with Microsoft Entra ID and use the oAuth2 authorization framework to allow their code to access platform APIs. This allows them to create applications that access SAP applications and data with high security.
 
-![Azure Active Directory provides access control whether on-premises or in the cloud.](../media/access-control.png)
+![Microsoft Entra ID provides access control whether on-premises or in the cloud.](../media/access-control.png)
 
-In addition, you can configure Azure Active Directory to provide single sign-on and multi-factor authentication for SAP applications, Office 365, and any apps running on-premises and in Azure.
+In addition, you can configure Microsoft Entra ID to provide single sign-on and multi-factor authentication for SAP applications, Office 365, and any apps running on-premises and in Azure.
 
 ## Monitor users and developers
 
@@ -31,4 +31,3 @@ The Power Platform admin center provides a unified portal for administrators to 
 - View analytics and create reports on usage of Power Apps, Power Automate, and Dataverse across the entire Microsoft 365 tenant
 
 - Manage Data Gateways, including users and gateway settings
-

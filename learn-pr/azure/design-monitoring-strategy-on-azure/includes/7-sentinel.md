@@ -14,9 +14,9 @@ You can use Microsoft Sentinel to:
 
 You can create a Microsoft Sentinel resource in the Azure portal. The process for creating this resource involves creating a Log Analytics workspace, then adding it to Sentinel.
 
-![SCreenshot of create a workspace.](../media/7-sentinel-01.png)
+![Screenshot of adding a workspace.](../media/7-sentinel-01.png)
 
-When you've created a Sentinel resource, you need to connect data sources for your enterprise. Sentinel integrates with Microsoft solutions, including Azure Active Directory and Office 365, through connectors. It also comes with connectors for non-Microsoft solutions. Sentinel also has a REST API that allows you to connect to other data sources.
+When you've created a Sentinel resource, you need to connect data sources for your enterprise. Sentinel integrates with Microsoft solutions, including Microsoft Entra ID and Office 365, through connectors. It also comes with connectors for non-Microsoft solutions. Sentinel also has a REST API that allows you to connect to other data sources.
 
 Use the Sentinel dashboard to view all of your data connectors.  
 
@@ -26,7 +26,7 @@ Choose the appropriate data connector for your data source. Next, look at the pr
 
 ![SCreenshot of data received.](../media/7-sentinel-03.png)
 
-When you connect the data source, your logs will be synced to Sentinel. You'll get a summary of the data that has been collected in the **DATA RECEIVED** graph for your connector. You'll also get the different data types that have been collected for the source. For example, the Azure Active Directory connector collects sign-in logs and audit logs for you.
+When you connect the data source, your logs will be synced to Sentinel. You'll get a summary of the data that has been collected in the **DATA RECEIVED** graph for your connector. You'll also get the different data types that have been collected for the source. For example, the Microsoft Entra connector collects sign-in logs and audit logs for you.
 
 ## Use alerts to monitor your enterprise
 
@@ -42,7 +42,7 @@ In the analytics pane of your Sentinel dashboard, you can view all the rules tha
 
 ![SCreenshot of create alert rule.](../media/7-sentinel-06.png)
 
-When you create a rule, you need to specify whether it should be enabled or disabled at the outset. You also specify the severity of the alert, along with a rule query.
+When you create a rule, you need to specify whether it should be enabled or disabled at the outset. You also need to specify the severity of the alert, along with a rule query.
 
 For example, you can run the following query to discover if a suspicious number of virtual machines are created or updated on Azure. You also use it to discover if a suspicious number of deployments for resources have occurred.
 
@@ -53,7 +53,7 @@ AzureActivity
  | make-series dcount(ResourceId)  default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller
 ```
 
-In the query scheduling section, you can set how often the query should run, and which period of data to look up. In the alert threshold section, you can specify when an alert is raised.
+In the query scheduling section, you can set how often the query should run and which period of data to look up. In the alert threshold section, you can specify when an alert is raised.
 
 ## Investigate incidents
 
@@ -75,11 +75,11 @@ You're then ready to investigate. When you select **Investigate**, you get an in
 
 ![Screenshot of investigation map.](../media/7-sentinel-10.png)
 
-The investigation map lets you drill down into an incident. You can, for example, get details about a user who is identified as part of the incident.
+The investigation map lets you drill down into an incident. You can, for example, get details about a user who's identified as part of the incident.
 
 ![Screenshot of entity.](../media/7-sentinel-11.png)
 
-If you hover over an entity, you'll also get a list of *exploration queries* that were designed by Microsoft security analysts and experts. You use exploration queries to investigate more effectively.
+If you hover over an entity, you'll also get a list of *exploration queries* designed by Microsoft security analysts and experts. You can use exploration queries to investigate more effectively.
 
 ![Screenshot of exploration queries.](../media/7-sentinel-12.png)
 
@@ -89,26 +89,8 @@ The investigation map also gives you a timeline that helps you understand which 
 
 ## Respond to threats with playbooks
 
-Playbooks can help you automatically respond to threats in Sentinel. You create a new playbook through the **Playbooks** pane in your Sentinel dashboard.
+Playbooks can help you automatically respond to threats in Sentinel. You can create a new playbook through the **Automation** pane in your Sentinel dashboard.
 
 ![Screenshot of Sentinel playbooks.](../media/7-sentinel-14.png)
 
-You add a new playbook by creating a logic app.
-
-![Screenshot of create a logic app.](../media/7-sentinel-15.png)
-
- You use the Azure Logic Apps Designer to configure a new blank logic app.
-
-![Screenshot of Logic Apps Designer.](../media/7-sentinel-16.png)
-
-Search for *Microsoft Sentinel* to find its related connectors and triggers.
-
-![Screenshot of search for Microsoft Sentinel.](../media/7-sentinel-17.png)
-
-Choose the trigger that you want. You can then put together a step-by-step process that details what should happen when a response to a Sentinel alert is triggered. You've then configured a playbook.
-
-![Screenshot of complete playbook.](../media/7-sentinel-18.png)
-
-When you've configured your playbook, you can point to it in your alert rules. The following alert rule, for example, triggers a playbook called **ProcessExecuted**.
-
-![SCreenshot of trigger a playbook.](../media/7-sentinel-19.png)
+You can add a new playbook with an incident trigger, an alert trigger, an entity trigger, or you can choose to create a blank playbook.

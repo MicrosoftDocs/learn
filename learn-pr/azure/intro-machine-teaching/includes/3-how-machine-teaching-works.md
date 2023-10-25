@@ -8,7 +8,7 @@ These are the three steps you follow to design a brain using the new AI paradigm
 2. **Orchestrate** how your skills/modules work together
 3. **Select** the best technology to implement each skill/module
 
-### Step 1. How to decompose a task into skills or modules
+### Step 1: How to decompose a task into skills or modules
 
 The building blocks of Autonomous AI are skills. Skills are the individual abilities you'll be asking your AI brain to learn.
 
@@ -36,7 +36,7 @@ There are three types of skills that you'll use in the visual language of brain 
 - **Action skills** that make real-time human-like decisions. They can be implemented with any of the Automated Intelligence set of technologies (control theory, optimization algorithms, expert systems, expert rules) when these technologies are the simplest that solve the task. And it can also be implemented using Deep Reinforcement Learning when the strategy has to be automatically learned.
 - **Selector skills** that act as supervisors deciding what action skill is best fit for each particular scenario. If the decision is straightforward, the selector is programmable (implemented with regular if-then lines of code). If the decision is fuzzy and difficult to make, it has to be learned and it will be implemented with Deep Reinforcement Learning.
 
-### Step 2. How to orchestrate skills/modules
+### Step 2: How to orchestrate skills/modules
 
 After identifying the skills to teach, we need to put them together in the brain design, by defining how the skills relate to each other.
 
@@ -66,7 +66,7 @@ Here are the possible shapes of the modules that you can find in a brain design:
 - Diamonds represent selectors.
 - The lines in the brain diagram represent information that is passed from one module of the brain to the next.
 
-### Step 3. How to select the technology to implement each skill/module
+### Step 3: How to select the technology to implement each skill/module
 
 This is the phase of Machine Teaching where you map the skills in your brain to the best technology (the simplest) to solve that particular skill or task. The technologies that we can select include, first, those reviewed in the module of Automated Intelligence:
 

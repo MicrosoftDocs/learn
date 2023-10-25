@@ -18,7 +18,7 @@ The following Microsoft management solutions are all now part of Microsoft Endpo
 
 Configuration Manager has traditionally served as an on-premises management solution, primarily focusing on the management of desktops, servers, and laptops within your network. This includes devices accessible through a DMZ if needed. However, with the emergence of modern management tools like Intune and Autopilot, along with continuous innovations to Configuration Manager itself, the product has evolved to bridge the gap between traditional and contemporary management approaches.
 
-By integrating Azure Active Directory, the Microsoft Defender security stack, and the Endpoint Manager admin console, Configuration Manager now provides a unified and comprehensive management experience. This single pane of glass functionality has never been more relevant than it's today. While retaining its existing capabilities, such as application deployment, software updates, and device management, Configuration Manager gains added value when combined with Intune and co-management. This combination offers the flexibility to align the most suitable tool with the specific scenario at hand, enabling a truly modern and agile approach to management.
+By integrating Microsoft Entra ID, the Microsoft Defender security stack, and the Endpoint Manager admin console, Configuration Manager now provides a unified and comprehensive management experience. This single pane of glass functionality has never been more relevant than it's today. While retaining its existing capabilities, such as application deployment, software updates, and device management, Configuration Manager gains added value when combined with Intune and co-management. This combination offers the flexibility to align the most suitable tool with the specific scenario at hand, enabling a truly modern and agile approach to management.
 
 > [!TIP]
 > While it is not the sole responsibility of a modern desktop admin, be mindful of Configuration Manager's support cadence, known as Current Branch. Innovation and changes come much more frequently in today's world, and a Desktop Administrator should be mindful of this to take advantage of these innovations for the delivery of a modern desktop.
@@ -53,7 +53,7 @@ With the use of co-management for the modern transition and the Endpoint Manager
  -  Cloud Management capability
  -  Real-Time query and reporting
  -  Enterprise Scalability
- -  Azure AD Integration
+ -  Microsoft Entra Integration
  -  Proactive cadence adoption through Desktop Analytics
  -  Remote Control
  -  User Settings Capture and Restore

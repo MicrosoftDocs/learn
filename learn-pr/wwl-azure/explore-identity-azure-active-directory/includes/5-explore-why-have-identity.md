@@ -18,7 +18,7 @@ We have talked about Zero Trust and about identity as the control plane for acce
 
 ### What is an identity provider (IdP)
 
-An identity provider (IdP) is a system that creates, manages and stores digital identities.  Microsoft Azure Active Directory is an example. The capabilities and features of identity providers can vary. The most common components are:
+An identity provider (IdP) is a system that creates, manages and stores digital identities.  Microsoft Entra ID is an example. The capabilities and features of identity providers can vary. The most common components are:
 
 - A repository of user identities
 - An authentication system
@@ -32,5 +32,3 @@ An identity provider verifies user identities using one or more authentication f
 **OpenID provider** - OpenID Connect (OIDC) is an authentication protocol based on the OAuth2 protocol (which is used for authorization). OIDC uses the standardized message flows from OAuth2 to provide identity services. Specifically, a system entity (called an OpenID-Provider) issues JSON-formatted identity tokens to OIDC relying parties via a RESTful HTTP API.
 
 **SAML identity provider** - Security Assertion Markup Language (SAML) is an open standard for exchanging authentication and authorization data between an identity provider and a service provider. SAML is an XML-based markup language for security assertions, which are statements that service providers use to make access-control decisions.
-
-

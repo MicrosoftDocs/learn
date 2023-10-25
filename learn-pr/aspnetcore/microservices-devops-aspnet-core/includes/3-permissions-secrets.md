@@ -1,7 +1,7 @@
 In this unit, you complete the following tasks:
 
 - Verify that the app deployed correctly.
-- Create an Azure Active Directory (Azure AD) service principal to deploy to Azure Container Registry and Azure Kubernetes Service (AKS) from GitHub.
+- Create a Microsoft Entra service principal to deploy to Azure Container Registry and Azure Kubernetes Service (AKS) from GitHub.
 - Create secrets to store sensitive data that GitHub Actions uses.
 
 ## Verify the deployment to AKS
@@ -47,7 +47,7 @@ You've verified that the app successfully deployed to AKS and is working properl
 
 ## Create a service principal to deploy from GitHub
 
-GitHub Actions publishes the container image to Azure Container Registry, so the GitHub runner must have permissions to connect to Azure. The following steps create an Azure AD service principal to act as the GitHub Actions identity in Azure.
+GitHub Actions publishes the container image to Azure Container Registry, so the GitHub runner must have permissions to connect to Azure. The following steps create a Microsoft Entra service principal to act as the GitHub Actions identity in Azure.
 
 1. Run the following command in the terminal to display your Subscription ID.
 
@@ -55,7 +55,7 @@ GitHub Actions publishes the container image to Azure Container Registry, so the
    az account show --query 'id' --output tsv
    ```
 
-1. Run the following command to create an Azure AD service principal to allow access from GitHub. Replace the `<subscription-id>` placeholder with your Subscription ID.
+1. Run the following command to create a Microsoft Entra service principal to allow access from GitHub. Replace the `<subscription-id>` placeholder with your Subscription ID.
 
    ```azurecli
    az ad sp create-for-rbac --sdk-auth --name http://eshop-learn-sp --role Contributor --scopes /subscriptions/<subscription-id>
@@ -119,4 +119,4 @@ Complete the following steps to securely store the sensitive information as envi
 
    :::image type="content" source="../media/3-permissions-secrets/github-secrets.png" alt-text="Screenshot that shows the list of Repository secrets on the Actions secrets and variables page." lightbox="../media/3-permissions-secrets/github-secrets.png":::
 
-In this unit, you verified that the app deployed correctly. You then created an Azure AD service principal for GitHub access and stored related sensitive information as GitHub secrets.
+In this unit, you verified that the app deployed correctly. You then created a Microsoft Entra service principal for GitHub access and stored related sensitive information as GitHub secrets.

@@ -4,16 +4,16 @@ You'll provide information about how to protect resources and respond to threats
 
 ## Criteria for assessing Microsoft Defender for Cloud
 
-You use Defender for Cloud to:
+You can use Defender for Cloud to:
 
-- Understand the security posture of your architecture.
+- Understand your architecture's security posture.
 - Identify and address risks and threats to your infrastructure.
 - Secure a complex infrastructure with traditional in-house skills and capital.
 - Secure an infrastructure that consists of on-premises and cloud resources.
 
-## Understand the security posture of your architecture
+## Understand your architecture's security posture
 
-Defender for Cloud gives you detailed analyses of different components of your environment. These components include data security, network security, identity and access, and application security. This way, Defender for Cloud helps you understand the security of your architecture. You can then build and maintain better infrastructures. Defender for Cloud collects data from your machines to monitor for security vulnerabilities and threats using Azure Monitor Logs. Data is collected using the Log Analytics agent, which reads various security-related configurations and event logs from the machine and copies the data to your Log Analytics workspace for analysis.
+Defender for Cloud gives you detailed analyses of different components of your environment. These components include data security, network security, identity and access, and application security. This way, Defender for Cloud helps you understand the security of your architecture. You can then build and maintain better infrastructures. Defender for Cloud collects data from your machines to monitor for security vulnerabilities and threats by using Azure Monitor Logs. Data is collected using the Log Analytics agent, which reads various security-related configurations and event logs from the machine and copies the data to your Log Analytics workspace for analysis.
 
 ![Screenshot of Microsoft Defender for Cloud Overview.](../media/6-security-center-update-01.png)
 
@@ -25,9 +25,9 @@ Defender for Cloud recommends ways to address the issues and risks that it's unc
 
 You can use access and application controls in Defender for Cloud to help protect your resources. These controls block suspicious activity. For example, you can protect your virtual machines through just-in-time (JIT) virtual machine access. JIT is a feature that blocks persistent access to virtual machines. Your virtual machines are only accessed based on audited access that you configure.
 
-You enable can JIT through the **Just in time VM access** option in the **Microsoft Defender for Cloud, Advanced protection** section of Defender for Cloud in the Azure portal. You'll get a list of all virtual machines that already have JIT configured, and a list of virtual machines where JIT is not configured. Choose a virtual machine in the not configured list, then select the **Enable JIT on (number) VM** option to configure JIT for the virtual machine.
+You enable can JIT through the **Just in time VM access** option in the **Workload protections** section of Defender for Cloud in the Azure portal. You'll get a list of all virtual machines that already have JIT configured, and a list of virtual machines where JIT is not configured. Choose a virtual machine in the not configured list, then select the **Enable JIT on (number) VMs** option to configure JIT for the virtual machine.
 
-Defender for Cloud shows you a list of default ports that JIT will target. You can also configure your own, as shown in the following example.
+Defender for Cloud shows you a list of default ports that JIT will target. You can also configure your own, as shown in the following example:
 
 ![Screenshot of JIT configuration.](../media/6-security-center-update-03.png)
 
@@ -47,7 +47,7 @@ You can view your security alerts through the **Security alerts** pane under the
 
 ![Screenshot of Security alerts overview.](../media/6-security-center-update-05.png)
 
-You drill down into specific security incidents by selecting an incident.
+You can drill down into specific security incidents by selecting an incident.
 
 ![Screenshot of incident details.](../media/6-security-center-update-06.png)
 
@@ -63,6 +63,6 @@ You have the responsibility to dismiss alerts if no action is required, such as 
 
 ![Screenshot of alert status.](../media/6-security-center-update-09.png)
 
-Defender for Cloud helps you respond to threats faster, and in an automated way by taking action. Actions include mitigating the threat, preventing future attacks, triggering an automated response with Logic Apps, or suppressing similar alerts.
+Defender for Cloud helps you respond to threats faster and in an automated way by taking action. Actions include mitigating the threat, preventing future attacks, triggering an automated response with Logic Apps, or suppressing similar alerts.
 
 ![Screenshot of alert action options.](../media/6-security-center-update-10.png)

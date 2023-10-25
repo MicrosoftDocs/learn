@@ -1,5 +1,7 @@
 Through this module series, you'll learn how to use the Microsoft Spatializer plugin to add spatial audio to your app. Spatial audio is a way of creating sound in 360 degrees around a listener. Sound can come from any place in a sphere. It takes two forms - binaural and object-based. Binaural sound is used in headphones. Object-based sound is for television, radio and loudspeaker listening.
 
+A completed example of this tutorial can be found [here](https://github.com/microsoft/MixedRealityLearning/tree/development/MRTK3%20Tutorials).
+
 ## Learning objectives
 
 * Importing and enabling Microsoft Spatializer plugin

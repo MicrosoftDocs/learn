@@ -9,7 +9,7 @@ Using an identity provider for authentication offers a way to ensure secure iden
 
 **Convenience** - The convenience capability focuses on the end-users experience with how they are prompted for authentication credentials. Focus here is on the end-user experience.  If something is not easy, users will avoid it or complain about it.
 
-**Sources** - The sources capability surrounds where the user obtains their authentication token from. Many organizations have what they believe is a centralized issuer (Azure Active Directory), but in reality most organizations also have other identity repositories.  Federated identity is the most common other identity provider.
+**Sources** - The sources capability surrounds where the user obtains their authentication token from. Many organizations have what they believe is a centralized issuer (Microsoft Entra ID), but in reality most organizations also have other identity repositories.  Federated identity is the most common other identity provider.
 
 **Protocols** - Often, organizations have a variety of authentication protocols in place which cause a deficient experience to both end-users and the organization. A focus area of this capability is to help an organization standardize on one, or more, modern and secure authentication protocols to accomplish their authentication goals.
 
@@ -32,8 +32,10 @@ Federation is a collection of domains that have established trust. The level of 
 ### OpenID Connect
 OpenID Connect (OIDC) is an authentication protocol built on OAuth 2.0.  This protocol enables a user to securely sign in a user to an application. When you use the Microsoft identity platform's implementation of OpenID Connect, you can add sign-in and API access to your apps. OpenID Connect extends the OAuth 2.0 authorization protocol for use as an authentication protocol, so that you can do single sign-on using OAuth. OpenID Connect introduces the concept of an ID token, which is a security token that allows the client to verify the identity of the user. The ID token also gets basic profile information about the user. It also introduces the UserInfo endpoint, an API that returns information about the user.
 
-### Claims-based identity in Azure AD
-When a user signs in, Azure AD sends an ID token that contains a set of claims about the user. A claim is simply a piece of information, expressed as a key/value pair. For example, email=bob@contoso.com. Claims have an issuer (in this case, Azure AD), which is the entity that authenticates the user and creates the claims. You trust the claims because you trust the issuer. (Conversely, if you don't trust the issuer, don't trust the claims!)
+<a name='claims-based-identity-in-azure-ad'></a>
+
+### Claims-based identity in Microsoft Entra ID
+When a user signs in, Microsoft Entra ID sends an ID token that contains a set of claims about the user. A claim is simply a piece of information, expressed as a key/value pair. For example, email=bob@contoso.com. Claims have an issuer (in this case, Microsoft Entra ID), which is the entity that authenticates the user and creates the claims. You trust the claims because you trust the issuer. (Conversely, if you don't trust the issuer, don't trust the claims!)
 
 At a high level:
 1. The user authenticates.
@@ -41,7 +43,7 @@ At a high level:
 3. The app normalizes or augments the claims (optional).
 4. The app uses the claims to make authorization decisions.
 
-In OpenID Connect, the set of claims that you get is controlled by the scope parameter of the authentication request. However, Azure AD issues a limited set of claims through OpenID Connect via a security token; primarily using JSON Web Tokens. If you want more information about the user, you'll need to use the Azure AD Graph API.
+In OpenID Connect, the set of claims that you get is controlled by the scope parameter of the authentication request. However, Microsoft Entra ID issues a limited set of claims through OpenID Connect via a security token; primarily using JSON Web Tokens. If you want more information about the user, you'll need to use the Azure AD Graph API.
 
 ### Security tokens
 The Microsoft identity platform authenticates users and provides security tokens, such as access tokens, refresh tokens, and ID tokens. Security tokens allow a client application to access protected resources on a resource server. There are three common types of tokens, Access tokens, Refresh tokens, and ID tokens.
@@ -56,7 +58,7 @@ JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and s
 > Information provided from the JWT web-site -  https://jwt.io/.
 
 #### Definitions within claims-based identity
-There are some common terms used when discussing claims-based identity in Azure AD.
+There are some common terms used when discussing claims-based identity in Microsoft Entra ID.
 
 - **Claim** - a value pair of data within a security token.  There are multiple claims transferred within the token from the claim that defines the type of the token to the encryption method.  Here is an example:
      ```
