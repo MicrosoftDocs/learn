@@ -9,8 +9,7 @@ metadata:
   author: aprilspeight
   ms.author: apspeigh
   #ms.learn-contact: smmark
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 prerequisites: None
 iconUrl: /training/achievements/get-started-with-azure-remote-rendering.svg
 levels:
