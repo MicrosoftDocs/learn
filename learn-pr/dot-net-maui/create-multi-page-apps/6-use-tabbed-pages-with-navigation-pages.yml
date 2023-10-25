@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "Pass the data into the constructor of the target page."
       isCorrect: false
-      explanation: "When using route-based navigation, you won't invoke the constructor of the target page manually."
+      explanation: "When using route-based navigation, you don't invoke the constructor of the target page manually."
     - content: "Instantiate the page, then set page-level properties."
       isCorrect: false
-      explanation: "When using route-based navigation, you won't have to instantiate the page manually."
+      explanation: "When using route-based navigation, you don't have to instantiate the page manually."
     - content: "Use a query string syntax. A key/value pair can be sent."
       isCorrect: true
-      explanation: "Correct. By using a query string syntax, data can be sent between pages."
+      explanation: "Correct. You can use a query string syntax to send data between pages."
