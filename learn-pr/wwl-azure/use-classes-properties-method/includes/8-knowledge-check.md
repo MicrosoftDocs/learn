@@ -1,5 +1,3 @@
-
-
 ## Multiple Choice
 
 How do you instantiate a class?

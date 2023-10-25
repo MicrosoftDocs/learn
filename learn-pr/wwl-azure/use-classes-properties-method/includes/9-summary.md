@@ -1,5 +1,3 @@
-
-
 ## Summary
 
 In this module you took what you learned about classes, objects, methods and properties and put them to use. You learned how to instantiate a class that creates an in-memory object of your class. You also learned how to implement methods and properties in your class and the differences between the two. 

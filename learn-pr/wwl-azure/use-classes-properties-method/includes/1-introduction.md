@@ -1,5 +1,3 @@
-
-
 Now that you know what classes, properties, and methods are it's time to use them.
 
 Suppose you have created your classes and defined the necessary methods and properties and you're now ready to write code to use the classes. You create an instance of the class you defined, set its properties to reflect the specific state of the instance of that object, then call the appropriate methods to perform the desired actions. The methods called are often be determined by choices made by a user through their interaction with your program.
