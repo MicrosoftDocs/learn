@@ -1,6 +1,6 @@
-The goal here was to help you evaluate whether Kubernetes would be a good choice as a container-orchestration platform for your business. You looked at several features that enhance the Azure Kubernetes Service (AKS) offering. You learned how these features can help you decide if Kubernetes is a good fit for new projects, or if you should move to Kubernetes to orchestrate current container deployments.
+The goal here was to help you evaluate whether Kubernetes would be a good choice as a container-orchestration platform for your business. You built an app with Kubernetes running on a virtual machine. You evaluated Kubernete is a good fit for new projects with multiple pieces. If you plan to use Kubernetes to orchestrate your container deployments, the Azure Kubernetes Service offers built-in cloud native support to simplify your journey.
 
-You saw how Kubernetes provides for:
+Through this module, you saw how Kubernetes provides for:
 
 - Deployment of containers.
 - Self-healing of containers.
@@ -10,7 +10,7 @@ You saw how Kubernetes provides for:
 - Management of network traffic.
 - Storage and management of sensitive information such as usernames and passwords.
 
-To deploy and manage your drone-tracking solution into new customer regions, you were looking for a container-orchestration platform. You now understand how Kubernetes can help you develop, deploy, and manage apps in your container environment.
+To deploy and manage your drone-tracking solution into new customer regions, you found a container-orchestration platform. You now understand how Kubernetes can help you develop, deploy, and manage apps in your container environment.
 
 ## Uninstall MicroK8s
 
@@ -48,7 +48,6 @@ If you want to remove the Multipass VM manager from your machine, there are a fe
     multipass delete microk8s-vm
     multipass purge
     ```
-
 
 ## Learn more
 
