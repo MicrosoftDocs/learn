@@ -23,7 +23,8 @@ Most computer vision solutions are based on machine learning models that can be 
 
 ## Computer vision services in Microsoft Azure
 
-You can use Microsoft's **Azure AI Vision** to develop computer vision solutions. Some features of Azure AI Vision include: 
+You can use Microsoft's **Azure AI Vision** to develop computer vision solutions. The service features are available for use and testing in the **Azure Vision Studio** and other programming languages. Some features of Azure AI Vision include:
+ 
 - **Image Analysis**: capabilities for analyzing images and video, and extracting descriptions, tags, objects, and text.
 - **Face**: capabilities that enable you to build face detection and facial recognition solutions.
 - **Optical Character Recognition (OCR)**: capabilities for extracting printed or handwritten text from images, enabling access to a digital version of the scanned text.
