@@ -376,6 +376,4 @@ To scale the number of replicas in your deployment, run the `kubectl scale` comm
     ubuntu@microk8s-vm:~$
     ```
 
-You'd need to apply several more configurations to the cluster to effectively expose your website as a public-facing website. Examples include installing a load balancer and mapping node IP addresses. This type of configuration forms part of advanced aspects that you'll explore in the future. That's the end of the intro to kubernetes exercise.
-
-In the summary, there are instructions if you choose to uninstall and clean up MicroK8s.
+You'd need to apply several more configurations to the cluster to effectively expose your website as a public-facing website. Examples include installing a load balancer and mapping node IP addresses. This type of configuration forms part of advanced aspects that you'll explore in the future. In the summary, there are instructions if you choose to uninstall and clean up your VM.
