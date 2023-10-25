@@ -1,6 +1,3 @@
-
-
-
 Code challenges throughout these modules reinforce what you've learned, and help you gain some confidence before continuing on.
 
 The focus of this challenge is to create correct methods with the proper parameters and return types.

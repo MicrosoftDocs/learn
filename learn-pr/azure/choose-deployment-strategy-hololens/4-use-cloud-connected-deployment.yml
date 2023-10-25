@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-deployment-strategy-hololens.use-cloud-connected-deployment
+title: Scenario - Cloud connected deployment
+metadata:
+  title: Scenario - Cloud connected deployment
+  description: "This unit explores a fictional real-world scenario for cloud connected deployment."
+  ms.date: 7/12/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: holoLens
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-use-cloud-connected-deployment.md)]

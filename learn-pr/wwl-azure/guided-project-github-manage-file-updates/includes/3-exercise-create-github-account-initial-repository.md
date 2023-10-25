@@ -1,4 +1,3 @@
-
 <!--- raw content start --->
 In this unit, you'll be working with the GitHub site and the web interface. If you already have a GitHub account and know your sign in credentials, you can skip to [Create an initial repository](#create-an-initial-repository).
 <!--- raw content end --->

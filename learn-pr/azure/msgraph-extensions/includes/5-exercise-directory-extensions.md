@@ -6,7 +6,7 @@ In this exercise, you use [Graph Explorer](https://aka.ms/ge) to make REST API r
 
 1. To perform the API operations in this exercise, consent to the *User.ReadWrite.All*, *Group.ReadWrite.All*, and *Application.ReadWrite.All* Microsoft Graph permissions.
 
-In the team-bonding app, employees will sign in with their Azure AD profile and must consent to *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
+In the team-bonding app, employees will sign in with their Microsoft Entra profile and must consent to *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
 
 ## Identify the owner app
 
@@ -180,4 +180,4 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-After a few seconds to allow Azure AD to complete synchronization, the users who match the dynamic membership rule, such as Adele, are added as members of the group.
+After a few seconds to allow Microsoft Entra ID to complete synchronization, the users who match the dynamic membership rule, such as Adele, are added as members of the group.

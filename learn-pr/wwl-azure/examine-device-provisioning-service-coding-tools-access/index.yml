@@ -26,7 +26,6 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-iot-dps
 - azure-iot-hub
 - azure-portal
 subjects:

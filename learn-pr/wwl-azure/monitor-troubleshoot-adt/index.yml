@@ -45,3 +45,4 @@ units:
 - learn.wwl.monitor-troubleshoot-adt.summary
 badge:
   uid: learn.wwl.monitor-troubleshoot-adt.badge
+hidden: true

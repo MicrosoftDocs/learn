@@ -1,6 +1,6 @@
 String methods are one of the most common method types in Python. You'll often need to manipulate strings to extract information or fit a certain format. Python includes several string methods that are designed to do the most common and useful transformations.
 
-String methods are part of the `str` type. This means that the methods exist as string variables, or part of the string directly. For example, the method `.title()` returns the string in uppercase and can be used with a string directly:
+String methods are part of the `str` type. This means that the methods exist as string variables, or part of the string directly. For example, the method `.title()` returns the string in initial caps and can be used with a string directly:
 
 ```python
 print("temperatures and facts about the moon".title())
@@ -22,7 +22,7 @@ A common string method is `.split()`. Without arguments, the method will separat
 
 ```python
 temperatures = "Daylight: 260 F Nighttime: -280 F"
-temperatures_list = temperatures .split()
+temperatures_list = temperatures.split()
 print(temperatures_list)
 ```
 
@@ -32,7 +32,7 @@ In this example, you're dealing with multiple lines, so the (implicit) newline c
 
 ```python
 temperatures = "Daylight: 260 F\n Nighttime: -280 F"
-temperatures_list = temperatures .split('\n')
+temperatures_list = temperatures.split('\n')
 print(temperatures_list)
 ```
 

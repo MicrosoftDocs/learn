@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.wwl.create-manage-cognitive-services
 metadata:
-  title: Create and consume Cognitive Services
-  description: "Create and consume Cognitive Services"
+  title: Create and consume Azure AI Services
+  description: "Create and consume Azure AI Services"
   ms.date: 12/07/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-title: Create and consume Cognitive Services
-summary: Azure Cognitive Services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
+  ms.service: ai-services
+title: Create and consume Azure AI Services 
+summary: Azure AI Services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
 abstract: |
   After completing this module, you will be able to:
-  - Provision Cognitive Services resources in an Azure subscription.
-  - Identify endpoints, keys, and locations required to consume a Cognitive Services resource.
-  - Use a REST API to consume a cognitive service.
-  - Use an SDK to consume a cognitive service.
+  - Provision Azure AI Services resources in an Azure subscription.
+  - Identify endpoints, keys, and locations required to consume an Azure AI Services resource.
+  - Use a REST API to consume an Azure AI service.
+  - Use an SDK to consume an Azure AI service.
 prerequisites: |
   Before starting this module, you should have:
   - Experience of provisioning and managing Azure services in the Azure portal.
@@ -28,7 +28,7 @@ roles:
 - developer
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 units:

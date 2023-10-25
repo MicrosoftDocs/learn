@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.tensorflow.intro-machine-learning-tensorflow.predict
-title: Making a prediction
+title: Make a prediction
 metadata:
-  title: Making a prediction
-  description: Learn how to make a prediction using your trained neural network using TensorFlow
-  ms.date: 07/07/2021
+  title: Make a prediction
+  description: Learn how to make a prediction using your trained neural network using TensorFlow.
+  ms.date: 07/24/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial

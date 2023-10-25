@@ -1,4 +1,5 @@
 
+
 Hyperopt is an open source Python library for hyperparameter tuning. Hyperopt is automatically installed when you create a cluster with an **ML** variant of the Databricks Runtime. To use it when training a model, follow these steps:
 
 1. Define an *objective* function to train and evaluate a model.
@@ -15,7 +16,7 @@ Hyperopt works by iteratively calling a function (often referred to as the *obje
 - Evaluates the model based on a target metric for predictive performance.
 - Returns a numeric value that reflects the performance metric such that improving the model performance *lowers* the return value.
 
-For example, the following function trains a machine learning model using the **LogisticRegression** algorithm from the Spark MLlib library.
+For example, the following function trains a machine learning model using the **LogisticRegression** algorithm from the Spark MLlib library. 
 
 ```python
 def objective(params):

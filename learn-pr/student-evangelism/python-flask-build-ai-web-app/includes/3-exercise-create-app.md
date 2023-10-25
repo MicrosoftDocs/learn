@@ -47,6 +47,9 @@ By using `@app.route`, we indicate the route we want to create. The path will be
 
 Jinja, the templating engine for Flask, focuses quite heavily on HTML. As a result, we can use all the existing HTML skills and tools we already have. We're going to use [Bootstrap](https://getbootstrap.com?azure-portal=true) to lay out our page, to make it a little prettier. By using Bootstrap, we'll use different CSS classes on our HTML. If you're not familiar with Bootstrap, you can ignore the classes and focus on the HTML (which is really the important part).
 
+> [!IMPORTANT]
+> HTML (Hypertext Markup Language) is a standard markup language used to create web pages. HTML consists of a series of tags and attributes to create headings, paragraphs, lists, images, links, and other elements that make up a web page. When a user requests a web page, their browser reads the HTML code and renders it as a visual web page that the user can interact with. To learn more about HTML, see [HTML basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics?azure-portal=true).
+
 Templates for Flask need to be created in a folder named **templates**, which is fitting. Let's create the folder, the necessary file, and add the HTML.
 
 1. Create a new folder named **templates** by selecting **New Folder** in the **Explorer** tool in Visual Studio Code

@@ -4,4 +4,4 @@ Speech translation is how conversational spoken phrases are instantly translated
 
 ## Azure Cognitive Service
 
-Cognitive Services brings AI within reach of every developer without requiring machine-learning expertise. All it takes is an API call to embed the ability to see, hear, speak, search, understand and accelerate decision-making into your apps. Enables developers of all skill levels to add AI capabilities to their apps quickly.
+Azure AI services brings AI within reach of every developer without requiring machine-learning expertise. All it takes is an API call to embed the ability to see, hear, speak, search, understand and accelerate decision-making into your apps. Enables developers of all skill levels to add AI capabilities to their apps quickly.

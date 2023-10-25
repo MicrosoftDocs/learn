@@ -4,10 +4,11 @@ metadata:
   title: Ensure stable operations and optimization across all supported workloads deployed to the cloud
   description: As workloads are deployed to the cloud, operations are critical to success.
   ms.date: 04/21/2023
-  author: BrianBlanchard
-  ms.author: jumcn
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.service: caf
+  ms.subservice: caf-methodology-manage
 title: Ensure stable operations and optimization across all supported workloads deployed to the cloud
 summary: As workloads are deployed to the cloud, operations are critical to success. In this learn module, you learn how to deploy an operations baseline to manage workloads in your environment. The module also covers how to enhance the baseline, both for workloads and for platforms.
 abstract: |

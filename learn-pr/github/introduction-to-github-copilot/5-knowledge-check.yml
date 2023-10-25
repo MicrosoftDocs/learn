@@ -16,12 +16,12 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: “What is GitHub Copilot”?
+  - content: "What is GitHub Copilot?"
     choices:
-    - content: “GitHub Copilot is an AI pair programmer that you can use to get code suggestions.”
+    - content: "GitHub Copilot is an AI pair programmer that you can use to get code suggestions."
       isCorrect: true
-      explanation: “GitHub Copilot is an AI pair programmer that you can use to get suggestions for whole lines or entire functions right inside your editor.”
-    - content: “GitHub Copilot is OpenAI Codex, a new AI system created by OpenAI.”
+      explanation: "GitHub Copilot is an AI pair programmer that you can use to get suggestions for whole lines or entire functions right inside your editor."
+    - content: "GitHub Copilot is OpenAI Codex, a new AI system created by OpenAI."
       isCorrect: false
       explanation: "GitHub Copilot is powered by OpenAI Codex, a new AI system created by OpenAI."
     - content: "GitHub Copilot is a JavaScript public repository and is one of the best supported languages."
@@ -29,26 +29,26 @@ quiz:
       explanation: "JavaScript is well represented in public repositories and is one of GitHub Copilot's best supported languages."
     - content: "GitHub Copilot can write a comment describing logic and you can add your suggested code to implement the solution."
       isCorrect: false
-      explanation: "You can write a comment describing the logic you want and GitHub Copilot displays suggested code to implement the solution."
-  - content: “What are the supported integrated development environment extensions for GitHub Copilot?”
+      explanation: "You can write a comment describing the logic you want, and GitHub Copilot displays suggested code to implement the solution."
+  - content: "What are the supported integrated development environment extensions for GitHub Copilot?"
     choices:
-    - content: “Visual Studio Code and Visual Studio”
+    - content: "Visual Studio Code and Visual Studio"
       isCorrect: false
-      explanation: “Although these two IDEs are support by GitHub Copilot, the platform supports more than just these two IDEs.”
-    - content: “GitHub.com, Visual Studio Code, Visual Studio, Neovim, and Jet brains”
+      explanation: "Although these two IDEs are support by GitHub Copilot, the platform supports more than just these two IDEs."
+    - content: "GitHub.com, Visual Studio Code, Visual Studio, Neovim, and JetBrains"
       isCorrect: false
-      explanation: “Although GitHub.com is supported, it doesn't need an extension.”
-    - content: “Visual Studio Code, Visual Studio, Neovim, and Jet brains”
+      explanation: "Although GitHub.com is supported, it doesn't need an extension."
+    - content: "Visual Studio Code, Visual Studio, Neovim, and JetBrains"
       isCorrect: true
       explanation: "Correct! All of the IDEs listed have supported GitHub extensions."
-  - content: “What is GitHub Copilot X”?
+  - content: "What is GitHub Copilot X?"
     choices:
-    - content: “GitHub's vision for the future of AI-powered software development.”
+    - content: "GitHub's vision for the future of AI-powered software development."
       isCorrect: true
-      explanation: “As the landscape of AI developer tools changes at lightening speed, GitHub wanted to ensure we remain at the cutting edge of innovation and improvements.”
-    - content: “An Artificial Intelligence (AI) pair programmer that you can use to get suggestions for whole lines or entire functions right inside your editor.”
+      explanation: "As the landscape of AI developer tools changes at lightening speed, GitHub wanted to ensure we remain at the cutting edge of innovation and improvements."
+    - content: "An Artificial Intelligence (AI) pair programmer that you can use to get suggestions for whole lines or entire functions right inside your editor."
       isCorrect: false
-      explanation: "Although GitHub Copilot is a part of GitHub Copilot X, GitHub Copilot X is GitHub’s vision for the future of AI-powered software development."
+      explanation: "Although GitHub Copilot is a part of GitHub Copilot X, GitHub Copilot X is GitHub's vision for the future of AI-powered software development."
     - content: "A product focused on organizations to help them be more productive, secure, and fulfilled."
       isCorrect: false
-      explanation: "Although GitHub Copilot for Business is a part of GitHub Copilot X, GitHub Copilot X is GitHub’s vision for the future of AI-powered software development."
+      explanation: "Although GitHub Copilot for Business is a part of GitHub Copilot X, GitHub Copilot X is GitHub's vision for the future of AI-powered software development."

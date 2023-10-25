@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.extract-data-from-forms-use-form-recognizer
 metadata:
-  title: Extract data from forms by using Form Recognizer
-  description: Extract data from forms by using Form Recognizer
+  title: Extract data from forms by using Azure AI Document Intelligence
+  description: Extract data from forms by using Azure AI Document Intelligence
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.service: azure
-title: Extract data from forms by using Form Recognizer
+title: Extract data from forms by using Azure AI Document Intelligence
 prerequisites: |
   - None
 summary: |
@@ -17,15 +17,15 @@ summary: |
   * Design a solution that analyzes your business forms by using Azure Forms Analyzer.
   * Create a solution that analyzes common documents by using Azure Forms Analyzer.
   * Create a solution that analyses different custom form types by using Azure Forms Analyzer.
-  * Include an Azure Form Recognizer service as a custom skill in an Azure Cognitive Search pipeline.
+  * Include an Azure AI Document Intelligence service as a custom skill in an Azure Cognitive Search pipeline.
 iconUrl: /training/achievements/extract-data-from-forms-use-form-recognizer.svg
 levels:
 - intermediate
 roles:
 - ai-engineer
 products:
-- azure-cognitive-services
-- azure-form-recognizer
+- document-intelligence
+- ai-services
 subjects:
 - artificial-intelligence
 modules:

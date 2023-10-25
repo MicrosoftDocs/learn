@@ -3,7 +3,7 @@ uid: learn.pytorch.intro-machine-learning.inference
 title: Load and run model predictions
 metadata:
   title: Load and run model predictions
-  description: In this section we will look at how to persist model state with saving, loading, and running model predictions.
+  description: In this section, we look at how to persist model state with saving, loading, and running model predictions.
   author: cassiebreviu
   ms.author: ruyakubu
   ms.date: 04/14/2020
@@ -22,15 +22,15 @@ quiz:
   questions:
     - content: "What is a PyTorch model `state_dict`?"
       choices:
-        - content: "It is a model's internal state dictionary that stores its current accuracy and loss values."
+        - content: "It's a model's internal state dictionary that stores its current accuracy and loss values."
           isCorrect: false
-          explanation: "Incorrect, it is a model's internal state dictionary that stores learned parameters."
-        - content: "It is a model's internal state dictionary that stores versions of the data used for training."
+          explanation: "Incorrect, it's a model's internal state dictionary that stores learned parameters."
+        - content: "It's a model's internal state dictionary that stores versions of the data used for training."
           isCorrect: false
-          explanation: "Incorrect, it is a model's internal state dictionary that stores learned parameters."
-        - content: "It is a model's internal state dictionary that stores its internal layers."
+          explanation: "Incorrect, it's a model's internal state dictionary that stores learned parameters."
+        - content: "It's a model's internal state dictionary that stores its internal layers."
           isCorrect: false
-          explanation: "Incorrect, it is a model's internal state dictionary that stores learned parameters."
-        - content: "It is a model's internal state dictionary that stores learned parameters."
+          explanation: "Incorrect, it's a model's internal state dictionary that stores learned parameters."
+        - content: "It's a model's internal state dictionary that stores learned parameters."
           isCorrect: true
           explanation: "Correct!"

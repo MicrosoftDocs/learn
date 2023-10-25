@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 110079
-labModal: true
+# labId: 110079
+labModal: false
 durationInMinutes: 90
 content: |
   [!include[](includes/2-implement-azure-digital-twins.md)]

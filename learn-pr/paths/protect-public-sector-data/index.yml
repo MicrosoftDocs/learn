@@ -25,8 +25,8 @@ products:
 - azure-iot-hub
 - azure-stack-hub
 - azure-stack-edge
-- azure-farmbeats
-- azure-active-directory
+- data-manager-for-agri
+- entra-id
 - azure-key-vault
 - defender-for-cloud
 - azure-monitor

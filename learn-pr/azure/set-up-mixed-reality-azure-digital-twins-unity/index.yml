@@ -27,7 +27,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 - azure-digital-twins
 - azure-iot
 - azure-iot-hub
@@ -38,7 +38,7 @@ products:
 - windows-mixed-reality
 prerequisites: |
   - Azure service creation and configuration
-  - Domain User Azure Active Directory (i.e, not Guest)
+  - Domain User Microsoft Entra ID (i.e., not Guest)
   - [Azure CLI](/cli/azure/install-azure-cli) installed
   - Bing Maps developer account 
   - A Windows 10 PC configured with the required tools

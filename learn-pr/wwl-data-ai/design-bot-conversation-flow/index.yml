@@ -5,9 +5,9 @@ metadata:
   description: "Learn how to build a bot by using the Microsoft Bot Framework SDK."
   ms.date: 05/25/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.service: cognitive-services
 title: Create a bot with the Bot Framework SDK
 summary: Learn how to build a bot by using the Microsoft Bot Framework SDK.
 abstract: |

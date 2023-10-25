@@ -1,15 +1,15 @@
-In this exercise, you'll create an Azure Active Directory (Azure AD) group to manage the developer team's access. You'll also add a rule for the group to manage the membership automatically.
+In this exercise, you'll create a Microsoft Entra group to manage the developer team's access. You'll also add a rule for the group to manage the membership automatically.
 
 > [!NOTE]
-> This exercise depends on having completed prior exercises in this module. If you have not done so, complete [exercise in unit 3](../3-exercise-add-delete-users-azure-ad.yml) before you begin.
+> This exercise depends on having completed prior exercises in this module. If you haven't done so, complete [exercise in unit 3](../3-exercise-add-delete-users-azure-ad.yml) before you begin.
 
 ## Add a new group
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Go to the Azure Active Directory you created earlier in this module.
+1. Go to the Microsoft Entra ID you created earlier in this module.
 
-1. In the left menu pane, under **Manage**, select **Groups**. The **All groups** pane appears for your Azure AD.
+1. In the left menu pane, under **Manage**, select **Groups**. The **All groups** pane appears for your Microsoft Entra ID.
 
 1. On the top menu bar, select **New group**. The **New Group** pane appears.
 
@@ -39,13 +39,13 @@ You'll now assign members to the Developer group.
 
 1. Search for and select **Chris Green**.
 
-1. Select **Select**. You'll see this user in the *Direct members* list for the Developers group in the **Members** pane.
+1. Select **Select**. You'll see this user in the *Direct members* list for the Developers group in the **Members** pane. You might need to refresh to see the users.
 
 ## Modify the group to use dynamic assignment
 
 You can change the group to use dynamic assignment. Membership then depends on whether a user meets the rules you set for the group.
 
-If you didn't activate the free trial for Azure AD Premium 2, you won't be able to complete this section. That's ok. You can still see how you change the group to use dynamic assignment.
+If you didn't activate the free trial for Microsoft Entra ID P1 or P2, you won't be able to complete this section. That's ok. You can still see how you change the group to use dynamic assignment.
 
 1. In the left menu pane, under **Manage**, select **Properties**. The **Properties** pane appears for your developer group.
 

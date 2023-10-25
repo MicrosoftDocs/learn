@@ -8,7 +8,7 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
 -->
-To help move your app through the development, test, and production lifecycle, you'll need an Azure Active Directory (Azure AD) test environment. You can use your Azure AD test environment during the early stages of app development and long-term as a permanent test environment.
+To help move your app through the development, test, and production lifecycle, you'll need a Microsoft Entra test environment. You can use your Microsoft Entra test environment during the early stages of app development and long-term as a permanent test environment.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ To help move your app through the development, test, and production lifecycle, y
 
     Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
 -->
-Testing your application in your production Azure AD tenant would be simpler and easier, but can you safely constrain the test application in the production environment?  Will the administrators approve the creation of test users and test data in the production environment?  How can your integration tests use automated sign-ins when user interaction is required (through multi-factor authentication)?
+Testing your application in your production Microsoft Entra tenant would be simpler and easier, but can you safely constrain the test application in the production environment?  Will the administrators approve the creation of test users and test data in the production environment?  How can your integration tests use automated sign-ins when user interaction is required (through multi-factor authentication)?
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
@@ -28,7 +28,7 @@ Testing your application in your production Azure AD tenant would be simpler and
 
     Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
 -->
-This exercise takes you through the process of evaluating whether you need a dedicated tenant for your application's Azure AD test environment or if you can use your existing production tenant.
+This exercise takes you through the process of evaluating whether you need a dedicated tenant for your application's Microsoft Entra test environment or if you can use your existing production tenant.
 
 <!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
 
@@ -51,13 +51,15 @@ This exercise takes you through the process of evaluating whether you need a ded
 -->
 
 <!-- Pattern for simple chunks (repeat as needed) -->
-## Dedicated test tenant or production Azure AD tenant?
+<a name='dedicated-test-tenant-or-production-microsoft-entra-tenant'></a>
 
-Your task is to decide between using an Azure AD tenant dedicated to testing or your production tenant as your test environment.
+## Dedicated test tenant or production Microsoft Entra tenant?
+
+Your task is to decide between using a Microsoft Entra tenant dedicated to testing or your production tenant as your test environment.
 
 Using a production tenant can make some aspects of application testing easier, but it requires the right level of isolation between test and production resources. Isolation is especially important for high-privilege scenarios.
 
-Don't use your production Azure AD tenant for testing if:
+Don't use your production Microsoft Entra tenant for testing if:
 
 - Your application uses settings that require tenant-wide uniqueness. For example, your app might need to access tenant resources as itself, not on behalf of a user, by using app-only permissions. App-only access requires admin consent, which applies to the entire tenant. Such permissions are hard to scope down safely within a tenant boundary.
 - You have low tolerance of risk for potential unauthorized access of test resources by tenant members.

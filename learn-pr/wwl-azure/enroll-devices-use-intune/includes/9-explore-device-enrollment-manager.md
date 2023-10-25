@@ -10,7 +10,7 @@ A restaurant wants to provide 50 point-of-sale tablets for its wait staff, and o
 
 ### What can a device enrollment manager do?
 
-Only users in Azure AD can be added as a device enrollment manager.
+Only users in Microsoft Entra ID can be added as a device enrollment manager.
 
 The DEM user can:
 
@@ -39,7 +39,7 @@ Devices that are enrolled with a device enrollment manager account have the foll
 
 ### Permissions for DEM
 
-Global or Intune Service Administrator Azure AD roles are required to:
+Global or Intune Service Administrator Microsoft Entra roles are required to:
 
  -  Complete tasks that are related to DEM enrollment in the Admin Portal
  -  Access all DEM users despite role-based access control (RBAC) permissions being listed and available under the custom User role

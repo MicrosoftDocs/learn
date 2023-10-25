@@ -29,8 +29,8 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-domain
+- entra-id
+- entra
 - windows-server
 subjects:
 - identity-access

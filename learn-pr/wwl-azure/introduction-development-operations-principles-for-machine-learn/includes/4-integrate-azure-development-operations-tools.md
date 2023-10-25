@@ -11,7 +11,7 @@ The administrator is responsible for connecting Azure Machine Learning with eith
 
 To connect Azure DevOps with Azure Machine Learning, you'll first need to create an organization and a project. You'll use the organization to group and manage projects. 
 
-Start by signing in to [Azure DevOps](https://azure.microsoft.com/services/devops/?portal=true) with a Microsoft of GitHub account.
+Start by signing in to [Azure DevOps](https://azure.microsoft.com/services/devops/?portal=true) with a Microsoft or GitHub account.
 
 Once signed in, you can create an **organization**. 
 
@@ -29,7 +29,7 @@ To securely access your Azure Machine Learning workspace from Azure DevOps, you'
 
 When you create a service connection, you define how Azure DevOps will be authenticated to connect to another service. When you work with Azure Machine Learning, the recommended option is to let Azure DevOps create a service principal for you.
 
-A **service principal** is created as an identity in the **Azure Active Directory**. Instead of using a team member's credentials to connect with Azure Machine Learning, Azure DevOps uses the service principal's credentials.
+A **service principal** is created as an identity in the **Microsoft Entra ID**. Instead of using a team member's credentials to connect with Azure Machine Learning, Azure DevOps uses the service principal's credentials.
 
 When an Azure DevOps project is created, you can connect to an existing Azure Machine Learning workspace:
 

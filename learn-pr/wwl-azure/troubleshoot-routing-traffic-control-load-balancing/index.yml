@@ -30,8 +30,8 @@ roles:
 - support-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-domain
+- entra-id
+- entra
 - azure-cdn
 - azure-firewall
 - azure-firewall-manager

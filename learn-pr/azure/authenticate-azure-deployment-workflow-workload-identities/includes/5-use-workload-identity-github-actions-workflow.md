@@ -13,7 +13,7 @@ Your deployment workflow uses the `azure/login` action to sign in to Azure. When
 | Input | Description |
 |-|-|
 | `client-id` | The application ID for the application registration. Be sure to use the application ID and not the object ID. |
-| `tenant-id` | The unique identifier for your Azure AD tenant (directory). |
+| `tenant-id` | The unique identifier for your Microsoft Entra tenant (directory). |
 | `subscription-id` | The Azure subscription ID that you'll deploy to. |
 
 Each of these values is a GUID.

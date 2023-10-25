@@ -6,10 +6,10 @@ metadata:
   description: "Exercise - Create a question answering solution"
   ms.date: 07/19/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-  ms.subservice: qna-maker
+  ms.service: azure-ai-language
+  ms.subservice: azure-ai-qna-maker
 labId: 100989
 labModal: true
 durationInMinutes: 20

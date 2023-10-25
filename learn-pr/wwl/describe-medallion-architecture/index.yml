@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.describe-medallion-architecture
+metadata:
+  title: Organize a Fabric lakehouse using medallion architecture design
+  description: "Explore the potential of the medallion architecture design in Microsoft Fabric. Organize and transform your data across Bronze, Silver, and Gold layers of a lakehouse for optimized analytics."
+  ms.date: 08/24/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+title: Organize a Fabric lakehouse using medallion architecture design
+summary: Explore the potential of the medallion architecture design in Microsoft Fabric. Organize and transform your data across Bronze, Silver, and Gold layers of a lakehouse for optimized analytics.
+abstract: |
+  In this module, you'll learn how to:
+  - Describe the principles of using the medallion architecture in data management.
+  - Apply the medallion architecture framework within the Microsoft Fabric environment.
+  - Analyze data stored in the lakehouse using DirectLake in Power BI.
+  - Describe best practices for ensuring the security and governance of data stored in the medallion architecture.
+prerequisites: |
+  Before starting this module, you should be familiar with Microsoft Fabric lakehouses, Apache Spark, and SparkSQL.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- architecture
+- data-lake
+- data-management
+units:
+- learn.wwl.describe-medallion-architecture.introduction
+- learn.wwl.describe-medallion-architecture.describe-medallion-architecture
+- learn.wwl.describe-medallion-architecture.implement-medallion-archecture-fabric
+- learn.wwl.describe-medallion-architecture.query-report-data
+- learn.wwl.describe-medallion-architecture.secure-govern
+- learn.wwl.describe-medallion-architecture.exercise
+- learn.wwl.describe-medallion-architecture.knowledge-check
+- learn.wwl.describe-medallion-architecture.summary
+badge:
+  uid: learn.wwl.describe-medallion-architecture.badge
