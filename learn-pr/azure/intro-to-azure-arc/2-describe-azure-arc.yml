@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/10/2023
   author: JnHs
   ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Describe Azure Arc
 durationInMinutes: 5
