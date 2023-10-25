@@ -43,7 +43,7 @@ quiz:
     - content: "`inputData`, `outputCols`, `modelName` and `modelVersion`"
       isCorrect: false
       explanation: "Incorrect. `inputData` isn't a required parameter for the `MLFlowTransformer` object."
-    - content: "`inputData`, `inputCols`, `outputCols`, `modelName`, and `modelVersion`"
+    - content: "`inputCols`, `outputCols`, `modelName`, and `modelVersion`"
       isCorrect: true
       explanation: "Correct. All four parameters are used when creating the `MLFlowTransformer` object."
     - content: "`inputData`, `predictions`, `modelName`, and `modelVersion`"
