@@ -24,7 +24,7 @@ roles:
 products:
 - azure
 - microsoft-sentinel
-- azure-active-directory
+- entra-id
 - office-365
 subjects:
 - cloud-security
