@@ -37,4 +37,4 @@ The serial console can help you restore a VM to an operational state in situatio
 
   - **GRUB menu countdown on Gen2 Azure VMs**. Because legacy hardware has been removed from emulation in Generation 2 Azure VMs, the Grand Unified Bootloader (GRUB) menu countdown timer can count down too quickly to display real-time loading of the default entry. To address this issue, replace the default entry `"timeout=5"` with `"timeout=100000"` in */boot/grub/grub.conf*, or */etc/default/grub*, or their equivalents.
 
-  - **Kernal panic boot error in kdump**. If the crash dump capture ends with a kernal panic on boot, you should reserve more memory for the kernel. For example, in the Ubuntu GRUB configuration, change the parameter `crashkernel=384M-:128M` to `crashkernel=384M-:256M`.
+  - **Kernel panic boot error in kdump**. If the crash dump capture ends with a kernel panic on boot, you should reserve more memory for the kernel. For example, in the Ubuntu GRUB configuration, change the parameter `crashkernel=384M-:128M` to `crashkernel=384M-:256M`.
