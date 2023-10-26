@@ -1,10 +1,10 @@
-VM Insights uses the [Azure Monitor Agent](/azure/azure-monitor/agents/agents-overview) with a Data Collection Rule (DCR) to provide a comprehensive view of client performance in a prebuilt workbook. These metrics measure system performance, but to understand the reasons for performance deficits or anomalies, you need to analyze log data to see which events caused or contributed to the issues.
+VM Insights uses the Azure Monitor Agent with a Data Collection Rule (DCR) to provide a comprehensive view of client metrics in a prebuilt workbook. These metrics measure system performance, but to understand the reasons for performance deficits or anomalies, you need to analyze log data to see which system events caused or contributed to the issues.
 
-You can use Azure Monitor to create your own DCRs that collect VM metrics or log data and send it to various destinations. In this unit, you set up a DCR that uses the Azure Monitor Agent to collect Linux VM Syslog event data, and view the log data in Azure Monitor Log Analytics by using a Kusto Query Language (KQL) query.
+You can create your own Azure Monitor DCRs to collect and transmit VM metrics or log data. In this unit, you set up a DCR that uses the Azure Monitor Agent to collect Linux VM Syslog data. You view the log data in Azure Monitor Log Analytics by using a Kusto Query Language (KQL) query.
 
 DCRs can send performance counter data to both Azure Monitor Metrics and Azure Monitor Logs, but can send log data only to Azure Monitor Logs. To collect performance counters, you can select from a predefined set of objects and set sampling rates, or create custom objects. For events, you can select the event severity levels to log.
 
-To send log data, the DCR must specify a Log Analytics workspace and data collection endpoint in the same Azure region as the DCR to send the log data to. You can use the default Log Analytics workspace that VM Insights set up for your subscription, or create and use another Log Analytics workspace.
+The DCR sends log data to a Log Analytics workspace and data collection endpoint in the same Azure region as the DCR. You can use the default Log Analytics workspace that VM Insights sets up, or create or use another Log Analytics workspace.
 
 DCRs that you define can apply to any or all VMs in your subscription. Azure installs Azure Monitor Agent on VMs that don't already have it installed. DCRs can send data from multiple VMs to multiple destinations of the same or different types. For example, a DCR can send log data to multiple Log Analytics workspaces, also known as *multihoming*, across different regions or tenants.
 

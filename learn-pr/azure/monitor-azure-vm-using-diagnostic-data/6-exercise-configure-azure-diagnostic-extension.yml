@@ -9,7 +9,7 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-configure-azure-diagnostic-extension.md)]
 quiz:

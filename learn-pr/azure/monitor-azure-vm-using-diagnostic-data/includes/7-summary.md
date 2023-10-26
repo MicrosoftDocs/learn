@@ -1,11 +1,13 @@
-Azure automatically collects activity logs and basic metrics for important VM health and performance metrics.
+Azure provides many ways to monitor health and performance for your Azure VMs:
 
+- Azure automatically collects and displays activity logs and important health and usage metrics for Azure VMs.
 - You can quickly enable recommended alert rules and boot diagnostics when you create VMs or afterwards.
-- Azure Monitor Metrics Explorer lets you view many more metrics for your Azure VMs and other resources.
-- VM Insights gives you predefined workbooks that show important VM client performance and networking metrics.
-- The Azure Monitor Agent lets you create DCRs that collect OS and client workload metrics or collect system event logs and send them to Azure Monitor Logs.
+- Azure Monitor Metrics Explorer lets you graph many other metrics for Azure VMs and other resources.
+- VM Insights predefined workbooks show important VM client performance and networking metrics.
+- You can create DCRs that use the Azure Monitor Agent to collect OS and client workload metrics or logs.
+- You can use Log Analytics to query and analyze log data.
 
-After implementing these tools, you're confident that Azure Monitor can effectively monitor your VMs and help you keep your website running effectively.
+Now that you understand these tools, you're confident that Azure Monitor can effectively monitor your Azure VMs and help you keep your website running effectively.
 
 ## Clean up resources
 

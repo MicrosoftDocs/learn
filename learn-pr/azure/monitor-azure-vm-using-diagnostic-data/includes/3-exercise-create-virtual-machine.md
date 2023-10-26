@@ -1,6 +1,4 @@
-You want to update the Linux version and configuration for the VM that hosts your website, so you decide to quickly create a VM in the Azure portal and evaluate its built-in monitoring capabilities. In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled.
-
-As soon as the VM starts up, Azure automatically begins collecting basic metrics and activity logs. You can view built-in metrics graphs, activity logs, and boot diagnostics.
+You want to update the Linux version and configuration for the VMs that host your website, so you decide to quickly create a VM in the Azure portal and evaluate its built-in monitoring capabilities. In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. As soon as the VM starts up, Azure automatically begins collecting basic metrics and activity logs, and you can view built-in metrics graphs, activity logs, and boot diagnostics.
 
 ## Create a VM
 
