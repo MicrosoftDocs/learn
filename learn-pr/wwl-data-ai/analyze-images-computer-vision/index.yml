@@ -2,8 +2,8 @@
 uid: learn.wwl.analyze-images-computer-vision
 metadata:
   title: Fundamentals of Computer Vision
-  description: "Analyze images with the Computer Vision service."
-  ms.date: 10/24/2023
+  description: "Analyze images with the Azure AI Vision service."
+  ms.date: 10/26/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
