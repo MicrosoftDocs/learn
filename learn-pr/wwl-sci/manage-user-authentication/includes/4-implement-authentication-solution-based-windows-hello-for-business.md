@@ -13,7 +13,7 @@ Windows Hello addresses the following problems with passwords:
 ## How Windows Hello for Business works: key points
 
  -  Windows Hello credentials are based on certificate or asymmetrical key pair. Windows Hello credentials can be bound to the device, and the token that is obtained using the credential is also bound to the device.
- -  Identity provider (such as Active Directory, Microsoft Entra ID, part of Microsoft Entra, or a Microsoft account) validates user identity and maps the Windows Hello public key to a user account during the registration step.
+ -  Identity provider (such as Active Directory, Microsoft Entra ID, or a Microsoft account) validates user identity and maps the Windows Hello public key to a user account during the registration step.
  -  Keys can be generated in hardware (TPM (Trusted Platform Module) 1.2 or 2.0 for enterprises, and TPM 2.0 for consumers) or software, based on the policy.
  -  Two-factor authentication is the combination of a key or certificate tied to a device. Then something that the person knows (a PIN) or something that the person is (biometrics). The Windows Hello gesture doesn't roam between devices and isn't shared with the server. Biometrics templates are stored locally on a device. The PIN is never stored or shared.
  -  The private key never leaves a device when using TPM. The authenticating server has a public key that is mapped to the user account during the registration process.
