@@ -8,8 +8,7 @@ metadata:
   author: timlt
   ms.author: timlt
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.service: rtos
+  ms.topic: learning-path
 title: Azure RTOS NetX Duo
 prerequisites: |
   Azure RTOS ThreadX, and working knowledge of C or C++, GitHub and Visual Studio
