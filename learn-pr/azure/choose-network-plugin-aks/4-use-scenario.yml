@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-best-networking-plugin-for-aks.use-scenario
-title: Use kubenet for development
+title: Usage scenarios
 metadata:
   unitType: learning-content
   title: use-scenario
-  description: "Learn why the kubenet networking plugin is best suited for development and experimental environments."
+  description: "Learn about when to use the kubenet and Azure CNI network plugin for AKS."
   ms.date: 03/23/2022
   author: nickomang
   ms.author: nickoman
