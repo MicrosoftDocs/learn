@@ -2,7 +2,7 @@ In this unit, you explore the monitoring capabilities of Azure Monitor, and the 
 
 Metrics are numerical values collected at predetermined intervals to describe some aspect of a system. Metrics can measure performance, resource utilization, error counts, user behavior, or any other aspect of the system that you can quantify. Azure Monitor Metrics automatically monitors a predefined set of metrics for every Azure VM, and retains the data for 93 days with some exceptions.
 
-Logs are recorded system events that contain a timestamp and different types of structured or free-form data. Azure Monitor doesn't collect logs by default, but you can configure Azure Monitor Logs to collect and analyze logs from any Azure resource. Azure Monitor stores structured and unstructured log data in Azure Monitor Logs, and can route data to Log Analytics workspaces for querying and analysis.
+Logs are recorded system events that contain a timestamp and different types of structured or free-form data. Azure Monitor doesn't collect logs by default, but you can configure Azure Monitor Logs to collect and analyze logs from any Azure resource. Azure Monitor stores structured and unstructured log data in Azure Monitor Logs, and can route log data to Log Analytics workspaces for querying and analysis.
 
 ## VM architecture
 
@@ -27,7 +27,7 @@ VM host metrics track and alert on activity such as configuration changes, proce
 - Detect trends or patterns.
 - Control your operational costs by sizing VMs according to usage and demand.
 
-Azure automatically collects basic metrics for host VMs. On the Azure portal page for any VM, you can see the following built-in graphs for several important VM host metrics. You can customize the displayed range from the past hour to the past 30 days.
+Azure automatically collects basic metrics for host VMs. On the Azure portal page for any VM, you can see built-in graphs for the following important VM host metrics. You can customize the displayed range from the past hour to the past 30 days.
 
 - VM availability (preview)
 - CPU usage percentage (average)
@@ -72,7 +72,7 @@ The operating system, workloads, and applications that a VM runs are called clie
 
 DCRs define what data to collect and where to send that data. You can send the data to Azure Monitor Logs and Azure Monitor Metrics. Azure Monitor Metrics can store only metrics data, but Azure Monitor Logs can store both metrics and performance counters.
 
-### Client performance counter with VM Insights
+###  VM Insights client performance counters
 
 VM Insights is a feature in Azure Monitor that helps get you started monitoring your VM clients by providing the following benefits:
 
@@ -88,7 +88,7 @@ Prebuilt VM Insights workbooks show performance, connections, active ports, traf
 
 VM Insights is especially useful for exploring overall VM usage when you don't yet know the metric of primary interest. Unlike other usage analytics tools, VM Insights workbooks let you combine multiple kinds of visualizations and analyses, such as CPU utilization, disk space, memory, and network dependencies.
 
-### Collect client event logs
+### Client event log data
 
 VM Insights creates a DCR that collects a specific set of performance counters. To collect other data, such as event logs, you can create a separate DCR that specifies the data you want to collect from the VM.
 

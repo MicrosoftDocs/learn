@@ -1,6 +1,6 @@
-After being alerted to a high percentage CPU value for your VM, you want to investigate further how your VM's CPU capability is sufficient to handle the traffic flowing into it. Metrics Explorer is the Azure Monitor UI for exploring and analyzing metrics. You can use Metrics Explorer to view and create custom graphs for many VM host metrics in addition to the metrics shown on the built-in graphs.
+You want to investigate further how your VM's CPU capability is affected by the traffic flowing into it. Metrics Explorer is the Azure Monitor UI for exploring and analyzing metrics. You can use Metrics Explorer to view and create custom graphs for many VM host metrics in addition to the metrics shown on the built-in graphs.
 
-If the built-in metrics charts for a VM don't already show the data you need, you can use Metrics Explorer to create customized metrics charts. In this unit, you create a chart that displays your VM's maximum percentage CPU and average inbound flow data together for the past 30 minutes.
+If the built-in metrics charts for a VM don't already show the data you need, you can use Metrics Explorer to create customized metrics charts. In this unit, you plot a graph that displays both your VM's maximum percentage CPU and average inbound flow data for the past 30 minutes.
 
 ## Understand Metrics Explorer
 
@@ -8,8 +8,9 @@ To open Metrics Explorer, you can:
 
 - Select **Metrics** from the VM's left navigation menu under **Monitoring**.
 - Select the **See all Metrics** link next to **Platform metrics** on the **Monitoring** tab of the VM's **Overview** page.
-- Select 
+- Select **Metrics** from the left navigation menu on the Azure Monitor **Overview** page.
 
+:::image type="content" source="../media/metrics-explorer.png" alt-text="Screenshot that shows Metrics Explorer." lightbox="../media/metrics-explorer.png":::
 
 In Metrics Explorer, you can select the following values from the dropdown fields:
 
@@ -27,8 +28,6 @@ You can apply the following aggregation functions to metrics:
 - **Sum**: Adds up all the values.
 
 You can select flexible time ranges for graphs from the past 30 minutes to the last 30 days, or custom ranges. You can specify time interval granularity from one minute to one month.
-
-:::image type="content" source="../media/metrics-explorer.png" alt-text="Screenshot that shows Metrics Explorer." lightbox="../media/metrics-explorer.png":::
 
 ## Create a metrics graph
 

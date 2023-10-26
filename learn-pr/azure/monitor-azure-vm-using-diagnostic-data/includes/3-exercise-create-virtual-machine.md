@@ -1,6 +1,6 @@
-You need to use an updated Linux version and configuration for the VM that hosts your website. You decide to use the Azure portal to quickly create a VM and evaluate the built-in monitoring capabilities.
+You want to update the Linux version and configuration for the VM that hosts your website, so you decide to quickly create a VM in the Azure portal and evaluate the built-in monitoring capabilities. In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled.
 
-In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. As soon as the VM starts up, Azure automatically begins collecting basic metrics and activity logs, and you view the built-in metrics graphs, activity logs, and boot diagnostics.
+As soon as the VM starts up, Azure automatically begins collecting basic metrics and activity logs. You can view built-in metrics graphs, activity logs, and boot diagnostics.
 
 ## Create a VM
 
@@ -26,7 +26,7 @@ In this unit, you use the Azure portal to create a Linux VM with recommended ale
 1. Under **Diagnostics**, for **Boot diagnostics**, ensure that **Enable with managed storage account (recommended)** is selected.
 
    > [!NOTE]
-   > Don't select **Monitor guest OS**. The Linux Diagnostics Agent (LAD) is deprecated, and you can enable guest OS and client monitoring later.
+   > Don't select **Enable guest OS diagnostics**. The Linux Diagnostics Agent (LAD) is deprecated, and you can enable guest OS and client monitoring later.
 
 1. Select **Review + create** at the bottom of the page, and when validation passes, select **Create**.
 
@@ -38,7 +38,7 @@ It can take a few minutes to create the VM. When you get the notification that t
 
 ## View built-in metrics graphs
 
-Once an Ubuntu or Windows VM is created, Azure starts collecting basic metrics data automatically. Built-in metrics graphs, along with the recommended alerts you enabled, can help you determine whether and when your VM incurs heavy usage or loads that can impact its health or performance. You can then use more advanced monitoring and analytics capabilities to investigate issue causes and remediation.
+Once an Ubuntu or Windows VM is created, Azure starts collecting basic metrics data automatically. Built-in metrics graphs, along with the recommended alerts you enabled, can help you monitor whether and when your VM encounters health or performance issues. You can then use more advanced monitoring and analytics capabilities to investigate issue causes and remediation.
 
 1. To view basic metrics graphs, on the VM's **Overview** page, select the **Monitoring** tab.
 
