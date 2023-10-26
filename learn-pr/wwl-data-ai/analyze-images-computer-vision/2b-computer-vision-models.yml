@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: artificial-intelligence
   ms.subservice: vision
-durationInMinutes: 6
+durationInMinutes: 10
 content: |
   [!include[](includes/2b-computer-vision-models.md)]

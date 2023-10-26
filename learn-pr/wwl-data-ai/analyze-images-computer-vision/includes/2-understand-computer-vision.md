@@ -103,7 +103,7 @@ The process is repeated until the filter has been convolved across the entire im
 
 ![Diagram of a filter.](../media/filter.gif)
 
-The filter is convolved across the image, calculating a new array of values. Some of the values may be outside of the 0 to 255 pixel value range, so the values are adjusted to fit into that range. Because of the shape of the filter, the outside edge of pixels isn't calculated, so a padding value (usually 0) is applied. The resulting array represents a new image in which the filter has transformed the original image. In this case, the filter has had the effect of highlighting the *edges* of shapes in the image.
+The filter is convolved across the image, calculating a new array of values. Some of the values might be outside of the 0 to 255 pixel value range, so the values are adjusted to fit into that range. Because of the shape of the filter, the outside edge of pixels isn't calculated, so a padding value (usually 0) is applied. The resulting array represents a new image in which the filter has transformed the original image. In this case, the filter has had the effect of highlighting the *edges* of shapes in the image.
 
 To see the effect of the filter more clearly, here's an example of the same filter applied to a real image:
 

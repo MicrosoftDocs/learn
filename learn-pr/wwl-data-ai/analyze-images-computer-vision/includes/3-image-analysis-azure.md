@@ -1,6 +1,6 @@
-While you can train your own machine learning models for computer vision, the architecture for CNNs and other computer vision models can be complex; and you require significant volumes of training images and compute power to perform the training process.
+While you can train your own machine learning models for computer vision, the architecture for computer vision models can be complex; and you require significant volumes of training images and compute power to perform the training process.
 
-Microsoft's Azure AI Vision service provides prebuilt and customizable computer vision models that provide various powerful capabilities. With Azure AI Vision, you can create sophisticated computer vision solutions quickly and easily; taking advantage of "off-the-shelf" functionality for many common computer vision scenarios, while retaining the ability to create custom models using your own images.
+Microsoft's Azure AI Vision service provides prebuilt and customizable computer vision models that are based on the Florence foundation model and provide various powerful capabilities. With Azure AI Vision, you can create sophisticated computer vision solutions quickly and easily; taking advantage of "off-the-shelf" functionality for many common computer vision scenarios, while retaining the ability to create custom models using your own images.
 
 ## Azure resources for Azure AI Vision service
 

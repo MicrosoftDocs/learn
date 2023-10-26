@@ -24,7 +24,7 @@ quiz:
       explanation: "Correct. Pixels are numeric values that represent shade intensity for points in the image."
     - content: "Image file names"
       isCorrect: false
-      explanation: "Incorrect. While file names may offer some clues as the image subject, they do not inherently enable computer vision."
+      explanation: "Incorrect. While file names might offer some clues as the image subject, they do not inherently enable computer vision."
   - content: "You want to use the Azure AI Vision service to analyze images. You also want to use the Azure AI Language service to analyze text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?"
     choices:
     - content: "Azure AI Vision"
