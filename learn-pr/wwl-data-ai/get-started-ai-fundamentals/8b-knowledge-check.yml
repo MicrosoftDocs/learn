@@ -39,7 +39,7 @@ quiz:
     choices:
     - content: "Transparency"
       isCorrect: false
-      explanation: "That is incorrect. Transparency is about fully communicating the purpose of the system, how it works, and what limitations may be expected."
+      explanation: "That is incorrect. Transparency is about fully communicating the purpose of the system, how it works, and what limitations might be expected."
     - content: "Inclusiveness"
       isCorrect: true
       explanation: "That is correct. Inclusiveness is about how AI should bring benefits to all parts of society, regardless of physical ability, gender, sexual orientation, ethnicity, or other factors."
