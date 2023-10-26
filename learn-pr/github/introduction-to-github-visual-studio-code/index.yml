@@ -27,10 +27,7 @@ ratingEnabled: true
 levels:
 - beginner
 roles:
-- devops-engineer
-- administrator
 - developer
-- solution-architect
 - student
 products:
 - github
