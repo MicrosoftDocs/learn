@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-cost-optimization.4-design-for-usage-optimization
+title: Design for usage optimization
+metadata:
+  title: Design for usage optimization
+  description: Learn how to maximize the use of resources and operations.
+  ms.date: 10/23/2023
+  author: martinekuan
+  ms.author: martinek
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-design-for-usage-optimization.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "TODO - THEORY CHECK 1"
+      choices:
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: true
+          explanation: "TDOD"
+
+    - content: "TODO - THEORY CHECK 2"
+      choices:
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: true
+          explanation: "TDOD"
+
+    - content: "TODO - EXAMPLE BASED CHECK"
+      choices:
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: true
+          explanation: "TDOD"

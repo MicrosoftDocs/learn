@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-cost-optimization.5-design-for-rate-optimization
+title: Design for rate optimization
+metadata:
+  title: Design for rate optimization
+  description: Learn how to increase efficiency without redesigning, renegotiating, or sacrificing requirements.
+  ms.date: 10/23/2023
+  author: martinekuan
+  ms.author: martinek
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-design-for-rate-optimization.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "TODO - THEORY CHECK 1"
+      choices:
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: true
+          explanation: "TDOD"
+
+    - content: "TODO - THEORY CHECK 2"
+      choices:
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: true
+          explanation: "TDOD"
+
+    - content: "TODO - EXAMPLE BASED CHECK"
+      choices:
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: true
+          explanation: "TDOD"

@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-cost-optimization.6-monitor-and-optimize-over-time
+title: Monitor and optimize over time
+metadata:
+  title: Monitor and optimize over time
+  description: Learn how to continuously right-size investment as your workload evolves with the ecosystem.
+  ms.date: 10/23/2023
+  author: martinekuan
+  ms.author: martinek
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-monitor-and-optimize-over-time.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "TODO - THEORY CHECK 1"
+      choices:
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: true
+          explanation: "TDOD"
+
+    - content: "TODO - THEORY CHECK 2"
+      choices:
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: true
+          explanation: "TDOD"
+
+    - content: "TODO - EXAMPLE BASED CHECK"
+      choices:
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TDOD"
+        - content: "TODO"
+          isCorrect: true
+          explanation: "TDOD"
