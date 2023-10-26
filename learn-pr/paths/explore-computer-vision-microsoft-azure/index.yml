@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/23/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: learning-path
   ms.subservice: ai-services
 title: 'Microsoft Azure AI Fundamentals: Explore computer vision'
 prerequisites: |
