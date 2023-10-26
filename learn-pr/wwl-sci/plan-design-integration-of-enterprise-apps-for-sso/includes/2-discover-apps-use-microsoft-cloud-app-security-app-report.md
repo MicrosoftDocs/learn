@@ -23,7 +23,7 @@ Microsoft Defender for Cloud Apps integrates visibility with your cloud by:
 
 ### Cloud Discovery
 
-:::image type="content" source="../media/cloud-discovery-screenshot-602dfd9b.png" alt-text="Screenshot of the M D C A Cloud Discovery report in the Azure portal. Report shows how many apps have been discovered.":::
+:::image type="content" source="../media/cloud-discovery-screenshot-602dfd9b.png" alt-text="Screenshot of the MDCA Cloud Discovery report. Report shows how many apps have been discovered.":::
 
 
 Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps your organization is using. To create a snapshot report of your organization's cloud use, manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Microsoft Defender for Cloud Apps log collectors to periodically forward your logs.
@@ -64,7 +64,7 @@ If you have an on-premises directory that contains user accounts, you likely hav
 
 To increase application security, your goal is to have a single set of access controls and policies across your on-premises and cloud environments.
 
-:::image type="content" source="../media/app-integration-after-migration-1843eca9.png" alt-text="Screenshot of the same Applications connected through Azure A D, after using app discovery.":::
+:::image type="content" source="../media/app-integration-after-migration-1843eca9.png" alt-text="Screenshot of the same Applications connected through Microsoft Entra ID, after using app discovery.":::
 
 
 Many organizations use AD FS to provide SSO to cloud applications. Moving your AD FS applications to Microsoft Entra ID for authentication provides significant benefits, especially in terms of cost management, risk management, productivity, compliance, and governance. But understanding which applications are compatible with Microsoft Entra ID and identifying specific migration steps can be time consuming.
@@ -90,7 +90,7 @@ The AD FS application activity report is available in the Azure portal under Mic
 2.  Select **Microsoft Entra ID**, and then select **Enterprise applications**.
 3.  Under **Activity**, select **Usage and insights**, and then select **AD FS application activity** to open a list of all AD FS applications in your organization.
     
-    :::image type="content" source="../media/active-directory-federation-services-application-activity-d02afe1d.png" alt-text="Screenshot of A D F S application activity. Track what application you have.":::
+    :::image type="content" source="../media/active-directory-federation-services-application-activity-d02afe1d.png" alt-text="Screenshot of AD FS application activity. Track what application you have.":::
     
 4.  For each application in the AD FS application activity list, view the **Migration status**:
     
