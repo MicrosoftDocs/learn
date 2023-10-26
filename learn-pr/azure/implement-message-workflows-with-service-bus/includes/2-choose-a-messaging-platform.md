@@ -115,6 +115,6 @@ Event Hubs and Event Grid are designed for events, which notify recipients only 
 
 Azure Service Bus and storage queues are for messages, which you can use for binding the core pieces of any application workflow.
 
-If your requirements are simple, if you want to send each message to only one destination, or if you want to write code as quickly as possible, a storage queue may be the best option. Otherwise, Service Bus queues provide many more options and flexibility.
+If your requirements are simple, if you want to send each message to only one destination, or if you want to write code as quickly as possible, a storage queue might be the best option. Otherwise, Service Bus queues provide many more options and flexibility.
 
 If you want to send messages to multiple subscribers, use a Service Bus topic.
