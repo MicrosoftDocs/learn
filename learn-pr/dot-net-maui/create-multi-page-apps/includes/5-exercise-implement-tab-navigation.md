@@ -4,6 +4,8 @@ The first thing you decide to do is remove all the pages from the flyout and add
 
 ## Adding a TabBar
 
+1. Go to the **exercise2** folder in the cloned repo, and then move to the **start** folder.
+1. Use Visual Studio to open the **Astronomy.sln** solution.
 1. In the Solution Explorer window, open the **AppShell.xaml** page.
 1. In the XAML markup page, delete everything inside of the `<Shell>`.
 1. Create a `<TabBar>` and an empty `<Tab>`.
@@ -50,14 +52,8 @@ The first thing you decide to do is remove all the pages from the flyout and add
         xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         xmlns:local="clr-namespace:Astronomy.Pages"
-        FlyoutIcon="moon.png">
-    
-        <Shell.FlyoutHeader>
-            <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
-                <Image Source="moon.png"/>
-            </Grid>
-        </Shell.FlyoutHeader>
-        
+        FlyoutIcon="moon.png">  
+       
         <TabBar>
             <Tab Title="Moon Phase" Icon="moon.png">
                 <ShellContent ContentTemplate="{DataTemplate local:MoonPhasePage}" />
@@ -142,7 +138,6 @@ The final XAML code for **AppShell.xaml** should look like this example:
         </Grid>
     </Shell.FlyoutHeader>-->
 
-
     <FlyoutItem Title="Astronomy" Icon="moon.png">
         <ShellContent Title="Moon Phase" Icon="moon.png"
             ContentTemplate="{DataTemplate local:MoonPhasePage}"/>
@@ -155,6 +150,5 @@ The final XAML code for **AppShell.xaml** should look like this example:
         <ShellContent
             ContentTemplate="{DataTemplate local:AboutPage}"/>
     </FlyoutItem>
-
 </Shell>
 ```
