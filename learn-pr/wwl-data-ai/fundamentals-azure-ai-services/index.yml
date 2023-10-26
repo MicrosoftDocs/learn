@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure-ai-services
 title: Fundamentals of Azure AI services
-summary: In this module, you will learn the fundamentals of how Azure AI services can be used to build applications.
+summary: In this module, you learn the fundamentals of how Azure AI services can be used to build applications.
 abstract: |
   *   Understand applications Azure AI services can be used to build
   *   Understand how to access Azure AI services in the Azure portal
