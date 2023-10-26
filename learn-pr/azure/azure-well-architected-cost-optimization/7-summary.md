@@ -4,6 +4,8 @@ A cost-optimized workload isn't necessarily a low-cost workload. There are signi
 
 As you prioritize business requirements to align with technology needs, you can adjust costs. However, you should expect a series of tradeoffs in areas in which you want to optimize cost, such as security, scalability, resilience, and operability. If the cost of addressing the challenges in those areas is high and these principles aren't applied properly, you might make risky choices in favor of a cheaper solution, ultimately affecting your organization's business goals and reputation.
 
+Additional test text
+
 ## Learn more
 
 To learn more about workload cost optimization, review the following documentation:
