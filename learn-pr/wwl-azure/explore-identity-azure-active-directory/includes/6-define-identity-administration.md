@@ -1,3 +1,4 @@
+
 **Identity administration** is how identity objects are managed over the lifetime of the identity’s existence. This administration can be manual or automated.  However, it has to be done.  Here's a simple example of what happens without governance and administration of your identities.
 
 #### Story - the life of an identity
@@ -36,7 +37,7 @@ There are many common tasks performed during identity administration.
 
 | Azure PowerShell | CLI (command line interface) |
 | :--------------- | :--------------------------- |
-| Cross-platform PowerShell module runs on Windows, macOS, Linux | Cross-platform command-line interface, installable on Windows, macOS, Linux |
+| Cross-platform PowerShell module, runs on Windows, macOS, Linux | Cross-platform command-line interface, installable on Windows, macOS, Linux |
 | Requires Windows PowerShell or PowerShell | Runs in Windows PowerShell, Command prompt, or Bash and other Unix shells |
 
 > [!Note]
@@ -52,9 +53,9 @@ When picking the right tool, consider your past experience and current work envi
 
 ### Microsoft Graph
 
-:::image type="content" source="../media/graph-capabilities.png" alt-text="Diagram Microsoft Graph features.  Use graph to pull identity information from Microsoft Entra ID.":::
+:::image type="content" source="../media/graph-capabilities.png" alt-text="Diagram Microsoft Graph features.  Use graph to pull identity information from Azure A D.":::
 
-Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services such as Microsoft Entra ID, Microsoft 365, devices, and many others.
+Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services such as Azure AD, Microsoft 365, devices, and many others.
 
 - The Microsoft Graph API offers a single endpoint, `https://graph.microsoft.com`, to provide access to rich, people-centric data and insights in the Microsoft cloud, including Microsoft 365, Windows 10, and Enterprise Mobility + Security. You can use REST APIs or SDKs to access the endpoint and build apps that support Microsoft 365 scenarios. The access can span from productivity, to collaboration, to education. Microsoft Graph also includes a powerful set of services that manage user and device identity. You can determine and configure access, compliance, security, and help protect organizations from data leakage or loss.
 
