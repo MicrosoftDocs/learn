@@ -17,7 +17,7 @@ quiz:
       choices:
         - content: "Revoke access for Visual Studio Code in your GitHub settings."
           isCorrect: false
-          explanation: "This will revoke all access for Visual Studio Code, not just the access for a particular extension."
+          explanation: "This action revokes all access for Visual Studio Code, not just the access for a particular extension."
         - content: "Cancel the extension's selection from the **Manage Trusted Extensions** option on the user account menu."
           isCorrect: true
           explanation: "You can revoke access for a specific extension at any time by using the **Manage Trusted Extensions** option on the user account menu under your GitHub sign-in."
@@ -31,16 +31,16 @@ quiz:
       choices:
         - content: "Add a .gitignore file to your project."
           isCorrect: false
-          explanation: "Although this will work, it's an extra step that isn't required."
+          explanation: "Although adding a .gitignore file works, it's an extra step that isn't required."
         - content: "Right-click files and select **Add to .gitignore**."
           isCorrect: false
           explanation: "There is no option on the shortcut menu for **Add to .gitignore**."
         - content: "Select **Add .gitignore** during the publishing process."
           isCorrect: false
           explanation: "There is no **Add .gitignore** option in the **Publish to GitHub** process."
-        - content: "Cancel the selection of items you don't want to publish when asked during the publishing process."
+        - content: "Clear the selection of items you don't want to publish when asked during the publishing process."
           isCorrect: true
-          explanation: "Canceling the selection of items to publish when prompted after you start the publishing process will automatically create a .gitignore file and add the deselected files."
+          explanation: "Clearing the selection of items to publish when prompted after you start the publishing process automatically creates a .gitignore file and adds the deselected files."
     - content: "How do you set the `origin` remote for a repository that you clone from Visual Studio Code?"
       choices:
         - content: "Visual Studio Code sets it automatically."
