@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: "Create multi-page .NET MAUI apps with tab and flyout navigation"
   description: "Use .NET MAUI shell to create multi-page applications with tabs and flyout navigation."
-  ms.date: 10/25/2023
+  ms.date: 10/26/2023
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl

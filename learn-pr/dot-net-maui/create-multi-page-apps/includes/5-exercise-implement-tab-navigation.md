@@ -4,8 +4,6 @@ The first thing you decide to do is remove all the pages from the flyout and add
 
 ## Adding a TabBar
 
-1. Go to the **exercise2** folder in the cloned repo, and then move to the **start** folder.
-1. Use Visual Studio to open the **Astronomy.sln** solution.
 1. In the Solution Explorer window, open the **AppShell.xaml** page.
 1. In the XAML markup page, delete everything inside of the `<Shell>`.
 1. Create a `<TabBar>` and an empty `<Tab>`.
