@@ -8,8 +8,7 @@ metadata:
   author: anandmeg
   ms.author: meghaanand
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-visual-studio
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]

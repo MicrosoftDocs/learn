@@ -8,8 +8,7 @@ metadata:
   ms.author: meghaanand
   manager: jmartens
   ms.date: 12/15/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-visual-studio
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/4-when-to-use-visual-studio.md)]
