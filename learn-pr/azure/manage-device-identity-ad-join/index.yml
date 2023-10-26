@@ -25,7 +25,7 @@ roles:
 - administrator
 - solution-architect
 products:
-- azure-active-directory
+- entra-id
 subjects:
 - device-management
 units:
