@@ -11,9 +11,7 @@ Microsoft Entra Password Protection is designed with the following principles in
  -  The software isn't dependent on other Microsoft Entra features. For example, Microsoft Entra password hash sync (PHS) isn't related or required for Microsoft Entra Password Protection.
  -  Incremental deployment is supported, however the password policy is only enforced where the Domain Controller Agent (DC Agent) is installed.
 
-<a name='create-an-azure-account-and-add-azure-active-directory-premium-p2-trial-licenses'></a>
-
-## Create an Azure account and add Microsoft Entra ID P2 trial licenses
+## Create an Azure account and add Microsoft Entra ID Premium P2 trial licenses
 
 The tasks in this exercise and the exercises in this learning path require you to already have and Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you might skip this task and continue to the next.
 
@@ -21,15 +19,13 @@ The tasks in this exercise and the exercises in this learning path require you t
 2.  Scroll down through the page to learn more about the benefits and free services available.
 3.  Select **Start free**.
 4.  Use the wizard to sign up for your Azure trial subscription.
-5.  You'll need to a Microsoft Entra ID P2 license to complete some of the exercises. In the organization you created, search for and then select **Microsoft Entra ID**.
+5.  You'll need to a Microsoft Entra P2 license to complete some of the exercises. In the organization you created, search for and then select **Microsoft Entra ID**.
 6.  In the left navigation menu, select **Getting started**.
-7.  Under Getting started with Microsoft Entra ID, select **Get a free trial for Microsoft Entra ID P1 or P2**.
-8.  In the Activate pane, under **Microsoft Entra ID P2**, select **Free trial** and then select **Activate**.
+7.  Under Getting started with Microsoft Entra, select **Get a free trial for Microsoft Entra Premium**.
+8.  In the Activate pane, under **Microsoft Entra Premium P2**, select **Free trial** and then select **Activate**.
 9.  In the navigation menu on the left, select **Overview**.
-10. Refresh the browser until you see Microsoft Entra ID P2 under the organization name. It may take a couple of minutes.
-11. You may need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.
-
-<a name='how-azure-ad-password-protection-works'></a>
+10. Refresh the browser until you see Microsoft Entra Premium P2 under the organization name. It might take a couple of minutes.
+11. You might need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.
 
 ## How Microsoft Entra Password Protection works
 
@@ -37,10 +33,10 @@ The on-premises Microsoft Entra Password Protection components work as follows:
 
 1.  Each Microsoft Entra Password Protection proxy-service-instance advertises itself to the DCs in the forest by creating a *serviceConnectionPoint* object in Active Directory.
 2.  Each DC Agent service for Microsoft Entra Password Protection also creates a *serviceConnectionPoint* object in Active Directory. This object is used primarily for reporting and diagnostics.
-3.  The DC Agent service is responsible for initiating the download of a new password policy from Microsoft Entra ID. The first step is to locate a Microsoft Entra Password Protection proxy-service by querying the forest for proxy *serviceConnectionPoint* objects.
-4.  When an available proxy service is found, the DC Agent sends a password policy download request to the proxy service. The proxy service in turn sends the request to Microsoft Entra ID, and then returns the response to the DC Agent service.
-5.  After the DC Agent service receives a new password policy from Microsoft Entra ID, the service stores the policy in a dedicated folder at the root of its domain *sysvol* folder share. The DC Agent service also monitors this folder in case newer policies replicate in from other DC Agent services in the domain.
-6.  The DC Agent service always requests a new policy at service startup. After the DC Agent service is started, it checks the age of the current locally available policy hourly. If the policy is older than one hour, the DC Agent requests a new policy from Microsoft Entra ID via the proxy service, as described previously. If the current policy isn't older than one hour, the DC Agent continues to use that policy.
+3.  The DC Agent service is responsible for initiating the download of a new password policy from Microsoft Entra. The first step is to locate a Microsoft Entra Password Protection proxy-service by querying the forest for proxy *serviceConnectionPoint* objects.
+4.  When an available proxy service is found, the DC Agent sends a password policy download request to the proxy service. The proxy service in turn sends the request to Microsoft Entra, and then returns the response to the DC Agent service.
+5.  After the DC Agent service receives a new password policy from Microsoft Entra, the service stores the policy in a dedicated folder at the root of its domain *sysvol* folder share. The DC Agent service also monitors this folder in case newer policies replicate in from other DC Agent services in the domain.
+6.  The DC Agent service always requests a new policy at service startup. After the DC Agent service is started, it checks the age of the current locally available policy hourly. If the policy is older than one hour, the DC Agent requests a new policy from Microsoft Entra via the proxy service, as described previously. If the current policy isn't older than one hour, the DC Agent continues to use that policy.
 7.  When password change events are received by a DC, the cached policy is used to determine if the new password is accepted or rejected.
 
 To protect your on-premises Active Directory Domain Services (AD DS) environment, you can install and configure Microsoft Entra Password Protection to work with your on-premises DC. This unit shows you how to install and register the Microsoft Entra Password Protection proxy-service and Microsoft Entra Password Protection DC agent in your on-premises environment.
@@ -96,13 +92,13 @@ A reasonable update frequency for password policies in a large deployment is usu
 Licensing requirements for AD Password Protection are as follows:
 
 | **Users**                                 | **Microsoft Entra Password Protection with global banned password list** | **Microsoft Entra Password Protection with custom banned password list** |
-| ----------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
-| Cloud-only users                          | Microsoft Entra ID Free                                                     | Microsoft Entra ID P1 or P2                                         |
-| Users synchronized from on-premises AD DS | Microsoft Entra ID P1 or P2                                         | Microsoft Entra ID P1 or P2                                         |
+| ----------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Cloud-only users                          | Microsoft Entra Free                                                     | Microsoft Entra Premium P1 or P2                                         |
+| Users synchronized from on-premises AD DS | Microsoft Entra Premium P1 or P2                                         | Microsoft Entra Premium P1 or P2                                         |
 
 The following core requirements apply:
 
- -  You need an account that has Active Directory domain administrator privileges in the forest root domain to register the Windows Server Active Directory forest with Microsoft Entra ID.
+ -  You need an account that has Active Directory domain administrator privileges in the forest root domain to register the Windows Server Active Directory forest with Microsoft Entra.
  -  The Key Distribution Service must be enabled on all domain controllers in the domain that run Windows Server 2012. By default, this service is enabled via manual trigger start.
  -  Network connectivity must exist between at least one domain controller in each domain and at least one server that hosts the proxy service for Microsoft Entra Password Protection. This connectivity must allow the domain controller to access RPC endpoint mapper port 135 and the RPC server port on the proxy service.
     
@@ -110,11 +106,10 @@ The following core requirements apply:
      -  By default, the RPC server port is a dynamic RPC port, but it can be configured to use a static port.
  -  All machines where the Microsoft Entra Password Protection proxy-service will be installed must have network access to the following endpoints:
 
-| **Endpoint**                               | **Purpose**                                |
-| ------------------------------------------ | ------------------------------------------ |
-| https://login.microsoftonline.com          | Authentication requests                    |
-
-<a name='azure-ad-password-protection-dc-agent'></a>
+| **Endpoint**                                 | **Purpose**                                       |
+| -------------------------------------------- | ------------------------------------------------- |
+| `https://login.microsoftonline.com`          | Authentication requests                           |
+| `https://enterpriseregistration.windows.net` | Microsoft Entra Password Protection functionality |
 
 ### Microsoft Entra Password Protection DC agent
 
@@ -127,8 +122,6 @@ The following requirements apply to the Microsoft Entra Password Protection DC a
  -  All machines that run the Microsoft Entra Password Protection DC agent must have .NET 4.5 installed.
  -  Any Active Directory domain that runs the Microsoft Entra Password Protection DC agent service must use Distributed File System Replication (DFSR) for sysvol replication.
 
-<a name='azure-ad-password-protection-proxy-service'></a>
-
 ### Microsoft Entra Password Protection proxy service
 
 The following requirements apply to the Microsoft Entra Password Protection proxy-service:
@@ -140,11 +133,11 @@ The following requirements apply to the Microsoft Entra Password Protection prox
  -  All machines where the Microsoft Entra Password Protection proxy-service will be installed must have .NET 4.7 installed.
  -  All machines that host the Microsoft Entra Password Protection proxy-service must be configured to grant domain controllers the ability to sign into the proxy service. This ability is controlled via the "Access this computer from the network" privilege assignment.
  -  All machines that host the Microsoft Entra Password Protection proxy-service must be configured to allow outbound TLS 1.2 HTTP traffic.
- -  A *Global Administrator* or *Security Administrator* account is required to register the Microsoft Entra Password Protection proxy-service and forest with Microsoft Entra ID.
+ -  A *Global Administrator* or *Security Administrator* account is required to register the Microsoft Entra Password Protection proxy-service and forest with Microsoft Entra.
  -  Network access must be enabled for the set of ports and URLs specified in the Application Proxy environment setup procedures.
     
     > [!WARNING]
-    > Microsoft Entra Password Protection proxy and Microsoft Entra application proxy install different versions of the Microsoft Entra Connect Agent Updater service, which is why the instructions refer to Application Proxy content. These different versions are incompatible when installed side by side. Doing so will prevent the Agent Updater service from contacting Azure for software updates, so you should never install Microsoft Entra Password Protection Proxy and Application Proxy on the same machine.
+    > Microsoft Entra Password Protection proxy and Microsoft Entra Application Proxy install different versions of the Microsoft Entra Connect Agent Updater service, which is why the instructions refer to Application Proxy content. These different versions are incompatible when installed side by side. Doing so will prevent the Agent Updater service from contacting Azure for software updates, so you should never install Microsoft Entra Password Protection Proxy and Application Proxy on the same machine.
 
 ## Download required software
 
@@ -155,7 +148,7 @@ Two installers are required for an on-premises Microsoft Entra Password Protecti
 
 ## Install and configure the proxy service
 
-The Microsoft Entra Password Protection proxy-service is typically on a member server in your on-premises AD DS environment. Once installed, the Microsoft Entra Password Protection proxy-service communicates with Microsoft Entra ID to maintain a copy of the global and customer banned password lists for your Microsoft Entra tenant.
+The Microsoft Entra Password Protection proxy-service is typically on a member server in your on-premises AD DS environment. Once installed, the Microsoft Entra Password Protection proxy-service communicates with Microsoft Entra to maintain a copy of the global and customer banned password lists for your Microsoft Entra tenant.
 
 ## Install the DC agent service
 
@@ -168,30 +161,31 @@ You can automate the software installation by using standard MSI procedures, as 
 msiexec.exe /i AzureADPasswordProtectionDCAgentSetup.msi /quiet /qn /norestart
 
 
+
 ```
 
 The `/norestart` flag can be omitted if you prefer to have the installer automatically reboot the machine.
 
 The software installation, or uninstallation, requires a restart. This requirement is because password filter DLLs are only loaded or unloaded by a restart.
 
-The installation of on-premises Microsoft Entra Password Protection is complete after the DC agent software is installed on a domain controller and that computer is rebooted. No other configuration is required or possible. Password change events against the on-premises DCs use the configured banned password lists from Microsoft Entra ID.
+The installation of on-premises Microsoft Entra Password Protection is complete after the DC agent software is installed on a domain controller and that computer is rebooted. No other configuration is required or possible. Password change events against the on-premises DCs use the configured banned password lists from Microsoft Entra.
 
 > [!TIP]
 > You can install the Microsoft Entra Password Protection DC agent on a machine that's not yet a domain controller. In this case, the service starts and runs but remains inactive until the machine is promoted to be a domain controller.
 
 ## Upgrading the proxy service
 
-The Microsoft Entra Password Protection proxy-service supports automatic upgrade. Automatic upgrade uses the Microsoft Entra Connect Agent Updater service, which is installed side by side with the proxy service. Automatic upgrade is on by default and may be enabled or disabled using the `Set-AzureADPasswordProtectionProxyConfiguration` cmdlet.
+The Microsoft Entra Password Protection proxy-service supports automatic upgrade. Automatic upgrade uses the Microsoft Entra Connect Agent Updater service, which is installed side by side with the proxy service. Automatic upgrade is on by default and might be enabled or disabled using the `Set-AzureADPasswordProtectionProxyConfiguration` cmdlet.
 
 The current setting can be queried using the `Get-AzureADPasswordProtectionProxyConfiguration` cmdlet. We recommend that the automatic upgrade setting always is enabled.
 
-The `Get-AzureADPasswordProtectionProxy` cmdlet may be used to query the software version of all currently installed Microsoft Entra Password Protection proxy-servers in a forest.
+The `Get-AzureADPasswordProtectionProxy` cmdlet might be used to query the software version of all currently installed Microsoft Entra Password Protection proxy-servers in a forest.
 
 ### Manual upgrade process
 
 A manual upgrade is accomplished by running the latest version of the `AzureADPasswordProtectionProxySetup.exe` software installer. The latest version of the software is available on the Microsoft Download Center.
 
-It's not required to uninstall the current version of the Microsoft Entra Password Protection proxy-service—the installer performs an in-place upgrade. No reboot should be required when upgrading the proxy service. The software upgrade may be automated using standard MSI procedures, such as `AzureADPasswordProtectionProxySetup.exe /quiet`.
+It's not required to uninstall the current version of the Microsoft Entra Password Protection proxy-service—the installer performs an in-place upgrade. No reboot should be required when upgrading the proxy service. The software upgrade might be automated using standard MSI procedures, such as `AzureADPasswordProtectionProxySetup.exe /quiet`.
 
 ## Upgrading the DC agent
 
@@ -203,4 +197,4 @@ The software upgrade might be automated using standard MSI procedures, such as `
 
 You might omit the `/norestart` flag if you prefer to have the installer automatically reboot the machine.
 
-The `Get-AzureADPasswordProtectionDCAgent` cmdlet may be used to query the software version of all currently installed Microsoft Entra Password Protection DC agents in a forest.
+The `Get-AzureADPasswordProtectionDCAgent` cmdlet might be used to query the software version of all currently installed Microsoft Entra Password Protection DC agents in a forest.

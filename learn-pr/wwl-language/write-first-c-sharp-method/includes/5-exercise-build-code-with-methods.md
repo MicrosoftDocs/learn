@@ -1,5 +1,3 @@
-
-
 Methods are useful for organizing code, reusing code, and for tackling problems efficiently. You can think of a method like a black box that takes input, performs the named task, and returns output. With this assumption, you can quickly structure programs just by naming your tasks as methods, and then filling in the logic after you've identified all of the necessary tasks. 
 
 When you use plain language to describe steps in code, without strictly adhering to syntax rules, you're using "pseudo-code". Combining methods and pseudo-code is a great way to quickly power through any challenging programming task.
@@ -161,7 +159,8 @@ Now that you have all the placeholder methods needed to solve the problem, you c
 
         foreach (string number in address) 
         {
-            if (int.Parse(number) > 255) 
+            int value = int.Parse(number);
+            if (value < 0 || value > 255) 
             {
                 validRange = false;
                 return;
@@ -304,7 +303,8 @@ In this task, you'll run your application from the Integrated Terminal and verif
     {
         foreach (string number in address) 
         {
-            if (int.Parse(number) > 255) 
+            int value = int.Parse(number);
+            if (value < 0 || value > 255) 
             {
                 validRange = false;
                 return;
