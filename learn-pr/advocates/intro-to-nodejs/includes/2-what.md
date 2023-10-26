@@ -10,12 +10,12 @@ JavaScript has become more relevant with the rise of single-page applications (S
 
 * [PostgreSQL](https://www.postgresql.org/docs/9.3/datatype-json.html)
 * [MySQL](https://dev.mysql.com/doc/refman/8.0/en/json.html)
-* [Microsoft SQL Server](https://docs.microsoft.com/en-us/sql/relational-databases/json/json-data-sql-server?view=sql-server-ver15)
+* [Microsoft SQL Server](/sql/relational-databases/json/json-data-sql-server?view=sql-server-ver15)
 
 **NoSQL databases** which use JavaScript JSON objects include:
 
 * [MongoDB](https://docs.mongodb.com/manual/core/document/)
-* [CouchDB](https://docs.couchdb.org/en/stable/json.html)
+* [CouchDB](https://docs.couchdb.org/)
 * [Cassandra](https://docs.datastax.com/en/cql-oss/3.3/cql/cql_using/useInsertJSON.html)
 
 
