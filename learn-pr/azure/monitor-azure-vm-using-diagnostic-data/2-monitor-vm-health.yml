@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: What are the two main Azure Monitor features for monitoring VMs?
+  - content: What are the two main types of monitoring data that Azure Monitor collects for Azure VMs?
     choices:
     - content: Metrics and Logs.
       isCorrect: true
-      explanation: Azure Monitor has two main features for monitoring VMs, Azure Monitor Metrics and Azure Monitor Logs.
-    - content: Insights and Alerts.
+      explanation: Azure Monitor can collect two main types of data for monitoring VMs: Metrics and Logs.
+    - content: VM Insights and Recommended Alerts.
       isCorrect: false
-      explanation: VM Insights and Alerts analyze and act on, but don't collect the Azure Monitor Metrics data.
+      explanation: VM Insights and Alerts are based on Azure Monitor Metrics data.
     - content: Workbooks and Workspaces.
       isCorrect: false
-      explanation: You can gather metrics in workbooks, and send log data to Log Analytics workspaces, but those aren't monitoring features of Azure Monitor.
+      explanation: You can display monitoring data in workbooks, and analyze logs in workspaces, but those ways of working with data aren't the data itself.
   - content: What's the fundamental architecture of an Azure VM?
     choices:
     - content: Host VM operating system, SKU, and disks.

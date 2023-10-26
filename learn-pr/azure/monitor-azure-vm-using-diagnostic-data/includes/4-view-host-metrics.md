@@ -1,12 +1,15 @@
-Many VM host metrics are available in addition to those shown on the built-in metrics graphs. You can use Metrics Explorer to view available metrics and create custom metrics graphs for VMs and other Azure resource types.
+After being alerted to a high percentage CPU value for your VM, you want to investigate further how your VM's CPU capability is sufficient to handle the traffic flowing into it. Metrics Explorer is the Azure Monitor UI for exploring and analyzing metrics. You can use Metrics Explorer to view and create custom graphs for many VM host metrics in addition to the metrics shown on the built-in graphs.
 
-The built-in metrics charts for a VM already display several important metrics, so be sure to check the built-in graphs to see if they already show the data you need. In this unit, you use Metrics Explorer to create a customized metrics chart that displays two different metrics together.
+If the built-in metrics charts for a VM don't already show the data you need, you can use Metrics Explorer to create customized metrics charts. In this unit, you create a chart that displays your VM's maximum percentage CPU and average inbound flow data together for the past 30 minutes.
 
 ## Understand Metrics Explorer
 
-To open Metrics Explorer, select **Metrics** from the VM's left navigation menu under **Monitoring**. You can also select the **See all Metrics** link next to **Platform metrics** on the **Monitoring** tab of the VM's **Overview** page.
+To open Metrics Explorer, you can:
 
-:::image type="content" source="../media/metrics-explorer.png" alt-text="Screenshot that shows Metrics Explorer." lightbox="../media/metrics-explorer.png":::
+- Select **Metrics** from the VM's left navigation menu under **Monitoring**.
+- Select the **See all Metrics** link next to **Platform metrics** on the **Monitoring** tab of the VM's **Overview** page.
+- Select 
+
 
 In Metrics Explorer, you can select the following values from the dropdown fields:
 
@@ -25,9 +28,11 @@ You can apply the following aggregation functions to metrics:
 
 You can select flexible time ranges for graphs from the past 30 minutes to the last 30 days, or custom ranges. You can specify time interval granularity from one minute to one month.
 
+:::image type="content" source="../media/metrics-explorer.png" alt-text="Screenshot that shows Metrics Explorer." lightbox="../media/metrics-explorer.png":::
+
 ## Create a metrics graph
 
-To create a Metrics Explorer graph that shows maximum percentage CPU and inbound flows for a host VM:
+To create a Metrics Explorer graph that shows host VM maximum percentage CPU and inbound flows together for the past 30 minutes:
 
 1. Open **Metrics Explorer** by selecting **See all Metrics** on the VM's **Monitoring** tab or selecting **Metrics** from the VM's left navigation menu.
 1. **Scope** and **Metric Namespace** are already populated for the host VM. Select **Percentage CPU** from the **Metrics** dropdown list.

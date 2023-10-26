@@ -1,21 +1,13 @@
-Azure Monitor includes VM Insights, which offers curated workbooks of useful VM metrics visualizations for managing your VM health and performance. VM Insights collects client and workload metrics. In this unit, you enable VM Insights and use it to monitor performance and guest OS metrics.
+Besides monitoring your VM host's health and performance, you need to monitor your VM's operating system and the other workloads and apps it runs. Azure Monitor includes VM Insights, which collects client and workload metrics. In this unit, you enable VM Insights and use it to monitor your VM's guest OS and client workloads' performance.
 
-VM Insights gets you started monitoring client and workload metrics quickly by automatically:
-
-- Setting up a default Log Analytics workspace that VM Insights can collect data to.
-- Installing Azure Monitor Agent on guest VMs.
-- Installing the Dependency Agent if **Processes and dependencies (Map)** is enabled.
-- Creating a predefined data collection rule (DCR) with a set of useful metrics for monitoring VM clients and workloads.
-- Setting up out-of-the-box workbooks that visualize VM performance trends over time.
-
-VM Insights installs *Azure Monitor Agent*, an agent that collects data from inside VMs. You can use DCRs to select which guest metrics Azure Monitor Agent collects and where to send the data.
+VM Insights installs *Azure Monitor Agent*, an agent that collects data from inside VMs. VM Insights implements a predefined data collection rule (DCR) that collects client and workload performance data into predefined curated workbooks. You can edit or create more DCRs to select which guest metrics Azure Monitor Agent collects and where to send the data.
 
 ## Enable VM Insights
 
 1. In the Azure portal, on your VM's **Overview** page, select **Insights** from the left navigation menu under **Monitoring**.
 1. On the **Insights** page, select **Enable**.
 1. On the **Monitoring configuration** page, select **Azure Monitor Agent (Recommended)**.
-1. For **Data collection rule**, VM Insights creates a DCR. In the DCR description, notice that **Processes and dependencies (Map)** is set to **Enabled**, and a default **Log Analytics workspace** is also created.
+1. Under **Data collection rule**, note the properties of the DCR that VM Insights creates. In the DCR description, **Processes and dependencies (Map)** is set to **Enabled**, and a default **Log Analytics workspace** is also created.
 1. Select **Configure**.
 
    :::image type="content" source="../media/enable-insights.png" alt-text="Screenshot that shows enabling and configuring VM Insights." lightbox="../media/enable-insights.png":::
@@ -24,7 +16,7 @@ VM Insights installs *Azure Monitor Agent*, an agent that collects data from ins
 
 1. When the deployment finishes, confirm that the Azure Monitor Agent and the Dependency Agent are installed by looking on the **Properties** tab of the VM's **Overview** page under **Extensions + applications**.
 
-   On the **Monitoring** tab, under **Performance and utilization**, you can see that **Guest OS metrics** are now being collected.
+   On the **Monitoring** tab of the **Overview** page, under **Performance and utilization**, you can see that **Guest OS metrics** are now being collected.
 
    :::image type="content" source="../media/guest-os-metrics.png" alt-text="Screenshot that shows Guest OS metrics on the VM's Monitoring tab." lightbox="../media/guest-os-metrics.png":::
 

@@ -3,7 +3,7 @@ uid: learn.azure.monitor-azure-vm-using-diagnostic-data
 metadata:
   title: Monitor your virtual machines with Azure Monitor
   description: Learn how to monitor your Azure VMs by using built-in metrics and logs, recommended alerts, Metrics Explorer, VM Insights, and Azure Monitor Agent DCRs.
-  ms.date: 10/19/2023
+  ms.date: 10/24/2023
   author: guywi-ms
   ms.author: guywild
   ms.topic: interactive-tutorial
