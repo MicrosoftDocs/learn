@@ -12,7 +12,7 @@ Sometimes Copilot might not suggest the exact code you need. You can use more sp
 
     You might notice that Copilot has multiple suggestions. You can click the arrow to navigate through suggestions.
 
-    ![Screenshot of one of two Copilot code suggestions](../media/copilot-code-suggestion.png)
+    ![Screenshot of one of two Copilot code suggestions.](../media/copilot-code-suggestion.png)
 
 1. Take a moment to consider the code that Copilot autocompleted. 
 
