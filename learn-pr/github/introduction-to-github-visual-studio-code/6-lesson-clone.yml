@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.introduction-to-github-vs-code.6-lesson-clone
-title: Lesson - Clone an existing repository
+title: Cloning repositories in Visual Studio Code
 metadata:
-  title: Lesson - Clone an existing repository 
+  title: Cloning repositories in Visual Studio Code 
   description: Clone an existing repository and gain context about it.
   ms.date: 10/23/2023
   author: kjo-msft

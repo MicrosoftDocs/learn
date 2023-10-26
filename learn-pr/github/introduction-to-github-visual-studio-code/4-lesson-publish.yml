@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.introduction-to-github-vs-code.4-lesson-publish
-title: Lesson - Publish your repository
+title: Publishing to GitHub from Visual Studio Code
 metadata:
-  title: Lesson - Initialize and publish your repository
+  title: Publishing to GitHub from Visual Studio Code
   description: Initialize and publish your repository.
   ms.date: 10/23/2023
   author: kjo-msft

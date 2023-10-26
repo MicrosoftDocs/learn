@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.introduction-to-github-vs-code.2-lesson-authentication
-title: GitHub authentication in Visual Studio Code
+title: GitHub integration in Visual Studio Code
 metadata:
-  title: GitHub authentication in Visual Studio Code
-  description: Authenticate in Visual Studio Code with your GitHub account.
+  title: GitHub integration in Visual Studio Code
+  description: Learn how GitHub is integrated into Visual Studio Code through extensions.
   ms.date: 10/23/2023
   author: kjo-msft
   ms.author: karinjohnson

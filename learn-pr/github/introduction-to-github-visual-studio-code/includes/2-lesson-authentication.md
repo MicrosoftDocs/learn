@@ -4,7 +4,7 @@ Before you can do anything with GitHub, you have to authenticate to GitHub. Norm
 
 You'll sign in and authenticate to GitHub in the next unit. In this unit, we present an overview of how GitHub and Visual Studio Code are integrated to facilitate authentication and how to begin using the tools together.
 
-## Authentication to GitHub through Visual Studio Code
+## Authenticate to GitHub through Visual Studio Code
 To begin working with GitHub through Visual Studio Code, you'll first need to search for and install one or more GitHub extensions from the Visual Studio Code Marketplace. For this training module, we'll use the **GitHub Pull Requests and Issues** extension. However, there are many other extensions available, such as **GitHub Repositories**, **GitHub Copilot**, and **GitHub Codespaces**.
 
 After installing the appropriate GitHub extensions in Visual Studio Code, you can initiate authentication by selecting the account icon that's at the bottom of the activity bar and signing in with your GitHub account (we'll do this in the next unit). A browser opens, and you're asked to grant permission for Visual Studio Code to access GitHub.
