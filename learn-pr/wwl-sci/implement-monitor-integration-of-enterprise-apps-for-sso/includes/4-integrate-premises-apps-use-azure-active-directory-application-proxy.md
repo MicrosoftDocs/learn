@@ -16,18 +16,16 @@ Application Proxy is recommended for giving remote users access to internal reso
 
 The following diagram shows how Microsoft Entra ID and Application Proxy work together to provide single sign-on to on-premises applications.
 
-:::image type="content" source="../media/azure-app-proxxy-1e86d179.png" alt-text="Diagram of the Microsoft Entra application proxy process flow.  A successful configuration is shown.":::
+:::image type="content" source="../media/azure-app-proxxy-1e86d179.png" alt-text="Diagram of the Microsoft Entra Application Proxy process flow. A successful configuration is shown.":::
 
 
-1. After the user has accessed the application through an endpoint, the user is directed to the Microsoft Entra sign-in page.
-1. After a successful sign-in, Microsoft Entra ID sends a token to the user's client device.
-1. The client sends the token to the Application Proxy service, which retrieves the user principal name (UPN) and security principal name (SPN) from the token. Application Proxy then sends the request to the Application Proxy connector.
-1. If you have configured single sign-on, the connector performs any additional authentication required on behalf of the user.
-1. The connector sends the request to the on-premises application.
-1. The response is sent through the connector and Application Proxy service to the user.
-
-<a name='add-an-on-premises-application-for-remote-access-through-application-proxy-in-azure-active-directory'></a>
+1.  After the user has accessed the application through an endpoint, the user is directed to the Microsoft Entra sign-in page.
+2.  After a successful sign-in, Microsoft Entra ID sends a token to the user's client device.
+3.  The client sends the token to the Application Proxy service, which retrieves the user principal name (UPN) and security principal name (SPN) from the token. Application Proxy then sends the request to the Application Proxy connector.
+4.  If you have configured single sign-on, the connector performs any additional authentication required on behalf of the user.
+5.  The connector sends the request to the on-premises application.
+6.  The response is sent through the connector and Application Proxy service to the user.
 
 ## Add an on-premises application for remote access through Application Proxy in Microsoft Entra ID
 
-Launch and interact with this Interactive Guide to learn more about enabling integrated windows authentication to on-premises applications with Microsoft Entra application proxy - **[Enable Integrated Windows Authentication Interactive Guide](https://mslearn.cloudguides.com/guides/Provide%20secure%20remote%20access%20to%20on-premises%20applications%20with%20Azure%20AD%20Application%20Proxy)**
+Launch and interact with this Interactive Guide to learn more about enabling integrated windows authentication to on-premises applications with Microsoft Entra Application Proxy - **[Enable Integrated Windows Authentication Interactive Guide](https://mslearn.cloudguides.com/guides/Provide%20secure%20remote%20access%20to%20on-premises%20applications%20with%20Azure%20AD%20Application%20Proxy)**

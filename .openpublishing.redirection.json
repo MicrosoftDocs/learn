@@ -28515,6 +28515,36 @@
       "source_path": "learn-pr/wwl-azure/design-implement-private-access-to-azure-services/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-implement-private-access-to-azure-services/7-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/3-understand-anomaly-detection.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/4-understand-computer-vision.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/3-understand-computer-vision",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/5-understand-natural-language-process.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/4-understand-natural-language-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/6-understand-knowledge-mining.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/8a-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/8b-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/8-understand-responsible-ai.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/8a-understand-responsible-ai",
+      "redirect_document_id": false
     }
     
   ]
