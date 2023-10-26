@@ -1,6 +1,6 @@
 Let's see how you can use Visual Studio Code to start a new project by cloning the project from an existing repository on GitHub.
 
-## Clone a new repository from GitHub
+## Step 1: Clone a new repository from GitHub
 
 1. Open a new Visual Studio Code window. From the Explorer view, you can select **Clone Repository**. You should see an option to clone from GitHub.
 
@@ -16,7 +16,7 @@ Let's see how you can use Visual Studio Code to start a new project by cloning t
 
    :::image type="content" source="../media/open-cloned-repository.png" alt-text="Screenshot of a notification in Visual Studio Code asking to open the cloned repository, with the Open button outlined.":::
 
-## Compare changes in the commit history to gain context
+## Step 2: Compare changes in the commit history to gain context
 
 1. Open the **README.md** file from the Explorer. After you have the file in the editor, expand the **Timeline** pane.
 
@@ -25,3 +25,10 @@ Let's see how you can use Visual Studio Code to start a new project by cloning t
 2. Select the commit made by the user _Burke Holland_. This step opens a read-only diff view so you can see all the changes associated with the commit. The green highlight shows that Burke has added those lines to the original content.
 
    :::image type="content" source="../media/timeline-view.png" alt-text="Screenshot of the Visual Studio Code diff editor, showing the differences in a file between two commits.":::
+
+## What you just did
+
+Let's recap what you did in this section:
+
+- Cloned a GitHub repo to your computer using Visual Studio Code
+- Reviewed changes made to a file using the **Timeline** pane in Visual Studio Code

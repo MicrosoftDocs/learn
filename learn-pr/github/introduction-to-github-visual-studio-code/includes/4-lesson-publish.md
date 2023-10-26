@@ -6,7 +6,7 @@ You'll publish to GitHub in the next unit. In this unit, we provide an overview 
 
 If you're starting with a new project that you haven't yet pushed to GitHub, the process for getting it up on GitHub has quite a few steps:
 
-1. Create a GitHub repo on Github.com.
+1. Create a GitHub repo on GitHub.com.
 1. Copy the remote endpoint.
 1. Run `git init` locally.
 1. Add the remote endpoint.

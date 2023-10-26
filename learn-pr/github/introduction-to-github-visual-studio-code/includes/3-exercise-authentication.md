@@ -43,5 +43,5 @@ In this exercise, you'll authenticate to GitHub using Visual Studio Code. You'll
 Let's recap what you did in this section:
 
 - Installed the **GitHub Pull Requests and Issues** extension in Visual Studio Code
-- Authenticated to GitHub using Visual Studio COde
+- Authenticated to GitHub using Visual Studio Code
 - Learned how to check which trusted Visual Studio Extensions can access your GitHub account
