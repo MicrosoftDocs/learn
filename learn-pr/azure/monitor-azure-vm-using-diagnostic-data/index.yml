@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data
 metadata:
-  title: Monitor your virtual machines with Azure Monitor
+  title: Monitor your Azure virtual machines
   description: Learn how to monitor your Azure VMs by using built-in metrics and logs, recommended alerts, Metrics Explorer, VM Insights, and Azure Monitor Agent DCRs.
   ms.date: 10/24/2023
   author: guywi-ms
@@ -9,11 +9,11 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom: engagement-fy23
   ms.service: virtual-machines
-title: Monitor your virtual machines with Azure Monitor
+title: Monitor your Azure virtual machines
 summary: Learn how to monitor your Azure VMs by using built-in metrics and logs, recommended alerts, Metrics Explorer, VM Insights, and Azure Monitor Agent DCRs.
 abstract: | 
-  - Decide which monitoring data you need to collect from your VM.
-  - Enable recommended alerts and diagnostics.
+  - Understand which monitoring data you need to collect from your VM.
+  - Enable and view recommended alerts and diagnostics.
   - Use Azure Monitor to collect and analyze VM host metrics data.
   - Use Azure Monitor Agent to collect VM client performance metrics and event logs.
 prerequisites: | 

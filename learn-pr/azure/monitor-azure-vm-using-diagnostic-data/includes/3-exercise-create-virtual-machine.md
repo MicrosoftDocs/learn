@@ -1,4 +1,4 @@
-You want to update the Linux version and configuration for the VM that hosts your website, so you decide to quickly create a VM in the Azure portal and evaluate the built-in monitoring capabilities. In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled.
+You want to update the Linux version and configuration for the VM that hosts your website, so you decide to quickly create a VM in the Azure portal and evaluate its built-in monitoring capabilities. In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled.
 
 As soon as the VM starts up, Azure automatically begins collecting basic metrics and activity logs. You can view built-in metrics graphs, activity logs, and boot diagnostics.
 
@@ -32,7 +32,7 @@ As soon as the VM starts up, Azure automatically begins collecting basic metrics
 
    :::image type="content" source="../media/create-vm-monitoring.png" alt-text="Screenshot that shows the Monitoring tab and alert rule configuration screen of the Create a virtual machine page." lightbox="../media/create-vm-monitoring.png":::
 
-1. On the **Generate new key pair** popup, select **Download private key and create resource**.
+1. On the **Generate new key pair** popup dialog box, select **Download private key and create resource**.
 
 It can take a few minutes to create the VM. When you get the notification that the VM is created, select **Go to resource** to see basic metrics data.
 
@@ -44,7 +44,7 @@ Once an Ubuntu or Windows VM is created, Azure starts collecting basic metrics d
 
    :::image type="content" source="../media/select-monitoring.png" alt-text="Screenshot that shows Monitoring tab on a VM's Overview screen." lightbox="../media/select-monitoring.png":::
 
-1. Under **Performance and utilization** > **Platform metrics**, review the following metrics graphs related to the VM's performance and utilization. Select **Show more metrics** if not all the graphs appear immediately.
+1. Under **Performance and utilization** > **Platform metrics**, review the following metrics graphs related to the VM's performance and utilization. Select **Show more metrics** if all the graphs don't appear immediately.
 
    - **VM Availability**
    - **CPU (average)**
@@ -58,7 +58,7 @@ Once an Ubuntu or Windows VM is created, Azure starts collecting basic metrics d
 
 ## View the activity log
 
-You can view any VM's activity log by selecting **Activity log** from the VM's left navigation menu. You can also retrieve entries by using PowerShell or the Azure CLI.
+You can view the VM's activity log by selecting **Activity log** from the VM's left navigation menu. You can also retrieve entries by using PowerShell or the Azure CLI.
 
 :::image type="content" source="../media/activity-log.png" alt-text="Screenshot of the activity log for a VM." lightbox="../media/activity-log.png":::
 

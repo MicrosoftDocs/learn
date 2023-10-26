@@ -31,9 +31,9 @@ quiz:
     - content: In the **Monitoring** tab of your VM **Overview** page.
       isCorrect: false
       explanation: Log data isn't available in the VM **Monitoring** tab.
-    - content: By creating a workbook in VM Insights.
+    - content: By selecting **Data Collection Rules** in Azure Monitor.
       isCorrect: false
-      explanation: VM Insights workbooks use metrics, not log data.
+      explanation: You select Data Collection Rules to create a DCR, not to view the data the DCR collects.
     - content: By using a KQL query in Log Analytics.
       isCorrect: true
       explanation: You can view log data collected by a DCR in your Log Analytics workspace by using a KQL log query.

@@ -7,7 +7,7 @@ VM Insights installs *Azure Monitor Agent*, an agent that collects data from ins
 1. In the Azure portal, on your VM's **Overview** page, select **Insights** from the left navigation menu under **Monitoring**.
 1. On the **Insights** page, select **Enable**.
 1. On the **Monitoring configuration** page, select **Azure Monitor Agent (Recommended)**.
-1. Under **Data collection rule**, note the properties of the DCR that VM Insights creates. In the DCR description, **Processes and dependencies (Map)** is set to **Enabled**, and a default **Log Analytics workspace** is also created.
+1. Under **Data collection rule**, note the properties of the DCR that VM Insights creates. In the DCR description, **Processes and dependencies (Map)** is set to **Enabled**, and a default **Log Analytics workspace** is created or assigned.
 1. Select **Configure**.
 
    :::image type="content" source="../media/enable-insights.png" alt-text="Screenshot that shows enabling and configuring VM Insights." lightbox="../media/enable-insights.png":::
@@ -34,7 +34,7 @@ To view the VM Insights performance graphs and maps:
 
    - Select **View Workbooks** to select from other available prebuilt VM Insights workbooks. Select **Go To Gallery** to select from a gallery of other VM Insights workbooks and workbook templates, or to edit and create your own workbooks.
 
-1. Select the **Map** tab to see the workbook for the Map feature. The map visualizes the VM's dependencies by discovering running process groups and processes that have active network connections over a specified time range.
+1. Select the **Map** tab on the **Insights** page to see the workbook for the Map feature. The map visualizes the VM's dependencies by discovering running process groups and processes that have active network connections over a specified time range.
 
    :::image type="content" source="../media/dependency-map.png" alt-text="Screenshot that shows a dependency map on the Map tab of VM Insights." lightbox="../media/dependency-map.png":::
 

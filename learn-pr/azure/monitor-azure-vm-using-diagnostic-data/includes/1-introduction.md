@@ -2,7 +2,7 @@ Suppose you're the IT administrator for a musical performer's website that's hos
 
 You need to maintain sufficient VM size and memory to effectively host the website without incurring unnecessary costs. You also need to proactively prevent and quickly respond to any access, security, and performance issues. To help achieve these objectives, you want to quickly and easily monitor your VMs' traffic, health, performance, and events.
 
-Azure VMs come with built-in and customizable monitoring abilities that you can use to track the health, performance, and behavior of systems, workloads, and applications. This learning module shows you how to use Azure Monitor built-in metrics and alert rules, Metrics Explorer, VM Insights, and custom data collection rules (DCRs) to collect and analyze monitoring data from your VMs.
+Azure VMs come with built-in and customizable monitoring abilities that you can use to track the health, performance, and behavior of systems, workloads, and applications. This learning module shows you how to use Azure Monitor metrics, alert rules, logs, VM Insights, and custom data collection rules (DCRs) to collect and analyze monitoring data from your VMs.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ To complete this module, you need the following prerequisites:
 
 ## Learning objectives
 
-- Decide which monitoring data you need to collect from your VM.
-- Enable recommended alerts and diagnostics.
+- Understand which monitoring data you need to collect from your VM.
+- Enable and view recommended alerts and diagnostics.
 - Use Azure Monitor to collect and analyze VM host data.
 - Use Azure Monitor Agent to collect VM client performance metrics and event logs.
