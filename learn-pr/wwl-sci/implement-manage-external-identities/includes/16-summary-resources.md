@@ -15,4 +15,4 @@ Use these resources to discover more:
  -  [What is a guest user access in Microsoft Entra ID](/azure/active-directory/external-identities/what-is-b2b)
  -  [Introduction to Microsoft Entra Verified ID](/azure/active-directory/verifiable-credentials/decentralized-identifier-overview)
  -  [Set up the Microsoft Entra Verified ID service](/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant)
- -  [Cross-tenant access with Microsoft Entra External ID](/azure/active-directory/external-identities/cross-tenant-access-overview)
+ -  [Cross-tenant access with Microsoft Entra External Identities](/azure/active-directory/external-identities/cross-tenant-access-overview)
