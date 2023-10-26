@@ -3,8 +3,6 @@ Active Directory Domain Services (AD DS) is the traditional deployment of Window
 > [!Important]
 > Although you can deploy and manage AD DS in Azure Virtual Machines, we recommend you use Microsoft Entra ID, unless your configuration targets IaaS workloads that depend specifically on AD DS.
 
-<a name='things-to-consider-when-using-azure-ad-rather-than-ad-ds'></a>
-
 ### Things to consider when using Microsoft Entra rather than AD DS
 
 Microsoft Entra ID is similar to AD DS, but there are significant differences. It's important to understand that using Microsoft Entra ID for your configuration is different from deploying an Active Directory domain controller on an Azure virtual machine and then adding it to your on-premises domain.
@@ -20,3 +18,4 @@ As you plan your identity strategy, consider the following characteristics that 
 - **Flat structure**: Microsoft Entra users and groups are created in a flat structure. There are no organizational units (OUs) or group policy objects (GPOs).
 
 - **Managed service**: Microsoft Entra ID is a managed service. You manage only users, groups, and policies. If you deploy AD DS with virtual machines by using Azure, you manage many other tasks, including deployment, configuration, virtual machines, patching, and other backend processes.
+
