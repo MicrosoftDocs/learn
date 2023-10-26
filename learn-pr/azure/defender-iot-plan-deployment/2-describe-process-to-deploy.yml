@@ -33,12 +33,12 @@ quiz:
 
   - content: "In which phase would you choose a traffic mirroring method?"
     choices:
-    - content: "Deploy Sensors"
+    - content: "Deploy sensors"
       isCorrect: false
       explanation: "In the sensor deployment phase you would download and install Defender for IoT, activate your OT sensors, install certificates, and configure proxies."
     - content: "Plan and prepare"
       isCorrect: true 
       explanation: "You would choose a traffic mirroring method for each OT sensor in the Plan and prepare stage of deployment and configure them in the Site networking setup phase."
-    - content: "Site Networking setup"
+    - content: "Site networking setup"
       isCorrect: false
       explanation: "In the Site Networking setup phase, you would configure your traffic mirroring method not choose the method."

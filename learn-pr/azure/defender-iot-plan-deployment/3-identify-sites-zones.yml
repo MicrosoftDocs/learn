@@ -30,3 +30,15 @@ quiz:
     - content: "3"
       isCorrect: true
       explanation: "Site 1 can have one zone. Site 2 should be separated into two zones. That way devices in the segments with recurring IP addresses can consolidate correctly, and are identified as separate and unique devices in the device inventory."
+
+  - content: "What Zero Trust solutions does Defender for IoT take for OT environments?"
+    choices:
+    - content: "OT security takes advantage of general Zero Trust security."
+      isCorrect: false
+      explanation: "OT security relies on Zero Trust procedures of its own."
+    - content: "Defender for IoT supports Zero Trust access segmentation with sites and zones."
+      isCorrect: true
+      explanation: "Defender for IoT supports Zero Trust with sites and zones, among other security strategies."
+    - content: "OT security uses Endpoint behavioral sensors for Zero Trust security."
+      isCorrect: false
+      explanation: "OT security relies on Zero Trust procedures of its own."

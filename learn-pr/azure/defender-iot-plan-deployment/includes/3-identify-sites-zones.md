@@ -1,14 +1,14 @@
-Your car manufacturing organization has a network including offices and production sites across the globe. The Zero Trust access strategy requires segmenting your OT network to enhance network security. Defender for IoT for OT uses sites and zones for segmentation.
+Your car manufacturing organization has a network including offices and production sites across the globe. The Zero Trust access strategy requires segmenting your OT network to enhance network security. Defender for IoT uses *sites* and *zones* for segmentation.
 
 ## Zero Trust
 
 Zero Trust is a security strategy, which assumes a breach as a given, and therefore always requires verifications and the least needed privileges. Some applications of Zero Trust in an OT network can include:
 
-1. Ensuring that all connections between networks and devices are identified and managed.
-1. Limiting and securing your network jump hosts.
-1. Segmenting your network to limit data access. Encrypting and securing all communication between devices and segments and preventing lateral movement between systems.
-1. Evaluating signals like device location, health, and behavior using health data to gate access or flag for remediation.
-1. Monitoring security metrics to ensure security perimeter integrity.
+- Ensuring that all connections between networks and devices are identified and managed.
+- Limiting and securing your network jump hosts.
+- Segmenting your network to limit data access. Encrypting and securing all communication between devices and segments and preventing lateral movement between systems.
+- Evaluating signals like device location, health, and behavior using health data to gate access or flag for remediation.
+- Monitoring security metrics to ensure security perimeter integrity.
 <!-- What are the most important zero trust examples for OT to use? -->
 
 ## Zero Trust with Defender for IoT
@@ -34,13 +34,13 @@ In your car manufacturer, you might segment factories and office areas in Paris 
 
 ### Separating zones
 
-It's recommended to separate sensors with similar characteristics, like recurring IP address ranges, into separate zones when working with multiple networks. This ensures that Defender for IoT differentiates between the devices and identifies each device uniquely.
+We recommend separating sensors with similar characteristics, like recurring IP address ranges, into separate zones when working with multiple networks. This ensures that Defender for IoT differentiates between the devices and identifies each device uniquely.
 
 <!--In the next unit, you'll check your understanding of  organize your car manufacturer's locations into sites and zones based on a network diagram.-->
 
 ## Knowledge check
 
-:::image type="content" source="../media/3-recurring-segments-option-no.png" alt-text="Diagram of a sample network.":::
+:::image type="content" source="../media/3-recurring-segments-option-no.png" alt-text="Diagram of a sample network." border="false":::
 <!--Optional "exercise-solution" video -->
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
