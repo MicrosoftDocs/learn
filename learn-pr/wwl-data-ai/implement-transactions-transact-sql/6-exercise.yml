@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.service: sql
-  ms.subservice: t-sql
 labId: 105122
 labModal: true
 durationInMinutes: 30
