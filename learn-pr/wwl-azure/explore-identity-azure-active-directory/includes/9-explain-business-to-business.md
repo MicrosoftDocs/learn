@@ -17,7 +17,7 @@ The following capabilities make up External Identities:
 
 ## Microsoft Entra Business to Consumer
 
-You may also find it necessary to offer services directly to customers.  This can be done as well.  Microsoft Entra B2C provides business-to-customer identity as a service. Your customers use their preferred social, enterprise, or local account identities to get single sign-on access to your applications and APIs.
+When you find it necessary to offer services directly to customers.  This can be done as well.  Microsoft Entra B2C provides business-to-customer identity as a service. Your customers use their preferred social, enterprise, or local account identities to get single sign-on access to your applications and APIs.
 
 Microsoft Entra B2C is a customer identity access management (CIAM) solution capable of supporting millions of users and billions of authentications per day. It takes care of the scaling and safety of the authentication platform, monitoring, and automatically handling threats like denial-of-service, password spray, or brute force attacks.
 

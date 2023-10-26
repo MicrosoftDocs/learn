@@ -3,7 +3,7 @@ We have talked about Zero Trust and about identity as the control plane for acce
 
 ### Identity gives the ability:
 
-- To prove who or what we are - **Authentication**
+- To prove who or what, we are - **Authentication**
 - To get permissions to do something - **Authorization**
 - To report on what was done - **Auditing**
 - To IT manage and self administer an identity - **Administration**

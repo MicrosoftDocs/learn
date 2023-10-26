@@ -1,5 +1,5 @@
 
-This module will cover a wide view of the definitions and available services for identity provided in the Microsoft Cloud from Microsoft Entra ID to Microsoft 365.  You start with the basics of authentication, authorization, and access tokens.
+This module covers a wide view of the definitions and available services for identity provided in the Microsoft Cloud from Microsoft Entra ID to Microsoft 365.  You start with the basics of authentication, authorization, and access tokens.
 
 From this firm foundation of what an identity is, why it's important we explore deeper scenarios. We move into governance and lifecycle management of your identities and identity solutions. The final section opens up the concept of zero trust, and how it should be applied to your identity solutions. What is the Microsoft Entra ID architecture and the connection with identity in Microsoft 365?
 
@@ -23,7 +23,7 @@ In this module, you will:
 
 ### Learning objectives
 
-By the end of this module will be able to:
+By the end of this module can:
 
 - Define common identity terms and explain how they're used in the Microsoft Cloud
 - Explore the common management tools and needs of an identity solution
