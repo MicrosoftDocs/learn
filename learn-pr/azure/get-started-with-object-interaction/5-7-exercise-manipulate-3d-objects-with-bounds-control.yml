@@ -8,8 +8,7 @@ metadata:
   ms.date: 06/26/2023
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-7-exercise-manipulate-3d-objects-with-bounds-control.md)]
