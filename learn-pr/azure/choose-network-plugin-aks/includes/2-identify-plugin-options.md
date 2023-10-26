@@ -1,4 +1,4 @@
-A network plugin is required by an AKS cluster in order to facilitate pod-pod communication, pod-node communication, and in some cases, node-pod communication. Here you'll learn about the different plugin options available on AKS:
+A network plugin is required by an AKS cluster in order to facilitate pod-to-pod communication, pod-to-node communication, and in some cases, node-to-pod communication. There are two plugins available on AKS, kubenet and Azure CNI.
 
 ## Kubenet
 
@@ -27,6 +27,6 @@ With Azure CNI, a pre-existing subnet and a virtual network are required in orde
 
 :::image source="../media/advanced-networking-diagram.png" alt-text="Diagram of the Azure CNI network model. Pods are shown communicating through a bridge. Each pod has a unique IP assigned from the virtual network's node subnet.":::
 
-## Bring your own
+## Use a custom plugin
 
-For customers who plan to use a completely custom network configuration and want existing AKS networking out of the way, it's possible to create clusters with no networking plugin. This is required when planning on using a CNI provider like Cilium or Flannel. Addressing this option isn't in scope for this module.
+For customers who plan to use a custom network configuration, there are no networking plugin requirements. You can choose from CNI providers like Cilium or Flannel. However, it's best to turn to their own documentation as it's not covered by Microsoft.
