@@ -1,4 +1,4 @@
-If you have an Azure subscription with access to the Azure OpenAI service, you can use this exercise to provision an Azure OpenAI resource and use it to deploy and explore generative AI models.
+In this exercise, provision an Azure OpenAI resource and use it to deploy and explore generative AI models.
 
 > [!NOTE]
 > To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) and you need to be approved for Azure OpenAI access. If you need access, apply at the [Azure OpenAI limited access](/legal/cognitive-services/openai/limited-access?azure-portal=true) page.
