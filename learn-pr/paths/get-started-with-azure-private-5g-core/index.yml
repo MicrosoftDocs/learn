@@ -12,8 +12,7 @@ metadata:
   ms.date: 12/28/2022
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.topic: learning-path
 prerequisites: |
   - Fundamental Azure knowledge.
   - Fundamental knowledge of 5G and 4G technologies.
