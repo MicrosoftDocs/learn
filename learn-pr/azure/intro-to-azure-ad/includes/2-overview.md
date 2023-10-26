@@ -14,7 +14,7 @@ Microsoft Entra ID is a cloud-based identity-management solution. It helps your 
 
 Microsoft Entra ID also helps you keep user identities and applications secure through features like Conditional Access and identity protection.
 
-![Azure AD.](../media/2-azure-ad.svg)
+![Diagram of Microsoft Entra ID.](../media/2-azure-ad.svg)
 
 Microsoft Entra ID stores your users in a tenant that represents an organization. For example, say you have a company tenant where all of your employee user accounts are stored. You can add users in this tenant to groups so they have a common shared-access level. You could have one group for developers and another group for application testers. These groups would have different access levels for applications. Each tenant can have multiple groups that hold multiple users.
 
@@ -46,7 +46,7 @@ Use the identity secure score to improve and monitor the security of your identi
 
 ## How Microsoft Entra ID compares with Active Directory
 
-Active Directory and Microsoft Entra ID share a similar name, but they're separate services that are used for different purposes.
+Active Directory and Microsoft Entra ID are separate services that are used for different purposes.
 
 Microsoft Entra ID is a cloud-based identity solution that helps you manage users and applications. Active Directory manages objects, like devices and users, on your on-premises network. Here are some other differences:
 
@@ -55,7 +55,7 @@ Microsoft Entra ID is a cloud-based identity solution that helps you manage user
 |Active Directory     |Kerberos, NTLM| Forests, domains,  organizational  units | Authentication and authorization for on-premises printers, applications, file services, and more
 |Microsoft Entra ID     |Includes SAML, OAuth, WS-Federation|Tenants|Internet-based services and applications like Microsoft 365, Azure services, and third-party SaaS applications
 
-![A comparison between Active Directory and Azure AD.](../media/2-azure-ad-compared-active-directory.svg)
+![A comparison between Active Directory and Microsoft Entra ID.](../media/2-azure-ad-compared-active-directory.svg)
 
 Microsoft Entra ID doesn't replace Active Directory. The service you use depends on your organization's needs. You can use the two services together so you can take advantage of their combined features and capabilities.
 

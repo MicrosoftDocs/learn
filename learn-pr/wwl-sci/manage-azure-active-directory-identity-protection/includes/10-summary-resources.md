@@ -16,6 +16,6 @@ Use these resources to discover more.
  -  [How To: Configure and enable risk policies](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)
  -  [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview)
  -  [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock)
- -  [Microsoft Entra ID Protection notifications](/azure/active-directory/identity-protection/howto-identity-protection-configure-notifications)
+ -  [Microsoft Entra Identity Protection notifications](/azure/active-directory/identity-protection/howto-identity-protection-configure-notifications)
  -  [Identity Protection policies](/azure/active-directory/identity-protection/concept-identity-protection-policies)
  -  [What is Microsoft Defender for Identity](/defender-for-identity/what-is)

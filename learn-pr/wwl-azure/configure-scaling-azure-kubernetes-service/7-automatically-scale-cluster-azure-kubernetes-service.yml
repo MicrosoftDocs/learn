@@ -4,7 +4,7 @@ title: Automatically scale a cluster on Azure Kubernetes Service
 metadata:
   title: Automatically scale a cluster on Azure Kubernetes Service
   description: "Automatically scale a cluster on Azure Kubernetes Service"
-  ms.date: 10/06/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
