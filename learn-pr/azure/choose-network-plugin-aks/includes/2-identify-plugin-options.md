@@ -13,7 +13,7 @@ Pods can't communicate directly with each other across nodes. Instead, User Defi
 
 If your custom subnet doesn't contain a route table, AKS creates one for you and adds rules to it throughout the cluster lifecycle. If your custom subnet contains a route table when you create your cluster, AKS acknowledges the existing route table during cluster operations and adds/updates rules accordingly for cloud provider operations.
 
-:::image source="../media/kubenet-overview.png" alt-text="Diagram of the kubenet network model with an AKS cluster. Two nodes are shown using kubenet to route/NAT traffic over the virtual network's node subnet.":::
+:::image source="../media/2-kubenet-overview.png" alt-text="Diagram of the kubenet network model with an AKS cluster. Two nodes are shown using kubenet to route/NAT traffic over the virtual network's node subnet.":::
 
 ## Azure CNI
 
@@ -25,7 +25,7 @@ The Azure CNI plugin is a more complex networking option with higher configurabi
 
 With Azure CNI, a pre-existing subnet and a virtual network are required in order to utilize the Azure CNI network plugin. This subnet and virtual network can be created during the creation time of the AKS cluster.
 
-:::image source="../media/advanced-networking-diagram.png" alt-text="Diagram of the Azure CNI network model. Pods are shown communicating through a bridge. Each pod has a unique IP assigned from the virtual network's node subnet.":::
+:::image source="../media/2-advanced-networking-diagram.png" alt-text="Diagram of the Azure CNI network model. Pods are shown communicating through a bridge. Each pod has a unique IP assigned from the virtual network's node subnet.":::
 
 ## Use a custom plugin
 
