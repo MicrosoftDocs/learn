@@ -3,12 +3,10 @@ uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db
 metadata:
   title: Get started with the MongoDB API in Azure Cosmos DB
   description: "Learn Azure Cosmos DB for MongoDB basics."
-  ms.date: 02/06/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.service: cosmos-db
-  ms.subservice: mongodb
 title: Get started with the MongoDB API in Azure Cosmos DB
 summary: This Module will introduce Azure Cosmos DB for MongoDB accounts. It will help you get started, create your first objects and connect to your account.
 abstract: |

@@ -54,11 +54,11 @@ To assign session host VMs permissions for the storage account and file share:
 
 1.  Create an Active Directory Domain Services (AD DS) security group.
 2.  Add the computer accounts for all session host VMs as members of the group.
-3.  Sync the AD DS group to Azure Active Directory (Azure AD).
+3.  Sync the AD DS group to Microsoft Entra ID.
 4.  Create a storage account.
 5.  Create a file share under the storage account by following the instructions in [Create an Azure file share](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/storage/files/storage-how-to-create-file-share.md).
 6.  Join the storage account to AD DS by following the instructions in [enable AD DS authentication for your Azure file shares](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/storage/files/storage-files-identity-ad-ds-enable.md).
-7.  Assign the synced AD DS group to Azure AD, and assign the storage account the Storage File Data SMB Share Contributor role.
+7.  Assign the synced AD DS group to Microsoft Entra ID, and assign the storage account the Storage File Data SMB Share Contributor role.
 8.  Mount the file share to any session host by following the instructions in [assign share-level permissions to an identity](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/storage/files/storage-files-identity-ad-ds-assign-permissions.md).
 9.  Grant NTFS permissions on the file share to the AD DS group.
 10. Set up NTFS permissions for the user accounts. You'll need an operating unit (OU) sourced from the AD DS that the accounts in the VM belong to.

@@ -4,15 +4,15 @@ Identity Protection provides organizations with three reports they can use to in
 
 All three reports allow for downloading of events in .CSV format for further analysis outside of the Azure portal. The risky users and risky sign-ins reports allow for downloading the most recent 2,500 entries, while the risk detections report allows for downloading the most recent 5,000 records.
 
-Organizations can take advantage of the Microsoft Graph API integrations to aggregate data with other sources they may have access to as an organization.
+Organizations can take advantage of the Microsoft Graph API integrations to aggregate data with other sources they have access to as an organization.
 
-You can find the three reports in the **Azure portal**, then **Azure Active Directory**, and then **Security**.
+You can find the three reports in the **Microsoft Entra admin center**, then **Identity**, and then **Protection - Identity Protection**.
 
 ### Navigating the reports
 
 Each report launches with a list of all detections for the period shown at the top of the report. Each report allows for the addition or removal of columns based on administrator preference. Administrators can choose to download the data in .CSV or .JSON format. Reports can be filtered using the filters across the top of the report.
 
-Selecting individual entries may enable additional entries at the top of the report, such as the ability to confirm a sign-in as compromised or safe, confirm a user as compromised, or dismiss user risk.
+Selecting individual entries enables additional entries at the top of the report, such as the ability to confirm a sign-in as compromised or safe, confirm a user as compromised, or dismiss user risk.
 
 Selecting individual entries expands a details window below the detections. The details view allows administrators to investigate and perform actions on each detection.
 
@@ -71,7 +71,7 @@ Administrators can then choose to return to the user's risk or sign-ins report t
 The risk detection report also provides a clickable link to the detection in the Microsoft Defender for Cloud Apps (MDCA) portal where you can view additional logs and alerts.
 
 > [!NOTE]
-> Our system may detect that the risk event that contributed to the risk user risk score was a false positive or that the user risk was remediated with policy enforcement such as completing an MFA prompt or secure password change. Therefore, our system will dismiss the risk state, and a risk detail of “AI confirmed sign-in safe” will surface and no longer contribute to the user’s risk.
+> Our system detects that the risk event that contributed to the risk user risk score was a false positive or that the user risk was remediated with policy enforcement such as completing an MFA prompt or secure password change. Therefore, our system will dismiss the risk state, and a risk detail of “AI confirmed sign-in safe” will surface and no longer contribute to the user’s risk.
 
 ## Remediate risks and unblock users
 
@@ -81,7 +81,7 @@ After completing your investigation, you'll want to take action to remediate the
 
 All active risk detections contribute to the calculation of a value called *user risk level*. The user risk level is an indicator (low, medium, high) for the probability that an account has been compromised. As an administrator, you want to get all risk detections closed, so that the affected users are no longer at risk.
 
-Some risk detections may be marked by Identity Protection as "Closed (system)" because the events were no longer determined to be risky.
+Some risk detections are marked by Identity Protection as "Closed (system)" because the events were no longer determined to be risky.
 
 Administrators have the following options to remediate:
 
@@ -92,9 +92,9 @@ Administrators have the following options to remediate:
 
 ### Self-remediation with risk policy
 
-If you allow users to self-remediate, with Azure AD Multi-Factor Authentication (MFA) and self-service password reset (SSPR) in your risk policies, they can unblock themselves when risk is detected. These detections are then considered closed. Users must have previously registered for Azure AD MFA and SSPR in order to use when risk is detected.
+If you allow users to self-remediate, with multifactor authentication (MFA) and self-service password reset (SSPR) in your risk policies, they can unblock themselves when risk is detected. These detections are then considered closed. Users must have previously registered for MFA and SSPR in order to use when risk is detected.
 
-Some detections may not raise risk to the level where a user self-remediation would be required, but administrators should still evaluate these detections. Administrators may determine that additional measures are necessary, such as blocking access from locations or lowering the acceptable risk in their policies.
+Some detections don't raise risk to the level where a user self-remediation would be required, but administrators should still evaluate these detections. Administrators determine that additional measures are necessary, such as blocking access from locations or lowering the acceptable risk in their policies.
 
 ### Manual password reset
 
@@ -104,7 +104,7 @@ Administrators are given two options when resetting a password for their users:
 
 **Generate a temporary password** \- By generating a temporary password, you can immediately bring an identity back into a safe state. This method requires contacting the affected users since they need to know what the temporary password is. Because the password is temporary, the user is prompted to change the password to something new during the next sign-in.
 
-**Require the user to reset password** \- Requiring the users to reset passwords enables self-recovery without contacting help desk or an administrator. This method only applies to users who are registered for Azure AD MFA and SSPR. For users who haven't been registered, this option isn't available.
+**Require the user to reset password** \- Requiring the users to reset passwords enables self-recovery without contacting help desk or an administrator. This method only applies to users who are registered for MFA and SSPR. For users who haven't been registered, this option isn't available.
 
 ### Dismiss user risk
 
@@ -125,7 +125,7 @@ When closing risk detections manually, you can choose to take any of the followi
 
 ### Unblocking users
 
-An administrator may choose to block a sign-in based on their risk policy or investigations. A block may occur based on either sign-in or user risk.
+An administrator chooses to block a sign-in based on their risk policy or investigations. A block occurs based on either sign-in or user risk.
 
 ### Unblocking based on user risk
 
@@ -146,17 +146,17 @@ To unblock an account based on sign-in risk, administrators have the following o
 
 ### PowerShell preview
 
-Using the Microsoft Graph PowerShell SDK Preview module, organizations can manage risk using PowerShell. The preview modules and sample code are located in the [Azure AD GitHub repo](https://github.com/AzureAD/IdentityProtectionTools).
+Using the Microsoft Graph PowerShell SDK Preview module, organizations can manage risk using PowerShell. The preview modules and sample code are located in the [Azure GitHub repo](https://github.com/AzureAD/IdentityProtectionTools).
 
 ## Use the Microsoft Graph API
 
-Microsoft Graph is the Microsoft unified API endpoint and the home of Azure Active Directory Identity Protection APIs. There are three APIs that expose information about risky users and sign-ins: `riskDetection, riskyUsers, and signIn`.
+Microsoft Graph is the Microsoft unified API endpoint and the home of Microsoft Entra Identity Protection APIs. There are three APIs that expose information about risky users and sign-ins: `riskDetection, riskyUsers, and signIn`.
 
 `riskDetection`allows you to query Microsoft Graph for a list of both user and sign-in linked risk detections and associated information about the detection.
 
 `riskyUsers`allows you to query Microsoft Graph for information about users that Identity Protection detected as being risky.
 
-`signIn` allows you to query Microsoft Graph for information on Azure AD sign-ins with specific properties related to risk state, detail, and level.
+`signIn` allows you to query Microsoft Graph for information on Microsoft Entra ID sign-ins with specific properties related to risk state, detail, and level.
 
 This section gets you started with connecting to the Microsoft Graph and querying these APIs. For an in-depth introduction, full documentation, and access to the Graph Explorer, see the Microsoft Graph site (https://graph.microsoft.io/) or the specific reference documentation for the `riskDetection, riskyUsers, and signIn` APIs.
 
@@ -166,38 +166,44 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
 
 ### Retrieve your domain name
 
-1. Sign in to the Azure portal.
-1. Browse to **Azure Active Directory**, then **Custom domain names**.
-1. Take note of the .onmicrosoft.com domain. You'll need this information in a later step.
+1.  Sign in to the Microsoft Entra admin center.
+2.  Browse to **Identity**, then open Settings, and select **Domain names**.
+3.  Take note of the .onmicrosoft.com domain. You'll need this information in a later step.
 
 ### Create a new app registration
 
-1. In the Azure portal, browse to **Azure Active Directory**, then **App registrations**.
-1. Select **New registration**.
-1. On the **Create** page, perform the following steps:
-    1. In the **Name** textbox, type a name for your application (for example: Azure AD Risk Detection API).
-    1. Under **Supported account types**, select the type of accounts that will use the APIs.
-    1. Select **Register**.
-1. Copy the **Application ID**.
+1.  In the Microsoft Entra admin center, browse to **Identity and Applications**, then **App registrations**.
+2.  Select **New registration**.
+3.  On the **Create** page, perform the following steps:
+    
+    
+    1.  In the **Name** textbox, type a name for your application (for example: Microsoft Entra Risk Detection API).
+    2.  Under **Supported account types**, select the type of accounts that will use the APIs.
+    3.  Select **Register**.
+4.  Copy the **Application ID**.
 
 ### Configure API permissions
 
-1. From the **Application** you created, select **API permissions**.
-1. On the **Configured permissions** page, in the toolbar on the top, select **Add a permission**.
-1. On the **Add API access** page, choose **Select an API**.
-1. On the **Select an API** page, select **Microsoft Graph**, and then select **Select**.
-1. On the **Request API permissions** page:
-    1. Select **Application permissions**.
-    1. Select the checkboxes next to IdentityRiskEvent.Read.All and IdentityRiskyUser.Read.All.
-    1. Select **Add permissions**.
-1. Select **Grant admin consent for domain.**
+1.  From the **Application** you created, select **API permissions**.
+2.  On the **Configured permissions** page, in the toolbar on the top, select **Add a permission**.
+3.  On the **Add API access** page, choose **Select an API**.
+4.  On the **Select an API** page, select **Microsoft Graph**, and then select **Select**.
+5.  On the **Request API permissions** page:
+    
+    
+    1.  Select **Application permissions**.
+    2.  Select the checkboxes next to IdentityRiskEvent.Read.All and IdentityRiskyUser.Read.All.
+    3.  Select **Add permissions**.
+6.  Select **Grant admin consent for domain.**
 
 ### Configure a valid credential
 
-1. From the **Application** you created, select **Certificates and secrets**.
-1. Under **Client secrets**, select **New client secret**.
-    1. Give the client secret a **Description** and set the expiration time period according to your organizational policies.
-    1. Select **Add**.
+1.  From the **Application** you created, select **Certificates and secrets**.
+2.  Under **Client secrets**, select **New client secret**.
+    
+    
+    1.  Give the client secret a **Description** and set the expiration time period according to your organizational policies.
+    2.  Select **Add**.
         
         > [!NOTE]
         > If you lose this key, you'll have to return to this section and create a new key. Keep this key a secret: Anyone who has it can access your data.
@@ -221,6 +227,7 @@ If successful, this request returns an authentication token. To call the API, cr
 
 ```http
 Authorization`="<token_type> <access_token>"
+
 
 
 ```
@@ -278,6 +285,7 @@ Here’s sample code for authenticating and calling the API using PowerShell. Ju
 
 
 
+
 ```
 
 ### Get all of the offline risk detections (riskDetection API)
@@ -288,14 +296,16 @@ With Identity Protection sign-in risk policies, you can apply conditions when ri
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=detectionTimingType eq 'offline'
 
 
+
 ```
 
 ### Get all of the users who successfully passed an MFA challenge triggered by risky sign-ins policy (riskyUsers API)
 
-To understand the value Identity Protection risk-based policies have on your organization, you can query all of the users who successfully passed an MFA challenge triggered by a risky sign-ins policy. This information can help you understand which users Identity Protection may have falsely detected as a risk and which of your legitimate users may be performing actions that the AI deems risky.
+To understand the value Identity Protection risk-based policies have on your organization, you can query all of the users who successfully passed an MFA challenge triggered by a risky sign-ins policy. This information can help you understand which users Identity Protection has falsely detected as a risk and which of your legitimate users are performing actions that the AI deems risky.
 
 ```http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=riskDetail eq 'userPassedMFADrivenByRiskBasedPolicy'
+
 
 
 ```

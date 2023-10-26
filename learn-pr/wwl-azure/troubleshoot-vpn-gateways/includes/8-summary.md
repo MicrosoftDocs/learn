@@ -47,6 +47,6 @@ Use these resources to discover more about the topics covered.
 
 [Troubleshoot Point-to-Site connections: macOS X clients - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-point-to-site-osx-ikev2)
 
-[Troubleshoot Point-to-Site VPN clients - Azure AD authentication - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/troubleshoot-ad-vpn-client)
+[Troubleshoot Point-to-Site VPN clients - Microsoft Entra authentication - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/troubleshoot-ad-vpn-client)
 
 [Troubleshoot Azure point-to-site connection problems - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems)

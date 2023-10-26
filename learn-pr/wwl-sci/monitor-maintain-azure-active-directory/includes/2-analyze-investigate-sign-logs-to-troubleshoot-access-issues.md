@@ -1,4 +1,4 @@
-The reporting architecture in Azure Active Directory (Azure AD), part of Entra consists of the following components:
+The reporting architecture in Microsoft Entra ID consists of the following components:
 
  -  **Activity**
     
@@ -18,9 +18,9 @@ The reporting architecture in Azure Active Directory (Azure AD), part of Entra c
  -  Global Administrators
  -  Any user (non-admins) can access their own sign-ins
 
-### What Azure AD license do you need to access sign-in activity?
+### What Microsoft Entra license do you need to access sign-in activity?
 
-The sign-in activity report is available in all editions of Azure AD and can also be accessed through the Microsoft Graph API.
+The sign-in activity report is available in all editions of Microsoft Entra ID and can also be accessed through the Microsoft Graph API.
 
 ## Sign-ins report
 
@@ -30,9 +30,9 @@ The user sign-ins report provides answers to the following questions:
  -  How many users have signed in over a week?
  -  What’s the status of these sign-ins?
 
-On the Azure portal menu, select **Azure Active Directory**, or search for and select **Azure Active Directory** from any page.
+On the Azure portal menu, select **Microsoft Entra ID**, or search for and select **Microsoft Entra ID** from any page.
 
-:::image type="content" source="../media/select-azure-active-directory-1ab1b468.png" alt-text="Screenshot of the Select Azure Active Directory screen, so you can modify Azure AD settings.":::
+:::image type="content" source="../media/select-azure-active-directory-1ab1b468.png" alt-text="Screenshot of the Select Microsoft Entra ID screen, so you can modify the settings.":::
 
 
 Under **Monitoring**, select **Sign-ins** to open the Sign-ins report.
@@ -40,7 +40,7 @@ Under **Monitoring**, select **Sign-ins** to open the Sign-ins report.
 :::image type="content" source="../media/sign-ins-azure-active-directory-d02f9bb4.png" alt-text="Screenshot of the Sign-ins selected from the Monitoring menu. Track what report you want to review.":::
 
 
-It may take up to two hours for some sign-in records to show up in the portal.
+It takes up to two hours for sign-in records to show up in the portal.
 
 > [!IMPORTANT]
 > The sign-ins report only displays the interactive sign-ins—those in which a user manually signs in using their username and password. Non-interactive sign-ins, such as service-to-service authentication, are not displayed in the sign-ins report.
@@ -76,7 +76,7 @@ Customers can now troubleshoot Conditional Access policies through all sign-in r
 
 ## Filter sign-in activities
 
-First, narrow down the reported data to a level that works for you. Second, filter sign-in data using date field as default filter. Azure AD provides you with a broad range of other filters you can set:
+First, narrow down the reported data to a level that works for you. Second, filter sign-in data using date field as default filter. Microsoft Entra ID provides you with a broad range of other filters you can set:
 
 :::image type="content" source="../media/add-filters-option-0a1d05e1.png" alt-text="Screenshot of the Add filters option. Use the filters to sort through large amounts of data.":::
 
@@ -149,13 +149,13 @@ Select the **Download** option to create a CSV or JSON file of the most recent 2
 
 
 > [!IMPORTANT]
-> The number of records you can download is constrained by the [Azure AD report retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
+> The number of records you can download is constrained by the [Microsoft Entra ID report retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ## Sign-ins data shortcuts
 
-Azure AD and the Azure portal both provide you with additional entry points to sign-in data:
+Microsoft Entra ID and the Azure portal both provide you with additional entry points to sign-in data:
 
- -  Identity Protection, found in Azure AD - Security - Identity Protection
+ -  Identity Protection, found in Microsoft Entra ID - Security - Identity Protection
  -  Users
  -  Groups
  -  Enterprise applications
@@ -191,7 +191,7 @@ When the admin selects an item, you get more details about the sign-in operation
  -  Sign-in status
     
     > [!NOTE]
-    > IP addresses are issued in such a way that there is no definitive connection between an IP address and where the computer with that address is physically located. Mapping IP addresses is complicated by the fact that mobile providers and VPNs issue IP addresses from central pools that are often very far from where the client device is actually used. Currently in Azure AD reports, converting an IP address to a physical location is a best effort based on traces, registry data, reverse look-ups, and other information.
+    > IP addresses are issued in such a way that there is no definitive connection between an IP address and where the computer with that address is physically located. Mapping IP addresses is complicated by the fact that mobile providers and VPNs issue IP addresses from central pools that are often very far from where the client device is actually used. Currently in Microsoft Entra reports, converting an IP address to a physical location is a best effort based on traces, registry data, reverse look-ups, and other information.
 
 On the **Users** page, you get a complete overview of all user sign-ins by selecting **Sign-ins** in the **Activity** section.
 
@@ -227,6 +227,6 @@ The **Sign-ins** option gives you a complete overview of all sign-in events to y
 
 ## Microsoft 365 activity logs
 
-You can view Microsoft 365 activity logs from the Microsoft 365 admin center. Microsoft 365 activity and Azure AD activity logs share a significant number of the directory resources. Only the Microsoft 365 admin center provides a full view of the Microsoft 365 activity logs.
+You can view Microsoft 365 activity logs from the Microsoft 365 admin center. Microsoft 365 activity and Microsoft Entra activity logs share a significant number of the directory resources. Only the Microsoft 365 admin center provides a full view of the Microsoft 365 activity logs.
 
 You can also access the Microsoft 365 activity logs programmatically by using the Office 365 Management APIs.

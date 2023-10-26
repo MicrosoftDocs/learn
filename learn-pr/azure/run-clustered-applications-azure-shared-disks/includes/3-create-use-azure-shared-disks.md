@@ -133,7 +133,7 @@ Failover clusters depend on infrastructure services. Windows Server supports mul
 | Element | Description |
 | --- | --- |
 | DNS | The servers in the cluster use Domain Name System (DNS) for name resolution. Use a custom DNS role installed in an Azure VM. |
-| Active Directory | A SQL Server failover cluster instance (FCI) requires that both VMs are members of Azure Active Directory Domain Services (Azure AD DS). |
+| Active Directory | A SQL Server failover cluster instance (FCI) requires that both VMs are members of Microsoft Entra Domain Services (Microsoft Entra Domain Services). |
 | An administrative account | An account that has administrative privileges on all of the cluster's servers. |
 | | |
 

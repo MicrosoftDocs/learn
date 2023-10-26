@@ -46,6 +46,8 @@ FSLogix addresses many profile container challenges. Key among them are:
 
 Microsoft has started replacing existing user profile solutions, like UPD, with FSLogix profile containers.
 
-## Azure Files integration with Azure Active Directory Domain Service
+<a name='azure-files-integration-with-azure-active-directory-domain-service'></a>
 
-Microsoft Azure Files recently announced the general availability of [Azure Files authentication with Azure Active Directory Domain Service (AD DS)](/azure/storage/files/storage-files-active-directory-overview).
+## Azure Files integration with Microsoft Entra Domain Service
+
+Microsoft Azure Files recently announced the general availability of [Azure Files authentication with Microsoft Entra Domain Service (AD DS)](/azure/storage/files/storage-files-active-directory-overview).

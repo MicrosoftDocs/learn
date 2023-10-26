@@ -1,6 +1,3 @@
-
-
-
 Typically, a method is created to perform a specific task. In this exercise, you'll create a method that generates and displays five random numbers. Let's get started!
 
 ## Prepare your coding environment

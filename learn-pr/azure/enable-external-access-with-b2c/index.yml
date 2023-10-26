@@ -16,7 +16,7 @@ abstract: |
   - Learn how to secure access to an application with Azure AD B2C.
   - Learn how to enable multi-factor authentication for Azure AD B2C.
 prerequisites: | 
-  - Basic understanding of Azure AD
+  - Basic understanding of Microsoft Entra ID
 iconUrl: /training/achievements/enable-external-access-with-b2c.svg
 levels:
 - beginner
@@ -24,7 +24,7 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-active-directory
+- entra-id
 subjects:
 - identity-access
 units:

@@ -1,4 +1,4 @@
-﻿This exercise provides an overview of setting up an Azure Cosmos DB account and database. 
+This exercise provides an overview of setting up an Azure Cosmos DB account and database. 
 
 In this exercise, you'll:
 
@@ -10,7 +10,7 @@ In this exercise, you'll:
 To perform this exercise, you need:
 
 - An Azure subscription
-- A Microsoft account or an Azure Active Directory (Azure AD) account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 
 ## Create an Azure Cosmos DB account
 

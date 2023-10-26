@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-azure-kubernetes-service-cluster.integrate-azure-active-directory-cluster
+title: Integrate Azure Active Directory for the cluster
+metadata:
+  title: Integrate Azure Active Directory for the cluster
+  description: "Integrate Azure Active Directory for the cluster"
+  ms.date: 10/25/2023
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-integrate-azure-active-directory-cluster.md)]
