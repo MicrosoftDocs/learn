@@ -24,7 +24,7 @@ void TellFortune()
 }
 ```
 
-This code is just "*one possible solution*" because you may have added line feeds in different spots or you may have formatted the code differently.
+This code is just "*one possible solution*" because you might have added line feeds in different spots or you might have formatted the code differently.
 
 Regardless of minor code differences, when you run the code, you should see two of the following output messages:
 
