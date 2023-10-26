@@ -9,7 +9,7 @@ This article provides guidelines for managing emergency access accounts in Micro
 An organization might need to use an emergency access account in the following situations:
 
  -  The user accounts are federated, and federation is currently unavailable because of a cell-network break or an identity-provider outage. For example, if the identity provider host in your environment has gone down, users might be unable to sign in when Microsoft Entra ID redirects to their identity provider.
- -  The administrators are registered through Microsoft Entra multifactor authentication. All their individual devices are unavailable or the service is unavailable. Users might be unable to complete multifactor authentication to activate a role. For example, a cell network outage is preventing them from answering phone calls or receiving text messages. Especially when these authentication-methods are the only two authentication mechanisms that they registered.
+ -  The administrators are registered through Microsoft Entra Multifactor Authentication. All their individual devices are unavailable or the service is unavailable. Users might be unable to complete multifactor authentication to activate a role. For example, a cell network outage is preventing them from answering phone calls or receiving text messages. Especially when these authentication-methods are the only two authentication mechanisms that they registered.
  -  The person with the most recent Global Administrator access has left the organization. Microsoft Entra ID prevents the last Global Administrator account from being deleted, but it doesn't prevent the account from being deleted or disabled on-premises. Either situation might make the organization unable to recover the account.
  -  Unforeseen circumstances such as a natural disaster emergency, during which a mobile phone or other networks might be unavailable.
 
@@ -20,11 +20,9 @@ Create two or more emergency access accounts. These accounts should be cloud-onl
 When and admin configures emergency accounts, the following requirements must be met:
 
  -  The emergency access accounts shouldn't be associated with any individual user in the organization. Make sure that your accounts aren't connected with any employee-supplied mobile phones, hardware tokens that travel with individual employees, or other employee-specific credentials. This precaution covers instances where an individual employee is unreachable when the credential is needed. Any registered devices need to be kept in known, secure location. These locations need multiple means of communicating with Microsoft Entra ID.
- -  The authentication mechanism used for an emergency access account should be distinct. Keep it separate from that used by your other administrative accounts, including other emergency-access accounts. For example, if your normal administrator sign-in is via on-premises MFA, then Microsoft Entra multifactor authentication would be a different mechanism. However, if Microsoft Entra multifactor authentication is your primary part of authentication for your administrative accounts, then consider a different approach for emergency-accounts. Try things such as using Conditional Access with a third-party MFA provider via Custom controls.
+ -  The authentication mechanism used for an emergency access account should be distinct. Keep it separate from that used by your other administrative accounts, including other emergency-access accounts. For example, if your normal administrator sign-in is via on-premises MFA, then multifactor authentication would be a different mechanism. However, if multifactor authentication is your primary part of authentication for your administrative accounts, then consider a different approach for emergency-accounts. Try things such as using Conditional Access with a third-party MFA provider via Custom controls.
  -  The device or credential must not expire or be in scope of automated cleanup due to lack of use.
  -  You should make the Global Administrator role assignment permanent for your emergency access accounts.
-
-<a name='exclude-at-least-one-account-from-phone-based-multi-factor-authentication'></a>
 
 ### Exclude at least one account from phone-based multifactor authentication
 
