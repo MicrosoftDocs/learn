@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/01/2022
   author: wwlpublish
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
-  ms.service: powerbi
+  ms.topic: learning-path
 title: Implement and manage an analytics environment
 prerequisites: |
   Familiarity with Power BI and governance practices in a BI environment.
