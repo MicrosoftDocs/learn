@@ -33,14 +33,19 @@ When Node.js was originally released, asynchronous programming was handled by us
 
 ```javascript
 // callback asynchrounous example
+
 const fs = require('fs');
+const filePath = './file.txt';
 
 // request to read a file
-fs.readFile('/path/to/file',(err, data) => {
-    if (err) throw err;
-    console.log(data);
+fs.readFile(filePath, 'utf8', (error, data) => {
+    if (error) {
+        console.log('An error occurred...: ', error);
+    } else {
+        console.log(data);
+        console.log('Done!');
+    }
 });
-console.log(`done`)
 ```
 
 Because the execution continues while the file is being read, the `console.log('done')` statement is executed before the file is read.
@@ -55,13 +60,17 @@ The same example using promises looks like this:
 // promises asynchronous example
 
 const fs = require('fs').promises;
+const filePath = './file.txt';
 
 // request to read a file
-fs.readFile('/path/to/file')
-    .then(data => console.log(data))
-    .catch(err => console.log(err));
-
-console.log(`done`)
+fs.readFile(filePath, 'utf8')
+    .then((data) => {
+        console.log(data);
+        console.log('Done!');
+    })
+    .catch((error) => {
+        console.log('An error occurred...: ', error);
+    });
 ```
 
 The `then` method is called when the promise is fulfilled and the `catch` method is called when the promise is rejected.
@@ -78,18 +87,20 @@ The same example using async/await looks like this:
 // async/await asynchronous example
 
 const fs = require('fs').promises;
+const filePath = './file.txt';
 
-// request to read a file
-async function readFile() {
+async function readFileAsync() {
     try {
-        const data = await fs.readFile('/path/to/file');
+        // request to read a file
+        const data = await fs.readFile(filePath, 'utf8');
         console.log(data);
-    } catch (err) {
-        console.log(err);
+        console.log('Done!');
+    } catch (error) {
+        console.log('An error occurred...: ', error);
     }
 }
 
-readFile();
+readFileAsync();
 ```
 
 ## Synchronous APIs
@@ -100,10 +111,16 @@ Node.js also has a set of synchronous APIs. These APIs block the execution of th
 // synchronous example
 
 const fs = require('fs');
+const filePath = './file.txt';
 
-// request to read a file
-const data = fs.readFileSync('/path/to/file');
-console.log(data);
+try {
+    // request to read a file
+    const data = fs.readFileSync(filePath, 'utf8');
+    console.log(data);
+    console.log('Done!');
+} catch (error) {
+    console.log('An error occurred...: ', error);
+}
 ```
 
 The naming convention of JavaScript, as an asynchronous-first language, is that synchronous APIs end with `Sync`. For example, the asynchronous `readFile` API has a synchronous counterpart named `readFileSync`. It's important to uphold this standard in your own projects so your code is easy to read and understand.

@@ -33,7 +33,39 @@ You can build the following types of applications by using Node.js:
 
 :::image type="icon" source="../media/npm.png" alt-text="Image that shows the Node J S and N P M registry logos." border="false":::
 
-The Node.js environment also offers an npm registry that you can use to find Open source Node.js packages to use, or share your own Node.js library.
+
+## Package management
+
+The Node.js environment also offers an npm registry that you can use to find Open source Node.js packages to use, or share your own Node.js library. While this is the primary package manager, it isn't the only one. Others include Yarn and pnpm.
+
+With npm, you can install and execute packages immediately, which is helpful for command line interfaces (CLI): 
+
+```
+npx cowsay "Hello World" --yes
+```
+
+```console
+ _____________
+< Hello World >
+ -------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     |
+``
+
+## Node.js version management
+
+As Node.js versions continue to move forward and offer new features, and you begin to use those features either in our code or in packages in include, managing the Node.js version across packages will become important. Not all packages update to the lastest features so you will need to determine how to manage Node.js versions across your projects within the same computer. A few strategies include: 
+
+* nvm
+* n
+* nodenv
+* Volta
+
+
+## Internet of Things (IoT)
 
 Node.js is fast, high-performing, and able to handle real-time applications and heavy data flows. An example use case might be building a device that can send control commands to your standing desk. You could install Node.js on your IoT board, or use a device that comes with Node.js preinstalled. You'd then write your application logic in JavaScript and deploy it on the device.
 
