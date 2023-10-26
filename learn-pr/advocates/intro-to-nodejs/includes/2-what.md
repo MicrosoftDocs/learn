@@ -36,7 +36,7 @@ You can build the following types of applications by using Node.js:
 
 ## Package management
 
-The Node.js environment also offers an npm registry that you can use to find Open source Node.js packages to use, or share your own Node.js library. While this is the primary package manager, it isn't the only one. Others include Yarn and pnpm.
+The Node.js environment also offers an **npm registry** that you can use to find Open source Node.js packages to use or share your own Node.js library. While this is the primary package manager, it isn't the only one. Others include Yarn and pnpm.
 
 With npm, you can install and execute packages immediately, which is helpful for command line interfaces (CLI): 
 
