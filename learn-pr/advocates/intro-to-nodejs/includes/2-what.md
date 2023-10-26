@@ -53,7 +53,7 @@ npx cowsay "Hello World" --yes
             (__)\       )\/\
                 ||----w |
                 ||     |
-``
+``````
 
 ## Node.js version management
 
