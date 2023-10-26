@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-generative-ai.exercise
-title: Exercise - Use Bing Copilot to generate content
+title: Exercise - Explore generative AI with Bing Copilot
 metadata:
-  title: Exercise - Use Bing Copilot to generate content
+  title: Exercise - Explore generative AI with Bing Copilot
   description: "Use this exercise to test out generative AI prompts in Bing copilot."
   ms.date: 6/27/2023
   author: sherzyang

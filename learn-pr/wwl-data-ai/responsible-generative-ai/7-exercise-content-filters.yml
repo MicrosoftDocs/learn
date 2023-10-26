@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.responsible-generative-ai.exercise-content-filters
-title: Exercise - Explore content filters in Azure OpenAI Service
+title: Exercise - Explore content filters in Azure OpenAI
 metadata:
-  title: Exercise - Explore content filters in Azure OpenAI Service
+  title: Exercise - Explore content filters in Azure OpenAI
   description: "Hands-on exercise to explore content filters in Azure OpenAI."
   ms.date: 7/13/2023
   author: graememalcolm
