@@ -8,7 +8,7 @@ metadata:
   ms.manager: markl
   ms.date: 07/14/2022
   ms.prod: aspnet-core
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Implement feature flags in a cloud-native ASP.NET Core microservices app
 summary: Implement a feature flag in your cloud-native ASP.NET Core microservices app to enable or disable a feature in real time.
 abstract: |
