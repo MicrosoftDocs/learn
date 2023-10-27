@@ -1,4 +1,4 @@
-In this unit we’ll review the following:
+In this unit, we review the following learning objectives:
 
 -	Brief overview of the GitHub Enterprise Platform
 -	How to create a repository
@@ -10,7 +10,7 @@ In this unit we’ll review the following:
 ## GitHub
  
 
-:::image type="content" source="../media/2-gitHub-enterprise-Platform.png alt-text="The GitHub Platform with layers from top to bottom: AI, Collaboration, Productivity, Security, and Scale." border="false":::
+:::image type="content" source="../media/2-gitHub-enterprise-Platform.png" alt-text="The GitHub Platform with layers from top to bottom: AI, Collaboration, Productivity, Security, and Scale." border="false":::
 
 **GitHub** is a cloud-based platform that uses Git, a distributed version control system, at its core. The GitHub platform simplifies the process of collaborating on projects and provides a website, command-line tools, and overall flow that allows developers and users to work together.
 
@@ -20,7 +20,7 @@ As we learned earlier GitHub provides an AI powered developer platform to build,
 
 Generative AI is dramatically transforming software development as we speak. 
 
-The GitHub Enterprise platform will be upleveling collaboration through AI-powered pull requests and issues, productivity through Copilot, and security by automating security checks faster.
+The GitHub Enterprise platform is upleveling collaboration through AI-powered pull requests and issues, productivity through Copilot, and security by automating security checks faster.
 
 ### Collaboration
 
