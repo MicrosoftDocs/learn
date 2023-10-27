@@ -112,6 +112,7 @@ Each category must have a unique name and emoji pairing, and can be accompanied 
 
 5.	Under "Discussion title", type a title for your discussion, and under "Write", type the body of your discussion.
 
+   :::image type="content" source="../media/start-a-new-discussion.png alt-text="Start a new discussion page with the Discussion title box and content box empty." border="false":::
 (Alt Text of Image: Start a new discussion page with the Discussion title box and content box empty. )
 
 6.	Click Start discussion.
