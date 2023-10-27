@@ -23,9 +23,8 @@ As you might have noticed in the previous unit, adding in a new file into the re
 Let’s briefly review what commits are. 
 
 A **commit** is a change to one or more files on a branch. Every time a commit is created, it's assigned a unique ID and tracked, along with the time and contributor. This provides a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
-
  
-(Alt Text of Image: A list of commits made to the main branch with their unique ID and verification.)
+:::image type="content" source="../media/2-commits.png" alt-text="A list of GitHub commits to a main branch." border="false":::
 
 Within a git repository, a file can exist in several vaid states as it goes through the version control process:
 
@@ -60,9 +59,7 @@ Now that we are aware of all the ingredients, let’s review the GitHub flow.
 
 ## The GitHub flow
 
-
- 
-(Alt Text of Image: A visual representation of the GitHub Flow that includes a new branch, commits, pull request, and merging the changes back to main.) 
+:::image type="content" source="../media/2-branching.png" alt-text=" A visual representation of the GitHub Flow that includes a new branch, commits, pull request, and merging the changes back to main." border="false":::
 
 Like the GitHub platform itself, the GitHub flow can be defined as a lightweight workflow that allows for safe experimentation with new ideas and collaboration on projects through branching, pull requests, and merging. 
 
