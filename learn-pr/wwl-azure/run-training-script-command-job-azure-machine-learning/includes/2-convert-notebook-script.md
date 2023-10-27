@@ -1,5 +1,3 @@
-
-
 When you've used notebooks for experimentation and development, you'll first need to convert a notebook to a script. Alternatively, you may choose to skip using notebooks and work only with scripts. Either way, there are some recommendations when creating scripts to have production-ready code.
 
 Scripts are ideal for testing and automation in your production environment. To create a production-ready script, you'll need to:
