@@ -10,7 +10,7 @@ In this unit we’ll review the following:
 ## GitHub
  
 
-:::image type="content" source="..learn-pr/github/introduction-to-github/media/2-gitHub-enterprise-Platform .png alt-text="The GitHub Platform with layers from top to bottom: AI, Collaboration, Productivity, Security, and Scale." border="false":::
+:::image type="content" source="../media/2-gitHub-enterprise-Platform.png alt-text="The GitHub Platform with layers from top to bottom: AI, Collaboration, Productivity, Security, and Scale." border="false":::
 
 **GitHub** is a cloud-based platform that uses Git, a distributed version control system, at its core. The GitHub platform simplifies the process of collaborating on projects and provides a website, command-line tools, and overall flow that allows developers and users to work together.
 
@@ -72,7 +72,7 @@ Let’s tackle creating a repository from github.com.
 1.	In the upper-right corner of any page, use the  drop-down menu, and select New repository.
 
  
-:::image type="content" source="..learn-pr/github/introduction-to-github/media/2-new-repo-option.png alt-text="The drop down menu of the plus sign in the top right corner of GitHub.com, with the first option being New repository." border="false":::
+:::image type="content" source="../media/2-new-repo-option.png" alt-text="The drop down menu of the plus sign in the top right corner of GitHub.com, with the first option being New repository." border="false":::
 
 
 2.	Use the Owner dropdown menu to select the account you want to own the repository.
@@ -106,24 +106,24 @@ But before we begin, it is worth knowing in order to add a file to a repository 
 3.	Above the list of files, select the Add file ᐁ dropdown menu, then click ᐩ Create new file. Alternatively, you can click ᐩ in the file tree view on the left.
 
  
-:::image type="content" source="..learn-pr/github/introduction-to-github/media/2-add-file-options.png alt-text="The two options of adding a file to your new repository highlighted in red. One option is the plus sign in the left hand navigation bar, the second option is the add file button towards the right of the screen." border="false":::
+:::image type="content" source="../media/2-add-file-options.png" alt-text="The two options of adding a file to your new repository highlighted in red. One option is the plus sign in the left hand navigation bar, the second option is the add file button towards the right of the screen." border="false":::
 
 
 4.	In the file name field, type the name and extension for the file. To create subdirectories, type the / directory separator.
 5.	In the file contents text box, type content for the file.
 6.	To review the new content, above the file contents, click Preview.
 
-:::image type="content" source="..learn-pr/github/introduction-to-github/media/2-preview-option-in-a-file.png alt-text="The image of a yml file with the preview button highlighted in the top left." border="false":::
+:::image type="content" source="../media/2-preview-option-in-a-file.png" alt-text="The image of a yml file with the preview button highlighted in the top left." border="false":::
  
 7.	Click Commit changes...
 8.	In the "Commit message" field, type a short, meaningful commit message that describes the change you made to the file. You can attribute the commit to more than one author in the commit message.
-9.	If you have more than one email address associated with your account on GitHub.com, click the email address drop-down menu and select the email address to use as the Git author email address. Only verified email addresses appear in this drop-down menu. If you enabled email address privacy, then <username>@users.noreply.github.com is the default commit author email address.
+9.	If you have more than one email address associated with your account on GitHub.com, click the email address drop-down menu and select the email address to use as the Git author email address. Only verified email addresses appear in this drop-down menu. If you enabled email address privacy, then [username]@users.noreply.github.com is the default commit author email address.
 
-:::image type="content" source="..learn-pr/github/introduction-to-github/media/2-commit-description-box.png alt-text="An image of a commit change with a description box and the drop down menu of the email to select as the author of the commit." border="false":::
+:::image type="content" source="../media/2-commit-description-box.png" alt-text="An image of a commit change with a description box and the drop down menu of the email to select as the author of the commit." border="false":::
 
 10.	Below the commit message fields, decide whether to add your commit to the current branch or to a new branch. If your current branch is the default branch, you should choose to create a new branch for your commit and then create a pull request.
 
- :::image type="content" source="..learn-pr/github/introduction-to-github/media/2-create-a-new-branch.png alt-text="Create a new branch from a commit option select with the textbox of the new branch below it." border="false":::
+ :::image type="content" source="../media/2-create-a-new-branch.png" alt-text="Create a new branch from a commit option select with the textbox of the new branch below it." border="false":::
 
 11.	Click Commit changes or Propose changes.
 
