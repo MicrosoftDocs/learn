@@ -118,13 +118,12 @@ But before we begin, it is worth knowing in order to add a file to a repository 
 7.	Click Commit changes...
 8.	In the "Commit message" field, type a short, meaningful commit message that describes the change you made to the file. You can attribute the commit to more than one author in the commit message.
 9.	If you have more than one email address associated with your account on GitHub.com, click the email address drop-down menu and select the email address to use as the Git author email address. Only verified email addresses appear in this drop-down menu. If you enabled email address privacy, then <username>@users.noreply.github.com is the default commit author email address.
- 
-(Alt Text of Image: An image of a commit change with a description box and the drop down menu of the email to select as the author of the commit.)
+
+:::image type="content" source="..learn-pr/github/introduction-to-github/media/2-commit-description-box.png alt-text="An image of a commit change with a description box and the drop down menu of the email to select as the author of the commit." border="false":::
 
 10.	Below the commit message fields, decide whether to add your commit to the current branch or to a new branch. If your current branch is the default branch, you should choose to create a new branch for your commit and then create a pull request.
 
- 
-(Alt Text of Image: Create a new branch from a commit option select with the textbox of the new branch below it.)
+ :::image type="content" source="..learn-pr/github/introduction-to-github/media/2-create-a-new-branch.png alt-text="Create a new branch from a commit option select with the textbox of the new branch below it." border="false":::
 
 11.	Click Commit changes or Propose changes.
 
