@@ -2,12 +2,12 @@ In this module, you learned how to manage changes to your repository source by u
 
 You learned about:
 
-- Creating a pull request
-- Commenting on pull requests
-- Leaving reviews on pull requests
-- Knowing what's expected when reviewing pull requests
-- Requesting pull request reviews
-- Accepting changes introduced by a pull request review
+- Review branches and their importance to pull requests 
+- Define what a pull request is
+- Learn how to create a pull request
+- Understand the different pull request statuses
+- Walk through how to merge a pull request to a base branch
+
 
 Now that you're familiar with merging commits using pull requests, learn to [Settle competing commits by using merge conflict resolution on GitHub](/training/modules/resolve-merge-conflicts-github/).
 
