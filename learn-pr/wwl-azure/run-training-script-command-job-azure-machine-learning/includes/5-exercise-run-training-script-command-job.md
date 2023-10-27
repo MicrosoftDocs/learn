@@ -1,6 +1,6 @@
 Now, it's your chance to run a script as a command job in Azure Machine Learning.
 
-In this exercise, you learn how to:
+In this exercise, you will:
 
 - Convert a notebook to a script.
 - Test the script in the terminal.
@@ -9,6 +9,7 @@ In this exercise, you learn how to:
 
 ## Instructions
 
-Launch the exercise and follow the instructions.
+Follow these instructions to complete the exercise:
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/08-Script-command-job.html?azure-portal=true)
+1. View the exercise repo at [https://microsoftlearning.github.io/mslearn-azure-ml/](https://microsoftlearning.github.io/mslearn-azure-ml?azure-portal=true).
+1. Complete the **Run a training script as a command job in Azure Machine Learning** exercise.
