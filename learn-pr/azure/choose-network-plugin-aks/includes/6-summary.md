@@ -9,9 +9,9 @@ You learned how to describe the benefits and usage of:
 
 To learn more about the Azure Kubernetes Service, Kubenet, and Azure CNI, visit the following sites and articles:
 
-* [AKS Cluster Arfchitecture](/training/paths/aks-cluster-architecture)
+* [AKS Cluster Architecture](/training/paths/aks-cluster-architecture)
 * [Azure CNI Module](/training/modules/aks-network-design-azure-container-network-interface/?source=recommendations)
 * [Configure Kubenet](/azure/aks/configure-kubenet)
 * [Configure Azure CNI](/azure/aks/configure-azure-cni)
-* [configure-azure-cni-dynamic-ip-allocation](/azure/aks/configure-azure-cni-dynamic-ip-allocation)
+* [Configure Dynamic IP Allocation](/azure/aks/configure-azure-cni-dynamic-ip-allocation)
 * [Custom Network Plugin](/azure/aks/use-byo-cni)
