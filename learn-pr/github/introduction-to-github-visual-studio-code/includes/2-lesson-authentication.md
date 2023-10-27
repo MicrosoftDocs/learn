@@ -1,4 +1,4 @@
-There are a variety of ways that you might use GitHub with a project. Sometimes, you might clone a project to get a copy of it so that you can work on it locally. In other cases, you might start working on project locally and then decide to put it on GitHub so that you can share your work with others.
+There are a variety of ways that you might use GitHub with a project. Sometimes, you might clone a project to get a copy of it so that you can work on it locally. In other cases, you might start working on a project locally and then decide to put it on GitHub so that you can share your work with others.
 
 Before you can do anything with GitHub, you have to authenticate to GitHub. Normally, authentication can be a tedious, multi-step process that involves generating and working with SSH keys. One benefit of using Visual Studio Code to work with GitHub is that it handles all of the authentication setup for you.
 
