@@ -8,11 +8,11 @@ Organizations have to consider permissions management as a central piece of thei
 
 ### Key use cases for Microsoft Entra Permissions Management
 
-| **Use case** | **Description**                                                                                                                             |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| Discover     | Customers can assess permission risks by evaluating the gap between permissions granted and permissions used.                               |
-| Remediate    | Customers can right-size permissions based on usage, grant new permissions on-demand, and automate just-in-time access for cloud resources. |
-| Monitor      | Customers can detect anomalous activities with machine language-powered (ML-powered) alerts and generate detailed forensic reports.         |
+| **Use case** | **Description**                                                                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Discover     | Customers can assess permission risks by evaluating gaps between permissions granted and permissions used.                                       |
+| Remediate    | Customers can right-size permissions based on usage, then grant new permissions on-demand, and automate just-in-time access for cloud resources. |
+| Monitor      | Customers can detect anomalous activities with machine language-powered (ML-powered) alerts and generate detailed forensic reports.              |
 
 ### Process flow
 
