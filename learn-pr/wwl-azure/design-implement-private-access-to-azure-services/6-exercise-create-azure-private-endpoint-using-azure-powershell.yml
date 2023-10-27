@@ -4,15 +4,12 @@ title: 'Exercise: Create an Azure private endpoint using Azure PowerShell'
 metadata:
   title: 'Exercise: Create an Azure private endpoint using Azure PowerShell'
   description: "Exercise: Create an Azure private endpoint using Azure PowerShell"
-  ms.date: 04/27/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.custom:
-    - devx-track-azurepowershell
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/6-exercise-create-azure-private-endpoint-using-azure-powershell.md)]

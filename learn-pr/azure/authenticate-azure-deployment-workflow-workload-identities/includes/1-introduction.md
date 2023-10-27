@@ -15,4 +15,4 @@ In this module, you'll learn how to create workload identities. You'll also lear
 
 ## What is the main goal?
 
-By the end of this module, you'll have an understanding of workload identities and how they relate to other Azure and Azure Active Directory (Azure AD) security concepts. You'll be able to create an Azure AD application registration and manage its federated credentials. You'll also be able to determine the best authorization policy to use for your workflow's identity, and configure the appropriate role assignments in Azure.
+By the end of this module, you'll have an understanding of workload identities and how they relate to other Azure and Microsoft Entra security concepts. You'll be able to create a Microsoft Entra application registration and manage its federated credentials. You'll also be able to determine the best authorization policy to use for your workflow's identity, and configure the appropriate role assignments in Azure.

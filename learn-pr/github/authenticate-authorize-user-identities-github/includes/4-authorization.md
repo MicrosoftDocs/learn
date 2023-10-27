@@ -31,7 +31,7 @@ SCIM and SAML SSO also have security benefits. The first time a member uses SAML
 
 To use SAML single sign-on and SCIM, you must connect your identity provider to your GitHub organization. When you enable SAML SSO for your GitHub organization, you connect your identity provider to your organization. Keep in mind that not all SAML identity providers are currently supported by GitHub for SCIM. Following is a list of the GitHub supported identity providers for SCIM:
 
-- Azure AD
+- Microsoft Entra ID
 - Okta
 - OneLogin
 

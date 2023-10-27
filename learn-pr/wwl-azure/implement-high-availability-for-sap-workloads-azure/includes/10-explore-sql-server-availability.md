@@ -40,7 +40,7 @@ Detailed documentation on deploying Always On with SQL Server in Azure VMs is av
 - [Configure a load balancer &amp; availability group listener (SQL Server on Azure VMs)](/azure/azure-sql/virtual-machines/windows/availability-group-load-balancer-portal-configure?view=azuresql)
 
 > [!NOTE]
-> If you are configuring the Azure load balancer for the virtual IP address of the Availability Group listener, make sure that the DirectServerReturn is configured. Configuring the DirectServerReturn option will reduce the network round trip latency between the SAP application layer and the DBMS layer.
+> If you're configuring the Azure load balancer for the virtual IP address of the Availability Group listener, make sure that the DirectServerReturn is configured. Configuring the DirectServerReturn option will reduce the network round trip latency between the SAP application layer and the DBMS layer.
 
 SQL Server Always On is the most commonly used high availability and disaster recovery functionality in Azure for Windows-based SAP deployments. Most customers use Always On for high availability within a single Azure region. If the deployment is restricted to two nodes only, you have two choices for connectivity:
 

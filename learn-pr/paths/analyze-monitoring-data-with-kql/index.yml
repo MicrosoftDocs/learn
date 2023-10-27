@@ -30,7 +30,7 @@ products:
 - azure-log-analytics
 - azure-monitor
 - azure-portal
-- azure-sentinel
+- microsoft-sentinel
 - microsoft-defender
 subjects:
 - cloud-computing

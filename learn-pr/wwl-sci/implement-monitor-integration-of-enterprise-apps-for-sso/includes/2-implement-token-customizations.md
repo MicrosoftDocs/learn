@@ -1,4 +1,4 @@
-You can specify the lifetime of a token issued by Microsoft identity platform. Additionally, you can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization. In Azure Active Directory (Azure AD), part of Entra, a policy object represents a set of rules that are enforced on individual applications or on all applications in an organization. Each policy type has a unique structure, with a set of properties that are applied to objects to which they're assigned.
+You can specify the lifetime of a token issued by Microsoft identity platform. Additionally, you can set token lifetimes for all apps in your organization, for a multitenant (multiple organizations) application, or for a specific service principal in your organization. In Microsoft Entra ID, a policy object represents a set of rules that are enforced on individual applications or on all applications in an organization. Each policy type has a unique structure, with a set of properties that are applied to objects to which they're assigned.
 
 You can designate a policy as the default policy for your organization. The policy is applied to any application in the organization, as long as it isn't overridden by a policy with a higher priority. You also can assign a policy to specific applications. The order of priority varies by policy type.
 
@@ -15,18 +15,18 @@ Conditional Access controls allow you to create policies that target specific us
 
 For more information see the link in the resources at the end of this module.
 
-## Customize Tokens for Azure AD
+## Customize Tokens for Microsoft Entra ID
 
 | **Access and ID token lifetime**                        | **Refresh token lifetime (days)**                                                              | **Refresh token sliding windows lifetime** | **Lifetime length (days)**                                      |
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------------- |
 | The lifetime of the OAuth 2.0 bearer token and ID token | The maximum time period before which a refresh token can be used to acquire a new access token | The refresh token sliding window type      | After time period elapses, the user is forced to reauthenticate |
 
-:::image type="content" source="../media/token-customize-timeline-4817b4d6.png" alt-text="Diamgram of the Refresh token lifetime - token is valid for a specified amount of time and the access token must be refreshed before it expires.":::
+:::image type="content" source="../media/token-customize-timeline-4817b4d6.png" alt-text="Diagram of the Refresh token lifetime - token is valid for a specified amount of time and the access token must be refreshed before it expires.":::
 
 
 ## Configure optional claims as part of your token
 
-Application developers can use optional claims in their Azure AD applications to specify which claims they want in tokens sent to their application.
+Application developers can use optional claims in their Microsoft Entra ID applications to specify which claims they want in tokens sent to their application.
 
 You can use optional claims to:
 

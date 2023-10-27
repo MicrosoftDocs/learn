@@ -23,7 +23,7 @@ To learn more about securing and hardening your Azure DevOps and GitHub environm
 - Manage users, groups, and permissions:
   - [Conditional Access](/azure/active-directory/conditional-access/overview)
   - [Multifactor authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
-  - [Azure AD SSO integration with a GitHub Enterprise Cloud organization](/azure/active-directory/saas-apps/github-tutorial)
+  - [Microsoft Entra SSO integration with a GitHub Enterprise Cloud organization](/azure/active-directory/saas-apps/github-tutorial)
 - Protect important code branches:
   - [Azure Repos branch policies](/azure/devops/repos/git/branch-policies)
   - [Protected branches in GitHub](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches)
@@ -45,8 +45,8 @@ To learn more about securing and hardening your Azure DevOps and GitHub environm
 
 Azure security and governance include many elements. The following links provide more information about the subjects introduced in this module:
 
-- [Break-glass accounts in Azure AD](/azure/active-directory/roles/security-emergency-access)
-- Azure AD Privileged Identity Management
+- [Break-glass accounts in Microsoft Entra ID](/azure/active-directory/roles/security-emergency-access)
+- Microsoft Entra Privileged Identity Management
   - [What is Privileged Identity Management and why use it?](https://medium.com/@olafwrieden/what-is-privileged-identity-management-and-why-use-it-7f383b3b797a) (blog)
   - [Privileged Identity Management documentation](/azure/active-directory/privileged-identity-management/pim-configure)
 - [Microsoft Sentinel](/azure/sentinel/overview)

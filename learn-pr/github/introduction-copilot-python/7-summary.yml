@@ -5,11 +5,13 @@ title: |
 metadata:
   title: |
     summary
+
   description: "Review what you've learned."
   ms.date: 8/23/2023
   author: bethanyjep
   ms.author: bethanycheum
   ms.topic: interactive-tutorial
+  ms.custom: devx-track-python
   ms.prod: github
 durationInMinutes: 1
 content: |

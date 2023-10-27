@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-deployment-pipeline-github-actions.3-design-the-pipeline
 metadata:
-  title: Design the deployment pipeline
+  title: Design the Deployment Pipeline
   description: Get an overview of deployment pipelines and plan to build one.
   ms.date: 10/08/2020
   author: nickomang

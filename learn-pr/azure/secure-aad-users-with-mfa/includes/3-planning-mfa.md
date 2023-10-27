@@ -1,12 +1,14 @@
-Before starting a deployment of Azure AD Multi-Factor Authentication, there are several things you should decide.
+Before starting a deployment of Microsoft Entra multifactor authentication, there are several things you should decide.
 
 First, consider rolling out MFA in waves. Start with a small group of pilot users to evaluate the complexity of your environment and identify any setup issues or unsupported apps or devices. Then, broaden that group over time and evaluate the results with each pass until your entire company is enrolled.
 
-Next, make sure to create a full communication plan. Azure AD MFA has several user-interaction requirements, including a registration process. Keep users informed every step of the way and let them know what they're required to do, important dates, and how to get answers to questions if they have trouble. Microsoft provides [communication templates](https://www.microsoft.com/download/details.aspx?id=57600&WT.mc_id=rss_alldownloads_all), including posters and email templates, to help draft your communications.
+Next, make sure to create a full communication plan. Microsoft Entra multifactor authentication has several user-interaction requirements, including a registration process. Keep users informed every step of the way and let them know what they're required to do, important dates, and how to get answers to questions if they have trouble. Microsoft provides [communication templates](https://www.microsoft.com/download/details.aspx?id=57600&WT.mc_id=rss_alldownloads_all), including posters and email templates, to help draft your communications.
 
-## Azure AD MFA policies
+<a name='azure-ad-mfa-policies'></a>
 
-Azure AD Multi-factor Authentication is enforced with **Conditional Access** policies. Conditional Access policies are `IF-THEN` statements. **IF** a user wants to access a resource, **THEN** they must complete an action. For example, a payroll manager wants to access the payroll application and is required to perform multi-factor authentication to access it. Other common access requests that might require MFA include:
+## Microsoft Entra multifactor authentication policies
+
+Microsoft Entra multifactor authentication is enforced with **Conditional Access** policies. Conditional Access policies are `IF-THEN` statements. **IF** a user wants to access a resource, **THEN** they must complete an action. For example, a payroll manager wants to access the payroll application and is required to perform multifactor authentication to access it. Other common access requests that might require MFA include:
 
 - IF a specific cloud application is accessed
 - IF a user is accessing a specific network
@@ -15,7 +17,7 @@ Azure AD Multi-factor Authentication is enforced with **Conditional Access** pol
 
 ## Deciding supported authentication methods
 
-When you turn on Azure AD MFA, you can choose the authentication methods you want to make available. You should always support more than one method so users have a backup option in case their primary method is unavailable. You can choose from the following methods:
+When you turn on Microsoft Entra multifactor authentication, you can choose the authentication methods you want to make available. You should always support more than one method so users have a backup option in case their primary method is unavailable. You can choose from the following methods:
 
 | Method | Description |
 |--------|-------------|
@@ -30,6 +32,6 @@ Administrators can enable one or more of the options above, then users can opt i
 
 ## Selecting an authentication method
 
-Finally, you must decide how users will register their selected methods. The easiest approach is to use **Azure Active Directory Identity Protection**. If your organization has a license for Identity Protection, you can configure it to prompt users to register for MFA the next time they sign in.
+Finally, you must decide how users will register their selected methods. The easiest approach is to use **Microsoft Entra ID Protection**. If your organization has a license for Identity Protection, you can configure it to prompt users to register for MFA the next time they sign in.
 
-You can also prompt users to register for MFA when they try to use an application or service that requires multi-factor authentication. Finally, you can enforce registration using a Conditional Access policy applied to an Azure group containing all users in your organization. This approach requires some manual work to periodically review the group to remove registered users. There are some [useful scripts in the documentation](/azure/active-directory/authentication/howto-mfa-getstarted#enforcing-registration) to automate some of this process.
+You can also prompt users to register for MFA when they try to use an application or service that requires multifactor authentication. Finally, you can enforce registration using a Conditional Access policy applied to an Azure group containing all users in your organization. This approach requires some manual work to periodically review the group to remove registered users. There are some [useful scripts in the documentation](/azure/active-directory/authentication/howto-mfa-getstarted#enforcing-registration) to automate some of this process.

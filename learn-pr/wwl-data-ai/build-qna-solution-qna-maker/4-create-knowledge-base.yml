@@ -8,8 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-  ms.subservice: qna-maker
+  ms.service: azure-ai-language
+  ms.subservice: azure-ai-qna-maker
 durationInMinutes: 3
 content: |
   [!include[](includes/4-create-knowledge-base.md)]

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-users-and-groups-in-azure-active-directory.exercise-add-delete-users-azure-ad
-title: Exercise - Add and delete users in Azure Active Directory
+title: Exercise - Add and delete users in Microsoft Entra ID
 metadata:
-  title: Exercise - Add and delete users in Azure Active Directory
-  description: Exercise - Add and delete users in Azure Active Directory
+  title: Exercise - Add and delete users in Microsoft Entra ID
+  description: Exercise - Add and delete users in Microsoft Entra ID
   ms.date: 03/21/2023
   author: shlipsey3
   ms.author: sarahlipsey

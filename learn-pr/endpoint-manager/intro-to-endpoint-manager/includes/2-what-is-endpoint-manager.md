@@ -13,7 +13,7 @@ By protecting and managing your organization's endpoints using Microsoft Intune,
 - Ensure that all your corporate services are easily available to end users on all the devices they use.
 - Ensure that end users get the best possible experience based on first-class support for all the products that they need to use.
 
-The Microsoft Intune console helps keep your organization's cloud and on-premises devices, apps, and data secure. Intune integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, and Windows Autopilot.
+The Microsoft Intune console helps keep your organization's cloud and on-premises devices, apps, and data secure. Intune integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, and Windows Autopilot.
 
 > [!IMPORTANT]
 > If you already have Microsoft Intune or Microsoft Endpoint Configuration Manager, you already have Microsoft Intune. These are all now one management system.

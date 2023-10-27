@@ -72,8 +72,8 @@ The first step in calculating evaluation metrics for a binary classification mod
 This visualization is called a *confusion matrix*, and it shows the prediction totals where:
 
 - &#375;=0 and y=0: *True negatives* (TN)
-- &#375;=1 and y=0: *False negatives* (FN)
-- &#375;=0 and y=1: *False positives* (FP)
+- &#375;=1 and y=0: *False positives* (FP)
+- &#375;=0 and y=1: *False negatives* (FN)
 - &#375;=1 and y=1: *True positives* (TP)
 
 The arrangement of the confusion matrix is such that correct (*true*) predictions are shown in a diagonal line from top-left to bottom-right. Often, color-intensity is used to indicate the number of predictions in each cell, so a quick glance at a model that predicts well should reveal a deeply shaded diagonal trend.
@@ -86,7 +86,7 @@ The simplest metric you can calculate from the confusion matrix is *accuracy* - 
 
 In the case of our diabetes example, the calculation is:
 
-(2+3) &#247; (2+0+1+3)
+(2+3) &#247; (2+1+0+3)
 
 = 5 &#247; 6
 

@@ -1,5 +1,3 @@
-
-
 A combination of availability within and across regions might be driven by these factors:
 
 - A requirement of RPO = 0 within an Azure region.

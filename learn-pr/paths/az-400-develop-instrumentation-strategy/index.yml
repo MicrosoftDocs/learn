@@ -27,7 +27,7 @@ products:
 - azure-resource-manager
 - azure-monitor
 - azure-event-grid
-- azure-sentinel
+- microsoft-sentinel
 - defender-for-cloud
 - azure-service-health
 - vs-app-center

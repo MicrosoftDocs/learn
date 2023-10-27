@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-active-directory.azure-ad-groups
-title: Manage users with Azure AD groups
+title: Manage users with Microsoft Entra groups
 metadata:
-  title: Manage users with Azure AD groups
-  description: "Manage users with Azure AD groups"
+  title: Manage users with Microsoft Entra groups
+  description: "Manage users with Microsoft Entra groups"
   ms.date: 09/11/2023
   author: wwlpublish
   ms.author: serlingdavis

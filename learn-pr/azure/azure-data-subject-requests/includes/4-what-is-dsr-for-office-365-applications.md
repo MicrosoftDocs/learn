@@ -18,7 +18,7 @@ Many organizations manage their user identities in on-premises Active Directory 
 
 - Exchange hybrid deployments, where some users have an on-premises mailbox and other users have Exchange Online mailboxes.
 - SharePoint hybrid deployments, where site and files servers are on-premises and OneDrive for Business accounts are in Office365.
-- The on-premises with identity management system (Active Directory) that is synchronized with Azure Active Directory, which is the underlying directory service in Office 365.
+- The on-premises with identity management system (Active Directory) that is synchronized with Microsoft Entra ID, which is the underlying directory service in Office 365.
 
 In a hybrid deployment, the scope of a DSR will vary based on the data that's related to a specific DSR. The controller must determine whether the response must come from the cloud or from on premises. This unit focuses on cloud-based data responses. However, guidance is available for responding to DSRs on premises. Refer to the summary unit for more information.
 

@@ -6,11 +6,11 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 ## Elevate your access
 
-1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>) as Azure Active Directory (Azure AD) Global Administrator.
+1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>) as Microsoft Entra Global Administrator.
 
-1. Select **Azure Active Directory** > **Properties**.
+1. Select **Microsoft Entra ID** > **Properties**.
 
-    ![Screenshot of the Azure AD Properties pane.](../media/4-azure-ad-properties.png)
+    ![Screenshot of the Microsoft Entra Properties pane.](../media/4-azure-ad-properties.png)
 
 1. Under **Access management for Azure resources**, select **Yes**.
 
@@ -47,7 +47,7 @@ Because you're using your own subscription, you might want to walk through the f
 
 ## Revoke your elevated access
 
-1. In the Azure portal, select **Azure Active Directory** > **Properties**.
+1. In the Azure portal, select **Microsoft Entra ID** > **Properties**.
 1. Under **Access management for Azure resources**, select **No**.
 1. Select **Save**.
 1. Sign out of the Azure portal and sign in again to refresh your access.

@@ -26,7 +26,7 @@ This VM will run a specific configuration that stresses the CPU and generates th
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name vm1 \
         --location eastUS \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --custom-data cloud-init.txt \
         --generate-ssh-keys
     ```

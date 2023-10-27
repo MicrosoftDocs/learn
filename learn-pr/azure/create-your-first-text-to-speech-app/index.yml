@@ -28,7 +28,7 @@ products:
 - azure
 - azure-clis
 - ai-services
-- azure-text-speech
+- azure-speech
 units:
 - learn.azure.create-your-first-text-to-speech-app.introduction
 - learn.azure.create-your-first-text-to-speech-app.create-azure-cognitive-services-account

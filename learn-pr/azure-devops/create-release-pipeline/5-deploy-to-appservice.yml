@@ -9,8 +9,7 @@ metadata:
   ms.date: 08/19/2022
   author: ramiMSFT
   ms.author: rabououn
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 13
 content: |
   [!include[](includes/5-deploy-to-appservice.md)]

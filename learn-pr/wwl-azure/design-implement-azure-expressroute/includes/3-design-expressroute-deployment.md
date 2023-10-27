@@ -1,4 +1,3 @@
-
 ExpressRoute enables us to connect on Premises to Azure services seamlessly. lets review some design decisions you will make before deploying an ExpressRoute circuit.
 
 ## **ExpressRoute circuit SKUs**

@@ -112,7 +112,7 @@ Create an application rule collection with rules to allow Azure Virtual Desktop 
 
 ## Create network rule collection
 
-Let's say our scenario uses Azure Active Directory Domain Services (Azure AD DS), so you don't need to create a network rule to allow DNS. However, you do need to create a rule to allow traffic from your Azure Virtual Desktop VMs to the Windows activation service. For our network rule to allow Key Management Services (KMS), use the destination IP address of the KMS server for the Azure global cloud.
+Let's say our scenario uses Microsoft Entra Domain Services (Microsoft Entra Domain Services), so you don't need to create a network rule to allow DNS. However, you do need to create a rule to allow traffic from your Azure Virtual Desktop VMs to the Windows activation service. For our network rule to allow Key Management Services (KMS), use the destination IP address of the KMS server for the Azure global cloud.
 
 1. On **learn-fw** >  **Rules (classic)**, select **Network rule collection**.
 1. Select the **Network rule collection** tab, and then select **Add network  rule collection**.

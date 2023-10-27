@@ -1,11 +1,11 @@
-Managed identities for Azure resources is a feature of Azure Active Directory (Azure AD) that you can use free of charge. Using managed identities is the recommended way for applications hosted in Azure to authenticate to Azure resources and services. 
+Managed identities for Azure resources is a feature of Microsoft Entra ID that you can use free of charge. Using managed identities is the recommended way for applications hosted in Azure to authenticate to Azure resources and services. 
 Imagine that your company has moved all of its applications from on-premises servers to Azure-hosted virtual machines (VMs). The on-premises applications authenticate to Azure using service principals. Now that you host the applications on VMs in Azure, you can use managed identities.
 
 In this unit, you'll explore Managed identities for Azure Resources. You'll see how they work and what resources you can access in Azure.
 
 ## What are managed identities in Azure?
 
-When you use managed identities, you don't need to include authentication information in your code or make it available as part of application accessible configuration files. Managed identities provide an identity for applications to use when connecting to resources that support Azure AD authentication. Applications may use the managed identity to obtain Azure AD tokens.
+When you use managed identities, you don't need to include authentication information in your code or make it available as part of application accessible configuration files. Managed identities provide an identity for applications to use when connecting to resources that support Microsoft Entra authentication. Applications may use the managed identity to obtain Microsoft Entra tokens.
 
 When you use managed identities, you don't need to rotate credentials or worry about expiring certificates. Azure handles credential rotation and expiration in the background. To configure an application to use a managed identity, you use the provided token to call the service.
 
@@ -16,7 +16,7 @@ When you use managed identities, you don't need to rotate credentials or worry a
 
 When you work with managed identities, you should be familiar with some common terms:
 
-- **Client ID**: A unique ID linked to the Azure AD application and service principal that was created when you provisioned the identity.
+- **Client ID**: A unique ID linked to the Microsoft Entra application and service principal that was created when you provisioned the identity.
 - **Object ID**: The service principal object of the managed identity.
 - **Azure Instance Metadata Service**: A REST API that's enabled when Azure Resource Manager provisions a VM. The endpoint is accessible only from within the VM.
 
@@ -49,8 +49,8 @@ To set up a system-assigned managed identity:
 1. On the right side of the page you can enable system-assigned identity by toggling the **Status** switch to **On**. Notice that you could also specify a user-assigned identity by choosing **User assigned** at the top of the page and choosing **Add** to specify the user-assigned managed identity that you want to use.
 1. Save the changes.
 
-Next, the system reminds you that the server will be registered with Azure AD, and that you can grant permissions to resources there.
+Next, the system reminds you that the server will be registered with Microsoft Entra ID, and that you can grant permissions to resources there.
 
-You can always see the current managed identities for the subscription in Azure AD in the **Enterprise applications** section of the Azure portal. Select **All applications** and filter the results to **Application type== Managed Identities**.
+You can always see the current managed identities for the subscription in Microsoft Entra ID in the **Enterprise applications** section of the Azure portal. Select **All applications** and filter the results to **Application type== Managed Identities**.
 
 :::image type="content" source="../media/3-managed-identity.png" alt-text="Screenshot of the Azure portal, showing the overview page for a managed identity." loc-scope="azure-active-directory-b2c":::

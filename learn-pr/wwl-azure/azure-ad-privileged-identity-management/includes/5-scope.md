@@ -67,4 +67,4 @@ Privileged Identity Management supports the following scenarios:
 
  -  Request activation of a role that requires approval
  -  View the status of your request to activate
- -  Complete your task in Azure AD if activation was approved
+ -  Complete your task in Microsoft Entra ID if activation was approved

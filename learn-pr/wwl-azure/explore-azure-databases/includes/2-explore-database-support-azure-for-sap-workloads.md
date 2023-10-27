@@ -1,6 +1,4 @@
-
-
-As per [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533), the following RDBMS platforms are supported on Azure:
+As per [SAP Note \#1928533](https://aka.ms/az-120-sapnote-1928533), the following RDBMS platforms are supported on Azure:
 
 ## Windows Server
 
@@ -9,6 +7,7 @@ As per [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533), 
 - IBM DB2 10.5 and higher
 - Oracle Database, for versions and restrictions see [SAP Note \#2039619](https://launchpad.support.sap.com/#/notes/2039619)
 - SAP MaxDB version 7.9
+- SAP liveCache: The minimum requirement is SAP liveCache 10.0 SP 33 (i.e. Build 100.33) or higher. We strongly recommend using the latest SAP liveCache version compliant to the corresponding SAP SCM 7.0 EHP (see [SAP Note \#2074842](https://launchpad.support.sap.com/#/notes/2074842)).
 - SAP liveCache as part of SAP SCM 7.0 EhP2 (or higher): Minimal version for SAP liveCache: SAP LC/LCAPPS 10.0 SP 27 including liveCache 7.9.08.32 and LCA-Build 27, released for EhP 2 for SAP SCM 7.0 and higher
 
   - SAP liveCache based on SAP MaxDB technology must run on an Azure VM solely dedicated to SAP liveCache, that is, without any other application software running on the same VM).
@@ -16,12 +15,19 @@ As per [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533), 
 ## SLES and RHEL
 
 - SAP HANA 1.0 SP12 and higher, SAP HANA 2.0 on Microsoft Azure VMs, as listed on the SAP HANA Hardware Directory.
+
+  - If you're using Standard_M832ixs_v2, it's recommended to update your OS to:
+
+    - RHEL 8.6: with kernel 4.18.0-372.51.1 (RHSA-2023:1554) or later
+    - SLES 15 SP4: with kernel 5.14.21-150400.24.55 or later
+
 - SAP ASE 16.0 SP02 and higher
 - IBM DB2 10.5 and higher
 - SAP MaxDB version 7.9.09.05 and higher
 - SAP liveCache as part of SAP SCM 7.0 EhP4 (or higher):
 
   - Minimal version for SAP liveCache: SAP LC/LCAPPS 10.0 SP 34 including liveCache 7.9.09.05 and LCA-Build 34, released for EhP 4 for SAP SCM 7.0 and higher.
+  - SAP liveCache: The minimum requirement is SAP liveCache 10.0 SP 33 (i.e. Build 100.33) or higher. We strongly recommend using the latest SAP liveCache version compliant to the corresponding SAP SCM 7.0 EHP (see [SAP Note \#2074842](https://launchpad.support.sap.com/#/notes/2074842)).
   - SAP liveCache based on SAP MaxDB technology must run on an Azure VM solely dedicated to SAP liveCache (that is, without any other application software running on this VM).
 
 ## Oracle Linux
@@ -39,7 +45,7 @@ For more information, see the following SAP Notes:
 - [SAP Note \#555223 - FAQ - Microsoft SQL Server in NetWeaver based systems](https://launchpad.support.sap.com/#/notes/555223)
 - [SAP Note \#2134316 - Can SAP ASE run in a cloud environment? - SAP ASE](https://launchpad.support.sap.com/#/notes/2134316)
 - [SAP Note \#2039619 - SAP Applications on Microsoft Azure using the Oracle Database](https://launchpad.support.sap.com/#/notes/2039619)
-- [SAP Note \#1928533 - Supported Products and Azure VM types](https://launchpad.support.sap.com/#/notes/1928533)
+- [SAP Note \#1928533 - Supported Products and Azure VM types](https://aka.ms/az-120-sapnote-1928533)
 
   - SAP products supported on Windows
   - RDBMS platforms supported on Windows

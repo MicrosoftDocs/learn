@@ -22,6 +22,6 @@ Supplemental Resources:
 
 - [AZ-500 Labs ](https://aka.ms/AZ500labs)
 
-- [Choose the right authentication method for your Azure Active Directory hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn) 
+- [Choose the right authentication method for your Microsoft Entra hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn) 
 
-- [Features and licenses for Azure AD Multi-Factor Authentication ](/azure/active-directory/authentication/concept-mfa-licensing)
+- [Features and licenses for Microsoft Entra multifactor authentication ](/azure/active-directory/authentication/concept-mfa-licensing)

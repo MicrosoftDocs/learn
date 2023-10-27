@@ -1,6 +1,6 @@
-**Microsoft Identity Manager** or MIM helps organizations manage the users, credentials, policies, and access within their organizations and hybrid environments. With MIM, organizations can simplify identity lifecycle management with automated workflows, business rules, and easy integration with heterogenous platforms across the datacenter. MIM enables Active Directory Domain Services to have the right users and access rights for on-premises apps. Azure AD Connect can then make those users and permissions available in Azure AD for Microsoft 365 and cloud-hosted apps.
+**Microsoft Identity Manager** or MIM helps organizations manage the users, credentials, policies, and access within their organizations and hybrid environments. With MIM, organizations can simplify identity lifecycle management with automated workflows, business rules, and easy integration with heterogenous platforms across the datacenter. MIM enables Active Directory Domain Services to have the right users and access rights for on-premises apps. Microsoft Entra Connect can then make those users and permissions available in Microsoft Entra ID for Microsoft 365 and cloud-hosted apps.
 
-On-premises Active Directory Domain Services, Azure Active Directory (Azure AD), or a hybrid combination of the two all offer services for user and device authentication, identity and role management, and provisioning.
+On-premises Active Directory Domain Services, Microsoft Entra ID, or a hybrid combination of the two all offer services for user and device authentication, identity and role management, and provisioning.
 
 :::image type="content" source="../media/az500-hybrid-identities-e604f6fb.png" alt-text="Hybrid identities include multiple user identities including Windows Server Active Directory.":::
 
@@ -38,7 +38,7 @@ Identity management approaches have evolved from traditional, to advanced, to op
 
  -  **Enforce MFA** — Conform to the fast identity online (FIDO) 2.0 standard, so you can require a PIN and a biometric for authentication rather than a password. Windows Hello is one good example, but choose the MFA method that works for your organization.
  -  **Reduce legacy authentication workflows** — Place apps that require passwords into a separate user access portal and migrate users to modern authentication flows most of the time. At Microsoft only 10 percent of our users enter a password on a given day.
- -  **Remove passwords** — Create consistency across Active Directory Domain Services and Azure Active Directory (Azure AD) to enable administrators to remove passwords from identity directory.
+ -  **Remove passwords** — Create consistency across Active Directory Domain Services and Microsoft Entra ID to enable administrators to remove passwords from identity directory.
 
 > [!IMPORTANT]
-> We recommend **Azure AD Privileged Identity Management** as the service to help protect your privileged accounts.
+> We recommend **Microsoft Entra Privileged Identity Management** as the service to help protect your privileged accounts.

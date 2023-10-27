@@ -3,7 +3,7 @@ In this module, you learned how to:
  -  Update Azure Stack Hub.
  -  Download and import update packages manually for Azure Stack Hub.
  -  Prepare for Azure Stack Hub updates.
- -  Update Azure Active Directory (AD) Home Director for Azure Stack Hub.
+ -  Update Microsoft Entra Home Director for Azure Stack Hub.
  -  Apply Azure Stack Hub original equipment manufacturer (OEM) updates.
  -  Use the Azure Stack Hub update activity checklist.
  -  Monitor updates with PowerShell in Azure Stack Hub.

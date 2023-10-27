@@ -58,7 +58,7 @@ SQL insights has no support or has limited support for the following components:
 - Azure SQL Database running on Basic, S0, S1, and S2 service tiers
 - Azure SQL Database serverless tier
 - Multiple secondary replicas
-- Authentication with Azure Active Directory. Only SQL authentication is supported
+- Authentication with Microsoft Entra ID. Only SQL authentication is supported
 
 Azure SQL Insights is a cloud monitoring solution that brings together performance metrics at scale in a single view.
 

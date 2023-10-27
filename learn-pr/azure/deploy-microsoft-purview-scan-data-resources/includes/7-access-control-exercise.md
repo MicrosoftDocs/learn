@@ -1,4 +1,4 @@
-In this unit, you'll use the [Microsoft Purview governance portal](https://web.purview.azure.com/) to provide a user within your Azure Active Directory read access to the data map. You'll then create another collection.
+In this unit, you'll use the [Microsoft Purview governance portal](https://web.purview.azure.com/) to provide a user within your Microsoft Entra read access to the data map. You'll then create another collection.
 
 1. To open [Microsoft Purview governance portal](https://web.purview.azure.com/), you can use the link and select your account, or you can open the Azure portal, search for the Microsoft Purview account you created in the last session, and select **Open Microsoft Purview Governance Portal**.
 
@@ -24,7 +24,7 @@ In this unit, you'll use the [Microsoft Purview governance portal](https://web.p
 
     :::image type="content" source="../media/purview-data-reader.png" alt-text="Screenshot of the Microsoft Purview governance portal root collection page, with the Edit role assignment drop-down menu opened, and Data readers selected.":::
 
-1. Search for another user within your Azure Active Directory, select their account, select **OK**. This will grant the user read permissions on your Microsoft Purview account.
+1. Search for another user within your Microsoft Entra ID, select their account, select **OK**. This will grant the user read permissions on your Microsoft Purview account.
 
     :::image type="content" source="../media/purview-add-data-reader.png" alt-text="Screenshot of the Microsoft Purview governance portal Add or remove data readers menu open. The search bar is highlighted, and an example user is highlighted below.":::
 

@@ -1,5 +1,5 @@
 
-To onboard Microsoft Sentinel, you first need to connect to your security sources. Microsoft Sentinel comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration, including Microsoft Threat Protection solutions, and Microsoft 365 sources, including Microsoft 365, Azure AD, Azure ATP, and Microsoft Cloud App Security, and more. In addition, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use common event format, Syslog or REST-API to connect your data sources with Microsoft Sentinel as well.
+To onboard Microsoft Sentinel, you first need to connect to your security sources. Microsoft Sentinel comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration, including Microsoft Threat Protection solutions, and Microsoft 365 sources, including Microsoft 365, Microsoft Entra ID, Azure ATP, and Microsoft Cloud App Security, and more. In addition, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use common event format, Syslog or REST-API to connect your data sources with Microsoft Sentinel as well.
 
 :::image type="content" source="../media/sentinel-collect-data-page-a84499fc.png" alt-text="Screenshot showing the Microsoft Sentinel Data connectors page.":::
 
@@ -11,8 +11,8 @@ The following data connection methods are supported by Microsoft Sentinel:
  -  **Service to service integration**: Some services are connected natively, such as AWS and Microsoft services, these services leverage the Azure foundation for out-of-the-box integration, the following solutions can be connected in a few clicks:
  -  Amazon Web Services - CloudTrail
  -  Azure Activity
- -  Azure AD audit logs and sign-ins
- -  Azure AD Identity Protection
+ -  Microsoft Entra audit logs and sign-ins
+ -  Microsoft Entra ID Protection
  -  Azure Advanced Threat Protection
  -  Azure Information Protection
  -  Microsoft Defender for Cloud

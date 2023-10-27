@@ -14,7 +14,7 @@ Azure AD B2C helped your organization to authenticate users into your web app. W
 
 If your organization didn't use Azure AD B2C, you'd have to build a whole authentication module from scratch, model a user's data schema, and store the data yourself. Because users can also use social identities, you'd perform the integration yourself. Besides, you'd have to deal with scaling and safety of the authentication platform.
 
-By using Azure AD B2C and with the help of msal-node library, you added an authentication module to your web app quickly with few lines of code. Also, Azure AD B2C handles scaling and safety out of the box.
+By using Azure AD B2C and with the help of MSAL-node library, you added an authentication module to your web app quickly with few lines of code. Also, Azure AD B2C handles scaling and safety out of the box.
 
 <!-- TODO: restate the scenario problem-->
 

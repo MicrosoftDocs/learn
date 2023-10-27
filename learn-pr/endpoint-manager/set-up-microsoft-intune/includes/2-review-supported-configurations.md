@@ -1,8 +1,8 @@
-Before you begin setting up Microsoft Intune, you can review the device platforms and operating systems that Intune supports. Additionally, you can learn which web browsers are supported when accessing Intune using Microsoft Endpoint Manager admin center. Also, you should be familiar with the network bandwidth requirements to perform installations and updates using Intune.
+Before you begin setting up Microsoft Intune, review the device platforms and operating systems that Intune supports. Learn which web browsers are supported when you access Intune by using Microsoft Intune admin center. Also, you should be familiar with the network bandwidth requirements to perform installations and updates using Intune.
 
 ## Intune supported operating systems
 
-You can manage devices running operating systems on the following platforms:
+You can manage devices that run operating systems on the following platforms:
 
 - Apple iOS/iPadOS
 - macOS
@@ -17,9 +17,9 @@ For more information about Intune supported devices, platforms, and operating sy
 
 Different administrative tasks require that you use one of the following administrative websites when working with Intune:
 
-- [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
+- [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 - [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Azure Active Directory admin center](https://aad.portal.azure.com)
+- [Microsoft Entra admin center](https://aad.portal.azure.com)
 
 The following browsers are supported for these portals:
 
@@ -30,42 +30,45 @@ The following browsers are supported for these portals:
 
 ## Intune network configuration requirements
 
-It's important to understand that there are different bandwidth requirements for your Intune deployments. To ensure devices receive the updates and content from Intune, they must periodically connect to the Internet. The time required to receive updates or content can vary, but they should remain continuously connected to the Internet for at least one hour each day.
+There are different bandwidth requirements for your Intune deployments. To ensure that devices receive the updates and content from Intune, they must periodically connect to the Internet. The time required to receive updates or content can vary. They should remain continuously connected to the Internet for at least one hour each day.
 
-**Content requiring a single installation:**
+- Content requiring a single installation
 
-- Intune client installation
-- Client enrollment package
-- Endpoint Protection agent
-- Operations Manager agent
-- Policy agent
-- Remote Assistance via Microsoft Easy Assist agent
+  - Intune client installation
+  - Client enrollment package
+  - Endpoint Protection agent
+  - Operations Manager agent
+  - Policy agent
+  - Remote Assistance by using Microsoft Easy Assist agent
 
-**Content requiring daily updates:**
+- Content requiring daily updates
 
-- Daily client operations
-- Endpoint Protection malware definition updates
+  - Daily client operations
+  - Endpoint Protection malware definition updates
 
-**Content requiring monthly updates:**
+- Content requiring monthly updates
 
-- Endpoint Protection engine update
-- Software updates
+  - Endpoint Protection engine update
+  - Software updates
 
-Other content updates vary. For instance, content related to service packs and software distribution will vary depending on when you deploy service packs and software. For more information, see Intune's [average network traffic](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#average-network-traffic).
+Other content updates vary. For instance, content related to service packs and software distribution varies depending on when you deploy service packs and software. For more information, see Intune's [average network traffic](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#average-network-traffic).
 
 ## Intune bandwidth considerations
 
-If bandwidth is a concern, you have ways to reduce bandwidth that your tenant uses. For instance, you can do any of the following to reduce bandwidth:
+If bandwidth is a concern, you have ways to reduce bandwidth that your tenant uses. For instance, use any of the following strategies to reduce bandwidth:
 
-- **Use a proxy server to cache content requests:**<br>
-    A proxy server can cache content to reduce duplicate downloads and reduce network bandwidth from content from the Internet. For related information, see [Use a proxy server to cache content requests](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#use-a-proxy-server-to-cache-content-requests).
- 
-- **Delivery Optimization:**<br>
-    Delivery Optimization lets you use Intune to reduce bandwidth consumption when your Windows 10/11 devices download applications and updates. For related information, see [Delivery Optimization](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#delivery-optimization).
+- Use a proxy server to cache content requests
 
-- **Background Intelligent Transfer Service (BITS) and BranchCache:**<br>
-    You can use Microsoft Intune to manage Windows PCs either as [mobile devices with mobile device management (MDM)](/mem/intune/enrollment/windows-enroll?azure-portal=true) or as computers with the Intune software client. Microsoft recommends that you use the MDM management solution whenever possible. For more information, see [Background Intelligent Transfer Service (BITS) and BranchCache](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#background-intelligent-transfer-service-bits-and-branchcache).
+  A proxy server can cache content to reduce duplicate downloads and reduce network bandwidth from content from the Internet. For more information, see [Use a proxy server to cache content requests](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#use-a-proxy-server-to-cache-content-requests).
+
+- Delivery Optimization
+
+  Delivery Optimization lets you use Intune to reduce bandwidth consumption when your Windows 10 and Windows 11 devices download applications and updates. For more information, see [Delivery Optimization](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#delivery-optimization).
+
+- Background Intelligent Transfer Service (BITS) and BranchCache
+
+  You can use Microsoft Intune to manage Windows PCs either as [mobile devices with mobile device management (MDM)](/mem/intune/enrollment/windows-enroll?azure-portal=true) or as computers with the Intune software client. We recommend that you use the MDM management solution whenever possible. For more information, see [Background Intelligent Transfer Service (BITS) and BranchCache](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#background-intelligent-transfer-service-bits-and-branchcache).
 
 ## Learn more
 
-For more information, see [Intune network configuration requirements and bandwidth](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#ways-to-reduce-network-bandwidth-use).
+For more information, see [Ways to reduce network bandwidth use](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#ways-to-reduce-network-bandwidth-use).

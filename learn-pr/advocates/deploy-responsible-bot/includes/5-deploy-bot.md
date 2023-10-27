@@ -46,7 +46,7 @@ Next we'll create a bot resource in Azure. This resource is a specialized type o
      - At least one numeric character
      - At least one special character
 
-   - `available-to-other-tenants`: A flag that indicates that any Azure AD tenant can use the bot.
+   - `available-to-other-tenants`: A flag that indicates that any Microsoft Entra tenant can use the bot.
 
    For example, you might run the command with these arguments:
 

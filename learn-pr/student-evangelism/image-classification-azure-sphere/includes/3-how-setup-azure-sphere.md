@@ -10,7 +10,7 @@ The components you'll need to know are:
 
 - **Azure Sphere SDK:** includes the azsphere command-line utility, device libraries, and Visual Studio extensions for managing devices, developing and deploying applications, and working with cloud services.
 
-- **Azure Sphere tenant:** is associated with your organization’s Azure Active Directory (Azure AD) instance. It provides a secure way for your organization to remotely manage its Azure Sphere devices in isolation from other customers’ devices. Your organization must create an Azure Sphere tenant and then claim each of its devices into that tenant, so that you can manage those devices remotely and securely. 
+- **Azure Sphere tenant:** is associated with your organization’s Microsoft Entra instance. It provides a secure way for your organization to remotely manage its Azure Sphere devices in isolation from other customers’ devices. Your organization must create an Azure Sphere tenant and then claim each of its devices into that tenant, so that you can manage those devices remotely and securely. 
 
 - **Azure Sphere OS:** is a custom Linux-based microcontroller operating system created to run on an Azure Sphere-certified chip and to connect to the Azure Sphere Security Service.
 

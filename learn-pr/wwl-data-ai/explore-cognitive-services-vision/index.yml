@@ -26,7 +26,7 @@ levels:
 roles:
 - ai-engineer
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 units:
