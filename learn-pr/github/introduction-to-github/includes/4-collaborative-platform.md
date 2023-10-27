@@ -16,12 +16,12 @@ Issues can be created in a variety of ways, so you can choose the most convenien
 For the walk through in the next portion we will go over how to create an issue from a repository but just know there are a myriad of ways. Here is a list of all the ways you can create issues from. 
 
 The different ways to create an issue from:
-●	a repository
-●	an item in a task list
-●	a note in a project
-●	a comment in an issue or pull request
-●	a specific line of code
-●	or a URL query
+- a repository
+- an item in a task list
+- a note in a project
+- a comment in an issue or pull request
+- a specific line of code
+- or a URL query
 
 
 ### Creating an issue from a repository
