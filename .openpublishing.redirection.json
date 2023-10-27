@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/azure/choose-network-plugin-aks/7-summary.yml",
+      "redirect_url": "/training/modules/choose-network-plugin-aks/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/choose-network-plugin-aks/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/choose-network-plugin-aks/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/choose-network-plugin-aks/5-use-azure-container-networking-interface.yml",
+      "redirect_url": "/training/modules/choose-network-plugin-aks/4-use-scenario",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/choose-network-plugin-aks/4-use-kubenet.yml",
+      "redirect_url": "/training/modules/choose-network-plugin-aks/4-use-scenario",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/endpoint-manager/intro-to-endpoint-manager/10-summary.yml",
       "redirect_url": "/training/modules/intro-to-endpoint-manager/9-summary",
       "redirect_document_id": false
@@ -28534,6 +28554,46 @@
     {
       "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/8-understand-responsible-ai.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/8a-understand-responsible-ai",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/2-image-analysis-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/3-image-analysis-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/3a-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/3-analyze-images.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/4-exercise",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/4-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/2-face-analysis-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/detect-analyze-faces/3-face-analysis-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/3a-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/detect-analyze-faces/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/3-create-face-solutions.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/detect-analyze-faces/4-exercise",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/4-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/detect-analyze-faces/6-summary",
       "redirect_document_id": false
     }
     
