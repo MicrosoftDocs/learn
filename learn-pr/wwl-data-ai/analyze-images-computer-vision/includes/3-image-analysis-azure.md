@@ -114,7 +114,7 @@ For example, the tags returned for the skateboarder image (with associated confi
 
 ## Training custom models
 
-If the built-in models provided by Azure AI Vision don't meet your needs, you can use the service to train a custom model for *image classification* or *object detection*. Azure AI Vision provides advanced base models that you can use as the foundation for these custom models, meaning that you can train sophisticated models by using relatively few training images.
+If the built-in models provided by Azure AI Vision don't meet your needs, you can use the service to train a custom model for *image classification* or *object detection*. Azure AI Vision builds custom models on the pre-trained foundation model, meaning that you can train sophisticated models by using relatively few training images.
 
 ### Image classification
 
