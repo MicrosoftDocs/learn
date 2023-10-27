@@ -1,6 +1,6 @@
 Several options are available when you're running Kubernetes locally. You can install Kubernetes on physical machines or VMs, or use a cloud-based solution such as Azure Kubernetes Service (AKS). 
 
-Your goal in this exercise is to explore a Kubernetes installation with a single-node cluster. You're going to configure a _MicroK8s_ environment that's easy to set up and tear down. Then, you'll deploy an NGINX website and scale it out to multiple instances. Finally, you'll go through the steps to delete the running pods and clean up the cluster.
+Your goal in this exercise is to explore a Kubernetes installation with a single-node cluster. In this exercise, you learn how to configure and install a _MicroK8s_ environment that's easy to set up and tear down. Then, you deploy a Kubernetes service and scale it out to multiple instances to host a website.
 
 > [!NOTE]
 > This exercise is optional and includes steps that show how to delete and uninstall the software and resources you'll use in the exercise.
@@ -9,7 +9,7 @@ Keep in mind that there are other options, such as MiniKube and Kubernetes suppo
 
 ## What is MicroK8s?
 
-MicroK8s is an option for deploying a single-node Kubernetes cluster as a single package to target workstations and Internet of Things (IoT) devices. Canonical, the creator of Ubuntu Linux, originally developed and still maintains MicroK8s.
+MicroK8s is an option for deploying a single-node Kubernetes cluster as a single package to target workstations and Internet of Things (IoT) devices. Canonical, the creator of Ubuntu Linux, originally developed and currently maintains MicroK8s.
 
 You can install MicroK8s on Linux, Windows, and macOS. However, installation instructions are slightly different for each operating system. Choose the option that best fits your environment.
 
@@ -56,7 +56,7 @@ To run MicroK8s on Windows, use Multipass. Multipass is a lightweight VM manager
     multipass shell microk8s-vm
     ```
 
-    At this point, you can access the Ubuntu VM that will host your cluster and install MicroK8s.
+    Once multipass is working, you can access the Ubuntu VM to host your cluster and install MicroK8s.
 
 1. Install the MicroK8s snap app. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
 
@@ -99,7 +99,7 @@ To run MicroK8s on macOS, use Multipass. Multipass is a lightweight VM manager f
     multipass shell microk8s-vm
     ```
 
-    At this point, you can access the Ubuntu VM that will host your cluster. You still have to install MicroK8s. Follow these steps.
+    At this point, you can access the Ubuntu VM to host your cluster. You still have to install MicroK8s. Follow these steps.
 
 1. Install the MicroK8s snap app. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
 
@@ -128,7 +128,7 @@ To view the status of the installed add-ons on your cluster, run the status comm
     sudo microk8s.status --wait-ready
     ```
 
-    Notice that you can enable several add-ons on your cluster. Don't worry about the add-ons that you don't recognize. You'll enable only three of these add-ons in your cluster.
+    Notice that there are several disabled add-ons on your cluster. Don't worry about the add-ons that you don't recognize.
 
     ```output
     microk8s is running
@@ -155,7 +155,7 @@ To view the status of the installed add-ons on your cluster, run the status comm
     storage: disabled
     ```
 
-1. Next, you'll enable the DNS, Dashboard, and Registry add-ons. Here's the purpose of each add-on:
+1. From the list, you need to enable the DNS, Dashboard, and Registry add-ons. Here are the purposes of each add-on:
 
     | Add-ons | Purpose |
     | --- | --- |
@@ -169,7 +169,7 @@ To view the status of the installed add-ons on your cluster, run the status comm
     sudo microk8s.enable dns dashboard registry
     ```
 
-You're now ready to access your cluster by running `kubectl`.
+You're now ready to access your cluster with `kubectl`.
 
 ## Explore the Kubernetes cluster
 
@@ -241,7 +241,7 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
     sudo kubectl get services -o wide --all-namespaces
     ```
 
-    The result is similar to the following example. Notice that you have three namespaces in your cluster. They're the default, `container-registry`, and `kube-system` namespaces. Here, you can see the `registry`, `kube-dns`, and `kubernetes-dashboard` instances that you installed. You'll also see the supporting services that were installed alongside some of the add-ons.
+    The result is similar to the following example. Notice that you have three namespaces in your cluster. They're the default, `container-registry`, and `kube-system` namespaces. Here, you can see the `registry`, `kube-dns`, and `kubernetes-dashboard` instances that you installed. There are also supporting services that were installed alongside some of the add-ons.
 
     ```output
     NAMESPACE            NAME                        TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                  AGE   SELECTOR
@@ -259,9 +259,9 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
 
 ### Install a web server on a cluster
 
-You want to schedule a web server on the cluster to serve a website to your customers. You can choose from several options. For this example, you'll use NGINX.
+You want to schedule a web server on the cluster to serve a website to your customers. You can choose from several options. For this example, you use NGINX.
 
-Recall from earlier that you can use pod manifest files to describe your pods, replica sets, and deployments to define workloads. Because you haven't covered these files in detail, you'll use `kubectl` to directly pass the information to the API server.
+Recall from earlier that you can use pod manifest files to describe your pods, replica sets, and deployments to define workloads. Because you haven't covered these files in detail, you run `kubectl` to directly pass the information to the API server.
 
 Even though the use of `kubectl` is handy, using manifest files is a best practice. Manifest files allow you to roll forward or roll back deployments with ease in your cluster. These files also help document the configuration of a cluster.
 
@@ -320,10 +320,10 @@ Test the NGINX installation by connecting to the web server through the pod's IP
     nginx-86c57db685-dj6lz   1/1     Running   0          4m17s   10.1.83.10   microk8s-vm   <none>           <none>
     ```
 
-1. To access the website, run `wget`:
+1. To access the website, run `wget` on the IP listed before:
 
     ```bash
-    wget 10.1.83.10
+    wget <POD_IP>
     ```
 
     The result is similar to the following example:
@@ -376,41 +376,4 @@ To scale the number of replicas in your deployment, run the `kubectl scale` comm
     ubuntu@microk8s-vm:~$
     ```
 
-You'd need to apply several more configurations to the cluster to effectively expose your website as a public-facing website. Examples include installing a load balancer and mapping node IP addresses. This type of configuration forms part of advanced aspects that you'll explore in the future.
-
-## Uninstall MicroK8s
-
-To recover space on your development machine, you can remove everything you've deployed so far, even the VM. Keep in mind that this procedure is optional.
-
-1. To remove the add-ons from the cluster, run the `microk8s.disable` command, and specify the add-ons to remove:
-
-    ```bash
-    sudo microk8s.disable dashboard dns registry
-    ```
-
-1. To remove MicroK8s from the VM, run the `snap remove` command:
-
-    ```bash
-    sudo snap remove microk8s
-    ```
-
-If you want to remove the Multipass VM manager from your machine, there are a few extra steps to take on Windows and macOS.
-
-1. To exit the VM, run the `exit` command:
-
-    ```bash
-    exit
-    ```
-
-1. To stop the VM, run the `multipass stop` command and specify the VM's name:
-
-    ```bash
-    multipass stop microk8s-vm
-    ```
-
-1. To delete and purge the VM instance, run `multipass delete`, then run `multipass purge`:
-
-    ```console
-    multipass delete microk8s-vm
-    multipass purge
-    ```
+You'd need to apply several more configurations to the cluster to effectively expose your website as a public-facing website. Examples include installing a load balancer and mapping node IP addresses. This type of configuration forms part of advanced aspects that you'll explore in the future. In the summary, there are instructions if you choose to uninstall and clean up your VM.

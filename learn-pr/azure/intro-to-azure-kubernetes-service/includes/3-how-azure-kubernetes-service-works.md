@@ -8,19 +8,19 @@ You have two options when you create an AKS cluster. You either use the Azure po
 
 - The Kubernetes cluster name.
 - The version of Kubernetes to install.
-- A DNS prefix to make the master node publicly accessible.
+- A DNS prefix to make the control plane node publicly accessible.
 - The initial node pool size.
 
 The initial node pool size defaults to two nodes, however it's recommended that at least three nodes are used for a production environment.
 
 > [!NOTE]
-> The master node in your cluster is free. You only pay for node VMs, storage and networking resources consumed in your cluster.
+> The control plane node in your cluster is free. You only pay for node VMs, storage and networking resources consumed in your cluster.
 
 Unless specified, the Azure service creation workflow creates a Kubernetes cluster using default configuration for scaling, authentication, networking and monitoring. Creating an AKS cluster typically takes a few minutes. Once complete, you can change any of the default AKS cluster properties. Access and management of your cluster is done through the Azure portal or from the command line.
 
 ## How workloads are developed and deployed to AKS
 
-![Image showing combined services used to accelerate development and deployment.](../media/3-development-accelerate.png)
+![Diagram that shows combined services used to accelerate development and deployment.](../media/3-development-accelerate.png)
 
 AKS supports the Docker image format. That means that you can use any development environment to create a workload, package the workload as a container and deploy the container as a Kubernetes pod.
 
@@ -30,9 +30,9 @@ AKS also supports all the popular development and management tools such as Helm,
 
 ## Bridge to Kubernetes
 
-Bridge to Kubernetes allows you to run and debug code on your development computer, while still connected to your Kubernetes cluster with the rest of your application or services. 
+Bridge to Kubernetes allows you to run and debug code on your development computer, while still connected to your Kubernetes cluster with the rest of your application or services.
 
-Using Bridge to Kubernetes lets you:
+Bridge to Kubernetes lets you:
 
 - Avoid having to build and deploy code to your cluster. Instead, you create a direct connection from your development computer to your cluster. That allows you to quickly test and develop your service in the context of the full application without creating any Docker or Kubernetes configuration.
 - Redirect traffic between your connected Kubernetes cluster and your development computer. This bridge allows code on your development computer and services running in your Kubernetes cluster to communicate as if they are in the same Kubernetes cluster.

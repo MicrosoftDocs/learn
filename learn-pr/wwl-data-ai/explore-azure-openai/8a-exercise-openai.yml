@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-openai.exercise-openai
-title: Exercise - Explore Azure OpenAI Service
+title: Exercise - Use Azure OpenAI Studio Playground
 metadata:
-  title: Exercise - Explore Azure OpenAI Service
+  title: Exercise - Use Azure OpenAI Studio Playground
   description: "Hands-on exercise with Azure OpenAI Service."
   ms.date: 7/26/2023
   author: sherzyang

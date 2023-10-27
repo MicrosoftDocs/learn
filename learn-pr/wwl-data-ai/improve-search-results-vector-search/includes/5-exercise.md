@@ -1,3 +1,5 @@
-If you're completing this exercise on your own computer, launch the exercise and follow the instructions.
+[!INCLUDE [Lab note](../../../includes/wwl/launch-exercise-note.md)]
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://github.com/MicrosoftLearning/mslearn-knowledge-mining/blob/main/Instructions/Labs/vector-search/vector-search-exercise.md) 
+To complete the lab, launch the exercise and follow the instructions.
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-knowledge-mining/Instructions/Labs/10-vector-search-exercise.html?azure-portal=true) 

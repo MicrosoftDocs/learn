@@ -35,7 +35,7 @@ Access to a key vault requires proper authentication and authorization before a 
 
 Authentication establishes the identity of the caller, while authorization determines the operations that they can do.
 
-Authentication is done via Azure Active Directory. Authorization may be done via role-based access control (RBAC) or Key Vault access policy.
+Authentication is done via Microsoft Entra ID. Authorization may be done via role-based access control (RBAC) or Key Vault access policy.
 
 RBAC is used when dealing with the management of the vaults, and a key vault access policy is used when attempting to access data stored in a vault.
 

@@ -5,7 +5,7 @@ GitHub offers both **SAML** and **SCIM** support.
 | **Provider**                                | **Available Support** |
 | ------------------------------------------- | --------------------- |
 | Active Directory Federation Services (ADFS) | SAML                  |
-| Azure Active Directory (Azure AD)           | SAML and SCIM         |
+| Microsoft Entra ID                          | SAML and SCIM         |
 | Okta                                        | SAML and SCIM         |
 | OneLogin                                    | SAML and SCIM         |
 | PingOne                                     | SAML                  |
@@ -13,4 +13,4 @@ GitHub offers both **SAML** and **SCIM** support.
 
 For more information, see:
 
- -  [Enforcing SAML single sign-on for your organization](https://docs.github.com/organizations/managing-saml-single-sign-on-for-your-organization/enforcing-saml-single-sign-on-for-your-organization).
+ - [Enforcing SAML single sign-on for your organization](https://docs.github.com/organizations/managing-saml-single-sign-on-for-your-organization/enforcing-saml-single-sign-on-for-your-organization).

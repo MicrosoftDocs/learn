@@ -1,4 +1,4 @@
-In this module, you've gained an insight into the core functionality of Microsoft Entra ID and the identity types supported. You also learned about the concept of a hybrid identity model, where all user identities are managed in your on-premises Active Directory Domain Services (AD DS) directory, and changes are synchronized to your Azure AD.
+In this module, you've gained an insight into the core functionality of Microsoft Entra ID and the identity types supported. You also learned about the concept of a hybrid identity model, where all user identities are managed in your on-premises Active Directory Domain Services (AD DS) directory, and changes are synchronized to your Microsoft Entra ID.
 
 Now that you've completed this module, you'll be able to:
 
@@ -21,6 +21,6 @@ For more information on the topics covered in this module, see:
 - [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b)
 - [Properties of a B2B collaboration user](/azure/active-directory/external-identities/user-properties)
 - [What is Microsoft Entra External ID for customers?](/azure/active-directory/external-identities/customers/overview-customers-ciam)
-- [Microsoft Entra ID registered devices](/azure/active-directory/devices/concept-azure-ad-register)
-- [Microsoft Entra ID joined devices](/azure/active-directory/devices/concept-azure-ad-join)
-- [Hybrid Microsoft Entra ID joined devices](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+- [Microsoft Entra registered devices](/azure/active-directory/devices/concept-azure-ad-register)
+- [Microsoft Entra joined devices](/azure/active-directory/devices/concept-azure-ad-join)
+- [Microsoft Entra hybrid joined devices](/azure/active-directory/devices/concept-azure-ad-join-hybrid)

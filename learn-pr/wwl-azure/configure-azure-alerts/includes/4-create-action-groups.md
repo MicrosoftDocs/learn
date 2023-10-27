@@ -16,7 +16,7 @@ You can configure notifications to operate by configuring email or similar commu
 
 :::image type="content" source="../media/alert-notifications-618b4c6f.png" alt-text="Screenshot that shows how to configure notifications for an action group in the Azure portal.":::
 
-In the Azure portal, you can select the **Email Azure Resource Manager role** option to send email notifications to the members of your Azure subscription's role. The system sends email to Azure Active Directory (Azure AD) user members of the role only, and not to Azure AD groups or service principals.
+In the Azure portal, you can select the **Email Azure Resource Manager role** option to send email notifications to the members of your Azure subscription's role. The system sends email to Microsoft Entra user members of the role only, and not to Microsoft Entra groups or service principals.
 
 You can also select the **Email/SMS message/Push/Voice** option to specify any email, SMS, push, or voice actions.
 
