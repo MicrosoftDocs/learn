@@ -7,7 +7,7 @@ SAP doesn't provide recommendations regarding the choice between the two methods
 
 Azure blob snapshot doesn't guarantee file system consistency. This lack of guarantee needs to be accounted for when taking storage snapshots. File system and application consistency are complex issues when taking storage snapshots. The easiest way to avoid problems would be to shut down SAP HANA, or maybe even the whole virtual machine. A shutdown might be doable with a demo or prototype, or even a development system, but it'sn't an option for a production system.
 
-File system consistency is available when using the SAP HANA snapshot feature if there's only a single virtual disk involved. But even with a single disk, there are additional considerations outlined in [SAP Note \#2039883](https://launchpad.support.sap.com/#/notes/2039883). For example, with the XFS file system, it's necessary, to run xfs\_freeze before starting a storage snapshot to guarantee consistency.
+File system consistency is available when using the SAP HANA snapshot feature if there's only a single virtual disk involved. But even with a single disk, there are additional considerations outlined in [SAP Note \#2039883](https://me.sap.com/notes/2039883). For example, with the XFS file system, it's necessary, to run xfs\_freeze before starting a storage snapshot to guarantee consistency.
 
 The subject of consistency becomes even more challenging in a case where a single file system spans multiple disks/volumes. As per the same SAP Note: "the storage system has to guarantee I/O consistency while creating a storage snapshot per SAP HANA data volume, that is, creating a snapshot of an SAP HANA service-specific data volume must be an atomic operation."
 

@@ -18,7 +18,7 @@ Regarding an exact schedule as to when and how often a specific backup type shou
 
 ## SAP HANA configuration files
 
-As stated in the FAQ in [SAP Note \#1642148](https://launchpad.support.sap.com/#/notes/1642148), the SAP HANA configuration files aren't part of a standard HANA backup. They're not essential to restore a system. The HANA configuration could be changed manually after the restore. In case one would like to get the same custom configuration during the restore process, it's necessary to back up the HANA configuration files separately.
+As stated in the FAQ in [SAP Note \#1642148](https://me.sap.com/notes/1642148), the SAP HANA configuration files aren't part of a standard HANA backup. They're not essential to restore a system. The HANA configuration could be changed manually after the restore. In case one would like to get the same custom configuration during the restore process, it's necessary to back up the HANA configuration files separately.
 
 If standard HANA backups are going to a dedicated HANA backup file system, one could also copy the configuration files to the same backup filesystem, and then copy everything together to the final storage destination like cool blob storage.
 

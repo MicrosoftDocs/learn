@@ -34,4 +34,4 @@ To lessen the potential effect on the SAP HANA system from a performance or disk
 
 ### Copy SAP HANA backup files to Azure Files
 
-It is possible to mount an Azure Files share inside an Azure Linux VM. Tests have shown, however, that SAP HANA backup doesn't currently work directly with this kind of CIFS mount. It's also stated in [SAP Note \#1820529](https://launchpad.support.sap.com/#/notes/1820529) that CIFS is not recommended.
+It is possible to mount an Azure Files share inside an Azure Linux VM. Tests have shown, however, that SAP HANA backup doesn't currently work directly with this kind of CIFS mount. It's also stated in [SAP Note \#1820529](https://me.sap.com/notes/1820529) that CIFS is not recommended.

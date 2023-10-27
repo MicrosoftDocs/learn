@@ -40,8 +40,8 @@ When you back up to block blob, the maximum size of the backup is about 12.8 TB.
 
 Automated Backup provides an automatic backup service for SQL Server Standard and Enterprise editions running in a Windows VM in Azure. This service is provided by the SQL Server IaaS Agent Extension, which is automatically installed on SQL Server Windows virtual machine images in the Azure portal. If you deploy your own OS images with SQL Server installed, you need to install the VM extensions separately. More details about the capabilities of this method can be found at:
 
-- [Automated Backup for SQL Server 2014 Virtual Machines (Resource Manager)](/azure/azure-sql/virtual-machines/windows/automated-backup-sql-2014?view=azuresql)
-- [Automated Backup v2 for Azure Virtual Machines (Resource Manager)](/azure/azure-sql/virtual-machines/windows/automated-backup?view=azuresql)
+- [Automated Backup for SQL Server 2014 Virtual Machines (Resource Manager)](/azure/azure-sql/virtual-machines/windows/automated-backup-sql-2014)
+- [Automated Backup v2 for Azure Virtual Machines (Resource Manager)](/azure/azure-sql/virtual-machines/windows/automated-backup)
 
 The theoretical backup size limit is 12 TB. Since multiple blobs are written to in parallel, you can expect a throughput of larger than 100 MB/sec.
 
