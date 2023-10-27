@@ -4,12 +4,12 @@ title: Get started with Face analysis on Azure
 metadata:
   title: Get started with Face analysis on Azure
   description: "Get started with Face analysis on Azure"
-  ms.date: 08/21/2023
+  ms.date: 10/27/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.service: artificial-intelligence
   ms.subservice: face-api
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
-  [!include[](includes/2-face-analysis-azure.md)]
+  [!include[](includes/3-face-analysis-azure.md)]

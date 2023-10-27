@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.detect-analyze-faces.exercise
-title: Exercise - Explore face detection
+title: Exercise - Detect faces in Vision Studio
 metadata:
-  title: Exercise - Explore face detection
-  description: "Exercise - Explore face detection"
-  ms.date: 08/21/2023
+  title: Exercise - Detect faces in Vision Studio
+  description: "Exercise - Detect faces in Vision Studio"
+  ms.date: 10/27/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   ms.subservice: face-api
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-create-face-solutions.md)]
+  [!include[](includes/4-exercise.md)]
