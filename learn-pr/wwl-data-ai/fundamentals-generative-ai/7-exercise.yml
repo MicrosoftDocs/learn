@@ -8,7 +8,7 @@ metadata:
   author: sherzyang
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.service: Azure
   ms.subservice: openai
 durationInMinutes: 10
 content: |
