@@ -2,7 +2,7 @@ One of the most common patterns for loading a data warehouse is to transfer data
 
 ## Creating staging tables
 
-Many organized warehouses have standard structures for staging the database and may even use a specific schema for staging the data. The following code example creates a staging table for product data that will ultimately be loaded into a dimension table:
+Many organized warehouses have standard structures for staging the database and might even use a specific schema for staging the data. The following code example creates a staging table for product data that will ultimately be loaded into a dimension table:
 
 > [!NOTE]
 > This example creates a staging table in the default **dbo** schema. You can also create separate schemas for staging tables with a meaningful name, such as **stage** so architects and users understand the purpose of the schema.
