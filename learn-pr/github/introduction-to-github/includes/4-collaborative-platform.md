@@ -2,7 +2,7 @@ Like we had mentioned earlier, collaboration is at its core of everything GitHub
 
 We went over repositories in the first unit of the module and learned that repositories help you organize your project and its files. 
 
-The last unit we learned about Pull Requests, a way to keep track of changes made to your project.
+The last unit we learned about pull requests, a way to keep track of changes made to your project.
 
 In this unit we’ll be learning about Issues and Discussions, two other pieces that contribute to the collaborative nature of the GitHub Enterprise Platform. 
 
@@ -36,8 +36,8 @@ The different ways to create an issue from:
 
 If the type of issue you'd like to open isn't included in the available options, click Open a blank issue.
 
- 
-(Alt Text of Image: Issue templates menu, with the Open a blank issue option highlighted.)
+ :::image type="content" source="../media/issues-tab.png" alt-text="Issue templates menu, with the Open a blank issue option highlighted." border="false":::
+
 
 5.	In the "Title" field, type a title for your issue.
 6.	In the comment body field, type a description of your issue.
@@ -68,16 +68,12 @@ When you first enable GitHub Discussions, you will be invited to configure a wel
 
 1.	On GitHub.com, navigate to the main page of the repository.
 2.	Under your repository name, click (gear icon) Settings.
-
  
-
-(Alt Text of Image: The top portion of the main page of a repository with the Settings section highlighted.)
-
+ :::image type="content" source="../media/settings-tab.png alt-text="The top portion of the main page of a repository with the Settings section highlighted." border="false":::
 
 3.	Scroll down to the "Features" section and click Set up discussions.
 
- 
-(Alt Text of Image: Get started with Discussions box with the green Set up discussion button highlighted.)
+  :::image type="content" source="../media/set-up-discussion.png alt-text="Get started with Discussions box with the green Set up discussion button highlighted." border="false":::
 
 4.	Under "Start a new discussion," edit the template to align with the resources and tone you want to set for your community.
 5.	Click Start discussion.
@@ -101,8 +97,7 @@ Similarly, since organization discussions are based on a source repository, any 
 
 4.	Select a discussion category by clicking Get started. All discussions must be created in a category. For repository discussions, people with maintain or admin permissions to the repository define the categories for discussions in that repository.
 
- 
-(Alt Text of Image: Select a discussion category menu selection, with the top option Announcements and the get started button highlighted.)
+   :::image type="content" source="../media/annoucements.png alt-text="Select a discussion category menu selection, with the top option Announcements and the get started button highlighted." border="false":::
 
 Each category must have a unique name and emoji pairing, and can be accompanied by a detailed description stating its purpose. Categories help maintainers organize how conversations are filed and are customizable to help distinguish categories that are Q&A or more open-ended conversations. Below are the default categories for discussions and their purpose 
 
