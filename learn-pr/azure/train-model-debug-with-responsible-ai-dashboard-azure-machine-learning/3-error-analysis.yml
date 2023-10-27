@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.subservice: responsible-ai  
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/3-error-analysis.md)]
