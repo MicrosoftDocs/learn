@@ -73,7 +73,7 @@ When you first enable GitHub Discussions, you will be invited to configure a wel
 
 3.	Scroll down to the "Features" section and click Set up discussions.
 
-  :::image type="content" source="../media/set-up-discussion.png alt-text="Get started with Discussions box with the green Set up discussion button highlighted." border="false":::
+  :::image type="content" source="../media/set-up-discussion.png" alt-text="Get started with Discussions box with the green Set up discussion button highlighted." border="false":::
 
 4.	Under "Start a new discussion," edit the template to align with the resources and tone you want to set for your community.
 5.	Click Start discussion.
