@@ -1,5 +1,3 @@
-
-
 Now you have:
 
 - Explored backup and restore of Azure virtual machines.
@@ -25,14 +23,14 @@ Now you have:
 - [Back up Azure VMs in a Recovery Services vault](/azure/backup/backup-azure-arm-vms-prepare)
 - [Application-consistent backup of Azure Linux VMs](/azure/backup/backup-azure-linux-app-consistent)
 - [SQL Server Backup to URL](/sql/relational-databases/backup-restore/sql-server-backup-to-url)
-- [Frequently asked questions for SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql)
+- [Frequently asked questions for SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq)
 - [About SQL Server Backup in Azure VMs](/azure/backup/backup-azure-sql-database)
 - [File-Snapshot Backups for Database Files in Azure](/sql/relational-databases/backup-restore/file-snapshot-backups-for-database-files-in-azure)
 - [About SAP HANA database backup in Azure VMs](/azure/virtual-machines/workloads/sap/sap-hana-backup-file-level)
 - [Recover files from Azure virtual machine backup](/azure/backup/backup-azure-restore-files-from-vm)
-- [Automated Backup for SQL Server 2014 Virtual Machines (Resource Manager)](/azure/azure-sql/virtual-machines/windows/automated-backup-sql-2014?view=azuresql)
-- [Automated Backup v2 for Azure Virtual Machines (Resource Manager)](/azure/azure-sql/virtual-machines/windows/automated-backup?view=azuresql)
+- [Automated Backup for SQL Server 2014 Virtual Machines (Resource Manager)](/azure/azure-sql/virtual-machines/windows/automated-backup-sql-2014)
+- [Automated Backup v2 for Azure Virtual Machines (Resource Manager)](/azure/azure-sql/virtual-machines/windows/automated-backup)
 - [BACKUP DATA CLOSE SNAPSHOT Statement (Backup and Recovery)](https://help.sap.com/viewer/4fe29514fd584807ac9f2a04f6754767/2.0.04/en-US/c39739966f7f4bd5818769ad4ce6a7f8.html)
-- [SAP Note \#2039883](https://launchpad.support.sap.com/#/notes/2039883)
-- [SAP Note \#1642148](https://launchpad.support.sap.com/#/notes/1642148)
-- [SAP Note \#1820529](https://launchpad.support.sap.com/#/notes/1820529)
+- [SAP Note \#2039883](https://me.sap.com/notes/2039883)
+- [SAP Note \#1642148](https://me.sap.com/notes/1642148)
+- [SAP Note \#1820529](https://me.sap.com/notes/1820529)
