@@ -2,7 +2,7 @@ In this module, you learned about the benefits of webhooks. You created a functi
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-If you created a new GitHub repository for your Wiki, you can now delete it.
+If you created a new GitHub repository for this example Wiki, you can now delete it.
 
 ## Learn more
 
