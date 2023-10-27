@@ -75,7 +75,7 @@ If you use the form to set priority values, remember to select **Save & Close** 
 
 The cloud-adoption plan template deploys a sample workload template to show the various different efforts that a migration might require. Depending on the approach you choose to migrate, the tasks needed might vary.
 
-**Asset migration**: At the core of any migration approach is a simple, two-step process that must be completed for each asset: assess compatibility and migrate the asset.Most teams also add basic processes to optimize sizing, configure security and management settings, and document that asset's configuration. You can repeat these tasks for all assets in the digital estate. The template includes links to instructions for completing each task.
+**Asset migration**: At the core of any migration approach is a simple, two-step process that must be completed for each asset: assess compatibility and migrate the asset. Most teams also add basic processes to optimize sizing, configure security and management settings, and document that asset's configuration. You can repeat these tasks for all assets in the digital estate. The template includes links to instructions for completing each task.
 
 Asset migration is fine for small-scale, tactical efforts, but that approach doesn't scale to meet the needs of sophisticated migrations or adoption efforts like the one Tailwind Traders needs to complete.
 
