@@ -36,7 +36,7 @@ Here's a list of what we know about the company's digital estate:
   - Each innovation is transitioned to the IT team upon release, adding to the continued cost burdens.
 - Workloads across the datacenters consist of the following:
   - **Retail innovation**: New innovations that push the boundaries of the retail environment, spanning in-store, online, and throughout the customers' mobile experiences.
-  - **Smart storefronts**: Environmental controls, doors, lighting, interactive shelves, in-store displays and advertisements, and ,ore than 500 point-of-sales systems.
+  - **Smart storefronts**: Environmental controls, doors, lighting, interactive shelves, in-store displays and advertisements, and more than 500 point-of-sales systems.
   - **Corporate headquarters**: More than 900 employees are hosted in corporate headquarters. They use technology systems that cover best-of-breed solutions to support processes across numerous areas. These include real estate, logistics, supply chain, pricing, human resources, employee schedules/tracking, and payroll.
   - **End-user workstations**: Mostly desktop-based with a growing percentage of employees opting for mobile, BYOD (bring your own device), in-store kiosks, and virtual desktop solutions.
   - **Central operations**: The IT team provides ongoing technical operations for all IT and retail innovations assets.
