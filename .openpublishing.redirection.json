@@ -28535,6 +28535,26 @@
       "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/8-understand-responsible-ai.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/8a-understand-responsible-ai",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/2-image-analysis-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/3-image-analysis-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/3a-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/3-analyze-images.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/4-exercise",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/4-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/6-summary",
+      "redirect_document_id": false
     }
     
   ]
