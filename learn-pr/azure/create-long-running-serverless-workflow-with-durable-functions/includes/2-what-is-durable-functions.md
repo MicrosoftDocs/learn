@@ -6,7 +6,7 @@ In this unit, you'll learn about the benefits of Durable Functions. You'll learn
 
 ## Durable functions
 
-Durable Functions is an extension of Azure Functions. Whereas Azure Functions operate in a stateless environment, Durable Functions can retain state between function calls. This approach allows you to simplify complex stateful executions in a serverless environment.
+Durable Functions is an extension of Azure Functions. Whereas Azure Functions operates in a stateless environment, Durable Functions can retain state between function calls. This approach allows you to simplify complex stateful executions in a serverless environment.
 
 Durable Functions scales as needed and provides a cost-effective means of implementing complex workflows in the cloud. Some benefits of using Durable Functions include:
 
