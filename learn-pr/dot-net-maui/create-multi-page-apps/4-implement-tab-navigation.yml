@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: "You have only a few pages in your app and the pages all have equal importance."
       isCorrect: true
-      explanation: "This is the correct answer."
+      explanation: "Yes. Tab navigation works well in this scenario."
     - content: "The app's pages tend to be traversed from general to more specific."
       isCorrect: false
       explanation: "No. Stack navigation is the most appropriate choice for this scenario."
