@@ -69,7 +69,7 @@ When you first enable GitHub Discussions, you will be invited to configure a wel
 1.	On GitHub.com, navigate to the main page of the repository.
 2.	Under your repository name, click (gear icon) Settings.
  
- :::image type="content" source="../media/settings-tab.png alt-text="The top portion of the main page of a repository with the Settings section highlighted." border="false":::
+ :::image type="content" source="../media/settings-tab.png" alt-text="The top portion of the main page of a repository with the Settings section highlighted." border="false":::
 
 3.	Scroll down to the "Features" section and click Set up discussions.
 
@@ -97,7 +97,7 @@ Similarly, since organization discussions are based on a source repository, any 
 
 4.	Select a discussion category by clicking Get started. All discussions must be created in a category. For repository discussions, people with maintain or admin permissions to the repository define the categories for discussions in that repository.
 
-   :::image type="content" source="../media/annoucements.png alt-text="Select a discussion category menu selection, with the top option Announcements and the get started button highlighted." border="false":::
+   :::image type="content" source="../media/annoucements.png" alt-text="Select a discussion category menu selection, with the top option Announcements and the get started button highlighted." border="false":::
 
 Each category must have a unique name and emoji pairing, and can be accompanied by a detailed description stating its purpose. Categories help maintainers organize how conversations are filed and are customizable to help distinguish categories that are Q&A or more open-ended conversations. Below are the default categories for discussions and their purpose 
 
@@ -112,7 +112,7 @@ Each category must have a unique name and emoji pairing, and can be accompanied 
 
 5.	Under "Discussion title", type a title for your discussion, and under "Write", type the body of your discussion.
 
-   :::image type="content" source="../media/start-a-new-discussion.png alt-text="Start a new discussion page with the Discussion title box and content box empty." border="false":::
+   :::image type="content" source="../media/start-a-new-discussion.png" alt-text="Start a new discussion page with the Discussion title box and content box empty." border="false":::
 (Alt Text of Image: Start a new discussion page with the Discussion title box and content box empty. )
 
 6.	Click Start discussion.
