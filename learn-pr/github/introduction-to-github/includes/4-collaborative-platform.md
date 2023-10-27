@@ -101,6 +101,15 @@ Similarly, since organization discussions are based on a source repository, any 
 
 Each category must have a unique name and emoji pairing, and can be accompanied by a detailed description stating its purpose. Categories help maintainers organize how conversations are filed and are customizable to help distinguish categories that are Q&A or more open-ended conversations. Below are the default categories for discussions and their purpose 
 
+| **Category** | **Purpose** | **Format** |
+|----------|----------|----------|
+| :mega: Announcements | Updates and news from project maintainers | Announcement |
+| :hash: General | Anything and everything relevant to the project | Open-ended discussion |
+| :bulb: Ideas | Ideas to change or improve the project | Open-ended discussion |
+| :ballot_box: Polls | Polls with multiple options for the community to vote for and discuss | Polls |
+| :pray: Q&A | Questions for the community to answer, with a question/answer format | Question and Answer |
+| :raised_hands: Show and tell | Creations, experiments, or tests relevant to the project | Open-ended discussion |
+
 5.	Under "Discussion title", type a title for your discussion, and under "Write", type the body of your discussion.
 
 (Alt Text of Image: Start a new discussion page with the Discussion title box and content box empty. )
