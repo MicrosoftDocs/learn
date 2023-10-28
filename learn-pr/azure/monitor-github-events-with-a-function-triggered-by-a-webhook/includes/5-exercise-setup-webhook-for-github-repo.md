@@ -1,4 +1,4 @@
-In this exercise, you'll set up a webhook for a GitHub repository. You'll learn how to listen for specific events (in this case, the *Gollum* event), and how to make your webhook callback to your function when the event is triggered.
+In this exercise, you'll set up a webhook for a GitHub repository. You'll learn how to listen for specific events (in this case, the *Gollum* event), and how to make the webhook callback in your function when the event is triggered.
 
 ## Setup
 
