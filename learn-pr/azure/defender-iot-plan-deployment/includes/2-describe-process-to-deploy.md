@@ -47,13 +47,6 @@ Choose a traffic mirroring method for each OT sensor, such as a SPAN port or TAP
 
 Order any preconfigured appliances and hardware that you intend to use.
 
-### Sample network diagram
-
-A sample network diagram using the information gathered during preperation:
-
-:::image type="content" source="../media/2-network_diagram.png" alt-text="Network Diagram" border="false":::
-<!--should a sample network image be included from here https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/sample-connectivity-models Does the deployment planning need to be reiterated if in the intro? -->
-
 ## Onboard your planned sensors
 
 :::image type="content" source="../media/2-onboard-sensors.png" alt-text="Diagram of an onboard sensors path." border="false":::
