@@ -40,12 +40,12 @@ Now let’s review how to create a pull request!
 2.	In the **Branch** menu, select the branch that contains your commits.
 
  
-:::image type="content" source="..learn-pr/github/introduction-to-github/media/2-new-branch-name-text-box.png alt-text="Image of creating a new branch and naming it." border="false":::
+:::image type="content" source="..learn-pr/github/introduction-to-github/media/2-new-branch-name-text-box.png" alt-text="Image of creating a new branch and naming it." border="false":::
 
 
 3.	Above the list of files, in the yellow banner, select the **Compare & pull request** button to create a pull request for the associated branch.
 
-:::image type="content" source="..learn-pr/github/introduction-to-github/media/2-compare-and-pull -request.png alt-text="Image of an yellow text box, highlighting the green compare and pull request button." border="false":::
+:::image type="content" source="..learn-pr/github/introduction-to-github/media/2-compare-and-pull -request.png" alt-text="Image of an yellow text box, highlighting the green compare and pull request button." border="false":::
 
 
 4.	In the **base branch** dropdown menu select the branch you'd like to merge your changes into.  Then select the **compare branch** dropdown menu to select the topic branch you made your changes in.
@@ -72,7 +72,7 @@ Now let’s review the different statuses of a pull request.
 
 1.	Under your repository name, select **Pull requests**.
 
- :::image type="content" source="..learn-pr/github/introduction-to-github/media/3-pull-request-tab.png alt-text="Image of the top navigation bar of a repo with the Pull request tab highlighted." border="false":::
+ :::image type="content" source="..learn-pr/github/introduction-to-github/media/3-pull-request-tab.png" alt-text="Image of the top navigation bar of a repo with the Pull request tab highlighted." border="false":::
 
 
 2.	In the "Pull Requests" list, select the pull request you'd like to merge.
@@ -81,7 +81,7 @@ Now let’s review the different statuses of a pull request.
 
 -	Merge all of the commits into the base branch by selecting the **Merge pull request** button. If the Merge pull request option isn’t shown, select the merge dropdown menu, select the **Create a merge commit** option, and then select the **Create a merge commit** button.
  
- :::image type="content" source="..learn-pr/github/introduction-to-github/media/3-merge-pull-request.png alt-text="Image of the drop down menu of the green merge pull request button with the Create a merge commit selected." border="false":::
+ :::image type="content" source="..learn-pr/github/introduction-to-github/media/3-merge-pull-request.png" alt-text="Image of the drop down menu of the green merge pull request button with the Create a merge commit selected." border="false":::
 
 
 -	Squash and merge allows you to take all of your commits and combine them into one. This can help you keep your repository history more readable and organized. To do this by selecting the **Squash and merge** option, and then selecting the **Squash and merge** button.
@@ -93,7 +93,7 @@ Now let’s review the different statuses of a pull request.
 5.	If you have more than one email address associated with your account on GitHub.com, select the email address dropdown menu and select the email address to use as the Git author email address. Only verified email addresses appear in this dropdown menu. If you enabled email address privacy, then <username>@users.noreply.github.com is the default commit author email address. 
 
  
- :::image type="content" source="..learn-pr/github/introduction-to-github/media/3-select-author-of-merge.png alt-text="An image of a commit change with a description box and the drop down menu of the email to select as the author of the commit." border="false":::
+ :::image type="content" source="..learn-pr/github/introduction-to-github/media/3-select-author-of-merge.png" alt-text="An image of a commit change with a description box and the drop down menu of the email to select as the author of the commit." border="false":::
 
 
 6.	Select Confirm merge, Confirm squash and merge, or Confirm rebase and merge.
