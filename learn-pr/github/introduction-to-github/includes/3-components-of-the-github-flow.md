@@ -27,13 +27,13 @@ A **commit** is a change to one or more files on a branch. Every time a commit i
  
 :::image type="content" source="../media/2-commits.png" alt-text="A list of GitHub commits to a main branch." border="false":::
 
-Within a git repository, a file can exist in several vaid states as it goes through the version control process:
+Within a git repository, a file can exist in several valid states as it goes through the version control process:
 
 The primary states for a file in a Git repository are:
 
 Untracked: An initial state of a file when it is not yet part of the Git repository. Git is unaware of its existence.
 
-Tracked: A tracked file is one that Git is actively monitoring. It can be in one of the following sub-states:
+Tracked: A tracked file is one that Git is actively monitoring. It can be in one of the following substates:
 
 - Unmodified: The file is tracked, but it has not been modified since the last commit.
 - Modified: The file has been changed since the last commit, but these changes are not yet staged for the next commit.
@@ -62,17 +62,17 @@ Now that we are aware of all the ingredients, let’s review the GitHub flow.
 
 :::image type="content" source="../media/2-branching.png" alt-text=" A visual representation of the GitHub Flow that includes a new branch, commits, pull request, and merging the changes back to main." border="false":::
 
-The GitHub flow can be defined as a lightweight workflow that allows for safe experimentation with new ideas and collaboration on projects through branching, pull requests, and merging. 
+The GitHub flow can be defined as a lightweight workflow that allows for safe experimentation. You can test new ideas and collaboration with your team by using branching, pull requests, and merging. 
 
 Now that we know the basics of GitHub we can walk through the GitHub flow and its components.
 
-1.	The first step of the GitHub flow is creating a branch so that the changes, features, and fixes you create won't affect the main branch. 
+1.	The first step of the GitHub flow is creating a branch so that the changes, features, and fixes you create don't affect the main branch. 
 2.	The second step is to make your changes. We recommend deploying changes to your feature branch before merging into the main branch. Doing so ensures the changes are valid in a production environment. 
 3.	The third step is to create a pull request to ask collaborators for feedback. Pull request review is so valuable that some repositories require an approving review before pull requests can be merged.
 4.	Next is the fourth step of reviewing and implementing your feedback from your collaborators.
-5.	Step five, once you’re feeling great about your changes now it is time to get your pull request approved and merge it into the main branch.
-6.	The sixth and final step is to delete your branch. Deleting your banch signals your work on the branch is completed and prevents you or others from accidentally using old branches. 
+5.	The fifth step, once you’re feeling great about your changes now it is time to get your pull request approved and merge it into the main branch.
+6.	The sixth and final step is to delete your branch. Deleting your branch signals your work on the branch is completed and prevents you or others from accidentally using old branches. 
 
-And that’s it, you’ve just been through a GitHub flow cycle!  
+And that’s it, you’ve been through a GitHub flow cycle!  
 
 Let’s move onto the next section where we’ll cover the differences between issues and discussions.
