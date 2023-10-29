@@ -1,4 +1,5 @@
-In this unit we will be reviewing the following:
+In this unit we are reviewing the following:
+
 -	Branches
 -	Commits 
 -	Pull Requests
@@ -6,13 +7,13 @@ In this unit we will be reviewing the following:
 
 ## What are branches
 
-If you were following along with creating a new file in the last section, you might have just created a new branch in your repositories. 
+In the last section we created a new file in the last section, along the way to you also created a new branch in your repositories. 
 
 Branches are an essential part to the GitHub experience because they are where we can make changes without affecting the entire project we are working on. 
 
-Your branch is a safe place to experiment with new features or fixes. If you make a mistake, you can revert your changes or push additional changes to fix the mistake. Your changes will not end up on the default branch until you merge your branch.
+Your branch is a safe place to experiment with new features or fixes. If you make a mistake, you can revert your changes or push more changes to fix the mistake. Your changes won't update on the default branch until you merge your branch.
 
-Note: If you wanted to do this by simply using git in a terminal the command would be 
+Note: Alternatively, you can do do this by simply using git in a terminal the command would be 
 `git checkout -b newBranchName`
 
 
