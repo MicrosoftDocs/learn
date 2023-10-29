@@ -9,6 +9,7 @@ metadata:
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom: devx-track-python
   zone_pivot_groups: dev-lang-csharp-python
 azureSandbox: false
 labModal: false
