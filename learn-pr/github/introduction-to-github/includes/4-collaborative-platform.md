@@ -2,18 +2,18 @@ Like we had mentioned earlier, collaboration is at its core of everything GitHub
 
 We went over repositories in the first unit of the module and learned that repositories help you organize your project and its files. 
 
-The last unit we learned about pull requests, a way to keep track of changes made to your project.
+The last unit, we learned about pull requests, a way to keep track of changes made to your project.
 
-In this unit we’ll be learning about Issues and Discussions, two other pieces that contribute to the collaborative nature of the GitHub Enterprise Platform. 
+In this unit, we are learning about issues and siscussions, two other pieces that contribute to the collaborative nature of the GitHub Enterprise Platform. 
 
 
 ## Issues
 
 GitHub Issues were created to track ideas, feedback, tasks, or bugs for work on GitHub.
 
-Issues can be created in a variety of ways, so you can choose the most convenient method for your workflow. 
+Issues can be created in various ways, so you can choose the most convenient method for your workflow. 
 
-For the walk through in the next portion we will go over how to create an issue from a repository but just know there are a myriad of ways. Here is a list of all the ways you can create issues from. 
+For the walk-through in the next portion, we'll go over how to create an issue from a repository but just know there are a myriad of ways. Here is a list of all the ways you can create issues from. 
 
 The different ways to create an issue from:
 - a repository
@@ -48,13 +48,13 @@ Some conversations are more suitable for GitHub Discussions.
 
 You can use GitHub Discussions to ask and answer questions, share information, make announcements, and conduct or participate in conversations about a project. 
 
-In the next section we’ll review Discussions and how to best utilize the feature. 
+In the next section, we’ll review Discussions and how to best utilize the feature. 
 
 ## Discussions
 
-Discussions are for conversations that need to be transparent and accessible but do not need to be tracked on a project board and are not related to code. Discussions enable fluid, open conversation in a public forum.
+Discussions are for conversations that need to be accessible to everyone and are not related to code. Discussions enable fluid, open conversation in a public forum.
 
-In this section we’ll be going over:
+In this section we are be going over:
 -	Enabling a discussion in your repository
 -	Creating a new discussion and various discussion categories 
 
@@ -64,21 +64,21 @@ Let’s dive into enabling a discussion in your repository.
 
 Repository owners and people with Write access can enable GitHub Discussions for a community on their public and private repositories. The visibility of a discussion is inherited from the repository the discussion is created in.
 
-When you first enable GitHub Discussions, you will be invited to configure a welcome post.
+When you first enable GitHub Discussions, you are invited to configure a welcome post.
 
 1.	On GitHub.com, navigate to the main page of the repository.
 2.	Under your repository name, click (gear icon) Settings.
  
  :::image type="content" source="../media/settings-tab.png" alt-text="The top portion of the main page of a repository with the Settings section highlighted." border="false":::
 
-3.	Scroll down to the "Features" section and click Set up discussions.
+3.	Scroll down to the "Features" section and click Setup discussions.
 
   :::image type="content" source="../media/set-up-discussion.png" alt-text="Get started with Discussions box with the green Set up discussion button highlighted." border="false":::
 
 4.	Under "Start a new discussion," edit the template to align with the resources and tone you want to set for your community.
 5.	Click Start discussion.
 
-Once you do this you are now ready to create a new discussion.
+You are now ready to create a new discussion.
 
 ### Create a new discussion
 
@@ -99,7 +99,7 @@ Similarly, since organization discussions are based on a source repository, any 
 
    :::image type="content" source="../media/annoucements.png" alt-text="Select a discussion category menu selection, with the top option Announcements and the get started button highlighted." border="false":::
 
-Each category must have a unique name and emoji pairing, and can be accompanied by a detailed description stating its purpose. Categories help maintainers organize how conversations are filed and are customizable to help distinguish categories that are Q&A or more open-ended conversations. Below are the default categories for discussions and their purpose 
+Each category must have a unique name and emoji pairing, and are accompanied by a detailed description stating its purpose. Categories help maintainers organize how conversations are filed and are customizable to help distinguish categories that are Q&A or more open-ended conversations. In the following table are the default categories for discussions and their purpose 
 
 | **Category** | **Purpose** | **Format** |
 |----------|----------|----------|
@@ -110,7 +110,7 @@ Each category must have a unique name and emoji pairing, and can be accompanied 
 | :pray: Q&A | Questions for the community to answer, with a question/answer format | Question and Answer |
 | :raised_hands: Show and tell | Creations, experiments, or tests relevant to the project | Open-ended discussion |
 
-5.	Under "Discussion title", type a title for your discussion, and under "Write", type the body of your discussion.
+5.	Under "Discussion title" type a title for your discussion, and under "Write" type the body of your discussion.
 
    :::image type="content" source="../media/start-a-new-discussion.png" alt-text="Start a new discussion page with the Discussion title box and content box empty." border="false":::
 (Alt Text of Image: Start a new discussion page with the Discussion title box and content box empty. )
