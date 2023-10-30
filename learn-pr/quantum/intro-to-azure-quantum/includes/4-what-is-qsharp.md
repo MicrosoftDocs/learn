@@ -8,8 +8,6 @@ When writing algorithms, we should meet the following requirements for the langu
 
 - **Algorithms must be expressed in terms of abstract qubits, rather than physical qubits.** For large numbers of qubits, the compiler and runtime should manage the mapping from program qubits to logical (error-corrected) qubits, and then eventually to physical qubits. It is also important to be able to express algorithms in terms of abstract qubits to allow for the possibility of a quantum computer with a different topology than the one the algorithm was written for.
 - **Algorithms need to integrate quantum and classical computation.** The ability to perform classical and quantum computations is essential in a *universal* quantum computer, which is the ultimate machine capable of simulate any classical and quantum operation. 
-- **Higher-order protocols, such as phase estimation, must be expressible.** A common pattern in quantum computing is “meta-algorithms” such as these, which operate on other operations rather than on qubits.
-- **Higher-order transformations, such as taking the adjoint of an operation, must be natively expressible.** There are two common ways to derive a new operation from an existing one in quantum computing: taking the adjoint of the operation and controlling the operation with a qubit or multiple qubits.
 - **Algorithms must respect the laws of physics.** For example, copying the state of a qubit should not be possible. Direct access to the qubit state should not be possible, although we allow a certain amount of validation and state examination to facilitate debugging with a simulator.
 
 ## The characteristics of Q\#
