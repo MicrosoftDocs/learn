@@ -1,4 +1,4 @@
-This unit summarizes the [Azure security baseline for App Service](benchmark/azure/baselines/app-service-security-baseline.md) to assist you in creating new requirements specifications for Web workloads.
+This unit summarizes the [Azure security baseline for App Service](/benchmark/azure/baselines/app-service-security-baseline.md) to assist you in creating new requirements specifications for Web workloads.
 
 Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark.
 
