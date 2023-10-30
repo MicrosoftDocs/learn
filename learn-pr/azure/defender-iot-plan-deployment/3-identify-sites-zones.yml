@@ -19,14 +19,14 @@ quiz:
 
   questions:
   
-  - content: "The image has six network segments allocated across two sites and zones. If site 2 has two network segments with the same IP addresses from different production lines, how many zones should you have between the two sites?"
+  - content: "The sites in the previous image have six network segments, currently allocated across two sites and zones. If site 2 has two network segments with the same IP addresses from different production lines, how many zones should you have in total between the two sites?"
     choices:
     - content: "1"
       isCorrect: false
       explanation: "Sites are divided into zones. One site could have one zone but it can't be shared across two sites."
     - content: "2"
       isCorrect: false
-      explanation: "Site 1 can have one zone. However, Site 2 shouldn't have one zone or devices with recurring IP addresses can be consolidated incorrectly, and are identified as separate and unique devices in the device inventory."
+      explanation: "Site 1 can have one zone. However, Site 2 shouldn't have one zone or devices with recurring IP addresses can be consolidated incorrectly in the device inventory."
     - content: "3"
       isCorrect: true
       explanation: "Site 1 can have one zone. Site 2 should be separated into two zones. That way devices in the segments with recurring IP addresses can consolidate correctly, and are identified as separate and unique devices in the device inventory."
@@ -35,10 +35,10 @@ quiz:
     choices:
     - content: "In Defender for IoT, site and zone segmentation are superficial layers that allow security analysts to manage data in smaller amounts at a time."
       isCorrect: false
-      explanation: "Sites and zones are important security features in OT security."
+      explanation: "Sites and zones are important security features for OT security in Defender for IoT that help you implement a Zero Trust security strategy."
     - content: "Segmenting a network into sites and zones allows deployment teams to implement Zero Trust principles and configure  Defender for IoT to monitor for unauthorized traffic crossing segments."
       isCorrect: true
-      explanation: "Defender for IoT supports Zero Trust with sites and zones, among other security strategies."
+      explanation: "Defender for IoT supports Zero Trust with sites and zones and other security strategies."
     - content: "In Defender for IoT, zones allow security analysts to identify traffic coming from different regions around the world. Sites help to organize that traffic further into specific locations."
       isCorrect: false
-      explanation: "Site group devices by geographical location and zones define a functional area within a site."
+      explanation: "In Defender for IoT, sites group devices by geographical location and zones define a functional area within a site."

@@ -8,12 +8,12 @@ The image depicts an OT monitoring deployment path, with the team responsible fo
 
 The phases include:
 
-- Plan and prepare (architecture teams)
-- Onboard your planned sensors (deployment teams)
-- Site networking setup (connectivity teams)
-- Deploy sensors (deployment teams)
-- Calibrate and fine-tune (deployment teams)
-- Baseline learning ends
+- Plan and prepare, done by your architecture teams
+- Onboard your planned sensors, done by your deployment teams
+- Site networking setup, done by your connectivity teams
+- Deploy sensors, done by your deployment teams
+- Calibrate and fine-tune, done by your deployment teams
+- Baseline learning ends with a set of learned network traffic, and operation mode begins
 
 ## Plan and prepare
 
@@ -21,11 +21,11 @@ The phases include:
 
 ### OT site deployment planning
 
-You and your architecture team (such as the network architect and OT engineers) should prepare to deploy Defender for IoT for OT monitoring across your organization. Recall that you're planning to deploy sensors across many distinct types of locations globally including offices and distinct manufacturing systems. Planning includes thinking about:
+You and your architecture team (such as the network architect and OT engineers) should prepare to deploy Defender for IoT for OT monitoring across your organization. Recall that you're planning to deploy sensors across many distinct types of locations globally, including offices and distinct manufacturing systems. Planning includes thinking about:
 
 - **Sites and zones**: How can you segment the networks you want to monitor using sites and zones representing locations in your auto manufacturing organization's global locations?
-- **Sensor management**: Do cloud-connected, air-gapped locally managed, or a hybrid OT sensor system make the most sense to monitor your systems? This case assumes a cloud-connected sensor system. In a cloud-connected system, what connection methods do you need (such as a direct connection or via a proxy)?
-- **Users and roles**: Given the distinct locations and sensor connections, What types of users and user roles are needed on each sensor?
+- **Sensor management**: Does it make the most sense for you to manage your sensors as cloud-connected sensors, air-gapped locally managed sensors, or as a hybrid system? The example in this learn module assumes a cloud-connected sensor system. In a cloud-connected system, think about the connection methods you need (such as a direct connection or via a proxy).
+- **Users and roles**: Given the distinct locations and sensor connections, what types of users and user roles are needed on each sensor?
 
 ### OT site deployment preparation
 
@@ -33,19 +33,19 @@ While planning for your organization, prepare the following items:
 
 - **A network diagram**: What are your overall monitoring goals for your manufacturing organization? Where should you connect? What devices are there and how do they communicate? What are the security and operational risks and the most interesting traffic for those risks?
 
-Create a full list of monitored devices, subnets, switches, vendors, and protocols for verification.
+    Create a full list of monitored devices, subnets, switches, vendors, and protocols for verification.
 
 - **A list of sensors**: What sensors will your organization need? What sites and zones would be appropriate to assign?
 
-Based on the list of traffic, monitored devices, and subnets, make a list of the OT sensors needed and where to place them in your network.
+    Based on the list of traffic, monitored devices, and subnets, make a list of the OT sensors needed and where to place them in your network.
 
 - **Traffic mirroring methods**: What and where are all the switch port types used in your organization and what connector media do you need? How should you deal with unmanaged switches? Is there rack space for a collector? Do you use broadcast or multicast messaging? Which traffic mirroring method best fits your switch port types?
 
-Choose a traffic mirroring method for each OT sensor, such as a SPAN port or TAP.
+    Choose a traffic mirroring method for each OT sensor, such as a SPAN port or TAP.
 
 - **Appliances**: Given the OT sensors needed, what appliances profiles are needed? What preconfigured appliances and what ancillary hardware do you need? Prepare a deployment workstation and any hardware or virtual machines needed.
 
-Order any preconfigured appliances and hardware that you intend to use.
+    Order any preconfigured appliances and hardware that you intend to use.
 
 ## Onboard your planned sensors
 
@@ -87,7 +87,7 @@ You and your deployment teams do the following in the calibration and fine-tunin
 
 - Control OT monitoring on your sensor by ensuring networks are monitored and identified as desired. Configure the subnets, customize port and VLAN names, and configure DHCP address ranges as needed.
 - Verify and update your detected device inventory.
-- Learn OT alerts as authorized traffic to create a network baseline. Review all the alerts in your system to create an initial baseline.
+- Learn OT alerts as authorized traffic to create a network baseline. Review all the alerts in your system to create your initial baseline.
 
 ## Baseline learning ends
 
@@ -95,6 +95,6 @@ You and your deployment teams do the following in the calibration and fine-tunin
 
 Once your sensor is no longer regularly detecting new traffic and you no longer have unhandled alerts, your learning phase ends and the operational mode for ongoing monitoring begins.
 
-In the next units you'll identify the sites and zones appropriate for your auto manufacturer, determine the best connection to the cloud for your needs, and identify the user roles your team members will need.  
+In the next units you'll identify the types of sites and zones appropriate for your auto manufacturer, determine the best connection to the cloud for your needs, and identify the types of user roles your team members will need.  
 
 ## Knowledge check

@@ -31,7 +31,7 @@ In your car manufacturer, you might segment factories and office areas in Paris 
 
 ### Separating zones
 
-We recommend separating sensors with similar characteristics, like recurring IP address ranges, into separate zones when working with multiple networks. This ensures that Defender for IoT differentiates between the devices and identifies each device uniquely.
+Separate sensors with similar characteristics, like recurring IP address ranges, into separate zones when working with multiple networks. This ensures that Defender for IoT differentiates between the devices and identifies each device uniquely.
 
 <!--In the next unit, you'll check your understanding of  organize your car manufacturer's locations into sites and zones based on a network diagram.-->
 
