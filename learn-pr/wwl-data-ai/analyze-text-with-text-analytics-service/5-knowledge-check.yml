@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/15/2023
+  ms.date: 10/30/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "Entity detection"
       isCorrect: false
       explanation: "Incorrect. Entity detection identifies specific types of entity in the document, not the main talking points."
-  - content: "You use Azure AI Language to perform sentiment analysis on a sentence. The confidence scores .04 positive, .36 neutral, and .6 negative are returned. What do these confidence scores indicate about the sentence sentiment?"
+  - content: "You use Azure AI Language to perform sentiment analysis on a sentence. The confidence scores .04 positive, .36 neutral, and .60 negative are returned. What do these confidence scores indicate about the sentence sentiment?"
     choices:
     - content: "The document is positive."
       isCorrect: false
