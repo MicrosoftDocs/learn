@@ -2,9 +2,9 @@
 
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/) using a Global Administrator account.
-2.  Open the portal menu and then select **Microsoft Entra ID**.
-3.  On the **Microsoft Entra ID** screen, under **Manage**, select **App registrations.**
+1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Global Administrator account.
+2.  Open the portal menu and then select **Identity**.
+3.  On the **Identity** menu, under **Applications**, select **App registrations.**
 4.  On the **App registrations** page, on the menu, select **+ New registration**.
 5.  On the **register an application** dialog, register an app named **Demo app** using the default values. You don't need to enter the redirect URI.
     
@@ -29,7 +29,7 @@ To configure application settings based on the platform or device you're targeti
 3.  Under **Platform configurations**, select **Add a platform**.
 4.  In **Configure platforms**, select the tile for your application type (platform) to configure its settings.
     
-    :::image type="content" source="../media/configure-platforms-0b700207.png" alt-text="Screenshot of the Platform configuration pane in the Azure portal.":::
+    :::image type="content" source="../media/configure-platforms-0b700207.png" alt-text="Screenshot of the Platform configuration pane in the Microsoft Entra admin center.":::
     
     
     | **Platform**                    | **Configuration settings**                                                                                                                                                                                                                                                                                                                                                             |
@@ -86,7 +86,7 @@ First, follow these steps to create an example scope named Employees.Read.All:
 3.  Select **Microsoft Entra ID**, then **App registrations**, and then select your API's app registration.
 4.  Select **Expose an API**, then **Add a scope**.
     
-    :::image type="content" source="../media/portal-02-expose-api-5724141a.png" alt-text="Screenshot of an app registration's Expose an API pane in the Azure portal.":::
+    :::image type="content" source="../media/portal-02-expose-api-5724141a.png" alt-text="Screenshot of an app registration's Expose an API pane in the Microsoft Entra admin center.":::
     
 5.  You're prompted to set an **Application ID URI** if you haven't yet configured one. The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form `api://` , or specify a more readable URI like `https://contoso.com/api`.
 6.  Next, specify the scope's attributes in the **Add a scope pane**. For this walk-through, you can use the example values or specify your own.
@@ -101,6 +101,8 @@ First, follow these steps to create an example scope named Employees.Read.All:
     | User consent description   | A more detailed description of the permission granted by the scope. Shown to users only if you set the *Who can consent to Admins and users*.        | Allow the application to have read-only access to your employee data. |
 7.  Set the **State** to **Enabled**, and then select **Add scope**.
 8.  (Optional) To suppress prompting for consent by users of your app to the scopes you've defined, you can *pre-authorize* the client application to access your web API. Pre-authorize *only* those client applications you trust since your users won't have the opportunity to decline consent.
+    
+    
     1.  Under **Authorized client applications**, select **Add a client application.**
     2.  Enter the **Application (client) ID** of the client application you want to pre-authorize. For example, that of a web application you've previously registered.
     3.  Under **Authorized scopes**, select the scopes for which you want to suppress consent prompting, then select **Add application**.
