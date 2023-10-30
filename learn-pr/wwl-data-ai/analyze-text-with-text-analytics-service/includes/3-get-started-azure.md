@@ -71,9 +71,9 @@ You can use the text analytics capabilities in Azure AI Language to detect the l
 |Review 2|Spanish|es|1.0|
 |Review 3|English|en|0.9|
 
-Notice that the language detected for review 3 is English, despite the text containing a mix of English and French. The language detection service will focus on the ***predominant*** language in the text. The service uses an algorithm to determine the predominant language, such as length of phrases or total amount of text for the language compared to other languages in the text. The predominant language will be the value returned, along with the language code. The confidence score may be less than 1 as a result of the mixed language text.
+Notice that the language detected for review 3 is English, despite the text containing a mix of English and French. The language detection service will focus on the ***predominant*** language in the text. The service uses an algorithm to determine the predominant language, such as length of phrases or total amount of text for the language compared to other languages in the text. The predominant language will be the value returned, along with the language code. The confidence score might be less than 1 as a result of the mixed language text.
 
-There may be text that is ambiguous in nature, or that has mixed language content. These situations can present a challenge.  An ambiguous content example would be a case where the document contains limited text, or only punctuation.  For example, using Azure AI Language to analyze the text ":-)", results in a value of **unknown** for the language name and the language identifier, and a score of **NaN** (which is used to indicate *not a number*).
+There might be text that is ambiguous in nature, or that has mixed language content. These situations can present a challenge.  An ambiguous content example would be a case where the document contains limited text, or only punctuation.  For example, using Azure AI Language to analyze the text ":-)", results in a value of **unknown** for the language name and the language identifier, and a score of **NaN** (which is used to indicate *not a number*).
 
 ## Sentiment analysis and opinion mining
 

@@ -48,5 +48,5 @@ We can plot the location of tokens based on these vectors in three-dimensional s
 
 The locations of the tokens in the embeddings space include some information about how closely the tokens are related to one another. For example, the token for "dog" is close to "cat" and also to "bark." The tokens for "cat" and "bark" are close to "meow." The token for "skateboard" is further away from the other tokens.
 
-The language models we use in industry are based on these principles but have greater complexity. For example, the vectors used may have many more dimensions. There are also multiple ways you can calculate appropriate embeddings for a given set of tokens. Different methods result in different predictions from natural language processing models.
+The language models we use in industry are based on these principles but have greater complexity. For example, the vectors used might have many more dimensions. There are also multiple ways you can calculate appropriate embeddings for a given set of tokens. Different methods result in different predictions from natural language processing models.
 
