@@ -48,6 +48,6 @@ When a managed identity is added, deleted, or modified on a running container ap
 
 ### Add a user-assigned identity in the Azure portal
 
-Configuring a container app with a user-assigned identity requires that you first create the identity then add its resource identifier to your container app's configuration. You can create user-assigned identities via the Azure portal or the Azure CLI.
+Configuring a container app with a user-assigned identity requires that you first create the identity then add its resource identifier to your container app's configuration. You can add user-assigned identities via the Azure portal or the Azure CLI.
 
 ![Screenshot showing the User assigned tab of the Identities page for a container app instance.](../media/azure-container-apps-user-assigned-identity.png)
