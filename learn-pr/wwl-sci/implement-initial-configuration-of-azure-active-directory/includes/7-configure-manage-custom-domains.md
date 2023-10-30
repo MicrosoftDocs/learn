@@ -1,6 +1,4 @@
-A domain name is a part of the identifier for many Microsoft Entra resources: it's part of a user name or email address for a user, part of the address for a group, and is sometimes part of the app ID URI for an application. A resource in Microsoft Entra ID can include a domain name that's owned by the organization that contains the resource. Only a Global Administrator can manage domains in Microsoft Entra ID.
-
-<a name='set-the-primary-domain-name-for-your-azure-ad-organization'></a>
+A domain name is a part of the identifier for many Microsoft Entra ID resources: it's part of a user name or email address for a user, part of the address for a group, and is sometimes part of the app ID URI for an application. A resource in Microsoft Entra ID can include a domain name that's owned by the organization that contains the resource. Only a Global Administrator can manage domains in Microsoft Entra ID.
 
 ## Set the primary domain name for your Microsoft Entra organization
 
@@ -12,7 +10,7 @@ When your organization is created, the initial domain name, such as ‘contoso.o
 The primary domain is the default domain name for a new user when you create a new user. Setting a primary domain name streamlines the process for an administrator to create new users in the portal. To change the primary domain name:
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a Global Administrator for the organization.
-2.  Select **Microsoft Entra ID**.
+2.  Select **Microsoft Entra ID.**
 3.  Select **Custom domain names**.
     
     :::image type="content" source="../media/add-custom-domain-b91e0e89.png" alt-text="Screenshot of the Add custom user dialog box. Opening the user management page.":::
@@ -24,8 +22,6 @@ The primary domain is the default domain name for a new user when you create a n
     
 
 You can change the primary domain name for your organization to be any verified custom domain that isn't federated. Changing the primary domain for your organization won't change the user name for any existing users.
-
-<a name='add-custom-domain-names-to-your-azure-ad-organization'></a>
 
 ## Add custom domain names to your Microsoft Entra organization
 
@@ -55,7 +51,7 @@ You must change or delete any such resource in your Microsoft Entra organization
 
 ### ForceDelete option
 
-**ForceDelete** can be used to remove a domain name in the Microsoft Entra Admin Center or using Microsoft Graph API. These options use an asynchronous operation and update all references from the custom domain name like “user@contoso.com” to the initial default domain name such as “user@contoso.onmicrosoft.com.”
+**ForceDelete** can be used to remove a domain name in the Microsoft Entra admin center or using Microsoft Graph API. These options use an asynchronous operation and update all references from the custom domain name like “user@contoso.com” to the initial default domain name such as “user@contoso.onmicrosoft.com.”
 
 To call **ForceDelete** in the Azure portal, you must ensure that there are fewer than 1000 references to the domain name, and any references where Exchange is the provisioning service must be updated or removed in the Exchange Admin Center. Exchange Mail-Enabled Security Groups and distributed lists are included. Also, the **ForceDelete** operation won't succeed if either of the following is true:
 
@@ -71,4 +67,4 @@ The following actions are performed as part of the **ForceDelete** operation:
 An error is returned when:
 
  -  The number of objects to be renamed is greater than 1000
- -  One of the applications to be renamed is a multi-tenant app
+ -  One of the applications to be renamed is a multitenant app

@@ -39,7 +39,7 @@ products:
 - github
 - azure-database-postgresql
 - azure-monitor
-- azure-active-directory
+- entra-id
 subjects:
 - cloud-computing
 modules:
