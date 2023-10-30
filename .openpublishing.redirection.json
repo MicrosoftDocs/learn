@@ -26484,6 +26484,86 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/configure-a-sample-node-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/configure-a-sample-node-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/2-sign-in-users-use-azure-ad-b2c.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/configure-a-sample-node-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/3-exercise-prepare-azure-ad-b2c.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/configure-a-sample-node-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/4-plan-your-node-js-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/configure-a-sample-node-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/5-exercise-create-node-js-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/configure-a-sample-node-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/6-add-authentication-node-js.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/configure-a-sample-node-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/7-exercise-configure-authentication-node-js.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/configure-a-sample-node-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/configure-a-sample-node-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/configure-a-sample-node-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-external-access-with-b2c/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/multi-factor-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-external-access-with-b2c/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/multi-factor-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-external-access-with-b2c/2-b2c-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/multi-factor-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-external-access-with-b2c/3-protect-with-mfa.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/multi-factor-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-external-access-with-b2c/4-configure-b2c-mfa.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/multi-factor-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-external-access-with-b2c/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/multi-factor-authentication",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/enable-single-sign-on/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on/",
       "redirect_document_id": false
