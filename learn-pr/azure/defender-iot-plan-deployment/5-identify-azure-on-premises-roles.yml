@@ -19,7 +19,7 @@ quiz:
 
   questions:
   
-  - content: "What role should be assigned to a team member reviewing sensor data but not making any changes?"
+  - content: "What Azure role should be assigned to a team member reviewing Defender for IoT data in the Azure portal but not making any changes?"
     choices:
     - content: "Security Reader"
       isCorrect: true
@@ -31,7 +31,7 @@ quiz:
       isCorrect: false
       explanation: "Zero Trust least-priviledged access suggests that Security Admin permissions are too high for someone who needs only read access to the sensor data."
 
-  - content: "Suppose you have a group of users who are onboarding OT sensors. What Active Directory group could you assign them to?"
+  - content: "Suppose you have an Active Directory group of users who are onboarding OT sensors. What Azure role should you give this group?"
     choices:
     - content: "OT Security Reader" 
       isCorrect: false

@@ -5,7 +5,7 @@ In the last unit, you organized your car manufacturing organization locations in
 
 ## Cloud-connected sensors
 
-A Cloud-connection has on-premises sensors connected to Defender for IoT via Azure. Sensor detected data is displayed in the sensor console and delivered to Azure for analysis and sharing. Microsoft threat intelligence packages are pushed automatically to cloud-connected sensors. The sensor name defined during onboarding is displayed in the sensor and is read-only from the sensor console.
+A cloud-connection has on-premises sensors connected to Defender for IoT via Azure. Sensor detected data is displayed in the sensor console and delivered to Azure for analysis and sharing. Microsoft threat intelligence packages are pushed automatically to cloud-connected sensors. The sensor name defined during onboarding is displayed in the sensor and is read-only from the sensor console.
 
 ### Connection types
 
@@ -23,8 +23,9 @@ Use the following questions to help you choose the connection for your manufactu
 - Do you need private connectivity between your sensor and Azure?
 - Is your site connected to Azure via ExpressRoute, or over a VPN?
 
-In the image to ensure communication confidentiality, sensors are connected to the Defender for IoT portal in Azure through a proxy in the Azure virtual network.
-:::image type="content" source="../media/4-proxy.png" alt-text="Diagram of a proxy connection using an Azure proxy.":::
+In the following image sensors are connected to the Defender for IoT portal in Azure through a proxy in the Azure virtual network to ensure communication confidentiality.
+
+:::image type="content" source="../media/4-proxy.png" alt-text="Diagram of a proxy connection using an Azure proxy." border="false":::
 
 #### Proxy connections with proxy chaining
 
@@ -33,14 +34,14 @@ In the image to ensure communication confidentiality, sensors are connected to t
 
 Here, sensors connect to the Defender for IoT portal in Azure through multiple proxies.
 
-:::image type="content" source="../media/4-proxy-chaining.png" alt-text="Diagram of a proxy connection using proxy chaining.":::
+:::image type="content" source="../media/4-proxy-chaining.png" alt-text="Diagram of a proxy connection using proxy chaining." border="false":::
 
 #### Direct connection
 
 - Do you want to connect your sensor to Azure directly?
 
 An example of how you can connect your sensors to the Defender for IoT portal in Azure directly over the internet.
-:::image type="content" source="../media/4-direct.png" alt-text="Diagram of a direct cloud connection.":::
+:::image type="content" source="../media/4-direct.png" alt-text="Diagram of a direct cloud connection." border="false":::
 
 #### Multicloud connections
 
@@ -48,9 +49,23 @@ An example of how you can connect your sensors to the Defender for IoT portal in
 
 Consider which connectivity method to use:
 
-- Public IP addresses over the internet
-- site-to-site VPN over the internet
-- ExpressRoute
+- **Public IP addresses over the internet**- use if you don't need to exchange data using private IP addresses.
+- **Site-to-site VPN over the internet**- use if you don't need:
+
+  - Predictable throughput
+  - SLA
+  - High data volume transfers
+  - to avoid connections over the public internet
+- **ExpressRoute** - use if you need:
+  - predictable throughput
+  - SLA
+  - High data volume transfers
+  - To avoid connections over the public internet
+
+If you choose ExpressRoute, use with:
+
+- Customer-managed routing if you want to own and manage the routers making the connection.
+- A cloud exchange provider if you don't need to own and manage the routers making the connection.
 
 <!-- Pattern for complex chunks (repeat as needed) -->
 <!-- ## Air-gapped locally connected sensors

@@ -24,7 +24,7 @@ quiz:
     - content: "Sensor detected data is delivered to Azure for analysis and sharing."
       isCorrect: true
       explanation: "Connecting to the cloud allows you to deliver sensor data to Azure for analysis and sharing. Also to receive Microsoft threat intelligence package updates automatically."
-    - content: "Sensor detected data is delivered to the on-premises management console for analysis and sharing."
+    - content: "Sensor detected data is delivered to an on-premises management console for analysis and sharing."
       isCorrect: false 
       explanation: "You would choose a traffic mirroring method for each OT sensor in the Plan and prepare stage of deployment and configure them in the Site networking setup phase."
     - content: "Sensor data is isolated from the network and viewed from the sensor console."
