@@ -26509,7 +26509,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/3-exercise-prepare-azure-ad-b2c",
+      "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/3-exercise-prepare-azure-ad-b2c.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/configure-a-sample-node-web-app",
       "redirect_document_id": false
     },
