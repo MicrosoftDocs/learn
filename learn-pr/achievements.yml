@@ -2357,3 +2357,16 @@ achievements:
   title: Test Azure AI services
   summary: Learn how to test Azure AI services for data science operations.
   iconUrl: /training/achievements/reactors/test-azure-cognitive-services.svg
+
+- uid: learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.badge
+  type: badge
+  title: Authenticate users in a Node web app by using Azure Active Directory B2C
+  summary:  Learn how to authenticate users into a web app by using Azure Active Directory B2C
+  iconUrl: /training/achievements/authenticate-users-node-web-app-use-azure-active-directory-b2c.svg
+
+
+- uid: learn.enable-external-access-with-b2c.badge
+  type: badge
+  title: Enable secure access to apps for external users with Azure AD B2C
+  summary:  Use Azure AD B2C as the full-featured identity system for your application, and ensure that users are required to sign in securely by using multi-factor authentication.
+  iconUrl: /training/achievements/enable-external-access-with-b2c.svg
