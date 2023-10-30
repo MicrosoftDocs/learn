@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/18/2023
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 title: What is the Azure ExpressRoute service?
 durationInMinutes: 10
 content: |

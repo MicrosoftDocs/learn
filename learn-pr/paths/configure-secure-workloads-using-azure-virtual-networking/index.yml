@@ -13,7 +13,7 @@ prerequisites: ""
 summary: |
   In this learning path, you practice configuring secure access to workloads using Azure virtual networking.
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:

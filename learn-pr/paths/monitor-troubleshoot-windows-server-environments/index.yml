@@ -28,7 +28,7 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
+- entra-id
 - windows-server
 subjects:
 - it-management-monitoring

@@ -10,7 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: cognitive-search
   ms.custom:
-    - devx-track-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 30

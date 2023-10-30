@@ -29,7 +29,7 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
+- entra-id
 - entra
 - windows-server
 subjects:
