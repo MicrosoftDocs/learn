@@ -1,4 +1,4 @@
-To build your code or deploy your software using Azure Pipelines, you need at least one agent. As you add more code and people, you'll eventually need more.
+To build your code or deploy your software using Azure Pipelines, you need at least one agent. Eventually, as you add more code and more people, you need more agents.
 
 When your pipeline runs, the system begins one or more jobs. An agent is computing infrastructure with installed agent software that runs one job at a time.
 
@@ -10,7 +10,7 @@ Azure Pipelines provides several different types of agents.
 | --- | --- | --- |
 |Microsoft-hosted agents | Agents hosted and managed by Microsoft | Azure DevOps Services |
 | Self-hosted agents | Agents that you configure and manage, hosted on your VMs | Azure DevOps Services, Azure DevOps Server, TFS |
-| Azure Virtual Machine Scale Set agents | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be auto-scaled to meet demands | Azure DevOps Services |
+| Azure Virtual Machine Scale Set agents | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be autoscaled to meet demands | Azure DevOps Services |
 
 ### Microsoft-hosted agents
 
@@ -18,7 +18,7 @@ If your pipelines are in Azure Pipelines, then you've got a convenient option to
 
 Azure Pipelines provides a predefined agent pool named Azure Pipelines with Microsoft-hosted agents.
 
-For many teams this is the simplest way to run your jobs. You can try it first and see if it works for your build or deployment. If not, you can use a self-hosted agent.
+For many teams, this approach is the simplest way to run your jobs. You can try it first and see if it works for your build or deployment. If not, you can use a self-hosted agent.
 
 ### Self-hosted agents
 
@@ -66,53 +66,52 @@ The user configuring the agent needs pool admin permissions, but the user runnin
 
 The folders controlled by the agent should be restricted to as few users as possible and they contain secrets that could be decrypted or exfiltrated.
 
-The Azure Pipelines agent is a software product designed to execute code it downloads from external sources. It inherently could be a target for Remote Code Execution (RCE) attacks.
+The Azure Pipelines agent is a software product designed to execute code it downloads from external sources. It could be a target for Remote Code Execution (RCE) attacks.
 
-Therefore, it is important to consider the threat model surrounding each individual usage of Pipelines Agents to perform work, and decide what are the minimum permissions could be granted to the user running the agent, to the machine where the agent runs, to the users who have write access to the Pipeline definition, the git repos where the yaml is stored, or the group of users who control access to the pool for new pipelines.
+Therefore, it's important to consider the threat model surrounding each individual usage of Pipelines agents to perform work.  You need to determine the minimum permissions that could be granted to the following resources:
 
-It is a best practice to have the identity running the agent be different from the identity with permissions to connect the agent to the pool. The user generating the credentials (and other agent-related files) is different than the user that needs to read them. Therefore, it is safer to carefully consider access granted to the agent machine itself, and the agent folders which contain sensitive files, such as logs and artifacts.
+- The user running the agent.
+- The machine where the agent runs.
+- The users who have write access to the Pipeline definition.
+- The git repos where the yaml is stored.
+- The group of users who control access to the pool for new pipelines.
+
+It's a best practice to have the identity running the agent be different from the identity with permissions to connect the agent to the pool. The user generating the credentials (and other agent-related files) is different than the user that needs to read them. Therefore, it's safer to carefully consider access granted to the agent machine itself, and the agent folders that contain sensitive files, such as logs and artifacts.
 
 It makes sense to grant access to the agent folder only for DevOps administrators and the user identity running the agent process. Administrators may need to investigate the file system to understand build failures or get log files to be able to report Azure DevOps failures.
 
-As a one-time step, you must register the agent. Someone with permission to administer the agent queue must complete these steps. The agent will not use this person's credentials in everyday operation, but they're required to complete registration.
+As a one-time step, you must register the agent. Someone with permission to administer the agent queue must complete these steps. The agent doesn't use this person's credentials in everyday operation, but they're required to complete registration.
 
 ### Deploy a self-hosted Windows agent
 
-Use the following steps to get the personal access token for the self-hosted Windows agent:
+The following information describes how to get the personal access token for the self-hosted Windows agent:
 
-1. Sign in with the user account you plan to use in your Azure DevOps organization.
-1. From the home page of your organization, open your user settings, and then select **Personal access tokens**.
+Sign in to DevOps with the user account you plan to use in your Azure DevOps organization. From the home page of your organization, open your user settings, and then select **Personal access tokens**.
 
 ![Screenshot showing user settings selected in an Azure DevOps organization.](../media/windows-self-hosted-agent-select-personal-access-tokens.png)
 
-1. To create a personal access token, select **+ New Token**.
-1. At the bottom of the Create a new personal access token window, to see the complete list of scopes, select **Show all scopes**.
-1. For the scope, select **Agent Pools (read, manage)** and **Deployment group (read, manage)**. Ensure that all the other boxes are cleared.
-1. Copy the token. You'll use this token when you configure the agent.
+To create a personal access token, select **+ New Token**. At the bottom of the Create a new personal access token window, to see the complete list of scopes, select **Show all scopes**. Select the **Agent Pools (read, manage)** and **Deployment group (read, manage)** scopes. Ensure that all the other boxes are cleared. Copy the token. 
 
-Use the following steps to download and configure the agent
+> [!NOTE] You use this token when you configure the agent.
 
-1. Ensure that you’re signed into Azure DevOps as the Azure DevOps organization owner.
-1. Select your DevOps organization, and then select **Organization settings**.
-1. Select **Agent pools**.
-1. On the Get the agent dialog box, select **Windows**.
-1. On the left pane, select the processor architecture of the installed Windows OS version on your machine. The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
-1. On the right pane, select **Download**. Follow the instructions to download the agent.
-1. Create the following folder location for the agent: `C:\agents`
-1. Unpack the agent zip file into the directory you created.
-1. Open PowerShell as an Administrator, navigate to the agents folder, and then enter the following PS command:
+The following information describes how to download and configure the agent.
 
-    ```powershell
-    .\config
-    ```
+Ensure that you’re signed into Azure DevOps as the Azure DevOps organization owner. Select your DevOps organization, and then select **Organization settings**. Next, select **Agent pools**.
 
-1. Use the following screenshot to guide you through the self-hosted agent configuration steps:
+On the Get the agent dialog box, select **Windows**. On the left pane, select the processor architecture of the installed Windows OS version on your machine. The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows. On the right pane, select **Download**, and then follow the instructions to download the agent.
 
-    ![Screenshot showing configuration settings for a self-hosted Windows agent.](../media/windows-self-hosted-agent-configure-agent-pool.png)
+Create the following folder location for the agent: `C:\agents`. Unpack the agent zip file into the directory you created. Open PowerShell as an Administrator, navigate to the agents folder, and then enter the following PS command:
 
-Use the following steps to test/verify the Pipeline
+```powershell
+.\config
+```
 
-1. On your DevOps page, open a project that includes a deployment pipeline.
-1. On the left-side menu, select Pipelines.
-1. Select Run.
-1. Ensure that the deployment is completed successfully.
+Use the following screenshot to guide you through the self-hosted agent configuration steps:
+
+![Screenshot showing configuration settings for a self-hosted Windows agent.](../media/windows-self-hosted-agent-configure-agent-pool.png)
+
+### Test the self-hosted Windows agent
+
+The following information describes how to test/verify the agent using a pipeline.
+
+On your DevOps page, open a project and then create a deployment pipeline. On the left-side menu, select **Pipelines**, and then select your deployment pipeline. Select **Run**, and ensure that the deployment is completed successfully.
