@@ -15,12 +15,6 @@ The QDK includes Q#, a high-level **quantum programming language**. Q# is design
 
 The Quantum Development Kit is designed to be used by a broad range of developers, from experienced quantum experts to developers who have never written a line of quantum code. It is built in to the Azure Quantum portal, where you can develop programs using the free hosted Jupyter Notebooks. You can also install the QDK locally on your computer to use your own local development environment and work both online and offline with the Azure Quantum service.
 
-### Hybrid quantum computing
-
-*Hybrid quantum computing* refers to the processes and architecture of a classical computer and a quantum computer working together to solve a problem. With Azure Quantum you can start programming quantum computers by mixing classical and quantum instructions together. By integrating quantum and classical computing, quantum programs can move away from just circuits. Programs can now use common programming constructs to perform mid-circuit measurements, optimize and reuse qubits, and adapt in real-time to the QPU. Examples of scenarios that can take advantage of this model are adaptive phase estimation and machine learning.
-
-Other examples of hybrid quantum computing are batching and sessions. In Azure Quantum you can group or batch multiple circuits into one job, which eliminates the wait between job submissions, and allows you to run multiple jobs faster. With sessions, you can logically group several of your jobs, making job management easier for you. Also, jobs grouped in sessions are prioritized over nonsession jobs. Examples of problems that can use this approach are Variational Quantum Eigensolvers (VQE) and Quantum Approximate Optimization Algorithms (QAOA).
-
 ### Resource estimation
 
 In quantum computing, resource estimation is the ability to understand the resources, that is, the number of qubits, number of quantum gates, processing time, etc., that will be required to run your algorithm. Understanding the number of qubits required for a quantum solution and the differences between qubit technologies allows innovators to prepare and refine their quantum solutions to run on future scaled quantum machines and ultimately accelerate their quantum impact.
@@ -35,9 +29,9 @@ If you want to know more, check the module [Estimate physical resources for quan
 
 In Azure Quantum, you can find various quantum hardware providers to help you get ready for the future of scaled quantum machines. Unlike other solutions, you're not siloed to a single hardware technology, and you benefit from a full stack approach protecting your long-term investments.
 
-- **IonQ:** IonQ has trapped-ion gate-based quantum computers. They are universal and dynamically reconfigurable in software, providing up to 11 qubits to use in IonQ Harmony QPU and up to 23 qubits to use in IonQ Aria QPU. All qubits are fully connected, meaning you can run a two-qubit gate between any pair. The implementation of quantum gate operations is done by manipulating Ytterbium ions with laser pulses. IonQ also provides a GPU-accelerated quantum simulator supporting up to 29 qubits, using the same set of gates IonQ provides on its quantum hardware.
-- **Quantinuum:** Quantinuum has trapped-ion quantum computers with high-fidelity, fully connected qubits, and qubit reuse. Quantum operations are laser-based gates with low error rates, and have the ability to perform mid-circuit measurements. Both the System Model H1 and H2 generations of hardware use a Quantum Charge-Coupled Device (QCCD) architecture. Quantinuum also provides emulation tools, the System Model H1 and H2 Emulators, which contain detailed physical models and noise models of the actual quantum hardware.
-- **Rigetti:** Rigetti has superconducting quantum processors, which are universal, gate-model machines based on tunable qubits. Their latest Aspen-M family processor is based on proprietary scalable multi-chip technology. System features and device characteristics include enhanced readout capabilities, a speedup in quantum processing times, fast gate times for multiple entangling gate families, rapid sampling via active register reset, and parametric control.
+- **IonQ:** Dynamically reconfigurable trapped-ion quantum computers for up to 11 fully connected qubits, that lets you run a two-qubit gate between any pair.
+- **Quantinuum:** Trapped-ion systems with high-fidelity, fully connected qubits, low error rates, qubit reuse, and the ability to perform mid-circuit measurements.
+- **Rigetti:** Gate-based superconducting processors based on tunable qubits. Their latest Aspen-M family processor is based on proprietary scalable multi-chip technology, enabling low latency and parallel execution.
 
 ### Free Azure Quantum Credits
 

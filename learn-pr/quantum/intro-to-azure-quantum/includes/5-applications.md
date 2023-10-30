@@ -17,10 +17,6 @@ Quantum mechanics is the underlying "operating system" of our universe. It descr
 
 The Quantum Development Kit (QDK) comes with the quantum chemistry library to simulate electronic structure problems and quantum dynamics on a quantum computer. An example of such simulations is the simple molecular energy estimation of the ground state of a molecule.
 
-## Quantum simulation
-
-Quantum computers work exceptionally well for modeling other quantum systems because they use quantum phenomena in their computation. This means that they can handle the complexity and ambiguity of systems that would overload classical computers. Examples of quantum systems that we can model include photosynthesis, superconductivity, and complex molecular formations.
-
 ## Resource estimation
 
 The Azure Quantum Azure Resource Estimator helps you prepare for the future of quantum computing by providing a way to estimate the resources required to run your quantum programs on scaled quantum computers. It helps you answer questions such as what hardware resources are required? How many physical and logical qubits are needed and what type? How long is the run time?
@@ -31,7 +27,7 @@ As a result, you'll be able to refine your algorithms and build solutions that t
 
 One of the goals of quantum computing research is to study which problems can be solved by a quantum computer faster than a classical computer and how large the speedup can be. Two well-known examples are Grover's algorithm and Shor's algorithm, which yield a polynomial and an exponential speedup, respectively, over their classical counterparts.
 
-Shor's algorithm running on a quantum computer could break classical cryptographic schemes such as the Rivest–Shamir–Adleman (RSA) scheme, which is widely used in e-commerce for secure data transmission. This scheme is based on the practical difficulty of factoring prime numbers by using classical algorithms. Quantum cryptography promises information security by harnessing basic physics rather than complexity assumptions.
+Shor's algorithm running on a quantum computer could break classical cryptographic schemes such as the Rivest–Shamir–Adleman (RSA) scheme, which is widely used in e-commerce for secure data transmission. This scheme is based on the practical difficulty of factoring prime numbers by using classical algorithms.
 
 ## Machine learning
 
