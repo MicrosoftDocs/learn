@@ -1,5 +1,5 @@
 **Azure AI Document Intelligence** consists of features grouped by model type:
-- **Prebuilt models** - pretrained models that have been built to process common document types such as invoices, business cards, ID documents, and more. These models are designed to recognise and extract specific fields that are important for each document type. 
+- **Prebuilt models** - pretrained models that have been built to process common document types such as invoices, business cards, ID documents, and more. These models are designed to recognize and extract specific fields that are important for each document type. 
 - **Custom models** - can be trained to identify specific fields that are not included in the existing pretrained models.   
 - **Document analysis** - general document analysis that returns structured data representations, including regions of interest and their inter-relationships. 
 
