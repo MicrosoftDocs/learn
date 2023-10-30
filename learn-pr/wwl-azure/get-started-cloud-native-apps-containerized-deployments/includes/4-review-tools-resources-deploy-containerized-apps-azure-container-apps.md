@@ -80,7 +80,7 @@ The following sections list the resource requirements for an Azure Container App
 
 An Azure Resource Group that contains the following resources:
 
-- Container registry (premium).
+- Container registry (premium) instance with a deployed image.
 - Container App.
 - Container Apps Environment.
 - Virtual network.
@@ -106,5 +106,6 @@ A host environment configured with the following tools:
 
 Azure DevOps project configured as follows:
 
+- A project named `Project1`.
 - A repository for your container app.
 - A Starter pipeline named `Pipeline1`.
