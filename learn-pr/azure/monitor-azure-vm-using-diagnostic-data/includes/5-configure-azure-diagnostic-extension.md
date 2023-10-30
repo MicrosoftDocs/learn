@@ -22,6 +22,8 @@ VM Insights installs *Azure Monitor Agent*, an agent that collects data from ins
 
 ## View VM Insights
 
+VM Insights creates a DCR that sends client VM performance counters to Azure Monitor Logs. Because the DCR sends its metrics to Azure Monitor Logs, you don't use Metrics Explorer to view the metrics data that VM Insights collects.
+
 To view the VM Insights performance graphs and maps:
 
 1. Select **Insights** from the VM's left navigation menu under **Monitoring**.
