@@ -20,9 +20,6 @@ Sites and zones are defined as follows:
 - **Sites** group devices by a specific geographical location, like an office at a specific address.
 - **Zones** define a segment within a site that is a functional area, such as a specific production line.
 
-> [!NOTE]
-> You can further divide zones into *business units* and *regions* from the on-premises management console.
-
 ### Example
 
 In your car manufacturer, you might segment factories and office areas in Paris and Lagos into the following sites and zones:
