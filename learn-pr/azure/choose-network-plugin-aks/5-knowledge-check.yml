@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Kubenet"
       isCorrect: true
-      explanation: "Kubenet is specifically designed with the conservation of IP address space."
+      explanation: "Kubenet is designed with the conservation of IP address space."
     - content: "Azure CNI"
       isCorrect: false
       explanation: "Azure CNI provides more complete connectivity at the cost of greater IP address space usage."
