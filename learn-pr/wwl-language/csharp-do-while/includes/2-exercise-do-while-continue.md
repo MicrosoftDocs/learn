@@ -99,7 +99,7 @@ Let's write code that will keep generating random numbers between 1 and 10 until
 
 1. Review your output.
 
-    Since the numbers generated are random, your results will be different. However, the value `7` will be the last number to be printed as the Boolean expression will evaluate to `true` when 7 is generated and the flow of execution will exit the code.
+    Since the numbers generated are random, your results will be different. However, the value `7` will be the last number to be printed as the Boolean expression will evaluate to `false` when 7 is generated and the flow of execution will exit the code block.
 
     ```Output
     2
