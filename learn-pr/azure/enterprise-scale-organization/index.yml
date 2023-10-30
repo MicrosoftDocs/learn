@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/18/2022
   author: Zimmergren
   ms.author: tozimmergren
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: caf
 title: Organizational design principles for enterprise-scale architecture 
 summary: Evaluate the critical design areas for enterprise enrollment and Microsoft Entra tenants, identity and access management, and management group and subscription organization.
