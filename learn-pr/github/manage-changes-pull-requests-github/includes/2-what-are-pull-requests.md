@@ -90,7 +90,7 @@ Now let’s review the different statuses of a pull request.
 4.	If prompted, enter a commit message, or accept the default message.
 
 
-5.	If you have more than one email address associated with your account on GitHub.com, select the email address dropdown menu and select the email address to use as the Git author email address. Only verified email addresses appear in this dropdown menu. If you enabled email address privacy, then <username>@users.noreply.github.com is the default commit author email address. 
+5.	If you have more than one email address associated with your account on GitHub.com, select the email address dropdown menu and select the email address to use as the Git author email address. Only verified email addresses appear in this dropdown menu. If you enabled email address privacy, then a no reply github email will be the default commit author email address. 
 
  
  :::image type="content" source="../media/3-select-author-of-merge.png" alt-text="An image of a commit change with a description box and the drop down menu of the email to select as the author of the commit." border="false":::
