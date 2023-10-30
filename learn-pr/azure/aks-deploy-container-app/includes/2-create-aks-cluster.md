@@ -26,7 +26,7 @@ There are two popular cluster architectures for Kubernetes-based deployments.
 
 :::image type="content" source="../media/2-1-diagram.png" alt-text="A diagram that shows a single control plane and multiple nodes in a cluster configuration.":::
 
-The *single control plane and multiple nodes* architecture is the most common architectural pattern, and is the easiest to deploy, but it doesn't provide high availability to your cluster's core management services.
+The *single control plane to multiple nodes* per cluster architecture is the most common architectural pattern, and is the easiest to deploy, but it doesn't provide high availability to your cluster's core management services.
 
 If the control plane node becomes unavailable for any reason, no other interaction can happen with the cluster. This problem occurs even if you're the operator, or by any workloads that use Kubernetes' APIs to communicate until, at least, the API server is back online.
 
@@ -38,7 +38,7 @@ If you're dealing with a production scenario, this architecture might not be the
 
 :::image type="content" source="../media/2-2-single-diagram.png" alt-text="A diagram that depicts a single control plane and single node in a cluster configuration.":::
 
-The *single control plane and single node* architecture is a variant of the previous architecture and is used in development environments. This architecture provides only one node that hosts both the control plane and a worker node. It's useful when testing or experimenting with different Kubernetes concepts. The single control plane and single node architecture limits cluster scaling and makes this architecture unsuitable for production and staging use.
+The *single control plane to single node* architecture is a variant of the previous architecture and is used in development environments. This architecture provides only one node that hosts both the control plane and a worker node. It's useful when testing or experimenting with different Kubernetes concepts. The single control plane and single node architecture limits cluster scaling and makes this architecture unsuitable for production and staging use.
 
 ## Configure an AKS cluster
 
@@ -70,7 +70,7 @@ You can change the node count later in the cluster's configuration panel. It's a
 
 A Kubernetes cluster blocks all external communications by default. For example, assume you deploy a website that's accessible to all clients. You need to manually create an *ingress* with an exception that allows incoming client connections to that particular service. This configuration requires network-related changes that forward requests from the client to an internal IP on the cluster, and finally to your application. Depending on your specific requirements, this process can be complicated.
 
-AKS allows you to overcome the complexity by enabling what's called HTTP application routing. This add-on makes it easy to access applications on the cluster through an automatically deployed ingress controller.
+AKS allows you to overcome the complexity by enabling what's called HTTP application routing. The `http-application-routing` add-on makes it easy to access applications on the cluster through an automatically deployed ingress controller.
 
 ### Ingress controllers
 

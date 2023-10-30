@@ -41,7 +41,7 @@ For example, if you wanted to search all workloads related to the `contoso-websi
 
 A Kubernetes deployment is an evolution of pods. A deployment wraps the pods into an intelligent object that allows them to _scale out_. You can easily duplicate and scale your application to support more load without the need to configure complex networking rules.
 
-Deployments allow users to update applications just by changing the image tag without downtime. When you update a deployment, instead of deleting all apps and creating new ones, the deployment turns off the online apps one by one and replaces them with the newest version. This aspect means any deployment can update the pods inside it with no visible effect in availability.
+Deployments allow users to update applications just by changing the image tag without downtime. When you update a deployment, instead of deleting all apps, the deployment turns off the online apps one by one. Then, it replaces them with the newest version. This aspect means any deployment can update the pods inside it with no visible effect in availability.
 
 ## Kubernetes manifest files
 
