@@ -16,7 +16,7 @@ To address the most popular question these days: what's the difference between V
 
 :::image type="content" source="../media/intro-visual-studio-code.png" alt-text="Screenshot of Visual Studio and Visual Studio Code while both IDEs are debugging the same webapp called my first website.":::
 
-Millions of developers all over the world have logged a significant number of hours in Visual Studio, so over the years, significant effort has gone in to making it nice. Imagine working in the same office for years for 40 hours a week. You end up sprucing up the place little by little to make you the most productive. All the features may be a little overwhelming to new users, but hopefully after this learning path, you’ll feel a little more at home.
+Millions of developers all over the world have logged a significant number of hours in Visual Studio, so over the years, significant effort has gone in to making it nice. Imagine working in the same office for years for 40 hours a week. You end up sprucing up the place little by little to make you the most productive. All the features might be a little overwhelming to new users, but hopefully after this learning path, you’ll feel a little more at home.
 
 So with that, Visual Studio is one of the most popular editing environments. A third-party survey recorded it as the second most popular editor, with Visual Studio Code earning the #1 spot. Both are great tools, and each has different advantages. The rest of this module will be diving into more of the functionality of Visual Studio.
 
