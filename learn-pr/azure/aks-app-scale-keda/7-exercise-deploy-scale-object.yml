@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/09/2021
   author: pplavetzki
   ms.author: paplavet
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Deploy a scaler object into your Azure Kubernetes Service cluster
 durationInMinutes: 10
 content: |

@@ -8,8 +8,7 @@ metadata:
   ms.date: 4/5/2021
   author: pplavetzki
   ms.author: paplavet
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]

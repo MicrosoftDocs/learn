@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/13/2021
   author: pplavetzki
   ms.author: paplavet
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Deploy KEDA on an Azure Kubernetes Service cluster
 durationInMinutes: 5
 content: |

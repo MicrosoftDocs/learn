@@ -6,8 +6,7 @@ metadata:
   ms.date: 5/2/2021 
   author: pplavetzki
   ms.author: paplavet 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Concept - Kubernetes scaling options
 durationInMinutes: 5
 content: |
