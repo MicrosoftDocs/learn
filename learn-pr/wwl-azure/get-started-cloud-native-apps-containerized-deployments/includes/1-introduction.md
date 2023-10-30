@@ -1,8 +1,8 @@
-Cloud-native applications are built from the ground up and are optimized for cloud scale and performance. They’re based on microservices architectures, use managed services, and take advantage of continuous delivery to achieve reliability and faster time to market.
+Cloud-native applications are built from the ground up and optimized for cloud scale and performance. They’re based on microservices architectures, use managed services, and take advantage of continuous delivery to achieve reliability and faster time to market.
 
 In this module, you examine cloud-native apps and the options for deploying cloud-native apps on Azure. You review a list of the Azure services that can be used for deployments and compare the different deployment options. You also examine a real-world example of an Azure Container Apps solution architecture and resources.
 
-The goal of this module is to provide an overview of the tools and resources used to deploy containerized apps to Azure Container Apps, including accounts and subscriptions, Azure resources, host environment resources, and continuous deployment resources.
+The goal of this module is to provide an overview of the tools and resources used to deploy containerized apps to Azure Container Apps. This includes accounts and subscriptions, Azure resources, host environment resources, and continuous deployment resources.
 
 ## Learning objectives
 

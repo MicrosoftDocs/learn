@@ -1,10 +1,8 @@
-Cloud-native applications are built from the ground up and are optimized for cloud scale and performance. They’re based on microservices architectures, use managed services, and take advantage of continuous delivery to achieve reliability and faster time to market.
-
-## Cloud infrastructure and the pillars of cloud-native
-
-The speed and agility of cloud-native derive from many factors. Foremost is cloud infrastructure. But there are five other foundational pillars that help provide the bedrock for cloud-native systems.
+The speed and agility of cloud-native derives from many factors. Foremost is cloud infrastructure. But there are five other foundational pillars that help provide the bedrock for cloud-native systems.
 
 ![Illustration showing the foundational pillars of cloud-native.](../media/cloud-native-foundational-pillars.png)
+
+## Cloud infrastructure and the pillars of cloud-native
 
 Cloud-native systems take full advantage of the cloud service model.
 

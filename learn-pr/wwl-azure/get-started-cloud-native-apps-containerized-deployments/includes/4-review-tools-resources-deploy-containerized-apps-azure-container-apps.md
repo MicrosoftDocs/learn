@@ -1,35 +1,44 @@
-Real-world solutions often require a significant number of resources to develop and maintain. Before starting a project that implements new tools and technologies, it can be helpful to examine the tools and architecture of an existing solution.
+A substantial allocation of resources is required to develop and maintain real-world solutions. Before embarking on a project that involves new tools and technologies, it is essential to evaluate existing solutions and architectures.
 
 ## Examine an Azure Container Apps solution
 
-Azure Container Apps is a fully managed environment that enables you to run microservices and containerized applications on a serverless platform. Technically speaking, it's an app-centric abstraction on top of AKS, with native features such as KEDA and Dapr integrated.
+Azure Container Apps is a fully managed environment that enables you to run microservices and containerized applications on a serverless platform. Container Apps offers an app-centric abstraction built on Azure Kubernetes Service (AKS) and incorporates native features like KEDA and Dapr.
 
-The following example project takes the workload used in Microservices architecture on Azure Kubernetes Service and rehosts it in Azure Container Apps as its application platform.
+The following sections examine a reference scenario for Azure Container Apps. Your team begins with a workload structured in a microservices architecture and hosted on Azure Kubernetes Service. After an internal assessment, the team decides to migrate the solution to Azure Container Apps.
 
-### Introduction
+### Reference scenario
 
-Fabrikam inc has created a new operations team, and under its organization is a brownfield application called Drone Delivery. This application has been running for a while in Azure Kubernetes Service (AKS). The team recognizes the benefits gained by using containers to run microservices and by having Kubernetes to host them. However, the team has discovered that they aren't making use of advanced AKS features, such as custom service mesh and autoscaling.
+You work for Fabrikam Inc. as part of a new operations team. The team is responsible for a brownfield application called Drone Delivery that has been running on Azure Kubernetes Service. Although AKS offers valuable features for microservices and Kubernetes hosting, an analysis has detected underutilization, especially with advanced AKS features like custom service mesh and autoscaling.
 
-The team has detected an opportunity to simplify and be more efficient at the devops level. They're going to evaluate using Azure Container Apps to host the Drone Delivery app. Azure Container Apps could help the team to publish and run containerized microservices at scale, faster than before, and with reduce complexity. Azure Container Apps could also save resources by using scale-to-zero and the built-in autoscaling capability. Azure Container Apps provides these benefits without losing all the container advantages the team loves.
+The team identifies an opportunity to simplify their implementation and enhance DevOps efficiency. They plan to evaluate using Azure Container Apps to host the Drone Delivery app. The migration to Container Apps aims to expedite the publication and scaling of containerized microservices, reduce complexity, and save resources. Container Apps retains the container advantages provided by the AKS solution.
 
-### Migration process and architecture
+### Solution architecture
 
-In this example scenario, the Fabrikam Drone Delivery app that was previously running in Azure Kubernetes Services is run in a newly created Azure Container App environment. This application platform is optimized for running applications that span multiple microservices. This example makes some containers face the internet via an HTTPS ingress, and internally accessible thanks to its built-in DNS-based service discovery capability. Additionally, it manages their secrets in a secure manner and authenticates against Azure Key Vault resources using managed identities.
+The Fabrikam Drone Delivery app that was previously running in Azure Kubernetes Services is now run in a newly created Azure Container Apps environment. This environment is optimized for running apps that span multiple microservices. Notable features include:
+
+- Containers accessible via HTTPS ingress for external connections.
+- Internal accessibility through DNS-based service discovery.
+- Secure secrets management.
+- Azure Key Vault resource authentication via managed identities.
 
 ![Diagram showing the deployment architecture for the Azure Container Apps solution.](../media/microservices-with-container-apps-deployment.png)
 
-The following information describes how the Container Apps features are used in this reference implementation:
+### Container Apps features
 
-- HTTPS ingress is used to expose the Ingestion service to internet.
-- Internal service discovery, Delivery, DroneScheduler and Package services must be internally reachable by Workflow service.
-- Use user-assigned identities when authenticating into Azure KeyVault from Delivery and DroneScheduler services.
-- Securely manage secrets for Package, Ingestion and Workflow services.
-- Run containers from any registry, the Fabrikam Drone Delivery uses Azure Container Registry (ACR) to publish its Docker images.
-- Use Revisions in Azure Container Apps to safely deploy updates, where appropriate. The Workflow Service app consumes messages, so it needs to be deployed in single revision mode. Single revision mode prevents old versions from inadvertently retrieving and processing a message.
-- Use ARM templates to deploy the application, there's no need for another layer of indirection like Helm charts. All the Drone Delivery containers are part of the ARM templates
-- Review container logs directly in Log Analytics without configuring any provider from code or Azure service.
+This reference implementation uses Container Apps features in the following ways:
 
-The following Azure resources are used throughout this example scenario.
+- **HTTPS Ingress**: Used to expose the Ingestion service to the internet.
+- **Internal Service Discovery**: Ensures internal services (Delivery, DroneScheduler, and Package) can be reached by the Workflow service.
+- **Managed Identities**: User-assigned managed identities authenticate with Azure KeyVault from Delivery and DroneScheduler services.
+- **Secrets Management**: Secure management of secrets for Package, Ingestion, and Workflow services.
+- **Container Registry**: Fabrikam Drone Delivery leverages Azure Container Registry (ACR) for publishing Docker images.
+- **Revisions**: Azure Container Apps' revision feature is used for safe updates. The Workflow Service, operating as a message consumer, deploys in single revision mode.
+- **ARM Templates**: The application is deployed using ARM templates, simplifying deployment.
+- **Log Analytics**: Container logs are reviewed in Log Analytics without the need for additional configuration.
+
+## Azure resources
+
+The following Azure resources are integral to this scenario:
 
 | Resource | Purpose |
 | --- | --- |
@@ -44,11 +53,9 @@ The following Azure resources are used throughout this example scenario.
 | Five Azure User Managed Identities | These resources provide `Read` and `List secrets` permissions over Azure Key Vault to the microservices. |
 | Five Azure Key Vault instances | Secrets are saved into Azure Key Vault instances. Currently only two out of five instances are being used as part of this reference implementation. |
 
-### Runtime Architecture
+### Runtime architecture
 
-In this scenario, the container images are sourced from Azure Container Registry and deployed to a Container Apps Environment.
-
-The services sharing the same environment benefit from the following capabilities:
+In this scenario, the container images are sourced from Azure Container Registry and deployed to a Container Apps Environment. Since the app services share the same environment, they benefit from the following capabilities:
 
 - Internal ingress and service discovery.
 - A single Log Analytics workspace for runtime logging.
@@ -60,44 +67,44 @@ The workflow uses a hybrid approach to managing secrets. Managed identities are 
 
 ![Diagram showing the runtime architecture for the Azure Container Apps solution.](../media/microservices-with-container-apps-runtime-diagram.png)
 
-## Tools and resources used to deploy containerized apps to Azure Container Apps
+## Tools and resources for an Azure Container Apps solution
 
-It's important to understand the tools and resources required to implement and manage an Azure Container Apps solution. The following sections list your resource requirements.
+The following sections list the resource requirements for an Azure Container Apps solution.
 
 ### Accounts and subscriptions
 
-- Azure subscription
-- GitHub account
+- Azure subscription.
+- GitHub account.
 
 ### Azure resources
 
-An Azure Resource Group (RG1) in Central US location that contains the following resources:
+An Azure Resource Group that contains the following resources:
 
-- Container registry (premium)
-- Container App
-- Container Apps Environment
-- Virtual network
-- Private endpoint
-- Network interface
-- Private DNS zone
-- Managed Identity
-- Service Bus Namespace
-- Log Analytics workspace
-- Storage account
+- Container registry (premium).
+- Container App.
+- Container Apps Environment.
+- Virtual network.
+- Private endpoint.
+- Network interface.
+- Private DNS zone.
+- Managed Identity.
+- Service Bus Namespace.
+- Log Analytics workspace.
+- Storage account.
 
 ### Host environment resources
 
 A host environment configured with the following tools:
 
-- Docker desktop
-- Visual Studio Code with Docker and Azure App Service extensions
-- Azure CLI with `containerapp` extension
-- Windows PowerShell
-- Self-hosted Windows agent
+- Docker desktop.
+- Visual Studio Code with Docker and Azure App Service extensions.
+- Azure CLI with `containerapp` extension.
+- Windows PowerShell.
+- Self-hosted Windows agent.
 
 ## Continuous deployment resources
 
 Azure DevOps project configured as follows:
 
-- A repository for your container app
-- A Starter pipeline named `Pipeline1`
+- A repository for your container app.
+- A Starter pipeline named `Pipeline1`.
