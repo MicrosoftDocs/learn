@@ -1,6 +1,6 @@
 There are many of options for IDEs out there, so you can choose what works best for you! Plenty of developers have both Visual Studio and Visual Studio Code installed and use each for different tasks. The important thing is making sure you have the tools that make you the most productive.
 
-:::image type="content" source="../media/intro-choose.png" alt-text="Picture of a balance graphic with the icons for Visual Studio and Visual Studio code on each side. The balance is level, signifying there are advantages to both.":::
+:::image type="content" source="../media/intro-choose.png" alt-text="Picture of a balance graphic with the icons for Visual Studio and Visual Studio Code on each side. The balance is level, signifying there are advantages to both.":::
 
 ## For beginners
 
