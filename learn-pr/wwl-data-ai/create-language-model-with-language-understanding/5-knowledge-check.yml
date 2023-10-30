@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/16/2023
+  ms.date: 10/30/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -16,12 +16,12 @@ quiz:
   questions:
   - content: "You need to provision an Azure resource that will be used to **author** a new conversational language understanding application. What kind of resource should you create?"
     choices:
-    - content: "Custom Language"
+    - content: "Azure AI Speech"
       isCorrect: false
-      explanation: "Incorrect. Custom Language is not an available type of Azure resource."
-    - content: "Language"
+      explanation: "Incorrect. Azure AI Speech is not a suitable resource for authoring conversational language understanding."
+    - content: "Azure AI Language"
       isCorrect: true
-      explanation: "Correct. To author a conversational language understanding model, you need a Language resource."
+      explanation: "Correct. To author a conversational language understanding model, you need an Azure AI Language resource."
     - content: "Azure AI services"
       isCorrect: false
       explanation: "Incorrect. You can use an Azure AI services resource for conversational language understanding prediction, but not for authoring."
@@ -44,6 +44,6 @@ quiz:
     - content: "The endpoint and key for the application's authoring resource"
       isCorrect: false
       explanation: "Incorrect. The authoring resource is used for authoring; not prediction."
-    - content: "The Azure credentials of the user who published the Language Understanding application"
+    - content: "The Azure credentials of the user who published the language understanding application"
       isCorrect: false
       explanation: "Incorrect. You should not share individual user credentials with other users."
