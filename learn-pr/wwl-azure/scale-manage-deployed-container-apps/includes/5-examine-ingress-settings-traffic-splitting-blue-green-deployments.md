@@ -48,11 +48,11 @@ You can make specific revisions available for requests targeting a particular UR
 
 ### Activation state
 
-In multiple revision mode, you have the ability to activate or deactivate revisions as needed. Active revisions handle requests, while inactive ones remain dormant. It's important to note that Container Apps doesn't charge for inactive revisions, but there's a cap on the total number of available revisions (typically 100), with the oldest revisions being purged once this limit is reached.
+When the revision mode is set to multiple, you have the ability to activate or deactivate revisions as needed. Active revisions handle requests, while inactive ones remain dormant. It's important to note that Container Apps doesn't charge for inactive revisions, but there's a cap on the total number of available revisions (typically 100), with the oldest revisions being purged once this limit is reached.
 
 ## Blue-Green deployment
 
-Blue-Green Deployment is a software release strategy that aims to minimize downtime and reduce the risk associated with deploying new versions of an application. In a blue-green deployment, two identical environments, referred to as "blue" and "green," are set up. One environment (blue) is running the current application version and one environment (green) is running the new application version.
+Blue-Green deployment is a software release strategy that aims to minimize downtime and reduce the risk associated with deploying new versions of an application. In a blue-green deployment, two identical environments, referred to as "blue" and "green," are set up. One environment (blue) is running the current application version and one environment (green) is running the new application version.
 
 Once green environment is tested, the live traffic is directed to it, and the blue environment is used to deploy a new application version during next deployment cycle.
 
@@ -60,19 +60,19 @@ You can enable blue-green deployment in Azure Container Apps by combining contai
 
 ![Diagram showing traffic routing for a blue-green deployment.](../media/azure-container-apps-blue-green-deployment.png)
 
-## Change Types
+## Change types
 
 Changes to a container app can be categorized as either revision-scope changes or application-scope changes.
 
-### Revision-Scope Changes
+### Revision-scope changes
 
-Revision-scope changes trigger the creation of a new revision when you deploy your app. These changes are specific to the revision in which they are deployed. Revision-scope changes include alterations to:
+Revision-scope changes trigger the creation of a new revision when you deploy your app. These changes are specific to the revision in which they're deployed. Revision-scope changes include alterations to:
 
 - Revision suffix.
 - Container configuration and images.
 - Scale rules for the container application.
 
-### Application-Scope Changes
+### Application-scope changes
 
 Application-scope changes, on the other hand, apply globally to all revisions. Deploying an application-scope change doesn't create a new revision. Such changes encompass alterations to:
 
