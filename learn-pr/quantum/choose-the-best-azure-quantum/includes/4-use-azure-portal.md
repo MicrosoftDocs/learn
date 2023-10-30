@@ -1,20 +1,20 @@
-
 The Azure Quantum portal includes a notebook gallery with sample notebooks You can use these notebooks to learn about quantum computing, and to run your own quantum programs.
 
 ## Prerequisites
 
 - An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa) before you begin.
 
-## Create a quantum workspace 
+## Create a quantum workspace
 
 1. Sign in to the [Azure portal](https://portal.azure.com), using the credentials for your Azure subscription.
 1. Select **Create a resource** and then search for **Azure Quantum**. On the results page, you should see a tile for the **Azure Quantum** service.
 1. Select **Azure Quantum** and then select  **Create**. A form to create a workspace will open.
 1. Select a subscription to associate with the new workspace.
 1. Select **Quick create**.
-1. Enter a name for the workspace.
-1. Select the region for the workspace.
-1. Select **Create**. Deployment of your workspace may take a few minutes. The status and deployment details will be updated in the portal.
+1. Enter a **name** and select the **region** for the workspace.
+1. Select **Create**. 
+
+Deployment of your workspace may take a few minutes. The status and deployment details will be updated in the portal.
 
 ## Run a quantum program using Azure Quantum notebooks
 

@@ -1,7 +1,9 @@
 
 To start exploring the Copilot in Azure Quantum, you can copy and paste a simple Q# program into the code window.
 
-1. Navigate to the [Copilot in Azure Quantum](https://quantum.microsoft.com/en-us/experience/quantum-coding) using any Microsoft (MSA) account.
+## Run a quantum program
+
+1. Navigate to the [Copilot in Azure Quantum](https://quantum.microsoft.com/en-us/experience/quantum-coding).
 1. Copy and paste the following code into the code window. This program generates a random integer between 0 and 50.
 
     ```qsharp
@@ -46,6 +48,7 @@ To start exploring the Copilot in Azure Quantum, you can copy and paste a simple
 1. The **Shots** field displays the result for each shot.
 1. Click **Explain code** to prompt the Copilot in Azure Quantum to generate an analysis of the code sample.
 
+## Ask the Copilot
 
 You can prompt the Copilot in Azure Quantum for almost anything quantum related. For example ask the Copilot the following questions and see what happens:
 

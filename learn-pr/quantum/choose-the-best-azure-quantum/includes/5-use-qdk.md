@@ -1,4 +1,3 @@
-
 The Quantum Development Kit (QDK) extension for Visual Studio Code allows you to create and run your programs in a local development environment. 
 
 ## Prerequisites

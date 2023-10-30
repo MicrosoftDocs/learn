@@ -1,4 +1,3 @@
-
 Azure Quantum is available through three different interfaces: the Azure Quantum website, the Azure Quantum portal, and the Quantum Development Kit (QDK) extension.
 
 You can use any of them to explore quantum computing and quantum programming. But what are the differences between them? Which one is the right tool for you? This unit will help you answer these questions.
@@ -51,7 +50,7 @@ The following table might help you decide if you want to use Azure Quantum porta
 
 ## What is the Quantum Development Kit (QDK) extension?
 
-The Quantum Development Kit (QDK) extension is a sofwtare development kit for quantum computing. It is a plugin for Visual Studio Code, a free, open source code editor from Microsoft.
+The Quantum Development Kit (QDK) extension is a software development kit for quantum computing. It is a plugin for Visual Studio Code, a free, open source code editor from Microsoft.
 
 With the QDK extension, you can create, debug, and run Q# programs in a local development environment. You can also use the QDK extension to connect to your Azure Quantum workspace. This allows you to run your Q# programs on the quantum computers and simulators of the providers you selected for your workspace.
 
