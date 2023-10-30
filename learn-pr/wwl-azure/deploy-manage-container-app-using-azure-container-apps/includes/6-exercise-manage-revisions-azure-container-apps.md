@@ -69,17 +69,17 @@ You complete the following tasks during this exercise:
 
     - Ingress type: select **HTTP**.
 
-    - Client certificate mode: **Ignore**.
+    - Client certificate mode: ensure that **Ignore** is selected.
 
-    - Transport: **Auto**.
+    - Transport: ensure that **Auto** is selected.
 
     - Insecure connections: ensure that Allowed is **NOT** checked.
 
-    - Target port: **80**.
+    - Target port: enter **80**
 
-    - IP Security Restrictions Mode: **Allow all traffic**.
+    - IP Security Restrictions Mode: ensure that **Allow all traffic** is selected.
 
-1. At the bottom of the Ingress page, select **Save**.
+1. At the bottom of the Ingress page, select **Save**, and then wait for the update to complete.
 
 1. On the left-side menu, under Revisions, select **Revisions**.
 

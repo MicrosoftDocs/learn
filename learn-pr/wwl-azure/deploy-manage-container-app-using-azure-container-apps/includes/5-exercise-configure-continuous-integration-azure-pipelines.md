@@ -93,8 +93,11 @@ You complete the following tasks during this exercise:
         containerAppName: '<Name>' from Container App resource 
         resourceGroup: '<resource group name>'
     
-    For example: 
-    
+    ```
+
+    Here's an example that shows a YAML configuration snippet:
+
+    ```yml
     trigger:
     - main
     pool:
@@ -134,7 +137,7 @@ You complete the following tasks during this exercise:
 
 In this task, you examine your pipeline and container app to verify successful pipeline runs.
 
-1. Ensure that you have `Pipeline1` open in Azure DevOps.
+1. Ensure that you have `Project1` open in Azure DevOps.
 
 1. On the left side menu, select **Pipelines**, and then select **`Pipeline1`**.
 
@@ -149,3 +152,5 @@ In this task, you examine your pipeline and container app to verify successful p
 1. Verify that a **Create or Update Container App** operation succeeded as a result of running your pipeline.
 
     ![Screenshot of a Container App Activity Log showing a successful Create or Update Container App operation.](../media/pipeline-run-validation-azure-portal.png)
+
+    Notice that the **Event initiated by** column on the right shows your `Project1` as the source.

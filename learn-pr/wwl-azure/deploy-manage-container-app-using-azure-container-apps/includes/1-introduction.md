@@ -25,7 +25,7 @@ In this module, you practice how to:
 
 ## Prerequisites
 
-- Experience using the Azure Portal and Azure CLI to create and manage Azure resources.
+- Experience using the Azure portal and Azure CLI to create and manage Azure resources.
 - Experience using Azure container services, including Azure Container Registry and Azure Container Apps.
 - Experience using Visual Studio Code and Docker to build and push images to a registry would be beneficial.
 - Experience using Azure Virtual Networks would be beneficial.
