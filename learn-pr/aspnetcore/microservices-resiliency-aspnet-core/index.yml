@@ -8,7 +8,7 @@ metadata:
   ms.manager: markl
   ms.date: 07/12/2020
   ms.prod: aspnet-core
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Implement resiliency in a cloud-native ASP.NET Core microservice
 summary: Learn how to make your cloud-native ASP.NET Core microservices app fault-tolerant with minimal impact on the user.
 abstract: |
