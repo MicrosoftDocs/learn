@@ -6,7 +6,7 @@ The Microsoft Entra Privileged Identity Management (PIM) service also allows Pri
 
 Follow these steps to make a user eligible for a Microsoft Entra admin role.
 
-1.  Sign in to the [Azure portal](https://ms.portal.azure.com/) as a tenant administrator.
+1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
 2.  Search for and then select **Microsoft Entra Privileged Identity Management.**
 3.  In the Privileged Identity Management screen, in the left navigation, select **Microsoft Entra roles.**
 4.  On the Quick start page, in the left navigation, select **Roles**.
@@ -25,11 +25,9 @@ Follow these steps to make a user eligible for a Microsoft Entra admin role.
 11. On the **Settings** tab, under **Assignment type**, review the available options. For this task, use the default setting.
     
     
-     -  Eligible assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
+     -  Eligible assignments require the member of the role to perform an action to use the role. Actions might include performing a multifactor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
      -  Active assignments don't require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
 12. Review the remaining settings and then select **Assign**.
-
-<a name='activate-your-azure-ad-roles'></a>
 
 ## Activate your Microsoft Entra roles
 
@@ -52,7 +50,7 @@ When you need to assume a Microsoft Entra role, you can request activation by op
 
 For certain roles, the scope of the granted permissions can be restricted to a single admin unit, service principal, or application. This procedure is an example if assigning a role that has the scope of an administrative unit.
 
-1.  Browse to the Privileged Identity Management screen, and in the left navigation menu, select Azure **AD roles.**
+1.  Browse to the Privileged Identity Management screen, and in the left navigation menu, select **Microsoft Entra roles.**
 2.  In the Roles pane, on the top menu, select **+ Add assignments.**
 3.  In the Add assignments screen, select the **Select role** menu, and then select **User administrator.**
 4.  Select the **Scope type** menu and review the available options. For now, you'll use the **Directory** scope type.

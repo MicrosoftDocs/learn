@@ -27,7 +27,7 @@ levels:
 roles:
   - developer
 products:
-  - azure-active-directory
+  - entra-id
   - msal-python
 subjects:
   - identity-access
