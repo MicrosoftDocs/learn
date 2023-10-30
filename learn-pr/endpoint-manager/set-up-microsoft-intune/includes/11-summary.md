@@ -14,12 +14,15 @@ In this module, you:
 ## Next steps
 
 To learn more about Microsoft Endpoint Manager, continue to the next learning module in this series:
+
 - [Set up tenant attach using Microsoft Endpoint Configuration Manager](/training/modules/setup-tenant-attach-using-configuration-manager/)
 
 To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
+
 - [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/?linkid=845167)
 
-To get expert guidance to help plan, deploy, and migrate your organization to Microsoft Endpoint Manager, continue by learning more about FastTrack: 
+To get expert guidance to help plan, deploy, and migrate your organization to Microsoft Endpoint Manager, continue by learning more about FastTrack:
+
 - [Explore endpoint management support from FastTrack](https://go.microsoft.com/fwlink/?linkid=2143850)
 
 ## Resources

@@ -9,8 +9,7 @@ metadata:
   ms.author: chnoring
   ms.manager: markl
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

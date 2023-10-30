@@ -1,21 +1,21 @@
-Tenant-wide settings are the configuration options that apply to all resources within your tenant as the name implies. These tenant wide options are set in specific places, to control the look, feel, and configuration of your tenant and its members.
+Tenant-wide settings are the configuration options that apply to all resources within your tenant as the name implies. These tenant wide options are set in specific places, to control the look, feel, and configuration of your tenant and its members. The below menu options are based on the Microsoft Entra admin center.
 
 Tenant-wide option
 
  -  **Tenant Properties**
     
     
-     -  Microsoft Entra ID - Properties
+     -  Identity - Overview page - Properties
      -  Where you give the name of your directory and set values like the primary contact
  -  **User Settings**
     
     
-     -  Microsoft Entra ID - Users - User Settings
+     -  Identity - Users - User Settings
      -  Where you define what global rights your users have, like registering applications
  -  **External Collaboration Settings**
     
     
-     -  Microsoft Entra ID - Users - User Settings - Manage external collaboration
+     -  Identity - External I - User Settings - Manage external collaboration
      -  Where you define what task an external guest user can perform like inviting more guest users
 
 ## Configure tenant-wide user settings
@@ -34,13 +34,13 @@ The set of default permissions received depends on whether the user is a native 
 
 The following default permissions for member users can be restricted in the following ways:
 
-| **Permission**                                    | **Setting explanation**                                                                                                                                                                                                                                                                     |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Users can register application                    | By default, member users can register applications.                                                                                                                                                                                                                                         |
-|                                                   | Setting this option to No prevents users from creating application registrations. The ability can then be granted back to specific individuals by adding them to the Application Developer role.                                                                                            |
-| Restrict access to Microsoft Entra administration portal | Setting this option to No lets non-administrators use the Microsoft Entra administration portal to read and manage Microsoft Entra resources. Yes restricts all non-administrators from accessing any Microsoft Entra data in the administration portal.                                                         |
-|                                                   | This setting doesn't restrict access to Microsoft Entra data using PowerShell or other clients such as Visual Studio. When set to Yes, to grant a specific non-admin user the ability to use the Microsoft Entra administration portal assign any administrative role such as the Directory Readers role. |
-|                                                   | This role allows reading basic directory information, which member users have by default (guests and service principals don't).                                                                                                                                                             |
+| **Permission**                                           | **Setting explanation**                                                                                                                                                                                                                                                                                   |
+| -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Users can register application                           | By default, member users can register applications.                                                                                                                                                                                                                                                       |
+|                                                          | Setting this option to No prevents users from creating application registrations. The ability can then be granted back to specific individuals by adding them to the Application Developer role.                                                                                                          |
+| Restrict access to Microsoft Entra administration portal | Setting this option to No lets non-administrators use the Microsoft Entra administration portal to read and manage Microsoft Entra resources. Yes restricts all non-administrators from accessing any Microsoft Entra data in the administration portal.                                                  |
+|                                                          | This setting doesn't restrict access to Microsoft Entra data using PowerShell or other clients such as Visual Studio. When set to Yes, to grant a specific non-admin user the ability to use the Microsoft Entra administration portal assign any administrative role such as the Directory Readers role. |
+|                                                          | This role allows reading basic directory information, which member users have by default (guests and service principals don't).                                                                                                                                                                           |
 
 ### Sign in with LinkedIn
 
@@ -56,7 +56,7 @@ Use sign in with LinkedIn to:
 
 Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more popular. Security defaults make it easier to help protect your organization from these attacks with preconfigured security settings:
 
- -  Requiring all users to register for Microsoft Entra multifactor authentication(MFA).
+ -  Requiring all users to register for multifactor authentication (MFA).
  -  Requiring administrators to perform multifactor authentication.
  -  Blocking legacy authentication protocols.
  -  Requiring users to perform multifactor authentication when necessary.
@@ -73,21 +73,21 @@ Microsoft is making **Security Defaults** available to everyone. The goal is to 
 
 Here you configure the actions that external users can take while using the cloud resources of your tenant.
 
- -  **Guest user access** - Guest users can be given rights to where they operate almost as a full user, to restriction where they can only look at their own content.
- -  **Guest invite settings** - Who can invite guests to join the organization; from guest themselves to only admins.
- -  **Guest self-service up** - Allow guest to partake in self-service options for users.
+ -  **Guest user access** \- Guest users can be given rights to where they operate almost as a full user, to restriction where they can only look at their own content.
+ -  **Guest invite settings** \- Who can invite guests to join the organization; from guest themselves to only admins.
+ -  **Guest self-service up** \- Allow guest to partake in self-service options for users.
 
 ## Configure tenant properties for the directory
 
-:::image type="content" source="../media/tenant-properties-azure-active-directory-d20161ff.png" alt-text="Screenshot of the Microsoft Entra properties dialog box. Configure the definition of your tenant.":::
+:::image type="content" source="../media/tenant-properties-azure-active-directory-d20161ff.png" alt-text="Screenshot of the Microsoft Entra ID properties dialog box. Configure the definition of your tenant.":::
 
 
 Set the basic values that define the look at feel of your tenant within Microsoft Entra ID.
 
- -  **Name** - friendly name for your tenant, for use in the Azure portal
- -  **Country or region** - location of your primary company and the Azure datacenters being used
- -  **Notification language** - language used for sending notifications and alerts
- -  **Tenant ID** - unique identifier for your tenant to be used programatically, as needed
- -  **Technical contact** - primary contact for the tenant, defaults to the user who created the tenant
- -  **Global privacy contact** - user or alias to contact for privacy concerns or issues
- -  **Privacy statement URL** - link to a PDF or webpage containing the privacy rules for your cloud solutions
+ -  **Name** \- friendly name for your tenant, for use in the Azure portal
+ -  **Country or region** \- location of your primary company and the Azure datacenters being used
+ -  **Notification language** \- language used for sending notifications and alerts
+ -  **Tenant ID** \- unique identifier for your tenant to be used programatically, as needed
+ -  **Technical contact** \- primary contact for the tenant (defaults to the user who created the tenant)
+ -  **Global privacy contact** \- user or alias to contact for privacy concerns or issues
+ -  **Privacy statement URL** \- link to a PDF or webpage containing the privacy rules for your cloud solutions

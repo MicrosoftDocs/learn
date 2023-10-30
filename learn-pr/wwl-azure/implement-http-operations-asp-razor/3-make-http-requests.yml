@@ -4,11 +4,13 @@ title: Perform HTTP operations in Razor Pages
 metadata:
   title: Perform HTTP operations in Razor Pages
   description: "Perform HTTP operations in Razor Pages"
-  ms.date: 10/20/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-make-http-requests.md)]

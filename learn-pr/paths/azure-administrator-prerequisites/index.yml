@@ -66,7 +66,7 @@ products:
 - azure-virtual-machines
 - azure-virtual-network
 - azure-clis
-- azure-active-directory
+- entra-id
 - azure-container-instances
 - azure-container-registry
 - azure-storage
