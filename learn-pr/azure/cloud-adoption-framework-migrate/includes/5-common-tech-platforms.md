@@ -12,11 +12,11 @@ The following diagram and table outline several scenarios that follow the same i
 
 *Figure 1: Technology platforms that the Migrate methodology supports.*
 
-| Virtual machines | Applications | Data | Hybrid | Additional scenarios
-|---|---|---|---|---|
-| Servers running Windows Server | ASP.NET | SQL Server | Azure Stack | Secure workloads |
-| Linux servers | Java  | Open-source systems (OSS) databases | VMware | Mainframes |
-| Virtual desktops | PHP | Analytics | Containers | NetApp and SAP HANA |
+| Virtual machines | Applications | Data | Hybrid | Technology platforms | Additional scenarios
+|---|---|---|---|---|---|
+| Servers running Windows Server | ASP.NET | SQL Server | Azure Stack | SAP (classic and HANA) | Secure workloads |
+| Linux servers | Java  | Open-source systems (OSS) databases | VMware | Kubernetes | Multitenant environments |
+| Virtual desktops | PHP | Analytics |  | Mainframes | NetApp |
 
 ## Preparing for common tech platforms
 
