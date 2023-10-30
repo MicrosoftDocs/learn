@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-receipts-form-recognizer.exercise
-title: Exercise - Explore form recognition
+title: Exercise - Extract form data in Document Intelligence Studio
 metadata:
-  title: Exercise - Explore form recognition
-  description: "Exercise - Explore form recognition"
-  ms.date: 08/22/2023
+  title: Exercise - Extract form data in Document Intelligence Studio
+  description: "Exercise - Extract form data in Document Intelligence Studio"
+  ms.date: 10/30/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   ms.subservice: document-intelligence
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-analyze-receipts.md)]
+  [!include[](includes/4-exercise.md)]
