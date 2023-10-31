@@ -8,9 +8,9 @@ In this module, you learned about the Azure PowerShell environment and the Az mo
 
 - The Azure Active Directory module for Windows PowerShell provides cmdlets that you can use for Microsoft Entra administrative tasks such as user management, domain management, and configuring single sign-on. 
 
-- Currently, the Azure Active Directory PowerShell for Graph module doesn't completely replace the functionality of the Azure Active Directory module for Windows PowerShell module for user, group, and license administration. In some cases, you need to use both versions. You can safely install both versions on the same computer.
+- Currently, the [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) for Graph module doesn't completely replace the functionality of the Azure Active Directory module for Windows PowerShell module for user, group, and license administration. In some cases, you need to use both versions. You can safely install both versions on the same computer.
 
-- The Azure AD PowerShell for Graph module has two versions: a Public Preview version and a General Availability version. It isn't recommended to use the Public Preview version for production scenarios.
+- The Microsoft Graph PowerShell for Graph module has two versions: a Public Preview version and a General Availability version. It isn't recommended to use the Public Preview version for production scenarios.
 
 
 ## Additional reading
@@ -19,7 +19,7 @@ To learn more, go through the following documents:
 
 - [Quickstart: Automatically migrate PowerShell scripts from AzureRM to the Az PowerShell module](https://aka.ms/quickstart-automatically-migrate-powershell-scripts-from-azurerm-to-the-az-powershell-module)
 
-- [Install Azure Active Directory PowerShell for Graph​](https://aka.ms/install-azure-active-directory-powershell-for-graph)
+- [Install Microsoft Graph PowerShell for Graph​](https://aka.ms/install-azure-active-directory-powershell-for-graph)
 
 - [AzureAD​](https://aka.ms/azure-ad-2)
 

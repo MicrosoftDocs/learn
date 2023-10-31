@@ -15,7 +15,7 @@ abstract: |
   - Describe the Azure Az PowerShell module.
   - Install the Azure Az PowerShell module.
   - Migrate Azure PowerShell from AzureRM to Az.
-  - Describe the Azure Active Directory module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules.
+  - Describe the Azure Active Directory module for Windows PowerShell and Microsoft Graph PowerShell for Graph modules.
 prerequisites: |
   *   Familiarity with Windows networking technologies and implementation.
   *   Familiarity with Windows Server administration, maintenance, and troubleshooting.
