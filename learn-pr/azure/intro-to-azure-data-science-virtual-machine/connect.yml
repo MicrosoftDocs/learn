@@ -8,8 +8,7 @@ metadata:
   author: jesscioffi
   ms.author: jcioffi
   ms.reviewer: franksolomon 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Using SSH and RDP to connect
 durationInMinutes: 6
 content: |

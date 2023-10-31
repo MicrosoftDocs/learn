@@ -8,8 +8,7 @@ metadata:
   author: jesscioffi
   ms.author: jcioffi
   ms.reviewer: franksolomon 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: What is the Data Science Virtual Machine?
 durationInMinutes: 4
 content: |
