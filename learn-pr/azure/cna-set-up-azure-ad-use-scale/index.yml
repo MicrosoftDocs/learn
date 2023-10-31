@@ -30,7 +30,7 @@ roles:
 - student
 products:
 - azure
-- azure-active-directory
+- entra-id
 subjects:
 - cloud-computing
 units:

@@ -41,6 +41,6 @@ modules:
 # learn.reactors.data-manipulate-clean
 - learn.reactors.introduction-machine-learning-models 
 - learn.reactors.simple-cloud-based-machine-learning
-- learn.reactors.test-azure-cognitive-services
+# learn.reactors.test-azure-cognitive-services
 trophy:
   uid: learn.reactors.beginners-python-data-science.trophy

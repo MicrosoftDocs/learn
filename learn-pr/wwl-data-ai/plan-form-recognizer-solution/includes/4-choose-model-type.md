@@ -6,7 +6,7 @@ In this unit, you'll learn about the prebuilt models available in Azure AI Docum
 
 ## Prebuilt models
 
-Document types such as invoices and receipts vary in different businesses and industry but have similar structures and key-value pairs. For example, a "Total cost" value is likely to appear on almost all invoices although it may be called "Total", "Sum", or some other name. Microsoft has provided a set of prebuilt models with Azure AI Document Intelligence to handle the most common types of documents. You don't have to train these models and you can create solutions using them very quickly.
+Document types such as invoices and receipts vary in different businesses and industry but have similar structures and key-value pairs. For example, a "Total cost" value is likely to appear on almost all invoices although it might be called "Total", "Sum", or some other name. Microsoft has provided a set of prebuilt models with Azure AI Document Intelligence to handle the most common types of documents. You don't have to train these models and you can create solutions using them very quickly.
 
 ### General document analysis models
 
@@ -25,11 +25,11 @@ Three of the prebuilt models are designed to handle general documents and extrac
     :::image type="content" source="../media/04-layout-model.png" alt-text="Screenshot showing the layout model analyzing a document in Azure AI Document Intelligence Studio." lightbox="../media/04-layout-model.png":::
 
 > [!NOTE]
-> The model screenshots above show Azure AI Document Intelligence models extracting data in Azure AI Document Intelligence Studio.
+> The model screenshots above show Document Intelligence models extracting data in Azure AI Document Intelligence Studio.
 
 ### Specific document type models
 
-The five other prebuilt models are each designed to handle, and trained on, a specific and commonly used type of document. 
+The other prebuilt models are each designed to handle, and trained on, a specific and commonly used type of document. Some examples include:
 
 - **Invoice.** Use this model to extract key information from sales invoices in English and Spanish.
 
@@ -47,9 +47,6 @@ The five other prebuilt models are each designed to handle, and trained on, a sp
 - **Business card.** Use this model to extract names and contact details from business cards.
 
     :::image type="content" source="../media/04-business-card-model.png" alt-text="Screenshot showing the business card model analyzing a document in Azure AI Document Intelligence Studio." lightbox="../media/04-business-card-model.png":::
-
-> [!NOTE]
-> At the time of writing, read, general document, and W-2 models are currently in preview.
 
 ## Custom models
 

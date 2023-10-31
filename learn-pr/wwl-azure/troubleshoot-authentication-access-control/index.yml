@@ -28,7 +28,7 @@ roles:
 - support-engineer
 products:
 - azure
-- azure-active-directory
+- entra-id
 - entra
 subjects:
 - cloud-computing

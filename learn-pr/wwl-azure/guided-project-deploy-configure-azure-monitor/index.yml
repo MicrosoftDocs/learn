@@ -17,7 +17,7 @@ abstract: |
   - Configure alerts.
 prerequisites: ""
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:

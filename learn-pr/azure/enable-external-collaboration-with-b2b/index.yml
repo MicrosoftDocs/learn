@@ -27,7 +27,7 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-active-directory
+- entra-id
 subjects:
 - collaboration
 units:
