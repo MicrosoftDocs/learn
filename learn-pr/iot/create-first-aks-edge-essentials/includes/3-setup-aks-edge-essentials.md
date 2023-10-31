@@ -28,24 +28,21 @@ Let's create the Azure virtual machine (VM) with Windows 11 Enterprise.
         --size Standard_D2s_v3
     ```
 
-It takes a few minutes to create the VM and supporting resources. The following example output shows the VM create operation was successful.
+    It takes a few minutes to create the VM and supporting resources. The following example output shows the VM create operation was successful.
 
-```output
-{
-    "fqdns": "",
-    "id": "/subscriptions/6d9888d2-c623-46a2-9848-0e443ef7f578/resourceGroups/learn-a5efd3c2-cc89-4cf0-98b8-6335c0364d82/providers/Microsoft.Compute/virtualMachines/myVM",
-    "location": "westus",
-    "macAddress": "00-0D-3A-37-C7-E2",
-    "powerState": "VM running",
-    "privateIpAddress": "10.0.0.4",
-    "publicIpAddress": "104.40.70.15",
-    "resourceGroup": "learn-a5efd3c2-cc89-4cf0-98b8-6335c0364d82",
-    "zones": ""
-}
-```
-
-> [!NOTE]
-> Take a note your own `publicIpAddress`` in the output when you create your VM. This IP address is used to access the VM later in this article.
+    ```output
+    {
+        "fqdns": "",
+        "id": "/subscriptions/6d9888d2-c623-46a2-9848-0e443ef7f578/resourceGroups/learn-a5efd3c2-cc89-4cf0-98b8-6335c0364d82/providers/Microsoft.Compute/virtualMachines/myVM",
+        "location": "westus",
+        "macAddress": "00-0D-3A-37-C7-E2",
+        "powerState": "VM running",
+        "privateIpAddress": "10.0.0.4",
+        "publicIpAddress": "104.40.70.15",
+        "resourceGroup": "learn-a5efd3c2-cc89-4cf0-98b8-6335c0364d82",
+        "zones": ""
+    }
+    ```
 
 Now that the VM is created, we will prepare the machine for AKS Edge Essentials. We will run Powershell scripts within the Azure Windows VM you just created. Alternatively you could connect from your local machine via Remote Desktop Connection (RDP) and run the Powershell commands there.
 
@@ -159,53 +156,53 @@ Now that the VM is created, we will prepare the machine for AKS Edge Essentials.
     az vm run-command show --name "installAKSEE" --vm-name "myVM" --resource-group <rgn>[sandbox resource group name]</rgn> --instance-view | jq .instanceView.output | sed 's/\\n/\n/g'
     ```
 
-The following example output shows the download and installation of AKS Edge Essentials K3s distribution was successful, and the output of AKS Edge Essentials modules:
+    The following example output shows the download and installation of AKS Edge Essentials K3s distribution was successful, and the output of AKS Edge Essentials modules:
 
-```output
-Transcript started, output file is C:\\aksee\\log.txt
-Step 1 : AKS-Edge download k3s.msi
-Downloading k3s.msi succeeded
-Step 2 : AKS-Edge download windows-node.zip
-Downloading windows-node.zip succeeded
-Step 3 : AKS-Edge install k3s.msi
-Installing k3s.msi succeeded.
-Step 4 : AKS-Edge test modules
+    ```output
+    Transcript started, output file is C:\\aksee\\log.txt
+    Step 1 : AKS-Edge download k3s.msi
+    Downloading k3s.msi succeeded
+    Step 2 : AKS-Edge download windows-node.zip
+    Downloading windows-node.zip succeeded
+    Step 3 : AKS-Edge install k3s.msi
+    Installing k3s.msi succeeded.
+    Step 4 : AKS-Edge test modules
+    
+    Name                            Version  
+    ----                            -------  
+    Add-AksEdgeNode                 1.4.109.0
+    Connect-AksEdgeArc              1.4.109.0
+    Copy-AksEdgeNodeFile            1.4.109.0
+    Disconnect-AksEdgeArc           1.4.109.0
+    Get-AksEdgeDeploymentInfo       1.4.109.0
+    Get-AksEdgeEventLog             1.4.109.0
+    Get-AksEdgeKubeConfig           1.4.109.0
+    Get-AksEdgeLogs                 1.4.109.0
+    Get-AksEdgeManagedServiceToken  1.4.109.0
+    Get-AksEdgeNodeAddr             1.4.109.0
+    Get-AksEdgeNodeConnectivityMode 1.4.109.0
+    Get-AksEdgeNodeName             1.4.109.0
+    Get-AksEdgeUpgrade              1.4.109.0
+    Install-AksEdgeHostFeatures     1.4.109.0
+    Invoke-AksEdgeNodeCommand       1.4.109.0
+    New-AksEdgeConfig               1.4.109.0
+    New-AksEdgeDeployment           1.4.109.0
+    New-AksEdgeScaleConfig          1.4.109.0
+    Remove-AksEdgeDeployment        1.4.109.0
+    Remove-AksEdgeNode              1.4.109.0
+    Set-AksEdgeNodeConnectivityMode 1.4.109.0
+    Set-AksEdgeNodeToDrain          1.4.109.0
+    Set-AksEdgeUpgrade              1.4.109.0
+    Start-AksEdgeControlPlaneUpdate 1.4.109.0
+    Start-AksEdgeNode               1.4.109.0
+    Start-AksEdgeUpdate             1.4.109.0
+    Start-AksEdgeWorkerNodeUpdate   1.4.109.0
+    Stop-AksEdgeNode                1.4.109.0
+    Test-AksEdgeArcConnection       1.4.109.0
+    Test-AksEdgeDeployment          1.4.109.0
+    Test-AksEdgeNetworkParameters   1.4.109.0
+    Test-AksEdgeNode                1.4.109.0
+    ```
 
-Name                            Version  
-----                            -------  
-Add-AksEdgeNode                 1.4.109.0
-Connect-AksEdgeArc              1.4.109.0
-Copy-AksEdgeNodeFile            1.4.109.0
-Disconnect-AksEdgeArc           1.4.109.0
-Get-AksEdgeDeploymentInfo       1.4.109.0
-Get-AksEdgeEventLog             1.4.109.0
-Get-AksEdgeKubeConfig           1.4.109.0
-Get-AksEdgeLogs                 1.4.109.0
-Get-AksEdgeManagedServiceToken  1.4.109.0
-Get-AksEdgeNodeAddr             1.4.109.0
-Get-AksEdgeNodeConnectivityMode 1.4.109.0
-Get-AksEdgeNodeName             1.4.109.0
-Get-AksEdgeUpgrade              1.4.109.0
-Install-AksEdgeHostFeatures     1.4.109.0
-Invoke-AksEdgeNodeCommand       1.4.109.0
-New-AksEdgeConfig               1.4.109.0
-New-AksEdgeDeployment           1.4.109.0
-New-AksEdgeScaleConfig          1.4.109.0
-Remove-AksEdgeDeployment        1.4.109.0
-Remove-AksEdgeNode              1.4.109.0
-Set-AksEdgeNodeConnectivityMode 1.4.109.0
-Set-AksEdgeNodeToDrain          1.4.109.0
-Set-AksEdgeUpgrade              1.4.109.0
-Start-AksEdgeControlPlaneUpdate 1.4.109.0
-Start-AksEdgeNode               1.4.109.0
-Start-AksEdgeUpdate             1.4.109.0
-Start-AksEdgeWorkerNodeUpdate   1.4.109.0
-Stop-AksEdgeNode                1.4.109.0
-Test-AksEdgeArcConnection       1.4.109.0
-Test-AksEdgeDeployment          1.4.109.0
-Test-AksEdgeNetworkParameters   1.4.109.0
-Test-AksEdgeNode                1.4.109.0
-```
-
-> [!NOTE]
-> If the output looks incomplete, run the command again.
+    > [!NOTE]
+    > If the output looks incomplete, run the command again.
