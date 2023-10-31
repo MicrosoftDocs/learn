@@ -1,4 +1,4 @@
-Your company is looking at ways to deploy your cloud-based video rendering service. You've chosen Azure Kubernetes Service (AKS) as your cloud-native development platform. Before you can deploy any application, you need to create your AKS cluster.
+Your company plans to deploy your cloud-based video rendering service using Azure Kubernetes Service (AKS) as your cloud-native development platform. Before you can deploy any application, you need to create your AKS cluster.
 
 Let's review a few concepts so that you can deploy a new AKS cluster successfully.
 
@@ -54,7 +54,7 @@ These items include:
 
 You create *node pools* to group nodes in your AKS cluster. When you create a node pool, you specify the VM size and OS type (Linux or Windows) for each node in the node pool based on application requirement. To host user application pods, node pool **Mode** should be **User** otherwise **System**.
 
-By default, an AKS cluster has a Linux node pool (**System Mode**) whether it's created through Azure portal or CLI. However, you can always add Windows node pools along with default Linux node pools during the creation wizard in the portal, via CLI, or in ARM templates.
+By default, an AKS cluster has a Linux node pool (**System Mode**) whether you create it through the Azure portal or CLI. However, you can configure it to add Windows node pools along with default Linux node pools during the creation wizard in the portal, parameters in CLI, or with ARM templates.
 
 Node pools use Virtual Machine Scale Sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool. New nodes created in the node pool are always the same size as you specified when you created the node pool.
 
@@ -70,7 +70,7 @@ You can change the node count later in the cluster's configuration panel. It's a
 
 A Kubernetes cluster blocks all external communications by default. For example, assume you deploy a website that's accessible to all clients. You need to manually create an *ingress* with an exception that allows incoming client connections to that particular service. This configuration requires network-related changes that forward requests from the client to an internal IP on the cluster, and finally to your application. Depending on your specific requirements, this process can be complicated.
 
-AKS allows you to overcome the complexity by enabling what's called HTTP application routing. The `http-application-routing` add-on makes it easy to access applications on the cluster through an automatically deployed ingress controller.
+AKS allows you to overcome the complexity of HTTP application routing. The `web-application-routing` add-on makes it easy to access applications on the cluster through an automatically deployed ingress controller on nginx and handles security.
 
 ### Ingress controllers
 
