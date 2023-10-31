@@ -8,8 +8,7 @@ metadata:
   ms.date: 05/09/2023
   author: SHERMANOUKO
   ms.author: shermanouko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-register-django-web-app.md)]

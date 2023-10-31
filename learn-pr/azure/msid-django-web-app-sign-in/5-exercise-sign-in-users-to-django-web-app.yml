@@ -8,10 +8,9 @@ metadata:
   ms.date: 05/09/2023
   author: SHERMANOUKO
   ms.author: shermanouko
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-python
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-sign-in-users-to-django-web-app.md)]
