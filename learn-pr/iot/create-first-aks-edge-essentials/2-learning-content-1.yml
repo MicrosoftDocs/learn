@@ -1,10 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-first-aks-edge-essentials.exercise
+uid: learn.create-first-aks-edge-essential.learning-content-1
+
 title: |
-  exercise
+  learning-content
 metadata:
   title: |
-    exercise
+    learning-content
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 10/23/2023
   author: asergaz
@@ -24,4 +25,4 @@ metadata:
   ms.service: TODO
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-exercise.md)]
+  [!include[](includes/2-learning-content-1.md)]

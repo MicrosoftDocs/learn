@@ -1,25 +1,14 @@
 ### YamlMime:Module
 uid: learn.create-first-aks-edge-essentials
 metadata:
-  title: |
-    create-first-aks-edge-essentials            # Title must be "(verb) your first (thing) by using (product)"
+  title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
   description: "TODO"               # Copy your 'apply' Learning Objective here (see below)
   ms.date: 10/23/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: asergaz        # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: sergaz             # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: module-build-your-first # Please don't edit, used for our analytics
-### Keep either ms.prod or ms.service, but not both
-### The list of ms.prod    values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-###
-  ms.prod: TODO
-  ms.service: TODO
-###########################################################################
-###
-### Title must be "(verb) your first (thing) by using (product)"
-###
-title: |
-  create-first-aks-edge-essentials
+  ms.service: aks-edge-essentials
+title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
 ###########################################################################
 ###
 ### Summary
@@ -114,30 +103,28 @@ roles:
 ### Use a value from the product taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
 ###
 products:
-  {{products}}
+- azure
+- aks-edge-essentials
+- windows-iot
 ###########################################################################
 ###
 ### Specify the subject areas.
 ### Use value(s) from the subject taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject)
 ###
 subjects:
-  - TODO
+- iot
+- container
 ###########################################################################
 ###
 ### The units will be populated automatically during scaffold generation.
 ###
 units:
-- learn.create-first-aks-edge-essential.introduction
-- learn.create-first-aks-edge-essential.learning-content
-- learn.create-first-aks-edge-essential.exercise
-- learn.create-first-aks-edge-essential.learning-content
-- learn.create-first-aks-edge-essential.exercise
-- learn.create-first-aks-edge-essential.knowledge-check
-- learn.create-first-aks-edge-essential.summary
-###########################################################################
-###
-### TODO verify your badge
-###
+- learn.create-first-aks-edge-essentials.introduction
+- learn.create-first-aks-edge-essential.learning-content-1
+- learn.create-first-aks-edge-essential.exercise-1
+- learn.create-first-aks-edge-essentials.learning-content
+- learn.create-first-aks-edge-essentials.exercise
+- learn.create-first-aks-edge-essentials.knowledge-check
+- learn.create-first-aks-edge-essentials.summary
 badge:
-  uid: |
-    {{learnRepo}}.create-first-aks-edge-essentials.badge
+  uid: learn.create-first-aks-edge-essentials.badge
