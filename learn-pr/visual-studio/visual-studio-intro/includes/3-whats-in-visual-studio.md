@@ -94,17 +94,21 @@ You can [publish](/visualstudio/deployment) your app directly to the cloud using
 
 :::image type="content" source="../media/intro-publish.png" alt-text="Screenshot of Visual Studio with a Publish dialog open asking if the user wants to publish to Azure, Docker, or a local folder.":::
 
+## Version control
+
+You can use [Git for distributed version control](/visualstudio/version-control/git-with-visual-studio) in Visual Studio. Git is the most widely used modern version-control system. With Git, you can track the code changes you make over time and you can revert to specific versions.
+
 ## AI-assisted development
 
-You can also use Visual Studio's built-in AI-assisted development capabilities, like GitHub Copilot and IntelliCode (which we covered earlier in this unit), to improve your efficiency and productivity.
+You can also use the [AI-assisted development capabilities](/visualstudio/ide/ai-assisted-development-visual-studio) in Visual Studio, like GitHub Copilot and IntelliCode (which we covered earlier in this unit), to improve your efficiency and productivity.
 
 ### GitHub Copilot
 
-You can think of GitHub Copilot in much the same way as you think of pair programming, but with an AI pair programmer. There are two extensions in the Visual Studio Marketplace: the GitHub Copilot extension and the GitHub Copilot chat extension.
+You can think of GitHub Copilot in much the same way as you think of pair programming, but with an AI pair programmer. There are two extensions in the Visual Studio Marketplace: the [GitHub Copilot extension](/visualstudio/ide/visual-studio-github-copilot-extension) and the [GitHub Copilot Chat extension](/visualstudio/ide/visual-studio-github-copilot-chat).
 
-[The GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilotvs) in Visual Studio can help you generate whole lines or blocks of code based on the context you provide. Its AI models are trained on billions of lines of open-source code, and it provides autocomplete-style suggestions as you code in real time.
+GitHub Copilot in Visual Studio can help you generate whole lines or blocks of code based on the context you provide. Its AI models are trained on billions of lines of open-source code, and it provides autocomplete-style suggestions as you code in real time.
 
-The GitHub Copilot chat extension in Visual Studio is an AI-powered chat experience for GitHub Copilot that works within the Visual Studio IDE. It allows you to interact with GitHub Copilot in a chat interface, where you can ask coding-related questions in natural language and get context-specific code suggestions. It can also analyze and explain how your code blocks work, generate unit tests, find issues, and propose fixes. All GitHub Copilot for Individuals users [have access to GitHub Copilot chat](https://github.blog/2023-09-20-github-copilot-chat-beta-now-available-for-all-individuals/#how-developers-can-access-github-copilot-chat-beta), and GitHub Copilot for Business users [have access to a limited beta](https://github.blog/2023-07-20-github-copilot-chat-beta-now-available-for-every-organization/).
+GitHub Copilot Chat in Visual Studio is an AI-powered chat experience for GitHub Copilot that works within the Visual Studio IDE. It allows you to interact with GitHub Copilot in a chat interface, where you can ask coding-related questions in natural language and get context-specific code suggestions. It can also analyze and explain how your code blocks work, generate unit tests, find issues, and propose fixes. You'll need an active [subscription](https://docs.github.com/billing/managing-billing-for-github-copilot/about-billing-for-github-copilot) to [GitHub Copilot for Indivduals](https://docs.github.com/copilot/overview-of-github-copilot/about-github-copilot-for-individuals) or [GitHub Copilot for Business](https://docs.github.com/copilot/overview-of-github-copilot/about-github-copilot-for-business).
 
 ## More to explore
 
