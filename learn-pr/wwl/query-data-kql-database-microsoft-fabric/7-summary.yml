@@ -8,7 +8,5 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: fabric
-  ms.technology: fabric
   ms.service: fabric
 durationInMinutes: 3
