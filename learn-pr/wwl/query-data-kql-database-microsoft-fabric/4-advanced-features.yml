@@ -9,6 +9,6 @@ metadata:
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.service: fabric
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/4-advanced-features.md)]
