@@ -18,6 +18,7 @@ Visual Studio brings the best of development environments to your programming fl
   * Extensions
   * Live Share
   * Publishing tools
+  * Version control
   * AI-assisted development
   * And more!
 * When should I use Visual Studio?
