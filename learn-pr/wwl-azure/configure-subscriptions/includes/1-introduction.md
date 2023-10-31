@@ -1,6 +1,8 @@
-Access to Azure resources and services is obtained through Azure subscriptions. Payment for services is done through Microsoft Cost Management and Billing. Azure Administrators must understand how to choose the Azure subscriptions that support the company's business needs. Financial controllers for the company need to know how to manage the costs of the subscription services for the organization.
+This module provides an overview of Azure subscriptions and their importance in managing costs for organizations.
 
-In this module, your company is moving to the Azure cloud platform. As a first step, you need to identify which Azure subscriptions are needed to support the work scenarios in the organization. You're responsible for obtaining the Azure subscriptions, and for providing input about how to effectively manage the service costs.
+You work for a multinational company that has recently decided to migrate its infrastructure to the cloud. As part of this migration, you have been tasked with managing the costs associated with the company's Azure resources. You need to understand how Azure subscriptions work and how they can help you effectively manage and optimize costs. 
+
+The goal of this module is to equip you with the knowledge and skills to successfully manage Azure subscriptions and control costs for your organization. You learn how Azure subscriptions work and use cost management tools and techniques. You optimize resource usage, prevent overspending, and make informed decisions to achieve cost savings.
 
 ## Learning objectives
 
@@ -22,18 +24,10 @@ In this module, you learn how to:
 
 ## Skills measured
 
-The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
-
-Manage identities and governance in Azure (15-20%)
-
-- Manage subscriptions and governance
-
-   - Apply resource tags
-
-   - Manage subscriptions
-
-   - Configure costs with Microsoft Cost Management
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/credentials/certifications/exams/az-104/). 
 
 ## Prerequisites
 
-None.
+- Familiarity with cloud computing and Azure cloud services.
+- Familiarity with cloud service billing models and subscription methods. 
+- Familiarity with cost management techniques such as reports and budgets. 
