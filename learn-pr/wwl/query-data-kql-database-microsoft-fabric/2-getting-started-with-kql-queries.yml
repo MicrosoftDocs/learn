@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-data-kql-database-microsoft-fabric.getting-started-with-kql-queries
+title: Getting started with KQL queries
+metadata:
+  title: Getting started with KQL queries
+  description: "Getting started with KQL queries"
+  ms.date: 10/31/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: fabric
+  ms.technology: fabric
+  ms.service: fabric
+durationInMinutes: 3

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-data-kql-database-microsoft-fabric.exercise
+title: Exercise
+metadata:
+  title: Exercise
+  description: "Exercise"
+  ms.date: 10/31/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: fabric
+  ms.technology: fabric
+  ms.service: fabric
+durationInMinutes: 3
