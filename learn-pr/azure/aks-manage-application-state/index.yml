@@ -25,6 +25,7 @@ prerequisites: |
   - Basic knowledge of Kubernetes and its concepts
   - Basic knowledge of AKS and its concepts
 iconUrl: /training/achievements/aks-manage-application-state.svg
+hidden: true
 levels:
   - beginner
 roles:
