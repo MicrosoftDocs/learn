@@ -3,7 +3,7 @@ uid: learn.aks-network-design-azure-container-network-interface
 metadata:
   title: Configure Azure CNI networking in Azure Kubernetes Service (AKS)
   description: In this module, you learn about Azure CNI networking and how to configure it in Azure Kubernetes Service (AKS).
-  ms.date: 10/25/2023
+  ms.date: 10/31/2023
   author: rayoef
   ms.author: rayoflores
   ms.topic: interactive-tutorial
@@ -36,11 +36,11 @@ units:
   - learn.aks-network-design-azure-container-network-interface.1-introduction
   - learn.aks-network-design-azure-container-network-interface.2-overview-of-kubernetes-networking
   - learn.aks-network-design-azure-container-network-interface.3-overview-of-azure-cni-networking
-  - learn.aks-network-design-azure-container-network-interface.3-estimating-cluster-size-pods
-  - learn.aks-network-design-azure-container-network-interface.4-estimating-cluster-size-nodes
-  - learn.aks-network-design-azure-container-network-interface.5-sizing the network
-  - learn.aks-network-design-azure-container-network-interface.6-exercise-deploy-aks
-  - learn.aks-network-design-azure-container-network-interface.7-knowledge-check
-  - learn.aks-network-design-azure-container-network-interface.8-summary
+  - learn.aks-network-design-azure-container-network-interface.4-estimating-cluster-size-pods
+  - learn.aks-network-design-azure-container-network-interface.5-estimating-cluster-size-nodes
+  - learn.aks-network-design-azure-container-network-interface.6-sizing the network
+  - learn.aks-network-design-azure-container-network-interface.7-exercise-deploy-aks
+  - learn.aks-network-design-azure-container-network-interface.8-knowledge-check
+  - learn.aks-network-design-azure-container-network-interface.9-summary
 badge:
   uid: learn.aks-network-design-azure-container-network-interface.badge
