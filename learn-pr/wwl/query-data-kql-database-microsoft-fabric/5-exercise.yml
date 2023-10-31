@@ -1,12 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.exercise
-title: Exercise
+title: Exercise - Query a KQL database in Microsoft Fabric
 metadata:
-  title: Exercise
-  description: "Exercise"
+  title: Exercise - Query a KQL database in Microsoft Fabric
+  description: "Exercise - Query a KQL database in Microsoft Fabric"
   ms.date: 10/31/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.service: fabric
-durationInMinutes: 3
+durationInMinutes: 35
+content: |
+  [!include[](includes/5-exercise.md)]
