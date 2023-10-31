@@ -39,9 +39,9 @@ quiz:
     - content: "Two sites, one for each office. Three zones in the Paris site and two zones in the Bengaluru site."
       isCorrect: true
       explanation: "The two geographical locations would be divided into sites and each site has zones based on a floor in the site."
-    - content: "Proxy connections with proxy chaining"
+    - content: "Three sites, one for each office, including the global office. Three zones in the Paris site, two zones in the Bengaluru site, and one site in the global location."
       isCorrect: true
-      explanation: "In Defender for IoT, sites group devices by geographical location and zones define a functional area within a site."
+      explanation: "In Defender for IoT, sites group devices by geographical location and zones define a functional area within a site. A global site isn't necessary for the example."
 
   - content: "Why is it important to segment a network into sites and zones when planning an OT security deployment?"
     choices:
