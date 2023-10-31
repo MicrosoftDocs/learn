@@ -6,8 +6,8 @@
 1. **KQL Queryset limitations**: 
     1. Each tab in the KQL queryset can be associated with a different KQL database, and lets you save queries for later use or share them with others for data analysis
     1. The KQL Queryset uses the Kusto Query Language (KQL) for creating queries, and also supports many SQL functions 
-    
-    > [NOTE]
+
+    > [!NOTE]
     > The use of SQL or SQL Functions within a KQL Queryset removes the ability to build Power BI Reports with it
 
 1. To create a KQL Queryset, you can go to any section within Microsoft Fabric and click on the **Create button** and then scroll to **Create KQL Queryset** as shown in the example, which starts from the **Data Engineering** section.
@@ -54,7 +54,7 @@ As mentioned, T-SQL can be run to a limit extent against a Microsoft Fabric KQL 
 2. **Functionality**: T-SQL has a wider range of functions and features than KQL.
 3. **Procedural programming**: T-SQL supports procedural programming, which allows developers to write complex scripts and stored procedures.
 
-    >![NOTE:]  If you’re familiar with SQL and want to learn KQL, you can translate SQL queries into KQL using the `-- explain syntax`
+    >[!NOTE:]  If you’re familiar with SQL and want to learn KQL, you can translate SQL queries into KQL using the `-- explain syntax`
     > For example: 
     >    ```tsql
     >   --
