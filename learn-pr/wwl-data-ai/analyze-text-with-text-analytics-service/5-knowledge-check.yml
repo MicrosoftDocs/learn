@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/15/2023
+  ms.date: 10/31/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "Entity detection"
       isCorrect: false
       explanation: "Incorrect. Entity detection identifies specific types of entity in the document, not the main talking points."
-  - content: "You use Azure AI Language to perform sentiment analysis on a sentence. The confidence scores .04 positive, .36 neutral, and .6 negative are returned. What do these confidence scores indicate about the sentence sentiment?"
+  - content: "You use Azure AI Language to perform sentiment analysis on a sentence. The confidence scores .04 positive, .36 neutral, and .60 negative are returned. What do these confidence scores indicate about the sentence sentiment?"
     choices:
     - content: "The document is positive."
       isCorrect: false
@@ -46,4 +46,4 @@ quiz:
       explanation: "Incorrect. The service will return a score of less than 1 for mixed language text, using the predominant language in the text."
     - content: "When the language is ambiguous"
       isCorrect: true
-      explanation: "Correct. The service will return **NaN** when it cannot determine the language in the provided text."
+      explanation: "Correct. The service will return **NaN** when it can't determine the language in the provided text."
