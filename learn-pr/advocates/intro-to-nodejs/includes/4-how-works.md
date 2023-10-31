@@ -13,7 +13,7 @@ Because you want your program to run as fast as possible, you want the JavaScrip
 
 Node.js uses the JavaScript engine's event-driven architecture to process asynchronous requests. The following diagram illustrates how the v8 event loop works, at a high level:
 
-:::image type="content" source="media/event-loop.png" alt-text="Diagram showing how Node J S uses an event-driven architecture where an event loop processes events and returns callbacks.":::
+:::image type="content" source="../media/event-loop.png" alt-text="Diagram showing how Node J S uses an event-driven architecture where an event loop processes events and returns callbacks.":::
 
 An asynchronous task, denoted by appropriate syntax (shown below), is added to the **event loop**. The task includes the work to be done and a callback function to receive the results. When the intensive operation completes, the callback function is triggered with the results. 
 
