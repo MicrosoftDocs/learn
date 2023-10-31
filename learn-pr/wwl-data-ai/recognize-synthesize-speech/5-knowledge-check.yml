@@ -4,16 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/18/2023
+  ms.date: 10/31/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: unit
+  ms.topic: interactive-tutorial
   ms.service: azure
 durationInMinutes: 2
 quiz:
   title: ""
   questions:
-  - content: "You plan to build an application that uses Azure AI Speech to transcribe audio recordings of phone calls into text, and then submits the transcribed text to Azure AI Language to extract key phrases. You want to manage access and billing for the application services in a single Azure resource. Which type of Azure resource should you create?"
+  - content: "You plan to build an application that uses Azure AI Speech to transcribe audio recordings of phone calls into text, and then submit the transcribed text to Azure AI Language to extract key phrases. You want to manage access and billing for the application services with a single Azure resource. Which type of Azure resource should you create?"
     choices:
     - content: "Speech"
       isCorrect: false
