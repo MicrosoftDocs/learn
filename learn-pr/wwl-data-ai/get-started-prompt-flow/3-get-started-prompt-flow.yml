@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-prompt-flow.get-started-prompt-flow
+title: |
+  Get started with Azure Machine Learning's prompt flow to create apps
+metadata:
+  title: |
+    Get started with Azure Machine Learning's prompt flow to create apps
+  description: "Learn about the basics of prompt flow to create an application."
+  ms.date: 11/30/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-get-started-prompt-flow.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-prompt-flow.develop-flows
+title: |
+  Develop a flow with prompt flow
+metadata:
+  title: |
+    Develop a flow with prompt flow
+  description: "Learn developing flows with Azure Machine Learning's prompt flow."
+  ms.date: 11/30/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-develop-flows.md)]
