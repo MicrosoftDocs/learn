@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-receipts-form-recognizer
 metadata:
   title: Fundamentals of Azure AI Document Intelligence
   description: "Use Azure AI Document Intelligence to automate data extraction."
-  ms.date: 10/30/2023
+  ms.date: 10/31/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
