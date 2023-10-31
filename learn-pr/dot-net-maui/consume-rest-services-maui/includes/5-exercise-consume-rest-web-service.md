@@ -122,7 +122,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 1. In the **PartsManager.cs** file, find the **GetAll** method. This is an asynchronous method that returns an enumerable list of parts. This method isn't yet implemented.
 
 1. In this method, delete the code that throws the **NotImplementedException** exception.
-1. Check to see if the device has internet connectivity by using the `Connectivity` class. If the internet is not present, return an empty `List<Part>`.
+1. Check to see if the device has internet connectivity by using the `Connectivity` class. If the internet isn't present, return an empty `List<Part>`.
 
     ```csharp
     if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
@@ -161,7 +161,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 1. In the **PartsManager** class, locate the **Add** method. This method has parameters for the part name, a supplier, and the part type. The method is asynchronous. The method's purpose is to insert a new part into the database and return a **Part** object representing the newly created item.
 
 1. Delete the existing code in the method.
-1. Check to see if the device has internet connectivity by using the `Connectivity` class. If the internet is not present, return an empty `Part`.
+1. Check to see if the device has internet connectivity by using the `Connectivity` class. If the internet isn't present, return an empty `Part`.
 
     ```csharp
     if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
