@@ -7,7 +7,8 @@
     1. Each tab in the KQL queryset can be associated with a different KQL database, and lets you save queries for later use or share them with others for data analysis
     1. The KQL Queryset uses the Kusto Query Language (KQL) for creating queries, and also supports many SQL functions 
     
-    > [NOTE]: The use of SQL or SQL Functions within a KQL Queryset removes the ability to build Power BI Reports with it
+    > [NOTE]
+    > The use of SQL or SQL Functions within a KQL Queryset removes the ability to build Power BI Reports with it
 
 1. To create a KQL Queryset, you can go to any section within Microsoft Fabric and click on the **Create button** and then scroll to **Create KQL Queryset** as shown in the example, which starts from the **Data Engineering** section.
     ![Select KQL Queryset from within Data Engineering section](../media/create-kql-queryset.png)
