@@ -101,7 +101,7 @@ Enable connectivity between your on-premises networks. There are separate sets o
 
 **Verify the configuration**
 
-Verify the Global Reach configuration by selecting Private peering under the ExpressRoute circuit configuration. When configured correctly your configuration should look as followed:
+Verify the Global Reach configuration by selecting Private peering under the ExpressRoute circuit configuration. When configured correctly your configuration should look as follows:
 
 :::image type="content" source="../media/verify-global-reach-configuration-664be1d8.png" alt-text="Azure portal - Verify GlobalReach configuration":::
 
