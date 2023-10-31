@@ -37,7 +37,7 @@ Separate sensors with similar characteristics, like recurring IP address ranges,
 
 ## Knowledge check
 
-:::image type="content" source="../media/3-recurring-segments-option-no.png" alt-text="Diagram of a sample network." border="false":::
+:::image type="content" source="../media/3-knowlege_check_figures.png" alt-text="Figure A Diagram of a sample network, figure B an example of with a Paris location and Bengalaru location, each with different departments on different floors of the location." border="false":::
 <!--Optional "exercise-solution" video -->
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
