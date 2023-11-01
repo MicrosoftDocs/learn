@@ -78,12 +78,11 @@ Let’s tackle creating a repository from github.com.
 2.	Use the Owner dropdown menu to select the account you want to own the repository.
 
  
-
-(Alt Text of Image: Drop down menu of who should be the owner of the new repository.)
+:::image type="content" source="../media/2-selecting-repo-owner.png" alt-text="Drop down menu of who should be the owner of the new repository." border="false":::
 
 3.	Type a name for your repository, and an optional description.
  
-(Alt Text of Image: An image of the text box of the repository name highlighted)
+:::image type="content" source="../media/2-repo-name-text-box.png" alt-text="An image of the text box of the repository name highlighted." border="false":::
 
 
 4.	Choose a repository visibility.
