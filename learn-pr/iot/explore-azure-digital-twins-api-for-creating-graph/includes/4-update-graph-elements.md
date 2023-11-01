@@ -93,7 +93,7 @@ Send the request.
 
 The response from a successful request will look something like this:
 
-:::image type="content" source="../media/4-digital-twin-models-add.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Add request." border="false" lightbox="../media/4-digital-twins-model-add.png":::
+:::image type="content" source="../media/4-digital-twin-models-add.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Add request." border="false" lightbox="../media/4-digital-twin-models-add.png":::
 
 This indicates that the new *Base Receiver* model described in the response was uploaded to the instance, replacing the old definition that was deleted.
 
