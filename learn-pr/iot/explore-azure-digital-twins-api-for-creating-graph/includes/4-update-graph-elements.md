@@ -47,7 +47,7 @@ However, the other substation models *Delivery Substation* and *Generator Substa
 
 From your Postman collections, start by opening the request template at **Data plane** > **models** > **{id}** > **DEL Digital Twin Models Delete**.
 
-In the **Params** tab, set **api-version** to *2023-06-30* and the **id** value to *dtmi:example:grid:transmission:deliverySubStation;1*. This is the ID of the *Delivery Substation* model.
+In the **Params** tab, set **api-version** to *2023-10-31* and the **id** value to *dtmi:example:grid:transmission:deliverySubStation;1*. This is the ID of the *Delivery Substation* model.
 
 In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
 
@@ -67,7 +67,7 @@ Now you can reupload the new *Base Receiver* model, and then reupload the two su
 
 From your Postman collections, open the request template at **Data plane** > **models** > **POST Digital Twin Models Add**.
 
-In the **Params** tab, set the **api-version** to *2023-06-30*. In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+In the **Params** tab, set the **api-version** to *2023-10-31*. In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
 
 In the **Body** tab, enter the new *Base Receiver* model definition inside a set of square brackets, like this:
 
@@ -161,7 +161,7 @@ You can verify the new model property by getting the *Base Receiver* model by it
 
 From your Postman collections, open the request template at **Data plane** > **models** > **{id}** > **GET Digital Twin Models Get By ID**.
 
-In the **Params** tab, set **includeModelDefinition** to *true*, **api-version** to *2023-06-30*, and **id** to *dtmi:example:grid:transmission:baseReceiver;1*. In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+In the **Params** tab, set **includeModelDefinition** to *true*, **api-version** to *2023-10-31*, and **id** to *dtmi:example:grid:transmission:baseReceiver;1*. In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
 
 Send the request.
 
@@ -182,7 +182,7 @@ Since your work in the previous section made a new `Operator` property available
 
 From your Postman collections, open the request template at **Data plane** > **digitaltwins** > **{id}** > **PATCH Digital Twins Update**.
 
-In the **Params** tab, set the **api-version** to *2023-06-30* and the **id** to *sub_corp*. In the **Headers** tab, uncheck the **If-Match**, **traceparent**, and **tracestate** options.
+In the **Params** tab, set the **api-version** to *2023-10-31* and the **id** to *sub_corp*. In the **Headers** tab, uncheck the **If-Match**, **traceparent**, and **tracestate** options.
 
 Switch to the **Body** tab, which accepts the update to be made in JSON Patch format. Paste the following patch document into the **Body** field. This patch adds an `Operator` property to the twin and sets its value to *Contoso Electric*.
 
@@ -207,7 +207,7 @@ You can verify the new twin property by getting the *sub_corp* twin by its ID.
 
 From your Postman collections, open the request template at **Data plane** > **digitaltwins** > **{id}** > **GET Digital Twins Get By ID**.
 
-In the **Params** tab, set the **api-version** to *2023-06-30* and the **id** to *sub_corp*. In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+In the **Params** tab, set the **api-version** to *2023-10-31* and the **id** to *sub_corp*. In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
 
 Send the request. Look for the `Operator` field and its value in the response.
 
@@ -225,7 +225,7 @@ Let's say one of the delivery substations represented in your graph is no longer
 
 From your Postman collections, open the request template at **Data plane** > **digitaltwins** > **{id}** > **relationships** > **{relationshipId}** > **DEL Digital Twins Delete Relationship**.
 
-In the **Params** tab, set the **api-version** to *2023-06-30*, the **id** value to *sub_farmcluster_2*, and the **relationshipId** value to *57becd45-1391-45e8-b127-ff3fdc5d0175*. This was the ID value given for this relationship when the graph was imported, and together with the source twin ID it identifies this specific relationship in the graph.
+In the **Params** tab, set the **api-version** to *2023-10-31*, the **id** value to *sub_farmcluster_2*, and the **relationshipId** value to *57becd45-1391-45e8-b127-ff3fdc5d0175*. This was the ID value given for this relationship when the graph was imported, and together with the source twin ID it identifies this specific relationship in the graph.
 
 In the **Headers** tab, uncheck the **If-Match**, **traceparent**, and **tracestate** options.
 
@@ -239,7 +239,7 @@ You can verify the relationship was deleted by listing the relationships from th
 
 From your Postman collections, open the request template at **Data plane** > **digitaltwins** > **{id}** > **relationships** > **GET Digital Twins List Relationships**.
 
-In the **Params** tab, set the **relationshipName** to *feeds*, the **api-version** to *2023-06-30*, and the **id** value to *sub_farmcluster_2*. This request will now look for *feeds*-type relationships coming out of *sub_farmcluster_2*.
+In the **Params** tab, set the **relationshipName** to *feeds*, the **api-version** to *2023-10-31*, and the **id** value to *sub_farmcluster_2*. This request will now look for *feeds*-type relationships coming out of *sub_farmcluster_2*.
 
 In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
 
