@@ -106,7 +106,7 @@ GitHub Codespaces runs a development container managed by GitHub with Visual Stu
 
 1. Create a new GitHub Codespace using the `github/dotnet-codespaces` template.
 
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/dotnet-codespaces?quickstart=1)
+    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/dotnet-codespaces?quickstart=1?azure-portal=true)
 
 1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create new codespace**.
 
