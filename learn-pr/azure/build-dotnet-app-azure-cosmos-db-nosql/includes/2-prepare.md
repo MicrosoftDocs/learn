@@ -97,7 +97,7 @@ GitHub Codespaces runs a development container managed by GitHub with Visual Stu
 
 1. Create a new GitHub Codespace using the `github/dotnet-codespaces` template.
 
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/dotnet-codespaces?quickstart=1?azure-portal=true)
+    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/dotnet-codespaces?quickstart=1&azure-portal=true)
 
 1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create new codespace**.
 
@@ -123,7 +123,7 @@ The Dev Containers extension for Visual Studio Code requires Docker to be instal
 
     [![Open in Dev Container](https://img.shields.io/static/v1?style=for-the-badge&label=Open+in+Visual+Studio+Code&message=Dev+container&color=blue&logo=visualstudiocode)](vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/github/dotnet-codespaces)
 
-1. Open a new terminal in the devcontainer.
+1. Open a new terminal.
 
 1. Validate that .NET 8 is installed in your environment:
 
