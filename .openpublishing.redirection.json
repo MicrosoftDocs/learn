@@ -28755,6 +28755,26 @@
       "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/4-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-faq-chatbot-qna-maker-azure-bot-service/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/2-get-started.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-language-model-with-language-understanding/3-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/3a-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-language-model-with-language-understanding/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/3-exercise-create-language-understanding-application.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-language-model-with-language-understanding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/4-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-language-model-with-language-understanding/6-summary",
+      "redirect_document_id": false
     }
   ]
 }

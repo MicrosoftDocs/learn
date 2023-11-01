@@ -2,7 +2,7 @@ We shared the narrative for Tailwind Traders in the Getting Started module and o
 
 ## Plan for Tailwind Traders' migration effort
 
-In this module, you build out a plan for the Tailwind Traders' migration effort. The following is an excerpt of the current state environment that will be migrated.
+In this module, you'll build out a plan for the Tailwind Traders' migration effort. The following is an excerpt of the current state environment that will be migrated.
 
 Tailwind Traders currently have three datacenters. One is located within the same office building where the employees work; the company owns this building and datacenter. The two other datacenters are in separate locations and are leased from datacenter providers. All three datacenters are a mix of physical and virtual servers. The virtualization platforms that the company uses are a mix between Hyper-V and VMware. This mix is the result of different people with different strategy ideas leading the IT department over the years.
 
@@ -10,7 +10,7 @@ Tailwind Traders' servers primarily run Windows Server, with a mix of Windows Se
 
 There are a few Linux and other open-source servers. The IT operations team isn't familiar with the servers, because the development team introduced them without collaboration between the teams.
 
-The leases for the two datacenters are due to run out in 18 months and two years. The IT manager and finance director have been talking, and they don't want to renew the leases. Instead, they're considering a project that upgrades, consolidates, and uses the cloud as a replacement datacenter. The new CIO is using this project as an opportunity to rethink IT operations.
+The leases for the two datacenters are due to run out in 18 months and two years. The IT manager and finance director have been talking, and they don't want to renew the leases. Instead, they're considering a project that will upgrade, consolidate, and use the cloud as a replacement datacenter. The new CIO is using this project as an opportunity to rethink IT operations.
 
 ## Plan for Tailwind Traders' new innovation effort
 
@@ -22,7 +22,7 @@ To keep all the cloud-adoption efforts on track, the Tailwind Traders CIO and pr
 
 <!-- docutune:casing "Migrate or Innovate" -->
 
-The exercises in this module's remaining units walk through each step of translating the current adoption strategy and future efforts into an actionable cloud-adoption plan. You use the following steps:
+The exercises in this module's remaining units walk through each step of translating the current adoption strategy and future efforts into an actionable cloud-adoption plan. You'll use the following steps:
 
 1. **Confirm prerequisites**: Confirm that all prerequisite steps have been completed before you create your plan.
 2. **Define and prioritize workloads**: Prioritize your first 10 workloads to establish an initial adoption backlog.
