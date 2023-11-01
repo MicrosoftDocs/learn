@@ -13,9 +13,12 @@ A cost model helps segment expenses and estimate and forecast the total cost of 
 
 ### Contoso applies the approach
 
+:::row:::
+   :::column span="":::
 *Before applying the approach*</br>
 Going into the ideation phase, the workload team cannot predict what the total cost of ownership for delivering an experience like this might be, especially as a ticketing system usually deals with burst demand. They know they want to start small and grow over time, but they don't know how to model this to predict the cost of an incremental approach to building and maintaining the workload. Without these initial estimates, it will be hard to get initial funding for the project and predict long term funding needs.
-
+   :::column-end:::
+   :::column span="":::
 *Applying the approach and outcomes*</br>
 The workload team spends some time to model estimated costs in various scenarios: they know the types of resources that will be needed to build the workload and they look at different configurations that could support varying load patterns to understand what their Azure costs may look like initially and over time. They use the rough estimated infrastructure costs, combined with estimates for team expenditures and revenue from the offering to build a cost model. This model then allows them to start predicting cost, and understand how costs will increase as usage increases over time. They know they can refine the model as architectural and operational decisions are decided to increase its predictive power.
 
