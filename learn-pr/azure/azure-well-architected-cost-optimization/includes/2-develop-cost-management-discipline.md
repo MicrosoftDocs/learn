@@ -28,7 +28,7 @@ You'll be able to set financial boundaries and establish ways to check your spen
 ### Example scenario
 
 *Before applying the approach*</br>
-In this scenario, the app is in the design phase and initial resource SKUs have been determined. Contoso needs to allocate funding to the mobile ticketing workload. The workload can't be allowed to run with a blank check. A realisitc budget needs to be determined for the workload because having a pre-allocation shortfall could put the workload timeline and success in jeopardy, and over-allocating can lead to unnecessary up-front expenditures that don't align with the short term needs of the workload.
+In this scenario, the app is in the design phase and initial resource SKUs have been determined. Contoso needs to allocate funding to the mobile ticketing workload. The workload can't be allowed to run with a blank check. A realistic budget needs to be determined for the workload because having a pre-allocation shortfall could put the workload timeline and success in jeopardy, and over-allocating can lead to unnecessary up-front expenditures that don't align with the short term needs of the workload.
 
 *Applying the approach and outcomes*</br>
 As the cost model is refined with more precise numbers, the team provides stakeholders with a budget that is estimated with a high degree of confidence and can be defended. With a budget in place, the workload architect can start designing against financial constraints. As more is learned about the implementation and the operations necessary, to workload teams expects to need to renegotiate a bit. They want a small buffer, but ultimately will be driving toward fiscal responsibility by adhering to the budget allocation.
