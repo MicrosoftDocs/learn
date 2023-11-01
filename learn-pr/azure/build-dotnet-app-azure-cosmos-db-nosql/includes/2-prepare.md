@@ -75,7 +75,7 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb keys li
         --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name $(az cosmosdb list \
             --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-            --query "sort_by([].{name:name,created:systemData.createdAt}, &created)[0]" \
+            --query "sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name" \
             --output tsv) \
         --type connection-strings \
         --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
@@ -95,9 +95,9 @@ GitHub Codespaces runs a development container managed by GitHub with Visual Stu
 > [!IMPORTANT]
 > All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances.
 
-1. Create a new GitHub Codespace using the `github/dotnet-codespaces` template.
+1. Create a new GitHub Codespace using the `azure-samples/cosmos-db-dotnet` template.
 
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/dotnet-codespaces?quickstart=1&azure-portal=true)
+    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/azure-samples/cosmos-db-dotnet?quickstart=1&azure-portal=true)
 
 1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create new codespace**.
 
@@ -119,9 +119,9 @@ The remaining exercises in this project take place in the context of this develo
 
 The Dev Containers extension for Visual Studio Code requires Docker to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
 
-1. Open the `github/dotnet-codespaces` template repository from GitHub within Visual Studio Code.
+1. Open the `azure-samples/cosmos-db-dotnet` template repository from GitHub within Visual Studio Code.
 
-    [![Open in Dev Container](https://img.shields.io/static/v1?style=for-the-badge&label=Open+in+Visual+Studio+Code&message=Dev+container&color=blue&logo=visualstudiocode)](vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/github/dotnet-codespaces)
+    [![Open in Dev Container](https://img.shields.io/static/v1?style=for-the-badge&label=Open+in+Visual+Studio+Code&message=Dev+container&color=blue&logo=visualstudiocode)](vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/azure-samples/cosmos-db-dotnet)
 
 1. Open a new terminal.
 
