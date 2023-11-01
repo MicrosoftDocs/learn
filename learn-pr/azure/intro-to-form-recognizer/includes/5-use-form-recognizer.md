@@ -1,6 +1,6 @@
-In this exercise, you can see Azure AI Document Intelligence in action by deploying a Document Intelligence resource and a webapp that uses it – just by **copying and pasting one Azure CLI command**.
+In this exercise, you can see Azure AI Document Intelligence in action by deploying a Document Intelligence resource and an application – just by **copying and pasting one Azure CLI command**.
 
-To start, you need to activate the Sandbox – just select the **Activate sandbox** button and sign in, no payment or Azure subscription required. Despite having full administrative access to the website and Azure resources, the resources in this exercise are created on Microsoft's subscription, so they don't cost you anything.
+To start, you need to activate the Sandbox – just select the **Activate sandbox** button and sign in, no payment or Azure subscription required. Despite having full administrative access to the website and Azure resources, the resources in this exercise are created on Microsoft's subscription, so they don't cost you anything. After you accept the required permissions, return to this page to get started.
 
 ## Choose your learning experience
 
@@ -12,9 +12,9 @@ For more guided hands-on learning about Document Intelligence, we have more Lear
 
 ## Deploy Document Intelligence
 
-To create the Document Intelligence resource and deploy the webapp, complete the following steps:
+To create the Document Intelligence resource and deploy the application, complete the following steps:
 
-1. Once the Cloud Shell is loaded and shows a prompt, copy the following command and paste it into the Cloud Shell. Just select Ctrl+Shift+V on Windows and Linux, or select Cmd+Shift+V on macOS.
+1. Once the Cloud Shell is loaded and shows a prompt, copy the following command and paste it into the Cloud Shell. Just select **Copy**, right-click, and then paste the command into the Cloud shell.
 
     Run the following command in the Cloud Shell:
 
