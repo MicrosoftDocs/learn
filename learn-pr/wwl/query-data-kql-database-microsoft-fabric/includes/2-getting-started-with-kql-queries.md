@@ -34,7 +34,7 @@ Within Microsoft Fabric KQL Database, you can use the primary language of Kusto 
 
    ![Image of KQL Query with highlighted element of publishing to Power BI.](../media/kql-queryset-pbi-build.png)
 
-However, there are advantages to each and in the case of a KQL database KQL is the preferred language. More comparisons follow:
+However, there are advantages to each and in the case of a KQL database, KQL is the preferred language. More comparisons follow:
 
 1. **Simplicity**: KQL is a simpler language than T-SQL, making it easier to learn and use.
 2. **Performance**: KQL is optimized for performance and can handle large amounts of data more efficiently than T-SQL.
@@ -44,7 +44,7 @@ However, there are advantages to each and in the case of a KQL database KQL is t
 
 ## Advantages of T-SQL over KQL
 
-One major disadvante of using T-SQL over KQL is that it is not the native language of the engine and has to go through a transformer which prevents it from being published to Power BI directly from the Queryset.
+One major disadvantage of using T-SQL over KQL is that it is not the native language of the engine and has to go through a transformer which prevents it from being published to Power BI directly from the Queryset.
 
    ![Image of T-SQL Query with highlighted element showing prevention of publishing to Power BI](../media/tsql-queryset-pbi-build.png)
 
