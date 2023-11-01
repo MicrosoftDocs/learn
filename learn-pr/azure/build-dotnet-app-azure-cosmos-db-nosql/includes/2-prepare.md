@@ -119,28 +119,9 @@ The remaining exercises in this project take place in the context of this develo
 
 The Dev Containers extension for Visual Studio Code requires Docker to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
 
-1. Open **Visual Studio Code** in the context of an empty directory.
+1. Open the `github/dotnet-codespaces` template repository from GitHub within Visual Studio Code.
 
-1. Ensure that you have the **Dev Containers** extension installed in Visual Studio Code.
-
-1. Create a new JSON file named **.devcontainer/devcontainer.json**. Add this JSON content to the file:
-
-    ```json
-    {
-      "image": "mcr.microsoft.com/dotnet/sdk:8.0",
-      "customizations": {
-        "vscode": {
-          "extensions": [
-            "ms-dotnettools.csdevkit"
-          ]
-        }
-      }
-    }
-    ```
-
-1. Open the **Command Palette**.
-
-1. Search for and then select **Dev Containers: Reopen in Container**.
+    [![Open in Dev Container](https://img.shields.io/static/v1?style=for-the-badge&label=Open+in+Visual+Studio+Code&message=Dev+container&color=blue&logo=visualstudiocode)](vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/github/dotnet-codespaces)
 
 1. Open a new terminal in the devcontainer.
 
