@@ -29,7 +29,7 @@ The [Azure.Storage.Queues](https://www.nuget.org/packages/Azure.Storage.Queues/)
 
 ## Get your connection string
 
-Your application needs a connection string to be able to connect to your storage queue in Azure. The connection string is available in the Azure portal under the **Settings > Access keys** section of the storage account summary page or it can be retrieved using the Azure CLI or Azure PowerShell.
+Your application needs a connection string to be able to connect to your storage queue in Azure. The connection string is available in the Azure portal under the **Security+networking > Access keys** section of the storage account summary page or it can be retrieved using the Azure CLI or Azure PowerShell.
 
 The following code uses the Azure CLI to retrieve the storage connection string and place it in an environment variable. The application reads this environment variable to get the connection string and connect to the storage queue. Be sure to substitute in the name of your storage account in the following command.
 

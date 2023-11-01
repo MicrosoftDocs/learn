@@ -21,6 +21,8 @@ Alongside **Q# libraries** are a few other sets of API documentation. We won't f
 - *.NET libraries* contain references for the trace-simulator target machine and the .NET quantum chemistry library (those parts of the quantum chemistry library that are represented outside the Q# program).
 - *Python libraries* contain details about integration with Python as a host program.
 - *IQ# magic commands* are the magic commands that can be used in Jupyter Notebooks (for example, the [`%package` command](/qsharp/api/iqsharp-magic/package?azure-portal=true) that adds a package to the workspace).
+- *REST APIs*  which allow you to develop clients that use REST calls to work with the service.
+- *ARM templates* to deploy an Azure Quantum workspace using ARM, Bicep, or Terraform.
 
 ### Q# library API references
 

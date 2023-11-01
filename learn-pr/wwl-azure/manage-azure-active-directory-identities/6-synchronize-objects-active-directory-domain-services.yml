@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-active-directory-identities.synchronize-objects-active-directory-domain-services
-title: Synchronize objects from AD DS to Azure AD
+title: Synchronize objects from AD DS to Microsoft Entra ID
 metadata:
-  title: Synchronize objects from AD DS to Azure AD
-  description: "Synchronize objects from AD DS to Azure AD"
+  title: Synchronize objects from AD DS to Microsoft Entra ID
+  description: "Synchronize objects from AD DS to Microsoft Entra ID"
   ms.date: 09/01/2023
   author: wwlpublish
   ms.author: rstearman

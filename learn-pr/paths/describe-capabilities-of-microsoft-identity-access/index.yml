@@ -60,7 +60,7 @@ roles:
 - business-user
 - student
 products:
-- azure-active-directory
+- entra-id
 subjects:
 - compliance
 - identity-access

@@ -37,7 +37,7 @@ To configure auditing for your organization:
 Consider sending your events downstream to a Security Information and Event Management (SIEM) tool using the [Audit Streaming feature](https://learn.microsoft.com/azure/devops/organizations/audit/auditing-streaming) for long-term storage and analysis of your auditing events. We recommend exporting the auditing logs for cursory data analysis.
 
 > [!NOTE]
-> Auditing is only available for organizations backed by Azure Active Directory. For more information, see [Connect your organization to Azure Active Directory](https://learn.microsoft.com/azure/devops/organizations/accounts/connect-organization-to-azure-ad).
+> Auditing is only available for organizations backed by Microsoft Entra ID. For more information, see [Connect your organization to Microsoft Entra ID](https://learn.microsoft.com/azure/devops/organizations/accounts/connect-organization-to-azure-ad).
 
 ## Challenge yourself
 

@@ -11,7 +11,7 @@ Microsoft Sentinel's automation and orchestration solution provides a highly ext
  -  HTTP requests
  -  Microsoft Teams
  -  Slack
- -  Azure Active Directory
+ -  Microsoft Entra ID
  -  Microsoft Defender for Endpoint
  -  Microsoft Defender for Cloud Apps
 

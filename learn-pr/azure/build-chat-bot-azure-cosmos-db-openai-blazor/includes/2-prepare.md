@@ -27,7 +27,7 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
 > [!TIP]
 > This "zero-touch" Bicep template also includes the final application running in Azure App Service. You can always check this out if you want to see a fully working solution.
 
-1. Create a new shell variable named **resourceGroupName** with the name of the Azure resource group that you will create (`mslearn-cosmos-openai`).
+1. Create a new shell variable named **resourceGroupName** with the name of the Azure resource group that you create (`mslearn-cosmos-openai`).
 
     ```azurecli
     resourceGroupName="mslearn-cosmos-openai"

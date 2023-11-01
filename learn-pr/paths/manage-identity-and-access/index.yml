@@ -28,7 +28,7 @@ products:
 - azure
 - azure-clis
 - azure-portal
-- azure-active-directory
+- entra-id
 subjects:
 - identity-access
 modules:

@@ -14,7 +14,7 @@ abstract: |
   - Implement network level access control
   - Review data encryption options
   - Use role-based access control (RBAC)
-  - Access Account Resources using Azure Active Directory
+  - Access Account Resources using Microsoft Entra ID
   - Understand Always Encrypted
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.

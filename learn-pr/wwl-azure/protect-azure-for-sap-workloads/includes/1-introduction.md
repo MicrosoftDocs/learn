@@ -18,8 +18,8 @@ After completing this module, you’ll be able to:
 	- Azure Network Watcher 
 	- Azure Sentinel 
 - Describe Azure services for authentication and multifactor authentication, including:
-	- Azure Active Directory 
-	- Azure Active Directory Multi-Factor Authentication 
+	- Microsoft Entra ID 
+	- Microsoft Entra multifactor authentication 
 
 ## Prerequisites
 

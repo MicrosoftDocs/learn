@@ -1,4 +1,4 @@
-As a user who is assigned any of the limited administrator directory roles, you can use the Azure portal to invite B2B collaboration users. You can invite guest users to the directory, to a group, or to an application. After you invite a user through any of these methods, the invited user's account is added to Azure Active Directory (Azure AD), with a user type of *Guest*. The guest user must then redeem their invitation to access resources. An invitation of a user does not expire.
+As a user who is assigned any of the limited administrator directory roles, you can use the Azure portal to invite B2B collaboration users. You can invite guest users to the directory, to a group, or to an application. After you invite a user through any of these methods, the invited user's account is added to Microsoft Entra ID, with a user type of *Guest*. The guest user must then redeem their invitation to access resources. An invitation of a user does not expire.
 
 :::image type="content" source="../media/external-user-flow-d79a0a22.png" alt-text="Diagram of how a guest user is invited to the directory, and how they can access resources once they are granted access.":::
 
@@ -7,25 +7,25 @@ After you add a guest user to the directory, you can either send the guest user 
 
 ## How users in your organization can invite guest users to an app
 
-After a guest user has been added to the directory in Azure AD, an application owner can send the guest user a direct link to the app they want to share. Azure AD admins can also set up self-service management for gallery or SAML-based apps in their Azure AD tenant. This way, application owners can manage their own guest users, even if the guest users haven’t been added to the directory yet. When an app is configured for self-service, the application owner uses their Access Panel to invite a guest user to an app or add a guest user to a group that has access to the app. Self-service app management for gallery and SAML-based apps requires some initial setup by an admin, which can be summarized as follows:
+After a guest user has been added to the directory in Microsoft Entra ID, an application owner can send the guest user a direct link to the app they want to share. Microsoft Entra admins can also set up self-service management for gallery or SAML-based apps in their Microsoft Entra tenant. This way, application owners can manage their own guest users, even if the guest users haven’t been added to the directory yet. When an app is configured for self-service, the application owner uses their Access Panel to invite a guest user to an app or add a guest user to a group that has access to the app. Self-service app management for gallery and SAML-based apps requires some initial setup by an admin, which can be summarized as follows:
 
  -  Enable self-service group management for your tenant
  -  Create a group to assign to the app and make the user an owner
  -  Configure the app for self-service and assign the group to the app
 
-## How to bulk invite Azure AD B2B collaboration users
+## How to bulk invite Microsoft Entra B2B collaboration users
 
-If you use Azure Active Directory (Azure AD) B2B collaboration to work with external partners, you can invite multiple guest users to your organization at the same time. Specifically, you do the following:
+If you use Microsoft Entra B2B collaboration to work with external partners, you can invite multiple guest users to your organization at the same time. Specifically, you do the following:
 
  -  Use **Bulk invite users** to prepare a comma-separated value (.csv) file with the user information and invitation preferences
- -  Upload the .csv file to Azure AD
+ -  Upload the .csv file to Microsoft Entra ID
  -  Verify the users were added to the directory
 
 ### Understand the CSV template
 
-Download and fill in the bulk upload CSV template to help you successfully invite Azure AD guest users in bulk. The CSV template you download might look like this example:
+Download and fill in the bulk upload CSV template to help you successfully invite Microsoft Entra ID guest users in bulk. The CSV template you download might look like this example:
 
-:::image type="content" source="../media/understand-template-4329aaff.png" alt-text="Screenshot of a common C S V file opened in spreadsheet format.":::
+:::image type="content" source="../media/understand-template-4329aaff.png" alt-text="Screenshot of a common CSV file opened in spreadsheet format.":::
 
 
 ### CSV template structure

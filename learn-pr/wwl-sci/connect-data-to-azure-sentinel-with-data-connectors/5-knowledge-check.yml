@@ -30,7 +30,7 @@ quiz:
       explanation: "Incorrect. This shows the number of connectors, not the number of hosts."
   - content: "Which connector provides the log data in an unparsed field?"
     choices:
-    - content: "Azure Active Directory"
+    - content: "Microsoft Entra ID"
       isCorrect: false
       explanation: "Incorrect.  The Azure Active Directory provides parsed data."
     - content: "Syslog"

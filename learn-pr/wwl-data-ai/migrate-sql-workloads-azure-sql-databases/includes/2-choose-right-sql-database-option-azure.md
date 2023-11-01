@@ -20,7 +20,7 @@ The following summarize the benefits of deploying single and elastic pool databa
 | **Service scalability** | Dynamic scale-up and scale-down |
 |  | Scale out with multiple shards |
 |  | Share compute resources between databases using elastic pools |
-| **Security** | Support for Azure Active Directory authentication |
+| **Security** | Support for Microsoft Entra authentication |
 |  | Cloud-only security features such as Advanced Threat Protection |
 |  | Transparent data encryption (TDE) enabled by default |
 |  | Support for dynamic and static data masking, row-level security, and Always Encrypted |
@@ -89,4 +89,3 @@ We recommend waiting for 5 seconds at a minimum on your first retry. Each subseq
 > If a SELECT statement fails with a transient error for SQL Database, don't directly retry it. Instead, retry the SELECT statement in a new connection.
 
 To learn more about the connection retry principals, see [Troubleshoot transient connection errors in SQL Database and SQL Managed Instance](/azure/azure-sql/database/troubleshoot-common-connectivity-issues).
-

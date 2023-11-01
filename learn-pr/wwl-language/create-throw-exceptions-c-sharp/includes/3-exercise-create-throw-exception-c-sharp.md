@@ -34,11 +34,9 @@ Use the following steps to load and review a sample application.
 
 1. Open the Program.cs file.
 
-1. After a few seconds, notice that a dialog box is displayed asking if you want to load the assets required for building and debugging.
+1. On the View menu, select **Command Palette**.
 
-    Visual Studio Code recognizes the C# file extension, `.cs`, and recognizes that your "ThrowExceptions101" project is missing the required assets.
-
-1. To load the required assets, select **Yes**.
+1. At the command prompt, enter **.net: g** and then select **.NET: Generate Assets for Build and Debug**.
 
 1. Replace the contents of the Program.cs file with the following code:
 
