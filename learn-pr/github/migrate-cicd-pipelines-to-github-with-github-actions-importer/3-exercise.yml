@@ -8,6 +8,8 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-jenkins
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 30
 content: |

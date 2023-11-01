@@ -8,7 +8,7 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 5
@@ -44,12 +44,12 @@ quiz:
 
   - content: 'Where is data in Log Analytics stored and queried from in most KQL queries?'
     choices:
-      - content: 'databases'
+      - content: 'Databases'
         isCorrect: false
         explanation: 'Data is stored in tables.'
-      - content: 'documents'
+      - content: 'Documents'
         isCorrect: false
         explanation: 'Data is stored in tables.'
-      - content: 'tables'
+      - content: 'Tables'
         isCorrect: true
         explanation: 'Correct, most KQL queries start with a table as a data source.'

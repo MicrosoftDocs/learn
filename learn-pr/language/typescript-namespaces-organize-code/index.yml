@@ -7,8 +7,8 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: typescript
 title: 'Organize code using TypeScript namespaces'
 summary: TypeScript provides two ways to organize code - namespaces and modules. This module explains how to organize TypeScript code using namespaces.
 abstract:  | 

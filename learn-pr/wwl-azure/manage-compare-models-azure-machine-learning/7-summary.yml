@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-compare-models-azure-machine-learning.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "In this module, you've learned how to create and explore the Responsible AI dashboard."
+  ms.date: 09/11/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]

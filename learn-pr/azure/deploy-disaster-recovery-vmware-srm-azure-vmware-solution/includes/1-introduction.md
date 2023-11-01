@@ -4,7 +4,7 @@ You can use VMware SRM and vSphere Replication with Azure VMware Solution for di
 
 Suppose you work for an organization that runs business-critical applications and has a datacenter in an earthquake zone. You've been tasked with providing disaster recovery for the applications in the event the organization’s infrastructure suffers an outage. Many of the organization’s production workloads run on a VMware vSphere platform and are distributed across several branch offices.
 
-Your company recently deployed Azure VMware Solution to migrate existing VMware vSphere workloads from on-premises to Azure. Your company is also exploring the option of using Azure VMware Solution as a disaster recovery solution with VMware SRM. Your company already uses VMware SRM to replicate virtual machines (VMs) between different branch offices. Therefore, using Azure VMware Solution would be a viable option for strengthening disaster recovery options for both on-premises and Azure VMware Solution VMs.
+Your company recently deployed Azure VMware Solution to migrate existing VMware vSphere workloads from on-premises to Azure. Your company is also exploring the option of using Azure VMware Solution as a disaster-recovery solution with VMware SRM. Your company already uses VMware SRM to replicate virtual machines (VMs) between different branch offices. Therefore, using Azure VMware Solution would be a viable option for strengthening disaster-recovery options for both on-premises and Azure VMware Solution VMs.
 
 Azure VMware Solution provides you with vSphere clusters built from dedicated, bare-metal Azure infrastructure. By using Azure VMware Solution, your company won’t have to change virtualization platforms or alter existing operational patterns.
 

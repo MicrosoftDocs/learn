@@ -17,17 +17,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "What is the minimum number of nodes in the Azure Stack HCI?"
+  - content: "What is the minimum number of nodes in an Azure Stack Hub?"
     choices:
-    - content: "2"
+    - content: "Two"
+      isCorrect: false
+      explanation: "Incorrect. Azure Stack Hub requires at least four nodes."
+    - content: "One"
+      isCorrect: false
+      explanation: "Incorrect. Azure Stack Hub requires at least four nodes."
+    - content: "Four"
       isCorrect: true
-      explanation: "Correct. You can deploy an Azure Stack HCI with two nodes."
-    - content: "1"
-      isCorrect: false
-      explanation: "Incorrect. Azure Stack HCI requires at least two nodes."
-    - content: "4"
-      isCorrect: false
-      explanation: "Incorrect. You can deploy an Azure Stack HCI with two nodes."
+      explanation: "Correct. You must have at least four nodes to deploy an Azure Stack Hub."
 
   - content: "Which of the Azure Stack products supports multi-tenancy and tenant isolation?"
     choices:
@@ -39,4 +39,4 @@ quiz:
       explanation: "Incorrect. Azure Stack Edge doesn't support multi-tenancy."
     - content: "Azure Stack Hub"
       isCorrect: true
-      explanation: "Correct. Azure Stack Hub is the only Azure Stack Hub product that supports built-in multi-tenancy and tenant isolation."
+      explanation: "Correct. Azure Stack Hub is the only Azure Stack product that supports built-in multi-tenancy and tenant isolation."

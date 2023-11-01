@@ -9,7 +9,10 @@ metadata:
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
+    - devx-track-terraform
   ms.contributors: ropreddy-04092021
 durationInMinutes: 2
 quiz:
@@ -27,16 +30,16 @@ quiz:
       explanation: "Incorrect. The destroy command is used to destroy the Terraform-managed infrastructure."
     - content: "None of the above"
       isCorrect: true
-      explanation: "The init command is used to initialize a working directory that contains Terraform configuration files."      
+      explanation: "Correct. The init command is used to initialize a working directory that contains Terraform configuration files."      
   - content: "What is the recommended way to restrict access to Azure resources?"
     choices:
     - content: "Use an Azure Service Principal"
       isCorrect: true
       explanation: "An Azure Service Principal is an identity created for use with applications, hosted services, and automated tools to access Azure resources."
-    - content: "Use Secrets."
+    - content: "Use Secrets"
       isCorrect: false
       explanation: "Incorrect. Secrets are encrypted environment variables that you create in a repository or organization."
-    - content: "Use a plain text password."
+    - content: "Use a plain text password"
       isCorrect: false
       explanation: "Incorrect. A password is an insecure mechanism."
   - content: "Which of the following options are benefits of automating infrastructure?"

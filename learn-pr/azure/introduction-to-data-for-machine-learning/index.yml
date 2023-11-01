@@ -4,10 +4,10 @@ metadata:
   title: Introduction to data for machine learning
   description: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean it of errors, and tips that will help you create models that perform well.
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.service: machine-learning
+  author: fbsolo-ms1
+  ms.author: franksolomon
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to data for machine learning
 summary: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean it of errors, and tips that will help you create models that perform well.
 abstract: | 

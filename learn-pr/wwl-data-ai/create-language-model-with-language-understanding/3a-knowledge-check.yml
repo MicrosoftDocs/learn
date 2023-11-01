@@ -4,28 +4,28 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/06/2023
+  ms.date: 08/16/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: artificial-intelligence
+  ms.subservice: language-understanding
 durationInMinutes: 2
 quiz:
+  title: ""
   questions:
-  - content: "You need to provision an Azure resource that will be used to **author** a new Language Understanding application. What kind of resource should you create?"
+  - content: "You need to provision an Azure resource that will be used to **author** a new conversational language understanding application. What kind of resource should you create?"
     choices:
-    - content: "Custom Language service"
+    - content: "Custom Language"
       isCorrect: false
-      explanation: "Incorrect. The Custom Language service is not an Azure service."
-    - content: "Language service"
+      explanation: "Incorrect. Custom Language is not an available type of Azure resource."
+    - content: "Language"
       isCorrect: true
-      explanation: "Correct. To author a Conversational Language Understanding model, you need a Language resource."
-    - content: "Cognitive Services"
+      explanation: "Correct. To author a conversational language understanding model, you need a Language resource."
+    - content: "Azure AI services"
       isCorrect: false
-      explanation: "Incorrect. You can use a Cognitive Service resource for Conversational Language Understanding prediction, but not for authoring."
-  - content: "You are authoring a Conversational Language Understanding application to support an international clock. You want users to be able to ask for the current time in a specified city, for example \"What is the time in London?\". What should you do?"
+      explanation: "Incorrect. You can use an Azure AI services resource for conversational language understanding prediction, but not for authoring."
+  - content: "You are authoring a conversational language understanding application to support an international clock. You want users to be able to ask for the current time in a specified city, for example \"What is the time in London?\". What should you do?"
     choices:
     - content: "Define a \"city\" entity and a \"GetTime\" intent with utterances that indicate the city entity."
       isCorrect: true
@@ -36,7 +36,7 @@ quiz:
     - content: "Add the utterance \"What time is it in city\" to the \"None\" intent."
       isCorrect: false
       explanation: "Incorrect. The None intent is used as a fallback for intents your application doesn't support."
-  - content: "You have published your Conversational Language Understanding application. What information does a client application developer need to get predictions from it?"
+  - content: "You have published your conversational language understanding application. What information does a client application developer need to get predictions from it?"
     choices:
     - content: "The endpoint and key for the application's prediction resource"
       isCorrect: true

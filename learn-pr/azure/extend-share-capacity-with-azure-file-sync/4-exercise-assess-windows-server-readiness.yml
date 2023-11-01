@@ -8,7 +8,9 @@ metadata:
   author: khdownie
   ms.author: kendownie
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 15
 ## interactive: powershell
 azureSandbox: false

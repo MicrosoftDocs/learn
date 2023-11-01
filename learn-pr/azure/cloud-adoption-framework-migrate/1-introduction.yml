@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: The Migrate methodology of the Cloud Adoption Framework guides you through migration to Azure by using repeatable processes and common tools.
   ms.date: 04/18/2023
-  author: jamcneil
-  ms.author: jumcn
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

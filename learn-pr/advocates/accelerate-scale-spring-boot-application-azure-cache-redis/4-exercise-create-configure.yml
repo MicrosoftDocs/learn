@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.exercise-create-configure
-title: Exercise - Create and configure a Spring Boot app to use Azure Cache for Redis
+title: Exercise - Create a Spring Boot application that uses Spring Data Redis
 metadata:
-  title: Create a Spring Boot application by using Spring Data Redis
-  description: In this exercise, we create a Spring Boot application, and we configure Spring Data Redis to store business data inside Redis.
+  title: Exercise - Create a Spring Boot application that uses Spring Data Redis
+  description: Complete this exercise to create a Spring Boot application and configure Spring Data Redis to store business data in Redis.
   author: judubois
   ms.author: judubois
   ms.date: 01/20/2021
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03112021
 durationInMinutes: 7

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-speech-enabled-apps.create-speech-resource
+title: Provision an Azure resource for speech
+metadata:
+  title: Provision an Azure resource for speech
+  description: "Provision an Azure resource for speech"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-speech
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-create-speech-service.md)]

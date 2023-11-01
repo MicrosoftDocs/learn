@@ -1,8 +1,8 @@
-As you deploy, use, and manage Azure SQL resources, you'll use a variety of interfaces and tools. In this unit, we'll look at the available tools, their capabilities, and when to use them.
+As you deploy, use, and manage Azure SQL resources, you can use a variety of interfaces and tools. This unit looks at the available tools, their capabilities, and when to use them.
 
 ### Azure portal  
 
-The Azure portal provides a broad set of features for Azure SQL resources, including virtual machines, managed instances, and databases. Through the Azure portal, you can deploy resources, administer resources, and even connect to databases and run queries.
+The [Azure portal](https://portal.azure.com) provides a broad set of features for Azure SQL resources, including virtual machines, managed instances, and databases. Through the Azure portal, you can deploy resources, administer resources, and even connect to databases and run queries.
 
 :::image type="content" source="../media/5-azure-sql-portal.png" alt-text="Screenshot that shows the Azure SQL deployment options in the Azure portal.":::
   
@@ -20,13 +20,13 @@ Azure Data Studio is an open-source, cross-platform tool for querying and workin
 
 ### Languages and APIs  
 
-Because all Azure SQL services are based on the SQL Server engine, Azure SQL supports the Transact-SQL (T-SQL) language and the Tabular Data Stream (TDS) protocol. That means all drivers that normally work with SQL Server work with Azure SQL.
+Because all Azure SQL services are based on the SQL Server engine, Azure SQL supports the Transact-SQL (T-SQL) language and the Tabular Data Stream (TDS) protocol. That means all drivers that normally work with SQL Server also work with Azure SQL.
 
-Azure SQL also supports REST APIs to manage SQL managed instances and SQL databases.
+Azure SQL supports REST APIs to manage SQL managed instances and SQL databases.
 
 ### Command-line interfaces
 
-Azure SQL services supports popular command-line interfaces like sqlcmd and bcp.
+Azure SQL supports popular command-line interfaces (CLI) like sqlcmd and bcp.
 
 Also, Azure CLI and Azure PowerShell cmdlets are supported for specific Azure SQL service scenarios. All these CLIs are supported across Windows, macOS, and Linux clients. Tools like sqlcmd and az are pre-installed in Azure Cloud Shell.
 
@@ -34,4 +34,4 @@ Also, Azure CLI and Azure PowerShell cmdlets are supported for specific Azure SQ
 
 ## What to use when
 
-There are several interfaces you can use to interact with Azure SQL. Many capabilities are available in all the interfaces. Which one you choose depends on a combination of preference and what you're trying to accomplish. Throughout this learning path, you'll use many of the interfaces described here. At the end of this module, you'll find resources to help you learn more about the ones that interest you.  
+There are several interfaces you can use to interact with Azure SQL. Many capabilities are available in all the interfaces. Which one you choose depends on a combination of preference and what you're trying to accomplish. Throughout this learning path, you can use many of the interfaces described here. At the end of this module, there are resources to help you learn more about the ones that interest you.  

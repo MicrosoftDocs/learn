@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.assess-database-data-migration-assistant
+title: Assess a database with Data Migration Assistant
+metadata:
+  title: Assess a database with Data Migration Assistant
+  description: "Understand how Data Migration Assistant assists in SQL Server migrations by identifying breaking changes, deprecated features, and conducting feature parity assessments for enhanced performance in on-premises or Azure SQL scenarios."
+  ms.date: 05/23/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-assess-database-data-migration-assistant.md)]

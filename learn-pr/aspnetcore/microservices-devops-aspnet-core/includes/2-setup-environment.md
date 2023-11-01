@@ -1,53 +1,56 @@
-In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to Azure Kubernetes Service (AKS).
+In this unit, you use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to Azure Kubernetes Service (AKS). Using a script keeps the focus on the learning objectives. The script outputs colored text to indicate the commands being executed. You can inspect the script and the output to better understand the commands used.
 
-## Open the development environment and create the Azure resources
+The following diagram shows the app's solution architecture. This module focuses on adding continuous integration and continuous deployment (CI/CD) for the coupon microservice.
 
-1. In a new browser window, fork the repository [github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core) to your own GitHub account. For instructions on forking, see [Forking Projects](https://guides.github.com/activities/forking).
+:::image type="content" source="../media/2-setup-environment/eshop-architecture.png" alt-text="Diagram that shows the eShopOnContainers solution architecture."  border="false" lightbox="../media/2-setup-environment/eshop-architecture.png":::
 
-    > [!NOTE]
-    > If you wish to use GitHub Codespaces, create a new codespace using the `main` branch of your newly forked repository, and then skip to step 4.
+The quickstart script completes the following steps to deploy an updated version of the [*:::no-loc text="eShopOnContainers":::*](https://github.com/dotnet-architecture/eshoponcontainers) app.
 
-1. From a new Visual Studio Code window, press **Ctrl+Shift+P** to open the command palette, and then search for and select **Dev Containers: Clone Repository in Container Volume**.
+- Provisions AKS and Azure Container Registry resources.
+- Deploys the containers to the fully managed AKS service.
+- Displays connection information upon completion.
 
-1. Provide your forked repository URL. Visual Studio Code creates your development container.
+## Create the Azure resources in the dev environment
 
-1. After the project loads in the container, expand the *deploy/k8s* directory. Right-click on the *k8s* directory and select **Open in Integrated Terminal**. This location contains the scripts you're going to use in this module. (Note: By default, Code will display *k8s* on the same line as *deploy* because *deploy* only contains the *k8s* subdirectory.)
+1. In a new browser window, fork the [MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core) repository to your own GitHub account. For instructions, see [Fork a repo](https://docs.github.com/get-started/quickstart/fork-a-repo).
 
-    ![Screenshot of the explorer pane in Visual Studio Code. The context menu for the k8s folder is displayed, and Open in Integrated Terminal is selected.](../media/2-setup-environment/k8s-path.png)
+1. Set up the dev environment.
 
-1. In the new terminal pane, sign in to the Azure CLI. If using GitHub Codespaces, include the `--use-device-code` flag. If you are using Visual Studio Code, you may optionally omit the flag.
+   - To use GitHub Codespaces, create a new codespace using the `main` branch of your forked repository.
 
-    ```azurecli
-    az login --use-device-code
-    ```
+   - To use Visual Studio Code:
+     1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+     1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
+     1. Select your forked repository and branch. Visual Studio Code creates your development container.
 
-1. View your selected Azure subscription.
+1. After the project loads in the container, expand the *deploy/k8s* directory in the Visual Studio Code **Explorer** pane. This directory contains the scripts to use in this module.
 
-    ```azurecli
-    az account show -o table
-    ```
+   > [!NOTE]
+   > By default, Visual Studio Code **Explorer** displays *k8s* on the same line as *deploy* because *deploy*  contains only the *k8s* subdirectory.
+   
+1. Right-click the *k8s* directory and select **Open in Integrated Terminal**.
 
-    If the wrong subscription is selected, select the correct one using the [az account set](/cli/azure/account#az-account-set) command.
+   ![Screenshot of the Explorer pane in Visual Studio Code, showing the context menu for the k8s folder with Open in Integrated Terminal selected.](../media/2-setup-environment/k8s-path.png)
+
+1. In the new terminal pane, sign in to the Azure CLI. If you use GitHub Codespaces, include the `--use-device-code` flag and follow the prompts. If you use Visual Studio Code, the flag is optional.
+
+   ```azurecli
+   az login --use-device-code
+   ```
+
+1. View the selected Azure subscription.
+
+   ```azurecli
+   az account show -o table
+   ```
+
+   If the wrong subscription is selected, use the [az account set](/cli/azure/account#az-account-set) command to select the correct one.
 
 1. Run the quickstart script:
 
-    [!INCLUDE[Quickstart note](../../includes/microservices/quickstart.md)]
+   ```bash
+   ./quickstart.sh
+   ```
 
-    ```bash
-    ./quickstart.sh
-    ```
+   [!INCLUDE[Quickstart note](../../includes/microservices/quickstart.md)]
 
-    The preceding command runs a script that completes the following steps:
-
-    * Provisions AKS and Azure Container Registry resources.
-    * Deploys the containers to a fully managed Kubernetes service in Azure, known as AKS.
-    * Displays connection information upon completion.
-
-    > [!TIP]
-    > This unit uses scripts to keep focus on the learning objectives. The script outputs colored text to indicate the commands being executed. You can inspect the script and the output to better understand the commands used.
-
-The script deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers). The solution architecture of the app is pictured in the following diagram:
-
-:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram." border="true" lightbox="../../media/microservices/eshop-architecture.png":::
-
-This module focuses on adding CI/CD for the coupon service depicted in the preceding diagram.

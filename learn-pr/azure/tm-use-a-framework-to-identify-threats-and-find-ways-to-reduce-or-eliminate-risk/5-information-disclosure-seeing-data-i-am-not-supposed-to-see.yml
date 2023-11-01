@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.5-information-disclosure-seeing-data-i-am-not-supposed-to-see
-title: Information disclosure - seeing data I am not supposed to see
+title: Information disclosure - seeing data I'm not supposed to see
 metadata:
-  title: Information disclosure - seeing data I am not supposed to see
+  title: Information disclosure - seeing data I'm not supposed to see
   description: Learn about Information Disclosure and its corresponding security control
   ms.date: 02/28/2020
   author: rodsan
@@ -17,12 +17,12 @@ quiz:
   questions:
   - content: "Which statement describes a potential security control against information disclosure?"
     choices:
-    - content: "Sender digitally signs a message so the receiver knows who the message came from"
+    - content: "Sender digitally signs a message so the receiver knows who the message came from."
       isCorrect: false
       explanation: "This message applies to spoofing"
-    - content: "System grants administrative access to users listed on the access control list"
+    - content: "System grants administrative access to users listed on the access control list."
       isCorrect: true
       explanation: "This statement applies to tampering, information disclosure, denial of service and elevation of privilege"
-    - content: "System logs all actions and users to keep everyone accountable"
+    - content: "System logs all actions and users to keep everyone accountable."
       isCorrect: false
       explanation: "This statement applies to repudiation"

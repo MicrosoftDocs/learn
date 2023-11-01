@@ -1,0 +1,151 @@
+### YamlMime:ModuleUnit
+uid: learn.build-dotnet-app-azure-cosmos-db-nosql.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - devx-track-dotnet
+  description: |
+    Check your knowledge on creating, managing, and querying items and resources in an Azure Cosmos DB for NoSQL account using the .NET SDK library from NuGet.
+
+  author: seesharprun
+  ms.author: sidandrews
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.date: 6/5/2023
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: |
+      Which block of code should be used to create a client to connect to the Azure Cosmos DB account with only a connection string?
+    choices:
+    - content: |
+        ```csharp
+        string connectionString = "<cosmos-connection-string>";
+        using CosmosClient client = new(connectionString);
+        ```
+      isCorrect: true
+      explanation: |
+        Correct.
+        This constructor only requires a single string parameter with the full connection string.
+    - content: |
+        ```csharp
+        string connectionString = "<cosmos-connection-string>";
+        using CosmosClient client = new(connectionString, "");
+        ```
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        This constructor requires two strings; one for the endpoint and another for the key. You incorrectly passed in the connection string for the endpoint parameter.
+    - content: |
+        ```csharp
+        string connectionString = "<cosmos-connection-string>";
+        using CosmosClient client = new();
+        ```
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        This constructor is used solely for mock testing.
+  - content: |
+      Consider a new Azure Cosmos DB account without any resources. Which block of code creates the first server-side resource that is required to store a set of containers?
+    choices:
+    - content: |
+        ```csharp
+        using CosmosClient client = new(
+            connectionString: cosmosConnectionString
+        );
+        ```
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        The client instance simply connects to Azure Cosmos DB. It doesn't create any resources.
+    - content: |
+        ```csharp
+        Container container = await database.CreateContainerIfNotExistsAsync(
+            "products",
+            partitionKeyPath: "/department",
+            throughput: 400
+        );
+        ```
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        Containers must be created in a different type of resource within Azure Cosmos DB.
+    - content: |
+        ```csharp
+        Database database = await client.CreateDatabaseIfNotExistsAsync(
+            "adventureworks"
+        );
+        ```
+      isCorrect: true
+      explanation: |
+        Correct.
+        All containers must exist within a database that has been created within the Azure Cosmos DB account.
+  - content: |
+      An item already exists in the Azure Cosmos DB for NoSQL account with a unique identifier of `04b3038c-b966-4a86-a1f3-5d1fa5c2a47c`. Which of the following blocks of code replace the existing item in the container with a newly created item without running the risk of creating an entirely new item.
+    choices:
+    - content: |
+        ```csharp
+        Item item = new("04b3038c-b966-4a86-a1f3-5d1fa5c2a47c", "item-category", "item-name", 0, true);
+        container.UpsertItemAsync(item);
+        ```
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        While this method can replace an existing item, it can also potentially create a new item.
+    - content: |
+        ```csharp
+        Item item = new("04b3038c-b966-4a86-a1f3-5d1fa5c2a47c", "item-category", "item-name", 0, true);
+        container.ReplaceItemAsync("04b3038c-b966-4a86-a1f3-5d1fa5c2a47c", item);
+        ```
+      isCorrect: true
+      explanation: |
+        Correct.
+        This method replaces an item that already exists within the container.
+    - content: |
+        ```csharp
+        Item item = new("04b3038c-b966-4a86-a1f3-5d1fa5c2a47c", "item-category", "item-name", 0, true);
+        container.CreateItemAsync(item);
+        ```
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        This method creates a new item and throws a conflict exception if an item already exists.
+  - content: |
+      Here's an Azure Cosmos DB for NoSQL query: `SELECT * FROM container c WHERE c.partitionKey == 'some-category' ORDER BY c.id`. What is the language-integrated query (LINQ) equivalent of this query?
+    choices:
+    - content: |
+        ```csharp
+        using FeedIterator<Product> feed = container.GetItemLinqQueryable<Item>()
+            .OrderBy(i => i.partitionKey)
+            .ToFeedIterator();
+        ```  
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        This query incorrectly orders the results using the partition key.
+    - content: |
+        ```csharp
+        using FeedIterator<Product> feed = container.GetItemLinqQueryable<Item>()
+            .Where(i => i.id == "some-category")
+            .ToFeedIterator();
+        ```
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        This query incorrectly filters using the unique identifier.
+    - content: |
+        ```csharp
+        using FeedIterator<Product> feed = container.GetItemLinqQueryable<Item>()
+            .Where(i => i.partitionKey == "some-category")
+            .OrderBy(i => i.id)
+            .ToFeedIterator();
+        ```
+      isCorrect: true
+      explanation: |
+        Correct.
+        This query filters on the partition key and orders the results using the unique identifier.

@@ -6,8 +6,9 @@ metadata:
   ms.date: 02/01/2020
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-java
+  manager: mijacobs
 title: Develop Java web app on Azure using Eclipse
 summary: Create a web app in Eclipse and deploy the app to Azure by using Azure Toolkit for Eclipse.
 abstract: | 

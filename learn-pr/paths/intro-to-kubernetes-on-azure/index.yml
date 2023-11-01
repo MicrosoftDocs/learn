@@ -8,7 +8,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Introduction to Kubernetes on Azure
 summary: |
   Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service.

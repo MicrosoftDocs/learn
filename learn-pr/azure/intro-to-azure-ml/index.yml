@@ -7,7 +7,7 @@ metadata:
   author: sdgilley
   ms.author: sgilley
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Introduction to Azure Machine Learning 
 summary: Azure Machine Learning provides an environment to create and manage the end-to-end life cycle of Machine Learning models. Azure Machine Learning’s compatibility with open-source frameworks and platforms like PyTorch and TensorFlow makes it an effective all-in-one platform for integrating and handling data and models. Azure Machine Learning is designed for all skill levels, with advanced MLOps features and simple no-code model creation and deployment.
 abstract: |

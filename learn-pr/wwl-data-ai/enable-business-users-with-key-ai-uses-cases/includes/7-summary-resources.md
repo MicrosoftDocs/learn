@@ -24,7 +24,6 @@ Now that you have reviewed this module, you should be able to:
 
 (1) [Gartner, “Gartner says AI Augmentation will Create $2.9 Trillion of Business Value in 2021,” 5 August 2019.](https://www.gartner.com/en/newsroom/press-releases/2019-08-05-gartner-says-ai-augmentation-will-create-2point9-trillion-of-business-value-in-2021).  
 (2) KRC Research commissioned by Microsoft, “AI and skills – a global research study by Microsoft,” 7 May 2020.  
-(3) [Gartner, “Top 10 Strategic Technology Trends for 2020,” David Cearley, Nick Jones, David Smith, Brian Burke, Arun Chandrasekaran, CK Lu, 21 October 2019](https://www.gartner.com/smarterwithgartner/gartner-top-10-strategic-technology-trends-for-2020).  
-(4) [IDC, The Digitization of the World: From Edge to Core,” John Gantz, David Reinsel, John Rydning, November 2018](https://www.import.io/wp-content/uploads/2017/04/Seagate-WP-DataAge2025-March-2017.pdf).  
-(5) [Economist Intelligence Unit, “The Experience of Work: the Role of Technology in Productivity and Engagement,” 2019. Forrester Consulting, “Extending the Value of AI to Knowledge Workers,” January 2019](https://theexperienceofwork.economist.com/pdf/Citrix_The_Experience_of_Work_BriefingPaper.pdf).  
-(6) [Forrester Consulting, “Extending the Value of AI to Knowledge Workers,” January 2019](https://info.microsoft.com/ww-thankyou-Extending-the-Value-of-AI-to-Knowledge-Workers-eBook.html).
+(3) [Gartner, “Top 10 Strategic Technology Trends for 2020,” David Cearley, Nick Jones, David Smith, Brian Burke, Arun Chandrasekaran, CK Lu, 21 October 2019](https://www.gartner.com/smarterwithgartner/gartner-top-10-strategic-technology-trends-for-2020).   
+(4) [Economist Intelligence Unit, “The Experience of Work: the Role of Technology in Productivity and Engagement,” 2019. Forrester Consulting, “Extending the Value of AI to Knowledge Workers,” January 2019](https://theexperienceofwork.economist.com/pdf/Citrix_The_Experience_of_Work_BriefingPaper.pdf).  
+(5) [Forrester Consulting, “Extending the Value of AI to Knowledge Workers,” January 2019](https://info.microsoft.com/ww-thankyou-Extending-the-Value-of-AI-to-Knowledge-Workers-eBook.html).

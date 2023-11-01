@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-create-mini-game-with-copilot.exercise-setup-codespaces-add-extensions
+title: Exercise - Add the GitHub Copilot extension
+metadata:
+  title: Exercise - Add the GitHub Copilot extension
+  description: "Exercise - Add the GitHub Copilot extension"
+  ms.date: 08/22/2023
+  author: wwlpublish
+  ms.author: cyzanon
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-setup-codespaces-add-extensions.md)]

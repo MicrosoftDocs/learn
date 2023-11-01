@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Server migration
   description: Walk through the process of migrating a server by using Azure Migrate.
   ms.date: 04/18/2023
-  author: jamcneil
-  ms.author: jumcn
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20

@@ -9,7 +9,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-azurecli
   ms.contributors:
   - abartolo-05192020
 title: Open an IoT Edge gateway device inbound ports using Azure CLI

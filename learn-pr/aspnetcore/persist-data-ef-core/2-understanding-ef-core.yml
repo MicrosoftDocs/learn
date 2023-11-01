@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.persist-data-ef-core.understanding-ef-core
-title: Understanding EF Core
+title: Understand EF Core
 metadata:
-  title: Understanding EF Core
-  description: "Understand the purpose and architecture of Entity Framework Core."
+  title: Understand EF Core
+  description: "Understand the purpose and architecture of Entity Framework Core (EF Core)."
   ms.date: 12/13/2021
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 durationInMinutes: 5
@@ -16,12 +17,12 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which class provides a base set of operations to configure and interact with your database?"
+    - content: "Which class provides a base set of operations that you can use to configure and interact with your database?"
       choices:
       - content: "SqlConnection"
         isCorrect: false
         explanation: "Incorrect. You aren't required to use SqlConnection in EF Core."
-      - content: " DbContext"
+      - content: "DbContext"
         isCorrect: true
         explanation: "Correct! DbContext is the gateway to interacting with the database."
       - content: "ConcurrentDictionary"

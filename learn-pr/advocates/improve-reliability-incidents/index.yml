@@ -8,7 +8,6 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 summary: Everyone has incidents, but the top performing organizations know how to respond to them effectively. Learn the fundamentals of efficient incident response and the Azure tools that make them possible.

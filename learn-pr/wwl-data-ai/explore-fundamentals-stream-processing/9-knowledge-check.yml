@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-fundamentals-of-stream-processing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/15/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.service: azure
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "Which definition of stream processing is correct?"
+    choices:
+    - content: "Data is processed continually as new data records arrives"
+      isCorrect: true
+      explanation: "Correct. Stream processing is used to continually process new data as it arrives."
+    - content: "Data is collected in a temporary store, and all records are processed together as a batch."
+      isCorrect: false
+      explanation: "Incorrect. Collecting and processing data periodically as a batch is referred to as batch processing."
+    - content: "Data is incomplete and cannot be analyzed."
+      isCorrect: false
+      explanation: "Incorrect. When incomplete data cannot be analyzed, it cannot be processed for analysis."
+  - content: "Which service would you use to continually capture data from an IoT Hub, aggregate it over temporal periods, and store results in Azure SQL Database?"
+    choices:
+    - content: "Azure Cosmos DB"
+      isCorrect: false
+      explanation: "Incorrect. Azure Cosmos DB is a NoSQL data store."
+    - content: "Azure Stream Analytics"
+      isCorrect: true
+      explanation: "Correct. Azure Stream Analytics can be used to query a stream of data from Azure IoT Hub and store the results in Azure SQL Database."
+    - content: "Azure Storage"
+      isCorrect: false
+      explanation: "Incorrect. Azure Storage doesn't provide stream-querying functionality."

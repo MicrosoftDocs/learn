@@ -1,5 +1,3 @@
-
-
 ## Scenario
 
 You and the other SAP solutions architects for your company have chosen a Windows Server Azure VM with a SQL Server database for your new SAP deployment.
@@ -8,7 +6,7 @@ You must make recommendations to the architecture team about storing database fi
 
 ## Learning objectives
 
-You will:
+You'll:
 
 - Explore database support of Azure for SAP workloads.
 - Explore SQL Server.

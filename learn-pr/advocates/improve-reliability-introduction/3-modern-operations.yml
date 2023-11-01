@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.improve-reliability-introduction.3-modern-operations
-title: "Modern operations"
+title: Modern operations
 metadata:
-  title: "Modern operations"
+  title: Modern operations
   description: "What are the modern operations practices of site reliability engineering (SRE) and DevOps and why they can help us with reliability challenges."
-  ms.date: 05/07/2020
+  ms.date: 05/19/2023
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-03082021
 durationInMinutes: 3
@@ -18,53 +18,53 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of these modern operations practices has a specific focus on the continuous delivery of value to end users?'
+  - content: "Which of these modern operations practices has a specific focus on the continuous delivery of value to end users?"
     choices:
-    - content: 'DevOps'
+    - content: "DevOps"
       isCorrect: true
-      explanation: 'Correct, this is part of one of the definitions for DevOps.'
-    - content: 'Site reliability engineering (SRE)'
+      explanation: "Correct. DevOps has a specific focus on the continuous delivery of value to end users."
+    - content: "Site reliability engineering (SRE)"
       isCorrect: false
-      explanation: 'SRE focuses more on reliability than delivery.'
+      explanation: "SRE focuses more on reliability than delivery."
 
-  - content: 'Which of these things is not a core part of the engineering culture of DevOps?'
+  - content: "Which of these things isn't a core part of the engineering culture of DevOps?"
     choices:
-    - content: 'Learning'
+    - content: "Learning"
       isCorrect: false
-      explanation: 'Learning is part of the engineering culture of DevOps.'
-    - content: 'Time management'
+      explanation: "Learning is part of the engineering culture of DevOps."
+    - content: "Time management"
       isCorrect: true
-      explanation: 'Time management is not a core part of the engineering culture of DevOps.'
-    - content: 'Ownership'
+      explanation: "Time management isn't a core part of the engineering culture of DevOps."
+    - content: "Ownership"
       isCorrect: false
-      explanation: 'Ownership is part of the engineering culture of DevOps.'
-    - content: 'Collaboration'
+      explanation: "Ownership is part of the engineering culture of DevOps."
+    - content: "Collaboration"
       isCorrect: false
-      explanation: 'Collaboration is part of the engineering culture of DevOps.'
+      explanation: "Collaboration is part of the engineering culture of DevOps."
 
-  - content: 'Which of these practices are common to both DevOps and SRE?'
+  - content: "Which of these practices are common to both DevOps and SRE?"
     choices:
-    - content: 'Monitoring/Observability'
+    - content: "Monitoring/Observability"
       isCorrect: false
-      explanation: 'This is one of the common practices, but there are more.'
-    - content: 'Proper incident response'
+      explanation: "This practice is common to both DevOps and SRE, but there are more."
+    - content: "Proper incident response"
       isCorrect: false
-      explanation: 'This is one of the common practices, but there are more.'
-    - content: 'Automation'
+      explanation: "This practice is common to both DevOps and SRE, but there are more."
+    - content: "Automation"
       isCorrect: false
-      explanation: 'This is one of the common practices, but there are more.'
-    - content: 'Collaboration'
+      explanation: "This practice is common to both DevOps and SRE, but there are more."
+    - content: "Collaboration"
       isCorrect: false
-      explanation: 'This is one of the common practices, but there are more.'
-    - content: 'All of the above'
+      explanation: "This practice is common to both DevOps and SRE, but there are more."
+    - content: "All of these practices are common to both."
       isCorrect: true
-      explanation: 'Correct.'
+      explanation: "Correct."
 
-  - content: 'Which of these modern operations practices focuses primarily on reliability?'
+  - content: "Which of these modern operations practices focuses primarily on reliability?"
     choices:
-    - content: 'DevOps'
+    - content: "DevOps"
       isCorrect: false
-      explanation: 'DevOps (for some definitions) focuses more on delivery.'
-    - content: 'Site reliability engineering'
+      explanation: "DevOps (for some definitions) focuses more on delivery."
+    - content: "Site reliability engineering"
       isCorrect: true
-      explanation: 'Correct.'
+      explanation: "Correct."

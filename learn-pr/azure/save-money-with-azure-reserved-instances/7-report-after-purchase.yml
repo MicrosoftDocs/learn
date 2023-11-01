@@ -2,12 +2,12 @@
 uid: learn.save-money-with-azure-reserved-instances.report-after-purchase
 metadata:
   title: Analyze and report after reservation purchase
-  description: Analyze and report after reservation purchase
-  ms.date: 11/01/2021
+  description: Learn how to analyze and review data about chargebacks and unused reservations.
+  ms.date: 06/07/2023
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Analyze and report after reservation purchase
 durationInMinutes: 6
 content: |

@@ -1,10 +1,10 @@
-In your retail application, the software built by the inventory and shipping departments will need to respond to each other’s events as part of a typical workflow. For example, the inventory microservice needs to deduct the item from its inventory once an order is shipped.
+In your retail application, the software built by the inventory and shipping departments needs to respond to each other’s events as part of a typical workflow. For example, the inventory microservice needs to deduct the item from its inventory once an order is shipped.
 
-In this exercise, you will implement Pub/Sub in an Azure Cache for Redis instance using multiple console windows.
+In this exercise, implement Pub/Sub in an Azure Cache for Redis instance using multiple console windows.
 
 ## Open the Azure Cache for Redis console in two browser instances
 
-Observe two separate clients sending and receiving messages by using two unique browser instances. Each browser instance will have the Redis console to help illustrate real-time Pub/Sub functionality.
+Observe two separate clients sending and receiving messages by using two unique browser instances. Each browser instance has the Redis console to help illustrate real-time Pub/Sub functionality.
 
 ### Open the first browser instance
 
@@ -16,9 +16,9 @@ Observe two separate clients sending and receiving messages by using two unique 
 
     :::image type="content" source="../media/4-resource-list.png" lightbox="../media/4-resource-list-full.png" alt-text="Screenshot of the Azure Cache for Redis resource list.":::
 
-1. In the resource blade, select **Console** to open the Redis console.
+1. In the resource pane, select **Console** to open the Redis console.
 
-    :::image type="content" source="../media/4-console-option.png" lightbox="../media/4-console-option-full.png" alt-text="Screenshot of the Console option in the blade menu.":::
+    :::image type="content" source="../media/4-console-option.png" lightbox="../media/4-console-option-full.png" alt-text="Screenshot of the Console option in the resource pane.":::
 
 1. Leave the console open to complete subsequent tasks in this exercise.
 
@@ -30,7 +30,7 @@ Observe two separate clients sending and receiving messages by using two unique 
 
 1. Select the Azure Cache for Redis instance you created in a previous exercise.
 
-1. In the resource blade, select **Console** to open the Redis console.
+1. In the resource pane, select **Console** to open the Redis console.
 
 1. Leave the console open to complete subsequent tasks in this exercise.
 
@@ -53,7 +53,7 @@ Subscribe to channels using the ``SUBSCRIBE`` command and then publish messages 
         SUBSCRIBE org.shipping.alerts
         ```
 
-    1. Observe the response from the console indicating that it is now listening on the **org.shipping.alerts** channel.
+    1. Observe the response from the console indicating that it's now listening on the **org.shipping.alerts** channel.
 
         ```Redis
         Reading messages... (press ENTER to quit)
@@ -124,7 +124,7 @@ Subscribe to a pattern of channels using the ``PSUBSCRIBE`` command and then pub
         PSUBSCRIBE org.inventory.*
         ```
 
-    1. Observe the response from the console indicating that it is now listening on the **org.inventory.\*** channel pattern.
+    1. Observe the response from the console indicating that it's now listening on the **org.inventory.\*** channel pattern.
 
         ```Redis
         Reading messages... (press ENTER to quit)

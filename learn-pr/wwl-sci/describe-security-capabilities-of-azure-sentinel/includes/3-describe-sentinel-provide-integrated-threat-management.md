@@ -14,11 +14,13 @@ Microsoft Sentinel helps enable end-to-end security operations, in a modern Secu
 
 ### Connect Sentinel to your data
 
-To on-board Microsoft Sentinel, you first need to connect to your security sources. Microsoft Sentinel comes with many connectors for Microsoft solutions, available out of the box and providing real-time integration. Included are Microsoft 365 Defender solutions, and Microsoft 365 sources, including Office 365, Azure AD, and more.  In addition, there are built-in connectors to the broader security ecosystem of non-Microsoft solutions. You can also connect your data sources using community-built data connectors listed in the Microsoft Sentinel GitHub repository or by following generic deployment procedures for how to connect your data source to Microsoft Sentinel. Links to information are included in the Learn more section of the summary and resources unit.
+To on-board Microsoft Sentinel, you first need to connect to your security sources. Microsoft Sentinel comes with many connectors for Microsoft solutions, available out of the box and providing real-time integration. Included are Microsoft 365 Defender solutions, and Microsoft 365 sources, including Office 365, Microsoft Entra, and more.  In addition, there are built-in connectors to the broader security ecosystem of non-Microsoft solutions. You can also connect your data sources using community-built data connectors listed in the Microsoft Sentinel GitHub repository or by following generic deployment procedures for how to connect your data source to Microsoft Sentinel. Links to information are included in the Learn more section of the summary and resources unit.
 
 ### Workbooks
 
-After you connect data sources to Microsoft Sentinel, you can monitor the data using the Microsoft Sentinel integration with Azure Monitor Workbooks. You'll see a canvas for data analysis and the creation of rich visual reports within the Azure portal. Through this integration, Microsoft Sentinel allows you to create custom workbooks across your data. It also comes with built-in workbook templates that allow quick insights across your data as soon as you connect a data source.
+After you connect data sources to Microsoft Sentinel, you can monitor the data using the Microsoft Sentinel integration with Azure Monitor Workbooks. Workbooks are intended for SOC engineers and analysts of all tiers to visualize data. You'll see a canvas for data analysis and the creation of rich visual reports within the Azure portal. 
+
+Through this integration, Microsoft Sentinel allows you to create custom workbooks across your data. It also comes with built-in workbook templates that allow quick insights across your data as soon as you connect a data source.
 
 ### Analytics
 
@@ -28,13 +30,13 @@ Microsoft Sentinel uses analytics to correlate alerts into incidents. Incidents 
 
 Incident management allows you to manage the lifecycle of the incident.  View all related alerts that are aggregated into an incident. You can also triage and investigate.  Review all related entities in the incident and additional contextual information meaningful to the triage process. Investigate the alerts and related entities to understand the scope of breach. Trigger playbooks on the alerts grouped in the incident to resolve the threat detected by the alert. You can also do standard incident management tasks like changing status or assigning incidents to individuals for investigation.
 
-### Security automation and orchestration
+### Security automation and orchestration with playbooks
 
 You can use Microsoft Sentinel to automate some of your security operations and make your security operations center (SOC) more productive. Microsoft Sentinel integrates with Azure Logic Apps, so you can create automated workflows, or playbooks, in response to events. A security playbook is a collection of procedures that can help SOC engineers and analysts of all tiers to automate and simplify tasks and orchestrate a response.  Playbooks work best with single, repeatable tasks, and require no coding knowledge.
 
 ### Investigation
 
-Currently in preview, Microsoft Sentinel's deep investigation tools help you to understand the scope of a potential security threat and find the root cause. You choose an entity on the interactive graph to ask specific questions, then drill down into that entity and its connections to get to the root cause of the threat.
+Microsoft Sentinel's deep investigation tools help you to understand the scope of a potential security threat and find the root cause. You choose an entity on the interactive graph to ask specific questions, then drill down into that entity and its connections to get to the root cause of the threat.
 
 ### Hunting
 
@@ -50,8 +52,8 @@ Microsoft Sentinel supports Jupyter notebooks.  Jupyter Notebook is an open-sour
 
 The Microsoft Sentinel community is a powerful resource for threat detection and automation. Microsoft security analysts constantly create and add new workbooks, playbooks, hunting queries, and more, posting them to the community for you to use in your environment. You can download sample content from the private community GitHub repository to create custom workbooks, hunting queries, notebooks, and playbooks for Microsoft Sentinel.
 
-### Microsoft Sentinel video presentation
+### Content hub
 
-In this video, you’ll explore some of the key features available in Microsoft Sentinel.
+The Microsoft Sentinel Content hub is your centralized location to discover and manage out-of-the-box (built-in) packaged solutions.  Microsoft Sentinel solutions are packages of Microsoft Sentinel content or Microsoft Sentinel API integrations that provide single-step deployment and enablement.  Content hub solutions, which fulfill an end-to-end product, domain, or industry vertical scenario in Microsoft Sentinel.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LHLR]
+In the Content hub, filter by categories and other parameters to find the content that works best for your organization's needs and use cases. The Content hub also indicates the support model applied to each solution and content, as some content is maintained by Microsoft and others are maintained by partners or the community. You can also manage updates for out-of-the-box content via the Microsoft Sentinel Content hub.

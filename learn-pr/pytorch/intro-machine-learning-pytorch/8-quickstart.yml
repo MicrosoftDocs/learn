@@ -9,7 +9,10 @@ metadata:
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.service: machine-learning
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - build-2023
+    - build-2023-dataai
   ms.contributors: cassieb-04262021
 durationInMinutes: 5
 sandbox: true

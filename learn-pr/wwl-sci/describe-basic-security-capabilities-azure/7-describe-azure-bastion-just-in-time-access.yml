@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-basic-security-capabilities-azure.describe-what-is-azure-bastion
-title: Describe Azure Bastion and JIT Access
+title: Describe Azure Bastion
 metadata:
-  title: Describe Azure Bastion and JIT Access
-  description: "Describe Azure Bastion and JIT Access"
-  ms.date: 02/09/2023
+  title: Describe Azure Bastion
+  description: "Describe Azure Bastion"
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 6
 content: |
   [!include[](includes/7-describe-azure-bastion-just-in-time-access.md)]

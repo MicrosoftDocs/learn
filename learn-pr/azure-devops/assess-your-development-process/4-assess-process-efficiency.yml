@@ -9,7 +9,7 @@ metadata:
   author: chcomley
   ms.author: chcomley
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   show_latex: true
 durationInMinutes: 8
 content: |

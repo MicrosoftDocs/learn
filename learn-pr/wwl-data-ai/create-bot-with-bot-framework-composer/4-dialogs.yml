@@ -6,9 +6,9 @@ metadata:
   description: "Understand dialogs"
   ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

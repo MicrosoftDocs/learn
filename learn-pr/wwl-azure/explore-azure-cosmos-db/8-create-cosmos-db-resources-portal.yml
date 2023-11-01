@@ -4,11 +4,11 @@ title: 'Exercise: Create Azure Cosmos DB resources by using the Azure portal'
 metadata:
   title: 'Exercise: Create Azure Cosmos DB resources by using the Azure portal'
   description: "Exercise: Create Azure Cosmos DB resources by using the Azure portal"
-  ms.date: 04/25/2023
+  ms.date: 07/20/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
 durationInMinutes: 10
 content: |
   [!include[](includes/8-create-cosmos-db-resources-portal.md)]

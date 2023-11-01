@@ -4,15 +4,20 @@ title: Prepare
 metadata:
   unitType: learning-content
   title: Prepare
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - devx-track-dotnet
   description: |
     Review the project's environment and get started creating an Azure Cosmos DB for NoSQL account using the Azure CLI.
+
   sandbox: true
   interactive: bash
   author: seesharprun
   ms.author: sidandrews
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 3/30/2023
+  ms.date: 6/5/2023
 durationInMinutes: 4
 content: |
   [!include[](includes/2-prepare.md)]

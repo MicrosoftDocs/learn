@@ -8,6 +8,10 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

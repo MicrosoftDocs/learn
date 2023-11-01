@@ -6,6 +6,7 @@ metadata:
   ms.date: 11/04/2021
   author: softchris
   ms.author: chnoring
+  ms.manager: markl
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
@@ -28,8 +29,8 @@ products:
   - aspnet-core
 prerequisites: |
   - Fundamental understanding of JavaScript.
-  - Node.js installed.
-  - Yarn installed.
+  - GitHub account for development in browser.
+  - Visual Studio Code for local development.
   - Working knowledge of the web, especially on request and responses in HTTP.
 subjects:
 - development-tools
@@ -39,6 +40,9 @@ units:
   - learn.aspnetcore.build-web-api-minimal-spa.exercise-create-front-end
   - learn.aspnetcore.build-web-api-minimal-spa.design-api
   - learn.aspnetcore.build-web-api-minimal-spa.exercise-create-api
+  - learn.aspnetcore.build-web-api-minimal-spa.design-style
+  - learn.aspnetcore.build-web-api-minimal-spa.exercise-use-design-system
+  - learn.aspnetcore.build-web-api-minimal-spa.cleanup
   - learn.aspnetcore.build-web-api-minimal-spa.knowledge-check
   - learn.aspnetcore.build-web-api-minimal-spa.summary
 badge:

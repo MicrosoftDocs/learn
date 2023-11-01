@@ -9,7 +9,9 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 durationInMinutes: 5
 content: |
   [!include[](includes/4-enums.md)]

@@ -4,12 +4,11 @@ title: Configure properties for diagnostic logging
 metadata:
   title: Configure properties for diagnostic logging
   description: "Configure properties for diagnostic logging"
-  ms.date: 02/24/2023
+  ms.date: 05/09/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/7-diagnostic-logging.md)]

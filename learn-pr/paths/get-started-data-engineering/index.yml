@@ -19,7 +19,7 @@ levels:
 roles:
 - data-engineer
 products:
-- azure-data-lake-gen2
+- azure-data-lake-storage
 - azure-synapse-analytics
 subjects:
 - data-engineering

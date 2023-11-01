@@ -2,20 +2,20 @@
 uid: learn.tour-azure-portal-features
 metadata:
   title: Manage services with the Azure portal
-  description: Get acquainted with the Azure cloud platform through the Azure portal, where you create and manage all of your Azure resources.
-  ms.date: 07/15/2022
+  description: Get acquainted with the Azure cloud platform through the Azure portal, where you can create and manage all of your Azure resources.
+  ms.date: 08/18/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-portal
 title: Manage services with the Azure portal
-summary: Tour the Azure portal features and services, and customize your portal.
+summary: Explore the Azure portal features and services, and customize your portal.
 abstract: |
-  In this module, you will:
-  - Learn about Azure management options
-  - Navigate the Azure portal
-  - Customize the dashboard
-  - Learn how to opt in to preview services and features
+  Upon completion of this module, you'll be able to:
+  - Describe options for Azure management, including the Azure portal.
+  - Navigate the Azure portal.
+  - Create, customize, and share dashboards
+  - Find and try out preview features
 iconUrl: /training/achievements/tour-azure-portal-features.svg
 hidden: false
 levels:

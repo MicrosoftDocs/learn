@@ -21,7 +21,7 @@ Once you've decided on a collection, we can register the data source from within
 
 :::image type="content" source="../media/register-source.png" alt-text="Screenshot of the Microsoft Purview governance portal, showing Data Map selected, then Sources, and then the Register button in the Sources page.":::
 
-Microsoft Purview supports an array of data sources that span on-premises, multi-cloud, and software-as-a-service (SaaS) options. For any one of these data sources, information is needed to be able to register the source, and different information is required depending on the source. For example, if your data source is in your Azure subscription, you'll choose the necessary subscription, storage source name, and the collection where it will reside.
+Microsoft Purview supports an array of data sources that span on-premises, multicloud, and software-as-a-service (SaaS) options. For any one of these data sources, information is needed to be able to register the source, and different information is required depending on the source. For example, if your data source is in your Azure subscription, you'll choose the necessary subscription, storage source name, and the collection where it will reside.
 
 :::image type="content" source="../media/register-adls.png" alt-text="Screenshot showing the Register sources A D L S Gen2 page, with the Azure Subscription, Storage account name, and Select a collection highlighted.":::
 
@@ -104,7 +104,7 @@ There are two types of scans: Once and recurring.
 
 Here are some best practices to consider when scheduling your scan:
 
-- Run scans during non-business or off-peak hours to avoid process overhead.
+- Run scans during nonbusiness or off-peak hours to avoid process overhead.
 - For some sources, when using a recurring scan, the first scan scans the entire source, but all scans after that scan only new or updated information.
 - Scan frequency should align with your change management schedule for a source.
 

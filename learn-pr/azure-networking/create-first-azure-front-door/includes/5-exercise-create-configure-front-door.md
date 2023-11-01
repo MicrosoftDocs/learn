@@ -1,14 +1,24 @@
-Front Door listens on an endpoint and matches incoming requests to a route to forward these requests to the best available origin. The routing configuration you define will determine how a request is processed by Front Door before getting forwarded to the origin. Information that is processed at the edge include protocols the route will accept, paths to match, redirecting traffic to HTTPS, origin group that serves the request, protocol used to forward the request, use cache if enabled and rule sets to further process a request before forwarding to the origin. 
+Front Door listens on an endpoint and matches incoming requests to a route. Then, it forwards these requests to the best available origin. The routing configuration you define, determines how Front Door processes a request *at the edge* before it's forwarded to the origin.
 
-In the motor vehicle department system, you need to configure Front Door to access the web servers hosting the Vehicle registration application privately using Private Link. You'll also need to configure Front Door to access the App service hosting the License renewal website using Private Link. The Azure Front Door profile will have an endpoint with two routes, each configured to route traffic to the correct website. Lastly, you'll configure a security policy containing a WAF policy to protect your web applications from malicious attacks and intruders.
+Information that is processed at the edge includes:
 
-This exercise will walk you through creating a Front Door profile, configuring origins in an origin group, setting up routes and applying a security policy. You'll then test each route to verify Front Door is handling each request correctly.
+- Protocols that the route accepts.
+- Paths to match.
+- Redirecting traffic to HTTPS.
+- Determining the origin group that serves the request.
+- Setting the protocol used to forward the request.
+- Using the cache if it's enabled.
+- Using rule sets to process a request further before forwarding to the origin.
+
+In the motor vehicle department system, you need to configure Front Door to access the web servers hosting the Vehicle registration application privately using Private Link. You also need to configure Front Door to access the App service hosting the License renewal website using Private Link. The Azure Front Door profile has an endpoint with two routes, each configured to route traffic to the correct website. Lastly, you configure a security policy containing a WAF policy to protect your web applications from malicious attacks and intruders.
+
+This exercise walks you through creating a Front Door profile, configuring origins in an origin group, setting up routes and applying a security policy. Then, you test each route to verify Front Door is handling each request correctly.
 
 ## Create an Azure Front Door
 
-In this unit, you'll create a Front Door named `vehicleFrontDoor` with the following configuration:
+In this unit, you create a Front Door named `vehicleFrontDoor` with the following configuration:
 
-* Two origin groups. The first origin group containing the service endpoint IP of the web servers virtual machines. The second origin group containing the App service. You'll also enable private link access to these origins.
+* Two origin groups. The first origin group contains the service endpoint IP of the web servers virtual machines. The second origin group contains the App service. You also enable private link access to these origins.
 * Approve private endpoint connections for the web servers and App service.
 * Create an endpoint in the Front Door profile with two routes configured to direct requests to a Vehicle registration website and a License renewal website.
 * A security policy containing a WAF policy to block malicious requests.
@@ -58,7 +68,7 @@ In this unit, you'll create a Front Door named `vehicleFrontDoor` with the follo
     | Private link | Select the checkbox for **Enable private link service**. |
     | Select a private link | Select **In my directory**. |
     | Resource | Select **myPrivateLinkService**. |
-    | Region | Region will be selected when you select the resource. |
+    | Region | Region is selected when you select the resource. |
     | Request message | Enter **webServer private connection.** |
     | Status | Enabled this origin. |
 
@@ -74,7 +84,7 @@ In this unit, you'll create a Front Door named `vehicleFrontDoor` with the follo
     | --- | --- |
     | Name | Enter **appService**. |
     | Origin type | Select **App services**. |
-    | Host name | Select the *licenserenewal* Azure website in the drop-down menu. |
+    | Host name | Select the Azure website in the drop-down menu that begins with `licenserenewal`. |
     | Origin host header | This field is the same as host name for this example. |
     | Certificate subject name validation | Leave as checked. Required for private link service. |
     | HTTP port | Leave as default. **80**. |
@@ -96,11 +106,11 @@ In this unit, you'll create a Front Door named `vehicleFrontDoor` with the follo
 
     :::image type="content" source="./../media/5-approve-web-server-private-endpoint.png" alt-text="Screenshot of private endpoint connection approval list for web servers.":::
 
-1. You don't need to approve private endpoint for the App Service since the connectivity will be over the public internet.
+1. You don't need to approve private endpoint for the App Service since the connectivity is over the public internet.
 
 ### Add routes
 
-Here you'll add two routes to direct traffic to the Vehicle registration web site and the License renewal website.
+Here you add two routes to direct traffic to the Vehicle registration web site and the License renewal website.
 
 1. Go to the **Front Door manager** for the *vehicleFrontDoor* profile. Select **+ Add a route** from the endpoint you created in step 2.
 
@@ -144,7 +154,7 @@ Here you'll add two routes to direct traffic to the Vehicle registration web sit
 
 ## Create a security policy
 
-To protect the motor vehicle websites, you'll configure a Web Application Firewall (WAF) policy on the endpoint by applying a security policy.
+To protect the motor vehicle websites, you configure a Web Application Firewall (WAF) policy on the endpoint by applying a security policy.
 
 1. From the Front Door manager, select **+ Add a policy** for the endpoint. Enter **securityPolicy** for the name and then from the drop-down, select the domain.
 
@@ -162,7 +172,7 @@ To protect the motor vehicle websites, you'll configure a Web Application Firewa
 
     :::image type="content" source="./../media/5-policy-settings.png" alt-text="Screenshot of policy settings button from under settings for WAF policy.":::
 
-1. To quickly determine if the WAF policy is working you'll set the *Block response status code* to **999** and then select **Save** to apply the new policy settings.
+1. To quickly determine if the WAF policy is working, set the *Block response status code* to **999**, and then select **Save** to apply the new policy settings.
 
     :::image type="content" source="./../media/5-response-code.png" alt-text="Screenshot of updating response code for blocked requests.":::
 

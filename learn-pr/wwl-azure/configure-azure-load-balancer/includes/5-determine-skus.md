@@ -21,7 +21,6 @@ The following table provides a brief comparison of how features are implemented 
 
 | Feature | Basic SKU | Standard SKU |
 | --- | --- | --- |
-| **Back-end pools** | Up to 300 instances | Up to 1,000 instances |
 | **Health probes** | HTTP, TCP | HTTPS, HTTP, TCP |
 | **Availability zones** | Not available | Zone-redundant and zonal frontends for inbound and outbound traffic |
 | **Multiple frontends** | Inbound only | Inbound and outbound |

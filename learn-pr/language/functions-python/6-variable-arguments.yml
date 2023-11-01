@@ -5,12 +5,14 @@ metadata:
   unitType: learning-content
   title: Use variable arguments in Python
   description: Use a variable number of inputs in a function. Avoid strict requirements by using variable arguments that allow any number of inputs.
-  ms.date: 12/07/2021
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
   [!include[](includes/6-variable-arguments.md)]

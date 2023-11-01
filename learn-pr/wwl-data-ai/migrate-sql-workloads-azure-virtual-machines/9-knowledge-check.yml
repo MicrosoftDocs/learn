@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/28/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+quiz:
+  questions:
+  - content: What are some scenarios where SQL Server on Azure Virtual Machines is a better option than Azure SQL Managed Instance?
+    choices:
+    - content: When you need direct access to the operating system or file system, such as installing third-party or custom agents on the same virtual machine alongside SQL Server.
+      isCorrect: true
+      explanation: Correct. SQL Server on Azure Virtual Machines allows for direct access to the operating system or file system, which may be necessary for certain scenarios such as installing third-party or custom agents.
+    - content: When you heavily rely on features that are supported by Azure SQL Managed Instance, such as FileStream/FileTable, PolyBase, and cross-instance transactions.
+      isCorrect: false
+      explanation: Incorrect. This answer describes a scenario where Azure SQL Managed Instance would be a better option than SQL Server on Azure Virtual Machines.
+    - content: When your business requires staying at a particular version of Azure SQL Managed Instance.
+      isCorrect: false
+      explanation: Incorrect. This answer describes a scenario where Azure SQL Managed Instance would not be a suitable option.
+  - content: What does the 'how' aspect of SQL Server migration planning encompass?
+    choices:
+    - content: Recognizing the benefits after the migration is completed.
+      isCorrect: false
+      explanation: Incorrect. This is a part of the 'why' aspect of planning.
+    - content: The evaluation of the amount of downtime that the organization is willing to tolerate.
+      isCorrect: false
+      explanation: Incorrect. This is a critical element in the migration planning process, but it falls under the 'why' aspect of planning.
+    - content: The selection of appropriate migration tools and the development of a comprehensive migration plan.
+      isCorrect: true
+      explanation: Correct. The 'how' aspect of planning involves selecting the right tools and developing a comprehensive plan for the migration process.
+  - content: What is the purpose of using SQL Server Always On availability group (AG) feature during migration?
+    choices:
+    - content: To create an availability group listener on the source and target.
+      isCorrect: false
+      explanation: Incorrect. This is only required when migrating an availability group.
+    - content: To minimize downtime during migration by extending an on-premises database into the cloud.
+      isCorrect: true
+      explanation: Correct. Using SQL Server Always On availability group (AG) feature can help minimize downtime during migration by extending an on-premises database into the cloud.
+    - content: To create a Windows Server Failover Cluster on the source and target.
+      isCorrect: false
+      explanation: Incorrect. This is not required when using a distributed AG to migrate a standalone instance.
+  - content: What are the advantages of backing up to block blob instead of page blob in Azure Blob Storage for SQL Server 2016 and later versions?
+    choices:
+    - content: Block blobs offer safer authorization, improved backup performance, and support for larger database backups compared to page blob.
+      isCorrect: true
+      explanation: Correct. Block blobs offer improved backup performance, safer authorization, and support for larger database backups compared to page blob.
+    - content: Page blobs offer safer authorization compared to block blob.
+      isCorrect: false
+      explanation: Incorrect. Block blobs offer safer authorization compared to page blob.
+    - content: Block blobs offer better support for smaller database backups compared to page blob.
+      isCorrect: false
+      explanation: Incorrect. Block blobs offer better support for larger database backups compared to page blob.

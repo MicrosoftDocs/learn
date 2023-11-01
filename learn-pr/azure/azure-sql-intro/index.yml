@@ -2,15 +2,15 @@
 uid: learn.azure-sql-intro
 metadata:
   title: Introduction to Azure SQL
-  description: This module introduces Azure SQL. Learn about various deployment options and service tiers and what to use for your organization. 
-  ms.date: 03/20/2023
+  description: Learn about Azure SQL deployment options and service tiers and what to use for your organization. 
+  ms.date: 07/13/2023
   author: MashaMSFT
   ms.author: mathoma
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-db-mi
 title: Introduction to Azure SQL
-summary: Many organizations have an aging or under-engineered data platform strategy. There's been a significant trend of moving existing systems to the cloud, building new applications quickly by using the cloud, and offloading some on-premises costs. You need a plan for how to move some workloads to the cloud. And you need to understand how to set up your organization for success. You also need to understand how the role of a database administrator (DBA) or data professional stays the same, and what changes you'll have to make. In this module, you'll start with a brief history of why and how Microsoft built Azure SQL. You'll then learn about the various deployment options and service tiers, including what to use for your organization, and when. These options include Azure SQL Database, Azure SQL Managed Instance, and SQL Server in an Azure virtual machine. Understanding what platform as a service (PaaS) encompasses and how it compares to a traditional SQL Server environment will help you understand what you do and don't get when you move to the cloud.
+summary: Azure SQL is a family of managed, secure, and intelligent products that use the SQL Server database engine in the Azure cloud. In this module, you'll learn about the various deployment options and service tiers, and about the benefits of moving to the cloud.
 abstract: |
   In this module, you'll learn how to:
   - Describe the evolution of SQL Server in Azure.
@@ -22,7 +22,6 @@ prerequisites: |
 iconUrl: /training/achievements/azure-sql-intro.svg
 levels:
 - beginner
-- intermediate
 roles:
 - solution-architect
 - database-administrator

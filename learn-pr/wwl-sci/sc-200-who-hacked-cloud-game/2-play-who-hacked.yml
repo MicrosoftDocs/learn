@@ -4,11 +4,11 @@ title: Play Who Hacked?
 metadata:
   title: Play Who Hacked?
   description: "Play the Who Hacked? game."
-  ms.date: 02/17/2023
+  ms.date: 07/20/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 1
 content: |
   [!include[](includes/2-play-who-hacked.md)]

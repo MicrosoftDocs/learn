@@ -7,8 +7,9 @@ metadata:
   ms.date: 08/13/2021
   author: codemillmatt
   ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom:
   - team=cloud_advocates
   ms.contributors:

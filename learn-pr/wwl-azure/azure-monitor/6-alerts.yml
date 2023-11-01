@@ -4,12 +4,11 @@ title: Enable Azure monitor Alerts
 metadata:
   title: Enable Azure monitor Alerts
   description: "Enable Azure monitor Alerts"
-  ms.date: 02/24/2023
+  ms.date: 05/09/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/6-alerts.md)]

@@ -9,7 +9,12 @@ metadata:
   ms.date: 03/04/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates, devx-track-java, devx-track-javaee-jbosseap-appsvc, devx-track-javaee
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-java
+    - devx-track-javaee-jbosseap-appsvc
+    - devx-track-javaee
+    - devx-track-extended-java
   ms.contributors: yoterada-03102021
 durationInMinutes: 10
 content: |

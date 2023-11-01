@@ -1,48 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-enabled-kubernetes.6-gitops
 metadata:
-  title: Apply Azure Arc-enabled Kubernetes cluster configurations by using GitOps
-  description: In this unit, you'll learn about GitOps and how to configure it.
-  ms.date: 01/05/2023
+  title: Use GitOps to configure Azure Arc-enabled Kubernetes clusters
+  description: Learn about GitOps, and how to use GitOps to apply configurations to Azure Arc-enabled Kubernetes clusters.
   author: JnHs
+  ms.date: 08/07/2023
   ms.author: jenhayes
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom:
   - e2e-hybrid
   - event-tier1-build-2022
-title: Apply configurations to Azure Arc-enabled Kubernetes clusters by using GitOps
-durationInMinutes: 9
+title: Use GitOps to configure Azure Arc-enabled Kubernetes clusters
+durationInMinutes: 7
 content: |
   [!include[](includes/6-gitops.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "What type of agent does GitOps rely on when used on Azure Arc-enabled Kubernetes clusters?"
-    choices:
-    - content: "Flux"
-      isCorrect: true
-      explanation: "Azure Arc-enabled Kubernetes clusters rely on Flux, an open-source GitOps deployment tool."
-    - content: "Istio"
-      isCorrect: false
-      explanation: "Istio is an open-source service mesh platform. It isn't used directly by Azure Arc-enabled Kubernetes functionality to implement GitOps."
-    - content: "omsagent"
-      isCorrect: false
-      explanation: "omsagent is the agent that implements Azure Monitor functionality on Kubernetes clusters. It isn't used directly by Azure Arc-enabled Kubernetes functionality to implement GitOps."
-    - content: "CoreDNS"
-      isCorrect: false
-      explanation: "CoreDNS provides name resolution in Kubernetes clusters. It isn't used directly by Azure Arc-enabled Kubernetes functionality to implement GitOps."
-  - content: "Which tool can be used to automate configuration of GitOps for Azure Arc-enabled Kubernetes clusters?"
-    choices:
-    - content: "Azure Policy"
-      isCorrect: true
-      explanation: "Azure Policy can automate GitOps configurations, allowing you to apply them consistently across all resources."
-    - content: "Microsoft Defender for Cloud"
-      isCorrect: false
-      explanation: "Microsoft Defender for Cloud doesn't provide this functionality."
-    - content: "Azure Advisor"
-      isCorrect: false
-      explanation: "Azure Advisor doesn't provide this functionality."
-    - content: "Azure Resource Locks"
-      isCorrect: false
-      explanation: "Azure Resource Locks don't provide this functionality."

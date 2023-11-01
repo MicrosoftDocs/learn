@@ -8,6 +8,8 @@ metadata:
   author: cherylmc
   ms.author: cherylmc
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 durationInMinutes: 6
 interactive: bash

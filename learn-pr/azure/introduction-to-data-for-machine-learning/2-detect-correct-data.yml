@@ -5,10 +5,11 @@ metadata:
   title: Good, bad, and missing data
   description: Conceptual unit introducing types of data in machine learning
   ms.date: 02/27/2023
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+  author: fbsolo-ms1
+  ms.author: franksolomon
   ms.reviewer: franksolomon
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |

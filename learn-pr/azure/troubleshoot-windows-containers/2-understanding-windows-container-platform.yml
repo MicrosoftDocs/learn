@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-windows-containers.understanding-container-platform
+title: Understanding the Windows container platform
+metadata:
+  title: Understanding the Windows container platform
+  description: This content is part of the "Troubleshooting Windows Containers" module.
+  ms.date: 05/11/2023
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understanding-windows-container-platform.md)]

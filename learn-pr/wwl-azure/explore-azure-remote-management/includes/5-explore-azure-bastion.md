@@ -1,5 +1,3 @@
-
-
 Azure Bastion is a service you deploy that lets you connect to a virtual machine using your browser and the Azure portal. The Azure Bastion service is a fully platform-managed PaaS service that you provision inside your virtual network. It provides secure and seamless RDP/SSH connectivity to your virtual machines directly from the Azure portal over TLS. When you connect via Azure Bastion, your virtual machines do not need a public IP address, agent, or special client software.
 
 :::image type="content" source="../media/azure-bastion-architecture-fb78cf0c.png" alt-text="Diagram illustrating Azure Bastion architecture.":::

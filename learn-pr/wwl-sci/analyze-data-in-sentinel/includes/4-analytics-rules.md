@@ -1,4 +1,5 @@
 
+
 By using Microsoft Sentinel Analytics rules, you can configure notification and alerts based on data coming from the sources that are connected to Microsoft Sentinel. These alerts will help ensure that the Contoso SOC team knows when a threat occurs, and the team can then appropriately react to prevent the threat from reaching your corporate assets.
 
 
@@ -52,7 +53,7 @@ By default, Fusion detection is enabled in Microsoft Sentinel. Microsoft is cons
 
 
 
-- Azure Active Directory Identity Protection
+- Microsoft Entra ID Protection
 
 - Microsoft Defender for Cloud Apps
 
@@ -66,15 +67,15 @@ Some of the common attack detection scenarios that Fusion alerts identify includ
 
 
 
-- **Data exfiltration**. Suspicious activity detected, such as suspicious forwarding rule in Microsoft 365 mailbox, after a suspicious sign-in to Azure AD account can indicate compromised user account.
+- **Data exfiltration**. Suspicious activity detected, such as suspicious forwarding rule in Microsoft 365 mailbox, after a suspicious sign-in to Microsoft Entra account can indicate compromised user account.
 
-- **Data destruction**. Anomalous number of unique files that were deleted after a suspicious sign-in to Azure AD account can signal that a compromised user account was used to destroy data.
+- **Data destruction**. Anomalous number of unique files that were deleted after a suspicious sign-in to Microsoft Entra account can signal that a compromised user account was used to destroy data.
 
-- **Denial of service**. Significant number of Azure virtual machines (VMs) deleted after a suspicious sign-in to Azure AD account can signal a compromised user account that can be used to destroy the organization's assets.
+- **Denial of service**. Significant number of Azure virtual machines (VMs) deleted after a suspicious sign-in to Microsoft Entra account can signal a compromised user account that can be used to destroy the organization's assets.
 
-- **Lateral movement**. Significant number of impersonation actions that occur after a suspicious sign-in to Azure AD account can indicate a compromised user account that was used for malicious purposes.
+- **Lateral movement**. Significant number of impersonation actions that occur after a suspicious sign-in to Microsoft Entra account can indicate a compromised user account that was used for malicious purposes.
 
-- **Ransomware**. After a suspicious sign-in to an Azure AD account, unusual user behavior used to encrypt data can trigger a ransomware execution alert.
+- **Ransomware**. After a suspicious sign-in to a Microsoft Entra account, unusual user behavior used to encrypt data can trigger a ransomware execution alert.
 
 
 
@@ -109,7 +110,7 @@ You can configure the following security solutions to pass their alerts to Micro
 
 - Microsoft Defender for Office 365
 
-- Azure Active Directory Identity Protection
+- Microsoft Entra ID Protection
 
 - Microsoft Defender for Endpoint
 

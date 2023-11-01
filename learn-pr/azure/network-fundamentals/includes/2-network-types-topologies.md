@@ -1,6 +1,6 @@
 All networks are built on the same principles. You can apply these principles to design and build your organization's local or cloud-based networks. When you build a network, you need to know about the different types of networks, their topologies, and their uses.
 
-In this unit, you'll explore some of the common types of network topologies that are used to create internet-based networks.
+In this unit, you explore some of the common types of network topologies that are used to create internet-based networks.
 
 ## What is a network?
 
@@ -21,7 +21,7 @@ A personal area network (PAN) provides networking needs around an individual. An
 
 ### What is a local area network?
 
-A local area network (LAN) provides networking needs around a single location. This location might be an organization's office, a school, a university, a hospital, an airport, and many others. A LAN is usually privately owned and needs authentication and authorization to access. Of the different classifications of a network, a LAN is by far the most commonly used.
+A local area network (LAN) provides networking needs around a single location. This location might be an organization's office, a school, a university, a hospital, an airport, and many others. Typically, a LAN is privately owned and needs authentication and authorization to access. Of the different classifications of a network, a LAN is by far the most commonly used.
 
 ### What is a metropolitan area network?
 
@@ -73,7 +73,7 @@ The mesh topology is described as either a physical mesh or a logical mesh.
 
 In a physical mesh, each network device connects to every other network device in the network. It dramatically increases the resilience of a network, but has the physical overhead of connecting all devices. Few networks today are built as a full mesh. Most networks use a partial mesh, where some machines interconnect, but others connect through one device.
 
-There's a subtle difference between a physical mesh network and a logical one. The perception is that most modern networks are mesh based, since each device can see and communicate with any other device on the network. This describes a logical mesh network, and is primarily made possible through the use of network protocols.
+There's a subtle difference between a physical mesh network and a logical one. The perception is that most modern networks are mesh based, since each device can see and communicate with any other device on the network. However, this topology describes a logical mesh network, and is primarily made possible by using network protocols.
 
 ### Star topology
 
@@ -103,7 +103,7 @@ Gigabit Ethernet (IEEE 802.3ab) was developed to support faster communication ne
 
 ### 10 Gigabit Ethernet
 
-The 10 Gigabit Ethernet (IEEE 802.3ae) standard has a nominal data transfer speed of 10 Gbps, which is 10 times faster than its predecessor. This speed improvement is made possible only by using fiber optics. The standard now requires that 10 Gigabit Ethernet networks use area-based routing rather than broadcasting data to all nodes. In that way, network noise and traffic are reduced.
+The 10 Gigabit Ethernet (IEEE 802.3ae) standard has a nominal data transfer speed of 10 Gbps, which is 10 times faster than its predecessor. This speed improvement is made possible only by using fiber optics. The standard now requires that 10-Gigabit Ethernet networks use area-based routing rather than broadcasting data to all nodes. In that way, network noise and traffic are reduced.
 
 ### Terabit Ethernet
 
@@ -121,4 +121,4 @@ Using Azure Virtual Network, you can build complex virtual networks that emulate
 
 ### Connectivity services
 
-When you need to have a low-latency, high-bandwidth connection between your on-premises network and your instance of Azure Virtual Network, you have two options. You can use a VPN connection via an Azure gateway, or you can use a dedicated connection through Azure ExpressRoute. ExpressRoute is a secure point-to-point service. To use this service, you'll use a third-party connectivity partner to provide and host the ExpressRoute circuits on your behalf.
+When you need to have a low-latency, high-bandwidth connection between your on-premises network and your instance of Azure Virtual Network, you have two options. You can use a VPN connection via an Azure gateway, or you can use a dedicated connection through Azure ExpressRoute. ExpressRoute is a secure point-to-point service. To use this service, you use a third-party connectivity partner to provide and host the ExpressRoute circuits on your behalf.

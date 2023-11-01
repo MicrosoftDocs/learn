@@ -2,9 +2,11 @@ In this module, you learned how Azure Monitor alerts and notifications help you 
 
 You learned how metric alerts enable time-series evaluations, which trigger an action group when the alert is fired.
 
-You also learned how log alert runs specify log queries at regular time intervals. The runs trigger an action group when a match is found.
+You also learned how log alert rules specify log queries to run at regular time intervals. The alerts trigger an action group when a match is found.
 
-Lastly, you learned how activity log alerts enable notifications when a named Azure resource meets the specified conditions.
+You learned how activity log alerts enable notifications when a named Azure resource meets the specified conditions.
+
+Lastly, you learned how to apply an action group to an alert to send notifications when an alert is fired, and how to use alert processing rules to override the behavior of an action group when necessary.
 
 <!-- Cleanup sandbox -->
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
@@ -13,7 +15,7 @@ Lastly, you learned how activity log alerts enable notifications when a named Az
 
 For more info about Azure Monitor and each of the alert types, see:
 
-- [Azure Monitor](/azure/azure-monitor/platform/alerts-overview)
+- [What are Azure Monitor alerts?](/azure/azure-monitor/alerts/alerts-overview)
 - [Metric alerts](/azure/azure-monitor/alerts/alerts-types#metric-alerts)
 - [Log alerts](/azure/azure-monitor/alerts/alerts-types#log-alerts)
 - [Activity log alerts](/azure/azure-monitor/alerts/alerts-types#activity-log-alerts)

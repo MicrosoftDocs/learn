@@ -1,10 +1,10 @@
 Your retail application currently uses server-side files to record pertinent information from mobile devices when running in-house software. Unfortunately, there have been multiple issues with scaling this solution out; including concurrency between numerous clients, missing data, and locks preventing reading or writing actions. Your team has decided to move forward with a middleware solution that can serve as a message broker.
 
-In this exercise, you will implement Streams in an Azure Cache for Redis instance.
+In this exercise, implement Streams in an Azure Cache for Redis instance.
 
 ## Add entries to a stream
 
-Entries are added to a new or existing stream using the ``XADD`` command. The stream is automatically created if it does not already exists.
+Entries are added to a new or existing stream using the ``XADD`` command. The stream is automatically created if it doesn't already exists.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
@@ -12,7 +12,7 @@ Entries are added to a new or existing stream using the ``XADD`` command. The st
 
 1. Select the Azure Cache for Redis instance you created in a previous exercise.
 
-1. In the resource blade, select **Console** to open the Redis console.
+1. In the resource pane, select **Console** to open the Redis console.
 
 1. In the console, use the ``XADD`` command to add the following new entries:
 
@@ -27,7 +27,7 @@ Entries are added to a new or existing stream using the ``XADD`` command. The st
     XADD org.logs.clientapp 1481945061467-0 worker-process 1788 status success
     ```
 
-1. Observe the output from the two invocations of the ``XADD`` command. The output will include the key of the newly added entries.
+1. Observe the output from the two invocations of the ``XADD`` command. The output includes the key of the newly added entries.
 
     ```Redis
     "1324092248593-0"
@@ -53,7 +53,7 @@ Entries are added to a new or existing stream using the ``XADD`` command. The st
 
 ## Retrieve and count all entires in a stream
 
-The ``XLEN`` command counts the number of entries in a stream. Once you are ready to query the entries, you can use the ``XRANGE`` command to get entries within the stream.
+The ``XLEN`` command counts the number of entries in a stream. Once you're ready to query the entries, you can use the ``XRANGE`` command to get entries within the stream.
 
 1. Use the ``XLEN`` command to count the number of entries in the **org.logs.clientapp** stream:
 
@@ -61,7 +61,7 @@ The ``XLEN`` command counts the number of entries in a stream. Once you are read
     XLEN org.logs.clientapp
     ```
 
-1. Observe the output from the ``XLEN`` command. The output will be an integer with a value of **3** for the entries created earlier in this exercise.
+1. Observe the output from the ``XLEN`` command. The output is an integer with a value of **3** for the entries created earlier in this exercise.
 
     ```Redis
     (integer) 3
@@ -73,7 +73,7 @@ The ``XLEN`` command counts the number of entries in a stream. Once you are read
     XRANGE org.logs.clientapp - +
     ```
 
-1. Observe the output from invoking the ``XRANGE`` command. This output will include all three entries in the stream.
+1. Observe the output from invoking the ``XRANGE`` command. This output includes all three entries in the stream.
 
     ```Redis
     1) 1) "1324092248593-0"

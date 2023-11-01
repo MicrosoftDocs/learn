@@ -1,10 +1,10 @@
 ## Introduction
 
-We discussed several important terms and concepts in this module, as they're related to ThreadX. Following are brief definitions of some key points.
+We discussed several important terms and concepts in this module as they relate to ThreadX. Following are brief definitions of some key points.
 
 ### Application timer
 
-Application timers are similar to ISRs, but are used by applications to perform operations at scheduled times. Either one-shot timers or recurring timers may be used.
+Application timers are similar to ISRs, but applications use them to perform operations at scheduled times. You can use either one-shot timers or recurring timers.
 
 ### Internal system clock
 

@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-command-line-tools-intro.choose-the-right-cli-tool
 metadata:
-  title: Choose the right command line tool
-  description: Comparison of the different command line tool options for managing and provisioning Azure resources
+  title: Choose the right command-line tool
+  description: Comparison of command-line tool options for managing and provisioning Azure resources
   ms.published: 02/27/2023
   ms.date: 02/27/2023
   author: mikefrobbins
   ms.author: mirobb
   ms.topic: module-choose-best-product
+  ms.custom: devx-track-bicep, devx-track-terraform, devx-track-azurecli, devx-track-azurepowershell
   ms.prod: learning-azure
-title: Choose the right command line tool
+title: Choose the right command-line tool
 durationInMinutes: 3
 content: |
   [!include[](includes/choose-the-right-cli-tool.md)]

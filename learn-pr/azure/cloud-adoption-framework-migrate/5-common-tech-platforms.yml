@@ -5,8 +5,8 @@ metadata:
   title: Common tech platforms
   description: Tailwind Traders is preparing its cloud environment. Learn more about the company's cloud portfolio to help it find the best governance solutions for its workloads.
   ms.date: 04/18/2023
-  author: jamcneil
-  ms.author: jumcn
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

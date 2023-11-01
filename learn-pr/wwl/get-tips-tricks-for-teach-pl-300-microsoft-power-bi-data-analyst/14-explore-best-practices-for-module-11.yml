@@ -4,10 +4,11 @@ title: Explore best practices for module 11
 metadata:
   title: Explore best practices for module 11
   description: "Explore best practices for module 11"
-  ms.date: 11/18/2022
+  ms.date: 06/02/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
+  ms.service: powerbi
 durationInMinutes: 4
 content: |
   [!include[](includes/14-explore-best-practices-for-module-11.md)]

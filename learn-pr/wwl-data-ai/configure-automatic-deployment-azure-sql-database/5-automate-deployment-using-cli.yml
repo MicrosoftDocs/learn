@@ -8,6 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-arm-template
+    - devx-track-azurecli
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

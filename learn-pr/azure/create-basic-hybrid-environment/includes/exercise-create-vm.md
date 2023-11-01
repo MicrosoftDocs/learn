@@ -1,7 +1,7 @@
 ## Create and configure your virtual machine
 In this exercise, you'll create and configure the a virtual machine.  This virutal machine will be used to represent our on-premises Active Directory environment.  
 
-![Diagram that shows a basic Azure AD environment.](../media/3-exercise-1.png)
+![Diagram that shows a basic Microsoft Entra environment.](../media/3-exercise-1.png)
 
 
 ## Install and configure Hyper-V Manager
@@ -103,4 +103,3 @@ To verify this exercise, we'll connect to the virtual machine.
 
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/8e890840-98dc-b478-1fbc-f1ecf1b0b730?autoplay=false&amp;showinfo=true]
-

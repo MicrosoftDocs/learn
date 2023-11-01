@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.use-apache-spark-work-files-lakehouse
+metadata:
+  title: Use Apache Spark in Microsoft Fabric
+  description: "Apache Spark is a core technology for large-scale data analytics. Microsoft Fabric provides support for Spark clusters, enabling you to analyze and process data at scale."
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: fabric
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+title: Use Apache Spark in Microsoft Fabric
+summary: Apache Spark is a core technology for large-scale data analytics. Microsoft Fabric provides support for Spark clusters, enabling you to analyze and process data in a Lakehouse at scale.
+abstract: |
+  In this module, you'll learn how to:
+  - Configure Spark in a Microsoft Fabric workspace
+  - Identify suitable scenarios for Spark notebooks and Spark jobs
+  - Use Spark dataframes to analyze and transform data
+  - Use Spark SQL to query data in tables and views
+  - Visualize data in a Spark notebook
+prerequisites: |
+  Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-analytics
+- data-engineering
+units:
+- learn.wwl.use-apache-spark-work-files-lakehouse.introduction
+- learn.wwl.use-apache-spark-work-files-lakehouse.spark
+- learn.wwl.use-apache-spark-work-files-lakehouse.spark-code
+- learn.wwl.use-apache-spark-work-files-lakehouse.dataframe
+- learn.wwl.use-apache-spark-work-files-lakehouse.spark-sql
+- learn.wwl.use-apache-spark-work-files-lakehouse.visualize-data
+- learn.wwl.use-apache-spark-work-files-lakehouse.exercise-spark
+- learn.wwl.use-apache-spark-work-files-lakehouse.knowledge-check
+- learn.wwl.use-apache-spark-work-files-lakehouse.summary
+badge:
+  uid: learn.wwl.use-apache-spark-work-files-lakehouse.badge

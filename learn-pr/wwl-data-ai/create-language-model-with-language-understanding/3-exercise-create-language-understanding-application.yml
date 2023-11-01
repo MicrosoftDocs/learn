@@ -4,13 +4,12 @@ title: Exercise - Explore language understanding
 metadata:
   title: Exercise - Explore language understanding
   description: "Exercise - Explore language understanding"
-  ms.date: 03/06/2023
+  ms.date: 08/16/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: artificial-intelligence
+  ms.subservice: language-understanding
 durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-create-language-understanding-application.md)]

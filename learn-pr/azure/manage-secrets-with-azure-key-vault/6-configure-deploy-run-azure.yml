@@ -8,6 +8,10 @@ metadata:
   author: msmbaldwin
   ms.author: mbaldwin
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-extended-java
+    - devx-track-js
   zone_pivot_groups: dev-lang-csharp-javascript
   ms.prod: learning-azure
 durationInMinutes: 12

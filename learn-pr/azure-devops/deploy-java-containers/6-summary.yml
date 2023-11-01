@@ -8,8 +8,10 @@ metadata:
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: devdivchpfy22
+  ms.service: azure
+  ms.custom:
+    - devdivchpfy22
+    - devx-track-extended-java
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

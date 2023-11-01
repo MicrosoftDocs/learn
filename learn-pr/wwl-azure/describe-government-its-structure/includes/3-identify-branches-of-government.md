@@ -18,7 +18,7 @@ The legislative branch:
 
 #### Legislative branch composition
 
-At the National level, the legislative branch is composed of two organizations: [The Senate](https://www.senate.gov) and [The House of Representatives](https://www.house.gov). This two organization structure is known as a bicameral legislature.
+At the Federal level, the legislative branch is composed of two organizations: [The Senate](https://www.senate.gov) and [The House of Representatives](https://www.house.gov). This two organization structure is known as a bicameral legislature.
 
 [The United States Senate](https://www.senate.gov) includes 100 [senators](https://www.senate.gov/senators/), 2 from each state.
 
@@ -32,7 +32,7 @@ At the county, municipality, township, or below levels, the legislative bodies i
 
 When it comes to cloud computing, legislative branch members have a lot of power.
 
-At the National level, the legislative branch may:
+At the Federal level, the legislative branch may:
 
 - determine the U.S. Government’s strategy
 - approve or reject individuals into agencies who will implement that strategy
@@ -62,7 +62,7 @@ The judicial branch reviews laws that the legislative branch has created (and th
 
 #### Judicial branch composition
 
-At the National level, the judicial branch, includes several sublevels within itself.
+At the Federal level, the judicial branch, includes several sublevels within itself.
 
 At the top is the [United States Supreme Court](https://www.supremecourt.gov/). [Nine justices](https://www.supremecourt.gov/about/justices.aspx) comprise the Supreme Court. The president nominates the justices and the U.S. senate confirms them. The U.S. Supreme Court hears cases that involve the U.S. Constitution or U.S. law. The Supreme Court also hears cases that involve the U.S. as a party, the U.S. and multiple parties, and cases that plaintiffs or defendants appeal from federal or state courts.
 

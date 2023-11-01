@@ -3,16 +3,18 @@ You can connect to Azure Stack Hub with PowerShell to manage Azure Stack Hub res
 To get setup:
 
  -  Make sure you have the requirements.
- -  Connect with Azure Active Directory (AD) or Active Directory Federation Services (AD FS).
+ -  Connect with Microsoft Entra or Active Directory Federation Services (AD FS).
  -  Register resource providers.
  -  Test your connectivity.
 
 Make sure you replace the script variables with values listed below for your Azure Stack Hub configuration:
 
- -  **Azure AD tenant name**: The name of your Azure AD tenant used to manage Azure Stack Hub. For example, yourdirectory.onmicrosoft.com.
+ -  **Microsoft Entra tenant name**: The name of your Microsoft Entra tenant used to manage Azure Stack Hub. For example, yourdirectory.onmicrosoft.com.
  -  **Azure Resource Manager endpoint**: For Azure Stack Development kit, this value is set to `https://management.local.azurestack.external`. To get this value for Azure Stack Hub integrated systems, contact your service provider.
 
-### Connect to Azure Stack Hub with Azure AD.
+<a name='connect-to-azure-stack-hub-with-azure-ad'></a>
+
+### Connect to Azure Stack Hub with Microsoft Entra ID.
 
 ```powershell
 Add-AzEnvironment -Name "AzureStackUser" -ArmEndpoint "https://management.local.azurestack.external"

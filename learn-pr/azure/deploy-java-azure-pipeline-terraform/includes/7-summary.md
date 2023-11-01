@@ -1,10 +1,10 @@
 Congratulations! You've learned how to use Terraform to create automated pipelines.
 
-You've created an Azure App Service application and a MySQL database, and you've deployed a Spring Boot web application.
+You created an Azure App Service application and a MySQL database, then you deployed a Spring Boot web application.
 
 Your company wanted to learn how to provision its existing Spring Boot Java web applications to Azure App Service.
 
-To that end, you've done the following actions:
+To that end:
 
 * You accessed and configured a sample Spring Boot web application.
 
@@ -16,20 +16,20 @@ You're now able to recommend this architecture for your Spring Boot applications
 
 ## Clean up your Azure resources
 
-In the preceding processes, you created Azure resources. If you don't expect to need these resources in the future, delete the resource group by running the following commands in Azure Cloud Shell:
+In the course of this module, you created Azure resources. If you don't expect to need these resources in the future, delete the resource group by running the following command in Azure Cloud Shell:
 
 ```azurecli
 az group delete --name <your Resource Group Name> --yes
 ```
 
-If you created a Service Principal, delete the Service Principal by running the following commands in Azure Cloud Shell:
+If you created a Service Principal, delete the Service Principal by running the following command in Azure Cloud Shell:
 
 ```azurecli
 az ad sp delete --id <your Service Principal Name>
 ```
 
 > [!IMPORTANT]
-> To avoid accruing unwanted charges, you must deprovision the Azure resources, Service Principal and automated workflows that you used in this module.
+> To avoid accruing unwanted charges, you must remove the Azure resources, Service Principal, and automated workflows you used in this module.
 
 ## Additional resources
 

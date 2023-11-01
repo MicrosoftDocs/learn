@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-identity-principles-concepts.describe-concept-federated-services
-title: Describe the concept of Federation
+title: Describe the concept of federation
 metadata:
-  title: Describe the concept of Federation
-  description: "Describe the concept of Federation"
-  ms.date: 02/09/2023
+  title: Describe the concept of federation
+  description: "Describe the concept of federation"
+  ms.date: 09/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial

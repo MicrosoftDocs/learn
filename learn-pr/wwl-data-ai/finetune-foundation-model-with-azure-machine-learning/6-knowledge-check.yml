@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.finetune-foundation-model-with-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check about fine-tuning a foundation model."
+  ms.date: 7/18/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 3
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "When fine-tuning a model for entity recognition, what type of task should the foundation model be fine-tuned on?"
+    choices:
+    - content: "Text classification"
+      isCorrect: false
+      explanation: "Incorrect. Use text classification when you want to categorize text consisting of multiple tokens."
+    - content: "Token classification"
+      isCorrect: true
+      explanation: "Correct. Token classification assigns specific labels to individual tokens or words, like with entity recognition."
+    - content: "Question answering"
+      isCorrect: false
+      explanation: "Incorrect. Use question answering when you want to provide answers based on questions."
+  - content: "Where can you find foundation models in the Azure Machine Learning studio?"
+    choices:
+    - content: "On the Model catalog page."
+      isCorrect: true
+      explanation: "Correct. The Model catalog contains all foundation models you can use, and allows you to import more."
+    - content: "On the Models page."
+      isCorrect: false
+      explanation: "Incorrect. The Models page lists all registered models that you trained."
+    - content: "On the Endpoints page."
+      isCorrect: false
+      explanation: "Incorrect. The Endpoints page lists all endpoints to which you can deploy models."
+  - content: "What kind of compute do you need to fine-tune a foundation model?"
+    choices:
+    - content: "A GPU compute instance."
+      isCorrect: false
+      explanation: "Incorrect. A compute instance can't be used to fine-tune a foundation model."
+    - content: "A GPU compute cluster."
+      isCorrect: true
+      explanation: "Correct. You need a compute cluster with an N-type virtual machine size, which uses GPUs."
+    - content: "A CPU compute cluster."
+      isCorrect: false
+      explanation: "Incorrect. You need a compute cluster with an N-type virtual machine size, which uses GPUs."

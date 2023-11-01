@@ -2,12 +2,12 @@
 uid: learn.azure.hunt-threats-sentinel.5-livestream
 metadata:
   title: Observe threats over time with livestream
-  description: Observe threats over time with livestream
-  ms.date: 12/15/2020
+  description: Learn how to use the hunting livestream to test queries against live events as they occur.
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Observe threats over time with livestream
 durationInMinutes: 5
 content: |

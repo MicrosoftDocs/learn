@@ -9,7 +9,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-cluster-autoscaler.md)]

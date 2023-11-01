@@ -7,7 +7,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: "Manage repository changes by using pull requests on GitHub"
 summary: Learn how to manage changes to your repository source by using pull requests.
 abstract: |

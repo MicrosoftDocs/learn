@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-enabled-kubernetes.kubernetes-overview
+metadata:
+  title: Overview of Kubernetes and Azure Arc-enabled Kubernetes
+  description: Learn about Kubernetes, and about the architecture and benefits of Azure Arc-enabled Kubernetes.
+  ms.date: 08/07/2023
+  author: JnHs
+  ms.author: jenhayes
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.custom:
+  - e2e-hybrid
+  - event-tier1-build-2022
+title: Overview of Kubernetes and Azure Arc-enabled Kubernetes
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-kubernetes-overview.md)]

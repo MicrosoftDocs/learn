@@ -6,14 +6,14 @@ Here, you'll explore how to write more complex Lucene queries. You'll then impro
 
 Azure Cognitive Search lets you query an index using a REST endpoint or inside the Azure portal with the search explorer tool. If you want a quick recap of the stages of query processing, see the *search index* unit in [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution/5-search-index).
 
-:::image type="content" source="../media/query-processing.png" alt-text="A diagram showing the four stages of query processing." border="false":::
+:::image type="content" source="../media/query-processing-small.png" alt-text="A diagram showing the four stages of query processing." lightbox="../media/query-processing.png" border="false":::
 
 In this unit, you'll be focusing on query parsing.
 
-You'll use the search explorer to see the difference between using the simple and full query type changes your search results. 
+You'll use the search explorer to see the difference between using the simple and full query type changes your search results.
 
 > [!NOTE]
-> If you want to run the queries yourself you'll need an Azure subscription. Create an Azure Cognitive Search service and import the hotels' sample data into an index.
+> If you want to run the queries yourself you'll need an Azure subscription. [Create an Azure Cognitive Search service](/azure/search/search-create-service-portal) and import the hotels' sample data into an index.
 
 #### Write a simple query
 

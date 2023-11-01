@@ -8,6 +8,8 @@ metadata:
   author: TomArcherMsft
   ms.author: tarcher
   ms.topic: module-choose-best-product
+  ms.custom:
+    - devx-track-terraform
   ms.prod: learning-azure
 title: Introduction to Terraform
 durationInMinutes: 3

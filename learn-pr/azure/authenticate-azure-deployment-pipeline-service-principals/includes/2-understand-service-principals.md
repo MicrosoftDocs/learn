@@ -18,7 +18,7 @@ After you move to a pipeline, you need to use a different type of identity becau
 
 ## Types of security principals
 
-Azure Active Directory (Azure AD) is the service that manages identities for Azure. Azure AD has multiple types of identities, which are also called _security principals_:
+Microsoft Entra ID is the service that manages identities for Azure. Microsoft Entra ID has multiple types of identities, which are also called _security principals_:
 
 :::image type="content" source="../media/2-security-principals.png" alt-text="Diagram that shows the four types of security principals: user, group, service principal, and managed identity." border="false":::
 
@@ -29,9 +29,9 @@ Azure Active Directory (Azure AD) is the service that manages identities for Azu
 
 ### Service principals
 
-A service principal is a type of account. It can sign in to Azure AD, but there's no human to sign in and interact with the authentication process. Service principals don't have MFA or similar protections, because those require a person to do something to prove their identity.
+A service principal is a type of account. It can sign in to Microsoft Entra ID, but there's no human to sign in and interact with the authentication process. Service principals don't have MFA or similar protections, because those require a person to do something to prove their identity.
 
-In Azure AD, a service principal is identified by an _application ID_ and a credential. The application ID is a globally unique ID (GUID). For pipelines, the credential is usually a strong password called a _key_. Alternatively, you can use a _certificate_ as a credential.
+In Microsoft Entra ID, a service principal is identified by an _application ID_ and a credential. The application ID is a globally unique ID (GUID). For pipelines, the credential is usually a strong password called a _key_. Alternatively, you can use a _certificate_ as a credential.
 
 ### Managed identities
 
@@ -55,7 +55,7 @@ You might wonder why you need to create this whole new type of object just to au
 
 User accounts aren't designed for unattended use. The authentication process for a user account often checks that a human is the entity that's trying to sign in. Increasingly, organizations use additional security checks during authentication. These checks include MFA, CAPTCHA checks, and inspecting the device and network that the user is using so that they can verify the legitimacy of a request to sign in.
 
-Pipelines are designed to run your deployments even when nobody is sitting there actively running them. In fact, most of the benefits of pipelines come from the fact that they are completely automated and don't require human interaction. If you store your username and password in a pipeline and try to use them to sign in, they probably won't work. Even if they do seem to work, they can easily break in the future if Azure AD or your organizational administrator adds more security checks to your user authentication process.
+Pipelines are designed to run your deployments even when nobody is sitting there actively running them. In fact, most of the benefits of pipelines come from the fact that they are completely automated and don't require human interaction. If you store your username and password in a pipeline and try to use them to sign in, they probably won't work. Even if they do seem to work, they can easily break in the future if Microsoft Entra ID or your organizational administrator adds more security checks to your user authentication process.
 
 > [!WARNING]
 > It's also a bad idea to save your username and password anywhere, because someone else might get access to them and then use them to impersonate you.
@@ -66,13 +66,13 @@ For these reasons, the built-in pipeline tasks that interact with Azure don't le
 
 You might see a few different terms in use when you work with service principals or with tools like the Azure portal or the Microsoft Graph API. Although it's not essential to understand these terms just to use service principals in a pipeline, it's helpful to know a little about the concepts.
 
-Service principals are a feature of Azure AD. Azure AD is a global identity service. Many companies use Azure AD, and each company is called a _tenant_.
+Service principals are a feature of Microsoft Entra ID. Microsoft Entra ID is a global identity service. Many companies use Microsoft Entra ID, and each company is called a _tenant_.
 
-Azure AD has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can think of a deployment pipeline as an application too. 
+Microsoft Entra ID has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can think of a deployment pipeline as an application too. 
 
-In Azure AD, applications can do many things that are beyond the scope of authentication and pipeline deployments. When you create an application and tell Azure AD about it, you create an object called an _application registration_. An application registration represents the application in Azure AD.
+In Microsoft Entra ID, applications can do many things that are beyond the scope of authentication and pipeline deployments. When you create an application and tell Microsoft Entra ID about it, you create an object called an _application registration_. An application registration represents the application in Microsoft Entra ID.
 
-Service principals and applications are tightly linked. Whenever an application registration is added to an Azure AD tenant, a _service principal_ object is created in that Azure AD tenant. When you look at a service principal in the Azure portal, you see a lot of other functionality and configuration that might not seem relevant. Much of this is because service principals are linked to applications.
+Service principals and applications are tightly linked. Whenever an application registration is added to a Microsoft Entra tenant, a _service principal_ object is created in that Microsoft Entra tenant. When you look at a service principal in the Azure portal, you see a lot of other functionality and configuration that might not seem relevant. Much of this is because service principals are linked to applications.
 
 When you create a service principal, most of the tools that you use also create an application registration at the same time. So you might not notice that there are two different objects.
 
@@ -81,4 +81,4 @@ One type of service principal isn't associated with an application registration:
 > [!NOTE]
 > A service principal is sometimes called an _enterprise application_. Some tools use one name and other tools use the other. You might also see service principals called _managed applications in your local directory_, but these aren't the same thing as managed identities.
 
-To summarize, when you create a service principal, you first create an application registration, and then you create a service principal for that application registration to use. Most of the tools that you work with will do this for you, so you're not even aware of it. You might not use all of the features of Azure AD applications when you work with deployment pipelines. But because service principals are related to applications, the same Azure AD object structure applies.
+To summarize, when you create a service principal, you first create an application registration, and then you create a service principal for that application registration to use. Most of the tools that you work with will do this for you, so you're not even aware of it. You might not use all of the features of Microsoft Entra applications when you work with deployment pipelines. But because service principals are related to applications, the same Microsoft Entra object structure applies.

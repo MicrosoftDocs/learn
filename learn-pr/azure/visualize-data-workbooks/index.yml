@@ -7,7 +7,7 @@ metadata:
   author: AbbyMSFT
   ms.author: abbyweisberg
   ms.topic: interactive-tutorial
-  ms.prod: azure-monitor
+  ms.service: azure-monitor
 title: Visualize data combined from multiple data sources by using Azure Workbooks
 summary: Query data from multiple data sources and use visualizations such as graphs, charts, and grids to build visual reports for data analysis and reporting using Azure Workbooks.
 abstract: |

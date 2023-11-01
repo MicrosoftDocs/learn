@@ -8,7 +8,7 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 2
@@ -20,12 +20,12 @@ quiz:
 
   - content: 'Which of the following are the two major data types used in Azure Monitor?'
     choices:
-    - content: 'charts and tables'
+    - content: 'Charts and tables'
       isCorrect: false
-      explanation: 'Azure monitor can display both charts and tables, but these are not data types.'
-    - content: 'metrics and logs'
+      explanation: 'Azure monitor can display both charts and tables, but they are not data types.'
+    - content: 'Metrics and logs'
       isCorrect: true 
       explanation: 'Correct, Azure Monitor works with metrics and logs.'
-    - content: 'counters and gauges'
+    - content: 'Counters and gauges'
       isCorrect: false
-      explanation: 'Azure monitor can ingest metrics from counters and gauges, but these are not the two major data types.'
+      explanation: 'Azure monitor can ingest metrics from counters and gauges, but they are not the two major data types.'

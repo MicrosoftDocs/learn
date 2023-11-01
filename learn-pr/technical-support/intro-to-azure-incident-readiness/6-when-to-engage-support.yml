@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-incident-readiness.when-to-engage-support
+title: When and how to get support engaged
+metadata:
+  title: When and how to get support engaged
+  description: "Learn how to navigate the Major Incident Process by leveraging Azure Admin Portal and Service Health Blade. Understand when to open a support case based on active incidents and matching symptoms. Engage support teams, receive regular updates, and access solutions through Azure Service Health. Manage support requests efficiently using Services Hub and gain visibility into cloud cases with the Cloud Support Case Visibility dashboard."
+  ms.date: 6/25/2023
+  author: rmcmurray
+  ms.author: keall
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-when-to-engage-support.md)]

@@ -9,6 +9,8 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-bicep
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 5

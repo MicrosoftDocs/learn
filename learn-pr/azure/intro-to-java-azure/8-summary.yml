@@ -7,9 +7,10 @@ metadata:
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors:
   - sakriema-11172020
 title: Summary

@@ -7,7 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-forms
 title: Design consistent Xamarin.Forms XAML pages by using shared resources and styles
 summary: "Define resources and styles in page-level and application-wide ResourceDictionary objects. Apply resources and styles by using the StaticResource and DynamicResource markup extensions."
 abstract: |
@@ -17,6 +18,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

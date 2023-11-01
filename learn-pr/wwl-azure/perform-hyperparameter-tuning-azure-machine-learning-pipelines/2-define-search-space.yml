@@ -4,11 +4,11 @@ title: Define a search space
 metadata:
   title: Define a search space
   description: "Define a search space"
-  ms.date: 11/17/2022
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning
 durationInMinutes: 5
 content: |
   [!include[](includes/2-define-search-space.md)]

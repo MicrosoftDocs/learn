@@ -11,7 +11,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.contributors: ropreddy-12032021
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
 durationInMinutes: 2
 content: |
   [!include[](includes/4-rules.md)]

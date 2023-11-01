@@ -1,3 +1,4 @@
+
 Release and stages make use of triggers. There are three types of triggers we recognize.
 
 ## Continuous deployment trigger

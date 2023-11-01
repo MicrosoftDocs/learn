@@ -5,8 +5,9 @@ metadata:
   title: Exercise - Predict unknown values using one-hot vectors
   description: Exercise unit using one-hot vectors to predict unknown values in machine learning
   ms.date: 02/27/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.service: machine-learning
+  author: fbsolo-ms1
+  ms.author: franksolomon
   ms.topic: interactive-tutorial
   ms.reviewer: franksolomon
   ms.prod: learning-azure

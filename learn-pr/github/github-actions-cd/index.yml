@@ -7,7 +7,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: "Build and deploy applications to Azure by using GitHub Actions"
 summary: Create two deployment workflows using GitHub Actions and Microsoft Azure.
 abstract: |

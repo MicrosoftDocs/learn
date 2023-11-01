@@ -7,6 +7,9 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   ms.prod: learning-azure
 title: Build data analytics solutions using Azure Synapse serverless SQL pools
 prerequisites: |

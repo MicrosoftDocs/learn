@@ -17,12 +17,12 @@ quiz:
   questions:
   - content: "Which one of these actions best describes data crossing a trust boundary?"
     choices:
-    - content: "Data sent from the user to a web service hosted on Azure"
+    - content: "Data sent from the user to a web service hosted on Azure."
       isCorrect: true
-      explanation: "The act of transmitting data from an untrusted to a trusted zone crosses a trust boundary"
-    - content: "Data sent from the web service to the data store on Azure under the same Azure subscription"
+      explanation: "The act of transmitting data from an untrusted to a trusted zone crosses a trust boundary."
+    - content: "Data sent from the web service to the data store on Azure under the same Azure subscription."
       isCorrect: false
-      explanation: "The act of transmitting data from resources inside the same trusted zone does not cross a trust boundary"
-    - content: "Data sent from the data store to a process on Azure under the same tenant"
+      explanation: "The act of transmitting data from resources inside the same trusted zone doesn't cross a trust boundary."
+    - content: "Data sent from the data store to a process on Azure under the same tenant."
       isCorrect: false
-      explanation: "The act of transmitting data from resources inside the same trusted zone does not cross a trust boundary"
+      explanation: "The act of transmitting data from resources inside the same trusted zone doesn't cross a trust boundary."

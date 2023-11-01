@@ -1,5 +1,6 @@
 
 
+
 SC-300: Module 5 Plan and implement an identity governance strategy
 
 Module 5 Overview
@@ -13,7 +14,7 @@ This module consists of eight lessons:
 - Lesson 3 – Define access packages
 - Lesson 4 – Plan, implement, and manage entitlements
 - Lesson 5 – Implement and manage terms of use
-- Lesson 6 – Manage the lifecycle of external users in Azure AD
+- Lesson 6 – Manage the lifecycle of external users in Microsoft Entra ID
 - Lesson 7 – Configure and manage a connected organization
 - Lesson 8 – Review per-user entitlements
  

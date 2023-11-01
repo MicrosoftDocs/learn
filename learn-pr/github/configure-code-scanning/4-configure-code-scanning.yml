@@ -6,8 +6,8 @@ metadata:
   title: Configure code scanning 
   description: In this unit, you'll learn the basics of code scanning configuration. You'll also learn how to configure the frequency of scans and schedule them to best fit your repository and development needs. 
   ms.date: 02/8/2022
-  author: sterling463
-  ms.author: csterling
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

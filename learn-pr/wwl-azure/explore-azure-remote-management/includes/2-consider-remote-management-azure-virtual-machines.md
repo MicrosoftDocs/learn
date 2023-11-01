@@ -1,5 +1,3 @@
-
-
 As documented in the Azure virtual machines planning guide, there are two basic methods for connecting into Azure VMs:
 
 - Connect through public endpoints on a Jumpbox VM.

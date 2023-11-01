@@ -2,29 +2,30 @@
 uid: learn.microservices-devops-aspnet-core
 metadata:
   title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
-  description: Implement GitHub Actions to build a container image and deploy to Azure Kubernetes Service.
-  ms.date: 07/22/2022
+  description: Use a GitHub Actions CI/CD pipeline to build a container image and deploy it to Azure Kubernetes Service (AKS).
+  ms.date: 06/20/2023
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
-summary: Implement GitHub Actions to build a container image and deploy to Azure Kubernetes Service.
+summary: Use a GitHub Actions CI/CD pipeline to build a container image and deploy it to Azure Kubernetes Service (AKS).
 abstract: |
-  In this module, you will:
+  This module guides you through the following steps:
   - Authenticate GitHub Actions to a container registry.
-  - Securely store sensitive information used by the GitHub Actions.
-  - Implement a GitHub Action to build the container image for a microservice.
+  - Securely store sensitive information that GitHub Actions uses.
+  - Implement an action to build the container image for a microservice.
   - Modify and commit the microservice code to trigger a build.
-  - Implement a GitHub Action to deploy a container to a Kubernetes cluster.
-  - Modify and commit a Helm chart to trigger a deployment.
-  - Revert the microservice to a previous deployment.  
+  - Implement an action to deploy the updated container to an Azure Kubernetes Service (AKS) cluster.
+  - Modify and commit a Helm chart to trigger the deployment.
+  - Revert the microservice to the previous deployment.
 prerequisites: |
-  - Conceptual knowledge of DevOps practices at the beginner level
-  - Conceptual knowledge of containers and AKS at the beginner level
-  - Access to an Azure subscription with **Owner** privilege
-  - Access to a GitHub account
-  - Ability to run development containers in Visual Studio Code or GitHub Codespaces
+  - Conceptual knowledge of DevOps practices.
+  - Conceptual knowledge of containers, Docker, and AKS.
+  - Access to an Azure subscription with **Owner** permissions.
+  - Access to a GitHub account.
+  - Ability to run *development containers* in Visual Studio Code or GitHub Codespaces, including Docker and the necessary Visual Studio Code extensions installed.
 levels:
   - intermediate
 roles:
@@ -32,9 +33,7 @@ roles:
   - devops-engineer
   - solution-architect
 products:
-  - dotnet
   - aspnet-core
-  - dotnet-core
   - azure
   - azure-container-registry
   - azure-kubernetes-service

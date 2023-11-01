@@ -22,7 +22,7 @@ In this challenge, you'll write code that will combine literal and variable valu
 1. Write code in the .NET Editor to display the following message:
 
     ```Output
-    Hello, Bob! You have 3 in your inbox. The temperature is 34.4 celsius.
+    Hello, Bob! You have 3 messages in your inbox. The temperature is 34.4 celsius.
     ```
 
     No matter how you do it, your code should produce the specified output.

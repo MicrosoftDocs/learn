@@ -8,7 +8,7 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -25,18 +25,18 @@ quiz:
       explanation: "Orchestrators are tools used to manage the hosts on which containers run."
     - content: "To hold the Docker images in source control."
       isCorrect: false
-      explanation: "Although docker images can be expressed as text files and thus put into source control, that is not the purpose of orchestrators."
+      explanation: "Although Docker images can be expressed as text files and thus put into source control, that's not the purpose of orchestrators."
     - content: "To automate security penetration testing."
       isCorrect: false
-      explanation: "Orchestrators can keep tabs on overall health, but are not meant for security testing."    
-  - content: "Which language is an docker compose file written in."
+      explanation: "Orchestrators can keep tabs on overall health, but aren't meant for security testing."    
+  - content: "In which language is a Docker Compose file written?"
     choices:
     - content: "C#"
       isCorrect: false
-      explanation: "C# is a language that you may choose to write your microservice in."
+      explanation: "C# is a language that you might choose for writing your microservice."
     - content: "YAML"
       isCorrect: true
-      explanation: "YAML is the language that docker compose files are written in."
+      explanation: "YAML is the language in which Docker compose files are written."
     - content: "JSON"
       isCorrect: false
-      explanation: "Docker compose files are not written in JSON."
+      explanation: "Docker compose files aren't written in JSON."

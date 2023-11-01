@@ -7,6 +7,9 @@ metadata:
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
   ms.prod: learning-azure
   zone_pivot_groups: azure-interface
 title: Exercise - Configure a public load balancer

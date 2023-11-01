@@ -17,12 +17,12 @@ quiz:
   questions:
   - content: "What benefit does Visio not provide?"
     choices:
-    - content: "Provides drag-and-drop functionality with default stencils"
+    - content: "Provides drag-and-drop functionality with default stencils."
       isCorrect: false
-      explanation: "It does provide drag-and-drop functionality"
-    - content: "Outputs a list of generated threats to help engineers brainstorm possible ways to reduce or eliminate risk"
+      explanation: "It does provide drag-and-drop functionality."
+    - content: "Outputs a list of generated threats to help engineers brainstorm possible ways to reduce or eliminate risk."
       isCorrect: true
-      explanation: "Visio does not have a threat generation engine"
-    - content: "Allows engineers to annotate their dataflow diagrams to provide service context"
+      explanation: "Visio doesn't have a threat generation engine."
+    - content: "Allows engineers to annotate their dataflow diagrams to provide service context."
       isCorrect: false
-      explanation: "It provides annotation capabilities"
+      explanation: "It provides annotation capabilities."

@@ -16,10 +16,11 @@ Ensuring that participants can access the physical space, hardware, virtual meet
 
 ### Physical spaces
 
-For in-person sessions, the physical spaces that participants will use must be accessible. Questions to consider when you're assessing the accessibility of your study or play test location include:
+For in-person sessions, the physical spaces that participants use must be accessible. Questions to consider when you're assessing the accessibility of your study or play test location include:
+
 - Are all pathways between the parking lot and the building accessible?
 - Are all entrances of buildings accessible for wheelchair users?
-- Will participants be required to use stairs or elevators?
+- Are participants required to use stairs or elevators?
 - Are restrooms accessible?
 - Are the rooms that you're using for the study accessible and comfortable for participants? For example, a wheelchair user might have trouble maneuvering in a small conference room that has minimal space around the table and chairs.
 
@@ -28,11 +29,11 @@ For in-person sessions, the physical spaces that participants will use must be a
 
 ### Online platforms
 
-Ensure that any virtual meeting platforms, survey platforms, and forms are accessible. For example, participants who are d/Deaf or hard of hearing might need live transcription of what's being said in the meeting. If the virtual meeting platform does not provide that capability, that participant will be unable to participate. 
+Ensure that any virtual meeting platforms, survey platforms, and forms are accessible. For example, participants who are d/Deaf or hard of hearing might need live transcription of what's being said in the meeting. If the virtual meeting platform doesn't provide that capability, that participant is unable to participate.
 
 Make sure that online documents and survey platforms comply with WCAG 2.1 web accessibility standards. Example considerations include:
 
-- Is all text in a survey accessible for those who use a screen reader?
+- Is all text in a survey accessible for people who use a screen reader?
 - Do the images provide proper alternative text (alt text) descriptions?
 - Can users who are using only a keyboard for the survey access all mechanisms and question types?
 
@@ -43,9 +44,9 @@ Make sure that online documents and survey platforms comply with WCAG 2.1 web ac
 
 Language and actions that a participant doesn't welcome can negatively affect their experience. High-level guidance includes:
 
-- **Use inclusive language:** Microsoft recommends person-first language such as "a person with a visual disability." This differs from identity-first language, in which someone might be described as "a visually impaired person."
+- **Use inclusive language:** Microsoft recommends person-first language such as "a person with a visual disability." This language differs from identity-first language, in which someone might be described as "a visually impaired person."
 
-    Some people prefer to use identity-first language to describe themselves, such as "I am an autistic person" or "I am a d/Deaf person." If you're not sure which language to use, it's OK to ask.
+    Some people prefer to use identity-first language to describe themselves, such as "I'm an autistic person" or "I'm a d/Deaf person." If you're not sure which language to use, it's OK to ask.
 
 - **Practice inclusive etiquette:** Speak directly to the person you're talking to. Individuals might have a sign-language interpreter accompanying them. It's important to speak directly to the individual and not the interpreter.
 

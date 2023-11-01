@@ -7,7 +7,6 @@ metadata:
   author: roygara
   ms.author: rogarana
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Run clustered applications on Azure with shared disks
 summary: |
   Providing high availability for clustered applications is an important requirement for most organizations. With Microsoft Azure shared disks, you can run clustered or high-availability applications on Azure.

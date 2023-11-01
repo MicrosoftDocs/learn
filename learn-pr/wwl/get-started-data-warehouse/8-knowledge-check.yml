@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-warehouse.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which type of table should an insurance company use to store supplier attribute details for aggregating claims?"
+    choices:
+    - content: "Fact table."
+      isCorrect: false
+      explanation: "Incorrect. A fact table stores measurements, metrics or facts of business processes."
+    - content: "Dimension table."
+      isCorrect: true
+      explanation: "Correct. A dimension table stores attributes used to group numeric measures."
+    - content: "Staging table."
+      isCorrect: false
+      explanation: "Incorrect. Staging tables are used as temporary storage for data as it is loaded into the data warehouse."
+  - content: "What is a dataset in the data warehouse experience?"
+    choices:
+    - content: "Datasets are a semantic model with metrics that are used to create reports."
+      isCorrect: true
+      explanation: "Correct. Datasets are automatically generated in Fabric and enable reporting."
+    - content: "Datasets are a collection of files that contain unorganized data."
+      isCorrect: false
+      explanation: "Incorrect. Datasets don't contain unorganized data."
+    - content: "Datasets are a set of variables and observations that haven't been cleaned or preprocessed."
+      isCorrect: false
+      explanation: "Incorrect. Datasets contain processed data."
+  - content: "What is the purpose of item permissions in a workspace?"
+    choices:
+    - content: "To grant access to all items within a workspace."
+      isCorrect: false
+      explanation: "Incorrect. Item permissions only grant access to specific items."
+    - content: "To grant access to specific columns within a table."
+      isCorrect: false
+      explanation: "Incorrect. Item permissions relate to accessing data within a warehouse, but don't pertain to specific columns within tables."
+    - content: "To grant access to individual warehouses for downstream consumption."
+      isCorrect: true
+      explanation: "Correct.  By granting access to a single data warehouse using item permissions, you can enable downstream consumption of data."

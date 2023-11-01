@@ -3,15 +3,15 @@ uid: learn.aks-application-autoscaling-native
 metadata:
   title: Application scalability on AKS with HorizontalPodAutoscalers
   description: Explore how to scale your deployed applications with HorizontalPodAutoscalers in AKS.
-  ms.date: 03/04/2021
+  ms.date: 05/08/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-kubernetes-service
 title: Application scalability on AKS with HorizontalPodAutoscalers
 summary: Scale your applications to match your load by using native scalability features present in Kubernetes.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - Understand the concept of scalability and how it applies to Kubernetes
   - Create and set up native scalability within AKS
   - Choose how to configure and fine tune HPAs

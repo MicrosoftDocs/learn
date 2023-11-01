@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore Microsoft Graph
 summary: Learn how Microsoft Graph facilitates the access and flow of data and how to form queries through REST and code.
 abstract: |

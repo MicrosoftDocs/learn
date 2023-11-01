@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.deploy-java-containers.4-deploy-java-container
-title: Exercise - Deploy a Java container app to Azure
+title: Exercise - Deploy the Java container app to Azure
 metadata:
-  title: Exercise - Deploy a Java container app to Azure
-  description: Create a CI/CD pipeline to build and deploy a Java container app.
+  title: Exercise - Deploy the Java container app to Azure
+  description: Create and run an Azure Pipelines CI/CD pipeline that builds and deploys the Java container app to Azure App Service.
   ms.date: 08/26/2022
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: devdivchpfy22
+  ms.service: azure
+  ms.custom: devdivchpfy22, devx-track-extended-java
 durationInMinutes: 20
 content: |
   [!include[](includes/4-deploy-java-container.md)]

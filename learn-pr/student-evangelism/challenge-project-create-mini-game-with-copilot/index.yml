@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.challenge-project-create-mini-game-with-copilot
+metadata:
+  title: Challenge project - Build a minigame console app with GitHub Copilot
+  description: "Demonstrate your ability to analyze, create, and use different methods to develop a console minigame in Python with GitHub Codespaces and GitHub Copilot."
+  ms.date: 08/22/2023
+  author: wwlpublish
+  ms.author: cyzanon
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Challenge project - Build a minigame console app with GitHub Copilot
+summary: Demonstrate your ability to analyze, create, and use different methods to develop a console minigame in Python with GitHub Codespaces and GitHub Copilot.
+abstract: |
+  - Experience GitHub Codespaces as a development environment.
+  - Develop input and output routines in a Python console application.
+  - Use GitHub Copilot as an assistant.
+prerequisites: |
+  - A GitHub account and basic knowledge of Git commands to execute the routines (`add, commit and push`).
+  - Basic of Python to work with variables, lists, loops, conditionals and print messages on the console.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- github
+- vs-code
+units:
+- learn.wwl.challenge-project-create-mini-game-with-copilot.introduction
+- learn.wwl.challenge-project-create-mini-game-with-copilot.prepare
+- learn.wwl.challenge-project-create-mini-game-with-copilot.exercise-setup-codespaces-add-extensions
+- learn.wwl.challenge-project-create-mini-game-with-copilot.exercise-create-the-game-logic
+- learn.wwl.challenge-project-create-mini-game-with-copilot.knowledge-check
+- learn.wwl.challenge-project-create-mini-game-with-copilot.summary
+badge:
+  uid: learn.wwl.challenge-project-create-mini-game-with-copilot.badge

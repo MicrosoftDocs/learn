@@ -1,0 +1,76 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.sustainable-software-engineering-overview.11-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This module checks the knowledge gained so far.
+  ms.date: 06/13/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors:
+  - tozimmergren
+  - simont
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following options lists the six principles of Sustainable Software Engineering?"
+    choices:
+    - content: "Carbon, Alternative Energy, Carbon Intensity, Embodied Carbon, Energy Proportionality, Datacenter Scaling"
+      isCorrect: false
+      explanation: "The six principles of Sustainable Software Engineering are Carbon Efficiency, Energy Efficiency, Carbon Awareness, Hardware Efficiency, Measurement, and Climate Commitments."
+    - content: "Carbon Efficiency, Measurement, Carbon Awareness, Climate Commitments, Energy Efficiency, Hardware Efficiency"
+      isCorrect: true
+      explanation: "The six principles of Sustainable Software Engineering are Carbon Efficiency, Energy Efficiency, Carbon Awareness, Hardware Efficiency, Measurement, and Climate Commitments."
+    - content: "Carbon, Electricity, Carbon Intensity, Embedded Carbon, Energy Proficiency, Demand Shaping"
+      isCorrect: false
+      explanation: "The six principles of Sustainable Software Engineering are Carbon Efficiency, Energy Efficiency, Carbon Awareness, Hardware Efficiency, Measurement, and Climate Commitments."
+  - content: "The six principles are independent of which software elements:"
+    choices:
+    - content: "Active directory domain, Organization size or type, Cloud vendor or self-hosted, Programming language or framework"
+      isCorrect: false
+      explanation: "The six principles are independent of application domain, organization size or type, cloud vendor or self-hosted, and programming language or framework."
+    - content: "Application domain, Optimization scale or tenant, Cloud vendor or self-hosted, Programming language or framework"
+      isCorrect: false
+      explanation: "The six principles are independent of application domain, organization size or type, cloud vendor or self-hosted, and programming language or framework."
+    - content: "Application domain, Organization size or type, Cloud vendor or self-hosted, Programming language or framework"
+      isCorrect: true
+      explanation: "The six principles are independent of application domain, organization size or type, cloud vendor or self-hosted, and programming language or framework."
+  - content: "True or False: to be carbon-efficient is to minimize the amount of carbon emitted per unit of work."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "As discussed under the Carbon Efficiency principle, the focus of sustainable software engineering is to build applications that are carbon efficient to minimize the amount of carbon emitted into the atmosphere."
+    - content: "False"
+      isCorrect: false
+      explanation: "As discussed under the Carbon Efficiency principle, the focus of sustainable software engineering is to build applications that are carbon efficient to minimize the amount of carbon emitted into the atmosphere."
+  - content: "What is the single most significant cause of carbon emissions?"
+    choices:
+    - content: "Agriculture"
+      isCorrect: false
+      explanation: "Energy supply is the single most significant cause of carbon emission at 29.3% of all greenhouse gas emissions. Agriculture is responsible for 11.3% of greenhouse gas emissions."
+    - content: "Industry"
+      isCorrect: false
+      explanation: "Energy supply is the single most significant cause of carbon emission at 29.3% of all greenhouse gas emissions. Industry is responsible for 19% of greenhouse gas emissions."
+    - content: "Energy supply"
+      isCorrect: true
+      explanation: "Energy supply is the single most significant cause of carbon emission at 29.3% of all greenhouse gas emissions."
+    - content: "Waste management"
+      isCorrect: false
+      explanation: "Energy supply is the single most significant cause of carbon emission at 29.3% of all greenhouse gas emissions. Waste management is responsible for 3.2% of greenhouse gas emissions."
+    - content: "International aviation"
+      isCorrect: false
+      explanation: "Energy supply is the single most significant cause of carbon emission at 29.3% of all greenhouse gas emissions. International aviation is responsible for 3% of greenhouse gas emissions."
+  - content: "True or False: reducing the amount of electricity consumed in your application can decrease the carbon intensity of the local grids energy mix."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "From the applications running on your smartphone to the training of machine learning models running in data centers, all software consumes electricity in its execution. One of the best ways to reduce electricity consumption and the subsequent emissions of carbon pollution made by software is to make applications more energy-efficient. Therefore, the second principle of Sustainable Software Engineering is to build applications that are energy-efficient."
+    - content: "False"
+      isCorrect: false
+      explanation: "From the applications running on your smartphone to the training of machine learning models running in data centers, all software consumes electricity in its execution. One of the best ways to reduce electricity consumption and the subsequent emissions of carbon pollution made by software is to make applications more energy-efficient. Therefore, the second principle of Sustainable Software Engineering is to build applications that are energy-efficient."
+     

@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An issue that may cause serious impact for users typically fall under which priority?"
+  - content: "An issue that may cause serious impact for users typically falls under which priority?"
     choices:
     - content: "Important"
       isCorrect: true

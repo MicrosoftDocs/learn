@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-stack 
+  ms.subservice: azure-stack-hub
 title: Datacenter integration for Azure Stack Hub
 summary: |
   For Azure Stack Hub, you apply the same governance to assets in your datacenter as in Azure.

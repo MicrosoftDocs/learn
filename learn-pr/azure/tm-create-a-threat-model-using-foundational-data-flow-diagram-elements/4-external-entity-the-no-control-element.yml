@@ -17,12 +17,12 @@ quiz:
   questions:
   - content: "Which one of these actions best describes an external entity?"
     choices:
-    - content: "Web portal asks a user for their credentials"
+    - content: "A web portal asks a user for their credentials."
       isCorrect: false
-      explanation: "The act of handling input and output is a process-related event"
-    - content: "Cache stores service-related cookies for a user"
+      explanation: "The act of handling input and output is a process-related event."
+    - content: "A cache stores service-related cookies for a user."
       isCorrect: false
-      explanation: "The act of storing data is a data store related event"
-    - content: "Third-party API sends requested data to its requestor"
+      explanation: "The act of storing data is a data store related event."
+    - content: "A third-party API sends requested data to its requestor."
       isCorrect: true
-      explanation: "The act of transmitting data is a data-flow related event"
+      explanation: "The act of transmitting data is a data-flow related event."

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/21/2022
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "A series of Azure CLI commands to deploy infrastructure to Azure."
       isCorrect: false
-      explanation: "Incorrect. An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for the deployment. Templates declare what will be deployed without having to write the sequence of programming commands to create it."
+      explanation: "Incorrect. An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for the deployment."
     - content: "A JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for the deployment."
       isCorrect: true
-      explanation: "Correct. An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for the deployment. Templates declare what will be deployed without having to write the sequence of programming commands to create it."
+      explanation: "Correct. An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for the deployment."
     - content: "A script used by the Azure Resource Manager to manage the Azure storage account."
       isCorrect: false
-      explanation: "Incorrect. An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for the deployment. Templates declare what will be deployed without having to write the sequence of programming commands to create it."
+      explanation: "Incorrect. An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for the deployment."
   - content: "Which of the following parameters is an element in the template schema?"
     choices:
     - content: "Includes"
@@ -41,12 +41,12 @@ quiz:
       explanation: "Correct. Outputs are part of the template schema. Outputs are used to return values from the deployed resources."
   - content: "What happens if the same template is run a second time?"
     choices:
-    - content: "Azure Resource Manager will deploy new resources as copies of the previously deployed resources."
+    - content: "Azure Resource Manager deploys the new resources as copies of the previously deployed resources."
       isCorrect: false
       explanation: "Incorrect. If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created."
-    - content: "Azure Resource Manager won't make any changes to the deployed resources."
+    - content: "Azure Resource Manager doesn't change the deployed resources."
       isCorrect: true
       explanation: "Correct. If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created."
-    - content: "Azure Resource Manager will delete the previously deployed resources and redeploy them."
+    - content: "Azure Resource Manager deletes the previously deployed resources and redeploys them."
       isCorrect: false
       explanation: "Incorrect. If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created."

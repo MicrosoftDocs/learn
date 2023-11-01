@@ -4,16 +4,17 @@ metadata:
   title: Architect API integration in Azure learning path
   description: Learn how to architect API integration in Azure, and provide secure, scalable API access for your applications.
   brand: azure
-  ms.date: 10/22/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 06/14/2023
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Architect API integration in Azure
 summary: Learn how to architect API integration in Azure, and provide secure, scalable API access for your applications.
 prerequisites: |
-  - Familiarity with REST-based APIs
+  - Familiarity with basic concepts of web APIs, including operations, endpoints, and API standards such as OpenAPI.
   - Familiarity with C#
+  - Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
 iconUrl: /training/achievements/architect-api-integration.svg
 levels:
 - intermediate
@@ -25,6 +26,7 @@ products:
 subjects:
 - cloud-computing
 modules:
+- learn.wwl.explore-api-management
 - learn.publish-manage-apis-with-azure-api-management
 - learn.azure.improve-api-performance-with-apim-caching-policy
 - learn.protect-apis-on-api-management

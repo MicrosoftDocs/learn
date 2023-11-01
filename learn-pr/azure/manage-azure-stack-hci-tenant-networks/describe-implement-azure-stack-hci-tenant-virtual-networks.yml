@@ -5,8 +5,8 @@ metadata:
   title: Describe and implement Azure Stack HCI tenant virtual networks
   description: Describe and implement Azure Stack HCI tenant virtual networks.
   ms.date: 03/30/2022
-  author: mpolicht
-  ms.author: nedelgad
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-incident-readiness.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 6/25/2023
+  author: rmcmurray
+  ms.author: keall
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -4,11 +4,10 @@ title: Monitor device enrollment
 metadata:
   title: Monitor device enrollment
   description: "Monitor device enrollment"
-  ms.date: 03/14/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/10-monitor-device-enrollment.md)]

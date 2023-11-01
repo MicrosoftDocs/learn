@@ -9,7 +9,9 @@ metadata:
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 7
 content: |
   [!include[](includes/4-use-openai-sdk.md)]

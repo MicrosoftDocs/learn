@@ -8,6 +8,8 @@ metadata:
   author: roygara
   ms.author: rogarana
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-arm-template
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

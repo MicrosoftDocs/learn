@@ -4,8 +4,8 @@ metadata:
   title: Identify application risks in a PAW with threat modeling
   description: Visualize the state of security for the client application before using it in your secured environment with a data-flow diagram.
   ms.date: 05/27/2021
-  author: rodrigosantos
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
 title: Visualize risk

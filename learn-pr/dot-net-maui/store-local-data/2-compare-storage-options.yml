@@ -9,6 +9,8 @@ metadata:
   author: codemillmatt 
   ms.author: masoucou
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-languages
 durationInMinutes: 10 
 content: |
@@ -22,7 +24,7 @@ quiz:
       explanation: "No. The App Sandbox doesn't include a Music folder by default. Instead you need to use a system provided folder."
     - content: "Documents"
       isCorrect: true
-      explanation: "This is the correct answer, you use the Documents folder to store user generated content."
+      explanation: "This is the correct answer. You use the Documents folder to store user generated content."
     - content: "Library"
       isCorrect: false
       explanation: "No. The Library folder is designed to store app-generated data. The music content is data that the user specifically asks to save. You would use the Library folder for files created without any direct action from the user. Use the Documents folder for this scenario."

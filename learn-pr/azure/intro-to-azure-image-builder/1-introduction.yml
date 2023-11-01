@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-image-builder.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to Azure Image Builder service.
+  ms.date: 06/05/2023
+  author: ericd-mst-github
+  ms.author: erd
+  ms.reviewer: mimckitt
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

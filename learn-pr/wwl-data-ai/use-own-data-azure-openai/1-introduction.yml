@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-own-data-azure-openai.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to using your own data with Azure OpenAI Service."
+  ms.date: 7/11/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

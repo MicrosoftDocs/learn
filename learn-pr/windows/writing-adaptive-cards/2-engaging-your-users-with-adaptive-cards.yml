@@ -6,10 +6,9 @@ metadata:
   description: Learn how to create an Adaptive Card and add user inputs and actions for a fun demo of these features.
   ms.date: 1/10/2019
   displayType: one-Column
-  author: PeterTurcan
-  ms.author: v-pettur
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: alvinashcraft
+  ms.author: aashcraft
+  ms.topic: unit
   
   zone_pivot_groups: platform-apps-uwp-wpf
 durationInMinutes: 40

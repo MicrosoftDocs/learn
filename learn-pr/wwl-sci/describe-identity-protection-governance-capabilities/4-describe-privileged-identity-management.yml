@@ -4,11 +4,11 @@ title: Describe the capabilities of Privileged identity Management
 metadata:
   title: Describe the capabilities of Privileged identity Management
   description: "Describe the capabilities of Privileged identity Management"
-  ms.date: 02/07/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-durationInMinutes: 8
+durationInMinutes: 5
 content: |
   [!include[](includes/4-describe-privileged-identity-management.md)]

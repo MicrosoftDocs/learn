@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2022
+  ms.date: 06/05/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -18,14 +18,14 @@ quiz:
     choices:
     - content: "Linked Services"
       isCorrect: false
-      explanation: "Incorrect. Linked Services are objects that are used to define the connection to data stores or compute resources in Azure."
+      explanation: "Incorrect. Linked Services is objects that are used to define the connection to data stores or compute resources in Azure."
     - content: "Datasets"
       isCorrect: false
       explanation: "Incorrect. Datasets represent data structures within the data store that is being referenced by the Linked Service object."
     - content: "Activities"
       isCorrect: true
-      explanation: "Correct. Activities contains the transformation logic or the analysis commands of the Azure Data Factory’s work."
-  - content: "You are moving data from an Azure Data Lake Gen2 store to Azure Synapse Analytics. Which Azure Data Factory integration runtime would be used in a data copy activity?"
+      explanation: "Correct. Activities contain the transformation logic or the analysis commands of the Azure Data Factory’s work."
+  - content: "You're moving data from an Azure Data Lake Gen2 store to Azure Synapse Analytics. Which Azure Data Factory integration runtime would be used in a data copy activity?"
     choices:
     - content: "Azure-SSIS"
       isCorrect: false

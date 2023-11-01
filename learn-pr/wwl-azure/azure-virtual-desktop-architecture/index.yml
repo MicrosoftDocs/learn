@@ -3,11 +3,11 @@ uid: learn.wwl.azure-virtual-desktop-architecture
 metadata:
   title: Azure Virtual Desktop Architecture
   description: "Azure Virtual Desktop Architecture"
-  ms.date: 01/31/2023
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-desktop
 title: Azure Virtual Desktop Architecture
 summary: Azure Virtual Desktop manages the infrastructure and brokering components, while customers manage their own desktop host virtual machines (VMs) and clients. Microsoft manages the Remote Connection Gateway, and Connection Broker services as part of Azure.
 abstract: |
@@ -17,7 +17,8 @@ abstract: |
   *  Choose between personal and pooled desktops.
   *  Identify the Azure limitations for Azure Virtual Desktop.
   *  Describe the options for Azure Virtual Desktop pricing.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/1-azure-virtual-desktop-architecture.svg
 levels:
 - intermediate

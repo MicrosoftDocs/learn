@@ -8,7 +8,7 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 6
@@ -23,24 +23,24 @@ quiz:
     - content: '100%'
       isCorrect: false
       explanation: '100% reliability is seldom necessary or even possible.'
-    - content: 'as much as we can afford'
+    - content: 'As much as we can afford'
       isCorrect: false
       explanation: 'It is important to find an appropriate level of reliability or we may be spending money (even if we have it) unnecessarily.'  
-    - content: 'an appropriate level'
+    - content: 'An appropriate level'
       isCorrect: true
       explanation: 'Correct, we definitely want to aim for the level that makes sense to the stakeholders.'
   
   - content: 'If our monitoring systems detect that half of the servers powering one of our services go down, how severe of a problem is this?'
     choices:
-    - content: 'severe - we need to scramble all of our team to get the servers operational again'
+    - content: 'Severe - we need to scramble all of our team to get the servers operational again'
       isCorrect: false
       explanation: 'It depends on the noticeable impact to the customers of the service. If they do not notice an issue, it may not be a severe problem.'
-    - content: 'medium - we should begin work as soon as possible to get them operational again'
+    - content: 'Medium - we should begin work as soon as possible to get them operational again'
       isCorrect: false
       explanation: 'It depends on the noticeable impact to the customers of the service. If they do not notice an issue, it may not be a problem we need to fix immediately.'
-    - content: 'low - we can deal with those servers whenever time permits'
+    - content: 'Low - we can deal with those servers whenever time permits'
       isCorrect: false
       explanation: 'It depends on the noticeable impact to the customers of the service. If they are experiencing a severe problem and the service does not work for them, we may need to fix them immediately.'
-    - content: 'it depends'
+    - content: 'It depends'
       isCorrect: true
       explanation: 'Correct, the severity level depends on the noticeable impact to their customer.'

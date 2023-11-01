@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.improve-reliability-introduction.1-introduction
-title: "Introduction"
+title: Introduction
 metadata:
-  title: "Introduction"
-  description: "Introduction"
-  ms.date: 05/07/2020
+  title: Introduction
+  description: Introduction
+  ms.date: 05/19/2023
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 2

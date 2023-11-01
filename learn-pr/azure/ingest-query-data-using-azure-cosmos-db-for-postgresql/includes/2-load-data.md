@@ -1,4 +1,4 @@
-Woodgrove Bank has provided you with data loading requirements that dictate using several different ingestion methods. Individual transaction events arrive from the contactless payments application rapidly throughout the day and must be inserted as quickly as possible. The bank also provided CSV files containing historical transaction events and user data that must be bulk loaded into the database as efficiently as possible. In addition, they asked for a couple of new tables to be populated from their historical data once loaded.
+Woodgrove Bank has provided you with data loading requirements that dictate using several different ingestion methods. Individual transaction events arrive from the contactless-payments application rapidly throughout the day and must be inserted as quickly as possible. The bank also provided CSV files containing historical transaction events and user data that must be bulk loaded into the database as efficiently as possible. In addition, they asked for a couple of new tables to be populated from their historical data once loaded.
 
 In Azure Cosmos DB for PostgreSQL, there are multiple approaches you can use to ingest data efficiently into a distributed database. Loading data into distributed tables is accomplished in the same manner as when loading data into non-distributed tables. The primary difference is that you must provide a value for the table's assigned [_distribution column_](/azure/postgresql/hyperscale/howto-choose-distribution-column) for every row being inserted.
 
@@ -6,11 +6,11 @@ Each row in a distributed table is written to a [shard](/azure/postgresql/hypers
 
 ## Load individual rows using the INSERT command
 
-Woodgrove Bank requires the ability to insert individual transaction records into the database as they're received from the contactless payments app. To insert individual rows into distributed tables, you can use the standard PostgreSQL [INSERT](http://www.postgresql.org/docs/current/static/sql-insert.html) command. Distributed tables appear as standard tables to SQL, but how the queries are executed differs because the underlying tables are horizontally partitioned across worker nodes.
+Woodgrove Bank requires the ability to insert individual transaction records into the database when they're received from the contactless payments app. To insert individual rows into distributed tables, you can use the standard PostgreSQL [INSERT](http://www.postgresql.org/docs/current/static/sql-insert.html) command. Distributed tables appear as standard tables to SQL, but how the queries are executed differs because the underlying tables are horizontally partitioned across worker nodes.
 
 To ensure the coordinator can accurately relay queries to the correct shards, you must specify a value for the _distribution column_ when loading data into distributed tables. In other words, each INSERT statement needs to include a non-null value for the row's distribution column.
 
-You can find a table's assigned distribution column using the [distributed tables view](/azure/postgresql/hyperscale/reference-metadata#distributed-tables-view) on the coordinator node. For example, running the query, `SELECT distribution_column FROM citus_tables WHERE table_name = 'payment_events'::regclass;`, reveals the distribution column for the `payment_events` table is the `user_id` field.
+You can find a table's assigned distribution column using the [distributed tables view](/azure/postgresql/hyperscale/reference-metadata#distributed-tables-view) on the coordinator node. For example, running the query `SELECT distribution_column FROM citus_tables WHERE table_name = 'payment_events'::regclass;` reveals the distribution column for the `payment_events` table is the `user_id` field.
 
 In the below example, two transactions are being added to the `payment_events` table in Woodgrove Bank's database using individual INSERT commands.
 
@@ -33,19 +33,19 @@ INSERT INTO payment_events VALUES (4951447424,'SendFunds',1159138,4951447330,'{"
 INSERT INTO payment_events VALUES (4951447488,'RequestFunds',1171503,4951447340,'{"code": 4951447340, "particulars": "vue", "reference": "vuejs"}','1/12/16 5:22');
 ```
 
-As each row contains a valid value for the `user_id` column, the two rows are successfully inserted into the `payment_events` table. Now, look at what happens if you attempt to insert a row where the value of the distribution column is `null`.
+Because each row contains a valid value for the `user_id` column, the two rows are successfully inserted into the `payment_events` table. Now, look at what happens if you attempt to insert a row where the value of the distribution column is `null`:
 
 ```sql
 INSERT INTO payment_events VALUES (4951447499,'GiftFunds',null,4951447350,'{"code": 4951447350, "particulars": "twofactorauth", "reference": "2factorauth"}','1/12/16 5:22');
 ```
 
-This INSERT statement results in an error:
+This `INSERT` statement results in an error:
 
 ```output
 ERROR: cannot perform an INSERT with NULL in the partition column
 ```
 
-When executing the INSERT command to add data to a distributed table, it's essential to remember that the _distribution column_ must be specified. Doing so enables the coordinator to determine which shard it should add the row to in the cluster.
+When executing the `INSERT` command to add data to a distributed table, it's essential to remember that the _distribution column_ must be specified. Doing so enables the coordinator to determine which shard it should add the row to in the cluster.
 
 ### Combine INSERT statements to improve efficiency
 
@@ -60,9 +60,9 @@ INSERT INTO payment_events VALUES
 
 ## Bulk load data with the COPY command
 
-When higher ingestion rates are needed, the [`COPY` command](https://www.postgresql.org/docs/current/app-psql.html#APP-PSQL-META-COMMANDS-COPY) allows you to bulk load data. You can use the `COPY` command to load data directly into distributed tables from an application using the `FROM STDIN` option, files, and other sources. When using the `COPY` command to write data into distributed tables, it asynchronously copies data to worker nodes using a parallel connection for each shard placement. The coordinator routes data to the appropriate worker nodes, allowing data to be ingested using multiple workers and cores in parallel.
+When you need higher ingestion rates, the [`COPY` command](https://www.postgresql.org/docs/current/app-psql.html#APP-PSQL-META-COMMANDS-COPY) allows you to bulk load data. You can use the `COPY` command to load data directly into distributed tables from an application using the `FROM STDIN` option, files, and other sources. When you use the `COPY` command to write data into distributed tables, it asynchronously copies data to worker nodes using a parallel connection for each shard placement. The coordinator routes data to the appropriate worker nodes, allowing data to be ingested using multiple workers and cores in parallel.
 
-Woodgrove Bank requested you provide a mechanism for bulk loading their historical data. The data they provided is stored in comma-separated value (CSV) files. The below commands show how the `events.csv` file can be downloaded onto the coordinator node, and then the file data can be bulk loaded into the `payment_events` table.
+Woodgrove Bank requested you provide a mechanism for bulk loading their historical data. The data they provided is stored in comma-separated value (CSV) files. The following commands show how you can download the `events.csv` file onto the coordinator node, and then bulk load the file data into the `payment_events` table:
 
 ```sql
 -- Download the events.csv file
@@ -78,7 +78,7 @@ You can also combine the above statements into a single command using the `FROM 
 \COPY payment_events FROM PROGRAM 'curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-create-connect-postgresHyperscale/main/events.csv' WITH CSV
 ```
 
-The COPY command provides a practical and fast way of loading data directly from files. Note, however, that when targeting a distributed table, each row in the source file must contain a value for the distribution column.
+The `COPY` command provides a practical and fast way of loading data directly from files. Note, however, that when targeting a distributed table, each row in the source file must contain a value for the distribution column.
 
 ### Load data from files in blob storage using the pg_azure_storage extension
 
@@ -93,7 +93,7 @@ To get started, you need to load the extension:
 SELECT create_extension('azure_storage');
 ```
 
-The `pg_azure_storage` extension includes the `account_add()` method. This method connects a storage account to your database and enables access to the files within the account. To connect, you must provide the storage account name and access key, the syntax of which follows:
+The `pg_azure_storage` extension includes the `account_add()` method. This method connects a storage account to your database and enables access to the files within the account. To connect, you must provide the storage account name and access key by using the following syntax:
 
 ```sql
 -- Provide the storage account credentials
@@ -145,7 +145,7 @@ They also informed you that the CSV file doesn't contain a header row.
 
 Suppose you hadn't been provided with details about the data within the file. In that case, you can use the Azure portal to preview files smaller than 2.1 MB, or you can download a copy of the file and quickly open it to explore the structure of the file.
 
-Now that you understand the data contained in the file, you can fulfill Woodgrove Bank's request to bulk load historical data from files. To bulk load data from files in blob storage, `pg_azure_storage` extends the native PostgreSQL `COPY` command to make it capable of handling Azure Blob Storage resource URLs. This feature is enabled by default and can be managed using the `azure_storage.enable_copy_command` setting. Using the extended `COPY` command, run the following to ingest user data into the `payment_users` table:
+Now that you understand the data contained in the file, you can fulfill Woodgrove Bank's request to bulk load historical data from files. To bulk load data from files in blob storage, `pg_azure_storage` extends the native PostgreSQL `COPY` command to make it capable of handling Azure Blob Storage resource URLs. This feature is enabled by default, and you can manage it by using the `azure_storage.enable_copy_command` setting. Using the extended `COPY` command, run the following command to ingest user data into the `payment_users` table:
 
 ```sql
 -- Bulk load data from the user.csv file in Blob Storage into the payment_users table
@@ -154,7 +154,7 @@ COPY payment_users FROM 'https://stlearnpostgresql.blob.core.windows.net/histori
 
 The output from the `COPY` command will specify the number of rows copied into the table, such as `COPY 264197`.
 
-To learn more about the `pg_azure_storage` extension, read the documentation and complete the **Extend the functionality of Azure Cosmos DB for PostgreSQL using extensions** Learn module.
+To learn more about the `pg_azure_storage` extension, read the documentation and complete the [Extend the functionality of Azure Cosmos DB for PostgreSQL using extensions](/training/modules/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/) module.
 
 ## Populate tables using the FROM SELECT Clause
 
@@ -185,13 +185,13 @@ This method also allows you to use the [`ON CONFLICT DO UPDATE` clause](https://
 
 ### Using colocated source and destination tables
 
-The data required for populating the `user_events` table is contained in the `payment_events` and `payment_users` tables. The most efficient distribution column based on the proposed table schema will be the same field used by the `payment_events` and `payment_users` tables, `user_id`, as that column best meets the [four criteria for choosing an ideal distribution column](/azure/postgresql/hyperscale/howto-choose-distribution-column#general-tips).
+The data required for populating the `user_events` table is contained in the `payment_events` and `payment_users` tables. The most efficient distribution column based on the proposed table schema will be the same field used by the `payment_events` and `payment_users` tables, `user_id`, because that column best meets the [four criteria for choosing an ideal distribution column](/azure/postgresql/hyperscale/howto-choose-distribution-column#general-tips).
 
 ```sql
 SELECT create_distributed_table('user_events', 'user_id');
 ```
 
-With the `user_events` table now distributed, the two source tables and the destination table are implicitly colocated, as they share the same distribution column. You came up with the following query for loading the table, but you want to verify that query will route the `INSERT ... SELECT` statement down to worker nodes to be executed in parallel.
+With the `user_events` table now distributed, the two source tables and the destination table are implicitly colocated because they share the same distribution column. You came up with the following query for loading the table, but you want to verify that query will route the `INSERT ... SELECT` statement down to worker nodes to be executed in parallel.
 
 ```sql
 INSERT INTO user_events
@@ -248,7 +248,7 @@ You write the following query to handle the population of the `payment_merchants
 INSERT INTO payment_merchants SELECT DISTINCT merchant_id, CONCAT('merchant', '_', merchant_id), CONCAT('https://api.woodgrove.com/merchants/', merchant_id) FROM payment_events;
 ```
 
-Knowing the tables don't share the same distribution column and aren't colocated, you want to understand better how the query will be executed before running it, so you again use the [`EXPLAIN`](https://www.postgresql.org/docs/current/sql-explain.html) statement to view the query execution plan.
+Knowing the tables don't share the same distribution column and aren't colocated, you want to understand better how the query will be executed before running it, so you again use the [`EXPLAIN`](https://www.postgresql.org/docs/current/sql-explain.html) statement to view the query-execution plan.
 
 ```output
 Custom Scan (Citus INSERT ... SELECT)  (cost=0.00..0.00 rows=0 width=0)
@@ -270,7 +270,7 @@ Custom Scan (Citus INSERT ... SELECT)  (cost=0.00..0.00 rows=0 width=0)
                                 Output: merchant_id, concat('merchant', '_', merchant_id), concat('https://api.woodgrove.com/merchants/', merchant_id)
 ```
 
-The `INSERT/SELECT method` line reveals the `pull to coordinator` method will be used to execute this query. When the source and destination tables aren't colocated, and [repartition optimization](https://docs.citusdata.com/en/stable/develop/reference_sql.html#repartition-joins) isn't possible, the coordinator will retrieve results from `SELECT` queries executed on each worker node and pull the data up to run the query locally. The coordinator then uses the distribution column to route rows back down to the worker nodes for insertion into the appropriate shard. This method is the least efficient of the three techniques because all the data is forced to pass through a single node, and processing can't be parallelized across workers.
+The `INSERT/SELECT method` line reveals the `pull to coordinator` method will be used to execute this query. When the source and destination tables aren't colocated, and [repartition optimization](https://docs.citusdata.com/en/stable/develop/reference_sql.html#repartition-joins) isn't possible, the coordinator will retrieve results from `SELECT` queries executed on each worker node and pull the data up to run the query locally. The coordinator then uses the distribution column to route rows back down to the worker nodes for insertion into the appropriate shard. This method is the least efficient of the three techniques, because all the data is forced to pass through a single node, and processing can't be parallelized across workers.
 
 Given the data ingestion method required to load this table is the least efficient technique, and knowing that the table will be frequently joined with the `payment_events` table for analytical queries, it's a good idea to reevaluate how the table is distributed.
 

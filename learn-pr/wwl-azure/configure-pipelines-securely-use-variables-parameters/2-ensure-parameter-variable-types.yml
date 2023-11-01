@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-pipelines-securely-use-variables-parameters.ensure-parameter-variable-types
+title: Ensure parameter and variable types
+metadata:
+  title: Ensure parameter and variable types
+  description: "Ensure parameter and variable types."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-ensure-parameter-variable-types.md)]

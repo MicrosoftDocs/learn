@@ -1,5 +1,3 @@
-
-
 Now you have:
 
 - Examined single-SID 3-tier SAP NetWeaver high availability AnyDB deployment.

@@ -10,7 +10,7 @@ A ClusterRole works in the same way to grant permissions to resources, but can b
 
 ## RoleBindings and ClusterRoleBindings
 
-Once roles are defined to grant permissions to resources, you assign those Kubernetes RBAC permissions with a RoleBinding. If your AKS cluster integrates with Azure Active Directory, bindings are how those Azure AD users are granted permissions to perform actions within the cluster.
+Once roles are defined to grant permissions to resources, you assign those Kubernetes RBAC permissions with a RoleBinding. If your AKS cluster integrates with Microsoft Entra ID, bindings are how those Microsoft Entra users are granted permissions to perform actions within the cluster.
 
 Role bindings are used to assign roles for a given namespace. This approach lets you logically segregate a single AKS cluster, with users only able to access the application resources in their assigned namespace. If you need to bind roles across the entire cluster, or to cluster resources outside a given namespace, you can instead use ClusterRoleBindings.
 

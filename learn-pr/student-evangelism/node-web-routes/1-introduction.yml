@@ -8,6 +8,8 @@ metadata:
   ms.author: chnoring
   ms.date: 07/12/2021
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-identity-projects-pipelines-agents.understand-convert-managed-identity
+title: Understand and convert to a Managed Identity
+metadata:
+  title: Understand and convert to a Managed Identity
+  description: "Understand and convert to a Managed Identity."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-understand-convert-managed-identity.md)]

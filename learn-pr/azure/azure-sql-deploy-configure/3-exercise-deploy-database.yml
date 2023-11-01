@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Deploy Azure SQL Database
 durationInMinutes: 10
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/3-exercise-deploy-database.md)]

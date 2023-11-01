@@ -8,8 +8,10 @@ metadata:
   ms.author: judubois
   ms.date: 01/20/2021
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.service: azure
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors: judubois-03112021
 durationInMinutes: 3
 content: |

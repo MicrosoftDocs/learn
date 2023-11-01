@@ -8,7 +8,10 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen, devdivchpfy22
+  ms.custom:
+    - team=nextgen
+    - devdivchpfy22
+    - devx-track-python
 title: Exercise - Install Python to use in Visual Studio Code for data exploration
 durationInMinutes: 5
 content: |

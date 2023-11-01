@@ -4,11 +4,11 @@ title: Explore best practices for module 10
 metadata:
   title: Explore best practices for module 10
   description: "Explore best practices for module 10"
-  ms.date: 11/18/2022
+  ms.date: 06/02/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 11
 content: |
   [!include[](includes/13-explore-best-practices-for-module-10.md)]

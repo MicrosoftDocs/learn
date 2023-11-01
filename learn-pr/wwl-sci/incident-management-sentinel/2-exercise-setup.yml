@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.incident-management-sentinel.2-exercise-setup
-title: Exercise setup
+title: Exercise - Set up the Azure environment
 metadata:
-  title: Exercise setup
-  description: "Exercise setup"
-  ms.date: 01/26/2023
+  title: Exercise - Set up the Azure environment
+  description: To prepare for the incident investigation exercise, set up Azure resources and configure the Microsoft Sentinel connector.
+  ms.date: 05/22/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-arm-template
 durationInMinutes: 20
 content: |
   [!include[](includes/2-exercise-setup.md)]

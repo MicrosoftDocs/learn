@@ -11,40 +11,40 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!INCLUDE[](includes/6-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Translator can convert text from what types of files and data?'
+  - content: Azure AI Translator can convert text from what types of files and data?
     choices:
-    - content: "PowerPoint files and MP4 videos"
+    - content: PowerPoint files and MP4 videos
       isCorrect: false
-      explanation: "Incorrect. Translator can translate many types of documents, including PowerPoint files, but not videos."
-    - content: "Strings and documents."
+      explanation: Incorrect. Translator can translate many types of documents, including PowerPoint files, but not videos.
+    - content: Strings and documents.
       isCorrect: true
-      explanation: "Correct. Translator can convert strings and documents, such as PDF and word documents, from one language to many others."
-    - content: "JPG and PNG images."
+      explanation: Correct. Translator can convert strings and documents, such as PDF and word documents, from one language to many others.
+    - content: JPG and PNG images.
       isCorrect: false
-      explanation: "Incorrect. Translator can’t convert text from JPG and PNG images by itself, but it’s possible to do with other services such as Form Recognizer and Immersive Reader."
-  - content: 'Do you need to specify the source language for a translation?'
+      explanation: Incorrect. Translator can't convert text from JPG and PNG images by itself, but it's possible to do with other services such as Azure AI Document Intelligence and Immersive Reader.
+  - content: Do you need to specify the source language for a translation?
     choices:
-    - content: "No, automatic language detection works for all languages."
+    - content: No, automatic language detection works for all languages.
       isCorrect: false
-      explanation: "Incorrect. Translator can automatically detect the source language for some languages, but not all 6000+ known languages."
-    - content: "Yes, automatic language detection isn't available for Translator."
+      explanation: Incorrect. Translator can automatically detect the source language for some languages, but not all 6,000+ known languages.
+    - content: Yes, automatic language detection isn't available for Translator.
       isCorrect: false
-      explanation: "Incorrect. Translator can automatically detect the source language for some languages."
-    - content: "For some languages you need to specify the source language, but automatic language detection works for over 50 languages."
+      explanation: Incorrect. Translator can automatically detect the source language for some languages.
+    - content: For some languages you need to specify the source language, but automatic language detection works for over 50 languages.
       isCorrect: true
-      explanation: "Correct. Translator can automatically detect the source language for some languages, meaning you don’t always have to specify the source language."
-  - content: 'What is a benefit of creating a custom Translation model?'
+      explanation: Correct. Translator can automatically detect the source language for some languages, meaning you don't always have to specify the source language.
+  - content: What is a benefit of creating a custom Translation model?
     choices:
-    - content: "Custom models can be tuned to your industry or domain-specific terminologies and styles, allowing more accurate translation."
+    - content: Custom models can be tuned to your industry or domain-specific terminologies and styles, allowing more accurate translation.
       isCorrect: true
-      explanation: "Correct. Custom models can be tailor-made to translate text and documents within industry or domain-specific terminologies and styles."
-    - content: "Custom models can extract data from photographs, enhancing your existing workflows."
+      explanation: Correct. Custom models can be tailor-made to translate text and documents within industry or domain-specific terminologies and styles.
+    - content: Custom models can extract data from photographs, enhancing your existing workflows.
       isCorrect: false
-      explanation: "Incorrect. Custom models can’t extract data from photographs by themselves, however it’s possible with other services such as Form Recognizer and Immersive Reader."
-    - content: "Custom models can be tuned to understand the emotion of the document, allowing a sentiment score to provide more data for the end user."
+      explanation: Incorrect. Custom models can't extract data from photographs by themselves, however it's possible with other services such as Azure AI Document Intelligence and Immersive Reader.
+    - content: Custom models can be tuned to understand the emotion of the document, allowing a sentiment score to provide more data for the end user.
       isCorrect: false
-      explanation: "Incorrect. Custom models don't offer a sentiment score."
+      explanation: Incorrect. Custom models don't offer a sentiment score.

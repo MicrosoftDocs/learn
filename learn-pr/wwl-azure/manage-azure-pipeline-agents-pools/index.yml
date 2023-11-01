@@ -3,13 +3,14 @@ uid: learn.wwl.manage-azure-pipeline-agents-pools
 metadata:
   title: Manage Azure Pipeline agents and pools
   description: "Manage Azure Pipeline agents and pools"
-  ms.date: 06/23/2022
+  ms.date: 07/13/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
+  ms.service: azure-devops
 title: Manage Azure Pipeline agents and pools
-summary: This module explores differences between Microsoft-hosted and self-hosted agents, detail job types, and introduces agent pools configuration. You will understand typical situations to use agent pools and how to manage its security. Also, it explores communication to deploy using Azure Pipelines to target servers.
+summary: This module explores the differences between Microsoft-hosted and self-hosted agents, details job types, and configures agent pools. Understand typical situations to use agent pools and how to manage their security.
 abstract: |
   By the end of this module, you'll be able to:
   *   Choose between Microsoft-hosted and self-hosted agents
@@ -17,7 +18,8 @@ abstract: |
   *   Configure agent pools
   *   Make the agents and pools secure
   *   Explore communication to deploy using Azure Pipelines
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/2-manage-azure-pipeline-agents-and-pools.svg
 levels:
 - advanced

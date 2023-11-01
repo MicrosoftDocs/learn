@@ -9,7 +9,7 @@ Once your eligibility has been verified, you'll have access to Azure Government 
 
 ## Access the Azure Government portal
 
-Azure Government portal has a different URL than the global Azure portal. To access the Azure Government portal, navigate to [https://portal.azure.us](https://portal.azure.us?azure-portal=true)
+Azure Government portal has a different URL than the global Azure portal. To access the Azure Government portal, navigate to [https://portal.azure.us](https://portal.azure.us?azure-portal=true).
 
 #### Connect to Azure Government
 

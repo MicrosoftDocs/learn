@@ -11,40 +11,40 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!INCLUDE[](includes/6-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Form Recognizer can analyze and extract data from what type of files?'
+  - content: Azure AI Document Intelligence can analyze and extract data from what type of files?
     choices:
-    - content: "PowerPoint files and MP4 videos"
+    - content: PowerPoint files and MP4 videos
       isCorrect: false
-      explanation: "Incorrect. Form Recognizer can analyze some types of documents, but not PowerPoint files or videos."
-    - content: "JPG and PNG images, and PDF and TIFF documents."
+      explanation: Incorrect. Azure AI Document Intelligence can analyze some types of documents, but not PowerPoint files or videos.
+    - content: JPG and PNG images, and PDF and TIFF documents.
       isCorrect: true
-      explanation: "Correct. Form Recognizer can analyze and extract data from JPG and PNG images, and PDF and TIFF documents. Including forms, tables, written and typed documents, receipts, invoices, and business cards."
-    - content: "CSV files"
+      explanation: Correct. Azure AI Document Intelligence can analyze and extract data from JPG and PNG images, and PDF and TIFF documents. Including forms, tables, written and typed documents, receipts, invoices, and business cards.
+    - content: CSV files
       isCorrect: false
-      explanation: "Incorrect. Form Recognizer doesn't parse CSV documents, but it does parse images and other document types."
-  - content: 'What type of data does the prebuilt Invoice Model return?'
+      explanation: Incorrect. Azure AI Document Intelligence doesn't parse CSV documents, but it does parse images and other document types.
+  - content: What type of data does the prebuilt Invoice Model return?
     choices:
-    - content: "CSV data, with the extracted information separated by commas."
+    - content: CSV data, with the extracted information separated by commas.
       isCorrect: false
-      explanation: "Incorrect. Form Recognizer uses standard JSON formatting that programming languages can readily use."
-    - content: "Image data, with the extracted information highlighted by bounding boxes"
+      explanation: Incorrect. Azure AI Document Intelligence uses standard JSON formatting that programming languages can readily use.
+    - content: Image data, with the extracted information highlighted by bounding boxes
       isCorrect: false
-      explanation: "Incorrect. While Form Recognizer can return bounding box information, the data is returned in a format that programming languages can readily use."
-    - content: "JSON formatting"
+      explanation: Incorrect. While Azure AI Document Intelligence can return bounding box information, the data is returned in a format that programming languages can readily use.
+    - content: JSON formatting
       isCorrect: true
-      explanation: "Correct. As programming languages can readily use JSON formatting, Form Recognizer returns the extracted information in standard JSON formatting so the data is easier to work with."
-  - content: 'What is a benefit of creating a custom model?'
+      explanation: Correct. As programming languages can readily use JSON formatting, Azure AI Document Intelligence returns the extracted information in standard JSON formatting so the data is easier to work with.
+  - content: What is a benefit of creating a custom model?
     choices:
-    - content: "Custom models can be tuned to your specific form and data needs, allowing more accurate analysis and extraction of data."
+    - content: Custom models can be tuned to your specific form and data needs, allowing more accurate analysis and extraction of data.
       isCorrect: true
-      explanation: "Correct. Custom models can be made with as little as five examples, and tuned to your specific needs."
-    - content: "Custom models apply Optical Character Recognition (OCR), but prebuilt models don't."
+      explanation: Correct. Custom models can be made with as little as five examples, and tuned to your specific needs.
+    - content: Custom models apply Optical Character Recognition (OCR), but prebuilt models don't.
       isCorrect: false
-      explanation: "Incorrect. Both custom models and prebuilt models use OCR."
-    - content: "Custom models can be tuned to specific types of forms, but prebuilt models are generic models, not tuned to a specific type of form."
+      explanation: Incorrect. Both custom models and prebuilt models use OCR.
+    - content: Custom models can be tuned to specific types of forms, but prebuilt models are generic models, not tuned to a specific type of form.
       isCorrect: false
-      explanation: "Incorrect. Prebuilt models can be used for invoices, receipts, IDs, and business cards."
+      explanation: Incorrect. Prebuilt models can be used for invoices, receipts, IDs, and business cards.

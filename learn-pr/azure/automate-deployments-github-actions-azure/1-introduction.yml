@@ -8,7 +8,10 @@ metadata:
   ms.date: 3/15/2023  
   author: amthomas46
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-dotnet
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 02

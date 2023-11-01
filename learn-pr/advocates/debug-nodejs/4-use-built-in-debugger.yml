@@ -6,14 +6,16 @@ metadata:
   description: Learn how to use the Node.js built-in debugger with your programs.
   author: GitHubber17
   ms.author: chnoring
-  ms.date: 04/22/2022
+  ms.date: 06/01/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen, team=cloud_advocates
+  ms.custom:
+    - team=nextgen
+    - team=cloud_advocates
+    - devx-track-js
   ms.contributors: yolasors-11052021
 durationInMinutes: 6
 interactive: "bash"
-azureSandbox: true
 content: |
   [!include[](includes/4-use-built-in-debugger.md)]
   

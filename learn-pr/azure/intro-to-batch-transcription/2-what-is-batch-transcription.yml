@@ -8,7 +8,7 @@ metadata:
   author: eric-urban
   ms.author: eur
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-what-is-batch-transcription.md)]
+  [!INCLUDE[](includes/2-what-is-batch-transcription.md)]

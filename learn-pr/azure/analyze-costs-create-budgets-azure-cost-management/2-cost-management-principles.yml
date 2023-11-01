@@ -9,7 +9,7 @@ metadata:
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 
 durationInMinutes: 5
 content: |
@@ -22,11 +22,11 @@ quiz:
     choices:
     - content: Assign people to review costs when needed.
       isCorrect: false
-      explanation: Cost management should be practiced at all stages of development in the cloud, not just when it is deemed necessary by people in the organization.
-    - content: Create a plan in advance and ensure every stakeholder in your organization is aligned and on board to iteratively review and understand cost drivers on a regular basis.
+      explanation: Cost management should be practiced at all stages of development in the cloud, not just when it's deemed necessary by people in the organization.
+    - content: Create a plan in advance and ensure every stakeholder in your organization is aligned and on board to iteratively review and understand cost drivers.
       isCorrect: true
       explanation: This approach integrates cost management into every phase of development and sets it up to be an ongoing process that everyone engages in.
-    - content: Analyze costs after you receive your bill and track down the teams responsible to make sure they are keeping costs in line.
+    - content: Analyze costs after you receive your bill and track down the teams responsible to make sure they're keeping costs in line.
       isCorrect: false
       explanation: Analyzing the costs on your bill is important. It's also important to review costs *before* you get your bill.
   - content: What tool can you use to gain greater visibility into your spending patterns?
@@ -44,10 +44,10 @@ quiz:
     choices:
     - content: Management groups
       isCorrect: false
-      explanation: Management groups are used to organize subscriptions and can be used to bucket your costs accordingly. However, it is not a tool for accountability.
+      explanation: Management groups are used to organize subscriptions and can be used to bucket your costs accordingly. However, it isn't a tool for accountability.
     - content: Azure Advisor
       isCorrect: false
-      explanation: Azure Advisor provides insights and suggestions about how you might reduce costs. However, it does not keep teams accountable for their spending.
+      explanation: Azure Advisor provides insights and suggestions about how you might reduce costs. However, it doesn't keep teams accountable for their spending.
     - content: Budgets
       isCorrect: true
       explanation: Budgets combined with Alerts allow teams to stay on top of their spending. Budgets can be used to enforce spending limits in your organization.

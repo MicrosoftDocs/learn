@@ -25,4 +25,4 @@ In this module, you’ll learn how to:
 - Knowledge of cloud and traditional architecture concepts
 - Knowledge of networking, compute, and database systems
 - Familiarity with virtualization concepts like VMs, virtual networks, and virtual hard disks
-- Ability to manage cloud identities with Azure Active Directory
+- Ability to manage cloud identities with Microsoft Entra ID

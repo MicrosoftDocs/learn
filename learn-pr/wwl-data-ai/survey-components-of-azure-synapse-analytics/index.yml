@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: synapse-analytics
 title: Survey the Components of Azure Synapse Analytics
 summary: Learn the various components of Azure Synapse Analytics that enables you to build your analytical solutions in one place.
 abstract: |

@@ -4,8 +4,8 @@ metadata:
   title: Summary
   description: In this unit, you'll review what you've learned about multi-region application architectures in Azure.
   ms.date: 11/07/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary

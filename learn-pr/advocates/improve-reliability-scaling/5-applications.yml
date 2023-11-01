@@ -8,7 +8,7 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-04282021
 durationInMinutes: 8
@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: 'Load balancer'
       isCorrect: false
-      explanation: "A load balancer can sit in front of those VMs, but it won't manage them."
+      explanation: "A load balancer can sit in front of those VMs, but it doesn't manage them."
     - content: 'virtual hard disks (VHDs)'
       isCorrect: false
       explanation: "VHDs are attached to those VMs, but they don't manage them."
@@ -34,7 +34,7 @@ quiz:
     choices:
     - content: 'Azure Service Bus Queues'
       isCorrect: false
-      explanation: 'Azure Service Bus queues is a more advanced queueing offering.'
+      explanation: 'Azure Service Bus Queues is a more advanced queueing offering.'
     - content: 'Azure Storage Queues'
       isCorrect: true
       explanation: 'Correct.'

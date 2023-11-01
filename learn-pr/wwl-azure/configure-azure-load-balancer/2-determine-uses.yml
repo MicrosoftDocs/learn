@@ -4,11 +4,11 @@ title: Determine Azure Load Balancer uses
 metadata:
   title: Determine Azure Load Balancer uses
   description: "Learn how Azure Load Balancer operates with the frontend, backend, load-balancing rules, and health probes."
-  ms.date: 03/27/2023
+  ms.date: 06/05/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: load-balancer
 durationInMinutes: 2
 content: |
   [!include[](includes/2-determine-uses.md)]

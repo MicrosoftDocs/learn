@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements best describes the concept of capacity in Fabric?"
+    choices:
+    - content: "Capacity refers to a dedicated space for organizations to create, store, and manage Fabric items."
+      isCorrect: false
+      explanation: "Incorrect. The concept of capacity in Fabric isn't related to dedicated spaces for Fabric items."
+    - content: "Capacity defines the ability of a resource to perform an activity or to produce output."
+      isCorrect: true
+      explanation: "Correct. Capacity refers to the resources available at a given time to perform activities and produce output."
+    - content: "Capacity is a collection of items that are logically grouped together."
+      isCorrect: false
+      explanation: "Incorrect. Capacity isn't related to the grouping of items."
+  - content: "Which of the following statements is true about the difference between promotion and certification in Fabric?"
+    choices:
+    - content: "Promotion and certification both allow any workspace member to endorse content."
+      isCorrect: false
+      explanation: "Incorrect. Both promotion and certification involve endorsing content, but they differ in who can perform the endorsement."
+    - content: "Promotion requires a higher level of permissions than certification."
+      isCorrect: false
+      explanation: "Incorrect. Promotion and certification don't require different levels of permissions."
+    - content: "Certification must be enabled in the tenant by the admin, while promotion can be done by a workspace member."
+      isCorrect: true
+      explanation: "Correct. Certification must be enabled in the tenant by the admin, and only designated certifiers can perform the endorsement. In contrast, promotion can be done by any workspace member who has been granted the necessary permissions."

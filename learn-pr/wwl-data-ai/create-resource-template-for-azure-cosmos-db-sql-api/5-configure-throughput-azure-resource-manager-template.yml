@@ -8,6 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-arm-template
+    - devx-track-bicep
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

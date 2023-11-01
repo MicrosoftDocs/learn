@@ -1,4 +1,4 @@
-﻿This exercise takes you through the process of deploying IaC by using a GitHub workflow. To accomplish this, you'll use a predefined Azure Resource Manager template to implement a GitHub workflow.
+This exercise takes you through the process of deploying IaC by using a GitHub workflow. To accomplish this, you'll use a predefined Azure Resource Manager template to implement a GitHub workflow.
 
 In this exercise, you'll:
 
@@ -12,8 +12,8 @@ In this exercise, you'll:
 To perform this exercise, you need:
 
 * An Azure subscription.
-* A Microsoft account or an Azure Active Directory (Azure AD) account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-* A GitHub account associated with the Microsoft account or the Azure AD account referenced in the previous prerequisite. To create a GitHub account, follow the instructions available at [Signing up for a new GitHub account](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/signing-up-for-a-new-github-account).
+* A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+* A GitHub account associated with the Microsoft account or the Microsoft Entra account referenced in the previous prerequisite. To create a GitHub account, follow the instructions available at [Signing up for a new GitHub account](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/signing-up-for-a-new-github-account).
 
 ## Set up a GitHub repository
 
@@ -49,7 +49,7 @@ To prepare for an AKS cluster deployment, you'll add a secret to the repository 
     > [!NOTE]
     > Record the output of the command. You'll need it later in this exercise.
 
-1. Within the Bash session in the Azure Cloud Shell pane, run the following command to generate an Azure AD service principal that will be used to provide the GitHub workflow to your Azure subscription:
+1. Within the Bash session in the Azure Cloud Shell pane, run the following command to generate a Microsoft Entra service principal that will be used to provide the GitHub workflow to your Azure subscription:
 
     ```bash
     SERVICE_PRINCIPAL=$(az ad sp create-for-rbac --name "cna-sp03" --sdk-auth --role Contributor --scopes /subscriptions/$SUBSCRIPTION_ID)

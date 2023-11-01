@@ -2,12 +2,12 @@
 uid: learn.azure.hunt-threats-sentinel.1-introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 12/15/2020
+  description: Use Microsoft Sentinel to hunt for security threats across on-premises and cloud environments.
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Introduction
 durationInMinutes: 3
 content: |

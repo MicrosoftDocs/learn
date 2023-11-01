@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.secure-cognitive-services.exercise-secure-cognitive-services
-title: Exercise - Manage Cognitive Services Security
+title: Exercise - Manage Azure AI Services Security
 metadata:
-  title: Exercise - Manage Cognitive Services Security
-  description: "Exercise - Manage Cognitive Services Security"
+  title: Exercise - Manage Azure AI Services Security
+  description: "Exercise - Manage Azure AI Services Security"
   ms.date: 04/05/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labId: 99868
 labModal: true

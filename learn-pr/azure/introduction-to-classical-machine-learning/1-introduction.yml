@@ -5,8 +5,9 @@ metadata:
   title: Introduction
   description: Introduction to the regression module.
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.service: machine-learning
+  author: lgayhardt
+  ms.author: lagayhar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

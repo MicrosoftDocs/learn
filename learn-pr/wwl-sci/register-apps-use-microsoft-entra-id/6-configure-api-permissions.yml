@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.register-apps-use-microsoft-entra-id.configure-api-permissions
+title: Configure API permissions
+metadata:
+  title: Configure API permissions
+  description: "Create the appropriate APIs and set the permissions needed for your application to function."
+  ms.date: 10/02/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: module-standard-task-based
+  ms.prod: identity-and-access
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-configure-api-permissions.md)]

@@ -32,14 +32,15 @@ In Microsoft Power Automate, extra help and templates are provided for common ty
 
 If you choose to use a code-first approach, your next choice is between WebJobs and Azure Functions.
 
-Because of the extra features that are included with Azure Functions, including wider ranges of trigger events and supported languages, the ability to develop test code in the browser, and the pay-per-use price model, consider Azure Functions to be your default choice. There are two situations in which WebJobs might be a better choice:
+Because of the extra features that are included with Azure Functions, including wider ranges of trigger events and supported languages, the ability to develop test code in the browser, and the pay-per-use price model, consider Azure Functions to be your default choice. There are a few situations in which WebJobs might be a better choice:
 
-- You have an existing Azure App Service application, and you want to model the workflow within the application. This requirement means that the workflow can also be managed as part of the application, for example in an Azure DevOps environment.
+- You have an existing Azure App Service application, and you want to model the workflow within the application. This requirement means that the workflow can also be managed as part of the application; for example, in an Azure DevOps environment.
 - You have specific customizations that you want to make to the `JobHost` that aren't supported by Azure Functions.
-- Webjobs only supports C# on Microsoft Windows.
+- You want to control your app's retry policies.
+- WebJobs only supports C# on Microsoft Windows.
 
 ## Mixing technologies
 
 Remember that there's no requirement for you to use the same technology for different workflows: if your requirements differ, you're likely to reach a different answer at the end of your decision-making process. Furthermore, you can also call one workflow from another. For example, a workflow implemented in Microsoft Power Automate can easily call another that is built as an Azure Function.
 
-One reason to mix the technologies used in your business processes would be to give users control over a small section of a complete workflow. Do this by implementing that section in Microsoft Power Automate, then call that flow from a Logic App, Web Job, or Function.
+One reason to mix the technologies used in your business processes would be to give users control over a small section of a complete workflow. Do this by implementing that section in Microsoft Power Automate, then call that flow from a Logic App, WebJob, or Function.

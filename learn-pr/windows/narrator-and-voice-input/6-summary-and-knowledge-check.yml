@@ -3,10 +3,10 @@ title: Summary
 uid: learn-windows.narrator-and-voice-input.6-summary-and-knowledge-check
 metadata:
   title: Summary
-  description: This knowledge check will test your knowledge of adding inclusivity to an app.
+  description: This knowledge check tests your knowledge of adding inclusivity to an app.
   ms.date: 5/24/2019
-  author: PeterTurcan
-  ms.author: v-pettur
+  author: Karl-Bridge-Microsoft
+  ms.author: kbridge
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
   
@@ -19,10 +19,10 @@ quiz:
     - content: What UI element property is checked for and used by the Narrator first?
       choices:
       - content: x:Name
-        explanation: This is the name to reference the UI element when coding, but it is not used by the Narrator.
+        explanation: This property is the name to reference the UI element when coding, but it isn't used by the Narrator.
         isCorrect: false
       - content: Content
-        explanation: This is used, but not as a first choice.
+        explanation: This property is used, but not as a first choice.
         isCorrect: false
       - content: AutomationPropertes.HelpText
         explanation: This property is spoken, but not as the name of the UI element.
@@ -36,39 +36,39 @@ quiz:
         explanation: Correct. Microphone and speech recognition permissions are both necessary for custom voice recognition.
         isCorrect: true
       - content: Microphone and two-factor authentication.
-        explanation: One of these permissions is necessary, but the other is not.
+        explanation: One of these permissions is necessary, but the other isn't.
         isCorrect: false
       - content: Protocol and speech recognition.
-        explanation: One of these permissions is necessary, but the other is not.
+        explanation: One of these permissions is necessary, but the other isn't.
         isCorrect: false
       - content: Accessibility and speech synthesis.
-        explanation: Neither of these are permissions that need to be set.
+        explanation: Neither of these permissions need to be set.
         isCorrect: false
     - content: What happens when you clearly say, without pauses, "three times twenty equals" to the Windows speech recognition tool, with the calculator in focus?
       choices:
       - content: The calculator display shows "3 * 20".
-        explanation: This does not map to a button.
+        explanation: This entry doesn't map to a button.
         isCorrect: false
       - content: The calculator display shows "60".
-        explanation: Even with pauses this shouldn't happen, as "20" won't be mapped to a button.
+        explanation: Even with pauses this result shouldn't happen, as "20" won't be mapped to a button.
         isCorrect: false
       - content: The calculator display shows "3".
-        explanation: This might happen if you pause after saying "3".
+        explanation: This result might happen if you pause after saying "3".
         isCorrect: false
       - content: The speech recognition tool shows "What was that".
-        explanation: This is the most likely outcome if you speak without pauses.
+        explanation: This outcome is the most likely if you speak without pauses.
         isCorrect: true
     - content: What happens when you clearly say, without pauses, "three times twenty equals" to the calculator's custom speech recognition tool?
       choices:
       - content: The calculator display shows "3 * 20".
-        explanation: This would be shown if "equals" wasn't included in the input.
+        explanation: This result would be shown if "equals" wasn't included in the input.
         isCorrect: false
       - content: The calculator display shows "60".
         explanation: Correct!
         isCorrect: true
       - content: The calculator display shows nothing.
-        explanation: This shouldn't happen if the setup is correct and the input is clear.
+        explanation: This result shouldn't happen if the setup is correct and the input is clear.
         isCorrect: false
       - content:  The calculator display shows "3 times".
-        explanation: This shouldn't happen if all the input is clear.
+        explanation: This result shouldn't happen if all the input is clear.
         isCorrect: false

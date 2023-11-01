@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: iot-edge
 title: Explore IoT Edge module deployment
 summary: This module provides you with experience deploying, configuring, and running IoT Edge devices and IoT Edge modules in a test environment.
 abstract: |
@@ -46,3 +46,4 @@ units:
 - learn.wwl.explore-iot-edge-module-deployment.summary
 badge:
   uid: learn.wwl.explore-iot-edge-module-deployment.badge
+hidden: true

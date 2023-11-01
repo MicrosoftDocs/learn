@@ -9,8 +9,8 @@ metadata:
   author: Nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-
+  ms.service: azure
+  ms.custom:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-spot-node-pools.md)]

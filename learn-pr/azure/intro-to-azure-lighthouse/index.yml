@@ -7,9 +7,9 @@ metadata:
   author: iankensey
   ms.author: socuff
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: socuff-04232021
+  ms.service: lighthouse
 title: Use Azure Lighthouse with your managed service business
 summary: Learn about and adopt Azure Lighthouse for your managed service business to manage your customers at scale.
 abstract: | 

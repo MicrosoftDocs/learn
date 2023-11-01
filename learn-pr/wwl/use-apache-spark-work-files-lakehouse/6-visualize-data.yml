@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-apache-spark-work-files-lakehouse.visualize-data
+title: Visualize data in a Spark notebook
+metadata:
+  title: Visualize data in a Spark notebook
+  description: "Visualize data in a Spark notebook"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-visualize-data.md)]

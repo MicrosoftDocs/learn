@@ -2,12 +2,12 @@
 uid: learn.azure.hunt-threats-sentinel.4-bookmarks
 metadata:
   title: Save key findings with bookmarks
-  description: Save key findings with bookmarks
-  ms.date: 12/15/2020
+  description: Learn how to save key findings with bookmarks in Microsoft Sentinel.
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Save key findings with bookmarks
 durationInMinutes: 5
 content: |

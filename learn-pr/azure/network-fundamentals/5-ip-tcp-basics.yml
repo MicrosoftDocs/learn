@@ -8,7 +8,7 @@ metadata:
   author: cryophobia
   ms.author: chrvaw
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 13
 content: |
   [!include[](includes/5-ip-tcp-basics.md)]
@@ -56,7 +56,7 @@ quiz:
     - content: "The private network needs special access via a gateway."
       isCorrect: true
       explanation: "It's not possible to access a private network from the internet. A private network can access another private network by using network address translation."
-    - content: "It's possible to access a private network from the internet. A private network cannot access another private network by using network address translation."
+    - content: "It's possible to access a private network from the internet. A private network can't access another private network by using network address translation."
       isCorrect: false
       explanation: "It's not possible to access a private network from the internet. A private network can access another private network by using network address translation."
   - content: "What is the DNS?"

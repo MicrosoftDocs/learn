@@ -4,10 +4,12 @@ title: Import from package manager
 metadata:
   title: Import from package manager
   description: "Import from package manager"
-  ms.date: 10/18/2022
+  ms.date: 05/24/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

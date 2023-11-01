@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-configure-azure-developer-cli-templates.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of the Azure Developer CLI
+  ms.date: 06/20/2023
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: engagement-fy23
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "You have made changes to your `azd` template, but you only want to redeploy the application code without provisioning any changes made to the infrastructure as code files. Which command should you run?"
+    choices:
+    - content: "`azd provision`"
+      isCorrect: false
+      explanation: "Incorrect. The `azd provision` command is used to create or update Azure resources based on changes to the infrastructure as code definition files in your template."
+    - content: "`azd publish`"
+      isCorrect: false
+      explanation: "Incorrect. The `azd publish` command doesn't exist."
+    - content: "`azd up`"
+      isCorrect: false
+      explanation: "Incorrect. The `azd up` command will provision infrastructure as code changes as well as deploy the app code."     
+    - content: "`azd deploy`"
+      isCorrect: true
+      explanation: "Correct. The `azd deploy` command will only package and deploy the app source code to your Azure services."
+  - content: "Suppose you have configured a CI/CD pipeline for your template through GitHub Actions. How do you provision and deploy `azd` template updates to Azure using the CI/CD pipeline?"
+    choices:
+    - content: "Run the `azd pipeline` command locally."
+      isCorrect: false
+      explanation: "Incorrect. The `azd pipeline`` command is used to initially set up your CI/CD pipeline, but it's not used to deploy ongoing changes to your template."
+    - content: "Run the `azd up` command locally."
+      isCorrect: false
+      explanation: "Incorrect. Although the `azd up` command can apply updates to your template, it will not use your GitHub Actions CI/CD pipeline when run locally."
+    - content: "Commit and push your changes to the remote GitHub repository."
+      isCorrect: true
+      explanation: "Correct. Pushing your changes to the GitHub repository will trigger the GitHub Actions CI/CD pipeline, which will package, provision, and deploy the template resources."
+    - content: "Run the CI/CD workflow from the Azure portal."
+      isCorrect: false
+      explanation: "Incorrect. The `azd deploy` command can redeploy your app code, but it will not use your GitHub Actions CI/CD pipeline when run locally."
+  - content: "Which one of the following commands is used to launch Application Insights dashboards in Azure to view live metrics and logging?"
+    choices:
+    - content: "`azd insights`"
+      isCorrect: false
+      explanation: "Incorrect. The `azd insights` command doesn't exist."
+    - content: "`azd monitor`"
+      isCorrect: true
+      explanation: "Correct. The `azd monitor` command can launch Application Insights dashboards using flags such as `--live` or `--logs`."
+    - content: "`azd logging`"
+      isCorrect: false
+      explanation: "Incorrect. The `azd logging` command doesn't exist."
+    - content: "`azd pipeline config`"
+      isCorrect: false
+      explanation: "Incorrect. The `azd pipeline` command is used to configure CI/CD pipelines for your template."
+  - content: "The infrastructure as code definition files used by the Azure Developer CLI are idempotent. What does this mean?"
+    choices:
+    - content: "The definition files can be applied multiple times but always produce the same end state."
+      isCorrect: true
+      explanation: "Correct. Idempotency is one of the principles of infrastructure as code that guarantees a consistent end state regardless of how many times an operation runs."
+    - content: "The definition files are written using a declarative syntax such as `yaml`."
+      isCorrect: false
+      explanation: "Incorrect. Infrastructure as code files are usually declarative, but that doesn't determine whether they're idempotent."
+    - content: "The definition files will create and update resources, but not delete them."
+      isCorrect: false
+      explanation: "Incorrect. Although some infrastructure as code tools are configured to not delete resources by default, that doesn't determine whether they're idempotent."
+    - content: "The definition files are platform agnostic."
+      isCorrect: false
+      explanation: "Incorrect. Whether or not a tool is cross platform doesn't determine if it's idempotent."

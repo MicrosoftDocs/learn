@@ -7,8 +7,9 @@ metadata:
   ms.date: 02/11/2022
   author: codemillmatt
   ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/4-arrange-views-stacklayout.md)]

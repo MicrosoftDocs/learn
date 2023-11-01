@@ -1,8 +1,10 @@
-Before deploying the Language Detection module to your edge device, you need to configure the Azure Cognitive Services API key and endpoint into the container. 
+Before deploying the Language Detection module to your edge device, you need to configure the Azure AI services API key and endpoint into the container. 
 
-## Create a Cognitive Services Text Analytics resource
+<a name='create-an-azure-ai-services-text-analytics-resource'></a>
 
-Create a Cognitive Services Text Analytics resource that matches the container.
+## Create an Azure AI Text Analytics resource
+
+Create a Azure AI Text Analytics resource that matches the container.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. Select **Create a resource**, and then go to **AI + Machine Learning** > **Text Analytics**.
@@ -38,7 +40,7 @@ To deploy the Language Detection container image as Azure IoT Edge modules from 
 
     1. Select **Find device** and find your IoT Edge device created in an earlier step.
 
-1. Click the **Create** button. It will take you to the **Set modules** page. Keep the page open, because you'll configure Cognitive Services in the next step.
+1. Click the **Create** button. It will take you to the **Set modules** page. Keep the page open, because you'll configure Azure AI services in the next step.
 
 1. Click on the **EdgeModuleLanguageDetectionTextAnalytics** IoT Edge module.
 
@@ -48,9 +50,9 @@ To deploy the Language Detection container image as Azure IoT Edge modules from 
 
     1. Keep the value **accept** for **Eula**.
 
-    1. Fill out **Billing** with your Cognitive Services endpoint.
+    1. Fill out **Billing** with your Azure AI services endpoint.
 
-    1. Fill out **ApiKey** with your Cognitive Services API key.
+    1. Fill out **ApiKey** with your Azure AI services API key.
 
    ![The illustration shows environment variables.](../media/provide-info.png)
 

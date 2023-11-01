@@ -6,16 +6,16 @@ metadata:
   description: "Knowledge check"
   ms.date: 07/13/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
+  title: "Check your knowledge"
   questions:
-  - content: "You want to use the Computer Vision Analyze Image function to generate an appropriate caption for an image. Which visual feature should you specify?"
+  - content: "You want to use the Azure AI Vision Analyze Image function to generate an appropriate caption for an image. Which visual feature should you specify?"
     choices:
     - content: "Tags"
       isCorrect: false
@@ -26,14 +26,14 @@ quiz:
     - content: "Categories"
       isCorrect: false
       explanation: "That's incorrect. To generate a caption, include the Description visual feature in your analysis."
-  - content: "What is the effect of the `smartCropping` option when using Computer Vision to generate a thumbnail?"
+  - content: "What is the purpose of the Azure AI Vision service?"
     choices:
-    - content: "The aspect ratio of the original image is maintained."
+    - content: "To provide functionality for audio transcription"
       isCorrect: false
-      explanation: "That's incorrect. Using `smartCropping` ensures that the region of interest is identified and centered in the thumbnail."
-    - content: "The thumbnail is skewed to fit the specified proportions."
-      isCorrect: false
-      explanation: "That's incorrect. Using `smartCropping` ensures that the region of interest is identified and centered in the thumbnail."
-    - content: "The region of interest is centered in the thumbnail."
+      explanation: "Incorrect. The Azure AI Vision service is designed to extract information from images, not audio."
+    - content: "To extract information from images"
       isCorrect: true
-      explanation: "That's correct. Using `smartCropping` ensures that the region of interest is identified and centered in the thumbnail."
+      explanation: "The Azure AI Vision service is designed to help you extract information from images through various functionalities."
+    - content: "To detect the presence and location of specific sounds within an audio file"
+      isCorrect: false
+      explanation: "Incorrect. The Azure AI Vision service is designed to extract information from images, not audio."

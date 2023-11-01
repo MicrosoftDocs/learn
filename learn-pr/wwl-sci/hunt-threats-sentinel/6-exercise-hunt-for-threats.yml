@@ -2,12 +2,12 @@
 uid: learn.azure.hunt-threats-sentinel.6-exercise-hunt-for-threats
 metadata:
   title: Exercise - Hunt for threats by using Microsoft Sentinel
-  description: Exercise - Hunt for threats by using Microsoft Sentinel
-  ms.date: 12/15/2020
+  description: Learn how to delete a VM, manage threat-hunting queries, and save key findings with bookmarks in this exercise.
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Exercise - Hunt for threats by using Microsoft Sentinel
 durationInMinutes: 20
 content: |

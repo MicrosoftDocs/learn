@@ -4,12 +4,13 @@ title: Exercise - Create a new Power BI report in Synapse Studio
 metadata:
   title: Exercise - Create a new Power BI report in Synapse Studio
   description: "Exercise - Create a new Power BI report in Synapse Studio"
-  ms.date: 03/30/2021
+  ms.date: 05/16/2023
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/6-exercise-create-new-report-synapse-studio.md)]

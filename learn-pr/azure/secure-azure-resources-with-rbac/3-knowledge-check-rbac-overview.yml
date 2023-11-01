@@ -9,7 +9,7 @@ metadata:
   author: rolyon
   ms.author: rolyon
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 2
 quiz:
   title: Check your knowledge

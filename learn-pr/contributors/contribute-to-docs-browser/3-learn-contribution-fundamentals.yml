@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.contribute-docs-browser.learn-contribution-fundamentals
+title: Contribution fundamentals for Microsoft Learn
+metadata:
+  title: Contribution fundamentals for Microsoft Learn
+  description: In this unit, you get an overview of the contribution process on Microsoft Learn, including how to use GitHub and the general steps to edit documentation. 
+  ms.date: 8/1/2023
+  author: sgaspari815
+  ms.author: v-sgaspari
+  ms.topic: interactive-tutorial
+  ms.service: learn
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-learn-contribution-fundamentals.md)]

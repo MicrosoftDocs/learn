@@ -4,10 +4,11 @@ title: Discuss objective domains
 metadata:
   title: Discuss objective domains
   description: "Discuss objective domains"
-  ms.date: 11/18/2022
+  ms.date: 06/02/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
+  ms.service: powerbi
 durationInMinutes: 18
 content: |
   [!include[](includes/2-objective-domains.md)]

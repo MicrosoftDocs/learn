@@ -1,4 +1,4 @@
-Azure Spatial Anchors gives developers tools for creating spatially-aware mixed reality applications for HoloLens, iOS devices through ARKit, and Android devices through ARCore.
+Azure Spatial Anchors gives developers tools for creating spatially aware mixed reality applications for HoloLens, iOS devices through ARKit, and Android devices through ARCore.
 
 Developers can use Azure Spatial Anchors to understand spaces, mark specific places of interest, and remember those points of interest on compatible devices.
 
@@ -12,10 +12,10 @@ Use cases for Azure Spatial Anchors include:
 
 In Unity, AR Foundation lets you work with augmented reality systems across several platforms. This package provides an interface for Unity developers but doesn't include any augmented reality functionality. On a target device, you'll also need separate packages for Unity's officially supported target platforms:
 
-* ARCore XR Plugin on Android
-* ARKit XR Plugin on iOS
-* Magic Leap XR Plugin on Magic Leap
-* Windows XR Plugin on HoloLens
+* Google ARCore XR Plug-in on Android
+* Apple ARKit XR Plug-in on iOS
+* OpenXR Plug-in on HoloLens 2
+* Meta OpenXR Feature on Meta Quest
 
 ## ARAnchorManager script
 
@@ -24,10 +24,6 @@ A point in space that you want the devices to track is called an *anchor*. For e
 The `anchorPrefab` field in the `ARAnchorManager` class isn't intended for content. Instead, AR Foundation will build a new GameObject to represent an anchor by using a means other than `AddComponent`, such as loading an `ARWorldMap` object with anchors. 
 
 The prefab field can extend the default behavior of anchors. We suggest that you don't use it to deploy content in the world.
-
-## ButtonConfigHelper script
-
-Each button has a `ButtonConfigHelper` script that lets you choose an icon, text, and label.
 
 ## Resources
 

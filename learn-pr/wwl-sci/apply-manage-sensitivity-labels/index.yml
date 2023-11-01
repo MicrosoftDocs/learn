@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: riswinto
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
 title: Apply and manage sensitivity labels
 summary: Learn about how sensitivity labels are used to classify and protect business data while making sure that user productivity and their ability to collaborate are not hindered.
 abstract: |
@@ -30,7 +29,6 @@ roles:
 products:
 - microsoft-purview
 - m365
-- m365-information-protection
 subjects:
 - information-protection-governance
 units:

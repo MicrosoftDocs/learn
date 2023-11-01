@@ -5,12 +5,11 @@ metadata:
   title: Summary
   description: A summary review of what you've learned in this module.
   ms.date: 07/01/2022
-  author: edlamie80
-  ms.author: liydu
-  ms.reviewer: liydu
+  author: timlt
+  ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
