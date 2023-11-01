@@ -28705,6 +28705,86 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/4-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-with-text-analytics-service/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/5-ai-embedded-everyday-applications.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/4-ai-for-subject-matter-experts.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/3-executive-overview.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/2-introduction-to-ai-for.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/7-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/2-get-started-knowledge-base.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-faq-chatbot-qna-maker-azure-bot-service/3-get-started-knowledge-base",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/3a-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-faq-chatbot-qna-maker-azure-bot-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/3-create-bot.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-faq-chatbot-qna-maker-azure-bot-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/4-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-faq-chatbot-qna-maker-azure-bot-service/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/2-get-started.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-language-model-with-language-understanding/3-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/3a-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-language-model-with-language-understanding/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/3-exercise-create-language-understanding-application.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-language-model-with-language-understanding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/4-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-language-model-with-language-understanding/6-summary",
+      "redirect_document_id": false
     }
   ]
 }
