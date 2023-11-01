@@ -8,7 +8,7 @@ The `do-while` statement executes a statement or a block of statements while a s
 do
 {
     // This code executes at least one time
-} while (true)
+} while (true);
 ```
 
 The flow of execution starts inside of the curly brace. The code executes at least one time, then the Boolean expression next to the `while` keyword is evaluated. If the Boolean expression returns `true`, the code block is executed again.
