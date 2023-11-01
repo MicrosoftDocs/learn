@@ -2,8 +2,8 @@
 uid: learn.wwl.query-data-kql-database-microsoft-fabric
 metadata:
   title: Query data in a KQL database in Microsoft Fabric
-  description: "Query data in a KQL database in Microsoft Fabric"
-  ms.date: 10/31/2023
+  description: "This tutorial provides a brief introduction to KQL (Kusto Query Language) queries using Querysets and the major differences between KQL and T-SQL when using Querysets."
+  ms.date: 11/01/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -11,15 +11,16 @@ metadata:
 title: Query data in a KQL database in Microsoft Fabric
 summary: This tutorial provides a brief introduction to KQL (Kusto Query Language) queries using Querysets and the major differences between KQL and T-SQL when using Querysets.
 abstract: |
-  - Basic syntax and use of Kusto Query Language (KQL).
-  - A basic understanding of the Queryset canvas.
-  - How to execute T-SQL queries in the Queryset canvas.
-  - How to convert T-SQL queries into KQL queries.
+  After completing this module, you will be able to:
+  - Use basic syntax and of Kusto Query Language (KQL).
+  - Understand the basics of the Queryset canvas.
+  - Describe how to execute T-SQL queries in the Queryset canvas.
+  - Describe how to convert T-SQL queries into KQL queries.
 prerequisites: |
   - An understanding of Microsoft Fabric navigation between services.
-  - A basic understanding of Real-Time Analytics (RTA)
-  - A basic understanding of streaming data sources
-  - A basic understanding of OneLake
+  - A basic understanding of Real-Time Analytics (RTA).
+  - A basic understanding of streaming data sources.
+  - A basic understanding of OneLake.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
