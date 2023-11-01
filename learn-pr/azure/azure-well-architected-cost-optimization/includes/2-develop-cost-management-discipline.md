@@ -19,7 +19,7 @@ Contoso is considering building a mobile ticketing platform for the trade shows 
 *Applying the approach and outcomes*</br>
 The workload team spends some time to model estimated costs in various scenarios: they know the types of resources that will be needed to build the workload and they look at different configurations that could support varying load patterns to understand what their Azure costs may look like initially and over time. They use the rough estimated infrastructure costs, combined with estimates for team expenditures and revenue from the offering to build a cost model. This model then allows them to start predicting cost, and understand how costs will increase as usage increases over time. They know they can refine the model as architectural and operational decisions are decided to increase its predictive power.
 
-### Estimate realistic budgets
+## Estimate realistic budgets
 
 > **Approach**: Estimate realistic budgets that cover all non-negotiable functional and nonfunctional requirements, personnel and training costs, and processes that provide for anticipated growth.
 
@@ -39,7 +39,7 @@ As the cost model is refined with more precise numbers, the team provides stakeh
 
 Costs are reduced when you act on feedback, which should be considered as meaningful as numeric data. You'll empower employees by using their input to drive realistic design changes and business strategies.
 
-## Example scenario
+### Example scenario
 
 *Before applying the approach*</br>
 Contoso's mobile ticketing workload has been successfully implemented and is in production. After analyzing the usage patterns over time, the workload team members find that the implementation isn't really as optimized for cost efficiency as it could be. Since project management and finance seems pleased with the workload's success so far, they don't know if they should say anything.
