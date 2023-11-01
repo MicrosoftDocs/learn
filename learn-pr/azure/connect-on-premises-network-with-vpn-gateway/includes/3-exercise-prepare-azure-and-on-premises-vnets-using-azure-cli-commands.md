@@ -2,7 +2,7 @@ Your company is now ready to deploy a site-to-site VPN that allows your on-premi
 
 Start by creating your Azure-side resources and on-premises network resources. For this deployment, you use the following network topology.
 
-![Diagram of network topology for unit 3 exercise.](../media/3-network-topology-used-in-exercise.svg)
+:::image type="content" source="../media/3-network-topology-used-in-exercise.svg" alt-text="Diagram of network topology for unit 3 exercise.":::
 
 In this exercise, we simulate an on-premises datacenter (HQ-Network) by using an additional Azure virtual network. There are many makes and models of on-premises VPN devices, and it isn't possible to describe their configuration in this unit. The logical method of configuration is the same for a VPN device. You just need to replace the steps for HQ-Network with steps tailored to your on-premises device.
 
@@ -98,4 +98,4 @@ In this unit, you configure the virtual networks with a subnet, add a gateway su
 
 The following diagram shows the resources that you've deployed.
 
-![Diagram of resources deployed during unit 3 exercise.](../media/3-resources-deployed-during-exercise.svg)
+:::image type="content" source="../media/3-resources-deployed-during-exercise.svg" alt-text="Diagram of resources deployed during unit 3 exercise.":::

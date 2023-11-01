@@ -159,7 +159,7 @@ Here are a few recommendations:
 
     **State** | **Action**
     --- | ---
-    **Azure-ready VMs** | Export the assessment report and filter all machines with state *Ready for Azure*. This might be the first group of machines that you move to Azure by using the [Azure Migrate:  Migration](/azure/migrate/migrate-services-overview#migration-and-modernization-tool) tool.
+    **Azure-ready VMs** | Export the assessment report and filter all machines with state *Ready for Azure*. This might be the first group of machines that you move to Azure by using the [Azure Migrate: Migration and modernization](/azure/migrate/migrate-services-overview#migration-and-modernization-tool) tool.
     **End-of-support operating systems** | Export the assessment report and filter all machines running Windows Server 2008 R2 or Windows Server 2008. These operating systems are at the end of support, and only Azure provides a free three years of security updates when you migrate them to Azure.
     **SQL Server migration** | Use the database-assessment recommendations to migrate databases that are ready for Azure SQL Database. Migrate the databases ready for Azure SQL Database VM.
     **End-of-support software** | Export your application inventory and filter for any software or extensions that might be reaching end of support. Prioritize these applications for migration.
