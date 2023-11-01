@@ -3,7 +3,7 @@
 
 Cost optimization is conducted at various levels of the organization. It's important to understand how your workload is aligned with organizational goals and FinOps practices. A view into the business units, resource organization, and centralized audit policies allows you to apply a standardized financial system and approach to your workload.
 
-The following approaches are supported through the use of examples to help demonstrate how they can be applied to real-world scenarios. The examples for each approach are based on a hypothetical company, Contoso, that organizes and hosts trade shows. Contoso sees an opportunity to gain efficiencies with their ticket sales process for trade shows by developing a mobile app in-house. The scenarios below follow the development process from ideation through implementation, focusing on cost optimization concerns.
+The following approaches are supported through the use of examples to help demonstrate how they can be applied to real-world scenarios. The examples for each approach are based on a hypothetical company, Contoso, that organizes and hosts trade shows. Contoso sees an opportunity to gain efficiencies with their ticket sales process for trade shows by developing a mobile app in-house. The scenarios below follow the development process from ideation through implementation, focusing on cost optimization concerns. The mobile app is a web app written in .NET that is hosted on Azure App Service infrastructure and uses Azure SQL Database for its database.
 
 ## Develop a cost model
 
@@ -28,7 +28,7 @@ You'll be able to set financial boundaries and establish ways to check your spen
 ### Example scenario
 
 *Before applying the approach*</br>
-Contoso needs to allocate funding to the mobile ticketing workload. The workload can't be allowed to run with a blank check. A realisitc budget needs to be determined for the workload because having a pre-allocation shortfall could put the workload timeline and success in jeopardy, and over-allocating can lead to unnecessary up-front expenditures that don't align with the short term needs of the workload.
+In this scenario, the app is in the design phase and initial resource SKUs have been determined. Contoso needs to allocate funding to the mobile ticketing workload. The workload can't be allowed to run with a blank check. A realisitc budget needs to be determined for the workload because having a pre-allocation shortfall could put the workload timeline and success in jeopardy, and over-allocating can lead to unnecessary up-front expenditures that don't align with the short term needs of the workload.
 
 *Applying the approach and outcomes*</br>
 As the cost model is refined with more precise numbers, the team provides stakeholders with a budget that is estimated with a high degree of confidence and can be defended. With a budget in place, the workload architect can start designing against financial constraints. As more is learned about the implementation and the operations necessary, to workload teams expects to need to renegotiate a bit. They want a small buffer, but ultimately will be driving toward fiscal responsibility by adhering to the budget allocation.
@@ -42,7 +42,7 @@ Costs are reduced when you act on feedback, which should be considered as meanin
 ## Example scenario
 
 *Before applying the approach*</br>
-Contoso's mobile ticketing workload has been successful. After analyzing the usage patterns over time, the workload team members find that the implementation isn't really as optimized for cost efficiency as it could be. Since project management and finance seems pleased with the workload's success so far, they don't know if they should say anything.
+Contoso's mobile ticketing workload has been successfully implemented and is in production. After analyzing the usage patterns over time, the workload team members find that the implementation isn't really as optimized for cost efficiency as it could be. Since project management and finance seems pleased with the workload's success so far, they don't know if they should say anything.
 
 *Applying the approach and outcomes*</br>
 The workload team is encouraged to "spend it like it's theirs" and as such are empowered to speak up to product management when they see alternative approaches to the current design that can address the functional requirements of the application without sacrificing security, reliability or performance, but in a more cost efficient way. The workload team therefore brings their findings to stakeholders and talks over what the design change pros and cons would be.
