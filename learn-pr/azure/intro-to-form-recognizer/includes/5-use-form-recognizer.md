@@ -6,7 +6,7 @@ To start, you need to activate the Sandbox – just select the **Activate sandbo
 
 You can treat this exercise as a demo, just to see what you can do with Document Intelligence. However, you fully control these resources, so if you're interested in checking out the technical details, you can choose to dive deeper. Browse the code in GitHub, check out the resources in the Azure portal, or even use Visual Studio remote debugging to step through the process.
 
-For more guided hands-on learning about Document Intelligence, we have more Learn modules for you to check out. After that, you can always come back here to apply what you've learned in the free sandbox.
+For more guided hands-on learning about Document Intelligence, we have more Learn modules for you to check out. After that, you can always come back here to apply what you learn in the free sandbox.
 
 <a name='deploy-form-recognizer'></a>
 
@@ -22,7 +22,7 @@ To create the Document Intelligence resource and deploy the application, complet
     curl -s https://raw.githubusercontent.com/MicrosoftDocs/mslearn-intro-to-form-recognizer/main/scripts/deploy-in-sandbox.sh | bash 
     ```
 
-1. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it doesn't affect the running script.
+1. Wait several minutes for the command to run. You can finish reading this page and navigate to other pages within this module - it doesn't affect the running script.
 
 1. Select the link to the URL displayed at the bottom of the shell. The web app opens and lets you use Document Intelligence. You can also cut and paste the URL from here, but remember, it doesn't work until the script finishes running: https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net
 
