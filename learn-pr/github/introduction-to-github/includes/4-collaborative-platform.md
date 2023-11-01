@@ -90,8 +90,7 @@ Similarly, since organization discussions are based on a source repository, any 
 
 2.	Under your repository or organization name, click  Discussions.
 
- 
-(Alt Text of Image: The top portion of the main page of a repository with the Discussions section highlighted.)
+:::image type="content" source="../media/discussions-tab.png" alt-text="The top portion of the main page of a repository with the Discussions section highlighted." border="false":::
 
 3.	On the right side of the page, click New discussion.
 
@@ -113,7 +112,6 @@ Each category must have a unique name and emoji pairing, and are accompanied by 
 5.	Under "Discussion title" type a title for your discussion, and under "Write" type the body of your discussion.
 
    :::image type="content" source="../media/start-a-new-discussion.png" alt-text="Start a new discussion page with the Discussion title box and content box empty." border="false":::
-(Alt Text of Image: Start a new discussion page with the Discussion title box and content box empty. )
 
 6.	Click Start discussion.
 
