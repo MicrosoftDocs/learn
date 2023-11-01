@@ -28695,6 +28695,46 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/4-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-with-text-analytics-service/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/5-ai-embedded-everyday-applications.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/4-ai-for-subject-matter-experts.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/3-executive-overview.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/2-introduction-to-ai-for.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/7-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
