@@ -19,7 +19,19 @@ quiz:
 
   questions:
   
-  - content: "The sites in figure A have six network segments, currently allocated across two sites and zones. If site 2 has two network segments with the same IP addresses from different production lines, how many zones should you have in total between the two sites?"
+  - content: "Figure A represents a map of your company network. How would you organize this network into sites and zones for Defender for IoT?"
+    choices:
+    - content: "Five sites, one for each floor. Two zones for the Paris site and the Bengaluru site." 
+      isCorrect: false
+      explanation: "In Defender for IoT, sites group devices by geographical location and zones define a functional area within a site."
+    - content: "Two sites, one for each office. Three zones in the Paris site and three zones in the Bengaluru site, one for each functional area."
+      isCorrect: true
+      explanation: "The two geographical locations would be divided into sites and each site has zones based on a functional area in the site."
+    - content: "Three sites, one for each office, including the global office. Three zones in the Paris site, two zones in the Bengaluru site, and one site in the global location."
+      isCorrect: false
+      explanation: "In Defender for IoT, sites group devices by geographical location and zones define a functional area within a site. A global site isn't necessary for the example."
+
+  - content: "The sites in figure B have six network segments, currently allocated across two sites and zones. If site 2 has two network segments with the same IP addresses from different production lines, how many zones should you have in total between the two sites?"
     choices:
     - content: "1"
       isCorrect: false
@@ -30,18 +42,6 @@ quiz:
     - content: "3"
       isCorrect: true
       explanation: "Site 1 can have one zone. Site 2 should be separated into two zones. That way devices in the segments with recurring IP addresses can consolidate correctly, and are identified as separate and unique devices in the device inventory."
-
-  - content: "Figure B represents a map of your company network. How would you organize this network into sites and zones for Defender for IoT?"
-    choices:
-    - content: "Five sites, one for each floor. Two zones for the Paris site and the Bengaluru site." 
-      isCorrect: false
-      explanation: "In Defender for IoT, sites group devices by geographical location and zones define a functional area within a site."
-    - content: "Two sites, one for each office. Three zones in the Paris site and two zones in the Bengaluru site."
-      isCorrect: true
-      explanation: "The two geographical locations would be divided into sites and each site has zones based on a floor in the site."
-    - content: "Three sites, one for each office, including the global office. Three zones in the Paris site, two zones in the Bengaluru site, and one site in the global location."
-      isCorrect: false
-      explanation: "In Defender for IoT, sites group devices by geographical location and zones define a functional area within a site. A global site isn't necessary for the example."
 
   - content: "Why is it important to segment a network into sites and zones when planning an OT security deployment?"
     choices:
