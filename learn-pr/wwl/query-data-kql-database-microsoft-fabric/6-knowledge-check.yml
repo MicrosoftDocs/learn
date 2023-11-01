@@ -17,24 +17,24 @@ quiz:
     choices:
     - content: "To perform aggregations such as `count`, `sum`, and `avg`."
       isCorrect: false
-      explanation: "Incorrect. This is the purpose of the `summarize` operator."
+      explanation: "Incorrect. This ability is the purpose of the `summarize` operator."
     - content: "To specify which columns to include in your query output."
       isCorrect: true
       explanation: "Correct. Using the `project` operator allows you to reduce the amount of data being processed and improve query performance by specifying which columns to include in your query output."
     - content: "To filter data based on specific conditions."
       isCorrect: false
-      explanation: "Incorrect. This is the purpose of the `where` operator."
+      explanation: "Incorrect. This ability is the purpose of the `where` operator."
   - content: "What does KQL allow you to do with data from various sources?"
     choices:
     - content: "KQL allows you to create your own custom functions in KQL to perform specific data analysis tasks."
       isCorrect: false
-      explanation: "Incorrect. This is a feature of KQL, but not related to ingesting data from various sources."
+      explanation: "Incorrect. This ability is a feature of KQL, but not related to ingesting data from various sources."
     - content: "KQL allows you to ingest data from various sources such as Azure Event Hubs, Azure IoT Hub, and Azure Storage."
       isCorrect: true
       explanation: "Correct. KQL allows you to ingest data from a variety of sources such as Azure Event Hubs, Azure IoT Hub, and Azure Storage."
     - content: "KQL allows you to export query results to various destinations such as Azure Blob Storage, Azure Data Lake Storage, and Azure Event Hubs."
       isCorrect: false
-      explanation: "Incorrect. This is a feature of KQL, but not related to ingesting data from various sources."
+      explanation: "Incorrect. This ability is a feature of KQL, but not related to ingesting data from various sources."
   - content: "What does the Fabric Main Editor enable you to do?"
     choices:
     - content: "Create and link object to read and write objects to a lakehouse"
