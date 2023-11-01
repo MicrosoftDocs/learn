@@ -26,14 +26,14 @@ quiz:
     - content: Azure VM log collection and analytics.
       isCorrect: false
       explanation: Azure Monitor doesn't collect any logs by default. You have to set up DCRs to collect logs and send them to Log Analytics.
-  - content: How do you use the Azure Monitor Agent to collect guest OS metrics?
+  - content: What's a quick way to install the Azure Monitor Agent to collect guest OS metrics?
     choices:
     - content: Install the diagnostics extension under **Diagnostics settings**.
       isCorrect: false
       explanation: The diagnostics extension isn't related to the Azure Monitor Agent.
     - content: You don't have to install or enable anything to use the Azure Monitor Agent to collect guest OS metrics.
       isCorrect: false
-      explanation: Guest OS metrics aren't collected by default. Enable VM Insights with the Azure Monitor Agent to collect guest OS metrics.
+      explanation: Guest OS metrics aren't collected by default. You must install the Azure Monitor Agent to collect guest OS metrics.
     - content: Select the **Azure Monitor Agent** when you enable VM Insights.
       isCorrect: true
       explanation: Select the Azure Monitor Agent instead of the legacy Log Analytics Agent when you enable VM Insights.

@@ -1,6 +1,6 @@
-You want to update the Linux version and configuration for the VMs that host your website, so you decide to quickly create a VM in the Azure portal and evaluate its built-in monitoring capabilities. In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. As soon as the VM starts up, Azure automatically begins collecting basic metrics and activity logs, and you can view built-in metrics graphs, activity logs, and boot diagnostics.
+You want to monitor the VMs that host your website, so you decide to quickly create a VM in the Azure portal and evaluate its built-in monitoring capabilities. In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. As soon as the VM starts up, Azure automatically begins collecting basic metrics and activity logs, and you can view built-in metrics graphs, activity logs, and boot diagnostics.
 
-## Create a VM
+## Create a VM and enable recommended alerts
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and in the Search field, enter *virtual machines*.
 1. On the **Virtual machines** page, select **Create**, and then select **Azure virtual machine**.
@@ -36,7 +36,7 @@ It can take a few minutes to create the VM. When you get the notification that t
 
 ## View built-in metrics graphs
 
-Once an Ubuntu or Windows VM is created, Azure starts collecting basic metrics data automatically. Built-in metrics graphs, along with the recommended alerts you enabled, can help you monitor whether and when your VM encounters health or performance issues. You can then use more advanced monitoring and analytics capabilities to investigate issue causes and remediation.
+Once your VM is created, Azure starts collecting basic metrics data automatically. Built-in metrics graphs, along with the recommended alerts you enabled, can help you monitor whether and when your VM encounters health or performance issues. You can then use more advanced monitoring and analytics capabilities to investigate issue causes and remediation.
 
 1. To view basic metrics graphs, on the VM's **Overview** page, select the **Monitoring** tab.
 

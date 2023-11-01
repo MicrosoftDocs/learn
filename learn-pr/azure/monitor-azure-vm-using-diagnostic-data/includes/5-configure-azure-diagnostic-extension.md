@@ -1,6 +1,12 @@
-Besides monitoring your VM host's health and performance, you need to monitor your VM's operating system and the other workloads and apps it runs. Azure Monitor includes VM Insights, which collects client and workload metrics. In this unit, you enable VM Insights and use it to monitor your VM's guest OS and client workload performance.
+Besides monitoring your VM host's health, utilization, and performance, you need to monitor the software and processes running on your VM, also called the VM guest or client. The VM client includes the operating system and other workloads and applications. To monitor the software running on your VM, you install the Azure Monitor Agent, which collects data from inside VMs.
 
-VM Insights installs *Azure Monitor Agent*, an agent that collects data from inside VMs. VM Insights implements a data collection rule (DCR) that collects client and workload performance data into predefined curated workbooks. You can edit or create more DCRs to select which guest metrics Azure Monitor Agent collects and where to send the data.
+In this unit, you enable the Azure Monitor VM Insights feature, which offers a quick way to start monitoring the VM client. VM Insights:
+
+- Installs Azure Monitor Agent on your VM.
+- Creates a data collection rule (DCR) that collects a predefined set of client performance data to a Log Analytics workspace.
+- Presents the data in curated workbooks.
+ 
+Although you don't need to use VM Insights to install Azure Monitor Agent, create DCRs, or set up workbooks, VM Insights makes setting up VM client monitoring simple. VM Insights provides you with a basis for monitoring the performance of your VM client and mapping the processes running on your machine.
 
 ## Enable VM Insights
 

@@ -6,7 +6,7 @@ Logs are recorded system events that contain a timestamp and different types of 
 
 Azure Monitor doesn't collect logs by default, but you can configure Azure Monitor Logs to collect from any Azure resource. Azure Monitor Logs stores log data in a Log Analytics workspace for querying and analysis.
 
-## VM architecture
+## VM monitoring layers
 
 Azure VMs have several layers that require monitoring. Each of the following layers has a distinct set of telemetry and monitoring requirements.
 
