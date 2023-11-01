@@ -41,7 +41,7 @@ To save the selected path for further investigation:
 
 The first pane of the error analysis component is a tree map, which illustrates how model failure is distributed across various cohorts with a tree visualization. Select any node to see the prediction path on your features where an error was found.
 
-:::image type="content" source="../media/error-analysis-tree-map-selected.png" alt-text="Screenshot of the dashboard showing an error analysis on the tree map pane." lightbox="../media/how-to-responsible-ai-dashboard/error-analysis-tree-map-selected.png":::
+:::image type="content" source="../media/error-analysis-tree-map-selected.png" alt-text="Screenshot of the dashboard showing an error analysis on the tree map pane." lightbox="../media/error-analysis-tree-map-selected.png":::
 
 1. **Heat map view**: Switches to heat map visualization of error distribution.
 2. **Feature list:** Allows you to modify the features used in the heat map using a side panel.
