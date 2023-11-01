@@ -81,7 +81,7 @@ This processor operation is contained within the Event Task and you can edit it 
 
 Windowing functions are a way to perform operations on the data contained in temporal windows, such as aggregating, filtering, or transforming streaming events based on time. Windowing functions are useful for analyzing streaming data that changes over time, such as sensor readings, web clicks, on-line transactions, and more and provide great flexibility to keep an accurate record of events as they occurred.
 
-Earlier, we mentioned the **Group by** operator in the event processor editor. This graphical interface, allows us to define the logic we need for processing, transforming, and routing event data. There are four parameters that need specified in the **Group by** operator settings to use these windowing functions that include:
+Earlier, we mentioned the **Group by** operator in the event processor editor. This graphical interface allows us to define the logic we need for processing, transforming, and routing event data. There are four parameters that need specified in the **Group by** operator settings to use these windowing functions that include:
 
 - The **window type**, which can be **tumbling, sliding, snapshot, hopping**, or **session**.
   - **tumbling windows** divides incoming events into fixed and non-overlapping intervals based on arrival time.
