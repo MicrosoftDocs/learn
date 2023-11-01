@@ -8,8 +8,7 @@ metadata:
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
-  ms.custom:
-    - devx-track-dotnet
+  ms.custom: devx-track-dotnet, devx-track-azurecli
   ms.prod: learning-azure
 durationInMinutes: 6
 interactive: bash
