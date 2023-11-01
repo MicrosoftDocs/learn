@@ -10,3 +10,4 @@ To implement Microsoft Entra ID in your corporate configuration, you need to und
 
 > [!TIP]
 > If you're a Microsoft 365, Azure, or Dynamics CRM Online customer, you might already be using Microsoft Entra ID! Every Microsoft 365, Azure, and Dynamics CRM tenant is already a Microsoft Entra tenant. You can start using your tenant to manage access to thousands of other cloud apps that integrate with Microsoft Entra ID.
+

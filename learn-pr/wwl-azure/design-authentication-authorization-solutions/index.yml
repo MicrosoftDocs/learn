@@ -30,7 +30,7 @@ levels:
 roles:
 - solution-architect
 products:
-- azure-active-directory
+- entra-id
 - azure-rbac
 subjects:
 - identity-access
