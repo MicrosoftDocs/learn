@@ -12,7 +12,7 @@ Also at this stage, you're asked to specify the subscription, resource group, an
 
 After you start the replication, you can track and monitor the replication of each of your VMs.
 
-:::image type="content" source="../media/6-vm-replication.png" alt-text="Screenshot of the Azure Migrate servers, databases and web apps page in the Azure Portal." border="false":::
+:::image type="content" source="../media/6-vm-replication.png" alt-text="Screenshot of the Azure Migrate servers, databases and web apps page in the Azure portal." border="false":::
 
 *Figure 1: The Azure Migrate - Servers page in the Azure admin center.*
 
