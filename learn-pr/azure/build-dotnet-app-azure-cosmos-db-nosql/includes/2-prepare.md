@@ -136,17 +136,14 @@ The Dev Containers extension for Visual Studio Code requires Docker to be instal
 
     ```json
     {
-        "image": "mcr.microsoft.com/dotnet/sdk:8.0",
-        "features": {
-            "ghcr.io/devcontainers/features/common-utils:2": {}
+      "image": "mcr.microsoft.com/dotnet/sdk:8.0",
+      "customizations": {
+        "vscode": {
+          "extensions": [
+            "ms-dotnettools.csdevkit"
+          ]
         }
-        "customizations": {
-            "vscode": {
-                "extensions": [
-                    "ms-dotnetools.csharp"
-                ]
-            }
-        }
+      }
     }
     ```
 
