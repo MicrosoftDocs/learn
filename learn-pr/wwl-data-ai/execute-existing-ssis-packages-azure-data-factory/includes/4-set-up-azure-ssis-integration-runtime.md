@@ -46,7 +46,7 @@ Perform the following steps to set up an Integration Runtime
 
 1. For **Catalog Database Server Endpoint**, select the endpoint of your database server to host SSISDB.
 
-1. Select the **Use Azure Active Directory authentication with the managed identity for your ADF** check box to choose the authentication method for your database server to host SSISDB.
+1. Select the **Use Microsoft Entra authentication with the managed identity for your ADF** check box to choose the authentication method for your database server to host SSISDB.
 
 1. For **Admin Username**, enter the SQL authentication username for your database server to host SSISDB.
 
@@ -112,9 +112,3 @@ The alternative approach is to:
 1. On the **Connections** pane of **Manage** hub, switch to the **Integration Runtimes** page and select **Refresh**.
 
     ![Integration Runtimes page](../media/integration-runtimes-page.png)
-
-
-
-
-
-

@@ -1,5 +1,3 @@
-
-
 You can apply tags to your Azure resources to logically organize them by categories. Each tag consists of a name and a value. For example, you can apply the name **Environment** and the value **Production** or **Development** to your resources. After creating your tags, you associate them with the appropriate resources.
 
 With tags in place, you can retrieve all the resources in your subscription with that tag name and value. This means you can retrieve related resources from different resource groups.
@@ -16,4 +14,4 @@ There are a few things to consider about tagging:
 - Tags applied to the resource group aren't inherited by the resources in that resource group.
 
 > [!NOTE]
-> If you need to create a lot of tags you will want to do that programmatically. You can use PowerShell or the CLI.
+> If you need to create a lot of tags you'll want to do that programmatically. You can use PowerShell or the CLI.

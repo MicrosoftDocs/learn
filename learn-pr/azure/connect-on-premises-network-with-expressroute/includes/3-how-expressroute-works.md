@@ -119,7 +119,7 @@ You can configure network security groups and firewall rules to control the traf
 >
 > :::image type="content" source="../media/3-create-virtual-network-gateway.png" alt-text="Screenshot of creating a virtual network gateway with the gateway type set to ExpressRoute.":::
 
-Up to 10 virtual networks can be linked to an ExpressRoute circuit, but these virtual networks must be in the same geographical region as the ExpressRoute circuit. You can link a single virtual network to four ExpressRoute circuits if necessary. The ExpressRoute circuit can be in the same subscription to the virtual network, or in a different one.
+Up to 10 virtual networks can be linked to an ExpressRoute circuit, but these virtual networks must be in the same geopolitical region as the ExpressRoute circuit when using a Standard SKU. You can link a single virtual network to four ExpressRoute circuits if necessary. The ExpressRoute circuit can be in the same subscription to the virtual network, or in a different one.
 
 If you're using the Azure portal, you connect a peering to a virtual network gateway as follows:
 
@@ -143,4 +143,4 @@ You can enroll your subscription with Microsoft to activate ExpressRoute Direct.
 
 ExpressRoute Direct supports FastPath. When FastPath is enabled, it sends network traffic directly to a virtual machine that's the intended destination. The traffic bypasses the virtual network gateway, improving the performance between Azure virtual networks and on-premises networks.
 
-FastPath doesn't support virtual network peering (where you have virtual networks connected together). It also doesn't support user-defined routes on the gateway subnet.
+FastPath supports virtual network peering (where you have virtual networks connected together). It also supports user-defined routes on the gateway subnet.

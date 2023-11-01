@@ -153,7 +153,7 @@ An Azure SQL Database managed instance must be placed inside an Azure virtual ne
 
 Users and client applications can connect to the managed instance database through the Azure portal, PowerShell, Azure CLI, and the REST API.
 
-Managed instances depend on Azure services such as Azure Storage for backups, Azure Event Hubs for telemetry, Azure Active Directory for authentication, and Azure Key Vault for Transparent Data Encryption (TDE). 
+Managed instances depend on Azure services such as Azure Storage for backups, Azure Event Hubs for telemetry, Microsoft Entra ID for authentication, and Azure Key Vault for Transparent Data Encryption (TDE). 
 
 The managed instances make connections to these services.
 

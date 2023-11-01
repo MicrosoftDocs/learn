@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.discover-microsoft-ai-leaders-financial-industry
 metadata:
-  title: Discover Microsoft AI for business leaders in the financial industry
+  title: Discover Microsoft AI for leaders in finance
   description: In this learning path, FSI business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
-  ms.date: 10/13/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.service: azure-ai-services
-title: Discover Microsoft AI for business leaders in the financial industry
+title: Discover Microsoft AI for leaders in finance
 prerequisites: |
   * Basic understanding of finance concepts.
 summary: |

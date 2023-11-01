@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.hybrid-identity.azure-ad-connect
-title: Deploy Azure AD connect
+title: Deploy Microsoft Entra Connect
 metadata:
-  title: Deploy Azure AD connect
-  description: "Deploy Azure AD connect"
+  title: Deploy Microsoft Entra Connect
+  description: "Deploy Microsoft Entra Connect"
   ms.date: 09/12/2023
   author: wwlpublish
   ms.author: serlingdavis
