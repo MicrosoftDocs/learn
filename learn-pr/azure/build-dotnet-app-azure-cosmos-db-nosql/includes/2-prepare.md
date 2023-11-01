@@ -46,18 +46,11 @@ The API for NoSQL account is used to store the data you create in this project a
 1. Wait for the command to complete once the new account is created. Creating a new account can take a couple of minutes.
 
     > [!TIP]
-    > If you wish, you can navigate to your new API for NoSQL account using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-
-1. Get a list of API for NoSQL accounts within the resource group.
-
-    ```azurecli
-    az cosmosdb list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>"
-    ```
+    > You can navigate to your new API for NoSQL account using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 ### Get account connection string
 
-Now that you have an API for NoSQL account, you can use the `az cosmosdb keys list` command from the Azure CLI to get credentials. In this section, you filter the output of the command to only return a single connection string.
+Now that you have an API for NoSQL account, you can use the `az cosmosdb keys list` command from the Azure CLI to get the account's credentials. In this section, you filter the output of the command to only return a single connection string.
 
 1. First, get the name of the most recently created API for NoSQL accounts.
 
