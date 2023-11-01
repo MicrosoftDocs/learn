@@ -28775,6 +28775,61 @@
       "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/4-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-language-model-with-language-understanding/6-summary",
       "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/2-determine-endpoint-objectives.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/3-inventory-endpoint-devices.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/4-determine-endpoint-license.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/5-review-endpoint-policies-infrastructure.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/6-create-endpoint-rollout-plan.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/7-determine-endpoint-communication.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/8-prepare-support-helpdesk.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/index.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_document_id": false
     }
   ]
 }
