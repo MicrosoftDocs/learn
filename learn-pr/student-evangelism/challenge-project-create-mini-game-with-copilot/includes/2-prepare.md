@@ -20,7 +20,7 @@ Dev Containers, also known as Development containers, are a feature within Visua
 ![A diagram showing a development environment in a local computer and comparing with a development environment in the cloud (Dev Container).](./media/dev-container.png)
 
 > [!div class="mx-imgBorder"]
-> ![GitHub Copilot logo](./media/GitHub_Copilot_logo.png)
+> ![GitHub Copilot logo](./media/github-copilot-logo.png)
 
 ### GitHub Copilot
 
