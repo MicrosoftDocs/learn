@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.subservice: responsible-ai  
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/4-model-performance-inconsistencies.md)]

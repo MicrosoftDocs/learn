@@ -4,7 +4,7 @@ Model fairness and model accuracy aren't the same thing and must be considered. 
 
 :::image type="content" source="./media/error-distribution.png" alt-text="Diagram showing benchmark and ML model pointing to 89% accurate pointing to different regions fail for different reasons.":::
 
-This is where the error analysis component of Azure Machine Learning Responsible AI dashboard helps in identifying a model’s error distribution across its test dataset. To learn about error analysis, we'll be using the diabetes hospital readmission classification model scenario that you'll train and create a dashboard for later in the lab portion of this module.
+This is where the error analysis component of Azure Machine Learning Responsible AI dashboard helps in identifying a model’s error distribution across its test dataset. Throughout this module we'll be using the diabetes hospital readmission classification model scenario to learn and explain the responsible AI dashboard. Later in the lab, you'll train and create your own dashboard using the same dataset.
 
 ## How to interpret Error Analysis insights
 
@@ -22,11 +22,20 @@ The tree map displays how model failure is distributed across various data cohor
 
 :::image type="content" source="./media/tree-map.png" alt-text="Screenshot of.":::
 
-The tree map provides visual indicators to make locating nodes or tree path with the error rate quicker.  In the above diagram, you can see the tree path with the darkest red color has a leaf-node on the bottom right-hand side of the tree. To select the path leading up to the node, double-click on the leaf node. This highlights the path and displays the feature condition for each node in the path.  Since this tree path contains nodes with the highest error rate, it's a good candidate to create a cohort with the data represented in the path in order to later perform analysis to diagnose the root cause behind the errors.
+The tree map provides visual indicators to make locating nodes or tree path with the error rate quicker. In the above diagram, you can see the tree path with the darkest red color has a leaf-node on the bottom right-hand side of the tree. To select the path leading up to the node, double-click on the leaf node. This highlights the path and displays the feature condition for each node in the path. Since this tree path contains nodes with the highest error rate, it's a good candidate to create a cohort with the data represented in the path in order to later perform analysis to diagnose the root cause behind the errors.
 
 :::image type="content" source="./media/1-select-error-tree.png" alt-text="Screenshot of.":::
 
-According to this tree path with the highest error rate, diabetes patients that have prior hospitalization and taking several medications between 11 and 22 are a cohort of patients where the model has the highest number of incorrect predictions.  To investigate what's causing the high error rate with this group of patients, we'll create a cohort for these groups of patients.
+According to this tree path with the highest error rate, diabetes patients that have prior hospitalization and taking several medications between 11 and 22 are a cohort of patients where the model has the highest number of incorrect predictions. To investigate what's causing the high error rate with this group of patients, we'll create a cohort for these groups of patients.
+
+**Cohort # 1**: Patients with number of Prior_Inpatient > 0 days and number of medications between 11 and 22
+
+To save the selected path for further investigation:
+
+1. Select the “Save as a new cohort” button on the upper right-hand side of the error analysis component.
+1. We’ll name the cohort: “Err: Prior_Inpatient >0; Num_meds >11.50 & <= 21.50”.
+
+:::image type="content" source="./media/1-save-error-tree.png" alt-text="Screenshot of.":::
 
 ### Error tree map
 
