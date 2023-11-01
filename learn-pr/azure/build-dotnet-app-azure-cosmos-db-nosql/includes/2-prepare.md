@@ -91,38 +91,30 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb keys li
         --output tsv
     ```
 
-1. Record the value of this connection string. You'll use the connection string later in this project to connect to this account.
+1. Record the value of this connection string. You use the connection string later in this project to connect to this account.
 
 ### Configure dev environment
 
-A [development container](https://containers.dev/) environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
+A development container environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
 
-#### [GitHub Codespaces](#tab/github-codespaces)
+#### [Develop in browser](#tab/github-codespaces)
 
-[GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
+GitHub Codespaces runs a development container managed by GitHub with Visual Studio Code for the Web as the browser-based user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
 
 > [!IMPORTANT]
-> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances.
 
-1. Start the process to create a new GitHub Codespace on the `main` branch of the [`azure-samples/dotnet-env-azure-cosmos-db`](https://github.com/azure-samples/dotnet-env-azure-cosmos-db) GitHub repository.
+1. Create a new GitHub Codespace using the `github/dotnet-codespaces` template.
 
-    > [!div class="nextstepaction"]
-    > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=621314195)
+    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/dotnet-codespaces?quickstart=1)
 
-1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
-
-    :::image type="content" source="../media/codespace-configuration.png" alt-text="Screenshot of the confirmation screen before creating a new codespace.":::
+1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create new codespace**.
 
 1. Wait for the codespace to start. This startup process can take a few minutes.
 
 1. Open a new terminal in the codespace.
 
-    > [!TIP]
-    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
-    >
-    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
-
-1. Validate that .NET 7 is installed in your environment:
+1. Validate that .NET 8 is installed in your environment:
 
     ```bash
     dotnet --list-sdks
@@ -130,40 +122,41 @@ A [development container](https://containers.dev/) environment is available with
 
 1. Close the terminal.
 
-1. The remaining exercises in this project take place in the context of this development container.
+The remaining exercises in this project take place in the context of this development container.
 
-#### [Visual Studio Code](#tab/visual-studio-code)
+#### [Develop locally](#tab/visual-studio-code)
 
-The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
+The Dev Containers extension for Visual Studio Code requires Docker to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
 
 1. Open **Visual Studio Code** in the context of an empty directory.
 
-1. Ensure that you have the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) installed in Visual Studio Code.
+1. Ensure that you have the **Dev Containers** extension installed in Visual Studio Code.
 
-1. Open a new terminal in the editor.
+1. Create a new JSON file named **.devcontainer/devcontainer.json**. Add this JSON content to the file:
 
-    > [!TIP]
-    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
-    >
-    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
-
-1. Clone the [`azure-samples/dotnet-env-azure-cosmos-db`](https://github.com/azure-samples/dotnet-env-azure-cosmos-db) GitHub repository into the current directory.
-
-    ```bash
-    git clone https://github.com/azure-samples/dotnet-env-azure-cosmos-db.git .
+    ```json
+    {
+        "image": "mcr.microsoft.com/dotnet/sdk:8.0",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:2": {}
+        }
+        "customizations": {
+            "vscode": {
+                "extensions": [
+                    "ms-dotnetools.csharp"
+                ]
+            }
+        }
+    }
     ```
 
-1. Open the folder into which you cloned the GitHub repository.
-1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen in Container**.
+1. Open the **Command Palette**.
 
-    :::image type="content" source="../media/reopen-container-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within the context of a development container.":::
+1. Search for and then select **Dev Containers: Reopen in Container**.
 
-    > [!TIP]
-    > Visual Studio Code might automatically prompt you to reopen the existing folder within a development container. This is functionally equivalent to using the command palette to reopen the current workspace in a container.
-    >
-    > :::image type="content" source="../media/reopen-container-toast.png" alt-text="Screenshot of a toast notification to reopen the current folder within the context of a development container.":::
+1. Open a new terminal in the devcontainer.
 
-1. Validate that .NET 7 is installed in your environment:
+1. Validate that .NET 8 is installed in your environment:
 
     ```bash
     dotnet --list-sdks
@@ -171,6 +164,6 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
 
 1. Close the terminal.
 
-1. The remaining exercises in this project take place in the context of this development container.
+The remaining exercises in this project take place in the context of this development container.
 
 ---
