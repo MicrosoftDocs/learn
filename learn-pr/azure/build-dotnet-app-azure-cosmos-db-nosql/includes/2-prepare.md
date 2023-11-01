@@ -29,66 +29,54 @@ To complete this project, you need an API for NoSQL account.
 
 The API for NoSQL account is used to store the data you create in this project and to execute queries. This section guides you through the steps to creating a new account using the Azure CLI directly in the Azure Cloud Shell terminal.
 
-1. Create a new shell variable named **suffix** with a random number and then output the number to the console.
+1. Create a new shell variable named **suffix** with a random number. Create a new API for NoSQL account within the `<rgn>[sandbox resource group name]</rgn>` resource group.
 
     ```azurecli
     let suffix=$RANDOM*$RANDOM
-    
-    echo $suffix
-    ```
 
-1. Create another shell variable named **accountName** that appends the randomly generated suffix to `mslearn-` and then outputs the result.
-
-    ```azurecli
-    accountName="mslearn-$suffix"
-    
-    echo $accountName
-    ```
-
-1. Create two more shell variables for `resourceGroup` and `location` with the values prescribed here.
-
-    ```azurecli
-    resourceGroup="<rgn>[sandbox resource group name]</rgn>"
-    location="westus"
+    az cosmosdb create \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --name "mslearn-$suffix" \
+        --locations "regionName=westus"
     ```
 
     > [!IMPORTANT]
-    > The sandbox will automatically create a resource group for you with the name specified in this code sample.
-
-1. Create a new API for NoSQL account using the three shell variables you created.
-
-    ```azurecli
-    az cosmosdb create \
-        --resource-group $resourceGroup \
-        --name $accountName \
-        --locations regionName=$location
-    ```
+    > This resource group was already created by the sandbox.
 
 1. Wait for the command to complete once the new account is created. Creating a new account can take a couple of minutes.
 
     > [!TIP]
-    > You can navigate to your new API for NoSQL account using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+    > If you wish, you can navigate to your new API for NoSQL account using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+
+1. Get a list of API for NoSQL accounts within the resource group.
+
+    ```azurecli
+    az cosmosdb list \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>"
+    ```
 
 ### Get account connection string
 
 Now that you have an API for NoSQL account, you can use the `az cosmosdb keys list` command from the Azure CLI to get credentials. In this section, you filter the output of the command to only return a single connection string.
 
-1. First, list all of the credentials available for this account. Use the `--type` parameter to only return connection strings.
+1. First, get the name of the most recently created API for NoSQL accounts.
 
     ```azurecli
-    az cosmosdb keys list \
-        --resource-group $resourceGroup \
-        --name $accountName \
-        --type connection-strings \
+    az cosmosdb list \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --query "sort_by([].{name:name,created:systemData.createdAt}, &created)" \
         --output table
     ```
 
-1. Now, add the `--query` parameter to filter to specifically the `Primary SQL Connection String`.
+1. Now, get the `Primary SQL Connection String` credential for the first account from the list of recently created accounts.
 
     ```azurecli
     az cosmosdb keys list \
-        --resource-group $resourceGroup \
-        --name $accountName \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --name $(az cosmosdb list \
+            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --query "sort_by([].{name:name,created:systemData.createdAt}, &created)[0]" \
+            --output tsv) \
         --type connection-strings \
         --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
         --output tsv
