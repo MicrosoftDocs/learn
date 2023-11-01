@@ -3,7 +3,7 @@ uid: learn.wwl.create-language-model-with-luis
 metadata:
   title: Fundamentals of Conversational Language Understanding
   description: "Create a language model with Azure AI language."
-  ms.date: 10/30/2023
+  ms.date: 11/01/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
