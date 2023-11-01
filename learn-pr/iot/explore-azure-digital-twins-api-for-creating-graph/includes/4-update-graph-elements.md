@@ -4,7 +4,7 @@ In this unit, you'll use the Model and Digitaltwin APIs to make manual updates t
 
 Start this section on updating models by reviewing the [Models API documentation](/rest/api/digital-twins/dataplane/models). The API contains operations to add new models, delete models, get a model's details by its ID, list all models, and update a model.
 
-:::image type="content" source="../media/4-models.png" alt-text="Reference doc screenshot showing the Models operations." border="false" lightbox="../media/4-models":::
+:::image type="content" source="../media/4-models.png" alt-text="Reference doc screenshot showing the Models operations." border="false" lightbox="../media/4-models.png":::
 
 However, models that are uploaded to a Azure Digital Twins instance are immutable, which means they can't be edited or updated in a traditional sense. Instead, one way to "update" a model in your instance is to delete the old model and reupload an updated definition.
 
@@ -53,7 +53,7 @@ In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
 
 Send the request. A 204 response with no error message indicates the delete request was successful.
 
-:::image type="content" source="../media/4-digital-twin-models-delete.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Delete request." border="false" lightbox="../media/4-digital-twin-models-delete":::
+:::image type="content" source="../media/4-digital-twin-models-delete.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Delete request." border="false" lightbox="../media/4-digital-twin-models-delete.png":::
 
 Return to the **Params** tab and change the **id** value to *dtmi:example:grid:transmission:generatorSubStation;1*. This is the ID of the *Generator Substation* model. Send the request.
 
@@ -93,7 +93,7 @@ Send the request.
 
 The response from a successful request will look something like this:
 
-:::image type="content" source="../media/4-digital-twin-models-add.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Add request." border="false" lightbox="../media/4-digital-twins-model-add":::
+:::image type="content" source="../media/4-digital-twin-models-add.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Add request." border="false" lightbox="../media/4-digital-twins-model-add.png":::
 
 This indicates that the new *Base Receiver* model described in the response was uploaded to the instance, replacing the old definition that was deleted.
 
@@ -167,13 +167,13 @@ Send the request.
 
 Scrolling through the response should reveal the new `Operator` property as part of the *Base Receiver* model definition.
 
-:::image type="content" source="../media/4-digital-twin-models-get-by-id.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Get By Id request." border="false" lightbox="../media/4-digital-twin-models-get-by-id":::
+:::image type="content" source="../media/4-digital-twin-models-get-by-id.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Get By Id request." border="false" lightbox="../media/4-digital-twin-models-get-by-id.png":::
 
 ## Update twin properties
 
 Start this section on updating twins by reviewing the [Twins API documentation](/rest/api/digital-twins/dataplane/twins). The API contains operations to add/delete, get, and update digital twins, their components, and their relationships. In this section, you'll focus on operations dealing with twins themselves.
 
-:::image type="content" source="../media/4-twins.png" alt-text="Reference doc screenshot showing the Twins operations and highlighting the twin-focused ones." border="false" lightbox="../media/4-twins":::
+:::image type="content" source="../media/4-twins.png" alt-text="Reference doc screenshot showing the Twins operations and highlighting the twin-focused ones." border="false" lightbox="../media/4-twins.png":::
 
 Since your work in the previous section made a new `Operator` property available in the substation model definitions, you can add this property to any digital twins that use the substation models. In this section, you'll add the property to a delivery substation twin called *sub_corp*.
 
@@ -199,7 +199,7 @@ Switch to the **Body** tab, which accepts the update to be made in JSON Patch fo
 
 Send the request. A 204 response with no error message indicates the delete request was successful.
 
-:::image type="content" source="../media/4-digital-twins-update.png" alt-text="Postman screenshot showing the results of the Digital Twins Update request." border="false" lightbox="../media/4-digital-twins-update":::
+:::image type="content" source="../media/4-digital-twins-update.png" alt-text="Postman screenshot showing the results of the Digital Twins Update request." border="false" lightbox="../media/4-digital-twins-update.png":::
 
 ### Verify updates
 
@@ -211,7 +211,7 @@ In the **Params** tab, set the **api-version** to *2023-10-31* and the **id** to
 
 Send the request. Look for the `Operator` field and its value in the response.
 
-:::image type="content" source="../media/4-digital-twins-get-by-id.png" alt-text="Postman screenshot showing the results of the Digital Twins Get By ID request." border="false" lightbox="../media/4-digital-twins-get-by-id":::
+:::image type="content" source="../media/4-digital-twins-get-by-id.png" alt-text="Postman screenshot showing the results of the Digital Twins Get By ID request." border="false" lightbox="../media/4-digital-twins-get-by-id.png":::
 
 This confirms that the twin has been updated with the new property. In the sample scenario, you might repeat the process with the other substation twins to include this detail throughout your environment.
 
@@ -219,7 +219,7 @@ This confirms that the twin has been updated with the new property. In the sampl
 
 Start this section on updating relationships by reviewing the [Twins API documentation](/rest/api/digital-twins/dataplane/twins) again, this time looking at the operations that deal with relationships.
 
-:::image type="content" source="../media/4-relationships.png" alt-text="Reference doc screenshot showing the Twins operations and highlighting the relationship ones." border="false" lightbox="../media/4-relationships":::
+:::image type="content" source="../media/4-relationships.png" alt-text="Reference doc screenshot showing the Twins operations and highlighting the relationship ones." border="false" lightbox="../media/4-relationships.png":::
 
 Let's say one of the delivery substations represented in your graph is no longer going to supply power to one of its farm consumers. Currently, the delivery substation twin *sub_farmcluster_2* has a *feeds* relationship to farm consumer *c_farm_05*. Since the substation's going to stop feeding that farm cluster, you need to update the graph to remove the relationship between these two twins.
 
@@ -231,7 +231,7 @@ In the **Headers** tab, uncheck the **If-Match**, **traceparent**, and **tracest
 
 Send the request. A 204 response with no error message indicates the delete request was successful.
 
-:::image type="content" source="../media/4-digital-twins-delete-relationship.png" alt-text="Postman screenshot showing the results of the Digital Twins Delete Relationship request." border="false" lightbox="../media/4-digital-twins-delete-relationship":::
+:::image type="content" source="../media/4-digital-twins-delete-relationship.png" alt-text="Postman screenshot showing the results of the Digital Twins Delete Relationship request." border="false" lightbox="../media/4-digital-twins-delete-relationship.png":::
 
 ### Verify updates
 
@@ -245,4 +245,4 @@ In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
 
 Send the request. The response should show two relationships to *c_farm_04* and *c_farm_06*, but no relationship to *c_farm_05*. That indicates the delete operation was successful.
 
-:::image type="content" source="../media/4-digital-twins-list-relationships.png" alt-text="Postman screenshot showing the results of the Digital Twins List Relationships." border="false" lightbox="../media/4-digital-twins-list-relationships":::
+:::image type="content" source="../media/4-digital-twins-list-relationships.png" alt-text="Postman screenshot showing the results of the Digital Twins List Relationships." border="false" lightbox="../media/4-digital-twins-list-relationships.png":::

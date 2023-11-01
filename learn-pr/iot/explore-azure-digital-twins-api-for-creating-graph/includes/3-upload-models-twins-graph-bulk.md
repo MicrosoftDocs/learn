@@ -8,13 +8,13 @@ The sample scenario of this unit represents a city energy grid, including differ
 
 These entities are connected by relationships indicating ownership and feed of power between them. The sample scenario has the following digital twin graph:
 
-:::image type="content" source="../media/3-sample-graph.png" alt-text="Azure Digital Twins Explorer screenshot showing the sample scenario, including a list of models and a graph of twins connected by relationships." border="false" lightbox="../media/3-sample-graph":::
+:::image type="content" source="../media/3-sample-graph.png" alt-text="Azure Digital Twins Explorer screenshot showing the sample scenario, including a list of models and a graph of twins connected by relationships." border="false" lightbox="../media/3-sample-graph.png":::
 
 Each model, twin, and relationship in the sample graph is stored in JSON format in the import file for this module. You'll pass this file through the Import Jobs API to import all of these elements into your own Azure Digital Twins instance.
 
 Open the sample file in GitHub here: [distributionGridBulkImport.json](https://github.com/Azure-Samples/azure-digital-twins-getting-started/blob/main/models/energy-grid-example/distributionGridBulkImport.json). Notice that the code in the file is split into three sections: `Models`, `Twins`, and `Relationships`. Each line within a section represents a different model, twin, or relationship to be imported.
 
-:::image type="content" source="../media/3-import-file.png" alt-text="GitHub screenshot showing the body of the import file." border="false" lightbox="../media/3-import-file":::
+:::image type="content" source="../media/3-import-file.png" alt-text="GitHub screenshot showing the body of the import file." border="false" lightbox="../media/3-import-file.png":::
 
 When you're done reviewing the contents of the import file, download the sample file from GitHub to use later in this unit.
 
@@ -76,7 +76,7 @@ In this section, you'll send an Import Jobs API request to import the sample fil
 
 Start by reviewing the [Jobs API documentation](/rest/api/digital-twins/dataplane/jobs). The API contains operations for managing long-running jobs, including add, cancel, delete, get by ID, and list for import jobs. In this section, you'll use **ImportJobs Add** to create an import request, and **ImportJobs GetById** to check the job's status.
 
-:::image type="content" source="../media/3-jobs.png" alt-text="Reference doc screenshot showing the Jobs operations." border="false" lightbox="../media/3-jobs":::
+:::image type="content" source="../media/3-jobs.png" alt-text="Reference doc screenshot showing the Jobs operations." border="false" lightbox="../media/3-jobs.png":::
 
 From your Postman collections, expand the folder path **Data plane** > **jobs** > **imports** > **{id}**, and open **PUT Import Jobs Add**. You'll fill in this request template to create a new import job.
 
@@ -95,7 +95,7 @@ Send the request.
 
 The response from a successful request will look something like this:
 
-:::image type="content" source="../media/3-import-jobs-add.png" alt-text="Postman screenshot showing the results of the Import Jobs Add request." border="false" lightbox="../media/3-import-jobs-add":::
+:::image type="content" source="../media/3-import-jobs-add.png" alt-text="Postman screenshot showing the results of the Import Jobs Add request." border="false" lightbox="../media/3-import-jobs-add.png":::
 
 This result indicates that the job has been created. It has probably started running in the minutes since the response was sent, so check the current status of the job by opening the **GET Import Jobs Get By Id** request template from the collection (also found in the **Data plane** > **jobs** > **imports** > **{id}** folder).
 
@@ -105,7 +105,7 @@ Send the request.
 
 The response from a successful request will look something like this:
 
-:::image type="content" source="../media/3-import-jobs-get-by-id.png" alt-text="Postman screenshot showing the results of the Import Jobs Get By Id request." border="false" lightbox="../media/3-import-jobs-get-by-id":::
+:::image type="content" source="../media/3-import-jobs-get-by-id.png" alt-text="Postman screenshot showing the results of the Import Jobs Get By Id request." border="false" lightbox="../media/3-import-jobs-get-by-id.png":::
 
 The value of `succeeded` in the output indicates that the import job was successful.
 
@@ -130,7 +130,7 @@ Send the request.
 
 The response from a successful request will look something like this:
 
-:::image type="content" source="../media/3-digital-twin-models-list.png" alt-text="Postman screenshot showing the results of the Digital Twin Models List request." border="false" lightbox="../media/3-digital-twin-models-list":::
+:::image type="content" source="../media/3-digital-twin-models-list.png" alt-text="Postman screenshot showing the results of the Digital Twin Models List request." border="false" lightbox="../media/3-digital-twin-models-list.png":::
 
 The reply body will list all of the models that are present in your Azure Digital Twins instance. Review the results to confirm that the models from the import file (including consumers, substations, plants, and more) are represented.
 
@@ -151,7 +151,7 @@ Send the request.
 
 The response from a successful request will look something like this:
 
-:::image type="content" source="../media/3-digital-twins-get-by-id.png" alt-text="Postman screenshot showing the results of the Digital Twins Get By Id request." border="false" lightbox="../media/3-digital-twins-get-by-id":::
+:::image type="content" source="../media/3-digital-twins-get-by-id.png" alt-text="Postman screenshot showing the results of the Digital Twins Get By Id request." border="false" lightbox="../media/3-digital-twins-get-by-id.png":::
 
 The reply body will give details of the *pl_distribute* digital twin. This twin is a power line with two properties indicating `Capacity` and `GridType`.
 
@@ -169,7 +169,7 @@ Send the request.
 
 The response from a successful request will look something like this:
 
-:::image type="content" source="../media/3-digital-twins-list-relationships.png" alt-text="Postman screenshot showing the results of the Digital Twins List Relationships request." border="false" lightbox="../media/3-digital-twins-list-relationships":::
+:::image type="content" source="../media/3-digital-twins-list-relationships.png" alt-text="Postman screenshot showing the results of the Digital Twins List Relationships request." border="false" lightbox="../media/3-digital-twins-list-relationships.png":::
 
 The reply body will list all the relationships, both incoming and outgoing, of the *pl_distribute* digital twin. Review the results to see what kind of relationships this power line twin has in the graph.
 
