@@ -105,4 +105,3 @@ Now we’ll add record index *865*, another record where the model predicted the
 :::image type="content" source="../media/feature-importance-data-feature-contribution.png" alt-text="Screenshot of." lightbox="../media/feature-importance-data-feature-contribution.png":::
 
 Here, we can see that the key features positively contributing to that model's prediction are `prior_emergency`, and `insulin`. Once again, we see the top important features (in blue color) that drove the model’s prediction have changed. In this case, `prior_emergency` was the top positive contributor. That means it had a major impact on the model’s incorrect prediction in our selected cohort. In trying to debug why a model’s prediction is erroneous for a given data point, this chart provides machine learning professionals an explanation of which features positively influenced the poor outcome.  
-
