@@ -6,10 +6,10 @@ In this module, you'll learn how to build rich, data-driven cloud adoption plans
 
 In this module, you'll:
 
-- Create an actionable cloud adoption plan
-- Understand your digital estate
-- Assess the digital estate with Azure Migrate and refine your plan
-- Establish a skills readiness plan to prepare the team
+- Create an actionable cloud adoption plan.
+- Understand your digital estate.
+- Assess the digital estate with Azure Migrate and refine your plan.
+- Establish a skills-readiness plan to prepare the team.
 
 ## Prerequisites
 
