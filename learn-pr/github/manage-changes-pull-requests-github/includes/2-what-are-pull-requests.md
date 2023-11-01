@@ -45,7 +45,7 @@ Now let’s review how to create a pull request!
 
 3.	Above the list of files, in the yellow banner, select the **Compare & pull request** button to create a pull request for the associated branch.
 
-:::image type="content" source="../media/2-compare-and-pull -request.png" alt-text="Image of an yellow text box, highlighting the green compare and pull request button." border="false":::
+:::image type="content" source="../media/2-compare-and-pull-request.png" alt-text="Image of an yellow text box, highlighting the green compare and pull request button." border="false":::
 
 
 4.	In the **base branch** dropdown menu select the branch you'd like to merge your changes into.  Then select the **compare branch** dropdown menu to select the topic branch you made your changes in.
