@@ -37,7 +37,7 @@ Terminating the source machine is an important step, but you should evaluate whi
 
 Because this step might affect production systems, migration should be completed during off-peak hours to minimize disruption to the business.
 
-:::image type="content" source="../media/6-vm-machines.png" alt-text="Screenshot of Azure Migrate replicating machines in the Azure Portal." border="false":::
+:::image type="content" source="../media/6-vm-machines.png" alt-text="Screenshot of Azure Migrate replicating machines in the Azure portal." border="false":::
 
 Now, Azure Migrate runs through the production migration process. You can check the status as it validates the prerequisites, prepares for migration, creates the Azure VM, and starts the Azure VM.
 
