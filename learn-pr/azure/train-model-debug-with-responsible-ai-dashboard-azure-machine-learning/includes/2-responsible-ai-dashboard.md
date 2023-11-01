@@ -14,7 +14,7 @@ The Responsible AI dashboard brings together various new and pre-existing tools.
 
 Together, these tools will help you debug machine learning models, while informing your data-driven and model-driven business decisions. The following diagram shows how you can incorporate them into your AI lifecycle to improve your models and get solid data insights.
 
-:::image type="content" source="./media/dashboard.png" alt-text="Diagram of Responsible AI dashboard components for model debugging and responsible decision-making.":::
+:::image type="content" source="../media/dashboard.png" alt-text="Diagram of Responsible AI dashboard components for model debugging and responsible decision-making." lightbox="../media/dashboard.png" :::
 
 ### Model debugging
 
@@ -36,7 +36,7 @@ Assessing and debugging machine learning models is critical for model reliabilit
 
    "What social or technical solutions exist for these issues?"
 
-:::image type="content" source="./media/model-debugging.png" alt-text="Diagram of model debugging via Responsible AI dashboard." lightbox= "./media/model-debugging.png":::
+:::image type="content" source="../media/model-debugging.png" alt-text="Diagram of model debugging via Responsible AI dashboard." lightbox= "../media/model-debugging.png":::
 
 ### Responsible decision-making
 
@@ -51,7 +51,7 @@ Decision-making is one of the biggest promises of machine learning. The Responsi
   These insights are provided through the causal inference component of the dashboard.
 - Model-driven insights, to answer users' questions (such as "What can I do to get a different outcome from your AI next time?") so they can take action. These insights are provided to data scientists through the counterfactual what-if component.
 
-:::image type="content" source="./media/decision-making.png" alt-text="Diagram that shows responsible AI dashboard capabilities for responsible business decision-making.":::
+:::image type="content" source="../media/decision-making.png" alt-text="Diagram that shows responsible AI dashboard capabilities for responsible business decision-making." lightbox="../media/decision-making.png":::
 
 Exploratory data analysis, causal inference, and counterfactual analysis capabilities can help you make informed model-driven and data-driven decisions responsibly.
 

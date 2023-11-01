@@ -2,7 +2,7 @@ Traditional performance metrics for machine learning models focus on calculation
 
 Model fairness and model accuracy aren't the same thing and must be considered. Unless you take a deep dive in the model error distribution, it would be challenging to discover the different regions of your data for where the model is failing 42% of the time (see the red region in diagram below). The consequence of having errors in certain data groups can lead to fairness or reliability issues. To illustrate, the data group with the high number of errors might contain sensitive features such as age, gender, disabilities, or ethnicity. Further analysis could reveal that the model has a high error rate with individuals with disabilities compared to ones without disabilities.  So, it's essential to understand areas where the model is performing well or not, because the data regions where there are a high number of inaccuracies in your model might turn out to be an important data demographic you can't afford to ignore.
 
-:::image type="content" source="./media/error-distribution.png" alt-text="Diagram showing benchmark and ML model pointing to 89% accurate pointing to different regions fail for different reasons.":::
+:::image type="content" source="../media/error-distribution.png" alt-text="Diagram showing benchmark and ML model pointing to 89% accurate pointing to different regions fail for different reasons.":::
 
 This is where the error analysis component of Azure Machine Learning Responsible AI dashboard helps in identifying a model’s error distribution across its test dataset. Throughout this module we'll be using the diabetes hospital readmission classification model scenario to learn and explain the responsible AI dashboard. Later in the lab, you'll train and create your own dashboard using the same dataset.
 
@@ -10,7 +10,7 @@ This is where the error analysis component of Azure Machine Learning Responsible
 
 The Responsible AI dashboard illustrates how model failure is distributed across various cohorts with a tree visualization. The root node displays the total number of incorrect predictions from a model and the total test dataset size. The nodes are groupings of data (cohorts) that are formed by splits from feature conditions (for example, “Time_In_Hospital < 5” vs “Time_In_Hospital ≥ 5”). Hovering the mouse over each node on the tree reveals the following information for the selected feature condition:
 
-:::image type="content" source="./media/error-nodes.png" alt-text="Screenshot of.":::
+:::image type="content" source="../media/error-nodes.png" alt-text="Screenshot of." lightbox="../media/error-nodes.png":::
 
 - **Incorrect vs Correct predictions**: The number of incorrect vs correct predictions for the datapoints that fall in the node.
 - **Error Rate**: represents the number of error occurrence in the node.  The shade of red shows what percentage of this node’s datapoints are receiving erroneous predictions. The darker the red the higher the error rate.
@@ -20,11 +20,11 @@ The Responsible AI dashboard illustrates how model failure is distributed across
 
 The tree map displays how model failure is distributed across various data cohorts. For our diabetes hospital readmission model, one of the first things we observe from the root node is that out of the 994 total test records, the error analysis component found 168 errors while evaluating the model.
 
-:::image type="content" source="./media/tree-map.png" alt-text="Screenshot of.":::
+:::image type="content" source="../media/tree-map.png" alt-text="Screenshot of." lightbox="../media/tree-map.png":::
 
 The tree map provides visual indicators to make locating nodes or tree path with the error rate quicker. In the above diagram, you can see the tree path with the darkest red color has a leaf-node on the bottom right-hand side of the tree. To select the path leading up to the node, double-click on the leaf node. This highlights the path and displays the feature condition for each node in the path. Since this tree path contains nodes with the highest error rate, it's a good candidate to create a cohort with the data represented in the path in order to later perform analysis to diagnose the root cause behind the errors.
 
-:::image type="content" source="./media/1-select-error-tree.png" alt-text="Screenshot of.":::
+:::image type="content" source="../media/1-select-error-tree.png" alt-text="Screenshot of." lightbox="../media/1-select-error-tree.png":::
 
 According to this tree path with the highest error rate, diabetes patients that have prior hospitalization and taking several medications between 11 and 22 are a cohort of patients where the model has the highest number of incorrect predictions. To investigate what's causing the high error rate with this group of patients, we'll create a cohort for these groups of patients.
 
@@ -35,13 +35,13 @@ To save the selected path for further investigation:
 1. Select the “Save as a new cohort” button on the upper right-hand side of the error analysis component.
 1. We’ll name the cohort: “Err: Prior_Inpatient >0; Num_meds >11.50 & <= 21.50”.
 
-:::image type="content" source="./media/1-save-error-tree.png" alt-text="Screenshot of.":::
+:::image type="content" source="../media/1-save-error-tree.png" alt-text="Screenshot of." lightbox="../media/1-save-error-tree.png"  :::
 
 ### Error tree map
 
 The first pane of the error analysis component is a tree map, which illustrates how model failure is distributed across various cohorts with a tree visualization. Select any node to see the prediction path on your features where an error was found.
 
-:::image type="content" source="./media/error-analysis-tree-map-selected.png" alt-text="Screenshot of the dashboard showing an error analysis on the tree map pane." lightbox="./media/how-to-responsible-ai-dashboard/error-analysis-tree-map-selected.png":::
+:::image type="content" source="../media/error-analysis-tree-map-selected.png" alt-text="Screenshot of the dashboard showing an error analysis on the tree map pane." lightbox="../media/how-to-responsible-ai-dashboard/error-analysis-tree-map-selected.png":::
 
 1. **Heat map view**: Switches to heat map visualization of error distribution.
 2. **Feature list:** Allows you to modify the features used in the heat map using a side panel.
@@ -106,7 +106,7 @@ Under the Heat map tab, we’ll select “Age” in the *Rows: Feature 1* drop-d
 - The cell with “Over 60 years” has 536 correct and 126 incorrect model predictions. The error coverage is 73.81%, and error rate 18.79%. This means that out of 168 total incorrect predictions that the model made from the test data, 126 of the incorrect predictions came from “Age==Over 60 years”.
 - Even though the error rate of 18.79% is low, an error coverage of 73.81% is a huge number. That means a majority of the model’s inaccuracies come from data where patients are older than 60 years old. This is problematic.
 
-:::image type="content" source="./media/heat-map-elder-metrics.png" alt-text="Screenshot of." lightbox="./media/heat-map-elder-metrics.png":::
+:::image type="content" source="../media/heat-map-elder-metrics.png" alt-text="Screenshot of." lightbox="../media/heat-map-elder-metrics.png":::
 
 - The cell with “30–60 years” has 273 correct and 25 incorrect model predictions. The error coverage is 25.60%, and error rate 13.61%. Even though, the patients with “Age==30–60 years” have a very low error rate, the error coverage of 25.60% is a quarter of all the model’s error, which is an issue.
 - The cell with “30 years or younger” has 17 correct and 1 incorrect model predictions. The error coverage is 0.60%, and error rate 5.56%. Having 1 incorrect model prediction is insignificant. Plus, both the error coverage and error rate are low. It’s safe to say the model is performing very well in this cohort, however we must also consider that its total data size of 18 is a very small sample size.
