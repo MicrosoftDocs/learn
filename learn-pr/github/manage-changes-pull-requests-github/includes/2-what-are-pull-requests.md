@@ -9,7 +9,7 @@ We’ll begin by:
 
 First, let’s define what branches are, why they’re important to developers, and how they’re related to pull requests. 
 
-Branches are isolated workspaces where you can develop your work without affecting others' (remove apostrophe) in the repository. They allow you to develop features, fix bugs, or and safely experiment with new ideas in a contained area of your repository.
+Branches are isolated workspaces where you can develop your work without affecting others in the repository. They allow you to develop features, fix bugs, or and safely experiment with new ideas in a contained area of your repository.
 
 Developers working on independent branches is a common concept in modern software development. By having their own branch, a developer can make any changes, called **commits**, without worrying about how their commits will impact other developers working on their own branches.
 
