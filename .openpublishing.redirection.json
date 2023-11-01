@@ -28710,6 +28710,11 @@
       "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/4-ai-for-subject-matter-experts.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/3-executive-overview.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
