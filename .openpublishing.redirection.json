@@ -28695,6 +28695,11 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/4-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-with-text-analytics-service/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
