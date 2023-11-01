@@ -10,7 +10,7 @@ The Model Overview component within the Responsible AI dashboard helps analyze m
 
 On the **Dataset cohorts** pane, you can investigate your model by comparing the model performance of various user-specified dataset cohorts (accessible via the **Cohort settings** icon at the top right of the dashboard).
 
-:::image type="content" source="./media/model-overview-dataset-cohorts.png" alt-text="Screenshot of the 'Model overview' pane, showing the 'Dataset cohorts' tab." lightbox= "./media/model-overview-dataset-cohorts.png":::
+:::image type="content" source="../media/model-overview-dataset-cohorts.png" alt-text="Screenshot of the 'Model overview' pane, showing the 'Dataset cohorts' tab." lightbox= "../media/model-overview-dataset-cohorts.png":::
 
 1. **Help me choose metrics**: Select this icon to open a panel with more information about what model performance metrics are available to be shown in the table. Easily adjust which metrics to view by using the multi-select dropdown list to select and deselect performance metrics. 
 2. **Show heat map**: Toggle on and off to show or hide heat map visualization in the table. The gradient of the heat map corresponds to the range normalized between the lowest value and the highest value in each column.  
@@ -30,7 +30,7 @@ Select **Help me choose metrics** to open a panel with a list of model performan
 
 For our investigation, we’ll be evaluating the cohort with the highest model error rate and the least error rate. To start with, we're going to analyze and compare cohort performance for two separate cohorts. Since the dashboard knows we're working with a classification model, it already preselected the parameters: Accuracy score, False Positive rate, False Negative rate and Selection rate.  Next, we’ll select the “Dataset Cohorts” pane. This displays the different cohorts created in a table with the model metrics.
 
-:::image type="content" source="./media/4-dataset-cohort-metrics.png" alt-text="Screenshot of ." lightbox= "./media/4-dataset-cohort-metrics.png":::
+:::image type="content" source="../media/4-dataset-cohort-metrics.png" alt-text="Screenshot of ." lightbox= "../media/4-dataset-cohort-metrics.png":::
 
 As we compare the cohort with the most errors *Err: Prior_Inpatient > 0; Num_Meds > 11 and ≤ 21.50* verse the least errors *Prior_inpatient = 0; num_diagnose ≤ 6.50; lab_procedures < 56.50*, we can see that the accuracy score for the erroneous cohort is 0.657, which isn't optimal. The rate of False Positive is very low; meaning there's a low number of cases where the model is inaccurately predicting patients that are going to be readmitted back to the hospital in 30 days. Contrarily, the False Negative rate of 0.754 is high. This indicates that there's a high number of cases where the model is falsely predicting that many of the patients won't be readmitted, however the actual outcome is they'll be readmitted in 30 days back to the hospital. The cohort with the least errors has an accuracy score of 0.94, which is far better than the overall accuracy score of the model with all the data. However, this cohort also has a lower false positive rate.
 
@@ -38,12 +38,12 @@ As we compare the cohort with the most errors *Err: Prior_Inpatient > 0; Num_Med
 
 On the **Feature cohorts** pane, you can investigate your model by comparing model performance across user-specified sensitive and nonsensitive features (for example, performance across various gender, race, and income level cohorts).
 
-:::image type="content" source="./media/model-overview-feature-cohorts.png" alt-text="Screenshot of the dashboard 'Model overview' pane, showing the 'Feature cohorts' tab." lightbox= "./media/model-overview-feature-cohorts.png":::
+:::image type="content" source="../media/model-overview-feature-cohorts.png" alt-text="Screenshot of the dashboard 'Model overview' pane, showing the 'Feature cohorts' tab." lightbox= "../media/model-overview-feature-cohorts.png":::
 
 1. **Help me choose metrics**: Select this icon to open a panel with more information about what metrics are available to be shown in the table. Easily adjust which metrics to view by using the multi-select dropdown to select and deselect performance metrics.
 2. **Help me choose features**: Select this icon to open a panel with more information about what features are available to be shown in the table, with descriptors of each feature and their binning capability (see below). Easily adjust which features to view by using the multi-select dropdown to select and deselect them.
 
-    :::image type="content" source="./media/model-overview-choose-features.png" alt-text="Screenshot of the dashboard 'Model overview' pane, showing how to choose features." lightbox= "./media/model-overview-choose-features.png":::
+    :::image type="content" source="../media/model-overview-choose-features.png" alt-text="Screenshot of the dashboard 'Model overview' pane, showing how to choose features." lightbox= "../media/model-overview-choose-features.png":::
 3. **Show heat map**: Toggle on and off to see a heat map visualization. The gradient of the heat map corresponds to the range that's normalized between the lowest value and the highest value in each column.
 4. **Table of metrics for each feature cohort**: A table with columns for feature cohorts (subcohort of your selected feature), sample size of each cohort, and the selected model performance metrics for each feature cohort.
 5. **Fairness metrics/disparity metrics**: A table that corresponds to the metrics table and shows the maximum difference or maximum ratio in performance scores between any two feature cohorts.
@@ -52,7 +52,7 @@ On the **Feature cohorts** pane, you can investigate your model by comparing mod
 
     Selecting **Choose cohorts** opens a panel with an option to either show a comparison of selected dataset cohorts or feature cohorts, depending on what you select in the multi-select dropdown list below it. Select **Confirm** to save the changes to the bar chart view.  
 
-    :::image type="content" source="./media/model-overview-choose-cohorts.png" alt-text="Screenshot of the dashboard 'Model overview' pane, showing how to choose cohorts." lightbox= "./media/model-overview-choose-cohorts.png":::
+    :::image type="content" source="../media/model-overview-choose-cohorts.png" alt-text="Screenshot of the dashboard 'Model overview' pane, showing how to choose cohorts." lightbox= "../media/model-overview-choose-cohorts.png":::
 8. **Choose metric (x-axis)**: Select this button to choose which metric to view in the bar chart.
 
 ### Feature cohort analysis
@@ -63,7 +63,7 @@ To look closer at the data, we’ll switch to the **Feature cohorts** tab. Since
 
 Under the *Feature(s)* drop-down menu, select the `Prior_Inpatient` checkbox. This will display three different feature cohorts and the model performance metrics.
 
-:::image type="content" source="./media/5-feature-cohort-metrics.png" alt-text="Screenshot of. " lightbox= "./media/5-feature-cohort-metrics.png":::
+:::image type="content" source="../media/5-feature-cohort-metrics.png" alt-text="Screenshot of. " lightbox= "../media/5-feature-cohort-metrics.png":::
 
 Here we see a breakdown of the different `prior_inpatient` cohorts generated:
 

@@ -59,7 +59,7 @@ The first pane of the error analysis component is a tree map, which illustrates 
 
 The feature list pane displays the list of feature names in the test dataset that are error contributors (included in the creation of your error tree map). The list is sorted based on the contribution of the features to the errors. The higher a feature is on this list, the higher its contribution importance to your model errors. This sorted list is vital to know the problematic features that are causing issues with the model’s performance.  It's also an opportunity to check if sensitive features such as age, race, gender, political view, religion, etc. are among top error contributors.   This is an indicator to examine if your model encounters potential fairness issues.
 
-:::image type="content" source="./media/1-view-feature-list.png" alt-text="Screenshot of.":::
+:::image type="content" source="../media/1-view-feature-list.png" alt-text="Screenshot of." lightbox="../media/1-view-feature-list.png":::
 
 In our Diabetes Hospital Readmission model, the “Feature List” indicates the following features to be among the top contributors of the model’s errors:
 
@@ -83,7 +83,7 @@ Try adjusting the control levels for the minimum number of samples in one leaf f
 
 Select the **Feature list** button to open a side panel, from which you can retrain the error tree on specific features.
 
-:::image type="content" source="./media/error-analysis-feature-selection.png" alt-text="Screenshot of the dashboard side panel, which lists selectable features of an error analysis tree map." lightbox= "./media/error-analysis-feature-selection.png":::
+:::image type="content" source="../media/error-analysis-feature-selection.png" alt-text="Screenshot of the dashboard side panel, which lists selectable features of an error analysis tree map." lightbox= "../media/error-analysis-feature-selection.png":::
 
 1. **Search features**: Allows you to find specific features in the dataset.
 2. **Features**: Lists the name of the feature in the dataset.
@@ -99,14 +99,14 @@ The Heat map is another visualization functionality that enables users to invest
 
 From the Feature List, we saw that “Age” was the top contributor of the model inaccuracies.  So, we’re going to use the Heat map to see which cohorts within the “Age” feature are driving high model errors.
 
-:::image type="content" source="./media/heatmap-age.png" alt-text="Screenshot of.":::
+:::image type="content" source="../media/heatmap-age.png" alt-text="Screenshot of." lightbox ="../media/heatmap-age.png":::
 
 Under the Heat map tab, we’ll select “Age” in the *Rows: Feature 1* drop-down menu to see its influence in the model’s errors. The dashboard has a built-in intelligence to divide the feature into different cells with the possible data cohorts with the Age feature (for example, “Over 60 years”, “30–60 years” and “30 years or younger”). By hovering over each cell, we can see the number of correct vs incorrect predictions, error coverage and error rate for the data group represented in the cell. Here we see:
 
 - The cell with “Over 60 years” has 536 correct and 126 incorrect model predictions. The error coverage is 73.81%, and error rate 18.79%. This means that out of 168 total incorrect predictions that the model made from the test data, 126 of the incorrect predictions came from “Age==Over 60 years”.
 - Even though the error rate of 18.79% is low, an error coverage of 73.81% is a huge number. That means a majority of the model’s inaccuracies come from data where patients are older than 60 years old. This is problematic.
 
-:::image type="content" source="./media/heat-map-elder-metrics.png" alt-text="Screenshot of.":::
+:::image type="content" source="./media/heat-map-elder-metrics.png" alt-text="Screenshot of." lightbox="./media/heat-map-elder-metrics.png":::
 
 - The cell with “30–60 years” has 273 correct and 25 incorrect model predictions. The error coverage is 25.60%, and error rate 13.61%. Even though, the patients with “Age==30–60 years” have a very low error rate, the error coverage of 25.60% is a quarter of all the model’s error, which is an issue.
 - The cell with “30 years or younger” has 17 correct and 1 incorrect model predictions. The error coverage is 0.60%, and error rate 5.56%. Having 1 incorrect model prediction is insignificant. Plus, both the error coverage and error rate are low. It’s safe to say the model is performing very well in this cohort, however we must also consider that its total data size of 18 is a very small sample size.
@@ -115,7 +115,7 @@ Under the Heat map tab, we’ll select “Age” in the *Rows: Feature 1* drop-d
 
 Select the **Heat map** tab to switch to a different view of the error in the dataset. You can select one or many heat map cells and create new cohorts. You can choose up to two features to create a heat map.
 
-:::image type="content" source="./media/error-analysis-heat-map.png" alt-text="Screenshot of the dashboard, showing an error analysis heat map and list of features to compare." lightbox= "./media/error-analysis-heat-map.png":::
+:::image type="content" source="../media/error-analysis-heat-map.png" alt-text="Screenshot of the dashboard, showing an error analysis heat map and list of features to compare." lightbox= "../media/error-analysis-heat-map.png":::
 
 1. **Cells**: Displays the number of cells selected.
 2. **Error coverage**: Displays the percentage of all errors concentrated in the selected cell(s).
