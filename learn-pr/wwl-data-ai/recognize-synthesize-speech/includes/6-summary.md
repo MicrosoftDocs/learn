@@ -1,7 +1,6 @@
+Speech recognition is concerned with taking the spoken word and converting it into text, while speech synthesis is the process of converting text to audible speech. Both of these tasks are supported by Azure AI Speech.
 
-Azure AI Document Intelligence provides access to prebuilt and custom models for extracting text from various documents, such as receipts, invoices, IDs, and more. 
-
-You can continue to read about Azure AI Document Intelligence in the [service documentation](/azure/ai-services/document-intelligence/overview?azure-portal=true).
+You can find out more about Azure AI Speech in the [service documentation](/azure/ai-services/speech-service?azure-portal=true).
 
 ## Clean-up
 

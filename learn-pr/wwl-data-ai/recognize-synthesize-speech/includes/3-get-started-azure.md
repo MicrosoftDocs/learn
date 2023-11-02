@@ -24,7 +24,7 @@ In order for real-time transcription to work, your application will need to be l
 
 ### Batch transcription
 
-Not all speech to text scenarios are real time.  You may have audio recordings stored on a file share, a remote server, or even on Azure storage. You can point to audio files with a shared access signature (SAS) URI and asynchronously receive transcription results.
+Not all speech to text scenarios are real time.  You might have audio recordings stored on a file share, a remote server, or even on Azure storage. You can point to audio files with a shared access signature (SAS) URI and asynchronously receive transcription results.
 
 Batch transcription should be run in an asynchronous manner because the batch jobs are scheduled on a *best-effort basis*. Normally a job will start executing within minutes of the request but there is no estimate for when a job changes into the running state.
 
