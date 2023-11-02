@@ -36,11 +36,11 @@ subjects:
 units:
 - learn.github.introduction-to-github.1-introduction
 - learn.github.introduction-to-github.2-what-is-github
-- learn.github.introduction-to-github.3-components-of-the-github-flow
-- learn.github.introduction-to-github.4-collaborative-platform
-- learn.github.introduction-to-github.5-platform-management
-- learn.github.introduction-to-github.6-guided-tour-of-github
-- learn.github.introduction-to-github.7-knowledge-check
-- learn.github.introduction-to-github.8-summary
+- learn.github.introduction-to-github.components-of-the-github-flow
+- learn.github.introduction-to-github.collaborative-platform
+- learn.github.introduction-to-github.platform-management
+- learn.github.introduction-to-github.3-introduction-to-github
+- learn.github.introduction-to-github.4-knowledge-check
+- learn.github.introduction-to-github.5-summary
 badge:
   uid: learn.github.introduction-to-github.badge
