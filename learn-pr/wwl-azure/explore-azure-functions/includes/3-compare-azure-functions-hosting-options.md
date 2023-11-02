@@ -1,4 +1,4 @@
-When you create a function app in Azure, you must choose a hosting plan for your app. There are three basic hosting plans available for Azure Functions: [Consumption plan](/azure/azure-functions/consumption-plan), [Premium plan](/azure/azure-functions/functions-premium-plan), and [Dedicated (App service) Dedicated plan](/azure/azure-functions/dedicated-plan). All hosting plans are generally available (GA) on both Linux and Windows virtual machines.
+When you create a function app in Azure, you must choose a hosting plan for your app. There are three basic hosting plans available for Azure Functions: [Consumption plan](/azure/azure-functions/consumption-plan), [Premium plan](/azure/azure-functions/functions-premium-plan), and [App service plan (Dedicated)](/azure/azure-functions/dedicated-plan). All hosting plans are generally available (GA) on both Linux and Windows virtual machines.
 
 The hosting plan you choose dictates the following behaviors:
 
