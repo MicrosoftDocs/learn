@@ -9,7 +9,7 @@ Let's start by viewing Azure AI Studio.
 
 1. In a web browser, open [https://ai.azure.com](https://ai.azure.com) and sign in using your Azure credentials. The home page of Azure AI Studio looks similar to the following image:
 
-    ![Screenshot of Azure AI Studio](../media/azure-ai-studio-home.png)
+    ![Screenshot of Azure AI Studio.](../media/azure-ai-studio-home.png)
 
 1. Review the information on the home page and view each of the tabs, noting the options to explore models and capabilities, create projects, and manage resources.
 
@@ -68,7 +68,7 @@ You can use a project to create complex AI solutions based on generative AI mode
     - **Model**: gpt-35-turbo
     - **Advanced options**: *Use the default settings*
 
-    *The **gpt-35-turbo** model is provided by the Azure OpenAI service, which is is restricted to approved subscriptions. If your subscription does not have access to the Azure OpenAI service, the **gpt-35-turbo** model will not be listed.*
+    *The **gpt-35-turbo** model is provided by the Azure OpenAI service, which is restricted to approved subscriptions. If your subscription doesn't have access to the Azure OpenAI service, the **gpt-35-turbo** model won't be listed.*
 
 1. After the model has been deployed, in the pane on the left, in the **Tools** section, select the **Playground** page.
 1. In the **Playground** page, ensure that your model deployment is selected in the **Configuration** section. Then, in the **Chat session** section, enter a query such as *What is AI?* and view the response:
@@ -89,13 +89,13 @@ The model you have deployed can be used to support a chat application hosted in 
     - **Pricing plan**: Free (F1) *(if this option isn't available, select Basic (B1))*
     - **Enable chat history in the web app**: <u>un</u>selected
     - **I acknowledge that web apps will incur usage to my account**: Selected
-1. Wait for the app to be deployed, which may take a few minutes. When it's ready, the **Launch** button will be enabled on the toolbar (but don't launch the app yet!).
+1. Wait for the app to be deployed, which might take a few minutes. When it's ready, the **Launch** button will be enabled on the toolbar (but don't launch the app yet!).
 
     *Don't navigate away from the **Playground** page - you'll return to it later!*
 
 ### Configure authentication
 
-1. Return to the browser tab containing the Azure portal (or re-open the [Azure portal](https://portal.azure.com?azure-portal=true) in a new browser tab) and view the contents of the resource group where you deployed the Azure AI resource and web app (you may need to refresh the view the see the web app).
+1. Return to the browser tab containing the Azure portal (or re-open the [Azure portal](https://portal.azure.com?azure-portal=true) in a new browser tab) and view the contents of the resource group where you deployed the Azure AI resource and web app (you might need to refresh the view the see the web app).
 1. Select the **App service** resource for your web app to view its details, and then select its **Authentication** page under **Settings** in the pane on the left.
 1. Add a provider with the following settings:
     - **Identity provider**: Microsoft

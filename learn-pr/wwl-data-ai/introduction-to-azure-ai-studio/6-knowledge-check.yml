@@ -32,7 +32,7 @@ quiz:
       explanation: "Correct. To enable a colleague to collaborate with you, add them as a member of your Azure AI resource."
     - content: "Deploy a model as a web app and configure authentication for the web app service"
       isCorrect: false
-      explanation: "Incorrect. Deploying a web app and configurng authentication would not enable collaboration on a project."
+      explanation: "Incorrect. Deploying a web app and configuring authentication would not enable collaboration on a project."
     - content: "Tell the colleague to create their own Azure AI resource in the same Azure subscription as yours"
       isCorrect: false
       explanation: "Incorrect. Creating a separate Azure AI resource in the same subscription does not enable collaboration."
@@ -43,7 +43,7 @@ quiz:
       explanation: "Incorrect. While you *could* test a model by deploying a web app, it's not the easiest way to do it."
     - content: "Export the model and test it locally using Visual Studio Code."
       isCorrect: false
-      explanation: "Incorrect. You don;t need to export a model from Azure AI Studio to test it."
+      explanation: "Incorrect. You don't need to export a model from Azure AI Studio to test it."
     - content: "On the **Playground** page, select the deployment and use the chat interface"
       isCorrect: true
       explanation: "Correct. You can test an Azure OpenAI GPT model in the **Playground** page."

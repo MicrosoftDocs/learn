@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-azure-ai-studio.introduction
-title: |
-  Introduction
+title: Introduction
 metadata:
-  title: |
-    Introduction
+  title: Introduction
   description: "Explore scenarios for Azure AI Studio (preview)."
   ms.date: 10/16/2023
   author: wwlpublish
