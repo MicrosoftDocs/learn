@@ -1,6 +1,3 @@
-
-
-
 [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) is an open-source platform by Red Hat that automates cloud provisioning, configuration management, and application deployments. Using Ansible, you can deploy VMs, containers, and your entire cloud infrastructure. In addition to provisioning and configuring applications and their environments, Ansible enables you to automate deployment and configuration of resources in your environment such as virtual networks, storage, subnets, and resources groups. Ansible is also combined with other deployment tools such as Terraform. Terraform calls Ansible in the [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-hana/blob/beta/documentation/SAP_Automation_on_Azure/table_of_contents.md) where Ansible is used after infrastructure deployment to install the SAP software.
 
 ## Ansible components
@@ -19,7 +16,7 @@ Ansible models your IT infrastructure by describing how all your systems interre
 
     - A playbook is typically made up of many modules. For example, you could have one playbook containing three modules: a module for creating an Azure Resource group, a module for creating a virtual network, and a module for adding a subnet.
 
-    - You can preview Ansible Azure modules on the Ansible Azure preview modules webpage for many examples including specifically for SAP.
+    - You can preview Ansible Azure modules on the [Ansible Azure preview modules webpage](https://docs.ansible.com/ansible/latest/collections/azure/azcollection/index.html) for many examples including specifically for SAP.
 
 - **Inventory**. An inventory is a list of managed nodes. Ansible represents what machines it's managing by using a .INI file that puts all your managed machines in groups of your own choosing. When adding new machines, you don't need to use additional SSL-signing servers, thus avoiding Network Time Protocol (NTP) and Domain Name System (DNS) issues. You can create the inventory manually, or for Azure, Ansible supports dynamic inventories. This means that the host inventory is dynamically generated at runtime. Ansible supports host inventories for other managed hosts as well.
 
