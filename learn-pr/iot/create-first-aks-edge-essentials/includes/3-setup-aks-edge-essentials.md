@@ -141,7 +141,7 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
     Hit `Ctrl+S` to save the file and `Ctrl+Q` to exit the editor.
 
 
-1. Run the Azure CLI [az vm run-command create](/en-us/cli/azure/vm/run-command#az-vm-run-command-create) command to download and install AKS Edge Essentials K3s distribution:
+1. Run the Azure CLI [az vm run-command create](/en-us/cli/azure/vm/run-command#az-vm-run-command-create) command to deliver the Powershell script to the VM and execute it:
 
     ```azurecli
     az vm run-command create --no-wait --name "installAKSEE" --vm-name myVM --resource-group <rgn>[sandbox resource group name]</rgn> --script @install-aks-ee.ps1
@@ -150,7 +150,7 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
     > [!NOTE]
     > The installation process takes a few minutes to complete.
 
-1. Check the output of the PowerShell script you ran in the VM:
+1. Run the Azure CLI [az vm run-command show](/en-us/cli/azure/vm/run-command#az-vm-run-command-show) command to retrieve the output of the PowerShell script you executed in the VM:
 
     ```azurecli
     az vm run-command show --name "installAKSEE" --vm-name "myVM" --resource-group <rgn>[sandbox resource group name]</rgn> --instance-view | jq .instanceView.output | sed 's/\\n/\n/g'
