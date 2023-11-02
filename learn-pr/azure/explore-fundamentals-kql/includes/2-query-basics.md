@@ -1,7 +1,7 @@
 
 Organizations often collect a wide range of data about IT resources and users. Querying data is a powerful tool for working with and acting on data you collect.
 
-Here, you learn about what a query is and what you can do using KQL. 
+Here, you learn about what a query is and what you can do using KQL.
 
 ## What is a query?
 
@@ -27,7 +27,7 @@ There are many query languages, each with its own syntax, capabilities, and stre
 
 ## Why use KQL? 
 
-KQL was developed as part of Azure Data Explorer, a big data analytics platform for near-real-time analysis of large volumes of data streamed in from multiple sources. These capabilities make the platform and KQL the perfect foundations for services that require near-real-time monitoring and analytics to ensure service and resource reliability, performance, and security.
+KQL was developed as part of Azure Data Explorer, a big data analytics platform for near-real-time analysis of large volumes of data streamed in from multiple sources. These capabilities make Azure Data Explorer and KQL the perfect foundation for services that require near-real-time monitoring and analytics. A foundation that helps ensure service and resource reliability, performance, and security.
 
 In a later unit in this module, we take a quick look at Azure services that apply KQL's ability to quickly analyze large volumes of varied data.
 
