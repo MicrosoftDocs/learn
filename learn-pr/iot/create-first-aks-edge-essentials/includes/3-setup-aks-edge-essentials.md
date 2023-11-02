@@ -35,7 +35,7 @@ Let's create the Azure virtual machine (VM) with Windows 11 Enterprise.
         "fqdns": "",
         "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-rg-0000/providers/Microsoft.Compute/virtualMachines/myVM",
         "location": "westus",
-        "macAddress": "00-0D-3A-37-C7-E2",
+        "macAddress": "00-00-00-00-00-00",
         "powerState": "VM running",
         "privateIpAddress": "10.0.0.4",
         "publicIpAddress": "104.40.70.15",
