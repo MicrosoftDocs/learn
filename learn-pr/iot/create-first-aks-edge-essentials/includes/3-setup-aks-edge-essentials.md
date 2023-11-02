@@ -46,7 +46,7 @@ Let's create the Azure virtual machine (VM) with Windows 11 Enterprise.
 
 Now that the VM is created, let's prepare the machine for AKS Edge Essentials and run some PowerShell scripts by using [Run Command](/azure/virtual-machines/run-command-overview) and Azure CLI. Alternatively you could connect from your local machine via Remote Desktop Connection (RDP) and run the PowerShell commands there.
 
-1. Execute the following command in the Azure Cloud Shell to create a `aks-ee` folder and navigate to it:
+1. Execute the following command in the Azure Cloud Shell to create a `aksee` folder and navigate to it:
 
     ```azurecli
     mkdir ~/aksee
@@ -62,7 +62,8 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
     Add the following code to the script:
 
     ```powershell
-    Set-ExecutionPolicy RemoteSigned -Scope Process -Force
+    # If you RDP to the machine, you may need to run the following command to allow the commands to run
+    # Set-ExecutionPolicy RemoteSigned -Scope Process -Force
 
     # Create a directory to store the k3s MSI installer and logs
     if (!(Test-Path -Path "C:\aksee")) {
@@ -79,7 +80,6 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
         } catch {
             Write-Host "Error: Downloading k3s.msi failed" -ForegroundColor Red
             Stop-Transcript | Out-Null
-            Pop-Location
             exit -1
         }
     }
@@ -93,7 +93,6 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
         } catch {
             Write-Host "Error: Downloading windows-node.zip failed" -ForegroundColor Red
             Stop-Transcript | Out-Null
-            Pop-Location
             exit -1
         }
     }
@@ -109,7 +108,6 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
         } catch {
             Write-Host "Error: Extracting windows-node.zip failed" -ForegroundColor Red
             Stop-Transcript | Out-Null
-            Pop-Location
             exit -1
         }
     }
@@ -125,23 +123,26 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
     } else {
         Write-Host "Installation failed with exit code $exitCode." -ForegroundColor Red
         Stop-Transcript | Out-Null
-        Pop-Location
         exit -1
     }
     
     Write-Host "Step 4 : AKS-Edge test modules"
     #Once installation is complete, make sure it was successful by running the following command
     Import-Module AksEdge
-    Get-Command -Module AKSEdge | Format-Table Name, Version
+    Get-Command -Module AKSEdge | Select-Object Name, Version
+    
+    Write-Host "Step 5 : AKS-Edge check device settings"
+    # Run the Install-AksEdgeHostFeatures command to validate the Hyper-V, SSH and Power settings on the machine.
+    Install-AksEdgeHostFeatures -Force
+    
     Stop-Transcript | Out-Null
-    Pop-Location
     exit 0
     ```
     
-    Hit `Ctrl+S` to save the file and `Ctrl+Q` to exit the editor.
+    Hit <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file and <kbd>Ctrl</kbd>+<kbd>Q</kbd> to exit the editor.
 
 
-1. Run the Azure CLI [az vm run-command create](/en-us/cli/azure/vm/run-command#az-vm-run-command-create) command to deliver the Powershell script to the VM and execute it:
+1. Run the Azure CLI [az vm run-command create](/cli/azure/vm/run-command#az-vm-run-command-create) command to deliver the Powershell script to the VM and execute it:
 
     ```azurecli
     az vm run-command create --no-wait --name "installAKSEE" --vm-name myVM --resource-group <rgn>[sandbox resource group name]</rgn> --script @install-aks-ee.ps1
@@ -150,13 +151,13 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
     > [!NOTE]
     > The installation process takes a few minutes to complete.
 
-1. Run the Azure CLI [az vm run-command show](/en-us/cli/azure/vm/run-command#az-vm-run-command-show) command to retrieve the output of the PowerShell script you executed in the VM:
+1. Run the Azure CLI [az vm run-command show](/cli/azure/vm/run-command#az-vm-run-command-show) command to retrieve the output of the PowerShell script you executed in the VM:
 
     ```azurecli
     az vm run-command show --name "installAKSEE" --vm-name "myVM" --resource-group <rgn>[sandbox resource group name]</rgn> --instance-view | jq .instanceView.output | sed 's/\\n/\n/g'
     ```
 
-    The following example output shows the download and installation of AKS Edge Essentials K3s distribution was successful, and the output of AKS Edge Essentials modules:
+    The following example output shows the download and installation of AKS Edge Essentials K3s distribution was successful, the output of AKS Edge Essentials modules, and that the Hyper-V, SSH and Power settings on the machine are configured correctly:
 
     ```output
     Step 1 : AKS-Edge download k3s.msi
@@ -201,7 +202,19 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
     Test-AksEdgeDeployment          1.4.109.0
     Test-AksEdgeNetworkParameters   1.4.109.0
     Test-AksEdgeNode                1.4.109.0
+
+    Step 5 : AKS-Edge check device settings
+     - Checking host for required features
+     - Checking the status of 'Microsoft-Hyper-V'
+     - Checking the status of 'Microsoft-Hyper-V-Management-PowerShell'
+     - Checking the status of 'Microsoft-Hyper-V-Hypervisor'
+     - Checking the status of 'OpenSSH.Client*'
+     - Checking power management settings of the Host
+     - Checking HNS version of the Host
+     - Checking OpenSSH version of the Host
+     - Checking Nested Virtualization of the Host
+    True
     ```
 
     > [!NOTE]
-    > If the output looks incomplete, run the command again.
+    > If the output shows **null** or looks incomplete, run the command again.
