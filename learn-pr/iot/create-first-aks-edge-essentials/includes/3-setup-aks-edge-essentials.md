@@ -159,7 +159,6 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
     The following example output shows the download and installation of AKS Edge Essentials K3s distribution was successful, and the output of AKS Edge Essentials modules:
 
     ```output
-    Transcript started, output file is C:\\aksee\\log.txt
     Step 1 : AKS-Edge download k3s.msi
     Downloading k3s.msi succeeded
     Step 2 : AKS-Edge download windows-node.zip
