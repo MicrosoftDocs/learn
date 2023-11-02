@@ -26,7 +26,7 @@ There are currently four Blob storage tiers:
 
 - **Hot**: This is the default tier and is used for data that's frequently accessed. It's more expensive to store data here, compared to the Cool and Archive tiers, but cheaper to access. Hot supports a 99.9% availability SLA. You can set the Hot tier at the account level and at the object level.
 - **Cool**: This tier is used for storing less frequently accessed data, such as archived files, backups, and raw or unprocessed data. Cool is designed for data that's likely to be stored for at least 30 days. Cool storage costs less than Hot storage per GB. How much it costs depends on the region. Cool supports a 99.9% availability SLA. You can set the Cool tier at the account level and at the object level.
-- **Cold**: This tier is optimized for storying infrequently accessed/modified data. Cold is designed for data that's likely to be stored for at least 90 days. It has lower storage costs, but higher access costs when compared to the Cool tier. You can set the Cold access tier at the blob level.
+- **Cold**: This tier is optimized for storing infrequently accessed/modified data. Cold is designed for data that's likely to be stored for at least 90 days. It has lower storage costs, but higher access costs when compared to the Cool tier. You can set the Cold access tier at the blob level.
 - **Archive**: This is the most cost-effective option for storing data, but is typically more expensive for data retrieval than the other tiers. Archive is designed for data that's likely to be stored for at least 180 days, and for systems or scenarios where you can tolerate retrieval latency. You can only set the Archive access tier at the blob level.
 
 Only the Cool and Hot access tiers can be set at the account level.
