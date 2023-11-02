@@ -20,7 +20,7 @@ As we learned earlier GitHub provides an AI powered developer platform to build,
 
 Generative AI is dramatically transforming software development as we speak. 
 
-The GitHub Enterprise platform is upleveling collaboration through AI-powered pull requests and issues, productivity through Copilot, and security by automating security checks faster.
+The GitHub Enterprise platform is enhancing collaboration through AI-powered pull requests and issues, productivity through Copilot, and security by automating security checks faster.
 
 ### Collaboration
 
@@ -72,13 +72,13 @@ Let’s tackle creating a repository from github.com.
 1.	In the upper-right corner of any page, use the  drop-down menu, and select New repository.
 
  
-:::image type="content" source="../media/2-new-repo-option.png" alt-text="The drop down menu of the plus sign in the top right corner of GitHub.com, with the first option being New repository." border="false":::
+:::image type="content" source="../media/2-new-repo-option.png" alt-text="The drop-down menu of the plus sign in the top right corner of GitHub.com, with the first option being New repository." border="false":::
 
 
 2.	Use the Owner dropdown menu to select the account you want to own the repository.
 
  
-:::image type="content" source="../media/2-selecting-repo-owner.png" alt-text="Drop down menu of who should be the owner of the new repository." border="false":::
+:::image type="content" source="../media/2-selecting-repo-owner.png" alt-text="Drop-down menu of who should be the owner of the new repository." border="false":::
 
 3.	Type a name for your repository, and an optional description.
  
@@ -118,7 +118,7 @@ But before we begin, it is worth knowing in order to add a file to a repository 
 8.	In the "Commit message" field, type a short, meaningful commit message that describes the change you made to the file. You can attribute the commit to more than one author in the commit message.
 9.	If you have more than one email address associated with your account on GitHub.com, click the email address drop-down menu and select the email address to use as the Git author email address. Only verified email addresses appear in this drop-down menu. If you enabled email address privacy, then [username]@users.noreply.github.com is the default commit author email address.
 
-:::image type="content" source="../media/2-commit-description-box.png" alt-text="An image of a commit change with a description box and the drop down menu of the email to select as the author of the commit." border="false":::
+:::image type="content" source="../media/2-commit-description-box.png" alt-text="An image of a commit change with a description box and the drop-down menu of the email to select as the author of the commit." border="false":::
 
 10.	Below the commit message fields, decide whether to add your commit to the current branch or to a new branch. If your current branch is the default branch, you should choose to create a new branch for your commit and then create a pull request.
 
@@ -126,11 +126,9 @@ But before we begin, it is worth knowing in order to add a file to a repository 
 
 11.	Click Commit changes or Propose changes.
 
-Congratulations you just created a new file in your repository! You may have also created a new branch and made a commit! 
+Congratulations you just created a new file in your repository! You have also created a new branch and made a commit! 
 
-You may be asking yourself what is a branch and commit and those are great questions that we’ll cover in the next unit. 
-
-But before we review branches and commits, let’s quickly review gists, wikis, and GitHub pages because they are similar to repositories. 
+But before we review branches and commits in the next unit, let’s quickly review gists, wikis, and GitHub pages because they are similar to repositories. 
 
 ### What are gists
 
