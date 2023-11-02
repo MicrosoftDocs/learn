@@ -2370,3 +2370,8 @@ achievements:
   title: Enable secure access to apps for external users with Azure AD B2C
   summary:  Use Azure AD B2C as the full-featured identity system for your application, and ensure that users are required to sign in securely by using multi-factor authentication.
   iconUrl: /training/achievements/enable-external-access-with-b2c.svg
+- uid: learn.wwl.enable-business-users-with-key-ai-uses-cases.badge
+  type: badge
+  title: Enable business users with key AI use cases
+  summary: From everyday AI experiences to no-code AI development tools, this module provides an overview of available AI tools and technologies that can empower every business user to achieve more.
+  iconUrl: /training/achievements/enable-business-users-with-key-ai-uses-cases.svg
