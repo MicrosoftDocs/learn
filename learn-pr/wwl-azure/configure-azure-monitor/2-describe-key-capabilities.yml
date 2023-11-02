@@ -4,12 +4,12 @@ title: Describe Azure Monitor key capabilities
 metadata:
   title: Describe Azure Monitor key capabilities
   description: "Describe Azure Monitor key capabilities"
-  ms.date: 11/01/2023
+  ms.date: 11/02/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.custom:
   - N/A
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/2-describe-key-capabilities.md)]
