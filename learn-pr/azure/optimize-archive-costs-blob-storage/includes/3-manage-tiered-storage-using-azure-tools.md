@@ -11,7 +11,7 @@ There are several tools available that you can use to manage Azure Storage:
 - Azure portal
 - Azure Storage Explorer
 - Azure CLI
-- Azure Powershell
+- Azure PowerShell
 
 ## Azure portal
 
@@ -42,9 +42,9 @@ You can use Azure Storage Explorer to upload and download Blobs from Azure Stora
 1. To change the access tier, select the blob you want to change, then select **Change tier** in the menu bar.
 1. Select the access tier you want to use in the drop-down list.
 
-## Azure Powershell
+## Azure PowerShell
 
-You can use Powershell to manage the access tiers on storage accounts and blobs. Some of the cmdlets you can use to manage storage include:
+You can use PowerShell to manage the access tiers on storage accounts and blobs. Some of the cmdlets you can use to manage storage include:
 
 | Cmdlet | Description |
 |-----|-----|
