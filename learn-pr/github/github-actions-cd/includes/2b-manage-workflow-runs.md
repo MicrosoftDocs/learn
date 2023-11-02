@@ -65,7 +65,7 @@ There are two environment protection rules that you can apply to workflows withi
 - **Required reviewers** allow you to set a specific person or team to approve workflow jobs that reference the job's environment.
 - **Wait timer** can be used to delay a job for a specific amount of time after the job has been triggered.
 
-Suppose you need to create a workflow to a production environment that a dev team needs to approve before the deployment occurs. Use the follow steps:
+Suppose you need to create a workflow to a production environment that a dev team needs to approve before the deployment occurs. Use the following steps:
 
 1. Create a production environment within the repository.
 2. Configure the required reviewers environment protection to require an approval from the specific dev team.

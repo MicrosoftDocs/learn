@@ -1,6 +1,6 @@
 Continuous Delivery (CD) is the practice of using automation to build, test, configure and deploy from the build environment all the way to the final production environment.
 
-Suppose that your development team is working on the company's product support website. You've already set up continuous integration (CI) by using GitHub Actions and workflows. Now you need to implement CD. Your CI workflow saves a container image. Your CD workflow must deploy this container to your staging and production environments. You've talked with IT about how to create and tear down these environments as needed. You all decided to use GitHub Actions and workflows to support infrastructure as code.
+Suppose that your development team is working on the company's product support website. You previously set up continuous integration (CI) by using GitHub Actions and workflows. Now you need to implement CD. Your CI workflow saves a container image. Your CD workflow must deploy this container to your staging and production environments. You talked with IT about how to create and tear down these environments as needed. You all decided to use GitHub Actions and workflows to support infrastructure as code.
 
 In this module, you learn how to use GitHub Actions and workflows to implement a CD solution that deploys to Microsoft Azure Web Apps. The deployment uses a GitHub Action from the GitHub Marketplace. You also automate the creation and teardown of the deployment environments by using a workflow.
 

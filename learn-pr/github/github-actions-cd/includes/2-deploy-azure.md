@@ -18,7 +18,7 @@ on:
 
 Often, you only want to run a workflow if some condition is true.
 
-GitHub workflows provide the *if* conditional for this scenario. The conditional uses an [expression](https://docs.github.com/actions/learn-github-actions/expressions) that is evaluated at runtime. For example, you want to run this workflow if a *stage* label is added to the pull request.
+GitHub workflows provide the `if` conditional for this scenario. The conditional uses an [expression](https://docs.github.com/actions/learn-github-actions/expressions) that is evaluated at runtime. For example, you want to run this workflow if a *stage* label is added to the pull request.
 
 ```yml
 if: contains(github.event.pull_request.labels.*.name, 'stage')
@@ -128,7 +128,7 @@ jobs:
     ...
 ```
 
-The jobs use the Azure CLI to create and destroy the Azure resources. For more information about Azure CLI, see [Overview of Azure CLI](/cli/azure/?azure-portal=true&view=azure-cli-latest).
+The jobs use the Azure CLI to create and destroy the Azure resources. For more information about Azure CLI, see [Overview of Azure CLI](/cli/azure/).
 
 Here's an example of the steps in the `set-up-azure-resources` job:
 
