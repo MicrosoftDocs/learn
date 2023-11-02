@@ -2,10 +2,10 @@ Tailwind Manufacturing has onboarded its machines to Azure Arc-enabled servers, 
 
 ## Enable VM insights
 
-You can apply VM extensions to your Arc-enabled server by using the Azure portal:
+You can apply VM extensions to your Arc-enabled server by using the Azure portal. To do so, you would use the following steps:
 
-1. From your browser, go to the [Azure portal](https://portal.azure.com/).
-1. In the portal, browse **Servers - Azure Arc** and select your hybrid machine from the list.
+1. From your browser, navigate to the Azure portal at <https://portal.azure.com/>.
+1. Navigate to  **Servers - Azure Arc** and select your hybrid machine from the list.
 1. From the left-pane under the **Monitoring** section, select **Insights**, and then select **Enable**.
 
 On the Azure Monitor Insights Onboarding page, you're prompted to create a workspace. You can either select an existing Log Analytics workspace or select the default. The default is a configured workspace with a unique name in the same region as the Azure Arc-enabled server.
