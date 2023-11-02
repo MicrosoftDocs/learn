@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-configure-azure-diagnostic-extension
+uid: learn.azure.monitor-azure-vm-using-diagnostic-data.collect-log-data
 title: Collect VM client events
 metadata:
   title: Collect VM client events
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-exercise-configure-azure-diagnostic-extension.md)]
+  [!include[](includes/6-collect-log-data.md)]
 quiz:
   title: Check your knowledge
   questions:

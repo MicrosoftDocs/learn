@@ -1,10 +1,8 @@
-VM Insights installs the Azure Monitor Agent and creates a data collection rule (DCR) to collect client performance counters, map process dependencies, and present the data in prebuilt workbooks. Performance counters let you identify performance anomalies and alert when thresholds are reached. To analyze the root causes of issues you detect, you need to analyze log data to see which system events caused or contributed to the issues.
+VM Insights performance counters help you identify performance anomalies and alert when thresholds are reached. But to analyze the root causes of issues you detect, you need to analyze log data to see which system events caused or contributed to the issues. In this unit, you set up a data collection rule (DCR) to collect Linux VM Syslog data, and view the log data in Azure Monitor Log Analytics by using a simple Kusto Query Language (KQL) query.
 
-You can create your own DCRs to collect VM log data or performance counters that aren't collected by the DCR that VM Insights creates. To collect performance counters with a DCR, you can select from a predefined set of objects and set sampling rates, or create custom objects. To collect events, you can select the event severity levels to log.
+VM Insights installs the Azure Monitor Agent and creates a DCR to collect predefined performance counters, map process dependencies, and present the data in prebuilt workbooks. You can create your own DCRs that use the Azure Monitor Agent to collect VM log data or performance counters that the VM Insights DCR doesn't collect.
 
-In this unit, you set up a DCR to collect Linux VM Syslog data. You view the log data in Azure Monitor Log Analytics by using a simple Kusto Query Language (KQL) query.
-
-You can associate a single DCR to any or all VMs in your subscription, but you might need multiple DCRs if you need to collect different types of data from different machines.
+To collect performance counters with a DCR, you can select from a predefined set of objects and set sampling rates, or create custom objects. To collect events, you can select the event severity levels to log. You can associate a single DCR to any or all VMs in your subscription, but you might need multiple DCRs to collect different types of data from different machines.
 
 ## Create a DCR to collect log data
 
@@ -14,7 +12,7 @@ In the Azure portal, search for and select *monitor* to go to the Azure Monitor 
 
 ### Create a Data Collection Endpoint
 
-You must have a data collection endpoint to send log data to. To create the endpoint:
+You must have a data collection endpoint to send log data to. To create an endpoint:
 
 1. In the Azure Monitor left navigation menu under **Settings**, select **Data Collection Endpoints**.
 1. On the **Data Collection Endpoints** page, select **Create**.
@@ -49,7 +47,7 @@ To create the DCR to collect the event logs:
 
 1. On the **Collect and deliver** tab, select **Add data source**.
 1. On the **Add data source** screen, under **Data source type**, select **Linux Syslog**.
-1. On the **Add data source** screen, select **Next: Destination** or the **Destination** tab, and make sure the **Account or namespace** matches the Log Analytics workspace that you want to use. You can use the default Log Analytics workspace that VM Insights sets up, or create or use another Log Analytics workspace.
+1. On the **Add data source** screen, select **Next: Destination** or the **Destination** tab, and make sure the **Account or namespace** matches the Log Analytics workspace that you want to use. You can use the default Log Analytics workspace that VM Insights set up, or create or use another Log Analytics workspace.
 
 1. On the **Add data source** screen, select **Add data source**.
 1. On the **Create Data Collection Rule** screen, select **Review + create**, and when validation passes, select **Create**.

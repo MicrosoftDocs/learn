@@ -2,9 +2,7 @@ In this unit, you explore Azure monitoring capabilities for VMs, and the types o
 
 Metrics are numerical values collected at predetermined intervals to describe some aspect of a system. Metrics can measure VM performance, resource utilization, error counts, user responses, or any other aspect of the system that you can quantify. Azure Monitor Metrics automatically monitors a predefined set of metrics for every Azure VM, and retains the data for 93 days with some exceptions.
 
-Logs are recorded system events that contain a timestamp and different types of structured or free-form data. Azure automatically records activity logs for all Azure resources. This data is available at the resource level.
-
-Azure Monitor doesn't collect logs by default, but you can configure Azure Monitor Logs to collect from any Azure resource. Azure Monitor Logs stores log data in a Log Analytics workspace for querying and analysis.
+Logs are recorded system events that contain a timestamp and different types of structured or free-form data. Azure automatically records activity logs for all Azure resources. This data is available at the resource level. Azure Monitor doesn't collect logs by default, but you can configure Azure Monitor Logs to collect from any Azure resource. Azure Monitor Logs stores log data in a Log Analytics workspace for querying and analysis.
 
 ## VM monitoring layers
 
@@ -76,7 +74,7 @@ DCRs define what data to collect and where to send that data. You can use a DCR 
 
 ### VM Insights
 
-VM Insights is a feature in Azure Monitor that helps get you started monitoring your VM clients. VM Insights is especially useful for exploring overall VM usage and performance when you don't yet know the metric of primary interest. VM Insights provides:
+VM Insights is an Azure Monitor feature that helps get you started monitoring your VM clients. VM Insights is especially useful for exploring overall VM usage and performance when you don't yet know the metric of primary interest. VM Insights provides:
 
 - Simplified Azure Monitor Agent onboarding to enable monitoring a VM's guest OS and workloads.
 - A preconfigured DCR that monitors and collects the most common performance counters for Windows and Linux.

@@ -28492,6 +28492,26 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/includes/5-configure-azure-diagnostic-extension.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/5-enable-vm-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/5-configure-azure-diagnostic-extension.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/5-enable-vm-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/includes/6-exercise-configure-azure-diagnostic-extension.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/6-collect-log-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/6-exercise-configure-azure-diagnostic-extension.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/6-collect-log-data",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/includes/7-use-diagnostic-data.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
       "redirect_document_id": false
