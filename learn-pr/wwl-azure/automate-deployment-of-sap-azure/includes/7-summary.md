@@ -38,4 +38,4 @@ Now that you have reviewed this module, you should be able to:
 
 - [Quickstart: Configure Ansible on an Azure VM](/azure/virtual-machines/linux/ansible-install-configure)
 
-- [Ansible Playbook Samples for Azure](https://github.com/Azure-Samples/ansible-playbooks)
+- [Ansible Playbook Samples for Azure](https://github.com/Azure-Samples/ansible-playbooks) 
