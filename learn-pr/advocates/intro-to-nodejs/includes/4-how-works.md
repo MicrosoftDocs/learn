@@ -11,7 +11,7 @@ Because you want your program to run as fast as possible, you want the JavaScrip
 
 ## Manage task queue with event loop 
 
-Node.js uses the JavaScript engine's event-driven architecture to process asynchronous requests. The following diagram illustrates how the v8 event loop works, at a high level:
+Node.js uses the JavaScript engine's event-driven architecture to process asynchronous requests. The following diagram illustrates how the V8 event loop works, at a high level:
 
 :::image type="content" source="../media/event-loop.png" alt-text="Diagram showing how Node J S uses an event-driven architecture where an event loop processes events and returns callbacks.":::
 
@@ -19,13 +19,13 @@ An asynchronous task, denoted by appropriate syntax (shown below), is added to t
 
 ## Synchronous operations versus asynchronous operations
 
-The Node.js APIs provide for both asynchronous and synchronous operations for some the same operations such as file operations. While generally you should always think **asynchronous-first**, there are times when you might use synchronous operations. 
+The Node.js APIs provide for both asynchronous and synchronous operations for some of the same operations such as file operations. While generally you should always think **asynchronous-first**, there are times when you might use synchronous operations. 
 
 An example is when a command line interface (CLI) reads a file and then immediately uses the data in the file. In this case, you can use the **synchronous** version of the file operation because there's no other system or person waiting to use the application. 
 
 However, if you're building a web server, you should always use the **asynchronous** version of the file operation in order to not block the single thread's execution ability to process other user requests.
 
-In your work as a developer at TailWind Trader's, you'll need to understand the difference between synchronous and asynchronous operations and when to use each.
+In your work as a developer at TailWind Traders, you'll need to understand the difference between synchronous and asynchronous operations and when to use each.
 
 ## Performance
 
@@ -33,8 +33,8 @@ Node.js takes advantage of the unique event-driven nature of JavaScript that mak
 
 The asynchronous techniques come in 3 styles, which you need to be able to recognize in your work: 
 
-* **Callbacks**: The original asynchronous technique that uses a callback function to receive the results of an asynchronous operation. You'll see this in order code bases and in older Node.js APIs.
-* **Promises**: A newer asynchronous technique that uses a promise object to receive the results of an asynchronous operation. You'll see this in newer code bases and in newer Node.js APIs. You may have to write promise-base code in your work to wrap older APIs that won't be updated. By using promises for this wrapping, you allow the code to be used in a larger range of Node.js versioned projects than in the newer async/await style of code.
+* **Callbacks**: The original asynchronous technique that uses a callback function to receive the results of an asynchronous operation. You'll see this in older code bases and in older Node.js APIs.
+* **Promises**: A newer asynchronous technique that uses a promise object to receive the results of an asynchronous operation. You'll see this in newer code bases and in newer Node.js APIs. You may have to write promise-based code in your work to wrap older APIs that won't be updated. By using promises for this wrapping, you allow the code to be used in a larger range of Node.js versioned projects than in the newer async/await style of code.
 * **Async/await**: The newest asynchronous technique that uses the `async` and `await` keywords to receive the results of an asynchronous operation. Async/await is used across many programming languages. Generally, new projects with newer dependencies will use this style of asynchronous code.
 
 ### Callbacks
@@ -57,7 +57,7 @@ Notice there's **no syntactic indication** that the function is asynchronous. Yo
 The following code separates the async function from the callback. This is easy to read and understand and allows you to reuse the callback for other async functions.
 
 ```javascript
-// callback asynchrounous example
+// callback asynchronous example
 
 // file system module from Node.js
 const fs = require('fs');
@@ -93,14 +93,14 @@ Hi, developers!
 Done!
 ```
 
-The asynchronous function `fs.readFile` is started and goes into the event loop, execution continues to the next code line, which is the last `console.log`. When the file is read, the callback function is called and the two console.log statements are executed.
+First, the asynchronous function `fs.readFile` is started and goes into the event loop. Then, the code execution continues to the next code line, which is the last `console.log`. After the file is read, the callback function is called and the two console.log statements are executed.
 
 ### Callback example with anonymous function
 
-The following example uses an anonymous callback function meaning it doesn't have a name and can't be reused by other anonymous functions.
+The following example uses an anonymous callback function, which means the function doesn't have a name and can't be reused by other anonymous functions.
 
 ```javascript
-// callback asynchrounous example
+// callback asynchronous example
 
 // file system module from Node.js
 const fs = require('fs');
@@ -133,7 +133,7 @@ Hi, developers!
 Done!
 ```
 
-The asynchronous function `fs.readFile` is started and goes into the event loop, execution continues to the next code line, which is the last `console.log`. When the file is read, the callback function is called and the two console.log statements are executed.
+When the code is executed, the The asynchronous function `fs.readFile` is started and goes into the event loop. Next the execution continues to the following code line, which is the last `console.log`. When the file is read, the callback function is called and the two console.log statements are executed.
 
 ### Nested callbacks
 
@@ -215,7 +215,7 @@ console.log(`I'm the last line of the file!`)
 
 ### Async/await 
 
-Async/await is a newer way to handle asynchronous programming. Async/await is syntatic sugar on top of promises and makes asynchronous code look more like synchronous code.
+Async/await is a newer way to handle asynchronous programming. Async/await is syntactic sugar on top of promises and makes asynchronous code look more like synchronous code.
 
 The same example using async/await looks like this:
 
@@ -291,4 +291,4 @@ try {
 }
 ```
 
-As a new developer at TailWind Trader's, you may be asked to modify any type of Node.js code. It's important to understand the difference between synchronous and asynchronous APIs, and the different syntaxes for asynchronous code.
+As a new developer at TailWind Traders, you may be asked to modify any type of Node.js code. It's important to understand the difference between synchronous and asynchronous APIs, and the different syntaxes for asynchronous code.
