@@ -16,7 +16,7 @@ Node.js release types:
 
 The V8 JavaScript engine:
 
-- [V8 JavaScript engine](https://nodejs.dev/en/learn/the-v8-javascript-engine/)
+- [V8 JavaScript engine](https://nodejs.org/en/learn/getting-started/the-v8-javascript-engine)
 - [V8 documentation](https://v8.dev/docs?azure-portal=true)
 
 The Dev Container on CodeSpaces:
