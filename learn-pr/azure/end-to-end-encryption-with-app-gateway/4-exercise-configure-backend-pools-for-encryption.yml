@@ -6,10 +6,9 @@ metadata:
   ms.date: 07/25/2023
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: learning-azure
 title: Exercise - Configure back-end pools for encryption
 durationInMinutes: 30
 content: |
