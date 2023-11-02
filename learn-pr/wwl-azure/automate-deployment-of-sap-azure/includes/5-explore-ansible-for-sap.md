@@ -32,7 +32,7 @@ Ansible is designed for multiple tier deployments, meaning you don't have to ins
 
 The following workflow and component diagram outlines how playbooks can run in different circumstances, one after another. 
 
-:::image type="content" source="../media/ansible-workflow.png" alt-text="Workflow and component diagram outlining how playbooks can run in different circumstances.":::
+:::image type="content" source="../media/ansible-workflow.png" alt-text="Diagram of Workflow and component diagram outlining how playbooks can run in different circumstances.":::
 
 In the workflow, Ansible playbooks:
 
