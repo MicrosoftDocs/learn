@@ -69,7 +69,7 @@ quiz:
           explanation: "While you may not be asked to integrate with existing .NET resources, this isn't the primary reason to choose a solution other than Blazor."
         - content: "Code Security Requirements"
           isCorrect: false
-          explanation: "While your application may need to be secured and run on a server as Blazor Server can, you should instead prefer to use Node and the tools with which you're already familiar."
+          explanation: "While your application may need to be secured and run on a server such as Blazor Server, you should instead prefer to use Node and the tools with which you're already familiar."
         - content: ".NET Familiarity"
           isCorrect: true
-          explanation: "Blazor exposes techniques and interactions that are common for .NET developers to use. Developers who are more familiar with other technologies should use those technologies with which they're more familiar."
+          explanation: "Blazor uses techniques and interactions that are common for .NET developers to use. Developers who are more familiar with other technologies should use those technologies."
