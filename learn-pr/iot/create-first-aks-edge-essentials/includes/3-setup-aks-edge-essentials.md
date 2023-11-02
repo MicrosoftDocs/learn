@@ -13,9 +13,9 @@ Let's create the Azure virtual machine (VM) with Windows 11 Enterprise.
     ```
 
     > [!NOTE]
-    > Take a note of the `Admin Password` you will need it later.
+    > Take a note of the `Admin Password`. You will need it later.
 
-1. Create the Azure VM with Windows 11 Enterprise using the following command.
+1. Create the Azure VM with Windows 11 Enterprise using the [az vm create](/cli/azure/vm?view=azure-cli-latest#az-vm-create) command.
 
     ```azurecli
     az vm create \
@@ -33,18 +33,18 @@ Let's create the Azure virtual machine (VM) with Windows 11 Enterprise.
     ```output
     {
         "fqdns": "",
-        "id": "/subscriptions/6d9888d2-c623-46a2-9848-0e443ef7f578/resourceGroups/learn-a5efd3c2-cc89-4cf0-98b8-6335c0364d82/providers/Microsoft.Compute/virtualMachines/myVM",
+        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-rg-0000/providers/Microsoft.Compute/virtualMachines/myVM",
         "location": "westus",
         "macAddress": "00-0D-3A-37-C7-E2",
         "powerState": "VM running",
         "privateIpAddress": "10.0.0.4",
         "publicIpAddress": "104.40.70.15",
-        "resourceGroup": "learn-a5efd3c2-cc89-4cf0-98b8-6335c0364d82",
+        "resourceGroup": "learn-rg-0000",
         "zones": ""
     }
     ```
 
-Now that the VM is created, we will prepare the machine for AKS Edge Essentials. We will run Powershell scripts within the Azure Windows VM you just created. Alternatively you could connect from your local machine via Remote Desktop Connection (RDP) and run the Powershell commands there.
+Now that the VM is created, let's prepare the machine for AKS Edge Essentials and run some PowerShell scripts by using [Run Command](/azure/virtual-machines/run-command-overview) and Azure CLI. Alternatively you could connect from your local machine via Remote Desktop Connection (RDP) and run the PowerShell commands there.
 
 1. Execute the following command in the Azure Cloud Shell to create a `aks-ee` folder and navigate to it:
 
@@ -53,13 +53,13 @@ Now that the VM is created, we will prepare the machine for AKS Edge Essentials.
     cd ~/aksee
     ```
 
-1. Create a new powershell script to download and install AKS Edge Essentials K3s distribution:
+1. Create a new PowerShell script to download and install AKS Edge Essentials K3s distribution:
 
     ```azurecli
     code ./install-aks-ee.ps1
     ```
 
-    Then add the following code to the script:
+    Add the following code to the script:
 
     ```powershell
     Set-ExecutionPolicy RemoteSigned -Scope Process -Force
@@ -141,7 +141,7 @@ Now that the VM is created, we will prepare the machine for AKS Edge Essentials.
     Hit `Ctrl+S` to save the file and `Ctrl+Q` to exit the editor.
 
 
-1. Run the powershell script to download and install AKS Edge Essentials K3s distrubution:
+1. Run the Azure CLI [az vm run-command create](/en-us/cli/azure/vm/run-command#az-vm-run-command-create) command to download and install AKS Edge Essentials K3s distribution:
 
     ```azurecli
     az vm run-command create --no-wait --name "installAKSEE" --vm-name myVM --resource-group <rgn>[sandbox resource group name]</rgn> --script @install-aks-ee.ps1
@@ -150,7 +150,7 @@ Now that the VM is created, we will prepare the machine for AKS Edge Essentials.
     > [!NOTE]
     > The installation process takes a few minutes to complete.
 
-1. Check the output of the powershell script you ran in the VM:
+1. Check the output of the PowerShell script you ran in the VM:
 
     ```azurecli
     az vm run-command show --name "installAKSEE" --vm-name "myVM" --resource-group <rgn>[sandbox resource group name]</rgn> --instance-view | jq .instanceView.output | sed 's/\\n/\n/g'
