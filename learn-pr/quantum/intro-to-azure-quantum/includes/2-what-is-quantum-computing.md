@@ -1,4 +1,4 @@
-Quantum computers harness the unique behavior of quantum physics and apply it to computing. This introduces new concepts to traditional programming methods.
+Quantum computers use the special rules of quantum physics to do calculations. This introduces new concepts to traditional programming methods.
 
 Let's see how quantum computing differs from classical computing and how to build a quantum computer.
 
