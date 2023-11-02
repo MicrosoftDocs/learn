@@ -1,4 +1,4 @@
-In this unit, we are reviewing the following components of the Github flow:
+In this unit, we are reviewing the following components of the GitHub flow:
 
 -	Branches
 -	Commits 
@@ -13,8 +13,9 @@ Branches are an essential part to the GitHub experience because they are where w
 
 Your branch is a safe place to experiment with new features or fixes. If you make a mistake, you can revert your changes or push more changes to fix the mistake. Your changes won't update on the default branch until you merge your branch.
 
-Note: Alternatively, you can create a new branch and check it out by simply using git in a terminal the command would be 
-`git checkout -b newBranchName`
+> [!NOTE]
+> Alternatively, you can create a new branch and check it out by simply using git in a terminal the command would be 
+> `git checkout -b newBranchName`
 
 
 ## What are commits
@@ -25,7 +26,7 @@ Let’s briefly review what commits are.
 
 A **commit** is a change to one or more files on a branch. Every time a commit is created, it's assigned a unique ID and tracked, along with the time and contributor. Commits provide a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
  
-:::image type="content" source="../media/2-commits.png" alt-text="A list of GitHub commits to a main branch." border="false":::
+:::image type="content" source="../media/2-commits.png" alt-text="A screen shot of a list of GitHub commits to a main branch." border="false":::
 
 Within a git repository, a file can exist in several valid states as it goes through the version control process:
 
@@ -54,13 +55,13 @@ The team member submitting the **pull request** requests one or more reviewers t
 
 Once the changes have been approved (if approval is required), the pull request's source branch (the compare branch) may be merged into the base branch.
 
-:::image type="content" source="../media/2-pull-request.png" alt-text="GitHub pull requests provide a way to get commits from one branch into another branch." border="false":::
+:::image type="content" source="../media/2-pull-request.png" alt-text="A screen shot of a pull request and a comment within the pull requst." border="false":::
 
 Now that we are aware of all the ingredients, let’s review the GitHub flow. 
 
 ## The GitHub flow
 
-:::image type="content" source="../media/2-branching.png" alt-text=" A visual representation of the GitHub Flow that includes a new branch, commits, pull request, and merging the changes back to main." border="false":::
+:::image type="content" source="../media/2-branching.png" alt-text=" A visual linear representation of the GitHub Flow that includes a new branch, commits, pull request, and merging the changes back to main in that order." border="false":::
 
 The GitHub flow can be defined as a lightweight workflow that allows for safe experimentation. You can test new ideas and collaboration with your team by using branching, pull requests, and merging. 
 
