@@ -1,4 +1,4 @@
-We’ll begin by:
+We begin by:
 
 - Reviewing branches and their importance to pull requests 
 - Defining what a pull request is
@@ -11,11 +11,11 @@ First, let’s define what branches are, why they’re important to developers, 
 
 Branches are isolated workspaces where you can develop your work without affecting others in the repository. They allow you to develop features, fix bugs, or and safely experiment with new ideas in a contained area of your repository.
 
-Developers working on independent branches is a common concept in modern software development. By having their own branch, a developer can make any changes, called **commits**, without worrying about how their commits will impact other developers working on their own branches.
+Developers working on independent branches is a common concept in modern software development. By having their own branch, a developer can make any changes, called **commits**, without worrying about how their commits impact other developers working on their own branches.
 
 ### Merging branches
 
-Although having each developer work on a separate branch is great for individual productivity, it opens a new challenge. At some point, each developer's branch will need to be **merged** into a common branch, like `main`. As projects scale, there can be many merges that need to happen, and it becomes increasingly important to track and review each merge. This is where pull requests come in.
+Although having each developer work on a separate branch is great for individual productivity, it opens a new challenge. At some point, each developer's branch needs to be **merged** into a common branch, like `main`. As projects scale, there can be many merges that need to happen, and it becomes increasingly important to track and review each merge. Needing to keep track of multiple changes to a project is where pull requests come in.
 
 ## What is a pull request?
 
@@ -45,7 +45,7 @@ Now let’s review how to create a pull request!
 
 3.	Above the list of files, in the yellow banner, select the **Compare & pull request** button to create a pull request for the associated branch.
 
-:::image type="content" source="../media/2-compare-and-pull-request.png" alt-text="Image of an yellow text box, highlighting the green compare and pull request button." border="false":::
+:::image type="content" source="../media/2-compare-and-pull-request.png" alt-text="Image of a yellow text box, highlighting the green compare and pull request button." border="false":::
 
 
 4.	In the **base branch** dropdown menu select the branch you'd like to merge your changes into.  Then select the **compare branch** dropdown menu to select the topic branch you made your changes in.
@@ -85,7 +85,7 @@ Now let’s review the different statuses of a pull request.
 
 
 -	Squash and merge allows you to take all of your commits and combine them into one. This can help you keep your repository history more readable and organized. To do this by selecting the **Squash and merge** option, and then selecting the **Squash and merge** button.
--	The Rebasing and merge option allows you make commits without a merge commit. This enables you to skip a merge by maintaining a linear project history. To do this  select the merge dropdown menu, then select the **Rebase and merge** option, and then select the **Rebase and merge** button.
+-	The "Rebase and merge" option allows you make commits without a merge commit. This enables you to skip a merge by maintaining a linear project history. To do this  select the merge dropdown menu, then select the **Rebase and merge** option, and then select the **Rebase and merge** button.
 
 4.	If prompted, enter a commit message, or accept the default message.
 
@@ -93,7 +93,7 @@ Now let’s review the different statuses of a pull request.
 5.	If you have more than one email address associated with your account on GitHub.com, select the email address dropdown menu and select the email address to use as the Git author email address. Only verified email addresses appear in this dropdown menu. If you enabled email address privacy, then a no reply github email will be the default commit author email address. 
 
  
- :::image type="content" source="../media/3-select-author-of-merge.png" alt-text="An image of a commit change with a description box and the drop down menu of the email to select as the author of the commit." border="false":::
+ :::image type="content" source="../media/3-select-author-of-merge.png" alt-text="An image of a commit change with a description box and the drop-down menu of the email to select as the author of the commit." border="false":::
 
 
 6.	Select Confirm merge, Confirm squash and merge, or Confirm rebase and merge.
