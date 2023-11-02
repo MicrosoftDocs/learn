@@ -16,7 +16,7 @@ It usually makes sense to adopt these technologies and approaches incrementally,
 
 ### When not to use cloud-native apps
 
-A Cloud Native App might not be a good fit if you already have an existing application that doesn’t provide enough value to invest in modernization. Also, if you have an application with predictable resource demands, an existing data center and existing management infrastructure may do fine.
+A cloud-native app might not be a good fit if you already have an existing application that doesn’t provide enough value to invest in modernization. Also, if you have an application with predictable resource demands, an existing data center and existing management infrastructure may do fine.
 
 However, even in these cases, you may still want to consider a hybrid approach—where your on-premises applications can work with your other, cloud-based applications and services.
 
