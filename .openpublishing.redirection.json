@@ -28775,6 +28775,26 @@
       "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/4-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-language-model-with-language-understanding/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/recognize-synthesize-speech/2-get-started-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/recognize-synthesize-speech/3-get-started-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/recognize-synthesize-speech/3a-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/recognize-synthesize-speech/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/recognize-synthesize-speech/3-exercise-transcribe-speech-use-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/recognize-synthesize-speech",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/recognize-synthesize-speech/4-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/recognize-synthesize-speech/6-summary",
+      "redirect_document_id": false
     }
   ]
 }
