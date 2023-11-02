@@ -58,7 +58,7 @@ quiz:
           explanation: "While you may be integrating with other applications and logic, this doesn't require the application run on the server."
         - content: "Code Security Requirements"
           isCorrect: true
-          explanation: "Blazor Server is an application configuration where all code executes on the server, and only user-interface updates are sent to the browser."
+          explanation: "Blazor Server is an application configuration where all code executes on the server, and only user interface updates are sent to the browser."
         - content: "Complexity of the Application"
           isCorrect: false
           explanation: "While this scenario describes a complex application, it's not the primary reason to build with Blazor Server."
