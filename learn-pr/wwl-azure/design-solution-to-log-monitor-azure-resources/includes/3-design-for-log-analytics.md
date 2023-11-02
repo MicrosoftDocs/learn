@@ -48,7 +48,7 @@ Now you're ready to review considerations for designing with Azure Monitor Logs 
 
 As you consider your options for implementing Azure Monitor Logs workspaces and access control in your monitoring and logging solution, review these recommendations. This scenario shows a recommended design for a single workspace in your IT organization's subscription. 
 
-:::image type="content" source="../media/workspace-design.png" alt-text="Diagram that shows how to design an Azure Monitor Logs deployment." lightbox="../media/workspace-design-expanded.png" border="false":::
+:::image type="content" source="../media/workspace-design-expanded.png" alt-text="Diagram that shows how to design an Azure Monitor Logs deployment." lightbox="../media/workspace-design-expanded.png" border="false":::
 
 The workspace isn't constrained by data sovereignty or regulatory compliance. It doesn't need to map to the regions where your resources are deployed. Your organization's security and IT admin teams can take advantage of the improved integration with Azure access management and more secure access control.
 
