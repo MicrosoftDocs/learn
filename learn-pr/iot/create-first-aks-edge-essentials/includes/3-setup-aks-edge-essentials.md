@@ -69,7 +69,7 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
         New-Item -ItemType Directory -Path "C:\aksee" | Out-Null
     }
 
-    Start-Transcript -Path "C:\aksee\log.txt" -Append
+    Start-Transcript -Path "C:\aksee\log.txt" -Append | Out-Null
 
     # Download the k3s MSI installer
     Write-Host "Step 1 : AKS-Edge download k3s.msi"
