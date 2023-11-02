@@ -3,7 +3,7 @@
 
 Cost optimization is conducted at various levels of the organization. It's important to understand how your workload is aligned with organizational goals and FinOps practices. A view into the business units, resource organization, and centralized audit policies allows you to apply a standardized financial system and approach to your workload.
 
-The following approaches are supported through the use of examples to help demonstrate how they can be applied to real-world scenarios. The examples for each approach are based on a hypothetical company, Contoso, that organizes and hosts trade shows. Contoso sees an opportunity to gain efficiencies with their ticket sales process for trade shows by developing a mobile app in-house. The scenarios below follow the development process from ideation through implementation, focusing on cost optimization concerns. The mobile app is a web app written in .NET that is hosted on Azure App Service infrastructure and uses Azure SQL Database for its database.
+The examples for the following approaches are based on a hypothetical company, Contoso, that organizes and hosts trade shows. Contoso sees an opportunity to gain efficiencies with their ticket sales process for trade shows by developing a mobile app in-house. The scenarios below follow the development process from ideation through implementation, focusing on cost optimization concerns. The mobile app is a web app written in .NET that is hosted on Azure App Service infrastructure and uses Azure SQL Database for its database.
 
 ## Develop a cost model
 
