@@ -28795,6 +28795,26 @@
       "source_path": "learn-pr/wwl-data-ai/recognize-synthesize-speech/4-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/recognize-synthesize-speech/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/2-receipts-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-receipts-form-recognizer/3-azure-document-intelligence",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/3a-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-receipts-form-recognizer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/3-analyze-receipts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-receipts-form-recognizer/4-exercise",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/4-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-receipts-form-recognizer/6-summary",
+      "redirect_document_id": false
     }
   ]
 }
