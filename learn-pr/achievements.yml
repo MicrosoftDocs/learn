@@ -2370,3 +2370,8 @@ achievements:
   title: Enable business users with key AI use cases
   summary: From everyday AI experiences to no-code AI development tools, this module provides an overview of available AI tools and technologies that can empower every business user to achieve more.
   iconUrl: /training/achievements/enable-business-users-with-key-ai-uses-cases.svg
+- uid: learn.determine-endpoint-management-implementation.badge
+  type: badge
+  title: Determine your endpoint implementation
+  summary: After completing this module, you'll have a better understanding of your endpoint management objectives, device inventory considerations, licensing needs, infrastructure objectives, and rollout plans.
+  iconUrl: /training/achievements/generic-badge-social.png
