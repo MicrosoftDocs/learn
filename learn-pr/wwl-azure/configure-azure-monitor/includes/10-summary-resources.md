@@ -10,7 +10,7 @@ The main takeaways from this module are:
 
 - Azure Monitor offers features in three areas: monitoring and visualizing metrics, querying and analyzing logs, and setting up alerts and actions.
 
-## Learn more
+## Learn more with Azure documentation
 
 - [Azure Monitor documentation](/azure/azure-monitor/). Learn about monitoring Azure and on-premises services. Understand how to aggregate and analyze metrics, logs, and traces. Respond to issues by firing alerts that can send notifications or by calling automated solutions.
 
