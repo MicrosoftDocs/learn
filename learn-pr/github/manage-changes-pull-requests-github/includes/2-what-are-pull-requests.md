@@ -81,11 +81,11 @@ Now let’s review the different statuses of a pull request.
 
 -	Merge all of the commits into the base branch by selecting the **Merge pull request** button. If the Merge pull request option isn’t shown, select the merge dropdown menu, select the **Create a merge commit** option, and then select the **Create a merge commit** button.
  
- :::image type="content" source="../media/3-merge-pull-request.png" alt-text="Image of the drop down menu of the green merge pull request button with the Create a merge commit selected." border="false":::
+ :::image type="content" source="../media/3-merge-pull-request.png" alt-text="Image of the drop-down menu of the green merge pull request button with the Create a merge commit selected." border="false":::
 
 
 -	Squash and merge allows you to take all of your commits and combine them into one. This can help you keep your repository history more readable and organized. To do this by selecting the **Squash and merge** option, and then selecting the **Squash and merge** button.
--	The "Rebase and merge" option allows you make commits without a merge commit. This enables you to skip a merge by maintaining a linear project history. To do this  select the merge dropdown menu, then select the **Rebase and merge** option, and then select the **Rebase and merge** button.
+-	The "Rebase and merge" option allows you to make commits without a merge commit. This enables you to skip a merge by maintaining a linear project history. To do this  select the merge dropdown menu, then select the **Rebase and merge** option, and then select the **Rebase and merge** button.
 
 4.	If prompted, enter a commit message, or accept the default message.
 
