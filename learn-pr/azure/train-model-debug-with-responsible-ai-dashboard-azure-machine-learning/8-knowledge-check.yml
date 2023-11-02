@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/19/2023
+  ms.date: 11/02/2023
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: interactive-tutorial
@@ -27,20 +27,20 @@ quiz:
     - content: "Delete the compute cluster."
       isCorrect: false
       explanation: " Incorrect. Deleting the compute cluster isn't related to making the trained model available for future predictions. It's a separate administrative task for managing computing resources."
-  - content: "What does the explanation component in the responsible AI dashboard creation process do?"
+  - content: "What does the feature importance component in the responsible AI dashboard creation process do?"
     choices:
     - content: "It configures the overall and feature error rates."
       isCorrect: false
-      explanation: "Incorrect. Configuring error rates isn't the primary role of the explanation component; this task is generally performed by the error analysis component."
+      explanation: "Incorrect. Configuring error rates isn't the primary role of the feature importance component; this task is generally performed by the error analysis component."
     - content: "It calculates error distributions."
       isCorrect: false
-      explanation: "Incorrect. Calculating error distributions is typically handled by the error analysis component, not the explanation component."
+      explanation: "Incorrect. Calculating error distributions is typically handled by the error analysis component, not the feature importance component."
     - content: "It initializes the global data for the components."
       isCorrect: false
-      explanation: "Incorrect. Initializing global data for components is typically the role of the RAI constructor component, not the explanation component."
-    - content: "It provides a better understanding of what features influence the model’s predictions."
+      explanation: "Incorrect. Initializing global data for components is typically the role of the RAI constructor component, not the feature importance component."
+    - content: "It provides a better understanding of what features influence the model's predictions."
       isCorrect: true
-      explanation: "The explanation component helps users understand how different features affect the model's predictions."
+      explanation: "The feature importance component helps users understand how different features affect the model's predictions."
   - content: "Why is data imbalance in the test dataset a concern when using machine learning models?"
     choices:
     - content: " It increases model accuracy."

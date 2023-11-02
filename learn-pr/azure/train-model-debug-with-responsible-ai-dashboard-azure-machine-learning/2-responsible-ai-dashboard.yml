@@ -4,12 +4,12 @@ title: What is a Responsible AI dashboard?
 metadata:
   title: What is a Responsible AI dashboard? 
   description: "Learn about Responsible AI dashboard"
-  ms.date: 10/19/2023
+  ms.date: 11/02/2023
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.subservice: responsible-ai  
-durationInMinutes: 6
+durationInMinutes: 4
 content: |
   [!include[](includes/2-responsible-ai-dashboard.md)]
