@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/27/2023
   author: greg-lindsay
   ms.author: greglin
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom: devx-track-azurecli
 title: Exercise - Optimize applications across regions by using performance routing
 interactive: bash
