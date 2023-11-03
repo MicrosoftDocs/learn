@@ -88,10 +88,10 @@ Examine the Resource Manager template to get a better understanding of its struc
 
 1. Read through the template to identify any items that an administrator might want to change. For example, the default value for `hanaVMSize`.
 
-1. Select **Deploy** to update the original Marketplace template with the information you provided, resulting in options of **Edit template**, **Edit parameters**, and **Visualize**.
+1. Select **Deploy** to update the original Marketplace template with the information you provided, resulting in the options **Edit template**, **Edit parameters**, and **Visualize**.
 
     > [!NOTE]
-    > Alternatively, if you want to store the updated template locally, select **Download**.
+    > Alternatively, to store the updated template locally, select **Download**.
 
     :::image type="content" source="../media/marketplace-8.png" alt-text="Screenshot of a template with example of a value, HANA V M Size that can be manually edited in the template.":::
 
@@ -116,7 +116,7 @@ Examine the Resource Manager template to get a better understanding of its struc
 
 ## Access Azure Resource Manager Templates from previous deployments
 
-To access Azure Resource Manager Templates for your previous deployments, follow the steps.
+To access Azure Resource Manager Templates for your previous deployments, follow these steps.
 
 1. Select the resource group you want to export.
 1. Select the link under **Deployments**.
@@ -126,9 +126,9 @@ To access Azure Resource Manager Templates for your previous deployments, follow
 
 :::image type="content" source="../media/marketplace-11.png" alt-text="Screenshot of Azure portal, template deployment.":::
 
-## Deploying Azure Resource Manager using the CLI
+## Deploy Azure Resource Manager using the CLI
 
-You can deploy a downloaded template, by using the CLI with your Azure credentials locally, or by using Bash Cloud Shell CLI. For more information about the parameter file, see [Create Resource Manager parameter file](/azure/azure-resource-manager/templates/parameter-files).
+You can deploy a downloaded template by using the CLI with your Azure credentials locally, or by using Bash Cloud Shell CLI. For more information about the parameter file, see [Create Resource Manager parameter file](/azure/azure-resource-manager/templates/parameter-files).
 
 To pass a local parameter file, use @ to specify a local file named *parameters.json*:
 
