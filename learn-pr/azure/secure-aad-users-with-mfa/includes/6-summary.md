@@ -1,4 +1,4 @@
-Using Microsoft Entra multifactor authentication, you can ensure that when users sign in to access your confidential systems and data, they're who they say they are. Microsoft Entra ID allows you to create policies to ensure that specific apps are protected, while allowing more public systems to remain easier to get to. In addition, you can use other services such as Microsoft Entra ID Protection and Azure Smart Lockout to fully protect your identity surface area.
+Using Microsoft Entra multifactor authentication, you can ensure that when users sign in to access your confidential systems and data, they are who they say they are. Microsoft Entra ID allows you to create policies to ensure that specific apps are protected, while allowing more public systems to remain easier to get to. In addition, you can use other services such as Microsoft Entra ID Protection and Azure Smart Lockout to fully protect your identity surface area.
 
 ## Further reading
 
