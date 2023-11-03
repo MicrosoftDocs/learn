@@ -1,22 +1,20 @@
-
 Azure Network Watcher provides the tools you need to monitor, troubleshoot, and optimize your network infrastructure.
 
 In this module, you identified the features and usage cases for Azure Network Watcher. You reviewed how to configure and work with several Network Watcher features, including IP flow verify, next hop, and the topology tool. You discovered how to diagnose your network configuration for several issues, such as broken security rules.
 
-## Learn more
+## Learn more with documentation
 
-- Peruse [Azure Network Watcher documentation](/azure/network-watcher/).
+- [Azure Network Watcher documentation](/azure/network-watcher/). This collection of articles is your starting point for Network Watcher. 
 
-- Explore an [introduction to Azure Network Watcher IP flow verify](/azure/network-watcher/network-watcher-ip-flow-verify-overview).
+- [What is Azure Network Watcher?](/azure/network-watcher/network-watcher-overview). This article reviews Network Watcher monitoring, network diagnostic tools, and traffic troubleshooting. 
 
-- Explore an [introduction to Azure Network Watcher next hop](/azure/network-watcher/network-watcher-next-hop-overview).
+- [Tutorial: Diagnose a virtual machine network routing problem using the Azure portal](/azure/network-watcher/diagnose-vm-network-routing-problem). In this tutorial, you use Azure Network Watcher next hop tool to troubleshoot and diagnose a VM routing problem.
 
-- View the [topology of an Azure virtual network](/azure/network-watcher/view-network-topology).
+- [Tutorial: Diagnose a communication problem between virtual networks using the Azure portal](/azure/network-watcher/diagnose-communication-problem-between-networks). This tutorial shows you how to use Azure Network Watcher VPN troubleshoot capability to diagnose and troubleshoot a connectivity issue between two virtual networks.
 
-- Diagnose [virtual machine network traffic filter problems in the Azure portal](/azure/network-watcher/diagnose-vm-network-traffic-filtering-problem).
+## Learn more with self-paced training
 
-- Diagnose [communication problems between virtual networks in the Azure portal](/azure/network-watcher/diagnose-communication-problem-between-networks).
+- [Monitor and troubleshoot your end-to-end Azure network infrastructure by using network monitoring tools](/training/modules/troubleshoot-azure-network-infrastructure/). Use Network Watcher tools, diagnostics, and logs to help find and fix networking issues in your Azure infrastructure.
 
-## Learn more with optional hands-on exercises
+- [Configure monitoring for virtual networks](/training/modules/configure-monitoring-virtual-networks). Understand how to use Azure Network Watcher Connection Monitor, flow logs, NSG diagnostics, and packet capture.
 
-- Monitor and troubleshoot your [end-to-end Azure network infrastructure by using network monitoring tools](/training/modules/troubleshoot-azure-network-infrastructure/). _Azure subscription required_.
