@@ -1,26 +1,28 @@
-Your organization's reputation depends on its systems' performance, reliability, and security. It's critical to monitor your systems closely to identify any performance problems or attacks before they can affect users. For example, if your payment system is unable to process user transactions during a high-volume holiday sales period, your customers will likely lose confidence in your business.
+Your organization's reputation depends on its systems' performance, reliability, and security. For example, if your payment system is unable to process user transactions during a high-volume holiday sales period, your customers might lose confidence in your business. It's critical to monitor your systems closely to identify any performance problems or attacks before they can affect users.
 
-Here, we'll explain the solutions in Azure that allow you to monitor your organization's services.
+This unit describes the Azure solutions that help you monitor your organization's services.
 
 ## What is Azure Monitor?
 
-[Azure Monitor](https://azure.microsoft.com/products/monitor/) is a service for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. It helps you maximize the availability and performance of your applications and services. Azure Monitor helps you detect and diagnose application, infrastructure, and platform issues. You can analyze metrics and logs from monitored resources. Azure Monitor also supports operational workflows with alerts and automated actions and lets you create visualizations such as dashboards and reports.
+[Azure Monitor](https://azure.microsoft.com/products/monitor/) is a service for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. You can analyze metrics and logs from monitored resources. Azure Monitor helps you maximize the availability and performance of your applications and services by detecting and diagnosing application, infrastructure, and platform issues. Azure Monitor also supports operational workflows with alerts and automated actions and lets you create visualizations such as dashboards and reports.
 
-![Diagram of Azure Monitor Architecture.](../media/3-azure-monitoring-options-01.png)
+![Diagram of Azure Monitor architecture.](../media/3-azure-monitoring-options-01.png)
 
-Azure Monitor starts with collecting telemetry. This data includes application-layer data and infrastructure-performance data from VM guest operating systems and containers. Additionally, Azure Monitor collects directly from the Azure platform resources, and you can also ingest your own custom data using APIs. The collected data is stored in centralized and fully managed data stores: *Azure Monitor Metrics* for numerical time-series values and *Azure Monitor Log Analytics workspaces* for resource logs. Metrics are automatically collected and stored for Azure resources, but user configuration is required to send and store resource logs. After the data is collected, you can choose how you consume, analyze, and respond.
+Azure Monitor collects telemetry directly from Azure platform resources, and you can also ingest custom data by using APIs. Azure Monitor can also collect application-layer data and infrastructure-performance data from VM guest operating systems and containers.
 
-In most cases, you should start with Insights, which are guided monitoring and troubleshooting experiences for Azure resources. For example, you can use Azure Monitor for containers for your Kubernetes workloads. You might also visualize the data yourself with Azure dashboards in the Azure portal, create business views with Power BI, or create interactive reports using workbooks. Use Azure Monitor for a detailed view of your application's health and your infrastructure's health on a single screen.
+Azure Monitor stores the collected data in centralized and fully managed data stores, *Azure Monitor Metrics* for numerical time-series values and *Azure Monitor Log Analytics workspaces* for resource logs. Metrics are automatically collected and stored for Azure resources, but user configuration is required to send and store resource logs. You can choose how to consume, analyze, and respond to the collected data.
 
-![Screenshot of full-stack monitoring dashboard.](../media/3-azure-monitoring-options-02.png)
+In most cases, you should start with Insights, which are guided monitoring and troubleshooting experiences for Azure resources. For example, you can use Azure Monitor container insights for your Kubernetes workloads. You might also visualize the data yourself with Azure dashboards in the Azure portal, create business views with Power BI, or create interactive reports using workbooks. Use Azure Monitor for a detailed view of your application's health and your infrastructure's health on a single screen.
 
-You can further analyze the collected data using Metrics Explorer for charting and visual correlation and Log Analytics for ad hoc queries, trending, and pattern recognition. Azure Monitor allows you to manage and create alerts, notifications, and actions such as runbooks and autoscale based on metrics and logs. You can also integrate Azure Monitor with other tools using Event Hubs to export data or APIs for ingestion and export.
+![Screenshot of a full-stack monitoring dashboard.](../media/3-azure-monitoring-options-02.png)
+
+You can further analyze the collected data by using Metrics Explorer for charting and visual correlation and Log Analytics for ad hoc queries, trending, and pattern recognition. Azure Monitor allows you to manage and create alerts, notifications, and actions such as runbooks and autoscale based on metrics and logs. You can also integrate Azure Monitor with other tools by using Azure Event Hubs to export data or APIs for ingestion and export.
 
 ## What is Microsoft Defender for Cloud?
 
 [Microsoft Defender for Cloud](https://azure.microsoft.com/products/defender-for-cloud/) is a service that manages your infrastructure's security from a centralized location. You can use Defender for Cloud to monitor the security of your workloads, whether they're on-premises or in the cloud.
 
-Attacks are becoming more intelligent, and the number of people with the right security skills is low. Defender for Cloud helps you deal with these challenges because it provides you with tools that improve your protection against security threats. Use Defender for Cloud to monitor your resources' health and implement recommendations.
+Attacks are becoming more intelligent, and the number of people with the right security skills is low. Defender for Cloud helps you deal with these challenges by providing you with tools that improve your protection against security threats. Use Defender for Cloud to monitor your resources' health and implement recommendations.
 
 ![Screenshot of Microsoft Defender for Cloud Overview.](../media/3-azure-monitoring-options-03.png)
 
@@ -32,7 +34,7 @@ Defender for Cloud creates an agent on each supported virtual machine as it's cr
 
 ## What is Microsoft Sentinel?
 
-You can use Microsoft Sentinel to collect data on the devices, users, infrastructure, and applications across your enterprise. Built-in threat intelligence for detection and investigation can help reduce false positives. Use Sentinel to proactively hunt for threats and anomalies, and respond by using orchestration and automation.
+Microsoft Sentinel is a SIEM that collects data on the devices, users, infrastructure, and applications across your enterprise. Built-in threat intelligence for detection and investigation can help reduce false positives. Use Microsoft Sentinel to proactively hunt for threats and anomalies, and respond by using orchestration and automation.
 
 You can connect your data sources to Sentinel. These sources include Microsoft services such as Office 365 and Azure Advanced Threat Protection. These sources can also include external solutions such as AWS CloudTrail or on-premises sources. The dashboard shows detailed information collected from your sources.
 
@@ -42,7 +44,7 @@ Incidents help you group and combine related alerts. You can use incidents to re
 
 ![Screenshot of incident investigation.](../media/3-azure-monitoring-options-06.png)
 
-You can use playbooks to automate your response to alerts in Sentinel. You'll configure playbooks by using Azure Logic Apps. Your playbook details the steps to take when an alert is triggered in Sentinel.
+You can use playbooks to automate your response to alerts in Microsoft Sentinel. You configure playbooks by using Azure Logic Apps. Your playbook details the steps to take when an alert is triggered in Microsoft Sentinel.
 
 ![Screenshot of playbooks.](../media/3-azure-monitoring-options-07.png)
 
@@ -52,4 +54,6 @@ You can use hunting queries to look for threats across your enterprise before al
 
 You can use notebooks to automate your investigations. Notebooks are playbooks that can consist of investigation or hunting steps that you reuse or share with others. Use Azure Notebooks for Microsoft Sentinel to develop and run your notebooks. For example, you might use the **Guided hunting - Anomalous Office365 Exchange Sessions** notebook to hunt for anomalous activities in Office 365 across your enterprise.
 
-Microsoft Sentinel and Microsoft Defender for Cloud use Azure Monitor Logs as their underlying logging data platform. These security solutions store their data in Log Analytics workspaces, which are centralized storage and management locations where your app, infrastructure, and security logs are collected and aggregated for analysis, troubleshooting, and auditing. This centralized approach allows you to perform correlation and run investigations across application performance, infrastructure performance, and security logs within the same data analytics service with a single user interface using the same query language. We recommend that you use as few workspaces as possible, and manage user and team access to subsets of log data using resource or workspace permissions. For more information, check out [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design).
+Microsoft Sentinel and Microsoft Defender for Cloud use Azure Monitor Logs as their underlying logging data platform. These security solutions store their data in Log Analytics workspaces, which are centralized storage and management locations where your app, infrastructure, and security logs are collected and aggregated for analysis, troubleshooting, and auditing.
+
+This centralized approach allows you to perform correlation and run investigations across application performance, infrastructure performance, and security logs within the same data analytics service with a single user interface using the same query language. We recommend that you use as few workspaces as possible, and manage user and team access to subsets of log data using resource or workspace permissions. For more information, see [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design).

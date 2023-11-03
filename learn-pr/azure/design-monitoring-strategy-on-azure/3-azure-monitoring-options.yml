@@ -33,7 +33,7 @@ quiz:
       explanation: Diagnostic settings are used to send platform metrics and platform logs to Azure Monitor Log Analytics, storage account or Event Hubs.
     - content: Azure Monitor Logs
       isCorrect: true
-      explanation: Several services in Azure including Sentinel and Defender for Cloud use Azure Monitor Logs as their underlying logging data platform.
+      explanation: Several services in Azure including Microsoft Sentinel and Defender for Cloud use Azure Monitor Logs as their underlying logging data platform.
     - content: Activity Logs
       isCorrect: false
       explanation: The Activity log is an Azure platform log that provides insight into subscription-level events.

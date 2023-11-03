@@ -22,7 +22,7 @@ quiz:
       explanation: You use Application Insights with Azure Pipelines and deployment gates to improve your development lifecycle.
     - content: You want a detailed overview of your enterprise, potentially across multiple clouds, and on-premises locations.
       isCorrect: true
-      explanation: Microsoft Sentinel will help monitor and respond to security threats across your entire enterprise.
+      explanation: Microsoft Sentinel helps monitor and respond to security threats across your entire enterprise.
     - content: You want to be able to cross-query over data collected from multiple sources that span on-premises and the cloud.
       isCorrect: false
       explanation: You use Azure Monitor Log Analytics to cross-resource query over data from multiple sources. Use Microsoft Sentinel to monitor and respond to security threats across your entire enterprise.
@@ -37,7 +37,7 @@ quiz:
     - content: Create a workspace, and then add that workspace to Microsoft Sentinel.
       isCorrect: true
       explanation: You'll need to create a Log Analytics workspace.
-  - content: Sentinel has raised an incident. How can you investigate which users have been affected?
+  - content: Microsoft Sentinel has raised an incident. How can you investigate which users have been affected?
     choices:
     - content: Use the investigation map, drill down into the incident, and look for data sources.
       isCorrect: false
