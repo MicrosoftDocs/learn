@@ -96,7 +96,7 @@ Similarly, since organization discussions are based on a source repository, any 
 
 4.	Select a discussion category by clicking Get started. All discussions must be created in a category. For repository discussions, people with maintain or admin permissions to the repository define the categories for discussions in that repository.
 
-   :::image type="content" source="../media/annoucements.png" alt-text="A screenshot of the select a discussion category menu selection, with the top option Announcements and the get started button highlighted." border="false":::
+   :::image type="content" source="../media/announcements.png" alt-text="A screenshot of the select a discussion category menu selection, with the top option Announcements and the get started button highlighted." border="false":::
 
 Each category must have a unique name and emoji pairing, and are accompanied by a detailed description stating its purpose. Categories help maintainers organize how conversations are filed and are customizable to help distinguish categories that are Q&A or more open-ended conversations. In the following table is the default categories for discussions and their purpose. 
 
