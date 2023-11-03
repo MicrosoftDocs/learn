@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Where can an Azure Monitor DCR send system event log data?
+  - content: How can you collect event log data from your VMs?
     choices:
-    - content: Azure Monitor Logs
+    - content: Create a DCR.
       isCorrect: true
-      explanation: A DCR can send log data to multiple Log Analytics workspaces in Azure Monitor Logs.
-    - content: Azure Monitor Metrics or Azure Monitor Logs
+      explanation: You can create DCRs to collect VM log data or performance counters that the VM Insights DCR doesn't collect.
+    - content: Enable VM Insights.
       isCorrect: false
-      explanation: DCRs can send performance counters to both Azure Monitor Metrics and Azure Monitor Logs, but event log data can be sent to Azure Monitor Logs only.
-    - content: Azure Monitor Metrics
+      explanation: The VM Insights predefined DCR collects metrics, not log data.
+    - content: Enable boot diagnostics.
       isCorrect: false
-      explanation: DCRs can send performance counters to Azure Monitor Metrics, but event log data can be sent to Azure Monitor Logs only.
+      explanation: The serial log information that boot diagnostics collects is separate from the system event logs.
   - content: How can you view log data collected by a DCR?
     choices:
     - content: In the **Monitoring** tab of your VM **Overview** page.
