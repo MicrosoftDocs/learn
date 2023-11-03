@@ -56,6 +56,7 @@ As mentioned, T-SQL can be run to a limit extent against a Microsoft Fabric KQL 
 
     >[!NOTE] 
     >If you’re familiar with SQL and want to learn KQL, you can translate SQL queries into KQL using the `-- explain syntax`
+    
     > For example: 
     >    ```tsql
     >   --
