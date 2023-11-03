@@ -23,7 +23,7 @@ prerequisites: |
   - Basic knowledge of security concepts like identities, permissions, and encryption.
   - Basic knowledge of networking concepts like virtual networks and subnetting.
 iconUrl: /training/achievements/guided-project-azure-files-azure-blobs.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:

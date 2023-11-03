@@ -33,5 +33,6 @@ modules:
 - learn-wwl.explore-data-for-data-science-microsoft-fabric
 - learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric
 - learn.wwl.train-track-model-fabric
+- learn.wwl.generate-batch-predictions-fabric
 trophy:
   uid: learn.wwl.implement-data-science-machine-learning-fabric.trophy

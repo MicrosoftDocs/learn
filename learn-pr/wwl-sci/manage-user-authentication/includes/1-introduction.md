@@ -1,7 +1,7 @@
-One of the main features of an identity platform is to verify, or authenticate, credentials when a user signs in to a device, application, or service. In Microsoft Entra ID, part of Microsoft Entra, authentication involves more than just verifying a username and password. To improve security and reduce the need for help desk assistance, Microsoft Entra authentication includes the following components:
+One of the main features of an identity platform is to verify, or authenticate, credentials when a user signs in to a device, application, or service. In Microsoft Entra ID, authentication involves more than just verifying a username and password. To improve security and reduce the need for help desk assistance, Microsoft Entra authentication includes the following components:
 
  -  Self-service password reset
- -  Microsoft Entra multifactor authentication
+ -  Multifactor authentication
  -  Hybrid integration to write password changes back to on-premises environment
  -  Hybrid integration to enforce password protection policies for an on-premises environment
  -  Passwordless authentication
@@ -18,4 +18,4 @@ In this module, you will:
  -  Configure and deploy self-service password reset.
  -  Deploy and manage password protection and smart lockouts.
  -  Implement Kerberos and certificate-based authentication.
- -  Configure Microsoft Entra user authentication to virtual machines. 
+ -  Configure Microsoft Entra user authentication to virtual machines.

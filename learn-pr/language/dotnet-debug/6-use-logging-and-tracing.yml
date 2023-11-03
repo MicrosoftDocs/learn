@@ -8,8 +8,7 @@ metadata:
   ms.author: jamont
   ms.manager: markl
   ms.date: 10/28/2020
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
 durationInMinutes: 4

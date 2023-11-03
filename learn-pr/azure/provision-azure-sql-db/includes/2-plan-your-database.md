@@ -1,6 +1,6 @@
 Azure provides Platform as a Service (PaaS) services to help you manage all kinds of data, from highly structured relational data to unstructured data.
 
-Here, you'll learn why Azure SQL Database is a convenient, cost-effective, and secure way to host your relational databases.
+Here, you learn why Azure SQL Database is a convenient, cost-effective, and secure way to host your relational databases.
 
 ## Why choose Azure SQL Database?
 
@@ -15,9 +15,9 @@ You've decided to build the web and application tiers for your logistics app on 
 
 - **Convenience**
 
-    Setting up SQL Server on a VM or on physical hardware requires you to know about hardware and software requirements. You'll need to understand the latest security best practices and manage operating system and SQL Server patches on a routine basis. You also need to manage backup and data retention issues yourself.
+    Setting up SQL Server on a VM or on physical hardware requires you to know about hardware and software requirements. You need to understand the latest security best practices and manage operating system and SQL Server patches on a routine basis. You also need to manage backup and data retention issues yourself.
 
-    With Azure SQL Database, we manage the hardware, software updates, and OS patches for you. All you specify is the name of your database and a few options. You'll have a running SQL database in minutes.
+    With Azure SQL Database, we manage the hardware, software updates, and OS patches for you. All you specify is the name of your database and a few options, and you have a running SQL database in minutes.
 
     You can bring up and tear down Azure SQL Database instances at your convenience. Azure SQL Database comes up fast and is easy to configure. You can focus less on configuring software and more on making your app great.
 
@@ -41,4 +41,4 @@ You've decided to build the web and application tiers for your logistics app on 
 
 To recap: with Azure SQL Database, Microsoft Azure manages the hardware, software updates, and OS patches for you. We provide buying options to help you get the performance you need at a predictable cost. Azure SQL Database also comes with a firewall so that you can control access to your data.
 
-Although you don't need to be a DBA to use Azure SQL Database, there are a few concepts you should understand before you start. We'll cover these concepts in the next unit.
+Although you don't need to be a database administrator to use Azure SQL Database, there are a few concepts you should understand before you start. We'll cover these concepts in the next unit.
