@@ -1,4 +1,3 @@
-
 We’ve gathered stories here about how businesses across the world, in diverse industries, have adopted Microsoft Azure to improve, accelerate, and transform. Feel free to read the stories that seem most relevant to your business. You may follow the links to learn more or visit the Microsoft Customer Stories site for even more stories.
 
 > [!NOTE]

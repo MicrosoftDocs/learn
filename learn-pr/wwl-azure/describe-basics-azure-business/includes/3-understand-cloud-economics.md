@@ -1,4 +1,3 @@
-
 Let’s revisit the core concepts of **cloud economics** mentioned in the previous unit. The **Describe the business benefits of Azure** module explores these concepts in greater detail. It’s also important to have a basic understanding of how to think about business economics and finance in the cloud.
 
 ## Capital expenditures vs. operational expenditures
