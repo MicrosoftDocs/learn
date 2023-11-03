@@ -137,7 +137,7 @@ To create the storage endpoint:
 
 1. In the Visual Studio Code window, select **Open Anyway**, then open the file in the Visual Studio text editor.
 
-    Although the data is not formatted in a way that is easy to read, if you scroll to the right, you should be able to recognize your vibration messages.
+    Although the data is not formatted in a way that is easy to read, scroll to the right and you should be able to recognize your vibration messages.
 
 1. Once you verified that the file contains your logging data, close the .avro document.
 

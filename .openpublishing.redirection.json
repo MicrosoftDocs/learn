@@ -28871,6 +28871,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/explore-message-processing-tasks/index.md",
+      "redirect_url": "/training/modules/route-process-messages-from-your-iot-devices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-message-processing-tasks/1-introduction.md",
+      "redirect_url": "/training/modules/route-process-messages-from-your-iot-devices/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/explore-message-processing-tasks/2-implement-device-message-routing.md",
       "redirect_url": "/training/modules/route-process-messages-from-your-iot-devices/",
       "redirect_document_id": false
