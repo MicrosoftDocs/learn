@@ -63,7 +63,7 @@ Now let’s review the different statuses of a pull request.
 
 -	**Open pull request** - An open status means the pull request is active and is not yet merged to the base branch. You can still make commits and discuss and review potential changes with collaborators. 
 
--	**Closed pull request** - You may choose to close a pull request without merging it into the base/main branch. This can be handy if the changes proposed in the branch are no longer needed, or if another solution has been proposed in another branch.
+-	**Closed pull request** - You can choose to close a pull request without merging it into the base/main branch. This can be handy if the changes proposed in the branch are no longer needed, or if another solution has been proposed in another branch.
 
 -	**Merged pull request** - The merged pull request status means that the updates and commits from the compare branch were combined with the base branch. Anyone with push access to the repository can complete the merge. 
 
