@@ -44,7 +44,7 @@ You can use Azure Storage Explorer to upload and download Blobs from Azure Stora
 
 ## Azure PowerShell
 
-You can use PowerShell to manage the access tiers on storage accounts and blobs. Some of the cmdlets you can use to manage storage include:
+You can use PowerShell to manage the access tier for a storage account or for a blob. Some of the cmdlets you can use to manage storage include. Some of the cmdlets you can use to manage storage include:
 
 | Cmdlet | Description |
 |-----|-----|
