@@ -7,14 +7,14 @@ You can also manage users, groups, and devices by using the Microsoft Azure Acti
  -  **Software updates**. You must have installed all the updates required by the Microsoft cloud services to which you've subscribed.
  -  **Microsoft Online Services Sign-in Assistant**. You must install the appropriate version of the Microsoft Online Services Sign-in Assistant for your operating system from the Microsoft Download Center.
 
-To connect to Azure AD, at the Microsoft Azure Active Directory module for Windows PowerShell prompt, type the following command, and then select **Enter**:
+To connect to Microsoft Entra ID, at the Microsoft Azure Active Directory module for Windows PowerShell prompt, type the following command, and then select **Enter**:
 
 ```
 Connect-MsolService
 
 ```
 
-You're then prompted for administrator credentials. Once you provide your administrator credentials, you’re ready to execute cmdlets for Azure AD.
+You're then prompted for administrator credentials. Once you provide your administrator credentials, you’re ready to execute cmdlets for Microsoft Entra ID.
 
 #### Create users by using bulk import
 

@@ -42,7 +42,7 @@ To best maintain Defender for Cloud Apps posture, regularly follow the recommend
 - Verify integrations are enabled:
   - Microsoft Purview Information Protection
   - Microsoft Defender for Identity
-  - Azure Active Directory Information Protection
+  - Microsoft Entra Information Protection
   - Microsoft Defender for Endpoint
 
 ## Application lifecycle management in Azure Container Apps

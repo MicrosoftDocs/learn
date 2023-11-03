@@ -13,7 +13,7 @@ summary: To grant access to a subscription, identify the appropriate role to ass
 abstract: | 
   In this module, you will:
   - Identify the appropriate role to assign to an employee.
-  - Identify scenarios where the Global Administrator for Azure Active Directory might need to temporarily elevate their access in Azure.
+  - Identify scenarios where the Global Administrator for Microsoft Entra ID might need to temporarily elevate their access in Azure.
   - Grant the employee management access to a subscription.
 prerequisites: | 
   - A basic understanding of how Azure role-based access control (Azure RBAC) works
@@ -25,7 +25,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-rbac
 subjects:
 - identity-access

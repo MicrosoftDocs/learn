@@ -117,7 +117,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ## Create a workload identity
 
-Next, create a workload identity in Azure AD for your deployment workflow.
+Next, create a workload identity in Microsoft Entra ID for your deployment workflow.
 
 ::: zone pivot="cli"
 

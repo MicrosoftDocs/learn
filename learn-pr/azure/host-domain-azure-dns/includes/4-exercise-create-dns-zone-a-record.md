@@ -20,7 +20,7 @@ To create your DNS zone:
 
 1. Select **Create** > **DNS zone**.
 
-    ![Screenshot of DNS zone, with Create highlighted.](../media/4-dnszonecreate.png)
+    :::image type="content" source="../media/4-dnszonecreate.png" alt-text="Screenshot of DNS zone, with Create highlighted.":::
 
     The **Create DNS zone** pane appears.
 
@@ -34,7 +34,7 @@ To create your DNS zone:
     | **Instance details** |
     | Name  |   The name needs to be unique in the sandbox. Use `wideworldimportsXXXX.com`, replacing the Xs with letters or numbers. |
 
-    ![Screenshot of Create DNS zone page.](../media/4-creatednszone.png)
+    :::image type="content" source="../media/4-creatednszone.png" alt-text="Screenshot of Create DNS zone page.":::
 
 1. Select **Review + create**.
 
@@ -101,6 +101,6 @@ Here's how to use `nslookup` to verify the DNS zone configuration.
 
 1. You should see that your host name `www.wideworldimportsXXXX.com` resolves to 10.10.10.10.
 
-   ![Screenshot of Cloud Shell, showing the nslookup results.](../media/4-nslookup.png)
+    :::image type="content" source="../media/4-nslookup.png" alt-text="Screenshot of Cloud Shell, showing the nslookup results.":::
 
 You've successfully set up a DNS zone and created an A record.

@@ -1,6 +1,6 @@
 A workload identity is an identity used by a software workload (such as an application, service, script, or container) to authenticate and access other services and resources. The terminology is inconsistent across the industry, but generally a workload identity is something you need for your software entity to authenticate with some system. For example, a workload identity could be a user account that your client authenticates as to access a MongoDB database. A workload identity could also be an AWS service role attached to an EC2 instance with read-only access to an Amazon S3 bucket.
 
-In Azure Active Directory (Azure AD), workload identities are applications, service principals, and managed identities.
+In Microsoft Entra ID, workload identities are applications, service principals, and managed identities.
 
 An [application](https://learn.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#application-object) is an abstract entity, or template, defined by its application object. The application object is the _global_ representation of your application for use across all tenants. The application object describes how tokens are issued, the resources the application needs to access, and the actions that the application can take.
 
@@ -8,7 +8,7 @@ A [service principal](https://learn.microsoft.com/azure/active-directory/develo
 
 A [managed identity](https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) is a special type of service principal that eliminates the need for developers to manage credentials.
 
-Here are some ways that workload identities in Azure AD are used:
+Here are some ways that workload identities in Microsoft Entra ID are used:
 
 -   An app that enables a web app to access Microsoft Graph based on admin or user consent. This access could be either on behalf of the user or on behalf of the application.
 -   A managed identity used by a developer to provision their service with access to an Azure resource such as Azure Key Vault or Azure Storage.
@@ -32,8 +32,8 @@ At a high level, there are two types of identities: human and machine/non-human 
 
 Here are some ways you can use workload identities:
 
--   Access Azure AD protected resources without needing to manage secrets for workloads that run on Azure using [managed identity](https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview).
--   Access Azure AD protected resources without needing to manage secrets for supported scenarios such as GitHub Actions, workloads running on Kubernetes, or workloads running in compute platforms outside of Azure using [workload identity federation](https://learn.microsoft.com/azure/active-directory/develop/workload-identity-federation).
--   Review service principals and applications that are assigned to privileged directory roles in Azure AD using [access reviews for service principals](https://learn.microsoft.com/azure/active-directory/privileged-identity-management/pim-create-azure-ad-roles-and-resource-roles-review).
+-   Access Microsoft Entra ID protected resources without needing to manage secrets for workloads that run on Azure using [managed identity](https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview).
+-   Access Microsoft Entra ID protected resources without needing to manage secrets for supported scenarios such as GitHub Actions, workloads running on Kubernetes, or workloads running in compute platforms outside of Azure using [workload identity federation](https://learn.microsoft.com/azure/active-directory/develop/workload-identity-federation).
+-   Review service principals and applications that are assigned to privileged directory roles in Microsoft Entra ID using [access reviews for service principals](https://learn.microsoft.com/azure/active-directory/privileged-identity-management/pim-create-azure-ad-roles-and-resource-roles-review).
 -   Apply Conditional Access policies to service principals owned by your organization using [Conditional Access for workload identities](https://learn.microsoft.com/azure/active-directory/conditional-access/workload-identity), and [Continuous access evaluation for workload identities](https://learn.microsoft.com/azure/active-directory/conditional-access/concept-continuous-access-evaluation-workload).
 -   Secure workload identities with [Identity Protection](https://learn.microsoft.com/azure/active-directory/identity-protection/concept-workload-identity-risk).

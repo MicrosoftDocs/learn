@@ -1,4 +1,4 @@
-Immersive Reader can be integrated into applications using the **JavaScript SDK**. To use Immersive Reader, you must create an Immersive Reader resource and configure Azure Active Directory (Azure AD) authentication. Quickstarts and advanced samples for how to set up Immersive Reader with languages such as Python, C#, Java, and Node.js are available in Unit 6 - Summary.
+Immersive Reader can be integrated into applications using the **JavaScript SDK**. To use Immersive Reader, you must create an Immersive Reader resource and configure Microsoft Entra authentication. Quickstarts and advanced samples for how to set up Immersive Reader with languages such as Python, C#, Java, and Node.js are available in Unit 6 - Summary.
 
 ## Embedding Immersive Reader
 

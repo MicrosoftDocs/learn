@@ -66,7 +66,7 @@ Use the following procedure to create a storage account:
 8. Choose whether to enable secure transfer.
 9. Select **Review + Create**.
 
-![A screenshot of the Azure AD portal. The administrator is creating a storage account. The resource group is ContosoResourceGroup, the storage account name is contosostorage4, and the Access tier is set to hot.](../media/m9-storage.png)
+![A screenshot of the Microsoft Entra admin center. The administrator is creating a storage account. The resource group is ContosoResourceGroup, the storage account name is contosostorage4, and the Access tier is set to hot.](../media/m9-storage.png)
 
 The following table describes the configurable options when creating a storage account.
 

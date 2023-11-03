@@ -1,8 +1,8 @@
 This module will guide you through the creation of the basic environment used in hybrid scenarios.  This module will consist of creating the following environments:
    - an on-premises Active Directory environment
-   - a cloud based Azure AD environment
+   - a cloud based Microsoft Entra environment
 
-![Diagram that shows a basic Azure A D environment.](../media/prepare-6.png)
+![Diagram that shows a basic Microsoft Entra environment.](../media/prepare-6.png)
 
 You can use the environment you create in this module, to test various aspects of hybrid identity scenarios.  This environment will also be part of learning paths for identity technologies.
 
@@ -30,7 +30,7 @@ In order to complete this module you'll need to perform a series of tasks.  The 
 4. Create a virtual machine that will be our Active Directory domain controller
 5. Install Active Directory
 6. Create a test user in Active Directory
-7. Create an Azure Active Directory tenant
+7. Create a Microsoft Entra tenant
 
 The first two tasks will be covered in this section.  They'll allow you to prepare for execution of the PowerShell scripts and building the virtual machine that will be used.
 
@@ -68,4 +68,3 @@ Download the .zip file and extract  the contents to the ` D:\Scripts` folder.  D
 
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/8e890840-98dc-b478-2c31-f1ecf1b0a78a?autoplay=false&amp;showinfo=true]
-

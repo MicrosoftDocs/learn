@@ -13,17 +13,17 @@ We'll use code to accomplish these four steps to prepare our data:
 - Step 4. **Load random datasets**: Prepare random samples for training and testing datasets.
 
 
-### Step 1. Get the data
+### Step 1: Get the data
 
 We need to let the computer know where it can find the data. In our example, we use the rock images provided by NASA. We already downloaded and stored the photos into the *Data* folder that's in the same project folder as our Jupyter Notebook file. We'll tell the computer to load the image data from the *Data* folder.
 
 
-### Step 2. Clean the data
+### Step 2: Clean the data
 
 The rock photos from NASA come in different sizes: small, medium, and large. We'll crop the images so they're the same size (224 &times; 224 pixels). We resize the images because computers expect images to be the same size. If images vary in size, they're not as easy for the computer to process. We use the torchvision `transforms.Compose` class to resize the images to our preferred dimensions and store the modified images in local variables.
 
 
-### Step 3. Separate the data
+### Step 3: Separate the data
 
 20% of the cleaned images are for training and the other 80% is for testing. The computer should pick images by random, and not use them in the exact order they were provided by NASA. We use two techniques to do the separation: shuffling and random selection.
 
@@ -32,7 +32,7 @@ We create an index list that corresponds to the number of images. We use this li
 We use the `load_split_train_test` function to get the shuffled data for training and testing. 
 
 
-### Step 4. Load random datasets
+### Step 4: Load random datasets
 
 To load random images from our two datasets, we call the `SubsetRandomSampler` function from the torch.utils.data.sampler library. We'll load random samples of 16 images each.
 

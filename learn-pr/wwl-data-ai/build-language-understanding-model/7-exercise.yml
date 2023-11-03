@@ -11,9 +11,6 @@ metadata:
   ms.prod: learning-azure
   ms.service: azure-ai-language
   ms.subservice: azure-ai-clu
-azureSandbox: false
-labId: 126701
-labModal: true
 durationInMinutes: 35
 content: |
   [!include[](includes/7-exercise.md)]

@@ -38,7 +38,7 @@ quiz:
       explanation: Azure resource logs provide insight into the operations performed on an Azure resource by way of configuring diagnostic settings.
     - content: Provides access to create, read, update, and delete (CRUD) events.
       isCorrect: false
-      explanation: Create, read, update, and delete events are captured inside Azure Active Directory activity logs.
+      explanation: Create, read, update, and delete events are captured inside Microsoft Entra activity logs.
     - content: Provides access to log data without exposing the user to underlying queries.
       isCorrect: true
       explanation: Allows deeper performance analysis of a virtual machine without query building.

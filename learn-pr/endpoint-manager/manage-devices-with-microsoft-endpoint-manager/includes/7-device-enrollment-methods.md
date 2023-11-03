@@ -15,7 +15,7 @@ The following list provides the primary enrollment methods:
 
 - **BYOD**: The Bring Your Own Device method allows your end users to enroll their device using Intune. Bring your own devices (BYOD) include personally owned phones, tablets, and PCs. Users install and run the Company Portal app to enroll BYODs. This program lets users access company resources like email.
 - **Autopilot**: Windows Autopilot simplifies enrolling devices in Intune. You provide the enrollment details up front before the end user receives a new computer. The Windows Autopilot process runs immediately after powering on a new computer for the first time, enabling employees to configure new devices to be business-ready with just a few clicks.
-- **Bulk enroll**: To bulk enroll devices for your Azure AD tenant, you create a provisioning package with the Windows Configuration Designer (WCD) app. Applying the provisioning package to corporate-owned devices joins the devices to your Azure AD tenant and enrolls them for Intune management. Once the package is applied, it's ready for your Azure AD users to sign in.
+- **Bulk enroll**: To bulk enroll devices for your Microsoft Entra tenant, you create a provisioning package with the Windows Configuration Designer (WCD) app. Applying the provisioning package to corporate-owned devices joins the devices to your Microsoft Entra tenant and enrolls them for Intune management. Once the package is applied, it's ready for your Microsoft Entra users to sign in.
 
 Additionally, you can choose to use Device enrollment manager (DEM), Automatic enrollment, co-management, or Group Policy (GPO).
 
@@ -30,7 +30,7 @@ The following list provides the primary **personal** enrollment methods:
 
 The following list provides the primary **corporate** enrollment methods:
 
-- **DEM**: Enroll devices in Intune by using a device enrollment manager (DEM) account and the Company Portal. DEM includes an Intune permission that can be applied to an Azure AD user account and lets the user enroll up to 1,000 devices. A DEM account is useful for scenarios where devices are enrolled and prepared before handing them out to users. By design, there's a limit of 150 Device Enrollment Manager (DEM) accounts in Microsoft Intune.
+- **DEM**: Enroll devices in Intune by using a device enrollment manager (DEM) account and the Company Portal. DEM includes an Intune permission that can be applied to a Microsoft Entra user account and lets the user enroll up to 1,000 devices. A DEM account is useful for scenarios where devices are enrolled and prepared before handing them out to users. By design, there's a limit of 150 Device Enrollment Manager (DEM) accounts in Microsoft Intune.
 
 Additionally, you can choose to enroll corporate owned devices in Intune based on an international mobile equipment identifier (IMEI) number or serial number (SN), as well as a number of other enrollment methods.
 

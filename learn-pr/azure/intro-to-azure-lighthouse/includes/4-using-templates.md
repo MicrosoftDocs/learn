@@ -8,7 +8,7 @@ In this unit, you'll take a more in-depth look at Azure delegated resource manag
 
 Azure delegated resource management is the technology capability that gives Contoso access to customer resources from your own tenant, with Azure Lighthouse. Azure delegated resource management has three key components:
 
-- The principal ID and the display name of the user, group, or service principal that is being granted the permissions. The principal ID is displayed as the Object ID in Azure Active Directory.
+- The principal ID and the display name of the user, group, or service principal that is being granted the permissions. The principal ID is displayed as the Object ID in Microsoft Entra ID.
 - The role definition ID of the Azure in-built role that contains the most appropriate level of permissions that you want to grant. Together, the principal ID, principal ID display name, and the role definition are known as the authorization for Azure Lighthouse.
 - The scope of the authorization: a subscription, a resource group or multiple resource groups.
 

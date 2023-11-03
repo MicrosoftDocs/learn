@@ -2,29 +2,29 @@ Choosing the correct authentication method is the first concern for organization
 
  -  It's the first decision for an organization that wants to move to the cloud.
  -  The authentication method is a critical component of an organization’s presence in the cloud. It controls access to all cloud data and resources.
- -  It's the foundation of all the other advanced security and user experience features in Azure AD.
+ -  It's the foundation of all the other advanced security and user experience features in Microsoft Entra ID.
 
 Identity is the new control plane of IT security, so authentication is an organization’s access guard to the new cloud world. Organizations need an identity control plane that strengthens their security and keeps their cloud apps safe from intruders.
 
 ### Authentication methods<br>
 
-When the Azure AD hybrid identity solution is your new control plane, authentication is the foundation of cloud access. Choosing the correct authentication method is a crucial first decision in setting up an Azure AD hybrid identity solution. Implement the authentication method that is configured by using Azure AD Connect, which also provisions users in the cloud.
+When the Microsoft Entra hybrid identity solution is your new control plane, authentication is the foundation of cloud access. Choosing the correct authentication method is a crucial first decision in setting up a Microsoft Entra hybrid identity solution. Implement the authentication method that is configured by using Microsoft Entra Connect, which also provisions users in the cloud.
 
-Azure AD supports the following authentication methods for hybrid identity solutions.
+Microsoft Entra ID supports the following authentication methods for hybrid identity solutions.
 
 ### Cloud authentication<br>
 
-When you choose this authentication method, Azure AD handles users' sign-in process. Coupled with seamless single sign-on (SSO), users can sign in to cloud apps without having to reenter their credentials. With cloud authentication, you can choose from two options:
+When you choose this authentication method, Microsoft Entra ID handles users' sign-in process. Coupled with seamless single sign-on (SSO), users can sign in to cloud apps without having to reenter their credentials. With cloud authentication, you can choose from two options:
 
-**Option 1: Azure AD password hash synchronization.** The simplest way to enable authentication for on-premises directory objects in Azure AD. Users can use the same username and password that they use on-premises without having to deploy any additional infrastructure. Some premium features of Azure AD, like Identity Protection and Azure AD Domain Services, require password hash synchronization, no matter which authentication method you choose.
+**Option 1: Microsoft Entra password hash synchronization.** The simplest way to enable authentication for on-premises directory objects in Microsoft Entra ID. Users can use the same username and password that they use on-premises without having to deploy any additional infrastructure. Some premium features of Microsoft Entra ID, like Identity Protection and Microsoft Entra Domain Services, require password hash synchronization, no matter which authentication method you choose.
 
-**Option 2:** **Azure AD Pass-through Authentication.** Provides a simple password validation for Azure AD authentication services by using a software agent that runs on one or more on-premises servers. The servers validate the users directly with your on-premises Active Directory, which ensures that the password validation doesn't happen in the cloud.
+**Option 2:** **Microsoft Entra pass-through authentication.** Provides a simple password validation for Microsoft Entra authentication services by using a software agent that runs on one or more on-premises servers. The servers validate the users directly with your on-premises Active Directory, which ensures that the password validation doesn't happen in the cloud.
 
 Companies with a security requirement to immediately enforce on-premises user account states, password policies, and sign-in hours might use this authentication method.
 
 ### Federated authentication
 
-When you choose the Federated authentication method, Azure AD hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user’s password.
+When you choose the Federated authentication method, Microsoft Entra ID hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user’s password.
 
 The authentication system can provide additional advanced authentication requirements. Examples are smartcard-based authentication or third-party multifactor authentication.
 

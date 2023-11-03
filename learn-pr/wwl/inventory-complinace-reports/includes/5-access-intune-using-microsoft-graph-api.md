@@ -9,7 +9,7 @@ For mobile device management (MDM) scenarios, the Graph API for Intune supports 
 
 Here’s an example of how you can determine whether an application is installed on a user's device:
 
-1.  From Azure AD, get a list of devices registered to a user:
+1.  From Microsoft Entra ID, get a list of devices registered to a user:
     
     ```
     https://graph.microsoft.com/beta/users/{user}/ownedDevices
@@ -34,4 +34,4 @@ Here’s an example of how you can determine whether an application is installed
 
 You could use the Microsoft Graph Explorer, which is a tool that lets you make requests and receive responses against the Microsoft Graph. Doing so should make it easier to find out how you would build your queries against Graph for Intune. You can find the Microsoft Graph Explorer at: [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). For examples of scripts used to access and manipulate data in Intune using Microsoft Graph, refer to the Graph API PowerShell-Intune-Sample script at: [Microsoft Graph PowerShell Intune Samples](https://github.com/microsoftgraph/powershell-intune-samples).
 
-Before using Microsoft Graph Explorer or running scripts against Microsoft Graph API, permissions must be assigned in Azure AD to the user running the tool. Microsoft Graph controls access to resources using permission scopes. As a developer, you must specify the permission scopes you need to access Intune resources. Typically, you specify the permission scopes you need in the Azure AD portal. It's also possible to assign the required permission in Microsoft Graph Explorer if you're logged on as a Global Administrator.
+Before using Microsoft Graph Explorer or running scripts against Microsoft Graph API, permissions must be assigned in Microsoft Entra ID to the user running the tool. Microsoft Graph controls access to resources using permission scopes. As a developer, you must specify the permission scopes you need to access Intune resources. Typically, you specify the permission scopes you need in the Microsoft Entra admin center. It's also possible to assign the required permission in Microsoft Graph Explorer if you're logged on as a Global Administrator.

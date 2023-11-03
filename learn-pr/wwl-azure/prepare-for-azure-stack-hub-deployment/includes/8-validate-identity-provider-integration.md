@@ -1,18 +1,20 @@
-Use the Azure Stack Hub Readiness Checker tool (**AzsReadinessChecker**) to validate that your Azure Active Directory (Azure AD) is ready to use with Azure Stack Hub. Validate your Azure identity solution before you begin an Azure Stack Hub deployment.
+Use the Azure Stack Hub Readiness Checker tool (**AzsReadinessChecker**) to validate that your Microsoft Entra ID is ready to use with Azure Stack Hub. Validate your Azure identity solution before you begin an Azure Stack Hub deployment.
 
 The readiness checker validates:
 
- -  Azure AD as an identity provider for Azure Stack Hub.
- -  The Azure AD account that you plan to use can sign in as a global administrator of your Azure AD.
+ -  Microsoft Entra ID as an identity provider for Azure Stack Hub.
+ -  The Microsoft Entra account that you plan to use can sign in as a global administrator of your Microsoft Entra ID.
 
-Validation ensures your environment is ready for Azure Stack Hub to store information about users, applications, groups, and service principals from Azure Stack Hub in your Azure AD.
+Validation ensures your environment is ready for Azure Stack Hub to store information about users, applications, groups, and service principals from Azure Stack Hub in your Microsoft Entra ID.
 
 Download the latest version of the Azure Stack Hub Readiness Checker tool (AzsReadinessChecker) from the [PowerShell Gallery](https://aka.ms/AzsReadinessChecker).
 
-## The Azure Active Directory (Azure AD) environment
+<a name='the-azure-active-directory-azure-ad-environment'></a>
 
- -  Identify the Azure AD account to use for Azure Stack Hub and ensure it's an Azure AD global administrator.
- -  Identify your Azure AD tenant name. The tenant name must be the primary domain name for your Azure AD. For example, **contoso.onmicrosoft.com**.
+## The Microsoft Entra environment
+
+ -  Identify the Microsoft Entra account to use for Azure Stack Hub and ensure it's a Microsoft Entra Global Administrator.
+ -  Identify your Microsoft Entra tenant name. The tenant name must be the primary domain name for your Microsoft Entra ID. For example, **contoso.onmicrosoft.com**.
 
 ## Steps to validate Azure identity
 
@@ -25,14 +27,14 @@ Download the latest version of the Azure Stack Hub Readiness Checker tool (AzsRe
     
     ```
 
-2.  From the PowerShell prompt, run the following command. Replace contoso.onmicrosoft.com with your Azure AD tenant name:
+2.  From the PowerShell prompt, run the following command. Replace contoso.onmicrosoft.com with your Microsoft Entra tenant name:
     
     ```
     Connect-AzAccount -tenant contoso.onmicrosoft.com
     
     ```
 
-3.  From the PowerShell prompt, run the following command to start validation of your Azure AD. Replace contoso.onmicrosoft.com with your Azure AD tenant name:
+3.  From the PowerShell prompt, run the following command to start validation of your Microsoft Entra ID. Replace contoso.onmicrosoft.com with your Microsoft Entra tenant name:
     
     ```
     Invoke-AzsAzureIdentityValidation -AADDirectoryTenantName contoso.onmicrosoft.com

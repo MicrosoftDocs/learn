@@ -4,6 +4,8 @@ Whether you choose IaaS, PaaS, DBaaS, or a combination of these services, you ca
 
 ## Examples of open-source tools
 
+This section describes some tools often used with Linux on Azure.
+
 ### Prometheus
 
 Monitor your Linux environment on Azure with Prometheus, a popular open-source metric monitoring solution. On Azure, you don't need to set up and manage a Prometheus server with a database. Instead, use Azure Monitor managed service for Prometheus, a component of [Azure Monitor Metrics](/azure/azure-monitor/essentials/data-platform-metrics). Prometheus metrics share some features with platform and custom metrics, but use some different features to better support open-source tools such as [PromQL](https://aka.ms/azureprometheus-promio-promql) and [Grafana](/azure/managed-grafana/overview). The service allows you to collect and analyze metrics at scale by using a Prometheus-compatible monitoring solution.
@@ -27,11 +29,11 @@ Operate and manage automation with a [Red Hat solution](https://azuremarketplace
 
 The [Azure Command-Line Interface (CLI)](/cli/azure/what-is-azure-cli) is a cross-platform command-line tool to execute administrative commands on Azure resources. Run commands through a terminal using interactive command-line prompts or batch commands together in a script.
 
-Azure CLI works with several shells, including Windows PowerShell, PowerShell, Cmd, Bash, and other Linux shells. First launch a shell, and then run the command at the shell prompt. To automate repetitive tasks, you assemble the CLI commands into a shell script by using the appropriate script syntax, and then execute the script.
+Azure CLI works with several shells, including Windows PowerShell, PowerShell, Cmd.exe, Bash, and other Linux shells. First launch a shell, and then run the command at the shell prompt. To automate repetitive tasks, you assemble the CLI commands into a shell script by using the appropriate script syntax, and then execute the script.
 
 ## Azure portal
 
-The [Azure portal](/azure/azure-portal/) is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription by using a graphical user interface and you can build, manage, and monitor everything from Linux virtual machines to simple web apps to complex cloud deployments in the portal.
+The [Azure portal](/azure/azure-portal/) is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription by using a graphical user interface and you can build, manage, and monitor everything from Linux virtual machines, to simple web apps, to complex cloud deployments in the portal.
 
 ## Azure Resource Manager
 
@@ -45,7 +47,7 @@ The following image shows the role Azure Resource Manager plays in handling Azur
 
 ## Security tools and capabilities
 
-Azure provides multilayered security across physical datacenters, infrastructure, and operations in Azure. No matter which Linux distribution you choose, you can protect your workloads by using built-in controls and services in Azure across identity, data, networking, and apps. If you're building up your infrastructure from scratch, much of the initial security setup will be similar to what you've done previously on Linux. After that, amp up security with Microsoft Defender for Cloud. You can employ it across Azure, other cloud platforms, and on-premises. It allows you to continuously assess your security posture, secure resources and services, and detect and resolve threats. Other security services include Azure Application Gateway for web front ends, Azure Key Vault, Azure Active Directory, Azure DDos Protection, and Azure Information Protection.
+Azure provides multilayered security across physical datacenters, infrastructure, and operations in Azure. No matter which Linux distribution you choose, you can protect your workloads by using built-in controls and services in Azure across identity, data, networking, and apps. If you're building up your infrastructure from scratch, much of the initial security setup will be similar to what you've done previously on Linux. After that, raise security with Microsoft Defender for Cloud. You can employ it across Azure, other cloud platforms, and on-premises. It allows you to continuously assess your security posture, secure resources and services, and detect and resolve threats. Other security services include Azure Application Gateway for web front ends, Azure Key Vault, Microsoft Entra ID, Azure DDoS Protection, and Azure Information Protection.
 
 ## Business continuity and disaster recovery
 
@@ -53,7 +55,7 @@ Azure offers an end-to-end backup and disaster recovery solution for Linux that'
 
 - **Azure Backup** &mdash; Back up cloud and on-site resources to the Azure cloud securely with no management or maintenance required. Azure Backup automatically allocates and manages backup storage, and it uses a pay-as-you-go model, meaning you only pay for the storage you consume.
 
-- **Azure Site Recovery** &mdash; Ensure business continuity by keeping business apps and workloads running during outages. Site Recovery [replicates](/azure/site-recovery/azure-to-azure-quickstart) workloads running on physical and virtual machines from a primary site to a secondary location.
+- **Azure Site Recovery** &mdash; Ensure business continuity by keeping business apps and workloads running during outages. Site Recovery [replicates workloads](/azure/site-recovery/azure-to-azure-quickstart) running on physical and virtual machines from a primary site to a secondary location.
 
 - **Azure Archive Storage** &mdash; Provides a low-cost means of delivering durable, highly available, secure cloud storage and data management for data that's rarely accessed.
 

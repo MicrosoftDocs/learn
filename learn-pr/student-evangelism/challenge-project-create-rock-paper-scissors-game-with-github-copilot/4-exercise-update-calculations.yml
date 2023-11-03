@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.exercise-update-calculations
+title: Exercise - Update your calculated values
+metadata:
+  title: Exercise - Update your calculated values
+  description: "Exercise - Update your calculated values"
+  ms.date: 06/02/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-exercise-update-calculations.md)]

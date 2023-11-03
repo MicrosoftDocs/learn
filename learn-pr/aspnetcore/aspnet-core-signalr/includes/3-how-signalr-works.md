@@ -19,7 +19,7 @@ namespace RealTime.Models;
 public record Notification(string Text, DateTime Date);
 ```
 
-The object can be shared when you use the .NET client SDK, so that the server and client have exactly the same object. Imagine a simple notification hub:
+The object can be shared when you use the .NET client SDK, so that the server and client have exactly the same object. Imagine a notification hub:
 
 ```csharp
 using Microsoft.AspNetCore.SignalR;
@@ -29,7 +29,7 @@ using RealTime.Models;
 
 namespace ExampleServer.Hubs;
 
-public class NotificationHub : Hub
+public sealed class NotificationHub : Hub
 {
     public Task NotifyAll(Notification notification) =>
         Clients.All.SendAsync("NotificationReceived", notification);
@@ -60,21 +60,17 @@ using RealTime.Models;
 
 namespace ExampleServer.Services;
 
-public class NotificationService
+public sealed class NotificationService(
+    IHubContext<NotificationHub> hubContext)
 {
-    private readonly IHubContext<NotificationHub> _hubContext;
-
-    public NotificationService(IHubContext<NotificationHub> hubContext) =>
-        _hubContext = hubContext;
-
     public Task SendNotificationAsync(Notification notification) =>
         notification is not null
-            ? _hubContext.Clients.All.SendAsync("NotificationReceived", notification)
+            ? hubContext.Clients.All.SendAsync("NotificationReceived", notification)
             : Task.CompletedTask;
 }
 ```
 
-The preceding C# code relies on `IHubContext<NotificationHub>` to access the contextual listing of clients, exposing the ability to broadcast notifications. `_hubContext` is used to fire the `"NotificationReceived"` event, but it isn't intended to be used to call the hub's `NotifyAll` method.
+The preceding C# code relies on `IHubContext<NotificationHub>` to access the contextual listing of clients, exposing the ability to broadcast notifications. The `hubContext` primary constructor parameter that's captured in scope is used to fire the `"NotificationReceived"` event, but it isn't intended to be used to call the hub's `NotifyAll` method.
 
 ### Methods
 
@@ -84,7 +80,7 @@ The preceding C# code relies on `IHubContext<NotificationHub>` to access the con
 - The method name is used to call the method from clients. You can customize it by using <xref:Microsoft.AspNetCore.SignalR.HubMethodNameAttribute>.
 - Parameters are optional, but when they're defined, clients are expected to provide corresponding arguments.
 
-Methods are not required to fire events, but they often do.
+Methods aren't required to fire events, but they often do.
 
 ### Events
 
@@ -126,19 +122,19 @@ You call events from an <xref:Microsoft.AspNetCore.SignalR.IClientProxy> instanc
 
 Consider the following images, which can help you visualize how the hub sends messages to targeted clients. You can expand the images for improved readability.
 
-* **Broadcast to all**
+- **Broadcast to all**
 
     :::image type="content" source="../media/signalr-all.png" lightbox="../media/signalr-all-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.All syntax.":::
 
     All connected clients receive this message, regardless of the group that they might or might not belong to.
 
-* **Isolated user**
+- **Isolated user**
 
     :::image type="content" source="../media/signalr-user.png" lightbox="../media/signalr-user-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.User syntax.":::
 
     A single user receives this message, regardless of how many devices they're currently using.
 
-* **Isolated group**
+- **Isolated group**
 
     :::image type="content" source="../media/signalr-group.png" lightbox="../media/signalr-group-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.Group syntax.":::
 
@@ -195,10 +191,10 @@ public sealed class Consumer : IAsyncDisposable
 
 ### Call hub methods
 
-If it is given a client `HubConnection` instance that has successfully started, the client can call methods on a hub by using the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A> or <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A> extensions. If the hub method returns a `Task<TResult>`, the result of `InvokeAsync<TResult>` is of type `TResult`. If the hub method returns `Task`, there is no result. Both `InvokeAsync` and `SendAsync` expect the name of the hub method, and zero to ten parameters.
+If it's given a client `HubConnection` instance that has successfully started, the client can call methods on a hub by using the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A> or <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A> extensions. If the hub method returns a `Task<TResult>`, the result of `InvokeAsync<TResult>` is of type `TResult`. If the hub method returns `Task`, there's no result. Both `InvokeAsync` and `SendAsync` expect the name of the hub method, and zero to ten parameters.
 
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A>: Invokes a hub method on the server by using the specified method name and optional arguments.
-- <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A>: Invokes a hub method on the server by using the specified method name and optional arguments. This method does *not* wait for a response from the receiver.
+- <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A>: Invokes a hub method on the server by using the specified method name and optional arguments. This method *doesn't* wait for a response from the receiver.
 
 ### An example hub method invocation
 
@@ -292,6 +288,7 @@ public sealed class Consumer : IAsyncDisposable
     private async Task OnNotificationReceivedAsync(Notification notification)
     {
         // Do something meaningful with the notification.
+        await Task.CompletedTask;
     }
 
     // Omitted for brevity.
@@ -304,4 +301,4 @@ The `OnNotificationReceivedAsync` method is called when the server's hub instanc
 
 The server code for the web application needs to have a `Hub` implementation and expose a route to clients. The `Hub` could use the order object's unique identifier to create a group for tracking. All order status change updates could then be communicated in this group.
 
-The client code would also need to be updated to indicate that the Contoso Pizza application is a Blazor WebAssembly app. You could use either the JavaScript SDK or the .NET client SDK. You would replace the client-side polling functionality with code that builds a `HubConnection`, and then start the connection to the server. As it navigates to the order tracking page, the code would have to join the order's specific group where the change updates will be sent. You subscribe to the event for order status changes, and then handle it accordingly.
+The client code would also need to be updated to indicate that the Contoso Pizza application is a Blazor WebAssembly app. You could use either the JavaScript SDK or the .NET client SDK. You would replace the client-side polling functionality with code that builds a `HubConnection`, and then start the connection to the server. As it navigates to the order tracking page, the code would have to join the order's specific group where the change updates are sent. You subscribe to the event for order status changes, and then handle it accordingly.

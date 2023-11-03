@@ -25,7 +25,7 @@ levels:
 roles:
 - developer
 products:
-- azure-active-directory
+- entra-id
 - microsoft-identity-web
 subjects:
 - identity-access

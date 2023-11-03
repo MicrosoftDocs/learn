@@ -6,13 +6,13 @@ We can pull container images from Azure Container Registry using many container 
 
 Azure Container Registry doesn't support unauthenticated access and requires authentication for all operations. Registries support two types of identities:
 
-- **Azure Active Directory identities**, including both user and service principals. Access to a registry with an Azure Active Directory identity is role-based, and identities can be assigned one of three roles: **reader** (pull access only), **contributor** (push and pull access), or **owner** (pull, push, and assign roles to other users).
+- **Microsoft Entra identities**, including both user and service principals. Access to a registry with a Microsoft Entra identity is role-based, and identities can be assigned one of three roles: **reader** (pull access only), **contributor** (push and pull access), or **owner** (pull, push, and assign roles to other users).
 - The **admin account** included with each registry. The admin account is disabled by default.
 
-The admin account provides a quick option to try a new registry. You can enable the account and use its username and password in workflows and apps that need access. After you've confirmed the registry works as expected, you should disable the admin account, and use Azure Active Directory identities exclusively to ensure the security of your registry.
+The admin account provides a quick option to try a new registry. You can enable the account and use its username and password in workflows and apps that need access. After you've confirmed the registry works as expected, you should disable the admin account, and use Microsoft Entra identities exclusively to ensure the security of your registry.
 
 > [!IMPORTANT]
-> Only use the registry admin account for early testing and exploration, and do not share the username and password. Disable the admin account and use only role-based access with Azure Active Directory identities to maximize the security of your registry.
+> Only use the registry admin account for early testing and exploration, and do not share the username and password. Disable the admin account and use only role-based access with Microsoft Entra identities to maximize the security of your registry.
 
 ## Enable the registry admin account
 

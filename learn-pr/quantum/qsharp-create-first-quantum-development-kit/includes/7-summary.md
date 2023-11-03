@@ -21,5 +21,3 @@ Explore the [Azure Quantum documentation](/quantum/?azure-portal=true). There yo
 Once you're ready to dive deeper, you can [browse code samples](/samples/browse/?languages=qsharp&azure-portal=true) or [learn quantum computing with the Quantum Katas](/azure/quantum/tutorial-qdk-intro-to-katas?azure-portal=true).
 
 To learn about real-world usage of the QDK, check out this blog post on Microsoft Quantum's collaboration with Pacific Northwest National Laboratory (PNNL), [Simulating nature with the new Microsoft Quantum Development Kit chemistry library](https://cloudblogs.microsoft.com/quantum/2018/12/04/simulating-nature-with-the-new-microsoft-quantum-development-kit-chemistry-library/?azure-portal=true).
-
-Be sure to [join the quantum community](/quantum/overview/understanding-quantum-computing) if you have questions or want to contribute to Microsoft's many open-source projects.

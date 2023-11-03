@@ -7,8 +7,7 @@ metadata:
   ms.date: 09/24/2018
   author: flang-msft
   ms.author: franlanglois
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
     - devx-track-extended-java

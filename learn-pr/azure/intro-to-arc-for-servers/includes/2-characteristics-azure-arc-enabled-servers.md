@@ -26,7 +26,7 @@ Together, the Hybrid Instance Metadata service, Guest Configuration agent, and E
 
 ## What are the supported methods for onboarding machines to Azure Arc-enabled servers?
 
-With Azure Arc-enabled servers, the connection to Azure relies on the Connected Machine agent. You can install the agent on individual Windows or Linux servers manually or by running a script available from the Azure portal. This requires that you authenticate to your Azure subscription interactively for each installation. In enterprise environments, you'll likely perform installations at scale by using a script or PowerShell Desired State Configuration-based installation with authentication via an Azure Active Directory (Azure AD) service principal. You can automate this service principal script by using the tooling of your choice, including Endpoint Configuration Manager, Group Policy, and Ansible. Effectively, to Arc-enable a server, you need:
+With Azure Arc-enabled servers, the connection to Azure relies on the Connected Machine agent. You can install the agent on individual Windows or Linux servers manually or by running a script available from the Azure portal. This requires that you authenticate to your Azure subscription interactively for each installation. In enterprise environments, you'll likely perform installations at scale by using a script or PowerShell Desired State Configuration-based installation with authentication via a Microsoft Entra service principal. You can automate this service principal script by using the tooling of your choice, including Endpoint Configuration Manager, Group Policy, and Ansible. Effectively, to Arc-enable a server, you need:
 
 - A direct connection from the server to Azure
 - The Connected Machine agent installed on the server

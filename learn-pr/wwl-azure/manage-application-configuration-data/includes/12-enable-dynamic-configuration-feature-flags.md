@@ -19,7 +19,7 @@ After completing this lab, you'll be able to:
  -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).
  -  **Set up an Azure DevOps organization:** If you don't already have an Azure DevOps organization that you can use for this lab, create one by following the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization).
  -  Identify an existing Azure subscription or create a new one.
- -  Verify that you have a Microsoft or Azure AD account with the Contributor or the Owner role in the Azure subscription. For details, refer to [List Azure role assignments using the Azure portal](/azure/active-directory/roles/manage-roles-portal) and [View and assign administrator roles in Azure Active Directory](/azure/active-directory/roles/manage-roles-portal).
+ -  Verify that you have a Microsoft or Microsoft Entra account with the Contributor or the Owner role in the Azure subscription. For details, refer to [List Azure role assignments using the Azure portal](/azure/active-directory/roles/manage-roles-portal) and [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/roles/manage-roles-portal).
 
 ## Exercises
 

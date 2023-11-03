@@ -48,17 +48,19 @@ The next step is to capture the data-flow between each interaction:
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![User External Entity to PAW Process.](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to User External Entity](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
-|![User External Entity to Azure AD Process.](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Azure AD Process to User External Entity](../media/elements/process-25.png)</br>Azure AD|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Phone authentication</li><li>2FA</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
+|![User External Entity to PAW Process.](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to User External Entity](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Microsoft Entra authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
+|![User External Entity to Microsoft Entra ID Process.](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Microsoft Entra ID Process to User External Entity](../media/elements/process-25.png)</br>Microsoft Entra ID|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Phone authentication</li><li>2FA</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
 
-### Azure AD
+<a name='azure-ad'></a>
 
-![Azure AD threat model.](../media/screenshots/user-threat-model.png)
+### Microsoft Entra ID
+
+![Microsoft Entra threat model.](../media/screenshots/user-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![Azure AD Process to User External Entity.](../media/elements/process-25.png)</br>Azure AD|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![User External Entity to Azure AD Process](../media/elements/external-entity-25.png)</br>User|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
-|![Azure AD Process to PAW Process.](../media/elements/process-25.png)</br>Azure AD|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to Azure AD Process](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Authentication tokens and credentials</li><li>Requests and responses</li></ul>|
+|![Microsoft Entra ID Process to User External Entity.](../media/elements/process-25.png)</br>Microsoft Entra ID|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![User External Entity to Microsoft Entra ID Process](../media/elements/external-entity-25.png)</br>User|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Microsoft Entra authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
+|![Microsoft Entra ID Process to PAW Process.](../media/elements/process-25.png)</br>Microsoft Entra ID|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to Microsoft Entra ID Process](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Authentication tokens and credentials</li><li>Requests and responses</li></ul>|
 
 ### PAW
 
@@ -66,7 +68,7 @@ The next step is to capture the data-flow between each interaction:
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![PAW Process to Azure AD Process.](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Azure AD Process](../media/elements/process-25.png)</br>Azure AD|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|*See **Azure AD** for details*|
+|![PAW Process to Microsoft Entra ID Process.](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Microsoft Entra ID Process](../media/elements/process-25.png)</br>Microsoft Entra ID|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|*See **Microsoft Entra ID** for details*|
 |![PAW Process to User External Entity.](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![User External Entity](../media/elements/external-entity-25.png)</br>User|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|*See **User** for details*|
 |![PAW Process to Fourth Coffee Process.](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Fourth Coffee Process](../media/elements/process-25.png)</br>Fourth Coffee|![None](../media/supporting-icons/none-25.png)</br>No|<ul><li>Requests and responses</li></ul>|
 

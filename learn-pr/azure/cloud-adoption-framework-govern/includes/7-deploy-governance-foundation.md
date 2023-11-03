@@ -78,7 +78,7 @@ The following questions might help illustrate reasons for you to scale your subs
   - Different customers
   - Different departments or business units
   - Different projects
-- Are you able to spread the cost of a shared infrastructure across application owners? (Often, a dedicated subscription is used for shared infrastructure, like Azure Active Directory, monitoring, or patching tools.)
+- Are you able to spread the cost of a shared infrastructure across application owners? (Often, a dedicated subscription is used for shared infrastructure, like Microsoft Entra ID, monitoring, or patching tools.)
 - Do you need to create clearer separation of duties through shared service subscriptions for operations management, security, identity sync, connectivity, or DevOps teams?
 
 ### Exercise: Add subscriptions to your management groups

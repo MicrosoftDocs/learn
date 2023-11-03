@@ -58,7 +58,7 @@ roles:
 - business-user
 - student
 products:
-- azure-active-directory
+- entra-id
 - azure
 - m365
 subjects:

@@ -1,6 +1,3 @@
-
-
-
 ## Scenario
 
 The organizations you support have dynamic business needs for processing, updating data, and reporting. The SAP workloads are among the largest in your company.
@@ -11,7 +8,7 @@ You understand and communicate risks, and suggest solutions using Azure to autom
 
 ## Learning objectives
 
-You will:
+You'll:
 
 - Discover the SAP and Microsoft partnership.
 - Explore your options with SAP on Azure.
