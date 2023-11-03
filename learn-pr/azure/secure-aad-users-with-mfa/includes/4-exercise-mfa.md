@@ -1,7 +1,5 @@
 <a name='configure-azure-ad-mfa-for-applications'></a>
 
-## Configure Microsoft Entra multifactor authentication for applications
-
 You can walk through the basic steps necessary to configure and enable Microsoft Entra multifactor authentication using Conditional policies. *Keep in mind that a real deployment requires significant thought and planning*. Make sure that you review the documentation links at the end of this module before you enable MFA for your environments.
 
 > [!IMPORTANT]
