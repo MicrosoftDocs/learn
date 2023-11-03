@@ -1,13 +1,13 @@
 As we mentioned earlier in the module, we recommend that administrators enable users to be able to select more than one authentication method in case their primary method is unavailable.
 
-When a user signs into a service that requires MFA the first time, they'll be asked to register their preferred multifactor authentication method as shown in the following screenshot:
+When a user signs into a service that requires MFA the first time, they're asked to register their preferred multifactor authentication method as shown in the following screenshot:
 
 ![Screenshot showing the registration info.](../media/5-setup-user.png)
 
 > [!TIP]
 > If you followed the previous exercise and turned on MFA for an account and app, you can try accessing that app with the given user account, and you should see the preceding flow.
 
-Once they've registered, each time users sign into a service or app that requires MFA, the Azure login process will prompt for the additional authentication information as shown in the following image:
+Once they register, each time users sign into a service or app that requires MFA, the Azure sign-in process prompts for the authentication information as shown in the following image:
 
 ![Screenshot that depicts asking for additional authentication information via one of four methods.](../media/5-identity-options.png)
 
@@ -31,15 +31,15 @@ The following table lists the authentication methods and the services that can u
 | **Voice call** | Microsoft Entra multifactor authentication and SSPR |
 | **App passwords** | Microsoft Entra multifactor authentication in certain cases |
 
-Let's explore these in a bit more detail.
+Let's explore these methods in a bit more detail.
 
 ### Password
 
-This is the only method that you can’t disable.
+This method is the only one that you can’t disable.
 
 ### Security questions
 
-This method is available only for non-administrative accounts that use Self-Service Password Reset.
+This method is available only for nonadministrative accounts that use Self-Service Password Reset.
 
 * Azure stores security questions privately and in a security-enhanced manner on a user object in the directory. Only users can answer the questions, and only during registration. An administrator can’t read or change a user’s questions or answers.
 
@@ -69,11 +69,11 @@ This method is available for Android and iOS. Users can register their mobile ap
 
 * The Microsoft Authenticator app helps prevent unauthorized access to accounts and helps stop fraudulent transactions by pushing a notification to your smartphone or tablet. Users view the notification and confirm or deny the request.
 
-* Users can use the Microsoft Authenticator app or a third-party app as a software token to generate an OATH verification code. After entering the username and password, the users enter the code provided by the app on the sign-in screen. The verification code provides a second form of authentication. Users can also set the Microsoft Authenticator app to deliver a push notification that they'll select and approve to sign in.
+* Users can use the Microsoft Authenticator app or a third-party app as a software token to generate an OATH verification code. After the user enters the username and password, the users enter the code provided by the app on the sign-in screen. The verification code provides a second form of authentication. Users can also set the Microsoft Authenticator app to deliver a push notification that they select and approve to sign in.
 
 ### OATH hardware tokens
 
-**OATH** is an open standard that specifies how to generate one-time password codes. Microsoft Entra ID supports the use of OATH-TOTP `SHA-1` tokens of the 30-second or 60-second variety. Customers can get these tokens from the vendor of their choice. Note that secret keys are limited to 128 characters, which might not be compatible with all tokens.
+**OATH** is an open standard that specifies how to generate one-time password codes. Microsoft Entra ID supports the use of OATH-TOTP `SHA-1` tokens of the 30-second or 60-second variety. Customers can get these tokens from the vendor of their choice. Secret keys are limited to 128 characters, which might not be compatible with all tokens.
 
 ### OATH software tokens
 
@@ -85,11 +85,11 @@ Azure sends a verification code to a mobile phone using SMS. The user must enter
 
 ### Voice call
 
-Azure uses an automated voice system to call the number and the owner uses the keypad to confirm the authentication. Note that this option is not available to the free/trial Microsoft Entra tier.
+Azure uses an automated voice system to call the number and the owner uses the keypad to confirm the authentication. This option isn't available to the free/trial Microsoft Entra tier.
 
 ### App password
 
-Certain non-browser apps don’t support Microsoft Entra multifactor authentication. If users are enabled for Microsoft Entra multifactor authentication and try to use non-browser apps, they’ll be unable to authenticate. The app password allows users to continue to authenticate.
+Certain nonbrowser apps don’t support Microsoft Entra multifactor authentication. If users are enabled for Microsoft Entra multifactor authentication and try to use nonbrowser apps, they're unable to authenticate. The app password allows users to continue to authenticate.
 
 ## Monitoring adoption
 
@@ -97,7 +97,7 @@ Microsoft Entra ID includes a **Usage & insights** view in the **Monitoring** se
 
 ![Screenshot showing the metrics view for MFA.](../media/5-monitor-auth-methods.png)
 
-In addition to the overall registration numbers, you can also see the success and failure of registrations per authentication method. This allows you to understand which authentication methods your users most commonly registered and which ones are easy for them to register. This data is calculated using the last 30 days of audit logs from the combined security info registration and SSPR registration experiences.
+In addition to the overall registration numbers, you can also see the success and failure of registrations per authentication method. This fact allows you to understand which authentication methods your users most commonly registered and which ones are easy for them to register. This data is calculated using the last 30 days of audit logs from the combined security info registration and SSPR registration experiences.
 
 You can drill down and see the latest registration audit information for each user by clicking the chart.
 
