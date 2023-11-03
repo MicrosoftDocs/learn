@@ -66,7 +66,7 @@ SELECT c.CustomerID, o.SalesOrderID
 FROM Sales.Customer AS c
 JOIN Sales.SalesOrderHeader AS o
     ON c.CustomerID = o.CustomerID
-WHERE c. CountryRegion = 'Canada';
+WHERE c.CountryRegion = 'Canada';
 ```
 
 So how do you decide whether to write a query involving multiple tables as a JOIN or with a subquery? Sometimes, it just depends on what you’re more comfortable with. Most nested queries that are easily converted to JOINs will actually BE converted to a JOIN internally. For such queries, there is then no real difference in writing the query one way vs another.
