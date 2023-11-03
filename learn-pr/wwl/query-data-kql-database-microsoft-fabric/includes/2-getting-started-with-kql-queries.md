@@ -54,7 +54,8 @@ As mentioned, T-SQL can be run to a limit extent against a Microsoft Fabric KQL 
 2. **Functionality**: T-SQL has a wider range of functions and features than KQL.
 3. **Procedural programming**: T-SQL supports procedural programming, which allows developers to write complex scripts and stored procedures.
 
-    >[!NOTE] If you’re familiar with SQL and want to learn KQL, you can translate SQL queries into KQL using the `-- explain syntax`
+    >[!NOTE] 
+    >If you’re familiar with SQL and want to learn KQL, you can translate SQL queries into KQL using the `-- explain syntax`
     > For example: 
     >    ```tsql
     >   --
