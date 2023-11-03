@@ -229,7 +229,7 @@ const filePath = './file.txt';
 async function readFileAsync() {
     try {
         // `await` before the async method
-        const data = await fs.readFile(filePath, 'utf8');
+        const data = await fs.readFile(filePath, 'utf-8');
         console.log(data);
         console.log('Done!');
     } catch (error) {
@@ -248,24 +248,33 @@ When async/await was released, the keywords could only be used in functions with
 
 ### Top-level async/await
 
-The most recent versions of Node. have top-level async/await. 
+The most recent versions of Node.js added top-level async/await for ES6 modules. You need to add a property named `type` in the **package.json** with a value of `module` to use this feature. 
+
+```json
+{
+    "type": "module"
+}
+```
+
+Then you can use the `await` keyword at the top level of your code
 
 ```javascript
 // top-level async/await asynchronous example
 
 const fs = require('fs').promises;
+
 const filePath = './file.txt';
 
 // `async` before the parent function
 try {
-    // `await` before the async method
-    const data = await fs.readFile(filePath, 'utf8');
-    console.log(data);
-    console.log('Done!');
+  // `await` before the async method
+  const data = await fs.readFile(filePath, 'utf-8');
+  console.log(data);
+  console.log('Done!');
 } catch (error) {
-    console.log('An error occurred...: ', error);
+  console.log('An error occurred...: ', error);
 }
-console.log(`I'm the last line of the file!`)
+console.log("I'm the last line of the file!");
 ```
 
 
@@ -283,7 +292,7 @@ const filePath = './file.txt';
 
 try {
     // request to read a file
-    const data = fs.readFileSync(filePath, 'utf8');
+    const data = fs.readFileSync(filePath, 'utf-8');
     console.log(data);
     console.log('Done!');
 } catch (error) {
