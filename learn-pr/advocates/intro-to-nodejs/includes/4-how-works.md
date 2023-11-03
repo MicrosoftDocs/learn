@@ -143,15 +143,15 @@ Because you might need to call a subsequent async callback and then another, the
 // nested callback example
 fs.readFile(param1, param2, (error, data)=>{
     if(!error){
-        fs.writeFile(..., (error, data)=>{
+        fs.writeFile(paramsWrite, (error, data)=>{
             if(!error){
-                fs.readFile(..., (error, data)=>{
+                fs.readFile(paramsRead, (error, data)=>{
                     if(!error){
                         // do something
                     }
                 })
             }
-        }
+        })
     }
 })
 ```
