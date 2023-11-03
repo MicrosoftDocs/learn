@@ -14,8 +14,6 @@ You can then centrally control and enforce role-based-access and Conditional Acc
  -  Password complexity and password lifetime policies configured for your Microsoft Entra ID.
  -  Configure Conditional Access policies to require multifactor authentication and other signals such as risky-user or sign-in risk.
 
-<a name='configure-azure-ad-sign-in-for-windows-vms'></a>
-
 ### Configure Microsoft Entra sign-in for Windows VMs
 
 To use Microsoft Entra sign-in for Windows VM in Azure, you must:
@@ -23,17 +21,15 @@ To use Microsoft Entra sign-in for Windows VM in Azure, you must:
  -  First enable the Microsoft Entra sign-in option for your Windows VM.
  -  Then configure Azure role assignments for users who are authorized to sign into the VM.
 
-:::image type="content" source="../media/azure-authentication-windows-machine-07ba6c3c.png" alt-text="Screenshot of create or configure Windows virtual machine dialog.  The checkbox for \`Login with Azure A D\` is selected.":::
+:::image type="content" source="../media/azure-authentication-windows-machine-07ba6c3c.png" alt-text="Screenshot of create or configure Windows virtual machine dialog.  The checkbox for Login with Microsoft Entra ID is selected.":::
 
-
-<a name='configure-azure-ad-sign-in-for-linux-vms'></a>
 
 ### Configure Microsoft Entra sign-in for Linux VMs
 
-You can enable Microsoft Entra sign-in for any of the supported Linux distributions mentioned using the Azure portal. As an example, to create an Ubuntu Server 18.04 Long Term Support (LTS) VM in Azure with Microsoft Entra authentication:
+You can enable Microsoft Entra sign-in for any of the supported Linux distributions mentioned using the Azure portal. As an example, to create an Ubuntu Server 18.04 Long Term Support (LTS) VM in Azure with Microsoft Entra ID authentication:
 
 1.  Sign into the Azure portal, with an account that has access to create VMs, and select + Create a resource.
 2.  Select **Create** under Ubuntu Server 18.04 LTS in the Popular view.
-3.  On the Management tab, Check the box to enable `Login with Azure Active Directory (Preview)`.
+3.  On the Management tab, Check the box to enable `Login with Microsoft Entra ID`.
 4.  Ensure System assigned managed identity is checked.
 5.  Complete the Linux virtual machine setup.

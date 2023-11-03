@@ -26,8 +26,8 @@ roles:
 - developer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-b2c
+- entra-id
+- entra-external-id
 - entra
 subjects:
 - cloud-computing

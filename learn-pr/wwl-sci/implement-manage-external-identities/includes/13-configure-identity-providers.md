@@ -27,18 +27,18 @@ The following tables show requirements for specific attributes and claims that m
 
 Required attributes for the SAML 2.0 response from the IdP:
 
-| **Attribute**            | **Value**                                                                                   |
-| ------------------------ | ------------------------------------------------------------------------------------------- |
-| AssertionConsumerService | `https://login.microsoftonline.com/login.srf`                                               |
-| Audience                 | `urn:federation:MicrosoftOnline`                                                            |
-| Issuer                   | The issuer URI of the partner IdP, for example `http://www.example.com/exk10l6w90DHM0yi...` |
+| **Attribute**            | **Value**                                                                                    |
+| ------------------------ | -------------------------------------------------------------------------------------------- |
+| AssertionConsumerService | `https://login.microsoftonline.com/login.srf`                                                |
+| Audience                 | `urn:federation:MicrosoftOnline`                                                             |
+| Issuer                   | The issuer URI of the partner IdP, for example `https://www.example.com/exk10l6w90DHM0yi...` |
 
 Required claims for the SAML 2.0 token issued by the IdP:
 
-| **Attribute** | **Value**                                                            |
-| ------------- | -------------------------------------------------------------------- |
-| NameID Format | `urn:oasis:names:tc:SAML:2.0:nameid-format:persistent`               |
-| emailaddress  | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` |
+| **Attribute** | **Value**                                                             |
+| ------------- | --------------------------------------------------------------------- |
+| NameID Format | `urn:oasis:names:tc:SAML:2.0:nameid-format:persistent`                |
+| emailaddress  | `https://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` |
 
 ## WS-Federation configuration
 
@@ -52,18 +52,18 @@ The following tables show requirements for specific attributes and claims that m
 
 Required attributes in the WS-Fed message from the IdP:
 
-| **Attribute**            | **Value**                                                                                   |
-| ------------------------ | ------------------------------------------------------------------------------------------- |
-| PassiveRequestorEndpoint | `https://login.microsoftonline.com/login.srf`                                               |
-| Audience                 | `urn:federation:MicrosoftOnline`                                                            |
-| Issuer                   | The issuer URI of the partner IdP, for example `http://www.example.com/exk10l6w90DHM0yi...` |
+| **Attribute**            | **Value**                                                                                    |
+| ------------------------ | -------------------------------------------------------------------------------------------- |
+| PassiveRequestorEndpoint | `https://login.microsoftonline.com/login.srf`                                                |
+| Audience                 | `urn:federation:MicrosoftOnline`                                                             |
+| Issuer                   | The issuer URI of the partner IdP, for example `https://www.example.com/exk10l6w90DHM0yi...` |
 
 Required claims for the WS-Fed token issued by the IdP:
 
-| **Attribute** | **Value**                                                            |
-| ------------- | -------------------------------------------------------------------- |
-| ImmutableID   | `http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID` |
-| emailaddress  | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` |
+| **Attribute** | **Value**                                                             |
+| ------------- | --------------------------------------------------------------------- |
+| ImmutableID   | `https://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID` |
+| emailaddress  | `https://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` |
 
 ## Add Google as an identity provider for B2B guest users
 
@@ -86,7 +86,7 @@ Guest users who see a *header too long* error can clear their cookies or open a 
 
 ## Deprecation of WebView sign-in support
 
-Google is deprecating embedded web-view sign-in support (Starting September 30, 2021). If your apps authenticate users with an embedded web-view and you're using Google federation with Azure AD B2C or Microsoft Entra B2B for external user invitations or self-service sign-up, Google Gmail users won't be able to authenticate.
+Google is deprecating embedded web-view sign-in support (Starting September 30, 2021). If your apps authenticate users with an embedded web-view and you're using Google federation with Microsoft Entra B2C or Microsoft Entra B2B for external user invitations or self-service sign-up, Google Gmail users won't be able to authenticate.
 
 The following are known scenarios that will affect Gmail users:
 
@@ -157,8 +157,6 @@ First, create a new project in the Google Developers Console to obtain a client 
     :::image type="content" source="../media/google-auth-client-id-secret-3bda508c.png" alt-text="Screenshot of the OAuth client ID and client secret. Set your access secret.":::
     
 
-<a name='step-2-configure-google-federation-in-azure-ad'></a>
-
 ## Step 2: Configure Google federation in Microsoft Entra ID
 
 You'll now set the Google client ID and client secret. You can use the Azure portal or PowerShell to do so. Be sure to test your Google federation configuration by inviting yourself. Use a Gmail address and try to redeem the invitation with your invited Google account.
@@ -170,21 +168,21 @@ You'll now set the Google client ID and client secret. You can use the Azure por
 3.  Select **All identity providers**, and then select the **Google** button.
 4.  Enter the client ID and client secret you obtained earlier. Select **Save**:
     
-    :::image type="content" source="../media/google-identity-provider-efa96217.png" alt-text="Screenshot of the Add Google identity provider page. Pick your identity provider.":::
+    :::image type="content" source="../media/google-identity-provider-efa96217.png" alt-text="Screenshot of Add Google identity provider page. You have to enter the Client ID and Client secret from previous steps.":::
     
 
 ## How do I remove Google federation?
 
 You can delete your Google federation setup. If you do so, Google guest users who have already redeemed their invitation won't be able to sign in. But you can give them access to your resources again by deleting them from the directory and reinviting them.
 
-**To delete Google federation in the Microsoft Entra admin center**
+**To delete Google federation in Microsoft Entra ID**
 
 1.  Go to the [Azure portal](https://portal.azure.com/). On the left pane, select **Microsoft Entra ID**.
 2.  Select **External Identities**.
 3.  Select **All identity providers**.
 4.  On the **Google** line, select the ellipsis button (**...**) and then select **Delete**.
     
-    :::image type="content" source="../media/google-social-identity-providers-22681be3.png" alt-text="Screenshot of the Delete button for the social identity provider.":::
+    :::image type="content" source="../media/google-social-identity-providers-22681be3.png" alt-text="Screenshot of the Delete the Google identity provider page. Use the ellipsis at the end to open the delete command.":::
     
 5.  Select **Yes** to confirm the deletion.
 
@@ -203,18 +201,18 @@ To use a Facebook account as an identity provider, you need to create an applica
 > Use the following URLs in the steps 9 and 16 below.
 
  -  For **Site URL** enter the address of your application, such as `https://contoso.com`.
- -  For **Valid OAuth redirect URIs**, enter `https://login.microsoftonline.com/te/ tenant-id /oauth2/authresp`. You can find your `tenant-ID`in the Microsoft Entra Overview screen.
+ -  For **Valid OAuth redirect URIs**, enter `https://login.microsoftonline.com/te/ tenant-id /oauth2/authresp`. You can find your `tenant-ID`in the Microsoft Entra ID Overview screen.
 
 1.  Sign in to [Facebook for developers](https://developers.facebook.com/) with your Facebook account credentials.
 2.  If you haven't already done so, you need to register as a Facebook developer. Select **Get Started** on the upper-right corner of the page, accept Facebook's policies, and complete the registration steps.
 3.  Select **My Apps** and then **Create App**.
 4.  Enter a **Display Name** and a valid **Contact Email**.
-5.  Select **Create App ID**. You may have to accept Facebook platform policies and complete an online security check.
+5.  Select **Create App ID**. You have to accept Facebook platform policies and complete an online security check.
 6.  Select **Settings** then select **Basic**.
 7.  Choose a **Category**, for example Business and Pages. This value is required by Facebook, but not used for Microsoft Entra ID.
 8.  At the bottom of the page, select **Add Platform**, and then select **Website**.
 9.  In **Site URL**, enter the appropriate URL (noted above).
-10. In **Privacy Policy URL**, enter the URL for the page where you maintain privacy information for your application, for example http://www.contoso.com.
+10. In **Privacy Policy URL**, enter the URL for the page where you maintain privacy information for your application, for example https://www.contoso.com.
 11. Select **Save Changes**.
 12. At the top of the page, copy the value of **App ID**.
 13. Select **Show** and copy the value of **App Secret**. You use both of them to configure Facebook as an identity provider in your tenant. **App Secret** is an essential security credential.
@@ -226,11 +224,9 @@ To use a Facebook account as an identity provider, you need to create an applica
 
 ## Configure a Facebook account as an identity provider
 
-Now you'll set the Facebook client ID and client secret, either by entering it in the Microsoft Entra admin center or by using PowerShell. You can test your Facebook configuration by signing up via a user flow on an app enabled for self-service sign-up.
+Now you'll set the Facebook client ID and client secret, either by entering it in Microsoft Entra admin center or by using PowerShell. You can test your Facebook configuration by signing up via a user flow on an app enabled for self-service sign-up.
 
-<a name='to-configure-facebook-federation-in-the-azure-ad-portal'></a>
-
-### To configure Facebook federation in the Microsoft Entra admin center
+### To configure Facebook federation in the Microsoft Entra ID screen
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) as the global administrator of your Microsoft Entra tenant.
 2.  Under **Azure services**, select **Microsoft Entra ID**.
@@ -247,9 +243,7 @@ Now you'll set the Facebook client ID and client secret, either by entering it i
 
 You can delete your Facebook federation setup. If you do so, any users who have signed up through user flows with their Facebook accounts will no longer be able to sign in.
 
-<a name='to-delete-facebook-federation-in-the-azure-ad-portal'></a>
-
-### To delete Facebook federation in the Microsoft Entra admin center:
+### To delete Facebook federation in Microsoft Entra ID:
 
 1.  Go to the [Azure portal](https://portal.azure.com/). In the left pane, select **Microsoft Entra ID**.
 2.  Select **External Identities**.

@@ -8,8 +8,7 @@ metadata:
   ms.date: 10/16/2022
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-routing-traffic-with-front-door.md)]
