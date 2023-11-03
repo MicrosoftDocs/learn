@@ -9,7 +9,7 @@ The prototype vibration monitoring scenario requires the following message proce
 * An IoT Hub route that delivers message data to an Azure Blob storage location for data archiving
 * An Azure Stream Analytics job for real-time analysis
 
-First, we'll work on the logging route that sends data to Azure Blob storage.
+First, we work on the logging route that sends data to Azure Blob storage.
 
 One important feature of message routing is the ability to filter incoming data before routing to an endpoint. The filter, written as a SQL query, directs output through a route only when certain conditions are met.
 
@@ -53,7 +53,7 @@ To create the storage endpoint:
       | **Endpoint type** | Select **Storage** from the drop-down list. |
       | **Endpoint name** | Enter **vibrationLogEndpoint**. |
 
-   1. Select **Pick a container** to choose the storage container that will receive the log messages.
+   1. Select **Pick a container** to choose the storage container that receives the log messages.
 
    1. On the **Storage accounts** window, select **+ Storage account** to create a storage account.
 
@@ -63,7 +63,7 @@ To create the storage endpoint:
 
    1. Select **OK**.
 
-   1. Once your storage account is created, select it from the list of storage accounts. You may have to select **Refresh** to update the list.
+   1. Once your storage account is created, select it from the list of storage accounts. You might have to select **Refresh** to update the list.
 
    1. In the **Containers** window, select **+ Container** to create a storage container.
 
@@ -73,13 +73,13 @@ To create the storage endpoint:
 
    1. Once your container is created, choose **vibrationcontainer** from your list of containers, then select **Select**.
 
-      You should be returned to the **Add a route** window. Notice that the **Azure storage container** has been set to the URL for the storage account and container that you just created.
+      You should be returned to the **Add a route** window. Notice that the **Azure storage container** is set to the URL for the storage account and container that you created.
 
    1. Take a moment to review the default selections for the rest of the fields.
 
-      * Under **Encoding**, notice that there are two options and that **AVRO** is selected. By default, IoT Hub writes the content in Avro format, which has both a message body property and a message property. The Avro format is not used for any other endpoints. Although the Avro format is great for data and message preservation, it's a challenge to use it to query data. In comparison, JSON or CSV format is much easier for querying data. IoT Hub now supports writing data to Blob storage in JSON as well as AVRO.
+      * Under **Encoding**, notice that there are two options and that **AVRO** is selected. By default, IoT Hub writes the content in Avro format, which has both a message body property and a message property. The Avro format is not used for any other endpoints. Although the Avro format is great for data and message preservation, it's a challenge to use it to query data. In comparison, JSON or CSV format is easier for querying data. IoT Hub now supports writing data to Blob storage in JSON and AVRO.
 
-      * The **File name format** field specifies the pattern used to write the data to files in storage. The various tokens are replace with values as the file is created.
+      * The **File name format** field specifies the pattern used to write the data to files in storage. The various tokens are replaced with values as the file is created.
 
    1. Select **Create + next** to create your storage endpoint.
 
@@ -91,7 +91,7 @@ To create the storage endpoint:
       | -------- | ----- |
       | **Name** | Enter **vibrationLoggingRoute**. |
       | **Data source** | Ensure that **Device Telemetry Message** is selected. |
-      | **Routing query** | Replace the default query with `sensorID = 'VSLog'`. This query ensures that only messages with the **sensorID** application property set to **VSLog** will be routed to the storage endpoint. |
+      | **Routing query** | Replace the default query with `sensorID = 'VSLog'`. This query ensures that only messages with the **sensorID** application property set to **VSLog** is routed to the storage endpoint. |
 
    1. Select **Create + skip enrichments**.
 
@@ -114,18 +114,18 @@ To create the storage endpoint:
 
 1. In the **Storage browser** pane, select **Blob containers** and then select **vibrationcontainer**.
 
-    To view the logged data, you will need to navigate down a hierarchy of folders. The first folder will be named for the IoT Hub.
+    To view the logged data, you need to navigate down a hierarchy of folders. The first folder is named for the IoT Hub.
 
     > [!NOTE]
     > If no data is displayed, click **Refresh**. You may need to wait a minute or two and then refresh again.
 
 1. In the right-hand pane, select the name of your IoT hub, and then navigate down into the folder hierarchy.
 
-    Under your IoT hub folder, you will see folders for the partition, then numeric values for the year, month, and day. The final folder represents the hour, listed in UTC time. The hour folder will contain a number of block blobs that contain your logging message data.
+    Under your IoT hub folder, you see folders for the partition, then numeric values for the year, month, and day. The final folder represents the hour, listed in UTC time. The hour folder contains block blobs that contain your logging message data.
 
 1. Locate the block blob for the data with the earliest time stamp.
 
-    The .avro files use a naming pattern of **{num}.avro** (i.e. **22.avro**).
+    The .avro files use a naming pattern of **{num}.avro** (that is, **22.avro**).
 
 1. Select **...** next to the block blob with the earliest time stamp, then select **Download** from the Context menu.
 
@@ -139,7 +139,7 @@ To create the storage endpoint:
 
     Although the data is not formatted in a way that is easy to read, if you scroll to the right, you should be able to recognize your vibration messages.
 
-1. Once you have verified that the file contains your logging data, close the .avro document.
+1. Once you verified that the file contains your logging data, close the .avro document.
 
 1. Return to your Azure portal window and navigate back to your dashboard.
 

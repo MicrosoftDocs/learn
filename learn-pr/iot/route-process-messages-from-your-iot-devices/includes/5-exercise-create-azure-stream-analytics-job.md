@@ -44,11 +44,11 @@ Your Stream Analytics job processes message data to an output location using the
 
 1. On your Stream Analytics Job blade, on the left-side menu under **Job topology**, select **Inputs**.
 
-    The **Inputs** pane will be displayed.
+    The **Inputs** pane is displayed.
 
 1. On the **Inputs** pane, select **+ Add stream input**, and then select **IoT Hub**.
 
-    The **IoT Hub - New input** pane will be displayed.
+    The **IoT Hub - New input** pane is displayed.
 
 1. On the **IoT Hub - New input** pane, fill in the following fields:
 
@@ -59,7 +59,7 @@ Your Stream Analytics job processes message data to an output location using the
    | **Subscription** | Make sure the Azure sandbox subscription is selected. |
    | **IoT Hub** | Make sure your IoT hub is selected. |
    | **Consumer group** | **$Default** |
-   | **Shared access policy name** | **iothubowner**<br><br>**Note**: The **Shared access policy key** is pre-populated and read-only. |
+   | **Shared access policy name** | **iothubowner**<br><br>**Note**: The **Shared access policy key** is prepopulated and read-only. |
    | **Endpoint** | **Messaging** |
    | **Partition key** | Leave this field blank. |
    | **Event serialization format** | **JSON** |
@@ -92,7 +92,7 @@ Your Stream Analytics job processes message data to an output location using the
    | **Authentication Mode** | Select **Connection string**<br><br>**Note**: The **Storage account key** is displayed. |
    | **Path pattern** | Leave this field blank. |
    | **Event serialization format** | **JSON** |
-   | **Format** | **Line separated**<br><br>**Note**: This setting stores each record as a JSON object on each line and, taken as a whole, results in a file that is an invalid JSON record. The other option, **Array**, ensures that the entire document is formatted as a JSON array where each record is an item in the array. This allows the entire file to be parsed as valid JSON. |
+   | **Format** | **Line separated**<br><br>**Note**: This setting stores each record as a JSON object on each line and, taken as a whole, results in a file that is an invalid JSON record. The other option, **Array**, ensures that the entire document is formatted as a JSON array where each record is an item in the array. This formatting allows the entire file to be parsed as valid JSON. |
    | **Encoding** | **UTF-8** |
    | **Path pattern** | Leave this field blank. |
    | **Minimum rows** | Leave this field blank. |
@@ -100,7 +100,7 @@ Your Stream Analytics job processes message data to an output location using the
 
 1. Select **Save**, and then wait for the output to be created.
 
-    The **Outputs** list will be updated with the new output.
+    The **Outputs** list is updated with the new output.
 
 ### Task 4: Create the Stream Analytics Job Query
 
@@ -141,13 +141,13 @@ Now for the fun part. Is the telemetry from your device app being processed thro
 
 1. On the **Overview** pane of your Storage account, select the **Monitoring** section.
 
-1. Under **Key metrics**, adjacent to **Show data for last**, change the time range to **1 hour**.
+1. Under **Key metrics**, next to **Show data for last**, change the time range to **1 hour**.
 
     You should see activity in the charts.
 
 1. On the left-side menu, select **Storage browser**.
 
-    You can use Storage browser for additional reassurance that all of your data is getting to the storage account.
+    You can use Storage browser for extra reassurance that all of your data is getting to the storage account.
 
 1. In **Storage browser**, select **Blob containers**, and then select **vibrationcontainer**.
 
@@ -157,7 +157,7 @@ Now for the fun part. Is the telemetry from your device app being processed thro
 
 1. Open the downloaded file in **Visual Studio Code**, and review the JSON data.
 
-    The data in your json file should appear similar to the following:
+    The data in your json file should appear similar to the following output:
 
     ```json
     {"vibration":-0.025974767991863323,"EventProcessedUtcTime":"2021-10-22T22:03:10.8624609Z","PartitionId":3,"EventEnqueuedUtcTime":"2021-10-22T22:02:09.1180000Z","IoTHub":{"MessageId":null,"CorrelationId":null,"ConnectionDeviceId":"sensor-v-3000","ConnectionDeviceGenerationId":"637705296662649188","EnqueuedTime":"2021-10-22T22:02:08.7900000Z"}}

@@ -1,6 +1,6 @@
-Both long term and real-time data analysis are required to automate the monitoring of the conveyor belt system and enable predictive maintenance. Since no historical data exists, your first step is to generate simulated data that mimics vibration data and data anomalies in a realistic manner. Company engineers have developed an algorithm to simulate vibration over time and embedded the algorithm within a code class for you to implement. The engineers have agreed to support any future updates required to adjust the algorithms.
+Both long term and real-time data analysis are required to automate the monitoring of the conveyor belt system and enable predictive maintenance. Since no historical data exists, your first step is to generate simulated data that mimics vibration data and data anomalies in a realistic manner. Company engineers developed an algorithm to simulate vibration over time and embedded the algorithm within a code class for you to implement. The engineers agreed to support any future updates required to adjust the algorithms.
 
-During your initial prototype phase, you implement a single IoT device that generates telemetry data. In addition to the vibration data, your device creates some additional values (packages delivered, ambient temperature, and similar metrics) that are sent to Blob storage. This additional data simulates the data that will be used to develop machine learning modules for predictive maintenance.
+During your initial prototype phase, you implement a single IoT device that generates telemetry data. In addition to the vibration data, your device creates some other values (packages delivered, ambient temperature, and similar metrics) that are sent to Blob storage. This additional data simulates the data that is used to develop machine learning modules for predictive maintenance.
 
 In this exercise, you:
 
@@ -13,7 +13,7 @@ In this exercise, you:
 
 <!-- TODO: MOVE THE SAMPLE CODE INTO GITHUB -->
 
-1. On your development machine, create a working folder for this project named **VibrationDevice**. You will create all Visual Studio code files for this project within this folder.
+1. On your development machine, create a working folder for this project named **VibrationDevice**. You create all Visual Studio code files for this project within this folder.
 
 1. Open Visual Studio Code.
 
@@ -399,7 +399,7 @@ In this exercise, you:
 
    This command runs the **Program.cs** file in the current folder.
 
-   In the Terminal window, you will see similated IoT device telemetry and program output. Green text is used to show that telemetry and log data are sent and red text when there is a vibration problem being simulated for the production conveyor belt.
+   In the Terminal window, you see simulated IoT device telemetry and program output. Green text is used to show that telemetry and log data are sent and red text when there is a vibration problem being simulated for the production conveyor belt.
 
    Console output should be displayed that is similar to the following:
 
@@ -441,8 +441,8 @@ In this task, you use the Azure portal to verify that your IoT Hub is receiving 
 
 ## Verify your work
 
-Before you move to the next unit page, verify the following:
+Before you move to the next unit page, verify the following items:
 
 * The program compiles without errors.
-* The program is running and producing telemetry output in your Visual Studio code Terminal window.
+* The program is running and producing telemetry output in your Visual Studio Code Terminal window.
 * You can see device activity in the Azure portal **Device to cloud messages** window.
