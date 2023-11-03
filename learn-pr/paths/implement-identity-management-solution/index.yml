@@ -23,7 +23,7 @@ roles:
 products:
 - azure
 - entra-id
-- azure-active-directory-b2c
+- entra-external-id
 - entra
 - entra-workload-identities
 subjects:
