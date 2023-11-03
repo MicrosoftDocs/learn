@@ -6,7 +6,7 @@ In this unit, you learn about the features of API Management. You can use these 
 
 ## Microservices architecture challenges
 
-The microservices approach to architecture creates a modular application in which each part is loosely coupled to the others. This approach makes it easier to implement continuous delivery because new versions of each service can be deployed independently of the others. If bugs aren't detected during testing and make it through to production, their impact is reduced and it's easier to roll back to a stable version. Also, you can create small, autonomous teams of developers for each microservice. This division fits well with modern Agile practices.
+The microservices approach to architecture creates a modular application in which each part is loosely coupled to the others. Independent deployment of services reduces the effect of any bugs that might make it through testing into production. This modular approach makes it easier to roll back to a stable version. Also, you can create small, autonomous teams of developers for each microservice. This division fits well with modern Agile practices.
 
 However, microservices architectures can also present challenges, such as:
 

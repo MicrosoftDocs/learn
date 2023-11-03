@@ -25,7 +25,7 @@ In the following steps, you add an Azure Function app to Azure API Management. L
 
     :::image type="content" source="../media/3-script-results.png" alt-text="Diagram illustrating the results of the setup.sh script and how the functions relate to the overall application's design." border="false":::
 
-## Test the product details function
+## Test the ProductDetails function
 
 Now, let's test the ProductDetails function to see how it behaves before we add it to API Management.
 
@@ -33,11 +33,9 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**. The **All resources** pane appears.
 
-1. Select the Function App whose name begins with **ProductFunction**. The Function App pane appears.
+1. Select the Function App whose name begins with **ProductFunction**. The Function App pane appears with the **Overview** tab selected.
 
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears for your Function App.
-
-    :::image type="content" source="../media/3-select-function.png" alt-text="Screenshot of menu selections to open ProductDetails function.":::
+   :::image type="content" source="../media/3-select-function.png" alt-text="Screenshot of menu selections to open ProductDetails function.":::
 
 1. From the list of functions for your function app, select **ProductDetails**. The **ProductDetails** Function pane appears.
   
@@ -78,7 +76,7 @@ After the function app is deployed and tested, let's export it as an API using A
  
 1. Select the **ProductFunction** function app.
 
-1. In the Function App menu, scroll to **API** category, and then select **API Management**. The **API Management** pane for ProductFunction function app appears.
+1. In the Function App menu, scroll to the **API** category, and then select **API Management**. The **API Management** pane for ProductFunction function app appears.
 
     :::image type="content" source="../media/3-create-api.png" alt-text="Screenshot showing menu selection to open the API Management app service.":::
 
