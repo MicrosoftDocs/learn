@@ -26,7 +26,7 @@ The following image shows the role Azure Resource Manager plays in handling Azur
 
 :::image type="content" source="../media/consistent-management-layer-d65508b4.png" alt-text="Diagram showing Azure Resource Manager request model.":::
 
-All capabilities that are available in the portal are also available through PowerShell, Azure CLI, REST APIs, and client SDKs. Functionality initially released through APIs will be represented in the portal within 180 days of initial release.
+All capabilities that are available in the portal are also available through PowerShell, Azure CLI, REST APIs, and client SDKs. Functionality initially released through APIs is represented in the portal within 180 days of initial release.
   
 Azure provides four levels of scope: management groups, subscriptions, resource groups, and resources. The following image shows an example of these layers.
 
@@ -43,4 +43,3 @@ Azure Resource Manager templates allow you to declare what you intend to deploy 
 Azure Resource Manager templates are *idempotent*, which means you can deploy the same template many times and get the same resource types in the same state.
 
 Resource Manager orchestrates the deployment of the resources so that they're created in the correct order. When possible, resources are created in parallel, so Azure Resource Manager template deployments finish faster than scripted deployments.
-

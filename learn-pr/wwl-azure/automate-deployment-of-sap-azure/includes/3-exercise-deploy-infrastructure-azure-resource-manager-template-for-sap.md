@@ -93,7 +93,7 @@ Examine the Resource Manager template to get a better understanding of its struc
     > [!NOTE]
     > Alternatively, if you want to store the updated template locally, select **Download**.
 
-    :::image type="content" source="../media/marketplace-8.png" alt-text="Screenshot of a template with example of a value, HANA V M Size, that can be manually edited in the template.":::
+    :::image type="content" source="../media/marketplace-8.png" alt-text="Screenshot of a template with example of a value, HANA V M Size that can be manually edited in the template.":::
 
 ## Edit template
 

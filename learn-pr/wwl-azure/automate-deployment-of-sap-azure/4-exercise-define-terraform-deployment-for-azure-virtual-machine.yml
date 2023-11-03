@@ -4,10 +4,12 @@ title: Exercise - Define a Terraform deployment for an Azure VM
 metadata:
   title: Exercise - Define a Terraform deployment for an Azure VM
   description: "Exercise - Define a Terraform deployment for an Azure VM"
-  ms.date: 11/02/2023
+  ms.date: 11/03/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.service: azure-resource-manager
 durationInMinutes: 9
 content: |
   [!include[](includes/4-exercise-define-terraform-deployment-for-azure-virtual-machine.md)]

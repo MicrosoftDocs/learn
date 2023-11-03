@@ -5,17 +5,12 @@ In this module, you're introduced to the common tools used in automated deployme
 ## Learning objectives
 
 - Describe Azure built-in and external tools and methods to deploy SAP infrastructure on Azure.
-
 - Create, edit, and run Azure Resource Manager Templates to deploy Azure infrastructure for SAP.
-
 - Create, edit, and run Terraform scripts to deploy Azure infrastructure for SAP.
-
 - Describe the tools and methods to install SAP software on Azure infrastructure.
 
 ## Prerequisites
 
-- Basic understanding of scripting and JSON
-
+- Basic understanding of scripting, JSON, and Azure Cloud Shell
 - AZ-104 certification or equivalent knowledge
-
 - Knowledge of SAP products such as SAP HANA or SAP NetWeaver
