@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/25/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: azure
 title: Deploy an Azure Kubernetes Service cluster
 summary: In this module,  you learn how to create an Azure Kubernetes Service cluster, configure its components, and connect to it using kubectl commands.
