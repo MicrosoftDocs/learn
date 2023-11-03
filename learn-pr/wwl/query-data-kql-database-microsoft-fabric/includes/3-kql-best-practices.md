@@ -37,7 +37,7 @@ Trips
 - **Avoid using redundant qualified references**: Entities such as tables and materialized views are referenced by name. For example, the table T can be referenced as simply T (the unqualified name), or by using a database qualifier (e.g. database("DB").T when the table is in a database called DB). It is a best practice to avoid using name qualifications when they are redundant, for the following reasons:
     - Unqualified names are easier to identify as belonging to the database-in-scope.
     - Referencing database-in-scope entities is always at least as fast, and in some cases much faster, then entities that belong to other databases (especially when those databases are in a different cluster.) Avoiding qualified names helps the reader to do the right thing.
- 
+
  > [!NOTE] 
  > In most cases, Kusto can identify when a fully qualified name references an entity belonging to the database-in-scope and “short-circuit” the query so that it is not regarded as a cross-cluster query. However, we recommend not relying on this when not necessary, for the reasons specified above.
 

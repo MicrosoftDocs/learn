@@ -11,7 +11,7 @@
     > The use of SQL or SQL Functions within a KQL Queryset removes the ability to build Power BI Reports with it
 
 1. To create a KQL Queryset, you can go to any section within Microsoft Fabric and click on the **Create button** and then scroll to **Create KQL Queryset** as shown in the example, which starts from the **Data Engineering** section.
-    ![Select KQL Queryset from within Data Engineering section](../media/create-kql-queryset.png)
+    ![Screenshot of K Q L Queryset from within Data Engineering section.](../media/create-kql-queryset.png)
     
 1. **Basic Query**: A basic KQL query follows the pattern: `<table_name> | where <condition> | project <columns>`.
 1. **Functions and Operators**: KQL supports a variety of operators for arithmetic, comparison, logical operations, and string manipulations.
@@ -30,9 +30,9 @@ You can use these queries to practice and get comfortable with the basics of KQL
 
 ## Advantages of KQL and T-SQL
 
-Within Microsoft Fabric KQL Database, you can use the primary language of Kusto Query Lanaguage (KQL) or Transact-Sructured Query Language (T-SQL), and you can use the data to build Power BI Reports. 
+Within Microsoft Fabric KQL Database, you can use the primary language of Kusto Query Language (KQL) or Transact-Structured Query Language (T-SQL), and you can use the data to build Power BI Reports. 
 
-   ![Image of KQL Query with highlighted element of publishing to Power BI.](../media/kql-queryset-pbi-build.png)
+   ![Screenshot of K Q L Query with highlighted element of publishing to Power B I.](../media/kql-queryset-pbi-build.png)
 
 However, there are advantages to each and in the case of a KQL database, KQL is the preferred language. More comparisons follow:
 
@@ -46,15 +46,15 @@ However, there are advantages to each and in the case of a KQL database, KQL is 
 
 One major disadvantage of using T-SQL over KQL is that it is not the native language of the engine and has to go through a transformer which prevents it from being published to Power BI directly from the Queryset.
 
-   ![Image of T-SQL Query with highlighted element showing prevention of publishing to Power BI](../media/tsql-queryset-pbi-build.png)
+   ![Screenshot of T - S Q L Query with highlighted element showing prevention of publishing to Power B I.](../media/tsql-queryset-pbi-build.png)
 
-As mentioned, T-SQL can be run to a limit extent against a Microsoft Fabric KQL databases and provides a few advantages:
+As mentioned, T-SQL can be run to a limit extent against a Microsoft Fabric KQL database and provides a few advantages:
 
 1. **Compatibility**: T-SQL is a widely used language and is compatible with many different database systems.
 2. **Functionality**: T-SQL has a wider range of functions and features than KQL.
 3. **Procedural programming**: T-SQL supports procedural programming, which allows developers to write complex scripts and stored procedures.
 
-    >[!NOTE:]  If you’re familiar with SQL and want to learn KQL, you can translate SQL queries into KQL using the `-- explain syntax`
+    >[!NOTE] If you’re familiar with SQL and want to learn KQL, you can translate SQL queries into KQL using the `-- explain syntax`
     > For example: 
     >    ```tsql
     >   --
@@ -78,11 +78,11 @@ As mentioned, T-SQL can be run to a limit extent against a Microsoft Fabric KQL 
     >| project Borough=groupByExpression1, ['Total Trip Distance']
     >    ```
     > 
-    > ![TSQL conversion resultset used to convert](../media/tsql-same-results.png)
+    > ![Screenshot of T - S Q L conversion resultset used to convert.](../media/tsql-same-results.png)
     >
     > Which produces the same outcome:
     >
-    > ![KQL Conversion resultset the same as T-SQL after using Explain feature](../media/kql-same-results.png)
+    > ![Screenshot of K Q L Conversion resultset the same as T - S Q L after using Explain feature.](../media/kql-same-results.png)
     > 
     
 

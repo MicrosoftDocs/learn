@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.kql-best-practices
-title: KQL Best Practices
+title: KQL best practices
 metadata:
-  title: KQL Best Practices
-  description: "KQL Best Practices"
-  ms.date: 11/02/2023
+  title: KQL best practices
+  description: "KQL best practices"
+  ms.date: 11/03/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
