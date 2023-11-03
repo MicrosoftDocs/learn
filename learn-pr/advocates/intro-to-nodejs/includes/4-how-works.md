@@ -5,7 +5,7 @@ This unit explains how Node.js handles incoming tasks to the JavaScript runtime.
 JavaScript applications have two type of tasks: 
 
 * **Synchronous tasks**: These tasks happen in order. They aren't dependent on another resource to complete. Examples are mathematical operations or string manipulation.
-* **Asynchronous**: These tasks may not complete immediately because they're dependent on other resources. Examples are network requests or file system operations. 
+* **Asynchronous**: These tasks might not complete immediately because they're dependent on other resources. Examples are network requests or file system operations. 
 
 Because you want your program to run as fast as possible, you want the JavaScript engine to be able to continue working while it waits for a response from an asynchronous operation. In order to do that, it adds the asynchronous task to a task queue and continues working on the next task. 
 
@@ -34,7 +34,7 @@ Node.js takes advantage of the unique event-driven nature of JavaScript that mak
 The asynchronous techniques come in 3 styles, which you need to be able to recognize in your work: 
 
 * **Callbacks**: The original asynchronous technique that uses a callback function to receive the results of an asynchronous operation. You'll see this in older code bases and in older Node.js APIs.
-* **Promises**: A newer asynchronous technique that uses a promise object to receive the results of an asynchronous operation. You'll see this in newer code bases and in newer Node.js APIs. You may have to write promise-based code in your work to wrap older APIs that won't be updated. By using promises for this wrapping, you allow the code to be used in a larger range of Node.js versioned projects than in the newer async/await style of code.
+* **Promises**: A newer asynchronous technique that uses a promise object to receive the results of an asynchronous operation. You'll see this in newer code bases and in newer Node.js APIs. You might have to write promise-based code in your work to wrap older APIs that won't be updated. By using promises for this wrapping, you allow the code to be used in a larger range of Node.js versioned projects than in the newer async/await style of code.
 * **Async/await**: The newest asynchronous technique that uses the `async` and `await` keywords to receive the results of an asynchronous operation. Async/await is used across many programming languages. Generally, new projects with newer dependencies will use this style of asynchronous code.
 
 ### Callbacks
@@ -48,7 +48,7 @@ The order of parameters of the function is important. The callback function is t
 function(param1, param2, paramN, callback)
 ```
 
-The function name in the code you maintain may not be called `callback`. It could be called `cb` or `done` or `next`. The name of the function isn't important, but the order of the parameters is important.
+The function name in the code you maintain might not be called `callback`. It could be called `cb` or `done` or `next`. The name of the function isn't important, but the order of the parameters is important.
 
 Notice there's **no syntactic indication** that the function is asynchronous. You have to know that the function is asynchronous by reading the documentation or continuing to read through the code. 
 
@@ -133,11 +133,11 @@ Hi, developers!
 Done!
 ```
 
-When the code is executed, the The asynchronous function `fs.readFile` is started and goes into the event loop. Next the execution continues to the following code line, which is the last `console.log`. When the file is read, the callback function is called and the two console.log statements are executed.
+When the code is executed, the asynchronous function `fs.readFile` is started and goes into the event loop. Next the execution continues to the following code line, which is the last `console.log`. When the file is read, the callback function is called and the two console.log statements are executed.
 
 ### Nested callbacks
 
-Because you might need to call a subsequent async callback and then another, the callback code may become nested. This is called **callback hell** and is difficult to read and maintain. 
+Because you might need to call a subsequent async callback and then another, the callback code might become nested. This is called **callback hell** and is difficult to read and maintain. 
 
 ```javascript
 // nested callback example
@@ -300,4 +300,4 @@ try {
 }
 ```
 
-As a new developer at TailWind Traders, you may be asked to modify any type of Node.js code. It's important to understand the difference between synchronous and asynchronous APIs, and the different syntaxes for asynchronous code.
+As a new developer at TailWind Traders, you might be asked to modify any type of Node.js code. It's important to understand the difference between synchronous and asynchronous APIs, and the different syntaxes for asynchronous code.
