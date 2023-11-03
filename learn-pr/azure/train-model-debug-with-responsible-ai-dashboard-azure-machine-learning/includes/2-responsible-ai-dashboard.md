@@ -5,13 +5,14 @@ The Responsible AI dashboard is built on the latest open-source tools developed 
 
 The Responsible AI dashboard brings together various new and pre-existing tools. The dashboard integrates these tools with Azure Machine Learning CLI v2, Azure Machine Learning Python SDK v2, and Azure Machine Learning studio. The tools include:  
 
-- Data analysis, to understand and explore your dataset distributions and statistics.
-- Model overview and fairness assessment, to evaluate the performance of your model and evaluate your model's group fairness issues (how your model's predictions affect diverse groups of people).
-- Error analysis, to view and understand how errors are distributed in your dataset.  
-- Model interpretability (importance values for aggregate and individual features), to understand your model's predictions and how those overall and individual predictions are made.
-- Counterfactual what-if, to observe how feature perturbations would affect your model predictions while providing the closest data points with opposing or different model predictions. For example: Taylor would have obtained a loan approval from the AI system if they earned $10,000 more in annual income and had two fewer credit cards open.
-- Causal analysis, to estimate how a real-world outcome changes in the presence of an intervention. It also helps construct promising interventions by simulating feature responses to various interventions and creating rules to determine which population cohorts would benefit from a particular intervention. Collectively, these functionalities allow you to apply new policies and effect real-world change.  For example, how would providing promotional values to certain customers affect revenue?
-  - The capabilities of this component come from the EconML package, which estimates heterogeneous treatment effects from observational data via machine learning.
+| Tool | Description |
+|---| ---|
+| Data analysis | To understand and explore your dataset distributions and statistics. |
+| Model overview and fairness assessment | To evaluate the performance of your model and evaluate your model's group fairness issues (how your model's predictions affect diverse groups of people) |
+| Error analysis | To view and understand how errors are distributed in your dataset. |
+| Model interpretability (importance values for aggregate and individual features) | To understand your model's predictions and how those overall and individual predictions are made. |
+| Counterfactual what-if | To observe how feature perturbations would affect your model predictions while providing the closest data points with opposing or different model predictions. For example: Taylor would have obtained a loan approval from the AI system if they earned $10,000 more in annual income and had two fewer credit cards open. |
+| Causal analysis | To estimate how a real-world outcome changes in the presence of an intervention. It also helps construct promising interventions by simulating feature responses to various interventions and creating rules to determine which population cohorts would benefit from a particular intervention. Collectively, these functionalities allow you to apply new policies and effect real-world change.  For example, how would providing promotional values to certain customers affect revenue? <br> The capabilities of this component come from the EconML package, which estimates heterogeneous treatment effects from observational data via machine learning.|
 
 Together, these tools will help you debug machine learning models, while informing your data-driven and model-driven business decisions. The following diagram shows how you can incorporate them into your AI lifecycle to improve your models and get solid data insights.
 

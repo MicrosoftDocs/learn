@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.model-performance-inconsistencies
-title: Debug model
+title: Find model performance inconsistencies
 metadata:
   title: Find model performance inconsistencies
   description: "Find model performance inconsistencies"
