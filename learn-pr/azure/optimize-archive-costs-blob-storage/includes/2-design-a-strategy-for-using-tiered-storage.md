@@ -8,7 +8,7 @@ Azure Storage is Microsoft's managed service that provides highly available and 
 
 - **Azure Blobs**: Typically used to upload and manage images, documents, and general data
 - **Azure Files**: Lets you create file shares using Server Message Block (SMB) 3.0, so systems can access files through a uniform naming convention (UNC) path
-- **Azure Data Lake**: Lets you store large complex data for tasks such as big-data analysis
+- **Azure Data Lake**: Lets you store large complex data for tasks such as big data analysis
 
 This module is all about optimizing Azure Blob storage.
 
