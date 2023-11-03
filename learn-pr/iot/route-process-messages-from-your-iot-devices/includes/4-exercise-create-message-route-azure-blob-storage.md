@@ -91,7 +91,7 @@ To create the storage endpoint:
       | -------- | ----- |
       | **Name** | Enter **vibrationLoggingRoute**. |
       | **Data source** | Ensure that **Device Telemetry Message** is selected. |
-      | **Routing query** | Replace the default query with `sensorID = 'VSLog'`. This query ensures that only messages with the **sensorID** application property set to **VSLog** is routed to the storage endpoint. |
+      | **Routing query** | Replace the default query with `sensorID = 'VSLog'`. This query ensures that only messages with the **sensorID** application property set to **VSLog** are routed to the storage endpoint. |
 
    1. Select **Create + skip enrichments**.
 
