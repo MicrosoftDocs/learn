@@ -15,3 +15,7 @@ Review the following characteristics of the network topology capability in Azure
 - You can view subnets, virtual machines, network interfaces, public IP addresses, network security groups, route tables, and more.
 
 - To generate a topology, you need an Azure Network Watcher instance in the same region as the virtual network.
+
+### How to troubleshoot the most common issues on Azure resources
+
+> [!Video https://www.youtube.com/embed/FgfcSdHErus]

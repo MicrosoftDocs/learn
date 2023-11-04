@@ -2,6 +2,18 @@ Azure Network Watcher provides the tools you need to monitor, troubleshoot, and 
 
 In this module, you identified the features and usage cases for Azure Network Watcher. You reviewed how to configure and work with several Network Watcher features, including IP flow verify, next hop, and the topology tool. You discovered how to diagnose your network configuration for several issues, such as broken security rules.
 
+The main takeaways from this module are:
+
+- Network Watcher is a powerful tool for monitoring and troubleshooting your network infrastructure in Azure. 
+
+- Network Watcher has many features including IP flow verify, next hop analysis, and a network topology visualization tool. 
+
+- The IP flow verify feature checks security and admin rules for packet routing to an Azure virtual machine.
+
+- The next hop feature helps you determine if traffic is being directed to the intended destination,.
+
+- The network topology feature lets you visualize and understand the infrastructure of virtual networks.
+
 ## Learn more with documentation
 
 - [Azure Network Watcher documentation](/azure/network-watcher/). This collection of articles is your starting point for Network Watcher. 
