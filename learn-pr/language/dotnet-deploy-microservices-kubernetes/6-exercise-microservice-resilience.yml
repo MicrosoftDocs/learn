@@ -4,11 +4,12 @@ title: Exercise - Prove microservice resilience in Kubernetes
 metadata:
   title: Exercise - Prove microservice resilience in Kubernetes
   description: Kubernetes makes sure your microservices are running in the face of failure, see that in this exercise.
-  ms.date: 08/25/2021
+  ms.date: 10/25/2023
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl
-  ms.topic: unit
+  ms.topic: interactive-tutorial
+  ms.service: azure
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
