@@ -19,7 +19,7 @@ Let's review the configuration properties and summary of the next hop feature in
    - IP address of the next hop (If available)
    - Route table for the next hop (If available)
 
-- The next hop type can be _Internet_, _Virtual Appliance_, _Virtual Network Gateway_, _Virtual Network_, _Virtua lNetwork Peering_, _Virtual Network Service Endpoint_, _Microsoft Edge_, or _None_.
+- Examples of a next hop are  _Internet_, _Virtual Network_, and _Virtual Network Service Endpoint_.
 
 - If the next hop is a user-defined route (UDR), the process returns the UDR route. Otherwise, next hop returns the system route.
 

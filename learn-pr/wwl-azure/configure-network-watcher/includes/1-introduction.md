@@ -2,11 +2,11 @@ Azure Network Watcher is a powerful tool that allows you to monitor, diagnose, a
 
 Imagine you are an IT administrator for a large e-commerce company. Your company relies heavily on its Azure virtual network to host its website and handle customer transactions. One day, you receive reports from customers that they are unable to access the website or complete their purchases. You need to quickly identify the cause of the connectivity issues and resolve them to minimize the impact on your business. 
 
-You plan to use Network Watcher for your tasks. Network Watcher's monitoring and diagnostic capabilities let you easily pinpoint the root cause of the problem and take appropriate actions. By using features such as IP flow verification, next hop analysis, and connection troubleshooting, you can ensure that your virtual network is functioning optimally and providing a seamless experience for your customers.
+You plan to use Network Watcher for your tasks. Network Watcher's monitoring and diagnostic capabilities let you easily pinpoint the root cause of the problem and take appropriate actions. By using features such as IP flow verification, next hop analysis, and connection troubleshooting, you can ensure that your virtual network is functioning optimally.
+guide
+In this module, you learn about the various features and use cases of Azure Network Watcher. The topics covered include IP flow verification, next hop analysis, and the topology tool. The module guides you on how to diagnose network configuration issues, such as broken security rules. 
 
-In this module, you will learn about the various features and use cases of Azure Network Watcher. The topics covered include IP flow verification, next hop analysis, and the topology tool. The module will also guide you on how to diagnose network configuration issues, such as broken security rules. 
-
-The goal of this module is to provide you with a comprehensive understanding of Azure Network Watcher and its capabilities. By the end of this module, you will be able to effectively monitor, diagnose, and manage your Azure virtual network using Network Watcher.
+The goal of this module is to provide you with a comprehensive understanding of Azure Network Watcher and its capabilities. By the end of this module, you effectively monitor, diagnose, and manage your Azure virtual network using Network Watcher.
 
 ## Learning objectives
 

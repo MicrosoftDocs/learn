@@ -8,9 +8,9 @@ The main takeaways from this module are:
 
 - Network Watcher has many features including IP flow verify, next hop analysis, and a network topology visualization tool. 
 
-- The IP flow verify feature checks security and admin rules for packet routing to an Azure virtual machine.
+- The IP Flow Verify feature checks security and admin rules for packet routing to an Azure virtual machine.
 
-- The next hop feature helps you determine if traffic is being directed to the intended destination,.
+- The Next Hop feature helps you determine if traffic is being directed to the intended destination,.
 
 - The network topology feature lets you visualize and understand the infrastructure of virtual networks.
 
