@@ -10,7 +10,7 @@ The main takeaways from this module are:
 
 - The IP Flow Verify feature checks security and admin rules for packet routing to an Azure virtual machine.
 
-- The Next Hop feature helps you determine if traffic is being directed to the intended destination,.
+- The Next Hop feature helps you determine if traffic is being directed to the intended destination.
 
 - The network topology feature lets you visualize and understand the infrastructure of virtual networks.
 
