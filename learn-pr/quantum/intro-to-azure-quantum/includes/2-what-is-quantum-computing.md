@@ -42,7 +42,7 @@ Most used qubit technologies are trapped-ion qubits, superconducting qubits, and
 
 ### The five criteria for a quantum computer
 
-In general, a functional quantum computer should fulfill the following criteria:
+A good quantum computer should have these five features:
 
 1. **Scalability:** Quantum computers are based on the manipulation of quantum information by using qubits. We need a system that allows scalability to a large number of qubits.
 1. **Ability to initialize the qubits in a specific state:** Having many qubits isn't useful if we can't trust their initial state. A fundamental characteristic of a quantum computer is its ability to initialize the qubits reliably to a specific state (usually, the state $0$).
