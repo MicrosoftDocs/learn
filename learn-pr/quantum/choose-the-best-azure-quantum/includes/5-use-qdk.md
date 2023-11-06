@@ -5,7 +5,7 @@ The Quantum Development Kit (QDK) extension for Visual Studio Code allows you to
 - An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa) before you begin.
 - An Azure Quantum workspace.
 - Install [Visual Studio Code](https://code.visualstudio.com/).
-- Install the [Microsoft QDK for VS Code extension](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode).
+- Install the [Azure QDK for VS Code extension](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode).
 
 ## Create a Q# program in Visual Studio Code
 
