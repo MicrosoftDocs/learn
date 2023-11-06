@@ -47,5 +47,5 @@ Trips
 
 Here are some additional resources:
 
-[Microsoft Fabric terminology - Microsoft Fabric.](//fabric/get-started/fabric-terminology)
+[Microsoft Fabric terminology - Microsoft Fabric.](/fabric/get-started/fabric-terminology)
 [Query data in a KQL queryset - Microsoft Fabric.](/fabric/real-time-analytics/kusto-query-set)
