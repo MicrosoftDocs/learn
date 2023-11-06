@@ -1,4 +1,4 @@
-Your organization is moving all its systems from an on-premises location to Azure, and wants you to implement a monitoring strategy. This unit explains why a full-stack monitoring strategy can improve customer experience by providing the ability to identify and mitigate issues across all the layers of your applications and infrastructure.
+Your organization is moving all its systems from an on-premises location to Azure, and wants you to implement a monitoring strategy. This unit explains how a full-stack monitoring strategy can improve customer experience by providing the ability to identify and mitigate issues across all the layers of your applications and infrastructure.
 
 ## Use full-stack monitoring
 

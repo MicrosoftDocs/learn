@@ -1,22 +1,28 @@
-Your financial organization has successfully migrated several applications from on-premises to Azure virtual machines (VMs) and Azure Kubernetes Services. Your organization wants to keep track of resource usage to ensure the cloud resources have been adequately provisioned and their performance meets the business requirements. However, there are hundreds of resources currently deployed across several subscriptions, so you need a monitoring approach that provides broad visibility and the ability to triage and isolate problems when they arise.
+Your organization has successfully migrated several applications from on-premises to Azure virtual machines (VMs) and Azure Kubernetes Service (AKS). Hundreds of resources are currently deployed across several Azure subscriptions.
 
-In this unit, you learn how to use Azure Monitor VM insights, Azure Monitor container insights, and other insights for an at-scale view across all your resources. You can drill into specific nodes and containers to continue troubleshooting.
+You must keep track of resource usage to ensure that cloud resources are adequately provisioned and their performance meets business requirements. You need a monitoring approach that provides broad visibility and the ability to triage and isolate problems when they arise.
+
+In this unit, you learn how to use Azure Monitor VM insights, Azure Monitor container insights, and other insights for an at-scale view across all your resources. You can drill into specific nodes and containers for troubleshooting.
 
 ## Azure Monitor VM insights
 
 You can use Azure Monitor VM insights to:
 
 - View your VMs' health and performance.
-- Monitor your VMs at-scale across multiple subscriptions and resource groups.
-- Get a topology view that shows the processes and network connection details of your VMs and scale sets.
+- Monitor your VMs at scale across multiple subscriptions and resource groups.
+- Get a topology view that shows the processes and network connection details of your VMs and virtual machine scale sets.
 
-To enable Azure Monitor VM insights, select **Insights** from the Azure Monitor portal page, select the **Get Started** tab, and then select **Enable**. Enabling Azure Monitor VM insights adds the required extensions and configuration to your VMs and VMs scales sets to collect and store a fixed set of usage and performance measurements.
+To enable Azure Monitor VM insights, select **Virtual Machines** from the Azure Monitor left navigation, and then select **Configure Insights** on the **Get started** tab. On the **Overview** tab, select VMs and virtual machine scale sets to monitor, and then select **Enable**.
+
+Enabling VM insights adds extensions and configuration to your VMs and virtual machine scale sets that collect and store a predetermined set of usage and performance measurements.
 
 ![Screenshot of getting started with Azure Monitor VM insights in the Azure portal.](../media/5-analyze-resource-utilization-01.png)
 
-## Monitor your virtual machines at scale
+### Monitor your VMs at scale
 
-Once you enable VM insights, you can view the VMs and scale sets with the highest resource usage in **Top N Charts** and the **Top N list** on the **Performance** tab. These charts allow you to quickly identify outliers and performance hot spots where the allocated resources might be insufficient to support the existing load. From this view, you can access more VM details, including its properties, links to extra performance and connection workbooks, collected logs, and alerts.
+Once enabled, VM insights monitors VM and virtual machine scale set usage and performance. Select the VM insights **Performance** tab to see the **Top N Charts** and **Top N list** show 
+
+VMs that have the highest resource usage . These charts allow you to quickly identify outliers and performance hot spots where the allocated resources might be insufficient to support the existing load. From this view, you can access more VM details, including its properties, links to extra performance and connection workbooks, collected logs, and alerts.
 
 ![Screenshot of Top N List of virtual machines in the Azure Monitor portal.](../media/5-analyze-resource-utilization-02.png)
 

@@ -6,7 +6,7 @@ This unit describes the Azure solutions that help you monitor your organization'
 
 [Azure Monitor](https://azure.microsoft.com/products/monitor) is a service for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. You can analyze metrics and logs from monitored resources. Azure Monitor helps you maximize the availability and performance of your applications and services by detecting and diagnosing application, infrastructure, and platform issues. Azure Monitor also supports operational workflows with alerts and automated actions and lets you create visualizations such as dashboards and reports.
 
-![Diagram of Azure Monitor architecture.](../media/3-azure-monitoring-options-01.png)
+[![Diagram that shows an overview of Azure Monitor with data sources on the left sending data to a central data platform and features on the right that use the collected data.](../media/overview-simple-20230707-opt.svg)](media/overview/overview-blowout-20230707-opt.svg#lightbox)
 
 Azure Monitor collects telemetry directly from Azure platform resources, and you can also ingest custom data by using APIs. Azure Monitor can also collect application-layer data and infrastructure-performance data from VM guest operating systems and containers.
 
