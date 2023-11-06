@@ -6,7 +6,7 @@ The VM client includes the operating system and other workloads and applications
 - Creates a data collection rule (DCR) that collects and sends a predefined set of client performance data to a Log Analytics workspace.
 - Presents the data in curated workbooks.
  
-Although you don't need to use VM insights to install Azure Monitor Agent, create DCRs, or set up workbooks, VM insights makes setting up VM client monitoring simple. VM insights provides you with a basis for monitoring the performance of your VM client and mapping the processes running on your machine.
+Although you don't need to use VM insights to install Azure Monitor Agent, create DCRs, or set up workbooks, VM insights makes setting up VM client monitoring easy. VM insights provides you with a basis for monitoring the performance of your VM client and mapping the processes running on your machine.
 
 ## Enable VM insights
 
