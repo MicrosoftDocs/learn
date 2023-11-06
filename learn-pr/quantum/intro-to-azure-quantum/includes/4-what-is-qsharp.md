@@ -37,7 +37,7 @@ The Q# language doesn’t specify whether the qubits in the program are logical 
 
 ### Compiler-generated controlled and adjoint specializations
 
-Q# includes keywords and compiler support for automatically generating the adjoint and/or controlled variation of an operation, which maps to common patterns used in reversible quantum computation. This makes writing algorithms easier and allows for compiler driven optimization of quantum code.
+Q# can automatically make operations reversible and controlled. This makes writing algorithms easier and allows for compiler driven optimization of quantum code.
 
 ### First-class operations
 
