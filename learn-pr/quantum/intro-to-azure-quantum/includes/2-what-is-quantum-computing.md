@@ -48,7 +48,7 @@ A good quantum computer should have these five features:
 1. **Initializable:** It can set the qubits to a specific state.
 1. **Resilient:** It can keep the qubits in a stable state for a long time.
 1. **A universal set of quantum operations:** Like in classical computing, any quantum algorithm can be decomposed as the application of a sequence of operations. A set of universal quantum operations is a set of quantum operations such that any other operation can be written (executed) as a sequence of them. Thus, a quantum computer doesn't need to perform every possible operation, only the operations in the universal set. A quantum computer that can perform a universal set of operations can be programmed to run any quantum algorithm.
-1. **Reliable measurements:** To obtain the results of quantum computations, we need to measure each qubit with high precision.
+1. **Reliable:** It can measure the qubits accurately.
 
 These five criteria are often known as the Di Vincenzo criteria for quantum computation.
 
