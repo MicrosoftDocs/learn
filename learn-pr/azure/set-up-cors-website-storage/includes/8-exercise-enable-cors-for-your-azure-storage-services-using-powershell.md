@@ -4,7 +4,7 @@ In this exercise, you'll learn how to use PowerShell to enable CORS for Azure st
 
 ## Enable CORS using PowerShell
 
-1. Run the following commands in the Cloud Shell to set environment variables that you will use with later cmdlets; these variables specify the name of Azure storage account, a storage container name, the name of the closest geographical region, and the name resource group that was created when you activated your sandbox account. Yuo can find the resource group name by going to the Azure portal and selecting the **<rgn>[sandbox resource group name]</rgn>** resource group. Your storage accounts are listed in the center pane; the storage account you created for this module is named *utilitystorageXXXX*, with random numbers in place of the X's.
+1. Run the following commands in the Cloud Shell to set environment variables that you'll use with later cmdlets; these variables specify the name of Azure storage account, a storage container name, the name of the closest geographical region, and the name resource group that was created when you activated your sandbox account. You can find the resource group name by going to the Azure portal and selecting the **<rgn>[sandbox resource group name]</rgn>** resource group. Your storage accounts are listed in the center pane; the storage account you created for this module is named *utilitystorageXXXX*, with random numbers in place of the Xs.
 
    ```powershell
    $storageAccountName = "<account name from previous exercise>"
