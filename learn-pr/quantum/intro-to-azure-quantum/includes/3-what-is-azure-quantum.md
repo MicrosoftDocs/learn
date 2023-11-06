@@ -13,7 +13,7 @@ Quantum programming is a distinct art from classical programming requiring very 
 
 The QDK includes Q#, a high-level **quantum programming language**. Q# is designed to address the challenges of quantum information processing; it is integrated in a software stack that enables a quantum algorithm to be compiled down to the primitive operations of a quantum computer.
 
-The Quantum Development Kit is designed to be used by a broad range of developers, from experienced quantum experts to developers who have never written a line of quantum code. It is built in to the Azure Quantum portal, where you can develop programs using the free hosted Jupyter Notebooks. You can also install the QDK locally on your computer to use your own local development environment and work both online and offline with the Azure Quantum service.
+The Quantum Development Kit is designed to be used by a broad range of developers, from experienced quantum experts to developers who have never written a line of quantum code. It is built into the Azure Quantum portal, where you can develop programs using the free hosted Azure Notebooks. You can also install the QDK extension for VS Code on your computer to use your own local development environment and work both online and offline with the Azure Quantum service.
 
 ### Resource estimation
 
