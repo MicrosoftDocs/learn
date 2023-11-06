@@ -1,4 +1,4 @@
-Now that you know how enabling managed identities for Azure resources creates an identity for your app to use for authentication, you'll create an app that uses that identity to access secrets in the vault.
+You know how enabling managed identities for Azure resources creates an identity for your app to use for authentication. Now create an app that uses that identity to access secrets in the vault.
 
 ::: zone pivot="csharp"
 
@@ -11,7 +11,7 @@ The official Key Vault client for .NET Core is the `SecretClient` class in the `
 > [!TIP]
 > Regardless of the framework or language you use to build your app, you should design it to cache secret values locally or load them into memory at startup, unless you have a specific reason not to. Reading them directly from the vault every time you need them is unnecessarily slow and expensive.
 
-`AddAzureKeyVault` only requires the vault name as an input, which we'll get from our local app configuration. It also automatically handles managed identity authentication. When used in an app deployed to Azure App Service with managed identities for Azure resources enabled, it will detect the managed identities token service and use it to authenticate. It's a good fit for most scenarios and implements all best practices, and we'll use it in this unit's exercise.
+`AddAzureKeyVault` only requires the vault name as an input, which you get from your local app configuration. It also automatically handles managed identity authentication. When used in an app deployed to Azure App Service with managed identities for Azure resources enabled, it detects the managed identities token service and use it to authenticate. It's a good fit for most scenarios and implements all best practices. You use it in this unit's exercise.
 
 ::: zone-end
 
@@ -21,14 +21,14 @@ The official Key Vault client for .NET Core is the `SecretClient` class in the `
 
 Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
 
-The official Key Vault client for Node.js apps is the `SecretClient` class in the `@azure/keyvault-secrets` npm package. Apps that include secret names in their configuration or code will generally use its `getSecret` method, which loads a secret value given its name. `getSecret` requires your app's identity to have the **Get** permission on the vault. Apps designed to load all secrets from a vault will also use the `listPropertiesOfSecrets` method, which loads a list of secrets and requires the **List** permission.
+The official Key Vault client for Node.js apps is the `SecretClient` class in the `@azure/keyvault-secrets` npm package. Apps that include secret names in their configuration or code generally use its `getSecret` method, which loads a secret value given its name. `getSecret` requires your app's identity to have the **Get** permission on the vault. Apps designed to load all secrets from a vault also use the `listPropertiesOfSecrets` method, which loads a list of secrets and requires the **List** permission.
 
-Before your app can create a `SecretClient` instance, it must get a credential object for authenticating to the vault. To authenticate, use the `DefaultAzureCredential` provided by the `@azure/identity` npm package. The `DefaultAzureCredential` is appropriate for most scenarios where the application is intended to ultimately run in the Azure Cloud. This is because the `DefaultAzureCredential` combines credentials commonly used to authenticate when deployed, with credentials used to authenticate in a development environment. The `DefaultAzureCredential` will attempt to authenticate via the following mechanisms in order:
+Before your app can create a `SecretClient` instance, it must get a credential object for authenticating to the vault. To authenticate, use the `DefaultAzureCredential` provided by the `@azure/identity` npm package. The `DefaultAzureCredential` is appropriate for most scenarios where the application is intended to ultimately run in the Azure Cloud. This fact is because the `DefaultAzureCredential` combines credentials commonly used to authenticate when deployed, with credentials used to authenticate in a development environment. The `DefaultAzureCredential` attempts to authenticate by using the following mechanisms in order:
 
-* Environment - The `DefaultAzureCredential` will read account information specified via environment variables and use it to authenticate.
-* Managed Identity - If the application is deployed to an Azure host with Managed Identity enabled, the `DefaultAzureCredential` will authenticate with that account.
-* Visual Studio Code - If the developer has authenticated via the Visual Studio Code Azure Account plugin, the `DefaultAzureCredential` will authenticate with that account.
-* Azure CLI - If the developer has authenticated an account via the Azure CLI `az login` command, the `DefaultAzureCredential` will authenticate with that account.
+* Environment - The `DefaultAzureCredential` reads account information specified via environment variables and use it to authenticate.
+* Managed Identity - If the application is deployed to an Azure host with Managed Identity enabled, the `DefaultAzureCredential` authenticates with that account.
+* Visual Studio Code - If the developer authenticated by using the Visual Studio Code Azure Account plugin, the `DefaultAzureCredential` authenticates with that account.
+* Azure CLI - If the developer authenticated an account by using the Azure CLI `az login` command, the `DefaultAzureCredential` authenticates with that account.
 
 For more information, [see the documentation](https://github.com/Azure/azure-sdk-for-js/blob/master/sdk/identity/identity/README.md#defaultazurecredential).
 
@@ -39,7 +39,7 @@ For more information, [see the documentation](https://github.com/Azure/azure-sdk
 
 ## Handle secrets in an app
 
-After a secret is loaded into your app, it's up to your app to handle it securely. In the app you build in this module, you'll write your secret value out to the client response, and to demonstrate that it has been loaded successfully, you'll view it in a web browser. **Returning a secret value to the client is *not* something you'd normally do!** Usually, you'll use secrets to do things like initialize client libraries for databases or remote APIs.
+After a secret is loaded into your app, it's up to your app to handle it securely. In the app you build in this module, you write your secret value out to the client response, and to demonstrate that it loaded successfully, you view it in a web browser. **Returning a secret value to the client is *not* something you'd normally do!** Usually, you use secrets to do things like initialize client libraries for databases or remote APIs.
 
 > [!IMPORTANT]
 > Always carefully review your code to ensure your app never writes secrets to any kind of output, including logs, storage, and responses.
@@ -48,7 +48,7 @@ After a secret is loaded into your app, it's up to your app to handle it securel
 
 ::: zone pivot="csharp"
 
-To load the secret from our vault, you'll create a new ASP.NET Core web API, and use `AddAzureKeyVault`.
+To load the secret from our vault, you create a new ASP.NET Core web API, and use `AddAzureKeyVault`.
 
 ### Create the app
 
@@ -70,7 +70,7 @@ To load the secret from our vault, you'll create a new ASP.NET Core web API, and
 
 ### Add code to load and use secrets
 
-To demonstrate good use of Key Vault, modify your app to load secrets from the vault at startup. You'll also add a new controller with an endpoint that gets your **SecretPassword** secret from the vault.
+To demonstrate good use of Key Vault, modify your app to load secrets from the vault at startup. You also add a new controller with an endpoint that gets your **SecretPassword** secret from the vault.
 
 1. For the app startup, enter the following command to launch the editor
 
@@ -127,7 +127,7 @@ To demonstrate good use of Key Vault, modify your app to load secrets from the v
     > [!IMPORTANT]
     > Make sure to save files when you're done editing them. You can save files either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
-    The only change from the starter code is the addition of `ConfigureAppConfiguration`. This is where we load the vault name from configuration and call `AddAzureKeyVault` with it.
+    The only change from the starter code is the addition of `ConfigureAppConfiguration`. This element is where we load the vault name from configuration and call `AddAzureKeyVault` with it.
 
 1. For the controller, create a new file in the `Controllers` folder called `SecretTestController.cs`, and paste in the following code.
 
@@ -184,7 +184,7 @@ To demonstrate good use of Key Vault, modify your app to load secrets from the v
 
 ::: zone pivot="javascript"
 
-We'll create a new web API with Express.js and use the `@azure/keyvault-secrets` and `@azure/identity` packages to load the secret from our vault.
+Create a new web API with Express.js and use the `@azure/keyvault-secrets` and `@azure/identity` packages to load the secret from our vault.
 
 ### Create the app
 
@@ -201,9 +201,9 @@ code app.js
 
 ### Add code to load and use secrets
 
-To demonstrate good use of Key Vault, your app will load secrets from the vault at startup. To demonstrate that your secrets have been loaded, you'll create an endpoint that displays the value of the **SecretPassword** secret.
+To demonstrate good use of Key Vault, your app loads secrets from the vault at startup. To demonstrate that your secrets loaded, create an endpoint that displays the value of the **SecretPassword** secret.
 
-1. To set up the app, paste the following code into the editor. This will import the necessary packages, set up the port and vault URI configuration, and create a new object to hold the secret names and values.
+1. To set up the app, paste the following code into the editor. This code imports the necessary packages, set up the port and vault URI configuration, and create a new object to hold the secret names and values.
 
     ```javascript
     // Importing dependencies
@@ -224,7 +224,7 @@ To demonstrate good use of Key Vault, your app will load secrets from the vault 
     > [!IMPORTANT]
     > Make sure to save files as you work on them, especially when you're finished. You can save files either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
-1. Next, you'll add the code to authenticate to the vault and load the secrets. You'll add this as two separate functions. Insert a couple of blank lines after the code you previously added, and then paste in the following code.
+1. Next, add the code to authenticate to the vault and load the secrets. You add this code as two separate functions. Insert a couple of blank lines after the code you previously added, and then paste in the following code.
 
     ```javascript
     const getKeyVaultSecrets = async () => {
@@ -266,7 +266,7 @@ To demonstrate good use of Key Vault, your app will load secrets from the vault 
     });
     ```
 
-1. Lastly, you'll call our functions to load the secrets from our vault, then start the app. To complete the app, paste in this last snippet.
+1. Lastly, call your functions to load the secrets from our vault, then start the app. To complete the app, paste in this last snippet.
 
     ```javascript
     (async () =>  {
