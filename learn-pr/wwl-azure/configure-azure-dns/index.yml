@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/26/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: dns
 title: Configure Azure DNS
 summary: Learn how to configure Azure DNS including custom domain names and record sets.
