@@ -45,9 +45,9 @@ Most used qubit technologies are trapped-ion qubits, superconducting qubits, and
 A good quantum computer should have these five features:
 
 1. **Scalable:** It can have many qubits.
-1. **Initializable:** It can set the qubits to a specific state.
-1. **Resilient:** It can keep the qubits in a stable state for a long time.
-1. **A universal set of quantum operations:** Like in classical computing, any quantum algorithm can be decomposed as the application of a sequence of operations. A set of universal quantum operations is a set of quantum operations such that any other operation can be written (executed) as a sequence of them. Thus, a quantum computer doesn't need to perform every possible operation, only the operations in the universal set. A quantum computer that can perform a universal set of operations can be programmed to run any quantum algorithm.
+1. **Initializable:** It can set the qubits to a specific state (usually the 0 state).
+1. **Resilient:** It can keep the qubits in superposition state for a long time.
+1. **Universal:** A quantum computer doesn't need to perform every possible operation, only a set of operations called *universal set*. A set of universal quantum operations is that such any other operation can be decomposed as a sequence of them.
 1. **Reliable:** It can measure the qubits accurately.
 
 These five criteria are often known as the Di Vincenzo criteria for quantum computation.

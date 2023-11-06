@@ -6,9 +6,9 @@ There are many reasons for wanting to build a quantum programming language, but 
 
 When writing algorithms, we should meet the following requirements for the language, compiler, and runtime:
 
-- **Abstract qubits** Algorithms use qubits that are not tied to specific hardware or layout. The compiler and runtime handle the mapping from program qubits to physical qubits.
-- **Algorithms need to integrate quantum and classical computation.** The ability to perform classical and quantum computations is essential in a *universal* quantum computer, which is the ultimate machine capable of simulate any classical and quantum operation. 
-- **Laws of physics** Algorithms follow the rules of quantum physics. For example, they cannot copy or access qubit state directly. They can only use some validation and debugging tools with a simulator.
+- **Abstract qubits** Quantum algorithms use qubits that are not tied to specific hardware or layout. The compiler and runtime handle the mapping from program qubits to physical qubits.
+- **Quantum and classical computation.** The ability to perform classical and quantum computations is essential in a *universal* quantum computer.
+- **Laws of physics** Quantum algorithms follow the rules of quantum physics. For example, they cannot copy or access qubit state directly. 
 
 ## The characteristics of Q\#
 
@@ -23,8 +23,6 @@ The following sections describe some key features of Q#.
 The Q# libraries enable you to run complex quantum operations without having to design low-level operation sequences.
 
 - The standard library provides a set of essential and very useful functions and operations that can be used when writing quantum programs in Q#.
-- The quantum chemistry library for simulating quantum dynamics and electronic structure problems on quantum computers.
-- The quantum machine learning library, which provides an implementation of the sequential classifiers that take advantage of quantum computing to run hybrid quantum/classical machine learning experiments.
 - The quantum numeric library, which provides support for a wide range of numerics functionality.
 
 ### Qubit management
