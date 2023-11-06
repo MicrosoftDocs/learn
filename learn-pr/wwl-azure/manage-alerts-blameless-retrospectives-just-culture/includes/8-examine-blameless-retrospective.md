@@ -28,7 +28,7 @@ Having a "blameless" retrospective process means that engineers whose actions ha
 
 **And** that they can give this detailed account **without fear of punishment or retribution.**
 
-Why shouldn't engineers be punished or reprimanded? Because if they fear being blamed, they may not provide the necessary details to understand the failure's mechanism, pathology, and operation.
+Why shouldn't engineers be punished or reprimanded? Because if they fear being blamed, they might not provide the necessary details to understand the failure's mechanism, pathology, and operation.
 
 This lack of understanding of the accident's occurrence guarantees that it ***will*** be repeated. If not with the original engineer, another one in the future.
 
