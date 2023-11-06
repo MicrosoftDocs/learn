@@ -1,6 +1,6 @@
 In this module, you:
 
-- Learned about Cross Origin Resource Sharing (CORS) and why it is used.
+- Learned about Cross Origin Resource Sharing (CORS) and why it's used.
 - Explored different ways to enable CORS for your Azure Storage Services.
 - Learned how to set CORS rules to accept and deny requests sent to your storage service resources from a web request originating outside your domain.
 
@@ -21,7 +21,7 @@ The following resources will provide you with detailed information about the des
 
 - [CORS Support for the Azure Storage Services](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services)
 - [CORS using Azure CLI](/cli/azure/storage/cors)
-- [CORS using Azure Powershell](/powershell/module/azure.storage/set-azurestoragecorsrule)
+- [CORS using Azure PowerShell](/powershell/module/azure.storage/set-azurestoragecorsrule)
 - [Authorize requests to Azure Storage](/rest/api/storageservices/authorization-for-the-azure-storage-services)
 - [Versioning for Azure Storage](/rest/api/storageservices/versioning-for-the-azure-storage-services)
 
