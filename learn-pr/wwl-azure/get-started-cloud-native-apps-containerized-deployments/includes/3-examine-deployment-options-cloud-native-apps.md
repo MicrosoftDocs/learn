@@ -6,11 +6,11 @@ The following sections examine the host platforms for cloud-native apps on Azure
 
 Azure Container Apps enables you to build serverless microservices and jobs based on containers. Distinctive features of Container Apps include:
 
-- Optimizing for running general purpose containers, especially for applications that span many microservices deployed in containers.
-- Powering by Kubernetes and open-source technologies like Dapr, KEDA, and envoy.
-- Supporting Kubernetes-style apps and microservices with features like service discovery and traffic splitting.
-- Enabling event-driven application architectures by supporting scale based on traffic and pulling from event sources like queues, including scale to zero.
-- Supporting running on demand, scheduled, and event-driven jobs.
+- Container Apps is optimized for running general purpose containers, especially for applications that span many microservices deployed in containers.
+- Container Apps is powered by Kubernetes and open-source technologies like Dapr, KEDA, and envoy.
+- Container Apps supports Kubernetes-style apps and microservices with features like service discovery and traffic splitting.
+- Container Apps enables event-driven application architectures by supporting scale based on traffic and pulling from event sources like queues, including scale to zero.
+- Container Apps supports running on demand, scheduled, and event-driven jobs.
 
 Azure Container Apps doesn't provide direct access to the underlying Kubernetes APIs. If you require access to the Kubernetes APIs and control plane, you should use Azure Kubernetes Service. However, if you would like to build Kubernetes-style applications and don't require direct access to all the native Kubernetes APIs and cluster management, Container Apps provides a fully managed experience based on best-practices. For these reasons, many teams prefer to start building container microservices with Azure Container Apps.
 
@@ -20,7 +20,7 @@ Azure App Service provides fully managed hosting for web applications including 
 
 ## Azure Container Instances
 
-Azure Container Instances (ACI) provides a single pod of Hyper-V isolated containers on demand. It is a simpler and more flexible option than Container Apps. Concepts like scale, load balancing, and certificates aren't provided with ACI containers. For example, to scale to five container instances, you create five distinct container instances. Azure Container Apps provides many application-specific concepts on top of containers, including certificates, revisions, scale, and environments. Users often interact with Azure Container Instances through other services. For example, Azure Kubernetes Service can layer orchestration and scale on top of ACI through virtual nodes. If you need a less "opinionated" building block that doesn't align with the scenarios Azure Container Apps is optimizing for, Azure Container Instances is an ideal option.
+Azure Container Instances (ACI) provides a single pod of Hyper-V isolated containers on demand. It's a simpler and more flexible option than Container Apps. Concepts like scale, load balancing, and certificates aren't provided with ACI containers. For example, to scale to five container instances, you create five distinct container instances. Azure Container Apps provides many application-specific concepts on top of containers, including certificates, revisions, scale, and environments. Users often interact with Azure Container Instances through other services. For example, Azure Kubernetes Service can layer orchestration and scale on top of ACI through virtual nodes. If you need a less "opinionated" building block that doesn't align with the scenarios Azure Container Apps is optimizing for, Azure Container Instances is an ideal option.
 
 ## Azure Kubernetes Service
 
