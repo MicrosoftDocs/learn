@@ -2,8 +2,6 @@ Azure Container Apps is a fully managed environment that enables you to run micr
 
 Suppose you're part of a team that wants use of Azure Container Apps to run containerized cloud-native apps. The team needs to demonstrate that Container Apps meet their business requirements before transitioning away from their existing solution.  
 
-This module guides you through ...
-
 By the end of this module, you're able to:
 
 1. Configure a secure connection between an Azure Container Registry and an Azure Container Apps
