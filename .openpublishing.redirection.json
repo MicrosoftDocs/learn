@@ -28889,6 +28889,11 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/4-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/analyze-receipts-form-recognizer/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-fundamentals-of-decision-support/index.md",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/anomaly-detector/overview",
+      "redirect_document_id": false
     }
   ]
 }
