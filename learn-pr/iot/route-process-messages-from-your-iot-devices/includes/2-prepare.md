@@ -1,4 +1,4 @@
-In this module, you create a simulated device that sends vibration telemetry to your IoT hub. With your simulated data arriving at IoT hub, you implement an IoT hub message route and Azure Stream Analytics job that can be used to process device messages. In both cases data is delivered to a Blob storage container that is used to verify successful implementation. 
+In this module, you create a simulated device that sends vibration telemetry to your IoT hub. With simulated data arriving at the IoT hub, you implement an IoT hub message route and Azure Stream Analytics job that can be used to process device messages. In both cases, data is delivered to a Blob storage container that is used to verify successful implementation. 
 
 ## Setup
 
@@ -25,7 +25,7 @@ Before you begin the exercises, you need an IoT hub. Creating the IoT hub can ta
 
    | Property | Value |
    | ----- | ----- |
-   | **Subscription** | Select the Azure sandbox subscription. |
+   | **Subscription** | Select the sandbox **Concierge subscription**. |
    | **Resource group** | Select the <rgn>[sandbox resource group name]</rgn> resource group. |
    | **IoT hub name** | Enter a name for your hub. This name must be globally unique, with a length between 3 and 50 alphanumeric characters. The name can also include the dash (`'-'`) character.<br><br>**Note:** IoT hubs are publicly discoverable as DNS endpoints, so avoid using any sensitive or personally identifiable information in the name. |
    | **Region** | Select the region, closest to you, where you want your hub to be located. |
@@ -38,7 +38,7 @@ Before you begin the exercises, you need an IoT hub. Creating the IoT hub can ta
 
 1. In **Device ID**, enter **sensor-v-3000**. Leave **Auto-generate keys** checked so that the primary and secondary keys will be generated automatically. Leave Authentication type as Symmetric key. Select **Save**. This action creates a device identity for your IoT hub.
 
-1. After the device is created, open the device from the list in the **Devices** pane. Select the **Copy to clipboard** button to copy the value of **Primary connection string**. This connection string is used by device code to communicate with the IoT hub. Copy this value into Notepad window.
+1. After the device is created, open the device from the list in the **Devices** pane. Select the **Copy to clipboard** button to copy the value of **Primary connection string**. This connection string is used by device code to communicate with the IoT hub. Copy this value into a Notepad window.
 
     > [!NOTE]
     > By default, the keys and connection strings are masked because they're sensitive information. If you click the eye icon, they're revealed. It's not necessary to reveal them to copy them with the copy button.

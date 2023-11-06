@@ -13,7 +13,7 @@ First, we work on the logging route that sends data to Azure Blob storage.
 
 One important feature of message routing is the ability to filter incoming data before routing to an endpoint. The filter, written as a SQL query, directs output through a route only when certain conditions are met.
 
-One of the easiest ways to filter data is to evaluate a message property. The code in your simulated device app configures the device-to-cloud messages with **sensorID** properties in the following lines taken from the `CreateTelemetryMessage` and `CreateLoggingMessage` methods:
+One of the easiest ways to filter data is to evaluate a message property. The code in your simulated device app configures the device-to-cloud messages with **sensorID** properties as shown in the following lines taken from the `CreateTelemetryMessage` and `CreateLoggingMessage` methods:
 
 ```csharp
 ...
@@ -144,3 +144,12 @@ To create the storage endpoint:
 1. Return to your Azure portal window and navigate back to your dashboard.
 
 ## Verify your work
+
+In this exercise, you performed the following steps:
+
+1. Create a storage endpoint destination for messages in your route.
+2. Create a storage account and container.
+3. Create a route to the storage endpoint.
+4. Verified that .avro storage blobs are being created.
+
+If you encountered errors at any step or don't see .avro storage blobs created in the expected format, address the problem before continuing on to the next exercise.

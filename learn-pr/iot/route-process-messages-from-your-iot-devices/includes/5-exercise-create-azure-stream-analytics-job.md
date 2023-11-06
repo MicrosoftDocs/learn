@@ -20,7 +20,7 @@ Your Stream Analytics job processes message data to an output location using the
 
     The **New Stream Analytics job** pane is displayed.
 
-1. On the **New Stream Analytics job** pane, fill in the following fields:
+1. In the **New Stream Analytics job** pane, fill in the following fields:
 
    | Parameter | Value |
    | --------- | ----- |
@@ -178,6 +178,14 @@ Now for the fun part. Is the telemetry from your device app being processed thro
 
 1. At the Terminal command prompt, to exit the device simulator app, press **CTRL-C**.
 
-You've traced the message data processes from the device app, to the IoT hub, and then through both an IoT hub route and Azure Stream Analytics job all the way to a Blob storage container. Great progress!
-
 ## Verify your work
+
+In this exercise, you performed the following steps:
+
+1. Create the Stream Analytics Job
+1. Create the Stream Analytics Job Input
+1. Create the Stream Analytics Job Output
+1. Create the Stream Analytics Job Query
+1. Test the Logging Route
+
+You've traced the message data processes from the device app, to the IoT hub, and then through both an IoT hub route and Azure Stream Analytics job all the way to a Blob storage container. Great progress!

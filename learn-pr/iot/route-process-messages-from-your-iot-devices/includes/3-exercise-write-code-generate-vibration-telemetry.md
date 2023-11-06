@@ -17,7 +17,7 @@ In this exercise, you:
 
 1. Open Visual Studio Code.
 
-1. Create a file named **Program.cs**.
+1. Create a file named **Program.cs** in the VibrationDevice folder.
 
 1. Paste the following code into the **Program.cs** file.
 
@@ -335,11 +335,11 @@ In this exercise, you:
    }
    ```
 
-1. At the top of the **Program.cs** file, find the `deviceConnectionString` parameter. Replace the placeholder value with the Primary connection string you copied down for your **sensor-v-3000** device.
+1. At the top of the **Program.cs** file, find the `deviceConnectionString` parameter. Replace the placeholder value with the Primary connection string you copied to Notepad for your **sensor-v-3000** device.
 
 1. Save your changes to **Program.cs**.
 
-1. Create a file called **VibrationDevice.csproj**.
+1. Create a file named **VibrationDevice.csproj** in the VibrationDevice folder.
 
 1. Paste the following code into **VibrationDevice.csproj**.
 
@@ -362,7 +362,7 @@ In this exercise, you:
 
 1. In your Visual Studio Code window, open the **Terminal** menu and select **New Terminal**.
 
-    Examine the command prompt to ensure that the **VibrationDevice** folder is specified. You do not want to start building this project from the wrong folder location.
+    Examine the command prompt to ensure that the **VibrationDevice** folder is specified. Switch the terminal folder location to **VibrationDevice** if necessary. You do not want to start building this project from the wrong folder location.
 
 1. At the Terminal command prompt, enter the following command to verify that the application builds without errors:
 
