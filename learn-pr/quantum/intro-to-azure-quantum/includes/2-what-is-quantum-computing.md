@@ -46,7 +46,7 @@ A good quantum computer should have these five features:
 
 1. **Scalable:** It can have many qubits.
 1. **Ability to initialize the qubits in a specific state:** Having many qubits isn't useful if we can't trust their initial state. A fundamental characteristic of a quantum computer is its ability to initialize the qubits reliably to a specific state (usually, the state $0$).
-1. **Resilient qubits:** Quantum states are delicate. The smallest interaction with the environment can "contaminate" the state of the qubits and ruin our computations. Qubit registers need to be able to remain in a consistent quantum state long enough for us to perform the computations. The amount of time that a qubit can remain in a specific quantum state is called *coherence time*.
+1. **Resilient:** It can keep the qubits in a stable state for a long time.
 1. **A universal set of quantum operations:** Like in classical computing, any quantum algorithm can be decomposed as the application of a sequence of operations. A set of universal quantum operations is a set of quantum operations such that any other operation can be written (executed) as a sequence of them. Thus, a quantum computer doesn't need to perform every possible operation, only the operations in the universal set. A quantum computer that can perform a universal set of operations can be programmed to run any quantum algorithm.
 1. **Reliable measurements:** To obtain the results of quantum computations, we need to measure each qubit with high precision.
 
