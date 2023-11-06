@@ -41,7 +41,7 @@ Q# can automatically make operations reversible and controlled. This makes writi
 
 ### First-class operations
 
-Operations and functions in Q# are first-class entities; they can be passed to other operations, assigned to variables, and used like any other value. This makes it easy to express protocols such as amplitude amplification, phase estimation, and others.
+Operations and functions in Q# can be passed to other operations, assigned to variables, and used like any other value. This makes it easy to express protocols such as amplitude amplification, phase estimation, and others.
 
 ### Classical control flow
 
