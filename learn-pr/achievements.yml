@@ -2555,5 +2555,9 @@ achievements:
   title: Determine your endpoint implementation
   summary: After completing this module, you'll have a better understanding of your endpoint management objectives, device inventory considerations, licensing needs, infrastructure objectives, and rollout plans.
   iconUrl: /training/achievements/generic-badge-social.png
-
+- uid: learn.wwl.explore-fundamentals-of-decision-support.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Explore decision support'
+  summary: Learn how to automate decision support processes using Azure.
+  iconUrl: /training/achievements/explore-fundamentals-of-decision-support.svg
   
