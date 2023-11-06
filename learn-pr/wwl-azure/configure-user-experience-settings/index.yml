@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure user experience settings
 summary: Persistent virtual desktops save the operating system state in between reboots. Virtual desktop provides users easy and seamless access to their assigned VMs, often with a single sign-on solution.
 abstract: |

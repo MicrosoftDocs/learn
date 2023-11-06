@@ -7,7 +7,6 @@ metadata:
   author: danmabee
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Write and test a program in Go
 summary: By using what you've learned about Go, write and test a complete program.

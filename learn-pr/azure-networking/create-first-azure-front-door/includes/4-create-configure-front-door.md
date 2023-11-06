@@ -1,4 +1,4 @@
-Front Door has a number of components that combine to accelerate requests to web applications while maintaining high availability at a global scale. Let's take a look at the different components that makes up the Front Door service and how they play a part in routing end user's requests.
+Front Door has several components that combine to accelerate requests to web applications while maintaining high availability at a global scale. Let's take a look at the different components that make up the Front Door service and how they play a part in routing the end user's requests.
 
 :::image type="content" source="../media/4-front-door-flow.png" alt-text="Diagram of Azure Front Door components in a flow chart.":::
 
@@ -12,7 +12,7 @@ Front Door routing rules determine how each request gets processed once it arriv
 
 ### Origins
 
-An origin is an application deployment that Azure Front Door retrieves contents from when caching is not available. Front Door supports origins both hosted in Azure, on-premises and in another cloud. When defining an origin you need to specify the type, hostname, host header, certificate subject name validation, priority and weight. Defining these fields will help Front Door determine which origin resource is best to respond to incoming requests.
+An origin is an application deployment that Azure Front Door retrieves contents from when caching isn't available. Front Door supports origins both hosted in Azure, on-premises and in another cloud. When defining an origin you need to specify the type, hostname, host header, certificate subject name validation, priority and weight. Defining these fields helps Front Door determine which origin resource is best to respond to incoming requests.
 
 ### Origin groups
 
@@ -20,11 +20,11 @@ An origin group is a set of origins receiving similar traffic for their applicat
 
 ### Rules engine
 
-A rule set is a customized rules engine that groups a combination of rules into a single set. A rule set can be associated with multiple routes. These rules are processed at the Front Door edge before requests are forwarded on to the origin. A single rule can have up to 10 match conditions and five actions.
+A rule set is a customized rules engine that groups a combination of rules into a single set. A rule set can be associated with multiple routes. These rules are processed at the Front Door edge before requests are forwarded on to the origin. A single rule can have up to 10 match conditions and 5 actions.
 
 #### Rules match conditions
 
-The match conditions identify the specific type of requests the action should take. When using multiple match conditions in a rule they're grouped together using an AND logic.
+The match conditions identify the specific type of requests the action should take. When multiple match conditions are used in a rule, they're grouped together using an AND logic.
 
 The following type of match conditions can be found in a rule set:
 
@@ -32,24 +32,24 @@ The following type of match conditions can be found in a rule set:
 * Filter requests by header information.
 * Filter requests from mobile devices or desktop devices.
 * Filter requests from request file name and file extension.
-* Filter requests by hostname, SSL protocol, request URL, protocol, path, query string, post args, and other values.
+* Filter requests by hostname, TLS protocol, request URL, protocol, path, query string, post args, and other values.
 
 #### Rules actions
 
-An action is the behavior that gets applied to the request type that matches the condition(s) identifies. The following are actions you can currently take once a request matches a condition:
+An action is the behavior applied to the request type when it matches the match condition(s). The following are actions you can currently take once a request matches a condition:
 
 * **Route configuration override** - to override the origin group or the caching configuration to use for the request.
 * **Modify request header** - to append, overwrite, or delete the header value in the request that is sent to the origin.
 * **Modify response header** - to append, overwrite, or delete the header value in the response before being sent back to the client.
-* **URL redirect** - to redirect clients to a different URL. The response is sent by Front Door.
+* **URL redirect** - to redirect clients to a different URL. Front Door sends the response.
 * **URL rewrite** - to rewrite the path of the request being sent to the origin.
 
 ### Security policy
 
-Front Door supports Web Application Firewall (WAF) policy and rules. A security policy in a Front Door profile contains multiple WAF policies which can be used for different domains in the profile. WAF rules defend your web service against common exploits and vulnerabilities such as SQL injections, cross-site scripting, Java attacks and many more. The following features are currently support for WAF on Front Door:
+Front Door supports Web Application Firewall (WAF) policy and rules. A security policy in a Front Door profile contains multiple WAF policies that can be used for different domains in the profile. WAF rules defend your web service against common exploits and vulnerabilities such as SQL injections, cross-site scripting, Java attacks and many more. The following features are currently supported for WAF on Front Door:
 
 * **Policy settings** - Allows you to control access to your web applications by using a set of custom and managed rules.
-* **Manage rules** - Provide an easy way to deploy protection against a common set of security threats. Since rule sets are managed by Azure, the rules are updated as needed to protect against new attack signatures.
+* **Manage rules** - Provide an easy way to deploy protection against a common set of security threats. Since Azure manages the rule sets, the rules are updated as needed to protect against new attack signatures.
 * **Custom rules** - Allows you to control access to your web applications based on the conditions you define. A custom WAF rule consists of a priority number, rule type, match conditions, and an action.
 * **Exclusion list** - Allows you to omit certain request attributes from a WAF evaluation and allow the rest of the request to be process as normal.
 * **Geo-filtering** - Allows you to restrict access to your web application by countries/regions.
@@ -61,7 +61,7 @@ Front Door supports Web Application Firewall (WAF) policy and rules. A security 
 
 ## Front Door tiers
 
-Front Door has three tiers, Classic, Standard, and Premium. Each tier supports a number of features and optimization that you can use. Standard tier is content-delivery optimized while Premium tier is security optimized. See the following table for a full list of support features for each tier.
+Front Door has three tiers, Classic, Standard, and Premium. Each tier supports many features and optimization that you can use. Standard tier is content-delivery optimized while Premium tier is security optimized. See the following table for a full list of support features for each tier.
 
 ### Feature comparison between tiers
 
@@ -92,4 +92,4 @@ Front Door has three tiers, Classic, Standard, and Premium. Each tier supports a
 
 You can create and configure Front Door using the Azure portal, Azure PowerShell or, the Azure CLI. For Azure CLI, use the `az afd profile create` command to create a new profile. If you prefer Azure PowerShell, you can use the `New-AzFrontDoor` cmdlet. You can complete most operations from the Front Door manager by using the Azure portal.
 
-Let's create and configure a Front Door profile for the motor vehicle department websites previously deployed.
+Let's create and configure a Front Door profile for the motor vehicle department websites that we previously deployed.

@@ -1,3 +1,4 @@
+
 ## What is a successful Git branch workflow?
 
 When evaluating a workflow for your team, you must consider your team's culture. You want the workflow to enhance your team's effectiveness and not be a burden that limits productivity. Some things to consider when evaluating a Git workflow are:

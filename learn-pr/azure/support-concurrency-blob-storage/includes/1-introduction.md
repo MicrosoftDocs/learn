@@ -1,6 +1,6 @@
 ﻿Concurrency strategies in Azure Blob storage allow you to avoid conflicts when multiple users are viewing and updating content simultaneously.
 
-You're a developer for an online financial news organization. The company uses Blob storage to store content prior to publication. The newsroom is a chaotic place and factors affecting the market change quickly throughout the day, frequently resulting in multiple reporters trying to edit content at the same time. The online copywriting and editing application used by your company's reporters needs to provide a good experience in these situations, making sure that reporters can't save their changes to the cloud without being aware of changes that others have made at the same time.
+You're a developer for an online financial news organization. The company uses Blob storage to store content prior to publication. The newsroom is a chaotic place and stories change frequently throughout the day as multiple editors, reporters, and analysts submit their content. The online copywriting and editing application used by your company's reporters needs to provide a good experience in these situations, making sure that contributors are submitting changes without overwriting changes made by others.
 
 There are three main concurrency strategies to consider:
 

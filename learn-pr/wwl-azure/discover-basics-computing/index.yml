@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Discover the basics of computing
 summary: An overview of the parts of computers and how they work together.
 abstract: |
@@ -27,8 +26,7 @@ roles:
 - k-12-educator
 - student
 products:
-- return-to-school
-- return-to-workplace
+- industry-solutions
 subjects:
 - cloud-computing
 units:

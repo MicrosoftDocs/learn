@@ -4,11 +4,11 @@ metadata:
   moduleType: standard  
   title: Accelerate high-performance computing storage by using Azure HPC Cache
   description: Accelerate NFS storage for HPC workloads by using Azure HPC Cache.
-  ms.date: 05/06/2021
+  ms.date: 08/15/2023
   author: ronhogue  
   ms.author: rohogue  
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: hpc-cache
 title: Accelerate high-performance computing storage by using Azure HPC Cache  
 summary: Create a virtual caching solution for NFS storage. Client machines connect to the cache, read data, and process the data.
 abstract: |

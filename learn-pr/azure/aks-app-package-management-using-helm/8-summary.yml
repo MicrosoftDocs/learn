@@ -8,8 +8,9 @@ metadata:
   ms.author: zarhoads
   ms.prod: learning-azure
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.date: 10/11/2021
-
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]

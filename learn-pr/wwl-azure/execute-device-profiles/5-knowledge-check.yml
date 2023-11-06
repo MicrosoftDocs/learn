@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "This unit is the knowledge check for the module, execute device profiles."
-  ms.date: 03/14/2023
+  ms.date: 07/24/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -14,25 +14,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When a policy or an app deploys, Microsoft Intune performs a device check with Microsoft Intune services. If a device doesn't check in to get the policy after the first notification, how many attempts do a device have before being non-compliant?"
+  - content: "As an IT administrator, you need to create a device profile for Windows devices that will enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms. Which type of device profile should you create?"
     choices:
-    - content: "Five more times, then every 3 minutes for 30-minutes"
+    - content: "Device Security Profile"
       isCorrect: false
-      explanation: "Incorrect. This check-in frequency is for Windows PCs as enrolled devices. Try again."
-    - content: "Five more times, then every 15 minutes for six hours"
+      explanation: "Incorrect. A Device Security Profile is used to configure security settings on devices."
+    - content: "Device Compliance Profile"
       isCorrect: false
-      explanation: "Incorrect. This check-in frequency is for iOS devices. Try again."
-    - content: "Three more attempts, then follow the check-in frequency scheduled based on the device"
+      explanation: "Incorrect. A Device Compliance Profile is used to ensure that devices meet specific compliance policies."
+    - content: "Device Configuration Profile"
       isCorrect: true
-      explanation: "Correct. If a device doesn't check in to get a policy, Intune will try three more times. If the device is offline, the device gets the policy during the next scheduled check-in frequency based on the platform."
-  - content: "Contoso's IT department has updated the Microsoft Intune policy settings to help ensure devices are correctly configured in order to access e-mail services. They've deployed this policy change across all devices. Which Microsoft Intune policy best defines this setting?"
+      explanation: "Correct. A Device Configuration Profile is used to configure settings on devices, including automation and validation of environment creation and teardown."
+  - content: "Your organization wants to prevent iOS device users from using the device camera. Which type of profile should you create in Intune?"
     choices:
-    - content: "Conditional Access Policies"
+    - content: "VPN profile"
+      isCorrect: false
+      explanation: "Incorrect. VPN profiles assign VPN profiles to users and devices in your organization, so they can easily and securely connect to the network."
+    - content: "Wi-Fi profile"
+      isCorrect: false
+      explanation: "Incorrect. Wi-Fi settings assign wireless network settings to users and devices. When you assign a Wi-Fi profile, users get access to your corporate Wi-Fi without having to configure it themselves."
+    - content: "Device restrictions profile"
       isCorrect: true
-      explanation: "Correct. With Conditional Access Policies, Contoso's IT department defines conditions and requirements, which the device must meet before it can access specified services."
-    - content: "Configuration Policies"
+      explanation: "Correct. Device restrictions control security, hardware, data sharing, and more settings on the devices. For example, create a device restriction profile that prevents iOS device users from using the device camera."
+  - content: "Why would you create a custom device profile in Intune?"
+    choices:
+    - content: "To add settings that aren't available in Intune or to use settings available in other device profiles"
+      isCorrect: true
+      explanation: "Correct. Custom device profiles are used to add settings that are not available in Intune or to use settings available in other device profiles."
+    - content: "To use only built-in settings in Intune"
       isCorrect: false
-      explanation: "Incorrect. With Configuration Policies, Contoso's IT department manages security settings and features on the device. Try again."
-    - content: "Corporate Device Enrollment Policies"
+      explanation: "Incorrect. Custom device profiles are used to add settings that are not available in Intune."
+    - content: "To restrict access to device settings for all users"
       isCorrect: false
-      explanation: "Incorrect. With Corporate Device Enrollment Policies, Contoso's IT department defines enrollment of corporate owned devices. Try again."
+      explanation: "Incorrect. Custom device profiles are used to add settings, not restrict them."

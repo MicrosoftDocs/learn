@@ -13,23 +13,23 @@ Once they've registered, each time users sign into a service or app that require
 
 ## Azure Authentication Methods
 
-As we learned earlier, there are several possible authentication methods that an administrator can set up. Some of these also support Self-Service Password Reset (SSPR), which allows users to reset their password by supplying a secondary form of authentication. You can couple this service with Azure AD MFA to ease the burden on IT staff.
+As we learned earlier, there are several possible authentication methods that an administrator can set up. Some of these also support Self-Service Password Reset (SSPR), which allows users to reset their password by supplying a secondary form of authentication. You can couple this service with Microsoft Entra multifactor authentication to ease the burden on IT staff.
 
 The following table lists the authentication methods and the services that can use them.
 
 | Authentication method  | Services    |
 |------------------------|-------------|
-| **Password** | Azure AD MFA and SSPR |
+| **Password** | Microsoft Entra multifactor authentication and SSPR |
 | **Security questions** | SSPR |
 | **Email address** | SSPR |
-| **Windows Hello for Business** |Azure AD MFA and SSPR |
-| **FIDO2 Security Key** |Azure AD MFA and SSPR |
-| **Microsoft Authenticator app** |Azure AD MFA and SSPR |
-| **OATH hardware token** | Azure AD MFA and SSPR |
-| **OATH software token** | Azure AD MFA and SSPR |
-| **Text message** | Azure AD MFA and SSPR |
-| **Voice call** | Azure AD MFA and SSPR |
-| **App passwords** | Azure AD MFA in certain cases |
+| **Windows Hello for Business** |Microsoft Entra multifactor authentication and SSPR |
+| **FIDO2 Security Key** |Microsoft Entra multifactor authentication and SSPR |
+| **Microsoft Authenticator app** |Microsoft Entra multifactor authentication and SSPR |
+| **OATH hardware token** | Microsoft Entra multifactor authentication and SSPR |
+| **OATH software token** | Microsoft Entra multifactor authentication and SSPR |
+| **Text message** | Microsoft Entra multifactor authentication and SSPR |
+| **Voice call** | Microsoft Entra multifactor authentication and SSPR |
+| **App passwords** | Microsoft Entra multifactor authentication in certain cases |
 
 Let's explore these in a bit more detail.
 
@@ -49,7 +49,7 @@ This method is available only for non-administrative accounts that use Self-Serv
 
 ### Email address
 
-This method is available only in SSPR. We recommend that you avoid the use of an email account that doesn’t require the user’s Azure AD password to access it.
+This method is available only in SSPR. We recommend that you avoid the use of an email account that doesn’t require the user’s Microsoft Entra password to access it.
 
 ### Windows Hello for Business
 
@@ -61,7 +61,7 @@ FIDO2 security keys are an unphishable, standards-based passwordless authenticat
 
 Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC.
 
-FIDO2 security keys can be used to sign in to their Azure AD or hybrid Azure AD joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers.
+FIDO2 security keys can be used to sign in to their Microsoft Entra ID or Microsoft Entra hybrid joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers.
 
 ### Microsoft Authenticator app
 
@@ -73,11 +73,11 @@ This method is available for Android and iOS. Users can register their mobile ap
 
 ### OATH hardware tokens
 
-**OATH** is an open standard that specifies how to generate one-time password codes. Azure AD supports the use of OATH-TOTP `SHA-1` tokens of the 30-second or 60-second variety. Customers can get these tokens from the vendor of their choice. Note that secret keys are limited to 128 characters, which might not be compatible with all tokens.
+**OATH** is an open standard that specifies how to generate one-time password codes. Microsoft Entra ID supports the use of OATH-TOTP `SHA-1` tokens of the 30-second or 60-second variety. Customers can get these tokens from the vendor of their choice. Note that secret keys are limited to 128 characters, which might not be compatible with all tokens.
 
 ### OATH software tokens
 
-Software OATH tokens are typically applications such as the Microsoft Authenticator app and other authenticator apps. Azure AD generates the secret key, or seed, that's input into the app and used to generate each OTP.
+Software OATH tokens are typically applications such as the Microsoft Authenticator app and other authenticator apps. Microsoft Entra ID generates the secret key, or seed, that's input into the app and used to generate each OTP.
 
 ### Text message
 
@@ -85,15 +85,15 @@ Azure sends a verification code to a mobile phone using SMS. The user must enter
 
 ### Voice call
 
-Azure uses an automated voice system to call the number and the owner uses the keypad to confirm the authentication. Note that this option is not available to the free/trial Azure AD tier.
+Azure uses an automated voice system to call the number and the owner uses the keypad to confirm the authentication. Note that this option is not available to the free/trial Microsoft Entra tier.
 
 ### App password
 
-Certain non-browser apps don’t support Azure AD MFA. If users are enabled for Azure AD MFA and try to use non-browser apps, they’ll be unable to authenticate. The app password allows users to continue to authenticate.
+Certain non-browser apps don’t support Microsoft Entra multifactor authentication. If users are enabled for Microsoft Entra multifactor authentication and try to use non-browser apps, they’ll be unable to authenticate. The app password allows users to continue to authenticate.
 
 ## Monitoring adoption
 
-Azure AD includes a **Usage & insights** view in the **Monitoring** section where you can monitor the authentication methods activity. From here you can view the adoption of MFA and SSPR:
+Microsoft Entra ID includes a **Usage & insights** view in the **Monitoring** section where you can monitor the authentication methods activity. From here you can view the adoption of MFA and SSPR:
 
 ![Screenshot showing the metrics view for MFA.](../media/5-monitor-auth-methods.png)
 

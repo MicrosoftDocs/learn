@@ -35,7 +35,7 @@ To use the *MessagePack* protocol, both server and client need to opt in to conf
 
 #### Users
 
-A user in the system acts as an individual, but it can also be part of a group. Messages can be sent to [groups](#groups), and all group members will be notified. A single user can connect from multiple client applications. For example, the same user can use a mobile device and a web browser and get real-time updates on both at the same time.
+A user in the system acts as an individual, but it can also be part of a group. Messages can be sent to [groups](#groups), and all group members are notified. A single user can connect from multiple client applications. For example, the same user can use a mobile device and a web browser and get real-time updates on both at the same time.
 
 #### Groups
 

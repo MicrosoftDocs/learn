@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-configure-azure-developer-cli-templates.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: Summary unit for the Deploy and Configure Azure Developer CLI templates module
+  ms.date: 06/20/2023
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: engagement-fy23
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

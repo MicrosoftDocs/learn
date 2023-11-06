@@ -1,3 +1,4 @@
+
 Comprehensive data governance is an important element of an enterprise data analytics solution. By combining Azure Synapse Analytics and Microsoft Purview, you can improve data discoverability while addressing data trustworthiness and compliance requirements across your data estate.
 
 In this module you learned how to:

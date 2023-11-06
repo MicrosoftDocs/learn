@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.persist-data-ef-core.migrations
 metadata:
-  title: Exercise - Migrations
-  description: Learn how to design the classes representing the domain model and apply them to a database with migrations.
+  title: Exercise - Set up a migration
+  description: Learn how to design the classes that represent the domain model, and then apply them to a database during a migration.
   ms.date: 12/13/2021
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
-title: Exercise - Migrations
+title: Exercise - Set up a migration
 durationInMinutes: 10
 content: |
   [!include[](includes/3-migrations.md)]
@@ -20,10 +21,10 @@ quiz:
       choices:
       - content: "`Key` or `<entity name>Key`"
         isCorrect: false
-        explanation: "Incorrect. `Key` and the `Key` suffix aren't naming conventions recognized by EF Core. To make such a property the primary key, it must be annotated with the `[Key]` attribute."
+        explanation: "Incorrect. `Key` and the `Key` suffix aren't naming conventions that EF Core recognizes. To make this type of property the primary key, it must be annotated with the `[Key]` attribute."
       - content: "`Id` or `<entity name>Id`"
         isCorrect: true
-        explanation: "Correct! `Id` or `<entity name>Id` are inferred by EF Core to be the primary key."
+        explanation: "Correct! `Id` or `<entity name>Id` are inferred to be the primary key in EF Core."
       - content: "`<entity name>`"
         isCorrect: false
-        explanation: "Incorrect. `<entity name>` is more suitable as a navigation property name. To make such a property the primary key, it must be annotated with the `[Key]` attribute."
+        explanation: "Incorrect. `<entity name>` is more suitable as a navigation property name. To make this type of property the primary key, it must be annotated with the `[Key]` attribute."

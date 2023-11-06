@@ -8,7 +8,7 @@ metadata:
   author: jasonkellingtonwaypoint
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: bot-service
 title: Introduction to Azure Bot Service and Bot Framework Composer
 summary: Use Azure Bot Service to create custom bots that provide enhanced user experiences and augment applications. Examine bot functionality and design. Explore Azure Bot Service tools, including Bot Framework Composer, and when to use them.
 abstract: |

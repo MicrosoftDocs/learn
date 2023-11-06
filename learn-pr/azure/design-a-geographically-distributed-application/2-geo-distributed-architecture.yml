@@ -4,8 +4,8 @@ metadata:
   title: Design a geographically distributed architecture
   description: In this unit, you learn how to modify a scalable, single-region architecture in Azure to be resilient to regional outages.
   ms.date: 11/07/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design a geographically distributed architecture

@@ -1,19 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-azure-management-governance
 metadata:
-  title: 'Azure Fundamentals: Describe Azure management and governance'
-  description: 'Azure Fundamentals: Describe Azure management and governance'
-  ms.date: 10/11/2022
+  title: 'Microsoft Azure Fundamentals: Describe Azure management and governance'
+  description: 'Microsoft Azure Fundamentals: Describe Azure management and governance'
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Azure Fundamentals: Describe Azure management and governance'
+title: 'Microsoft Azure Fundamentals: Describe Azure management and governance'
 prerequisites: |
   * Basic familiarity with IT terms and concepts
 summary: |
-  The Microsoft Azure Fundamentals training is composed of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance.
-  Microsoft Azure Fundamentals: Describe Azure management and governance is the third learning path in Microsoft Azure Fundamentals. This learning path explores the management and governance resources available to help you manage your cloud and on-premises resources.
+  New to the cloud? Microsoft Azure fundamentals is a three-part series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free. Complete all of the learning paths in the series if you are preparing for Exam AZ-900: Microsoft Azure Fundamentals.
+  This is the third learning path in the series, **Azure Fundamentals: Describe Azure management and governance**. The other learning paths in the series are [**Part 1: Describe cloud concepts**](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/) and [**Part 2: Describe Azure architecture and services**](/training/paths/azure-fundamentals-describe-azure-architecture-services/).
 iconUrl: /training/achievements/describe-azure-management-governance.svg
 levels:
 - beginner

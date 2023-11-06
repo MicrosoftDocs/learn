@@ -67,6 +67,6 @@ Let's find out:
 
    `dotnet run`
 
-1. In your browser, go to the [home page of the MyBlazorServer application](https://localhost:5000).
+1. In your browser, go to the home page of the MyBlazorServer application: ``` https://localhost:5000 ```.
 
    Is the **My first Modal dialog** dialog displayed?  If so, congratulations! You've successfully packaged and deployed the *FirstClassLibrary* project correctly. Applications everywhere can now use your modal window component by referencing your newly created NuGet package.

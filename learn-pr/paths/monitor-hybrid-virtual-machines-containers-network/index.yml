@@ -1,0 +1,48 @@
+### YamlMime:LearningPath
+uid: learn.monitor-hybrid-virtual-machines-containers-network
+title: Monitor hybrid virtual machines, containers, and network resources
+summary: Learn how to monitor virtual machines, containers, and network resources with Azure Monitor.
+metadata:
+  title: Monitor hybrid virtual machines, containers, and network resources
+  description: Learn how to monitor virtual machines, containers, and network resources in a hybrid environment with Azure Monitor.
+  ms.date: 07/03/2023
+  author: guywi-ms
+  ms.author: guywild
+  ms.topic: interactive-tutorial
+  ms.service: azure-monitor
+prerequisites: |
+  - An Azure account with an [active subscription](https://azure.microsoft.com/free).
+  - Familiarity with Azure virtual machines, Azure Arc, networking, and Kubernetes and its concepts.
+  -	A deployed Azure Kubernetes Service cluster with a containerized application. If you don’t already have an AKS cluster to monitor, complete the Learn module [Deploy a containerized application on Azure Kubernetes Service](https://learn.microsoft.com/learn/modules/aks-deploy-container-app/).
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-arc
+- azure-log-analytics
+- azure-kubernetes-service
+- azure-monitor
+- azure-portal
+- azure-virtual-machines
+subjects:
+- cloud-computing
+- infrastructure
+- it-management-monitoring
+- virtual-machine
+modules:
+- learn.azure.monitor-azure-vm-using-diagnostic-data
+- learn.monitor-vm-performance-using-azure-monitor-for-vms
+- learn.azure.monitor-azure-arc-enabled-servers
+- learn.monitor-aks-using-container-insights
+- learn.azure.intro-to-arc-enabled-kubernetes
+- learn.wwl.design-implement-network-monitoring
+trophy:
+  uid: learn.monitor-hybrid-virtual-machines-containers-network.trophy

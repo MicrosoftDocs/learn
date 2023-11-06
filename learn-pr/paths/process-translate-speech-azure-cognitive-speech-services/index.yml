@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.process-translate-speech-azure-cognitive-speech-services
 metadata:
-  title: Process and Translate Speech with Azure Cognitive Speech Services
-  description: Process and Translate Speech with Azure Cognitive Speech Services
+  title: Process and Translate Speech with Azure AI Speech Services
+  description: Process and Translate Speech with Azure AI Speech Services
   ms.date: 04/30/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Process and Translate Speech with Azure Cognitive Speech Services
+  ms.service: azure
+title: Process and Translate Speech with Azure AI Speech Services
 prerequisites: |
   Before starting this learning path, you should:
   - Be familiar with Microsoft Azure and the Azure portal
@@ -24,7 +24,7 @@ roles:
 - developer
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 subjects:
 - natural-language-processing
 modules:

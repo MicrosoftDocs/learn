@@ -36,7 +36,7 @@ The VM doesn't need to have a public IP address, but it must be in a virtual net
 
 Azure Bastion can't work with VMs that are in an Azure Private DNS zone with **core.windows.net** or **azure.com** in the suffixes. This isn't supported because it could allow overlaps with internal endpoints. Azure Private DNS zones in national clouds are also unsupported.
 
-If the connection to the VM is working but you can't sign in, check if it is domain-joined. If the VM is domain-joined, you'll need to specify the credentials in the Azure portal using the **username@domain** format, instead of **domain\username**. This won't resolve the issues if the VM is Azure AD-joined only—this kind of authentication isn't supported.
+If the connection to the VM is working but you can't sign in, check if it is domain-joined. If the VM is domain-joined, you'll need to specify the credentials in the Azure portal using the **username@domain** format, instead of **domain\username**. This won't resolve the issues if the VM is Microsoft Entra joined only—this kind of authentication isn't supported.
 
 In the earlier section you'll note that, by default, the AzureBastionSubnet isn't assigned an NSG. If your organization needs an NSG, you should ensure that it's configured correctly:
 
@@ -61,4 +61,3 @@ If your users are having access issues, check that they have roles that grant th
 - If it's a peered network, the virtual network
 
 If all these resources are correct and the user is still seeing a black screen when they try to connect with Azure Bastion, there's likely a network connectivity issue between the user's web browser and Azure Bastion.
-

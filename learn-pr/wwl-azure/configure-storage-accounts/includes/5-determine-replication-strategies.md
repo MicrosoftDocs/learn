@@ -1,3 +1,5 @@
+
+
 The data in your Azure storage account is always replicated to ensure durability and high availability. Azure Storage replication copies your data so that it's protected from planned and unplanned events. These events range from transient hardware failures, network or power outages, massive natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions. Replication ensures your storage account meets the Service-Level Agreement (SLA) for Azure Storage even if there are failures.
 
 We'll explore four replication strategies: 
@@ -13,7 +15,7 @@ Locally redundant storage is the lowest-cost replication option and offers the l
 
 - Your application stores data that can be easily reconstructed if data loss occurs.
 - Your data is constantly changing like in a live feed, and storing the data isn't essential.
-- Your application is restricted to replicating data only within a country due to data governance requirements.
+- Your application is restricted to replicating data only within a country/region due to data governance requirements.
 
 ### Zone redundant storage
 

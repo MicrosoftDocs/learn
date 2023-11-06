@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
 title: Manage Azure Stack Hub Marketplace
 summary: 'Azure Stack Hub Marketplace is used to create resources, deploy apps, and choose items. This learning path helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
 abstract: |

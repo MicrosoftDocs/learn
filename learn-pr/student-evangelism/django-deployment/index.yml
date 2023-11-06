@@ -7,8 +7,8 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: postgresql
 title: Deploy a Django application to Azure by using PostgreSQL
 summary: To make your application available to the world, you need to host it somewhere. Here you'll deploy your application to Azure and create a database for the data.
 abstract: | 
@@ -33,7 +33,7 @@ roles:
 - student
 - developer
 products:
-- azure-app-service-web
+- azure-app-service
 - vs-code
 subjects:
 - data-engineering

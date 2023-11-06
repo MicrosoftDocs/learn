@@ -1,6 +1,6 @@
-Azure resources and Azure Active Directory (Azure AD) have independent permission systems. Azure roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources, such as user accounts and passwords.
+Azure resources and Microsoft Entra ID have independent permission systems. Azure roles are used to manage access to virtual machines, storage, and other Azure resources. Microsoft Entra roles are used to manage access to Microsoft Entra resources, such as user accounts and passwords.
 
-In this unit, you'll look at the essential aspects of Azure roles and Azure AD roles. You'll explore the various scopes available to you. You'll then identify the right roles to assign, depending on the scenario.
+In this unit, you'll look at the essential aspects of Azure roles and Microsoft Entra roles. You'll explore the various scopes available to you. You'll then identify the right roles to assign, depending on the scenario.
 
 ## Azure roles
 
@@ -35,21 +35,25 @@ The scope is important, and establishes which resources should have a specific t
 
 By combining an Azure role and a scope, you can set finely tailored permissions for your Azure resources.
 
-## Azure AD roles
+<a name='azure-ad-roles'></a>
 
-Azure AD also has its own set of roles that apply mostly to users, passwords, and domains. These roles have different purposes. Here are a few examples:
+## Microsoft Entra roles
 
-- **Global Administrator**: Can manage access to administrative features in Azure AD. A person in this role can grant administrator roles to other users, and they can reset a password for any user or administrator. By default, whoever signs up for the directory is automatically assigned this role.
+Microsoft Entra ID also has its own set of roles that apply mostly to users, passwords, and domains. These roles have different purposes. Here are a few examples:
+
+- **Global Administrator**: Can manage access to administrative features in Microsoft Entra ID. A person in this role can grant administrator roles to other users, and they can reset a password for any user or administrator. By default, whoever signs up for the directory is automatically assigned this role.
 
 - **User Administrator**: Can manage all aspects of users and groups, including support tickets, monitoring service health, and resetting passwords for certain types of users.
 
 - **Billing Administrator**: Can make purchases, manage subscriptions and support tickets, and monitor service health. Azure has detailed billing permissions in addition to Azure RBAC permissions. The available billing permissions depend on the agreement you have with Microsoft.
 
-## Differences between Azure roles and Azure AD roles
+<a name='differences-between-azure-roles-and-azure-ad-roles'></a>
 
-The main difference between Azure roles and Azure AD roles is the areas they cover. Azure roles apply to Azure resources, and Azure AD roles apply to Azure AD resources (particularly users, groups, and domains). Also, Azure AD has only one scope: the directory. The Azure RBAC scope covers management groups, subscriptions, resource groups, and resources.
+## Differences between Azure roles and Microsoft Entra roles
 
-The roles share a key area of overlap. An Azure AD Global Administrator can elevate their access to manage all Azure subscriptions and management groups. This greater access grants them the Azure RBAC User Access Administrator role for all subscriptions of their directory. Through the User Access Administrator role, the Global Administrator can give other users access to Azure resources.
+The main difference between Azure roles and Microsoft Entra roles is the areas they cover. Azure roles apply to Azure resources, and Microsoft Entra roles apply to Microsoft Entra resources (particularly users, groups, and domains). Also, Microsoft Entra ID has only one scope: the directory. The Azure RBAC scope covers management groups, subscriptions, resource groups, and resources.
+
+The roles share a key area of overlap. A Microsoft Entra Global Administrator can elevate their access to manage all Azure subscriptions and management groups. This greater access grants them the Azure RBAC User Access Administrator role for all subscriptions of their directory. Through the User Access Administrator role, the Global Administrator can give other users access to Azure resources.
 
 In our scenario, you need to grant full Azure RBAC management and billing permissions to a new manager. To achieve this, you'll temporarily elevate your access to include the User Access Administrator role. You can then grant the new manager the Owner role so that they can create and manage resources. You'll also set the scope to the subscription level, so that the manager can do this for all resources in the subscription.
 

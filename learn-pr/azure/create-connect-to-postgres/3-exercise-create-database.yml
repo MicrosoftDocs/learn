@@ -11,6 +11,5 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
-azureSandbox: true
 content: |
   [!include[](includes/3-exercise-create-database.md)]

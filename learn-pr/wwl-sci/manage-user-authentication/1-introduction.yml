@@ -2,15 +2,14 @@
 uid: learn.wwl.manage-user-authentication.introduction
 title: Introduction
 metadata:
-  title: Introduction to Manage User Auth module
-  description: "This module covers the basics on how to configure and manage user authentication. Choose the right authentication, protect passwords, and other capabilities."
-  ms.date: 04/06/2023
+  title: Introduction
+  description: "Introduction"
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

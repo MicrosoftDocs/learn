@@ -4,10 +4,11 @@ title: Get familiar with Windows PowerShell applications
 metadata:
   title: Get familiar with Windows PowerShell applications
   description: "Get familiar with Windows PowerShell applications"
-  ms.date: 11/10/2022
+  ms.date: 07/04/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
+  ms.custom:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

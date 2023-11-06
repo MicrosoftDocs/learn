@@ -3,11 +3,11 @@ uid: learn.wwl.implement-manage-fslogix
 metadata:
   title: Implement and manage FSLogix
   description: "Implement and manage FSLogix"
-  ms.date: 02/10/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: fslogix
 title: Implement and manage FSLogix
 summary: A user profile contains data elements about a user information like desktop settings, persistent network connections, and application settings.
 abstract: |

@@ -3,17 +3,17 @@
 uid: learn.accessible-content-m365
 metadata:
   title: Creating accessible content with Microsoft 365
-  description: This module shows how to create content with Microsoft 365 in a way that enables greater accessibility.
-  ms.date: 05/09/2020
+  description: This module shows you how to create content with Microsoft 365 in a way that enables greater accessibility.
+  ms.date: 07/26/2023
   author: erzelman
   ms.author: erzelman
   ms.topic: interactive-tutorial
-  ms.prod: learning-cela-accessibility
   showCreativeCommonsFooter: true
+  ms.service: microsoft-365
 title: Creating accessible content with Microsoft 365
-summary: This module shows how to create content with Microsoft 365 in a way that enables greater accessibility.
+summary: This module shows you how to create content with Microsoft 365 in a way that enables greater accessibility.
 abstract: |
- In this module you will:
+ In this module, you will:
  - Learn how to create accessible content with the Microsoft Word, PowerPoint, Excel, and Outlook apps.
  - Explore the built-in accessibility tools and features of each of these apps.
 prerequisites: None

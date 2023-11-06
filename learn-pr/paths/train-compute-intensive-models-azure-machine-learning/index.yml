@@ -7,6 +7,9 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   ms.prod: learning-azure
 title: Train compute-intensive models with Azure Machine Learning
 prerequisites: |

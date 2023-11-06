@@ -4,13 +4,11 @@ title: Identify private link uses
 metadata:
   title: Identify private link uses
   description: "Identify uses cases for Azure Private Link in network routing and service endpoints."
-  ms.date: 01/26/2023
+  ms.date: 05/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/6-identify-private-link-uses.md)]

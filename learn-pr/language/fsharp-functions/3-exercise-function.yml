@@ -6,6 +6,7 @@ metadata:
   description: In this exercise, you'll create a function from a set of expressions.
   author: softchris
   ms.author: chnoring
+  ms.manager: markl
   ms.date: 07/26/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet

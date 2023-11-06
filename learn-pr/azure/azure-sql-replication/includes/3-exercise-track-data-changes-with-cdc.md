@@ -1,6 +1,8 @@
 In this exercise, you'll start by enabling CDC to track the data changes on table, and then fetch and review the changes.
 
-In Azure SQL Database, CDC uses a scheduler, which invokes stored procedures to start periodic capture and cleanup of the CDC tables. The scheduler runs capture and cleanup automatically within SQL Database, without any external dependency for reliability or performance. Users still have the option to run capture and cleanup manually on demand.
+In Azure SQL Database, CDC uses a scheduler that invokes stored procedures to start periodic capture and cleanup of the CDC tables. The scheduler runs capture and cleanup automatically within SQL Database, without any external dependency for reliability or performance. Users still have the option to run capture and cleanup manually on demand.
+
+You'll need [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?azure-portal=true) to connect to your database and complete these exercises. 
 
 ## Key use cases
 
@@ -11,11 +13,11 @@ In Azure SQL Database, CDC uses a scheduler, which invokes stored procedures to 
 
 ## Setup: Use the scripts to deploy Azure SQL Database
 
-At the right is Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercise, you'll run a script in Cloud Shell to create your environment, AdventureWorksLT, in Azure SQL Database. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.
+At the right is Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercise, you'll run a script in Cloud Shell to create your environment database `AdventureWorksLT` in Azure SQL Database. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
-1. Start by obtaining your local IP address. Ensure that you're disconnected from any VPN service, and **open a local PowerShell terminal on your device**. Run the following command, and note the resulting IP address:
+1. Start by obtaining your local IP address. Ensure that you're disconnected from any VPN service, and **open a local PowerShell terminal on your device**. Run the following command and note the resulting IP address:
 
     ```powershell
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
@@ -93,14 +95,10 @@ These scripts should take three to five minutes to complete. Be sure to note you
         -Type "Standard_LRS"
     ```
 
-1. Open [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms), and then create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *dr-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to go to the Azure portal to get it.  
+1. Open SQL Server Management Studio (SSMS), and then create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *dr-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) to get it.  In the Azure portal, search for **AdventureWorksLT** to find your database and its associated logical server.
 
-    > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
-
-    In the Azure portal, search for **AdventureWorksLT** to find your database and its associated logical server.
-
-    Change the authentication to **SQL Server Authentication**, and enter the corresponding server admin login and password, which you provided during deployment in the previous exercise.  
+    
+    In SSMS, change the authentication to **SQL Server Authentication**, and enter the corresponding server admin login and password, which you provided during deployment in the previous exercise.  
 
     Select the **Remember password** check box, and then select **Connect**.  
 
@@ -113,21 +111,19 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ### Enable CDC on your database
 
-In [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) open new query window and enable CDC on `AdventureWorksLT` Database by running following query:
+In SQL Server Management Studio (SSMS), open a new query window and enable CDC on the `AdventureWorksLT` database by running the following T-SQL:
 
 ```sql
-USE AdventureWorksLT
-GO
-
+-- Connect to your AdventureWorksLT  Azure SQL Database, enable CDC
 EXEC sys.sp_cdc_enable_db
 GO
 ```
 
 ### Enable CDC on your tables
 
-Once you enable CDC on the database, you'll notice the CDC artifacts being created in the same source database (five system tables under CDC schema).
+Once you enable CDC on the database, you'll notice the CDC artifacts being created in the same source database (five system tables under the CDC schema).
 
-1. Enable CDC on table `SalesLT.Customer`:
+1. Enable CDC for table `SalesLT.Customer` on the `AdventureWorksLT` database by running the following T-SQL:
 
     ```sql
     EXEC sys.sp_cdc_enable_table
@@ -140,7 +136,7 @@ Once you enable CDC on the database, you'll notice the CDC artifacts being creat
 
 3. Insert a new customer into the `SalesLT.Customer` table that you enabled for CDC.
 
-    - Be aware that `PasswordHash` and `PasswordSalt` can’t be `NULL`
+    - Be aware that `PasswordHash` and `PasswordSalt` can't be `NULL`
 
     ```sql
     INSERT INTO [SalesLT].[Customer] (FirstName, MiddleName, LastName, PasswordHash, PasswordSalt) 
@@ -164,7 +160,7 @@ Once you enable CDC on the database, you'll notice the CDC artifacts being creat
 
     ```sql
     UPDATE [SalesLT].[Customer]
-    SET FirstName = 'Abhiman', MiddleName = 'K.' 
+    SET FirstName = 'Bob', MiddleName = 'M.' 
     WHERE CustomerID = 1;
     ```
 
@@ -186,11 +182,18 @@ EXEC sys.sp_cdc_disable_table
 ```
 
 > [!NOTE]
-> It is *not* necessary to disable individual tables before you disable the database.
+> It's *not* necessary to disable individual tables before you disable the database.
+
+Once you disable CDC on the table, the change tracking table also gets dropped. You can confirm this by running the same command again, and seeing that the table no longer exists: 
+
+```sql
+SELECT * FROM cdc.SalesLT_Customer_CT
+```
+
 
 ### Disable CDC on your database
 
-You can disable CDC on database by executing `sys.sp_cdc_disable_db` stored procedure.
+You can disable CDC on database by executing `sys.sp_cdc_disable_db` stored procedure:
 
 ```sql
 EXEC sys.sp_cdc_disable_db

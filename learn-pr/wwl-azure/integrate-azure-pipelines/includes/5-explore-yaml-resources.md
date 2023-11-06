@@ -1,3 +1,4 @@
+
 Resources in YAML represent sources of pipelines, repositories, and containers. For more information on Resources, [see here](/azure/devops/pipelines/process/resources).
 
 ## General schema

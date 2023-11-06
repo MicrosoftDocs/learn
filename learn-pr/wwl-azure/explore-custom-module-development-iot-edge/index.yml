@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: iot-edge
 title: Explore custom module development for IoT Edge
 summary: This module provides you with experience configuring the IoT Edge runtime environment and container registry, developing and debugging a custom IoT Edge module, and publishing a module to the Azure Container Registry.
 abstract: |
@@ -44,3 +44,4 @@ units:
 - learn.wwl.explore-custom-module-development-for-iot-edge.summary
 badge:
   uid: learn.wwl.explore-custom-module-development-for-iot-edge.badge
+hidden: true

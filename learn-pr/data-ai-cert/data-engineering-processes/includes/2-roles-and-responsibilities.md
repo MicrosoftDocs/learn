@@ -10,7 +10,7 @@ In particular, three roles are starting to become common in modern data projects
 
 ## Data engineer
 
-Data engineers provision and set up data platform technologies that are on-premises and in the cloud. They manage and secure the flow of structured and unstructured data from multiple sources. The data platforms they use can include relational databases, nonrelational databases, data streams, and file stores. Data engineers also ensure that data services securely and seamlessly integrate with other data platform technologies or application services such as Azure Cognitive Services, Azure Search, or even bots.
+Data engineers provision and set up data platform technologies that are on-premises and in the cloud. They manage and secure the flow of structured and unstructured data from multiple sources. The data platforms they use can include relational databases, nonrelational databases, data streams, and file stores. Data engineers also ensure that data services securely and seamlessly integrate with other data platform technologies or Azure AI services such as Azure Cognitive Search and the Bot Framework.
 
 The Azure data engineer focuses on data-related tasks in Azure. Primary responsibilities include using services and tools to ingest, egress, and transform data from multiple sources. Azure data engineers collaborate with business stakeholders to identify and meet data requirements. They design and implement solutions. They also manage, monitor, and ensure the security and privacy of data to satisfy business needs.
 
@@ -30,9 +30,9 @@ Anecdotal evidence suggests that most of the work in a data science project is s
 
 ## AI engineer
 
-AI engineers work with AI services such as Cognitive Services, Cognitive Search, and Bot Framework. Cognitive Services includes Computer Vision, Text Analytics, Bing Search, and Language Understanding (LUIS). 
+AI engineers work with Azure AI services such as Azure Cognitive Search and the Bot Framework. Azure AI services includes Vision, Text Analytics, and Language. 
 
-Rather than creating models, AI engineers apply the prebuilt capabilities of Cognitive Services APIs. AI engineers embed these capabilities within a new or existing application or bot. AI engineers rely on the expertise of data engineers to store information that's generated from AI.  
+Rather than creating models, AI engineers apply the prebuilt capabilities of Azure AI services APIs. AI engineers embed these capabilities within a new or existing application or bot. AI engineers rely on the expertise of data engineers to store information that's generated from AI.  
 
 For example, an AI engineer might be working on a Computer Vision application that processes images. This AI engineer would ask a data engineer to provision an Azure Cosmos DB instance to store the metadata and tags that the Computer Vision application generates. 
 
@@ -42,8 +42,8 @@ The roles of the data engineer, AI engineer, and data scientist differ. Each rol
 
 Data engineers primarily provision data stores. They make sure that massive amounts of data are securely and cost-effectively extracted, loaded, and transformed.
 
-AI engineers add the intelligent capabilities of vision, voice, language, and knowledge to applications, by using the Cognitive Services offerings that are available out of the box.
+AI engineers add the intelligent capabilities of vision, voice, language, and knowledge to applications, by using the Azure AI services offerings that are available out of the box.
 
-When a Cognitive Services application reaches its capacity, AI engineers call on data scientists. Data scientists develop machine learning models and customize components for an AI engineer's application. 
+When a Azure AI services application reaches its capacity, AI engineers call on data scientists. Data scientists develop machine learning models and customize components for an AI engineer's application. 
 
 Each data-technology role is distinct, and each contributes an important part to digital transformation projects.

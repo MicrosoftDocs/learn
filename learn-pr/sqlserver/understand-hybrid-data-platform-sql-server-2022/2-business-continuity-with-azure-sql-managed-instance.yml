@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.business-continuity-with-azure-sql-managed-instance
+title: Ensure Business Continuity with Azure SQL Managed Instance
+metadata:
+  title: Ensure Business Continuity with Azure SQL Managed Instance
+  description: "Ensure Business Continuity with Azure SQL Managed Instance"
+  ms.date: 04/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-business-continuity-with-azure-sql-managed-instance.md)]

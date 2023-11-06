@@ -13,12 +13,12 @@ summary: "You learn how to design security solutions for Exchange, Sharepoint, O
 abstract: |
   By the end of this module, you are able to:
   -   Evaluate security posture for collaboration and productivity workloads
-  -   Design a Microsoft Defender 365 solution
+  -   Design a Microsoft 365 Defender solution
   -   Design configurations and operational practices for Microsoft 365
 prerequisites: |
   -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   -   Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/design-solutions-secure-microsoft-365.svg
 levels:
 - advanced
 roles:

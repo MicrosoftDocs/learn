@@ -13,9 +13,11 @@ To complete these exercises, you must have:
 > [!TIP]
 > If you stopped your Azure Database for MySQL server after completing the last lab, restart it now.
 
-## Create a new user account in Azure Active Directory
+<a name='create-a-new-user-account-in-azure-active-directory'></a>
 
-1. In the [Azure portal](https://portal.azure.com), sign in using an Owner account and navigate to your Azure Active Directory.
+## Create a new user account in Microsoft Entra ID
+
+1. In the [Azure portal](https://portal.azure.com), sign in using an Owner account and navigate to your Microsoft Entra ID.
 1. Under **Manage**, select **Users**.
 1. At the top-left, select **New user** and then select **Create new user**.
 1. In the **New user** page, enter these details and then select **Create**:

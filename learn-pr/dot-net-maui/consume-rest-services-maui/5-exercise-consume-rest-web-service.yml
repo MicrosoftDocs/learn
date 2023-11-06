@@ -7,8 +7,11 @@ metadata:
   description: "Exercise - Consume a REST service with HttpClient"
   ms.date: 04/29/2022
   author: codemillmatt 
-  ms.author: masoucou 
+  ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-languages
 interactive: bash
 azureSandbox: true

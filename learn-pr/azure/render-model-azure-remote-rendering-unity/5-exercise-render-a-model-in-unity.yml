@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.5-exercise-render-a-model-in-unity
-title: Exercise - Render a model in Unity
+title: Exercise - Load and render a model with Unity
 metadata:
-  title: Exercise - Render a model in Unity
-  description: Configure a Unity project to render the sample engine model
+  title: Exercise - Load and render a model with Unity
+  description: Learn how to use Unity to load and configure a sample engine model project and render the model with Azure Remote Rendering.
   ms.date: 02/01/2021
   author: aprilspeight
   ms.author: apspeigh

@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.transition-your-business-azure
+metadata:
+  title: Transition your business to Azure
+  description: "This module introduces various decisions that business decision makers can anticipate when considering a transition to Azure."
+  ms.date: 07/18/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Transition your business to Azure
+summary: This module introduces various decisions that business decision makers can anticipate when considering a transition to Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Identify and categorize your business’s motivations for transitioning to the cloud.
+  - Describe the major categories of Azure services and what each enables a business to do.
+  - Describe public, private, and hybrid cloud arrangements, and the reasons for adopting each.
+  - Look ahead to the technical and organizational considerations you will encounter when planning a cloud transition.
+prerequisites: |
+  None
+iconUrl: /training/achievements/transition-your-business-azure.svg
+levels:
+- beginner
+roles:
+- business-owner
+products:
+- azure
+units:
+- learn.wwl.transition-your-business-azure.introduction
+- learn.wwl.transition-your-business-azure.identify-your-cloud-motivations
+- learn.wwl.transition-your-business-azure.describe-types-cloud-services
+- learn.wwl.transition-your-business-azure.describe-cloud-arrangements
+- learn.wwl.transition-your-business-azure.prepare-your-business-cloud
+- learn.wwl.transition-your-business-azure.knowledge-check
+- learn.wwl.transition-your-business-azure.summary
+badge:
+  uid: learn.wwl.transition-your-business-azure.badge

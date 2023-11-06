@@ -1,3 +1,4 @@
+
 When you deploy a new release to a customer or install new software on your server, and you want to communicate what has been released to your customer, the usual way is to use release notes.
 
 But where do the release notes come from? There are different ways to store your release notes.

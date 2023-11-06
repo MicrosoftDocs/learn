@@ -18,23 +18,23 @@ quiz:
     - content: "The database could be under heavy load, so backing-off could give it time to recover."
       isCorrect: true
       explanation: "If a database is responding, but taking longer than normal, it could be under excessive load."
-    - content: "The database server is being upgraded, so retrying will cause the upgrade to fail."
+    - content: "The database server is being upgraded, so retrying can cause the upgrade to fail."
       isCorrect: false
       explanation: "The database is responding, if the service was being upgraded then the app wouldn't be getting any response." 
     - content: "Backing-off means that the app can retry the operation quicker, to get a faster response."
       isCorrect: false
-      explanation: "Retrying when a service, or database is slow to respond could make the situation worse by increasing the load on it."
+      explanation: "If the app retries the operation when a service or database is slow to respond, it could make the situation worse by increasing the load on it."
   - content: "Why is it important that operations are idempotent if they're being retried?"
     choices:
     - content: "Retrying the operation leads to data being incremented the number of times the operation is processed successfully."
       isCorrect: false
-      explanation: "This is an example of the operation not being idempotent. Data can be incorrectly incremented if operations are duplicated." ### REVIEW - add a reason here
-    - content: "If the operation is going to be retried, and previous operations have all failed, the data will be incorrect."
+      explanation: "This example describes an operation that isn't idempotent. Data can be incorrectly incremented if operations are duplicated."
+    - content: "If the operation is going to be retried, and previous operations have all failed, the data can be incorrect."
       isCorrect: false
-      explanation: "This is incorrect because idempotent operations don't rely on previous requests working. They can be applied once or many times." 
-    - content: "If the operation is going to be retried, and previous operations have been successful, the data won't be duplicated or corrupted."
+      explanation: "This example is incorrect because idempotent operations don't rely on previous requests working. They can be applied once or many times." 
+    - content: "If the operation is retried and previous operations have been successful, the data isn't duplicated or corrupted."
       isCorrect: true
-      explanation: "Idempotent operations are important to ensure values aren't corrupted if they are applied multiple times."       
+      explanation: "Idempotent operations are important to ensure values aren't corrupted if they're applied multiple times."       
   - content: "What's the main difference between permanent and terminal errors?"
     choices: 
     - content: "Permanent errors need to be handled and then quit the app. Terminal errors automatically quit the app."

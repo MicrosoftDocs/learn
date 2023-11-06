@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-iot.what-is-azure-iot
+title: What is Azure IoT?
+metadata:
+  title: What is Azure IoT?
+  description: "This content is a part of Introduction to Azure IoT."
+  ms.date: 8/14/2023
+  author: dominicbetts
+  ms.author: dobett
+  ms.topic: module-intro-to-product
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-is-azure-iot.md)]

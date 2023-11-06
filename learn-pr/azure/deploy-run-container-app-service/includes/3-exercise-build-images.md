@@ -34,7 +34,7 @@ In this unit, you'll use the Azure portal to create a new registry in Container 
 
 ## Build a Docker image and upload it to Azure Container Registry
 
-1. In Azure Cloud Shell in the portal (select the first icon on the upper toolbar), run the following command to download the source code for the sample web app. This web app is simple. It presents a single page that contains static text, and a carousel control that rotates through a series of images.
+1. In Azure Cloud Shell in the portal (select the **Cloud Shell** icon on the upper toolbar), run the following command to download the source code for the sample web app. This web app is simple. It presents a single page that contains static text and a carousel control that rotates through a series of images.
 
    ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-deploy-run-container-app-service.git

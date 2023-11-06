@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.aggregate-functions
+title: New aggregation functions
+metadata:
+  title: New aggregation functions
+  description: "With the new aggregation functions in SQL Server 2022, Microsoft addresses the challenge of efficiently computing percentiles in large datasets when an approximation is acceptable."
+  ms.date: 5/5/2023
+  author: MScalopez
+  ms.author: calopez
+  ms.reviewer: vanto
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-aggregate-functions.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Which SQL Server function should be used to compute the approximate value at a specified percentile without interpolating between data points?"
+    choices: 
+    - content: "APPROX_PERCENTILE_CONT"
+      isCorrect: false
+      explanation: "APPROX_PERCENTILE_CONT interpolates between data points to provide a more accurate estimate."
+    - content: "PERCENTILE_DISC"
+      isCorrect: false
+      explanation: "PERCENTILE_DISC computes the exact value at a specified percentile without interpolating between data points, but we're looking for the function that gives the approximate value from the existing data point."
+    - content: "APPROX_PERCENTILE_DISC"
+      isCorrect: true
+      explanation: "APPROX_PERCENTILE_DISC efficiently calculates the nearest existing data point."
+  - content: "What is the primary difference between APPROX_PERCENTILE_DISC and APPROX_PERCENTILE_CONT functions?"
+    choices:
+    - content: "APPROX_PERCENTILE_DISC returns the nearest existing data point, while APPROX_PERCENTILE_CONT interpolates between data points."
+      isCorrect: true
+      explanation: "APPROX_PERCENTILE_DISC calculates the approximate value at a given percentile within a dataset, returning the nearest existing data point, while APPROX_PERCENTILE_CONT computes the approximate value at a specified percentile, interpolating between data points if needed."
+    - content: "APPROX_PERCENTILE_DISC interpolates between data points, while APPROX_PERCENTILE_CONT returns the nearest existing data point."
+      isCorrect: false
+      explanation: "The opposite is true, APPROX_PERCENTILE_DISC calculates the approximate value at a given percentile within a dataset, returning the nearest existing data point, while APPROX_PERCENTILE_CONT computes the approximate value at a specified percentile, interpolating between data points if needed."
+    - content: "APPROX_PERCENTILE_DISC calculates exact percentiles, while APPROX_PERCENTILE_CONT provides approximate percentiles."
+      isCorrect: false
+      explanation: "Both APPROX_PERCENTILE_DISC and APPROX_PERCENTILE_CONT functions compute approximate percentiles."

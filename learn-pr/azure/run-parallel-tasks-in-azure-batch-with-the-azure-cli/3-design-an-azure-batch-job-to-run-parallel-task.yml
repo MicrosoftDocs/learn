@@ -7,6 +7,8 @@ metadata:
   author: lauradolan
   ms.author: ladolan
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Design an Azure Batch job to run your parallel task
 durationInMinutes: 5

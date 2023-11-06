@@ -36,7 +36,7 @@ Now, you can add a second stage to publish the template spec to Azure.
 
    :::code language="yaml" source="code/4-pipeline.yml" range="37-55" :::
 
-   This stage checks out the code from your repository and signs in to Azure by using service connection that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
+   This stage checks out the code from your repository and signs in to Azure using the service connection that you created. It then runs the `az ts create` command to publish the template spec to Azure.
 
    > [!TIP]
    > To keep things simple, your pipeline uses the pipeline's _build number_ as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.

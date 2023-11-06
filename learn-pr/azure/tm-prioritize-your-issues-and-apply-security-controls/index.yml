@@ -3,15 +3,14 @@ uid: learn.tm-prioritize-your-issues-and-apply-security-controls
 metadata:
   title: Prioritize your issues and apply security controls
   description: Threat modeling provides you with a list of threats and ways to reduce or eliminate risk, but it doesn't prioritize them for you. Also, there are no layered security control recommendations based on their type and function.
-  ms.date: 11/18/2022
+  ms.date: 08/01/2023
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
 title: Prioritize your issues and apply security controls
 summary: Threat modeling provides you with a list of threats and ways to reduce or eliminate risk, but it doesn't prioritize them for you. Also, there are no layered security control recommendations based on their type and function.
 abstract: |
-  In this module, you'll be able to:
+  By the end of this module, you're able to:
   - Prioritize your issues
   - Categorize security controls
   - Understand each security control type and function
@@ -26,10 +25,10 @@ roles:
 - security-engineer
 - solution-architect
 products:
-- azure-iot-security-center
-- azure-security-center
+- azure
+- defender-for-cloud
 - m365-security-center
-- m365-ems-cloud-app-security
+- defender-for-cloud-apps
 subjects:
 - threat-protection
 units:

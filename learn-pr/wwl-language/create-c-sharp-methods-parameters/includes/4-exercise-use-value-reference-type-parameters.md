@@ -1,6 +1,3 @@
-
-
-
 In C#, variables can be categorized into two main types, value types and reference types. These types describe how variables store their values. 
 
 Value types such as `int`, `bool`, `float`, `double`, and `char` directly contain values. Reference types such as `string`, `array`, and objects (such as instances of `Random`) don't store their values directly. Instead, reference types store an address where their value is being stored.
@@ -69,6 +66,7 @@ In this exercise, you'll learn more about passing reference and value type argum
         {
             Console.Write($"{a} ");
         }
+        Console.WriteLine();
     }
 
     void Clear(int[] array) 

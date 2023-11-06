@@ -7,7 +7,7 @@ metadata:
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.service: microsoft-intune
 title: Plan your migration to Microsoft Endpoint Manager
 summary: Microsoft Endpoint Manager helps you protect the devices, apps, and data that the people of your organization use to be productive. In this module, you will learn about the migration paths you can follow to enable modern endpoint management using the products and services that encompass Microsoft Endpoint Manager.
 abstract: | 

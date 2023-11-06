@@ -8,6 +8,9 @@ metadata:
   author: sherzyang
   ms.author: sheryang
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   ms.prod: learning-azure 
 azureSandbox: false
 labModal: false
@@ -27,7 +30,7 @@ quiz:
       explanation: "Correct."
   - content: "You would like to summarize a paragraph of text. Which generative AI model family would you use to solve for this workload?"
     choices:
-    - content: "GPT-3."
+    - content: "GPT."
       isCorrect: true
       explanation: "Correct."
     - content: "Codex."
@@ -47,6 +50,3 @@ quiz:
     - content: "Allows users to build any application, regardless of harmful effects, to ensure fairness."
       isCorrect: false
       explanation: "Incorrect. Microsoft's Responsible AI principle, fairness, says AI systems shouldn't make decisions that discriminate or bias a group or individual. Harmful use of Azure OpenAI isn't permitted."
-
-
-

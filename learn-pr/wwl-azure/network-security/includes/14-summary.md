@@ -12,7 +12,7 @@ You should be able to:
 
 Microsoft Learn provides a large number of self-paced learning paths. For this lesson, we recommend the following modules. You may search and find other modules that are of interest to you.
 
- -  [Encrypt network traffic end to end with Azure Application Gateway](/training/modules/end-to-end-encryption-with-app-gateway/)
- -  [Connect your on-premises network to the Microsoft global network by using ExpressRoute](/training/modules/connect-on-premises-network-with-expressroute/)
- -  [Design a hybrid network architecture on Azure](/training/modules/design-a-hybrid-network-architecture/)
- -  [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/)
+ -  [Encrypt network traffic end to end with Azure Application Gateway](/learn/modules/end-to-end-encryption-with-app-gateway/)
+ -  [Connect your on-premises network to the Microsoft global network by using ExpressRoute](/learn/modules/connect-on-premises-network-with-expressroute/)
+ -  [Design a hybrid network architecture on Azure](/learn/modules/design-a-hybrid-network-architecture/)
+ -  [Secure and isolate access to Azure resources by using network security groups and service endpoints](/learn/modules/secure-and-isolate-with-nsg-and-service-endpoints/)

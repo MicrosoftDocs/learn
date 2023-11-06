@@ -5,10 +5,9 @@ metadata:
   title: Speech recognition control
   description: Enable the default Windows speech recognition options in your app.
   ms.date: 5/24/2019
-  author: PeterTurcan
-  ms.author: v-pettur
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: Karl-Bridge-Microsoft
+  ms.author: kbridge
+  ms.topic: unit
   
 durationInMinutes: 15
 content: |

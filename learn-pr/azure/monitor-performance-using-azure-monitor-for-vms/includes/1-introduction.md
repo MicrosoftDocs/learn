@@ -11,5 +11,5 @@ In this module, you'll:
 ## Prerequisites
 
 - Experience using the Azure portal for accessing and creating resources
-- Knowledge of Azure virtual machine creation, administration, and maintenance
+- Knowledge of creating, administering, and maintaining Azure virtual machines
 - Basic familiarity with querying datasets to filter and extract information

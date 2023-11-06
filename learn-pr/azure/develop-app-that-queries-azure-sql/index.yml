@@ -3,12 +3,12 @@ uid: learn.develop-app-that-queries-azure-sql
 metadata:
   title: Develop and configure an ASP.NET application that queries an Azure SQL database
   description: Create an Azure SQL database to store data for an application, and create an ASP.NET application to query data from the database.
-  ms.date: 01/24/2023
+  ms.date: 08/10/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-database
 title: Develop and configure an ASP.NET application that queries an Azure SQL database
 summary: Create a database on Azure SQL Database to store data for an application, and create an ASP.NET application to query data from the database.
 abstract: | 

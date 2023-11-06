@@ -1,3 +1,4 @@
+
 Azure automatically handles all network traffic routing, but in some cases, a custom configuration is preferable. In these situations, you can configure _user-defined routes_ (UDRs) and _next hop_ targets.
 
 ### Things to know about user-defined routes

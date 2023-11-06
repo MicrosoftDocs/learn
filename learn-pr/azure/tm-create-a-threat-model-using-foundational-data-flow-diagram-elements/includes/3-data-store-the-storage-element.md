@@ -1,22 +1,22 @@
 ![Rendering of a two parallel horizontal lines representing the Data Store Element.](../media/data-store.png)
 
-Depicted by parallel lines, this element represents data stored on a temporary or permanent basis.
+The **data store element** is depicted as parallel lines. This element represents data stored on a temporary or permanent basis.
 
 Examples include:
 
-- Using the browser cache to store user session-related data
-- Adding a security log event to a database
+- Using the browser cache to store user session-related data.
+- Adding a security log event to a database.
 
 ## When to use the data store element
 
-- Whenever you're storing data somewhere, like Azure DB or local cache.
+- Whenever you're storing data somewhere, like Azure DB or a local cache.
 - If you're establishing communication between two data stores, don't forget to add a process between them.
 - Data stores and external entities start the data flow, so verify you have either one in place.
 - Make sure to include any post-processing of data, such as analytics services like Azure Analytics. This process is often missed.
 
 ## Include context
 
-Include the following context to each data store element:
+Include the following context with each data store element:
 
 |Context|Questions|
 |-------|---------|

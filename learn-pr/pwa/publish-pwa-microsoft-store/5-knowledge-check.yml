@@ -1,0 +1,98 @@
+### YamlMime:ModuleUnit
+uid: learn.edge.publish-pwa-to-msft-store.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Test and publish Progressive Web Apps (PWAs) for Microsoft Store" module.
+  ms.date: 07/13/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: module-standard-task-based
+  ms.prod: microsoft-edge
+durationInMinutes : 6
+quiz:
+  title: Check your knowledge
+  questions: 
+  - content: "Where can you find the Package ID, Publisher ID, and Publisher Display Name needed for packaging your PWA with PWABuilder?"
+    choices:
+    - content: "PWABuilder dashboard"
+      isCorrect: false
+      explanation: "Incorrect. The required IDs and display names aren't available in the PWABuilder dashboard."
+    - content: "Microsoft Store"
+      isCorrect: false
+      explanation: "Incorrect. The required information isn't found in the Microsoft Store."
+    - content: "Microsoft Partner Center"
+      isCorrect: true
+      explanation: "Correct. The Package ID, Publisher ID, and Publisher Display Name can be found in the Microsoft Partner Center when you create or reserve an app name."
+    - content: "Web App Manifest"
+      isCorrect: false
+      explanation: "Incorrect. The web app manifest doesn't contain the required IDs and display name for packaging your PWA with PWABuilder."
+  - content: "Which of the following steps is NOT a required step to submit your PWA to the Microsoft Store?"
+    choices:
+    - content: "Create a developer account in Microsoft Partner Center"
+      isCorrect: false
+      explanation: "Incorrect.  Creating a developer account is a required step to submit your PWA."
+    - content: "Complete all sections of the app submission form"
+      isCorrect: false
+      explanation: "Incorrect. Completing the app submission form is a required step to submit your PWA."
+    - content: "Upload the .msixbundle and .classic.appxbundle files"
+      isCorrect: false
+      explanation: "Incorrect. Uploading the package files is a required step to submit your PWA."
+    - content: "Generate an Android package"
+      isCorrect: true
+      explanation: "Correct. Generating an Android package isn't required for submitting a PWA to the Microsoft Store."
+  - content: "How long does it typically take for a submitted PWA to be reviewed and become available on the Microsoft Store?"
+    choices:
+    - content: "1 hour"
+      isCorrect: false
+      explanation: "Incorrect. The review process usually takes longer than an hour."
+    - content: "6-12 hours"
+      isCorrect: false
+      explanation: "Incorrect. The review process typically takes longer than 6-12 hours."
+    - content: "24-48 hours"
+      isCorrect: true
+      explanation: "Correct. The review process for a submitted PWA generally takes 24-48 hours."
+    - content: "1 week"
+      isCorrect: false
+      explanation: "Incorrect. While some cases might take longer, the typical review process is shorter than a week."
+  - content: "What should you test in your PWA to ensure it works reliably under different network conditions?"
+    choices:
+    - content: "Responsiveness"
+      isCorrect: false
+      explanation: "Incorrect. Responsiveness is important, but it's not specifically related to network conditions."
+    - content: "Performance"
+      isCorrect: false
+      explanation: "Incorrect. Performance is important, but it's not specifically related to network conditions."
+    - content: "Windows features integration"
+      isCorrect: false
+      explanation: "Incorrect. While Windows features integration is important, it's not specifically related to network conditions."
+    - content: "Offline capabilities"
+      isCorrect: true
+      explanation: "Correct. Testing offline capabilities ensures that your PWA functions reliably under different network conditions, such as when users have no or limited connectivity."
+  - content: "Which of the following features is an important Windows-specific feature to test in your PWA?"
+    choices:
+    - content: "Window controls overlay"
+      isCorrect: true
+      explanation: "Correct. Window controls overlay is a Windows-specific feature that enhances user experience and should be tested in your PWA."
+    - content: "Google Chrome compatibility"
+      isCorrect: false
+      explanation: "Incorrect. Google Chrome compatibility isn't a Windows-specific feature."
+    - content: "Android push notifications"
+      isCorrect: false
+      explanation: "Incorrect. Android push notifications aren't a Windows-specific feature - they're relevant for Android devices."
+    - content: "Safari browser compatibility"
+      isCorrect: false
+      explanation: "Incorrect. Safari browser compatibility isn't a Windows-specific feature - it's relevant for Apple devices."
+
+
+
+
+
+
+
+
+
+
+
+
+

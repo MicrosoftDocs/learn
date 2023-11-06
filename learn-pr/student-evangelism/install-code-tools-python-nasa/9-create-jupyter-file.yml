@@ -6,7 +6,10 @@ metadata:
   ms.date: 03/28/2022
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen, devdivchpfy22
+  ms.custom:
+    - team=nextgen
+    - devdivchpfy22
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create a Jupyter Notebook file in Visual Studio Code and run a simple program

@@ -8,6 +8,8 @@ metadata:
   author: johnmarco
   ms.author: johnmarc
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-ansible
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |

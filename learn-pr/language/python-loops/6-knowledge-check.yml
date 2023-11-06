@@ -5,15 +5,18 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge about Python 'for' loops.
-  ms.date: 12/07/2021
+  ms.date: 06/07/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
 quiz:
+  title: Check your knowledge
   questions:
   - content: "What statement would loop over the sequence `collection` and assign the variable `item`?"
     choices:

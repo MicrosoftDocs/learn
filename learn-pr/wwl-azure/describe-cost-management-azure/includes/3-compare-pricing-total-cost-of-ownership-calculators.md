@@ -1,8 +1,3 @@
----
-interactive:bash
-zone_pivot_groups:azure-interface
-title:Compare the Pricing and Total Cost of Ownership calculators
----
 The pricing calculator and the total cost of ownership (TCO) calculator are two calculators that help you understand potential Azure expenses. Both calculators are accessible from the internet, and both calculators allow you to build out a configuration. However, the two calculators have very different purposes.
 
 ## Pricing calculator

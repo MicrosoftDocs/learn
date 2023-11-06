@@ -7,7 +7,9 @@ metadata:
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: t-sql
 title: Write Subqueries in T-SQL
 summary: Learn how to use subqueries to combine multiple SELECT statements and compose nested queries.
 abstract: |

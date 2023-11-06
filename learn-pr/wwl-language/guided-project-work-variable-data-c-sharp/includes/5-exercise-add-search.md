@@ -1,7 +1,3 @@
-
-
-
-
 In this exercise, you add the feature "Display all dogs with a specified characteristic" (menu item #2) to the application. The exercise uses the solution project from the previous exercise that added `suggestedDonation` data.
 
 > [!NOTE]
@@ -16,7 +12,7 @@ The tasks that you complete during this exercise are:
 1. For each dog, search the pet description for a term match
 1. Display the dogs that have a term match
 
- In Visual Studio Code, open the completed Project.cs file from the pervious exercise that added the donation information to get started.
+ In Visual Studio Code, open the completed Project.cs file from the previous exercise that added the donation information to get started.
 
 ## Gather user input for the pet characteristic search
 
@@ -72,7 +68,7 @@ The tasks that you complete during this exercise are:
 
 ## Identify which animals are dogs
 
-Now you add a feature to search using the user input `dogCharacteristic` within the dog descriptions following the pervious code under `case "2"`. But first you need to identify the dogs.
+Now you add a feature to search using the user input `dogCharacteristic` within the dog descriptions following the previous code under `case "2"`. But first you need to identify the dogs.
 
 1. At the end of `case "2"` code, just before the `break;`, add the following code:
 

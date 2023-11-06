@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-conditional-access-its-benefits
-title: Describe Conditional Access in Azure AD
+title: Describe Conditional Access
 metadata:
-  title: Describe Conditional Access in Azure AD
-  description: "Describe Conditional Access in Azure AD"
-  ms.date: 02/07/2023
+  title: Describe Conditional Access
+  description: "Describe Conditional Access"
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial

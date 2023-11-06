@@ -8,6 +8,8 @@ metadata:
   ms.author: sidandrews
   manager: jroth
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
   ms.prod: learning-azure
 title: Introduction
 durationInMinutes: 2

@@ -1,4 +1,5 @@
 
+
 You can create a custom analytics rule to search for suspicious activities and threats at Contoso.
 
 ## Create a custom scheduled analytics rule

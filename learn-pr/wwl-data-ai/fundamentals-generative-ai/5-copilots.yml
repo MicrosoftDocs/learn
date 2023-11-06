@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.copilots
+title: What are copilots?
+metadata:
+  title: What are copilots?
+  description: "Copilots are AI-powered assistants based on large language models. See examples of these generative AI applications that work alongside you to dramatically increase productivity and extend your capabilities."
+  ms.date: 6/27/2023
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-copilots.md)]

@@ -6,7 +6,7 @@ The following image shows the attributes of event flags groups:
 
 :::image type="content" alt-text="Diagram of the attributes of an event flags group." source="../media/attributes.png" border="false" loc-scope="Azure":::
 
-The following code illustrates how to use this service to create an event flags group. We'll give our event flags group the name **my_event_group**. If the variable status contains the return value `TX_SUCCESS`, this means that we've successfully created an event flags group.
+The following code illustrates how to use this service to create an event flags group. We give our event flags group the name **my_event_group**. If the variable status contains the return value `TX_SUCCESS`, it means that we've successfully created an event flags group.
 
 ```c
 TX_EVENT_FLAGS_GROUP my_event_group;
@@ -18,16 +18,16 @@ status = tx_event_flags_create(&my_event_group,
 /* If status equals TX_SUCCESS, my_event_group is ready for the get and set services. */
 ```
 
-The `tx_event_flags_set` service sets or clears one or more event flags in an event flags group. When the set service is performed and actually sets one or more of the flags, the ThreadX scheduler checks to determine whether there are any threads suspended for that event flags group. If there are other threads suspended for the resulting value of this group, then those threads are resumed.
+The `tx_event_flags_set` service sets or clears one or more event flags in an event flags group. If the set service is performed and sets one or more flags, the ThreadX scheduler checks whether there are any threads suspended for that event flags group. If there are other threads suspended for the resulting value of this group, then those threads are resumed.
 
 The process of setting or clearing event flags depends on the `set_option`, which is a logical (bitwise) AND or OR operation. The following table lists set options and their descriptions:
 
 | Set option | Description |
 |:---:|:---:|
-| `TX_AND` | The specified event flags are ANDed into the current event flags group; this option often is used to clear events flags in a group. |
+| `TX_AND` | The specified event flags are ANDed into the current event flags group; this option often is used to clear event flags in a group. |
 | `TX_OR` | The specified event flags are ORed with the current event flags group. |
 
-For example, suppose that we want to clear all flags except flags 0, 4, and 8, in which the current values of the event flags group is 0xF0C. We would specify the value 0x111 (that is, event flags 0, 4, and 8) and use the `TX_AND` option:
+For example, suppose the current values of the event flags group is 0xF0C. If we want to clear all flags except flags 0, 4, and 8, we can specify the value 0x111 (that is, event flags 0, 4, and 8) and use the `TX_AND` option:
 
 ```c
 TX_EVENT_FLAGS_GROUP my_event_group;
@@ -72,7 +72,7 @@ The `tx_event_flags_get` service retrieves or gets the specified event flags fro
 | `TX_OR` | **At least one** requested event flag must be set in the specified event flags group. |
 | `TX_OR_CLEAR` | **At least one** requested event flag must be set in the specified event flags group; all event flags that satisfy the request are cleared. |
 
-If a get service succeeds, all threads proceed that have been suspended because they've been waiting for the specified event flags. If a get service doesn't succeed, all threads that have been waiting for the specified event flags continue to be suspended, based on one of the three wait options that has been selected, that is, `TX_WAIT_FOREVER`, `TX_NO_WAIT`, or some timeout value expressed as a number of timer ticks.
+If a get service succeeds, all threads proceed that have been suspended because they've been waiting for the specified event flags. If a get service doesn't succeed, all threads that have been waiting for the specified event flags continue to be suspended, based on one of the three wait options that has been selected, that is, `TX_WAIT_FOREVER`, `TX_NO_WAIT`, or some timeout value expressed in timer ticks.
 
 Here's an example of a get service that uses the `TX_AND_CLEAR` option and a timeout value of 20 timer ticks:
 

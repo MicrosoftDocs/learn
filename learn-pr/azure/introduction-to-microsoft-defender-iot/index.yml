@@ -9,7 +9,7 @@ metadata:
   manager: raynew
   ms.author: bagol
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: defender-for-iot
 title: Introduction to Microsoft Defender for IoT
 summary: "Evaluate whether Microsoft Defender for IoT is the right service for your organization's business scenarios. Learn about Defender for IoT components and features and how they support operational technology (OT) and IoT device security monitoring."
 abstract: |
@@ -31,7 +31,7 @@ roles:
   - technology-manager
 products:
 - azure
-- azure-defender-iot
+- defender-for-iot
 units:
 - learn.introduction-to-microsoft-defender-iot.introduction
 - learn.introduction-to-microsoft-defender-iot.what-is-microsoft-defender-iot

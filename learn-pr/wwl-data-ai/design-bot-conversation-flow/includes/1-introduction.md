@@ -15,7 +15,7 @@ While there are many ways you can implement a bot, some common features of bots 
 In this module, you will learn how to:
 
 - Create a bot by using the Microsoft Bot Framework SDK.
-- Deploy a bot to the Azure Bot Service.
+- Deploy a bot to the Azure AI Bot Service.
 
 ## Pre-requisites
 

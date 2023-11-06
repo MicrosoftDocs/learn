@@ -5,8 +5,8 @@ metadata:
   title: What are the characteristics of Azure Arc-enabled servers?
   description: What are the characteristics of Azure Arc-enabled servers?
   ms.date: 01/04/2023
-  author: JnHs
-  ms.author: jenhayes
+  author: johnmarco
+  ms.author: johnmarc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
@@ -20,18 +20,19 @@ quiz:
     choices:
     - content: "The Log Analytics agent."
       isCorrect: false
-      explanation: "Incorrect. The Log Analytics agent is not required when using Azure Arc, although it is recommended since it allows you to implement a rang of Azure hybrid services, such as Azure Monitor or Azure Security Center."
+      explanation: "Incorrect. The Log Analytics agent isn't required when using Azure Arc, although it's recommended since it allows you to implement a range of Azure hybrid services, such as Azure Monitor or Azure Security Center."
     - content: "The Microsoft Dependency agent."
       isCorrect: false
-      explanation: "Incorrect. The Microsoft Dependency agent is not required when using Azure Arc, although it is recommended, since it facilitates identifying internal and external dependencies of server workloads."
+      explanation: "Incorrect. The Microsoft Dependency agent isn't required when using Azure Arc, although it's recommended, since it facilitates identifying internal and external dependencies of server workloads."
     - content: "The Connected Machine agent."
       isCorrect: true
-      explanation: "Correct. In each of the Azure Arc-enabled scenarios, Azure Arc leverages the locally installed Connected Machine agents to establish a logical connection between the local resource and Azure."
-  - content: "Which of the following operating system are not supported by Azure Arc-enabled servers?"
+      explanation: "Correct. In each of the Azure Arc-enabled scenarios, Azure Arc uses the locally installed Connected Machine agents to establish a logical connection between the local resource and Azure."
+  - content: "Which of the following operating system aren't supported by Azure Arc-enabled servers?"
     choices:
     - content: "Windows Server 2012 R2"
       isCorrect: false
-      explanation: "Incorrect. The Azure Connected Machine agent supports all versions of Windows Server operating system that have not reached their end of support stage."
+      explanation: "Incorrect. The Azure Connected Machine agent supports all versions of Windows Server operating system that haven't reached their end of support stage."
+
     - content: "Red Hat Enterprise Linux 7 (x64)."
       isCorrect: false
       explanation: "Incorrect. The Azure Connected Machine agent supports Red Hat Enterprise Linux 7 (x64)."

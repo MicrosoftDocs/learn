@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.design-considerations-mr-development.app-quality
+title: App quality
+metadata:
+  title: App quality
+  description: "Explore app quality criteria for mixed reality apps."
+  ms.date: 7/13/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-app-quality.md)]

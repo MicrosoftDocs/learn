@@ -6,8 +6,6 @@ Azure Databricks is a comprehensive platform that offers many data processing ca
 
 *\*SQL workloads are only available in premium tier workspaces.*
 
-The Azure Databricks user interface supports three corresponding *persona* views that you can switch between depending on the workload you're implementing.
-
 ## Data Science and Engineering
 
 Azure Databricks provides Apache Spark based processing and analysis of large volumes of data in a data lake. Data engineers, data scientists, and data analysts can use interactive notebooks to run code in Python, Scala, SparkSQL, or other languages to cleanse, transform, aggregate, and analyze data.

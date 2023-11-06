@@ -2,12 +2,12 @@
 uid: learn.microservices-resiliency-aspnet-core.1-introduction
 metadata:
   title: Introduction
-  description: Introduction
+  description: Learn how to add fault tolerance to your cloud-native ASP.NET Core microservice app, with minimal impact on the user.
   author: scottaddie
   ms.author: scaddie
-  ms.date: 08/04/2020
-  ms.prod: aspnet-core
-  ms.topic: interactive-tutorial
+  ms.manager: markl
+  ms.date: 05/09/2023
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 1
 content: |

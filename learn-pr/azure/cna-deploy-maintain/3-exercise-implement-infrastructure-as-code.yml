@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Implement Infrastructure as Code by using GitHub Actions
   description: Exercise - Implement Infrastructure as Code by using GitHub Actions
   ms.date: 05/31/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

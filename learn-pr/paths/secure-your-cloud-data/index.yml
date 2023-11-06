@@ -5,8 +5,8 @@ metadata:
   description: This learning path helps you leverage the built-in Azure services for securing app data, ensuring that only authorized services and clients have access.
   brand: azure
   ms.date: 10/1/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your cloud data
@@ -30,7 +30,6 @@ products:
 subjects:
 - cloud-security
 modules:
-- learn.azure.protect-against-security-threats-azure
 - learn.top-5-security-items-to-consider
 - learn.azure-security.configure-security-policies-to-manage-data
 - learn.azure.secure-azure-storage-account

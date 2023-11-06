@@ -17,7 +17,7 @@ Your Alpine Ski House web app is up and running, but now you need to show it to 
 1. Open the **Index.cshtml** file.
 
 1. Replace the content within the `<p>` tags to say
-    **Alpine Ski House is the premier ski hill in Northeast!**
+    **Alpine Ski House is the premier ski hill in the Northeast!**
 
 1. Save the file.
 
@@ -31,6 +31,6 @@ Your Alpine Ski House web app is up and running, but now you need to show it to 
 
 ### View your changes
 
-Once you've published your changes, Visual Studio will open the site in your browser. You should now see your new messages on the home and privacy pages.
+Once you've published your changes, Visual Studio opens the site in your browser. You should now see your new messages on the home and privacy pages.
 
-Congratulations, you have successfully updated your web app from within Visual Studio 2022.
+Congratulations, you've successfully updated your web app from within Visual Studio 2022.

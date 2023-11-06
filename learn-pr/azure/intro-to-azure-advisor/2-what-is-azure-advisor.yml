@@ -6,8 +6,8 @@ metadata:
   title: What is Azure Advisor?
   description: What is Azure Advisor and what can it be used for?
   ms.date: 03/08/2023
-  author: ricmmartins
-  ms.author: ricmart
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

@@ -2,35 +2,33 @@
 uid: learn.microservices-aspnet-core
 metadata:
   title: Create and deploy a cloud-native ASP.NET Core microservice
-  description: This module guides you through containerizing an ASP.NET Core microservice and deploying it to Azure Kubernetes Service.
-  ms.date: 05/27/2020
+  description: Learn how to create and containerize an ASP.NET Core microservice and deploy it to Azure Kubernetes Service (AKS).
+  ms.date: 05/22/2023
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Create and deploy a cloud-native ASP.NET Core microservice
-summary: Create and deploy an ASP.NET Core microservice to AKS. 
-abstract: | 
-  In this module, you will:
-  - Examine existing ASP.NET Core microservices running in Azure Kubernetes Service (AKS).
-  - Implement a new ASP.NET Core microservice and containerize it.
-  - Publish the Docker image to Azure Container Registry (ACR).
+summary: Create and deploy an ASP.NET Core microservice to AKS.
+abstract: |
+  - Examine an existing ASP.NET Core microservices app running in Azure Kubernetes Service (AKS).
+  - Implement and containerize a new ASP.NET Core microservice for the app.
+  - Publish the Docker container image to Azure Container Registry.
   - Deploy the Docker container to the existing AKS cluster.
 prerequisites: |
-  - Experience writing C# at the beginner level
-  - Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE
-  - Conceptual knowledge of containers at the beginner level
-  - Access to an Azure subscription
-  - Ability to run development containers in Visual Studio Code or GitHub Codespaces
+  - Beginner-level experience with C# code.
+  - Familiarity with RESTful service concepts and HTTP actions like GET, POST, PUT, and DELETE.
+  - Conceptual knowledge of containers, Docker, and AKS.
+  - Access to an Azure subscription.
+  - Ability to run *development containers* in Visual Studio Code or GitHub Codespaces, including Docker and Visual Studio Code extensions installed as necessary.
 levels:
 - intermediate
 roles:
 - developer
 - solution-architect
 products:
-- dotnet
 - aspnet-core
-- dotnet-core
 - azure
 - azure-container-registry
 - azure-kubernetes-service
@@ -38,8 +36,8 @@ subjects:
 - container
 units:
 - learn.microservices-aspnet-core.1-introduction
-- learn.microservices-aspnet-core.2-deploy-application
-- learn.microservices-aspnet-core.3-solution-architecture
+- learn.microservices-aspnet-core.2-solution-architecture
+- learn.microservices-aspnet-core.3-deploy-application
 - learn.microservices-aspnet-core.4-review-code-verify-deployment
 - learn.microservices-aspnet-core.5-coupon-service-design
 - learn.microservices-aspnet-core.6-add-coupon-service

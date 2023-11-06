@@ -1,0 +1,69 @@
+### YamlMime:Module
+uid: learn.owasp-top-10-for-dotnet-developers
+metadata:
+  title: "Guide to Secure .NET Development with OWASP Top 10"          # Do not edit: title must be "Introduction to (product)"
+  description: "Evaluate security risks that come with insecure application development patterns and practices"             # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 06/12/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: obrocki      # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: dawidobrocki           # Alias     of the Microsoft employee either authoring or project-managing this content
+  ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+
+title: "Guide to Secure .NET Development with OWASP Top 10"
+
+summary: "Discover the most common software vulnerabilities according to OWASP and different techniques of writing more secure code. Prevent from security bugs creeping into your codebase following security best practices."
+
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe what OWASP Top 10 is.
+    - Identify potential security vulnerabilities in your software.
+    - Always validate user input in your applications.
+
+prerequisites: |
+  - Basic knowledge of .NET and C# at the intermediate level.
+  - Basic knowledge of web development with ASP.NET at the beginner level, including controllers and razor syntax.
+  - Familiarity with software development and release cycle at the beginner level.
+  - Basic concepts and terminology of cloud hosting and security tooling, including automation and release process.
+
+iconUrl: /training/achievements/aspnetcore/owasp-top-ten-for-net-developers.svg
+
+levels:
+  - beginner
+
+roles:
+  - developer
+  - devops-engineer
+  - security-engineer
+
+products:
+- azure
+- aspnet
+- aspnet-web-api
+- dotnet
+- blazor
+
+subjects:
+  - security
+  - backend-development
+  - frontend-development
+  - cloud-security
+  - development-tools
+  - devops
+
+units:
+- learn.owasp-top-10-for-dotnet-developers.introduction
+- learn.owasp-top-10-for-dotnet-developers.what-is-owasp-top-10
+- learn.owasp-top-10-for-dotnet-developers.broken-access-control
+- learn.owasp-top-10-for-dotnet-developers.cryptographic-failures
+- learn.owasp-top-10-for-dotnet-developers.injection
+- learn.owasp-top-10-for-dotnet-developers.insecure-design
+- learn.owasp-top-10-for-dotnet-developers.security-misconfiguration
+- learn.owasp-top-10-for-dotnet-developers.vulnerable-outdated-components
+- learn.owasp-top-10-for-dotnet-developers.identification-authentication-failures
+- learn.owasp-top-10-for-dotnet-developers.software-data-integrity-failures
+- learn.owasp-top-10-for-dotnet-developers.security-logging-monitoring
+- learn.owasp-top-10-for-dotnet-developers.server-side-request-forgery
+- learn.owasp-top-10-for-dotnet-developers.summary
+
+badge:
+  uid: learn.owasp-top-ten-for-net-developers.badge

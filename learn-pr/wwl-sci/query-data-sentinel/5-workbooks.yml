@@ -7,8 +7,7 @@ metadata:
   ms.date: 01/26/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-workbooks.md)]
@@ -26,7 +25,7 @@ quiz:
     - content: "Videos"
       isCorrect: true
       explanation: "A workbook cannot contain videos."
-  - content: "In which section of the Azure AD Sign-in logs workbook can an administrator find information that users are required to perform multifactor authentication (MFA) to validate their identity."
+  - content: "In which section of the Microsoft Entra sign-in logs workbook can an administrator find information that users are required to perform multifactor authentication (MFA) to validate their identity."
     choices:
     - content: "Sign-in Location"
       isCorrect: false
@@ -36,4 +35,4 @@ quiz:
       explanation: "The Conditional Access status table shows which users are required to perform MFA to validate their identity."
     - content: "Sign-ins by Device."
       isCorrect: false
-      explanation: "Sign-ins by Device lists devices used by the users to sign in to Azure AD."
+      explanation: "Sign-ins by Device lists devices used by the users to sign in to Microsoft Entra ID."

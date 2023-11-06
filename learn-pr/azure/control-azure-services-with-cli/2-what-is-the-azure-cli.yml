@@ -8,6 +8,8 @@ metadata:
   author: dbradish-microsoft
   ms.author: dbradish
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |

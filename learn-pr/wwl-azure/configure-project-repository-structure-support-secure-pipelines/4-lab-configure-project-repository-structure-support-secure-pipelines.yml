@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines.lab-configure-project-repository-structure-support-secure-pipelines
+title: Lab - Configure a project and repository structure to support secure pipelines
+metadata:
+  title: Lab - Configure a project and repository structure to support secure pipelines
+  description: "This unit contains a hands-on exercise. Learners can use the exercise to configure a project and repository structure to support secure pipelines."
+  ms.date: 6/14/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-lab-configure-project-repository-structure-support-secure-pipelines.md)]

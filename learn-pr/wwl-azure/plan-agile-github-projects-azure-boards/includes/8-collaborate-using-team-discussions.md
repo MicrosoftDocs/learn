@@ -1,8 +1,9 @@
+
 GitHub discussions can help make your team plan together, update one another, or talk about any topic you'd like in discussion posts on your team's page in an organization.
 
 You can use team discussions for conversations that span across projects or repositories (issues, pull requests, etc.). Instead of opening an issue in a repository to discuss an idea, you can include the entire team by having a conversation in a team discussion.
 
-:::image type="content" source="../media/team-discussions-db2216ad.png" alt-text="Screenshot of GitHub team discussion feature.":::
+:::image type="content" source="../media/team-discussions-db2216ad-1dfef2f0-6991309a.png" alt-text="Screenshot of GitHub team discussion feature.":::
 
 
 With team discussions, you can:

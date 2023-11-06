@@ -2,22 +2,21 @@
 uid: learn.tensorflow.intro-machine-learning-keras
 metadata:
   title: Introduction to TensorFlow using Keras
-  description: Learn how to build a machine learning model using Keras
-  ms.date: 07/07/2021
+  description: Learn how to build a TensorFlow machine learning model using the Keras API.
+  ms.date: 07/17/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial
-  ms.service: machine-learning
   ms.custom: team=cloud_advocates
   ms.contributors: bstollnitz-08202021
 title: Introduction to TensorFlow using Keras
-summary: This module provides all the concepts and practical knowledge you need to get started with TensorFlow. We'll explore Keras, a high-level API released as part of TensorFlow, and we'll use it to build a simple neural network for image classification.
+summary: This module provides all the concepts and practical knowledge you need to get started with TensorFlow. We explore Keras, a high-level API released as part of TensorFlow, and use it to build a simple neural network for image classification.
 abstract: |
   In this module you will:
   - Learn to load and prepare data to be used in machine learning.
   - Learn to specify the architecture of a deep learning neural network.
   - Learn to train a neural network.
-  - Learn to make a prediction using a neural network.
+  - Learn how to use a neural network to make a prediction.
 iconUrl: /training/achievements/keras-intro.svg
 levels:
 - beginner

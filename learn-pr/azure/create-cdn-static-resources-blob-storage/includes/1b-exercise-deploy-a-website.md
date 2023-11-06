@@ -31,7 +31,7 @@ Start by creating a new storage account to host a static site. When we're finish
         --kind StorageV2
     ```
 
-1. In the output, find the `"primaryEndpoints"` **web** url, copy it, and open the link in a web browser. The page that opens indicates that "The requested content doesn't exist". Keep this tab open; we're going to deploy our static content and then refresh the page.
+1. In the output, find the `"primaryEndpoints"` **web** url, copy it, and open the link in a web browser. The page that opens indicates that **The requested content doesn't exist**. Keep this tab open; we're going to deploy our static content and then refresh the page.
 
 ### Enable static website hosting on the storage account
 

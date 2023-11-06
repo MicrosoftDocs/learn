@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-linux-on-azure.identify-azure-paas-options-for-linux-deployments
+title: Identify Azure PaaS options for Linux deployments
+metadata:
+  title: Identify Azure PaaS options for Linux deployments
+  description: Learn about the Azure PaaS options for Linux deployments.
+  ms.date: 05/01/2023
+  author: chasecrum
+  ms.author: chasecrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-azure-paas-options-for-linux-deployments.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Which of the following Azure services is PaaS platform as a service?
+    choices:
+    - content: "Virtual machines"
+      isCorrect: false
+      explanation: "Incorrect: Virtual machines are a core Azure component."
+    - content: "Azure Resource Manager"
+      isCorrect: false
+      explanation: "Incorrect: Azure Resource Manager is a core Azure tool, used for configuring both IaaS and PaaS services."
+    - content: "Azure portal"
+      isCorrect: false
+      explanation: "Incorrect: The Azure portal is a core Azure configuration tool and not a PaaS-specific service."
+    - content: "Azure App Service"
+      isCorrect: true
+      explanation: "Correct: Azure App Service is a managed, web application–hosting platform that can host applications on Linux."

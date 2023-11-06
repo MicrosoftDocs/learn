@@ -1,15 +1,15 @@
-Imagine you work for a growing video editing company that provides a cloud-based video rendering service. Your company is experiencing increased demand for its video rendering service because of its international expansion. They've already scaled the application using HorizontalPodAutoscalers, but the cluster doesn't seem to be following up, the DevOps engineer found out the cluster could be manually scaled, but someone needs to keep a close look on it all day long. Management then tasked you to find a solution to scale the cluster automatically and free up some employee time.
+Imagine that you work for a growing video editing company that provides a cloud-based video rendering service. The company is experiencing increased demand for its video rendering service because of its international expansion. They have already scaled the application using HorizontalPodAutoscalers, but the cluster doesn't seem to be following up. The DevOps engineer found out that the cluster could be manually scaled, but someone needs to keep a close eye on it all day long. Now, management has tasked you to find a solution to scale the cluster automatically and free up some employee time.
 
 Since AKS already provides scaling tools for apps, you decided to check on a feature called "cluster autoscaler" to get more understanding of its aspects and how can it be implemented.
 
-In this module, you'll learn what the cluster autoscaler is, how it works and how you can deploy it to an existing cluster on AKS.
+In this module, you learn what the cluster autoscaler is, how it works and how you can deploy it to an existing cluster on AKS.
 
 ## Learning goals
 
-By the end of this module, you'll be able to:
+By the end of this module, you'll:
 
-- Understand the concept of cluster scalability and how it applies to Kubernetes
-- Create and set up cluster scalability within AKS
+- Understand the concept of cluster scalability and how it applies to Kubernetes.
+- Create and set up cluster scalability within AKS.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ By the end of this module, you'll be able to:
 - Ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan).
 - Ability to create a Docker container. If you're new to Docker, start with the [intro to containers](/training/modules/intro-to-containers/?WT.mc_id=deploycontainerapps_intro-learn-ludossan).
 
-All exercises will use [Azure Cloud Shell](/azure/cloud-shell/overview?WT.mc_id=deploycontainerapps_intro-learn-ludossan), which already has all the needed tooling installed. If you prefer to run the examples in your own terminal, you'll need to have the following tooling installed first:
+All exercises use [Azure Cloud Shell](/azure/cloud-shell/overview?WT.mc_id=deploycontainerapps_intro-learn-ludossan), which already has all the needed tooling installed. If you prefer to run the examples in your own terminal, you need to have the following tooling installed first:
 
 - [Azure CLI](/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan)
 - [Kubectl](/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan#connect-to-the-cluster)
@@ -27,7 +27,7 @@ All exercises will use [Azure Cloud Shell](/azure/cloud-shell/overview?WT.mc_id=
 
 ## Before you begin
 
-This module assumes you already have a running cluster. You'll need to create the cluster with the required resources. The [GitHub repository for this sample](https://github.com/Azure-Samples/mslearn-aks-cluster-scalability) has a script that will create the cluster, get the credentials, and deploy the application to it. You'll need to run it before you begin with the following steps.
+This module assumes you already have a running cluster. You need to create the cluster with the required resources. The [GitHub repository for this sample](https://github.com/Azure-Samples/mslearn-aks-cluster-scalability) has a script that creates the cluster, gets the credentials, and deploys the application to it. You need to run it before you begin with the following steps.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -46,7 +46,7 @@ Then execute the following command.
 curl -L https://aka.ms/learn-cluster-scalability-init?v=$RANDOM | bash
 ```
 
-By the end of the command, you should have a cluster created with the `contoso-website` application deployed to it with 35 pods but some of them will be on **Pending** state. This is because the application is trying to scale past the number of pods able to be scheduled on the nodes.
+When the command has completed, you should have a cluster created with the `contoso-website` application deployed to it with 35 pods. Notice that some of the pods are in a **Pending** state because the application is trying to scale past the number of pods that are able to be scheduled on the nodes.
 
 ```
 NAME                                      READY   STATUS    RESTARTS   AGE

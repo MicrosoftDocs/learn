@@ -6,9 +6,8 @@ metadata:
   description: "Knowledge check"
   ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

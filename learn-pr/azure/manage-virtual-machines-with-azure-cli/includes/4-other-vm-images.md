@@ -2,7 +2,7 @@ We used UbuntuLTS for the image to create the virtual machine. Azure has several
 
 ## Listing images
 
-You can get a list of the available VM images using the following command. 
+You can get a list of the available VM images using the following command:
 
 ```azurecli
 az vm image list --output table
@@ -11,13 +11,13 @@ az vm image list --output table
   >  If you get the error *az: command not found*, type `exit` into the shell and try again. 
 
 
-This will output the most popular images that are part of an offline list built into the Azure CLI. However, there are _hundreds_ of image options available in the Azure Marketplace. 
+This outputs the most popular images that are part of an offline list built into the Azure CLI. However, there are *hundreds* of image options available in the Azure Marketplace.
 
 ## Getting all images
 
-You can get a full list by adding the `--all` flag to the command. Since the list of images in the Marketplace is very large, it is helpful to filter the list with the `--publisher`, `--sku` or `–-offer` options.
+You can get a full list by adding the `--all` flag to the command. Because the list of images in the Marketplace is very large, it's helpful to filter the list with the `--publisher`, `--sku` or `–-offer` options.
 
-For example, try the following command to see _all_ Wordpress images available:
+For example, try the following command to see *all* Wordpress images available:
 
 ```azurecli
 az vm image list --sku Wordpress --output table --all

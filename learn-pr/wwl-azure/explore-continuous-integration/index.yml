@@ -3,11 +3,11 @@ uid: learn.wwl.explore-continuous-integration
 metadata:
   title: Explore continuous integration
   description: "Explore continuous integration"
-  ms.date: 06/13/2022
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 title: Explore continuous integration
 summary: This module details continuous integration practice and the pillars for implementing it in the development lifecycle, its benefits, and properties.
 abstract: |
@@ -16,8 +16,9 @@ abstract: |
   - Implement continuous integration using Azure Pipelines
   - Explain benefits of continuous integration
   - Describe build properties
-prerequisites: ""
-iconUrl: /training/achievements/4-explore-continuous-integration.svg
+prerequisites: |
+  None
+iconUrl: /learn/achievements/4-explore-continuous-integration.svg
 levels:
 - advanced
 roles:

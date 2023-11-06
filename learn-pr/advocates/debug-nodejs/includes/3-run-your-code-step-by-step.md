@@ -25,14 +25,14 @@ You can add this statement at any point in your code, like this:
 
 Because a debugger has full access to the execution environment, a malicious actor could also use it to inject arbitrary code in your Node.js process. That's why, by default, Node.js doesn't allow you to debug a running program. You have to enable a special mode called *inspector* mode to allow debugging.
 
-You need the `--inspect` option to allow a Node.js process to listen for a debugger client that will attach itself to the process, and take control of your program execution.
+You need the `--inspect` option to allow a Node.js process to listen for a debugger client that attaches itself to the process and takes control of your program execution.
 
-By default, when Node.js is started with the `--inspect` option, it will listen on host 127.0.0.1 on port 9229. You can also specify a custom host and port by using the syntax `--inspect=<HOST>:<PORT>`.
+By default, when Node.js is started with the `--inspect` option, it listens on host 127.0.0.1 on port 9229. You can also specify a custom host and port by using the syntax `--inspect=<HOST>:<PORT>`.
 
 > [!IMPORTANT]
 > Avoid binding the Node.js debugger port to a public IP address or to 0.0.0.0. Otherwise, any clients that can connect to your IP address could potentially connect and control your Node.js process. By doing so, an attacker can remotely run arbitrary code on your execution environment. This action could lead to a potentially severe security breach.
 
-As an alternative, you can use the `--inspect-brk` option. It works the same as `--inspect`, but it breaks code execution just before the start of your code.
+As an alternative, you can use the `--inspect-brk` option. It works the same as `--inspect`, but it breaks code execution just before the start of your code. This allows you to attach the debugger and take your time to set breakpoints and step through your code to identify the root cause of the issue. You would use `--inspect-brk` when you need to debug a race condition or an intermittent issue that's difficult to reproduce.
 
 After Node.js is started with inspect mode enabled, you can use any compatible debugger clients to connect to your Node.js process.
 
@@ -49,7 +49,7 @@ For example, you can use [node-inspect](https://github.com/nodejs/node-inspect).
 node inspect <YOUR_SCRIPT>.js
 ```
 
-The node-inspect debugger will run Node.js with inspect mode enabled, and launch at the same time as the integrated interactive debugger. It will pause execution just before your code starts. You should see the debugger prompt that indicates it has successfully launched.
+The node-inspect debugger runs Node.js with inspect mode enabled and launches at the same time as the integrated interactive debugger. It pauses execution just before your code starts. You should see the debugger prompt that indicates it has successfully launched.
 
 ```bash
 node inspect myscript.js
@@ -82,4 +82,24 @@ To get information about the current execution point, run these commands:
 - `list(<N>)`: List your source code with *N* lines before and after the current execution point.
 - `exec <EXPR>`: Evaluate an expression within the current execution context. This command is useful to help you get information about the current state. For example, you can get the value of a variable named `i` by using `exec i`.
 
-That's quite a few commands to remember. Thankfully, you can also use the `help` command to show the complete list of available commands. To exit the debugger at any time, press <kbd>Ctrl+D</kbd>, or select the command `.exit`.
+Those are quite a few commands to remember. Thankfully, you can also use the `help` command to show the complete list of available commands. To exit the debugger at any time, press <kbd>Ctrl+D</kbd>, or select the command `.exit`.
+
+## Use Development container for consistent development environment
+
+A development container is a configured environment, which includes all tools and applications needed to complete a development task. This allows development teams to focus on writing code instead of chasing issues stemming from working in an environment (perhaps multiple environments) different than the production environment. 
+
+A development container can run:
+
+* **Remotely**: In the browser, you can use GitHub Codespaces and Visual Studio Code for the Web, using free compute time available with your GitHub account.
+*  **Locally**: On your local computer, you can use Visual Studio Code [] with a configured container environment or you can start with the default environment. Docker Community edition is required.
+
+### Remote development
+
+[GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
+
+> [!IMPORTANT]
+> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+
+### Local development
+
+The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.

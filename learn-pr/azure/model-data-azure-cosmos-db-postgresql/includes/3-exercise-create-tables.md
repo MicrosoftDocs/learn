@@ -4,7 +4,10 @@ In this exercise, you create the tables to start Woodgrove Bank's developers on 
 
 ## Create an Azure Cosmos DB for PostgreSQL database
 
-Create an Azure Cosmos DB for PostgreSQL database with a single coordinator node (with 4 vCores and 0.5 TiB of storage) and two worker nodes (each with 4 vCores and 0.5 TiB of storage).
+Create an Azure Cosmos DB for PostgreSQL database with a single coordinator node (with four vCores and 0.5 TiB of storage) and two worker nodes (each with 4 vCores and 0.5 TiB of storage).
+
+> [!NOTE]
+> You'll need your own Azure subscription to complete the exercises in this module. If you don't have an Azure subscription, you can sign up for a [free Azure account](https://azure.microsoft.com/free/). Be sure to clean up any resources you create at the end of the module to avoid being charged.
 
 1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com).
 
@@ -12,9 +15,9 @@ Create an Azure Cosmos DB for PostgreSQL database with a single coordinator node
 
     :::image type="content" source="../media/cosmos-db-postgresql-create.png" alt-text="Screenshot of Create an Azure Cosmos DB for PostgreSQL resource. Databases in the Categories navigation and Azure Cosmos DB in the Popular Azure services section are highlighted.":::
 
-1. On the **Select API option** screen, select **Create** within the **PostgreSQL** tile.
+1. On the **Select API option** screen, select **Create** within the **Azure Cosmos DB for PostgreSQL** tile.
 
-    :::image type="content" source="../media/cosmos-db-select-api-option.png" lightbox="../media/cosmos-db-select-api-option.png" alt-text="Screenshot of the Azure Cosmos DB API options. The PostgreSQL option is highlighted.":::
+    :::image type="content" source="../media/cosmos-db-select-api-option.png" lightbox="../media/cosmos-db-select-api-option.png" alt-text="Screenshot of the Azure Cosmos DB API options. The Azure Cosmos DB for PostgreSQL option is highlighted.":::
 
     > [!NOTE]
     > The portal will display an Azure Cosmos DB for PostgreSQL configuration screen.
@@ -24,13 +27,13 @@ Create an Azure Cosmos DB for PostgreSQL database with a single coordinator node
     | Parameter       | Value |
     | --------------- | ----- |
     | **Project details** |       |
-    | Subscription    | Leave as the default subscription for the sandbox environment.  |
+    | Subscription    | Choose your Azure subscription  |
     | Resource group  | Select **Create new** and name your resource group `learn-cosmosdb-postgresql`. |
     | **Cluster details** |       |
     | Cluster name    | _Enter a globally unique name_, such as `learn-cosmosdb-postgresql`. |
     | Location        | Leave the default, or use a region that is close to you. |
     | Scale           | See configuration settings in the next step. |
-    | PostgreSQL version | Leave the default version (14) selected. |
+    | PostgreSQL version | Leave the default version (15) selected. |
     | **Administrator account** | |
     | Admin username  | This username is set to `citus` and can't be edited. |
     | Password        | Enter and confirm a strong password. |
@@ -45,17 +48,17 @@ Create an Azure Cosmos DB for PostgreSQL database with a single coordinator node
     | Parameter        | Value |
     | ---------------- | ----- |
     | **Nodes**            |       |
-    | Node count       |  Choose **2 nodes + coordinator**. |
+    | Node count       |  Choose **2 nodes**. |
     | Compute per node | Select **4 vCores, 32 GiB RAM**. |
-    | Storage per node | Select **512 GiBM**. |
-    | **Coordinator**      |       |
+    | Storage per node | Select **512 GiB**. |
+    | **Coordinator**      |  (you might have to expand this section)     |
     | Coordinator compute | Select **4 vCores, 16 GiB RAM**. |
-    | Coordinator storage | Select **512 GiBM**. |
+    | Coordinator storage | Select **512 GiB**. |
     | High availability | Leave unchecked. |
 
     :::image type="content" source="../media/cosmos-db-postgresql-cluster-config.png" alt-text="Screenshot of the Azure Cosmos DB for PostgreSQL cluster configuration dialog. The settings above appear in the screenshot.":::
 
-1. Select **Save** on the scale page to return to the cluster configuration.
+1. Leave all other options as default. Select **Save** on the scale page to return to the cluster configuration.
 
 1. Select the **Next : Networking >** button to move on to the **Networking** tab of the configuration dialog.
 
@@ -79,7 +82,7 @@ Create an Azure Cosmos DB for PostgreSQL database with a single coordinator node
 
     :::image type="content" source="../media/azure-cloud-shell-welcome.png" alt-text="Screenshot of Azure Cloud Shell welcome message with a prompt to choose an environment between Bash or PowerShell. Bash is selected.":::
 
-1. If prompted, select the subscription you used for your Azure Cosmos DB for PostgreSQL account. Then select **Create storage**.
+1. If prompted, select the subscription you used for your Azure Cosmos DB for PostgreSQL account, then select **Create storage**.
 
     :::image type="content" source="../media/azure-cloud-shell-mount-storage.png" alt-text="Screenshot of Azure Cloud Shell welcome wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.":::
 

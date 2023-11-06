@@ -1,6 +1,6 @@
 ## Overview
 
-The diagram below describes the activities for this project.
+The following diagram describes the activities for this project.
 
 :::image type="content" source="../media/project-activities.png" alt-text="Illustration of the project activities." border="false":::
 

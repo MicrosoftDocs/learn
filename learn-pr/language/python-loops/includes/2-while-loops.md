@@ -1,4 +1,4 @@
-When you write code, one common challenge is to have it perform a task an unknown number of times. In this unit, you want to allow a user to enter a list of planet names. Unfortunately, you don't know how many names the user will enter. To support looping an unknown number of times, you can use a `while` loop.
+When you write code, one common challenge is to have it perform a task an unknown number of times. In this unit, you want to allow a user to enter a list of planet names. Unfortunately, you don't know how many names the user enters. To support looping an unknown number of times, you can use a `while` loop.
 
 A `while` loop performs an operation *while* a certain condition is true. You could use a `while` loop to:
 
@@ -15,11 +15,11 @@ The syntax of a `while` loop is similar to that of an `if` statement. You provid
 A `while` loop has three important parts:
 
 - The keyword `while`, followed by a space.
-- The condition you'll test. If the condition is true, the code inside the `while` loop will run.
+- The condition you test. If the condition is true, the code inside the `while` loop runs.
 - The code you want to run for each iteration, indented with nested whitespace. For example:
 
     ```python
-    while condition:
+    while <condition>:
         # code here
     ```
 
@@ -55,7 +55,7 @@ while user_input.lower() != 'done':
     user_input = input('Enter a new value, or done when done')
 ```
 
-Notice the `if` statement inside the `while` loop. This statement tests for a string value inside `user_input`. If the `while` loop is running for the first time, there's no value, so there's nothing to store in `inputs`. After it runs for the first time, `user_input` always keeps the value that the user has just entered. Because `while` is testing to ensure that the value doesn't equal `done` (the word the user will enter to exit the app), you know that the current value is one that you can add to the list.
+Notice the `if` statement inside the `while` loop. This statement tests for a string value inside `user_input`. If the `while` loop is running for the first time, there's no value, so there's nothing to store in `inputs`. After it runs for the first time, `user_input` always keeps the value that the user has entered. Because `while` is testing to ensure that the value doesn't equal `done` (the word the user enters to exit the app), you know that the current value is one that you can add to the list.
 
 > [!NOTE]
 > You might be familiar with other programming languages that support a `do` loop, which lets you perform a test at the bottom of the loop. Python doesn't provide a `do` loop.

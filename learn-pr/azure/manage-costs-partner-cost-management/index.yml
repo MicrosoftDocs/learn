@@ -3,20 +3,21 @@ uid: learn.manage-costs-partner-cost-management
 metadata:
   title: Configure and manage costs as a Microsoft partner by using Microsoft Cost Management
   description: Learn how to reconcile your bill and analyze costs across your customers and resources by using Microsoft Cost Management as a partner.
-  ms.date: 11/01/2021
+  ms.date: 05/30/2023
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cost-management-billing 
+  ms.subservice: cost-management
 title: Configure and manage costs as a Microsoft partner by using Microsoft Cost Management
 summary: Reconcile your bill and analyze costs across your customers and resources by using Microsoft Cost Management as a partner. Determine which of your resources receive discounted pricing. Manage costs through budgets to stay within defined spending limits. Enable your customers to use Microsoft Cost Management with pay-as-you-go rates.
 abstract: | 
   In this module, you'll learn how to:
-  - Understand Microsoft Cost Management scopes
-  - Reconcile your bill
-  - Determine which resources receive partner earned credit
-  - Enable Microsoft Cost Management for customers
-  - Set cost thresholds
+  - Understand Microsoft Cost Management scopes.
+  - Reconcile your bill.
+  - Determine which resources receive partner earned credit.
+  - Enable Microsoft Cost Management for customers.
+  - Set cost thresholds.
 prerequisites: | 
   - A basic understanding of the Microsoft Customer Agreement, Azure plan, and Microsoft Cost Management configuration
   - Confirmation that your customers have accepted the Microsoft Customer Agreement

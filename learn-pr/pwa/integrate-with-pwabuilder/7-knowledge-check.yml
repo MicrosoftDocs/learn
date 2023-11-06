@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.edge.integrate-with-pwabuilder.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Integrate your project with PWABuilder" module.
+  ms.date: 07/11/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: module-standard-task-based
+  ms.prod: microsoft-edge
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions: 
+  - content: "What is the purpose of the app manifest file in a PWA?"
+    choices:
+    - content: "To provide metadata about the web application"
+      isCorrect: true
+      explanation: "Correct. The app manifest file contains metadata that describes the web application, such as the name, icons, and display options."
+    - content: "To only handle offline functionality"
+      isCorrect: false
+      explanation: "Incorrect. The app manifest file does more than just handling offline functionality."
+    - content: "To optimize images for faster load times"
+      isCorrect: false
+      explanation: "Incorrect. The app manifest file doesn't handle image optimization. This is done through other techniques like image compression and lazy-loading."
+    - content: "To implement responsive design"
+      isCorrect: false
+      explanation: "Incorrect. Responsive design is achieved through CSS and JavaScript, not the app manifest file."
+  - content: "How does PWABuilder help to generate service worker files?"
+    choices:
+    - content: "By providing a set of prebuilt templates for common use cases"
+      isCorrect: true
+      explanation: "Correct. PWABuilder offers a selection of prebuilt service worker templates for common scenarios, such as caching and offline functionality."
+    - content: "By automatically creating a unique service worker for each project"
+      isCorrect: false
+      explanation: "Incorrect. PWABuilder doesn't create a unique service worker for each project but rather offers prebuilt templates to choose from."
+    - content: "By optimizing the service worker for faster load times"
+      isCorrect: false
+      explanation: "Incorrect. PWABuilder doesn't specifically optimize service workers for faster load times, but it does provide templates that help with caching and offline functionality."
+    - content: "By providing an interactive editor to create the service worker"
+      isCorrect: false
+      explanation: "Incorrect. PWABuilder doesn't offer an interactive editor to create service workers; it provides prebuilt templates to choose from."
+  - content: "What are some key features to consider when customizing your PWA's appearance and functionality?"
+    choices:
+    - content: "Push notifications, background sync, and offline analytics"
+      isCorrect: false
+      explanation: "Incorrect. While these are important features, this option doesn't cover all the aspects mentioned in the question."
+    - content: "Display options, theme colors, and icons"
+      isCorrect: false
+      explanation: "Incorrect. While these are important appearance features, this option doesn't cover all the aspects mentioned in the question."
+    - content: "Caching strategies, lazy-loading, and minification"
+      isCorrect: false
+      explanation: "Incorrect. While these are important functionality features, this option doesn't cover all the aspects mentioned in the question."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct. All the features mentioned in options a, b, and c are important aspects to consider when customizing your PWA's appearance and functionality."
+  - content: "Why is it important to test your PWA on various devices and platforms?"
+    choices:
+    - content: "To ensure compatibility with different browsers and operating systems"
+      isCorrect: false
+      explanation: "Incorrect. Although this is important, it doesn't cover all the aspects mentioned in the question."
+    - content: "To optimize performance across a range of devices"
+      isCorrect: false
+      explanation: "Incorrect. Although this is important, it doesn't cover all the aspects mentioned in the question."
+    - content: "To identify and resolve any compatibility or performance issues"
+      isCorrect: false
+      explanation: "Incorrect. Although this is important, it doesn't cover all the aspects mentioned in the question."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct. Testing on various devices and platforms ensures compatibility, optimizes performance, and helps identify and resolve any issues."
+  - content: "What are the key steps to publish your PWA to the Microsoft Store?"
+    choices:
+    - content: "Package your PWA using PWABuilder, submit it to the Microsoft Store, and monitor the status of your app submission"
+      isCorrect: true
+      explanation: "Correct. These are the main steps to publish a PWA on the Microsoft Store."
+    - content: "Create a new app submission in the Microsoft Developer Center, upload your PWA files, and submit it for review"
+      isCorrect: false
+      explanation: "Incorrect. This process is incomplete, as it doesn't include packaging the PWA using PWABuilder."
+    - content: "Optimize your PWA for the Microsoft Store and submit it through the PWABuilder website"
+      isCorrect: false
+      explanation: "Incorrect. While optimizing the PWA is important, this option doesn't mention submitting it to the Microsoft Store and monitoring the status of the app submission. Both are key steps in the process."
+    - content: "Implement responsive design, optimize images, and submit your PWA to the Microsoft Store"
+      isCorrect: false
+      explanation: "Incorrect. While these aspects are important for a high-quality PWA, they don't cover the specific steps for publishing to the Microsoft Store, such as packaging the PWA using PWABuilder."

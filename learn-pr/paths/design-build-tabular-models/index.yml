@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Design and build tabular models
 prerequisites: |
-  - You should have experience creating Microsoft Power BI Desktop models and using DAX to create model calculations. See [Model Data in Power BI](/training/paths/model-power-bi/) for more details.
+  - You should have experience creating Microsoft Power BI Desktop models and using DAX to create model calculations. See [Model Data with Power BI](/training/paths/model-data-power-bi/) for more details.
 summary: |
   This learning path introduces the foundational components of designing scalable tabular models using Power BI.
   This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).

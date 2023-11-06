@@ -30,4 +30,10 @@ Advanced use cases of cloning the TFVC repository into Git are [documented here]
 cd some_project
 git log
 
+
+
+
+
+
+
 ```

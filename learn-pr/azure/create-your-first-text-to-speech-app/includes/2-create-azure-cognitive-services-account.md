@@ -1,41 +1,34 @@
-Azure Cognitive Services is a product bundle that enables customers to access multiple services - such as vision, language, and speech - by using a single API key.
+Azure AI services is a product bundle that enables customers to access multiple services—such as vision, language, and speech—by using a single API key.
 
-For your company's video department, you'll focus on Azure Cognitive Services' text-to-speech features to create audio files that you can use for narration in your videos.
+For your company's video department, you'll focus on Azure AI services' text to speech features to create audio files that you can use for narration in your videos.
 
-However, before you can create an application that uses Azure Cognitive Services - such as Text-to-Speech - you need to create an Azure Cognitive Services account.
+However, before you can create an application that uses Azure AI services like text to speech, you need to create an Azure AI services account.
 
-In the next unit, you'll complete an exercise that uses the Azure Command Line Interface (CLI) to create an Azure Cognitive Services account. However, you can also use the Azure portal, which is described in the following section.
+In the next unit, you'll complete an exercise that uses the Azure CLI to create an Azure AI services account. However, you can also use the Azure portal, which we describe in the following section.
 
-## Create an Azure Cognitive Services account using the Azure portal
+<a name='create-an-azure-ai-services-account-using-the-azure-portal'></a>
 
-1. Sign into the  [Azure portal](https://portal.azure.com/?azure-portal=true).
+## Create an Azure AI services account using the Azure portal
 
-1. On the home page, select **Create a resource**.
+The multi-service resource is listed under **Azure AI services** > **Azure AI services multi-service account** in the portal. To create a multi-service resource follow these instructions:
 
-1. When the **Create a resource** page is displayed, enter **Cognitive Services** in the search box, and then select **Cognitive Services** when it's displayed.
+1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-    [![Screenshot showing the search for Cognitive Services in the Azure portal.](../media/2-search-for-cognitive-services-small.png)](../media/2-search-for-cognitive-services.png#lightbox)
+1. Select this link to create a multi-service resource: [https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne](https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne)
 
-1. When the **Cognitive Services** page is displayed, select **Create**.
+1. On the **Create** page, provide the following information:
 
-    [![Screenshot showing the Cognitive Services page and Create button.](../media/2-create-cognitive-services-small.png)](../media/2-create-cognitive-services.png#lightbox)
+    |Project details| Description   |
+    |--|--|
+    | **Subscription** | Select one of your available Azure subscriptions. |
+    | **Resource group** | The Azure resource group that will contain your Azure AI services resource. You can create a new group or add it to a pre-existing group. |
+    | **Region** | The location of your Azure AI service instance. Different locations may introduce latency, but have no impact on the runtime availability of your resource. |
+    | **Name** | A descriptive name for your Azure AI services resource. For example, *MyAzureAIServicesResource*. |
+    | **Pricing tier** | The cost of your Azure AI services account depends on the options you choose and your usage. For more information, see the API [pricing details](https://azure.microsoft.com/pricing/details/cognitive-services/).
 
-1. When the **Create Cognitive Services** page is displayed, enter the following information:
+    :::image type="content" source="../media/2-resource-create-screen-multi.png" alt-text="Screenshot of creating a multi-service resource.":::
 
-    1. Choose your **Subscription** from the drop-down menu.
+1. Configure other settings for your resource as needed, read and accept the conditions (as applicable), and then select **Review + create**.
 
-    1. Choose a **Resource group** from the drop-down menu, or select the **Create new** link to create a new resource group.
-
-    1. Choose the **Region** that is closest to you.
-
-    1. Enter a unique name for the **Name**.
-
-    1. Choose a **Pricing tier** from the drop-down menu. (You can select the link for pricing details for the tiers.)
-
-    1. After you've reviewed the terms in the **Responsible AI Notice**, select the box to acknowledge that you've read and understood all the terms.
-
-    1. After you've entered the above information, select **Review + create**.
-
-    [![Screenshot showing the options for creating a Cognitive Services account.](../media/2-configure-cognitive-services-options-small.png)](../media/2-configure-cognitive-services-options.png#lightbox)
-
-1. If the information that you've entered looks good and you see the **Validation Passed** notification, select **Create**.
+> [!Tip]
+> If your subscription doesn't allow you to create an Azure AI services resource, you may need to enable the privilege of that [Azure resource provider](/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider) using the [Azure portal](/azure/azure-resource-manager/management/resource-providers-and-types#azure-portal), [PowerShell command](/azure/azure-resource-manager/management/resource-providers-and-types#azure-powershell) or an [Azure CLI command](/azure/azure-resource-manager/management/resource-providers-and-types#azure-cli). If you are not the subscription owner, ask the *Subscription Owner* or someone with a role of *admin* to complete the registration for you or ask for the **/register/action** privileges to be granted to your account.

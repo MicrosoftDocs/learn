@@ -4,10 +4,11 @@ title: Create job option and job trigger objects in Windows PowerShell
 metadata:
   title: Create job option and job trigger objects in Windows PowerShell
   description: "Create job option and job trigger objects in Windows PowerShell"
-  ms.date: 11/10/2022
+  ms.date: 07/03/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
+  ms.custom:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

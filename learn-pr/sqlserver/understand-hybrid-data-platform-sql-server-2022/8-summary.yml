@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 04/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

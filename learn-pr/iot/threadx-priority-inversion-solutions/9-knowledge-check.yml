@@ -7,10 +7,9 @@ metadata:
   ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
-  ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 3
 content: |
 quiz:
@@ -42,23 +41,23 @@ quiz:
         - content: 'Priority ceiling.'
           isCorrect: true
           explanation: 'Correct! Another name for preemption threshold is priority ceiling.'
-        - content: 'Preemption preventor.'
+        - content: 'Preemption preventer.'
           isCorrect: false
-          explanation: 'Incorrect. Preemption preventor is not another name for preemption threshold.'
+          explanation: "Incorrect. Preemption preventer isn't another name for preemption threshold."
         - content: 'Priority blocker.'
           isCorrect: false
-          explanation: 'Incorrect. Priority blocker is not another name for preemption threshold.'
+          explanation: "Incorrect. Priority blocker isn't another name for preemption threshold."
     - content: 'Suppose thread N has a priority of 20 and a preemption threshold of 15. Which of the following statements is true?'
       choices:
         - content: 'Thread N can preempt a thread that has a priority greater than 15.'
           isCorrect: false
           explanation: "Incorrect. In this scenario, thread N can't preempt a thread that has a priority greater than 15."
-        - content: 'Thread N can be preempted only by a thread that has a priority greater than 15.'
+        - content: 'Only a thread that has a priority greater than 15 can preempt Thread N.'
           isCorrect: true
-          explanation: 'Correct! In this scenario, thread N can be preempted only by a thread that has a priority greater than 15.'
-        - content: 'Thread N can be preempted by a thread that has a prioriy less than 14.'
+          explanation: 'Correct! In this scenario, only a thread that has a priority greater than 15 can preempt Thread N.'
+        - content: 'A thread that has a priority less than 14 can preempt Thread N.'
           isCorrect: false
-          explanation: "Incorrect. In this scenario, thread N can't be preempted by a thread that has a priority less than 14."
+          explanation: "Incorrect. In this scenario, a thread that has a priority less than 14 can't preempt Thread N."
     - content: 'Which of the following statements is true about preemption threshold?'
       choices:
         - content: 'Preemption threshold uses more overhead than priority inheritance.'

@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-form-recognizer.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to Azure Form Recognizer
+  description: Introduction to Azure AI Document Intelligence
   ms.date: 03/14/2021
   author: laujan
   ms.author: lajanuar
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!INCLUDE[](includes/1-introduction.md)]

@@ -57,15 +57,9 @@ For data classification scenarios, only local environments that use your CPU are
 
 Now that you've selected your scenario and training environment, it's time to load and prepare the data that you've collected by using Model Builder.
 
-### Download the data
-
-[Download the dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/00601/?azure-portal=true) and save it anywhere on your computer.
-
-After some time, a file with the name *ai4i2020.csv* should appear in the location that you specified.
-
 ### Prepare your data
 
-1. Open the *ai4i2020.csv* file in the text editor of your choice.
+1. Open the file in the text editor of your choice.
 1. The original column names contain special bracket characters. To prevent problems with parsing the data, remove the special characters from the column names.
 
     Original header:

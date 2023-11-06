@@ -61,7 +61,7 @@ You should see some json returned.
 
 ## Upload settings
 
-Remember, you have some settings we put in `local.settings.json`. These settings were the keys and URL for Cognitive Services. Since `local.settings.json` is local, it's never copied to production when you deploy.
+Remember, you have some settings we put in `local.settings.json`. These settings were the keys and URL for Azure AI services. Since `local.settings.json` is local, it's never copied to production when you deploy.
 
 Usually, you would need to open the Azure portal and manually add the settings in the UI, or use `func` in the Azure CLI. Since you're using Visual Studio Code, you can use the Azure Function extension and the command palette to upload your local settings!
 

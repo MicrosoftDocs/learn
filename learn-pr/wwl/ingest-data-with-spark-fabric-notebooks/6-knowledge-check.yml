@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-with-spark-fabric-notebooks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/04/2023
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the benefit of using Fabric notebooks over manual uploads for data ingestion?"
+    choices:
+    - content: "Notebooks provide an automated approach to ingestion and transformation."
+      isCorrect: true
+      explanation: "Correct. Fabric notebooks provide automation for ingestion and transformation, ensuring a smooth and systematic approach."
+    - content: "Notebooks can orchestrate the Copy Data activity and transformations."
+      isCorrect: false
+      explanation: "Incorrect. Pipelines use the Copy Data activity, but don't support transformations without a notebook or dataflow."
+    - content: "Notebooks offer a user-friendly, low-code experience for large datasets."
+      isCorrect: false
+      explanation: "Incorrect. Dataflows offer a UI experience, but they are not as performant as notebooks with large datasets."
+  - content: "What is the purpose of V-Order and Optimize Write in Delta tables?"
+    choices:
+    - content: "V-Order and Optimize Write sorts the Delta table when queried with PySpark in a Fabric Notebook."
+      isCorrect: false
+      explanation: "Incorrect. V-Order and Optimize Write sort the order and optimizing file size and count when writing to a Delta table."
+    - content: "V-Order and Optimize Write enhance Delta tables by sorting data and creating fewer, larger Parquet files."
+      isCorrect: true
+      explanation: "Correct. V-Order allows data sorting and Optimize Write creates more efficient file sizes."
+    - content: "V-Order and Optimize Write create many small csv files."
+      isCorrect: false
+      explanation: "Incorrect. Fewer, larger Parquet files are created."
+  - content: "Why consider basic data cleansing when loading data into Fabric lakehouse?"
+    choices:
+    - content: "To reduce data load size and processing time."
+      isCorrect: false
+      explanation: "Incorrect. While the data size and processing time may be reduced, that's not the goal."
+    - content: "To ensure data quality and consistency."
+      isCorrect: true
+      explanation: "Correct. Basic cleaning is done to ensure data quality and consistency before moving on to transformation and modeling steps."
+    - content: "To enforce data privacy and security measures."
+      isCorrect: false
+      explanation: "Incorrect. Basic cleaning has no direct impact on data security or privacy."

@@ -4,8 +4,8 @@ metadata:
   title: Improve account security with multifactor authentication
   description: Understand the basics of multifactor authentication, and how to use it for securing your identity.
   ms.date: 05/30/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Improve account security with multifactor authentication

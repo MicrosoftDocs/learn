@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-secure-access-pipeline-resources.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "What is the best way to secure sensitive information used in pipelines?"
+    choices:
+    - content: "Store it as plain text in environment variables."
+      isCorrect: false
+      explanation: "Incorrect. Store it as plain text in environment variables make it insecure and accessible to unauthorized users."
+    - content: "Store it as encrypted variables."
+      isCorrect: true
+      explanation: "Correct. Storing sensitive information as encrypted variables is considered the best practice as it provides an extra layer of security and encryption to the data, making it secure and inaccessible to unauthorized users."
+    - content: "Store it as plain text in pipeline YAML."
+      isCorrect: false
+      explanation: "Incorrect. Store it as plain text in pipeline YAML makes it insecure and accessible to unauthorized users."
+  - content: "What is the purpose of using Variable Groups in Azure DevOps?"
+    choices:
+    - content: "To share variables across multiple pipelines and encrypt sensitive information."
+      isCorrect: true
+      explanation: "Correct. To share variables across multiple pipelines Explanation: Variable groups are used to share variables across multiple pipelines in Azure DevOps. The sensitive information should be encrypted before storing it in pipeline variables."
+    - content: "To store sensitive information in plain text."
+      isCorrect: false
+      explanation: "Incorrect. Variable Groups have different purposes, and storing them as plain text makes them insecure and accessible to unauthorized users."
+    - content: "To encrypt sensitive information."
+      isCorrect: false
+      explanation: "Incorrect. Variable Groups can help encrypt sensitive information but has a more prominent purpose."
+  - content: "What is the purpose of Secure Files?"
+    choices:
+    - content: "To store and manage encrypted pipeline code."
+      isCorrect: false
+      explanation: "Incorrect. The Secure File's purpose isn't to store encrypted pipeline code."
+    - content: "To store and manage encrypted pipeline artifacts."
+      isCorrect: false
+      explanation: "Incorrect. The Secure File's purpose isn't to store encrypted pipeline artifacts."
+    - content: "To securely store and manage configuration and secret data."
+      isCorrect: true
+      explanation: "Correct. To securely store and manage configuration and secret data, such as certificates, private keys, and access tokens."

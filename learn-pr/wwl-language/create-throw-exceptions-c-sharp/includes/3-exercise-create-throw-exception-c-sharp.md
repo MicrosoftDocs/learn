@@ -1,7 +1,3 @@
-
-
-
-
 Developers often need to create and throw exceptions from within a method, and then catch those exceptions further down the call stack where they can be handled. Exception handling helps you to ensure the stability of your applications.
 
 In this exercise, you'll start with a sample application that includes a potential error condition inside a called method. Your updated method will `throw` an exception when it detects the issue. The exception will be handled in a `catch` block of the code that calls the method. The result is an application that provides a better user experience.
@@ -38,11 +34,9 @@ Use the following steps to load and review a sample application.
 
 1. Open the Program.cs file.
 
-1. After a few seconds, notice that a dialog box is displayed asking if you want to load the assets required for building and debugging.
+1. On the View menu, select **Command Palette**.
 
-    Visual Studio Code recognizes the C# file extension, `.cs`, and recognizes that your "ThrowExceptions101" project is missing the required assets.
-
-1. To load the required assets, select **Yes**.
+1. At the command prompt, enter **.net: g** and then select **.NET: Generate Assets for Build and Debug**.
 
 1. Replace the contents of the Program.cs file with the following code:
 

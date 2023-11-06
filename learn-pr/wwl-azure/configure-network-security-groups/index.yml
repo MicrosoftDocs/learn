@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure network security groups
 summary: Learn how to implement network security groups, and ensure network security group rules are correctly applied.
 abstract: |

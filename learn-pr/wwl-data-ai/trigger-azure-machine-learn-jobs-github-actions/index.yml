@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Trigger Azure Machine Learning jobs with GitHub Actions
 summary: Learn how to automate your machine learning workflows by using GitHub Actions.
 abstract: |

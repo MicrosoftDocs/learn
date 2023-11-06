@@ -1,29 +1,27 @@
- Now that you've set up a gateway, we can share the API by importing it into API Management, and then make it available by publishing it.
+ Now that you've set up a gateway, you're ready to import and publish an API so that partners can access inventory and product information.
 
-You're now ready to import and publish an API so that partners can access inventory and product information.
-
-Here, you'll import an API that exposes an OpenAPI endpoint. You'll test the imported API using visualization, and then publish the API.
+Here, you'll import your web API that exposes an OpenAPI endpoint. You'll test the imported API using visualization, and then publish the API.
 
  > [!NOTE]
- > This exercise uses the resources in the active sandbox together with resources that you set up in the previous exercise. 
+ > This exercise uses the resources that you set up in the previous exercise.
 
 ## Import the API
 
-The first part of the exercise is to import Northwind Shoes into an API Management gateway.
+The first part of the exercise is to import the NorthWind Shoes API into an API Management gateway.
 
 1. In the Azure portal resource menu or from the **Home** page, select **All Resources**, and then select your API Management service.
 
-1. In the API Management service menu, under **APIs**, select **APIs**. The **APIS** pane appears.
+1. In the API Management service menu, under **APIs**, select **APIs**, and then **+ Add API**.
 
 1. Under **Create from definition**, select **OpenAPI**. The **Create from OpenAPI specification** pane appears.
 
    ![Add a new API.](../media/5-import-open-api.png)
 
-1. In the OpenAPI specification, complete the following settings:
+1. In the OpenAPI specification window, complete the following settings:
  
     | Setting | Value |
     | --- | --- |
-    | OpenAPI specification | Paste the swagger JSON URL that you saved from the previous exercise. |
+    | OpenAPI specification | Paste the Swagger JSON URL that you saved from the previous exercise. |
     | Display name | Accept the default, which should be `NorthWindShoes Products`. |
     | Name | Accept the default, which should be `northwindshoes-products`. |
     | API URL suffix | Ignore this setting.|
@@ -38,11 +36,11 @@ The first part of the exercise is to import Northwind Shoes into an API Manageme
 
 The last part of the exercise is to test the API and visualize the results using two tests. First, issue a basic GET request, passing in a single parameter.
 
-1. On the API details page **apim-NorthwindShoesNNNN | APIs** pane, select the **Test** tab.
+1. On the **apim-NorthwindShoesNNNN | APIs** pane, select the NorthWindShoes Product API, and then select the **Test** tab.
 
-1. Select the first GET operation, **Find the details of the specified product**. The Console details appear.
+1. Select the first GET operation, **Find the details of the specified product**. The details appear in the test console.
 
-1. Under **Template parameters**, enter a numerical character into the **Value** field.
+1. Under **Template parameters**, enter a numerical value for the product ID parameter.
 
    :::image type="content" source="../media/5-test-with-param.png" alt-text="Test pane with product ID value highlighted." lightbox="../media/5-test-with-param.png":::
 

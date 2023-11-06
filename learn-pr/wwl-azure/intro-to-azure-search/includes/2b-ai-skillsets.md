@@ -4,7 +4,7 @@ AI processing is achieved by adding and combining skills in a skillset. A skills
 
 ### Built in skills
 
-Built-in skills are based on pre-trained models from Microsoft, which means you can't train the model using your own training data. Skills that call the Cognitive Resources APIs have a dependency on those services and are billed at the Cognitive Services pay-as-you-go price when you attach a resource. Other skills are metered by Azure Cognitive Search, or are utility skills that are available at no charge.
+Built-in skills are based on pretrained models from Microsoft, which means you can't train the model using your own training data. Skills that call the Azure AI services APIs have a dependency on those services and are billed at the Azure AI services pay-as-you-go price when you attach a resource. Other skills are metered by Azure Cognitive Search, or are utility skills that are available at no charge.
 
 Built-in skills fall into these categories:
 

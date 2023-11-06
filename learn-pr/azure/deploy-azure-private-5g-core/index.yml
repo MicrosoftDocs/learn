@@ -1,6 +1,5 @@
 ### YamlMime:Module
 uid: learn.deploy-azure-private-5g-core
-hidden: true
 metadata:
   title: Deploy an Azure Private 5G Core service
   description: "Describes Azure Private 5G Core deployment tasks, including prerequisites, deployment methods, and creating mobile network and site."
@@ -8,7 +7,7 @@ metadata:
   author: ArchanaUpadhyaya
   ms.author: archanau
   ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.service: private-5g-core
 title: Deploy an Azure Private 5G Core service
 summary: "Describes Azure Private 5G Core deployment tasks, including prerequisites, deployment methods, and creating mobile network and site."
 abstract: |

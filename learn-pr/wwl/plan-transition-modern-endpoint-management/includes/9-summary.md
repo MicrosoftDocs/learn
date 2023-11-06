@@ -1,2 +1,3 @@
 
+
 You learned that the transition to modern management is a gradual process, and organizations should determine their existing infrastructure and goals to decide what steps are necessary. Co-management is a tool that can help existing Configuration Manager customers to continue using their investment while migrating some workloads to Microsoft Intune. The goal doesn't have to be moving all workloads to cloud-based solutions, and admins should choose the option that suits them best. Along with transitioning client management methods, administrators should also consider implementing solutions like Known Folder Move to migrate user data files to the cloud.

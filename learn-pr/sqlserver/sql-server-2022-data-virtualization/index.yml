@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.sql-server-2022-data-virtualization
+metadata:
+  title: Introduction to SQL Server 2022 data virtualization
+  description: "A Training module that introduces the data virtualization concepts in SQL Server 2022, and the benefits of PolyBase."
+  ms.date: 05/23/2023
+  author: HugoMSFT
+  ms.author: hudequei
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+title: Introduction to SQL Server 2022 data virtualization
+summary: "Data virtualization and enhanced PolyBase features introduced in SQL Server 2022."
+abstract: |
+  By the end of this module, you'll be able to:
+
+    - Understand the benefits and principles of data virtualization
+    - Know what PolyBase is, and how you can leverage its capabilities
+    - Be familiar with object storage solutions
+    - Install and configure PolyBase on SQL Server 2022
+    - Access external data on SQL Server 2022 using PolyBase
+prerequisites: |
+  - Basic working knowledge of SQL Server
+  - Fundamental knowledge of the T-SQL language and be able to execute queries in SQL Server Management Studio on a SQL Server 2022 instance
+
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - database-administrator
+  - data-engineer
+  - administrator
+products:
+  - sql-server
+subjects:
+  - database
+units:
+- learn.sql-server-2022-data-virtualization.introduction
+- learn.sql-server-2022-data-virtualization.polybase
+- learn.sql-server-2022-data-virtualization.polybase-credentials-data-sources
+- learn.sql-server-2022-data-virtualization.exercise-query-parquet-file
+- learn.sql-server-2022-data-virtualization.exercise-connect-azure-sql-database-use-polybase
+- learn.sql-server-2022-data-virtualization.create-external-table-as-select
+- learn.sql-server-2022-data-virtualization.exercise-create-external-table-as-select
+- learn.sql-server-2022-data-virtualization.summary
+badge:
+  uid: learn.sql-server-2022-data-virtualization.badge

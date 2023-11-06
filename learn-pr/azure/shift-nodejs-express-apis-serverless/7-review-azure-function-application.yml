@@ -1,12 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.shift-express-api-azure-functions.9-solution
 metadata:
-  title: Review your Azure Functions application
-  description: Review your Azure Functions application
+  title: Review the Azure Functions application
+  description: Review the Azure Functions application
   ms.date: 04/10/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure
 title: Review your Azure Functions application
 durationInMinutes: 3

@@ -1,15 +1,17 @@
 ![Tech logo for U W P and W P F.](../media/tech-all.png)
 
-In this unit, we build on the ideas from the previous two units. Over the course of this lesson, we build a specialized calculator that accepts user input through a variety of ways:
-* Text input
-* Buttons
-* Sliders
-* Specialized controls like `DatePicker`
+In this unit, we build on the ideas from the previous two units. Over the course of this lesson, we build a specialized calculator that accepts user input through various ways:
+
+- Text input
+- Buttons
+- Sliders
+- Specialized controls like `DatePicker`
 
 This app uses a combination of the most popular layout controls. It shows you how to take these steps:
-* Accept user input through button selections and text entry.
-* Act on this input.
-* Display the calculated results back to the user.
+
+- Accept user input through button selections and text entry.
+- Act on this input.
+- Display the calculated results back to the user.
 
 In this unit, we learn how to do these things:
 
@@ -29,39 +31,40 @@ Let's get started.
 
 With Visual Studio open, create a UWP C# project. Give the project a meaningful name for this lesson. An example is **UserInput.Uwp**.
 
-![Create the project.](../media/new-project-uwp.png)
+:::image type="content" source="../media/1-create-new-project-uwp.png" alt-text="Screenshot that shows the Configure your new project window with red boxes around the Blank App (Universal Windows) project type, the Project name text box, and the Create button.":::
 
 #### Input controls
 
 A wide variety of controls are built to accept user input. In this unit, we use a few of the most common controls to get basic information from a user. This information is text, numeric, date, and true or false Boolean values.
 
-* `Button`. The `Button` is one of the most popular and natural ways that a user interacts with an application. When it's selected, it triggers a **Click** event that you can use to run logic.
-* `TextBox`. By using this control, the user can enter text information. It has a **Text** property that you can read anytime. Or you can subscribe to the **TextChanged** event to get character-by-character changes.
-* `Slider`. By using this control, the user can slide a handle to set a **Value** between a **Minimum** and **Maximum** range of numbers with a preset precision. For example, a volume slider sets a value between 0 and 100 percent at 1 percent increments.
-* `DatePicker`. As the name suggests, by using this control, the user can enter a date value. With many `DatePicker` controls, the user can select the date from a pop-up menu or enter a value by using text.
-* `RadioButton`. This control is like a `CheckBox`. But it's round in appearance and can be grouped with other `RadioButton`s for exclusive selection.
+- `Button`. The `Button` is one of the most popular and natural ways that a user interacts with an application. When it's selected, it triggers a **Click** event that you can use to run logic.
+- `TextBox`. With this control, the user can enter text information. It has a **Text** property that you can read anytime. Or you can subscribe to the **TextChanged** event to get character-by-character changes.
+- `Slider`. With this control, the user can slide a handle to set a **Value** between a **Minimum** and **Maximum** range of numbers with a preset precision. For example, a volume slider sets a value between 0 and 100 percent at 1 percent increments.
+- `DatePicker`. As the name suggests, by using this control, the user can enter a date value. With many `DatePicker` controls, the user can select the date from a pop-up menu or enter a value by using text.
+- `RadioButton`. This control is like a `CheckBox`. But it's round in appearance and can be grouped with other `RadioButton`s for exclusive selection.
 
 In this application, we set up a user interface with the following requirements:
 
-* The user can enter numeric values by using both text and numbers in a `TextBox`.
-* The user can enter a second number by using a `Slider`.
-* Select a `RadioButton` to set an arithmetic operation. Examples are add and subtract.
-* Select a `Button` to run the arithmetic logic and display the output.
-* Optionally, the user can add a time stamp to the output with a `DatePicker`.
+- The user can enter numeric values by using both text and numbers in a `TextBox`.
+- The user can enter a second number by using a `Slider`.
+- Select a `RadioButton` to set an arithmetic operation. Examples are add and subtract.
+- Select a `Button` to run the arithmetic logic and display the output.
+- Optionally, the user can add a time stamp to the output with a `DatePicker`.
 
-Now you know the controls we can use and what they'll be used for. Let's build the app.
+Now you know the controls we can use and what they're be used for. Let's build the app.
 
 Open **MainPage.xaml** and create a `StackPanel` with centered **HorizontalAlignment** and **VerticalAlignment**:
 
 ```xml
-<Page x:Class="UserInput.Uwp.MainPage"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      mc:Ignorable="d"
-      RequestedTheme="Light"
-      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<Page
+    x:Class="UserInput.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserInput"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <StackPanel x:Name="CalculationGrid"
@@ -76,14 +79,15 @@ Open **MainPage.xaml** and create a `StackPanel` with centered **HorizontalAlign
 The first child of the `StackPanel` is our first input control, the `TextBox`. Let's start by setting the **FontFamily**, **TextAlignment**, **HorizontalAlignment**, **Watermark**, and **Width**:
 
 ```xml
-<Page x:Class="UserInput.Uwp.MainPage"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      mc:Ignorable="d"
-      RequestedTheme="Light"
-      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<Page
+    x:Class="UserInput.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserInput"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <StackPanel x:Name="CalculationGrid"
@@ -119,23 +123,13 @@ Add the **FirstNumberBox_OnTextChanged** event handler to the `TextBox`'s **Text
          TextChanged="FirstNumberBox_OnTextChanged" />
 ```
 
-> [!IMPORTANT]
-> The event is **TextChanged**, and the event handler is **FirstNumberBox_OnTextChanged**. Notice that the event handler text is red, instead of blue like the rest of the values. That's because there's an error. The event is part of the `TextBox`, but the event handler doesn't exist yet.
+Next, we use a Visual Studio feature to automatically add the **FirstNumberBox_OnTextChanged** event handler to the code-behind file and fix the error.
 
-Next, we use a Visual Studio feature to automatically add the missing **FirstNumberBox_OnTextChanged** event handler to the code-behind file and fix the error.
+Put your cursor in the middle of the **FirstNumberBox_OnTextChanged** text. Go to the **Properties** window, and select the lightning icon. You see a list of event handlers. Scroll to **TextChanged**, and then double-click the text in the text box.
 
-Put your cursor in the middle of the **FirstNumberBox_OnTextChanged** text. This action causes a red light bulb to appear in the left margin of the code editor. Select the light bulb to expand a list of actions you can take. And select the **Create event handler** menu item.
+:::image type="content" source="../media/3-properties-event-handler.png" alt-text="Screenshot that shows the Properties window with a red box around the TextChanged text box.":::
 
-![TextChanged light bulb.](../media/xaml-create-textchanged-eventhandler.png)
-
-At this point, Visual Studio opens **MainPage.xaml.cs** and automatically inserts the missing code. **MainPage.xaml.cs** is also known as the **code-behind file**. At first, you see a box around the event handler name in case you want to rename it. Select the **Tab** or **Enter** key to finish the operation.
-
-After the autocomplete finishes, you see this image:
-
-![TextChanged added.](../media/xaml-textchanged-eventhandler.png)
-
-> [!NOTE]
-> You can delete the boilerplate `throw new NotImplementedException` because we write the event handler's code now. Otherwise, leave it there. This boilerplate helps prevent bugs. It intentionally causes a **Not Implemented** error to let you know that you forgot to add important logic.
+Visual Studio opens **MainPage.xaml.cs** and automatically inserts the missing code. **MainPage.xaml.cs** is also known as the **code-behind file**.
 
 The `MainPage` class now looks like this code:
 
@@ -144,13 +138,13 @@ using System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-namespace UserInput.Uwp
+namespace UserInput
 {
     public sealed partial class MainPage : Page
     {
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void FirstNumberBox_OnTextChanged(object sender, TextChangedEventArgs e)
@@ -160,8 +154,6 @@ namespace UserInput.Uwp
     }
 }
 ```
-
-Go back to **MainPage.xaml**. You see that the red text has now turned blue, which indicates that the event handler is identified.
 
 Any code you put inside the event handler is run every time the user changes the text in the `TextBox`. We use the `TextBox` to get the user-entered text and convert it to a number we can use for a math operation.
 
@@ -181,7 +173,7 @@ public sealed partial class MainPage : Page
 
 	public MainPage()
 	{
-		InitializeComponent();
+		this.InitializeComponent();
 	}
 
 	private void FirstNumberBox_OnTextChanged(object sender, TextChangedEventArgs e)
@@ -204,7 +196,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 
-namespace UserInput.Uwp
+namespace UserInput
 {
     public sealed partial class MainPage : Page
     {
@@ -213,7 +205,7 @@ namespace UserInput.Uwp
 
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void FirstNumberBox_OnTextChanged(object sender, TextChangedEventArgs e)
@@ -241,7 +233,7 @@ namespace UserInput.Uwp
 }
 ```
 
-> [!Important]
+> [!IMPORTANT]
 > Notice the new `using` statements at the top of the file. They do the same thing that **xmlns** does for XAML. With these statements, the file you're working in can access code in the namespace. In the preceding code snippet, by using the `System.Linq` namespace, we can use the `LastOrDefault()` method.
 
 Before we move forward, let's add another `double SecondNumber` property to hold the value of a second number. We use it for a math operation later in this lesson:
@@ -254,7 +246,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 
-namespace UserInput.Uwp
+namespace UserInput
 {
     public sealed partial class MainPage : Page
     {
@@ -266,7 +258,7 @@ namespace UserInput.Uwp
 
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void FirstNumberBox_OnTextChanged(object sender, TextChangedEventArgs e)
@@ -307,7 +299,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 
-namespace UserInput.Uwp
+namespace UserInput
 {
     public sealed partial class MainPage : Page
     {
@@ -322,7 +314,7 @@ namespace UserInput.Uwp
 
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void FirstNumberBox_OnTextChanged(object sender, TextChangedEventArgs e)
@@ -350,7 +342,7 @@ namespace UserInput.Uwp
 }
 ```
 
-`Func<double, double, double>` might look complicated if you're not used to C#. It means *I am a function that takes two numbers of type `double` and gives back one number of type `double`*. This function is perfect for our math operations.
+`Func<double, double, double>` might look complicated if you're not used to C#. It means *I'm a function that takes two numbers of type `double` and gives back one number of type `double`*. This function is perfect for our math operations.
 
 To help visualize, let's talk about the `Add` operation. To add two numbers together, define the method:
 
@@ -379,7 +371,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 
-namespace UserInput.Uwp
+namespace UserInput
 {
     public sealed partial class MainPage : Page
     {
@@ -394,7 +386,7 @@ namespace UserInput.Uwp
 
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private double Add(double a, double b)
@@ -451,14 +443,15 @@ With the math operations defined, we can add UI elements that the user can selec
 Let's add a `StackPanel` with four `RadioButton` elements. All have the **GroupName** of *MathOperator*:
 
 ```xml
-<Page x:Class="UserInput.Uwp.MainPage"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      mc:Ignorable="d"
-      RequestedTheme="Light"
-      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<Page
+    x:Class="UserInput.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserInput"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <StackPanel x:Name="CalculationGrid"
@@ -508,7 +501,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 
-namespace UserInput.Uwp
+namespace UserInput
 {
     public sealed partial class MainPage : Page
     {
@@ -523,7 +516,7 @@ namespace UserInput.Uwp
 
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private double Add(double a, double b)
@@ -615,14 +608,15 @@ To get the second number's value, we use another `TextBox` like we did for the f
 Add the **SecondNumberTextBox** and **SecondNumberSlider** just underneath the `RadioButton`'s `StackPanel`:
 
 ```xml
-<Page x:Class="UserInput.Uwp.MainPage"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      mc:Ignorable="d"
-      RequestedTheme="Light"
-      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<Page
+    x:Class="UserInput.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserInput"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <StackPanel x:Name="CalculationGrid"
@@ -685,7 +679,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 
-namespace UserInput.Uwp
+namespace UserInput
 {
     public sealed partial class MainPage : Page
     {
@@ -700,7 +694,7 @@ namespace UserInput.Uwp
 
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private double Add(double a, double b)
@@ -813,19 +807,20 @@ The `Slider` control's **ValueChanged** event passes the user's selection inside
 
 You usually set `SecondNumber` directly with **e.NewValue**. By doing it this way, you can prevent a user from interacting with parts of your UI. But it still provides visual feedback.
 
-Finally, let's add the ability to append a date stamp to the calculation output. By using the `DatePicker` control, you can accept date values from the user. You don't have to parse text from a `TextBox` into a correct `DateTime` object.
+Finally, let's add the ability to append a date stamp to the calculation output. When you use the `DatePicker` control, you can accept date values from the user. You don't have to parse text from a `TextBox` into a correct `DateTime` object.
 
-Add the following **CalculationDatePicker** `DatePicker` and **IncludeDateCheckBox** `CheckBox` to the XAML. By using the `CheckBox`, the user can select whether or not the output gets a date stamp:
+Add the following **CalculationDatePicker** `DatePicker` and **IncludeDateCheckBox** `CheckBox` to the XAML. When you use the `CheckBox`, the user can select whether or not the output gets a date stamp:
 
 ```xml
-<Page x:Class="UserInput.Uwp.MainPage"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      mc:Ignorable="d"
-      RequestedTheme="Light"
-      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<Page
+    x:Class="UserInput.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserInput"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <StackPanel x:Name="CalculationGrid"
@@ -899,7 +894,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 
-namespace UserInput.Uwp
+namespace UserInput
 {
     public sealed partial class MainPage : Page
     {
@@ -914,7 +909,7 @@ namespace UserInput.Uwp
 
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private double Add(double a, double b)
@@ -1047,16 +1042,16 @@ Normally, you can perform the calculations whenever the input changes on any of 
 
 Add the final `Button` and **ResultsTextBlock** `TextBlock` controls underneath the `DatePicker`:
 
-
 ```xml
-<Page x:Class="UserInput.Uwp.MainPage"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      mc:Ignorable="d"
-      RequestedTheme="Light"
-      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<Page
+    x:Class="UserInput.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserInput"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <StackPanel x:Name="CalculationGrid"
@@ -1143,7 +1138,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 
-namespace UserInput.Uwp
+namespace UserInput
 {
     public sealed partial class MainPage : Page
     {
@@ -1158,7 +1153,7 @@ namespace UserInput.Uwp
 
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private double Add(double a, double b)
@@ -1316,11 +1311,11 @@ namespace UserInput.Uwp
 
 The code comments explain the details. But let's briefly walk through what's going on at a high level:
 
-1. First, we make sure the user's input is valid and won't crash the app: `if (FirstNumber == null || SecondNumber == null)` and `if (SecondNumber == 0 && SelectedMathFunction == Divide)`.
+1. First, we make sure the user's input is valid and doesn't crash the app: `if (FirstNumber == null || SecondNumber == null)` and `if (SecondNumber == 0 && SelectedMathFunction == Divide)`.
 
 2. To perform the calculation, we invoke the **SelectedMathFunction** function: `double result = SelectedMathFunction((double)FirstNumber, (double)SecondNumber)`.
 
-3. Finally, we check if the user wants a date stamp and append the date to the results: `IncludeDateCheckBox.IsChecked == true)`.
+3. Finally, we check if the user wants a date stamp and then append the date to the results: `IncludeDateCheckBox.IsChecked == true)`.
 
 The coding is done. Now let's test your application.
 
@@ -1328,7 +1323,7 @@ The coding is done. Now let's test your application.
 
 Let's deploy the application and try it out. Select F5 to build, deploy, and start debugging. You're presented with the following UI:
 
-![Start the UI.](../media/uwp-user-input-runtime-start.png)
+:::image type="content" source="../media/3-complete-app-no-entry-uwp.png" alt-text="Screenshot that shows the finished app UI with nothing selected and all text boxes empty.":::
 
 To try the app, take these steps:
 
@@ -1340,7 +1335,7 @@ To try the app, take these steps:
 
 The finished result looks like this image:
 
-![Calculation results.](../media/uwp-user-input-runtime-finished.png)
+:::image type="content" source="../media/3-complete-app-uwp.png" alt-text="Screenshot that shows the finished app with numbered red arrows pointing to selections in the app.":::
 
 ::: zone-end
 
@@ -1352,32 +1347,33 @@ The finished result looks like this image:
 
 With Visual Studio open, create a WPF C# project. Give the project a meaningful name for this lesson. An example is **UserInput.Wpf**.
 
-![Create the project.](../media/new-project-wpf.png)
+:::image type="content" source="../media/1-create-new-project-wpf.png" alt-text="Screenshot that shows the Configure your new project window with red boxes around the WPF Application project type, the Project name text box, and the Next button.":::
 
 #### Input controls
 
-A wide variety of controls are specifically built to accept user input. In this unit, we use a few of the most common controls to get basic information from a user. This information is text, numeric, date, and true or false Boolean values.
+A wide variety of controls are built to accept user input. In this unit, we use a few of the most common controls to get basic information from a user. This information is text, numeric, date, and true or false Boolean values.
 
-* `Button`. The `Button` is one of the most popular and natural ways that a user interacts with an application. When it's selected, it triggers a **Click** event you can use to run logic.
-* `TextBox`. By using this control, the user can enter text information. You can read its **Text** property anytime. Or you can subscribe to the **TextChanged** event to get character-by-character changes.
-* `Slider`. By using this control, the user can slide a handle to set a **Value** between a **Minimum** and **Maximum** range of numbers with a preset precision. For example, a volume slider sets a value between 0 and 100 percent at 1 percent increments.
-* `DatePicker`. As the name suggests, by using this control, the user can enter a date value. With many `DatePicker` controls, the user can select the date from a pop-up menu or enter a value by using text.
-* `RadioButton`. This control is similar to a `CheckBox`. But it's round in appearance and can be grouped with other `RadioButton`s for exclusive selection.
+- `Button`. The `Button` is one of the most popular and natural ways that a user interacts with an application. When it's selected, it triggers a **Click** event you can use to run logic.
+- `TextBox`. with this control, the user can enter text information. You can read its **Text** property anytime. Or you can subscribe to the **TextChanged** event to get character-by-character changes.
+- `Slider`. with this control, the user can slide a handle to set a **Value** between a **Minimum** and **Maximum** range of numbers with a preset precision. For example, a volume slider sets a value between 0 and 100 percent at 1 percent increments.
+- `DatePicker`. As the name suggests, by using this control, the user can enter a date value. With many `DatePicker` controls, the user can select the date from a pop-up menu or enter a value by using text.
+- `RadioButton`. This control is similar to a `CheckBox`. But it's round in appearance and can be grouped with other `RadioButton`s for exclusive selection.
 
 In this application, we set up a user interface with the following requirements:
 
-* The user can enter numeric values by using both text and numbers in a `TextBox`.
-* The user can enter a second number by using a `Slider`.
-* Select a `RadioButton` to set an arithmetic operation. Examples are add and subtract.
-* Select a `Button` to run the arithmetic logic and display the output.
-5. Optionally, the user can add a time stamp to the output with a `DatePicker`.
+- The user can enter numeric values by using both text and numbers in a `TextBox`.
+- The user can enter a second number by using a `Slider`.
+- Select a `RadioButton` to set an arithmetic operation. Examples are add and subtract.
+- Select a `Button` to run the arithmetic logic and display the output.
+
+Optionally, the user can add a time stamp to the output with a `DatePicker`.
 
 Now you know the controls we can use and what they're used for. Let's build the app.
 
 Open **MainWindow.xaml** and create a `StackPanel` with centered **HorizontalAlignment** and **VerticalAlignment**:
 
 ```xml
-<Window x:Class="UserInput.Wpf.MainWindow"
+<Window x:Class="UserInput.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -1400,7 +1396,7 @@ Open **MainWindow.xaml** and create a `StackPanel` with centered **HorizontalAli
 The first child of the `StackPanel` is our first input control, the `TextBox`. Set the **FontFamily**, **TextAlignment**, **HorizontalAlignment**, **Watermark**, and **Width**:
 
 ```xml
-<Window x:Class="UserInput.Wpf.MainWindow"
+<Window x:Class="UserInput.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -1429,35 +1425,13 @@ The first child of the `StackPanel` is our first input control, the `TextBox`. S
 
 Next, we do something we haven't done yet in this module. We subscribe to an **event** and use an **event handler**.
 
-Add the **FirstNumberBox_OnTextChanged** event handler to the `TextBox`'s **TextChanged** event:
+We use a Visual Studio feature to automatically add the missing **FirstNumberBox_OnTextChanged** event handler to the code-behind file and fix the error.
 
-```xml
-<TextBox x:Name="FirstNumberBox"
-         PlaceholderText="enter first number"
-         FontFamily="Consolas"
-         TextAlignment="Center"
-         HorizontalAlignment="Center"
-         Width="220"
-         TextChanged="FirstNumberBox_OnTextChanged" />
-```
+Put your cursor in the middle of the **FirstNumberBox_OnTextChanged** text. Go to the **Properties** window, and select the lightning icon. You see a list of event handlers. Scroll to **TextChanged**, and then double-click the text in the text box.
 
-> [!IMPORTANT]
-> The event is **TextChanged**, and the event handler is **FirstNumberBox_OnTextChanged**. Notice that the event handler text is red, instead of blue like the rest of the values. That's because there's an error. The event is part of the `TextBox`. But the event handler doesn't exist yet.
+:::image type="content" source="../media/3-properties-event-handler.png" alt-text="Screenshot that shows the Properties window with a red box around the TextChanged text box.":::
 
-Next, we use a Visual Studio feature to automatically add the missing **FirstNumberBox_OnTextChanged** event handler to the code-behind file and fix the error.
-
-Put your cursor in the middle of the **FirstNumberBox_OnTextChanged** text. A red light bulb appears in the left margin of the code editor. Select the light bulb to expand a list of actions you can take. Finally, select the **Create event handler** menu item.
-
-![TextChanged light bulb.](../media/xaml-create-textchanged-eventhandler.png)
-
-At this point, Visual Studio opens **MainWindow.xaml.cs** and automatically inserts the missing code. **MainWindow.xaml.cs** is also called the **code-behind file**. First, you see a box around the event handler name in case you want to rename it. Use the **Tab** or **Enter** key to finish the operation.
-
-You see this image after the autocomplete finishes:
-
-![TextChanged added.](../media/xaml-textchanged-eventhandler.png)
-
-> [!NOTE]
-> You can delete the boilerplate `throw new NotImplementedException` because we write the event handler's code now. Otherwise, leave it there. This boilerplate helps prevent bugs. It intentionally causes a **Not Implemented** error to let you know that you forgot to add important logic.
+At this point, Visual Studio opens **MainWindow.xaml.cs** and automatically inserts the missing code. **MainWindow.xaml.cs** is also called the **code-behind file**.
 
 Now the `MainWindow` class looks like this code:
 
@@ -1466,7 +1440,7 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace UserInput.Wpf
+namespace UserInput
 {
     public partial class MainWindow : Window
     {
@@ -1483,7 +1457,7 @@ namespace UserInput.Wpf
 }
 ```
 
-Go back to **MainWindow.xaml**. The red text has turned blue, which indicates that the event handler is identified.
+Go back to **MainWindow.xaml**.
 
 Any code you put inside the event handler runs every time the user changes the text in the `TextBox`. We use it to get the user-entered text and convert it to a number that we can use for a math operation.
 
@@ -1497,7 +1471,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace UserInput.Wpf
+namespace UserInput
 {
     public partial class MainWindow : Window
     {
@@ -1528,7 +1502,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace UserInput.Wpf
+namespace UserInput
 {
     public partial class MainWindow : Window
     {
@@ -1566,7 +1540,7 @@ namespace UserInput.Wpf
 ```
 
 > [!IMPORTANT]
-> Notice the new `using` statements at the top of the file. They do the same thing that **xmlns** does for XAML. By using these statements, the file you're working in can access to code in the namespace. In the preceding code snippet, by using the `System.Linq` namespace, we can use the `LastOrDefault()` method.
+> Notice the new `using` statements at the top of the file. They do the same thing that **xmlns** does for XAML. With these statements, the file you're working in can access to code in the namespace. In the preceding code snippet, by using the `System.Linq` namespace, we can use the `LastOrDefault()` method.
 
 Before we move forward, let's add a `double SecondNumber` property to hold the value of a second number. We use it for a later math operation:
 
@@ -1576,7 +1550,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace UserInput.Wpf
+namespace UserInput
 {
     public partial class MainWindow : Window
     {
@@ -1627,7 +1601,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace UserInput.Wpf
+namespace UserInput
 {
     public partial class MainWindow : Window
     {
@@ -1670,7 +1644,7 @@ namespace UserInput.Wpf
 }
 ```
 
-`Func<double, double, double>` might look complicated if you're not used to C#. It means *I am a function that takes two numbers of type `double` and gives back one number of type `double`*. This function is perfect for our math operations.
+`Func<double, double, double>` might look complicated if you're not used to C#. It means *I'm a function that takes two numbers of type `double` and gives back one number of type `double`*. This function is perfect for our math operations.
 
 To help visualize, let's talk about the `Add` operation. To add two numbers together, define the method:
 
@@ -1697,7 +1671,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace UserInput.Wpf
+namespace UserInput
 {
     public partial class MainWindow : Window
     {
@@ -1769,7 +1743,7 @@ With the math operations defined, we can add UI elements that the user can selec
 Let's add a `StackPanel` with four `RadioButton` elements. All have the **GroupName** of **MathOperator**:
 
 ```xml
-<Window x:Class="UserInput.Wpf.MainWindow"
+<Window x:Class="UserInput.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -1823,7 +1797,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace UserInput.Wpf
+namespace UserInput
 {
     public partial class MainWindow : Window
     {
@@ -1930,7 +1904,7 @@ To get the second number's value, we use another `TextBox` like we did for the f
 Add the **SecondNumberTextBox** and **SecondNumberSlider** just underneath the `RadioButton`'s `StackPanel`:
 
 ```xml
-<Window x:Class="UserInput.Wpf.MainWindow"
+<Window x:Class="UserInput.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -2004,7 +1978,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace UserInput.Wpf
+namespace UserInput
 {
     public partial class MainWindow : Window
     {
@@ -2131,12 +2105,12 @@ The `Slider` control's **ValueChanged** event passes the user's selection inside
 
 You usually set `SecondNumber` directly with **e.NewValue**. By doing it this way, you can prevent a user from interacting with parts of your UI. But it still provides visual feedback.
 
-Finally, let's add the ability to append a date stamp to the calculation output. By using the `DatePicker` control, you can accept date values from the user. You don't have to parse text from a `TextBox` into a correct `DateTime` object.
+Finally, let's add the ability to append a date stamp to the calculation output. When you use the `DatePicker` control, you can accept date values from the user. You don't have to parse text from a `TextBox` into a correct `DateTime` object.
 
-Add the following **CalculationDatePicker** `DatePicker` and **IncludeDateCheckBox** `CheckBox` to the XAML. By using the `CheckBox`, the user can select whether or not the output gets a date stamp:
+Add the following **CalculationDatePicker** `DatePicker` and **IncludeDateCheckBox** `CheckBox` to the XAML. When you use the `CheckBox`, the user can select whether or not the output gets a date stamp:
 
 ```xml
-<Window x:Class="UserInput.Wpf.MainWindow"
+<Window x:Class="UserInput.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -2221,7 +2195,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace UserInput.Wpf
+namespace UserInput
 {
     public partial class MainWindow : Window
     {
@@ -2363,13 +2337,13 @@ Now let's perform the calculations.
 
 You usually perform the calculations whenever the input changes on any of the controls. In this case, we keep things simple and use the following controls:
 
-* A `Button` with a **Click** event handler.
-* A `TextBlock` to show the results.
+- A `Button` with a **Click** event handler.
+- A `TextBlock` to show the results.
 
 Add the final `Button` and **ResultsTextBlock** `TextBlock` controls underneath the `DatePicker`:
 
 ```xml
-<Window x:Class="UserInput.Wpf.MainWindow"
+<Window x:Class="UserInput.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -2467,7 +2441,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace UserInput.Wpf
+namespace UserInput
 {
     public partial class MainWindow : Window
     {
@@ -2639,11 +2613,11 @@ namespace UserInput.Wpf
 
 The code comments explain the details. But let's briefly walk through what's going on at a high level:
 
-1. First, we make sure the user's input is valid and won't crash the app: `if (FirstNumber == null || SecondNumber == null)` and `if (SecondNumber == 0 && SelectedMathFunction == Divide)`.
+1. First, we make sure the user's input is valid and doesn't crash the app: `if (FirstNumber == null || SecondNumber == null)` and `if (SecondNumber == 0 && SelectedMathFunction == Divide)`.
 
 2. We invoke the **SelectedMathFunction** function to perform the calculation: `double result = SelectedMathFunction((double)FirstNumber, (double)SecondNumber)`.
 
-3. Finally, we check if the user wants a date stamp and append the date to the results: `(IncludeDateCheckBox.IsChecked == true)`.
+3. Finally, we check if the user wants a date stamp and then append the date to the results: `(IncludeDateCheckBox.IsChecked == true)`.
 
 The coding is done. Now it's time to test your application.
 
@@ -2651,7 +2625,7 @@ The coding is done. Now it's time to test your application.
 
 Let's deploy the application and try it out. Select F5 to build, deploy, and start debugging. You're presented with the following UI:
 
-![Start UI.](../media/wpf-user-input-runtime-start.png)
+:::image type="content" source="../media/3-complete-app-no-entry-wpf.png" alt-text="Screenshot that shows the finished WPF app UI with nothing selected and all of the text boxes empty.":::
 
 To try the app, take the following steps:
 
@@ -2663,17 +2637,18 @@ To try the app, take the following steps:
 
 The finished result looks like the following image:
 
-![Calculation results.](../media/wpf-user-input-runtime-finished.png)
+:::image type="content" source="../media/3-complete-app-wpf.png" alt-text="Screenshot that shows the finished WFP app with numbered red arrows pointing to selections in the app.":::
 
 ::: zone-end
 
 ### Summary
 
 You learned how to do these things:
-* Lay out a UI with input controls.
-* Use events and event handlers.
-* Work on values inputted by a user. 
+
+- Lay out a UI with input controls.
+- Use events and event handlers.
+- Work on values inputted by a user.
 
 These steps form the basic building blocks of the UI of any complex Windows app you might build.
 
-You can walk through this process in the other application framework. UWP and WPF share a lot of features, which include using the same markup and coding languages. So you can reuse most of what you learned and see which one you prefer to use.
+You can walk through this process in the other application framework. UWP and WPF share many features, which include using the same markup and coding languages. So you can reuse most of what you learned and see which one you prefer to use.

@@ -5,12 +5,14 @@ metadata:
   unitType: exercise
   title: Exercise - Work with keyword arguments
   description: Use keyword arguments to work with variable amounts of input. Identify variable names from function inputs to work with assigned values.
-  ms.date: 12/07/2021
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 3
 sandbox: true
 notebook: notebooks/7-exercise-keyword-arguments.ipynb

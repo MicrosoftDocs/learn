@@ -11,7 +11,8 @@ The following video shows you how set up your on-premises server to work with Az
 1. If you closed your Remote Desktop connection, follow these steps to connect to the virtual machine (VM):
     1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
     1. Go to **Virtual machines** > **FileServerLocal**.
-    1. Select **Connect** > **Download RDP File**, and then open the RDP file.
+    1. Select **Connect** and then select **Native RDP**.
+    1. Select **Download RDP File**, and then open the RDP file.
     1. In the **Windows Security** window, select **More choices** > **Use a different account**.
     1. Enter the username **learnadmin** and the password you used when you created the VM.
 
@@ -21,21 +22,29 @@ The following video shows you how set up your on-premises server to work with Az
 
     ![Screenshot that shows the On button for IE Enhanced Security Configuration.](../media/8-local-server-ie-security-config.png)
 
-1. Select **Off** for **Administrators** and **Users**.
+1. Select **Off** for **Administrators** and **Users**, and then select **OK**.
 
 ### Install Azure File Sync agent
 
 1. From the toolbar in the VM, open Internet Explorer.
 
+1. Go to https://www.microsoft.com/edge and select **Accept and download**.
+
+1. Select **Run**. Wait for Microsoft Edge to install.
+
+1. Select **Start without your data** and then **Continue without this data**.
+
+1. Select **Confirm and continue** and then **Confirm and start browsing**.
+
 1. Open the Microsoft Download Center page for Azure File Sync by going to https://go.microsoft.com/fwlink/?linkid=858257.
 
 1. Select **Download**.
 
-1. Select **StorageSyncAgent_WS2019.msi**, then select **Next**.
+1. Select **StorageSyncAgent_WS2019.msi**, then select **Download**.
 
-1. Allow the pop-up and select **Run**.
+1. When the download is complete, run the installer.
 
-1. In **Storage Sync Agent Setup**, accept the defaults to complete the setup.
+1. Go through the **Storage Sync Agent Setup Wizard** and accept the defaults to install the Storage Sync Agent and complete setup.
 
 1. The agent automatically runs and shows the **Azure File Sync - Agent Update** window. Complete any updates that are necessary.
 
@@ -65,9 +74,9 @@ The following video shows you how set up your on-premises server to work with Az
 
 1. On your local computer, sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Go to the CADFiles sync group you created earlier. Select **All resources** > **CADSyncService** > **CADFiles**. Your **CADFiles** pane for your *Sync group* appears.
+1. Go to the CADFiles sync group you created earlier by going to **Storage Sync Services** > **CADSyncService** > **CADFiles**. Your **CADFiles** pane for your *Sync group* appears.
 
-1. In the top menu bar, select **Add server endpoint**.
+1. Select **+ Add server endpoint**.
 
 1. Enter the following values for each setting.
 

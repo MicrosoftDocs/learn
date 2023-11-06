@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/11/2022
+  ms.date: 07/25/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -17,22 +16,22 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How does backup to URL in SQL Server or Azure Managed Instance store the backup file?"
+  - content: "How does back up to URL in SQL Server or Azure SQL Managed Instance store the backup file?"
     choices:
     - content: "As a URL"
       isCorrect: false
       explanation: "Incorrect. The URL just defines where the data is stored but not the storage."
     - content: "As a blob"
       isCorrect: true
-      explanation: "Correct. Backup to URL requires an Azure storage account and uses the Azure blob storage service."
+      explanation: "Correct. Back up to URL requires an Azure storage account and uses the Azure blob storage service."
     - content: "As a pointer"
       isCorrect: false
       explanation: "Incorrect. A pointer isn't used in the backup process."
   - content: "What is the default redundancy option for Azure SQL databases?"
     choices:
-    - content: "Locally-redundant backup storage (LRS)"
+    - content: "Locally redundant backup storage (LRS)"
       isCorrect: false
-      explanation: "Incorrect. Locally-redundant backup storage isn't the default redundancy option for Azure SQL databases."
+      explanation: "Incorrect. Locally redundant backup storage isn't the default redundancy option for Azure SQL databases."
     - content: "Zone-redundant backup storage (ZRS)"
       isCorrect: false
       explanation: "Incorrect. Zone-redundant backup storage isn't the default redundancy option for Azure SQL databases."
