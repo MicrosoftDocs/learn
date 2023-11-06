@@ -206,7 +206,7 @@ For example, as you enter the word `dice` slowly, IntelliSense will show all C# 
 
     Notice that the popup window includes three sections, one on the left and two on the right.
 
-    On the right side, you should see `int Random.Next()` in the top section, and `Returns a non-negative random integer.` in the bottom section. The `int` defines the return type for the method. In other words, when this version of the method is executed, it will return a value of type `int`.
+    On the right side, you should see `int Random.Next(int minValue, int maxValue)` in the top section, and `Returns a non-negative random integer.` in the bottom section. The `int` defines the return type for the method. In other words, when this version of the method is executed, it will return a value of type `int`.
 
     On the left side of the IntelliSense popup, it displays `1/3`.
 
@@ -214,19 +214,19 @@ For example, as you enter the word `dice` slowly, IntelliSense will show all C# 
 
     Notice that there's also a tiny arrow above and below the `1/3`.
 
-1. To examine the second overloaded version of the method, press ALT + Down Arrow on the keyboard.
+1. To examine the second overloaded version of the method, press the Down Arrow key on the keyboard.
 
-    Notice that you can press and hold the ALT key and then use the up and down arrow keys to navigate between the various overloaded versions. When you do, you'll see the `1/3`, `2/3`, and `3/3` appear on the left side of the IntelliSense popup, and helpful explanations on the right.
+    Notice that you can use the up and down arrow keys to navigate between the various overloaded versions. When you do, you'll see the `1/3`, `2/3`, and `3/3` appear on the left side of the IntelliSense popup, and helpful explanations on the right.
 
 1. Take a minute to examine each of the overloaded versions for the `Random.Next()` method.
 
-    The second overloaded version of the method, `2/3`, informs you that the `Next()` method can accept an input parameter `int maxValue`. The description tells you that `maxValue` is the exclusive upper bound for the number that you want the `Next()` method to generate. Exclusive indicates that the return number will be less than maxValue. So when you specify `dice.Next(7);` the max dice roll will be 6. Notice that the message at the bottom of the section has been updated to include: `Returns a non-negative random integer that is less than the specified maximum.`
+    The second overloaded version of the method, `2/3`, informs you that the `Next()` method can accept an input parameter `int maxValue`. The description tells you that `maxValue` is the exclusive upper bound for the number that you want the `Next()` method to generate. Exclusive indicates that the return number will be less than maxValue. So when you specify `dice.Next(1,7);` the max dice roll will be 6. Notice that the message at the bottom of the section has been updated to: `Returns a non-negative random integer that is less than the specified maximum.`
 
     The third version of the method, `3/3`, informs you that the `Next()` method can accept both `int minValue` and `int maxValue` as input parameters. The new parameter, `minValue`, is a lower bound for the number that you want the `Next()` method to generate. Since the lower bound is inclusive rather than exclusive, the return value can be equal to `minValue`. The message at the bottom now states: `Returns a random integer that is within a specified range.`
 
     In this case, IntelliSense provides all of the information that you need to select the appropriate overload, including a detailed explanation of `maxValue` and `minValue`. However, you may encounter situations where you need to consult the method's documentation.
 
-## Use docs.microsoft.com for information about overloaded methods
+## Use learn.microsoft.com for information about overloaded methods
 
 The second way to learn about overloaded versions of the methods is to consult the documentation for the method. The documentation will also help you to understand exactly what each input parameter is intended for.
 
@@ -283,4 +283,4 @@ The second way to learn about overloaded versions of the methods is to consult t
 - Methods may return a value when they complete their task, or they may return nothing (void).
 - Overloaded methods support several implementations of the method, each with a unique method signature (the number of input parameters and the data type of each input parameter).
 - IntelliSense can help write code more quickly. It provides a quick reference to methods, their return values, their overloaded versions, and the types of their input parameters.
-- docs.microsoft.com is the "source of truth" when you want to learn how methods in the .NET Class Library work.
+- learn.microsoft.com is the "source of truth" when you want to learn how methods in the .NET Class Library work.
