@@ -48,19 +48,19 @@ The following table might help you decide if you want to use Azure Quantum porta
 | --- | --- | --- |
 | <ul><li>Manage your subscriptions and workspaces</li><li>Manage your quantum jobs</li><li>Select your quantum computing providers</li><li>Run your Q# and Qiskit programs in an Azure notebook</li><li> Run quantum programming samples </li><li> Save your programs and results</li></ul> | <ul><li>An Azure subscription</li><li>A quantum workspace</li><li> No installation required</li></ul>| <ul><li>Ask Copilot</li><li>Debug your programs  |
 
-## What is the Quantum Development Kit (QDK) extension?
+## What is the Azure Quantum Development Kit (QDK) extension?
 
-The Quantum Development Kit (QDK) extension is a software development kit for quantum computing. It is a plugin for Visual Studio Code, a free, open source code editor from Microsoft.
+The Azure Quantum Development Kit (QDK) extension is a software development kit for quantum computing. It is a plugin for Visual Studio Code, a free, open source code editor from Microsoft.
 
-With the QDK extension, you can create, debug, and run Q# programs in a local development environment. You can also use the QDK extension to connect to your Azure Quantum workspace. This allows you to run your Q# programs on the quantum computers and simulators of the providers you selected for your workspace.
+With the Azure QDK extension, you can create, debug, and run Q# programs in a local development environment. You can also use the QDK extension to connect to your Azure Quantum workspace. This allows you to run your Q# programs on the quantum computers and simulators of the providers you selected for your workspace.
 
 :::image type="content" source="../media/qdk-extension.png" alt-text="Screenshot of the QDK extension in Visual Studio Code.":::
 
 
-### Is the QDK the right tool for me?
+### Is the Azure QDK the right tool for me?
 
-The following table might help you decide if you want to use the QDK for your quantum computing development.
+The following table might help you decide if you want to use the Azure QDK for your quantum computing development.
 
 | Use it if you want to: | You need: | You can't: |
 | --- | --- | --- |
-| <ul><li>Use a local development environment with Visual Studio Code</li><li>Select your quantum computing providers</li><li>Run Q# and Qiskit programs</li><li> Debug your Q# programs</li><li>Have compiler error messages</li><li> Use a Python host program</li><li>  Save your programs and results</li></ul> | <ul><li>An Azure subscription</li><li>A quantum workspace</li><li> Install [Visual Studio Code](https://code.visualstudio.com/) </li><li> Install the [Microsoft QDK for VS Code extension](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode)</li></ul>| <ul><li>Ask Copilot</li><li> Manage your subscriptions and workspaces</li><li> Manage your quantum jobs</li></ul> |
+| <ul><li>Use a local development environment with Visual Studio Code</li><li>Select your quantum computing providers</li><li>Run Q# and Qiskit programs</li><li> Debug your Q# programs</li><li>Have compiler error messages</li><li> Use a Python host program</li><li>  Save your programs and results</li></ul> | <ul><li>An Azure subscription</li><li>A quantum workspace</li><li> Install [Visual Studio Code](https://code.visualstudio.com/) </li><li> Install the [Azure QDK for VS Code extension](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode)</li></ul>| <ul><li>Ask Copilot</li><li> Run multi-file programs (coming soon) </li><li> Manage your subscriptions and workspaces</li><li> Manage your quantum jobs</li></ul> |
