@@ -22,6 +22,6 @@ quiz:
     - content: "No error is generated and the integer value is displayed. The value displayed is the initialized value from above the code block."
       isCorrect: false
       explanation: "Incorrect. The value is displayed as the sum of the two integers."
-    - content: "An error is generated because the first variable is not in-scope after the code block."
+    - content: "An error is generated because the first variable isn't in-scope after the code block."
       isCorrect: false
       explanation: "Incorrect. No error is generated. The first variable was initialized above the code block and still is in-scope both inside and after the code block."
