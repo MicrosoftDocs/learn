@@ -28,7 +28,7 @@ Trips
 
 ```
 
-![Screenshot of a rendered time chart by number of trips and date.](../media/render-timechart.png)
+![Screenshot of a rendered time chart by number of trips and date in line chart.](../media/render-timechart.png)
 
 An example of a `render columnchart` between two dates and total trips can be shown by defining x and y values
 
@@ -41,11 +41,11 @@ Trips
 
 ```
 
-![Screenshot of a rendered time chart by number of trips and date.](../media/render-columnchart.png)
+![Screenshot of a rendered time chart by number of trips and date in columnchart.](../media/render-columnchart.png)
 - **Data Ingestion**: KQL allows you to ingest data from a variety of sources such as Azure Event Hubs, Azure IoT Hub, and Azure Storage.
 - **Data Export**: You can export query results from KQL to various destinations such as Azure Blob Storage, Azure Data Lake Storage, and Azure Event Hubs.
 
 Here are some additional resources:
 
-[Microsoft Fabric terminology - Microsoft Fabric.](/fabric/get-started/fabric-terminology)
-[Query data in a KQL queryset - Microsoft Fabric.](/real-time-analytics/kusto-query-set)
+[Microsoft Fabric terminology - Microsoft Fabric.](//fabric/get-started/fabric-terminology)
+[Query data in a KQL queryset - Microsoft Fabric.](/fabric/real-time-analytics/kusto-query-set)

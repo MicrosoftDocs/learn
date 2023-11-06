@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/03/2023
+  ms.date: 11/06/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ quiz:
     - content: "To filter data based on specific conditions."
       isCorrect: false
       explanation: "Incorrect. This ability is the purpose of the `where` operator."
-  - content: "What does KQL allow you to do with data from various sources?"
+  - content: "What does KQL allow a data consumer to do with data from various sources?"
     choices:
     - content: "KQL allows you to create your own custom functions in KQL to perform specific data analysis tasks."
       isCorrect: false
@@ -35,7 +35,7 @@ quiz:
     - content: "KQL allows you to export query results to various destinations such as Azure Blob Storage, Azure Data Lake Storage, and Azure Event Hubs."
       isCorrect: false
       explanation: "Incorrect. This ability is a feature of KQL, but not related to ingesting data from various sources."
-  - content: "What does the Fabric Main Editor enable you to do?"
+  - content: "What does the Fabric Main Editor enable a data consumer to do?"
     choices:
     - content: "Create and link object to read and write objects to a lakehouse"
       isCorrect: true

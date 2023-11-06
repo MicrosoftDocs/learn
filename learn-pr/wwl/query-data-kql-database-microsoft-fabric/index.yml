@@ -3,7 +3,7 @@ uid: learn.wwl.query-data-kql-database-microsoft-fabric
 metadata:
   title: Query data in a KQL database in Microsoft Fabric
   description: "This tutorial provides a brief introduction to KQL (Kusto Query Language) queries using Querysets and the major differences between KQL and T-SQL when using Querysets."
-  ms.date: 11/03/2023
+  ms.date: 11/06/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -33,7 +33,7 @@ products:
 - fabric
 units:
 - learn.wwl.query-data-kql-database-microsoft-fabric.introduction
-- learn.wwl.query-data-kql-database-microsoft-fabric.getting-started-with-kql-queries
+- learn.wwl.query-data-kql-database-microsoft-fabric.get-started-with-kql-queries
 - learn.wwl.query-data-kql-database-microsoft-fabric.kql-best-practices
 - learn.wwl.query-data-kql-database-microsoft-fabric.advanced-features
 - learn.wwl.query-data-kql-database-microsoft-fabric.exercise
