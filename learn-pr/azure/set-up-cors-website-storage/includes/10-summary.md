@@ -14,7 +14,7 @@ The following resources will provide you with detailed information about the des
 
 #### Cross-Origin Resource Sharing (CORS) Specifications
 
-- [Cross-Origin Resource Sharing (CORS) at W3C](https://www.w3.org/TR/cors/)
+- [Cross-Origin Resource Sharing (CORS) at W3C](https://fetch.spec.whatwg.org/#http-cors-protocol)
 - [Cross-Origin Resource Sharing (CORS) at Mozilla](https://developer.mozilla.org/docs/Web/HTTP/CORS)
 
 #### Azure Support for CORS
@@ -22,8 +22,8 @@ The following resources will provide you with detailed information about the des
 - [CORS Support for the Azure Storage Services](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services)
 - [CORS using Azure CLI](/cli/azure/storage/cors)
 - [CORS using Azure Powershell](/powershell/module/azure.storage/set-azurestoragecorsrule)
-- [Authorization for the Azure Storage Services](/rest/api/storageservices/authorization-for-the-azure-storage-services)
-- [Versioning for the Azure Storage Services](/rest/api/storageservices/versioning-for-the-azure-storage-services)
+- [Authorize requests to Azure Storage](/rest/api/storageservices/authorization-for-the-azure-storage-services)
+- [Versioning for Azure Storage](/rest/api/storageservices/versioning-for-the-azure-storage-services)
 
 #### Azure CORS REST APIs
 
