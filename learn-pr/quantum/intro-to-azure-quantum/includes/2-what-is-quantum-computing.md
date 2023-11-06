@@ -34,7 +34,7 @@ In quantum computing, the information is encoded in the superposition of the sta
 
 ## How to build a quantum computer
 
-A quantum computer is a computer that takes advantage of quantum mechanical phenomena. The foundational core of quantum computing is to store information in quantum states of matter and to use quantum operations to compute on that information, by harnessing and learning to "program" quantum interference.
+A quantum computer is a computer that takes advantage of quantum mechanical phenomena.  Quantum computers use quantum states of matter to store and compute information. They can "program" quantum interference to do things faster or better than classical computers.
 
 When building a quantum computer, we need to think about how to create the qubits and how to store them. We also need to think about how to manipulate them and how to read the results of our computations.
 
