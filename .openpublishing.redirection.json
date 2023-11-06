@@ -28838,7 +28838,7 @@
     },
     {
       "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/index.yml",
-      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide"
     },
     {
       "source_path": "learn-pr/wwl-data-ai/recognize-synthesize-speech/2-get-started-azure.md",
@@ -28883,6 +28883,16 @@
     {
       "source_path": "learn-pr/paths/explore-fundamentals-of-decision-support/index.md",
       "redirect_url": "https://learn.microsoft.com/azure/ai-services/anomaly-detector/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/2-environment-setup.yml",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/includes/2-environment-setup.md",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core",
       "redirect_document_id": false
     }
   ]
