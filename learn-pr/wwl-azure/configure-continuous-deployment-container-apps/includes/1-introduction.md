@@ -1,24 +1,17 @@
 This module covers the use of Azure Pipelines to automate build, test, and deployment processes.
 
-In this module, you learn how to configure a pipeline to use the self-hosted pool, use built-in tasks, and deploy a self-hosted Windows agent. You also examine agents and agent pools for pipelines, environment and secret variables for pipelines.
+## Scenario
 
-The module is divided into the following sections: Revision management, Continuous deployment to Azure Container Apps, Azure Pipeline configuration and deployment tasks, and Agents and agent pools for pipelines.
+Imagine you are a developer working for a software development company that specializes in building containerized applications. Your team has been tasked with deploying and managing container apps in Azure Container Apps. However, you are unsure about the continuous deployment options available and how to implement them effectively. You need a solution that allows for seamless updates to container images and creates new revisions of the app based on those updates. This will ensure that your team can continuously deploy new features and bug fixes without disrupting the application's availability. In addition, you want to leverage the benefits of versioning and have a historical record of updates for auditing purposes. You decide to investigate Azure DEvOps and Azure Pipelines. By understanding the continuous deployment options in Azure Container Apps, you will be able to streamline your deployment process and improve the overall efficiency of your development workflow.
 
-The goal of this module is to teach you how to use Azure Pipelines to automate build, test, and deployment processes, and how to configure and manage agents and agent pools for pipelines.
+## Table of contents
 
-## Learning objectives
+- Review continuous deployment options for container apps
+- Examine Azure DevOps and Azure Pipelines
+- Examine Azure Pipeline configuration and deployment tasks
+- Examine agents and agent pools for pipelines
+- Examine environment and secret variables for pipelines
 
-In this module, you will:
+## Goal
 
-- Examine deployment options and strategies for containerized applications.
-- Examine the features and capabilities of Azure DevOps and Azure Pipelines.
-- Learn how to set up automated build and deployment pipelines for container apps using Azure DevOps.
-- Examine how to configure agent pools and secret variables for pipelines.
-
-## Prerequisites
-
-- Basic understanding of cloud computing concepts and Azure services.
-- Familiarity with containerization technologies such as Docker and Kubernetes.
-- Knowledge of Azure container services, including Azure Container Registry and Azure Container Apps, would be beneficial.
-- Understanding of continuous integration and continuous deployment (CI/CD) concepts.
-- Experience with Azure DevOps or other CI/CD tools.
+The goal of this module is to provide you with an understanding of the continuous deployment options available for container apps in Azure Container Apps. By the end of this module, you will be able to choose a suitable deployment method for your container apps and implement continuous deployment using Azure Pipelines.
