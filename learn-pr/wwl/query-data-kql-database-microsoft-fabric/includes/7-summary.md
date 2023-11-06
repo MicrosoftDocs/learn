@@ -3,6 +3,5 @@ In this module, you have learned how to get started with KQL queries in Microsof
 The main takeaways from this module are that KQL queries in Microsoft Fabric can be performed by setting up an Azure account and Azure Data Explorer. KQL queries follow a pattern of selecting a table, applying conditions, and projecting specific columns. Advanced querying techniques such as aggregations, joins, and subqueries are also covered. KQL has advantages over T-SQL in terms of simplicity, performance, flexibility, and integration with other Microsoft products. Practical exercises provided by Microsoft Learn help you gain hands-on experience with KQL.
 
 Additional Reading:
-1. [KQL Best Practices](/azure/data-explorer/kql-best-practices): This article provides several tips for improving query performance and data quality in Microsoft Fabric KQL.
-2. [Microsoft Fabric Terminology](/fabric/get-started/fabric-terminology): This resource provides an overview of the terminology used in Microsoft Fabric.
+1. [Microsoft Fabric Terminology](/fabric/get-started/fabric-terminology): This resource provides an overview of the terminology used in Microsoft Fabric.
 3. [Query Data in a KQL Queryset](/fabric/real-time-analytics/kusto-query-set): This resource provides information on how to query data in a KQL queryset.
