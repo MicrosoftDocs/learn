@@ -279,7 +279,7 @@ A *remote* is a Git repository where team members collaborate (similar to a repo
     git remote -v
     ```
 
-    You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from the Microsoft repository:
+    You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch and push access to the Microsoft repository:
 
     ```output
     origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
