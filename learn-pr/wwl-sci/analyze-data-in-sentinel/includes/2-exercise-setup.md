@@ -78,7 +78,7 @@ In this task, you deploy a Microsoft Sentinel Data connector to detect Azure Act
 
 1. In the *Instructions* tab, *Configuration* area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
 
-1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure subscription" from the drop-down list and click **Select**.
+1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure subscription" from the drop-down list and select **Select**.
 
 1. Select the **Parameters** tab, choose your *yourName-sentinel* workspace from the **Primary Log Analytics workspace** drop-down list.
 
@@ -91,7 +91,7 @@ In this task, you deploy a Microsoft Sentinel Data connector to detect Azure Act
 
 1. Select **Create** to finish.
 
-1. Once the deployment is complete, you will see the **Connected** status (green bar) for the Azure Activity connector in the *Configuration/Data connectors* pane.
+1. Once the deployment is complete, you'll see the **Connected** status (green bar) for the Azure Activity connector in the *Configuration/Data connectors* pane.
 
 :::image type="content" source="../media/07-azure-sentinel-connector.png" alt-text="Screenshot of the Microsoft Sentinel connector." border="true":::
 
