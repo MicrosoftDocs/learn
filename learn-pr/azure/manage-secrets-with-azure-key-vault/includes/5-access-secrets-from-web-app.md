@@ -39,7 +39,7 @@ For more information, [see the documentation](https://github.com/Azure/azure-sdk
 
 ## Handle secrets in an app
 
-After a secret is loaded into your app, it's up to your app to handle it securely. In the app you build in this module, you write your secret value out to the client response, and to demonstrate that it loaded successfully, you view it in a web browser. **Returning a secret value to the client is *not* something you'd normally do!** Usually, you use secrets to do things like initialize client libraries for databases or remote APIs.
+After a secret is loaded into your app, it's up to your app to handle it securely. In the app that you build in this module, you write your secret value out to the client response, and to demonstrate that it loaded successfully, you view it in a web browser. **Returning a secret value to the client is *not* something you'd normally do!** Usually, you use secrets to do things like initialize client libraries for databases or remote APIs.
 
 > [!IMPORTANT]
 > Always carefully review your code to ensure your app never writes secrets to any kind of output, including logs, storage, and responses.

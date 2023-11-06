@@ -42,4 +42,4 @@ az keyvault secret set \
     --vault-name <your-unique-vault-name>
 ```
 
-You will write the code for your app shortly, but first you need to learn a bit about how your app is going to authenticate to a vault.
+You'll write the code for your app shortly, but first you need to learn a bit about how your app is going to authenticate to a vault.

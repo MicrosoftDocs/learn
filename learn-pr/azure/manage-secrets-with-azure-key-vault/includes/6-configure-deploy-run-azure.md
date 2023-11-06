@@ -16,7 +16,7 @@ The *plan* name only needs to be unique within your subscription, so you can use
         --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. Next, to create the Web App that uses the App Service plan you just created, run the following command. Make sure to replace `<your-unique-app-name>` with your app's name in the `--name` parameter.
+1. Next, to create the Web App that uses the App Service plan you created, run the following command. Make sure to replace `<your-unique-app-name>` with your app's name in the `--name` parameter.
 
     ::: zone pivot="csharp"
 
@@ -131,6 +131,6 @@ az keyvault set-policy \
 
 ::: zone-end
 
-1. The deployment might take a minute or two to complete. After you get a result that indicates that the site deployed, open `https://<your-unique-app-name>.azurewebsites.net/api/SecretTest` in a browser. The app takes a moment to start up for the first time on the server, but after it does, you should see the secret value, *reindeer_flotilla*.
+2. The deployment might take a minute or two to complete. After you get a result that indicates that the site deployed, open `https://<your-unique-app-name>.azurewebsites.net/api/SecretTest` in a browser. The app takes a moment to start up for the first time on the server, but after it does, you should see the secret value, *reindeer_flotilla*.
 
 Your app is finished and deployed!
