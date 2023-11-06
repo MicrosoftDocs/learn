@@ -19,7 +19,7 @@ The official Key Vault client for .NET Core is the `SecretClient` class in the `
 
 ## Read secrets in a Node.js app
 
-Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL Secret values are retrieved with HTTP GET requests.
+Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL. Secret values are retrieved with HTTP GET requests.
 
 The official Key Vault client for Node.js apps is the `SecretClient` class in the `@azure/keyvault-secrets` npm package. Apps that include secret names in their configuration or code generally use its `getSecret` method, which loads a secret value given its name. `getSecret` requires your app's identity to have the `Get` permission on the vault. Apps designed to load all secrets from a vault also use the `listPropertiesOfSecrets` method, which loads a list of secrets and requires the `List` permission.
 
