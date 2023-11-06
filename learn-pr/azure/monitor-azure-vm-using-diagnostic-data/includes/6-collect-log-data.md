@@ -1,10 +1,10 @@
-VM insights performance counters help you identify performance anomalies and alert when thresholds are reached. But to analyze the root causes of issues you detect, you need to analyze log data to see which system events caused or contributed to the issues. In this unit, you set up a data collection rule (DCR) to collect Linux VM Syslog data, and view the log data in Azure Monitor Log Analytics by using a simple Kusto Query Language (KQL) query.
+Azure Monitor Metrics and VM insights performance counters help you identify performance anomalies and alert when thresholds are reached. But to analyze the root causes of issues you detect, you need to analyze log data to see which system events caused or contributed to the issues.
 
-VM insights installs the Azure Monitor Agent and creates a DCR to collect predefined performance counters, map process dependencies, and present the data in prebuilt workbooks. You can create your own DCRs to collect VM log data or performance counters that the VM insights DCR doesn't collect.
+VM insights installs the Azure Monitor Agent and creates a data collection rule (DCR) that collects predefined performance counters, maps process dependencies, and presents the data in prebuilt workbooks. You can create your own DCRs to collect VM log data or performance counters that the VM insights DCR doesn't collect.
 
-To collect performance counters with a DCR, you can select from a predefined set of objects and set sampling rates, or create custom objects. To collect events, you can select the event severity levels to log. 
+When you create DCRs in the Azure portal, you can select from a range of performance counters and sampling rates, or add custom performance counters. Or, you can select from a predefined set of log types and severity levels or define custom log schemas. You can associate a single DCR to any or all VMs in your subscription, but you might need multiple DCRs to collect different types of data from different VMs.
 
-When you create DCRs in the Azure portal, you can select from a range of performance counters and sampling rates or add custom performance counters. Or, you can select from a predefined set of log types and severity levels or define custom log schemas. You can associate a single DCR to any or all VMs in your subscription, but you might need multiple DCRs to collect different types of data from different machines.
+In this unit, you set up a DCR to collect Linux VM Syslog data, and view the log data in Azure Monitor Log Analytics by using a simple Kusto Query Language (KQL) query.
 
 ## Create a DCR to collect log data
 

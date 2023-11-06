@@ -1,4 +1,4 @@
-Azure Monitor helps you collect, analyze, and alert on various types of host and client monitoring from your Azure VMs.
+Azure Monitor helps you collect, analyze, and alert on various types of host and client monitoring data from your Azure VMs.
 
 - Azure Monitor provides a set of VM host logs and performance and usage metrics for all Azure VMs.
 - You can enable recommended alert rules when you create VMs or afterwards to alert on important VM host metrics.

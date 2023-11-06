@@ -34,6 +34,6 @@ quiz:
     - content: By selecting **Data Collection Rules** in Azure Monitor.
       isCorrect: false
       explanation: You select Data Collection Rules to create a DCR, not to view the data the DCR collects.
-    - content: By using a KQL query in Log Analytics.
+    - content: By using a KQL query in your Log Analytics workspace.
       isCorrect: true
       explanation: You can view log data collected by a DCR in your Log Analytics workspace by using a KQL log query.

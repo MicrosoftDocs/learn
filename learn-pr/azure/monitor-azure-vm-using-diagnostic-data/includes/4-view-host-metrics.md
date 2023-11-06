@@ -1,4 +1,4 @@
-If the built-in metrics charts for a VM don't already show the data you need, you can use Metrics Explorer to create customized metrics charts. You want to investigate how your VM's CPU capability is affected by the traffic flowing into it. In this unit, you plot a graph that displays your VM's maximum percentage CPU and average inbound flow data together.
+You want to investigate how your VM's CPU capability is affected by the traffic flowing into it. If the built-in metrics charts for a VM don't already show the data you need, you can use Metrics Explorer to create customized metrics charts. In this unit, you plot a graph that displays your VM's maximum percentage CPU and average inbound flow data together.
 
 Azure Monitor Metrics Explorer offers a UI for exploring and analyzing VM metrics. You can use Metrics Explorer to view and create custom charts for many VM host metrics in addition to the metrics shown on the built-in graphs.
 ## Understand Metrics Explorer

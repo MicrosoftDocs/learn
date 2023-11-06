@@ -16,7 +16,7 @@ You want to monitor the VMs that host your website, so you decide to quickly cre
 
    :::image type="content" source="../media/create-vm-basic.png" alt-text="Screenshot that shows the Basics tab of the Create a virtual machine page." lightbox="../media/create-vm-basic.png":::
 
-1. On the **Monitoring** screen, select the checkbox next to **Enable recommended alert rules**.
+1. On the **Monitoring** tab, select the checkbox next to **Enable recommended alert rules**.
 1. On the **Set up recommended alert rules** screen:
    1. Select all the listed alert rules if not already selected, and adjust the values if desired.
    1. Under **Notify me by**, select the checkbox next to **Email**, and enter an email address to receive alert notifications.
