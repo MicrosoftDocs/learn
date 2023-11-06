@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.3-azure-monitoring-options
 metadata:
-  title: Monitoring options available in Azure
+  title: Monitoring options in Azure
   description: Explore the monitoring options available in Azure.
   ms.date: 03/22/2021
   author: kayodeprinceMS
   ms.author: kaprince
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Monitoring options available in Azure
+title: Monitoring options in Azure
 durationInMinutes: 5
 content: |
   [!include[](includes/3-azure-monitoring-options.md)]
@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: Azure Monitor
       isCorrect: false
-      explanation: Azure monitor is the monitoring service used to track availability, health, and performance of applications and infrastructure.
+      explanation: Azure Monitor is the monitoring service used to track availability, health, and performance of applications and infrastructure.
     - content: Microsoft Sentinel
       isCorrect: true
       explanation: Microsoft Sentinel includes built-in threat intelligence for detection and investigation that can help reduce false positives.

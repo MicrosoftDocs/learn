@@ -1,14 +1,14 @@
-The last time issues arose on your financial organization's application, customers couldn't access their accounts. Also, the issues with the application weren't resolved on time, so customer satisfaction was negatively affected. Your organization wants to avoid a repeat of these issues when it moves to Azure.
+The last time issues arose on your financial organization's application, customers couldn't access their accounts. Also, the issues with the application weren't resolved quickly, so customer satisfaction was negatively affected. Your organization wants to avoid a repeat of these issues when it moves to Azure.
 
-Here, we'll detail how to integrate Azure Monitor Application Insights with your applications. You'll explore how to use it to check the health of applications and resolve issues faster.
+This unit describes how to integrate Azure Monitor Application Insights with your applications. You can use Application Insights to check the health of applications and resolve issues faster.
 
-## Criteria for assessing Application Insights
+## Use Application Insights
 
 You can use Application Insights to:
 
 - Analyze and address issues and problems that affect your application's health and performance.
 - Improve your application's development lifecycle.
-- Measure your user experience and analyze users' behavior.
+- Assess your user experience and analyze users' behavior.
 
 ## Integrate Application Insights with your applications
 
