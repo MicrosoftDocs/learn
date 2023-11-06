@@ -8,7 +8,7 @@ When writing algorithms, we should meet the following requirements for the langu
 
 - **Abstract qubits** Algorithms use qubits that are not tied to specific hardware or layout. The compiler and runtime handle the mapping from program qubits to physical qubits.
 - **Algorithms need to integrate quantum and classical computation.** The ability to perform classical and quantum computations is essential in a *universal* quantum computer, which is the ultimate machine capable of simulate any classical and quantum operation. 
-- **Algorithms must respect the laws of physics.** For example, copying the state of a qubit should not be possible. Direct access to the qubit state should not be possible, although we allow a certain amount of validation and state examination to facilitate debugging with a simulator.
+- **Laws of physics** Algorithms follow the rules of quantum physics. For example, they cannot copy or access qubit state directly. They can only use some validation and debugging tools with a simulator.
 
 ## The characteristics of Q\#
 
