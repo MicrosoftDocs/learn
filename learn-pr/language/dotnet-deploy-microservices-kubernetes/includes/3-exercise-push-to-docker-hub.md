@@ -39,7 +39,7 @@ Follow these steps to create and run Docker containers in the codespace.
     docker compose build
     ```
 
-    It may take a while to build the containers.
+    It might take a while to build the containers.
 
 1. Run the following command to run the app and attach the containers:
 

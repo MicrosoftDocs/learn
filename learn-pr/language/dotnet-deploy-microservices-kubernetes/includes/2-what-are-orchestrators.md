@@ -20,7 +20,7 @@ A container orchestrator is a system that automatically deploys and manages cont
 
 ## Kubernetes
 
-Kubernetes is a portable, extensible open-source platform for managing and orchestrating containerized workloads. Kubernetes abstracts away complex container management tasks, and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility you may already know from Platform-as-a-Service (PaaS) or Infrastructure-as-a-Service (IaaS) offerings.
+Kubernetes is a portable, extensible open-source platform for managing and orchestrating containerized workloads. Kubernetes abstracts away complex container management tasks, and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility you might already know from Platform-as-a-Service (PaaS) or Infrastructure-as-a-Service (IaaS) offerings.
 
 ![Image showing the Kubernetes logo amongst multiple containers running on a computer](../media/2-deploy-multiple-containers.png)
 
