@@ -8,6 +8,8 @@ metadata:
   ms.custom:
     - devx-track-azurecli
   ms.prod: learning-azure
+  ms.author: schaffererin
+  author: schaffererin
 title: Exercise - Deploy an Azure Kubernetes Service cluster with Azure CNI
 durationInMinutes: 15
 interactive: bash

@@ -8,6 +8,8 @@ metadata:
   ms.date: 10/31/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.author: schaffererin
+  author: schaffererin
 durationInMinutes: 10
 content: |
   [!include[](includes/6-size-the-network.md)]
