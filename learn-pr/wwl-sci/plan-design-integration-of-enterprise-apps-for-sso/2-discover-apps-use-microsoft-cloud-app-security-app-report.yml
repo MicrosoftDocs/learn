@@ -7,8 +7,9 @@ metadata:
   ms.date: 10/26/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: identity-and-access
-durationInMinutes: 1
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
 content: |
   [!include[](includes/2-discover-apps-use-microsoft-cloud-app-security-app-report.md)]
