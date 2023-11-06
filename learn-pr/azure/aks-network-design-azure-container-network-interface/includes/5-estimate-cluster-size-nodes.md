@@ -34,7 +34,7 @@ Kubernetes can also add or remove nodes when necessary. If you plan to use this 
 
 To determine the number of nodes to run, you need to understand the application's processor and memory requirements. The development team provided you with the results of their performance testing with details of how much processor and memory the services need. The results include the baseline requirements along with the maximum amounts for busier periods:
 
-Service | Processor Min / Max | Memory Min / Max
+Service | Processor min / max | Memory min / max
 --- | --- | ---
 Website front end | 250 m / 1000 m | 250 Mi / 1 Gi
 Identity API | 100 m / 500 m | 250 Mi / 500 Mi
