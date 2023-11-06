@@ -21,34 +21,34 @@
         "redirect_document_id": false
       },
       {
-        "source_path_from_root": "learn-pr/azure/aks-network-design-azure-container-network-interface/3-estimate-cluster-size-pods.yml",
+        "source_path": "/learn-pr/azure/aks-network-design-azure-container-network-interface/3-estimate-cluster-size-pods.yml",
         "redirect_url": "learn-pr/azure/aks-network-design-azure-container-network-interface/4-estimate-cluster-size-pods.yml",
-        "redirect_document_id": false
+        "redirect_document_id": true
       },
       {
-        "source_path_from_root": "learn-pr/azure/aks-network-design-azure-container-network-interface/4-estimate-cluster-size-nodes.yml",
+        "source_path": "/learn-pr/azure/aks-network-design-azure-container-network-interface/4-estimate-cluster-size-nodes.yml",
         "redirect_url": "learn-pr/azure/aks-network-design-azure-container-network-interface/5-estimate-cluster-size-nodes.yml",
-        "redirect_document_id": false
+        "redirect_document_id": true
       },
       {
-        "source_path_from_root": "learn-pr/azure/aks-network-design-azure-container-network-interface/5-size-the-network.yml",
+        "source_path": "/learn-pr/azure/aks-network-design-azure-container-network-interface/5-size-the-network.yml",
         "redirect_url": "learn-pr/azure/aks-network-design-azure-container-network-interface/6-size-the-network.yml",
-        "redirect_document_id": false
+        "redirect_document_id": true
       },
       {
-        "source_path_from_root": "learn-pr/azure/aks-network-design-azure-container-network-interface/6-exercise-deploy-aks.yml",
+        "source_path": "/learn-pr/azure/aks-network-design-azure-container-network-interface/6-exercise-deploy-aks.yml",
         "redirect_url": "learn-pr/azure/aks-network-design-azure-container-network-interface/7-exercise-deploy-aks.yml",
-        "redirect_document_id": false
+        "redirect_document_id": true
       },
       {
-        "source_path_from_root": "learn-pr/azure/aks-network-design-azure-container-network-interface/7-knowledge-check.yml",
+        "source_path": "/learn-pr/azure/aks-network-design-azure-container-network-interface/7-knowledge-check.yml",
         "redirect_url": "learn-pr/azure/aks-network-design-azure-container-network-interface/8-knowledge-check.yml",
-        "redirect_document_id": false
+        "redirect_document_id": true
       },
       {
-        "source_path_from_root": "learn-pr/azure/aks-network-design-azure-container-network-interface/8-summary.yml",
+        "source_path": "/learn-pr/azure/aks-network-design-azure-container-network-interface/8-summary.yml",
         "redirect_url": "learn-pr/azure/aks-network-design-azure-container-network-interface/9-summary.yml",
-        "redirect_document_id": false
+        "redirect_document_id": true
       }
     ]
   }
