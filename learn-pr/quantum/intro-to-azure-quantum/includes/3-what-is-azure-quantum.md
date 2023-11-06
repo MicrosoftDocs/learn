@@ -54,7 +54,7 @@ First, Azure Quantum uploads the job to the Azure Storage account that you confi
 
 ## If I'm not a quantum expert, can I still use Azure Quantum?
 
-Sure! Quantum computing is evolving quickly and Microsoft is committed to making quantum computing accessible to everyone. Azure Quantum is designed to guide you in your quantum journey, whether you're a quantum developer, researcher, or enthusiast.
+Microsoft is committed to making quantum computing accessible to everyone, whether you're a quantum developer, researcher, or enthusiast.
 
 Azure Quantum has incorporated **artificial intelligence** to assist you. You can play with the Copilot in Azure Quantum, a quantum-focused chatbot that helps you write code and better understand concepts.
 
