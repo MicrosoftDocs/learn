@@ -52,7 +52,7 @@ Locations API | 100 m - 500 m | 100 Mi / 500 Mi
 
 ## Sizing your nodes
 
-You determined the minimum number of replicas that each service should run and the minimum number of processor cores and memory that each service requires. This gives you a figure of 1.5 cores and 2.8Gi of memory as the starting point. When the application scales up to its maximum number of replicas and is using its maximum amount of processor cores and memory, it will need 53 cores and 50 GB of memory.
+You determined the minimum number of replicas that each service should run and the minimum number of processor cores and memory that each service requires. This gives you a figure of 1.5 cores and 2.8Gi of memory as the starting point. When the application scales up to its maximum number of replicas and is using its maximum amount of processor cores and memory, it needs 53 cores and 50 GB of memory.
 
 In this scenario, the workloads are CPU intensive. If you go with the default D2 v3 general purpose VM, you would need a large number of them to meet the workload's processor requirements. This would result in a large amount of unused memory across the VMs. Let's consider a VM type intended for compute intensive workloads. For example, something from the Fsv2-series would need fewer VMs to meet the processor requirements and would have a lower amount of unused memory.
 
