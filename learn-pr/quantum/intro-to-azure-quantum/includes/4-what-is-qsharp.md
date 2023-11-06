@@ -20,7 +20,7 @@ The following sections describe some key features of Q#.
 
 ### Domain-specific libraries
 
-The Q# libraries help you keep your code high level, enabling you to run complex quantum operations without having to design low-level operation sequences.
+The Q# libraries enable you to run complex quantum operations without having to design low-level operation sequences.
 
 - The standard library provides a set of essential and very useful functions and operations that can be used when writing quantum programs in Q#.
 - The quantum chemistry library for simulating quantum dynamics and electronic structure problems on quantum computers.
