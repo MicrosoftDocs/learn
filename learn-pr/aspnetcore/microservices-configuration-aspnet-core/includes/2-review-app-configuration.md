@@ -81,7 +81,38 @@ The library is built atop `IConfiguration`. For this reason, it's compatible wit
 
 To understand the integration of Azure App Configuration and the Feature Management library, see the following excerpt from an ASP.NET Core project's `Program.cs` file:
 
-:::code language="csharp" source="../code/src/program.cs" id="snippet_AppConfiguration" range="1-27" highlight="9-16":::
+    ```csharp
+    ...
+
+    var builder = WebApplication.CreateBuilder(args);
+
+    // Add the AddAzureAppConfiguration code
+    string connectionString = builder.Configuration.GetConnectionString("AppConfig");
+    
+    // Load configuration from Azure App Configuration
+    builder.Configuration.AddAzureAppConfiguration(options => {
+      options.Connect(connectionString)
+        .UseFeatureFlags();
+    });
+    
+    builder.Services.AddFeatureManagement();
+    
+    builder.Services.AddSingleton<ProductService>();
+    builder.Services.AddHttpClient<ProductService>(c =>
+    {
+        var url = builder.Configuration["ProductEndpoint"] ?? throw new InvalidOperationException("ProductEndpoint is not set");
+    
+        c.BaseAddress = new(url);
+    });
+    
+    // Add services to the container.
+    builder.Services.AddRazorComponents()
+        .AddInteractiveServerComponents();
+    
+    builder.Services.AddAzureAppConfiguration();
+
+    ...
+    ```
 
 In the preceding code fragment:
 

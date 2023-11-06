@@ -28894,6 +28894,31 @@
       "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/includes/2-environment-setup.md",
       "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/3-review-app-configuration.yml",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core/2-review-app-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/4-implement-feature-management.yml",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core/3-implement-feature-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/5-implement-app-configuration.yml",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core/4-implement-app-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/6-knowledge-check.yml",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/7-summary.yml",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core/6-summary",
+      "redirect_document_id": false
     }
   ]
 }
