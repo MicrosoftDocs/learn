@@ -56,7 +56,7 @@ First, Azure Quantum uploads the job to the Azure Storage account that you confi
 
 Microsoft is committed to making quantum computing accessible to everyone, whether you're a quantum developer, researcher, or enthusiast.
 
-Azure Quantum has incorporated **artificial intelligence** to assist you. You can play with the Copilot in Azure Quantum, a quantum-focused chatbot that helps you write code and better understand concepts.
+Azure Quantum has incorporated **artificial intelligence** to assist you. You can play with the Copilot in Azure Quantum, a quantum-focused chatbot that helps you write code and better understand quantum concepts.
 
 If you want to learn by doing, try the *Quantum Katas*, a series of self-paced tutorials that teach you elements of quantum computing and Q# programming. You can also explore [the Q# quantum samples](https://github.com/microsoft/Quantum/tree/main/samples/azure-quantum).
 
