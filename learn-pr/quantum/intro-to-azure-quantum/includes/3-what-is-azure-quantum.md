@@ -58,7 +58,7 @@ Microsoft is committed to making quantum computing accessible to everyone, wheth
 
 Azure Quantum has incorporated **artificial intelligence** to assist you. You can play with the Copilot in Azure Quantum, a quantum-focused chatbot that helps you write code and better understand concepts.
 
-If you want to learn by doing, Azure Quantum provides the *Quantum Katas*, a series of self-paced tutorials that teach you elements of quantum computing and Q# programming at the same time. You can also check [the Q# quantum samples](https://github.com/microsoft/Quantum/tree/main/samples/azure-quantum).
+If you want to learn by doing, try the *Quantum Katas*, a series of self-paced tutorials that teach you elements of quantum computing and Q# programming. You can also explore [the Q# quantum samples](https://github.com/microsoft/Quantum/tree/main/samples/azure-quantum).
 
 You can also learn from experts and enthusiasts through blogs, articles and videos. And you can try out some Q# code samples in the online code editor.
 
