@@ -6,12 +6,12 @@ In this unit, you'll learn more about how CORS requests are handled and how CORS
 
 ## CORS requests
 
-A CORS request from an origin domain may consist of one or more from the following request types:
+A CORS request from an origin domain might consist of one or more from the following request types:
 
 | Request Type | Description |
 |---|---|
-| Simple Request | Simple requests do not require a preflight request, but they must meet a specific set of criteria:<ul><li>The HTTP verb must be GET, HEAD, or POST.</li><li>The `Content-Type`, if specified, must be `application/x-www-form-urlencoded`, `multipart/form-data`, or `text/plain`.</li><li>Only CORS safe-listed headers are used.</li></ul> |
-| Preflight Request | Preflight requests query the CORS restrictions for the service, and a preflight request is required unless is a simple request. The preflight request includes the HTTP OPTIONS verb, your proposed request method, the origin domain, and additional HTTP headers for CORS; these are evaluated against the resource to see if the request would be allowed.<ul><li>If the preflight request is accepted and an **HTTP 200 OK** response is returned to the client, then the client will send an actual request for a resource.</li><li>If the preflight request is *not* accepted and an **HTTP 403 Forbidden** response is returned to the client, then a request for a resource will be refused.</li></ul> |
+| Simple Request | Simple requests don't require a preflight request, but they must meet a specific set of criteria:<ul><li>The HTTP verb must be GET, HEAD, or POST.</li><li>The `Content-Type`, if specified, must be `application/x-www-form-urlencoded`, `multipart/form-data`, or `text/plain`.</li><li>Only CORS safe-listed headers are used.</li></ul> |
+| Preflight Request | Preflight requests query the CORS restrictions for the service, and a preflight request is required unless is a simple request. The preflight request includes the HTTP OPTIONS verb, your proposed request method, the origin domain, and additional HTTP headers for CORS; these are evaluated against the resource to see if the request would be allowed.<ul><li>If the preflight request is accepted and an **HTTP 200 OK** response is returned to the client, then the client will send an actual request for a resource.</li><li>If the preflight request *isn't* accepted and an **HTTP 403 Forbidden** response is returned to the client, then a request for a resource will be refused.</li></ul> |
 | Actual Request | An actual request in a CORS transaction is handled as a normal HTTP request for a resource. The request includes an `Origin` header that indicates the request's original source. When the Azure Storage Service receives an actual request, it will check the CORS rules that have been set and do one of the following:<ul><li>If a rule matches, then ACCESS-CONTROL headers are added to any response.</li><li>If no rule matches, then ACCESS-CONTROL headers aren't returned.</li></ul> |
 
 ## CORS rules
