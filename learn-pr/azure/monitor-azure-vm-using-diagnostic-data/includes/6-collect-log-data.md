@@ -1,8 +1,10 @@
-VM Insights performance counters help you identify performance anomalies and alert when thresholds are reached. But to analyze the root causes of issues you detect, you need to analyze log data to see which system events caused or contributed to the issues. In this unit, you set up a data collection rule (DCR) to collect Linux VM Syslog data, and view the log data in Azure Monitor Log Analytics by using a simple Kusto Query Language (KQL) query.
+VM insights performance counters help you identify performance anomalies and alert when thresholds are reached. But to analyze the root causes of issues you detect, you need to analyze log data to see which system events caused or contributed to the issues. In this unit, you set up a data collection rule (DCR) to collect Linux VM Syslog data, and view the log data in Azure Monitor Log Analytics by using a simple Kusto Query Language (KQL) query.
 
-VM Insights installs the Azure Monitor Agent and creates a DCR to collect predefined performance counters, map process dependencies, and present the data in prebuilt workbooks. You can create your own DCRs that use the Azure Monitor Agent to collect VM log data or performance counters that the VM Insights DCR doesn't collect.
+VM insights installs the Azure Monitor Agent and creates a DCR to collect predefined performance counters, map process dependencies, and present the data in prebuilt workbooks. You can create your own DCRs to collect VM log data or performance counters that the VM insights DCR doesn't collect.
 
-To collect performance counters with a DCR, you can select from a predefined set of objects and set sampling rates, or create custom objects. To collect events, you can select the event severity levels to log. You can associate a single DCR to any or all VMs in your subscription, but you might need multiple DCRs to collect different types of data from different machines.
+To collect performance counters with a DCR, you can select from a predefined set of objects and set sampling rates, or create custom objects. To collect events, you can select the event severity levels to log. 
+
+When you create DCRs in the Azure portal, you can select from a range of performance counters and sampling rates or add custom performance counters. Or, you can select from a predefined set of log types and severity levels or define custom log schemas. You can associate a single DCR to any or all VMs in your subscription, but you might need multiple DCRs to collect different types of data from different machines.
 
 ## Create a DCR to collect log data
 
@@ -25,7 +27,7 @@ You must have a data collection endpoint to send log data to. To create an endpo
 To create the DCR to collect the event logs:
 
 1. In the Monitor left navigation menu under **Settings**, select **Data Collection Rules**.
-1. On the **Data Collection Rules** page, you can see the DCR that VM Insights created. Select **Create** to create a new data collection rule.
+1. On the **Data Collection Rules** page, you can see the DCR that VM insights created. Select **Create** to create a new data collection rule.
 
    :::image type="content" source="../media/dcr-create.png" alt-text="Screenshot of the Data Collection Rules screen with Create highlighted." lightbox="../media/dcr-create.png":::
 
@@ -47,7 +49,7 @@ To create the DCR to collect the event logs:
 
 1. On the **Collect and deliver** tab, select **Add data source**.
 1. On the **Add data source** screen, under **Data source type**, select **Linux Syslog**.
-1. On the **Add data source** screen, select **Next: Destination** or the **Destination** tab, and make sure the **Account or namespace** matches the Log Analytics workspace that you want to use. You can use the default Log Analytics workspace that VM Insights set up, or create or use another Log Analytics workspace.
+1. On the **Add data source** screen, select **Next: Destination** or the **Destination** tab, and make sure the **Account or namespace** matches the Log Analytics workspace that you want to use. You can use the default Log Analytics workspace that VM insights set up, or create or use another Log Analytics workspace.
 
 1. On the **Add data source** screen, select **Add data source**.
 1. On the **Create Data Collection Rule** screen, select **Review + create**, and when validation passes, select **Create**.
@@ -56,14 +58,14 @@ To create the DCR to collect the event logs:
 
 ## View log data
 
-You can view and analyze the log data collected by your DCR by using KQL log queries. A set of precreated KQL queries is available for VMs, but you can write a simple query to look at the events your DCR is collecting.
+You can view and analyze the log data collected by your DCR by using KQL log queries. A set of sample KQL queries is available for VMs, but you can write a simple query to look at the events your DCR is collecting.
 
 1. On your VM's **Overview** page, select **Logs** from the left navigation menu under **Monitoring**. Log Analytics opens an empty query window with the scope set to your VM.
 
    You can also access log data by selecting **Logs** from the left navigation of the Azure Monitor **Overview** page. If necessary, select **Select scope** at the top of the query window to scope the query to the desired Log Analytics workspace and VM.
 
    >[!NOTE]
-   > The **Queries** window with precreated queries might open when you open Log Analytics. For now, close this window, because you're going to manually create a simple query.
+   > The **Queries** window with sample queries might open when you open Log Analytics. For now, close this window, because you're going to manually create a simple query.
    
 1. In the empty query window, type *Syslog*, and then select **Run**. All the system log events the DCR collected within the **Time range** are displayed.
 

@@ -3,7 +3,7 @@ Azure Monitor helps you collect, analyze, and alert on various types of host and
 - Azure Monitor provides a set of VM host logs and performance and usage metrics for all Azure VMs.
 - You can enable recommended alert rules when you create VMs or afterwards to alert on important VM host metrics.
 - Azure Monitor Metrics Explorer lets you graph and analyze metrics for Azure VMs and other resources.
-- VM Insights provides a simple way to monitor important VM client performance counters and processes running on your VM.
+- VM insights provides a simple way to monitor important VM client performance counters and processes running on your VM.
 - You can create data collection rules to collect other metrics and logs from your VM client.
 - You can use Log Analytics to query and analyze log data.
 
@@ -28,9 +28,9 @@ To learn more about monitoring your VMs with Azure Monitor, see the following re
 - [Supported metrics with Azure Monitor](/azure/azure-monitor/reference/supported-metrics/metrics-index)
 - [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log)
 - [Supported metrics for Microsoft.Compute/virtualMachines](/azure/azure-monitor/reference/supported-metrics/microsoft-compute-virtualmachines-metrics)
-- [What is VM Insights?](/azure/azure-monitor/vm/vminsights-overview)
-- [Create interactive reports with VM Insights workbooks](/azure/azure-monitor/vm/vminsights-workbooks)
-- [View app dependencies with VM Insights](/azure/azure-monitor/vm/vminsights-maps)
+- [What is VM insights?](/azure/azure-monitor/vm/vminsights-overview)
+- [Create interactive reports with VM insights workbooks](/azure/azure-monitor/vm/vminsights-workbooks)
+- [View app dependencies with VM insights](/azure/azure-monitor/vm/vminsights-maps)
 - [Azure Monitor Agent](/azure/azure-monitor/agents/azure-monitor-agent-overview)
 - [Collect events and performance counters from virtual machines with Azure Monitor Agent](/azure/azure-monitor/agents/data-collection-rule-azure-monitor-agent)
 - [Tutorial: Collect guest logs and metrics from an Azure virtual machine](/azure/azure-monitor/vm/tutorial-monitor-vm-guest)

@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: Create a DCR.
       isCorrect: true
-      explanation: You can create DCRs to collect VM log data or performance counters that the VM Insights DCR doesn't collect.
-    - content: Enable VM Insights.
+      explanation: You can create DCRs to collect VM log data or performance counters that the VM insights DCR doesn't collect.
+    - content: Enable VM insights.
       isCorrect: false
-      explanation: The VM Insights predefined DCR collects metrics, not log data.
+      explanation: The VM insights predefined DCR collects metrics, not log data.
     - content: Enable boot diagnostics.
       isCorrect: false
       explanation: The serial log information that boot diagnostics collects is separate from the system event logs.

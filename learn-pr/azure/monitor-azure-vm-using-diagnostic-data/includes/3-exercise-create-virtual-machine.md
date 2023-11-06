@@ -52,7 +52,7 @@ Once your VM is created, Azure starts collecting basic metrics data automaticall
 
    :::image type="content" source="../media/platform-metrics.png" alt-text="Screenshot that shows the platform metrics graphics on the VM Overview page." lightbox="../media/platform-metrics.png":::
 
-1. Under **Guest OS metrics**, notice that guest OS metrics aren't being collected yet. In the next units, you configure VM Insights and data collection rules to collect guest OS metrics.
+1. Under **Guest OS metrics**, notice that guest OS metrics aren't being collected yet. In the next units, you configure VM insights and data collection rules to collect guest OS metrics.
 
 ## View the activity log
 

@@ -20,9 +20,9 @@ quiz:
     - content: Metrics and logs.
       isCorrect: true
       explanation: Azure Monitor can collect two main types of data for monitoring VMs, metrics and logs.
-    - content: VM Insights and Alerts.
+    - content: VM insights and Alerts.
       isCorrect: false
-      explanation: VM Insights and Alerts are based on Azure Monitor Metrics data.
+      explanation: VM insights and Alerts are based on Azure Monitor Metrics data.
     - content: Workbooks and Workspaces.
       isCorrect: false
       explanation: Workbooks and Log Analytics Workspaces work with already-collected metrics and log data.

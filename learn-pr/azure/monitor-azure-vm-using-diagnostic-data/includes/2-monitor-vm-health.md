@@ -1,4 +1,4 @@
-In this unit, you explore Azure monitoring capabilities for VMs, and the types of monitoring data you can collect and analyze with Azure Monitor. Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to monitoring data from Azure resources, including VMs. Azure Monitor has two main monitoring features: Azure Monitor Metrics and Azure Monitor Logs.
+In this unit, you explore Azure monitoring capabilities for VMs, and the types of monitoring data you can collect and analyze with Azure Monitor. Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to monitoring data from Azure and non-Azure resources, including VMs. Azure Monitor has two main monitoring features: Azure Monitor Metrics and Azure Monitor Logs.
 
 Metrics are numerical values collected at predetermined intervals to describe some aspect of a system. Metrics can measure VM performance, resource utilization, error counts, user responses, or any other aspect of the system that you can quantify. Azure Monitor Metrics automatically monitors a predefined set of metrics for every Azure VM, and retains the data for 93 days with some exceptions.
 
@@ -72,9 +72,9 @@ VM client monitoring can include monitoring the operating system (OS), workloads
 
 DCRs define what data to collect and where to send that data. You can use a DCR to send Azure Monitor metrics data, or *performance counters*, to Azure Monitor Logs or Azure Monitor Metrics. Or, you can send event log data to Azure Monitor Logs. In other words, Azure Monitor Metrics can store only metrics data, but Azure Monitor Logs can store both metrics and event logs.
 
-### VM Insights
+### VM insights
 
-VM Insights is an Azure Monitor feature that helps get you started monitoring your VM clients. VM Insights is especially useful for exploring overall VM usage and performance when you don't yet know the metric of primary interest. VM Insights provides:
+VM insights is an Azure Monitor feature that helps get you started monitoring your VM clients. VM insights is especially useful for exploring overall VM usage and performance when you don't yet know the metric of primary interest. VM insights provides:
 
 - Simplified Azure Monitor Agent onboarding to enable monitoring a VM's guest OS and workloads.
 - A preconfigured DCR that monitors and collects the most common performance counters for Windows and Linux.
@@ -82,9 +82,9 @@ VM Insights is an Azure Monitor feature that helps get you started monitoring yo
 - A set of predefined workbooks that show collected VM client metrics over time.
 - Optionally, collection of processes running on the VM, dependencies with other services, and a dependency map that displays interconnected components with other VMs and external sources.
 
-Predefined VM Insights workbooks show performance, connections, active ports, traffic, and other collected data from one or several VMs. You can view VM Insights data directly from a single VM, or see a combined view of multiple VMs to view and assess trends and patterns across VMs. You can edit the prebuilt workbook configurations or create your own custom workbooks.
+Predefined VM insights workbooks show performance, connections, active ports, traffic, and other collected data from one or several VMs. You can view VM insights data directly from a single VM, or see a combined view of multiple VMs to view and assess trends and patterns across VMs. You can edit the prebuilt workbook configurations or create your own custom workbooks.
 
 ### Client event log data
 
-VM Insights creates a DCR that collects a specific set of performance counters. To collect other data, such as event logs, you can create a separate DCR that specifies the data you want to collect from the VM and where to send it. Azure Monitor stores collected data in a Log Analytics workspace, where you can access and analyze the data by using log queries written in Kusto Query Language (KQL).
+VM insights creates a DCR that collects a specific set of performance counters. To collect other data, such as event logs, you can create a separate DCR that specifies the data you want to collect from the VM and where to send it. Azure Monitor stores collected data in a Log Analytics workspace, where you can access and analyze the data by using log queries written in Kusto Query Language (KQL).
 
