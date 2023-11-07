@@ -156,7 +156,7 @@ Complete the following steps install Azure CLI and the `containerapp` extension.
 
 Complete the following steps to install Microsoft PowerShell.
 
-1. Open a browser window, and then navigate to: [https://learn.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-7.3](/powershell/scripting/install/installing-powershell?view=powershell-7.3).
+1. Open a browser window, and then navigate to: [https://learn.microsoft.com/powershell/scripting/install/installing-powershell](/powershell/scripting/install/installing-powershell).
 
 1. In the browser window, follow the instructions for installing/updating PowerShell for your computer's operating system.
 
@@ -328,7 +328,7 @@ Complete the following steps to create a WebAPI app and publish to a GitHub repo
 
 1. In the root project folder, create a .gitignore file that contains the following information:
 
-    ```
+    ```gitignore
     [Bb]in/
     [Oo]bj/
     ```
@@ -543,6 +543,6 @@ Complete the following steps to deploy a self-hosted Windows agent:
 
     A message informing you that the agent started successfully is displayed.
 
-    For extra help, see the following documentation: [https://learn.microsoft.com/azure/devops/pipelines/agents/windows-agent?view=azure-devops#permissions](/azure/devops/pipelines/agents/windows-agent?view=azure-devops#permissions)
+    For extra help, see the following documentation: [https://learn.microsoft.com/azure/devops/pipelines/agents/windows-agent](/azure/devops/pipelines/agents/windows-agent)
 
 You're now ready to begin the Guided project exercises. Good luck!

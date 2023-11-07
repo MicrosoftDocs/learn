@@ -10,7 +10,7 @@ Detailed resources:
 
 - Azure Container Registry documentation: [https://docs.microsoft.com/azure/container-registry/](/azure/container-registry/)
 
-- Azure DevOps documentation: [https://docs.microsoft.com/azure/devops/?view=azure-devops](/azure/devops/?view=azure-devops)
+- Azure DevOps documentation: [https://docs.microsoft.com/azure/devops/](/azure/devops/)
 
 - Microsoft Entra managed identities for Azure resources documentation: [https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/](/azure/active-directory/managed-identities-azure-resources/)
 

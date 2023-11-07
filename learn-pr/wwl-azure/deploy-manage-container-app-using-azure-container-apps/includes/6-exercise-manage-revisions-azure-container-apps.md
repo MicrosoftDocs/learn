@@ -107,4 +107,4 @@ You complete the following tasks during this exercise:
 
 1. Verify that your revisions are configured as follows:
 
-    ![Screenshot of a Container App revisions configured with labels for traffic-splitting.](../media/container-app-traffic-splitting-percentage-labels.png)
+    ![Screenshot of a Container App revisions configured with labels for traffic-splitting.](../media/container-app-traffic-split-percentage-labels.png)

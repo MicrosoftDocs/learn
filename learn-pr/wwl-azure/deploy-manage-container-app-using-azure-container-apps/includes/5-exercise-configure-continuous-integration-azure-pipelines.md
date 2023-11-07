@@ -123,11 +123,9 @@ You complete the following tasks during this exercise:
 
     A pipeline page opens to display the associated job. The job section displays job status, which progresses from Queued to Waiting.
 
-    ![Screenshot of Azure Pipelines showing a successful run of Pipeline1.](../media/pipeline-progress-queued-waiting.png)
-
     It can take a couple minutes for the status to transition from Queued to Waiting.
 
-1. If 'Permission needed' is displayed under Job,  requires permission to proceed (), view the requirement and provide the required permissions.
+1. If a 'Permission needed' message is displayed ("This pipeline needs permission to access 2 resources before this run can continue"), select **View** and then provide the required permissions.
 
 1. Monitor the status of the run operation and verify that the run is successful.
 
@@ -143,7 +141,7 @@ In this task, you examine your pipeline and container app to verify successful p
 
 1. The Runs tab displays individual runs that can be selected to review details.
 
-    ![Screenshot of Azure Pipelines showing a successful run of Pipeline1.](../media/pipeline-run-validation-devops.png)
+    ![Screenshot of Azure Pipelines showing the Runs tab for Pipeline1 after running the job.](../media/pipeline-run-validation-devops.png)
 
 1. Open your Azure portal, and then open your Container App.
 

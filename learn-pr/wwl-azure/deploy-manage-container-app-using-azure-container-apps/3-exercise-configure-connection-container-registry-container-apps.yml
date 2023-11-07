@@ -4,10 +4,12 @@ title: Exercise - Configure Azure Container Registry for a secure connection wit
 metadata:
   title: Exercise - Configure Azure Container Registry for a secure connection with Azure Container Apps
   description: "Exercise - Configure Azure Container Registry for a secure connection with Azure Container Apps"
-  ms.date: 11/06/2023
+  ms.date: 11/07/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-guided-project
+  ms.prod: azure
+  ms.service: container-apps
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-configure-connection-container-registry-container-apps.md)]
