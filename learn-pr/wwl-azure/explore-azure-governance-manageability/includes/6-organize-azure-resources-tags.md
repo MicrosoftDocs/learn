@@ -10,7 +10,7 @@ Perhaps one of the best uses of tags is to group billing data. When you download
 
 There are a few things to consider about tagging:
 
-- Each resource or resource group can have a maximum of 15 tag name/value pairs.
+- Each resource or resource group can have a maximum of 50 tag name/value pairs.
 - Tags applied to the resource group aren't inherited by the resources in that resource group.
 
 > [!NOTE]
