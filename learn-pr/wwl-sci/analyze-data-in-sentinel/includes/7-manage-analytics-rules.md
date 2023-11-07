@@ -21,7 +21,7 @@ A typical modification that you might want to implement is to attach an automate
 
 For example, your analytics rule might be detecting an incident that has already been resolved, and you want to reduce further alerts if similar activity occurs. By attaching a playbook that contains automated activity, you can change the incident status or add comments when a similar incident is detected.  
 
-:::image type="content" source="../media/06-existing-rule-automated-response.png" alt-text="Screenshot of the editing existing analytics rule." border="false":::
+:::image type="content" source="../media/06-existing-rule-automated-response.png" alt-text="Screenshot of the editing existing analytics rule." lightbox="../media/06-existing-rule-automated-response.png" "border="false":::
 
 ## Disable rules
 

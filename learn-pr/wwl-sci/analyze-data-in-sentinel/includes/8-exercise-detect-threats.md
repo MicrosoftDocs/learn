@@ -39,7 +39,7 @@ In this exercise, you'll explore a Microsoft Sentinel analytics rule and perform
 
 1. In the **Results simulation** pane, select **Test with current data**, and then observe the results.
 
-    :::image type="content" source="../media/07-set-rule-logic-page.png" alt-text="Screenshot Analytics Rule Logic." border="true":::
+    :::image type="content" source="../media/07-set-rule-logic-page.png" alt-text="Screenshot of Analytics Rule Set Logic tab." lightbox="../media/07-set-rule-logic-page.png" border="true":::
 
 1. In the **Alert enrichment (Preview)** section under **Entity Mapping**, map the entities that are returned as part of the query rule and that you can use to perform in-depth analysis.
 1. In the **Query Scheduling** section, configure how often the query should run, and how far in history to search. Select query to run on every 5 minutes, and accept the default history of 5 hours.
