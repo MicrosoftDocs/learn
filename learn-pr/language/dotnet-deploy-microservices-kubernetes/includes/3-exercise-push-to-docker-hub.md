@@ -3,15 +3,13 @@ In order for Kubernetes to create a container image, it needs a place from which
 > [!NOTE]
 > You will complete this exercise in a GitHub Codespace that has [Docker](https://www.docker.com/products/docker-desktop) and the [.NET SDK](https://dotnet.microsoft.com/download) pre-installed. When you use these techniques in your own development environment, make sure you have these prerequisites installed.
 
-## Connect to the codespace
+## Create a new GitHub Codespace
 
-Let's start by connecting to the GitHub codespace that hosts the exercise.
+Let's start by creating a new GitHub codespace that hosts the exercise.
 
-1. Open a browser and go to the [eShopLite repository](https://github.com/microsoftdocs/mslearn-dotnet-cloudnative).
-2. Select **Code** and then select the **Codespaces** tab.
-3. Select **Create codespace on main**. GitHub creates and configures the codespace. This may take a few minutes.
+You can setup a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-kubernetes%2Fdevcontainer.json).
 
-    ![Screenshot showing how to create a codespace from the GitHub repository.](../media/start-codespace.png)
+This takes several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the `/dotnet-kubernetes` directory.
 
 ### Verify the Docker images by creating containers in the codespace
 
