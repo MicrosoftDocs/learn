@@ -7,7 +7,7 @@ In this unit, you will:
 * Create an Azure App Configuration instance.
 * Add a feature flag to the App Configuration store.
 * Connect your app to the App Configuration store.
-* Amend the **:::no-loc text="eShopLite":::** to use the feature flag.
+* Amend the application to use the feature flag.
 * Change the products page to display a sales banner.
 * Build and test the app.
      
@@ -81,7 +81,7 @@ Complete the following steps to create an App Configuration instance in your Azu
 
 ### Store the App Configuration connection string
 
-You'll now add the App Configuration connection string to the **:::no-loc text="eShopLite":::** app. Complete the following steps:
+You'll now add the App Configuration connection string to the application. Complete the following steps:
 
 1. In Visual Studio Code, open the **:::no-loc text="docker-compose.yml":::** file.
 

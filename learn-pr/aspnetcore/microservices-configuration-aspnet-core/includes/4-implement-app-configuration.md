@@ -91,7 +91,7 @@ To verify the feature flag works as expected in a codespace, complete the follow
 
 If you are using Visual Studio Code locally, open **http://localhost:32000/products**.
 
-:::image type="content" source="../media/discounted-prices.png" alt-text="A screenshot of the eShopLite app showing discounted prices." border="true" lightbox="../media/discounted-prices.png":::
+:::image type="content" source="../media/discounted-prices.png" alt-text="A screenshot of the application showing discounted prices." border="true" lightbox="../media/discounted-prices.png":::
 
 To test the feature flag is controlling the seasonal sale, complete the following steps:
 
@@ -100,7 +100,7 @@ To test the feature flag is controlling the seasonal sale, complete the followin
 1. Select the **SeasonalDiscount** enabled toggle to switch off this feature.
 
     :::image type="content" source="../media/disable-feature-flag.png" alt-text="A screenshot showing the Azure portal page for App Configuration. The SeasonalDiscount is disabled." border="true" lightbox="../media/disable-feature-flag.png":::
-1. In your browser, return to the **:::no-loc text="eShopLite":::** app.
+1. In your browser, return to the application.
 1. Select the **Home** page, then the **Products** page.
 
     :::image type="content" source="../media/eshoplite-sales-closed.png" alt-text="A screenshot showing the eShopLite app without a sales banner." border="true" lightbox="../media/eshoplite-sales-closed.png":::
