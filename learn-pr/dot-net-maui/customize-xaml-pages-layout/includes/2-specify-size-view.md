@@ -38,7 +38,7 @@ If you don't specify the size of a view, it grows automatically to be exactly la
     FontSize="40"/>
 ```
 
-This example defines a label to display the word `Hello` on a silver background. Because you're not specifying the size of the label, it's automatically sized to fit around the word `Hello`. The following image shows the label rendered on an Android device:
+This example defines a label to display the word `Hello` on a silver background. Because you're not specifying the size, the label is automatically sized to fit around the word `Hello`. The following image shows the label rendered on an Android device:
 
 :::image type="content" source="../media/2-label-android.png" alt-text="Screenshot showing a label rendered on an Android device that displays the word Hello in the center with a silver background.":::
 

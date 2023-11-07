@@ -1,6 +1,6 @@
 In this exercise, you use nested `StackLayout` containers to arrange the views in your User Interface (UI). The first screenshot shows the layout implemented by the starter project, and the second one shows the layout for the completed project. Your job is to use `StackLayout` containers and `LayoutOptions` to turn the starter project into the completed version.
 
-:::image type="content" source="../media/5-starter-complete.png" alt-text="Screenshot showing the starter solution, with all the labels placed vertically in close proximity and the completed solution, with controls aligned and positioned in a more intuitive manner.":::
+:::image type="content" source="../media/5-starter-complete.png" alt-text="Screenshot showing the starter solution with all of the labels placed vertically in close proximity. Next to it, is the completed solution with controls aligned and positioned in a more intuitive manner.":::
 
 ## Explore the starter solution
 
@@ -14,7 +14,7 @@ The starter solution contains a fully functional tip calculator app. Start by ex
 
 1. Experiment with the tip amount buttons and the slider.
 
-1. When you've finished, close the app.
+1. When you're finished, close the app.
 
 1. Open **MainPage.xaml**. Notice that all the views are placed into one `VerticalStackLayout`, as shown by the following XAML markup:
 
@@ -50,7 +50,7 @@ The starter solution contains a fully functional tip calculator app. Start by ex
 
 ## Fix the UI
 
-Now that you've seen the app run, you can make it look better by adding `HorizontalStackLayout` containers. The goal is to make the app look like the screenshot at the start of the lab.
+Now that you saw the app run, you can make it look better by adding `HorizontalStackLayout` containers. The goal is to make the app look like the screenshot at the start of the lab.
 
 1. Open the **MainPage.xaml** file.
 

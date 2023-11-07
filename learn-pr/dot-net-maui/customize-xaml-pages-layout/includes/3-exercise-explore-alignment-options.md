@@ -13,7 +13,7 @@ In this exercise, you use a .NET MAUI application to see the effect of the four 
 
 Run the app to test `LayoutOptions` and see how the different layout options change the size and position of the label.
 
-1. Test the app by interacting with the buttons that change the horizontal and vertical `LayoutOptions`. Select them and observe what happens. The following image shows what happens if you select the Horizontal and Vertical alignment option of **Center**:
+1. Test the app by interacting with the buttons that change the horizontal and vertical `LayoutOptions`. Select them and observe what happens. The following image shows what happens if you select **Center** for both the Horizontal and Vertical alignment options:
 
    :::image type="content" source="../media/3-layout-android.png" alt-text="Screenshot of the Alignment app running on an Android device. The alignment option Center is selected for both Horizontal and Vertical alignment.":::
 
