@@ -8,7 +8,7 @@ Exact data match (EDM) allows you to create a sensitive information type (SIT) t
 
 For example, if you have customer account numbers, EDM specifically flags those numbers only, which significantly lessens the risk of incorrect flags.
 
- :::image type="content" source="../media/edmclassification.png" alt-text="Diagram showing how exact data match based classification works." lightbox="../media/edmclassification.png":::  
+ :::image type="content" source="../media/exact-data-match-classification.png" alt-text="Diagram showing how exact data match based classification works." lightbox="../media/exact-data-match-classification.png":::  
 
 EDM-based classification enables you to create custom sensitive types that match exact values from a database, which can hold up to 100 million rows of data. This database can be refreshed daily to reflect changes such as new or departing employees, patients, or clients, ensuring your custom sensitive information types remain current and relevant. You can also apply these classifications to policies for enhanced data protection. Examples include [Microsoft Purview Data Loss Prevention policies](/purview/dlp-learn-about-dlp?azure-portal=true) or [Microsoft Cloud App Security file policies](/defender-cloud-apps/data-protection-policies?azure-portal=true).
 
@@ -104,7 +104,7 @@ You can toggle back and forth between the new and classic experiences, but we re
 
 ### The classic EDM experience workflow at a glance
 
- :::image type="content" source="../media/swimlane_edm_process.png" alt-text="Diagram showing the process of creating an exact data match sensitive information type with the classic experience." lightbox="../media/swimlane_edm_process.png":::  
+ :::image type="content" source="../media/swimlane-exact-data-match-process.png" alt-text="Diagram showing the process of creating an exact data match sensitive information type with the classic experience." lightbox="../media/swimlane-exact-data-match-process.png":::  
 
 |Phase|Requirements|
 |---|---|
@@ -118,7 +118,7 @@ You can toggle back and forth between the new and classic experiences, but we re
 
 In this interactive guide, you see how Information Protection can help you categorize content with exact data match (EDM) classifiers and label sensitive items to protect your organization's data.
 
-[:::image type="content" source="../media/exact-data-match-interactive-guide.png" alt-text="Cover for an interactive guide that says Identify data using exact data match-based classification interactive guide." border="false":::](https://mslearn.cloudguides.com/guides/Identify%20data%20using%20exact%20data%20match-based%20classification%20in%20Microsoft%20Purview%20Information%20Protection)
+[:::image type="content" source="../media/exact-data-match-interactive-guide.png" alt-text="Illustration of the cover of an interactive guide that says Identify data using exact data match-based classification interactive guide." border="false":::](https://mslearn.cloudguides.com/guides/Identify%20data%20using%20exact%20data%20match-based%20classification%20in%20Microsoft%20Purview%20Information%20Protection)
 
 ## Learn more
 
