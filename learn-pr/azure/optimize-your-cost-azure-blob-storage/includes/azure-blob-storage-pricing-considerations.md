@@ -4,7 +4,7 @@ In this unit, you’ll determine the pricing considerations associated with Azur
 
 ### Describe the Azure Blob Storage billing model
 
-The Azure Blob Storage billing model is comprised of several different components that reflect a variety of available options when you implement and use this service. The most straightforward is the per-gigabyte (GB) charge that’s associated with the storage capacity allocated to accommodate data at rest. However, even in this case, the actual cost depends on criteria such as the storage account type and replication scope and the blob access tier. Storage capacity is billed per average daily amount of data stored in GBs over a monthly period.
+The Azure Blob Storage billing model is composed of several different components that reflect a variety of available options when you implement and use this service. The most straightforward is the per-gigabyte (GB) charge that’s associated with the storage capacity allocated to accommodate data at rest. However, even in this case, the actual cost depends on criteria such as the storage account type and replication scope and the blob access tier. Storage capacity is billed per average daily amount of data stored in GBs over a monthly period.
 
 You can divide the core charges associated with active blob usage into the following categories:
 
@@ -53,7 +53,7 @@ At the end of each billing cycle, charges for each category along with their sum
 
 ### Estimate Azure Blob Storage costs
 
-Understanding your access patterns and correlating them with your durability and availability needs will help you best manage your Azure Blob Storage costs. The primary tool for estimating these costs is the Azure pricing calculator. However, you might also want to consider using the Microsoft Excel­–based template the Azure Storage team provides. This template offers some initial guidance by providing a predefined set of worksheets that automatically calculate migration, monthly estimates, and future pricing estimates based on the workload-driven input that you specify. That input includes:
+Understanding your access patterns and correlating them with your durability and availability needs will help you to best manage your Azure Blob Storage costs. The primary tool for estimating these costs is the Azure pricing calculator. However, you might also want to consider using the Microsoft Excel­–based template the Azure Storage team provides. This template offers some initial guidance by providing a predefined set of worksheets that automatically calculate migration, monthly estimates, and future pricing estimates based on the workload-driven input that you specify. That input includes:
 
 - Target region
 
@@ -78,7 +78,7 @@ You can modify the template to match your specific needs. You can use the result
 
 #### Azure pricing calculator
 
-To calculate the estimated storage cost, on the [**Azure pricing calculator**](https://azure.microsoft.com/pricing/calculator/) page, select the **Storage Accounts** tile. Within the same page, scoll down to the **Storage Accounts** section and specify the options that reflect your anticipated usage needs.
+To calculate the estimated storage cost, on the [**Azure pricing calculator**](https://azure.microsoft.com/pricing/calculator/) page, select the **Storage Accounts** tile. Within the same page, scroll down to the **Storage Accounts** section and specify the options that reflect your anticipated usage needs.
 
 > [!NOTE]
 > Before you calculate an estimate, consider signing in on the **Azure pricing calculator** page using the same account you use to manage your Azure environment. This allows you to save the resulting quote for future reference.
