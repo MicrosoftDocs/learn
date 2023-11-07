@@ -22,7 +22,7 @@ In the example here, the server admin account that you connect with is a member 
 
 ## Authentication and authorization in practice
 
-As a best practice, your application should use a dedicated account to authenticate. This way, you can limit the permissions granted to the application and reduce the risks of malicious activity in case the application code is vulnerable to a SQL injection attack. We recommend that you create a contained database user, which allows your app to authenticate directly to the database. For more information, see [Contained Database Users - Making Your Database Portable](/sql/relational-databases/security/contained-database-users-making-your-database-portable?view=sql-server-2017).
+As a best practice, your application should use a dedicated account to authenticate. This way, you can limit the permissions granted to the application and reduce the risks of malicious activity in case the application code is vulnerable to a SQL injection attack. We recommend that you create a contained database user, which allows your app to authenticate directly to the database. For more information, see [Contained Database Users - Making Your Database Portable](/sql/relational-databases/security/contained-database-users-making-your-database-portable).
 
 Use Microsoft Entra authentication to centrally manage identities of database users and as an alternative to SQL Server authentication.
 

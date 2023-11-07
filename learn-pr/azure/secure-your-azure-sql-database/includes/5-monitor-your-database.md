@@ -1,4 +1,6 @@
-Imagine that you receive an alert from your company's security administrator. A potential security breach has been detected on your network. An unauthorized individual might have accessed your database through malicious activity. How would you track this down? You know that you need to be actively monitoring your database for suspicious activity. What can you do to not only gain visibility into what's happening in your database, but to also prevent malicious activity from occurring?
+Imagine that you receive an alert from your company's security administrator. A potential security breach has been detected on your network. An unauthorized individual might have accessed your database through malicious activity. How would you track this down?
+
+You know that you need to be actively monitoring your database for suspicious activity. What can you do to not only gain visibility into what's happening in your database, but to also prevent malicious activity from occurring?
 
 Azure SQL Database has built-in features that can help you track what's happening in your database. It can monitor and alert you if it identifies malicious activity.
 

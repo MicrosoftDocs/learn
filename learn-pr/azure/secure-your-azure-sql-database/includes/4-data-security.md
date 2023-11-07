@@ -6,7 +6,7 @@ Azure SQL Database enforces Transport Layer Security (TLS) encryption always for
 
 ## Transparent data encryption
 
-Azure SQL Database protects your data at rest using transparent data encryption (TDE). TDE performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application. Using a database encryption key, transparent data encryption performs real-time I/O encryption and decryption of the data at the page level. Each page is decrypted when it's read into memory and then encrypted before being written to disk.
+Azure SQL Database protects your data at rest using transparent data encryption (TDE). TDE performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application. Transparent data encryption performs real-time I/O encryption and decryption of the data at the page level by using a database encryption key. Each page is decrypted when it's read into memory and then encrypted before being written to disk.
 
 By default, TDE is enabled for all newly deployed Azure SQL databases. It's important to check that data encryption isn't turned off. Older Azure SQL Server databases might not have TDE enabled.
 
@@ -63,7 +63,7 @@ Take a look at how data masking would work in your _marketplaceDb_ database.
     | **Padding String**       | XXX-XXX-                                |
     | **Exposed Suffix**       | 4                                       |
 
-    Select **Add** to add the masking rule.
+1. Select **Add** to add the masking rule.
 
     :::image type="content" source="../media/4-add-masking-rule.png" alt-text="Screenshot of the Azure portal showing the values to add a masking rule.":::
 
@@ -76,7 +76,7 @@ Take a look at how data masking would work in your _marketplaceDb_ database.
     | **Column**               | EmailAddress (nvarchar)                 |
     | **Masking field format** | Email (aXXX@XXX.com)                    |
 
-    Select **Add** to add the masking rule.
+1. Select **Add** to add the masking rule.
 
 1. Each new mask is added to the masking rules list. Select **Save** to apply the masks.
 
