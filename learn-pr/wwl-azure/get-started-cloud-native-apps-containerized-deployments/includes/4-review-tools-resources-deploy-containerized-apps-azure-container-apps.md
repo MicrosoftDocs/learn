@@ -33,7 +33,7 @@ This reference implementation uses Container Apps features in the following ways
 - **Secrets Management**: Secure management of secrets for Package, Ingestion, and Workflow services.
 - **Container Registry**: Fabrikam Drone Delivery leverages Azure Container Registry (ACR) for publishing Docker images.
 - **Revisions**: Azure Container Apps' revision feature is used for safe updates. The Workflow Service, operating as a message consumer, deploys in single revision mode.
-- **ARM Templates**: The application is deployed using ARM templates, simplifying deployment.
+- **Azure Resource Manager Templates**: The application is deployed using Azure Resource Manager templates, simplifying deployment.
 - **Log Analytics**: Container logs are reviewed in Log Analytics without the need for additional configuration.
 
 ## Azure resources

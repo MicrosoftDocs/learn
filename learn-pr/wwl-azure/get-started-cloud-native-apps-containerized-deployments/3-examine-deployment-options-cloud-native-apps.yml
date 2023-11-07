@@ -4,10 +4,12 @@ title: Examine deployment options for cloud-native apps
 metadata:
   title: Examine deployment options for cloud-native apps
   description: "Examine deployment options for cloud-native apps"
-  ms.date: 11/06/2023
+  ms.date: 11/07/2023
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: module-intro-to-product
+  ms.topic: module
+  ms.prod: azure
+  ms.service: container-apps
 durationInMinutes: 5
 content: |
   [!include[](includes/3-examine-deployment-options-cloud-native-apps.md)]

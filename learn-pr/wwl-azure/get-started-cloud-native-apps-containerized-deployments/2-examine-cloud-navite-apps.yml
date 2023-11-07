@@ -4,10 +4,12 @@ title: Examine cloud-native apps
 metadata:
   title: Examine cloud-native apps
   description: "Examine cloud-native apps"
-  ms.date: 11/06/2023
+  ms.date: 11/07/2023
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: module-intro-to-product
+  ms.topic: module
+  ms.prod: azure
+  ms.service: container-apps
 durationInMinutes: 6
 content: |
   [!include[](includes/2-examine-cloud-navite-apps.md)]
