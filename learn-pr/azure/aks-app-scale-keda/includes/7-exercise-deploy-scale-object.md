@@ -36,7 +36,7 @@ In this exercise, you deploy a scale object custom resource definition (CRD) int
               periodSeconds: 15
     ```
 
-* `triggers`: This section uses `scalers` to detect if the object should be activated or deactivated and feed custom metrics for specific event sources. The `listLength` metrics instructs KEDA to scale up when there are ten items in the list.
+* `triggers`: This section uses `scalers` to detect if the object should be activated or deactivated and feed custom metrics for specific event sources. The `listLength` metric instructs KEDA to scale up when there are ten items in the list.
 
     ```yaml
       triggers:
