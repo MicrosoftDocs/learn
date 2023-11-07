@@ -2,21 +2,21 @@ The eShop project has two services that communicate with each other using HTTP r
 
 The current version of the app has no resiliency handling. If the `Product` service is unavailable, the `Store` service returns an error to the customers and asks them to try again later. 
 
-You've been asked to add resilience to the app, so that the `Store` service will retry the backend service call if it fails.
+You've been asked to add resilience to the app, so that the `Store` service retries the backend service call if it fails.
 
-In this exercise, you'll add resiliency to an existing cloud native app and test that your fix has worked.
+In this exercise, you add resiliency to an existing cloud native app and test that your fix has worked.
 
 ## Create a new GitHub Codespace
 
-Let's start by create a new GitHub codespace that hosts the exercise.
+Let's start by create a new GitHub Codespace that hosts the exercise.
 
-You can setup a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-resiliency%2Fdevcontainer.json).
+You can set up a preconfigured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-resiliency%2Fdevcontainer.json).
 
-This will take several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the `/dotnet-resiliency` directory.
+This takes several minutes while GitHub creates and configures the codespace. Once finished, the code files for the exercise are shown. The code used for the rest of this module is in the `/dotnet-resiliency` directory.
 
 ## Update your development environment
 
-The eShopLite app needs to be updated for the Codepsace you're running the app in. This allows the images to render in the front end.
+The eShopLite app needs to be updated for the Codespace you're running the app in. This allows the images to render in the front end.
 
 1. From the EXPLORER sidebar, select **docker-compose.yml**.
 
@@ -73,7 +73,7 @@ You'll now stop the product service to see what happens to the app.
     cd0c822a5222   vsc-eshoplite-958868d22c9851dd911b2423199bfc782861d1a8f7afac48e5096a1b7516082f   "/bin/sh -c 'echo Co…"   27 minutes ago   Up 27 minutes     
     ``` 
 
-1. Look for the CONTAINER ID for the **productservice** container. In the above example the ID is **6ba80f3c7ab0**.
+1. Look for the CONTAINER ID for the **productservice** container. In the above example, the ID is **6ba80f3c7ab0**.
 1. Stop your product service with this docker command:
 
     ```bash
