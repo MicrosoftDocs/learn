@@ -8,7 +8,6 @@ metadata:
   ms.author: cahowd
   ms.topic: module
   ms.prod: azure
-  ms.service: container-apps
 title: Configure a container app in Azure Container Apps
 summary: |
   This module examines the features and capabilities of Azure Container Apps, and then focuses on how to create, configure, scale, and manage container apps using Azure Container Apps.

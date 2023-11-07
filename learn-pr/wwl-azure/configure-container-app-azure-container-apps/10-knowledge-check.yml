@@ -9,7 +9,6 @@ metadata:
   ms.author: cahowd
   ms.topic: module
   ms.prod: azure
-  ms.service: container-apps
 durationInMinutes: 9
 quiz:
   title: "Check your knowledge"
@@ -18,7 +17,7 @@ quiz:
     choices:
     - content: "Deploying API endpoints, hosting background processing jobs, handling event-driven processing, running microservices."
       isCorrect: true
-      explanation: "Correct. Azure Container Apps is designed to run microservices and containerized applications on a serverless platform, with common uses including deploying API endpoints, hosting background processing jobs, handling event-driven processing, and running microservices."
+      explanation: "Correct. Azure Container Apps is designed to run microservices and containerized applications on a serverless platform, with common uses including deploying API endpoints, hosting background processing jobs, handle event-driven processing, and run microservices."
     - content: "Managing cloud infrastructure."
       isCorrect: false
       explanation: "Incorrect. Azure Container Apps is designed to abstract away the concerns of managing cloud infrastructure."
