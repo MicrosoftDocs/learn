@@ -51,18 +51,18 @@
         "redirect_document_id": true
       },
       {
-        "source_path_from_root": "/learn-pr/azure/introduction-to-red-hat-azure/what.yml",
-        "redirect_url": "/training/modules/introduction-to-red-hat-azure/what-is-red-hat-on-azure",
+        "source_path_from_root": "/learn-pr/azure/introduction-to-red-hat-azure/2-what.yml",
+        "redirect_url": "/training/modules/introduction-to-red-hat-azure/2-what-is-red-hat-on-azure",
         "redirect_document_id": false
       },
       {
-        "source_path_from_root": "/learn-pr/azure/introduction-to-red-hat-azure/how.yml",
-        "redirect_url": "/training/modules/introduction-to-red-hat-azure/how-red-hat-on-azure-works",
+        "source_path_from_root": "/learn-pr/azure/introduction-to-red-hat-azure/3-how.yml",
+        "redirect_url": "/training/modules/introduction-to-red-hat-azure/3-how-red-hat-on-azure-works",
         "redirect_document_id": false
       },
       {
-        "source_path_from_root": "/learn-pr/azure/introduction-to-red-hat-azure/when.yml",
-        "redirect_url": "/training/modules/introduction-to-red-hat-azure/when-to-use-red-hat-on-azure",
+        "source_path_from_root": "/learn-pr/azure/introduction-to-red-hat-azure/4-when.yml",
+        "redirect_url": "/training/modules/introduction-to-red-hat-azure/4-when-to-use-red-hat-on-azure",
         "redirect_document_id": false
       }
     ]
