@@ -4,10 +4,11 @@ title: Review the solution to the discover and implement a method call challenge
 metadata:
   title: Review the solution to the discover and implement a method call challenge activity
   description: "Review the solution to the discover and implement a method call challenge activity"
-  ms.date: 11/06/2023
+  ms.date: 11/07/2023
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
+  ms.topic: module-intro-to-product
+  ms.prod: dotnet-csharp
 durationInMinutes: 3
 content: |
   [!include[](includes/6-solution.md)]
