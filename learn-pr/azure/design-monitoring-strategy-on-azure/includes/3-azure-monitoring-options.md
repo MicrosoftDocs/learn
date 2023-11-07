@@ -8,7 +8,7 @@ It's critical to monitor your systems closely to identify any performance proble
 
 Azure Monitor helps you maximize the availability and performance of your applications and services by detecting and diagnosing application, infrastructure, and platform issues. Azure Monitor also supports operational workflows with alerts and automated actions and lets you create visualizations such as dashboards and reports.
 
-[![Diagram that shows an overview of Azure Monitor with data sources on the left sending data to a central data platform and features on the right that use the collected data.](../media/overview-simple-20230707-opt.svg)](media/overview-blowout-20230707-opt.svg#lightbox)
+[![Diagram that shows an overview of Azure Monitor with data sources on the left sending data to a central data platform and features on the right that use the collected data.](../media/overview-simple-20230707-opt.svg)](../media/overview-blowout-20230707-opt.svg#lightbox)
 
 Azure Monitor collects telemetry directly from Azure platform resources, and you can also ingest custom data by using APIs. Azure Monitor can also collect application-layer data and infrastructure-performance data from VM guest operating systems and containers.
 
