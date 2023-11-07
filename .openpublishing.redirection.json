@@ -28492,6 +28492,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/5-configure-azure-diagnostic-extension.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/5-enable-vm-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/6-exercise-configure-azure-diagnostic-extension.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/6-collect-log-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/7-use-diagnostic-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/8-exercise-use-diagnostic-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/7-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/create-business-value/4-discover-apply-ai-maturity-model-assessment.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-business-value",
       "redirect_document_id": false
@@ -28634,6 +28659,21 @@
     {
       "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/8-understand-responsible-ai.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/8a-understand-responsible-ai",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github/3-introduction-to-github.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/6-guided-tour-of-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github/4-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github/5-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/8-summary",
       "redirect_document_id": false
     },
     {
@@ -28828,7 +28868,7 @@
     },
     {
       "source_path": "learn-pr/endpoint-manager/determine-endpoint-implementation/index.yml",
-      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/intune-planning-guide"
     },
     {
       "source_path": "learn-pr/wwl-data-ai/recognize-synthesize-speech/2-get-started-azure.md",
@@ -28873,6 +28913,66 @@
     {
       "source_path": "learn-pr/paths/explore-fundamentals-of-decision-support/index.md",
       "redirect_url": "https://learn.microsoft.com/azure/ai-services/anomaly-detector/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/2-environment-setup.yml",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/includes/2-environment-setup.md",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/3-review-app-configuration.yml",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core/2-review-app-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/4-implement-feature-management.yml",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core/3-implement-feature-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/5-implement-app-configuration.yml",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core/4-implement-app-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/6-knowledge-check.yml",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-configuration-aspnet-core/7-summary.yml",
+      "redirect_url":"/training/modules/aspnetcore/microservices-configuration-aspnet-core/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/2-environment-setup.yml",
+      "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/3-review-resiliency-concepts.yml",
+      "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/4-verify-deployment.yml",
+      "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/5-implement-polly-resiliency.yml",
+      "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/6-implement-linkerd-resiliency.yml",
+      "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
       "redirect_document_id": false
     }
   ]
