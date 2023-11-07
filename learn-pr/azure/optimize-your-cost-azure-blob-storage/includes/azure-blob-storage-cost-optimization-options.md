@@ -34,7 +34,7 @@ If you have a clear indication that a new blob won’t be accessed in the near t
 
 #### Automatically move data between access tiers
 
-The access tier you assign at the beginning might not reflect longer-erm storage trends. A log used for troubleshooting a current issue will likely not have the same significance a few weeks later. Similarly, while it might be important to swiftly restore a recent backup, that degree of urgency will probably not apply a few months from now for the same backup copy. While you could modify the access tier manually, such an approach would introduce a significant maintenance overhead, especially when modifying a large number of blobs, which is common in enterprise scenarios.
+The access tier you assign at the beginning might not reflect longer-term storage trends. A log used for troubleshooting a current issue will likely not have the same significance a few weeks later. Similarly, while it might be important to swiftly restore a recent backup, that degree of urgency will probably not apply a few months from now for the same backup copy. While you could modify the access tier manually, such an approach would introduce a significant maintenance overhead, especially when modifying a large number of blobs, which is common in enterprise scenarios.
 
 Fortunately, this isn’t necessary. Azure Blob Storage supports lifecycle-management policies that move data between tiers based on the criteria you define. For example, you can define a policy rule that transitions blobs to the archive tier if they haven’t been modified in the last 90 days. Similarly, you can create a policy rule to delete blobs in the archive tier if they haven't been accessed in the last 360 days.
 
