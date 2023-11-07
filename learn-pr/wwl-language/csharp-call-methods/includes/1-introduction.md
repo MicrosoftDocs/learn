@@ -16,7 +16,7 @@ In this module, you will:
 - Write code that calls methods in the .NET Class Library.
 - Use an instance of .NET Class Library classes to call methods that maintain state.
 - Use Intellisense in Visual Studio Code to learn more about a method, including its overloaded versions, its return value type, and its input parameter data types.
-- Use docs.microsoft.com to research what a method does, its overloaded versions, its return value type, its input parameters and what each parameter represents, and more.
+- Use learn.microsoft.com to research what a method does, its overloaded versions, its return value type, its input parameters and what each parameter represents, and more.
 
 ## Prerequisites:
 
