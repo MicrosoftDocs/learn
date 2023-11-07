@@ -4,12 +4,11 @@ title: Design for Azure Monitor Logs (Log Analytics) workspaces
 metadata:
   title: Design for Azure Monitor Logs (Log Analytics) workspaces
   description: "Design for Azure Monitor Logs (Log Analytics) workspaces"
-  ms.date: 01/18/2023
+  ms.date: 11/02/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 6
 content: |
   [!include[](includes/3-design-for-log-analytics.md)]

@@ -7,8 +7,7 @@ metadata:
   ms.date: 09/12/2023
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.service: microsoft-365
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/2-evaluate-prioritize-ai-investments.md)]

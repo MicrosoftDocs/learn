@@ -1,8 +1,8 @@
-Threat modeling is a technique used by anyone who knows how their system works and has a working knowledge of information security. 
+Threat modeling is a technique used by anyone who knows how their system works and has a working knowledge of information security.
 
-The technique is broken down into four different phases, each containing important steps to help you create a data-flow diagram and analyze it for potential threats.
+The technique is broken down into four different phases. Each phase contains important steps to help you create a data-flow diagram and analyze it for potential threats.
 
-![Threat Modeling Phases.](../media/threat-modeling-steps.png)
+:::image type="content" source="../media/threat-modeling-steps.png" alt-text="Diagram shows the Threat Modeling Phases, which include Design, Break, Fix, and Verify, arranged in a circle.":::
 
 |Phase|Title|Description|
 |-----|-----|-----------|
@@ -11,9 +11,7 @@ The technique is broken down into four different phases, each containing importa
 |3|Fix|Decide how to approach each issue with the right combination of security controls.|
 |4|Verify|Verify requirements are met, issues are found, and security controls are implemented.|
 
-<br>
-
-We'll discuss each phase in the next few units.
+This module discusses each phase in the next units.
 
 > [!IMPORTANT]
-> The units in this module will introduce important threat-modeling concepts at a high level, which will be discussed in detail across other modules under the Threat Modeling Fundamentals learning path.
+> The units in this module introduce important threat-modeling concepts at a high level. The Threat Modeling Fundamentals learning path discusses the concepts in detail.
