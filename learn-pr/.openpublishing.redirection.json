@@ -53,17 +53,17 @@
       {
         "source_path_from_root": "/learn-pr/azure/introduction-to-red-hat-azure/what.yml",
         "redirect_url": "/training/modules/introduction-to-red-hat-azure/what-is-red-hat-on-azure",
-        "redirect_document_id": true
+        "redirect_document_id": false
       },
       {
         "source_path_from_root": "/learn-pr/azure/introduction-to-red-hat-azure/how.yml",
         "redirect_url": "/training/modules/introduction-to-red-hat-azure/how-red-hat-on-azure-works",
-        "redirect_document_id": true
+        "redirect_document_id": false
       },
       {
         "source_path_from_root": "/learn-pr/azure/introduction-to-red-hat-azure/when.yml",
         "redirect_url": "/training/modules/introduction-to-red-hat-azure/when-to-use-red-hat-on-azure",
-        "redirect_document_id": true
+        "redirect_document_id": false
       }
     ]
   }
