@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: "An Azure Pipelines."
       isCorrect: false
-      explanation: "Incorrect. Azure pipelines do not contribute to secure communication between Container Registry and Container Apps."
+      explanation: "Incorrect. Azure Pipelines do not contribute to secure communication between Container Registry and Container Apps."
     - content: "An Azure Container Registry image repository."
       isCorrect: false
       explanation: "Incorrect. The Azure Container Registry image repository does not contribute to secure communication between Container Registry and Container Apps."
