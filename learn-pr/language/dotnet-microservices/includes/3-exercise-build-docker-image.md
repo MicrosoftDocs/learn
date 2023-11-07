@@ -17,11 +17,7 @@ You can setup a pre-configured GitHub Codespace with [this Codespace creation li
 1. Select **...** and then **New with options...**. Change the Dev container configuration to **eShopLite - dotnet-docker** and select **Create codesspace**.  GitHub creates and configures the codespace. This might take a few minutes.
 
     ![Screenshot showing how to create a codespace from the GitHub repository.](../media/start-codespace.png)
-1. The code used for the rest of this module is in the `/dotnet-docker` directory. In a new terminal in Codespaces type:
-
-    ```cli
-    cd dotnet-docker
-    ```
+1. The code used for the rest of this module is in the `/dotnet-docker` directory. 
 
 ## Edit the Dockerfile to configure the Products backend
 
@@ -89,6 +85,12 @@ Now we can use a Dockerfile to containerize the Products web service.
 ## Create the Docker image
 
 Having completed the Dockerfile, the next step is to use it to create a Docker image:
+
+1. In a new terminal run this command to navigate to the code root:
+
+    ```cli
+    cd dotnet-docker
+    ```
 
 1. To create the image for the Products backend service, go to the **TERMINAL** tab and run this command:
 
