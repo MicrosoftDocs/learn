@@ -42,7 +42,7 @@ You can configure your managed identities through:
 
 - the Azure portal
 - the Azure CLI
-- your Azure Resource Manager (ARM) template
+- your Azure Resource Manager template
 
 When a managed identity is added, deleted, or modified on a running container app, the app doesn't automatically restart and a new revision isn't created.
 

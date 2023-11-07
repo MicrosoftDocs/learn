@@ -20,7 +20,7 @@ Azure Container Apps enables executing application code packaged in any containe
 
 With Azure Container Apps, you can:
 
-- Use the Azure CLI extension, Azure portal or ARM templates to manage your applications.
+- Use the Azure CLI extension, Azure portal or Azure Resource Manager templates to manage your applications.
 
 - Enable HTTPS or TCP ingress without having to manage other Azure infrastructure.
 

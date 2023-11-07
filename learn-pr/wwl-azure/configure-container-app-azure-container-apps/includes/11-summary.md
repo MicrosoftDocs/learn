@@ -6,21 +6,21 @@ Detailed resources:
 
 - Containers in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/containers](/azure/container-apps/containers)
 
-- Integrate a virtual network with an external Azure Container Apps environment | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/vnet-custom?tabs=bash%2Cazure-cli&pivots=azure-portal](/azure/container-apps/vnet-custom?tabs=bash%2Cazure-cli&pivots=azure-portal)
+- Integrate a virtual network with an external Azure Container Apps environment | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/vnet-custom](/azure/container-apps/vnet-custom)
 
-- Managed identities in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/managed-identity?tabs=portal%2Cdotnet](/azure/container-apps/managed-identity?tabs=portal%2Cdotnet)
+- Managed identities in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/managed-identity](/azure/container-apps/managed-identity)
 
-- Azure Container Apps image pull with managed identity [https://learn.microsoft.com/azure/container-apps/managed-identity-image-pull?tabs=azure-cli&pivots=azure-portal](/azure/container-apps/managed-identity-image-pull?tabs=azure-cli&pivots=azure-portal)
+- Azure Container Apps image pull with managed identity [https://learn.microsoft.com/azure/container-apps/managed-identity-image-pull](/azure/container-apps/managed-identity-image-pull)
 
 - Ingress in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/ingress-overview](/azure/container-apps/ingress-overview)
 
-- Manage secrets in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/manage-secrets?tabs=azure-portal](/azure/container-apps/manage-secrets?tabs=azure-portal)
+- Manage secrets in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/manage-secrets](/azure/container-apps/manage-secrets)
 
-- Use storage mounts in Azure Container Apps [https://learn.microsoft.com/azure/container-apps/storage-mounts?pivots=azure-portal](/azure/container-apps/storage-mounts?pivots=azure-portal)
+- Use storage mounts in Azure Container Apps [https://learn.microsoft.com/azure/container-apps/storage-mounts](/azure/container-apps/storage-mounts)
 
 - Connect to services in Azure Container Apps (preview) | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/services](/azure/container-apps/services)
 
-- Connect a container app to a cloud service with Service Connector | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/service-connector?tabs=azure-portal](/azure/container-apps/service-connector?tabs=azure-portal)
+- Connect a container app to a cloud service with Service Connector | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/service-connector](/azure/container-apps/service-connector)
 
 - Quickstart: Deploy your first container app using the Azure portal | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/quickstart-portal](/azure/container-apps/quickstart-portal)
 

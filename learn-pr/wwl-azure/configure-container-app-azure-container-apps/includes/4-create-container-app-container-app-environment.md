@@ -7,11 +7,11 @@ Azure Container Apps enables you to run microservices and containerized applicat
 
 Container Apps can be found in the Azure Marketplace under **Containers**, or by entering **container app** in the search text box. Select **Container App** to start the create process.
 
-![Screenshot showing Container App in the Azure Marketplace.](../media/create-azure-container-app-using-portal-01.png)
+![Screenshot showing Container App in the Azure Marketplace.](../media/create-azure-container-app-portal-01.png)
 
 The Create Container App page opens to a **Basics** tab, which provides a list of required fields.
 
-![Screenshot showing the Basics tab options used to create a Container App instance.](../media/create-azure-container-app-using-portal-02.png)
+![Screenshot showing the Basics tab options used to create a Container App instance.](../media/create-azure-container-app-portal-02.png)
 
 The Project details section of the Basics tab includes the following:
 
@@ -32,7 +32,7 @@ The **Basics** tab on the Create Container Apps Environment page, provides the f
 - Environment name: Enter a name for the environment.
 - Zone redundancy: Select an option for zone redundancy.
 
-![Screenshot showing the Basics tab options for a Container Apps Environment.](../media/create-azure-container-app-environment-using-portal-01.png)
+![Screenshot showing the Basics tab options for a Container Apps Environment.](../media/create-azure-container-app-environment-portal-01.png)
 
 The **Workload profiles** tab on the Create Container Apps Environment page can be used to add dedicated workload profiles. Dedicated workload profiles allow you to run your apps on customized hardware options. An environment always has a Consumption workload profile where you can run apps that can scale-to-zero and pay only for resources your apps use.
 
@@ -40,7 +40,7 @@ The **Monitoring** tab on the Create Container Apps Environment page provides op
 
 The **Networking** tab on the Create Container Apps Environment page provides the option of selecting your own virtual network. This allows you to connect your application to other Azure resources or on-premises systems through the same network.
 
-![Screenshot showing the Networking tab options for a Container Apps Environment.](../media/create-azure-container-app-environment-using-portal-04.png)
+![Screenshot showing the Networking tab options for a Container Apps Environment.](../media/create-azure-container-app-environment-portal-04.png)
 
 The **Networking** tab provides the following options:
 
@@ -55,7 +55,7 @@ When you select **Create** on the Create Container Apps Environment page, you're
 
 The **Container** tab on the Create Container App page provides the option to use a quickstart image, or to specify an image in a repository. Deselect **Use quickstart image** to specify a registry and image that you have prepared.
 
-![Screenshot showing the Container tab options used to create a Container App instance.](../media/create-azure-container-app-using-portal-03.png)
+![Screenshot showing the Container tab options used to create a Container App instance.](../media/create-azure-container-app-portal-03.png)
 
 - The Container details section provides the option to choose a Container Registry and image.
 - The Container resource allocation (Preview) section allows you to adjust the CPU and memory allocation for your app.
