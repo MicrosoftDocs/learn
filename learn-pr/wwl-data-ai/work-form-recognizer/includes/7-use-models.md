@@ -98,7 +98,7 @@ Example **analyze document** JSON response:
                     ...
 ```
 
-Explore the documentation for [supported language quickstarts](/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?azure-portal=true)
+Explore the documentation for [supported language quickstarts](/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?azure-portal=true).
 
 ## Understanding confidence scores 
 
