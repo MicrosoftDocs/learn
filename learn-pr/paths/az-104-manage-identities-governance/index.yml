@@ -59,7 +59,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cost-management
 - azure-rbac
 - azure-resource-manager

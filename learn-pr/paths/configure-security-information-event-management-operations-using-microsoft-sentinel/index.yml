@@ -6,8 +6,7 @@ metadata:
   ms.date: 8/01/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.service: Microsoft Sentinel
+  ms.topic: learning-path
 title: 'Configure SIEM security operations using Microsoft Sentinel'
 prerequisites: |
   - Fundamental understanding of Microsoft Azure
