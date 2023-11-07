@@ -40,7 +40,11 @@ Select the **Cloud Shell** icon (>_) to create a new Azure Cloud Shell session. 
 
 ### Directories and subscriptions
 
-Directories and subscriptions used to be accessed with this icon. The **Directories + subscriptions** feature, though, is now located on the portal settings page. Access the portal settings page by selecting the gear icon.
+In some cases, you may have access to more than one Azure subscription. The **Directory + subscription** section of **Portal settings** lets you change the subscription you're working in, or change to a different directory.
+
+![Screenshot of the Directory and subscription pane.](../media/3-directory-pane.png)
+
+Directories and subscriptions used to be accessed with the book and filter icon. The **Directories + subscriptions** feature, though, is now located on the **Portal settings** page, which you access by selecting the gear icon.
 
 ### Notifications
 

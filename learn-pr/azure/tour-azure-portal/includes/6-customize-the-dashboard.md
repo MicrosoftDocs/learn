@@ -6,7 +6,7 @@ A *dashboard* is a customizable collection of UI tiles displayed in the Azure po
 
 Dashboards give you flexibility in what information to display. For example, you can create dashboards for specific roles within the organization, then use role-based access control (RBAC) to control who can access each dashboard.
 
-Dashboards are stored as JavaScript Object Notation (JSON) files. This format means you can download dashboard so you can edit the file directly, then upload it again to Azure, or share it with other users. Azure stores dashboards within resource groups, just like any other resource that you can manage within the portal.
+Dashboards are stored as JavaScript Object Notation (JSON) files. This format means you can download a dashboard and edit the file directly, then upload it again to Azure, or share it with other users. Azure stores dashboards within resource groups, just like any other resource that you can manage within the portal.
 
 ## Explore the default dashboard
 
