@@ -29,7 +29,7 @@ Now we can use a Dockerfile to containerize the Products web service.
     RUN dotnet publish -c release -o /app
     ```
 
-    This code will sets up the DataEntities library in the Products docker image, by completing these steps:
+    This code will set up the DataEntities library in the Products docker image, by completing these steps:
 
     - Pull the `mcr.microsoft.com/dotnet/sdk:8.0` image and name the image `build`.
     - Set the working directory within the image to `/DataEntities`.
