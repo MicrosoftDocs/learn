@@ -1,18 +1,27 @@
-Your organization asked you to design a monitoring strategy that covers all solutions that your organization uses. The strategy had to ensure that the organization could quickly identify and minimize performance problems and failures. The strategy needed to provide insights and alerts for collected log and metric data.
+Your organization asked you to design a monitoring strategy to cover all of its technology solutions. The strategy needed to provide:
 
-This learning module showed you how to use Azure Monitor, and how its features like Application Insights and VM insights can monitor your applications' and infrastructure's health and performance. You also saw how to use Microsoft Defender for Cloud and Microsoft Sentinel to monitor the security of your machines and other infrastructure resources.
+- The ability to quickly identify and minimize performance problems and failures.
+- Insights and alerts for collected log and metric data.
 
-With Azure Monitor, you can analyze and address issues that affect the health and performance of your environment, and query to analyze data in a single location. With Defender for Cloud, you can identify and address risks to your security posture. With Microsoft Sentinel, you have security incident management, investigation, and response capabilities.
+This learning module showed you how Azure Monitor features like Application Insights and VM insights can monitor your applications' and infrastructure's health and performance. You also saw how to use Microsoft Defender for Cloud and Microsoft Sentinel to monitor the security of your VMs and other infrastructure resources.
 
-By using these services on Azure, you can take a full-stack approach to monitoring applications and infrastructure. You can address issues faster and more effectively. As a result, your organization becomes more secure, productive, cost-effective, and competitive.
+- Azure Monitor lets you analyze and address environment health and performance issues, and query to analyze data in a single location.
+- Defender for Cloud helps you identify and address risks to your security posture.
+- Microsoft Sentinel gives you security incident management, investigation, and response capabilities.
+
+These Azure services give you a full-stack approach to monitoring applications and infrastructure. Because you can address issues faster and more effectively, your organization is more secure, productive, cost-effective, and competitive.
 
 ## Other resources
 
-To learn more about monitoring solutions on Azure, see the following articles:
+To learn more about monitoring solutions on Azure, see the following resources:
 
 - [Azure Monitor overview](/azure/azure-monitor/overview)
 - [Application Insights overview](/azure/azure-monitor/app/app-insights-overview)
+- [Availability standard test](/azure/azure-monitor/app/availability-standard-tests)
 - [Monitor virtual machines](/azure/virtual-machines/monitor-vm)
 - [Container insights overview](/azure/azure-monitor/containers/container-insights-overview)
+- [Monitor Kubernetes clusters using Azure services and cloud native tools](/azure/azure-monitor/containers/monitor-kubernetes)
+- [Azure Monitor managed service for Prometheus](/azure/azure-monitor/essentials/prometheus-metrics-overview)
+- [Azure Managed Grafana](/azure/managed-grafana/overview)
 - [What is Microsoft Sentinel?](/azure/sentinel/overview)
 - [Microsoft Defender for Cloud](https://azure.microsoft.com/products/defender-for-cloud/)

@@ -6,9 +6,9 @@ It's critical to monitor your systems closely to identify any performance proble
 
 [Azure Monitor](https://azure.microsoft.com/products/monitor) is a service for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. You can analyze metrics and logs from monitored resources.
 
-Azure Monitor helps you maximize the availability and performance of your applications and services by detecting and diagnosing application, infrastructure, and platform issues. Azure Monitor also supports operational workflows with alerts and automated actions and lets you create visualizations such as dashboards and reports.
+Azure Monitor helps you maximize the availability and performance of your applications and services by detecting and diagnosing application, infrastructure, and platform issues. Azure Monitor also supports operational workflows with alerts and automated actions, and lets you create visualizations such as dashboards and reports.
 
-[![Diagram that shows an overview of Azure Monitor with data sources on the left sending data to a central data platform and features on the right that use the collected data.](../media/overview-simple-20230707-opt.svg)](../media/overview-blowout-20230707-opt.svg#lightbox)
+:::image type="content" source="../media/overview-simple-20230707-opt.svg" alt-text="Diagram that shows an overview of Azure Monitor with data sources on the left sending data to a central data platform and features on the right that use the collected data." lightbox="../media/overview-blowout-20230707-opt.svg" border="false":::
 
 Azure Monitor collects telemetry directly from Azure platform resources, and you can also ingest custom data by using APIs. Azure Monitor can also collect application-layer data and infrastructure-performance data from VM guest operating systems and containers.
 
@@ -18,43 +18,43 @@ In most cases, you should start with insights, which are guided monitoring and t
 
 You can also visualize the data yourself with Azure dashboards in the Azure portal, create business views with Power BI, or create interactive reports by using workbooks. Use Azure Monitor for a detailed view of your applications' and infrastructure's health on a single screen.
 
-![Screenshot of a full-stack monitoring dashboard.](../media/3-azure-monitoring-options-02.png)
+:::image type="content" source="../media/3-azure-monitoring-options-02.png" alt-text="Screenshot of a full-stack monitoring dashboard." lightbox="../media/3-azure-monitoring-options-02.png":::
 
 You can further analyze collected data by using Metrics Explorer for charting and visual correlation, and Log Analytics for ad hoc queries, trending, and pattern recognition. Azure Monitor lets you manage and create alerts, notifications, and actions such as runbooks and autoscale based on metrics and logs. You can also integrate Azure Monitor with other tools by using Azure Event Hubs to export data or APIs for ingestion and export.
 
 ## Microsoft Defender for Cloud
 
-[Microsoft Defender for Cloud](https://azure.microsoft.com/products/defender-for-cloud/) is a service that manages your infrastructure's security from a centralized location. You can use Defender for Cloud to monitor the security of your workloads, whether they're on-premises or in the cloud.
+[Microsoft Defender for Cloud](https://azure.microsoft.com/products/defender-for-cloud) is a service that manages your infrastructure's security from a centralized location. You can use Defender for Cloud to monitor the security of your workloads, whether they're on-premises or in the cloud.
 
 Attacks are becoming more intelligent, and the number of people with the right security skills is low. Defender for Cloud helps you deal with these challenges by providing you with tools that improve your protection against security threats. Use Defender for Cloud to monitor your resources' health and implement recommendations.
 
-![Screenshot of Microsoft Defender for Cloud Overview screen.](../media/3-azure-monitoring-options-03.png)
+:::image type="content" source="../media/3-azure-monitoring-options-03.png" alt-text="Screenshot of Microsoft Defender for Cloud Overview screen." lightbox="../media/3-azure-monitoring-options-03.png":::
 
 Defender for Cloud helps streamline your security configuration. Defender for Cloud is natively integrated with other Azure PaaS services like Azure SQL Database. For IaaS services, you can enable automatic provisioning in Defender for Cloud.
 
-![Screenshot of Microsoft Defender for Cloud automatic provisioning.](../media/3-azure-monitoring-options-04.png)
+:::image type="content" source="../media/3-azure-monitoring-options-04.png" alt-text="Screenshot of Microsoft Defender for Cloud automatic provisioning." lightbox="../media/3-azure-monitoring-options-04.png":::
 
 Defender for Cloud creates an agent on each supported VM when the VM is created. Defender then automatically starts collecting data from the machine. This Defender for Cloud capability reduces the complexity of configuring security.
 
 ## Microsoft Sentinel
 
-Microsoft Sentinel is a security information and event management (SIEM) system that collects data on devices, users, infrastructure, and applications across your enterprise. You can use Microsoft Sentinel to proactively hunt for threats and anomalies, and respond by using orchestration and automation. Built-in threat intelligence for detection and investigation can help reduce false positives.
+[Microsoft Sentinel](https://azure.microsoft.com/products/microsoft-sentinel) is a cloud-native security information and event management (SIEM) system that collects data on devices, users, infrastructure, and applications across your enterprise. You can use Microsoft Sentinel to proactively hunt for threats and anomalies, and respond by using orchestration and automation. Microsoft Sentinel has built-in threat intelligence for detection and investigation that can help reduce false positives.
 
-You can connect your data sources to Microsoft Sentinel. These data sources include Microsoft services such as Office 365 and Azure Advanced Threat Protection, and can also include external solutions such as AWS CloudTrail or on-premises sources. The dashboard shows detailed information collected from your sources.
+You can connect your data sources to Microsoft Sentinel. Data sources include Microsoft services such as Office 365 and Azure Advanced Threat Protection, and can also include external solutions such as AWS CloudTrail or on-premises sources. The Microsoft Sentinel dashboard shows detailed information collected from your sources.
 
-![Screenshot of the Microsoft Sentinel dashboard.](../media/3-azure-monitoring-options-05.png)
+:::image type="content" source="../media/3-azure-monitoring-options-05.png" alt-text="Screenshot of the Microsoft Sentinel dashboard." lightbox="../media/3-azure-monitoring-options-05.png":::
 
 Incidents help you group and combine related alerts. You can use incidents to reduce the noise generated because of the scale of the data. Incidents also help you to further investigate anomalous activities or threats that have raised alerts.
 
-![Screenshot of incident investigation.](../media/3-azure-monitoring-options-06.png)
+:::image type="content" source="../media/3-azure-monitoring-options-06.png" alt-text="Screenshot of incident investigation." lightbox="../media/3-azure-monitoring-options-06.png":::
 
 You can use playbooks to automate your response to alerts in Microsoft Sentinel. You configure playbooks by using Azure Logic Apps. Your playbook details the steps to take when an alert is triggered in Microsoft Sentinel.
 
-![Screenshot of playbooks.](../media/3-azure-monitoring-options-07.png)
+:::image type="content" source="../media/3-azure-monitoring-options-07.png" alt-text="Screenshot of playbooks." lightbox="../media/3-azure-monitoring-options-07.png":::
 
 You can use hunting queries to look for threats across your enterprise before alerts are raised. Microsoft security researchers maintain built-in hunting queries that act as bases for you to build your own queries.
 
-![Screenshot of hunting queries.](../media/3-azure-monitoring-options-08.png)
+:::image type="content" source="../media/3-azure-monitoring-options-08.png" alt-text="Screenshot of hunting queries." lightbox="../media/3-azure-monitoring-options-08.png":::
 
 You can use notebooks to automate your investigations. Notebooks are playbooks that can consist of investigation or hunting steps that you reuse or share with others. Use Azure Notebooks for Microsoft Sentinel to develop and run your notebooks. For example, you might use the **Guided hunting - Anomalous Office365 Exchange Sessions** notebook to hunt for anomalous activities in Office 365 across your enterprise.
 

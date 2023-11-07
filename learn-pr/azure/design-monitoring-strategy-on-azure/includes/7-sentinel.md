@@ -1,48 +1,48 @@
-Your financial organization deals with customers and partners on a constant basis. Your organization is also active across different regions in the world. Many transactions happen every day. Each transaction must be monitored and protected regardless of its type, and regardless of the device or users involved.
+Your financial organization constantly deals with customers and partners across different regions in the world. Many transactions happen every day, and each transaction must be monitored and protected regardless of its type or the devices and users involved. Your organization's security and monitoring strategy must focus on enterprise-wide security and monitoring.
 
-You've been asked to extend your earlier investigation to focus on enterprise-wide security and monitoring. This unit details how Microsoft Sentinel helps monitor and respond to security threats across your organization.
-
-## Use Microsoft Sentinel
+This unit describes how Microsoft Sentinel helps monitor and respond to security threats across an enterprise-level organization.
 
 You can use Microsoft Sentinel to:
 
-- Get a detailed overview of your organization, potentially across multiple clouds and on-premises locations.
+- Get a detailed overview of your enterprise, potentially across multiple clouds and on-premises locations.
 - Avoid reliance on complex and disparate tools.
 - Use enterprise-grade AI, built by experts, to identify and handle threats across your organization.
 
-## Connect your data sources
+## Connect your data sources to Microsoft Sentinel
 
-You can create a Microsoft Sentinel resource in the Azure portal. The process for creating this resource involves creating a Log Analytics workspace, then adding it to Microsoft Sentinel.
+To implement Microsoft Sentinel, you need a Log Analytics workspace. When you create a Microsoft Sentinel resource in the Azure portal, you can create a Log Analytics workspace or connect an existing workspace.
 
-![Screenshot of adding a workspace.](../media/7-sentinel-01.png)
+:::image type="content" source="../media/7-sentinel-01.png" alt-text="Screenshot of adding a Log Analytics workspace." lightbox="../media/7-sentinel-01.png":::
 
-After you create a Microsoft Sentinel resource, you need to connect data sources for your enterprise. Microsoft Sentinel integrates with Microsoft solutions, including Microsoft Entra ID and Office 365, through connectors. Microsoft Sentinel also comes with connectors for non-Microsoft solutions, and has a REST API that lets you connect to other data sources.
+After you create the Microsoft Sentinel resource, you can connect the data sources for your enterprise. Microsoft Sentinel integrates with Microsoft solutions like Microsoft Entra ID and Office 365 through connectors. Microsoft Sentinel also comes with connectors for non-Microsoft solutions, and has a REST API that lets you connect to other data sources.
 
-Use the Microsoft Sentinel dashboard to view all of your data connectors.  
+You can see all of your available data connectors by selecting **Data connectors** under **Configuration** in the Microsoft Sentinel left navigation.
 
-![Screenshot of data connectors.](../media/7-sentinel-02.png)
+:::image type="content" source="../media/7-sentinel-02.png" alt-text="Screenshot of data connectors." lightbox="../media/7-sentinel-02.png":::
 
-Choose the appropriate data connector for your data source. Next, look at the prerequisites for your connector, and address them to successfully connect your data source.
+Select the appropriate data connector for your data source, read the information about the connector, and select **Open connector page** to look at the prerequisites for your connector. Make sure you address all the prerequisites to successfully connect your data source.
 
-![SCreenshot of data received.](../media/7-sentinel-03.png)
+When you connect the data source, your logs are synced to Microsoft Sentinel. You get a summary of the data that's been collected in the **Data received** graph for your connector. You also get the different data types that have been collected for the source. For example, the Microsoft Entra connector collects sign-in logs and audit logs.
 
-When you connect the data source, your logs are synced to Microsoft Sentinel. You get a summary of the data that's been collected in the **DATA RECEIVED** graph for your connector. You also get the different data types that have been collected for the source. For example, the Microsoft Entra connector collects sign-in logs and audit logs for you.
+:::image type="content" source="../media/7-sentinel-03.png" alt-text="Screenshot of the Data received graph." lightbox="../media/7-sentinel-03.png":::
+
+When you connect your data sources, Microsoft Sentinel begins to monitor your enterprise.
+
+:::image type="content" source="../media/7-sentinel-04.png" alt-text="Screenshot of an alert map." lightbox="../media/7-sentinel-04.png":::
 
 ## Use alerts to monitor your enterprise
 
-When your data sources have been connected, Microsoft Sentinel begins to monitor your enterprise. You can configure alert rules to investigate anomalies and threats more intelligently.
+You can configure alert rules to investigate anomalies and threats more intelligently. Alert rules specify the threats and activities that should raise alerts. You can respond manually or by using playbooks for automated responses.
 
-![Screenshot of an alert map.](../media/7-sentinel-04.png)
+Select **Analytics** in the Microsoft Sentinel left navigation under **Configuration** to view all the rules you have in place and create new rules.
 
-You can create alert rules to specify the threats and activities that should raise alerts. You can respond manually or by using playbooks for automated responses.
+:::image type="content" source="../media/7-sentinel-05.png" alt-text="Screenshot of View all alerts." lightbox="../media/7-sentinel-05.png":::
 
-![Screenshot of View all alerts.](../media/7-sentinel-05.png)
+When you create a rule, you specify whether it should be enabled or disabled, and the severity of the alert. In the **Rule query** field of the **Set rule logic** tab, you enter a rule query.
 
-In the **Analytics** pane of your Sentinel dashboard, you can view all the rules you have in place and create new rules.
+:::image type="content" source="../media/7-sentinel-06.png" alt-text="Screenshot of Create alert rule." lightbox="../media/7-sentinel-06.png":::
 
-![Screenshot of Create alert rule.](../media/7-sentinel-06.png)
-
-When you create a rule, you need to specify whether it should be enabled or disabled, the severity of the alert, and a rule query. For example, you can run the following query to discover if a suspicious number of virtual machines are created or updated on Azure, or if a suspicious number of deployments for resources have occurred.
+For example, you can run the following query to determine if a suspicious number of Azure VMs are created or updated, or a suspicious number of resource deployments occur.
 
 ```kusto
 AzureActivity
@@ -51,44 +51,44 @@ AzureActivity
  | make-series dcount(ResourceId)  default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller
 ```
 
-In the query scheduling section, you can set how often the query should run and which period of data to look up. In the alert threshold section, you can specify the level at which an alert is raised.
+In the **Query scheduling** section, you can set how often the query should run and which period of data to look up. In the **Alert threshold** section, you can specify the level at which to raise an alert.
 
 ## Investigate incidents
 
-Microsoft Sentinel combines your generated alerts into incidents for further investigation.
+Microsoft Sentinel combines generated alerts into incidents for further investigation. Select **Incidents** in the Microsoft Sentinel left navigation under **Threat management** to see details about all your incidents, such as how many incidents you closed, how many remain open, when the incidents happened, and their severity.
 
-Use the **Incidents** pane to see details about your incidents, such as how many you've closed and how many remain open. You can also use the pane to find out when an incident happened and to determine its severity.
+To start to investigate an incident, select the incident. You get information about the incident in the right pane. Select **View full details** to get more information.
 
-![Screenshot of Incidents.](../media/7-sentinel-07.png)
+:::image type="content" source="../media/7-sentinel-07.png" alt-text="Screenshot of the Incidents page." lightbox="../media/7-sentinel-07.png":::
 
-You can select an incident to start to investigate it. You get information about the incident on the right side. Select **View full details** to get more information.
+You discover that multiple entities are mapped to this incident. To investigate the incident, update its status from **New** to **In progress**.
 
-![Screenshot of Incident detail.](../media/7-sentinel-08.png)
+:::image type="content" source="../media/7-sentinel-08.png" alt-text="Screenshot of Incident detail." lightbox="../media/7-sentinel-08.png":::
 
-You discover that multiple entities have been mapped to this incident. When you want to investigate an incident, you update its status from **New** to **In progress** and assign it to an owner.
+Assign the incident to an owner
 
-![Screenshot of incident owner.](../media/7-sentinel-09.png)
+:::image type="content" source="../media/7-sentinel-09.png" alt-text="Screenshot of selecting incident owner." lightbox="../media/7-sentinel-09.png":::
 
-You're then ready to investigate. When you select **Investigate**, you get an investigation map to help you understand what caused an incident and the affected scope. You also use the map to correlate data surrounding an incident.
+You're now ready to investigate. Select **Investigate** to get an investigation map that helps you understand what caused an incident and the affected scope. You can also use the map to correlate data surrounding an incident.
 
-![Screenshot of an investigation map.](../media/7-sentinel-10.png)
+:::image type="content" source="../media/7-sentinel-10.png" alt-text="Screenshot of an investigation map." lightbox="../media/7-sentinel-10.png":::
 
-The investigation map lets you drill down into an incident. For example, you can get details about a user who's identified as part of the incident.
+The investigation map lets you drill down into an incident. For example, select **Entities** to get details about a user who's identified as part of the incident.
 
-![Screenshot of entity.](../media/7-sentinel-11.png)
+:::image type="content" source="../media/7-sentinel-11.png" alt-text="Screenshot of entity." lightbox="../media/7-sentinel-11.png":::
 
-If you hover over an entity, you also get a list of *exploration queries* designed by Microsoft security analysts and experts. You can use exploration queries to investigate more effectively.
+Entities can include users, devices, and appliances. If you hover over an entity, you see a list of *exploration queries* designed by Microsoft security analysts and experts. You can use the exploration queries to investigate more effectively.
 
-![Screenshot of exploration queries.](../media/7-sentinel-12.png)
+:::image type="content" source="../media/7-sentinel-12.png" alt-text="Screenshot of exploration queries." lightbox="../media/7-sentinel-12.png":::
 
 The investigation map also gives you a timeline that helps you understand which event occurred at a particular time. Use the timeline feature to understand the path that a threat might have taken over time.
 
-![Screenshot of timeline.](../media/7-sentinel-13.png)
+:::image type="content" source="../media/7-sentinel-13.png" alt-text="Screenshot of timeline." lightbox="../media/7-sentinel-13.png":::
 
 ## Respond to threats with playbooks
 
-Playbooks can help you automatically respond to threats in Microsoft Sentinel. You can create a new playbook through the **Automation** pane in your Microsoft Sentinel dashboard.
+Playbooks can help you automatically respond to threats in Microsoft Sentinel. To create a new playbook, select **Automation** pane under **Configuration** in the Microsoft Sentinel left navigation.
 
-![Screenshot of Microsoft Sentinel playbooks.](../media/7-sentinel-14.png)
+:::image type="content" source="../media/7-sentinel-14.png" alt-text="Screenshot of Microsoft Sentinel playbooks." lightbox="../media/7-sentinel-14.png":::
 
 You can add a new playbook with an incident trigger, an alert trigger, or an entity trigger, or you can create a blank playbook.
