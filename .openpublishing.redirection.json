@@ -28924,6 +28924,31 @@
       "source_path": "learn-pr/paths/explore-fundamentals-of-decision-support/index.md",
       "redirect_url": "https://learn.microsoft.com/azure/ai-services/anomaly-detector/overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/2-environment-setup.yml",
+      "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/3-review-resiliency-concepts.yml",
+      "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/4-verify-deployment.yml",
+      "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/5-implement-polly-resiliency.yml",
+      "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/6-implement-linkerd-resiliency.yml",
+      "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
+      "redirect_document_id": false
     }
   ]
 }
