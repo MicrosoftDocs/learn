@@ -56,34 +56,7 @@ Notice there's **no syntactic indication** that the function is asynchronous. Yo
 
 The following code separates the async function from the callback. This is easy to read and understand and allows you to reuse the callback for other async functions.
 
-```javascript
-// callback asynchronous example
-
-// file system module from Node.js
-const fs = require('fs');
-
-// relative path to file
-const filePath = './file.txt';
-
-// callback
-const callback = (error, data) => {
-    if (error) {
-        console.log('An error occurred...: ', error);
-    } else {
-        console.log(data); // Hi, developers!
-        console.log('Done!');
-    }
-}
-
-// async request to read a file
-//
-// parameter 1: filePath
-// parameter 2: encoding of utf-8
-// parmeter 3: callback function 
-fs.readFile(filePath, 'utf-8', callback);
-
-console.log(`I'm the last line of the file!`)
-```
+:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/callbacks.js":::
 
 The correct result is: 
 
@@ -99,31 +72,7 @@ First, the asynchronous function `fs.readFile` is started and goes into the even
 
 The following example uses an anonymous callback function, which means the function doesn't have a name and can't be reused by other anonymous functions.
 
-```javascript
-// callback asynchronous example
-
-// file system module from Node.js
-const fs = require('fs');
-
-// relative path to file
-const filePath = './file.txt';
-
-// async request to read a file
-//
-// parameter 1: filePath
-// parameter 2: encoding of utf-8
-// parmeter 3: callback function () => {}
-fs.readFile(filePath, 'utf-8', (error, data) => {
-    if (error) {
-        console.log('An error occurred...: ', error);
-    } else {
-        console.log(data); // Hi, developers!
-        console.log('Done!');
-    }
-});
-
-console.log(`I'm the last line of the file!`)
-```
+:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/callback-anonymous.js":::
 
 The correct result is: 
 
@@ -139,22 +88,7 @@ When the code is executed, the asynchronous function `fs.readFile` is started an
 
 Because you might need to call a subsequent async callback and then another, the callback code might become nested. This is called **callback hell** and is difficult to read and maintain. 
 
-```javascript
-// nested callback example
-fs.readFile(param1, param2, (error, data)=>{
-    if(!error){
-        fs.writeFile(paramsWrite, (error, data)=>{
-            if(!error){
-                fs.readFile(paramsRead, (error, data)=>{
-                    if(!error){
-                        // do something
-                    }
-                })
-            }
-        })
-    }
-})
-```
+:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/nested-callback.js":::
 
 ### Promises
 
@@ -162,56 +96,13 @@ Because nested callbacks can be difficult to read and manage, Node.js added supp
 
 A promise function has the format of: 
 
-```javascript
-new Promise((resolve, reject) => {
-
-    // do something
-
-    if(error){
-        // indicate success
-        reject(error)
-    } else {
-        // indicate error
-        resolve(data)
-    }
-})
-```
-
-And is called in code like: 
-
-```javascript
-promiseFunction()
-    .then((data) => {
-        // handle success
-    })
-    .catch((error) => {
-        // handle error
-    })
-```
+:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/promise-create-basic.js":::
 
 The `then` method is called when the promise is fulfilled and the `catch` method is called when the promise is rejected.
 
 To read a file asynchronously with promises, the code is: 
 
-```javascript
-// promises asynchronous example
-
-const fs = require('fs').promises;
-const filePath = './file.txt';
-
-// request to read a file
-fs.readFile(filePath, 'utf-8')
-    .then((data) => {
-        console.log(data);
-        console.log('Done!');
-    })
-    .catch((error) => {
-        console.log('An error occurred...: ', error);
-    });
-
-console.log(`I'm the last line of the file!`)
-```
-
+:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/promises.js":::
 
 ### Async/await 
 
@@ -219,30 +110,7 @@ Async/await is a newer way to handle asynchronous programming. Async/await is sy
 
 The same example using async/await looks like this:
 
-```javascript
-// async/await asynchronous example
-
-const fs = require('fs').promises;
-const filePath = './file.txt';
-
-// `async` before the parent function
-async function readFileAsync() {
-    try {
-        // `await` before the async method
-        const data = await fs.readFile(filePath, 'utf-8');
-        console.log(data);
-        console.log('Done!');
-    } catch (error) {
-        console.log('An error occurred...: ', error);
-    }
-}
-
-readFileAsync().then(() => {
-    console.log(`Success!`)
-}).catch((error) => {
-    console.log('An error occurred...: ', error);
-})
-```
+:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/async-await.js":::
 
 When async/await was released, the keywords could only be used in functions with the top-level function being a promise. While the promise didn't have to have then and catch functions, it was still a return to promise syntax. 
 
@@ -258,25 +126,7 @@ The most recent versions of Node.js added top-level async/await for ES6 modules.
 
 Then you can use the `await` keyword at the top level of your code
 
-```javascript
-// top-level async/await asynchronous example
-
-const fs = require('fs').promises;
-
-const filePath = './file.txt';
-
-// `async` before the parent function
-try {
-  // `await` before the async method
-  const data = await fs.readFile(filePath, 'utf-8');
-  console.log(data);
-  console.log('Done!');
-} catch (error) {
-  console.log('An error occurred...: ', error);
-}
-console.log("I'm the last line of the file!");
-```
-
+:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/async-await-top-level.js":::
 
 ## Synchronous APIs
 
@@ -284,20 +134,6 @@ Node.js also has a set of synchronous APIs. These APIs block the execution of th
 
 Synchronous (blocking) functions in Node.js use the naming convention of `functionSync`. For example, the asynchronous `readFile` API has a synchronous counterpart named `readFileSync`. It's important to uphold this standard in your own projects so your code is easy to read and understand.
 
-```javascript
-// synchronous example
-
-const fs = require('fs');
-const filePath = './file.txt';
-
-try {
-    // request to read a file
-    const data = fs.readFileSync(filePath, 'utf-8');
-    console.log(data);
-    console.log('Done!');
-} catch (error) {
-    console.log('An error occurred...: ', error);
-}
-```
+:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/synchronous-api.js":::
 
 As a new developer at TailWind Traders, you might be asked to modify any type of Node.js code. It's important to understand the difference between synchronous and asynchronous APIs, and the different syntaxes for asynchronous code.
