@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.introduction-to-github.components-of-the-github-flow
+uid: learn.github.introduction-to-github.components-of-github-flow
 title: Components of the GitHub flow
 metadata:
   title: Components of the GitHub flow
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-components-of-the-github-flow.md)]
+  [!include[](includes/3-components-of-github-flow.md)]

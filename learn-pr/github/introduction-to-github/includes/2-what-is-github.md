@@ -87,9 +87,9 @@ Let’s tackle creating a repository from github.com.
 
 4.	Choose a repository visibility.
 	
- - **Public repositories** are accessible to everyone on the internet.
+    - **Public repositories** are accessible to everyone on the internet.
  
- - **Private repositories** are only accessible to you, people you explicitly share access with, and, for organization repositories, certain organization members.
+    - **Private repositories** are only accessible to you, people you explicitly share access with, and, for organization repositories, certain organization members.
 
 5.	Click Create repository and congratulations! You just created a repository! 
 
@@ -108,24 +108,24 @@ But before we begin, it is worth knowing in order to add a file to a repository 
 3.	Above the list of files, select the Add file ᐁ dropdown menu, then click ᐩ Create new file. Alternatively, you can click ᐩ in the file tree view on the left.
 
  
-:::image type="content" source="../media/2-add-file-options.png" alt-text="A screen shot of the two options of adding a file to your new repository highlighted in red. One option is the plus sign in the left hand navigation bar, the second option is the add file button towards the right of the screen." border="false":::
+:::image type="content" source="../media/2-add-file-options.png" alt-text="A screenshot of the two options of adding a file to your new repository highlighted in red. One option is the plus sign in the left hand navigation bar, the second option is the add file button towards the right of the screen." border="false":::
 
 
 4.	In the file name field, type the name and extension for the file. To create subdirectories, type the / directory separator.
 5.	In the file contents text box, type content for the file.
 6.	To review the new content, above the file contents, click Preview.
 
-:::image type="content" source="../media/2-preview-option-in-a-file.png" alt-text="An image of a yml file with the preview button highlighted in the top left." border="false":::
+:::image type="content" source="../media/2-preview-option-in-a-file.png" alt-text="Screenshot showing a yml file with the preview button highlighted in the top left." border="false":::
  
 7.	Click Commit changes...
 8.	In the "Commit message" field, type a short, meaningful commit message that describes the change you made to the file. You can attribute the commit to more than one author in the commit message.
 9.	If you have more than one email address associated with your account on GitHub.com, click the email address drop-down menu and select the email address to use as the Git author email address. Only verified email addresses appear in this drop-down menu. If you enabled email address privacy, then [username]@users.noreply.github.com is the default commit author email address.
 
-:::image type="content" source="../media/2-commit-description-box.png" alt-text="An image of a commit change with a description box and the drop-down menu of the email to select as the author of the commit." border="false":::
+:::image type="content" source="../media/2-commit-description-box.png" alt-text="Screenshot showing a commit change with a description box and the drop-down menu of the email to select as the author of the commit." border="false":::
 
 10.	Below the commit message fields, decide whether to add your commit to the current branch or to a new branch. If your current branch is the default branch, you should choose to create a new branch for your commit and then create a pull request.
 
- :::image type="content" source="../media/2-create-a-new-branch.png" alt-text="An image of creating a new branch from a commit option select with the textbox of the new branch below it." border="false":::
+ :::image type="content" source="../media/2-create-a-new-branch.png" alt-text="Screenshot showing creating a new branch from a commit option select with the textbox of the new branch below it." border="false":::
 
 11.	Click Commit changes or Propose changes.
 

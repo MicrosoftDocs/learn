@@ -29,12 +29,12 @@ The different ways to create an issue from:
 1.	On GitHub.com, navigate to the main page of the repository.
 2.	Under your repository name, click (insert issues Icon) Issues.
  
- :::image type="content" source="../media/issues-tab.png" alt-text="The top portion of the main page of a repository with the Issues section highlighted." border="false":::
+ :::image type="content" source="../media/issues-tab.png" alt-text="Screenshot showing the top portion of the main page of a repository with the Issues section highlighted." border="false":::
 
 3.	Click New issue.
 4.	If your repository uses issue templates, next to the type of issue you'd like to open, click Get started.
 
-If the type of issue you'd like to open isn't included in the available options, click Open a blank issue.
+       If the type of issue you'd like to open isn't included in the available options, click Open a blank issue.
 
  :::image type="content" source="../media/open-a-blank-issue.png" alt-text="A screenshot of the issue templates menu, with the Open a blank issue option highlighted." border="false":::
 
@@ -98,7 +98,7 @@ Similarly, since organization discussions are based on a source repository, any 
 
    :::image type="content" source="../media/announcements.png" alt-text="A screenshot of the select a discussion category menu selection, with the top option Announcements and the get started button highlighted." border="false":::
 
-Each category must have a unique name and emoji pairing, and are accompanied by a detailed description stating its purpose. Categories help maintainers organize how conversations are filed and are customizable to help distinguish categories that are Q&A or more open-ended conversations. In the following table is the default categories for discussions and their purpose. 
+Each category must have a unique name and emoji pairing, and are accompanied by a detailed description stating its purpose. Categories help maintainers organize how conversations are filed and are customizable to help distinguish categories that are Q&A or more open-ended conversations. In the following table are the default categories for discussions and their purpose.
 
 | **Category** | **Purpose** | **Format** |
 |----------|----------|----------|
