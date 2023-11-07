@@ -28502,6 +28502,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/5-configure-azure-diagnostic-extension.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/5-enable-vm-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/6-exercise-configure-azure-diagnostic-extension.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/6-collect-log-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/7-use-diagnostic-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/8-exercise-use-diagnostic-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-vm-using-diagnostic-data/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/7-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/create-business-value/4-discover-apply-ai-maturity-model-assessment.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-business-value",
       "redirect_document_id": false
@@ -28878,6 +28903,11 @@
     {
       "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/4-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/analyze-receipts-form-recognizer/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-fundamentals-of-decision-support/index.md",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/anomaly-detector/overview",
       "redirect_document_id": false
     }
   ]
