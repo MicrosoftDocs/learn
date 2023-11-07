@@ -4,7 +4,27 @@ Regardless of the approach used, requests for predictions are sent to your Azure
 
 - **kind** - indicates which language feature you're requesting. For example, `kind` is defined as `Conversation` for conversational language understanding, or `EntityRecognition` to detect entities
 - **parameters** - indicates the values for various input parameters. These parameters vary depending on the feature. For example, `projectName` and `deploymentName` are required for conversational language understanding, however only `modelVersion` is needed for language detection or entity recognition.
-- **analysis input** - specifies the input documents or text strings to be analyzed by the Azure AI Language service.
+- **analysisInput** - specifies the input documents or text strings to be analyzed by the Azure AI Language service.
+
+The body will look similar to this example for entity recognition.
+
+```bash
+{
+    "kind": "EntityRecognition",
+    "parameters": {
+        "modelVersion": "latest"
+    },
+    "analysisInput":{
+        "documents":[
+            {
+                "id":"1",
+                "language": "en",
+                "text": "I had a wonderful trip to Edinburgh last week."
+            }
+        ]
+    }
+}
+```
 
 ## Prediction results
 

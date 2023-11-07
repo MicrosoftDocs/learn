@@ -7,14 +7,13 @@ This unit covers most of the capabilities of the Azure AI Language service, but 
 The endpoint used to query a specific feature varies, but all of them are prefixed with the Azure AI Language resource you created in your Azure account. The endpoint will look something like this:
 
 ```http
-https://{ENDPOINT}/text/analytics/{VERSION}/{FEATURE}
+https://{ENDPOINT}/language/:analyze-text?api-version={VERSION}
 ```
 
 |Placeholder  |Value  |
 |---------|---------|
 |`{ENDPOINT}`     | The endpoint for authenticating your API request. For example, `myLanguageService.cognitiveservices.azure.com`   |
-|`{VERSION}`     | The version number of the service you want to call. For example, `v3.0`   |
-|`{FEATURE}`     | The feature you're submitting the query to. For example, `keyPhrases` for key phrase detection   |
+|`{VERSION}`     | The version number of the service you want to call. For example, `2023-04-01`   |
 
 Along with the POST query to the appropriate endpoint, a JSON body will be included that specifies the input documents, specifies the task(s), and provides other metadata to the service. The JSON response structure, headers, and fields that are returned depend on which services you query.
 
@@ -28,16 +27,16 @@ The following features are all pre-configured.
 
 Summarization is available for both documents and conversations, and will summarize the text into key sentences that are predicted to encapsulate the input's meaning.
 
-A summarization query will be sent to an endpoint similar to the following, with the task specified as `extractiveSummarizationTasks` or `ConversationalSummarizationTask`, depending on which summarization task you want.
+A summarization query will be sent to an endpoint similar to the following, with the task specified as `ExtractiveSummarization` or `ConversationalSummarizationTask`, depending on which summarization task you want.
 
 ```http
-/{ENDPOINT}/text/analytics/{VERSION}/analyze
+/{ENDPOINT}/language/analyze-text/jobs?api-version={VERSION}
 ```
 
 |Placeholder  |Value  |
 |---------|---------|
 |`{ENDPOINT}`     | The endpoint for authenticating your API request. For example, `myLanguageService.cognitiveservices.azure.com`   |
-|`{VERSION}`     | The version number of the service you want to call. For example, `v3.0`   |
+|`{VERSION}`     | The version number of the service you want to call. For example, `2023-04-01`   |
 
 ### Named entity recognition
 
