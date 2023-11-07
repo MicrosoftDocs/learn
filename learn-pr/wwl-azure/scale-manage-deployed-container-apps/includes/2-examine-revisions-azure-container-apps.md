@@ -9,7 +9,7 @@ You can use revisions to:
 
 ## Revision modes
 
-The revision mode controls whether only a single revision or multiple revisions of your container app can be simultaneously active. You can set your app's revision mode from your container app's Revision management page in the Azure portal, using Azure CLI commands, or in the ARM template.
+The revision mode controls whether only a single revision or multiple revisions of your container app can be simultaneously active. You can set your app's revision mode from your container app's Revision management page in the Azure portal, using Azure CLI commands, or in the Azure Resource Manager template.
 
 ### Revision mode: single
 
@@ -19,7 +19,7 @@ By default, a container app is in single revision mode. In this mode, when a new
 
 You can also set the revision mode to `Multiple`. The `Multiple` revision mode enables you to run multiple revisions of your app simultaneously. While in this mode, new revisions are activated alongside current active revisions.
 
-For apps that implement external HTTP ingress, you can control the percentage of traffic that goes to each active revision. Configure traffic control from your container app's Revision management page in the Azure portal, using Azure CLI commands, or in an ARM template.
+For apps that implement external HTTP ingress, you can control the percentage of traffic that goes to each active revision. Configure traffic control from your container app's Revision management page in the Azure portal, using Azure CLI commands, or in an Azure Resource Manager template.
 
 ## Revision label and suffix
 
@@ -68,7 +68,7 @@ Your custom revision suffix name should not:
 
 You can set the revision suffix in several ways:
 
-- Directly in the ARM template.
+- Directly in the Azure Resource Manager template.
 - Through the Azure CLI using commands like `az containerapp create` and `az containerapp update`.
 - When creating a revision via the Azure portal.
 

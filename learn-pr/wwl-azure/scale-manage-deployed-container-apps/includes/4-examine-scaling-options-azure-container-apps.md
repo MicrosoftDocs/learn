@@ -62,7 +62,7 @@ In the following example, the revision scales out up to five replicas and can sc
 
 1. Select the minimum and maximum replica range.
 
-    azure-container-apps-scale-slide.png
+    ![Screenshot showing the Scale rule setting slider for the min and max replicas of a container app instance.](../media/azure-container-apps-scale-slide.png)
 
 1. Select **Add**.
 

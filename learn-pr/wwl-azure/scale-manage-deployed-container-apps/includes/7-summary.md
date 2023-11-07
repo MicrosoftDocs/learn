@@ -6,14 +6,14 @@ Detailed resources:
 
 - Revisions in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/revisions](/azure/container-apps/revisions)
 
-- Manage revisions in Azure Container Apps [https://learn.microsoft.com/azure/container-apps/revisions-manage?tabs=bash](/azure/container-apps/revisions-manage?tabs=bash)
+- Manage revisions in Azure Container Apps [https://learn.microsoft.com/azure/container-apps/revisions-manage](/azure/container-apps/revisions-manage)
 
 - Application lifecycle management in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/application-lifecycle-management](/azure/container-apps/application-lifecycle-management)
 
-- Scaling in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/scale-app?pivots=azure-cli](/azure/container-apps/scale-app?pivots=azure-cli)
+- Scaling in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/scale-app](/azure/container-apps/scale-app)
 
 - Ingress in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/ingress-overview](/azure/container-apps/ingress-overview)
 
-- Traffic splitting in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/traffic-splitting?pivots=azure-cli](/azure/container-apps/traffic-splitting?pivots=azure-cli)
+- Traffic splitting in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/traffic-splitting](/azure/container-apps/traffic-splitting)
 
-- Blue-Green Deployment in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/blue-green-deployment?pivots=azure-cli](/azure/container-apps/blue-green-deployment?pivots=azure-cli)
+- Blue-Green Deployment in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/blue-green-deployment](/azure/container-apps/blue-green-deployment)

@@ -12,7 +12,7 @@ Ingress supports:
 
 ## Enable ingress
 
-You can configure ingress for your container app using the Azure CLI, an ARM template, or the Azure portal.
+You can configure ingress for your container app using the Azure CLI, an Azure Resource Manager template, or the Azure portal.
 
 You can enable ingress when you create your container app, or you can enable ingress for an existing container app.
 
