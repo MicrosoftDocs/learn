@@ -7,7 +7,7 @@ metadata:
   ms.date: 01/23/2023
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-devops-pipelines
   manager: mijacobs
 title: Create a multistage pipeline by using Azure Pipelines
