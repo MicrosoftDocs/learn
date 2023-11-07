@@ -35,7 +35,7 @@ The sensitive information source table contains the values that the EDM SIT look
 
 Here's a simple example of a sensitive information source table:
 
-|First Name|Last Name|Date of Birth|
+|First name|Last name|Date of birth|
 |---|---|---|
 |Isaiah|Langer| 05-05-1960|
 |Ana|Bowman|11-24-1971|
