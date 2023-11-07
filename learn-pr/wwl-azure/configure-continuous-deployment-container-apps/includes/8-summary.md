@@ -26,4 +26,4 @@ Detailed resources:
 
 - Define variables - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/process/variables](/azure/devops/pipelines/process/variables)
 
-- Set secret variables - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables](/eazure/devops/pipelines/process/set-secret-variables)
+- Set secret variables - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables](/azure/devops/pipelines/process/set-secret-variables)
