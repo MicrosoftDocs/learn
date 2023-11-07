@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "KEDA"
       isCorrect: false
-      explanation: "Although you can use KEDA to scale CPU-intensive workloads, a HPA is the best choice."
+      explanation: "Although you can use KEDA to scale CPU-intensive workloads, an HPA is the best choice."
     - content: "HPA"
       isCorrect: true
-      explanation: "In this case, using a HPA is the best choice for CPU-intensive workloads."
+      explanation: "In this case, using an HPA is the best choice for CPU-intensive workloads."
     - content: "Cluster Autoscaler"
       isCorrect: false
       explanation: "The Cluster Autoscaler is for scaling the number of nodes in a Kubernetes cluster."
@@ -44,7 +44,7 @@ quiz:
       explanation: "KEDA is the ideal choice for scaling resources based on received events."
     - content: "HPA"
       isCorrect: false
-      explanation: "Although you can use a HPA to scale this service, it's not efficient and fails to measure the quantity of messages in the queue."
+      explanation: "Although you can use an HPA to scale this service, it's not efficient and fails to measure the quantity of messages in the queue."
     - content: "Cluster Autoscaler"
       isCorrect: false
       explanation: "The Cluster Autoscaler is for scaling the number of nodes in a Kubernetes cluster."
