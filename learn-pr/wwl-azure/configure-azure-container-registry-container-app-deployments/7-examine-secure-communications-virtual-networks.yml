@@ -9,7 +9,6 @@ metadata:
   ms.author: cahowd
   ms.topic: module
   ms.prod: azure
-  ms.service: container-registry
 durationInMinutes: 10
 content: |
   [!include[](includes/7-examine-secure-communications-virtual-networks.md)]

@@ -9,7 +9,6 @@ metadata:
   ms.author: cahowd
   ms.topic: module
   ms.prod: azure
-  ms.service: container-registry
 durationInMinutes: 7
 quiz:
   title: "Check your knowledge"
