@@ -4,7 +4,7 @@ Suppose you work at an online retailer. To support the online marketplace your c
 
 Put yourself in the shoes of an attacker. If you're trying to maliciously attack a system, would a single layer of protection or multiple layers of protection make it more difficult to gain access to the data? Defense in depth is a strategy that employs a layered approach to slow the advance of an attack aimed at acquiring unauthorized access to information. Each layer provides protection so that if one layer is breached, a subsequent layer is already in place to prevent further exposure.
 
-Azure SQL Database is a great service for the storage of relational data, and there are many built-in capabilities you can use to ensure your data is secure and practice defense in depth. We'll look at ways to secure your SQL database by configuring the database firewall, securing access, encrypting communication, and other techniques for database security. With this layered approach, you can help ensure your data is secure.
+Azure SQL Database is a great service for the storage of relational data. There are many built-in capabilities you can use to ensure your data is secure and practice defense in depth. This module looks at ways to secure your SQL database by configuring the database firewall, securing access, encrypting communication, and other techniques for database security. With this layered approach, you can help ensure your data is secure.
 
 ## Learning objectives
 
