@@ -83,6 +83,8 @@ Next, you go through steps to deploy a resource group using Terraform in the Azu
 
 1. In the Azure Cloud Shell editor, expand the **try_terraform** directory and select the file **main.tf**.
 
+    :::image type="content" source="../media/edit-terraform-azure-cloud-shell.png" alt-text="Screenshot of the Azure Cloud Shell editor with main.tf file open.":::
+
 1. Copy and paste the first section of the [previous Terraform code](#sample-terraform-configuration-file-code-to-create-an-azure-resource-group) (that starts with the comment **`# 1-Define Terraform Provider`**) into main.tf in the Cloud Shell editor.
 
 1. Save the file (Ctrl + S).
