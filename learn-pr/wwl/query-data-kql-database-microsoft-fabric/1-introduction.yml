@@ -7,7 +7,8 @@ metadata:
   ms.date: 11/07/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.prod: azure
   ms.service: fabric
 durationInMinutes: 3
 content: |
