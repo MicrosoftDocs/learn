@@ -10,17 +10,14 @@ In this unit, you will:
 * Amend the **:::no-loc text="eShopLite":::** to use the feature flag.
 * Change the products page to display a sales banner.
 * Build and test the app.
+     
+## Create a new GitHub Codespace
 
-## Open the development environment and create the Azure resources
+Let's start by creating a new GitHub codespace that hosts the exercise.
 
-1. In a new browser window, fork the [sample repo](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account.
-1. Set up your development environment.
-   - To use GitHub Codespaces, create a new codespace using the `main` branch of your forked repository.
-   - To use Visual Studio Code:
-     1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-     1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
-     1. Select your forked repository and branch. Visual Studio Code creates your development container locally.
-     1. Change into the `/dotnet-feature-flags` directory.
+You can setup a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-feature-flags%2Fdevcontainer.json).
+
+This takes several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the `/dotnet-feature-flags` directory.
 
 ## Create an App Configuration instance
 
