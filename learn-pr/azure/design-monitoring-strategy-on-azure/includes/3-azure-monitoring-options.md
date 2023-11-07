@@ -1,22 +1,26 @@
-Your organization's reputation depends on its systems' performance, reliability, and security. For example, if your payment system is unable to process user transactions during a high-volume holiday sales period, your customers might lose confidence in your business. It's critical to monitor your systems closely to identify any performance problems or attacks before they can affect users.
+Your organization's reputation depends on its systems' performance, reliability, and security. For example, if your payment system is unable to process user transactions during a high-volume holiday sales period, your customers might lose confidence in your business.
 
-This unit describes the Azure solutions that help you monitor your organization's services.
+It's critical to monitor your systems closely to identify any performance problems or attacks before they can affect users. This unit describes the Azure solutions that help you monitor your organization's services.
 
 ## Azure Monitor
 
-[Azure Monitor](https://azure.microsoft.com/products/monitor) is a service for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. You can analyze metrics and logs from monitored resources. Azure Monitor helps you maximize the availability and performance of your applications and services by detecting and diagnosing application, infrastructure, and platform issues. Azure Monitor also supports operational workflows with alerts and automated actions and lets you create visualizations such as dashboards and reports.
+[Azure Monitor](https://azure.microsoft.com/products/monitor) is a service for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. You can analyze metrics and logs from monitored resources.
 
-[![Diagram that shows an overview of Azure Monitor with data sources on the left sending data to a central data platform and features on the right that use the collected data.](../media/overview-simple-20230707-opt.svg)](media/overview/overview-blowout-20230707-opt.svg#lightbox)
+Azure Monitor helps you maximize the availability and performance of your applications and services by detecting and diagnosing application, infrastructure, and platform issues. Azure Monitor also supports operational workflows with alerts and automated actions and lets you create visualizations such as dashboards and reports.
+
+[![Diagram that shows an overview of Azure Monitor with data sources on the left sending data to a central data platform and features on the right that use the collected data.](../media/overview-simple-20230707-opt.svg)](media/overview-blowout-20230707-opt.svg#lightbox)
 
 Azure Monitor collects telemetry directly from Azure platform resources, and you can also ingest custom data by using APIs. Azure Monitor can also collect application-layer data and infrastructure-performance data from VM guest operating systems and containers.
 
-Azure Monitor stores the collected data in centralized and fully managed data stores: *Azure Monitor Metrics* for numerical time-series values and *Azure Monitor Log Analytics workspaces* for resource logs. Metrics are automatically collected and stored for most Azure resources, but user configuration is required to send and store resource logs. You can choose how to consume, analyze, and respond to the collected data.
+Azure Monitor stores the collected data in centralized and fully managed data stores: *Azure Monitor Metrics* for numerical time-series values and *Azure Monitor Log Analytics workspaces* for resource logs. Azure Monitor  automatically collects and stores metrics for most Azure resources, but user configuration is required to send and store resource logs. You can choose how to consume, analyze, and respond to the collected data.
 
-In most cases, you should start with Insights, which are guided monitoring and troubleshooting experiences for Azure resources. For example, you can use Azure Monitor container insights for your Kubernetes workloads. You might also visualize the data yourself with Azure dashboards in the Azure portal, create business views with Power BI, or create interactive reports by using workbooks. Use Azure Monitor for a detailed view of your application's health and your infrastructure's health on a single screen.
+In most cases, you should start with insights, which are guided monitoring and troubleshooting experiences for Azure resources. For example, you can use Azure Monitor container insights for your Kubernetes workloads.
+
+You can also visualize the data yourself with Azure dashboards in the Azure portal, create business views with Power BI, or create interactive reports by using workbooks. Use Azure Monitor for a detailed view of your applications' and infrastructure's health on a single screen.
 
 ![Screenshot of a full-stack monitoring dashboard.](../media/3-azure-monitoring-options-02.png)
 
-You can further analyze the collected data by using Metrics Explorer for charting and visual correlation and Log Analytics for ad hoc queries, trending, and pattern recognition. Azure Monitor lets you manage and create alerts, notifications, and actions such as runbooks and autoscale based on metrics and logs. You can also integrate Azure Monitor with other tools by using Azure Event Hubs to export data or APIs for ingestion and export.
+You can further analyze collected data by using Metrics Explorer for charting and visual correlation, and Log Analytics for ad hoc queries, trending, and pattern recognition. Azure Monitor lets you manage and create alerts, notifications, and actions such as runbooks and autoscale based on metrics and logs. You can also integrate Azure Monitor with other tools by using Azure Event Hubs to export data or APIs for ingestion and export.
 
 ## Microsoft Defender for Cloud
 
@@ -34,7 +38,7 @@ Defender for Cloud creates an agent on each supported VM when the VM is created.
 
 ## Microsoft Sentinel
 
-Microsoft Sentinel is a security information and event management (SIEM) system that collects data on devices, users, infrastructure, and applications across your enterprise. Built-in threat intelligence for detection and investigation can help reduce false positives. You can use Microsoft Sentinel to proactively hunt for threats and anomalies, and respond by using orchestration and automation.
+Microsoft Sentinel is a security information and event management (SIEM) system that collects data on devices, users, infrastructure, and applications across your enterprise. You can use Microsoft Sentinel to proactively hunt for threats and anomalies, and respond by using orchestration and automation. Built-in threat intelligence for detection and investigation can help reduce false positives.
 
 You can connect your data sources to Microsoft Sentinel. These data sources include Microsoft services such as Office 365 and Azure Advanced Threat Protection, and can also include external solutions such as AWS CloudTrail or on-premises sources. The dashboard shows detailed information collected from your sources.
 

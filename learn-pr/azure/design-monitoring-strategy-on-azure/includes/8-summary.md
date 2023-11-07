@@ -1,6 +1,6 @@
-You were asked to design a monitoring strategy that covers all solutions that your organization uses. Your strategy needed to provide insights and alerts for collected log and metric data. Your strategy also had to ensure that the organization could quickly identify and minimize the performance problems and failures.
+Your organization asked you to design a monitoring strategy that covers all solutions that your organization uses. The strategy had to ensure that the organization could quickly identify and minimize performance problems and failures. The strategy needed to provide insights and alerts for collected log and metric data.
 
-You've seen how to use Azure Monitor, and how its features like Application Insights and VM insights can monitor your applications' and infrastructure's health and performance. You've also seen how to use Microsoft Defender for Cloud and Microsoft Sentinel to monitor the security of your machines and other infrastructure resources.
+This learning module showed you how to use Azure Monitor, and how its features like Application Insights and VM insights can monitor your applications' and infrastructure's health and performance. You also saw how to use Microsoft Defender for Cloud and Microsoft Sentinel to monitor the security of your machines and other infrastructure resources.
 
 With Azure Monitor, you can analyze and address issues that affect the health and performance of your environment, and query to analyze data in a single location. With Defender for Cloud, you can identify and address risks to your security posture. With Microsoft Sentinel, you have security incident management, investigation, and response capabilities.
 

@@ -4,7 +4,7 @@ You need a monitoring approach that provides broad visibility and the capability
 
 ## Azure Monitor insights
 
-You can use Azure Monitor insights when you want to monitor resource utilization and performance at scale with guided troubleshooting to triage and isolate issues. This unit focuses on VM insights and container insights, but insights exist for other Azure resources, including networks, storage accounts, and Azure Cosmos DB. For a complete list of available insights, select **Insights Hub** in the Azure Monitor left navigation.
+You can use Azure Monitor insights to monitor resource utilization and performance at scale with guided troubleshooting to triage and isolate issues. This unit focuses on VM insights and container insights, but insights exist for other Azure resources, including networks, storage accounts, and Azure Cosmos DB databases. For a complete list of available insights, select **Insights Hub** in the Azure Monitor left navigation.
 
 ![Screenshot of Azure Monitor Insights Hub.](../media/5-analyze-resource-utilization-08.png)
 
@@ -24,15 +24,19 @@ Enabling VM insights adds extensions and configuration to your VMs and virtual m
 
 ### Monitor your VMs at scale
 
-Once enabled, VM insights monitors VM and virtual machine scale set usage and performance. Select the VM insights **Performance** tab to see the **Top N Charts** and **Top N List** that show VM resource usage. These charts allow you to quickly identify outliers and hot spots where the allocated resources might be insufficient to support the existing load. From the **Top N List**, you can select a VM to access more details, such as its properties, links to other workbooks, collected logs, and alerts.
+Once enabled, VM insights monitors VM and virtual machine scale set usage and performance. Select the VM insights **Performance** tab to see the **Top N Charts** and **Top N List** that show VM resource usage.
 
-![Screenshot of Top N List of VMs in the Azure Monitor portal.](../media/5-analyze-resource-utilization-02.png)
+These charts allow you to quickly identify outliers and hot spots where the allocated resources might be insufficient to support the existing load. From the **Top N List**, you can select a VM to access more details, such as its properties, links to other workbooks, collected logs, and alerts.
+
+![Screenshot of Top N List of VMs in the Azure Monitor portal.](../media/machine-log-events.png)
 
 You can drill down into Azure Monitor Logs by selecting an event type from the list in **Log Events**. The relevant Log Analytics workspace opens with the appropriate table and filter applied.
 
 ![Screenshot of drilling into Azure Monitor Logs from VM insights.](../media/5-analyze-resource-utilization-03.png)
 
-The Azure Monitor VM insights **Map** tab shows network connections for an entire resource group, virtual machine scale set, or individual VM. Use the filters at the top of the view to select the resources of interest. You can expand the number of processes for a complete list and to view the network connections per process. Select the arrow representing the connection for other network usage and performance details.
+The Azure Monitor VM insights **Map** tab shows network connections for an entire resource group, virtual machine scale set, or individual VM. Use the filters at the top of the view to select the resources of interest.
+
+You can expand the number of processes for a complete list and to view the network connections per process. Select the arrow representing the connection for other network usage and performance details.
 
 ![Screenshot of VM insights Map view.](../media/5-analyze-resource-utilization-04.png)
 
@@ -54,7 +58,7 @@ After you enable container insights, you can view your Kubernetes workloads' per
 - View the state of pods by controller.
 - Look at the number of restarts and CPU or memory utilization of a specific container.
 
-![Screenshot of Azure Monitor container insights list of containers by utilization.](../media/5-analyze-resource-utilization-06.png)
+![Screenshot of Azure Monitor container insights list of containers by utilization.](../media/container.png)
 
 The **Monitored clusters** tab shows an at-scale view of the health and status of all your clusters, nodes, system pods, and user pods. You can filter this view by namespace and use it as a starting point to drill into problem areas. You can also use container insights to access logs and enable recommended alerts.
 
@@ -62,21 +66,25 @@ The **Monitored clusters** tab shows an at-scale view of the health and status o
 
 ## Azure Monitor managed service for Prometheus
 
-Prometheus is an open-source monitoring system specifically designed for containers and microservices. Prometheus focuses on distributed applications and a cloud-native mindset, making it a popular tool for monitoring Kubernetes, distributed services, and containerized microservices.
+Prometheus is an open-source monitoring system specifically designed for containers and microservices. Prometheus focuses on distributed applications, making it a popular tool for monitoring Kubernetes, distributed services, and containerized microservices.
 
 Azure Monitor managed service for Prometheus is a component of Azure Monitor Metrics that supports open-source querying and visualization tools like PromQL and Grafana. Azure Monitor managed service for Prometheus can collect data from AKS or from any Kubernetes cluster that runs self-managed Prometheus using remote-write. To enable Azure Monitor managed service for Prometheus, you create an Azure Monitor workspace to store the Prometheus metrics.
 
 ### Integrate with Azure Managed Grafana
 
-The primary method for visualizing Prometheus metrics is Azure Managed Grafana. Connect your Azure Monitor workspace to a Grafana workspace to use your Prometheus metrics data as a data source in a Grafana dashboard. You can access multiple prebuilt dashboards that use Prometheus metrics, or you can create custom dashboards. The following screenshot shows a Grafana dashboard that uses AKS monitoring data.
+The primary method for visualizing Prometheus metrics is Azure Managed Grafana. Connect your Azure Monitor workspace to a Grafana workspace to use your Prometheus metrics data as a data source in a Grafana dashboard.
+
+You can access multiple prebuilt dashboards that use Prometheus metrics, or you can create custom dashboards. The following screenshot shows a Grafana dashboard that uses AKS monitoring data.
 
 ![Screenshot of a Grafana dashboard that shows AKS monitoring data.](../media/managed-grafana.png)
 
 ## Azure Monitor Alerts
 
-Some types of Azure Monitor insights include recommended alert templates, but you can also specify conditions that should trigger an alert in your own environment. You can configure alert rules to monitor your infrastructure's performance and availability, and use alert rules and action rules to dictate how to handle alerts.
+Some types of Azure Monitor insights include recommended alert templates, but you can also specify conditions to trigger an alert in your own environment. You can configure alert rules to monitor your infrastructure's performance and availability, and use alert rules and action rules to dictate how to handle alerts.
 
-You can base Azure Monitor alerts on the same metrics or log data used to populate insights. For example, Azure Monitor can send an alert if a VM exceeds a utilization threshold, or if a specified number of container restarts occur. You can also specify who should be notified. Insights can send notifications through email or text message, or use runbooks and webhooks to automatically respond to alerts.
+You can base Azure Monitor alerts on the same metrics or log data used to populate insights. For example, Azure Monitor can send an alert if a VM exceeds a utilization threshold, or if a specified number of container restarts occur.
+
+You can also specify who should be notified. Insights can send notifications through email or text message, or use runbooks and webhooks to automatically respond to alerts.
 
 ![Screenshot of alert creation.](../media/5-analyze-resource-utilization-07.png)
 

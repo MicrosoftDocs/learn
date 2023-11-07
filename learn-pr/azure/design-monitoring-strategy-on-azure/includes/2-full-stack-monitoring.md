@@ -19,9 +19,9 @@ By monitoring your applications and infrastructure with a full-stack approach, y
 
 To improve your applications' health and build better applications in future, configure alerts and automated responses to help you deal with application issues.
 
-Monitor your application for issues as it's being developed to prevent errors and exceptions later in production. To improve your development lifecycle, ensure that your code gets pushed to the next stage of the development cycle only if it successfully passes the necessary checks.
+Monitor your application for issues as you develop it to prevent errors and exceptions later in production. To improve your development lifecycle, ensure that your code gets pushed to the next stage of the development cycle only if it successfully passes the necessary checks.
 
-Also monitor your application when it's live and in use. As the following charts show, you might be faced with failing requests, high server response times, or availability issues. By monitoring for live issues, you identify these types of problems and risks promptly. You can respond effectively to keep your application healthy.
+Also monitor your application when it's live and in use. As the following charts show, you might be faced with failing requests, high server response times, or availability issues. By monitoring for live issues, you identify these types of problems and risks promptly, and can respond effectively to keep your application healthy.
 
 ![Screenshot of Application Key Performance Indicators (KPIs).](../media/2-full-stack-monitoring-01.png)
 
@@ -37,27 +37,29 @@ To deal with any issues that arise in a timely and effective way, you can config
 
 You can configure these alerts to start a process where a person receives a notification and takes appropriate action. You can also trigger automated responses to alerts with playbooks and webhooks.
 
-You can also use the data for operational analysis and capacity planning. You can collect performance data from virtual machine (VM) guest operating systems into charts for comparison and trending purposes to inform decision making.
+You can also use infrastructure monitoring data for operational analysis and capacity planning. You can collect performance data from virtual machine (VM) guest operating systems into charts for comparison and trending purposes to inform decision making.
 
 ![Screenshot of VM KPIs.](../media/2-full-stack-monitoring-02.png)
 
 ## Monitor Azure platform resources
 
-You can use Azure's built-in capabilities to monitor your Azure platform resources in addition to monitoring your deployed applications and infrastructure resources. Azure resources such as Storage Accounts, Key Vaults, and Azure Cosmos DB databases have performance metrics and resource logs that you can view and analyze to track performance and availability. Many Azure resource types also have dedicated insights that offer predefined monitoring experiences across subscriptions, resource groups, and resources for that resource type.
+You can use Azure's built-in capabilities to monitor your Azure platform resources in addition to monitoring your deployed applications and infrastructure resources. Azure resources such as Storage Accounts, Key Vaults, and Azure Cosmos DB databases have performance metrics and resource logs that you can view and analyze to track performance and availability.
 
-The following example shows the Azure Monitor storage insight displaying usage and latency for multiple storage accounts across two subscriptions. You can also view and collect logs related to Active Directory for your Azure tenant, and Service Health and activity logs for Azure subscriptions. A full-stack monitoring solution includes visibility into the Azure platform resources your application and infrastructure depend on.
+Many Azure resource types also have dedicated insights that offer predefined monitoring experiences across subscriptions, resource groups, and other resources. The following screenshot shows the Azure Monitor storage insight displaying usage and latency for multiple storage accounts across two subscriptions.
 
 ![Screenshot of Azure Storage KPIs.](../media/2-full-stack-monitoring-03.png)
 
+You can also view and collect logs related to Active Directory for your Azure tenant, and Service Health and activity logs for Azure subscriptions. A full-stack monitoring solution includes visibility into the Azure platform resources your application and infrastructure depend on.
+
 ## Implement security monitoring
 
-The previous sections in this unit focus on performance and availability monitoring. It's also essential to monitor the security of your applications and infrastructure to ensure that they always remain protected and available. For example, you should monitor and alert on:
+It's also essential to monitor the security of your applications and infrastructure to ensure that they always remain protected and available. For example, you should monitor and alert on:
 
 - Risks to your infrastructure's security, such as suspicious user accounts or malicious IP addresses.
 - Data exfiltration.
 
-Your security-monitoring solution should include strong, automated anomaly detection and event management to combine multiple related events into a single actionable alert.
+Your security monitoring solution should include strong, automated anomaly detection and event management to combine multiple related events into a single actionable alert.
 
 ## Summary
 
-Taking a full-stack approach to monitoring your applications and infrastructure helps you respond appropriately and more effectively to issues. The full-stack approach also helps you gain situational awareness, and you learn from the issues that affect your environment. You can strengthen your protection and build improved applications and infrastructure.
+Taking a full-stack approach to monitoring your applications and infrastructure helps you respond appropriately and more effectively to issues. You can strengthen your protection and build improved applications and infrastructure. The full-stack approach also helps you gain situational awareness, and you learn from the issues that affect your environment.

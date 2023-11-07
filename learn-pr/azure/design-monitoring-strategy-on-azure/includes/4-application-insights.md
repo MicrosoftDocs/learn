@@ -2,8 +2,6 @@ When issues arose on your financial organization's application, customers couldn
 
 This unit describes how to integrate Azure Monitor Application Insights with your applications. You can use Application Insights to check the health of applications and resolve issues faster.
 
-## Use Application Insights
-
 You can use Application Insights to:
 
 - Analyze and address issues and problems that affect your application's health and performance.
@@ -12,7 +10,7 @@ You can use Application Insights to:
 
 ## Integrate Application Insights with your applications
 
-To integrate Application Insights with your applications, you can set up Application Insights in the Azure portal. You can also instrument your application with Application Insights. Instrumentation refers to enabling the collection of monitoring data from your app by using an agent or an SDK. The approach to instrumentation varies depending on your application's language and platform.
+To integrate Application Insights with your applications, you can enable Application Insights in the Azure portal or instrument your application with Application Insights. Instrumentation refers to enabling the collection of monitoring data from your app by using an agent or an SDK. The approach to instrumentation varies depending on your application's language and platform.
 
 In many cases, you can implement instrumentation without access to application source code by using codeless attach in the Azure portal or by using an agent. For example, for your .NET and .NET Core applications hosted on Azure App Services, you can enable the collection of monitoring data with Application Insights by using a toggle in the Azure portal.
 
@@ -26,7 +24,9 @@ To continue your investigation into the root cause of the error or exception, yo
 
 ![Screenshot of analyzing failure with en-to-end view.](../media/4-application-insights-03.png)
 
-Application Insights also automatically detects app dependencies to support distributed tracing and create application topology views. You can see this topology by selecting **Application map** in the Application Insights left navigation. You can view more details of each component in the map by selecting it. For example, you can view the slowest requests for an instance and investigate performance further. These detailed analytics help you understand the application better and respond to its requirements.
+Application Insights also automatically detects app dependencies to support distributed tracing and create application topology views. You can see this topology by selecting **Application map** in the Application Insights left navigation.
+
+You can view more details of each component in the map by selecting it. For example, you can view the slowest requests for an instance and investigate performance further. These detailed analytics help you understand the application better and respond to its requirements.
 
 ![Screenshot of application map.](../media/4-application-insights-04.png)
 
@@ -38,7 +38,7 @@ You can further investigate slow transactions to identify slow requests and serv
 
 On the **Performance** screen, you can isolate slow transactions by selecting the time range, operation name, and durations of interest. You're also prompted with automatically identified anomalies and commonalities across transactions. From here, you can drill into an individual transaction for an end-to-end view of transaction details with a Gantt chart of dependencies.
 
-You can also gain visibility into page views and browser operations and dependencies if you instrument your web pages with Application Insights. Collecting this browser data requires adding a script to your web pages. After you add the script, you can access page views and their associated performance metrics by selecting the **Browser** toggle.
+If you instrument your web pages with Application Insights, you can also gain visibility into page views and browser operations and dependencies. Collecting this browser data requires adding a script to your web pages. After you add the script, you can access page views and their associated performance metrics by selecting the **Browser** toggle.
 
 ## Analyze user behavior
 
@@ -52,17 +52,21 @@ The preceding example shows the most popular browsers and versions. You can use 
 
 On the Application Insights **Availability** page, you can continuously monitor your application health and check application health from different geographic locations.
 
-To create an availability test in the Azure portal, select **Availability** from the Application Insights left navigation, and then select **Add Standard test**. On the **Create Standard test** screen, specify details like frequency, the URL of your application, and locations from which to test the app. The following example shows the configuration of a test that sends a request to an application every five minutes from five geographic locations.
+To create an availability test in the Azure portal, select **Availability** from the Application Insights left navigation, and then select **Add Standard test**. On the **Create Standard test** screen, specify details like frequency, the URL of your application, and locations from which to test the app.
+
+The following example shows the configuration of a test that sends a request to an application every five minutes from five geographic locations.
 
 ![Screenshot of availability test creation.](../media/4-application-insights-08.png)
 
-After you create your availability test, you can see how your application is doing across different locations. Each dot in the following example represents a test that was run. A red dot means that the test failed. Select the dot to see a detailed breakdown of the test failure, including information on what might have caused it. You can use the information to respond appropriately.
+After you create your availability test, you can see how your application is doing across different locations. Each dot in the following example represents a test that was run. A red dot means that the test failed.
+
+Select a red dot to see a detailed breakdown of the test failure, including information on what might have caused it. You can use the information to respond appropriately.
 
 ![Screenshot of viewing application availability by locations over time.](../media/4-application-insights-07.png)
 
 ## Get notifications and take action
 
-You can also configure Application Insights alert rules to monitor your application's performance and availability. You can specify the conditions that should trigger an alert and dictate how to handle the alert. For example, Application Insights can send an alert if a specified number of locations are unavailable, or if a certain number of exceptions occur.
+You can configure Application Insights alert rules to monitor your application's performance and availability. You can specify the conditions that should trigger an alert and dictate how to handle the alert. For example, Application Insights can send an alert if a specified number of locations are unavailable, or if a certain number of exceptions occur.
 
 You can also specify who to notify about the alert. Application Insights can send notifications through email or text message, or use runbooks and webhooks to respond to alerts through automation.
 
