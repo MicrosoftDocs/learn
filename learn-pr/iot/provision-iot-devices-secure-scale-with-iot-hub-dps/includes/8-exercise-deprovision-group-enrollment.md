@@ -10,7 +10,7 @@ In this task, you disenroll your enrollment group from DPS, which disables the e
 
      ```azurecli
      az iot dps enrollment-group update --dps-name dps-$suffix --enrollment-id enrollgroup-sensors --provisioning-status disabled
-     ``` 
+     ```
 
    Delete:
 

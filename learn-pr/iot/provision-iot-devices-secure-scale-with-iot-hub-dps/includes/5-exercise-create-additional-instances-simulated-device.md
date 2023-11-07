@@ -13,4 +13,4 @@ If you want to create more devices to enroll with your DPS instance, you can do 
 ## Verify your work
 
 1. Navigate your File Manager to the sensor-thl-002-device folder.
-1. Verify that the files contained in the sensor-thl-002-device folder match what you defined in the Task 1.
+1. Verify that the files contained in the sensor-thl-002-device folder match the changes you made in the Task 1.
