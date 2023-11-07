@@ -6,23 +6,17 @@ You've been asked to add resilience to the app, so that the `Store` service will
 
 In this exercise, you'll add resiliency to an existing cloud native app and test that your fix has worked.
 
-## Connect to the codespace
+## Create a new GitHub Codespace
 
-> [!NOTE]
-> You can complete this exercise in a GitHub Codespace. You can also complete it locally on your own machine, but you'll need to install VS Code, .NET 8, and docker. Clone the [sample repository](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your machine and continue to the **Build and run the app** steps.
+Let's start by create a new GitHub codespace that hosts the exercise.
 
-Let's start by connecting to the GitHub codespace that hosts the exercise.
+You can setup a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-resiliency%2Fdevcontainer.json).
 
-1. Open a new tab in your browser and go to the [sample repository](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative).
-1. On GitHub, select **Code** and then select the **Codespaces** tab.
-1. Select **Create codespace on main**.
-
-    GitHub creates and configures the codespace.
-1. Switch to the `/dotnet-resiliency` directory.
+This will take several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the `/dotnet-resiliency` directory.
 
 ## Update your development environment
 
-The eShopLite app needs to be updated with the codespace you're running the app in. This is to allow the images to render in the shop front end.
+The eShopLite app needs to be updated for the Codepsace you're running the app in. This allows the images to render in the front end.
 
 1. From the EXPLORER sidebar, select **docker-compose.yml**.
 
