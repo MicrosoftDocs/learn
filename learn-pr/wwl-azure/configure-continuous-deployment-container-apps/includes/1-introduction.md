@@ -2,7 +2,7 @@ This module covers the use of Azure Pipelines to automate build, test, and deplo
 
 ## Scenario
 
-Imagine you are a developer working for a software development company that specializes in building containerized applications. Your team has been tasked with deploying and managing container apps in Azure Container Apps. However, you are unsure about the continuous deployment options available and how to implement them effectively. You need a solution that allows for seamless updates to container images and creates new revisions of the app based on those updates. This will ensure that your team can continuously deploy new features and bug fixes without disrupting the application's availability. In addition, you want to leverage the benefits of versioning and have a historical record of updates for auditing purposes. You decide to investigate Azure DEvOps and Azure Pipelines. By understanding the continuous deployment options in Azure Container Apps, you will be able to streamline your deployment process and improve the overall efficiency of your development workflow.
+Imagine you are a developer working for a software development company that specializes in building containerized applications. Your team is tasked with deploying and managing container apps in Azure Container Apps. However, you are unsure about the continuous deployment options available and how to implement them effectively. You need a solution that allows for seamless updates to container images and creates new revisions of the app based on those updates. This solution ensures that your team can continuously deploy new features and bug fixes without disrupting the application's availability. In addition, you want to apply the benefits of versioning and have a historical record of updates for auditing purposes. You decide to investigate Azure DEvOps and Azure Pipelines. By understanding the continuous deployment options in Azure Container Apps, you are able to streamline your deployment process and improve the overall efficiency of your development workflow.
 
 ## Table of contents
 
@@ -14,4 +14,4 @@ Imagine you are a developer working for a software development company that spec
 
 ## Goal
 
-The goal of this module is to provide you with an understanding of the continuous deployment options available for container apps in Azure Container Apps. By the end of this module, you will be able to choose a suitable deployment method for your container apps and implement continuous deployment using Azure Pipelines.
+The goal of this module is to provide you with an understanding of the continuous deployment options available for container apps in Azure Container Apps. By the end of this module, you're able to choose a suitable deployment method for your container apps and implement continuous deployment using Azure Pipelines.

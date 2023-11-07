@@ -10,23 +10,20 @@ Detailed resources:
 
 - Publish revisions with GitHub Actions in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/github-actions](/azure/container-apps/github-actions)
 
-- What is Azure DevOps? - Azure DevOps | Microsoft Learn [https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?toc=%2Fazure%2Fdevops%2Fget-started%2Ftoc.json&view=azure-devops](/azure/devops/user-guide/what-is-azure-devops?toc=%2Fazure%2Fdevops%2Fget-started%2Ftoc.json&view=azure-devops)
+- What is Azure DevOps? - Azure DevOps | Microsoft Learn [https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops](/azure/devops/user-guide/what-is-azure-devops)
 
-- What is Azure Pipelines? - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops)
+- What is Azure Pipelines? - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines)
 
-- Azure Pipelines Agents - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser](/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser)
+- Azure Pipelines Agents - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/agents/agents](/azure/devops/pipelines/agents/agents)
 
-- Deploy an Azure Pipelines agent on Windows - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/agents/windows-agent?view=azure-devops](/azure/devops/pipelines/agents/windows-agent?view=azure-devops)
+- Deploy an Azure Pipelines agent on Windows - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/agents/windows-agent](/azure/devops/pipelines/agents/windows-agent)
 
-- Azure Container Apps image pull from Azure Container Registry with managed identity | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/managed-identity-image-pull?tabs=azure-cli&pivots=azure-portal](/azure/container-apps/managed-identity-image-pull?tabs=azure-cli&pivots=azure-portal)
+- Azure Container Apps image pull from Azure Container Registry with managed identity | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/managed-identity-image-pull](/azure/container-apps/managed-identity-image-pull)
 
-- Build and Release Tasks - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/process/tasks?view=azure-devops&tabs=yaml](/azure/devops/pipelines/process/tasks?view=azure-devops&tabs=yaml)
+- Build and Release Tasks - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/process/tasks](/azure/devops/pipelines/process/tasks)
 
-- Azure Pipelines task reference | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&viewFallbackFrom=azure-devops](/azure/devops/pipelines/tasks/reference/?view=azure-pipelines&viewFallbackFrom=azure-devops)
+- Azure Pipelines task reference | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/](/azure/devops/pipelines/tasks/reference/)
 
-- Define variables - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch](/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch)
+- Define variables - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/process/variables](/azure/devops/pipelines/process/variables)
 
-- Set secret variables - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables?view=azure-devops&tabs=yaml%2Cbash](/eazure/devops/pipelines/process/set-secret-variables?view=azure-devops&tabs=yaml%2Cbash)
-
-
----
+- Set secret variables - Azure Pipelines | Microsoft Learn [https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables](/eazure/devops/pipelines/process/set-secret-variables)

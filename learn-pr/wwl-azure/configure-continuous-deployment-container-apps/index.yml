@@ -2,14 +2,16 @@
 uid: learn.wwl.configure-continuous-deployment-container-apps
 metadata:
   title: Configure continuous deployment for container apps
-  description: "Configure continuous deployment for container apps"
-  ms.date: 11/06/2023
+  description: "This module explores deployment options for containerized apps and delves into the features of Azure DevOps and Azure Pipelines. It guides users in setting up automated pipelines for container apps, covering agent pool configuration and secret variables management."
+  ms.date: 11/07/2023
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: module-build-your-first
+  ms.topic: module
+  ms.prod: azure
+  ms.service: container-apps
 title: Configure continuous deployment for container apps
 summary: |
-  This module focuses on configuring continuous deployment for containerized applications using Azure Pipelines.
+  This module explores deployment options for containerized apps. It reviews the features of Azure DevOps and examines automated deployments to Container Apps using Azure Pipelines.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   - Examine deployment options and strategies for containerized applications.

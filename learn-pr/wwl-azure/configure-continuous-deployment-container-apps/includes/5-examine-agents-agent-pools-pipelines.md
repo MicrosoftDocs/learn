@@ -78,7 +78,7 @@ Therefore, it's important to consider the threat model surrounding each individu
 
 It's a best practice to have the identity running the agent be different from the identity with permissions to connect the agent to the pool. The user generating the credentials (and other agent-related files) is different than the user that needs to read them. Therefore, it's safer to carefully consider access granted to the agent machine itself, and the agent folders that contain sensitive files, such as logs and artifacts.
 
-It makes sense to grant access to the agent folder only for DevOps administrators and the user identity running the agent process. Administrators may need to investigate the file system to understand build failures or get log files to be able to report Azure DevOps failures.
+It makes sense to grant access to the agent folder only for DevOps administrators and the user identity running the agent process. Administrators might need to investigate the file system to understand build failures or get log files to be able to report Azure DevOps failures.
 
 As a one-time step, you must register the agent. Someone with permission to administer the agent queue must complete these steps. The agent doesn't use this person's credentials in everyday operation, but they're required to complete registration.
 
@@ -92,7 +92,8 @@ Sign in to DevOps with the user account you plan to use in your Azure DevOps org
 
 To create a personal access token, select **+ New Token**. At the bottom of the Create a new personal access token window, to see the complete list of scopes, select **Show all scopes**. Select the **Agent Pools (read, manage)** and **Deployment group (read, manage)** scopes. Ensure that all the other boxes are cleared. Copy the token. 
 
-> [!NOTE] You use this token when you configure the agent.
+> [!NOTE] 
+> You use this token when you configure the agent.
 
 The following information describes how to download and configure the agent.
 
@@ -100,7 +101,7 @@ Ensure that you’re signed into Azure DevOps as the Azure DevOps organization o
 
 On the Get the agent dialog box, select **Windows**. On the left pane, select the processor architecture of the installed Windows OS version on your machine. The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows. On the right pane, select **Download**, and then follow the instructions to download the agent.
 
-Create the following folder location for the agent: `C:\agents`. Unpack the agent zip file into the directory you created. Open PowerShell as an Administrator, navigate to the agents folder, and then enter the following PS command:
+Create the following folder location for the agent: `C:\agents`. Unpack the agent zip file into the directory you created. Open PowerShell as an Administrator, navigate to the agents folder, and then enter the following PowerShell command:
 
 ```powershell
 .\config
