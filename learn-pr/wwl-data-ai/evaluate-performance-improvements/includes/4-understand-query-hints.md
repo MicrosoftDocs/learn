@@ -58,7 +58,7 @@ To learn more about query hints, see [Hints (Transact-SQL)](/sql/t-sql/queries/h
 
 The Query Store hints feature in Azure SQL Database provides a simple method for shaping query plans without modifying application code.
 
-Query Store hints are useful when the query optimizer doesn't generate an efficient execution plan, and when the developer or DBA can't modify to the original query text. In some applications, the query text may be hardcoded or automatically generated.
+Query Store hints are useful when the query optimizer doesn't generate an efficient execution plan, and when the developer or DBA can't modify the original query text. In some applications, the query text may be hardcoded or automatically generated.
 
 :::image type="content" source="../media/module-55-optimize-queries-final-19.png" alt-text="Screenshot of how Query Store hints work.":::
 
