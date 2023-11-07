@@ -3,16 +3,14 @@ In this exercise, you'll learn to create a microservice endpoint and containeriz
 > [!NOTE]
 > You will complete this exercise in a GitHub Codespace that has [Docker](https://www.docker.com/products/docker-desktop) and the [.NET SDK](https://dotnet.microsoft.com/download) pre-installed. When you use these techniques in your own development environment, make sure you have these prerequisites installed.
 
-## Connect to the codespace
+## Create a new GitHub Codespace
 
-Let's start by connecting to the GitHub codespace that hosts the exercise.
+Let's start by creating a new GitHub codespace that hosts the exercise.
 
-1. Open a browser and go to the [eShopLite repository](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative).
-1. Select **Code** and then select the **Codespaces** tab.
-1. Select **Create codespace on main**. GitHub creates and configures the codespace. This might take a few minutes.
+You can set up a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-docker%2Fdevcontainer.json).
 
-    ![Screenshot showing how to create a codespace from the GitHub repository.](../media/start-codespace.png)
-1. The code used for the rest of this module is in the `/dotnet-docker` directory.
+This will take several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the `/dotnet-docker` directory. 
+
 
 ## Edit the Dockerfile to configure the Products backend
 
@@ -31,7 +29,7 @@ Now we can use a Dockerfile to containerize the Products web service.
     RUN dotnet publish -c release -o /app
     ```
 
-    This code will sets up the DataEntities library in the Products docker image, by completing these steps:
+    This code will set up the DataEntities library in the Products docker image, by completing these steps:
 
     - Pull the `mcr.microsoft.com/dotnet/sdk:8.0` image and name the image `build`.
     - Set the working directory within the image to `/DataEntities`.
@@ -80,6 +78,12 @@ Now we can use a Dockerfile to containerize the Products web service.
 ## Create the Docker image
 
 Having completed the Dockerfile, the next step is to use it to create a Docker image:
+
+1. In a new terminal run this command to navigate to the code root:
+
+    ```cli
+    cd dotnet-docker
+    ```
 
 1. To create the image for the Products backend service, go to the **TERMINAL** tab and run this command:
 
