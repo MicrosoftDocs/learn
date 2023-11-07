@@ -15,7 +15,7 @@ Automated tools that deploy or use Azure services such as Terraform should alway
 
 Terraform HCL (HashiCorp Configuration Language) is designed to be readable.
 
-:::image type="content" source="../media/example-azure-resource-manager-template-syntax-hcl-syntax.png" alt-text="Screenshot of Azure Resource Manager (A R M) Template Syntax vs HashiCorp Configuration Language (H C L) Syntax.":::
+:::image type="content" source="../media/example-azure-resource-manager-template-syntax-hcl-syntax.png" alt-text="Screenshot of Azure Resource Manager (ARM) Template Syntax vs HashiCorp Configuration Language (H C L) Syntax.":::
 
 ### Sample Terraform configuration file code to create an Azure Resource Group
 

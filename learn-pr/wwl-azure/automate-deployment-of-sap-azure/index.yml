@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/07/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: azure
 title: Automate Deployment of SAP on Azure
 summary: After this module, you will be able to run automated deployments of SAP on Azure infrastructure.
