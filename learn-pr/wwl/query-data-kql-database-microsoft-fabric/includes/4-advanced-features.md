@@ -13,7 +13,8 @@ following are some advanced features of KQL queries in Microsoft Fabric:
 
 ```
 
-![Screenshot of command to create materialized view with its results and a display of the columns after it's created.](../media/materialized-view.png)
+[ ![Screenshot of command to create materialized view with its results and a display of the columns after it's created.](../media/materialized-view.png) ](../media/materialized-view-expanded.png)
+
 - **Custom Functions**: You can create your own custom functions in KQL to perform specific data analysis tasks.
 - **Data Visualization**: KQL supports a variety of data visualization techniques such as `render timechart`, `render columnchart`, and a more **advanced function** visualization that is beyond the scope of this module named`render anomalychart` and allow for anomaly detection and forecast prediction using the `series_decompose_anomalies()` and the `series_decompose_forecast()` functions respectively.
 
@@ -28,7 +29,8 @@ Trips
 
 ```
 
-![Screenshot of a rendered time chart by number of trips and date in line chart.](../media/render-timechart.png)
+[ ![Screenshot of a rendered time chart by number of trips and date in line chart.](../media/render-timechart.png) ](../media/render-timechart-expanded.png)
+
 
 An example of a `render columnchart` between two dates and total trips can be shown by defining x and y values
 
@@ -41,7 +43,8 @@ Trips
 
 ```
 
-![Screenshot of a rendered time chart by number of trips and date in columnchart.](../media/render-columnchart.png)
+[ ![Screenshot of a rendered time chart by number of trips and date in columnchart.](../media/render-columnchart.png) ](../media/render-columnchart-expanded.png)
+
 - **Data Ingestion**: KQL allows you to ingest data from a variety of sources such as Azure Event Hubs, Azure IoT Hub, and Azure Storage.
 - **Data Export**: You can export query results from KQL to various destinations such as Azure Blob Storage, Azure Data Lake Storage, and Azure Event Hubs.
 
