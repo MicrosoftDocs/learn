@@ -35,4 +35,4 @@ In this module:
 ## Prerequisites
 
 - Basic knowledge of Microsoft Endpoint Manager and endpoint management concepts. See [Microsoft Intune fundamentals](../../../paths/endpoint-manager-fundamentals/index.yml?azure-portal=true).
-- Understanding of your endpoint management objectives, device inventory considerations, licensing needs, infrastructure objectives, and rollout plans. For more information, see [Determine your endpoint management implementation](/training/modules/determine-endpoint-implementation?azure-portal=true).
+- Understanding of your endpoint management objectives, device inventory considerations, licensing needs, infrastructure objectives, and rollout plans.
