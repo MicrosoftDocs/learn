@@ -38,8 +38,8 @@ Now we can use the docker-compose file to configure images for both the backend 
         backend:
             image: productservice
             build: 
-            context: .
-            dockerfile: DockerfileProducts
+                context: .
+                dockerfile: DockerfileProducts
             ports: 
                - "5200:8080"
     ```
