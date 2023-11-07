@@ -14,10 +14,14 @@ You can setup a pre-configured GitHub Codespace with [this Codespace creation li
 
 1. Open a browser and go to the [eShopLite repository](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative).
 1. Select **Code** and then select the **Codespaces** tab.
-1. Select **Create codespace on main**. GitHub creates and configures the codespace. This might take a few minutes.
+1. Select **...** and then **New with options...**. Change the Dev container configuration to **eShopLite - dotnet-docker** and select **Create codesspace**.  GitHub creates and configures the codespace. This might take a few minutes.
 
     ![Screenshot showing how to create a codespace from the GitHub repository.](../media/start-codespace.png)
-1. The code used for the rest of this module is in the `/dotnet-docker` directory.
+1. The code used for the rest of this module is in the `/dotnet-docker` directory. In a new terminal in Codespaces type:
+
+    ```cli
+    cd dotnet-docker
+    ```
 
 ## Edit the Dockerfile to configure the Products backend
 
