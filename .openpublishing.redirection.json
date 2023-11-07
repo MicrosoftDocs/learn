@@ -28672,6 +28672,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/github/introduction-to-github/3-introduction-to-github.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/6-guided-tour-of-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github/4-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github/5-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/8-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/2-image-analysis-azure.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/3-image-analysis-azure",
       "redirect_document_id": false
