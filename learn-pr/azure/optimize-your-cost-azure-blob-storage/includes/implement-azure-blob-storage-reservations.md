@@ -2,9 +2,9 @@ To conclude your review of Azure Blob Storage cost optimization options, you dec
 
 ### Implement Azure Blob Storage reservations
 
-Azure Storage reserved capacity offers significant savings in return for purchasing a designated capacity of Azure Block Blob Storage or Azure Data Lake Storage for the period of one or three years. Reservations are available in 100 TB and 1 PB blocks to accommodate varying customer needs. The purchase applies to the cost of storage (per GB) and doesn’t cover early deletion charges, or the charges associated with storage operations and data transfers.
+Azure Storage reserved capacity offers significant savings in return for purchasing a designated capacity of Azure Block Blob Storage or Azure Data Lake Storage for the period of one or three years. Reservations are available in 100 TB and 1 PB blocks to accommodate varying customer needs. The purchase applies to the cost of storage (per GB) and doesn’t cover early deletion charges or the charges associated with storage operations and data transfers.
 
-As part of the arrangement, you can choose the required number of units for hot, cool or archive access tiers in combination with on any of the available storage redundancy options within a specific Azure region. The amount of savings depends on several factors, including:
+As part of the arrangement, you can choose the required number of units for hot, cool, cold, or archive access tiers in combination with on any of the available storage redundancy options within a specific Azure region. The amount of savings depends on several factors, including:
 
 - The duration of the reservation.
 
@@ -14,7 +14,7 @@ As part of the arrangement, you can choose the required number of units for hot,
 
 - The type of redundancy designated at the time of purchasing the reservation.
 
-The reserved capacity can be scoped to a single subscription, multiple subscriptions (referred to as a *shared scope*), and management groups. This means that a reservation is aggregated at that scope and cannot be limited to a specific storage account, container, or object within the subscription.
+You can scope the reserved capacity to a single subscription, multiple subscriptions (referred to as a *shared scope*), and management groups. This means that a reservation is aggregated at that scope and cannot be limited to a specific storage account, container, or object within the subscription.
 
 From the commercial standpoint, you can choose between a single, upfront payment and monthly payments. For Enterprise Agreement (EA) customers, the charges are deducted from the enrollment's Azure Prepayment balance or charged as overage.
 
