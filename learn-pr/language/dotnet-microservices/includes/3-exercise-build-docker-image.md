@@ -7,6 +7,11 @@ In this exercise, you'll learn to create a microservice endpoint and containeriz
 
 Let's start by connecting to the GitHub codespace that hosts the exercise.
 
+### Pre-configured Codespace
+You can setup a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-docker%2Fdevcontainer.json).
+
+### Manually create new Codespace
+
 1. Open a browser and go to the [eShopLite repository](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative).
 1. Select **Code** and then select the **Codespaces** tab.
 1. Select **Create codespace on main**. GitHub creates and configures the codespace. This might take a few minutes.
