@@ -4,10 +4,11 @@ title: Reduce your carbon footprint with Azure
 metadata:
   title: Reduce your carbon footprint with Azure
   description: "Reduce your carbon footprint with Azure"
-  ms.date: 11/03/2023
+  ms.date: 11/07/2023
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: unit
+  ms.topic: module
+  ms.prod: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/6-reduce-your-carbon-footprint-azure.md)]
