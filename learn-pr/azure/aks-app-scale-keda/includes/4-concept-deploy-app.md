@@ -6,7 +6,7 @@ Before you deploy your application to Kubernetes, let's review Kubernetes Deploy
 
 A Kubernetes Deployment is an evolution of pods. Deployments wrap pods into an intelligent object that allows them to *scale out*. You can easily duplicate and scale your application to support more load without the need to configure complex networking rules.
 
-Deployments allow you to update your applications without downtime just by changing the image tag. Updating a Deployment turns off the online apps one by one and replaces them with the newest version instead of deleting all apps and creating new ones. This means that any Deployment can update the pods inside of it with no visible affect on availability.
+Deployments allow you to update your applications without downtime just by changing the image tag. Updating a Deployment turns off the online apps one by one and replaces them with the newest version instead of deleting all apps and creating new ones, which means that Deployment can update the pods inside of it with no visible effect on availability.
 
 While there are many benefits to using Deployments over pods, they aren't able to adequately handle our scenario.  
 
@@ -36,8 +36,8 @@ spec:
           name: contoso-microservice
 ```
 
-In the sample manifest, `replicas` is set to 10, which is the highest number we can set for necessary replicas available for processing the peak number of events. However, this means that the application consumes too many resources during non-peak times, which might starve other Deployments within the cluster.
+In the sample manifest, `replicas` is set to 10, which is the highest number we can set for necessary replicas available for processing the peak number of events. However, this causes the application consumes too many resources during nonpeak times, which might starve other Deployments within the cluster.
 
-One solution is to use a standalone HPA to monitor the CPU usage of the pods. While this is a better option than manually scaling in both directions, using a HPA won't focus on the number of events received to the Redis list.
+One solution is to use a standalone HPA to monitor the CPU usage of the pods, which is a better option than manually scaling in both directions. However, the HPA doesn't focus on the number of events received to the Redis list.
 
 The best solution is to **use KEDA and a Redis scaler** to query the list and determine if more or less pods are needed to process the events.
