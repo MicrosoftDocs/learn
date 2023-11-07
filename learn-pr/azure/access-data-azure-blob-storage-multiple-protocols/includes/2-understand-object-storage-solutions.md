@@ -18,13 +18,13 @@ Common Blob Storage uses include:
 
 ### Understand hierarchical namespace support in Azure Blob Storage
 
-You can organize objects from Blob Storage into a hierarchy of directories and nested subdirectories known as a hierarchical namespace. Blob Storage that's enabled for a hierarchical namespace provides file system semantics similar to the computer system, and you can use this storage with analytics engines and frameworks.
+You can organize objects from Blob Storage into a hierarchy of directories and nested subdirectories known as a *hierarchical namespace*. Blob Storage that's enabled for a hierarchical namespace provides file-system semantics similar to the computer system, and you can use this storage with analytics engines and frameworks.
 
 With a hierarchical namespace enabled on a storage account, you can achieve the following benefits:
 
-- **Scalable and cost-effective object storage**: Hierarchical namespace scales linearly and doesn't degrade either the data capacity or performance. Even in cases where enabling a hierarchical namespace increases storage costs, the total cost to ownership is still lowered due to reduced compute costs.
+- **Scalable and cost-effective object storage**: A hierarchical namespace scales linearly and doesn't degrade either the data capacity or performance. Even in cases where enabling a hierarchical namespace increases storage costs, the total cost of ownership is still lowered due to reduced compute costs.
 
-- **Atomic directory manipulation**: Hierarchical namespace stores objects in a directory hierarchy using a convention of embedding slashes (/) in the object name to denote path segments. You can improve the latency due to atomic directory manipulation, which a hierarchical namespace enables.
+- **Atomic directory manipulation**: A hierarchical namespace stores objects in a directory hierarchy using a convention of embedding slashes (/) in the object name to denote path segments. You can improve the latency due to atomic directory manipulation, which a hierarchical namespace enables.
 
 - **Familiar interface style**: File systems with a hierarchical namespace are widely accepted by the developer community and are suitable for storage workloads designed for file systems that manipulate directories.
 
@@ -36,7 +36,7 @@ Data Lake Storage combines a file system with a storage platform to help you qui
 
 ### Hadoop-compatible access
 
-Data Lake Storage Gen2 allows you to treat the data as if it's stored in an HDFS. Data Lake Storage Gen2 allows Azure Blob Storage users access to a new driver, the Azure Blob File System (ABFS). ABFS is part of Apache Hadoop and is included in many of the commercial distributions of Hadoop. With this feature, you can store the data in one place and access it without moving the data between environments by using compute technologies such as Azure Databricks, Azure HDInsight, and Azure Synapse Analytics.
+Data Lake Storage Gen2 allows you to treat the data as if it's stored in an HDFS. Data Lake Storage Gen2 allows Azure Blob Storage users access to a new driver, the Azure Blob File System (ABFS). ABFS is part of Apache Hadoop and is included in many of the Hadoop commercial distributions. With this feature, you can store the data in one place and access it without moving the data between environments by using compute technologies such as Azure Databricks, Azure HDInsight, and Azure Synapse Analytics.
 
 ### Security
 
