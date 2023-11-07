@@ -7,7 +7,7 @@ metadata:
   ms.date: 4/5/2021
   author: rayoef
   ms.author: rayoflores
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-kubernetes-service
 title: Scale container applications in Azure Kubernetes Services using KEDA
 summary: Scale a containerized application hosted on Azure Kubernetes Services (AKS) using event driven scaling using KEDA.
