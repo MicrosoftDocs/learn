@@ -9,7 +9,6 @@ metadata:
   ms.author: cahowd
   ms.topic: module-guided-project
   ms.prod: azure
-  ms.service: container-apps
 durationInMinutes: 40
 content: |
   [!include[](includes/2-prepare-deployment-tools-resources.md)]

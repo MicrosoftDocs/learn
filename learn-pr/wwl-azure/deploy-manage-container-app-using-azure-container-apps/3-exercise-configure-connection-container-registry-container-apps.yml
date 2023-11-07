@@ -9,7 +9,6 @@ metadata:
   ms.author: cahowd
   ms.topic: module-guided-project
   ms.prod: azure
-  ms.service: container-apps
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-configure-connection-container-registry-container-apps.md)]

@@ -8,7 +8,6 @@ metadata:
   ms.author: cahowd
   ms.topic: module-guided-project
   ms.prod: azure
-  ms.service: container-apps
 title: Guided project - Deploy and manage a container app using Azure Container Apps
 summary: |
   This module guides learners through the end-to-end process of building, deploying, and managing containerized applications using Azure Container Apps, Azure Container Registry, Azure Pipelines, and other tools and resources.

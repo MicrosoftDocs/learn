@@ -9,7 +9,6 @@ metadata:
   ms.author: cahowd
   ms.topic: module-guided-project
   ms.prod: azure
-  ms.service: container-apps
 durationInMinutes: 10
 quiz:
   title: "Check your knowledge"
@@ -74,9 +73,9 @@ quiz:
     - content: "Install Docker Desktop."
       isCorrect: true
       explanation: "Correct. Docker Desktop is a tool that enables the creation and management of container images."
-    - content: "Install Azure CLI with `containerapp` extension"
+    - content: "Install Azure CLI with `container app` extension"
       isCorrect: false
-      explanation: "Incorrect. Azure CLI with `containerapp` extension is used for managing Azure Container Apps, not for creating and managing container images."
+      explanation: "Incorrect. Azure CLI with `container app` extension is used for managing Azure Container Apps, not for creating and managing container images."
     - content: "Install Visual Studio Code."
       isCorrect: false
       explanation: "Incorrect. Visual Studio Code is used for developing and deploying applications, not for creating and managing container images."
@@ -102,17 +101,17 @@ quiz:
     - content: "To authenticate the container app using a user-assigned managed identity."
       isCorrect: false
       explanation: "Incorrect. This is the purpose of configuring the container app to authenticate using the user assigned identity."
-  - content: "What is the purpose of configuring `Pipeline1` to use the self-hosted agent pool?"
+  - content: "What is the purpose of configuring `Pipeline 1` to use the self-hosted agent pool?"
     choices:
     - content: "To verify the configuration of the continuous integration environment for Container Apps."
       isCorrect: false
-      explanation: "Incorrect. The purpose of configuring `Pipeline1` to use the self-hosted agent pool is not related to verifying the configuration."
+      explanation: "Incorrect. The purpose of configuring `Pipeline 1` to use the self-hosted agent pool is not related to verifying the configuration."
     - content: "To deploy a container image from the Azure Container Registry to the Azure Container Apps platform."
       isCorrect: false
-      explanation: "Incorrect. This is the purpose of configuring `Pipeline1` with an Azure Container Apps deployment task."
-    - content: "To enable `Pipeline1` to deploy a container image from the container registry to the container app using a self-hosted agent pool."
+      explanation: "Incorrect. This is the purpose of configuring `Pipeline 1` with an Azure Container Apps deployment task."
+    - content: "To enable `Pipeline 1` to deploy a container image from the container registry to the container app using a self-hosted agent pool."
       isCorrect: true
-      explanation: "Correct. Configuring `Pipeline1` to use the self-hosted agent pool enables it to deploy a container image from the container registry to the container app."
+      explanation: "Correct. Configuring `Pipeline 1` to use the self-hosted agent pool enables it to deploy a container image from the container registry to the container app."
   - content: "What is the purpose of setting the revision management to multiple in Azure Container Apps?"
     choices:
     - content: "To enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
