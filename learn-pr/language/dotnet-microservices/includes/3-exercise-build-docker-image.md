@@ -5,9 +5,9 @@ In this exercise, you'll learn to create a microservice endpoint and containeriz
 
 ## Create a new GitHub Codespace
 
-Let's start by create a new GitHub codespace that hosts the exercise.
+Let's start by creating a new GitHub codespace that hosts the exercise.
 
-You can setup a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-docker%2Fdevcontainer.json).
+You can set up a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-docker%2Fdevcontainer.json).
 
 This will take several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the `/dotnet-docker` directory. 
 
