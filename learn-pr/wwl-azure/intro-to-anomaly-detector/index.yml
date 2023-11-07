@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: azure
 title: Introduction Azure AI Anomaly Detector
 summary: Discover the services available on Azure to detect anomalies in your time-series, or real-time data.
