@@ -1,10 +1,10 @@
-Like we had mentioned earlier, collaboration is at its core of everything GitHub does. 
+Like we mentioned earlier, collaboration is at its core of everything GitHub does. 
 
 We went over repositories in the first unit of the module and learned that repositories help you organize your project and its files. 
 
 The last unit, we learned about pull requests, a way to keep track of changes made to your project.
 
-In this unit, we are learning about issues and discussions, two other pieces that contribute to the collaborative nature of the GitHub Enterprise Platform. 
+In this unit, we're learning about issues and discussions, two other pieces that contribute to the collaborative nature of the GitHub Enterprise Platform. 
 
 
 ## Issues
@@ -13,7 +13,7 @@ GitHub Issues were created to track ideas, feedback, tasks, or bugs for work on 
 
 Issues can be created in various ways, so you can choose the most convenient method for your workflow. 
 
-For the walk-through in the next portion, we'll go over how to create an issue from a repository but just know there are a myriad of ways. Here is a list of all the ways you can create issues from. 
+For the walk-through in the next portion, we'll go over how to create an issue from a repository but just know there are a myriad of ways. Here's a list of all the ways you can create issues from. 
 
 The different ways to create an issue from:
 - a repository
@@ -52,7 +52,7 @@ In the next section, we’ll review Discussions and how to best utilize the feat
 
 ## Discussions
 
-Discussions are for conversations that need to be accessible to everyone and are not related to code. Discussions enable fluid, open conversation in a public forum.
+Discussions are for conversations that need to be accessible to everyone and aren't related to code. Discussions enable fluid, open conversation in a public forum.
 
 In this section we are be going over:
 -	Enabling a discussion in your repository
@@ -64,7 +64,7 @@ Let’s dive into enabling a discussion in your repository.
 
 Repository owners and people with Write access can enable GitHub Discussions for a community on their public and private repositories. The visibility of a discussion is inherited from the repository the discussion is created in.
 
-When you first enable GitHub Discussions, you are invited to configure a welcome post.
+When you first enable GitHub Discussions, you're invited to configure a welcome post.
 
 1.	On GitHub.com, navigate to the main page of the repository.
 2.	Under your repository name, click (gear icon) Settings.
@@ -78,7 +78,7 @@ When you first enable GitHub Discussions, you are invited to configure a welcome
 4.	Under "Start a new discussion," edit the template to align with the resources and tone you want to set for your community.
 5.	Click Start discussion.
 
-You are now ready to create a new discussion.
+You're now ready to create a new discussion.
 
 ### Create a new discussion
 
@@ -98,7 +98,7 @@ Similarly, since organization discussions are based on a source repository, any 
 
     :::image type="content" source="../media/announcements.png" alt-text="A screenshot of the select a discussion category menu selection, with the top option Announcements and the get started button highlighted." border="false":::
 
-Each category must have a unique name and emoji pairing, and are accompanied by a detailed description stating its purpose. Categories help maintainers organize how conversations are filed and are customizable to help distinguish categories that are Q&A or more open-ended conversations. In the following table are the default categories for discussions and their purpose.
+Each category must have a unique name and emoji pairing, and be accompanied by a detailed description stating its purpose. Categories help maintainers organize how conversations are filed and are customizable to help distinguish categories that are Q&A or more open-ended conversations. The following table shows the default categories for discussions and their purpose.
 
 | **Category** | **Purpose** | **Format** |
 |----------|----------|----------|
@@ -115,4 +115,4 @@ Each category must have a unique name and emoji pairing, and are accompanied by 
 
 6.	Click Start discussion.
 
-Now that we've learned a little bit about how GitHub inspires collaboration, let's move to how you can manage notifications, subscribe to threads, and a little bit about GitHub pages. 
+That covers a little bit about how GitHub inspires collaboration. Now let's move to how you can manage notifications, subscribe to threads, and get started with GitHub pages.
