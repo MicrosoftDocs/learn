@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.aks-network-design-azure-container-network-interface.8-summary
+uid: learn.aks-network-design-azure-container-network-interface.9-summary
 title: Summary
 metadata:
   unitType: summary
   title: Summary
   description: Summary
-  ms.date: 8/20/2021
-  author: markwme
-  ms.author: mawhitby
+  ms.date: 10/31/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.author: schaffererin
+  author: schaffererin
 durationInMinutes: 2
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/9-summary.md)]
