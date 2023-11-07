@@ -61,7 +61,7 @@ Now that we know of all the ingredients, let’s review the GitHub flow.
 
 ## The GitHub flow
 
-:::image type="content" source="../media/2-branching.png" alt-text=" A visual representation of the GitHub Flow in a linear format that includes a new branch, commits, pull request, and merging the changes back to main in that order." border="false":::
+:::image type="content" source="../media/2-branching.png" alt-text="Screenshot showing a visual representation of the GitHub Flow in a linear format that includes a new branch, commits, pull request, and merging the changes back to main in that order." border="false":::
 
 The GitHub flow can be defined as a lightweight workflow that allows for safe experimentation. You can test new ideas and collaboration with your team by using branching, pull requests, and merging. 
 
