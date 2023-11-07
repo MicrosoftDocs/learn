@@ -107,7 +107,7 @@ But before we begin, it is worth knowing in order to add a file to a repository 
 2.	In your repository, browse to the folder where you want to create a file.
 3.	Above the list of files, select the Add file ᐁ dropdown menu, then click ᐩ Create new file. Alternatively, you can click ᐩ in the file tree view on the left.
 
-    :::image type="content" source="../media/2-add-file-options.png" alt-text="A screenshot of the two options of adding a file to your new repository highlighted in red. One option is the plus sign in the left hand navigation bar, the second option is the add file button towards the right of the screen." border="false":::
+    :::image type="content" source="../media/add-file-options.png" alt-text="A screenshot of the two options of adding a file to your new repository highlighted in red. One option is the plus sign in the left hand navigation bar, the second option is the add file button towards the right of the screen." border="false":::
 
 
 4.	In the file name field, type the name and extension for the file. To create subdirectories, type the / directory separator.
