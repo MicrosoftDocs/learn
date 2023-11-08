@@ -13,7 +13,7 @@ summary: Register your company applications then use Azure security features to 
 abstract: |
   By the end of this module, you will be able to:
   - Register an application in Azure using app registration
-  - Select and configure which Azure AD users can access each application
+  - Select and configure which Microsoft Entra users can access each application
   - Configure and deploy web app certificates
 prerequisites: |
   - None
@@ -27,10 +27,8 @@ products:
 - azure
 - azure-app-configuration
 - azure-app-service
-- azure-web-apps
 - ms-graph
 - microsoft-graph-permissions-api
-- microsoft-identity-platform
 subjects:
 - cloud-security
 units:

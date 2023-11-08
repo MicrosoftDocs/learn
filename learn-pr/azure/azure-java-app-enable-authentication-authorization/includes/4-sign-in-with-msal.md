@@ -1,10 +1,10 @@
-You have registered your web application with Azure Active Directory. You are now ready to add the authentication code to sign in users in your application and would like to use an SDK that can handle the authentication details for you.  In this unit, you will learn about the Microsoft Authentication Library for Java (MSAL4J) and how it helps with authentication.
+You have registered your web application with Microsoft Entra ID. You are now ready to add the authentication code to sign in users in your application and would like to use an SDK that can handle the authentication details for you.  In this unit, you will learn about the Microsoft Authentication Library for Java (MSAL4J) and how it helps with authentication.
 
 ## Microsoft Authentication Library for Java
 
-The Microsoft Authentication Library for Java (MSAL4J) enables applications to sign in users or apps with Microsoft identities (Azure Active Directory, Microsoft accounts and Azure Active Directory B2C accounts) and obtain tokens to call Microsoft APIs or your own APIs registered with Azure Active Directory. It is built using industry standard OAuth2 and OpenID Connect protocols.
+The Microsoft Authentication Library for Java (MSAL4J) enables applications to sign in users or apps with Microsoft identities (Microsoft Entra ID, Microsoft accounts and Azure Active Directory B2C accounts) and obtain tokens to call Microsoft APIs or your own APIs registered with Microsoft Entra ID. It is built using industry standard OAuth2 and OpenID Connect protocols.
 
-The library provides convenient APIs that enable authentication with Azure Active Directory for different types of applications:
+The library provides convenient APIs that enable authentication with Microsoft Entra ID for different types of applications:
 
 - Web applications
 - Daemon services
@@ -29,7 +29,7 @@ ConfidentialClientApplication app = ConfidentialClientApplication
                                         .build();
 ```
 
-- **CLIENT_ID**: The client ID is the unique application (client) ID assigned to your app by Azure Active Directory when the app was registered.
+- **CLIENT_ID**: The client ID is the unique application (client) ID assigned to your app by Microsoft Entra ID when the app was registered.
 - **CLIENT_SECRET**: The client secret for the confidential client app, created when registering the app.
 - **AUTHORITY**: The authority is a URL that indicates a directory that MSAL can request tokens from. It is composed of the identity provider instance and sign-in audience for the app.
 
@@ -50,8 +50,7 @@ final IAuthenticationResult result = app.acquireToken(authParams).get();
 ```
 
 - **REDIRECT_URI**: The redirect URI is the URI the identity provider will send the security tokens back to.
-It must match the redirect URI in the Azure Active Directory app registration.
+It must match the redirect URI in the Microsoft Entra app registration.
 - **SCOPES**: Scopes are permissions requested by the application. Normally, the three scopes `openid profile offline_access` suffice for receiving an ID token response for a user sign in and are set by default by MSAL.
 
 Use the `acquireToken` methods in your application when initiating a sign in flow for users and calling APIs to access data.
-

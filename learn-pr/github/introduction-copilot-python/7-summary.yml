@@ -5,12 +5,13 @@ title: |
 metadata:
   title: |
     summary
+
   description: "Review what you've learned."
   ms.date: 8/23/2023
   author: bethanyjep
   ms.author: bethanycheum
-  ms.topic: interactive-tutorial
-  ms.prod: github
+  ms.topic: unit
+  ms.custom: devx-track-python
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

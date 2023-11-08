@@ -10,7 +10,7 @@ The following information is specific to HDInsight 3.6 and above. During the HDI
 
 ![HDInsight storage options](../media/3-img02.png)
 
-Most setups use Azure Data Lake Storage Gen2. This type of setup uses core features of a file system that are compatible with Hadoop, Azure Active Directory (Azure AD) integration, and POSIX-based access control lists (ACLs). You can use Azure Blob Storage for backward compatibility, but it is highly recommended to make use of Azure Data Lake Storage Gen2 wherever possible. 
+Most setups use Azure Data Lake Storage Gen2. This type of setup uses core features of a file system that are compatible with Hadoop, Microsoft Entra integration, and POSIX-based access control lists (ACLs). You can use Azure Blob Storage for backward compatibility, but it is highly recommended to make use of Azure Data Lake Storage Gen2 wherever possible. 
 
 ## Processing
 
@@ -23,4 +23,3 @@ The worker node is responsible for processing the data that has been assigned to
 From an OSS perspective, the resource management capabilities of an HDInsight cluster are performed by YARN. This service manages the resources and job scheduling that is undertaken when you are processing data. It sits between the HDFS and the computation system of the HDInsight cluster. The service works with other OSS technologies to ensure that the resources to process the HDInsight job are available. YARN works with the head node to distribute the job across the worker nodes of the cluster to ensure that the data processing jobs are parallelized.  
 
 HDFS, YARN, and MapReduce are the three core services required for Hadoop on HDInsight. It is typical to use additional OSS technologies to make it easier to create a solution. For example, you may use Hive as an abstraction layer. One that sits on top of MapReduce so that you can write SQL type language constructs to perform ad hoc data processing and analytics. Or you can use Apache Ambari to perform monitoring on the HDInsight cluster.
-

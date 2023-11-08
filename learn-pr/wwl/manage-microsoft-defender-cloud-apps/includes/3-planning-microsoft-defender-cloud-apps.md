@@ -13,6 +13,5 @@ This unit will guide you to use Microsoft Defender for Cloud Apps. By using Micr
 
 - In order for your organization to be in compliance for licensing Microsoft Defender for Cloud Apps, you must obtain a license for every user protected by Microsoft Defender for Cloud Apps.
 - After you have a license for Defender for Cloud Apps, you'll receive an email with activation information and a link to the Defender for Cloud Apps portal.
-- To set up Defender for Cloud Apps, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to. This is regardless of whether you assign the role in the Microsoft 365 admin center, or in the Azure classic portal, or by using the Azure AD module for Windows PowerShell.
+- To set up Defender for Cloud Apps, you must be a Global Administrator or a Security Administrator in Microsoft Entra ID or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to. This is regardless of whether you assign the role in the Microsoft 365 admin center, or in the Azure classic portal, or by using the Azure AD module for Windows PowerShell.
 - To run the Defender for Cloud Apps portal, use Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest).
-

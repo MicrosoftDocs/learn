@@ -14,7 +14,7 @@ prerequisites: |
   - General IT knowledge or any general experience working in an IT environment.
   - General understanding of Microsoft Azure and Microsoft 365.
 summary: |
-  Microsoft Entra is Microsoft's cloud-based identity and access management solution.  Learn about Microsoft Entra services and identity principals, secure authentication, access management capabilities, as well as identity protection and governance.
+  Microsoft Entra ID is Microsoft's cloud-based identity and access management solution.  Learn about Microsoft Entra services and identity principals, secure authentication, access management capabilities, as well as identity protection and governance.
   
   Here are all the learning paths in preparation for the SC-900 exam: Microsoft Security, Compliance, and Identity Fundamentals.
   :::row:::
@@ -60,7 +60,7 @@ roles:
 - business-user
 - student
 products:
-- azure-active-directory
+- entra-id
 subjects:
 - compliance
 - identity-access

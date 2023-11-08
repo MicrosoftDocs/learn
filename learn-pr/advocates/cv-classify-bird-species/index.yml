@@ -8,8 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
-  ms.service: cognitive-services
-  ms.subservice: custom-vision
+  ms.service: azure-ai-custom-vision
 title:  Classify endangered bird species with Custom Vision
 summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure AI Custom Vision to create a model to identify species of birds!
 abstract: |

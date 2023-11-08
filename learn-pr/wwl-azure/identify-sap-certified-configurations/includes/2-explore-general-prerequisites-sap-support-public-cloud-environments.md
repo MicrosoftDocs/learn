@@ -1,6 +1,4 @@
-
-
-General prerequisites for SAP support in public cloud environments are outlined in [SAP Note \#1380654](https://launchpad.support.sap.com/#/notes/1380654) and include the following items:
+General prerequisites for SAP support in public cloud environments are outlined in [SAP Note \#1380654](https://aka.ms/az-120-sapnote-1380654) and include the following items:
 
 - Licensing for SAP software to be deployed.
 - SAP system sizing and knowledge of resource requirements of SAP workloads to be deployed.

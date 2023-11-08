@@ -12,7 +12,7 @@ Azure Arc-enabled servers not only benefit from built in-security with careful e
 
 Each Azure Arc-enabled server has a managed identity as part of a resource group inside an Azure subscription. That identity represents the server running on-premises or other cloud environment. Access to this resource is controlled by standard Azure role-based access control (RBAC). Two Arc-enabled Server specific roles are Azure Connected Machine Onboarding role and the Azure Connected Machine Resource Administrator role.
 
-The Azure Connected Machine Onboarding role is available for at-scale onboarding, and can only read or create new Azure Arc-enabled servers in Azure. It can't delete servers already registered or manage extensions. As a best practice, we recommend only assigning this role to the Azure Active Directory (Azure AD) service principal used to onboard machines at scale.
+The Azure Connected Machine Onboarding role is available for at-scale onboarding, and can only read or create new Azure Arc-enabled servers in Azure. It can't delete servers already registered or manage extensions. As a best practice, we recommend only assigning this role to the Microsoft Entra service principal used to onboard machines at scale.
 
 Users with the Azure Connected Machine Resource Administrator role can read, modify, re-onboard, and delete a machine. This role is designed to support management of Azure Arc-enabled servers, but not other resources in the resource group or subscription.
 

@@ -4,11 +4,10 @@ title: Exercise - Explore translation
 metadata:
   title: Exercise - Explore translation
   description: "Exercise - Explore translation"
-  ms.date: 08/22/2023
+  ms.date: 09/21/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-translate-text-use-azure.md)]

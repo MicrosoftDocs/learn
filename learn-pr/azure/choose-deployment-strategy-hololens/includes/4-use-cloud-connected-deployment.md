@@ -2,7 +2,7 @@ Imagine a company specializing in field services, where technicians are dispatch
 
 The deployment starts with a pilot phase, where a single HoloLens 2 device is connected to the cloud to test the deployment process. The device is connected to cloud services and the public internet, allowing technicians to use advanced features like spatial mapping, object recognition, and remote collaboration tools.
 
-Wi-Fi networks at customer sites or remote locations provide internet access, enabling seamless connectivity to cloud services. Azure AD Join with MDM Auto Enrollment, managed through Intune, ensures secure device management and user authentication. Technicians sign in using their corporate accounts through Azure AD, allowing personalized access to relevant resources.
+Wi-Fi networks at customer sites or remote locations provide internet access, enabling seamless connectivity to cloud services. Microsoft Entra join with MDM Auto Enrollment, managed through Intune, ensures secure device management and user authentication. Technicians sign in using their corporate accounts through Microsoft Entra ID, allowing personalized access to relevant resources.
 
 This Cloud Connected Deployment supports both single and multiple users per device, accommodating various field service scenarios. Technicians can collaborate in real-time, accessing shared data, receiving guidance from experts, and capturing on-site information for analysis.
 

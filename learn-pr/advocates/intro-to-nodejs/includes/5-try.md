@@ -1,9 +1,8 @@
-In this unit, you'll create and run a Hello World Node.js script.
+In this unit, you'll create and run a Node.js script.
 
 ## Start your dev container in a browser
 
 A [development container](https://containers.dev/) environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces in a browser or locally using Visual Studio Code.
-
 
 [GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
 
@@ -15,7 +14,7 @@ A [development container](https://containers.dev/) environment is available with
     > [!div class="nextstepaction"]
     > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=278117471)
 
-1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
+1. On the **Create codespace** page, review the codespace configuration settings and then select **Create codespace**
 
     :::image type="content" source="../media/codespaces/codespace-configuration.png" alt-text="Screenshot of the confirmation screen before creating a new codespace.":::
 
@@ -92,13 +91,56 @@ Node.js also supports running code from files.
    node index.js
    ```
 
-You should see the following output:
+    You should see the following output:
+    
+    ```output
+    Hello World, from a script file.
+    ```
 
-```output
-Hello World, from a script file.
-```
+You have now run your first Node.js JavaScript code. 
 
-You have now run your first Node.js JavaScript code. Close the browser tab to stop the dev container.
+* Question: Is console.log synchronous or asynchronous?
+* Answer: The `console.log` method appears in development to execute immediately and is therefore assumed to be async. There is no guarantee of async behavior for this method so must be considered synchronous. This means that the code execution _can_ block until the `console.log` method is finished. This is why you'll be cautioned from keeping console.log statements in your code in production.
+
+## Add an asynchronous function
+
+The following top-level asynchronous code requests an HTTP JSON data source then displays it. 
+
+1. Add the following code to the `index.js` file to create an asynchronous HTTP request:
+
+    ```javascript
+    const https = require('https');
+    
+    console.log(`start`);
+    
+    try{
+        const response = await https.get('https://nodejs.org/dist/index.json';
+
+        console.log(res.statusCode);
+    } catch( error ){
+        console.log(error);
+    }
+    
+    console.log(`end`);
+    ```
+
+    The `https.get` method makes an HTTP request to the Node.js website and returns the response. The `get` method takes two parameters: the URL to request and a callback function that is called when the response is received. The callback function takes a single parameter, `res`, which is the response object.
+
+1. Rerun the application:
+
+    ```javascript
+    node index.js
+    ```
+
+1. The order of the console logs is as follows:
+    
+    ```output
+    start
+    end
+    200
+    ```
+
+From the output, you can see the event loop in action. The HTTP method is called and put in the task queue, waiting for it to return. The event loop takes the next task, which is the console.log method.
 
 ## Stop your dev container
 
@@ -110,7 +152,7 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
 1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
 
-1. Locate your currently running codespaces sourced from the [`azure-samples/minimal-api-work-with-databases`](https://github.com/azure-samples/minimal-api-work-with-databases) GitHub repository.
+1. Locate your currently running codespaces sourced from the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
 
     :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
 

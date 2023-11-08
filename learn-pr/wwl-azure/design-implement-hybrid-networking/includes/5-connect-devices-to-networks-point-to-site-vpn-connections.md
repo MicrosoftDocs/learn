@@ -21,16 +21,18 @@ When using the native Azure certificate authentication, a client certificate on 
 
 The validation of the client certificate is performed by the VPN gateway and happens during establishment of the P2S VPN connection. The root certificate is required for the validation and must be uploaded to Azure.
 
-### Authenticate using native Azure Active Directory authentication
+<a name='authenticate-using-native-azure-active-directory-authentication'></a>
 
-Azure AD authentication allows users to connect to Azure using their Azure Active Directory credentials. Native Azure AD authentication is only supported for OpenVPN protocol and Windows 10 and requires the use of the Azure VPN Client.
+### Authenticate using native Microsoft Entra authentication
 
-With native Azure AD authentication, you can leverage Azure AD's conditional access as well as multifactor authentication (MFA) features for VPN.
+Microsoft Entra authentication allows users to connect to Azure using their Microsoft Entra credentials. Native Microsoft Entra authentication is only supported for OpenVPN protocol and Windows 10 and requires the use of the Azure VPN Client.
 
-At a high level, you need to perform the following steps to configure Azure AD authentication:
+With native Microsoft Entra authentication, you can leverage Microsoft Entra Conditional Access as well as multifactor authentication (MFA) features for VPN.
 
- -  Configure an Azure AD tenant
- -  Enable Azure AD authentication on the gateway
+At a high level, you need to perform the following steps to configure Microsoft Entra authentication:
+
+ -  Configure a Microsoft Entra tenant
+ -  Enable Microsoft Entra authentication on the gateway
  -  Download and configure Azure VPN Client
 
 ### Authenticate using Active Directory (AD) Domain Server

@@ -16,7 +16,7 @@ Dependencies that you use in your apps can be updated often and may contain new 
    dotnet list package
    ```
 
-   This should output the requested version and the final resolved (installed) version.
+   This should output the requested version and the final resolved (installed) version
 
    ```output
    Top-level Package      Requested   Resolved

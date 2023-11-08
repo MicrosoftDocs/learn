@@ -1,4 +1,3 @@
-
 In Azure Machine Learning studio, there are several ways to author classification machine learning models. One way is to use a visual interface called *designer* that you can use to train, test, and deploy machine learning models. The drag-and-drop interface makes use of clearly defined inputs and outputs that can be shared, reused, and version controlled.  
 
 Each *designer* project, known as a pipeline, has a left panel for navigation and a canvas on your right hand side. To use *designer*, identify the building blocks, or components, needed for your model, place and connect them on your canvas, and run a machine learning job.  

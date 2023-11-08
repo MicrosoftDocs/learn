@@ -10,3 +10,5 @@ This module shows you how to incorporate eye-tracking and voice commands with MR
 * Learn how to control speech commands globally and locally
 
 By the end of the module, you can add eye-tracking and voice commands to your project using MRTK.
+
+A completed example of this tutorial can be found [here](https://github.com/microsoft/MixedRealityLearning/tree/development/MRTK3%20Tutorials).

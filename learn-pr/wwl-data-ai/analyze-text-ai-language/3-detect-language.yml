@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-text-ai-language.detect-language
+title: Detect language
+metadata:
+  title: Detect language
+  description: "Detect language"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-language
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-detect-language.md)]

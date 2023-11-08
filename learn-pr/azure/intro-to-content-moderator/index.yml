@@ -8,8 +8,7 @@ metadata:
   ms.author: pafarley
   manager: nitinme
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services 
-  ms.subservice: content-moderator
+  ms.service: azure-ai-content-moderator
 title: Introduction to Content Moderator
 summary: Content Moderator checks text, image, and video content for material that is potentially offensive, risky, or otherwise undesirable in content.
 abstract: | 

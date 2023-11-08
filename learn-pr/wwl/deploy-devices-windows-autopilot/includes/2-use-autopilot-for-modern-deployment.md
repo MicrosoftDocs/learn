@@ -1,5 +1,3 @@
-
-
 Modern deployment methods take a new approach to provisioning devices. One of the key benefits of Windows 11 and later is a feature called Windows Autopilot. Windows Autopilot is a cloud-based deployment method. With Autopilot, you can set up and preconfigure new and existing Windows 11 or later devices. Users in your organization use a new operating system out-of-the-box experience (OOBE) to configure their devices without needing a Windows image.
 
 Autopilot offers the following advantages over on-premises deployment methods:
@@ -10,9 +8,9 @@ Autopilot offers the following advantages over on-premises deployment methods:
  -  Configuring Autopilot deployments are relatively simple compared to traditional image creation and management.
  -  With no images to deploy, heavy bandwidth consumption is no longer a concern.
 
-Windows Autopilot is cloud-driven and based around Azure AD Premium and Microsoft Intune. Using Windows Autopilot, you can:
+Windows Autopilot is cloud-driven and based around Microsoft Entra ID P1 or P2 and Microsoft Intune. Using Windows Autopilot, you can:
 
- -  Join devices to Azure AD automatically.
+ -  Join devices to Microsoft Entra ID automatically.
  -  Auto enroll your users' devices into MDM services.
  -  Restrict the creation of the Administrator account.
  -  Customize the OOBE content specifically to your organization.

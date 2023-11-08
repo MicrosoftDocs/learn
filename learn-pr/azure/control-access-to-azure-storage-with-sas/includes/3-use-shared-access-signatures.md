@@ -26,11 +26,11 @@ The SAS token contains the following components, or query parameters.
 | sr | scope of resource| sr=b | The kind of storage being accessed. Available values include b (blob), c (container), d (directory), f (file), s (share) |
 | sig | signature | sig=SrW1...wVZs%3D | The cryptographic signature. |
 
-The signature is signed with your storage account key when you create a service or account shared access signature. If you use an Azure Active Directory (Azure AD) security principal with access to the storage, you create a user delegation shared access signature. You also grant the **Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey** action to the principal.
+The signature is signed with your storage account key when you create a service or account shared access signature. If you use a Microsoft Entra security principal with access to the storage, you create a user delegation shared access signature. You also grant the **Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey** action to the principal.
 
 ### Create a SAS in .NET
 
-Because your company provides access to third parties, you can't use Azure AD to create service principals for each third party that requires access to medical images. Your app uses a storage account key for each individual file. The following steps show how to create a SAS using C# code.
+Because your company provides access to third parties, you can't use Microsoft Entra ID to create service principals for each third party that requires access to medical images. Your app uses a storage account key for each individual file. The following steps show how to create a SAS using C# code.
 
 #### Create a blob container client to connect to the storage account on Azure
 
@@ -75,7 +75,7 @@ sasToken = sas.ToSasQueryParameters(storageSharedKeyCredential).ToString();
 To reduce the potential risks of using a SAS, Microsoft provides some guidance:
 
 - To securely distribute a SAS and help prevent man-in-the-middle attacks, always use HTTPS.
-- The most secure SAS is user delegation. Use it wherever possible because it removes the need to store your storage account key in code. Azure AD must be used to manage credentials; this option might not be possible for your solution.
+- The most secure SAS is user delegation. Use it wherever possible because it removes the need to store your storage account key in code. Microsoft Entra ID must be used to manage credentials; this option might not be possible for your solution.
 - Try to set your expiration time to the smallest useful value. If a SAS key becomes compromised, it can be exploited for only a short time.
 - Apply the rule of minimum-required privileges. Only grant the access that's required. For example, in your app, read-only access is sufficient.
 - There are some situations where a SAS isn't the correct solution. When there's an unacceptable risk of using a SAS, create a middle-tier service to manage users and their access to storage.

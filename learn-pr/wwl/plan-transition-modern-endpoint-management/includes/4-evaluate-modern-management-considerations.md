@@ -8,7 +8,7 @@ Modern deployment can change an installed Windows 11 operating system in many wa
 
  -  Removing preinstalled software.
  -  Upgrading a Windows 11 edition.
- -  Joining a Windows 11 device to AD DS or Microsoft Azure Active Directory (Azure AD).
+ -  Joining a Windows 11 device to AD DS or Microsoft Entra ID.
  -  Enrolling a Windows 11 device in a mobile device management (MDM) solution such as Configuration Manager or Intune facilitates an advanced customization phase for the device. During this stage, various settings, policies, and management features specific to the MDM solution are configured, enhancing the device's overall customization and management capabilities.
  -  Restricting the Administrator account creation.
  -  Creating and autoassigning devices to configuration groups based on a device's profile.

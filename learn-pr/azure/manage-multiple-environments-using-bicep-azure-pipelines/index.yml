@@ -27,7 +27,7 @@ prerequisites: |
   - YAML pipelines through Azure Pipelines, including multistage pipelines and service connections.
 
   To work through the exercises in the module, you need:
-  - An Azure account that can create resource groups, Azure Active Directory applications, and service principals.
+  - An Azure account that can create resource groups, Microsoft Entra applications, and service principals.
   - An Azure DevOps organization and account.
 
   You also need the following installed locally:

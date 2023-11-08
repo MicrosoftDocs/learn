@@ -1,5 +1,3 @@
-
-
 The `string.Format()` method is used to perform composite formatting such as in the example:
 
 ```csharp
@@ -86,7 +84,7 @@ Suppose you work for a payment processing company that still supports legacy mai
 
 You're asked to build an application that will convert data in the relational database management system to the legacy file format. To ensure that the integration works correctly, the first step is to confirm the file format by giving the legacy system maintainers a sample of the output. Later, you build on this work to send hundreds or thousands of payments to be processed via an ASCII text file.
 
-### Add the OrderId to the output
+### Add the Payment ID to the output
 
 To get started, print the Payment ID in the first six columns. You pick some random payment data that should be adequate for the purposes.
 
@@ -109,7 +107,7 @@ To get started, print the Payment ID in the first six columns. You pick some ran
 	769C	
 	```
 
-There are three blank spaces to the right that not visible. You'll confirm that they exist in the next step.
+There are two blank spaces to the right that not visible. You'll confirm that they exist in the next step.
 
 ### Add the payee name to the output
 
@@ -138,7 +136,7 @@ Next, you add a fictitious Payee Name, padding it appropriately.
 	769C  Mr. Stephen Ortega
 	```
 
-Again, there are quite a few blank spaces after the Payee's Name. Also, there are three blank spaces after the Payment ID from Step 1.
+Again, there are quite a few blank spaces after the Payee's Name. Also, there are two blank spaces after the Payment ID from Step 1.
 
 ### Add the payment amount to the output
 

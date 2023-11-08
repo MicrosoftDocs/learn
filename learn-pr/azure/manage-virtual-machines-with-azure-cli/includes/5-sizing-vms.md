@@ -56,7 +56,7 @@ We didn't specify a size when we created our VM, so Azure selected a default gen
 az vm create \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --name SampleVM2 \
-    --image UbuntuLTS \
+    --image Ubuntu2204 \
     --admin-username azureuser \
     --generate-ssh-keys \
     --verbose \

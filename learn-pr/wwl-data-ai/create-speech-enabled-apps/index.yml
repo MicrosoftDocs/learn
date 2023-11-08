@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.create-speech-enabled-apps
+metadata:
+  title: Create speech-enabled apps with Azure AI services
+  description: "Create speech-enabled apps with Azure AI services."
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-speech
+title: Create speech-enabled apps with Azure AI services
+summary: The Azure AI Speech service enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text to speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
+abstract: |
+  In this module, you'll learn how to:
+  - Provision an Azure resource for the Azure AI Speech service
+  - Use the Azure AI Speech to text API to implement speech recognition
+  - Use the Text to speech API to implement speech synthesis
+  - Configure audio format and voices
+  - Use Speech Synthesis Markup Language (SSML)
+prerequisites: |
+  Before starting this module, you should:
+  - Be familiar with Azure services and the Azure portal
+  - Have experience programming with C# or Python
+iconUrl: /training/achievements/transcribe-speech-input-text.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- ai-services
+subjects:
+- custom-app-development
+- artificial-intelligence
+units:
+- learn.wwl.create-speech-enabled-apps.introduction
+- learn.wwl.create-speech-enabled-apps.create-speech-resource
+- learn.wwl.create-speech-enabled-apps.speech-to-text
+- learn.wwl.create-speech-enabled-apps.text-to-speech
+- learn.wwl.create-speech-enabled-apps.audio-format-voices
+- learn.wwl.create-speech-enabled-apps.speech-synthesis-markup
+- learn.wwl.create-speech-enabled-apps.exercise-speech-app
+- learn.wwl.create-speech-enabled-apps.knowledge-check
+- learn.wwl.create-speech-enabled-apps.summary
+badge:
+  uid: learn.wwl.create-speech-enabled-apps.badge

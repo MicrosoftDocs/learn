@@ -128,7 +128,7 @@ If using `ChatCompletion`, sending the prompt is formed differently.
 
 ```python
 response = openai.ChatCompletion.create(
-    engine=deployment_name
+    engine=deployment_name,
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "What is Azure OpenAI?"}

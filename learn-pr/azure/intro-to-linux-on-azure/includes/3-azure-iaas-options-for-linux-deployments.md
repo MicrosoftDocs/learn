@@ -12,7 +12,7 @@ With scale sets, you can distribute your workloads to achieve high availability,
 
 [![Diagram that illustrates virtual machine scale sets.](../media/virtual-machine-scale-sets-inline.png)](../media/virtual-machine-scale-sets-expanded.png#lightbox)
 
-## Choosing a Linux distribution
+## Choose a Linux distribution
 
 If your goal is to evaluate Linux on Azure, you can get started quickly. Set up a free Azure account and select your favorite distribution of Linux, which is typically free for an introductory period. Then, configure your virtual machines, network, security, and storage. Register for the free basic support that is available free to all Azure customers. After your evaluation is complete and you begin moving towards production deployment, determine pricing and support options as part of the planning process.
 
@@ -83,7 +83,7 @@ Storage options include these workload-specific services:
 
 - [Azure Queue Storage](/azure/storage/queues/storage-queues-introduction): A messaging store for reliable messaging between application components.
 
-- [Azure Table storage](/azure/storage/tables/table-storage-overview): A NoSQL store for schemeless storage of structured data.
+- [Azure Table storage](/azure/storage/tables/table-storage-overview): A NoSQL store for schemaless storage of structured data.
 
 - [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction): Enterprise file storage.  NetApp Files makes it easy to migrate and run complex, file-based applications with no code change. Azure NetApp Files is managed via your NetApp account and accessed via NFS, SMB, and dual-protocol volumes.
 
@@ -91,7 +91,7 @@ Storage options include these workload-specific services:
 
 [![Table that lists the various Azure Files tiers.](../media/azure-files-inline.png)](../media/azure-files-expanded.png#lightbox)
 
-Azure Storage data objects are accessible from anywhere in the world over HTTP or HTTPS via a REST API. Azure Storage also offers client libraries for developers building applications or services. Developers and IT pros can use Azure PowerShell and Azure CLI to write scripts for data management or configuration tasks. The Azure portal and Azure Storage Explorer provide user-interface tools for interacting with Azure Storage.
+Azure Storage data objects are accessible from anywhere in the world over HTTP or HTTPS via a REST API. Azure Storage also offers client libraries for developers building applications or services. Developers and IT pros can use Azure PowerShell and Azure CLI to write scripts for data management or configuration tasks. The Azure portal and Azure Storage Explorer provide user interface tools for interacting with Azure Storage.
 
 ## When to use Azure IaaS resources for Linux deployments
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-design-gui
+title: |
+  Exercise - Design the graphical user interface of your application
+metadata:
+  title: |
+    Exercise - Design the graphical user interface of your application
+  description: "Design the graphical user interface of your application"
+  ms.date: 9/5/2023
+  author: carlottac94
+  ms.author: cacaste
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-design-gui.md)]

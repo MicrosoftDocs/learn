@@ -16,7 +16,7 @@ To learn more about some of the topics we've examined in this module, check out 
  -  [How to deploy Conditional Access?](https://youtu.be/c_izIRNJNuk)
  -  [How to roll out CA policies to end users?](https://youtu.be/0_Fze7Zpyvc)
  -  [Conditional Access with device controls](https://youtu.be/NcONUf-jeS4)
- -  [Conditional Access with Azure AD MFA](https://youtu.be/Tbc-SU97G-w)
+ -  [Conditional Access with Microsoft Entra MFA](https://youtu.be/Tbc-SU97G-w)
  -  [Conditional Access in Enterprise Mobility + Security](https://youtu.be/A7IrxAH87wc)
  -  [Using the location condition in a Conditional Access policy](/azure/active-directory/conditional-access/location-condition)
  -  [Use compliance policies to set rules for devices you manage with Intune](/mem/intune/protect/device-compliance-get-started)

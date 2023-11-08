@@ -15,9 +15,9 @@ In this exercise, you'll:
 To perform this exercise, you need:
 
 * An Azure subscription.
-* A Microsoft account, or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-* An Azure DevOps organization associated with the Microsoft account or the Azure AD account referenced in the previous prerequisite. To create an Azure DevOps organization, refer to the link provided at the end of the module.
-* A GitHub account associated with the Microsoft account or the Azure AD account referenced in the previous prerequisite. To create a GitHub account, follow the instructions available at [Signing up for a new GitHub account](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/signing-up-for-a-new-github-account).
+* A Microsoft account, or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+* An Azure DevOps organization associated with the Microsoft account or the Microsoft Entra account referenced in the previous prerequisite. To create an Azure DevOps organization, refer to the link provided at the end of the module.
+* A GitHub account associated with the Microsoft account or the Microsoft Entra account referenced in the previous prerequisite. To create a GitHub account, follow the instructions available at [Signing up for a new GitHub account](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/signing-up-for-a-new-github-account).
 
 ## Prepare for deploying Azure resources
 

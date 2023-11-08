@@ -23,7 +23,7 @@ You can obtain snapshot view of common metrics by opening the **Monitoring** tab
 
 ### Custom dashboards
 
-You can create **dashboards** and add charts that closely monitor key metrics, such as latency or the number of transactions being processed. You can also present other information from your Azure subscription, such as virtual machine information or other web-based content, such as notices or video content. These dashboards can be shared with other users in your Azure Active Directory organization. The following image shows an example dashboard.
+You can create **dashboards** and add charts that closely monitor key metrics, such as latency or the number of transactions being processed. You can also present other information from your Azure subscription, such as virtual machine information or other web-based content, such as notices or video content. These dashboards can be shared with other users in your Microsoft Entra organization. The following image shows an example dashboard.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of a custom dashboard in the Azure portal.](../media/2-metric-dashboard.png)

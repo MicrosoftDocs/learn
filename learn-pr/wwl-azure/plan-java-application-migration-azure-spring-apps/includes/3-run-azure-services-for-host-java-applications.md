@@ -27,7 +27,7 @@ You can create an Azure Kubernetes Service cluster using:
  -  [Azure PowerShell](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/aks/learn/quick-kubernetes-deploy-powershell.md)
  -  Using template-driven deployment options, like [Azure Resource Manager templates](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/aks/learn/quick-kubernetes-deploy-rm-template.md), [Bicep](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/azure-resource-manager/bicep/overview.md) and Terraform.
 
-When you deploy an Azure Kubernetes Service cluster, the Kubernetes master and all nodes are deployed and configured for you. Advanced networking, Azure Active Directory integration, monitoring, and other features can be configured during the deployment process.
+When you deploy an Azure Kubernetes Service cluster, the Kubernetes master and all nodes are deployed and configured for you. Advanced networking, Microsoft Entra integration, monitoring, and other features can be configured during the deployment process.
 
 ## Azure Spring Apps
 

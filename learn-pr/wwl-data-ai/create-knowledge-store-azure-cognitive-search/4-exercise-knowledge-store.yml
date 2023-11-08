@@ -4,11 +4,11 @@ title: Exercise - Create a knowledge store
 metadata:
   title: Exercise - Create a knowledge store
   description: "Exercise - Create a knowledge store"
-  ms.date: 07/30/2021
+  ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
+  ms.service: cognitive-search
 azureSandbox: false
 labId: 93861
 labModal: true

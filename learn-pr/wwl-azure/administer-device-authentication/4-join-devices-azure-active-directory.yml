@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.administer-device-authentication.join-devices-azure-active-directory
-title: Join devices to Azure AD
+title: Join devices to Microsoft Entra ID
 metadata:
-  title: Join devices to Azure AD
-  description: "This unit covers joining devices to Azure AD."
+  title: Join devices to Microsoft Entra ID
+  description: "This unit covers joining devices to Microsoft Entra ID."
   ms.date: 08/21/2023
   author: wwlpublish
   ms.author: rstearman

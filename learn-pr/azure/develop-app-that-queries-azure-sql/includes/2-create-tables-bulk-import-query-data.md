@@ -20,7 +20,7 @@ You can create a single database through the Azure portal or by using Azure Powe
 
 When you create a single database, you're prompted to specify the server to manage it. You can create a new server or use an existing server.
 
-When you create a new server and choose to use SQL authentication, you're prompted to specify a server admin user name and password. Use these credentials to connect to the server to do administrative tasks and to access the databases that the server controls. SQL Database also supports Azure Active Directory (Azure AD) authentication. You can also choose to use both SQL and Azure AD authentication. But, you must always set an admin or create an admin account when you create a new server. Then, grant access to accounts that are stored in Azure AD.
+When you create a new server and choose to use SQL authentication, you're prompted to specify a server admin user name and password. Use these credentials to connect to the server to do administrative tasks and to access the databases that the server controls. SQL Database also supports Microsoft Entra authentication. You can also choose to use both SQL and Microsoft Entra authentication. But, you must always set an admin or create an admin account when you create a new server. Then, grant access to accounts that are stored in Microsoft Entra ID.
 
 Each database server is protected by a firewall to block potentially malicious processes. You can open the firewall to other Azure services. And you can selectively enable access to other computers based on their IP address or address range. SQL Database also provides advanced data security that enables you to:
 
@@ -62,7 +62,7 @@ CREATE TABLE MyTable2
 CREATE INDEX cci ON MyTable2(AnotherColumn3);
 ```
 
-To access the query editor in the Azure portal, go to the page for your database and select **Query editor**. You're prompted for credentials. You can set the **Authorization type** to **SQL Server authentication** and enter the user name and password that you set up when you created the database. Or you can select **Active Directory password authentication** and provide the credentials of an authorized user in Azure AD. If Active Directory single sign-on is enabled, you can connect by using your Azure identity.
+To access the query editor in the Azure portal, go to the page for your database and select **Query editor**. You're prompted for credentials. You can set the **Authorization type** to **SQL Server authentication** and enter the user name and password that you set up when you created the database. Or you can select **Active Directory password authentication** and provide the credentials of an authorized user in Microsoft Entra ID. If Active Directory single sign-on is enabled, you can connect by using your Azure identity.
 
 ![The SQL Database sign-in page in the Azure portal.](../media/2-sign-in-annotated.png)
 

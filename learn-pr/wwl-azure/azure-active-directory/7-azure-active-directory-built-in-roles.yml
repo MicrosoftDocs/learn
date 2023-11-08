@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-active-directory.azure-ad-built-in-roles
-title: Azure AD built-in roles
+title: Microsoft Entra built-in roles
 metadata:
-  title: Azure AD built-in roles
-  description: "Azure AD built-in roles"
+  title: Microsoft Entra built-in roles
+  description: "Microsoft Entra built-in roles"
   ms.date: 09/11/2023
   author: wwlpublish
   ms.author: serlingdavis

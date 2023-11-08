@@ -16,10 +16,10 @@ Microsoft Purview can connect to and scan Power BI either in the same tenant or 
 
 Give Microsoft Purview permissions to access your Power BI tenant.
 
-If you're using **Managed Identity** to authenticate to Power BI, you'll need to create a security group in Azure Active Directory, and add your Microsoft Purview managed identity to this security group.
+If you're using **Managed Identity** to authenticate to Power BI, you'll need to create a security group in Microsoft Entra ID, and add your Microsoft Purview managed identity to this security group.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Microsoft Azure Active Directory interface creating Security Group.](../media/purview-security-group.png)
+> ![Screenshot of Microsoft Entra ID interface creating Security Group.](../media/purview-security-group.png)
 
 If a security group containing the Purview managed identity already exists, you can proceed to configuring the Power BI tenant.
 

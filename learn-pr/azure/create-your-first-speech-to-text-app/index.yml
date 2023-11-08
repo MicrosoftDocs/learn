@@ -27,7 +27,7 @@ roles:
 products:
 - azure
 - ai-services
-- azure-speech-text
+- azure-speech
 - azure-clis
 units:
 - learn.azure.create-your-first-speech-to-text-app.introduction

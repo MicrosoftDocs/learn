@@ -4,11 +4,10 @@ title: Workload protections
 metadata:
   title: Workload protections
   description: "Workload protections"
-  ms.date: 08/29/2023
+  ms.date: 10/11/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-workload-protections.md)]

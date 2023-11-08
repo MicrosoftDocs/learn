@@ -67,7 +67,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
     ```azurecli
     az vm create \
         --name MyUbuntuVM \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --generate-ssh-keys
 
     az vm open-port \

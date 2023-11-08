@@ -1,4 +1,4 @@
-﻿This exercise takes you through the process of creating and configuring an Express.js-based web service that provides access to Azure Database for PostgreSQL. 
+This exercise takes you through the process of creating and configuring an Express.js-based web service that provides access to Azure Database for PostgreSQL. 
 
 In this exercise, you'll:
 
@@ -12,7 +12,7 @@ In this exercise, you'll:
 To perform this exercise, you need:
 
 * An Azure subscription.
-* A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+* A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 * To have completed the first exercise of this module. You'll use the Azure PostgreSQL database you created and configured in that exercise.
 
 ## Create a sample Node.js Express web app

@@ -53,7 +53,7 @@ For example, you'd use a control plane operation to create a storage account. Yo
 
 When you block direct user access to your Azure resources, also consider how this restriction applies to data plane operations. For example, your deployment process might store the key for a storage account in a place that an administrator can access. That administrator could potentially use the key to circumvent your controls and access the storage account's data plane directly.
 
-An increasing number of Azure resources support configuring their data plane access control by using Azure AD. This support reduces the likelihood that you leak keys or grant data plane access inadvertently. It's a good practice to use Azure AD for data plane access wherever you can.
+An increasing number of Azure resources support configuring their data plane access control by using Microsoft Entra ID. This support reduces the likelihood that you leak keys or grant data plane access inadvertently. It's a good practice to use Microsoft Entra ID for data plane access wherever you can.
 
 ### Emergency access
 
@@ -71,7 +71,7 @@ The sequence of steps for using a break-glass account is:
 
 The use of break-glass accounts requires a high level of discipline. Their use should be reserved for true emergency situations. Carefully manage and protect their credentials, because the account is highly privileged. It's a good practice to change the credentials for break-glass accounts frequently, to minimize the chance that they've been exposed or compromised.
 
-Break-glass accounts are often shared within a team, so it's hard to trace who has used them and what those users did. An alternative approach to break-glass accounts is to adopt the Azure AD Privileged Identity Management (PIM) feature. It allows a user's own account to be temporarily granted a higher level of permission.
+Break-glass accounts are often shared within a team, so it's hard to trace who has used them and what those users did. An alternative approach to break-glass accounts is to adopt the Microsoft Entra Privileged Identity Management (PIM) feature. It allows a user's own account to be temporarily granted a higher level of permission.
 
 :::image type="content" source="../media/4-privileged-identity-management.png" alt-text="Diagram that shows the sequence of operations for Privileged Identity Management elevation and access to Azure." border="false":::
 
@@ -90,7 +90,7 @@ The sequence of steps for using PIM is:
 Both PIM and Azure write comprehensive audit logs to help you understand who has requested elevated permissions and why. The logs also track what they did in your environment when the permissions were granted.
 
 > [!NOTE]
-> PIM requires a premium license for Azure AD.
+> PIM requires a premium license for Microsoft Entra ID.
 
 #### After the emergency ends
 

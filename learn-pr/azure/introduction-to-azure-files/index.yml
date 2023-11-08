@@ -4,7 +4,7 @@ metadata:
   title: Introduction to Azure Files
   description: Learn how Azure Files and Azure File Sync can help you meet your storage needs.
   ms.date: 08/30/2022
-  author: kendownie
+  author: khdownie
   ms.author: kendownie
   ms.topic: interactive-tutorial
   ms.service: azure-file-storage

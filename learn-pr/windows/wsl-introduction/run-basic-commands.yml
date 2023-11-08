@@ -5,11 +5,10 @@ metadata:
   unitType: exercise
   title: Exercise - Run basic commands
   description: "Try running some basic WSL administrative commands and Bash commands."
-  ms.date: 11/09/2022
+  ms.date: 10/03/2023
   author: mattwojo
   ms.author: mattwoj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/5-run-basic-commands.md)]

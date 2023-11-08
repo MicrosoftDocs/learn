@@ -1,4 +1,4 @@
-﻿This exercise provides an overview of integrating a Next.js with an IoT data pipeline. 
+This exercise provides an overview of integrating a Next.js with an IoT data pipeline. 
 
 In this exercise, you'll:
 
@@ -11,7 +11,7 @@ In this exercise, you'll:
 To perform this exercise, you need:
 
 - An Azure subscription.
-- A Microsoft account or an Azure Active Directory (Azure AD) account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 - To have completed the exercise units **Set up Azure Cosmos DB** and **Integrate Azure Cosmos DB with the IoT data pipeline**.
 
 In this exercise, you'll use an existing Next.js application code that retrieves IoT telemetry data from the Cosmos DB collection you implemented in the previous exercise unit of this module.

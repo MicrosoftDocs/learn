@@ -18,7 +18,7 @@ When calling a method that returns a value, you'll often assign the return value
 int roll = dice.Next(1, 7);
 ```
 
-In some cases, you may want to use the return value directly, without assigning it to a variable. For example, you may want to print the return value to the console as follows:
+In some cases, you might want to use the return value directly, without assigning it to a variable. For example, you might want to print the return value to the console as follows:
 
 ```c#
 Console.WriteLine(dice.Next(1, 7));
@@ -202,7 +202,7 @@ For example, as you enter the word `dice` slowly, IntelliSense will show all C# 
 1. Take a minute to examine the IntelliSense popup for the `Random.Next()` method.
 
     > [!NOTE]
-    > If the IntelliSense popup closed before you had a chance to examine it, delete the invocation operator `()`, and the enter **(** to display the IntelliSense popup.
+    > If the IntelliSense popup closed before you had a chance to examine it, delete the invocation operator `()`, and then enter **(** to display the IntelliSense popup.
 
     Notice that the popup window includes three sections, one on the left and two on the right.
 
@@ -224,9 +224,9 @@ For example, as you enter the word `dice` slowly, IntelliSense will show all C# 
 
     The third version of the method, `3/3`, informs you that the `Next()` method can accept both `int minValue` and `int maxValue` as input parameters. The new parameter, `minValue`, is a lower bound for the number that you want the `Next()` method to generate. Since the lower bound is inclusive rather than exclusive, the return value can be equal to `minValue`. The message at the bottom now states: `Returns a random integer that is within a specified range.`
 
-    In this case, IntelliSense provides all of the information that you need to select the appropriate overload, including a detailed explanation of `maxValue` and `minValue`. However, you may encounter situations where you need to consult the method's documentation.
+    In this case, IntelliSense provides all of the information that you need to select the appropriate overload, including a detailed explanation of `maxValue` and `minValue`. However, you might encounter situations where you need to consult the method's documentation.
 
-## Use docs.microsoft.com for information about overloaded methods
+## Use learn.microsoft.com for information about overloaded methods
 
 The second way to learn about overloaded versions of the methods is to consult the documentation for the method. The documentation will also help you to understand exactly what each input parameter is intended for.
 
@@ -234,7 +234,7 @@ The second way to learn about overloaded versions of the methods is to consult t
 
 1. Perform a search for **C# Random.Next()**
 
-    Your search should include the class name and method name. You may also want to include the term `C#` to make sure not to accidentally get results for other programming languages.
+    Your search should include the class name and method name. You might also want to include the term `C#` to make sure not to accidentally get results for other programming languages.
 
 1. Select the top search result with a URL that begins with `https://learn.microsoft.com`.
 
@@ -279,8 +279,8 @@ The second way to learn about overloaded versions of the methods is to consult t
 
 ## Recap
 
-- Methods may accept no parameters or multiple parameters, depending on how they were designed and implemented. When passing in multiple input parameters, separate them with a `,` symbol.
-- Methods may return a value when they complete their task, or they may return nothing (void).
+- Methods might accept no parameters or multiple parameters, depending on how they were designed and implemented. When passing in multiple input parameters, separate them with a `,` symbol.
+- Methods might return a value when they complete their task, or they might return nothing (void).
 - Overloaded methods support several implementations of the method, each with a unique method signature (the number of input parameters and the data type of each input parameter).
 - IntelliSense can help write code more quickly. It provides a quick reference to methods, their return values, their overloaded versions, and the types of their input parameters.
-- docs.microsoft.com is the "source of truth" when you want to learn how methods in the .NET Class Library work.
+- learn.microsoft.com is the "source of truth" when you want to learn how methods in the .NET Class Library work.

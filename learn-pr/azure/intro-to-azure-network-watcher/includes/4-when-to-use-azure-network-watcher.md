@@ -22,12 +22,12 @@ When you run the tool, it checks the gateway for common issues and returns the h
 
 ## Determine cross-region network latency
 
-You can use Network Watcher tools to determine the best location to place IaaS resources based on network latencies. For example, you can use Network Watcher tools to have IaaS VMs in different regions regularly ping each other to determine cross region network latency. This can allow you to determine whether IaaS VMs need to be all located in a single region, or if you can have them spread across different regions to support specific application architectures.  
+You can use Network Watcher tools to determine the best location to place IaaS resources based on network latencies. For example, you can use Network Watcher to have IaaS VMs in different regions regularly ping each other to determine cross region network latency. This can allow you to determine whether IaaS VMs need to be all located in a single region, or if you can have them spread across different regions to support specific application architectures.  
 
 You could also use Network Watcher if you have an on-premises hybrid application and an application running in an Azure IaaS VM that connect to the same storage account endpoint and you want to perform a comparison of latencies. If the latency for the on-premises application is too high, this might strengthen a case for migrating that application to Azure. If the latency for the Azure IaaS VM is too high, this might strengthen a case for migrating the VM to another region with lower latency.
 
 ## When not to use Network Watcher
 
-Network Watcher tools provide intermediate levels of network diagnostic functionality. These tools don't provide some of the advanced features available in some third-party tools. If your organization needs access to this advanced functionality, you may need to deploy a third-party tool that includes this advanced functionality to accomplish your diagnostic goals.  
+Network Watcher tools provide intermediate levels of network diagnostic functionality. These tools don't provide some of the advanced features available in some third-party tools. If your organization needs access to this advanced functionality, you might need to deploy a third-party tool that includes this advanced functionality to accomplish your diagnostic goals.  
 
 It's important to realize that Network Watcher is mostly used for IaaS resources on Azure virtual networks and that you can't use Azure Network Watcher to diagnose connectivity issues related to PaaS services or Web analytics. If you're encountering problems related to these services, you should check the Azure status or service health dashboard.

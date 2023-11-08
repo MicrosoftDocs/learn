@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.storage-security.azure-ad-authentication
-title: Manage Azure AD storage authentication
+title: Manage Microsoft Entra storage authentication
 metadata:
-  title: Manage Azure AD storage authentication
-  description: "Manage Azure AD storage authentication"
+  title: Manage Microsoft Entra storage authentication
+  description: "Manage Microsoft Entra storage authentication"
   ms.date: 04/04/2023
   author: wwlpublish
   ms.author: serlingdavis

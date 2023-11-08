@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot
+metadata:
+  title: Challenge project - Develop foreach and if-elseif-else structures to process array data in C#
+  description: "Demonstrate your ability to update a console app that implements arrays, foreach loops, and if statements in response to a user requested feature update."
+  ms.date: 06/02/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.devlang: csharp
+title: Challenge project - Develop foreach and if-elseif-else structures to process array data in C#
+summary: Demonstrate your ability to update a console app that implements arrays, foreach loops, and if statements in response to a user requested feature update.
+abstract: |
+  In this module, you'll demonstrate your ability to:
+  - Revise a C# console application that uses nested foreach loops to access array data based on an updated feature specification.
+  - Update the variables and if statements in a C# console application to create the code branches and calculations required to satisfy an updated feature specification.
+prerequisites: |
+  *   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
+  *   Experience using if statements in C# to evaluate an expression and branch code accordingly.
+  *   Experience using a foreach loop to access elements of array variables.
+iconUrl: /training/achievements/challenge-project-create-rock-paper-scissors-game-with-github-copilot.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-code
+subjects:
+- development-tools
+units:
+- learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.introduction
+- learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.prepare
+- learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.exercise-update-output
+- learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.exercise-update-calculations
+- learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.knowledge-check
+- learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.summary
+badge:
+  uid: learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.badge

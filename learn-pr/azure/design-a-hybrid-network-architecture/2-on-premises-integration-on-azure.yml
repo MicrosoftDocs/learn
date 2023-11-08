@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/14/2020
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: On-premises network integration on Azure
 durationInMinutes: 10
@@ -38,7 +37,7 @@ quiz:
     - content: By using an administrator account
       isCorrect: false
       explanation: Storing the credentials for an administrator account in a VPN isn't a secure or supported method for site-to-site VPN connections.
-    - content: Through a service principal in Azure Active Directory
+    - content: Through a service principal in Microsoft Entra ID
       isCorrect: false
       explanation: Service principals are used for authentication, but not in site-to-site VPN connections.
     - content: By using an ASCII string secret

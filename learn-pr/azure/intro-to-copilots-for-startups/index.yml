@@ -26,6 +26,7 @@ roles:
   - ai-engineer
   - data-scientist
   - student
+  - startup-founder
 products:
   - azure-bot-service  
   - ai-services  

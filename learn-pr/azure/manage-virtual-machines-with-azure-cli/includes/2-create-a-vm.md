@@ -45,7 +45,7 @@ az vm create \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
   --location westus \
   --name SampleVM \
-  --image UbuntuLTS \
+  --image Ubuntu2204 \
   --admin-username azureuser \
   --generate-ssh-keys \
   --verbose 

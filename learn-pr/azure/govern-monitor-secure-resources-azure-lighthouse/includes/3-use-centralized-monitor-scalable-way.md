@@ -2,7 +2,7 @@ Relecloud provides managed services for other customers, alongside Microsoft’s
 
 ## How Relecloud benefits from Azure Lighthouse
 
-Azure Lighthouse is changing the way that managed service providers (MSPs) operate their business through its model of centralized multitenant management. Azure Lighthouse is a stronger and more secure access mechanism than Azure Active Directory B2B (Azure AD B2B).
+Azure Lighthouse is changing the way that managed service providers (MSPs) operate their business through its model of centralized multitenant management. Azure Lighthouse is a stronger and more secure access mechanism than Microsoft Entra B2B (Microsoft Entra B2B).
 
 Azure Lighthouse has been beneficial to Relecloud, as it helps them to profitably and efficiently build and deliver managed services for customers like Microsoft’s Lamna Healthcare with a single pane.
 
@@ -95,7 +95,7 @@ You can use Azure’s activity log to monitor for delegation activity from custo
 
 You must have an account in Azure that's assigned with the *Monitoring Reader* built-in role set at the root scope of the managing tenant to access activity log data. Any administrator user who has the Global administrator role can assign this type of role, along with elevated access.
 
-If you're a Global administrator, you can elevate access by enabling **Access management for Azure resources** in the **Properties** pane of your Azure Active Directory tenant.
+If you're a Global administrator, you can elevate access by enabling **Access management for Azure resources** in the **Properties** pane of your Microsoft Entra tenant.
 
 :::image type="content" source="../media/3-elevate-access.png" alt-text="Elevate access.":::
 

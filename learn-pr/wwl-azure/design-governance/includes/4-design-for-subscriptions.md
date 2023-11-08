@@ -4,7 +4,7 @@ Azure Subscriptions are logical containers that serve as units of management and
 
 To use Azure, you must have an Azure subscription. A subscription provides you with a logical container to create and pay for Azure products and services. There are [several types of subscriptions](https://azure.microsoft.com/support/legal/offer-details/), such as Enterprise Agreement and Pay-as-You-Go. 
 
-:::image type="content" source="../media/azure-active-directory-subscriptions.png" alt-text="Diagram of Azure Active Directory showing the subscription types - dev, test, and production." border="false":::
+:::image type="content" source="../media/azure-active-directory-subscriptions.png" alt-text="Diagram of Microsoft Entra ID showing the subscription types - dev, test, and production." border="false":::
 
 As you plan the governance strategy for Tailwind Traders, consider these characteristics of subscriptions:
 
@@ -36,7 +36,7 @@ You defined your strategy for the Tailwind Traders management group structure. N
 
 - **Consider network topologies**. Virtual networks can't be shared across subscriptions. Resources can connect across subscriptions with different technologies, such as virtual network peering or Virtual Private Networks (VPNs). Consider which Tailwind Traders workloads must communicate with each other when you decide if a new subscription is required.
 
-- **Consider making subscription owners aware of their roles and responsibilities**. Conduct a quarterly or biannual access review by using Azure AD Privileged Identity Management. Access reviews ensure privileges don't proliferate as users move within the Tailwind Traders customer organization.
+- **Consider making subscription owners aware of their roles and responsibilities**. Conduct a quarterly or biannual access review by using Microsoft Entra Privileged Identity Management. Access reviews ensure privileges don't proliferate as users move within the Tailwind Traders customer organization.
 
 > [!NOTE]
 > When it comes to subscriptions, one size doesn't fit all. A solution that works for one business unit might not be suitable for another. Explore your options.

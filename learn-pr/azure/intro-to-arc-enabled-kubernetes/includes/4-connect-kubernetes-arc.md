@@ -12,7 +12,7 @@ Before you get started, you need:
 
 - An existing Kubernetes cluster. All Kubernetes distributions certified by the Cloud Native Computing Foundation (CNCF) are supported.
 - Outbound connectivity from the cluster to Azure and other Microsoft endpoints. For details regarding target URLs and ports, refer to your product documentation.
-- A user account or service principal in the Azure Active Directory (Azure AD) tenant for the subscription that hosts Azure Arc-enabled Kubernetes. This account must have at least the **Kubernetes Cluster - Azure Arc Onboarding** Azure role-based access control (Azure RBAC) built-in role.
+- A user account or service principal in the Microsoft Entra tenant for the subscription that hosts Azure Arc-enabled Kubernetes. This account must have at least the **Kubernetes Cluster - Azure Arc Onboarding** Azure role-based access control (Azure RBAC) built-in role.
 - The latest version of Azure CLI or Azure PowerShell installed on your management computer. This example uses Azure CLI.
 
 ### Connection process
@@ -20,7 +20,7 @@ Before you get started, you need:
 The process of connecting a Kubernetes cluster to Azure Arc consists of the following high-level steps.
 
 1. Start an Azure CLI session on a computer with connectivity to the Kubernetes cluster and to Azure.
-1. Sign in to an Azure AD account that has permissions to manage Azure Arc-enabled Kubernetes in the subscription.
+1. Sign in to a Microsoft Entra account that has permissions to manage Azure Arc-enabled Kubernetes in the subscription.
 1. Register the Azure resource providers that let you manage Azure Arc-enabled Kubernetes.
 1. Designate a new or existing Azure resource group to host the resource that represents the Azure Arc-enabled Kubernetes cluster.
 1. Connect the Kubernetes cluster to Azure by running the `az connectedk8s connect` Azure CLI command. This command installs the agents on the cluster and creates the cluster resource in the specified resource group.

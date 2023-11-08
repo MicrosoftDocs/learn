@@ -1,9 +1,9 @@
 
-We have talked about Zero Trust and about identity as the control plane for accessing resources.  By why use identity?
+We have talked about Zero Trust and about identity as the control plane for accessing resources.  But why use identity?
 
 ### Identity gives the ability:
 
-- To prove who or what we are - **Authentication**
+- To prove who or what, we are - **Authentication**
 - To get permissions to do something - **Authorization**
 - To report on what was done - **Auditing**
 - To IT manage and self administer an identity - **Administration**
@@ -18,7 +18,7 @@ We have talked about Zero Trust and about identity as the control plane for acce
 
 ### What is an identity provider (IdP)
 
-An identity provider (IdP) is a system that creates, manages and stores digital identities.  Microsoft Azure Active Directory is an example. The capabilities and features of identity providers can vary. The most common components are:
+An identity provider (IdP) is a system that creates, manages and stores digital identities.  Microsoft Entra ID is an example. The capabilities and features of identity providers can vary. The most common components are:
 
 - A repository of user identities
 - An authentication system

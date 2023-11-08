@@ -24,7 +24,7 @@ A Kubernetes cluster is divided into two components:
 
  -  Fully managed
  -  Public IP and FQDN (Private IP option)
- -  Accessed with RBAC or Azure AD
+ -  Accessed with RBAC or Microsoft Entra ID
  -  Deployment of containers
  -  Dynamic scale containers
  -  Automation of rolling updates and rollbacks of containers
