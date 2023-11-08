@@ -37,9 +37,15 @@ Separate sensors with similar characteristics, like recurring IP address ranges,
 
 ## Knowledge check
 
-:::image type="content" source="../media/3-knowledge-check-figures.png" alt-text="Figure A Diagram of a sample network, figure B shows an example of with a Paris location and Bengalaru location, each with different departments on different floors of the location." border="false":::
-<!--Optional "exercise-solution" video -->
+Figures A and B will help you answer the knowledge check questions.
 
+:::image type="complex" source="../media/3-knowledge-check-figure-A.png" alt-text="A diagram, labeled "Figure A", depicting two global locations, a Paris location and a Bengalaru location, each with different departments on different floors of the location." border="false":::
+Figure A shows an example of global locations. A Paris location with an office of different departments on three floors. The ground floor with Guests network, floor 1 with Sales, and floor 2 with Executives. The Bengaluru location includes an office with different departments on three floors. The ground floor with Offices network, floor 1 with Production Line A, and floor 2 with Production Line B.
+:::image-end:::
+<!--Optional "exercise-solution" video -->
+:::image type="complex" source="../media/3-knowledge-check-figure-B.png" alt-text="A diagram of a sample network,labeled "Figure B". " border="false":::
+Figure B is a diagram of a sample network with two sites, Site 1 and Site 2. Site 1 contains Zone 1 with network segments 10.0.0.0/24, 10.0.1.0/24, and 10.0.3.0/24. Site 2 contains Zone 2 with network segments 10.0.0.0/24, 10.0.0.0/24, and 10.0.2.0/24.
+:::image-end:::
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!-- Do not add a unit summary or references/links -->
