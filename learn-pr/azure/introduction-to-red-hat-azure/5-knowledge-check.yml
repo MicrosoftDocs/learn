@@ -19,7 +19,7 @@ quiz:
     - content: Only in the cloud.
       isCorrect: false
       explanation: RHEL works across hybrid locations and hybrid deployments.
-    - content: Only on-premise.s
+    - content: Only on-premises
       isCorrect: false
       explanation: RHEL works across hybrid locations and hybrid deployments.
     - content: In hybrid locations.
