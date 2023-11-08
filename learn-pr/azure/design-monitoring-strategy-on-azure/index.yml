@@ -9,14 +9,14 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure
 title: Design a holistic monitoring strategy on Azure
-summary: Use monitoring services on Azure to bring operational excellence to your applications and infrastructure.
+summary: Use monitoring services on Azure to bring operational excellence and security to your applications and infrastructure.
 abstract: | 
   In this module, you will:
   - Select the appropriate monitoring solution based on use case.
   - Integrate monitoring solutions to create a unified monitoring strategy.
 prerequisites: | 
-  - Basic knowledge of Azure services
-  - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
+  - Basic knowledge of Azure application, virtualization, and container services
+  - Basic knowledge of operational concepts like monitoring, logging, and alerting
 iconUrl: /training/achievements/design-monitoring-strategy-on-azure.svg
 levels:
 - intermediate

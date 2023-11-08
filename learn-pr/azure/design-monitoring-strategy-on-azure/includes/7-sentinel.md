@@ -1,8 +1,6 @@
 Your financial organization constantly deals with customers and partners across different regions in the world. Many transactions happen every day, and each transaction must be monitored and protected regardless of its type or the devices and users involved. Your organization's security and monitoring strategy must focus on enterprise-wide security and monitoring.
 
-This unit describes how Microsoft Sentinel helps monitor and respond to security threats across an enterprise-level organization.
-
-You can use Microsoft Sentinel to:
+This unit describes how Microsoft Sentinel helps monitor and respond to security threats across an enterprise-level organization. You can use Microsoft Sentinel to:
 
 - Get a detailed overview of your enterprise, potentially across multiple clouds and on-premises locations.
 - Avoid reliance on complex and disparate tools.
@@ -14,7 +12,7 @@ To implement Microsoft Sentinel, you need a Log Analytics workspace. When you cr
 
 :::image type="content" source="../media/7-sentinel-01.png" alt-text="Screenshot of adding a Log Analytics workspace." lightbox="../media/7-sentinel-01.png":::
 
-After you create the Microsoft Sentinel resource, you can connect the data sources for your enterprise. Microsoft Sentinel integrates with Microsoft solutions like Microsoft Entra ID and Office 365 through connectors. Microsoft Sentinel also comes with connectors for non-Microsoft solutions, and has a REST API that lets you connect to other data sources.
+After you create the Microsoft Sentinel resource and connect it to a workspace, you can connect the data sources for your enterprise. Microsoft Sentinel integrates with Microsoft solutions like Microsoft Entra ID and Office 365 through connectors. Microsoft Sentinel also comes with connectors for non-Microsoft solutions, and has a REST API that lets you connect to other data sources.
 
 You can see all of your available data connectors by selecting **Data connectors** under **Configuration** in the Microsoft Sentinel left navigation.
 
@@ -22,11 +20,11 @@ You can see all of your available data connectors by selecting **Data connectors
 
 Select the appropriate data connector for your data source, read the information about the connector, and select **Open connector page** to look at the prerequisites for your connector. Make sure you address all the prerequisites to successfully connect your data source.
 
-When you connect the data source, your logs are synced to Microsoft Sentinel. You get a summary of the data that's been collected in the **Data received** graph for your connector. You also get the different data types that have been collected for the source. For example, the Microsoft Entra connector collects sign-in logs and audit logs.
+When you connect the data source, your logs are synced to Microsoft Sentinel. You see a summary of collected data in the **Data received** graph for your connector. You can also see the different data types that have been collected for the source. For example, the Microsoft Entra connector collects sign-in logs and audit logs.
 
 :::image type="content" source="../media/7-sentinel-03.png" alt-text="Screenshot of the Data received graph." lightbox="../media/7-sentinel-03.png":::
 
-When you connect your data sources, Microsoft Sentinel begins to monitor your enterprise.
+Once you connect your data sources, Microsoft Sentinel begins to monitor your enterprise.
 
 :::image type="content" source="../media/7-sentinel-04.png" alt-text="Screenshot of an alert map." lightbox="../media/7-sentinel-04.png":::
 
@@ -42,7 +40,7 @@ When you create a rule, you specify whether it should be enabled or disabled, an
 
 :::image type="content" source="../media/7-sentinel-06.png" alt-text="Screenshot of Create alert rule." lightbox="../media/7-sentinel-06.png":::
 
-For example, you can run the following query to determine if a suspicious number of Azure VMs are created or updated, or a suspicious number of resource deployments occur.
+For example, you can enter the following query to determine if a suspicious number of Azure VMs are created or updated, or a suspicious number of resource deployments occur.
 
 ```kusto
 AzureActivity
@@ -61,11 +59,11 @@ To start to investigate an incident, select the incident. You get information ab
 
 :::image type="content" source="../media/7-sentinel-07.png" alt-text="Screenshot of the Incidents page." lightbox="../media/7-sentinel-07.png":::
 
-You discover that multiple entities are mapped to this incident. To investigate the incident, update its status from **New** to **In progress**.
+To investigate the incident, update its status from **New** to **In progress**.
 
 :::image type="content" source="../media/7-sentinel-08.png" alt-text="Screenshot of Incident detail." lightbox="../media/7-sentinel-08.png":::
 
-Assign the incident to an owner
+Assign the incident to an owner.
 
 :::image type="content" source="../media/7-sentinel-09.png" alt-text="Screenshot of selecting incident owner." lightbox="../media/7-sentinel-09.png":::
 
@@ -73,11 +71,11 @@ You're now ready to investigate. Select **Investigate** to get an investigation 
 
 :::image type="content" source="../media/7-sentinel-10.png" alt-text="Screenshot of an investigation map." lightbox="../media/7-sentinel-10.png":::
 
-The investigation map lets you drill down into an incident. For example, select **Entities** to get details about a user who's identified as part of the incident.
+The investigation map lets you drill down into an incident. For example, multiple entities can be mapped to an incident. Entities can include users, devices, and appliances. For example, you can get details about a user who's identified as part of the incident.
 
 :::image type="content" source="../media/7-sentinel-11.png" alt-text="Screenshot of entity." lightbox="../media/7-sentinel-11.png":::
 
-Entities can include users, devices, and appliances. If you hover over an entity, you see a list of *exploration queries* designed by Microsoft security analysts and experts. You can use the exploration queries to investigate more effectively.
+If you hover over an entity, you see a list of *exploration queries* designed by Microsoft security analysts and experts. You can use the exploration queries to investigate more effectively.
 
 :::image type="content" source="../media/7-sentinel-12.png" alt-text="Screenshot of exploration queries." lightbox="../media/7-sentinel-12.png":::
 
@@ -87,7 +85,7 @@ The investigation map also gives you a timeline that helps you understand which 
 
 ## Respond to threats with playbooks
 
-Playbooks can help you automatically respond to threats in Microsoft Sentinel. To create a new playbook, select **Automation** pane under **Configuration** in the Microsoft Sentinel left navigation.
+Playbooks can help you automatically respond to threats in Microsoft Sentinel. To create a new playbook, select **Automation** under **Configuration** in the Microsoft Sentinel left navigation.
 
 :::image type="content" source="../media/7-sentinel-14.png" alt-text="Screenshot of Microsoft Sentinel playbooks." lightbox="../media/7-sentinel-14.png":::
 

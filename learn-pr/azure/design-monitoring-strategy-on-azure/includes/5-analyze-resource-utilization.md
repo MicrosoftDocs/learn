@@ -1,6 +1,8 @@
-Your organization has migrated several applications from on-premises to Azure virtual machines (VMs) and Azure Kubernetes Service (AKS), and now has hundreds of resources deployed across several Azure subscriptions. You must track resource usage to ensure that cloud resources are adequately provisioned and their performance meets business requirements. You need a monitoring approach that provides broad visibility and the capability to triage and isolate problems quickly.
+Your organization has migrated several applications from on-premises to Azure virtual machines (VMs) and Azure Kubernetes Service (AKS). Several hundred Azure resources are deployed across several Azure subscriptions.
 
-This unit explains how to use Azure Monitor insights and other tools for an at-scale monitoring view across all your VM and container resources. You learn how to drill into specific nodes and containers for troubleshooting.
+You must track resource usage to ensure that cloud resources are adequately provisioned and their performance meets business requirements. You need a monitoring approach that provides broad visibility and the capability to triage and isolate problems quickly.
+
+This unit explains how to use Azure Monitor insights and other tools for an at-scale monitoring view across all your VM and container resources. You also learn how to drill into specific nodes and containers for troubleshooting.
 
 ## Azure Monitor insights
 

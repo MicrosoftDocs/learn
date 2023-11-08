@@ -16,25 +16,31 @@ You must understand your architecture's security posture to help you build and m
 - Data security
 - Network security
 - Identity and access
-- Application security.
+- Application security
 
 Defender for Cloud uses Azure Monitor Logs to collect data from your VMs to monitor for security vulnerabilities and threats. An agent reads various security-related configurations and event logs from the VM and copies the data to your Log Analytics workspace for analysis.
 
 :::image type="content" source="../media/6-security-center-update-01.png" alt-text="Screenshot of Microsoft Defender for Cloud Overview screen." lightbox="../media/6-security-center-update-01.png":::
 
-Defender for Cloud recommends ways to address the issues and risks that it uncovers. You can use recommendations like the one in the following screenshot to improve the security and compliance of your architecture.
+Defender for Cloud recommends ways to address the issues and risks that it uncovers. You can use recommendations to improve the security and compliance of your architecture.
 
 :::image type="content" source="../media/6-security-center-update-02.png" alt-text="Screenshot of recommendation in Microsoft Defender for Cloud." lightbox="../media/6-security-center-update-02.png":::
 
 ## Protect against threats
 
-You can use Defender for Cloud access and application controls to block suspicious activity and help protect your resources. For example, you can protect your VMs by using the just-in-time (JIT) VM access feature to block persistent VM access. Your VMs are accessed based only on audited access that you configure.
+You can use Defender for Cloud access and application controls to block suspicious activity and help protect your resources.
 
-You can enable JIT by selecting **Just in time VM access** in the **Workload protections** section of Defender for Cloud in the Azure portal. You get a list of all VMs that already have JIT configured, and a list of VMs where JIT is not configured. Choose a VM in the **Not configured** list, and then select the **Enable JIT on (number) VMs** option to configure JIT for the VM.
+### JIT VM access
 
-Defender for Cloud shows you a list of default ports that JIT targets, or you can configure your own, as shown in the following screenshot:
+You can protect your VMs by using the just-in-time (JIT) VM access feature to block persistent VM access. Your VMs can be accessed based only on audited access that you configure.
+
+You can enable JIT by selecting **Just in time VM access** in the **Workload protections** section of Defender for Cloud in the Azure portal. You see a lists of VMs that already have JIT configured or don't have JIT configured. Choose a VM in the **Not configured** list, and then select the **Enable JIT on (number) VMs** option to configure JIT for the VM.
+
+Defender for Cloud shows you a list of default ports that JIT targets, or you can configure your own ports.
 
 :::image type="content" source="../media/6-security-center-update-03.png" alt-text="Screenshot of JIT configuration." lightbox="../media/6-security-center-update-03.png":::
+
+### Adaptive application controls
 
 You can use adaptive application controls to control which applications are allowed to run on your VMs. Defender for Cloud uses machine learning to look at the processes running on your VMs, create exception rules for each resource group that holds your VMs, and give recommendations.
 
@@ -42,13 +48,13 @@ You can configure adaptive controls by selecting **Adaptive application controls
 
 :::image type="content" source="../media/6-security-center-update-04.png" alt-text="Screenshot of Adaptive application controls." lightbox="../media/6-security-center-update-04.png":::
 
-Select a resource group and use **Create application control rules** to target the VMs. You can also use **Create application control rules** to target processes that should have the rule applied.
+Select a resource group and use **Create application control rules** to target the VMs. You can also use **Create application control rules** to target processes to apply the rule to.
 
 ## Respond to threats
 
 Defender for Cloud gives you a centralized view of all your security alerts, ranked by their severity. Defender for Cloud also combines related alerts into a single security incident as much as possible.
 
-You can view your security alerts by selecting **Security alerts** pane under the **General** section of the Defender for Cloud left navigation.
+You can view your security alerts by selecting **Security alerts** under the **General** section of the Defender for Cloud left navigation.
 
 :::image type="content" source="../media/6-security-center-update-05.png" alt-text="Screenshot of Security alerts overview." lightbox="../media/6-security-center-update-05.png":::
 

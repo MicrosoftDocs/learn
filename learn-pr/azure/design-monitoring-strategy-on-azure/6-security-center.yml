@@ -15,36 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Why do you use Microsoft Defender for Cloud?
+  - content: How can you use Defender for Cloud to prevent persistent access to your VMs?
     choices:
-    - content: To secure an infrastructure that consists of on-premises and cloud resources.
-      isCorrect: True
-      explanation: Microsoft Defender for Cloud helps you secure both your on-premises and cloud resources.
-    - content: To secure an infrastructure that consists only of cloud resources.
+    - content: Use Azure Logic Apps.
       isCorrect: false
-      explanation: Microsoft Defender for Cloud helps you secure both on-premises and cloud resources.
-    - content: To secure an infrastructure that consists only of on-premises resources.
-      isCorrect: false
-      explanation: Microsoft Defender for Cloud helps you secure both on-premises and cloud resources.
-  - content: Which Defender for Cloud feature can you use to prevent persistent access to your VMs?
-    choices:
-    - content: Playbooks.
-      isCorrect: false
-      explanation: Playbooks are for automating how you respond to alerts, not managing VM access.
-    - content: Just-in-time (JIT) access.
+      explanation: You can trigger an automated alert response with Logic Apps, but not manage VM access.
+    - content: Use just-in-time (JIT) access.
       isCorrect: true
       explanation: With JIT access, your VMs are accessed based only on rules that you configure.
-    - content: Adaptive application controls.
+    - content: Use adaptive application controls.
       isCorrect: false
       explanation: You use adaptive controls to control which applications run on your VMs, not who can access the VMs.
-  - content: Which Defender for Cloud mechanism lets you automate responses to alerts?
+  - content: How can you automate responses to Defender for Cloud alerts?
     choices:
-    - content: Just-in-time (JIT) access
+    - content: Use just-in-time (JIT) access.
       isCorrect: false
       explanation: Just-in-time access is used to control VM access, not respond to alerts.
-    - content: Adaptive application controls
+    - content: Use adaptive application controls.
       isCorrect: false
       explanation: You use adaptive controls to control which applications can run on your VMs, not respond to alerts.
-    - content: Azure Logic Apps
+    - content: Use Azure Logic Apps.
       isCorrect: true
       explanation: Defender for Cloud lets you take action on alerts by triggering an automated response with Azure Logic Apps.

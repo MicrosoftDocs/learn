@@ -20,23 +20,12 @@ quiz:
     - content: To improve the development lifecycle for an application.
       isCorrect: false
       explanation: You use Application Insights to improve your application development lifecycle.
-    - content: To get a detailed overview of your enterprise, including across multiple clouds and on-premises locations.
+    - content: To get a detailed overview of your enterprise, including multiple clouds and on-premises locations.
       isCorrect: true
       explanation: Microsoft Sentinel helps monitor and respond to security threats across your entire enterprise.
     - content: To cross-query data collected from multiple on-premises and cloud data sources.
       isCorrect: false
       explanation: You can use Azure Monitor Log Analytics to cross-query monitoring data from multiple sources, but not to monitor data for an enterprise.
-  - content: How do you set up Microsoft Sentinel on Azure?
-    choices: 
-    - content: On the Microsoft Sentinel screen, select **Open query**.
-      isCorrect: false
-      explanation: Selecting Open query opens Azure Resource Graph Explorer, but doesn't set up Microsoft Sentinel.
-    - content: Connect a data source, and then add Microsoft Sentinel to the data source.
-      isCorrect: false
-      explanation: You must create a Microsoft Sentinel instance connected to a workspace before you can connect a data source.
-    - content: Add Microsoft Sentinel to a Log Analytics workspace.
-      isCorrect: true
-      explanation: You can either add Microsoft Sentinel to an existing workspace, or create a new workspace and then add Microsoft Sentinel to it.
   - content: How can you use the Microsoft Sentinel investigation map to determine which users were affected by an incident?
     choices:
     - content: Use exploration queries.
