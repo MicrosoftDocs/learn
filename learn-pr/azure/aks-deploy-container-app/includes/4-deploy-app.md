@@ -1,4 +1,4 @@
-Your company is looking at ways to deploy your cloud-based video rendering service. You've chosen Azure Kubernetes Service (AKS) as your cloud-native development platform. With the cluster configured, you're ready to deploy one of the components in your video rendering application. You decide to deploy a static version of your company's website to explore the Kubernetes deployment process.
+Your company is looking at ways to deploy your cloud-based video rendering service. You chose Azure Kubernetes Service (AKS) as your cloud-native development platform. With the cluster configured, you're ready to deploy one of the components in your video rendering application. You decide to deploy a static version of your company's website to explore the Kubernetes deployment process.
 
 Before we discuss the Kubernetes way of deployment, let's review some of the steps you'd take to deploy a similar application to a non-Kubernetes environment.
 
@@ -49,7 +49,7 @@ A Kubernetes manifest file allows you to describe your workloads in the YAML for
 
 Imagine you have to deploy a workload by hand. You need to think about and manage several aspects. You'd need to create a container, select a specific node, wrap it in a pod, run the pod, monitor execution, and so on.
 
-Manifest files contain all the information that's needed to create and manage the described workload.
+Manifest files contain all the information that you need to create and manage the described workload.
 
 ## What is a Kubernetes label?
 
