@@ -8,8 +8,7 @@ metadata:
   ms.custom: devdivchpfy22
   author: chcomley
   ms.author: chcomley
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-plan-work-azure-boards.md)]
