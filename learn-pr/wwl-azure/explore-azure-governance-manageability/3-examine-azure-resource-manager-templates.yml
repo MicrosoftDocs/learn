@@ -7,8 +7,7 @@ metadata:
   ms.date: 11/08/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: module
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/3-examine-azure-resource-manager-templates.md)]
