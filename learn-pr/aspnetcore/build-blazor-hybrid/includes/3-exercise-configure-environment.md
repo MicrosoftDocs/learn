@@ -9,7 +9,7 @@ This module uses Visual Studio 2022 for local development. After you complete th
 
 ::: zone pivot="vstudio"
 
-To set up a Blazor Hybrid project to work with, we'll use Visual Studio 2022.
+To set up a Blazor Hybrid project to work with, we use Visual Studio 2022.
 
 1. In Visual Studio 2022, select **File** > **New Project**, or select **Create a new project** from the launcher.
 
@@ -25,7 +25,7 @@ To set up a Blazor Hybrid project to work with, we'll use Visual Studio 2022.
 
 5. This command creates a basic Blazor Hybrid project powered by .NET MAUI with all required files and pages.
 
-    You should now have access to these files, and your Solution Explorer in Visual Studio 2022 will look similar to the following example:
+    You should now have access to these files, and your Solution Explorer in Visual Studio 2022 looks similar to the following example:
 
     ![Screenshot of Visual Studio 2022 Solution Explorer with a list of the files in a default .NET MAUI Blazor project.](../media/visual-studio-2022-solution-explorer.png)
 
@@ -33,7 +33,7 @@ To set up a Blazor Hybrid project to work with, we'll use Visual Studio 2022.
 
 ::: zone pivot="vscode"
 
-To set up a Blazor Hybrid project to work with, we'll use Visual Studio Code.
+To set up a Blazor Hybrid project to work with, we use Visual Studio Code.
 
 1. In Visual Studio Code, open the **Explorer** and select **Create .NET Project** .
 
@@ -47,7 +47,7 @@ To set up a Blazor Hybrid project to work with, we'll use Visual Studio Code.
 
 5. This creates a basic Blazor Hybrid project powered by .NET MAUI with all required files and pages.
 
-    You should now have access to these files and your solution explorer in Visual Studio Code will look similar to:
+    You should now have access to these files and your solution explorer in Visual Studio Code looks similar to:
 
     ![Screenshot of Visual Studio Code Solution Explorer with a list of the files in a default .NET MAUI Blazor project.](../media/visual-studio-code-solution-explorer.png)
 
@@ -55,7 +55,7 @@ To set up a Blazor Hybrid project to work with, we'll use Visual Studio Code.
 
 ## Blazor Hybrid with .NET MAUI project structure and startup
 
-The project is a normal .NET MAUI project with some additional Blazor related content.
+The project is a normal .NET MAUI project with some more Blazor related content.
 
 ### Blazor project files
 
@@ -73,7 +73,7 @@ The project is a normal .NET MAUI project with some additional Blazor related co
 
 - **App.xaml**: This file defines the application resources that the app uses in the XAML layout. The default resources are located in the `Resources` folder and define app-wide colors and default styles for every built-in control of .NET MAUI.
 
-- **App.xaml.cs**: This is the App.xaml file's code-behind. This file defines the App class. This class represents your application at runtime. The constructor in this class creates an initial window and assigns it to the `MainPage` property; this property determines which page is displayed when the application starts running. Additionally, this class lets you override common platform-neutral application lifecycle event handlers. Events include `OnStart`, `OnResume`, and `OnSleep`.
+- **App.xaml.cs**: The App.xaml file's code-behind. This file defines the App class. This class represents your application at runtime. The constructor in this class creates an initial window and assigns it to the `MainPage` property; this property determines which page is displayed when the application starts running. Additionally, this class lets you override common platform-neutral application lifecycle event handlers. Events include `OnStart`, `OnResume`, and `OnSleep`.
 
 - **MainPage.xaml**: This file contains the user interface definition. The sample app the .NET MAUI Blazor App template generates comprises a `BlazorWebView` that loads the `Main` component in the specified host HTML page (`wwwroot/index.html`) at a location specified by the CSS selector (`#app`).
 
@@ -94,7 +94,7 @@ The project is a normal .NET MAUI project with some additional Blazor related co
     </ContentPage>
     ```
 
-- **MainPage.xaml.cs**: This is the page's code-behind. In this file, you define the logic for the various event handlers and other actions the .NET MAUI controls on the page trigger. The example code in the template only has the default constructor as all of the user interface and events are located in the Blazor components.
+- **MainPage.xaml.cs**: The page's code-behind. In this file, you define the logic for the various event handlers and other actions the .NET MAUI controls on the page trigger. The example code in the template only has the default constructor as all of the user interface and events are located in the Blazor components.
 
     ```csharp
     namespace BlazorHybridApp;
@@ -160,4 +160,4 @@ The project is a normal .NET MAUI project with some additional Blazor related co
 
     ![Screenshot of the default Blazor Hybrid app running on Windows and Android.](../media/hello-blazor.png)
 
-You'll use this Blazor Hybrid app in the next few exercises.
+You use this Blazor Hybrid app in the next few exercises.
