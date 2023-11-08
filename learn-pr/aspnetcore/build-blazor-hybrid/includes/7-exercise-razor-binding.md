@@ -4,17 +4,21 @@ In this exercise, you'll create a basic Todo list component inside your Blazor a
 
 1. Create the Todo page:
 
-::: zone pivot="vstudio"
+    ::: zone pivot="vstudio"
+   
     In Visual Studio, right-click the `Pages` folder in **Solution Explorer** and select **Add** > **Razor Component**. Name the component `Todo.razor`.
-::: zone-end
-::: zone pivot="vscode"
+
+    ::: zone-end
+    ::: zone pivot="vscode"
+   
     In Visual Studio Code, right-click on the `Pages` folder in **Solution Explorer** and select **Add New File..** > **Razor component**. Name the component `Todo.razor`. The file should be created inside of the `Pages` folder
-::: zone-end
+   
+    ::: zone-end
 
    > [!IMPORTANT]
    > Razor component file names require a capitalized first letter. Expand the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
 
-2. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
+3. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
 
     ```cshtml
     @page "/todo"
@@ -26,7 +30,7 @@ In this exercise, you'll create a basic Todo list component inside your Blazor a
     }
     ```
 
-3. Save the `Pages/Todo.razor` file
+4. Save the `Pages/Todo.razor` file
 
 ## Add the Todo component to the navigation bar
 
