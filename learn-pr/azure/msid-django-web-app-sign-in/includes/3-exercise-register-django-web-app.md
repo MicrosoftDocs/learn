@@ -14,7 +14,7 @@ Apps that use the Microsoft identity platform are registered and managed in Micr
 
     1. In the **Name** section, enter a meaningful application name that will appear for users of the app. For example, enter **python-django-webapp-auth**.
     1. Under **Supported account types**, select **Accounts in this organizational directory only**.
-    1. In the **Redirect URI (optional)** section, select **Web** and enter the following redirect URI: **http://localhost:8000/auth/redirect**.
+    1. In the **Redirect URI (optional)** section, select **Web** and enter the following redirect URI: *http://localhost:8000/auth/redirect*
 
     :::image type="content" source="../media/03-app-registration-form.png" alt-text="Screenshot of the Azure portal that shows an app registrations form." :::
 

@@ -24,7 +24,7 @@ This module focuses on authenticating a work or school accounts provisioned thro
 
 ## Microsoft Entra app registration
 
-For a web app to use the Microsoft identity platform to enable user authentication, you must register a new app with Microsoft Entra ID. You can do this in the [Azure portal](https://portal.azure.com/). Your web app should live in a Microsoft Entra tenant.
+For a web app to use the Microsoft identity platform to enable user authentication, you must register a new app with Microsoft Entra ID. You can do this in the [Azure portal](https://portal.azure.com). Your web app should live in a Microsoft Entra tenant.
 
 When you register a web app in Microsoft Entra ID, ensure that the redirect URI of the app points to the callback URL of the web app. This URL must match the redirect URI that the app provides when the authentication process starts. The authorization code will be sent to this endpoint, so you need to configure any authentication libraries and/or middleware to listen on this endpoint to receive the authorization code.
 
