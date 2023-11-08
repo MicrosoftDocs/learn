@@ -26,7 +26,7 @@ Scaling is defined by the combination of limits, rules, and behavior.
 As you define your scaling rules, keep in mind the following items:
 
 - You aren't billed usage charges if your container app scales to zero.
-- Replicas that aren't processing, but remain in memory may be billed at a lower "idle" rate. For more information, see Billing.
+- Replicas that aren't processing, but remain in memory might be billed at a lower "idle" rate. For more information, see Billing.
 - If you want to ensure that an instance of your revision is always running, set the minimum number of replicas to 1 or higher.
 
 ## Scale rules
