@@ -18,7 +18,7 @@ In the Project Settings window, expand the **Publishing Settings**, then scroll 
 ## Test holographic remoting remote application
 
 > [!Note]
-> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
+> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](https://hololens.com/).
 
 To connect your PC application to your HoloLens 2, do the following:
 
