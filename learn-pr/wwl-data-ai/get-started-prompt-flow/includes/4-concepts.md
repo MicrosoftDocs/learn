@@ -20,7 +20,8 @@ Runtimes provide the necessary computational resources for executing the Prompt 
 - Key Features
   - Prebuilt Docker images containing all necessary built-in tools.
   - Options for custom environments to include specific packages or configurations.
-  - Use Cases:
+
+- Use Cases:
   - Running and validating flows in a controlled environment.
   - Customizing computing resources to fit specific application needs.
 
