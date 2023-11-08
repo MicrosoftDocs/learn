@@ -1,20 +1,13 @@
 Let's start by creating our first Blazor web app.
 
-This module uses Visual Studio 2022 for local development. After you complete this module, you can apply its concepts using a development environment like Visual Studio for Mac (macOS).
+This module uses Visual Studio 2022 for local development. After you complete this module, you can apply its concepts using a development environment like Visual Studio Code.
 
-## Requirements for Blazor Hybrid development
+[!include[](../../../includes/install-dotnet-maui-workload.md)]
 
-To create Blazor Hybrid apps with .NET MAUI apps, you currently require Visual Studio version 17.3 (or Visual Studio 2022 for Mac Preview version 17.4) with the following workloads installed:
-
-- .NET Multi-Platform App UI development.
-- ASP.NET and web development.
-
-The other required prerequisites to install:
-
-- [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/): `WebView2` is required on Windows when running a native app. When developing Blazor Hybrid apps with .NET MAUI and only running them in Visual Studio's emulators, `WebView2` isn't required.
-- [Enable hardware acceleration](/dotnet/maui/android/emulator/hardware-acceleration) to improve the performance of the Android emulator.
 
 ## Create a new Blazor Hybrid app
+
+::: zone pivot="vstudio"
 
 To set up a Blazor Hybrid project to work with, we'll use Visual Studio 2022.
 
@@ -28,13 +21,37 @@ To set up a Blazor Hybrid project to work with, we'll use Visual Studio 2022.
 
    ![Screenshot of the Visual Studio 2022 Configure Your Project screen and recommended settings from step 3.](../media/visual-studio-2022-configure-project.png)  
 
-4. On the *Additional Information* screen, select **.NET 6.0 (Long-term support)** in the *Framework* drop-down, then select **Create**.
+4. On the *Additional Information* screen, select **.NET 8.0 (Long-term support)** in the *Framework* drop-down, then select **Create**.
 
 5. This command creates a basic Blazor Hybrid project powered by .NET MAUI with all required files and pages.
 
     You should now have access to these files, and your Solution Explorer in Visual Studio 2022 will look similar to the following example:
 
     ![Screenshot of Visual Studio 2022 Solution Explorer with a list of the files in a default .NET MAUI Blazor project.](../media/visual-studio-2022-solution-explorer.png)
+
+::: zone-end
+
+::: zone pivot="vscode"
+
+To set up a Blazor Hybrid project to work with, we'll use Visual Studio Code.
+
+1. In Visual Studio Code, open the **Explorer** and select **Create .NET Project** .
+
+2. Select **.NET MAUI Blazor Hybrid App** in the drop down.
+
+    ![Screenshot of the Visual Studio Code Create New Project screen and the .NET MAUI Blazor App template.](../media/visual-studio-code-create-new-project.png)
+
+3. Create a new folder in the pop up names **BlazorHybridApp** and select **Select Folder**.
+
+4. Name the project **BlazorHybridApp** and press **Enter** to confirmn.
+
+5. This creates a basic Blazor Hybrid project powered by .NET MAUI with all required files and pages.
+
+    You should now have access to these files and your solution explorer in Visual Studio Code will look similar to:
+
+    ![Screenshot of Visual Studio Code Solution Explorer with a list of the files in a default .NET MAUI Blazor project.](../media/visual-studio-code-solution-explorer.png)
+
+::: zone-end
 
 ## Blazor Hybrid with .NET MAUI project structure and startup
 
@@ -115,6 +132,7 @@ The project is a normal .NET MAUI project with some additional Blazor related co
 
             #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Logging.AddDebug();
             #endif
             
             builder.Services.AddSingleton<WeatherForecastService>();
@@ -126,7 +144,12 @@ The project is a normal .NET MAUI project with some additional Blazor related co
 
 ## Run the app
 
+::: zone pivot="vstudio"
 - In Visual Studio, select **Debug** > **Start Debugging**
+::: zone-end
+::: zone pivot="vscode"
+- In Visual Studio Code, select the **Run** > **Start Debugging**. Select the **.NET MAUI** debugger from the drop down to start the application.
+:::zone-end
 
     This builds and starts the app on Windows, and then rebuilds and restarts the app whenever you make code changes. The app should automatically open on Windows. You can also change the deployment target through the debug drop-down menu to deploy to Android or other platforms.
 
