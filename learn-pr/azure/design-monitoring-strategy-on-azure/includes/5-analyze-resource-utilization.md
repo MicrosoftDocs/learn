@@ -53,7 +53,7 @@ You can enable Azure Monitor container insights when you create an AKS cluster, 
 
 ### Monitor Kubernetes clusters at scale
 
-After you enable container insights, you can view your Kubernetes workloads' performance and resource utilization by **Cluster**, **Node**, **Controller**, or **Container**. For example, you can:
+After you enable container insights, you can view your Kubernetes workloads' performance and resource utilization on the container insights page by **Cluster**, **Node**, **Controller**, or **Container**. For example, you can:
 
 - Investigate an overutilized node.
 - View the state of pods by controller.

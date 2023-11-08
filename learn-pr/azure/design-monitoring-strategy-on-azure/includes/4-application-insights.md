@@ -44,13 +44,15 @@ If you instrument your web pages with Application Insights, you can also gain vi
 
 Instrumenting your web pages with Application Insights collects usage information to augment the server-side monitoring capabilities. The same browser-side JavaScript instrumentation provides usage data including number of users, sessions, events, browser version, OS version, and locations. This usage data shows which pages of your app are the most popular, where users drop out, and the conversion and retention rates for specific pages.
 
-:::image type="content" source="../media/4-application-insights-02.png" alt-text="Screenshot of application events split by browser." lightbox="../media/4-application-insights-02.png":::
+:::image type="content" source="../media/4-application-insights-06.png" alt-text="Screenshot of application events split by browser." lightbox="../media/4-application-insights-06.png":::
 
 The preceding example shows the most popular browsers and versions. You can use this type of information to inform decisions for allocating functional and performance-testing resources.
 
 ## Monitor your application's availability
 
-On the Application Insights **Availability** page, you can continuously monitor your application health and check application health from different geographic locations.
+You can use the Application Insights **Availability** page to continuously monitor your application health and check application health from different geographic locations.
+
+:::image type="content" source="../media/4-application-insights-07.png" alt-text="Screenshot of viewing application availability by locations over time." lightbox="../media/4-application-insights-07.png":::
 
 To create an availability test in the Azure portal, select **Availability** from the Application Insights left navigation, and then select **Add Standard test**. On the **Create Standard test** screen, specify details like frequency, the URL of your application, and locations from which to test the app.
 
@@ -61,8 +63,6 @@ The following example shows the configuration of a test that sends a request to 
 After you create your availability test, you can use the **Availability** page to see how your application is doing across different locations. Each dot on the **Scatter Plot** graph represents a test that was run. A red dot means that the test failed.
 
 Select a red dot to see a detailed breakdown of the test failure, including information on what might have caused it. You can use the information to respond appropriately.
-
-:::image type="content" source="../media/4-application-insights-07.png" alt-text="Screenshot of viewing application availability by locations over time." lightbox="../media/4-application-insights-07.png":::
 
 ## Get notifications and take action
 

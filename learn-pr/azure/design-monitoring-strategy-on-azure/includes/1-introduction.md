@@ -13,5 +13,5 @@ After you complete this module, you can use Azure tools to design and implement 
 
 ## Prerequisites
 
-- Basic knowledge of Azure services
-- Basic knowledge of operational concepts, such as monitoring, logging, and alerting
+- Basic knowledge of Azure services.
+- Basic knowledge of operational concepts like monitoring, logging, and alerting.

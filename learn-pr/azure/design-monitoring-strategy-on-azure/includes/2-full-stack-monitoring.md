@@ -1,4 +1,4 @@
-Your organization is moving all its systems from an on-premises location to Azure, and wants you to implement a monitoring strategy. This unit explains how a full-stack monitoring strategy can improve customer experience by providing the ability to identify and mitigate issues across all the layers of your applications and infrastructure.
+Your organization is moving all its systems from an on-premises location to Azure, and wants you to design a monitoring strategy. This unit explains how a full-stack monitoring strategy can improve customer experience by providing the ability to identify and mitigate issues across all the layers of your applications and infrastructure.
 
 ## Use full-stack monitoring
 
@@ -17,13 +17,13 @@ By monitoring your applications and infrastructure with a full-stack approach, y
 
 ## Monitor your applications
 
-To improve your applications' health and build better applications in future, configure alerts and automated responses to help you deal with application issues.
-
 Monitor your application for issues while you develop it to prevent errors and exceptions later in production. To improve your development lifecycle, ensure that your code gets pushed to the next stage of the development cycle only if it successfully passes the necessary checks.
 
-Also monitor your application when it's live and in use. As in the following charts, you might be faced with failing requests, high server response times, or availability issues. By monitoring for live issues, you identify these types of problems and risks promptly, and can respond effectively to keep your application healthy.
+Also monitor your application when it's live and in use. You might be faced with failing requests, high server response times, or availability issues. By monitoring for live issues, you identify these types of problems and risks promptly, and can respond effectively to keep your application healthy.
 
 :::image type="content" source="../media/2-full-stack-monitoring-01.png" alt-text="Screenshot of Application Key Performance Indicators (KPIs).":::
+
+To improve your applications' health and build better applications in future, configure alerts and automated responses to help you deal with application issues.
 
 ## Monitor your infrastructure
 
@@ -35,7 +35,7 @@ To deal with any issues that arise in a timely and effective way, you can config
 - Your infrastructure's availability and health.
 - A specific event occurring at the operating-system level.
 
-You can configure these alerts to start a process where a person or team receives a notification and takes appropriate action. You can also trigger automated responses to alerts with playbooks and webhooks.
+You can configure alerts to start a process that notifies a person or team to take appropriate action. You can also trigger automated responses to alerts with playbooks and webhooks.
 
 You can also use infrastructure monitoring data for operational analysis and capacity planning. You can collect performance data from virtual machine (VM) guest operating systems into charts for comparison and trending purposes to inform decision making.
 
@@ -43,22 +43,17 @@ You can also use infrastructure monitoring data for operational analysis and cap
 
 ## Monitor Azure platform resources
 
-You can use Azure's built-in capabilities to monitor your Azure platform resources in addition to monitoring your deployed applications and infrastructure resources. Azure resources such as Storage Accounts, Key Vaults, and Azure Cosmos DB databases have performance metrics and resource logs that you can view and analyze to track performance and availability.
+In addition to monitoring your deployed applications and infrastructure, you can use Azure's built-in capabilities to monitor your other Azure platform resources. Azure resources such as Storage Accounts, Key Vaults, and Azure Cosmos DB databases have performance metrics and resource logs that you can view and analyze to track performance and availability.
 
 These and other Azure resource types offer dedicated insights that provide predefined monitoring experiences across subscriptions, resource groups, and other resources. The following screenshot shows the Azure Monitor storage insight displaying usage and latency for multiple storage accounts across two subscriptions.
 
-:::image type="content" source="../media/2-full-stack-monitoring-03.png" alt-text="Screenshot of Azure Storage KPIs.":::
+:::image type="content" source="../media/2-full-stack-monitoring-03.png" alt-text="Screenshot of Azure Storage KPIs." lightbox="../media/2-full-stack-monitoring-03.png":::
 
 You can also view and collect logs related to Active Directory for your Azure tenant, and Service Health and activity logs for Azure subscriptions. A full-stack monitoring solution includes visibility into the Azure platform resources your application and infrastructure depend on.
 
 ## Monitor security
 
-It's also essential to monitor the security of your applications and infrastructure to ensure that they always remain protected and available. For example, you should monitor and alert on:
-
-- Risks to your infrastructure's security, such as suspicious user accounts or malicious IP addresses.
-- Data exfiltration.
-
-Your security monitoring solution should include strong, automated anomaly detection and event management to combine multiple related events into a single actionable alert.
+It's also essential to monitor the security of your applications and infrastructure to ensure that they always remain protected and available. You should monitor and alert on data exfiltration and on any risks to your infrastructure's security, such as suspicious user accounts or malicious IP addresses. Your security monitoring solution should include strong, automated anomaly detection and event management to combine multiple related events into a single actionable alert.
 
 ## Summary
 
