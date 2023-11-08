@@ -61,6 +61,7 @@ Create the Linux VM that to use through some examples.
       --name appServer \
       --image Ubuntu2204 \
       --size Standard_DS2_v2 \
+      --public-ip-sku Standard \
       --generate-ssh-keys
     ```
 
