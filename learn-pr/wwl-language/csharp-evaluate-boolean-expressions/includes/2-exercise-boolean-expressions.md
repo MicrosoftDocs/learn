@@ -1,4 +1,4 @@
-Decision logic is used to establish alternative pathways through your code, where the decision about which path to follow is based on the evaluation of an expression. For example, you may write some code that executes one of two paths based on a user's input. If the user enters the letter "a", your code will execute one code block. If they enter the letter "b", your code will execute a different code block. In this example, you're controlling the execution path based on the value assigned to a string. Your code selects an execution path based on an expression, how that expression is evaluated, and the underlying logic used to define the paths.
+Decision logic is used to establish alternative pathways through your code, where the decision about which path to follow is based on the evaluation of an expression. For example, you might write some code that executes one of two paths based on a user's input. If the user enters the letter "a", your code will execute one code block. If they enter the letter "b", your code will execute a different code block. In this example, you're controlling the execution path based on the value assigned to a string. Your code selects an execution path based on an expression, how that expression is evaluated, and the underlying logic used to define the paths.
 
 Examining how to construct and evaluate an expression is a good place to start.
 
@@ -10,7 +10,7 @@ An expression is any combination of values (literal or variable), operators, and
 if (myName == "Luiz")
 ```
 
-You may have been thinking that the value returned by an expression would be a number or maybe a string. It's true that application developers use different types of expressions for different purposes. In this case, when you're developing an `if` selection statement, you'll be using an expression that returns either `true` or `false`. Developers refer to this type of expression as a Boolean expression. When your code includes a Boolean expression, return value is always a single `true` or `false` value.
+You might have been thinking that the value returned by an expression would be a number or maybe a string. It's true that application developers use different types of expressions for different purposes. In this case, when you're developing an `if` selection statement, you'll be using an expression that returns either `true` or `false`. Developers refer to this type of expression as a Boolean expression. When your code includes a Boolean expression, return value is always a single `true` or `false` value.
 
 Boolean expressions are important because your code can use these expressions to decide which block of code to execute.
 
@@ -20,9 +20,9 @@ There are many different types of operators that you can use within a Boolean ex
 
 One of the most common code evaluations is a check to see whether two values are equal. When checking for equality, you'll locate the equality operator `==` between the two values being checked. If the values on either side of the equality operator are equivalent, then the expression will return `true`. Otherwise, it will return `false`.
 
-Conversely, you may also need to check whether two values aren't equal. To check for inequality, you'll use the inequality operator `!=` between the two values.
+Conversely, you might also need to check whether two values aren't equal. To check for inequality, you'll use the inequality operator `!=` between the two values.
 
-You may wonder why you need both equality and inequality operators. The reason will become clearer as you learn how to create branching statements and begin to write real world code. Two operators that perform opposite tasks allow you to be more expressive and compact.
+You might wonder why you need both equality and inequality operators. The reason will become clearer as you learn how to create branching statements and begin to write real world code. Two operators that perform opposite tasks allow you to be more expressive and compact.
 
 Now it's time to prepare your coding environment and begin writing code that evaluates Boolean expressions.
 
@@ -114,7 +114,7 @@ This module includes hands-on activities that guide you through the process of b
 
 ### Improve the check for string equality using the string's built-in helper methods
 
-You may be surprised that the line `Console.WriteLine("a" == "A");` outputs `false`. When comparing strings, case matters.
+You might be surprised that the line `Console.WriteLine("a" == "A");` outputs `false`. When comparing strings, case matters.
 
 Also, consider this line of code:
 
@@ -177,7 +177,7 @@ As you would expect, the result when using the inequality operator is the opposi
 
 ## Evaluating comparisons
 
-When working with numeric data types, you may want to determine if a value is larger or smaller than another value. Use the following operators to perform these types of comparisons:
+When working with numeric data types, you might want to determine if a value is larger or smaller than another value. Use the following operators to perform these types of comparisons:
 
 - Greater than `>`
 - Less than `<`
@@ -242,7 +242,7 @@ Some methods return a Boolean value (`true` or `false`). In the following exerci
 
 The term "Logical Negation" refers to the unary negation operator `!`. Some people call this operator the "not operator". When you place the `!` operator before a conditional expression (or any code that's evaluated to either `true` or `false`), it forces your code to reverse its evaluation of the operand. When logical negation is applied, the evaluation produces `true` , if the operand evaluates to `false` , and `false` , if the operand evaluates to `true`.
 
-Here is an example that may help you to see the connection between these ideas. The following two lines of code produce the same result. The second line is more compact.
+Here is an example that might help you to see the connection between these ideas. The following two lines of code produce the same result. The second line is more compact.
 
 ```c#
 // These two lines of code will create the same output
