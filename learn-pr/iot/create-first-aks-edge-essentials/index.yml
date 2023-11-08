@@ -99,8 +99,8 @@ subjects:
 - container
 units:
 - learn.create-first-aks-edge-essentials.introduction
-- learn.create-first-aks-edge-essential.learning-content-1
-- learn.create-first-aks-edge-essential.setup-aks-edge-essentials
+- learn.create-first-aks-edge-essentials.deploy-aks-edge-essentials
+- learn.create-first-aks-edge-essentials.setup-aks-edge-essentials
 - learn.create-first-aks-edge-essentials.learning-content
 - learn.create-first-aks-edge-essentials.exercise
 - learn.create-first-aks-edge-essentials.knowledge-check

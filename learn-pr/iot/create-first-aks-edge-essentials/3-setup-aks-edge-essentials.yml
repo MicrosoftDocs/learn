@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-first-aks-edge-essential.setup-aks-edge-essentials
-title: Set Up AKS Edge Essentials
+uid: learn.create-first-aks-edge-essentials.setup-aks-edge-essentials
+title: Exercise - Set Up AKS Edge Essentials
 sandbox: true
 interactive: bash
 metadata:

@@ -15,7 +15,7 @@ Let's create the Azure virtual machine (VM) with Windows 11 Enterprise.
     > [!NOTE]
     > Take a note of the `Admin Password`. You will need it later.
 
-1. Create the Azure VM with Windows 11 Enterprise using the [az vm create](/cli/azure/vm?view=azure-cli-latest#az-vm-create) command.
+1. Create the Azure VM with Windows 11 Enterprise using the [az vm create](/cli/azure/azure-cli-latest#az-vm-create) command.
 
     ```azurecli
     az vm create \
