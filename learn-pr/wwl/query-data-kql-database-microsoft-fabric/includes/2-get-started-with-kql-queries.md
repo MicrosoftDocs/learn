@@ -12,7 +12,7 @@
 
 1. To create a KQL Queryset, you can go to any section within Microsoft Fabric and click on the **Create button** and then scroll to **Create KQL Queryset** as shown in the example, which starts from the **Data Engineering** section.
 
-[ ![Screenshot of K Q L Queryset from within Data Engineering section.](../media/create-kql-queryset.png) ](../media/create-kql-queryset-expanded.png)
+[ ![Screenshot of K Q L Queryset from within Data Engineering section.](../media/create-kql-queryset.png) ](../media/create-kql-queryset-expanded.png#lightbox)
     
 1. **Basic Query**: A basic KQL query follows the pattern: `<table_name> | where <condition> | project <columns>`.
 1. **Functions and Operators**: KQL supports a variety of operators for arithmetic, comparison, logical operations, and string manipulations.
@@ -33,7 +33,7 @@ You can use these queries to practice and get comfortable with the basics of KQL
 
 Within Microsoft Fabric KQL Database, you can use the primary language of Kusto Query Language (KQL) or Transact-Structured Query Language (T-SQL), and you can use the data to build Power BI Reports. 
 
-[ ![Screenshot of K Q L Query with highlighted element of publishing to Power B I.](../media/kql-queryset-pbi-build.png) ](../media/kql-queryset-pbi-build-expanded.png)
+[ ![Screenshot of K Q L Query with highlighted element of publishing to Power B I. ](../media/kql-queryset-pbi-build.png) ](../media/kql-queryset-pbi-build-expanded.png#lightbox)
 
 However, there are advantages to each and in the case of a KQL database, KQL is the preferred language. More comparisons follow:
 
@@ -47,7 +47,7 @@ However, there are advantages to each and in the case of a KQL database, KQL is 
 
 One major disadvantage of using T-SQL over KQL is that it is not the native language of the engine and has to go through a transformer which prevents it from being published to Power BI directly from the Queryset.
 
-  [ ![Screenshot of T - S Q L Query with highlighted element showing prevention of publishing to Power B I.](../media/tsql-queryset-pbi-build.png) ](../media/tsql-queryset-pbi-build-expanded.png)
+  [ ![Screenshot of T - S Q L Query with highlighted element showing prevention of publishing to Power B I. ](../media/tsql-queryset-pbi-build.png) ](../media/tsql-queryset-pbi-build-expanded.png#lightbox)
 
 As mentioned, T-SQL can be run to a limit extent against a Microsoft Fabric KQL database and provides a few advantages:
 
@@ -58,36 +58,38 @@ As mentioned, T-SQL can be run to a limit extent against a Microsoft Fabric KQL 
     >[!NOTE] 
     >If you’re familiar with SQL and want to learn KQL, you can translate SQL queries into KQL using the `-- explain syntax`
     
-    > For example: 
-    >    ```tsql
-    >   --
-    >    Explain
-    >    SELECT CASE
-    >             WHEN pickup_boroname IS NULL OR pickup_boroname = '' THEN 'Unidentified'
-    >             ELSE pickup_boroname
-    >           END AS Borough,
-    >           SUM(trip_distance) AS [Total Trip Distance]
-    >    FROM Trips
-    >    GROUP BY CASE
-    >               WHEN pickup_boroname IS NULL OR pickup_boroname = '' THEN 'Unidentified'
-    >               ELSE pickup_boroname
-    >             END;
-    >    ```
-    > generates the following KQL Syntax. This is a powerful feature within the KQL Engine
-    >   ```kusto
-    >
-    >Trips
-    >| summarize ['Total Trip Distance']=sum(trip_distance) by groupByExpression1=iff((isnull(pickup_boroname) or (pickup_boroname == "")), "Unidentified", > > pickup_boroname)
-    >| project Borough=groupByExpression1, ['Total Trip Distance']
-    >    ```
-    > 
-    > [ ![Screenshot of T - S Q L conversion resultset used to convert.](../media/tsql-same-results.png) ](../media/tsql-same-results-expanded.png)
-    >
-    > Which produces the same outcome:
-    >
-    > [ ![Screenshot of K Q L Query with highlighted element of publishing to Power B I.](../media/kql-same-results.png) ](../media/kql-same-results-expanded.png)
+    For example: 
+
+    ```tsql
+        
+       --
+        Explain
+        SELECT CASE
+                 WHEN pickup_boroname IS NULL OR pickup_boroname = '' THEN 'Unidentified'
+                 ELSE pickup_boroname
+               END AS Borough,
+               SUM(trip_distance) AS [Total Trip Distance]
+        FROM Trips
+        GROUP BY CASE
+                   WHEN pickup_boroname IS NULL OR pickup_boroname = '' THEN 'Unidentified'
+                   ELSE pickup_boroname
+                 END;
+        ```
+     generates the following KQL Syntax. This is a powerful feature within the KQL Engine
+       ```kusto
     
-    > 
+    Trips
+    | summarize ['Total Trip Distance']=sum(trip_distance) by groupByExpression1=iff((isnull(pickup_boroname) or (pickup_boroname == "")), "Unidentified", > > ickup_boroname)
+    | project Borough=groupByExpression1, ['Total Trip Distance']
+        ```
+     
+[ ![Screenshot of T - S Q L conversion resultset used to convert.](../media/tsql-same-results.png) ](../media/tsql-same-results-expanded.png#lightbox)
+    
+     Which produces the same outcome:
+    
+[ ![Screenshot of K Q L Query with highlighted element of publishing to Power B I.](../media/kql-same-results.png) ](../media/kql-same-results-expanded.png#lightbox)
+    
+     
     
 
 Here are some extra resources:
