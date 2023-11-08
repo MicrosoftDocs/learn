@@ -5,7 +5,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery-store 
 1. Open Visual Studio and create a new solution. This action opens the New Project wizard in Visual Studio.
 
     > [!TIP]
-    > Make sure you have the .NET MAUI workload installed with Visual Studio 2022 v17.3 or later. [More info here.](/dotnet/maui/get-started/first-app)
+    > Make sure you have the .NET MAUI workload installed with Visual Studio 2022 v17.3 or later (17.9 preferred with .NET 8). [More info here.](/dotnet/maui/get-started/installation)
 
 1. Select the **MAUI** project type, select the **.NET MAUI App** template, and select **Next**.
 
@@ -15,7 +15,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery-store 
 
     :::image type="content" source="../media/4-configure-project.png" alt-text="A screenshot of the Configure your new project dialog box. The user has named the project Phoneword and selected a location on their hard drive to store it.":::
 
-1. Select **.NET 6.0 (Long Term Support)** in the **Framework** drop-down, then select **Create** to create the app.
+1. Select **.NET 8.0 (Long Term Support)** in the **Framework** drop-down, then select **Create** to create the app.
 
 ## Examine the solution structure
 
