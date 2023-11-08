@@ -9,13 +9,13 @@ The parties include:
 
 - **Resource server**: The resource server hosts or provides access to a resource owner's data. It trusts the identity provider to securely authenticate and authorize the user-agent.
 
-- **Azure Active Directory (Azure AD)**: Azure AD is the identity provider. It securely manages anything to do with the user's information, their access, and the trust relationships between parties in a flow. It authenticates the identity of the user, grants and revokes access to resources and issues tokens.
+- **Microsoft Entra ID**: Microsoft Entra ID is the identity provider. It securely manages anything to do with the user's information, their access, and the trust relationships between parties in a flow. It authenticates the identity of the user, grants and revokes access to resources and issues tokens.
 
 ## Application registration
 
-Developers should register their applications in an Azure AD tenant before delegating identity and access management services to the Microsoft identity platform. Registering your application establishes a trust relationship between your application and the identity platform.
+Developers should register their applications in a Microsoft Entra tenant before delegating identity and access management services to the Microsoft identity platform. Registering your application establishes a trust relationship between your application and the identity platform.
 
-When you register an application in the Azure portal, Microsoft identity platform assigns it a number of values that allow your application to communicate with Azure AD. These include:
+When you register an application in the Azure portal, Microsoft identity platform assigns it a number of values that allow your application to communicate with Microsoft Entra ID. These include:
 
 #### Application (client) ID
 
@@ -37,4 +37,4 @@ The authority URL is the identity provider URL when concatenated with the sign-i
 
 App roles allow you to securely enforce authorization in your application. When using role-based access control (RBAC), an administrator defines application roles in the Azure portal. They then assign roles to different users and groups to control who has access to what content and functionality. For instance, adding an *admin role* to your app registration could allow a set of employees with the *admin role* assignment to read users' profile data.
 
-After you register the application, you can configure it to communicate with Azure AD by implementing the authentication logic yourself or using libraries such as Microsoft Authentication Library (MSAL). The latter is recommended.
+After you register the application, you can configure it to communicate with Microsoft Entra ID by implementing the authentication logic yourself or using libraries such as Microsoft Authentication Library (MSAL). The latter is recommended.

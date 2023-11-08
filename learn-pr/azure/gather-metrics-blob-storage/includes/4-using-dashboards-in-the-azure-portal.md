@@ -6,7 +6,7 @@ Management has also asked for regular reports about the use and performance of t
 
 Often, you want to create the same reports by using up-to-date information, such as platform usage or the resultant performance when working with files on a storage platform. However, it's inconvenient to create a fresh chart and configure the settings each time you want to see such a report. 
 
-In the Azure portal, you can create a dashboard and add persistent charts to closely monitor key metrics, such as latency or the number of transactions being processed. You can also present other information from your Azure subscription, such as virtual machine information. And you can present other web-based content, such as notices or video content. You can even share these dashboards with other users in your Azure Active Directory organization.
+In the Azure portal, you can create a dashboard and add persistent charts to closely monitor key metrics, such as latency or the number of transactions being processed. You can also present other information from your Azure subscription, such as virtual machine information. And you can present other web-based content, such as notices or video content. You can even share these dashboards with other users in your Microsoft Entra organization.
 
 ![Screenshot that shows an Azure portal dashboard.](../media/4-azure-portal-dashboard.png)
 

@@ -58,11 +58,11 @@ After you configure the scanner in the compliance portal, you install the Azure 
    Install-AIPScanner -SqlServerInstance <name> -Cluster <cluster name>
    ```
 
-After you install the scanner, the scanner service account needs an Azure Active Directory (Azure AD) token to authenticate the scanner to run unattended.
+After you install the scanner, the scanner service account needs a Microsoft Entra token to authenticate the scanner to run unattended.
 
-1. In the Azure portal, create an Azure AD application and copy the Application ID and client secret.
+1. In the Azure portal, create a Microsoft Entra application and copy the Application ID and client secret.
 
-1. On the client computer, run `Set-AIPAuthentication`, using the values for the registered app, your Azure tenant, and your Azure AD account.
+1. On the client computer, run `Set-AIPAuthentication`, using the values for the registered app, your Azure tenant, and your Microsoft Entra account.
 
    ```powershell
    Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>

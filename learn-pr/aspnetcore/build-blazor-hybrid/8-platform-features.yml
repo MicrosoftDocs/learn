@@ -8,8 +8,7 @@ metadata:
   author: jamesmontemagno
   ms.author: jamont
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/8-platform-features.md)]

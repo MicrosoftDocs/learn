@@ -1,10 +1,10 @@
-You must register your web app with Azure Active Directory (Azure AD) to enable user authentication. In our example, the banking company intends to build a Django web app to allow its customers to access services. Here, you register a single-tenant web app in Azure AD and configure a Django app to use the registration details. You also create a test user for testing purposes.
+You must register your web app with Microsoft Entra ID to enable user authentication. In our example, the banking company intends to build a Django web app to allow its customers to access services. Here, you register a single-tenant web app in Microsoft Entra ID and configure a Django app to use the registration details. You also create a test user for testing purposes.
 
 ## Register a single-tenant web application
 
-Apps that use the Microsoft identity platform are registered and managed in Azure AD tenants.
+Apps that use the Microsoft identity platform are registered and managed in Microsoft Entra tenants.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/). If your account is in more than one Azure AD tenant, select your profile at the upper-right corner of the page, and then switch the directory to change your portal session to the desired Azure AD tenant.
+1. Sign in to the [Azure portal](https://portal.azure.com/). If your account is in more than one Microsoft Entra tenant, select your profile at the upper-right corner of the page, and then switch the directory to change your portal session to the desired Microsoft Entra tenant.
 1. Go to the [App registrations page](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) for the Microsoft identity platform for developers.
 1. Select **+ New registration**.
 
@@ -27,7 +27,7 @@ Apps that use the Microsoft identity platform are registered and managed in Azur
 
 ## Create a client secret for the app registration
 
-The web app needs a client secret to sign in with Azure AD and exchange the authorization code for an access token.
+The web app needs a client secret to sign in with Microsoft Entra ID and exchange the authorization code for an access token.
 
 1. On the app's registration pane, select **Certificates & secrets** to open the pane where you can generate secrets and upload certificates.
 1. In the **Client secrets** section, select **+ New client secret** to open the **Add a client secret** panel.
@@ -58,7 +58,7 @@ Create a test user account to use with the test app.
 
 ## Configure the Django web app to use app registration details
 
-To configure your Django web app to use the Azure AD app registration details, ensure that you have a running Django project. Then use the following steps.
+To configure your Django web app to use the Microsoft Entra app registration details, ensure that you have a running Django project. Then use the following steps.
 
 1. Install the `ms-identity-web` library. The `ms-identity-web` library is a wrapper for the Microsoft Authentication Library (MSAL) for Python and handles much of the required MSAL for Python configurations.
 
@@ -66,9 +66,9 @@ To configure your Django web app to use the Azure AD app registration details, e
         pip install git+https://github.com/azure-samples/ms-identity-python-utilities@main
     ```
 
-1. Create the Azure AD JSON configuration file that stores the registration details. You create this file at the base of the project, in the same directory as the *manage.py* file. Name the file *aad.config.json* and add the following content:
+1. Create the Microsoft Entra JSON configuration file that stores the registration details. You create this file at the base of the project, in the same directory as the *manage.py* file. Name the file *aad.config.json* and add the following content:
 
-    1. Find the string `{enter-your-tenant-id-here}` and replace the existing value with your Azure AD tenant ID.
+    1. Find the string `{enter-your-tenant-id-here}` and replace the existing value with your Microsoft Entra tenant ID.
     1. Find the string `{enter-your-client-id-here}` and replace the existing value with the application ID (client ID).
     1. Find the string `{enter-your-client-secret-here}` and replace the existing value with the client secret value.
 
@@ -106,7 +106,7 @@ To configure your Django web app to use the Azure AD app registration details, e
 
 1. In the project's settings file, add the `MsalMiddleware` class from the `ms_identity_web` library to the project's middleware.
 
-   The Azure AD configuration object is created from the JSON configuration file. This Azure AD configuration object is used to instantiate `IdentityWebPython`. It must be named `MS_IDENTITY_WEB`.
+   The Microsoft Entra configuration object is created from the JSON configuration file. This Microsoft Entra configuration object is used to instantiate `IdentityWebPython`. It must be named `MS_IDENTITY_WEB`.
 
     ```python
         from ms_identity_web.configuration import AADConfig
@@ -120,7 +120,7 @@ To configure your Django web app to use the Azure AD app registration details, e
 
 ## Check your work
 
-At this point, you've registered a single-tenant web app in Azure AD. You've also configured a Django web app to use the app registration details.
+At this point, you've registered a single-tenant web app in Microsoft Entra ID. You've also configured a Django web app to use the app registration details.
 
 Run your Django project by using the following command to confirm that it's working well:
 

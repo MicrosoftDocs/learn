@@ -1,4 +1,4 @@
-﻿This exercise provides an overview of setting up the collection and initial processing of IoT telemetry by using Azure IoT Central applications. You'll start by creating an Azure IoT Central application, onboarding simulated IoT devices, and then reviewing the built-in analytics functionality to review the collected telemetry.
+This exercise provides an overview of setting up the collection and initial processing of IoT telemetry by using Azure IoT Central applications. You'll start by creating an Azure IoT Central application, onboarding simulated IoT devices, and then reviewing the built-in analytics functionality to review the collected telemetry.
 
 In this exercise, you'll:
 
@@ -9,7 +9,7 @@ In this exercise, you'll:
 ## Prerequisites
 
 * An active Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-* A Microsoft account or an Azure Active Directory (Azure AD) account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription
+* A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription
 
 ## Create an Azure IoT Central application
 

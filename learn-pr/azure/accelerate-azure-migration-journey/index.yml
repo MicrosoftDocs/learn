@@ -48,7 +48,7 @@ units:
 - learn.azure.accelerate-migration-journey.4-cloud-journey-phases
 - learn.azure.accelerate-migration-journey.5-common-migration-projects
 - learn.azure.accelerate-migration-journey.6-azure-migration-tools
-- learn.azure.accelerate-migration-journey.7-azure-migration-programs
+- learn.azure.accelerate-migration-journey.7-azure-migrate-modernize-innovate
 - learn.azure.accelerate-migration-journey.8-summary
 badge:
   uid: learn.azure.accelerate-migration-journey.badge

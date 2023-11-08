@@ -102,7 +102,8 @@ Finally, implement the class variables required to use the Azure OpenAI client. 
 
     ```csharp
     private readonly string _summarizePrompt = @"
-        Summarize this prompt in one or two words to use as a label in a button on a web page" + Environment.NewLine;
+        Summarize this prompt in one or two words to use as a label in a button on a web page.
+        Do not use any punctuation." + Environment.NewLine;
     ```
 
 1. Within the constructor of the class, add two extra lines of code to check if the endpoint or key is null. Use `ArgumentNullException.ThrowIfNullOrEmpty` to throw an error early if either of these values are null.
@@ -186,7 +187,8 @@ At this point, your constructor should include enough logic to create a client i
             You are an AI assistant that helps people find information.
             Provide concise answers that are polite and professional." + Environment.NewLine;
         private readonly string _summarizePrompt = @"
-            Summarize this prompt in one or two words to use as a label in a button on a web page" + Environment.NewLine;
+            Summarize this prompt in one or two words to use as a label in a button on a web page.
+            Do not use any punctuation." + Environment.NewLine;
 
         public OpenAiService(string endpoint, string key, string modelName)
         {

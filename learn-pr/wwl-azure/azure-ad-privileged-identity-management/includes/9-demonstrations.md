@@ -1,6 +1,8 @@
 These are a few try-this exercise to configure Privileged Identity Management (PIM)
 
-## Task 1: Azure AD PIM for roles
+<a name='task-1-azure-ad-pim-for-roles'></a>
+
+## Task 1: Microsoft Entra PIM for roles
 
 In this task, we'll configure PIM activation settings, add the Billing Administrator as a PIM role, activate the role, and test activation.
 
@@ -11,8 +13,8 @@ In this task, we'll configure PIM activation settings, add the Billing Administr
 
 In this task, we'll review and configure the basic PIM settings.
 
-1.  In the **Portal**, search for and select **Azure AD Privileged Identity Management**.
-2.  Under **Manage** select **Azure AD Roles**.
+1.  In the **Portal**, search for and select **Microsoft Entra Privileged Identity Management**.
+2.  Under **Manage** select **Microsoft Entra roles**.
 3.  Under **Manage** select **Settings**.
 4.  Select the **Billing Administrator** role.
 5.  Click **Edit**.
@@ -30,8 +32,8 @@ In this task, we'll review and configure the basic PIM settings.
 
 In this task, we'll add the Billing Administrator role to PIM.
 
-1.  In the **Portal**, search for and select **Azure AD Privileged Identity Management**.
-2.  Under **Manage** select **Azure AD Roles**.
+1.  In the **Portal**, search for and select **Microsoft Entra Privileged Identity Management**.
+2.  Under **Manage** select **Microsoft Entra roles**.
 3.  Under**Manage** select **Roles**.
 4.  Review the list of roles.
 5.  Select the **Billing Administrator** role.
@@ -48,15 +50,15 @@ In this task, we'll add the Billing Administrator role to PIM.
 
 In this task, we'll activate the Billing Administrator role.
 
-1.  In the **Portal**, search for and select **Azure Active Directory**.
+1.  In the **Portal**, search for and select **Microsoft Entra ID**.
 2.  Under **Manage** click **Users**.
 3.  Select **AZ500User1**.
 4.  Under **Manage** click **Assigned roles**.
 5.  Verify the user is not assigned to any roles.
 6.  Sign in the **Portal** as **AZ500User1**.
-7.  Search for and select **Azure AD Privileged Identity Management**.
+7.  Search for and select **Microsoft Entra Privileged Identity Management**.
 8.  Under **Tasks** select **My roles**.
-9.  Under **Activate** select **Azure AD Roles**.
+9.  Under **Activate** select **Microsoft Entra roles**.
 10. Select the **Active roles** and verify there are no roles listed.
 11. On the **Eligible roles** tab notice the **Billing Administrator** role.
 12. Under the **Action** column, select **Activate**.
@@ -71,13 +73,15 @@ In this task, we'll activate the Billing Administrator role.
 In this task, test the Billing Administrator role.
 
 1.  Sign in to the Portal as **AZ500User1**.
-2.  Search for and select **Azure AD Privileged Identity Management**.
-3.  Under **Activate** select **Azure AD Roles**.
+2.  Search for and select **Microsoft Entra Privileged Identity Management**.
+3.  Under **Activate** select **Microsoft Entra roles**.
 4.  Select the **Active roles** tab and verify the **Billing Administrator** role has been activated.
 5.  The role should show **Activated**.
 6.  Notice the ability to **Deactivate** the role.
 
-## Task 2: Azure AD PIM for resources
+<a name='task-2-azure-ad-pim-for-resources'></a>
+
+## Task 2: Microsoft Entra PIM for resources
 
 In this task, we'll configure PIM for Azure resources, activate the Virtual Machine Contributor role, and test the role access.
 
@@ -85,7 +89,7 @@ In this task, we'll configure PIM for Azure resources, activate the Virtual Mach
 
 In this task, we'll add the subscription to PIM, then add the Virtual Machine Contributor role as an Active role.
 
-1.  In the **Portal**, search for and select **Azure AD Privileged Identity Management**.
+1.  In the **Portal**, search for and select **Microsoft Entra Privileged Identity Management**.
 2.  Under **Manage** select **Azure Resources**.
 3.  Click **Discover resources**.
 4.  Notice the **Resource state** is **Unmanaged**.
@@ -106,7 +110,7 @@ In this task, we'll add the subscription to PIM, then add the Virtual Machine Co
 In this task, we'll sign-in as a user and activate the role.
 
 1.  Sign in to the **Portal** and **AZ500User1**.
-2.  Search for and select **Azure AD Privileged Identity Management**.
+2.  Search for and select **Microsoft Entra Privileged Identity Management**.
 3.  Under **Tasks** select **My roles**.
 4.  Under **Activate** select **Azure resources**.
 5.  On the **Active roles** tab notice you have no assigned roles.
@@ -123,12 +127,12 @@ In this task, we'll sign-in as a user and activate the role.
 In this task, we'll check to ensure the role has been assigned.
 
 1.  Sign in to the Portal as **AZ500User1**.
-2.  Search for and select **Azure AD Privileged Identity Management**.
+2.  Search for and select **Microsoft Entra Privileged Identity Management**.
 3.  Under **Activate** select **Azure resources**.
 4.  Select the **Active roles** tab and verify the **Virtual Machine Contributor** role has been activated.
 5.  Sign out of the Portal.
 6.  Sign in to the Portal using a Global Admin account.
-7.  Search for and select **Azure Active Directory**.
+7.  Search for and select **Microsoft Entra ID**.
 8.  Under **Manage** click **Users**.
 9.  Select **AZ500User1**.
 10. Under **Manage** click **Assigned roles**.

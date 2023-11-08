@@ -117,7 +117,7 @@ The pizza company wants clearer text on the buttons in the confirm dialog, and w
        }
    }
    ```
-   
+
    The `"swal"` name is the identifier for the JavaScript function that comes from the third-party *sweetalert.js* reference. The code to call the `swal` function looks similar to `confirm`. Most of the update is in how the function receives parameters. SweetAlert accepts a JSON object that includes all the settings it needs.
 
 1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
@@ -157,7 +157,7 @@ Once a customer places a pizza order, the **My Orders** page uses the `OrderDeta
    ```csharp
    bool IsOrderIncomplete =>
        orderWithStatus is null || orderWithStatus.IsDelivered == false;
-   
+
    PeriodicTimer timer = new(TimeSpan.FromSeconds(3));
    ```
 
@@ -175,7 +175,7 @@ Once a customer places a pizza order, the **My Orders** page uses the `OrderDeta
    ```csharp
    protected override Task OnAfterRenderAsync(bool firstRender) =>
        firstRender ? StartPollingTimerAsync() : Task.CompletedTask;
-   
+
    async Task GetLatestOrderStatusUpdatesAsync()
    {
        try

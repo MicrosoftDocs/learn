@@ -383,7 +383,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 1. Close the RDP connection.
 
 >[!Note]
->To continue creating the cluster, you'll need to meet additional prerequisites, such as Azure Active Directory Domain Services (Azure AD DS), and create a static IP address to use for the internal load balancer.
+>To continue creating the cluster, you'll need to meet additional prerequisites, such as Microsoft Entra Domain Services (Microsoft Entra Domain Services), and create a static IP address to use for the internal load balancer.
 >
 >This step is out of scope for this exercise.
 

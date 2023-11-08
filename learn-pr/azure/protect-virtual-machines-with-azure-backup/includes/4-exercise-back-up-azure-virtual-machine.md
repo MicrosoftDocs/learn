@@ -1,4 +1,4 @@
-Your company is running a combination of Windows and Linux workloads. You've been asked to prove that Azure Backup is a good fit for both kinds of virtual machines (VMs). By using a combination of the Azure CLI and the Azure portal, you'll help protect both kinds of VMs with Azure Backup.
+Your company runs a combination of Windows and Linux workloads. You've been asked to prove that Azure Backup is a good fit for both kinds of virtual machines (VMs). By using a combination of the Azure CLI and the Azure portal, you'll help protect both kinds of VMs with Azure Backup.
 
 Azure Backup can be quickly enabled for VMs in Azure. You can enable Azure Backup from the portal, from the Azure CLI, or by using PowerShell commands.
 
@@ -12,9 +12,9 @@ In this exercise, you'll create a VM, set up a backup, and start a backup.
 
 ### Set up the environment
 
-1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and open Azure Cloud Shell.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and select the icon to open Azure Cloud Shell.
 
-    ![Open Cloud Shell.](../media/4-azure-portal-cloudshell.png)
+    ![Screenshot of the Cloud Shell icon in the Azure portal.](../media/4-azure-portal-cloudshell.png)
 
 1. Create a resource group to contain all the resources for this exercise.
 
@@ -35,7 +35,7 @@ In this exercise, you'll create a VM, set up a backup, and start a backup.
 
 ### Create a Windows virtual machine by using the Azure CLI
 
-Create the **NW-APP01** virtual machine by running the following command. Replace `<password>` with a password of your choice, enclosed in double quotes. For example, `--admin-password "PassWord123!"`.
+Create the *NW-APP01* virtual machine by running the following command. Replace `<password>` with a password of your choice, enclosed in double quotes. For example, `--admin-password "PassWord123!"`.
 
 ```azurecli
 az vm create \
@@ -53,7 +53,7 @@ az vm create \
 
 ### Create a Linux virtual machine by using the Azure CLI
 
-Create the **NW-RHEL01** virtual machine by running the following command.
+Create the *NW-RHEL01* virtual machine by running the following command.
 
 ```azurecli
 az vm create \
@@ -83,7 +83,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
     The **NW-RHEL01** virtual machine pane appears.
 
-1. In the middle menu pane, scroll down to **Operations**, and select **Backup**. The **Backup** pane for the NW-RHEL01 virtual machine appears.
+1. In the middle menu pane, scroll down to **Operations**, and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
 
 1. Under the **Summary** section, ensure the following information exists for creating a backup.
 
@@ -94,15 +94,13 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. To perform the first backup for this server, in the top menu bar, select **Backup now**.
 
-    ![Screenshot that shows "Backup now."](../media/4-portal-backup-now.png)
-
-    The **Backup Now** pane for NW-RHEL01 appears.
+    The **Backup Now** pane for *NW-RHEL01* appears.
 
 1. Select **OK**.
 
 ### Enable a backup by using the Azure CLI
 
-1. Using Cloud Shell, enable a backup for the **NW-APP01** virtual machine.
+1. Using Cloud Shell, enable a backup for the *NW-APP01* virtual machine.
 
     ```azurecli
     az backup protection enable-for-vm \
@@ -153,9 +151,9 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. Enter *Virtual machines* in the search field at the top of the page and select **Virtual machines** from the results.
 
-1. Select the **NW-APP01** virtual machine. The **NW-APP01** virtual machine pane appears.
+1. Select the **NW-APP01** virtual machine. The *NW-APP01* virtual machine pane appears.
 
-1. In the middle menu pane, scroll to **Operations**, and select **Backup**. The **Backup** pane for the NW-APP01 virtual machine appears.
+1. In the middle menu pane, scroll to **Operations**, and select **Backup**. The **Backup** pane for the *NW-APP01* virtual machine appears.
 
     Under the **Backup status** section, the **Last backup status** field displays the current status of the backup.
 

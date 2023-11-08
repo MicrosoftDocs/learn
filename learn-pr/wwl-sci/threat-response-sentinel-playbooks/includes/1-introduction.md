@@ -5,9 +5,9 @@ Contoso, Ltd. is a midsize financial services company in London with a New York 
 
 - Microsoft Office 365
 
-- Azure Active Directory (Azure AD)
+- Microsoft Entra ID
 
-- Azure AD Identity Protection
+- Microsoft Entra ID Protection
 
 - Defender for Cloud Apps
 

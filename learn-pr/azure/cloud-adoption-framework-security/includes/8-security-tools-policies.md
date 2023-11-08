@@ -5,12 +5,12 @@ This unit describes which controls to add to this customer's environment to move
 Several tools and controls are available to help you quickly achieve a security baseline:
 
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction): Provides the tools needed to harden your resources, track your security posture, protect against cyberattacks, and streamline security management.
-- [Azure Active Directory (Azure AD)](/security/benchmark/azure/baselines/aad-security-baseline): The default identity and access management service. Azure AD provides an identity security score to help you assess your identity security posture relative to Microsoft's recommendations.
+- [Microsoft Entra ID](/security/benchmark/azure/baselines/aad-security-baseline): The default identity and access management service. Microsoft Entra ID provides an identity security score to help you assess your identity security posture relative to Microsoft's recommendations.
 - [Microsoft Sentinel](/azure/sentinel/overview): A cloud-native SIEM that provides intelligent security analytics for your entire enterprise, powered by AI.
 - [Azure Distributed Denial of Service (DDoS) standard protection plan](/azure/ddos-protection/ddos-protection-overview) (optional): Provides enhanced DDoS mitigation features to defend against DDoS attacks.
 - [Azure Firewall](/azure/firewall/overview): A cloud-native and intelligent network firewall security service that provides threat protection for your cloud workloads running in Azure.
 - [Web Application Firewall](https://azure.microsoft.com/products/web-application-firewall/): A cloud-native service that protects web apps from common web-hacking techniques such as SQL injection and security vulnerabilities such as cross-site scripting.
-- [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure): A service in Azure AD that lets you manage, control, and monitor access to important resources in your organization.
+- [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure): A service in Microsoft Entra ID that lets you manage, control, and monitor access to important resources in your organization.
 - [Microsoft Intune](/mem/intune/fundamentals/what-is-intune): A cloud-based service that focuses on mobile device management and mobile application management.
 
 The following sections illustrate how Tailwind Traders might achieve a security baseline in practice.
@@ -24,7 +24,7 @@ The CISO wants to achieve the following objectives from the customer narrative:
 
 If these objectives align to your organization, or if you have other drivers to increase access controls, factor the following tasks into your security baseline:
 
-- Implement Azure AD to enable strong credentials
+- Implement Microsoft Entra ID to enable strong credentials
 - Add Intune for device security
 - Add PIM for privileged accounts to move closer to a Zero-Trust world
 - Implement sound network segmentation by using a hub-and-spoke model with break-glass controls and firewall controls between application landing zones

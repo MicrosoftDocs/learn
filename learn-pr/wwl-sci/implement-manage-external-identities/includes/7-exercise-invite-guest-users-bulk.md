@@ -1,9 +1,9 @@
 ## Invite guest users in bulk
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/) with an account that is a User administrator in the organization.
-2.  In the navigation pane, select **Azure Active Directory**.
-3.  Under **Manage**, select **Users**.
-4.  On the Users screen, on the menu, select **Bulk operations - Bulk invite**.
+1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) with an account that is a User administrator in the organization.
+2.  In the navigation pane, select **Identity**.
+3.  Under **Users**, select **All Users**.
+4.  On the All users screen, on the menu, select **Bulk operations - Bulk invite**.
     
     :::image type="content" source="../media/bulk-invite-option-d3ab6f3c.png" alt-text="Screenshot of the All user page with the Bulk operations and Bulk invite menu options highlighted.":::
     
@@ -11,10 +11,10 @@
 6.  Using an editor to view the CSV file, review the template.
     
     > [!NOTE]
-    > \- **Email address to invite**<br>\- the user who will receive an invitation<br>\- **Redirection url**<br>\- the URL to which the invited user is forwarded after accepting the invitation.
+    > \- **Email address to invite** \- the user who will receive an invitation<br>\- **Redirection url** \- the URL to which the invited user is forwarded after accepting the invitation.
 7.  Open the .csv template and add a line for each guest user. Required values are:
     
-    :::image type="content" source="../media/template-csv-aebd1cb9.png" alt-text="Screenshot of the example bulk invite guests template C S V.":::
+    :::image type="content" source="../media/template-csv-aebd1cb9.png" alt-text="Screenshot of the example bulk invite guests template CSV.":::
     
 8.  Save the file.
 9.  On the Bulk invite users page, under **Upload your csv file**, browse to the file. When you select the file, validation of the .csv file starts.

@@ -27,13 +27,13 @@ To access an Azure SQL Database from your Microsoft Purview account, use one of 
     >[!Note]
     >Microsoft Purview supports lineage from Azure SQL Database. To sign in, the account requires **db_owner** permission for the dataset.
 
-1. Managed identity. Use manage identity as the preferred method if you’ve configured Azure Active Directory (Azure AD) authentication with your Azure SQL database. You can use either a system- or a user-assigned managed identity to authenticate and scan the Azure SQL Database. The managed identity needs permission to get metadata for the database, schemas, and tables.
+1. Managed identity. Use manage identity as the preferred method if you’ve configured Microsoft Entra authentication with your Azure SQL database. You can use either a system- or a user-assigned managed identity to authenticate and scan the Azure SQL Database. The managed identity needs permission to get metadata for the database, schemas, and tables.
 
     Assign the **db_datareader** permission to the managed identity so it’s authorized to query the tables to sample for classification. You should also give your Microsoft Purview managed account permission to scan the Azure SQL Database either at subscription, resources group, or resource level.
 
-1. Service principal. The service principal is created in Azure AD as a new app registration. Add the **client secret** to the newly registered app. Preferably, store the secret in Azure Key Vault.
+1. Service principal. The service principal is created in Microsoft Entra ID as a new app registration. Add the **client secret** to the newly registered app. Preferably, store the secret in Azure Key Vault.
 
-    The service principal needs permission to get metadata for the database, schemas, and tables. You can provide the correct level of permission by creating an Azure AD user in the SQL Database using the previously created service principal.
+    The service principal needs permission to get metadata for the database, schemas, and tables. You can provide the correct level of permission by creating a Microsoft Entra user in the SQL Database using the previously created service principal.
 
 ### Register an Azure SQL Database
 
@@ -71,7 +71,7 @@ To scan your Azure SQL database with system-managed or user-managed identities, 
 
 - Provide at least **db_datareader** permission for the managed identity.
 
-- Create an Azure AD user in the Azure SQL Database that has the same name as the Microsoft Purview managed identity. You must use the same spelling for both.
+- Create a Microsoft Entra user in the Azure SQL Database that has the same name as the Microsoft Purview managed identity. You must use the same spelling for both.
 
 - Grant the Microsoft Purview account managed identity the **Reader** role at the **Subscription** or **Resource group** where your Azure SQL Database is created.
 
@@ -113,10 +113,10 @@ To scan an Azure SQL Database that’s been configured using managed identities,
 
 ### Scan an Azure SQL Database configured with service principal for authentication
 
-The service principal created in Azure AD must be granted the necessary permission to get metadata from your Azure SQL Database. To grant this permission, configure the Azure SQL Database with Azure AD authentication. Additionally, create an Azure AD user in the Azure SQL Database for your service principal.
+The service principal created in Microsoft Entra ID must be granted the necessary permission to get metadata from your Azure SQL Database. To grant this permission, configure the Azure SQL Database with Microsoft Entra authentication. Additionally, create a Microsoft Entra user in the Azure SQL Database for your service principal.
 
 >[!Tip]
->Microsoft provides a PowerShell script that simplifies the process to [Create an Azure AD user in SQL Database using an Azure AD service principal](/azure/azure-sql/database/authentication-aad-service-principal-tutorial#create-an-azure-ad-user-in-sql-database-using-an-azure-ad-service-principal).
+>Microsoft provides a PowerShell script that simplifies the process to [Create a Microsoft Entra user in SQL Database using a Microsoft Entra service principal](/azure/azure-sql/database/authentication-aad-service-principal-tutorial#create-an-azure-ad-user-in-sql-database-using-an-azure-ad-service-principal).
 
 The credentials for the service principal must be stored in Azure Key Vault. Use the same procedure described earlier to connect Azure Key Vault with your Microsoft Purview account. The secret that you create in Azure Key Vault will be used for your service principal and must contain the **Client credentials** value. You can retrieve this value from the app registration page representing your service principal.
 

@@ -9,7 +9,7 @@ In this unit, you look at the different ways to authenticate access to files sto
 Clients access files stored in Azure Storage over HTTP/HTTPS. Azure checks each client request for authorization to access the stored data. Four options are available for accessing blob storage:
 
 - Public access
-- Azure Active Directory (Azure AD)
+- Microsoft Entra ID
 - Shared key
 - Shared access signature (SAS)
 
@@ -25,9 +25,11 @@ There are two separate settings that affect public access:
 
  Both storage account and container settings are required to enable anonymous public access. The advantages of this approach are that you don't need to share keys with clients who need access to your files. You also don't need to manage a SAS.
 
-### Azure Active Directory
+<a name='azure-active-directory'></a>
 
-Use the Azure AD option to securely access Azure Storage without storing any credentials in your code. AD authorization takes a two-step approach. First, you authenticate a security principal that returns an OAuth 2.0 token if successful. This token is then passed to Azure Storage to enable authorization to the requested resource.
+### Microsoft Entra ID
+
+Use the Microsoft Entra option to securely access Azure Storage without storing any credentials in your code. AD authorization takes a two-step approach. First, you authenticate a security principal that returns an OAuth 2.0 token if successful. This token is then passed to Azure Storage to enable authorization to the requested resource.
 
 Use this form of authentication if you're running an app with managed identities or using security principals.
 
@@ -43,7 +45,7 @@ A SAS lets you grant granular access to files in Azure Storage, such as read-onl
 
 Azure Storage supports three types of shared access signatures:
 
-- **User delegation SAS**: Can only be used for Blob storage and is secured with Azure AD credentials.
+- **User delegation SAS**: Can only be used for Blob storage and is secured with Microsoft Entra credentials.
 - **Service SAS**: A service SAS is secured using a storage account key. A service SAS delegates access to a resource in any one of four Azure Storage services: Blob, Queue, Table, or File. 
 - **Account SAS**: An account SAS is secured with a storage account key. An account SAS has the same controls as a service SAS, but can also control access to service-level operations, such as Get Service Stats.
 

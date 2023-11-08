@@ -21,7 +21,7 @@ quiz:
       explanation: "You can configure an automated phone call for verification."
     - content: "Emailed link to verification website."
       isCorrect: false
-      explanation: "Emailed link to a verification website isn't a validation method used by Azure AD Multi-Factor Authentication."
+      explanation: "Emailed link to a verification website isn't a validation method used by Microsoft Entra multifactor authentication."
     - content: "Microsoft account verification code."
       isCorrect: false
       explanation: "You can't get verified as a secondary method with and account verification code."
@@ -44,7 +44,7 @@ quiz:
     - content: "Configure IP addresses outside the company intranet that should be blocked."
       isCorrect: false
       explanation: "Configuring an IP addresses outside the company intranet that should be blocked is correct. Trusted IPs is a feature to allow federated users or IP address ranges to bypass two-step authentication. The Trusted IPs bypass works only from inside of the company intranet. Azure Conditional Access provides extra options if needed."
-    - content: "Configure a one-time bypass to allow a user to authenticate a single time without performing multi-factor authentication. The bypass is temporary and expires after a specified number of seconds. In situations where the mobile app or phone isn't receiving a notification or phone call, you can allow a one-time bypass so the user can access the desired resource."
+    - content: "Configure a one-time bypass to allow a user to authenticate a single time without performing multifactor authentication. The bypass is temporary and expires after a specified number of seconds. In situations where the mobile app or phone isn't receiving a notification or phone call, you can allow a one-time bypass so the user can access the desired resource."
       isCorrect: true
       explanation: "Allowing one-time access is an available option."
   - content: "Which of the following roles would allow the user to manage all the groups in a tenant and would be able to assign other admin roles?"
@@ -68,4 +68,4 @@ quiz:
       explanation: "Dynamic user uses rules to automatically add and remove members."
     - content: "Microsoft 365 user"
       isCorrect: false
-      explanation: "Microsoft 365 User. When you create an Azure AD group, you can select: Assigned, Dynamic device, or Dynamic user. Assigned lets you add members directly to the group. Dynamic device uses rules to automatically add and remove devices. Dynamic user uses rules to automatically add and remove members."
+      explanation: "Microsoft 365 User. When you create a Microsoft Entra group, you can select: Assigned, Dynamic device, or Dynamic user. Assigned lets you add members directly to the group. Dynamic device uses rules to automatically add and remove devices. Dynamic user uses rules to automatically add and remove members."

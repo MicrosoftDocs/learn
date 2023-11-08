@@ -1,10 +1,10 @@
 You've been asked to assess ways to reduce help-desk costs in your retail organization. You've noticed that the support staff spends much of their time resetting passwords for users. Users often complain about delays with this process, and these delays impact their productivity. You want to understand how you can configure Azure to allow users to manage their own passwords.
 
-In this unit, you'll learn how self-service password reset (SSPR) works in Azure AD.
+In this unit, you'll learn how self-service password reset (SSPR) works in Microsoft Entra ID.
 
 ## Why use SSPR?
 
-In Azure AD, any user can change their password if they're already signed in. But if they're not signed in and forgot their password or it's expired, they'll need to reset their password. With SSPR, users can reset their passwords in a web browser or from a Windows sign-in screen to regain access to Azure, Microsoft 365, and any other application that uses Azure AD for authentication.
+In Microsoft Entra ID, any user can change their password if they're already signed in. But if they're not signed in and forgot their password or it's expired, they'll need to reset their password. With SSPR, users can reset their passwords in a web browser or from a Windows sign-in screen to regain access to Azure, Microsoft 365, and any other application that uses Microsoft Entra ID for authentication.
 
 SSPR reduces the load on administrators, because users can fix password problems themselves without having to call the help desk. Also, it minimizes the productivity impact of a forgotten or expired password. Users don't have to wait until an administrator is available to reset their password.
 
@@ -35,7 +35,7 @@ As an administrator, you can choose the methods to use when you configure SSPR. 
 | Office phone | Provide a nonmobile phone number. | You receive an automated call to this number and press #. |
 | Security questions | Select questions such as "In what city was your mother born?" and save their responses. | Answer the questions. |
 
-In free and trial Azure AD organizations, phone call options aren't supported.
+In free and trial Microsoft Entra organizations, phone call options aren't supported.
 
 ### Require the minimum number of authentication methods
 
@@ -66,14 +66,14 @@ Administrators can choose how users are notified of password changes. There are 
 
 ## License requirements
 
-There are three editions of Azure AD: free, Premium P1, and Premium P2. The password-reset functionality you can use depends on your edition.
+There are three editions of Microsoft Entra ID: free, Premium P1, and Premium P2. The password-reset functionality you can use depends on your edition.
 
-Any user who is signed in can change their password, regardless of the edition of Azure AD.
+Any user who is signed in can change their password, regardless of the edition of Microsoft Entra ID.
 
-If you're not signed in and you've forgotten your password or your password has expired, you can use SSPR in Azure AD Premium P1 or P2. It's also available with Microsoft 365 Apps for business or Microsoft 365.
+If you're not signed in and you've forgotten your password or your password has expired, you can use SSPR in Microsoft Entra ID P1 or P2. It's also available with Microsoft 365 Apps for business or Microsoft 365.
 
-In a hybrid situation, where you have Active Directory on-premises and Azure AD in the cloud, any password change in the cloud must be written back to the on-premises directory. This writeback support is available in Azure AD Premium P1 or P2. It's also available with Microsoft 365 Apps for business.
+In a hybrid situation, where you have Active Directory on-premises and Microsoft Entra ID in the cloud, any password change in the cloud must be written back to the on-premises directory. This writeback support is available in Microsoft Entra ID P1 or P2. It's also available with Microsoft 365 Apps for business.
 
 ## SSPR deployment options
 
-You can deploy SSPR with password writeback by using [Azure AD Connect](/azure/active-directory/authentication/tutorial-enable-sspr-writeback) or [cloud sync](/azure/active-directory/authentication/tutorial-enable-cloud-sync-sspr-writeback), depending on user needs. You can deploy each option side-by-side in different domains to target different sets of users. This helps existing users on-premises to write back password changes, while adding an option for users in disconnected domains because of a company merger or split. Users from an existing on-premises domain can use Azure AD Connect, while new users from a merger can use cloud sync in another domain. Cloud sync can also provide higher availability, because it doesn't rely on a single instance of Azure AD Connect. For a feature comparison between the two deployment options, see [Comparison between Azure AD Connect and cloud sync](/azure/active-directory/cloud-sync/what-is-cloud-sync#how-is-azure-ad-connect-cloud-sync-different-from-azure-ad-connect-sync).
+You can deploy SSPR with password writeback by using [Microsoft Entra Connect](/azure/active-directory/authentication/tutorial-enable-sspr-writeback) or [cloud sync](/azure/active-directory/authentication/tutorial-enable-cloud-sync-sspr-writeback), depending on user needs. You can deploy each option side-by-side in different domains to target different sets of users. This helps existing users on-premises to write back password changes, while adding an option for users in disconnected domains because of a company merger or split. Users from an existing on-premises domain can use Microsoft Entra Connect, while new users from a merger can use cloud sync in another domain. Cloud sync can also provide higher availability, because it doesn't rely on a single instance of Microsoft Entra Connect. For a feature comparison between the two deployment options, see [Comparison between Microsoft Entra Connect and cloud sync](/azure/active-directory/cloud-sync/what-is-cloud-sync#how-is-azure-ad-connect-cloud-sync-different-from-azure-ad-connect-sync).

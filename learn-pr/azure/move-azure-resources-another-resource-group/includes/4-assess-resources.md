@@ -21,7 +21,7 @@ After identifying the resource types of your resources, you must investigate whe
 
 You can't move these resources:
 
-- Azure Active Directory domain services
+- Microsoft Entra Domain Services
 - Azure Backup vaults
 - Azure App Service gateways
 

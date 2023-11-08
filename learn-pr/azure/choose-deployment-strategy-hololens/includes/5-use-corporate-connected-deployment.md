@@ -2,7 +2,7 @@ Let's consider a manufacturing company that aims to revolutionize its operations
 
 The manufacturing facility has restricted internet access, as the organization prioritizes data privacy and internal resource utilization. However, the internal network allows seamless access to critical manufacturing systems, production data, and real-time analytics. This network configuration empowers workers to make data-driven decisions and improve productivity on the shop floor.
 
-The deployment incorporates Azure Active Directory (Azure AD) Join with MDM Auto Enrollment, managed through an MDM solution like Intune. Workers sign in using their corporate accounts through Azure AD, granting them access to personalized resources and applications relevant to their roles.
+The deployment incorporates Microsoft Entra join with MDM Auto Enrollment, managed through an MDM solution like Intune. Workers sign in using their corporate accounts through Microsoft Entra ID, granting them access to personalized resources and applications relevant to their roles.
 
 The Corporate Network Deployment supports both single and multiple users per device, accommodating various manufacturing scenarios. For instance, technicians can use HoloLens 2 devices to access detailed equipment manuals, view 3D models for maintenance purposes, or receive remote assistance from experts.
 

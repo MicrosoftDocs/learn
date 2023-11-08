@@ -173,5 +173,6 @@ To navigate to the Auto-shutdown feature in a VM in the Azure portal, go to the 
 
 ![Screenshot showing Auto-shutdown option for a VM.](../media/4-auto-shutdown-option.png)
 
+For more information, see [Auto-shutdown](/azure/virtual-machines/auto-shutdown-vm).
 
 As you can see, Azure provides various tools to create and administer resources so that you can integrate management operations into a process _that works for you_. Let's examine some of the other Azure services to make sure your infrastructure resources are running smoothly.

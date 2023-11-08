@@ -4,12 +4,12 @@ title: Create catalog tables
 metadata:
   title: Create catalog tables
   description: "Create catalog tables"
-  ms.date: 08/29/2023
+  ms.date: 10/11/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/4-catalog-tables.md)]

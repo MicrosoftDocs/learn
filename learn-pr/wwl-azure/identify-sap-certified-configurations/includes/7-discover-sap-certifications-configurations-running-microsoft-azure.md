@@ -1,5 +1,3 @@
-
-
 The following tables outline Azure supported configurations and the growing list of SAP certifications.
 
 ## SAP HANA certifications
@@ -102,7 +100,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
     SQL Server, Oracle (Windows and Oracle Linux only), DB2, SAP ASE
   :::column-end:::
   :::column:::
-    [SAP Note \#1928533: SAP Applications on Azure: Supported Products and Azure VM types](https://launchpad.support.sap.com/#/notes/1928533)
+    [SAP Note \#1928533: SAP Applications on Azure: Supported Products and Azure VM types](https://aka.ms/az-120-sapnote-1928533)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -116,7 +114,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
     SQL Server, Oracle (Windows and Oracle Linux only), DB2, SAP ASE
   :::column-end:::
   :::column:::
-    [SAP Note \#1928533: SAP Applications on Azure: Supported Products and Azure VM types](https://launchpad.support.sap.com/#/notes/1928533)
+    [SAP Note \#1928533: SAP Applications on Azure: Supported Products and Azure VM types](https://aka.ms/az-120-sapnote-1928533)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -130,7 +128,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
     N/A
   :::column-end:::
   :::column:::
-    [SAP Note \#1928533: SAP Applications on Azure: Supported Products and Azure VM types](https://launchpad.support.sap.com/#/notes/1928533)
+    [SAP Note \#1928533: SAP Applications on Azure: Supported Products and Azure VM types](https://aka.ms/az-120-sapnote-1928533)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -144,7 +142,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
     SQL Server, Oracle (Windows and Oracle Linux only), DB2, SAP ASE
   :::column-end:::
   :::column:::
-    [SAP Note \#1928533: SAP Applications on Azure: Supported Products and Azure VM types](https://launchpad.support.sap.com/#/notes/1928533)
+    [SAP Note \#1928533: SAP Applications on Azure: Supported Products and Azure VM types](https://aka.ms/az-120-sapnote-1928533)
   :::column-end:::
 :::row-end:::
 
@@ -176,7 +174,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
   :::column-end:::
   :::column:::
     All NetWeaver certified VM types
-[SAP Note \#928839](https://launchpad.support.sap.com/#/notes/928839)
+[SAP Note \#928839](https://aka.ms/az-120-sapnote-928839)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -191,7 +189,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
   :::column-end:::
   :::column:::
     All NetWeaver Certified VM types
-[SAP Note \#2451795](https://launchpad.support.sap.com/#/notes/2451795)
+[SAP Note \#2451795](https://aka.ms/az-120-sapnote-2451795)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -205,7 +203,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
 
   :::column-end:::
   :::column:::
-    [SAP Note \#2145537](https://launchpad.support.sap.com/#/notes/2145537)
+    [SAP Note \#2145537](https://aka.ms/az-120-sapnote-2145537)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -219,7 +217,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
 
   :::column-end:::
   :::column:::
-    [SAP Note \#2288344](https://launchpad.support.sap.com/#/notes/2288344)
+    [SAP Note \#2288344](https://aka.ms/az-120-sapnote-2288344)
   :::column-end:::
 :::row-end:::
 :::row:::

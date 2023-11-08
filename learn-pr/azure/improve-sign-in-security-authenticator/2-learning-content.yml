@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.improve-sign-in-security-authenticator.learning-content.prepare-azure-ad-environment
-title: Prepare your Azure AD environment
+title: Prepare your Microsoft Entra environment
 metadata:
   unitType: learning-content
   title: learning-content
@@ -8,8 +8,7 @@ metadata:
   ms.date: 7/27/2022
   author: Justinha
   ms.author: Justinha
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-learning-content.md)]

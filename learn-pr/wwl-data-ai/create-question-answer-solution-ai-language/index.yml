@@ -41,7 +41,6 @@ units:
 - learn.wwl.create-question-answer-solution-ai-language.test-publish-knowledge-base
 - learn.wwl.create-question-answer-solution-ai-language.consume-client-interfaces
 - learn.wwl.create-question-answer-solution-ai-language.implement-active-learning
-- learn.wwl.create-question-answer-solution-ai-language.create-bot
 - learn.wwl.create-question-answer-solution-ai-language.exercise-create
 - learn.wwl.create-question-answer-solution-ai-language.knowledge-check
 - learn.wwl.create-question-answer-solution-ai-language.summary

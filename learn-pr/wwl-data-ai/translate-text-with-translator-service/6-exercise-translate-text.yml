@@ -7,11 +7,10 @@ metadata:
   ms.date: 08/31/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: azure-ai-translator
 azureSandbox: false
-labId: 99992
-labModal: true
+labModal: false
 durationInMinutes: 30
 content: |
   [!include[](includes/6-exercise-translate-text.md)]

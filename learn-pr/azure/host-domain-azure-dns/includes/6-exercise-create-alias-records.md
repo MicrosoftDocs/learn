@@ -65,7 +65,7 @@ Now that you've created a test environment, you're ready to set up the Azure ali
 
 When the new alias record is created, it should look something like this:
 
-![Screenshot of the DNS zone, with an alias record created.](../media/6-aliasrecord04.png)
+:::image type="content" source="../media/6-aliasrecord04.png" alt-text="Screenshot of the DNS zone, with an alias record created.":::
 
 ## Verify that the alias resolves to the load balancer
 

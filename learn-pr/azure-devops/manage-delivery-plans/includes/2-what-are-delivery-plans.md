@@ -1,4 +1,4 @@
-As development organizations grow, they need to reorganize into smaller teams that can efficiently manage portioned units of work. These teams will usually have their work schedules, boards, and other processes that meet their unique needs within the context of the organization’s larger goals. Over time, organizations may find that they enjoy network benefits by consolidating their processes around a consistent framework.
+As development organizations grow, they need to reorganize into smaller teams that can efficiently manage portioned units of work. These teams usually have their work schedules, boards, and other processes that meet their unique needs within the context of the organization’s larger goals. Over time, organizations might find that they enjoy network benefits by consolidating their processes around a consistent framework.
 
 A _delivery plan_ is a visualization of one or more work schedules. It's intended to provide teams and management an overall view of what each team is planning to produce and when. It allows decisions to be made that optimize the investments across the organization.
 
@@ -16,7 +16,7 @@ Let's join the Tailspin web team in their discussion.
 
 **Mara:** Awesome! When will they get started?
 
-**Andy:** That's the best part — they already have! Last night the game engine project lead created a team with some sprints and began adding work items. I took a quick look this morning, and it's shaping up nicely. Let me show you what they're up to.
+**Andy:** That's the best part. They already have! Last night the game engine project lead created a team with some sprints and began adding work items. I took a quick look this morning, and it's shaping up nicely. Let me show you what they're up to.
 
 Andy navigates to the game engine's current sprint board. He and Mara review the work items with great interest.
 

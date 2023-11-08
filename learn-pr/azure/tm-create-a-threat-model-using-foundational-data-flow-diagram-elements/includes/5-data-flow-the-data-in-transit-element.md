@@ -24,5 +24,5 @@ Include the following context with each data-flow element:
 |Flow sequence|Is the data flow enumerated to make it easier to follow the flow sequence?|
 |Type|What type of data is in the data flow? Cookies? XML? SOAP payload? REST payload? JSON payload?|
 |Additional controls|Does the data flow have forgery protection enabled? Other security flags enabled?|
-|Authentication|Does the process rely on Azure Active Directory for authentication? If not, on what does it rely?|
+|Authentication|Does the process rely on Microsoft Entra ID for authentication? If not, on what does it rely?|
 |Authorization|Does it rely on Access Control Lists (ACL) for authorization? If not, on what does it rely?|

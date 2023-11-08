@@ -23,13 +23,13 @@ When creating a DNS zone, you need to supply the following details:
 - **Name**: Your domain name, which in this case is wideworldimports.com.
 - **Resource group location**: The location defaults to the location of the resource group.
 
-    ![Screenshot of Create DNS zone page.](../media/3-create-dns-zone.png)
+    :::image type="content" source="../media/3-create-dns-zone.png" alt-text="Screenshot of Create DNS zone page.":::
 
 ### Step 2: Get your Azure DNS name servers
 
 After you create a DNS zone for the domain, you need to get the name server details from the name servers (NS) record. You'll use these details to update your domain registrar's information and point to the Azure DNS zone.
 
-![Screenshot of the name server details on the DNS zone page.](../media/3-name-server.png)
+:::image type="content" source="../media/3-name-server.png" alt-text="Screenshot of the name server details on the DNS zone page.":::
 
 ### Step 3: Update the domain registrar setting
 
@@ -84,7 +84,7 @@ To provide name resolution for virtual machines (VMs) within a virtual network a
 
 In the Azure portal, search for *private DNS zones*. To create the private zone, you need enter a resource group and the name of the zone. For example, the name might be something like private.wideworldimports.com.
 
-![Screenshot of the Create Private DNS zone page.](../media/3-create-private-dns-zone.png)
+:::image type="content" source="../media/3-create-private-dns-zone.png" alt-text="Screenshot of the Create Private DNS zone page.":::
 
 ### Step 2: Identify virtual networks
 
@@ -94,11 +94,11 @@ Let's assume that your organization has already created your VMs and virtual net
 
 To link the private DNS zone to a virtual network, you'll create a virtual network link. In the Azure portal, go to the private zone, and select **Virtual network links**.
 
-![Screenshot of the Virtual Network Links page in a private DNS zone.](../media/3-virtual-network-link-option.png)
+:::image type="content" source="../media/3-virtual-network-link-option.png" alt-text="Screenshot of the Virtual Network Links page in a private DNS zone.":::
 
 Select **Add** to pick the virtual network you want to link to the private zone.
 
-![Screenshot of Add virtual network link page.](../media/3-add-virtual-network-link.png)
+:::image type="content" source="../media/3-add-virtual-network-link.png" alt-text="Screenshot of Add virtual network link page.":::
 
 You add a virtual network link record for each virtual network that needs private name-resolution support.
 

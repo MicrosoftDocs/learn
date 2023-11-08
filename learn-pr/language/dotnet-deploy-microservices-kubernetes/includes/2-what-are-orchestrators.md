@@ -4,11 +4,11 @@ The decoupled design of microservices combined with the atomicity of containers 
 
 Container management is the process of organizing, adding, removing, or updating a significant number of containers.
 
-The Contoso Pizza Company website consists of multiple microservices responsible for tasks like caching, data processing, and a shopping cart. Each of these services is hosted in a container and can be deployed, updated, and scaled independently from one another.
+The Contoso outdoor equipment company website consists of multiple microservices responsible for tasks like caching, data processing, and a shopping cart. Each of these services is hosted in a container and can be deployed, updated, and scaled independently from one another.
 
 ![Diagram illustrating adding multiple containers to a single machine instance.](../media/2-container.png)
 
-If you increase the number of shopping-cart container instances and need to deploy a new version, you'll have to update *every single instance* of that container.
+If you increase the number of shopping cart container instances and need to deploy a new version, you'll have to update *every single instance* of that container.
 
 Container management helps with these tasks.
 
@@ -20,7 +20,7 @@ A container orchestrator is a system that automatically deploys and manages cont
 
 ## Kubernetes
 
-Kubernetes is a portable, extensible open-source platform for managing and orchestrating containerized workloads. Kubernetes abstracts away complex container management tasks, and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility you may already know from platform as a service (PaaS) or infrastructure as a service (IaaS) offerings.
+Kubernetes is a portable, extensible open-source platform for managing and orchestrating containerized workloads. Kubernetes abstracts away complex container management tasks, and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility you might already know from Platform-as-a-Service (PaaS) or Infrastructure-as-a-Service (IaaS) offerings.
 
 ![Image showing the Kubernetes logo amongst multiple containers running on a computer](../media/2-deploy-multiple-containers.png)
 
@@ -32,11 +32,11 @@ The benefits of using Kubernetes are based on the abstraction of tasks.
 
 These tasks include:
 
-- Self-healing of containers; for example, restarting containers that fail or replacing containers
-- Scaling deployed container count up or down dynamically based on demand
-- Automating rolling updates and rollbacks of containers
-- Managing storage
-- Managing network traffic
-- Storing and managing sensitive information such as usernames and passwords
+- Self-healing of containers; for example, restarting containers that fail or replacing containers.
+- Scaling deployed container count up or down dynamically based on demand.
+- Automating rolling updates and rollbacks of containers.
+- Managing storage.
+- Managing network traffic.
+- Storing and managing sensitive information such as usernames and passwords.
 
 Because Kubernetes is a tool to orchestrate containerized workloads, and you can deploy .NET microservices into containers, you can use Kubernetes to orchestrate your .NET microservices. That's what the rest of this module will teach you.

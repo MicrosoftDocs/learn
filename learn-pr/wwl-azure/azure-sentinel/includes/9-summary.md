@@ -5,7 +5,7 @@ You should be able to:
 
  -  Explain what Microsoft Sentinel is and how it is used
  -  Deploy Microsoft Sentinel
- -  Connect data to Microsoft Sentinel, like Azure Logs, Azure AD, and others
+ -  Connect data to Microsoft Sentinel, like Azure Logs, Microsoft Entra ID, and others
  -  Track incidents using workbooks, playbooks, and hunting techniques
 
 ## Learn more

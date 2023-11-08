@@ -5,7 +5,7 @@ Adding authentication enables your web app to access limited profile information
 
 You also used Role Based Access Control (RBAC) to enforce authorization in the Flask web application.To implement the app role business logic in this scenario, you defined the app roles in **App registrations**. Then, you assigned the roles to different users in the **Enterprise applications** pane. The assigned app roles are included in any token that's issued for your application, either ID tokens when the app is signing in a user or access tokens when the app is calling a protected web API. By using RBAC, you securely control who has access to what content and what functionality in your application.
 
-While it's possible to build an application without delegating authentication and authorization to a centralized identity provider like Azure AD, it would bring a high administrative burden to the developer. You'd need to create an application that maintains all username and password information and find a mechanism for adding, removing, and adjusting user permissions across multiple apps. As the number of users increase, and your application grows in scale and complexity, app roles become even more useful.
+While it's possible to build an application without delegating authentication and authorization to a centralized identity provider like Microsoft Entra ID, it would bring a high administrative burden to the developer. You'd need to create an application that maintains all username and password information and find a mechanism for adding, removing, and adjusting user permissions across multiple apps. As the number of users increase, and your application grows in scale and complexity, app roles become even more useful.
 
 ## References
 

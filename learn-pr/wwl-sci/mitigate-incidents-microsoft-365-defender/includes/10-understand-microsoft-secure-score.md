@@ -9,7 +9,7 @@ Organizations gain access to robust visualizations of metrics and trends, integr
 Currently there are recommendations for the following products:
 
 - Microsoft 365 (including Exchange Online)
-- Azure Active Directory
+- Microsoft Entra ID
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
 - Defender for Cloud Apps

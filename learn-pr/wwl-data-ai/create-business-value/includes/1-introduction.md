@@ -5,7 +5,7 @@ In this module, you will:
 
 * Articulate the components of an AI strategy.
 * Describe the key elements of an AI-ready organizational culture.
-* Apply the AI maturity model assessment to your business.
+* Understand the stages to AI success.
 
 ## Prerequisites
 * Basic understanding of AI concepts.

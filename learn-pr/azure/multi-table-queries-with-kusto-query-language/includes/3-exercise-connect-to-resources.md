@@ -2,7 +2,7 @@ Before you can write queries and explore the sales data, you need to connect to 
 
 To complete the exercises in this module, you need one of the following:
 
-- A Microsoft account or an Azure Active Directory user identity to create a free cluster. You don't require an Azure subscription or a credit card.
+- A Microsoft account or a Microsoft Entra user identity to create a free cluster. You don't require an Azure subscription or a credit card.
 - An Azure account. If you don't already have an Azure account, [create a free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Connect to the data

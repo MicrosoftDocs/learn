@@ -1,5 +1,3 @@
-
-
 A **Data Flow** is a commonly used activity type to define data flow and transformation. Data flows consist of:
 
 - **Sources** - The input data to be transferred.
