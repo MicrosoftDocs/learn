@@ -4,10 +4,11 @@ title: Explore Azure Automation
 metadata:
   title: Explore Azure Automation
   description: "Explore Azure Automation"
-  ms.date: 11/07/2023
+  ms.date: 11/08/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.prod: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/9-explore-azure-automation.md)]
