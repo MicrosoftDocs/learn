@@ -1,4 +1,4 @@
-In this exercise, you'll create a basic Todo list component inside your Blazor app.
+In this exercise, you create a basic Todo list component inside your Blazor app.
 
 ## Create the Todo page
 
@@ -9,6 +9,7 @@ In this exercise, you'll create a basic Todo list component inside your Blazor a
     In Visual Studio, right-click the `Pages` folder in **Solution Explorer** and select **Add** > **Razor Component**. Name the component `Todo.razor`.
 
     ::: zone-end
+
     ::: zone pivot="vscode"
    
     In Visual Studio Code, right-click on the `Pages` folder in **Solution Explorer** and select **Add New File..** > **Razor component**. Name the component `Todo.razor`. The file should be created inside of the `Pages` folder
