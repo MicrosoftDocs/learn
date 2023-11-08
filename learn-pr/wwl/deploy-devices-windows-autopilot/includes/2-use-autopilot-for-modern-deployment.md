@@ -25,7 +25,7 @@ From the user's standpoint, turning on the device initiates an Out-of-Box Experi
 
 ### Refresh existing devices
 
-Over time, scenarios arise where it may be beneficial to refresh the device. Performance may be impacted as more apps are installed over time, and it can lead to intermittent issues or challenges that are not easily resolved. IT might elect to perform a wipe-and-load, and as with new deployments, Autopilot can be used instead of traditional methods. Similarly, if a device is reassigned to another user, Autopilot can be used to reset the device with a new OOBE as if the device was wiped and reimaged.
+Over time, scenarios arise where it might be beneficial to refresh the device. Performance might be impacted as more apps are installed over time, and it can lead to intermittent issues or challenges that are not easily resolved. IT might elect to perform a wipe-and-load, and as with new deployments, Autopilot can be used instead of traditional methods. Similarly, if a device is reassigned to another user, Autopilot can be used to reset the device with a new OOBE as if the device was wiped and reimaged.
 
 Windows 10 and later still supports traditional deployment. Many organizations use image-based deployment to upgrade their computers to Windows 11, although in-place upgrade is the recommended upgrade path when upgrading from Windows 8.1. Once a device is upgraded to Windows 11, organizations have the choice as to whether they continue to use image-based deployment or adopt modern deployment methods such as Autopilot or, in the case of upgrading from Windows 11, using Feature update.
 

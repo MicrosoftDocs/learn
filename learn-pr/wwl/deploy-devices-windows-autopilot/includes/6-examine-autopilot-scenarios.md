@@ -38,7 +38,7 @@ To perform a self-deploying mode deployment using Windows Autopilot:
  -  Ensure that the profile has been assigned to the device before attempting to deploy that device.
  -  Self-deploying mode requires devices with TPM 2.0 and Windows 10 version 1903 or later.
 
-Some interaction may be required under certain circumstances. If only wireless connectivity is available, the wireless network must be selected. If multiple languages are pre-installed, a language must be selected.
+Some interaction might be required under certain circumstances. If only wireless connectivity is available, the wireless network must be selected. If multiple languages are pre-installed, a language must be selected.
 
 ### Autopilot for existing devices
 
