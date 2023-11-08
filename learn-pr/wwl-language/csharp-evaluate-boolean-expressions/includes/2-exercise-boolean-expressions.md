@@ -222,7 +222,7 @@ Some methods return a Boolean value (`true` or `false`). In the following exerci
 1. Use the line comment operator `//` to comment out all of the code from the previous step.
 
 1. Type the following code into the Visual Studio Code Editor.
-   
+
    ```c#
    string pangram = "The quick brown fox jumps over the lazy dog.";
    Console.WriteLine(pangram.Contains("fox"));
@@ -230,9 +230,9 @@ Some methods return a Boolean value (`true` or `false`). In the following exerci
    ```
 
 1. Save your code file, and then use Visual Studio Code to build and run your code.
-   
+
    You should see the following output.
-   
+
    ```output
    True
    False
@@ -240,7 +240,7 @@ Some methods return a Boolean value (`true` or `false`). In the following exerci
 
 ## What is logical negation?
 
-The term "Logical Negation" refers to the `!` operator. Some people call this operator the "not operator". When you place the `!` operator before a conditional expression (or any code that's evaluated to either `true` or `false`), it forces your code to ensure that the expression is false.
+The term "Logical Negation" refers to the unary negation operator `!`. Some people call this operator the "not operator". When you place the `!` operator before a conditional expression (or any code that's evaluated to either `true` or `false`), it forces your code to reverse its evaluation of the operand. When logical negation is applied, the evaluation produces `true` , if the operand evaluates to `false` , and `false` , if the operand evaluates to `true`.
 
 Here is an example that may help you to see the connection between these ideas. The following two lines of code produce the same result. The second line is more compact.
 
@@ -264,13 +264,28 @@ Console.WriteLine(!pangram.Contains("fox"));
    ```
 
 1. Save your code file, and then use Visual Studio Code to build and run your code.
-   
+
    You should see the following output.
-   
+
    ```output
    False
    True
    ```
+
+### Inequality operator versus logical negation
+
+The inequality operator `!=` includes a `!` character, but should not be confused with logical negation. The inequality operator returns `true` if its operands aren't equal, and returns `false` if the operands are equal. For the operands of the built-in types, the expression `x != y` produces the same result as the expression `!(x == y)` (an example of logical negation).
+
+The following code sample demonstrates the use of the `!=` operator:
+
+```csharp
+int a = 7;
+int b = 6;
+Console.WriteLine(a != b); // output: True
+string s1 = "Hello";
+string s2 = "Hello";
+Console.WriteLine(s1 != s2); // output: False
+```
 
 ## Recap
 
