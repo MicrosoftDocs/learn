@@ -10,7 +10,7 @@ ARO is OpenShift that Microsoft and Red Hat work together to manage and support.
 
 Running containers in production with Kubernetes requires extra tools and resources, including image registry monitoring, storage management, networking, and logging and monitoring tools - all of which must be versioned and tested together. Building container-based applications requires even more integration work with middleware, frameworks, databases, and CI/CD tools. OpenShift combines these capabilities into a single platform, bringing ease of operations to IT teams while giving application teams what they need to execute.
 
-OpenShift is a fully-compliant instance of upstream Kubernetes, hardened with hundreds of fixes that address defect, security, and performance issues in every release. It's integrated with and tested against dozens of technologies and provides a robust, tightly-integrated platform.
+OpenShift is a fully compliant instance of upstream Kubernetes, hardened with hundreds of fixes that address defect, security, and performance issues in every release. It's integrated with and tested against dozens of technologies and provides a robust, tightly integrated platform.
 
 ### Differences between OpenShift and ARO
 
