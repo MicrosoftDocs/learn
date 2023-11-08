@@ -10,7 +10,6 @@ By the end of this module, you can:
 
 - Create and set up an AKS cluster.
 - Deploy Kubernetes workloads by using deployment YAML files.
-- Expose Kubernetes workloads by using services and ingress.
 
 ## Prerequisites
 
